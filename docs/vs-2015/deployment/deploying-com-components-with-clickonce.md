@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 870255afe466709f8e9a5fc48e5135943443900d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 63328af2211f18fe553c32b018ed0a8422a1857f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000084"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066345"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Implantando componentes do COM com o ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,9 +49,9 @@ Implantação de componentes legados COM tradicionalmente tem sido uma tarefa di
   
  Há duas maneiras que [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implanta componentes COM:  
   
--   Usar o bootstrapper para implantar seus componentes COM. Isso funciona em todas as plataformas com suporte.  
+- Usar o bootstrapper para implantar seus componentes COM. Isso funciona em todas as plataformas com suporte.  
   
--   Use a implantação do componente nativo isolamento (também conhecido como COM sem registro). No entanto, isso só funcionará em um sistema de operacional superior ou o Windows XP.  
+- Use a implantação do componente nativo isolamento (também conhecido como COM sem registro). No entanto, isso só funcionará em um sistema de operacional superior ou o Windows XP.  
   
 ### <a name="example-of-isolating-and-deploying-a-simple-com-component"></a>Exemplo de isolar e implantação de um componente COM simples  
  Para demonstrar a implantação de componentes COM sem registro, este exemplo criará um aplicativo baseado em Windows no Visual Basic que faz referência a um componente COM nativo isolado criado usando o Visual Basic 6.0 e implantá-lo usando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
@@ -60,16 +60,16 @@ Implantação de componentes legados COM tradicionalmente tem sido uma tarefa di
   
 ##### <a name="to-create-a-native-com-component"></a>Para criar um componente COM nativo  
   
-1.  Usando o Visual Basic 6.0, do **arquivo** menu, clique em **New**, em seguida, **projeto**.  
+1. Usando o Visual Basic 6.0, do **arquivo** menu, clique em **New**, em seguida, **projeto**.  
   
-2.  No **novo projeto** caixa de diálogo, selecione o **Visual Basic** nó e selecione uma **ActiveX DLL** projeto. Na caixa **Nome**, digite `VB6Hello`.  
+2. No **novo projeto** caixa de diálogo, selecione o **Visual Basic** nó e selecione uma **ActiveX DLL** projeto. Na caixa **Nome**, digite `VB6Hello`.  
   
     > [!NOTE]
     >  Somente tipos de projeto ActiveX DLL e o controle ActiveX são compatíveis com o COM sem registro; Não há suporte para tipos de projeto EXE ActiveX e documento ActiveX.  
   
-3.  Na **Gerenciador de soluções**, clique duas vezes em **Class1.vb** para abrir o editor de texto.  
+3. Na **Gerenciador de soluções**, clique duas vezes em **Class1.vb** para abrir o editor de texto.  
   
-4.  No Class1. vb, adicione o código a seguir após o código gerado para o `New` método:  
+4. No Class1. vb, adicione o código a seguir após o código gerado para o `New` método:  
   
     ```  
     Public Sub SayHello()  
@@ -77,7 +77,7 @@ Implantação de componentes legados COM tradicionalmente tem sido uma tarefa di
     End Sub  
     ```  
   
-5.  Crie o componente. Dos **construir** menu, clique em **compilar solução**.  
+5. Crie o componente. Dos **construir** menu, clique em **compilar solução**.  
   
 > [!NOTE]
 >  COM sem registro dá suporte somente DLLs e COM controles de tipos de projeto. É possível usar EXEs com sem registro COM.  

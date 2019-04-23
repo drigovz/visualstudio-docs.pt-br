@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 38ea7865d625e2d5a04591848ecc7c3375d654f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 30bb4050399bf7a6d9120f7e5454b26ce505af35
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927030"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061548"
 ---
 # <a name="how-to-specify-a-start-menu-name-for-a-clickonce-application"></a>Como: Especificar um nome no menu Iniciar para um aplicativo ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,17 +37,17 @@ Quando um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo é i
   
 ### <a name="to-specify-a-start-menu-name"></a>Para especificar um nome no menu Iniciar  
   
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2.  Clique o **publicar** guia.  
+2. Clique o **publicar** guia.  
   
-3.  Clique o **opções** para abrir o **opções de publicação** caixa de diálogo.  
+3. Clique o **opções** para abrir o **opções de publicação** caixa de diálogo.  
   
-4.  Clique em **descrição**.  
+4. Clique em **descrição**.  
   
-5.  No **opções de publicação** caixa de diálogo, digite o nome a ser exibido no **nome do produto**.  
+5. No **opções de publicação** caixa de diálogo, digite o nome a ser exibido no **nome do produto**.  
   
-6.  Opcionalmente, você pode inserir um nome de editor no **nome do publicador**.  
+6. Opcionalmente, você pode inserir um nome de editor no **nome do publicador**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0cc194adc37c8f9f0309780a4c8ef6f9a780223b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ecc310896f7b938025d42e06ac5ef0ec8bac3d35
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925546"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063616"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project"></a>Como: Adicionar um novo Item a um projeto de fluxo de trabalho
 Depois de criar um projeto de fluxo de trabalho, você pode adicionar atividades de fluxo de trabalho, designer, e outros itens de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] familiares ao seu projeto.  
@@ -30,17 +30,17 @@ Depois de criar um projeto de fluxo de trabalho, você pode adicionar atividades
   
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>Para adicionar um novo item em um fluxo de trabalho projeto  
   
-1.  Sobre o **Project** menu, clique em **Adicionar Novo Item...** .  
+1. Sobre o **Project** menu, clique em **Adicionar Novo Item...** .  
   
      O **adicionar um novo Item** caixa de diálogo é aberta.  
   
-2.  No **modelos instalados** painel, selecione **fluxo de trabalho** grupo.  
+2. No **modelos instalados** painel, selecione **fluxo de trabalho** grupo.  
   
-3.  Selecione um dos quatro itens. A tabela anterior lista as seleções disponíveis.  
+3. Selecione um dos quatro itens. A tabela anterior lista as seleções disponíveis.  
   
-4.  Digite um nome apropriado para o item na **nome** caixa na parte inferior da caixa de diálogo.  
+4. Digite um nome apropriado para o item na **nome** caixa na parte inferior da caixa de diálogo.  
   
-5.  Clique em **adicionar** para adicionar o item ao projeto de fluxo de trabalho atual.  
+5. Clique em **adicionar** para adicionar o item ao projeto de fluxo de trabalho atual.  
   
 ## <a name="see-also"></a>Consulte também  
  [Criando um projeto de fluxo de trabalho](../workflow-designer/creating-a-workflow-project.md)

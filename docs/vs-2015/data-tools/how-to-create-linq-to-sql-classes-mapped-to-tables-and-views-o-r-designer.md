@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2be46e61438c555fc7ee7d523b3ff9b758c0a15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5b6e661a79f190e5befdbcf5c28ec0f4bd29ebf4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926898"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061574"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>Como: Criar classes LINQ to SQL mapeadas para tabelas e exibições (Designer Relacional de Objetos)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Classes LINQ to SQL mapeadas para tabelas de banco de dados e modos de exibiçã
 
 #### <a name="to-create-linq-to-sql-classes-that-are-mapped-to-database-tables-or-views"></a>Para criar classes LINQ to SQL que são mapeadas para tabelas ou exibições de banco de dados
 
-1.  Na **Server**/**Database Explorer**, expanda **tabelas** ou **exibições** e localize a tabela de banco de dados ou exibição a que você deseja Para usar em seu aplicativo.
+1. Na **Server**/**Database Explorer**, expanda **tabelas** ou **exibições** e localize a tabela de banco de dados ou exibição a que você deseja Para usar em seu aplicativo.
 
-2.  Arraste a tabela ou exibição para o [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
+2. Arraste a tabela ou exibição para o [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].
 
      Uma classe de entidade é criada e aparece na superfície de design. A classe de entidade tem propriedades que mapeiam para as colunas na tabela ou exibição selecionada.
 
@@ -43,22 +43,22 @@ Classes LINQ to SQL mapeadas para tabelas de banco de dados e modos de exibiçã
 
 #### <a name="to-create-an-object-data-source-based-on-linq-to-sql-entity-classes"></a>Para criar uma fonte de dados de objeto com base nas classes de entidade do LINQ to SQL
 
-1.  No menu **Compilar**, clique em **Compilar Solução** para criar o seu projeto.
+1. No menu **Compilar**, clique em **Compilar Solução** para criar o seu projeto.
 
-2.  No menu **Dados**, clique em **Mostrar Fontes de Dados**.
+2. No menu **Dados**, clique em **Mostrar Fontes de Dados**.
 
-3.  Na janela **Fontes de Dados**, clique em **Adicionar Nova Fonte de Dados**.
+3. Na janela **Fontes de Dados**, clique em **Adicionar Nova Fonte de Dados**.
 
-4.  Clique em **Objeto** na página **Escolher um Tipo de Fonte de Dados** e clique em **Avançar**.
+4. Clique em **Objeto** na página **Escolher um Tipo de Fonte de Dados** e clique em **Avançar**.
 
-5.  Expanda os nós e localize e selecione sua classe.
+5. Expanda os nós e localize e selecione sua classe.
 
     > [!NOTE]
     > Se a classe **Customer** não estiver disponível, cancele o assistente, compile o projeto e execute o assistente novamente.
 
-6.  Clique em **Concluir** para criar a fonte de dados e adicionar a classe de entidade **Customer** à janela **Fontes de Dados**.
+6. Clique em **Concluir** para criar a fonte de dados e adicionar a classe de entidade **Customer** à janela **Fontes de Dados**.
 
-7.  Arraste itens da janela de **Fontes de Dados** para um formulário.
+7. Arraste itens da janela de **Fontes de Dados** para um formulário.
 
 ## <a name="see-also"></a>Consulte também
 

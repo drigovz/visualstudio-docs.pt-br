@@ -10,12 +10,12 @@ ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 682fc88fb616fbe2617fe6d336a35bf6fbc30e9f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1744801b7efe591c449e74796c3c7d297dc3f982
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922350"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061704"
 ---
 # <a name="when-to-create-project-types"></a>Quando criar tipos de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,26 +25,26 @@ Criar um novo tipo de projeto oferece uma base para a personalização [!INCLUDE
 ## <a name="create-a-new-project-type"></a>Criar um novo tipo de projeto  
  Você deve criar um tipo de projeto se você quiser personalizar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para atuar em uma ou mais das seguintes maneiras:  
   
--   Participa na compilação, implantar, configurações e controle de origem.  
+- Participa na compilação, implantar, configurações e controle de origem.  
   
--   Oferecem suporte à depuração.  
+- Oferecem suporte à depuração.  
   
--   Exibir itens de projeto no **Gerenciador de soluções**.  
+- Exibir itens de projeto no **Gerenciador de soluções**.  
   
--   Use o **Abrir projeto** ou **novo projeto** caixa de diálogo.  
+- Use o **Abrir projeto** ou **novo projeto** caixa de diálogo.  
   
--   Suporte a aninhamento de projeto.  
+- Suporte a aninhamento de projeto.  
   
 ## <a name="extend-an-existing-project-type"></a>Estender um tipo de projeto existente  
  Você talvez queira criar um novo tipo de projeto que pode usar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] das seguintes maneiras para modificar ou estender o comportamento de um tipo de projeto existente, por exemplo, modificando o processo de compilação para [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)] projetos:  
   
--   Trabalhar com vários arquivos como uma única unidade.  
+- Trabalhar com vários arquivos como uma única unidade.  
   
--   Exiba um único arquivo como uma hierarquia de subitens.  
+- Exiba um único arquivo como uma hierarquia de subitens.  
   
--   Exiba um contexto de comando em torno de editores.  
+- Exiba um contexto de comando em torno de editores.  
   
--   Exiba um contexto de serviço para os editores.  
+- Exiba um contexto de serviço para os editores.  
   
 ## <a name="use-an-existing-project-type"></a>Usar um tipo de projeto existente  
  Criar um novo projeto, às vezes, não é necessário. A tabela a seguir mostra as tarefas que você não precisa criar um tipo de projeto para.  

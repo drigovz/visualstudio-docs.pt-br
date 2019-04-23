@@ -6,12 +6,12 @@ ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cdd01551472a3cf619d9156e0db20ad3b7c4931e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 93fa86fcac429b38c1e727f39f8c94611310119c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927681"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062583"
 ---
 # <a name="image-library-viewer"></a>Visualizador da biblioteca de imagens
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -224,9 +224,9 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
   
 ## <a name="notes"></a>Observações  
   
--   Por padrão, a ferramenta vai receber vários manifestos de imagem presentes no diretório de instalação do Visual Studio. É o único que tem monikers publicamente consumíveis a **Microsoft.VisualStudio.ImageCatalog** de manifesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (fazer **não** substituir esse GUID em um manifesto personalizado) tipo: KnownMonikers  
+- Por padrão, a ferramenta vai receber vários manifestos de imagem presentes no diretório de instalação do Visual Studio. É o único que tem monikers publicamente consumíveis a **Microsoft.VisualStudio.ImageCatalog** de manifesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (fazer **não** substituir esse GUID em um manifesto personalizado) tipo: KnownMonikers  
   
--   A ferramenta na inicialização para carregar todos os manifestos de imagem que ele encontrar, portanto, pode levar vários segundos para que o aplicativo seja exibido, na verdade, as tentativas. Ele também pode ser lenta ou que não responde ao carregar os manifestos.  
+- A ferramenta na inicialização para carregar todos os manifestos de imagem que ele encontrar, portanto, pode levar vários segundos para que o aplicativo seja exibido, na verdade, as tentativas. Ele também pode ser lenta ou que não responde ao carregar os manifestos.  
   
 ## <a name="sample-output"></a>Saída de Exemplo  
  Essa ferramenta não gera nenhuma saída.

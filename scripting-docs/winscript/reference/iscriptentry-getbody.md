@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1a2cb9757c0a9683a00768d8947dfe33749e4bb9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7f8f1ad24660401d575af2724b788387fd546af8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147937"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064912"
 ---
 # <a name="iscriptentrygetbody"></a>IScriptEntry::GetBody
 Retorna o texto que corresponde ao corpo de um `IScriptEntry` bloco de script, o bloco de função ou o scriptlet.  
@@ -39,11 +39,11 @@ HRESULT GetBody(
  `pbstr`  
  [out] O texto que está no corpo de um dos seguintes:  
   
--   Um `IScriptEntry` bloco de script  
+- Um `IScriptEntry` bloco de script  
   
--   Um `IScriptEntry` função em um bloco de função  
+- Um `IScriptEntry` função em um bloco de função  
   
--   Um `IScriptEntry` scriptlet manipulador de eventos  
+- Um `IScriptEntry` scriptlet manipulador de eventos  
   
 ## <a name="return-value"></a>Valor de retorno  
  Um `HRESULT`. Os possíveis valores incluem, mas sem limitação, aqueles na tabela a seguir.  

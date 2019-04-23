@@ -15,14 +15,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c24f9cec4a599a8131ad41cdadb6d00946921922
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 311fdca1d56133d85e7b6daa36fe8e4d3a50d5ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798953"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065409"
 ---
-# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Como adicionar ou remover namespaces importados (Visual Basic)
+# <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>Como: Adicionar ou remover Namespaces importados (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Importar um namespace permite que você use elementos deste namespace em seu código sem qualificar totalmente o elemento. Por exemplo, se quiser acessar o método `Create` na classe `System.Messaging.MessageQueue`, você pode importar o namespace `System.Messaging` e apenas se referir ao elemento necessário em código como `MessageQueue.Create`.  
@@ -31,22 +31,22 @@ Importar um namespace permite que você use elementos deste namespace em seu có
   
 ### <a name="to-add-an-imported-namespace"></a>Para adicionar um namespace importado  
   
-1.  No **Gerenciador de Soluções**, clique duas vezes no nó **Meu Projeto** do projeto.  
+1. No **Gerenciador de Soluções**, clique duas vezes no nó **Meu Projeto** do projeto.  
   
-2.  No **Designer de Projeto**, clique na guia **Referências**.  
+2. No **Designer de Projeto**, clique na guia **Referências**.  
   
-3.  Na lista **Namespaces Importados**, marque a caixa de seleção do namespace que você deseja adicionar.  
+3. Na lista **Namespaces Importados**, marque a caixa de seleção do namespace que você deseja adicionar.  
   
     > [!NOTE]
     >  Para ser importado, o namespace deve estar em um componente referenciado. Se o namespace não aparecer na lista, você precisará adicionar uma referência ao componente que o contém. Para obter mais informações, consulte [NIB como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9).  
   
 ### <a name="to-remove-an-imported-namespace"></a>Para remover um namespace importado  
   
-1.  No **Gerenciador de Soluções**, clique duas vezes no nó **Meu Projeto** do projeto.  
+1. No **Gerenciador de Soluções**, clique duas vezes no nó **Meu Projeto** do projeto.  
   
-2.  No **Designer de Projeto**, clique na guia **Referências**.  
+2. No **Designer de Projeto**, clique na guia **Referências**.  
   
-3.  Na lista **Namespaces Importados**, desmarque a caixa de seleção do namespace que você deseja remover.  
+3. Na lista **Namespaces Importados**, desmarque a caixa de seleção do namespace que você deseja remover.  
   
 ## <a name="user-imports"></a>Importações de usuário  
  Importações de usuário permitem importar uma classe específica dentro de um namespace, em vez de todo o namespace. Por exemplo, seu aplicativo pode ter uma importação para o namespace `Systems.Diagnostics`, mas a única classe dentro do namespace em que você tem interesse é a classe `Debug`. Você pode definir `System.Diagnostics.Debug` como uma importação de usuário e, em seguida, remover a importação de `System.Diagnostics`.  
@@ -55,28 +55,28 @@ Importar um namespace permite que você use elementos deste namespace em seu có
   
 #### <a name="to-add-a-user-import"></a>Para adicionar uma importação de usuário  
   
-1.  No **Gerenciador de Soluções**, clique duas vezes no nó **Meu Projeto** do projeto.  
+1. No **Gerenciador de Soluções**, clique duas vezes no nó **Meu Projeto** do projeto.  
   
-2.  No **Designer de Projeto**, clique na guia **Referências**.  
+2. No **Designer de Projeto**, clique na guia **Referências**.  
   
-3.  Na caixa de texto abaixo da lista **Namespaces Importados**, digite o nome completo do namespace que deseja importar, incluindo o namespace raiz.  
+3. Na caixa de texto abaixo da lista **Namespaces Importados**, digite o nome completo do namespace que deseja importar, incluindo o namespace raiz.  
   
-4.  Clique no botão **Adicionar importação de usuário** para adicionar o namespace à lista **Namespaces importados**.  
+4. Clique no botão **Adicionar importação de usuário** para adicionar o namespace à lista **Namespaces importados**.  
   
     > [!NOTE]
     >  O botão **Adicionar importação de usuário** será desabilitado se o namespace corresponder a um que já está na lista; não é possível adicionar uma importação duas vezes.  
   
 #### <a name="to-update-a-user-import"></a>Para atualizar uma importação de usuário  
   
-1.  No **Gerenciador de Soluções**, clique duas vezes no nó **Meu Projeto** do projeto.  
+1. No **Gerenciador de Soluções**, clique duas vezes no nó **Meu Projeto** do projeto.  
   
-2.  No **Designer de Projeto**, clique na guia **Referências**.  
+2. No **Designer de Projeto**, clique na guia **Referências**.  
   
-3.  Na lista **Namespaces Importados**, selecione o namespace que você deseja alterar.  
+3. Na lista **Namespaces Importados**, selecione o namespace que você deseja alterar.  
   
-4.  Na caixa de texto abaixo da lista de **Namespaces Importados**, digite o nome do novo namespace.  
+4. Na caixa de texto abaixo da lista de **Namespaces Importados**, digite o nome do novo namespace.  
   
-5.  Clique no botão **Adicionar importação de usuário** para atualizar o namespace na lista **Namespaces importados**.  
+5. Clique no botão **Adicionar importação de usuário** para atualizar o namespace na lista **Namespaces importados**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f1b98429f8d80d14acd6ce7951b9eb116f827ead
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d607300bc42bd0428655a9590ab2e6dcc2a7043
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58921826"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063134"
 ---
 # <a name="how-to-add-a-new-item-to-a-workflow-project-legacy"></a>Como: Adicionar um novo Item a um projeto de fluxo de trabalho (herdado)
 Depois de criar um projeto de fluxo de trabalho usando [!INCLUDE[wfd1](../includes/wfd1-md.md)] herdado fornecido por [!INCLUDE[vs2010](../includes/vs2010-md.md)] que tem como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)], você pode adicionar itens de [!INCLUDE[wf](../includes/wf-md.md)] e outros itens de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] familiares ao seu projeto.  
@@ -37,15 +37,15 @@ Depois de criar um projeto de fluxo de trabalho usando [!INCLUDE[wfd1](../includ
   
 ### <a name="to-add-a-new-item-to-a-workflow-project"></a>Para adicionar um novo item em um fluxo de trabalho projeto  
   
-1.  Sobre o **Project** menu, clique em **adicionar um novo Item**.  
+1. Sobre o **Project** menu, clique em **adicionar um novo Item**.  
   
      O **adicionar um novo Item** caixa de diálogo é aberta.  
   
-2.  Selecione um item.  
+2. Selecione um item.  
   
      A tabela anterior lista opções disponíveis do Windows Workflow Foundation.  
   
-3.  Clique em **adicionar** para adicionar o item ao projeto de fluxo de trabalho.  
+3. Clique em **adicionar** para adicionar o item ao projeto de fluxo de trabalho.  
   
 ## <a name="see-also"></a>Consulte também  
  [Criando projetos herdados de fluxo de trabalho](../workflow-designer/creating-legacy-workflow-projects.md)

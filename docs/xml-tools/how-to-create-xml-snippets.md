@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43305d7b9353bd34e98a3dcfd31205cb9159a2f3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 99ad13fd3c8c1c2efeeec28794e10a91d9dd0db1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659911"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060833"
 ---
 # <a name="how-to-create-xml-snippets"></a>Como: Criar snippets XML
 
@@ -23,23 +23,23 @@ O editor XML pode ser usado para criar novos trechos XML. O editor inclui um sni
 
  Para criar um novo código XML, o trecho de código crie um novo arquivo XML e usar o **Inserir trecho** recurso.
 
-1.  Sobre o **arquivo** menu, clique em **New** e, em seguida, clique em **arquivo**.
+1. Sobre o **arquivo** menu, clique em **New** e, em seguida, clique em **arquivo**.
 
-2.  Clique em **arquivo XML** e, em seguida, clique em **abrir**.
+2. Clique em **arquivo XML** e, em seguida, clique em **abrir**.
 
-3.  Clique com botão direito no painel do editor e selecione **Inserir trecho de código**.
+3. Clique com botão direito no painel do editor e selecione **Inserir trecho de código**.
 
-4.  Selecione **trecho** na lista e pressione **Enter**.
+4. Selecione **trecho** na lista e pressione **Enter**.
 
-5.  Faça as alterações para o novo snippet.
+5. Faça as alterações para o novo snippet.
 
-6.  Dos **arquivo** menu, selecione **salvar XMLFile**.
+6. Dos **arquivo** menu, selecione **salvar XMLFile**.
 
      O **salvar arquivo como** caixa de diálogo é exibida.
 
-7.  Insira o nome para o novo trecho e selecione **arquivos de trecho** da **Salvar como tipo** janela suspensa.
+7. Insira o nome para o novo trecho e selecione **arquivos de trecho** da **Salvar como tipo** janela suspensa.
 
-8.  Use o **salvar no** lista suspensa para alterar o local do arquivo para o *trechos de XML do Meus Documentos\Visual Studio 2005\Code Snippets\XML\My* pasta e pressione **salvar**.
+8. Use o **salvar no** lista suspensa para alterar o local do arquivo para o *trechos de XML do Meus Documentos\Visual Studio 2005\Code Snippets\XML\My* pasta e pressione **salvar**.
 
 ## <a name="snippet-description"></a>Descrição do trecho de código
 

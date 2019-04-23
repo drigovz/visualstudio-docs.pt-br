@@ -12,12 +12,12 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 321dca309476ecba80c0293f100ed64e7bb1cc4e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 87bfa86585d384c7940d5a5bcf31d07579bc75a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000045"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064674"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Como: Atualizar uma extensão do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,30 +30,30 @@ Você pode atualizar uma extensão do Visual Studio em seu sistema por meio **ex
 
 ### <a name="to-update-an-extension-on-your-system"></a>Para atualizar uma extensão em seu sistema
 
-1.  Sobre o **ferramentas** menu, clique em **extensões e atualizações**.
+1. Sobre o **ferramentas** menu, clique em **extensões e atualizações**.
 
-2.  No painel esquerdo, clique em **atualizações**.
+2. No painel esquerdo, clique em **atualizações**.
 
-3.  No painel central, clique na atualização que deseja instalar.
+3. No painel central, clique na atualização que deseja instalar.
 
      O número de versão da extensão atualizado é exibido no painel direito, junto com outras informações.
 
-4.  Na parte inferior do painel direito, clique em **atualização**.
+4. Na parte inferior do painel direito, clique em **atualização**.
 
 ### <a name="to-publish-an-update-of-an-extension"></a>Para publicar uma atualização de uma extensão
 
-1.  No Visual Studio, abra a solução para a extensão que você deseja atualizar. Faça as alterações.
+1. No Visual Studio, abra a solução para a extensão que você deseja atualizar. Faça as alterações.
 
     > [!IMPORTANT]
     >  Sem sinal que todas as extensões de usuário não são atualizadas automaticamente. Você sempre deve assinar suas extensões.
 
-2.  Na **Gerenciador de soluções**, abra source.extension.manifest.
+2. Na **Gerenciador de soluções**, abra source.extension.manifest.
 
-3.  No designer de manifesto, aumente o valor do número na **versão** campo.
+3. No designer de manifesto, aumente o valor do número na **versão** campo.
 
-4.  Salve a solução e compilá-lo.
+4. Salve a solução e compilá-lo.
 
-5.  Carregar o novo arquivo. VSIX (na pasta do projeto \bin\Debug\) para o [Visual Studio Marketplace](https://marketplace.visualstudio.com/) site da Web.
+5. Carregar o novo arquivo. VSIX (na pasta do projeto \bin\Debug\) para o [Visual Studio Marketplace](https://marketplace.visualstudio.com/) site da Web.
 
      Quando um usuário que tenha uma versão anterior da extensão é aberto **extensões e atualizações**, a nova versão será exibido na **atualizações** listar, desde que a ferramenta esteja definida para procurar atualizações automaticamente.
 

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8378bf0a95ca9a844de4985f7403f04978607dcd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3e17e5a88b958c1361e7f8b3db70d7599f44f766
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615267"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066189"
 ---
 # <a name="source-control-design-decisions"></a>Decisões de design de controle do código-fonte
 As seguintes decisões de design devem ser consideradas para projetos ao implementar o controle de origem.
@@ -28,11 +28,11 @@ As seguintes decisões de design devem ser consideradas para projetos ao impleme
 ## <a name="will-the-project-include-special-files"></a>O projeto incluirá arquivos especiais?
  Outra decisão de design importante é se a estrutura do projeto usa arquivos especiais. Arquivos especiais são arquivos ocultos que sustenta os arquivos que são caixas de diálogo visível no Gerenciador de soluções e no check-in e check-out. Se você usar arquivos especiais, siga estas diretrizes:
 
-1.  Não associe arquivos especiais no nó raiz do projeto — ou seja, com o projeto de arquivos em si. O arquivo de projeto deve ser um único arquivo.
+1. Não associe arquivos especiais no nó raiz do projeto — ou seja, com o projeto de arquivos em si. O arquivo de projeto deve ser um único arquivo.
 
-2.  Quando os arquivos especiais são adicionados, removidos ou renomeados em um projeto apropriado <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> os eventos devem ser disparados com o conjunto de sinalizador que indica que os arquivos são arquivos especiais. Esses eventos são chamados pelo ambiente em resposta ao projeto de chamada apropriada <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> métodos.
+2. Quando os arquivos especiais são adicionados, removidos ou renomeados em um projeto apropriado <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> os eventos devem ser disparados com o conjunto de sinalizador que indica que os arquivos são arquivos especiais. Esses eventos são chamados pelo ambiente em resposta ao projeto de chamada apropriada <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> métodos.
 
-3.  Quando o projeto ou o editor chama <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> para um arquivo, arquivos especiais associados a esse arquivo não são automaticamente checked out. Passe os arquivos especiais no junto com o arquivo pai. O ambiente será detecte a relação entre todos os arquivos que são passados e ocultar adequadamente os arquivos especiais no check-out de interface do usuário.
+3. Quando o projeto ou o editor chama <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> para um arquivo, arquivos especiais associados a esse arquivo não são automaticamente checked out. Passe os arquivos especiais no junto com o arquivo pai. O ambiente será detecte a relação entre todos os arquivos que são passados e ocultar adequadamente os arquivos especiais no check-out de interface do usuário.
 
 ## <a name="see-also"></a>Consulte também
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A>

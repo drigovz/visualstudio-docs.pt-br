@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 59ed3b8e62bbb2086581d89016d4609ab215f0de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 65b06ada96387ac4bff022c92e4025718b0291d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604945"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064291"
 ---
 # <a name="trusted-application-deployment-overview"></a>Visão geral da implantação de aplicativos confiáveis
 Este tópico fornece uma visão geral de como implantar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos que têm permissões elevadas, usando a tecnologia de implantação de aplicativos confiáveis.
@@ -75,9 +75,9 @@ Você deve seguir estas etapas para tirar proveito da implantação de aplicativ
 
  Se você não estiver implantando seu aplicativo em um ambiente gerenciado de área de trabalho, você tem as seguintes opções para adicionar um certificado para o repositório fornecedores confiáveis:
 
--   O namespace <xref:System.Security.Cryptography?displayProperty=fullName>.
+- O namespace <xref:System.Security.Cryptography?displayProperty=fullName>.
 
--   *CertMgr.exe*, que é um componente do Internet Explorer e, portanto, existe no Windows 98 e todas as versões posteriores. Para obter mais informações, consulte [Certmgr.exe (ferramenta de Gerenciador de certificados)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
+- *CertMgr.exe*, que é um componente do Internet Explorer e, portanto, existe no Windows 98 e todas as versões posteriores. Para obter mais informações, consulte [Certmgr.exe (ferramenta de Gerenciador de certificados)](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool).
 
 ### <a name="create-a-clickonce-application"></a>Criar um aplicativo ClickOnce
  Um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é um [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] aplicativo cliente combinado com os arquivos de manifesto que descrevem o aplicativo e fornecem parâmetros de instalação. Você pode ativar o seu programa em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo usando o **Publish** no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Como alternativa, você pode gerar todos os arquivos necessários para o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação usando as ferramentas que estão incluídas com o [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Para obter etapas detalhadas sobre [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação, consulte [passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
@@ -85,12 +85,12 @@ Você deve seguir estas etapas para tirar proveito da implantação de aplicativ
  Implantação de aplicativo confiável é específica para [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]e só pode ser usado com [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos.
 
 ### <a name="sign-the-deployment"></a>Se a implantação
- Depois de obter seu certificado, você deve usá-lo para assinar a sua implantação. Se você estiver implantando seu aplicativo usando o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Assistente de publicação, o assistente irá gerar automaticamente um certificado de teste para que você se você não especificou um certificado por conta própria. Você também pode usar o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] janela do Designer de projeto, no entanto, para fornecer um certificado fornecido por uma autoridade de certificação.  Consulte também [como: publicar um aplicativo ClickOnce usando o Assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ Depois de obter seu certificado, você deve usá-lo para assinar a sua implantação. Se você estiver implantando seu aplicativo usando o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Assistente de publicação, o assistente irá gerar automaticamente um certificado de teste para que você se você não especificou um certificado por conta própria. Você também pode usar o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] janela do Designer de projeto, no entanto, para fornecer um certificado fornecido por uma autoridade de certificação.  Consulte também [como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 > [!CAUTION]
 >  Não é recomendável que o aplicativo ser implantado com um certificado de teste.
 
- Você também pode assinar o aplicativo usando o *Mage.exe* ou *MageUI.exe* ferramentas do SDK. Para obter mais informações, consulte [instruções passo a passo: implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Para obter uma lista completa das opções de linha de comando relacionados à entrada de implantação, consulte [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
+ Você também pode assinar o aplicativo usando o *Mage.exe* ou *MageUI.exe* ferramentas do SDK. Para obter mais informações, confira [Passo a passo: Implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Para obter uma lista completa das opções de linha de comando relacionados à entrada de implantação, consulte [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 
 ### <a name="publish-the-application"></a>Publicar o aplicativo
  Assim que você entrar com sua [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestos, o aplicativo está pronto para publicar seu local de instalação. O local de instalação pode ser um servidor Web, um compartilhamento de arquivos ou no disco local. Quando um cliente acessa o manifesto de implantação pela primeira vez, o Gerenciador de confiança deve escolher se o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo recebeu autoridade ou não sejam executadas em um nível mais alto de confiança por instalado confiável publicador. O Gerenciador de confiança torna essa opção, comparando o certificado usado para assinar a implantação com os certificados armazenados no publicador de confiáveis do cliente armazenar. Se o Gerenciador de confiança encontra uma correspondência, o aplicativo é executado com confiança alta.
@@ -103,4 +103,4 @@ Você deve seguir estas etapas para tirar proveito da implantação de aplicativ
 
 ## <a name="see-also"></a>Consulte também
 - [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
-- [Passo a passo: implantar um aplicativo ClickOnce manualmente](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
+- [Passo a passo: Implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

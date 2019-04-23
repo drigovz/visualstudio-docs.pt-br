@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5535228f8e070128cfa2479d8017d3a88dc0915c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f07791a02c5e84722e8193f21b7ed2fe37bdd7f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790245"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064278"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>Introdução ao depurar aplicativos multithread (C#, Visual Basic, C++)
 
@@ -234,17 +234,17 @@ Você precisará primeiro um projeto de aplicativo multithread. Segue um exemplo
 
 ### <a name="ShowThreadsInSource"></a>Descobrir o marcador de thread  
 
-1.  Na barra de ferramentas de depuração, selecione o **Mostrar Threads em origem** botão ![Mostrar Threads em origem](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
+1. Na barra de ferramentas de depuração, selecione o **Mostrar Threads em origem** botão ![Mostrar Threads em origem](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker").
 
 2. Pressione **F11** uma vez para Avançar a linha de um do depurador de código.
 
-3.  Examine a medianiz no lado esquerdo da janela. Nessa linha, você verá uma *marcador de thread* ícone ![marcador de Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") que se parece com dois threads trançados. O marcador de thread indica que um thread está parado nesse local.
+3. Examine a medianiz no lado esquerdo da janela. Nessa linha, você verá uma *marcador de thread* ícone ![marcador de Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") que se parece com dois threads trançados. O marcador de thread indica que um thread está parado nesse local.
 
     Um marcador de thread pode ser parcialmente ocultos, um ponto de interrupção.
 
-4.  Passe o ponteiro sobre o marcador de thread. Um DataTip é exibido informando que o número de ID de nome e o thread para cada thread parado. Nesse caso, o nome é provavelmente `<noname>`.
+4. Passe o ponteiro sobre o marcador de thread. Um DataTip é exibido informando que o número de ID de nome e o thread para cada thread parado. Nesse caso, o nome é provavelmente `<noname>`.
 
-5.  Selecione o marcador de thread para ver as opções disponíveis no menu de atalho.
+5. Selecione o marcador de thread para ver as opções disponíveis no menu de atalho.
 
 ### <a name="ParallelStacks"></a>Exibir os locais de thread
 
@@ -260,7 +260,7 @@ No **pilhas paralelas** janela, você pode alternar entre um modo de exibição 
     - Dois threads inseriu a `ServerClass.InstanceMethod`, um dos quais é o thread atual (seta amarela), enquanto o outro thread foi interrompido no `Thread.Sleep`.
     - Um novo thread (à direita) também está sendo iniciado, mas é interrompido no `ThreadHelper.ThreadStart`.
 
-2.  Clique com botão direito entradas na **pilhas paralelas** janela para ver as opções disponíveis no menu de atalho.
+2. Clique com botão direito entradas na **pilhas paralelas** janela para ver as opções disponíveis no menu de atalho.
 
     Você pode executar várias ações desses menus de atalho, mas para este tutorial, mostraremos mais desses detalhes na **inspeção paralela** janela (próximas seções).
 
@@ -292,14 +292,14 @@ Você pode sinalizar os threads para manter o controle de threads importantes e 
 
     Todos os threads sinalizados. Agora, você pode filtrar para mostrar somente threads sinalizados.
 
-3.  No **inspeção paralela** janela, selecione a **Mostrar somente Threads sinalizados** botão ![Mostrar Threads sinalizados](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
+3. No **inspeção paralela** janela, selecione a **Mostrar somente Threads sinalizados** botão ![Mostrar Threads sinalizados](../debugger/media/dbg-threads-show-flagged.png "ThreadMarker").
 
     Apenas os threads sinalizados aparecem na lista.
 
     > [!TIP]
     > Depois que você sinalizou alguns threads, pode ser uma linha de código no editor de códigos com o botão direito e escolha **executar Threads sinalizados Cursor**. Certifique-se de escolher entrará em código que todos os threads sinalizados. Visual Studio fará uma pausa segmentos na linha selecionada de código, tornando mais fácil controlar a ordem de execução pelo [congelando e Descongelando threads](#bkmk_freeze).
 
-4.  Selecione o **Mostrar somente Threads sinalizados** botão novamente para voltar ao **Mostrar todos os Threads** modo.
+4. Selecione o **Mostrar somente Threads sinalizados** botão novamente para voltar ao **Mostrar todos os Threads** modo.
 
 5. Para remover a sinalização de threads, clique com botão direito um ou mais threads sinalizados na **inspeção paralela** janela e selecione **Remover sinalização**.
 
@@ -308,17 +308,17 @@ Você pode sinalizar os threads para manter o controle de threads importantes e 
 > [!TIP]
 > Você pode congelar e descongelar (suspender e retomar) threads para controlar a ordem na qual threads executam o trabalho. Isso pode ajudá-lo a resolver problemas de simultaneidade, como deadlocks e condições de corrida.
 
-1.  No **inspeção paralela** janela, com todas as linhas selecionadas, clique com botão direito e selecione **congelar**.
+1. No **inspeção paralela** janela, com todas as linhas selecionadas, clique com botão direito e selecione **congelar**.
 
     Na segunda coluna, um ícone de pausa é exibido para cada linha. O ícone de pausa indica que o thread está congelado.
 
-2.  Desmarque todas as outras linhas, selecionando apenas uma linha.
+2. Desmarque todas as outras linhas, selecionando apenas uma linha.
 
-3.  Uma linha com o botão direito e selecione **descongelar**.
+3. Uma linha com o botão direito e selecione **descongelar**.
 
     O ícone de pausa desaparece nesta linha, que indica que o thread não está congelado.
 
-4.  Alterne para o editor de código e pressione **F11**. Somente as execuções de thread não congeladas.
+4. Alterne para o editor de código e pressione **F11**. Somente as execuções de thread não congeladas.
 
     O aplicativo também pode criar uma instância de alguns novos threads. Quaisquer novos threads são sem sinalização e não estão congelados.
 

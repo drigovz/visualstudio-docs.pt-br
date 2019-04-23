@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9f39c45382fc55144f8200c3951fb4a229b7a43
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: fa5c02fc28e7ffec4765d94758c838ab149e7ac3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867365"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064187"
 ---
 # <a name="add-extensions-to-dsl-definitions"></a>Adicionar extensões a definições de DSL
 
@@ -20,15 +20,15 @@ Extensão de definição de DSL permite que você crie um pacote de extensões p
 
 Extensões DSL podem incluir os seguintes recursos:
 
--   Propriedades de elementos de modelo e apresentação
+- Propriedades de elementos de modelo e apresentação
 
--   Decoradores de formas e conectores
+- Decoradores de formas e conectores
 
--   Classes, relações, formas e conectores
+- Classes, relações, formas e conectores
 
--   Restrições de validação
+- Restrições de validação
 
--   Guias e itens de caixa de ferramentas
+- Guias e itens de caixa de ferramentas
 
 Um usuário de uma DSL estendido pode criar e salvar um modelo que contém as instâncias dos recursos adicionais. O modelo pode ser lido por outros usuários que tenham instalado a extensão apropriada. Os usuários que não tem instalado a extensão não é possível usar os recursos adicionais, mas eles podem atualizar e salvar um modelo sem perder os recursos adicionais.
 

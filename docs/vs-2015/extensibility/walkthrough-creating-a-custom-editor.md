@@ -10,12 +10,12 @@ ms.assetid: d090abb6-d99f-4083-a3db-cd16bf81ce7d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3967947e0a016b9f53c074a7907f4bb7d6f7ca96
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4b1b4e59e43a4a5aeb129464a34b96ef3f665e72
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58924907"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064713"
 ---
 # <a name="walkthrough-creating-a-custom-editor"></a>Passo a passo: Criando um editor personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,21 +30,21 @@ O modelo de projeto de VSPackage pode criar um editor personalizado simple em C+
   
 ### <a name="to-create-a-vspackage-using-the-visual-studio-package-template"></a>Para criar um VSPackage usando o modelo de pacote do Visual Studio  
   
-1.  Crie um projeto com o modelo de pacote do Visual Studio.  
+1. Crie um projeto com o modelo de pacote do Visual Studio.  
   
-2.  Selecione o **Editor personalizado** opção e clique em **próxima**. O **opções do Editor** página é exibida.  
+2. Selecione o **Editor personalizado** opção e clique em **próxima**. O **opções do Editor** página é exibida.  
   
-3.  Digite o nome do seu editor na **nome do Editor** caixa. Digite a extensão de arquivo que você deseja ser associado com seu editor na **extensão de arquivo** caixa. O editor está disponível para arquivos com essa extensão. A extensão de arquivo está registrada para o Visual Studio apenas, não para Windows. Digite o nome de arquivo padrão para novos documentos criados com o seu editor na **nome de arquivo padrão** caixa.  
+3. Digite o nome do seu editor na **nome do Editor** caixa. Digite a extensão de arquivo que você deseja ser associado com seu editor na **extensão de arquivo** caixa. O editor está disponível para arquivos com essa extensão. A extensão de arquivo está registrada para o Visual Studio apenas, não para Windows. Digite o nome de arquivo padrão para novos documentos criados com o seu editor na **nome de arquivo padrão** caixa.  
   
-4.  Clique em **concluir** para criar o VSPackage na pasta que você especificou.  
+4. Clique em **concluir** para criar o VSPackage na pasta que você especificou.  
   
 ### <a name="to-test-your-custom-editor"></a>Para testar seu editor personalizado  
   
-1.  Sobre o **arquivo** , aponte para **New** e, em seguida, clique em **arquivo**.  
+1. Sobre o **arquivo** , aponte para **New** e, em seguida, clique em **arquivo**.  
   
-2.  No **modelos instalados** painel da **novo arquivo** caixa de diálogo, selecione o modelo de arquivo e, em seguida, o arquivo de tipo que você acabou de registrar.  
+2. No **modelos instalados** painel da **novo arquivo** caixa de diálogo, selecione o modelo de arquivo e, em seguida, o arquivo de tipo que você acabou de registrar.  
   
-3.  Clique em **abrir** para exibir e editar o documento.  
+3. Clique em **abrir** para exibir e editar o documento.  
   
      O editor dá suporte a operações de recortar e colar, localizar e substituir e aberto e de carga.  
   

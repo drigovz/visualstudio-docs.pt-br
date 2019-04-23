@@ -26,12 +26,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fcb5126d5281a62c9af55ba9e4283df4e1c3819c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1da5ba504c22f78ebd3c0705bd5ee903fb4a2997
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924531"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060554"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in"></a>Como: Localizar em qual DLL o programa falhado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,17 +43,17 @@ ms.locfileid: "58924531"
   
 ### <a name="to-find-where-a-crash-occurred-using-the-modules-window"></a>Para descobrir onde ocorreu uma falha usando a janela Módulos  
   
-1.  Observe o endereço onde a falha ocorreu.  
+1. Observe o endereço onde a falha ocorreu.  
   
-2.  No menu **Depurar**, escolha **Janelas** e clique em **Módulos**.  
+2. No menu **Depurar**, escolha **Janelas** e clique em **Módulos**.  
   
-3.  Na janela **Módulos**, localize a coluna **Endereço**. Você poderá precisar usar a barra de rolagem para vê-la.  
+3. Na janela **Módulos**, localize a coluna **Endereço**. Você poderá precisar usar a barra de rolagem para vê-la.  
   
-4.  Clique no botão **Endereço** na parte superior da coluna para classificar as DLLs por endereço.  
+4. Clique no botão **Endereço** na parte superior da coluna para classificar as DLLs por endereço.  
   
-5.  Examine a lista classificada para localizar a DLL cujo intervalo de endereço contém o local da falha.  
+5. Examine a lista classificada para localizar a DLL cujo intervalo de endereço contém o local da falha.  
   
-6.  Examine as colunas **Nome** e **Caminho** para ver o nome e o caminho da DLL.  
+6. Examine as colunas **Nome** e **Caminho** para ver o nome e o caminho da DLL.  
   
 ## <a name="see-also"></a>Consulte também  
  [Como: Depurar DLLs nativas](../debugger/how-to-debug-native-dlls.md)   

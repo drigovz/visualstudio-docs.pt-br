@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0ca0150b44bbed9f411af25c5ce3805e553e8272
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c475366c190e5ac008394f8642f64da022532a0a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775105"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60064733"
 ---
 # <a name="using-3-d-assets-in-your-game-or-app"></a>Usando ativos 3D no jogo ou no aplicativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ Este artigo descreve como é possível usar o [!INCLUDE[vsprvs](../includes/vspr
   
 #### <a name="to-add-the-build-customizations-to-your-project"></a>Para adicionar as personalizações de compilação ao seu projeto  
   
-1.  No **Gerenciador de Soluções**, abra o menu de atalho do projeto e escolha **Dependências de Build**, **Personalizações do Build**. A caixa de diálogo **Arquivos de Personalizações do Build do Visual C++** é exibida.  
+1. No **Gerenciador de Soluções**, abra o menu de atalho do projeto e escolha **Dependências de Build**, **Personalizações do Build**. A caixa de diálogo **Arquivos de Personalizações do Build do Visual C++** é exibida.  
   
-2.  Em **Arquivos de Personalização do Build Disponíveis**, marque as caixas de seleção que correspondem aos tipos de ativo que você deseja usar no projeto, como descrito nesta tabela:  
+2. Em **Arquivos de Personalização do Build Disponíveis**, marque as caixas de seleção que correspondem aos tipos de ativo que você deseja usar no projeto, como descrito nesta tabela:  
   
     |Tipo de ativo|Nome da personalização de compilação|  
     |----------------|------------------------------|  
@@ -45,7 +45,7 @@ Este artigo descreve como é possível usar o [!INCLUDE[vsprvs](../includes/vspr
     |Modelos 3D|**MeshContentTask(.targets, .props)**|  
     |Sombreadores|**ShaderGraphContentTask(.targets, .props)**|  
   
-3.  Escolha o botão **OK**.  
+3. Escolha o botão **OK**.  
   
 ## <a name="including-assets-in-your-build"></a>Incluindo ativos na compilação  
  Agora que seu projeto conhece os diferentes tipos de ativos 3D que você deseja usar, a próxima etapa é dizer quais arquivos são ativos 3D e quais tipos de ativos eles são.  
@@ -76,13 +76,13 @@ Este artigo descreve como é possível usar o [!INCLUDE[vsprvs](../includes/vspr
   
 #### <a name="to-configure-content-pipeline-properties"></a>Para configurar as propriedades de pipeline de conteúdo  
   
-1.  No **Gerenciador de Soluções**, no seu projeto, abra o menu de atalho para o arquivo do ativo e selecione **Propriedades**. A caixa de diálogo **Página de Propriedades** do ativo é exibida.  
+1. No **Gerenciador de Soluções**, no seu projeto, abra o menu de atalho para o arquivo do ativo e selecione **Propriedades**. A caixa de diálogo **Página de Propriedades** do ativo é exibida.  
   
-2.  Verifique se as propriedades **Configuração** e **Plataforma** estão definidas para os valores aos quais você deseja aplicar as suas alterações.  
+2. Verifique se as propriedades **Configuração** e **Plataforma** estão definidas para os valores aos quais você deseja aplicar as suas alterações.  
   
-3.  Em **Propriedades de Configuração**, escolha o nó do pipeline de conteúdo (por exemplo, **Pipeline de Conteúdo de Imagem** para ativos de textura e imagens) e, na grade de propriedade, defina as propriedades para os valores adequados. Por exemplo, para gerar mipmaps para um ativo de textura no tempo de build, defina a propriedade **Gerar Mips** como **Sim**.  
+3. Em **Propriedades de Configuração**, escolha o nó do pipeline de conteúdo (por exemplo, **Pipeline de Conteúdo de Imagem** para ativos de textura e imagens) e, na grade de propriedade, defina as propriedades para os valores adequados. Por exemplo, para gerar mipmaps para um ativo de textura no tempo de build, defina a propriedade **Gerar Mips** como **Sim**.  
   
-4.  Escolha o botão **OK**.  
+4. Escolha o botão **OK**.  
   
 ### <a name="image-content-pipeline-configuration"></a>Configuração do pipeline de conteúdo da imagem  
  Ao usar a ferramenta de pipeline de conteúdo da imagem para compilar um ativo de textura, é possível compactar a textura de várias maneiras, indicar se os níveis de MIP devem ser gerados no tempo de compilação e alterar o nome do arquivo de saída.  
@@ -92,26 +92,26 @@ Este artigo descreve como é possível usar o [!INCLUDE[vsprvs](../includes/vspr
 |**Compress**|Especifica o tipo de compactação usado para o arquivo de saída.<br /><br /> As opções disponíveis são:<br /><br /> -   **Sem Compactação**<br />-   **Compactação BC1_UNORM**<br />-   **Compactação BC1_UNORM_SRGB**<br />-   **Compactação BC2_UNORM**<br />-   **Compactação BC2_UNORM_SRGB**<br />-   **Compactação BC3_UNORM**<br />-   **Compactação BC3_UNORM_SRGB**<br />-   **Compactação BC4_UNORM**<br />-   **Compactação BC4_SNORM**<br />-   **Compactação BC5_UNORM**<br />-   **Compactação BC5_SNORM**<br />-   **Compactação BC6H_UF16**<br />-   **Compactação BC6H_SF16**<br />-   **Compactação BC7_UNORM**<br />-   **Compactação BC7_UNORM_SRGB**<br /><br /> Para obter informações sobre quais formatos de compactação têm suporte em diferentes versões do DirectX, consulte [Guia de programação para DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|  
 |Converter para formato alfa pré-multiplicado|**Sim** para converter a imagem para um formato alfa pré-multiplicado no arquivo de saída; caso contrário, **Não**. Apenas o arquivo de saída é alterado, a imagem de origem permanece inalterada.|  
 |**Gerar Mips**|**Sim** para gerar uma cadeia de MIP completa no tempo de build no arquivo de saída; caso contrário, **Não**. Se **Não** e o arquivo de origem já contiver uma cadeia de mipmap, o arquivo de saída terá uma cadeia MIP; caso contrário, o arquivo de saída não terá uma cadeia MIP.|  
-|**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:** alterar a extensão de nome de arquivo de saída não tem efeito sobre o formato do arquivo.|  
+|**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:**  Alterar a extensão do nome do arquivo de saída não tem efeito sobre o formato do arquivo.|  
   
 ### <a name="mesh-content-pipeline-configuration"></a>Configuração do pipeline de conteúdo da malha  
  Quando você usar a ferramenta de pipeline de conteúdo da malha para criar um ativo de malha, é possível alterar o nome do arquivo de saída.  
   
 |Propriedade|Descrição|  
 |--------------|-----------------|  
-|**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:** alterar a extensão de nome de arquivo de saída não tem efeito sobre o formato do arquivo.|  
+|**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:**  Alterar a extensão do nome do arquivo de saída não tem efeito sobre o formato do arquivo.|  
   
 ### <a name="shader-content-pipeline-configuration"></a>Configuração do pipeline de conteúdo do sombreador  
  Quando você usar a ferramenta de pipeline de conteúdo do sombreador para criar um ativo de sombreador, é possível alterar o nome do arquivo de saída.  
   
 |Propriedade|Descrição|  
 |--------------|-----------------|  
-|**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:** alterar a extensão de nome de arquivo de saída não tem efeito sobre o formato do arquivo.|  
+|**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:**  Alterar a extensão do nome do arquivo de saída não tem efeito sobre o formato do arquivo.|  
   
 ## <a name="loading-and-using-3-d-assets-at-run-time"></a>Carregando e usando ativos 3D no tempo de execução  
   
 ### <a name="using-textures-and-images"></a>Usando texturas e imagens  
- Direct3D fornece funções para criar recursos de textura. No Direct3D 11, a biblioteca do utilitário D3DX11 fornece funções adicionais para criar recursos de textura e visualizações de recursos diretamente de arquivos de imagem. Para obter mais informações sobre como criar um recurso de textura em Direct3D 11, consulte [Texturas](http://go.microsoft.com/fwlink/p/?LinkID=246267). Para obter mais informações sobre como usar a biblioteca D3DX11 para criar um recurso de textura ou um modo de exibição de recursos de um arquivo de imagem, consulte [Como inicializar uma textura de um arquivo](http://go.microsoft.com/fwlink/p/?LinkId=246268).  
+ Direct3D fornece funções para criar recursos de textura. No Direct3D 11, a biblioteca do utilitário D3DX11 fornece funções adicionais para criar recursos de textura e visualizações de recursos diretamente de arquivos de imagem. Para obter mais informações sobre como criar um recurso de textura em Direct3D 11, consulte [Texturas](http://go.microsoft.com/fwlink/p/?LinkID=246267). Para obter mais informações sobre como usar a biblioteca D3DX11 para criar um recurso de textura ou um modo de exibição de recursos com base em um arquivo de imagem, confira [Como: Inicializar uma textura de um arquivo](http://go.microsoft.com/fwlink/p/?LinkId=246268).  
   
 ### <a name="using-3-d-models"></a>Usando modelos 3D  
  O Direct3D 11 não fornece funções para criar recursos de modelos 3D. Em vez disso, você precisa gravar código que leia o arquivo de modelo 3D e crie buffers de índice e vértice que representem o modelo 3D e quaisquer recursos que o modelo exija, como texturas ou sombreadores.  
@@ -202,8 +202,8 @@ cbuffer MiscVars : register(b3)
   
 |Título|Descrição|  
 |-----------|-----------------|  
-|[Como exportar uma textura que contenha mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura contendo mipmaps pré-calculados.|  
-|[Como exportar uma textura que tenha Alfa pré-multiplicado](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura contendo valores alfa pré-multiplicados.|  
-|[Como exportar uma textura para uso com aplicativos Direct2D ou Javascipt](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura que possa ser usada em um aplicativo Direct2D ou JavaScript.|  
+|[Como: Exportar uma textura que contenha Mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura contendo mipmaps pré-calculados.|  
+|[Como: Exportar uma textura que tenha alfa pré-multiplicado](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura contendo valores alfa pré-multiplicados.|  
+|[Como: Exportar uma textura para uso com o Direct2D ou Javascipt aplicativos](../designers/how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps.md)|Descreve como usar o Pipeline de Conteúdo da Imagem para exportar uma textura que possa ser usada em um aplicativo Direct2D ou JavaScript.|  
 |[Trabalhando com ativos 3D para jogos e aplicativos](../designers/working-with-3-d-assets-for-games-and-apps.md)|Descreve as ferramentas de edição que o Visual Studio fornece para criar e manipular ativos 3D, incluindo texturas e imagens, modelos 3D e sombreadores.|  
-|[Como exportar um sombreador](../designers/how-to-export-a-shader.md)|Descreve como exportar o sombreador do Designer do Sombreador.|
+|[Como: Exportar um sombreador](../designers/how-to-export-a-shader.md)|Descreve como exportar o sombreador do Designer do Sombreador.|

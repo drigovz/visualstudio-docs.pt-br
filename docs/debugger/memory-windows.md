@@ -24,12 +24,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a35e679ebff8a0a262b329298b0f2d135eb9dc8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: 794400a14cac5b85f813e7a384c650c581a719e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526679"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061613"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Usar as janelas de memória no depurador do Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -84,7 +84,7 @@ Por padrão, o conteúdo de memória são exibidos como inteiros de 1 byte em fo
 
 **Para alterar o formato do conteúdo de memória:**
 
--  Clique com botão direito no **memória** janela e escolha os formatos que você deseja no menu de contexto.
+- Clique com botão direito no **memória** janela e escolha os formatos que você deseja no menu de contexto.
 
 **Para alterar o número de colunas na janela de memória:**
 

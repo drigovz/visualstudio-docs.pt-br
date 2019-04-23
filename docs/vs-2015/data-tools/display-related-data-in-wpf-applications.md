@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a80fa982da118db58abbc589136823d5c433ce3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e8a7bd540f5c8a99145b892d080d8cb54e57d968
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657253"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061171"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>Exibir dados relacionados em aplicativos WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,23 +38,23 @@ Em alguns aplicativos, você talvez queira trabalhar com dados que vêm de vári
   
 ## <a name="to-create-controls-that-display-related-records"></a>Para criar controles que exibem registros relacionados  
   
-1.  Sobre o **dados** menu, clique em **Mostrar fontes de dados** para abrir o **fontes de dados** janela.  
+1. Sobre o **dados** menu, clique em **Mostrar fontes de dados** para abrir o **fontes de dados** janela.  
   
-2.  Clique em **Adicionar Nova Fonte de Dados** e complete o **Assistente de Configuração de Fonte de Dados**.  
+2. Clique em **Adicionar Nova Fonte de Dados** e complete o **Assistente de Configuração de Fonte de Dados**.  
   
-3.  Abra o designer WPF e certifique-se de que o designer contém um contêiner que é um destino de soltar válido para os itens na **fontes de dados** janela.  
+3. Abra o designer WPF e certifique-se de que o designer contém um contêiner que é um destino de soltar válido para os itens na **fontes de dados** janela.  
   
      Para obter mais informações sobre destinos depósitos válidos, consulte [WPF associar controles a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-4.  No **fontes de dados** janela, expanda o nó que representa a tabela pai ou de objeto na relação. A tabela pai ou o objeto está no lado "um" de uma relação um-para-muitos.  
+4. No **fontes de dados** janela, expanda o nó que representa a tabela pai ou de objeto na relação. A tabela pai ou o objeto está no lado "um" de uma relação um-para-muitos.  
   
-5.  Arraste o nó pai (ou todos os itens individuais no nó pai) a **fontes de dados** window para um destino de soltar válido no designer.  
+5. Arraste o nó pai (ou todos os itens individuais no nó pai) a **fontes de dados** window para um destino de soltar válido no designer.  
   
      O Visual Studio gera XAML que cria novos controles de associação de dados para cada item que você arrasta. O XAML também adiciona um novo <xref:System.Windows.Data.CollectionViewSource> para a tabela pai ou o objeto para os recursos de destino de soltar. Para algumas fontes de dados, o Visual Studio também gera código para carregar os dados na tabela pai ou do objeto. Para obter mais informações, consulte [WPF associar controles a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).  
   
-6.  No **fontes de dados** janela, localize a tabela filho relacionada ou o objeto. Tabelas filho relacionados e os objetos aparecem como nós expansíveis na parte inferior da lista do nó pai de dados.  
+6. No **fontes de dados** janela, localize a tabela filho relacionada ou o objeto. Tabelas filho relacionados e os objetos aparecem como nós expansíveis na parte inferior da lista do nó pai de dados.  
   
-7.  Arraste o nó filho (ou todos os itens individuais no nó filho) a **fontes de dados** window para um destino de soltar válido no designer.  
+7. Arraste o nó filho (ou todos os itens individuais no nó filho) a **fontes de dados** window para um destino de soltar válido no designer.  
   
      O Visual Studio gera XAML que cria novos controles de associação de dados para cada um dos itens que você arrasta. O XAML também adiciona um novo <xref:System.Windows.Data.CollectionViewSource> para a tabela filho ou o objeto para os recursos de destino de soltar. Esse novo <xref:System.Windows.Data.CollectionViewSource> está associado à propriedade da tabela pai ou do objeto que você acabou de arrastar para o designer. Para algumas fontes de dados, o Visual Studio também gera código para carregar os dados na tabela filho ou objeto.  
   

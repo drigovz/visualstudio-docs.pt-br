@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5b02d831093173b28cfd6c004e16c4514977a044
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7dce10c2bc44eb4fde6a6e38417d136ea5e9ba41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617399"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061600"
 ---
 # <a name="extend-the-sharepoint-project-system"></a>Estender o sistema de projeto do SharePoint
   Você pode criar soluções do SharePoint usando um conjunto de modelos de projeto e modelos de item no Visual Studio. Esses modelos atenderem os requisitos de muitos cenários de desenvolvimento, mas talvez você descubra alguns casos em que eles não fornecem a funcionalidade necessária. Nesses casos, você pode estender o sistema de projeto do SharePoint.
@@ -33,20 +33,20 @@ ms.locfileid: "56617399"
 ## <a name="how-to-extend-the-sharepoint-project-system"></a>Como estender o sistema de projeto do SharePoint
  Você pode estender o sistema de projeto do SharePoint das seguintes maneiras:
 
--   Definir seus próprios tipos de item de projeto do SharePoint e associá-los a novos modelos de item ou modelos de projeto no Visual Studio. Por exemplo, você pode definir um tipo de item de projeto do SharePoint para a criação de um campo ou uma ação personalizada. Para obter mais informações, consulte [definir tipos personalizados de item de projeto do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md).
+- Definir seus próprios tipos de item de projeto do SharePoint e associá-los a novos modelos de item ou modelos de projeto no Visual Studio. Por exemplo, você pode definir um tipo de item de projeto do SharePoint para a criação de um campo ou uma ação personalizada. Para obter mais informações, consulte [definir tipos personalizados de item de projeto do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md).
 
--   Estenda os tipos de item de projeto do SharePoint que já estão instalados no Visual Studio. Por exemplo, você pode adicionar um item de menu de atalho a um item de projeto no **Gerenciador de soluções** e personalizar o item de projeto quando um desenvolvedor escolhe o item de menu. Para obter mais informações, consulte [itens de projeto do SharePoint estender](../sharepoint/extending-sharepoint-project-items.md).
+- Estenda os tipos de item de projeto do SharePoint que já estão instalados no Visual Studio. Por exemplo, você pode adicionar um item de menu de atalho a um item de projeto no **Gerenciador de soluções** e personalizar o item de projeto quando um desenvolvedor escolhe o item de menu. Para obter mais informações, consulte [itens de projeto do SharePoint estender](../sharepoint/extending-sharepoint-project-items.md).
 
--   Estenda projetos do SharePoint. Por exemplo, você pode adicionar manipuladores de eventos para executar tarefas específicas quando itens são adicionados ou removidos de projetos do SharePoint. Para obter mais informações, consulte [projetos do SharePoint estender](../sharepoint/extending-sharepoint-projects.md).
+- Estenda projetos do SharePoint. Por exemplo, você pode adicionar manipuladores de eventos para executar tarefas específicas quando itens são adicionados ou removidos de projetos do SharePoint. Para obter mais informações, consulte [projetos do SharePoint estender](../sharepoint/extending-sharepoint-projects.md).
 
--   Estenda o comportamento de empacotamento e implantação de itens de projeto do SharePoint e projetos do SharePoint. Por exemplo, você pode criar suas próprias etapas de implantação a ser executado quando você implanta ou cancelar um projeto, ou você pode executar tarefas personalizadas adicionais quando o Visual Studio executa determinadas etapas de implantação. Para obter mais informações, consulte [estender o SharePoint empacotamento e implantação](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
+- Estenda o comportamento de empacotamento e implantação de itens de projeto do SharePoint e projetos do SharePoint. Por exemplo, você pode criar suas próprias etapas de implantação a ser executado quando você implanta ou cancelar um projeto, ou você pode executar tarefas personalizadas adicionais quando o Visual Studio executa determinadas etapas de implantação. Para obter mais informações, consulte [estender o SharePoint empacotamento e implantação](../sharepoint/extending-sharepoint-packaging-and-deployment.md).
 
 ## <a name="common-development-tasks"></a>Tarefas comuns de desenvolvimento
  Você pode executar as seguintes tarefas comuns nas extensões do sistema de projeto do SharePoint:
 
--   Salve dados de cadeia de caracteres personalizada com itens de projeto e em vários tipos diferentes de arquivos de projeto. Para obter mais informações, consulte [salvar os dados nas extensões do sistema de projeto do SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
+- Salve dados de cadeia de caracteres personalizada com itens de projeto e em vários tipos diferentes de arquivos de projeto. Para obter mais informações, consulte [salvar os dados nas extensões do sistema de projeto do SharePoint](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md).
 
--   Converter um objeto no sistema de projeto do SharePoint para um objeto correspondente no modelo de objeto de automação do Visual Studio ou modelo de objeto de integração, ou vice-versa. Para obter mais informações, consulte [Conver entre tipos de sistema de projeto do SharePoint e outros tipos de projeto do Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
+- Converter um objeto no sistema de projeto do SharePoint para um objeto correspondente no modelo de objeto de automação do Visual Studio ou modelo de objeto de integração, ou vice-versa. Para obter mais informações, consulte [Conver entre tipos de sistema de projeto do SharePoint e outros tipos de projeto do Visual Studio](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Definir tipos personalizados de item de projeto do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)

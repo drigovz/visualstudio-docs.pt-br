@@ -11,12 +11,12 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 31afa6229a7eeb39c146d40992effd8969e76725
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ec79aab58e167ff2c935317897ba10a042a2e5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924561"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065539"
 ---
 # <a name="visual-studio-shell"></a>Shell do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,17 +40,17 @@ O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] shell é o principal agente de
   
 - Seleção de todo o shell de acompanhamento, o contexto e moeda. O shell rastreia os seguintes tipos de itens:  
   
-  -   O projeto atual  
+  - O projeto atual  
   
-  -   O item de projeto atual ou ItemID atual <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
+  - O item de projeto atual ou ItemID atual <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>  
   
-  -   A seleção atual para o **propriedades** janela ou `SelectionContainer`  
+  - A seleção atual para o **propriedades** janela ou `SelectionContainer`  
   
-  -   O contexto de interface do usuário IDs ou CmdUIGuids que controlam a visibilidade de comandos, menus e barras de ferramentas  
+  - O contexto de interface do usuário IDs ou CmdUIGuids que controlam a visibilidade de comandos, menus e barras de ferramentas  
   
-  -   Os elementos ativos no momento, como a janela ativa, o documento e o Gerenciador de desfazer  
+  - Os elementos ativos no momento, como a janela ativa, o documento e o Gerenciador de desfazer  
   
-  -   Os atributos de contexto de usuário que orientam a Ajuda dinâmica  
+  - Os atributos de contexto de usuário que orientam a Ajuda dinâmica  
   
   O shell também atua como mediador de comunicação entre os VSPackages instalados e os serviços atuais. Ele dá suporte aos principais recursos do shell e torna-os disponíveis para todos os VSPackages integrados no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Esses principais recursos incluem os seguintes itens:  
   

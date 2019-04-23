@@ -6,12 +6,12 @@ ms.assetid: 99395da7-ec34-491d-9baa-0590d23283ce
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c878eb55dbbdeacf0984b399949b2c3bbb7550b8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e1607ec4863c7e2b21cd69dd57ca4203e3cf4dbf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928565"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60063667"
 ---
 # <a name="vsix-color-compiler"></a>Compilador de cores do VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -111,7 +111,7 @@ A ferramenta do compilador de cor de extensão do Visual Studio é um aplicativo
 |-|-|  
 |**Atributo**|**Definição**|  
 |Tipo|[Obrigatório] O tipo da cor. Ele pode ser um dos seguintes:<br /><br /> *CT_INVALID:* A cor é inválido ou não foi definida.<br /><br /> *CT_RAW:* Um valor ARGB bruto.<br /><br /> *CT_COLORINDEX:* NÃO USE.<br /><br /> *CT_SYSCOLOR:* Uma cor de sistema do Windows em SysColor.<br /><br /> *CT_VSCOLOR:* Uma cor do Visual Studio em __VSSYSCOLOREX.<br /><br /> *CT_AUTOMATIC:* A cor automática.<br /><br /> *CT_TRACK_FOREGROUND:* NÃO USE.<br /><br /> *CT_TRACK_BACKGROUND:* NÃO USE.|  
-|Origem|[Obrigatório] O valor da cor em hexadecimal|  
+|Source|[Obrigatório] O valor da cor em hexadecimal|  
   
  Todos os valores com suporte pela enumeração __VSCOLORTYPE são compatíveis com o esquema no atributo de tipo. No entanto, é recomendável que você use apenas CT_RAW e CT_SYSCOLOR.  
   
@@ -149,15 +149,15 @@ A ferramenta do compilador de cor de extensão do Visual Studio é um aplicativo
   
  **Exemplos**  
   
--   VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
+- VsixColorCompiler D:\xml\colors.xml D:\pkgdef\colors.pkgdef  
   
--   VsixColorCompiler D:\xml\colors.xml /noLogo  
+- VsixColorCompiler D:\xml\colors.xml /noLogo  
   
 ## <a name="notes"></a>Observações  
   
--   Essa ferramenta exige que a versão mais recente do tempo de execução do VC + + ser instalado.  
+- Essa ferramenta exige que a versão mais recente do tempo de execução do VC + + ser instalado.  
   
--   Há suporte para apenas arquivos únicos. Não há suporte para conversão em massa por meio de caminhos de pasta.  
+- Há suporte para apenas arquivos únicos. Não há suporte para conversão em massa por meio de caminhos de pasta.  
   
 ## <a name="sample-output"></a>Saída de exemplo  
  O arquivo. pkgdef gerado pela ferramenta será semelhante ao abaixo de chaves:  

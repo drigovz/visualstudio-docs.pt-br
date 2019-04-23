@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 63726f9f38cdede6c8a0525b74244baac9455aad
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 02bfb1b4797973b3946405c38598409bf3247c70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58790375"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60065734"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>Implantar aplicativos UWP usando o Visual Studio
 
@@ -36,18 +36,18 @@ Implantação é automática quando você depura seu aplicativo do Visual Studio
 
 - Implantação de um aplicativo que será depurado quando é iniciado por outro aplicativo ou método.
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Como implantar um aplicativo UWP
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Como implantar um aplicativo UWP
  Implantar manualmente um aplicativo é simples:
 
-1.  Se você está implantando para um dispositivo remoto, especifique o nome ou o endereço IP do dispositivo na página de propriedade do projeto de inicialização do aplicativo. (As etapas para fazer isso são listadas a seguir neste tópico.)
+1. Se você está implantando para um dispositivo remoto, especifique o nome ou o endereço IP do dispositivo na página de propriedade do projeto de inicialização do aplicativo. (As etapas para fazer isso são listadas a seguir neste tópico.)
 
-2.  Na barra de ferramentas Visual Studio do depurador, escolha o destino da implantação na lista suspensa ao lado do botão **Iniciar Depuração**.
+2. Na barra de ferramentas Visual Studio do depurador, escolha o destino da implantação na lista suspensa ao lado do botão **Iniciar Depuração**.
 
      ![Executar no computador Local](../debugger/media/vsrun_f5_local.png "VSRUN_F5_Local")
 
-3.  No menu **Compilar**, escolha **Implantar**
+3. No menu **Compilar**, escolha **Implantar**
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Como especificar um dispositivo remoto
+## <a name="BKMK_How_to_specify_a_remote_device"></a> Como especificar um dispositivo remoto
 
 **Pré-requisitos**
 
@@ -92,7 +92,7 @@ A implantação usa o canal de rede do depurador remoto para enviar os arquivos 
 
 10. Insira o nome de rede do dispositivo remoto na caixa **Computador Remoto** ou clique em **Localizar** para escolher o dispositivo na caixa de diálogo **Selecionar conexão de depurador remoto**.
 
-##  <a name="BKMK_Deployment_options"></a> Opções de implantação
+## <a name="BKMK_Deployment_options"></a> Opções de implantação
 
 Você pode definir as opções de implantação a seguir na página de propriedade de depuração do projeto de inicialização.
 

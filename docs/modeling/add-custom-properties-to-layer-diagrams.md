@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 76bfa81f1285dce000f79c356a604bab1d53cc55
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 0c4639b5e2edcfebd05dcc6511102c0369b4b3e1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415818"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066085"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>Adicionar propriedades personalizadas a diagramas de dependência
 
@@ -37,6 +37,7 @@ Se você quiser apenas seu código anexe valores a qualquer elemento em um diagr
 >     ```xml
 >     <MefComponent>Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.Provider.dll</MefComponent>
 >     ```
+>
 > 3. Sob o **ferramentas do Visual Studio** seção do Visual Studio aplicativo menu Iniciar, abra **Prompt de comando do desenvolvedor**. Digite:
 >
 >      `devenv /rootSuffix /updateConfiguration`
@@ -62,15 +63,15 @@ public class MyProperty : PropertyExtension<ILayerElement>
 
 Você pode definir propriedades em <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer.ILayerElement> ou qualquer uma de suas classes derivadas, que incluem:
 
--   `ILayerModel` -o modelo
+- `ILayerModel` -o modelo
 
--   `ILayer` -cada camada
+- `ILayer` -cada camada
 
--   `ILayerDependencyLink` -os links entre camadas
+- `ILayerDependencyLink` -os links entre camadas
 
--   `ILayerComment`
+- `ILayerComment`
 
--   `ILayerCommentLink`
+- `ILayerCommentLink`
 
 ## <a name="example"></a>Exemplo
 
