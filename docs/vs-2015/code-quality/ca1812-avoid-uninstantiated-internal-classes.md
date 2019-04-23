@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c2066e1c3ae3975536735290c34932f347c15693
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f44dcb010dd9c62d130913efd590a4c1b651de50
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923426"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081990"
 ---
 # <a name="ca1812-avoid-uninstantiated-internal-classes"></a>CA1812: Evitar classes internas sem instâncias
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,9 +59,9 @@ ms.locfileid: "58923426"
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, remova o tipo ou adicione o código que usa-o. Se o tipo contém apenas métodos estáticos, adicione o seguinte para o tipo para impedir que o compilador emite um construtor de instância pública padrão:
 
--   Um construtor particular para tipos que se destinam [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versões 1.0 e 1.1.
+- Um construtor particular para tipos que se destinam [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] versões 1.0 e 1.1.
 
--   O `static` (`Shared` no Visual Basic) modificador para tipos que se destinam [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].
+- O `static` (`Shared` no Visual Basic) modificador para tipos que se destinam [!INCLUDE[dnprdnlong](../includes/dnprdnlong-md.md)].
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  É seguro suprimir um aviso nessa regra. É recomendável que você suprimir esse aviso nas seguintes situações:

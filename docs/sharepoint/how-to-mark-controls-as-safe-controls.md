@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 850670e9d7994b754839c4fb0b1a8ccd07be5b24
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646415"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082029"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Como: Marcar controles como controles seguros
   Para segurança, o SharePoint faz distinção entre controles da Web que estão protegidos contra injeção de script e controles da Web que não são. Protegido por controles, ou *controles seguros*, pode ser acessado por usuários não confiáveis. Você pode marcar os controles como seguro em que a propriedade de entradas de controle seguro de um item de projeto do SharePoint ou nos **Designer de pacote** quando você adiciona um assembly no pacote. Para saber mais, veja
@@ -33,47 +33,47 @@ ms.locfileid: "56646415"
 
 #### <a name="to-mark-controls-as-safe-or-unsafe-in-the-safe-control-entries-property"></a>Para marcar controles como seguro ou não seguro na propriedade de entradas de controle seguro
 
-1.  Crie uma solução do SharePoint com um projeto de Web Part Visual.
+1. Crie uma solução do SharePoint com um projeto de Web Part Visual.
 
-2.  Adicione dois controles para a Web part: uma caixa de texto e um botão. Deixe os nomes de seus valores padrão, TextBox1 e Button1, respectivamente.
+2. Adicione dois controles para a Web part: uma caixa de texto e um botão. Deixe os nomes de seus valores padrão, TextBox1 e Button1, respectivamente.
 
-3.  Adicione duas entradas para a Web part **entradas de controle seguro** propriedade. Para fazer isso, escolha as reticências (![elipse do Designer de dispositivo móvel do ASP.NET](../sharepoint/media/mwellipsis.gif "elipse do Designer de dispositivo móvel do ASP.NET")) lado a **entradas de controle seguro** propriedade em que o  **Propriedades** janela.
+3. Adicione duas entradas para a Web part **entradas de controle seguro** propriedade. Para fazer isso, escolha as reticências (![elipse do Designer de dispositivo móvel do ASP.NET](../sharepoint/media/mwellipsis.gif "elipse do Designer de dispositivo móvel do ASP.NET")) lado a **entradas de controle seguro** propriedade em que o  **Propriedades** janela.
 
      O **entradas de controle seguro** caixa de diálogo é exibida.
 
-4.  No **entradas de controle seguro** caixa de diálogo, escolha o **Add** botão duas vezes para adicionar duas entradas de controle seguro para o **membros** painel: uma para o botão e uma caixa de texto.
+4. No **entradas de controle seguro** caixa de diálogo, escolha o **Add** botão duas vezes para adicionar duas entradas de controle seguro para o **membros** painel: uma para o botão e uma caixa de texto.
 
-5.  Escolha a primeira entrada de controle seguro e, em seguida, altere o valor de seu **seguro** propriedade a ser **falso**, sua **nome do tipo** propriedade para **Button1**e sua **seguro contra Script** propriedade a ser **False**.
+5. Escolha a primeira entrada de controle seguro e, em seguida, altere o valor de seu **seguro** propriedade a ser **falso**, sua **nome do tipo** propriedade para **Button1**e sua **seguro contra Script** propriedade a ser **False**.
 
      Esta etapa identifica o controle de botão como um controle que não é seguro.
 
-6.  Escolha a segunda entrada de controle seguro na lista. Deixe o valor de seu **seguro** a propriedade como **True** e defina seu **nome do tipo** propriedade **TextBox1** e seu **seguro Em relação ao Script** propriedade para **verdadeiro**.
+6. Escolha a segunda entrada de controle seguro na lista. Deixe o valor de seu **seguro** a propriedade como **True** e defina seu **nome do tipo** propriedade **TextBox1** e seu **seguro Em relação ao Script** propriedade para **verdadeiro**.
 
      O controle de caixa de texto está marcado como um controle que é seguro contra injeção de script.
 
-7.  Escolha o botão **OK** para fechar a caixa de diálogo.
+7. Escolha o botão **OK** para fechar a caixa de diálogo.
 
 ## <a name="marking-safe-controls-in-the-package-designer"></a>Marcação de controles seguros no Designer de pacote
 
 #### <a name="to-mark-controls-as-safe-or-unsafe-in-the-package-designer"></a>Para marcar controles como seguro ou não seguro no Designer de pacote
 
-1.  Crie uma solução do SharePoint com um projeto de Web Part Visual.
+1. Crie uma solução do SharePoint com um projeto de Web Part Visual.
 
-2.  Adicione dois controles para a Web part: uma caixa de texto e um botão. Deixe os nomes de seus valores padrão, TextBox1 e Button1, respectivamente.
+2. Adicione dois controles para a Web part: uma caixa de texto e um botão. Deixe os nomes de seus valores padrão, TextBox1 e Button1, respectivamente.
 
      Anote o namespace do controle, porque ele é usado mais tarde.
 
-3.  Na barra de menus, escolha **construir** > **compilar solução** para compilar o projeto.
+3. Na barra de menus, escolha **construir** > **compilar solução** para compilar o projeto.
 
-4.  Crie outra solução do SharePoint.
+4. Crie outra solução do SharePoint.
 
-5.  Na **Gerenciador de soluções**, abra o menu de atalho para o *pacote* file e, em seguida, escolha **abrir** para abrir o **Package Designer**.
+5. Na **Gerenciador de soluções**, abra o menu de atalho para o *pacote* file e, em seguida, escolha **abrir** para abrir o **Package Designer**.
 
-6.  No **Designer de pacote**, escolha o **avançado** guia.
+6. No **Designer de pacote**, escolha o **avançado** guia.
 
-7.  Sob **Assemblies adicionais**, escolha o **Add** botão e, em seguida, escolha **adicionar Assembly existente** na lista.
+7. Sob **Assemblies adicionais**, escolha o **Add** botão e, em seguida, escolha **adicionar Assembly existente** na lista.
 
-8.  No **adicionar Assembly existente** diálogo caixa, escolha o botão de reticências (![elipse do Designer de dispositivo móvel do ASP.NET](../sharepoint/media/mwellipsis.gif "elipse do Designer de dispositivo móvel do ASP.NET")) lado  **Caminho de origem**.
+8. No **adicionar Assembly existente** diálogo caixa, escolha o botão de reticências (![elipse do Designer de dispositivo móvel do ASP.NET](../sharepoint/media/mwellipsis.gif "elipse do Designer de dispositivo móvel do ASP.NET")) lado  **Caminho de origem**.
 
 9. Escolha o assembly da solução do SharePoint que você criou na etapa 1 e, em seguida, escolha o **abrir** botão.
 
