@@ -22,12 +22,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 77795c93679bddb21a56b8c7a64a11ceb6aa1e6c
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 2c619301d15654ec71c3867bb97622488aac329e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58923226"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050680"
 ---
 # <a name="walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Passo a passo: Baixando Assemblies satélite por demanda com a API de implantação do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,24 +46,24 @@ Aplicativos do Windows Forms podem ser configurados para várias culturas com o 
   
 ### <a name="to-download-satellite-assemblies-on-demand"></a>Para baixar os assemblies satélite por demanda  
   
-1.  Adicione o seguinte código ao seu aplicativo para habilitar o download sob demanda dos assemblies satélites.  
+1. Adicione o seguinte código ao seu aplicativo para habilitar o download sob demanda dos assemblies satélites.  
   
      [!code-csharp[ClickOnce.SatelliteAssembliesSDK#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/CS/Program.cs#1)]
      [!code-vb[ClickOnce.SatelliteAssembliesSDK#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesSDK/VB/Form1.vb#1)]  
   
-2.  Gerar assemblies de satélite para o seu aplicativo usando o [Resgen.exe (gerador de arquivo de recurso)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) ou [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+2. Gerar assemblies de satélite para o seu aplicativo usando o [Resgen.exe (gerador de arquivo de recurso)](http://msdn.microsoft.com/library/8ef159de-b660-4bec-9213-c3fbc4d1c6f4) ou [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-3.  Gerar um manifesto de aplicativo, ou abra o manifesto do aplicativo existente, usando MageUI.exe. Para obter mais informações sobre essa ferramenta, consulte [MageUI.exe (Manifest Generation and Editing Tool, cliente gráfico)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+3. Gerar um manifesto de aplicativo, ou abra o manifesto do aplicativo existente, usando MageUI.exe. Para obter mais informações sobre essa ferramenta, consulte [MageUI.exe (Manifest Generation and Editing Tool, cliente gráfico)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
-4.  Clique o **arquivos** guia.  
+4. Clique o **arquivos** guia.  
   
-5.  Clique o **reticências** botão (**...** ) e selecione o diretório que contém todos os assemblies e arquivos, incluindo os assemblies de satélite gerado usando Resgen.exe do seu aplicativo. (Um assembly satélite terá um nome na forma *isoCode*\ApplicationName.resources.dll, onde *isoCode* é um identificador de idioma no formato RFC 1766.)  
+5. Clique o **reticências** botão (**...** ) e selecione o diretório que contém todos os assemblies e arquivos, incluindo os assemblies de satélite gerado usando Resgen.exe do seu aplicativo. (Um assembly satélite terá um nome na forma *isoCode*\ApplicationName.resources.dll, onde *isoCode* é um identificador de idioma no formato RFC 1766.)  
   
-6.  Clique em **popular** para adicionar os arquivos para sua implantação.  
+6. Clique em **popular** para adicionar os arquivos para sua implantação.  
   
-7.  Selecione o **opcional** caixa de seleção para cada assembly satélite.  
+7. Selecione o **opcional** caixa de seleção para cada assembly satélite.  
   
-8.  Defina o campo de grupo para cada assembly satélite para o seu identificador de idioma ISO. Por exemplo, para um assembly satélite japonês, você especificaria um nome de grupo de download de `ja-JP`. Isso permitirá que o código adicionado na etapa 1 para baixar o assembly satélite adequado, dependendo do usuário <xref:System.Threading.Thread.CurrentUICulture%2A> configuração da propriedade.  
+8. Defina o campo de grupo para cada assembly satélite para o seu identificador de idioma ISO. Por exemplo, para um assembly satélite japonês, você especificaria um nome de grupo de download de `ja-JP`. Isso permitirá que o código adicionado na etapa 1 para baixar o assembly satélite adequado, dependendo do usuário <xref:System.Threading.Thread.CurrentUICulture%2A> configuração da propriedade.  
   
 ## <a name="next-steps"></a>Próximas etapas  
  Em um ambiente de produção, provavelmente será necessário remover a linha no código de exemplo que define <xref:System.Threading.Thread.CurrentUICulture%2A> como um valor específico, porque máquinas de cliente será tem o valor correto definido por padrão. Quando seu aplicativo é executado em um computador cliente japonês, por exemplo, <xref:System.Threading.Thread.CurrentUICulture%2A> será `ja-JP` por padrão. Definir esse valor por meio de programação é uma boa maneira de testar seus assemblies satélites antes de implantar seu aplicativo.  

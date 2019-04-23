@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89b4f55e5e5de564db6cb7a1217b79a15283fb93
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fe0d5c3dd55380587f8f5f1c6477ee8c53bf1156
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712314"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051655"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Criar grupos reutilizáveis de botões
 Um grupo de comandos é uma coleção de comandos que sempre aparecem juntas em um menu ou barra de ferramentas. Qualquer grupo de comando pode ser usado novamente, atribuindo a ela a menus pai diferente na seção CommandPlacements a *VSCT* arquivo.
@@ -26,13 +26,13 @@ Um grupo de comandos é uma coleção de comandos que sempre aparecem juntas em 
 
 ## <a name="to-create-a-reusable-group-of-buttons"></a>Para criar um grupo reutilizável de botões
 
-1.  Crie um projeto do VSIX chamado `ReusableButtons`. Para obter mais informações, consulte [criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Crie um projeto do VSIX chamado `ReusableButtons`. Para obter mais informações, consulte [criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Quando o projeto aberto, adicione um modelo de item de comando personalizado chamado **ReusableCommand**. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c#** > **extensibilidade** e selecione **comando personalizado**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para *ReusableCommand.cs*.
+2. Quando o projeto aberto, adicione um modelo de item de comando personalizado chamado **ReusableCommand**. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add** > **Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c#** > **extensibilidade** e selecione **comando personalizado**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para *ReusableCommand.cs*.
 
-3.  No *VSCT* de arquivos, vá para a seção de símbolos e localizar o elemento GuidSymbol que contém grupos e comandos para o projeto. Ele deve ser chamado guidReusableCommandPackageCmdSet.
+3. No *VSCT* de arquivos, vá para a seção de símbolos e localizar o elemento GuidSymbol que contém grupos e comandos para o projeto. Ele deve ser chamado guidReusableCommandPackageCmdSet.
 
-4.  Adicione um IDSymbol para cada botão que você irá adicionar ao grupo, como no exemplo a seguir.
+4. Adicione um IDSymbol para cada botão que você irá adicionar ao grupo, como no exemplo a seguir.
 
     ```xml
     <GuidSymbol name="guidReusableCommandPackageCmdSet" value="{7f383b2a-c6b9-4c1d-b4b8-a26dc5b60ca1}">
@@ -44,7 +44,7 @@ Um grupo de comandos é uma coleção de comandos que sempre aparecem juntas em 
 
      Por padrão, o modelo de item de comando cria um grupo chamado **MyMenuGroup** e um botão que tem o nome que você forneceu, junto com uma entrada de IDSymbol para cada um.
 
-5.  Na seção grupos, crie um elemento de grupo que tem os mesmos atributos GUID e ID do que aquelas fornecidas na seção símbolos. Você também pode usar um grupo existente ou usar a entrada que é fornecida pelo modelo de comando, como no exemplo a seguir. Esse grupo apareça na **ferramentas** menu
+5. Na seção grupos, crie um elemento de grupo que tem os mesmos atributos GUID e ID do que aquelas fornecidas na seção símbolos. Você também pode usar um grupo existente ou usar a entrada que é fornecida pelo modelo de comando, como no exemplo a seguir. Esse grupo apareça na **ferramentas** menu
 
     ```xml
     <Groups>
@@ -56,7 +56,7 @@ Um grupo de comandos é uma coleção de comandos que sempre aparecem juntas em 
 
 ## <a name="to-create-a-group-of-buttons-for-reuse"></a>Para criar um grupo de botões para reutilização
 
-1.  Você pode colocar um comando ou um menu em um grupo usando o grupo como um pai na definição de comando ou do menu ou colocando o comando ou o menu do grupo usando a seção CommandPlacements.
+1. Você pode colocar um comando ou um menu em um grupo usando o grupo como um pai na definição de comando ou do menu ou colocando o comando ou o menu do grupo usando a seção CommandPlacements.
 
      Na seção botões definir um botão que tem o seu grupo como pai, ou use o botão que é fornecido pelo modelo de pacote, conforme mostrado no exemplo a seguir.
 
@@ -70,7 +70,7 @@ Um grupo de comandos é uma coleção de comandos que sempre aparecem juntas em 
     </Button>
     ```
 
-2.  Se um botão deve aparecer em mais de um grupo, crie uma entrada para ele na seção CommandPlacements, que deve ser colocada após a seção de comandos. Defina os atributos GUID e ID do elemento CommandPlacement para corresponder do botão que você deseja posicionar e, em seguida, defina o GUID e a ID do seu elemento pai do grupo de destino, conforme mostrado no exemplo a seguir.
+2. Se um botão deve aparecer em mais de um grupo, crie uma entrada para ele na seção CommandPlacements, que deve ser colocada após a seção de comandos. Defina os atributos GUID e ID do elemento CommandPlacement para corresponder do botão que você deseja posicionar e, em seguida, defina o GUID e a ID do seu elemento pai do grupo de destino, conforme mostrado no exemplo a seguir.
 
     ```xml
     <CommandPlacements>

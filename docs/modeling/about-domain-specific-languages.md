@@ -9,26 +9,26 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 63d7e895f0a7e57160e10c4b6020b2bf73ae477d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4684a0256e01cafe79fc90ae1ae97dfc2be047d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939483"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046815"
 ---
 # <a name="about-domain-specific-languages"></a>Sobre linguagens específicas do domínio
 
-Ao contrário de uma linguagem de finalidade geral, como C# ou UML, uma linguagem específica de domínio (DSL) foi projetada para expressar declarações em um determinado problema de espaço ou domínio.
+Ao contrário de uma linguagem de finalidade geral, como c# ou UML, uma linguagem específica de domínio (DSL) foi projetada para expressar declarações em um determinado problema de espaço ou domínio.
 
 DSLs Well-Known incluem expressões regulares e SQL. Cada DSL é muito melhor do que uma linguagem de finalidade geral para descrever as operações em cadeias de caracteres de texto ou um banco de dados, mas um desempenho pior para descrever as ideias que estão fora do seu próprio escopo. Setores individuais também têm seus próprios DSLs. Por exemplo, na indústria de telecomunicações, chame descrição idiomas são amplamente usados para especificar a sequência dos estados em uma chamada telefônica e a indústria de viagem no ar um padrão de que DSL é usada para descrever as reservas de voo.
 
 Sua empresa e seu projeto também lidam com conjuntos especiais de conceitos que podem ser descritos com uma DSL. Por exemplo, você pode definir uma DSL para um desses aplicativos:
 
--   Plano de caminhos de navegação em um site.
+- Plano de caminhos de navegação em um site.
 
--   Diagramas de fiação de componentes eletrônicos.
+- Diagramas de fiação de componentes eletrônicos.
 
--   Redes de belts transportadora e equipamentos para um aeroporto de tratamento de bagagem.
+- Redes de belts transportadora e equipamentos para um aeroporto de tratamento de bagagem.
 
 Ao projetar uma DSL, você define uma *classe de domínio* para cada um dos conceitos importantes no domínio, como uma página da web, lamp ou aeroporto check-in do suporte técnico. Você define *relações de domínio* como hiperlink, transmissão ou uma esteira para vincular os conceitos.
 
@@ -114,12 +114,12 @@ Uma linguagem específica de domínio pode fornecer os seguintes benefícios:
 
 A maioria das equipes de desenvolvimento de software que usam linguagens específicas de domínio siga estas etapas para criar e usar seus modelos:
 
--   A equipe distingue as partes variáveis do domínio a partir das partes que nunca alterar.
+- A equipe distingue as partes variáveis do domínio a partir das partes que nunca alterar.
 
--   Os desenvolvedores escrever código para as partes fixas e deixar os pontos de extensão para as partes variáveis.
+- Os desenvolvedores escrever código para as partes fixas e deixar os pontos de extensão para as partes variáveis.
 
--   O gerente de desenvolvimento de software ou o arquiteto cria uma linguagem específica de domínio que incorpora os padrões de design das partes do domínio e os pontos de extensão para as partes variáveis fixas.
+- O gerente de desenvolvimento de software ou o arquiteto cria uma linguagem específica de domínio que incorpora os padrões de design das partes do domínio e os pontos de extensão para as partes variáveis fixas.
 
--   O gerente de desenvolvimento de software ou o arquiteto implanta a linguagem específica de domínio para os desenvolvedores dos vários aplicativos que produz a equipe.
+- O gerente de desenvolvimento de software ou o arquiteto implanta a linguagem específica de domínio para os desenvolvedores dos vários aplicativos que produz a equipe.
 
--   Todo desenvolvedor cria um modelo que se aplica ao aplicativo específico.
+- Todo desenvolvedor cria um modelo que se aplica ao aplicativo específico.

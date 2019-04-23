@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 427035b0fa07f390e13c21a0e420fed89e2d461b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 908b2f2b7a0dc055065abd96df3eb4495ad30ce8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697410"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056075"
 ---
 # <a name="walkthrough-outlining"></a>Passo a passo: Estrutura de tópicos
 Configure os recursos de baseada na linguagem, como a estrutura de tópicos, definindo os tipos de regiões de texto que você deseja expandir ou recolher. Você pode definir regiões no contexto de um serviço de linguagem, ou definir seu próprio tipo de conteúdo e a extensão de nome do arquivo e aplicar a definição de região para apenas esse tipo ou aplicar as definições de região a um tipo de conteúdo existente (como "texto"). Este passo a passo mostra como definir e exibir regiões de estrutura de tópicos.
@@ -27,11 +27,11 @@ Configure os recursos de baseada na linguagem, como a estrutura de tópicos, def
 
 ### <a name="to-create-a-mef-project"></a>Para criar um projeto MEF
 
-1.  Crie um projeto VSIX. Nomeie a solução `OutlineRegionTest`.
+1. Crie um projeto VSIX. Nomeie a solução `OutlineRegionTest`.
 
-2.  Adicione um modelo de item de classificação de Editor para o projeto. Para obter mais informações, consulte [criar uma extensão com um modelo de item editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Adicione um modelo de item de classificação de Editor para o projeto. Para obter mais informações, consulte [criar uma extensão com um modelo de item editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
-3.  Exclua os arquivos de classe existentes.
+3. Exclua os arquivos de classe existentes.
 
 ## <a name="implement-an-outlining-tagger"></a>Implementar um marcador de estrutura de tópicos
  Regiões de estrutura de tópicos são marcados por um tipo de marca (<xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag>). Essa marca fornece o padrão de comportamento da estrutura de tópicos. A região de estrutura pode ser expandido ou recolhido. A região de estrutura é marcado por um sinal de adição (**+**) se ele estiver recolhido ou um sinal de menos (**-**) se ele é expandido e a região expandida é delimitada por uma linha vertical.
@@ -40,39 +40,39 @@ Configure os recursos de baseada na linguagem, como a estrutura de tópicos, def
 
 ### <a name="to-implement-an-outlining-tagger"></a>Para implementar um marcador de estrutura de tópicos
 
-1.  Adicione um arquivo de classe e denomine- `OutliningTagger`.
+1. Adicione um arquivo de classe e denomine- `OutliningTagger`.
 
-2.  Importe os seguintes namespaces.
+2. Importe os seguintes namespaces.
 
      [!code-csharp[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/CSharp/walkthrough-outlining_1.cs)]
      [!code-vb[VSSDKOutlineRegionTest#1](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_1.vb)]
 
-3.  Crie uma classe denominada `OutliningTagger`, e fazê-lo a implementar <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:
+3. Crie uma classe denominada `OutliningTagger`, e fazê-lo a implementar <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601>:
 
      [!code-csharp[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/CSharp/walkthrough-outlining_2.cs)]
      [!code-vb[VSSDKOutlineRegionTest#2](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_2.vb)]
 
-4.  Adicione alguns campos para acompanhar o instantâneo e o buffer de texto e a se acumular os conjuntos de linhas que devem ser marcadas como regiões de estrutura de tópicos. Esse código inclui uma lista de objetos de região (a ser definido mais tarde) que representam as regiões de estrutura de tópicos.
+4. Adicione alguns campos para acompanhar o instantâneo e o buffer de texto e a se acumular os conjuntos de linhas que devem ser marcadas como regiões de estrutura de tópicos. Esse código inclui uma lista de objetos de região (a ser definido mais tarde) que representam as regiões de estrutura de tópicos.
 
      [!code-csharp[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/CSharp/walkthrough-outlining_3.cs)]
      [!code-vb[VSSDKOutlineRegionTest#3](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_3.vb)]
 
-5.  Adicione um construtor de marcador que inicializa os campos, analisa o buffer e adiciona um manipulador de eventos para o <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> eventos.
+5. Adicione um construtor de marcador que inicializa os campos, analisa o buffer e adiciona um manipulador de eventos para o <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> eventos.
 
      [!code-csharp[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/CSharp/walkthrough-outlining_4.cs)]
      [!code-vb[VSSDKOutlineRegionTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_4.vb)]
 
-6.  Implementar o <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> abrange de método, que instancia a marca. Este exemplo supõe que os intervalos no <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> passado para o método são contíguos, embora não possa ser sempre o caso. Esse método cria uma instância de um novo intervalo de marca para cada uma das regiões de estrutura de tópicos.
+6. Implementar o <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601.GetTags%2A> abrange de método, que instancia a marca. Este exemplo supõe que os intervalos no <xref:Microsoft.VisualStudio.Text.NormalizedSpanCollection> passado para o método são contíguos, embora não possa ser sempre o caso. Esse método cria uma instância de um novo intervalo de marca para cada uma das regiões de estrutura de tópicos.
 
      [!code-csharp[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/CSharp/walkthrough-outlining_5.cs)]
      [!code-vb[VSSDKOutlineRegionTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_5.vb)]
 
-7.  Declarar um `TagsChanged` manipulador de eventos.
+7. Declarar um `TagsChanged` manipulador de eventos.
 
      [!code-csharp[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/CSharp/walkthrough-outlining_6.cs)]
      [!code-vb[VSSDKOutlineRegionTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_6.vb)]
 
-8.  Adicionar um `BufferChanged` manipulador de eventos que responde a <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> eventos analisando o buffer de texto.
+8. Adicionar um `BufferChanged` manipulador de eventos que responde a <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> eventos analisando o buffer de texto.
 
      [!code-csharp[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/CSharp/walkthrough-outlining_7.cs)]
      [!code-vb[VSSDKOutlineRegionTest#7](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_7.vb)]
@@ -102,12 +102,12 @@ Configure os recursos de baseada na linguagem, como a estrutura de tópicos, def
 
 ### <a name="to-implement-a-tagger-provider"></a>Para implementar um provedor de marcador
 
-1.  Crie uma classe denominada `OutliningTaggerProvider` que implementa <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>e exportá-lo com os atributos ContentType e TagType.
+1. Crie uma classe denominada `OutliningTaggerProvider` que implementa <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider>e exportá-lo com os atributos ContentType e TagType.
 
      [!code-csharp[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/CSharp/walkthrough-outlining_12.cs)]
      [!code-vb[VSSDKOutlineRegionTest#12](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_12.vb)]
 
-2.  Implemente a <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> método adicionando um `OutliningTagger` às propriedades do buffer.
+2. Implemente a <xref:Microsoft.VisualStudio.Text.Tagging.ITaggerProvider.CreateTagger%2A> método adicionando um `OutliningTagger` às propriedades do buffer.
 
      [!code-csharp[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/CSharp/walkthrough-outlining_13.cs)]
      [!code-vb[VSSDKOutlineRegionTest#13](../extensibility/codesnippet/VisualBasic/walkthrough-outlining_13.vb)]
@@ -117,11 +117,11 @@ Configure os recursos de baseada na linguagem, como a estrutura de tópicos, def
 
 ### <a name="to-build-and-test-the-outlineregiontest-solution"></a>Para compilar e testar a solução OutlineRegionTest
 
-1.  Compile a solução.
+1. Compile a solução.
 
-2.  Quando você executar esse projeto no depurador, uma segunda instância do Visual Studio é iniciada.
+2. Quando você executar esse projeto no depurador, uma segunda instância do Visual Studio é iniciada.
 
-3.  Crie um arquivo de texto. Digite algum texto que inclui a abertura de parênteses e colchetes de fechamento.
+3. Crie um arquivo de texto. Digite algum texto que inclui a abertura de parênteses e colchetes de fechamento.
 
     ```
     [
@@ -129,7 +129,7 @@ Configure os recursos de baseada na linguagem, como a estrutura de tópicos, def
     ]
     ```
 
-4.  Deve haver uma região de estrutura de tópicos que inclui ambos os colchetes. Você poderá clicar no sinal de subtração à esquerda do colchete de abertura para recolher a região de estrutura de tópicos. Quando a região estiver recolhido, o símbolo de reticências (*...* ) deve aparecer à esquerda de um pop-up que contém o texto e a região recolhida **focalizar texto** deve aparecer quando você move o ponteiro sobre o botão de reticências.
+4. Deve haver uma região de estrutura de tópicos que inclui ambos os colchetes. Você poderá clicar no sinal de subtração à esquerda do colchete de abertura para recolher a região de estrutura de tópicos. Quando a região estiver recolhido, o símbolo de reticências (*...* ) deve aparecer à esquerda de um pop-up que contém o texto e a região recolhida **focalizar texto** deve aparecer quando você move o ponteiro sobre o botão de reticências.
 
 ## <a name="see-also"></a>Consulte também
 - [Passo a passo: Vincular um tipo de conteúdo para uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

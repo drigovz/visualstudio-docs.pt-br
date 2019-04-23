@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 728241c4f8cf8609c453f83f0237d2bdc8410f35
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: caf878f6ea43a7f041285fb02b2f32175ca862b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929443"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057180"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Como: Usar o editor de expressão
 O editor de expressão é um controle de [!INCLUDE[wfd1](../includes/wfd1-md.md)] que é usado em muitas atividades de fluxo de trabalho como um meio de inserir e avaliar dessas expressões. O editor de expressão fornece IDE completo que a experiência de edição IntelliSense, que inclui coloração, ParamInfo, squiggles de erro, entre outros recursos. O compilador valida a expressão após está conectado. Se a expressão é inválido, um ícone de erro é exibido. O editor também pode ser aberto como uma **Editor de expressão** caixa de diálogo.  
@@ -25,29 +25,29 @@ O editor de expressão é um controle de [!INCLUDE[wfd1](../includes/wfd1-md.md)
   
  O **Editor de expressão** se comporta da seguinte maneira:  
   
--   Se o foco não estiver no editor de expressão, parece um controle normal TextBlock.  
+- Se o foco não estiver no editor de expressão, parece um controle normal TextBlock.  
   
--   Uma vez que o foco estiver no editor de expressão, e ele se comporta como o controle editor de expressão. Após perde o foco, parece uma TextBlock normal novamente.  
+- Uma vez que o foco estiver no editor de expressão, e ele se comporta como o controle editor de expressão. Após perde o foco, parece uma TextBlock normal novamente.  
   
--   Se você fica no editor de expressão em um designer rehosted de fluxo de trabalho, então se comporta como uma caixa de texto. Quando o foco é perdido no designer rehosted de fluxo de trabalho, o editor de expressão parece uma TextBlock normal novamente.  
+- Se você fica no editor de expressão em um designer rehosted de fluxo de trabalho, então se comporta como uma caixa de texto. Quando o foco é perdido no designer rehosted de fluxo de trabalho, o editor de expressão parece uma TextBlock normal novamente.  
   
 > [!NOTE]
 >  O IntelliSense para o editor de expressão está disponível somente dentro de [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Em [!INCLUDE[vs2010](../includes/vs2010-md.md)] e em cenários rehosted, o compilador valida a expressão após está conectado e o editor de expressão um ícone de erro se a expressão não é válido.  
   
 ### <a name="using-the-expression-editor"></a>Usando o editor de expressão  
   
-1.  Em [!INCLUDE[vs2010](../includes/vs2010-md.md)], abra um projeto novo ou existente de fluxo de trabalho.  
+1. Em [!INCLUDE[vs2010](../includes/vs2010-md.md)], abra um projeto novo ou existente de fluxo de trabalho.  
   
-2.  Adicione, por exemplo, a atividade de <xref:System.Activities.Statements.Assign> ao fluxo de trabalho.  
+2. Adicione, por exemplo, a atividade de <xref:System.Activities.Statements.Assign> ao fluxo de trabalho.  
   
     > [!NOTE]
     >  Várias atividades de fluxo de trabalho têm editores de expressão. A expressão TextBlocks também aparece no designer variável, no designer do argumento, e no designer dinâmico do argumento. A atividade de <xref:System.Activities.Statements.Assign> é usada como um exemplo.  
   
-3.  Clique no editor de expressão esquerdo do designer de atividade para atividades de <xref:System.Activities.Statements.Assign> .  
+3. Clique no editor de expressão esquerdo do designer de atividade para atividades de <xref:System.Activities.Statements.Assign> .  
   
      As cadeias de caracteres de marca d'água cinza  **\<para >** e  **\<insira uma expressão VB >** são o padrão de cadeias de caracteres de texto para editores de expressão no <xref:System.Activities.Statements.Assign> atividade.  
   
-4.  Digite sua expressão. Se você inserir uma cadeia de caracteres, certifique-se coloque aspas ao redor de cadeia de caracteres. Se você escolher para associar o argumento da expressão a uma variável, deixe a aspas - tica.  
+4. Digite sua expressão. Se você inserir uma cadeia de caracteres, certifique-se coloque aspas ao redor de cadeia de caracteres. Se você escolher para associar o argumento da expressão a uma variável, deixe a aspas - tica.  
   
      Quando você terminar, selecione uma região ou uma área fora do editor de expressão para deslocar o foco a outra parte do designer. Isso fará com que o compilador validar a expressão como descrito anteriormente.  
   

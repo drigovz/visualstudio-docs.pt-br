@@ -33,12 +33,12 @@ caps.latest.revision: 11
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 8d855fb41624e357a62d9eb773cc5e42606572f7
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 66c4aafb380d50ec0faafce931b8ce73e5138e6f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58929919"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052383"
 ---
 # <a name="annotating-locking-behavior"></a>Anotando o comportamento de bloqueio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,11 +58,11 @@ Para evitar bugs de simultaneidade em seu programa multithreaded, sempre siga um
   
  Algumas regras de propriedade de thread para ter em mente:  
   
--   Bloqueios de rotação são uncounted bloqueios que têm a propriedade de thread não criptografado.  
+- Bloqueios de rotação são uncounted bloqueios que têm a propriedade de thread não criptografado.  
   
--   Mutexes e seções críticas são contadas bloqueios que têm a propriedade de thread não criptografado.  
+- Mutexes e seções críticas são contadas bloqueios que têm a propriedade de thread não criptografado.  
   
--   Semáforos e eventos são contados bloqueios que não têm a propriedade de thread não criptografado.  
+- Semáforos e eventos são contados bloqueios que não têm a propriedade de thread não criptografado.  
   
 ## <a name="locking-annotations"></a>Anotações de bloqueio  
  A tabela a seguir lista as anotações de bloqueio.  

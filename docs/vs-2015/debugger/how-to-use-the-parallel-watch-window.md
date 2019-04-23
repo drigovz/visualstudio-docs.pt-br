@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: baa5381013e955dcf4b8e301bba52a28e39bfc18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 66e9e5a3f0a46f54346c71d85bad03846c12f937
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926475"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050304"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Como: Use a janela Inspeção paralela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,47 +45,47 @@ Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que 
   
 ### <a name="to-display-the-parallel-watch-window"></a>Para exibir a janela Inspeção Paralela  
   
-1.  Defina um ponto de interrupção no código.  
+1. Defina um ponto de interrupção no código.  
   
-2.  Na barra de menus, escolha **Depurar**, **Iniciar Depuração**. Aguarde até que o aplicativo atinja o ponto de interrupção.  
+2. Na barra de menus, escolha **Depurar**, **Iniciar Depuração**. Aguarde até que o aplicativo atinja o ponto de interrupção.  
   
-3.  Na barra de menus, escolha **Depurar**, **Janelas**, **Inspeção Paralela** e selecione uma janela de inspeção. Você pode abrir até quatro janelas.  
+3. Na barra de menus, escolha **Depurar**, **Janelas**, **Inspeção Paralela** e selecione uma janela de inspeção. Você pode abrir até quatro janelas.  
   
 ### <a name="to-add-a-watch-expression"></a>Para adicionar uma expressão de inspeção  
   
--   Selecione  **\<Adicionar inspeção >** e, em seguida, especifique uma expressão de inspeção.  
+- Selecione  **\<Adicionar inspeção >** e, em seguida, especifique uma expressão de inspeção.  
   
 ### <a name="to-flag-or-unflag-a-thread"></a>Para sinalizar ou remover sinalização de um thread  
   
--   Selecione a coluna do sinalizador para a linha, ou abra o menu de atalho para o thread e escolha **sinalizador** ou **Remover sinalização**.  
+- Selecione a coluna do sinalizador para a linha, ou abra o menu de atalho para o thread e escolha **sinalizador** ou **Remover sinalização**.  
   
 ### <a name="to-display-only-flagged-threads"></a>Para exibir somente threads sinalizados  
   
--   Escolha o botão Mostrar apenas sinalizados no canto superior esquerdo dos **inspeção paralela** janela.  
+- Escolha o botão Mostrar apenas sinalizados no canto superior esquerdo dos **inspeção paralela** janela.  
   
 ### <a name="to-switch-frames"></a>Para alternar quadros  
   
--   Clique duas vezes na coluna do quadro. (Teclado: Selecione a linha e pressione Enter.)  
+- Clique duas vezes na coluna do quadro. (Teclado: Selecione a linha e pressione Enter.)  
   
 ### <a name="to-sort-a-column"></a>Para classificar uma coluna  
   
--   Selecione o título da coluna.  
+- Selecione o título da coluna.  
   
 ### <a name="to-group-threads"></a>Para agrupar threads  
   
--   Abra o menu de atalho da janela Inspeção Paralela, escolha **Agrupar por** e selecione o item de submenu apropriado.  
+- Abra o menu de atalho da janela Inspeção Paralela, escolha **Agrupar por** e selecione o item de submenu apropriado.  
   
 ### <a name="to-freeze-or-thaw-threads"></a>Para congelar ou descongelar threads  
   
--   Abra o menu de atalho da linha e escolha **Congelar** ou **Descongelar**.  
+- Abra o menu de atalho da linha e escolha **Congelar** ou **Descongelar**.  
   
 ### <a name="to-export-the-data-in-the-parallel-watch-window"></a>Para exportar os dados na janela Inspeção Paralela  
   
--   Escolha o botão **Abrir no Excel** e, depois, **Abrir no Excel** ou **Exportar para CSV**.  
+- Escolha o botão **Abrir no Excel** e, depois, **Abrir no Excel** ou **Exportar para CSV**.  
   
 ### <a name="to-filter-by-a-boolean-expression"></a>Para filtrar por uma expressão booliana  
   
--   Insira uma expressão booliana na caixa **Filtrar por Expressão Booliana**. O depurador avalia a expressão para cada contexto de thread. Apenas as linhas nas quais o valor é `true` é exibido.  
+- Insira uma expressão booliana na caixa **Filtrar por Expressão Booliana**. O depurador avalia a expressão para cada contexto de thread. Apenas as linhas nas quais o valor é `true` é exibido.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

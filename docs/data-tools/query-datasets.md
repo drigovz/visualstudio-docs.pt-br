@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 88433ae91691caf795ad61116c8e3691662aad42
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: ccd8bd0cb37aaa2d4bfad7ea20979987048bf862
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927705"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050667"
 ---
 # <a name="query-datasets"></a>Consultar conjuntos de dados
 Para procurar registros específicos em um conjunto de dados, use o `FindBy` método na DataTable, escrever sua própria instrução foreach para executar um loop pela coleção de linhas da tabela, ou use [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset).
@@ -33,7 +33,7 @@ Diferenciar maiusculas de minúsculas, no entanto, podem ser um fator em como os
 
 #### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Para localizar uma linha em um dataset digitado com um valor de chave primária
 
--   Para localizar uma linha, chamar fortemente tipado `FindBy` método que usa a chave primária da tabela.
+- Para localizar uma linha, chamar fortemente tipado `FindBy` método que usa a chave primária da tabela.
 
      No exemplo a seguir, o `CustomerID` coluna é a chave primária do `Customers` tabela. Isso significa que o gerado `FindBy` método é `FindByCustomerID`. O exemplo mostra como atribuir um determinado <xref:System.Data.DataRow> a uma variável usando o gerado `FindBy` método.
 
@@ -42,7 +42,7 @@ Diferenciar maiusculas de minúsculas, no entanto, podem ser um fator em como os
 
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Para localizar uma linha em um conjunto de dados sem tipo com um valor de chave primária
 
--   Chame o <xref:System.Data.DataRowCollection.Find%2A> método de um <xref:System.Data.DataRowCollection> coleção, passando a chave primária como um parâmetro.
+- Chame o <xref:System.Data.DataRowCollection.Find%2A> método de um <xref:System.Data.DataRowCollection> coleção, passando a chave primária como um parâmetro.
 
      O exemplo a seguir mostra como declarar uma nova linha chamada `foundRow` e atribua a ela o valor de retorno de <xref:System.Data.DataRowCollection.Find%2A> método. Se a chave primária for encontrada, o conteúdo do índice da coluna 1 é exibido em uma caixa de mensagem.
 
@@ -53,7 +53,7 @@ Diferenciar maiusculas de minúsculas, no entanto, podem ser um fator em como os
 
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Para localizar linhas com base nos valores em qualquer coluna
 
--   Tabelas de dados são criadas com o <xref:System.Data.DataTable.Select%2A> método, que retorna uma matriz de <xref:System.Data.DataRow>s com base na expressão passada para o <xref:System.Data.DataTable.Select%2A> método. Para obter mais informações sobre como criar expressões válidas, consulte a seção "Sintaxe da expressão" da página o <xref:System.Data.DataColumn.Expression%2A> propriedade.
+- Tabelas de dados são criadas com o <xref:System.Data.DataTable.Select%2A> método, que retorna uma matriz de <xref:System.Data.DataRow>s com base na expressão passada para o <xref:System.Data.DataTable.Select%2A> método. Para obter mais informações sobre como criar expressões válidas, consulte a seção "Sintaxe da expressão" da página o <xref:System.Data.DataColumn.Expression%2A> propriedade.
 
      O exemplo a seguir mostra como usar o <xref:System.Data.DataTable.Select%2A> método da <xref:System.Data.DataTable> para localizar linhas específicas.
 
@@ -72,24 +72,24 @@ Esta página fornece exemplos que usam conjuntos de dados tipados. Para obter in
 
 Os exemplos de código a seguir demonstram como navegar para cima e para relacionamentos em conjuntos de dados tipados. O uso de exemplos de código digitado <xref:System.Data.DataRow>s (`NorthwindDataSet.OrdersRow`) e o FindBy gerado*PrimaryKey* (`FindByCustomerID`) métodos para localizar uma linha desejada e retornar os registros relacionados. Os exemplos de compilar e executam corretamente somente se você tiver:
 
--   Uma instância de um conjunto de dados denominado `NorthwindDataSet` com um `Customers` tabela.
+- Uma instância de um conjunto de dados denominado `NorthwindDataSet` com um `Customers` tabela.
 
--   Um `Orders` tabela.
+- Um `Orders` tabela.
 
--   Uma relação nomeada `FK_Orders_Customers`relacionando as duas tabelas.
+- Uma relação nomeada `FK_Orders_Customers`relacionando as duas tabelas.
 
 Além disso, ambas as tabelas precisam ser preenchida com dados para todos os registros a serem retornados.
 
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Para retornar os registros de um registro pai selecionado filho
 
--   Chame o <xref:System.Data.DataRow.GetChildRows%2A> método de um determinado `Customers` dados de linha e retornar uma matriz de linhas do `Orders` tabela:
+- Chame o <xref:System.Data.DataRow.GetChildRows%2A> método de um determinado `Customers` dados de linha e retornar uma matriz de linhas do `Orders` tabela:
 
      [!code-csharp[VbRaddataDatasets#6](../data-tools/codesnippet/CSharp/query-datasets_4.cs)]
      [!code-vb[VbRaddataDatasets#6](../data-tools/codesnippet/VisualBasic/query-datasets_4.vb)]
 
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>Para retornar o registro pai de um registro filho selecionado
 
--   Chame o <xref:System.Data.DataRow.GetParentRow%2A> método de um determinado `Orders` linha de dados e retornar uma única linha do `Customers` tabela:
+- Chame o <xref:System.Data.DataRow.GetParentRow%2A> método de um determinado `Orders` linha de dados e retornar uma única linha do `Customers` tabela:
 
      [!code-csharp[VbRaddataDatasets#7](../data-tools/codesnippet/CSharp/query-datasets_5.cs)]
      [!code-vb[VbRaddataDatasets#7](../data-tools/codesnippet/VisualBasic/query-datasets_5.vb)]

@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c9ebd6b96a24b10601257d5eefc58014ef7058c9
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9f81514db881ad26a5fa827b0bde11df2467f23d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54782590"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050806"
 ---
 # <a name="how-to-restore-c-refactoring-snippets"></a>Como restaurar snippets de refatoração C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,23 +30,23 @@ Operações de refatoração C# dependem de snippets de código encontrados no s
   
 ### <a name="to-verify-c-refactoring-snippets-are-available-through-the-code-snippet-manager"></a>Para verificar se snippets de refatoração C# estão disponíveis por meio do Gerenciador de Snippets de Código  
   
-1.  No menu **Ferramentas**, selecione **Gerenciador de Snippet de Código**.  
+1. No menu **Ferramentas**, selecione **Gerenciador de Snippet de Código**.  
   
-2.  Na caixa de diálogo **Gerenciador de Snippet de Código**, selecione **Visual C#** na lista suspensa **Linguagem**.  
+2. Na caixa de diálogo **Gerenciador de Snippet de Código**, selecione **Visual C#** na lista suspensa **Linguagem**.  
   
      A pasta **Refatoração** deve aparecer na lista de pastas do modo de exibição de árvore.  
   
 ### <a name="to-restore-refactoring-see-comment-in-code-snippet-manager"></a>Para restaurar a refatoração, consulte o comentário no Gerenciador de Snippets de Código  
   
-1.  Se a pasta **Refatoração** não aparecer na lista de pastas do modo de exibição de árvore do Gerenciador de Snippets de Código, use este procedimento para adicionar snippets de refatoração de volta ao Gerenciador de Snippets de Código.  
+1. Se a pasta **Refatoração** não aparecer na lista de pastas do modo de exibição de árvore do Gerenciador de Snippets de Código, use este procedimento para adicionar snippets de refatoração de volta ao Gerenciador de Snippets de Código.  
   
-2.  No menu **Ferramentas**, selecione **Gerenciador de Snippet de Código**.  
+2. No menu **Ferramentas**, selecione **Gerenciador de Snippet de Código**.  
   
-3.  Na caixa de diálogo **Gerenciador de Snippet de Código**, selecione **Visual C#** na lista suspensa **Linguagem**.  
+3. Na caixa de diálogo **Gerenciador de Snippet de Código**, selecione **Visual C#** na lista suspensa **Linguagem**.  
   
-4.  Clique em **Adicionar**. A caixa de diálogo **Diretório de Snippets de Código**, que ajuda a localizar e especificar o diretório a adicionar de volta ao Gerenciador de Snippets de Código, é exibida.  
+4. Clique em **Adicionar**. A caixa de diálogo **Diretório de Snippets de Código**, que ajuda a localizar e especificar o diretório a adicionar de volta ao Gerenciador de Snippets de Código, é exibida.  
   
-5.  Localize a pasta **Refatoração** cujo caminho de diretório é:  
+5. Localize a pasta **Refatoração** cujo caminho de diretório é:  
   
      *Diretório de instalação*\Microsoft Visual Studio 14.0\VC#\Snippets\\*ID de idioma*\Refactoring  
   
@@ -54,7 +54,7 @@ Operações de refatoração C# dependem de snippets de código encontrados no s
   
      C:\Program Files\Microsoft Visual Studio 14.0\VC#\Snippets\1033\Refactoring.  
   
-6.  Clique em **Abrir** na caixa de diálogo **Diretório de Snippets de Código** e clique em **OK** no Gerenciador de Snippets de Código.  
+6. Clique em **Abrir** na caixa de diálogo **Diretório de Snippets de Código** e clique em **OK** no Gerenciador de Snippets de Código.  
   
 ## <a name="see-also"></a>Consulte também  
  [Snippets de código do Visual C#](../ide/visual-csharp-code-snippets.md)   

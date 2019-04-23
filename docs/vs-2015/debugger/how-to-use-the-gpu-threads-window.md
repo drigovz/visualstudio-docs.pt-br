@@ -19,12 +19,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee086109faa43976c9c8172cbc3af677ac140b5e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dcb55ee2128d237c2be6f57da828ec3c5877cfdd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928852"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044512"
 ---
 # <a name="how-to-use-the-gpu-threads-window"></a>Como: Usar a janela Threads de GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,55 +55,55 @@ Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão
   
 ### <a name="to-display-the-gpu-threads-window"></a>Para exibir a janela Threads da GPU  
   
-1.  No **Gerenciador de Soluções**, abra o menu de atalho para o projeto e escolha **Propriedades**.  
+1. No **Gerenciador de Soluções**, abra o menu de atalho para o projeto e escolha **Propriedades**.  
   
-2.  Na janela **Páginas de Propriedades** para o projeto, em **Propriedades de Configuração**, escolha **Depuração**.  
+2. Na janela **Páginas de Propriedades** para o projeto, em **Propriedades de Configuração**, escolha **Depuração**.  
   
-3.  Na lista **Depurador a iniciar**, selecione **Depurador Local do Windows**. Na lista **Tipo de Depurador**, selecione **Somente GPU**. Você deve escolher este depurador para parar em pontos de interrupção no código executado no GPU.  
+3. Na lista **Depurador a iniciar**, selecione **Depurador Local do Windows**. Na lista **Tipo de Depurador**, selecione **Somente GPU**. Você deve escolher este depurador para parar em pontos de interrupção no código executado no GPU.  
   
-4.  Escolha o botão **OK**.  
+4. Escolha o botão **OK**.  
   
-5.  Defina um ponto de interrupção no código do GPU.  
+5. Defina um ponto de interrupção no código do GPU.  
   
-6.  Na barra de menus, escolha **Depurar**, **Iniciar Depuração**. Aguarde até que o aplicativo atinja o ponto de interrupção.  
+6. Na barra de menus, escolha **Depurar**, **Iniciar Depuração**. Aguarde até que o aplicativo atinja o ponto de interrupção.  
   
-7.  Na barra de menus, escolha **Depurar**, **Janelas**, **Threads da GPU**.  
+7. Na barra de menus, escolha **Depurar**, **Janelas**, **Threads da GPU**.  
   
 ### <a name="to-change-to-a-different-active-thread"></a>Para alterar para um thread ativo diferente  
   
--   Clique duas vezes na coluna. (Teclado: Selecione a linha e escolha Enter.)  
+- Clique duas vezes na coluna. (Teclado: Selecione a linha e escolha Enter.)  
   
 ### <a name="to-display-a-particular-tile-and-thread"></a>Para exibir um determinado bloco e o thread  
   
-1.  Escolha o botão **Expandir o Comutador de Thread** na janela Threads da GPU.  
+1. Escolha o botão **Expandir o Comutador de Thread** na janela Threads da GPU.  
   
-2.  Insira os valores do quadro e de thread nas caixas de texto.  
+2. Insira os valores do quadro e de thread nas caixas de texto.  
   
-3.  Escolha o botão que tem a seta.  
+3. Escolha o botão que tem a seta.  
   
 ### <a name="to-display-or-hide-a-column"></a>Para exibir ou ocultar uma coluna  
   
--   Abra o menu de atalho para a janela Threads da GPU, escolha **Colunas** e, em seguida, escolha a coluna que você quer exibir ou ocultar.  
+- Abra o menu de atalho para a janela Threads da GPU, escolha **Colunas** e, em seguida, escolha a coluna que você quer exibir ou ocultar.  
   
 ### <a name="to-sort-by-a-column"></a>Para classificar por coluna  
   
--   Selecione o título da coluna.  
+- Selecione o título da coluna.  
   
 ### <a name="to-group-threads"></a>Para agrupar threads  
   
--   Abra o menu de atalho da janela Threads da GPU, escolha **Agrupar por** e escolha um dos nomes de coluna exibidos. Escolha **Nenhum** para desagrupar os threads.  
+- Abra o menu de atalho da janela Threads da GPU, escolha **Agrupar por** e escolha um dos nomes de coluna exibidos. Escolha **Nenhum** para desagrupar os threads.  
   
 ### <a name="to-freeze-or-thaw-a-row-of-threads"></a>Para congelar ou descongelar uma linha de threads  
   
--   Abra o menu de atalho da linha e escolha **Congelar** ou **Descongelar**.  
+- Abra o menu de atalho da linha e escolha **Congelar** ou **Descongelar**.  
   
 ### <a name="to-flag-or-unflag-a-row-of-threads"></a>Para sinalizar ou remover sinalização de uma linha de threads  
   
--   Selecione a coluna do sinalizador do thread ou abra o menu de atalho do thread e escolha **Sinalizar** ou **Remover Sinalização**.  
+- Selecione a coluna do sinalizador do thread ou abra o menu de atalho do thread e escolha **Sinalizar** ou **Remover Sinalização**.  
   
 ### <a name="to-display-only-flagged-threads"></a>Para exibir somente threads sinalizados  
   
--   Escolha o botão de sinalizador na janela Threads da GPU.  
+- Escolha o botão de sinalizador na janela Threads da GPU.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)   

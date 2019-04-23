@@ -8,12 +8,12 @@ ms.assetid: 8fb1334b-d78c-405f-98b4-786e9f6b58d7
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4cf661407273cfe731867fc79bef0f13d19c1f95
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0b5151f739dfe464ae948eb4b4716f659b7a7913
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926596"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044181"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>Elemento AppliesTo (modelos do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,19 +54,19 @@ Especifica uma expressão opcional para correspondência de um ou mais recursos.
   
  A sintaxe da expressão válida é definida como:  
   
--   A expressão de recurso, como "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
+- A expressão de recurso, como "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".  
   
--   O "&#124;" é o operador OR.  
+- O "&#124;" é o operador OR.  
   
--   O "&" e "+" caracteres são operadores AND.  
+- O "&" e "+" caracteres são operadores AND.  
   
--   O caractere "!" é o operador NOT.  
+- O caractere "!" é o operador NOT.  
   
--   Parênteses forçam a ordem de precedência de avaliação.  
+- Parênteses forçam a ordem de precedência de avaliação.  
   
--   Uma expressão nula ou vazia é avaliada como uma correspondência.  
+- Uma expressão nula ou vazia é avaliada como uma correspondência.  
   
--   Recursos de projeto podem ser qualquer caractere, exceto os caracteres reservados: "' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r  
+- Recursos de projeto podem ser qualquer caractere, exceto os caracteres reservados: "' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir mostra três modelos diferentes. `Template1` aplica-se a todos os tipos de projeto do C# ou a qualquer outro tipo de projeto que ofereça suporte ao recurso `WindowsAppContainer`. `Template2` aplica-se a todos os projetos do C# de qualquer tipo. `Template3` aplica-se aos projetos do C# que não são projetos `WindowsAppContainer`.  

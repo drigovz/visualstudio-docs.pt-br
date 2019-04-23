@@ -10,19 +10,19 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 344b8d7af2a89b8a39a1a6686a92f8ea2f4fd573
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5fba342cdddc1b3f5cfed73561ed521a6163f3cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710858"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050870"
 ---
 # <a name="debug-session"></a>Sessão de depuração
 Em termos de arquitetura do depurador, uma *sessão*:
 
--   É o conjunto de todos os processos, relacionados ou não relacionadas, que foram iniciados ou anexado a partir de uma única instância do IDE.
+- É o conjunto de todos os processos, relacionados ou não relacionadas, que foram iniciados ou anexado a partir de uma única instância do IDE.
 
--   É implementado por um Gerenciador de depuração de sessão (SDM). Para obter mais informações, consulte [o Gerenciador de sessão de depuração](../../extensibility/debugger/session-debug-manager.md).
+- É implementado por um Gerenciador de depuração de sessão (SDM). Para obter mais informações, consulte [o Gerenciador de sessão de depuração](../../extensibility/debugger/session-debug-manager.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Gerenciador de sessão de depuração](../../extensibility/debugger/session-debug-manager.md)

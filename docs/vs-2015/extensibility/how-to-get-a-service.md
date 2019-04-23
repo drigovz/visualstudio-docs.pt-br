@@ -10,12 +10,12 @@ ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4310dadc1e4e1d601b5e1e7401749d44b132174e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 46ef86b8cde506aad3e00aa6b5dbc6470c0087de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926446"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052175"
 ---
 # <a name="how-to-get-a-service"></a>Como: Obter um serviço
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,11 +28,11 @@ Muitas vezes você precisa obter os serviços do Visual Studio para acessar recu
   
 ## <a name="getting-a-service-from-an-initialized-vspackage"></a>Obtendo um serviço de um VSPackage inicializado  
   
-1.  Cada extensão do Visual Studio inicia com um projeto de implantação do VSIX que conterá os ativos de extensão. Criar uma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto do VSIX chamado `GetServiceExtension`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual C# / extensibilidade**.  
+1. Cada extensão do Visual Studio inicia com um projeto de implantação do VSIX que conterá os ativos de extensão. Criar uma [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto do VSIX chamado `GetServiceExtension`. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual c# / extensibilidade**.  
   
-2.  Agora, adicione um modelo de item de comando personalizado chamado **GetServiceCommand**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual C# / extensibilidade** e selecione **comando personalizado**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para **GetServiceCommand.cs**. Para obter mais informações sobre como criar um comando personalizado, [criando uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
+2. Agora, adicione um modelo de item de comando personalizado chamado **GetServiceCommand**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c# / extensibilidade** e selecione **comando personalizado**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para **GetServiceCommand.cs**. Para obter mais informações sobre como criar um comando personalizado, [criando uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md)  
   
-3.  No GetServiceCommand.cs, remova o corpo do método MenuItemCommand e adicione o seguinte código:  
+3. No GetServiceCommand.cs, remova o corpo do método MenuItemCommand e adicione o seguinte código:  
   
     ```csharp  
     IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
@@ -43,9 +43,9 @@ Muitas vezes você precisa obter os serviços do Visual Studio para acessar recu
   
      Esse código obtém um serviço SVsActivityLog e converte-o para um <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface, que pode ser usado para gravar no log de atividade. Para obter um exemplo, consulte [ Usar o Log de atividades](../extensibility/how-to-use-the-activity-log.md).  
   
-4.  Compile o projeto e comece a depuração. A instância experimental é exibida.  
+4. Compile o projeto e comece a depuração. A instância experimental é exibida.  
   
-5.  No menu Ferramentas da instância experimental, localize o **GetServiceCommand invocar** botão. Quando você clica nesse botão, você deve ver uma caixa de mensagem que diz **encontrar o serviço de log de atividade.**  
+5. No menu Ferramentas da instância experimental, localize o **GetServiceCommand invocar** botão. Quando você clica nesse botão, você deve ver uma caixa de mensagem que diz **encontrar o serviço de log de atividade.**  
   
 ## <a name="getting-a-service-from-a-tool-window-or-control-container"></a>Obtendo um serviço de um contêiner de controle ou janela de ferramenta  
  Às vezes, você precisará obter um serviço de uma janela de ferramenta ou controle de contêiner que não tenha sido colocado no local, caso contrário, foi colocado no local com um provedor de serviço que não sabe sobre o serviço que você deseja. Por exemplo, você talvez queira gravar no log de atividade de dentro de um controle.  

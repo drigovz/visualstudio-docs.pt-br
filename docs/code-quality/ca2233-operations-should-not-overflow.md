@@ -17,12 +17,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 013571a948c6c3fdca5da3c5c9278ca21e1f3698
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 7c07dde4c3b992db30c9fc72a0dfa01f0f13b31e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869103"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045531"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: As operações não devem estourar
 
@@ -98,15 +98,15 @@ Não há suporte para blocos marcados no [!INCLUDE[vbprvb](../code-quality/inclu
 
 ## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Ativar verificado estouro/estouro negativo aritmético
 
-Se você ativar verificado estouro/estouro negativo aritmético em C#, equivale a disposição de cada operação de inteiro em um bloco verificado.
+Se você ativar verificado estouro/estouro negativo aritmético em c#, equivale a disposição de cada operação de inteiro em um bloco verificado.
 
-Para ativar verificado estouro/estouro negativo aritmético em C#:
+Para ativar verificado estouro/estouro negativo aritmético em c#:
 
-1.  Na **Gerenciador de soluções**, clique em seu projeto e escolha **propriedades**.
+1. Na **Gerenciador de soluções**, clique em seu projeto e escolha **propriedades**.
 
-2.  Selecione a guia **Compilar** e clique em **Avançado**.
+2. Selecione a guia **Compilar** e clique em **Avançado**.
 
-3.  Selecione **verificar estouro/estouro negativo aritmético** e clique em **Okey**.
+3. Selecione **verificar estouro/estouro negativo aritmético** e clique em **Okey**.
 
 ## <a name="see-also"></a>Consulte também
 

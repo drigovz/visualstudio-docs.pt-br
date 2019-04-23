@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7bc85d1a38143e626fc659979eea727a0b41ef00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7d9b30dd50838eced1299e4aaae6999c8fb9f0e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923281"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052201"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Executar aplicativos do Windows Phone no emulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode 
   
  Junto com o Visual Studio, o emulador fornece um ambiente completo em que você pode criar, desenvolver, depurar e testar aplicativos do Windows Phone.  
   
-##  <a name="BKMK_run"></a> Executar um aplicativo do Windows Phone no emulador  
+## <a name="BKMK_run"></a> Executar um aplicativo do Windows Phone no emulador  
  Enquanto você desenvolve um aplicativo do Windows Phone, pode usar o Emulador do Windows Phone para implantar e testar seu aplicativo rapidamente. Recomendamos que você teste seu aplicativo em um dispositivo Windows Phone real, mas antes de publicar seu aplicativo na Windows Phone Store. Isso permite que você tenha experiências com seu aplicativo da mesma forma que os usuários terão.  
   
  Quando você executa um aplicativo do Windows Phone pela primeira vez no Emulador do Windows Phone, podem ocorrer os seguintes eventos:  
@@ -50,17 +50,17 @@ O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode 
 > [!TIP]
 >  Quando você testar seu aplicativo no emulador, deixe o emulador aberto entre as sessões de depuração, assim poderá reexecutar seu aplicativo rapidamente.  
   
-###  <a name="BKMK_vs"></a> Executar um aplicativo do Visual Studio  
+### <a name="BKMK_vs"></a> Executar um aplicativo do Visual Studio  
   
 ##### <a name="to-deploy-and-run-an-app-from-visual-studio"></a>Para implantar e executar o aplicativo do Visual Studio  
   
-1.  No Visual Studio, abra um projeto do Windows Phone.  
+1. No Visual Studio, abra um projeto do Windows Phone.  
   
-2.  Sobre o **Standard** barra de ferramentas, selecione uma das opções de emuladores.  
+2. Sobre o **Standard** barra de ferramentas, selecione uma das opções de emuladores.  
   
      ![Lista de imagens do emulador do Windows Phone](../debugger/media/wp-emulator-list.png "WP_Emulator_list")  
   
-3.  Para implantar e executar seu aplicativo com a depuração, nos **Debug** menu, clique em **iniciar depuração**, ou pressione F5.  
+3. Para implantar e executar seu aplicativo com a depuração, nos **Debug** menu, clique em **iniciar depuração**, ou pressione F5.  
   
      Para implantar e executar seu aplicativo sem depuração, nos **Debug** menu, clique em **iniciar sem depuração**, ou pressione Ctrl + F5.  
   
@@ -80,32 +80,32 @@ O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode 
   
 ##### <a name="to-restart-an-app-without-debugging"></a>Para reiniciar um aplicativo sem depuração  
   
-1.  No emulador, na tela Iniciar, passe o dedo para a esquerda para exibir a lista de aplicativos.  
+1. No emulador, na tela Iniciar, passe o dedo para a esquerda para exibir a lista de aplicativos.  
   
-2.  Na lista de aplicativos, toque no ícone do aplicativo. O aplicativo reinicia sem depuração.  
+2. Na lista de aplicativos, toque no ícone do aplicativo. O aplicativo reinicia sem depuração.  
   
 ##### <a name="to-deactivate-a-running-app"></a>Para desativar um aplicativo em execução  
   
-1.  Antes de executar seu aplicativo, no Visual Studio, clique com botão direito no projeto no Gerenciador de soluções e, em seguida, selecione **propriedades** para abrir **Designer de projeto**.  
+1. Antes de executar seu aplicativo, no Visual Studio, clique com botão direito no projeto no Gerenciador de soluções e, em seguida, selecione **propriedades** para abrir **Designer de projeto**.  
   
-2.  No **Designer de projeto**, na **Debug** página, deixe o **após a desativação ao depurar** desmarcado de caixa de seleção se desejar que o aplicativo fique em um inativas estado quando desativado. Marque a caixa de seleção se você deseja que o aplicativo fique inativo quando for desativado.  
+2. No **Designer de projeto**, na **Debug** página, deixe o **após a desativação ao depurar** desmarcado de caixa de seleção se desejar que o aplicativo fique em um inativas estado quando desativado. Marque a caixa de seleção se você deseja que o aplicativo fique inativo quando for desativado.  
   
-3.  Sobre o **Debug** menu, clique em **iniciar depuração**, ou pressione F5 para executar o aplicativo.  
+3. Sobre o **Debug** menu, clique em **iniciar depuração**, ou pressione F5 para executar o aplicativo.  
   
-4.  No emulador, pressione a **iniciar** botão. A tela Iniciar aparece e o aplicativo é desativado. O aplicativo entra em um estado de dormência ou fica inativo, dependendo da configuração do **após a desativação ao depurar** caixa de seleção.  
+4. No emulador, pressione a **iniciar** botão. A tela Iniciar aparece e o aplicativo é desativado. O aplicativo entra em um estado de dormência ou fica inativo, dependendo da configuração do **após a desativação ao depurar** caixa de seleção.  
   
 ##### <a name="to-reactivate-a-dormant-or-tombstoned-app"></a>Para reativar um dispositivo dormente ou inativo  
   
--   No emulador, pressione a **volta** botão para retornar ao aplicativo. Se você navegou para outras páginas ou abriu outro aplicativo, talvez seja necessário pressionar o **volta** botão mais de uma vez para reativar o aplicativo.  
+- No emulador, pressione a **volta** botão para retornar ao aplicativo. Se você navegou para outras páginas ou abriu outro aplicativo, talvez seja necessário pressionar o **volta** botão mais de uma vez para reativar o aplicativo.  
   
      A sessão de depuração é retomada. Se o depurador se soltou de seu aplicativo, pode ser necessário pressionar F5 pra retomar a sessão de depuração.  
   
-###  <a name="BKMK_depltool"></a> Executar um aplicativo com a ferramenta de implantação do aplicativo  
+### <a name="BKMK_depltool"></a> Executar um aplicativo com a ferramenta de implantação do aplicativo  
  Você também pode usar a ferramenta de implantação de aplicativo do Windows Phone (**AppDeploy.exe**) para executar seu aplicativo no emulador. Essa ferramenta é um aplicativo independente, que é implantado quando você instala as ferramentas de desenvolvimento do Windows Phone.  
   
  Para obter mais informações, consulte [aplicativos de implantar o Windows Phone 8.1 com a ferramenta de implantação do aplicativo](http://msdn.microsoft.com/library/23700f82-1399-44d9-bc0c-714be4a48ee6).  
   
-##  <a name="BKMK_toolbar"></a> Configurar o emulador do Windows Phone com a barra de ferramentas do emulador  
+## <a name="BKMK_toolbar"></a> Configurar o emulador do Windows Phone com a barra de ferramentas do emulador  
  Esta tabela mostra os botões de configuração disponíveis na barra de ferramentas do emulador.  
   
 |Botões da barra de ferramentas|Opções de configuração|  
@@ -114,7 +114,7 @@ O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode 
 |![Orientação na barra de ferramentas do emulador do Windows Phone](../debugger/media/wp-emulator-rotation.png "WP_Emulator_rotation")|**Configurar a orientação do emulador**<br /><br /> Você pode alterar a orientação no Emulador do Windows Phone para uma das três orientações: retrato, paisagem à esquerda ou paisagem à direita. O tamanho do emulador não muda quando você muda a orientação.<br /><br /> Para alterar a orientação, clique o **Girar para a esquerda** botão ou o **Girar para a direita** botão.|  
 |![Opções na barra de ferramentas do emulador do Windows Phone de tamanho](../debugger/media/wp-emulator-size.png "WP_Emulator_size")|**Configurar o tamanho do emulador**<br /><br /> Você pode mudar o tamanho do emulador na tela do computador host. O DPI (pontos por polegada) para o emulador é baseado no DPI do monitor host, independentemente do valor de zoom.<br /><br /> -Para ajustar o emulador à tela, clique o **ajustar à tela** botão.<br />-Para alterar a configuração de zoom, clique o **Zoom** botão. O **Zoom** caixa de diálogo é aberta. No **Zoom** caixa de diálogo, digite um valor de zoom entre 33 e 100.|  
   
-##  <a name="BKMK_buttons"></a> Use os botões de hardware simulados no emulador  
+## <a name="BKMK_buttons"></a> Use os botões de hardware simulados no emulador  
  Simule o uso dos botões de hardware de um telefone usando os botões de hardware simulados no lado direito da tela do emulador.  
   
 - Clique o **energia** botão para simular a exibição e desligando. Clique e segure para simular o desligamento do telefone.  
@@ -133,7 +133,7 @@ O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode 
   
    ![Botões no emulador do Windows Phone](../debugger/media/wp-emulator-buttons.png "WP_Emulator_buttons")  
   
-##  <a name="BKMK_tasks_kbd"></a> Usar o teclado do computador com o emulador  
+## <a name="BKMK_tasks_kbd"></a> Usar o teclado do computador com o emulador  
  O emulador suporta mapeamento do teclado de hardware em seu computador de desenvolvimento para teclado em um Windows Phone. O comportamento das teclas é igual ao de um dispositivo Windows Phone.  
   
  Por padrão, o teclado de hardware não fica habilitado. A implementação é equivalente a um teclado deslizante que deve ser implantado antes de você poder usá-lo. Antes de você habilitar o teclado de hardware, o emulador só aceita entrada de teclas das teclas de controle.  
@@ -165,7 +165,7 @@ O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode 
 |PAGE UP|Habilita o teclado de hardware (apenas emulador do Windows 8/8.1).|Não é aplicável para o emulador do Windows 10.|  
 |PAGE DOWN|Desativa o teclado de hardware (apenas emulador do Windows 8/8.1).|Não é aplicável para o emulador do Windows 10.|  
   
-##  <a name="BKMK_checkpoints"></a> Salvar e carregar pontos de verificação personalizados  
+## <a name="BKMK_checkpoints"></a> Salvar e carregar pontos de verificação personalizados  
  Salvar um instantâneo do estado do emulador usando o **pontos de verificação** guia do emulador **ferramentas adicionais**. Essa funcionalidade é útil quando você testa seu aplicativo frequentemente com os mesmos dados e configurações.  
   
  Por exemplo, se seu aplicativo requer vários contatos, você pode criar os registros de contato uma vez e salvar um instantâneo do emulador. Do contrário, você tem de recriar o registro de contato toda vez que iniciar o emulador.  
@@ -186,7 +186,7 @@ O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode 
   
   ![Guia de pontos de verificação do emulador do Windows Phone](../debugger/media/wp-emulator-checkpoints.png "WP_Emulator_checkpoints")  
   
-##  <a name="BKMK_tasks_shot"></a> Capturar capturas de tela no emulador  
+## <a name="BKMK_tasks_shot"></a> Capturar capturas de tela no emulador  
  Você pode criar capturas de tela de seus aplicativos do Windows Phone usando a ferramenta de captura de tela a partir da janela Ferramentas adicionais. A ferramenta cria arquivos PNG que correspondem à resolução do emulador em execução.  
   
  ![Capturas de tela do que o Windows Phone Emulator](../debugger/media/wp-emulator-screenshots.png "WP_Emulator_screenshots")  
@@ -217,6 +217,6 @@ O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode 
   
 #### <a name="to-disable-frame-rate-counters-in-the-emulator-before-capturing-screenshots"></a>Para desabilitar os contadores de taxa de quadros no emulador antes de capturar telas  
   
--   Especifique uma criação de versão no Visual Studio. Depois de especificar um build de versão, inicie seu aplicativo selecionando o **Deploy _[nome do aplicativo]_**  no link a **Build** menu.  
+- Especifique uma criação de versão no Visual Studio. Depois de especificar um build de versão, inicie seu aplicativo selecionando o **Deploy _[nome do aplicativo]_**  no link a **Build** menu.  
   
--   Como alternativa, você pode comentar na linha de código do arquivo app.xaml.cs ou app.xaml.vb que define o valor de `EnableFrameRateCounter` para `true`.
+- Como alternativa, você pode comentar na linha de código do arquivo app.xaml.cs ou app.xaml.vb que define o valor de `EnableFrameRateCounter` para `true`.

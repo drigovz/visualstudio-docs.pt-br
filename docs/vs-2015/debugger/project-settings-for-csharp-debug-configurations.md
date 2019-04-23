@@ -1,5 +1,5 @@
 ---
-title: Configurações do projeto para configurações de depuração do C# | Microsoft Docs
+title: Configurações do projeto para configurações de depuração do c# | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -23,22 +23,22 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dd897e0d340bed3c82ab47a9e315915456d10480
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fd484422cdae8cfc04cab169feefdd452f178a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922592"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056673"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>Definições do projeto para configurações de depuração do C#
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode alterar as configurações de projeto para uma configuração de depuração C# na **páginas de propriedades** janela, conforme discutido na [Debug and Release Configurations](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram onde localizar as configurações relacionadas ao depurador na janela **Páginas de Propriedades**.  
+Você pode alterar as configurações de projeto para uma configuração de depuração c# na **páginas de propriedades** janela, conforme discutido na [Debug and Release Configurations](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram onde localizar as configurações relacionadas ao depurador na janela **Páginas de Propriedades**.  
   
 > [!WARNING]
->  Este tópico não se aplica a aplicativos da Windows Store. Consulte [iniciar uma sessão de depuração (VB, C#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
+>  Este tópico não se aplica a aplicativos da Windows Store. Consulte [iniciar uma sessão de depuração (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)  
   
-##  <a name="BKMK_Debug_tab"></a> Guia depurar  
+## <a name="BKMK_Debug_tab"></a> Guia depurar  
   
 |**Configuração**|**Descrição**|  
 |-----------------|---------------------|  
@@ -50,7 +50,7 @@ Você pode alterar as configurações de projeto para uma configuração de depu
 |**Habilitar depuração de código não gerenciado**|Permite depurar chamadas para código Win32 nativo (não gerenciado) a partir do seu aplicativo gerenciado.|  
 |**Habilitar depuração do SQL Server**|Permite depuração de objetos de banco de dados do SQL Server.|  
   
-##  <a name="BKMK_Build_tab"></a> Guia compilação  
+## <a name="BKMK_Build_tab"></a> Guia compilação  
   
 |Configuração|Descrição|  
 |-------------|-----------------|  

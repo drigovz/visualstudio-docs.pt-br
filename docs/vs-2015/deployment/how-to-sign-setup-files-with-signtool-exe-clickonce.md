@@ -19,12 +19,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fbbc745ae2d0a20ab14b3960e34182d7f4ed1865
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 67dc8e858a8ee87ee9e1fef9d99bf24ea4994960
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924981"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053202"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Como: Assinar arquivos de instalação com SignTool.exe (ClickOnce)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,23 +37,23 @@ Você pode usar o SignTool.exe para assinar um programa de instalação (setup.e
   
 ### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>Para gerar um programa de instalação não assinado e assinar mais tarde  
   
-1.  No computador de desenvolvimento, instale o certificado com qual você deseja assinar os manifestos.  
+1. No computador de desenvolvimento, instale o certificado com qual você deseja assinar os manifestos.  
   
-2.  Selecione o projeto no **Gerenciador de Soluções**.  
+2. Selecione o projeto no **Gerenciador de Soluções**.  
   
-3.  No menu **Projeto**, clique em *ProjectName* **Propriedades**.  
+3. No menu **Projeto**, clique em *ProjectName* **Propriedades**.  
   
-4.  Na página **Assinatura**, desmarque a opção **Assinar os manifestos do ClickOnce**.  
+4. Na página **Assinatura**, desmarque a opção **Assinar os manifestos do ClickOnce**.  
   
-5.  Na página **Publicar**, clique em **Pré-requisitos**.  
+5. Na página **Publicar**, clique em **Pré-requisitos**.  
   
-6.  Verifique se todos os pré-requisitos estão selecionados e clique em **OK**.  
+6. Verifique se todos os pré-requisitos estão selecionados e clique em **OK**.  
   
-7.  Na página **Publicar**, verifique as configurações de publicação e clique em **Publicar Agora**.  
+7. Na página **Publicar**, verifique as configurações de publicação e clique em **Publicar Agora**.  
   
      A solução publica o manifesto de aplicativo não assinado, o manifesto de implantação não assinado, os arquivos específicos de versão e o programa de instalação não assinado no local da pasta de publicação.  
   
-8.  Na página **Publicar**, clique em **Pré-requisitos**.  
+8. Na página **Publicar**, clique em **Pré-requisitos**.  
   
 9. Na caixa de diálogo **Pré-requisitos**, desmarque a opção **Criar programa de instalação para instalar os componentes dos pré-requisitos**.  
   

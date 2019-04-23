@@ -11,12 +11,12 @@ ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 78ecbcb50effc133487f03ffd2f2edee3cbd8d4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 069c396ce4cb75c9153082fdbb352b2ba713c8a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925258"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052579"
 ---
 # <a name="test-area-2-get-from-source-control"></a>Área de teste 2: Obter do controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ Esta área de teste aborda os casos de teste para recuperar itens do repositóri
   
 ##### <a name="get-latest-version"></a>Obter a versão mais recente:  
   
--   **Arquivo**, **controle de origem**, **obter versão mais recente**.  
+- **Arquivo**, **controle de origem**, **obter versão mais recente**.  
   
--   **Arquivo**, **obter versão mais recente**.  
+- **Arquivo**, **obter versão mais recente**.  
   
--   Menu de atalho **obter última versão**.  
+- Menu de atalho **obter última versão**.  
   
--   Obter: **Arquivo**, **controle de origem**, **obter**.  
+- Obter: **Arquivo**, **controle de origem**, **obter**.  
   
 ## <a name="expected-behavior"></a>Comportamento esperado  
   

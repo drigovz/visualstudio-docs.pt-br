@@ -13,23 +13,23 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae57c63b9ec97d72d7da7b7ed7de54028c3e32e3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9f7b463721b840847bf609ec70f8818e904fdd0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658822"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058298"
 ---
 # <a name="how-to-display-urls-as-links-in-the-editor"></a>Como exibir URLs como links no Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 É possível optar por fazer o Editor de Código tratar URLs (Uniform Resource Locators) em seu código como links ativos. Quando você usa esse recurso, as URLs:  
   
--   São exibidas sublinhadas.  
+- São exibidas sublinhadas.  
   
--   Exibem uma **Dica de Ferramenta** quando você passa o mouse sobre elas.  
+- Exibem uma **Dica de Ferramenta** quando você passa o mouse sobre elas.  
   
--   Tentam abrir o site da Web indicado quando você pressiona **CTRL** + clique com o botão esquerdo do mouse no link. Por padrão, o site da Web é exibido no navegador da Web interno.  
+- Tentam abrir o site da Web indicado quando você pressiona **CTRL** + clique com o botão esquerdo do mouse no link. Por padrão, o site da Web é exibido no navegador da Web interno.  
   
 > [!NOTE]
 >  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -38,17 +38,17 @@ ms.locfileid: "59658822"
   
 #### <a name="to-display-urls-as-links"></a>Para exibir URLs como links  
   
-1.  No menu **Ferramentas**, clique em **Opções**.  
+1. No menu **Ferramentas**, clique em **Opções**.  
   
-2.  Clique em **Editor de Texto**.  
+2. Clique em **Editor de Texto**.  
   
-3.  Para alterar a opção para apenas uma linguagem, expanda a pasta dessa linguagem e escolha **Geral**.  
+3. Para alterar a opção para apenas uma linguagem, expanda a pasta dessa linguagem e escolha **Geral**.  
   
      —ou—  
   
      Para alterar a opção para todas as linguagens, expanda a pasta **Todas as Linguagens** e escolha **Geral**.  
   
-4.  Em **Exibir**, selecione **Habilitar navegação de URL com um único clique**.  
+4. Em **Exibir**, selecione **Habilitar navegação de URL com um único clique**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Personalizando o editor](../../ide/customizing-the-editor.md)   

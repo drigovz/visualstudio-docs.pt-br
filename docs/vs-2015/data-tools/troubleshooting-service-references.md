@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8af0f56d75d231cdde2dc156519e08d580ad4f5f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cff1677ab9209ce2a51b7587c410731a71e27eb0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929765"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056713"
 ---
 # <a name="troubleshooting-service-references"></a>Solucionando problemas de referências de serviço
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,25 +33,25 @@ Este tópico lista os problemas comuns que podem ocorrer quando você estiver tr
 
  Para corrigir esse erro:
 
-1.  Na **Gerenciador de soluções**, duas vezes no arquivo App. config para abri-lo.
+1. Na **Gerenciador de soluções**, duas vezes no arquivo App. config para abri-lo.
 
-2.  Localize o `MaxReceivedMessageSize` propriedade e alterá-lo para um valor maior.
+2. Localize o `MaxReceivedMessageSize` propriedade e alterá-lo para um valor maior.
 
 ## <a name="cannot-find-a-service-in-my-solution"></a>Não é possível localizar um serviço na minha solução
  Quando você clica o **Discover** botão na **adicionar referências de serviço** caixa de diálogo, um ou mais projetos de biblioteca de serviço WCF na solução não aparecem na lista de serviços. Isso pode ocorrer se uma biblioteca de serviço foi adicionada à solução, mas ainda não foram compilada.
 
  Para corrigir esse erro:
 
--   Na **Gerenciador de soluções**, o projeto de biblioteca de serviços WCF com o botão direito e clique em **Build**.
+- Na **Gerenciador de soluções**, o projeto de biblioteca de serviços WCF com o botão direito e clique em **Build**.
 
 ## <a name="error-accessing-a-service-over-a-remote-desktop"></a>Erro ao acessar um serviço em uma área de trabalho remota
  Quando um usuário acessa um serviço WCF hospedado na Web sobre uma conexão de área de trabalho remota e o usuário não tem permissões administrativas, autenticação NTLM será usada. Se o usuário não tem permissões administrativas, o usuário pode receber a seguinte mensagem de erro: "A solicitação HTTP é autorizada no esquema de autenticação de cliente 'Anonymous'. O cabeçalho de autenticação recebido do servidor foi 'NTLM' ".
 
  Para corrigir esse erro:
 
-1.  No projeto do site da Web, abra o **propriedades** páginas.
+1. No projeto do site da Web, abra o **propriedades** páginas.
 
-2.  Sobre o **opções de inicialização** guia, desmarque a **autenticação NTLM** caixa de seleção.
+2. Sobre o **opções de inicialização** guia, desmarque a **autenticação NTLM** caixa de seleção.
 
     > [!NOTE]
     > Você deve desativar a autenticação NTLM somente para sites da Web que contêm exclusivamente os serviços WCF. Segurança para os serviços WCF é gerenciada por meio da configuração no arquivo Web. config. Isso torna a autenticação NTLM desnecessários.
@@ -70,32 +70,32 @@ Este tópico lista os problemas comuns que podem ocorrer quando você estiver tr
 
  Para corrigir esse erro, você deve recriar manualmente o projeto de serviço:
 
-1.  No menu **Ferramentas**, clique em **Opções**.
+1. No menu **Ferramentas**, clique em **Opções**.
 
-2.  No **opções** diálogo caixa, expanda **projetos e soluções**e, em seguida, selecione **geral**.
+2. No **opções** diálogo caixa, expanda **projetos e soluções**e, em seguida, selecione **geral**.
 
-3.  Certifique-se de que o **configurações de build Show advanced** caixa de seleção está selecionada e, em seguida, clique em **Okey**.
+3. Certifique-se de que o **configurações de build Show advanced** caixa de seleção está selecionada e, em seguida, clique em **Okey**.
 
-4.  Carregar o projeto de serviço do WCF. Para obter mais informações, consulte [NIB como: Criar soluções multiprojeto](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
+4. Carregar o projeto de serviço do WCF. Para obter mais informações, consulte [NIB como: Criar soluções multiprojeto](http://msdn.microsoft.com/02ecd6dd-0114-46fe-b335-ba9c5e3020d6).
 
-5.  No **Configuration Manager** caixa de diálogo, defina as **configuração da solução ativa** para **depurar**. Para obter mais informações, confira [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md).
+5. No **Configuration Manager** caixa de diálogo, defina as **configuração da solução ativa** para **depurar**. Para obter mais informações, confira [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md).
 
-6.  Na **Gerenciador de soluções**, selecione o projeto de serviço do WCF.
+6. Na **Gerenciador de soluções**, selecione o projeto de serviço do WCF.
 
-7.  Sobre o **compilar** menu, clique em **recompilar** para recompilar o projeto de serviço do WCF.
+7. Sobre o **compilar** menu, clique em **recompilar** para recompilar o projeto de serviço do WCF.
 
 ## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services não são exibidos no navegador
  Quando ele tenta exibir uma representação XML dos dados em um [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)], Internet Explorer pode interpretar incorretamente os dados como um RSS feed. Você deve verificar se a opção para exibir RSS feeds está desabilitada.
 
  Para corrigir esse erro, desabilite os feeds RSS:
 
-1.  No Internet Explorer, no menu **Ferramentas**, clique em **Opções da Internet**.
+1. No Internet Explorer, no menu **Ferramentas**, clique em **Opções da Internet**.
 
-2.  Sobre o **conteúdo** guia da **Feeds** seção, clique em **configurações**.
+2. Sobre o **conteúdo** guia da **Feeds** seção, clique em **configurações**.
 
-3.  No **configurações do Feed** caixa de diálogo, desmarque a **ativar o modo de exibição de leitura de feed** caixa de seleção e, em seguida, clique em **Okey**.
+3. No **configurações do Feed** caixa de diálogo, desmarque a **ativar o modo de exibição de leitura de feed** caixa de seleção e, em seguida, clique em **Okey**.
 
-4.  Clique em **Okey** para fechar o **opções da Internet** caixa de diálogo.
+4. Clique em **Okey** para fechar o **opções da Internet** caixa de diálogo.
 
 ## <a name="see-also"></a>Consulte também
 

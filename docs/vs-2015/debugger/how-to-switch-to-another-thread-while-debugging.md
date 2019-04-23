@@ -16,12 +16,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5fa84d46d64db048b58d0fcdb1c433b4830a5f45
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 8f481a0b1cb2142dc7dbfe11e17ac627753cebf0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58923224"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052435"
 ---
 # <a name="how-to-switch-to-another-thread-while-debugging"></a>Como: Mudar para outro Thread durante a depuração
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,19 +30,19 @@ Quando você depura um aplicativo de vários threads, pode usar qualquer dos vá
   
 ### <a name="to-switch-to-any-thread-that-appears-in-the-threads-window"></a>Para alternar para determinado thread exibido na janela de threads  
   
--   Clique duas vezes no thread.  
+- Clique duas vezes no thread.  
   
 ### <a name="to-switch-to-a-thread-in-a-source-window"></a>Para alternar para um thread em uma janela de origem  
   
--   Na medianiz esquerda, clique com botão direito um indicador de thread, aponte para **alternar para**e, em seguida, clique no nome do thread em questão para o qual você deseja alternar. O menu de atalho mostra apenas os threads nesse local específico.  
+- Na medianiz esquerda, clique com botão direito um indicador de thread, aponte para **alternar para**e, em seguida, clique no nome do thread em questão para o qual você deseja alternar. O menu de atalho mostra apenas os threads nesse local específico.  
   
      Se nenhum indicador for exibido, clique com botão direito no **Threads** janela e verifique **Mostrar Threads em origem** está selecionado.  
   
 ### <a name="to-switch-to-a-thread-in-the-debug-location-toolbar"></a>Para alternar para um thread na barra de ferramentas do Local de Depuração  
   
-1.  Sobre o **local de depuração** barra de ferramentas, clique no **Thread** caixa.  
+1. Sobre o **local de depuração** barra de ferramentas, clique no **Thread** caixa.  
   
-2.  Na lista, clique no thread para o qual você deseja alternar.  
+2. Na lista, clique no thread para o qual você deseja alternar.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)

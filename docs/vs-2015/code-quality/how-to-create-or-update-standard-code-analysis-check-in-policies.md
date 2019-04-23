@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: caaf9026d949b2e1327e7d88507f27392bf07283
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 766ecde2da88c2a666470c790f6399cce198b2a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58924965"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053150"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Como: Criar ou atualizar políticas de check-in de análise de código padrão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,19 +38,19 @@ Você pode exigir que a análise de código ser executado em todos os projetos d
   
 ### <a name="to-open-the-check-in-policy-editor"></a>Para abrir o editor de política de check-in  
   
-1.  No Team Explorer, clique com botão direito no nome do projeto de equipe, aponte para **configurações de projeto de equipe**e, em seguida, clique em **controle do código-fonte**.  
+1. No Team Explorer, clique com botão direito no nome do projeto de equipe, aponte para **configurações de projeto de equipe**e, em seguida, clique em **controle do código-fonte**.  
   
-2.  No **controle de origem** caixa de diálogo, selecione o **política de Check-in** guia.  
+2. No **controle de origem** caixa de diálogo, selecione o **política de Check-in** guia.  
   
-3.  Realize um dos seguintes procedimentos:  
+3. Realize um dos seguintes procedimentos:  
   
-    -   Clique em **adicionar** para criar uma nova política de check-in.  
+    - Clique em **adicionar** para criar uma nova política de check-in.  
   
-    -   Clique duas vezes em existente **análise de código** item o **tipo de política** lista para alterar a política.  
+    - Clique duas vezes em existente **análise de código** item o **tipo de política** lista para alterar a política.  
   
 ### <a name="to-set-policy-options"></a>Para definir opções de política  
   
--   Marque ou desmarque as opções a seguir:  
+- Marque ou desmarque as opções a seguir:  
   
     |Opção|Descrição|  
     |------------|-----------------|  
@@ -58,19 +58,19 @@ Você pode exigir que a análise de código ser executado em todos os projetos d
     |**Impor análise de código C/C++ (/Analyze)**|Requer que todos os projetos de C ou C++ compilados com o / opção analyze do compilador para executar a análise de código antes que eles podem fazer check-in.|  
     |**Impor análise de código para código gerenciado**|Requer que todos os projetos gerenciados executar análise de código e criar antes que eles podem fazer check-in.|  
   
--  
+- 
   
 ### <a name="to-specify-a-managed-rule-set"></a>Para especificar um conjunto de regras gerenciado  
   
--   Dos **executar este conjunto de regras** lista, use um dos seguintes métodos:  
+- Dos **executar este conjunto de regras** lista, use um dos seguintes métodos:  
   
-    -   Selecione um conjunto de regras padrão do Microsoft.  
+    - Selecione um conjunto de regras padrão do Microsoft.  
   
-    -   Para selecionar um conjunto de regras personalizadas, clique em  **\<Selecionar conjunto de regras de controle do código-fonte... >** e, em seguida, digite o caminho de controle de versão da regra definida no navegador de controle do código-fonte. A sintaxe de um caminho de controle de versão é:  
+    - Para selecionar um conjunto de regras personalizadas, clique em  **\<Selecionar conjunto de regras de controle do código-fonte... >** e, em seguida, digite o caminho de controle de versão da regra definida no navegador de controle do código-fonte. A sintaxe de um caminho de controle de versão é:  
   
-    -   **$/** `TeamProjectName` **/** `VersionControlPath`  
+    - **$/** `TeamProjectName` **/** `VersionControlPath`  
   
-    -   Para obter mais informações sobre como criar e implementar uma regra de política de check-in personalizado definido, consulte [políticas de Check-in personalizadas implementando para código gerenciado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
+    - Para obter mais informações sobre como criar e implementar uma regra de política de check-in personalizado definido, consulte [políticas de Check-in personalizadas implementando para código gerenciado](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Criando e usando políticas de check-in de análise de código](../code-quality/creating-and-using-code-analysis-check-in-policies.md)

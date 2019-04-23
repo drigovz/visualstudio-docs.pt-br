@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a47f29f2731756d4607ff611a450c4f988e4413e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9e67b6e999078523c11ba2b59175743e4a8f3d33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924391"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044229"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>Como: Interceptar um clique em uma forma ou um decorador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ public partial class MyShape // change
   
 #### <a name="to-intercept-a-click-on-an-icon-decorator"></a>Para interceptar um clique em um decorador de ícone  
   
-1.  Abra ou crie uma solução DSL.  
+1. Abra ou crie uma solução DSL.  
   
-2.  Escolha ou crie uma forma que tem um decorador de ícone e mapeá-la para uma classe de domínio.  
+2. Escolha ou crie uma forma que tem um decorador de ícone e mapeá-la para uma classe de domínio.  
   
-3.  Em um arquivo de código separado dos arquivos no `GeneratedCode` pasta, crie a nova subclasse de ImageField:  
+3. Em um arquivo de código separado dos arquivos no `GeneratedCode` pasta, crie a nova subclasse de ImageField:  
   
     ```  
     using Microsoft.VisualStudio.Modeling;  
@@ -89,7 +89,7 @@ public partial class MyShape // change
   
      Você deve definir Handled como verdadeiro se você não quiser que o evento a ser passado para a forma do recipiente.  
   
-4.  Substitua o método de InitializeShapeFields em sua forma classs adicionando a seguinte definição de classe parcial.  
+4. Substitua o método de InitializeShapeFields em sua forma classs adicionando a seguinte definição de classe parcial.  
   
     ```  
     public partial class MyShape // change  
@@ -116,9 +116,9 @@ public partial class MyShape // change
     }  
     ```  
   
-1.  Criar e executar a solução.  
+1. Criar e executar a solução.  
   
-2.  Clique duas vezes no ícone em uma instância da forma. A mensagem de teste deve aparecer.  
+2. Clique duas vezes no ícone em uma instância da forma. A mensagem de teste deve aparecer.  
   
 ## <a name="intercepting-clicks-and-drags-on-compartmentshape-lists"></a>Interceptando clica e arrasta em listas de CompartmentShape  
  O exemplo a seguir permite que os usuários reordenar os itens em uma forma de compartimento, arrastando-os. Para executar este código:  
@@ -135,19 +135,19 @@ public partial class MyShape // change
   
    Em resumo, o código funciona da seguinte maneira. Neste exemplo, `ClassShape` é o nome da forma do compartimento.  
   
--   Um conjunto de manipuladores de eventos de mouse está anexado a cada instância de compartimento quando ele é criado.  
+- Um conjunto de manipuladores de eventos de mouse está anexado a cada instância de compartimento quando ele é criado.  
   
--   O `ClassShape.MouseDown` evento armazena o item atual.  
+- O `ClassShape.MouseDown` evento armazena o item atual.  
   
--   Quando o mouse se move o item atual, fora de uma instância de MouseAction é criada, que define o cursor e captura o mouse até ele ser liberado.  
+- Quando o mouse se move o item atual, fora de uma instância de MouseAction é criada, que define o cursor e captura o mouse até ele ser liberado.  
   
      Para evitar interferência com outras ações do mouse, como selecionar o texto de um item, o MouseAction não é criado até que o mouse deixou o item original.  
   
      Uma alternativa para criar um MouseAction seria simplesmente escutar MouseUp. No entanto, isso não funcionaria corretamente se o usuário libera o mouse depois arrastá-lo fora do compartimento. O MouseAction é capaz de executar a ação apropriada, independentemente de onde o mouse é liberado.  
   
--   Quando o mouse é liberado, MouseAction.MouseUp reorganiza a ordem dos links entre os elementos de modelo.  
+- Quando o mouse é liberado, MouseAction.MouseUp reorganiza a ordem dos links entre os elementos de modelo.  
   
--   A alteração da ordem de função é acionada uma regra que atualiza a exibição. Esse comportamento já está definido e nenhum código adicional é necessário.  
+- A alteração da ordem de função é acionada uma regra que atualiza a exibição. Esse comportamento já está definido e nenhum código adicional é necessário.  
   
 ```csharp  
 using Microsoft.VisualStudio.Modeling;  

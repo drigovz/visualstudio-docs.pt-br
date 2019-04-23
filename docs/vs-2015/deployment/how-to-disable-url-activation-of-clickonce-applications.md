@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c22128d20bf83a8c6f2295b79653eabb3439c4b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 345e58b2c2a783bc9ffda8b915bf8baa66ad375a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928818"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046962"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Como: Desabilitar a ativação de URL de aplicativos ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ Normalmente, um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativ
   
 #### <a name="to-disable-url-activation-for-your-application"></a>Para desabilitar a ativação de URL para seu aplicativo  
   
-1.  Abra o manifesto de implantação no MageUI.exe. Se você não ainda tiver criado uma, siga as etapas em [passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+1. Abra o manifesto de implantação no MageUI.exe. Se você não ainda tiver criado uma, siga as etapas em [passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
-2.  Selecione o **opções de implantação** guia.  
+2. Selecione o **opções de implantação** guia.  
   
-3.  Desmarque a **executar o aplicativo depois de instalar automaticamente** caixa de seleção.  
+3. Desmarque a **executar o aplicativo depois de instalar automaticamente** caixa de seleção.  
   
-4.  Salve e assinar o manifesto.  
+4. Salve e assinar o manifesto.  
   
 ## <a name="see-also"></a>Consulte também  
  [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)

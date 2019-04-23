@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1626c9c027b12d6a8df8d3169e7d79cefba66006
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659612"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054775"
 ---
 # <a name="query-datasets"></a>Consultar conjuntos de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Para procurar registros específicos em um conjunto de dados, use o método Find
   
 #### <a name="to-find-a-row-in-a-typed-dataset-with-a-primary-key-value"></a>Para localizar uma linha em um dataset digitado com um valor de chave primária  
   
--   Para localizar uma linha, chamar fortemente tipado `FindBy` método que usa a chave primária da tabela.  
+- Para localizar uma linha, chamar fortemente tipado `FindBy` método que usa a chave primária da tabela.  
   
      No exemplo a seguir, o `CustomerID` coluna é a chave primária do `Customers` tabela. Isso significa que o gerado `FindBy` método é `FindByCustomerID`. O exemplo mostra como atribuir um determinado <xref:System.Data.DataRow> a uma variável usando o gerado `FindBy` método.  
   
@@ -42,7 +42,7 @@ Para procurar registros específicos em um conjunto de dados, use o método Find
   
 #### <a name="to-find-a-row-in-an-untyped-dataset-with-a-primary-key-value"></a>Para localizar uma linha em um conjunto de dados sem tipo com um valor de chave primária  
   
--   Chame o <xref:System.Data.DataRowCollection.Find%2A> método de um <xref:System.Data.DataRowCollection> coleção, passando a chave primária como um parâmetro.  
+- Chame o <xref:System.Data.DataRowCollection.Find%2A> método de um <xref:System.Data.DataRowCollection> coleção, passando a chave primária como um parâmetro.  
   
      O exemplo a seguir mostra como declarar uma nova linha chamada `foundRow` e atribua a ela o valor de retorno de <xref:System.Data.DataRowCollection.Find%2A> método. Se a chave primária for encontrada, o conteúdo do índice da coluna 1 é exibido em uma caixa de mensagem.  
   
@@ -53,7 +53,7 @@ Para procurar registros específicos em um conjunto de dados, use o método Find
   
 #### <a name="to-find-rows-based-on-the-values-in-any-column"></a>Para localizar linhas com base nos valores em qualquer coluna  
   
--   Tabelas de dados são criadas com o<xref:System.Data.DataTable.Select%2A> método, que retorna uma matriz de <xref:System.Data.DataRow>s com base na expressão passada para o <xref:System.Data.DataTable.Select%2A> método. Para obter mais informações sobre como criar expressões válidas, consulte a seção "Sintaxe da expressão" da página o <xref:System.Data.DataColumn.Expression%2A> propriedade.  
+- Tabelas de dados são criadas com o<xref:System.Data.DataTable.Select%2A> método, que retorna uma matriz de <xref:System.Data.DataRow>s com base na expressão passada para o <xref:System.Data.DataTable.Select%2A> método. Para obter mais informações sobre como criar expressões válidas, consulte a seção "Sintaxe da expressão" da página o <xref:System.Data.DataColumn.Expression%2A> propriedade.  
   
      O exemplo a seguir mostra como usar o <xref:System.Data.DataTable.Select%2A> método da <xref:System.Data.DataTable> para localizar linhas específicas.  
   
@@ -82,14 +82,14 @@ Além disso, ambas as tabelas precisam ser preenchida com dados para todos os re
   
 #### <a name="to-return-the-child-records-of-a-selected-parent-record"></a>Para retornar os registros de um registro pai selecionado filho  
   
--   Chame o <xref:System.Data.DataRow.GetChildRows%2A> método de um determinado `Customers` dados de linha e retornar uma matriz de linhas do `Orders` tabela:  
+- Chame o <xref:System.Data.DataRow.GetChildRows%2A> método de um determinado `Customers` dados de linha e retornar uma matriz de linhas do `Orders` tabela:  
   
      [!code-csharp[VbRaddataDatasets#6](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#6)]
      [!code-vb[VbRaddataDatasets#6](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#6)]  
   
 #### <a name="to-return-the-parent-record-of-a-selected-child-record"></a>Para retornar o registro pai de um registro filho selecionado  
   
--   Chame o <xref:System.Data.DataRow.GetParentRow%2A> método de um determinado `Orders` linha de dados e retornar uma única linha do `Customers` tabela:  
+- Chame o <xref:System.Data.DataRow.GetParentRow%2A> método de um determinado `Orders` linha de dados e retornar uma única linha do `Customers` tabela:  
   
      [!code-csharp[VbRaddataDatasets#7](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs#7)]
      [!code-vb[VbRaddataDatasets#7](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb#7)]

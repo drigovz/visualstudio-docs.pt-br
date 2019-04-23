@@ -12,12 +12,12 @@ ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2392f77ef3b78176dd33defd012b828d7a918b5b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e370f48559638e8c68ea5ac8e04eca6960983475
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922939"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046080"
 ---
 # <a name="localizing-vsix-packages"></a>Localizando pacotes do VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +53,9 @@ Você pode localizar um pacote VSIX criando um arquivo Extension.vsixlangpack pa
   
 #### <a name="to-set-the-include-in-vsix-property"></a>Para definir a incluir no Vsix propriedade  
   
-1.  Na **Gerenciador de soluções**, clique no arquivo Extension.vsixlangpack e, em seguida, clique em **propriedades**.  
+1. Na **Gerenciador de soluções**, clique no arquivo Extension.vsixlangpack e, em seguida, clique em **propriedades**.  
   
-2.  Na grade de propriedade, clique em **incluir em Vsix**e defina seu valor como `true`.  
+2. Na grade de propriedade, clique em **incluir em Vsix**e defina seu valor como `true`.  
   
 ## <a name="example"></a>Exemplo  
   

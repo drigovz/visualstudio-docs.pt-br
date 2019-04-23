@@ -18,14 +18,15 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: eed2cc63941f63b3f1d21cac86f907808a072665
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a89898b7f0495e35ed51d6333288b3aa67c45428
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666345"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056742"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>Implantar uma solução do Office usando o Windows Installer
+
 Saiba como criar um instalador do Windows para sua solução do Office usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)].
 
 Usando o Visual Studio para criar um instalador do Windows, você pode implantar uma solução do Office que exige acesso administrativo no computador do usuário final. Por exemplo, você pode usar esse arquivo para instalar uma solução apenas uma vez para todos os usuários de um computador. Você também pode implantar uma solução do Office usando o ClickOnce, mas essa solução deve ser instalada separadamente para cada usuário do computador.
@@ -77,6 +78,7 @@ Para que uma solução possa ser executada nos computadores dos usuários, você
 > Para personalizações em nível de documento, a localização do documento também deve ser confiável. Para obter mais informações, consulte [conceder confiança a documentos](../vsto/granting-trust-to-documents.md).
 
 ## <a name="Obtain"></a>Obter o InstallShield Limited Edition
+
 Você pode criar um arquivo do Windows Installer usando o ISLE (InstallShield Limited Edition), que é gratuito se você instalou o Visual Studio. O ISLE substitui a funcionalidade dos modelos de projeto para instalação e implantação que as versões anteriores do Visual Studio ofereceram.
 
 ### <a name="to-get-installshield-limited-edition"></a>Para obter o InstallShield Limited Edition
@@ -116,6 +118,7 @@ Você pode criar um arquivo do Windows Installer usando o ISLE (InstallShield Li
    Os exemplos deste tópico contêm um projeto de instalação que é denominado **OfficeAddInSetup**. Este tópico se referirá ao projeto em sua solução usando o mesmo nome.
 
 ## <a name="Add"></a>Adicionar a saída do projeto
+
 Você configura a **OfficeAddInSetup** projeto para incluir a saída do seu projeto do Office. Para projetos de suplemento do VSTO, a saída do projeto é somente o assembly da solução. Para os projetos de personalização no nível de documento, a saída do projeto inclui não apenas o assembly da solução, mas também do próprio documento.
 
 ### <a name="to-add-the-project-output"></a>Para adicionar a saída do projeto
@@ -136,7 +139,6 @@ Você configura a **OfficeAddInSetup** projeto para incluir a saída do seu proj
 
 ## <a name="AddD"></a>Adicione os manifestos de aplicativo e implantação
 
-###
 1. No **arquivos de aplicativo** , escolha o **adicionar arquivos** botão.
 
 2. No **aberto** caixa de diálogo, navegue até o diretório de saída da **ExcelAddIn** projeto.
@@ -150,6 +152,7 @@ Você configura a **OfficeAddInSetup** projeto para incluir a saída do seu proj
    ![Os arquivos de saída do seu projeto de instalação. ](../vsto/media/installshield-outputfiles.png "Os arquivos de saída do seu projeto de instalação.")
 
 ## <a name="Configure"></a>Configurar os componentes dependentes como pré-requisitos
+
 Em seu aplicativo de instalação, além dos seguintes componentes, inclua todos os outros componentes que são necessários para que a sua solução seja executada.
 
 - A versão do .NET Framework que a sua solução do Office terá como alvo.
@@ -173,6 +176,7 @@ Em seu aplicativo de instalação, além dos seguintes componentes, inclua todos
 4. Se essa caixa de diálogo for exibida, escolha o **não** botão.
 
 ### <a name="AddToolsForOffice"></a>Adicionar o Visual Studio 2010 Tools for Office Runtime
+
 O **redistribuíveis** página contém um item chamado **Microsoft VSTO 2010 Runtime**, mas ele se refere a uma versão mais antiga do tempo de execução. Portanto, você pode criar manualmente um arquivo de configuração que se refere à versão mais recente. Você deve, em seguida, colocar esse arquivo no mesmo diretório que os arquivos de configuração para todos os outros itens que aparecem na **redistribuíveis** página.
 
 #### <a name="to-add-the-visual-studio-2010-tools-for-office-runtime-as-a-prerequisite"></a>Para adicionar o Visual Studio 2010 Tools for Office runtime como um pré-requisito
@@ -219,7 +223,7 @@ O **redistribuíveis** página contém um item chamado **Microsoft VSTO 2010 Run
 8. No **nome do arquivo** , digite **Visual Studio 2010 Tools for Office prq**e, em seguida, escolha o **salvar** botão.
 
    > [!NOTE]
-   >    Certifique-se de que você adicione **prq** no final do nome do arquivo para identificar o arquivo como um arquivo de pré-requisito.
+   > Certifique-se de que você adicione **prq** no final do nome do arquivo para identificar o arquivo como um arquivo de pré-requisito.
 
 9. Feche o Bloco de Notas.
 
@@ -250,9 +254,10 @@ O **redistribuíveis** página contém um item chamado **Microsoft VSTO 2010 Run
 4. No **definir INSTALLDIR** caixa de diálogo caixa, escolha uma pasta no computador do usuário em que você deseja instalar a solução.
 
    > [!NOTE]
-   >    Você também pode criar subdiretórios na **definir INSTALLDIR** caixa de diálogo, abrindo o menu de atalho para qualquer pasta na lista.
+   > Você também pode criar subdiretórios na **definir INSTALLDIR** caixa de diálogo, abrindo o menu de atalho para qualquer pasta na lista.
 
 ## <a name="ConfigureRegistry"></a>Configurar um suplemento do VSTO
+
 Você pode especificar se deseja que o suplemento do VSTO para ser instalado para todos os usuários do computador (por computador), ou apenas para o usuário que está executando a instalação (por usuário).
 
 Se você quiser oferecer suporte a instalações por computador, crie dois instaladores separados. Você pode dividir os instaladores com base na versão do Office (32 bits e 64 bits) ou na versão do Windows (32 bits e 64 bits) que o usuário está executando.
@@ -313,10 +318,10 @@ As instalações por usuário exigem apenas um instalador independente do Office
 | 64 bits<br /><br /> | **HKEY_LOCAL_MACHINE\SOFTWARE(32-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br />**HKEY_LOCAL_MACHINE\SOFTWARE(64-Bit)\Microsoft\Office\Excel\Addins\SampleCompany.ExcelAddIn**<br /><br /> |
 
    > [!NOTE]
-   >    Um instalador para Windows de 64 bits exige dois caminhos de registro, pois é possível que os usuários executem as versões de 32 bits e 64 bits do Office em um computador que executa o Windows de 64 bits.
+   > Um instalador para Windows de 64 bits exige dois caminhos de registro, pois é possível que os usuários executem as versões de 32 bits e 64 bits do Office em um computador que executa o Windows de 64 bits.
 
    > [!NOTE]
-   >    Como prática recomendada, inicie o nome do seu suplemento do VSTO com o nome da sua empresa. Esta convenção aumenta a chance de que a chave será exclusiva e diminui a chance de conflito com um suplemento do VSTO de outro fornecedor. Os suplementos que têm o mesmo nome podem, por exemplo, substituir as chaves de registro um do outro. Essa abordagem não pode garantir que a chave será única, mas pode reduzir possíveis conflitos de nome.
+   > Como prática recomendada, inicie o nome do seu suplemento do VSTO com o nome da sua empresa. Esta convenção aumenta a chance de que a chave será exclusiva e diminui a chance de conflito com um suplemento do VSTO de outro fornecedor. Os suplementos que têm o mesmo nome podem, por exemplo, substituir as chaves de registro um do outro. Essa abordagem não pode garantir que a chave será única, mas pode reduzir possíveis conflitos de nome.
 
 5. Depois de criar a hierarquia de chaves, abra o menu de atalho para o **Samplecompany** da chave, escolha **New**e, em seguida, escolha **valor de cadeia de caracteres**.
 
@@ -368,6 +373,7 @@ As instalações por usuário exigem apenas um instalador independente do Office
 > Se você criar uma região de formulário personalizada em um suplemento do VSTO para Outlook, você deve criar mais entradas de registro para registrar a região com o Outlook. Para obter mais informações, consulte [regiões do formulário de entradas do registro para o Outlook](../vsto/registry-entries-for-vsto-add-ins.md#OutlookEntries).
 
 ## <a name="ConfigureDocument"></a>Configurar uma personalização no nível de documento
+
 Esta seção se aplica somente se você estiver implantando uma personalização no nível de documento. Se você estiver implantando um suplemento do VSTO, você poderá ir imediatamente para o [compilar o projeto de instalação](#Build) seção.
 
 Personalizações no nível do documento não usam as chaves do registro. Em vez disso, as propriedades personalizadas do documento contêm o local do manifesto de implantação.
@@ -430,14 +436,14 @@ Para modificar as propriedades personalizadas, você deve criar um programa que 
    A lista de eventos aparece em um painel na lateral da tela.
 
    > [!NOTE]
-   >    Apenas alguns eventos que aparecem nessa lista estão disponíveis no InstallShield Limited Edition. Neste procedimento, você executará o programa usando o **caixa de diálogo após o êxito completo da instalação** eventos.
+   > Apenas alguns eventos que aparecem nessa lista estão disponíveis no InstallShield Limited Edition. Neste procedimento, você executará o programa usando o **caixa de diálogo após o êxito completo da instalação** eventos.
 
 8. Na lista de eventos, sob **ações personalizadas durante a instalação**, abra o menu de atalho para o **caixa de diálogo após o êxito completo da instalação** evento e, em seguida, escolha **novo EXE**.
 
    Uma ação personalizada denominada **NewCustomAction1** aparece sob o **caixa de diálogo após o êxito completo da instalação** eventos. Um conjunto de propriedades para a ação personalizada é exibido em um painel ao lado dos eventos.
 
    > [!IMPORTANT]
-   >    Duas **caixa de diálogo após o êxito completo da instalação** eventos aparecem na lista de eventos. Certifique-se de que você escolha a instância das **caixa de diálogo após o êxito completo da instalação** eventos que aparece sob o **ações personalizadas durante a instalação** nó.
+   > Duas **caixa de diálogo após o êxito completo da instalação** eventos aparecem na lista de eventos. Certifique-se de que você escolha a instância das **caixa de diálogo após o êxito completo da instalação** eventos que aparece sob o **ações personalizadas durante a instalação** nó.
 
 9. Na lista para o **local de origem** propriedade, escolha **instalados com o produto**.
 
@@ -468,7 +474,7 @@ Para modificar as propriedades personalizadas, você deve criar um programa que 
 16. Substitua **sua ID da solução** com a ID da solução que você copiou para a área de transferência.
 
    > [!IMPORTANT]
-   >    Teste o seu instalador para verificar se o aplicativo de console que essa ação personalizada executa pode acessar os documentos no diretório [INSTALLDIR]. Alguns diretórios no computador do usuário podem exigir acesso administrativo (por exemplo, o diretório de arquivos de programas). Se você estiver implantando sua solução para um diretório que exige acesso administrativo, abra o **propriedades** caixa de diálogo da *setup.exe* do arquivo, escolha o **compatibilidade** guia e, em seguida, selecione o **executar este programa como administrador** caixa de seleção antes de distribuir o instalador. Se você não quiser que os usuários executem o programa de instalação com permissões administrativas, defina a propriedade [INSTALLDIR] para um diretório ao qual o usuário provavelmente tem acesso, como o **documentos** directory. Para obter mais informações, consulte o [especifique onde deseja instalar a solução no computador do usuário](#Location) seção deste tópico.
+   > Teste o seu instalador para verificar se o aplicativo de console que essa ação personalizada executa pode acessar os documentos no diretório [INSTALLDIR]. Alguns diretórios no computador do usuário podem exigir acesso administrativo (por exemplo, o diretório de arquivos de programas). Se você estiver implantando sua solução para um diretório que exige acesso administrativo, abra o **propriedades** caixa de diálogo da *setup.exe* do arquivo, escolha o **compatibilidade** guia e, em seguida, selecione o **executar este programa como administrador** caixa de seleção antes de distribuir o instalador. Se você não quiser que os usuários executem o programa de instalação com permissões administrativas, defina a propriedade [INSTALLDIR] para um diretório ao qual o usuário provavelmente tem acesso, como o **documentos** directory. Para obter mais informações, consulte o [especifique onde deseja instalar a solução no computador do usuário](#Location) seção deste tópico.
 
 ## <a name="Build"></a>Compile o projeto de instalação
 

@@ -15,12 +15,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e7528e8a589cb64e4debc8c1e119f8f59a6244c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8b5dc42932334b54bb46664da14af7df8dcfe131
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924018"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050773"
 ---
 # <a name="how-to-create-a-policyactivity-rule-set-legacy"></a>Como: Criar uma regra de PolicyActivity definida (herdado)
 Este tópico descreve como criar um conjunto de regras de atividade de política usando o novas [!INCLUDE[wfd1](../includes/wfd1-md.md)] que direciona [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -32,33 +32,33 @@ Este tópico descreve como criar um conjunto de regras de atividade de política
   
 ### <a name="to-select-or-create-a-rule-set-for-a-policyactivity-activity"></a>Para selecionar ou criar uma regra definida para uma atividade de PolicyActivity  
   
-1.  Clique com botão direito do [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)e, em seguida, clique em **propriedades** para abrir o **propriedades** janela.  
+1. Clique com botão direito do [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019)e, em seguida, clique em **propriedades** para abrir o **propriedades** janela.  
   
-2.  Clique o **RuleSetReference** propriedade.  
+2. Clique o **RuleSetReference** propriedade.  
   
-3.  Realize um dos seguintes procedimentos:  
+3. Realize um dos seguintes procedimentos:  
   
-    -   Clique o **RuleSetReference** elipses **[...]** e, em seguida, selecione uma regra existente definida de [selecione Definir caixa de diálogo regra (herdado)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Então vá para a etapa 10.  
-  
-         - ou -  
-  
-    -   Digite um nome para um conjunto de regras. Clique o **RuleSetReference** elipses **[...]** e, em seguida, selecione **edite** no [selecione Definir caixa de diálogo regra (herdado)](../workflow-designer/select-rule-set-dialog-box-legacy.md).  
+    - Clique o **RuleSetReference** elipses **[...]** e, em seguida, selecione uma regra existente definida de [selecione Definir caixa de diálogo regra (herdado)](../workflow-designer/select-rule-set-dialog-box-legacy.md). Então vá para a etapa 10.  
   
          - ou -  
   
-    -   Digite um nome para um conjunto de regras. Expanda o **RuleSetReference** propriedade e selecione as reticências **[...]**  no **definição de conjunto de regras** propriedade.  
+    - Digite um nome para um conjunto de regras. Clique o **RuleSetReference** elipses **[...]** e, em seguida, selecione **edite** no [selecione Definir caixa de diálogo regra (herdado)](../workflow-designer/select-rule-set-dialog-box-legacy.md).  
+  
+         - ou -  
+  
+    - Digite um nome para um conjunto de regras. Expanda o **RuleSetReference** propriedade e selecione as reticências **[...]**  no **definição de conjunto de regras** propriedade.  
   
          O [regra de Editor de caixa de diálogo conjunto (herdado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md) é aberta.  
   
-4.  No [regra de Editor de caixa de diálogo conjunto (herdado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md), clique em **Adicionar regra** para adicionar uma nova regra para o conjunto de regras.  
+4. No [regra de Editor de caixa de diálogo conjunto (herdado)](../workflow-designer/rule-set-editor-dialog-box-legacy.md), clique em **Adicionar regra** para adicionar uma nova regra para o conjunto de regras.  
   
-5.  Insira o **nome**, **prioridade**, e **reavaliação** propriedades, ou mantenha os valores padrão.  
+5. Insira o **nome**, **prioridade**, e **reavaliação** propriedades, ou mantenha os valores padrão.  
   
-6.  Digite o texto para o **condição**.  
+6. Digite o texto para o **condição**.  
   
-7.  Digite o texto para o **ações Then** e o **ações Else**.  
+7. Digite o texto para o **ações Then** e o **ações Else**.  
   
-8.  Clique em **Adicionar regra** novamente para adicionar outra regra.  
+8. Clique em **Adicionar regra** novamente para adicionar outra regra.  
   
 9. Ao terminar, clique em **OK**.  
   

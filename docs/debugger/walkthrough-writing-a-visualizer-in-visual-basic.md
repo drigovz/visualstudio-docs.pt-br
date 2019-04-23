@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d30e789d0ae3fa3e717be9739b94439a7d6a31a2
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: be3fb721fd058f127b4d361c769d4cdfdc1e4b92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584539"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050883"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Passo a passo: Como escrever um visualizador em Visual Basic
 Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]. O visualizador que você criará neste passo a passo exibe o conteúdo de uma cadeia de caracteres usando uma caixa de mensagem do Windows Forms. Esse visualizador simples de cadeia de caracteres é um exemplo básico para mostrar como você pode criar visualizadores para outros tipos de dados mais aplicáveis a seus projetos.
@@ -106,15 +106,15 @@ O código do visualizador deve ser colocado em uma DLL, que será lido pelo depu
 
 ### <a name="to-add-systemwindowsforms"></a>Para adicionar System.Windows.Forms
 
-1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e, no menu de atalho, clique em **Adicionar Referência**.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e, no menu de atalho, clique em **Adicionar Referência**.
 
 2. No **adicionar referência** caixa de diálogo do **procurar** guia, selecione **procurar**e localizar a dll.
 
     Você pode encontrar a DLL no *C:\Windows\Microsoft.NET\Framework\v4.0.30319*.
 
-3.  Clique em **OK**.
+3. Clique em **OK**.
 
-4.  Em DebuggerSide.cs, adicione a seguinte instrução às instruções `Imports`:
+4. Em DebuggerSide.cs, adicione a seguinte instrução às instruções `Imports`:
 
     ```vb
     Imports System.Windows.Forms
@@ -125,7 +125,7 @@ O código do visualizador deve ser colocado em uma DLL, que será lido pelo depu
 
 ### <a name="to-show-the-visualizer-output-in-a-dialog-box"></a>Para mostrar a saída do visualizador em uma caixa de diálogo
 
-1.  No método `Show`, adicione a seguinte linha de código:
+1. No método `Show`, adicione a seguinte linha de código:
 
     ```vb
     MessageBox.Show(objectProvider.GetObject().ToString())
@@ -133,20 +133,20 @@ O código do visualizador deve ser colocado em uma DLL, que será lido pelo depu
 
      Esse código de exemplo não inclui tratamento de erros. Você deve incluir o tratamento de erros em um visualizador real ou qualquer outro tipo de aplicativo.
 
-2.  No menu **Compilar**, clique em **Compilar MyFirstVisualizer**. O projeto deve ser compilado com êxito. Corrija os erros de compilação antes de continuar.
+2. No menu **Compilar**, clique em **Compilar MyFirstVisualizer**. O projeto deve ser compilado com êxito. Corrija os erros de compilação antes de continuar.
 
 ## <a name="add-the-necessary-attribute"></a>Adicionar o atributo necessário
  Esse é o final do código do lado do depurador. Há mais uma etapa, porém: o atributo que diz ao lado a ser depurado qual coleção de classes integra o visualizador.
 
 ### <a name="to-add-the-debugee-side-code"></a>Para adicionar o código do lado a ser depurado
 
-1.  Adicione o seguinte código do atributo a DebuggerSide.vb, depois das instruções `Imports`, mas antes de `namespace MyFirstVisualizer`:
+1. Adicione o seguinte código do atributo a DebuggerSide.vb, depois das instruções `Imports`, mas antes de `namespace MyFirstVisualizer`:
 
     ```vb
     <Assembly: System.Diagnostics.DebuggerVisualizer(GetType(MyFirstVisualizer.DebuggerSide), GetType(VisualizerObjectSource), Target:=GetType(System.String), Description:="My First Visualizer")>
     ```
 
-2.  No menu **Compilar**, clique em **Compilar MyFirstVisualizer**. O projeto deve ser compilado com êxito. Corrija os erros de compilação antes de continuar.
+2. No menu **Compilar**, clique em **Compilar MyFirstVisualizer**. O projeto deve ser compilado com êxito. Corrija os erros de compilação antes de continuar.
 
 ## <a name="create-a-test-harness"></a>Criar um agente de teste
  Neste momento, o primeiro visualizador é concluído. Se você seguiu as etapas corretamente, poderá compilar o visualizador e instalá-lo no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Antes de instalar um visualizador no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], no entanto, você deverá testá-lo para garantir que seja executado corretamente. Agora você criará um teste automatizado para executar o visualizador sem instalá-lo no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -183,17 +183,17 @@ O código do visualizador deve ser colocado em uma DLL, que será lido pelo depu
 
 ### <a name="to-add-necessary-references-to-mytestconsole"></a>Para adicionar as referências necessárias a MyTestConsole
 
-1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse em **MyTestConsole** e, no menu de atalho, clique em **Adicionar Referência**.
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **MyTestConsole** e, no menu de atalho, clique em **Adicionar Referência**.
 
-2.  No **adicionar referência** caixa de diálogo do **procurar** , clique em DebuggerVisualizers.
+2. No **adicionar referência** caixa de diálogo do **procurar** , clique em DebuggerVisualizers.
 
-3.  Clique em **OK**.
+3. Clique em **OK**.
 
-4.  Clique com o botão direito do mouse em **MyTestConsole** e, em seguida, clique em **Adicionar Referência** novamente.
+4. Clique com o botão direito do mouse em **MyTestConsole** e, em seguida, clique em **Adicionar Referência** novamente.
 
-5.  Na caixa de diálogo **Adicionar Referência**, clique na guia **Projetos** e, em seguida, selecione MyFirstVisualizer.
+5. Na caixa de diálogo **Adicionar Referência**, clique na guia **Projetos** e, em seguida, selecione MyFirstVisualizer.
 
-6.  Clique em **OK**.
+6. Clique em **OK**.
 
 ## <a name="finish-your-test-harness-and-test-your-visualizer"></a>Conclua seu agente de teste e teste o visualizador
  Agora, você adicionará o código para concluir um teste automatizado.
