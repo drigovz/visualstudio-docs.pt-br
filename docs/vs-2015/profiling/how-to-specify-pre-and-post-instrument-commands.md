@@ -1,5 +1,5 @@
 ---
-title: Como especificar comandos pré e pós-instrumento | Microsoft Docs
+title: 'Como: Especificar comandos pré e pós-instrumento | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,14 +15,14 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b548265959ed2be10feb1096d7dc92d95a6cfed0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1485ee6f0737363bc6ab9105b70c93acef866c82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792819"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038337"
 ---
-# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Como especificar comandos pré e pós-instrumento
+# <a name="how-to-specify-pre--and-post-instrument-commands"></a>Como: Especificar comandos pré e pós-instrumento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode especificar comandos que são executados antes ou depois que os binários em uma sessão de desempenho são instrumentados. Qualquer comando que pode ser emitido na linha de comando pode ser especificado como um evento pré-instrumento ou pós-instrumento. Por exemplo, é possível especificar comandos que automatizam a desistência de um assembly com uma chave de nome forte em um arquivo de lote que é executado depois que os binários são instrumentados.  
@@ -53,39 +53,39 @@ Você pode especificar comandos que são executados antes ou depois que os biná
   
 ### <a name="to-specify-pre-instrument-commands"></a>Para especificar comandos pré-instrumentos  
   
-1.  Execute uma das seguintes etapas:  
+1. Execute uma das seguintes etapas:  
   
-    -   Para especificar comandos pré-instrumentos para todos os binários em uma sessão de desempenho, selecione o nó da sessão de desempenho no **Gerenciador de Desempenho** e, em seguida, clique com botão direito do mouse e selecione **Propriedades**.  
+    - Para especificar comandos pré-instrumentos para todos os binários em uma sessão de desempenho, selecione o nó da sessão de desempenho no **Gerenciador de Desempenho** e, em seguida, clique com botão direito do mouse e selecione **Propriedades**.  
   
-    -   Para especificar comandos pré-instrumentos para um binário específico, clique com o botão direito do mouse no nome do binário na lista de **Destinos** da sessão de desempenho e, em seguida, selecione **Propriedades**.  
+    - Para especificar comandos pré-instrumentos para um binário específico, clique com o botão direito do mouse no nome do binário na lista de **Destinos** da sessão de desempenho e, em seguida, selecione **Propriedades**.  
   
-2.  Nas **Páginas de Propriedades**, clique em **Instrumentação**.  
+2. Nas **Páginas de Propriedades**, clique em **Instrumentação**.  
   
-3.  Digite o comando na caixa de texto **Linha de comando** em **Eventos Pré-Instrumento**.  
+3. Digite o comando na caixa de texto **Linha de comando** em **Eventos Pré-Instrumento**.  
   
     > [!NOTE]
     >  Você pode clicar no botão de reticências **(...)** ao lado da caixa **Linha de comando** para navegar até o arquivo apropriado .exe, .cmd ou .bat e selecioná-lo.  
   
-4.  Clique em **OK**.  
+4. Clique em **OK**.  
   
      Para desabilitar a execução do comando sem removê-lo, selecione a caixa de seleção **Excluir da instrumentação**. Para modificar as configurações do vinculador ou do compilador, use as páginas de propriedades do projeto.  
   
 ### <a name="to-specify-post-instrument-commands"></a>Para especificar comandos pós-instrumentos  
   
-1.  Execute uma das seguintes etapas:  
+1. Execute uma das seguintes etapas:  
   
-    -   Para especificar comandos pós-instrumentos para todos os binários em uma sessão de desempenho, selecione o nó da sessão de desempenho no **Gerenciador de Desempenho** e, em seguida, clique com botão direito do mouse e selecione **Propriedades**.  
+    - Para especificar comandos pós-instrumentos para todos os binários em uma sessão de desempenho, selecione o nó da sessão de desempenho no **Gerenciador de Desempenho** e, em seguida, clique com botão direito do mouse e selecione **Propriedades**.  
   
-    -   Para especificar comandos pós-instrumentos para um binário específico, clique com o botão direito do mouse no nome do binário na lista de **Destinos** da sessão de desempenho e, em seguida, selecione **Propriedades**.  
+    - Para especificar comandos pós-instrumentos para um binário específico, clique com o botão direito do mouse no nome do binário na lista de **Destinos** da sessão de desempenho e, em seguida, selecione **Propriedades**.  
   
-2.  Nas **Páginas de Propriedades**, clique em **Instrumentação**.  
+2. Nas **Páginas de Propriedades**, clique em **Instrumentação**.  
   
-3.  Digite o comando na caixa de texto **Linha de comando** em **Eventos Pós-Instrumento**.  
+3. Digite o comando na caixa de texto **Linha de comando** em **Eventos Pós-Instrumento**.  
   
     > [!NOTE]
     >  Você pode clicar no botão de reticências **(...)** ao lado da caixa **Linha de comando** para navegar até o arquivo apropriado .exe, .cmd ou .bat e selecioná-lo.  
   
-4.  Clique em **OK**.  
+4. Clique em **OK**.  
   
      Para desabilitar a execução do comando sem removê-lo, selecione a caixa de seleção **Excluir da instrumentação**. Para modificar as configurações do vinculador ou do compilador, use as páginas de propriedades do projeto.  
   

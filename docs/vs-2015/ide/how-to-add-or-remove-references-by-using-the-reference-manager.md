@@ -23,14 +23,14 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a73beba7ee41c52c60a4aaa3864a7ef112784dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c7161d8115f8cc99f830293cdf5f957a2264f5a0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756980"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041176"
 ---
-# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como adicionar ou remover referências usando o Gerenciador de Referências
+# <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como: Adicionar ou remover referências usando o Gerenciador de referências
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 É possível usar a caixa de diálogo **Gerenciador de Referências** para adicionar e gerenciar referências aos componentes que você, a Microsoft ou outra empresa desenvolveram. Se você estiver desenvolvendo um aplicativo Universal do Windows, o projeto referenciará automaticamente todas as DLLs corretas do SDK do Windows. Se estiver desenvolvendo um aplicativo .NET, o projeto referenciará mscorlib.dll automaticamente. Algumas APIs do .NET são expostas em componentes que precisam ser adicionados manualmente. As referências a componentes COM ou a componentes personalizados devem ser adicionadas manualmente.  
@@ -45,13 +45,13 @@ ms.locfileid: "54756980"
   
    O **Gerenciador de Referências** é aberto e lista as referências disponíveis por grupo. O tipo de projeto determina qual dos seguintes grupos são exibidos:  
   
--   Assemblies, com os subgrupos de Framework e Extensions.  
+- Assemblies, com os subgrupos de Framework e Extensions.  
   
--   Solução, com o subgrupo de Projetos.  
+- Solução, com o subgrupo de Projetos.  
   
--   Windows, com os subgrupos Core e Extensions. É possível explorar as referências no SDK do Windows ou nos SDKs de extensão usando o **Pesquisador de Objetos**.  
+- Windows, com os subgrupos Core e Extensions. É possível explorar as referências no SDK do Windows ou nos SDKs de extensão usando o **Pesquisador de Objetos**.  
   
--   Procurar, com o subgrupo Recente.  
+- Procurar, com o subgrupo Recente.  
   
 ## <a name="assemblies-tab"></a>Guia Assemblies  
  A guia **Assemblies** lista todos os assemblies do .NET Framework que estão disponíveis para referência. A guia **Assemblies** não lista os assemblies do GAC (cache de assembly global), pois os assemblies no GAC fazem parte do ambiente de tempo de execução. Se você implantar um aplicativo que contém uma referência a um assembly registrado no GAC, o assembly não será implantado ou copiado com o aplicativo, independentemente da configuração do Local da Cópia. Para obter mais informações, consulte [Referências do projeto](http://go.microsoft.com/fwlink/?LinkId=238512).  
@@ -66,13 +66,13 @@ ms.locfileid: "54756980"
   
 1. O Framework lista todos os assemblies que constituem o Framework de destino.  
   
-   -   Os assemblies anunciados estão no Framework completo e estão enumerados na lista de Frameworks quando o projeto tem como objetivo um perfil do Framework de destino. Os assemblies anunciados são cinzas para diferenciá-los dos assemblies que existem no perfil do Framework de destino do projeto. Por exemplo, se um projeto tem como objetivo o .NET Framework 4 Client, a lista do Framework exibirá assemblies anunciados do .NET Framework 4. Quando um usuário adiciona um assembly anunciado, o usuário é notificado de que, depois que a caixa de diálogo **Gerenciador de Referências** for fechada, o projeto terá o destino redefinido como o .NET Framework 4 e o assembly anunciado será adicionado.  
+   - Os assemblies anunciados estão no Framework completo e estão enumerados na lista de Frameworks quando o projeto tem como objetivo um perfil do Framework de destino. Os assemblies anunciados são cinzas para diferenciá-los dos assemblies que existem no perfil do Framework de destino do projeto. Por exemplo, se um projeto tem como objetivo o .NET Framework 4 Client, a lista do Framework exibirá assemblies anunciados do .NET Framework 4. Quando um usuário adiciona um assembly anunciado, o usuário é notificado de que, depois que a caixa de diálogo **Gerenciador de Referências** for fechada, o projeto terá o destino redefinido como o .NET Framework 4 e o assembly anunciado será adicionado.  
   
-   -   Os projetos para aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] contêm referências a todos os assemblies do [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] de destino por padrão na criação do projeto. Em projetos gerenciados, um nó somente leitura na pasta Referências em **Gerenciador de Soluções** indica a referência a todo o Framework. Consequentemente, a guia Framework não enumerará nenhum dos assemblies do Framework e exibirá a seguinte mensagem: “Todos os assemblies do Framework já estão referenciados. Use o Pesquisador de Objetos para explorar as referências no Framework.” Para projetos de área de trabalho, a guia Framework enumera os assemblies do Framework de destino e o usuário deve adicionar as referências exigidas pelo aplicativo.  
+   - Os projetos para aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] contêm referências a todos os assemblies do [!INCLUDE[net_win8_profile](../includes/net-win8-profile-md.md)] de destino por padrão na criação do projeto. Em projetos gerenciados, um nó somente leitura na pasta Referências em **Gerenciador de Soluções** indica a referência a todo o Framework. Da mesma forma, a guia Framework não enumerará nenhum dos assemblies do Framework e exibirá a seguinte mensagem: "Todos os assemblies do Framework já estão referenciados. Use o Pesquisador de Objetos para explorar as referências no Framework.” Para projetos de área de trabalho, a guia Framework enumera os assemblies do Framework de destino e o usuário deve adicionar as referências exigidas pelo aplicativo.  
   
 2. As extensões listam todos os assemblies que os fornecedores externos de componentes e controles desenvolveram para estender o Framework de destino. Dependendo da finalidade do aplicativo do usuário, esses assemblies podem ser necessários.  
   
-   -   As extensões são populadas enumerando-se os assemblies registrados nos seguintes locais:  
+   - As extensões são populadas enumerando-se os assemblies registrados nos seguintes locais:  
   
        ```  
        32-bit machine:  
@@ -88,17 +88,17 @@ ms.locfileid: "54756980"
   
    Alguns componentes na lista podem não ser exibidos, dependendo da versão [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] do projeto. Isso pode ocorrer nas seguintes condições:  
   
--   Um componente que usa uma versão recente do .NET Framework não é compatível com um projeto que tem uma versão anterior do .NET Framework como destino.  
+- Um componente que usa uma versão recente do .NET Framework não é compatível com um projeto que tem uma versão anterior do .NET Framework como destino.  
   
-     Para obter informações sobre como alterar a versão de destino do .NET Framework de um projeto, consulte [Como definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
+     Para obter informações sobre como alterar a versão de destino do .NET Framework de um projeto, confira [Como: Direcionar a uma versão do .NET Framework](../ide/how-to-target-a-version-of-the-dotnet-framework.md).  
   
--   Um componente que usa [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] não é compatível com um projeto que tem [!INCLUDE[net_v45](../includes/net-v45-md.md)] como destino.  
+- Um componente que usa [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)] não é compatível com um projeto que tem [!INCLUDE[net_v45](../includes/net-v45-md.md)] como destino.  
   
      Ao criar um novo aplicativo, alguns projetos têm [!INCLUDE[net_v45](../includes/net-v45-md.md)] como destino por padrão. Para obter mais informações, consulte [.NET Framework Client Profile](http://msdn.microsoft.com/library/f0219919-1f02-4588-8704-327a62fd91f1).  
   
--   Você deve evitar adicionar referências de arquivo às saídas de outro projeto na mesma solução, porque essa ação poderá causar erros de compilação. Em vez disso, use a guia **Projetos** da caixa de diálogo **Adicionar Referência** para criar referências projeto a projeto. Essa ação facilita o desenvolvimento em equipe, permitindo um melhor gerenciamento das bibliotecas de classes criadas nos projetos. Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md).  
+- Você deve evitar adicionar referências de arquivo às saídas de outro projeto na mesma solução, porque essa ação poderá causar erros de compilação. Em vez disso, use a guia **Projetos** da caixa de diálogo **Adicionar Referência** para criar referências projeto a projeto. Essa ação facilita o desenvolvimento em equipe, permitindo um melhor gerenciamento das bibliotecas de classes criadas nos projetos. Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md).  
   
--   > [!NOTE]
+- > [!NOTE]
     >  No Visual Studio 2015, uma referência de arquivo, em vez de uma referência de projeto é criada se a versão de destino do .NET Framework de um projeto é a versão 4.5, e a versão de destino de outro projeto é a versão 2, 3, 3.5 ou 4.0.  
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>Para exibir um assembly na caixa de diálogo Adicionar Referência  
@@ -196,9 +196,9 @@ ms.locfileid: "54756980"
   
  Ao fazer uma referência de arquivo a um WinMD, o layout previsto é que os arquivos *FileName*.winmd, *FileName*.dll e *FileName*.pri sejam colocados um ao lado do outro. Se você referenciar um WinMD nos seguintes cenários, um conjunto incompleto de arquivos será copiado no diretório de saída do projeto e, consequentemente, falhas de compilação e de tempo de execução ocorrerão.  
   
--   **Componente nativo**: um projeto nativo criará um WinMD para cada conjunto não contínuo de namespaces e uma DLL que consiste na implementação. O WinMDs terá nomes distintos. Ao fazer referência a esse arquivo de componente nativo, o MSBuild não reconhecerá que os WinMDs nomeados de forma diferente formam um componente. Consequentemente, somente o *FileName*.dll e *FileName*.winmd de nome idêntico serão copiados, e ocorrerão erros de tempo de execução. Para resolver esse problema, crie uma SDK de Extensão. Para obter mais informações, consulte [Criando um Software Development Kit](../extensibility/creating-a-software-development-kit.md).  
+- **Componente nativo**: um projeto nativo criará um WinMD para cada conjunto não contínuo de namespaces e uma DLL que consiste na implementação. O WinMDs terá nomes distintos. Ao fazer referência a esse arquivo de componente nativo, o MSBuild não reconhecerá que os WinMDs nomeados de forma diferente formam um componente. Consequentemente, somente o *FileName*.dll e *FileName*.winmd de nome idêntico serão copiados, e ocorrerão erros de tempo de execução. Para resolver esse problema, crie uma SDK de Extensão. Para obter mais informações, consulte [Criando um Software Development Kit](../extensibility/creating-a-software-development-kit.md).  
   
--   **Consumindo controles**: no mínimo, um controle XAML consiste em um *FileName*.winmd, *FileName*.dll, *FileName*.pri, *XamlName*.xaml e *ImageName*.jpg. Quando o projeto é compilado, os arquivos de recursos associados à referência de arquivo não serão copiados no diretório de saída do projeto, e apenas *FileName*.winmd, *FileName*.dll e *FileName*.pri serão copiados. Um erro de build é registrado para informar ao usuário que os recursos *XamlName*.xaml e *ImageName*.jpg estão ausentes. Para ter êxito, o usuário precisará copiar manualmente esses arquivos de recurso no diretório de saída do projeto para a compilação e a depuração/tempo de execução. Para resolver esse problema, crie um SDK de Extensão seguindo as etapas em [Criando um Software Development Kit](../extensibility/creating-a-software-development-kit.md) ou edite o arquivo de projeto para adicionar a seguinte propriedade:  
+- **Consumindo controles**: no mínimo, um controle XAML consiste em um *FileName*.winmd, *FileName*.dll, *FileName*.pri, *XamlName*.xaml e *ImageName*.jpg. Quando o projeto é compilado, os arquivos de recursos associados à referência de arquivo não serão copiados no diretório de saída do projeto, e apenas *FileName*.winmd, *FileName*.dll e *FileName*.pri serão copiados. Um erro de build é registrado para informar ao usuário que os recursos *XamlName*.xaml e *ImageName*.jpg estão ausentes. Para ter êxito, o usuário precisará copiar manualmente esses arquivos de recurso no diretório de saída do projeto para a compilação e a depuração/tempo de execução. Para resolver esse problema, crie um SDK de Extensão seguindo as etapas em [Criando um Software Development Kit](../extensibility/creating-a-software-development-kit.md) ou edite o arquivo de projeto para adicionar a seguinte propriedade:  
   
     ```  
     <PropertyGroup>  
@@ -216,5 +216,5 @@ ms.locfileid: "54756980"
  A barra de pesquisa na caixa de diálogo **Gerenciador de Referências** opera na guia que está no foco. Por exemplo, se um usuário digitar “Sistema” na barra de pesquisa enquanto a guia **Solução** estiver no foco, a pesquisa não retornará nenhum resultado a menos que a solução consista em um nome de projeto que contém “Sistema”.  
   
 ## <a name="see-also"></a>Consulte também  
- [(NIB) Como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
+ [NIB como: Adicionar ou remover referências usando a caixa de diálogo Adicionar referência](http://msdn.microsoft.com/3bd75d61-f00c-47c0-86a2-dd1f20e231c9)   
  [Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md)

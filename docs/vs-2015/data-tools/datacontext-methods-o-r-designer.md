@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a57f94758d4289981740ed9c1a8a463a8a97887d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 97a36c38eb0c4a96cb7182300c2f9aca6da68e8a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661588"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042735"
 ---
 # <a name="datacontext-methods-or-designer"></a>Métodos de DataContext (Designer de Objeto Relacional)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ DataContext] (assetId:///T:System.Data.Linq.DataContext?qualifyHint=False & auto
 ## <a name="two-types-of-datacontext-methods"></a>Dois tipos de métodos de DataContext  
  Os métodos de DataContext são os métodos que mapeiam para procedimentos armazenados e funções no banco de dados. Você pode criar e adicionar métodos de DataContext no painel de métodos do [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Há dois tipos distintos de métodos de <xref:System.Data.Linq.DataContext>; os que retornam um ou vários conjuntos de resultados e os que não retornam:  
   
--   Os métodos de <xref:System.Data.Linq.DataContext> que retornam um ou mais conjuntos de resultados:  
+- Os métodos de <xref:System.Data.Linq.DataContext> que retornam um ou mais conjuntos de resultados:  
   
      Crie esse tipo de método <xref:System.Data.Linq.DataContext> quando seu aplicativo precisar apenas executar procedimentos armazenados e funções no banco de dados e retornar os resultados. Para obter mais informações, confira [Como: Criar métodos DataContext mapeados para procedimentos armazenados e funções (O/R Designer)](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md), System.Data.Linq.ISingleResult\<T >, e <xref:System.Data.Linq.IMultipleResults>.  
   
--   Os métodos de <xref:System.Data.Linq.DataContext> que não retornam conjuntos de resultados: como inserções, atualizações e exclusões para uma classe de entidade específica.  
+- Os métodos de <xref:System.Data.Linq.DataContext> que não retornam conjuntos de resultados: como inserções, atualizações e exclusões para uma classe de entidade específica.  
   
      Crie esse tipo de método de <xref:System.Data.Linq.DataContext> quando seu aplicativo precisar executar procedimentos armazenados em vez de usar o comportamento padrão do [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] para salvar dados modificados entre uma classe de entidade e o banco de dados. Para obter mais informações, confira [Como: Atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).  
   

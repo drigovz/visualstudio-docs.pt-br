@@ -11,23 +11,23 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c9c93c83a6385ad45b3f402867b7f7e734447f98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fe03499200d3528a1aed286550191fd9dfcc1451
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925757"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039836"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>Como: Instalar um plug-in de controle do código-fonte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Criando um controle de fonte plug-in envolve três etapas:  
   
-1.  Crie uma DLL com as funções definidas na seção de referência de API de plug-in de controle do código-fonte desta documentação.  
+1. Crie uma DLL com as funções definidas na seção de referência de API de plug-in de controle do código-fonte desta documentação.  
   
-2.  Implemente as funções definidas pelo API de plug-in de controle do código-fonte. Quando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] chamadas para ele, disponibilizar interfaces e caixas de diálogo de plug-in.  
+2. Implemente as funções definidas pelo API de plug-in de controle do código-fonte. Quando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] chamadas para ele, disponibilizar interfaces e caixas de diálogo de plug-in.  
   
-3.  Registre a DLL, tornando as entradas do registro apropriado.  
+3. Registre a DLL, tornando as entradas do registro apropriado.  
   
 ## <a name="integration-with-visual-studio"></a>Integração com o Visual Studio  
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dá suporte a plug-ins de controle de origem que estão em conformidade com a API de plug-in de controle do código-fonte.  
@@ -37,7 +37,7 @@ Criando um controle de fonte plug-in envolve três etapas:
   
 ##### <a name="to-register-the-source-control-plug-in-dll"></a>Para registrar o controle de fonte DLL de plug-in  
   
-1.  Adicione duas entradas na chave HKEY_LOCAL_MACHINE na subchave do SOFTWARE que especifica seu subchave de nome de empresa seguido por seu subchave de nome de produto. O padrão é HKEY_LOCAL_MACHINE\SOFTWARE\\ *[nome da empresa]*\\ *[nome do produto]*\\ *[entrada]* = valor. As duas entradas sempre são chamadas SCCServerName e SCCServerPath. Cada um é uma cadeia de caracteres regular.  
+1. Adicione duas entradas na chave HKEY_LOCAL_MACHINE na subchave do SOFTWARE que especifica seu subchave de nome de empresa seguido por seu subchave de nome de produto. O padrão é HKEY_LOCAL_MACHINE\SOFTWARE\\ *[nome da empresa]*\\ *[nome do produto]*\\ *[entrada]* = valor. As duas entradas sempre são chamadas SCCServerName e SCCServerPath. Cada um é uma cadeia de caracteres regular.  
   
      Por exemplo, se o nome da empresa é a Microsoft e seu produto de controle do código-fonte é chamado SourceSafe, então esse caminho de registro será HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe. Essa subchave a primeira entrada, SCCServerName, é uma cadeia de caracteres legível pelo usuário nomear seu produto. A segunda entrada, SCCServerPath, é o caminho completo para a fonte de controlar a DLL de plug-in IDE deve se conectar. A seguir fornece exemplos de entradas do registro:  
   
@@ -49,13 +49,13 @@ Criando um controle de fonte plug-in envolve três etapas:
     > [!NOTE]
     >  O SCCServerPath é o caminho completo para o plug-in do SourceSafe. O plug-in de controle de origem usará nomes diferentes de produto e da empresa, mas os mesmos caminhos de entrada de registro.  
   
-2.  As seguintes entradas de registro opcional podem ser usadas para modificar o comportamento do seu plug-in de controle de origem. Acesse essas entradas na subchave mesma como SccServerName e SccServerPath.  
+2. As seguintes entradas de registro opcional podem ser usadas para modificar o comportamento do seu plug-in de controle de origem. Acesse essas entradas na subchave mesma como SccServerName e SccServerPath.  
   
-    -   A entrada HideInVisualStudioregistry pode ser usada se você não quiser que seu código-fonte-plug-in controle apareça na lista de seleção de plug-in de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Essa entrada também afetará a comutação automática para o plug-in de controle do código-fonte. Um uso possível para essa entrada é se você fornecer um pacote de controle do código-fonte que substitui o plug-in de controle de origem, mas você deseja tornar mais fácil para o usuário migrar do usando o plug-in para o pacote de controle de origem de controle de origem. Quando o pacote de controle do código-fonte estiver instalado, ele define essa entrada de registro, que oculta o plug-in.  
+    - A entrada HideInVisualStudioregistry pode ser usada se você não quiser que seu código-fonte-plug-in controle apareça na lista de seleção de plug-in de [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Essa entrada também afetará a comutação automática para o plug-in de controle do código-fonte. Um uso possível para essa entrada é se você fornecer um pacote de controle do código-fonte que substitui o plug-in de controle de origem, mas você deseja tornar mais fácil para o usuário migrar do usando o plug-in para o pacote de controle de origem de controle de origem. Quando o pacote de controle do código-fonte estiver instalado, ele define essa entrada de registro, que oculta o plug-in.  
   
          HideInVisualStudio é um valor DWORD e é definido como 1 para ocultar o plug-in ou 0 para mostrar o plug-in. Se a entrada do registro não aparecer, o comportamento padrão é mostrar o plug-in.  
   
-    -   A entrada do registro DisableSccManager pode ser usada para desabilitar ou ocultar a **inicie \<servidor de controle de origem >** opção de menu que normalmente aparece sob o **arquivo**  ->   **Controle de fonte** submenu. Selecionando esse menu opção chamadas a [SccRunScc](../../extensibility/sccrunscc-function.md) função. O plug-in de controle de origem pode não oferecer suporte a um programa externo e, portanto, você talvez queira desativar ou ocultar até mesmo os **inicie** opção de menu.  
+    - A entrada do registro DisableSccManager pode ser usada para desabilitar ou ocultar a **inicie \<servidor de controle de origem >** opção de menu que normalmente aparece sob o **arquivo**  ->   **Controle de fonte** submenu. Selecionando esse menu opção chamadas a [SccRunScc](../../extensibility/sccrunscc-function.md) função. O plug-in de controle de origem pode não oferecer suporte a um programa externo e, portanto, você talvez queira desativar ou ocultar até mesmo os **inicie** opção de menu.  
   
          DisableSccManager é um valor DWORD é definido como 0 para habilitar o **inicie \<servidor de controle de origem >** opção de menu, definido como 1 para desabilitar a opção de menu e definido como 2 para ocultar a opção de menu. Se essa entrada de registro não aparecer, o comportamento padrão é mostrar a opção de menu.  
   
@@ -64,7 +64,7 @@ Criando um controle de fonte plug-in envolve três etapas:
     |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\HideInVisualStudio|1|  
     |HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe\DisableSccManager|1|  
   
-3.  Adicione a subchave SourceCodeControlProvider, sob a chave HKEY_LOCAL_MACHINE na subchave do SOFTWARE.  
+3. Adicione a subchave SourceCodeControlProvider, sob a chave HKEY_LOCAL_MACHINE na subchave do SOFTWARE.  
   
      Sob essa subchave, a entrada do registro ProviderRegKey é definido como uma cadeia de caracteres que representa a subchave que você colocou no registro na etapa 1. O padrão é HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\ProviderRegKey = SOFTWARE\\ *[nome da empresa]*\\ *[nome do produto]*.  
   
@@ -77,7 +77,7 @@ Criando um controle de fonte plug-in envolve três etapas:
     > [!NOTE]
     >  O plug-in de controle de origem usará a mesma subchave e nomes de entrada, mas o valor será diferente.  
   
-4.  Crie uma subchave denominada InstalledSCCProviders SourceCodeControlProvider na subchave e, em seguida, colocar uma entrada sob essa subchave.  
+4. Crie uma subchave denominada InstalledSCCProviders SourceCodeControlProvider na subchave e, em seguida, colocar uma entrada sob essa subchave.  
   
      O nome desta entrada é o nome legível pelo usuário do provedor (o mesmo que o valor especificado para a entrada SCCServerName) e o valor for, mais uma vez, a subchave criada na etapa 1. O padrão é HKEY_LOCAL_MACHINE\SOFTWARE\SourceCodeControlProvider\InstalledSCCProviders\\ *[nome de exibição]* = SOFTWARE\\ *[nome da empresa]* \\ *[nome do produto]*.  
   

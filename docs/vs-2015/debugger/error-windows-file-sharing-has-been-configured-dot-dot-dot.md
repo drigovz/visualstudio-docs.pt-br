@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7664c94f626b639f4d0330b938777d545128847d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 96d65ae615522bcee43ddf5e8181e96eecc0d958
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929409"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040851"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>Erro: O compartilhamento de arquivos do Windows foi configurado...
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,16 +36,16 @@ O compartilhamento de arquivos do Windows foi configurado de forma que você se 
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-1.  Faça logon em seu computador local, o computador do qual você está depurando, usando o outro nome da conta.  
+1. Faça logon em seu computador local, o computador do qual você está depurando, usando o outro nome da conta.  
   
      —ou—  
   
      . Desconecte-se do computador remoto e reconfigure o compartilhamento de arquivos para se conectar ao outro computador usando seu nome de conta:  
   
-    1.  No menu **Iniciar**, aponte para **Acessórios** e clique em **Prompt de Comando**.  
+    1. No menu **Iniciar**, aponte para **Acessórios** e clique em **Prompt de Comando**.  
   
-    2.  No prompt de comando do Windows, digite:  
+    2. No prompt de comando do Windows, digite:  
   
          `net use /delete computer_name`  
   
-    3.  Modificar as configurações de compartilhamento de arquivos usando qualquer um dos métodos documentados na Ajuda do Windows.
+    3. Modificar as configurações de compartilhamento de arquivos usando qualquer um dos métodos documentados na Ajuda do Windows.

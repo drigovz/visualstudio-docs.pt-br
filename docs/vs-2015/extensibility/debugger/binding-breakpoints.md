@@ -10,12 +10,12 @@ ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b94960130ef0b384a7e3a946dcbd2a4e4794252f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: fc7f68093432c96d496921ea593b6e936bad8302
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928822"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039689"
 ---
 # <a name="binding-breakpoints"></a>Associando pontos de interrupção
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ Se o usuário define um ponto de interrupção, talvez, pressionando F9, o IDE F
 ## <a name="setting-a-breakpoint"></a>Definindo um ponto de interrupção  
  Definindo um ponto de interrupção é um processo em duas etapas, porque o código ou os dados afetados pela interrupção podem ainda não estar disponíveis. Primeiro, o ponto de interrupção deve ser descrito e, em seguida, como códigos ou dados se torna disponíveis, ele deve ser associado a esse código ou dados, da seguinte maneira:  
   
-1.  O ponto de interrupção foi solicitado dos mecanismos de depuração relevantes (DEs) e, em seguida, o ponto de interrupção está associado ao código ou dados assim que estiverem disponíveis.  
+1. O ponto de interrupção foi solicitado dos mecanismos de depuração relevantes (DEs) e, em seguida, o ponto de interrupção está associado ao código ou dados assim que estiverem disponíveis.  
   
-2.  A solicitação de ponto de interrupção é enviada para a sessão de depuração, que envia para todos os DEs relevantes. Qualquer Alemanha que escolhe para lidar com o ponto de interrupção cria um correspondente pendente do ponto de interrupção.  
+2. A solicitação de ponto de interrupção é enviada para a sessão de depuração, que envia para todos os DEs relevantes. Qualquer Alemanha que escolhe para lidar com o ponto de interrupção cria um correspondente pendente do ponto de interrupção.  
   
-3.  A sessão de depuração coleta os pontos de interrupção pendentes e envia-os de volta para o pacote de depuração (o componente de depuração do Visual Studio).  
+3. A sessão de depuração coleta os pontos de interrupção pendentes e envia-os de volta para o pacote de depuração (o componente de depuração do Visual Studio).  
   
-4.  O pacote de depuração solicita que a sessão de depuração para associar o ponto de interrupção pendente para o código ou dados. A sessão de depuração envia essa solicitação para todos os DEs relevantes.  
+4. O pacote de depuração solicita que a sessão de depuração para associar o ponto de interrupção pendente para o código ou dados. A sessão de depuração envia essa solicitação para todos os DEs relevantes.  
   
-5.  Se o DE conseguir associar o ponto de interrupção, ele envia que um ponto de interrupção associado a eventos para a sessão de depuração. Caso contrário, ele envia um evento de erro de ponto de interrupção em vez disso.  
+5. Se o DE conseguir associar o ponto de interrupção, ele envia que um ponto de interrupção associado a eventos para a sessão de depuração. Caso contrário, ele envia um evento de erro de ponto de interrupção em vez disso.  
   
 ## <a name="pending-breakpoints"></a>Pontos de interrupção pendentes  
  Um ponto de interrupção pendente pode associar a vários locais de código. Por exemplo, uma linha de código-fonte para um modelo do C++ pode associar a cada sequência de código gerada a partir do modelo. A sessão de depuração pode usar um evento associado do ponto de interrupção para enumerar os contextos de código associados a um ponto de interrupção no momento em que o evento foi enviado. Mais contextos de código podem ser associados mais tarde, para que o DE pode enviar que várias de ponto de interrupção associado a eventos para cada solicitação de associação. No entanto, a DE deve enviar somente um evento de erro de ponto de interrupção por solicitação de associação.  

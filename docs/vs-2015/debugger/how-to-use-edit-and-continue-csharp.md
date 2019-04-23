@@ -1,5 +1,5 @@
 ---
-title: 'Como: Usar Editar e continuar (C#) | Microsoft Docs'
+title: 'Como: Usar Editar e continuar (c#) | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c52540c8e639adcd8ceec6b4da79fb87cff18386
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3095bccd25548e55f750ee11f26d20fdc9fe603d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925343"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042773"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Como: Usar Editar e Continuar (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,23 +35,23 @@ Com a função Editar e Continuar no C#, é possível fazer alterações em seu 
   
 ### <a name="to-invoke-edit-and-continue-automatically"></a>Para invocar a função Editar e Continuar automaticamente  
   
-1.  No modo de interrupção, faça uma alteração no código-fonte.  
+1. No modo de interrupção, faça uma alteração no código-fonte.  
   
-2.  Dos **Debug** menu, clique em **continuar**, **etapa**, ou **definir próxima instrução** ou avaliar uma função em uma janela do depurador.  
+2. Dos **Debug** menu, clique em **continuar**, **etapa**, ou **definir próxima instrução** ou avaliar uma função em uma janela do depurador.  
   
-     O novo código é compilado e a depuração continua com o novo código. Algumas alterações não têm suporte para a função Editar e Continuar. Para obter mais informações, consulte [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md).  
+     O novo código é compilado e a depuração continua com o novo código. Algumas alterações não têm suporte para a função Editar e Continuar. Para obter mais informações, consulte [Supported Code Changes (c#)](../debugger/supported-code-changes-csharp.md).  
   
 ### <a name="to-enabledisable-edit-and-continue"></a>Para habilitar/desabilitar a função Editar e Continuar  
   
-1.  No menu **Ferramentas**, clique em **Opções**.  
+1. No menu **Ferramentas**, clique em **Opções**.  
   
-2.  No **opções** diálogo caixa, expanda o **depuração** nó e selecione **editar e continuar**.  
+2. No **opções** diálogo caixa, expanda o **depuração** nó e selecione **editar e continuar**.  
   
-3.  No **opções** caixa de diálogo **editar e continuar** página, marque ou desmarque as **habilitar editar e continuar** caixa de seleção.  
+3. No **opções** caixa de diálogo **editar e continuar** página, marque ou desmarque as **habilitar editar e continuar** caixa de seleção.  
   
      A configuração entra em vigor quando você reinicia a sessão de depuração.  
   
 ## <a name="see-also"></a>Consulte também  
  [Editar e continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)   
- [Alterações de código suportadas (C#)](../debugger/supported-code-changes-csharp.md)   
+ [Alterações de código suportadas (c#)](../debugger/supported-code-changes-csharp.md)   
  [Erros e avisos de Editar e Continuar (C#)](../misc/edit-and-continue-errors-and-warnings-csharp.md)

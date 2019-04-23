@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b87d3b1659d46a69e5a2e950997d3c0474e84d11
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b863040bcceb4e86aae7ed4efd83c2466eec12c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037849"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>Como: Abrir documentos do Visio de forma programática
   Há dois métodos para abrir documentos existentes do Microsoft Office Visio: Abra e OpenEx. O método OpenEx é idêntico ao método Open, exceto que ele forneça argumentos em que o chamador pode especificar como o documento é aberto.
@@ -29,7 +29,7 @@ ms.locfileid: "56598382"
 
 ### <a name="to-open-a-visio-document"></a>Para abrir um documento do Visio
 
--   Chamar o `Microsoft.Office.Interop.Visio.Documents.Open` método e fornecer o caminho totalmente qualificado do documento do Visio.
+- Chamar o `Microsoft.Office.Interop.Visio.Documents.Open` método e fornecer o caminho totalmente qualificado do documento do Visio.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#5)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#5](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#5)]
@@ -38,7 +38,7 @@ ms.locfileid: "56598382"
 
 ### <a name="to-open-a-visio-document-as-read-only-and-docked"></a>Para abrir um documento do Visio como somente leitura e encaixados
 
--   Chamar o `Microsoft.Office.Interop.Visio.Documents.OpenEx` método, forneça o caminho totalmente qualificado do documento do Visio e incluir os argumentos que você deseja usar — nesse caso, encaixado e somente leitura.
+- Chamar o `Microsoft.Office.Interop.Visio.Documents.OpenEx` método, forneça o caminho totalmente qualificado do documento do Visio e incluir os argumentos que você deseja usar — nesse caso, encaixado e somente leitura.
 
      [!code-csharp[Trin_VstcoreVisioAutomationAddIn#6](../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs#6)]
      [!code-vb[Trin_VstcoreVisioAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb#6)]
@@ -46,7 +46,7 @@ ms.locfileid: "56598382"
 ## <a name="compile-the-code"></a>Compilar o código
  Este exemplo de código requer o seguinte:
 
--   Um documento do Visio chamado `myDrawing.vsd` devem estar localizados em um diretório chamado `Test` na *Meus documentos* pasta (para o Windows XP e versões anteriores) ou o *documentos* pasta (para Windows Vista).
+- Um documento do Visio chamado `myDrawing.vsd` devem estar localizados em um diretório chamado `Test` na *Meus documentos* pasta (para o Windows XP e versões anteriores) ou o *documentos* pasta (para Windows Vista).
 
 ## <a name="see-also"></a>Consulte também
 - [Soluções do Visio](../vsto/visio-solutions.md)

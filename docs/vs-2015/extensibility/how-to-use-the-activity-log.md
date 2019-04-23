@@ -11,12 +11,12 @@ ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 caps.latest.revision: 30
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 50ef738826a9eb85a081a7063c1ca55280bed3a8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 812862c3eaf99b7459bb422e174f8fe155ea384a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042581"
 ---
 # <a name="how-to-use-the-activity-log"></a>Como: Usar o log de atividades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Os VSPackages pode gravar mensagens no log de atividade. Esse recurso é especia
   
 ### <a name="to-write-an-entry-to-the-activity-log"></a>Para gravar uma entrada ao log de atividades  
   
-1.  Inserir este código no <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método ou em qualquer outro método, exceto no construtor de VSPackage:  
+1. Inserir este código no <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método ou em qualquer outro método, exceto no construtor de VSPackage:  
   
     ```csharp  
     IVsActivityLog log = GetService(typeof(SVsActivityLog)) as IVsActivityLog;  
@@ -42,13 +42,13 @@ Os VSPackages pode gravar mensagens no log de atividade. Esse recurso é especia
   
      Esse código obtém os <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> de serviço e a converte para um <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> interface. <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog.LogEntry%2A> grava uma entrada informativa no log de atividades usando o contexto cultural atual.  
   
-2.  Quando o VSPackage é carregado (normalmente, quando um comando é invocado ou uma janela é aberta), o texto é escrito para o log de atividades.  
+2. Quando o VSPackage é carregado (normalmente, quando um comando é invocado ou uma janela é aberta), o texto é escrito para o log de atividades.  
   
 ### <a name="to-examine-the-activity-log"></a>Para examinar o log de atividades  
   
-1.  Localizar o log de atividades na subpasta para dados do Visual Studio: *% AppData %* \Microsoft\VisualStudio\14.0\ActivityLog.XML...  
+1. Localizar o log de atividades na subpasta para dados do Visual Studio: *% AppData %* \Microsoft\VisualStudio\14.0\ActivityLog.XML...  
   
-2.  Abra o log de atividades com qualquer editor de texto. Aqui está uma entrada típica:  
+2. Abra o log de atividades com qualquer editor de texto. Aqui está uma entrada típica:  
   
     ```  
     Called for: Company.MyApp.MyAppPackage ...  

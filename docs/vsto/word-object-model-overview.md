@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 610ba4b805f2e8737f7b142e02158b80f51c529d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 92a0b432e75cb8df6318be0961cc587257869b27
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635963"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041939"
 ---
 # <a name="word-object-model-overview"></a>Visão geral do modelo de objeto do Word
   Ao desenvolver soluções do Word no Visual Studio, você interage com o modelo de objeto do Word. Esse modelo de objeto consiste em classes e interfaces que são fornecidos no assembly de interoperabilidade primário para o Word e são definidos na <xref:Microsoft.Office.Interop.Word> namespace.
@@ -33,13 +33,13 @@ ms.locfileid: "56635963"
 
  Para obter informações sobre como usar o modelo de objeto do Word para executar tarefas específicas, consulte os tópicos a seguir:
 
--   [Trabalhar com documentos](../vsto/working-with-documents.md)
+- [Trabalhar com documentos](../vsto/working-with-documents.md)
 
--   [Trabalhar com texto em documentos](../vsto/working-with-text-in-documents.md)
+- [Trabalhar com texto em documentos](../vsto/working-with-text-in-documents.md)
 
--   [Trabalhar com tabelas](../vsto/working-with-tables.md)
+- [Trabalhar com tabelas](../vsto/working-with-tables.md)
 
-##  <a name="understanding"></a> Entender o modelo de objeto do Word
+## <a name="understanding"></a> Entender o modelo de objeto do Word
  O Word fornece centenas de objetos com os quais você pode interagir. Esses objetos são organizados em uma hierarquia que segue rigorosamente a interface do usuário. Na parte superior da hierarquia é o <xref:Microsoft.Office.Interop.Word.Application> objeto. Este objeto representa a instância atual do Word. O <xref:Microsoft.Office.Interop.Word.Application> objeto contém o <xref:Microsoft.Office.Interop.Word.Document>, <xref:Microsoft.Office.Interop.Word.Selection>, <xref:Microsoft.Office.Interop.Word.Bookmark>, e <xref:Microsoft.Office.Interop.Word.Range> objetos. Cada um desses objetos tem vários métodos e propriedades que você pode acessar para manipular e interagir com o objeto.
 
  A ilustração a seguir mostra uma exibição desses objetos na hierarquia de modelo de objeto do Word.
@@ -115,7 +115,7 @@ ms.locfileid: "56635963"
 
   Visual Studio estende o <xref:Microsoft.Office.Interop.Word.Bookmark> objeto, fornecendo o <xref:Microsoft.Office.Tools.Word.Bookmark> controle de host. O <xref:Microsoft.Office.Tools.Word.Bookmark> controle de host se comporta como um nativo <xref:Microsoft.Office.Interop.Word.Bookmark>, mas tem eventos adicionais e recursos de vinculação de dados. Você pode associar dados a um controle de indicador em um documento da mesma forma que você associe dados a um controle de caixa de texto em um formulário do Windows. Para obter mais informações, consulte [controle de indicador](../vsto/bookmark-control.md).
 
-##  <a name="WordOMDocumentation"></a> Use a documentação de modelo de objeto do Word
+## <a name="WordOMDocumentation"></a> Use a documentação de modelo de objeto do Word
  Para obter informações completas sobre o modelo de objeto do Word, você pode consultar a referência de assembly de interoperabilidade primária (PIA) do Word e do Visual Basic para referência de modelo de objeto Applications (VBA).
 
 ### <a name="primary-interop-assembly-reference"></a>Referência de assembly de interoperabilidade primário

@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6250577a5a1b6793001b1d4b732c3b3101690aad
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: b457bf6491a9b82fc981c66722f4c6e19a517065
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867866"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040332"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Projeto do SharePoint e modelos de item de projeto
   As seções a seguir descrevem o projeto do SharePoint disponível e de item de projeto modelos e como eles são usados.
@@ -36,22 +36,22 @@ ms.locfileid: "57867866"
  Para obter informações sobre conceitos básicos do SharePoint, consulte [blocos de construção do SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=179404). Usuários avançados podem criar modelos de item de projeto e projeto personalizados. Para obter mais informações, consulte [estender o sistema de projeto do SharePoint](../sharepoint/extending-the-sharepoint-project-system.md).
 
 ## <a name="project-templates"></a>Modelos de projeto
- A seguir está uma lista de modelos de projeto do SharePoint. Para exibir os modelos de projeto do SharePoint no Visual Studio, nos **novo projeto** diálogo caixa, expanda o **SharePoint** nó em um **Visual C#** ou  **Visual Basic**e, em seguida, escolha **2010**.
+ A seguir está uma lista de modelos de projeto do SharePoint. Para exibir os modelos de projeto do SharePoint no Visual Studio, nos **novo projeto** diálogo caixa, expanda o **SharePoint** nó em um **Visual c#** ou  **Visual Basic**e, em seguida, escolha **2010**.
 
 ### <a name="sharepoint-2010-project"></a>SharePoint 2010 project
  O conteúdo de um *projeto do SharePoint 2010* estão incluídos em cada modelo de projeto do SharePoint. Contém um projeto do SharePoint 2010:
 
--   Um arquivo de projeto.
+- Um arquivo de projeto.
 
--   Uma página de propriedades do projeto.
+- Uma página de propriedades do projeto.
 
--   Um **referências** pasta listando todas as referências de assembly no projeto.
+- Um **referências** pasta listando todas as referências de assembly no projeto.
 
--   Um **recursos** pasta que contém uma *Feature* arquivo de configuração, usado para implantar recursos no servidor do SharePoint.
+- Um **recursos** pasta que contém uma *Feature* arquivo de configuração, usado para implantar recursos no servidor do SharePoint.
 
--   Um **pacote** pasta que contém uma *pacote* arquivo, usado para implantar a solução do SharePoint.
+- Um **pacote** pasta que contém uma *pacote* arquivo, usado para implantar a solução do SharePoint.
 
--   Um arquivo de snk (chave de nome forte) que é usado para assinar o assembly com um nome forte, para segurança aprimorada.
+- Um arquivo de snk (chave de nome forte) que é usado para assinar o assembly com um nome forte, para segurança aprimorada.
 
 ### <a name="sharepoint-2010-silverlight-web-part"></a>Web part do Silverlight do SharePoint 2010
  *Web Part do SharePoint 2010 Silverlight* projetos permitem que você a criar web parts para SharePoint que exibem os aplicativos do Silverlight. Quando você cria este projeto, você pode especificar se deseja adicionar um novo aplicativo Silverlight para ele ou fazer referência a um existente. Para obter mais informações, consulte [criar web parts para SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) e [passo a passo: Criar uma web part do Silverlight que exiba OData para o SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md).
@@ -68,7 +68,7 @@ ms.locfileid: "57867866"
 ## <a name="project-item-templates"></a>Modelos de item de projeto
  A seguir está uma lista de modelos de item de projeto do SharePoint. Modelos de item de projeto adicionam arquivos à solução do SharePoint para dar suporte à funcionalidade do SharePoint como colunas de site, listas e tipos de conteúdo. Por exemplo, a adição de uma coluna de site para sua solução adiciona um projeto de coluna de site que contém um *Elements. XML* arquivo de definição. Adicionar uma web part visual adiciona um projeto do visual web part à sua solução que contém um *Elements. XML* arquivo, um item de controle de usuário e um item do visual web part.
 
- Para exibir os modelos de item de projeto do SharePoint, no **Gerenciador de soluções**, abra o menu de atalho para um projeto do SharePoint e, em seguida, escolha **Add**, **Novo Item**. Expanda o **SharePoint** nó em um **Visual C#** ou **Visual Basic**e, em seguida, escolha **2010**.
+ Para exibir os modelos de item de projeto do SharePoint, no **Gerenciador de soluções**, abra o menu de atalho para um projeto do SharePoint e, em seguida, escolha **Add**, **Novo Item**. Expanda o **SharePoint** nó em um **Visual c#** ou **Visual Basic**e, em seguida, escolha **2010**.
 
 ### <a name="application-page-farm-solution-only"></a>Página de aplicativo (somente solução de farm)
  Uma **página do aplicativo (somente solução de Farm)** item permite que você projete um [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] página da web para um site do SharePoint. Páginas de aplicativos podem ser usadas somente em soluções de farm. Você pode adicionar esse item de projeto somente a soluções de farm. Para obter mais informações, confira [Como: Criar uma página de aplicativo](../sharepoint/how-to-create-an-application-page.md) e [tipo de página layouts do aplicativo](http://go.microsoft.com/fwlink/?LinkId=179434).

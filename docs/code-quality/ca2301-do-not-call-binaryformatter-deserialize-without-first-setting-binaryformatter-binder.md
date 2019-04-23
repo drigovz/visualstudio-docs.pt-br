@@ -10,12 +10,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c82c414b85cbc26e0b711a0da246f3838cf554
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d90ed71c1d5ca4cbfdcf8e500e1d176519a2fdff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59367274"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037590"
 ---
 # <a name="ca2301-do-not-call-binaryformatterdeserialize-without-first-setting-binaryformatterbinder"></a>CA2301: Não chamar BinaryFormatter.Deserialize sem antes definir BinaryFormatter.Binder
 
@@ -41,17 +41,16 @@ Essa regra localiza <xref:System.Runtime.Serialization.Formatters.Binary.BinaryF
 - Se possível, use um serializador seguro em vez disso, e **não permitir que um invasor especificar um tipo arbitrário para desserializar**. Alguns serializadores mais seguros incluem:
   - <xref:System.Runtime.Serialization.DataContractSerializer?displayProperty=nameWithType>
   - <xref:System.Runtime.Serialization.Json.DataContractJsonSerializer?displayProperty=nameWithType>
-  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -Nunca usar <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Se você precisar usar um resolvedor de tipo, você deve restringir tipos desserializados para uma lista de esperado.
+  - <xref:System.Web.Script.Serialization.JavaScriptSerializer?displayProperty=nameWithType> -Nunca usar <xref:System.Web.Script.Serialization.SimpleTypeResolver?displayProperty=nameWithType>. Se você precisar usar um resolvedor de tipo, restringir tipos desserializados para uma lista de esperado.
   - <xref:System.Xml.Serialization.XmlSerializer?displayProperty=nameWithType>
-  - NewtonSoft Json.NET - TypeNameHandling.None de uso. Se você precisar usar outro valor para TypeNameHandling, você deve restringir tipos desserializados para uma lista de esperado.
+  - NewtonSoft Json.NET - TypeNameHandling.None de uso. Se você precisar usar outro valor para TypeNameHandling, restringir tipos desserializados para uma lista de esperado com um ISerializationBinder personalizado.
   - Buffers de protocolo
-- Verifique os dados serializados à prova de adulteração. Após a serialização, assina criptograficamente os dados serializados. Antes de desserialização, valide a assinatura de criptografia. Você deve proteger a chave de criptografia de estejam sendo divulgadas e deve projetar para rotações de chave.
+- Verifique a prova de adulteração de dados serializados. Após a serialização, assina criptograficamente os dados serializados. Antes de desserialização, valide a assinatura de criptografia. Proteger a chave de criptografia de estejam sendo divulgadas e projetar para rotações de chave.
 - Restringir tipos desserializados. Implementar um personalizado <xref:System.Runtime.Serialization.SerializationBinder?displayProperty=nameWithType>. Antes de desserializá-lo com <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter>, defina a <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter.Binder> propriedade a uma instância do seu personalizado <xref:System.Runtime.Serialization.SerializationBinder>. No substituído <xref:System.Runtime.Serialization.SerializationBinder.BindToType%2A> método, se o tipo for inesperado, lance uma exceção.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 
-- É seguro suprimir um aviso nessa regra, se você souber que a entrada é confiável. Considere a possibilidade de que os fluxos de dados e limites de confiança do seu aplicativo podem mudar ao longo do tempo.
-- É seguro suprimir este aviso se você executou um das precauções acima.
+[!INCLUDE[insecure-deserializers-common-safe-to-suppress](includes/insecure-deserializers-common-safe-to-suppress-md.md)]
 
 ## <a name="pseudo-code-examples"></a>Exemplos de código pseudo
 
@@ -120,6 +119,7 @@ End Class
 ```
 
 ### <a name="solution"></a>Solução
+
 ```csharp
 using System;
 using System.IO;
@@ -141,7 +141,7 @@ public class BookRecordSerializationBinder : SerializationBinder
         }
         else
         {
-            throw new ArgumentException("Unexpected type", "typeName");
+            throw new ArgumentException("Unexpected type", nameof(typeName));
         }
     }
 }
@@ -194,7 +194,7 @@ Public Class BookRecordSerializationBinder
         If typeName = "BinaryFormatterVB.BookRecord" Or typeName = "BinaryFormatterVB.AisleLocation" Then
             Return Nothing
         Else
-            Throw New ArgumentException("Unexpected type", "typeName")
+            Throw New ArgumentException("Unexpected type", NameOf(typeName))
         End If
     End Function
 End Class

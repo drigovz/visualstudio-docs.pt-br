@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0266e14b3a03e6d8225e7ec9283fe727a9502e53
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 92e4fb1ae7cf7acf387eb9387284534eb55c1066
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785875"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040009"
 ---
 # <a name="how-to-disable-the-hosting-process"></a>Como desabilitar o processo de hospedagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Chamadas para determinadas APIs podem ser afetadas quando o processo de hospedag
   
    De modo geral, quando o processo de hospedagem está desabilitado:  
   
--   O tempo necessário para iniciar a depuração de aplicativos [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aumenta.  
+- O tempo necessário para iniciar a depuração de aplicativos [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] aumenta.  
   
--   A avaliação de expressões em tempo de design fica não disponível.  
+- A avaliação de expressões em tempo de design fica não disponível.  
   
--   A depuração de confiança parcial ficará não disponível.  
+- A depuração de confiança parcial ficará não disponível.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depuração e o processo de hospedagem](../debugger/debugging-and-the-hosting-process.md)   

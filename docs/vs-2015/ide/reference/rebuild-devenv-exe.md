@@ -15,12 +15,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c59e6b50a38348f1588d237e318369c3c668d017
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 72818a3bdb4f983326c95b10cfe4e6af4445cc2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659456"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037940"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,11 +48,11 @@ devenv SolutionName /rebuild SolnConfigName [/project ProjName] [/projectconfig 
   
 ## <a name="remarks"></a>Comentários  
   
--   Essa opção executa a mesma função que o comando de menu **Recompilar Solução** dentro do IDE (ambiente de desenvolvimento integrado).  
+- Essa opção executa a mesma função que o comando de menu **Recompilar Solução** dentro do IDE (ambiente de desenvolvimento integrado).  
   
--   Coloque as cadeias de caracteres que incluem espaços entre aspas duplas.  
+- Coloque as cadeias de caracteres que incluem espaços entre aspas duplas.  
   
--   As informações de resumo para limpezas e builds, incluindo erros, podem ser exibidas na janela **Comando** ou em qualquer arquivo de log especificado com a opção `/out`.  
+- As informações de resumo para limpezas e builds, incluindo erros, podem ser exibidas na janela **Comando** ou em qualquer arquivo de log especificado com a opção `/out`.  
   
 ## <a name="example"></a>Exemplo  
  Este exemplo limpa e recompila o projeto `CSharpWinApp`, usando a configuração de build de projeto `Debug` dentro da configuração da solução `Debug` de `MySolution`.  

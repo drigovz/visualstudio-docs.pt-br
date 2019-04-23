@@ -8,17 +8,17 @@ ms.assetid: 8ed68602-4e28-46fe-b39f-f41979b308a2
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4f71a2f7b316c8257c5741e903bd54cb0288fdcb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cc14aadfafb16fcae571ab66e5811ea465cb55a9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929093"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040985"
 ---
 # <a name="application-patterns-for-visual-studio"></a>Padrões de aplicativo para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-##  <a name="BKMK_WindowInteractions"></a> Interações de janela
+## <a name="BKMK_WindowInteractions"></a> Interações de janela
 
 ### <a name="overview"></a>Visão geral
  Os dois tipos de janela principal usados no Visual Studio são editores de documento e janelas de ferramentas. Rara, mas possível, é grandes caixas de diálogo sem janela restrita. Embora essas sejam tudo sem janela restrita no shell, seus padrões são fundamentalmente diferentes. Este tópico aborda a diferença entre janelas de documentos, janelas e caixas de diálogo sem janela restrita. Padrões da caixa de diálogo modal são abordados [caixas de diálogo](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Dialogs).
@@ -40,24 +40,24 @@ ms.locfileid: "58929093"
 |**Instâncias**|*Várias instâncias*<br /><br /> Vários editores podem ser abertos no mesmo momento e edição de arquivos diferentes, embora alguns editores também permitem que o mesmo arquivo seja aberto em mais de um editor (usando o **Janela > nova janela** comando).<br /><br /> Um único editor pode estar editando um ou vários arquivos ao mesmo tempo (Designer de projeto).|*Única ou várias instâncias*<br /><br /> Conteúdo alterado para refletir o contexto (como o navegador de propriedade) ou enviar por push o foco/contexto para outras janelas (lista de tarefas, o Gerenciador de soluções).<br /><br /> Janelas de ferramentas de instância única ou várias instâncias devem ser associadas à janela do documento ativo, a menos que haja um motivo convincente não para.|*Instância única*|
 |**Exemplos**|**Editores de texto**, como o editor de código<br /><br /> **As superfícies de design**, como um designer de formulários ou uma superfície de modelagem<br /><br /> **Controlar layouts semelhantes a caixas de diálogo**, como o Designer de manifesto|O **Gerenciador de soluções** oferece uma solução e projetos contidos dentro da solução<br /><br /> O **Gerenciador de servidores** fornece uma exibição hierárquica dos servidores e conexões de dados que o usuário optar por abrir na janela. Abertura de um objeto da hierarquia de banco de dados, como uma consulta, abre uma janela de documento e permite que o usuário editar a consulta.<br /><br /> O **navegador de propriedade** exibe as propriedades do objeto selecionado em uma janela de documento ou em outra janela de ferramenta. As propriedades são apresentadas em uma exibição hierárquica de grade ou em controles de caixa de diálogo semelhante complexos e permitir que o usuário definir os valores dessas propriedades.||
 
-##  <a name="BKMK_ToolWindows"></a> Janelas de ferramentas
+## <a name="BKMK_ToolWindows"></a> Janelas de ferramentas
 
 ### <a name="overview"></a>Visão geral
  Janelas de ferramentas dão suporte para o trabalho do usuário que acontece em janelas de documento. Eles podem ser usados para exibir uma hierarquia que representa um objeto raiz fundamental que o Visual Studio fornece e pode manipular.
 
  Ao considerar uma nova janela de ferramentas no IDE, os autores devem:
 
--   Usar janelas de ferramentas existente apropriado de tarefa e não criar novos com funcionalidade semelhante. Nova janela de ferramentas só deve ser criada se eles oferecem uma funcionalidade que não pode ser integrada em uma janela semelhante ou transformando-se em uma janela existente em um hub dinamização ou "tool" significativamente diferente.
+- Usar janelas de ferramentas existente apropriado de tarefa e não criar novos com funcionalidade semelhante. Nova janela de ferramentas só deve ser criada se eles oferecem uma funcionalidade que não pode ser integrada em uma janela semelhante ou transformando-se em uma janela existente em um hub dinamização ou "tool" significativamente diferente.
 
--   Use uma barra de comando padrão, se necessário, na parte superior da janela de ferramentas.
+- Use uma barra de comando padrão, se necessário, na parte superior da janela de ferramentas.
 
--   Seja consistente com padrões já está presentes nas outras janelas de ferramentas para controlar a navegação de teclado e de apresentação.
+- Seja consistente com padrões já está presentes nas outras janelas de ferramentas para controlar a navegação de teclado e de apresentação.
 
--   Seja consistente com a apresentação de controle nas outras janelas de ferramentas.
+- Seja consistente com a apresentação de controle nas outras janelas de ferramentas.
 
--   Janelas de ferramenta específica do documento devem ser automaticamente visíveis quando possível, para que eles aparecem somente quando o documento pai é ativado.
+- Janelas de ferramenta específica do documento devem ser automaticamente visíveis quando possível, para que eles aparecem somente quando o documento pai é ativado.
 
--   Certifique-se de que seu conteúdo da janela é passível de navegação pelo teclado (suporte a teclas de direção).
+- Certifique-se de que seu conteúdo da janela é passível de navegação pelo teclado (suporte a teclas de direção).
 
 #### <a name="tool-window-states"></a>Estados de janela de ferramenta
  Janelas de ferramentas do Visual Studio têm diferentes estados, alguns dos quais são ativados por usuário (como o recurso de ocultar automaticamente). Outros estados, como visível automática, permitir janelas de ferramenta apareça no contexto correto e ocultar quando não é necessário. Há cinco estados de janela de ferramenta no total.
@@ -111,7 +111,7 @@ ms.locfileid: "58929093"
 |**hierarquia**|Estrutura de Tópicos do Documento|A estrutura hierárquica do documento ativo.|
 |**Grade**|Propriedades|Uma grade que exibe uma lista das propriedades do objeto selecionado, junto com os seletores de valor para editar essas propriedades.|
 |**Grade**|Lista de Tarefas|Uma grade que permite ao usuário criar/editar/excluir tarefas e comentários.|
-|**Content**|Ajuda|Uma janela que permite aos usuários acesso a vários métodos de obtenção de Ajuda, de "Como faço para?" vídeos para os fóruns do MSDN.|
+|**Content**|Help|Uma janela que permite aos usuários acesso a vários métodos de obtenção de Ajuda, de "Como faço para?" vídeos para os fóruns do MSDN.|
 |**Content**|Ajuda dinâmica|Uma janela de ferramenta que exibe links para tópicos aplicáveis à seleção atual da Ajuda.|
 |**Content**|Pesquisador de Objetos|Um conjunto de quadros de duas colunas com uma lista de componentes de objeto hierárquica no painel esquerdo e o objeto propriedades e métodos na coluna à direita.|
 |**Caixa de diálogo**|Localização, localização avançada|Uma caixa de diálogo que permite ao usuário localizar ou localizar e substituir em arquivos diversos dentro da solução.|
@@ -131,7 +131,7 @@ ms.locfileid: "58929093"
 |**Depurador:** um grupo do windows específico para tarefas de depuração e monitoramento de atividades|Registros||
 |**Depurador:** um grupo do windows específico para tarefas de depuração e monitoramento de atividades|Threads||
 
-##  <a name="BKMK_DocumentEditorConventions"></a> Convenções do editor de documento
+## <a name="BKMK_DocumentEditorConventions"></a> Convenções do editor de documento
 
 ### <a name="document-interactions"></a>Interações de documento
  "Documentar bem" é o maior espaço dentro do IDE e onde o usuário geralmente tem se concentrado sua atenção para concluir suas tarefas, a assistência de janelas de ferramentas complementares. Editores de documento representam as unidades fundamentais de trabalho que o usuário abre e salva no Visual Studio. Eles mantêm um forte senso de seleção vinculado ao Gerenciador de soluções ou de outra hierarquia do Active Directory. O usuário deve ser capaz de apontar para uma dessas janelas de hierarquia e saber onde o documento está contido e sua relação para a solução, o projeto ou outro objeto raiz fornecido por um pacote do Visual Studio.
@@ -140,21 +140,21 @@ ms.locfileid: "58929093"
 
 #### <a name="common-interactions-for-the-document-well"></a>Interações comuns para o documento bem
 
--   Manter um modelo consistente de interação comum **novo arquivo** e **abrir arquivo** experiências.
+- Manter um modelo consistente de interação comum **novo arquivo** e **abrir arquivo** experiências.
 
--   Atualize funcionalidades relacionadas em menus e janelas relacionadas quando a janela do documento é aberto.
+- Atualize funcionalidades relacionadas em menus e janelas relacionadas quando a janela do documento é aberto.
 
--   Comandos de menu estão corretamente integrados aos menus comuns, como **edite**, **formato**, e **exibição** menus. Se houver uma quantidade significativa de comandos especializadas disponível, em seguida, um novo menu pode ser criado que fica visível apenas quando o documento tem o foco.
+- Comandos de menu estão corretamente integrados aos menus comuns, como **edite**, **formato**, e **exibição** menus. Se houver uma quantidade significativa de comandos especializadas disponível, em seguida, um novo menu pode ser criado que fica visível apenas quando o documento tem o foco.
 
--   Uma barra de ferramentas inserida pode ser colocada na parte superior do editor. Isso é preferível ter uma barra de ferramentas separada que aparece fora do editor.
+- Uma barra de ferramentas inserida pode ser colocada na parte superior do editor. Isso é preferível ter uma barra de ferramentas separada que aparece fora do editor.
 
--   Sempre manter uma seleção no Gerenciador de soluções ou ativos semelhantes a janela de hierarquia.
+- Sempre manter uma seleção no Gerenciador de soluções ou ativos semelhantes a janela de hierarquia.
 
--   Clicar duas vezes em um documento no Gerenciador de soluções deve executar a mesma ação que **aberto**.
+- Clicar duas vezes em um documento no Gerenciador de soluções deve executar a mesma ação que **aberto**.
 
--   Se mais de um editor pode ser usado em um tipo de documento, o usuário deve ser capaz de substituir ou redefinir a ação padrão em um tipo de documento fornecido usando o **abrir com** caixa de diálogo clicando duas vezes no arquivo e selecionando **aberto Com** no menu de atalho.
+- Se mais de um editor pode ser usado em um tipo de documento, o usuário deve ser capaz de substituir ou redefinir a ação padrão em um tipo de documento fornecido usando o **abrir com** caixa de diálogo clicando duas vezes no arquivo e selecionando **aberto Com** no menu de atalho.
 
--   Não crie também um assistente em um documento.
+- Não crie também um assistente em um documento.
 
 ### <a name="user-expectations-for-specific-document-types"></a>Expectativas dos usuários para os tipos de documento específico
  Há vários tipos diferentes de básicos de editores de documento e cada um tem um conjunto de interações que são consistentes com outros usuários do mesmo tipo.
@@ -175,71 +175,71 @@ ms.locfileid: "58929093"
 
 #### <a name="text-based-editors"></a>Editores de texto
 
--   O documento participa no modelo de guia de visualização, permitindo a visualização do documento sem abri-lo.
+- O documento participa no modelo de guia de visualização, permitindo a visualização do documento sem abri-lo.
 
--   A estrutura do documento pode ser representada em uma janela de ferramentas complementares, como uma estrutura de tópicos do documento.
+- A estrutura do documento pode ser representada em uma janela de ferramentas complementares, como uma estrutura de tópicos do documento.
 
--   IntelliSense (se apropriado) se comportará consistentemente com outros editores de código.
+- IntelliSense (se apropriado) se comportará consistentemente com outros editores de código.
 
--   Pop-ups ou interface do usuário assistencial siga estilos e padrões semelhantes para existente semelhante da interface do usuário, como o CodeLens.
+- Pop-ups ou interface do usuário assistencial siga estilos e padrões semelhantes para existente semelhante da interface do usuário, como o CodeLens.
 
--   Mensagens sobre o status do documento serão apresentadas em um controle de barra de informações na parte superior do documento ou na barra de status.
+- Mensagens sobre o status do documento serão apresentadas em um controle de barra de informações na parte superior do documento ou na barra de status.
 
--   O usuário deve ser capaz de personalizar a aparência de fontes e cores usando uma **Ferramentas > Opções** página, a página de fontes e cores compartilhada ou um específico para o editor.
+- O usuário deve ser capaz de personalizar a aparência de fontes e cores usando uma **Ferramentas > Opções** página, a página de fontes e cores compartilhada ou um específico para o editor.
 
 #### <a name="design-surfaces"></a>Superfícies de design
 
--   Um designer vazio deve ter uma marca d'água na superfície do que indica como começar.
+- Um designer vazio deve ter uma marca d'água na superfície do que indica como começar.
 
--   Mecanismos de troca de exibição seguirão padrões existentes, como clique duas vezes para abrir um editor de código ou guias na janela do documento, permitindo que a interação com os dois painéis.
+- Mecanismos de troca de exibição seguirão padrões existentes, como clique duas vezes para abrir um editor de código ou guias na janela do documento, permitindo que a interação com os dois painéis.
 
--   Adicionar elementos à superfície de design deve ser feito por meio da caixa de ferramentas, a menos que uma janela de ferramenta altamente específica é necessária.
+- Adicionar elementos à superfície de design deve ser feito por meio da caixa de ferramentas, a menos que uma janela de ferramenta altamente específica é necessária.
 
--   Itens na superfície de seguirá um modelo consistente de seleção.
+- Itens na superfície de seguirá um modelo consistente de seleção.
 
--   Barras de ferramentas inseridas contêm comandos somente, não comum de comandos específicos do documento, como **salvar**.
+- Barras de ferramentas inseridas contêm comandos somente, não comum de comandos específicos do documento, como **salvar**.
 
 #### <a name="dialog-style-editors"></a>Editores de estilo de caixa de diálogo
 
--   Layout do controle deve seguir as convenções de layout de caixa de diálogo normal.
+- Layout do controle deve seguir as convenções de layout de caixa de diálogo normal.
 
--   Guias dentro do editor não devem corresponder a aparência das guias do documento, eles devem corresponder a um dos dois estilos de guia interiores permitidos.
+- Guias dentro do editor não devem corresponder a aparência das guias do documento, eles devem corresponder a um dos dois estilos de guia interiores permitidos.
 
--   Os usuários devem ser capazes de interagir com os controles usando o teclado qualquer um, ativando o editor e tabulação pelos controles ou usando mnemônicos padrão.
+- Os usuários devem ser capazes de interagir com os controles usando o teclado qualquer um, ativando o editor e tabulação pelos controles ou usando mnemônicos padrão.
 
--   O designer deve usar o comum Salvar modelo. Sem salvar geral ou botões de confirmação devem ser colocados na superfície, embora outros botões podem ser apropriados.
+- O designer deve usar o comum Salvar modelo. Sem salvar geral ou botões de confirmação devem ser colocados na superfície, embora outros botões podem ser apropriados.
 
 #### <a name="model-designers"></a>Designers de modelo
 
--   Um designer vazio deve ter uma marca d'água na superfície do que indica como começar.
+- Um designer vazio deve ter uma marca d'água na superfície do que indica como começar.
 
--   Adicionar elementos à superfície de design deve ser feito por meio da caixa de ferramentas.
+- Adicionar elementos à superfície de design deve ser feito por meio da caixa de ferramentas.
 
--   Itens na superfície de seguirá um modelo consistente de seleção.
+- Itens na superfície de seguirá um modelo consistente de seleção.
 
--   Barras de ferramentas inseridas contêm comandos somente, não comum de comandos específicos do documento, como **salvar**.
+- Barras de ferramentas inseridas contêm comandos somente, não comum de comandos específicos do documento, como **salvar**.
 
--   Uma legenda pode aparecer na superfície, uma indicação ou uma marca d'água.
+- Uma legenda pode aparecer na superfície, uma indicação ou uma marca d'água.
 
--   O usuário deve ser capaz de personalizar a aparência das fontes/cores usando uma **Ferramentas > Opções** página, a página de fontes e cores compartilhada ou um específico para o editor.
+- O usuário deve ser capaz de personalizar a aparência das fontes/cores usando uma **Ferramentas > Opções** página, a página de fontes e cores compartilhada ou um específico para o editor.
 
 #### <a name="reports"></a>Relatórios
 
--   Relatórios são normalmente somente informações e não participam Salvar modelo. No entanto, eles podem incluir a interação como links para outras informações relevantes ou seções expandir e recolher.
+- Relatórios são normalmente somente informações e não participam Salvar modelo. No entanto, eles podem incluir a interação como links para outras informações relevantes ou seções expandir e recolher.
 
--   A maioria dos comandos na superfície de devem ser hiperlinks, não os botões.
+- A maioria dos comandos na superfície de devem ser hiperlinks, não os botões.
 
--   O layout deve incluir um cabeçalho e siga as diretrizes de layout de relatório padrão.
+- O layout deve incluir um cabeçalho e siga as diretrizes de layout de relatório padrão.
 
 #### <a name="dashboards"></a>Painéis
 
--   Painéis de controle não tem um modelo de interação em si, mas servem como um meio para oferecer uma variedade de outras ferramentas.
+- Painéis de controle não tem um modelo de interação em si, mas servem como um meio para oferecer uma variedade de outras ferramentas.
 
--   Eles não participam Salvar modelo.
+- Eles não participam Salvar modelo.
 
--   Os usuários devem ser capazes de interagir com os controles usando o teclado, ativando o editor e percorrer os controles ou usando mnemônicos padrão.
+- Os usuários devem ser capazes de interagir com os controles usando o teclado, ativando o editor e percorrer os controles ou usando mnemônicos padrão.
 
-##  <a name="BKMK_Dialogs"></a> Caixas de diálogo
+## <a name="BKMK_Dialogs"></a> Caixas de diálogo
 
 ### <a name="introduction"></a>Introdução
  Caixas de diálogo no Visual Studio normalmente devem dar suporte a uma unidade separada do trabalho do usuário e, em seguida, ser descartadas.
@@ -276,33 +276,33 @@ ms.locfileid: "58929093"
 ### <a name="dialog-design"></a>Design de caixa de diálogo
  Caixas de diálogo bem projetadas levar os elementos a seguir em consideração:
 
--   A tarefa de usuário com suporte
+- A tarefa de usuário com suporte
 
--   O estilo de texto da caixa de diálogo, idioma e terminologia
+- O estilo de texto da caixa de diálogo, idioma e terminologia
 
--   Opção de controle e convenções de interface do usuário
+- Opção de controle e convenções de interface do usuário
 
--   Alinhamento de especificação e controle de layout Visual
+- Alinhamento de especificação e controle de layout Visual
 
--   Acesso pelo teclado
+- Acesso pelo teclado
 
 #### <a name="content-organization"></a>Organização do conteúdo
  Considere as diferenças entre esses tipos básicos de caixas de diálogo:
 
--   [Caixas de diálogo simples](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_SimpleDialogs) apresentar controles em uma única janela modal. A apresentação pode incluem as variações dos padrões de controle complexo, incluindo um seletor de campo ou uma barra de ícones.
+- [Caixas de diálogo simples](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_SimpleDialogs) apresentar controles em uma única janela modal. A apresentação pode incluem as variações dos padrões de controle complexo, incluindo um seletor de campo ou uma barra de ícones.
 
--   [Em camadas a diálogos](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_LayeredDialogs) são usados para obter o máximo de espaço na tela quando uma única parte da interface do usuário consiste em vários grupos de controles. Agrupamentos da caixa de diálogo estão "em camadas" por meio de botões, controles de lista de navegação ou controles de guia para que o usuário pode escolher qual o agrupamento para ver a qualquer momento.
+- [Em camadas a diálogos](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_LayeredDialogs) são usados para obter o máximo de espaço na tela quando uma única parte da interface do usuário consiste em vários grupos de controles. Agrupamentos da caixa de diálogo estão "em camadas" por meio de botões, controles de lista de navegação ou controles de guia para que o usuário pode escolher qual o agrupamento para ver a qualquer momento.
 
--   [Assistentes](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) são úteis para direcionar o usuário por meio de uma sequência lógica de etapas em direção a conclusão de uma tarefa. Uma série de opções são oferecidos em painéis sequenciais, às vezes, introduzindo diferentes fluxos de trabalho ("branches") dependentes de uma escolha feita no painel anterior.
+- [Assistentes](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md#BKMK_Wizards) são úteis para direcionar o usuário por meio de uma sequência lógica de etapas em direção a conclusão de uma tarefa. Uma série de opções são oferecidos em painéis sequenciais, às vezes, introduzindo diferentes fluxos de trabalho ("branches") dependentes de uma escolha feita no painel anterior.
 
-####  <a name="BKMK_SimpleDialogs"></a> Caixas de diálogo simples
+#### <a name="BKMK_SimpleDialogs"></a> Caixas de diálogo simples
  Uma caixa de diálogo simple é uma apresentação dos controles em uma única janela modal. Esta apresentação pode incluem as variações dos padrões de controle complexo, como um seletor de campo. Para caixas de diálogo simples, siga o layout geral padrão, bem como qualquer layout específico necessário para agrupamentos de controle complexo.
 
  ![Caixa de diálogo Simple no Visual Studio](../../extensibility/ux-guidelines/media/0704-01-createstrongnamekey.png "01_CreateStrongNameKey 0704")
 
  **Criar chave de nome forte é um exemplo de uma caixa de diálogo simple no Visual Studio.**
 
-####  <a name="BKMK_LayeredDialogs"></a> Caixas de diálogo em camadas
+#### <a name="BKMK_LayeredDialogs"></a> Caixas de diálogo em camadas
  Caixas de diálogo em camadas incluem guias, painéis e árvores incorporados. Eles são usados para maximizar imóveis quando houver vários grupos de controles oferecidos em um único segmento de interface do usuário. Os agrupamentos são colocadas em camadas para que o usuário pode escolher qual o agrupamento para ver a qualquer momento.
 
  No caso mais simples, o mecanismo para alternar entre agrupamentos é um controle guia. Há várias alternativas disponíveis. Consulte atribuir prioridades e disposição em camadas para saber como escolher o estilo mais apropriado.
@@ -313,18 +313,18 @@ ms.locfileid: "58929093"
 
  **Ferramentas > Opções é um exemplo de uma caixa de diálogo em camadas no Visual Studio.**
 
-####  <a name="BKMK_Wizards"></a> Assistentes
+#### <a name="BKMK_Wizards"></a> Assistentes
  Assistentes são úteis para direcionar o usuário por meio de uma sequência lógica de etapas na conclusão de uma tarefa. Uma série de opções são oferecidos em painéis sequenciais e o usuário deve continuar por meio de cada etapa antes de prosseguir para a próxima. Depois que os padrões suficientes estão disponíveis, o **concluir** botão está habilitado.
 
  Modais assistentes são usados para tarefas que:
 
--   Contém a ramificação, onde caminhos diferentes são oferecidos, dependendo das escolhas do usuário
+- Contém a ramificação, onde caminhos diferentes são oferecidos, dependendo das escolhas do usuário
 
--   Contém as dependências entre as etapas, em que as etapas subsequentes dependem de entrada do usuário de que as etapas anteriores
+- Contém as dependências entre as etapas, em que as etapas subsequentes dependem de entrada do usuário de que as etapas anteriores
 
--   São suficientemente complexa que a interface do usuário deve ser usada para explicar as opções oferecidas e os possíveis resultados em cada etapa
+- São suficientemente complexa que a interface do usuário deve ser usada para explicar as opções oferecidas e os possíveis resultados em cada etapa
 
--   São transacionais, que exigem um conjunto de etapas a serem concluídas em sua totalidade antes que as alterações sejam confirmadas
+- São transacionais, que exigem um conjunto de etapas a serem concluídas em sua totalidade antes que as alterações sejam confirmadas
 
 ### <a name="common-conventions"></a>Convenções comuns
  Para obter o design ideal e a funcionalidade com suas caixas de diálogo, siga essas convenções em tamanho de caixa de diálogo, posição, padrões, configuração de controle e alinhamento, interface do usuário texto, barras de título, botões de controle e as chaves de acesso.
@@ -336,9 +336,9 @@ ms.locfileid: "58929093"
 
  Há dois recomendações para as caixas de diálogo redimensionáveis:
 
-1.  Se um tamanho mínimo é definida para a caixa de diálogo otimizar para o controle definido sem recorte e são ajustadas para acomodar o crescimento de localização razoável.
+1. Se um tamanho mínimo é definida para a caixa de diálogo otimizar para o controle definido sem recorte e são ajustadas para acomodar o crescimento de localização razoável.
 
-2.  Se o tamanho da escala de usuário persiste a cada sessão. Por exemplo, se o usuário pode ser dimensionado para 150% de uma caixa de diálogo, uma inicialização subsequente da caixa de diálogo exibirá 150%.
+2. Se o tamanho da escala de usuário persiste a cada sessão. Por exemplo, se o usuário pode ser dimensionado para 150% de uma caixa de diálogo, uma inicialização subsequente da caixa de diálogo exibirá 150%.
 
 #### <a name="position"></a>Posição
  Caixas de diálogo devem aparecer centralizadas dentro do IDE na primeira inicialização. Para caixas de diálogo não redimensionável, não é necessário que a última posição da caixa de diálogo ser persistentes, portanto, ele será exibido centralizado nas inicializações subsequentes. Para caixas de diálogo redimensionáveis, o tamanho deve ser persistido nas inicializações subsequentes. Para caixas de diálogo redimensionáveis que são modais, a posição não precisa ser persistente. Exibi-los centralizado dentro do IDE impede a possibilidade da caixa de diálogo que aparece em uma posição imprevisível ou inutilizável quando a configuração de exibição do usuário foi alterado. Para caixas de diálogo sem janela restrita que podem ser reposicionadas, a posição do usuário deve ser mantida nas inicializações subsequentes, como a caixa de diálogo pode ser usada com frequência, como parte integral de um fluxo de trabalho maior.
@@ -389,12 +389,12 @@ ms.locfileid: "58929093"
 |-----------------|-----------------------|
 |OK|Enter|
 |Cancelar|ESC|
-|Ajuda|F1|
+|Help|F1|
 
 #### <a name="imagery"></a>Imagens
  Use imagens com moderação nas caixas de diálogo. Não use ícones grandes nas caixas de diálogo simplesmente para usar o espaço. Use imagens apenas se eles são uma parte importante de transmitir a mensagem para o usuário, como ícones de aviso ou animações de status.
 
-###  <a name="BKMK_PrioritizingAndLayering"></a> Priorização e a disposição em camadas
+### <a name="BKMK_PrioritizingAndLayering"></a> Priorização e a disposição em camadas
 
 #### <a name="prioritizing-your-ui"></a>Priorizando a interface do usuário
  Ele pode ser necessário trazer determinados elementos de interface do usuário para o forefront e coloque o comportamento mais avançado e opções (incluindo comandos obscuros) em caixas de diálogo. Traga funcionalidade comumente usada para o forefront, tornando o espaço para ele e por torná-lo visível por padrão na interface do usuário com um rótulo de texto quando a caixa de diálogo é exibida.
@@ -425,7 +425,7 @@ ms.locfileid: "58929093"
 ##### <a name="adaptive-ui"></a>Interface do usuário adaptável
  Mostrando ou ocultando a interface do usuário com base no uso ou a experiência do usuário automaticamente relatados é outra maneira de apresentar necessário da interface do usuário enquanto oculta a outras partes. Isso não é recomendado no Visual Studio, como os algoritmos para decidir quando mostrar ou ocultar a interface do usuário podem ser complicados, e as regras sempre estará incorreta para um conjunto de casos.
 
-##  <a name="BKMK_Projects"></a> Projetos
+## <a name="BKMK_Projects"></a> Projetos
 
 ### <a name="projects-in-the-solution-explorer"></a>Projetos no Gerenciador de soluções
  A maioria dos projetos são classificadas como base de referência, baseada no Active ou misto. Todos os três tipos de projetos têm suporte simultaneamente no Gerenciador de soluções. A raiz da experiência do usuário ao trabalhar com projetos ocorre dentro desta janela. Embora nós diferentes de projeto são projetos do tipo de modo misto, diretório ou referência, há um padrão de interação comum que deve ser aplicado como um ponto de partida antes divergentes padrões de usuário específicos do projeto.
@@ -495,27 +495,27 @@ ms.locfileid: "58929093"
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Nenhum modificador|Ação|Mover|Link|
 |Nenhum modificador|Destino|Adiciona a referência ao item original|Adiciona a referência ao item original|
-|Nenhum modificador|Origem|Referência de exclusões ao item original|Retém o item original|
+|Nenhum modificador|Source|Referência de exclusões ao item original|Retém o item original|
 |Nenhum modificador|Resultado|**DROPEFFECT_MOVE** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**DROPEFFECT_LINK** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
 |Shift+Drag|Ação|Mover|Nenhum menu|
 |Shift+Drag|Destino|Adiciona a referência ao item original|Nenhum menu|
-|Shift+Drag|Origem|Referência de exclusões ao item original|Nenhum menu|
+|Shift+Drag|Source|Referência de exclusões ao item original|Nenhum menu|
 |Shift+Drag|Resultado|**DROPEFFECT_MOVE** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|Nenhum menu|
 |Ctrl+Drag|Ação|Copiar|Nenhum menu|
 |Ctrl+Drag|Destino|Adiciona a referência ao item original|Nenhum menu|
-|Ctrl+Drag|Origem|Mantém a referência ao item original|Nenhum menu|
+|Ctrl+Drag|Source|Mantém a referência ao item original|Nenhum menu|
 |Ctrl+Drag|Resultado|**DROPEFFECT_COPY** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|Nenhum menu|
 |Ctrl+Shift+Drag|Ação|Link|Link|
 |Ctrl+Shift+Drag|Destino|Adiciona a referência ao item original|Adiciona a referência ao item original|
-|Ctrl+Shift+Drag|Origem|Mantém a referência ao item original|Retém o item original|
+|Ctrl+Shift+Drag|Source|Mantém a referência ao item original|Retém o item original|
 |Ctrl+Shift+Drag|Resultado|**DROPEFFECT_LINK** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**DROPEFFECT_LINK** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
 |Ctrl+Shift+Drag|Observação|Mesmo que o comportamento de arrastar e soltar para atalhos no Windows Explorer.||
 |Recortar/colar|Ação|Mover|Link|
 |Recortar/colar|Destino|Adiciona a referência ao item original|Adiciona a referência ao item original|
-|Recortar/colar|Origem|Mantém a referência ao item original|Retém o item original|
+|Recortar/colar|Source|Mantém a referência ao item original|Retém o item original|
 |Recortar/colar|Resultado|Item permanece no local original no armazenamento|Item permanece no local original no armazenamento|
 |Copiar/colar|Ação|Copiar|Link|
-|Copiar/colar|Origem|Adiciona a referência ao item original|Adiciona a referência ao item original|
+|Copiar/colar|Source|Adiciona a referência ao item original|Adiciona a referência ao item original|
 |Copiar/colar|Resultado|Mantém a referência ao item original|Retém o item original|
 |Copiar/colar|Ação|Item permanece no local original no armazenamento|Item permanece no local original no armazenamento|
 
@@ -526,24 +526,24 @@ ms.locfileid: "58929093"
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Nenhum modificador|Ação|Mover|Mover|
 |Nenhum modificador|Destino|Item de cópias para local de destino|Item de cópias para local de destino|
-|Nenhum modificador|Origem|Referência de exclusões ao item original|Referência de exclusões ao item original|
+|Nenhum modificador|Source|Referência de exclusões ao item original|Referência de exclusões ao item original|
 |Nenhum modificador|Resultado|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
 |Shift+Drag|Ação|Mover|Mover|
 |Shift+Drag|Destino|Item de cópias para local de destino|Item de cópias para local de destino|
-|Shift+Drag|Origem|Referência de exclusões ao item original|Exclui o item do local original|
+|Shift+Drag|Source|Referência de exclusões ao item original|Exclui o item do local original|
 |Shift+Drag|Resultado|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
 |Ctrl+Drag|Ação|Copiar|Copiar|
 |Ctrl+Drag|Destino|Item de cópias para local de destino|Item de cópias para local de destino|
-|Ctrl+Drag|Origem|Mantém a referência ao item original|Mantém a referência ao item original|
+|Ctrl+Drag|Source|Mantém a referência ao item original|Mantém a referência ao item original|
 |Ctrl+Drag|Resultado|**CÓPIA DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**CÓPIA DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
 |Ctrl+Shift+Drag||Nenhum menu|Nenhum menu|
 |Recortar/colar|Ação|Mover|Mover|
 |Recortar/colar|Destino|Item de cópias para local de destino|Item de cópias para local de destino|
-|Recortar/colar|Origem|Referência de exclusões ao item original|Exclui o item do local original|
+|Recortar/colar|Source|Referência de exclusões ao item original|Exclui o item do local original|
 |Recortar/colar|Resultado|Item permanece no local original no armazenamento|Item é excluído do local original no armazenamento|
 |Copiar/colar|Ação|Copiar|Copiar|
 |Copiar/colar|Destino|Adiciona a referência ao item original|Item de cópias para local de destino|
-|Copiar/colar|Origem|Retém o item original|Retém o item original|
+|Copiar/colar|Source|Retém o item original|Retém o item original|
 |Copiar/colar|Resultado|Item permanece no local original no armazenamento|Item permanece no armazenamento de ins local original|
 
 #### <a name="mixed-target-projects"></a>Projetos de destino misto
@@ -553,27 +553,27 @@ ms.locfileid: "58929093"
 |-|-|----------------------------------|-------------------------------------------------------------|
 |Nenhum modificador|Ação|Mover|Mover|
 |Nenhum modificador|Destino|Adiciona a referência ao item original|Item de cópias para local de destino|
-|Nenhum modificador|Origem|Referência de exclusões ao item original|Referência de exclusões ao item original|
+|Nenhum modificador|Source|Referência de exclusões ao item original|Referência de exclusões ao item original|
 |Nenhum modificador|Resultado|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item será excluído do local original no armazenamento|
 |Shift+Drag|Ação|Mover|Mover|
 |Shift+Drag|Destino|Adiciona a referência ao item original|Item de cópias para local de destino|
-|Shift+Drag|Origem|Referência de exclusões ao item original|Exclui o item do local original|
+|Shift+Drag|Source|Referência de exclusões ao item original|Exclui o item do local original|
 |Shift+Drag|Resultado|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**Mover DROPEFFECT_** é retornado como a ação de **:: descartar** e item será excluído do local original no armazenamento|
 |Ctrl+Drag|Ação|Copiar|Copiar|
 |Ctrl+Drag|Destino|Adiciona a referência ao item original|Item de cópias para local de destino|
-|Ctrl+Drag|Origem|Mantém a referência ao item original|Retém o item original|
+|Ctrl+Drag|Source|Mantém a referência ao item original|Retém o item original|
 |Ctrl+Drag|Resultado|**CÓPIA DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**CÓPIA DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
 |Ctrl+Shift+Drag|Ação|Link|Link|
 |Ctrl+Shift+Drag|Destino|Adiciona a referência ao item original|Adiciona a referência ao item original do código-fonte|
-|Ctrl+Shift+Drag|Origem|Mantém a referência ao item original|Retém o item original|
+|Ctrl+Shift+Drag|Source|Mantém a referência ao item original|Retém o item original|
 |Ctrl+Shift+Drag|Resultado|**LINK de DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|**LINK de DROPEFFECT_** é retornado como a ação de **:: descartar** e item permanece no local original no armazenamento|
 |Recortar/colar|Ação|Mover|Mover|
 |Recortar/colar|Destino|Item de cópias para local de destino|Item de cópias para local de destino|
-|Recortar/colar|Origem|Referência de exclusões ao item original|Exclui o item do local original|
+|Recortar/colar|Source|Referência de exclusões ao item original|Exclui o item do local original|
 |Recortar/colar|Resultado|Item permanece no local original no armazenamento|Item é excluído do local original no armazenamento|
 |Copiar/colar|Ação|Copiar|Copiar|
 |Copiar/colar|Destino|Adiciona a referência ao item original|Item de cópias para local de destino|
-|Copiar/colar|Origem|Retém o item original|Retém o item original|
+|Copiar/colar|Source|Retém o item original|Retém o item original|
 |Copiar/colar|Resultado|Item permanece no local original no armazenamento|Item permanece no local original no armazenamento|
 
  Esses detalhes devem ser levados em consideração ao implementar o arrastar para o **Gerenciador de soluções**:

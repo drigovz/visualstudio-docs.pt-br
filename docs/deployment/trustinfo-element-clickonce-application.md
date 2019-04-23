@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca75dc2afd49576cecc0fb89afd11744f098b170
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: e3dd75e8c88f87991abbdaa74a711b8f3c7324b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631608"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042232"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; elemento (aplicativo ClickOnce)
 Descreve as permissões de segurança mínima necessárias para o aplicativo seja executado no computador cliente.
@@ -78,28 +78,28 @@ Descreve as permissões de segurança mínima necessárias para o aplicativo sej
 ## <a name="permissionset"></a>PermissionSet
  Necessário. Esse elemento é um filho de `applicationRequestMinimum` elemento e contém o `IPermission` elemento. Este elemento tem os seguintes atributos.
 
--   `ID`
+- `ID`
 
      Necessário. Identifica o conjunto de permissões. Esse atributo pode ser qualquer valor. A ID é referenciada na `defaultAssemblyRequest` e `assemblyRequest` atributos.
 
--   `version`
+- `version`
 
      Necessário. Identifica a versão da permissão. Normalmente, esse valor é `1`.
 
 ## <a name="ipermission"></a>IPermission
  Opcional. Esse elemento é um filho de `PermissionSet` elemento. O `IPermission` elemento totalmente identifica uma classe de permissão no [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)]. O `IPermission` elemento tem os seguintes atributos, mas pode ter atributos adicionais que correspondem às propriedades da classe de permissão. Para descobrir a sintaxe para uma permissão específica, consulte os exemplos listados no arquivo config.
 
--   `class`
+- `class`
 
      Necessário. Identifica a classe de permissão por nome forte. Por exemplo, o código a seguir identifica o `FileDialogPermission` tipo.
 
      `System.Security.Permissions.FileDialogPermission, mscorlib, Version=1.2.3300.0, Culture=neutral, PublicKeyToken=b77a5c561934e089`
 
--   `version`
+- `version`
 
      Necessário. Identifica a versão da permissão. Normalmente, esse valor é `1`.
 
--   `Unrestricted`
+- `Unrestricted`
 
      Necessário. Identifica se o aplicativo precisa de uma concessão irrestrita dessa permissão. Se `true`, a concessão de permissão é incondicional. Se `false`, ou se esse atributo for indefinido, ele é restrito de acordo com os atributos de permissão específica definidos no `IPermission` marca. Execute as seguintes permissões:
 
@@ -119,18 +119,18 @@ Descreve as permissões de segurança mínima necessárias para o aplicativo sej
 ## <a name="defaultassemblyrequest"></a>defaultAssemblyRequest
  Opcional. Identifica o conjunto de permissões concedidas a todos os assemblies. Esse elemento é um filho de `applicationRequestMinimum` elemento e tem o seguinte atributo.
 
--   `permissionSetReference`
+- `permissionSetReference`
 
      Necessário. Identifica a ID do conjunto de permissões que é a permissão padrão. O conjunto de permissões é declarado no `PermissionSet` elemento.
 
 ## <a name="assemblyrequest"></a>assemblyRequest
  Opcional. Identifica as permissões para um assembly específico. Esse elemento é um filho de `applicationRequestMinimum` elemento e tem os seguintes atributos.
 
--   `Name`
+- `Name`
 
      Necessário. Identifica o nome do assembly.
 
--   `permissionSetReference`
+- `permissionSetReference`
 
      Necessário. Identifica a ID do conjunto de permissões que requer esse assembly. O conjunto de permissões é declarado no `PermissionSet` elemento.
 

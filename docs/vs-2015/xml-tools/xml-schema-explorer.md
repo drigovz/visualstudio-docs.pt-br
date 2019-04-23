@@ -9,17 +9,16 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59f2c4ba05b0e802f1daa303db0646a94f36fd31
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 575be3277dd7d876b19b9c557643cb05831255a5
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929659"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670427"
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 O XML Schema Explorer está integrado com o Microsoft Visual Studio e o Editor de XML para permitir que você trabalhe com esquemas da linguagem XSD. Quando você abre um arquivo de esquema XML, o **do conjunto de esquema** nó aparece no XML Schema Explorer. Todos os esquemas incluídos, importados ou redefinidos para o arquivo de destino, assim como os arquivos que são referenciados por meio de uma instrução `include` ou `import`, também aparecem no XML Schema Explorer.  
   
  O XML Schema Explorer permite que você faça o seguinte:  

@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a01681c4674fd5a47d4f5f795f78899df00e770
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: ef029cc6e931509997ad6f094adedc7d96e4bcd3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58921986"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670310"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definir um comando de menu em um diagrama de modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,14 +57,13 @@ No Visual Studio, você pode definir itens de menu adicionais nos menus de atalh
 
    1.  No menu **Arquivo**, escolha **Novo**, **Projeto**.  
 
-   2.  Sob **modelos instalados**, selecione **Visual C#** ou **Visual Basic**. Na coluna do meio, escolha **biblioteca de classes**.  
+   2.  Sob **modelos instalados**, selecione **Visual c#** ou **Visual Basic**. Na coluna do meio, escolha **biblioteca de classes**.  
 
    3.  Definir **solução** para indicar se você deseja criar uma nova solução ou adicionar um componente a uma solução VSIX que você já abriu.  
 
    4.  Defina o projeto de nome e o local e clique em Okey.  
 
 2. Adicione as seguintes referências ao seu projeto.  
-
 
    |                                                                                                    Referência                                                                                                    |                                                                                                  O que isso permite que você faça                                                                                                  |
    |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -74,7 +73,6 @@ No Visual Studio, você pode definir itens de menu adicionais nos menus de atalh
    |                                                                                  Microsoft.VisualStudio.Modeling.Sdk.[version]                                                                                  | Defina manipuladores de eventos do modelo.<br /><br /> Encapsule a série de alterações ao seu modelo. Para obter mais informações, consulte [atualizações de modelo UML de Link usando transações](../modeling/link-uml-model-updates-by-using-transactions.md). |
    |                                                            Microsoft.VisualStudio.Modeling.Sdk.Diagrams.[version]<br /><br /> (nem sempre necessário)                                                             |                                                                                   Elementos de diagrama adicional de acesso para manipuladores de gestos.                                                                                   |
    | Microsoft.VisualStudio.ArchitectureTools.Extensibility.Layer<br /><br /> Necessário somente para os comandos em diagramas de camada. Para obter mais informações, consulte [estender diagramas de camada](../modeling/extend-layer-diagrams.md). |                                                                                             Defina comandos em um diagrama de camada.                                                                                              |
-
 
 3. Adicionar um arquivo de classe ao projeto e defina seu conteúdo para o código a seguir.  
 
@@ -150,7 +148,7 @@ No Visual Studio, você pode definir itens de menu adicionais nos menus de atalh
 
     1.  Na **Gerenciador de soluções**, no menu de atalho da solução, escolha **Add**, **novo projeto**.  
 
-    2.  Sob **modelos instalados**, expanda **Visual C#** ou **Visual Basic**, em seguida, escolha **extensibilidade**. Na coluna do meio, escolha **VSIX Project**.  
+    2.  Sob **modelos instalados**, expanda **Visual c#** ou **Visual Basic**, em seguida, escolha **extensibilidade**. Na coluna do meio, escolha **VSIX Project**.  
 
 3.  No Gerenciador de soluções, no menu de atalho do projeto VSIX, escolha **definir como projeto de inicialização**.  
 

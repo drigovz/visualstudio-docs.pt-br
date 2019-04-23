@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a145907ad76016802e0547fc251b929b913253d5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: afb835c883050064d96c32c80de75d58299892f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945671"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040684"
 ---
 # <a name="accessing-models-from-text-templates"></a>Acessando modelos a partir de modelos (templates) de texto
 Usando modelos de texto, você pode criar arquivos de relatório, os arquivos de código-fonte e outros arquivos de texto baseados em modelos de linguagem específica do domínio. Para obter informações básicas sobre modelos de texto, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md). Os modelos de texto funcionarão no modo experimental quando você estiver depurando sua DSL e também funcionará em um computador no qual você implantou a DSL.
@@ -75,9 +75,9 @@ Here is a list of elements in the model:
 
  O processador de diretriz DSL executa duas tarefas principais:
 
--   Ele efetivamente insere diretivas de assembly e importar o modelo que faz referência a sua DSL. Isso permite que você use suas classes de domínio no código do modelo.
+- Ele efetivamente insere diretivas de assembly e importar o modelo que faz referência a sua DSL. Isso permite que você use suas classes de domínio no código do modelo.
 
--   Ele carrega o arquivo que você especificar na `requires` parâmetro e define uma propriedade na `this` que se refere ao elemento raiz do modelo carregado.
+- Ele carrega o arquivo que você especificar na `requires` parâmetro e define uma propriedade na `this` que se refere ao elemento raiz do modelo carregado.
 
 ## <a name="validating-the-model-before-running-the-template"></a>Validando o modelo antes de executar o modelo
  Você pode fazer com que o modelo a ser validado antes do modelo é executado.

@@ -11,12 +11,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c75b2aa7d4796a97370f414f0b7286c271b4c977
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: d9b93f8cb6422a3c9e2cf589924c2028db3dd6c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "58999951"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038402"
 ---
 # <a name="use-models-in-your-development-process"></a>Usar modelos no processo de desenvolvimento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,25 +52,25 @@ No Visual Studio, você pode usar um modelo para ajudá-lo a entender e alterar 
   
  Outros aspectos da especificação que normalmente são usados junto com os modelos incluem o seguinte. Dependendo da escala e o estilo do seu projeto, você pode usar vários desses aspectos ou não usar nenhum:  
   
--   Histórias do usuário. Uma história de usuário é uma breve descrição, discutida com usuários e outros participantes, de um aspecto do comportamento do sistema que será entregue em uma das iterações do projeto. Uma história de usuário típico começa "o cliente será capaz de..." Uma história de usuário pode introduzir um grupo de casos de uso ou pode definir as extensões de casos de uso que foram desenvolvidas anteriormente. Definir ou estender os casos de uso ajuda a tornar a história de usuário mais clara.  
+- Histórias do usuário. Uma história de usuário é uma breve descrição, discutida com usuários e outros participantes, de um aspecto do comportamento do sistema que será entregue em uma das iterações do projeto. Uma história de usuário típico começa "o cliente será capaz de..." Uma história de usuário pode introduzir um grupo de casos de uso ou pode definir as extensões de casos de uso que foram desenvolvidas anteriormente. Definir ou estender os casos de uso ajuda a tornar a história de usuário mais clara.  
   
--   Solicitações de alteração. Uma solicitação de alteração em um projeto mais formal é muito semelhante a uma história de usuário em um projeto agile. A abordagem do agile trata todos os requisitos de como as alterações para o que foi desenvolvido em iterações anteriores.  
+- Solicitações de alteração. Uma solicitação de alteração em um projeto mais formal é muito semelhante a uma história de usuário em um projeto agile. A abordagem do agile trata todos os requisitos de como as alterações para o que foi desenvolvido em iterações anteriores.  
   
--   Use a descrição do caso. Um caso de uso representa uma forma em que um usuário interage com o sistema para atingir uma meta específica. Uma descrição completa inclui a meta, principais e alternativas sequências de eventos e os resultados excepcionais. Um diagrama de caso de uso ajuda a resumir e fornecem uma visão geral dos casos de uso.  
+- Use a descrição do caso. Um caso de uso representa uma forma em que um usuário interage com o sistema para atingir uma meta específica. Uma descrição completa inclui a meta, principais e alternativas sequências de eventos e os resultados excepcionais. Um diagrama de caso de uso ajuda a resumir e fornecem uma visão geral dos casos de uso.  
   
--   Cenários. Um cenário é uma descrição detalhada bastante de uma sequência de eventos mostrando como o sistema, os usuários e outros sistemas funcionam juntos para fornecer o valor às partes interessadas. Ele pode assumir a forma de um slide show da interface do usuário ou um protótipo da interface do usuário. Ele pode descrever um caso de uso ou uma sequência de casos de uso.  
+- Cenários. Um cenário é uma descrição detalhada bastante de uma sequência de eventos mostrando como o sistema, os usuários e outros sistemas funcionam juntos para fornecer o valor às partes interessadas. Ele pode assumir a forma de um slide show da interface do usuário ou um protótipo da interface do usuário. Ele pode descrever um caso de uso ou uma sequência de casos de uso.  
   
--   Glossário. Glossário de requisitos do projeto descreve as palavras com o qual os clientes discutem seu mundo. Os modelos de requisitos e a interface do usuário também devem usar esses termos. Um diagrama de classe pode ajudar a esclarecer as relações entre a maioria desses termos. Criar os diagramas e glossário não só reduz a confusão entre usuários e desenvolvedores, mas também quase sempre expõe mal-entendidos entre os participantes de negócios diferentes.  
+- Glossário. Glossário de requisitos do projeto descreve as palavras com o qual os clientes discutem seu mundo. Os modelos de requisitos e a interface do usuário também devem usar esses termos. Um diagrama de classe pode ajudar a esclarecer as relações entre a maioria desses termos. Criar os diagramas e glossário não só reduz a confusão entre usuários e desenvolvedores, mas também quase sempre expõe mal-entendidos entre os participantes de negócios diferentes.  
   
--   Regras de negócio. Muitas regras de negócios podem ser expressos como invariáveis restrições sobre as associações e os atributos no modelo de classe de requisitos e restrições em diagramas de sequência.  
+- Regras de negócio. Muitas regras de negócios podem ser expressos como invariáveis restrições sobre as associações e os atributos no modelo de classe de requisitos e restrições em diagramas de sequência.  
   
--   Design de alto nível. Descreve as principais partes e como elas se encaixam. Componente, sequência e diagramas de interface são uma parte importante de um design de alto nível.  
+- Design de alto nível. Descreve as principais partes e como elas se encaixam. Componente, sequência e diagramas de interface são uma parte importante de um design de alto nível.  
   
--   Padrões de design. Descreva as regras de design que são compartilhadas entre as diferentes partes do sistema.  
+- Padrões de design. Descreva as regras de design que são compartilhadas entre as diferentes partes do sistema.  
   
--   Especificações de teste. Scripts de teste e os designs para o código de teste podem fazer bom uso de diagramas de atividade e a sequência para descrever as sequências de etapas de teste. Testes de sistema devem ser expressos em termos do modelo de requisitos para que eles podem ser alterados facilmente quando os requisitos mudam.  
+- Especificações de teste. Scripts de teste e os designs para o código de teste podem fazer bom uso de diagramas de atividade e a sequência para descrever as sequências de etapas de teste. Testes de sistema devem ser expressos em termos do modelo de requisitos para que eles podem ser alterados facilmente quando os requisitos mudam.  
   
--   Plano de projeto. O plano de projeto ou uma lista de pendências define quando cada recurso será entregue. Você pode definir cada recurso informando quais casos de uso e ela implementa ou estende as regras de negócio. Você pode se referir a casos de uso e as regras de negócios diretamente no plano, ou você pode definir um conjunto de recursos em um documento separado e usar os títulos dos recursos no plano.  
+- Plano de projeto. O plano de projeto ou uma lista de pendências define quando cada recurso será entregue. Você pode definir cada recurso informando quais casos de uso e ela implementa ou estende as regras de negócio. Você pode se referir a casos de uso e as regras de negócios diretamente no plano, ou você pode definir um conjunto de recursos em um documento separado e usar os títulos dos recursos no plano.  
   
 ### <a name="use-models-in-iteration-planning"></a>Usar modelos no planejamento de iteração  
  Embora todos os projetos sejam diferentes em seu dimensionamento e a organização, um projeto típico é planejado como uma série de iterações de entre dois e seis semanas. É importante planejar suficiente iterações para permitir que os comentários de iterações iniciais a serem usados para ajustar o escopo e os planos para iterações posteriores.  
@@ -80,28 +80,28 @@ No Visual Studio, você pode usar um modelo para ajudá-lo a entender e alterar 
 #### <a name="sharpen-focus-as-each-iteration-approaches"></a>Ajustar o foco como abordagens cada iteração  
  Conforme cada iteração se aproxima, use modelos para ajudar a definir o que deve ser entregue ao final da iteração.  
   
--   Modele tudo em detalhes nas iterações anteriores. Na primeira iteração, criar um diagrama de classe para os principais itens no glossário de usuário, desenhar um diagrama dos casos de uso importantes e desenhar um diagrama dos principais componentes. Não descreva qualquer um deles separadamente com muitos detalhes, porque o detalhe será alterada posteriormente no projeto. Use os termos definidos nesse modelo para criar uma lista de recursos ou histórias de usuário principal. Atribua os recursos para as iterações para aproximadamente equilibrar a carga de trabalho a estimados em todo o projeto. Essas atribuições serão alterado posteriormente no projeto.  
+- Modele tudo em detalhes nas iterações anteriores. Na primeira iteração, criar um diagrama de classe para os principais itens no glossário de usuário, desenhar um diagrama dos casos de uso importantes e desenhar um diagrama dos principais componentes. Não descreva qualquer um deles separadamente com muitos detalhes, porque o detalhe será alterada posteriormente no projeto. Use os termos definidos nesse modelo para criar uma lista de recursos ou histórias de usuário principal. Atribua os recursos para as iterações para aproximadamente equilibrar a carga de trabalho a estimados em todo o projeto. Essas atribuições serão alterado posteriormente no projeto.  
   
--   Tente implementar versões simplificadas de todos os casos de uso mais importantes em uma iteração inicial. Estender esses casos de uso em iterações posteriores. Essa abordagem ajuda a reduzir o risco de descoberta de uma falha nos requisitos ou a arquitetura muito tarde no projeto para fazer a respeito.  
+- Tente implementar versões simplificadas de todos os casos de uso mais importantes em uma iteração inicial. Estender esses casos de uso em iterações posteriores. Essa abordagem ajuda a reduzir o risco de descoberta de uma falha nos requisitos ou a arquitetura muito tarde no projeto para fazer a respeito.  
   
--   No final de cada iteração, mantenha um workshop de requisitos para definir em detalhes os requisitos ou histórias de usuários que serão desenvolvidas na próxima iteração. Convide usuários e participantes de negócios que podem decidir prioridades, bem como os desenvolvedores e testadores de sistema. Permitir a três horas definir requisitos para uma iteração 2 semanas.  
+- No final de cada iteração, mantenha um workshop de requisitos para definir em detalhes os requisitos ou histórias de usuários que serão desenvolvidas na próxima iteração. Convide usuários e participantes de negócios que podem decidir prioridades, bem como os desenvolvedores e testadores de sistema. Permitir a três horas definir requisitos para uma iteração 2 semanas.  
   
--   O objetivo do workshop é concordar com o que será realizado no final da próxima iteração de todos. Use modelos como uma das ferramentas para ajudar a esclarecer os requisitos. A saída do workshop é uma lista de pendências de iteração: ou seja, uma lista de desenvolvimento de tarefas no [!INCLUDE[esprfound](../includes/esprfound-md.md)] e conjuntos de teste em [!INCLUDE[TCMext](../includes/tcmext-md.md)].  
+- O objetivo do workshop é concordar com o que será realizado no final da próxima iteração de todos. Use modelos como uma das ferramentas para ajudar a esclarecer os requisitos. A saída do workshop é uma lista de pendências de iteração: ou seja, uma lista de desenvolvimento de tarefas no [!INCLUDE[esprfound](../includes/esprfound-md.md)] e conjuntos de teste em [!INCLUDE[TCMext](../includes/tcmext-md.md)].  
   
--   O workshop de requisitos, discutiremos o design somente na medida, você precisa determinar as estimativas para as tarefas de desenvolvimento. Caso contrário, mantenha a discussão ao comportamento do sistema que os usuários podem enfrentar diretamente. Manter o modelo de requisitos separado do modelo de arquitetura.  
+- O workshop de requisitos, discutiremos o design somente na medida, você precisa determinar as estimativas para as tarefas de desenvolvimento. Caso contrário, mantenha a discussão ao comportamento do sistema que os usuários podem enfrentar diretamente. Manter o modelo de requisitos separado do modelo de arquitetura.  
   
--   Stakeholders não técnicos geralmente não têm problemas Noções básicas sobre diagramas UML, com a orientação de você.  
+- Stakeholders não técnicos geralmente não têm problemas Noções básicas sobre diagramas UML, com a orientação de você.  
   
 #### <a name="link-model-to-work-items"></a>Modelo de link a itens de trabalho  
  Após o workshop de requisitos, elaborar os detalhes do modelo de requisitos e vincule o modelo para tarefas de desenvolvimento. Você pode fazer isso vinculando itens de trabalho [!INCLUDE[esprfound](../includes/esprfound-md.md)] aos elementos no modelo. Para saber como fazer isso, consulte [vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md).  
   
  Você pode vincular qualquer elemento para itens de trabalho, mas os elementos mais úteis são da seguinte maneira:  
   
--   Casos de uso. Você pode vincular um caso de uso para as tarefas de desenvolvimento que irão implementá-lo.  
+- Casos de uso. Você pode vincular um caso de uso para as tarefas de desenvolvimento que irão implementá-lo.  
   
--   Use extensões de maiusculas. Se apenas um aspecto de um caso de uso será implementado em uma iteração, você pode separá-lo em um caso de uso base junto com uma ou mais extensões. As extensões são casos de uso vinculados ao caso de base com a relação «estender». Para obter mais informações sobre a extensão de casos de uso, consulte [UML usar diagramas de caso: Referência](../modeling/uml-use-case-diagrams-reference.md).  
+- Use extensões de maiusculas. Se apenas um aspecto de um caso de uso será implementado em uma iteração, você pode separá-lo em um caso de uso base junto com uma ou mais extensões. As extensões são casos de uso vinculados ao caso de base com a relação «estender». Para obter mais informações sobre a extensão de casos de uso, consulte [UML usar diagramas de caso: Referência](../modeling/uml-use-case-diagrams-reference.md).  
   
--   Comentários que descrevem as regras de negócio ou qualidade dos requisitos de serviço. Para obter mais informações, consulte [requisitos de usuário do modelo](../modeling/model-user-requirements.md).  
+- Comentários que descrevem as regras de negócio ou qualidade dos requisitos de serviço. Para obter mais informações, consulte [requisitos de usuário do modelo](../modeling/model-user-requirements.md).  
   
 #### <a name="link-model-to-tests"></a>Modelo de link para testes  
  Use o modelo de requisitos para orientar o design dos testes de aceitação. Crie esses testes simultaneamente com o trabalho de desenvolvimento.  

@@ -21,12 +21,12 @@ caps.latest.revision: 41
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bb42950acf958dbb71877671da57f5ea6fcd6898
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c6c6407c038c7d6847db073c1f00c103d9483e78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039109"
 ---
 # <a name="view-data-values-in-data-tips--in-the-code-editor"></a>Exibir valores de dados em Dicas de Dados no editor de códigos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,34 +52,34 @@ Os DataTips fornecem um modo conveniente de exibir informações sobre variávei
   
 ### <a name="to-unpin-a-datatip-and-make-it-float"></a>Para desafixar um DataTip e fazê-lo flutuar  
   
--   Em um DataTip fixado, clique o **Desafixar da origem** ícone.  
+- Em um DataTip fixado, clique o **Desafixar da origem** ícone.  
   
      O ícone de fixar é alterado para a posição desafixada. O DataTip agora flutua sobre todas as janelas abertas. O DataTip flutuante é fechado quando a sessão de depuração termina.  
   
 ### <a name="to-repin-a-floating-datatip"></a>Ao refixar um DataTip flutuante  
   
--   Em um DataTip, clique no ícone de fixar.  
+- Em um DataTip, clique no ícone de fixar.  
   
      O ícone de fixar é alterado para a posição fixada. Se o DataTip estiver fora de uma janela de origem, o ícone de fixar estará desabilitado e o DataTip não poderá ser fixado.  
   
 ### <a name="to-close-a-datatip"></a>Para fechar um DataTip  
   
--   Coloque o ponteiro do mouse sobre um DataTip e, em seguida, clique no **fechar** ícone.  
+- Coloque o ponteiro do mouse sobre um DataTip e, em seguida, clique no **fechar** ícone.  
   
 ### <a name="to-close-all-datatips"></a>Para fechar todos os DataTips  
   
--   Sobre o **Debug** menu, clique em **limpar todos os DataTips**.  
+- Sobre o **Debug** menu, clique em **limpar todos os DataTips**.  
   
 ### <a name="to-close-all-datatips-for-a-specific-file"></a>Para fechar todos os DataTips para um arquivo específico  
   
--   Sobre o **depurar** menu, clique em **limpar todos os DataTips fixados no** *arquivo*.  
+- Sobre o **depurar** menu, clique em **limpar todos os DataTips fixados no** *arquivo*.  
   
 ## <a name="expanding-and-editing-information"></a>Expandindo e editando as informações  
  Você pode usar os DataTips para expandir uma matriz, uma estrutura ou um objeto para exibir seus membros. Você também pode editar o valor de uma variável de um DataTip.  
   
 #### <a name="to-expand-a-variable-to-see-its-elements"></a>Para expandir uma variável para ver seus elementos  
   
--   Em um DataTip, coloque o ponteiro do mouse o **+** entrada que antecede o nome da variável.  
+- Em um DataTip, coloque o ponteiro do mouse o **+** entrada que antecede o nome da variável.  
   
      A variável expande para mostrar seus elementos na forma da árvore.  
   
@@ -87,16 +87,16 @@ Os DataTips fornecem um modo conveniente de exibir informações sobre variávei
   
 #### <a name="to-edit-the-value-of-a-variable-using-a-datatip"></a>Para editar o valor de uma variável usando um DataTip  
   
-1.  Em um DataTip, clique no valor. Isso está desabilitado para valores somente leitura.  
+1. Em um DataTip, clique no valor. Isso está desabilitado para valores somente leitura.  
   
-2.  Digite um novo valor e pressione ENTER.  
+2. Digite um novo valor e pressione ENTER.  
   
 ## <a name="making-a-datatip-transparent"></a>Criando um DataTip transparente  
  Se quiser ver o código que está por trás de um DataTip, poderá criar o DataTip temporariamente transparente. Isso não se aplica a DataTips fixados ou flutuantes.  
   
 #### <a name="to-make-a-datatip-transparent"></a>Para criar um DataTip transparente  
   
--   Em um DataTip, pressione CTRL.  
+- Em um DataTip, pressione CTRL.  
   
      O DataTip permanecerá transparente enquanto você mantiver pressionada a tecla CTRL.  
   
@@ -105,7 +105,7 @@ Os DataTips fornecem um modo conveniente de exibir informações sobre variávei
   
 #### <a name="to-view-the-contents-of-a-variable-using-a-visualizer"></a>Para exibir o conteúdo de uma variável usando um visualizador  
   
--   Clique no ícone de lupa para selecionar o visualizador padrão para o tipo de dados.  
+- Clique no ícone de lupa para selecionar o visualizador padrão para o tipo de dados.  
   
      - ou -  
   
@@ -118,7 +118,7 @@ Os DataTips fornecem um modo conveniente de exibir informações sobre variávei
   
 #### <a name="to-add-a-variable-to-the-watch-window"></a>Para adicionar uma variável à janela Inspeção  
   
--   Um DataTip com o botão direito e, em seguida, clique em **Adicionar inspeção**.  
+- Um DataTip com o botão direito e, em seguida, clique em **Adicionar inspeção**.  
   
      A variável é adicionada para o **inspeção** janela. Se você estiver usando uma edição que dá suporte a vários **Watch** windows, a variável é adicionada à **inspeção 1.**  
   
@@ -127,19 +127,19 @@ Os DataTips fornecem um modo conveniente de exibir informações sobre variávei
   
 #### <a name="to-export-datatips"></a>Para exportar DataTips  
   
-1.  No menu Depurar, clique em **exportar DataTips**.  
+1. No menu Depurar, clique em **exportar DataTips**.  
   
      O **exportar DataTips** caixa de diálogo é exibida.  
   
-2.  Use técnicas de arquivo padrão para navegar até o local onde você deseja salvar o arquivo XML, digite um nome para o arquivo na **nome do arquivo** caixa e, em seguida, clique em **Okey**.  
+2. Use técnicas de arquivo padrão para navegar até o local onde você deseja salvar o arquivo XML, digite um nome para o arquivo na **nome do arquivo** caixa e, em seguida, clique em **Okey**.  
   
 #### <a name="to-import-datatips"></a>Para importar DataTips  
   
-1.  No menu Depurar, clique em **importar DataTips**.  
+1. No menu Depurar, clique em **importar DataTips**.  
   
      O **importar DataTips** caixa de diálogo é exibida.  
   
-2.  Use a caixa de diálogo para localizar o arquivo XML que você deseja abrir e clique em **Okey**.  
+2. Use a caixa de diálogo para localizar o arquivo XML que você deseja abrir e clique em **Okey**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)   

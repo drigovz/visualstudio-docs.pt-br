@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b47b1b1a776d27c2a75c9303c34255aff8622eb7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71fbafb46db563c56bafb926b66b88bc39fda2ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928161"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039339"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Como: Criar um pacote de Bootstrapper localizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ Depois de criar um pacote de bootstrapper, você pode criar versões localizadas
   
  Por padrão, o Visual Studio 2010 inclui pacotes de bootstrapper localizados apenas para os .NET Framework 4, .NET Framework 4 Client Profile, F# Runtime 2.0 e F# Runtime 4.0. Você pode criar pacotes localizados para outros bootstrappers concluindo três etapas.  
   
-1.  Crie uma pasta que é nomeada após o nome da localidade em \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nomepacotebootstrapper*.  
+1. Crie uma pasta que é nomeada após o nome da localidade em \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nomepacotebootstrapper*.  
   
-2.  Crie um arquivo que contém os termos de licença de software para o pacote de bootstrapper e coloque-o na nova pasta.  
+2. Crie um arquivo que contém os termos de licença de software para o pacote de bootstrapper e coloque-o na nova pasta.  
   
-3.  Crie um manifesto do pacote com o nome package.xml, atualize as cadeias de caracteres e cultura, e coloque o arquivo na nova pasta. Se você já criou um bootstrapper do Visual Studio no idioma de destino, você pode copiar o arquivo package.xml do Visual Studio e modificá-lo nesta etapa.  
+3. Crie um manifesto do pacote com o nome package.xml, atualize as cadeias de caracteres e cultura, e coloque o arquivo na nova pasta. Se você já criou um bootstrapper do Visual Studio no idioma de destino, você pode copiar o arquivo package.xml do Visual Studio e modificá-lo nesta etapa.  
   
 > [!NOTE]
 >  Se você estiver usando um projeto de instalação para implantar aplicativos, você poderá localizar o aplicativo alterando a propriedade **Localização**.  
@@ -40,7 +40,7 @@ Depois de criar um pacote de bootstrapper, você pode criar versões localizadas
   
 ### <a name="to-create-a-localized-bootstrapper-package"></a>Para criar um pacote de bootstrapper localizado  
   
-1.  Crie uma pasta com o nome da localidade.  
+1. Crie uma pasta com o nome da localidade.  
   
      Em computadores de 32 bits, crie a pasta no \Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\\*Nomepacotebootstrapper*\ pasta.  
   
@@ -65,33 +65,33 @@ Depois de criar um pacote de bootstrapper, você pode criar versões localizadas
     |Russo|ru|  
     |Turco|tr|  
   
-2.  Crie um arquivo que contém os termos de licença de software para o pacote de bootstrapper e coloque-o na nova pasta.  
+2. Crie um arquivo que contém os termos de licença de software para o pacote de bootstrapper e coloque-o na nova pasta.  
   
-3.  Crie um manifesto do pacote com o nome package.xml e coloque-o na nova pasta. Para obter mais informações, confira [Como: Criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md).  
+3. Crie um manifesto do pacote com o nome package.xml e coloque-o na nova pasta. Para obter mais informações, confira [Como: Criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md).  
   
-4.  Atualize a seção `<Strings>` do manifesto do pacote, para que as cadeias de caracteres fiquem no idioma correto para a localidade.  
+4. Atualize a seção `<Strings>` do manifesto do pacote, para que as cadeias de caracteres fiquem no idioma correto para a localidade.  
   
-5.  Altere o valor `<String Name="Culture">` para corresponder ao nome da pasta.  
+5. Altere o valor `<String Name="Culture">` para corresponder ao nome da pasta.  
   
-6.  Salve o arquivo package.xml.  
+6. Salve o arquivo package.xml.  
   
 ### <a name="to-create-a-bootstrapper-package-for-net-framework-35-service-pack-1-localized-in-french"></a>Para criar um pacote de bootstrapper para o .NET Framework 3.5 Service Pack 1 localizado em francês  
   
-1.  Crie uma pasta com o nome fr. O nome da pasta deve corresponder ao nome da localidade.  
+1. Crie uma pasta com o nome fr. O nome da pasta deve corresponder ao nome da localidade.  
   
      Em computadores de 32 bits, crie a pasta no diretório \Arquivos de Programas\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Pacotes\DotNetFX35SP1\ pasta.  
   
      Em computadores de 64 bits, crie a pasta no diretório \Arquivos de Programas (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Pacotes\DotNetFX35SP1\ pasta.  
   
-2.  Coloque uma versão localizada dos termos de licença de software na pasta fr.  
+2. Coloque uma versão localizada dos termos de licença de software na pasta fr.  
   
-3.  Copie o arquivo \Arquivos de Programas (x86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Pacotes\DotNetFX35SP1\en\package.xml para a pasta fr, e abra no XML Designer.  
+3. Copie o arquivo \Arquivos de Programas (x86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Pacotes\DotNetFX35SP1\en\package.xml para a pasta fr, e abra no XML Designer.  
   
-4.  Atualize a seção `<Strings>` do pacote do manifesto para que as cadeias de caracteres de erro fiquem em francês.  
+4. Atualize a seção `<Strings>` do pacote do manifesto para que as cadeias de caracteres de erro fiquem em francês.  
   
-5.  Altere o valor `<String Name="Culture">` para fr.  
+5. Altere o valor `<String Name="Culture">` para fr.  
   
-6.  Salve o arquivo package.xml.  
+6. Salve o arquivo package.xml.  
   
 ## <a name="see-also"></a>Consulte também  
  [Criando pacotes de bootstrapper](../deployment/creating-bootstrapper-packages.md)   
