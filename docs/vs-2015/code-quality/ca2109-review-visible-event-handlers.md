@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 45e741882e8da2b5ed419540e40f3be40278d540
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f5bd94892a0321346adeacbcad2655a4ab62c6a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926459"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038324"
 ---
 # <a name="ca2109-review-visible-event-handlers"></a>CA2109: Examinar manipuladores de eventos visíveis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,18 +42,18 @@ ms.locfileid: "58926459"
 
  Uma demanda de forma confiável não pode proteger um método invocado por um manipulador de eventos. Demandas de segurança ajuda proteger o código, examinando os chamadores na pilha de chamadas de chamadores não confiáveis. Código que adiciona um manipulador de eventos a um evento não é necessariamente presente na pilha de chamadas quando executar métodos do manipulador de eventos. Portanto, a pilha de chamadas pode ter apenas altamente confiável os chamadores quando o método de manipulador de eventos é invocado. Isso faz com que as demandas feitas pelo método de manipulador de eventos seja bem-sucedida. Além disso, a permissão exigida pode ser confirmada quando o método é invocado. Por esses motivos, o risco de não corrigir uma violação dessa regra pode ser avaliado somente depois de examinar o método de manipulação de eventos. Ao examinar seu código, considere as seguintes questões:
 
--   O seu manipulador de eventos executa todas as operações que são perigosas ou podem ser exploradas como declarar permissões ou suprimir a permissão de código não gerenciado?
+- O seu manipulador de eventos executa todas as operações que são perigosas ou podem ser exploradas como declarar permissões ou suprimir a permissão de código não gerenciado?
 
--   Quais são as ameaças de segurança para e do seu código, porque ele pode ser executado a qualquer momento com apenas altamente confiáveis que os chamadores na pilha?
+- Quais são as ameaças de segurança para e do seu código, porque ele pode ser executado a qualquer momento com apenas altamente confiáveis que os chamadores na pilha?
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, examine o método e avaliar o seguinte:
 
--   Você pode tornar o método de manipulação de eventos não público?
+- Você pode tornar o método de manipulação de eventos não público?
 
--   Você pode mover toda a funcionalidade perigosa fora do manipulador de eventos?
+- Você pode mover toda a funcionalidade perigosa fora do manipulador de eventos?
 
--   Se uma exigência de segurança é imposta, isso pode ser feito de alguma outra maneira?
+- Se uma exigência de segurança é imposta, isso pode ser feito de alguma outra maneira?
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Suprima um aviso nessa regra somente após uma análise atenta da segurança para certificar-se de que seu código não representem uma ameaça de segurança.

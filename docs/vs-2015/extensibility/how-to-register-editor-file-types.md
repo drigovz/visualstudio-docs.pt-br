@@ -10,12 +10,12 @@ ms.assetid: 54846779-8290-48de-90ab-81011559d9a5
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 697565600ef37024abde3acd8f2092c690f31e32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8d22e61d88b5f6e3959a369f6957efbc824384b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929557"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042035"
 ---
 # <a name="how-to-register-editor-file-types"></a>Como: Tipos de arquivo do Editor de registro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ A maneira mais fácil de registrar tipos de arquivo do editor é usando os atrib
   
 #### <a name="to-register-editor-file-types-using-mpf-classes"></a>Para registrar tipos de arquivo do editor usando classes MPF  
   
-1.  Forneça o <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> classe com os parâmetros apropriados para seu editor na classe do VSPackage.  
+1. Forneça o <xref:Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute> classe com os parâmetros apropriados para seu editor na classe do VSPackage.  
   
     ```  
     [Microsoft.VisualStudio.Shell.ProvideEditorExtensionAttribute(typeof(EditorFactory), ".Sample", 32,   
@@ -43,7 +43,7 @@ A maneira mais fácil de registrar tipos de arquivo do editor é usando os atrib
   
      `NameResourceID` é definido no arquivo do projeto BasicEditorUI Resources.h e identifica o editor como "Meu Editor".  
   
-2.  Substituir o método <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
+2. Substituir o método <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
   
      Em sua implementação do <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método, chame o <xref:Microsoft.VisualStudio.Shell.Package.RegisterEditorFactory%2A> método e passar a instância de sua fábrica de editor, como demonstrada a seguir.  
   
@@ -61,7 +61,7 @@ A maneira mais fácil de registrar tipos de arquivo do editor é usando os atrib
   
      Esta etapa registra a fábrica do editor e as extensões de arquivo do editor.  
   
-3.  Cancelar o registro as fábricas de editor.  
+3. Cancelar o registro as fábricas de editor.  
   
      As fábricas de editor são canceladas automaticamente quando o VSPackage é descartado. Se o objeto de fábrica de editor implementa o <xref:System.IDisposable> interface, seu `Dispose` método é chamado depois que a fábrica tem sido cancelada com [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
@@ -70,7 +70,7 @@ A maneira mais fácil de registrar tipos de arquivo do editor é usando os atrib
   
 #### <a name="to-register-editor-file-types-using-a-registry-script"></a>Para registrar tipos de arquivo do editor usando um script de registro  
   
-1.  No seu script de registro, definir a fábrica do editor e a cadeia de caracteres do GUID de fábrica do editor conforme mostra o `GUID_BscEditorFactory` seção do script de registro a seguir. Além disso, defina a extensão e a prioridade da extensão do editor:  
+1. No seu script de registro, definir a fábrica do editor e a cadeia de caracteres do GUID de fábrica do editor conforme mostra o `GUID_BscEditorFactory` seção do script de registro a seguir. Além disso, defina a extensão e a prioridade da extensão do editor:  
   
     ```  
   
@@ -92,9 +92,9 @@ A maneira mais fácil de registrar tipos de arquivo do editor é usando os atrib
   
      A extensão de arquivo do editor neste exemplo é identificada como ". rtf" e a prioridade for "50". As cadeias de caracteres do GUID são definidas no arquivo Resource h do projeto de exemplo BscEdit.  
   
-2.  Registre o VSPackage.  
+2. Registre o VSPackage.  
   
-3.  Registre-se a fábrica do editor.  
+3. Registre-se a fábrica do editor.  
   
      A fábrica do editor é registrada no <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterEditors.RegisterEditor%2A> implementação.  
   

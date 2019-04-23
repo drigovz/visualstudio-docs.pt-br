@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2529b22d7039101f83952b3390221af5b78922b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 34d988f88787efc2f40b663ef2f22e6273055533
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605101"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038706"
 ---
-# <a name="test-area-4-check-in"></a>Área de teste 4: Fazer Check-In
+# <a name="test-area-4-check-in"></a>Área de teste 4: Fazer check-in
 Essa área de plug-in de teste de controle de origem aborda enviar itens atualizados para o armazenamento de versão por meio de **Fazer Check-In** comando.
 
 ## <a name="command-menu-access"></a>Acesso ao Menu de comando
@@ -33,11 +33,11 @@ Essa área de plug-in de teste de controle de origem aborda enviar itens atualiz
 
 ## <a name="common-expected-behavior"></a>Comportamento esperado comuns
 
--   Projetos e arquivos adicionados a uma solução ou projeto sob controle do código-fonte aparecem na **Fazer Check-In** caixa de diálogo e o **check-ins pendentes** janela.
+- Projetos e arquivos adicionados a uma solução ou projeto sob controle do código-fonte aparecem na **Fazer Check-In** caixa de diálogo e o **check-ins pendentes** janela.
 
--   Após o check-in, os itens adicionados são exibidos no controle de origem.
+- Após o check-in, os itens adicionados são exibidos no controle de origem.
 
--   Após o check-in, itens atualizados estão corretamente com controle de versão no repositório.
+- Após o check-in, itens atualizados estão corretamente com controle de versão no repositório.
 
 ## <a name="test-cases"></a>Casos de teste
  Estes são os casos de teste específicos para a área de teste de check-in.

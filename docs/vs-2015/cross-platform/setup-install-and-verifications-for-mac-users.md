@@ -6,17 +6,16 @@ ms.assetid: 22725520-59ba-4f6f-80e4-097b1287a34b
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 52310ffb0a3c08f652f4d628db1c047a5d0417d6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 623e47e7244e9e4317e89f47cfda02bda465273b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772029"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670284"
 ---
 # <a name="setup-install-and-verifications-for-mac-users"></a>Configuração, instalação e verificações para usuários do Mac
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Este tópico destina-se a desenvolvedores que trabalham principalmente em um Mac e que usarão opcionalmente o Visual Studio dentro de uma máquina virtual do Windows no Mac. Se você for um desenvolvedor que trabalhe principalmente em um computador Windows e precisará configurar um Mac secundário para o direcionamento do iOS, consulte o tópico principal [Instalação e Configuração](../cross-platform/setup-and-install.md).  
   
  Para trabalhar com o Xamarin em um Mac, você precisará do seguinte:  
@@ -27,7 +26,7 @@ Este tópico destina-se a desenvolvedores que trabalham principalmente em um Mac
   
 - Uma das seguintes configurações:  
   
-  -   **Para o Xamarin Studio em execução diretamente no Mac:** Xamarin Studio é um ambiente de desenvolvimento do Xamarin que dá suporte à criação aplicativos Android, iOS e Windows usando C#.  Para obter uma visão geral rápida do Xamarin Studio, consulte a [Visão geral do Xamarin Studio](https://xamarin.com/studio) (xamarin.com).  
+  -   **Para o Xamarin Studio em execução diretamente no Mac:** Xamarin Studio é um ambiente de desenvolvimento do Xamarin que dá suporte à criação aplicativos Android, iOS e Windows usando c#.  Para obter uma visão geral rápida do Xamarin Studio, consulte a [Visão geral do Xamarin Studio](https://xamarin.com/studio) (xamarin.com).  
   
   -   **Se você já tiver o Parallels ou VMWare configurado em seu Mac:** execute o Windows com o Visual Studio 2015 e Xamarin 4 no Parallels ou VMWare.  Com essa configuração, o Xamarin é uma extensão que é instalada com o Visual Studio e que oferece a capacidade de usar o Visual Studio como ambiente de desenvolvimento para a criação de aplicativos Android, iOS e WinPhone usando C#.  Observe que você pode obter uma assinatura de 3 meses gratuita do Parallels como parte do programa Visual Studio Developer Essentials. Consulte [Microsoft Visual Studio Dev Essentials Incluirá Parallels Desktop Pro e Parallels Access](http://blog.parallels.com/blog/2015/11/18/visual-studio-dev-essentials/) (blog Parallels).  
   

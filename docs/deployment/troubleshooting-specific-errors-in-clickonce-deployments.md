@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46b7a159fb2d15f817cad47817262202397d3981
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c2d337a1ed97524dc04c8154fe2b074baf0921ca
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654315"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042375"
 ---
 # <a name="troubleshoot-specific-errors-in-clickonce-deployments"></a>Solucionar erros específicos em implantações do ClickOnce
 Este artigo lista os seguintes erros comuns que podem ocorrer quando você implanta um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e fornece etapas para resolver cada problema.
@@ -81,9 +81,9 @@ Este artigo lista os seguintes erros comuns que podem ocorrer quando você impla
 
  Você deve fazer o seguinte:
 
--   Verifique se a identidade do manifesto de implantação, identidade do manifesto de aplicativo e identidade do aplicativo principal EXE são exclusivos.
+- Verifique se a identidade do manifesto de implantação, identidade do manifesto de aplicativo e identidade do aplicativo principal EXE são exclusivos.
 
--   Verifique se seus caminhos de arquivo não estão mais de 100 caracteres. Se seu aplicativo contém os caminhos de arquivo que são muito longos, você poderá exceder as limitações do caminho máximo que você pode armazenar. Tente encurtar os caminhos e reinstale.
+- Verifique se seus caminhos de arquivo não estão mais de 100 caracteres. Se seu aplicativo contém os caminhos de arquivo que são muito longos, você poderá exceder as limitações do caminho máximo que você pode armazenar. Tente encurtar os caminhos e reinstale.
 
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>PrivatePath configurações no arquivo de configuração de aplicativo não são consideradas
  Para usar PrivatePath (caminhos de investigação do Fusion), o aplicativo deve solicitar permissão de confiança total. Tente alterar o manifesto do aplicativo para solicitar confiança total e, em seguida, tente novamente.
@@ -112,9 +112,9 @@ Este artigo lista os seguintes erros comuns que podem ocorrer quando você impla
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Você tentou entrar com um certificado no repositório de certificados e uma caixa de mensagem em branco recebidos
  No **Signing** caixa de diálogo, você deve:
 
--   Selecione **assinar com um certificado armazenado**, e
+- Selecione **assinar com um certificado armazenado**, e
 
--   Selecione um certificado da lista; o primeiro certificado não é a seleção padrão.
+- Selecione um certificado da lista; o primeiro certificado não é a seleção padrão.
 
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Clicar no botão "Entrar não" faz com que uma exceção
  Esse problema é um bug conhecido. Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestos são necessários a serem assinados. Basta selecionar uma das opções de assinatura e, em seguida, clique em **Okey**.

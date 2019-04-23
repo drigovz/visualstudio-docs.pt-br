@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5aa84c4f7a39a5e5b7a1ee3458c09397bc81f37
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1cd9619eae1f0c74cb7b8096d6c51163157d934c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929306"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042048"
 ---
 # <a name="develop-tests-from-a-model"></a>Desenvolver testes por meio de um modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,17 +46,17 @@ Você pode usar os requisitos e modelos de arquitetura para ajudar você a organ
   
  Essas diretrizes podem ser úteis:  
   
--   Cada caso de uso deve ter vários testes, para caminhos principais e os resultados excepcionais.  
+- Cada caso de uso deve ter vários testes, para caminhos principais e os resultados excepcionais.  
   
--   Quando você descreve um caso de uso no modelo de requisitos, é mais importante definir seu pós-condição, ou seja, a meta é obtida do que para descrever em detalhes os procedimentos que o usuário segue para alcançar a meta. Por exemplo, a pós-condição de ordem de uma refeição pode ser que um restaurante está preparando uma refeição para um cliente e que o cliente paga. A pós-condição é o critério que seus testes devem verificar.  
+- Quando você descreve um caso de uso no modelo de requisitos, é mais importante definir seu pós-condição, ou seja, a meta é obtida do que para descrever em detalhes os procedimentos que o usuário segue para alcançar a meta. Por exemplo, a pós-condição de ordem de uma refeição pode ser que um restaurante está preparando uma refeição para um cliente e que o cliente paga. A pós-condição é o critério que seus testes devem verificar.  
   
--   Base testes separados em cláusulas de separados de pós-condição. Por exemplo, crie testes separados para notificar o restaurante da ordem e para fazer o pagamento do cliente. Essa separação tem estas vantagens:  
+- Base testes separados em cláusulas de separados de pós-condição. Por exemplo, crie testes separados para notificar o restaurante da ordem e para fazer o pagamento do cliente. Essa separação tem estas vantagens:  
   
-    -   Com frequência as alterações em diferentes aspectos dos requisitos ocorrem de forma independente. Separando os testes em diferentes aspectos dessa maneira, você tornar mais fácil atualizar os testes quando requisitos mudam.  
+    - Com frequência as alterações em diferentes aspectos dos requisitos ocorrem de forma independente. Separando os testes em diferentes aspectos dessa maneira, você tornar mais fácil atualizar os testes quando requisitos mudam.  
   
-    -   Se o plano de desenvolvimento implementa um aspecto do caso de uso antes da outra, você pode habilitar os testes separadamente à medida que progride de desenvolvimento.  
+    - Se o plano de desenvolvimento implementa um aspecto do caso de uso antes da outra, você pode habilitar os testes separadamente à medida que progride de desenvolvimento.  
   
--   Quando você cria os testes, separe a escolha de dados de teste do código ou script que determina se a pós-condição foi atingida. Por exemplo, um teste de uma função aritmético simples pode ser: Entrada 4; Verifique se a saída é 2. Em vez disso, crie o script como: Escolha uma entrada; Multiplique o resultado por si só e verifique se o resultado é a entrada original. Esse estilo permite variar as entradas de teste sem alterar o corpo principal do teste.  
+- Quando você cria os testes, separe a escolha de dados de teste do código ou script que determina se a pós-condição foi atingida. Por exemplo, um teste de uma função aritmético simples pode ser: Entrada 4; Verifique se a saída é 2. Em vez disso, crie o script como: Escolha uma entrada; Multiplique o resultado por si só e verifique se o resultado é a entrada original. Esse estilo permite variar as entradas de teste sem alterar o corpo principal do teste.  
   
 #### <a name="linking-tests-to-use-cases"></a>Testes de vinculação para casos de uso  
  Se você estiver usando [!INCLUDE[TCMlong](../includes/tcmlong-md.md)] para criar e executar seus testes, você pode organizar seus testes em itens de trabalho de história de usuário, requisito ou em caso de uso. Você pode vincular esses itens de trabalho para casos de uso em seu modelo. Isso permite que você rapidamente rastrear alterações de requisitos para os testes e ajuda a acompanhar o progresso de cada caso de uso.  
@@ -147,32 +147,32 @@ Assert (countAfter == countBefore = 1);
   
  Do ponto de vista teste, um modelo de requisitos pode ser visto como uma abreviação para os testes. Portanto, é importante manter a relação entre os testes e o modelo em todo o projeto.  
   
-##  <a name="Attaching"></a> Anexando a casos de teste para elementos de modelo  
+## <a name="Attaching"></a> Anexando a casos de teste para elementos de modelo  
  Se seu projeto usa [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], você pode vincular os testes aos elementos no seu modelo. Isso permite que você localize rapidamente os testes afetados por uma alteração nos requisitos e ajuda você a controlar a extensão para o qual um requisito foi concretizado.  
   
  Você pode vincular os testes para todos os tipos de elemento. Estes são alguns exemplos:  
   
--   Vincule um caso de uso para os testes que exercitam a ele.  
+- Vincule um caso de uso para os testes que exercitam a ele.  
   
--   Gravar as cláusulas de pós-condição de casos de uso ou meta em comentários que estão vinculados ao caso de uso, e, em seguida, vincular testes para cada comentário.  
+- Gravar as cláusulas de pós-condição de casos de uso ou meta em comentários que estão vinculados ao caso de uso, e, em seguida, vincular testes para cada comentário.  
   
--   Escrever regras de invariáveis nos comentários em diagramas de classe ou diagramas de atividade e vinculá-los aos testes.  
+- Escrever regras de invariáveis nos comentários em diagramas de classe ou diagramas de atividade e vinculá-los aos testes.  
   
--   Vincular testes para um diagrama de atividade, ou para atividades individuais.  
+- Vincular testes para um diagrama de atividade, ou para atividades individuais.  
   
--   Vincule a um conjunto de testes para o componente ou o subsistema que ele testa.  
+- Vincule a um conjunto de testes para o componente ou o subsistema que ele testa.  
   
 #### <a name="to-link-tests-to-a-model-element-or-relationship"></a>Para vincular os testes a um elemento de modelo ou a relação  
   
-1.  No [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], criar um requisito e um conjunto de testes de base nele. Para saber como fazer isso, consulte [testando o aplicativo](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
+1. No [!INCLUDE[TCMlong](../includes/tcmlong-md.md)], criar um requisito e um conjunto de testes de base nele. Para saber como fazer isso, consulte [testando o aplicativo](http://msdn.microsoft.com/library/796b7d6d-ad45-4772-9719-55eaf5490dac).  
   
      O requisito de que você cria é um item de trabalho em [!INCLUDE[vstsTfsShort](../includes/vststfsshort-md.md)]. Pode ser um item de trabalho de história de usuário, requisito ou caso de uso, dependendo do modelo de processo que usa o seu projeto com [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para obter mais informações, consulte [acompanhar o trabalho usando o Visual Studio Team Services ou Team Foundation Server](http://msdn.microsoft.com/library/52aa8bc9-fc7e-4fae-9946-2ab255ca7503).  
   
-2.  Vincule o item de trabalho de requisito para um ou mais elementos em seu modelo.  
+2. Vincule o item de trabalho de requisito para um ou mais elementos em seu modelo.  
   
      Em um diagrama de modelagem, clique com botão direito um elemento, comentário ou relação e, em seguida, clique em **Link para o Item de trabalho**. Para obter mais informações, consulte [vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md).  
   
-3.  Adicione ao conjunto de testes, casos de teste que verificam se o requisito expressado no elemento de modelo.  
+3. Adicione ao conjunto de testes, casos de teste que verificam se o requisito expressado no elemento de modelo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Criar modelos para seu aplicativo](../modeling/create-models-for-your-app.md)   

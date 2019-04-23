@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9fa5df395aee8e93c191535a7bec5b078563e3aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6567b4ff4ee7c798ac82c5d33ea50ac206fcd692
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801098"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039040"
 ---
 # <a name="customizing-project-and-item-templates"></a>Personalizando modelos de projeto e de item
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,29 +26,29 @@ Depois que os modelos de projeto e de item tiverem sido criados, você ainda pod
   
  Por exemplo, é possível executar as seguintes tarefas:  
   
--   Modificar e exportar um modelo existente como um modelo personalizado.  
+- Modificar e exportar um modelo existente como um modelo personalizado.  
   
-     Para obter mais informações, consulte [Como atualizar modelos existentes](../ide/how-to-update-existing-templates.md).  
+     Para obter mais informações, confira [Como: Atualizar modelos existentes](../ide/how-to-update-existing-templates.md).  
   
--   Passe parâmetros personalizados para um modelo para substituir os valores existentes.  
+- Passe parâmetros personalizados para um modelo para substituir os valores existentes.  
   
-     Para obter mais informações, consulte [Como substituir parâmetros em um modelo](../ide/how-to-substitute-parameters-in-a-template.md).  
+     Para obter mais informações, confira [Como: Substituir parâmetros em um modelo](../ide/how-to-substitute-parameters-in-a-template.md).  
   
--   Personalize os assistentes que criam projetos com base em modelos.  
+- Personalize os assistentes que criam projetos com base em modelos.  
   
-     Para obter mais informações, consulte [Como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md).  
+     Para obter mais informações, confira [Como: Usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md).  
   
 ## <a name="related-sections"></a>Seções relacionadas  
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)  
   
- [Como solucionar problemas de modelos](../ide/how-to-troubleshoot-templates.md)  
+ [Como: Solucionar problemas de modelos](../ide/how-to-troubleshoot-templates.md)  
   
- [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)  
+ [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)  
   
- [Como criar modelos de item](../ide/how-to-create-item-templates.md)  
+ [Como: Criar modelos de item](../ide/how-to-create-item-templates.md)  
   
- [Como criar kits de início](../ide/how-to-create-starter-kits.md)  
+ [Como: Criar kits de início](../ide/how-to-create-starter-kits.md)  
   
- [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
+ [Referência de esquema do modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)  
   
  <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>

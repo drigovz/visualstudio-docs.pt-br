@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: da57824eb467bf1691175a80d74cc61b8f181617
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040958"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gerenciando exceções com o depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,11 +47,11 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
   
  Quando uma exceção ocorre, o depurador grava uma mensagem de exceção para a janela de saída. Ele pode interromper a execução nos seguintes casos:  
   
--   Quando uma exceção é lançada e não é tratada.  
+- Quando uma exceção é lançada e não é tratada.  
   
--   Quando o depurador está definido para interromper a execução imediatamente quando uma exceção é lançada, antes que qualquer manipulador seja invocado.  
+- Quando o depurador está definido para interromper a execução imediatamente quando uma exceção é lançada, antes que qualquer manipulador seja invocado.  
   
--   Se você tiver definido [Just My Code](../debugger/just-my-code.md), e o depurador está definido como interromper qualquer exceção que não é tratada no código do usuário.  
+- Se você tiver definido [Just My Code](../debugger/just-my-code.md), e o depurador está definido como interromper qualquer exceção que não é tratada no código do usuário.  
   
 > [!NOTE]
 >  O ASP.NET tem um manipulador de exceção de nível superior que mostra páginas de erro em um navegador. Ele não interromper a execução, a menos que **Just My Code** está ativado. Por exemplo, consulte [definindo o depurador para continuar em exceções sem tratamento do usuário](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) abaixo.  
@@ -73,7 +73,7 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
   
  Se você marcar uma determinada exceção, a execução do depurador interromperá sempre que a exceção é lançada, independentemente se ele é tratado ou sem tratamento. Neste ponto, a exceção é chamada uma exceção de primeira chance. Por exemplo, aqui estão alguns cenários:  
   
-1. O seguinte C# aplicativo de console, o método Main lança um **AccessViolationException** dentro de um `try/catch` bloco:  
+1. O seguinte c# aplicativo de console, o método Main lança um **AccessViolationException** dentro de um `try/catch` bloco:  
   
    ```csharp  
    static void Main(string[] args)  
@@ -100,7 +100,7 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
   
     mas ele não exibe o `here` linha.  
   
-2. Um aplicativo de console C# faz referência a uma biblioteca de classes com uma classe que tem dois métodos, um método que lança uma exceção e lida com isso e um segundo método que gera a mesma exceção e não tratá-la:  
+2. Um aplicativo de console c# faz referência a uma biblioteca de classes com uma classe que tem dois métodos, um método que lança uma exceção e lida com isso e um segundo método que gera a mesma exceção e não tratá-la:  
   
    ```vb  
    public class Class1  
@@ -141,7 +141,7 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
   
    ![Restaurar padrões nas configurações de exceção](../debugger/media/restoredefaultexceptions.png "RestoreDefaultExceptions")  
   
-###  <a name="BKMK_UserUnhandled"></a> Definir o depurador para continuar em exceções sem tratamento do usuário  
+### <a name="BKMK_UserUnhandled"></a> Definir o depurador para continuar em exceções sem tratamento do usuário  
  Se você estiver depurando código do .NET ou JavaScript com [Just My Code](../debugger/just-my-code.md), você pode instruir o depurador não para interromper as exceções que não são manipuladas no código do usuário, mas são tratadas em outro lugar.  
   
 1. No **configurações de exceção** janela, abra o menu de contexto clicando duas vezes na janela e, em seguida, selecionando **Mostrar colunas**. (Se você tiver desativado **Just My Code**, você não verá esse comando.)  
@@ -166,7 +166,7 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
   
  Configurações de exceção são persistidas no arquivo. suo da solução, para que elas se aplicam a uma determinada solução. É possível reutilizar configurações de exceção específicos em soluções. Neste ponto, apenas as exceções adicionadas são persistentes; não são excluídos de exceções. Em outras palavras, você pode adicionar uma exceção, feche e reabra a solução e a exceção ainda estará lá. Mas se você excluir uma exceção e fechar/reabrir a solução, a exceção reaparecerá.  
   
- O **configurações de exceção** janela dá suporte a tipos de exceção genérica em C#, mas não no Visual Basic. Para interromper as exceções, como `MyNamespace.GenericException<T>`, você deve adicionar a exceção como **MyNamespace.GenericException'1**. Ou seja, se você tiver criado uma exceção como este:  
+ O **configurações de exceção** janela dá suporte a tipos de exceção genérica em c#, mas não no Visual Basic. Para interromper as exceções, como `MyNamespace.GenericException<T>`, você deve adicionar a exceção como **MyNamespace.GenericException'1**. Ou seja, se você tiver criado uma exceção como este:  
   
 ```csharp  
 public class GenericException<T> : Exception  

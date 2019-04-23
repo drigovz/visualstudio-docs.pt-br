@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 982a2387ae0e21304fb9726fabdf05554c982fd5
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 31bcd41dc1a6fd7f314c7d701f52c3728dd2ee8c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54862935"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040448"
 ---
 # <a name="security-for-sharepoint-solutions"></a>Segurança para soluções do SharePoint
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] incorpora os seguintes recursos para ajudar a reforçar a segurança dos aplicativos do SharePoint.
@@ -46,42 +46,42 @@ ms.locfileid: "54862935"
 ## <a name="sharepoint-permissions-considerations"></a>Considerações sobre permissões de SharePoint
  Para desenvolver soluções do SharePoint, você deve ter permissões suficientes para executar e depurar soluções do SharePoint. Antes de testar uma solução do SharePoint, execute as seguintes etapas para garantir que você tenha as permissões necessárias:
 
-1.  Adicione sua conta de usuário como um administrador do sistema.
+1. Adicione sua conta de usuário como um administrador do sistema.
 
-2.  Adicione sua conta de usuário como um administrador de Farm do SharePoint server.
+2. Adicione sua conta de usuário como um administrador de Farm do SharePoint server.
 
-    1.  Na Administração Central do SharePoint 2010, escolha o **gerenciar o grupo de administradores de farm** link.
+    1. Na Administração Central do SharePoint 2010, escolha o **gerenciar o grupo de administradores de farm** link.
 
-    2.  No **os administradores de Farm** , escolha o **New** opção de menu
+    2. No **os administradores de Farm** , escolha o **New** opção de menu
 
-3.  Adicionar sua conta de usuário ao grupo WSS_ADMIN_WPG.
+3. Adicionar sua conta de usuário ao grupo WSS_ADMIN_WPG.
 
 ## <a name="additional-security-resources"></a>Recursos de segurança adicionais
  Para obter mais informações sobre problemas de segurança, consulte o seguinte.
 
 ### <a name="visual-studio-security"></a>Segurança do Visual Studio
 
--   [Segurança e permissões de usuário](http://go.microsoft.com/fwlink/?LinkId=177503)
+- [Segurança e permissões de usuário](http://go.microsoft.com/fwlink/?LinkId=177503)
 
--   [Segurança no código do .NET Framework e nativos](http://go.microsoft.com/fwlink/?LinkId=177504)
+- [Segurança no código do .NET Framework e nativos](http://go.microsoft.com/fwlink/?LinkId=177504)
 
--   [Segurança no .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177502)
+- [Segurança no .NET Framework](http://go.microsoft.com/fwlink/?LinkId=177502)
 
 ### <a name="sharepoint-security"></a>Segurança do SharePoint
 
--   [Segurança e administração do SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177501)
+- [Segurança e administração do SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177501)
 
--   [Central de recursos de segurança do SharePoint](http://go.microsoft.com/fwlink/?LinkId=177498)
+- [Central de recursos de segurança do SharePoint](http://go.microsoft.com/fwlink/?LinkId=177498)
 
--   [Protegendo as Web Parts no SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
+- [Protegendo as Web Parts no SharePoint Foundation](http://go.microsoft.com/fwlink/?LinkId=177511)
 
--   [Melhorando a segurança do aplicativo Web: Ameaças e contramedidas](http://go.microsoft.com/fwlink/?LinkID=140080)
+- [Melhorando a segurança do aplicativo Web: Ameaças e contramedidas](http://go.microsoft.com/fwlink/?LinkID=140080)
 
 ### <a name="general-security"></a>Segurança geral
 
--   [MSDN Security Development Lifecycle](http://go.microsoft.com/fwlink/?LinkID=147149)
+- [MSDN Security Development Lifecycle](http://go.microsoft.com/fwlink/?LinkID=147149)
 
--   [Criação de aplicativos ASP.NET seguros: Autenticação, autorização e comunicação segura](http://go.microsoft.com/fwlink/?LinkId=177494)
+- [Criação de aplicativos ASP.NET seguros: Autenticação, autorização e comunicação segura](http://go.microsoft.com/fwlink/?LinkId=177494)
 
 ## <a name="see-also"></a>Consulte também
 

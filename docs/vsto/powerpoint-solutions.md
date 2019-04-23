@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 34175d2e53e897160e601f29bc2279f226fb5d11
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8ae3d06b2f031ed2deede1a80bec356a0abd939e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040212"
 ---
 # <a name="powerpoint-solutions"></a>Soluções PowerPoint
   Visual Studio fornece modelos de projeto, que você pode usar para criar suplementos do VSTO para PowerPoint do Microsoft Office. Você pode usar suplementos do VSTO para automatizar o PowerPoint, estender os recursos do PowerPoint ou personalizar a interface de usuário (IU) do PowerPoint.
@@ -49,7 +49,7 @@ ms.locfileid: "56601246"
 
   Quando você chama o modelo de objeto do PowerPoint, você pode usar os tipos fornecidos no assembly de interoperabilidade primário para o PowerPoint. O assembly de interoperabilidade primário atua como uma ponte entre o código gerenciado em que o suplemento do VSTO e o modelo de objeto COM no PowerPoint. Todos os tipos no assembly de interoperabilidade primário do PowerPoint são definidos na <xref:Microsoft.Office.Interop.PowerPoint> namespace. Para obter mais informações sobre assemblies de interoperabilidade primários, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41; ](../vsto/office-solutions-development-overview-vsto.md) e [assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md).
 
-##  <a name="WordOMDocumentation"></a> Use a documentação de modelo de objeto do PowerPoint
+## <a name="WordOMDocumentation"></a> Use a documentação de modelo de objeto do PowerPoint
  Para obter informações completas sobre o modelo de objeto do PowerPoint, você pode consultar para a referência de assembly de interoperabilidade primária (PIA) do PowerPoint e a referência de modelo de objeto do VBA.
 
 ### <a name="primary-interop-assembly-reference"></a>Referência de assembly de interoperabilidade primário

@@ -11,32 +11,32 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c68089615fd38276e428df6ffaa906d0b3f6742
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 31181cd3dd70d3767bce65fe338d8dc152ec311c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924631"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042347"
 ---
 # <a name="display-a-uml-model-on-diagrams"></a>Exibir um modelo UML em diagramas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 No código do programa para uma extensão do Visual Studio, você pode controlar como os elementos de modelo são exibidos em diagramas. Para ver quais versões do Visual Studio dão suporte a modelos UML, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
- Neste tópico:  
- -   [Para exibir um elemento em um diagrama](#Display)  
+Neste tópico:  
+- [Para exibir um elemento em um diagrama](#Display)  
   
--   [Acessando as formas que representam um elemento](#GetShapes)  
+- [Acessando as formas que representam um elemento](#GetShapes)  
   
--   [Movendo e redimensionando formas](#Moving)  
+- [Movendo e redimensionando formas](#Moving)  
   
--   [Para remover uma forma de um diagrama](#Removing)  
+- [Para remover uma forma de um diagrama](#Removing)  
   
--   [Abrir e criar diagramas](#Opening)  
+- [Abrir e criar diagramas](#Opening)  
   
--   [Exemplo: Comando para alinhar formas](#AlignCommand)  
+- [Exemplo: Comando para alinhar formas](#AlignCommand)  
   
-##  <a name="Display"></a> Para exibir um elemento em um diagrama  
+## <a name="Display"></a> Para exibir um elemento em um diagrama  
  Quando você cria um elemento como um caso de uso ou uma ação, o usuário poderá ver isso no Gerenciador de modelos UML, mas não aparecem sempre automaticamente em um diagrama. Em alguns casos, você deve escrever código para exibi-lo. A tabela a seguir resume as alternativas.  
   
 |Tipo de elemento|Por exemplo|Para exibir isso, seu código deve|  
@@ -47,7 +47,7 @@ No código do programa para uma extensão do Visual Studio, você pode controlar
 |Filho de comportamento|Linhas da vida, mensagens, ações, nós de objeto|Automático - nenhum código é necessário.<br /><br /> Ele será exibido se o pai estiver associado a um diagrama.|  
 |Relationship|Associação, generalização, fluxo e dependência|Automático - nenhum código é necessário.<br /><br /> Ele é exibido em cada diagrama em que ambas as extremidades são exibidas.|  
   
-##  <a name="GetShapes"></a> Acessando as formas que representam um elemento  
+## <a name="GetShapes"></a> Acessando as formas que representam um elemento  
  A forma que representa um elemento pertence aos tipos:  
   
  `IShape`  
@@ -68,7 +68,7 @@ No código do programa para uma extensão do Visual Studio, você pode controlar
 |`IShape iShape = ...;`<br /><br /> `IShape<IClass> classShape = iShape.ToIShape<IClass>();`<br /><br /> `IClass aClass = classShape.Element;`|Converter um genérico `IShape` para um com rigidez de tipos `IShape<IElement>`.|  
 |`IShape<IClassifier> classifierShape;`<br /><br /> `IShape<IUseCase> usecaseShape =`<br /><br /> `classifierShape.ToIShape<IUseCase>();`|Converta uma forma de uma forma com parâmetros de tipo para outro.|  
   
-##  <a name="Moving"></a> Movendo e redimensionando formas  
+## <a name="Moving"></a> Movendo e redimensionando formas  
   
 |||  
 |-|-|  
@@ -77,7 +77,7 @@ No código do programa para uma extensão do Visual Studio, você pode controlar
   
  Por exemplo, consulte [definindo um comando de alinhamento](#AlignCommand).  
   
-##  <a name="Removing"></a> Para remover uma forma de um diagrama  
+## <a name="Removing"></a> Para remover uma forma de um diagrama  
  Você pode excluir as formas de alguns tipos de elemento sem excluir o elemento.  
   
 |Elemento de modelo|Para remover a forma|  
@@ -86,7 +86,7 @@ No código do programa para uma extensão do Visual Studio, você pode controlar
 |Um comportamento: interação ou atividade|Você pode excluir o diagrama do projeto. Use `IDiagram.FileName` para obter o caminho.<br /><br /> Isso não exclui o comportamento do modelo.|  
 |Qualquer outra forma|Você não pode excluir explicitamente outras formas de um diagrama. A forma desaparecerão automaticamente se o elemento é excluído do modelo, ou se a forma pai é removida do diagrama.|  
   
-##  <a name="Opening"></a> Abrir e criar diagramas  
+## <a name="Opening"></a> Abrir e criar diagramas  
   
 ### <a name="to-access-the-users-current-diagram-from-a-command-or-gesture-extension"></a>Para acessar o diagrama de atual do usuário de uma extensão de comando ou gesto  
  Declare esta propriedade importada em sua classe:  
@@ -162,7 +162,7 @@ foreach (ProjectItem item in project.ProjectItems)
 IModelStore modelStore = (project as IModelingProject).Store;  
 ```  
   
-##  <a name="AlignCommand"></a> Exemplo: Comando para alinhar formas  
+## <a name="AlignCommand"></a> Exemplo: Comando para alinhar formas  
  O código a seguir implementa um comando de menu que se alinha formas ordenadamente. O usuário deve primeiro colocar duas ou mais formas no alinhamento aproximado, vertical ou horizontalmente. Em seguida, o comando Alinhar pode ser usado para alinhar seus centros.  
   
  Para disponibilizar o comando, adicione este código para um projeto de comando de menu e, em seguida, implante a extensão resultante para seus usuários. Para obter mais informações, consulte [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  

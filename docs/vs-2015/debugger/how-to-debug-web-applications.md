@@ -19,12 +19,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 39c5c5062841dd0a9c5c34e86d96c5d2fc6ac2be
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd3cbbcd740c0f124b8ab4379204a9d425cd541c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929816"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039538"
 ---
 # <a name="how-to-debug-web-applications"></a>Como: Depurar aplicativos Web
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,25 +33,25 @@ ms.locfileid: "58929816"
   
  Para depurar um aplicativo do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]:  
   
--   Você deve ter as permissões necessárias. Para obter mais informações, consulte [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
+- Você deve ter as permissões necessárias. Para obter mais informações, consulte [System Requirements](../debugger/aspnet-debugging-system-requirements.md).  
   
--   [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] a depuração deve ser habilitada no **propriedades do projeto**.  
+- [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] a depuração deve ser habilitada no **propriedades do projeto**.  
   
--   O arquivo de configuração do aplicativo (Web.config) deve ser definido para o modo de depuração. O modo de depuração faz com que o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] gere símbolos para arquivos gerados dinamicamente e permite que o depurador se anexe ao aplicativo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] define isso automaticamente quando você inicia a depuração, caso você tenha criado o projeto do modelo Projetos Web.  
+- O arquivo de configuração do aplicativo (Web.config) deve ser definido para o modo de depuração. O modo de depuração faz com que o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] gere símbolos para arquivos gerados dinamicamente e permite que o depurador se anexe ao aplicativo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] define isso automaticamente quando você inicia a depuração, caso você tenha criado o projeto do modelo Projetos Web.  
   
--   Para obter mais informações, confira [Como: Habilitar a depuração para aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
+- Para obter mais informações, confira [Como: Habilitar a depuração para aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md).  
   
 ### <a name="to-debug-a-web-application-during-development"></a>Para depurar um aplicativo Web durante o desenvolvimento  
   
-1.  Sobre o **depurar** menu, clique em **iniciar** para iniciar a depuração do aplicativo Web.  
+1. Sobre o **depurar** menu, clique em **iniciar** para iniciar a depuração do aplicativo Web.  
   
      O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cria o projeto de aplicativo Web, implanta o aplicativo se for necessário, inicia o ASP.NET Development Server se você estiver depurando localmente e anexa ao processo de trabalho do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
   
-2.  Use o depurador para definir e desmarcar pontos de interrupção, depurar e executar outras operações de depuração, como faria para qualquer aplicativo.  
+2. Use o depurador para definir e desmarcar pontos de interrupção, depurar e executar outras operações de depuração, como faria para qualquer aplicativo.  
   
      Para obter mais informações, consulte [Noções básicas do depurador](../debugger/debugger-basics.md).  
   
-3.  No **Debug** menu, clique em **parar depuração** ao final, a sessão de depuração, ou, no **arquivo** menu no Internet Explorer, clique em **fechar**.  
+3. No **Debug** menu, clique em **parar depuração** ao final, a sessão de depuração, ou, no **arquivo** menu no Internet Explorer, clique em **fechar**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando aplicativos Web e script](../debugger/debugging-web-applications-and-script.md)   

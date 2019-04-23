@@ -13,12 +13,12 @@ caps.latest.revision: 111
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 73a94ee7a6d3ed874d61b589186706b50ad0a376
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7c6783f3d6d79606ccc5002b978be40097c8c90b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928798"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040513"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector"></a>Usar o coletor autônomo do IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,33 +51,33 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
 - [Onde mais posso obter dados do IntelliTrace?](#WhereElse)
 
-##  <a name="WhatApps"></a>Quais aplicativos funcionam com o coletor?
+## <a name="WhatApps"></a>Quais aplicativos funcionam com o coletor?
 
--   Aplicativos da Web ASP.NET hospedados no Internet Information Services (IIS) versão 7.0, 7.5 e 8.0
+- Aplicativos da Web ASP.NET hospedados no Internet Information Services (IIS) versão 7.0, 7.5 e 8.0
 
--   Aplicativos SharePoint 2010 e SharePoint 2013
+- Aplicativos SharePoint 2010 e SharePoint 2013
 
--   Aplicativos do Windows Presentation Foundation (WPF) e Windows Forms.
+- Aplicativos do Windows Presentation Foundation (WPF) e Windows Forms.
 
-##  <a name="GetStarted"></a> Como faço para começar?
+## <a name="GetStarted"></a> Como faço para começar?
 
-1.  [Instalar o coletor](#BKMK_Install_the_IntelliTrace_Stand_Alone_Collector)
+1. [Instalar o coletor](#BKMK_Install_the_IntelliTrace_Stand_Alone_Collector)
 
-2.  [Configurar as permissões para o diretório do coletor](#ConfigurePermissionsRunningCollector)
+2. [Configurar as permissões para o diretório do coletor](#ConfigurePermissionsRunningCollector)
 
-3.  [Instale os cmdlets PowerShell do IntelliTrace a fim de coletar dados para aplicativos Web ou aplicativos do SharePoint](#BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets)
+3. [Instale os cmdlets PowerShell do IntelliTrace a fim de coletar dados para aplicativos Web ou aplicativos do SharePoint](#BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets)
 
-4.  [Configurar permissões para o diretório de arquivos .iTrace](#BKMK_Create_and_Configure_a_Log_File_Directory)
+4. [Configurar permissões para o diretório de arquivos .iTrace](#BKMK_Create_and_Configure_a_Log_File_Directory)
 
-5.  [Coletar os dados de um aplicativo da web ou do SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)
+5. [Coletar os dados de um aplicativo da web ou do SharePoint](#BKMK_Collect_Data_from_IIS_Application_Pools)
 
      - ou -
 
      [Coletar dados de um aplicativo gerenciado](#BKMK_Collect_Data_from_Executables)
 
-6.  [Abra o arquivo. itrace no Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files)
+6. [Abra o arquivo. itrace no Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files)
 
-##  <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> Instalar o coletor
+## <a name="BKMK_Install_the_IntelliTrace_Stand_Alone_Collector"></a> Instalar o coletor
 
 1. No servidor do seu aplicativo, crie o diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
 
@@ -95,88 +95,88 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
    - **Pasta de instalação do Visual Studio**:
 
-     1.  Copie o IntelliTraceCollection.cab da pasta a seguir:
+     1. Copie o IntelliTraceCollection.cab da pasta a seguir:
 
           **.. \Microsoft visual Studio 12.0\Common7\IDE\CommonExtensions\Microsoft\IntelliTrace\12.0.0**
 
-     2.  Coloque o IntelliTraceCollection.cab no diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
+     2. Coloque o IntelliTraceCollection.cab no diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
 
 3. Expanda o IntelliTraceCollection.cab:
 
-   1.  No servidor do aplicativo, abra uma janela de prompt de comando como administrador.
+   1. No servidor do aplicativo, abra uma janela de prompt de comando como administrador.
 
-   2.  Navegue até o diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
+   2. Navegue até o diretório do coletor, por exemplo: **C:\IntelliTraceCollector**
 
-   3.  Use o **expandir** comando, incluindo o período (**.**) no final, para expandir o intellitracecollection. cab:
+   3. Use o **expandir** comando, incluindo o período (**.**) no final, para expandir o intellitracecollection. cab:
 
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
        >  O ponto (**.**) preserva as subpastas que contêm planos de coleta localizada.
 
-##  <a name="ConfigurePermissionsRunningCollector"></a> Configurar permissões para o diretório do coletor
+## <a name="ConfigurePermissionsRunningCollector"></a> Configurar permissões para o diretório do coletor
 
-1.  No servidor do aplicativo, abra uma janela de prompt de comando como administrador.
+1. No servidor do aplicativo, abra uma janela de prompt de comando como administrador.
 
-2.  Usar o Windows **icacls** comando para conceder permissões completas de administrador para o diretório do coletor de servidor. Por exemplo:
+2. Usar o Windows **icacls** comando para conceder permissões completas de administrador para o diretório do coletor de servidor. Por exemplo:
 
      `icacls "C:\IntelliTraceCollector" /grant "` *\<Domínio\IDdoAdministrador>* `":F`
 
-3.  Para coletar dados de um aplicativo da web ou do SharePoint:
+3. Para coletar dados de um aplicativo da web ou do SharePoint:
 
-    1.  Conceda permissão total ao diretório do coletor à pessoa que executará os cmdlets do IntelliTrace PowerShell.
+    1. Conceda permissão total ao diretório do coletor à pessoa que executará os cmdlets do IntelliTrace PowerShell.
 
          Por exemplo:
 
          `icacls "C:\IntelliTraceCollector" /grant "` *\<Domínio\IDdoUsuário>* `":F`
 
-    2.  Conceda ao pool de aplicativos para o aplicativo da web ou do SharePoint permissões de leitura e execução para o diretório do coletor.
+    2. Conceda ao pool de aplicativos para o aplicativo da web ou do SharePoint permissões de leitura e execução para o diretório do coletor.
 
          Por exemplo:
 
-        -   Para um aplicativo Web no pool de aplicativos **DefaultAppPool**:
+        - Para um aplicativo Web no pool de aplicativos **DefaultAppPool**:
 
              `icacls "C:\IntelliTraceCollector" /grant "IIS APPPOOL\DefaultAppPool":RX`
 
-        -   Para um aplicativo do SharePoint no pool de aplicativos **SharePoint - 80**:
+        - Para um aplicativo do SharePoint no pool de aplicativos **SharePoint - 80**:
 
              `icacls "C:\IntelliTraceCollector" /grant "IIS APPPOOL\SharePoint - 80":RX`
 
-##  <a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a> Instalar cmdlets PowerShell do IntelliTrace a fim de coletar dados para aplicativos Web ou aplicativos do SharePoint
+## <a name="BKMK_Set_up_the_IntelliTrace_PowerShell_commandlets"></a> Instalar cmdlets PowerShell do IntelliTrace a fim de coletar dados para aplicativos Web ou aplicativos do SharePoint
 
-1.  No servidor do aplicativo, certifique-se de que o PowerShell está habilitado. Na maioria das versões do Windows Server, você pode adicionar esse recurso na ferramenta administrativa **Gerenciador do Servidor**.
+1. No servidor do aplicativo, certifique-se de que o PowerShell está habilitado. Na maioria das versões do Windows Server, você pode adicionar esse recurso na ferramenta administrativa **Gerenciador do Servidor**.
 
      ![Adição do PowerShell usando o Gerenciador do servidor](../debugger/media/intellitrace-servermanager-addpowershell.png "INTELLITRACE_ServerManager_AddPowerShell")
 
-2.  Instale os cmdlets do IntelliTrace PowerShell.
+2. Instale os cmdlets do IntelliTrace PowerShell.
 
-    1.  Abra uma janela de comando do PowerShell como administrador.
+    1. Abra uma janela de comando do PowerShell como administrador.
 
-        1.  Selecione **Iniciar**, **Todos os Programas**, **Acessórios**, **Windows PowerShell**.
+        1. Selecione **Iniciar**, **Todos os Programas**, **Acessórios**, **Windows PowerShell**.
 
-        2.  Escolha uma das seguintes etapas:
+        2. Escolha uma das seguintes etapas:
 
-            -   Em sistemas operacionais de 64 bits, abra o menu de atalho do **Windows PowerShell**. Escolha **Executar como administrador**.
+            - Em sistemas operacionais de 64 bits, abra o menu de atalho do **Windows PowerShell**. Escolha **Executar como administrador**.
 
-            -   Em sistemas operacionais de 32 bits, abra o menu de atalho do **Windows PowerShell (x86)**. Escolha **Executar como administrador**.
+            - Em sistemas operacionais de 32 bits, abra o menu de atalho do **Windows PowerShell (x86)**. Escolha **Executar como administrador**.
 
-    2.  Na janela de comando do PowerShell, use o comando **Import-Module** para importar o **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
+    2. Na janela de comando do PowerShell, use o comando **Import-Module** para importar o **Microsoft.VisualStudio.IntelliTrace.PowerShell.dll**.
 
          Por exemplo:
 
          `Import-Module "C:\IntelliTraceCollector\Microsoft.VisualStudio.IntelliTrace.PowerShell.dll"`
 
-##  <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> Configurar permissões para o diretório de arquivos .iTrace
+## <a name="BKMK_Create_and_Configure_a_Log_File_Directory"></a> Configurar permissões para o diretório de arquivos .iTrace
 
 1. No servidor do seu aplicativo, crie o diretório do arquivo. itrace, por exemplo: **C:\IntelliTraceLogFiles**
 
    > [!NOTE]
    > - Para evitar que seu aplicativo fique mais lento, escolha um local em um disco de alta velocidade local que não seja muito ativo.
-   >   -   Você pode colocar os arquivos .iTrace e os coletores no mesmo lugar. No entanto, se você tiver um aplicativo da web ou do SharePoint, verifique se que esse local está fora do diretório que hospeda o aplicativo.
+   >   - Você pode colocar os arquivos .iTrace e os coletores no mesmo lugar. No entanto, se você tiver um aplicativo da web ou do SharePoint, verifique se que esse local está fora do diretório que hospeda o aplicativo.
    >
    > [!IMPORTANT]
    > - Restrinja o diretório do arquivo .iTrace a apenas as identidades que devem trabalhar com o coletor. Um arquivo .iTrace pode conter informações confidenciais, tais como dados de usuários, bancos de dados, outros locais de origem e cadeias de conexão como IntelliTrace podem registrar quaisquer dados que passem os parâmetros de método ou como valores de retorno.
-   >   -   Certifique-se de aqueles que podem abrir os arquivos .iTrace têm autoridade para ver dados confidenciais. Tenha cuidado ao compartilhar arquivos .iTrace. Se outras pessoas precisarem ter acesso, copie os arquivos para um local compartilhado seguro.
+   >   - Certifique-se de aqueles que podem abrir os arquivos .iTrace têm autoridade para ver dados confidenciais. Tenha cuidado ao compartilhar arquivos .iTrace. Se outras pessoas precisarem ter acesso, copie os arquivos para um local compartilhado seguro.
 
 2. Para um aplicativo da web ou do SharePoint, conceda ao seu pool de aplicativos permissões totais para o diretório de arquivos .iTrace. Você pode usar o Windows **icacls** de comando ou use o Windows Explorer (ou Explorador de arquivos).
 
@@ -196,23 +196,23 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
    - Para configurar permissões com o Windows Explorer (ou o Explorador de Arquivos):
 
-     1.  Abra as **Propriedades** do diretório de arquivos .iTrace.
+     1. Abra as **Propriedades** do diretório de arquivos .iTrace.
 
-     2.  Na guia **Segurança**, escolha **Editar**, **Adicionar**.
+     2. Na guia **Segurança**, escolha **Editar**, **Adicionar**.
 
-     3.  Verifique se **Entidades de segurança interna** é exibido na caixa **Selecione este tipo de objeto**. Se ele não estiver presente, escolha **tipos de objeto** para adicioná-lo.
+     3. Verifique se **Entidades de segurança interna** é exibido na caixa **Selecione este tipo de objeto**. Se ele não estiver presente, escolha **tipos de objeto** para adicioná-lo.
 
-     4.  Verifique se o computador local é exibido na caixa **Deste local**. Se ele não estiver presente, escolha **locais** alterá-la.
+     4. Verifique se o computador local é exibido na caixa **Deste local**. Se ele não estiver presente, escolha **locais** alterá-la.
 
-     5.  Na caixa **Digite os nomes de objeto a serem selecionados**, adicione o pool de aplicativos do aplicativo Web ou do aplicativo do SharePoint.
+     5. Na caixa **Digite os nomes de objeto a serem selecionados**, adicione o pool de aplicativos do aplicativo Web ou do aplicativo do SharePoint.
 
-     6.  Escolha **Verificar Nomes** para resolver o nome. Escolha **OK**.
+     6. Escolha **Verificar Nomes** para resolver o nome. Escolha **OK**.
 
-     7.  Verifique se o pool de aplicativos tem **Controle total**.
+     7. Verifique se o pool de aplicativos tem **Controle total**.
 
-##  <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Coletar dados de um aplicativo da web ou do SharePoint
+## <a name="BKMK_Collect_Data_from_IIS_Application_Pools"></a> Coletar dados de um aplicativo da web ou do SharePoint
 
-1.  Para iniciar a coleta de dados, abra uma janela de comando do PowerShell como administrador e execute este comando:
+1. Para iniciar a coleta de dados, abra uma janela de comando do PowerShell como administrador e execute este comando:
 
      `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
@@ -233,28 +233,28 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
      *Posso abrir o arquivo .iTrace neste momento?* Não, o arquivo fica bloqueado durante a coleta de dados.
 
-2.  Reproduza o problema.
+2. Reproduza o problema.
 
-3.  Para obter um instantâneo do arquivo .iTrace, use a seguinte sintaxe:
+3. Para obter um instantâneo do arquivo .iTrace, use a seguinte sintaxe:
 
      `Checkpoint-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
-4.  Para verificar o status da coleta, use a seguinte sintaxe:
+4. Para verificar o status da coleta, use a seguinte sintaxe:
 
      `Get-IntelliTraceCollectionStatus`
 
-5.  Para interromper a coleta de dados, use a seguinte sintaxe:
+5. Para interromper a coleta de dados, use a seguinte sintaxe:
 
      `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
     > [!IMPORTANT]
     >  Depois de executar esse comando, digite **Y** para confirmar que você deseja parar a coleta de dados. Caso contrário, o coletor podem continuar com a coleta de dados, o arquivo iTrace permanecerá bloqueado ou o arquivo pode não conter dados úteis.
 
-6.  [Abra o arquivo. itrace no Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files)
+6. [Abra o arquivo. itrace no Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files)
 
-##  <a name="BKMK_Collect_Data_from_Executables"></a> Coletar dados de um aplicativo gerenciado
+## <a name="BKMK_Collect_Data_from_Executables"></a> Coletar dados de um aplicativo gerenciado
 
-1.  Para iniciar o aplicativo e coletar dados ao mesmo tempo, use a seguinte sintaxe:
+1. Para iniciar o aplicativo e coletar dados ao mesmo tempo, use a seguinte sintaxe:
 
      *\<FullPathToIntelliTraceCollectorExecutable>* `\IntelliTraceSC.exe launch /cp:` *\<PathToCollectionPlan>* `/f:` *\<FullPathToITraceFileDirectoryAndFileName>* *\<PathToAppExecutableFileAndFileName>*
 
@@ -269,25 +269,25 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
     |*FullPathToITraceFileDirectoryAndFileName*|O caminho completo para o diretório do arquivo. itrace e o nome do arquivo. itrace com a **. itrace** extensão. **Observação de segurança:**  Forneça o caminho completo, não um caminho relativo.|
     |*PathToAppExecutableFileAndFileName*|O caminho e o nome de arquivo do seu aplicativo gerenciado|
 
-2.  Interrompa a coleta de dados saindo do aplicativo.
+2. Interrompa a coleta de dados saindo do aplicativo.
 
-3.  [Abra o arquivo. itrace no Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files)
+3. [Abra o arquivo. itrace no Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files)
 
-##  <a name="BKMK_View_IntelliTrace_Log_Files"></a> Abra o arquivo. itrace no Visual Studio Enterprise
+## <a name="BKMK_View_IntelliTrace_Log_Files"></a> Abra o arquivo. itrace no Visual Studio Enterprise
 
 > [!NOTE]
 >  Para depurar com o IntelliTrace e percorrer o código, você deve ter os arquivos de origem e de símbolo correspondentes. Ver [diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md).
 
-1.  Mover o arquivo. itrace ou copie-o para um computador com Visual Studio Enterprise (mas as edições não Professional ou Community).
+1. Mover o arquivo. itrace ou copie-o para um computador com Visual Studio Enterprise (mas as edições não Professional ou Community).
 
-2.  Clique duas vezes no arquivo .iTrace fora do Visual Studio ou abra o arquivo de dentro do Visual Studio.
+2. Clique duas vezes no arquivo .iTrace fora do Visual Studio ou abra o arquivo de dentro do Visual Studio.
 
      O Visual Studio mostra a página **Resumo do IntelliTrace**. Na maioria das seções, você pode examinar eventos ou outros itens, escolher um item e iniciar a depuração com o IntelliTrace no ponto onde e quando um evento que ocorreu. Ver [usando dados salvo do IntelliTrace](../debugger/using-saved-intellitrace-data.md).
 
     > [!NOTE]
     >  Para depurar com o IntelliTrace e percorrer o código, você deve ter os arquivos de origem e de símbolo correspondentes no seu computador de desenvolvimento. Ver [diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md).
 
-##  <a name="Minimizing"></a> Como faço para obter o máximo de dados sem deixar meu aplicativo mais lento?
+## <a name="Minimizing"></a> Como faço para obter o máximo de dados sem deixar meu aplicativo mais lento?
  O IntelliTrace pode coletar grandes quantidades de dados, por isso o impacto no desempenho do aplicativo depende dos dados que o IntelliTrace coleta e do tipo de código analisado. Ver [otimizando a coleção de IntelliTrace em servidores de produção](http://go.microsoft.com/fwlink/?LinkId=255233).
 
  Estas são algumas das maneiras de obter a maioria dos dados sem deixar seu aplicativo mais lento:
@@ -310,9 +310,9 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
    *Como isso melhora o desempenho?*
 
-  -   Você pode reduzir o tempo de inicialização desabilitando eventos que não são relevantes para o aplicativo. Por exemplo, desabilite eventos do Fluxo de Trabalho do Windows para aplicativos que não usam o Fluxo de Trabalho do Windows.
+  - Você pode reduzir o tempo de inicialização desabilitando eventos que não são relevantes para o aplicativo. Por exemplo, desabilite eventos do Fluxo de Trabalho do Windows para aplicativos que não usam o Fluxo de Trabalho do Windows.
 
-  -   Você pode melhorar o desempenho de inicialização e do tempo de execução desabilitando eventos do registro para aplicativos que acessam o registro, mas não apresentam problemas com as configurações do registro.
+  - Você pode melhorar o desempenho de inicialização e do tempo de execução desabilitando eventos do registro para aplicativos que acessam o registro, mas não apresentam problemas com as configurações do registro.
 
 - Revise os módulos no plano de coleta para o qual o IntelliTrace coleta os dados. Edite o plano de coleta para incluir somente os módulos de seu interesse:
 
@@ -379,11 +379,11 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 
    O coletor registra valores de `id`, `Employee.Id`, `Employee.Name` e o objeto `Employee` retornado pelo método `AlterEmployee`. Entretanto, o coletor não registra informações sobre o objeto `Address`, exceto se ele era nulo ou não. O coletor também não registra dados sobre variáveis locais no método `AlterEmployee`, a menos que outros métodos usem essas variáveis locais como parâmetros em que eles são gravados como parâmetros de método.
 
-##  <a name="WhereElse"></a> Onde mais posso obter dados do IntelliTrace?
+## <a name="WhereElse"></a> Onde mais posso obter dados do IntelliTrace?
 
--   De uma sessão no Visual Studio Enterprise de depuração do IntelliTrace, consulte [recursos do IntelliTrace](../debugger/intellitrace-features.md).
+- De uma sessão no Visual Studio Enterprise de depuração do IntelliTrace, consulte [recursos do IntelliTrace](../debugger/intellitrace-features.md).
 
--   Em uma sessão de teste no Microsoft Test Manager, consulte [como: Coletar dados do IntelliTrace para ajudar a depurar problemas difíceis](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues?view=vs-2015).
+- Em uma sessão de teste no Microsoft Test Manager, consulte [como: Coletar dados do IntelliTrace para ajudar a depurar problemas difíceis](/visualstudio/test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues?view=vs-2015).
 
 ## <a name="where-can-i-get-more-information"></a>Onde posso obter mais informações?
  [Usando dados salvos do IntelliTrace](../debugger/using-saved-intellitrace-data.md)

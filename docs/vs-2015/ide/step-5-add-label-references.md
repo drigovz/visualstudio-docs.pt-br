@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: baae597f606b6333f15ba114d31af2cb0cf28836
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 3f062b48edfbe87fb97d94b3ea852486f66a19d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54833659"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041865"
 ---
 # <a name="step-5-add-label-references"></a>Etapa 5: Adicionar referências de rótulo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ O programa precisa rastrear quais controles de rótulo o jogador escolhe. Atualm
   
 ### <a name="to-add-label-references"></a>Para adicionar referências de rótulo  
   
-1.  Adicione referências de rótulo ao seu formulário usando o código a seguir.  
+1. Adicione referências de rótulo ao seu formulário usando o código a seguir.  
   
      [!code-csharp[VbExpressTutorial4Step5#5](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step5/cs/form1.cs#5)]
      [!code-vb[VbExpressTutorial4Step5#5](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step5/vb/form1.vb#5)]  
@@ -32,14 +32,14 @@ O programa precisa rastrear quais controles de rótulo o jogador escolhe. Atualm
   
      Quando uma variável não estiver rastreando um objeto, ela será definida para um valor reservado especial: `null` no Visual C# e `Nothing` no Visual Basic. Desse modo, quando o programa for iniciado, `firstClicked` e `secondClicked` serão definidas como `null` ou `Nothing`, o que significa que as variáveis não estão rastreando nada.  
   
-2.  Modifique o manipulador de eventos Click para usar a nova variável de referência `firstClicked`. Remova a última instrução no método do manipulador de eventos `label_Click()` (`clickedLabel.ForeColor = Color.Black;`) e substitua-a pela instrução `if` que se segue. (Não se esqueça de incluir o comentário e a instrução `if` inteira.)  
+2. Modifique o manipulador de eventos Click para usar a nova variável de referência `firstClicked`. Remova a última instrução no método do manipulador de eventos `label_Click()` (`clickedLabel.ForeColor = Color.Black;`) e substitua-a pela instrução `if` que se segue. (Não se esqueça de incluir o comentário e a instrução `if` inteira.)  
   
      [!code-csharp[VbExpressTutorial4Step5#6](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step5/cs/form1.cs#6)]
      [!code-vb[VbExpressTutorial4Step5#6](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step5/vb/form1.vb#6)]  
   
-3.  Salve e execute seu programa. Escolha um dos controles de rótulo e seu ícone é exibido.  
+3. Salve e execute seu programa. Escolha um dos controles de rótulo e seu ícone é exibido.  
   
-4.  Escolha o próximo controle de rótulo e observe que nada acontece. O programa já está rastreando o primeiro rótulo que o jogador escolheu, de modo que `firstClicked` não é igual a `null` no Visual C# ou `Nothing` no Visual Basic. Quando sua instrução `if` verifica `firstClicked` para determinar se ele é igual a `null` ou `Nothing`, ela descobre que não é e não executa as instruções na instrução `if`. Desse modo, somente o primeiro ícone que é escolhido torna-se preto e os outros ícones ficam invisíveis, conforme mostrado na imagem a seguir.  
+4. Escolha o próximo controle de rótulo e observe que nada acontece. O programa já está rastreando o primeiro rótulo que o jogador escolheu, de modo que `firstClicked` não é igual a `null` no Visual C# ou `Nothing` no Visual Basic. Quando sua instrução `if` verifica `firstClicked` para determinar se ele é igual a `null` ou `Nothing`, ela descobre que não é e não executa as instruções na instrução `if`. Desse modo, somente o primeiro ícone que é escolhido torna-se preto e os outros ícones ficam invisíveis, conforme mostrado na imagem a seguir.  
   
      ![Jogo da memória mostrando um ícone](../ide/media/express-tut4step5.png "Express_Tut4Step5")  
 Jogo da memória mostrando um ícone  
@@ -48,6 +48,6 @@ Jogo da memória mostrando um ícone
   
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar  
   
--   Para acessar a próxima etapa do tutorial, consulte [Etapa 6: Adicionar um temporizador](../ide/step-6-add-a-timer.md).  
+- Para ir para a próxima etapa do tutorial, confira [Etapa 6: Adicionar um temporizador](../ide/step-6-add-a-timer.md).  
   
--   Para retornar à etapa anterior do tutorial, consulte [Etapa 4: Adicionar um manipulador de evento Click a cada rótulo](../ide/step-4-add-a-click-event-handler-to-each-label.md).
+- Para retornar à etapa anterior do tutorial, confira [Etapa 4: Adicionar um manipulador de eventos Click a cada rótulo](../ide/step-4-add-a-click-event-handler-to-each-label.md).

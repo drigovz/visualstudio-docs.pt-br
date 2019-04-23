@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 633ab9d446c65b9408c0e069695d22889e7943d1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d8808804c5b99918e68169e4ab5510cdb5c634a8
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723065"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670492"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Padrões de composição para Visual Studio
 Padrões compostos combinam elementos de design e interação em configurações distintas. Alguns dos mais importantes compostos padrões no Visual Studio em relação à consistência incluem:
@@ -393,7 +393,6 @@ Padrões compostos combinam elementos de design e interação em configurações
 ####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Aparência da seleção de objeto gráfico
  As alças de seleção são desenhados em um padrão retangular ao redor da caixa delimitadora do objeto de quadrados. O gráfico abaixo mostra exemplos de vários estados em que um objeto gráfico pode ter com a alça de dimensionamento e aparência de edição in-loco. O tamanho dos identificadores deve ser vinculado a borda da janela e métricas de borda usando o **GetSystemMetrics** API.
 
-
 | Estado | Aparência | Detalhes do Visual |
 |-------------------------|---------------| - |
 | **Unselected** | Padrão | ![Estado do botão padrão](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713 10_DefaultState") |
@@ -435,7 +434,6 @@ Padrões compostos combinam elementos de design e interação em configurações
 >  **Foco** e **seleção** são conceitos diferentes. *Foco* é uma indicação de qual interface do usuário do elemento é direcionado para receber entrada dirigida não explicitamente a outro objeto, enquanto *seleção* refere-se ao estado da inclusão de um objeto em um conjunto de objetos dos quais subsequentes as operações podem ocorrer.
 
  As seleções nas listas podem ser contíguos, não contíguo, ou região. Quando várias seleções são permitidas, contíguos e seleção de disjunção sempre deve ser compatível, enquanto o suporte para as seleções de região (caixa) são opcional. Seleções de região são iniciadas, arrastando o espaço em branco do corpo da lista.
-
 
 | Objeto | Seleção |
 |--------|------------|

@@ -1,5 +1,5 @@
 ---
-title: 'Como: assinar arquivos com SignTool.exe (ClickOnce) de instalação | Microsoft Docs'
+title: 'Como: Assinar arquivos com SignTool.exe (ClickOnce) de instalação | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edc6630bfe8dd5ee1fc48fe0d5abe189a63ab330
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 2f31ebeb18790ddf76c42585868aea8a04547bfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041061"
 ---
-# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Como assinar arquivos de instalação com SignTool.exe (ClickOnce)
+# <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>Como: Assinar arquivos de instalação com SignTool.exe (ClickOnce)
 Você pode usar o *SignTool.exe* para assinar um programa de instalação (*setup.exe*). Esse processo ajuda a garantir que arquivos violados não sejam instalados nos computadores dos usuários finais.
 
  Por padrão, o ClickOnce tem manifestos e um programa de instalação assinados. No entanto, se você quiser alterar os parâmetros do programa de instalação mais tarde, assine o programa de instalação mais tarde. Se você alterar os parâmetros depois que o programa de instalação for assinado a assinatura é corrompida.
@@ -34,23 +34,23 @@ Você pode usar o *SignTool.exe* para assinar um programa de instalação (*setu
 
 ### <a name="to-generate-an-unsigned-setup-program-and-sign-later"></a>Para gerar um programa de instalação não assinado e assinar mais tarde
 
-1.  No computador de desenvolvimento, instale o certificado com qual você deseja assinar os manifestos.
+1. No computador de desenvolvimento, instale o certificado com qual você deseja assinar os manifestos.
 
-2.  Selecione o projeto no **Gerenciador de Soluções**.
+2. Selecione o projeto no **Gerenciador de Soluções**.
 
-3.  No menu **Projeto**, clique em *ProjectName* **Propriedades**.
+3. No menu **Projeto**, clique em *ProjectName* **Propriedades**.
 
-4.  Na página **Assinatura**, desmarque a opção **Assinar os manifestos do ClickOnce**.
+4. Na página **Assinatura**, desmarque a opção **Assinar os manifestos do ClickOnce**.
 
-5.  Na página **Publicar**, clique em **Pré-requisitos**.
+5. Na página **Publicar**, clique em **Pré-requisitos**.
 
-6.  Verifique se todos os pré-requisitos estão selecionados e clique em **OK**.
+6. Verifique se todos os pré-requisitos estão selecionados e clique em **OK**.
 
-7.  Na página **Publicar**, verifique as configurações de publicação e clique em **Publicar Agora**.
+7. Na página **Publicar**, verifique as configurações de publicação e clique em **Publicar Agora**.
 
      A solução publica o manifesto de aplicativo não assinado, o manifesto de implantação não assinado, os arquivos específicos de versão e o programa de instalação não assinado no local da pasta de publicação.
 
-8.  Na página **Publicar**, clique em **Pré-requisitos**.
+8. Na página **Publicar**, clique em **Pré-requisitos**.
 
 9. Na caixa de diálogo **Pré-requisitos**, desmarque a opção **Criar programa de instalação para instalar os componentes dos pré-requisitos**.
 
@@ -77,4 +77,4 @@ Você pode usar o *SignTool.exe* para assinar um programa de instalação (*setu
     ```
 
 ## <a name="see-also"></a>Consulte também
-- [Como reassinar manifestos do aplicativo e de implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+- [Como: Assinar novamente os manifestos de aplicativo e de implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

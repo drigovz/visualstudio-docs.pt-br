@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7dac95cd91e6dd2ba20b9cdee216aeedb8d8c39a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ca0b64b112e149404b2ee8861103b25fd6780ccc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668412"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040244"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>Como: Anexar o Profiler para um serviço .NET para coletar estatísticas do aplicativo usando a linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
 
     **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]  
 
-   -   **/globalsampleon** habilita a amostragem.  
+   - **/globalsampleon** habilita a amostragem.  
 
-   -   **/samplelineoff** desabilita a atribuição de dados coletados a linhas específicas do código-fonte. Quando essa opção for especificada, os dados serão atribuídos somente a funções.  
+   - **/samplelineoff** desabilita a atribuição de dados coletados a linhas específicas do código-fonte. Quando essa opção for especificada, os dados serão atribuídos somente a funções.  
 
 4. Reinicie o computador.  
 
@@ -90,14 +90,14 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
    |[/sys](../profiling/sys-vsperfcmd.md)[`:``Interval`]|Altera o evento de amostragem para chamadas do sistema do processo para o kernel do sistema operacional (syscalls). Se `Interval` for especificado, define o número de chamadas entre as amostras. O padrão é 10.|  
    |[/counter](../profiling/counter.md) **:** `Config`|Altera o evento de amostragem e o intervalo para o contador de desempenho do processador e o intervalo especificado em `Config`.|  
 
-   -   **targetclr:** `Version` especifica a versão do CLR (Common Language Runtime) cujo perfil deverá ser criado quando mais de uma versão do tempo de execução for carregada em um aplicativo. Opcional.  
+   - **targetclr:** `Version` especifica a versão do CLR (Common Language Runtime) cujo perfil deverá ser criado quando mais de uma versão do tempo de execução for carregada em um aplicativo. Opcional.  
 
 ## <a name="controlling-data-collection"></a>Controlando coleção de dados  
  Quando o serviço estiver em execução, você pode usar as opções **VSPerfCmd.exe** para iniciar e parar a gravação de dados no arquivo de dados do criador de perfil. Controlar a coleta de dados permite coletar dados de uma parte específica da execução do programa, como a inicialização ou o desligamento do aplicativo.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar e interromper a coleta de dados  
 
--   Os pares de opções **VSPerfCmd** a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
+- Os pares de opções **VSPerfCmd** a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
 
     |Opção|Descrição|  
     |------------|-----------------|  
@@ -112,23 +112,23 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
 
 #### <a name="to-end-a-profiling-session"></a>Para encerrar uma sessão de criação de perfil  
 
-1.  Siga um destes procedimentos para desanexar o criador de perfil do aplicativo de destino:  
+1. Siga um destes procedimentos para desanexar o criador de perfil do aplicativo de destino:  
 
-    -   Pare o serviço.  
+    - Pare o serviço.  
 
          - ou -  
 
-    -   Digite **VSPerfCmd /detach**  
+    - Digite **VSPerfCmd /detach**  
 
-2.  Desligue o criador de perfil. Tipo:  
+2. Desligue o criador de perfil. Tipo:  
 
      **VSPerfCmd /shutdown**  
 
-3.  (Opcional) desmarcar as variáveis de ambiente de criação de perfil. Tipo:  
+3. (Opcional) desmarcar as variáveis de ambiente de criação de perfil. Tipo:  
 
      **VSPerfClrEnv /globaloff**  
 
-4.  Reinicie o computador.  
+4. Reinicie o computador.  
 
 ## <a name="see-also"></a>Consulte também  
  [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)   

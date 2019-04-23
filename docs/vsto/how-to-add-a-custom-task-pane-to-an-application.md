@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b531fdbbd637d2d505d44ea27bcdfb5350ad36a6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 047728f00fae9dbf3cf2511300beaa84c2201cdd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616775"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039824"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Como: Adicionar um painel de tarefas personalizado a um aplicativo
   Você pode adicionar um painel de tarefas personalizado para os aplicativos listados acima por meio do suplemento do VSTO. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
@@ -32,24 +32,24 @@ ms.locfileid: "56616775"
 
 ### <a name="to-add-a-custom-task-pane-to-an-application"></a>Para adicionar um painel de tarefas personalizado a um aplicativo
 
-1.  Abra ou crie um projeto de suplemento do VSTO para um dos aplicativos listados acima. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Abra ou crie um projeto de suplemento do VSTO para um dos aplicativos listados acima. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Sobre o **Project** menu, clique em **adicionar controle de usuário**.
+2. Sobre o **Project** menu, clique em **adicionar controle de usuário**.
 
-3.  No **Adicionar Novo Item** diálogo caixa, altere o nome do novo controle de usuário para **MyUserControl**e, em seguida, clique em **adicionar**.
+3. No **Adicionar Novo Item** diálogo caixa, altere o nome do novo controle de usuário para **MyUserControl**e, em seguida, clique em **adicionar**.
 
      O controle de usuário é aberto no designer.
 
-4.  Adicionar um ou mais controles de formulários do Windows do **caixa de ferramentas** ao controle de usuário.
+4. Adicionar um ou mais controles de formulários do Windows do **caixa de ferramentas** ao controle de usuário.
 
-5.  Abra o **ThisAddIn.cs** ou **ThisAddIn. vb** arquivo de código.
+5. Abra o **ThisAddIn.cs** ou **ThisAddIn. vb** arquivo de código.
 
-6.  Adicione o código a seguir à classe `ThisAddIn`. Esse código declara as instâncias de `MyUserControl` e <xref:Microsoft.Office.Tools.CustomTaskPane> como membros do `ThisAddIn` classe.
+6. Adicione o código a seguir à classe `ThisAddIn`. Esse código declara as instâncias de `MyUserControl` e <xref:Microsoft.Office.Tools.CustomTaskPane> como membros do `ThisAddIn` classe.
 
      [!code-vb[Trin_TaskPaneBasic#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#1)]
      [!code-csharp[Trin_TaskPaneBasic#1](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#1)]
 
-7.  Adicione o seguinte código ao manipulador de eventos do `ThisAddIn_Startup`. Esse código cria uma nova <xref:Microsoft.Office.Tools.CustomTaskPane> adicionando o `MyUserControl` do objeto para o `CustomTaskPanes` coleção. O código também exibe o painel de tarefas.
+7. Adicione o seguinte código ao manipulador de eventos do `ThisAddIn_Startup`. Esse código cria uma nova <xref:Microsoft.Office.Tools.CustomTaskPane> adicionando o `MyUserControl` do objeto para o `CustomTaskPanes` coleção. O código também exibe o painel de tarefas.
 
      [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)]
      [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]

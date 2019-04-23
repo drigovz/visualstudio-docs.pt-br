@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 46fa0dbcc5ab80ce567d4e0afd64d8990006204b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: d8ca2366111e0e87e8e95db66f9bdb146016adb8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663239"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040126"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Como: Migrar uma Linguagem Específica de Domínio para uma nova versão
 Você pode migrar os projetos que definem e usam a linguagem específica de domínio para [!INCLUDE[vs2010](../misc/includes/vs2010_md.md)] da versão do [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] que foi distribuído com [!INCLUDE[vs_orcas_long](../debugger/includes/vs_orcas_long_md.md)].
@@ -28,9 +28,9 @@ Você pode migrar os projetos que definem e usam a linguagem específica de dom�
 
 #### <a name="to-prepare-projects-for-migration"></a>Para preparar os projetos para migração.
 
--   Verifique se o **. csproj** e **. sln** arquivos podem ser gravados. Se estiverem sob controle do código-fonte, certifique-se de que eles são check-out.
+- Verifique se o **. csproj** e **. sln** arquivos podem ser gravados. Se estiverem sob controle do código-fonte, certifique-se de que eles são check-out.
 
--   Faça uma cópia das pastas que você pretende migrar.
+- Faça uma cópia das pastas que você pretende migrar.
 
 ## <a name="migrating-a-collection-of-projects"></a>Migrar uma coleção de projetos
 
@@ -38,7 +38,7 @@ Você pode migrar os projetos que definem e usam a linguagem específica de dom�
 
 1. Inicie a ferramenta de migração de DSL.
 
-   -   Você pode clicar duas vezes a ferramenta no Windows Explorer (ou Explorador de arquivos) ou iniciar a ferramenta de prompt de comando. A ferramenta é neste local:
+   - Você pode clicar duas vezes a ferramenta no Windows Explorer (ou Explorador de arquivos) ou iniciar a ferramenta de prompt de comando. A ferramenta é neste local:
 
         **%ProgramFiles%\Microsoft Visual Studio 2010 SDK\VisualStudioIntegration\Tools\DSLTools\DslProjectsMigrationTool.exe**
 
@@ -50,37 +50,37 @@ Você pode migrar os projetos que definem e usam a linguagem específica de dom�
 
 3. Examine a árvore de projetos e desmarque a opção de projetos que você não deseja converter.
 
-   -   Selecione um projeto ou solução para ver uma lista das alterações que fará com que a ferramenta.
+   - Selecione um projeto ou solução para ver uma lista das alterações que fará com que a ferramenta.
 
        > [!NOTE]
        >  As caixas de seleção que aparecem ao lado dos nomes de pasta não têm nenhum efeito. Você deve expandir as pastas para inspecionar os projetos e soluções.
 
 4. Converta os projetos.
 
-   1.  Clique em **converter**.
+   1. Clique em **converter**.
 
         Antes de cada arquivo de projeto é convertido, uma cópia da _project_**. csproj** é salvo como _projeto_**. vs2008.csproj**
 
         Uma cópia de cada _solution_**. sln** é salvo como _solução_**. vs2008.sln**
 
-   2.  Investigue as conversões com falha que são relatadas.
+   2. Investigue as conversões com falha que são relatadas.
 
         Falhas são relatadas na janela de texto. Além disso, o modo de exibição de árvore mostra um sinalizador vermelho em cada nó que falhou ao converter. Você pode clicar no nó para obter mais informações sobre essa falha.
 
 5. **Transformar todos os modelos** em soluções que contêm com êxito convertidos em projetos.
 
-   1.  Abra a solução.
+   1. Abra a solução.
 
-   2.  Clique o **transformar todos os modelos** botão no cabeçalho do Gerenciador de soluções.
+   2. Clique o **transformar todos os modelos** botão no cabeçalho do Gerenciador de soluções.
 
        > [!NOTE]
        >  Você pode fazer essa etapa desnecessária. Para obter mais informações, consulte [como automatizar a transformar todos os modelos](/previous-versions/visualstudio/visual-studio-2012/ff521399\(v\=vs.110\)).
 
 6. Atualize seu código personalizado nos projetos convertidos.
 
-   -   Tentativa de compilar os projetos e investigar quaisquer falhas.
+   - Tentativa de compilar os projetos e investigar quaisquer falhas.
 
-   -   Teste seu designer.
+   - Teste seu designer.
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

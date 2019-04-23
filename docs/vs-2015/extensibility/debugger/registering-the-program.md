@@ -11,27 +11,27 @@ ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bc4a8de9f93a04fb062954703a1c14b4c4447308
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 484aa854a8e0987bf034e829a3acf02d6d637870
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925380"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042634"
 ---
 # <a name="registering-the-program"></a>Registrando o programa
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Depois que o mecanismo de depuração tiver adquirido uma porta, representado por um [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) interface, a próxima etapa na habilitação de programa a ser depurado é registrá-lo com a porta. Depois de registrado, o programa está disponível para depuração por um dos seguintes meios:  
   
--   O processo de anexação, que permite que o depurador obtenha controle total de depuração de um aplicativo em execução.  
+- O processo de anexação, que permite que o depurador obtenha controle total de depuração de um aplicativo em execução.  
   
--   Just-in-time (JIT) depuração, que permite depurar os após o fato de um programa que é executado independentemente de um depurador. Quando a arquitetura de tempo de execução captura uma falha, o depurador é notificado antes do sistema operacional ou o ambiente de tempo de execução libera a memória e os recursos do programa com falha.  
+- Just-in-time (JIT) depuração, que permite depurar os após o fato de um programa que é executado independentemente de um depurador. Quando a arquitetura de tempo de execução captura uma falha, o depurador é notificado antes do sistema operacional ou o ambiente de tempo de execução libera a memória e os recursos do programa com falha.  
   
 ## <a name="registering-procedure"></a>Registrar o procedimento  
   
 #### <a name="to-register-your-program"></a>Para registrar o seu programa  
   
-1.  Chame o [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) método implementado pela porta.  
+1. Chame o [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md) método implementado pela porta.  
   
      `IDebugPortNotify2::AddProgramNode` requer um ponteiro para um [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interface.  
   

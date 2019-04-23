@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 387ec5814e0b5a2a8c2169198a3ceebad47e10d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599474"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040140"
 ---
 # <a name="ribbon-overview"></a>Visão geral da faixa de opções
   A faixa de opções é uma maneira de organizar os comandos relacionados para que eles são mais fáceis de encontrar. Comandos são exibidos como controles da faixa de opções. Controles são organizados em *grupos* ao longo de uma faixa horizontal na borda superior da janela do aplicativo. Grupos relacionados são organizados em guias.
@@ -93,12 +93,12 @@ ms.locfileid: "56599474"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>Adicionar vários itens de faixa de opções para um projeto
  Você pode adicionar mais de um item da faixa de opções para um único projeto. Isso é útil se você quiser executar qualquer uma das seguintes tarefas:
 
--   Criar faixas de opções do Outlook *inspetores*. Para obter mais informações, consulte [personalizar uma faixa de opções para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+- Criar faixas de opções do Outlook *inspetores*. Para obter mais informações, consulte [personalizar uma faixa de opções para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
     >  Um Inspector é uma janela que é aberta quando os usuários executam determinadas tarefas, como a criação de uma mensagem de email.
 
--   Selecione quais da faixa de opções para exibir no tempo de execução.
+- Selecione quais da faixa de opções para exibir no tempo de execução.
 
 ### <a name="select-which-ribbons-to-display-at-runtime"></a>Selecione quais faixas de opções para exibir no tempo de execução
  Como um projeto pode conter mais de uma faixa de opções, você pode selecionar quais da faixa de opções para exibir no tempo de execução.

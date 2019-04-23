@@ -11,12 +11,12 @@ ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2546d9e9c864772bf1a2d3063e8ce4adc1cd7605
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 21a2b520111c07b6c964eae19f5a6064e926db70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926784"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039977"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>Como: Usar itens internos que podem ser coloridos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Antes de usar os itens de coloração internos, você deve primeiro sinalizar pa
   
 ### <a name="to-use-built-in-colorable-items"></a>Usar itens de coloração internos  
   
-1.  Em HKEY_LOCAL_MACHINE\VisualStudio\\*x. y*\Languages\Language serviços\\*nome do idioma*, onde *x. y* é uma versão do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e *nome do idioma* é o nome do seu idioma, crie um valor de entrada do Registro DWORD chamado `RequestStockColors`.  
+1. Em HKEY_LOCAL_MACHINE\VisualStudio\\*x. y*\Languages\Language serviços\\*nome do idioma*, onde *x. y* é uma versão do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] e *nome do idioma* é o nome do seu idioma, crie um valor de entrada do Registro DWORD chamado `RequestStockColors`.  
   
-2.  Defina o `RequestStockColors` valor de entrada do registro como 1.  
+2. Defina o `RequestStockColors` valor de entrada do registro como 1.  
   
      Depois de criar a entrada de registro, seu colorizador <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> método pode usar os membros do <xref:Microsoft.VisualStudio.TextManager.Interop.DEFAULTITEMS> enumeração para preencher a matriz de atributos de cor para uso pelo editor.  
   

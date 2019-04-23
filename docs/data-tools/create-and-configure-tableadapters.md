@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: d4243bcedea1699ba02b3c3715cab7f61ba62281
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 026b670deb5beff42c927894ee9851ddb3ccc3ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950013"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042805"
 ---
 # <a name="create-and-configure-tableadapters"></a>Criar e configurar TableAdapters
 
@@ -80,16 +80,16 @@ O exemplo a seguir mostra como chamar uma consulta adicional chamada `FillByCity
 
 ### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Para iniciar o Assistente de configuração de consulta do TableAdapter com uma nova consulta
 
-1.  Abra o conjunto de dados no **Designer de Conjunto de Dados**.
+1. Abra o conjunto de dados no **Designer de Conjunto de Dados**.
 
-2.  Se você estiver criando uma nova consulta, arraste um **consulta** do objeto da **DataSet** guia da **caixa de ferramentas** em um <xref:System.Data.DataTable>, ou selecione **Add Query**no menu de atalho do TableAdapter. Você também pode arrastar uma **consulta** objeto em uma área vazia do **Dataset Designer**, que cria um TableAdapter sem um associado <xref:System.Data.DataTable>. Essas consultas só podem retornar valores únicos de (escalares) ou executar a atualização, inserção, ou exclua comandos no banco de dados.
+2. Se você estiver criando uma nova consulta, arraste um **consulta** do objeto da **DataSet** guia da **caixa de ferramentas** em um <xref:System.Data.DataTable>, ou selecione **Add Query**no menu de atalho do TableAdapter. Você também pode arrastar uma **consulta** objeto em uma área vazia do **Dataset Designer**, que cria um TableAdapter sem um associado <xref:System.Data.DataTable>. Essas consultas só podem retornar valores únicos de (escalares) ou executar a atualização, inserção, ou exclua comandos no banco de dados.
 
-3.  Sobre o **escolha sua Conexão de dados** de tela, selecione ou crie a conexão que a consulta usará.
+3. Sobre o **escolha sua Conexão de dados** de tela, selecione ou crie a conexão que a consulta usará.
 
     > [!NOTE]
     > Essa tela aparece somente quando o designer não pode determinar a conexão apropriada para usar, ou quando não há conexões disponíveis.
 
-4.  Sobre o **escolher um tipo de comando** tela, selecione os seguintes métodos de busca de dados do banco de dados:
+4. Sobre o **escolher um tipo de comando** tela, selecione os seguintes métodos de busca de dados do banco de dados:
 
     - **Usar instruções SQL** permite que você digite uma instrução SQL para selecionar os dados de seu banco de dados.
 

@@ -11,12 +11,12 @@ ms.date: 11/11/2016
 ms.author: ghogen
 ms.prod: visual-studio-dev14
 ms.technology: vs-azure
-ms.openlocfilehash: ab9a645ac5bb656336ff38114987ff3838c416f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f9f81b91e0593d42e7792d7596648dc53afd8dd6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925282"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039395"
 ---
 # <a name="optimizing-your-azure-code"></a>Otimizando o código do Azure
 Quando você está programando aplicativos que usam o Microsoft Azure, existem algumas práticas de codificação que você deve seguir para ajudar a evitar problemas de escalabilidade, comportamento e desempenho do aplicativo em um ambiente de nuvem. A Microsoft fornece uma ferramenta de análise de código do Azure que reconhece e identifica vários desses problemas comumente encontrados e ajuda a resolvê-los. Você pode baixar a ferramenta no Visual Studio, via NuGet.
@@ -216,6 +216,7 @@ while (true)
    }
 }
 ```
+
 ## <a name="consider-using-asynchronous-service-bus-methods"></a>Considere o uso de métodos assíncronos de barramento de serviço
 ### <a name="id"></a>ID
 AP2003

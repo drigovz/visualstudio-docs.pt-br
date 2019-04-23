@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 385eee679c3a65db360d9ec6c0ab7735ff40128a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7f8e3f4d53b0a8b79367064761ba0fc5b901dc5e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924653"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670063"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Como: Selecionar os esquemas XML que serão usados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 O editor XML fornece um cache de esquema %InstallDir% localizado no diretório \ \ esquemas XML. O cache de esquema inclui esquemas XML conhecidos que são usados para validação do IntelliSense e de documento XML.  
   
  O **esquemas** propriedade do documento é usada para selecionar um ou mais XML esquemas definição de esquema XSD (linguagem) para usar. Permite que você selecionar esquemas de cache do esquema, ou especifica um esquema que não está localizado no cache.  

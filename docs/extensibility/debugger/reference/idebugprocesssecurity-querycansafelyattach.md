@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44b125f44f3345e7bd28a9993a7a44be2e378b53
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 891a0c200b02f8768ef68d1d87649bfd35cf59d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701427"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040605"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
 Esse método permite que o fornecedor de porta exibir um aviso antes do usuário anexar a um processo que não é seguro.
@@ -33,11 +33,11 @@ int QueryCanSafelyAttach();
 ## <a name="return-value"></a>Valor de retorno
  Os valores de retorno são da seguinte maneira:
 
--   `S_OK`: Anexar a processo é seguro e nenhuma caixa de diálogo de aviso é exibida.
+- `S_OK`: Anexar a processo é seguro e nenhuma caixa de diálogo de aviso é exibida.
 
--   `S_FALSE`: Anexando poderia ser um problema de segurança e uma caixa de diálogo com um aviso é exibida.
+- `S_FALSE`: Anexando poderia ser um problema de segurança e uma caixa de diálogo com um aviso é exibida.
 
--   `FAILURE`: Falha na anexação ao processo.
+- `FAILURE`: Falha na anexação ao processo.
 
 ## <a name="see-also"></a>Consulte também
 - [IDebugProcessSecurity](../../../extensibility/debugger/reference/idebugprocesssecurity.md)

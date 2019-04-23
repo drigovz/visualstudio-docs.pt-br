@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 47eed859b0969289a78f4eb13314241e89982f5d
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: c2c1591e3d859bd768e39d0db461cc0402c57258
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54919298"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60042504"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Passo a passo: Baixar assemblies sob demanda com a implantação do ClickOnce usando o Designer de API
 Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo são baixadas quando o aplicativo é executado pela primeira vez. No entanto, pode haver partes do seu aplicativo que são usados por um pequeno conjunto de usuários. Nesse caso, você deseja baixar um assembly somente quando você cria um de seus tipos. A instrução a seguir demonstra como marcar determinados assemblies em seu aplicativo como "opcional", e como baixá-los usando as classes no <xref:System.Deployment.Application> namespace quando o common language runtime requê-los.
@@ -71,15 +71,15 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../depl
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>Marcar assemblies como opcionais no seu aplicativo ClickOnce usando o Visual Studio
 
-1.  Clique com botão direito no projeto de formulários do Windows no **Gerenciador de soluções** e clique em **propriedades**. Selecione o **publicar** guia.
+1. Clique com botão direito no projeto de formulários do Windows no **Gerenciador de soluções** e clique em **propriedades**. Selecione o **publicar** guia.
 
-2.  Clique o **arquivos de aplicativo** botão.
+2. Clique o **arquivos de aplicativo** botão.
 
-3.  Localize a listagem para *ClickOnceLibrary.dll*. Definir a **Status da publicação** caixa de lista suspensa **Include**.
+3. Localize a listagem para *ClickOnceLibrary.dll*. Definir a **Status da publicação** caixa de lista suspensa **Include**.
 
-4.  Expanda o **grupo** caixa de lista suspensa e selecione **New**. Insira o nome `ClickOnceLibrary` como o novo nome de grupo.
+4. Expanda o **grupo** caixa de lista suspensa e selecione **New**. Insira o nome `ClickOnceLibrary` como o novo nome de grupo.
 
-5.  Continuar publicando seu aplicativo, conforme descrito em [como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+5. Continuar publicando seu aplicativo, conforme descrito em [como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Marcar assemblies como opcionais no seu aplicativo ClickOnce usando o Manifest Generation and Editing Tool, cliente gráfico (MageUI.exe)
 

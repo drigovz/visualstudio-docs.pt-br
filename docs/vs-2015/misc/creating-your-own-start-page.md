@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: 001af82f976728b55d2f3b2c3f47d3f39a9e2e73
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 662ee0ba4659e09b02f120bac5b3eaa728add6d9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000053"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037889"
 ---
 # <a name="creating-your-own-start-page"></a>Criando sua própria página inicial
 Você pode criar uma página inicial personalizada usando o modelo de projeto de página Iniciar ou criando uma página em branco do início.  
@@ -28,22 +28,22 @@ Você pode criar uma página inicial personalizada usando o modelo de projeto de
   
 #### <a name="to-create-a-custom-start-page-by-using-the-start-page-project-template"></a>Para criar uma página inicial personalizada usando o modelo de projeto de página inicial  
   
-1.  Baixe e instale o [modelo de projeto de página de início](http://go.microsoft.com/fwlink/?LinkId=186204) da Galeria do Visual Studio.  
+1. Baixe e instale o [modelo de projeto de página de início](http://go.microsoft.com/fwlink/?LinkId=186204) da Galeria do Visual Studio.  
   
     > [!WARNING]
     >  No momento o modelo de projeto do Visual Studio 2010 iniciar página não foi atualizado. Para obter informações sobre como atualizar esse modelo, consulte [como: Atualizar uma página de início personalizados do Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
-2.  Depois de ter instalado o modelo, crie um novo projeto de página de início com ele.  
+2. Depois de ter instalado o modelo, crie um novo projeto de página de início com ele.  
   
-3.  No painel esquerdo da caixa de diálogo Novo projeto, sob **modelos instalados**, expanda o **Other Project Types** nó e, em seguida, clique **extensibilidade**.  
+3. No painel esquerdo da caixa de diálogo Novo projeto, sob **modelos instalados**, expanda o **Other Project Types** nó e, em seguida, clique **extensibilidade**.  
   
-4.  No painel central, clique em **página de início personalizada**e, em seguida, nomeie o projeto e clique em **Okey**.  
+4. No painel central, clique em **página de início personalizada**e, em seguida, nomeie o projeto e clique em **Okey**.  
   
      Visual Studio cria um projeto de página inicial que é uma cópia completa da página do Visual Studio iniciar.  
   
-5.  Partir **Gerenciador de soluções**, abra **StartPage**.  
+5. Partir **Gerenciador de soluções**, abra **StartPage**.  
   
-6.  Edite StartPage.  
+6. Edite StartPage.  
   
      Você pode exibir seu trabalho pressionando F5 para abrir uma instância experimental do Visual Studio com a página de início personalizados instalados.  
   

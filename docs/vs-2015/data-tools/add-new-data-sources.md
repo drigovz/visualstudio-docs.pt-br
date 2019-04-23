@@ -19,17 +19,16 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5bbfeafdf60e58031813c2dcd64b2adfcfb9b5b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1131f6d569d01787d26bea7dde1c993401ce9580
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923304"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670167"
 ---
 # <a name="add-new-data-sources"></a>Adicionar novas fontes de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 No contexto das ferramentas de dados do .NET no Visual Studio, o termo *fonte de dados* refere-se a objetos .NET que se conectar a um armazenamento de dados e expõem os dados para um aplicativo .NET. Os designers do Visual Studio podem consumir a saída da fonte de dados para gerar o código clichê que associa os dados a formas quando você arrasta e solta os objetos de banco de dados a partir de **fontes de dados** janela. Esse tipo de fonte de dados pode ser:  
   
 -   Uma classe em um modelo do Entity Framework que está associado a algum tipo de banco de dados.  

@@ -11,11 +11,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 48c5d365c632deb4d654d5115a141ba9933d7a6f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366874"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60038389"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>Depuração remota do ASP.NET Core em um computador remoto IIS no Visual Studio
 Para depurar um aplicativo ASP.NET que tenha sido implantado no IIS, instalar e executar as ferramentas remotas no computador onde você implantou seu aplicativo e, em seguida, anexar a seu aplicativo em execução do Visual Studio.

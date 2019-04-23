@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5d85db8ff2b9b93d99ad44377a1935552c951e32
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e55e108901d9be62531e459f2b7805f86cfe6a08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925103"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60040635"
 ---
 # <a name="refresh-an-app-javascript"></a>Atualizar um aplicativo (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,38 +35,38 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
  A atualização não mantém o estado do aplicativo nem reflete as seguintes alterações feitas no aplicativo:  
   
--   Alterações no arquivo de manifesto do pacote, inclusive nas imagens especificadas no manifesto do pacote.  
+- Alterações no arquivo de manifesto do pacote, inclusive nas imagens especificadas no manifesto do pacote.  
   
--   Alterações em referências, como a adição ou a remoção de uma referência de SDK, ou alterações nos componentes do Windows Runtime  (arquivos .winmd).  
+- Alterações em referências, como a adição ou a remoção de uma referência de SDK, ou alterações nos componentes do Windows Runtime  (arquivos .winmd).  
   
--   Alterações em recursos, como as efetuadas nas cadeias de caracteres dos arquivos .resjson.  
+- Alterações em recursos, como as efetuadas nas cadeias de caracteres dos arquivos .resjson.  
   
--   Alterações em arquivos de projeto que resultam em mudanças de nome de demarcador, novos arquivos de projeto ou arquivos excluídos.  
+- Alterações em arquivos de projeto que resultam em mudanças de nome de demarcador, novos arquivos de projeto ou arquivos excluídos.  
   
--   Alterações em propriedades de projetos e de itens, como as feitas no dispositivo de depuração selecionado, ou alterações na ação de pacote para um arquivo (na janela Propriedades).  
+- Alterações em propriedades de projetos e de itens, como as feitas no dispositivo de depuração selecionado, ou alterações na ação de pacote para um arquivo (na janela Propriedades).  
   
 > [!IMPORTANT]
 >  Ao alterar referências, alterar o manifesto do pacote ou fazer outras alterações especificadas na lista anterior, você precisa interromper e reiniciar o depurador para atualizar os arquivos de origem HTML, CSS e JavaScript.  
   
 ### <a name="to-refresh-an-app"></a>Para atualizar um aplicativo  
   
-1.  No Visual Studio, crie um novo projeto usando o modelo de projeto do Aplicativo de Navegação.  
+1. No Visual Studio, crie um novo projeto usando o modelo de projeto do Aplicativo de Navegação.  
   
      Este pode ser um aplicativo da Windows Store, da Windows Phone Store ou um aplicativo universal.  
   
-2.  Com o modelo aberto no Visual Studio, escolha um destino de depuração.  
+2. Com o modelo aberto no Visual Studio, escolha um destino de depuração.  
   
      Se um projeto do Windows Phone for seu projeto de inicialização atual, selecione o emulador do Windows Phone para o destino de depuração. Caso contrário, selecione **simulador** ou **Máquina Local**.  
   
      ![Lista de destino de depuração Select](../debugger/media/js-select-target.png "JS_Select_Target")  
   
-3.  Pressione F5 para executar o aplicativo no modo de depuração.  
+3. Pressione F5 para executar o aplicativo no modo de depuração.  
   
-4.  Alterne para o Visual Studio. (Pressione F12.)  
+4. Alterne para o Visual Studio. (Pressione F12.)  
   
-5.  Na **Gerenciador de soluções**, no **páginas** > **doméstica** pasta, abra home. HTML.  
+5. Na **Gerenciador de soluções**, no **páginas** > **doméstica** pasta, abra home. HTML.  
   
-6.  Altere o texto do título da página, de  
+6. Altere o texto do título da página, de  
   
     ```html  
     Welcome to yourAppName!  
@@ -78,9 +78,9 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
     Hello!  
     ```  
   
-7.  Clique o **Refresh Windows app** botão, que se parece com isso: ![Atualizar o botão de aplicativo do Windows](../debugger/media/js-refresh.png "JS_Refresh"). (Ou pressione F4.)  
+7. Clique o **Refresh Windows app** botão, que se parece com isso: ![Atualizar o botão de aplicativo do Windows](../debugger/media/js-refresh.png "JS_Refresh"). (Ou pressione F4.)  
   
-8.  Altere para o aplicativo. O aplicativo é recarregado sem que o depurador seja reiniciado, e o novo título da página é exibido.  
+8. Altere para o aplicativo. O aplicativo é recarregado sem que o depurador seja reiniciado, e o novo título da página é exibido.  
   
 ## <a name="see-also"></a>Consulte também  
  [Início Rápido: depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md)

@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2722286af0d4c95fec30593047bedf1fe0ba4d2d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dd0372ca3264bedd6fbb17ef3c8326471cb6e99f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927308"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60037862"
 ---
 # <a name="ca1810-initialize-reference-type-static-fields-inline"></a>CA1810: Inicializar campos estáticos de tipo de referência em linha
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ ms.locfileid: "58927308"
 
  As verificações de construtor estático podem diminuir o desempenho. Geralmente, um construtor estático é usado somente para inicializar campos estáticos, na qual o caso, apenas certifique-se de que a inicialização estática ocorre antes do primeiro acesso de um campo estático. O `beforefieldinit` comportamento é apropriado para eles e a maioria dos outros tipos. Só é inadequado ao estado global afeta a inicialização estática e uma das seguintes opções for verdadeira:
 
--   O efeito sobre o estado global é caro e não será necessário se o tipo não é usado.
+- O efeito sobre o estado global é caro e não será necessário se o tipo não é usado.
 
--   Os efeitos de estado global podem ser acessados sem acessar qualquer campo estático do tipo.
+- Os efeitos de estado global podem ser acessados sem acessar qualquer campo estático do tipo.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, inicialize todos os dados estáticos quando declarados e remova o construtor estático.

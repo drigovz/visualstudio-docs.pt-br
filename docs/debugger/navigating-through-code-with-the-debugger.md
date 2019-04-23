@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 05458481a691f74f1746860e537d915dcad90efc
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c5a57c41753c8689e83da2a6f8473fa643a657f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428746"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60041572"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>Navegar pelo código com o depurador do Visual Studio
 
@@ -44,7 +44,7 @@ Se você interromper no código que não tem a origem ou símbolo (*. PDB*) arqu
 
 Você não precisa sempre iniciar a depuração iniciar um aplicativo no início. Você também pode pressionar **F11** à [intervir no código](#BKMK_Step_into__over__or_out_of_the_code), pressione **F10** para [step over no código](#BKMK_Step_over_Step_out), ou [executados em um local específico ou função](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All).
 
-##  <a name="step-through-code"></a>Percorrer o código
+## <a name="step-through-code"></a>Percorrer o código
 
 Os comandos de etapa do depurador ajudam você a inspecionar o estado do aplicativo ou Saiba mais sobre seu fluxo de execução.
 
@@ -75,7 +75,7 @@ Em uma chamada de função aninhada, a **Depuração Completa** intervém na fun
 >[!TIP]
 >Conforme você executa cada linha de código, você pode passar o mouse sobre as variáveis para ver seus valores, ou usar o [Locals](autos-and-locals-windows.md) e [inspeção](watch-and-quickwatch-windows.md) windows para observar os valores a alterar. Você pode também visualmente a pilha de chamadas ao entrar em funções. Ver [mapear métodos na pilha de chamadas ao depurar](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).
 
-###  <a name="BKMK_Step_over_Step_out"></a> Percorrer o código e ignorar algumas funções
+### <a name="BKMK_Step_over_Step_out"></a> Percorrer o código e ignorar algumas funções
 
 Você pode não se importa uma função durante a depuração ou você sabe que ele funciona, como o código da biblioteca bem testado. Você pode usar os comandos a seguir para ignorar por meio de código. As funções ainda executar, mas o depurador ignora sobre eles.
 
@@ -84,7 +84,7 @@ Você pode não se importa uma função durante a depuração ou você sabe que 
 |**F10**|**Depuração Parcial**|Se a linha atual contiver uma chamada de função **Step Over** executa o código e, em seguida, suspende a execução na primeira linha de código após a função chamada retorna.|
 |**Shift**+**F11**|**Depuração Circular**|**Depuração circular** continua a execução de código e suspende a execução quando a função atual é retornado. O depurador ignora por meio da função atual.|
 
-##  <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Executar até um local específico ou uma função
+## <a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a> Executar até um local específico ou uma função
 
 Talvez você prefira executar diretamente para um local específico ou uma função quando você sabe exatamente o código que você deseja inspecionar ou, você sabe onde você deseja iniciar a depuração.
 
@@ -139,7 +139,7 @@ Enquanto está em pausa no depurador, você pode passar o mouse sobre uma instru
 
 Para interromper na próxima linha de código em um aplicativo em execução disponível, selecione **Debug** > **interromper tudo**, ou pressione **Ctrl**+**Alt**  + **Interromper**.
 
-##  <a name="BKMK_Set_the_next_statement_to_execute"></a> Mova o ponteiro para alterar o fluxo de execução
+## <a name="BKMK_Set_the_next_statement_to_execute"></a> Mova o ponteiro para alterar o fluxo de execução
 
 Enquanto o depurador está em pausa, uma seta amarela na margem do código-fonte ou **desmontagem** janela marca o local da próxima instrução a ser executada. Você pode alterar a próxima instrução a executar movendo essa seta. Você pode ignorar uma parte do código ou retornar a uma linha anterior. Movendo o ponteiro é útil para situações como ignorar uma seção de código que contém um bug conhecido.
 
@@ -181,7 +181,7 @@ Para carregar símbolos da Microsoft, consulte [configurar locais de símbolos e
 
 1. No **módulos** janela, você pode informar quais módulos possuem símbolos carregados na **Status do símbolo** coluna. Com o módulo que você deseja carregar símbolos para e, em seguida, selecione o botão direito **carregar símbolos**.
 
-##  <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Intervir em propriedades e operadores no código gerenciado
+## <a name="BKMK_Step_into_properties_and_operators_in_managed_code"></a> Intervir em propriedades e operadores no código gerenciado
  O depurador considera propriedades e operadores no código gerenciado por padrão. Na maioria dos casos, isso proporciona uma melhor experiência de depuração. Para habilitar a depuração em propriedades ou operadores, escolha **Debug** > **opções**. Sobre o **Debugging** > **geral** página, desmarque o **depurar parcialmente propriedades e operadores (somente gerenciado)** caixa de seleção.
 
 ## <a name="see-also"></a>Consulte também
