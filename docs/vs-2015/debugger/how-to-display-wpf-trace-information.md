@@ -17,12 +17,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a25d2bf4c814bf946aa64cfb126e119f50913d5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c9642902bf334ce83f95a9113059683f183c6116
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926268"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113775"
 ---
 # <a name="how-to-display-wpf-trace-information"></a>Como: Exibir informações de rastreamento do WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,23 +33,23 @@ O [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] pode receber
   
 ### <a name="to-enable-or-customize-wpf-trace-information"></a>Para habilitar ou personalizar as informações de rastreamento do WPF  
   
-1.  No menu **Ferramentas**, selecione **Opções**.  
+1. No menu **Ferramentas**, selecione **Opções**.  
   
-2.  Na caixa de diálogo **Opções**, na caixa à esquerda, abra o nó **Depuração**.  
+2. Na caixa de diálogo **Opções**, na caixa à esquerda, abra o nó **Depuração**.  
   
-3.  Em **Depuração**, clique em **Janela de Saída**.  
+3. Em **Depuração**, clique em **Janela de Saída**.  
   
-4.  Em **Configurações Gerais de Saída**, selecione **Todas as saídas da depuração**.  
+4. Em **Configurações Gerais de Saída**, selecione **Todas as saídas da depuração**.  
   
-5.  Na caixa à direita, procure **Configurações de Rastreamento de WPF**.  
+5. Na caixa à direita, procure **Configurações de Rastreamento de WPF**.  
   
-6.  Abra o nó **Configurações de Rastreamento de WPF**.  
+6. Abra o nó **Configurações de Rastreamento de WPF**.  
   
-7.  Em **Configurações de Rastreamento de WPF**, clique na categoria de configurações que você deseja habilitar (por exemplo, **Associação de Dados**).  
+7. Em **Configurações de Rastreamento de WPF**, clique na categoria de configurações que você deseja habilitar (por exemplo, **Associação de Dados**).  
   
      Um controle de lista suspensa aparece na coluna Configurações ao lado de **Associação de Dados** ou de qualquer categoria que você tiver clicado.  
   
-8.  Clique na lista suspensa e selecione o tipo de informações de rastreamento que você deseja ver: **Todos os**, **críticas**, **erro**, **aviso**, **informações**, **detalhado**, ou **ActivityTracing**.  
+8. Clique na lista suspensa e selecione o tipo de informações de rastreamento que você deseja ver: **Todos os**, **críticas**, **erro**, **aviso**, **informações**, **detalhado**, ou **ActivityTracing**.  
   
      **Crítico** habilita o rastreamento apenas de eventos Críticos.  
   
@@ -69,23 +69,23 @@ O [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] pode receber
   
 ### <a name="to-disable-wpf-trace-information"></a>Para desabilitar as informações de rastreamento do WPF  
   
-1.  No menu **Ferramentas**, selecione **Opções**.  
+1. No menu **Ferramentas**, selecione **Opções**.  
   
-2.  Na caixa de diálogo **Opções**, na caixa à esquerda, abra o nó **Depuração**.  
+2. Na caixa de diálogo **Opções**, na caixa à esquerda, abra o nó **Depuração**.  
   
-3.  Em **Depuração**, clique em **Janela de Saída**.  
+3. Em **Depuração**, clique em **Janela de Saída**.  
   
-4.  Na caixa à direita, procure **Configurações de Rastreamento de WPF**.  
+4. Na caixa à direita, procure **Configurações de Rastreamento de WPF**.  
   
-5.  Abra o nó **Configurações de Rastreamento de WPF**.  
+5. Abra o nó **Configurações de Rastreamento de WPF**.  
   
-6.  Em **Configurações de Rastreamento de WPF**, clique na categoria de configurações que você deseja habilitar (por exemplo, **Associação de Dados**).  
+6. Em **Configurações de Rastreamento de WPF**, clique na categoria de configurações que você deseja habilitar (por exemplo, **Associação de Dados**).  
   
      Um controle de lista suspensa aparece na coluna Configurações ao lado de **Associação de Dados** ou de qualquer categoria que você tiver clicado.  
   
-7.  Clique na lista suspensa e selecione **Desativar**.  
+7. Clique na lista suspensa e selecione **Desativar**.  
   
-8.  Clique em **OK**.  
+8. Clique em **OK**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando WPF](../debugger/debugging-wpf.md)

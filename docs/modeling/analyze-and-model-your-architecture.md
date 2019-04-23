@@ -30,12 +30,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d459f641983960fdd7c4c1ded3b90c0a578c42b3
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 253f86f83805d11d7a1a6475fcbaf4eb76bfbc50
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873662"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081236"
 ---
 # <a name="analyze-and-model-your-architecture"></a>Analisar e modelar a sua arquitetura
 
@@ -69,39 +69,39 @@ Mapas de código ajudam você a ver a organização e relações em seu código.
 
 **Usos típicos:**
 
--   Examinar o código de programa para que você possa entender melhor a sua estrutura e suas dependências, como atualizá-lo e estimar o custo de alterações propostas.
+- Examinar o código de programa para que você possa entender melhor a sua estrutura e suas dependências, como atualizá-lo e estimar o custo de alterações propostas.
 
 **Consulte:**
 
--   [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)
--   [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)
--   [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)
+- [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)
+- [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
 ### <a name="dependency-diagram"></a>Diagrama de dependência
 Diagramas de dependência permitem que você definir a estrutura de um aplicativo como um conjunto de blocos com dependências explícitas ou camadas. Você pode executar a validação para detectar conflitos entre dependências no código e descritos em um diagrama de dependência.
 
 **Usos típicos:**
 
--   Estabilize a estrutura do aplicativo por meio de várias alterações ao longo do ciclo de vida.
--   Detecte conflitos de dependência não intencional antes de fazer check-in de alterações no código.
+- Estabilize a estrutura do aplicativo por meio de várias alterações ao longo do ciclo de vida.
+- Detecte conflitos de dependência não intencional antes de fazer check-in de alterações no código.
 
 **Consulte:**
 
--   [Criar diagramas de dependência usando seu código](../modeling/create-layer-diagrams-from-your-code.md)
--   [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)
--   [Validar código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)
+- [Criar diagramas de dependência usando seu código](../modeling/create-layer-diagrams-from-your-code.md)
+- [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)
+- [Validar código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)
 
 ### <a name="domain-specific-language-dsl"></a>Linguagem específica de domínio (DSL)
 Uma DSL é uma notação de design para uma finalidade específica. No Visual Studio, é geralmente gráfica.
 
 **Usos típicos:**
 
--   Gerar ou configurar as partes do aplicativo. Trabalho é necessário para desenvolver as ferramentas e a notação. O resultado pode ser mais adequado ao seu domínio do que uma personalização de UML.
--   Para projetos grandes ou em linhas de produtos em que o investimento em DSL e suas ferramentas de desenvolvimento é retornado por seu uso em mais de um projeto.
+- Gerar ou configurar as partes do aplicativo. Trabalho é necessário para desenvolver as ferramentas e a notação. O resultado pode ser mais adequado ao seu domínio do que uma personalização de UML.
+- Para projetos grandes ou em linhas de produtos em que o investimento em DSL e suas ferramentas de desenvolvimento é retornado por seu uso em mais de um projeto.
 
 **Consulte:**
 
--   [SDK de Modelagem para Visual Studio – linguagens específicas de domínio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
+- [SDK de Modelagem para Visual Studio – linguagens específicas de domínio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
 ## <a name="where-can-i-get-more-information"></a>Onde posso obter mais informações?
 

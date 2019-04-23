@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 67f907e44d5f482dd7861f11c4cee7fbe2f4e50a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6f5de8be3463ff0e96d516c8dec592d0aff3cfc7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633090"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084009"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Passo a passo: Criar seu primeiro suplemento VSTO para Excel
   Este passo a passo introdutório mostra como criar um suplemento em nível de aplicativo do Microsoft Office Excel. Os recursos que você criar nesse tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual pastas de trabalho estão abertas.
@@ -42,36 +42,36 @@ ms.locfileid: "56633090"
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 ## <a name="create-the-project"></a>Criar o projeto
 
 #### <a name="to-create-a-new-excel-vsto-add-in-project-in-visual-studio"></a>Para criar um novo projeto de suplemento do VSTO do Excel no Visual Studio
 
-1.  Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
+1. Inicie o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
-2.  No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.
+2. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.
 
-3.  No painel de modelos, expanda **Visual c#** ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.
+3. No painel de modelos, expanda **Visual c#** ou **Visual Basic**e, em seguida, expanda **Office/SharePoint**.
 
-4.  Sob o expandida **Office/SharePoint** nó, selecione o **suplementos do Office** nó.
+4. Sob o expandida **Office/SharePoint** nó, selecione o **suplementos do Office** nó.
 
-5.  Na lista de modelos de projeto, selecione **suplemento do Excel 2010** ou **suplemento do Excel 2013**.
+5. Na lista de modelos de projeto, selecione **suplemento do Excel 2010** ou **suplemento do Excel 2013**.
 
-6.  No **nome** , digite **FirstExcelAddIn**.
+6. No **nome** , digite **FirstExcelAddIn**.
 
-7.  Clique em **OK**.
+7. Clique em **OK**.
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] cria o **FirstExcelAddIn** do projeto e abre o arquivo de código ThisAddIn no editor.
 
 ## <a name="write-code-to-add-text-to-the-saved-workbook"></a>Escrever código para adicionar texto à pasta de trabalho salva
  Em seguida, adicione código ao arquivo de código ThisAddIn. O novo código usa o modelo de objeto do Excel para inserir texto clichê na primeira linha da planilha ativa. A planilha ativa é a planilha que está aberta quando o usuário salva a pasta de trabalho. Por padrão, o arquivo de código ThisAddIn contém o seguinte código gerado:
 
--   Uma definição parcial do `ThisAddIn` classe. Essa classe fornece um ponto de entrada para seu código e fornece acesso ao modelo de objeto do Excel. Para obter mais informações, consulte [suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md). O restante do `ThisAddIn` classe é definida em um arquivo de código oculto que você não deve modificar.
+- Uma definição parcial do `ThisAddIn` classe. Essa classe fornece um ponto de entrada para seu código e fornece acesso ao modelo de objeto do Excel. Para obter mais informações, consulte [suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md). O restante do `ThisAddIn` classe é definida em um arquivo de código oculto que você não deve modificar.
 
--   O `ThisAddIn_Startup` e `ThisAddIn_Shutdown` manipuladores de eventos. Esses manipuladores de eventos são chamados quando o Excel carrega e descarrega o suplemento do VSTO. Use esses manipuladores de eventos para inicializar o suplemento do VSTO quando ele for carregado e para limpar os recursos usados pelo seu suplemento quando ele é descarregado. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
+- O `ThisAddIn_Startup` e `ThisAddIn_Shutdown` manipuladores de eventos. Esses manipuladores de eventos são chamados quando o Excel carrega e descarrega o suplemento do VSTO. Use esses manipuladores de eventos para inicializar o suplemento do VSTO quando ele for carregado e para limpar os recursos usados pelo seu suplemento quando ele é descarregado. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
 
 ### <a name="to-add-a-line-of-text-to-the-saved-workbook"></a>Para adicionar uma linha de texto para a pasta de trabalho salva
 
@@ -88,47 +88,47 @@ ms.locfileid: "56633090"
 
    Para modificar a pasta de trabalho quando ele for salvo, os exemplos de código anterior usam os seguintes objetos:
 
--   O `Application` campo do `ThisAddIn` classe. O `Application` campo retorna um <xref:Microsoft.Office.Interop.Excel.Application> objeto que representa a instância atual do Excel.
+- O `Application` campo do `ThisAddIn` classe. O `Application` campo retorna um <xref:Microsoft.Office.Interop.Excel.Application> objeto que representa a instância atual do Excel.
 
--   O `Wb` parâmetro do manipulador de eventos para o <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> eventos. O `Wb` parâmetro é um <xref:Microsoft.Office.Interop.Excel.Workbook> objeto que representa a pasta de trabalho salva. Para obter mais informações, consulte [visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md).
+- O `Wb` parâmetro do manipulador de eventos para o <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> eventos. O `Wb` parâmetro é um <xref:Microsoft.Office.Interop.Excel.Workbook> objeto que representa a pasta de trabalho salva. Para obter mais informações, consulte [visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md).
 
 ## <a name="test-the-project"></a>O projeto de teste
 
 ### <a name="to-test-the-project"></a>Para testar o projeto
 
-1.  Pressione **F5** para compilar e executar seu projeto.
+1. Pressione **F5** para compilar e executar seu projeto.
 
      Quando você compila o projeto, o código é compilado em um assembly que está incluído na pasta de saída de compilação para o projeto. Visual Studio também cria um conjunto de entradas do registro que permitem que o Excel descobrir e carregar o suplemento do VSTO e ela define as configurações de segurança no computador de desenvolvimento para habilitar o suplemento do VSTO ser executado. Para obter mais informações, consulte [soluções do Office compilar](../vsto/building-office-solutions.md).
 
-2.  No Excel, salve a pasta de trabalho.
+2. No Excel, salve a pasta de trabalho.
 
-3.  Verifique se o texto a seguir é adicionado à pasta de trabalho.
+3. Verifique se o texto a seguir é adicionado à pasta de trabalho.
 
      **Este texto foi adicionado por meio de código.**
 
-4.  Feche o Excel.
+4. Feche o Excel.
 
 ## <a name="clean-up-the-project"></a>Limpar o projeto
  Quando você concluir o desenvolvimento de um projeto, remova o suplemento do VSTO assembly, as entradas do registro e as configurações de segurança de seu computador de desenvolvimento. Caso contrário, o suplemento do VSTO continuará a executar toda vez que você abrir o Excel em seu computador de desenvolvimento.
 
 ### <a name="to-clean-up-the-completed-project-on-your-development-computer"></a>Para limpar o projeto concluído no computador de desenvolvimento
 
-1.  No Visual Studio, sobre o **construir** menu, clique em **limpar solução**.
+1. No Visual Studio, sobre o **construir** menu, clique em **limpar solução**.
 
 ## <a name="next-steps"></a>Próximas etapas
  Agora que você criou um básico suplemento VSTO para Excel, você pode aprender mais sobre como desenvolver suplementos do VSTO nesses tópicos:
 
--   Tarefas de programação gerais que você pode executar nos suplementos do VSTO: [Suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md).
+- Tarefas de programação gerais que você pode executar nos suplementos do VSTO: [Suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md).
 
--   Programando tarefas que são específicas para suplementos do VSTO do Excel: [Soluções do Excel](../vsto/excel-solutions.md).
+- Programando tarefas que são específicas para suplementos do VSTO do Excel: [Soluções do Excel](../vsto/excel-solutions.md).
 
--   Usando o modelo de objeto do Excel: [Visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md).
+- Usando o modelo de objeto do Excel: [Visão geral do modelo de objeto do Excel](../vsto/excel-object-model-overview.md).
 
--   Personalizando a interface do usuário (IU) do Excel, por exemplo, adicionando uma guia personalizada à faixa de opções ou criando seu próprio painel de tarefas personalizado: [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md).
+- Personalizando a interface do usuário (IU) do Excel, por exemplo, adicionando uma guia personalizada à faixa de opções ou criando seu próprio painel de tarefas personalizado: [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md).
 
--   Compilação e depuração de suplementos do VSTO para Excel: [Compilar soluções do Office](../vsto/building-office-solutions.md).
+- Compilação e depuração de suplementos do VSTO para Excel: [Compilar soluções do Office](../vsto/building-office-solutions.md).
 
--   Implantação de suplementos do VSTO para Excel: [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
+- Implantação de suplementos do VSTO para Excel: [Implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

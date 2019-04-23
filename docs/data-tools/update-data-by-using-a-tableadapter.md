@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 546ca45ed48f9fc247bd5706005153f41cf206e5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: ca5161d0ddb73a72b88f36e85bda9206839aec3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926756"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082393"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>Atualizar dados usando um TableAdapter
 
@@ -34,11 +34,11 @@ Depois que os dados no conjunto de dados foi modificados e validados, você pode
 
  O procedimento exato para atualizar uma fonte de dados pode variar, dependendo das necessidades de negócios, mas inclui as seguintes etapas:
 
-1.  Chame o adaptador `Update` método em um `try` / `catch` bloco.
+1. Chame o adaptador `Update` método em um `try` / `catch` bloco.
 
-2.  Se uma exceção é detectada, localize a linha de dados que causou o erro.
+2. Se uma exceção é detectada, localize a linha de dados que causou o erro.
 
-3.  Reconciliar o problema nos dados de linha (por meio de programação, se possível, ou apresentando a linha inválida para o usuário para modificação) e, em seguida, tente atualizar novamente (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).
+3. Reconciliar o problema nos dados de linha (por meio de programação, se possível, ou apresentando a linha inválida para o usuário para modificação) e, em seguida, tente atualizar novamente (<xref:System.Data.DataRow.HasErrors%2A>, <xref:System.Data.DataTable.GetErrors%2A>).
 
 ## <a name="save-data-to-a-database"></a>Salvar dados em um banco de dados
 
@@ -46,7 +46,7 @@ Chamar o `Update` método de um TableAdapter. Passe o nome da tabela de dados qu
 
 ### <a name="to-update-a-database-by-using-a-tableadapter"></a>Para atualizar um banco de dados usando um TableAdapter
 
--   Coloque o TableAdapter`Update` método em um `try` / `catch` bloco. O exemplo a seguir mostra como atualizar o conteúdo a `Customers` na tabela `NorthwindDataSet` de dentro um `try` / `catch` bloco.
+- Coloque o TableAdapter`Update` método em um `try` / `catch` bloco. O exemplo a seguir mostra como atualizar o conteúdo a `Customers` na tabela `NorthwindDataSet` de dentro um `try` / `catch` bloco.
 
      [!code-csharp[VbRaddataSaving#9](../data-tools/codesnippet/CSharp/update-data-by-using-a-tableadapter_1.cs)]
      [!code-vb[VbRaddataSaving#9](../data-tools/codesnippet/VisualBasic/update-data-by-using-a-tableadapter_1.vb)]

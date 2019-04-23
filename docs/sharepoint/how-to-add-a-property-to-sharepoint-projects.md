@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 51f4aeef55d20a728567b50e67c2232a0a77b1e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a6f1ecd427b1c715649bc2118be5ab384a74c585
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084304"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>Como: Adicionar uma propriedade a projetos do SharePoint
   Você pode usar uma extensão de projeto para adicionar uma propriedade para qualquer projeto do SharePoint. A propriedade aparece na **propriedades** janela quando o projeto está selecionado no **Gerenciador de soluções**.
@@ -28,11 +28,11 @@ ms.locfileid: "56646051"
 
 ### <a name="to-add-a-property-to-a-sharepoint-project"></a>Para adicionar uma propriedade para um projeto do SharePoint
 
-1.  Defina uma classe com uma propriedade pública que representa a propriedade que você está adicionando a projetos do SharePoint. Se você quiser adicionar várias propriedades, você pode definir todas as propriedades na mesma classe ou em classes diferentes.
+1. Defina uma classe com uma propriedade pública que representa a propriedade que você está adicionando a projetos do SharePoint. Se você quiser adicionar várias propriedades, você pode definir todas as propriedades na mesma classe ou em classes diferentes.
 
-2.  No <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> método de seu <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implementação, o identificador a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> evento do *projectService* parâmetro.
+2. No <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension.Initialize%2A> método de seu <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> implementação, o identificador a <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> evento do *projectService* parâmetro.
 
-3.  No manipulador de eventos para o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> evento, adicione uma instância de sua classe de propriedades para o <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> coleção do parâmetro de argumentos de evento.
+3. No manipulador de eventos para o <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> evento, adicione uma instância de sua classe de propriedades para o <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> coleção do parâmetro de argumentos de evento.
 
 ## <a name="example"></a>Exemplo
  O exemplo de código a seguir demonstra como adicionar duas propriedades a projetos do SharePoint. Uma propriedade persiste seus dados no arquivo de opção de usuário do projeto (o *. csproj* arquivo ou *. vbproj* arquivo). A outra propriedade persiste seus dados no arquivo de projeto (*. csproj* arquivo ou *. vbproj* arquivo).
@@ -54,28 +54,28 @@ ms.locfileid: "56646051"
 ### <a name="specify-the-behavior-of-custom-properties"></a>Especificar o comportamento de propriedades personalizadas
  Você pode definir como uma propriedade personalizada é exibida e comporta-se a **propriedades** janela aplicando atributos do <xref:System.ComponentModel> namespace à definição da propriedade. Os seguintes atributos são úteis em muitos cenários:
 
--   <xref:System.ComponentModel.DisplayNameAttribute>: Especifica o nome da propriedade que aparece na **propriedades** janela.
+- <xref:System.ComponentModel.DisplayNameAttribute>: Especifica o nome da propriedade que aparece na **propriedades** janela.
 
--   <xref:System.ComponentModel.DescriptionAttribute>: Especifica a cadeia de caracteres de descrição que aparece na parte inferior da **propriedades** janela quando a propriedade for selecionada.
+- <xref:System.ComponentModel.DescriptionAttribute>: Especifica a cadeia de caracteres de descrição que aparece na parte inferior da **propriedades** janela quando a propriedade for selecionada.
 
--   <xref:System.ComponentModel.DefaultValueAttribute>: Especifica o valor padrão da propriedade.
+- <xref:System.ComponentModel.DefaultValueAttribute>: Especifica o valor padrão da propriedade.
 
--   <xref:System.ComponentModel.TypeConverterAttribute>: Especifica uma conversão personalizada entre a cadeia de caracteres que é exibida na **propriedades** janela e um valor da propriedade não cadeia de caracteres.
+- <xref:System.ComponentModel.TypeConverterAttribute>: Especifica uma conversão personalizada entre a cadeia de caracteres que é exibida na **propriedades** janela e um valor da propriedade não cadeia de caracteres.
 
--   <xref:System.ComponentModel.EditorAttribute>: Especifica um editor personalizado para usar para modificar a propriedade.
+- <xref:System.ComponentModel.EditorAttribute>: Especifica um editor personalizado para usar para modificar a propriedade.
 
 ## <a name="compile-the-code"></a>Compilar o código
  Este exemplo requer referências aos assemblies a seguir:
 
--   Microsoft.VisualStudio.SharePoint
--
--   Microsoft.VisualStudio.Shell
--
--   Microsoft.VisualStudio.Shell.Interop
--
--   Microsoft.VisualStudio.Shell.Interop.8.0
--
--   System.ComponentModel.Composition
+- Microsoft.VisualStudio.SharePoint
+
+- Microsoft.VisualStudio.Shell
+
+- Microsoft.VisualStudio.Shell.Interop
+
+- Microsoft.VisualStudio.Shell.Interop.8.0
+
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Implantar a extensão
  Para implantar a extensão, crie um [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacote de extensão (VSIX) para o assembly e outros arquivos que você deseja distribuir com a extensão. Para obter mais informações, consulte [implantar extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34771bd005b298f73bcc2ee13e2d4cf9a123f1a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cf4066a9eee47d1ffad156768287bf036aaae3cf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683042"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080911"
 ---
 # <a name="extend-other-parts-of-visual-studio"></a>Estender outras partes do Visual Studio
 
@@ -29,9 +29,9 @@ Blocos de construção básicos da extensibilidade do Visual Studio são VSPacka
 
 Saiba como adicionar novos controles e outros itens à caixa de ferramentas e como usar a funcionalidade de caixa de ferramentas:
 
--   [Criar um controle de caixa de ferramentas do WPF](../extensibility/creating-a-wpf-toolbox-control.md)
+- [Criar um controle de caixa de ferramentas do WPF](../extensibility/creating-a-wpf-toolbox-control.md)
 
--   [Criar um controle de caixa de ferramentas do Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [Criar um controle de caixa de ferramentas do Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
 ## <a name="extend-the-status-bar"></a>Estender a barra de status
 

@@ -10,12 +10,12 @@ ms.assetid: 8265f31c-c45b-4858-882c-6d9f1e3b9083
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 61484c9d01022b9f3b860f0c7b78dd3aedc045f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cf9bc42aec3aac5acc996487f99c7e1f29ca252c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928648"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083355"
 ---
 # <a name="inside-the-core-editor"></a>Dentro do Editor de núcleo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,17 +24,17 @@ O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor principal é um conjunto d
   
  As áreas a seguir estão alguns aspectos importantes do que o editor principal:  
   
--   Buffer de texto  
+- Buffer de texto  
   
--   Exibição de texto  
+- Exibição de texto  
   
--   Janela de código  
+- Janela de código  
   
--   Marcadores de texto  
+- Marcadores de texto  
   
--   Gerenciador de texto  
+- Gerenciador de texto  
   
--   Integração com serviços de linguagem  
+- Integração com serviços de linguagem  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Criando uma instância do editor principal usando a API herdada](../extensibility/instantiating-the-core-editor-by-using-the-legacy-api.md)  

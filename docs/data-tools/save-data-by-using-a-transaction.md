@@ -1,5 +1,5 @@
 ---
-title: Como salvar dados usando uma transação
+title: 'Como: Salvar dados usando uma transação'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8d5d47cfc21b0aebef884fade422600be2beeb58
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: bf5864d25e78b6050da5c13097503b2998dda44a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924364"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080989"
 ---
-# <a name="how-to-save-data-by-using-a-transaction"></a>Como salvar dados usando uma transação
+# <a name="how-to-save-data-by-using-a-transaction"></a>Como: Salvar dados usando uma transação
 
 Salvar dados em uma transação usando o <xref:System.Transactions> namespace. Use o <xref:System.Transactions.TransactionScope> objeto participe de uma transação que é gerenciada automaticamente para você.
 
@@ -37,15 +37,15 @@ Para reverter a transação, lançar uma exceção antes de chamar o <xref:Syste
 
 ## <a name="to-add-a-reference-to-the-systemtransactionsdll"></a>Para adicionar uma referência para a Transactions
 
-1.  Sobre o **Project** menu, selecione **adicionar referência**.
+1. Sobre o **Project** menu, selecione **adicionar referência**.
 
-2.  Sobre o **.NET** guia (**SQL Server** guia para projetos do SQL Server), selecione **System. Transactions**e, em seguida, selecione **Okey**.
+2. Sobre o **.NET** guia (**SQL Server** guia para projetos do SQL Server), selecione **System. Transactions**e, em seguida, selecione **Okey**.
 
      Uma referência a *Transactions* é adicionado ao projeto.
 
 ## <a name="to-save-data-in-a-transaction"></a>Para salvar dados em uma transação
 
--   Adicione código para salvar os dados dentro da usando instrução que contém a transação. O código a seguir mostra como criar e instanciar um <xref:System.Transactions.TransactionScope> objeto em um usando instrução:
+- Adicione código para salvar os dados dentro da usando instrução que contém a transação. O código a seguir mostra como criar e instanciar um <xref:System.Transactions.TransactionScope> objeto em um usando instrução:
 
      [!code-vb[VbRaddataSaving#11](../data-tools/codesnippet/VisualBasic/save-data-by-using-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#11](../data-tools/codesnippet/CSharp/save-data-by-using-a-transaction_1.cs)]
@@ -53,4 +53,4 @@ Para reverter a transação, lançar uma exceção antes de chamar o <xref:Syste
 ## <a name="see-also"></a>Consulte também
 
 - [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)
-- [Passo a passo: salvar dados em uma transação](../data-tools/save-data-in-a-transaction.md)
+- [Passo a passo: Salvando dados em uma transação](../data-tools/save-data-in-a-transaction.md)

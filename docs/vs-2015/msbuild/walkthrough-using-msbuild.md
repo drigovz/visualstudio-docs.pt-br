@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3a256a13d1840d2bf5f26635c5e572dce30434ae
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: f03c7260899db9e463282e45ef5bc76badb8a483
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655004"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082796"
 ---
 # <a name="walkthrough-using-msbuild"></a>Passo a passo: Usando o MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,11 +36,11 @@ O MSBuild é a plataforma de build da Microsoft e do Visual Studio. Estas instru
   
 #### <a name="to-create-a-project-file"></a>Para criar um arquivo de projeto  
   
-1.  Abra o Visual Studio.  
+1. Abra o Visual Studio.  
   
-2.  No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
+2. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-3.  Na caixa de diálogo **Novo Projeto**, selecione o tipo de projeto do Visual C# e o modelo do **Aplicativo do Windows Forms**. Na caixa **Nome**, digite `BuildApp`. Insira um **Local** para a solução, por exemplo, `D:\`. Aceite os padrões para **Criar diretório para a solução** (marcado), **Adicionar ao Controle do Código-Fonte** (não marcado) e **Nome da Solução** (`BuildApp`).  
+3. Na caixa de diálogo **Novo Projeto**, selecione o tipo de projeto do Visual C# e o modelo do **Aplicativo do Windows Forms**. Na caixa **Nome**, digite `BuildApp`. Insira um **Local** para a solução, por exemplo, `D:\`. Aceite os padrões para **Criar diretório para a solução** (marcado), **Adicionar ao Controle do Código-Fonte** (não marcado) e **Nome da Solução** (`BuildApp`).  
   
      Clique em **OK** para criar o arquivo de projeto.  
   
@@ -49,13 +49,13 @@ O MSBuild é a plataforma de build da Microsoft e do Visual Studio. Estas instru
   
 #### <a name="to-examine-the-project-file"></a>Para examinar o arquivo de projeto  
   
-1.  No **Gerenciador de Soluções**, clique no nó de projeto BuildApp.  
+1. No **Gerenciador de Soluções**, clique no nó de projeto BuildApp.  
   
-2.  No navegador **Propriedades**, observe que a propriedade de **Arquivo de Projeto** é BuildApp.csproj. Todos os arquivos de projeto são nomeados com o sufixo "proj". Se você tivesse criado um projeto do Visual Basic, o nome do arquivo de projeto seria BuildApp.vbproj.  
+2. No navegador **Propriedades**, observe que a propriedade de **Arquivo de Projeto** é BuildApp.csproj. Todos os arquivos de projeto são nomeados com o sufixo "proj". Se você tivesse criado um projeto do Visual Basic, o nome do arquivo de projeto seria BuildApp.vbproj.  
   
-3.  Clique com o botão direito do mouse no nó do projeto e clique em **Descarregar Projeto**.  
+3. Clique com o botão direito do mouse no nó do projeto e clique em **Descarregar Projeto**.  
   
-4.  Clique com o botão direito do mouse no nó de projeto novamente e clique em **Editar BuildApp.csproj**.  
+4. Clique com o botão direito do mouse no nó de projeto novamente e clique em **Editar BuildApp.csproj**.  
   
      O arquivo de projeto aparecerá no editor de códigos.  
   
@@ -136,17 +136,17 @@ O MSBuild é a plataforma de build da Microsoft e do Visual Studio. Estas instru
   
 #### <a name="to-build-the-target"></a>Para compilar o destino  
   
-1.  Clique em **Iniciar** e em **Todos os Programas**. Localize e clique no **Prompt de Comando do Visual Studio**, na pasta **Ferramentas do Visual Studio**.  
+1. Clique em **Iniciar** e em **Todos os Programas**. Localize e clique no **Prompt de Comando do Visual Studio**, na pasta **Ferramentas do Visual Studio**.  
   
-2.  Na janela Comando, acesse a pasta que contém o arquivo de projeto, a qual, neste caso, é D:\BuildApp\BuildApp.  
+2. Na janela Comando, acesse a pasta que contém o arquivo de projeto, a qual, neste caso, é D:\BuildApp\BuildApp.  
   
-3.  Execute msbuild com a opção de comando /t:HelloWorld. Com isso, o destino HelloWorld é selecionado e compilado:  
+3. Execute msbuild com a opção de comando /t:HelloWorld. Com isso, o destino HelloWorld é selecionado e compilado:  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  Examine a saída na **janela Comando**. Você deverá ver as duas linhas "Hello" e "World":  
+4. Examine a saída na **janela Comando**. Você deverá ver as duas linhas "Hello" e "World":  
   
     ```  
     Hello  
@@ -202,7 +202,7 @@ $(PropertyName)
   
 #### <a name="to-examine-a-property-value"></a>Para examinar um valor da propriedade  
   
-1.  No editor de códigos, substitua o destino HelloWorld por este código:  
+1. No editor de códigos, substitua o destino HelloWorld por este código:  
   
     ```  
     <Target Name="HelloWorld">  
@@ -211,15 +211,15 @@ $(PropertyName)
     </Target>  
     ```  
   
-2.  Salve o arquivo de projeto.  
+2. Salve o arquivo de projeto.  
   
-3.  Na **janela Comando**, digite e execute esta linha:  
+3. Na **janela Comando**, digite e execute esta linha:  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-4.  Examine o resultado. Você deverá ver estas duas linhas (a sua versão do .NET Framework poderá ser diferente):  
+4. Examine o resultado. Você deverá ver estas duas linhas (a sua versão do .NET Framework poderá ser diferente):  
   
     ```  
     Configuration is Debug  
@@ -366,19 +366,19 @@ $(PropertyName)
   
 #### <a name="to-display-item-type-values-one-per-line"></a>Para exibir os valores de tipo de item em linhas individuais  
   
-1.  No editor de códigos, substitua a tarefa Message por esta linha:  
+1. No editor de códigos, substitua a tarefa Message por esta linha:  
   
     ```  
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />  
     ```  
   
-2.  Salve o arquivo de projeto.  
+2. Salve o arquivo de projeto.  
   
-3.  Na **janela Comando**, digite e execute esta linha:  
+3. Na **janela Comando**, digite e execute esta linha:  
   
      `msbuild buildapp.csproj /t:HelloWorld`  
   
-4.  Examine o resultado. Você deverá ver estas linhas:  
+4. Examine o resultado. Você deverá ver estas linhas:  
   
     ```  
     Compile item type contains Form1.cs  
@@ -436,13 +436,13 @@ $(PropertyName)
   
 ##### <a name="to-include-and-exclude-items"></a>Para incluir e excluir itens  
   
-1.  No editor de códigos, substitua a tarefa Message por esta linha:  
+1. No editor de códigos, substitua a tarefa Message por esta linha:  
   
     ```  
     <Message Text="Compile item type contains @(XFiles)" />  
     ```  
   
-2.  Adicione esse grupo de itens logo após o elemento Import:  
+2. Adicione esse grupo de itens logo após o elemento Import:  
   
     ```  
     <ItemGroup>  
@@ -450,15 +450,15 @@ $(PropertyName)
     </ItemGroup>  
     ```  
   
-3.  Salve o arquivo de projeto.  
+3. Salve o arquivo de projeto.  
   
-4.  Na **janela Comando**, digite e execute esta linha:  
+4. Na **janela Comando**, digite e execute esta linha:  
   
     ```  
     msbuild buildapp.csproj /t:HelloWorld  
     ```  
   
-5.  Examine o resultado. Você deverá ver esta linha:  
+5. Examine o resultado. Você deverá ver esta linha:  
   
     ```  
     Compile item type contains Form1.cs;Program.cs;Properties/Resources.resx  

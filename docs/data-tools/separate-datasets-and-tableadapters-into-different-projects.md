@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3eb9e8035dd8fa4b6a3143341e7be9959254452e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 8a24b934b0ffe4cc22dc7be01aca19910ee3c768
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927653"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096862"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Conjuntos de dados e TableAdapters separados m diferentes projetos
 Conjuntos de dados tipados foram aprimorados para que o [TableAdapters](create-and-configure-tableadapters.md) e classes de conjunto de dados podem ser geradas em projetos separados. Isso permite que você separe as camadas de aplicativos rapidamente e gerar aplicativos de dados de n camadas.
@@ -30,25 +30,25 @@ Quando você separar o código do conjunto de dados de código TableAdapter, o p
 
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>Para separar o conjunto de dados em um projeto diferente
 
-1.  Abrir uma solução que contém um conjunto de dados (*. xsd* arquivo).
+1. Abrir uma solução que contém um conjunto de dados (*. xsd* arquivo).
 
     > [!NOTE]
     >  Se a solução não contém o projeto no qual você deseja separar o código do conjunto de dados, criar o projeto, ou adicionar um projeto existente à solução.
 
-2.  Clique duas vezes em um arquivo de conjunto de dados tipado (um *. xsd* arquivo) em **Gerenciador de soluções** para abrir o conjunto de dados do **Dataset Designer**.
+2. Clique duas vezes em um arquivo de conjunto de dados tipado (um *. xsd* arquivo) em **Gerenciador de soluções** para abrir o conjunto de dados do **Dataset Designer**.
 
-3.  Selecione uma área vazia do **Dataset Designer**.
+3. Selecione uma área vazia do **Dataset Designer**.
 
-4.  No **propriedades** janela, localize a **projeto DataSet** nó.
+4. No **propriedades** janela, localize a **projeto DataSet** nó.
 
-5.  No **projeto DataSet** , selecione o nome do projeto no qual você deseja gerar o código do conjunto de dados.
+5. No **projeto DataSet** , selecione o nome do projeto no qual você deseja gerar o código do conjunto de dados.
 
      Depois de selecionar o projeto no qual você deseja gerar o código do conjunto de dados, o **arquivo de conjunto de dados** propriedade é preenchida com um nome de arquivo padrão. Você pode alterar esse nome, se necessário. Além disso, se você quiser gerar o código do conjunto de dados em um diretório específico, você pode definir as **pasta do projeto** propriedade para o nome de uma pasta.
 
     > [!NOTE]
     >  Quando você separa os conjuntos de dados e TableAdapters (Configurando o **projeto DataSet** propriedade), classes parciais do conjunto de dados existentes no projeto não serão movidas automaticamente. As classes parciais do conjunto de dados existentes devem ser movidas manualmente para o projeto de conjunto de dados.
 
-6.  Salve o conjunto de dados.
+6. Salve o conjunto de dados.
 
      O código do conjunto de dados é gerado para o projeto selecionado na **projeto DataSet** propriedade e o **TableAdapter** código é gerado para o projeto atual.
 
@@ -60,7 +60,7 @@ Por padrão, após você separar o conjunto de dados e o código TableAdapter, o
 ## <a name="see-also"></a>Consulte também
 
 - [Visão geral de aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md)
-- [Passo a passo: criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
+- [Passo a passo: Criando um aplicativo de dados de N camadas](../data-tools/walkthrough-creating-an-n-tier-data-application.md)
 - [Atualização hierárquica](../data-tools/hierarchical-update.md)
 - [Acessando dados no Visual Studio](../data-tools/accessing-data-in-visual-studio.md)
 - [ADO.NET](/dotnet/framework/data/adonet/index)

@@ -8,12 +8,12 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 02abe8858f928e5f3fb036b212e0a1ca777259a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5f3ed2d3f8bc52b21f6a87ac7d6da00f665f6b28
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922725"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096524"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Fundamentos de UX para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -22,35 +22,35 @@ ms.locfileid: "58922725"
 
 ### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. Seja consistente no ambiente do Visual Studio.
 
--   Siga padrões de interação existente dentro do shell.
+- Siga padrões de interação existente dentro do shell.
 
--   Recursos para ser consistente com os requisitos de idioma e a habilidade do visual do shell de design.
+- Recursos para ser consistente com os requisitos de idioma e a habilidade do visual do shell de design.
 
--   Use controles e comandos compartilhados quando existirem.
+- Use controles e comandos compartilhados quando existirem.
 
--   Compreenda a hierarquia do Visual Studio e como ele estabelece o contexto e unidades de interface do usuário.
+- Compreenda a hierarquia do Visual Studio e como ele estabelece o contexto e unidades de interface do usuário.
 
 ### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2. Use o serviço de ambiente para fontes e cores.
 
--   Interface do usuário deve respeitar a configuração de fonte do ambiente atual, a menos que ela é exposta para personalização na página de fontes e cores na caixa de diálogo Opções.
+- Interface do usuário deve respeitar a configuração de fonte do ambiente atual, a menos que ela é exposta para personalização na página de fontes e cores na caixa de diálogo Opções.
 
--   Elementos de interface do usuário devem usar o VSColor Service, usando tokens de ambiente compartilhado ou tokens de recurso específico.
+- Elementos de interface do usuário devem usar o VSColor Service, usando tokens de ambiente compartilhado ou tokens de recurso específico.
 
 ### <a name="3-make-all-imagery-consistent-with-the-new-vs-style"></a>3. Tornar todas as imagens consistente com o novo estilo de VS.
 
--   Siga os princípios de design do Visual Studio para ícones, glifos e outros elementos gráficos.
+- Siga os princípios de design do Visual Studio para ícones, glifos e outros elementos gráficos.
 
--   Não coloque texto em elementos gráficos.
+- Não coloque texto em elementos gráficos.
 
 ### <a name="4-design-from-a-user-centric-perspective"></a>4. Design de uma perspectiva centrada no usuário.
 
--   Crie o fluxo de tarefas antes dos recursos individuais dentro dele.
+- Crie o fluxo de tarefas antes dos recursos individuais dentro dele.
 
--   Estar familiarizado com os usuários e tornar esse conhecimento explícito em suas especificações.
+- Estar familiarizado com os usuários e tornar esse conhecimento explícito em suas especificações.
 
--   Ao revisar a interface do usuário, avalie a experiência completa, bem como os detalhes.
+- Ao revisar a interface do usuário, avalie a experiência completa, bem como os detalhes.
 
--   Projete a interface do usuário para que ele permaneça funcional e atraente, independentemente do idioma ou localidade.
+- Projete a interface do usuário para que ele permaneça funcional e atraente, independentemente do idioma ou localidade.
 
 ## <a name="screen-resolution"></a>Resolução de tela
 
@@ -69,9 +69,9 @@ ms.locfileid: "58922725"
 
 #### <a name="feature-team-goals"></a>Metas da equipe de recursos
 
--   Avise os usuários que incluíram um elemento que deve ser configurado.
+- Avise os usuários que incluíram um elemento que deve ser configurado.
 
--   Chame a atenção do usuário para as áreas que precisam de entrada.
+- Chame a atenção do usuário para as áreas que precisam de entrada.
 
 #### <a name="anti-pattern-solution"></a>Antipadrão de solução
  Assim que o usuário iniciou uma ação e antes da tarefa estiver concluída, coloque imediatamente parada crítica ícones ao lado de áreas que precisam de configuração.
@@ -88,11 +88,11 @@ ms.locfileid: "58922725"
 #### <a name="alternatives"></a>Alternativas
  Uma solução muito melhor para esse problema seria:
 
--   Permitir que o usuário adicione uma declaração sem aviso e, em seguida, mover imediatamente para definir propriedades no item.
+- Permitir que o usuário adicione uma declaração sem aviso e, em seguida, mover imediatamente para definir propriedades no item.
 
--   Adicionar o ícone de aviso (triângulo gold) quando foco é movido do item, como para adicionar outra declaração à lista de ou para tentar alterar guias dentro do designer.
+- Adicionar o ícone de aviso (triângulo gold) quando foco é movido do item, como para adicionar outra declaração à lista de ou para tentar alterar guias dentro do designer.
 
--   Se o usuário tenta alterar guias antes de definir propriedades em todas as declarações, exibida uma caixa de diálogo explicando que o aplicativo não será criado (ou qualquer das implicações) até que os avisos sejam resolvidos. Se o usuário fecha a caixa de diálogo e guias de alterações assim mesmo, em seguida, um ícone (crítico ou aviso, conforme apropriado) é adicionado à guia de declarações.
+- Se o usuário tenta alterar guias antes de definir propriedades em todas as declarações, exibida uma caixa de diálogo explicando que o aplicativo não será criado (ou qualquer das implicações) até que os avisos sejam resolvidos. Se o usuário fecha a caixa de diálogo e guias de alterações assim mesmo, em seguida, um ícone (crítico ou aviso, conforme apropriado) é adicionado à guia de declarações.
 
 ### <a name="forcing-the-user-to-read-text-before-dismissing-ui"></a>Forçar o usuário ler o texto antes de ignorar a interface do usuário
 
@@ -173,9 +173,9 @@ ms.locfileid: "58922725"
 
    **Solução melhor:** Digite a pergunta que o usuário deve estar se perguntando, clicando no link.
 
--   Como funcionam os serviços do Windows Azure?
+- Como funcionam os serviços do Windows Azure?
 
--   Quando é necessário um projeto de serviços móveis do Windows Azure?
+- Quando é necessário um projeto de serviços móveis do Windows Azure?
 
 #### <a name="using-click-here-for-links"></a>Usando "Clique aqui" para links
  Hiperlinks devem ser um nome bastante auto-explicativo. É um antipadrão usar "Clique aqui" ou qualquer variação semelhante.

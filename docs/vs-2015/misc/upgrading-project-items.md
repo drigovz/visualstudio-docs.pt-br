@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 8af29dd4-eaf1-4b3c-b602-198e1a3dff23
 caps.latest.revision: 14
 manager: jillfra
-ms.openlocfilehash: 04cfbdc9da180dc35278e723da8ce203bdf26ac6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c07f8f62fb7ae84b5f3ee6140cccecf744c759e5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929613"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083914"
 ---
 # <a name="upgrading-project-items"></a>Atualizando itens de projeto
 Se você adicionar ou gerenciar itens de sistemas de projeto, você não implemente, você talvez precise participar do processo de atualização do projeto. Crystal Reports é um exemplo de um item que pode ser adicionado ao sistema de projeto.  
@@ -25,17 +25,17 @@ Se você adicionar ou gerenciar itens de sistemas de projeto, você não impleme
   
 ### <a name="to-get-the-project-upgrade-notification"></a>Para obter a notificação de atualização de projeto  
   
-1.  Defina o <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.SolutionOrProjectUpgrading> sinalizador (definida em vsshell80.idl) em sua implementação de item de projeto. Isso faz com que o item de projeto VSPackage automaticamente carregar quando o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] shell determina que um sistema de projeto está no processo de atualização.  
+1. Defina o <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.SolutionOrProjectUpgrading> sinalizador (definida em vsshell80.idl) em sua implementação de item de projeto. Isso faz com que o item de projeto VSPackage automaticamente carregar quando o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] shell determina que um sistema de projeto está no processo de atualização.  
   
-2.  Aconselhamos a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> por meio da interface de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution2.AdviseSolutionEvents%2A> método.  
+2. Aconselhamos a <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> por meio da interface de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution2.AdviseSolutionEvents%2A> método.  
   
-3.  O <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> interface é disparado após a implementação do sistema de projeto tiver concluído suas operações de atualização e o novo projeto atualizado. Dependendo do cenário, o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> interface é disparado após o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A>, o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>, ou o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> métodos.  
+3. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> interface é disparado após a implementação do sistema de projeto tiver concluído suas operações de atualização e o novo projeto atualizado. Dependendo do cenário, o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> interface é disparado após o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A>, o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A>, ou o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> métodos.  
   
 ### <a name="to-upgrade-the-project-item-files"></a>Para atualizar os arquivos de item de projeto  
   
-1.  Você deve gerenciar cuidadosamente o processo de backup do arquivo em sua implementação de item de projeto. Isso se aplica especificamente para um backup de lado a lado, em que o `fUpgradeFlag` parâmetro do <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> método está definido como <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS>, onde os arquivos que tinham sido feitos são posicionados ao longo de arquivos lado que são designados como ". old". Arquivos de backup mais antigos do que a hora do sistema quando o projeto foi atualizado podem ser designados como obsoletos. Além disso, eles poderão ser substituídos, a menos que você siga etapas específicas para evitar isso.  
+1. Você deve gerenciar cuidadosamente o processo de backup do arquivo em sua implementação de item de projeto. Isso se aplica especificamente para um backup de lado a lado, em que o `fUpgradeFlag` parâmetro do <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> método está definido como <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS>, onde os arquivos que tinham sido feitos são posicionados ao longo de arquivos lado que são designados como ". old". Arquivos de backup mais antigos do que a hora do sistema quando o projeto foi atualizado podem ser designados como obsoletos. Além disso, eles poderão ser substituídos, a menos que você siga etapas específicas para evitar isso.  
   
-2.  No momento em seu item de projeto recebe uma notificação de atualização de projeto, o **Assistente de conversão do Visual Studio** ainda é exibido. Portanto, você deve usar os métodos do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> interface para fornecer mensagens de atualização para o Assistente de interface do usuário.  
+2. No momento em seu item de projeto recebe uma notificação de atualização de projeto, o **Assistente de conversão do Visual Studio** ainda é exibido. Portanto, você deve usar os métodos do <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> interface para fornecer mensagens de atualização para o Assistente de interface do usuário.  
   
 ## <a name="see-also"></a>Consulte também  
  [Assistente de conversão do Visual Studio](http://msdn.microsoft.com/4acfd30e-c192-4184-a86f-2da5e4c3d83c)   

@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 00baf3697347f208c5bd6cd2aa1abfe02b6fa2cb
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 8832f31724d5e688b93dcca76cce8e1a496c9ced
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58929916"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083212"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Passo a passo: Conectando um Host a um processador de diretriz gerado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
   
  Esta explicação passo a passo inclui as seguintes tarefas:  
   
--   Usando [!INCLUDE[dsl](../includes/dsl-md.md)] para gerar um processador de diretriz se baseia em um modelo de domínio.  
+- Usando [!INCLUDE[dsl](../includes/dsl-md.md)] para gerar um processador de diretriz se baseia em um modelo de domínio.  
   
--   Conectando um host de modelo de texto personalizado para o processador de diretriz gerado.  
+- Conectando um host de modelo de texto personalizado para o processador de diretriz gerado.  
   
--   Testando o host personalizado com o processador de diretriz gerado.  
+- Testando o host personalizado com o processador de diretriz gerado.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para definir uma DSL, é necessário ter instalados os seguintes componentes:  
@@ -87,27 +87,27 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
   
 #### <a name="to-connect-a-custom-text-template-host-to-the-generated-directive-processor"></a>Para se conectar a um host de modelo de texto personalizado para o processador de diretriz gerado  
   
-1.  Abra a solução de CustomHost.  
+1. Abra a solução de CustomHost.  
   
-2.  No menu **Projeto**, clique em **Adicionar Referência**.  
+2. No menu **Projeto**, clique em **Adicionar Referência**.  
   
      O **adicionar referência** caixa de diálogo é aberta com o **.NET** guia exibida.  
   
-3.  Adicione as seguintes referências:  
+3. Adicione as seguintes referências:  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.11.0  
+    - Microsoft.VisualStudio.Modeling.Sdk.11.0  
   
-    -   Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0  
+    - Microsoft.VisualStudio.Modeling.Sdk.Diagrams.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.11.0  
+    - Microsoft.VisualStudio.TextTemplating.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.11.0  
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.11.0  
+    - Microsoft.VisualStudio.TextTemplating.Modeling.11.0  
   
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.11.0  
+    - Microsoft.VisualStudio.TextTemplating.VSHost.11.0  
   
-4.  Na parte superior de Program.cs ou Module1.vb, adicione a seguinte linha de código:  
+4. Na parte superior de Program.cs ou Module1.vb, adicione a seguinte linha de código:  
   
     ```csharp  
     using Microsoft.Win32;  
@@ -117,7 +117,7 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
     Imports Microsoft.Win32  
     ```  
   
-5.  Localize o código para a propriedade `StandardAssemblyReferences`e substitua-o pelo código a seguir:  
+5. Localize o código para a propriedade `StandardAssemblyReferences`e substitua-o pelo código a seguir:  
   
     > [!NOTE]
     >  Nesta etapa, você deve adicionar referências aos assemblies que são necessários para o processador de diretriz gerado que darão suporte a seu host.  
@@ -153,7 +153,7 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
     }  
     ```  
   
-6.  Localize o código para a função `ResolveDirectiveProcessor`e substitua-o pelo código a seguir:  
+6. Localize o código para a função `ResolveDirectiveProcessor`e substitua-o pelo código a seguir:  
   
     > [!IMPORTANT]
     >  Esse código contém referências embutido em código como o nome do processador de diretriz gerado para o qual você deseja se conectar. Você pode facilmente tornar isso mais gerais, caso em que ele procura por todos os processadores de diretriz listados no registro e tenta encontrar uma correspondência. Nesse caso, o host funcionaria com qualquer processador de diretriz gerado.  
@@ -227,18 +227,18 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
             }  
     ```  
   
-7.  No menu **Arquivo**, clique em **Salvar tudo**.  
+7. No menu **Arquivo**, clique em **Salvar tudo**.  
   
-8.  No menu **Compilar**, clique em **Compilar Solução**.  
+8. No menu **Compilar**, clique em **Compilar Solução**.  
   
 ## <a name="testing-the-custom-host-with-the-directive-processor"></a>Testando o Host personalizado com o processador de diretriz  
  Para testar o host de modelo de texto personalizado, primeiro você deve escrever um modelo de texto que chama o processador de diretriz gerado. Em seguida, executar o host personalizado, passe a ele o nome do modelo de texto e verificar que a diretiva é processada corretamente.  
   
 #### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Para criar um modelo de texto para testar o host personalizado  
   
-1.  Criar um arquivo de texto e nomeie- `TestTemplateWithDP.tt`. Você pode usar qualquer editor de texto, como o bloco de notas, para criar o arquivo.  
+1. Criar um arquivo de texto e nomeie- `TestTemplateWithDP.tt`. Você pode usar qualquer editor de texto, como o bloco de notas, para criar o arquivo.  
   
-2.  Adicione o seguinte ao arquivo de texto:  
+2. Adicione o seguinte ao arquivo de texto:  
   
     > [!NOTE]
     >  A linguagem de programação do modelo de texto não precisa coincidir com o host personalizado.  
@@ -310,15 +310,15 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
     #>  
     ```  
   
-3.  No código, substitua \<seu caminho > com o caminho do arquivo Sample.min da linguagem de design específica que você criou no primeiro procedimento.  
+3. No código, substitua \<seu caminho > com o caminho do arquivo Sample.min da linguagem de design específica que você criou no primeiro procedimento.  
   
-4.  Salve e feche o arquivo.  
+4. Salve e feche o arquivo.  
   
 #### <a name="to-test-the-custom-host"></a>Para testar o host personalizado  
   
-1.  Abra uma janela do Prompt de Comando.  
+1. Abra uma janela do Prompt de Comando.  
   
-2.  Digite o caminho do arquivo executável para o host personalizado, mas não pressione ENTER ainda.  
+2. Digite o caminho do arquivo executável para o host personalizado, mas não pressione ENTER ainda.  
   
      Por exemplo, digite:  
   
@@ -327,9 +327,9 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
     > [!NOTE]
     >  Em vez de digitar o endereço, você pode navegar até o arquivo CustomHost.exe na **Windows Explorer**e, em seguida, arraste o arquivo para a janela de Prompt de comando.  
   
-3.  Digite um espaço.  
+3. Digite um espaço.  
   
-4.  Digite o caminho do arquivo de modelo de texto e pressione ENTER.  
+4. Digite o caminho do arquivo de modelo de texto e pressione ENTER.  
   
      Por exemplo, digite:  
   
@@ -340,11 +340,11 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
   
      O aplicativo de host personalizado é executado e inicia o processo de transformação do modelo de texto.  
   
-5.  Na **Windows Explorer**, navegue até a pasta que contém o arquivo TestTemplateWithDP.txt.  
+5. Na **Windows Explorer**, navegue até a pasta que contém o arquivo TestTemplateWithDP.txt.  
   
      A pasta também contém o arquivo TestTemplateWithDP1.txt.  
   
-6.  Abra esse arquivo para ver os resultados da transformação do modelo de texto.  
+6. Abra esse arquivo para ver os resultados da transformação do modelo de texto.  
   
      Os resultados da saída de texto gerada aparecerá e deve ter esta aparência:  
   

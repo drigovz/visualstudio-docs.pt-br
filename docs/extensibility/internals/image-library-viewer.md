@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5457c0b4e7b355c130fedbdbba456b550a35f1ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 749441e960363fe208e3ad67288180c1935db35f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633246"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084811"
 ---
 # <a name="image-library-viewer"></a>Visualizador da biblioteca de imagens
 A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carregar e pesquisar os manifestos de imagem, permitindo que o usuário para manipulá-los da mesma maneira que faria do Visual Studio. O usuário pode alterar o plano de fundo, tamanhos, DPI, alto contraste e outras configurações. A ferramenta também exibe informações de carregamento para cada manifesto de imagem e exibe informações de origem para cada imagem no manifesto de imagem. Essa ferramenta é útil para:
@@ -224,9 +224,9 @@ A ferramenta Visualizador de biblioteca de imagens do Visual Studio pode carrega
 
 ## <a name="notes"></a>Observações
 
--   Por padrão, a ferramenta vai receber vários manifestos de imagem presentes no diretório de instalação do Visual Studio. É o único que tem monikers publicamente consumíveis a **Microsoft.VisualStudio.ImageCatalog** de manifesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (fazer **não** substituir esse GUID em um manifesto personalizado) tipo: KnownMonikers
+- Por padrão, a ferramenta vai receber vários manifestos de imagem presentes no diretório de instalação do Visual Studio. É o único que tem monikers publicamente consumíveis a **Microsoft.VisualStudio.ImageCatalog** de manifesto. GUID: ae27a6b0-e345-4288-96df-5eaf394ee369 (fazer **não** substituir esse GUID em um manifesto personalizado) tipo: KnownMonikers
 
--   A ferramenta na inicialização para carregar todos os manifestos de imagem que ele encontrar, portanto, pode levar vários segundos para que o aplicativo seja exibido, na verdade, as tentativas. Ele também pode ser lenta ou que não responde ao carregar os manifestos.
+- A ferramenta na inicialização para carregar todos os manifestos de imagem que ele encontrar, portanto, pode levar vários segundos para que o aplicativo seja exibido, na verdade, as tentativas. Ele também pode ser lenta ou que não responde ao carregar os manifestos.
 
 ## <a name="sample-output"></a>Saída de Exemplo
  Essa ferramenta não gera nenhuma saída.

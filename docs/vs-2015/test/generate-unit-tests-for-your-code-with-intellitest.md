@@ -10,12 +10,12 @@ ms.assetid: cd9ff940-e948-4d28-a72c-b291ef5c1e90
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6d880ef434eafd7aee3ffbc5f7d8f80a68a4b25
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 304b26f8724413dceef8126434861bd7128d588c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790500"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085006"
 ---
 # <a name="generate-unit-tests-for-your-code-with-intellitest"></a>Gerar testes de unidade para seu código com o IntelliTest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ O IntelliTest explora seu código .NET para gerar dados de teste e um pacote de 
 ### <a name="explore-use-intellitest-to-explore-your-code-and-generate-unit-tests"></a>Explorar: Use o IntelliTest para explorar o código e gerar testes de unidade  
  Para gerar testes de unidade, seus tipos devem ser públicos. Caso contrário, [crie os testes de unidade](#NoRun) primeiro, antes de gerá-los.  
   
-1.  Abra a solução no Visual Studio. Em seguida, abra o arquivo de classe que tem métodos que você deseja testar.  
+1. Abra a solução no Visual Studio. Em seguida, abra o arquivo de classe que tem métodos que você deseja testar.  
   
-2.  Clique com o botão direito do mouse em um método no código e escolha **Executar IntelliTest** para gerar testes de unidade para o código em seu método.  
+2. Clique com o botão direito do mouse em um método no código e escolha **Executar IntelliTest** para gerar testes de unidade para o código em seu método.  
   
      ![Clique com botão direito do mouse em seu método para gerar testes de unidade](../test/media/runpex.png "RunPEX")  
   
@@ -50,7 +50,7 @@ O IntelliTest explora seu código .NET para gerar dados de teste e um pacote de 
   
 ### <a name="persist-save-the-unit-tests-as-a-regression-suite"></a>Persistir: Salve os testes de unidade como um pacote de regressão  
   
-1.  Selecione as linhas de dados que deseja salvar com o teste de unidade parametrizado em um projeto de teste.  
+1. Selecione as linhas de dados que deseja salvar com o teste de unidade parametrizado em um projeto de teste.  
   
      ![Selecione os testes, clique com botão direito do mouse e escolha Salvar](../test/media/savepextests.png "SavePEXTests")  
   
@@ -64,13 +64,13 @@ O IntelliTest explora seu código .NET para gerar dados de teste e um pacote de 
   
 ### <a name="assist-use-intellitest-to-focus-code-exploration"></a>Ajudar: Use o IntelliTest para ter como foco a exploração de código  
   
-1.  Se você tiver um código mais complexo, o IntelliTest lhe auxilia a ficar a exploração do código. Por exemplo, se você tiver um método que tem uma interface como parâmetro e houver mais de uma classe que implementa essa interface, o IntelliTest detectará essas classes e gerará um aviso.  
+1. Se você tiver um código mais complexo, o IntelliTest lhe auxilia a ficar a exploração do código. Por exemplo, se você tiver um método que tem uma interface como parâmetro e houver mais de uma classe que implementa essa interface, o IntelliTest detectará essas classes e gerará um aviso.  
   
      Exiba os avisos para decidir o que deseja fazer.  
   
      ![Exibir os avisos](../test/media/pexviewwarning.png "PEXViewWarning")  
   
-2.  Após examinar o código e entender o que deseja testar, você pode corrigir o aviso e escolher quais classes devem ser usadas para testar a interface.  
+2. Após examinar o código e entender o que deseja testar, você pode corrigir o aviso e escolher quais classes devem ser usadas para testar a interface.  
   
      ![Clique com o botão direito do mouse no aviso e escolha Corrigir](../test/media/pexfixwarning.png "PEXFixWarning")  
   
@@ -78,14 +78,14 @@ O IntelliTest explora seu código .NET para gerar dados de teste e um pacote de 
   
      `[assembly: PexUseType(typeof(Camera))]`  
   
-3.  Agora, você pode executar o IntelliTest novamente para gerar um teste de unidade parametrizado e testar dados usando apenas a classe que você fixou.  
+3. Agora, você pode executar o IntelliTest novamente para gerar um teste de unidade parametrizado e testar dados usando apenas a classe que você fixou.  
   
      ![Execute novamente o IntelliTest para gerar os dados de teste](../test/media/pexwarningsfixed.png "PEXWarningsFixed")  
   
 ### <a name="specify-use-intellitest-to-validate-correctness-properties-that-you-specify-in-code"></a>Especificar: Use o IntelliTest para validar as propriedades de correção especificadas no código  
  Especifique a relação geral entre as entradas e saídas que você deseja que os testes de unidade gerados validem. Essa especificação é encapsulada em um método que se parece com um método de teste, mas é quantificada universalmente. Esse é o método de teste de unidade parametrizado e qualquer asserção que você fizer deve conter todos os valores de entrada possíveis que o IntelliTest pode gerar.  
   
-##  <a name="QandALink"></a> Perguntas e respostas  
+## <a name="QandALink"></a> Perguntas e respostas  
   
 ### <a name="q-can-you-use-intellitest-for-unmanaged-code"></a>P: É possível usar o IntelliTest para código não gerenciado?  
  **R:** Não, o IntelliTest funciona somente com código gerenciado.  
@@ -95,13 +95,13 @@ O IntelliTest explora seu código .NET para gerar dados de teste e um pacote de 
   
  Se tiver um teste que pode ser aprovado se determinadas exceções forem geradas, você pode definir um dos atributos a seguir com base em suas necessidades, no nível do método de teste, da classe de teste ou do assembly:  
   
--   **PexAllowedExceptionAttribute**  
+- **PexAllowedExceptionAttribute**  
   
--   **PexAllowedExceptionFromTypeAttribute**  
+- **PexAllowedExceptionFromTypeAttribute**  
   
--   **PexAllowedExceptionFromTypeUnderTestAttribute**  
+- **PexAllowedExceptionFromTypeUnderTestAttribute**  
   
--   **PexAllowedExceptionFromAssemblyAttribute**  
+- **PexAllowedExceptionFromAssemblyAttribute**  
   
 ### <a name="q-can-i-add-assumptions-to-the-parameterized-unit-test"></a>P: Posso adicionar pressuposições ao teste de unidade parametrizado?  
  **R:** Sim, use pressuposições para especificar quais dados de teste não são necessários para o teste de unidade de um método específico. Use a classe <xref:Microsoft.Pex.Framework.PexAssume> para adicionar suposições. Por exemplo, você pode adicionar uma pressuposição de que a variável de tamanho não é nula.  
@@ -117,7 +117,7 @@ O IntelliTest explora seu código .NET para gerar dados de teste e um pacote de 
   
  Se você adicionar uma asserção e executar o IntelliTest novamente, ele verificará se a asserção é válida e o teste falhará se ela não for.  
   
-###  <a name="NoRun"></a> P: Posso gerar testes de unidade parametrizados sem executar o IntelliTest primeiro?  
+### <a name="NoRun"></a> P: Posso gerar testes de unidade parametrizados sem executar o IntelliTest primeiro?  
  **R:** Sim, clique com o botão direito do mouse na classe ou no método e, em seguida, escolha **Criar IntelliTest**.  
   
  ![Clique com o botão direito do mouse no editor, escolha Criar IntelliTest](../test/media/pexcreateintellitest.png "PEXCreateIntelliTest")  

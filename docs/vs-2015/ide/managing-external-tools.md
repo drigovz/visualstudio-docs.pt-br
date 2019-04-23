@@ -57,12 +57,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a59432d6b630606ac5c133e8a5811186fcf7c34
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: ce3cfa8762c6202a7c36bd9606a0fa77ccdd94a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866752"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084035"
 ---
 # <a name="managing-external-tools"></a>Gerenciando ferramentas externas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,17 +72,17 @@ ms.locfileid: "58866752"
 ## <a name="tools-available-on-the-visual-studio-tools-menu"></a>Ferramentas disponíveis no menu das Ferramentas do Visual Studio  
  É possível chamar as ferramentas a seguir no menu **Ferramentas** em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Você também pode chamá-las pelo nome na janela **Início Rápido**. Por exemplo, para chamar GuidGen.exe, digite **Criar GUID**.  
   
-1.  Criar GUID: gera um GUID.  
+1. Criar GUID: gera um GUID.  
   
-2.  Pesquisa de Erro: obtém uma mensagem de erro do valor inserido. Para obter mais informações, consulte [Referência de ERRLOOK](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
+2. Pesquisa de Erro: obtém uma mensagem de erro do valor inserido. Para obter mais informações, consulte [Referência de ERRLOOK](http://msdn.microsoft.com/library/6040ffc1-2355-4a45-8998-84cbcba4ca91).  
   
-3.  Ferramenta de Rastreamento da ATL/MFC: mostra mensagens de rastreamento de depuração nas fontes ATL e MFC.  
+3. Ferramenta de Rastreamento da ATL/MFC: mostra mensagens de rastreamento de depuração nas fontes ATL e MFC.  
   
-4.  PreEmptive Protection – Dotfuscator: Protege os programas .NET contra engenharia reversa.  
+4. PreEmptive Protection – Dotfuscator: Protege os programas .NET contra engenharia reversa.  
   
-5.  SPY + +: Exibe graficamente os processos, threads, windows e as mensagens da janela.  
+5. SPY + +: Exibe graficamente os processos, threads, windows e as mensagens da janela.  
   
-6.  Editor de configuração de serviço do WCF: Permite que você criar e modificar definições de configuração para serviços WCF.  
+6. Editor de configuração de serviço do WCF: Permite que você criar e modificar definições de configuração para serviços WCF.  
   
 > [!WARNING]
 >  Você poderá ver uma lista diferente de ferramentas externas, dependendo de qual edição do Visual Studio está instalada e o perfil de configurações aplicado. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -90,11 +90,11 @@ ms.locfileid: "58866752"
 ## <a name="adding-new-tools"></a>Adicionar novas ferramentas  
  É possível adicionar uma ferramenta externa ao menu **Ferramentas**. Abra a caixa de diálogo **Ferramentas Externas**, clique em **Adicionar** e, em seguida, preencha as informações. Por exemplo, a seguinte entrada faz com que o Windows Explorer abra o diretório do arquivo atualmente aberto no Visual Studio:  
   
-1.  Título: Abrir local do arquivo  
+1. Título: Abrir local do arquivo  
   
-2.  Comando: explorer.exe  
+2. Comando: explorer.exe  
   
-3.  Argumentos: /root, "$(ItemDir)"  
+3. Argumentos: /root, "$(ItemDir)"  
   
 ## <a name="arguments-for-external-tools"></a>Argumentos para ferramentas externas  
  Os argumentos a seguir são variáveis do Visual Studio atribuídas ao iniciar uma ferramenta externa. Links para ferramentas externas, como Bloco de notas ou Spy++, podem estar listados no menu **Ferramentas** com a caixa de diálogo Ferramentas Externas.  

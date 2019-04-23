@@ -15,12 +15,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 29c0a8f3eca5d6da2c86a1881e943754ad1ba087
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8b286a67b21d022b12f77ffff68a71da88256757
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923379"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095770"
 ---
 # <a name="ca2210-assemblies-should-have-valid-strong-names"></a>CA2210: Assemblies devem ter nomes fortes válidos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ ms.locfileid: "58923379"
 
    **Para assinar o assembly com um nome forte fora do Visual Studio**
 
--   Use a ferramenta de nome forte (Sn.exe) que é fornecida pelo [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK. Para saber mais, veja [Sn.exe (Ferramenta de Nome Forte)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
+- Use a ferramenta de nome forte (Sn.exe) que é fornecida pelo [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] SDK. Para saber mais, veja [Sn.exe (Ferramenta de Nome Forte)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6).
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Suprimir um aviso nessa regra somente se o assembly é usado em um ambiente em que viole o conteúdo não é uma preocupação.

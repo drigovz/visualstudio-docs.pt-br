@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a7553bb07e90e690d6409a2ad22636ddc8b627c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 186ca5857d949c7a7a8c90e3e5ec8770705e19cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924652"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104090"
 ---
 # <a name="how-to-start-debugging-xslt"></a>Como: Iniciar a depuração XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,15 +26,15 @@ O depurador XSLT pode ser usado para depurar uma folha de estilos XSLT ou um apl
   
 #### <a name="to-start-debugging-from-a-style-sheet"></a>Para iniciar depuração de uma folha de estilos  
   
-1.  Abra a folha de estilos no editor XML.  
+1. Abra a folha de estilos no editor XML.  
   
-2.  Selecione **depurar XSL** da **XML** menu.  
+2. Selecione **depurar XSL** da **XML** menu.  
   
 #### <a name="to-start-debugging-from-an-xml-input-document"></a>Para iniciar depuração de um documento de entrada XML  
   
-1.  Abra o documento XML no editor XML.  
+1. Abra o documento XML no editor XML.  
   
-2.  Selecione **depurar XSL** da **XML** menu.  
+2. Selecione **depurar XSL** da **XML** menu.  
   
 ## <a name="xslt-from-other-languages"></a>XSLT de outras linguagens  
  Você também pode entrar em XSLT ao depurar um aplicativo. Quando você pressiona a tecla F11 em uma chamada de <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> , o depurador pode entrar no código XSLT.  
@@ -44,11 +44,11 @@ O depurador XSLT pode ser usado para depurar uma folha de estilos XSLT ou um apl
   
 #### <a name="to-start-debugging-an-xslt-application"></a>Para iniciar a depuração de um aplicativo XSLT  
   
-1.  Ao criar uma instância do objeto de <xref:System.Xml.Xsl.XslCompiledTransform> , defina o parâmetro de `enableDebug` a `true` em seu código.  
+1. Ao criar uma instância do objeto de <xref:System.Xml.Xsl.XslCompiledTransform> , defina o parâmetro de `enableDebug` a `true` em seu código.  
   
      Isso informa o processador XSLT para criar informações de depuração quando o código é compilado.  
   
-2.  Pressione F11 para entrar no código XSLT.  
+2. Pressione F11 para entrar no código XSLT.  
   
      A folha de estilos XSLT é carregada em uma nova janela de documento e o depurador XSLT é iniciado.  
   

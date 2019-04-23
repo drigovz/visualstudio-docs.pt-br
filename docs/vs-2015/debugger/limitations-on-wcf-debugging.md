@@ -17,12 +17,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b42eecb5c620e911e448728678781ee32ccb5ca0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3faa57a0a2ca413898364c2d4ad1891df85f1ce8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926273"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095094"
 ---
 # <a name="limitations-on-wcf-debugging"></a>Limitações da depuração WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Há três modos de começar a depuração de um serviço WCF:
 ## <a name="limitations-on-stepping-into-a-service"></a>Limitações para entrar em um serviço  
  Para entrar em um serviço de aplicativos cliente que você está depurando, as seguintes condições devem ser atendidas:  
   
--   O cliente deve chamar o serviço usando um objeto do cliente síncrono.  
+- O cliente deve chamar o serviço usando um objeto do cliente síncrono.  
   
--   A operação do contrato não pode ser unidirecional.  
+- A operação do contrato não pode ser unidirecional.  
   
--   Se o servidor for assíncrono, você não poderá exibir a pilha de chamadas completa enquanto estiver executando o código no serviço.  
+- Se o servidor for assíncrono, você não poderá exibir a pilha de chamadas completa enquanto estiver executando o código no serviço.  
   
--   A depuração deve estar habilitada com o seguinte código no arquivo app.config ou no Web.config:  
+- A depuração deve estar habilitada com o seguinte código no arquivo app.config ou no Web.config:  
   
     ```  
     <system.web>  
@@ -62,13 +62,13 @@ Há três modos de começar a depuração de um serviço WCF:
 ## <a name="limitations-on-automatic-attach-to-a-service"></a>Limitações de anexar automaticamente a um serviço  
  Anexar automaticamente a um serviço tem as seguintes limitações:  
   
--   O serviço deve fazer parte da solução do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que você está depurando.  
+- O serviço deve fazer parte da solução do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que você está depurando.  
   
--   O serviço deve ser hospedado. Ele pode fazer parte de um projeto do site (Sistema de Arquivos e HTTP), projeto de aplicativo Web (Sistema de Arquivos e HTTP) ou projeto da biblioteca de serviço WCF. Os projetos da biblioteca de serviço WCF podem ser bibliotecas de serviço ou bibliotecas de serviço de fluxo de trabalho.  
+- O serviço deve ser hospedado. Ele pode fazer parte de um projeto do site (Sistema de Arquivos e HTTP), projeto de aplicativo Web (Sistema de Arquivos e HTTP) ou projeto da biblioteca de serviço WCF. Os projetos da biblioteca de serviço WCF podem ser bibliotecas de serviço ou bibliotecas de serviço de fluxo de trabalho.  
   
--   O serviço deve ser chamado de um cliente WCF.  
+- O serviço deve ser chamado de um cliente WCF.  
   
--   A depuração deve estar habilitada com o seguinte código no arquivo app.config ou no Web.config:  
+- A depuração deve estar habilitada com o seguinte código no arquivo app.config ou no Web.config:  
   
     ```  
     <system.web>  

@@ -18,12 +18,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c34ac4fdcf50d1fde95c957de6aff4b7f004a2d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1ccd8c399bd92bd98307d44aff913c30390033c7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927418"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083706"
 ---
 # <a name="how-to-debug-aspnet-exceptions"></a>Como: Depurar exceções do ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,14 +38,14 @@ A depuração de exceções é uma parte importante do desenvolvimento de um apl
   
 ### <a name="to-enable-debugging-of-aspnet-exceptions-with-just-my-code"></a>Para ativar a depuração de exceções do ASP.NET com Apenas Meu Código  
   
-1.  No menu **Depurar**, clique em **Exceções**.  
+1. No menu **Depurar**, clique em **Exceções**.  
   
      A caixa de diálogo **Exceções** é exibida.  
   
-2.  Na linha **Exceções do Common Language Runtime**, selecione **Geradas** ou **Sem tratamento do usuário**.  
+2. Na linha **Exceções do Common Language Runtime**, selecione **Geradas** ou **Sem tratamento do usuário**.  
   
      Para usar a configuração **Sem tratamento do usuário**, **Apenas Meu Código** deve estar habilitado.  
   
 ### <a name="to-use-best-practices-for-aspnet-exception-handling"></a>Para usar as práticas recomendadas para o tratamento de exceção do ASP.NET  
   
--   Coloque blocos de `try … catch` em torno do código que pode lançar exceções que você pode prever e sabe como manipular. Por exemplo, se o aplicativo está fazendo chamadas para um serviço Web XML ou diretamente em um SQL Server, esse código deve estar em **try... catch** bloqueia porque há várias exceções que podem ocorrer.
+- Coloque blocos de `try … catch` em torno do código que pode lançar exceções que você pode prever e sabe como manipular. Por exemplo, se o aplicativo está fazendo chamadas para um serviço Web XML ou diretamente em um SQL Server, esse código deve estar em **try... catch** bloqueia porque há várias exceções que podem ocorrer.

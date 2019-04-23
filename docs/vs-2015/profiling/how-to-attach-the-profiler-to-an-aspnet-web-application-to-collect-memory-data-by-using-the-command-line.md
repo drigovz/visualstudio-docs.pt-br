@@ -9,12 +9,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f4aa0517a20e0d667982fb2bfbf0784060628b09
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 863e60592fe82c468f48912c4e36182b1bb1a36b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653275"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104142"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-memory-data-by-using-the-command-line"></a>Como: Anexar o Profiler para um aplicativo Web ASP.NET para coletar dados de memória usando a linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
 
     **VSPerfClrEnv** {**/globalsamplegc** &#124; **/globalsamplegclife**} [**/samplelineoff**]  
 
-   -   As opções **/globalsamplegc** e **/globalsamplegclife** especificam o tipo de dados de memória a serem coletados.  
+   - As opções **/globalsamplegc** e **/globalsamplegclife** especificam o tipo de dados de memória a serem coletados.  
 
         Especifique uma e apenas uma das seguintes opções.  
 
@@ -49,7 +49,7 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
        |**/globalsamplegc**|Habilita a coleta de dados de alocação de memória.|  
        |**/globalsamplegclife**|Habilita a coleta de dados de alocação de memória e de dados de tempo de vida do objeto.|  
 
-   -   A opção **/samplelineoff** desabilita a atribuição dos dados coletados para linhas específicas do código-fonte. Se essa opção for especificada, os dados serão atribuídos no nível da função.  
+   - A opção **/samplelineoff** desabilita a atribuição dos dados coletados para linhas específicas do código-fonte. Se essa opção for especificada, os dados serão atribuídos no nível da função.  
 
 3. Reinicie o computador para definir a nova configuração do ambiente.  
 
@@ -83,16 +83,16 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
 
     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   A ID do processo `(PID)` especifica a ID ou o nome do processo de trabalho [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. É possível exibir as IDs de processo de todos os processos em execução no Gerenciador de Tarefas do Windows.  
+   - A ID do processo `(PID)` especifica a ID ou o nome do processo de trabalho [!INCLUDE[vstecasp](../includes/vstecasp-md.md)]. É possível exibir as IDs de processo de todos os processos em execução no Gerenciador de Tarefas do Windows.  
 
-   -   **/targetclr:** `Version` especifica a versão do CLR (Common Language Runtime) analisada quando mais de uma versão do tempo de execução for carregada em um aplicativo.  
+   - **/targetclr:** `Version` especifica a versão do CLR (Common Language Runtime) analisada quando mais de uma versão do tempo de execução for carregada em um aplicativo.  
 
 ## <a name="controlling-data-collection"></a>Controlando coleção de dados  
  Enquanto o aplicativo estiver em execução, você poderá controlar a coleta de dados iniciando e interrompendo a gravação dos dados no arquivo de dados do criador de perfil usando as opções de **VSPerfCmd.exe**. Controlar a coleta de dados permite coletar dados de uma parte específica da execução do programa, como a inicialização ou o desligamento do aplicativo.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar e interromper a coleta de dados  
 
--   Os pares de opções **VSPerfCmd** a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
+- Os pares de opções **VSPerfCmd** a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
 
     |Opção|Descrição|  
     |------------|-----------------|  

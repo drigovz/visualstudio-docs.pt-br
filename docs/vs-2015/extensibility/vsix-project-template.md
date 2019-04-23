@@ -11,12 +11,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3ef6037220337f0dc5005952849c9700703709f2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: e8bc80e28979a1adf86f4b0490f84cc393450521
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000098"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096121"
 ---
 # <a name="vsix-project-template"></a>Modelo de projeto do VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Você pode usar o modelo de projeto de VSIX para encapsular uma ou mais extensõ
 >  Para usar os projetos VSIX, você deve instalar o SDK do Visual Studio. Para obter mais informações sobre o SDK do Visual Studio, consulte [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="where-to-find-the-vsix-project-template"></a>Onde encontrar o modelo de projeto do VSIX  
- O modelo de projeto do VSIX está disponível na **novo projeto** caixa de diálogo. Expanda o **Visual Basic** nó ou o **Visual C#** nó e, em seguida, escolha **extensibilidade**.  
+ O modelo de projeto do VSIX está disponível na **novo projeto** caixa de diálogo. Expanda o **Visual Basic** nó ou o **Visual c#** nó e, em seguida, escolha **extensibilidade**.  
   
 > [!TIP]
 >  Assegure-se de que o .NET Framework 4.5 ou superior é especificado na lista suspensa na parte superior do **novo projeto** caixa de diálogo.  
@@ -48,37 +48,37 @@ Você pode usar o modelo de projeto de VSIX para encapsular uma ou mais extensõ
   
 #### <a name="to-package-an-extension-by-using-a-vsix-project"></a>Para empacotar uma extensão usando um projeto do VSIX  
   
-1.  Compile os projetos que compõem sua extensão.  
+1. Compile os projetos que compõem sua extensão.  
   
-2.  Criar um projeto VSIX usando o **VSIX Project** modelo.  
+2. Criar um projeto VSIX usando o **VSIX Project** modelo.  
   
      Vsixmanifest é aberto no **Designer de manifesto**.  
   
-3.  Sobre o **ativos** guia, escolha o **New** botão.  
+3. Sobre o **ativos** guia, escolha o **New** botão.  
   
      O **adicionar novo ativo** caixa de diálogo é exibida.  
   
-4.  No **tipo** lista, escolha o tipo de extensão a ser adicionada.  
+4. No **tipo** lista, escolha o tipo de extensão a ser adicionada.  
   
-5.  Para adicionar um elemento de extensão ou conteúdo que está incluído na solução atual (por exemplo, um modelo de item ou um assembly compilado), execute as seguintes etapas:  
+5. Para adicionar um elemento de extensão ou conteúdo que está incluído na solução atual (por exemplo, um modelo de item ou um assembly compilado), execute as seguintes etapas:  
   
-    1.  No **fonte** , escolha **um projeto na solução atual**.  
+    1. No **fonte** , escolha **um projeto na solução atual**.  
   
-    2.  No **projeto** , escolha o nome da extensão.  
+    2. No **projeto** , escolha o nome da extensão.  
   
-    3.  No **Embed nesta pasta** , digite o nome de uma pasta na qual é possível incorporar o ativo e, em seguida, escolha o **Okey** botão.  
+    3. No **Embed nesta pasta** , digite o nome de uma pasta na qual é possível incorporar o ativo e, em seguida, escolha o **Okey** botão.  
   
-6.  Para adicionar uma extensão ou um elemento de conteúdo que não está incluído na solução atual, execute as seguintes etapas:  
+6. Para adicionar uma extensão ou um elemento de conteúdo que não está incluído na solução atual, execute as seguintes etapas:  
   
-    1.  No **fonte** caixa de listagem, escolha **arquivo no sistema de arquivos**.  
+    1. No **fonte** caixa de listagem, escolha **arquivo no sistema de arquivos**.  
   
-    2.  No **caminho** campo, insira o caminho completo para o arquivo de extensão compilada ou compactada ou usar o **procurar** botão para navegar até o arquivo.  
+    2. No **caminho** campo, insira o caminho completo para o arquivo de extensão compilada ou compactada ou usar o **procurar** botão para navegar até o arquivo.  
   
-    3.  No **Embed nesta pasta** , digite o nome de uma pasta na qual é possível incorporar o ativo e, em seguida, escolha o **Okey** botão.  
+    3. No **Embed nesta pasta** , digite o nome de uma pasta na qual é possível incorporar o ativo e, em seguida, escolha o **Okey** botão.  
   
-7.  Se você quiser que seu pacote para incluir extensões adicionais, você deve adicioná-los da mesma maneira.  
+7. Se você quiser que seu pacote para incluir extensões adicionais, você deve adicioná-los da mesma maneira.  
   
-8.  Compile a solução.  
+8. Compile a solução.  
   
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] cria um arquivo. VSIX que contém um arquivo de manifesto do VSIX, um arquivo de [Content_Types]. XML e todos os ativos de extensão que você adicionou ao projeto.  
   

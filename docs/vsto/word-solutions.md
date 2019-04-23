@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 484998916619a7dc72693d1854d29849bb62d833
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bbe703e54c6023a4d14a8610168438acc5c0e953
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612641"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085136"
 ---
 # <a name="word-solutions"></a>Soluções do Word
   Visual Studio fornece modelos de projeto, que você pode usar para criar personalizações em nível de documento e suplementos do VSTO para o Microsoft Office Word. Você pode usar essas soluções para automatizar o Word, estender os recursos do Word e personalizar a interface do usuário do Word (UI). Para obter mais informações sobre as diferenças entre personalizações no nível de documento e suplementos do VSTO, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -43,20 +43,20 @@ ms.locfileid: "56612641"
 
  Este tópico fornece as seguintes informações:
 
--   [Automatizar o Word](#automating).
+- [Automatizar o Word](#automating).
 
--   [Desenvolver personalizações no nível de documento para Word](#doclevel).
+- [Desenvolver personalizações no nível de documento para Word](#doclevel).
 
--   [Desenvolver suplementos do VSTO para Word](#applevel).
+- [Desenvolver suplementos do VSTO para Word](#applevel).
 
--   [Personalizar a interface do usuário do Word](#UI).
+- [Personalizar a interface do usuário do Word](#UI).
 
-##  <a name="automating"></a> Automatizar o Word
+## <a name="automating"></a> Automatizar o Word
  O modelo de objeto do Word expõe vários tipos que você pode usar para automatizar o Word. Por exemplo, você pode programaticamente criar tabelas, documentos de formato e definir o texto em intervalos e os parágrafos. Para obter mais informações, consulte [visão geral do modelo de objeto Word](../vsto/word-object-model-overview.md).
 
  Ao desenvolver soluções do Word no Visual Studio, você também pode usar *hospedar itens* e *hospedar controles* em suas soluções. Esses são objetos que estendem alguns objetos comumente usados no modelo de objeto do Word, como o <xref:Microsoft.Office.Interop.Word.Document> e <xref:Microsoft.Office.Interop.Word.ContentControl> objetos. Objetos estendidos se comportam como os objetos do Word se baseiam, mas adicionar eventos adicionais e recursos de ligação de dados para os objetos. Para obter mais informações, consulte [automatizar o Word usando objetos estendidos](../vsto/automating-word-by-using-extended-objects.md).
 
-##  <a name="doclevel"></a> Desenvolver personalizações no nível de documento para Word
+## <a name="doclevel"></a> Desenvolver personalizações no nível de documento para Word
  Uma personalização no nível de documento para o Microsoft Office Word consiste em um assembly que está associado um documento específico. O assembly estende o documento normalmente, personalizando a interface do usuário e automatizando o Word. Ao contrário de um suplemento VSTO, que é associado com a palavra propriamente dita, funcionalidade que você implementa em uma personalização está disponível somente quando o documento associado é aberto no Word.
 
  Para criar um projeto de personalização de nível de documento para Word, use os modelos de projeto de documento do Word ou o modelo do Word na **novo projeto** caixa de diálogo do Visual Studio. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
@@ -68,7 +68,7 @@ ms.locfileid: "56612641"
 
  Para obter mais informações sobre o `ThisDocument` classe e outros recursos que você pode usar em um projeto de nível de documento, consulte [personalizações no nível de documento do programa](../vsto/programming-document-level-customizations.md).
 
-##  <a name="applevel"></a> Desenvolver suplementos do VSTO para Word
+## <a name="applevel"></a> Desenvolver suplementos do VSTO para Word
  Um suplemento do VSTO para o Microsoft Office Word consiste em um assembly que é carregado pelo Word. O assembly estende o Word normalmente, personalizando a interface do usuário e automatizando o Word. Ao contrário de uma personalização no nível de documento, que está associada um documento específico, a funcionalidade que você implementa em um suplemento do VSTO não está restrita a nenhum documento.
 
  Para criar um projeto de suplemento do VSTO para Word, use os modelos de projeto do suplemento do Word na **novo projeto** caixa de diálogo do Visual Studio. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
@@ -80,7 +80,7 @@ ms.locfileid: "56612641"
 
  Para obter mais informações sobre o `ThisAddIn` classe e outros recursos que você pode usar em um suplemento VSTO, consulte [suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md).
 
-##  <a name="UI"></a> Personalizar a interface do usuário do Word
+## <a name="UI"></a> Personalizar a interface do usuário do Word
  Há várias maneiras diferentes de personalizar a interface do usuário do Word. Algumas opções estão disponíveis a todos os tipos de projeto e outras opções estão disponíveis somente para personalizações no nível do documento ou de suplementos do VSTO.
 
 ### <a name="options-for-all-project-types"></a>Opções para todos os tipos de projeto

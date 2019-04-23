@@ -6,12 +6,12 @@ ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d67b80feb38e6f1c00c6cf4d1fc1d7915a33dbd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 33d3094c599ddc8cb472bd6defa211f57e85e84f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929154"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112826"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,25 +43,25 @@ O manifesto de ferramenta de recursos é um aplicativo de console que utiliza um
   
  **Exemplos**  
   
--   ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
+- ManifestFromResources /resources:D:\Images                       /assembly:My.Assembly.Name                       /isNative  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml                       /assembly:My.Assembly.Name                       /manifest:MyImageManifest.imagemanifest  
   
--   ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
+- ManifestFromResources /resources:D:\Images\Image1.png;D:\Images\Image1.xaml /assembly:My.Assembly.Name /guidName:MyImages /newGuids /newIds  
   
 ## <a name="notes"></a>Observações  
   
--   A ferramenta só oferece suporte a arquivos. PNG e. XAML. Quaisquer outros tipos de arquivo de imagem ou serão ignorados. Um aviso será gerado para todos os tipos sem suporte encontrados ao analisar os recursos. Se nenhum suporte para imagens são encontradas quando termina a ferramenta de análise de recursos, um erro será gerado  
+- A ferramenta só oferece suporte a arquivos. PNG e. XAML. Quaisquer outros tipos de arquivo de imagem ou serão ignorados. Um aviso será gerado para todos os tipos sem suporte encontrados ao analisar os recursos. Se nenhum suporte para imagens são encontradas quando termina a ferramenta de análise de recursos, um erro será gerado  
   
--   Seguindo o formato sugerido para imagens PNG, a ferramenta definirá o valor de dimensão de tamanho/para o. PNG como o tamanho do formato especificado, mesmo se ele é diferente do que o tamanho da imagem real.  
+- Seguindo o formato sugerido para imagens PNG, a ferramenta definirá o valor de dimensão de tamanho/para o. PNG como o tamanho do formato especificado, mesmo se ele é diferente do que o tamanho da imagem real.  
   
--   O formato de largura/altura pode ser omitido para imagens PNG, mas a ferramenta lerá largura/altura da imagem real e usá-las para o valor de dimensão/tamanho da imagem.  
+- O formato de largura/altura pode ser omitido para imagens PNG, mas a ferramenta lerá largura/altura da imagem real e usá-las para o valor de dimensão/tamanho da imagem.  
   
--   Executar essa ferramenta na faixa de imagens várias vezes para o mesmo .imagemanifest resultará em entradas duplicadas de manifesto, porque a ferramenta tenta dividir a faixa de imagens em imagens independentes e adicioná-los para o manifesto existente.  
+- Executar essa ferramenta na faixa de imagens várias vezes para o mesmo .imagemanifest resultará em entradas duplicadas de manifesto, porque a ferramenta tenta dividir a faixa de imagens em imagens independentes e adicioná-los para o manifesto existente.  
   
--   Mesclando (omitindo /newGuids ou /newIds) deve ser feito somente para manifestos gerados por ferramenta. Manifestos que foram personalizados ou gerados por outros meios não podem ser mesclados corretamente.  
+- Mesclando (omitindo /newGuids ou /newIds) deve ser feito somente para manifestos gerados por ferramenta. Manifestos que foram personalizados ou gerados por outros meios não podem ser mesclados corretamente.  
   
--   Manifestos são gerados para assemblies nativos talvez precise ser editado manualmente após a geração de fazer com que os símbolos de ID corresponde ao recurso as IDs de arquivo. RC do assembly nativo.  
+- Manifestos são gerados para assemblies nativos talvez precise ser editado manualmente após a geração de fazer com que os símbolos de ID corresponde ao recurso as IDs de arquivo. RC do assembly nativo.  
   
 ## <a name="sample-output"></a>Saída de Exemplo  
  **Manifesto de imagem simples**  

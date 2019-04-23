@@ -1,5 +1,5 @@
 ---
-title: 'Como: usar o ClickOnce para implantar aplicativos que podem ser executados em várias versões do .NET Framework | Microsoft Docs'
+title: 'Como: Usar o ClickOnce para implantar aplicativos que podem ser executados em várias versões do .NET Framework | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 154e6058689d308f35fd969438d1964b9383f653
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: a98ad657fd1664a71b0b07063615923af4b9db2d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633961"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096043"
 ---
-# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Como usar o ClickOnce para implantar aplicativos que podem ser executados em várias versões do .NET Framework
+# <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Como: Usar o ClickOnce para implantar aplicativos que podem ser executados em várias versões do .NET Framework
 Você pode implantar um aplicativo destinado a várias versões do .NET Framework usando a tecnologia de implantação do ClickOnce. Isso exige que você deseja gerar e atualizar os manifestos do aplicativo e implantação.
 
 > [!NOTE]
@@ -31,27 +31,27 @@ Você pode implantar um aplicativo destinado a várias versões do .NET Framewor
 
  Esse processo exige as seguintes etapas:
 
-1.  Gere os manifestos de aplicativo e implantação.
+1. Gere os manifestos de aplicativo e implantação.
 
-2.  Altere o manifesto de implantação para listar as várias versões do .NET Framework.
+2. Altere o manifesto de implantação para listar as várias versões do .NET Framework.
 
-3.  Alterar o *App. config* arquivo para listar as versões compatíveis do tempo de execução do .NET Framework.
+3. Alterar o *App. config* arquivo para listar as versões compatíveis do tempo de execução do .NET Framework.
 
-4.  Altere o manifesto do aplicativo para marcar os assemblies dependentes como assemblies do .NET Framework.
+4. Altere o manifesto do aplicativo para marcar os assemblies dependentes como assemblies do .NET Framework.
 
-5.  Assine o manifesto do aplicativo.
+5. Assine o manifesto do aplicativo.
 
-6.  Atualizar e assinar o manifesto de implantação.
+6. Atualizar e assinar o manifesto de implantação.
 
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Para gerar os manifestos de aplicativo e implantação
 
--   Use o Assistente de publicação ou a página de publicação do Project Designer para publicar o aplicativo e gerar o aplicativo e os arquivos de manifesto de implantação. Para obter mais informações, consulte [como: publicar um aplicativo ClickOnce usando o Assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) ou [página de publicação, Designer de projeto](../ide/reference/publish-page-project-designer.md).
+- Use o Assistente de publicação ou a página de publicação do Project Designer para publicar o aplicativo e gerar o aplicativo e os arquivos de manifesto de implantação. Para obter mais informações, confira [Como: Publicar um aplicativo ClickOnce usando o Assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) ou [página de publicação, Designer de projeto](../ide/reference/publish-page-project-designer.md).
 
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Para alterar o manifesto de implantação para listar as várias versões do .NET Framework
 
-1.  No diretório de publicação, abra o manifesto de implantação usando o Editor de XML no Visual Studio. O manifesto de implantação tem a *. Application* extensão de nome de arquivo.
+1. No diretório de publicação, abra o manifesto de implantação usando o Editor de XML no Visual Studio. O manifesto de implantação tem a *. Application* extensão de nome de arquivo.
 
-2.  Substitua o código XML entre o `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` e `</compatibleFrameworks>` elementos com XML que lista as versões do .NET Framework com suporte para o seu aplicativo.
+2. Substitua o código XML entre o `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` e `</compatibleFrameworks>` elementos com XML que lista as versões do .NET Framework com suporte para o seu aplicativo.
 
      A tabela a seguir mostra algumas das versões do .NET Framework disponíveis e o XML correspondente que você pode adicionar ao manifesto de implantação.
 
@@ -65,9 +65,9 @@ Você pode implantar um aplicativo destinado a várias versões do .NET Framewor
 
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Para alterar o arquivo App. config para listar as versões de tempo de execução do .NET Framework compatíveis
 
-1.  No Gerenciador de soluções, abra o *App. config* arquivo usando o Editor de XML no Visual Studio.
+1. No Gerenciador de soluções, abra o *App. config* arquivo usando o Editor de XML no Visual Studio.
 
-2.  Substituir (ou adicione) o código XML entre o `<startup>` e `</startup>` elementos com XML que lista os tempos de execução do .NET Framework com suporte para o seu aplicativo.
+2. Substituir (ou adicione) o código XML entre o `<startup>` e `</startup>` elementos com XML que lista os tempos de execução do .NET Framework com suporte para o seu aplicativo.
 
      A tabela a seguir mostra algumas das versões do .NET Framework disponíveis e o XML correspondente que você pode adicionar ao manifesto de implantação.
 
@@ -100,7 +100,7 @@ Você pode implantar um aplicativo destinado a várias versões do .NET Framewor
 
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Para atualizar e assinar novamente o aplicativo e a implantação manifestos
 
--   Atualizar e assinar novamente os manifestos de aplicativo e implantação. Para obter mais informações, consulte [como: assinar novamente os manifestos de aplicativo e implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
+- Atualizar e assinar novamente os manifestos de aplicativo e implantação. Para obter mais informações, confira [Como: Assinar novamente os manifestos de aplicativo e de implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)

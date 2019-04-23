@@ -14,12 +14,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6891a33afcb002e806ff8e4ed529604f69256313
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 00b041b4cb2009d247572d1e47dfff40d8548927
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160192"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080287"
 ---
 # <a name="active-script-authoring-interfaces"></a>Interfaces de criação de script ativo
 O arquivo de cabeçalho ActivAut.h fornece as interfaces listadas nesta seção.  
@@ -27,15 +27,15 @@ O arquivo de cabeçalho ActivAut.h fornece as interfaces listadas nesta seção.
 ## <a name="in-this-section"></a>Nesta seção  
  As seguintes interfaces Habilitar criação de páginas da Web:  
   
--   [IActiveScriptAuthor Interface](../../winscript/reference/iactivescriptauthor-interface.md)  
+- [IActiveScriptAuthor Interface](../../winscript/reference/iactivescriptauthor-interface.md)  
   
--   [IActiveScriptAuthorProcedure Interface](../../winscript/reference/iactivescriptauthorprocedure-interface.md)  
+- [IActiveScriptAuthorProcedure Interface](../../winscript/reference/iactivescriptauthorprocedure-interface.md)  
   
--   [IScriptEntry Interface](../../winscript/reference/iscriptentry-interface.md)  
+- [IScriptEntry Interface](../../winscript/reference/iscriptentry-interface.md)  
   
--   [IScriptNode Interface](../../winscript/reference/iscriptnode-interface.md)  
+- [IScriptNode Interface](../../winscript/reference/iscriptnode-interface.md)  
   
--   [IScriptScriptlet Interface](../../winscript/reference/iscriptscriptlet-interface.md)  
+- [IScriptScriptlet Interface](../../winscript/reference/iscriptscriptlet-interface.md)  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de interfaces de script do Windows](../../winscript/reference/windows-script-interfaces-reference.md)

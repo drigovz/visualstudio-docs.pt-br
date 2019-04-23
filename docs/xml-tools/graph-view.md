@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5424e813c5f1e3908c02dbc63798f5891edb8131
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 3beeb41d89f96cea8ab0f7f97bada815101f7e2f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526640"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079702"
 ---
 # <a name="graph-view"></a>Exibição de gráfico
 
@@ -120,11 +120,11 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 
  Desfazer/refaz o recurso é habilitado no modo de gráfico para as seguintes ações:
 
--   Adicionando um único nó arrastando e soltando-se.
+- Adicionando um único nó arrastando e soltando-se.
 
--   Adicionando mais nós da janela de resultados de pesquisa no esquema Explorer ou em consultas de exibição de Início.
+- Adicionando mais nós da janela de resultados de pesquisa no esquema Explorer ou em consultas de exibição de Início.
 
--   Excluindo única ou mais nós.
+- Excluindo única ou mais nós.
 
 ## <a name="zoom"></a>Aplicar Zoom
 
@@ -132,9 +132,9 @@ A exibição do gráfico fornece uma representação gráfica de nós globais do
 
  O zoom pode ser controlado das seguintes maneiras:
 
--   Mantendo os **Ctrl** wheel de chave e girar o mouse quando o mouse está sobre a superfície de exibição de gráfico.
+- Mantendo os **Ctrl** wheel de chave e girar o mouse quando o mouse está sobre a superfície de exibição de gráfico.
 
--   Usando o controle deslizante. O controle deslizante mostra o nível atual de zoom.
+- Usando o controle deslizante. O controle deslizante mostra o nível atual de zoom.
 
 O controle deslizante de Zoom é opaco ao selecioná-la, passe o mouse sobre ele ou usar **Ctrl** com a roda do mouse para aplicar zoom; em todos os outros momentos, é transparente.
 

@@ -14,12 +14,12 @@ caps.latest.revision: 58
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f903ddbf82686846298e21765e405d939f11e1b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e0ac9d085a837ab3ab05754ce70d853112bc48d6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54754812"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096511"
 ---
 # <a name="walkthrough-identifying-performance-problems"></a>Passo a passo: Identificando problemas de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Este passo a passo demonstra como criar um perfil de um aplicativo para identifi
   
  Neste passo a passo, você seguirá estas etapas:  
   
--   Crie o perfil de um aplicativo usando o método de amostragem.  
+- Crie o perfil de um aplicativo usando o método de amostragem.  
   
--   Analise os resultados da criação de perfil amostrada para localizar e corrigir um problema de desempenho.  
+- Analise os resultados da criação de perfil amostrada para localizar e corrigir um problema de desempenho.  
   
--   Crie o perfil de um aplicativo usando o método de instrumentação.  
+- Crie o perfil de um aplicativo usando o método de instrumentação.  
   
--   Analise os resultados da criação de perfil instrumentada para localizar e corrigir um problema de desempenho.  
+- Analise os resultados da criação de perfil instrumentada para localizar e corrigir um problema de desempenho.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
   
@@ -51,29 +51,29 @@ Este passo a passo demonstra como criar um perfil de um aplicativo para identifi
   
 #### <a name="to-profile-an-application-by-using-the-sampling-method"></a>Para criar o perfil de um aplicativo usando o método de amostragem  
   
-1.  Abra [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] com privilégios de administrador. Para a criação de perfil, é necessário executar como administrador.  
+1. Abra [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] com privilégios de administrador. Para a criação de perfil, é necessário executar como administrador.  
   
-2.  Abra a solução PeopleTrax.  
+2. Abra a solução PeopleTrax.  
   
      A solução PeopleTrax agora preenche o Gerenciador de Soluções.  
   
-3.  Defina a configuração do projeto como **Versão**.  
+3. Defina a configuração do projeto como **Versão**.  
   
      Você deve usar um build de versão para detectar problemas de desempenho no aplicativo. Um build de versão é recomendado para criação de perfil porque um build de depuração contém informações adicionais compiladas que podem afetar negativamente o desempenho e não ilustrar os problemas de desempenho com precisão.  
   
-4.  No menu **Analisar**, clique em **Iniciar o Assistente de Desempenho**.  
+4. No menu **Analisar**, clique em **Iniciar o Assistente de Desempenho**.  
   
      O Assistente de Desempenho é exibido.  
   
-5.  Certifique-se de que a **Amostragem de CPU (recomendada)** está selecionada e clique em **Avançar**.  
+5. Certifique-se de que a **Amostragem de CPU (recomendada)** está selecionada e clique em **Avançar**.  
   
-6.  Em **Para qual aplicativo o perfil deve ser criado?**, selecione PeopleTrax e clique em **Avançar**.  
+6. Em **Para qual aplicativo o perfil deve ser criado?**, selecione PeopleTrax e clique em **Avançar**.  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] compila o projeto e inicia a criação de perfil do aplicativo. A janela do aplicativo **PeopleTrax** é exibida.  
   
-7.  Clique em **Get People**.  
+7. Clique em **Get People**.  
   
-8.  Clique em **ExportData**.  
+8. Clique em **ExportData**.  
   
      O bloco de notas é aberto e exibe um novo arquivo que contém os dados exportados do **PeopleTrax**.  
   
@@ -83,23 +83,23 @@ Este passo a passo demonstra como criar um perfil de um aplicativo para identifi
   
 #### <a name="to-analyze-sampled-profiling-results"></a>Para analisar os resultados de criação de perfil amostrada  
   
-1.  A exibição Resumo exibe uma linha do tempo de utilização da CPU ao longo da execução de criação de perfil, a lista **Afunilamento**, que representa a ramificação da árvore de chamada do aplicativo que estava mais ativo e uma lista das **Funções Que Realizam a Maioria do Trabalho Individual**, que mostra as funções mais intensamente amostradas durante a execução de código no próprio corpo da função.  
+1. A exibição Resumo exibe uma linha do tempo de utilização da CPU ao longo da execução de criação de perfil, a lista **Afunilamento**, que representa a ramificação da árvore de chamada do aplicativo que estava mais ativo e uma lista das **Funções Que Realizam a Maioria do Trabalho Individual**, que mostra as funções mais intensamente amostradas durante a execução de código no próprio corpo da função.  
   
      Examine a lista **Afunilamento** e observe que o método PeopleNS.People.GetNames é a função do PeopleTrax mais próxima ao final da lista. Sua posição a torna um bom candidato para análise. Clique no nome da função para exibir detalhes dos GetNames na exibição **Detalhes da Função**.  
   
-2.  A exibição **Detalhes da Função** contém duas janelas. A janela de distribuição de custo fornece uma exibição gráfica do trabalho feito pela função, o trabalho realizado pelas funções chamadas e a contribuição de funções que chamaram a função para o número de instâncias amostradas. Você pode alterar a função que é o foco do modo de exibição, clicando em um nome de função. Por exemplo, você pode clicar em PeopleNS.People.GetPeople para fazer de GetPeople a função selecionada.  
+2. A exibição **Detalhes da Função** contém duas janelas. A janela de distribuição de custo fornece uma exibição gráfica do trabalho feito pela função, o trabalho realizado pelas funções chamadas e a contribuição de funções que chamaram a função para o número de instâncias amostradas. Você pode alterar a função que é o foco do modo de exibição, clicando em um nome de função. Por exemplo, você pode clicar em PeopleNS.People.GetPeople para fazer de GetPeople a função selecionada.  
   
      A janela **Exibição de Código da Função** mostrará o código-fonte da função se ela estiver disponível e realça as linhas mais caras na função selecionada. Quando GetNames é selecionada, você pode ver que essa função lê uma cadeia de caracteres nos recursos do aplicativo e, em seguida, usa um <xref:System.IO.StringReader> para adicionar cada linha da cadeia de caracteres a uma <xref:System.Collections.ArrayList>. Não há maneira óbvia de otimizar essa função.  
   
-3.  Como PeopleNS.People.GetPeople é o único chamador de GetNames, clique em GetPeople na janela de distribuição de custos para examinar seu código. Esse método retorna uma <xref:System.Collections.ArrayList> de objetos PersonInformationNS.PersonInformation dos nomes de pessoas e empresas produzidos por GetNames. No entanto, GetNames é chamado duas vezes toda vez que um objeto PersonInformation é criado. Você pode ver que o método pode ser facilmente otimizado criando as listas apenas uma vez no início do método e indexando a essas listas durante o loop de criação de PersonInformation.  
+3. Como PeopleNS.People.GetPeople é o único chamador de GetNames, clique em GetPeople na janela de distribuição de custos para examinar seu código. Esse método retorna uma <xref:System.Collections.ArrayList> de objetos PersonInformationNS.PersonInformation dos nomes de pessoas e empresas produzidos por GetNames. No entanto, GetNames é chamado duas vezes toda vez que um objeto PersonInformation é criado. Você pode ver que o método pode ser facilmente otimizado criando as listas apenas uma vez no início do método e indexando a essas listas durante o loop de criação de PersonInformation.  
   
-4.  Uma versão alternativa de GetPeople é fornecida com o código do aplicativo de exemplo e você poderá chamar a função otimizada adicionando um símbolo de build condicional às propriedades de build. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e clique em **Propriedades**. Clique em **Compilar** no menu de página de propriedades e digite **OPTIMIZED_GETPEOPLE** na caixa de texto do símbolo de build condicional. A versão otimizada de GetPeople substitui o método original na próximo build.  
+4. Uma versão alternativa de GetPeople é fornecida com o código do aplicativo de exemplo e você poderá chamar a função otimizada adicionando um símbolo de build condicional às propriedades de build. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto e clique em **Propriedades**. Clique em **Compilar** no menu de página de propriedades e digite **OPTIMIZED_GETPEOPLE** na caixa de texto do símbolo de build condicional. A versão otimizada de GetPeople substitui o método original na próximo build.  
   
-5.  Execute novamente a sessão de desempenho. Na barra de ferramentas do Gerenciador de Desempenho, clique em **Iniciar com Criação de Perfil**. Clique em **Get People** e, em seguida, clique em **Exportar Dados**. Feche a janela do bloco de notas que aparece e, em seguida, feche o aplicativo People Trax.  
+5. Execute novamente a sessão de desempenho. Na barra de ferramentas do Gerenciador de Desempenho, clique em **Iniciar com Criação de Perfil**. Clique em **Get People** e, em seguida, clique em **Exportar Dados**. Feche a janela do bloco de notas que aparece e, em seguida, feche o aplicativo People Trax.  
   
      Um novo arquivo de dados de criação de perfil é gerado e uma exibição **Resumo** dos novos dados aparece na janela principal [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)].  
   
-6.  Para comparar as duas execuções de criação de perfil, selecione os dois arquivos de dados no Gerenciador de Desempenho, clique com botão direito do mouse nos arquivos e, em seguida, clique em **Comparar Relatórios de Desempenho**. Uma janela de Relatório de Comparação é exibida na janela principal [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. A coluna **Delta** mostra a alteração no valor do desempenho das funções, desde o valor anterior da **Linha de Base** até o último valor de **Comparação**. Você pode selecionar os valores a serem comparados na lista suspensa **Coluna**. Selecione **% de Amostras Inclusivas**.  
+6. Para comparar as duas execuções de criação de perfil, selecione os dois arquivos de dados no Gerenciador de Desempenho, clique com botão direito do mouse nos arquivos e, em seguida, clique em **Comparar Relatórios de Desempenho**. Uma janela de Relatório de Comparação é exibida na janela principal [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. A coluna **Delta** mostra a alteração no valor do desempenho das funções, desde o valor anterior da **Linha de Base** até o último valor de **Comparação**. Você pode selecionar os valores a serem comparados na lista suspensa **Coluna**. Selecione **% de Amostras Inclusivas**.  
   
      Observe que os métodos GetPeople e GetNames mostram ganhos de desempenho consideráveis.  
   
@@ -110,25 +110,25 @@ Este passo a passo demonstra como criar um perfil de um aplicativo para identifi
   
 #### <a name="to-profile-an-existing-application-by-using-the-instrumentation-method"></a>Para criar o perfil de um aplicativo existente usando o método de instrumentação  
   
-1.  Se necessário, abra o aplicativo PeopleTrax no Visual Studio.  
+1. Se necessário, abra o aplicativo PeopleTrax no Visual Studio.  
   
      Verifique se você está executando como administrador e se a configuração de build da solução está definida como **Versão**.  
   
-2.  No Gerenciador de Desempenho, clique em **Instrumentação**.  
+2. No Gerenciador de Desempenho, clique em **Instrumentação**.  
   
-3.  Na barra de ferramentas do Gerenciador de Desempenho, clique em **Iniciar com Criação de Perfil**.  
+3. Na barra de ferramentas do Gerenciador de Desempenho, clique em **Iniciar com Criação de Perfil**.  
   
      O criador de perfil compila o projeto e inicia a criação de perfil do aplicativo. A janela do aplicativo PeopleTrax é exibida.  
   
-4.  Clique em **Get People**.  
+4. Clique em **Get People**.  
   
      A grade de dados do PeopleTrax é preenchida com os dados.  
   
-5.  Aguarde cerca de 10 segundos e, em seguida, clique em **Exportar Dados**.  
+5. Aguarde cerca de 10 segundos e, em seguida, clique em **Exportar Dados**.  
   
      O **bloco de notas** é iniciado e exibe um novo arquivo que contém uma lista de pessoas do PeopleTrax. A espera permite que você identifique mais facilmente o procedimento de exportação de dados para filtragem.  
   
-6.  Feche o **bloco de notas** e, em seguida, feche o aplicativo **PeopleTrax**.  
+6. Feche o **bloco de notas** e, em seguida, feche o aplicativo **PeopleTrax**.  
   
      [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] gera um relatório de sessão de desempenho (*.vsp).  
   

@@ -12,23 +12,23 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 490a28e4f3fcd0b2bc2657a83a706090eafb16a8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b4c02c7dbce09383b5fc3cb1fd7f5eec6e9116b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928928"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079831"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Procurar e selecione uma caixa de diálogo de tipo do .NET
 No **propriedades** designers como o designer variável, quando você seleciona, caixas de diálogo ou janela **procurar tipos...** em uma lista de tipos de dados, é o **navegue e selecione um tipo .NET** caixa de diálogo (conhecida na forma abreviada, como o tipo "navegador"). Na caixa de diálogo, você pode escolher um tipo de um modo de exibição de árvore de assemblies e de projetos.  
   
  Esta caixa de diálogo é empregada em um número de cenários do usuário, incluindo o seguinte:  
   
--   Ao definir o tipo de uma variável ou um argumento.  
+- Ao definir o tipo de uma variável ou um argumento.  
   
--   Ao selecionar um tipo para uma atividade genérico.  
+- Ao selecionar um tipo para uma atividade genérico.  
   
--   Para adicionar uma captura na atividade de <xref:System.Activities.Statements.TryCatch> .  
+- Para adicionar uma captura na atividade de <xref:System.Activities.Statements.TryCatch> .  
   
 > [!NOTE]
 >  O navegador do tipo pode exibir tipos de jagged array Visual Basic, mas não tipos de matriz multidimensional. Ver [matrizes denteadas](http://go.microsoft.com/fwlink/?LinkId=195226) e [matrizes multidimensionais](http://go.microsoft.com/fwlink/?LinkId=195227) para obter detalhes.  
@@ -37,19 +37,19 @@ No **propriedades** designers como o designer variável, quando você seleciona,
   
 #### <a name="to-select-a-value-or-reference-type-from-the-type-browser"></a>Para selecionar um valor ou uma referência digite de navegador de tipo  
   
-1.  No **nome do tipo** , digite o nome do tipo que você deseja usar.  
+1. No **nome do tipo** , digite o nome do tipo que você deseja usar.  
   
-2.  Realize um dos seguintes procedimentos:  
+2. Realize um dos seguintes procedimentos:  
   
-    -   Depois que o nome do tipo que você deseja usar aparece na árvore na **nome do tipo** caixa, clique duas vezes o tipo para selecioná-lo.  
+    - Depois que o nome do tipo que você deseja usar aparece na árvore na **nome do tipo** caixa, clique duas vezes o tipo para selecioná-lo.  
   
-    -   Tipo suficiente caracteres na **nome do tipo** caixa para identificar exclusivamente o tipo que você deseja usar e, em seguida, pressione enter para selecionar o tipo  
+    - Tipo suficiente caracteres na **nome do tipo** caixa para identificar exclusivamente o tipo que você deseja usar e, em seguida, pressione enter para selecionar o tipo  
   
 #### <a name="to-select-a-generic-type-from-the-type-browser"></a>Para selecionar um tipo genérico de navegador de tipo  
   
-1.  No **nome do tipo** caixa, digite o nome do tipo que você deseja usar.  
+1. No **nome do tipo** caixa, digite o nome do tipo que você deseja usar.  
   
-2.  Depois que o nome do tipo que você deseja usar aparece na árvore na **nome do tipo** caixa, clique no tipo para selecioná-lo para causar caixas suspensas aparecem.  
+2. Depois que o nome do tipo que você deseja usar aparece na árvore na **nome do tipo** caixa, clique no tipo para selecioná-lo para causar caixas suspensas aparecem.  
   
      Selecione o tipo que você deseja usar para fechar o genérico caixas de lista suspensa e, em seguida, clique em **Okey**.  
   
@@ -63,9 +63,9 @@ No **propriedades** designers como o designer variável, quando você seleciona,
   
  Por exemplo:  
   
-1.  Digitação **operação** corresponde a <xref:System.OperationCanceledException> mas não <xref:System.InvalidOperationException>. Para corresponder <xref:System.InvalidOperationException>, inicie digite System.I ou inválido.  
+1. Digitação **operação** corresponde a <xref:System.OperationCanceledException> mas não <xref:System.InvalidOperationException>. Para corresponder <xref:System.InvalidOperationException>, inicie digite System.I ou inválido.  
   
-2.  Digitação **genérico** corresponde a <xref:System.GenericUriParser> mas não tipos no <xref:System.Collections.Generic> namespace. Para procurar por tipos no namespace <xref:System.Collections.Generic> , digite o nome totalmente qualificado do namespace.  
+2. Digitação **genérico** corresponde a <xref:System.GenericUriParser> mas não tipos no <xref:System.Collections.Generic> namespace. Para procurar por tipos no namespace <xref:System.Collections.Generic> , digite o nome totalmente qualificado do namespace.  
   
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>Selecionando um contrato de serviço usando a caixa de diálogo de navegador de tipo  
  Ao selecionar um tipo de contrato de serviço, o navegador do tipo mostra somente os tipos que têm o atributo de <xref:System.ServiceModel.ServiceContractAttribute> .  

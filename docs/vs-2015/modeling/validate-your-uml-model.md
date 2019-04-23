@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0c805c842832ac99c527ea382169775d8b6b2529
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926774"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113307"
 ---
 # <a name="validate-your-uml-model"></a>Validar o modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,24 +49,24 @@ Alguns dos modelos de UML que você pode desenhar no Visual Studio podem ser con
   
 #### <a name="to-install-a-visual-studio-extension"></a>Para instalar uma extensão do Visual Studio  
   
-1.  Clique duas vezes o **VSIX** arquivo no Windows Explorer (ou Explorador de arquivos).  
+1. Clique duas vezes o **VSIX** arquivo no Windows Explorer (ou Explorador de arquivos).  
   
-2.  Reiniciar qualquer instância do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que já está em execução.  
+2. Reiniciar qualquer instância do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que já está em execução.  
   
 ## <a name="disabling-and-uninstalling-validation-constraints"></a>Desabilitar e desinstalar as restrições de validação  
  Quando você quiser trabalhar com um modelo ao qual as restrições não se aplicam, você pode desativar temporariamente a extensão de que os contém. Dessa forma, você pode trabalhar com diferentes tipos de modelo em momentos diferentes, habilitando e desabilitando extensões diferentes.  
   
 #### <a name="to-disable-or-uninstall-a-visual-studio-extension"></a>Para desabilitar ou desinstalar uma extensão do Visual Studio  
   
-1.  Sobre o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **ferramentas** menu, clique em **extensões e atualizações**.  
+1. Sobre o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **ferramentas** menu, clique em **extensões e atualizações**.  
   
-2.  Junto com a extensão, clique em **desabilitar** para desabilitar temporariamente a extensão. Você pode habilitá-la novamente mais tarde, retornando para o **extensões e atualizações** janela.  
+2. Junto com a extensão, clique em **desabilitar** para desabilitar temporariamente a extensão. Você pode habilitá-la novamente mais tarde, retornando para o **extensões e atualizações** janela.  
   
      \- ou -  
   
      Clique em **desinstalação** para remover a extensão.  
   
-3.  Reinicie o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Reinicie o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 ## <a name="see-also"></a>Consulte também  
  [Definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md)   

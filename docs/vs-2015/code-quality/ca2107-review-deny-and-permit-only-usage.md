@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 425a7363e03dcc8a967853bbe574f29678df11a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7de14898c5fb2bb6f8e95a2af5fd6b39a54cdb1d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924966"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082146"
 ---
 # <a name="ca2107-review-deny-and-permit-only-usage"></a>CA2107: Examinar uso de deny e permit only
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,15 +42,15 @@ ms.locfileid: "58924966"
 
  Código que depende dessas ações deve ser avaliado cuidadosamente para vulnerabilidades de segurança devido à sua utilidade limitada e comportamento sutil. Considere o seguinte:
 
--   [Demandas de link](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) não são afetados por Deny ou PermitOnly.
+- [Demandas de link](http://msdn.microsoft.com/library/a33fd5f9-2de9-4653-a4f0-d9df25082c4d) não são afetados por Deny ou PermitOnly.
 
--   Se o Deny ou PermitOnly ocorre no quadro de pilha como a demanda que faz com que a movimentação da pilha, as ações de segurança não terão efeito.
+- Se o Deny ou PermitOnly ocorre no quadro de pilha como a demanda que faz com que a movimentação da pilha, as ações de segurança não terão efeito.
 
--   Valores que são usados para construir as permissões com base em caminho geralmente podem ser especificados de várias maneiras. Negar acesso a um formulário do caminho não nega acesso a todas as formas. Por exemplo, se um compartilhamento de arquivos \\\Server\Share é mapeado para uma unidade de rede x, para negar acesso a um arquivo no compartilhamento, você deve negar \\\Server\Share\File, X:\File e todos os caminhos que acessa o arquivo.
+- Valores que são usados para construir as permissões com base em caminho geralmente podem ser especificados de várias maneiras. Negar acesso a um formulário do caminho não nega acesso a todas as formas. Por exemplo, se um compartilhamento de arquivos \\\Server\Share é mapeado para uma unidade de rede x, para negar acesso a um arquivo no compartilhamento, você deve negar \\\Server\Share\File, X:\File e todos os caminhos que acessa o arquivo.
 
--   Um <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> podem encerrar uma movimentação de pilha antes de atingir o Deny ou PermitOnly.
+- Um <xref:System.Security.CodeAccessPermission.Assert%2A?displayProperty=fullName> podem encerrar uma movimentação de pilha antes de atingir o Deny ou PermitOnly.
 
--   Se um Deny tem qualquer efeito, ou seja, quando um chamador tiver uma permissão que está bloqueada por Deny, o chamador pode acessar o recurso protegido diretamente, ignorando a negar. Da mesma forma, se o chamador não tem a permissão negada, a movimentação da pilha falhará sem a negar.
+- Se um Deny tem qualquer efeito, ou seja, quando um chamador tiver uma permissão que está bloqueada por Deny, o chamador pode acessar o recurso protegido diretamente, ignorando a negar. Da mesma forma, se o chamador não tem a permissão negada, a movimentação da pilha falhará sem a negar.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Qualquer uso das seguintes ações de segurança fará com que uma violação. Para corrigir uma violação, não use essas ações de segurança.

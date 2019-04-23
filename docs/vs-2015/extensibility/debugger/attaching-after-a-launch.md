@@ -10,12 +10,12 @@ ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b1f39297c4e87b7d4801b786ca2132acaf366fd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71b26fc2d26e180af25919dde5d3c4ee1bc1f891
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929347"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113112"
 ---
 # <a name="attaching-after-a-launch"></a>Anexando após uma inicialização
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ Depois que um programa tiver sido iniciado, a sessão de depuração está pront
 ## <a name="design-decisions"></a>Decisões de design  
  Porque a comunicação é mais fácil dentro de um espaço de endereço compartilhado, você deve decidir se faz mais sentido para facilitar a comunicação entre a sessão de depuração e o DE ou entre a Alemanha e o programa. Escolha entre os seguintes:  
   
--   Se faz mais sentido para facilitar a comunicação entre a sessão de depuração e o DE, a sessão de depuração cria conjunta DE e solicita que o DE anexar ao programa. Isso deixa a sessão de depuração e DE juntos em um espaço de endereço e o ambiente de tempo de execução e o programa juntos em outro.  
+- Se faz mais sentido para facilitar a comunicação entre a sessão de depuração e o DE, a sessão de depuração cria conjunta DE e solicita que o DE anexar ao programa. Isso deixa a sessão de depuração e DE juntos em um espaço de endereço e o ambiente de tempo de execução e o programa juntos em outro.  
   
--   Se faz mais sentido para facilitar a comunicação entre a Alemanha e o programa, o ambiente de tempo de execução conjunta cria o DE. Isso deixa o SDM em um espaço de endereço, Alemanha, o ambiente de tempo de execução e o programa juntos em outro. Isso é típico de a DE que é implementada com um interpretador executar linguagens de script.  
+- Se faz mais sentido para facilitar a comunicação entre a Alemanha e o programa, o ambiente de tempo de execução conjunta cria o DE. Isso deixa o SDM em um espaço de endereço, Alemanha, o ambiente de tempo de execução e o programa juntos em outro. Isso é típico de a DE que é implementada com um interpretador executar linguagens de script.  
   
     > [!NOTE]
     >  Como o DE anexa ao programa é dependente de implementação. Comunicação entre a Alemanha e o programa também é dependente da implementação.  

@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d143bd6ea48150ec8a2515eafc016786a8d3e33e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 2d14077ff7547a1b8009ce6621c111174c582a5c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665123"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095029"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,9 +124,9 @@ Visual Studio fornece ferramentas para trabalhar com o Windows Communication Fou
 
 #### <a name="to-select-a-service-endpoint"></a>Para selecionar um ponto de extremidade de serviço
 
-1.  Adicione uma referência a um serviço WCF clicando duas vezes no nó do projeto no Gerenciador de soluções e escolhendo **adicionar referência de serviço**
+1. Adicione uma referência a um serviço WCF clicando duas vezes no nó do projeto no Gerenciador de soluções e escolhendo **adicionar referência de serviço**
 
-2.  No Editor de códigos, adicione um construtor para a referência de serviço:
+2. No Editor de códigos, adicione um construtor para a referência de serviço:
 
     ```vb
     Dim proxy As New ServiceReference.Service1Client(
@@ -139,24 +139,24 @@ Visual Studio fornece ferramentas para trabalhar com o Windows Communication Fou
     > [!NOTE]
     >  Substitua *ServiceReference* com o namespace para a referência de serviço e a substituição *Service1Client* com o nome do serviço.
 
-3.  Uma lista do IntelliSense será exibida com as sobrecargas do construtor. Selecione o `endpointConfigurationName As String` de sobrecarga.
+3. Uma lista do IntelliSense será exibida com as sobrecargas do construtor. Selecione o `endpointConfigurationName As String` de sobrecarga.
 
-4.  Após a sobrecarga, digite `=` *ConfigurationName*, onde *ConfigurationName* é o nome do ponto de extremidade que você deseja usar.
+4. Após a sobrecarga, digite `=` *ConfigurationName*, onde *ConfigurationName* é o nome do ponto de extremidade que você deseja usar.
 
     > [!NOTE]
     >  Se você não souber os nomes dos pontos de extremidade disponíveis, você pode encontrá-los no arquivo App. config.
 
 #### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Para localizar pontos de extremidade disponíveis para um serviço WCF
 
-1.  Na **Gerenciador de soluções**, clique no arquivo App. config para o projeto que contém a referência de serviço e, em seguida, clique em **abrir**. O arquivo será exibido no Editor de códigos.
+1. Na **Gerenciador de soluções**, clique no arquivo App. config para o projeto que contém a referência de serviço e, em seguida, clique em **abrir**. O arquivo será exibido no Editor de códigos.
 
-2.  Pesquise o `<Client>` marca no arquivo.
+2. Pesquise o `<Client>` marca no arquivo.
 
-3.  Pesquisar sob o `<Client>` marca para uma marca que começa com `<Endpoint>`.
+3. Pesquisar sob o `<Client>` marca para uma marca que começa com `<Endpoint>`.
 
      Se a referência de serviço fornece vários pontos de extremidade, haverá duas ou mais `<Endpoint` marcas.
 
-4.  Dentro de `<EndPoint>` marca, você encontrará uma `name="` *SomeService* `"` parâmetro (onde *SomeService* representa um nome de ponto de extremidade). Esse é o nome para o ponto de extremidade que pode ser passado para o `endpointConfigurationName As String` sobrecarga de um construtor para uma referência de serviço.
+4. Dentro de `<EndPoint>` marca, você encontrará uma `name="` *SomeService* `"` parâmetro (onde *SomeService* representa um nome de ponto de extremidade). Esse é o nome para o ponto de extremidade que pode ser passado para o `endpointConfigurationName As String` sobrecarga de um construtor para uma referência de serviço.
 
 ## <a name="how-to-call-a-service-method-asynchronously"></a>Como: Chamar um método de serviço de forma assíncrona
  A maioria dos métodos em serviços Windows Communication Foundation (WCF) pode ser chamado de forma síncrona ou assíncrona. Chamando um método de forma assíncrona permite que seu aplicativo para continuar trabalhando enquanto o método está sendo chamado quando ele opera sobre uma conexão lenta.
@@ -170,42 +170,42 @@ Visual Studio fornece ferramentas para trabalhar com o Windows Communication Fou
 
 #### <a name="to-call-a-service-method-asynchronously"></a>Para chamar um método de serviço de forma assíncrona
 
-1.  Na **Gerenciador de soluções**, selecione a referência de serviço.
+1. Na **Gerenciador de soluções**, selecione a referência de serviço.
 
-2.  Sobre o **Project** menu, clique em **Configure Service Reference**.
+2. Sobre o **Project** menu, clique em **Configure Service Reference**.
 
-3.  No **Configure Service Reference** caixa de diálogo, selecione o **gerar operações assíncronas** caixa de seleção.
+3. No **Configure Service Reference** caixa de diálogo, selecione o **gerar operações assíncronas** caixa de seleção.
 
 ## <a name="how-to-bind-data-returned-by-a-service"></a>Como: Associar dados retornados por um serviço
  Você pode associar os dados retornados por um serviço do Windows Communication Foundation (WCF) a um controle, assim como você pode vincular qualquer outra fonte de dados a um controle. Quando você adiciona uma referência a um serviço WCF, se o serviço contiver tipos compostos que retornam dados, eles são adicionados automaticamente para o **fontes de dados** janela.
 
 #### <a name="to-bind-a-control-to-single-data-field-returned-by-a-wcf-service"></a>Para associar um controle a único campo de dados retornado por um serviço WCF
 
-1.  No menu **Dados**, clique em **Mostrar Fontes de Dados**. O **fontes de dados** janela será exibida.
+1. No menu **Dados**, clique em **Mostrar Fontes de Dados**. O **fontes de dados** janela será exibida.
 
-2.  No **fontes de dados** janela, expanda o nó para sua referência de serviço. Quaisquer tipos compostos retornados pelo serviço serão exibidos.
+2. No **fontes de dados** janela, expanda o nó para sua referência de serviço. Quaisquer tipos compostos retornados pelo serviço serão exibidos.
 
-3.  Expanda um nó para um tipo. Os campos de dados para esse tipo serão exibidos.
+3. Expanda um nó para um tipo. Os campos de dados para esse tipo serão exibidos.
 
-4.  Selecione um campo e clique na seta suspensa para exibir uma lista de controles que estão disponíveis para o tipo de dados.
+4. Selecione um campo e clique na seta suspensa para exibir uma lista de controles que estão disponíveis para o tipo de dados.
 
-5.  Clique no tipo de controle que você deseja associar.
+5. Clique no tipo de controle que você deseja associar.
 
-6.  Arraste o campo um formulário. O controle será adicionado ao formulário junto com um <xref:System.Windows.Forms.BindingSource> componente e um <xref:System.Windows.Forms.BindingNavigator> componente.
+6. Arraste o campo um formulário. O controle será adicionado ao formulário junto com um <xref:System.Windows.Forms.BindingSource> componente e um <xref:System.Windows.Forms.BindingNavigator> componente.
 
-7.  Repita as etapas 4, embora a 6 para todos os outros campos que você deseja associar.
+7. Repita as etapas 4, embora a 6 para todos os outros campos que você deseja associar.
 
 #### <a name="to-bind-a-control-to-composite-type-returned-by-a-wcf-service"></a>Para associar um controle a tipo composto retornado por um serviço WCF
 
-1.  Sobre o **dados** menu, selecione **Show Data Sources**. O **fontes de dados** janela será exibida.
+1. Sobre o **dados** menu, selecione **Show Data Sources**. O **fontes de dados** janela será exibida.
 
-2.  No **fontes de dados** janela, expanda o nó para sua referência de serviço. Quaisquer tipos compostos retornados pelo serviço serão exibidos.
+2. No **fontes de dados** janela, expanda o nó para sua referência de serviço. Quaisquer tipos compostos retornados pelo serviço serão exibidos.
 
-3.  Selecione um nó para um tipo e clique na seta suspensa para exibir uma lista das opções disponíveis.
+3. Selecione um nó para um tipo e clique na seta suspensa para exibir uma lista das opções disponíveis.
 
-4.  Clique em **DataGridView** para exibir os dados em uma grade ou **detalhes** para exibir os dados em controles individuais.
+4. Clique em **DataGridView** para exibir os dados em uma grade ou **detalhes** para exibir os dados em controles individuais.
 
-5.  Arraste o nó para o formulário. Os controles serão adicionados ao formulário junto com um <xref:System.Windows.Forms.BindingSource> componente e um <xref:System.Windows.Forms.BindingNavigator> componente.
+5. Arraste o nó para o formulário. Os controles serão adicionados ao formulário junto com um <xref:System.Windows.Forms.BindingSource> componente e um <xref:System.Windows.Forms.BindingNavigator> componente.
 
 ## <a name="how-to-configure-a-service-to-reuse-existing-types"></a>Como: Configurar um serviço para reutilizar os tipos existentes
  Quando uma referência de serviço é adicionada a um projeto, quaisquer tipos definidos no serviço são gerados no projeto local. Em muitos casos, isso cria tipos duplicados quando usa um serviço comum [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] tipos ou quando os tipos são definidos em uma biblioteca compartilhada.
@@ -214,21 +214,21 @@ Visual Studio fornece ferramentas para trabalhar com o Windows Communication Fou
 
 #### <a name="to-disable-type-sharing-in-a-single-assembly"></a>Para desabilitar o compartilhamento de tipo em um único assembly
 
-1.  Na **Gerenciador de soluções**, selecione a referência de serviço.
+1. Na **Gerenciador de soluções**, selecione a referência de serviço.
 
-2.  Sobre o **Project** menu, clique em **Configure Service Reference**.
+2. Sobre o **Project** menu, clique em **Configure Service Reference**.
 
-3.  No **configurar referências de serviço** caixa de diálogo, selecione **reutilizar os tipos em assemblies referenciados especificados**.
+3. No **configurar referências de serviço** caixa de diálogo, selecione **reutilizar os tipos em assemblies referenciados especificados**.
 
-4.  Marque a caixa de seleção para cada assembly no qual você deseja habilitar o compartilhamento de tipo. Para desabilitar o compartilhamento para um assembly de tipo, deixe a caixa de seleção desmarcada.
+4. Marque a caixa de seleção para cada assembly no qual você deseja habilitar o compartilhamento de tipo. Para desabilitar o compartilhamento para um assembly de tipo, deixe a caixa de seleção desmarcada.
 
 #### <a name="to-disable-type-sharing-in-all-assemblies"></a>Para desabilitar o compartilhamento de tipo em todos os assemblies
 
-1.  Na **Gerenciador de soluções**, selecione a referência de serviço.
+1. Na **Gerenciador de soluções**, selecione a referência de serviço.
 
-2.  Sobre o **Project** menu, clique em **Configure Service Reference**.
+2. Sobre o **Project** menu, clique em **Configure Service Reference**.
 
-3.  No **configurar referências de serviço** caixa de diálogo, desmarque a **reutilizar os tipos em assemblies referenciados** caixa de seleção.
+3. No **configurar referências de serviço** caixa de diálogo, desmarque a **reutilizar os tipos em assemblies referenciados** caixa de seleção.
 
 ## <a name="related-topics"></a>Tópicos relacionados
 

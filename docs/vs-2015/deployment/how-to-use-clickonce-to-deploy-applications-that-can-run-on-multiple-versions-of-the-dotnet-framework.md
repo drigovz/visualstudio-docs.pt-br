@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ec809e8733542e2e3c00ec11c15666d0d1c34b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 95bd19ffaf966b74e66f08c4a49c5c60658002f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929704"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095471"
 ---
 # <a name="how-to-use-clickonce-to-deploy-applications-that-can-run-on-multiple-versions-of-the-net-framework"></a>Como: Usar o ClickOnce para implantar aplicativos que podem ser executados em várias versões do .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,27 +34,27 @@ Você pode implantar um aplicativo destinado a várias versões do .NET Framewor
   
  Esse processo exige as seguintes etapas:  
   
-1.  Gere os manifestos de aplicativo e implantação.  
+1. Gere os manifestos de aplicativo e implantação.  
   
-2.  Altere o manifesto de implantação para listar as várias versões do .NET Framework.  
+2. Altere o manifesto de implantação para listar as várias versões do .NET Framework.  
   
-3.  Altere o arquivo App. config para listar as versões compatíveis do tempo de execução do .NET Framework.  
+3. Altere o arquivo App. config para listar as versões compatíveis do tempo de execução do .NET Framework.  
   
-4.  Altere o manifesto do aplicativo para marcar os assemblies dependentes como assemblies do .NET Framework.  
+4. Altere o manifesto do aplicativo para marcar os assemblies dependentes como assemblies do .NET Framework.  
   
-5.  Assine o manifesto do aplicativo.  
+5. Assine o manifesto do aplicativo.  
   
-6.  Atualizar e assinar o manifesto de implantação.  
+6. Atualizar e assinar o manifesto de implantação.  
   
 ### <a name="to-generate-the-application-and-deployment-manifests"></a>Para gerar os manifestos de aplicativo e implantação  
   
--   Use o Assistente de publicação ou a página de publicação do Project Designer para publicar o aplicativo e gerar o aplicativo e os arquivos de manifesto de implantação. Para obter mais informações, confira [Como: Publicar um aplicativo ClickOnce usando o Assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) ou [página de publicação, Designer de projeto](../ide/reference/publish-page-project-designer.md).  
+- Use o Assistente de publicação ou a página de publicação do Project Designer para publicar o aplicativo e gerar o aplicativo e os arquivos de manifesto de implantação. Para obter mais informações, confira [Como: Publicar um aplicativo ClickOnce usando o Assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md) ou [página de publicação, Designer de projeto](../ide/reference/publish-page-project-designer.md).  
   
 ### <a name="to-change-the-deployment-manifest-to-list-the-multiple-net-framework-versions"></a>Para alterar o manifesto de implantação para listar as várias versões do .NET Framework  
   
-1.  No diretório de publicação, abra o manifesto de implantação usando o Editor de XML no Visual Studio. O manifesto de implantação tem a extensão de nome de arquivo. Application.  
+1. No diretório de publicação, abra o manifesto de implantação usando o Editor de XML no Visual Studio. O manifesto de implantação tem a extensão de nome de arquivo. Application.  
   
-2.  Substitua o código XML entre o `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` e `</compatibleFrameworks>` elementos com XML que lista as versões do .NET Framework com suporte para o seu aplicativo.  
+2. Substitua o código XML entre o `<compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">` e `</compatibleFrameworks>` elementos com XML que lista as versões do .NET Framework com suporte para o seu aplicativo.  
   
      A tabela a seguir mostra algumas das versões do .NET Framework disponíveis e o XML correspondente que você pode adicionar ao manifesto de implantação.  
   
@@ -68,9 +68,9 @@ Você pode implantar um aplicativo destinado a várias versões do .NET Framewor
   
 ### <a name="to-change-the-appconfig-file-to-list-the-compatible-net-framework-runtime-versions"></a>Para alterar o arquivo App. config para listar as versões de tempo de execução do .NET Framework compatíveis  
   
-1.  No Gerenciador de soluções, abra o arquivo App. config usando o Editor de XML no Visual Studio.  
+1. No Gerenciador de soluções, abra o arquivo App. config usando o Editor de XML no Visual Studio.  
   
-2.  Substituir (ou adicione) o código XML entre o `<startup>` e `</startup>` elementos com XML que lista os tempos de execução do .NET Framework com suporte para o seu aplicativo.  
+2. Substituir (ou adicione) o código XML entre o `<startup>` e `</startup>` elementos com XML que lista os tempos de execução do .NET Framework com suporte para o seu aplicativo.  
   
      A tabela a seguir mostra algumas das versões do .NET Framework disponíveis e o XML correspondente que você pode adicionar ao manifesto de implantação.  
   
@@ -83,15 +83,15 @@ Você pode implantar um aplicativo destinado a várias versões do .NET Framewor
   
 ### <a name="to-change-the-application-manifest-to-mark-dependent-assemblies-as-net-framework-assemblies"></a>Para alterar o manifesto do aplicativo para marcar os assemblies dependentes como assemblies do .NET Framework  
   
-1.  No diretório de publicação, abra o manifesto do aplicativo usando o Editor de XML no Visual Studio. O manifesto de implantação tem a extensão de nome de arquivo. manifest.  
+1. No diretório de publicação, abra o manifesto do aplicativo usando o Editor de XML no Visual Studio. O manifesto de implantação tem a extensão de nome de arquivo. manifest.  
   
-2.  Adicione `group="framework"` para a dependência de XML para os assemblies de sentinela (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, e `System.Data.Entity`). Por exemplo, o XML deve ser semelhante ao seguinte:  
+2. Adicione `group="framework"` para a dependência de XML para os assemblies de sentinela (`System.Core`, `WindowsBase`, `Sentinel.v3.5Client`, e `System.Data.Entity`). Por exemplo, o XML deve ser semelhante ao seguinte:  
   
     ```  
     <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true" group="framework">  
     ```  
   
-3.  Atualizar o número de versão a `<assemblyIdentity>` elemento para Microsoft.Windows.CommonLanguageRuntime ao número de versão para o .NET Framework que é o menor denominador comum. Por exemplo, se o aplicativo for destinado ao .NET Framework 3.5 e [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)], use o 2.0.50727.0 número de versão e o XML devem ser semelhante ao seguinte:  
+3. Atualizar o número de versão a `<assemblyIdentity>` elemento para Microsoft.Windows.CommonLanguageRuntime ao número de versão para o .NET Framework que é o menor denominador comum. Por exemplo, se o aplicativo for destinado ao .NET Framework 3.5 e [!INCLUDE[net_v40_short](../includes/net-v40-short-md.md)], use o 2.0.50727.0 número de versão e o XML devem ser semelhante ao seguinte:  
   
     ```  
     <dependency>  
@@ -103,7 +103,7 @@ Você pode implantar um aplicativo destinado a várias versões do .NET Framewor
   
 ### <a name="to-update-and-re-sign-the-application-and-deployment-manifests"></a>Para atualizar e assinar novamente o aplicativo e a implantação manifestos  
   
--   Atualizar e assinar novamente os manifestos de aplicativo e implantação. Para obter mais informações, confira [Como: Assinar novamente os manifestos de aplicativo e implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+- Atualizar e assinar novamente os manifestos de aplicativo e implantação. Para obter mais informações, confira [Como: Assinar novamente os manifestos de aplicativo e implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   

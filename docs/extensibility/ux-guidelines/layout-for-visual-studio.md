@@ -8,27 +8,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dc9c53055c31e8cfbedb089b48eda4274fe8b9a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e35cb321772354de29b7b8466b6136c96cabf98d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683396"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081873"
 ---
 # <a name="layout-for-visual-studio"></a>Layout para o Visual Studio
 A maioria das caixas de diálogo do Visual Studio estão [layout de caixa de diálogo do utilitário](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout), que são o unthemed esse padrão de acompanhamento de caixas de diálogo [princípios de layout de caixa de diálogo de área de trabalho do Windows](/windows/desktop/uxguide/win-dialog-box). Como o Visual Studio moverá atualizar sua interface do usuário, algumas das caixas de diálogo mais proeminentes têm um novo design que estabelece a eles como definição de produto experiências. Eles [layout da caixa de diálogo com tema](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) têm uma aparência com tema.
 
-##  <a name="BKMK_UtilityDialogLayout"></a> Layout da caixa de diálogo de utilitário
+## <a name="BKMK_UtilityDialogLayout"></a> Layout da caixa de diálogo de utilitário
 
--   Todos os controles dentro de uma caixa de diálogo do utilitário devem começar na parte superior/esquerda e para baixo de fluxo.
+- Todos os controles dentro de uma caixa de diálogo do utilitário devem começar na parte superior/esquerda e para baixo de fluxo.
 
--   Nunca center controles em uma caixa de diálogo para preencher uma grande área.
+- Nunca center controles em uma caixa de diálogo para preencher uma grande área.
 
--   Use a fonte de ambiente para todo o texto de caixa de diálogo. Ao escrever uma especificação de visual, especifica a fonte de ambiente em vez de selecionar uma fonte específica e tamanho. Ver [a fonte de ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
+- Use a fonte de ambiente para todo o texto de caixa de diálogo. Ao escrever uma especificação de visual, especifica a fonte de ambiente em vez de selecionar uma fonte específica e tamanho. Ver [a fonte de ambiente](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TheEnvironmentFont).
 
--   Para usar espaçamento de controle consistente e posicionamento para dar suporte a meta para qualidade na habilidade.
+- Para usar espaçamento de controle consistente e posicionamento para dar suporte a meta para qualidade na habilidade.
 
--   Caixas de diálogo podem se tornar mais complexas de um grande número de controles, um juxtaposition exclusivo dos controles ou ambos. Essas situações complexas, permitir espaço suficiente entre os agrupamentos de controle para dar ao usuário um fluxo lógico para analisar.
+- Caixas de diálogo podem se tornar mais complexas de um grande número de controles, um juxtaposition exclusivo dos controles ou ambos. Essas situações complexas, permitir espaço suficiente entre os agrupamentos de controle para dar ao usuário um fluxo lógico para analisar.
 
 ### <a name="utility-dialog-layout-examples"></a>Exemplos de layout de caixa de diálogo de utilitário
  Todas as dimensões são expressas em pixels.
@@ -45,11 +45,11 @@ A maioria das caixas de diálogo do Visual Studio estão [layout de caixa de di�
 
 #### <a name="margins"></a>Margens
 
--   Todas as caixas de diálogo devem ter uma borda de 12 pixels ao redor de todas as bordas.
+- Todas as caixas de diálogo devem ter uma borda de 12 pixels ao redor de todas as bordas.
 
--   Margens de um quadro de grupo devem ser 9 pixels da borda do quadro.
+- Margens de um quadro de grupo devem ser 9 pixels da borda do quadro.
 
--   Margens de um controle guia devem ser 6 pixels da borda do controle guia.
+- Margens de um controle guia devem ser 6 pixels da borda do controle guia.
 
 #### <a name="command-buttons"></a>Botões de comando
 
@@ -69,13 +69,13 @@ A maioria das caixas de diálogo do Visual Studio estão [layout de caixa de di�
 
 #### <a name="labels"></a>Rótulos
 
--   Alinhar à esquerda todos os rótulos.
+- Alinhar à esquerda todos os rótulos.
 
--   Para rótulos que ficam acima de um controle, eles devem Alinhar à esquerda precisamente com o controle abaixo dele e a parte inferior do rótulo deve ser 5 pixels acima da parte superior de outro controle (por exemplo, uma caixa de combinação).
+- Para rótulos que ficam acima de um controle, eles devem Alinhar à esquerda precisamente com o controle abaixo dele e a parte inferior do rótulo deve ser 5 pixels acima da parte superior de outro controle (por exemplo, uma caixa de combinação).
 
--   Para rótulos que ficam à esquerda dos controles, a largura mínima entre o rótulo e o controle de entrada é de 10 pixels. Uma segunda coluna implícita deve ser estabelecida para alinhar as caixas de texto, caixas de combinação ou outros controles.
+- Para rótulos que ficam à esquerda dos controles, a largura mínima entre o rótulo e o controle de entrada é de 10 pixels. Uma segunda coluna implícita deve ser estabelecida para alinhar as caixas de texto, caixas de combinação ou outros controles.
 
--   Rótulos diferenciam maiusculas de minúsculas e são seguidos por dois-pontos. Ver [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- Rótulos diferenciam maiusculas de minúsculas e são seguidos por dois-pontos. Ver [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
 #### <a name="distance-between-controls"></a>Distância entre os controles
  Controles de pilha razoavelmente. Não há nenhuma diretriz absoluto para o espaçamento entre controles de gráfico empilhados. Abruptas entre os controles podem variar ligeiramente entre as caixas de diálogo. O espaçamento recomendado é 20 pixels para um controle vertical/pares e 9 pixels para um controle horizontal/pares. O espaçamento mínimo do controle para pares horizontais é 6 pixels.
@@ -96,11 +96,11 @@ A maioria das caixas de diálogo do Visual Studio estão [layout de caixa de di�
 
 #### <a name="helper-text"></a>Texto de auxiliar
 
--   Uma caixa de diálogo pode exibir o texto de auxiliar que fornece mais informações sobre a finalidade da caixa de diálogo. Isso normalmente fica na parte superior e pode ser frases de 1 a 2.
+- Uma caixa de diálogo pode exibir o texto de auxiliar que fornece mais informações sobre a finalidade da caixa de diálogo. Isso normalmente fica na parte superior e pode ser frases de 1 a 2.
 
--   O comprimento da linha deve ser uma largura à vontade para um usuário analisar e ler. Uma caixa de diálogo médio deve ser não mais do que 550 pixels de largura.
+- O comprimento da linha deve ser uma largura à vontade para um usuário analisar e ler. Uma caixa de diálogo médio deve ser não mais do que 550 pixels de largura.
 
-####  <a name="BKMK_InteriorCommandButtons"></a> Botões de comando interior
+#### <a name="BKMK_InteriorCommandButtons"></a> Botões de comando interior
  Caixas de diálogo mais complexos, um controle interno pode ter seus próprios botões relacionados, que podem afetar onde se encontram botões de confirmação da caixa de diálogo.
 
 - Use um alinhamento vertical (coluna) do interior botões quando **Okey**/**Cancelar** são orientado horizontalmente no canto inferior direito.
@@ -120,22 +120,22 @@ A maioria das caixas de diálogo do Visual Studio estão [layout de caixa de di�
 #### <a name="browse-button"></a>[Procurar...] botão
  **[Procurar...]**  botões que seguem uma caixa de texto devem esclarecer "Procurar..." por completo, incluindo o botão de reticências. Se o espaço é forte ou haja diversas **[procurar...]**  botões na tela, o botão podem ser reduzido para apenas o botão de reticências.
 
-##  <a name="BKMK_ThemedDialogLayout"></a> Layout da caixa de diálogo com temas
+## <a name="BKMK_ThemedDialogLayout"></a> Layout da caixa de diálogo com temas
  As caixas de diálogo com temas no Visual Studio têm uma aparência mais clara e oferecem mais espaço em branco. Tipografia fornece mais ênfase e juros, oferecendo mais aberto de espaçamento entre linhas e uma variação de tamanhos de fonte e pesos. Sempre que possível, as barras de título e chrome foram reduzidas ou removidas. O layout dessas caixas de diálogo deve seguir esse padrão básico:
 
-1.  O plano de fundo da caixa de diálogo é branco.
+1. O plano de fundo da caixa de diálogo é branco.
 
-2.  Há uma borda da regra 1 pixel em um valor intermediário cinza.
+2. Há uma borda da regra 1 pixel em um valor intermediário cinza.
 
-3.  O título da caixa de diálogo não reside em uma barra de título, mas fornece interesse visual e ênfase em um tamanho maior de ponto. (Consulte a seção de tamanho de fonte no [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).)
+3. O título da caixa de diálogo não reside em uma barra de título, mas fornece interesse visual e ênfase em um tamanho maior de ponto. (Consulte a seção de tamanho de fonte no [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).)
 
-4.  Juntamente com o texto adicional, como uma descrição de rótulos devem ser **fonte de ambiente + negrito**.
+4. Juntamente com o texto adicional, como uma descrição de rótulos devem ser **fonte de ambiente + negrito**.
 
-5.  Interiores colunas são separadas por uma regra de 1 pixel em cinza claro.
+5. Interiores colunas são separadas por uma regra de 1 pixel em cinza claro.
 
-6.  Links de padrão têm sem sublinhado. Passe o mouse e os estados pressionados tem uma alteração de cor mais o sublinhado.
+6. Links de padrão têm sem sublinhado. Passe o mouse e os estados pressionados tem uma alteração de cor mais o sublinhado.
 
-7.  Botões de confirmação (como **Okey**/**Cancelar**) ficam no canto inferior direito.
+7. Botões de confirmação (como **Okey**/**Cancelar**) ficam no canto inferior direito.
 
 ### <a name="themed-dialog-layout-examples"></a>Exemplos de layout de caixa de diálogo com temas
  ![Layout da caixa de diálogo com tema](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801 h_ThemedDialog")

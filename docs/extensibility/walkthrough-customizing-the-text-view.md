@@ -10,38 +10,38 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e831136014a47052d8d16b5127765cafbf13b785
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fc0214ed8327354dc3662f039d33d032148f9437
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56697462"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083732"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>Passo a passo: Personalizar a exibição de texto
 Você pode personalizar uma exibição de texto por meio da modificação de qualquer uma das seguintes propriedades em seu mapa de formatação do editor:
 
--   Margem de indicadores
+- Margem de indicadores
 
--   Cursor de inserção
+- Cursor de inserção
 
--   Cursor de substituição
+- Cursor de substituição
 
--   Texto selecionado
+- Texto selecionado
 
--   Texto selecionado inativo (ou seja, texto selecionado que perdeu o foco)
+- Texto selecionado inativo (ou seja, texto selecionado que perdeu o foco)
 
--   Espaço em branco visível
+- Espaço em branco visível
 
 ## <a name="prerequisites"></a>Pré-requisitos
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ela está incluída como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).
 
 ## <a name="create-a-mef-project"></a>Criar um projeto MEF
 
-1.  Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual c# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `ViewPropertyTest`.
+1. Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual c# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `ViewPropertyTest`.
 
-2.  Adicione um modelo de item de classificação de Editor para o projeto. Para obter mais informações, consulte [criar uma extensão com um modelo de item editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
+2. Adicione um modelo de item de classificação de Editor para o projeto. Para obter mais informações, consulte [criar uma extensão com um modelo de item editor](../extensibility/creating-an-extension-with-an-editor-item-template.md).
 
-3.  Exclua os arquivos de classe existentes.
+3. Exclua os arquivos de classe existentes.
 
 ## <a name="define-the-content-type"></a>Definir o tipo de conteúdo
 
@@ -68,28 +68,28 @@ Você pode personalizar uma exibição de texto por meio da modificação de qua
 
 ## <a name="change-the-view-properties"></a>Alterar as propriedades de exibição
 
-1.  Configurar o <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> método para que as propriedades de exibição são alteradas quando o modo de exibição é aberto. Para fazer a alteração, primeiro localize a <xref:System.Windows.ResourceDictionary> que corresponde ao aspecto do modo de exibição que você deseja localizar. Em seguida, altere a propriedade apropriada no dicionário de recursos e definir as propriedades. Em lote as chamadas para o <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> método chamando o <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> método antes de definir as propriedades e, em seguida, o <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> depois de definir as propriedades.
+1. Configurar o <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> método para que as propriedades de exibição são alteradas quando o modo de exibição é aberto. Para fazer a alteração, primeiro localize a <xref:System.Windows.ResourceDictionary> que corresponde ao aspecto do modo de exibição que você deseja localizar. Em seguida, altere a propriedade apropriada no dicionário de recursos e definir as propriedades. Em lote as chamadas para o <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.SetProperties%2A> método chamando o <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.BeginBatchUpdate%2A> método antes de definir as propriedades e, em seguida, o <xref:Microsoft.VisualStudio.Text.Classification.IEditorFormatMap.EndBatchUpdate%2A> depois de definir as propriedades.
 
      [!code-csharp[VSSDKViewPropertyTest#4](../extensibility/codesnippet/CSharp/walkthrough-customizing-the-text-view_4.cs)]
      [!code-vb[VSSDKViewPropertyTest#4](../extensibility/codesnippet/VisualBasic/walkthrough-customizing-the-text-view_4.vb)]
 
 ## <a name="build-and-test-the-code"></a>Compilar e testar o código
 
-1.  Compile a solução.
+1. Compile a solução.
 
      Quando você executar esse projeto no depurador, uma segunda instância do Visual Studio é iniciada.
 
-2.  Crie um arquivo de texto e digite algum texto.
+2. Crie um arquivo de texto e digite algum texto.
 
-    -   O cursor de inserção deve ser magenta e o cursor de substituição deve ser turquesa.
+    - O cursor de inserção deve ser magenta e o cursor de substituição deve ser turquesa.
 
-    -   A margem de indicadores (à esquerda da exibição de texto) deve ser uma luz verde.
+    - A margem de indicadores (à esquerda da exibição de texto) deve ser uma luz verde.
 
-3.  Selecione o texto digitado. A cor do texto selecionado deve ser luz rosa.
+3. Selecione o texto digitado. A cor do texto selecionado deve ser luz rosa.
 
-4.  Enquanto o texto estiver selecionado, clique em qualquer lugar fora da janela de texto. A cor do texto selecionado deve ser rosa-escuro.
+4. Enquanto o texto estiver selecionado, clique em qualquer lugar fora da janela de texto. A cor do texto selecionado deve ser rosa-escuro.
 
-5.  Ative o espaço em branco visível. (Sobre o **edite** , aponte para **avançado** e, em seguida, clique em **exibir espaço em branco**). Digite o texto algumas guias. As setas vermelhas que representam as guias devem ser exibidas.
+5. Ative o espaço em branco visível. (Sobre o **edite** , aponte para **avançado** e, em seguida, clique em **exibir espaço em branco**). Digite o texto algumas guias. As setas vermelhas que representam as guias devem ser exibidas.
 
 ## <a name="see-also"></a>Consulte também
 - [Pontos de extensão de editor e o serviço de linguagem](../extensibility/language-service-and-editor-extension-points.md)

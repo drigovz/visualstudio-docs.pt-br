@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 97d8883ef22fc91b708726fddca60cf757e3d9a8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 139cdb0314783c76352cc499256fb89610354843
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610613"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083940"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook
   Criar uma região de formulário para estender um formulário personalizado ou padrão do Microsoft Office Outlook usando o **nova região de formulário do Outlook** assistente. Você pode criar uma nova região de formulário e projetar a interface do usuário no Visual Studio, ou você pode importar de uma região de formulário que foi projetada no Outlook e adicione o código do Visual Basic ou c#.
@@ -33,26 +33,26 @@ ms.locfileid: "56610613"
 
 ### <a name="to-add-a-new-form-region-to-an-outlook-project"></a>Para adicionar uma nova região de formulário a um projeto do Outlook
 
-1.  Abra ou crie um projeto de suplemento do VSTO do Outlook no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Abra ou crie um projeto de suplemento do VSTO do Outlook no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
-2.  Na **Gerenciador de soluções**, selecione o nó do projeto do suplemento do VSTO do Outlook.
+2. Na **Gerenciador de soluções**, selecione o nó do projeto do suplemento do VSTO do Outlook.
 
-3.  No menu **Projeto**, clique em **Adicionar Novo Item**.
+3. No menu **Projeto**, clique em **Adicionar Novo Item**.
 
-4.  No **Adicionar Novo Item** caixa de diálogo, selecione **região de formulário do Outlook**.
+4. No **Adicionar Novo Item** caixa de diálogo, selecione **região de formulário do Outlook**.
 
-5.  Digite um nome para a região do formulário na **nome** caixa e, em seguida, clique em **Add**.
+5. Digite um nome para a região do formulário na **nome** caixa e, em seguida, clique em **Add**.
 
      O **região do formulário NewOutlook** assistente é iniciado.
 
-6.  Sobre o **selecione como você deseja criar a região do formulário** , selecione se deseja criar a região do formulário. basta arrastar controles gerenciados em um designer visual ou importar uma região de formulário que foi projetada no Outlook.
+6. Sobre o **selecione como você deseja criar a região do formulário** , selecione se deseja criar a região do formulário. basta arrastar controles gerenciados em um designer visual ou importar uma região de formulário que foi projetada no Outlook.
 
     > [!NOTE]
     >  Se você optar por importar de uma região de formulário que foi projetada no Outlook e, em seguida, você deve especificar o local de um armazenamento de formulário do Outlook (*ofs*) arquivos. Você não pode adicionar controles gerenciados em uma região de formulário que você cria no Outlook; Você só pode adicionar o código por trás da interface do usuário existente. Para obter mais informações, consulte [regiões de formulário do Outlook criar](../vsto/creating-outlook-form-regions.md).
 
-7.  Sobre o **selecione o tipo da região de formulário que você deseja criar** página, examine os tipos de região de formulário, selecione um e, em seguida, clique em **próxima**. Para obter mais informações sobre os tipos de região de formulário, consulte [regiões de formulário do Outlook criar](../vsto/creating-outlook-form-regions.md).
+7. Sobre o **selecione o tipo da região de formulário que você deseja criar** página, examine os tipos de região de formulário, selecione um e, em seguida, clique em **próxima**. Para obter mais informações sobre os tipos de região de formulário, consulte [regiões de formulário do Outlook criar](../vsto/creating-outlook-form-regions.md).
 
-8.  Sobre o **fornecer um texto descritivo e selecionar suas preferências de exibição** página, o **nome** , digite um nome para a região do formulário. Para os tipos de região de formulário de substituir tudo, de substituição e o **Title** e **descrição** caixas também estão disponíveis.
+8. Sobre o **fornecer um texto descritivo e selecionar suas preferências de exibição** página, o **nome** , digite um nome para a região do formulário. Para os tipos de região de formulário de substituir tudo, de substituição e o **Title** e **descrição** caixas também estão disponíveis.
 
      Para obter informações sobre onde o nome, título e descrição aparecem no Outlook quando você implanta a região do formulário, consulte [regiões de formulário do Outlook criar](../vsto/creating-outlook-form-regions.md).
 

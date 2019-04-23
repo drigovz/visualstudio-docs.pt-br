@@ -13,12 +13,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 576b9a6890a6a6de398e917c1c152dcdb2f3ef16
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54c3bd854f824818d9656a33ccf30391f750a491
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929733"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080716"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>Como: Definir atributos CLR em um elemento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ Atributos personalizados são atributos especiais que podem ser adicionados a di
   
 ### <a name="to-add-a-custom-attribute"></a>Para adicionar um atributo personalizado  
   
-1.  No **Gerenciador de DSL**, selecione o elemento ao qual você deseja adicionar um atributo personalizado.  
+1. No **Gerenciador de DSL**, selecione o elemento ao qual você deseja adicionar um atributo personalizado.  
   
-2.  No **propriedades** janela, ao lado de **atributos personalizados** propriedade, clique no botão Procurar (**...** ) ícone.  
+2. No **propriedades** janela, ao lado de **atributos personalizados** propriedade, clique no botão Procurar (**...** ) ícone.  
   
      O **editar atributos** caixa de diálogo é aberta.  
   
-3.  No **nome** coluna, clique em  **\<Adicionar atributo >** e digite o nome do seu atributo. Pressione ENTER.  
+3. No **nome** coluna, clique em  **\<Adicionar atributo >** e digite o nome do seu atributo. Pressione ENTER.  
   
-4.  A linha sob o nome do atributo mostra parênteses. Nessa linha, digite um tipo de parâmetro para o atributo (por exemplo, `string`), e pressione ENTER.  
+4. A linha sob o nome do atributo mostra parênteses. Nessa linha, digite um tipo de parâmetro para o atributo (por exemplo, `string`), e pressione ENTER.  
   
-5.  No **nome da propriedade** coluna, digite um nome apropriado, por exemplo, `MyString`.  
+5. No **nome da propriedade** coluna, digite um nome apropriado, por exemplo, `MyString`.  
   
-6.  Clique em **OK**.  
+6. Clique em **OK**.  
   
      O **atributos personalizados** propriedade agora exibe o atributo no seguinte formato:  
   

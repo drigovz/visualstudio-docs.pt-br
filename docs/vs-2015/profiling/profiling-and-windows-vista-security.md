@@ -12,12 +12,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b5e82777b0d2f6134f99cabf42030943d4ea9a8a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fb95164642595195dc62166aec5c81f39abd33e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54772915"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104051"
 ---
 # <a name="profiling-and-windows-vista-security"></a>Criação de perfil e segurança do Windows Vista
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ Dependendo das configurações de Permissões de Acesso do Usuário do [!INCLUDE
   
  Você pode ver uma lista dos processos que estão disponíveis, definindo as opções de visibilidade de criação de perfil de processo cruzado. Essas opções estão disponíveis na janela **Anexar ao processo** que é exibida quando você clica em **Anexar ao Processo**:  
   
--   **Mostrar processos de todos os usuários**  
+- **Mostrar processos de todos os usuários**  
   
      Quando essa opção não estiver selecionada, a lista exibe apenas os processos pertencentes ao usuário atual. Quando **Mostrar processos de todos os usuários** é selecionado, a lista exibe os processos de todos os usuários.  
   
--   **Exibir processos em todas as sessões**  
+- **Exibir processos em todas as sessões**  
   
      Quando essa opção não está selecionada, a lista exibe os processos na sessão atual. Quando essa opção está selecionada, a lista exibe os processos em todas as sessões.  
   
 ## <a name="see-also"></a>Consulte também  
  [Visões gerais](../profiling/overviews-performance-tools.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)   
- [Como anexar a um processo em execução](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)
+ [Como: Anexar a um processo em execução](http://msdn.microsoft.com/636d0a52-4bfd-48d2-89ad-d7b9ca4dc4f4)

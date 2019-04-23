@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b13352ca54db84137e029aa126f1f174a1c80fe
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d58ad6ff89d8cf41ec60135cfbfe3deac1382f1e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621468"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095263"
 ---
 # <a name="one-or-more-properties-in-the-ofs-file-are-not-valid-for-the-message-class-selected"></a>Uma ou mais propriedades no arquivo .ofs não são válidas para a classe de mensagem selecionada
   Este erro aparece quando você importa uma região de formulário projetada no Outlook, mas um ou mais campos na região do formulário não são compatíveis com as classes de mensagem que você selecionar na página final do **nova região de formulário** assistente.
@@ -28,9 +28,9 @@ Por exemplo, você pode selecionar **tarefa (IPM. Tarefa)** na página final do 
 
 ## <a name="to-correct-this-error"></a>Para corrigir este erro
 
--   Na página final do **nova região de formulário** assistente, selecione a classe de mensagem que é compatível com os campos na região do formulário.
+- Na página final do **nova região de formulário** assistente, selecione a classe de mensagem que é compatível com os campos na região do formulário.
 
--   No Designer de formulários do Outlook, remova os campos que não são compatíveis com as classes de mensagem. Remover campos que você pretende selecionar na página final do **nova região de formulário** assistente.
+- No Designer de formulários do Outlook, remova os campos que não são compatíveis com as classes de mensagem. Remover campos que você pretende selecionar na página final do **nova região de formulário** assistente.
 
 ## <a name="see-also"></a>Consulte também
 - [Passo a passo: Importar de uma região de formulário projetada no Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)

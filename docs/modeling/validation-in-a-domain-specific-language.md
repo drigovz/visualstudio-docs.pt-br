@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cd81854dfa603063a70b2fe11b06eff341c203f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 09c16e55766c0239346540dfcc74b99b2ed8579b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913048"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103583"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>Validação em uma linguagem específica do domínio
 Como o autor de uma linguagem específica de domínio (DSL), você pode definir restrições de validação para verificar se o modelo criado pelo usuário é significativo. Por exemplo, se a sua DSL permite que os usuários desenhem uma árvore genealógica das pessoas e os seus ancestrais, você pode escrever uma restrição que garanta que os filhos tenham datas de nascimento posteriores as dos seus pais.
@@ -54,13 +54,13 @@ Como o autor de uma linguagem específica de domínio (DSL), você pode definir 
 
 1. Habilitar a validação na **Editor \ validação** nó:
 
-   1.  Abra **Dsl\DslDefinition.dsl**.
+   1. Abra **Dsl\DslDefinition.dsl**.
 
-   2.  No DSL Explorer, expanda o **Editor** nó e selecione **validação**.
+   2. No DSL Explorer, expanda o **Editor** nó e selecione **validação**.
 
-   3.  Na janela Propriedades, defina as **usa** propriedades a serem `true`. Esse é o modo mais conveniente de definir todas essas propriedades.
+   3. Na janela Propriedades, defina as **usa** propriedades a serem `true`. Esse é o modo mais conveniente de definir todas essas propriedades.
 
-   4.  Clique em **transformar todos os modelos** na **Gerenciador de soluções** barra de ferramentas.
+   4. Clique em **transformar todos os modelos** na **Gerenciador de soluções** barra de ferramentas.
 
 2. Escreva definições de classe parciais para uma ou mais de suas classes de domínio ou relações de domínio. Escreva essas definições em um novo arquivo de código na **Dsl** projeto.
 
@@ -70,7 +70,7 @@ Como o autor de uma linguagem específica de domínio (DSL), você pode definir 
    [ValidationState(ValidationState.Enabled)]
    ```
 
-   -   Por padrão, esse atributo também permite a validação de classes derivadas. Se você deseja desabilitar a validação para uma classe derivada específica, use `ValidationState.Disabled`.
+   - Por padrão, esse atributo também permite a validação de classes derivadas. Se você deseja desabilitar a validação para uma classe derivada específica, use `ValidationState.Disabled`.
 
 4. Adicione métodos de validação às classes. Cada método de validação pode ter qualquer nome, mas tem um parâmetro do tipo <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationContext>.
 

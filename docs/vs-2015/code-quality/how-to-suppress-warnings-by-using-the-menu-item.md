@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 83fd93d2e1e2e5d99f7ea8eca9f5de4ce1b4c7f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a8fbc314580b106f5e1e8dae5a0a78d043d3940b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922792"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080898"
 ---
 # <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Como: Suprimir avisos usando o item de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ ms.locfileid: "58922792"
   
 ### <a name="to-suppress-a-warning-by-using-menu-item"></a>Para suprimir um aviso usando o item de menu  
   
-1.  Sobre o **Analyze** menu, escolha **Windows** e, em seguida, escolha **análise de código**.  
+1. Sobre o **Analyze** menu, escolha **Windows** e, em seguida, escolha **análise de código**.  
   
-2.  No **análise de código** janela, selecione suprimir o aviso.  
+2. No **análise de código** janela, selecione suprimir o aviso.  
   
-3.  Escolha ações e, em seguida, escolha **suprimir mensagem (NS)** e, em seguida, escolha **no código-fonte** ou **no arquivo de supressão do projeto**.  
+3. Escolha ações e, em seguida, escolha **suprimir mensagem (NS)** e, em seguida, escolha **no código-fonte** ou **no arquivo de supressão do projeto**.  
   
      O aviso específico é suprimido e o aviso é exibido na janela análise de código com um tachado.  
   
