@@ -23,12 +23,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7c2dce31d5d2d2564c4a277b479dbf1e463b4632
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a01220c1c8dc21bc770c509aacfe345fd3107ae5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666124"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105559"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Associar controles a imagens de um banco de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,17 +41,17 @@ Você pode usar o **fontes de dados** window para vincular uma imagem em um banc
   
 ## <a name="bind-a-picture-in-a-database-to-a-control"></a>Vincular uma imagem em um banco de dados a um controle  
   
-1.  Certifique-se de que a superfície de design que você deseja adicionar o controle é aberta no Designer do WPF ou o Designer de formulários do Windows.  
+1. Certifique-se de que a superfície de design que você deseja adicionar o controle é aberta no Designer do WPF ou o Designer de formulários do Windows.  
   
-2.  No **fontes de dados** janela, expanda a tabela desejada ou para exibir suas colunas ou propriedades do objeto.  
+2. No **fontes de dados** janela, expanda a tabela desejada ou para exibir suas colunas ou propriedades do objeto.  
   
-3.  Selecione a coluna ou propriedade que contém os dados de imagem e selecione um dos seguintes controles na sua lista de controle de lista suspensa:  
+3. Selecione a coluna ou propriedade que contém os dados de imagem e selecione um dos seguintes controles na sua lista de controle de lista suspensa:  
   
-    -   Se o WPF designer estiver aberto, selecione **imagem**.  
+    - Se o WPF designer estiver aberto, selecione **imagem**.  
   
-    -   Se o designer de formulários do Windows é aberto, selecione **PictureBox**.  
+    - Se o designer de formulários do Windows é aberto, selecione **PictureBox**.  
   
-    -   Como alternativa, você pode selecionar um controle diferente, que dá suporte à vinculação de dados e que pode exibir imagens. Se o controle que você deseja usar não estiver na lista de controles disponíveis, você pode adicioná-lo à lista e, em seguida, selecioná-lo. Para obter mais informações, consulte [adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+    - Como alternativa, você pode selecionar um controle diferente, que dá suporte à vinculação de dados e que pode exibir imagens. Se o controle que você deseja usar não estiver na lista de controles disponíveis, você pode adicioná-lo à lista e, em seguida, selecioná-lo. Para obter mais informações, consulte [adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md)

@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6057aa437aa4fc0d14bd21f20e3fa657f5c5c15d
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 0732a5f867b357bddf3ff9f9d83bcfd7dd1f0573
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58999872"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089075"
 ---
 # <a name="clickonce-and-authenticode"></a>ClickOnce e Authenticode
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,11 +40,11 @@ Authenticode * é uma tecnologia da Microsoft que usa criptografia padrão do se
   
  Você pode obter um certificado de assinatura de código em uma destas três maneiras:  
   
--   Compre um de um fornecedor de certificado.  
+- Compre um de um fornecedor de certificado.  
   
--   Receba um de um grupo em sua organização responsável pela criação de certificados digitais.  
+- Receba um de um grupo em sua organização responsável pela criação de certificados digitais.  
   
--   Gerar seu próprio certificado com MakeCert.exe, que é incluído com o [!INCLUDE[winsdklong](../includes/winsdklong-md.md)].  
+- Gerar seu próprio certificado com MakeCert.exe, que é incluído com o [!INCLUDE[winsdklong](../includes/winsdklong-md.md)].  
   
 ### <a name="how-using-certificate-authorities-helps-users"></a>Como usar autoridades de certificação ajuda os usuários  
  Um certificado gerado usando o utilitário MakeCert.exe é comumente chamado de um *self-cert* ou um *certificado de teste*. Esse tipo de certificado funciona da mesma forma que um arquivo. snk funciona no .NET Framework. Ele consiste exclusivamente em um par de chaves criptográficas pública/privada e não contém nenhuma informação verificável sobre o publicador. Você pode usar certificados de autoatendimento para implantar [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativos com alta confiança em uma intranet. No entanto, quando esses aplicativos são executados em um computador cliente, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] identificará como proveniente de um editor desconhecido. Por padrão, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativos assinados com certificados de autoatendimento e implantados pela Internet não é possível utilizar a implantação de aplicativos confiáveis.  
@@ -61,15 +61,15 @@ Authenticode * é uma tecnologia da Microsoft que usa criptografia padrão do se
 ### <a name="updating-expired-certificates"></a>Atualizando certificados expirados  
  Em versões anteriores do .NET Framework, a atualização de um aplicativo cujo certificado tivesse expirado pode causar que o aplicativo pare de funcionar. Para resolver esse problema, use um dos seguintes métodos:  
   
--   Atualize o .NET Framework para a versão 2.0 SP1 ou posterior no Windows XP, ou a versão 3.5 ou posterior no Windows Vista.  
+- Atualize o .NET Framework para a versão 2.0 SP1 ou posterior no Windows XP, ou a versão 3.5 ou posterior no Windows Vista.  
   
--   Desinstalar o aplicativo e reinstale uma nova versão com um certificado válido.  
+- Desinstalar o aplicativo e reinstale uma nova versão com um certificado válido.  
   
--   Crie um assembly de linha de comando que atualiza o certificado. Informações passo a passo sobre esse processo podem ser encontradas em [925521 de artigo de suporte do Microsoft](http://go.microsoft.com/fwlink/?LinkId=179454).  
+- Crie um assembly de linha de comando que atualiza o certificado. Informações passo a passo sobre esse processo podem ser encontradas em [925521 de artigo de suporte do Microsoft](http://go.microsoft.com/fwlink/?LinkId=179454).  
   
 ### <a name="storing-certificates"></a>Armazenamento de certificados  
   
--   Você pode armazenar certificados como um arquivo. pfx no sistema de arquivos, ou você pode armazená-los dentro de um contêiner de chave. Um usuário em um domínio do Windows pode ter um número de contêineres de chave. Por padrão, MakeCert.exe irá armazenar certificados em seu contêiner de chave particular, a menos que você especifique que ela deve salvá-lo em um. pfx em vez disso. Mage.exe e MageUI.exe, o [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] ferramentas para criar [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantações, permitem que você use certificados armazenados de qualquer maneira.  
+- Você pode armazenar certificados como um arquivo. pfx no sistema de arquivos, ou você pode armazená-los dentro de um contêiner de chave. Um usuário em um domínio do Windows pode ter um número de contêineres de chave. Por padrão, MakeCert.exe irá armazenar certificados em seu contêiner de chave particular, a menos que você especifique que ela deve salvá-lo em um. pfx em vez disso. Mage.exe e MageUI.exe, o [!INCLUDE[winsdkshort](../includes/winsdkshort-md.md)] ferramentas para criar [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantações, permitem que você use certificados armazenados de qualquer maneira.  
   
 ## <a name="see-also"></a>Consulte também  
  [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)   

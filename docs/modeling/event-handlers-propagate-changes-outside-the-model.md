@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50ca0b96ecee2c3537ce88c4468efee48c7cd732
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cd02491b42e9e6a5d677eca35ccde2aa559352c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940768"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096875"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Manipuladores de eventos propagam alterações fora do modelo
 
@@ -25,21 +25,21 @@ A superfície de gráfica e outros controles de interface do usuário são exemp
 
 ### <a name="to-define-a-store-event"></a>Para definir um evento de armazenamento
 
-1.  Escolha o tipo de evento que você deseja monitorar. Para obter uma lista completa, examine as propriedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Cada propriedade corresponde a um tipo de evento. Usada com mais frequência são tipos de evento:
+1. Escolha o tipo de evento que você deseja monitorar. Para obter uma lista completa, examine as propriedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Cada propriedade corresponde a um tipo de evento. Usada com mais frequência são tipos de evento:
 
-    -   `ElementAdded` -Acionado quando um elemento de modelo, link de relação, forma ou conector é criado.
+    - `ElementAdded` -Acionado quando um elemento de modelo, link de relação, forma ou conector é criado.
 
-    -   ElementPropertyChanged - disparado quando o valor de um `Normal` propriedade de domínio é alterada. O evento é disparado somente se os valores novos e antigos não são iguais. O evento não pode ser aplicado às propriedades de armazenamento calculadas e personalizadas.
+    - ElementPropertyChanged - disparado quando o valor de um `Normal` propriedade de domínio é alterada. O evento é disparado somente se os valores novos e antigos não são iguais. O evento não pode ser aplicado às propriedades de armazenamento calculadas e personalizadas.
 
          Ele não pode ser aplicado a propriedades da função que correspondem aos links do relacionamento. Em vez disso, use `ElementAdded` para monitorar a relação de domínio.
 
-    -   `ElementDeleted` -acionado depois de um elemento de modelo, relação, forma ou conector foi excluído. Você ainda pode acessar os valores de propriedade do elemento, mas ele será não têm nenhuma relação a outros elementos.
+    - `ElementDeleted` -acionado depois de um elemento de modelo, relação, forma ou conector foi excluído. Você ainda pode acessar os valores de propriedade do elemento, mas ele será não têm nenhuma relação a outros elementos.
 
-2.  Adicione uma definição de classe parcial para _{1&gt;yourdsl&lt;1_**DocData** em um arquivo de código separado no **DslPackage** projeto.
+2. Adicione uma definição de classe parcial para _{1&gt;yourdsl&lt;1_**DocData** em um arquivo de código separado no **DslPackage** projeto.
 
-3.  Escreva o código do evento como um método, como no exemplo a seguir. Ele pode ser `static`, a menos que você deseja acessar `DocData`.
+3. Escreva o código do evento como um método, como no exemplo a seguir. Ele pode ser `static`, a menos que você deseja acessar `DocData`.
 
-4.  Substituir `OnDocumentLoaded()` para registrar o manipulador. Se você tiver mais de um manipulador, você pode registrá-los todos no mesmo lugar.
+4. Substituir `OnDocumentLoaded()` para registrar o manipulador. Se você tiver mais de um manipulador, você pode registrá-los todos no mesmo lugar.
 
 O local do código de registro não é crítico. `DocView.LoadView()` é um local alternativo.
 
@@ -160,11 +160,11 @@ private static void AlbumTitleAdjuster(object sender,
 
 Se você gravar um evento que atualiza o repositório:
 
--   Use `store.InUndoRedoOrRollback` Evite fazer alterações a elementos de modelo em Desfazer. O Gerenciador de transações definirá tudo no armazenamento de volta ao estado original.
+- Use `store.InUndoRedoOrRollback` Evite fazer alterações a elementos de modelo em Desfazer. O Gerenciador de transações definirá tudo no armazenamento de volta ao estado original.
 
--   Use `store.InSerializationTransaction` Evite fazer alterações enquanto o modelo está sendo carregado do arquivo.
+- Use `store.InSerializationTransaction` Evite fazer alterações enquanto o modelo está sendo carregado do arquivo.
 
--   Suas alterações fará com que mais eventos sejam disparados. Certifique-se de que você evite um loop infinito.
+- Suas alterações fará com que mais eventos sejam disparados. Certifique-se de que você evite um loop infinito.
 
 ## <a name="store-event-types"></a>Tipos de evento Store
 

@@ -11,12 +11,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41f89449ab412a53d779bfc3fb4cf9ac52ded239
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aa8ec46036bbb9a133f2036f1c54cad87d064618
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929444"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105481"
 ---
 # <a name="supported-visual-studio-editions-for-visualization-amp-modeling-sdk"></a>Suporte para edições do Visual Studio para visualização &amp; SDK de modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ Seguem listas das edições do Visual Studio que têm suporte com [!INCLUDE[dsl]
 ## <a name="deployment-editions"></a>Edições de Implantação
  [!INCLUDE[dsl](../includes/dsl-md.md)] oferece suporte às seguintes configurações para implantação das linguagens específicas do domínio que foram compiladas:
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Pacote redistribuível do Visual Studio Shell (modo integrado) pacote redistribuível
+- Pacote redistribuível do Visual Studio Shell (modo integrado) pacote redistribuível
 
--   Pacote redistribuível Visual Studio Shell (modo isolado) pacote redistribuível
+- Pacote redistribuível Visual Studio Shell (modo isolado) pacote redistribuível
 
 > [!NOTE]
 >  Para tornar uma DSL capaz de executar em um produto Shell, você deve definir a **suporte para a edição do VS** campo no manifesto de extensão. Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md).

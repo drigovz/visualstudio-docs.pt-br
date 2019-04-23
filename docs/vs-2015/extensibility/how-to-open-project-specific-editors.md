@@ -12,12 +12,12 @@ ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: dbafb5938f26b4cdb702168ee2f3500def7ac9c2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 46f6b64fecfbbe3a57dad130ad0a65475fad56af
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928078"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105390"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Como: Editores abertos específicos do projeto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,30 +28,30 @@ Se um arquivo de item que está sendo aberto por um projeto é intrinsecamente a
   
 ### <a name="to-implement-the-openitem-method-with-a-project-specific-editor"></a>Para implementar o método OpenItem com um editor específico do projeto  
   
-1.  Chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> método (RDT_EditLock) para determinar se o arquivo (objeto de dados de documento) já está aberto.  
+1. Chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> método (RDT_EditLock) para determinar se o arquivo (objeto de dados de documento) já está aberto.  
   
     > [!NOTE]
     >  Para obter mais informações sobre dados de documentos e objetos de exibição de documento, consulte [dados de documentos e exibição de documentos em editores personalizados](../extensibility/document-data-and-document-view-in-custom-editors.md).  
   
-2.  Se o arquivo já estiver aberto, repavimentar o arquivo chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> método e especificando um valor de IDO_ActivateIfOpen para o `grfIDO` parâmetro.  
+2. Se o arquivo já estiver aberto, repavimentar o arquivo chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> método e especificando um valor de IDO_ActivateIfOpen para o `grfIDO` parâmetro.  
   
      Se o arquivo está aberto e o documento pertencente a um projeto que não seja o projeto de chamada, um aviso será exibido para o usuário que o editor que está sendo aberto é de outro projeto. A janela de arquivo, em seguida, é exibida.  
   
-3.  Se o buffer de texto (objeto de dados de documento) já está aberto e você deseja anexar outro modo de exibição a ele, você é responsável por esse modo de exibição de gancho. A abordagem recomendada para criar uma instância de um modo de exibição (objeto de exibição de documento) do projeto, é o seguinte:  
+3. Se o buffer de texto (objeto de dados de documento) já está aberto e você deseja anexar outro modo de exibição a ele, você é responsável por esse modo de exibição de gancho. A abordagem recomendada para criar uma instância de um modo de exibição (objeto de exibição de documento) do projeto, é o seguinte:  
   
-    1.  Chame `QueryService` sobre o <xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry> service para obter um ponteiro para o <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> interface.  
+    1. Chame `QueryService` sobre o <xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry> service para obter um ponteiro para o <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> interface.  
   
-    2.  Chamar o <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> método para criar uma instância da classe de exibição do documento.  
+    2. Chamar o <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2.CreateInstance%2A> método para criar uma instância da classe de exibição do documento.  
   
-4.  Chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> método, especificando seu objeto de exibição de documento.  
+4. Chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.CreateDocumentWindow%2A> método, especificando seu objeto de exibição de documento.  
   
      Esse método sites o objeto de exibição de documento em uma janela do documento.  
   
-5.  Executar as chamadas apropriadas para qualquer um de <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.InitNew%2A> ou o <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A> métodos.  
+5. Executar as chamadas apropriadas para qualquer um de <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.InitNew%2A> ou o <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat.Load%2A> métodos.  
   
      Neste ponto, o modo de exibição deve ser totalmente inicializado e está pronto para ser aberto.  
   
-6.  Chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> método para mostrar e abrir o modo de exibição.  
+6. Chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> método para mostrar e abrir o modo de exibição.  
   
 ## <a name="see-also"></a>Consulte também  
  [Abrir e salvar itens de projeto](../extensibility/internals/opening-and-saving-project-items.md)   

@@ -1,5 +1,5 @@
 ---
-title: Como escolher métodos de coleta | Microsoft Docs
+title: 'Como: Escolher métodos de coleta | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,14 +13,14 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 187a45a925b8124309da44e114ac63e2212bf7c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 33ff14ce88f2032b998214ed11310a15550321dc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792870"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088438"
 ---
-# <a name="how-to-choose-collection-methods"></a>Como escolher métodos de coleção
+# <a name="how-to-choose-collection-methods"></a>Como: Escolher métodos de coleta
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 As ferramentas de criação de perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dão suporte a três métodos de coleta de dados de desempenho: amostragem, instrumentação e simultaneidade. Você também pode usar o método de amostragem ou instrumentação para coletar dados de tempo de vida e de alocação de memória do .NET.  
@@ -35,7 +35,7 @@ As ferramentas de criação de perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 #### <a name="to-select-a-collection-method-using-the-performance-wizard"></a>Para selecionar um método de coleta usando o Assistente de Desempenho  
   
--   Na primeira página do assistente, selecione uma das seguintes opções:  
+- Na primeira página do assistente, selecione uma das seguintes opções:  
   
 |Opção|Descrição|  
 |------------|-----------------|  
@@ -48,53 +48,53 @@ As ferramentas de criação de perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md
   
 #### <a name="to-select-a-collection-method-using-performance-explorer"></a>Para selecionar um método de coleta usando o Gerenciador de Desempenho  
   
-1.  Na barra de ferramentas do **Gerenciador de Desempenho**, clique na seta ao lado da lista suspensa **Método**.  
+1. Na barra de ferramentas do **Gerenciador de Desempenho**, clique na seta ao lado da lista suspensa **Método**.  
   
-2.  Clique no método de coleta que você preferir.  
+2. Clique no método de coleta que você preferir.  
   
 ## <a name="performance-session-property-pages"></a>Páginas de propriedades da Sessão de Desempenho  
   
 #### <a name="to-select-the-sampling-or-instrumentation-method-using-performance-session-properties"></a>Para selecionar o método de amostragem ou de instrumentação usando propriedades da sessão de desempenho  
   
-1.  No **Gerenciador de Desempenho**, selecione a sessão de desempenho.  
+1. No **Gerenciador de Desempenho**, selecione a sessão de desempenho.  
   
      Um nome de arquivo de sessão de desempenho tem uma extensão .psess.  
   
-2.  Clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Propriedades**.  
+2. Clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Propriedades**.  
   
-3.  Nas **Páginas de Propriedades**, clique em **Geral**.  
+3. Nas **Páginas de Propriedades**, clique em **Geral**.  
   
-4.  Clique no método de coleta que você preferir.  
+4. Clique no método de coleta que você preferir.  
   
-    -   Para obter informações sobre as outras opções que estão disponíveis ao coletar dados de amostragem, consulte [Coletando estatísticas de desempenho usando amostragem](../profiling/collecting-performance-statistics-by-using-sampling.md)  
+    - Para obter informações sobre as outras opções que estão disponíveis ao coletar dados de amostragem, consulte [Coletando estatísticas de desempenho usando amostragem](../profiling/collecting-performance-statistics-by-using-sampling.md)  
   
-    -   Para obter informações sobre as outras opções que estão disponíveis ao coletar dados de amostragem, consulte [Coletando dados de tempo detalhados usando instrumentação](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md).  
+    - Para obter informações sobre as outras opções que estão disponíveis ao coletar dados de amostragem, consulte [Coletando dados de tempo detalhados usando instrumentação](../profiling/collecting-detailed-timing-data-by-using-instrumentation.md).  
   
 #### <a name="to-select-net-memory-data-collection-by-using-performance-session-properties"></a>Para selecionar a coleção de dados de memória do .NET usando as propriedades da sessão de desempenho  
   
-1.  No **Gerenciador de Desempenho**, selecione a sessão de desempenho.  
+1. No **Gerenciador de Desempenho**, selecione a sessão de desempenho.  
   
      Um nome de arquivo de sessão de desempenho tem uma extensão .psess.  
   
-2.  Clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Propriedades**.  
+2. Clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Propriedades**.  
   
-3.  Nas **Páginas de Propriedades**, clique em **Geral**.  
+3. Nas **Páginas de Propriedades**, clique em **Geral**.  
   
-4.  Clique em **Amostragem** ou **Instrumentação**.  
+4. Clique em **Amostragem** ou **Instrumentação**.  
   
-5.  Clique em **Coletar informações de alocação de objeto do .NET** para coletar o tamanho e o número de alocações de objeto do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+5. Clique em **Coletar informações de alocação de objeto do .NET** para coletar o tamanho e o número de alocações de objeto do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   
-6.  (Opcional) Clique em **Também coletar informações de tempo de vida do objeto .NET** para coletar dados sobre as gerações de coleta de lixo nas quais a memória do objeto foi recuperada.  
+6. (Opcional) Clique em **Também coletar informações de tempo de vida do objeto .NET** para coletar dados sobre as gerações de coleta de lixo nas quais a memória do objeto foi recuperada.  
   
      Para obter informações sobre as outras opções que estão disponíveis ao coletar dados de memória do .NET, consulte [Coletando a alocação de memória do .NET e os dados de tempo de vida](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md).  
   
 #### <a name="to-select-concurrency-data-collection-by-using-performance-session-properties"></a>Para selecionar a coleta de dados de simultaneidade usando as propriedades da sessão de desempenho  
   
-1.  No **Gerenciador de Desempenho**, clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Propriedades**.  
+1. No **Gerenciador de Desempenho**, clique com o botão direito do mouse na sessão de desempenho e, em seguida, clique em **Propriedades**.  
   
-2.  Nas **Páginas de Propriedades**, clique em **Geral**.  
+2. Nas **Páginas de Propriedades**, clique em **Geral**.  
   
-3.  Clique em **Simultaneidade**.  
+3. Clique em **Simultaneidade**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)   

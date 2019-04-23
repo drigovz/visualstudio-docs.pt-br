@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6b6428681815f20951b090075e859959a4e3180
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 82ef77884d4ade77e8d940df6c37d8336c2a1dbf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660855"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097005"
 ---
 # <a name="create-and-configure-tableadapters"></a>Criar e configurar TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,18 +51,18 @@ TableAdapters fornecem comunicação entre seu aplicativo e um banco de dados. C
   
  Se você arrastar um novo TableAdapter da caixa de ferramentas quando o **Dataset Designer** está no foco, as solicitações do assistente que você especifique qual fonte de dados o TableAdapter deve se conectar e quais tipos de comandos que ele devem usar para se comunicar com o banco de dados, instruções SQL ou procedimentos armazenados. Você não verá essa opção se você estiver configurando um TableAdapter que já está associado uma fonte de dados.  
   
--   Usando o **criar métodos para enviar atualizações diretamente ao banco de dados** opção equivale a definir o `GenerateDBDirectMethods` propriedade como true. A opção fica não disponível quando a instrução SQL original não fornecer informações suficientes ou a consulta não for uma consulta atualizável. Essa situação pode ocorrer, por exemplo, no **INGRESSAR** consultas e consultas que retornam um valor único (escalar).  
+- Usando o **criar métodos para enviar atualizações diretamente ao banco de dados** opção equivale a definir o `GenerateDBDirectMethods` propriedade como true. A opção fica não disponível quando a instrução SQL original não fornecer informações suficientes ou a consulta não for uma consulta atualizável. Essa situação pode ocorrer, por exemplo, no **INGRESSAR** consultas e consultas que retornam um valor único (escalar).  
   
--   Você tem a opção de criar um novo procedimento armazenado no banco de dados subjacente, se você tiver as permissões corretas para o banco de dados. Se você não tiver essas permissões, isso não será uma opção.  
+- Você tem a opção de criar um novo procedimento armazenado no banco de dados subjacente, se você tiver as permissões corretas para o banco de dados. Se você não tiver essas permissões, isso não será uma opção.  
   
--   Você também pode optar por executar os procedimentos armazenados existentes para o **selecionar**, **inserir**, **atualização**, e **excluir** comandos das TableAdapter. O procedimento armazenado que é atribuído para o **atualização** comando, por exemplo, é executado quando o `TableAdapter.Update()` método é chamado.  
+- Você também pode optar por executar os procedimentos armazenados existentes para o **selecionar**, **inserir**, **atualização**, e **excluir** comandos das TableAdapter. O procedimento armazenado que é atribuído para o **atualização** comando, por exemplo, é executado quando o `TableAdapter.Update()` método é chamado.  
   
      Mapear parâmetros desde o procedimento armazenado selecionado até as colunas correspondentes na tabela de dados. Por exemplo, se seu procedimento armazenado aceita um parâmetro chamado `@CompanyName` que ele passa para o `CompanyName` conjunto de colunas na tabela, o **coluna de origem** da `@CompanyName` parâmetro `CompanyName`.  
   
     > [!NOTE]
     >  O procedimento armazenado que é atribuído para o comando SELECT é executado chamando o método do TableAdapter que você nomeia na próxima etapa do assistente. O método padrão é `Fill`, portanto, o código que normalmente é usado para executar o procedimento SELECT é `TableAdapter.Fill(tableName)`. Se você alterar o nome padrão do `Fill`, substitua `Fill` com o nome atribuir e substituir "TableAdapter" pelo nome real do TableAdapter (por exemplo, `CustomersTableAdapter`).  
   
--   O **opções avançadas** no assistente que você possa gerar instruções INSERT, UPDATE e DELETE com base na instrução SELECT que é definida na **gerar instruções SQL** página. Usar a simultaneidade otimista e especificar se para atualizar a tabela de dados após a inserção e atualização instruções são executadas.  
+- O **opções avançadas** no assistente que você possa gerar instruções INSERT, UPDATE e DELETE com base na instrução SELECT que é definida na **gerar instruções SQL** página. Usar a simultaneidade otimista e especificar se para atualizar a tabela de dados após a inserção e atualização instruções são executadas.  
   
 ## <a name="configure-a-tableadapters-fill-method"></a>Configurar o método de preenchimento de um TableAdapter  
  Às vezes, você talvez queira alterar o esquema de tabela do TableAdapter. Para fazer isso, você modifica o primário do TableAdapter `Fill` método. TableAdapters são criados com um primário `Fill` método que define o esquema da tabela de dados associado. O principal `Fill` método se baseia na consulta ou procedimento armazenado que você inseriu quando configurou o TableAdapter originalmente. É o primeiro método (superior) sob a tabela de dados no Designer de conjunto de dados.  
@@ -75,37 +75,37 @@ TableAdapters fornecem comunicação entre seu aplicativo e um banco de dados. C
   
 #### <a name="to-start-the-tableadapter-query-configuration-wizard-with-a-new-query"></a>Para iniciar o Assistente de configuração de consulta do TableAdapter com uma nova consulta  
   
-1.  Abra o conjunto de dados no **Designer de Conjunto de Dados**.  
+1. Abra o conjunto de dados no **Designer de Conjunto de Dados**.  
   
-2.  Se você estiver criando uma nova consulta, arraste um **consulta** do objeto da **DataSet** guia da **caixa de ferramentas** em um <xref:System.Data.DataTable>, ou selecione **Add Query**no menu de atalho do TableAdapter. Você também pode arrastar uma **consulta** objeto em uma área vazia do **Dataset Designer**, que cria um TableAdapter sem um associado <xref:System.Data.DataTable>. Essas consultas só podem retornar valores únicos de (escalares) ou executar a atualização, inserção, ou exclua comandos no banco de dados.  
+2. Se você estiver criando uma nova consulta, arraste um **consulta** do objeto da **DataSet** guia da **caixa de ferramentas** em um <xref:System.Data.DataTable>, ou selecione **Add Query**no menu de atalho do TableAdapter. Você também pode arrastar uma **consulta** objeto em uma área vazia do **Dataset Designer**, que cria um TableAdapter sem um associado <xref:System.Data.DataTable>. Essas consultas só podem retornar valores únicos de (escalares) ou executar a atualização, inserção, ou exclua comandos no banco de dados.  
   
-3.  Sobre o **escolha sua Conexão de dados** de tela, selecione ou crie a conexão que a consulta usará.  
+3. Sobre o **escolha sua Conexão de dados** de tela, selecione ou crie a conexão que a consulta usará.  
   
     > [!NOTE]
     >  Essa tela aparece somente quando o designer não pode determinar a conexão apropriada para usar, ou quando não há conexões disponíveis.  
   
-4.  Sobre o **escolher um tipo de comando** tela, selecione os seguintes métodos de busca de dados do banco de dados:  
+4. Sobre o **escolher um tipo de comando** tela, selecione os seguintes métodos de busca de dados do banco de dados:  
   
-    -   **Usar instruções SQL** permite que você digite uma instrução SQL para selecionar os dados de seu banco de dados.  
+    - **Usar instruções SQL** permite que você digite uma instrução SQL para selecionar os dados de seu banco de dados.  
   
-    -   **Criar novo procedimento armazenado** permite que você tenha o Assistente para cria um novo procedimento armazenado (em banco de dados) com base na instrução SELECT especificada.  
+    - **Criar novo procedimento armazenado** permite que você tenha o Assistente para cria um novo procedimento armazenado (em banco de dados) com base na instrução SELECT especificada.  
   
-    -   **Use os procedimentos armazenados existentes** permite que você execute um procedimento armazenado existente quando executar a consulta.  
+    - **Use os procedimentos armazenados existentes** permite que você execute um procedimento armazenado existente quando executar a consulta.  
   
 #### <a name="to-start-the-tableadapter-query-configuration-wizard-on-an-existing-query"></a>Para iniciar o Assistente de configuração de consulta do TableAdapter em uma consulta existente  
   
--   Se você estiver editando uma consulta TableAdapter existente, a consulta com o botão direito e, em seguida, escolha **configurar** no menu de atalho.  
+- Se você estiver editando uma consulta TableAdapter existente, a consulta com o botão direito e, em seguida, escolha **configurar** no menu de atalho.  
   
     > [!NOTE]
     >  Clicando duas vezes na consulta principal de um TableAdapter reconfigura o TableAdapter e <xref:System.Data.DataTable> esquema. No entanto, clicando duas vezes uma consulta adicional em um TableAdapter, configura a consulta selecionada. O **Assistente de configuração TableAdapter** reconfigura a definição do TableAdapter, enquanto o Assistente de configuração de consulta do TableAdapter reconfigura a consulta selecionada.  
   
 #### <a name="to-add-a-global--query-to-a-tableadapter"></a>Para adicionar uma consulta global a um TableAdapter  
   
--   *Consultas globais* são consultas SQL que retornam um valor único (escalar) ou nenhum valor. Normalmente, funções globais de realizar operações de banco de dados como inserções, atualizações, exclui. Eles também pode agregar informações, como uma contagem de clientes em uma tabela ou o total das taxas para todos os itens em uma ordem específica.  
+- *Consultas globais* são consultas SQL que retornam um valor único (escalar) ou nenhum valor. Normalmente, funções globais de realizar operações de banco de dados como inserções, atualizações, exclui. Eles também pode agregar informações, como uma contagem de clientes em uma tabela ou o total das taxas para todos os itens em uma ordem específica.  
   
      Adicionar consultas globais arrastando uma **consulta** do objeto da **conjunto de dados** guia da **caixa de ferramentas** em uma área vazia do **Dataset Designer**.  
   
--   Forneça uma consulta que realiza a tarefa desejada, por exemplo, `SELECT COUNT(*) AS CustomerCount FROM Customers`.  
+- Forneça uma consulta que realiza a tarefa desejada, por exemplo, `SELECT COUNT(*) AS CustomerCount FROM Customers`.  
   
     > [!NOTE]
     >  Arrastando um **consulta** do objeto diretamente para o **Dataset Designer** cria um método que retorna um valor escalar (único). Enquanto a consulta ou procedimento armazenado que você selecionar pode retornar mais de um único valor, o método que é criado pelo assistente retorna apenas um único valor. Por exemplo, a consulta pode retornar a primeira coluna da primeira linha dos dados retornados.  

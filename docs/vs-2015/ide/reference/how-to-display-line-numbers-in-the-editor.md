@@ -14,12 +14,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be7091a9a960a62a0f60ad9bb0093a2f0d08236b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 7873d54ecdf3ce96ab64d94e9b1864c7ef2904b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650976"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088256"
 ---
 # <a name="how-to-display-line-numbers-in-the-editor"></a>Como exibir números de linha no Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Você pode exibir ou ocultar a numeração de linhas em seu código.
   
 #### <a name="to-display-line-numbers-in-code"></a>Para exibir números de linhas no código  
   
-1.  Na barra de menus, escolha **Ferramentas**, **Opções**. Expanda o nó **Editor de Texto** e selecione o nó do idioma que você está usando ou **Todos os Idiomas** para ativar os números de linha em todos os idiomas. Ou você pode digitar **número de linha** na caixa **Início Rápido**.  
+1. Na barra de menus, escolha **Ferramentas**, **Opções**. Expanda o nó **Editor de Texto** e selecione o nó do idioma que você está usando ou **Todos os Idiomas** para ativar os números de linha em todos os idiomas. Ou você pode digitar **número de linha** na caixa **Início Rápido**.  
   
-2.  ![Opções para exibir números de linha no editor](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")  
+2. ![Opções para exibir números de linha no editor](../../ide/reference/media/vs-displaylinenumbers.png "VS_DisplayLineNumbers")  
   
 > [!NOTE]
 >  Dependendo do seu idioma ou configurações, você pode precisar marcar a caixa de seleção **Mostrar todas as configurações** na caixa de diálogo **Opções** para revelar o subnó **Todos os Idiomas**.  

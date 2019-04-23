@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e1d0a0cd2b82c16871e157e6f78c766895c34b3
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 2d79c56cfeb2c1a5ef6f83ef64c005fd794c1f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415038"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096901"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>Adicionar validação de arquitetura personalizada a diagramas de dependência
 
@@ -75,7 +75,7 @@ Se você quiser criar um VSIX que contém validadores de camada, comandos e outr
 
 ### <a name="to-add-layer-validation-to-a-separate-vsix"></a>Para adicionar a validação de camada a um VSIX separado
 
-1. Criar um novo **biblioteca de classes** projeto. Esse projeto conterá a classe de validação de camada.
+1. Crie um projeto de **Biblioteca de Classes**. Esse projeto conterá a classe de validação de camada.
 
 2. Localizar ou criar uma **VSIX Project** em sua solução. Um projeto do VSIX contém um arquivo chamado **vsixmanifest**.
 
@@ -83,9 +83,9 @@ Se você quiser criar um VSIX que contém validadores de camada, comandos e outr
 
 4. Na **vsixmanifest**, em **ativos**, adicione o projeto de validação de camada como um componente de MEF:
 
-    1.  Escolher **novo**.
+    1. Escolher **novo**.
 
-    2.  No **adicionar novo ativo** caixa de diálogo, defina:
+    2. No **adicionar novo ativo** caixa de diálogo, defina:
 
          **Type** = **Microsoft.VisualStudio.MefComponent**
 
@@ -95,9 +95,9 @@ Se você quiser criar um VSIX que contém validadores de camada, comandos e outr
 
 5. Você também deve adicioná-lo como uma validação de camada:
 
-    1.  Escolher **novo**.
+    1. Escolher **novo**.
 
-    2.  No **adicionar novo ativo** caixa de diálogo, defina:
+    2. No **adicionar novo ativo** caixa de diálogo, defina:
 
          **Type** = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**. Isso não é uma das opções na lista suspensa. Você deve inseri-lo usando o teclado.
 
@@ -125,7 +125,7 @@ Se você quiser criar um VSIX que contém validadores de camada, comandos e outr
 
 9. Para instalar o VSIX na instância principal do Visual Studio ou em outro computador, localize o **. VSIX** arquivo na **bin** diretório do projeto VSIX. Copie-o no computador em que você deseja instalar o VSIX. Clique duas vezes no arquivo VSIX no Windows Explorer.
 
-##  <a name="programming"></a> Validação de programação
+## <a name="programming"></a> Validação de programação
 
 Para definir uma extensão de validação de camada, você define uma classe que tem as seguintes características:
 
@@ -194,7 +194,7 @@ Cada nó e cada Link tem uma ou mais categorias que especificam o tipo de elemen
 
 Links de camadas para elementos no código possuem a categoria "Representa".
 
-##  <a name="debugging"></a> Validação de depuração
+## <a name="debugging"></a> Validação de depuração
 
 Para depurar a extensão de validação de camada, pressione CTRL + F5. Uma instância experimental do Visual Studio é aberto. Nesse caso, abra ou crie um modelo de camada. Esse modelo deve ser associado ao código e deve ter pelo menos uma dependência.
 
@@ -226,7 +226,7 @@ Sempre iniciar a instância experimental pressionando CTRL + F5 (**iniciar sem d
 
 Para instalar sua extensão de validação em um computador no qual uma versão adequada do Visual Studio está instalada, abra o arquivo VSIX no computador de destino.
 
-##  <a name="example"></a> Exemplo de código
+## <a name="example"></a> Exemplo de código
 
 ```csharp
 using System;
