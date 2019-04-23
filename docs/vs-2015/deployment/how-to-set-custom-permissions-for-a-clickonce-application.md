@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 279dd66ca1f814dbd52593d52040818edf8f408b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fa16f3587e0d70d8604aeadb33ee7807f6a22ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927426"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085656"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Como: Definir permissões personalizadas para um aplicativo ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,23 +30,23 @@ Você pode implantar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] a
   
 ### <a name="to-customize-a-permission"></a>Para personalizar uma permissão  
   
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2.  Clique na guia **Segurança**.  
+2. Clique na guia **Segurança**.  
   
-3.  Selecione o **Habilitar configurações de segurança do ClickOnce** caixa de seleção.  
+3. Selecione o **Habilitar configurações de segurança do ClickOnce** caixa de seleção.  
   
-4.  Selecione o **este é um aplicativo de confiança parcial** botão de opção.  
+4. Selecione o **este é um aplicativo de confiança parcial** botão de opção.  
   
      Os controles na **permissões de segurança do ClickOnce** seção estão habilitados.  
   
-5.  Dos **seu aplicativo será instalado a partir de zona** lista suspensa, clique em **(personalizada)**.  
+5. Dos **seu aplicativo será instalado a partir de zona** lista suspensa, clique em **(personalizada)**.  
   
-6.  Clique em **Editar XML de permissões**.  
+6. Clique em **Editar XML de permissões**.  
   
      O arquivo App. manifest é aberto no Editor de XML.  
   
-7.  Antes do `</applicationRequestMinimum>` elemento, adicione o código XML para as permissões que seu aplicativo requer.  
+7. Antes do `</applicationRequestMinimum>` elemento, adicione o código XML para as permissões que seu aplicativo requer.  
   
     > [!NOTE]
     >  Você pode usar o `ToXml` método de uma permissão definida para gerar o código XML para o manifesto do aplicativo. Por exemplo, para gerar o XML para o <xref:System.Security.Permissions.EnvironmentPermission> conjunto de permissões, chame o <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> método. Para obter mais informações sobre a estrutura da permissão do conjunto de XML, consulte [NIB: Como: Importar um conjunto de permissões usando um arquivo XML](http://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236).  

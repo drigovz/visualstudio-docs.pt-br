@@ -11,23 +11,23 @@ ms.assetid: a6f77bf0-bf81-443f-8683-5f12075bbe10
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 06f7904a1ae38ce9a2c8103208490bc67e8dc7b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 47ba1529521fdce042512a38d32ad2ca2eb3cb82
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929277"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085553"
 ---
 # <a name="breakpoint-related-methods"></a>Métodos relacionados ao ponto de interrupção
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Um mecanismo de depuração (DES) deve dar suporte a configuração de pontos de interrupção. Depuração do Visual Studio suporta os seguintes tipos de pontos de interrupção:  
   
--   Associado  
+- Associado  
   
      Solicitado por meio da interface do usuário e associar com êxito para um local de código especificada  
   
--   Pendente  
+- Pendente  
   
      Solicitado por meio da interface do usuário, mas ainda não é vinculado com o real de instruções  
   
