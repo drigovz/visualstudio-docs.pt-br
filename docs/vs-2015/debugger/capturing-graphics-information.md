@@ -13,12 +13,12 @@ caps.latest.revision: 44
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b64be59e1a962eb23ef12ba49e8b4fa73bd7a44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d0b98d57500ad2115abfcbd229d29009afdda059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923683"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114217"
 ---
 # <a name="capturing-graphics-information"></a>Capturando informações de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,9 +60,9 @@ Capture informações gráficas de seu aplicativo Direct3D para que você possa 
   
 ##### <a name="to-configure-graphics-diagnostics-capture-options"></a>Para configurar as opções de captura do diagnóstico de gráficos  
   
-1.  Na barra de menus, escolha Ferramentas, Opções. A caixa de diálogo Opções é exibida.  
+1. Na barra de menus, escolha Ferramentas, Opções. A caixa de diálogo Opções é exibida.  
   
-2.  Na lista da categoria opções à esquerda, escolha o Diagnóstico de Gráficos e configure as opções de Diagnóstico de Gráficos que você deseja.  
+2. Na lista da categoria opções à esquerda, escolha o Diagnóstico de Gráficos e configure as opções de Diagnóstico de Gráficos que você deseja.  
   
      **Coleta das pilhas de chamada durante a captura (torna a captura mais lenta)**  
      Marque esta caixa para coletar as pilhas de chamadas. Por padrão, as pilhas de chamadas não são coletadas. Para capturar as pilhas de chamadas, certifique-se de que o **coletar pilha de chamada durante a captura (torna a captura mais lenta** caixa de seleção é definida como habilitar a coleta e, em seguida, defina os o **para desenho, expedição, presente e desempenho marcadores**opção (padrão) para coletar somente as mais importantes pilhas de chamadas, ou o **para tudo** opção para coletar todas as pilhas de chamadas. Para parar de coletar as pilhas de chamadas mais tarde, desmarque a **coletar pilha de chamada durante a captura (torna a captura mais lenta** caixa de seleção.  
