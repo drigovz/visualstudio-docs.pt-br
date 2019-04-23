@@ -10,12 +10,12 @@ ms.assetid: d5aef766-a24c-4f1f-ac9b-e5462b6627d4
 caps.latest.revision: 41
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 192d97d8d2096b37d2dd52d2ed942ccb595456d0
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 37e0ae51589d85ac52ec962fb3cb193fc37a7ad4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54795786"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60081249"
 ---
 # <a name="best-practices-for-coded-ui-tests"></a>Práticas recomendadas para testes de IU codificados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Este tópico descreve as melhores práticas a seguir ao desenvolver testes de IU
   
  **Requisitos**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="best-practices"></a>Práticas recomendadas  
  Use as orientações a seguir para criar um teste de IU codificado flexível.  
@@ -64,11 +64,11 @@ Este tópico descreve as melhores práticas a seguir ao desenvolver testes de IU
   
 - Se um controle tiver uma asserção inválida:  
   
-  -   Exclua o método que contém a asserção.  
+  - Exclua o método que contém a asserção.  
   
-  -   Remova a chamada para esse método do método de teste.  
+  - Remova a chamada para esse método do método de teste.  
   
-  -   Adicione uma nova asserção arrastando o botão de fios para o controle de interface do usuário, abra o mapa da interface do usuário e adicione a nova asserção.  
+  - Adicione uma nova asserção arrastando o botão de fios para o controle de interface do usuário, abra o mapa da interface do usuário e adicione a nova asserção.  
   
   Para saber mais sobre como registrar testes de IU codificados, consulte [Usar a Automação de Interface do Usuário para Testar o Código](../test/use-ui-automation-to-test-your-code.md).  
   

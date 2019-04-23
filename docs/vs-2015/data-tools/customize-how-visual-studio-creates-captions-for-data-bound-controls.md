@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20611035ba37c509be7e41d8468d0c3d893334b2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 1b3bba0d47e77b9e712a375627e2e4aebc6702b3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647944"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079470"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>Personalizar como o Visual Studio cria legendas para controles associados a dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,21 +60,21 @@ Quando você arrasta itens dos [janela fontes de dados](http://msdn.microsoft.co
 
 ### <a name="to-modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>Para modificar o comportamento de Legendagem oculta inteligente da janela fontes de dados
 
-1.  Abra uma janela de comando clicando **inicie** e, em seguida **executar**.
+1. Abra uma janela de comando clicando **inicie** e, em seguida **executar**.
 
-2.  Tipo de `regedit` no **execute** caixa de diálogo e clique em **Okey**.
+2. Tipo de `regedit` no **execute** caixa de diálogo e clique em **Okey**.
 
-3.  Expanda o **HKEY_CURRENT_USER** nó.
+3. Expanda o **HKEY_CURRENT_USER** nó.
 
-4.  Expanda o **Software** nó.
+4. Expanda o **Software** nó.
 
-5.  Expanda o **Microsoft** nó.
+5. Expanda o **Microsoft** nó.
 
-6.  Expanda o **VisualStudio** nó.
+6. Expanda o **VisualStudio** nó.
 
-7.  Clique com botão direito do **10.0** nó e crie um novo **chave** chamado `Data Designers`.
+7. Clique com botão direito do **10.0** nó e crie um novo **chave** chamado `Data Designers`.
 
-8.  Com o botão direito do **Designers de dados** nó e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionExpression`.
+8. Com o botão direito do **Designers de dados** nó e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionExpression`.
 
 9. Com o botão direito do **Designers de dados** nó e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionReplacement`.
 
@@ -96,21 +96,21 @@ Quando você arrasta itens dos [janela fontes de dados](http://msdn.microsoft.co
 
 ### <a name="to-turn-off-the-smart-captioning-feature"></a>Para desativar o recurso de Legendagem oculta inteligente
 
-1.  Abra uma janela de comando clicando **inicie** e, em seguida **executar**.
+1. Abra uma janela de comando clicando **inicie** e, em seguida **executar**.
 
-2.  Tipo de `regedit` no **execute** caixa de diálogo e clique em **Okey**.
+2. Tipo de `regedit` no **execute** caixa de diálogo e clique em **Okey**.
 
-3.  Expanda o **HKEY_CURRENT_USER** nó.
+3. Expanda o **HKEY_CURRENT_USER** nó.
 
-4.  Expanda o **Software** nó.
+4. Expanda o **Software** nó.
 
-5.  Expanda o **Microsoft** nó.
+5. Expanda o **Microsoft** nó.
 
-6.  Expanda o **VisualStudio** nó.
+6. Expanda o **VisualStudio** nó.
 
-7.  Clique com botão direito do **10.0** nó e crie um novo **chave** chamado `Data Designers`.
+7. Clique com botão direito do **10.0** nó e crie um novo **chave** chamado `Data Designers`.
 
-8.  Com o botão direito do **Designers de dados** nó e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionExpression`.
+8. Com o botão direito do **Designers de dados** nó e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionExpression`.
 
 9. Com o botão direito do **Designers de dados** nó e crie um novo **valor de cadeia de caracteres** chamado `SmartCaptionReplacement`.
 

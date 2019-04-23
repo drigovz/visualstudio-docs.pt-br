@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9887214edae870ca79796a7a667b15f8536e8bb4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 5caa0804ae4d90a23ae59195d2e610653437babe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710975"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079338"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Elemento Assembly (modelos do Visual Studio)
 Especifica informações sobre um assembly, que usa o modelo para adicionar uma referência de assembly para projetos.
@@ -52,7 +52,7 @@ Especifica informações sobre um assembly, que usa o modelo para adicionar uma 
 
  Esse texto Especifica o assembly a ser adicionado a um projeto quando o modelo de item é instanciado. O nome do assembly deve ser especificado em uma das seguintes maneiras:
 
--   Como um nome completo do assembly. Por exemplo:
+- Como um nome completo do assembly. Por exemplo:
 
     ```
     <Assembly>
@@ -60,7 +60,7 @@ Especifica informações sobre um assembly, que usa o modelo para adicionar uma 
     </Assembly>
     ```
 
--   Como referência de texto simples. Por exemplo:
+- Como referência de texto simples. Por exemplo:
 
     ```
     <Assembly> System </Assembly>

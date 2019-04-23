@@ -11,12 +11,12 @@ ms.assetid: f65ff67e-8c20-497a-bebf-5e2a5b5b012f
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b80659e1a61cca27adcc92b4b47c7ff0b4e02e0a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ee09c334394e363d9621ddec887bd5d83726fba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928297"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103570"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>Coloração de sintaxe em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,28 +38,28 @@ Modelo de colorizador simples
   
 ## <a name="how-a-vspackage-uses-a-language-service-colorizer"></a>Como um VSPackage usa um colorizador do serviço de linguagem  
   
-1.  O VSPackage deverá obter o serviço de idioma apropriado, o que exige que o serviço de linguagem VSPackage para fazer o seguinte:  
+1. O VSPackage deverá obter o serviço de idioma apropriado, o que exige que o serviço de linguagem VSPackage para fazer o seguinte:  
   
-    1.  Usar um objeto que implementa o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> a interface para obter o texto a ser colorido.  
+    1. Usar um objeto que implementa o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> a interface para obter o texto a ser colorido.  
   
          Texto normalmente é exibido usando um objeto que implementa o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.  
   
-    2.  Obtenha o serviço de linguagem, consultando o provedor de serviços do VSPackage para o GUID do serviço de linguagem. Serviços de linguagem são identificados no registro pela extensão de arquivo.  
+    2. Obtenha o serviço de linguagem, consultando o provedor de serviços do VSPackage para o GUID do serviço de linguagem. Serviços de linguagem são identificados no registro pela extensão de arquivo.  
   
-    3.  Associar o serviço de linguagem com o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> chamando seu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> método.  
+    3. Associar o serviço de linguagem com o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer> chamando seu <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer.SetLanguageServiceID%2A> método.  
   
-2.  O VSPackage agora pode obter e usar o objeto colorizador da seguinte maneira:  
+2. O VSPackage agora pode obter e usar o objeto colorizador da seguinte maneira:  
   
     > [!NOTE]
     >  Não é necessário obter objetos de colorizador do serviço um idioma explicitamente VSPackages que usam o editor principal do. Assim que uma instância do editor de núcleo obtiver um serviço de idioma apropriado, ele executa todas as tarefas de colorização mostradas aqui.  
   
-    1.  Obter o objeto de colorizador do serviço de linguagem, que implementa o `T:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer`, e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2> interfaces, chamando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> método no serviço de linguagem <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> objeto.  
+    1. Obter o objeto de colorizador do serviço de linguagem, que implementa o `T:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer`, e <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer2> interfaces, chamando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> método no serviço de linguagem <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> objeto.  
   
-    2.  Chamar o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> método para obter as informações de colorizador para um determinado intervalo de texto.  
+    2. Chamar o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> método para obter as informações de colorizador para um determinado intervalo de texto.  
   
          <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> Retorna uma matriz de valores, um para cada caractere em que o intervalo de texto que está sendo colorido. Os valores são índices em uma lista de itens que pode ser colorido que é a lista de itens de coloração do padrão mantidas pelo editor de núcleo ou uma lista de itens de coloração personalizados mantido pelo serviço de linguagem em si.  
   
-    3.  Use as informações de colorização retornadas pelo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> método para exibir o texto selecionado.  
+    3. Use as informações de colorização retornadas pelo <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> método para exibir o texto selecionado.  
   
 > [!NOTE]
 >  Além de usar um colorizador do serviço de linguagem, um VSPackage também pode usar o uso geral [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] coloração do mecanismo de texto. Para obter mais informações sobre esse mecanismo, consulte [usando fontes e cores](../../extensibility/using-fonts-and-colors.md).  

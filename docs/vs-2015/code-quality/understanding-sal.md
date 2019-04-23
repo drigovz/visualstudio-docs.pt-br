@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 847631d28febe81be2e688b7c643ed1f4cfcba18
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e4c9884517120647e8d0d5bff263496900c2318c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929769"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104012"
 ---
 # <a name="understanding-sal"></a>Noções básicas de SAL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -124,15 +124,15 @@ wchar_t * wmemcpy(
 ### <a name="example-the-in-annotation"></a>Exemplo: O \_em\_ anotação  
  O `_In_` anotação indica que:  
   
--   O parâmetro deve ser válido e não será modificado.  
+- O parâmetro deve ser válido e não será modificado.  
   
--   A função lerá apenas do buffer de elemento único.  
+- A função lerá apenas do buffer de elemento único.  
   
--   O chamador deve fornecer ao buffer e inicializá-lo.  
+- O chamador deve fornecer ao buffer e inicializá-lo.  
   
--   `_In_` Especifica a "somente leitura". Um erro comum é aplicar `_In_` para um parâmetro que deve ter o `_Inout_` anotação em vez disso.  
+- `_In_` Especifica a "somente leitura". Um erro comum é aplicar `_In_` para um parâmetro que deve ter o `_Inout_` anotação em vez disso.  
   
--   `_In_` é permitido, mas são ignorados pelo analisador de em não ponteiro escalares.  
+- `_In_` é permitido, mas são ignorados pelo analisador de em não ponteiro escalares.  
   
 ```cpp  
 void InCallee(_In_ int *pInt)  

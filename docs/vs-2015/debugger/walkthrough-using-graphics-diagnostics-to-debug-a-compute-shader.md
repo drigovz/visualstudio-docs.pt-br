@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a57a77e401564b3bd32897a9b32d9773d959a17
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: db33a55c5ced7c1bbbf4b238185beac43ac290f8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "58999924"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080340"
 ---
 # <a name="walkthrough-using-graphics-diagnostics-to-debug-a-compute-shader"></a>Passo a passo: Como usar o Diagnóstico de Gráficos para depurar um sombreador de computação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Este passo a passo demonstra como usar as ferramentas de diagnóstico de gráfic
   
  Este passo a passo ilustra essas tarefas:  
   
--   Usando o **lista de eventos gráficos** para localizar fontes potenciais do problema.  
+- Usando o **lista de eventos gráficos** para localizar fontes potenciais do problema.  
   
--   Usando o **pilha de chamadas do evento de gráficos** para determinar qual computador sombreador é executado por um DirectCompute `Dispatch` eventos.  
+- Usando o **pilha de chamadas do evento de gráficos** para determinar qual computador sombreador é executado por um DirectCompute `Dispatch` eventos.  
   
--   Usando o **estágios de Pipeline gráficos** janela e HLSL do depurador para examinar o sombreador de cálculo que é a origem do problema.  
+- Usando o **estágios de Pipeline gráficos** janela e HLSL do depurador para examinar o sombreador de cálculo que é a origem do problema.  
   
 ## <a name="scenario"></a>Cenário  
  Nesse cenário, você escreveu uma simulação de dinâmica de fluidos que usa DirectCompute para executar as partes de computação mais intensa da atualização de simulação. Quando o aplicativo é executado, o processamento do conjunto de dados e da interface do usuário estiverem corretas, mas a simulação não se comportar conforme o esperado. Usando o diagnóstico de gráficos, você pode capturar o problema para um log de gráficos para que você possa depurar o aplicativo. O problema se parece com isso no aplicativo:  

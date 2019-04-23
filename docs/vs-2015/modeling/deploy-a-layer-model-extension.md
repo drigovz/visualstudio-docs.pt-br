@@ -12,12 +12,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63538797f335cab770f3748d946b08de6b44c609
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dfea4ecc735fbf91e623f6d40b287353e17ce7a1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929434"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080599"
 ---
 # <a name="deploy-a-layer-model-extension"></a>Implantar uma extensão de modelo de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,40 +39,40 @@ Outros usuários do Visual Studio podem instalar extensões que você criar usan
   
 #### <a name="to-uninstall-the-extension"></a>Para desinstalar a extensão  
   
-1.  No Visual Studio, sobre o **ferramentas** menu, clique em **extensões e atualizações**.  
+1. No Visual Studio, sobre o **ferramentas** menu, clique em **extensões e atualizações**.  
   
-2.  Clique no nome da extensão e, em seguida, clique em **desinstalação**.  
+2. Clique no nome da extensão e, em seguida, clique em **desinstalação**.  
   
 ## <a name="installing-an-extension-on-a-team-foundation-build-server"></a>Instalar uma extensão em um servidor de compilação do Team Foundation  
  [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] servidores normalmente não tenha instalado o Visual Studio e, portanto, não é possível instalar o VSIX clicando duas vezes nele. A instalação do [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] inclui alguns componentes que permitem que uma extensão do VSIX ser executado, mas você deve instalar a extensão manualmente.  
   
 #### <a name="to-install-your-layer-extension-on-a-includeesprbuildincludesesprbuild-mdmd-server"></a>Para instalar a extensão de camada em um [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] Server  
   
-1.  Cópia de **. VSIX** arquivos do seu computador de desenvolvimento para o [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] computador.  
+1. Cópia de **. VSIX** arquivos do seu computador de desenvolvimento para o [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] computador.  
   
      Coloque o arquivo VSIX em um dos seguintes locais:  
   
-    -   Para instalar para todos os usuários e serviços:  
+    - Para instalar para todos os usuários e serviços:  
   
          %ProgramFiles%\Microsoft visual Studio [versão] \Common7\IDE\Extensions\Microsoft  
   
-    -   Instalar somente para o serviço de rede que executa [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]:  
+    - Instalar somente para o serviço de rede que executa [!INCLUDE[esprbuild](../includes/esprbuild-md.md)]:  
   
          %WinDir%\ServiceProfiles\NetworkService\AppData\Local\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
-    -   Se você tiver configurado o [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] para executar no modo interativo como um usuário específico, você pode instalar apenas para esse usuário:  
+    - Se você tiver configurado o [!INCLUDE[esprbuild](../includes/esprbuild-md.md)] para executar no modo interativo como um usuário específico, você pode instalar apenas para esse usuário:  
   
          %LocalAppData%\Microsoft\VisualStudio\\[version]\Extensions\Microsoft  
   
         > [!NOTE]
         >  % LocalAppData % é normalmente *DriveName*: os usuários*nome de usuário*AppDataLocal.  
   
-2.  Expanda cada arquivo VSIX em uma pasta no mesmo local:  
+2. Expanda cada arquivo VSIX em uma pasta no mesmo local:  
   
-    1.  Alterar a extensão de nome de arquivo **. VSIX** à **. zip**.  
+    1. Alterar a extensão de nome de arquivo **. VSIX** à **. zip**.  
   
-    2.  Extraia o conteúdo do arquivo. zip para uma pasta.  
+    2. Extraia o conteúdo do arquivo. zip para uma pasta.  
   
-    3.  Excluir o arquivo. zip  
+    3. Excluir o arquivo. zip  
   
-3.  Reinicie o [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].
+3. Reinicie o [!INCLUDE[esprbuild](../includes/esprbuild-md.md)].

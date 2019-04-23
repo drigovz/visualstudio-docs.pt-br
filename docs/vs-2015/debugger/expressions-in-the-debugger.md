@@ -27,12 +27,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a284fc35a5a792171e5102518bcfa553337dd15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3999737a2fad04c9b513722ae11608574a72c410
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923129"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080729"
 ---
 # <a name="expressions-in-the-debugger"></a>Expressões no depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ int main()
   
 ```  
   
-###  <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Usando funções intrínsecas do depurador para manter o estado  
+### <a name="BKMK_Using_debugger_intrinisic_functions_to_maintain_state"></a> Usando funções intrínsecas do depurador para manter o estado  
  As funções intrínsecas do depurador oferecem uma maneira de chamar determinadas funções C/C++ em expressões sem alterar o estado do aplicativo.  
   
  Funções intrínsecas do depurador:  
@@ -116,17 +116,17 @@ int main()
 |**Windows 8**|WindowsGetStringLen(), WindowsGetStringRawBuffer()<br /><br /> Essas funções exigem que o processo que está sendo depurado seja executado no Windows 8. Depurar os arquivos de despejo gerados a partir de um dispositivo do Windows 8 também exige que o computador do Visual Studio esteja executando o Windows 8. No entanto, se você estiver depurando um dispositivo do Windows 8 remotamente, o computador do Visual Studio poderá executar o Windows 7.|  
 |**Diversos**|__log2<br /><br /> Retorna a base 2 de log de um inteiro especificado, arredondada para o menor inteiro próximo.|  
   
-## <a name="ccli---unsupported-expressions"></a>C + + c++ CLI - expressões sem suporte  
+## <a name="ccli---unsupported-expressions"></a>C++/ CLI - expressões sem suporte  
   
--   Conversões que envolvem ponteiros ou conversões definidas pelo usuário, não têm suporte.  
+- Conversões que envolvem ponteiros ou conversões definidas pelo usuário, não têm suporte.  
   
--   Não há suporte para a atribuição e comparação de objeto.  
+- Não há suporte para a atribuição e comparação de objeto.  
   
--   Não há suporte para operadores sobrecarregados e funções sobrecarregadas.  
+- Não há suporte para operadores sobrecarregados e funções sobrecarregadas.  
   
--   Não há suporte para conversões boxing e unboxing.  
+- Não há suporte para conversões boxing e unboxing.  
   
--   `Sizeof` Não há suporte para o operador.  
+- `Sizeof` Não há suporte para o operador.  
   
 ## <a name="c---unsupported-expressions"></a>C# - expressões sem suporte  
   
@@ -135,19 +135,19 @@ int main()
   
  Os seguintes recursos de objetos dinâmicos não têm suporte:  
   
--   Os operadores compostos `+=`, `-=`, `%=`, `/=`, e `*=`  
+- Os operadores compostos `+=`, `-=`, `%=`, `/=`, e `*=`  
   
--   Várias conversões, inclusive conversões numéricas e conversões de tipo de argumento  
+- Várias conversões, inclusive conversões numéricas e conversões de tipo de argumento  
   
--   Chamadas de método com mais de dois argumentos  
+- Chamadas de método com mais de dois argumentos  
   
--   Getters da propriedade com mais de dois argumentos  
+- Getters da propriedade com mais de dois argumentos  
   
--   Setters de propriedade com argumentos  
+- Setters de propriedade com argumentos  
   
--   Atribuição a um indexador  
+- Atribuição a um indexador  
   
--   Operadores boolianos `&&` e `||`  
+- Operadores boolianos `&&` e `||`  
   
 ### <a name="anonymous-methods"></a>Métodos anônimos  
  Não há suporte para a criação de novos métodos anônimos.  
@@ -159,19 +159,19 @@ int main()
   
  Os seguintes recursos de objetos dinâmicos não têm suporte:  
   
--   Os operadores compostos `+=`, `-=`, `%=`, `/=`, e `*=`  
+- Os operadores compostos `+=`, `-=`, `%=`, `/=`, e `*=`  
   
--   Várias conversões, inclusive conversões numéricas e conversões de tipo de argumento  
+- Várias conversões, inclusive conversões numéricas e conversões de tipo de argumento  
   
--   Chamadas de método com mais de dois argumentos  
+- Chamadas de método com mais de dois argumentos  
   
--   Getters da propriedade com mais de dois argumentos  
+- Getters da propriedade com mais de dois argumentos  
   
--   Setters de propriedade com argumentos  
+- Setters de propriedade com argumentos  
   
--   Atribuição a um indexador  
+- Atribuição a um indexador  
   
--   Operadores boolianos `&&` e `||`  
+- Operadores boolianos `&&` e `||`  
   
 ### <a name="local-constants"></a>Constantes locais  
  As constantes locais não têm suporte.  
@@ -184,35 +184,35 @@ int main()
   
 ### <a name="unsupported-keywords"></a>Palavras-chave sem suporte  
   
--   `AddressOf`  
+- `AddressOf`  
   
--   `End`  
+- `End`  
   
--   `Error`  
+- `Error`  
   
--   `Exit`  
+- `Exit`  
   
--   `Goto`  
+- `Goto`  
   
--   `On Error`  
+- `On Error`  
   
--   `Resume`  
+- `Resume`  
   
--   `Return`  
+- `Return`  
   
--   `Select/Case`  
+- `Select/Case`  
   
--   `Stop`  
+- `Stop`  
   
--   `SyncLock`  
+- `SyncLock`  
   
--   `Throw`  
+- `Throw`  
   
--   `Try/Catch/Finally`  
+- `Try/Catch/Finally`  
   
--   `With`  
+- `With`  
   
--   Namespace ou módulo nível palavras-chave, como `End Sub` ou `Module`.  
+- Namespace ou módulo nível palavras-chave, como `End Sub` ou `Module`.  
   
 ## <a name="see-also"></a>Consulte também  
  [Especificadores de formato em C++](../debugger/format-specifiers-in-cpp.md)   

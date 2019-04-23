@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 867c42d4afb35abcc1e37c86f85a01a7dd3fdf24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: a8ea5d8a8120f8b78ec41ee7dbaf0221a549f15c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659810"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103869"
 ---
 # <a name="analyze-c-code-quality-of-store-apps-using-visual-studio-static-code-analysis"></a>Analisar a qualidade do código C++ de aplicativos da Store usando a análise de código estático do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 > [!NOTE]
 > No Visual Studio Ultimate, no Visual Studio Premium e no Visual Studio Professional, você pode usar a funcionalidade completa das ferramentas de análise de código. Consulte [Analisando a qualidade do aplicativo usando as ferramentas de análise de código](http://msdn.microsoft.com/library/dd264897.aspx) na Biblioteca MSDN.
 
-##  <a name="BKMK_Run"></a> Executando análise de código
+## <a name="BKMK_Run"></a> Executando análise de código
  Para executar a análise de código em sua solução do Visual Studio:
 
 - No menu **Compilar**, escolha **Executar Análise de Código na Solução**.
@@ -43,7 +43,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 
    ![Janela Análise de Código](../test/media/ca-cpp-collapsed.png "CA_CPP_Collapsed")
 
-##  <a name="BKMK_Analyze"></a> Analisando e resolvendo avisos da análise de código
+## <a name="BKMK_Analyze"></a> Analisando e resolvendo avisos da análise de código
  Para analisar um aviso específico, escolha o título do aviso na janela Análise de Código. O aviso se expande para exibir informações detalhadas sobre o problema. Quando possível, a análise de código exibe o número da linha e a lógica da análise que levou ao aviso.
 
  ![Aviso de análise de código expandido](../test/media/ca-cpp-expanded-callout.png "CA_CPP_Expanded_Callout")
@@ -57,7 +57,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 > [!TIP]
 >  Você pode executar a análise de código novamente na janela Análise de Código. Clique no botão **Analisar** e, em seguida, escolha o escopo da análise. A análise pode ser executada na solução inteira ou em um projeto selecionado.
 
-##  <a name="BKMK_Suppress"></a> Suprimindo avisos da análise de código
+## <a name="BKMK_Suppress"></a> Suprimindo avisos da análise de código
  Há ocasiões em que você pode decidir não corrigir um aviso de análise de código. Você pode decidir que resolver o aviso exige recodificação demais considerando a probabilidade de que o problema ocorrerá em qualquer implementação do seu código no mundo real. Ou você pode achar que a análise usada no aviso é inadequada nesse contexto específico. É possível suprimir avisos individuais para que não apareçam mais na janela Análise de Código.
 
  Para suprimir um aviso:
@@ -70,12 +70,12 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 
    Suprimir uma mensagem insere `#pragma(warning:`*WarningId*`)`, que suprime o aviso para a linha de código.
 
-##  <a name="BKMK_Search"></a> Pesquisando e filtrando resultados de análise de código
+## <a name="BKMK_Search"></a> Pesquisando e filtrando resultados de análise de código
  Você pode pesquisar listas longas de mensagens de aviso e pode filtrar avisos em soluções multiprojeto.
 
  ![Pesquisar e filtrar a janela de análise de código](../test/media/ca-searchfilter.png "CA_SearchFilter")
 
-##  <a name="Warnings"></a> Avisos da análise de código C++
+## <a name="Warnings"></a> Avisos da análise de código C++
  A análise de código gera os seguintes avisos para o código C++:
 
 |                                      Regra                                      |                                                  Descrição                                                  |

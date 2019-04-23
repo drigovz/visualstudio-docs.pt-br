@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 22b2073e63d2e6551a47469742142821391c86e3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ae3965647416d7a8e11cf0ea5e24cef1e54a09b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619323"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079779"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>Como: Adicione uma referência de saída do projeto
   Para implantar assemblies de projeto não seja do SharePoint (ou arquivos. xap em projetos do Silverlight) para o SharePoint, adicioná-los como uma referência de saída do projeto.
@@ -28,17 +28,17 @@ ms.locfileid: "56619323"
 
 ### <a name="to-add-a-project-output-reference"></a>Para adicionar uma referência de saída do projeto
 
-1.  Carregar uma solução que contenha pelo menos um projeto do SharePoint e um projeto do SharePoint.
+1. Carregar uma solução que contenha pelo menos um projeto do SharePoint e um projeto do SharePoint.
 
-2.  Na **Gerenciador de soluções**, escolha um item no nó do projeto do SharePoint.
+2. Na **Gerenciador de soluções**, escolha um item no nó do projeto do SharePoint.
 
-3.  No **propriedades** janela, escolha o **Project Output References** propriedade e, em seguida, escolha as reticências (![elipse do Designer de dispositivo móvel do ASP.NET](../sharepoint/media/mwellipsis.gif "ASP. Elipse de Designer de dispositivo móvel NET")) botão ao lado dele.
+3. No **propriedades** janela, escolha o **Project Output References** propriedade e, em seguida, escolha as reticências (![elipse do Designer de dispositivo móvel do ASP.NET](../sharepoint/media/mwellipsis.gif "ASP. Elipse de Designer de dispositivo móvel NET")) botão ao lado dele.
 
-4.  No **Project Output References** diálogo caixa, escolha o **Add** botão.
+4. No **Project Output References** diálogo caixa, escolha o **Add** botão.
 
-5.  No painel Propriedades, escolha a seta ao lado de **tipo de implantação** propriedade e, em seguida, escolha um valor apropriado para o item não seja do SharePoint que você está fazendo referência, como **ElementFile**.
+5. No painel Propriedades, escolha a seta ao lado de **tipo de implantação** propriedade e, em seguida, escolha um valor apropriado para o item não seja do SharePoint que você está fazendo referência, como **ElementFile**.
 
-6.  Escolha a seta ao lado **nome do projeto**, escolha o nome do item de projeto não seja do SharePoint e, em seguida, escolha o **Okey** botão.
+6. Escolha a seta ao lado **nome do projeto**, escolha o nome do item de projeto não seja do SharePoint e, em seguida, escolha o **Okey** botão.
 
 ## <a name="see-also"></a>Consulte também
 - [Fornecer informações de empacotamento e implantação em itens de projeto](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)

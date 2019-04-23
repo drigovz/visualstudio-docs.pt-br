@@ -9,21 +9,21 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98ed22a9a6e570c5e47c6b51ddf4486334205a0f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 1d388db50ae935ef85b720177bd31c832a353d31
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661263"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60080549"
 ---
 # <a name="searching-the-schema-set"></a>Procurando pelo conjunto de esquema
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 XML Schema Explorer permite que você procurar o esquema define as seguintes maneiras:  
   
--   Pesquisa de palavras-chave.  
+- Pesquisa de palavras-chave.  
   
--   Pesquisa Esquema- específica.  
+- Pesquisa Esquema- específica.  
   
 ## <a name="keyword-search"></a>Palavra-chave pesquisa  
  Executar pesquisas de palavra-chave inserindo uma subcadeia de caracteres a **pesquisa SchemaSet** caixa de texto da barra de ferramentas XML Schema Explorer.  
@@ -32,11 +32,11 @@ XML Schema Explorer permite que você procurar o esquema define as seguintes man
   
  XML Schema Explorer procura o esquema definido pelo seguinte:  
   
--   Alguns atributos de `name` ou de `ref` que corresponderem a palavra-chave especificada. Isso permite que você encontrar elementos, atributos, tipos, e assim por diante por nome.  
+- Alguns atributos de `name` ou de `ref` que corresponderem a palavra-chave especificada. Isso permite que você encontrar elementos, atributos, tipos, e assim por diante por nome.  
   
--   Atributos de `schemaLocation` de incluem instruções.  
+- Atributos de `schemaLocation` de incluem instruções.  
   
--   Atributos de `namespace` de instruções de importação.  
+- Atributos de `namespace` de instruções de importação.  
   
 ## <a name="schema-specific-search"></a>Pesquisar esquema específico  
  XML Schema Explorer também inclui as pesquisas internos que você pode acessar usando o menu de contexto XML Schema Explorer. Para obter mais informações sobre menus de contexto disponíveis, consulte [Menus de contexto](../xml-tools/context-menus-xml-schema-explorer.md). Você também pode executar uma pesquisa específica do esquema da exibição inicial; Para obter mais informações, consulte a seção de "detalhes para esquema" na [exibição inicial](../xml-tools/start-view.md) tópico.  
