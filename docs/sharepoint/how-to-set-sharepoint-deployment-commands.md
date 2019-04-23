@@ -12,33 +12,33 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79843389adcd7dc0a4e350e4fd010d450c837a4e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7664dfcfe11d7ab7dc6ab03045533bbd9e69fb9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606676"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077778"
 ---
 # <a name="how-to-set-sharepoint-deployment-commands"></a>Como: Definir comandos de implantação do SharePoint
   Você pode personalizar o processo de implantação, definindo comandos pré e pós-implantação. Esses comandos são executados antes e depois de outras ações de implantação quando você depura soluções do SharePoint no Visual Studio.
 
 ### <a name="to-add-a-pre-deployment-command"></a>Para adicionar um comando de pré-implantação
 
-1.  Na barra de menus, escolha **Project** > **\<*ProjectName*> propriedades**.
+1. Na barra de menus, escolha **Project** > **\<*ProjectName*> propriedades**.
 
-2.  Escolha o **SharePoint** guia.
+2. Escolha o **SharePoint** guia.
 
-3.  No **linha de comando de pré-implantação** texto, digite os comandos do MS-DOS ou MSBuild para personalizar esta etapa.
+3. No **linha de comando de pré-implantação** texto, digite os comandos do MS-DOS ou MSBuild para personalizar esta etapa.
 
      Por exemplo, para listar o conteúdo do diretório antes da conclusão da implantação, insira **dir**.
 
 ### <a name="to-add-a-post-deployment-command"></a>Para adicionar um comando de pós-implantação
 
-1.  Na barra de menus, escolha **Project** > **\<*ProjectName*> propriedades**.
+1. Na barra de menus, escolha **Project** > **\<*ProjectName*> propriedades**.
 
-2.  Escolha o **SharePoint** guia.
+2. Escolha o **SharePoint** guia.
 
-3.  No **linha de comando de pós-implantação** texto, digite os comandos do MS-DOS ou MSBuild para personalizar esta etapa.
+3. No **linha de comando de pós-implantação** texto, digite os comandos do MS-DOS ou MSBuild para personalizar esta etapa.
 
      Por exemplo, para listar o conteúdo do diretório após a conclusão da implantação, insira **dir**. Para usar uma variável do MSBuild para copiar o assembly do diretório de compilação, digite **copiar $ (TargetPath) c:\DeploymentDirectory**.
 

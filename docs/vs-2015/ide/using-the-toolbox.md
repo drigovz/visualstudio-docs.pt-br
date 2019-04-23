@@ -27,12 +27,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c8498397e45aad889d575c4ec337d107755b2dba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 207beb085046748a4eaabdff025cd461c5ddba26
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788259"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073352"
 ---
 # <a name="using-the-toolbox"></a>Usando a caixa de ferramentas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,23 +48,23 @@ Você pode usar a caixa de ferramentas para adicionar controles e outros itens a
   
  Você pode reorganizar os itens em uma guia de caixa de ferramentas ou adicionar guias e itens personalizados usando os seguintes comandos no menu de contexto:  
   
--   **Renomear Item** – renomeia o item selecionado.  
+- **Renomear Item** – renomeia o item selecionado.  
   
--   **Mostrar Todos** – mostra todos os controles possíveis (e não apenas os que se aplicam ao designer atual).  
+- **Mostrar Todos** – mostra todos os controles possíveis (e não apenas os que se aplicam ao designer atual).  
   
--   **Exibição de Lista** – mostra os controles em uma lista vertical. Se todas as opções estiverem desmarcadas, os controles aparecem na horizontal.  
+- **Exibição de Lista** – mostra os controles em uma lista vertical. Se todas as opções estiverem desmarcadas, os controles aparecem na horizontal.  
   
--   **Escolher Itens** – abre a caixa de diálogo **Escolher Itens da Caixa de Ferramentas** para que você possa especificar os itens que aparecem na **Caixa de Ferramentas**. Você pode mostrar ou ocultar um item, marcando ou desmarcando a caixa de seleção.  
+- **Escolher Itens** – abre a caixa de diálogo **Escolher Itens da Caixa de Ferramentas** para que você possa especificar os itens que aparecem na **Caixa de Ferramentas**. Você pode mostrar ou ocultar um item, marcando ou desmarcando a caixa de seleção.  
   
--   **Classificar itens em ordem alfabética** – classifica os itens por nome.  
+- **Classificar itens em ordem alfabética** – classifica os itens por nome.  
   
--   **Redefinir barra de ferramentas** – restaura as configurações e itens padrão da caixa de ferramentas.  
+- **Redefinir barra de ferramentas** – restaura as configurações e itens padrão da caixa de ferramentas.  
   
--   **Adicionar Guia** – adiciona uma nova guia da caixa de ferramentas.  
+- **Adicionar Guia** – adiciona uma nova guia da caixa de ferramentas.  
   
--   **Mover para Cima** – move o item selecionado para cima.  
+- **Mover para Cima** – move o item selecionado para cima.  
   
--   **Mover para Baixo** – move o item selecionado para baixo.  
+- **Mover para Baixo** – move o item selecionado para baixo.  
   
 ## <a name="creating-and-distributing-custom-toolbox-controls"></a>Criando e distribuindo controles da caixa de ferramentas  
  Você pode criar um controle de caixa de ferramentas personalizado no Visual Basic ou Visual C#, e pode começar com um modelo de projeto baseado no [Windows Presentation Foundation](../extensibility/creating-a-wpf-toolbox-control.md) ou no [Windows Forms](../misc/how-to-create-a-toolbox-control-that-uses-windows-forms.md). Você pode distribuir o controle para seus colegas de equipe ou publicá-lo na Web usando o [Instalador de Controles da Caixa de Ferramentas](http://download.microsoft.com/download/8/3/6/836657BD-9CCB-4ED4-B9D2-FB769473B284/TCI_whitepaper.docx).

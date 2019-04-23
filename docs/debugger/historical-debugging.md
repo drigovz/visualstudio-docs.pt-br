@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edf0bc2b233a44893e9a526e172fa75043ebaa42
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: e44e62997cac1060047de03253880bbf577935da
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56689259"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075307"
 ---
 # <a name="historical-debugging-c-visual-basic-c"></a>Histórico de depuração (C#, Visual Basic, C++)
 
@@ -31,8 +31,8 @@ Depuração de histórico é um modo de depuração que depende das informaçõe
 
 ## <a name="how-do-i-start-using-historical-debugging"></a>Como posso começar a usar a depuração de histórico?
 
- IntelliTrace está ativado por padrão. Tudo o que você precisa fazer é decidir quais eventos e chamadas de função são interessantes para você, e se você deseja exibir instantâneos do estado completo do aplicativo. Para obter mais informações sobre como definir o que você deseja procurar, consulte [recursos do IntelliTrace](../debugger/intellitrace-features.md). Suporte a recursos varia por idioma e o aplicativo de tipo.
+IntelliTrace está ativado por padrão. Tudo o que você precisa fazer é decidir quais eventos e chamadas de função são interessantes para você, e se você deseja exibir instantâneos do estado completo do aplicativo. Para obter mais informações sobre como definir o que você deseja procurar, consulte [recursos do IntelliTrace](../debugger/intellitrace-features.md). Suporte a recursos varia por idioma e o aplicativo de tipo.
 
- - Para exibir instantâneos de histórico de depuração, consulte [inspecionar estados anteriores do aplicativo usando o IntelliTrace](../debugger/view-historical-application-state.md)
- - Para aprender a inspecionar variáveis e navegar no código, consulte [inspecionar seu aplicativo com o histórico de depuração](../debugger/historical-debugging-inspect-app.md)
- - Para saber mais sobre depuração com eventos do IntelliTrace, consulte [instruções passo a passo: usando o IntelliTrace](../debugger/walkthrough-using-intellitrace.md).
+- Para exibir instantâneos de histórico de depuração, consulte [inspecionar estados anteriores do aplicativo usando o IntelliTrace](../debugger/view-historical-application-state.md)
+- Para aprender a inspecionar variáveis e navegar no código, consulte [inspecionar seu aplicativo com o histórico de depuração](../debugger/historical-debugging-inspect-app.md)
+- Para saber mais sobre depuração com eventos do IntelliTrace, consulte [passo a passo: Usando o IntelliTrace](../debugger/walkthrough-using-intellitrace.md).

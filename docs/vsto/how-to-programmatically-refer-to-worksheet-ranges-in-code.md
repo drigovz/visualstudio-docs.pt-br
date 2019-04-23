@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: be71d18b7fa0b3cc9dba8a27c6c462d5ea1a2434
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e82b884965c5c7362951c7d94199f90c93fbfc3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608429"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073690"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>Como: Por meio de programação se referir a intervalos de planilhas em código
   Usar um processo semelhante para referir-se ao conteúdo de um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ou um objeto de intervalo do Excel nativo.
@@ -32,7 +32,7 @@ ms.locfileid: "56608429"
 
 ### <a name="to-refer-to-a-namedrange-control"></a>Para se referir a um controle NamedRange
 
-1.  Atribuir uma cadeia de caracteres para o <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> propriedade do <xref:Microsoft.Office.Tools.Excel.NamedRange> controle. Esse código deve ser colocado em uma classe de folha, não no `ThisWorkbook` classe.
+1. Atribuir uma cadeia de caracteres para o <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> propriedade do <xref:Microsoft.Office.Tools.Excel.NamedRange> controle. Esse código deve ser colocado em uma classe de folha, não no `ThisWorkbook` classe.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#46)]
      [!code-vb[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#46)]
@@ -42,7 +42,7 @@ ms.locfileid: "56608429"
 
 ### <a name="to-refer-to-a-native-range-object"></a>Para se referir a um objeto range nativo
 
-1.  Atribuir uma cadeia de caracteres para o <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> propriedade do intervalo.
+1. Atribuir uma cadeia de caracteres para o <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> propriedade do intervalo.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#47)]
      [!code-vb[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#47)]

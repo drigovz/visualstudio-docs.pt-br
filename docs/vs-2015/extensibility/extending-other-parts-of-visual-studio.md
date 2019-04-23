@@ -11,12 +11,12 @@ ms.assetid: 27d2f1e1-2503-4aca-9cfc-707abd07ccf0
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5a7602a152054587fa450beae56ad6cbe2c72241
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 70b94eeb48f6b099b3183eb6cbee5e4846d0d92b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925333"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075448"
 ---
 # <a name="extending-other-parts-of-visual-studio"></a>Estendendo outras partes do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ Há muitas partes mais da IU do Visual Studio que você pode estender. Aqui, mos
 ## <a name="extending-the-toolbox"></a>Estendendo a caixa de ferramentas
  Saiba como adicionar novos controles e outros itens à caixa de ferramentas e como usar a funcionalidade de caixa de ferramentas:
 
--   [Criar um controle de caixa de ferramentas do WPF](../extensibility/creating-a-wpf-toolbox-control.md)
+- [Criar um controle de caixa de ferramentas do WPF](../extensibility/creating-a-wpf-toolbox-control.md)
 
--   [Criar um controle de caixa de ferramentas do Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md)
+- [Criar um controle de caixa de ferramentas do Windows Forms](../extensibility/creating-a-windows-forms-toolbox-control.md)
 
 ## <a name="extending-the-status-bar"></a>Estendendo a barra de status
  Saiba como ler e gravar para a barra de status e a barra de progresso e como fornecer animações e outra interface de usuário: [Estendendo a barra de Status](../extensibility/extending-the-status-bar.md).

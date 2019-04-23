@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7583a25e000478e473cce61fd85e0158bad4212
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7fab8a42d5559c23ce6816d5a247561a4376a7fe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609548"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075825"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 O manifesto para a ferramenta de código é um aplicativo de console que usa um arquivo .imagemanifest para o serviço de imagem do Visual Studio e gera um wrapper ou arquivos para fazer referência a valores do manifesto de imagem em C++, c#, VB ou arquivos. VSCT para extensões do Visual Studio. Essa ferramenta gera arquivos de wrapper que podem ser usados para solicitantes imagens do Visual Studio imagem serviço diretamente ou para passar os valores do manifesto por meio de APIs se o código não processa qualquer uma de sua própria interface do usuário e a renderização.
@@ -40,17 +40,17 @@ O manifesto para a ferramenta de código é um aplicativo de console que usa um 
 
  **Exemplos**
 
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp
 
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ /namespace: meu:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ /namespace: meu:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend
 
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds
 
 ## <a name="notes"></a>Observações
 
--   É recomendável que você usar essa ferramenta com manifestos de imagem que foram gerados pelo manifesto de ferramenta de recursos.
+- É recomendável que você usar essa ferramenta com manifestos de imagem que foram gerados pelo manifesto de ferramenta de recursos.
 
--   A ferramenta olha apenas entradas de símbolo para gerar os wrappers de código. Se um manifesto de imagem não contiver nenhum símbolo, os wrappers de código gerado será vazios. Se houver uma imagem ou um conjunto de imagens no manifesto de imagem que não usam símbolos, elas serão excluídas do wrapper de código.
+- A ferramenta olha apenas entradas de símbolo para gerar os wrappers de código. Se um manifesto de imagem não contiver nenhum símbolo, os wrappers de código gerado será vazios. Se houver uma imagem ou um conjunto de imagens no manifesto de imagem que não usam símbolos, elas serão excluídas do wrapper de código.
 
 ## <a name="sample-output"></a>Saída de exemplo
  **Wrappers do c#**

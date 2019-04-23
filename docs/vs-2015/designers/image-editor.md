@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0bda440c463082d62568bcdfd0525eebe2a17c61
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 08fd0d6e33de0c032ab63f013fca7ee3174b260e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54768297"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077375"
 ---
 # <a name="image-editor"></a>Editor de imagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,13 +44,13 @@ Este documento descreve como trabalhar com o Editor de Imagens do [!INCLUDE[vspr
   
 #### <a name="to-add-an-image-to-your-project"></a>Para adicionar uma imagem ao seu projeto  
   
-1.  No **Gerenciador de Soluções**, abra o menu de atalho do projeto ao qual você deseja adicionar a imagem e selecione **Adicionar**, **Novo Item**.  
+1. No **Gerenciador de Soluções**, abra o menu de atalho do projeto ao qual você deseja adicionar a imagem e selecione **Adicionar**, **Novo Item**.  
   
-2.  Na caixa de diálogo **Adicionar Novo Item**, em **Instalado**, selecione **Gráficos** e escolha um formato de arquivo apropriado para a imagem. Para obter informações sobre como escolher um formato de arquivo com base nos seus requisitos, consulte a seção a seguir.  
+2. Na caixa de diálogo **Adicionar Novo Item**, em **Instalado**, selecione **Gráficos** e escolha um formato de arquivo apropriado para a imagem. Para obter informações sobre como escolher um formato de arquivo com base nos seus requisitos, consulte a seção a seguir.  
   
-3.  Especifique o **Nome** do arquivo de imagem e a **Localização** na qual você deseja que ele seja criado.  
+3. Especifique o **Nome** do arquivo de imagem e a **Localização** na qual você deseja que ele seja criado.  
   
-4.  Escolha o botão **Adicionar**.  
+4. Escolha o botão **Adicionar**.  
   
 ### <a name="choosing-the-image-format"></a>Escolhendo o formato da imagem  
  Dependendo de como você planeja usar a imagem, determinados formatos de arquivo podem ser mais apropriados do que outros. Por exemplo, alguns formatos podem não dar suporte a um recurso que você precisa, como transparência ou um formato de cor específico ou então pode não oferecer uma compactação adequada para o tipo de conteúdo de imagem que você planeja.  
@@ -111,10 +111,10 @@ Este documento descreve como trabalhar com o Editor de Imagens do [!INCLUDE[vspr
 |**Grade**|Habilita ou desabilita a grade que mostra os limites de pixel. A grade pode não aparecer até você ampliar a imagem.|  
 |**Exibição do Próximo Nível de MIP**|Ativa o próximo nível maior de MIP em uma cadeia de mapas MIP. O nível de MIP ativo é exibido na área de design. Este item só está disponível para texturas que têm níveis de MIP.|  
 |**Exibir um Nível de MIP Anterior**|Ativa o próximo nível menor de MIP em uma cadeia de mapas MIP. O nível de MIP ativo é exibido na área de design. Este item só está disponível para texturas que têm níveis de MIP.|  
-|**Canal vermelho**<br /><br /> **Canal verde**<br /><br /> **Canal azul**<br /><br /> **Canal alfa**|Habilita ou desabilita o canal da cor específica. **Observação:** habilitando ou desabilitando sistematicamente os canais de cor, você pode isolar problemas relacionados a um ou mais deles. Por exemplo, você poderia identificar a transparência alfa incorreta.|  
+|**Canal vermelho**<br /><br /> **Canal verde**<br /><br /> **Canal azul**<br /><br /> **Canal alfa**|Habilita ou desabilita o canal da cor específica. **Observação:**  Habilitando ou desabilitando sistematicamente os canais de cor, você pode isolar problemas relacionados a um ou mais deles. Por exemplo, você poderia identificar a transparência alfa incorreta.|  
 |**Tela de Fundo**|Habilita ou desabilita a exibição da tela de fundo através das partes transparentes da imagem. Você pode configurar como a tela de fundo é exibida escolhendo entre estas opções:<br /><br /> **Quadriculado**<br /> Usa uma cor verde junto com a cor da tela de fundo especificada para exibir a tela de fundo como um padrão quadriculado. Você pode usar essa opção para ajudar a tornar as partes transparentes da imagem mais visíveis.<br /><br /> Tela de fundo branco<br /> Usa a cor branca para exibir a tela de fundo.<br /><br /> Tela de fundo preto<br /> Usa a cor preta para exibir a tela de fundo.<br /><br /> Animar a tela de fundo<br /> Movimenta o padrão quadriculado lentamente em panorâmica. Você pode usar essa opção para ajudar a tornar as partes transparentes da imagem mais visíveis.|  
 |**Propriedades**|Alterna entre abrir e fechar a janela **Propriedades**.|  
-|**Avançado**|Contém comandos e opções adicionais.<br /><br /> **Filtros**<br /><br /> Fornece vários filtros de imagem comuns: **Preto e branco**, **Desfoque**, **Iluminar**, **Escurecer**, **Detecção de borda**, **Colocar em alto-relevo**, **Inverter cores**, **Ripple**, **Tom sépia** e **Ajustar nitidez**.<br /><br /> **Mecanismos Gráficos**<br /><br /> **Renderizar com o D3D11**<br /> Use o Direct3D 11 para renderizar a área de design do Editor de Imagens.<br /><br /> **Renderizar com o D3D11WARP**<br /> Use o Direct3D 11 WARP (Windows Advanced Rasterization Platform) para renderizar a área de design do Editor de Imagens.<br /><br /> **Ferramentas**<br /><br /> **Inverter Horizontalmente**<br /> Transpõe a imagem ao redor do seu eixo horizontal, também chamado x.<br /><br /> **Inverter Verticalmente**<br /> Transpõe a imagem ao redor do seu eixo vertical, também chamado y.<br /><br /> **Gerar Mips**<br /> Gera os níveis de MIP para uma imagem. Se os níveis de MIP já existirem, eles serão recriados do maior nível de MIP. Quaisquer alterações feitas aos níveis de MIP menores serão perdidas. Para salvar os níveis de MIP que você tiver gerado, você deverá usar o formato .dds para salvar a imagem.<br /><br /> **Exibir**<br /><br /> **Taxa de Quadros**<br /> Quando habilitado exibe a taxa de quadros no canto superior direito da área de design. A taxa de quadros é o número de quadros desenhados por segundo. **Dica:** você pode escolher o botão **Avançado** para executar novamente o último comando.|  
+|**Avançado**|Contém comandos e opções adicionais.<br /><br /> **Filtros**<br /><br /> Fornece vários filtros de imagem comuns: **Preto e branco**, **Desfoque**, **Iluminar**, **Escurecer**, **Detecção de borda**, **Colocar em alto-relevo**, **Inverter cores**, **Ripple**, **Tom sépia** e **Ajustar nitidez**.<br /><br /> **Mecanismos Gráficos**<br /><br /> **Renderizar com o D3D11**<br /> Use o Direct3D 11 para renderizar a área de design do Editor de Imagens.<br /><br /> **Renderizar com o D3D11WARP**<br /> Use o Direct3D 11 WARP (Windows Advanced Rasterization Platform) para renderizar a área de design do Editor de Imagens.<br /><br /> **Ferramentas**<br /><br /> **Inverter Horizontalmente**<br /> Transpõe a imagem ao redor do seu eixo horizontal, também chamado x.<br /><br /> **Inverter Verticalmente**<br /> Transpõe a imagem ao redor do seu eixo vertical, também chamado y.<br /><br /> **Gerar Mips**<br /> Gera os níveis de MIP para uma imagem. Se os níveis de MIP já existirem, eles serão recriados do maior nível de MIP. Quaisquer alterações feitas aos níveis de MIP menores serão perdidas. Para salvar os níveis de MIP que você tiver gerado, você deverá usar o formato .dds para salvar a imagem.<br /><br /> **Exibir**<br /><br /> **Taxa de Quadros**<br /> Quando habilitado exibe a taxa de quadros no canto superior direito da área de design. A taxa de quadros é o número de quadros desenhados por segundo. **Dica:**  Você pode escolher o botão **Avançado** para executar novamente o último comando.|  
   
  Esta é a barra de ferramentas do **Editor de Imagens**.  
   
@@ -136,7 +136,7 @@ Este documento descreve como trabalhar com o Editor de Imagens do [!INCLUDE[vspr
 |**Cortar**|Corta a imagem para a seleção ativa.|  
   
 ### <a name="working-with-mip-levels"></a>Trabalhando com níveis de MIP  
- Alguns formatos de imagem — por exemplo, DirectDraw Surface (.dds) — dão suporte a níveis de MIP para LOD (Nível de Detalhe) de espaço de texturas. Para obter informações sobre como gerar e trabalhar com níveis de MIP, consulte [Como criar e modificar níveis de MIP](../designers/how-to-create-and-modify-mip-levels.md)  
+ Alguns formatos de imagem — por exemplo, DirectDraw Surface (.dds) — dão suporte a níveis de MIP para LOD (Nível de Detalhe) de espaço de texturas. Para obter informações sobre como gerar e trabalhar com níveis de MIP, confira [Como: Criar e modificar níveis MIP](../designers/how-to-create-and-modify-mip-levels.md)  
   
 ### <a name="working-with-transparency"></a>Trabalhando com transparência  
  Alguns formatos de imagem — por exemplo, DirectDraw Surface (.dds) — dão suporte a transparência. Há várias maneiras de usar transparências, dependendo da ferramenta que você está usando. Para especificar o nível de transparência de uma seleção de cor, na janela **Propriedades**, defina o componente **A** (alfa) da seleção de cores. Veja aqui como a transparência é aplicada nos diferentes tipos de controle de ferramentas:  
@@ -146,7 +146,7 @@ Este documento descreve como trabalhar com o Editor de Imagens do [!INCLUDE[vspr
 |**Lápis**, **Pincel**, **Spray**, **Linha**, **Retângulo**, **Retângulo Arredondado**, **Elipse**, **Texto**|Para mesclar a seleção de cor ativa com a imagem na janela **Propriedades**, expanda o grupo de propriedades **Canais**, marque a caixa de seleção **Desenhar** no canal **Alfa** e desenhe normalmente.<br /><br /> Para desenhar usando a seleção de cor ativa e deixar o valor alfa da imagem em vigor, desmarque a caixa de seleção **Desenhar** do canal **Alfa** e, em seguida, desenhe normalmente.|  
 |**Preenchimento**|Para mesclar a seleção de cor ativa junto com a imagem, escolha a área a ser preenchida.<br /><br /> Para usar a seleção de cor ativa, incluindo o valor do canal alfa, para substituir a imagem, mantenha a tecla Shift pressionada e escolha a área a ser preenchida.|  
   
-###  <a name="ImageProperties"></a> Propriedades da imagem  
+### <a name="ImageProperties"></a> Propriedades da imagem  
  Você pode usar a janela **Propriedades** para especificar várias propriedades da imagem. Por exemplo, você pode definir as propriedades Largura e Altura para redimensionar a imagem.  
   
  A tabela a seguir descreve as propriedades da imagem.  
@@ -171,9 +171,9 @@ Este documento descreve como trabalhar com o Editor de Imagens do [!INCLUDE[vspr
 #### <a name="resizing-images"></a>Redimensionando imagens  
  Essas são duas maneiras de redimensionar uma imagem. Em ambos os casos, o Editor de Imagens usa interpolação bi-linear para obter uma nova amostra da imagem.  
   
--   Na janela **Propriedades**, especifique os novos valores para as propriedades **Largura** e **Altura**.  
+- Na janela **Propriedades**, especifique os novos valores para as propriedades **Largura** e **Altura**.  
   
--   Selecione toda a imagem e use os marcadores de borda para redimensionar a imagem.  
+- Selecione toda a imagem e use os marcadores de borda para redimensionar a imagem.  
   
 ### <a name="working-with-tools"></a>Trabalhando com ferramentas  
   
@@ -207,7 +207,7 @@ Este documento descreve como trabalhar com o Editor de Imagens do [!INCLUDE[vspr
 |Ctrl|||Copia e redimensiona o conteúdo da região selecionada.|  
 |Ctrl|Shift||Copia e redimensiona proporcionalmente o conteúdo da região selecionada.|  
   
-####  <a name="ToolProperties"></a> Propriedades da ferramenta  
+#### <a name="ToolProperties"></a> Propriedades da ferramenta  
  Embora uma ferramenta esteja selecionada, você pode usar a janela **Propriedades** para especificar os detalhes sobre como isso afeta a imagem. Por exemplo, você pode definir a espessura da ferramenta **Lápis** ou a cor da ferramenta **Pincel**.  
   
  Você pode definir uma cor de primeiro plano e uma cor da tela de fundo. Ambos dão suporte a um canal alfa para fornecer opacidade definida pelo usuário. As configurações se aplicam a todas as ferramentas. Se você usar um mouse, o botão esquerdo do mouse corresponderá à cor de primeiro plano e o botão direito do mouse corresponde à cor da tela de fundo.  

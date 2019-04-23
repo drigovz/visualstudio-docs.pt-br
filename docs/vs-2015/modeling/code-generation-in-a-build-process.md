@@ -12,12 +12,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 61301fce94ab1359a10249f739d2bf613ebfdda8
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: f2146c8a15292ddc9233c8e10b8f58f5212df0c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000007"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077596"
 ---
 # <a name="code-generation-in-a-build-process"></a>Geração de código em um processo de compilação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,31 +27,31 @@ Há algumas diferenças em termos do que as tarefas de compilação podem fazer,
 
 Isso significa que você não pode acessar itens como nomes de arquivo do projeto da mesma forma quando você cria um modelo de texto no MSBuild. No entanto, você pode [passar informações de ambiente para modelos de texto e processadores de diretriz usando parâmetros de compilação](#parameters).
 
-##  <a name="buildserver"></a> Configurar seus computadores
+## <a name="buildserver"></a> Configurar seus computadores
 
 Para habilitar tarefas de compilação no seu computador de desenvolvimento, instale [SDK de modelagem do Visual Studio](https://www.microsoft.com/download/details.aspx?id=48148).
 
 Se [seu servidor de compilação](http://msdn.microsoft.com/library/788443c3-0547-452e-959c-4805573813a9) é executado em um computador no qual o Visual Studio não estiver instalado, copie os seguintes arquivos para o computador de build do seu computador de desenvolvimento. Substitua os números da versão mais recente por ‘*’.
 
--   $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
+- $(ProgramFiles)\MSBuild\Microsoft\VisualStudio\v*.0\TextTemplating
 
-    -   Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Sdk.Host.*.0.dll
 
-    -   Microsoft.TextTemplating.Build.Tasks.dll
+    - Microsoft.TextTemplating.Build.Tasks.dll
 
-    -   Microsoft.TextTemplating.targets
+    - Microsoft.TextTemplating.targets
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
+- $(ProgramFiles)\Microsoft Visual Studio *.0\VSSDK\VisualStudioIntegration\Common\Assemblies\v4.0
 
-    -   Microsoft.VisualStudio.TextTemplating.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.*.0.dll
 
-    -   Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (vários arquivos)
+    - Microsoft.VisualStudio.TextTemplating.Interfaces.*.0.dll (vários arquivos)
 
-    -   Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.VSHost.*.0.dll
 
--   $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
+- $(ProgramFiles)\Microsoft Visual Studio *.0\Common7\IDE\PublicAssemblies\
 
-    -   Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
+    - Microsoft.VisualStudio.TextTemplating.Modeling.*.0.dll
 
 ## <a name="to-edit-the-project-file"></a>Para editar o arquivo do projeto
 
@@ -90,7 +90,7 @@ Depois dessa linha, insira a importação de modelagem de texto:
 
 Há algumas propriedades que podem ser inseridas em seu arquivo de projeto para controlar a tarefa de transformação:
 
--   Execute a tarefa Transform no início de cada compilação:
+- Execute a tarefa Transform no início de cada compilação:
 
     ```xml
     <PropertyGroup>
@@ -98,7 +98,7 @@ Há algumas propriedades que podem ser inseridas em seu arquivo de projeto para 
     </PropertyGroup>
     ```
 
--   Substitua os arquivos que são somente leitura, por exemplo, porque eles não passam por check-out:
+- Substitua os arquivos que são somente leitura, por exemplo, porque eles não passam por check-out:
 
     ```xml
     <PropertyGroup>
@@ -106,7 +106,7 @@ Há algumas propriedades que podem ser inseridas em seu arquivo de projeto para 
     </PropertyGroup>
     ```
 
--   Transforme cada modelo toda vez:
+- Transforme cada modelo toda vez:
 
     ```xml
     <PropertyGroup>
@@ -213,7 +213,7 @@ $(IncludeFolders);$(MSBuildProjectDirectory)\Include;AnotherFolder;And\Another</
 </PropertyGroup>
 ```
 
-##  <a name="parameters"></a> Passar dados de contexto de build para os modelos
+## <a name="parameters"></a> Passar dados de contexto de build para os modelos
 
 Você pode definir valores de parâmetros no arquivo do projeto. Por exemplo, você pode passar as propriedades de compilação e [variáveis de ambiente](../msbuild/how-to-use-environment-variables-in-a-build.md):
 
@@ -234,7 +234,7 @@ Em um modelo de texto, defina `hostspecific` na diretiva do modelo. Use o [parâ
 The project folder is: <#= ProjectFolder #>
 ```
 
-##  <a name="msbuild"></a> Usando propriedades do projeto no assembly e diretivas de inclusão
+## <a name="msbuild"></a> Usando propriedades do projeto no assembly e diretivas de inclusão
 
 Macros do Visual Studio como $(SolutionDir) não funcionam no MSBuild. Você pode usar as propriedades do projeto como alternativa.
 
@@ -271,13 +271,13 @@ Se você atualizar um arquivo incluído ou outro arquivo lido pelo modelo, o Vis
 
 **O que outras opções existem para transformar modelos de texto?**
 
--   O [utilitário TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) podem ser usados em scripts de comando. Na maioria dos casos, é mais fácil usar o MSBuild.
+- O [utilitário TextTransform](../modeling/generating-files-with-the-texttransform-utility.md) podem ser usados em scripts de comando. Na maioria dos casos, é mais fácil usar o MSBuild.
 
--   [Invocando transformação de texto em uma extensão do VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)
+- [Invocando transformação de texto em uma extensão do VS](../modeling/invoking-text-transformation-in-a-vs-extension.md)
 
--   [Modelos de texto de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md) são transformados pelo Visual Studio.
+- [Modelos de texto de tempo de design](../modeling/design-time-code-generation-by-using-t4-text-templates.md) são transformados pelo Visual Studio.
 
--   [Modelos de texto de tempo de execução](../modeling/run-time-text-generation-with-t4-text-templates.md) são transformados em tempo de execução em seu aplicativo.
+- [Modelos de texto de tempo de execução](../modeling/run-time-text-generation-with-t4-text-templates.md) são transformados em tempo de execução em seu aplicativo.
 
 ## <a name="read-more"></a>Leia mais
 

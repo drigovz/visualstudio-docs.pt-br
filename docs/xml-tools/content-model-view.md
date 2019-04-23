@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b858d0b5fb8aab1dabb90ae47d234869412adf2e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b5f275683309d630f147940e97f924496af79179
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525785"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074812"
 ---
 # <a name="content-model-view"></a>O modo do modelo de conteúdo
 
@@ -97,13 +97,13 @@ Você pode filtrar a superfície de design usando barras de rolagem ou mantendo 
 
 Desfazer/refaz o recurso é habilitado no modo de modelo de conteúdo para as seguintes ações:
 
--   Adicionando um único nó arrastando e soltando-se.
+- Adicionando um único nó arrastando e soltando-se.
 
--   Adicionando mais nós da janela de resultados de pesquisa no esquema Explorer.
+- Adicionando mais nós da janela de resultados de pesquisa no esquema Explorer.
 
--   Adicionando a exibição de nós do início.
+- Adicionando a exibição de nós do início.
 
--   Excluindo única ou mais nós.
+- Excluindo única ou mais nós.
 
 ## <a name="zoom"></a>Aplicar Zoom
 
@@ -111,9 +111,9 @@ Zoom está disponível no canto inferior direito da exibição de modelo de cont
 
 O zoom pode ser controlado das seguintes maneiras:
 
--   Mantendo os **Ctrl** wheel de chave e girar o mouse quando o mouse está sobre a superfície de exibição do modelo de conteúdo.
+- Mantendo os **Ctrl** wheel de chave e girar o mouse quando o mouse está sobre a superfície de exibição do modelo de conteúdo.
 
--   Usando o controle deslizante. O controle deslizante mostra o nível atual de zoom.
+- Usando o controle deslizante. O controle deslizante mostra o nível atual de zoom.
 
 O controle deslizante de Zoom é opaco ao selecioná-la, passe o mouse sobre ele ou usar **Ctrl** com a roda do mouse para aplicar zoom; em todos os outros momentos, é transparente.
 

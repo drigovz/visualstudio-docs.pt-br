@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f2ff75594cd3c1eb560f9cded5dad2a764198fb5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c2498029b5570a1576f62bcf042a7b87f856f3de
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598213"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076648"
 ---
 # <a name="how-to-programmatically-group-rows-in-a-worksheet"></a>Como: Por meio de programação de agrupar linhas em uma planilha
   Você pode agrupar um ou mais linhas inteiras. Para criar um grupo em uma planilha, use um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ou um objeto de intervalo do Excel nativo.
@@ -37,7 +37,7 @@ ms.locfileid: "56598213"
 
 ### <a name="to-create-a-group-of-namedrange-controls-on-a-worksheet"></a>Para criar um grupo de controles NamedRange em uma planilha
 
-1.  Grupo de três intervalos nomeados, chamando o <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> método de cada intervalo. Esse código deve ser colocado em uma classe de folha, não no `ThisWorkbook` classe.
+1. Grupo de três intervalos nomeados, chamando o <xref:Microsoft.Office.Tools.Excel.NamedRange.Group%2A> método de cada intervalo. Esse código deve ser colocado em uma classe de folha, não no `ThisWorkbook` classe.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#32)]
      [!code-vb[Trin_VstcoreExcelAutomation#32](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#32)]
@@ -50,7 +50,7 @@ ms.locfileid: "56598213"
 
 ### <a name="to-create-a-group-of-excel-ranges-in-a-worksheet"></a>Para criar um grupo de intervalos do Excel em uma planilha
 
-1.  Grupo de três intervalos nomeados, chamando o <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> método de cada intervalo. O exemplo a seguir pressupõe que há três <xref:Microsoft.Office.Interop.Excel.Range> controles denominados `data2001`, `data2002`, e `dataAll` na mesma planilha. Cada intervalo nomeado se refere a uma linha inteira na planilha.
+1. Grupo de três intervalos nomeados, chamando o <xref:Microsoft.Office.Interop.Excel.Range.Group%2A> método de cada intervalo. O exemplo a seguir pressupõe que há três <xref:Microsoft.Office.Interop.Excel.Range> controles denominados `data2001`, `data2002`, e `dataAll` na mesma planilha. Cada intervalo nomeado se refere a uma linha inteira na planilha.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#33)]
      [!code-vb[Trin_VstcoreExcelAutomation#33](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#33)]

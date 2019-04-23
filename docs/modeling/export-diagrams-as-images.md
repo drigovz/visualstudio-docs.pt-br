@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f407a3bc3236d76c4cf5418ed3aef2c3388867a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 069a9ce5f3126550f54a5d2780411f6832acee83
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55926184"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077921"
 ---
 # <a name="export-diagrams-as-images"></a>Exportar diagramas como imagens
 No Visual Studio, você pode salvar diagramas de modelagem no formatos de somente leitura para que você pode compartilhá-los com os participantes, usuários ou membros da equipe de projeto que não usam a mesma versão do Visual Studio.
@@ -25,19 +25,19 @@ No Visual Studio, você pode salvar diagramas de modelagem no formatos de soment
 
 ### <a name="to-copy-a-diagram-or-part-of-a-diagram-to-another-application"></a>Para copiar um diagrama ou a parte de um diagrama para outro aplicativo
 
-1.  No diagrama, selecione algumas ou todas as formas.
+1. No diagrama, selecione algumas ou todas as formas.
 
-2.  Sua seleção com o botão direito e, em seguida, clique em **cópia**.
+2. Sua seleção com o botão direito e, em seguida, clique em **cópia**.
 
-3.  Cole a seleção no aplicativo que você deseja.
+3. Cole a seleção no aplicativo que você deseja.
 
 ### <a name="to-save-a-modeling-diagram-as-an-xml-paper-specification-xps-file"></a>Para salvar um diagrama de modelagem como um arquivo XML Paper Specification (XPS)
 
-1.  Sobre o **arquivo** menu, clique em **impressão** para abrir o **impressão** caixa de diálogo.
+1. Sobre o **arquivo** menu, clique em **impressão** para abrir o **impressão** caixa de diálogo.
 
-2.  No **nome** lista, selecione **Microsoft XPS Document Writer**e, em seguida, clique em **Okey**.
+2. No **nome** lista, selecione **Microsoft XPS Document Writer**e, em seguida, clique em **Okey**.
 
-3.  No **salve o arquivo como** caixa de diálogo, salve o arquivo como um **documento XPS (\*. XPS)** arquivo.
+3. No **salve o arquivo como** caixa de diálogo, salve o arquivo como um **documento XPS (\*. XPS)** arquivo.
 
 ## <a name="net-framework-security"></a>Segurança do .NET Framework
 

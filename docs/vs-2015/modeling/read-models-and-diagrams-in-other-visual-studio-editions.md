@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c02e700eaa17f29726d9e3ddee83bfbc4874fdda
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923978"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073521"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Ler modelos e diagramas em outras edições do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,16 +35,16 @@ Quando você abre um modelo em uma versão do Visual Studio que não dá suporte
   
  Para ler um diagrama UML ou em um diagrama de camada, o conjunto mínimo de arquivos que você precisa é da seguinte maneira:  
   
--   Os dois arquivos para o diagrama que você deseja ler, por exemplo, de diagrama **MyDiagram.classdiagram e MyDiagram.classdiagram.layout**.  
+- Os dois arquivos para o diagrama que você deseja ler, por exemplo, de diagrama **MyDiagram.classdiagram e MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
     >  Para obter diagramas de camada, você também deve ter o arquivo chamado _MyDiagram_**. layerdiagram.suppressions**.  
   
--   Arquivo de projeto de modelagem (**MyModel.modelproj**)  
+- Arquivo de projeto de modelagem (**MyModel.modelproj**)  
   
--   O arquivo de modelo de raiz (**ModelDefinition\MyModel.uml**)  
+- O arquivo de modelo de raiz (**ModelDefinition\MyModel.uml**)  
   
--   Os arquivos de pacote para qualquer pacote referenciado no diagrama (**ModelDefinition\MyPackage.uml**)  
+- Os arquivos de pacote para qualquer pacote referenciado no diagrama (**ModelDefinition\MyPackage.uml**)  
   
 ## <a name="changes-that-you-can-make-in-read-only-mode"></a>Alterações que você pode fazer no modo somente leitura  
  Se você abrir um modelo e seus diagramas em uma versão do Visual Studio que não dá suporte à criação de modelo, você não pode alterar o modelo. Ou seja, você não pode alterar os elementos e relações que são exibidas em diagramas ou no Gerenciador de modelos. No entanto, você pode fazer algumas alterações no layout dos diagramas:  
@@ -55,7 +55,7 @@ Quando você abre um modelo em uma versão do Visual Studio que não dá suporte
   
   Você pode salvar essas alterações. Se você quiser fazer as alterações visíveis para outros usuários, você deve pelo menos enviar atualizada **. layout** arquivos.  
   
-##  <a name="RelatedTopics"></a> Tópicos relacionados  
+## <a name="RelatedTopics"></a> Tópicos relacionados  
   
 |Título|Descrição|  
 |-----------|-----------------|  

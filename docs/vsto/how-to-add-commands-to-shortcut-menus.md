@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dac53bc06cb06200dd61adca27fa4894c3c4d8dc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3b20b10a37908e2c9744aeac63bb3eda091da478
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598174"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074486"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>Como: Adicionar comandos aos menus de atalho
   Este tópico demonstra como adicionar comandos ao menu de atalho em um aplicativo do Office usando um suplemento do VSTO.
@@ -27,26 +27,26 @@ ms.locfileid: "56598174"
 
 ### <a name="to-add-commands-to-shortcut-menus-in-office"></a>Para adicionar comandos a menus de atalho no Office
 
-1.  Adicionar um **XML da faixa de opções** item a um nível de documento ou projeto do suplemento do VSTO. Para obter mais informações, confira [Como: Introdução à personalização da faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md). No
+1. Adicionar um **XML da faixa de opções** item a um nível de documento ou projeto do suplemento do VSTO. Para obter mais informações, confira [Como: Introdução à personalização da faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md). No
 
-2.  **Gerenciador de soluções**, selecione **ThisAddin.cs** ou **ThisAddIn. vb**.
+2. **Gerenciador de soluções**, selecione **ThisAddin.cs** ou **ThisAddIn. vb**.
 
-3.  Na barra de menus, escolha **Exibir** > **Código**.
+3. Na barra de menus, escolha **Exibir** > **Código**.
 
      O **ThisAddin** arquivo de classe é aberto no Editor de códigos.
 
-4.  Adicione o seguinte código para o **ThisAddin** classe. Esse código substitui o `CreateRibbonExtensibilityObject` método e retorna o XML da faixa de opções de classe para o aplicativo do Office.
+4. Adicione o seguinte código para o **ThisAddin** classe. Esse código substitui o `CreateRibbonExtensibilityObject` método e retorna o XML da faixa de opções de classe para o aplicativo do Office.
 
      [!code-csharp[Trin_WordAddIn_Menus#1](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#1)]
      [!code-vb[Trin_WordAddIn_Menus#1](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#1)]
 
-5.  Na **Gerenciador de soluções**, selecione o arquivo XML de faixa de opções. Por padrão, o arquivo XML de faixa de opções é denominado *Ribbon1.xml*.
+5. Na **Gerenciador de soluções**, selecione o arquivo XML de faixa de opções. Por padrão, o arquivo XML de faixa de opções é denominado *Ribbon1.xml*.
 
-6.  Na barra de menus, escolha **Exibir** > **Código**.
+6. Na barra de menus, escolha **Exibir** > **Código**.
 
      O arquivo xml de faixa de opções é aberto no Editor de códigos.
 
-7.  No Editor de códigos, adicione o XML que descreve o menu de atalho e o controle que você deseja adicionar ao menu de atalho.
+7. No Editor de códigos, adicione o XML que descreve o menu de atalho e o controle que você deseja adicionar ao menu de atalho.
 
      O exemplo a seguir adiciona um botão, um menu e um controle da Galeria para o menu de atalho para um documento do word. A ID do controle desse menu de atalho é ContextMenuText. Para obter uma lista completa de controle de atalho do Office 2010 IDs, consulte [arquivos de Ajuda do Office 2010: Identificadores de controle de interface de usuário fluent do Office](http://go.microsoft.com/fwlink/?LinkID=181052).
 
@@ -70,7 +70,7 @@ ms.locfileid: "56598174"
     </customUI>
     ```
 
-8.  Na **Gerenciador de soluções**, escolha **MyRibbon.cs** ou **Myribbon**.
+8. Na **Gerenciador de soluções**, escolha **MyRibbon.cs** ou **Myribbon**.
 
 9. Adicione um método de retorno de chamada para o `Ribbon1` classe para cada controle que você deseja manipular.
 

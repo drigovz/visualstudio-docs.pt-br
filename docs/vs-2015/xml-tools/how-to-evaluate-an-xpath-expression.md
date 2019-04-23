@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 77c9acae710baeb885bcf901257367251d86c3a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a0c79da47b83f8bf5b44af16ca291e2424011b80
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075604"
 ---
 # <a name="how-to-evaluate-an-xpath-expression"></a>Como: Avaliar uma expressão XPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,32 +23,32 @@ Você pode avaliar expressões XPath com o **QuickWatch** caixa de diálogo. A e
   
  A lista a seguir descreve quais funções são suportadas para avaliar uma expressão XPath:  
   
--   As funções internas XPath são suportadas.  
+- As funções internas XPath são suportadas.  
   
--   As funções internas XSLT não são suportadas.  
+- As funções internas XSLT não são suportadas.  
   
--   As funções definidas pelo usuário não são suportadas.  
+- As funções definidas pelo usuário não são suportadas.  
   
 > [!NOTE]
 >  O procedimento a seguir usa arquivos de Belowavg e Books. XML do [passo a passo: Depurar uma folha de estilos XSLT](../xml-tools/walkthrough-debug-an-xslt-style-sheet.md) tópico.  
   
 ### <a name="to-evaluate-an-xpath-expression"></a>Para avaliar uma expressão XPath  
   
-1.  Inserir um ponto de interrupção na tag de início de `xsl:if` .  
+1. Inserir um ponto de interrupção na tag de início de `xsl:if` .  
   
-2.  Clique o **depurar XSL** na barra de ferramentas do Editor de XML.  
+2. Clique o **depurar XSL** na barra de ferramentas do Editor de XML.  
   
      Inicia e as quebras do depurador na marca `xsl:if` .  
   
-3.  Clique com botão direito e selecione **QuickWatch**.  
+3. Clique com botão direito e selecione **QuickWatch**.  
   
      O **QuickWatch** caixa de diálogo é exibida.  
   
-4.  Insira `./price/text()` no **expressão** campo dos **QuickWatch** caixa de diálogo e clique em **reavaliar**.  
+4. Insira `./price/text()` no **expressão** campo dos **QuickWatch** caixa de diálogo e clique em **reavaliar**.  
   
      O preço do nó atual do catálogo aparece na **valor** caixa.  
   
-5.  Altere a expressão XPath para `./price/text() < $bookAverage` e clique em **reavaliar**.  
+5. Altere a expressão XPath para `./price/text() < $bookAverage` e clique em **reavaliar**.  
   
      O **valor** caixa mostra que a expressão XPath é avaliada como `true`.  
   

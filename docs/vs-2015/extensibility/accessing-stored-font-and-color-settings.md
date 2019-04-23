@@ -12,12 +12,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 88562da16a0c9803441b859b6498782e6e316fb6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6ff962a618ba0001441db748facac8af444cd255
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928441"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078090"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>Acessando configurações de cor e a fonte armazenada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,21 +29,21 @@ O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o ambiente de desenvolvimento int
   
  Portanto, para iniciar a persistência, um VSPackage deve:  
   
--   Obter um <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface chamando `QueryService` contra o provedor de serviços globais.  
+- Obter um <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface chamando `QueryService` contra o provedor de serviços globais.  
   
      `QueryService` deve ser chamado usando um argumento de ID de serviço do `SID_SVsFontAndColorStorage` e um argumento de ID de interface do `IID_IVsFontAndColorStorage`.  
   
--   Use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> método para abrir uma categoria a ser mantido usando o GUID da categoria e um sinalizador de modo como argumentos.  
+- Use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> método para abrir uma categoria a ser mantido usando o GUID da categoria e um sinalizador de modo como argumentos.  
   
      O modo especificado pela `fFlags` argumento, é construído a partir de valores no <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> enumeração. Esse modo de controles:  
   
-    -   As configurações que podem ser acessadas por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
+    - As configurações que podem ser acessadas por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
   
-    -   Todas as configurações ou apenas aqueles que modificam os usuários e que são recuperáveis por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
+    - Todas as configurações ou apenas aqueles que modificam os usuários e que são recuperáveis por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
   
-    -   A maneira de propagar as alterações às configurações do usuário.  
+    - A maneira de propagar as alterações às configurações do usuário.  
   
-    -   O formato dos valores de cor que são usados.  
+    - O formato dos valores de cor que são usados.  
   
 ## <a name="to-use-state-persistence-of-fonts-and-colors"></a>A persistência de estado de uso de fontes e cores  
  Persistência de fontes e cores envolve:  

@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aebe99754b19579bbc3475e0eb9a6941da43e558
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ac9352af6bd22ca2cc21545945d56a10db2c458f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923528"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074382"
 ---
 # <a name="hlsl-shader-debugger"></a>Depurador de sombreador HLSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,9 +53,9 @@ O depurador HLSL no analisador de gráficos do Visual Studio ajuda você a enten
   
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pipeline-stages-window"></a>Para iniciar o depurador HLSL da janela Estágios de Pipeline Gráficos  
   
-1.  Na janela **Gráficos – Estágios de Pipeline**, localize o estágio de pipeline que está associado ao sombreador que deseja depurar.  
+1. Na janela **Gráficos – Estágios de Pipeline**, localize o estágio de pipeline que está associado ao sombreador que deseja depurar.  
   
-2.  Abaixo do título do estágio de pipeline, escolha **Iniciar Depuração**, que aparece como uma pequena seta verde.  
+2. Abaixo do título do estágio de pipeline, escolha **Iniciar Depuração**, que aparece como uma pequena seta verde.  
   
     > [!NOTE]
     >  Esse ponto de entrada no depurador HLSL depura apenas o primeiro thread do sombreador para o estágio correspondente, isto é, o primeiro vértice ou pixel que é processado. Você pode usar o histórico de Pixel para acessar outros threads dos estágios desse sombreador.  

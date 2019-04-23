@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7d0a13a72613ba72be5a90aa65be991d6ca10b3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6dbc2638fa23a1e0c7bf1301c3c978a1ef864c75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657032"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074093"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>Aplicação de configurações entre várias conexões de projeto
 Um plug-in de controle do código-fonte criado usando o código-fonte controle plug-in API versão 1.2, pode usar uma operação em lote para executar a mesma operação de controle do código-fonte entre vários projetos ou vários contextos de conexão. Lotes podem ser usados para eliminar redundantes, caixas de diálogo a experiência do usuário por projeto.
@@ -28,9 +28,9 @@ Um plug-in de controle do código-fonte criado usando o código-fonte controle p
 ## <a name="new-functions"></a>Novas funções
 Novas funções a seguir dão suporte a operação em lote:
 
--   [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
+- [SccBeginBatch](../../extensibility/sccbeginbatch-function.md)
 
--   [SccEndBatch](../../extensibility/sccendbatch-function.md)
+- [SccEndBatch](../../extensibility/sccendbatch-function.md)
 
 O `SCCBeginBatch` função inicia um grupo de operações de controle do código-fonte. O `SccEndBatch` função fecha o grupo. Os grupos não podem ser aninhados.
 

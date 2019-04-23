@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b1859d422b0f3a76947a64e754521efcda46e65
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 1afeb6f75648ce2ab1687fa9262ab28b658b0d70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57982929"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077804"
 ---
 # <a name="install-net-compiler-platform-analyzers"></a>Instalar analisadores do .NET Compiler Platform
 
@@ -24,14 +24,14 @@ O Visual Studio inclui um conjunto principal de plataforma do compilador .NET (*
 
 ## <a name="to-install-nuget-analyzer-packages"></a>Para instalar os pacotes do NuGet analyzer
 
-1. Localize o pacote de analisador que você deseja instalar em www.nuget.org. Por exemplo, você talvez queira [instalar os analisadores FxCop Microsoft](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) para verificar seu código para problemas de segurança e desempenho, entre outros.
+1. Localize o pacote de analisador que você deseja instalar em www.nuget.org.
+
+   Por exemplo, você talvez queira [instalar os analisadores FxCop Microsoft](install-fxcop-analyzers.md#to-install-fxcop-analyzers-as-a-nuget-package) para verificar seu código para problemas de segurança e desempenho, entre outros. Ou, instale [StyleCopAnalyzers](https://www.nuget.org/packages/stylecop.analyzers/) para procurar problemas de estilo na Base de código.
 
 2. Instale o pacote no Visual Studio, usando o [Package Manager Console](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console) ou o [UI Gerenciador de pacotes](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console).
 
    > [!NOTE]
    > A página www.nuget.org para cada pacote de analisador mostra o comando Colar na **Package Manager Console**. Há até mesmo um botão útil para copiar o texto na área de transferência.
-   >
-   > ![Página de NuGet.org mostrando o comando do Console do Gerenciador de pacotes](media/nuget-install-command.png)
 
    Os assemblies do analisador são instalados e aparecem na **Gerenciador de soluções** sob **referências** > **analisadores**.
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f73ebb646c152509be9a7fbdd3287f2673ddadb
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1e5898a95f10875f0880e4b4799f17b78aa8e79b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907510"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073326"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>Edições do Visual Studio compatíveis com o SDK de Visualização e Modelagem
 
@@ -37,13 +37,13 @@ Para definir uma DSL, é necessário ter instalados os seguintes componentes:
 
 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] oferece suporte às seguintes configurações para implantação das linguagens específicas do domínio que foram compiladas:
 
--   Visual Studio Enterprise
+- Visual Studio Enterprise
 
--   Visual Studio Professional
+- Visual Studio Professional
 
--   Pacote redistribuível do Visual Studio Shell (modo integrado) pacote redistribuível
+- Pacote redistribuível do Visual Studio Shell (modo integrado) pacote redistribuível
 
--   Pacote redistribuível Visual Studio Shell (modo isolado) pacote redistribuível
+- Pacote redistribuível Visual Studio Shell (modo isolado) pacote redistribuível
 
 > [!NOTE]
 > Para tornar uma DSL capaz de executar em um produto Shell, você deve definir a **suporte para a edição do VS** campo no manifesto de extensão. Para obter mais informações, consulte [implantar soluções de linguagem específica do domínio](../modeling/deploying-domain-specific-language-solutions.md).

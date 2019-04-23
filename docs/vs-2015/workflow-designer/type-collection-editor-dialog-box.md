@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4817d916fdd29d36f53c6bd3fbca42abb2f7cb15
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8f3b536ff59c01e1be71bd0fcfb57946219cefd1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928753"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073067"
 ---
 # <a name="type-collection-editor-dialog-box"></a>Digite a caixa de diálogo Editor de Coleção
 O **Editor de coleção do tipo** caixa de diálogo é usada para adicionar tipos conhecidos para o **enviar** e **Receive** atividades. Essa caixa de diálogo também é usada para adicionar argumentos de tipo genérico para o **InvokeMethod** atividade. Quando usado para o **envie** e **Receive** atividades para adicionar tipos conhecidos, o **Editor de coleção do tipo** caixa de diálogo requer as adições do tipo ser exclusivos. Se um tipo duplicado é adicionado e a alteração é confirmada clicando **Okey**, uma mensagem de erro é retornada. Quando usado para o **InvokeMethod** atividade para adicionar argumentos de tipo genérico, o **Editor de coleção do tipo** caixa de diálogo permite a adição de tipos duplicados.  
@@ -34,16 +34,16 @@ O **Editor de coleção do tipo** caixa de diálogo é usada para adicionar tipo
   
 #### <a name="to-bring-up-the-type-collection-editor-for-the-send-and-receive-activities"></a>Para transferir anterior o Editor de Coleção do tipo para o enviar e receber atividades  
   
-1.  Selecione o **envie** ou **Receive** atividade na exibição design.  
+1. Selecione o **envie** ou **Receive** atividade na exibição design.  
   
-2.  Pressione **F4** para abrir o **propriedades** janela.  
+2. Pressione **F4** para abrir o **propriedades** janela.  
   
-3.  No **propriedades** , clique no botão de reticências ao lado de **KnownTypes** propriedade.  
+3. No **propriedades** , clique no botão de reticências ao lado de **KnownTypes** propriedade.  
   
 #### <a name="to-bring-up-the-type-collection-editor-for-the-invokemethod-activity"></a>Para transferir anterior o Editor de Coleção do tipo para atividades de InvokeMethod  
   
-1.  Selecione o **InvokeMethod** atividade na exibição design.  
+1. Selecione o **InvokeMethod** atividade na exibição design.  
   
-2.  Pressione **F4** para abrir o **propriedades** janela.  
+2. Pressione **F4** para abrir o **propriedades** janela.  
   
-3.  No **propriedades** , clique no botão de reticências ao lado de **GenericTypeArguments** propriedade.
+3. No **propriedades** , clique no botão de reticências ao lado de **GenericTypeArguments** propriedade.

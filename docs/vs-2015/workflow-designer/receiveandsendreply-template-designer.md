@@ -12,12 +12,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74b3559849fe69da998f59c3caa6e38ff23b238b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9de3e8446250829d431dcbf33b14effd607ab545
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657513"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075766"
 ---
 # <a name="receiveandsendreply-template-designer"></a>Designer do modelo de ReceiveAndSendReply
 O **ReceiveAndSendReply** modelo é usado para criar um par de pré-compilação configurado <xref:System.ServiceModel.Activities.Receive> e <xref:System.ServiceModel.Activities.SendReply> as atividades dentro de um <xref:System.Activities.Statements.Sequence> atividade que são correlacionadas como parte de uma troca de mensagens de solicitação/resposta padrão no servidor.  
@@ -25,11 +25,11 @@ O **ReceiveAndSendReply** modelo é usado para criar um par de pré-compilação
 ## <a name="the-receiveandsendreply-template"></a>O modelo de ReceiveAndSendReply  
  Adicionando **ReceiveAndSendReply** modelo faz três coisas além de criar o <xref:System.ServiceModel.Activities.Receive> e <xref:System.ServiceModel.Activities.SendReply> atividades com um <xref:System.Activities.Statements.Sequence> atividade:  
 
-1.  Configurar <xref:System.ServiceModel.Activities.Receive.OperationName%2A>, propriedades de <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> de atividade de <xref:System.ServiceModel.Activities.Receive> .  
+1. Configurar <xref:System.ServiceModel.Activities.Receive.OperationName%2A>, propriedades de <xref:System.ServiceModel.Activities.Receive.ServiceContractName%2A> de atividade de <xref:System.ServiceModel.Activities.Receive> .  
 
-2.  Associa a propriedade de <xref:System.ServiceModel.Activities.SendReply.Request%2A> de atividade de <xref:System.ServiceModel.Activities.Receive> a atividade de <xref:System.ServiceModel.Activities.Send> .  
+2. Associa a propriedade de <xref:System.ServiceModel.Activities.SendReply.Request%2A> de atividade de <xref:System.ServiceModel.Activities.Receive> a atividade de <xref:System.ServiceModel.Activities.Send> .  
 
-3.  Cria <xref:System.ServiceModel.Activities.CorrelationHandle> como um variável na atividade pai.  
+3. Cria <xref:System.ServiceModel.Activities.CorrelationHandle> como um variável na atividade pai.  
 
 ### <a name="using-the-receiveandsendreply-template-designer"></a>Usando o designer do modelo de ReceiveAndSendReply  
  O **ReceiveAndSendReply** designer de atividade pode ser encontrado na **Messaging** categoria dos **caixa de ferramentas**, que é acessado clicando o **caixa de ferramentas**  na guia [!INCLUDE[wfd2](../includes/wfd2-md.md)] (como alternativa, selecione **barra de ferramentas** do **exibição** menu, ou CTRL + ALT + X.)  

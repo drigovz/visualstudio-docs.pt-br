@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3201d1c22ac718497b2e355ccf02047ee82a7aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c1e6aa853d2f8202ed42652a0d0f70a7300c0b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929734"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077161"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizando campos de texto e imagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -188,13 +188,13 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
   
 #### <a name="to-create-a-subclass-of-imagefield"></a>Para criar uma subclasse de ImageField  
   
-1.  Defina as **gera derivado duplo** propriedade da classe shape pai em sua definição de DSL.  
+1. Defina as **gera derivado duplo** propriedade da classe shape pai em sua definição de DSL.  
   
-2.  Substituir o `InitializeShapeFields` método de sua classe de forma.  
+2. Substituir o `InitializeShapeFields` método de sua classe de forma.  
   
-    -   Crie um novo arquivo de código no projeto DSL e escrever uma definição de classe parcial para a classe shape. Substitua a definição de método.  
+    - Crie um novo arquivo de código no projeto DSL e escrever uma definição de classe parcial para a classe shape. Substitua a definição de método.  
   
-3.  Inspecione o código de `InitializeShapeFields` em DSL\GeneratedCode\Shapes.cs.  
+3. Inspecione o código de `InitializeShapeFields` em DSL\GeneratedCode\Shapes.cs.  
   
      No seu método de substituição, chamar o método base e, em seguida, crie uma instância de sua própria classe de campo de imagem. Use esta opção para substituir o campo de imagem normal no `shapeFields` lista.  
   

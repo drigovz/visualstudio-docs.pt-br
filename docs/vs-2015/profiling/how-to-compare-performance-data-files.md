@@ -1,5 +1,5 @@
 ---
-title: Como comparar arquivos de dados de desempenho | Microsoft Docs
+title: 'Como: Comparar arquivos de dados de desempenho | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,14 +14,14 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ee0da10a6ac8786666aaf9dc041f6f198cff2d10
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 185494623e019ef666374bd46e52bca0d58738f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799558"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077662"
 ---
-# <a name="how-to-compare-performance-data-files"></a>Como comparar arquivos de dados de desempenho
+# <a name="how-to-compare-performance-data-files"></a>Como: Comparar arquivos de dados de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode comparar os resultados de dois arquivos de dados de criadores de perfil diferentes (.vsp ou .vsps), criando um relatório ou uma exibição de comparação ("Diff"). A comparação mostra as diferenças, regressões de desempenho e as melhorias que ocorreram de uma sessão de criação de perfil para a outra.  
@@ -34,28 +34,28 @@ Você pode comparar os resultados de dois arquivos de dados de criadores de perf
   
 ### <a name="to-create-comparison-file-view-for-a-project-in-performance-explorer"></a>Para criar uma exibição de arquivo de comparação para um projeto no Gerenciador de Desempenho  
   
-1.  No **Gerenciador de Desempenho**, em **Relatórios**, selecione o arquivo de relatório .vsp ou .vsps que você deseja usar como valores de linha de base para a comparação.  
+1. No **Gerenciador de Desempenho**, em **Relatórios**, selecione o arquivo de relatório .vsp ou .vsps que você deseja usar como valores de linha de base para a comparação.  
   
-2.  Selecione os arquivos de relatório .vsp ou .vsps que você deseja comparar.  
+2. Selecione os arquivos de relatório .vsp ou .vsps que você deseja comparar.  
   
-3.  Clique com o botão direito do mouse em um dos arquivos selecionados e, em seguida, clique em **Comparar Relatórios**.  
+3. Clique com o botão direito do mouse em um dos arquivos selecionados e, em seguida, clique em **Comparar Relatórios**.  
   
 ### <a name="to-compare-values"></a>Para comparar valores  
   
-1.  Selecione a guia **Relatório de Comparação** na janela de Exibição de Relatório.  
+1. Selecione a guia **Relatório de Comparação** na janela de Exibição de Relatório.  
   
-2.  Na lista suspensa **Tabela**, selecione a função ou os módulos para comparar.  
+2. Na lista suspensa **Tabela**, selecione a função ou os módulos para comparar.  
   
-3.  Na lista suspensa **Coluna**, selecione o valor que você deseja comparar.  
+3. Na lista suspensa **Coluna**, selecione o valor que você deseja comparar.  
   
-4.  (opcional) Digite um valor para **Limite**.  
+4. (opcional) Digite um valor para **Limite**.  
   
-5.  Clique em **Aplicar**.  
+5. Clique em **Aplicar**.  
   
 ### <a name="to-compare-report-files"></a>Para comparar arquivos de relatório  
   
-1.  No menu **Analisar**, selecione **Comparar Relatórios de Desempenho**.  
+1. No menu **Analisar**, selecione **Comparar Relatórios de Desempenho**.  
   
-2.  Na janela **Selecionar arquivos de análise para comparação**, procure e selecione o **Arquivo de Linha de Base** de análise (.vsp ou .vsps) e o **Arquivo de Comparação** (.vsp ou .vsps).  
+2. Na janela **Selecionar arquivos de análise para comparação**, procure e selecione o **Arquivo de Linha de Base** de análise (.vsp ou .vsps) e o **Arquivo de Comparação** (.vsp ou .vsps).  
   
-3.  Clique em **OK**.
+3. Clique em **OK**.
