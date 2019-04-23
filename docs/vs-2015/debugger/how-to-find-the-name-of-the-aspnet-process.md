@@ -17,12 +17,12 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c403cefee3aa7d45c11cd80cf5fc2dd53a06c1fc
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 4cc62b8635a2d7a663b597d4f8a2363fe14ba432
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58923278"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071922"
 ---
 # <a name="how-to-find-the-name-of-the-aspnet-process"></a>Como: Localizar o nome do processo do ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,25 +42,25 @@ Para anexar a um aplicativo do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] 
   
 ### <a name="to-determine-whether-project-code-resides-on-the-file-system-or-iis"></a>Para determinar se o código de projeto reside no sistema de arquivos ou IIS  
   
-1.  No Visual Studio, abra **Gerenciador de soluções** se ele não ainda estiver aberto.  
+1. No Visual Studio, abra **Gerenciador de soluções** se ele não ainda estiver aberto.  
   
-2.  Selecione o nó superior que contém o nome do aplicativo.  
+2. Selecione o nó superior que contém o nome do aplicativo.  
   
-3.  Se o **propriedades** título da janela contém um caminho de arquivo, o código do aplicativo reside no sistema de arquivos.  
+3. Se o **propriedades** título da janela contém um caminho de arquivo, o código do aplicativo reside no sistema de arquivos.  
   
      Caso contrário, o **propriedades** título da janela conterá o nome do site da Web.  
   
 ### <a name="to-determine-the-iis-version-under-which-the-application-is-running"></a>Para determinar a versão do IIS no qual o aplicativo está sendo executado  
   
-1.  Encontre **ferramentas administrativas** e executá-lo. Dependendo do sistema operacional, isso pode ser um ícone dentro **painel de controle**, ou uma entrada de menu que aparece quando você clica **iniciar**.  
+1. Encontre **ferramentas administrativas** e executá-lo. Dependendo do sistema operacional, isso pode ser um ícone dentro **painel de controle**, ou uma entrada de menu que aparece quando você clica **iniciar**.  
   
      No Windows XP, **painel de controle** podem estar no modo de exibição de categoria ou modo de exibição clássico. No modo de exibição de categoria, você precisa clicar **alternar para modo de exibição clássico** ou **desempenho e manutenção** para ver os **ferramentas administrativas** ícone.  
   
-2.  Partir **ferramentas administrativas**, execute os serviços de informações da Internet. Uma caixa de diálogo do MMC é exibida.  
+2. Partir **ferramentas administrativas**, execute os serviços de informações da Internet. Uma caixa de diálogo do MMC é exibida.  
   
-3.  Se houver mais de um computador listado no painel esquerdo, selecione o computador no qual o código do aplicativo reside.  
+3. Se houver mais de um computador listado no painel esquerdo, selecione o computador no qual o código do aplicativo reside.  
   
-4.  A versão do IIS está no **versão** coluna do painel direito.  
+4. A versão do IIS está no **versão** coluna do painel direito.  
   
 ## <a name="see-also"></a>Consulte também  
  [Pré-requisitos para aplicativos Web de depuração remota](../debugger/prerequistes-for-remote-debugging-web-applications.md)   

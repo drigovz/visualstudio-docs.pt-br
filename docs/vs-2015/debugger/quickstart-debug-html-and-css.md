@@ -21,12 +21,12 @@ caps.latest.revision: 104
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3518f691109348cfbb75404e94dde66dccd04efc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 7dd7afa571b83cb5d1b12018da2f1e812a3a5fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000061"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068152"
 ---
 # <a name="quickstart-debug-html-and-css"></a>Início Rápido: Depurar HTML e CSS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
   Para obter informações sobre outro recursos, como usando a janela do Console do JavaScript e configuração de pontos de interrupção, de depuração de JavaScript consulte [guia de início rápido: Depurar o JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
-##  <a name="InspectingDOM"></a> Inspecionando o DOM ativo  
+## <a name="InspectingDOM"></a> Inspecionando o DOM ativo  
  O Explorador de DOMs mostra a página renderizada, e você pode usá-lo para alterar valores e imediatamente ver os resultados. Isso permite que você teste as mudanças sem parar e reiniciar o depurador. O código-fonte em seu projeto não muda quando você interage com a página usando esse método; então, quando você encontra as correções de código desejadas, você faz as mudanças no seu código-fonte.  
   
 > [!TIP]
@@ -249,17 +249,17 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
 #### <a name="to-refresh-your-app-while-debugging"></a>Para atualizar o aplicativo durante a depuração  
   
-1.  Enquanto o aplicativo ainda está em execução, alterne para o Visual Studio.  
+1. Enquanto o aplicativo ainda está em execução, alterne para o Visual Studio.  
   
-2.  Abra o default.html e modifique o código-fonte alterando a altura e a largura do elemento DIV `"fView"` para 100%.  
+2. Abra o default.html e modifique o código-fonte alterando a altura e a largura do elemento DIV `"fView"` para 100%.  
   
-3.  Escolha o botão **Atualizar aplicativo do Windows** na barra de ferramentas Depurar (ou pressione F4). O botão tem esta aparência: ![Atualizar o botão de aplicativo do Windows](../debugger/media/js-refresh.png "JS_Refresh").  
+3. Escolha o botão **Atualizar aplicativo do Windows** na barra de ferramentas Depurar (ou pressione F4). O botão tem esta aparência: ![Atualizar o botão de aplicativo do Windows](../debugger/media/js-refresh.png "JS_Refresh").  
   
      As páginas do aplicativo são recarregadas e o Simulador ou Emulador do Windows Phone volta para o primeiro plano.  
   
      Para obter mais informações sobre o recurso de atualização, consulte [atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md).  
   
-##  <a name="SelectingElements"></a> Selecionando elementos  
+## <a name="SelectingElements"></a> Selecionando elementos  
  Você pode selecionar elementos DOM de três maneiras ao depurar um aplicativo:  
   
 - Clicando diretamente nos elementos na janela Explorador de DOMs (ou usando as teclas de direção).  
@@ -285,7 +285,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
   
  Para obter um exemplo que demonstra como selecionar elementos usando o **elemento Select** botão, consulte [estilos de CSS depurar usando o Explorador do DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
-##  <a name="BrowserSupport"></a> Suporte de plataforma e navegador  
+## <a name="BrowserSupport"></a> Suporte de plataforma e navegador  
  As ferramentas do Visual Studio para JavaScript, o Explorador do DOM e a janela Console do JavaScript são suportadas nas seguintes plataformas:  
   
 - [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] e aplicativos da Windows Phone Store que usam JavaScript e HTML  

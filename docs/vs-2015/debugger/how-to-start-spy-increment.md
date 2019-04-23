@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 60231333a084ef62e069f3e3aba9bee8bd25daed
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4ade2b369cd1c9e0371acacfcd63b06a2d89e58a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929003"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066696"
 ---
 # <a name="how-to-start-spy"></a>Como: Iniciar Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Você pode iniciar o Spy + + do Visual Studio ou em um prompt de comando.
   
 ### <a name="to-start-spy-from-visual-studio"></a>Para iniciar o Spy + + do Visual Studio  
   
--   Sobre o **ferramentas** menu, clique em **Spy + +**.  
+- Sobre o **ferramentas** menu, clique em **Spy + +**.  
   
      Como o Spy + + é executado de forma independente, depois de iniciada, você pode fechar o Visual Studio.  
   
@@ -39,9 +39,9 @@ Você pode iniciar o Spy + + do Visual Studio ou em um prompt de comando.
   
 ### <a name="to-start-spy-at-a-command-prompt"></a>Para iniciar o Spy + + em um prompt de comando  
   
-1.  Em uma janela de Prompt de comando, altere os diretórios para a pasta que contém spyxx.exe. Normalmente, o caminho dessa pasta é... \\ *Pasta de instalação do visual Studio*\Common7\Tools\\.  
+1. Em uma janela de Prompt de comando, altere os diretórios para a pasta que contém spyxx.exe. Normalmente, o caminho dessa pasta é... \\ *Pasta de instalação do visual Studio*\Common7\Tools\\.  
   
-2.  Tipo de **spyxx.exe** e, em seguida, pressione ENTER.  
+2. Tipo de **spyxx.exe** e, em seguida, pressione ENTER.  
   
 ## <a name="see-also"></a>Consulte também  
  [Usando o Spy++](../debugger/using-spy-increment.md)   

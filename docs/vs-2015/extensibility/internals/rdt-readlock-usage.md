@@ -13,12 +13,12 @@ ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c818023d50b733a4818c87e67d0b49abde518ad2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a9a6b5f86f0cfbb71f6264bdc74df72ad9209c9d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923904"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070154"
 ---
 # <a name="rdtreadlock-usage"></a>Uso de RDT_ReadLock
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ ms.locfileid: "58923904"
   
  Em geral, você usaria <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> quando uma das seguintes opções for verdadeira:  
   
--   Quando você deseja abrir um documento de forma invisível e somente leitura, mas ele ainda não tiver sido estabelecida que <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> deve possuí-lo.  
+- Quando você deseja abrir um documento de forma invisível e somente leitura, mas ele ainda não tiver sido estabelecida que <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> deve possuí-lo.  
   
--   Quando você deseja que o usuário para ser solicitado a salvar um documento que foi aberto de forma invisível antes do usuário exibido-lo na interface do usuário e, em seguida, tentou fechá-lo.  
+- Quando você deseja que o usuário para ser solicitado a salvar um documento que foi aberto de forma invisível antes do usuário exibido-lo na interface do usuário e, em seguida, tentou fechá-lo.  
   
 ## <a name="how-to-manage-visible-and-invisible-documents"></a>Como gerenciar documentos visíveis e invisíveis  
  Quando um usuário abre um documento na interface do usuário, uma <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> proprietário para o documento deve ser estabelecido e um <xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS> sinalizador deve ser definido. Se nenhum <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> proprietário pode ser estabelecido e, em seguida, o documento não será salvo quando o usuário clica **Salvar tudo** ou fecha o IDE. Isso significa que se um documento é aberto modo invisível onde ele foi modificado na memória, e o usuário é solicitado a salvar o documento no desligamento ou salvo se **Salvar tudo** for escolhido, então um `RDT_ReadLock` não pode ser usado. Em vez disso, você deve usar um `RDT_EditLock` e registrar um <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> quando um <xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER> sinalizador.  

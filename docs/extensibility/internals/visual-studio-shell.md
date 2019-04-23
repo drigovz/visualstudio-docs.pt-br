@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1428b4c5a54b901ca3e21ffc2b23d71763e7804
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 65f3090c6b96290527d2508ba47c899c81d6e6dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613278"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067073"
 ---
 # <a name="visual-studio-shell"></a>Shell do Visual Studio
 O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell é o principal agente de integração no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. O shell fornece a funcionalidade necessária para habilitar os VSPackages compartilhar serviços comuns. Porque o objetivo de arquitetura de [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] é casaco principal funcionalidade em VSPackages, o shell é uma estrutura para fornecer a funcionalidade básica e dar suporte a comunicação cruzada entre seu componente VSPackages.
@@ -38,17 +38,17 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] shell é o princi
 
 - Seleção de todo o shell de acompanhamento, o contexto e moeda. O shell rastreia os seguintes tipos de itens:
 
-  -   O projeto atual
+  - O projeto atual
 
-  -   O item de projeto atual ou ItemID atual <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
+  - O item de projeto atual ou ItemID atual <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 
-  -   A seleção atual para o **propriedades** janela ou `SelectionContainer`
+  - A seleção atual para o **propriedades** janela ou `SelectionContainer`
 
-  -   O contexto de interface do usuário IDs ou CmdUIGuids que controlam a visibilidade de comandos, menus e barras de ferramentas
+  - O contexto de interface do usuário IDs ou CmdUIGuids que controlam a visibilidade de comandos, menus e barras de ferramentas
 
-  -   Os elementos ativos no momento, como a janela ativa, o documento e o Gerenciador de desfazer
+  - Os elementos ativos no momento, como a janela ativa, o documento e o Gerenciador de desfazer
 
-  -   Os atributos de contexto de usuário que orientam a Ajuda dinâmica
+  - Os atributos de contexto de usuário que orientam a Ajuda dinâmica
 
   O shell também atua como mediador de comunicação entre os VSPackages instalados e os serviços atuais. Ele dá suporte aos principais recursos do shell e torna-os disponíveis para todos os VSPackages integrados no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. Esses principais recursos incluem os seguintes itens:
 

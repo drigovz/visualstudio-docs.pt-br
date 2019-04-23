@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d0b14b9f1cbbb81cc814546c5965e505a42885d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6200b96992638ccf5ad009ac103551824219135f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656538"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074954"
 ---
 # <a name="xml-schema-designer-workspace"></a>O workspace do designer de esquema XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,29 +26,29 @@ O designer de esquema XML (XSD) designer é uma ferramenta gráfico que ajuda vo
 ## <a name="adding-nodes-to-the-workspace"></a>Adicionar nós ao workspace  
  Você pode adicionar nós ao workspace das seguintes maneiras:  
   
--   Na seção de "detalhes para esquema" a [iniciar o modo de exibição](../xml-tools/start-view.md), clique no **adicionar** link ao lado do tipo de nó global.  
+- Na seção de "detalhes para esquema" a [iniciar o modo de exibição](../xml-tools/start-view.md), clique no **adicionar** link ao lado do tipo de nó global.  
   
--   Arrastar e soltar nós globais, nós do arquivo, e nós de namespace XML Schema Explorer em algumas das três modos de exibição. Para obter mais informações, consulte a seção "Arrastar e soltar nós" em [XML Schema Explorer](../xml-tools/xml-schema-explorer.md).  
+- Arrastar e soltar nós globais, nós do arquivo, e nós de namespace XML Schema Explorer em algumas das três modos de exibição. Para obter mais informações, consulte a seção "Arrastar e soltar nós" em [XML Schema Explorer](../xml-tools/xml-schema-explorer.md).  
   
--   Use o menu de contexto em XML Schema Explorer. Para obter mais informações, consulte [Menus de contexto](../xml-tools/context-menus-xml-schema-explorer.md).  
+- Use o menu de contexto em XML Schema Explorer. Para obter mais informações, consulte [Menus de contexto](../xml-tools/context-menus-xml-schema-explorer.md).  
   
--   Executar uma pesquisa em XSD Explorer e clique no **adicionar nós realçados ao espaço de trabalho** botão no painel de resultados de resumo. Para obter mais informações, consulte [procurando o conjunto de esquema](../xml-tools/searching-the-schema-set.md).  
+- Executar uma pesquisa em XSD Explorer e clique no **adicionar nós realçados ao espaço de trabalho** botão no painel de resultados de resumo. Para obter mais informações, consulte [procurando o conjunto de esquema](../xml-tools/searching-the-schema-set.md).  
   
 ## <a name="view-switching"></a>Exibir a exibição  
  Para alternar modos de exibição, use um destes procedimentos:  
   
--   A barra de ferramentas do designer XSD.  
+- A barra de ferramentas do designer XSD.  
   
--   Os menus de contexto de exibição do modelo de conteúdo e do modo de gráfico.  
+- Os menus de contexto de exibição do modelo de conteúdo e do modo de gráfico.  
   
--   Os marca de agua na página no modo de Início ou a marca de agua no modo em branco do modelo de conteúdo ou no modo de gráfico.  
+- Os marca de agua na página no modo de Início ou a marca de agua no modo em branco do modelo de conteúdo ou no modo de gráfico.  
   
--   Hotkeys: CTRL + 1 para o modo de início, CTRL + 2 para o modo de exibição de gráfico e CTRL + 3 para o modo de exibição do modelo de conteúdo.  
+- Hotkeys: CTRL + 1 para o modo de início, CTRL + 2 para o modo de exibição de gráfico e CTRL + 3 para o modo de exibição do modelo de conteúdo.  
   
 ## <a name="in-this-section"></a>Nesta seção  
   
--   [Exibição Inicial](../xml-tools/start-view.md)  
+- [Exibição Inicial](../xml-tools/start-view.md)  
   
--   [Exibição de Gráfico](../xml-tools/graph-view.md)  
+- [Exibição de Gráfico](../xml-tools/graph-view.md)  
   
--   [Exibição do modelo de conteúdo](../xml-tools/content-model-view.md)
+- [Exibição do modelo de conteúdo](../xml-tools/content-model-view.md)

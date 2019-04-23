@@ -12,12 +12,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 32aff234b5b45df4154d47f94c975828f31b71fe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 581d6d1f6e5923569f4d98705226d2336978bfc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668324"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067554"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Regras propagam alterações dentro do modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ namespace ExampleNamespace
 
 ### <a name="to-define-a-rule-on-a-domain-class"></a>Para definir uma regra em uma classe de domínio  
 
--   Em um arquivo de código personalizado, defina uma classe e um prefixo com o <xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute> atributo:  
+- Em um arquivo de código personalizado, defina uma classe e um prefixo com o <xref:Microsoft.VisualStudio.Modeling.RuleOnAttribute> atributo:  
 
     ```  
     [RuleOn(typeof(ExampleElement),   
@@ -97,19 +97,19 @@ namespace ExampleNamespace
 
     ```  
 
--   O tipo de entidade no primeiro parâmetro pode ser uma classe de domínio, o relacionamento de domínio, a forma, o conector ou o diagrama. Normalmente, você aplica regras a classes de domínio e relações.  
+- O tipo de entidade no primeiro parâmetro pode ser uma classe de domínio, o relacionamento de domínio, a forma, o conector ou o diagrama. Normalmente, você aplica regras a classes de domínio e relações.  
 
      O `FireTime` costuma ser `TopLevelCommit`. Isso garante que a regra é executada somente depois que todas as principais alterações da transação foram feitas. As alternativas são embutidos, o que a regra é executada logo após a alteração; e LocalCommit, que executa a regra no final da transação atual (que não pode ser mais externo). Você também pode definir a prioridade de uma regra para afetar sua ordenação na fila, mas este é um método confiável de atingir o resultado que necessário.  
 
--   Você pode especificar uma classe abstrata como o tipo de entidade.  
+- Você pode especificar uma classe abstrata como o tipo de entidade.  
 
--   A regra se aplica a todas as instâncias da classe da entidade.  
+- A regra se aplica a todas as instâncias da classe da entidade.  
 
--   O valor padrão para `FireTime` é TimeToFire.TopLevelCommit. Isso faz com que a regra a ser executado quando a transação externa é confirmada. Uma alternativa é TimeToFire.Inline. Isso faz com que a regra a ser executada logo após o evento de gatilho.  
+- O valor padrão para `FireTime` é TimeToFire.TopLevelCommit. Isso faz com que a regra a ser executado quando a transação externa é confirmada. Uma alternativa é TimeToFire.Inline. Isso faz com que a regra a ser executada logo após o evento de gatilho.  
 
 ### <a name="to-register-the-rule"></a>Para registrar a regra  
 
--   Adicione sua classe de regra à lista de tipos retornados por `GetCustomDomainModelTypes` em seu modelo de domínio:  
+- Adicione sua classe de regra à lista de tipos retornados por `GetCustomDomainModelTypes` em seu modelo de domínio:  
 
     ```  
     public partial class ExampleDomainModel  
@@ -125,9 +125,9 @@ namespace ExampleNamespace
 
     ```  
 
--   Se você não tiver certeza do nome da sua classe de modelo de domínio, examinar o arquivo **Dsl\GeneratedCode\DomainModel.cs**  
+- Se você não tiver certeza do nome da sua classe de modelo de domínio, examinar o arquivo **Dsl\GeneratedCode\DomainModel.cs**  
 
--   Escreva esse código em um arquivo de código personalizado em seu projeto DSL.  
+- Escreva esse código em um arquivo de código personalizado em seu projeto DSL.  
 
 ### <a name="to-write-the-code-of-the-rule"></a>Escrever o código da regra  
 
@@ -150,19 +150,19 @@ namespace ExampleNamespace
 
   Observe os seguintes pontos sobre as regras:  
 
-1.  O conjunto de alterações em uma transação pode disparar regras de muitos. Geralmente, as regras são executadas quando a transação externa é confirmada. Elas são executadas em uma ordem não especificada.  
+1. O conjunto de alterações em uma transação pode disparar regras de muitos. Geralmente, as regras são executadas quando a transação externa é confirmada. Elas são executadas em uma ordem não especificada.  
 
-2.  Uma regra sempre será executada dentro de uma transação. Portanto, não é preciso criar uma nova transação para fazer alterações.  
+2. Uma regra sempre será executada dentro de uma transação. Portanto, não é preciso criar uma nova transação para fazer alterações.  
 
-3.  As regras não são executadas quando uma transação é revertida, ou quando são executadas as operações de desfazer ou refazer. Essas operações de redefinição de todo o conteúdo da Store para seu estado anterior. Portanto, se sua regra altera o estado de qualquer coisa fora a Store, ele pode não manter em synchronism com a Store conteúdo. Para atualizar o estado de fora a Store, é melhor usar eventos. Para obter mais informações, consulte [manipuladores de propagar alterações fora o modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+3. As regras não são executadas quando uma transação é revertida, ou quando são executadas as operações de desfazer ou refazer. Essas operações de redefinição de todo o conteúdo da Store para seu estado anterior. Portanto, se sua regra altera o estado de qualquer coisa fora a Store, ele pode não manter em synchronism com a Store conteúdo. Para atualizar o estado de fora a Store, é melhor usar eventos. Para obter mais informações, consulte [manipuladores de propagar alterações fora o modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
 
-4.  Algumas regras são executadas quando um modelo é carregado do arquivo. Para determinar se o carregamento ou salvamento está em andamento, use `store.TransactionManager.CurrentTransaction.IsSerializing`.  
+4. Algumas regras são executadas quando um modelo é carregado do arquivo. Para determinar se o carregamento ou salvamento está em andamento, use `store.TransactionManager.CurrentTransaction.IsSerializing`.  
 
-5.  Se o código da sua regra cria mais gatilhos de regra, eles serão adicionados ao final da lista de acionamento e serão executados antes que a transação seja concluída. DeletedRules são executados depois de todas as outras regras. Uma regra pode executar muitas vezes em uma transação, uma vez para cada alteração.  
+5. Se o código da sua regra cria mais gatilhos de regra, eles serão adicionados ao final da lista de acionamento e serão executados antes que a transação seja concluída. DeletedRules são executados depois de todas as outras regras. Uma regra pode executar muitas vezes em uma transação, uma vez para cada alteração.  
 
-6.  Para passar informações para e de regras, você pode armazenar informações no `TransactionContext`. Isso é apenas um dicionário que é mantido durante a transação. Ele é descartado quando a transação termina. Os argumentos do evento em cada regra fornecem acesso a ele. Lembre-se de que as regras não são executadas em uma ordem previsível.  
+6. Para passar informações para e de regras, você pode armazenar informações no `TransactionContext`. Isso é apenas um dicionário que é mantido durante a transação. Ele é descartado quando a transação termina. Os argumentos do evento em cada regra fornecem acesso a ele. Lembre-se de que as regras não são executadas em uma ordem previsível.  
 
-7.  Usar regras após considerar outras alternativas. Por exemplo, se você quiser atualizar uma propriedade quando um valor for alterado, considere o uso de uma propriedade calculada. Se você quiser restringir o tamanho ou local de uma forma, use um `BoundsRule`. Se você quiser responder a uma alteração em um valor de propriedade, adicione um `OnValueChanged` manipulador para a propriedade. Para obter mais informações, consulte [respondendo a e propagando alterações](../modeling/responding-to-and-propagating-changes.md).  
+7. Usar regras após considerar outras alternativas. Por exemplo, se você quiser atualizar uma propriedade quando um valor for alterado, considere o uso de uma propriedade calculada. Se você quiser restringir o tamanho ou local de uma forma, use um `BoundsRule`. Se você quiser responder a uma alteração em um valor de propriedade, adicione um `OnValueChanged` manipulador para a propriedade. Para obter mais informações, consulte [respondendo a e propagando alterações](../modeling/responding-to-and-propagating-changes.md).  
 
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir atualiza uma propriedade quando uma relação de domínio é instanciada para vincular dois elementos. A regra será acionada não apenas quando o usuário cria um link em um diagrama, mas também se o código de programa cria um link.  

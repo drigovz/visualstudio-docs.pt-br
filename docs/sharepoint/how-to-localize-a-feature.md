@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d811b27f810ac9becf23513a25937e1a265d305
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f6e796cc00478ee823c345fd02738f8677c36373
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639083"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074629"
 ---
 # <a name="how-to-localize-a-feature"></a>Como: Localizar um recurso
   Por padrão, o recurso títulos e descrições de usam valores de cadeia de caracteres embutida. Para localizar o título do recurso e a descrição, substitua as cadeias de caracteres com expressões que fazem referência a recursos localizados.
@@ -27,21 +27,21 @@ ms.locfileid: "56639083"
 
 #### <a name="to-localize-a-feature"></a>Para localizar um recurso
 
-1.  Na **Gerenciador de soluções**, abra o menu de atalho para o **Feature1** nó e, em seguida, escolha **adicionar recurso**.
+1. Na **Gerenciador de soluções**, abra o menu de atalho para o **Feature1** nó e, em seguida, escolha **adicionar recurso**.
 
-2.  No **adicionar recurso** diálogo caixa, escolha **idioma invariável** da lista como a cultura para o arquivo de recurso do recurso de idioma padrão.
+2. No **adicionar recurso** diálogo caixa, escolha **idioma invariável** da lista como a cultura para o arquivo de recurso do recurso de idioma padrão.
 
-3.  Repita a etapa anterior para cada idioma localizado, escolhendo os idiomas de sua preferência para o recurso localizado em arquivos de recurso.
+3. Repita a etapa anterior para cada idioma localizado, escolhendo os idiomas de sua preferência para o recurso localizado em arquivos de recurso.
 
      Os arquivos de recurso separados são criados: um para o idioma padrão e um para cada idioma que você deseja dar suporte a localizado.
 
-4.  Abra cada arquivo de recurso no Editor de recursos e, em seguida, insira todas as IDs de cadeia de caracteres e seus valores.
+4. Abra cada arquivo de recurso no Editor de recursos e, em seguida, insira todas as IDs de cadeia de caracteres e seus valores.
 
      Por exemplo, no arquivo de recurso do recurso padrão, insira uma ID de cadeia de caracteres de **Title** com um valor de **meu título do recurso**, e uma segunda cadeia de caracteres ID da **descrição** com um valor de **Minha descrição do recurso**. Para cada arquivo de recurso localizado, usar a mesma cadeia de caracteres IDs usadas no recurso do recurso padrão, mas insira cadeias de caracteres localizadas para os valores.
 
-5.  Depois de inserir todos os valores de recursos, abra o menu de atalho para o recurso (por exemplo, *Feature1.feature*) e, em seguida, escolha **View Designer** para abrir o recurso no Designer de recurso.
+5. Depois de inserir todos os valores de recursos, abra o menu de atalho para o recurso (por exemplo, *Feature1.feature*) e, em seguida, escolha **View Designer** para abrir o recurso no Designer de recurso.
 
-6.  Para localizar o **Title** e **descrição** campos no recurso, use o seguinte formato para inserir valores em suas caixas de:
+6. Para localizar o **Title** e **descrição** campos no recurso, use o seguinte formato para inserir valores em suas caixas de:
 
      `$Resources:` *ID de cadeia de caracteres*
 
@@ -49,9 +49,9 @@ ms.locfileid: "56639083"
 
      A IDs de cadeia de caracteres deve corresponder àqueles que são usados nos arquivos de recurso.
 
-7.  Escolha o **F5** tecla para compilar e executar o aplicativo.
+7. Escolha o **F5** tecla para compilar e executar o aplicativo.
 
-8.  No SharePoint, abra o **ações do Site** menu, escolha **configurações de Site**e, em seguida, no **ações do Site** seção escolher o **gerenciar recursos de Site** link.
+8. No SharePoint, abra o **ações do Site** menu, escolha **configurações de Site**e, em seguida, no **ações do Site** seção escolher o **gerenciar recursos de Site** link.
 
 9. No SharePoint, altere o idioma de exibição do padrão.
 

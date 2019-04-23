@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53a0d26e5eba40a0e089055ad2c3bf69404f4db7
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 5937a54c43cf972dcebb25c12cddf6b76b2cb4bc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55016545"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069857"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Como: Publicar um aplicativo ClickOnce usando o assistente de publicação
 Para disponibilizar um aplicativo ClickOnce para os usuários, você deve publicá-lo para um compartilhamento de arquivo ou caminho, servidor FTP ou mídia removível. É possível publicar o aplicativo usando o Assistente de Publicação; as propriedades adicionais relacionadas à publicação estão disponíveis na página **Publicar** do **Designer de Projeto**. Para obter mais informações, consulte [aplicativos ClickOnce publicação](../deployment/publishing-clickonce-applications.md).
@@ -47,11 +47,11 @@ Antes de executar o Assistente de Publicação, configure as propriedades de pub
 
 4. Na página **Como os usuários instalarão o aplicativo?**, selecione a localização em que os usuários acessarão para instalar o aplicativo:
 
-   -   Se os usuários forem instalar de um site, clique em **De um site** e insira a URL que corresponde ao caminho de arquivo inserido na etapa anterior. Clique em **Avançar**. (Essa opção geralmente é usada ao especificar um endereço FTP no local de publicação. O download direto do FTP não tem suporte. Portanto, é necessário inserir uma URL aqui.)
+   - Se os usuários forem instalar de um site, clique em **De um site** e insira a URL que corresponde ao caminho de arquivo inserido na etapa anterior. Clique em **Avançar**. (Essa opção geralmente é usada ao especificar um endereço FTP no local de publicação. O download direto do FTP não tem suporte. Portanto, é necessário inserir uma URL aqui.)
 
-   -   Se os usuários forem instalar o aplicativo diretamente do compartilhamento de arquivos, clique em **De um caminho UNC ou compartilhamento de arquivos** e clique em **Avançar**. (Isso é para locais de publicação do formulário *c:\deploy\myapp* ou *\\\server\myapp*.)
+   - Se os usuários forem instalar o aplicativo diretamente do compartilhamento de arquivos, clique em **De um caminho UNC ou compartilhamento de arquivos** e clique em **Avançar**. (Isso é para locais de publicação do formulário *c:\deploy\myapp* ou *\\\server\myapp*.)
 
-   -   Se os usuários forem instalar de mídia removível, clique em **De um CD-ROM ou DVD-ROM** e clique em **Avançar**.
+   - Se os usuários forem instalar de mídia removível, clique em **De um CD-ROM ou DVD-ROM** e clique em **Avançar**.
 
 5. Na página **O aplicativo estará disponível offline?**, clique na opção adequada:
 

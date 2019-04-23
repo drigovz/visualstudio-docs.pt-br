@@ -22,12 +22,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 099f284838a74ce5e302d9ba6ba0974b85260e73
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e913d67442d21cb1a0895721c22ede9b69363f53
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925630"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068698"
 ---
 # <a name="how-to-debug-an-executable-not-part-of-a-visual-studio-solution"></a>Como: Depurar um executável não faça parte de uma solução do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,25 +40,25 @@ ms.locfileid: "58925630"
   
 ### <a name="to-create-an-exe-project-for-an-existing-executable"></a>Para criar um projeto EXE para um executável existente  
   
-1.  Sobre o **arquivo** menu, clique em **abra** e selecione **projeto**.  
+1. Sobre o **arquivo** menu, clique em **abra** e selecione **projeto**.  
   
-2.  No **Abrir projeto** caixa de diálogo, clique na lista suspensa lista ao lado de **nome do arquivo** caixa e selecione **todos os arquivos de projeto**.  
+2. No **Abrir projeto** caixa de diálogo, clique na lista suspensa lista ao lado de **nome do arquivo** caixa e selecione **todos os arquivos de projeto**.  
   
-3.  Localizar o executável e, em seguida, clique em **Okey**.  
+3. Localizar o executável e, em seguida, clique em **Okey**.  
   
      Isso cria uma solução temporária que contém o executável.  
   
 ### <a name="to-import-an-executable-into-a-visual-studio-solution"></a>Para importar um executável em uma solução do Visual Studio  
   
-1.  Sobre o **arquivo** , aponte para **Add Project**e, em seguida, clique em **projeto existente**.  
+1. Sobre o **arquivo** , aponte para **Add Project**e, em seguida, clique em **projeto existente**.  
   
-2.  No **Adicionar projeto existente** caixa de diálogo, clique na lista suspensa lista ao lado de **nome do arquivo** caixa e selecione **todos os arquivos de projeto**.  
+2. No **Adicionar projeto existente** caixa de diálogo, clique na lista suspensa lista ao lado de **nome do arquivo** caixa e selecione **todos os arquivos de projeto**.  
   
-3.  Localize e selecione o executável.  
+3. Localize e selecione o executável.  
   
-4.  Clique em **OK**.  
+4. Clique em **OK**.  
   
-5.  Iniciar o executável escolhendo um comando de execução, tais como **inicie**, da **depurar** menu.  
+5. Iniciar o executável escolhendo um comando de execução, tais como **inicie**, da **depurar** menu.  
   
     > [!NOTE]
     >  Nem todas as linguagens de programação oferecem suporte a projetos EXE. Instale o [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] se precisar usar esse recurso.  

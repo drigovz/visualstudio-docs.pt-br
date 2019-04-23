@@ -11,12 +11,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5b841298c7d4683059599bb95b145514ab94873
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 75906a279c1047ff98c7ff8d82d7baf3efc8be0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924647"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068850"
 ---
 # <a name="initialize-correlation-dialog-box"></a>Inicializar a caixa de diálogo correlação
 O **inicializar correlação** caixa de diálogo é usada em [!INCLUDE[wfd1](../includes/wfd1-md.md)] para editar o <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> propriedade de um <xref:System.ServiceModel.Activities.InitializeCorrelation> atividade. [!INCLUDE[crdefault](../includes/crdefault-md.md)] o [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md) tópico.  
@@ -30,7 +30,7 @@ O **inicializar correlação** caixa de diálogo é usada em [!INCLUDE[wfd1](../
   
 ## <a name="to-launch-the-initialize-correlation-dialog-box"></a>Para iniciar a caixa de diálogo correlação inicializar  
   
--   Clique em **exibição** na **InitializeCorrelation** atividade do designer ou selecione uma <xref:System.ServiceModel.Activities.InitializeCorrelation> atividade no [!INCLUDE[wfd2](../includes/wfd2-md.md)] e, em seguida, clique no botão de reticências ao lado a <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> propriedade no a grade de propriedade.  
+- Clique em **exibição** na **InitializeCorrelation** atividade do designer ou selecione uma <xref:System.ServiceModel.Activities.InitializeCorrelation> atividade no [!INCLUDE[wfd2](../includes/wfd2-md.md)] e, em seguida, clique no botão de reticências ao lado a <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> propriedade no a grade de propriedade.  
   
 ## <a name="see-also"></a>Consulte também  
  [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

@@ -21,12 +21,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d2c2c6f178c952a5516533c2722bc451be2e3bf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 9991adc9d770487c646c97da81b6245ae65ba5f5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649661"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075370"
 ---
 # <a name="relationships-in-datasets"></a>Relacionamentos em conjuntos de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,23 +84,23 @@ Conjuntos de dados que contêm dados relacionados a tabelas usam <xref:System.Da
   
 #### <a name="to-create-a-relationship-between-two-data-tables"></a>Para criar uma relação entre duas tabelas de dados  
   
-1.  Abra o conjunto de dados no **Designer de Conjunto de Dados**. Para obter mais informações, confira [Como: Abra um conjunto de dados no Designer de conjunto de dados](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Abra o conjunto de dados no **Designer de Conjunto de Dados**. Para obter mais informações, confira [Como: Abra um conjunto de dados no Designer de conjunto de dados](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Arraste uma **relação** objeto o **conjunto de dados** toolbox para a tabela de dados filho na relação.  
+2. Arraste uma **relação** objeto o **conjunto de dados** toolbox para a tabela de dados filho na relação.  
   
      O **relação** caixa de diálogo é aberta, preenchendo as **tabela filho** caixa com a tabela que você arrastou o **relação** do objeto para.  
   
-3.  Selecione a tabela pai a partir de **tabela pai** caixa. A tabela pai contém registros no lado "um" de uma relação um-para-muitos.  
+3. Selecione a tabela pai a partir de **tabela pai** caixa. A tabela pai contém registros no lado "um" de uma relação um-para-muitos.  
   
-4.  Verificar se a tabela filho correta é exibida na **tabela filho** caixa. A tabela filho contém registros no lado "muitos" de uma relação um-para-muitos.  
+4. Verificar se a tabela filho correta é exibida na **tabela filho** caixa. A tabela filho contém registros no lado "muitos" de uma relação um-para-muitos.  
   
-5.  Digite um nome para a relação na **nome** caixa ou deixe o nome padrão com base nas tabelas selecionadas. Esse é o nome do real <xref:System.Data.DataRelation> objeto no código.  
+5. Digite um nome para a relação na **nome** caixa ou deixe o nome padrão com base nas tabelas selecionadas. Esse é o nome do real <xref:System.Data.DataRelation> objeto no código.  
   
-6.  Selecione as colunas que unem as tabelas na **colunas de chave** e **as colunas de chave estrangeira** lista.  
+6. Selecione as colunas que unem as tabelas na **colunas de chave** e **as colunas de chave estrangeira** lista.  
   
-7.  Selecione se deseja criar uma relação, restrição ou ambos. Para obter informações, consulte [Introdução a objetos DataRelation](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
+7. Selecione se deseja criar uma relação, restrição ou ambos. Para obter informações, consulte [Introdução a objetos DataRelation](http://msdn.microsoft.com/library/89d8a881-8265-41f2-a88b-61311ab06192).  
   
-8.  Marque ou desmarque a **Nested Relation** caixa. Selecionar esta opção define a <xref:System.Data.DataRelation.Nested%2A> propriedade para `true`, e ele faz com que o filho linhas de relação ser aninhadas dentro da coluna pai quando essas linhas são gravadas como dados XML ou sincronizadas com <xref:System.Xml.XmlDataDocument>. Para obter mais informações, consulte [aninhamento de DataRelations](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
+8. Marque ou desmarque a **Nested Relation** caixa. Selecionar esta opção define a <xref:System.Data.DataRelation.Nested%2A> propriedade para `true`, e ele faz com que o filho linhas de relação ser aninhadas dentro da coluna pai quando essas linhas são gravadas como dados XML ou sincronizadas com <xref:System.Xml.XmlDataDocument>. Para obter mais informações, consulte [aninhamento de DataRelations](http://msdn.microsoft.com/library/9530f9c9-dd98-4b93-8cdb-40d7f1e8d0ab).  
   
 9. Defina as regras a serem impostos quando você estiver fazendo alterações em registros nessas tabelas. Para obter mais informações, consulte <xref:System.Data.Rule>.  
   
@@ -108,6 +108,6 @@ Conjuntos de dados que contêm dados relacionados a tabelas usam <xref:System.Da
   
 #### <a name="to-display-a-relation-name-in-the-dataset-designer"></a>Para exibir um nome de relação no Designer de conjunto de dados  
   
-1.  Abra o conjunto de dados no **Designer de Conjunto de Dados**. Para obter mais informações, confira [Como: Abra um conjunto de dados no Designer de conjunto de dados](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
+1. Abra o conjunto de dados no **Designer de Conjunto de Dados**. Para obter mais informações, confira [Como: Abra um conjunto de dados no Designer de conjunto de dados](http://msdn.microsoft.com/library/36fc266f-365b-42cb-aebb-c993dc2c47c3).  
   
-2.  Dos **dados** menu, selecione o **Mostrar rótulos de relação** comando para exibir o nome da relação. Desmarque desse comando para ocultar o nome da relação.
+2. Dos **dados** menu, selecione o **Mostrar rótulos de relação** comando para exibir o nome da relação. Desmarque desse comando para ocultar o nome da relação.

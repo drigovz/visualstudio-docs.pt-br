@@ -10,12 +10,12 @@ ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 caps.latest.revision: 25
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 182fc9a8ca55dfe4fc54d7e40c8c88f5b1c6c77d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: beae9d0526cb9f2f294f2267a8da52d3ce3d8c08
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927837"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076609"
 ---
 # <a name="walkthrough-linking-a-content-type-to-a-file-name-extension"></a>Passo a passo: Vinculando um tipo de conteúdo a uma extensão de nome de arquivo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,23 +27,23 @@ Você pode definir seu próprio tipo de conteúdo e vincular a uma extensão de 
   
 ## <a name="creating-a-mef-project"></a>Criando um projeto MEF  
   
-1.  Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual C# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `ContentTypeTest`.  
+1. Crie um projeto de VSIX em C#. (Na **novo projeto** caixa de diálogo, selecione **Visual c# / extensibilidade**, em seguida, **projeto VSIX**.) Nomeie a solução `ContentTypeTest`.  
   
-2.  No **vsixmanifest** arquivo, vá para o **ativos** guia e defina o **tipo** campo **mefcomponent**, o **código-fonte** campo **um projeto na solução atual**e o **projeto** campo para o nome do projeto.  
+2. No **vsixmanifest** arquivo, vá para o **ativos** guia e defina o **tipo** campo **mefcomponent**, o **código-fonte** campo **um projeto na solução atual**e o **projeto** campo para o nome do projeto.  
   
 ## <a name="defining-the-content-type"></a>Definindo o tipo de conteúdo  
   
-1.  Adicione um arquivo de classe e denomine- `FileAndContentTypes`.  
+1. Adicione um arquivo de classe e denomine- `FileAndContentTypes`.  
   
-2.  Adicione referências aos assemblies a seguir:  
+2. Adicione referências aos assemblies a seguir:  
   
-    1.  System.ComponentModel.Composition  
+    1. System.ComponentModel.Composition  
   
-    2.  Microsoft.VisualStudio.Text.Logic  
+    2. Microsoft.VisualStudio.Text.Logic  
   
-    3.  Microsoft.VisualStudio.CoreUtility  
+    3. Microsoft.VisualStudio.CoreUtility  
   
-3.  Adicione o seguinte `using` diretivas.  
+3. Adicione o seguinte `using` diretivas.  
   
     ```csharp  
     using System.ComponentModel.Composition;  
@@ -52,14 +52,14 @@ Você pode definir seu próprio tipo de conteúdo e vincular a uma extensão de 
   
     ```  
   
-4.  Declare uma classe estática que contém as definições.  
+4. Declare uma classe estática que contém as definições.  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
     {. . .}  
     ```  
   
-5.  Nessa classe, exportar um <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> denominado "hid" e declarar sua definição de base para ser "text".  
+5. Nessa classe, exportar um <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> denominado "hid" e declarar sua definição de base para ser "text".  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -73,7 +73,7 @@ Você pode definir seu próprio tipo de conteúdo e vincular a uma extensão de 
   
 ## <a name="linking-a-file-name-extension-to-a-content-type"></a>Vinculando uma extensão de nome de arquivo a um tipo de conteúdo  
   
--   Para mapear esse tipo de conteúdo para uma extensão de nome de arquivo, exportar um <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> que tem a extensão ". HID" e o tipo de conteúdo "hid".  
+- Para mapear esse tipo de conteúdo para uma extensão de nome de arquivo, exportar um <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> que tem a extensão ". HID" e o tipo de conteúdo "hid".  
   
     ```csharp  
     internal static class FileAndContentTypeDefinitions  
@@ -92,11 +92,11 @@ Você pode definir seu próprio tipo de conteúdo e vincular a uma extensão de 
   
 ## <a name="adding-the-content-type-to-an-editor-export"></a>Adicionando o tipo de conteúdo para uma exportação de Editor  
   
-1.  Crie uma extensão do editor. Por exemplo, você pode usar a extensão de glifo de margem descrita [passo a passo: Criando um glifo de margem](../extensibility/walkthrough-creating-a-margin-glyph.md).  
+1. Crie uma extensão do editor. Por exemplo, você pode usar a extensão de glifo de margem descrita [passo a passo: Criando um glifo de margem](../extensibility/walkthrough-creating-a-margin-glyph.md).  
   
-2.  Adicione a classe definida neste procedimento.  
+2. Adicione a classe definida neste procedimento.  
   
-3.  Quando você exportar a classe de extensão, adicione um <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> do tipo "hid" a ele.  
+3. Quando você exportar a classe de extensão, adicione um <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> do tipo "hid" a ele.  
   
     ```csharp  
     [Export]  

@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5941dec4b21e044873a2ae95ae7682867b4bd67
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 3dd516151f7a3656da1bae195870e8cc29528cfa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55037012"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075240"
 ---
 # <a name="how-to-verify-iis-property-settings"></a>Como: Verificar as configurações de propriedade do IIS
 
@@ -35,13 +35,13 @@ Você pode definir as propriedades de um aplicativo Web usando a ferramenta de a
 
 ## <a name="to-check-iis-settings-for-the-web-application"></a>Para verificar as configurações do IIS para o aplicativo Web
 
-1. Abra a janela **Ferramentas Administrativas**. Sobre o **inicie** , aponte para **programas**e, em seguida, clique em **ferramentas administrativas**. Se **Ferramentas Administrativas** não aparecer no menu **Programas**, procure no **Painel de Controle**.
+1. Abra o **ferramentas administrativas** janela: Sobre o **inicie** , aponte para **programas**e, em seguida, clique em **ferramentas administrativas**. Se **Ferramentas Administrativas** não aparecer no menu **Programas**, procure no **Painel de Controle**.
 
-   -   No Windows 2000, selecione **Gerenciador de Serviços de Internet**.
+   - No Windows 2000, selecione **Gerenciador de Serviços de Internet**.
 
-   -   No Windows XP, selecione **Serviços de Informações da Internet**.
+   - No Windows XP, selecione **Serviços de Informações da Internet**.
 
-   -   No Windows Server 2003, clique duas vezes em **Gerenciar o servidor**.
+   - No Windows Server 2003, clique duas vezes em **Gerenciar o servidor**.
 
         A janela **Gerenciar o servidor** é aberta. Em **Servidor de Aplicativos**, clique em **Gerenciar esse servidor de aplicativos**.
 
@@ -53,23 +53,23 @@ Você pode definir as propriedades de um aplicativo Web usando a ferramenta de a
 
 4. Verifique as configurações de segurança para o aplicativo Web:
 
-   1.  Na janela **Propriedades** do aplicativo Web, clique na guia **Segurança de Diretório** e clique em **Editar**.
+   1. Na janela **Propriedades** do aplicativo Web, clique na guia **Segurança de Diretório** e clique em **Editar**.
 
-   2.  Na caixa de diálogo **Métodos de Autenticação**, selecione **Habilitar Acesso Anônimo** e **Autenticação integrada do Windows** se já não estiverem selecionados.
+   2. Na caixa de diálogo **Métodos de Autenticação**, selecione **Habilitar Acesso Anônimo** e **Autenticação integrada do Windows** se já não estiverem selecionados.
 
-   3.  Clique em **OK** para fechar a caixa de diálogo **Métodos de Autenticação**.
+   3. Clique em **OK** para fechar a caixa de diálogo **Métodos de Autenticação**.
 
 5. Para um aplicativo do servidor ATL, verifique se o verbo DEBUG está associado à extensão ISAPI. Para obter mais informações, confira [Como: Associar o verbo DEBUG com extensão](https://msdn.microsoft.com/library/50d261d3-4bd4-41c0-b44e-3591086f121e).
 
 6. Para um aplicativo do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], verifique se a pasta virtual para o aplicativo tem um Nome de Aplicativo definido no **Gerenciador de IIS (Serviços de Informações da Internet)**, **Gerenciador de Serviços de Internet** ou **Serviços de Informações da Internet**.
 
-   1.  Na janela **Propriedades** do aplicativo Web, selecione a guia **Diretório** se o aplicativo estiver em um diretório virtual ou a guia **Diretório Base** se o aplicativo estiver em um site.
+   1. Na janela **Propriedades** do aplicativo Web, selecione a guia **Diretório** se o aplicativo estiver em um diretório virtual ou a guia **Diretório Base** se o aplicativo estiver em um site.
 
-   2.  Verifique se o nome no **Caminho Local** corresponde ao nome do diretório em que o aplicativo foi implantado de fato.
+   2. Verifique se o nome no **Caminho Local** corresponde ao nome do diretório em que o aplicativo foi implantado de fato.
 
-   3.  Em **Configurações do Aplicativo**, digite o nome do diretório raiz que contém o aplicativo.
+   3. Em **Configurações do Aplicativo**, digite o nome do diretório raiz que contém o aplicativo.
 
-   4.  Clique em **OK** para fechar a caixa de diálogo **Propriedades**.
+   4. Clique em **OK** para fechar a caixa de diálogo **Propriedades**.
 
 7. Para um aplicativo do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)], clique na guia **ASP.NET** e verifique se a versão correta do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] está especificada.
 

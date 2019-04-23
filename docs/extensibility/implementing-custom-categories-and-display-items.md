@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81deac9f46c03cac997f555f817bba5831409bca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: 60ad63bd5a6fa3b8cca2a288e1c42b1a2ab326bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54968694"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075877"
 ---
 # <a name="implement-custom-categories-and-display-items"></a>Implementar categorias personalizadas e exibir itens
 Um VSPackage pode fornecer controle de fontes e cores do texto para o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE) por meio de categorias personalizadas e itens de exibição.
@@ -81,11 +81,11 @@ Um VSPackage pode fornecer controle de fontes e cores do texto para o [!INCLUDE[
 
 - Os métodos implementados por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> deve fornecer o IDE com:
 
-  -   Lista de **exibir itens** no **categoria.**
+  - Lista de **exibir itens** no **categoria.**
 
-  -   Nomes localizáveis **exibir itens**.
+  - Nomes localizáveis **exibir itens**.
 
-  -   Exibir informações para cada membro da **categoria**.
+  - Exibir informações para cada membro da **categoria**.
 
   > [!NOTE]
   >  Cada **categoria** deve conter pelo menos um **item de exibição**.
@@ -94,11 +94,11 @@ Um VSPackage pode fornecer controle de fontes e cores do texto para o [!INCLUDE[
 
    Sua implementação fornece o IDE com:
 
-  -   Uma lista da **categorias** que compõem um grupo específico.
+  - Uma lista da **categorias** que compõem um grupo específico.
 
-  -   Acesso às instâncias do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> que dão suporte a cada **categoria** dentro do grupo.
+  - Acesso às instâncias do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> que dão suporte a cada **categoria** dentro do grupo.
 
-  -   Nomes de grupo localizável.
+  - Nomes de grupo localizável.
 
 - Atualizando o IDE:
 
@@ -109,13 +109,13 @@ Um VSPackage pode fornecer controle de fontes e cores do texto para o [!INCLUDE[
 ## <a name="to-handle-font-and-color-changes"></a>Para manipular as alterações de fonte e cor
  Para suportar adequadamente a colorização do texto que exibe um VSPackage, o serviço de colorização VSPackage de suporte deve responder às alterações iniciadas pelo usuário feitas por meio de **fontes e cores** página de propriedades. Um VSPackage é feito:
 
--   A manipulação de eventos gerados pelo IDE, Implementando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> interface.
+- A manipulação de eventos gerados pelo IDE, Implementando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> interface.
 
      O IDE chama o método apropriado seguindo as modificações de usuário do **fontes e cores** página. Por exemplo, ele chama o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents.OnFontChanged%2A> método se uma nova fonte é selecionada.
 
-     -ou-
+     - ou -
 
--   Sondando o IDE para que as alterações.
+- Sondando o IDE para que as alterações.
 
      Isso pode ser feito por meio do sistema implementado <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface. Embora principalmente para oferecer suporte a persistência, o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> método pode ser usado para obter informações de fonte e cor para **exibir itens**. Para obter mais informações, consulte [acesso armazenados configurações de fonte e cor](../extensibility/accessing-stored-font-and-color-settings.md).
 

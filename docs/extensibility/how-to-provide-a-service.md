@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c38f28ae99c2fb70f811b9d6b85e3c771512b17
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 40217c1cfcc2c7ae946e36aadb7a251436023b0a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723741"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078623"
 ---
 # <a name="how-to-provide-a-service"></a>Como: Fornecer um serviço
 Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para fornecer um serviço, um VSPackage deve registrar o serviço com o Visual Studio e adicione o serviço.
@@ -76,7 +76,7 @@ Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para forne
 
 ### <a name="register-a-service"></a>Registrar um serviço
 
-1.  Para registrar um serviço, adicione o <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> o VSPackage que fornece o serviço. Veja um exemplo:
+1. Para registrar um serviço, adicione o <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> o VSPackage que fornece o serviço. Veja um exemplo:
 
     ```csharp
     [ProvideService(typeof(SMyService))]
@@ -93,7 +93,7 @@ Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para forne
 
 ### <a name="add-a-service"></a>Adicionar um serviço
 
-1.  No inicializador de VSPackage, adicione o serviço e adicione um método de retorno de chamada para criar os serviços. Aqui está a alteração a fazer o <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método:
+1. No inicializador de VSPackage, adicione o serviço e adicione um método de retorno de chamada para criar os serviços. Aqui está a alteração a fazer o <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método:
 
     ```csharp
     protected override void Initialize()
@@ -105,7 +105,7 @@ Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para forne
     }
     ```
 
-2.  Implemente o método de retorno de chamada, que deve criar e retornar o serviço ou nulo se ela não pode ser criada.
+2. Implemente o método de retorno de chamada, que deve criar e retornar o serviço ou nulo se ela não pode ser criada.
 
     ```csharp
     private object CreateService(IServiceContainer container, Type serviceType)
@@ -119,7 +119,7 @@ Um VSPackage pode fornecer serviços que outros VSPackages pode usar. Para forne
     > [!NOTE]
     >  Visual Studio pode rejeitar uma solicitação para fornecer um serviço. Ele faz isso, se outro VSPackage já fornece o serviço.
 
-3.  Agora você pode obter o serviço e usar seus métodos. O exemplo a seguir mostra o uso do serviço no inicializador, mas você pode obter o serviço em qualquer lugar que deseja usar o serviço.
+3. Agora você pode obter o serviço e usar seus métodos. O exemplo a seguir mostra o uso do serviço no inicializador, mas você pode obter o serviço em qualquer lugar que deseja usar o serviço.
 
     ```csharp
     protected override void Initialize()

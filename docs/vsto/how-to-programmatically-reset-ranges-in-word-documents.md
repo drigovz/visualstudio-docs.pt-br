@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8643f7d10593ee2bcf51245d05edcd153db6b19d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 622d807da832c4c07baf8b62c902c2b1d25cc14d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609807"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072065"
 ---
 # <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>Como: Por meio de programação redefinir intervalos em documentos do Word
   Use o <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> método para redimensionar um intervalo existente em um documento do Microsoft Office Word.
@@ -27,7 +27,7 @@ ms.locfileid: "56609807"
 
 ## <a name="to-reset-an-existing-range"></a>Para redefinir um intervalo existente
 
-1.  Defina um intervalo inicial, começando com os sete primeiros caracteres no documento.
+1. Defina um intervalo inicial, começando com os sete primeiros caracteres no documento.
 
      O exemplo de código a seguir pode ser usado em uma personalização no nível de documento.
 
@@ -39,7 +39,7 @@ ms.locfileid: "56609807"
      [!code-vb[Trin_VstcoreWordAutomationAddIn#43](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#43)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#43](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#43)]
 
-2.  Use <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> para iniciar o intervalo em que a segunda frase e encerrá-lo no final da sentença quinto.
+2. Use <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> para iniciar o intervalo em que a segunda frase e encerrá-lo no final da sentença quinto.
 
      [!code-vb[Trin_VstcoreWordAutomation#44](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#44)]
      [!code-csharp[Trin_VstcoreWordAutomation#44](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#44)]
@@ -48,7 +48,7 @@ ms.locfileid: "56609807"
 
 ### <a name="to-reset-an-existing-range-in-a-document-level-customization"></a>Para redefinir um intervalo existente em uma personalização no nível de documento
 
-1.  O exemplo a seguir mostra o exemplo completo para uma personalização no nível de documento. Para usar esse código, executá-la na `ThisDocument` classe em seu projeto.
+1. O exemplo a seguir mostra o exemplo completo para uma personalização no nível de documento. Para usar esse código, executá-la na `ThisDocument` classe em seu projeto.
 
      [!code-vb[Trin_VstcoreWordAutomation#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#42)]
      [!code-csharp[Trin_VstcoreWordAutomation#42](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#42)]
@@ -57,7 +57,7 @@ ms.locfileid: "56609807"
 
 ### <a name="to-reset-an-existing-range-in-a-vsto-add-in"></a>Para redefinir um intervalo existente em um suplemento do VSTO
 
-1.  O exemplo a seguir mostra o exemplo completo para um suplemento do VSTO. Para usar esse código, executá-la na `ThisAddIn` classe em seu projeto.
+1. O exemplo a seguir mostra o exemplo completo para um suplemento do VSTO. Para usar esse código, executá-la na `ThisAddIn` classe em seu projeto.
 
      [!code-vb[Trin_VstcoreWordAutomationAddIn#42](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#42)]
      [!code-csharp[Trin_VstcoreWordAutomationAddIn#42](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#42)]

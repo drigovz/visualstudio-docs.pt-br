@@ -1,5 +1,5 @@
 ---
-title: 'DA0003: muitas amostras de kernel | Microsoft Docs'
+title: 'DA0003: Muitas amostras de kernel | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,14 +14,14 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aa60d16eec09255f39e18b86b468a2fef2269aff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ad9a0671595d4628932ff4f2db41a137e060c4d1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782628"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076479"
 ---
-# <a name="da0003-many-kernel-samples"></a>DA0003: muitas amostras de kernel
+# <a name="da0003-many-kernel-samples"></a>DA0003: Muitas amostras de kernel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id da regra | DA0003 |  
@@ -41,6 +41,6 @@ Id da regra | DA0003 |
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
  Considere criar um novo perfil para o aplicativo usando uma das opções a seguir:  
   
--   Crie perfis usando o método de instrumentação.  
+- Crie perfis usando o método de instrumentação.  
   
--   Aumente a taxa de amostragem para coletar mais amostras no modo de usuário.
+- Aumente a taxa de amostragem para coletar mais amostras no modo de usuário.

@@ -13,12 +13,12 @@ ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
 caps.latest.revision: 57
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 644f763c64897eda4896c1431c815519dcc9b65f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e3bbf6b3b1ed2565d5e58806bd0935f713ba5bfd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925241"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076674"
 ---
 # <a name="creating-an-extension-with-a-menu-command"></a>Criando uma extensão com um comando de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,28 +30,28 @@ Este passo a passo mostra como criar uma extensão com um comando de menu que in
   
 ## <a name="creating-a-menu-command"></a>Criação de um comando de Menu  
   
-1.  Crie um projeto do VSIX chamado **FirstMenuCommand**. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual c# / extensibilidade**.  
+1. Crie um projeto do VSIX chamado **FirstMenuCommand**. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual c# / extensibilidade**.  
   
-2.  Quando o projeto aberto, adicione um modelo de item de comando personalizado chamado **FirstCommand**. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add / Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c# / extensibilidade** e selecione **comando personalizado**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para **FirstCommand.cs**.  
+2. Quando o projeto aberto, adicione um modelo de item de comando personalizado chamado **FirstCommand**. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add / Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c# / extensibilidade** e selecione **comando personalizado**. No **nome** campo na parte inferior da janela, altere o nome do arquivo de comando para **FirstCommand.cs**.  
   
-3.  Compile o projeto e comece a depuração.  
+3. Compile o projeto e comece a depuração.  
   
      A instância experimental do Visual Studio é exibida. Para obter mais informações sobre a instância experimental, consulte [a instância Experimental](../extensibility/the-experimental-instance.md).  
   
-4.  Na instância experimental, abra o **ferramentas / extensões e atualizações** janela. Você deve ver a **FirstMenuCommand** extensão aqui. (Se você abrir **extensões e atualizações** em sua instância de trabalho do Visual Studio, você não verá **FirstMenuCommand**).  
+4. Na instância experimental, abra o **ferramentas / extensões e atualizações** janela. Você deve ver a **FirstMenuCommand** extensão aqui. (Se você abrir **extensões e atualizações** em sua instância de trabalho do Visual Studio, você não verá **FirstMenuCommand**).  
   
      Agora vá para o **ferramentas** menu na instância experimental. Você deve ver **FirstCommand invocar** comando. Neste ponto ele apenas traz uma caixa de mensagem que diz "FirstCommandPackage dentro FirstMenuCommand.FirstCommand.MenuItemCallback()". Veremos como realmente começar o bloco de notas desse comando na próxima seção.  
   
 ## <a name="changing-the-menu-command-handler"></a>Alterando o manipulador de comandos de Menu  
  Agora vamos atualizar o manipulador de comandos para iniciar o bloco de notas.  
   
-1.  Parar a depuração e voltar para sua instância de trabalho do Visual Studio. Abra o arquivo FirstCommand.cs e adicione a seguinte instrução using:  
+1. Parar a depuração e voltar para sua instância de trabalho do Visual Studio. Abra o arquivo FirstCommand.cs e adicione a seguinte instrução using:  
   
     ```csharp  
     using System.Diagnostics;  
     ```  
   
-2.  Localize o construtor FirstCommand particular. Isso é onde o comando é conectado ao serviço de comando e o manipulador de comando é especificado. Altere o nome do manipulador de comando para o StartNotepad, da seguinte maneira:  
+2. Localize o construtor FirstCommand particular. Isso é onde o comando é conectado ao serviço de comando e o manipulador de comando é especificado. Altere o nome do manipulador de comando para o StartNotepad, da seguinte maneira:  
   
     ```csharp  
     private FirstCommand(Package package)  
@@ -74,7 +74,7 @@ Este passo a passo mostra como criar uma extensão com um comando de menu que in
     }  
     ```  
   
-3.  Remova o método MenuItemCallback e adicione um método StartNotepad que apenas iniciará o bloco de notas:  
+3. Remova o método MenuItemCallback e adicione um método StartNotepad que apenas iniciará o bloco de notas:  
   
     ```csharp  
     private void StartNotepad(object sender, EventArgs e)  
@@ -85,7 +85,7 @@ Este passo a passo mostra como criar uma extensão com um comando de menu que in
     }  
     ```  
   
-4.  Agora tente. Quando você iniciar a depuração do projeto e clique em **ferramentas / invocar FirstCommand**, você deve ver uma instância do bloco de notas.  
+4. Agora tente. Quando você iniciar a depuração do projeto e clique em **ferramentas / invocar FirstCommand**, você deve ver uma instância do bloco de notas.  
   
      Você pode usar uma instância da <xref:System.Diagnostics.Process> classe para executar qualquer executável, não apenas o bloco de notas. Tente com calc.exe, por exemplo.  
   
@@ -94,9 +94,9 @@ Este passo a passo mostra como criar uma extensão com um comando de menu que in
   
  Você pode chegar a este script em uma das duas maneiras:  
   
-1.  Na área de trabalho, localize **redefinir a instância Experimental do Visual Studio 2015**.  
+1. Na área de trabalho, localize **redefinir a instância Experimental do Visual Studio 2015**.  
   
-2.  Na linha de comando, execute o seguinte:  
+2. Na linha de comando, execute o seguinte:  
   
     ```  
     <VSSDK installation>\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp && PAUSE  
@@ -119,11 +119,11 @@ Este passo a passo mostra como criar uma extensão com um comando de menu que in
   
 1. Você pode fazer muito mais coisas com um comando de menu simples:  
   
-   1.  Adicione seu próprio ícone: [Adicionar ícones a comandos de menu](../extensibility/adding-icons-to-menu-commands.md)  
+   1. Adicione seu próprio ícone: [Adicionar ícones a comandos de menu](../extensibility/adding-icons-to-menu-commands.md)  
   
-   2.  Altere o texto do comando de menu: [Alterar o texto de um comando de menu](../extensibility/changing-the-text-of-a-menu-command.md)  
+   2. Altere o texto do comando de menu: [Alterar o texto de um comando de menu](../extensibility/changing-the-text-of-a-menu-command.md)  
   
-   3.  Adicione um atalho de menu a um comando: [Associar atalhos de teclado aos itens de menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
+   3. Adicione um atalho de menu a um comando: [Associar atalhos de teclado aos itens de menu](../extensibility/binding-keyboard-shortcuts-to-menu-items.md)  
   
 2. Adicione tipos diferentes de comandos, menus e barras de ferramentas: [Ampliar menus e comandos](../extensibility/extending-menus-and-commands.md)  
   

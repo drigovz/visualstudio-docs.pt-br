@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de62cb46c591b554ea4204e88fedbbfa99381fef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5ec2d1c471365dcd55aa33f00209c4154300e95
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078431"
 ---
 # <a name="generate-and-configure-your-app-from-models"></a>Gerar e configurar o aplicativo por meio de modelos
 Você pode gerar ou configurar as partes do seu aplicativo de um modelo.
@@ -37,7 +37,7 @@ Você pode gerar ou configurar as partes do seu aplicativo de um modelo.
 ## <a name="configuring-your-application-from-a-model"></a>Configurar seu aplicativo de um modelo
  Se você deseja variar o comportamento do aplicativo em tempo de execução, você não pode usar a geração de código, o que gera o código-fonte antes do aplicativo é compilado. Em vez disso, você pode projetar seu aplicativo para ler o modelo e variam de seu comportamento de acordo. Para obter mais informações, consulte:
 
-- [Como: Abrir um modelo de arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Como: Abrir um modelo de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 
   Esse método também pode ser aplicado incrementalmente, mas há mais trabalho no início. Você precisa escrever o código que leia o modelo e configurar uma estrutura que permite que seus valores fique acessível para as partes variáveis. Tornar as partes variáveis genéricos é mais caro do que a geração de código.
 
@@ -46,32 +46,32 @@ Você pode gerar ou configurar as partes do seu aplicativo de um modelo.
 ## <a name="developing-a-derived-application"></a>Desenvolvendo um aplicativo derivado
  Você pode achar úteis as seguintes diretrizes gerais.
 
--   **Iniciar específico, em seguida, generalize.** Escreva uma versão específica do seu aplicativo pela primeira vez. Esta versão deverá funcionar em um conjunto de condições. Quando estiver satisfeito que ele está funcionando corretamente, você pode fazer parte dela derivam de um modelo. Estenda as partes derivadas gradualmente.
+- **Iniciar específico, em seguida, generalize.** Escreva uma versão específica do seu aplicativo pela primeira vez. Esta versão deverá funcionar em um conjunto de condições. Quando estiver satisfeito que ele está funcionando corretamente, você pode fazer parte dela derivam de um modelo. Estenda as partes derivadas gradualmente.
 
      Por exemplo, criação de um site que tem um conjunto específico de páginas da web antes de criar um aplicativo web que apresenta as páginas que são definidas em um modelo.
 
--   **Os aspectos de variante do modelo.** Identifique os aspectos que irá variar, entre cada implantação de um e outro, ou ao longo do tempo como requisitos de alterar. Estes são os aspectos que devem ser derivados de um modelo.
+- **Os aspectos de variante do modelo.** Identifique os aspectos que irá variar, entre cada implantação de um e outro, ou ao longo do tempo como requisitos de alterar. Estes são os aspectos que devem ser derivados de um modelo.
 
      Por exemplo, se o conjunto de web de páginas e os links entre eles muda, mas o estilo e o formato das páginas é sempre o mesmo, em seguida, o modelo deve descrever os links, mas não tem que descrevem o formato das páginas.
 
--   **Preocupações separadas.** Se a variável aspectos podem ser divididos em áreas independentes, use modelos separados para cada área. Usando ModelBus, é possível definir as operações que afetam os modelos e as restrições entre eles.
+- **Preocupações separadas.** Se a variável aspectos podem ser divididos em áreas independentes, use modelos separados para cada área. Usando ModelBus, é possível definir as operações que afetam os modelos e as restrições entre eles.
 
      Por exemplo, use um modelo para definir a navegação entre as páginas da web e um modelo diferente para definir o layout das páginas.
 
--   **O requisito, e não na solução de modelo.** Crie o modelo para que ele descreve os requisitos do usuário. Por outro lado, não crie a notação de acordo com as variável aspectos da implementação.
+- **O requisito, e não na solução de modelo.** Crie o modelo para que ele descreve os requisitos do usuário. Por outro lado, não crie a notação de acordo com as variável aspectos da implementação.
 
      Por exemplo, o modelo de navegação da web deve representar páginas da web e hiperlinks entre eles. O modelo de navegação da web não deve representar fragmentos de HTML ou classes em seu aplicativo.
 
--   **Gerar ou interpretar?** Se os requisitos para uma determinada implantação raramente serão alterado, gere código de programa do modelo. Se os requisitos podem mudar com frequência, ou podem coexistir em mais de uma variante na mesma implantação, escreva o aplicativo para que ele pode ler e interpretar um modelo.
+- **Gerar ou interpretar?** Se os requisitos para uma determinada implantação raramente serão alterado, gere código de programa do modelo. Se os requisitos podem mudar com frequência, ou podem coexistir em mais de uma variante na mesma implantação, escreva o aplicativo para que ele pode ler e interpretar um modelo.
 
      Por exemplo, se você usar o modelo de site para desenvolver uma série de sites diferentes e instalado separadamente, você deve gerar o código do site do modelo. Mas você usa seu modelo para controlar um site que são alterados diariamente, em seguida, é melhor escrever um servidor web que lê o modelo e apresenta o site adequadamente.
 
--   **UML ou DSL?** Considere a criação de seu notação de modelagem usando estereótipos para estender UML. Defina uma DSL se não houver nenhum diagrama UML que se adapta ao objetivo. Mas, evitar a interrupção a semântica padrão de UML.
+- **UML ou DSL?** Considere a criação de seu notação de modelagem usando estereótipos para estender UML. Defina uma DSL se não houver nenhum diagrama UML que se adapta ao objetivo. Mas, evitar a interrupção a semântica padrão de UML.
 
      Por exemplo, um diagrama de classe UML é uma coleção de caixas e setas; com essa notação você pode teoricamente definir nada. Mas não recomendamos que você use o diagrama de classe, exceto onde você é na verdade que descreve um conjunto de tipos. Por exemplo, você pode adaptar os diagramas de classe para descrever diferentes tipos de páginas da web.
 
 ## <a name="see-also"></a>Consulte também
 
 - [Gerando código com base em uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md)
-- [Como: Abrir um modelo de arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
+- [Como: Abrir um modelo de um arquivo no código do programa](../modeling/how-to-open-a-model-from-file-in-program-code.md)
 - [Geração de código no tempo de design usando modelos de texto T4](../modeling/design-time-code-generation-by-using-t4-text-templates.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 55ce3ac93f280d5b5cd29fdc533035dc32cbaa8c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e8361ec9f93ff150d3fd29bce315f635bd00048b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925205"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068633"
 ---
 # <a name="using-rule-sets-to-specify-the-c-rules-to-run"></a>Usando conjuntos de regras para especificar as regras do C++ para execução
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,13 +43,13 @@ Na [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](
   
 #### <a name="to-modify-a-rule-set-in-the-rule-set-editor"></a>Para modificar uma regra definida no editor de conjunto de regras  
   
--   Para alterar o nome de exibição do conjunto de regras na **modo de exibição** menu, escolha **janela propriedades**. Insira o nome de exibição na **nome** caixa. Observe que o nome de exibição pode ser diferente do nome do arquivo.  
+- Para alterar o nome de exibição do conjunto de regras na **modo de exibição** menu, escolha **janela propriedades**. Insira o nome de exibição na **nome** caixa. Observe que o nome de exibição pode ser diferente do nome do arquivo.  
   
--   Para adicionar todas as regras do grupo a um conjunto de regras personalizadas, marque a caixa de seleção do grupo. Para remover todas as regras do grupo, desmarque a caixa de seleção.  
+- Para adicionar todas as regras do grupo a um conjunto de regras personalizadas, marque a caixa de seleção do grupo. Para remover todas as regras do grupo, desmarque a caixa de seleção.  
   
--   Para adicionar uma regra específica para o conjunto de regras personalizadas, marque a caixa de seleção da regra. Para remover a regra do conjunto de regras, desmarque a caixa de seleção.  
+- Para adicionar uma regra específica para o conjunto de regras personalizadas, marque a caixa de seleção da regra. Para remover a regra do conjunto de regras, desmarque a caixa de seleção.  
   
--   Para alterar a ação executada quando uma regra é violada em uma análise de código, escolha o **ação** do campo para a regra e, em seguida, escolha um dos seguintes valores:  
+- Para alterar a ação executada quando uma regra é violada em uma análise de código, escolha o **ação** do campo para a regra e, em seguida, escolha um dos seguintes valores:  
   
      **Avisar** -gera um aviso.  
   
@@ -59,20 +59,20 @@ Na [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] e [!INCLUDE[vsUltShort](
   
 #### <a name="to-group-filter-or-change-the-fields-in-the-rule-set-editor-by-using-the-rule-set-editor-toolbar"></a>Para agrupar, filtrar ou alterar os campos no editor de conjunto de regras usando a barra de ferramentas do editor de conjunto de regra  
   
--   Para expandir as regras em todos os grupos, escolha **Expandir tudo**.  
+- Para expandir as regras em todos os grupos, escolha **Expandir tudo**.  
   
--   Para recolher as regras em todos os grupos, escolha **Recolher tudo**.  
+- Para recolher as regras em todos os grupos, escolha **Recolher tudo**.  
   
--   Para alterar o campo que as regras são agrupadas por, escolha o campo do **Group By** lista. Para exibir as regras não agrupadas, escolha  **\<None >**.  
+- Para alterar o campo que as regras são agrupadas por, escolha o campo do **Group By** lista. Para exibir as regras não agrupadas, escolha  **\<None >**.  
   
--   Para adicionar ou remover campos nas colunas de regra, escolha **opções de coluna**.  
+- Para adicionar ou remover campos nas colunas de regra, escolha **opções de coluna**.  
   
--   Para ocultar as regras que não se aplicam à solução atual, escolha **ocultar as regras que não se aplicam à solução atual**.  
+- Para ocultar as regras que não se aplicam à solução atual, escolha **ocultar as regras que não se aplicam à solução atual**.  
   
--   Para alternar entre mostrar e ocultar as regras que são atribuídas a ação de erro, escolha **Mostrar regras que podem gerar erros de análise de código**.  
+- Para alternar entre mostrar e ocultar as regras que são atribuídas a ação de erro, escolha **Mostrar regras que podem gerar erros de análise de código**.  
   
--   Para alternar entre mostrar e ocultar as regras que são atribuídas a ação de aviso, escolha **Mostrar regras que podem gerar avisos de análise de código**.  
+- Para alternar entre mostrar e ocultar as regras que são atribuídas a ação de aviso, escolha **Mostrar regras que podem gerar avisos de análise de código**.  
   
--   Para alternar entre mostrar e ocultar as regras que são atribuídas a **None** ação, escolha **Mostrar regras que não estão habilitadas**.  
+- Para alternar entre mostrar e ocultar as regras que são atribuídas a **None** ação, escolha **Mostrar regras que não estão habilitadas**.  
   
--   Para adicionar ou remover Microsoft conjuntos de regras do padrão para o conjunto de regras atual, escolha **adicionar ou remover conjuntos de regras filho**.
+- Para adicionar ou remover Microsoft conjuntos de regras do padrão para o conjunto de regras atual, escolha **adicionar ou remover conjuntos de regras filho**.

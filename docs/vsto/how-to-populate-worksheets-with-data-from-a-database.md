@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1169ea54ffbc0d0437204ed4491e2b8cc68a4a04
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 67c12843d00bf8d5af51fa7af3175077527afa58
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865613"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60079130"
 ---
 # <a name="how-to-populate-worksheets-with-data-from-a-database"></a>Como: Preencher planilhas com dados de um banco de dados
 
@@ -35,17 +35,17 @@ O exemplo a seguir mostra como adicionar controles ligados a dados em projetos d
 
 ### <a name="to-populate-a-worksheet-with-data-from-a-database"></a>Para popular uma planilha com os dados de um banco de dados
 
-1.  Abra um projeto de nível de documento do Excel no Visual Studio, com o planilha aberto no designer.
+1. Abra um projeto de nível de documento do Excel no Visual Studio, com o planilha aberto no designer.
 
-2.  Abra o **fontes de dados** janela e criar uma fonte de dados para seu projeto. Para obter mais informações, consulte [adicionar novas conexões](../data-tools/add-new-connections.md).
+2. Abra o **fontes de dados** janela e criar uma fonte de dados para seu projeto. Para obter mais informações, consulte [adicionar novas conexões](../data-tools/add-new-connections.md).
 
-3.  Arraste o campo ou uma tabela que você deseja a partir de **fontes de dados** janela à sua planilha.
+3. Arraste o campo ou uma tabela que você deseja a partir de **fontes de dados** janela à sua planilha.
 
 Um dos seguintes controles é criado na planilha:
 
--   Se você arrastar um campo, um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle é criado na planilha. Para obter mais informações, consulte [controle NamedRange](../vsto/namedrange-control.md).
+- Se você arrastar um campo, um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle é criado na planilha. Para obter mais informações, consulte [controle NamedRange](../vsto/namedrange-control.md).
 
--   Se você arrastar uma tabela, um <xref:Microsoft.Office.Tools.Excel.ListObject> controle é criado na planilha. Para obter mais informações, consulte [controle ListObject](../vsto/listobject-control.md).
+- Se você arrastar uma tabela, um <xref:Microsoft.Office.Tools.Excel.ListObject> controle é criado na planilha. Para obter mais informações, consulte [controle ListObject](../vsto/listobject-control.md).
 
 Você pode adicionar um controle diferente, selecionando a tabela ou campo na **fontes de dados** janela e, em seguida, escolhendo um controle diferente na lista suspensa.
 
@@ -53,19 +53,19 @@ Você pode adicionar um controle diferente, selecionando a tabela ou campo na **
 
 Além do controle, os seguintes objetos de dados são automaticamente adicionados ao seu projeto:
 
--   Um dataset tipado que encapsula as tabelas de dados para o qual você se conectou no banco de dados. Para obter mais informações, consulte [ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
+- Um dataset tipado que encapsula as tabelas de dados para o qual você se conectou no banco de dados. Para obter mais informações, consulte [ferramentas de conjunto de dados no Visual Studio](../data-tools/dataset-tools-in-visual-studio.md).
 
--   Um <xref:System.Windows.Forms.BindingSource> que conecta-se com o controle para o conjunto de dados tipado. Para obter mais informações, consulte [visão geral do componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
+- Um <xref:System.Windows.Forms.BindingSource> que conecta-se com o controle para o conjunto de dados tipado. Para obter mais informações, consulte [visão geral do componente BindingSource](/dotnet/framework/winforms/controls/bindingsource-component-overview).
 
--   Um TableAdapter que conecta-se o conjunto de dados tipado para o banco de dados. Para obter mais informações, consulte [visão geral de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
+- Um TableAdapter que conecta-se o conjunto de dados tipado para o banco de dados. Para obter mais informações, consulte [visão geral de TableAdapter](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview).
 
--   Um TableAdapterManager, que é usado para coordenar a adaptadores de tabela no conjunto de dados para habilitar as atualizações hierárquicas. Para obter mais informações, consulte [atualização hierárquica](../data-tools/hierarchical-update.md) e [TableAdapterManager reference](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
+- Um TableAdapterManager, que é usado para coordenar a adaptadores de tabela no conjunto de dados para habilitar as atualizações hierárquicas. Para obter mais informações, consulte [atualização hierárquica](../data-tools/hierarchical-update.md) e [TableAdapterManager reference](../data-tools/fill-datasets-by-using-tableadapters.md#tableadaptermanager-reference).
 
 Quando você executa o projeto, o controle exibe o primeiro registro na fonte de dados. Você pode usar o <xref:System.Windows.Forms.BindingSource> para permitir aos usuários percorrer os registros.
 
 ### <a name="to-scroll-through-the-records"></a>Para percorrer os registros
 
--   Use <xref:System.Windows.Forms.BindingSource> métodos como <xref:System.Windows.Forms.BindingSource.MoveNext%2A> e <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
+- Use <xref:System.Windows.Forms.BindingSource> métodos como <xref:System.Windows.Forms.BindingSource.MoveNext%2A> e <xref:System.Windows.Forms.BindingSource.MovePrevious%2A>.
 
 Para obter informações sobre como enviar atualizações para o conjunto de dados tipado e o banco de dados, consulte [como: Atualizar uma fonte de dados com dados de um controle de host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 

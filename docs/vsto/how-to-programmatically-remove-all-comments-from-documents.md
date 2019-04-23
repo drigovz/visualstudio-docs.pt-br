@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fadc8830649a15f1785194f3e2640a7ee86fadbb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 78b73cfe13d2374afad22dd322a80fe69acfb838
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644582"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068971"
 ---
 # <a name="how-to-programmatically-remove-all-comments-from-documents"></a>Como: Remover todos os comentários de documentos programaticamente
   Use o `DeleteAllComments` método para remover todos os comentários de um documento do Microsoft Office Word.
@@ -27,14 +27,14 @@ ms.locfileid: "56644582"
 
 ## <a name="to-remove-all-comments-from-a-document-that-is-part-of-a-document-level-customization"></a>Para remover todos os comentários de um documento que faz parte de uma personalização no nível de documento
 
-1.  Chame o <xref:Microsoft.Office.Tools.Word.Document.DeleteAllComments%2A> método da `ThisDocument` classe em seu projeto. Para usar este exemplo de código, executá-la na `ThisDocument` classe.
+1. Chame o <xref:Microsoft.Office.Tools.Word.Document.DeleteAllComments%2A> método da `ThisDocument` classe em seu projeto. Para usar este exemplo de código, executá-la na `ThisDocument` classe.
 
      [!code-vb[Trin_VstcoreWordAutomation#119](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#119)]
      [!code-csharp[Trin_VstcoreWordAutomation#119](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#119)]
 
 ## <a name="to-remove-all-comments-from-a-document-by-using-a-vsto-add-in"></a>Para remover todos os comentários de um documento usando um suplemento do VSTO
 
-1.  Chame o <xref:Microsoft.Office.Interop.Word._Document.DeleteAllComments%2A> método da <xref:Microsoft.Office.Interop.Word.Document> da qual você deseja remover comentários.
+1. Chame o <xref:Microsoft.Office.Interop.Word._Document.DeleteAllComments%2A> método da <xref:Microsoft.Office.Interop.Word.Document> da qual você deseja remover comentários.
 
      O exemplo de código a seguir remove todos os comentários do documento ativo. Para usar este exemplo de código, executá-la na `ThisAddIn` classe em seu projeto.
 

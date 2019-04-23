@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 53ee0dce825609c13622911d5836f16954fa7a06
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ee29135e659eff7e4965b6b1fb0d24de2c2e90cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924410"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078728"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>Como: Abrir a exibição de mensagens de Localizar janela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,31 +26,31 @@ Talvez seja conveniente usar o **localizar janela** caixa de diálogo para selec
   
 ### <a name="to-open-a-messages-view-window-using-the-find-window-dialog-box"></a>Para abrir uma janela de exibição de mensagens usando a caixa de diálogo Localizar janela  
   
-1.  Organize as janelas para que o Spy + + e a janela de destino estão visíveis.  
+1. Organize as janelas para que o Spy + + e a janela de destino estão visíveis.  
   
-2.  Dos **Spy** menu, escolha **localizar janela**.  
+2. Dos **Spy** menu, escolha **localizar janela**.  
   
      O [caixa de diálogo Localizar janela](../debugger/find-window-dialog-box.md) é aberta.  
   
-3.  Dos **Windows** guia, arraste a **ferramenta Descobridora** sobre a janela de destino. À medida que você arrasta a ferramenta, o **localizar janela** caixa de diálogo exibe detalhes sobre a janela selecionada.  
+3. Dos **Windows** guia, arraste a **ferramenta Descobridora** sobre a janela de destino. À medida que você arrasta a ferramenta, o **localizar janela** caixa de diálogo exibe detalhes sobre a janela selecionada.  
   
      – ou –  
   
      Se você tiver o identificador da janela que você deseja examinar (por exemplo, copiado do depurador), você pode digitá-lo na **manipular** caixa de texto.  
   
-4.  Sob **mostram**, selecione **mensagens**.  
+4. Sob **mostram**, selecione **mensagens**.  
   
-5.  Pressione **OK**.  
+5. Pressione **OK**.  
   
      Um espaço em branco [exibição de mensagens](../debugger/messages-view.md) janela é aberta e um **mensagens** menu é adicionado à barra de ferramentas Spy + +.  
   
-6.  Dos **mensagens** menu, escolha **opções de log**.  
+6. Dos **mensagens** menu, escolha **opções de log**.  
   
      O [caixa de diálogo de opções de mensagem](../debugger/message-options-dialog-box.md) é aberta.  
   
-7.  Selecione as opções para as mensagens que você deseja exibir.  
+7. Selecione as opções para as mensagens que você deseja exibir.  
   
-8.  Pressione **Okey** para começar a mensagens de log.  
+8. Pressione **Okey** para começar a mensagens de log.  
   
      Dependendo das opções selecionadas, as mensagens inicia o streaming para a janela de exibição de mensagens ativa.  
   

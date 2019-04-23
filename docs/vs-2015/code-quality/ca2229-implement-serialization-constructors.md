@@ -15,12 +15,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ee283e2e25958d497e00dad245bb69841196c65c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 41e296a979557a42a96c2f57ce49610d88b98a40
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922381"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073158"
 ---
 # <a name="ca2229-implement-serialization-constructors"></a>CA2229: Implementar construtores de serialização
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "58922381"
 ## <a name="cause"></a>Causa
  O tipo implementa o <xref:System.Runtime.Serialization.ISerializable?displayProperty=fullName> da interface, não é um delegado ou interface e uma das seguintes condições for verdadeira:
 
--   O tipo não tem um construtor que usa um <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> objeto e um <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> objeto (a assinatura do construtor de serialização).
+- O tipo não tem um construtor que usa um <xref:System.Runtime.Serialization.SerializationInfo?displayProperty=fullName> objeto e um <xref:System.Runtime.Serialization.StreamingContext?displayProperty=fullName> objeto (a assinatura do construtor de serialização).
 
--   O tipo é sem lacre e o modificador de acesso para seu construtor de serialização não é protegida (família).
+- O tipo é sem lacre e o modificador de acesso para seu construtor de serialização não é protegida (família).
 
--   O tipo está lacrado e o modificador de acesso para seu construtor de serialização não é privado.
+- O tipo está lacrado e o modificador de acesso para seu construtor de serialização não é privado.
 
 ## <a name="rule-description"></a>Descrição da Regra
  Essa regra é relevante para tipos que oferecem suporte a serialização personalizada. Um tipo é compatível com a serialização personalizada se ele implementa o <xref:System.Runtime.Serialization.ISerializable> interface. O construtor de serialização é necessário para desserializar ou recriar objetos que foram serializados usando a <xref:System.Runtime.Serialization.ISerializable.GetObjectData%2A?displayProperty=fullName> método.

@@ -23,12 +23,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 866b2b824735ed96615880350343d17adfeecefc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0f2bd51570c8ad1976b6fc9eb5674177f9342833
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069452"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>Associar controles do Windows Forms a dados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,21 +41,21 @@ Você pode exibir dados para usuários do seu aplicativo pela associação de da
 
 ## <a name="in-this-section"></a>Nesta seção
 
--   [Associar controles do Windows Forms a dados](../data-tools/bind-windows-forms-controls-to-data.md)
+- [Associar controles do Windows Forms a dados](../data-tools/bind-windows-forms-controls-to-data.md)
 
--   [Confirmar edições em processo em controles associados a dados antes de salvar os dados](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)
+- [Confirmar edições em processo em controles associados a dados antes de salvar os dados](../data-tools/commit-in-process-edits-on-data-bound-controls-before-saving-data.md)
 
--   [Criar tabelas de pesquisa em aplicativos do Windows Forms](../data-tools/create-lookup-tables-in-windows-forms-applications.md)
+- [Criar tabelas de pesquisa em aplicativos do Windows Forms](../data-tools/create-lookup-tables-in-windows-forms-applications.md)
 
--   [Criar um Windows Form para pesquisar dados](../data-tools/create-a-windows-form-to-search-data.md)
+- [Criar um Windows Form para pesquisar dados](../data-tools/create-a-windows-form-to-search-data.md)
 
--   [Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados simples](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)
+- [Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados simples](../data-tools/create-a-windows-forms-user-control-that-supports-simple-data-binding.md)
 
--   [Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados complexos](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
+- [Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados complexos](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)
 
--   [Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados de consulta](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
+- [Criar um controle de usuário do Windows Forms que dá suporte à vinculação de dados de consulta](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)
 
--   [Passar dados entre formulários](../data-tools/pass-data-between-forms.md)
+- [Passar dados entre formulários](../data-tools/pass-data-between-forms.md)
 
 ## <a name="bindingsource-component"></a>Componente BindingSource
  O <xref:System.Windows.Forms.BindingSource> componente tem duas finalidades. Primeiro, ele fornece uma camada de abstração ao associar os controles no formulário a dados. Controles no formulário são vinculados para o <xref:System.Windows.Forms.BindingSource> componente (em vez de sendo vinculados diretamente a uma fonte de dados).
@@ -64,11 +64,11 @@ Você pode exibir dados para usuários do seu aplicativo pela associação de da
 
  Para obter mais informações sobre o <xref:System.Windows.Forms.BindingSource> componente, consulte:
 
--   [Componente BindingSource](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
+- [Componente BindingSource](http://msdn.microsoft.com/library/3e2faf4c-f5b8-4fa6-9fbc-f59c37ec2fb9)
 
--   [Visão geral do componente BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
+- [Visão geral do componente BindingSource](http://msdn.microsoft.com/library/be838caf-fcb0-4b68-827f-58b2c04b747f)
 
--   [Arquitetura do componente BindingSource](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
+- [Arquitetura do componente BindingSource](http://msdn.microsoft.com/library/7bc69c90-8a11-48b1-9336-3adab5b41591)
 
 ## <a name="bindingnavigator-control"></a>Controle BindingNavigator
  Esse componente fornece uma interface do usuário para navegar pelos dados exibidos por um aplicativo do Windows. Para obter mais informações, consulte [Controle BindingNavigator](http://msdn.microsoft.com/library/18c1e2a5-9834-40d3-9b2e-2b545e4e769e).

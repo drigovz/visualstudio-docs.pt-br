@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 89e1b8460ccfa99a1adef93ed6bcd78990f75d67
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 316243f53871c9411af08d6721f2ca590fadea99
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792955"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078610"
 ---
 # <a name="application-timeline"></a>Linha do Tempo do Aplicativo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,20 +27,20 @@ Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrig
   
  Você pode usar essa ferramenta nas seguintes plataformas:  
   
-1.  Aplicativos universais do Windows (no Windows 10)  
+1. Aplicativos universais do Windows (no Windows 10)  
   
-2.  Windows Store 8.1  
+2. Windows Store 8.1  
   
-3.  Windows Phone 8.1 (plataforma XAML Comum)  
+3. Windows Phone 8.1 (plataforma XAML Comum)  
   
-4.  Windows Presentation Foundation (.Net 4.0 e superiores)  
+4. Windows Presentation Foundation (.Net 4.0 e superiores)  
   
-5.  Windows 7  
+5. Windows 7  
   
 > [!NOTE]
 >  Você pode coletar e analisar os dados de uso da CPU e os dados de consumo de energia junto a dados da **ApplicationTimeline**. Consulte [executar ferramentas de criação de perfil sem depuração](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
-##  <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Coletar dados da Linha do Tempo do Aplicativo  
+## <a name="BKMK_Collect_Timeline_data_for_your_app"></a> Coletar dados da Linha do Tempo do Aplicativo  
  Você pode criar o perfil de capacidade de resposta de seu aplicativo em seu computador local, dispositivo conectado, emuladores ou simulador do Visual Studio ou em um dispositivo remoto. Ver [executar ferramentas de criação de perfil sem depuração](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01).  
   
 > [!TIP]
@@ -48,51 +48,51 @@ Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrig
   
  Veja a seguir as etapas básicas:  
   
-1.  Abra seu aplicativo XAML.  
+1. Abra seu aplicativo XAML.  
   
-2.  Clique em **Depurar/Criador de Perfil de Desempenho...**. Você deve ver uma lista de ferramentas de criação de perfil na janela .diagsession.  
+2. Clique em **Depurar/Criador de Perfil de Desempenho...**. Você deve ver uma lista de ferramentas de criação de perfil na janela .diagsession.  
   
-3.  Selecione **Linha do tempo do aplicativo** e, em seguida, clique em **Iniciar** na parte inferior da janela.  
+3. Selecione **Linha do tempo do aplicativo** e, em seguida, clique em **Iniciar** na parte inferior da janela.  
   
     > [!NOTE]
     >  Você pode ver uma janela de Controle de Conta de Usuário solicitando sua permissão para executar VsEtwCollector.exe. Clique em **Sim**.  
   
-4.  Execute o cenário cujo perfil você está interessado em criar em seu aplicativo para coletar dados de desempenho.  
+4. Execute o cenário cujo perfil você está interessado em criar em seu aplicativo para coletar dados de desempenho.  
   
-5.  Para interromper a criação de perfil, volte para a janela .diagsession e clique em **Parar** na parte superior da janela.  
+5. Para interromper a criação de perfil, volte para a janela .diagsession e clique em **Parar** na parte superior da janela.  
   
      O Visual Studio analisa os dados coletados e exibe os resultados.  
   
      ![Relatório do criador de perfil de linha do tempo](../profiling/media/timeline-base.png "TIMELINE_Base")  
   
-##  <a name="BKMK_Analyze_Timeline_profiling_data"></a> Analisar dados de criação de perfil de linha do tempo  
+## <a name="BKMK_Analyze_Timeline_profiling_data"></a> Analisar dados de criação de perfil de linha do tempo  
  Depois de coletar os dados para a criação de perfil, você pode usar estas etapas para iniciar a análise:  
   
-1.  Examine as informações nos gráficos **Utilização de thread de interface do usuário** e **Taxa de transferência visual (FPS)** e use as barras de navegação da linha do tempo para selecionar o intervalo de tempo que deseja analisar.  
+1. Examine as informações nos gráficos **Utilização de thread de interface do usuário** e **Taxa de transferência visual (FPS)** e use as barras de navegação da linha do tempo para selecionar o intervalo de tempo que deseja analisar.  
   
-2.  Usando as informações nos gráficos **Utilização de thread de interface do usuário** ou **Taxa de transferência visual (FPS)**, examine os detalhes na exibição **Detalhes da linha do tempo** para descobrir as possíveis causas de qualquer aparente falta de capacidade de resposta.  
+2. Usando as informações nos gráficos **Utilização de thread de interface do usuário** ou **Taxa de transferência visual (FPS)**, examine os detalhes na exibição **Detalhes da linha do tempo** para descobrir as possíveis causas de qualquer aparente falta de capacidade de resposta.  
   
-###  <a name="BKMK_Report_scenarios_categories_and_events"></a> Cenários, categorias e eventos de relatório  
+### <a name="BKMK_Report_scenarios_categories_and_events"></a> Cenários, categorias e eventos de relatório  
  A ferramenta **Linha do Tempo do Aplicativo** exibe dados de tempo para cenários, categorias e eventos relacionados ao desempenho de XAML.  
   
-###  <a name="BKMK_Diagnostic_session_timeline"></a> Linha do tempo da sessão de diagnóstico  
+### <a name="BKMK_Diagnostic_session_timeline"></a> Linha do tempo da sessão de diagnóstico  
  ![Linha do tempo de Desempenho e Diagnóstico](../profiling/media/diaghub-timelinewithusermarks.png "DIAGHUB_TimelineWithUserMarks")  
   
  A régua na parte superior da página mostra a linha do tempo para informações com o perfil criado. Essa linha do tempo aplica-se ao gráfico **Utilização de thread de interface do usuário** e **Taxa de transferência visual**. Você pode restringir o escopo do relatório arrastando as barras de navegação na linha do tempo para selecionar um segmento da linha do tempo.  
   
  A linha do tempo também exibe todas as marcas de usuário inseridas e os eventos de ciclo de vida de ativação do aplicativo.  
   
-###  <a name="BKMK_UI_thread_utilization_graph"></a> Gráfico de utilização de thread da interface do usuário  
+### <a name="BKMK_UI_thread_utilization_graph"></a> Gráfico de utilização de thread da interface do usuário  
  ![Gráfico de utilização de CPU](../profiling/media/timeline-cpuutilization.png "TIMELINE_CpuUtilization")  
   
  O gráfico **Utilização do thread da interface do usuário (%)** é um gráfico de barras que exibe a quantidade relativa de tempo gasto em uma categoria durante um período de coleta.  
   
-###  <a name="BKMK_Visual_throughput_FPS_graph"></a> Gráfico de taxa de transferência visual (FPS)  
+### <a name="BKMK_Visual_throughput_FPS_graph"></a> Gráfico de taxa de transferência visual (FPS)  
  ![Gráfico de taxa de transferência Visual](../profiling/media/timeline-visualthroughput.png "TIMELINE_VisualThroughput")  
   
  O gráfico de linhas **Taxa de transferência visual (FPS)** mostra FPS (quadros por segundo) na interface do usuário e no thread de composição para o aplicativo.  
   
-###  <a name="BKMK_Timeline_details_"></a> Detalhes da linha do tempo  
+### <a name="BKMK_Timeline_details_"></a> Detalhes da linha do tempo  
  A exibição de detalhes é o ponto em que você passará a maior parte do tempo analisando o relatório. Ele mostra uma exibição detalhada da utilização da CPU do seu aplicativo categorizada pelo subsistema de Estrutura da Interface do Usuário ou o componente do sistema que consumiu a CPU.  
   
  Há suporte para os seguintes eventos:  
@@ -109,7 +109,7 @@ Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrig
 > [!TIP]
 >  Escolha a ferramenta **Uso da CPU** junto com a ferramenta **Linha do Tempo do Aplicativo** ao começar a criar o perfil para exibir os métodos de aplicativo que são executados no thread da interface do usuário. Mover o código do aplicativo de execução longa em um thread em segundo plano pode melhorar a capacidade de resposta da interface do usuário.  
   
-####  <a name="BKMK_Customizing_Timeline_details_"></a> Personalizando os detalhes da Linha do Tempo  
+#### <a name="BKMK_Customizing_Timeline_details_"></a> Personalizando os detalhes da Linha do Tempo  
  Use a barra de ferramentas **Detalhes da linha do tempo** para classificar, filtrar e especificar as anotações das entradas da exibição **Detalhes da linha do tempo**.  
   
 |||  
@@ -120,6 +120,6 @@ Use o criador de perfil **Linha do Tempo de Aplicativo** para localizar e corrig
 |![Personalizar informações detalhadas sobre a Linha do Tempo](../profiling/media/timeline-viewsettings.png "TIMELINE_ViewSettings")|Permite especificar as anotações para eventos.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Blog da equipe WPF: Nova ferramenta de análise de desempenho da interface do usuário para aplicativos WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)   
+ [Blog da equipe WPF: Nova ferramenta de análise de desempenho de interface do usuário para aplicativos do WPF](http://blogs.msdn.com/b/wpf/archive/2015/01/16/new-ui-performance-analysis-tool-for-wpf-applications.aspx)   
  [Práticas recomendadas de desempenho para aplicativos da Windows Store usando C++, C# e Visual Basic](http://msdn.microsoft.com/567bcefa-5da5-4e42-a4b8-1358c71adfa2)   
  [Otimizando o desempenho do aplicativo WPF](http://msdn.microsoft.com/library/ac8c6aa3-3c68-4a24-9827-3b6c829c1ebf)

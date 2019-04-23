@@ -11,12 +11,12 @@ ms.assetid: 6e1ae9ec-e9b1-458a-bd96-0eb15e46f1d5
 caps.latest.revision: 24
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 459e7e00f1fc9602b4e003ec16394d9cdf06410a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5a6a3247ed53b6a84feb203ce0e9b480e7f9ce5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775080"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60073885"
 ---
 # <a name="testing-a-large-application-with-multiple-ui-maps"></a>Testando um aplicativo grande com vários mapas de interface do usuário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,9 +42,9 @@ Este tópico fala sobre como usar testes de IU codificados quando você estiver 
 ## <a name="do-you-need-multiple-ui-maps"></a>Você precisa de diversos mapas de interface do usuário?  
  Crie diversos mapas em cada uma destas situações:  
   
--   Diversos conjuntos complexos de controles de interface do usuário compostos que, juntos, executam uma operação lógica, como uma página de registro de um site ou a página de compras de um carrinho de compras.  
+- Diversos conjuntos complexos de controles de interface do usuário compostos que, juntos, executam uma operação lógica, como uma página de registro de um site ou a página de compras de um carrinho de compras.  
   
--   Um conjunto independente de controles que são acessados por diversos pontos do aplicativo, como um assistente com diversas páginas de operações. Se cada página de um assistente for muito complexa, você pode criar mapas de interface do usuário para cada página.  
+- Um conjunto independente de controles que são acessados por diversos pontos do aplicativo, como um assistente com diversas páginas de operações. Se cada página de um assistente for muito complexa, você pode criar mapas de interface do usuário para cada página.  
   
 ## <a name="adding-multiple-ui-maps"></a>Adicionando diversos mapas de interface do usuário  
   

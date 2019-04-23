@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: Implantando manualmente um aplicativo ClickOnce que não requer nova assinatura e que preserva informações de identidade Visual | Microsoft Docs'
+title: 'Passo a passo: Implantando um aplicativo ClickOnce que não requer nova assinatura e que preserva informações de identidade visual manualmente | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e9d8ef7f5df692f2f13c9eb3a5a99aa155d38137
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 773a9f5a990b3432484c1ff13012b173c9fac1cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614669"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076218"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Passo a passo: Implantar manualmente um aplicativo ClickOnce que não requer nova assinatura e que preserva informações de identidade Visual
 Quando você cria um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e, em seguida, dê a ele a um cliente para publicar e implantar, o cliente teve tradicionalmente atualizar o manifesto de implantação e assine-o novamente. Enquanto ainda é o método preferencial na maioria dos casos, o .NET Framework 3.5 permite que você crie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações que podem ser implantadas por clientes sem precisar regenerar um novo manifesto de implantação. Para obter mais informações, consulte [ClickOnce implantar aplicativos para servidores de teste e produção sem assinar novamente](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -35,14 +35,14 @@ Quando você cria um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
  Quando você cria um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e, em seguida, dê a ele a um cliente para publicar e implantar, o aplicativo pode usar a identidade visual do cliente ou pode preservar a sua identidade visual. Por exemplo, se o aplicativo for um aplicativo proprietário único, você talvez queira preservar sua identidade visual. Se o aplicativo é altamente personalizado para cada cliente, você talvez queira usar a identidade visual do cliente. O .NET Framework 3.5 permite que você preserve sua identidade visual, informações do publicador e assinatura de segurança quando você der um aplicativo como uma organização para implantar. Para obter mais informações, consulte [ClickOnce criar aplicativos para que outros possam implantar](../deployment/creating-clickonce-applications-for-others-to-deploy.md).
 
 > [!NOTE]
->  Neste passo a passo é cria implantações manualmente usando a ferramenta de linha de comando *Mage.exe* ou a ferramenta gráfica *MageUI.exe*. Para obter mais informações sobre implantações manuais, consulte [instruções passo a passo: implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+>  Neste passo a passo é cria implantações manualmente usando a ferramenta de linha de comando *Mage.exe* ou a ferramenta gráfica *MageUI.exe*. Para obter mais informações sobre implantações manuais, consulte [passo a passo: Implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Para executar as etapas neste passo a passo, você precisa do seguinte:
 
--   Um aplicativo de formulários do Windows que você está pronto para implantar. Este aplicativo será referenciado como *WindowsFormsApp1*.
+- Um aplicativo de formulários do Windows que você está pronto para implantar. Este aplicativo será referenciado como *WindowsFormsApp1*.
 
--   Visual Studio ou o SDK do Windows.
+- Visual Studio ou o SDK do Windows.
 
 ### <a name="to-deploy-a-clickonce-application-with-multiple-deployment-and-branding-support-using-mageexe"></a>Para implantar um aplicativo ClickOnce com vários implantação e suporte de identidade visual usando Mage.exe
 

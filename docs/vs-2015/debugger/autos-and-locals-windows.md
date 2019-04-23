@@ -21,12 +21,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 612ed741e373b27c3564c185cc3e9bacffcb7739
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 261c0c0bd8b48634c8d24d56ee4df7ea3bbcf135
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925496"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072845"
 ---
 # <a name="autos-and-locals-windows"></a>Autos e locais Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ O **Autos** janela (durante a depuração, **CTRL + ALT + V, A**, ou **depurar /
  ![Locals&#45;FileStream](../debugger/media/locals-filestream.png "Locals-FileStream")  
   
 ## <a name="what-variables-appear-in-the-autos-window"></a>Quais variáveis são exibidos na janela Autos?  
- Você pode usar o **automóveis** janela no código C#, Visual Basic e C++. O **automóveis** não tem suporte para JavaScript ou F#.  
+ Você pode usar o **automóveis** janela no código c#, Visual Basic e C++. O **automóveis** não tem suporte para JavaScript ou F#.  
   
- Em C# e Visual Basic, o **automóveis** janela exibirá qualquer variável usada na linha atual ou anterior. Por exemplo, se você declara quatro variáveis e defini-los da seguinte maneira:  
+ Em c# e Visual Basic, o **automóveis** janela exibirá qualquer variável usada na linha atual ou anterior. Por exemplo, se você declara quatro variáveis e defini-los da seguinte maneira:  
   
 ```csharp  
 public static void Main()  
@@ -84,10 +84,10 @@ void main() {
   
  Você também pode ver os valores de retorno de funções e métodos em determinadas circunstâncias. Ver [valores de retorno de modo de exibição de chamadas de método](#bkmk_returnValue) abaixo.  
   
-##  <a name="bkmk_returnValue"></a> Modo de exibição de valores de retorno de chamadas de método  
+## <a name="bkmk_returnValue"></a> Modo de exibição de valores de retorno de chamadas de método  
  No código .NET e C++, você pode examinar valores de retorno ao passar sobre ou fora de uma chamada de método. Essa funcionalidade é útil quando o resultado de uma chamada de método não é armazenado em uma variável local, por exemplo, quando um método é usado como um parâmetro ou como um valor de retorno de outro método.  
   
- O código C# a seguir adiciona os valores de retorno das duas funções:  
+ O código c# a seguir adiciona os valores de retorno das duas funções:  
   
 ```csharp  
 static void Main(string[] args)  
@@ -133,11 +133,11 @@ private static int subtractVars(int i, int j)
   
  No entanto, você deve ter cuidado ao alterar valores. Estes são alguns problemas possíveis:  
   
--   Avaliar algumas expressões pode alterar o valor de uma variável ou, de outra forma, afetar o estado do programa. Por exemplo, avaliando `var1 = ++var2` altera o valor da `var1` e `var2`.  
+- Avaliar algumas expressões pode alterar o valor de uma variável ou, de outra forma, afetar o estado do programa. Por exemplo, avaliando `var1 = ++var2` altera o valor da `var1` e `var2`.  
   
      Expressões que alteram os dados são consideradas como tendo [efeitos colaterais](https://en.wikipedia.org/wiki/Side_effect_\(computer_science\)), que pode produzir resultados inesperados se você não estiver ciente deles. Verifique se que você entende as consequências de tal alteração antes de você fazê-lo.  
   
--   Editar valores de ponto flutuante pode resultar em imprecisões secundárias devido à conversão decimal-binária de componentes fracionários. Mesmo uma edição aparentemente inofensiva pode resultar em alterações em alguns bits menos significativos na variável de ponto flutuante.  
+- Editar valores de ponto flutuante pode resultar em imprecisões secundárias devido à conversão decimal-binária de componentes fracionários. Mesmo uma edição aparentemente inofensiva pode resultar em alterações em alguns bits menos significativos na variável de ponto flutuante.  
   
 ## <a name="debug-location-toolbar"></a>Depurar barra de ferramentas de local  
  Você pode usar o **local de depuração** barra de ferramentas para selecionar a função desejada, thread ou processo. Definir um ponto de interrupção e iniciar a depuração. (Se você não vir essa barra de ferramentas, você pode habilitá-lo clicando em uma parte vazia da área de barra de ferramentas. Você deve ver uma lista das barras de ferramentas; Selecione **local de depuração**). Quando o ponto de interrupção é atingido, a execução é interrompida e você pode ver a barra de ferramentas do local de depuração, que é a linha inferior do gráfico a seguir:  

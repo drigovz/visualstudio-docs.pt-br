@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2354f65e1b042682a0e58a0dbb4bc12712bb47e3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c853e24da3f203d67874d7b9740d3239abd78c14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923029"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066592"
 ---
 # <a name="deploying-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>Implantando aplicativos ClickOnce para servidores de teste e produção sem assinar novamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ Este tópico apresenta um novo recurso do ClickOnce, introduzida no .NET Framewo
   
  ISVs e desenvolvedores de terceiros podem participar desse recurso, tornando mais fácil para seus clientes atualizar seus aplicativos. Esse recurso pode ser usado nas seguintes situações:  
   
--   Ao atualizar um aplicativo, não a primeira instalação de um aplicativo.  
+- Ao atualizar um aplicativo, não a primeira instalação de um aplicativo.  
   
--   Quando há apenas uma configuração do aplicativo em um computador. Por exemplo, se um aplicativo estiver configurado para apontar para dois bancos de dados diferentes, você não pode usar esse recurso.  
+- Quando há apenas uma configuração do aplicativo em um computador. Por exemplo, se um aplicativo estiver configurado para apontar para dois bancos de dados diferentes, você não pode usar esse recurso.  
   
 ## <a name="excluding-deploymentprovider-from-deployment-manifests"></a>Excluindo deploymentProvider de manifestos de implantação  
  No .NET Framework 2.0 e o .NET Framework 3.0, qualquer aplicativo ClickOnce que é instalado no sistema para disponibilidade offline deve especificar um `deploymentProvider` em seu manifesto de implantação. O `deploymentProvider` é conhecido como o local de atualização; é o local em que verificará se há atualizações do aplicativo ClickOnce. Esse requisito, juntamente com a necessidade de editores de aplicativo assinar suas implantações, dificultou para uma empresa atualizar um aplicativo ClickOnce de um fornecedor ou outros terceiros. Ele também torna mais difícil de implantar o mesmo aplicativo de vários locais na mesma rede.  

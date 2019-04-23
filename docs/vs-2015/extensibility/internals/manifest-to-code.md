@@ -6,17 +6,17 @@ ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
 caps.latest.revision: 5
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 1eca19210be8001c56d14213d5efcde358f58b50
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5dd39ecfb25b4b21f7a9064da7621bcc77aab791
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927696"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076700"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-O manifesto para a ferramenta de código é um aplicativo de console que usa um arquivo .imagemanifest para o serviço de imagem do Visual Studio e gera um wrapper ou arquivos para fazer referência a valores do manifesto de imagem em C++, C#, VB ou arquivos. VSCT para extensões do Visual Studio. Essa ferramenta gera arquivos de wrapper que podem ser usados para solicitantes imagens do Visual Studio imagem serviço diretamente ou para passar os valores do manifesto por meio de APIs se o código não processa qualquer uma de sua própria interface do usuário e a renderização.  
+O manifesto para a ferramenta de código é um aplicativo de console que usa um arquivo .imagemanifest para o serviço de imagem do Visual Studio e gera um wrapper ou arquivos para fazer referência a valores do manifesto de imagem em C++, c#, VB ou arquivos. VSCT para extensões do Visual Studio. Essa ferramenta gera arquivos de wrapper que podem ser usados para solicitantes imagens do Visual Studio imagem serviço diretamente ou para passar os valores do manifesto por meio de APIs se o código não processa qualquer uma de sua própria interface do usuário e a renderização.  
   
 ## <a name="how-to-use-the-tool"></a>Como usar a ferramenta  
  **Sintaxe**  
@@ -29,7 +29,7 @@ O manifesto para a ferramenta de código é um aplicativo de console que usa um 
 |-|-|-|  
 |**Nome do comutador**|**Observações**|**Obrigatório ou opcional**|  
 |/manifest|O caminho para o manifesto de imagem para usar para criar ou atualizar o wrapper de código.|Necessária|  
-|/language|O idioma no qual gerar o wrapper de código.<br /><br /> Valores válidos: CPP, C++, CS, CSharp, C#, VB ou VSCT os valores diferenciam maiusculas de minúsculas.<br /><br /> Para o idioma VSCT opções de opção, o /monikerClass, /classAccess e /namespace serão ignoradas.|Necessária|  
+|/language|O idioma no qual gerar o wrapper de código.<br /><br /> Valores válidos: CPP, C++, CS, CSharp, c#, VB ou VSCT os valores diferenciam maiusculas de minúsculas.<br /><br /> Para o idioma VSCT opções de opção, o /monikerClass, /classAccess e /namespace serão ignoradas.|Necessária|  
 |/imageIdClass|O nome da imageIdClass e o arquivo associado, criado pela ferramenta. Para a opção de linguagem C++, somente os arquivos. h são gerados.<br /><br /> Padrão: \<Caminho de manifesto > \MyImageIds. \<Lang Ext >|Opcional|  
 |/monikerClass|O nome da monikerClass e o arquivo associado, criado pela ferramenta. Para a opção de linguagem C++, somente os arquivos. h são gerados. Isso é ignorado para o idioma VSCT.<br /><br /> Padrão: \<Caminho de manifesto > \MyMonikers. \<Lang Ext >|Opcional|  
 |/classAccess|O modificador de acesso para o imageIdClass e o monikerClass. Verifique se que o modificador de acesso é válido para o idioma fornecido. Isso é ignorado para a opção de idioma VSCT.<br /><br /> Padrão: Público|Opcional|  
@@ -40,22 +40,22 @@ O manifesto para a ferramenta de código é um aplicativo de console que usa um 
   
  **Exemplos**  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:CSharp  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ /namespace: meu:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest /language:C++ /namespace: meu:: Namespace /imageIdClass:MyImageIds /monikerClass:MyMonikers /classAccess:friend  
   
--   ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
+- ManifestToCode /manifest:D:\MyManifest.imagemanifest                /language:VSCT                /imageIdClass:MyImageIds  
   
 ## <a name="notes"></a>Observações  
   
--   É recomendável que você usar essa ferramenta com manifestos de imagem que foram gerados pelo manifesto de ferramenta de recursos.  
+- É recomendável que você usar essa ferramenta com manifestos de imagem que foram gerados pelo manifesto de ferramenta de recursos.  
   
--   A ferramenta olha apenas entradas de símbolo para gerar os wrappers de código. Se um manifesto de imagem não contiver nenhum símbolo, os wrappers de código gerado será vazios. Se houver uma imagem ou um conjunto de imagens no manifesto de imagem que não usam símbolos, elas serão excluídas do wrapper de código.  
+- A ferramenta olha apenas entradas de símbolo para gerar os wrappers de código. Se um manifesto de imagem não contiver nenhum símbolo, os wrappers de código gerado será vazios. Se houver uma imagem ou um conjunto de imagens no manifesto de imagem que não usam símbolos, elas serão excluídas do wrapper de código.  
   
 ## <a name="sample-output"></a>Saída de exemplo  
- **Wrappers do C#**  
+ **Wrappers do c#**  
   
- Classes de um par de ID de imagem simples e o moniker de imagem para C# será semelhante ao código abaixo:  
+ Classes de um par de ID de imagem simples e o moniker de imagem para c# será semelhante ao código abaixo:  
   
 ```csharp  
 //-----------------------------------------------------------------------------  

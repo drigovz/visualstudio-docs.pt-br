@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 608ba29c9f2068ce053fd6b92ba053eb45869ddd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925761"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070830"
 ---
 # <a name="t4-template-directive"></a>Diretiva de modelo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Um modelo de texto T4 do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] normalment
  `compilerOptions="optimize+"`  
   
  Valores válidos:  
- Algumas opções válidas do compilador. Para obter mais informações, consulte [opções de compilador C# está listadas por categoria](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) e [opções de compilador Visual Basic listadas por categoria](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
+ Algumas opções válidas do compilador. Para obter mais informações, consulte [opções de compilador c# está listadas por categoria](http://msdn.microsoft.com/library/96437ecc-6502-4cd3-b070-e9386a298e83) e [opções de compilador Visual Basic listadas por categoria](http://msdn.microsoft.com/library/fbe36f7a-7cfa-4f77-a8d4-2be5958568e3).  
   
  Ignorada para modelos de tempo de execução (pré-processados).  
   
@@ -55,7 +55,8 @@ Um modelo de texto T4 do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] normalment
   
 ## <a name="debug-attribute"></a>Atributo debug  
  Exemplo:  
- ```  
+
+```  
 debug="true"  
 ```  
   
@@ -70,7 +71,8 @@ debug="true"
   
 ## <a name="hostspecific-attribute"></a>Atributo hostspecific  
  Exemplo:  
- ```  
+
+```  
 hostspecific="true"  
 ```  
   
@@ -144,7 +146,8 @@ Squares of numbers:
  Normalmente, você especifica outro modelo pré-processado como a classe base. O modelo de base fornece os blocos de texto comuns, que podem ser intercalados com o texto dos modelos derivados. Você pode usar blocos de recursos de classe `<#+ ... #>` para definir os métodos que contêm fragmentos de texto. Por exemplo, você pode colocar o framework dp texto de saída no modelo de base, fornecendo métodos virtuais que podem ser substituídos em modelos derivados:  
   
  Modelo de texto de tempo de execução (pré-processado) BaseTemplate.tt:  
- ```scr  
+
+```scr  
 This is the common header.  
 <#   
   SpecificFragment1();   
@@ -163,7 +166,8 @@ This is the common footer.
 ```  
   
  Modelo de texto de tempo de execução (pré-processado) DerivedTemplate1.tt:  
- ```csharp  
+
+```csharp  
 <#@ template language="C#" inherits="BaseTemplate" #>  
 <#   
   // Run the base template:  
@@ -188,12 +192,14 @@ protected override void SpecificFragment2()
 ```  
   
  Código do aplicativo para invocar DerivedTemplate1:  
- ```csharp  
+
+```csharp  
 Console.WriteLine(new DerivedTemplate().TransformText());  
 ```  
   
  Saída resultante:  
- ```  
+
+```  
 This is the common header.  
    Fragment 1 for DerivedTemplate1  
 A common central text.  

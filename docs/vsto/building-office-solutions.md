@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 000a036b90d1fa44f24a8340770790ab216c1d85
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 17ca737e0796230b9af207bf2f203700676ac630
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55945411"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078922"
 ---
 # <a name="build-office-solutions"></a>Compilar soluções do Office
   Em geral, compilar e depurar projetos do Office é o mesmo que a compilação e depuração de outros tipos de projetos no Visual Studio, como o Windows Forms. Os tópicos nesta seção explicam as diferenças que existem. Para obter informações gerais sobre como criar aplicativos, consulte [compilar e criar no Visual Studio](../ide/compiling-and-building-in-visual-studio.md).
@@ -45,15 +45,15 @@ ms.locfileid: "55945411"
 ### <a name="document-level-projects"></a>Projetos de nível de documento
  Quando você compila um projeto de nível de documento, os itens a seguir estão incluídos na saída do projeto:
 
--   Uma cópia do documento do projeto.
+- Uma cópia do documento do projeto.
 
--   O assembly do projeto e todos os assemblies referenciados que têm suas **Copy Local** propriedade definida como **verdadeiro**.
+- O assembly do projeto e todos os assemblies referenciados que têm suas **Copy Local** propriedade definida como **verdadeiro**.
 
--   O manifesto do aplicativo, que tem a extensão de nome de arquivo *. manifest*. Para obter mais informações, consulte [manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md).
+- O manifesto do aplicativo, que tem a extensão de nome de arquivo *. manifest*. Para obter mais informações, consulte [manifestos de aplicativo para soluções do Office](../vsto/application-manifests-for-office-solutions.md).
 
--   O manifesto de implantação, que tem a extensão de nome de arquivo *VSTO*. Para obter mais informações, consulte [manifestos de implantação para soluções do Office](../vsto/deployment-manifests-for-office-solutions.md).
+- O manifesto de implantação, que tem a extensão de nome de arquivo *VSTO*. Para obter mais informações, consulte [manifestos de implantação para soluções do Office](../vsto/deployment-manifests-for-office-solutions.md).
 
--   Um banco de dados do programa (*PDB*) arquivos.
+- Um banco de dados do programa (*PDB*) arquivos.
 
 > [!NOTE]
 >  Se você criar uma solução de nível de documento para um local remoto, em vez de no computador local, adicione o caminho totalmente qualificado para a lista de locais confiáveis na Central de confiabilidade do aplicativo. Para obter mais informações, consulte a seção chamada concedendo confiança a documentos nas [soluções do Office Secure](../vsto/securing-office-solutions.md).

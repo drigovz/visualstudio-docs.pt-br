@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1433d9ba1f207a0f86902d7afd56db6476b1fd56
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dc5f69fee15d3dc67b31c54f0b397fbf039aa52a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787086"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077336"
 ---
 # <a name="template-parameters"></a>Parâmetros de modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,19 +29,19 @@ Usando parâmetros em seus modelos, você pode substituir os valores das princip
 ## <a name="declaring-and-enabling-template-parameters"></a>Declarando e habilitando parâmetros de modelo  
  Parâmetros de modelo são declarados no formato $*parâmetro*$. Por exemplo:  
   
--   $safeprojectname$  
+- $safeprojectname$  
   
--   $guid1$  
+- $guid1$  
   
--   $guid5$  
+- $guid5$  
   
 #### <a name="to-enable-parameter-substitution-in-templates"></a>Para habilitar a substituição de parâmetro nos modelos  
   
-1.  No arquivo .vstemplate do modelo, localize o elemento `ProjectItem` que corresponde ao item para o qual você deseja habilitar a substituição de parâmetro.  
+1. No arquivo .vstemplate do modelo, localize o elemento `ProjectItem` que corresponde ao item para o qual você deseja habilitar a substituição de parâmetro.  
   
-2.  Defina o atributo `ReplaceParameters` do elemento `ProjectItem` como `true`.  
+2. Defina o atributo `ReplaceParameters` do elemento `ProjectItem` como `true`.  
   
-3.  No arquivo de código do item de projeto, inclua parâmetros conforme apropriado. Por exemplo, o parâmetro a seguir especifica que o nome de projeto safe seja usado para o namespace em um arquivo:  
+3. No arquivo de código do item de projeto, inclua parâmetros conforme apropriado. Por exemplo, o parâmetro a seguir especifica que o nome de projeto safe seja usado para o namespace em um arquivo:  
   
     ```  
     namespace $safeprojectname$  

@@ -12,12 +12,12 @@ ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4ccef9678cbdec3ea048c556434d80ef9b0196e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 48f079d29fee5587617f95791bc6de7148741735
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923042"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069383"
 ---
 # <a name="adding-user-control-to-the-start-page"></a>Adicionando um controle de usuário à página inicial
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,20 +29,20 @@ Este passo a passo mostra como adicionar uma referência DLL para uma página in
 ## <a name="adding-a-wpf-user-control-to-the-solution"></a>Adicionando um controle de usuário do WPF à solução  
  Primeiro, adicione um controle de usuário do Windows Presentation Foundation (WPF) para a solução de página inicial.  
   
-1.  Criar uma página inicial usando criamos na [criando uma página de início personalizado](../extensibility/creating-a-custom-start-page.md).  
+1. Criar uma página inicial usando criamos na [criando uma página de início personalizado](../extensibility/creating-a-custom-start-page.md).  
   
-2.  Na **Gerenciador de soluções**, a solução com o botão direito, clique em **Add**e, em seguida, clique em **novo projeto**.  
+2. Na **Gerenciador de soluções**, a solução com o botão direito, clique em **Add**e, em seguida, clique em **novo projeto**.  
   
-3.  No painel esquerdo do **novo projeto** diálogo caixa, expanda o a **Visual Basic** ou **Visual C#** nó e clique em **Windows**. No painel central, selecione **biblioteca de controle de usuário do WPF**.  
+3. No painel esquerdo do **novo projeto** diálogo caixa, expanda o a **Visual Basic** ou **Visual c#** nó e clique em **Windows**. No painel central, selecione **biblioteca de controle de usuário do WPF**.  
   
-4.  Nomeie o controle `WebUserControl` e, em seguida, clique em **Okey**.  
+4. Nomeie o controle `WebUserControl` e, em seguida, clique em **Okey**.  
   
 ## <a name="implementing-the-user-control"></a>Implementando o controle de usuário  
- Para implementar um controle de usuário do WPF, crie a interface do usuário (IU) no XAML e, em seguida, gravar os eventos de lógica em C# ou outra linguagem .NET.  
+ Para implementar um controle de usuário do WPF, crie a interface do usuário (IU) no XAML e, em seguida, gravar os eventos de lógica em c# ou outra linguagem .NET.  
   
 #### <a name="to-write-the-xaml-for-the-user-control"></a>Para gravar o XAML para o controle de usuário  
   
-1.  Abra o arquivo XAML para o controle de usuário. No \<grade > elemento, adicione as seguintes definições de linha para o controle.  
+1. Abra o arquivo XAML para o controle de usuário. No \<grade > elemento, adicione as seguintes definições de linha para o controle.  
   
     ```vb  
     <Grid.RowDefinitions>  
@@ -52,7 +52,7 @@ Este passo a passo mostra como adicionar uma referência DLL para uma página in
   
     ```  
   
-2.  No principal `Grid` elemento, adicione a seguinte nova `Grid` elemento, que contém uma caixa de texto para digitar endereços da Web e um botão para definir o novo endereço.  
+2. No principal `Grid` elemento, adicione a seguinte nova `Grid` elemento, que contém uma caixa de texto para digitar endereços da Web e um botão para definir o novo endereço.  
   
     ```xml  
     <Grid Grid.Row="0">  
@@ -65,13 +65,13 @@ Este passo a passo mostra como adicionar uma referência DLL para uma página in
     </Grid>  
     ```  
   
-3.  Adicionar o quadro a seguir para o nível superior `Grid` elemento logo após o `Grid` elemento que contém o botão e a caixa de texto.  
+3. Adicionar o quadro a seguir para o nível superior `Grid` elemento logo após o `Grid` elemento que contém o botão e a caixa de texto.  
   
     ```vb  
     <Frame Grid.Row="1" x:Name="WebFrame" Source="http://www.bing.com" Navigated="WebFrame_Navigated" />  
     ```  
   
-4.  O exemplo a seguir mostra o XAML concluído para o controle de usuário.  
+4. O exemplo a seguir mostra o XAML concluído para o controle de usuário.  
   
     ```xml  
     <UserControl x:Class="WebUserControl.UserControl1"  
@@ -102,11 +102,11 @@ Este passo a passo mostra como adicionar uma referência DLL para uma página in
   
 #### <a name="to-write-the-code-behind-events-for-the-user-control"></a>Para gravar os eventos de lógica do controle de usuário  
   
-1.  No designer XAML, clique duas vezes o **endereço definido** adicionada ao controle de botão.  
+1. No designer XAML, clique duas vezes o **endereço definido** adicionada ao controle de botão.  
   
      O arquivo UserControl1.cs é aberto no editor de códigos.  
   
-2.  Preencha o manipulador de eventos SetButton_Click da seguinte maneira.  
+2. Preencha o manipulador de eventos SetButton_Click da seguinte maneira.  
   
     ```csharp  
     private void SetButton_Click(object sender, RoutedEventArgs e)  
@@ -124,14 +124,14 @@ Este passo a passo mostra como adicionar uma referência DLL para uma página in
   
      Esse código define o endereço da Web que é digitado na caixa de texto como o destino para o navegador da Web. Se o endereço não é válido, o código gera um erro.  
   
-3.  Você também deve tratar o evento WebFrame_Navigated:  
+3. Você também deve tratar o evento WebFrame_Navigated:  
   
     ```csharp  
     private void WebFrame_Navigated(object sender, EventArgs e)  
     { }  
     ```  
   
-4.  Compile a solução.  
+4. Compile a solução.  
   
 ## <a name="adding-the-user-control-to-the-start-page"></a>Adicionando o controle de usuário para a página inicial  
  Para disponibilizar esse controle para o projeto de página inicial, no arquivo de página de início do projeto, adicione uma referência para a nova biblioteca de controle. Em seguida, você pode adicionar o controle para a marcação de XAML de página de início.  
@@ -174,15 +174,15 @@ Este passo a passo mostra como adicionar uma referência DLL para uma página in
   
 ## <a name="testing-a-manually-created-custom-start-page"></a>Testando uma página de início personalizados criados manualmente  
   
-1.  Copie seu arquivo XAML e quaisquer arquivos de texto de suporte ou marcação arquivos, como o **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\**  pasta.  
+1. Copie seu arquivo XAML e quaisquer arquivos de texto de suporte ou marcação arquivos, como o **%USERPROFILE%\My Documents\Visual Studio 2015\StartPages\\**  pasta.  
   
-2.  Se sua página inicial faz referência a quaisquer controles ou tipos em assemblies que não estão instalados pelo Visual Studio, copie os assemblies e, em seguida, cole-os nas _pasta de instalação do Visual Studio_**\Common7\IDE\ PrivateAssemblies\\**.  
+2. Se sua página inicial faz referência a quaisquer controles ou tipos em assemblies que não estão instalados pelo Visual Studio, copie os assemblies e, em seguida, cole-os nas _pasta de instalação do Visual Studio_**\Common7\IDE\ PrivateAssemblies\\**.  
   
-3.  Em um prompt de comando do Visual Studio, digite **devenv /rootsuffix Exp** para abrir uma instância experimental do Visual Studio.  
+3. Em um prompt de comando do Visual Studio, digite **devenv /rootsuffix Exp** para abrir uma instância experimental do Visual Studio.  
   
-4.  Na instância experimental, vá para o **Ferramentas / opções / ambiente / inicialização** da página e selecione o arquivo XAML da **Personalizar página inicial** lista suspensa.  
+4. Na instância experimental, vá para o **Ferramentas / opções / ambiente / inicialização** da página e selecione o arquivo XAML da **Personalizar página inicial** lista suspensa.  
   
-5.  Sobre o **modo de exibição** menu, clique em **Start Page**.  
+5. Sobre o **modo de exibição** menu, clique em **Start Page**.  
   
      Sua página inicial personalizada deve ser exibida. Se você deseja alterar todos os arquivos, você deve fechar a instância experimental, faça as alterações, copie e cole os arquivos alterados e, em seguida, reabra a instância experimental para exibir as alterações.  
   

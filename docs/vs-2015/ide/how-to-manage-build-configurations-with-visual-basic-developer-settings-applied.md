@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d6a315adb859445c5efa15df5b8366815bfc86d7
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0b0587f6c1c5d7577d8fddffb73db31f09248fae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54784771"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075643"
 ---
 # <a name="how-to-manage-build-configurations-with-visual-basic-developer-settings-applied"></a>Como gerenciar configurações de build com as configurações do Visual Basic Developer aplicadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,16 +34,16 @@ Por padrão, todas as opções avançadas de configuração de build ficam ocult
   
 #### <a name="to-enable-advanced-build-configurations"></a>Para habilitar configurações de build avançadas  
   
-1.  No menu **Ferramentas**, clique em **Opções**.  
+1. No menu **Ferramentas**, clique em **Opções**.  
   
-2.  Expanda **Projetos e Soluções** e clique em **Geral**.  
+2. Expanda **Projetos e Soluções** e clique em **Geral**.  
   
     > [!NOTE]
     >  O nó **Geral** permanece visível mesmo que a opção **Mostrar todas as configurações** seja desmarcada. Se quiser ver todas as opções disponíveis, clique em **Mostrar todas as configurações**.  
   
-3.  Clique em **Mostrar configurações avançadas de build**.  
+3. Clique em **Mostrar configurações avançadas de build**.  
   
-4.  Clique em **OK**.  
+4. Clique em **OK**.  
   
      No menu **Build**, **Configuration Manager** agora está disponível e as listas **Configuração** e **Plataforma** estão visíveis no Designer de Projeto.  
   

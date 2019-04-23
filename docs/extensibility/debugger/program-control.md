@@ -10,27 +10,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98c63d2eff11997a37d27f71d01403b59f276e2b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 971eb3184fc12b9ed72675fbcd46a893981b4c9e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679132"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072949"
 ---
 # <a name="program-control"></a>Controle do programa
 No Visual Studio de depuração, todos os procedimentos passo a passo e continuando rotinas ocorrerem no nível do programa:
 
--   Ou seja, definir a próxima instrução, a configuração de seu computador para a próxima instrução a ser executada no ambiente de um determinado quadro
+- Ou seja, definir a próxima instrução, a configuração de seu computador para a próxima instrução a ser executada no ambiente de um determinado quadro
 
--   Ou seja, executar, continuando sair do modo de depuração
+- Ou seja, executar, continuando sair do modo de depuração
 
--   Passo a passo para a próxima instrução
+- Passo a passo para a próxima instrução
 
--   Continuando com o modo de depuração atual
+- Continuando com o modo de depuração atual
 
--   Suspender os threads contidos pelo programa
+- Suspender os threads contidos pelo programa
 
--   Retomar os threads contidos pelo programa
+- Retomar os threads contidos pelo programa
 
 > [!NOTE]
 >  Exibindo a pilha de chamadas é implementada no nível do thread. Para enumerar as informações do quadro ao exibir a pilha de chamadas para um thread, você deve implementar todos os métodos do [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface.

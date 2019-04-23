@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 120020f4ae1aa409f64ce9999c0fcd9c96e806a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659014"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074877"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Salvar dados de um objeto em um banco de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Você pode salvar dados em objetos de um banco de dados, passando os valores de 
   
 ### <a name="to-save-new-records-from-an-object-to-a-database"></a>Para salvar novos registros de um objeto em um banco de dados  
   
--   Criar os registros passando os valores para o `TableAdapter.Insert` método.  
+- Criar os registros passando os valores para o `TableAdapter.Insert` método.  
   
      O exemplo a seguir cria um novo registro de cliente na `Customers` , passando os valores na tabela do `currentCustomer` do objeto para o `TableAdapter.Insert` método.  
   
@@ -54,7 +54,7 @@ Você pode salvar dados em objetos de um banco de dados, passando os valores de 
   
 ### <a name="to-update-existing-records-from-an-object-to-a-database"></a>Para atualizar registros existentes de um objeto para um banco de dados  
   
--   Modificar os registros chamando o `TableAdapter.Update` método, passando os novos valores para atualizar o registro e passando os valores originais para localizar o registro.  
+- Modificar os registros chamando o `TableAdapter.Update` método, passando os novos valores para atualizar o registro e passando os valores originais para localizar o registro.  
   
     > [!NOTE]
     >  O objeto precisa manter os valores originais e passá-los para o `Update` método. Este exemplo usa as propriedades com um `orig` prefixo para armazenar os valores originais.  
@@ -66,7 +66,7 @@ Você pode salvar dados em objetos de um banco de dados, passando os valores de 
   
 ### <a name="to-delete-existing-records-from-a-database"></a>Para excluir registros existentes de um banco de dados  
   
--   Excluir registros chamando o `TableAdapter.Delete` método e passar os valores originais para localizar o registro.  
+- Excluir registros chamando o `TableAdapter.Delete` método e passar os valores originais para localizar o registro.  
   
     > [!NOTE]
     >  O objeto precisa manter os valores originais e passá-los para o `Delete` método. Este exemplo usa as propriedades com um `orig` prefixo para armazenar os valores originais.  

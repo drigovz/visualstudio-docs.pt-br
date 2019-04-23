@@ -10,12 +10,12 @@ ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47dad5f6b508356bde7570996127007b25b287b0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5311aa3ff390611942aa91cb1f2a53ca5a76258d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924010"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074302"
 ---
 # <a name="how-to-troubleshoot-services"></a>Como: Solucionar problemas de serviços
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ if (log == null) return;
   
 ### <a name="to-troubleshoot-a-service"></a>Para solucionar problemas de um serviço  
   
-1.  Examine o registro do sistema para ver se o serviço foi registrado corretamente. Para obter mais informações, consulte [Registrando serviços](../misc/registering-services.md).  
+1. Examine o registro do sistema para ver se o serviço foi registrado corretamente. Para obter mais informações, consulte [Registrando serviços](../misc/registering-services.md).  
   
      O fragmento de arquivo. reg a seguir mostra como o serviço SVsTextManager pode ser registrado:  
   
@@ -52,17 +52,17 @@ if (log == null) return;
   
      No exemplo acima, o número de versão é a versão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], tais como 12.0 ou 14.0, a chave {F5E7E71D-1401-11d1-883B-0000F87579D2} é o identificador de serviço (SID) do serviço, SVsTextManager e a {de valor padrão F5E7E720-1401-11D1-883B-0000F87579D2} é o GUID do Gerenciador de texto VSPackage, que fornece o serviço do pacote.  
   
-2.  Use o tipo de serviço e não o tipo de interface ao chamar GetService. Ao solicitar um serviço do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], <xref:Microsoft.VisualStudio.Shell.Package> extrai a GUID do tipo. Um serviço não será encontrado se existem as seguintes condições:  
+2. Use o tipo de serviço e não o tipo de interface ao chamar GetService. Ao solicitar um serviço do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], <xref:Microsoft.VisualStudio.Shell.Package> extrai a GUID do tipo. Um serviço não será encontrado se existem as seguintes condições:  
   
-    1.  Um tipo de interface é passado para GetService em vez do tipo de serviço.  
+    1. Um tipo de interface é passado para GetService em vez do tipo de serviço.  
   
-    2.  Nenhum GUID for explicitamente atribuído à interface. Portanto, o sistema cria um GUID padrão para um objeto, conforme necessário.  
+    2. Nenhum GUID for explicitamente atribuído à interface. Portanto, o sistema cria um GUID padrão para um objeto, conforme necessário.  
   
-3.  Certifique-se de que o VSPackage solicitando o serviço foi colocado no local. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sites a um VSPackage após construí-la e antes de chamar <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
+3. Certifique-se de que o VSPackage solicitando o serviço foi colocado no local. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] sites a um VSPackage após construí-la e antes de chamar <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.  
   
      Se você tiver código em um construtor de VSPackage que precisa de um serviço, mova-o para o método Initialize.  
   
-4.  Certifique-se de que você está usando o provedor de serviço correto.  
+4. Certifique-se de que você está usando o provedor de serviço correto.  
   
      Nem todos os provedores de serviço são iguais. O provedor de serviços que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] passa para uma janela de ferramentas é diferente daquele que ele passa a um VSPackage. O provedor de serviços de janela da ferramenta conhece <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection>, mas não sabe sobre <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable>. Você pode chamar <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> para obter um provedor de serviços de VSPackage de dentro de uma janela de ferramenta.  
   

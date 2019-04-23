@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ac7a5665b287f51e59d99d21802acc252a55a99a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e0c2b544a72f8a50000b48092658254c6b978a1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928402"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60074343"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>Como: Verificar se há atualizações do aplicativo programaticamente usando a API de implantação do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,19 +37,19 @@ ClickOnce oferece duas maneiras de atualizar um aplicativo quando ele é implant
   
 ### <a name="to-check-for-updates-programmatically"></a>Para verificar atualizações programaticamente  
   
-1.  Crie um novo aplicativo de formulários do Windows usando suas ferramentas de linha de comando ou visual preferidas.  
+1. Crie um novo aplicativo de formulários do Windows usando suas ferramentas de linha de comando ou visual preferidas.  
   
-2.  Crie qualquer botão, o item de menu, ou outro item de interface do usuário que você deseja que os usuários selecionem para verificar se há atualizações. Manipulador de eventos do item, chame o método a seguir para verificar e instalar atualizações.  
+2. Crie qualquer botão, o item de menu, ou outro item de interface do usuário que você deseja que os usuários selecionem para verificar se há atualizações. Manipulador de eventos do item, chame o método a seguir para verificar e instalar atualizações.  
   
      [!code-cpp[ClickOnceAPI#6](../snippets/cpp/VS_Snippets_Winforms/ClickOnceAPI/cpp/form1.cpp#6)]
      [!code-csharp[ClickOnceAPI#6](../snippets/csharp/VS_Snippets_Winforms/ClickOnceAPI/CS/Form1.cs#6)]
      [!code-vb[ClickOnceAPI#6](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceAPI/VB/Form1.vb#6)]  
   
-3.  Compile o aplicativo.  
+3. Compile o aplicativo.  
   
 ### <a name="using-mageexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Usando Mage.exe para implantar um aplicativo que verifica se há atualizações de forma programática  
   
--   Siga as instruções para implantar seu aplicativo usando Mage.exe conforme explicado em [passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Ao chamar Mage.exe para gerar o manifesto de implantação, certifique-se de usar a opção de linha de comando `providerUrl`e para especificar a URL em que o ClickOnce deve verificar por atualizações. Se seu aplicativo será atualizada da [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), por exemplo, sua chamada para gerar o manifesto de implantação pode ser assim:  
+- Siga as instruções para implantar seu aplicativo usando Mage.exe conforme explicado em [passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Ao chamar Mage.exe para gerar o manifesto de implantação, certifique-se de usar a opção de linha de comando `providerUrl`e para especificar a URL em que o ClickOnce deve verificar por atualizações. Se seu aplicativo será atualizada da [ http://www.adatum.com/MyApp ](http://www.adatum.com/MyApp), por exemplo, sua chamada para gerar o manifesto de implantação pode ser assim:  
   
     ```  
     mage -New Deployment -ToFile WindowsFormsApp1.application -Name "My App 1.0" -Version 1.0.0.0 -AppManifest 1.0.0.0\MyApp.manifest -providerUrl http://www.adatum.com/MyApp/MyApp.application  
@@ -57,7 +57,7 @@ ClickOnce oferece duas maneiras de atualizar um aplicativo quando ele é implant
   
 ### <a name="using-mageuiexe-to-deploy-an-application-that-checks-for-updates-programmatically"></a>Usando MageUI.exe para implantar um aplicativo que verifica se há atualizações de forma programática  
   
--   Siga as instruções para implantar seu aplicativo usando Mage.exe conforme explicado em [passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Sobre o **opções de implantação** guia, defina o **local inicial** campo ao manifesto do aplicativo ClickOnce deve verificar se há atualizações. No **opções de atualização** guia, desmarque as **este aplicativo deve verificar por atualizações** caixa de seleção.  
+- Siga as instruções para implantar seu aplicativo usando Mage.exe conforme explicado em [passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Sobre o **opções de implantação** guia, defina o **local inicial** campo ao manifesto do aplicativo ClickOnce deve verificar se há atualizações. No **opções de atualização** guia, desmarque as **este aplicativo deve verificar por atualizações** caixa de seleção.  
   
 ## <a name="net-framework-security"></a>Segurança do .NET Framework  
  Seu aplicativo deve ter permissões de confiança total para usar a atualização através de programação.  

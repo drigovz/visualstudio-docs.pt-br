@@ -15,12 +15,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4f7da520c1659ebb75b777c031f171d1465493e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ca10710d87777cdaeead42015d46cc6d489c907e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660769"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072630"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opções, Editor de Texto, C/C++, Avançado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -73,19 +73,19 @@ Ao alterar essas opções, você pode alterar o comportamento relacionado ao Int
   
  Defina usando uma soma de qualquer uma das seguintes opções:  
   
--   0 – Nenhum  
+- 0 – Nenhum  
   
--   1 – Geral  
+- 1 – Geral  
   
--   2 – Ocioso  
+- 2 – Ocioso  
   
--   4 – WorkItem  
+- 4 – WorkItem  
   
--   8 – IntelliSense  
+- 8 – IntelliSense  
   
--   16 – ACPerf  
+- 16 – ACPerf  
   
--   32 – ClassView  
+- 32 – ClassView  
   
 ## <a name="fallback-location"></a>Localização de Fallback  
  A localização de fallback é onde os arquivos de suporte SDF e IntelliSense (por exemplo, iPCH) são colocados quando a localização principal (mesmo diretório que a solução) não é usado. Essa situação pode ocorrer se o usuário não tem as permissões para gravar no diretório da solução ou o diretório da solução está em um dispositivo lento. A localização de fallback padrão é no diretório temporário do usuário.  

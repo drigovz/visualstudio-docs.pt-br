@@ -8,12 +8,12 @@ ms.assetid: 8a7b760d-b5ac-4451-9593-6ac1a0b95cdb
 caps.latest.revision: 11
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ab353f9c42eebe4af10f56f6ee4cda533069121
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 64632c175b44a370d7dcaf48e7c0a8cee766a4ab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54779564"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078064"
 ---
 # <a name="sample-excel-extension-technologymanager-class"></a>Extensão do Excel de exemplo: Classe TechnologyManager
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,15 +38,15 @@ Essa classe estende a classe <xref:Microsoft.VisualStudio.TestTools.UITest.Exten
 ## <a name="methods-to-get-an-element"></a>Métodos para obter um elemento  
  Há vários métodos importantes que são usados pela estrutura de teste de IU codificado para obter um elemento específico da tecnologia, fornecendo um identificador, um ponto na tela ou um elemento de uma tecnologia diferente. O código para esses métodos é auto-explicativo. Os métodos básicos são os seguintes:  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetFocusedElement%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetFocusedElement%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromPoint%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromPoint%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromWindowHandle%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromWindowHandle%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromNativeElement%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.GetElementFromNativeElement%2A?displayProperty=fullName>  
   
--   <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
+- <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyManager.ConvertToThisTechnology%2A?displayProperty=fullName>  
   
 ## <a name="parsequeryid-method"></a>Método ParseQueryId  
  Quando um teste de IU codificado é criado, o usuário pode especificar valores de propriedade para alguns ou todos os controles no teste. Esses valores de propriedade são usados pela estrutura de teste para criar pares de nome-valor chamados propriedades de pesquisa que são usadas para localizar controles específicos de interface do usuário durante o teste. Todas as propriedades de pesquisa juntas representam o valor da propriedade <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.UITechnologyElement.QueryId%2A?displayProperty=fullName> de cada elemento na tecnologia, o que inclui todos os controles. Como um controle pode ser encontrado várias vezes durante um teste, esse método permite que o gerente de tecnologia otimize a análise das propriedades de pesquisa para o controle fornecido. Esse método também retorna um cookie que a estrutura pode utilizar para pesquisas subsequentes para o controle. Essa implementação do método usa o método <xref:Microsoft.VisualStudio.TestTools.UITest.Extension.AndCondition.Match%2A?displayProperty=fullName> para analisar as propriedades de pesquisa.  

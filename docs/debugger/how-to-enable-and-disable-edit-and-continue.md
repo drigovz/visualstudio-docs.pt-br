@@ -1,5 +1,5 @@
 ---
-title: 'Como: habilitar e desabilitar editar e continuar | Microsoft Docs'
+title: 'Como: Habilitar e desabilitar editar e continuar | Microsoft Docs'
 ms.custom: seodec18
 ms.date: 10/04/2018
 ms.topic: conceptual
@@ -26,14 +26,14 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 49ee21943f63cee3fff35d2bb92817294169c61f
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
-ms.translationtype: MTE95
+ms.openlocfilehash: b0a10d720e911f80aa5ef7b4a42f521bfd9c31bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223579"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070401"
 ---
-# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Como: habilitar e desabilitar editar e continuar (C#, VB, C++)
+# <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>Como: Habilitar e desabilitar editar e continuar (C#, VB, C++)
 
 Você pode desabilitar ou habilitar **editar e continuar** no Visual Studio **opções** caixa de diálogo em tempo de design. **Editar e Continuar** só funciona em builds de depuração. Para obter mais informações, confira [Editar e Continuar](../debugger/edit-and-continue.md).
 
@@ -41,14 +41,14 @@ Para o C++ nativo, **editar e continuar** requer o uso de `/INCREMENTAL` opção
 
 **Para habilitar ou desabilitar editar e continuar:**
 
-1.  Se você estiver em uma sessão de depuração, pare a depuração (**Debug** > **parar depuração** ou **Shift**+**F5**) .
+1. Se você estiver em uma sessão de depuração, pare a depuração (**Debug** > **parar depuração** ou **Shift**+**F5**) .
 
-1.  Na **ferramentas** > **opções** > (ou **depurar** > **opções**) > **depuração**  >  **Gerais**, selecione **editar e continuar** no painel direito.
+1. Na **ferramentas** > **opções** > (ou **depurar** > **opções**) > **depuração**  >  **Gerais**, selecione **editar e continuar** no painel direito.
 
     > [!NOTE]
     >  Se IntelliTrace estiver habilitado e você coletar eventos de IntelliTrace e informações de chamada, Editar e Continuar estará desabilitado. Para obter mais informações, consulte [IntelliTrace](../debugger/intellitrace.md).
 
-1.  Para código C++, certifique-se **habilitar nativo editar e continuar** está selecionado e definir as opções adicionais:
+1. Para código C++, certifique-se **habilitar nativo editar e continuar** está selecionado e definir as opções adicionais:
     - **Aplicar alterações ao continuar (somente nativo)**
 
       Se selecionado, o Visual Studio compila automaticamente e aplica as alterações de código quando você continuar a depuração a partir de um estado de interrupção. Caso contrário, você pode optar por aplicar as alterações usando **Debug** > **aplicar alterações de código**.
@@ -57,4 +57,4 @@ Para o C++ nativo, **editar e continuar** requer o uso de `/INCREMENTAL` opção
 
       Se selecionado, dá avisos sobre código obsoleto.
 
-1.  Clique em **OK**.
+1. Clique em **OK**.

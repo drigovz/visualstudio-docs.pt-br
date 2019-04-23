@@ -9,12 +9,12 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6575cf949084b8fa1bdbb0c891cafdc720e809d3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 214a7fc8144d50dac52a5be1b45d9d5fc2b4a633
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666371"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60078597"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-service-to-collect-application-statistics-by-using-the-command-line"></a>Como: Anexar o Profiler para um serviço nativo para coletar estatísticas do aplicativo usando a linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar e interromper a coleta de dados  
 
--   Os pares de opções **VSPerfCmd** a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
+- Os pares de opções **VSPerfCmd** a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
 
     |Opção|Descrição|  
     |------------|-----------------|  
@@ -94,15 +94,15 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
 
 #### <a name="to-end-a-profiling-session"></a>Para encerrar uma sessão de criação de perfil  
 
-1.  Siga um destes procedimentos para desanexar o criador de perfil do aplicativo de destino:  
+1. Siga um destes procedimentos para desanexar o criador de perfil do aplicativo de destino:  
 
-    -   Pare o serviço.  
+    - Pare o serviço.  
 
          - ou -  
 
-    -   Digite **VSPerfCmd /detach**  
+    - Digite **VSPerfCmd /detach**  
 
-2.  Desligue o criador de perfil. Tipo:  
+2. Desligue o criador de perfil. Tipo:  
 
      **VSPerfCmd /shutdown**  
 

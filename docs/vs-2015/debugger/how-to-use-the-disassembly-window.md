@@ -25,12 +25,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2bd0fe7ca8b2a1f21ebcb6c3434348df9d2e66e5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 42d7c9798527498f2803d814515faefd62c3ace9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929666"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077492"
 ---
 # <a name="how-to-use-the-disassembly-window"></a>Como: Use a janela de desmontagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,13 +64,13 @@ Esse recurso está disponível somente se a depuração do nível de endereços 
   
 ### <a name="to-display-the-disassembly-window"></a>Para exibir a janela Desmontagem  
   
--   Sobre o **Debug** menu, escolha **Windows**e clique em **desmontagem**.  
+- Sobre o **Debug** menu, escolha **Windows**e clique em **desmontagem**.  
   
      O depurador deve estar em execução ou no modo de interrupção.  
   
 ### <a name="to-turn-optional-information-on-or-off"></a>Para ativar ou desativar as informações opcionais  
   
--   Clique com botão direito do **desmontagem** janela e defina ou desmarque as opções desejadas no menu de atalho.  
+- Clique com botão direito do **desmontagem** janela e defina ou desmarque as opções desejadas no menu de atalho.  
   
      Uma seta amarela na margem esquerda marca o local do ponto de execução atual. Para o código nativo, isso corresponde ao contador do programa da CPU. Este local mostra a próxima instrução que será executada em seu programa.  
   

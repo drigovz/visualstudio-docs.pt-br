@@ -9,29 +9,29 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b653d1b19842910fc88deb9d9cae5db918f35b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a343cb508933b91f5400ff6bc17c285a54bd2e87
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54767093"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076793"
 ---
-# <a name="how-to-create-a-basic-texture"></a>Como criar uma textura básica
+# <a name="how-to-create-a-basic-texture"></a>Como: Criar uma textura básica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este documento demonstra como usar o Editor de Imagens para criar uma textura básica.  
   
  Este documento demonstra essas atividades:  
   
--   Configurar o tamanho da textura  
+- Configurar o tamanho da textura  
   
--   Configurar a cor de primeiro plano e a cor da tela de fundo  
+- Configurar a cor de primeiro plano e a cor da tela de fundo  
   
--   Usar o canal alfa (transparência)  
+- Usar o canal alfa (transparência)  
   
--   Usar as ferramentas **Preenchimento** e **Elipse**  
+- Usar as ferramentas **Preenchimento** e **Elipse**  
   
--   Configurar propriedades de ferramenta  
+- Configurar propriedades de ferramenta  
   
 ## <a name="creating-a-basic-texture"></a>Criar uma textura básica  
  Você pode usar o Editor de Imagens para criar e modificar imagens e texturas para o seu jogo ou aplicativo.  
@@ -88,7 +88,7 @@ Este documento demonstra como usar o Editor de Imagens para criar uma textura b�
   
     ![A textura de destino de "alvo" concluída](../designers/media/gfx-image-demo-bullseye.png "gfx_image_demo_bullseye")  
   
-    Como uma próxima etapa, você pode gerar níveis de MIP para essa textura. Para obter informações, consulte [Como criar e modificar níveis de MIP](../designers/how-to-create-and-modify-mip-levels.md).  
+    Como uma próxima etapa, você pode gerar níveis de MIP para essa textura. Para obter mais informações, veja [Como: Criar e modificar níveis MIP](../designers/how-to-create-and-modify-mip-levels.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Editor de Imagens](../designers/image-editor.md)

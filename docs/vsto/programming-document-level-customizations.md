@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0815ccf781782a0d638fcf941a6e48edcf8ccd1f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 53003e2a88faf2ef29d3a1eb3df1da081f20ce57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624679"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60077752"
 ---
 # <a name="program-document-level-customizations"></a>Personalizações em nível de documento do programa
   Quando você estende o Microsoft Office Word ou Microsoft Office Excel, usando uma personalização no nível de documento, você pode executar as seguintes tarefas:
@@ -62,13 +62,13 @@ ms.locfileid: "56624679"
 
 - Projetos de nível de documento para Excel tem várias classes geradas: um para a pasta de trabalho em si e outro para cada planilha. Por padrão, essas classes têm os seguintes nomes:
 
-  -   `ThisWorkbook`
+  - `ThisWorkbook`
 
-  -   `Sheet1`
+  - `Sheet1`
 
-  -   `Sheet2`
+  - `Sheet2`
 
-  -   `Sheet3`
+  - `Sheet3`
 
   A classe gerada inclui manipuladores de eventos que são chamados quando o documento for aberto ou fechado. Para executar código quando o documento for aberto, adicione código para o `Startup` manipulador de eventos. Para executar código antes do documento é fechado, adicione código para o `Shutdown` manipulador de eventos. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
 

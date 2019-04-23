@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9a949ee781652c3e19b3ebc3476e736374fe4f21
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4bf492c866a43a0098fbcad5660a19c57fc90a3a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634312"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071533"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>Como: Imprimir documentos do Visio de forma programática
   Você pode imprimir um documento do Microsoft Office Visio completo ou apenas uma página específica.
@@ -29,7 +29,7 @@ ms.locfileid: "56634312"
 
 ### <a name="to-print-a-complete-document"></a>Para imprimir um documento completo
 
--   Chame o `Microsoft.Office.Interop.Visio.Document.Print` método da `Microsoft.Office.Interop.Visio.Document` objeto que você deseja imprimir.
+- Chame o `Microsoft.Office.Interop.Visio.Document.Print` método da `Microsoft.Office.Interop.Visio.Document` objeto que você deseja imprimir.
 
      O exemplo de código a seguir imprime o documento ativo. Para usar este exemplo, execute o código no `ThisAddIn` classe em seu projeto.
 
@@ -40,7 +40,7 @@ ms.locfileid: "56634312"
 
 ### <a name="to-print-a-page-of-a-document"></a>Para imprimir uma página de um documento
 
--   Chame o `Microsoft.Office.Interop.Visio.Pages.Print` método da `Microsoft.Office.Interop.Visio.Pages` objeto que você deseja imprimir.
+- Chame o `Microsoft.Office.Interop.Visio.Pages.Print` método da `Microsoft.Office.Interop.Visio.Pages` objeto que você deseja imprimir.
 
      O exemplo de código a seguir imprime a primeira página do documento ativo. Para usar este exemplo, execute o código no `ThisAddIn` classe em seu projeto.
 

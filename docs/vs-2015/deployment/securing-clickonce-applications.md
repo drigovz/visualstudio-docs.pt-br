@@ -1,5 +1,5 @@
 ---
-title: Protegendo aplicativos ClickOnce | Microsoft Docs
+title: Proteger aplicativos ClickOnce | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-deployment
@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2266cae99336b1ab56131feee9aa96852746b73b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929548"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60076192"
 ---
 # <a name="securing-clickonce-applications"></a>Protegendo aplicativos ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,23 +41,23 @@ Os aplicativos [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] estão suj
 |Instalar do compartilhamento de arquivos de rede|Zona de Intranet Local|  
 |Instalar de CD-ROM|Confiança Total|  
   
- As permissões padrão são baseadas no local do qual a versão original do aplicativo foi implantada; as atualizações para o aplicativo herdarão as permissões. Se o aplicativo estiver configurado para verificar se há atualizações de um local na Web ou rede e uma versão mais recente estiver disponível, a instalação original poderá receber permissões para a zona da Internet ou intranet em vez de permissões de confiança total. Para evitar solicitações aos usuários, um administrador de sistema poderá especificar uma política de implantação ClickOnce que defina um editor de aplicativos específico como uma fonte confiável. Para computadores nos quais esta política é implantada, as permissões serão concedidas automaticamente e o usuário não será interpelado. Para obter mais informações, consulte [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md). Para configurar a implantação do aplicativo de confiança, o certificado poderá ser instalado no computador ou em nível corporativo. Para obter mais informações, confira [Como: Adicionar um fornecedor confiável a um computador cliente para aplicativos ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
+ As permissões padrão são baseadas no local do qual a versão original do aplicativo foi implantada; as atualizações para o aplicativo herdarão as permissões. Se o aplicativo estiver configurado para verificar se há atualizações de um local na Web ou rede e uma versão mais recente estiver disponível, a instalação original poderá receber permissões para a zona da Internet ou intranet em vez de permissões de confiança total. Para evitar solicitações aos usuários, um administrador de sistema poderá especificar uma política de implantação ClickOnce que defina um editor de aplicativos específico como uma fonte confiável. Para computadores nos quais esta política é implantada, as permissões serão concedidas automaticamente e o usuário não será interpelado. Para saber mais, veja [Visão geral da implantação de aplicativos confiáveis](../deployment/trusted-application-deployment-overview.md). Para configurar a implantação do aplicativo de confiança, o certificado poderá ser instalado no computador ou em nível corporativo. Para obter mais informações, confira [Como: Adicionar um fornecedor confiável a um computador cliente para aplicativos ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md).  
   
 ## <a name="code-access-security-policies"></a>Políticas de segurança de acesso a código  
- As permissões para um aplicativo são determinadas pelas configurações de [ \<trustInfo > elemento](../deployment/trustinfo-element-clickonce-application.md) elemento do manifesto do aplicativo. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gerencia automaticamente essas informações com base nas configurações na página de propriedades de **Segurança** do projeto. Um aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] recebe apenas as permissões específicas que ele solicita. Por exemplo, onde o acesso ao arquivo exige permissões de confiança total, se o aplicativo solicitar permissão de acesso a arquivos, ele receberá apenas permissão de acesso a arquivos, não permissões de confiança total. Ao desenvolver seu aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], certifique-se de solicitar apenas as permissões específicas que o aplicativo precisa. Na maioria dos casos, você pode usar zonas da Internet ou intranet local para limitar seu aplicativo à confiança parcial. Para obter mais informações, confira [Como: Definir uma zona de segurança para um aplicativo ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Se seu aplicativo exigir permissões personalizadas, você poderá criar uma zona personalizada. Para obter mais informações, confira [Como: Definir permissões personalizadas para um aplicativo ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
+ As permissões para um aplicativo são determinadas pelas configurações no elemento [\<trustInfo> Element](../deployment/trustinfo-element-clickonce-application.md) do manifesto do aplicativo. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gerencia automaticamente essas informações com base nas configurações na página de propriedades de **Segurança** do projeto. Um aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] recebe apenas as permissões específicas que ele solicita. Por exemplo, onde o acesso ao arquivo exige permissões de confiança total, se o aplicativo solicitar permissão de acesso a arquivos, ele receberá apenas permissão de acesso a arquivos, não permissões de confiança total. Ao desenvolver seu aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], certifique-se de solicitar apenas as permissões específicas que o aplicativo precisa. Na maioria dos casos, você pode usar zonas da Internet ou intranet local para limitar seu aplicativo à confiança parcial. Para obter mais informações, confira [Como: Definir uma zona de segurança para um aplicativo ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md). Se seu aplicativo exigir permissões personalizadas, você poderá criar uma zona personalizada. Para obter mais informações, confira [Como: Definir permissões personalizadas para um aplicativo ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md).  
   
  Incluir uma permissão que não faça parte do conjunto de permissões padrão para a zona da qual o aplicativo será implantado fará com que o usuário final seja solicitado a conceder permissão no momento da instalação ou atualização. Para evitar solicitações aos usuários, um administrador de sistema poderá especificar uma política de implantação ClickOnce que defina um editor de aplicativos específico como uma fonte confiável. Em computadores onde esta política é implantada, permissões serão concedidas automaticamente e o usuário não será interpelado.  
   
- Como um desenvolvedor, você é responsável por garantir que seu aplicativo seja executado com as permissões apropriadas. Se o aplicativo solicitar permissões fora de uma zona durante o tempo de execução, uma exceção de segurança poderá aparecer. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite que você depure seu aplicativo na zona de segurança de destino. e fornece ajuda para desenvolver aplicativos seguros. Para obter mais informações, confira [Como: Depurar um aplicativo ClickOnce com permissões restritas](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
+ Como um desenvolvedor, você é responsável por garantir que seu aplicativo seja executado com as permissões apropriadas. Se o aplicativo solicitar permissões fora de uma zona durante o tempo de execução, uma exceção de segurança poderá aparecer. [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] permite que você depure seu aplicativo na zona de segurança de destino. e fornece ajuda para o desenvolvimento de aplicativos seguros. Para obter mais informações, confira [Como: Depurar um aplicativo ClickOnce com permissões restritas](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md).  
   
  Para obter mais informações sobre a segurança de acesso do código e ClickOnce, consulte [Code Access Security para aplicativos ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).  
   
 ## <a name="code-signing-certificates"></a>Certificados de assinatura de código  
- Para publicar um aplicativo usando a implantação de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], você pode assinar os manifestos do aplicativo e de implantação para o aplicativo ao usar um par de chaves pública/privada. As ferramentas para assinar um manifesto estão disponíveis na página **Assinando** do **Designer de Projeto**. Para obter mais informações, consulte [página de assinatura, Designer de projeto](../ide/reference/signing-page-project-designer.md). Como alternativa, você pode assinar os manifestos com um arquivo de chave durante o processo de publicação, usando o Assistente de publicação.  
+ Para publicar um aplicativo usando a implantação de [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], você pode assinar os manifestos do aplicativo e de implantação para o aplicativo ao usar um par de chaves pública/privada. As ferramentas para assinar um manifesto estão disponíveis na página **Assinando** do **Designer de Projeto**. Para saber mais, veja [Página de Assinatura, Designer de Projeto](../ide/reference/signing-page-project-designer.md). Como alternativa, você pode assinar os manifestos com um arquivo de chave durante o processo de publicação usando o Assistente de Publicação.  
   
  Depois que os manifestos são assinados, as informações do editor baseadas na assinatura Authenticode serão exibidas para o usuário na caixa de diálogo de permissões durante a instalação, para mostrar que o aplicativo é oriundo de uma fonte confiável.  
   
- Para obter mais informações sobre ClickOnce e certificados, consulte [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md).  
+ Para saber mais sobre ClickOnce e certificados, veja [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md).  
   
 ## <a name="aspnet-form-based-authentication"></a>Autenticação baseada em formulários ASP.NET  
  Se você desejar controlar quais implantações cada usuário pode acessar, não habilite acesso anônimo aos aplicativos [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantados em um servidor Web. Em vez disso, habilite acesso de usuários às implantações instaladas com base em uma identidade de usuário usando a autenticação do Windows.  
@@ -79,11 +79,11 @@ Os aplicativos [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] estão suj
 ## <a name="deploying-obfuscated-assemblies"></a>Implantando assemblies ofuscados  
  Talvez você deseje ofuscar seu aplicativo ao usar o Dotfuscator para evitar que outras pessoas executem engenharia reversa do código. No entanto, o ofuscamento do assembly não é integrado ao Visual Studio IDE ou ao processo de implantação do ClickOnce. Portanto, será necessário executar o ofuscamento fora do processo de implantação, talvez usando uma etapa de pós-compilação. Depois de compilar o projeto, você executaria as seguintes etapas manualmente, fora do Visual Studio:  
   
-1.  Execute o ofuscamento ao usar o Dotfuscator.  
+1. Execute o ofuscamento ao usar o Dotfuscator.  
   
-2.  Use Mage.exe ou MageUI.exe para gerar os manifestos do ClickOnce e assiná-los. Para obter mais informações, consulte [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) e [MageUI.exe (Manifest Generation and Editing Tool, cliente gráfico)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
+2. Use Mage.exe ou MageUI.exe para gerar os manifestos do ClickOnce e assiná-los. Para obter mais informações, consulte [Mage.exe (Manifest Generation and Editing Tool)](http://msdn.microsoft.com/library/77dfe576-2962-407e-af13-82255df725a1) e [MageUI.exe (Manifest Generation and Editing Tool, cliente gráfico)](http://msdn.microsoft.com/library/f9e130a6-8117-49c4-839c-c988f641dc14).  
   
-3.  Publicar manualmente (copiar) os arquivos no local de origem de sua implantação (servidor Web, compartilhamento UNC ou CD-ROM).  
+3. Publicar manualmente (copiar) os arquivos no local de origem de sua implantação (servidor Web, compartilhamento UNC ou CD-ROM).  
   
 ## <a name="see-also"></a>Consulte também  
  [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)   

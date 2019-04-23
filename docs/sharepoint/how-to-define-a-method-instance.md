@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2f879f8367ad1b992300c9e5b1c8a2887e89205b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 318744ec1a1a9214ce0385fc56fb1c0cf340339b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608001"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068490"
 ---
 # <a name="how-to-define-a-method-instance"></a>Como: Definir uma instância de método
   Você deve definir pelo menos uma instância de método para cada método em seu modelo.
@@ -29,15 +29,15 @@ ms.locfileid: "56608001"
 
 ### <a name="to-define-a-method-instance"></a>Para definir uma instância de método
 
-1.  No **detalhes do método BDC** , expanda o nó de um método e, em seguida, expanda o **instâncias** nó.
+1. No **detalhes do método BDC** , expanda o nó de um método e, em seguida, expanda o **instâncias** nó.
 
-2.  No **adicionar uma instância de método** , escolha **criar instância de localizador**.
+2. No **adicionar uma instância de método** , escolha **criar instância de localizador**.
 
      Uma nova instância de método aparece sob o **instâncias** nó.
 
-3.  Na barra de menus, escolha **modo de exibição** > **janela propriedades**.
+3. Na barra de menus, escolha **modo de exibição** > **janela propriedades**.
 
-4.  No **propriedades** janela, defina as propriedades da instância do método. Para obter mais informações sobre cada propriedade, consulte [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
+4. No **propriedades** janela, defina as propriedades da instância do método. Para obter mais informações sobre cada propriedade, consulte [MethodInstance](http://go.microsoft.com/fwlink/?LinkID=169282).
 
 ## <a name="see-also"></a>Consulte também
 - [Visão geral de ferramentas de design de modelo BDC](../sharepoint/bdc-model-design-tools-overview.md)

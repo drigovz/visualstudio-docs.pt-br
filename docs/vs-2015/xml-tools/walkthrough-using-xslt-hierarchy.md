@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5d662a94a77dff02fd994122e5106f5bff35bac3
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: ed644c1dda4ac3674ef60d0027c37532fc6d0f92
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669439"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60075618"
 ---
 # <a name="walkthrough-using-xslt-hierarchy"></a>Passo a passo: Usando a hierarquia XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ A ferramenta da hierarquia XSLT simplifica muitas tarefas de desenvolvimento XML
   
 ### <a name="procedure-title"></a>Título do procedimento  
   
-1.  Abrir um documento XML no Visual Studio. Este exemplo usa o seguinte documento de `collection.xml` .  
+1. Abrir um documento XML no Visual Studio. Este exemplo usa o seguinte documento de `collection.xml` .  
   
     ```  
     <?xml version="1.0" encoding="utf-8"?>  
@@ -51,7 +51,7 @@ A ferramenta da hierarquia XSLT simplifica muitas tarefas de desenvolvimento XML
     </COLLECTION>  
     ```  
   
-2.  Adicione o seguinte `xslincludefile.xsl`:  
+2. Adicione o seguinte `xslincludefile.xsl`:  
   
     ```  
     <?xml version='1.0'?>  
@@ -74,7 +74,7 @@ A ferramenta da hierarquia XSLT simplifica muitas tarefas de desenvolvimento XML
     </xsl:stylesheet>  
     ```  
   
-3.  Adicione o seguinte arquivo de `xslinclude.xsl` :  
+3. Adicione o seguinte arquivo de `xslinclude.xsl` :  
   
     ```  
     <?xml version='1.0'?>  
@@ -108,11 +108,11 @@ A ferramenta da hierarquia XSLT simplifica muitas tarefas de desenvolvimento XML
     </xsl:stylesheet>  
     ```  
   
-4.  Adicione um ponto de interrupção na instrução: `<xsl:include href="xslincludefile.xsl" />`  
+4. Adicione um ponto de interrupção na instrução: `<xsl:include href="xslincludefile.xsl" />`  
   
-5.  Inicie a depuração.  
+5. Inicie a depuração.  
   
-6.  Quando o depurador para a instrução `<xsl:include href="xslincludefile.xsl" />`, pressione a etapa no botão. Observe que a depuração pode ser continuada na folha de estilos referenciada. A hierarquia é visível e o designer o caminho correto.  
+6. Quando o depurador para a instrução `<xsl:include href="xslincludefile.xsl" />`, pressione a etapa no botão. Observe que a depuração pode ser continuada na folha de estilos referenciada. A hierarquia é visível e o designer o caminho correto.  
   
 ## <a name="see-also"></a>Consulte também  
  [Passo a passo: criador de perfil XSLT](../xml-tools/walkthrough-xslt-profiler.md)
