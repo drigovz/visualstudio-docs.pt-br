@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b02f1035a8b149ba8cfc1152bb83d1410bd86350
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926591"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053527"
 ---
 # <a name="graphics-frame-analysis"></a>Análise de quadro de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -139,7 +139,7 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
   
  A Análise de Quadro limita o número de novas tentativas a 10. Se sua plataforma tiver um gerenciamento de energia ou clock-gating agressivo, isso pode fazer com que a Análise de Quadro falhe e relate um erro por ter excedido o limite de novas tentativas. Se a plataforma permitir, você pode atenuar esse problema redefinindo o gerenciamento de energia e a aceleração da velocidade de clock de sua plataforma para que sejam menos agressivos.  
   
-##  <a name="HardwareSupport"></a> Suporte a hardware  
+## <a name="HardwareSupport"></a> Suporte a hardware  
   
 ### <a name="timestamps-and-occlusion-queries"></a>Consultas de carimbos de data/hora e oclusão  
  Carimbos de data/hora têm suporte em todas as plataformas compatíveis com Análise de Quadro. Consultas de oclusão de profundidade, necessárias para o contador de Pixels Obstruídos, são suportadas em plataformas com nível de recurso de suporte 9.2 ou superior.  
@@ -182,7 +182,7 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
 > [!NOTE]
 >  Isso se aplica somente às chamadas à API do Direct3D que você estiver utilizando, e não aos níveis de recurso. Contanto que esteja utilizando a API do Direct3D 11, do Direct3D 11.1 ou do Direct3D 11.2, você poderá usar o nível de recurso desejado e a Análise de Quadro funcionará.  
   
-##  <a name="Variants"></a> Variantes  
+## <a name="Variants"></a> Variantes  
  Cada alteração que a Análise de Quadros realiza na maneira em que um quadro é renderizado durante a reprodução é conhecida como uma *variante*. As variantes examinadas pela Análise de Quadro correspondem a alterações comuns e relativamente fáceis que podem ser feitas para aprimorar o desempenho de renderização ou a qualidade visual do aplicativo; por exemplo, reduzir o tamanho das texturas, usar a compactação de texturas ou habilitar diferentes tipos de suavização. As variantes substituem o contexto de renderização e os parâmetros comuns do seu aplicativo. Segue um resumo:  
   
 |Variante|Descrição|  

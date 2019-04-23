@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3b052047-f6db-46dd-b3bf-da1c348ee410
 caps.latest.revision: 33
 manager: jillfra
-ms.openlocfilehash: e0e4c47ebeece4720a80b50a4f95921e204dbca6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba4b166cc409dd2c50c258a9b82ee34c22e9b084
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924896"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054762"
 ---
 # <a name="managing-the-toolbox"></a>Gerenciando a caixa de ferramentas
 O [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permite que um VSPackage, como um editor ou designer, para gerenciar a associação e a aparência do **caixa de ferramentas**.  
@@ -27,9 +27,9 @@ O [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] permite que um VSPackage, como 
   
  Esse suporte é limitado a editores e designers que exigem:  
   
-1.  A implementação de um objeto de fábrica para fornecer instâncias do editor ou designer. Para obter mais informações sobre como implementar um designer ou editor de objeto de fábrica, consulte [fábricas](../extensibility/editor-factories.md).  
+1. A implementação de um objeto de fábrica para fornecer instâncias do editor ou designer. Para obter mais informações sobre como implementar um designer ou editor de objeto de fábrica, consulte [fábricas](../extensibility/editor-factories.md).  
   
-2.  Registro do guia da caixa de ferramentas é ativado automaticamente se o editor ou designer estiver presente.  
+2. Registro do guia da caixa de ferramentas é ativado automaticamente se o editor ou designer estiver presente.  
   
 ## <a name="controlling-the-toolbox"></a>Controlando a caixa de ferramentas  
  Complementando o suporte de automação, o [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] fornece as seguintes interfaces para fornecer os VSPackages maior controle sobre como o **caixa de ferramentas** é gerenciado.  

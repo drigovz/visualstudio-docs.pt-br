@@ -17,12 +17,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0a3619e911ffcf730012ee26d26783b6a7596704
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 04f6c78f3733bbc8aab3aec5811f1eb643ecca4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927168"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056608"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Como: Instalar pré-requisitos com um aplicativo ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,31 +41,31 @@ Todos os [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativos exig
   
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Para especificar os pré-requisitos para instalar com um aplicativo ClickOnce  
   
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2.  Selecione o **publicar** painel.  
+2. Selecione o **publicar** painel.  
   
-3.  Clique o **pré-requisitos** para abrir o **pré-requisitos** caixa de diálogo.  
+3. Clique o **pré-requisitos** para abrir o **pré-requisitos** caixa de diálogo.  
   
-4.  Na caixa de diálogo **Pré-requisitos**, verifique se a caixa de seleção **Criar programa de instalação para instalar os componentes dos pré-requisitos** está marcada.  
+4. Na caixa de diálogo **Pré-requisitos**, verifique se a caixa de seleção **Criar programa de instalação para instalar os componentes dos pré-requisitos** está marcada.  
   
-5.  No **pré-requisitos** lista, verifique os componentes que você deseja instalar e, em seguida, clique em **Okey**.  
+5. No **pré-requisitos** lista, verifique os componentes que você deseja instalar e, em seguida, clique em **Okey**.  
   
      Os componentes selecionados serão empacotados e publicados junto com seu aplicativo.  
   
 ### <a name="to-specify-a-different-download-location-for-prerequisites"></a>Para especificar um local de download diferentes para pré-requisitos  
   
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2.  Selecione o **publicar** painel.  
+2. Selecione o **publicar** painel.  
   
-3.  Clique o **pré-requisitos** para abrir o **pré-requisitos** caixa de diálogo.  
+3. Clique o **pré-requisitos** para abrir o **pré-requisitos** caixa de diálogo.  
   
-4.  Na caixa de diálogo **Pré-requisitos**, verifique se a caixa de seleção **Criar programa de instalação para instalar os componentes dos pré-requisitos** está marcada.  
+4. Na caixa de diálogo **Pré-requisitos**, verifique se a caixa de seleção **Criar programa de instalação para instalar os componentes dos pré-requisitos** está marcada.  
   
-5.  No **especifique o local de instalação de pré-requisitos** seção, selecione **baixar os pré-requisitos no seguinte local**.  
+5. No **especifique o local de instalação de pré-requisitos** seção, selecione **baixar os pré-requisitos no seguinte local**.  
   
-6.  Selecione um local na lista suspensa, ou digite uma URL, o caminho do arquivo ou o local do FTP e, em seguida, clique em **Okey.**  
+6. Selecione um local na lista suspensa, ou digite uma URL, o caminho do arquivo ou o local do FTP e, em seguida, clique em **Okey.**  
   
     > [!NOTE]
     >  Certifique-se de que os instaladores para os componentes especificados existem no local especificado.  

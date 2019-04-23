@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3eca61e696fea82952e3efde5cea1f6164d5bab5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1e99ee6c9570f3bb73bc70f230f31e153a8a0da1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54775840"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054144"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Especificando eventos de build personalizados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,30 +25,30 @@ Ao especificar um evento de build personalizado, é possível executar comandos 
 
  Para obter informações específicas sobre a linguagem de programação que está sendo usada, consulte os seguintes tópicos:
 
--   Visual Basic – [Como especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic – [Como: Especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   Visual C# e F # – [Como especificar eventos de build (C#)](../ide/how-to-specify-build-events-csharp.md).
+- O Visual C# e F#–[como: Especificar eventos de Build (c#)](../ide/how-to-specify-build-events-csharp.md).
 
--   Visual C++ – [Especificando eventos de build](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
+- Visual C++ – [Especificando eventos de build](http://msdn.microsoft.com/library/788a6c18-2dbe-4a49-8cd6-86c1ad7a95cc).
 
 ## <a name="syntax"></a>Sintaxe
  Os eventos de build seguem a mesma sintaxe dos comandos do DOS, mas é possível usar macros para criar eventos de build com mais facilidade. Para obter uma lista das macros disponíveis, consulte [Caixa de diálogo Linha de Comando do Evento de Pré-build/Evento de Pós-build](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md).
 
  Para obter melhores resultados, siga estas dicas de formatação:
 
--   Adicione uma instrução `call` antes de todos os eventos de build que executam arquivos .bat.
+- Adicione uma instrução `call` antes de todos os eventos de build que executam arquivos .bat.
 
      Exemplo: `call C:\MyFile.bat`
 
      Exemplo: `call C:\MyFile.bat call C:\MyFile2.bat`
 
--   Coloque os caminhos de arquivo entre aspas.
+- Coloque os caminhos de arquivo entre aspas.
 
      Exemplo (para [!INCLUDE[win8](../includes/win8-md.md)]): “%ProgramFiles(x86)%\Microsoft SDKs\Windows\v8.0A\Bin\NETFX 4.0 Tools\gacutil.exe” – se “$(TargetPath)”
 
--   Separe vários comandos usando quebras de linha.
+- Separe vários comandos usando quebras de linha.
 
--   Inclua curingas, conforme necessário.
+- Inclua curingas, conforme necessário.
 
      Exemplo: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
 

@@ -13,14 +13,14 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: bd488230fc6b88feb60ceeb0556385b99e823de9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 71b72b677e9735edb3254290055815885e543fa9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55951586"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055012"
 ---
-# <a name="walkthrough-create-a-custom-text-template-host"></a>Passo a passo: Criar um Host de modelo de texto personalizado
+# <a name="walkthrough-create-a-custom-text-template-host"></a>Passo a passo: Criar um host de modelo de texto personalizado
 
 Um *host de modelo de texto* fornece um ambiente que permite que o *mecanismo de transformação do modelo de texto* para ser executado. O host é responsável por gerenciar a interação do mecanismo com o sistema de arquivos. O mecanismo ou *processador de diretriz* que precisa de um arquivo ou assembly podem solicitar um recurso do host. O host pode pesquisar em diretórios e no cache de assembly global para localizar o recurso solicitado. Para obter mais informações, consulte [o processo de transformação de modelo de texto](../modeling/the-text-template-transformation-process.md).
 
@@ -31,19 +31,19 @@ Você pode escrever um host personalizado se você deseja usar o *transformaçã
 
 Esta explicação passo a passo ilustra as seguintes tarefas:
 
--   Criar um host de modelo de texto personalizado.
+- Criar um host de modelo de texto personalizado.
 
--   Testar o host personalizado.
+- Testar o host personalizado.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
 Para concluir esta explicação passo a passo, você precisará do seguinte:
 
--   Visual Studio 2010 ou posterior
+- Visual Studio 2010 ou posterior
 
--   SDK do Visual Studio
+- SDK do Visual Studio
 
-## <a name="create-a-custom-text-template-host"></a>Criar um Host de modelo de texto personalizado
+## <a name="create-a-custom-text-template-host"></a>Criar um host de modelo de texto personalizado
 
 Neste passo a passo, você cria um host personalizado em um aplicativo executável que pode ser chamado da linha de comando. O aplicativo aceita um arquivo de modelo de texto como argumento, lê o modelo, chama o mecanismo para transformar o modelo e exibe todos os erros que ocorrem na janela do prompt de comando.
 
@@ -51,9 +51,9 @@ Neste passo a passo, você cria um host personalizado em um aplicativo executáv
 
 2. Adicione referências aos assemblies a seguir:
 
-   -   **Microsoft.VisualStudio.TextTemplating.\*.0**
+   - **Microsoft.VisualStudio.TextTemplating.\*.0**
 
-   -   **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 e versões posteriores**
+   - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 e versões posteriores**
 
 3. Substitua o código no arquivo Program.cs ou Module1.vb pelo seguinte código:
 
@@ -726,11 +726,11 @@ Para testar o host personalizado, você escreve um modelo de texto, executa o ho
 
 ### <a name="to-create-a-text-template-to-test-the-custom-host"></a>Para criar um modelo de texto para testar o host personalizado
 
-1.  Criar um arquivo de texto e nomeie- `TestTemplate.tt`.
+1. Criar um arquivo de texto e nomeie- `TestTemplate.tt`.
 
      Você pode usar qualquer editor de texto (por exemplo, o Bloco de Notas) para criar o arquivo.
 
-2.  Adicione o seguinte ao arquivo:
+2. Adicione o seguinte ao arquivo:
 
     > [!NOTE]
     > A linguagem de programação do modelo de texto não precisa corresponder à linguagem do host personalizado.
@@ -773,13 +773,13 @@ Para testar o host personalizado, você escreve um modelo de texto, executa o ho
 
     ```
 
-3.  Salve e feche o arquivo.
+3. Salve e feche o arquivo.
 
 ### <a name="to-test-the-custom-host"></a>Para testar o host personalizado
 
-1.  Abra a janela Prompt de Comando.
+1. Abra a janela Prompt de Comando.
 
-2.  Digite o caminho do arquivo executável para o host personalizado, mas não pressione ENTER ainda.
+2. Digite o caminho do arquivo executável para o host personalizado, mas não pressione ENTER ainda.
 
      Por exemplo, digite:
 
@@ -788,9 +788,9 @@ Para testar o host personalizado, você escreve um modelo de texto, executa o ho
     > [!NOTE]
     > Em vez de digitar o endereço, você pode navegar até o arquivo CustomHost.exe na **Windows Explorer** e, em seguida, arraste o arquivo para a janela de Prompt de comando.
 
-3.  Digite um espaço.
+3. Digite um espaço.
 
-4.  Digite o caminho do arquivo de modelo de texto e pressione ENTER.
+4. Digite o caminho do arquivo de modelo de texto e pressione ENTER.
 
      Por exemplo, digite:
 
@@ -801,11 +801,11 @@ Para testar o host personalizado, você escreve um modelo de texto, executa o ho
 
      O aplicativo host personalizado é executado e conclui o processo de transformação do modelo de texto.
 
-5.  Na **Windows Explorer**, navegue até a pasta que contém o arquivo TestTemplate.tt.
+5. Na **Windows Explorer**, navegue até a pasta que contém o arquivo TestTemplate.tt.
 
      Essa pasta também contém o arquivo TestTemplate1.txt.
 
-6.  Abra esse arquivo para ver os resultados da transformação do modelo de texto.
+6. Abra esse arquivo para ver os resultados da transformação do modelo de texto.
 
      A saída de texto gerada aparecerá e será semelhante a esta:
 

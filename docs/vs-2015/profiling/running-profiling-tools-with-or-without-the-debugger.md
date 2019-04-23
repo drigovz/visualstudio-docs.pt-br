@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 910c2f6e71820c079eb92fdc7adf61d9e67d0001
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 806eeba9b3dfee8dc45c90f0a6d2f99ed0772ec7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54783384"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054060"
 ---
 # <a name="running-profiling-tools-with-or-without-the-debugger"></a>Executando ferramentas de criação de perfil com ou sem o depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas da
   
  Essas são algumas perguntas que podem ajudar a decidir qual tipo de ferramenta é o ideal para suas finalidades:  
   
-1.  O problema foi encontrado enquanto o aplicativo estava sendo desenvolvido ou em uma versão já lançada?  
+1. O problema foi encontrado enquanto o aplicativo estava sendo desenvolvido ou em uma versão já lançada?  
   
      Se o problema que você está lidando com foi encontrado durante o desenvolvimento, você provavelmente não precisará executar as ferramentas de desempenho em um build de versão. Se ele foi encontrado em uma versão de lançamento, reproduza o problema com uma configuração de versão e decida se o depurador ajudaria ou não a obter mais informações.  
   
-2.  O problema foi causado pelo uso intensivo de processamento da CPU?  
+2. O problema foi causado pelo uso intensivo de processamento da CPU?  
   
      Muitos problemas ocorrem devido a questões de desempenho externo como E/S do arquivo ou a capacidade de resposta da rede, portanto não faz muita diferença se você executar as ferramentas de desempenho com ou sem o depurador. Se o problema é causado por chamadas de uso intensivo de CPU, a diferença entre as configurações de Versão e Depuração pode ser considerável e você provavelmente deve verificar se o problema existe no build de Versão antes de usar as ferramentas integradas ao depurador  
   
-3.  Você precisa avaliar com desempenho com precisão ou um número aproximado é aceitável?  
+3. Você precisa avaliar com desempenho com precisão ou um número aproximado é aceitável?  
   
      Builds de depuração não têm determinadas otimizações que builds de Versão fornecem, como por exemplo, constantes e chamadas de função embutidas, remoção de caminhos de código não utilizados e armazenamento de variáveis de maneiras que não podem ser usadas pelo depurador. O próprio depurador altera os tempos de desempenho, pois ele executa determinadas operações que são necessárias para depuração (por exemplo, interceptar exceções e eventos de módulo de carga). Por isso, os números de desempenho nas ferramentas integradas ao depurador são precisão apenas na faixa de dezenas de milissegundos. Números de desempenho para as configurações de Versão com as ferramentas de não depurador são muito mais precisos.  
   
-##  <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Coletar dados de criação de perfil ao depurar  
+## <a name="BKMK_Quick_start__Collect_diagnostic_data"></a> Coletar dados de criação de perfil ao depurar  
  A seção a seguir lida com a depuração local. Você pode descobrir mais sobre a depuração em um dispositivo ou a depuração remota nas próximas seções.  
   
 1. Abra o projeto que você deseja depurar e clique em **Depurar / Iniciar Depuração** (ou **Iniciar** na barra de ferramentas ou **F5**).  
@@ -125,17 +125,17 @@ O Visual Studio agora oferece a opção de ferramentas de desempenho, algumas da
  Executar uma sessão de diagnóstico em um computador ou tablet remoto exige que as Ferramentas Remotas do Visual Studio estejam instaladas e em execução no destino remoto. Para aplicativos de área de trabalho, consulte [Depuração remota](../debugger/remote-debugging.md).  Para aplicativos Windows Universal, consulte [Executar aplicativos da Windows Store em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md).  
   
 ## <a name="blog-posts-and-msdn-articles-from-the-diagnostics-development-team"></a>Postagens em blogs e artigos do MSDN da equipe de desenvolvimento de Diagnóstico  
- [MSDN Magazine: análise do desempenho durante a depuração no Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)  
+ [MSDN Magazine: Análise do desempenho durante a depuração no Visual Studio 2015](https://msdn.microsoft.com/magazine/dn973013.aspx)  
   
- [MSDN Magazine: uso do IntelliTrace para diagnosticar problemas com mais rapidez](https://msdn.microsoft.com/magazine/dn973014.aspx)  
+ [MSDN Magazine: Uso do IntelliTrace para diagnosticar problemas com mais rapidez](https://msdn.microsoft.com/magazine/dn973014.aspx)  
   
- [Postagem do blog: diagnosticar vazamentos de manipulador de eventos com a ferramenta de Uso de Memória no Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
+ [Postagem no blog: Diagnosticar vazamentos de manipulador de eventos com a ferramenta de Uso de Memória no Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/04/29/diagnosing-event-handler-leaks-with-the-memory-usage-tool-in-visual-studio-2015.aspx)  
   
- [Vídeo: depuração histórica com o IntelliTrace no Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
+ [Vídeo: Depuração histórica com o IntelliTrace no Microsoft Visual Studio Ultimate 2015](https://channel9.msdn.com/Events/Ignite/2015/BRK3716)  
   
- [Vídeo: depurar problemas de desempenho usando o Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
+ [Vídeo: Depurar problemas de desempenho usando o Visual Studio 2015](https://channel9.msdn.com/Events/Build/2015/3-731)  
   
- [PerfTips: informações de desempenho imediatas durante depuração com o Visual Studio](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
+ [PerfTips: Performance Information at-a-glance while Debugging with Visual Studio ("Visão rápida de informações de desempenho durante a depuração com o Visual Studio")](http://blogs.msdn.com/b/visualstudioalm/archive/2014/08/18/perftips-performance-information-at-a-glance-while-debugging-with-visual-studio.aspx)  
   
  [Janela do depurador Ferramentas de Diagnóstico no Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   

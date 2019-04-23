@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b67f3def0eadc35f67d590b282001cac1c526ff
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6b475b8e5c2138c909133aee0440f0dcaea99e13
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929647"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057688"
 ---
 # <a name="t4-include-directive"></a>Diretiva de inclusão T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Em um modelo de texto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], você pod
   
 - Use `once="true"` para garantir que um modelo seja incluído somente uma vez, mesmo se for invocado por mais de um arquivo de inclusão.  
   
-   Isso faz com que recurso fácil criar uma biblioteca de trechos de código T4 reutilizáveis que você pode incluir a será sem se preocupar que algum outro trecho já incluiu-los.  Por exemplo, suponha que você tem uma biblioteca de trechos muito refinados que lidam com processamento de modelo e geração de C#.  Por sua vez, eles são usados por alguns utilitários de tarefas mais específicas, como a geração de exceções, que você pode usar de qualquer modelo de aplicativo mais específico. Se você desenhar o grafo de dependência, verá que alguns snippets poderiam ser incluídos várias vezes. Mas o parâmetro `once` evita as inclusões subsequentes.  
+   Isso faz com que recurso fácil criar uma biblioteca de trechos de código T4 reutilizáveis que você pode incluir a será sem se preocupar que algum outro trecho já incluiu-los.  Por exemplo, suponha que você tem uma biblioteca de trechos muito refinados que lidam com processamento de modelo e geração de c#.  Por sua vez, eles são usados por alguns utilitários de tarefas mais específicas, como a geração de exceções, que você pode usar de qualquer modelo de aplicativo mais específico. Se você desenhar o grafo de dependência, verá que alguns snippets poderiam ser incluídos várias vezes. Mas o parâmetro `once` evita as inclusões subsequentes.  
   
   **MyTextTemplate.tt:**  
   
@@ -112,7 +112,7 @@ Output message 5 (from top template).
   
 ```  
   
-##  <a name="msbuild"></a> Usando propriedades do projeto no MSBuild e Visual Studio  
+## <a name="msbuild"></a> Usando propriedades do projeto no MSBuild e Visual Studio  
  Embora você possa usar macros do Visual Studio como $(SolutionDir) em uma diretiva de inclusão, não funcionam no MSBuild. Se você quiser transformar modelos no computador de compilação, use as propriedades do projeto como alternativa.  
   
  Edite seu arquivo .csproj ou .vbproj para definir uma propriedade do projeto. Este exemplo define uma propriedade chamada `myIncludeFolder`:  

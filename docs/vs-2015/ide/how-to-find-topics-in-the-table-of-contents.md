@@ -16,12 +16,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dd53eef6cb5dc7b7144375f5d0f6b47e11913ed3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e439521d9a81bc418eb403bb87ee9576605b8e66
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778336"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055492"
 ---
 # <a name="how-to-find-topics-in-the-table-of-contents"></a>Como: Localizar tópicos no sumário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,9 +36,9 @@ Na guia **Sumário**, você pode usar o sumário para localizar informações. O
   
 #### <a name="to-filter-the-toc"></a>Para filtrar o sumário  
   
-1.  Escolha a guia **Sumário**.  
+1. Escolha a guia **Sumário**.  
   
-2.  Na caixa de texto **Filtrar Conteúdo**, digite um termo.  
+2. Na caixa de texto **Filtrar Conteúdo**, digite um termo.  
   
 > [!NOTE]
 >  Se o filtro demorar muito para ser executado, você pode exibir resultados mais rapidamente usando o operador de pesquisa avançada `title:`.  
@@ -48,9 +48,9 @@ Na guia **Sumário**, você pode usar o sumário para localizar informações. O
   
 #### <a name="to-synchronize-the-toc-with-the-topic-window"></a>Para sincronizar o sumário com a janela do tópico  
   
-1.  Exibir um tópico.  
+1. Exibir um tópico.  
   
-2.  Clique no botão **Mostrar Tópico no Conteúdo** na barra de ferramentas ou pressione Ctrl + S.  
+2. Clique no botão **Mostrar Tópico no Conteúdo** na barra de ferramentas ou pressione Ctrl + S.  
   
      A guia **Sumário** é aberta e exibe o local do tópico no Sumário.  
   

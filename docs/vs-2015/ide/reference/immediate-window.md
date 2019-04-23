@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 574b480cbdce0f038ba4d94be6dc2ba9cf46726c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 7a39b6f84185c78ccea11e09e628050a6bf4f601
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660288"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053386"
 ---
 # <a name="immediate-window"></a>Janela imediata
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -118,9 +118,9 @@ A janela **Imediato** é usada para depurar e avaliar expressões, executar inst
   
 #### <a name="to-toggle-first-chance-exception-notifications-in-the-immediate-window"></a>Para ativar ou desativar notificações de exceção de primeira tentativa na janela Imediato  
   
-1.  No menu **Exibir**, clique em **Outras Janelas** e clique em **Saída**.  
+1. No menu **Exibir**, clique em **Outras Janelas** e clique em **Saída**.  
   
-2.  Clique com o botão direito do mouse na área de texto da Janela de **Saída** e marque ou desmarque **Mensagens de Exceção**.  
+2. Clique com o botão direito do mouse na área de texto da Janela de **Saída** e marque ou desmarque **Mensagens de Exceção**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Navegar pelo código com o depurador](../../debugger/navigating-through-code-with-the-debugger.md)   

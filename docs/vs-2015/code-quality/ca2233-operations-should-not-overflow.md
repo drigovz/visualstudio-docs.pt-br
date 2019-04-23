@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a260f046c33b2afdcf4df0b456069cf0d518b865
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52950f138354a72f7c0e781d761aa466760e3ca0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924610"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054788"
 ---
 # <a name="ca2233-operations-should-not-overflow"></a>CA2233: As operações não devem estourar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,15 +103,15 @@ End Sub
  [!code-csharp[FxCop.Usage.OperationOverflowChecked#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Usage.OperationOverflowChecked/cs/FxCop.Usage.OperationOverflowChecked.cs#1)]
 
 ## <a name="turn-on-checked-arithmetic-overflowunderflow"></a>Ativar verificado estouro/estouro negativo aritmético
- Se você ativar verificado estouro/estouro negativo aritmético em C#, equivale a disposição de cada operação de inteiro em um bloco verificado.
+ Se você ativar verificado estouro/estouro negativo aritmético em c#, equivale a disposição de cada operação de inteiro em um bloco verificado.
 
- **Para ativar o verificado estouro/estouro negativo aritmético em C#**
+ **Para ativar o verificado estouro/estouro negativo aritmético em c#**
 
-1.  Na **Gerenciador de soluções**, clique em seu projeto e escolha **propriedades**.
+1. Na **Gerenciador de soluções**, clique em seu projeto e escolha **propriedades**.
 
-2.  Selecione a guia **Compilar** e clique em **Avançado**.
+2. Selecione a guia **Compilar** e clique em **Avançado**.
 
-3.  Selecione **verificar estouro/estouro negativo aritmético** e clique em **Okey**.
+3. Selecione **verificar estouro/estouro negativo aritmético** e clique em **Okey**.
 
 ## <a name="see-also"></a>Consulte também
- <xref:System.OverflowException?displayProperty=fullName> [Operadores do C#](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked e Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)
+ <xref:System.OverflowException?displayProperty=fullName> [Operadores do c#](http://msdn.microsoft.com/library/0301e31f-22ad-49af-ac3c-d5eae7f0ac43) [Checked e Unchecked](http://msdn.microsoft.com/library/a84bc877-2c7f-4396-8735-1ce97c42f35e)

@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b5846fe9db2d7ea02259f949697f5cb164d1c081
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e631f73a6714cf26b55cf9907095fc322467d3cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651744"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053891"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>Aviso. As alterações foram feitas à caixa de diálogo configurar o comportamento que não foram aplicadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ Aviso. As alterações foram feitas à caixa de diálogo configurar o comportame
   
 ### <a name="to-apply-the-change-and-continue"></a>Para aplicar a alteração e continuar  
   
--   Clique **Sim** para aplicar a alteração à **Classe** e ao **Comportamento** selecionados.  
+- Clique **Sim** para aplicar a alteração à **Classe** e ao **Comportamento** selecionados.  
   
 ### <a name="to-cancel-the-previous-change-and-continue"></a>Para cancelar a mudança anterior e continuar  
   
--   Clique **Não** para cancelar a alteração à **Classe** e ao **Comportamento** selecionados.  
+- Clique **Não** para cancelar a alteração à **Classe** e ao **Comportamento** selecionados.  
   
 ## <a name="see-also"></a>Consulte também  
  [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

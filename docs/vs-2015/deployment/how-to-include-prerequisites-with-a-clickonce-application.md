@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc9ba407e91ddc8125d2836c8e2bb4329d5ad91f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2f4de1b8202f95a76dd6688a8dcfcc786a435aed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929139"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059066"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>Como: Incluir pré-requisitos com um aplicativo ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,17 +24,17 @@ Antes que possa distribuir o software necessário com um aplicativo [!INCLUDE[nd
 > [!NOTE]
 >  Para adicionar um pacote do instalador para o .NET Framework, consulte [guia de implantação do .NET Framework para desenvolvedores](http://msdn.microsoft.com/library/ee942965\(v=vs.110\).aspx).  
   
-##  <a name="Package"></a> Para adicionar um pacote de instalador ao usar Package.xml  
+## <a name="Package"></a> Para adicionar um pacote de instalador ao usar Package.xml  
   
-1.  No Explorador de Arquivos, abra a pasta **Pacotes**.  
+1. No Explorador de Arquivos, abra a pasta **Pacotes**.  
   
      Por padrão, o caminho é C:\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages em um sistema de 32 bits e C:\Program Files (x86) \Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages em um sistema de 64 bits.  
   
-2.  Abra a pasta do pré-requisito que você deseja adicionar e, em seguida, abra a pasta do idioma da versão instalada de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (por exemplo, **en** para inglês).  
+2. Abra a pasta do pré-requisito que você deseja adicionar e, em seguida, abra a pasta do idioma da versão instalada de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (por exemplo, **en** para inglês).  
   
-3.  No Bloco de Notas, abra o arquivo **Package.xml**.  
+3. No Bloco de Notas, abra o arquivo **Package.xml**.  
   
-4.  Localize o **nome** elemento que contém **http://go.microsoft.com/fwlink**e copie a URL. Inclua a parte **LinkID**.  
+4. Localize o **nome** elemento que contém **http://go.microsoft.com/fwlink**e copie a URL. Inclua a parte **LinkID**.  
   
     > [!NOTE]
     >  Se nenhum **nome** elemento contém **http://go.microsoft.com/fwlink**, abra o **Product** arquivo na pasta raiz do pré-requisito e localize o **fwlink** cadeia de caracteres.  
@@ -42,11 +42,11 @@ Antes que possa distribuir o software necessário com um aplicativo [!INCLUDE[nd
     > [!IMPORTANT]
     >  Alguns pré-requisitos têm vários pacotes de instalador (por exemplo, para sistemas de 32 bits ou 64 bits). Se vários elementos **Name** contiverem **fwlink**, você deverá repetir as etapas restantes para cada um deles.  
   
-5.  Cole a URL na barra de endereços de seu navegador e, quando a execução ou gravação for solicitada, escolha **Salvar**.  
+5. Cole a URL na barra de endereços de seu navegador e, quando a execução ou gravação for solicitada, escolha **Salvar**.  
   
      Essa etapa baixará o arquivo do instalador em seu computador.  
   
-6.  Copie o arquivo na pasta raiz do pré-requisito.  
+6. Copie o arquivo na pasta raiz do pré-requisito.  
   
      Por exemplo, para o pré-requisito Windows Installer 4.5, copie o arquivo na pasta \Packages\WindowsInstaller4_5.  
   

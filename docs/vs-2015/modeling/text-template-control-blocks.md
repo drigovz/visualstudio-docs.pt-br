@@ -11,23 +11,23 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6fb532c122bec0ff56c00a261ca464daba0a464f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bdb818735a19be8dc6e8a96f677072d00aae6a46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927128"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055594"
 ---
 # <a name="text-template-control-blocks"></a>Blocos de controle do modelo de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Blocos de controle permitem que você escreva código em seu modelo de texto para variar a saída. Há três tipos de blocos de controle, que são diferenciados por seus colchetes de abertura:  
   
--   `<# Standard control blocks #>` pode conter instruções.  
+- `<# Standard control blocks #>` pode conter instruções.  
   
--   `<#= Expression control blocks #>` pode conter expressões.  
+- `<#= Expression control blocks #>` pode conter expressões.  
   
--   `<#+ Class feature control blocks #>` pode conter métodos, campos e propriedades.  
+- `<#+ Class feature control blocks #>` pode conter métodos, campos e propriedades.  
   
 ## <a name="standard-control-block"></a>Bloco de controle padrão  
  Blocos de controle padrão contêm instruções. Por exemplo, o bloco padrão a seguir obtém os nomes de todos os atributos no documento XML:  
@@ -150,17 +150,17 @@ Some text.
   
  Você deve ter em mente as seguintes considerações ao usar blocos de controle:  
   
--   **Idioma.** Você pode usar o código C# ou Visual Basic em um modelo de texto. O idioma padrão é C#, mas você pode especificar o Visual Basic com o `language` parâmetro do `template` diretiva. (Para obter mais informações sobre o `template` diretiva, consulte [diretivas de modelo de texto T4](../modeling/t4-text-template-directives.md).)  
+- **Idioma.** Você pode usar o código c# ou Visual Basic em um modelo de texto. O idioma padrão é c#, mas você pode especificar o Visual Basic com o `language` parâmetro do `template` diretiva. (Para obter mais informações sobre o `template` diretiva, consulte [diretivas de modelo de texto T4](../modeling/t4-text-template-directives.md).)  
   
      O idioma usado nos blocos de controle não tem nada a ver com o idioma ou o formato do texto gerado em um modelo de texto. Você pode gerar em C# usando o Visual Basic código ou vice-versa.  
   
      Você pode usar apenas um idioma em um modelo de texto especificado, incluindo todos os modelos de texto incluem com o `include` diretiva.  
   
--   **Variáveis locais.** Como todo o código no controle padrão e a expressão de blocos em um modelo de texto é gerado como um único método, você deve Certifique-se de que não haja nenhum conflito com os nomes de variáveis locais. Se você estiver incluindo outros modelos de texto, certifique-se de que os nomes de variáveis são exclusivos em incluído todos os modelos. Uma maneira de garantir isso é adicionar uma cadeia de caracteres para cada nome de variável local que identifica o modelo de texto no qual ela foi declarada.  
+- **Variáveis locais.** Como todo o código no controle padrão e a expressão de blocos em um modelo de texto é gerado como um único método, você deve Certifique-se de que não haja nenhum conflito com os nomes de variáveis locais. Se você estiver incluindo outros modelos de texto, certifique-se de que os nomes de variáveis são exclusivos em incluído todos os modelos. Uma maneira de garantir isso é adicionar uma cadeia de caracteres para cada nome de variável local que identifica o modelo de texto no qual ela foi declarada.  
   
      Também é uma boa ideia para inicializar as variáveis locais para valores razoáveis, quando você declará-los, especialmente quando você está incluindo vários modelos de texto.  
   
--   **Aninhamento de blocos de controle.** Blocos de controle não podem ser aninhados dentro uns aos outros. Você sempre deve encerrar um bloco de controle fornecido antes de abrir outra. Por exemplo, a seguir mostra como imprimir um texto em um bloco de expressão como parte de um bloco de controle padrão.  
+- **Aninhamento de blocos de controle.** Blocos de controle não podem ser aninhados dentro uns aos outros. Você sempre deve encerrar um bloco de controle fornecido antes de abrir outra. Por exemplo, a seguir mostra como imprimir um texto em um bloco de expressão como parte de um bloco de controle padrão.  
   
     ```  
     <#   
@@ -172,4 +172,4 @@ Some text.
     <# } #>  
     ```  
   
--   **Refatoração.** Para manter seus modelos de texto curtos e fácil de entender, é altamente recomendável que você evite código repetitivo por fatorar o código reutilizável em funções auxiliares em blocos de recurso de classe ou criando sua própria classe de modelo de texto que herda a classe TextTransformation.
+- **Refatoração.** Para manter seus modelos de texto curtos e fácil de entender, é altamente recomendável que você evite código repetitivo por fatorar o código reutilizável em funções auxiliares em blocos de recurso de classe ou criando sua própria classe de modelo de texto que herda a classe TextTransformation.

@@ -18,12 +18,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dbedf6f2bc0832fa3ba54f691cbf713ccb533a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a229111a2aa4dd633d0728d3a1156c6a8048094
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922637"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059949"
 ---
 # <a name="how-to-enable-debugging-for-aspnet-applications"></a>Como: Habilitar a depuração para aplicativos ASP.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,32 +35,32 @@ Para habilitar a depuração, você deve habilitá-lo em ambos os **propriedades
   
 ### <a name="to-enable-aspnet-debugging-in-the-project-properties-visual-basicc"></a>Para habilitar a depuração ASP.NET nas propriedades de projeto (Visual Basic/C#)  
   
-1.  Na **Gerenciador de soluções**, o nome de um projeto Web com o botão direito e selecione **propriedades**.  
+1. Na **Gerenciador de soluções**, o nome de um projeto Web com o botão direito e selecione **propriedades**.  
   
-2.  Na página de propriedades do projeto, clique no **Web** guia.  
+2. Na página de propriedades do projeto, clique no **Web** guia.  
   
-3.  Sob **depuradores**, selecione o **ASP.NET** caixa de seleção.  
+3. Sob **depuradores**, selecione o **ASP.NET** caixa de seleção.  
   
 ### <a name="to-enable-debugging-in-the-webconfig-file"></a>Para habilitar a depuração no arquivo web.config  
   
-1.  Abra o arquivo web.config usando qualquer editor de texto ou analisador XML padrão.  
+1. Abra o arquivo web.config usando qualquer editor de texto ou analisador XML padrão.  
   
     > [!NOTE]  
     > No entanto, você não pode acessar o arquivo remotamente usando um navegador da Web. Por razões de segurança, o [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] configura o servidor IIS da Microsoft para ajudar a impedir o acesso direto do navegador aos arquivos Web.config. Se você tentar acessar um arquivo de configuração usando um navegador, receberá o erro de acesso HTTP 403 (proibido).  
   
-2.  Web.config é um arquivo XML e, assim, contém as seções aninhadas marcadas por aspas. Localize o elemento `configuration/system.web/compilation`. Se o elemento de compilação não existir, crie-o.  
+2. Web.config é um arquivo XML e, assim, contém as seções aninhadas marcadas por aspas. Localize o elemento `configuration/system.web/compilation`. Se o elemento de compilação não existir, crie-o.  
   
-3.  Se o elemento `compilation` não contiver um atributo `debug`, adicione o atributo ao elemento.  
+3. Se o elemento `compilation` não contiver um atributo `debug`, adicione o atributo ao elemento.  
   
-4.  Verifique se o valor do atributo `debug` está definido como `true`.  
+4. Verifique se o valor do atributo `debug` está definido como `true`.  
   
 O arquivo web.config deve parecer com o exemplo a seguir. Observe que pode haver seções entre a configuração e os elementos system.web  
   
--   seções de elementos entre a configuração e os elementos system.web  
+- seções de elementos entre a configuração e os elementos system.web  
   
--   seções de elementos entre system.web e os elementos de compilação  
+- seções de elementos entre system.web e os elementos de compilação  
   
--   Um elemento de compilação pode conter outros atributos e elementos  
+- Um elemento de compilação pode conter outros atributos e elementos  
   
 ## <a name="example"></a>Exemplo  
   

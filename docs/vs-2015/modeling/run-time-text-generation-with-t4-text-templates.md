@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2290ec08ea64a2775b3e4ced171dbf14399219cb
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000006"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059260"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Geração de texto de tempo de execução com modelos de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,16 +53,16 @@ This report is Company Confidential.
   
 #### <a name="to-create-a-run-time-text-template"></a>Para criar um modelo de texto de tempo de execução  
   
-1.  No Gerenciador de soluções, no menu de atalho do projeto, escolha **Add**, **Novo Item**.  
+1. No Gerenciador de soluções, no menu de atalho do projeto, escolha **Add**, **Novo Item**.  
   
-2.  No **Adicionar Novo Item** caixa de diálogo, selecione **modelo de texto de tempo de execução**. (No [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] procure **Items\General comuns**.)  
+2. No **Adicionar Novo Item** caixa de diálogo, selecione **modelo de texto de tempo de execução**. (No [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] procure **Items\General comuns**.)  
   
-3.  Digite um nome para seu arquivo de modelo.  
+3. Digite um nome para seu arquivo de modelo.  
   
     > [!NOTE]
     >  O nome do arquivo de modelo será ser usado como um nome de classe no código gerado. Portanto, ele não deve ter espaços ou pontuação.  
   
-4.  Escolha **Adicionar**.  
+4. Escolha **Adicionar**.  
   
      Um novo arquivo é criado que tem a extensão **. TT**. Sua **Custom Tool** estiver definida como **TextTemplatingFilePreprocessor**. Ele contém as seguintes linhas:  
   
@@ -79,18 +79,18 @@ This report is Company Confidential.
   
 #### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>Para converter um arquivo de texto existente em um modelo de tempo de execução  
   
-1.  Incluir o arquivo em seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto. No Gerenciador de soluções, no menu de atalho do projeto, escolha **Add**, **Item existente**.  
+1. Incluir o arquivo em seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto. No Gerenciador de soluções, no menu de atalho do projeto, escolha **Add**, **Item existente**.  
   
-2.  O arquivo de conjunto **ferramentas personalizados** propriedade **TextTemplatingFilePreprocessor**. No Gerenciador de soluções, no menu de atalho do arquivo, escolha **propriedades**.  
+2. O arquivo de conjunto **ferramentas personalizados** propriedade **TextTemplatingFilePreprocessor**. No Gerenciador de soluções, no menu de atalho do arquivo, escolha **propriedades**.  
   
     > [!NOTE]
     >  Se a propriedade já está definida, certifique-se de que se trata **TextTemplatingFilePreprocessor** e não **TextTemplatingFileGenerator**. Isso pode acontecer se você incluir um arquivo que já tenha a extensão **. TT**.  
   
-3.  Alterar a extensão de nome de arquivo para **. TT**. Embora esta etapa seja opcional, ele ajuda a evitar abrir o arquivo em um editor incorreto.  
+3. Alterar a extensão de nome de arquivo para **. TT**. Embora esta etapa seja opcional, ele ajuda a evitar abrir o arquivo em um editor incorreto.  
   
-4.  Remova a parte principal do nome do arquivo qualquer espaço ou pontuação. Por exemplo, "My Web Page.tt" seria incorreta, mas "MyWebPage.tt" está correto. O nome do arquivo será ser usado como um nome de classe no código gerado.  
+4. Remova a parte principal do nome do arquivo qualquer espaço ou pontuação. Por exemplo, "My Web Page.tt" seria incorreta, mas "MyWebPage.tt" está correto. O nome do arquivo será ser usado como um nome de classe no código gerado.  
   
-5.  Insira a seguinte linha no início do arquivo. Se você estiver trabalhando em um projeto do Visual Basic, substitua "C#" com "VB".  
+5. Insira a seguinte linha no início do arquivo. Se você estiver trabalhando em um projeto do Visual Basic, substitua "C#" com "VB".  
   
      `<#@ template language="C#" #>`  
   

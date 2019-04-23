@@ -24,12 +24,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1227dea199ebff465fc2dde3ec30568bb50e9ec6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e971271d17c88780ec543ffc12ed4c6ebcc48f23
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927375"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043674"
 ---
 # <a name="security-versioning-and-manifest-issues-in-clickonce-deployments"></a>Problemas de segurança, controle de versão e manifesto em implantações do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ Há uma variedade de problemas com a [!INCLUDE[ndptecclick](../includes/ndpteccl
   
  Se você tiver editado manualmente seus manifestos de implantação ou de aplicativo, você pode ter acidentalmente corrompida-los. Manifesto corrompido impedirá que um correto [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] instalação. Você pode depurar esses erros em tempo de execução clicando **detalhes** na **ClickOnce erro** caixa de diálogo e ler a mensagem de erro no log. O log listará uma das seguintes mensagens:  
   
--   Uma descrição do erro de sintaxe e o número de linha e o caractere posição onde ocorreu o erro.  
+- Uma descrição do erro de sintaxe e o número de linha e o caractere posição onde ocorreu o erro.  
   
--   O nome de um elemento ou atributo usado em violação do esquema do manifesto. Se você tiver adicionado o XML manualmente para seus manifestos, você precisará comparar suas adições para os esquemas de manifesto. Para obter mais informações, consulte [manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md) e [manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md).  
+- O nome de um elemento ou atributo usado em violação do esquema do manifesto. Se você tiver adicionado o XML manualmente para seus manifestos, você precisará comparar suas adições para os esquemas de manifesto. Para obter mais informações, consulte [manifesto de implantação do ClickOnce](../deployment/clickonce-deployment-manifest.md) e [manifesto do aplicativo ClickOnce](../deployment/clickonce-application-manifest.md).  
   
--   Um conflito de ID. Referências de dependência nos manifestos de implantação e o aplicativo devem ser exclusivas em ambos os seus `name` e `publicKeyToken` atributos. Se corresponderem a ambos os atributos entre dois elementos dentro de um manifesto, análise de manifesto não terá êxito.  
+- Um conflito de ID. Referências de dependência nos manifestos de implantação e o aplicativo devem ser exclusivas em ambos os seus `name` e `publicKeyToken` atributos. Se corresponderem a ambos os atributos entre dois elementos dentro de um manifesto, análise de manifesto não terá êxito.  
   
 ## <a name="precautions-when-manually-changing-manifests-or-applications"></a>Precauções ao alterar manualmente os manifestos ou aplicativos  
  Quando você atualiza um manifesto de aplicativo, você deve reassinar o manifesto do aplicativo e o manifesto de implantação. O manifesto de implantação contém uma referência ao manifesto do aplicativo que inclui o hash do arquivo e sua assinatura digital.  

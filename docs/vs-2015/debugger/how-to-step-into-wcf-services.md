@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ad5ca2d74a1c141b9687d9b9eac5d8b3e268cc0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 951d5f39fbf3929d094cc18de5fe108b46753b09
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922770"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056439"
 ---
 # <a name="how-to-step-into-wcf-services"></a>Como: Intervir nos serviços WCF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,15 +33,15 @@ No [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], você pode entrar
   
 ### <a name="to-step-into-a-wcf-service"></a>Para entrar em um serviço WCF  
   
-1.  Crie uma solução do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que contém os projetos de cliente WCF e serviço WCF.  
+1. Crie uma solução do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que contém os projetos de cliente WCF e serviço WCF.  
   
-2.  No Gerenciador de Soluções, clique com o botão direito do mouse no projeto Cliente WCF e clique em **Definir como projeto de inicialização**.  
+2. No Gerenciador de Soluções, clique com o botão direito do mouse no projeto Cliente WCF e clique em **Definir como projeto de inicialização**.  
   
-3.  Habilite a depuração no arquivo app.config ou web.config. Para obter mais informações, consulte [limitações na depuração de WCF](../debugger/limitations-on-wcf-debugging.md).  
+3. Habilite a depuração no arquivo app.config ou web.config. Para obter mais informações, consulte [limitações na depuração de WCF](../debugger/limitations-on-wcf-debugging.md).  
   
-4.  Defina um ponto de interrupção no local no projeto de cliente onde você deseja iniciar a entrada. Normalmente, isso será imediatamente antes da chamada de WCF.  
+4. Defina um ponto de interrupção no local no projeto de cliente onde você deseja iniciar a entrada. Normalmente, isso será imediatamente antes da chamada de WCF.  
   
-5.  Execute o ponto de interrupção e inicie a entrada. O depurador entrará no serviço automaticamente.  
+5. Execute o ponto de interrupção e inicie a entrada. O depurador entrará no serviço automaticamente.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depurando serviços WCF](../debugger/debugging-wcf-services.md)   

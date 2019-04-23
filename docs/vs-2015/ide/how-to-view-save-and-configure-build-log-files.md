@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6826a2f2618ee77944102245781a8df3b2a4596b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 496fcdf28f8ce9b0809988949d435c064734b508
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54760051"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053553"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Como ver, salvar e configurar arquivos de log de build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,23 +25,23 @@ Depois de compilar um projeto no Visual Studio IDE, é possível exibir informa�
   
 ### <a name="to-view-the-build-log-file-for-a-c-project"></a>Para exibir o arquivo de log de build para um projeto C++  
   
-1.  No **Windows Explorer** ou no **Explorador de Arquivos**, abra o seguinte arquivo: \\...\Visual Studio *Versão*\Projects\\*ProjectName*\\*ProjectName*\Debug\\*ProjectName*.txt  
+1. No **Windows Explorer** ou no **Explorador de Arquivos**, abra o seguinte arquivo: \\...\Visual Studio *Versão*\Projects\\*ProjectName*\\*ProjectName*\Debug\\*ProjectName*.txt  
   
 ### <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>Para criar um arquivo de log de build para um projeto de código gerenciado  
   
-1.  Na barra de menus, escolha **Compilar**, **Compilar Solução**.  
+1. Na barra de menus, escolha **Compilar**, **Compilar Solução**.  
   
-2.  Na Janela de **Saída**, realce as informações do build e, em seguida, copie-as para a área de transferência.  
+2. Na Janela de **Saída**, realce as informações do build e, em seguida, copie-as para a área de transferência.  
   
-3.  Abra um editor de texto, como o Bloco de notas, cole as informações no arquivo e salve-o.  
+3. Abra um editor de texto, como o Bloco de notas, cole as informações no arquivo e salve-o.  
   
 ### <a name="to-change-the-amount-of-information-included-in-the-build-log"></a>Para alterar a quantidade de informações incluídas no log de build  
   
-1.  Na barra de menus, escolha **Ferramentas**, **Opções**.  
+1. Na barra de menus, escolha **Ferramentas**, **Opções**.  
   
-2.  Na página **Projetos e Soluções**, escolha a página **Compilar e Executar**.  
+2. Na página **Projetos e Soluções**, escolha a página **Compilar e Executar**.  
   
-3.  Na lista **Detalhamento da saída de build do projeto no MSBuild**, escolha um dos seguintes valores e, em seguida, escolha o botão **OK**.  
+3. Na lista **Detalhamento da saída de build do projeto no MSBuild**, escolha um dos seguintes valores e, em seguida, escolha o botão **OK**.  
   
     |Nível de detalhes|Descrição|  
     |---------------------|-----------------|  

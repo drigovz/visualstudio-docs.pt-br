@@ -11,12 +11,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e0d80320b47f0d5968b4aa0e795743e394db2c19
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2566c97a4dc025e27aecf64a7a8950a578882348
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000042"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054374"
 ---
 # <a name="windows-installer-basics"></a>Noções básicas do Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -63,15 +63,15 @@ O Windows Installer instala e desinstala aplicativos ou produtos de software no 
   
 #### <a name="installer-enforced-rules"></a>Regras aplicadas pelo instalador  
   
--   Todos os arquivos em um determinado componente devem ser instalados no mesmo diretório. Por outro lado, os arquivos instalados para pastas diferentes devem pertencer para separar os componentes.  
+- Todos os arquivos em um determinado componente devem ser instalados no mesmo diretório. Por outro lado, os arquivos instalados para pastas diferentes devem pertencer para separar os componentes.  
   
--   Pode haver apenas um caminho de chave por componente. O caminho da chave é simplesmente uma arquivo ou chave do registro que representa o componente inteiro.  
+- Pode haver apenas um caminho de chave por componente. O caminho da chave é simplesmente uma arquivo ou chave do registro que representa o componente inteiro.  
   
 #### <a name="component-provider-responsibilities"></a>Responsabilidades do provedor de componente  
   
--   Quaisquer dois recursos que podem ser enviado separadamente em versões subsequentes devem existir em componentes separados. Recursos devem ser agrupados no mesmo componente somente quando você tiver certeza de que esses recursos nunca serão fornecida separadamente. Na verdade, é recomendável que todos os principais recursos (por exemplo, DLLs) sempre existe no WICs separados. Para obter mais informações, consulte [definindo componentes do instalador](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
+- Quaisquer dois recursos que podem ser enviado separadamente em versões subsequentes devem existir em componentes separados. Recursos devem ser agrupados no mesmo componente somente quando você tiver certeza de que esses recursos nunca serão fornecida separadamente. Na verdade, é recomendável que todos os principais recursos (por exemplo, DLLs) sempre existe no WICs separados. Para obter mais informações, consulte [definindo componentes do instalador](http://msdn.microsoft.com/library/aa368269\(VS.85\).aspx).  
   
--   Nenhum recurso com versão nunca deve enviar em mais de um WIC.  
+- Nenhum recurso com versão nunca deve enviar em mais de um WIC.  
   
 ## <a name="see-also"></a>Consulte também  
  [O que acontece se as regras de componente são interrompidas?](http://msdn.microsoft.com/library/aa372795\(VS.85\).aspx)

@@ -19,12 +19,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0e16c3b921c8ecd2c4c944b60cb5541eac49463e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d4111ca5aee4a405a4a797dbfee14a3d4b50435f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927259"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054245"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>Como: Especificar o modo de instalação offline ou online do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,19 +37,19 @@ O `Install Mode` para um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] 
   
 ### <a name="to-make-a-clickonce-application-available-online-only"></a>Para disponibilizar um aplicativo ClickOnce online apenas  
   
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2.  Clique o **publicar** guia.  
+2. Clique o **publicar** guia.  
   
-3.  No **modo de instalação e as configurações** área, clique no **o aplicativo está disponível apenas online** botão de opção.  
+3. No **modo de instalação e as configurações** área, clique no **o aplicativo está disponível apenas online** botão de opção.  
   
 ### <a name="to-make-a-clickonce-application-available-online-or-offline"></a>Para disponibilizar um aplicativo ClickOnce online ou offline  
   
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2.  Clique o **publicar** guia.  
+2. Clique o **publicar** guia.  
   
-3.  No **modo de instalação e as configurações** área, clique no **o aplicativo está disponível também offline** botão de opção.  
+3. No **modo de instalação e as configurações** área, clique no **o aplicativo está disponível também offline** botão de opção.  
   
      Quando instalado, o aplicativo adiciona entradas para o **inicie** menu e, ao **adicionar ou remover programas** no painel de controle.  
   

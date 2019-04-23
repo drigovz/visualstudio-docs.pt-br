@@ -12,21 +12,21 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b6d63393313097503ed92c8a540d85152b3f8688
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ce4b5671d0e10d2f524ee96494d37cb68babe72a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928517"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058870"
 ---
 # <a name="troubleshooting-exceptions-systemservicemodelsecuritymessagesecurityexception"></a>Solucionando problemas de exceções: System.ServiceModel.Security.MessageSecurityException
 Um <xref:System.ServiceModel.Security.MessageSecurityException> exceção é lançada quando [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] determina que uma mensagem não está protegida corretamente ou foi violada. O erro ocorre com mais frequência quando todas as seguintes condições forem verdadeiras:  
   
--   Você usa uma referência de serviço WCF sobre uma conexão remota, por exemplo, Conexão de Área de Trabalho Remota ou Serviços de Terminal para se comunicar com um serviço WCF (.svc) em um projeto do site ou aplicativo Web.  
+- Você usa uma referência de serviço WCF sobre uma conexão remota, por exemplo, Conexão de Área de Trabalho Remota ou Serviços de Terminal para se comunicar com um serviço WCF (.svc) em um projeto do site ou aplicativo Web.  
   
--   Você não tem permissões de administrador no site remoto.  
+- Você não tem permissões de administrador no site remoto.  
   
--   As solicitações para o host local no site remoto estão sendo tratadas pelo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server.  
+- As solicitações para o host local no site remoto estão sendo tratadas pelo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] Development Server.  
   
 ## <a name="associated-tips"></a>Dicas relacionadas  
  **Resolva problemas de autenticação NTLM ao usar o ASP.Net Development Server.**  
@@ -78,11 +78,11 @@ Um <xref:System.ServiceModel.Security.MessageSecurityException> exceção é lan
   
 #### <a name="to-turn-off-ntlm-security"></a>Para desativar a segurança NTLM  
   
-1.  Na **Gerenciador de soluções**, clique no nome do site da Web e, em seguida, clique em **páginas de propriedade**.  
+1. Na **Gerenciador de soluções**, clique no nome do site da Web e, em seguida, clique em **páginas de propriedade**.  
   
-2.  Selecione **opções de inicialização**e, em seguida, desmarque as **autenticação NTLM** caixa de seleção.  
+2. Selecione **opções de inicialização**e, em seguida, desmarque as **autenticação NTLM** caixa de seleção.  
   
-3.  Clique em **OK**.  
+3. Clique em **OK**.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:System.ServiceModel.Security.MessageSecurityException>   

@@ -18,12 +18,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a060444ec5ec8085b56810862e87e523c56fddb6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: db6ea3e2b19b655c3a1ec8dedf60409b8706f3cd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656057"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059026"
 ---
 # <a name="extend-the-functionality-of-a-tableadapter"></a>Estender a funcionalidade de um TableAdapter
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,13 +41,13 @@ Você pode estender a funcionalidade de um TableAdapter, adicionando código ao 
   
 #### <a name="to-create-a-partial-class-for-a-tableadapter"></a>Para criar uma classe parcial para um TableAdapter  
   
-1.  Adicione uma nova classe ao seu projeto, vá para o **Project** menu e selecionando**Adicionar classe**.  
+1. Adicione uma nova classe ao seu projeto, vá para o **Project** menu e selecionando**Adicionar classe**.  
   
-2.  Nomeie a classe `CustomersTableAdapterExtended`.  
+2. Nomeie a classe `CustomersTableAdapterExtended`.  
   
-3.  Selecione **Adicionar**.  
+3. Selecione **Adicionar**.  
   
-4.  Substitua o código com o namespace correto e o nome de classe parcial para o seu projeto da seguinte maneira:  
+4. Substitua o código com o namespace correto e o nome de classe parcial para o seu projeto da seguinte maneira:  
   
      [!code-csharp[VbRaddataTableAdapters#2](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/CustomersTableAdapterExtended.cs#2)]
      [!code-vb[VbRaddataTableAdapters#2](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/CustomersTableAdapterExtended.vb#2)]  

@@ -12,12 +12,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c723e0a2cc76b6432fc6f209a7edf4a988a0b3fd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 24ef57b545360cccbf75039b5f64a0f53e636dd8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059897"
 ---
 # <a name="event-handlers-propagate-changes-outside-the-model"></a>Manipuladores de eventos propagam alterações fora do modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ No SDK de modelagem e visualização, você pode definir manipuladores de evento
   
 1. Escolha o tipo de evento que você deseja monitorar. Para obter uma lista completa, examine as propriedades de <xref:Microsoft.VisualStudio.Modeling.EventManagerDirectory>. Cada propriedade corresponde a um tipo de evento. Usada com mais frequência são tipos de evento:  
   
-   -   `ElementAdded` – disparado quando um elemento de modelo, link de relação, forma ou conector é criado.  
+   - `ElementAdded` – disparado quando um elemento de modelo, link de relação, forma ou conector é criado.  
   
-   -   ElementPropertyChanged – disparado quando o valor de um `Normal` propriedade de domínio é alterada. O evento é disparado somente se os valores novos e antigos não são iguais. O evento não pode ser aplicado às propriedades de armazenamento calculadas e personalizadas.  
+   - ElementPropertyChanged – disparado quando o valor de um `Normal` propriedade de domínio é alterada. O evento é disparado somente se os valores novos e antigos não são iguais. O evento não pode ser aplicado às propriedades de armazenamento calculadas e personalizadas.  
   
         Ele não pode ser aplicado a propriedades da função que correspondem aos links do relacionamento. Em vez disso, use `ElementAdded` para monitorar a relação de domínio.  
   
-   -   `ElementDeleted` – disparado depois de um elemento de modelo, relação, forma ou conector foi excluído. Você ainda pode acessar os valores de propriedade do elemento, mas ele será não têm nenhuma relação a outros elementos.  
+   - `ElementDeleted` – disparado depois de um elemento de modelo, relação, forma ou conector foi excluído. Você ainda pode acessar os valores de propriedade do elemento, mas ele será não têm nenhuma relação a outros elementos.  
   
 2. Adicione uma definição de classe parcial para _{1&gt;yourdsl&lt;1_**DocData** em um arquivo de código separado no **DslPackage** projeto.  
   
@@ -166,11 +166,11 @@ private static void AlbumTitleAdjuster(object sender,
   
  Se você gravar um evento que atualiza o repositório:  
   
--   Use `store.InUndoRedoOrRollback` Evite fazer alterações a elementos de modelo em Desfazer. O Gerenciador de transações definirá tudo no armazenamento de volta ao estado original.  
+- Use `store.InUndoRedoOrRollback` Evite fazer alterações a elementos de modelo em Desfazer. O Gerenciador de transações definirá tudo no armazenamento de volta ao estado original.  
   
--   Use `store.InSerializationTransaction` Evite fazer alterações enquanto o modelo está sendo carregado do arquivo.  
+- Use `store.InSerializationTransaction` Evite fazer alterações enquanto o modelo está sendo carregado do arquivo.  
   
--   Suas alterações fará com que mais eventos sejam disparados. Certifique-se de que você evite um loop infinito.  
+- Suas alterações fará com que mais eventos sejam disparados. Certifique-se de que você evite um loop infinito.  
   
 ## <a name="store-event-types"></a>Tipos de evento Store  
  Cada tipo de evento corresponde a uma coleção em Store.EventManagerDirectory. Você pode adicionar ou remover manipuladores de eventos a qualquer momento, mas é comum o uso para adicioná-las quando o documento é carregado.  

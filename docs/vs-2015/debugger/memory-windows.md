@@ -27,12 +27,12 @@ caps.latest.revision: 37
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a9c68709c1a06a84fe624bee726da5a12920dbd
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: e60f9b3c9acf1377139fee27486bb10251d8804a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58929099"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059585"
 ---
 # <a name="memory-windows"></a>Janelas de memória
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ O **memória** janela fornece uma exibição no espaço de memória que é usado
   
 #### <a name="to-open-a-memory-window"></a>Para abrir uma janela de memória  
   
-1.  Inicie a depuração, se você já não estiver no modo de depuração.  
+1. Inicie a depuração, se você já não estiver no modo de depuração.  
   
-2.  No **Debug** , aponte para **Windows**. Em seguida, aponte para **memória** e, em seguida, clique em **Memory 1**, **memória 2**, **memória 3**, ou **memória 4**. (Edições de nível inferior [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] têm apenas uma única **memória** janela. Se você estiver usando uma dessas edições, basta clicar **memória**.)  
+2. No **Debug** , aponte para **Windows**. Em seguida, aponte para **memória** e, em seguida, clique em **Memory 1**, **memória 2**, **memória 3**, ou **memória 4**. (Edições de nível inferior [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] têm apenas uma única **memória** janela. Se você estiver usando uma dessas edições, basta clicar **memória**.)  
   
 ## <a name="paging-in-the-memory-window"></a>Paginação na janela de memória  
  O **memória** janela tem uma barra de rolagem vertical que opera de maneira não padrão. O espaço de endereço de um computador moderno é muito grande e você pode preferir arrastar a caixa de rolagem para um local aleatório. Por esse motivo, a caixa de rolagem é carregada e sempre permanece no centro da barra de rolagem. Em aplicativos de código nativo, você pode rolar a página para cima ou para baixo, mas não pode rolar livremente.  
@@ -56,33 +56,33 @@ O **memória** janela fornece uma exibição no espaço de memória que é usado
   
 #### <a name="to-page-up-or-down-in-memory"></a>Para mover para cima ou para baixo na memória  
   
-1.  Para rolar a página para baixo (mover para um endereço de memória mais alto), clique abaixo da caixa de rolagem na barra de rolagem vertical.  
+1. Para rolar a página para baixo (mover para um endereço de memória mais alto), clique abaixo da caixa de rolagem na barra de rolagem vertical.  
   
-2.  Para rolar a página para cima (mover para um endereço de memória mais baixo), clique acima da caixa de rolagem na barra de rolagem vertical.  
+2. Para rolar a página para cima (mover para um endereço de memória mais baixo), clique acima da caixa de rolagem na barra de rolagem vertical.  
   
 ## <a name="selecting-a-memory-location"></a>Selecionando um local de memória  
  Se você quiser mover imediatamente para um local selecionado na memória, você poderá fazer isso usando uma operação de arrastar e soltar ou editando o valor de **endereço** caixa. O **endereço** caixa aceita não somente valores numéricos, mas também expressões que são avaliadas como endereços. Por padrão, o **memória** janela trata um **endereço** expressão como uma expressão em tempo real, que é reavaliada à medida que seu programa é executado. As expressões dinâmicas podem ser muito úteis. Por exemplo, você pode usá-las para exibir a memória que é tocada por um ponteiro.  
   
 #### <a name="to-select-a-memory-location-by-dragging-and-dropping"></a>Para selecionar um local de memória arrastando e soltando  
   
-1.  Em qualquer janela, selecione um endereço de memória ou variável de ponteiro que contém um endereço de memória.  
+1. Em qualquer janela, selecione um endereço de memória ou variável de ponteiro que contém um endereço de memória.  
   
-2.  Arraste o endereço ou ponteiro para o **memória** janela.  
+2. Arraste o endereço ou ponteiro para o **memória** janela.  
   
 #### <a name="to-select-a-memory-location-by-editing"></a>Para selecionar um local de memória editando  
   
-1.  No **memória** janela, selecione a **endereço** caixa.  
+1. No **memória** janela, selecione a **endereço** caixa.  
   
-2.  Digite ou cole o endereço que você deseja ver e, em seguida, pressione **ENTER**.  
+2. Digite ou cole o endereço que você deseja ver e, em seguida, pressione **ENTER**.  
   
 ## <a name="changing-the-way-the-memory-window-displays-information"></a>Alterando o modo como a janela de memória exibe informações  
  Você pode personalizar a maneira como a janela **Memória** mostra o conteúdo da memória. Por padrão, o conteúdo da memória aparece como inteiros de um byte em formato hexadecimal e o número de colunas é determinado automaticamente pela largura atual da janela.  
   
 #### <a name="to-change-the-format-of-the-memory-contents"></a>Para alterar o formato do conteúdo de memória  
   
-1.  Clique com botão direito do **memória** janela.  
+1. Clique com botão direito do **memória** janela.  
   
-2.  Escolha o formato que você deseja.  
+2. Escolha o formato que você deseja.  
   
 #### <a name="to-change-the-number-of-columns-in-the-memory-window"></a>Para alterar o número de colunas na janela de memória  
   
@@ -104,9 +104,9 @@ O **memória** janela fornece uma exibição no espaço de memória que é usado
   
 #### <a name="to-toggle-the-toolbar"></a>Para ativar/desativar a barra de ferramentas  
   
-1.  Clique com botão direito um **memória** janela.  
+1. Clique com botão direito um **memória** janela.  
   
-2.  No menu de atalho, clique em **Mostrar barra de ferramentas**.  
+2. No menu de atalho, clique em **Mostrar barra de ferramentas**.  
   
      A barra de ferramentas é exibida ou desaparece, dependendo do seu estado anterior.  
   
@@ -115,9 +115,9 @@ O **memória** janela fornece uma exibição no espaço de memória que é usado
   
 #### <a name="to-follow-a-pointer-through-memory"></a>Para seguir um ponteiro pela memória  
   
-1.  No **memória** janela **endereço** , digite uma expressão de ponteiro. A variável de ponteiro deve estar no escopo atual. Dependendo da linguagem, você poderá ter que remover a referência a ele.  
+1. No **memória** janela **endereço** , digite uma expressão de ponteiro. A variável de ponteiro deve estar no escopo atual. Dependendo da linguagem, você poderá ter que remover a referência a ele.  
   
-2.  Pressione **ENTER**.  
+2. Pressione **ENTER**.  
   
      Agora, quando você usa um comando de execução como **etapa**, o endereço de memória que é exibido automaticamente será alterado quando o ponteiro muda.  
   

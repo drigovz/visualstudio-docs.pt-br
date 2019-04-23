@@ -12,12 +12,12 @@ ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 18c19025329a603b0854b016dc50d9b2ab9c9e69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 35448f4324213739cb2dc14a95598ac9a3d4432f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929236"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055607"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Elemento de pasta (modelos de projeto do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Especifica uma pasta que será adicionada ao projeto.
   
  Você pode usar qualquer um dos seguintes métodos para organizar itens de projeto em pastas em um modelo:  
   
--   Incluir as pastas em que o arquivo. zip de modelo e adicioná-los ao projeto no arquivo. vstemplate, especificando o caminho para o arquivo na `ProjectItem` elementos, sem nenhum `Folder` elementos. Esse é o método recomendado. Por exemplo:  
+- Incluir as pastas em que o arquivo. zip de modelo e adicioná-los ao projeto no arquivo. vstemplate, especificando o caminho para o arquivo na `ProjectItem` elementos, sem nenhum `Folder` elementos. Esse é o método recomendado. Por exemplo:  
   
      `...`  
   
@@ -76,7 +76,7 @@ Especifica uma pasta que será adicionada ao projeto.
   
      `...`  
   
--   Incluir as pastas em que o arquivo. zip de modelo e adicioná-los ao projeto no arquivo. vstemplate com `Folder` elementos. Por exemplo:  
+- Incluir as pastas em que o arquivo. zip de modelo e adicioná-los ao projeto no arquivo. vstemplate com `Folder` elementos. Por exemplo:  
   
      `...`  
   
@@ -90,7 +90,7 @@ Especifica uma pasta que será adicionada ao projeto.
   
      `...`  
   
--   Não inclua pastas no arquivo. zip de modelo, mas adicionar pastas usando o `TargetFileName` atributo do `ProjectItem` elemento. Por exemplo:  
+- Não inclua pastas no arquivo. zip de modelo, mas adicionar pastas usando o `TargetFileName` atributo do `ProjectItem` elemento. Por exemplo:  
   
      `...`  
   

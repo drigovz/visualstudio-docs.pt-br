@@ -8,12 +8,12 @@ ms.assetid: f7e9e4a2-5d01-4f78-b408-5be3892bd162
 caps.latest.revision: 28
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 12acdaa6884a657782aa1e61e0a02f7118a59392
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a86811bb4d87dffcf9abdacae9bca1fdac4298ee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792148"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043036"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>Configurar testes de unidade usando um arquivo .runsettings
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Os testes de unidade no Visual Studio podem ser configurados com um arquivo *.ru
   
    ![Habilitando um arquivo de configurações de execução](../test/media/runsettings-1.png "RunSettings-1")  
   
-##  <a name="example"></a> Copiar este exemplo de arquivo .runsettings  
+## <a name="example"></a> Copiar este exemplo de arquivo .runsettings  
  Veja um arquivo *.runsettings típico. Cada elemento do arquivo é opcional, porque cada valor possui um padrão.  
   
 ```xml  
@@ -152,7 +152,7 @@ Os testes de unidade no Visual Studio podem ser configurados com um arquivo *.ru
 |Configuração|Padrão|Valores|  
 |-------------------|-------------|------------|  
 |ForcedLegacyMode|false|No Visual Studio 2012, o adaptador MSTest foi otimizado para torná-lo mais rápido e mais escalonável. Alguns comportamentos, como a ordem em que os testes são executados, não podem ser exatamente iguais aos de edições anteriores do Visual Studio. Defina esse valor como `true` para usar o adaptador mais antigo de teste.<br /><br /> Por exemplo, você poderá usar isso se tiver um arquivo app.config especificado para um teste de unidade.<br /><br /> Recomendamos que você considere refatorar seus testes para permitir o uso do adaptador mais recente.|  
-|IgnoreTestImpact|false|O recurso de impacto de teste prioriza os testes que são afetados pelas alterações recentes, quando executados no MSTest ou no Microsoft Test Manager. Essa configuração desativa o recurso. Confira mais informações em [Como Coletar dados para verificar quais testes devem ser executados após alterações de código](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
+|IgnoreTestImpact|false|O recurso de impacto de teste prioriza os testes que são afetados pelas alterações recentes, quando executados no MSTest ou no Microsoft Test Manager. Essa configuração desativa o recurso. Para obter mais informações, consulte [como: Coletar dados para verificar quais testes devem ser executados após alterações de código](http://msdn.microsoft.com/library/2f921ea1-9bb0-4870-a30f-0521fc22cb47).|  
 |SettingsFile||Você pode especificar uma arquivo de configurações de teste para usar com o adaptador MSTest aqui. Também é possível especificar um arquivo de configurações de teste usando o menu **Testar**, **Configurações de Teste**, **Selecionar Arquivo de Configurações de Teste**.<br /><br /> Se você especificar esse valor, também será necessário definir o **ForcedlegacyMode** como **true**.<br /><br /> `<RunSettings>   <MSTest>     <SettingsFile>my.testsettings</SettingsFile>      <ForcedLegacyMode>true</ForcedLegacyMode>    </MSTest> </RunSettings>`|  
 |KeepExecutorAliveAfterLegacyRun|false|Após a execução do teste ser concluída, o MSTest será fechado. Qualquer processo iniciado como parte do teste também será destruído nesse momento. Se você quiser manter o executor de teste ativo, transforme essa configuração em true.<br /><br /> Por exemplo, você pode usar isso para manter o navegador em execução entre os testes de IU codificados.|  
 |DeploymentEnabled|true|Se você definir isso como false, os itens de implantação especificados em seu método de teste não serão copiados para o diretório de implantação.|  

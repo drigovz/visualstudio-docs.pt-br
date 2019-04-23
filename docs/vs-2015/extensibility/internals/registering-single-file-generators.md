@@ -11,12 +11,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6c6722078f2f25bfb2a14b44e001b0f2921e8ad5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bf0d5e29138f27956dff52571296395507d44976
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929800"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055412"
 ---
 # <a name="registering-single-file-generators"></a>Registrando geradores de arquivo único
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../incl
   
 ### <a name="to-register-a-custom-tool"></a>Para registrar uma ferramenta personalizada  
   
-1.  Registrar a DLL de ferramenta personalizada ou no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] registro local ou no registro do sistema, sob HKEY_CLASSES_ROOT.  
+1. Registrar a DLL de ferramenta personalizada ou no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] registro local ou no registro do sistema, sob HKEY_CLASSES_ROOT.  
   
      Por exemplo, eis aqui as informações de registro gerenciado MSDataSetGenerator ferramenta personalizada, que vem com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]:  
   
@@ -38,17 +38,17 @@ Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../incl
     "Assembly"="Microsoft.VSDesigner, Version=14.0.0.0, Culture=Neutral, PublicKeyToken=b03f5f7f11d50a3a"  
     ```  
   
-2.  Criar uma chave do registro no desejado [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive em geradores\\*GUID* onde *GUID* é o GUID definido pelo sistema de projeto específico do idioma ou o serviço. O nome da chave se torna o nome programático da sua ferramenta personalizada. A chave de ferramenta personalizada tem os seguintes valores:  
+2. Criar uma chave do registro no desejado [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] hive em geradores\\*GUID* onde *GUID* é o GUID definido pelo sistema de projeto específico do idioma ou o serviço. O nome da chave se torna o nome programático da sua ferramenta personalizada. A chave de ferramenta personalizada tem os seguintes valores:  
   
-    -   (Padrão)  
+    - (Padrão)  
   
          Opcional. Fornece uma descrição amigável da ferramenta personalizada. Esse parâmetro é opcional, mas recomendado.  
   
-    -   CLSID  
+    - CLSID  
   
          Necessário. Especifica o identificador da biblioteca de classes do componente COM que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>.  
   
-    -   GeneratesDesignTimeSource  
+    - GeneratesDesignTimeSource  
   
          Necessário. Indica se os tipos de arquivos gerados por essa ferramenta personalizada são disponibilizados aos designers visuais. O valor desse parâmetro precisa ser (zero) 0 para tipos não disponíveis aos designers visuais ou 1 (um) para os tipos disponíveis para designers visuais.  
   

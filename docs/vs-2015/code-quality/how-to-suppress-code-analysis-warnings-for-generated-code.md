@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: c39ee1113d04cdd3212deccee626a96dd1e3dae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 038ea6d6daec4c387d3344809d62bbbd67a12eee
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922869"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057575"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>Como: Suprimir avisos de análise de código para código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,8 +30,8 @@ Compiladores de código gerenciado com frequência geram código que é adiciona
   
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>Para suprimir avisos para código gerado em um projeto  
   
-1.  Clique com botão direito no projeto no Gerenciador de soluções e, em seguida, clique em **propriedades**.  
+1. Clique com botão direito no projeto no Gerenciador de soluções e, em seguida, clique em **propriedades**.  
   
-2.  Clique em **análise de código**.  
+2. Clique em **análise de código**.  
   
-3.  Selecione o **Suprimir resultados do código gerado** caixa de seleção.
+3. Selecione o **Suprimir resultados do código gerado** caixa de seleção.

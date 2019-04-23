@@ -32,12 +32,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: ace3a8b729a9d0f54817bdad2eb5b8ee5343c0a9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6590a07ec7fc67bef5f1b1cfd96e80105fa325ce
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653002"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053723"
 ---
 # <a name="annotating-locking-behavior"></a>Anotando o comportamento de bloqueio
 Para evitar bugs de simultaneidade em seu programa multithreaded, sempre siga uma disciplina de bloqueio apropriada e use anotações de SAL.
@@ -55,11 +55,11 @@ Para evitar bugs de simultaneidade em seu programa multithreaded, sempre siga um
 
  Algumas regras de propriedade de thread para ter em mente:
 
--   Bloqueios de rotação são uncounted bloqueios que têm a propriedade de thread não criptografado.
+- Bloqueios de rotação são uncounted bloqueios que têm a propriedade de thread não criptografado.
 
--   Mutexes e seções críticas são contadas bloqueios que têm a propriedade de thread não criptografado.
+- Mutexes e seções críticas são contadas bloqueios que têm a propriedade de thread não criptografado.
 
--   Semáforos e eventos são contados bloqueios que não têm a propriedade de thread não criptografado.
+- Semáforos e eventos são contados bloqueios que não têm a propriedade de thread não criptografado.
 
 ## <a name="locking-annotations"></a>Anotações de bloqueio
  A tabela a seguir lista as anotações de bloqueio.
