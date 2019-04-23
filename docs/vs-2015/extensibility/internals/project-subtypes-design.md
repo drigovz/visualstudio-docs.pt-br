@@ -10,12 +10,12 @@ ms.assetid: 405488bb-1362-40ed-b0f1-04a57fc98c56
 caps.latest.revision: 33
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 78b768ae63fcf03912d4f81820e80706f8a46a98
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0e7cd96324e5a2bbd6c9b0acf4125bc0450cfd06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925613"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085773"
 ---
 # <a name="project-subtypes-design"></a>Design de subtipos de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -24,11 +24,11 @@ Subtipos do projeto permitem que os VSPackages estender projetos com base no Mic
   
  Os tópicos a seguir detalham o design básico e a implementação de subtipos de projeto:  
   
--   Design de subtipo de projeto.  
+- Design de subtipo de projeto.  
   
--   Agregação de vários nível.  
+- Agregação de vários nível.  
   
--   Interfaces de suporte.  
+- Interfaces de suporte.  
   
 ## <a name="project-subtype-design"></a>Design de subtipo de projeto  
  A inicialização de um subtipo de projeto é obtida ao agregar principal <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject> objetos. Essa agregação permite que um subtipo de projeto substituir ou aumentar a maioria dos recursos do projeto base. Subtipos de projeto obtém a primeira oportunidade para lidar com as propriedades usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>, comandos usando <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>e o gerenciamento de item de projeto usando <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>. Também podem estender os subtipos de projeto:  
@@ -71,11 +71,11 @@ Extensor de automação do subtipo de projeto.
 ## <a name="multi-level-aggregation"></a>Agregação de vários nível  
  Uma implementação de subtipo de projeto que encapsula um subtipo de projeto de nível inferior deve ser programado cooperativamente para permitir que o subtipo de projeto interno funcionar corretamente. Inclui uma lista de responsabilidades de programação:  
   
--   O <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementação do subtipo de projeto que está encapsulando o subtipo interno deve delegar para o <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementação do subtipo de projeto interno para ambos <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> métodos.  
+- O <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementação do subtipo de projeto que está encapsulando o subtipo interno deve delegar para o <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> implementação do subtipo de projeto interno para ambos <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Load%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment.Save%2A> métodos.  
   
--   O <xref:EnvDTE80.IInternalExtenderProvider> implementação do subtipo de projeto de wrapper deverá delegar ao de seu subtipo de projeto interno. Em particular, a implementação de <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> precisa obter a cadeia de caracteres de nomes do subtipo de projeto interno e, em seguida, concatenar as cadeias de caracteres que deseja adicionar como extensores.  
+- O <xref:EnvDTE80.IInternalExtenderProvider> implementação do subtipo de projeto de wrapper deverá delegar ao de seu subtipo de projeto interno. Em particular, a implementação de <xref:EnvDTE80.IInternalExtenderProvider.GetExtenderNames%2A> precisa obter a cadeia de caracteres de nomes do subtipo de projeto interno e, em seguida, concatenar as cadeias de caracteres que deseja adicionar como extensores.  
   
--   O <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> implementação de um subtipo de projeto de wrapper deve instanciar a <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> objeto do seu interna subtipo de projeto e mantê-la como um delegado particular, já que somente o objeto de configuração de projeto do projeto base diretamente sabe que o wrapper objeto de configuração do subtipo de projeto existe. O subtipo de projeto externa pode inicialmente escolher interfaces de configuração que ele deseja tratar diretamente e, em seguida, delegue o resto para implementação do subtipo de projeto interno da <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.  
+- O <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfgProvider> implementação de um subtipo de projeto de wrapper deve instanciar a <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg> objeto do seu interna subtipo de projeto e mantê-la como um delegado particular, já que somente o objeto de configuração de projeto do projeto base diretamente sabe que o wrapper objeto de configuração do subtipo de projeto existe. O subtipo de projeto externa pode inicialmente escolher interfaces de configuração que ele deseja tratar diretamente e, em seguida, delegue o resto para implementação do subtipo de projeto interno da <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFlavorCfg.get_CfgType%2A>.  
   
 ## <a name="supporting-interfaces"></a>Interfaces de suporte  
  Projeto base delega chamadas ao suporte a interfaces adicionadas por um subtipo de projeto, para estender a vários aspectos da sua implementação. Isso inclui estender objetos de configuração de projeto e de vários objetos de navegador de propriedade. Essas interfaces são recuperadas chamando `QueryInterface` na `punkOuter` (um ponteiro para o `IUnknown`) do agregador de subtipo de projeto mais externo.  

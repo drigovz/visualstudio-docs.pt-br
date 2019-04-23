@@ -14,12 +14,12 @@ caps.latest.revision: 6
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 010f9b7b0d77bca8bd264ab8a3561743c616dc1f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 52d978472f057359cb2b1e0375f2d7ba524d1925
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926479"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101425"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspecione as propriedades XAML durante a depuração
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Você pode obter uma exibição em tempo real de seu código XAML em execução 
 ## <a name="looking-at-elements-in-the-live-visual-tree"></a>Examinando os elementos na árvore Visual  
  Vamos começar com um aplicativo muito simples do WPF que tem uma exibição de lista e um botão. Sempre que você clica no botão, o outro item é adicionado à lista. Itens pares são coloridos em cinza e itens ímpares são coloridos de amarelos.  
   
- Criar um novo aplicativo do WPF em C# (arquivo / novo / projeto, em seguida, selecione C# e localizar o aplicativo do WPF). Denomine **TestXAML**.  
+ Criar um novo aplicativo do WPF em C# (arquivo / novo / projeto, em seguida, selecione c# e localizar o aplicativo do WPF). Denomine **TestXAML**.  
   
  Altere o MainWindow. XAML para o seguinte:  
   
@@ -103,10 +103,10 @@ private void button_Click(object sender, RoutedEventArgs e)
 ## <a name="using-xaml-tools-with-running-applications"></a>Usando ferramentas XAML com aplicativos em execução  
  Você pode usar essas ferramentas XAML, mesmo quando você não tiver o código-fonte. Quando você anexa a um aplicativo XAML em execução, você pode usar o **Live Visual Tree** nos elementos da interface do usuário de aplicativo muito. Aqui está um exemplo, com o mesmo aplicativo de teste do WPF usado anteriormente.  
   
-1.  Iniciar o **TestXaml** aplicativo na configuração de versão. Você não pode anexar a um processo que está sendo executado em um **depurar** configuração.  
+1. Iniciar o **TestXaml** aplicativo na configuração de versão. Você não pode anexar a um processo que está sendo executado em um **depurar** configuração.  
   
-2.  Abra uma segunda instância do Visual Studio e clique em **depurar / anexar ao processo**. Encontre **TestXaml.exe** na lista de processos disponíveis e clique em **Attach**.  
+2. Abra uma segunda instância do Visual Studio e clique em **depurar / anexar ao processo**. Encontre **TestXaml.exe** na lista de processos disponíveis e clique em **Attach**.  
   
-3.  O aplicativo começa a ser executado.  
+3. O aplicativo começa a ser executado.  
   
-4.  Na segunda instância do Visual Studio, abra o **Live Visual Tree** (**depurar / Windows / Live Visual Tree**). Você deve ver a **TestXaml** elementos de interface do usuário e você deve ser capaz de manipulá-los como você durante a depuração do aplicativo diretamente.
+4. Na segunda instância do Visual Studio, abra o **Live Visual Tree** (**depurar / Windows / Live Visual Tree**). Você deve ver a **TestXaml** elementos de interface do usuário e você deve ser capaz de manipulá-los como você durante a depuração do aplicativo diretamente.

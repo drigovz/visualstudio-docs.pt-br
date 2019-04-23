@@ -22,12 +22,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b12509de2e2ba536d9d54d11a41924d86bf5667
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2d979b53f4bd5962a01fa5eb1b77cc7c81c68a4a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927528"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102413"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>Erro: Não é possível intervir no servidor automaticamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,9 +40,9 @@ O erro é:
   
  Possíveis causas:  
   
--   O arquivo web.config do aplicativo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] não define a depuração como “true” em (confira [Modo de depuração em aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)).  
+- O arquivo web.config do aplicativo [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] não define a depuração como “true” em (confira [Modo de depuração em aplicativos ASP.NET](../debugger/how-to-enable-debugging-for-aspnet-applications.md)).  
   
--   Uma versão do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] foi instalada depois que o Visual Studio foi instalado. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] deve ser instalado antes do Visual Studio. Para corrigir esse problema, use o Windows **painel de controle**, **programas e recursos** para reparar a instalação do Visual Studio.  
+- Uma versão do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] foi instalada depois que o Visual Studio foi instalado. [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] deve ser instalado antes do Visual Studio. Para corrigir esse problema, use o Windows **painel de controle**, **programas e recursos** para reparar a instalação do Visual Studio.  
   
 ## <a name="see-also"></a>Consulte também  
  [Solução de problemas e erros de depuração remota](../debugger/remote-debugging-errors-and-troubleshooting.md)   

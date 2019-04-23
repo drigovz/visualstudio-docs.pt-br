@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc3619136b103230efae183b49d4c7d3ba00880d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2e31fc094b777b328347bdcd783b69f1539f246
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924248"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102192"
 ---
 # <a name="how-to-start-and-stop-the-message-log-display"></a>Como: Iniciar e parar a exibição do log de mensagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,8 +27,8 @@ Quando um [exibição de mensagens](../debugger/messages-view.md) janela está a
   
 ### <a name="to-start-the-message-log-display"></a>Para iniciar a exibição do log de mensagem  
   
-1.  Dos **mensagens** menu, escolha **Iniciar registro**.  
+1. Dos **mensagens** menu, escolha **Iniciar registro**.  
   
 ### <a name="to-stop-the-message-log-display"></a>Para parar a exibição do log de mensagem  
   
-1.  Dos **mensagens** menu, escolha **parar log**.
+1. Dos **mensagens** menu, escolha **parar log**.

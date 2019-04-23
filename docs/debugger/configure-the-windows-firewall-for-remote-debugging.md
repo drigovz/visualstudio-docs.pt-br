@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fdfb43a00515dff57dd59943043ee0a42dc270f
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.openlocfilehash: ff64735e1711a18bd7c55c6e052fa8579bd12e16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428720"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100348"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>Configurar o Firewall do Windows para depuração remota
 
@@ -102,13 +102,13 @@ Em um computador remoto, as ferramentas de depuração remotas estão em:
 
 1. Selecione **permitem que um aplicativo por meio do Firewall do Windows**.
 
-1.  Se **depurador remoto** ou **depurador remoto do Visual Studio** não aparecer sob **aplicativos e recursos permitidos**, selecione **alterar configurações**e, em seguida, selecione **permitir que o outro aplicativo**.
+1. Se **depurador remoto** ou **depurador remoto do Visual Studio** não aparecer sob **aplicativos e recursos permitidos**, selecione **alterar configurações**e, em seguida, selecione **permitir que o outro aplicativo**.
 
-1.  Se o aplicativo depurador remoto ainda não estiver listado na **adicionar um aplicativo** caixa de diálogo, selecione **procurar**e navegue até  *\<diretório de instalação do Visual Studio\> \\Common7\\IDE\\depurador remoto\\\<x86*, *x64*, ou *Appx* \> , dependendo da arquitetura apropriada para seu aplicativo. Selecione *msvsmon.exe*e, em seguida, selecione **Add**.
+1. Se o aplicativo depurador remoto ainda não estiver listado na **adicionar um aplicativo** caixa de diálogo, selecione **procurar**e navegue até  *\<diretório de instalação do Visual Studio\> \\Common7\\IDE\\depurador remoto\\\<x86*, *x64*, ou *Appx* \> , dependendo da arquitetura apropriada para seu aplicativo. Selecione *msvsmon.exe*e, em seguida, selecione **Add**.
 
-1.  No **aplicativos** lista, selecione o **depurador remoto** que você acabou de adicionar. Selecione **tipos de rede**e, em seguida, selecione um ou mais tipos de rede, incluindo o tipo de rede para a conexão remota.
+1. No **aplicativos** lista, selecione o **depurador remoto** que você acabou de adicionar. Selecione **tipos de rede**e, em seguida, selecione um ou mais tipos de rede, incluindo o tipo de rede para a conexão remota.
 
-1.  Selecione **Add**e, em seguida, selecione **Okey**.
+1. Selecione **Add**e, em seguida, selecione **Okey**.
 
 ## <a name="troubleshooting"></a>Solucionar problemas de conexão de depuração remota
 

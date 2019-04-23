@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f76abaaa1210320c14175be2bb47828b7bd06aa9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 654773f5a5e46960f8c015cc6f731e16332fcdd7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608091"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094314"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer"></a>Como: Adicionar e remover funcionalidades e itens de um pacote usando o Designer de pacote
   Quando você cria uma solução do SharePoint, o Visual Studio adiciona os recursos do SharePoint padrão para o pacote da solução. Antes da implantação final, você pode adicionar e remover itens de projeto do SharePoint e recursos para modificar o pacote do SharePoint.
@@ -52,7 +52,7 @@ ms.locfileid: "56608091"
 
 #### <a name="to-remove-sharepoint-features-with-the-package-designer"></a>Para remover recursos do SharePoint com o designer de pacote
 
-1.  No **itens do pacote** , escolha um item que você deseja remover e, em seguida, escolha o **remover** (<) botão ou escolha o **remover tudo** botão (<<) para remover todos os itens.
+1. No **itens do pacote** , escolha um item que você deseja remover e, em seguida, escolha o **remover** (<) botão ou escolha o **remover tudo** botão (<<) para remover todos os itens.
 
      Os itens do SharePoint aparecem na **itens na solução** lista.
 

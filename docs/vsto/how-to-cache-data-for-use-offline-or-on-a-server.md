@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: bae12ea054c674e14da53fe60879c5466120d0a9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7c53d7bd1264ff21866746796d598b27cfac5984
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56636509"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094535"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Como: Armazenar em cache dados para uso offline ou em um servidor
   Você pode marcar um item de dados sejam armazenados em cache no documento, para que ele esteja disponível offline. Isso também torna possível para os dados do documento ser manipulados por outro código quando o documento é armazenado em um servidor.
@@ -36,28 +36,28 @@ ms.locfileid: "56636509"
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>Os dados em cache no documento usando código
 
-1.  Declarar um campo ou propriedade pública para o item de dados como um membro de uma classe de item de host em seu projeto, como o `ThisDocumen`classe t em um projeto do Word ou o `ThisWorkbook` classe em um projeto do Excel.
+1. Declarar um campo ou propriedade pública para o item de dados como um membro de uma classe de item de host em seu projeto, como o `ThisDocumen`classe t em um projeto do Word ou o `ThisWorkbook` classe em um projeto do Excel.
 
-2.  Aplicar o <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> de atributo para o membro para marcar o item de dados a ser armazenado no cache de dados do documento. O exemplo a seguir se aplica a esse atributo a uma declaração de campo para um <xref:System.Data.DataSet>.
+2. Aplicar o <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> de atributo para o membro para marcar o item de dados a ser armazenado no cache de dados do documento. O exemplo a seguir se aplica a esse atributo a uma declaração de campo para um <xref:System.Data.DataSet>.
 
      [!code-csharp[Trin_VstcoreDataExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#11)]
      [!code-vb[Trin_VstcoreDataExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#11)]
 
-3.  Adicione código para criar uma instância do item de dados e, se aplicável, carregá-los do banco de dados.
+3. Adicione código para criar uma instância do item de dados e, se aplicável, carregá-los do banco de dados.
 
      O item de dados é carregado apenas quando ele é criado pela primeira vez; Depois disso, o cache permanece com o documento e você deve escrever outro código para atualizá-lo.
 
 ### <a name="to-cache-a-dataset-in-the-document-by-using-the-properties-window"></a>Para armazenar em cache um conjunto de dados do documento usando a janela de propriedades
 
-1.  Adicionar o conjunto de dados ao projeto usando as ferramentas no designer do Visual Studio, por exemplo, adicionando uma fonte de dados ao seu projeto usando o **fontes de dados** janela.
+1. Adicionar o conjunto de dados ao projeto usando as ferramentas no designer do Visual Studio, por exemplo, adicionando uma fonte de dados ao seu projeto usando o **fontes de dados** janela.
 
-2.  Crie uma instância do conjunto de dados se você tiver um e selecione a instância no designer.
+2. Crie uma instância do conjunto de dados se você tiver um e selecione a instância no designer.
 
-3.  No **propriedades** janela, defina as **CacheInDocument** propriedade a ser **verdadeiro**.
+3. No **propriedades** janela, defina as **CacheInDocument** propriedade a ser **verdadeiro**.
 
      Para obter mais informações, consulte [propriedades em projetos do Office](../vsto/properties-in-office-projects.md).
 
-4.  No **propriedades** janela, defina as **modificadores** propriedade a ser **público** (por padrão, é **interno**).
+4. No **propriedades** janela, defina as **modificadores** propriedade a ser **público** (por padrão, é **interno**).
 
 ## <a name="see-also"></a>Consulte também
 - [Dados de cache](../vsto/caching-data.md)

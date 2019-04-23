@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fe7bbce4ac214d3b18b27f610094ee31ecc2a97
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: de690ea6b077ea0c0dc7c6b65f34c68c95e41081
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57867346"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101438"
 ---
 # <a name="visual-studio-sdk"></a>SDK do Visual Studio
 O SDK do Visual Studio ajuda você a estender os recursos do Visual Studio ou integrar novos recursos no Visual Studio. Você pode distribuir suas extensões para outros usuários, bem como o Visual Studio Marketplace. Seguem algumas das maneiras em que você pode estender o Visual Studio:
@@ -67,11 +67,11 @@ O SDK do Visual Studio ajuda você a estender os recursos do Visual Studio ou in
 
  Você pode encontrar mais informações na [no blog do VSX Arcana](https://blogs.msdn.microsoft.com/vsx/) e uma série de blogs escritos por MVPs da Microsoft:
 
--   [Extensões do Visual Studio favoritas](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)
+- [Extensões do Visual Studio favoritas](http://geekswithblogs.net/sdorman/archive/2014/10/05/favorite-visual-studio-extensions.aspx)
 
--   [Extensibilidade do Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)
+- [Extensibilidade do Visual Studio](http://www.visualstudioextensibility.com/overview/vs/)
 
--   [Estendendo o Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
+- [Estendendo o Visual Studio](http://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
 ## <a name="see-also"></a>Consulte também
 - [Criar uma extensão com um comando de menu](../extensibility/creating-an-extension-with-a-menu-command.md)

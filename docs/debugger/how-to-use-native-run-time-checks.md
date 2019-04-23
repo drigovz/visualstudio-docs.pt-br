@@ -1,5 +1,5 @@
 ---
-title: 'Como: usar verificações de tempo de execução nativas | Microsoft Docs'
+title: 'Como: Usar verificações de tempo de execução nativas | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -37,15 +37,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1979757aa249569ddf5ce2f83f2e457e5066cee0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 4ccf0fea80ddfcc7db0921512391f5063a8f2dad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712496"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100203"
 ---
-# <a name="how-to-use-native-run-time-checks"></a>Como usar verificações de tempo de execução nativas
-No Visual C++, você pode usar nativos [runtime_checks](/cpp/preprocessor/runtime-checks) para capturar erros comuns de tempo de execução, como:
+# <a name="how-to-use-native-run-time-checks"></a>Como: Usar verificações de tempo de execução nativas
+No Visual C++, você pode usar nativo [runtime_checks](/cpp/preprocessor/runtime-checks) para capturar erros comuns de tempo de execução, como:
 
 - Dano do ponteiro de pilha.
 
@@ -71,11 +71,11 @@ No Visual C++, você pode usar nativos [runtime_checks](/cpp/preprocessor/runtim
 
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>Para habilitar as verificações de tempo de execução nativas em uma compilação de depuração
 
--   Use o **/RTC** opção e vincule com a versão de depuração de uma biblioteca de tempo de execução do C (/ MDd, por exemplo).
+- Use o **/RTC** opção e vincule com a versão de depuração de uma biblioteca de tempo de execução do C (/ MDd, por exemplo).
 
 ### <a name="to-modify-native-run-time-check-behavior"></a>Para modificar o comportamento nativo de verificação de tempo de execução
 
--   Use o pragma `runtime_checks`.
+- Use o pragma `runtime_checks`.
 
 ## <a name="see-also"></a>Consulte também
 - [Depurando no Visual Studio](../debugger/index.md)

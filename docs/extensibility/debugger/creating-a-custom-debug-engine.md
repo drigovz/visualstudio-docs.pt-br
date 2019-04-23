@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5273270905c99b565fe4fd455e9c5c505af9c878
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 67a58ab1bf508ba1b2edc7117412638de6c2231a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711092"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099540"
 ---
 # <a name="create-a-custom-debug-engine"></a>Criar um mecanismo de depuração personalizado
 Um mecanismo de depuração (DES) é um componente que permite a depuração de arquiteturas de tempo de execução específicas. Normalmente, há apenas uma implementação DE cada ambiente de tempo de execução.
@@ -29,15 +29,15 @@ Um mecanismo de depuração (DES) é um componente que permite a depuração de 
 
  Criando a DE consiste as seguintes etapas:
 
-1.  Registrar a DE com o Visual Studio
+1. Registrar a DE com o Visual Studio
 
-2.  Habilitar um programa a ser depurado
+2. Habilitar um programa a ser depurado
 
-3.  Implementar a avaliação de controle e o estado de execução
+3. Implementar a avaliação de controle e o estado de execução
 
-4.  Enviar eventos
+4. Enviar eventos
 
-5.  Configurar o encerramento e desanexação
+5. Configurar o encerramento e desanexação
 
 ## <a name="in-this-section"></a>Nesta seção
  [Registrar um mecanismo de depuração personalizado](../../extensibility/debugger/registering-a-custom-debug-engine.md) explica as etapas necessárias para registrar um mecanismo de depuração com o Visual Studio para que ele pode ser usado.
