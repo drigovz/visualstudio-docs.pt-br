@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1edc2182b475fca2cb641a2b7598ea5164db368d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 3a25411449c1b13b12f05819061847c252a76c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094080"
 ---
 # <a name="bc-texture-compression-variant"></a>Variante de compressão de textura BC
 Habilita a compactação do bloco em texturas cujo formato de pixel é uma variação de B8G8R8X8, B8G8R8A8 ou R8G8B8A8.
@@ -28,13 +28,13 @@ Habilita a compactação do bloco em texturas cujo formato de pixel é uma varia
 
 - O objeto `D3D11_TEXTURE2D_DESC` apresentado a `pDesc` descreve um recurso do sombreador inalterável, ou seja:
 
-  -   O membro BindFlags tem apenas o sinalizador D3D11_BIND_SHADER_RESOURCE definido.
+  - O membro BindFlags tem apenas o sinalizador D3D11_BIND_SHADER_RESOURCE definido.
 
-  -   O membro Uso está definido como D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.
+  - O membro Uso está definido como D3D11_USAGE_DEFAULT ou D3D11_USAGE_IMMUTABLE.
 
-  -   O membro CPUAccessFlags está definido como 0 (sem acesso à CPU).
+  - O membro CPUAccessFlags está definido como 0 (sem acesso à CPU).
 
-  -   O membro SamplerDesc tem seu membro Count definido como 1 (sem MSAA (suavização de amostra múltipla)).
+  - O membro SamplerDesc tem seu membro Count definido como 1 (sem MSAA (suavização de amostra múltipla)).
 
 - Os dados iniciais são fornecidos para a chamada de `CreateTexture2D`.
 

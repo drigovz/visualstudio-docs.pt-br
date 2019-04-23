@@ -14,12 +14,12 @@ ms.assetid: c64a9bf0-9bf8-45c3-8fa2-306fa6cab66a
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9d8b08dfe812245a21160fa2f16b4c94728785ae
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 17da1ff036227b50e507fd564618c4f53cf430c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928341"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116375"
 ---
 # <a name="shell-isolated-or-integrated"></a>Shell (isolado ou integrado)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Você pode criar seu próprio aplicativo com base no Visual Studio no modo integ
 >  Se você coletar dados de uso separados de seus clientes por meio de seu aplicativo, você deve fornecer o aviso apropriado para usuários do seu aplicativo do qual você coleta.  Quando você distribui o software de shell isolado ou integrado como parte do seu aplicativo, de acordo com a licença do Visual Studio Software Development Kit, você deve incluir um dos seguintes:  
 > 
 > - o contrato de licença de usuário final como parte da sua licença do aplicativo  
->   -   seus próprios termos de licença que exige que os clientes aceitem termos que protegem o Visual Studio integrado ou isolado shell pelo menos a quantidade como os termos de licença de usuário final Microsoft para o software de shell  
+>   - seus próprios termos de licença que exige que os clientes aceitem termos que protegem o Visual Studio integrado ou isolado shell pelo menos a quantidade como os termos de licença de usuário final Microsoft para o software de shell  
   
 ## <a name="additional-resources"></a>Recursos adicionais  
  Para obter mais informações sobre os pacotes redistribuíveis, consulte o [Downloads do Visual Studio Extensibility](http://go.microsoft.com/fwlink/?LinkID=119298) site da Web.  

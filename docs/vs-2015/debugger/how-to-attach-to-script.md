@@ -19,12 +19,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76418913aa725a7858f292d625cb7584b62694e5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ab9388697b4f33b0c523a6239bda911e3ba47a52
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000055"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118247"
 ---
 # <a name="how-to-attach-to-script"></a>Como: Anexar ao script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,21 +37,21 @@ Este tópico explica como anexar manualmente o depurador do Visual Studio para u
   
 2. Na caixa de diálogo **Anexar ao Processo**, procure a lista **Processos Disponíveis** e localize o processo de script ao qual você quer anexar. Você pode identificar processos de script consultando a coluna **Tipo**.  
   
-   1.  Se o processo que você quiser depurar estiver sendo executado em outro computador, você primeiro deverá selecionar o computador remoto. Para obter mais informações, confira [Como: Selecionar um computador remoto](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
+   1. Se o processo que você quiser depurar estiver sendo executado em outro computador, você primeiro deverá selecionar o computador remoto. Para obter mais informações, confira [Como: Selecionar um computador remoto](http://msdn.microsoft.com/4332ba8e-2f0b-4f62-b96a-e762b9f3c3ba).  
   
-   2.  Se o processo estiver sendo executado em uma conta de usuário diferente, marque a caixa de seleção **Mostrar processos de todos os usuários**.  
+   2. Se o processo estiver sendo executado em uma conta de usuário diferente, marque a caixa de seleção **Mostrar processos de todos os usuários**.  
   
-   3.  Se você estiver conectado por meio da **Conexão de Área de Trabalho Remota**, marque a caixa de seleção **Exibir os Processos em Todas as Sessões**.  
+   3. Se você estiver conectado por meio da **Conexão de Área de Trabalho Remota**, marque a caixa de seleção **Exibir os Processos em Todas as Sessões**.  
   
 3. Clique no processo ao qual você quer anexar.  
   
 4. No **anexar** caixa, você deverá ver **código do Script** ou **automático: Código do script**. Se você encontrar algo além disso, siga estas etapas:  
   
-   1.  Clique em **Selecionar**.  
+   1. Clique em **Selecionar**.  
   
-   2.  Na caixa de diálogo **Selecionar Tipo de Código**, clique em **Depurar estes tipos de código** e selecione **Script**.  
+   2. Na caixa de diálogo **Selecionar Tipo de Código**, clique em **Depurar estes tipos de código** e selecione **Script**.  
   
-   3.  Clique em **OK**.  
+   3. Clique em **OK**.  
   
 5. Clique em **Anexar**.  
   

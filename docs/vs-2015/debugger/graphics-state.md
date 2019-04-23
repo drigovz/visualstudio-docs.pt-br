@@ -11,12 +11,12 @@ caps.latest.revision: 5
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 670ad5e28dad02c59ac20dee8cab75a52ae650ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 485969b40fdcedd2ec8835de8d9c9a699aba9e79
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923339"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091779"
 ---
 # <a name="graphics-state"></a>Estado gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,13 +37,13 @@ A janela de estado no diagnóstico de gráficos do Visual Studio ajuda a entende
   
 ##### <a name="to-change-the-state-view"></a>Para alterar a exibição de estado  
   
--   Na janela de estado, no canto superior esquerdo logo abaixo a barra de título, escolha o botão que corresponde ao estilo de exibição de estado que deseja usar.  
+- Na janela de estado, no canto superior esquerdo logo abaixo a barra de título, escolha o botão que corresponde ao estilo de exibição de estado que deseja usar.  
   
-    -   **Mostrar exibição de estado de recebimento de API**  
+    - **Mostrar exibição de estado de recebimento de API**  
   
-    -   **Mostrar exibição de estado lógico**  
+    - **Mostrar exibição de estado lógico**  
   
-    -   **Mostrar modo de exibição de estado fixos**  
+    - **Mostrar modo de exibição de estado fixos**  
   
 > [!IMPORTANT]
 >  Você deve fixar estado na **API mostrar o estado de entrada** ou **estado lógico mostram** modos de exibição para que ele seja exibido no **fixado Mostrar modo de exibição de estado**.  
@@ -67,8 +67,8 @@ A janela de estado no diagnóstico de gráficos do Visual Studio ajuda a entende
   
 ##### <a name="to-pin-state-in-place"></a>Para fixar o estado em vigor  
   
-1.  Na janela de estado, localize o estado em que você está interessado. Você talvez precise expandir o estado de nível superior para localizar os detalhes que você está interessado.  
+1. Na janela de estado, localize o estado em que você está interessado. Você talvez precise expandir o estado de nível superior para localizar os detalhes que você está interessado.  
   
-2.  Coloque o cursor sobre o estado em que você está interessado. Um ícone de alfinete aparece à esquerda do item de estado.  
+2. Coloque o cursor sobre o estado em que você está interessado. Um ícone de alfinete aparece à esquerda do item de estado.  
   
-3.  Escolha o ícone de pino para fixar o item de estado em vigor.
+3. Escolha o ícone de pino para fixar o item de estado em vigor.

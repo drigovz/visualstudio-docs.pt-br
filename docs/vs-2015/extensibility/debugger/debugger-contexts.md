@@ -10,23 +10,23 @@ ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 4227bd8a82df031f04c1ab33761cf9b8520dec7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 771a3cd8ae25173f3033b3a3229e516570f5dedc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926807"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116232"
 ---
 # <a name="debugger-contexts"></a>Contextos de depurador
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 No [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] depuração, o mecanismo de depuração (DES) opera simultaneamente em vários contextos distintos, da seguinte maneira:  
   
--   O contexto de código, que descreve o local atual no fluxo de execução de um programa.  
+- O contexto de código, que descreve o local atual no fluxo de execução de um programa.  
   
--   O contexto de documentação ou posição, que descreve a posição atual dentro de um documento de origem.  
+- O contexto de documentação ou posição, que descreve a posição atual dentro de um documento de origem.  
   
--   O contexto de avaliação de expressão, que descreve o contexto em que a expressão a avaliação será realizada.  
+- O contexto de avaliação de expressão, que descreve o contexto em que a expressão a avaliação será realizada.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Contexto do código](../../extensibility/debugger/code-context.md)  

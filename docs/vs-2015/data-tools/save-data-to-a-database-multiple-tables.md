@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 979c476068afb3f76d4561c4d93a8c02ce4e4187
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: cd19af4bc2533d2bd4e7c21dd49eae53510ae429
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648296"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118208"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvar dados em um banco de dados (várias tabelas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,33 +38,33 @@ Um dos cenários mais comuns no desenvolvimento de aplicativos é exibir dados d
   
  As tarefas ilustradas neste passo a passo incluem:  
   
--   Criando um novo **aplicativo do Windows** projeto.  
+- Criando um novo **aplicativo do Windows** projeto.  
   
--   Criando e configurando uma fonte de dados em seu aplicativo com o [Data Source Configuration Wizard](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
+- Criando e configurando uma fonte de dados em seu aplicativo com o [Data Source Configuration Wizard](http://msdn.microsoft.com/library/c4df7de5-5da0-4064-940c-761dd6d9e28f).  
   
--   Configurando os controles dos itens na [janela fontes de dados](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992). Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+- Configurando os controles dos itens na [janela fontes de dados](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992). Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
--   Criando controles associados a dados arrastando itens da janela **Fontes de Dados** para o formulário.  
+- Criando controles associados a dados arrastando itens da janela **Fontes de Dados** para o formulário.  
   
--   Modificando alguns registros em cada tabela no conjunto de dados.  
+- Modificando alguns registros em cada tabela no conjunto de dados.  
   
--   Modificando o código para enviar os dados atualizados no conjunto de dados de volta ao banco de dados.  
+- Modificando o código para enviar os dados atualizados no conjunto de dados de volta ao banco de dados.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para concluir este passo a passo, você precisará de:  
   
--   Acesso ao banco de dados de exemplo Northwind.
+- Acesso ao banco de dados de exemplo Northwind.
   
 ## <a name="create-the-windows-application"></a>Criar o aplicativo do Windows  
  A primeira etapa é criar uma **aplicativo do Windows**. Atribuir um nome para o projeto é opcional durante esta etapa, mas vamos dar a ele um nome porque estamos planejando salvá-lo posteriormente.  
   
 #### <a name="to-create-the-new-windows-application-project"></a>Para criar o novo projeto de aplicativo do Windows  
   
-1.  Sobre o **arquivo** menu, crie um novo projeto.  
+1. Sobre o **arquivo** menu, crie um novo projeto.  
   
-2.  Nomeie o projeto `UpdateMultipleTablesWalkthrough`.  
+2. Nomeie o projeto `UpdateMultipleTablesWalkthrough`.  
   
-3.  Selecione **aplicativo do Windows**e, em seguida, selecione **Okey**. Para obter mais informações, consulte [aplicativos cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
+3. Selecione **aplicativo do Windows**e, em seguida, selecione **Okey**. Para obter mais informações, consulte [aplicativos cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   
      O projeto **UpdateMultipleTablesWalkthrough** é criado e adicionado ao **Gerenciador de Soluções**.  
   
@@ -73,27 +73,27 @@ Um dos cenários mais comuns no desenvolvimento de aplicativos é exibir dados d
   
 #### <a name="to-create-the-data-source"></a>Para criar a fonte de dados  
   
-1.  Sobre o **dados** menu, selecione**Show Data Sources**.  
+1. Sobre o **dados** menu, selecione**Show Data Sources**.  
   
-2.  No **fontes de dados** janela, selecione**Add New Data Source** para iniciar o **Data Source Configuration Wizard**.  
+2. No **fontes de dados** janela, selecione**Add New Data Source** para iniciar o **Data Source Configuration Wizard**.  
   
-3.  Sobre o **escolher um tipo de fonte de dados**tela, selecione **banco de dados**e, em seguida, selecione **próxima**.  
+3. Sobre o **escolher um tipo de fonte de dados**tela, selecione **banco de dados**e, em seguida, selecione **próxima**.  
   
-4.  Sobre o **escolha sua Conexão de dados**tela faça o seguinte:  
+4. Sobre o **escolha sua Conexão de dados**tela faça o seguinte:  
   
-    -   Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.  
+    - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.  
   
          - ou -  
   
-    -   Selecione **Nova Conexão** para abrir a caixa de diálogo **Adicionar/Modificar Conexão**.  
+    - Selecione **Nova Conexão** para abrir a caixa de diálogo **Adicionar/Modificar Conexão**.  
   
-5.  Se seu banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, selecione **próxima**.  
+5. Se seu banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, selecione **próxima**.  
   
-6.  Sobre o **salvar a cadeia de caracteres de conexão para o arquivo de configuração de aplicativo**, selecione **próxima**.  
+6. Sobre o **salvar a cadeia de caracteres de conexão para o arquivo de configuração de aplicativo**, selecione **próxima**.  
   
-7.  Sobre o **Choose your Database Objects**, expanda o **tabelas** nó.  
+7. Sobre o **Choose your Database Objects**, expanda o **tabelas** nó.  
   
-8.  Selecione o **clientes** e **pedidos** tabelas e, em seguida, selecione **concluir**.  
+8. Selecione o **clientes** e **pedidos** tabelas e, em seguida, selecione **concluir**.  
   
      O **NorthwindDataSet** é adicionado ao projeto e as tabelas são exibidas na janela **Fontes de Dados**.  
   
@@ -102,20 +102,20 @@ Um dos cenários mais comuns no desenvolvimento de aplicativos é exibir dados d
   
 #### <a name="to-set-the-drop-type-for-the-items-in-the-data-sources-window"></a>Definir o tipo de remoção dos itens na Janela Fontes de Dados  
   
-1.  No **fontes de dados** janela, expanda o **clientes** nó.  
+1. No **fontes de dados** janela, expanda o **clientes** nó.  
   
-2.  Sobre o **clientes** nó, selecione **detalhes** na lista de controle para alterar o controle do **clientes** tabela para controles individuais. Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+2. Sobre o **clientes** nó, selecione **detalhes** na lista de controle para alterar o controle do **clientes** tabela para controles individuais. Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
 ## <a name="create-the-data-bound-form"></a>Criar o formulário de associação de dados  
  Você pode criar controles de associação de dados arrastando itens da janela **Fontes de Dados** para um formulário.  
   
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Para criar controles de associação de dados no formulário  
   
-1.  Arraste o nó principal **Clientes** da janela **Fontes de Dados** para **Form1**.  
+1. Arraste o nó principal **Clientes** da janela **Fontes de Dados** para **Form1**.  
   
      Os controles de associação de dados com rótulos descritivos são exibidos no formulário, juntamente com uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) para registros de navegação. Um [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> são exibidos na bandeja de componentes.  
   
-2.  Arraste o nó **Ordens** relacionado da janela **Fontes de Dados** para **Form1**.  
+2. Arraste o nó **Ordens** relacionado da janela **Fontes de Dados** para **Form1**.  
   
     > [!NOTE]
     >  O nó **Ordens** relacionado está localizado abaixo da coluna **Fax** e é um nó filho do nó **Clientes**.  
@@ -130,9 +130,9 @@ Um dos cenários mais comuns no desenvolvimento de aplicativos é exibir dados d
   
 #### <a name="to-add-update-logic-to-the-application"></a>Para adicionar lógica de atualização ao aplicativo  
   
-1.  Selecione o **salve** botão o <xref:System.Windows.Forms.BindingNavigator>. Isso abre o Editor de códigos para o `bindingNavigatorSaveItem_Click` manipulador de eventos.  
+1. Selecione o **salve** botão o <xref:System.Windows.Forms.BindingNavigator>. Isso abre o Editor de códigos para o `bindingNavigatorSaveItem_Click` manipulador de eventos.  
   
-2.  Substitua o código no manipulador de eventos para chamar os métodos `Update` dos TableAdapters relacionados. O código a seguir primeiro cria três tabelas de dados temporárias para armazenar as informações de cada <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState>, <xref:System.Data.DataRowState> e <xref:System.Data.DataRowState>). Em seguida, as atualizações são executadas na ordem correta. O código deve se parecer com o seguinte:  
+2. Substitua o código no manipulador de eventos para chamar os métodos `Update` dos TableAdapters relacionados. O código a seguir primeiro cria três tabelas de dados temporárias para armazenar as informações de cada <xref:System.Data.DataRowState> (<xref:System.Data.DataRowState>, <xref:System.Data.DataRowState> e <xref:System.Data.DataRowState>). Em seguida, as atualizações são executadas na ordem correta. O código deve se parecer com o seguinte:  
   
      [!code-csharp[VbRaddataSaving#10](../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form4.cs#10)]
      [!code-vb[VbRaddataSaving#10](../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form4.vb#10)]  
@@ -141,20 +141,20 @@ Um dos cenários mais comuns no desenvolvimento de aplicativos é exibir dados d
   
 #### <a name="to-test-the-application"></a>Para testar o aplicativo  
   
-1.  Selecione **F5**.  
+1. Selecione **F5**.  
   
-2.  Faça algumas alterações nos dados de um ou mais registros em cada tabela.  
+2. Faça algumas alterações nos dados de um ou mais registros em cada tabela.  
   
-3.  Selecione o botão **Salvar**.  
+3. Selecione o botão **Salvar**.  
   
-4.  Confira os valores no banco de dados para verificar se as alterações foram salvas.  
+4. Confira os valores no banco de dados para verificar se as alterações foram salvas.  
   
 ## <a name="next-steps"></a>Próximas etapas  
  Dependendo dos requisitos do aplicativo, há várias etapas que você talvez queira realizar após criar um formulário de associação de dados em seu aplicativo do Windows. Entre algumas das melhorias que você poderia fazer nessa explicação passo a passo estão:  
   
--   Adicionando funcionalidade de busca ao formulário. Para obter mais informações, confira [Como: Adicionar uma consulta parametrizada para um Windows Forms Application](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
+- Adicionando funcionalidade de busca ao formulário. Para obter mais informações, confira [Como: Adicionar uma consulta parametrizada para um Windows Forms Application](http://msdn.microsoft.com/library/13db4ad3-56b9-4a0b-b3a5-6a4ff84d4416).  
   
--   Editando a fonte de dados para adicionar ou remover objetos de banco de dados. Para obter mais informações, confira [Como: Editar um conjunto de dados](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
+- Editando a fonte de dados para adicionar ou remover objetos de banco de dados. Para obter mais informações, confira [Como: Editar um conjunto de dados](http://msdn.microsoft.com/library/f2dade5f-9c7a-4ddb-96a8-e0a39e50bfd3).  
   
 ## <a name="see-also"></a>Consulte também  
  [Salvar dados de volta no banco de dados](../data-tools/save-data-back-to-the-database.md)

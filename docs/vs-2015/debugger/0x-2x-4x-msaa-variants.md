@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b298beadf6ffd3a59e5cdd44981a63bed1746cf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090012"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Variantes MSAA 0x/2x/4x
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,13 +36,13 @@ Substitui a MSAA (suavização de múltipla amostra) em todos os destinos de ren
   
 - O objeto `D3D11_TEXTURE2D_DESC` transmitido em `pDesc` descreve um destino de renderização; ou seja:  
   
-  -   O membro BindFlags possui o sinalizador D3D11_BIND_TARGET ou D3D11_BIND_DEPTH_STENCIL definido.  
+  - O membro BindFlags possui o sinalizador D3D11_BIND_TARGET ou D3D11_BIND_DEPTH_STENCIL definido.  
   
-  -   O membro Uso está definido como D3D11_USAGE_DEFAULT.  
+  - O membro Uso está definido como D3D11_USAGE_DEFAULT.  
   
-  -   O membro CPUAccessFlags é definido como 0.  
+  - O membro CPUAccessFlags é definido como 0.  
   
-  -   O membro MipLevels é definido como 1.  
+  - O membro MipLevels é definido como 1.  
   
 - O dispositivo oferece suporte à contagem de amostra solicitada (0, 2 ou 4) e à qualidade da amostra (0) para o formato do destino de renderização solicitado (membro D3D11_TEXTURE2D_DESC::Format), como determinado por `ID3D11Device::CheckMultisampleQualityLevels`.  
   

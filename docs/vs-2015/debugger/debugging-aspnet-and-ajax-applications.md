@@ -19,21 +19,21 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1322300992359f386a43c7feef41053611bb866
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2547c9edb501ac8536b06548ab23a5262515ca78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116778"
 ---
 # <a name="debugging-aspnet-and-ajax-applications"></a>Depurando aplicativos ASP.NET e AJAX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Depurar aplicativos Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] é semelhante a depurar o Windows Form ou qualquer outro aplicativo do Windows porque ambos os tipos de aplicativos envolvem controles e eventos. No entanto, também há diferenças básicas entre os dois tipos de aplicativos:  
   
--   Controlar o estado é mais complexo em um aplicativo Web.  
+- Controlar o estado é mais complexo em um aplicativo Web.  
   
--   Em um aplicativo do Windows, o código a ser depurado está na maioria das vezes em um local; em um aplicativo Web, o código pode estar no cliente e no servidor. Embora o código do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] esteja todo no servidor, pode haver também código JavaScript ou código do [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] no cliente.  
+- Em um aplicativo do Windows, o código a ser depurado está na maioria das vezes em um local; em um aplicativo Web, o código pode estar no cliente e no servidor. Embora o código do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] esteja todo no servidor, pode haver também código JavaScript ou código do [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] no cliente.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Preparando para depurar ASP.NET](../debugger/preparing-to-debug-aspnet.md)  

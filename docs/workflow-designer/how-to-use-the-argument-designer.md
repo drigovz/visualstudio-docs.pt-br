@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb4cbcb6b1310e6552dfd757a4b6347212f99cfc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2f32228de6486c7e2093175bcd57d698a881ab7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941173"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115790"
 ---
 # <a name="how-to-use-the-argument-designer"></a>Como: Usar o designer de argumento
 
@@ -24,11 +24,11 @@ Em comparação com versões anteriores do .NET Framework, o designer do argumen
 
 ## <a name="to-create-a-new-argument"></a>Para criar um novo argumento
 
-1.  Abra uma solução de fluxo de trabalho ou atividade no Visual Studio.
+1. Abra uma solução de fluxo de trabalho ou atividade no Visual Studio.
 
-2.  Abra o designer dos argumentos clicando o **argumentos** botão no canto inferior esquerdo da tela de design. O designer dos argumentos aparece.
+2. Abra o designer dos argumentos clicando o **argumentos** botão no canto inferior esquerdo da tela de design. O designer dos argumentos aparece.
 
-3.  Clique na linha vazia rotulada **argumento criar**. Isso adicionará uma nova linha com um novo argumento usando os seguintes valores padrão: argumentx para o **nome** onde x é um inteiro com um valor inicial de 1, que é incrementado automaticamente para criar nomes exclusivos de argumento, **em**  para o **direção**, e **cadeia de caracteres** para o **tipo de argumento**. Nenhum valor é adicionado para **valor padrão**. Você pode alterar esses valores a qualquer momento durante o processo de design de fluxo de trabalho.
+3. Clique na linha vazia rotulada **argumento criar**. Isso adicionará uma nova linha com um novo argumento usando os seguintes valores padrão: argumentx para o **nome** onde x é um inteiro com um valor inicial de 1, que é incrementado automaticamente para criar nomes exclusivos de argumento, **em**  para o **direção**, e **cadeia de caracteres** para o **tipo de argumento**. Nenhum valor é adicionado para **valor padrão**. Você pode alterar esses valores a qualquer momento durante o processo de design de fluxo de trabalho.
 
     > [!NOTE]
     > Para excluir um argumento, selecione o argumento clicando nele e, em seguida, pressione a **excluir** chave.

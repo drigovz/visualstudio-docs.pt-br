@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ca4c3e5016377758e8910c15bf992e629778c0e9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000030"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116161"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Depuração Just-In-Time no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ As ações que você deve executar quando você vir o Visual Studio Just-in-Time
 
 - Você deve ter [Visual Studio instalado](https://visualstudio.microsoft.com/vs/older-downloads/) para exibir as informações detalhadas sobre o erro e tente depurá-lo. Ver [JIT usando](#BKMK_Using_JIT) para obter instruções detalhadas. Se você não pode resolver o erro e corrigir o aplicativo, entre em contato com o proprietário do aplicativo para resolver o erro.
 
-##  <a name="BKMK_Enabling"></a> Habilitar ou desabilitar Just-In-Time a depuração
+## <a name="BKMK_Enabling"></a> Habilitar ou desabilitar Just-In-Time a depuração
  Você pode habilitar ou desabilitar a depuração do Visual Studio Just-In-Time **Ferramentas / opções** caixa de diálogo.
 
 #### <a name="to-enable-or-disable-just-in-time-debugging"></a>Para habilitar ou desabilitar a depuração Just-In-Time
@@ -73,36 +73,36 @@ As ações que você deve executar quando você vir o Visual Studio Just-in-Time
 
 #### <a name="to-disable-just-in-time-debugging-by-editing-the-registry"></a>Para desabilitar a depuração Just-In-Time editando o Registro
 
-1.  Sobre o **iniciar** menu, procure e execute `regedit.exe`
+1. Sobre o **iniciar** menu, procure e execute `regedit.exe`
 
-2.  No **Editor do registro** janela, localize e exclua as entradas do registro de acompanhamento:
+2. No **Editor do registro** janela, localize e exclua as entradas do registro de acompanhamento:
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger
 
-3.  Se o computador estiver executando um sistema operacional de 64 bits, exclua as seguintes entradas de registro também:
+3. Se o computador estiver executando um sistema operacional de 64 bits, exclua as seguintes entradas de registro também:
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger
 
-    -   HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger
+    - HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger
 
-4.  Tenha cuidado para não excluir ou não alterar acidentalmente quaisquer outras chaves do Registro.
+4. Tenha cuidado para não excluir ou não alterar acidentalmente quaisquer outras chaves do Registro.
 
-5.  Fechar o **Editor do registro** janela.
+5. Fechar o **Editor do registro** janela.
 
 > [!NOTE]
 >  Se você está tentando desabilitar depuração para um aplicativo do lado do servidor Just-In-Time e essas etapas não resolverem o problema, desative a depuração do lado do servidor nas configurações de aplicativo do IIS e tente novamente.
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Para habilitar a depuração Just-In-Time de um formulário do Windows
 
-1.  Por padrão, os aplicativos do Windows Forms têm um manipulador de exceção de nível superior que permite que o programa continue a executar se puder recuperar. Por exemplo, se seu aplicativo de formulários do Windows gera uma exceção sem tratamento, você verá uma caixa de diálogo semelhante à seguinte:
+1. Por padrão, os aplicativos do Windows Forms têm um manipulador de exceção de nível superior que permite que o programa continue a executar se puder recuperar. Por exemplo, se seu aplicativo de formulários do Windows gera uma exceção sem tratamento, você verá uma caixa de diálogo semelhante à seguinte:
 
      ![WindowsFormsUnhandledException](../debugger/media/windowsformsunhandledexception.png "WindowsFormsUnhandledException")
 
      Para habilitar Just-In-Time a depuração de um aplicativo do Windows Forms, você deve executar as seguintes etapas adicionais:
 
-2.  Defina a `jitDebugging` de valor para `true` na `system.windows.form` seção Machine. config ou  *\<nome do aplicativo >*. arquivo exe. config:
+2. Defina a `jitDebugging` de valor para `true` na `system.windows.form` seção Machine. config ou  *\<nome do aplicativo >*. arquivo exe. config:
 
     ```
     <configuration>
@@ -110,7 +110,7 @@ As ações que você deve executar quando você vir o Visual Studio Just-in-Time
     </configuration>
     ```
 
-3.  No aplicativo C++ do Windows Form, você também deve definir `DebuggableAttribute` em um arquivo .config ou no seu código. Se você compilar com [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) e sem [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), o compilador definirá esse atributo para você. Se você desejar depurar uma compilação de liberação não otimizada, no entanto, deverá definir isso por conta própria. Você pode fazer isso adicionando a seguinte linha ao arquivo de AssemblyInfo.cpp do seu aplicativo:
+3. No aplicativo C++ do Windows Form, você também deve definir `DebuggableAttribute` em um arquivo .config ou no seu código. Se você compilar com [/Zi](http://msdn.microsoft.com/library/ce9fa7e1-0c9b-47e3-98ea-26d1a16257c8) e sem [/Og](http://msdn.microsoft.com/library/d10630cc-b9cf-4e97-bde3-8d7ee79e9435), o compilador definirá esse atributo para você. Se você desejar depurar uma compilação de liberação não otimizada, no entanto, deverá definir isso por conta própria. Você pode fazer isso adicionando a seguinte linha ao arquivo de AssemblyInfo.cpp do seu aplicativo:
 
     ```
     [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -125,9 +125,9 @@ As ações que você deve executar quando você vir o Visual Studio Just-in-Time
 
  Quando você instala o Visual Studio, a depuração Just-In-Time é habilitada por padrão.
 
- Para os fins desta seção, criaremos um aplicativo de console C# no Visual Studio gera um <xref:System.NullReferenceException>.
+ Para os fins desta seção, criaremos um aplicativo de console c# no Visual Studio gera um <xref:System.NullReferenceException>.
 
- No Visual Studio, crie um aplicativo de console C# (**arquivo / novo / projeto / Visual C# / aplicativo de Console**) denominada **ThrowsNullException**. Para obter mais informações sobre como criar projetos no Visual Studio, consulte [passo a passo: Criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
+ No Visual Studio, crie um aplicativo de console c# (**arquivo / novo / projeto / Visual c# / aplicativo de Console**) denominada **ThrowsNullException**. Para obter mais informações sobre como criar projetos no Visual Studio, consulte [passo a passo: Criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md).
 
  Quando o projeto é aberto no Visual Studio, abra o arquivo Program.cs. Substitua o método Main () com o código a seguir, que imprime uma linha para o console e, em seguida, lança uma NullReferenceException:
 
@@ -144,7 +144,7 @@ static void Main(string[] args)
 
  Compile a solução (no Visual Studio, escolha **construir / recompilar solução**). Você pode escolher a depuração ou a configuração de versão. Para obter mais informações sobre configurações de build, consulte [Noções básicas sobre configurações de build](../ide/understanding-build-configurations.md).
 
- O processo de compilação cria um executável ThrowsNullException.exe. Você pode encontrá-lo na pasta em que você criou o projeto do C#: **...\ThrowsNullException\ThrowsNullException\bin\Debug** ou **...\ThrowsNullException\ThrowsNullException\bin\Release**.
+ O processo de compilação cria um executável ThrowsNullException.exe. Você pode encontrá-lo na pasta em que você criou o projeto do c#: **...\ThrowsNullException\ThrowsNullException\bin\Debug** ou **...\ThrowsNullException\ThrowsNullException\bin\Release**.
 
  Clique duas vezes o ThrowsNullException.exe. Você deverá ver uma janela de comando como este:
 
@@ -178,19 +178,19 @@ static void Main(string[] args)
 
  Você pode ver as seguintes mensagens de erro que estão associadas à depuração Just-In-Time.
 
--   **Não é possível se anexar ao processo de travamento. O programa especificado não é um programa do Windows ou do MS-DOS.**
+- **Não é possível se anexar ao processo de travamento. O programa especificado não é um programa do Windows ou do MS-DOS.**
 
      Esse erro ocorre quando você tenta anexar a um processo em execução como outro usuário.
 
      Para contornar esse problema, inicie o Visual Studio, abra o **anexar ao processo** caixa de diálogo a **Debug** menu e localize o processo que você deseja depurar no **processos disponíveis**lista. Se você não souber o nome do processo, examine os **depurador do Visual Studio Just-in-** caixa de diálogo e anote a ID de processo. Selecione o processo na **processos disponíveis** lista e clique em **Attach**. No **depurador do Visual Studio Just-in-** caixa de diálogo, clique em **não** para descartar a caixa de diálogo.
 
--   **Não foi possível iniciar o depurador porque não há usuário conectado.**
+- **Não foi possível iniciar o depurador porque não há usuário conectado.**
 
      Este erro ocorre quando a depuração Just-In-Time tenta iniciar o Visual Studio em um computador no qual não há nenhum usuário conectado ao console. Como nenhum usuário está conectado, não há sessão de usuário para exibir a caixa de diálogo Depuração Just-In-Time.
 
      Para corrigir esse problema, conecte-se ao computador.
 
--   **Classe não registrada.**
+- **Classe não registrada.**
 
      Este erro indica que o depurador tentou criar uma classe COM não registrada, provavelmente devido a um problema de instalação.
 

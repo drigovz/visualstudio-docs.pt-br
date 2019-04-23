@@ -11,12 +11,12 @@ ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 714e4a24ae6dc2c345b97bbd6e080b0c987f65f7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6cef18951a6ac5494f74c150c4251bafd9597686
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926610"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117922"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Suporte para a barra de navegação em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ A barra de navegação na parte superior do editor de modo de exibição exibe o
  Quando o cursor é movido, o <xref:Microsoft.VisualStudio.Package.LanguageService.OnIdle%2A> chamadas de método a <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> método. A base <xref:Microsoft.VisualStudio.Package.LanguageService.OnCaretMoved%2A> chamadas de método de <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> método na sua <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars> classe para atualizar o estado da barra de navegação. Você passa um conjunto de <xref:Microsoft.VisualStudio.Package.DropDownMember> objetos para esse método. Cada objeto representa uma entrada na lista suspensa.  
   
 ## <a name="the-contents-of-the-navigation-bar"></a>O conteúdo da barra de navegação  
- A barra de navegação geralmente contém uma lista de tipos e uma lista de membros. A lista de tipos inclui todos os tipos disponíveis no arquivo de origem atual. Os nomes de tipo incluem as informações do namespace completo. Este é um exemplo de código em C# com dois tipos:  
+ A barra de navegação geralmente contém uma lista de tipos e uma lista de membros. A lista de tipos inclui todos os tipos disponíveis no arquivo de origem atual. Os nomes de tipo incluem as informações do namespace completo. Este é um exemplo de código em c# com dois tipos:  
   
 ```csharp  
 namespace TestLanguagePackage  
@@ -70,24 +70,24 @@ namespace TestLanguagePackage
   
   Uma implementação do <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> método normalmente executa as seguintes etapas:  
   
-1.  Obter uma lista de declarações atuais para o arquivo de origem.  
+1. Obter uma lista de declarações atuais para o arquivo de origem.  
   
      Há várias maneiras para preencher as listas. Uma abordagem é criar um método personalizado em sua versão dos <xref:Microsoft.VisualStudio.Package.LanguageService> classe que chama o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método com um motivo de análise personalizada que retorna uma lista de todas as declarações. Outra abordagem seria chamar o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método diretamente do <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> método com o motivo de análise personalizada. Uma terceira abordagem seria armazenar em cache as declarações na <xref:Microsoft.VisualStudio.Package.AuthoringScope> classe retornado pela última operação de análise completa na <xref:Microsoft.VisualStudio.Package.LanguageService> de classe e recuperá-lo do <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> método.  
   
-2.  Preencher ou atualizar a lista de tipos.  
+2. Preencher ou atualizar a lista de tipos.  
   
      Talvez o conteúdo da lista de tipos para ser atualizado quando a origem foi alterado ou se você tiver optado por alterar o estilo do texto dos tipos com base na posição atual do cursor. Observe que essa posição é passada para o <xref:Microsoft.VisualStudio.Package.TypeAndMemberDropdownBars.OnSynchronizeDropdowns%2A> método.  
   
-3.  Determine o tipo para selecionar na lista de tipos com base na posição atual do cursor.  
+3. Determine o tipo para selecionar na lista de tipos com base na posição atual do cursor.  
   
      Você pode pesquisar as declarações que foram obtidas na etapa 1 para localizar o tipo que inclui a posição atual do cursor e, em seguida, pesquise a lista de tipos para esse tipo determinar seu índice na lista de tipos.  
   
-4.  Preencher ou atualizar a lista de membros com base no tipo selecionado.  
+4. Preencher ou atualizar a lista de membros com base no tipo selecionado.  
   
      A lista de membros reflete o que é exibido no momento, o **membros** lista suspensa. O conteúdo da lista de membros talvez precise ser atualizado se a origem foi alterado ou se você estiver exibindo somente os membros do tipo selecionado e o tipo selecionado foi alterado. Se você optar por exibir todos os membros no arquivo de origem, o estilo do texto de cada membro na lista precisa ser atualizado se o tipo selecionado no momento foi alterado.  
   
-5.  Determine o membro para selecionar na lista de membros com base na posição atual do cursor.  
+5. Determine o membro para selecionar na lista de membros com base na posição atual do cursor.  
   
      Pesquisar as declarações que foram obtidas na etapa 1 para o membro que contém a posição atual do cursor, em seguida, pesquise a lista de membros para esse membro determinar seu índice na lista de membros.  
   
-6.  Retornar `true` se todas as alterações foram feitas para as listas ou as seleções em qualquer uma das listas.
+6. Retornar `true` se todas as alterações foram feitas para as listas ou as seleções em qualquer uma das listas.

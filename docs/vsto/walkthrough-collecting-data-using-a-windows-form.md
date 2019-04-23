@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b3e8a5c2cb1e1e58343fa785699ebed4a91ead19
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: efb36d9ee21d5769c7ddd35461e09934b87d5c33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629957"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116121"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>Passo a passo: Coletar dados usando um formulário do Windows
   Este passo a passo demonstra como abrir um formulário do Windows de uma personalização no nível de documento do Microsoft Office Excel, coletar informações do usuário e grave essas informações em uma célula de planilha.
@@ -32,9 +32,9 @@ ms.locfileid: "56629957"
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
 > [!NOTE]
 >  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -44,7 +44,7 @@ ms.locfileid: "56629957"
 
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto
 
-1.  Criar um projeto de pasta de trabalho do Excel com o nome **WinFormInput**e selecione **criar um novo documento** no assistente. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Criar um projeto de pasta de trabalho do Excel com o nome **WinFormInput**e selecione **criar um novo documento** no assistente. Para obter mais informações, consulte [como: criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio abre a nova pasta de trabalho do Excel no designer e adiciona o **WinFormInput** projeto ao **Gerenciador de soluções**.
 
@@ -52,13 +52,13 @@ ms.locfileid: "56629957"
 
 ### <a name="to-add-a-named-range-to-sheet1"></a>Para adicionar um intervalo nomeado para Sheet1
 
-1.  Selecione a célula **A1** em `Sheet1`.
+1. Selecione a célula **A1** em `Sheet1`.
 
-2.  No **nome** , digite **formInput**.
+2. No **nome** , digite **formInput**.
 
      O **nome** caixa está localizada à esquerda da barra de fórmulas, logo acima de coluna **um** da planilha.
 
-3.  Pressione **ENTER**.
+3. Pressione **ENTER**.
 
      Um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle é adicionado à célula **A1**. Não há nenhuma indicação visível na planilha, mas **formInput** aparece na **nome** caixa (logo acima a planilha no lado esquerdo) e, na **propriedades** janela quando célula **A1** está selecionado.
 
@@ -107,11 +107,11 @@ ms.locfileid: "56629957"
 
 ### <a name="to-send-information-to-the-worksheet"></a>Para enviar informações para a planilha
 
-1.  Clique com botão direito **GetInputString** na **Gerenciador de soluções**e, em seguida, clique em **View Designer**.
+1. Clique com botão direito **GetInputString** na **Gerenciador de soluções**e, em seguida, clique em **View Designer**.
 
-2.  Clique duas vezes no botão para abrir o arquivo de código com o botão <xref:System.Windows.Forms.Control.Click> adicionado do manipulador de eventos.
+2. Clique duas vezes no botão para abrir o arquivo de código com o botão <xref:System.Windows.Forms.Control.Click> adicionado do manipulador de eventos.
 
-3.  Adicione código ao manipulador de eventos para obter a entrada da caixa de texto, enviá-lo para a função `WriteStringToCell`e, em seguida, feche o formulário.
+3. Adicione código ao manipulador de eventos para obter a entrada da caixa de texto, enviá-lo para a função `WriteStringToCell`e, em seguida, feche o formulário.
 
      [!code-csharp[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/CSharp/WinFormInputCS/GetInputString.cs#3)]
      [!code-vb[Trin_VstcoreProgrammingCollectingData#3](../vsto/codesnippet/VisualBasic/WinFormInput/GetInputString.vb#3)]
@@ -121,20 +121,20 @@ ms.locfileid: "56629957"
 
 ### <a name="to-test-your-workbook"></a>Para testar a sua pasta de trabalho
 
-1.  Pressione **F5** para executar o projeto.
+1. Pressione **F5** para executar o projeto.
 
-2.  Confirme que o formulário do Windows é exibido.
+2. Confirme que o formulário do Windows é exibido.
 
-3.  Tipo de **Olá, mundo** na caixa de texto e depois clique em **Okey**.
+3. Tipo de **Olá, mundo** na caixa de texto e depois clique em **Okey**.
 
-4.  Confirme **Olá, mundo** aparece na célula **A1** da planilha.
+4. Confirme **Olá, mundo** aparece na célula **A1** da planilha.
 
 ## <a name="next-steps"></a>Próximas etapas
  Este passo a passo mostra as Noções básicas de mostrando um formulário do Windows e transmitindo dados para uma planilha. Outras tarefas que você talvez queira realizar incluem:
 
--   Use controles de formulários do Windows em uma pasta de trabalho do Excel ou um documento do Word. Para obter mais informações, consulte [controles de formulários do Windows de visão geral de documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
+- Use controles de formulários do Windows em uma pasta de trabalho do Excel ou um documento do Word. Para obter mais informações, consulte [controles de formulários do Windows de visão geral de documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
--   Modificar a interface do usuário de um aplicativo do Microsoft Office de uma personalização no nível de documento ou um suplemento do VSTO. Para obter mais informações, consulte [personalização da interface do usuário do Office](../vsto/office-ui-customization.md).
+- Modificar a interface do usuário de um aplicativo do Microsoft Office de uma personalização no nível de documento ou um suplemento do VSTO. Para obter mais informações, consulte [personalização da interface do usuário do Office](../vsto/office-ui-customization.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)

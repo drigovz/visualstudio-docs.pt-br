@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3074e019a0b18880cd2188868ef86b7ed2b1fb76
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 9b9a88aff9cd587f695ace56c44eaf9c8fcb8875
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616125"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117155"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Como: Abrir soluções do Office sem executar código
   Uma solução do Microsoft Office criada com extensões de código gerenciado é executado, mesmo se a configuração de segurança no aplicativo do Office do usuário final é definida como alta. Isso ocorre porque a segurança de código do assembly .NET é gerenciada pelo Microsoft .NET Framework, não pelo Microsoft Office.
@@ -36,7 +36,7 @@ ms.locfileid: "56616125"
 
 ## <a name="to-bypass-the-assembly-by-using-the-shift-key"></a>Para ignorar o assembly usando a tecla Shift
 
--   Abrir documentos e pastas de trabalho do **arquivo** menu enquanto mantém pressionada a **Shift** chave para evitar que o Word e Excel da geração de eventos de inicialização enquanto está abrindo o documento.
+- Abrir documentos e pastas de trabalho do **arquivo** menu enquanto mantém pressionada a **Shift** chave para evitar que o Word e Excel da geração de eventos de inicialização enquanto está abrindo o documento.
 
     > [!NOTE]
     >  Se você abrir um documento ou pasta de trabalho da **guia de Introdução** painel de tarefas, mantendo pressionada **Shift** não ignora o código. Além disso, mantendo pressionada a tecla SHIFT não impedir que eventos que está sendo gerado depois que o documento está aberto.
@@ -45,7 +45,7 @@ ms.locfileid: "56616125"
 
 ## <a name="to-bypass-an-assembly-by-renaming-or-removing-it"></a>Para ignorar a um assembly renomeando ou removê-lo
 
--   Se você tiver as permissões necessárias no computador onde o assembly está localizado, você pode renomear ou remover o assembly para que o documento ou pasta de trabalho não é possível encontrá-lo. Isso resulta em um erro que está sendo gerado sempre que o documento do Office é aberto.
+- Se você tiver as permissões necessárias no computador onde o assembly está localizado, você pode renomear ou remover o assembly para que o documento ou pasta de trabalho não é possível encontrá-lo. Isso resulta em um erro que está sendo gerado sempre que o documento do Office é aberto.
 
      Se a solução é usada por várias pessoas, esse método impede que a solução em execução para todos eles. Isso pode ser útil se um problema for encontrado no código ou em um servidor referenciado e você deseja parar todos os usuários de executá-lo.
 

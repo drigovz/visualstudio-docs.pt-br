@@ -11,12 +11,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41774d09b72430aafc50794cd3d356baa4b565ab
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b1a03463d292fa1d4d980c62daa74b291d6a8cb1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929697"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117298"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Atalhos de teclado no Designer de Fluxo de Trabalho
 Qualquer funcionalidade central de [!INCLUDE[wfd1](../includes/wfd1-md.md)] pode ser acessada pelo teclado.  
@@ -54,13 +54,13 @@ Qualquer funcionalidade central de [!INCLUDE[wfd1](../includes/wfd1-md.md)] pode
   
 - Para conectar atividades:  
   
-  1.  Selecione a atividade de origem alternar a atividade.  
+  1. Selecione a atividade de origem alternar a atividade.  
   
-  2.  Pressione CTRL+E, M quantas vezes forem necessárias mover o foco do teclado a atividade de destino.  
+  2. Pressione CTRL+E, M quantas vezes forem necessárias mover o foco do teclado a atividade de destino.  
   
-  3.  Pressione CTRL+E, S para adicionar a atividade de destino a seleção.  
+  3. Pressione CTRL+E, S para adicionar a atividade de destino a seleção.  
   
-  4.  Pressione CTRL+E, F- 2.0 para adicionar o conector de origem para o destino.  
+  4. Pressione CTRL+E, F- 2.0 para adicionar o conector de origem para o destino.  
   
   Notas sobre como conectar atividades pelo teclado:  
   
@@ -73,18 +73,18 @@ Qualquer funcionalidade central de [!INCLUDE[wfd1](../includes/wfd1-md.md)] pode
 ### <a name="expression-editing"></a>Edição de expressão  
  Por padrão, os atalhos de teclado padrão para edição de texto de [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] se aplicam no editor de expressão em [!INCLUDE[wfd2](../includes/wfd2-md.md)], com as seguintes restrições:  
   
--   O remapeamento atalhos de teclado para os seguintes comandos não tem efeito. Você pode usar os atalhos de teclado padrão para acessar esses comandos para editar uma expressão.  
+- O remapeamento atalhos de teclado para os seguintes comandos não tem efeito. Você pode usar os atalhos de teclado padrão para acessar esses comandos para editar uma expressão.  
   
-    1.  Recortar  
+    1. Recortar  
   
-    2.  Copiar  
+    2. Copiar  
   
-    3.  Colar  
+    3. Colar  
   
-    4.  Selecionar Tudo  
+    4. Selecionar Tudo  
   
-    5.  Desfazer  
+    5. Desfazer  
   
-    6.  Refazer  
+    6. Refazer  
   
--   Para remapear atalhos de teclado para comandos de edição de expressão dentro de [!INCLUDE[wfd2](../includes/wfd2-md.md)] em [!INCLUDE[vs2010](../includes/vs2010-md.md)], edite os atalhos no escopo de [!INCLUDE[wfd2](../includes/wfd2-md.md)] . As alterações feitas no escopo do editor de texto não se aplicam automaticamente a [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Se você deseja remapear atalhos nos dois lugares, você deve aplicar as alterações duas vezes (uma vez para cada escopo).
+- Para remapear atalhos de teclado para comandos de edição de expressão dentro de [!INCLUDE[wfd2](../includes/wfd2-md.md)] em [!INCLUDE[vs2010](../includes/vs2010-md.md)], edite os atalhos no escopo de [!INCLUDE[wfd2](../includes/wfd2-md.md)] . As alterações feitas no escopo do editor de texto não se aplicam automaticamente a [!INCLUDE[wfd2](../includes/wfd2-md.md)]. Se você deseja remapear atalhos nos dois lugares, você deve aplicar as alterações duas vezes (uma vez para cada escopo).

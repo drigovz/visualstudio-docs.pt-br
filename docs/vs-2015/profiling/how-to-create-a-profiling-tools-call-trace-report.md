@@ -1,5 +1,5 @@
 ---
-title: Como criar um relatório de rastreamento de chamada das ferramentas de criação de perfil | Microsoft Docs
+title: 'Como: Criar um relatório de rastreamento de chamada das Ferramentas de Criação de Perfil | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -12,14 +12,14 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3669803bd87cbe04117246afad4d5d61866af896
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c92f5cd8f268b249e8f29ddd706860ff18b2f87c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54774895"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117818"
 ---
-# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Como criar um relatório de rastreamento de chamada das ferramentas de criação de perfil
+# <a name="how-to-create-a-profiling-tools-call-trace-report"></a>Como: Criar um relatório de rastreamento de chamada das ferramentas criação de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O *relatório de rastreamento de chamada* para as Ferramentas de criação de perfil do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] lista informações de tempo para cada ponto de entrada e de saída para as funções do aplicativo e cada chamada para outras funções por sua função. Relatórios de rastreamento de chamada estão disponíveis para criação de perfil de dados somente se foram coletados com o método de instrumentação.  
@@ -29,9 +29,9 @@ O *relatório de rastreamento de chamada* para as Ferramentas de criação de pe
   
 ### <a name="to-create-a-call-trace-report"></a>Para criar um relatório de rastreamento de chamada  
   
-1.  Abra uma janela do **Prompt de Comando**.  
+1. Abra uma janela do **Prompt de Comando**.  
   
-2.  No prompt de comando, digite o seguinte comando:  
+2. No prompt de comando, digite o seguinte comando:  
   
      *ToolsPath* **VSPerfReport** *VSPFile*  **/CallTrace [/Xml]**  
   
@@ -42,5 +42,5 @@ O *relatório de rastreamento de chamada* para as Ferramentas de criação de pe
     |Xml|Gera um relatório Xml formatado.|  
   
 ## <a name="see-also"></a>Consulte também  
- [Como coletar dados de ETW (Rastreamento de Eventos para Windows)](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
+ [Como: Coletar o rastreamento de eventos para Windows (ETW) de dados](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)   
  [APIs de ferramentas de criação de perfil](../profiling/profiling-tools-apis.md)

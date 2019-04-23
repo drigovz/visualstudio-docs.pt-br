@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e8b63b5a14319a86dc561a0c6068286cdc70a472
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6b1d461419497a0a45f50f12589cf3ac978a7666
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56595118"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092634"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>Estender o nó de conexões do SharePoint no Gerenciador de servidores
   No Visual Studio, você pode se conectar a sites locais do SharePoint no computador de desenvolvimento usando o **conexões do SharePoint** nó na **Server Explorer** janela. Esse nó exibe muitos dos componentes de sites locais do SharePoint em uma exibição de árvore hierárquica. Por exemplo, você pode exibir a listas, bibliotecas de documentos e tipos de conteúdo em sites locais. Para obter mais informações sobre como usar **Gerenciador de servidores** para se conectar a sites locais do SharePoint, consulte [procurar conexões do SharePoint usando o Gerenciador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md).
@@ -36,9 +36,9 @@ ms.locfileid: "56595118"
 
  Há dois tipos de propriedades personalizadas, que você pode adicionar a um nó:
 
--   Propriedades que exibem um conjunto de dados somente leitura do site do SharePoint. Os dados descrevem o componente do SharePoint que o nó representa. Para um passo a passo que demonstra como fazer isso, consulte [passo a passo: Estender o Gerenciador de servidores para exibir web parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
+- Propriedades que exibem um conjunto de dados somente leitura do site do SharePoint. Os dados descrevem o componente do SharePoint que o nó representa. Para um passo a passo que demonstra como fazer isso, consulte [passo a passo: Estender o Gerenciador de servidores para exibir web parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md).
 
--   Propriedades que exibem dados de leitura/gravação personalizado. Para obter um exemplo de código que demonstra como fazer isso, consulte [como: Estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
+- Propriedades que exibem dados de leitura/gravação personalizado. Para obter um exemplo de código que demonstra como fazer isso, consulte [como: Estender um nó SharePoint no Gerenciador de servidores](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md).
 
 ## <a name="get-data-for-built-in-nodes"></a>Obter dados para nós internos
  Todos os nós internos fornecidos pelo Visual Studio incluem alguns dados sobre o componente do SharePoint que eles representam. Por exemplo, um nó que representa uma lista no site do SharePoint fornece alguns dados sobre a lista, como o título e a URL do modo de exibição padrão para a lista.

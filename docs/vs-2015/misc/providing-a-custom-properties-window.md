@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 408dcdef-8ef9-4644-97d2-f311cd35824f
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: 31c33bfafeba1210e6cd70db48643a6329c21a45
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a244463832ff5620efa74a2c7fd20d6d47d79e76
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924306"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117519"
 ---
 # <a name="providing-a-custom-properties-window"></a>Fornecendo uma janela de propriedades personalizadas
 É possível fornecer seus próprios **propriedades** janela para um sistema de projeto determinado, em vez de ampliar a **propriedades** janela fornecida pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE). O cenário mais frequentemente encontrado é quando você mesmo implementa o objeto localizado no quadro de janela.  
@@ -24,25 +24,25 @@ ms.locfileid: "58924306"
   
 ### <a name="to-provide-your-properties-window"></a>Para fornecer sua janela de propriedades  
   
-1.  Definir um GUID que representa sua **propriedades** implementação de janela.  
+1. Definir um GUID que representa sua **propriedades** implementação de janela.  
   
-2.  No seu <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementação, use o <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> serviço muito ao seu **propriedades** janela como um serviço para o ambiente do Visual Studio.  
+2. No seu <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> implementação, use o <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> serviço muito ao seu **propriedades** janela como um serviço para o ambiente do Visual Studio.  
   
 ### <a name="to-call-your-properties-window"></a>Para chamar sua janela de propriedades  
   
-1.  Chame o método <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane.SetSite%2A>.  
+1. Chame o método <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane.SetSite%2A>.  
   
-2.  `QueryService` para <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> do <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> passado para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane.SetSite%2A> método.  
+2. `QueryService` para <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> do <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> passado para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane.SetSite%2A> método.  
   
-3.  Obter <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> de <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> service.  
+3. Obter <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> de <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> service.  
   
-4.  Chame <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A> com o primeiro parâmetro definido como `SEID_PropertyBrowserSID` (tirados o <xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID> enumeração) e o terceiro parâmetro, `varValue`, que representa um formulário de cadeia de caracteres do GUID que representa seu **propriedades** janela. Fazer essa chamada somente uma vez na primeira criação do seu **propriedades** janela do documento. Após a chamada isso **propriedades** janela está associada com seu quadro de janela.  
+4. Chame <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx.OnElementValueChange%2A> com o primeiro parâmetro definido como `SEID_PropertyBrowserSID` (tirados o <xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID> enumeração) e o terceiro parâmetro, `varValue`, que representa um formulário de cadeia de caracteres do GUID que representa seu **propriedades** janela. Fazer essa chamada somente uma vez na primeira criação do seu **propriedades** janela do documento. Após a chamada isso **propriedades** janela está associada com seu quadro de janela.  
   
 ### <a name="to-obtain-the-window-frame-object-when-you-are-not-the-implementer"></a>Para obter o objeto de quadro de janela quando você não o implementador  
   
--   Você pode `QueryService` para <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> partir <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> com o parâmetro `propid` definido como <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>.  
+- Você pode `QueryService` para <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> partir <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> com o parâmetro `propid` definido como <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>.  
   
--   Você pode obter a janela do documento ativo chamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> por meio do serviço SVsMonitorSelection. Defina o parâmetro `elementid` à `SEID_WindowFrame`, retirado do <xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID> enumeração.  
+- Você pode obter a janela do documento ativo chamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> por meio do serviço SVsMonitorSelection. Defina o parâmetro `elementid` à `SEID_WindowFrame`, retirado do <xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID> enumeração.  
   
 ## <a name="see-also"></a>Consulte também  
  [Estendendo propriedades](../extensibility/internals/extending-properties.md)   
