@@ -13,25 +13,25 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ac39a776cb7e6c2c9cbce648c0b3ca3ebc86783
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0291cfe93492c357401ce371d58683c6815aa12b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770739"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052812"
 ---
 # <a name="empty-timeline-segment"></a>Segmento da linha de tempo vazio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Na Visualização Simultânea, o motivo pelo qual uma seção da linha do tempo está vazia (tem uma tela de fundo branca) depende do tipo de canal.  
   
--   Para um canal de thread de CPU, isso significa que o thread não existia durante esta parte da linha do tempo. Se estiver interessado no thread, você poderá encontrar sua seção de execução usando o controle de aplicação de zoom ou rolando horizontalmente.  
+- Para um canal de thread de CPU, isso significa que o thread não existia durante esta parte da linha do tempo. Se estiver interessado no thread, você poderá encontrar sua seção de execução usando o controle de aplicação de zoom ou rolando horizontalmente.  
   
--   Para um canal de E/S, significa que nenhum acesso ao disco ocorreu em nome do processo de destino no momento.  
+- Para um canal de E/S, significa que nenhum acesso ao disco ocorreu em nome do processo de destino no momento.  
   
--   Para um canal do DirectX, significa que nenhum trabalho de GPU foi executado em nome do processo de destino durante esta parte da linha do tempo.  
+- Para um canal do DirectX, significa que nenhum trabalho de GPU foi executado em nome do processo de destino durante esta parte da linha do tempo.  
   
--   Para um canal de marcador, significa que nenhum marcador foi gerado.  
+- Para um canal de marcador, significa que nenhum marcador foi gerado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Exibição Threads](../profiling/threads-view-parallel-performance.md)   

@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c59d6ba8b6e807b4380a3f7abad3869e5108448
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926773"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052877"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Passo a passo: Geração de código usando modelos de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,17 +81,17 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
   
 ## <a name="setting-up-the-project"></a>Configuração do projeto  
   
-### <a name="create-or-open-a-c-project"></a>Criar ou abrir um projeto C#  
- Você pode aplicar essa técnica para qualquer projeto de código. Este passo a passo usa um projeto C#, e para fins de teste, usamos um aplicativo de console.  
+### <a name="create-or-open-a-c-project"></a>Criar ou abrir um projeto c#  
+ Você pode aplicar essa técnica para qualquer projeto de código. Este passo a passo usa um projeto c#, e para fins de teste, usamos um aplicativo de console.  
   
 ##### <a name="to-create-the-project"></a>Para criar o projeto  
   
-1.  Sobre o **arquivo** menu, clique em **New** e, em seguida, clique em **projeto**.  
+1. Sobre o **arquivo** menu, clique em **New** e, em seguida, clique em **projeto**.  
   
-2.  Clique o **Visual C#** nó e, em seguida, no **modelos** painel, clique em **aplicativo de Console.**  
+2. Clique o **Visual c#** nó e, em seguida, no **modelos** painel, clique em **aplicativo de Console.**  
   
 ### <a name="add-a-prototype-xml-file-to-the-project"></a>Adicionar um arquivo XML de protótipo para o projeto  
- A finalidade desse arquivo é fornecer exemplos dos tipos de nó XML que você deseja que o aplicativo seja capaz de ler. Pode ser um arquivo que será usado para testar seu aplicativo. O modelo produzirá uma classe C# para cada tipo de nó nesse arquivo.  
+ A finalidade desse arquivo é fornecer exemplos dos tipos de nó XML que você deseja que o aplicativo seja capaz de ler. Pode ser um arquivo que será usado para testar seu aplicativo. O modelo produzirá uma classe c# para cada tipo de nó nesse arquivo.  
   
  O arquivo deve ser parte do projeto para que o modelo possa lê-lo, mas ele não será compilado no aplicativo compilado.  
   
@@ -108,7 +108,7 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
    .  
   
 ### <a name="add-a-test-code-file"></a>Adicionar um arquivo de código de teste  
- Adicione um arquivo C# ao seu projeto e escrever em um exemplo do código que você deseja ser capaz de gravar. Por exemplo:  
+ Adicione um arquivo c# ao seu projeto e escrever em um exemplo do código que você deseja ser capaz de gravar. Por exemplo:  
   
 ```  
 using System;  
@@ -148,7 +148,7 @@ namespace MyProject
   
     Essa alteração permitirá que o código de modelo acessar o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] serviços.  
   
-4. Na diretiva de saída, altere o atributo de extensão para ". cs", para que o modelo gera um arquivo C#. Em um projeto do Visual Basic, você alteraria-lo para "vb".  
+4. Na diretiva de saída, altere o atributo de extensão para ". cs", para que o modelo gera um arquivo c#. Em um projeto do Visual Basic, você alteraria-lo para "vb".  
   
 5. Salve o arquivo. Nesse estágio, o arquivo de modelo de texto deve conter estas linhas:  
   
@@ -161,7 +161,7 @@ namespace MyProject
   
    Observe que um arquivo. cs aparece no Gerenciador de soluções como uma subsidiária do arquivo de modelo. Você pode vê-lo clicando [+] ao lado do nome do arquivo de modelo. Esse arquivo é gerado a partir do arquivo de modelo sempre que você salve ou mova o foco para fora do arquivo de modelo. O arquivo gerado será compilado como parte do seu projeto.  
   
-   Para sua conveniência, enquanto você desenvolve o arquivo de modelo, organize as janelas do arquivo de modelo e o arquivo gerado, de modo que você pode vê-los próximos uns dos outros. Isso permite que você veja imediatamente a saída do seu modelo. Você também observará que, quando o seu modelo gera o código C# inválido, erros serão exibidos na janela de mensagem de erro.  
+   Para sua conveniência, enquanto você desenvolve o arquivo de modelo, organize as janelas do arquivo de modelo e o arquivo gerado, de modo que você pode vê-los próximos uns dos outros. Isso permite que você veja imediatamente a saída do seu modelo. Você também observará que, quando o seu modelo gera o código c# inválido, erros serão exibidos na janela de mensagem de erro.  
   
    Todas as edições que você execute diretamente no arquivo gerado serão perdidas sempre que você salvar o arquivo de modelo. Você deve, portanto, evite editar o arquivo gerado ou editá-lo somente para testes curtos. Às vezes é útil tentar um curto fragmento de código no arquivo gerado, em que o IntelliSense está em operação, e, em seguida, copie-o para o arquivo de modelo.  
   

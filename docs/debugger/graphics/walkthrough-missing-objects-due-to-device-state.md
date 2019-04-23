@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e42e1ce4cc1ccc0a01905046b33e4587964f8ce
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 0e85aa8fc5af3f32f117b112e8624962a49d90c6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712067"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047445"
 ---
-# <a name="walkthrough-missing-objects-due-to-device-state"></a>Instruções passo a passo: objetos ausentes devido ao estado do dispositivo
+# <a name="walkthrough-missing-objects-due-to-device-state"></a>Passo a passo: Objetos ausentes devido ao estado do dispositivo
 Este passo a passo demonstra como usar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] diagnóstico de gráficos para investigar um objeto que está faltando devido a configurado incorretamente o estado do dispositivo.
 
  Este passo a passo demonstra como:
 
--   Use o **lista de eventos gráficos** para localizar fontes potenciais do problema.
+- Use o **lista de eventos gráficos** para localizar fontes potenciais do problema.
 
--   Use o **estágios de Pipeline gráficos** janela para verificar o efeito do `DrawIndexed` chamadas à API do Direct3D.
+- Use o **estágios de Pipeline gráficos** janela para verificar o efeito do `DrawIndexed` chamadas à API do Direct3D.
 
--   Use o **histórico de Pixel de gráficos** janela para localizar o problema mais especificamente.
+- Use o **histórico de Pixel de gráficos** janela para localizar o problema mais especificamente.
 
--   Inspecione o estado do dispositivo quanto a possíveis problemas ou configurações incorretas.
+- Inspecione o estado do dispositivo quanto a possíveis problemas ou configurações incorretas.
 
 ## <a name="scenario"></a>Cenário
  Um dos motivos que os objetos podem não aparecer onde elas são esperadas em um aplicativo 3D é um erro de configuração do dispositivo gráfico que faz com que os objetos a serem excluídos da renderização — por exemplo, quando o giro causa triângulos a ser removido em erro , ou quando a função de teste de profundidade faz com que todos os pixels no objeto a serem rejeitadas.

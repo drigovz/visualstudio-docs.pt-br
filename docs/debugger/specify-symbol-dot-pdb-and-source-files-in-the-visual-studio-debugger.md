@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 32c96bf9e206a70f5de38459460d8bdcaee571cc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c5d7d5fa0a53ead2f49f89df37943d734a1b73fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666553"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045336"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Especificar o símbolo (. PDB) e arquivos de origem no depurador do Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -128,9 +128,9 @@ Sobre o **ferramentas** > **opções** > **depuração** > **símbolos** página
 
 4. Especificar os módulos que você deseja que o depurador para carregar a partir de **símbolo locais de arquivo (. PDB)** quando ele for iniciado.
 
-   -  Selecione **carregar todos os módulos, a menos que excluídos** (o padrão) para carregar todos os símbolos para todos os módulos no local do arquivo de símbolo, exceto excluir especificamente os módulos. Para excluir determinados módulos, selecione **especificar módulos excluídos**, selecione o **+** ícone, digite os nomes dos módulos a serem excluídos e, em seguida, selecione **Okey**.
+   - Selecione **carregar todos os módulos, a menos que excluídos** (o padrão) para carregar todos os símbolos para todos os módulos no local do arquivo de símbolo, exceto excluir especificamente os módulos. Para excluir determinados módulos, selecione **especificar módulos excluídos**, selecione o **+** ícone, digite os nomes dos módulos a serem excluídos e, em seguida, selecione **Okey**.
 
-   -  Para carregar somente os módulos que você especificar os símbolo locais de arquivos, selecione **carregar somente os módulos especificados**. Selecione **especificar módulos incluídos**, selecione o **+** ícone, digite os nomes dos módulos para incluir e, em seguida, selecione **Okey**. Os arquivos de símbolo para outros módulos não são carregados.
+   - Para carregar somente os módulos que você especificar os símbolo locais de arquivos, selecione **carregar somente os módulos especificados**. Selecione **especificar módulos incluídos**, selecione o **+** ícone, digite os nomes dos módulos para incluir e, em seguida, selecione **Okey**. Os arquivos de símbolo para outros módulos não são carregados.
 
 5. Selecione **OK**.
 
@@ -199,7 +199,7 @@ Compilar com o **/Debug** para criar um *. PDB* arquivo. Você pode criar aplica
 
 Defina as *Web. config* arquivo do seu aplicativo ASP.NET para o modo de depuração. O modo de depuração faz com que o ASP.NET gere símbolos para arquivos gerados dinamicamente e permite que o depurador se anexe ao aplicativo ASP.NET. Visual Studio define isso automaticamente quando você inicia a depuração, se você tiver criado seu projeto do modelo projetos web.
 
-##  <a name="manage-symbols-while-debugging"></a>Gerenciar símbolos durante a depuração
+## <a name="manage-symbols-while-debugging"></a>Gerenciar símbolos durante a depuração
 
 Você pode usar o **módulos**, **pilha de chamadas**, **locais**, **Autos**, ou qualquer **inspeção** janela para carregar símbolos ou alterar as opções de símbolo durante a depuração. Para obter mais informações, consulte [se familiarizar mais com como o depurador se anexa ao aplicativo](../debugger/debugger-tips-and-tricks.md#modules_window).
 
@@ -224,10 +224,10 @@ Durante a depuração, o **módulos** janela mostra os módulos de código que o
 
 Há várias maneiras para que o depurador entrar no código que não tenha arquivos de símbolo ou de origem disponíveis:
 
--  Intervir no código.
--  Entrar no código de um ponto de interrupção ou exceção.
--  Alternar para um thread diferente.
--  Alterar o registro de ativação clicando duas vezes em um quadro na **pilha de chamadas** janela.
+- Intervir no código.
+- Entrar no código de um ponto de interrupção ou exceção.
+- Alternar para um thread diferente.
+- Alterar o registro de ativação clicando duas vezes em um quadro na **pilha de chamadas** janela.
 
 Quando isso acontece, o depurador exibe o **nenhum símbolo carregado** ou **nenhuma origem carregada** páginas para ajudá-lo a localizar e carregar os símbolos necessários ou código-fonte.
 
@@ -235,11 +235,11 @@ Quando isso acontece, o depurador exibe o **nenhum símbolo carregado** ou **nen
 
 **Para usar a página de documento nenhum símbolo carregado para ajudar a localizar e carregar símbolos ausentes:**
 
--   Para alterar o caminho de pesquisa, selecione um caminho não selecionado ou selecione **novo caminho** ou **novo caminho do VSTS** e insira ou selecione um novo caminho. Selecione **carregar** para procurar novamente os caminhos e carregar o arquivo de símbolo se ela for encontrada.
--   Para substituir as opções de qualquer símbolo e repita os caminhos de pesquisa, selecione **procurar e localizar \<nome do executável >**. O arquivo de símbolo será carregado se ele for encontrado, ou **Explorador de arquivos** será aberta para que você pode selecionar manualmente o arquivo de símbolo.
--   Para abrir o **opções** > **depuração** > **símbolos** página, selecione **alterar configurações de símbolo**.
--   Para mostrar a desmontagem em uma nova janela uma vez, selecione **exibir a desmontagem**, ou selecione **caixa de diálogo Opções** para definir a opção para sempre mostrar a desmontagem quando os arquivos de origem ou de símbolo não forem encontrados.
--   Para mostrar os locais pesquisados e o resultado, expanda **informações de carregamento de símbolo**.
+- Para alterar o caminho de pesquisa, selecione um caminho não selecionado ou selecione **novo caminho** ou **novo caminho do VSTS** e insira ou selecione um novo caminho. Selecione **carregar** para procurar novamente os caminhos e carregar o arquivo de símbolo se ela for encontrada.
+- Para substituir as opções de qualquer símbolo e repita os caminhos de pesquisa, selecione **procurar e localizar \<nome do executável >**. O arquivo de símbolo será carregado se ele for encontrado, ou **Explorador de arquivos** será aberta para que você pode selecionar manualmente o arquivo de símbolo.
+- Para abrir o **opções** > **depuração** > **símbolos** página, selecione **alterar configurações de símbolo**.
+- Para mostrar a desmontagem em uma nova janela uma vez, selecione **exibir a desmontagem**, ou selecione **caixa de diálogo Opções** para definir a opção para sempre mostrar a desmontagem quando os arquivos de origem ou de símbolo não forem encontrados.
+- Para mostrar os locais pesquisados e o resultado, expanda **informações de carregamento de símbolo**.
 
 Se o depurador encontrar o *. PDB* depois de executar uma das opções e pode recuperar o arquivo de origem usando as informações do arquivo a *. PDB* arquivo, ele exibe a origem. Caso contrário, ele exibe uma **nenhuma origem carregada** página que descreve o problema, com links para as ações que podem resolver o problema.
 

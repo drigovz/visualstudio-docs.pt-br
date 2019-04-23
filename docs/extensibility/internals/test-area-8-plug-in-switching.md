@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2093db67a97bcd913773feebe0a4f10bf6ac9180
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b308fb97a55f61645d038c9a81445f4561415e9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659495"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047874"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Área de teste 8: Alternância de plug-in
 O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE) tem a interface do usuário (UI) para alterar o plug-in de controle de origem atual. Essa área de teste fornece os casos de teste para o processo de selecionar o plug-in a ser usado para controle de código-fonte da solução.
@@ -24,9 +24,9 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de des
 ## <a name="command-menu-access"></a>Acesso ao Menu de comando
  O seguinte [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] caminhos de menu de ambiente de desenvolvimento integrado são usados nos casos de teste.
 
--   Controle atual origem plug-in: **Ferramentas** -> **opções** -> **controle de origem** -> **seleção de plug-in**.
+- Controle atual origem plug-in: **Ferramentas** -> **opções** -> **controle de origem** -> **seleção de plug-in**.
 
--   Alterar fonte de ligação de controle: **Arquivo** -> **controle de fonte** -> **alterar controle do código-fonte**...
+- Alterar fonte de ligação de controle: **Arquivo** -> **controle de fonte** -> **alterar controle do código-fonte**...
 
 ## <a name="common-expected-behavior"></a>Comportamento esperado comuns
  É possível alterar o plug-in para uma solução de controle de origem sem sair do Visual Studio ou recarregar a solução. Além disso, o plug-in de controle de origem atual é alterado automaticamente àquele usado por uma solução quando essa solução é carregada.

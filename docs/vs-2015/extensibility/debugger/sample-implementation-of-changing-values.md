@@ -11,12 +11,12 @@ ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 66b949ee2bd065186c13f32e788eea8f40faf34d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4a7b35c2a96ae31d698ff2294878adc45e3d6572
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58921822"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056400"
 ---
 # <a name="sample-implementation-of-changing-values"></a>Exemplo de implementação de valores de variáveis
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,13 +31,13 @@ ms.locfileid: "58921822"
   
  Essa implementação do `IDebugProperty2::SetValueAsString` executa as seguintes tarefas:  
   
-1.  Avalia a expressão para produzir um valor.  
+1. Avalia a expressão para produzir um valor.  
   
-2.  Associa o associados [IDebugField](../../extensibility/debugger/reference/idebugfield.md) para seu local de memória do objeto e produzir uma [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objeto.  
+2. Associa o associados [IDebugField](../../extensibility/debugger/reference/idebugfield.md) para seu local de memória do objeto e produzir uma [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objeto.  
   
-3.  Converte o valor em uma série de bytes.  
+3. Converte o valor em uma série de bytes.  
   
-4.  Chamadas [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) para armazenar os bytes na memória.  
+4. Chamadas [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) para armazenar os bytes na memória.  
   
 ## <a name="managed-code"></a>Código gerenciado  
  Essa é uma implementação de `IDebugProperty2::SetValueAsString` em código gerenciado.  

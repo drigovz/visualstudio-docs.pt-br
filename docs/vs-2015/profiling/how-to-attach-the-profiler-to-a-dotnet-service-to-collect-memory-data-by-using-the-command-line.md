@@ -9,12 +9,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b6d205a3a8abddadc714aea4aa913ff064518920
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 91c993697103417eb3ba39e3c6d2929baee9311a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663473"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046417"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-memory-data-by-using-the-command-line"></a>Como: Anexar o Profiler para um serviço .NET para coletar dados de memória usando a linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -88,16 +88,16 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
 
     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   Especifica a ID ou o nome do processo do serviço. É possível exibir as IDs de processo e nomes de todos os processos em execução no Gerenciador de Tarefas do Windows.  
+   - Especifica a ID ou o nome do processo do serviço. É possível exibir as IDs de processo e nomes de todos os processos em execução no Gerenciador de Tarefas do Windows.  
 
-   -   **targetclr:** `Version` especifica a versão do CLR (Common Language Runtime) cujo perfil deverá ser criado quando mais de uma versão do tempo de execução for carregada em um aplicativo. Opcional.  
+   - **targetclr:** `Version` especifica a versão do CLR (Common Language Runtime) cujo perfil deverá ser criado quando mais de uma versão do tempo de execução for carregada em um aplicativo. Opcional.  
 
 ## <a name="controlling-data-collection"></a>Controlando coleção de dados  
  Enquanto o serviço estiver em execução, você pode usar as opções **VSPerfCmd.exe** para interromper e iniciar a gravação de dados no arquivo de dados do criador de perfil. Controlar a coleta de dados permite coletar dados de uma parte específica da execução do programa, como a inicialização ou o desligamento do aplicativo.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar e interromper a coleta de dados  
 
--   Os pares de opções **VSPerfCmd** a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
+- Os pares de opções **VSPerfCmd** a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
 
     |Opção|Descrição|  
     |------------|-----------------|  
@@ -110,23 +110,23 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
 
 #### <a name="to-end-a-profiling-session"></a>Para encerrar uma sessão de criação de perfil  
 
-1.  Siga um destes procedimentos para desanexar o criador de perfil do aplicativo de destino:  
+1. Siga um destes procedimentos para desanexar o criador de perfil do aplicativo de destino:  
 
-    -   Pare o serviço.  
+    - Pare o serviço.  
 
          - ou -  
 
-    -   Digite **VSPerfCmd /detach**  
+    - Digite **VSPerfCmd /detach**  
 
-2.  Desligue o criador de perfil. Tipo:  
+2. Desligue o criador de perfil. Tipo:  
 
      **VSPerfCmd /shutdown**  
 
-3.  (Opcional) desmarcar as variáveis de ambiente de criação de perfil. Tipo:  
+3. (Opcional) desmarcar as variáveis de ambiente de criação de perfil. Tipo:  
 
      **VSPerfClrEnv /globaloff**  
 
-4.  Reinicie o computador.  
+4. Reinicie o computador.  
 
 ## <a name="see-also"></a>Consulte também  
  [Serviços de Criação de Perfil](../profiling/command-line-profiling-of-services.md)   

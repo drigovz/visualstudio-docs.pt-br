@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 8690a1f05f54fbac9427f4a03412e0a8054c51d2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 795d48b96392057a3f96cf3a67f3c49de8aee9b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926499"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052162"
 ---
 # <a name="ca1824-mark-assemblies-with-neutralresourceslanguageattribute"></a>CA1824: Marque assemblies com NeutralResourcesLanguageAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ ms.locfileid: "58926499"
 
 #### <a name="to-specify-the-language-of-the-resource-of-the-neutral-culture"></a>Para especificar o idioma do recurso de cultura neutra
 
-1.  Na **Gerenciador de soluções**, clique em seu projeto e, em seguida, clique em **propriedades**.
+1. Na **Gerenciador de soluções**, clique em seu projeto e, em seguida, clique em **propriedades**.
 
-2.  Na barra de navegação à esquerda, selecione **Application**e, em seguida, clique em **informações de Assembly**.
+2. Na barra de navegação à esquerda, selecione **Application**e, em seguida, clique em **informações de Assembly**.
 
-3.  No **informações do Assembly** diálogo caixa, selecione o idioma do **linguagem neutra** lista suspensa.
+3. No **informações do Assembly** diálogo caixa, selecione o idioma do **linguagem neutra** lista suspensa.
 
-4.  Clique em **OK**.
+4. Clique em **OK**.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  É permitido para suprimir um aviso nessa regra. No entanto, pode diminuir o desempenho da inicialização.

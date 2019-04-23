@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1597d71ac0eef5d044e0378cc71a9f109b2fc99e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a3ff96a68d66c95d4f1302ba2f419c873e8f077d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923363"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050206"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Criar diagramas de camada por meio de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Para visualizar a arquitetura de alto nível, a lógica do seu sistema de softwa
   
  Um diagrama de camada permite organizar itens de solução do Visual Studio em grupos abstratos, lógicos, chamados *camadas*. É possível usar camadas para descrever as tarefas principais realizadas por esses artefatos ou os componentes principais do sistema. Cada camada pode conter outras camadas que descrevem tarefas mais detalhadas. Você também pode especificar desejadas ou existentes *dependências* entre camadas. Essas dependências, representadas como setas, mostram quais camadas podem usar ou atualmente usam a funcionalidade representada por outras camadas. Para manter controle arquitetônico do código, mostre as dependências desejadas no diagrama e, em seguida, valide o código no diagrama.  
   
-##  <a name="CreateDiagram"></a> Criar um diagrama de camada  
+## <a name="CreateDiagram"></a> Criar um diagrama de camada  
  Antes de criar um diagrama de camada, verifique se a solução tem um projeto de modelagem. Ver [diagramas e projetos de modelagem UML criar](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 > [!IMPORTANT]
@@ -40,24 +40,24 @@ Para visualizar a arquitetura de alto nível, a lógica do seu sistema de softwa
   
 #### <a name="to-add-a-new-layer-diagram-to-a-modeling-project"></a>Para adicionar um novo diagrama de camada a um projeto de modelagem  
   
-1.  Sobre o **arquitetura** menu, escolha **UML novo ou diagrama de camada**.  
+1. Sobre o **arquitetura** menu, escolha **UML novo ou diagrama de camada**.  
   
-2.  Sob **modelos**, escolha **diagrama de camada**.  
+2. Sob **modelos**, escolha **diagrama de camada**.  
   
-3.  Nomeie o diagrama.  
+3. Nomeie o diagrama.  
   
-4.  Na **adicionar ao projeto de modelagem**, navegue até e selecione um projeto de modelagem existente na solução.  
+4. Na **adicionar ao projeto de modelagem**, navegue até e selecione um projeto de modelagem existente na solução.  
   
-     - ou -  
+     -ou-  
   
      Escolher **criar um novo projeto de modelagem** para adicionar um novo projeto de modelagem à solução.  
   
     > [!NOTE]
     >  O diagrama de camada deve estar dentro de um projeto de modelagem. Porém, é possível vinculá-lo a itens em qualquer lugar na solução.  
   
-5.  Não se esqueça de salvar o projeto de modelagem e o diagrama de camada.  
+5. Não se esqueça de salvar o projeto de modelagem e o diagrama de camada.  
   
-##  <a name="CreateLayers"></a> Criar camadas de artefatos  
+## <a name="CreateLayers"></a> Criar camadas de artefatos  
  É possível criar camadas dos itens de solução do Visual Studio como, por exemplo, projetos, arquivos de código, namespaces, classes e métodos. Isso cria automaticamente links entre camadas e itens, incluindo-os no processo de validação da camada.  
   
  Também é possível vincular camadas a itens que não dão suporte à validação como, por exemplo, documentos do Word ou apresentações do Powerpoint, de forma que você pode associar uma camada a especificações ou planos. Também é possível vincular camadas a arquivos em projetos compartilhados entre vários aplicativos, mas o processo de validação não incluirá essas camadas, exibidas com nomes genéricos como, por exemplo, "Camada 1" e "Camada 2".  
@@ -80,19 +80,19 @@ Para visualizar a arquitetura de alto nível, a lógica do seu sistema de softwa
   
  O número em uma camada indica o número de artefatos que estão associados à camada. No entanto, ao ler esse número, lembre-se do seguinte:  
   
--   Se uma camada estiver vinculada a um artefato que contenha outros artefatos, mas não estiver vinculada diretamente a outros artefatos, o número incluirá apenas o artefato vinculado. No entanto, os outros artefatos estão incluídos para análise durante a validação da camada.  
+- Se uma camada estiver vinculada a um artefato que contenha outros artefatos, mas não estiver vinculada diretamente a outros artefatos, o número incluirá apenas o artefato vinculado. No entanto, os outros artefatos estão incluídos para análise durante a validação da camada.  
   
      Por exemplo, se uma camada estiver vinculada a um único namespace, o número de artefatos vinculados será 1, mesmo se o namespace contiver classes. Se a camada também tiver links para cada classe no namespace, o número incluirá as classes vinculadas.  
   
--   Se uma camada contiver outras camadas vinculadas a artefatos, a camada de contêiner também estará vinculada a esses artefatos, mesmo que o número na camada de contêiner não inclua esses artefatos.  
+- Se uma camada contiver outras camadas vinculadas a artefatos, a camada de contêiner também estará vinculada a esses artefatos, mesmo que o número na camada de contêiner não inclua esses artefatos.  
   
-##  <a name="Managing"></a> Gerenciar links entre camadas e artefatos  
+## <a name="Managing"></a> Gerenciar links entre camadas e artefatos  
   
-1.  No diagrama de camada, abra o menu de atalho para a camada e, em seguida, escolha **Exibir Links**.  
+1. No diagrama de camada, abra o menu de atalho para a camada e, em seguida, escolha **Exibir Links**.  
   
      **Gerenciador de camada** mostra os links de artefato para a camada selecionada.  
   
-2.  Use as seguintes tarefas para gerenciar esses links:  
+2. Use as seguintes tarefas para gerenciar esses links:  
   
 |**To**|**No Gerenciador de camadas**|  
 |------------|---------------------------|  
@@ -102,7 +102,7 @@ Para visualizar a arquitetura de alto nível, a lógica do seu sistema de softwa
 |Criar uma nova camada com base em um link de artefato existente|Arraste o link de artefato para uma área em branco no diagrama.|  
 |Verifique se um artefato vinculado dá suporte à validação no diagrama de camada.|Examine os **dá suporte à validação** coluna para o link de artefato.|  
   
-##  <a name="Discovering"></a> Fazer engenharia reversa de dependências existentes  
+## <a name="Discovering"></a> Fazer engenharia reversa de dependências existentes  
  Existirá uma dependência sempre que um artefato associado a uma camada tiver uma referência a um artefato associado a outra camada. Por exemplo, uma classe em uma camada declara uma variável que tem uma classe em outra camada. É possível fazer engenharia reversa em dependências existentes para artefatos vinculados a camadas no diagrama.  
   
 > [!NOTE]
@@ -112,7 +112,7 @@ Para visualizar a arquitetura de alto nível, a lógica do seu sistema de softwa
   
   Normalmente, você verá algumas dependências que não devem existir. É possível editar essas dependências para alinhá-las com o design desejado.  
   
-##  <a name="EditDependencies"></a> Editar camadas e dependências para mostrar o design desejado  
+## <a name="EditDependencies"></a> Editar camadas e dependências para mostrar o design desejado  
  Para descrever as alterações que você pretende fazer no sistema ou na arquitetura desejada, edite o diagrama de camada:  
   
 |**To**|**Execute estas etapas**|  
@@ -123,17 +123,17 @@ Para visualizar a arquitetura de alto nível, a lógica do seu sistema de softwa
 |Especificar que os artefatos associados a uma camada não devem pertencer aos namespaces especificados|Digite os namespaces da camada **Namespaces proibidos** propriedade. Use um ponto e vírgula (**;**) para separar os namespaces.|  
 |Especificar que os artefatos associados a uma camada devem pertencer a um dos namespaces especificados|Digite o namespace da camada **Namespaces obrigatórios** propriedade. Use um ponto e vírgula (**;**) para separar os namespaces.|  
   
-##  <a name="EditLayout"></a> Alterar como os elementos aparecem no diagrama  
+## <a name="EditLayout"></a> Alterar como os elementos aparecem no diagrama  
  É possível alterar o tamanho, a forma, a cor e a posição das camadas ou a cor das dependências editando-se suas propriedades.  
   
-##  <a name="Codemaps"></a> Descubra padrões e as dependências em um mapa de código  
+## <a name="Codemaps"></a> Descubra padrões e as dependências em um mapa de código  
  Durante a criação de diagramas de camada, você também pode criar **mapas de código**. Esses diagramas podem ajudar você a descobrir padrões e as dependências, enquanto você explora o código. Use o Gerenciador de soluções, exibição de classe ou Pesquisador de objetos para explorar a assemblies, namespaces e classes – o que normalmente correspondem bem a camadas existentes. Para obter mais informações sobre mapas de código, consulte:  
   
--   [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)  
+- [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)  
   
--   [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)  
+- [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)  
   
--   [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)  
+- [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)  
   
 ## <a name="see-also"></a>Consulte também  
  [Vídeo do Channel 9: Projetar e validar sua arquitetura usando diagramas de camada](http://go.microsoft.com/fwlink/?LinkID=252073)   

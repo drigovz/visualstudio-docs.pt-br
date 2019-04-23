@@ -1,5 +1,5 @@
 ---
-title: Remover parâmetros refatoração (C#) | Microsoft Docs
+title: Remover parâmetros refatoração (c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8962dd95aa46ae75a2d214738e7713ae9da42534
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925393"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045792"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Refatoração Remover Parâmetros (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "58925393"
   
 ### <a name="to-remove-parameters"></a>Para remover parâmetros  
   
-1.  Crie um aplicativo de console chamado `RemoveParameters`e, em seguida, substitua `Program` com o código a seguir.  
+1. Crie um aplicativo de console chamado `RemoveParameters`e, em seguida, substitua `Program` com o código a seguir.  
   
     ```csharp  
     class A  
@@ -55,19 +55,19 @@ ms.locfileid: "58925393"
     }  
     ```  
   
-2.  Coloque o cursor no método `A`, na declaração de método ou a chamada de método.  
+2. Coloque o cursor no método `A`, na declaração de método ou a chamada de método.  
   
-3.  Dos **refatorar** menu, selecione **remover parâmetros** para exibir o **remover parâmetros** caixa de diálogo.  
+3. Dos **refatorar** menu, selecione **remover parâmetros** para exibir o **remover parâmetros** caixa de diálogo.  
   
      Você também pode digitar o atalho de teclado CTRL + R, V para exibir o **remover parâmetros** caixa de diálogo.  
   
      Você pode também com o botão direito no cursor, aponte para **refatorar**e, em seguida, clique em **remover parâmetros** para exibir o **remover parâmetros** caixa de diálogo.  
   
-4.  Usando o **parâmetros** campo, posicione o cursor na `int i`e, em seguida, clique em **remover**.  
+4. Usando o **parâmetros** campo, posicione o cursor na `int i`e, em seguida, clique em **remover**.  
   
-5.  Clique em **OK**.  
+5. Clique em **OK**.  
   
-6.  No **visualizar alterações — remover parâmetros** caixa de diálogo, clique em **aplicar**.  
+6. No **visualizar alterações — remover parâmetros** caixa de diálogo, clique em **aplicar**.  
   
 ## <a name="remarks"></a>Comentários  
  Você pode remover os parâmetros de uma declaração de método ou uma chamada de método. Posicione o cursor no nome do método declaração ou delegado e invocar remover parâmetros.  

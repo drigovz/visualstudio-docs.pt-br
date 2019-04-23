@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dcd465ebef68a6627935b00438f6c218938eb3de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2ec9dcc6f5458e33e5ea215d65aacd48c622f111
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629463"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051994"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Arquitetura de personalizações no nível do documento
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] inclui projetos para criar personalizações no nível de documento para o Microsoft Office Word e Microsoft Office Excel. Este tópico descreve os seguintes aspectos de personalizações no nível do documento:
@@ -39,7 +39,7 @@ ms.locfileid: "56629463"
 
   Para obter informações gerais sobre como criar personalizações em nível de documento, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md), [começar a programar personalizações no nível de documento para Word](../vsto/getting-started-programming-document-level-customizations-for-word.md), e [começar a programar personalizações no nível de documento para Excel](../vsto/getting-started-programming-document-level-customizations-for-excel.md).
 
-##  <a name="UnderstandingCustomizations"></a> Entender as personalizações
+## <a name="UnderstandingCustomizations"></a> Entender as personalizações
  Quando você usa o Office developer tools no Visual Studio para criar uma personalização no nível de documento, você criará um assembly de código gerenciado que está associado um documento específico. Um documento ou pasta de trabalho com um assembly vinculado deve ter extensões de código gerenciado. Para obter mais informações, consulte [Design e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md).
 
  Quando um usuário abre o documento, o assembly é carregado pelo aplicativo do Microsoft Office. Depois que o assembly é carregado, a personalização pode responder a eventos, enquanto o documento está aberto. A personalização também pode chamar o modelo de objeto para automatizar e estender o aplicativo enquanto o documento está aberto, e ele pode usar qualquer uma das classes no [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)].
@@ -57,18 +57,18 @@ ms.locfileid: "56629463"
 #### <a name="design-time"></a>Tempo de design
  A experiência de tempo de design inclui as seguintes etapas:
 
-1.  O desenvolvedor cria um projeto de nível de documento no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. O projeto inclui o documento e o assembly que é executado por trás do documento. O documento talvez já existam (criada por um designer) ou um novo documento pode ser criado junto com o projeto.
+1. O desenvolvedor cria um projeto de nível de documento no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. O projeto inclui o documento e o assembly que é executado por trás do documento. O documento talvez já existam (criada por um designer) ou um novo documento pode ser criado junto com o projeto.
 
-2.  O designer — qualquer desenvolvedor que cria o projeto ou outra pessoa — cria a aparência final do documento para o usuário final.
+2. O designer — qualquer desenvolvedor que cria o projeto ou outra pessoa — cria a aparência final do documento para o usuário final.
 
 #### <a name="runtime"></a>Tempo de execução
  A experiência de tempo de execução inclui as seguintes etapas:
 
-1.  O usuário final abre um documento ou pasta de trabalho que tem extensões de código gerenciado.
+1. O usuário final abre um documento ou pasta de trabalho que tem extensões de código gerenciado.
 
-2.  O documento ou pasta de trabalho carrega o assembly compilado.
+2. O documento ou pasta de trabalho carrega o assembly compilado.
 
-3.  O assembly responde aos eventos conforme o usuário trabalha no documento ou pasta de trabalho.
+3. O assembly responde aos eventos conforme o usuário trabalha no documento ou pasta de trabalho.
 
 #### <a name="developer-and-end-user-perspective-compared"></a>Perspectiva do desenvolvedor e do usuário final em comparação comparada
  Como o desenvolvedor trabalha principalmente em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]e o usuário final funciona no Word ou Excel, há duas maneiras de entender as personalizações no nível do documento.
@@ -97,7 +97,7 @@ ms.locfileid: "56629463"
 
   Se você quiser que os usuários finais usar personalizações nesses formatos de arquivo, crie e implante uma personalização que usa um dos formatos de arquivo com suporte especificados na tabela acima. Depois de instalar a personalização, os usuários finais pode salvar o documento no documento de XML do Word (*\*xml*) formato ou o documento XML do Word 2003 (*\*xml*) formato e o personalização continuará a funcionar como esperado.
 
-##  <a name="Components"></a> Componentes de personalizações
+## <a name="Components"></a> Componentes de personalizações
  Os principais componentes de uma personalização são o documento e o assembly. Além desses componentes, há várias outras partes que desempenham um papel importante na maneira como os aplicativos do Microsoft Office descobrirem e carregar as personalizações.
 
 ### <a name="deployment-manifest-and-application-manifest"></a>Manifesto de implantação e o manifesto do aplicativo
@@ -108,7 +108,7 @@ ms.locfileid: "56629463"
 
  Para obter mais informações, consulte [Visual Studio tools para Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-##  <a name="HowCustomizationsWork"></a> Como as personalizações funcionam com aplicativos do Microsoft Office
+## <a name="HowCustomizationsWork"></a> Como as personalizações funcionam com aplicativos do Microsoft Office
  Quando um usuário abre um documento que faz parte da personalização do Microsoft Office, o aplicativo usa o manifesto de implantação que esteja vinculado ao documento para localizar e carregar a versão mais recente do assembly de personalização. O local do manifesto de implantação é armazenado em uma propriedade de documento personalizado chamada **AssemblyLocation**. A cadeia de caracteres que identifica esse local é inserida na propriedade quando você compila a solução.
 
  Os pontos de manifesto da implantação para o manifesto do aplicativo, que aponta para o assembly mais recente. Para obter mais informações, consulte [manifestos do aplicativo e implantação em soluções do Office](../vsto/application-and-deployment-manifests-in-office-solutions.md).
@@ -123,21 +123,21 @@ ms.locfileid: "56629463"
 ### <a name="loading-process"></a>Processo de carregamento
  As seguintes etapas ocorrem quando um usuário abre um documento que é parte de uma solução do Microsoft Office.
 
-1.  O aplicativo Microsoft Office verifica as propriedades de documento personalizadas para ver se há extensões de código gerenciado associadas ao documento. Para obter mais informações, consulte [visão geral das propriedades de documento personalizado](../vsto/custom-document-properties-overview.md).
+1. O aplicativo Microsoft Office verifica as propriedades de documento personalizadas para ver se há extensões de código gerenciado associadas ao documento. Para obter mais informações, consulte [visão geral das propriedades de documento personalizado](../vsto/custom-document-properties-overview.md).
 
-2.  Se houver extensões de código gerenciado, o aplicativo carrega *vstoee*, que carrega *vstoloader. dll*. Eles não são gerenciados DLLs que são os componentes do carregador para o Visual Studio 2010 Tools for Office runtime. Para obter mais informações, consulte [Visual Studio Tools for Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+2. Se houver extensões de código gerenciado, o aplicativo carrega *vstoee*, que carrega *vstoloader. dll*. Eles não são gerenciados DLLs que são os componentes do carregador para o Visual Studio 2010 Tools for Office runtime. Para obter mais informações, consulte [Visual Studio Tools for Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
-3.  *Vstoloader. dll* carrega o [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] e começa a parte gerenciada do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+3. *Vstoloader. dll* carrega o [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] e começa a parte gerenciada do [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
-4.  Se o documento for aberto de um local diferente do computador local, o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] verifica se o local do documento está no **locais confiáveis** lista o **configurações da Central de confiabilidade** para Esse aplicativo específico do Office. Se o local do documento não estiver em um local confiável, a personalização não é confiável e o processo de carregamento para aqui.
+4. Se o documento for aberto de um local diferente do computador local, o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] verifica se o local do documento está no **locais confiáveis** lista o **configurações da Central de confiabilidade** para Esse aplicativo específico do Office. Se o local do documento não estiver em um local confiável, a personalização não é confiável e o processo de carregamento para aqui.
 
-5.  O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] instala a solução se ele ainda não foi instalado, baixa os manifestos de aplicativo e implantação mais recentes e executa uma série de verificações de segurança. Para obter mais informações, consulte [soluções do Office Secure](../vsto/securing-office-solutions.md).
+5. O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] instala a solução se ele ainda não foi instalado, baixa os manifestos de aplicativo e implantação mais recentes e executa uma série de verificações de segurança. Para obter mais informações, consulte [soluções do Office Secure](../vsto/securing-office-solutions.md).
 
-6.  Se a personalização é confiável para ser executado, o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] usa o manifesto de implantação e o manifesto do aplicativo para verificar se há atualizações do assembly. Se uma nova versão do assembly estiver disponível, o tempo de execução baixa a nova versão do assembly a ser o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] cache no computador cliente. Para obter mais informações, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
+6. Se a personalização é confiável para ser executado, o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] usa o manifesto de implantação e o manifesto do aplicativo para verificar se há atualizações do assembly. Se uma nova versão do assembly estiver disponível, o tempo de execução baixa a nova versão do assembly a ser o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] cache no computador cliente. Para obter mais informações, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
 
-7.  O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] cria um novo domínio de aplicativo no qual carregar o assembly de personalização.
+7. O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] cria um novo domínio de aplicativo no qual carregar o assembly de personalização.
 
-8.  O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] carrega o assembly de personalização no domínio do aplicativo.
+8. O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] carrega o assembly de personalização no domínio do aplicativo.
 
 9. O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] chamadas a **inicialização** manipulador de eventos em seu assembly de personalização. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md)
 

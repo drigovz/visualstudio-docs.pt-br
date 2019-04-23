@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aa8370dcf36eb13b6ba1491efc5def55a93fff34
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643100"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052526"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Passo a passo: Associação de dados complexos em um projeto de nível de documento
   Este passo a passo demonstra as Noções básicas de vinculação de dados complexos em um projeto de nível de documento. Você pode vincular várias células em uma planilha do Microsoft Office Excel para os campos no banco de dados Northwind do SQL Server.
@@ -40,20 +40,20 @@ ms.locfileid: "56643100"
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Acesso a um servidor com o banco de dados de exemplo Northwind do SQL Server.
+- Acesso a um servidor com o banco de dados de exemplo Northwind do SQL Server.
 
--   Permissões para ler e gravar no banco de dados do SQL Server.
+- Permissões para ler e gravar no banco de dados do SQL Server.
 
 ## <a name="create-a-new-project"></a>Criar um novo projeto
  A primeira etapa é criar um projeto de pasta de trabalho do Excel.
 
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto
 
-1.  Criar um projeto de pasta de trabalho do Excel com o nome **vinculação de dados complexos de meu**. No assistente, selecione **criar um novo documento**.
+1. Criar um projeto de pasta de trabalho do Excel com o nome **vinculação de dados complexos de meu**. No assistente, selecione **criar um novo documento**.
 
      Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -91,15 +91,15 @@ ms.locfileid: "56643100"
 
 #### <a name="to-add-a-list-object"></a>Para adicionar um objeto de lista
 
-1.  Verifique se que o **Meus Binding.xlsx dados complexos** pasta de trabalho é aberta no designer do Visual Studio, com **Sheet1** exibido.
+1. Verifique se que o **Meus Binding.xlsx dados complexos** pasta de trabalho é aberta no designer do Visual Studio, com **Sheet1** exibido.
 
-2.  Abra o **fontes de dados** janela e selecione o **funcionários** nó.
+2. Abra o **fontes de dados** janela e selecione o **funcionários** nó.
 
-3.  Clique na seta suspensa que aparece.
+3. Clique na seta suspensa que aparece.
 
-4.  Selecione **ListObject** na lista suspensa.
+4. Selecione **ListObject** na lista suspensa.
 
-5.  Arraste o **funcionários** tabela para a célula **A6**.
+5. Arraste o **funcionários** tabela para a célula **A6**.
 
      Um <xref:Microsoft.Office.Tools.Excel.ListObject> controle chamado `EmployeesListObject` é criado na célula **A6**. Ao mesmo tempo, uma <xref:System.Windows.Forms.BindingSource> nomeado `EmployeesBindingSource`, um adaptador de tabela e um <xref:System.Data.DataSet> instância são adicionados ao projeto. O controle é associado à <xref:System.Windows.Forms.BindingSource>, que por sua vez é associado a <xref:System.Data.DataSet> instância.
 
@@ -132,7 +132,7 @@ ms.locfileid: "56643100"
 
 ### <a name="to-save-changes-to-the-database"></a>Para salvar as alterações no banco de dados
 
-1.  Adicionar um manipulador de eventos para o <xref:System.Windows.Forms.Control.Click> eventos do `button`e adicione o seguinte código para confirmar todas as alterações que foram feitas no conjunto de dados no banco de dados.
+1. Adicionar um manipulador de eventos para o <xref:System.Windows.Forms.Control.Click> eventos do `button`e adicione o seguinte código para confirmar todas as alterações que foram feitas no conjunto de dados no banco de dados.
 
      [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
      [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
@@ -142,33 +142,33 @@ ms.locfileid: "56643100"
 
 ### <a name="to-test-the-data-binding"></a>Para testar a associação de dados
 
--   Pressione **F5**.
+- Pressione **F5**.
 
      Verifique se que, quando a pasta de trabalho é aberto, o objeto de lista é preenchido com dados do **funcionários** tabela.
 
 ### <a name="to-modify-data"></a>Para modificar dados
 
-1.  Clique na célula **B7**, que deve conter o nome **Davolio**.
+1. Clique na célula **B7**, que deve conter o nome **Davolio**.
 
-2.  Digite o nome **Anderson**, em seguida, pressione **Enter**.
+2. Digite o nome **Anderson**, em seguida, pressione **Enter**.
 
 ### <a name="to-modify-a-column-header"></a>Para modificar um cabeçalho de coluna
 
-1.  Clique na célula que contém o cabeçalho de coluna **LastName**.
+1. Clique na célula que contém o cabeçalho de coluna **LastName**.
 
-2.  Tipo de **Sobrenome**, incluindo um espaço entre as duas palavras e, em seguida, pressione **Enter**.
+2. Tipo de **Sobrenome**, incluindo um espaço entre as duas palavras e, em seguida, pressione **Enter**.
 
 ### <a name="to-save-data"></a>Para salvar dados
 
-1.  Clique em **salvar** na planilha.
+1. Clique em **salvar** na planilha.
 
-2.  Saia do Excel. Clique em **não** quando for solicitado a salvar as alterações feitas por você.
+2. Saia do Excel. Clique em **não** quando for solicitado a salvar as alterações feitas por você.
 
-3.  Pressione **F5** para executar o projeto novamente.
+3. Pressione **F5** para executar o projeto novamente.
 
      O objeto de lista é preenchido com os dados do **funcionários** tabela.
 
-4.  Observe que o nome na célula **B7** ainda **Anderson**, quais são os dados de alterar o que você fez e salvo no banco de dados. O cabeçalho da coluna **LastName** foi alterado para seu formato original sem espaço, porque o cabeçalho de coluna não está associado ao banco de dados e você não salvou as alterações feitas à planilha.
+4. Observe que o nome na célula **B7** ainda **Anderson**, quais são os dados de alterar o que você fez e salvo no banco de dados. O cabeçalho da coluna **LastName** foi alterado para seu formato original sem espaço, porque o cabeçalho de coluna não está associado ao banco de dados e você não salvou as alterações feitas à planilha.
 
 ### <a name="to-add-new-rows"></a>Para adicionar novas linhas
 
@@ -184,44 +184,44 @@ ms.locfileid: "56643100"
 
 ### <a name="to-delete-rows"></a>Para excluir linhas
 
--   O número de 16 (linha 16) no lado esquerdo da planilha com o botão direito e, em seguida, clique em **excluir**.
+- O número de 16 (linha 16) no lado esquerdo da planilha com o botão direito e, em seguida, clique em **excluir**.
 
 ### <a name="to-sort-the-rows-in-the-list"></a>Para classificar as linhas na lista
 
-1.  Selecione uma célula dentro da lista.
+1. Selecione uma célula dentro da lista.
 
      Botões de seta aparecerão em cada cabeçalho de coluna.
 
-2.  Clique no botão de seta para a **Sobrenome** cabeçalho de coluna.
+2. Clique no botão de seta para a **Sobrenome** cabeçalho de coluna.
 
-3.  Clique em **classificar em ordem crescente**.
+3. Clique em **classificar em ordem crescente**.
 
      As linhas são classificadas em ordem alfabética por sobrenome.
 
 ### <a name="to-filter-information"></a>Para filtrar informações
 
-1.  Selecione uma célula dentro da lista.
+1. Selecione uma célula dentro da lista.
 
-2.  Clique no botão de seta para a **título** cabeçalho de coluna.
+2. Clique no botão de seta para a **título** cabeçalho de coluna.
 
-3.  Clique em **representante de vendas**.
+3. Clique em **representante de vendas**.
 
      A lista mostra somente as linhas que têm **representante de vendas** na **título** coluna.
 
-4.  Clique no botão de seta para a **título** cabeçalho da coluna novamente.
+4. Clique no botão de seta para a **título** cabeçalho da coluna novamente.
 
-5.  Clique em **(All)**.
+5. Clique em **(All)**.
 
      A filtragem é removida e todas as linhas são exibidos.
 
 ## <a name="next-steps"></a>Próximas etapas
  Este passo a passo mostra as Noções básicas de vinculação de uma tabela em um banco de dados para um objeto de lista. Estas são algumas tarefas que podem vir a seguir:
 
--   Armazenar em cache os dados para que possa ser usado offline. Para obter mais informações, confira [Como: Armazenar em cache dados para uso offline ou em um servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
+- Armazenar em cache os dados para que possa ser usado offline. Para obter mais informações, confira [Como: Armazenar em cache dados para uso offline ou em um servidor](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md).
 
--   Implante a solução. Para obter mais informações, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
+- Implante a solução. Para obter mais informações, consulte [implantar uma solução do Office](../vsto/deploying-an-office-solution.md).
 
--   Crie uma relação mestre/detalhes entre um campo e uma tabela. Para obter mais informações, confira [Passo a passo: Criar uma relação de detalhes mestre usando um conjunto de dados armazenados em cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
+- Crie uma relação mestre/detalhes entre um campo e uma tabela. Para obter mais informações, confira [Passo a passo: Criar uma relação de detalhes mestre usando um conjunto de dados armazenados em cache](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Associar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md)

@@ -8,60 +8,60 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8808804c5b99918e68169e4ab5510cdb5c634a8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 16f2dafb6938c40a1d14f805c6a6deff6f25d16d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670492"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056102"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Padrões de composição para Visual Studio
 Padrões compostos combinam elementos de design e interação em configurações distintas. Alguns dos mais importantes compostos padrões no Visual Studio em relação à consistência incluem:
 
--   [Visualização de dados](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_DataVisualization)
+- [Visualização de dados](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_DataVisualization)
 
--   [Interface do usuário no objeto e inspecionar](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
+- [Interface do usuário no objeto e inspecionar](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_OnObjectUI)
 
--   [Modelos de seleção](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)
+- [Modelos de seleção](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_SelectionModels)
 
--   [Salvando as configurações e persistência](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
+- [Salvando as configurações e persistência](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_PersistenceAndSavingSettings)
 
--   [Entrada de toque](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
+- [Entrada de toque](../../extensibility/ux-guidelines/composite-patterns-for-visual-studio.md#BKMK_TouchInput)
 
-##  <a name="BKMK_DataVisualization"></a> Visualização de dados
+## <a name="BKMK_DataVisualization"></a> Visualização de dados
 
 ### <a name="overview"></a>Visão geral
  Os gráficos são uma maneira visual de agregação e visualizar os dados a fim de melhorar a tomada de decisões. Eles podem ajudar os usuários enfrentados muitos dados, mas pouco ou seja, veja o que merece atenção e o que pode precisar de uma ação.
 
  O usuário se beneficiará de um gráfico se qualquer uma das seguintes condições forem verdadeiras:
 
--   O gráfico possam ajudar os usuários a identificar as tarefas que podem atuar em?
+- O gráfico possam ajudar os usuários a identificar as tarefas que podem atuar em?
 
--   O gráfico permitirá que os usuários prever as consequências de possíveis alterações?
+- O gráfico permitirá que os usuários prever as consequências de possíveis alterações?
 
--   O gráfico ajudará os usuários descobrir tendências e identificar padrões?
+- O gráfico ajudará os usuários descobrir tendências e identificar padrões?
 
--   O gráfico permitirá que os usuários a tomar decisões melhores?
+- O gráfico permitirá que os usuários a tomar decisões melhores?
 
--   O gráfico ajudará a responder a perguntas específicas que os usuários podem ter no contexto fornecido?
+- O gráfico ajudará a responder a perguntas específicas que os usuários podem ter no contexto fornecido?
 
 #### <a name="general-rules-for-charts"></a>Regras gerais para gráficos
 
--   Rotular dados claramente. Ilustrações sem explicação são apenas belas fotos.
+- Rotular dados claramente. Ilustrações sem explicação são apenas belas fotos.
 
--   Inicie eixos em zero para evitar distorcer proporções. Tamanho da linha de comprimento e barra são indicações visuais importantes para entender as relações entre os pontos de dados.
+- Inicie eixos em zero para evitar distorcer proporções. Tamanho da linha de comprimento e barra são indicações visuais importantes para entender as relações entre os pontos de dados.
 
--   Crie gráficos, não infográficos. Infográficos são artísticas representações de dados e seu objetivo principal é narração visual. Gráficos pode (e deve) ser visualmente atraente, mas permitir que os dados falem por si próprios.
+- Crie gráficos, não infográficos. Infográficos são artísticas representações de dados e seu objetivo principal é narração visual. Gráficos pode (e deve) ser visualmente atraente, mas permitir que os dados falem por si próprios.
 
--   Evite skeumorphism, ilustrados gráficos de barras, marcas de hash de contraste e outras toques do infográfico.
+- Evite skeumorphism, ilustrados gráficos de barras, marcas de hash de contraste e outras toques do infográfico.
 
--   Não use efeitos 3D como um elemento decorativo. Use-as apenas se eles realmente integral para a capacidade do usuário a compreender as informações.
+- Não use efeitos 3D como um elemento decorativo. Use-as apenas se eles realmente integral para a capacidade do usuário a compreender as informações.
 
--   Evite usar várias linhas e preenchimentos, como mais de duas cores podem fazer esse tipo de gráfico difícil de ler e interpretar corretamente.
+- Evite usar várias linhas e preenchimentos, como mais de duas cores podem fazer esse tipo de gráfico difícil de ler e interpretar corretamente.
 
--   Não use um gráfico (ou qualquer ilustração) como o único meio de um conceito de compreensão ou interagir com os dados. Isso apresenta dificuldades para os usuários com deficiências visuais.
+- Não use um gráfico (ou qualquer ilustração) como o único meio de um conceito de compreensão ou interagir com os dados. Isso apresenta dificuldades para os usuários com deficiências visuais.
 
--   Não use gráficos como elementos decorativos ou gratuitos em uma página. Em outras palavras, se um gráfico não adiciona que qualquer valor ou ajuda usuários a resolver um problema, não o use.
+- Não use gráficos como elementos decorativos ou gratuitos em uma página. Em outras palavras, se um gráfico não adiciona que qualquer valor ou ajuda usuários a resolver um problema, não o use.
 
 ### <a name="chart-types"></a>Tipos de gráfico
  Tipos de gráficos usados no Visual Studio incluem gráficos de barras, gráficos de linhas, um gráfico de pizza modificado, conhecido como um gráfico de anel ou "gráfico de rosca," linhas do tempo, gráficos (também chamados de "cluster gráficos") e os gráficos de Gantt de dispersão. Cada tipo de gráfico é útil para comunicar-se um tipo diferente de informações.
@@ -81,7 +81,7 @@ Padrões compostos combinam elementos de design e interação em configurações
 |![Swatch 79D7F2](../../extensibility/ux-guidelines/media/0711_79d7f2.png "0711_79D7F2")|#79D7F2|121,215,242|
 |![Amostra B5B5B5](../../extensibility/ux-guidelines/media/0711_b5b5b5.png "0711_B5B5B5")|#B5B5B5|181,181,181|
 
-##  <a name="BKMK_OnObjectUI"></a> Interface do usuário no objeto e inspecionar
+## <a name="BKMK_OnObjectUI"></a> Interface do usuário no objeto e inspecionar
  Esta seção fornece contexto para inspecionar, também conhecida como exibição de inspeção de código, um tipo de interface do usuário no objeto exclusivo para o Visual Studio.
 
 ### <a name="overview"></a>Visão geral
@@ -92,9 +92,9 @@ Padrões compostos combinam elementos de design e interação em configurações
 
 - No objeto de interface de usuário no Visual Studio é um embutido ou flutuante e duráveis ou transitório.
 
-  -   Visualização de inspeção de código, um tipo de interface de usuário no objeto no Visual Studio, é embutida e duráveis.
+  - Visualização de inspeção de código, um tipo de interface de usuário no objeto no Visual Studio, é embutida e duráveis.
 
-  -   O CodeLens, um tipo de interface de usuário no objeto no Visual Studio, é temporário e flutuante
+  - O CodeLens, um tipo de interface de usuário no objeto no Visual Studio, é temporário e flutuante
 
   Noções básicas sobre como funciona um trecho de código, ou localizar detalhes sobre esse código, geralmente requer um desenvolvedor alternar o contexto e vá para outros tipos de conteúdo ou de outra janela. Essas mudanças de contexto podem ser prejudicial, pois os usuários podem perder o foco na sua tarefa original se eles deixam a janela principal. Além disso, obtendo que back do contexto original pode ser difícil, especialmente se alternar windows causou seu código original para ser obscurecido por outro da interface do usuário.
 
@@ -106,11 +106,11 @@ Padrões compostos combinam elementos de design e interação em configurações
 #### <a name="relationships-between-master-and-detail-content"></a>Relações entre o mestre e de conteúdo de detalhes
  Informações no ponto de atenção são usadas para exibir uma relação entre o conteúdo que o usuário está focalizado (o conteúdo "mestre") e adicionais relacionados ao conteúdo (o conteúdo de "Detalhes"). Nesse padrão, o conteúdo de detalhes é claramente relacionado ao conteúdo o usuário está trabalhando com e pode ser exibido perto o conteúdo mestre. Informações complementares ou informações que não podem ser resumidas sem sobrecarregar o conteúdo mestre devem seguir o padrão de outro, como uma janela de ferramentas.
 
--   **Sempre** exibir o conteúdo de detalhes em estreita proximidade com o conteúdo mestre.
+- **Sempre** exibir o conteúdo de detalhes em estreita proximidade com o conteúdo mestre.
 
--   **Sempre** Certifique-se de que o conteúdo de detalhes ainda permite que um usuário concentre-se no conteúdo mestre. Muitas vezes, a melhor maneira de conseguir isso é renderizar o conteúdo de detalhes como perto o conteúdo mestre quanto possível. Isso pode ser feito ao processar o conteúdo de detalhes em uma janela pop-up ao lado do conteúdo mestre ou ao renderizar o conteúdo embutido de detalhes sob o conteúdo mestre.
+- **Sempre** Certifique-se de que o conteúdo de detalhes ainda permite que um usuário concentre-se no conteúdo mestre. Muitas vezes, a melhor maneira de conseguir isso é renderizar o conteúdo de detalhes como perto o conteúdo mestre quanto possível. Isso pode ser feito ao processar o conteúdo de detalhes em uma janela pop-up ao lado do conteúdo mestre ou ao renderizar o conteúdo embutido de detalhes sob o conteúdo mestre.
 
--   **Nunca** usar informações no ponto de atenção que leva o usuário para fora o conteúdo mestre. Se os usuários precisam exibir o conteúdo de detalhes separadamente, expor uma ação explícita que permite ao usuário fazer isso.
+- **Nunca** usar informações no ponto de atenção que leva o usuário para fora o conteúdo mestre. Se os usuários precisam exibir o conteúdo de detalhes separadamente, expor uma ação explícita que permite ao usuário fazer isso.
 
 #### <a name="design-details"></a>Detalhes de design
  Depois de ter determinado no objeto de interface de usuário é a escolha certa, há quatro considerações de design principal:
@@ -131,123 +131,123 @@ Padrões compostos combinam elementos de design e interação em configurações
 
 ### <a name="on-object-ui-components"></a>Componentes de interface do usuário no objeto
 
-1.  Tipo de contêiner (apresentador de conteúdo)
+1. Tipo de contêiner (apresentador de conteúdo)
 
-    -   Flutuante
+    - Flutuante
 
-    -   Embutido
+    - Embutido
 
-2.  Tipo de conteúdo
+2. Tipo de conteúdo
 
-    -   Informação: dados que podem ser estáticos ou dinâmicos
+    - Informação: dados que podem ser estáticos ou dinâmicos
 
-    -   Acionáveis: comandos que alteram o conteúdo mestre
+    - Acionáveis: comandos que alteram o conteúdo mestre
 
-    -   Navegação: links que levam o usuário a outra janela ou aplicativo, como o MSDN
+    - Navegação: links que levam o usuário a outra janela ou aplicativo, como o MSDN
 
-3.  Gestos
+3. Gestos
 
-    -   Invocação
+    - Invocação
 
-    -   Exoneração
+    - Exoneração
 
-    -   A fixação
+    - A fixação
 
-    -   Outras interações
+    - Outras interações
 
-4.  Modelo de persistência e confirmar
+4. Modelo de persistência e confirmar
 
-    -   Transitório
+    - Transitório
 
-    -   duráveis
+    - duráveis
 
-    -   Automático
+    - Automático
 
-    -   Sob demanda
+    - Sob demanda
 
-5.  Indicadores de ambientes (opcionais)
+5. Indicadores de ambientes (opcionais)
 
-    -   Sublinhado de rabisco
+    - Sublinhado de rabisco
 
-    -   Ícone de marca inteligente
+    - Ícone de marca inteligente
 
-    -   Outros indicadores de ambientes
+    - Outros indicadores de ambientes
 
 #### <a name="container-content-presenter-type"></a>Tipo de contêiner (apresentador de conteúdo)
  Há duas opções principais disponíveis para apresentar conteúdo no ponto de atenção:
 
-1.  **Embutido:** um apresentador embutido, como a exibição de espiada que foi apresentado no Editor do Visual Studio 2013 código, torna o espaço para o novo conteúdo com a mudança de conteúdo existente.
+1. **Embutido:** um apresentador embutido, como a exibição de espiada que foi apresentado no Editor do Visual Studio 2013 código, torna o espaço para o novo conteúdo com a mudança de conteúdo existente.
 
-    -   **Prefira** embutido apresentadores se você espera que os usuários desejarão gastam uma quantidade significativa de tempo referindo-se a ou interagir com o conteúdo que você apresenta.
+    - **Prefira** embutido apresentadores se você espera que os usuários desejarão gastam uma quantidade significativa de tempo referindo-se a ou interagir com o conteúdo que você apresenta.
 
-    -   **Evite** embutido apresentadores se você espera que os usuários desejarão olhando as informações que você apresente e continuar sua tarefa principal com interrupção mínima.
+    - **Evite** embutido apresentadores se você espera que os usuários desejarão olhando as informações que você apresente e continuar sua tarefa principal com interrupção mínima.
 
-2.  **Flutuante:** um apresentador flutuante é posicionado o mais próximo possível conteúdo selecionado, mas não altera o layout do conteúdo existente. Várias estratégias podem ser empregadas, como a exibição de um painel flutuante de conteúdo sobre o mais próximo de espaço em branco disponível para o símbolo selecionado.
+2. **Flutuante:** um apresentador flutuante é posicionado o mais próximo possível conteúdo selecionado, mas não altera o layout do conteúdo existente. Várias estratégias podem ser empregadas, como a exibição de um painel flutuante de conteúdo sobre o mais próximo de espaço em branco disponível para o símbolo selecionado.
 
-    -   **Prefira** flutuante apresentadores se você espera que os usuários desejarão olhei as informações que você apresente e continuar sua tarefa principal com interrupção mínima.
+    - **Prefira** flutuante apresentadores se você espera que os usuários desejarão olhei as informações que você apresente e continuar sua tarefa principal com interrupção mínima.
 
-    -   **Evite** flutuante apresentadores se você espera que os usuários desejarão gastam uma quantidade significativa de tempo referindo-se a ou interagir com o conteúdo você presente.
+    - **Evite** flutuante apresentadores se você espera que os usuários desejarão gastam uma quantidade significativa de tempo referindo-se a ou interagir com o conteúdo você presente.
 
 #### <a name="content-type"></a>Tipo de conteúdo
  Há três principais tipos de conteúdo que pode ser exibido dentro de qualquer contêiner de interface do usuário no objeto. Qualquer combinação desses tipos de informações pode ser mostrada. Os três tipos são:
 
-1.  **Informação:** mais contêineres de interface do usuário exibirá algum tipo de conteúdo informativo ao objeto. O conteúdo pode representar informações sobre o estado atual do ambiente ou ele pode representar informações sobre uma potencial estado futuras do ambiente. Por exemplo, ele pode ser usado para mostrar o efeito de um comando específico, como uma refatoração, no código existente.
+1. **Informação:** mais contêineres de interface do usuário exibirá algum tipo de conteúdo informativo ao objeto. O conteúdo pode representar informações sobre o estado atual do ambiente ou ele pode representar informações sobre uma potencial estado futuras do ambiente. Por exemplo, ele pode ser usado para mostrar o efeito de um comando específico, como uma refatoração, no código existente.
 
-    -   **Sempre** usar as informações que você exibir a representação canônica. Por exemplo, o código deve se parecer com o código, completo com realce de sintaxe e deve respeitar a fonte e outras configurações de ambiente que o usuário tiver definido.
+    - **Sempre** usar as informações que você exibir a representação canônica. Por exemplo, o código deve se parecer com o código, completo com realce de sintaxe e deve respeitar a fonte e outras configurações de ambiente que o usuário tiver definido.
 
-    -   **Sempre** considere dar suporte a quaisquer ações sobre o conteúdo informativo que seria possível se a mesma informação é apresentada como conteúdo mestre. Por exemplo, se apresentar o código existente dentro de um contêiner de interface do usuário no objeto, considere seriamente a capacidade de navegar e modificar o código de suporte.
+    - **Sempre** considere dar suporte a quaisquer ações sobre o conteúdo informativo que seria possível se a mesma informação é apresentada como conteúdo mestre. Por exemplo, se apresentar o código existente dentro de um contêiner de interface do usuário no objeto, considere seriamente a capacidade de navegar e modificar o código de suporte.
 
-    -   **Sempre** considere o uso de uma cor de plano de fundo diferente se apresentar o conteúdo informativo que representa um estado de futuras potencial.
+    - **Sempre** considere o uso de uma cor de plano de fundo diferente se apresentar o conteúdo informativo que representa um estado de futuras potencial.
 
-2.  Acionáveis: alguns contêineres de interface do usuário no objeto fornecerá a capacidade de realizar alguma ação sobre o conteúdo mestre, como executar uma operação de refatoração.
+2. Acionáveis: alguns contêineres de interface do usuário no objeto fornecerá a capacidade de realizar alguma ação sobre o conteúdo mestre, como executar uma operação de refatoração.
 
-    -   **Sempre** posicionar acionáveis comandos separadamente do conteúdo informativo.
+    - **Sempre** posicionar acionáveis comandos separadamente do conteúdo informativo.
 
-    -   **Sempre** habilitar e desabilitar ações quando apropriado.
+    - **Sempre** habilitar e desabilitar ações quando apropriado.
 
-    -   **Sempre** consulte as diretrizes padrão para representar os comandos nas caixas de diálogo.
+    - **Sempre** consulte as diretrizes padrão para representar os comandos nas caixas de diálogo.
 
-    -   **Sempre** manter o número de ações que são expostas em um contêiner de interface do usuário no objeto absoluta mínimo. Interagindo com a interface de usuário no objeto deve ser uma experiência leve e rápida. O usuário não deve ter com o custo de energia sobre como gerenciar o contêiner de interface do usuário no objeto em si.
+    - **Sempre** manter o número de ações que são expostas em um contêiner de interface do usuário no objeto absoluta mínimo. Interagindo com a interface de usuário no objeto deve ser uma experiência leve e rápida. O usuário não deve ter com o custo de energia sobre como gerenciar o contêiner de interface do usuário no objeto em si.
 
-    -   **Sempre** considerar como e quando um contêiner de interface do usuário no objeto será fechado ou descartado. Como prática recomendada, qualquer ação que conclui a caixa de diálogo entre o mestre e de conteúdo de detalhes deve fechar também o contêiner de interface do usuário no objeto quando essa ação é invocada.
+    - **Sempre** considerar como e quando um contêiner de interface do usuário no objeto será fechado ou descartado. Como prática recomendada, qualquer ação que conclui a caixa de diálogo entre o mestre e de conteúdo de detalhes deve fechar também o contêiner de interface do usuário no objeto quando essa ação é invocada.
 
-3.  **Navegação:** alguns no objeto contêineres de interface do usuário incluem links que levam o usuário a outra janela ou aplicativo, como a abertura de um artigo do MSDN no navegador do usuário.
+3. **Navegação:** alguns no objeto contêineres de interface do usuário incluem links que levam o usuário a outra janela ou aplicativo, como a abertura de um artigo do MSDN no navegador do usuário.
 
-    -   **Sempre** preceder qualquer link de navegação com "Abrir" para que os usuários não ficará surpreso com a qual se está navegando para algum outro conteúdo.
+    - **Sempre** preceder qualquer link de navegação com "Abrir" para que os usuários não ficará surpreso com a qual se está navegando para algum outro conteúdo.
 
-    -   **Sempre** separar os links de navegação dos links acionáveis.
+    - **Sempre** separar os links de navegação dos links acionáveis.
 
 #### <a name="ambient-indicators-optional"></a>Indicadores de ambientes (opcionais)
  Indicadores de ambientes podem ser sutil, incluindo texto apresentado em uma cor contrastante do restante do código, ou óbvio, incluindo símbolos tickler como sublinhados rabisco e ícones de marca inteligente. Indicadores de ambientes se comunicar a disponibilidade de informações adicionais relevantes. O ideal é que eles fornecem informações úteis mesmo sem exigir que o usuário interagir com eles.
 
--   **Sempre** posicionar um indicador de ambiente para que ele não for distraí-lo ou sobrecarregar o usuário. Se for impossível para um ambiente indicador de posição de forma, considere a possibilidade de outra solução.
+- **Sempre** posicionar um indicador de ambiente para que ele não for distraí-lo ou sobrecarregar o usuário. Se for impossível para um ambiente indicador de posição de forma, considere a possibilidade de outra solução.
 
--   **Sempre** posicionar o indicador de ambiente mais próximo possível para o conteúdo que está relacionado ao.
+- **Sempre** posicionar o indicador de ambiente mais próximo possível para o conteúdo que está relacionado ao.
 
--   **Sempre** tentar criar um indicador que resume as informações que ele disponibiliza. Recomenda-se fornecer uma contagem do número de itens de dados disponíveis (por exemplo, "3 referências", em vez de simplesmente "Referências") ou pensar em alguma outra maneira para resumir os dados.
+- **Sempre** tentar criar um indicador que resume as informações que ele disponibiliza. Recomenda-se fornecer uma contagem do número de itens de dados disponíveis (por exemplo, "3 referências", em vez de simplesmente "Referências") ou pensar em alguma outra maneira para resumir os dados.
 
-    -   Em casos em que os dados para um indicador não podem sempre ser computados e exibidos, considere imediatamente fornecendo comentários progressivo, como os valores são computados. Por exemplo, considere animando alterações que refletem as atualizações dos dados disponíveis, semelhantes à forma como o bloco dinâmico de email no Windows Phone é atualizada conforme o número de aumentos de emails não lidos.
+    - Em casos em que os dados para um indicador não podem sempre ser computados e exibidos, considere imediatamente fornecendo comentários progressivo, como os valores são computados. Por exemplo, considere animando alterações que refletem as atualizações dos dados disponíveis, semelhantes à forma como o bloco dinâmico de email no Windows Phone é atualizada conforme o número de aumentos de emails não lidos.
 
--   **Nunca** adicionar indicadores mais do que um usuário pode realizar razoavelmente para uma determinada parte do conteúdo. Indicadores de ambientes devem ser útil sem exigir qualquer interação do usuário. Indicadores de perdem seu ambiente se precisarem de estouro e outros controles de gerenciamento para colocá-los em modo de exibição.
+- **Nunca** adicionar indicadores mais do que um usuário pode realizar razoavelmente para uma determinada parte do conteúdo. Indicadores de ambientes devem ser útil sem exigir qualquer interação do usuário. Indicadores de perdem seu ambiente se precisarem de estouro e outros controles de gerenciamento para colocá-los em modo de exibição.
 
 #### <a name="gestures"></a>Gestos
  Um aspecto importante de permitir que o usuário manter o foco no conteúdo mestre está dando suporte os gestos direito para abrir e ignorar o conteúdo de detalhes adicionais.
 
--   **Sempre** exigem que o usuário executar alguma gesto explícito para abrir o conteúdo adicional. Gestos abertos comuns incluem:
+- **Sempre** exigem que o usuário executar alguma gesto explícito para abrir o conteúdo adicional. Gestos abertos comuns incluem:
 
-    -   **Passe o mouse:** dicas de ferramenta ou conteúdo informativo não interativo
+    - **Passe o mouse:** dicas de ferramenta ou conteúdo informativo não interativo
 
-    -   **Comando explícito:** apresentador embutido
+    - **Comando explícito:** apresentador embutido
 
-    -   **Clique duas vezes o indicador de ambiente:** Janela pop-up do CodeLens
+    - **Clique duas vezes o indicador de ambiente:** Janela pop-up do CodeLens
 
--   **Sempre** ignorar o conteúdo de detalhes, sempre que o usuário pressiona a tecla Esc.
+- **Sempre** ignorar o conteúdo de detalhes, sempre que o usuário pressiona a tecla Esc.
 
--   **Sempre** considerar o contexto da interface do usuário no objeto. Para conteúdo apresentadores que permitem a interação dentro do contêiner, considere cuidadosamente se deseja mostrar informações adicionais ao focalizar, que é a probabilidade de ser perturbador para o fluxo de trabalho do usuário.
+- **Sempre** considerar o contexto da interface do usuário no objeto. Para conteúdo apresentadores que permitem a interação dentro do contêiner, considere cuidadosamente se deseja mostrar informações adicionais ao focalizar, que é a probabilidade de ser perturbador para o fluxo de trabalho do usuário.
 
--   **Nunca** exibir o conteúdo ao passar o que parece ser editável ou convida interação do usuário. Esse comportamento pode frustrar os usuários se eles tentarem move o cursor sobre o conteúdo de detalhes, como o comportamento padrão para uma dica de ferramenta é descartar imediatamente quando o cursor não estiver mais sobre o mestre de conteúdo que o produziu.
+- **Nunca** exibir o conteúdo ao passar o que parece ser editável ou convida interação do usuário. Esse comportamento pode frustrar os usuários se eles tentarem move o cursor sobre o conteúdo de detalhes, como o comportamento padrão para uma dica de ferramenta é descartar imediatamente quando o cursor não estiver mais sobre o mestre de conteúdo que o produziu.
 
-##  <a name="BKMK_SelectionModels"></a> Modelos de seleção
+## <a name="BKMK_SelectionModels"></a> Modelos de seleção
 
 ### <a name="overview"></a>Visão geral
  Um modelo de seleção é o mecanismo usado para indicar e confirmar as operações em um ou mais objetos de interesse na interface do usuário. Este tópico aborda os padrões de interação de seleção em editores de documento do Visual Studio: editores de texto, superfícies de design e modelagem de superfícies.
@@ -317,11 +317,11 @@ Padrões compostos combinam elementos de design e interação em configurações
 #### <a name="interaction"></a>Interação
  Seleção de objetos gráficos pode ser complexa e depende de vários fatores:
 
--   **Modelo de seleção primária do editor.** Os editores que contêm objetos gráficos também podem ser usados para editar o texto ou grades. Por exemplo, o editor pode ser um editor de texto que também oferece suporte a colocação de objetos gráficos, como o designer XAML do Visual Studio. Suporte a vários tipos de objeto pode afetar como o usuário seleciona grupos compostos por diferentes tipos de objetos.
+- **Modelo de seleção primária do editor.** Os editores que contêm objetos gráficos também podem ser usados para editar o texto ou grades. Por exemplo, o editor pode ser um editor de texto que também oferece suporte a colocação de objetos gráficos, como o designer XAML do Visual Studio. Suporte a vários tipos de objeto pode afetar como o usuário seleciona grupos compostos por diferentes tipos de objetos.
 
--   **Suporte para os estados de seleção primária e secundária.** Um editor pode fornecer uma seleção primária e secundária estados para que os objetos podem ser editados de forma sincronizada, alinhados entre si, redimensionado juntos, e assim por diante.
+- **Suporte para os estados de seleção primária e secundária.** Um editor pode fornecer uma seleção primária e secundária estados para que os objetos podem ser editados de forma sincronizada, alinhados entre si, redimensionado juntos, e assim por diante.
 
--   **Suporte de edição in-loco.** Editores também podem permitir que o conteúdo de seus objetos de gráficos a ser editado. Por exemplo, uma forma de retângulo também pode conter texto interno que pode ser alterado pelo usuário. Além disso, esse texto pode ser centralizado ou justificado. Edição in-loco envolve um nível mais detalhado de interação do usuário e, portanto, requer um conjunto apropriado de indicações visuais para apresentar informações de estado para o usuário.
+- **Suporte de edição in-loco.** Editores também podem permitir que o conteúdo de seus objetos de gráficos a ser editado. Por exemplo, uma forma de retângulo também pode conter texto interno que pode ser alterado pelo usuário. Além disso, esse texto pode ser centralizado ou justificado. Edição in-loco envolve um nível mais detalhado de interação do usuário e, portanto, requer um conjunto apropriado de indicações visuais para apresentar informações de estado para o usuário.
 
 #### <a name="mouse-interaction"></a>Interação do mouse
 
@@ -390,7 +390,7 @@ Padrões compostos combinam elementos de design e interação em configurações
 
  **Seleção primária com duas seleções secundárias**
 
-####  <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Aparência da seleção de objeto gráfico
+#### <a name="BKMK_GraphicalObjectSelectionAppearance"></a> Aparência da seleção de objeto gráfico
  As alças de seleção são desenhados em um padrão retangular ao redor da caixa delimitadora do objeto de quadrados. O gráfico abaixo mostra exemplos de vários estados em que um objeto gráfico pode ter com a alça de dimensionamento e aparência de edição in-loco. O tamanho dos identificadores deve ser vinculado a borda da janela e métricas de borda usando o **GetSystemMetrics** API.
 
 | Estado | Aparência | Detalhes do Visual |
@@ -445,11 +445,11 @@ Padrões compostos combinam elementos de design e interação em configurações
 
  Arrastar no corpo da lista faz uma das três coisas:
 
--   Inicia uma seleção de região, se a lista dá suporte a ele e o mouse para baixo no espaço em branco
+- Inicia uma seleção de região, se a lista dá suporte a ele e o mouse para baixo no espaço em branco
 
--   Inicia uma operação de arrastar/soltar se a lista de célula ou linha dá suporte a que está sendo uma origem do arrasto
+- Inicia uma operação de arrastar/soltar se a lista de célula ou linha dá suporte a que está sendo uma origem do arrasto
 
--   Seleciona a linha atual
+- Seleciona a linha atual
 
 ##### <a name="in-place-editing"></a>Edição in-loco
  Quando é permitido edição in-loco, há dois modelos básicos: Seletor de propriedade e controle de edição simples. Com um controle de edição simples, o conteúdo é realçado e está pronto para edição no local é ativado assim que de entrada do usuário. Sempre que um seletor de propriedade é implementado, o botão que invoca o seletor de propriedades é exibido depois que o modo de edição no local é ativado, e a seleção atual não é realçada. O botão de seletor deve ser justificado à direita da célula. Para obter exemplos de edição in-loco, consulte a **janela de propriedades** e **lista de tarefas** no Visual Studio.
@@ -457,21 +457,21 @@ Padrões compostos combinam elementos de design e interação em configurações
 ##### <a name="keyboard-support"></a>Suporte ao teclado
  Suporte de teclado para a seleção em listas e grades segue as convenções padrão do Windows:
 
--   Teclas de seta para navegar pela lista, selecionando cada célula da linha/como o foco é movido.
+- Teclas de seta para navegar pela lista, selecionando cada célula da linha/como o foco é movido.
 
--   SHIFT + seta executa uma seleção contígua na direção das teclas de direção.
+- SHIFT + seta executa uma seleção contígua na direção das teclas de direção.
 
--   CTRL + seta para a seguido de barra de espaço alterna entre adicionando e removendo itens da lista de seleção, a criação de uma seleção não contíguo.
+- CTRL + seta para a seguido de barra de espaço alterna entre adicionando e removendo itens da lista de seleção, a criação de uma seleção não contíguo.
 
--   Para as grades que contenham hierarquias aninhadas, a tecla de seta para a direita expande uma linha pai e a tecla de seta para a esquerda recolhe um.
+- Para as grades que contenham hierarquias aninhadas, a tecla de seta para a direita expande uma linha pai e a tecla de seta para a esquerda recolhe um.
 
--   A tecla Tab move o foco entre as células na linha atual, se as células são editáveis.
+- A tecla Tab move o foco entre as células na linha atual, se as células são editáveis.
 
--   A tecla Enter executa o comando padrão no item na lista (geralmente **abrir**).
+- A tecla Enter executa o comando padrão no item na lista (geralmente **abrir**).
 
--   A tecla F2 ativa a edição in-loco para a célula selecionada no momento.
+- A tecla F2 ativa a edição in-loco para a célula selecionada no momento.
 
-##  <a name="BKMK_PersistenceAndSavingSettings"></a> Salvando as configurações e persistência
+## <a name="BKMK_PersistenceAndSavingSettings"></a> Salvando as configurações e persistência
 
 ### <a name="overview"></a>Visão geral
  Embora cada componente de software no Visual Studio é geralmente responsável por seu próprio estado e persistência, o Visual Studio salva automaticamente as configurações em alguns casos, como com posições e tamanhos de janela. A tabela a seguir é uma combinação de configurações salvas automaticamente e que exigem um usuário explícito ou programado a ação a ser executada.
@@ -488,17 +488,17 @@ Padrões compostos combinam elementos de design e interação em configurações
 
  O que o usuário está fazendo e quando eles estão fazendo, determina se uma configuração está sendo salvo na memória (durante a sessão), salva em disco (entre as sessões como uma configuração de registro), como parte do projeto ou solução de arquivo em si, como parte do **solução Opções (. suo)** de arquivo, ou como um configurações personalizadas de arquivo que somente esse componente de software conhecem. A tabela acima mostra vários eventos no qual as configurações podem ser salvas. No entanto, existem outras ocasiões em que deseja salvar o estado:
 
--   Quando o usuário altera o local dentro de uma caixa de diálogo ou janela
+- Quando o usuário altera o local dentro de uma caixa de diálogo ou janela
 
--   Quando o usuário transfere o foco para outra janela
+- Quando o usuário transfere o foco para outra janela
 
--   Quando o usuário alterna de design para o modo de depuração
+- Quando o usuário alterna de design para o modo de depuração
 
--   Quando o usuário fizer logoff de sua conta
+- Quando o usuário fizer logoff de sua conta
 
--   Quando o computador entra em hibernação ou desligado
+- Quando o computador entra em hibernação ou desligado
 
--   Quando o computador/disco rígido está prestes a ser reformatado e configure novamente
+- Quando o computador/disco rígido está prestes a ser reformatado e configure novamente
 
 ### <a name="window-configurations"></a>Configurações de janela
  Uma configuração de janela é a apresentação básica do ambiente de desenvolvimento - é um esquema consiste em lista de janelas de ferramenta presentes e a maneira na qual eles são organizados. Para o windows gerenciados pelo IDE (janelas do IDE), informações de layout são mantidas por usuário, portanto, quando um usuário inicia o IDE, o layout da janela é exibida mesmo que, quando elas duram, Visual Studio foi encerrado. O estado e a posição das janelas do IDE é mantido em um arquivo de opções personalizadas em formato XML. Janelas de ferramentas que são criadas por pacotes carregados no IDE manter suas informações de estado no registro e podem ou não ser por usuário.
@@ -506,17 +506,17 @@ Padrões compostos combinam elementos de design e interação em configurações
 #### <a name="profile-specific-layouts"></a>Layouts de específico para o perfil
  Cada perfil inclui layouts de janela da ferramenta, organizados de forma familiar para pessoas específicas do desenvolvedor (os desenvolvedores de Visual C++ esperam ver a **Gerenciador de soluções** no lado esquerdo do IDE, enquanto os desenvolvedores de c# esperam ver o  **Gerenciador de soluções** à direita). Layouts de janela específico para o perfil são carregados depois que o usuário escolhe um perfil na inicialização. Um autor do pacote deve determinar o layout da janela mais adequado para a experiência de seus clientes, sabendo que as alterações que o usuário faz a configuração de janela, em seguida, ser persistente.
 
-##  <a name="BKMK_TouchInput"></a> Entrada de toque
+## <a name="BKMK_TouchInput"></a> Entrada de toque
  Os usuários estão usando cada vez mais produtos de desenvolvimento da Microsoft nos dispositivos de toque. No entanto, há barreiras que tornam difícil usar ferramentas de desenvolvimento em dispositivos sensíveis ao toque. Usuários esperam que nossos produtos para fornecer uma experiência de toque precisas e confiáveis. A intenção dessas diretrizes é informar decisões sobre quais recursos de toque para incorporar e incentivar uma experiência de toque consistente entre o Visual Studio e produtos relacionados.
 
 ### <a name="levels-of-experience"></a>Níveis de experiência
  Os seguintes níveis de experiência destinam-se a servir como um guia para ajudar as equipes a decidir quais recursos de toque para oferecer com base em seu nível desejado de interesse de investimento em contato.
 
--   O **experiência básica** é para equipes que desejam fornecer recursos de toque para que não há nenhum ineficiência ao longo de seu trabalho.
+- O **experiência básica** é para equipes que desejam fornecer recursos de toque para que não há nenhum ineficiência ao longo de seu trabalho.
 
--   O **otimizado experiência** é para equipes que desejam fornecer a maioria dos recursos comuns de toque (por exemplo, aqueles normalmente disponíveis em aplicativos de navegador da internet).
+- O **otimizado experiência** é para equipes que desejam fornecer a maioria dos recursos comuns de toque (por exemplo, aqueles normalmente disponíveis em aplicativos de navegador da internet).
 
--   O **elevados experiência** é para equipes que desejam adicionar recursos tais como gestos ou outros recursos opcionais que podem tornar seus aplicativos de primeiro toque amigável.
+- O **elevados experiência** é para equipes que desejam adicionar recursos tais como gestos ou outros recursos opcionais que podem tornar seus aplicativos de primeiro toque amigável.
 
 ||Experiência básica|Experiência otimizada|Experiência com privilégios elevados|
 |-|----------------------|--------------------------|-------------------------|

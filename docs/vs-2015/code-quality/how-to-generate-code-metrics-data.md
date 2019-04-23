@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ec6063f859333b54adaabea0c68af9fd884845b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aeba6a777dd060f310f9cbb8801b2405cd76f6b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924333"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045623"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>Como: Gerar dados de métricas de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,15 +31,15 @@ Você pode optar por gerar os resultados de métricas de código de uma soluçã
   
 ### <a name="to-generate-code-metrics-results-for-an-entire-solution"></a>Para gerar resultados de métricas de código para uma solução inteira  
   
--   Clique em **menu Analyze**e, em seguida, clique em **CalculateCode métricas para a solução**.  
+- Clique em **menu Analyze**e, em seguida, clique em **CalculateCode métricas para a solução**.  
   
      \- ou -  
   
--   Na **Gerenciador de soluções**, a solução com o botão direito e, em seguida, clique em **CalculateCode métricas**.  
+- Na **Gerenciador de soluções**, a solução com o botão direito e, em seguida, clique em **CalculateCode métricas**.  
   
      \- ou -  
   
--   No **resultados de métricas de código** janela, clique no **CalculateCode métricas para a solução** botão.  
+- No **resultados de métricas de código** janela, clique no **CalculateCode métricas para a solução** botão.  
   
      Os resultados são gerados e o **resultados de métricas de código** janela é exibida.  
   
@@ -57,7 +57,7 @@ Você pode optar por gerar os resultados de métricas de código de uma soluçã
   
 ### <a name="to-view-the-results-details"></a>Para exibir os detalhes de resultados  
   
--   Expanda a árvore na **hierarquia** coluna.  
+- Expanda a árvore na **hierarquia** coluna.  
   
 ## <a name="see-also"></a>Consulte também  
  [Medindo complexidade e facilidade de manutenção do código gerenciado](../code-quality/measuring-complexity-and-maintainability-of-managed-code.md)

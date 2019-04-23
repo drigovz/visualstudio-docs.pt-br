@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d19fa9b1859e97b115ca0799520456c102fecac9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 18261d9e8c6c7d3f65dea7c72439b29f4e2e0df3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928998"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044090"
 ---
 # <a name="how-to-test-and-debug-a-visualizer"></a>Como: Testar e depurar um visualizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Quando você tiver gravado um visualizador, precisará depurá-lo e testá-lo.
   
 ### <a name="to-create-a-visualizer-development-host"></a>Para criar um host de desenvolvimento do visualizador  
   
-1.  Em sua classe do lado do depurador, inclua um método estático que cria um objeto <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost> e chama seu método de apresentação:  
+1. Em sua classe do lado do depurador, inclua um método estático que cria um objeto <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerDevelopmentHost> e chama seu método de apresentação:  
   
     ```  
     public static void TestShowVisualizer(object objectToVisualize)  
@@ -48,13 +48,13 @@ Quando você tiver gravado um visualizador, precisará depurá-lo e testá-lo.
   
      Os parâmetros usados para criar o host são o objeto de dados que será exibido no visualizador (`objectToVisualize`) e o tipo de classe do lado do depurador.  
   
-2.  Adicione a seguinte instrução para chamar `TestShowVisualizer`. Se você criou o visualizador em uma biblioteca de classe, precisará criar um executável para chamar a biblioteca de classes e colocar essa instrução em seu executável:  
+2. Adicione a seguinte instrução para chamar `TestShowVisualizer`. Se você criou o visualizador em uma biblioteca de classe, precisará criar um executável para chamar a biblioteca de classes e colocar essa instrução em seu executável:  
   
     ```  
     DebuggerSide.TestShowVisualizer(myString);  
     ```  
   
-     Para obter um exemplo mais completo, consulte [passo a passo: Escrevendo um visualizador em C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+     Para obter um exemplo mais completo, consulte [passo a passo: Escrevendo um visualizador em c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Passo a passo: Como escrever um visualizador em C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md)   

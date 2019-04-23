@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 48b77e07524b6bcabd00de1d8082261e81807a72
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d3f453770dbb389a688db0a9edcc8e97e179858
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644452"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051305"
 ---
 # <a name="create-sharepoint-features"></a>Criar recursos do SharePoint
   Você pode usar um recurso do SharePoint para agrupar itens de projeto do SharePoint relacionados para facilitar a implantação. Você pode criar recursos, definir escopos e marcar outros recursos como dependências usando o Designer de recursos do SharePoint. O designer também gera um manifesto, que é um arquivo XML que descreve cada recurso.
@@ -26,9 +26,9 @@ ms.locfileid: "56644452"
 ## <a name="add-features-to-the-sharepoint-solution"></a>Adicionar recursos à solução do SharePoint
  Você pode adicionar um recurso à solução do SharePoint usando o Gerenciador de soluções ou o Packaging Explorer. Você pode usar um dos métodos a seguir para adicionar um recurso.
 
--   Na **Gerenciador de soluções**, abra o menu de atalho **recursos**e, em seguida, escolha **adicionar recurso**.
+- Na **Gerenciador de soluções**, abra o menu de atalho **recursos**e, em seguida, escolha **adicionar recurso**.
 
--   Na **Packaging Explorer**, abra o menu de atalho para o pacote e, em seguida, escolha **adicionar recurso**.
+- Na **Packaging Explorer**, abra o menu de atalho para o pacote e, em seguida, escolha **adicionar recurso**.
 
 ## <a name="using-the-feature-designer"></a>Usando o designer de recursos
  Uma solução do SharePoint pode conter um ou mais recursos do SharePoint, que são agrupadas sob o nó de recurso no Gerenciador de soluções. Cada recurso tem seu próprio **Designer de recursos** que você pode usar para personalizar as propriedades de recurso. Para obter mais informações, confira [Como: Personalizar um recurso do SharePoint](../sharepoint/how-to-customize-a-sharepoint-feature.md). Para diferenciar recursos uns dos outros, você pode configurar as propriedades de recurso, como o título, descrição, versão e escopo.

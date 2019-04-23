@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f62b580b72f7910f8d5a688acc8df61361286c0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a1763e51a09ba797bd22c85ba998e1533aa18f97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627916"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050754"
 ---
 # <a name="test-area-6-delete"></a>Área de teste 6: Excluir
 Essa área de plug-in de teste de controle de origem aborda as ações de exclusão.
@@ -36,13 +36,13 @@ Essa área de plug-in de teste de controle de origem aborda as ações de exclus
 ## <a name="expected-behavior"></a>Comportamento esperado
  O comportamento esperado para os casos de teste na área de teste delete é:
 
--   Item excluído não está mais visível dentro **Gerenciador de soluções**.
+- Item excluído não está mais visível dentro **Gerenciador de soluções**.
 
--   O pai do item ou projeto excluído foi extraído, conforme necessário (possivelmente com um prompt.)
+- O pai do item ou projeto excluído foi extraído, conforme necessário (possivelmente com um prompt.)
 
--   Depois de excluir um check-out ou foi adicionado um item, ele não aparece na **check-ins pendentes** janela.
+- Depois de excluir um check-out ou foi adicionado um item, ele não aparece na **check-ins pendentes** janela.
 
--   O item ainda existe dentro do armazenamento de controle de origem, mesmo após a exclusão e deve ser removido manualmente.
+- O item ainda existe dentro do armazenamento de controle de origem, mesmo após a exclusão e deve ser removido manualmente.
 
 |Ação|Etapas de teste|Resultados esperados para verificar|
 |------------|----------------|--------------------------------|

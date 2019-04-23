@@ -15,17 +15,17 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bae12b01a8fc1c879526bbf5df568c9ec40041c9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 2070c9c68719e51357f3cd5fed4bee3cfbc35fcf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867755"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051902"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Encontrando e usando extensões do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-As extensões do Visual Studio são pacotes de código executados dentro do Visual Studio e fornecem recursos novos ou aprimorados do Visual Studio. É possível encontrar mais informações sobre extensões do Visual Studio aqui: [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
+As extensões do Visual Studio são pacotes de código executados dentro do Visual Studio e fornecem recursos novos ou aprimorados do Visual Studio. Encontre mais informações sobre as extensões do Visual Studio aqui: [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
 
  É possível usar a caixa de diálogo **Extensões e Atualizações** para instalar as extensões e amostras do Visual Studio de sites e outros locais e habilitá-las, desabilitá-las, atualizá-las ou desinstalá-las. (**Ferramentas/Extensões e Atualizações** ou digite ou **Extensões** na janela **Início Rápido**). A caixa de diálogo também mostra atualizações para amostras e extensões instaladas. Também é possível baixar extensões de sites ou obtê-las de outros desenvolvedores.
 
@@ -54,9 +54,9 @@ As extensões do Visual Studio são pacotes de código executados dentro do Visu
 
  Se você desejar desabilitar as atualizações automáticas, será possível desabilitar o recurso para todas as extensões ou somente para extensões específicas.
 
--   Para desabilitar as atualizações automáticas para todas as extensões, clique no link **Alterar as configurações de Extensões e Atualizações** na caixa de diálogo **Extensões e Atualizações** e desmarque **Atualizar extensões automaticamente**.
+- Para desabilitar as atualizações automáticas para todas as extensões, clique no link **Alterar as configurações de Extensões e Atualizações** na caixa de diálogo **Extensões e Atualizações** e desmarque **Atualizar extensões automaticamente**.
 
--   Para desabilitar as atualizações automáticas de uma extensão específica, desmarque a opção **Atualizar automaticamente essa extensão** no painel de detalhes da extensão do lado direito da caixa de diálogo **Extensões e Atualizações**.
+- Para desabilitar as atualizações automáticas de uma extensão específica, desmarque a opção **Atualizar automaticamente essa extensão** no painel de detalhes da extensão do lado direito da caixa de diálogo **Extensões e Atualizações**.
 
 > [!NOTE]
 >  A partir do Visual Studio 2015 Atualização 2, é possível especificar (em **Ferramentas/Opções/Ambiente/Extensões e Atualizações**) se você deseja atualizações automáticas para extensões por usuário, todas as extensões do usuário ou ambas (a configuração padrão).

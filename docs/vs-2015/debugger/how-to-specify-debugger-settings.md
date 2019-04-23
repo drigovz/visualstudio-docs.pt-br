@@ -23,12 +23,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ad4e95f9032c3182da3fe59cee16e4ccc3066c4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 54cb1f67aa1738126fd78e2406c076a4fefa8823
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929271"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051450"
 ---
 # <a name="how-to-specify-debugger-settings"></a>Como: Especificar as configurações do depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,15 +37,15 @@ No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], você pode especificar várias 
   
 ### <a name="to-set-debugger-options"></a>Para definir as opções de depurador  
   
-1.  No menu **Ferramentas**, clique em **Opções**.  
+1. No menu **Ferramentas**, clique em **Opções**.  
   
-2.  Na caixa de diálogo **Opções**, abra a pasta **Depuração**.  
+2. Na caixa de diálogo **Opções**, abra a pasta **Depuração**.  
   
-3.  Na pasta **Depuração**, escolha a categoria de opções que você deseja.  
+3. Na pasta **Depuração**, escolha a categoria de opções que você deseja.  
   
      As opções mais comuns são localizadas na categoria **Geral**. Para obter mais informações, consulte [geral, depuração, caixa de diálogo Opções](../debugger/general-debugging-options-dialog-box.md).  
   
-4.  Selecionar ou limpar a opção ou as opções desejadas. Pressione F1 para obter ajuda sobre as opções.  
+4. Selecionar ou limpar a opção ou as opções desejadas. Pressione F1 para obter ajuda sobre as opções.  
   
 ## <a name="see-also"></a>Consulte também  
  [Caixa de diálogo Geral, Depuração, Opções](../debugger/general-debugging-options-dialog-box.md)   

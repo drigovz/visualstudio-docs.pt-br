@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: b5f2296e7dbd6c40327ed516f4da2bf51b8dd4cd
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
-ms.translationtype: MTE95
+ms.openlocfilehash: 9e4a30c3aa85969a4cbf712f2f4018c24169ff6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268555"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60051408"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvar dados em um banco de dados (várias tabelas)
 
@@ -31,15 +31,15 @@ Você pode salvar os dados em seu aplicativo de volta no banco de dados chamando
 
 As tarefas ilustradas neste passo a passo incluem:
 
--  Criando e configurando uma fonte de dados em seu aplicativo com o [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).
+- Criando e configurando uma fonte de dados em seu aplicativo com o [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).
 
--  Configurando os controles dos itens na [janela Data Sources](add-new-data-sources.md#data-sources-window). Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Configurando os controles dos itens na [janela Data Sources](add-new-data-sources.md#data-sources-window). Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--  Criando controles associados a dados arrastando itens da janela **Fontes de Dados** para o formulário.
+- Criando controles associados a dados arrastando itens da janela **Fontes de Dados** para o formulário.
 
--  Modificando alguns registros em cada tabela no conjunto de dados.
+- Modificando alguns registros em cada tabela no conjunto de dados.
 
--  Modificando o código para enviar os dados atualizados no conjunto de dados de volta ao banco de dados.
+- Modificando o código para enviar os dados atualizados no conjunto de dados de volta ao banco de dados.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -65,7 +65,7 @@ Criar um novo **aplicativo do Windows Forms** projeto para o C# ou o Visual Basi
 
 ## <a name="create-the-data-source"></a>Criar a fonte de dados
 
-Esta etapa cria uma fonte de dados com base em um banco de dados Northwind usando o **Assistente de Configuração de Fonte de Dados**. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
+Esta etapa cria uma fonte de dados com base em um banco de dados Northwind usando o **Assistente de Configuração de Fonte de Dados**. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: Instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
 1. Sobre o **dados** menu, selecione **Show Data Sources**.
 

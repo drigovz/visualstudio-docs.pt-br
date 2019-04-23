@@ -9,25 +9,25 @@ helpviewer_keywords:
 ms.assetid: 847717c9-477d-4ac9-8b2c-2da878912478
 caps.latest.revision: 11
 manager: jillfra
-ms.openlocfilehash: 91c1527de5a5af57602350f317507f97bac53810
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 83608d768940158dcdab427a557577677e56f7c8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922266"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056166"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Como: Criar um. Arquivo VSCT de um existente. Arquivo CTO
 Você pode criar um arquivo. VSCT de baseado em XML de um arquivo binário CTO de já existente. Isso permite aproveitar o novo formato de compilador de tabela do comando. Esse processo funciona mesmo se o arquivo de CTO já foi compilado a partir de um arquivo. ctc. Você pode editar e compilar o arquivo. VSCT em outro arquivo CTO já.  
   
 ### <a name="to-create-a-vsct-file-from-a-cto-file"></a>Para criar um arquivo. VSCT de um arquivo CTO já  
   
-1.  Obter cópias do arquivo CTO já e seu arquivo .ctsym correspondente.  
+1. Obter cópias do arquivo CTO já e seu arquivo .ctsym correspondente.  
   
-2.  Coloque os arquivos no mesmo diretório que o compilador vsct.exe.  
+2. Coloque os arquivos no mesmo diretório que o compilador vsct.exe.  
   
-3.  No Visual Studio Prompt de comando, vá para o diretório que contém os arquivos CTO já e .ctsym.  
+3. No Visual Studio Prompt de comando, vá para o diretório que contém os arquivos CTO já e .ctsym.  
   
-4.  Type **vsct.exe** _ctofilename_**.cto** _vsctfilename_**.vsct -S**_symfilename_**.ctsym**.  
+4. Type **vsct.exe** _ctofilename_**.cto** _vsctfilename_**.vsct -S**_symfilename_**.ctsym**.  
   
      `ctofilename` é o nome do arquivo CTO já `vsctfilename` é o nome do arquivo vsct para criar, e `symfilename` é o nome do arquivo .ctsym.  
   
