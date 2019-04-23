@@ -16,12 +16,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 514f4e3de9bd5b79387a17dffe0e016dc92ea91e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f9ae4de4f8dc044d578bb4f593dc9c6c77a7b0b6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923118"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083888"
 ---
 # <a name="error-unable-to-initiate-dcom-communication"></a>Erro: Não é possível iniciar a comunicação DCOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,9 +30,9 @@ Um erro DCOM ocorreu quando o computador local tentou se comunicar com o computa
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Se o computador remoto tiver o Firewall do Windows habilitado, consulte [definir configurar as ferramentas remotas no dispositivo](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) para obter instruções sobre como configurar o firewall para depuração local.  
+- Se o computador remoto tiver o Firewall do Windows habilitado, consulte [definir configurar as ferramentas remotas no dispositivo](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) para obter instruções sobre como configurar o firewall para depuração local.  
   
--   Para restaurar a autenticação do Windows, tente reiniciar os dois computadores. Examine os logs de eventos nos computadores local e remoto para encontrar erros de Kerberos e entre em contato com os administradores de domínio para problemas conhecidos.  
+- Para restaurar a autenticação do Windows, tente reiniciar os dois computadores. Examine os logs de eventos nos computadores local e remoto para encontrar erros de Kerberos e entre em contato com os administradores de domínio para problemas conhecidos.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depuração remota](../debugger/remote-debugging.md)

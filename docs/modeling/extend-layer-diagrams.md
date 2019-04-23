@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 150621514f9153b1e9d67f8e9c85a00275c27b15
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 5519328ef69f98737a7744f0162bdc0951433a60
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416104"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082887"
 ---
 # <a name="extend-dependency-diagrams"></a>Estender diagramas de dependência
 
@@ -23,23 +23,23 @@ Você pode escrever código para criar e atualizar diagramas de dependência e t
 
  Para obter mais informações sobre diagramas de dependência, consulte:
 
--   [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)
+- [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)
 
--   [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)
+- [Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)
 
--   [Criar diagramas de dependência usando seu código](../modeling/create-layer-diagrams-from-your-code.md)
+- [Criar diagramas de dependência usando seu código](../modeling/create-layer-diagrams-from-your-code.md)
 
--   [Validar código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)
+- [Validar código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)
 
-##  <a name="prereqs"></a> Requisitos
+## <a name="prereqs"></a> Requisitos
 
 Você deve ter os seguintes itens instalados no computador em que você deseja desenvolver suas extensões em camadas:
 
--   Visual Studio
+- Visual Studio
 
--   [SDK do Visual Studio](../extensibility/visual-studio-sdk.md)
+- [SDK do Visual Studio](../extensibility/visual-studio-sdk.md)
 
--   SDK de modelagem para Visual Studio
+- SDK de modelagem para Visual Studio
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 

@@ -16,12 +16,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f3456ec773b233da3ef2be1dfa7731460bdf6b44
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4cc41376905dd5bd5df5711d2de3edf1ea1d04dd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923377"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085032"
 ---
 # <a name="ca2000-dispose-objects-before-losing-scope"></a>CA2000: Descartar objetos antes de perder o escopo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,11 +46,11 @@ ms.locfileid: "58923377"
   
  A seguir estão algumas situações em que o usando a instrução não é suficiente para proteger os objetos de IDisposable e pode causar CA2000 ocorra.  
   
--   Retornar um objeto descartável requer que o objeto é construído em um bloco try/finally de fora do uso de um bloco.  
+- Retornar um objeto descartável requer que o objeto é construído em um bloco try/finally de fora do uso de um bloco.  
   
--   Inicializando membros de um objeto descartável não deve ser feito no construtor do uso de uma instrução.  
+- Inicializando membros de um objeto descartável não deve ser feito no construtor do uso de uma instrução.  
   
--   Construtores protegidos somente pelo manipulador de exceção de aninhamento. Por exemplo,  
+- Construtores protegidos somente pelo manipulador de exceção de aninhamento. Por exemplo,  
   
     ```  
     using (StreamReader sr = new StreamReader(new FileStream("C:\myfile.txt", FileMode.Create)))  
@@ -59,7 +59,7 @@ ms.locfileid: "58923377"
   
      faz com que CA2000 ocorrer porque uma falha na construção do objeto StreamReader pode resultar no objeto FileStream nunca seja fechado.  
   
--   Objetos dinâmicos devem usar um objeto de sombra para implementar o padrão de descarte de objetos de IDisposable.  
+- Objetos dinâmicos devem usar um objeto de sombra para implementar o padrão de descarte de objetos de IDisposable.  
   
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos  
  Não suprimir um aviso nessa regra, a menos que você chamou um método em seu objeto que chama `Dispose`, tais como <xref:System.IO.Stream.Close%2A>, ou se o método que gerou o aviso retornará um objeto IDisposable encapsula seu objeto.  

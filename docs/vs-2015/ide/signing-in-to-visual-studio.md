@@ -10,12 +10,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a688ff56f770f2446384ab34cf7da03d69827de4
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MTE95
+ms.openlocfilehash: 6e655cf78db50f4fbd590c16dfa6561cbe376b83
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842288"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083953"
 ---
 # <a name="signing-in-to-visual-studio"></a>Fazendo login no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ Será possível personalizar e otimizar sua experiência de desenvolvimento do V
 ## <a name="why-should-i-sign-in-to-visual-studio"></a>Por que devo me registrar no Visual Studio?
  Você obtém os seguintes benefícios entrando no Visual Studio:
 
--   **Concede acesso a uma ampla gama de benefícios** do programa Visual Studio Dev Essentials, incluindo software gratuito, treinamento, suporte e muito mais. Para obter mais informações, consulte [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp).
+- **Concede acesso a uma ampla gama de benefícios** do programa Visual Studio Dev Essentials, incluindo software gratuito, treinamento, suporte e muito mais. Para obter mais informações, consulte [Visual Studio Dev Essentials](https://aka.ms/vsdevhelp).
 
--   **Sincroniza as configurações do Visual Studio** – configurações que você personaliza, como associações de chave e tema de cor, se aplicam imediatamente quando você entra no Visual Studio em qualquer outro dispositivo. Consulte [Configurações sincronizadas no Visual Studio](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
+- **Sincroniza as configurações do Visual Studio** – configurações que você personaliza, como associações de chave e tema de cor, se aplicam imediatamente quando você entra no Visual Studio em qualquer outro dispositivo. Consulte [Configurações sincronizadas no Visual Studio](http://msdn.microsoft.com/library/dn135229%28v=vs.120%29.aspx).
 
--   **Desbloqueia permanentemente o Visual Studio Express** – você pode usar qualquer edição do Visual Studio Express por quanto tempo desejar, em vez de ficar limitado ao período de avaliação de 30 dias.
+- **Desbloqueia permanentemente o Visual Studio Express** – você pode usar qualquer edição do Visual Studio Express por quanto tempo desejar, em vez de ficar limitado ao período de avaliação de 30 dias.
 
--   **Desbloqueia o Visual Studio Community Edition**, em vez de ficar limitado ao período de avaliação de 30 dias.
+- **Desbloqueia o Visual Studio Community Edition**, em vez de ficar limitado ao período de avaliação de 30 dias.
 
--   **Estende o período de avaliação do Visual Studio** – você pode usar o Visual Studio Professional ou Visual Studio Enterprise por um período adicional de 90 dias, em vez ficar limitado ao período de avaliação de 30 dias.
+- **Estende o período de avaliação do Visual Studio** – você pode usar o Visual Studio Professional ou Visual Studio Enterprise por um período adicional de 90 dias, em vez ficar limitado ao período de avaliação de 30 dias.
 
--   **Desbloqueia o Visual Studio se você usa uma conta associada a uma assinatura do MSDN ou VSO**. Veja [Como desbloquear o Visual Studio](../ide/how-to-unlock-visual-studio.md).
+- **Desbloqueia o Visual Studio se você usa uma conta associada a uma assinatura do MSDN ou VSO**. Veja [Como desbloquear o Visual Studio](../ide/how-to-unlock-visual-studio.md).
 
--   **Conecta-se automaticamente a serviços como o Azure e Visual Studio Team Services** no IDE sem solicitar credenciais para a mesma conta novamente.
+- **Conecta-se automaticamente a serviços como o Azure e Visual Studio Team Services** no IDE sem solicitar credenciais para a mesma conta novamente.
 
 ## <a name="how-to-sign-in-to-visual-studio"></a>Como entrar no Visual Studio
  Ao iniciar o Visual Studio pela primeira vez, será solicitado que você entre e forneça algumas informações básicas de registro. Você deve escolher uma conta da Microsoft ou uma conta corporativa ou de estudante que melhor lhe representa. Se você não tiver uma conta da Microsoft, poderá criar uma gratuitamente. Consulte [Como me inscrevo em uma conta da Microsoft?](http://windows.microsoft.com/windows-live/sign-up-create-account-how)
@@ -53,12 +53,12 @@ Será possível personalizar e otimizar sua experiência de desenvolvimento do V
 ## <a name="to-change-your-profile-information"></a>Para alterar as informações do perfil
  Em **Arquivo &#124; Configurações da Conta**, você pode ver e atualizar informações sobre sua licença e seu perfil do Visual Studio. Para editar suas informações de perfil, como o nome de conta, a imagem de avatar ou o endereço de email:
 
-1.  Vá para **Arquivo &#124; Configurações da Conta**.
+1. Vá para **Arquivo &#124; Configurações da Conta**.
 
-2.  Na caixa de diálogo **Configurações da Conta**, escolha o link **Gerenciar Perfil do Visual Studio**.
+2. Na caixa de diálogo **Configurações da Conta**, escolha o link **Gerenciar Perfil do Visual Studio**.
 
-3.  Na página **Minhas Informações da Microsoft** no navegador, escolha o botão **Editar Informações**.
+3. Na página **Minhas Informações da Microsoft** no navegador, escolha o botão **Editar Informações**.
 
-4.  Altere as configurações que deseja.
+4. Altere as configurações que deseja.
 
-5.  Quando terminar, escolha o botão **Salvar alterações**.
+5. Quando terminar, escolha o botão **Salvar alterações**.

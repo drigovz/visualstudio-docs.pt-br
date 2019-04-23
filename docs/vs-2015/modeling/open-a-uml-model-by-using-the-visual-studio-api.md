@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21f9b02b84644bd748c88e9d08647fa7d57d951b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5baa2168eeae12f1a85fdce0b2981e267dcd6fbc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923415"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083875"
 ---
 # <a name="open-a-uml-model-by-using-the-visual-studio-api"></a>Abrir um modelo UML usando a API do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,11 +25,11 @@ Você também pode abrir modelos e diagramas na interface do usuário do Visual 
   
  Se você quiser ler um modelo no código do programa sem torná-la visível para o usuário, você pode usar os seguintes métodos:  
   
--   Visual Studio Model Bus permite que você acesse modelos e elementos dentro deles e fornece um método padrão de links de um modelo e outro. Para obter mais informações, consulte [modelos de UML integrar com outros modelos e ferramentas](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
+- Visual Studio Model Bus permite que você acesse modelos e elementos dentro deles e fornece um método padrão de links de um modelo e outro. Para obter mais informações, consulte [modelos de UML integrar com outros modelos e ferramentas](../modeling/integrate-uml-models-with-other-models-and-tools.md).  
   
--   Você pode abrir um modelo no modo somente leitura. Para obter mais informações, consulte [ler um modelo UML no código do programa](../modeling/read-a-uml-model-in-program-code.md).  
+- Você pode abrir um modelo no modo somente leitura. Para obter mais informações, consulte [ler um modelo UML no código do programa](../modeling/read-a-uml-model-in-program-code.md).  
   
-##  <a name="Showing"></a> Abrindo modelos e diagramas no Visual Studio  
+## <a name="Showing"></a> Abrindo modelos e diagramas no Visual Studio  
  Para abrir um modelo na interface do usuário, use a API padrão do Visual Studio `EnvDTE.DTE`. Há duas conversões úteis que podem ser executadas em itens de projeto de modelagem:  
   
 - `EnvDTE.Project` pode ser convertido para e de `IModelingProject`, se o projeto é um projeto de modelagem, e se o projeto é carregado no AppDomain atual.  

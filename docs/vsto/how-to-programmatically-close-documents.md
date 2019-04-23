@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dd5e73a272243aeb2ddc38ea5c2f49bb1b62e6a0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ca8537e6e28461bfd2e3b3d6d116571d15c04ea5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598356"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084434"
 ---
 # <a name="how-to-programmatically-close-documents"></a>Como: Fechar documentos programaticamente
   Você pode fechar o documento ativo ou você pode especificar um documento ser fechado.
@@ -30,7 +30,7 @@ ms.locfileid: "56598356"
 
 ### <a name="to-close-the-active-document-in-a-document-level-customization"></a>Para fechar o documento ativo em uma personalização no nível de documento
 
-1.  Chame o <xref:Microsoft.Office.Tools.Word.Document.Close%2A> método da `ThisDocument` classe em seu projeto para fechar o documento associado com a personalização. Para usar o exemplo de código a seguir, executá-la na `ThisDocument` classe.
+1. Chame o <xref:Microsoft.Office.Tools.Word.Document.Close%2A> método da `ThisDocument` classe em seu projeto para fechar o documento associado com a personalização. Para usar o exemplo de código a seguir, executá-la na `ThisDocument` classe.
 
     > [!NOTE]
     >  Este exemplo passa o <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> de valor para o *SaveChanges* parâmetro para fechar sem salvar as alterações ou solicitar que o usuário.
@@ -40,7 +40,7 @@ ms.locfileid: "56598356"
 
 ### <a name="to-close-the-active-document-in-a-vsto-add-in"></a>Para fechar o documento ativo em um suplemento do VSTO
 
-1.  Chame o <xref:Microsoft.Office.Interop.Word._Document.Close%2A> método da <xref:Microsoft.Office.Interop.Word._Application.ActiveDocument%2A> propriedade para fechar o documento ativo. Para usar o exemplo de código a seguir, executá-la na `ThisAddIn` classe em seu projeto.
+1. Chame o <xref:Microsoft.Office.Interop.Word._Document.Close%2A> método da <xref:Microsoft.Office.Interop.Word._Application.ActiveDocument%2A> propriedade para fechar o documento ativo. Para usar o exemplo de código a seguir, executá-la na `ThisAddIn` classe em seu projeto.
 
     > [!NOTE]
     >  Este exemplo passa o <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> de valor para o *SaveChanges* parâmetro para fechar sem salvar as alterações ou solicitar que o usuário.
@@ -53,7 +53,7 @@ ms.locfileid: "56598356"
 
 ### <a name="to-close-a-document-that-you-specify-by-name"></a>Para fechar um documento que você especifica por nome
 
-1.  Especifique o nome do documento como um argumento para o <xref:Microsoft.Office.Interop.Word._Application.Documents%2A> coleta e, em seguida, chame o <xref:Microsoft.Office.Interop.Word._Document.Close%2A> método. O exemplo de código a seguir pressupõe que um documento chamado **NewDocument** é aberto no Word.
+1. Especifique o nome do documento como um argumento para o <xref:Microsoft.Office.Interop.Word._Application.Documents%2A> coleta e, em seguida, chame o <xref:Microsoft.Office.Interop.Word._Document.Close%2A> método. O exemplo de código a seguir pressupõe que um documento chamado **NewDocument** é aberto no Word.
 
     > [!NOTE]
     >  Este exemplo passa o <xref:Microsoft.Office.Interop.Word.WdSaveOptions.wdDoNotSaveChanges> de valor para o *SaveChanges* parâmetro para fechar sem salvar as alterações ou solicitar que o usuário.

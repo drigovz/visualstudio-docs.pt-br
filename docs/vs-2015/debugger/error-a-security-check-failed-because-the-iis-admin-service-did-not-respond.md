@@ -18,12 +18,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9434ad3d67b8cf724323bdb9614d3bfdbd569882
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 65eb724d14123292a0694623bf46859f8a3966f9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923223"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60084473"
 ---
 # <a name="error-a-security-check-failed-because-the-iis-admin-service-did-not-respond"></a>Erro: Falha em uma verificação de segurança porque o serviço de administração do IIS não respondeu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Esse erro ocorre quando o Serviço de administração do IIS não responde. Isso
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Reinstale o IIS, usando o Painel de Controle **Adicionar ou Remover Programas**.  
+- Reinstale o IIS, usando o Painel de Controle **Adicionar ou Remover Programas**.  
   
--   - ou -  
+- - ou -  
   
--   Remova o IIS do computador, usando o painel de controle Adicionar ou Remover Programas. Se você tiver removido o IIS e ainda tiver problemas, verifique no Registro se essa chave já não existe:  
+- Remova o IIS do computador, usando o painel de controle Adicionar ou Remover Programas. Se você tiver removido o IIS e ainda tiver problemas, verifique no Registro se essa chave já não existe:  
   
     ```  
     HKEY_CLASSES_ROOT\CLSID\{A9E69610-B80D-11D0-B9B9-00A0C922E750}  
@@ -44,7 +44,7 @@ Esse erro ocorre quando o Serviço de administração do IIS não responde. Isso
   
      - ou -  
   
--   Desabilite o Serviço de administração do IIS, usando o painel de controle Ferramentas Administrativas. Isso desabilitará o IIS no computador.  
+- Desabilite o Serviço de administração do IIS, usando o painel de controle Ferramentas Administrativas. Isso desabilitará o IIS no computador.  
   
      Depois de executar qualquer uma dessas três etapas, reinicie o computador.  
   

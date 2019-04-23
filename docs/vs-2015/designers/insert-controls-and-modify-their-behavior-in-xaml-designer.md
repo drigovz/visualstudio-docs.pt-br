@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219d70f1a722a19017399ab851aa2e69c44d2b28
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: e36b7cef0c24367292f7f9e60b86eb9138b12a64
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663356"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082939"
 ---
 # <a name="insert-controls-and-modify-their-behavior-in-xaml-designer"></a>Inserir controles e modificar seu comportamento no XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Controles permitem que usuários interajam com seu aplicativo. Você pode usá-l
   
  **Neste tópico:**  
   
--   [Adicionar controles ao formulário](#Insert)  
+- [Adicionar controles ao formulário](#Insert)  
   
--   [Fazer com que controles façam coisas](#Modify)  
+- [Fazer com que controles façam coisas](#Modify)  
   
-##  <a name="Insert"></a> Adicionar controles à prancheta  
+## <a name="Insert"></a> Adicionar controles à prancheta  
  Você pode arrastar controles do painel **Ativos** para a **prancheta** e, em seguida, modificá-los na janela **Propriedades**.  
   
  ![Mesclar &#45; Ativos &#45; FlipView](../designers/media/blend-assetsflipview-xaml.png "blend_AssetsFlipView_XAML")  
@@ -53,7 +53,7 @@ Controles permitem que usuários interajam com seu aplicativo. Você pode usá-l
   
  Para criar um controle, selecione um objeto. No menu **Ferramentas**, clique em **Transformar em Controle**.  
   
-##  <a name="Modify"></a> Fazer com que controles façam coisas  
+## <a name="Modify"></a> Fazer com que controles façam coisas  
  Controles podem executar ações quando os usuários interagem com eles. Por exemplo, eles podem iniciar uma animação, atualizar uma fonte de dados ou reproduzir um vídeo.  
   
  Use *gatilhos*, *comportamentos* e *eventos* para fazer com que os controles façam coisas.  

@@ -17,12 +17,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b852a83c16920e3e8a4b036a1b7bf37e63fe9cfb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 768bfc5de11f8b7fa6c3cd8988dbcc70633dde89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928769"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60082824"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Como: Habilitar configurações de segurança do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,11 +35,11 @@ Segurança de acesso do código para aplicativos ClickOnce deve ser habilitada p
   
 ### <a name="to-enable-clickonce-security-settings"></a>Para habilitar as configurações de segurança do ClickOnce  
   
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2.  Clique na guia **Segurança**.  
+2. Clique na guia **Segurança**.  
   
-3.  Selecione o **Habilitar configurações de segurança do ClickOnce** caixa de seleção.  
+3. Selecione o **Habilitar configurações de segurança do ClickOnce** caixa de seleção.  
   
      Agora você pode personalizar as configurações de segurança para seu aplicativo na página de segurança.  
   
@@ -48,11 +48,11 @@ Segurança de acesso do código para aplicativos ClickOnce deve ser habilitada p
   
 ### <a name="to-disable-clickonce-security-settings"></a>Para desabilitar as configurações de segurança do ClickOnce  
   
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2.  Clique na guia **Segurança**.  
+2. Clique na guia **Segurança**.  
   
-3.  Desmarque a **Habilitar configurações de segurança do ClickOnce** caixa de seleção.  
+3. Desmarque a **Habilitar configurações de segurança do ClickOnce** caixa de seleção.  
   
      O aplicativo será executado com as configurações de segurança de confiança total; todas as configurações de **segurança** página será ignorada.  
   

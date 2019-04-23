@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 151b62062c6846902643deef2c6cc93c315d4f4a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9d053bcd5e8b1824334f9953ac14881fdc0315be
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942590"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083330"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizando a janela de propriedades
 Você pode personalizar a aparência e comportamento da janela Propriedades em sua linguagem específica de domínio (DSL) no Visual Studio. Em sua definição de DSL, você pode definir propriedades de domínio em cada classe de domínio. Por padrão, quando você seleciona uma instância da classe, em um diagrama ou no Gerenciador de modelos, todas as propriedades de domínio é listada na janela Propriedades. Isso permite que você consulte e edite os valores das propriedades de domínio, mesmo se você não tiver mapeado-los para os campos de forma no diagrama.
@@ -47,13 +47,13 @@ Você pode personalizar a aparência e comportamento da janela Propriedades em s
 ### <a name="default-property-forwarding-cases"></a>Casos de encaminhamento de propriedade padrão
  Quando o usuário seleciona uma forma ou conector ou um elemento no Explorer, as propriedades a seguir são exibidas na janela Propriedades:
 
--   As propriedades de domínio que são definidas na classe de domínio do elemento de modelo, incluindo aqueles que são definidos nas classes base. Uma exceção é que as propriedades de domínio para o qual você definiu **é navegável** para `False`.
+- As propriedades de domínio que são definidas na classe de domínio do elemento de modelo, incluindo aqueles que são definidos nas classes base. Uma exceção é que as propriedades de domínio para o qual você definiu **é navegável** para `False`.
 
--   Os nomes dos elementos que são vinculados por meio de relações que tenham uma multiplicidade de 0 a 1. Isso fornece um método conveniente de ver opcionalmente vinculado elementos, mesmo se você não definiu um mapeamento de conector para a relação.
+- Os nomes dos elementos que são vinculados por meio de relações que tenham uma multiplicidade de 0 a 1. Isso fornece um método conveniente de ver opcionalmente vinculado elementos, mesmo se você não definiu um mapeamento de conector para a relação.
 
--   Propriedades do domínio da relação inserida que tem como alvo o elemento. Porque as relações de incorporação não são geralmente exibidas explicitamente, isso permite que o usuário veja suas propriedades.
+- Propriedades do domínio da relação inserida que tem como alvo o elemento. Porque as relações de incorporação não são geralmente exibidas explicitamente, isso permite que o usuário veja suas propriedades.
 
--   Propriedades de domínio que são definidas no conector ou forma selecionada.
+- Propriedades de domínio que são definidas no conector ou forma selecionada.
 
 ### <a name="adding-property-forwarding"></a>Adicionando o encaminhamento de propriedade
  Para encaminhar uma propriedade, você deve definir um descritor de tipo de domínio. Se você tiver uma relação de domínio entre duas classes de domínio, você pode usar um descritor de tipo de domínio para definir uma propriedade de domínio na primeira classe para o valor de uma propriedade de domínio na classe de domínio de segundo. Por exemplo, se você tiver uma relação entre um **livro** classe de domínio e um **autor** classe de domínio, você pode usar um descritor de tipo de domínio para fazer o **nome** propriedade de um Do livro **autor** aparecem na janela Propriedades quando o usuário seleciona o livro.
@@ -112,14 +112,14 @@ Você pode personalizar a aparência e comportamento da janela Propriedades em s
 
 2. Adicione o tipo para o **tipos de domínio** lista, a menos que você já tiver feito isso.
 
-   1.  Abra o Dsldefinition e, na **Gerenciador de DSL**, clique com botão direito no nó raiz e, em seguida, clique em **adicionar novo tipo externo**.
+   1. Abra o Dsldefinition e, na **Gerenciador de DSL**, clique com botão direito no nó raiz e, em seguida, clique em **adicionar novo tipo externo**.
 
         Uma nova entrada aparece sob o **tipos de domínio** nó.
 
        > [!WARNING]
        >  O item de menu não está no nó raiz do DSL, o **tipos de domínio** nó.
 
-   2.  Na janela Propriedades, defina o nome e o namespace do novo tipo.
+   2. Na janela Propriedades, defina o nome e o namespace do novo tipo.
 
 3. Adicione uma propriedade de domínio a uma classe de domínio da maneira usual.
 
@@ -144,9 +144,9 @@ Você pode personalizar a aparência e comportamento da janela Propriedades em s
 
 ##### <a name="to-define-a-file-name-domain-property"></a>Para definir uma propriedade de domínio de nome de arquivo
 
-1.  Adicione uma propriedade de domínio a uma classe de domínio em sua definição de DSL.
+1. Adicione uma propriedade de domínio a uma classe de domínio em sua definição de DSL.
 
-2.  Selecione a nova propriedade. No **atributo personalizado** na janela Propriedades, insira o seguinte atributo. Para inserir esse atributo, clique no botão de reticências **[...]**  e, em seguida, digite o nome do atributo e os parâmetros separadamente:
+2. Selecione a nova propriedade. No **atributo personalizado** na janela Propriedades, insira o seguinte atributo. Para inserir esse atributo, clique no botão de reticências **[...]**  e, em seguida, digite o nome do atributo e os parâmetros separadamente:
 
     ```csharp
     [System.ComponentModel.Editor (
@@ -155,15 +155,15 @@ Você pode personalizar a aparência e comportamento da janela Propriedades em s
 
     ```
 
-3.  Deixe o tipo de propriedade de domínio em sua configuração padrão de **cadeia de caracteres**.
+3. Deixe o tipo de propriedade de domínio em sua configuração padrão de **cadeia de caracteres**.
 
-4.  Para testar o editor, verifique se que os usuários podem abrir o editor de nome de arquivo para editar a propriedade de domínio.
+4. Para testar o editor, verifique se que os usuários podem abrir o editor de nome de arquivo para editar a propriedade de domínio.
 
-    1.  Pressione CTRL + F5 ou F5. Na solução de depuração, abra um arquivo de teste. Criar um elemento da classe de domínio e selecioná-lo.
+    1. Pressione CTRL + F5 ou F5. Na solução de depuração, abra um arquivo de teste. Criar um elemento da classe de domínio e selecioná-lo.
 
-    2.  Na janela Propriedades, selecione a propriedade de domínio. O campo de valor mostra uma elipse **[...]** .
+    2. Na janela Propriedades, selecione a propriedade de domínio. O campo de valor mostra uma elipse **[...]** .
 
-    3.  Clique no botão de reticências. Uma caixa de diálogo é exibida. Selecione um arquivo e feche a caixa de diálogo. O caminho do arquivo agora é o valor da propriedade de domínio.
+    3. Clique no botão de reticências. Uma caixa de diálogo é exibida. Selecione um arquivo e feche a caixa de diálogo. O caminho do arquivo agora é o valor da propriedade de domínio.
 
 ### <a name="defining-your-own-property-editor"></a>Definindo seu próprio editor de propriedade
  Você pode definir seu próprio editor. Você faria isso para permitir que o usuário para editar um tipo que você tenha definido, ou para editar um tipo padrão de uma maneira especial. Por exemplo, você pode permitir que o usuário insira uma cadeia de caracteres que representa uma fórmula.

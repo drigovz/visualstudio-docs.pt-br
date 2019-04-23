@@ -1,5 +1,5 @@
 ---
-title: Editar e continuar erros e avisos (C#) | Microsoft Docs
+title: Editar e continuar erros e avisos (c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: devlang-csharp
@@ -61,12 +61,12 @@ ms.assetid: c0e12b0a-8009-4a4a-979f-c804a91a5d9b
 caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 36d2665eef36e0e233cf02d241f550f3e701800f
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: f83f421203b25edbbccf767c0661ece709dd63c4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58924901"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085072"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Erros e avisos de Editar e Continuar (C#)
 Você fez uma edição em uma seção do código que não é permitido em Editar e Continuar do Visual C#.  
@@ -75,15 +75,15 @@ Você fez uma edição em uma seção do código que não é permitido em Editar
   
  As edições declarativas de código que afetam a estrutura pública de uma classe são proibidas em geral, e algumas edições que você pode fazer em um método, corpo da propriedade ou declarações privadas dentro de uma classe não são permitidas. Sempre que possível, Editar e Continuar marca o código que não pode ser editado como cinza claro e exibe uma mensagem de erro.  
   
- Para obter mais informações sobre as edições com suporte em Editar e continuar para [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], consulte [Supported Code Changes (C#)](../debugger/supported-code-changes-csharp.md). Se você precisar obter mais informações sobre um erro específico ou um aviso, você pode pesquisar ou postar no MSDN [Fórum do IDE do Visual C#](http://go.microsoft.com/fwlink/?LinkId=214693).  
+ Para obter mais informações sobre as edições com suporte em Editar e continuar para [!INCLUDE[csharp_current_short](../includes/csharp-current-short-md.md)], consulte [Supported Code Changes (c#)](../debugger/supported-code-changes-csharp.md). Se você precisar obter mais informações sobre um erro específico ou um aviso, você pode pesquisar ou postar no MSDN [Fórum do IDE do Visual C#](http://go.microsoft.com/fwlink/?LinkId=214693).  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-1.  Sobre o **Debug** menu, escolha **desfazer** para desfazer a alteração.  
+1. Sobre o **Debug** menu, escolha **desfazer** para desfazer a alteração.  
   
      - ou -  
   
-2.  Pare a sessão de depuração, faça as edições e inicie uma nova sessão de depuração.  
+2. Pare a sessão de depuração, faça as edições e inicie uma nova sessão de depuração.  
   
 ## <a name="see-also"></a>Consulte também  
  [Editar e continuar (Visual C#)](../debugger/edit-and-continue-visual-csharp.md)

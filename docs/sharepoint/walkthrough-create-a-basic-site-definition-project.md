@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 078fcc4d30613e4fe19b493150ce4570196b73ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d781b2fe3ab597760a397c6ff0ec3c946bbe7653
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608871"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083368"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>Passo a passo: Criar um projeto de definição de site básico
   Este passo a passo mostra como criar uma definição de site básico que contém uma Web part visual com alguns controles nele. Para clareza, a Web part visual que você cria tem apenas alguns controles. No entanto, você pode criar definições de site do SharePoint mais sofisticadas que incluem mais funcionalidade.
@@ -38,9 +38,9 @@ ms.locfileid: "56608871"
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
--   Edições com suporte do Microsoft Windows e do SharePoint. Para obter mais informações, consulte requisitos para desenvolver soluções do SharePoint.
+- Edições com suporte do Microsoft Windows e do SharePoint. Para obter mais informações, consulte requisitos para desenvolver soluções do SharePoint.
 
--   Visual Studio.
+- Visual Studio.
 
 ## <a name="create-a-site-definition-solution"></a>Criar uma solução de definição de site
  Primeiro, crie o projeto de definição de site no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
@@ -80,19 +80,19 @@ ms.locfileid: "56608871"
 
 #### <a name="to-create-a-visual-web-part"></a>Para criar uma web part visual
 
-1.  Na **Gerenciador de soluções**, escolha o **Mostrar todos os arquivos** botão.
+1. Na **Gerenciador de soluções**, escolha o **Mostrar todos os arquivos** botão.
 
-2.  Escolha o **SiteDefinition1** nó do projeto e, em seguida, na barra de menus, escolha **Project** > **Add New Item**.
+2. Escolha o **SiteDefinition1** nó do projeto e, em seguida, na barra de menus, escolha **Project** > **Add New Item**.
 
      A caixa de diálogo **Adicionar Novo Item** é exibida.
 
-3.  Expanda o **Visual c#** nó ou o **Visual Basic** nó, expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.
+3. Expanda o **Visual c#** nó ou o **Visual Basic** nó, expanda o **SharePoint** nó e, em seguida, escolha o **2010** nó.
 
-4.  Na lista de modelos, escolha o **Web Part Visual** modelo, mantenha o padrão nomeie VisualWebPart1 e, em seguida, escolha o **Add** botão.
+4. Na lista de modelos, escolha o **Web Part Visual** modelo, mantenha o padrão nomeie VisualWebPart1 e, em seguida, escolha o **Add** botão.
 
      O *VisualWebPart1.ascx* arquivo é aberto.
 
-5.  Na parte inferior da *VisualWebPart1.ascx*, adicione a seguinte marcação para adicionar três controles ao formulário: uma caixa de texto, um botão e um rótulo:
+5. Na parte inferior da *VisualWebPart1.ascx*, adicione a seguinte marcação para adicionar três controles ao formulário: uma caixa de texto, um botão e um rótulo:
 
     ```aspx-csharp
     <table>
@@ -110,7 +110,7 @@ ms.locfileid: "56608871"
     </table>
     ```
 
-6.  Sob *VisualWebPart1.ascx*, abra o *VisualWebPart1.ascx.cs* arquivo (para [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]) ou *VisualWebPart1.ascx.vb* (para [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) e, em seguida, adicione o código a seguir:
+6. Sob *VisualWebPart1.ascx*, abra o *VisualWebPart1.ascx.cs* arquivo (para [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]) ou *VisualWebPart1.ascx.vb* (para [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) e, em seguida, adicione o código a seguir:
 
      [!code-vb[SP_SimpleSiteDef#1](../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
      [!code-csharp[SP_SimpleSiteDef#1](../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
@@ -122,7 +122,7 @@ ms.locfileid: "56608871"
 
 #### <a name="to-add-a-visual-web-part-to-the-default-aspx-page"></a>Para adicionar uma web part visual à página ASPX padrão
 
-1.  Abra a página Default. aspx e, em seguida, adicione a seguinte linha sob o `WebPartPages` marca:
+1. Abra a página Default. aspx e, em seguida, adicione a seguinte linha sob o `WebPartPages` marca:
 
     ```aspx-csharp
     <%@ Register Tagprefix="MyWebPartControls" Namespace="TestSiteDef.VisualWebPart1" Assembly="$SharePoint.Project.AssemblyFullName$" %>
@@ -130,7 +130,7 @@ ms.locfileid: "56608871"
 
      Esta linha associa o nome MyWebPartControls com a Web part e seu código. O *Namespace* parâmetro corresponda ao namespace que é usado na *VisualWebPart1.ascx* arquivo de código.
 
-2.  Após o `</asp:Content>` elemento, substitua todo o `ContentPlaceHolderId="PlaceHolderMain"` seção e seu conteúdo pelo seguinte código:
+2. Após o `</asp:Content>` elemento, substitua todo o `ContentPlaceHolderId="PlaceHolderMain"` seção e seu conteúdo pelo seguinte código:
 
     ```aspx-csharp
     <asp:Content ID="Content1" ContentPlaceHolderId="PlaceHolderMain" runat="server">
@@ -140,16 +140,16 @@ ms.locfileid: "56608871"
 
      Esse código cria uma referência para a Web part visual que você criou anteriormente.
 
-3.  Na **Gerenciador de soluções**, abra o menu de atalho para o **SiteDefinition1** nó e, em seguida, escolha **definir como Item de inicialização**.
+3. Na **Gerenciador de soluções**, abra o menu de atalho para o **SiteDefinition1** nó e, em seguida, escolha **definir como Item de inicialização**.
 
 ## <a name="deploy-and-run-the-site-definition-solution"></a>Implantar e executar a solução de definição de site
  Em seguida, implantar o projeto do SharePoint e, em seguida, execute o projeto.
 
 #### <a name="to-deploy-and-run-the-site-definition"></a>Para implantar e executar a definição do site
 
--   Na barra de menus, escolha **construir** > **TestSiteDef implantar**.
+- Na barra de menus, escolha **construir** > **TestSiteDef implantar**.
 
--   Pressione a tecla **F5**.
+- Pressione a tecla **F5**.
 
      Visual Studio compila o código, adiciona a seus recursos, empacota todos os arquivos em um arquivo de solução (WSP) do SharePoint e implanta o arquivo WSP para o SharePoint Server. SharePoint, em seguida, instala os arquivos e, em seguida, ativa os recursos.
 
@@ -158,17 +158,17 @@ ms.locfileid: "56608871"
 
 #### <a name="to-create-a-site-by-using-the-site-definition"></a>Para criar um site usando a definição do site
 
-1.  No site do SharePoint, é exibida a página Novo Site do SharePoint.
+1. No site do SharePoint, é exibida a página Novo Site do SharePoint.
 
-2.  No **Title e Description** , digite **meu novo Site** para o título e uma descrição do site.
+2. No **Title e Description** , digite **meu novo Site** para o título e uma descrição do site.
 
-3.  No **endereço do Site** , digite **mynewsite** no **nome da URL** caixa.
+3. No **endereço do Site** , digite **mynewsite** no **nome da URL** caixa.
 
-4.  No **modelo** , escolha o **personalizações do SharePoint** guia.
+4. No **modelo** , escolha o **personalizações do SharePoint** guia.
 
-5.  No **selecione um modelo** , escolha **SiteDefinition1**.
+5. No **selecione um modelo** , escolha **SiteDefinition1**.
 
-6.  Deixe as outras configurações em seus valores padrão e, em seguida, escolha o **criar** botão.
+6. Deixe as outras configurações em seus valores padrão e, em seguida, escolha o **criar** botão.
 
      O novo site é exibido.
 
@@ -177,7 +177,7 @@ ms.locfileid: "56608871"
 
 #### <a name="to-test-the-new-site"></a>Para testar o novo site
 
--   Na página ASPX padrão, digite algum texto e, em seguida, escolha o **alterar o texto de rótulo** botão ao lado da caixa de texto.
+- Na página ASPX padrão, digite algum texto e, em seguida, escolha o **alterar o texto de rótulo** botão ao lado da caixa de texto.
 
      O texto é exibido no rótulo à direita do botão.
 

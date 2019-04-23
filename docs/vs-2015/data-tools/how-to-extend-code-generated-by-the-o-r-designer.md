@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3a5fc9bb7b6e2d6813c4c571633ef46d4b9e1f48
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8aa3ecd29180e01a7d6f254303d42ac328aceaa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651728"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085214"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Como: Estender o código gerado pelo Designer Relacional de Objetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,25 +27,25 @@ O código gerado por [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-sh
   
 #### <a name="to-create-a-partial-class-and-add-code-to-an-entity-class"></a>Para criar uma classe parcial e adicione o código para uma classe de entidade  
   
-1.  Abra ou crie um novo arquivo LINQ to SQL Classes (**dbml** arquivo) no [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Clique duas vezes o **. dbml** arquivo no **Gerenciador de soluções**/**Database Explorer**.)  
+1. Abra ou crie um novo arquivo LINQ to SQL Classes (**dbml** arquivo) no [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Clique duas vezes o **. dbml** arquivo no **Gerenciador de soluções**/**Database Explorer**.)  
   
-2.  No [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], a classe para o qual você deseja adicionar validação e, em seguida, clique com o botão direito **Exibir código**.  
+2. No [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], a classe para o qual você deseja adicionar validação e, em seguida, clique com o botão direito **Exibir código**.  
   
      O editor de códigos abre com uma classe parcial para a classe de entidade selecionada.  
   
-3.  Adicione o código na declaração de classe parcial para a classe de entidade.  
+3. Adicione o código na declaração de classe parcial para a classe de entidade.  
   
 ## <a name="adding-code-to-a-datacontext"></a>Adicionando código para um DataContext  
   
 #### <a name="to-create-a-partial-class-and-add-code-to-a-datacontext"></a>Para criar uma classe parcial e adicione o código a um DataContext  
   
-1.  Abra ou crie um novo arquivo LINQ to SQL Classes (**dbml** arquivo) no [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Clique duas vezes o **. dbml** arquivo no **Gerenciador de soluções**/**Database Explorer**.)  
+1. Abra ou crie um novo arquivo LINQ to SQL Classes (**dbml** arquivo) no [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. (Clique duas vezes o **. dbml** arquivo no **Gerenciador de soluções**/**Database Explorer**.)  
   
-2.  No [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], uma área vazia no designer com o botão direito e, em seguida, clique em **Exibir código**.  
+2. No [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], uma área vazia no designer com o botão direito e, em seguida, clique em **Exibir código**.  
   
      O editor de códigos abre com uma classe parcial para o DataContext.  
   
-3.  Adicione o código na declaração de classe parcial para o DataContext.  
+3. Adicione o código na declaração de classe parcial para o DataContext.  
   
 ## <a name="see-also"></a>Consulte também  
  [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   
