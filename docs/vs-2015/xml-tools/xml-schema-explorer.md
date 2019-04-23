@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 575be3277dd7d876b19b9c557643cb05831255a5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 550c43532db89132ec4e1b123005ad02ef547414
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670427"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104898"
 ---
 # <a name="xml-schema-explorer"></a>XML Schema Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,11 +67,11 @@ O XML Schema Explorer está integrado com o Microsoft Visual Studio e o Editor d
   
  Para ativar um nó, clique duas vezes nele ou pressione **Enter** quando o nó é selecionado.  
   
--   Ativar um nó abre o arquivo no qual o nó está definido (se o arquivo já não estiver aberto) e seleciona o nó no arquivo.  
+- Ativar um nó abre o arquivo no qual o nó está definido (se o arquivo já não estiver aberto) e seleciona o nó no arquivo.  
   
--   Ativar um nó de arquivo abre o arquivo selecionado (se ele já não estiver aberto) e destaca o nó `<schema>`.  
+- Ativar um nó de arquivo abre o arquivo selecionado (se ele já não estiver aberto) e destaca o nó `<schema>`.  
   
--   Ativar um SchemaSet ou um nó de namespace não fará nada.  
+- Ativar um SchemaSet ou um nó de namespace não fará nada.  
   
 ## <a name="draging-and-dropping-nodes"></a>Nós de arrastar e soltar  
  Você pode arrastar e soltar nós globais, nós de arquivo e nós de namespace em uma exibição do Designer XSD. Se a exibição atual for o [iniciar o modo de exibição](../xml-tools/start-view.md), arrastar um nó para o modo de exibição será aberto o [modo de exibição gráfico](../xml-tools/graph-view.md). Se a exibição atual for o [modo de exibição do modelo de conteúdo](../xml-tools/content-model-view.md) ou modo de exibição de gráfico, o modo de exibição não será alterado quando você remove um nó nela.  
@@ -82,13 +82,13 @@ O XML Schema Explorer está integrado com o Microsoft Visual Studio e o Editor d
   
 ## <a name="in-this-section"></a>Nesta seção  
   
--   [Pesquisando pelo conjunto de esquema](../xml-tools/searching-the-schema-set.md)  
+- [Pesquisando pelo conjunto de esquema](../xml-tools/searching-the-schema-set.md)  
   
--   [Classificação, filtragem e agrupamento](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
+- [Classificação, filtragem e agrupamento](../xml-tools/sorting-filtering-and-grouping-xml-schema-explorer.md)  
   
--   [Menus de contexto](../xml-tools/context-menus-xml-schema-explorer.md)  
+- [Menus de contexto](../xml-tools/context-menus-xml-schema-explorer.md)  
   
--   [Integração de literais XML com XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
+- [Integração de literais XML com XML Schema Explorer](../xml-tools/integration-of-xml-literals-with-xml-schema-explorer.md)  
   
 ## <a name="see-also"></a>Consulte também  
  [Como: adicionar nós ao workspace do XML Schema Explorer](../xml-tools/how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer.md)

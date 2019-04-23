@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1b98875bbc7ea4fc33c342ab625be385593aab8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a9838e934421e619c85f348052fbe589288391c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923406"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104714"
 ---
 # <a name="responding-to-and-propagating-changes"></a>Respondendo a alterações e propagando-as
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Quando um elemento é criado, excluído ou atualizado, você pode escrever códi
   
  Use eventos de armazenamento para sincronizar o modelo com objetos fora da Store e regras para manter a consistência dentro de Store.  
   
--   **Criação de regras personalizadas** criar uma regra personalizada como uma classe derivada de uma regra de abstrata. Você também deve notificar o framework sobre a regra personalizada. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).  
+- **Criação de regras personalizadas** criar uma regra personalizada como uma classe derivada de uma regra de abstrata. Você também deve notificar o framework sobre a regra personalizada. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).  
   
--   **Assinando eventos** antes de assinar um evento, crie um manipulador de eventos e o delegado. Em seguida, use o <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>propriedade para assinar o evento. Para obter mais informações, consulte [manipuladores de propagar alterações fora o modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
+- **Assinando eventos** antes de assinar um evento, crie um manipulador de eventos e o delegado. Em seguida, use o <xref:Microsoft.VisualStudio.Modeling.Store.EventManagerDirectory%2A>propriedade para assinar o evento. Para obter mais informações, consulte [manipuladores de propagar alterações fora o modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
--   **Desfazendo alterações** ao desfazer uma transação, os eventos são gerados, mas não são aplicadas as regras. Se um valor é alterado de uma regra e desfazer essa alteração, o valor será redefinido para o valor original durante a ação de desfazer. Quando um evento é gerado, você deve alterar manualmente o valor para seu valor original. Para saber mais sobre transactons e desfazer, consulte [como: Usar transações para atualizar o modelo](../modeling/how-to-use-transactions-to-update-the-model.md).  
+- **Desfazendo alterações** ao desfazer uma transação, os eventos são gerados, mas não são aplicadas as regras. Se um valor é alterado de uma regra e desfazer essa alteração, o valor será redefinido para o valor original durante a ação de desfazer. Quando um evento é gerado, você deve alterar manualmente o valor para seu valor original. Para saber mais sobre transactons e desfazer, consulte [como: Usar transações para atualizar o modelo](../modeling/how-to-use-transactions-to-update-the-model.md).  
   
--   **Passando argumentos de evento para eventos e regras** ambos os eventos e as regras são transmitidas uma `EventArgs` parâmetro que tem informações sobre como o modelo foi alterado.  
+- **Passando argumentos de evento para eventos e regras** ambos os eventos e as regras são transmitidas uma `EventArgs` parâmetro que tem informações sobre como o modelo foi alterado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Como: Interceptar um clique em uma forma ou um decorador](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)   

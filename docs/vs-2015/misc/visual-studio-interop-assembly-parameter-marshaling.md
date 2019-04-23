@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: 89123eae-0fef-46d5-bd36-3d2a166b14e3
 caps.latest.revision: 24
 manager: jillfra
-ms.openlocfilehash: 6bde8ba3acd88936e482124f189fd35f7a1d6421
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 209f5956d77e714f7f663693f9ac22241d428480
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922273"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105052"
 ---
 # <a name="visual-studio-interop-assembly-parameter-marshaling"></a>Parâmetro de Assembly de interoperabilidade do Visual Studio de Marshaling
 Os VSPackages são escritos em código gerenciado pode ter que chamar ou ser chamado pelo código COM não gerenciado. Normalmente, os argumentos de método são transformados ou marshaling, automaticamente pelo marshaler de interoperabilidade. No entanto, às vezes, argumentos não podem ser transformados de uma maneira simples. Nesses casos, os parâmetros de protótipo do método de assembly de interoperabilidade são usados para corresponder ao máximo os parâmetros da função COM. Para obter mais informações, consulte [Marshaling de interoperabilidade](http://msdn.microsoft.com/library/115f7a2f-d422-4605-ab36-13a8dd28142a).  
@@ -28,11 +28,11 @@ Os VSPackages são escritos em código gerenciado pode ter que chamar ou ser cha
   
  A documentação de referência para cada método contém três seções relevantes:  
   
--   O [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] protótipo de função COM.  
+- O [!INCLUDE[vcprvc](../includes/vcprvc-md.md)] protótipo de função COM.  
   
--   O protótipo do método de assembly de interoperabilidade.  
+- O protótipo do método de assembly de interoperabilidade.  
   
--   Uma lista de parâmetros COM e uma breve descrição de cada um.  
+- Uma lista de parâmetros COM e uma breve descrição de cada um.  
   
 ##### <a name="look-for-differences-between-the-two-prototypes"></a>Procure as diferenças entre os dois protótipos  
  A maioria dos problemas de interoperabilidade derivam de incompatibilidades entre a definição de um determinado tipo em uma interface COM e a definição do mesmo tipo no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] assemblies de interoperabilidade. Por exemplo, considere a diferença na capacidade de passar um `null` valor em um parâmetro [out]. Você deve examinar as diferenças entre os dois protótipos e considerar suas ramificações para os dados que está sendo passados.  
@@ -79,17 +79,17 @@ else
 > [!NOTE]
 >  Os métodos a seguir são conhecidos para transmitir `IUnknown` ponteiros do objeto como tipo <xref:System.IntPtr>. Tratá-los conforme descrito nesta seção.  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.CreateProject%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.QueryViewInterface%2A>  
   
--   <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>  
   
 ### <a name="optional-out-parameters"></a>Opcional [parâmetros out]  
  Procure os parâmetros que são definidos como [out] o tipo de dados (`int`, `object`e assim por diante) no COM a interface, mas que são definidos como matrizes do mesmo tipo de dados no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] protótipo do método de assembly de interoperabilidade.  
