@@ -11,12 +11,12 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 8cbf01d79011f2917236f3577cf25986e4bc5b76
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: c14de7498cf893169295c08947d6687a2121bd6e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "58999975"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059438"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>Configurar funções de serviço de nuvem do Azure com o Visual Studio
 Um serviço de nuvem do Azure pode ter uma ou mais funções web ou de trabalho. Para cada função, você precisa definir como essa função é instalada e também configurar como ela é executada. Para saber mais sobre as funções em serviços de nuvem, assista ao vídeo [Introdução aos Serviços de Nuvem do Azure](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services).
@@ -259,7 +259,7 @@ O código a seguir mostra um exemplo de como gravar um arquivo de texto no armaz
 
 Para exibir o arquivo criado pelo código na seção anterior, siga estas etapas:
 
-1.  Na área de notificação do Windows, clique com o botão direito do mouse no ícone do Azure e, no menu de contexto, selecione **Mostrar Interface de Usuário do Emulador de Computação**.
+1. Na área de notificação do Windows, clique com o botão direito do mouse no ícone do Azure e, no menu de contexto, selecione **Mostrar Interface de Usuário do Emulador de Computação**.
 
     ![Mostrar emulador de computação do Azure](./media/vs-azure-tools-configure-roles-for-cloud-service/show-compute-emulator.png)
 

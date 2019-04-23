@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 415d63717e5702b0faa1b49d1d0d18ebbf773b8f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cf370b4ca0e0a4d14c482c6ece46b79d2d224d34
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924634"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049731"
 ---
 # <a name="define-and-install-a-modeling-extension"></a>Definir e instalar uma extensão de modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,35 +42,35 @@ No Visual Studio, você pode definir as extensões para diagramas de modelagem. 
   
 #### <a name="to-create-a-class-library-project-for-menu-commands-gesture-handlers-or-validation"></a>Para criar um projeto de biblioteca de classes para comandos de menu, manipuladores de gesto ou validação  
   
-1.  No menu **Arquivo**, escolha **Novo**, **Projeto**.  
+1. No menu **Arquivo**, escolha **Novo**, **Projeto**.  
   
-2.  Sob **modelos instalados**, selecione **Visual C#** ou **Visual Basic**, em seguida, escolha **biblioteca de classes**.  
+2. Sob **modelos instalados**, selecione **Visual c#** ou **Visual Basic**, em seguida, escolha **biblioteca de classes**.  
   
 #### <a name="to-create-a-vsix-project"></a>Para criar um projeto do VSIX  
   
-1.  Se você estiver criando um componente com o código, é mais fácil de criar o projeto de biblioteca de classe pela primeira vez. Você irá adicionar seu código para o projeto.  
+1. Se você estiver criando um componente com o código, é mais fácil de criar o projeto de biblioteca de classe pela primeira vez. Você irá adicionar seu código para o projeto.  
   
-2.  Crie um projeto VSIX.  
+2. Crie um projeto VSIX.  
   
-    1.  Na **Gerenciador de soluções**, no menu de atalho da solução, escolha **Add**, **novo projeto**.  
+    1. Na **Gerenciador de soluções**, no menu de atalho da solução, escolha **Add**, **novo projeto**.  
   
-    2.  Sob **modelos instalados**, expanda **Visual C#** ou **Visual Basic**, em seguida, selecione **extensibilidade**. Na coluna do meio, escolha **VSIX Project**.  
+    2. Sob **modelos instalados**, expanda **Visual c#** ou **Visual Basic**, em seguida, selecione **extensibilidade**. Na coluna do meio, escolha **VSIX Project**.  
   
-3.  Defina o projeto VSIX como o projeto de inicialização da solução.  
+3. Defina o projeto VSIX como o projeto de inicialização da solução.  
   
-    -   No Gerenciador de soluções, no menu de atalho do projeto VSIX, escolha **definir como projeto de inicialização**.  
+    - No Gerenciador de soluções, no menu de atalho do projeto VSIX, escolha **definir como projeto de inicialização**.  
   
-4.  Abra **vsixmanifest**. O arquivo é aberto no editor de manifesto.  
+4. Abra **vsixmanifest**. O arquivo é aberto no editor de manifesto.  
   
-5.  Sobre o **metadados** guia, defina os campos nome e descritivos do VSIX.  
+5. Sobre o **metadados** guia, defina os campos nome e descritivos do VSIX.  
   
-6.  Sobre o **instalar destinos** guia, escolha **New** e defina as versões do Visual Studio como os destinos.  
+6. Sobre o **instalar destinos** guia, escolha **New** e defina as versões do Visual Studio como os destinos.  
   
-7.  Sobre o **ativos** guia, adicione os componentes para a extensão do Visual Studio.  
+7. Sobre o **ativos** guia, adicione os componentes para a extensão do Visual Studio.  
   
-    1.  Escolher **novo**.  
+    1. Escolher **novo**.  
   
-    2.  Para um componente com o código, definir esses campos na **adicionar novo ativo** caixa de diálogo:  
+    2. Para um componente com o código, definir esses campos na **adicionar novo ativo** caixa de diálogo:  
   
         |||  
         |-|-|  
@@ -97,36 +97,36 @@ No Visual Studio, você pode definir as extensões para diagramas de modelagem. 
   
 #### <a name="to-run-an-extension-during-its-development"></a>Para executar uma extensão durante seu desenvolvimento  
   
-1.  No [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Debug** menu, escolha **iniciar depuração**.  
+1. No [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] **Debug** menu, escolha **iniciar depuração**.  
   
      As compilações do projeto e uma nova instância da [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] é iniciado em modo Experimental.  
   
-    -   Como alternativa, você pode escolher **Start Without Debugging**. Isso reduz o tempo necessário para iniciar o programa.  
+    - Como alternativa, você pode escolher **Start Without Debugging**. Isso reduz o tempo necessário para iniciar o programa.  
   
-2.  Criar ou abrir um projeto de modelagem na instância experimental do Visual Studio e crie ou abra um diagrama.  
+2. Criar ou abrir um projeto de modelagem na instância experimental do Visual Studio e crie ou abra um diagrama.  
   
      Sua extensão carregará e executará.  
   
-3.  Se você usou **Start Without Debugging** , mas você deseja usar o depurador, volte para a instância principal do Visual Studio. Sobre o **Debug** menu, clique em **anexar ao processo**. Na caixa de diálogo, selecione a instância experimental do Visual Studio, que tem o nome do programa **devenv**.  
+3. Se você usou **Start Without Debugging** , mas você deseja usar o depurador, volte para a instância principal do Visual Studio. Sobre o **Debug** menu, clique em **anexar ao processo**. Na caixa de diálogo, selecione a instância experimental do Visual Studio, que tem o nome do programa **devenv**.  
   
-##  <a name="Installing"></a> Instalando e desinstalando uma extensão  
+## <a name="Installing"></a> Instalando e desinstalando uma extensão  
  Execute as seguintes etapas para executar sua extensão na instância principal do Visual Studio em seu próprio computador ou em outros computadores.  
   
-1.  No seu computador, localize o **VSIX** arquivo que foi criado pelo seu projeto de extensão.  
+1. No seu computador, localize o **VSIX** arquivo que foi criado pelo seu projeto de extensão.  
   
-    1.  Na **Gerenciador de soluções**, no menu de atalho do seu projeto e, em seguida, escolha **Abrir pasta no Windows Explorer**.  
+    1. Na **Gerenciador de soluções**, no menu de atalho do seu projeto e, em seguida, escolha **Abrir pasta no Windows Explorer**.  
   
-    2.  Localize o arquivo **bin\\\*\\**_Seuprojeto_**. VSIX**  
+    2. Localize o arquivo **bin\\\*\\**_Seuprojeto_**. VSIX**  
   
-2.  Cópia de **. VSIX** arquivo ao computador de destino no qual você deseja instalar a extensão. Isso pode ser seu próprio computador ou outro.  
+2. Cópia de **. VSIX** arquivo ao computador de destino no qual você deseja instalar a extensão. Isso pode ser seu próprio computador ou outro.  
   
-    -   O computador de destino deve ter uma das edições do Visual Studio que você tiver especificado a **destinos de instalação** guia de **vsixmanifest**.  
+    - O computador de destino deve ter uma das edições do Visual Studio que você tiver especificado a **destinos de instalação** guia de **vsixmanifest**.  
   
-3.  No computador de destino, abra o **VSIX** arquivo, por exemplo, clicando duas vezes nele.  
+3. No computador de destino, abra o **VSIX** arquivo, por exemplo, clicando duas vezes nele.  
   
      **Instalador de extensão do Visual Studio** abre e instala a extensão.  
   
-4.  Inicie ou reinicie o Visual Studio.  
+4. Inicie ou reinicie o Visual Studio.  
   
 #### <a name="to-uninstall-an-extension"></a>Para desinstalar uma extensão  
   

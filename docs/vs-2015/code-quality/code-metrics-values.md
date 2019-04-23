@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0941834b3153a8d56f8892ef10d9d388af6f2c6c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d5e3669ddaf9d8073038f0fa0c01c7e5a19a209d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926262"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049551"
 ---
 # <a name="code-metrics-values"></a>Valores de métricas do código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,18 +28,18 @@ As métricas de código são um conjunto de medidas de software que fornecem aos
 ## <a name="software-measurements"></a>Medições de software  
  A lista a seguir mostra os resultados de métricas de código que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] calcula:  
   
--   **Índice de facilidade de manutenção** – calcula um valor de índice entre 0 e 100 que representa a relativa facilidade de manutenção do código. Um valor alto significa melhor facilidade de manutenção. Classificações codificadas por cor podem ser usadas para identificar rapidamente pontos problemáticos em seu código. Uma classificação verde está entre 20 e 100 e indica que o código tem boa facilidade de manutenção. Uma classificação amarela é entre 10 e 19 e indica que o código é razoavelmente fácil de manter. Uma classificação vermelha é uma classificação entre 0 e 9 e indica pouca facilidade de manutenção.  
+- **Índice de facilidade de manutenção** – calcula um valor de índice entre 0 e 100 que representa a relativa facilidade de manutenção do código. Um valor alto significa melhor facilidade de manutenção. Classificações codificadas por cor podem ser usadas para identificar rapidamente pontos problemáticos em seu código. Uma classificação verde está entre 20 e 100 e indica que o código tem boa facilidade de manutenção. Uma classificação amarela é entre 10 e 19 e indica que o código é razoavelmente fácil de manter. Uma classificação vermelha é uma classificação entre 0 e 9 e indica pouca facilidade de manutenção.  
   
--   **A complexidade ciclomática** – mede a complexidade do código estrutural. Ele é criado pelo cálculo do número de diferentes caminhos de código no fluxo do programa. Um programa que tem o fluxo de controle complexo exigirá mais testes para obter boa cobertura do código e será menos capaz de manutenção.  
+- **A complexidade ciclomática** – mede a complexidade do código estrutural. Ele é criado pelo cálculo do número de diferentes caminhos de código no fluxo do programa. Um programa que tem o fluxo de controle complexo exigirá mais testes para obter boa cobertura do código e será menos capaz de manutenção.  
   
     > [!NOTE]
     >  Em alguns casos, o cálculo da complexidade ciclomática de um método em [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] difere das versões anteriores. Para obter mais informações, consulte "Alterações no Visual Studio 2010 seção de código complexidade cálculos" de [solução de problemas de métricas de código](../code-quality/troubleshooting-code-metrics-issues.md).  
   
--   **Profundidade de herança** – indica o número de definições de classe que estenda para a raiz da hierarquia de classe. Quanto mais a hierarquia mais difícil pode ser entender onde os campos e métodos particulares são definidos ou / e redefinido.  
+- **Profundidade de herança** – indica o número de definições de classe que estenda para a raiz da hierarquia de classe. Quanto mais a hierarquia mais difícil pode ser entender onde os campos e métodos particulares são definidos ou / e redefinido.  
   
--   **Classe acoplamento** – mede o acoplamento de classes exclusivos por meio de parâmetros, variáveis locais, tipos de retorno, chamadas de método, instanciações genéricas ou modelo, as classes base, implementações de interface, os campos definidos nos tipos externos, e decoração do atributo. Design de software BOM determina que tipos e métodos devem ter alta coesão e acoplamento de baixa. Acoplamento alta indica um design que é difícil a reutilização e a manter o devido à suas muitas interdependências em outros tipos.  
+- **Classe acoplamento** – mede o acoplamento de classes exclusivos por meio de parâmetros, variáveis locais, tipos de retorno, chamadas de método, instanciações genéricas ou modelo, as classes base, implementações de interface, os campos definidos nos tipos externos, e decoração do atributo. Design de software BOM determina que tipos e métodos devem ter alta coesão e acoplamento de baixa. Acoplamento alta indica um design que é difícil a reutilização e a manter o devido à suas muitas interdependências em outros tipos.  
   
--   **Linhas de código** – indica o número aproximado de linhas de código. A contagem é baseada no código IL e, portanto, não o número exato de linhas no arquivo de código de origem. Uma contagem muito alta pode indicar que um tipo ou método está tentando fazer muito trabalho e deve ser dividido. Isso também pode indicar que o tipo ou método pode ser difícil de manter.  
+- **Linhas de código** – indica o número aproximado de linhas de código. A contagem é baseada no código IL e, portanto, não o número exato de linhas no arquivo de código de origem. Uma contagem muito alta pode indicar que um tipo ou método está tentando fazer muito trabalho e deve ser dividido. Isso também pode indicar que o tipo ou método pode ser difícil de manter.  
   
 ## <a name="anonymous-methods"></a>Métodos anônimos  
  Uma *método anônimo* é apenas um método que não tem nome. Métodos anônimos são usados com mais frequência para passar um bloco de código como um parâmetro delegado. Resultados de métricas para um método anônimo que é declarada em um membro, como um método ou um acessador, estão associados com o membro que declara o método. Eles não são associados com o membro que chama o método.  

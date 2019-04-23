@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: de51ead9b3395df1c48f1340e27bd8c891a87fa4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3dc891c47042fe93ac6be8fa28c2967484c9d6c5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56647001"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050147"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>Passo a passo: Associar dados a controles em um painel de ações do Excel
   Este passo a passo demonstra a associação de dados a controles em um painel de ações no Microsoft Office Excel. Os controles de demonstram uma relação mestre/detalhes entre tabelas em um banco de dados do SQL Server.
@@ -31,13 +31,13 @@ ms.locfileid: "56647001"
 
  Esta explicação passo a passo ilustra as seguintes tarefas:
 
--   Adicionando controles a uma planilha.
+- Adicionando controles a uma planilha.
 
--   Criando um controle do painel Ações.
+- Criando um controle do painel Ações.
 
--   Adicionando controles de Windows Forms associados a dados para um controle do painel Ações.
+- Adicionando controles de Windows Forms associados a dados para um controle do painel Ações.
 
--   Quando o aplicativo é aberto, mostrando o painel de ações.
+- Quando o aplicativo é aberto, mostrando o painel de ações.
 
 > [!NOTE]
 >  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -45,20 +45,20 @@ ms.locfileid: "56647001"
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Acesso a um servidor com o banco de dados de exemplo Northwind do SQL Server.
+- Acesso a um servidor com o banco de dados de exemplo Northwind do SQL Server.
 
--   Permissões para ler e gravar no banco de dados do SQL Server.
+- Permissões para ler e gravar no banco de dados do SQL Server.
 
 ## <a name="create-the-project"></a>Criar o projeto
  A primeira etapa é criar um projeto de pasta de trabalho do Excel.
 
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto
 
-1.  Criar um projeto de pasta de trabalho do Excel com o nome **meu painel de ações do Excel**. No assistente, selecione **criar um novo documento**. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
+1. Criar um projeto de pasta de trabalho do Excel com o nome **meu painel de ações do Excel**. No assistente, selecione **criar um novo documento**. Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
      Visual Studio abre a nova pasta de trabalho do Excel no designer e adiciona o **meu painel de ações do Excel** projeto ao **Gerenciador de soluções**.
 
@@ -93,56 +93,56 @@ ms.locfileid: "56647001"
 
 ### <a name="to-add-a-namedrange-control-and-a-listobject-control"></a>Para adicionar um controle NamedRange e um controle ListObject
 
-1.  Verifique se que o **Meus Pane.xlsx de ações do Excel** pasta de trabalho é aberta no designer do Visual Studio, com `Sheet1` exibido.
+1. Verifique se que o **Meus Pane.xlsx de ações do Excel** pasta de trabalho é aberta no designer do Visual Studio, com `Sheet1` exibido.
 
-2.  No **fontes de dados** janela, expanda o **fornecedores** tabela.
+2. No **fontes de dados** janela, expanda o **fornecedores** tabela.
 
-3.  Clique na seta suspensa na **nome da empresa** nó e clique **NamedRange**.
+3. Clique na seta suspensa na **nome da empresa** nó e clique **NamedRange**.
 
-4.  Arraste **nome da empresa** da **fontes de dados** janela à célula **A2** em `Sheet1`.
+4. Arraste **nome da empresa** da **fontes de dados** janela à célula **A2** em `Sheet1`.
 
      Um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle chamado `CompanyNameNamedRange` é criado e o texto \<CompanyName > aparece na célula **A2**. Ao mesmo tempo, uma <xref:System.Windows.Forms.BindingSource> nomeado `suppliersBindingSource`, um adaptador de tabela e um <xref:System.Data.DataSet> são adicionados ao projeto. O controle é associado à <xref:System.Windows.Forms.BindingSource>, que por sua vez é associado a <xref:System.Data.DataSet> instância.
 
-5.  No **fontes de dados** , role para baixo após as colunas que estão sob o **fornecedores** tabela. Na parte inferior da lista é o **produtos** tabela; ele está aqui porque ele é um filho do **fornecedores** tabela. Selecione esta opção **produtos** da tabela, não aquela que está no mesmo nível que o **fornecedores** de tabela e, em seguida, clique na seta suspensa exibida.
+5. No **fontes de dados** , role para baixo após as colunas que estão sob o **fornecedores** tabela. Na parte inferior da lista é o **produtos** tabela; ele está aqui porque ele é um filho do **fornecedores** tabela. Selecione esta opção **produtos** da tabela, não aquela que está no mesmo nível que o **fornecedores** de tabela e, em seguida, clique na seta suspensa exibida.
 
-6.  Clique em **ListObject** na lista suspensa e, em seguida, arraste o **produtos** tabela para a célula **A6** em `Sheet1`.
+6. Clique em **ListObject** na lista suspensa e, em seguida, arraste o **produtos** tabela para a célula **A6** em `Sheet1`.
 
      Um <xref:Microsoft.Office.Tools.Excel.ListObject> controle chamado `ProductNameListObject` é criado na célula **A6**. Ao mesmo tempo, uma <xref:System.Windows.Forms.BindingSource> denominado `productsBindingSource` e um adaptador de tabela são adicionados ao projeto. O controle é associado à <xref:System.Windows.Forms.BindingSource>, que por sua vez é associado a <xref:System.Data.DataSet> instância.
 
-7.  Apenas para c#, selecione **suppliersBindingSource** na bandeja de componentes e altere o **modificadores** propriedade a ser **interno** no **propriedades** janela.
+7. Apenas para c#, selecione **suppliersBindingSource** na bandeja de componentes e altere o **modificadores** propriedade a ser **interno** no **propriedades** janela.
 
 ## <a name="add-controls-to-the-actions-pane"></a>Adicionar controles ao painel de ações
  Em seguida, você precisa de um controle do painel de ações que tenha uma caixa de combinação.
 
 ### <a name="to-add-an-actions-pane-control"></a>Para adicionar um controle do painel Ações
 
-1.  Selecione o **meu painel de ações do Excel** project no **Gerenciador de soluções**.
+1. Selecione o **meu painel de ações do Excel** project no **Gerenciador de soluções**.
 
-2.  No menu **Projeto**, clique em **Adicionar Novo Item**.
+2. No menu **Projeto**, clique em **Adicionar Novo Item**.
 
-3.  No **Adicionar Novo Item** caixa de diálogo, selecione **controle do painel Ações**, nomeie- **ActionsControl**e clique em **adicionar**.
+3. No **Adicionar Novo Item** caixa de diálogo, selecione **controle do painel Ações**, nomeie- **ActionsControl**e clique em **adicionar**.
 
 ### <a name="to-add-data-bound-windows-forms-controls-to-an-actions-pane-control"></a>Para adicionar controles de Windows Forms associados a dados a um controle do painel Ações
 
-1.  Dos **controles comuns** guias da **caixa de ferramentas**, arraste um <xref:System.Windows.Forms.ComboBox> controle para o controle do painel Ações.
+1. Dos **controles comuns** guias da **caixa de ferramentas**, arraste um <xref:System.Windows.Forms.ComboBox> controle para o controle do painel Ações.
 
-2.  Alterar o **tamanho** propriedade **171, 21**.
+2. Alterar o **tamanho** propriedade **171, 21**.
 
-3.  Redimensione o controle de usuário de acordo com a caixa de combinação.
+3. Redimensione o controle de usuário de acordo com a caixa de combinação.
 
 ## <a name="bind-the-control-on-the-actions-pane-to-data"></a>Associar o controle no painel de ações aos dados
  Nesta seção, você definirá a fonte de dados do <xref:System.Windows.Forms.ComboBox> à mesma fonte de dados como o <xref:Microsoft.Office.Tools.Excel.NamedRange> controle na planilha.
 
 ### <a name="to-set-data-binding-properties-of-the-control"></a>Definir as propriedades de associação de dados do controle
 
-1.  O controle do painel de ações com o botão direito e, em seguida, clique em **Exibir código**.
+1. O controle do painel de ações com o botão direito e, em seguida, clique em **Exibir código**.
 
-2.  Adicione o seguinte código para o <xref:System.Windows.Forms.UserControl.Load> eventos do controle do painel Ações.
+2. Adicione o seguinte código para o <xref:System.Windows.Forms.UserControl.Load> eventos do controle do painel Ações.
 
      [!code-vb[Trin_VstcoreActionsPaneExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ActionsControl.vb#1)]
      [!code-csharp[Trin_VstcoreActionsPaneExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#1)]
 
-3.  No c#, você deve criar um manipulador de eventos para o `ActionsControl`. Você pode colocar esse código no `ActionsControl` construtor. Para obter mais informações sobre como criar manipuladores de eventos, consulte [como: Criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
+3. No c#, você deve criar um manipulador de eventos para o `ActionsControl`. Você pode colocar esse código no `ActionsControl` construtor. Para obter mais informações sobre como criar manipuladores de eventos, consulte [como: Criar manipuladores de eventos em projetos do Office](../vsto/how-to-create-event-handlers-in-office-projects.md).
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#2)]
 
@@ -151,14 +151,14 @@ ms.locfileid: "56647001"
 
 #### <a name="to-show-the-actions-pane"></a>Para mostrar o painel de ações
 
-1.  Na **Gerenciador de soluções**, clique com botão direito *ThisWorkbook. vb* ou *ThisWorkbook.cs*e, em seguida, clique em **Exibir código**.
+1. Na **Gerenciador de soluções**, clique com botão direito *ThisWorkbook. vb* ou *ThisWorkbook.cs*e, em seguida, clique em **Exibir código**.
 
-2.  Criar uma nova instância do controle de usuário na `ThisWorkbook` classe.
+2. Criar uma nova instância do controle de usuário na `ThisWorkbook` classe.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#3)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#3)]
 
-3.  No <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> manipulador de eventos do `ThisWorkbook`, adicione o controle ao painel de ações.
+3. No <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> manipulador de eventos do `ThisWorkbook`, adicione o controle ao painel de ações.
 
      [!code-csharp[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#4)]
      [!code-vb[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#4)]
@@ -168,20 +168,20 @@ ms.locfileid: "56647001"
 
 ### <a name="to-test-your-document"></a>Para testar o documento
 
-1.  Pressione **F5** para executar o projeto.
+1. Pressione **F5** para executar o projeto.
 
-2.  Confirme se o painel de ações está visível.
+2. Confirme se o painel de ações está visível.
 
-3.  Selecione uma empresa na caixa de listagem. Verifique se o nome da empresa é listado na <xref:Microsoft.Office.Tools.Excel.NamedRange> controle e que os detalhes do produto estão listados no <xref:Microsoft.Office.Tools.Excel.ListObject> controle.
+3. Selecione uma empresa na caixa de listagem. Verifique se o nome da empresa é listado na <xref:Microsoft.Office.Tools.Excel.NamedRange> controle e que os detalhes do produto estão listados no <xref:Microsoft.Office.Tools.Excel.ListObject> controle.
 
-4.  Selecione várias empresas para verificar o nome da empresa e detalhes do produto alterar conforme apropriado.
+4. Selecione várias empresas para verificar o nome da empresa e detalhes do produto alterar conforme apropriado.
 
 ## <a name="next-steps"></a>Próximas etapas
  Estas são algumas tarefas que podem vir a seguir:
 
--   Associando dados a controles no Word. Para obter mais informações, confira [Passo a passo: Associar dados a controles em um painel de ações do Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).
+- Associando dados a controles no Word. Para obter mais informações, confira [Passo a passo: Associar dados a controles em um painel de ações do Word](../vsto/walkthrough-binding-data-to-controls-on-a-word-actions-pane.md).
 
--   Implantar o projeto. Para obter mais informações, consulte [implantar uma solução do Office usando o ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
+- Implantar o projeto. Para obter mais informações, consulte [implantar uma solução do Office usando o ClickOnce](../vsto/deploying-an-office-solution-by-using-clickonce.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Visão geral do painel de ações](../vsto/actions-pane-overview.md)

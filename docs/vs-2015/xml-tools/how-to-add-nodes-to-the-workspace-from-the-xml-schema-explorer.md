@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a1a610601ff404ef9aff352e815f930b5ea5cd6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6d4afaab4b0e687d1343e810002ae4ad46c869b5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651495"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043968"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-xml-schema-explorer"></a>Como: Adicionar nós ao workspace do gerenciador de esquema XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,35 +26,35 @@ Este tópico explica como adicionar nós a [espaço de trabalho do Designer de e
   
 ### <a name="to-add-nodes-through-the-xml-explorer-context-menu"></a>Para adicionar nós através do menu de contexto XML Explorer  
   
-1.  Siga as etapas em [como: Criar e editar um arquivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1. Siga as etapas em [como: Criar e editar um arquivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
-2.  Clique com o botão direito do mouse no nó de `PurchaseOrderType` em um XSD Explorer. Selecione **Mostrar no modo de exibição gráfico**.  
+2. Clique com o botão direito do mouse no nó de `PurchaseOrderType` em um XSD Explorer. Selecione **Mostrar no modo de exibição gráfico**.  
   
      O nó de `purchaseOrderType` aparece na superfície de design do modo de gráfico.  
   
 ### <a name="to-drag-and-drop-a-node-on-to-a-view"></a>Para arrastar e soltar sobre um nó para uma visualização  
   
-1.  Clique com o botão direito do mouse no nó de `PurchaseOrderType` no modo de gráfico. Selecione **Mostrar em XML Schema Explorer**.  
+1. Clique com o botão direito do mouse no nó de `PurchaseOrderType` no modo de gráfico. Selecione **Mostrar em XML Schema Explorer**.  
   
      O nó é realçado em XML Schema Explorer.  
   
-2.  Clique com botão direito do `PurchaseOrderType` nó no XML Schema Explorer e selecione **Mostrar todas as referências**.  
+2. Clique com botão direito do `PurchaseOrderType` nó no XML Schema Explorer e selecione **Mostrar todas as referências**.  
   
      O nó de `purchaseOrder` é realçado.  
   
-3.  Arraste o nó de `purchaseOrder` sobre para o modo de exibição gráfico.  
+3. Arraste o nó de `purchaseOrder` sobre para o modo de exibição gráfico.  
   
      O nó de `purchaseOrder` e o nó de `PurchaseOrderType` aparecem próximos uns dos outros na superfície de design do modo de gráfico. Porque os dois nós realted (o elemento de `purchaseOrder` é do tipo de `PurchaseOrderType` ), uma seta é desenhada entre eles.  
   
 ### <a name="to-add-nodes-using-the-schema-explorer-search-capability"></a>Para adicionar nós que usam o esquema Explorer pesquisam o recurso  
   
-1.  Tipo "purchaseOrder" na caixa de texto de pesquisa do [XML Explorer](../xml-tools/xml-schema-explorer.md) ferramentas e clique no botão de pesquisa.  
+1. Tipo "purchaseOrder" na caixa de texto de pesquisa do [XML Explorer](../xml-tools/xml-schema-explorer.md) ferramentas e clique no botão de pesquisa.  
   
      ![Pesquisa de palavra-chave do XML Schema Explorer](../xml-tools/media/schemaexplorersearch.gif "SchemaExplorerSearch")  
   
      Os resultados de pesquisa são realçadas em XML Schema Explorer e marcados por escalas na barra de rolagem vertical.  
   
-2.  Adicionar os resultados da pesquisa para o espaço de trabalho clicando o **adicionar nós realçados ao espaço de trabalho** botão no painel de resultados de resumo.  
+2. Adicionar os resultados da pesquisa para o espaço de trabalho clicando o **adicionar nós realçados ao espaço de trabalho** botão no painel de resultados de resumo.  
   
      ![Resultado da pesquisa do XML Schema Explorer](../xml-tools/media/schemaexplorersearchresult.gif "SchemaExplorerSearchResult")  
   

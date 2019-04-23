@@ -13,30 +13,30 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4bfc46e4860933d57b3439f8293b0d88fc0519ec
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c859e4488a4e1ef6d843ffe27f5b342ea1a92e0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799753"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049952"
 ---
-# <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Como exportar diagramas de classe como imagens (Designer de Classe)
+# <a name="how-to-export-class-diagrams-as-images-class-designer"></a>Como: Exportar diagramas de classe como imagens (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para exportar um diagrama de classe que você criou do código em um projeto, salve o diagrama como uma imagem. Se você quiser exportar diagramas de classe UML em vez disso, consulte [Exportar diagramas como imagens](../modeling/export-diagrams-as-images.md).  
   
-1.  Abra o arquivo de diagrama de classe (.cd).  
+1. Abra o arquivo de diagrama de classe (.cd).  
   
-2.  No menu **Diagrama de Classe** ou no menu de atalho da superfície do diagrama, escolha **Exportar Diagrama como Imagem**.  
+2. No menu **Diagrama de Classe** ou no menu de atalho da superfície do diagrama, escolha **Exportar Diagrama como Imagem**.  
   
-3.  Selecione um diagrama.  
+3. Selecione um diagrama.  
   
-4.  Selecione o formato que você deseja.  
+4. Selecione o formato que você deseja.  
   
-5.  Escolha **Exportar** para concluir a exportação.  
+5. Escolha **Exportar** para concluir a exportação.  
   
      Para atualizar automaticamente as imagens exportadas vinculadas de outros documentos, exporte o diagrama novamente no Visual Studio.  
   
 ## <a name="see-also"></a>Consulte também  
- [Como imprimir diagramas de classe (Designer de Classe)](../ide/how-to-print-class-diagrams-class-designer.md)   
+ [Como: Imprimir diagramas de classe (Designer de classe)](../ide/how-to-print-class-diagrams-class-designer.md)   
  [Trabalhando com diagramas de classe (Designer de Classe)](../ide/working-with-class-diagrams-class-designer.md)

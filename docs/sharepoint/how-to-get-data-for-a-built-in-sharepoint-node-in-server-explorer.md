@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a51c64b2caf8520385a5334d7bbd3ad6c14d93f0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d1e3ec8fd6598573a60f852727397d6baa63d3e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058675"
 ---
 # <a name="how-to-get-data-for-a-built-in-sharepoint-node-in-server-explorer"></a>Como: Obter dados para um nó SharePoint interno no Gerenciador de servidores
   Para cada nó SharePoint interno no **Gerenciador de servidores**, você pode obter dados para o componente subjacente do SharePoint que o nó representa. Para obter mais informações, consulte [estender o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).
@@ -36,13 +36,13 @@ ms.locfileid: "56633454"
 ## <a name="compile-the-code"></a>Compilar o código
  Este exemplo requer referências aos assemblies a seguir:
 
--   EnvDTE
+- EnvDTE
 
--   Microsoft.VisualStudio.SharePoint
+- Microsoft.VisualStudio.SharePoint
 
--   Microsoft.VisualStudio.SharePoint.Explorer.Extensions
+- Microsoft.VisualStudio.SharePoint.Explorer.Extensions
 
--   System.ComponentModel.Composition
+- System.ComponentModel.Composition
 
 ## <a name="deploy-the-extension"></a>Implantar a extensão
  Para implantar o **Gerenciador de servidores** extensão, crie um [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] pacote de extensão (VSIX) para o assembly e outros arquivos que você deseja distribuir com a extensão. Para obter mais informações, consulte [implantar extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).

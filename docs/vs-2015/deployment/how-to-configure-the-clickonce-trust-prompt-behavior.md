@@ -19,12 +19,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f5a1174f96e34773aac524562d6f62514e92ba5e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 58e5f0e9154137097a94637799966ee94818fca4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "58999939"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047041"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Como: Configurar o comportamento do prompt confiável do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,19 +56,19 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
   
 #### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Para habilitar o prompt de confiança do ClickOnce usando o editor do registro  
   
-1.  Abra o Editor do Registro:  
+1. Abra o Editor do Registro:  
   
-    1.  Clique em **Iniciar** e depois em **Executar**.  
+    1. Clique em **Iniciar** e depois em **Executar**.  
   
-    2.  No **aberto** , digite `regedit` (ou `regedit32` no Windows de 32 bits) e, em seguida, clique em **Okey**.  
+    2. No **aberto** , digite `regedit` (ou `regedit32` no Windows de 32 bits) e, em seguida, clique em **Okey**.  
   
-2.  Localize a seguinte chave do registro:  
+2. Localize a seguinte chave do registro:  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      Se a chave não existir, crie-o.  
   
-3.  Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se ainda não existirem, com os valores associados, mostrados na tabela a seguir.  
+3. Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se ainda não existirem, com os valores associados, mostrados na tabela a seguir.  
   
     |Subchave do valor de cadeia de caracteres|Valor|  
     |-------------------------|-----------|  
@@ -82,9 +82,9 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
   
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>Para habilitar o prompt de confiança do ClickOnce por meio de programação  
   
-1.  Crie um aplicativo de console do Visual Basic ou Visual C# no Visual Studio.  
+1. Crie um aplicativo de console do Visual Basic ou Visual c# no Visual Studio.  
   
-2.  Abra o arquivo Program. vb ou Program.cs para edição e adicione o código a seguir.  
+2. Abra o arquivo Program. vb ou Program.cs para edição e adicione o código a seguir.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -108,26 +108,26 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
     key.Close();  
     ```  
   
-3.  Crie e execute o aplicativo.  
+3. Crie e execute o aplicativo.  
   
 ## <a name="restricting-the-clickonce-trust-prompt"></a>Restringindo o Prompt confiável do ClickOnce  
  Restringir o prompt de confiança para que as soluções devem ser assinadas com certificados Authenticode que têm conhecidos identidade antes que os usuários são solicitados para uma decisão de confiança.  
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Para restringir o prompt de confiança do ClickOnce usando o editor do registro  
   
-1.  Abra o Editor do Registro:  
+1. Abra o Editor do Registro:  
   
-    1.  Clique em **Iniciar** e depois em **Executar**.  
+    1. Clique em **Iniciar** e depois em **Executar**.  
   
-    2.  No **aberto** , digite `regedit` (ou `regedit32` no Windows de 32 bits) e, em seguida, clique em **Okey**.  
+    2. No **aberto** , digite `regedit` (ou `regedit32` no Windows de 32 bits) e, em seguida, clique em **Okey**.  
   
-2.  Localize a seguinte chave do registro:  
+2. Localize a seguinte chave do registro:  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      Se a chave não existir, crie-o.  
   
-3.  Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se ainda não existirem, com os valores associados, mostrados na tabela a seguir.  
+3. Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se ainda não existirem, com os valores associados, mostrados na tabela a seguir.  
   
     |Subchave do valor de cadeia de caracteres|Valor|  
     |-------------------------|-----------|  
@@ -139,9 +139,9 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
   
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>Para restringir o prompt de confiança do ClickOnce por meio de programação  
   
-1.  Crie um aplicativo de console do Visual Basic ou Visual C# no Visual Studio.  
+1. Crie um aplicativo de console do Visual Basic ou Visual c# no Visual Studio.  
   
-2.  Abra o arquivo Program. vb ou Program.cs para edição e adicione o código a seguir.  
+2. Abra o arquivo Program. vb ou Program.cs para edição e adicione o código a seguir.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -165,26 +165,26 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
     key.Close();  
     ```  
   
-3.  Crie e execute o aplicativo.  
+3. Crie e execute o aplicativo.  
   
 ## <a name="disabling-the-clickonce-trust-prompt"></a>Desabilitar o Prompt confiável do ClickOnce  
  Você pode desabilitar o prompt de confiança para que os usuários finais não recebem a opção de instalar as soluções que já não são confiáveis na sua política de segurança.  
   
 #### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Para desabilitar o prompt de confiança do ClickOnce usando o editor do registro  
   
-1.  Abra o Editor do Registro:  
+1. Abra o Editor do Registro:  
   
-    1.  Clique em **Iniciar** e depois em **Executar**.  
+    1. Clique em **Iniciar** e depois em **Executar**.  
   
-    2.  No **aberto** , digite `regedit` (ou `regedit32` no Windows de 32 bits) e, em seguida, clique em **Okey**.  
+    2. No **aberto** , digite `regedit` (ou `regedit32` no Windows de 32 bits) e, em seguida, clique em **Okey**.  
   
-2.  Localize a seguinte chave do registro:  
+2. Localize a seguinte chave do registro:  
   
      \HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel  
   
      Se a chave não existir, crie-o.  
   
-3.  Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se ainda não existirem, com os valores associados, mostrados na tabela a seguir.  
+3. Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se ainda não existirem, com os valores associados, mostrados na tabela a seguir.  
   
     |Subchave do valor de cadeia de caracteres|Valor|  
     |-------------------------|-----------|  
@@ -196,9 +196,9 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
   
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>Para desabilitar o prompt de confiança do ClickOnce por meio de programação  
   
-1.  Crie um aplicativo de console do Visual Basic ou Visual C# no Visual Studio.  
+1. Crie um aplicativo de console do Visual Basic ou Visual c# no Visual Studio.  
   
-2.  Abra o arquivo Program. vb ou Program.cs para edição e adicione o código a seguir.  
+2. Abra o arquivo Program. vb ou Program.cs para edição e adicione o código a seguir.  
   
     ```vb  
     Dim key As Microsoft.Win32.RegistryKey  
@@ -223,7 +223,7 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
   
     ```  
   
-3.  Crie e execute o aplicativo.  
+3. Crie e execute o aplicativo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)   

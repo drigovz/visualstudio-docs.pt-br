@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a5c5ae2abeea1e1e6b5a2fe360ff8515e5096341
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922868"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049536"
 ---
 # <a name="addressing-dpi-issues"></a>Resolvendo problemas e DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,15 +120,15 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
   
  Para acessar as funções do auxiliar DPI do código gerenciado que será executado dentro do ambiente do Visual Studio:  
   
--   O projeto consumidor deve fazer referência a versão mais recente do MPF de Shell. Por exemplo:  
+- O projeto consumidor deve fazer referência a versão mais recente do MPF de Shell. Por exemplo:  
   
     ```csharp  
     <Reference Include="Microsoft.VisualStudio.Shell.14.0.dll" />  
     ```  
   
--   Verifique se o projeto tem referências aos **Forms**, **PresentationCore**, e **PresentationUI**.  
+- Verifique se o projeto tem referências aos **Forms**, **PresentationCore**, e **PresentationUI**.  
   
--   No código, use o **Microsoft.VisualStudio.PlatformUI** namespace e chame funções estáticas da classe DpiHelper. Para tipos com suporte (pontos, tamanhos, retângulos e assim por diante), existem desde dimensionado de funções de extensão que retornam novos objetos. Por exemplo:  
+- No código, use o **Microsoft.VisualStudio.PlatformUI** namespace e chame funções estáticas da classe DpiHelper. Para tipos com suporte (pontos, tamanhos, retângulos e assim por diante), existem desde dimensionado de funções de extensão que retornam novos objetos. Por exemplo:  
   
     ```csharp  
     using Microsoft.VisualStudio.PlatformUI;  
@@ -207,13 +207,13 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
   
  Porque o WPF dimensionará a interface do usuário para o DPI atual usando a propriedade de BitmapScalingMode definida no UIElement, deve ser um controle de imagem usando uma imagem prescaled como sua fonte aparecerá duas ou três vezes maior do que ele. A seguir estão algumas maneiras de combater esse efeito:  
   
--   Se você souber a dimensão da imagem original em 100%, você pode especificar o tamanho exato do controle de imagem. Esses tamanhos refletirá que o tamanho da interface do usuário antes do dimensionamento é aplicado.  
+- Se você souber a dimensão da imagem original em 100%, você pode especificar o tamanho exato do controle de imagem. Esses tamanhos refletirá que o tamanho da interface do usuário antes do dimensionamento é aplicado.  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />  
     ```  
   
--   Se o tamanho da imagem original não for conhecido, um LayoutTransform pode ser usado para reduzir verticalmente o objeto de imagem final. Por exemplo:  
+- Se o tamanho da imagem original não for conhecido, um LayoutTransform pode ser usado para reduzir verticalmente o objeto de imagem final. Por exemplo:  
   
     ```xaml  
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >  
@@ -344,9 +344,9 @@ public int GetHostInfo(DOCHOSTUIINFO info)
   
 ## <a name="tips"></a>Dicas  
   
-1.  Se a propriedade de documento no controle WebOC for alterado, você precisa reassociar o documento com a classe IDocHostUIHandler.  
+1. Se a propriedade de documento no controle WebOC for alterado, você precisa reassociar o documento com a classe IDocHostUIHandler.  
   
-2.  Se as opções acima não funcionar, há um problema conhecido com o WebOC não escolher a mudança para o sinalizador DPI. A maneira mais confiável de corrigir isso é ativar/desativar o zoom ótico de WebOC, duas chamadas de significado com dois valores diferentes para o percentual de zoom. Além disso, se essa solução alternativa é necessária, pode ser necessário para executá-lo em cada chamada de navegar.  
+2. Se as opções acima não funcionar, há um problema conhecido com o WebOC não escolher a mudança para o sinalizador DPI. A maneira mais confiável de corrigir isso é ativar/desativar o zoom ótico de WebOC, duas chamadas de significado com dois valores diferentes para o percentual de zoom. Além disso, se essa solução alternativa é necessária, pode ser necessário para executá-lo em cada chamada de navegar.  
   
     ```csharp  
     // browser2 is a SHDocVw.IWebBrowser2 in this case  

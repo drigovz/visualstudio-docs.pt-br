@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10067cdf06035b08c56fbcc92440b460a9b7733b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 70d438107b7cbe05b0a1c0049dff8e26c286de89
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612095"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043955"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>Suporte para snippets de código em um serviço de linguagem herdado
 Um trecho de código é um trecho de código que é inserido no arquivo de origem. O trecho de código em si é um modelo baseado em XML com um conjunto de campos. Esses campos são realçados depois que o trecho de código é inserido e pode ter valores diferentes dependendo do contexto no qual o trecho de código é inserido. Imediatamente depois de inserir o trecho de código, o serviço de linguagem pode formatar o trecho de código.
@@ -39,11 +39,11 @@ Um trecho de código é um trecho de código que é inserido no arquivo de orige
 ## <a name="providing-support-for-code-snippets"></a>Fornecendo suporte a trechos de código
  Para habilitar o suporte de trechos de código, você deve fornecer ou instalar os trechos de código e você deve fornecer os meios para o usuário inserir os trechos de código. Há três etapas para habilitar o suporte a trechos de código:
 
-1.  Instalando os arquivos de trecho de código.
+1. Instalando os arquivos de trecho de código.
 
-2.  Habilitando os trechos de código para seu serviço de linguagem.
+2. Habilitando os trechos de código para seu serviço de linguagem.
 
-3.  Invocar o <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto.
+3. Invocar o <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto.
 
 ### <a name="installing-the-snippet-files"></a>Instalando os arquivos de trecho de código
  Todos os trechos de código para um idioma são armazenados como modelos em arquivos XML, normalmente um modelo de trecho de código por arquivo. Para obter detalhes sobre o esquema XML usado para modelos de trecho de código, consulte [referência de esquema de trechos de código](../../ide/code-snippets-schema-reference.md). Cada modelo de trecho de código é identificado com uma ID de idioma. Essa linguagem ID é especificada no registro e é colocada na `Language` atributo do \<código > marca no modelo.
@@ -115,9 +115,9 @@ Um trecho de código é um trecho de código que é inserido no arquivo de orige
 ### <a name="inserting-a-code-snippet-by-using-a-menu-command"></a>Inserindo um trecho de código usando um comando de Menu
  Para usar um comando de menu para exibir o navegador de trecho de código, você pode adicionar um comando de menu e, em seguida, chame o <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> método no <xref:Microsoft.VisualStudio.Package.ExpansionProvider> interface em resposta a esse comando de menu.
 
-1.  Adicione um comando e um botão ao arquivo. VSCT. Você pode encontrar instruções sobre como fazer isso no [criar uma extensão com um comando de Menu](../../extensibility/creating-an-extension-with-a-menu-command.md).
+1. Adicione um comando e um botão ao arquivo. VSCT. Você pode encontrar instruções sobre como fazer isso no [criar uma extensão com um comando de Menu](../../extensibility/creating-an-extension-with-a-menu-command.md).
 
-2.  Derive uma classe do <xref:Microsoft.VisualStudio.Package.ViewFilter> de classe e substituir o <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> método para indicar o suporte para o novo comando de menu. Este exemplo sempre permite que o comando de menu.
+2. Derive uma classe do <xref:Microsoft.VisualStudio.Package.ViewFilter> de classe e substituir o <xref:Microsoft.VisualStudio.Package.ViewFilter.QueryCommandStatus%2A> método para indicar o suporte para o novo comando de menu. Este exemplo sempre permite que o comando de menu.
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -153,7 +153,7 @@ Um trecho de código é um trecho de código que é inserido no arquivo de orige
     }
     ```
 
-3.  Substituir a <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> método na <xref:Microsoft.VisualStudio.Package.ViewFilter> classe para obter o <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto e chame o <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> método naquele objeto.
+3. Substituir a <xref:Microsoft.VisualStudio.Package.ViewFilter.HandlePreExec%2A> método na <xref:Microsoft.VisualStudio.Package.ViewFilter> classe para obter o <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto e chame o <xref:Microsoft.VisualStudio.Package.ExpansionProvider.DisplayExpansionBrowser%2A> método naquele objeto.
 
     ```csharp
     using Microsoft.VisualStudio.Package;
@@ -205,15 +205,15 @@ Um trecho de código é um trecho de código que é inserido no arquivo de orige
 
      Os seguintes métodos no <xref:Microsoft.VisualStudio.Package.ExpansionProvider> classe são chamados pelo Visual Studio na ordem fornecida durante o processo de inserir o trecho de código:
 
-4.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
+4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
 
-5.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
+5. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
 
-6.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>
+6. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnBeforeInsertion%2A>
 
-7.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>
+7. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FormatSpan%2A>
 
-8.  <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
+8. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
 
      Após o <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A> método é chamado, o trecho de código foi inserido e o <xref:Microsoft.VisualStudio.Package.ExpansionProvider> objeto está em um modo de edição especial usado para modificar um trecho de código que foi inserido.
 

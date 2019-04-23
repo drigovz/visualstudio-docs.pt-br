@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a949d72783f3d8ac1c2f0338e4ad7057f74653aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cb0502128b95716b0598b373be81519a06911f06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923996"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60052799"
 ---
 # <a name="define-packages-and-namespaces"></a>Definir pacotes e namespaces
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ No Visual Studio, uma *pacote* é um contêiner para as definições dos element
   
  [Propriedades de pacotes](#Properties)  
   
-##  <a name="Namespaces"></a> Namespaces  
+## <a name="Namespaces"></a> Namespaces  
  Os pacotes são úteis para separar o trabalho em áreas diferentes. Cada pacote define um namespace para que os nomes que são definidos em pacotes diferentes não entram em conflito uns com os outros.  
   
  A propriedade de nome qualificado de cada elemento é o nome qualificado do pacote ao qual ele pertence, seguido do nome do elemento. Por exemplo, se o pacote é chamado `MyPackage`, uma classe dentro do pacote terá um nome qualificado, como `MyPackage::MyClass`. Como cada elemento está contido dentro de um modelo, cada nome qualificado começa com o nome do modelo.  
@@ -58,20 +58,20 @@ No Visual Studio, uma *pacote* é um contêiner para as definições dos element
   
  Os pacotes são contêineres. Se você mover ou excluir um pacote, as classes, pacotes e outras coisas definidas dentro dele são também movidas ou excluídas. O mesmo é verdadeiro para outros elementos que definem os namespaces.  
   
-##  <a name="Packages"></a> Criar e exibir pacotes  
+## <a name="Packages"></a> Criar e exibir pacotes  
  Você pode criar um pacote em um diagrama de classe UML ou no Gerenciador de modelos UML.  
   
 #### <a name="to-create-a-package-in-a-uml-class-diagram"></a>Para criar um pacote em um diagrama de classe UML  
   
-1.  Abra um diagrama de classe UML ou criar um novo.  
+1. Abra um diagrama de classe UML ou criar um novo.  
   
-2.  Clique o **pacote** ferramenta.  
+2. Clique o **pacote** ferramenta.  
   
-3.  Clique em qualquer lugar no diagrama. Uma nova forma de pacote será exibido.  
+3. Clique em qualquer lugar no diagrama. Uma nova forma de pacote será exibido.  
   
      Você pode clicar dentro de um pacote existente para aninhar um pacote em outro.  
   
-4.  Digite um novo nome para o pacote.  
+4. Digite um novo nome para o pacote.  
   
 #### <a name="to-create-a-package-in-uml-model-explorer"></a>Para criar um pacote no Gerenciador de modelos UML  
   
@@ -92,12 +92,12 @@ No Visual Studio, uma *pacote* é um contêiner para as definições dos element
   
 #### <a name="to-show-an-existing-package-on-a-uml-class-diagram"></a>Para mostrar um pacote existente em um diagrama de classe UML  
   
--   Arraste o pacote do Gerenciador de modelos UML para o diagrama de classe.  
+- Arraste o pacote do Gerenciador de modelos UML para o diagrama de classe.  
   
     > [!NOTE]
     >  Isso cria um modo de exibição do pacote neste diagrama. Ele não necessariamente mostrará todos os elementos que o pacote contém. Para certificar-se de que você vê que todo o conteúdo do pacote, exibi-lo no Gerenciador de modelos UML.  
   
-##  <a name="Elements"></a> Criar elementos de modelo dentro de pacotes  
+## <a name="Elements"></a> Criar elementos de modelo dentro de pacotes  
  Há quatro maneiras em que você pode colocar os elementos de modelo dentro de um pacote:  
   
 - Adicione um novo elemento a um pacote no Gerenciador de modelos UML.  
@@ -112,98 +112,98 @@ No Visual Studio, uma *pacote* é um contêiner para as definições dos element
   
 #### <a name="to-create-an-element-in-a-package-in-uml-model-explorer"></a>Para criar um elemento em um pacote no Gerenciador de modelos UML  
   
-1.  Abra **Gerenciador de modelos UML**. Sobre o **modo de exibição** , aponte para **Other Windows**e, em seguida, clique em **Gerenciador de modelos UML**.  
+1. Abra **Gerenciador de modelos UML**. Sobre o **modo de exibição** , aponte para **Other Windows**e, em seguida, clique em **Gerenciador de modelos UML**.  
   
-2.  Clique com botão direito um pacote ou um modelo ao qual você deseja adicionar um novo elemento.  
+2. Clique com botão direito um pacote ou um modelo ao qual você deseja adicionar um novo elemento.  
   
-3.  Aponte para **adicionar**e, em seguida, clique no tipo de elemento que você deseja adicionar.  
+3. Aponte para **adicionar**e, em seguida, clique no tipo de elemento que você deseja adicionar.  
   
      O novo elemento aparece sob o pacote.  
   
-4.  Digite um nome para o novo elemento.  
+4. Digite um nome para o novo elemento.  
   
     > [!NOTE]
     >  O novo elemento não aparece em qualquer diagrama. Para criar um modo de exibição do novo elemento, você pode arrastá-lo do Gerenciador de modelos UML para um diagrama. O diagrama deve ser um tipo que exibirá esse tipo de elemento.  
   
 #### <a name="to-create-an-element-in-a-package-on-a-uml-class-diagram"></a>Para criar um elemento em um pacote em um diagrama de classe UML  
   
-1.  Abra um diagrama de classe na qual o pacote é exibida.  
+1. Abra um diagrama de classe na qual o pacote é exibida.  
   
-    -   Crie um novo pacote, se você ainda não tiver feito isso.  
+    - Crie um novo pacote, se você ainda não tiver feito isso.  
   
-    -   Para fazer com que um pacote existente aparecer em um diagrama de classe, você pode arrastar o pacote a partir **Gerenciador de modelos UML** para o diagrama de classe.  
+    - Para fazer com que um pacote existente aparecer em um diagrama de classe, você pode arrastar o pacote a partir **Gerenciador de modelos UML** para o diagrama de classe.  
   
-2.  Clique na ferramenta para uma classe, interface ou enumeração ou pacote.  
+2. Clique na ferramenta para uma classe, interface ou enumeração ou pacote.  
   
-3.  Clique no pacote no qual você deseja colocar o novo elemento.  
+3. Clique no pacote no qual você deseja colocar o novo elemento.  
   
      O novo elemento é exibido dentro do pacote.  
   
 #### <a name="to-create-all-the-elements-of-a-diagram-in-a-specified-package"></a>Para criar todos os elementos de um diagrama em um pacote especificado  
   
-1.  Crie o pacote, se você ainda não tiver feito isso.  
+1. Crie o pacote, se você ainda não tiver feito isso.  
   
-2.  Abra um diagrama de componente, o diagrama de caso de uso ou o diagrama de classe UML.  
+2. Abra um diagrama de componente, o diagrama de caso de uso ou o diagrama de classe UML.  
   
-3.  Abra as propriedades do diagrama. Clique com botão direito em uma parte em branco do diagrama e, em seguida, clique em **propriedades**.  
+3. Abra as propriedades do diagrama. Clique com botão direito em uma parte em branco do diagrama e, em seguida, clique em **propriedades**.  
   
-4.  No **pacote vinculado** propriedade, escolha o pacote que você deseja que contenha o conteúdo do diagrama.  
+4. No **pacote vinculado** propriedade, escolha o pacote que você deseja que contenha o conteúdo do diagrama.  
   
-5.  Crie novos elementos no diagrama. Eles serão colocados no pacote.  
+5. Crie novos elementos no diagrama. Eles serão colocados no pacote.  
   
-    -   O **nome qualificado** de cada elemento começará com o nome do pacote qualificado.  
+    - O **nome qualificado** de cada elemento começará com o nome do pacote qualificado.  
   
-    -   Na **Gerenciador de modelos UML**, cada elemento será exibido sob o pacote.  
+    - Na **Gerenciador de modelos UML**, cada elemento será exibido sob o pacote.  
   
-##  <a name="Moving"></a> Movendo elementos dentro e fora de pacotes  
+## <a name="Moving"></a> Movendo elementos dentro e fora de pacotes  
  Você pode mover um ou mais elementos dentro ou fora de um pacote.  
   
  Se você mover um pacote, tudo dentro dele será movido com ele.  
   
 #### <a name="to-move-an-element-into-or-out-of-a-package"></a>Para mover um elemento dentro ou fora de um pacote  
   
--   No Gerenciador de modelos UML, arraste o elemento dentro ou fora da árvore cuja raiz é o pacote.  
+- No Gerenciador de modelos UML, arraste o elemento dentro ou fora da árvore cuja raiz é o pacote.  
   
      O nome qualificado do elemento será alterado para mostrar seu novo pacote de proprietário ou o modelo.  
   
      \- ou -  
   
--   Em um diagrama de classe, arraste o elemento em uma forma de pacote.  
+- Em um diagrama de classe, arraste o elemento em uma forma de pacote.  
   
      O nome qualificado do elemento será alterado para mostrar o novo pacote de proprietário.  
   
     > [!NOTE]
     >  Se você arrastar um elemento fora de um pacote em uma parte em branco do diagrama, seu pacote proprietário não é alterado. Isso permite que você faça um diagrama que mostra os elementos de vários pacotes sem a necessidade de mostrar os pacotes em si.  
   
-##  <a name="Pasting"></a> Colar elementos em um pacote  
+## <a name="Pasting"></a> Colar elementos em um pacote  
  Você pode colar um elemento em um pacote. Se você colar um grupo de elementos relacionados em um pacote, as relações entre elas também serão coladas.  
   
 #### <a name="to-paste-elements-into-a-package-on-a-uml-class-diagram"></a>Para colar elementos em um pacote em um diagrama de classe UML  
   
-1.  Em um diagrama de classe UML, selecione todos os elementos que você deseja copiar. Clique em um deles e, em seguida, clique em **cópia**.  
+1. Em um diagrama de classe UML, selecione todos os elementos que você deseja copiar. Clique em um deles e, em seguida, clique em **cópia**.  
   
-2.  O pacote com o botão direito e, em seguida, clique em **colar**.  
+2. O pacote com o botão direito e, em seguida, clique em **colar**.  
   
     > [!NOTE]
     >  O pacote pode estar em um diagrama de diferente.  
   
-##  <a name="Import"></a> Importar relações entre os pacotes  
+## <a name="Import"></a> Importar relações entre os pacotes  
  Você pode definir uma relação de importação entre pacotes, usando o **importação** ferramenta.  
   
  Importação significa que os elementos definidos no pacote importado, que são os elementos na extremidade da seta da relação, efetivamente são definidos também no pacote de importação. Todos os elementos cuja visibilidade está definida como **pacote** estarão visíveis também no pacote de importação.  
   
  Evite criar loops em relações de importação.  
   
-##  <a name="References"></a> Referências de um Namespace para outra  
+## <a name="References"></a> Referências de um Namespace para outra  
  Se você quiser se referir a um elemento de um pacote de outra, você deve usar o nome qualificado do elemento.  
   
  Por exemplo, suponha que o pacote `SalesCommon` define o tipo `CustomerAddress`. Em outro pacote `RestaurantSales`, você deseja definir um tipo `MealOrder`, que tem um atributo de tipo de endereço do cliente. Você tem duas opções:  
   
--   Especifique o tipo de atributo usando o nome totalmente qualificado `SalesCommon::CustomerAddress`. Você deve fazer isso pode apenas se `CustomerAddress` tem sua **visibilidade** propriedade definida como **público**.  
+- Especifique o tipo de atributo usando o nome totalmente qualificado `SalesCommon::CustomerAddress`. Você deve fazer isso pode apenas se `CustomerAddress` tem sua **visibilidade** propriedade definida como **público**.  
   
--   Criar uma relação de importação do `RestaurantSales` de pacote para o `SalesCommon` pacote. Em seguida, você pode usar `CustomerAddress` sem usar o nome qualificado.  
+- Criar uma relação de importação do `RestaurantSales` de pacote para o `SalesCommon` pacote. Em seguida, você pode usar `CustomerAddress` sem usar o nome qualificado.  
   
-##  <a name="Properties"></a> Propriedades de pacotes  
+## <a name="Properties"></a> Propriedades de pacotes  
  Cada pacote tem as seguintes propriedades. Para ver as propriedades, o pacote em um diagrama ou no Gerenciador de modelos UML, com o botão direito e, em seguida, clique em **propriedades**.  
   
 |Propriedade|Valor padrão|Descrição|  

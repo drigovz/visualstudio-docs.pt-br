@@ -9,19 +9,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d9906f3b8af624e1761b73c3338bad98b263aa9e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 66159516c6b1360203130dedb56c0e6c192a118a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957176"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050005"
 ---
 # <a name="security-of-text-templates"></a>Segurança de modelos de texto
 Modelos de texto têm as seguintes preocupações de segurança:
 
--   Modelos de texto são vulneráveis a inserções de código arbitrário.
+- Modelos de texto são vulneráveis a inserções de código arbitrário.
 
--   Se o mecanismo que o host usa para encontrar um processador de diretriz não é seguro, um processador de diretriz mal-intencionado pode ser executado.
+- Se o mecanismo que o host usa para encontrar um processador de diretriz não é seguro, um processador de diretriz mal-intencionado pode ser executado.
 
 ## <a name="arbitrary-code"></a>Código arbitrário
  Quando você escreve um modelo, você pode colocar qualquer código dentro de \<# # > marcas. Isso permite que o código arbitrário ser executado em um modelo de texto.

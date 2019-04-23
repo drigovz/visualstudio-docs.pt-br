@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6002ed1748a5848e43628c88ec0395a0d4053ed
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 829ceea8f4acf0f884e3345e05053d368489d9ea
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712015"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049016"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>Introdução a extensões de editor e o serviço de linguagem
 Você pode usar as extensões do editor para adicionar recursos de serviço de linguagem, como a estrutura de tópicos, correspondência de chaves, IntelliSense e as lâmpadas para sua própria linguagem de programação ou a qualquer tipo de conteúdo. Você também pode personalizar a aparência e comportamento do editor do Visual Studio, por exemplo texto coloração, margens, adornos e outros elementos visuais. Você também pode definir seu próprio tipo de conteúdo e especificar a aparência e comportamento dos modos de exibição de texto no qual o conteúdo será exibido.
@@ -82,9 +82,9 @@ Você pode usar as extensões do editor para adicionar recursos de serviço de l
 
  Você também pode criar editor de componentes do MEF de uma extensão do pacote do Visual Studio. Consulte as instruções a seguir para obter detalhes:
 
--   [Passo a passo: Usando um comando de shell com uma extensão do editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)
+- [Passo a passo: Usando um comando de shell com uma extensão do editor](../extensibility/walkthrough-using-a-shell-command-with-an-editor-extension.md)
 
--   [Passo a passo: Usando uma tecla de atalho com uma extensão do editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
+- [Passo a passo: Usando uma tecla de atalho com uma extensão do editor](../extensibility/walkthrough-using-a-shortcut-key-with-an-editor-extension.md)
 
 ## <a name="see-also"></a>Consulte também
 - [Pontos de extensão de editor e o serviço de linguagem](../extensibility/language-service-and-editor-extension-points.md)

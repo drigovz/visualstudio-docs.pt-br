@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0425929908f17b33de71a49b03ae8de729f28309
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 400961eaa14b87d70a685a87be5df48ac92c8281
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681889"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047547"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>Exibir as DLLs e executáveis na janela de módulos (C#, C++, Visual Basic, F#)
 
@@ -73,9 +73,9 @@ O **Status do símbolo** coluna o **módulos** janela mostra quais módulos têm
 
 **Para alterar o comportamento de um módulo específico de carregamento de símbolo:**
 
-1.  Na janela **Módulos**, clique com o botão direito do mouse no módulo.
+1. Na janela **Módulos**, clique com o botão direito do mouse no módulo.
 
-1.  No menu de atalho, marque ou desmarque **sempre carregar automaticamente**. As alterações entram em vigor na próxima sessão de depuração.
+1. No menu de atalho, marque ou desmarque **sempre carregar automaticamente**. As alterações entram em vigor na próxima sessão de depuração.
 
 ## <a name="see-also"></a>Consulte também
 - [Interrompendo a execução](/previous-versions/visualstudio/visual-studio-2010/7z9se2d8(v=vs.100))

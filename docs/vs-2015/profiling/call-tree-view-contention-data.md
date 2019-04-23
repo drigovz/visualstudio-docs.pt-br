@@ -11,12 +11,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 47db94f7602a42ae9e5142ef27213a06adb8865c
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 5d12f1a2343018f05f0e741222b844c562b50f5e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791647"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048367"
 ---
 # <a name="call-tree-view---contention-data"></a>Modo de exibição de árvore de chamadas - Dados de contenção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de f
 ## <a name="highlighting-the-execution-hot-path"></a>Realce do afunilamento de execução  
  O modo de exibição de árvore de chamadas pode expandir e realçar o caminho de execução do processo ou da função que criou a maior parte das contenções.  
   
--   Para exibir o caminho mais ativo, clique com o botão direito do mouse no processo ou na função e, em seguida, clique em **Expandir Afunilamento**.  
+- Para exibir o caminho mais ativo, clique com o botão direito do mouse no processo ou na função e, em seguida, clique em **Expandir Afunilamento**.  
   
 ## <a name="setting-the-call-tree-root-node"></a>Configuração do nó raiz da árvore de chamadas  
  Cada processo na execução de criação de perfil aparece como um nó raiz. Para definir o nó inicial do modo de exibição de Árvore de Chamadas, clique com o botão direito do mouse no nó que você deseja definir como o nó inicial e, em seguida, clique em **Definir Raiz**.  

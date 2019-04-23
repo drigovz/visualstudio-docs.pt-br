@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26fdadf92fa94efe0a08fdf090e5a295e2f65096
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 6841b8a91cec24f467f6e3f684cbb27e25c9fa63
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54999971"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045610"
 ---
 # <a name="how-to-disable-url-activation-of-clickonce-applications"></a>Como: Desabilitar a ativação de URL de aplicativos ClickOnce
 
@@ -35,13 +35,13 @@ Este procedimento usa a ferramenta Windows Software Development Kit (SDK) MageUI
 
 ### <a name="to-disable-url-activation-for-your-application"></a>Para desabilitar a ativação de URL para seu aplicativo
 
-1.  Abra o manifesto de implantação no MageUI.exe. Se você não ainda tiver criado uma, siga as etapas em [passo a passo: Implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+1. Abra o manifesto de implantação no MageUI.exe. Se você não ainda tiver criado uma, siga as etapas em [passo a passo: Implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
-2.  Selecione o **opções de implantação** guia.
+2. Selecione o **opções de implantação** guia.
 
-3.  Desmarque a **executar o aplicativo depois de instalar automaticamente** caixa de seleção.
+3. Desmarque a **executar o aplicativo depois de instalar automaticamente** caixa de seleção.
 
-4.  Salve e assinar o manifesto.
+4. Salve e assinar o manifesto.
 
 ## <a name="see-also"></a>Consulte também
 

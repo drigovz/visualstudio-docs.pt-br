@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: afc99ba7d5b7a6b5cf9fc0e610160213dec5d2e8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 056e5d1fad258d063e30cfd97e85529ff3a0c9bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654497"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059630"
 ---
 # <a name="install-sql-server-sample-databases"></a>Instalar bancos de dados de exemplo do SQL Server
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Os bancos de dados são úteis para experimentar consultas SQL e LINQ, vinculaç
   
 #### <a name="to-restore-a-database-from-a-bak-file-in-visual-studio"></a>Para restaurar um banco de dados de um arquivo. bak no Visual Studio  
   
-1.  Quando você faz backup de um banco de dados do Microsoft SQL Server, o resultado é um arquivo. bak. Para tornar o. bak arquivo utilizável novamente como um arquivo de banco de dados, ele deve ser *restaurado*. No menu principal, selecione **modo de exibição** > **SQL Server Object Explorer**. Se você não estiver visível, talvez você precise instalá-lo. Vá para **painel de controle** > **programas e recursos**, localize o Microsoft Visual Studio 2015 e clique o **alteração** botão. Quando a lista dos componentes instalados é exibida na janela do instalador, selecione a **Pesquisador de objetos do SQL Server** caixa de seleção e, em seguida, continue com a instalação.  
+1. Quando você faz backup de um banco de dados do Microsoft SQL Server, o resultado é um arquivo. bak. Para tornar o. bak arquivo utilizável novamente como um arquivo de banco de dados, ele deve ser *restaurado*. No menu principal, selecione **modo de exibição** > **SQL Server Object Explorer**. Se você não estiver visível, talvez você precise instalá-lo. Vá para **painel de controle** > **programas e recursos**, localize o Microsoft Visual Studio 2015 e clique o **alteração** botão. Quando a lista dos componentes instalados é exibida na janela do instalador, selecione a **Pesquisador de objetos do SQL Server** caixa de seleção e, em seguida, continue com a instalação.  
   
-2.  No Pesquisador de objetos do SQL Server, clique em qualquer mecanismo de banco de dados do SQL Server (por exemplo, o localdb) e selecione**nova consulta**.  
+2. No Pesquisador de objetos do SQL Server, clique em qualquer mecanismo de banco de dados do SQL Server (por exemplo, o localdb) e selecione**nova consulta**.  
   
      ![SQL Server objeto Explorer nova consulta](../data-tools/media/raddata-sql-server-object-explorer-new-query.png "raddata SQL Server objeto Gerenciador de nova consulta")  
   
-3.  Primeiro, você precisa que os nomes lógicos dos arquivos de log e banco de dados dentro do arquivo. bak. Para fazer isso, insira esta consulta no Editor de consultas SQL e, em seguida, selecionar o verde **executar** botão na parte superior da janela. Modifique o caminho do arquivo se necessário, para apontar para o arquivo. bak.  
+3. Primeiro, você precisa que os nomes lógicos dos arquivos de log e banco de dados dentro do arquivo. bak. Para fazer isso, insira esta consulta no Editor de consultas SQL e, em seguida, selecionar o verde **executar** botão na parte superior da janela. Modifique o caminho do arquivo se necessário, para apontar para o arquivo. bak.  
   
     ```  
     RESTORE FILELISTONLY  
@@ -43,7 +43,7 @@ Os bancos de dados são úteis para experimentar consultas SQL e LINQ, vinculaç
   
      Anote os nomes lógicos que aparecem na janela de resultados.  Para o banco de dados Northwind, os dois nomes lógicos são Northwind e Northwind_log.  
   
-4.  Agora, execute esta consulta para criar o banco de dados. Substitua seus próprios caminhos de origem e de destino, nomes de banco de dados lógicos e nomes de arquivo físico para a Northwind conforme apropriado. Manter os arquivos. mdf e. ldf de extensões de arquivo.  
+4. Agora, execute esta consulta para criar o banco de dados. Substitua seus próprios caminhos de origem e de destino, nomes de banco de dados lógicos e nomes de arquivo físico para a Northwind conforme apropriado. Manter os arquivos. mdf e. ldf de extensões de arquivo.  
   
     ```  
     RESTORE DATABASE Northwind  
@@ -52,14 +52,14 @@ Os bancos de dados são úteis para experimentar consultas SQL e LINQ, vinculaç
     MOVE 'Northwind_log' TO 'c:\nw\northwind.ldf'  
     ```  
   
-5.  No Pesquisador de objetos do SQL Server, clique com botão direito no **bancos de dados** nó e você verá o nó de banco de dados Northwind. Se não, em seguida, clique com botão direito em bancos de dados e selecione **adicionar novo banco de dados**. Insira o nome e o local do arquivo. mdf que você acabou de criar.  
+5. No Pesquisador de objetos do SQL Server, clique com botão direito no **bancos de dados** nó e você verá o nó de banco de dados Northwind. Se não, em seguida, clique com botão direito em bancos de dados e selecione **adicionar novo banco de dados**. Insira o nome e o local do arquivo. mdf que você acabou de criar.  
   
-6.  O banco de dados agora está pronto para uso como uma fonte de dados no Visual Studio.  
+6. O banco de dados agora está pronto para uso como uma fonte de dados no Visual Studio.  
   
 #### <a name="to-restore-a-database-from-a-bak-file-in-sql-server-management-studio"></a>Para restaurar um banco de dados de um arquivo. bak no SQL Server Management Studio  
   
-1.  Baixe o SQL Server Management Studio no site de download.  
+1. Baixe o SQL Server Management Studio no site de download.  
   
-2.  No SSMS **Pesquisador de objetos** janela, clique com botão direito do **bancos de dados** nó, selecione**restaurar banco de dados**e fornecer o local do arquivo. bak.  
+2. No SSMS **Pesquisador de objetos** janela, clique com botão direito do **bancos de dados** nó, selecione**restaurar banco de dados**e fornecer o local do arquivo. bak.  
   
      ![Restaurar banco de dados SSMS](../data-tools/media/raddata-ssms-restore-database.png "raddata SSMS restaurar banco de dados")

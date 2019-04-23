@@ -12,14 +12,14 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 167e4f4b8977ed847823fb6db101f207142d6b4d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 5c6743f7466f1b6d2e17c1dbf9da523c87e63e77
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060313"
 ---
-# <a name="how-to-change-text-case-in-the-editor"></a>Como alterar o caso de texto no editor
+# <a name="how-to-change-text-case-in-the-editor"></a>Como: Alterar maiusculas e minúsculas do texto no Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 É possível usar comandos de menu ou atalhos de teclado para converter o padrão de maiúsculas e minúsculas do texto selecionado e deixar todas as letras maiúsculas ou todas as letras minúsculas.  
@@ -31,11 +31,11 @@ ms.locfileid: "54799737"
   
 #### <a name="to-switch-text-to-upper-case"></a>Para mudar o texto para letras maiúsculas  
   
-1.  Selecione o texto que deseja converter.  
+1. Selecione o texto que deseja converter.  
   
-2.  No menu **Editar**, selecione **Avançado**.  
+2. No menu **Editar**, selecione **Avançado**.  
   
-3.  Para converter texto e deixar todas as letras maiúsculas, escolha **Converter em Maiúsculas** ou pressione **CTRL**+**SHIFT**+**U**.  
+3. Para converter texto e deixar todas as letras maiúsculas, escolha **Converter em Maiúsculas** ou pressione **CTRL**+**SHIFT**+**U**.  
   
      – ou —  
   

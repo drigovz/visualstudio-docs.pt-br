@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 433111855aab18bea412e5774cfe7a2fca2b2a7b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 25768f44ee51ee94d456d0652ab7575def3a259d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609817"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057562"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Como: Localizar marcação ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] páginas (. aspx) normalmente usam valores de cadeia de caracteres embutida. Para localizar essas cadeias de caracteres, substitua-os com expressões que fazem referência a recursos localizados.
@@ -27,26 +27,26 @@ ms.locfileid: "56609817"
 
 #### <a name="to-localize-aspx-markup"></a>Ao localizar marcação ASPX
 
-1.  Adicionar arquivos de recurso separados: um para o idioma padrão e um para cada idioma de localizado.
+1. Adicionar arquivos de recurso separados: um para o idioma padrão e um para cada idioma de localizado.
 
      Se você estiver localizando apenas a marcação e não no código, adicione um item de projeto do arquivo de recursos globais. Se você estiver localizando o código e marcação, adicione um item de projeto do arquivo de recursos.
 
-    1.  Para adicionar um arquivo de recursos globais **Gerenciador de soluções**, abra o menu de atalho para um item de projeto do SharePoint e, em seguida, escolha **Add** > **Novo Item**. Sob o SharePoint **2010** nó, escolher o **arquivo de recursos globais** modelo.
+    1. Para adicionar um arquivo de recursos globais **Gerenciador de soluções**, abra o menu de atalho para um item de projeto do SharePoint e, em seguida, escolha **Add** > **Novo Item**. Sob o SharePoint **2010** nó, escolher o **arquivo de recursos globais** modelo.
 
-    2.  Para adicionar um arquivo de recursos, na **Gerenciador de soluções**, abra o menu de atalho para um item de projeto do SharePoint e, em seguida, escolha **Add** > **Novo Item**. Em qualquer um de **Visual Basic** ou **Visual c#** nó, escolha o **arquivo de recursos** modelo.
+    2. Para adicionar um arquivo de recursos, na **Gerenciador de soluções**, abra o menu de atalho para um item de projeto do SharePoint e, em seguida, escolha **Add** > **Novo Item**. Em qualquer um de **Visual Basic** ou **Visual c#** nó, escolha o **arquivo de recursos** modelo.
 
     > [!NOTE]
     >  Certifique-se de adicionar os arquivos de recurso a um item de projeto do SharePoint para habilitar a propriedade de tipo de implantação. Essa propriedade é necessária neste procedimento. Se sua solução não tiver um item de projeto do SharePoint, você pode adicionar um projeto vazio do SharePoint e remover seu padrão *Elements. XML* arquivo.
 
-2.  Nomeie o arquivo de recurso de idioma padrão de sua escolha com uma *. resx* extensão, como Myappresources. Use o mesmo nome de base para cada arquivo de recurso localizado, mas adicione a cultura [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Por exemplo, o nome de um alemão recurso localizado *MyAppResources.de-de. resx*.
+2. Nomeie o arquivo de recurso de idioma padrão de sua escolha com uma *. resx* extensão, como Myappresources. Use o mesmo nome de base para cada arquivo de recurso localizado, mas adicione a cultura [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Por exemplo, o nome de um alemão recurso localizado *MyAppResources.de-de. resx*.
 
-3.  Altere o valor da **tipo de implantação** propriedade de cada arquivo de recurso para **AppGlobalResource** para fazer com que eles implantem para a pasta do servidor App_GlobalResources.
+3. Altere o valor da **tipo de implantação** propriedade de cada arquivo de recurso para **AppGlobalResource** para fazer com que eles implantem para a pasta do servidor App_GlobalResources.
 
-4.  Se você estiver usando os recursos para localizar o código, além de marcação ASPX, deixe o valor da **ação de compilação** propriedade de cada arquivo como **Embedded Resource**. Se você estiver usando os arquivos de recurso somente para localizar a marcação, você pode, opcionalmente, alterar o valor da propriedade dos arquivos a serem **conteúdo**. Para obter mais informações, consulte [soluções do SharePoint localizar](../sharepoint/localizing-sharepoint-solutions.md).
+4. Se você estiver usando os recursos para localizar o código, além de marcação ASPX, deixe o valor da **ação de compilação** propriedade de cada arquivo como **Embedded Resource**. Se você estiver usando os arquivos de recurso somente para localizar a marcação, você pode, opcionalmente, alterar o valor da propriedade dos arquivos a serem **conteúdo**. Para obter mais informações, consulte [soluções do SharePoint localizar](../sharepoint/localizing-sharepoint-solutions.md).
 
-5.  Abra cada arquivo de recurso e adicione cadeias de caracteres localizadas, usando a mesma cadeia de caracteres IDs em cada arquivo.
+5. Abra cada arquivo de recurso e adicione cadeias de caracteres localizadas, usando a mesma cadeia de caracteres IDs em cada arquivo.
 
-6.  No [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] marcação para a página ASPX página ou controle, substitua as cadeias de caracteres embutidas com valores que usam o seguinte formato:
+6. No [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] marcação para a página ASPX página ou controle, substitua as cadeias de caracteres embutidas com valores que usam o seguinte formato:
 
     ```aspx-csharp
     <%$Resources:Resource File Name, String ID%>
@@ -68,9 +68,9 @@ ms.locfileid: "56609817"
     </asp:Content>
     ```
 
-7.  Escolha o **F5** tecla para compilar e executar o aplicativo.
+7. Escolha o **F5** tecla para compilar e executar o aplicativo.
 
-8.  No SharePoint, altere o idioma de exibição do padrão.
+8. No SharePoint, altere o idioma de exibição do padrão.
 
      As cadeias de caracteres localizadas aparecem no aplicativo. Para exibir recursos localizados, o servidor do SharePoint deve ter um pacote de idiomas instalado que corresponda à cultura do arquivo de recurso.
 

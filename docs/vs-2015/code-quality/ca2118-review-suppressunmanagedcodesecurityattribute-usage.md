@@ -15,12 +15,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ebe26e81bdee6be1b2e3a795f50c753d9bb66814
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eb76233e968ad8212d15fbcc815c31ffd0f1838a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924601"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059169"
 ---
 # <a name="ca2118-review-suppressunmanagedcodesecurityattribute-usage"></a>CA2118: Examinar o uso de SuppressUnmanagedCodeSecurityAttribute
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,11 +44,11 @@ ms.locfileid: "58924601"
 
  A política de segurança padrão não concede permissão de código não gerenciado a um assembly, a menos que ele está em execução no computador local ou é um membro de um dos seguintes grupos:
 
--   Grupo de códigos de zona Meu computador
+- Grupo de códigos de zona Meu computador
 
--   Grupo de códigos do Microsoft forte nome
+- Grupo de códigos do Microsoft forte nome
 
--   Grupo de códigos do ECMA forte nome
+- Grupo de códigos do ECMA forte nome
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Examine cuidadosamente o código para garantir que esse atributo é absolutamente necessário. Se você não estiver familiarizado com a segurança do código gerenciado ou não compreende as implicações de segurança de usar esse atributo, remova-o do seu código. Se o atributo for necessário, você deve garantir que os chamadores não é possível usar seu código maliciosamente. Se seu código não tem permissão para executar código não gerenciado, esse atributo não tem nenhum efeito e deve ser removido.

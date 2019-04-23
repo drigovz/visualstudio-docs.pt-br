@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e74de898bb9e7810729a0895834f7cdfe5ee5984
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 6b773fc52da702f2563276b4a8e51b6c3651f596
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691300"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044486"
 ---
 # <a name="sccget-function"></a>Função SccGet
 Essa função recupera uma cópia de um ou mais arquivos para exibir e compilar, mas não para edição. Na maioria dos sistemas, os arquivos são marcados como somente leitura.
@@ -90,21 +90,21 @@ SCCRTN SccGet(
 
  Há duas maneiras de resolver essa situação em que o cache local de versões de controle do código-fonte se torna fora de sincronia com o banco de dados de controle do código-fonte:
 
-1.  Não permita renomear um arquivo em que o banco de dados de controle de origem que está sendo verificado.
+1. Não permita renomear um arquivo em que o banco de dados de controle de origem que está sendo verificado.
 
-2.  Fazer o equivalente de "exclusão antigo" seguido de "Adicionar novo". O seguinte algoritmo é uma forma de fazer isso.
+2. Fazer o equivalente de "exclusão antigo" seguido de "Adicionar novo". O seguinte algoritmo é uma forma de fazer isso.
 
-    1.  Chame o [SccQueryChanges](../extensibility/sccquerychanges-function.md) função para saber mais sobre a renomeação de *. txt* para *b. txt* no banco de dados de controle do código-fonte.
+    1. Chame o [SccQueryChanges](../extensibility/sccquerychanges-function.md) função para saber mais sobre a renomeação de *. txt* para *b. txt* no banco de dados de controle do código-fonte.
 
-    2.  Renomear local *. txt* à *b. txt*.
+    2. Renomear local *. txt* à *b. txt*.
 
-    3.  Chame o `SccGet` função para ambos *. txt* e *b. txt*.
+    3. Chame o `SccGet` função para ambos *. txt* e *b. txt*.
 
-    4.  Porque *. txt* não existe no banco de dados de controle do código-fonte, o cache de versão local é limpa para remover o ausente *. txt* informações de versão.
+    4. Porque *. txt* não existe no banco de dados de controle do código-fonte, o cache de versão local é limpa para remover o ausente *. txt* informações de versão.
 
-    5.  O *b. txt* arquivo sendo extraído é mesclado com o conteúdo do local *b. txt* arquivo.
+    5. O *b. txt* arquivo sendo extraído é mesclado com o conteúdo do local *b. txt* arquivo.
 
-    6.  Atualizada *b. txt* arquivo agora pode ser verificado.
+    6. Atualizada *b. txt* arquivo agora pode ser verificado.
 
 ## <a name="see-also"></a>Consulte também
 - [Funções de API de plug-in da controle de origem](../extensibility/source-control-plug-in-api-functions.md)

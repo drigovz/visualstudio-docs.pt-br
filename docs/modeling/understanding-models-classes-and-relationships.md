@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ea744b4939b128f99a38f52e0b4b509c8da25c7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d486ae5c056be37c0284d39fabaa6945f5c91659
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944241"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045025"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Noções básicas sobre modelos, classes e relações
 Uma linguagem específica de domínio (DSL) é definida por seu arquivo de definição de DSL, junto com qualquer código de programa personalizado você pode escrever. A maioria do código do programa na solução DSL é gerada a partir desse arquivo.
@@ -61,13 +61,13 @@ Uma linguagem específica de domínio (DSL) é definida por seu arquivo de defin
 
  Para reorganizar o diagrama de definição de DSL, você pode:
 
--   Troque principal e fazer referência a modos de exibição usando o **trazer árvore aqui** e **dividir árvore** comandos. Clique em uma classe de domínio único para ver esses comandos.
+- Troque principal e fazer referência a modos de exibição usando o **trazer árvore aqui** e **dividir árvore** comandos. Clique em uma classe de domínio único para ver esses comandos.
 
--   Reordene as classes de domínio e forma, pressionando Ctrl + seta para cima e Ctrl + seta para baixo.
+- Reordene as classes de domínio e forma, pressionando Ctrl + seta para cima e Ctrl + seta para baixo.
 
--   Recolher ou expandir classes usando o ícone no canto superior direito de cada forma.
+- Recolher ou expandir classes usando o ícone no canto superior direito de cada forma.
 
--   Recolher partes da árvore clicando no sinal de subtração (-) na parte inferior de uma classe de domínio.
+- Recolher partes da árvore clicando no sinal de subtração (-) na parte inferior de uma classe de domínio.
 
 ## <a name="inheritance"></a>Herança
  Classes de domínio podem ser definidas usando a herança. Para criar uma derivação de herança, clique na ferramenta de herança, clique na classe derivada e, em seguida, clique na classe base. Um elemento de modelo tem todas as propriedades que são definidas em sua própria classe de domínio, juntamente com todas as propriedades herdadas da classe base. Ele também herda suas funções em relações.

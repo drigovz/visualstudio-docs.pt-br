@@ -14,12 +14,12 @@ ms.assetid: bbec74f3-dd8e-48ad-99c1-2df503c15f5a
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2bee266cb917f1e16bdebbdad52f2cc30055835e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ea32df892efa47c91d8292bdc9065080318a059
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929238"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044600"
 ---
 # <a name="running-document-table"></a>Tabela de documento em execução
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,9 +54,9 @@ O IDE mantém a lista de todos os documentos abertos no momento em uma estrutura
   
  O IDE também usa o RDT para repavimentar (Trazer para frente) um documento aberto, se um usuário solicita esse documento. Para obter mais informações, consulte [exibindo arquivos usando o comando Abrir do arquivo](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md). Para determinar se um arquivo é aberto no RDT, siga um procedimentos.  
   
--   Consulta para o moniker do documento (ou seja, o caminho completo do documento) descobrir se o item for aberto.  
+- Consulta para o moniker do documento (ou seja, o caminho completo do documento) descobrir se o item for aberto.  
   
--   Use a ID de hierarquia ou um item para pedir que o sistema de projeto para o caminho completo do documento e, em seguida, examinar o item de a RDT.  
+- Use a ID de hierarquia ou um item para pedir que o sistema de projeto para o caminho completo do documento e, em seguida, examinar o item de a RDT.  
   
 ## <a name="see-also"></a>Consulte também  
  [Uso de RDT_ReadLock](../../extensibility/internals/rdt-readlock-usage.md)   

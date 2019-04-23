@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 82b58cc0287644a4ca21bf6333bf791b3c02e924
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1990e781b5793b05166c6ff5b6e9c14141ffdd69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927307"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058596"
 ---
 # <a name="ca2140-transparent-code-must-not-reference-security-critical-items"></a>CA2140: O código transparente não deve referenciar itens críticos de segurança
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,21 +37,21 @@ ms.locfileid: "58927307"
 ## <a name="cause"></a>Causa
  Um método transparente:
 
--   lida com um tipo de exceção de segurança críticas de segurança
+- lida com um tipo de exceção de segurança críticas de segurança
 
--   tem um parâmetro que está marcado como um tipo crítico de segurança
+- tem um parâmetro que está marcado como um tipo crítico de segurança
 
--   tem um parâmetro genérico com um restrições de segurança críticas
+- tem um parâmetro genérico com um restrições de segurança críticas
 
--   tem uma variável local de um tipo crítico de segurança
+- tem uma variável local de um tipo crítico de segurança
 
--   referencia um tipo que está marcado como segurança crítico
+- referencia um tipo que está marcado como segurança crítico
 
--   chama um método que está marcado como segurança crítico
+- chama um método que está marcado como segurança crítico
 
--   faz referência a um campo que está marcado como segurança crítico
+- faz referência a um campo que está marcado como segurança crítico
 
--   Retorna um tipo que está marcado como segurança crítico
+- Retorna um tipo que está marcado como segurança crítico
 
 ## <a name="rule-description"></a>Descrição da Regra
  Um elemento de código que é marcado com o <xref:System.Security.SecurityCriticalAttribute> atributo é crítico para segurança. Um método transparente não pode usar um elemento crítico para segurança. Se um tipo transparente tentar usar um tipo crítico de segurança uma <xref:System.TypeAccessException>, <xref:System.MethodAccessException> , ou <xref:System.FieldAccessException> é gerado.
@@ -59,11 +59,11 @@ ms.locfileid: "58927307"
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, siga um destes procedimentos:
 
--   Marcar o elemento de código que usa o código crítico de segurança com o <xref:System.Security.SecurityCriticalAttribute> atributo
+- Marcar o elemento de código que usa o código crítico de segurança com o <xref:System.Security.SecurityCriticalAttribute> atributo
 
      \- ou -
 
--   Remover o <xref:System.Security.SecurityCriticalAttribute> atributo dos elementos de código que são marcados como segurança crítica e em vez disso, marcá-los com o <xref:System.Security.SecuritySafeCriticalAttribute> ou <xref:System.Security.SecurityTransparentAttribute> atributo.
+- Remover o <xref:System.Security.SecurityCriticalAttribute> atributo dos elementos de código que são marcados como segurança crítica e em vez disso, marcá-los com o <xref:System.Security.SecuritySafeCriticalAttribute> ou <xref:System.Security.SecurityTransparentAttribute> atributo.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Não suprima um aviso nessa regra.

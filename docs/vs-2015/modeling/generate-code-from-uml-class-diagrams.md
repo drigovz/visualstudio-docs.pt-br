@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2613dbd0c803352c758ac1baf1b1f5d4469b9c73
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056153"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Gerar código por meio de diagramas de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,11 +53,11 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
 
 2. Em um diagrama de classe ou no **Gerenciador de modelos UML**, selecionar os elementos do qual você deseja gerar código. É possível selecionar um dos seguintes:  
 
-   -   Um conjunto específico de elementos.  
+   - Um conjunto específico de elementos.  
 
-   -   Um pacote ou o modelo, para gerar código com base em seu conteúdo.  
+   - Um pacote ou o modelo, para gerar código com base em seu conteúdo.  
 
-   -   O diagrama, para selecionar todos os elementos no diagrama.  
+   - O diagrama, para selecionar todos os elementos no diagrama.  
 
 3. Abra o menu de atalho para o elemento selecionado e, em seguida, escolha **gerar código**.  
 
@@ -71,7 +71,7 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
 
    Alguns testes de validação são aplicados ao modelo para garantir que ele possa ser convertido no C#. Se esse teste falhar, uma mensagem de erro será exibida e a geração de código não será realizada. Se você tiver criado um comando de menu de validação, o código não será gerado para nenhum elemento com falha no comando de validação. Para obter mais informações, consulte [definir restrições de validação para modelos UML](../modeling/define-validation-constraints-for-uml-models.md).  
 
-##  <a name="default"></a> Transformações de geração de código padrão  
+## <a name="default"></a> Transformações de geração de código padrão  
  Esta seção resume os resultados que são produzidos pela **gerar código** de comando, a menos que você personalize o comando. Para obter mais informações, consulte [Personalizando o comando gerar código](#custom).  
 
 - Um tipo do C# é gerado para cada tipo selecionado no modelo UML. Cada tipo é colocado em um arquivo separado código sob o **GeneratedCode** pasta.  
@@ -126,7 +126,7 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
 
   Cada atributo e operação também tem propriedades de estereótipo que é possível definir. Se você não vir as propriedades em um novo atributo, execute **gerar código**.  
 
-##  <a name="custom"></a> Personalizando o comando gerar código  
+## <a name="custom"></a> Personalizando o comando gerar código  
  O **gerar código** funciona transformando os elementos de modelo usando um conjunto de modelos de texto de comando. Para obter mais informações sobre modelos de texto, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md).  
 
  Os modelos são especificados em um conjunto de *associações do modelo de texto*. Uma associação de modelo de texto Especifica o modelo que deve ser aplicado, onde a saída gerada deve ser colocada e outros parâmetros do **gerar código** comando.  
@@ -175,7 +175,7 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
 
 5. É possível anexar quantas associações a um elemento você quiser.  
 
-##  <a name="writing"></a> Gravando um modelo de texto  
+## <a name="writing"></a> Gravando um modelo de texto  
  É possível gravar os próprios modelos de texto. Os modelos de texto podem gerar códigos de programa ou qualquer outro tipo de arquivo de texto.  
 
  Recomendamos que você comece modificando cópias dos modelos padrão. É possível copiar os modelos dos seguintes locais:  

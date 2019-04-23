@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cd92f2c87d1f9541d0b5fc7c812c2a096ee0615a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9c09e8eeed3ba5b7e2a348982444ad8faa0884e9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948935"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60047807"
 ---
 # <a name="model-your-app39s-architecture"></a>Modelar seu aplicativo&#39;arquitetura s
 Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus usuários precisa, você pode criar modelos no Visual Studio como parte de sua descrição da estrutura geral e o comportamento do seu aplicativo ou sistema de software. Usando modelos, você também pode descrever padrões que são usados em todo o design. Esses modelos de ajudarão-lo a entender a arquitetura existente, discutir as mudanças e comunique suas intenções claramente.
@@ -28,9 +28,9 @@ Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus
 
  A arquitetura de um sistema pode ser dividida em duas áreas:
 
--   [Design de alto nível](#Structure). Descreve os principais componentes e como eles interagem entre si para atender a cada requisito. Se o sistema for grande, cada componente pode ter seu próprio design de alto nível que mostra como ele é composto de componentes menores.
+- [Design de alto nível](#Structure). Descreve os principais componentes e como eles interagem entre si para atender a cada requisito. Se o sistema for grande, cada componente pode ter seu próprio design de alto nível que mostra como ele é composto de componentes menores.
 
--   [Padrões de design](#Patterns) e as convenções usadas nos designs de componentes. Um padrão descreve uma abordagem específica para alcançar uma meta de programação. Usando os mesmos padrões em todo um design, sua equipe pode reduzir o custo de fazer alterações e desenvolvimento de software novo.
+- [Padrões de design](#Patterns) e as convenções usadas nos designs de componentes. Um padrão descreve uma abordagem específica para alcançar uma meta de programação. Usando os mesmos padrões em todo um design, sua equipe pode reduzir o custo de fazer alterações e desenvolvimento de software novo.
 
 ## <a name="Structure"></a> Design de alto nível
  Um design de alto nível descreve os principais componentes do seu sistema e como eles interagem entre si para atingir as metas do design. As atividades na lista a seguir são envolvidas no desenvolvimento do design de alto nível, embora não necessariamente em uma sequência específica.
@@ -39,11 +39,11 @@ Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus
 
  Em todos os casos, ele é útil para desenvolver as atividades diferentes em paralelo e desenvolver código e testes em um estágio inicial. Evite tentar concluir um dos seguintes aspectos antes de começar outra. Normalmente, os requisitos e seu conhecimento sobre a melhor maneira de projetar o sistema serão alterado enquanto você está gravando e testando o código. Portanto, você deve começar Entendendo e os principais recursos do seu design e os requisitos de codificação. Preencha os detalhes em iterações posteriores do projeto.
 
--   [Noções básicas sobre os requisitos de](#Requirements). O ponto de partida de qualquer design é uma compreensão clara de necessidades dos usuários.
+- [Noções básicas sobre os requisitos de](#Requirements). O ponto de partida de qualquer design é uma compreensão clara de necessidades dos usuários.
 
--   [Padrões de arquitetura](#BigDecisions). As escolhas feitas sobre as principais tecnologias e os elementos de arquitetura do sistema.
+- [Padrões de arquitetura](#BigDecisions). As escolhas feitas sobre as principais tecnologias e os elementos de arquitetura do sistema.
 
--   Modelo de dados dos componentes e Interfaces. Você pode desenhar diagramas de classe para descrever as informações que são passadas entre componentes e armazenadas dentro dos componentes.
+- Modelo de dados dos componentes e Interfaces. Você pode desenhar diagramas de classe para descrever as informações que são passadas entre componentes e armazenadas dentro dos componentes.
 
 ## <a name="Requirements"></a> Noções básicas sobre os requisitos
  O design de alto nível de um aplicativo completo com mais eficiência é desenvolvido em conjunto com um modelo de requisitos ou outra descrição das necessidades dos usuários. Para obter mais informações sobre modelos de requisitos, consulte [requisitos de usuário do modelo](../modeling/model-user-requirements.md).
@@ -88,19 +88,19 @@ Para ajudar a garantir que seu aplicativo ou sistema de software atenda aos seus
 
  Um padrão de design é descrito em um documento e geralmente inclui estas partes:
 
--   Nome.
+- Nome.
 
--   Descrição do contexto no qual ele é aplicável. Que critérios devem fazer com que um desenvolvedor considere aplicar esse padrão?
+- Descrição do contexto no qual ele é aplicável. Que critérios devem fazer com que um desenvolvedor considere aplicar esse padrão?
 
--   Breve explicação sobre o problema que ele resolve.
+- Breve explicação sobre o problema que ele resolve.
 
--   Modelo de partes mais importantes e suas relações. Eles podem ser classes ou componentes e interfaces, com associações e dependências entre eles. Os elementos normalmente se encaixam em duas categorias:
+- Modelo de partes mais importantes e suas relações. Eles podem ser classes ou componentes e interfaces, com associações e dependências entre eles. Os elementos normalmente se encaixam em duas categorias:
 
--   Convenções de nomenclatura.
+- Convenções de nomenclatura.
 
--   Descrição de como o padrão resolve o problema.
+- Descrição de como o padrão resolve o problema.
 
--   Descrição das variações que os desenvolvedores podem ser capazes de adotar.
+- Descrição das variações que os desenvolvedores podem ser capazes de adotar.
 
 ## <a name="see-also"></a>Consulte também
 

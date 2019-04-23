@@ -12,14 +12,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08040f2436bfd68b5352a1c4cabc15d7ff49c0c1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4635030dad4b43aa27294c8425a70d3f53e5715e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614526"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056842"
 ---
-# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Passo a passo: Obtendo uma lista de trechos de código instalados (implementação herdada)
+# <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Passo a passo: Obtendo uma lista de snippets de código instalados (implementação herdada)
 Um trecho de código é um trecho de código que pode ser inserido no buffer de origem com um comando de menu (que permite escolher entre uma lista de trechos de código instalado) ou pelo selecionando um atalho de trecho de código de uma lista de conclusão do IntelliSense.
 
  O <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A> método obtém todos os trechos de código para um GUID de idioma específico. Os atalhos para os trechos de código podem ser inseridos em uma lista de conclusão do IntelliSense.
@@ -28,7 +28,7 @@ Um trecho de código é um trecho de código que pode ser inserido no buffer de 
 
 ### <a name="to-retrieve-a-list-of-code-snippets"></a>Para recuperar uma lista de trechos de código
 
-1.  O código a seguir mostra como obter uma lista de trechos de código para um determinado idioma. Os resultados são armazenados em uma matriz de <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> estruturas. Esse método usa estático <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> método para obter o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> da interface do <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> service. No entanto, você também pode usar o provedor de serviço fornecido a seu VSPackage e chame o <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> método.
+1. O código a seguir mostra como obter uma lista de trechos de código para um determinado idioma. Os resultados são armazenados em uma matriz de <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> estruturas. Esse método usa estático <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> método para obter o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> da interface do <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> service. No entanto, você também pode usar o provedor de serviço fornecido a seu VSPackage e chame o <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> método.
 
     ```csharp
     using System;
@@ -103,7 +103,7 @@ Um trecho de código é um trecho de código que pode ser inserido no buffer de 
 
 ### <a name="to-call-the-getsnippets-method"></a>Para chamar o método GetSnippets
 
-1.  O método a seguir mostra como chamar o `GetSnippets` método após a conclusão de uma operação de análise. O <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> método é chamado após uma operação de análise que foi iniciada com o motivo pelo qual <xref:Microsoft.VisualStudio.Package.ParseReason>.
+1. O método a seguir mostra como chamar o `GetSnippets` método após a conclusão de uma operação de análise. O <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> método é chamado após uma operação de análise que foi iniciada com o motivo pelo qual <xref:Microsoft.VisualStudio.Package.ParseReason>.
 
 > [!NOTE]
 >  O `expansionsList` lista de matriz é armazenada em cache por motivos de desempenho. Os trechos de código as alterações não são refletidas na lista até que o serviço de linguagem é interrompido e recarregado (por exemplo, ao parar e reiniciar [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]).
@@ -127,7 +127,7 @@ class TestLanguageService : LanguageService
 
 ### <a name="to-use-the-snippet-information"></a>Para usar as informações de trecho de código
 
-1.  O código a seguir mostra como usar as informações de trecho de código retornadas pelo `GetSnippets` método. O `AddSnippets` método é chamado do analisador em resposta a qualquer motivo de análise que é usado para preencher uma lista de trechos de código. Isso deve ocorrer depois que a análise completa foi feita pela primeira vez.
+1. O código a seguir mostra como usar as informações de trecho de código retornadas pelo `GetSnippets` método. O `AddSnippets` método é chamado do analisador em resposta a qualquer motivo de análise que é usado para preencher uma lista de trechos de código. Isso deve ocorrer depois que a análise completa foi feita pela primeira vez.
 
      O `AddDeclaration` método cria uma lista de declarações que é exibida posteriormente em uma lista de conclusão.
 

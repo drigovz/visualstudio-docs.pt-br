@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f6a4ea19013aefa1b3d078ce5993d48b4694989c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b5b8d24f01f7882e8c760918119a03a1c489c727
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925079"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059871"
 ---
 # <a name="navigate-a-debugging-session-in-visual-studio-xaml-and-c"></a>Navegar por uma sessão de depuração no Visual Studio (XAML e C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,28 +35,28 @@ Este início rápido demonstra como navegar de sessões de depuração do Visual
 ## <a name="in-this-topic"></a>Neste tópico
  Você pode aprender como:
 
--   [Criar o aplicativo de exemplo](#BKMK_CreateTheApplication)
+- [Criar o aplicativo de exemplo](#BKMK_CreateTheApplication)
 
--   [Definir e executar até um ponto de interrupção, etapa em um método e examinar os dados de programa](#BKMK_StepInto)
+- [Definir e executar até um ponto de interrupção, etapa em um método e examinar os dados de programa](#BKMK_StepInto)
 
--   [Para failover e fora de métodos](#BKMK_StepIntoOverOut)
+- [Para failover e fora de métodos](#BKMK_StepIntoOverOut)
 
--   [Defina um ponto de interrupção condicional, executar até o cursor e visualizar uma variável](#BKMK_ConditionCursorVisualize)
+- [Defina um ponto de interrupção condicional, executar até o cursor e visualizar uma variável](#BKMK_ConditionCursorVisualize)
 
--   [Editar e continuar, se recuperar de uma exceção](#BKMK_EditContinueRecoverExceptions)
+- [Editar e continuar, se recuperar de uma exceção](#BKMK_EditContinueRecoverExceptions)
 
-##  <a name="BKMK_CreateTheApplication"></a> Criar o aplicativo de exemplo
+## <a name="BKMK_CreateTheApplication"></a> Criar o aplicativo de exemplo
  Depuração é sobre código, portanto, o aplicativo de exemplo usa a estrutura do aplicativo Windows Store apenas para criar um arquivo de origem no qual você pode ver como funciona a navegar de uma sessão de depuração e como examinar e alterar o estado do programa. Todo o código que você vai invocar é chamado do construtor da página principal; Nenhum controle é adicionado e nenhum evento é tratado.
 
- **Crie um aplicativo da Windows Store de C# padrão.** Abra o Visual Studio. Na home page, escolha o **novo projeto** link. Na caixa de diálogo Novo projeto, escolha **Visual C#** na **instalado** lista e, em seguida, escolha **Windows Store**. Na lista de modelos de projeto, escolha **aplicativo**. Visual Studio cria uma nova solução e projeto e exibe o designer de MainPage. XAML e o editor de código XAML.
+ **Crie um aplicativo da Windows Store de c# padrão.** Abra o Visual Studio. Na home page, escolha o **novo projeto** link. Na caixa de diálogo Novo projeto, escolha **Visual c#** na **instalado** lista e, em seguida, escolha **Windows Store**. Na lista de modelos de projeto, escolha **aplicativo**. Visual Studio cria uma nova solução e projeto e exibe o designer de MainPage. XAML e o editor de código XAML.
 
  **Abra o arquivo MainPage.xaml.cs.** Clique com botão direito em qualquer lugar no editor XAML e escolha **Exibir código**. O arquivo de code-behind MainPage.xaml.cs é exibido. Observe que apenas um método, o `MainPage()` construtor, está listado no arquivo.
 
- **Substitua o construtor MainPage com o código de exemplo.** Exclua o método MainPage(). Siga este link: [Código de exemplo de navegação (Xaml e C#) do depurador](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md)e, em seguida, copie o código listado na seção C# para a área de transferência. (Escolha **volta** no navegador ou Visualizador da Ajuda para retornar a esta página de início rápido.) No editor do Visual Studio, cole o código no `partial class MainPage` bloco. Escolha CTRL + s para salvar o arquivo.
+ **Substitua o construtor MainPage com o código de exemplo.** Exclua o método MainPage(). Siga este link: [Código de exemplo de navegação (Xaml e c#) do depurador](../debugger/debugger-navigation-sample-code-xaml-and-csharp.md)e, em seguida, copie o código listado na seção c# para a área de transferência. (Escolha **volta** no navegador ou Visualizador da Ajuda para retornar a esta página de início rápido.) No editor do Visual Studio, cole o código no `partial class MainPage` bloco. Escolha CTRL + s para salvar o arquivo.
 
  {1&gt;Agora você pode acompanhar os exemplos neste tópico.&lt;1}
 
-##  <a name="BKMK_StepInto"></a> Definir e executar até um ponto de interrupção, etapa em um método e examinar os dados de programa
+## <a name="BKMK_StepInto"></a> Definir e executar até um ponto de interrupção, etapa em um método e examinar os dados de programa
  A maneira mais comum que você pode iniciar uma sessão de depuração é escolher **iniciar depuração** da **depurar** menus (teclado: F5). Execução começa e continua até que um ponto de interrupção seja alcançado, você suspenda a execução manualmente, ocorra uma exceção ou o aplicativo seja encerrado.
 
  Quando a execução é suspensa no depurador, você pode exibir o valor de uma variável ativa em uma dica de dados, passando o mouse sobre a variável. Você também pode abrir as janelas locais e Autos para ver listas de variáveis Active Directory e seus valores atuais. Adicionando uma ou mais variáveis para um permite a janela Inspeção você se concentrar no valor das variáveis como o aplicativo continua a execução.
@@ -112,7 +112,7 @@ Este início rápido demonstra como navegar de sessões de depuração do Visual
 
   Você pode inspecionar diversas variáveis em uma janela inspeção. Os valores de variáveis inspecionadas, como valores nas janelas de dica de dados e locais são atualizados sempre que a execução é suspensa. Você também pode adicionar variáveis à janela Inspeção do editor de códigos. Selecione a variável para assistir, direito do mouse e, em seguida, escolha **Adicionar inspeção**.
 
-##  <a name="BKMK_StepIntoOverOut"></a> Para failover e fora de métodos
+## <a name="BKMK_StepIntoOverOut"></a> Para failover e fora de métodos
  Em contraste a entrar em um método chamado por um método pai, percorrendo um método executa o método filho e, em seguida, suspende a execução no método de chamada como o pai é retomada. Você pode entrar em um método quando você estiver familiarizado com a maneira como o método funciona e tiver certeza de que sua execução não afetará o problema que você está investigando.
 
  Entrar em uma linha de código que não contém uma chamada de método executa a linha da mesma forma passo a passo para a linha.
@@ -144,7 +144,7 @@ Este início rápido demonstra como navegar de sessões de depuração do Visual
 
  **Pare a depuração.** No menu Depurar, escolha Stop Debugging (teclado: Shift+F5). Isso encerra a sessão de depuração.
 
-##  <a name="BKMK_ConditionCursorVisualize"></a> Defina um ponto de interrupção condicional, executar até o cursor e visualizar uma variável
+## <a name="BKMK_ConditionCursorVisualize"></a> Defina um ponto de interrupção condicional, executar até o cursor e visualizar uma variável
  Um ponto de interrupção condicional Especifica uma condição que faz com que o depurador suspender a execução. A condição é especificada por uma expressão de código que pode ser avaliada como true ou false. Por exemplo, você pode usar um ponto de interrupção condicional para examinar o estado do programa em um método chamado com frequência apenas quando uma variável atinge um determinado valor.
 
  Executar até o cursor é como configurar um único ponto de interrupção. Quando a execução for suspensa, você poderá selecionar uma linha na origem e retomar a execução até que a linha selecionada seja atingida. Por exemplo, você pode percorrer um loop em um método e determinar o código no loop está sendo executado corretamente. Em vez de percorrer cada iteração do loop, você pode executar até o cursor que é posicionado após o loop é executado.
@@ -180,7 +180,7 @@ Este início rápido demonstra como navegar de sessões de depuração do Visual
 
  **Pare a depuração.** No menu Depurar, escolha Stop Debugging (teclado: Shift+F5). Isso encerra a sessão de depuração.
 
-##  <a name="BKMK_EditContinueRecoverExceptions"></a> Editar e continuar, se recuperar de uma exceção
+## <a name="BKMK_EditContinueRecoverExceptions"></a> Editar e continuar, se recuperar de uma exceção
  Em algumas circunstâncias, quando você entrar no código no depurador do Visual Studio, você tem a oportunidade de alterar o valor de variáveis e até mesmo a lógica de instruções. Essa funcionalidade é chamada de editar e continuar.
 
  Editar e continuar pode ser especialmente útil quando você interromper uma exceção. Em vez de precisar parar e reiniciar a depuração de um procedimento longo e complicado para evitar a exceção, você pode "desenrolar" a exceção para mover a execução para o ponto imediatamente antes que a exceção ocorreu e, em seguida, altere a variável incorreto ou a instrução e Continue com a sessão de depuração atual no estado que não gera uma exceção.

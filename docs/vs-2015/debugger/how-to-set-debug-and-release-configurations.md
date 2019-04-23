@@ -35,12 +35,12 @@ caps.latest.revision: 48
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 93aa6d9f6e821dba012009e90ba6f9be51641703
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: da8b3b32eae5d3045216f562dc7db25fb1f3264a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922539"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60048186"
 ---
 # <a name="how-to-set-debug-and-release-configurations"></a>Como: Conjunto de configurações de depuração e versão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,9 +57,9 @@ Projetos do Visual Studio tem a versão separada e configurações para o seu pr
   
 ### <a name="to-change-the-build-configuration"></a>Para alterar a configuração de build  
   
-1.  No menu Build: clique em **Build / Configuration Manager**, em seguida, selecione **Debug** ou **versão**.  
+1. No menu Build: clique em **Build / Configuration Manager**, em seguida, selecione **Debug** ou **versão**.  
   
-2.  Na barra de ferramentas, escolha **Debug** ou **Release** do **configurações da solução** caixa de listagem.  
+2. Na barra de ferramentas, escolha **Debug** ou **Release** do **configurações da solução** caixa de listagem.  
   
      ![configuração de build da barra de ferramentas](../debugger/media/toolbarbuildconfiguration.png "ToolbarBuildConfiguration")  
   

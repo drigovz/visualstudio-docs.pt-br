@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cdc2a15db53c8cddb815342a7b6d291c503cdd7f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f65f6de7cfb336eb001de47fb6562b7200391419
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620337"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60050095"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Como: Preencher controles ListObject com dados
   Você pode usar a vinculação de dados como uma maneira de adicionar rapidamente os dados para seu documento. Após a vinculação de dados para um objeto de lista, você pode desconectar o objeto de lista para que ele exibe os dados, mas não está mais ligado à fonte de dados.
@@ -33,24 +33,24 @@ ms.locfileid: "56620337"
 
 ### <a name="to-bind-data-to-a-listobject-control"></a>Para associar dados a um controle ListObject
 
-1.  Criar um <xref:System.Data.DataTable> no nível de classe.
+1. Criar um <xref:System.Data.DataTable> no nível de classe.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#20)]
      [!code-vb[Trin_VstcoreHostControlsExcel#20](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#20)]
 
-2.  Adicionar colunas de amostra e dados na `Startup` manipulador de eventos do `Sheet1` classe (em um projeto de nível de documento) ou `ThisAddIn` classe (em um projeto de nível de aplicativo).
+2. Adicionar colunas de amostra e dados na `Startup` manipulador de eventos do `Sheet1` classe (em um projeto de nível de documento) ou `ThisAddIn` classe (em um projeto de nível de aplicativo).
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#21](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#21)]
      [!code-vb[Trin_VstcoreHostControlsExcel#21](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#21)]
 
-3.  Chamar o <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> método e passar os nomes de coluna na ordem em que elas devem aparecer. A ordem das colunas no objeto da lista pode diferir da ordem em que aparecem no <xref:System.Data.DataTable>.
+3. Chamar o <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> método e passar os nomes de coluna na ordem em que elas devem aparecer. A ordem das colunas no objeto da lista pode diferir da ordem em que aparecem no <xref:System.Data.DataTable>.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#22](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#22)]
      [!code-vb[Trin_VstcoreHostControlsExcel#22](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#22)]
 
 ### <a name="to-disconnect-the-listobject-control-from-the-data-source"></a>Ao desconectar o controle de ListObject da fonte de dados
 
-1.  Chame o método <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> de `List1`.
+1. Chame o método <xref:Microsoft.Office.Tools.Excel.ListObject.Disconnect%2A> de `List1`.
 
      [!code-csharp[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet4.cs#23)]
      [!code-vb[Trin_VstcoreHostControlsExcel#23](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet4.vb#23)]

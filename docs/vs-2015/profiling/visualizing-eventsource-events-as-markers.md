@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b638bb1e300fd03d358c338c10dec4844f4e4adc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: edce61d7f5cf8f84c021b759fdaee1c06bf68ccb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801486"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60044912"
 ---
 # <a name="visualizing-eventsource-events-as-markers"></a>Visualizando eventos EventSource como marcadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,11 +26,11 @@ A Visualização Simultânea pode exibir eventos do EventSource como marcadores 
   
 ### <a name="marker-type"></a>Tipo de marcador  
   
-1.  Eventos que tenham [Opcode](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start ou win:Stop são tratados como o início ou fim de um período, respectivamente.  Períodos aninhados ou sobrepostos não podem ser exibidos. Pares de eventos que começam em um thread e terminam em outro não podem ser exibidos.  
+1. Eventos que tenham [Opcode](http://msdn.microsoft.com/d97953df-669b-4c55-b1a8-925022b339b7) win:Start ou win:Stop são tratados como o início ou fim de um período, respectivamente.  Períodos aninhados ou sobrepostos não podem ser exibidos. Pares de eventos que começam em um thread e terminam em outro não podem ser exibidos.  
   
-2.  Um evento cujo Opcode não é win:Start nem win:Stop é tratado como um sinalizador de marcador, a menos que seu [Nível](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (campo de EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) seja win:Verbose ou superior.  
+2. Um evento cujo Opcode não é win:Start nem win:Stop é tratado como um sinalizador de marcador, a menos que seu [Nível](http://msdn.microsoft.com/dfa4e0a9-4d89-4f50-aef9-1dae0dc11726) (campo de EVENT_RECORD.EVENT_HEADER.EVENT_DESCRIPTOR) seja win:Verbose ou superior.  
   
-3.  Em todos os outros casos, o evento é tratado como uma mensagem.  
+3. Em todos os outros casos, o evento é tratado como uma mensagem.  
   
 ### <a name="importance"></a>Importância  
  A tabela a seguir define como o nível do evento mapeia para a importância de marcador.  

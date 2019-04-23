@@ -10,12 +10,12 @@ ms.assetid: 43eb1f14-b129-404a-8806-5bf9b099b67b
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e0ee2059c6a2bc1c5456cc949cf05b921c874cd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 9118cbe3f4a8dcee443eca8b3fa5fb9a7664fd41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922281"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049302"
 ---
 # <a name="supplying-undo-support-to-designers"></a>Fornecendo suporte à função desfazer para designers
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,9 +41,9 @@ Designers, editores, como o geralmente necessário dar suporte a operações de 
 ## <a name="obtaining-undo-support-automatically"></a>Como obter suporte à função desfazer automaticamente  
  Qualquer designer criado no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tem suporte à função desfazer automática e completa se, o designer:  
   
--   Faz uso de um <xref:System.Windows.Forms.Control> com base em classe para sua interface do usuário.  
+- Faz uso de um <xref:System.Windows.Forms.Control> com base em classe para sua interface do usuário.  
   
--   Emprega a geração de código padrão com base em CodeDOM e sistema de análise para persistência e geração de código.  
+- Emprega a geração de código padrão com base em CodeDOM e sistema de análise para persistência e geração de código.  
   
      Para obter mais informações sobre como trabalhar com o suporte do CodeDOM do Visual Studio, consulte [geração dinâmica de código fonte e compilação](http://msdn.microsoft.com/library/d077a3e8-bd81-4bdf-b6a3-323857ea30fb)  
   
@@ -80,15 +80,15 @@ Designers, editores, como o geralmente necessário dar suporte a operações de 
   
 - Isso <xref:System.IServiceProvider> classe deve fornecer os seguintes serviços:  
   
-  -   <xref:System.ComponentModel.Design.IDesignerHost>.  
+  - <xref:System.ComponentModel.Design.IDesignerHost>.  
   
-  -   <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
+  - <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>  
   
        Designers usando [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] serialização de CodeDOM pode optar por usar <xref:System.ComponentModel.Design.Serialization.CodeDomComponentSerializationService> fornecidos com o [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] como sua implementação do <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService>.  
   
        Nesse caso, o <xref:System.IServiceProvider> classe fornecida para o <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine> construtor deve retornar esse objeto como uma implementação do <xref:System.ComponentModel.Design.Serialization.IDesignerSerializationService> classe.  
   
-  -   <xref:System.ComponentModel.Design.IComponentChangeService>  
+  - <xref:System.ComponentModel.Design.IComponentChangeService>  
   
        Usando o padrão de designers <xref:System.ComponentModel.Design.DesignSurface> fornecidos pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] host de design são garantidos para terem uma implementação padrão da <xref:System.ComponentModel.Design.IComponentChangeService> classe.  
   

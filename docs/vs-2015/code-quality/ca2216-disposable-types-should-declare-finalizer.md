@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 323850d6abbdd46fba609ebf9eaba9ca11225544
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: aa93413a8b0972fd40b8943a6121367196e07d5a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923189"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60058831"
 ---
 # <a name="ca2216-disposable-types-should-declare-finalizer"></a>CA2216: Tipos descartáveis devem declarar o finalizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ ms.locfileid: "58923189"
 ## <a name="rule-description"></a>Descrição da Regra
  Uma violação dessa regra será relatada se o tipo descartável contém campos dos tipos a seguir:
 
--   <xref:System.IntPtr?displayProperty=fullName>
+- <xref:System.IntPtr?displayProperty=fullName>
 
--   <xref:System.UIntPtr?displayProperty=fullName>
+- <xref:System.UIntPtr?displayProperty=fullName>
 
--   <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>
+- <xref:System.Runtime.InteropServices.HandleRef?displayProperty=fullName>
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra, implemente um finalizador que chama sua <xref:System.IDisposable.Dispose%2A> método.

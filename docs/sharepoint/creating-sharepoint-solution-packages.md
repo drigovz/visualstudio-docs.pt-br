@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 147bb56e0d8759ece67ea1454f496b23b770cebf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8f7afee863d36796bb481f9aca2c24a9ba891ae7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604724"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60049939"
 ---
 # <a name="create-sharepoint-solution-packages"></a>Criar pacotes de solução do SharePoint
   Usando o Designer de pacote, você pode criar e personalizar pacotes de implantação. Por exemplo, você pode adicionar itens de projeto do SharePoint e recursos, redefinir o servidor IIS, definir escopos de ativação do recurso e identificar as dependências de recurso. O designer também gera um manifesto de um arquivo XML que descreve cada pacote.
@@ -56,17 +56,17 @@ ms.locfileid: "56604724"
 ## <a name="packaging-architecture"></a>Arquitetura de empacotamento
  As etapas a seguir ocorrem quando você cria um pacote do SharePoint (*. wsp*) no Visual Studio.
 
-1.  Os recursos e pacotes são validados para certificar-se de que a estrutura física e semântica do pacote está correta.
+1. Os recursos e pacotes são validados para certificar-se de que a estrutura física e semântica do pacote está correta.
 
-2.  Os recursos, itens de projeto e arquivos de pacote no pacote são enumerados. Arquivos de manifesto para pacotes e recursos são transformados para incluir todas as informações necessárias para a implantação e ativação. Os tokens são substituídos pelo valor totalmente qualificado.
+2. Os recursos, itens de projeto e arquivos de pacote no pacote são enumerados. Arquivos de manifesto para pacotes e recursos são transformados para incluir todas as informações necessárias para a implantação e ativação. Os tokens são substituídos pelo valor totalmente qualificado.
 
-3.  O destino do MSBuild de BeforeLayout personalizável é executado. Você pode criar essa etapa para fazer nenhuma modificação personalizada ao pacote antes do *. wsp* arquivo é criado.
+3. O destino do MSBuild de BeforeLayout personalizável é executado. Você pode criar essa etapa para fazer nenhuma modificação personalizada ao pacote antes do *. wsp* arquivo é criado.
 
-4.  Os arquivos enumerados são copiados para um diretório intermediário.
+4. Os arquivos enumerados são copiados para um diretório intermediário.
 
-5.  O destino de MSBuild AfterLayout personalizável é executado. Você pode criar essa etapa para fazer nenhuma modificação personalizada ao pacote antes do *. wsp* arquivo é criado.
+5. O destino de MSBuild AfterLayout personalizável é executado. Você pode criar essa etapa para fazer nenhuma modificação personalizada ao pacote antes do *. wsp* arquivo é criado.
 
-6.  Os arquivos no diretório intermediário são adicionados para o *. wsp* arquivo.
+6. Os arquivos no diretório intermediário são adicionados para o *. wsp* arquivo.
 
 ## <a name="package-folder-structure"></a>Estrutura de pastas do pacote
  Ao empacotar seu projeto do SharePoint, uma *. wsp* arquivo é criado para você na *SolutionFolder\bin\\\<BuildConfiguration >* pasta. Por exemplo, se sua solução está na *C:\Visual Studio 2013\Projects\ListDefinition1* e sua configuração de compilação é definida como versão, o *. wsp* arquivo está localizado em *2013\ C:\Visual Studio Projects\ListDefinition1\bin\Release*.

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8d53c21247e18f198fdac1c22a3b38c0bc5348b6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 61e51f6274bc22ed0d34d33f5ff85bfbfbd927bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633909"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60060132"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>Como: Abrir arquivos de texto, de forma programática, como pastas de trabalho
   Você pode abrir um arquivo de texto como uma pasta de trabalho. Você deve passar no nome do arquivo de texto que você deseja abrir. Você pode especificar vários parâmetros opcionais, como qual número de linha de análise em início e o formato de coluna dos dados no arquivo.
@@ -33,9 +33,9 @@ ms.locfileid: "56633909"
 ## <a name="compile-the-code"></a>Compilar o código
  Este exemplo requer os seguintes componentes:
 
--   Um arquivo de texto delimitado por vírgula chamado `Test.txt` que contém pelo menos três linhas de texto.
+- Um arquivo de texto delimitado por vírgula chamado `Test.txt` que contém pelo menos três linhas de texto.
 
--   O arquivo de texto `Test.txt` a ser armazenado na unidade C.
+- O arquivo de texto `Test.txt` a ser armazenado na unidade C.
 
 ## <a name="see-also"></a>Consulte também
 - [Trabalhar com pastas de trabalho](../vsto/working-with-workbooks.md)

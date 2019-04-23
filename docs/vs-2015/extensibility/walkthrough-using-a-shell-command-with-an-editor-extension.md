@@ -10,12 +10,12 @@ ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 caps.latest.revision: 47
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b898273defe7da4cf8d082b01089c8d6476e8357
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 93df780aee27b794a991a023f559f64a806de046
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922110"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057476"
 ---
 # <a name="walkthrough-using-a-shell-command-with-an-editor-extension"></a>Passo a passo: Usando um comando do shell com uma extensão do editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,25 +30,25 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
 ## <a name="creating-an-extension-with-a-menu-command"></a>Criando uma extensão com um comando de menu  
  Crie um VSPackage que coloca um comando de menu chamado **adicionar adorno** sobre o **ferramentas** menu.  
   
-1.  Crie um projeto de VSIX em C# chamado `MenuCommandTest`e adicione um nome de modelo de item de comando personalizado **AddAdornment**. Para obter mais informações, consulte [criar uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Crie um projeto de VSIX em C# chamado `MenuCommandTest`e adicione um nome de modelo de item de comando personalizado **AddAdornment**. Para obter mais informações, consulte [criar uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Uma solução chamada MenuCommandTest é aberta. O arquivo de MenuCommandTestPackage tem o código que cria o comando de menu e coloca-o a **ferramentas** menu. Neste ponto, o comando fará com apenas uma caixa de mensagem a ser exibido. Etapas posteriores mostram como alterar essa opção para exibir o adorno de comentário.  
+2. Uma solução chamada MenuCommandTest é aberta. O arquivo de MenuCommandTestPackage tem o código que cria o comando de menu e coloca-o a **ferramentas** menu. Neste ponto, o comando fará com apenas uma caixa de mensagem a ser exibido. Etapas posteriores mostram como alterar essa opção para exibir o adorno de comentário.  
   
-3.  Abra o arquivo de vsixmanifest no Editor de manifesto do VSIX. O `Assets` guia deve ter uma linha para um VSPackage nomeado MenuCommandTest.  
+3. Abra o arquivo de vsixmanifest no Editor de manifesto do VSIX. O `Assets` guia deve ter uma linha para um VSPackage nomeado MenuCommandTest.  
   
-4.  Salve e feche o arquivo vsixmanifest.  
+4. Salve e feche o arquivo vsixmanifest.  
   
 ## <a name="adding-a-mef-extension-to-the-command-extension"></a>Adicionando uma extensão do MEF para a extensão de comando  
   
-1.  Na **Gerenciador de soluções**, clique com botão direito no nó da solução, clique em **Add**e, em seguida, clique em **novo projeto**. No **adicionar novo projeto** caixa de diálogo, clique em **extensibilidade** sob **Visual C#**, em seguida, **projeto VSIX**. Nomeie o projeto `CommentAdornmentTest`.  
+1. Na **Gerenciador de soluções**, clique com botão direito no nó da solução, clique em **Add**e, em seguida, clique em **novo projeto**. No **adicionar novo projeto** caixa de diálogo, clique em **extensibilidade** sob **Visual c#**, em seguida, **projeto VSIX**. Nomeie o projeto `CommentAdornmentTest`.  
   
-2.  Porque este projeto irá interagir com o assembly de nome forte de VSPackage, você deve assinar o assembly. Você pode reutilizar o arquivo de chave já criado para o assembly de VSPackage.  
+2. Porque este projeto irá interagir com o assembly de nome forte de VSPackage, você deve assinar o assembly. Você pode reutilizar o arquivo de chave já criado para o assembly de VSPackage.  
   
-    1.  Abra as propriedades do projeto e selecione o **Signing** guia.  
+    1. Abra as propriedades do projeto e selecione o **Signing** guia.  
   
-    2.  Selecione **assinar o assembly**.  
+    2. Selecione **assinar o assembly**.  
   
-    3.  Sob **escolher um arquivo de chave de nome forte**, selecione o arquivo snk que foi gerado para o assembly MenuCommandTest.  
+    3. Sob **escolher um arquivo de chave de nome forte**, selecione o arquivo snk que foi gerado para o assembly MenuCommandTest.  
   
 ## <a name="referring-to-the-mef-extension-in-the-vspackage-project"></a>Referindo-se para a extensão do MEF no projeto de VSPackage  
  Como você está adicionando um componente de MEF para o VSPackage, você deve especificar ambos os tipos de ativos no manifesto.  
@@ -58,62 +58,62 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
   
 #### <a name="to-refer-to-the-mef-component-in-the-vspackage-project"></a>Para fazer referência ao componente de MEF, no projeto de VSPackage  
   
-1.  No projeto MenuCommandTest, abra o arquivo de vsixmanifest no Editor de manifesto do VSIX.  
+1. No projeto MenuCommandTest, abra o arquivo de vsixmanifest no Editor de manifesto do VSIX.  
   
-2.  Sobre o **ativos** , clique em **New**.  
+2. Sobre o **ativos** , clique em **New**.  
   
-3.  No **tipo** , escolha **mefcomponent**.  
+3. No **tipo** , escolha **mefcomponent**.  
   
-4.  No **fonte** , escolha **um projeto na solução atual**.  
+4. No **fonte** , escolha **um projeto na solução atual**.  
   
-5.  No **Project** , escolha **CommentAdornmentTest**.  
+5. No **Project** , escolha **CommentAdornmentTest**.  
   
-6.  Salve e feche o arquivo vsixmanifest.  
+6. Salve e feche o arquivo vsixmanifest.  
   
-7.  Certifique-se de que o projeto MenuCommandTest tem uma referência ao projeto CommentAdornmentTest.  
+7. Certifique-se de que o projeto MenuCommandTest tem uma referência ao projeto CommentAdornmentTest.  
   
-8.  No projeto CommentAdornmentTest, defina o projeto para produzir um assembly. No **Gerenciador de soluções**, selecione o projeto e examinar o **propriedades** janela para o **copiar saída do Build para OutputDirectory** propriedade e defina-o como **verdadeiro**.  
+8. No projeto CommentAdornmentTest, defina o projeto para produzir um assembly. No **Gerenciador de soluções**, selecione o projeto e examinar o **propriedades** janela para o **copiar saída do Build para OutputDirectory** propriedade e defina-o como **verdadeiro**.  
   
 ## <a name="defining-a-comment-adornment"></a>Definindo um adorno de comentário  
  O adorno de comentário em si consiste em um <xref:Microsoft.VisualStudio.Text.ITrackingSpan> que controla o texto selecionado e algumas cadeias de caracteres que representam o autor e a descrição do texto.  
   
 #### <a name="to-define-a-comment-adornment"></a>Para definir um adorno de comentário  
   
-1.  No projeto CommentAdornmentTest, adicione um novo arquivo de classe e nomeie- `CommentAdornment`.  
+1. No projeto CommentAdornmentTest, adicione um novo arquivo de classe e nomeie- `CommentAdornment`.  
   
-2.  Adicione as seguintes referências:  
+2. Adicione as seguintes referências:  
   
-    1.  Microsoft.VisualStudio.CoreUtility  
+    1. Microsoft.VisualStudio.CoreUtility  
   
-    2.  Microsoft.VisualStudio.Text.Data  
+    2. Microsoft.VisualStudio.Text.Data  
   
-    3.  Microsoft.VisualStudio.Text.Logic  
+    3. Microsoft.VisualStudio.Text.Logic  
   
-    4.  Microsoft.VisualStudio.Text.UI  
+    4. Microsoft.VisualStudio.Text.UI  
   
-    5.  Microsoft.VisualStudio.Text.UI.Wpf  
+    5. Microsoft.VisualStudio.Text.UI.Wpf  
   
-    6.  System.ComponentModel.Composition  
+    6. System.ComponentModel.Composition  
   
-    7.  PresentationCore  
+    7. PresentationCore  
   
-    8.  PresentationFramework  
+    8. PresentationFramework  
   
     9. WindowsBase  
   
-3.  Adicione o seguinte `using` instrução.  
+3. Adicione o seguinte `using` instrução.  
   
     ```vb  
     using Microsoft.VisualStudio.Text;  
     ```  
   
-4.  O arquivo deve conter uma classe chamada `CommentAdornment`.  
+4. O arquivo deve conter uma classe chamada `CommentAdornment`.  
   
     ```  
     internal class CommentAdornment  
     ```  
   
-5.  Adicionar três campos para o `CommentAdornment` de classe para o <xref:Microsoft.VisualStudio.Text.ITrackingSpan>, o autor e a descrição.  
+5. Adicionar três campos para o `CommentAdornment` de classe para o <xref:Microsoft.VisualStudio.Text.ITrackingSpan>, o autor e a descrição.  
   
     ```csharp  
     public readonly ITrackingSpan Span;  
@@ -121,7 +121,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
     public readonly string Text;  
     ```  
   
-6.  Adicione um construtor que inicializa os campos.  
+6. Adicione um construtor que inicializa os campos.  
   
     ```csharp  
     public CommentAdornment(SnapshotSpan span, string author, string text)  
@@ -135,9 +135,9 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
 ## <a name="creating-a-visual-element-for-the-adornment"></a>Criação de um elemento Visual para o adorno  
  Você também deve definir um elemento visual para o adorno. Para este passo a passo, definir um controle que herda a classe do Windows Presentation Foundation (WPF) <xref:System.Windows.Controls.Canvas>.  
   
-1.  Crie uma classe no projeto CommentAdornmentTest e nomeie- `CommentBlock`.  
+1. Crie uma classe no projeto CommentAdornmentTest e nomeie- `CommentBlock`.  
   
-2.  Adicione o seguinte `using` instruções.  
+2. Adicione o seguinte `using` instruções.  
   
     ```csharp  
     using Microsoft.VisualStudio.Text;  
@@ -151,14 +151,14 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
     using Microsoft.VisualStudio.Utilities;  
     ```  
   
-3.  Verifique as `CommentBlock` classe herdar de <xref:System.Windows.Controls.Canvas>.  
+3. Verifique as `CommentBlock` classe herdar de <xref:System.Windows.Controls.Canvas>.  
   
     ```csharp  
     internal class CommentBlock : Canvas  
     { }  
     ```  
   
-4.  Adicione alguns campos particulares para definir os aspectos visuais do adorno.  
+4. Adicione alguns campos particulares para definir os aspectos visuais do adorno.  
   
     ```csharp  
     private Geometry textGeometry;  
@@ -168,7 +168,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
     private static Pen dashPen;  
     ```  
   
-5.  Adicione um construtor que define o adorno de comentário e adiciona o texto relevante.  
+5. Adicione um construtor que define o adorno de comentário e adiciona o texto relevante.  
   
     ```csharp  
     public CommentBlock(double textRightEdge, double viewRightEdge,   
@@ -237,7 +237,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
     }  
     ```  
   
-6.  Também implementam um <xref:System.Windows.Controls.Panel.OnRender%2A> manipulador de eventos que desenha o adorno.  
+6. Também implementam um <xref:System.Windows.Controls.Panel.OnRender%2A> manipulador de eventos que desenha o adorno.  
   
     ```csharp  
     protected override void OnRender(DrawingContext dc)  
@@ -259,9 +259,9 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
 ## <a name="adding-an-iwpftextviewcreationlistener"></a>Adicionando um IWpfTextViewCreationListener  
  O <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener> é uma parte do componente MEF que você pode usar para escutar para exibir eventos de criação.  
   
-1.  Adicione um arquivo de classe ao projeto CommentAdornmentTest e nomeie- `Connector`.  
+1. Adicione um arquivo de classe ao projeto CommentAdornmentTest e nomeie- `Connector`.  
   
-2.  Adicione o seguinte `using` instruções.  
+2. Adicione o seguinte `using` instruções.  
   
     ```csharp  
     using System.ComponentModel.Composition;  
@@ -269,12 +269,12 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
     using Microsoft.VisualStudio.Utilities;  
     ```  
   
-3.  Declarar uma classe que implementa <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>e exportá-lo com um <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "text" e um <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> de <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>. O atributo de tipo de conteúdo especifica o tipo de conteúdo ao qual o componente se aplica. O tipo de texto é o tipo base para todos os tipos de arquivo não binários. Portanto, quase cada exibição de texto que é criada será desse tipo. O atributo de função do modo de exibição de texto Especifica o tipo de exibição de texto ao qual o componente se aplica. Funções de exibição de texto do documento geralmente mostram o texto que é composto de linhas e é armazenado em um arquivo.  
+3. Declarar uma classe que implementa <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener>e exportá-lo com um <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> de "text" e um <xref:Microsoft.VisualStudio.Text.Editor.TextViewRoleAttribute> de <xref:Microsoft.VisualStudio.Text.Editor.PredefinedTextViewRoles.Document>. O atributo de tipo de conteúdo especifica o tipo de conteúdo ao qual o componente se aplica. O tipo de texto é o tipo base para todos os tipos de arquivo não binários. Portanto, quase cada exibição de texto que é criada será desse tipo. O atributo de função do modo de exibição de texto Especifica o tipo de exibição de texto ao qual o componente se aplica. Funções de exibição de texto do documento geralmente mostram o texto que é composto de linhas e é armazenado em um arquivo.  
   
      [!code-csharp[VSSDKMenuCommandTest#11](../snippets/csharp/VS_Snippets_VSSDK/vssdkmenucommandtest/cs/commentadornmenttest/connector.cs#11)]
      [!code-vb[VSSDKMenuCommandTest#11](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkmenucommandtest/vb/commentadornmenttest/connector.vb#11)]  
   
-4.  Implemente a <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> , de modo que ele chama estático `Create()` evento do `CommentAdornmentManager`.  
+4. Implemente a <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewCreationListener.TextViewCreated%2A> , de modo que ele chama estático `Create()` evento do `CommentAdornmentManager`.  
   
     ```csharp  
     public void TextViewCreated(IWpfTextView textView)  
@@ -283,7 +283,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
     }  
     ```  
   
-5.  Adicione um método que você pode usar para executar o comando.  
+5. Adicione um método que você pode usar para executar o comando.  
   
     ```csharp  
     static public void Execute(IWpfTextViewHost host)  
@@ -310,7 +310,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
   
 #### <a name="to-define-an-adornment-layer"></a>Para definir uma camada de adorno  
   
-1.  No `Connector` classe, declare um campo público do tipo <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>e exportá-lo com um <xref:Microsoft.VisualStudio.Utilities.NameAttribute> que especifica um nome exclusivo para a camada de adorno e um <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> que define a relação de ordem Z dessa camada de adorno para o outro texto Exibir camadas (texto, cursor e seleção).  
+1. No `Connector` classe, declare um campo público do tipo <xref:Microsoft.VisualStudio.Text.Editor.AdornmentLayerDefinition>e exportá-lo com um <xref:Microsoft.VisualStudio.Utilities.NameAttribute> que especifica um nome exclusivo para a camada de adorno e um <xref:Microsoft.VisualStudio.Utilities.OrderAttribute> que define a relação de ordem Z dessa camada de adorno para o outro texto Exibir camadas (texto, cursor e seleção).  
   
     ```csharp  
     [Export(typeof(AdornmentLayerDefinition))]  
@@ -323,9 +323,9 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
 ## <a name="providing-comment-adornments"></a>Fornecendo adornos de comentário  
  Quando você define um adorno, também implemente um provedor de adorno de comentário e um Gerenciador de adorno do comentário. O provedor de adorno do comentário mantém uma lista de adornos de comentário, escuta <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> eventos no buffer de texto subjacente e exclusões adornos de comentário quando o texto subjacente é excluído.  
   
-1.  Adicione um novo arquivo de classe ao projeto CommentAdornmentTest e nomeie- `CommentAdornmentProvider`.  
+1. Adicione um novo arquivo de classe ao projeto CommentAdornmentTest e nomeie- `CommentAdornmentProvider`.  
   
-2.  Adicione o seguinte `using` instruções.  
+2. Adicione o seguinte `using` instruções.  
   
     ```csharp  
     using System;  
@@ -335,7 +335,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
     using Microsoft.VisualStudio.Text.Editor;  
     ```  
   
-3.  Adicione uma classe chamada `CommentAdornmentProvider`.  
+3. Adicione uma classe chamada `CommentAdornmentProvider`.  
   
     ```csharp  
     internal class CommentAdornmentProvider  
@@ -343,7 +343,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
     }  
     ```  
   
-4.  Adicione campos privados para o buffer de texto e a lista de adornos comentário relacionado ao buffer.  
+4. Adicione campos privados para o buffer de texto e a lista de adornos comentário relacionado ao buffer.  
   
     ```csharp  
     private ITextBuffer buffer;  
@@ -351,7 +351,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
   
     ```  
   
-5.  Adicione um construtor para `CommentAdornmentProvider`. Este construtor deve ter acesso privado porque o provedor for instanciado pelo `Create()` método. O construtor adiciona os `OnBufferChanged` manipulador de eventos para o <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> eventos.  
+5. Adicione um construtor para `CommentAdornmentProvider`. Este construtor deve ter acesso privado porque o provedor for instanciado pelo `Create()` método. O construtor adiciona os `OnBufferChanged` manipulador de eventos para o <xref:Microsoft.VisualStudio.Text.ITextBuffer.Changed> eventos.  
   
     ```csharp  
     private CommentAdornmentProvider(ITextBuffer buffer)  
@@ -363,7 +363,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
   
     ```  
   
-6.  Adicione o método `Create()`.  
+6. Adicione o método `Create()`.  
   
     ```csharp  
     public static CommentAdornmentProvider Create(IWpfTextView view)  
@@ -373,7 +373,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
   
     ```  
   
-7.  Adicione o método `Detach()`.  
+7. Adicione o método `Detach()`.  
   
     ```csharp  
     public void Detach()  
@@ -387,7 +387,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
     }  
     ```  
   
-8.  Adicionar o `OnBufferChanged` manipulador de eventos.  
+8. Adicionar o `OnBufferChanged` manipulador de eventos.  
   
     ```csharp  
     private void OnBufferChanged(object sender, TextContentChangedEventArgs e)  
@@ -508,9 +508,9 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
 ## <a name="managing-comment-adornments"></a>Gerenciando os adornos de comentário  
  O Gerenciador de adorno comentário cria o adorno e adiciona-o para a camada de adorno. Ele escuta para o <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> e <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> eventos de forma que ele pode mover ou excluir o adorno. Ele também escuta para o `CommentsChanged` evento que é acionado pelo provedor do adorno de comentário quando os comentários são adicionados ou removidos.  
   
-1.  Adicione um arquivo de classe ao projeto CommentAdornmentTest e nomeie- `CommentAdornmentManager`.  
+1. Adicione um arquivo de classe ao projeto CommentAdornmentTest e nomeie- `CommentAdornmentManager`.  
   
-2.  Adicione o seguinte `using` instruções.  
+2. Adicione o seguinte `using` instruções.  
   
     ```csharp  
     using System;  
@@ -521,7 +521,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
     using Microsoft.VisualStudio.Text.Formatting;  
     ```  
   
-3.  Adicione uma classe chamada `CommentAdornmentManager`.  
+3. Adicione uma classe chamada `CommentAdornmentManager`.  
   
     ```csharp  
     internal class CommentAdornmentManager  
@@ -529,7 +529,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
         }  
     ```  
   
-4.  Adicione alguns campos particulares.  
+4. Adicione alguns campos particulares.  
   
     ```csharp  
     private readonly IWpfTextView view;  
@@ -537,7 +537,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
     private readonly CommentAdornmentProvider provider;  
     ```  
   
-5.  Adicione um construtor que assina o Gerenciador do <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> e <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> eventos e também o `CommentsChanged` eventos. O construtor é particular porque o Gerenciador é instanciado pelo estático `Create()` método.  
+5. Adicione um construtor que assina o Gerenciador do <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> e <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> eventos e também o `CommentsChanged` eventos. O construtor é particular porque o Gerenciador é instanciado pelo estático `Create()` método.  
   
     ```csharp  
     private CommentAdornmentManager(IWpfTextView view)  
@@ -553,7 +553,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
     }  
     ```  
   
-6.  Adicionar o `Create()` método que obtém um provedor ou cria um, se necessário.  
+6. Adicionar o `Create()` método que obtém um provedor ou cria um, se necessário.  
   
     ```csharp  
     public static CommentAdornmentManager Create(IWpfTextView view)  
@@ -562,7 +562,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
     }  
     ```  
   
-7.  Adicionar o `CommentsChanged` manipulador.  
+7. Adicionar o `CommentsChanged` manipulador.  
   
     ```csharp  
     private void OnCommentsChanged(object sender, CommentsChangedEventArgs e)  
@@ -577,7 +577,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
     }  
     ```  
   
-8.  Adicionar o <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> manipulador.  
+8. Adicionar o <xref:Microsoft.VisualStudio.Text.Editor.ITextView.Closed> manipulador.  
   
     ```csharp  
     private void OnClosed(object sender, EventArgs e)  
@@ -627,15 +627,15 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
 ## <a name="using-the-menu-command-to-add-the-comment-adornment"></a>Usando o comando de Menu para adicionar o adorno de comentário  
  Você pode usar o comando de menu para criar um adorno de comentário Implementando o `MenuItemCallback` método do VSPackage.  
   
-1.  Adicione as seguintes referências ao projeto MenuCommandTest:  
+1. Adicione as seguintes referências ao projeto MenuCommandTest:  
   
-    -   Microsoft.VisualStudio.TextManager.Interop  
+    - Microsoft.VisualStudio.TextManager.Interop  
   
-    -   Microsoft.VisualStudio.Editor  
+    - Microsoft.VisualStudio.Editor  
   
-    -   Microsoft.VisualStudio.Text.UI.Wpf  
+    - Microsoft.VisualStudio.Text.UI.Wpf  
   
-2.  Abra o arquivo AddAdornment.cs e adicione o seguinte `using` instruções.  
+2. Abra o arquivo AddAdornment.cs e adicione o seguinte `using` instruções.  
   
     ```csharp  
     using Microsoft.VisualStudio.TextManager.Interop;  
@@ -644,7 +644,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
     using CommentAdornmentTest;  
     ```  
   
-3.  Exclua o método ShowMessageBox() e adicione o seguinte manipulador de comando.  
+3. Exclua o método ShowMessageBox() e adicione o seguinte manipulador de comando.  
   
     ```csharp  
     private void AddAdornmentHandler(object sender, EventArgs e)  
@@ -652,7 +652,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
     }  
     ```  
   
-4.  Adicione código para obter a exibição ativa. Você deve obter o `SVsTextManager` do shell do Visual Studio para obter o ativo `IVsTextView`.  
+4. Adicione código para obter a exibição ativa. Você deve obter o `SVsTextManager` do shell do Visual Studio para obter o ativo `IVsTextView`.  
   
     ```csharp  
     private void AddAdornmentHandler(object sender, EventArgs e)  
@@ -664,7 +664,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
     }  
     ```  
   
-5.  Se este modo de exibição de texto for uma instância de uma exibição de texto do editor, você pode convertê-lo para o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> da interface e, em seguida, obtenha a <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> e seus respectivos <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>. Use o <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> para chamar o `Connector.Execute()` método, que obtém o provedor do adorno de comentário e adiciona o adorno. Agora, o manipulador de comandos deve ser assim:  
+5. Se este modo de exibição de texto for uma instância de uma exibição de texto do editor, você pode convertê-lo para o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsUserData> da interface e, em seguida, obtenha a <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> e seus respectivos <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView>. Use o <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> para chamar o `Connector.Execute()` método, que obtém o provedor do adorno de comentário e adiciona o adorno. Agora, o manipulador de comandos deve ser assim:  
   
     ```csharp  
     private void AddAdornmentHandler(object sender, EventArgs e)  
@@ -688,7 +688,7 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
     }  
     ```  
   
-6.  Defina o método de AddAdornmentHandler como o manipulador para o comando AddAdornment no construtor AddAdornment.  
+6. Defina o método de AddAdornmentHandler como o manipulador para o comando AddAdornment no construtor AddAdornment.  
   
     ```csharp  
     private AddAdornment(Package package)  
@@ -713,11 +713,11 @@ De um VSPackage, você pode adicionar recursos, como comandos de menu para o edi
   
 ## <a name="building-and-testing-the-code"></a>Compilar e testar o código  
   
-1.  Compile a solução e inicie a depuração. A instância experimental deve aparecer.  
+1. Compile a solução e inicie a depuração. A instância experimental deve aparecer.  
   
-2.  Crie um arquivo de texto. Digite algum texto e, em seguida, selecioná-lo.  
+2. Crie um arquivo de texto. Digite algum texto e, em seguida, selecioná-lo.  
   
-3.  Sobre o **ferramentas** menu, clique em **invocar adorno adicionar**. Um balão deve ser exibido no lado direito da janela de texto e deve conter o texto que se parece com o texto a seguir.  
+3. Sobre o **ferramentas** menu, clique em **invocar adorno adicionar**. Um balão deve ser exibido no lado direito da janela de texto e deve conter o texto que se parece com o texto a seguir.  
   
      YourUserName  
   

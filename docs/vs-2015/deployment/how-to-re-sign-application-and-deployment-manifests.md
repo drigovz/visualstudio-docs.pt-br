@@ -19,12 +19,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4c1942e39895439eb040109a34353d6c361e95c5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: adc2347e6928a841a0a2c24d1d786be8edcbc4ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927167"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60045767"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Como: Assinar novamente os manifestos de aplicativo e implantação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Depois de fazer alterações às propriedades de implantação no manifesto do a
   
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Para assinar novamente o aplicativo e a implantação de manifestos com Mage.exe  
   
-1.  Abra uma **Prompt de comando do Visual Studio** janela.  
+1. Abra uma **Prompt de comando do Visual Studio** janela.  
   
-2.  Altere os diretórios para a pasta que contém os arquivos de manifesto que você deseja assinar.  
+2. Altere os diretórios para a pasta que contém os arquivos de manifesto que você deseja assinar.  
   
-3.  Digite o seguinte comando para assinar o arquivo de manifesto do aplicativo. Substitua ManifestFileName com o nome do arquivo de manifesto e a extensão. Substitua o certificado com o caminho totalmente qualificado ou relativo do arquivo de certificado e senha com a senha do certificado.  
+3. Digite o seguinte comando para assinar o arquivo de manifesto do aplicativo. Substitua ManifestFileName com o nome do arquivo de manifesto e a extensão. Substitua o certificado com o caminho totalmente qualificado ou relativo do arquivo de certificado e senha com a senha do certificado.  
   
     ```  
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password  
@@ -56,7 +56,7 @@ Depois de fazer alterações às propriedades de implantação no manifesto do a
     mage -sign WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-4.  Digite o seguinte comando para atualizar e assinar o arquivo de manifesto de implantação, substituindo os nomes de espaço reservado como na etapa anterior.  
+4. Digite o seguinte comando para atualizar e assinar o arquivo de manifesto de implantação, substituindo os nomes de espaço reservado como na etapa anterior.  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
@@ -70,20 +70,20 @@ Depois de fazer alterações às propriedades de implantação no manifesto do a
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  Como opção, copie o manifesto de implantação mestre (publique\\*appname*. Application) para seu diretório de implantação da versão (arquivos publish\Application\\*appname*_ *versão*).  
+5. Como opção, copie o manifesto de implantação mestre (publique\\*appname*. Application) para seu diretório de implantação da versão (arquivos publish\Application\\*appname*_ *versão*).  
   
 ## <a name="updating-and-re-signing-the-application-and-deployment-manifests"></a>Atualizando e assinar novamente o aplicativo e manifestos de implantação  
  Este procedimento pressupõe que você já fez alterações no seu aplicativo (. manifest) do arquivo de manifesto, mas que há outros arquivos que foram atualizados. Quando arquivos são atualizados, o hash que representa o arquivo também deve ser atualizado.  
   
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>Para atualizar e assinar novamente o aplicativo e a implantação de manifestos com Mage.exe  
   
-1.  Abra uma **Prompt de comando do Visual Studio** janela.  
+1. Abra uma **Prompt de comando do Visual Studio** janela.  
   
-2.  Altere os diretórios para a pasta que contém os arquivos de manifesto que você deseja assinar.  
+2. Altere os diretórios para a pasta que contém os arquivos de manifesto que você deseja assinar.  
   
-3.  Remova a extensão de arquivo. Deploy dos arquivos na pasta de saída de publicação.  
+3. Remova a extensão de arquivo. Deploy dos arquivos na pasta de saída de publicação.  
   
-4.  Digite o seguinte comando para atualizar o manifesto do aplicativo com os hashes de novo para os arquivos atualizados e assinar o arquivo de manifesto do aplicativo. Substitua ManifestFileName com o nome do arquivo de manifesto e a extensão. Substitua o certificado com o caminho totalmente qualificado ou relativo do arquivo de certificado e senha com a senha do certificado.  
+4. Digite o seguinte comando para atualizar o manifesto do aplicativo com os hashes de novo para os arquivos atualizados e assinar o arquivo de manifesto do aplicativo. Substitua ManifestFileName com o nome do arquivo de manifesto e a extensão. Substitua o certificado com o caminho totalmente qualificado ou relativo do arquivo de certificado e senha com a senha do certificado.  
   
     ```  
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password  
@@ -97,7 +97,7 @@ Depois de fazer alterações às propriedades de implantação no manifesto do a
     mage -update WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-5.  Digite o seguinte comando para atualizar e assinar o arquivo de manifesto de implantação, substituindo os nomes de espaço reservado como na etapa anterior.  
+5. Digite o seguinte comando para atualizar e assinar o arquivo de manifesto de implantação, substituindo os nomes de espaço reservado como na etapa anterior.  
   
     ```  
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password  
@@ -111,9 +111,9 @@ Depois de fazer alterações às propriedades de implantação no manifesto do a
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx  
     ```  
   
-6.  Adicione a extensão de arquivo. Deploy volta para os arquivos, exceto os arquivos de manifesto de aplicativo e implantação.  
+6. Adicione a extensão de arquivo. Deploy volta para os arquivos, exceto os arquivos de manifesto de aplicativo e implantação.  
   
-7.  Como opção, copie o manifesto de implantação mestre (publique\\*appname*. Application) para seu diretório de implantação da versão (arquivos publish\Application\\*appname*_ *versão*).  
+7. Como opção, copie o manifesto de implantação mestre (publique\\*appname*. Application) para seu diretório de implantação da versão (arquivos publish\Application\\*appname*_ *versão*).  
   
 ## <a name="see-also"></a>Consulte também  
  [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)   
