@@ -9,42 +9,42 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8327565d9705c8522442acc77899fe171a5bf12d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 97cfb7ddba95ccf4c2f74e7c924c6f62b91254a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927762"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109693"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Como: Usar a navegação estrutural
 Existem três maneiras principais de alterar o conjunto de atividades que são exibidas em [!INCLUDE[wfd1](../includes/wfd1-md.md)]:  
   
-1.  Clique duas vezes para furar na uma atividade filho.  
+1. Clique duas vezes para furar na uma atividade filho.  
   
-2.  Clique em um botão na barra de rastreamento para navegar em uma atividade de ancestral.  
+2. Clique em um botão na barra de rastreamento para navegar em uma atividade de ancestral.  
   
-3.  Expandir ou recolher atividades no lugar.  
+3. Expandir ou recolher atividades no lugar.  
   
 ### <a name="using-breadcrumb-navigation"></a>Usando a navegação de rastreamento  
   
-1.  Clique duas vezes em uma atividade de [!INCLUDE[wfd2](../includes/wfd2-md.md)] para alterar a atividade raiz a atividade clicado. A atividade clicada completa é expandida na raiz e seus ancestrais são mostrados na barra de rastreamento. Isso é às vezes chamado perfuração ou de uma atividade.  
+1. Clique duas vezes em uma atividade de [!INCLUDE[wfd2](../includes/wfd2-md.md)] para alterar a atividade raiz a atividade clicado. A atividade clicada completa é expandida na raiz e seus ancestrais são mostrados na barra de rastreamento. Isso é às vezes chamado perfuração ou de uma atividade.  
   
-2.  Para navegar a um predecessor de atividade atual da raiz, clique na atividade na barra de rastreamento.  
+2. Para navegar a um predecessor de atividade atual da raiz, clique na atividade na barra de rastreamento.  
   
 ### <a name="expanding-or-collapsing-an-activity-in-place"></a>Expandindo ou recolhendo uma atividade no lugar  
   
-1.  Clique nas vigas em uma atividade expande ou recolhe a atividade no lugar.  
+1. Clique nas vigas em uma atividade expande ou recolhe a atividade no lugar.  
   
-2.  Quando o estado do estado de expansão é alterado clicando no botão, o novo estado de expansão é salvo em XAML.  
+2. Quando o estado do estado de expansão é alterado clicando no botão, o novo estado de expansão é salvo em XAML.  
   
     > [!WARNING]
     >  Nem todas as atividades podem ser expandidos no lugar. Há dois casos quando uma atividade não pode ser expandida no local: ou o pai da atividade não permite seus filhos sejam expandidos no lugar, (por exemplo, as atividades em um fluxograma não podem ser expandidos no local), ou o designer de atividade não se permite que é expandido no lugar. Embora nenhum dos designers atividade estão incluídos em [!INCLUDE[wfd2](../includes/wfd2-md.md)] tenham o último comportamento, quaisquer atividades personalizados podem exibir esse comportamento.  
   
 ### <a name="expanding-all-or-collapsing-all-activities"></a>Tudo expandir ou recolher todas as atividades  
   
-1.  Use o **Expandir tudo** e **Recolher tudo** botões na interface do usuário para expandir ou recolher todas as atividades na raiz atual de rastreamento. Observe que expande todas e recolhe todo é estados globais. Isso significa que quando você altera a atividade raiz usando a navegação de trilha, expandir ou recolhe qualquer estado persiste até que você clique em **restaurar**.  
+1. Use o **Expandir tudo** e **Recolher tudo** botões na interface do usuário para expandir ou recolher todas as atividades na raiz atual de rastreamento. Observe que expande todas e recolhe todo é estados globais. Isso significa que quando você altera a atividade raiz usando a navegação de trilha, expandir ou recolhe qualquer estado persiste até que você clique em **restaurar**.  
   
-2.  Depois que você aplicou qualquer expandir ou recolhe qualquer estado, você pode clicar na **restaurar** botão que aparece para voltar para examinar o estado anteriormente aplicado a cada atividade.  
+2. Depois que você aplicou qualquer expandir ou recolhe qualquer estado, você pode clicar na **restaurar** botão que aparece para voltar para examinar o estado anteriormente aplicado a cada atividade.  
   
     > [!WARNING]
     >  Se uma atividade, como <xref:System.Activities.Statements.Flowchart>, optou fora de expanda local, a funcionalidade associada com o **Expandir tudo** e **Recolher tudo** botões está desabilitado no **fluxograma**  designer. [!INCLUDE[crabout](../includes/crabout-md.md)] o **fluxograma** designer, consulte o [fluxograma](../workflow-designer/flowchart-activity-designer.md) tópico.  

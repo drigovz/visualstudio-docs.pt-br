@@ -16,14 +16,14 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f9b09a8990de97357da2703f1d08dabec50ea75e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ee4e0c6fd686398ae89b5c079d6efc1297a19f5d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790107"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109797"
 ---
-# <a name="walkthrough-creating-a-code-snippet"></a>Instruções passo a passo: criando um snippet de código
+# <a name="walkthrough-creating-a-code-snippet"></a>Passo a passo: Criando um trecho de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode criar um snippet de código com apenas algumas etapas. Tudo o que você precisa fazer é criar um arquivo XML, preencher os elementos apropriados e adicionar seu código. Você também pode adicionar referências e parâmetros de substituição ao seu código. Você pode adicionar o snippet à instalação do Visual Studio usando o botão Importar no Gerenciador de Snippets de Código (**Ferramentas/Gerenciador de Snippets de Código**).  
@@ -54,13 +54,13 @@ Você pode criar um snippet de código com apenas algumas etapas. Tudo o que voc
   
 ### <a name="to-create-a-code-snippet"></a>Para criar um snippet de código  
   
-1.  Crie um novo arquivo XML no Visual Studio e adicione o modelo mostrado acima.  
+1. Crie um novo arquivo XML no Visual Studio e adicione o modelo mostrado acima.  
   
-2.  Preencha o título do snippet, por exemplo, "Hello World VB", no elemento Title.  
+2. Preencha o título do snippet, por exemplo, "Hello World VB", no elemento Title.  
   
-3.  Preencha a linguagem do snippet no atributo Linguagens do elemento Código. Para este exemplo, use "VB".  
+3. Preencha a linguagem do snippet no atributo Linguagens do elemento Código. Para este exemplo, use "VB".  
   
-4.  Adicione algum código na seção CDATA dentro do elemento de Código, por exemplo:  
+4. Adicione algum código na seção CDATA dentro do elemento de Código, por exemplo:  
   
     ```  
     <Code Language="VB">  
@@ -69,33 +69,33 @@ Você pode criar um snippet de código com apenas algumas etapas. Tudo o que voc
   
     ```  
   
-5.  Salve o trecho como VBCodeSnippet.snippet.  
+5. Salve o trecho como VBCodeSnippet.snippet.  
   
 ### <a name="to-add-a-code-snippet-to-visual-studio"></a>Para adicionar um snippet de código ao Visual Studio  
   
-1.  Você pode adicionar seus próprios snippets à instalação do Visual Studio usando o Gerenciador de Snippets de Código. Abra o Gerenciador de Snippets de Código (**Ferramentas/Gerenciador de Snippets de Código**).  
+1. Você pode adicionar seus próprios snippets à instalação do Visual Studio usando o Gerenciador de Snippets de Código. Abra o Gerenciador de Snippets de Código (**Ferramentas/Gerenciador de Snippets de Código**).  
   
-2.  Clique no botão **Importar**.  
+2. Clique no botão **Importar**.  
   
-3.  Vá para o local em que você salvou o snippet de código no procedimento anterior, selecione-o e clique em **Abrir**.  
+3. Vá para o local em que você salvou o snippet de código no procedimento anterior, selecione-o e clique em **Abrir**.  
   
-4.  A caixa de diálogo **Importar Snippet de Código** é aberta, solicitando que você escolha onde deseja adicionar o snippet entre as opções no painel à direita. Uma das opções deve ser **Meus Snippets de Código**. Selecione-a e clique em **Concluir** e, em seguida, em **OK**.  
+4. A caixa de diálogo **Importar Snippet de Código** é aberta, solicitando que você escolha onde deseja adicionar o snippet entre as opções no painel à direita. Uma das opções deve ser **Meus Snippets de Código**. Selecione-a e clique em **Concluir** e, em seguida, em **OK**.  
   
-5.  O snippet é copiado para o seguinte local:  
+5. O snippet é copiado para o seguinte local:  
   
      `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippets`  
   
-6.  Teste seu snippet abrindo um projeto do Visual Basic e abrindo um arquivo de código. No arquivo, clique em **Inserir Snippet** no menu de contexto e, em seguida, **Snippets do Meu Código**. Você deve ver um snippet chamado **Meu Snippet de Código do Visual Basic**. Clique duas vezes nesse item.  
+6. Teste seu snippet abrindo um projeto do Visual Basic e abrindo um arquivo de código. No arquivo, clique em **Inserir Snippet** no menu de contexto e, em seguida, **Snippets do Meu Código**. Você deve ver um snippet chamado **Meu Snippet de Código do Visual Basic**. Clique duas vezes nesse item.  
   
-7.  Você deve ver `Console.WriteLine("Hello, World!")` inserido no código.  
+7. Você deve ver `Console.WriteLine("Hello, World!")` inserido no código.  
   
 ### <a name="adding-description-and-shortcut-fields"></a>Adicionando campos de atalho e descrição  
   
-1.  Campos de descrição fornecem mais informações sobre o snippet de código quando exibidos no Gerenciador de Snippets de Código. O atalho é uma marcação que os usuários podem digitar para inserir seu snippet. Edite o snippet adicionado abrindo o arquivo `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.  
+1. Campos de descrição fornecem mais informações sobre o snippet de código quando exibidos no Gerenciador de Snippets de Código. O atalho é uma marcação que os usuários podem digitar para inserir seu snippet. Edite o snippet adicionado abrindo o arquivo `%USERPROFILE%\Documents\Visual Studio 2013\Code Snippets\Visual Basic\My Code Snippet\VBCodeSnippet.snippet`.  
   
-2.  Adicione os elementos Autor e Descrição ao elemento de Cabeçalho e preencha-os.  
+2. Adicione os elementos Autor e Descrição ao elemento de Cabeçalho e preencha-os.  
   
-3.  O elemento Cabeçalho deve ser semelhante a isto:  
+3. O elemento Cabeçalho deve ser semelhante a isto:  
   
     ```  
     <Header>  
@@ -106,9 +106,9 @@ Você pode criar um snippet de código com apenas algumas etapas. Tudo o que voc
   
     ```  
   
-4.  Abra o Gerenciador de Snippets de Código e selecione seu snippet de código. No painel à direita, você deverá ver os campos Descrição e Autor agora preenchidos.  
+4. Abra o Gerenciador de Snippets de Código e selecione seu snippet de código. No painel à direita, você deverá ver os campos Descrição e Autor agora preenchidos.  
   
-5.  Para adicionar um atalho, adicione um elemento Atalho junto dos elementos Autor e Descrição:  
+5. Para adicionar um atalho, adicione um elemento Atalho junto dos elementos Autor e Descrição:  
   
     ```  
     <Header>  
@@ -120,17 +120,17 @@ Você pode criar um snippet de código com apenas algumas etapas. Tudo o que voc
   
     ```  
   
-6.  Salve o arquivo de snippet novamente.  
+6. Salve o arquivo de snippet novamente.  
   
-7.  Para testar o atalho, abra um projeto do Visual Basic e abra um arquivo de código. Digite `hello` no arquivo e pressione TAB. O snippet de código deve ser inserido.  
+7. Para testar o atalho, abra um projeto do Visual Basic e abra um arquivo de código. Digite `hello` no arquivo e pressione TAB. O snippet de código deve ser inserido.  
   
 ### <a name="to-add-references-and-imports"></a>Para adicionar referências e importações  
   
-1.  Com snippets do Visual Basic, você pode adicionar uma referência a um projeto usando o elemento Referências e adicionar uma declaração Importações usando o elemento Importações. (Snippets em outras linguagens não têm esse recurso.) Por exemplo, se você alterar `Console.WriteLine` no código de exemplo para `MessageBox.Show`, talvez seja necessário adicionar o assembly System.Windows.Forms.dll ao projeto.  
+1. Com snippets do Visual Basic, você pode adicionar uma referência a um projeto usando o elemento Referências e adicionar uma declaração Importações usando o elemento Importações. (Snippets em outras linguagens não têm esse recurso.) Por exemplo, se você alterar `Console.WriteLine` no código de exemplo para `MessageBox.Show`, talvez seja necessário adicionar o assembly System.Windows.Forms.dll ao projeto.  
   
-2.  Abra seu snippet.  
+2. Abra seu snippet.  
   
-3.  Adicione o elemento Referências sob o elemento Snippet:  
+3. Adicione o elemento Referências sob o elemento Snippet:  
   
     ```  
     <References>  
@@ -141,7 +141,7 @@ Você pode criar um snippet de código com apenas algumas etapas. Tudo o que voc
   
     ```  
   
-4.  Adicione o elemento Importações sob o elemento Snippet:  
+4. Adicione o elemento Importações sob o elemento Snippet:  
   
     ```  
     <Imports>  
@@ -152,17 +152,17 @@ Você pode criar um snippet de código com apenas algumas etapas. Tudo o que voc
   
     ```  
   
-5.  Altere a seção CDATA para o seguinte:  
+5. Altere a seção CDATA para o seguinte:  
   
     ```  
     <![CDATA[MessageBox.Show("Hello, World!")]]>  
     ```  
   
-6.  Salve o snippet.  
+6. Salve o snippet.  
   
-7.  Abra um projeto do Visual Basic e adicione o snippet.  
+7. Abra um projeto do Visual Basic e adicione o snippet.  
   
-8.  Você verá uma instrução Importações no alto do arquivo de código:  
+8. Você verá uma instrução Importações no alto do arquivo de código:  
   
     ```  
     Imports System.Windows.Forms  
@@ -173,11 +173,11 @@ Você pode criar um snippet de código com apenas algumas etapas. Tudo o que voc
   
 ### <a name="adding-replacements"></a>Adicionando substituições  
   
-1.  Você pode querer que partes dos snippets de código sejam substituídas pelo usuário, por exemplo, se você adicionar uma variável e quiser que o usuário a substitua por uma no projeto atual. Você pode fornecer dois tipos de substituições: literais e objetos. Literais são cadeias de caracteres de algum tipo (literais de cadeias de caracteres, nomes de variáveis ou representações de cadeia de caracteres de valores numéricos). Objetos são instâncias de um tipo que não cadeia de caracteres. Neste procedimento, você declarará uma substituição de literal e uma substituição de objeto e alterará o código para fazer referência a essas substituições.  
+1. Você pode querer que partes dos snippets de código sejam substituídas pelo usuário, por exemplo, se você adicionar uma variável e quiser que o usuário a substitua por uma no projeto atual. Você pode fornecer dois tipos de substituições: literais e objetos. Literais são cadeias de caracteres de algum tipo (literais de cadeias de caracteres, nomes de variáveis ou representações de cadeia de caracteres de valores numéricos). Objetos são instâncias de um tipo que não cadeia de caracteres. Neste procedimento, você declarará uma substituição de literal e uma substituição de objeto e alterará o código para fazer referência a essas substituições.  
   
-2.  Abra seu snippet.  
+2. Abra seu snippet.  
   
-3.  Este exemplo usa uma cadeia de conexão do SQL, então você precisa alterar os elementos Importações e Referências para adicionar as referências apropriadas:  
+3. Este exemplo usa uma cadeia de conexão do SQL, então você precisa alterar os elementos Importações e Referências para adicionar as referências apropriadas:  
   
     ```  
     <References>  
@@ -199,7 +199,7 @@ Você pode criar um snippet de código com apenas algumas etapas. Tudo o que voc
   
     ```  
   
-4.  Para declarar uma substituição de literal para a cadeia de conexão SQL, adicione um elemento de Declarações sob o elemento de Snippet e, nele, adicione um elemento Literal com subelementos para a ID, a dica de ferramenta e o valor padrão para a substituição:  
+4. Para declarar uma substituição de literal para a cadeia de conexão SQL, adicione um elemento de Declarações sob o elemento de Snippet e, nele, adicione um elemento Literal com subelementos para a ID, a dica de ferramenta e o valor padrão para a substituição:  
   
     ```  
     <Declarations>  
@@ -212,7 +212,7 @@ Você pode criar um snippet de código com apenas algumas etapas. Tudo o que voc
   
     ```  
   
-5.  Para declarar uma substituição de objeto para a conexão SQL, adicione um elemento de Objeto dentro do elemento de Declarações e adicione subelementos para a ID, o tipo de objeto, a dica de ferramenta e o valor padrão. O elemento Declarações resultante deve ter esta aparência:  
+5. Para declarar uma substituição de objeto para a conexão SQL, adicione um elemento de Objeto dentro do elemento de Declarações e adicione subelementos para a ID, o tipo de objeto, a dica de ferramenta e o valor padrão. O elemento Declarações resultante deve ter esta aparência:  
   
     ```  
     <Declarations>  
@@ -230,7 +230,7 @@ Você pode criar um snippet de código com apenas algumas etapas. Tudo o que voc
     </Declarations>  
     ```  
   
-6.  Na seção de código, você faz referência a substituições com sinais de $ ao redor, por exemplo, `$replacement$`:  
+6. Na seção de código, você faz referência a substituições com sinais de $ ao redor, por exemplo, `$replacement$`:  
   
     ```  
     <Code Language="VB" Kind="method body">  
@@ -244,9 +244,9 @@ Você pode criar um snippet de código com apenas algumas etapas. Tudo o que voc
     </Code>  
     ```  
   
-7.  Salve o snippet.  
+7. Salve o snippet.  
   
-8.  Abra um projeto do Visual Basic e adicione o snippet.  
+8. Abra um projeto do Visual Basic e adicione o snippet.  
   
 9. O código deve se parecer com o seguinte, em que as substituições `SQL connection string` e `dcConnection` são realçadas em laranja claro. Pressione TAB para navegar de um para o outro.  
   

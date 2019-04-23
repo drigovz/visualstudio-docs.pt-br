@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: f82714ad03fc84f7112657aeafdbd257f426fc82
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 50375390b3a09ec18fcccd45e4eaee7e9fe102e2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928679"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094769"
 ---
 # <a name="ca1816-call-gcsuppressfinalize-correctly"></a>CA1816: Chamar GC.SuppressFinalize corretamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,16 +34,16 @@ ms.locfileid: "58928679"
 
 ## <a name="cause"></a>Causa
 
--   Um método que é uma implementação de <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> não chama <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+- Um método que é uma implementação de <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> não chama <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
 
--   Um método que não é uma implementação de <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> chamadas <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+- Um método que não é uma implementação de <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> chamadas <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
 
--   Chama um método <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> e passa algo que não seja isso (Me no Visual Basic).
+- Chama um método <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> e passa algo que não seja isso (Me no Visual Basic).
 
 ## <a name="rule-description"></a>Descrição da Regra
  O <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> método permite que os usuários liberar os recursos a qualquer momento antes do objeto ficarem disponíveis para a coleta de lixo. Se o <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> método é chamado, ele libera os recursos do objeto. Isso torna a finalização desnecessária. <xref:System.IDisposable.Dispose%2A?displayProperty=fullName> deve chamar <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName> para que o coletor de lixo não chamará o finalizador do objeto.
 
- Para impedir que os tipos derivados com finalizadores tenham reimplementar [System. IDisposable] (<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) e para chamá-lo, sem lacre tipos sem os finalizadores devem chamar ainda <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
+ Para evitar tipos com finalizadores derivados de implementar novamente (de [System. IDisposable]<!-- TODO: review code entity reference <xref:assetId:///System.IDisposable?qualifyHint=True&amp;autoUpgrade=False>  -->) e para chamá-lo, sem lacre tipos sem os finalizadores devem chamar ainda <xref:System.GC.SuppressFinalize%2A?displayProperty=fullName>.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
  Para corrigir uma violação dessa regra:
