@@ -14,12 +14,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25503430fd8924100a193ef5d8517231578800e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a8fc6c951f1da3fc37fe8e1189a3ec8de9609a48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923980"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069591"
 ---
 # <a name="how-to-debug-aspnet-based-workflows-legacy"></a>Como: Depurar de fluxos de trabalho baseados no ASP.NET (herdado)
 Este tópico descreve como depurar aplicativos baseadas em [!INCLUDE[vstecasp](../includes/vstecasp-md.md)][!INCLUDE[wf](../includes/wf-md.md)] que direcionam [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] em [!INCLUDE[wfd1](../includes/wfd1-md.md)]herdado.  
@@ -28,25 +28,25 @@ Este tópico descreve como depurar aplicativos baseadas em [!INCLUDE[vstecasp](.
   
 ### <a name="to-debug-an-aspnet-based-workflow"></a>Para depurar um fluxo de trabalho ASP.NET-based  
   
-1.  Habilitar a depuração para o aplicativo ASP.NET definindo **debug = true** no arquivo Web. config.  
+1. Habilitar a depuração para o aplicativo ASP.NET definindo **debug = true** no arquivo Web. config.  
   
-2.  Defina a biblioteca de fluxo de trabalho como o projeto de inicialização, e pontos de interrupção no fluxo de trabalho.  
+2. Defina a biblioteca de fluxo de trabalho como o projeto de inicialização, e pontos de interrupção no fluxo de trabalho.  
   
-3.  Insira a URL da página da Web padrão nas propriedades do projeto de fluxo de trabalho **Debug** opção **Iniciar navegador com URL externo** caixa de texto.  
+3. Insira a URL da página da Web padrão nas propriedades do projeto de fluxo de trabalho **Debug** opção **Iniciar navegador com URL externo** caixa de texto.  
   
-4.  Selecione **anexar ao processo** sobre o **depurar** menu.  
+4. Selecione **anexar ao processo** sobre o **depurar** menu.  
   
-5.  Selecione o processo para anexar a **processos disponíveis** lista.  
+5. Selecione o processo para anexar a **processos disponíveis** lista.  
   
      Para anexar w3wp.exe, ao webdev.webserver, ou o processo de aspnet_wp em que o fluxo de trabalho é hospedado.  
   
-6.  Clique em **selecionar** ao lado de **Attach To** caixa de texto.  
+6. Clique em **selecionar** ao lado de **Attach To** caixa de texto.  
   
      O **Select Code Type** caixa de diálogo é exibida.  
   
-7.  Selecione **depurar esses tipos de código** e selecione **fluxo de trabalho**.  
+7. Selecione **depurar esses tipos de código** e selecione **fluxo de trabalho**.  
   
-8.  Clique em **OK**.  
+8. Clique em **OK**.  
   
 9. Clique em **Anexar**.  
   

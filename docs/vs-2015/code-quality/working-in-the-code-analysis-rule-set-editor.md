@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 0dd83a2b2d613d6d9ef73097bca4d2f9f1c6cd39
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57d3c21371cc824573e29657d0b41253e556f4c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922383"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072247"
 ---
 # <a name="working-in-the-code-analysis-rule-set-editor"></a>Trabalhando no Editor de Conjunto de Regras de Análise do Código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ O editor de conjunto de regras de análise de código permite que você especifi
   
  O editor exibe as regras em uma estrutura de árvore que grupos de regras por uma regra de conjunto de campo que você especificar. Para adicionar ou remover as regras de um conjunto de regras, execute uma ou mais das seguintes etapas:  
   
--   Marque ou desmarque a caixa de seleção do nó de grupo para adicionar ou remover todas as regras do grupo. Quando você seleciona um grupo, todas as regras são definidas o **aviso** ação.  
+- Marque ou desmarque a caixa de seleção do nó de grupo para adicionar ou remover todas as regras do grupo. Quando você seleciona um grupo, todas as regras são definidas o **aviso** ação.  
   
--   Clique o **ação** campo de um grupo e, em seguida, especifique a ação a ser aplicado a todas as regras do grupo.  
+- Clique o **ação** campo de um grupo e, em seguida, especifique a ação a ser aplicado a todas as regras do grupo.  
   
--   Marque ou desmarque a caixa de seleção de uma regra individual. Quando você seleciona a caixa de seleção para uma regra, a regra é definida como a ação de aviso.  
+- Marque ou desmarque a caixa de seleção de uma regra individual. Quando você seleciona a caixa de seleção para uma regra, a regra é definida como a ação de aviso.  
   
 ## <a name="rule-set-editor-toolbar"></a>Barra de ferramentas do Editor de conjunto de regras  
  Você pode usar a barra de ferramentas do editor de conjunto de regras para agrupar, filtrar e pesquisar os dados que aparecem na grade de conjunto de regras.  
@@ -73,6 +73,6 @@ O editor de conjunto de regras de análise de código permite que você especifi
 ## <a name="sorting-and-filtering-rule-sets"></a>Classificação e filtragem de conjuntos de regras  
  Os cabeçalhos de coluna da grade de conjunto de regras, você pode classificar e filtrar as regras pelos valores do campo.  
   
--   Para classificar a lista de conjunto de regra, clique no cabeçalho da coluna do campo pelo qual você deseja classificar. Se os conjuntos de regras são agrupados, cada grupo é classificado individualmente.  
+- Para classificar a lista de conjunto de regra, clique no cabeçalho da coluna do campo pelo qual você deseja classificar. Se os conjuntos de regras são agrupados, cada grupo é classificado individualmente.  
   
--   Para filtrar os conjuntos de regras pelo valor de um campo, clique no botão de filtro no cabeçalho da coluna do campo pelo qual você deseja filtrar. Marque as caixas de seleção dos valores que você deseja mostrar e desmarque as caixas de seleção dos valores que você deseja ocultar.
+- Para filtrar os conjuntos de regras pelo valor de um campo, clique no botão de filtro no cabeçalho da coluna do campo pelo qual você deseja filtrar. Marque as caixas de seleção dos valores que você deseja mostrar e desmarque as caixas de seleção dos valores que você deseja ocultar.

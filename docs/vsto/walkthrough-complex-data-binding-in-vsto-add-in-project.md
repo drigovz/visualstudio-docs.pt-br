@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f9346b448a64e6e1e89081d628865911897e37eb
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 0cb4fc7b43ab3ae48f83f4497fe6fd0042d0c51a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54867553"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070609"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>Passo a passo: Associação de dados complexos no projeto do suplemento do VSTO
   Você pode associar dados a controles de host e controles de formulários do Windows em projetos de suplemento do VSTO. Este passo a passo demonstra como adicionar controles a uma planilha do Microsoft Office Excel e ligar os controles a dados em tempo de execução.
@@ -37,22 +37,22 @@ ms.locfileid: "54867553"
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
+- [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] ou [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)].
 
--   Acesso ao executar uma instância do SQL Server 2005 ou SQL Server 2005 Express que tem o `AdventureWorksLT` o banco de dados de exemplo está anexado a ele. Você pode baixar o `AdventureWorksLT` do banco de dados do [site da CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Para obter mais informações sobre como anexar um banco de dados, consulte os tópicos a seguir:
+- Acesso ao executar uma instância do SQL Server 2005 ou SQL Server 2005 Express que tem o `AdventureWorksLT` o banco de dados de exemplo está anexado a ele. Você pode baixar o `AdventureWorksLT` do banco de dados do [site da CodePlex](http://go.microsoft.com/fwlink/?LinkId=115611). Para obter mais informações sobre como anexar um banco de dados, consulte os tópicos a seguir:
 
-    -   Para anexar um banco de dados usando o SQL Server Management Studio ou o SQL Server Management Studio Express, consulte [como: Anexar um banco de dados (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
+    - Para anexar um banco de dados usando o SQL Server Management Studio ou o SQL Server Management Studio Express, consulte [como: Anexar um banco de dados (SQL Server Management Studio)](/sql/relational-databases/databases/attach-a-database).
 
-    -   Para anexar um banco de dados usando a linha de comando, consulte [como: Anexar um arquivo de banco de dados para o SQL Server Express](/previous-versions/sql/).
+    - Para anexar um banco de dados usando a linha de comando, consulte [como: Anexar um arquivo de banco de dados para o SQL Server Express](/previous-versions/sql/).
 
 ## <a name="create-a-new-project"></a>Criar um novo projeto
  A primeira etapa é criar um projeto de suplemento do VSTO do Excel.
 
 ### <a name="to-create-a-new-project"></a>Para criar um novo projeto
 
-1.  Criar um projeto de suplemento do VSTO do Excel com o nome **preenchendo planilhas de um banco de dados**, usando o Visual Basic ou C#.
+1. Criar um projeto de suplemento do VSTO do Excel com o nome **preenchendo planilhas de um banco de dados**, usando o Visual Basic ou c#.
 
      Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -94,27 +94,27 @@ ms.locfileid: "54867553"
 
 ### <a name="to-add-the-list-object-dataset-and-table-adapter"></a>Para adicionar o objeto de lista, o conjunto de dados e o adaptador de tabela
 
-1.  No `ThisAddIn` classe, declare os controles a seguir para exibir o `Address` tabela do `AdventureWorksLTDataSet` conjunto de dados.
+1. No `ThisAddIn` classe, declare os controles a seguir para exibir o `Address` tabela do `AdventureWorksLTDataSet` conjunto de dados.
 
      [!code-csharp[Trin_ExcelAddInDatabase#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#1)]
      [!code-vb[Trin_ExcelAddInDatabase#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#1)]
 
-2.  No `ThisAddIn_Startup` método, adicione o seguinte código para inicializar o conjunto de dados e preencher o conjunto de dados com informações da `AdventureWorksLTDataSet` conjunto de dados.
+2. No `ThisAddIn_Startup` método, adicione o seguinte código para inicializar o conjunto de dados e preencher o conjunto de dados com informações da `AdventureWorksLTDataSet` conjunto de dados.
 
      [!code-csharp[Trin_ExcelAddInDatabase#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#2)]
      [!code-vb[Trin_ExcelAddInDatabase#2](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#2)]
 
-3.  Adicione o seguinte código ao método de `ThisAddIn_Startup` . Isso gera um item de host que estende a planilha. Para obter mais informações, consulte [documentos de estender o Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
+3. Adicione o seguinte código ao método de `ThisAddIn_Startup` . Isso gera um item de host que estende a planilha. Para obter mais informações, consulte [documentos de estender o Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
      [!code-csharp[Trin_ExcelAddInDatabase#3](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#3)]
      [!code-vb[Trin_ExcelAddInDatabase#3](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#3)]
 
-4.  Criar um intervalo e adicione o <xref:Microsoft.Office.Tools.Excel.ListObject> controle.
+4. Criar um intervalo e adicione o <xref:Microsoft.Office.Tools.Excel.ListObject> controle.
 
      [!code-csharp[Trin_ExcelAddInDatabase#4](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#4)]
      [!code-vb[Trin_ExcelAddInDatabase#4](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#4)]
 
-5.  Associar o objeto da lista `AdventureWorksLTDataSet` usando o <xref:System.Windows.Forms.BindingSource>. Passar os nomes das colunas que você deseja associar ao objeto da lista.
+5. Associar o objeto da lista `AdventureWorksLTDataSet` usando o <xref:System.Windows.Forms.BindingSource>. Passar os nomes das colunas que você deseja associar ao objeto da lista.
 
      [!code-csharp[Trin_ExcelAddInDatabase#5](../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs#5)]
      [!code-vb[Trin_ExcelAddInDatabase#5](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb#5)]
@@ -124,7 +124,7 @@ ms.locfileid: "54867553"
 
 ### <a name="to-test-the-vsto-add-in"></a>Para testar o suplemento do VSTO
 
--   Pressione **F5**.
+- Pressione **F5**.
 
      Um <xref:Microsoft.Office.Tools.Excel.ListObject> controle chamado `addressListObject` é criado na planilha. Ao mesmo tempo, um objeto de conjunto de dados chamado `adventureWorksLTDataSet` e uma <xref:System.Windows.Forms.BindingSource> denominado `addressBindingSource` são adicionados ao projeto. O <xref:Microsoft.Office.Tools.Excel.ListObject> está associado a <xref:System.Windows.Forms.BindingSource>, que por sua vez é associado ao objeto de conjunto de dados.
 

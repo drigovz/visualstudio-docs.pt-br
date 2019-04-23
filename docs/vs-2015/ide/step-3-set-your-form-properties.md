@@ -1,5 +1,5 @@
 ---
-title: 'Etapa 3: definir as propriedades do formulário | Microsoft Docs'
+title: 'Etapa 3: Defina as propriedades do formulário | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,19 +9,19 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4a93dfca4681f93d0d2a5c45b189fd34c8dccca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 676ea11188b7b55f3e929280d2b1c67166e37fdc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782243"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067242"
 ---
 # <a name="step-3-set-your-form-properties"></a>Etapa 3: Definir as propriedades do formulário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Em seguida, use a janela **Propriedades** para alterar a aparência do seu formulário.  
   
- ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para uma versão em vídeo deste tópico, consulte o [Tutorial 1: criar um Visualizador de Imagens no Visual Basic – Vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou o [Tutorial 1: criar um Visualizador de Imagens em C# – Vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.  
+ ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")para uma versão em vídeo deste tópico, consulte [Tutorial 1: Criar um visualizador de imagens no Visual Basic – vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205209) ou [Tutorial 1: Criar um visualizador de imagens em c# – vídeo 1](http://go.microsoft.com/fwlink/?LinkId=205199). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.  
   
 ### <a name="to-set-your-form-properties"></a>Para definir suas propriedades de formulário  
   
@@ -64,14 +64,14 @@ Em seguida, use a janela **Propriedades** para alterar a aparência do seu formu
   
 7. Antes de seguir para a próxima etapa, interrompa o programa, pois a IDE não permitirá que você altere seu programa quando executar. Lembre-se de que você pode usar qualquer um dos métodos a seguir para parar seu programa.  
   
-   -   Na barra de ferramentas, clique no botão **Parar Depuração**.  
+   - Na barra de ferramentas, clique no botão **Parar Depuração**.  
   
-   -   Na barra de menus, escolha **Depurar**, **Parar Depuração**.  
+   - Na barra de menus, escolha **Depurar**, **Parar Depuração**.  
   
-   -   Clique no botão X no canto superior da janela **Form1**.  
+   - Clique no botão X no canto superior da janela **Form1**.  
   
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar  
   
--   Para acessar a próxima etapa do tutorial, consulte [Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
+- Para ir para a próxima etapa do tutorial, confira [Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel](../ide/step-4-lay-out-your-form-with-a-tablelayoutpanel-control.md).  
   
--   Para retornar à etapa anterior do tutorial, consulte [Etapa 2: Executar o programa](../ide/step-2-run-your-program.md).
+- Para retornar à etapa anterior do tutorial, confira [Etapa 2: Executar o programa](../ide/step-2-run-your-program.md).

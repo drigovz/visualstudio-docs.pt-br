@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: 147e9cc66518372e042230a30c16588ab719cb1c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: acab2df1ff39d5f245baf27642f1ab71104671a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661575"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069777"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Criar um banco de dados SQL usando um designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,16 +41,16 @@ ms.locfileid: "59661575"
   
  Durante essa explicação passo a passo, você explorará as seguintes tarefas:  
   
--   [Criar um projeto e um arquivo de banco de dados local](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewSQLDB)  
+- [Criar um projeto e um arquivo de banco de dados local](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewSQLDB)  
   
--   [Criar tabelas, colunas, chaves primárias e chaves estrangeiras](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewTbls)  
+- [Criar tabelas, colunas, chaves primárias e chaves estrangeiras](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_CreateNewTbls)  
   
--   [Preencher as tabelas com dados](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_Populating)  
+- [Preencher as tabelas com dados](../data-tools/create-a-sql-database-by-using-a-designer.md#BKMK_Populating)  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para concluir este passo a passo, certifique-se de que você tenha o SQL Server Data Tools instalado. Sobre o **modo de exibição** menu, você deverá ver **Pesquisador de objetos do SQL Server**. Se não estiver, vá para **adicionar ou remover programas**, clique em **Visual Studio 2015**, selecione **alteração**e marque a caixa ao lado **doSQLServerDataTools**.  
   
-##  <a name="BKMK_CreateNewSQLDB"></a> Criar um projeto e um arquivo de banco de dados local  
+## <a name="BKMK_CreateNewSQLDB"></a> Criar um projeto e um arquivo de banco de dados local  
   
 #### <a name="to-create-a-project-and-a-database-file"></a>Para criar um projeto e um arquivo de banco de dados  
   
@@ -72,22 +72,22 @@ ms.locfileid: "59661575"
   
    Abrindo-se a janela de propriedades do banco de dados, é possível exibir sua cadeia de conexão e o local do arquivo .mdf principal. Você verá que o arquivo de banco de dados está na pasta do projeto.  
   
--   No Visual Studio, selecione **modo de exibição** > **SQL Server Object Explorer** se essa janela não estiver aberta. Abra a janela Propriedades, expandindo a **conexões de dados** nó, abrindo o menu de atalho de SampleDatabase e, em seguida, selecionando **propriedades**.  
+- No Visual Studio, selecione **modo de exibição** > **SQL Server Object Explorer** se essa janela não estiver aberta. Abra a janela Propriedades, expandindo a **conexões de dados** nó, abrindo o menu de atalho de SampleDatabase e, em seguida, selecionando **propriedades**.  
   
--   Como alternativa, você pode selecionar **modo de exibição** > **Gerenciador de servidores**, se essa janela não estiver aberta. Abra a janela Propriedades, expandindo a **conexões de dados** nó. Abra o menu de atalho de SampleDatabase e, em seguida, selecione **propriedades**.  
+- Como alternativa, você pode selecionar **modo de exibição** > **Gerenciador de servidores**, se essa janela não estiver aberta. Abra a janela Propriedades, expandindo a **conexões de dados** nó. Abra o menu de atalho de SampleDatabase e, em seguida, selecione **propriedades**.  
   
-##  <a name="BKMK_CreateNewTbls"></a> Criar tabelas, colunas, chaves primárias e chaves estrangeiras  
+## <a name="BKMK_CreateNewTbls"></a> Criar tabelas, colunas, chaves primárias e chaves estrangeiras  
  Nesta seção, você criará algumas tabelas, uma chave primária em cada tabela e algumas linhas de dados de exemplo. Na próxima explicação passo a passo, você terá uma idea de como essas informações podem ser exibidas em um aplicativo. Você também criará uma chave estrangeira para especificar como os registros em uma tabela podem corresponder aos registros na outra tabela.  
   
 #### <a name="to-create-the-customers-table"></a>Para criar a tabela Customers  
   
-1.  Na **Gerenciador de servidores** ou **Pesquisador de objetos do SQL Server**, expanda o **conexões de dados** nó e, em seguida, expanda o **SampleDatabase**nó.  
+1. Na **Gerenciador de servidores** ou **Pesquisador de objetos do SQL Server**, expanda o **conexões de dados** nó e, em seguida, expanda o **SampleDatabase**nó.  
   
-2.  Abra o menu de atalho **tabelas**e, em seguida, selecione **adicionar nova tabela**.  
+2. Abra o menu de atalho **tabelas**e, em seguida, selecione **adicionar nova tabela**.  
   
      O **Designer de Tabela** é aberto e mostra uma grade com uma linha padrão, que representa uma única coluna na tabela que você está criando. Adicionando linhas à grade, você adicionará colunas na tabela.  
   
-3.  Na grade, adicione uma linha para cada uma das seguintes entradas:  
+3. Na grade, adicione uma linha para cada uma das seguintes entradas:  
   
     |Nome da coluna|Tipo de dados|Permitir nulos|  
     |-----------------|---------------|-----------------|  
@@ -96,11 +96,11 @@ ms.locfileid: "59661575"
     |`ContactName`|`nvarchar (50)`|Verdadeiro (marcado)|  
     |`Phone`|`nvarchar (24)`|Verdadeiro (marcado)|  
   
-4.  Abra o menu de atalho para o `CustomerID` de linha e, em seguida, selecione **definir chave primária**.  
+4. Abra o menu de atalho para o `CustomerID` de linha e, em seguida, selecione **definir chave primária**.  
   
-5.  Abra o menu de atalho da linha padrão e, em seguida, selecione **excluir**.  
+5. Abra o menu de atalho da linha padrão e, em seguida, selecione **excluir**.  
   
-6.  Nomeie a tabela Clientes atualizando a primeira linha no painel de script de acordo com o seguinte exemplo:  
+6. Nomeie a tabela Clientes atualizando a primeira linha no painel de script de acordo com o seguinte exemplo:  
   
     ```  
     CREATE TABLE [dbo].[Customers]  
@@ -110,15 +110,15 @@ ms.locfileid: "59661575"
   
      ![Designer de tabela](../data-tools/media/raddata-table-designer.png "raddata Designer de tabela")  
   
-7.  No canto superior esquerdo dos **Designer de tabela**, selecione o **atualização** botão.  
+7. No canto superior esquerdo dos **Designer de tabela**, selecione o **atualização** botão.  
   
-8.  No **atualizações de banco de dados de visualização** caixa de diálogo, selecione o **Atualizar banco de dados** botão.  
+8. No **atualizações de banco de dados de visualização** caixa de diálogo, selecione o **Atualizar banco de dados** botão.  
   
      As alterações são salvas no arquivo do banco de dados local.  
   
 #### <a name="to-create-the-orders-table"></a>Para criar a tabela Orders  
   
-1.  Adicione outra tabela e uma linha para cada entrada na seguinte tabela:  
+1. Adicione outra tabela e uma linha para cada entrada na seguinte tabela:  
   
     |Nome da coluna|Tipo de dados|Permitir nulos|  
     |-----------------|---------------|-----------------|  
@@ -127,64 +127,64 @@ ms.locfileid: "59661575"
     |`OrderDate`|`datetime`|Verdadeiro (marcado)|  
     |`OrderQuantity`|`int`|Verdadeiro (marcado)|  
   
-2.  Definir **OrderID** como a chave primária e, em seguida, exclui a linha padrão.  
+2. Definir **OrderID** como a chave primária e, em seguida, exclui a linha padrão.  
   
-3.  Nomeie a tabela Orders atualizando a primeira linha no painel de script de acordo com o seguinte exemplo:  
+3. Nomeie a tabela Orders atualizando a primeira linha no painel de script de acordo com o seguinte exemplo:  
   
     ```  
     CREATE TABLE [dbo].[Orders]  
     ```  
   
-4.  No canto superior esquerdo dos **Designer de tabela**, selecione o **atualização** botão.  
+4. No canto superior esquerdo dos **Designer de tabela**, selecione o **atualização** botão.  
   
-5.  No **atualizações de banco de dados de visualização** caixa de diálogo, selecione o **Atualizar banco de dados** botão.  
+5. No **atualizações de banco de dados de visualização** caixa de diálogo, selecione o **Atualizar banco de dados** botão.  
   
      As alterações são salvas no arquivo do banco de dados local.  
   
 #### <a name="to-create-a-foreign-key"></a>Para criar uma chave estrangeira  
   
-1.  No painel de contexto no lado direito da grade, abra o menu de atalho **chaves estrangeiras**e, em seguida, selecione **adicionar nova chave estrangeira**, como mostra a ilustração a seguir.  
+1. No painel de contexto no lado direito da grade, abra o menu de atalho **chaves estrangeiras**e, em seguida, selecione **adicionar nova chave estrangeira**, como mostra a ilustração a seguir.  
   
      ![Adicionar uma chave estrangeira no Designer de tabela](../data-tools/media/foreignkey.png "ForeignKey")  
   
-2.  Na caixa de texto que aparece, substitua **ToTable** com `Customers`.  
+2. Na caixa de texto que aparece, substitua **ToTable** com `Customers`.  
   
-3.  No painel de T-SQL, atualize a última linha para coincidir com o exemplo a seguir:  
+3. No painel de T-SQL, atualize a última linha para coincidir com o exemplo a seguir:  
   
     ```  
     CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])  
     ```  
   
-4.  No canto superior esquerdo dos **Designer de tabela**, selecione o **atualização** botão.  
+4. No canto superior esquerdo dos **Designer de tabela**, selecione o **atualização** botão.  
   
-5.  No **atualizações de banco de dados de visualização** caixa de diálogo, selecione o **Atualizar banco de dados** botão.  
+5. No **atualizações de banco de dados de visualização** caixa de diálogo, selecione o **Atualizar banco de dados** botão.  
   
      As alterações são salvas no arquivo do banco de dados local.  
   
-##  <a name="BKMK_Populating"></a> Preencher as tabelas com dados  
+## <a name="BKMK_Populating"></a> Preencher as tabelas com dados  
   
 #### <a name="to-populate-the-tables-with-data"></a>Para popular as tabelas com dados  
   
-1.  Na **Gerenciador de servidores** ou **SQL Server Object Explorer**, expanda o nó para o banco de dados de exemplo.  
+1. Na **Gerenciador de servidores** ou **SQL Server Object Explorer**, expanda o nó para o banco de dados de exemplo.  
   
-2.  Abra o menu de atalho para o **tabelas** nó, selecione **atualize**e, em seguida, expanda o **tabelas** nó.  
+2. Abra o menu de atalho para o **tabelas** nó, selecione **atualize**e, em seguida, expanda o **tabelas** nó.  
   
-3.  Abra o menu de atalho para a tabela clientes e, em seguida, selecione **Mostrar dados da tabela**.  
+3. Abra o menu de atalho para a tabela clientes e, em seguida, selecione **Mostrar dados da tabela**.  
   
-4.  Adicione os dados desejados para pelo menos três clientes.  
+4. Adicione os dados desejados para pelo menos três clientes.  
   
      É possível especificar cinco caracteres desejados como IDs de cliente, mas escolha pelo menos um do qual é possível se lembrar para uso posteriormente neste procedimento.  
   
-5.  Abra o menu de atalho da tabela Orders e, em seguida, selecione **Mostrar dados da tabela**.  
+5. Abra o menu de atalho da tabela Orders e, em seguida, selecione **Mostrar dados da tabela**.  
   
-6.  Adicione dados para pelo menos três pedidos.  
+6. Adicione dados para pelo menos três pedidos.  
   
     > [!IMPORTANT]
     >  Verifique se todas as IDs e as quantidades de pedido são inteiros e se cada ID do cliente corresponde a um valor especificado na coluna CustomerID da tabela Customers.  
   
-7.  Na barra de menus, selecione **arquivo** > **Salvar tudo**.  
+7. Na barra de menus, selecione **arquivo** > **Salvar tudo**.  
   
-8.  Na barra de menus, selecione **arquivo** > **fechar solução**.  
+8. Na barra de menus, selecione **arquivo** > **fechar solução**.  
   
     > [!NOTE]
     >  Como prática recomendada, é possível fazer backup do arquivo de banco de dados recém-criado copiando-o e colando a cópia em outro local ou dando à cópia um nome diferente.  

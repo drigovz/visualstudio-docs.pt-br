@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 46d2005ae22828a01a03141a870acec4e23a785d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a78025bd11e56b001514f580acca18b7d21d5424
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755351"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067047"
 ---
 # <a name="cpu-usage"></a>Uso da CPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,19 +27,19 @@ Quando você precisa investigar problemas de desempenho no aplicativo, um bom co
   
  o hub de Desempenho e Diagnóstico oferece várias outras opções para executar e gerenciar a sessão de diagnóstico. Por exemplo, é possível executar a ferramenta **Uso da CPU** em computadores locais ou remotos ou em um simulador ou emulador. Você pode analisar o desempenho de um projeto aberto no Visual Studio, anexado a um aplicativo em execução ou iniciar um aplicativo instalado por meio da Windows Store. Para obter mais informações, consulte [executar ferramentas de criação de perfil sem depuração](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)  
   
-##  <a name="BKMK_Collect_CPU_usage_data"></a> Coletar dados de uso da CPU  
+## <a name="BKMK_Collect_CPU_usage_data"></a> Coletar dados de uso da CPU  
   
 1. No Visual Studio, defina a configuração da solução como **Versão** e escolha o destino da implantação.  
   
     ![Selecionar a versão e o computador local](../profiling/media/cpuuse-selectreleaselocalmachine.png "CPUUSE_SelectReleaseLocalMachine")  
   
-   -   Executar o aplicativo no modo **Versão** fornece uma melhor exibição do desempenho real do aplicativo.  
+   - Executar o aplicativo no modo **Versão** fornece uma melhor exibição do desempenho real do aplicativo.  
   
-   -   Executar o aplicativo no computador local replica melhor a execução do aplicativo instalado.  
+   - Executar o aplicativo no computador local replica melhor a execução do aplicativo instalado.  
   
-   -   Se você estiver coletando dados de um dispositivo remoto, execute o aplicativo diretamente no dispositivo e não usando uma Conexão de Área de Trabalho Remota.  
+   - Se você estiver coletando dados de um dispositivo remoto, execute o aplicativo diretamente no dispositivo e não usando uma Conexão de Área de Trabalho Remota.  
   
-   -   Para aplicativos Windows Phone, a coleta de dados diretamente do **Dispositivo** fornece os dados mais precisos.  
+   - Para aplicativos Windows Phone, a coleta de dados diretamente do **Dispositivo** fornece os dados mais precisos.  
   
 2. No menu **Depurar**, escolha **Criador de Perfil de Desempenho...**.  
   
@@ -59,10 +59,10 @@ Quando você precisa investigar problemas de desempenho no aplicativo, um bom co
   
 ## <a name="analyze-the-cpu-usage-report"></a>Analise o relatório de uso da CPU  
   
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> A árvore de chamadas de Uso da CPU  
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> A árvore de chamadas de Uso da CPU  
  Para começar a compreender as informações da árvore de chamadas, escolha novamente o segmento `GetMaxNumberButton_Click`, e veja os detalhes da árvore de chamadas.  
   
-####  <a name="BKMK_Call_tree_structure"></a> Estrutura da árvore de chamadas  
+#### <a name="BKMK_Call_tree_structure"></a> Estrutura da árvore de chamadas  
  ![GetMaxNumberButton&#95;Clique na árvore de chamada](../profiling/media/cpu-use-wt-getmaxnumbercalltree-annotated.png "CPU_USE_WT_GetMaxNumberCallTree_annotated")  
   
 |||  
@@ -72,7 +72,7 @@ Quando você precisa investigar problemas de desempenho no aplicativo, um bom co
 |![Etapa 3](../profiling/media/procguid-3.png "ProcGuid_3")|Os filhos do nó de segundo nível são métodos e rotinas assíncronas do código de usuário que são chamados ou criados pelo sistema de segundo nível e código do framework.|  
 |![Etapa 4](../profiling/media/procguid-4.png "ProcGuid_4")|Os nós filhos de um método só contêm dados das chamadas do método pai. Quando **Mostrar Código Externo** é desabilitado, os métodos de aplicativo também podem conter um nó **[Código Externo]**.|  
   
-####  <a name="BKMK_External_Code"></a> Código externo  
+#### <a name="BKMK_External_Code"></a> Código externo  
  O código externo é uma função nos componentes do sistema e do framework executados pelo código que você grava. O código externo inclui funções que iniciam e param o aplicativo, elaboram a interface do usuário, controlam a segmentação e fornecem ao aplicativo outros serviços de nível inferior. Na maioria dos casos, você não se interessará pelo código externo, então, a árvore de chamadas de Uso da CPU coletará as funções externas de um método de usuário em um nó de **[Código Externo]**.  
   
  Quando desejar exibir os caminhos de chamada do código externo, escolha **Mostrar Código Externo** na lista **Exibição de filtro** e escolha **Aplicar**.  
@@ -87,7 +87,7 @@ Quando você precisa investigar problemas de desempenho no aplicativo, um bom co
   
  ![Pesquisar código externo aninhado](../profiling/media/cpu-use-wt-showexternalcodetoowide-found.png "CPU_USE_WT_ShowExternalCodeTooWide_Found")  
   
-###  <a name="BKMK_Call_tree_data_columns"></a> Colunas de dados da árvore de chamadas  
+### <a name="BKMK_Call_tree_data_columns"></a> Colunas de dados da árvore de chamadas  
   
 |||  
 |-|-|  
@@ -97,7 +97,7 @@ Quando você precisa investigar problemas de desempenho no aplicativo, um bom co
 |**CPU própria (ms)**|O número de milissegundos gastos em chamadas para a função no intervalo de tempo escolhido e as funções chamadas pela função.|  
 |**Módulo**|O nome do módulo que contém a função ou o número de módulos que contêm as funções em um nó de [Código Externo].|  
   
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funções assíncronas na árvore de chamadas de Uso da CPU  
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funções assíncronas na árvore de chamadas de Uso da CPU  
  Quando o compilador encontra um método assíncrono, ele cria uma classe oculta para controlar o método de execução. Conceitualmente, a classe é uma máquina de estado que inclui uma lista de funções geradas pelo compilador que chamam corretamente as operações do método original de modo assíncrono, os retornos de chamadas, o agendador e os iteradores necessários a eles. Quando o método original é chamado por um método pai, o tempo de execução remove o método do contexto de execução do pai e executa os métodos da classe oculta no contexto do código do sistema e do framework que controla a execução do aplicativo. Os métodos assíncronos são geralmente, mas nem sempre, executados em uma ou mais segmentos diferentes. Esse código é mostrado na árvore de chamadas de Uso da CPU como filhos do nó **[Código Externo]** logo abaixo do nó superior da árvore.  
   
  Para ver isso em nosso exemplo, escolha novamente o segmento `GetMaxNumberAsyncButton_Click` na linha de tempo.  
@@ -108,8 +108,8 @@ Quando você precisa investigar problemas de desempenho no aplicativo, um bom co
   
  ![Árvore de chamadas expandida GetMaxNumberAsyncButton&#95;Click](../profiling/media/cpu-use-wt-getmaxnumberasync-expandedcalltree.png "CPU_USE_WT_GetMaxNumberAsync_ExpandedCallTree")  
   
--   `MainPage::GetMaxNumberAsyncButton_Click` faz muito pouco; gerencia uma lista de valores da tarefa, computa o máximo de resultados e exibe a saída.  
+- `MainPage::GetMaxNumberAsyncButton_Click` faz muito pouco; gerencia uma lista de valores da tarefa, computa o máximo de resultados e exibe a saída.  
   
--   `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` mostra a atividade necessária para agendar e iniciar as 48 tarefas que encapsulam a chamada para `GetNumberAsync`.  
+- `MainPage+<GetMaxNumberAsyncButton_Click>d__3::MoveNext` mostra a atividade necessária para agendar e iniciar as 48 tarefas que encapsulam a chamada para `GetNumberAsync`.  
   
--   `MainPage::<GetNumberAsync>b__b` mostra a atividade das tarefas que chamam `GetNumber`.
+- `MainPage::<GetNumberAsync>b__b` mostra a atividade das tarefas que chamam `GetNumber`.

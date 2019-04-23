@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2ca7b4254ac359158b9cf42600b28ef533372813
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2b0ec545defec941d9a59001841d8bea443aa522
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925763"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071857"
 ---
 # <a name="link-model-elements-and-work-items"></a>Vincular elementos de modelo e itens de trabalho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,108 +63,108 @@ Acompanhe tarefas, casos de teste, bugs, requisitos, problemas e outros trabalho
 > [!WARNING]
 >  Você já deve estar conectado ao TFS fonte de código de controle (SCC) para criar ou vincular a um item de trabalho. Se você tentar abrir uma conexão em um SCC diferentes do TFS, o Visual Studio fecha automaticamente a solução atual. Certifique-se de que você já estiver conectado ao SCC apropriado antes de tentar criar ou vincular a um item de trabalho. Em versões posteriores do Visual Studio, os comandos de menu não estão disponíveis se você não estiver conectado a um SCC.  
   
--   [Conectar a um projeto de equipe](#ConnectTFS)  
+- [Conectar a um projeto de equipe](#ConnectTFS)  
   
--   [Vincular um elemento de modelo para um novo item de trabalho](#LinkNew)  
+- [Vincular um elemento de modelo para um novo item de trabalho](#LinkNew)  
   
--   [Vincular um elemento de modelo a um item de trabalho existente](#LinkExisting)  
+- [Vincular um elemento de modelo a um item de trabalho existente](#LinkExisting)  
   
--   [Exibir itens de trabalho vinculado a um elemento de modelo](#OpenWorkItem)  
+- [Exibir itens de trabalho vinculado a um elemento de modelo](#OpenWorkItem)  
   
--   [Exibir elementos de modelo vinculado a um item de trabalho](#ViewLinkedModels)  
+- [Exibir elementos de modelo vinculado a um item de trabalho](#ViewLinkedModels)  
   
--   [Excluir links entre elementos de modelo e itens de trabalho](#RemoveLinks)  
+- [Excluir links entre elementos de modelo e itens de trabalho](#RemoveLinks)  
   
--   [Solução de problemas](#Troubleshooting)  
+- [Solução de problemas](#Troubleshooting)  
   
-##  <a name="ConnectTFS"></a> Conectar a um projeto de equipe  
+## <a name="ConnectTFS"></a> Conectar a um projeto de equipe  
  Você deve primeiro se conectar ao seu projeto de equipe para criar, exibir ou remover links.  
   
-1.  Sobre o **Team** menu, escolha **gerenciar conexões** para mostrar a janela do Team Explorer.  
+1. Sobre o **Team** menu, escolha **gerenciar conexões** para mostrar a janela do Team Explorer.  
   
-2.  Se o projeto correto não for exibido, no Team Explorer, escolha **gerenciar conexões** e, em seguida, escolha **conectar-se ao projeto de equipe**. Em seguida, escolha os projetos corretos ou o servidor, se necessário.  
+2. Se o projeto correto não for exibido, no Team Explorer, escolha **gerenciar conexões** e, em seguida, escolha **conectar-se ao projeto de equipe**. Em seguida, escolha os projetos corretos ou o servidor, se necessário.  
   
-3.  Na **Team Explorer**, escolha o projeto no qual você deseja criar, vincular ou exibir itens de trabalho.  
+3. Na **Team Explorer**, escolha o projeto no qual você deseja criar, vincular ou exibir itens de trabalho.  
   
-##  <a name="LinkNew"></a> Vincular um elemento de modelo para um novo item de trabalho  
+## <a name="LinkNew"></a> Vincular um elemento de modelo para um novo item de trabalho  
   
-1.  Verifique se que você está conectado à instância do TFS que você deseja usar.  
+1. Verifique se que você está conectado à instância do TFS que você deseja usar.  
   
-2.  No diagrama de modelagem ou no **Gerenciador de modelos UML**, abra o menu de atalho para o elemento de modelo.  
+2. No diagrama de modelagem ou no **Gerenciador de modelos UML**, abra o menu de atalho para o elemento de modelo.  
   
-3.  Escolher **Criar Item de trabalho** e o tipo de item de trabalho que você deseja criar.  
+3. Escolher **Criar Item de trabalho** e o tipo de item de trabalho que você deseja criar.  
   
-4.  No formulário do item de trabalho, preencha os campos. Escolher **Salvar Item de trabalho**.  
+4. No formulário do item de trabalho, preencha os campos. Escolher **Salvar Item de trabalho**.  
   
      O Visual Studio vincula o elemento de modelo ao novo item de trabalho. Um ícone é exibido em ou próximo ao elemento de modelo.  
   
 > [!WARNING]
 >  Você já deve estar conectado ao TFS fonte de código de controle (SCC) para criar ou vincular a um item de trabalho. Se você tentar abrir uma conexão em um SCC diferentes do TFS, o Visual Studio fecha automaticamente a solução atual. Certifique-se de que você já estiver conectado ao SCC apropriado antes de tentar criar ou vincular a um item de trabalho. Em versões posteriores do Visual Studio, os comandos de menu não estão disponíveis se você não estiver conectado a um SCC.  
   
-##  <a name="LinkExisting"></a> Vincular um elemento de modelo a um item de trabalho existente  
+## <a name="LinkExisting"></a> Vincular um elemento de modelo a um item de trabalho existente  
  Ao vincular elementos de modelo a itens de trabalho, comece pelo elemento de modelo, e não pelo item de trabalho.  
   
-1.  Verifique se que você está conectado à instância do TFS que você deseja usar.  
+1. Verifique se que você está conectado à instância do TFS que você deseja usar.  
   
-2.  No diagrama de modelagem ou no **Gerenciador de modelos UML**, abra o menu de atalho para o elemento de modelo. Escolher **Link para o Item de trabalho**. Em seguida, selecione seu projeto na **projeto** campo.  
+2. No diagrama de modelagem ou no **Gerenciador de modelos UML**, abra o menu de atalho para o elemento de modelo. Escolher **Link para o Item de trabalho**. Em seguida, selecione seu projeto na **projeto** campo.  
   
-3.  Escolha um ou mais itens de trabalho para vincular ao elemento de modelo seguindo uma destas etapas:  
+3. Escolha um ou mais itens de trabalho para vincular ao elemento de modelo seguindo uma destas etapas:  
   
-    -   Escolha uma consulta no **consulta salva**.  
+    - Escolha uma consulta no **consulta salva**.  
   
-    -   Digite as IDs de um ou mais itens de trabalho, separados por espaços, no **IDs**.  
+    - Digite as IDs de um ou mais itens de trabalho, separados por espaços, no **IDs**.  
   
-    -   Digite uma palavra ou frase em **título contém**.  
+    - Digite uma palavra ou frase em **título contém**.  
   
-4.  Escolher **localizar**.  
+4. Escolher **localizar**.  
   
-5.  Na lista de itens de trabalho, selecione o item de trabalho ou os itens de trabalho que você deseja vincular.  
+5. Na lista de itens de trabalho, selecione o item de trabalho ou os itens de trabalho que você deseja vincular.  
   
      Quando você terminar, o **itens de trabalho** propriedade do elemento de modelo mostra um número maior do que antes. Um ícone também é exibido em ou próximo ao elemento de modelo.  
   
 > [!WARNING]
 >  Você já deve estar conectado ao TFS fonte de código de controle (SCC) para criar ou vincular a um item de trabalho. Se você tentar abrir uma conexão em um SCC diferentes do TFS, o Visual Studio fecha automaticamente a solução atual. Certifique-se de que você já estiver conectado ao SCC apropriado antes de tentar criar ou vincular a um item de trabalho. Em versões posteriores do Visual Studio, os comandos de menu não estão disponíveis se você não estiver conectado a um SCC.  
   
-##  <a name="OpenWorkItem"></a> Exibir itens de trabalho vinculado a um elemento de modelo  
+## <a name="OpenWorkItem"></a> Exibir itens de trabalho vinculado a um elemento de modelo  
   
-1.  Na **Team Explorer**, verifique se você está conectado ao projeto de equipe onde os itens de trabalho estão vinculados ao elemento de modelo.  
+1. Na **Team Explorer**, verifique se você está conectado ao projeto de equipe onde os itens de trabalho estão vinculados ao elemento de modelo.  
   
-2.  No diagrama de modelagem ou no **Gerenciador de modelos UML**, abra o menu de atalho para o elemento de modelo. Escolher **exibir itens de trabalho** para exibir a lista de itens de trabalho vinculados.  
+2. No diagrama de modelagem ou no **Gerenciador de modelos UML**, abra o menu de atalho para o elemento de modelo. Escolher **exibir itens de trabalho** para exibir a lista de itens de trabalho vinculados.  
   
     > [!NOTE]
     >  Somente os itens de trabalho do servidor conectado são exibidos. Se você não vir quaisquer itens de trabalho, verifique se você estiver conectado ao servidor correto em **Team Explorer**.  
   
-##  <a name="ViewLinkedModels"></a> Exibir elementos de modelo vinculado a um item de trabalho  
+## <a name="ViewLinkedModels"></a> Exibir elementos de modelo vinculado a um item de trabalho  
  Você pode exibir diagramas de modelagem e os elementos que estão vinculados a um item de trabalho no Visual Studio Team Services e no Team Foundation Server 2012 ou posterior. Por exemplo, um item de trabalho talvez esteja vinculado a modelos de classe que mostram o design de novas classes que serão implementadas.  
   
-1.  Na **Team Explorer**, verifique se você está conectado ao projeto de equipe onde os elementos de modelo estão vinculados ao item de trabalho.  
+1. Na **Team Explorer**, verifique se você está conectado ao projeto de equipe onde os elementos de modelo estão vinculados ao item de trabalho.  
   
     > [!NOTE]
     >  Só é possível usar o Team Explorer, e não o Team Web Access, para exibir elementos de modelo vinculados. Verifique se o workspace está mapeado para o projeto de modelagem que contém os diagramas ou os elementos de modelagem. Se não tiver um workspace, você deverá criá-lo. Ver [solução de problemas](#Troubleshooting) e [criar e trabalhar com espaços de trabalho](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
-2.  Abra o item de trabalho, escolha **Links**. Sob **Link de modelo**, abra o menu de atalho para o elemento de modelo vinculado. Escolher **Abrir Item vinculado**.  
+2. Abra o item de trabalho, escolha **Links**. Sob **Link de modelo**, abra o menu de atalho para o elemento de modelo vinculado. Escolher **Abrir Item vinculado**.  
   
      ![Elemento de modelo vinculado aberto de um item de trabalho](../modeling/media/workitem-openlinkedmodelelement.png "WorkItem_OpenLinkedModelElement")  
   
-##  <a name="RemoveLinks"></a> Excluir links entre elementos de modelo e itens de trabalho  
+## <a name="RemoveLinks"></a> Excluir links entre elementos de modelo e itens de trabalho  
  Remova um item de trabalho vinculado com base no elemento de modelo. Isso remove corretamente o link recíproco para esse elemento de modelo do item de trabalho. Do contrário, se você começar pelo item de trabalho, o link recíproco do elemento de modelo para o item de trabalho não será excluído.  
   
-1.  No diagrama de modelagem ou no **Gerenciador de modelos UML**, abra o menu de atalho para o elemento de modelo.  
+1. No diagrama de modelagem ou no **Gerenciador de modelos UML**, abra o menu de atalho para o elemento de modelo.  
   
-2.  Escolher **remover itens de trabalho**.  
+2. Escolher **remover itens de trabalho**.  
   
      \- ou -  
   
-    1.  Escolher **propriedades**, em seguida, **itens de trabalho** onde o número de itens de trabalho vinculados é exibido.  
+    1. Escolher **propriedades**, em seguida, **itens de trabalho** onde o número de itens de trabalho vinculados é exibido.  
   
-    2.  No **itens de trabalho** propriedade, escolha o botão de reticências **[...]** .  
+    2. No **itens de trabalho** propriedade, escolha o botão de reticências **[...]** .  
   
         > [!NOTE]
         >  Somente itens de trabalho no servidor atual são exibidos. Se a lista estiver vazia, mas o número de itens de trabalho não for zero, verifique se você está conectado ao servidor correto em **Team Explorer**.  
   
-3.  Sob **remover Links para itens de trabalho**, desmarque os itens selecionados que você deseja desvincular. Escolha **OK**.  
+3. Sob **remover Links para itens de trabalho**, desmarque os itens selecionados que você deseja desvincular. Escolha **OK**.  
   
-##  <a name="Troubleshooting"></a> Solução de problemas  
+## <a name="Troubleshooting"></a> Solução de problemas  
   
 |**Problema**|**Possível causa**|**Resolução**|  
 |---------------|------------------------|--------------------|  

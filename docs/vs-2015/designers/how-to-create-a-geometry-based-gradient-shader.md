@@ -9,27 +9,27 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 555fe986267ce8cd88a5beea6f57cef2ba810156
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797531"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071714"
 ---
-# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Como criar um sombreador de gradiente com base na geometria
+# <a name="how-to-create-a-geometry-based-gradient-shader"></a>Como: Criar um sombreador de gradiente com base na geometria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este documento demonstra como usar o Designer de Sombreador e a Directed Graph Shader Language para criar um sombreador de gradiente com base na geometria. Esse sombreador ajusta a escala de um valor de cor RGB constante pela altura de cada ponto de um objeto no espaço de mundo.  
   
  Este documento demonstra essas atividades:  
   
--   Adicionar nós a um grafo de sombreador  
+- Adicionar nós a um grafo de sombreador  
   
--   Configurar propriedades de nó  
+- Configurar propriedades de nó  
   
--   Desconectar nós  
+- Desconectar nós  
   
--   Conectar nós  
+- Conectar nós  
   
 ## <a name="creating-a-geometry-based-gradient-shader"></a>Criar um sombreador de gradiente com base na geometria  
  Você pode implementar um sombreador com base na geometria, incorporando a posição do pixel ao sombreador. Em linguagens de sombreamento, um pixel contém mais informações do que apenas a cor e o local em uma tela 2D. Um pixel, conhecido como um *fragmento* em alguns sistemas, é uma coleção de valores que descrevem a superfície que corresponde a um pixel. O sombreador descrito neste documento utiliza a altura de cada pixel de um objeto 3D no espaço de mundo para afetar a cor de saída final do fragmento.  
@@ -73,8 +73,8 @@ Este documento demonstra como usar o Designer de Sombreador e a Directed Graph S
   
 ## <a name="see-also"></a>Consulte também  
  [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Como exportar um sombreador](../designers/how-to-export-a-shader.md)   
+ [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md)   
  [Como: Modelo de terreno 3D](../designers/how-to-model-3-d-terrain.md)   
- [Como criar um sombreador de textura em escala de cinza](../designers/how-to-create-a-grayscale-texture-shader.md)   
+ [Como: Criar um sombreador de textura em escala de cinza](../designers/how-to-create-a-grayscale-texture-shader.md)   
  [Designer de Sombreador](../designers/shader-designer.md)   
  [Nós do Designer de Sombreador](../designers/shader-designer-nodes.md)

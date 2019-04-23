@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4bad52a02cb87f611293283deb3743c6e148e688
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: e293a0136e6ae2d8b6a6747201e484fdea43f91e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54875908"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067229"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-runtime"></a>Passo a passo: Atualizar os controles em uma faixa de opções em tempo de execução
 
@@ -34,13 +34,13 @@ O exemplo recebe dados do banco de dados de exemplo Northwind para preencher uma
 
 Esta explicação passo a passo ilustra as seguintes tarefas:
 
--   Crie um novo projeto de suplemento do VSTO do Outlook.
+- Crie um novo projeto de suplemento do VSTO do Outlook.
 
--   Crie um grupo de faixa de opções personalizado.
+- Crie um grupo de faixa de opções personalizado.
 
--   Adicione o grupo personalizado a uma guia interna.
+- Adicione o grupo personalizado a uma guia interna.
 
--   Atualize controles na faixa de opções em tempo de execução.
+- Atualize controles na faixa de opções em tempo de execução.
 
 > [!NOTE]
 > Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
@@ -49,9 +49,9 @@ Esta explicação passo a passo ilustra as seguintes tarefas:
 
 Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
 
--   [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
+- [!INCLUDE[vsto_vsprereq](../vsto/includes/vsto-vsprereq-md.md)]
 
--   Microsoft Outlook
+- Microsoft Outlook
 
 ## <a name="create-a-new-outlook-vsto-add-in-project"></a>Criar um novo projeto de suplemento do VSTO do Outlook
 
@@ -59,11 +59,11 @@ Primeiro, crie um projeto de suplemento do VSTO do Outlook.
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>Para criar um novo projeto de suplemento do VSTO do Outlook
 
-1.  Na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], crie um projeto de suplemento do VSTO do Outlook com o nome **Ribbon_Update_At_Runtime**.
+1. Na [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)], crie um projeto de suplemento do VSTO do Outlook com o nome **Ribbon_Update_At_Runtime**.
 
-2.  No **novo projeto** caixa de diálogo, selecione **criar diretório para solução**.
+2. No **novo projeto** caixa de diálogo, selecione **criar diretório para solução**.
 
-3.  Salve o projeto no diretório de projeto padrão.
+3. Salve o projeto no diretório de projeto padrão.
 
      Para obter mais informações, confira [Como: Criar projetos do Office no Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md).
 
@@ -73,25 +73,25 @@ A faixa de opções para este exemplo será exibido quando um usuário compõe u
 
 ### <a name="to-design-a-custom-group"></a>Para criar um grupo personalizado
 
-1.  No menu **Projeto**, clique em **Adicionar Novo Item**.
+1. No menu **Projeto**, clique em **Adicionar Novo Item**.
 
-2.  No **Adicionar Novo Item** caixa de diálogo, selecione **faixa de opções (Visual Designer)**.
+2. No **Adicionar Novo Item** caixa de diálogo, selecione **faixa de opções (Visual Designer)**.
 
-3.  Altere o nome da nova faixa de opções para **CustomerRibbon**e, em seguida, clique em **Add**.
+3. Altere o nome da nova faixa de opções para **CustomerRibbon**e, em seguida, clique em **Add**.
 
      O *CustomerRibbon.cs* ou *CustomerRibbon.vb* arquivo é aberto no Designer de faixa de opções e exibe um guia padrão e um grupo.
 
-4.  Clique para selecioná-lo, o Designer de faixa de opções.
+4. Clique para selecioná-lo, o Designer de faixa de opções.
 
-5.  No **propriedades** janela, clique na seta suspensa ao lado de **RibbonType** propriedade e clique **Microsoft.Outlook.Mail.Compose**.
+5. No **propriedades** janela, clique na seta suspensa ao lado de **RibbonType** propriedade e clique **Microsoft.Outlook.Mail.Compose**.
 
      Isso permite que a faixa de opções que aparecem quando o usuário compõe uma nova mensagem de email no Outlook.
 
-6.  No Designer de faixa de opções, clique em **Group1** para selecioná-lo.
+6. No Designer de faixa de opções, clique em **Group1** para selecioná-lo.
 
-7.  No **propriedades** janela, defina **rótulo** para **compras do cliente**.
+7. No **propriedades** janela, defina **rótulo** para **compras do cliente**.
 
-8.  Do **controles de faixa de opções do Office** guia da **caixa de ferramentas**, arraste uma **ComboBox** até o **compras do cliente** grupo.
+8. Do **controles de faixa de opções do Office** guia da **caixa de ferramentas**, arraste uma **ComboBox** até o **compras do cliente** grupo.
 
 9. Clique em **ComboBox1** para selecioná-lo.
 
@@ -111,17 +111,17 @@ Uma guia interna é uma guia que já está na faixa de opções do Outlook Explo
 
 ### <a name="to-add-the-custom-group-to-a-built-in-tab"></a>Para adicionar o grupo personalizado a uma guia interna
 
-1.  Clique o **TabAddins (interno)** tab para selecioná-lo.
+1. Clique o **TabAddins (interno)** tab para selecioná-lo.
 
-2.  No **propriedades** janela, expanda o **ControlId** propriedade e, em seguida, defina **OfficeId** para **TabNewMailMessage**.
+2. No **propriedades** janela, expanda o **ControlId** propriedade e, em seguida, defina **OfficeId** para **TabNewMailMessage**.
 
      Isso adiciona o **compras do cliente** grupo para o **mensagens** guia da faixa de opções que aparece em uma nova mensagem de email.
 
-3.  Clique o **compras do cliente** grupo para selecioná-lo.
+3. Clique o **compras do cliente** grupo para selecioná-lo.
 
-4.  No **propriedades** janela, expanda o **posição** propriedade, clique na seta suspensa ao lado de **PositionType** propriedade e, em seguida, clique  **BeforeOfficeId**.
+4. No **propriedades** janela, expanda o **posição** propriedade, clique na seta suspensa ao lado de **PositionType** propriedade e, em seguida, clique  **BeforeOfficeId**.
 
-5.  Defina as **OfficeId** propriedade **GroupClipboard**.
+5. Defina as **OfficeId** propriedade **GroupClipboard**.
 
      Isso posiciona o **compras do cliente** grupo antes do **área de transferência** grupo dos **mensagens** guia.
 
@@ -131,31 +131,31 @@ Use o **fontes de dados** janela para adicionar um conjunto de dados tipado ao s
 
 ### <a name="to-create-the-data-source"></a>Para criar a fonte de dados
 
-1.  No menu **Dados**, clique em **Adicionar Nova Fonte de Dados**.
+1. No menu **Dados**, clique em **Adicionar Nova Fonte de Dados**.
 
      Isso inicia o **Data Source Configuration Wizard**.
 
-2.  Selecione **banco de dados**e, em seguida, clique em **próxima**.
+2. Selecione **banco de dados**e, em seguida, clique em **próxima**.
 
-3.  Selecione **Dataset**e, em seguida, clique em **próxima**.
+3. Selecione **Dataset**e, em seguida, clique em **próxima**.
 
-4.  Selecione uma conexão de dados para o banco de dados do Microsoft SQL Server Compact 4.0 de exemplo Northwind, ou adicionar uma nova conexão usando o **nova Conexão** botão.
+4. Selecione uma conexão de dados para o banco de dados do Microsoft SQL Server Compact 4.0 de exemplo Northwind, ou adicionar uma nova conexão usando o **nova Conexão** botão.
 
-5.  Depois que uma conexão foi selecionado ou criado, clique em **próxima**.
+5. Depois que uma conexão foi selecionado ou criado, clique em **próxima**.
 
-6.  Clique em **próxima** para salvar a cadeia de conexão.
+6. Clique em **próxima** para salvar a cadeia de conexão.
 
-7.  Sobre o **Choose Your Database Objects** página, expanda **tabelas**.
+7. Sobre o **Choose Your Database Objects** página, expanda **tabelas**.
 
-8.  Marque a caixa de seleção ao lado de cada uma das seguintes tabelas:
+8. Marque a caixa de seleção ao lado de cada uma das seguintes tabelas:
 
-    1.  **Clientes**
+    1. **Clientes**
 
-    2.  **Detalhes do pedido**
+    2. **Detalhes do pedido**
 
-    3.  **Pedidos**
+    3. **Pedidos**
 
-    4.  **Produtos**
+    4. **Produtos**
 
 9. Clique em **Finalizar**.
 
@@ -163,11 +163,11 @@ Use o **fontes de dados** janela para adicionar um conjunto de dados tipado ao s
 
 Use o modelo de objeto da faixa de opções para executar as seguintes tarefas:
 
--   Adicionar nomes de cliente para o **clientes** caixa de combinação.
+- Adicionar nomes de cliente para o **clientes** caixa de combinação.
 
--   Adicionar controles menu e o botão para o **produtos comprados** menu que representam pedidos de vendas e produtos vendidos.
+- Adicionar controles menu e o botão para o **produtos comprados** menu que representam pedidos de vendas e produtos vendidos.
 
--   Popular para, assunto e corpo campos de novas mensagens de email usando dados das **clientes** caixa de combinação e **produtos comprados** menu.
+- Popular para, assunto e corpo campos de novas mensagens de email usando dados das **clientes** caixa de combinação e **produtos comprados** menu.
 
 ### <a name="to-update-controls-in-the-custom-group-by-using-the-ribbon-object-model"></a>Para atualizar os controles no grupo personalizado usando o modelo de objeto da faixa de opções
 
@@ -257,31 +257,31 @@ Para criar uma mensagem de email de acompanhamento do cliente, selecione um clie
 
 ### <a name="to-test-the-controls-in-the-custom-group"></a>Para testar os controles no grupo personalizado
 
-1.  Pressione **F5** para executar o projeto.
+1. Pressione **F5** para executar o projeto.
 
      O Outlook inicia.
 
-2.  No Outlook, sobre o **arquivo** , aponte para **New**e, em seguida, clique em **mensagem de email**.
+2. No Outlook, sobre o **arquivo** , aponte para **New**e, em seguida, clique em **mensagem de email**.
 
      Ocorrem as seguintes ações:
 
-    -   Uma nova janela do Inspetor de mensagem de email é exibida.
+    - Uma nova janela do Inspetor de mensagem de email é exibida.
 
-    -   No **mensagem** guia da faixa de opções, o **compras do cliente** grupo aparece antes do **área de transferência** grupo.
+    - No **mensagem** guia da faixa de opções, o **compras do cliente** grupo aparece antes do **área de transferência** grupo.
 
-    -   O **clientes** caixa de combinação no grupo é atualizada com os nomes dos clientes no banco de dados Northwind.
+    - O **clientes** caixa de combinação no grupo é atualizada com os nomes dos clientes no banco de dados Northwind.
 
-3.  No **mensagem** guia da faixa de opções, no **compras do cliente** de grupo, selecione um cliente da **clientes** caixa de combinação.
+3. No **mensagem** guia da faixa de opções, no **compras do cliente** de grupo, selecione um cliente da **clientes** caixa de combinação.
 
      Ocorrem as seguintes ações:
 
-    -   O **produtos comprados** menu é atualizado para mostrar cada pedido de vendas para o cliente selecionado.
+    - O **produtos comprados** menu é atualizado para mostrar cada pedido de vendas para o cliente selecionado.
 
-    -   Cada submenu de ordem de venda é atualizada para mostrar os produtos adquiridos nessa ordem.
+    - Cada submenu de ordem de venda é atualizada para mostrar os produtos adquiridos nessa ordem.
 
-    -   Endereço de email do cliente selecionado é adicionado para o **para** linha da mensagem de email e o assunto e corpo da mensagem de email são preenchidos com texto.
+    - Endereço de email do cliente selecionado é adicionado para o **para** linha da mensagem de email e o assunto e corpo da mensagem de email são preenchidos com texto.
 
-4.  Clique o **compras de produtos** menu, aponte para qualquer pedido de vendas e, em seguida, clique em um produto da ordem de venda.
+4. Clique o **compras de produtos** menu, aponte para qualquer pedido de vendas e, em seguida, clique em um produto da ordem de venda.
 
      O nome do produto é adicionado ao corpo da mensagem de email.
 
@@ -289,11 +289,11 @@ Para criar uma mensagem de email de acompanhamento do cliente, selecione um clie
 
 Você pode aprender mais sobre como personalizar a interface do usuário do Office nesses tópicos:
 
--   Adicione com base no contexto da interface do usuário para qualquer personalização de nível de documento. Para obter mais informações, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md).
+- Adicione com base no contexto da interface do usuário para qualquer personalização de nível de documento. Para obter mais informações, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md).
 
--   Estenda um formulário personalizado ou padrão do Microsoft Office Outlook. Para obter mais informações, confira [Passo a passo: Criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
+- Estenda um formulário personalizado ou padrão do Microsoft Office Outlook. Para obter mais informações, confira [Passo a passo: Criar uma região de formulário do Outlook](../vsto/walkthrough-designing-an-outlook-form-region.md).
 
--   Adicione um painel de tarefas personalizado para o Outlook. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
+- Adicione um painel de tarefas personalizado para o Outlook. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
 
 ## <a name="see-also"></a>Consulte também
 

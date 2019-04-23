@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 42627b336bb83d915b2af96f0ee569a305212f6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b4c158c4ce6762b69f73a55915cc459f84cd7fff
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925424"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067151"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>Passo a passo: Como depurar erros de renderização devido ao sombreamento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,11 +23,11 @@ Este passo a passo demonstra como usar [!INCLUDE[vsprvs](../includes/vsprvs-md.m
   
  Este passo a passo demonstra como:  
   
--   Examine o documento de log de gráficos para identificar os pixels que mostram o problema.  
+- Examine o documento de log de gráficos para identificar os pixels que mostram o problema.  
   
--   Use o **histórico de Pixel de gráficos** janela para examinar o estado de pixel mais de perto.  
+- Use o **histórico de Pixel de gráficos** janela para examinar o estado de pixel mais de perto.  
   
--   Use o **depurador HLSL** para examinar os sombreadores de pixel e vértice.  
+- Use o **depurador HLSL** para examinar os sombreadores de pixel e vértice.  
   
 ## <a name="scenario"></a>Cenário  
  Coloração incorreta em objetos normalmente ocorre quando um sombreador de vértice passa um pixel informações incorretas ou incompletas do sombreador.  

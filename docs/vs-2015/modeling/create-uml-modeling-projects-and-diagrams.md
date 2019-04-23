@@ -25,12 +25,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b36c038194f20cecf1be59775c2261497a0fda8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a302feda3e6254667df797cdbef5d199886a4c0c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923708"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068321"
 ---
 # <a name="create-uml-modeling-projects-and-diagrams"></a>Criar projetos e diagramas de modelagem UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Os modelos de UML ajudam você a entende, discuta e criar sistemas de software. 
 > [!NOTE]
 >  Há outro tipo de diagrama, o diagrama de classe do .NET, que é usado para visualizar o código do programa. Para obter mais informações, consulte [Projetando e exibindo Classes e tipos](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
-##  <a name="CreatingModelingDiagrams"></a> Criar um diagrama em um projeto de modelagem  
+## <a name="CreatingModelingDiagrams"></a> Criar um diagrama em um projeto de modelagem  
  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 #### <a name="to-create-a-diagram-and-add-it-to-a-project"></a>Criar um diagrama e adicioná-lo a um projeto  
@@ -61,9 +61,9 @@ Os modelos de UML ajudam você a entende, discuta e criar sistemas de software. 
   
      \- ou -  
   
-   1.  Selecione **criar um novo projeto de modelagem**e, em seguida, clique em **Okey**.  
+   1. Selecione **criar um novo projeto de modelagem**e, em seguida, clique em **Okey**.  
   
-   2.  No **criar novo projeto de modelagem** caixa de diálogo, digite um nome e local para o novo projeto e, em seguida, clique em **Okey**.  
+   2. No **criar novo projeto de modelagem** caixa de diálogo, digite um nome e local para o novo projeto e, em seguida, clique em **Okey**.  
   
         ![Criar caixa de diálogo Novo projeto de modelagem](../modeling/media/uml-createmodel.png "UML_CreateModel")  
   
@@ -73,16 +73,16 @@ Os modelos de UML ajudam você a entende, discuta e criar sistemas de software. 
   
 #### <a name="to-add-a-diagram-to-an-existing-modeling-project"></a>Para adicionar um diagrama em um projeto de modelagem existente  
   
-1.  Na **Gerenciador de soluções**, clique na modelagem de nó do projeto.  
+1. Na **Gerenciador de soluções**, clique na modelagem de nó do projeto.  
   
     > [!NOTE]
     >  O projeto de modelagem contém uma pasta de definição de modelo chamada **ModelDefinition**.  
   
-2.  No menu **Projeto**, clique em **Adicionar Novo Item**.  
+2. No menu **Projeto**, clique em **Adicionar Novo Item**.  
   
-3.  No **Adicionar Novo Item –**  *\<nome do projeto >* caixa de diálogo **modelos**, clique em de modelagem diagrama tipo, por exemplo, **UML Diagrama de componente**.  
+3. No **Adicionar Novo Item –**  *\<nome do projeto >* caixa de diálogo **modelos**, clique em de modelagem diagrama tipo, por exemplo, **UML Diagrama de componente**.  
   
-4.  Digite um nome para o diagrama e, em seguida, clique em **adicionar**.  
+4. Digite um nome para o diagrama e, em seguida, clique em **adicionar**.  
   
      O diagrama de modelagem abre e aparece no projeto de modelagem.  
   
@@ -91,22 +91,22 @@ Os modelos de UML ajudam você a entende, discuta e criar sistemas de software. 
   
 #### <a name="to-create-a-blank-modeling-project"></a>Para criar um projeto de modelagem em branco  
   
-1.  No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
+1. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-2.  No **novo projeto** caixa de diálogo **modelos instalados**, clique em **projetos de modelagem**.  
+2. No **novo projeto** caixa de diálogo **modelos instalados**, clique em **projetos de modelagem**.  
   
-3.  Na janela do meio, clique em **projeto de modelagem**.  
+3. Na janela do meio, clique em **projeto de modelagem**.  
   
-4.  Nomeie o projeto e especifique um local na **nome** e **local** caixas.  
+4. Nomeie o projeto e especifique um local na **nome** e **local** caixas.  
   
-5.  No **solução** caixa, selecione **adicionar à solução** para adicionar o novo projeto a uma solução já abertas; ou **criar nova solução** fechar qualquer solução aberta e adicionar o projeto para uma nova solução.  
+5. No **solução** caixa, selecione **adicionar à solução** para adicionar o novo projeto a uma solução já abertas; ou **criar nova solução** fechar qualquer solução aberta e adicionar o projeto para uma nova solução.  
   
-##  <a name="RemovingModelingDiagrams"></a> Removendo diagramas de um projeto de modelagem  
+## <a name="RemovingModelingDiagrams"></a> Removendo diagramas de um projeto de modelagem  
  Você pode excluir permanentemente um diagrama, ou você pode excluir temporariamente um diagrama de um projeto e, em seguida, restaurá-lo.  
   
 #### <a name="to-permanently-delete-a-diagram-from-a-project"></a>Para excluir permanentemente um diagrama de um projeto  
   
--   Na **Gerenciador de soluções**, clique no arquivo principal que representa o diagrama e, em seguida, clique em **excluir**.  
+- Na **Gerenciador de soluções**, clique no arquivo principal que representa o diagrama e, em seguida, clique em **excluir**.  
   
      O diagrama é removido do projeto e o sistema de arquivos. Os elementos mostrados no diagrama não são removidos do **Gerenciador de modelos UML**.  
   
@@ -115,7 +115,7 @@ Os modelos de UML ajudam você a entende, discuta e criar sistemas de software. 
   
 #### <a name="to-temporarily-exclude-a-diagram-from-a-project"></a>Para excluir temporariamente um diagrama de um projeto  
   
--   Na **Gerenciador de soluções**, clique no arquivo de diagrama e, em seguida, clique em **excluir do projeto**.  
+- Na **Gerenciador de soluções**, clique no arquivo de diagrama e, em seguida, clique em **excluir do projeto**.  
   
      O diagrama é removido do projeto. Ele não é removido do sistema de arquivos.  
   
@@ -124,30 +124,30 @@ Os modelos de UML ajudam você a entende, discuta e criar sistemas de software. 
   
 #### <a name="to-restore-a-temporarily-excluded-diagram-to-a-project"></a>Para restaurar um diagrama excluído temporariamente em um projeto  
   
-1.  Na **Gerenciador de soluções**, clique na modelagem de nó do projeto.  
+1. Na **Gerenciador de soluções**, clique na modelagem de nó do projeto.  
   
     > [!NOTE]
     >  O projeto de modelagem contém uma pasta de definição de modelo chamada **ModelDefinition**.  
   
-2.  Sobre o **Project** menu, clique em **Add Existing Item**.  
+2. Sobre o **Project** menu, clique em **Add Existing Item**.  
   
-3.  No **Adicionar Item existente** caixa de diálogo, localize o arquivo de diagrama, selecione o arquivo e, em seguida, clique em **Add**.  
+3. No **Adicionar Item existente** caixa de diálogo, localize o arquivo de diagrama, selecione o arquivo e, em seguida, clique em **Add**.  
   
      O diagrama de modelagem abre e aparece no projeto de modelagem.  
   
     > [!NOTE]
     >  Cada diagrama tem um par de arquivos no sistema de arquivos. Não selecione um arquivo que tem a extensão `.layout`. Além disso, o Visual Studio não suporta a adição de diagramas UML existentes para vários projetos de modelagem. Cada arquivo de diagrama deve ser aberto dentro do projeto de modelagem no qual ele foi criado. Isso ocorre porque um diagrama UML mostra uma exibição de um modelo que pertence a seu projeto de modelagem.  
   
-##  <a name="NonModelDiagrams"></a> Diagramas que não necessitam de projetos de modelagem  
+## <a name="NonModelDiagrams"></a> Diagramas que não necessitam de projetos de modelagem  
  Os seguintes tipos de diagramas não fazem parte de um projeto de modelagem:  
   
--   Diagramas de classe são criados como modos de exibição do código-fonte. Não estão relacionadas a diagramas de classe UML. Para obter mais informações, consulte [Projetando e exibindo Classes e tipos](../ide/designing-and-viewing-classes-and-types.md).  
+- Diagramas de classe são criados como modos de exibição do código-fonte. Não estão relacionadas a diagramas de classe UML. Para obter mais informações, consulte [Projetando e exibindo Classes e tipos](../ide/designing-and-viewing-classes-and-types.md).  
   
--   Mapas de código. Ver [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md).  
+- Mapas de código. Ver [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md).  
   
--   Diagramas que não são diagramas UML ou diagramas de camada, como linguagens específicas do domínio.  
+- Diagramas que não são diagramas UML ou diagramas de camada, como linguagens específicas do domínio.  
   
-##  <a name="TroubleshootingModelingProjects"></a> Solução de problemas de diagramas e projetos de modelagem  
+## <a name="TroubleshootingModelingProjects"></a> Solução de problemas de diagramas e projetos de modelagem  
  A tabela a seguir descreve problemas que podem ocorrer com como resolvê-los ou diagramas e projetos de modelagem:  
   
 |**Problema**|**Faz com que**|**Resolução**|  

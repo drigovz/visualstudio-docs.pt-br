@@ -16,12 +16,12 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a1be63ddbb7b040e7efe5ce5ee6876c4bf77cb36
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cfb85be224eadb25b2ec9b87ab480a15f235463f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925749"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070297"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>Erro: O computador remoto não conseguiu iniciar as comunicações DCOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Um erro DCOM ocorreu quando o computador remoto tentou se comunicar com o comput
   
  executando o Visual Studio. Esse erro pode ocorrer por várias razões:  
   
--   O computador local tem um firewall habilitado.  
+- O computador local tem um firewall habilitado.  
   
--   A autenticação do Windows do computador remoto para o computador local não está funcionando.  
+- A autenticação do Windows do computador remoto para o computador local não está funcionando.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-1.  Se o computador local tem o Firewall do Windows habilitado, consulte [definir configurar as ferramentas remotas no dispositivo](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) para obter instruções sobre como configurar o firewall para depuração local.  
+1. Se o computador local tem o Firewall do Windows habilitado, consulte [definir configurar as ferramentas remotas no dispositivo](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c) para obter instruções sobre como configurar o firewall para depuração local.  
   
-2.  Teste a autenticação do Windows tentando abrir um compartilhamento de arquivos no computador local do servidor remoto.  
+2. Teste a autenticação do Windows tentando abrir um compartilhamento de arquivos no computador local do servidor remoto.  
   
-3.  Para restaurar a autenticação do Windows, tente reiniciar os dois computadores. Examine os logs de eventos nos computadores local e remoto para encontrar erros de Kerberos e entre em contato com os administradores de domínio para problemas conhecidos.  
+3. Para restaurar a autenticação do Windows, tente reiniciar os dois computadores. Examine os logs de eventos nos computadores local e remoto para encontrar erros de Kerberos e entre em contato com os administradores de domínio para problemas conhecidos.  
   
 ## <a name="see-also"></a>Consulte também  
  [Configurar as ferramentas remotas no dispositivo](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

@@ -1,5 +1,5 @@
 ---
-title: Usando a estrutura de pacote gerenciado para implementar um tipo de projeto (C#) | Microsoft Docs
+title: Usando a estrutura de pacote gerenciado para implementar um tipo de projeto (c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-sdk
@@ -12,26 +12,26 @@ ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 caps.latest.revision: 21
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d83f26183c422d39e69dfe106443dae54f576899
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 86e250c5a5922df52acea7445c97862a00cdc826
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929391"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066826"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>Usando a estrutura de pacote gerenciado para implementar um tipo de projeto (C#)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Estrutura de pacote gerenciado (MPF) fornece as classes do C# você pode usar ou herdar de implementar seus próprios tipos de projeto. MPF implementa a muitas das interfaces do que Visual Studio espera um tipo de projeto para fornecer, deixando-o livre para se concentrar em como implementar as particularidades de seu tipo de projeto.  
+Estrutura de pacote gerenciado (MPF) fornece as classes do c# você pode usar ou herdar de implementar seus próprios tipos de projeto. MPF implementa a muitas das interfaces do que Visual Studio espera um tipo de projeto para fornecer, deixando-o livre para se concentrar em como implementar as particularidades de seu tipo de projeto.  
   
 ## <a name="using-the-mpf-project-source-code"></a>Usando o código-fonte MPF projeto  
  A estrutura de pacote gerenciado para projetos (MPFProj) fornece classes auxiliares para criar e gerenciar o novo sistema de projeto. Ao contrário de outras classes no MPF, as classes do projeto não estão incluídas nos assemblies que acompanham o Visual Studio. Em vez disso, as classes do projeto são fornecidas como código-fonte no [MPF de projetos 2013](http://mpfproj12.codeplex.com).  
   
  Para adicionar esse projeto à sua solução de VSPackage, faça o seguinte:  
   
-1.  Baixar os arquivos MPFProj *MPFProjectDir*.  
+1. Baixar os arquivos MPFProj *MPFProjectDir*.  
   
-2.  No *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, altere o seguinte bloco:  
+2. No *MPFProjectDir*\Dev10\Src\CSharp\ProjectBase.file, altere o seguinte bloco:  
   
 ```  
 <!-- Provide a default value for $(ProjectBasePath) -->  
@@ -40,11 +40,11 @@ Estrutura de pacote gerenciado (MPF) fornece as classes do C# você pode usar ou
   </PropertyGroup>  
 ```  
   
-1.  Crie um projeto de VSPackage.  
+1. Crie um projeto de VSPackage.  
   
-2.  Descarregue o projeto de VSPackage.  
+2. Descarregue o projeto de VSPackage.  
   
-3.  Editar o arquivo. csproj VSPackage adicionando o seguinte bloco antes das outras `<Import>` blocos:  
+3. Editar o arquivo. csproj VSPackage adicionando o seguinte bloco antes das outras `<Import>` blocos:  
   
 ```  
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />  
@@ -56,17 +56,17 @@ Estrutura de pacote gerenciado (MPF) fornece as classes do C# você pode usar ou
   </PropertyGroup>  
 ```  
   
-1.  Salvar o projeto.  
+1. Salvar o projeto.  
   
-2.  Feche e reabra a solução de VSPackage.  
+2. Feche e reabra a solução de VSPackage.  
   
-3.  Reabra o projeto de VSPackage. Você deve ver um novo diretório chamado ProjectBase.  
+3. Reabra o projeto de VSPackage. Você deve ver um novo diretório chamado ProjectBase.  
   
-4.  Adicione a seguinte referência ao projeto de VSPackage:  
+4. Adicione a seguinte referência ao projeto de VSPackage:  
   
      Microsoft.Build.Tasks.4.0  
   
-5.  Compile o projeto.  
+5. Compile o projeto.  
   
 ## <a name="hierarchy-classes"></a>Hierarquia de Classes  
  A tabela a seguir resume as classes do MPFProj que dão suporte a hierarquias de projeto. Para obter mais informações, consulte [seleção e hierarquias](../../extensibility/internals/hierarchies-and-selection.md).  

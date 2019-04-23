@@ -19,30 +19,30 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b31d5c7d22ae209b46bdd4c422f6c3e7473ec8e0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ae2bb442edbeb49de25b44056263607fa4f26111
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54758678"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60071636"
 ---
-# <a name="walkthrough-improving-ui-responsiveness-html"></a>Passo a passo: Melhorando a capacidade de resposta da interface de usuário (HTML)
+# <a name="walkthrough-improving-ui-responsiveness-html"></a>Passo a passo: Melhorando a capacidade de resposta da interface do usuário (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este passo a passo o orienta no processo de identificação e correção de um problema de desempenho usando o [Criador de perfil de capacidade de resposta de interface do usuário em HTML](../profiling/html-ui-responsiveness.md). O criador de perfil está disponível no Visual Studio para aplicativos universais do Windows e os aplicativos da Windows Store usando JavaScript. Neste cenário, você cria um aplicativo de teste de desempenho que atualiza os elementos DOM com muita frequência e usa o criador de perfil para identificar e corrigir esse problema.  
   
 ### <a name="creating-and-running-the-performance-test-app"></a>Criando e executando o aplicativo de teste de desempenho  
   
-1.  No Visual Studio, crie um novo projeto de JavaScript universal do Windows. (Selecione **Arquivo/Novo/Projeto**. Escolha **JavaScript** no painel esquerdo e depois escolha **Windows**, **Windows 10**, em seguida, **Universal** ou **Windows Phone**.  
+1. No Visual Studio, crie um novo projeto de JavaScript universal do Windows. (Selecione **Arquivo/Novo/Projeto**. Escolha **JavaScript** no painel esquerdo e depois escolha **Windows**, **Windows 10**, em seguida, **Universal** ou **Windows Phone**.  
   
-2.  > [!IMPORTANT]
+2. > [!IMPORTANT]
     >  Os resultados do diagnóstico mostrados neste tópico são mostrados para um aplicativo do Windows 8.  
   
-3.  Escolha um dos modelos de projeto em branco no painel central, como **Aplicativo em Branco**.  
+3. Escolha um dos modelos de projeto em branco no painel central, como **Aplicativo em Branco**.  
   
-4.  Na caixa **Nome**, especifique um nome como `JS_Perf_Tester` e escolha **OK**.  
+4. Na caixa **Nome**, especifique um nome como `JS_Perf_Tester` e escolha **OK**.  
   
-5.  No **Gerenciador de Soluções**, abra default.html e cole o seguinte código entre as marcas \<body>:  
+5. No **Gerenciador de Soluções**, abra default.html e cole o seguinte código entre as marcas \<body>:  
   
     ```html  
     <div class="wrapper">  
@@ -50,7 +50,7 @@ Este passo a passo o orienta no processo de identificação e correção de um p
     </div>  
     ```  
   
-6.  Abra default.css e adicione o seguinte código CSS:  
+6. Abra default.css e adicione o seguinte código CSS:  
   
     ```css  
     #content {  
@@ -59,7 +59,7 @@ Este passo a passo o orienta no processo de identificação e correção de um p
     }  
     ```  
   
-7.  Abra default.js e substitua todo o código por este:  
+7. Abra default.js e substitua todo o código por este:  
   
     ```javascript  
     (function () {  
@@ -148,7 +148,7 @@ Este passo a passo o orienta no processo de identificação e correção de um p
   
     ```  
   
-8.  Pressione a tecla F5 para iniciar a depuração. Verifique se o botão **Aguardando valores** aparece na página.  
+8. Pressione a tecla F5 para iniciar a depuração. Verifique se o botão **Aguardando valores** aparece na página.  
   
 9. Escolha **Aguardando valores** e verifique se o texto e a cor do botão são atualizados aproximadamente a cada segundo. Esse comportamento é esperado.  
   
@@ -204,9 +204,9 @@ Este passo a passo o orienta no processo de identificação e correção de um p
   
      Diversos fatos podem ser obtidos nos dados. Por exemplo:  
   
-    -   Cada evento `Timer`, codificado por cor para identificar um evento de script, inclui uma chamada para `document.createElement`, seguida por um cálculo de estilo e uma chamada para `style.backgroundColor` e `appendChild()`.  
+    - Cada evento `Timer`, codificado por cor para identificar um evento de script, inclui uma chamada para `document.createElement`, seguida por um cálculo de estilo e uma chamada para `style.backgroundColor` e `appendChild()`.  
   
-    -   No curto período de tempo selecionado (cerca de um a dois segundos), há um grande número de eventos `Timer`, `Layout` e `Paint` ocorrendo. Os eventos `Timer` ocorrem com muito mais frequência do que uma atualização por segundo, o que é visível depois que você executa o aplicativo e escolhe o botão **Aguardando valores**.  
+    - No curto período de tempo selecionado (cerca de um a dois segundos), há um grande número de eventos `Timer`, `Layout` e `Paint` ocorrendo. Os eventos `Timer` ocorrem com muito mais frequência do que uma atualização por segundo, o que é visível depois que você executa o aplicativo e escolhe o botão **Aguardando valores**.  
   
 10. Para investigar, escolha o link da função anônima para um dos eventos `Timer` no painel inferior esquerdo. A seguinte função é aberta em default.js:  
   
@@ -225,7 +225,7 @@ Este passo a passo o orienta no processo de identificação e correção de um p
   
 ### <a name="fixing-the-performance-issue"></a>Corrigindo o problema de desempenho  
   
-1.  Substitua a função `update()` pelo seguinte código:  
+1. Substitua a função `update()` pelo seguinte código:  
   
     ```javascript  
     function update() {  
@@ -240,7 +240,7 @@ Este passo a passo o orienta no processo de identificação e correção de um p
   
      Essa versão fixa do código inclui um atraso de 1000 milissegundos, que é omitido da versão anterior do código, resultando no uso de um valor de atraso padrão. Pelos dados do criador de perfis, parece que o valor padrão é zero milissegundos, o que faz com que a função `setValues()` seja executada com muita frequência.  
   
-2.  Execute o criador de perfil de capacidade de resposta de IU em HTML novamente e verifique o gráfico de utilização da CPU. Você descobrirá que os eventos excessivos acabaram, e a utilização da CPU caiu para perto de zero. Corrigido!  
+2. Execute o criador de perfil de capacidade de resposta de IU em HTML novamente e verifique o gráfico de utilização da CPU. Você descobrirá que os eventos excessivos acabaram, e a utilização da CPU caiu para perto de zero. Corrigido!  
   
 ## <a name="see-also"></a>Consulte também  
  [Capacidade de Resposta de interface do usuário em HTML](../profiling/html-ui-responsiveness.md)

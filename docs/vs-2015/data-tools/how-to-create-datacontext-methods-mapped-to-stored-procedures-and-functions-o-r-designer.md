@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8485885cbba43ea9eaef76616607861c44c2ab24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b395b396ab182ca03be35cddc8d237506b43e39c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668776"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066605"
 ---
 # <a name="how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-or-designer"></a>Como: Criar métodos DataContext mapeados para procedimentos armazenados e funções (Designer Relacional de Objetos)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,17 +34,17 @@ Procedimentos armazenados e funções podem ser adicionadas para o [!INCLUDE[vs_
   
 #### <a name="to-create-datacontext-methods-that-return-automatically-generated-types"></a>Para criar métodos DataContext que retornam tipos gerados automaticamente  
   
-1.  No **Gerenciador de servidores**/**Gerenciador de banco de dados**, expanda o **procedimentos armazenados** nó do banco de dados que você está trabalhando.  
+1. No **Gerenciador de servidores**/**Gerenciador de banco de dados**, expanda o **procedimentos armazenados** nó do banco de dados que você está trabalhando.  
   
-2.  Localize o procedimento armazenado desejado e arraste-o para uma área vazia do [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+2. Localize o procedimento armazenado desejado e arraste-o para uma área vazia do [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
      O método <xref:System.Data.Linq.DataContext> é criado com um tipo de retorno gerado automaticamente e aparece no painel **Métodos**.  
   
 #### <a name="to-create-datacontext-methods-that-have-the-return-type-of-an-entity-class"></a>Para criar métodos DataContext com o tipo de retorno de uma classe de entidade  
   
-1.  No **Gerenciador de servidores**/**Gerenciador de banco de dados**, expanda o **procedimentos armazenados** nó do banco de dados que você está trabalhando.  
+1. No **Gerenciador de servidores**/**Gerenciador de banco de dados**, expanda o **procedimentos armazenados** nó do banco de dados que você está trabalhando.  
   
-2.  Localize o procedimento armazenado desejado e arraste-o para uma classe de entidade existente no [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
+2. Localize o procedimento armazenado desejado e arraste-o para uma classe de entidade existente no [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)].  
   
      O método <xref:System.Data.Linq.DataContext> é criado com o tipo de retorno da classe de entidade selecionada e aparece no painel **Métodos**.  
   

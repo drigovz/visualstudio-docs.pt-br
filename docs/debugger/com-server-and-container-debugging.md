@@ -21,33 +21,33 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 104af46114da44d3d4a4348e760bd24a2aab5412
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 40edce29e8d40310f6eab37309c4c2ca7eb8a85a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602046"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068893"
 ---
 # <a name="com-server-and-container-debugging"></a>Depuração de servidor COM e contêiner
 Os aplicativos COM executam um número de tarefas fora do controle direto do programador. A comunicação entre DLL, as contagens de uso em objetos e as operações da área de transferência são apenas algumas das áreas onde você pode encontrar comportamento inesperado. Quando isso acontece, a primeira etapa é rastrear a origem do problema.
 
  O depurador do Visual Studio oferece suporte à depuração em contêineres e servidores. Isso inclui a capacidade de depurar as chamadas de procedimento remoto (RPC).
 
-##  <a name="BKMK_COMServerandContainerintheSameSolution"></a> Depurando um servidor COM e um contêiner na mesma solução
+## <a name="BKMK_COMServerandContainerintheSameSolution"></a> Depurando um servidor COM e um contêiner na mesma solução
  Você pode depurar um servidor COM e um contêiner usando dois projetos dentro da mesma solução. Defina pontos de interrupção apropriados em cada projeto e depuração. Quando o contêiner faz uma chamada no servidor que atinge um ponto de interrupção, ele aguardará até que o código de servidor retorne (ou seja, até você concluir a depuração).
 
  Depurar um contêiner COM é semelhante a depurar um programa padrão. Uma diferença é quando você depura um evento que gera um retorno de chamada (por exemplo, arrastar dados sobre o aplicativo de contêineres). Nesse caso, você deve definir um ponto de interrupção na função de retorno de chamada.
 
-##  <a name="BKMK_ServerApplicationWithoutContainerInformation"></a> Depurando um aplicativo para servidores sem informações de contêiner
+## <a name="BKMK_ServerApplicationWithoutContainerInformation"></a> Depurando um aplicativo para servidores sem informações de contêiner
  Se você não tiver ou não desejar usar informações de depuração para seu aplicativo de contêiner, começar a depurar o aplicativo de servidor é um processo de três etapas:
 
-1.  Inicie a depuração do servidor como um aplicativo normal.
+1. Inicie a depuração do servidor como um aplicativo normal.
 
-2.  Defina pontos de interrupção como desejados.
+2. Defina pontos de interrupção como desejados.
 
-3.  Inicie o aplicativo de contêiner.
+3. Inicie o aplicativo de contêiner.
 
-##  <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> Depurando um aplicativo para servidores e isolamento de domínio (SDI)
+## <a name="BKMK_DebuggingaServerandDomainIsolationSDIApplication"></a> Depurando um aplicativo para servidores e isolamento de domínio (SDI)
  Se estiver depurando um aplicativo para servidores de SDI, especifique `/Embedding` ou `/Automation` na propriedade **Argumentos de linha de comando** na caixa de diálogo Páginas de Propriedades de *Projeto* de projetos C/C++, C# ou do Visual Basic.
 
  Com esses argumentos de linha de comando, o depurador pode iniciar o aplicativo de servidor como se tivesse sido iniciado de um contêiner. Iniciar o contêiner do Gerenciador de Programas ou do Gerenciador de Arquivos fará com que o contêiner use a instância do servidor iniciada no depurador.

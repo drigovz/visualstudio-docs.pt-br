@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e71239755cf7cf5d38f6e71568a0cd7be0f0d98
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 6af97740302d5e7053323b54ef11cbf1a279dd94
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649986"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066774"
 ---
 # <a name="graphics-event-list"></a>Lista de eventos do gráfico
 Use a lista de eventos de gráficos no analisador de gráficos do Visual Studio para explorar os eventos Direct3D registrados durante a renderização de um quadro do seu jogo ou aplicativo.
@@ -49,7 +49,7 @@ Use a lista de eventos de gráficos no analisador de gráficos do Visual Studio 
 
 ##### <a name="to-change-the-event-list-view-mode"></a>Para alterar o modo de exibição da lista de eventos
 
--   No **lista de eventos gráficos** janela acima da lista de eventos, localize a **exibição** lista suspensa e escolha o **linha do tempo** exibição ou a **otrabalhodeGPU** modo de exibição.
+- No **lista de eventos gráficos** janela acima da lista de eventos, localize a **exibição** lista suspensa e escolha o **linha do tempo** exibição ou a **otrabalhodeGPU** modo de exibição.
 
 ### <a name="filtering-events"></a>Filtrando eventos
  É possível usar a caixa Pesquisar, localizada no canto superior direito da janela **Lista de Eventos de Gráficos**, para filtrar a lista de eventos e incluir apenas eventos cujos nomes contenham palavras-chave específicas. Você pode especificar palavras-chave únicas como `Vertex`— conforme mostrado na ilustração anterior — ou várias palavras-chave, usando uma lista delimitada por ponto e vírgula como `Draw;Primitive`— que corresponde a eventos que tenham `Draw` ou `Primitive` em seus nomes. Pesquisas diferenciam espaço em branco — por exemplo, `VSSet` e `VS Set` são pesquisas diferentes — portanto, certifique-se de formar pesquisas com cuidado.

@@ -10,21 +10,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c01c71673640814006fe6771aa841852c247fd54
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.openlocfilehash: db9a8abb2b1013a7d11a4013d602e33592beff70
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "54965309"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070089"
 ---
 # <a name="source-control-configuration-details"></a>Detalhes de configuração de controle do código-fonte
 Para implementar o controle do código-fonte, você precisa configurar corretamente o sistema de projeto ou o editor para fazer o seguinte:
 
--   Solicitar permissão para fazer a transição para estado alterado
+- Solicitar permissão para fazer a transição para estado alterado
 
--   Solicitar permissão para salvar um arquivo
+- Solicitar permissão para salvar um arquivo
 
--   Solicitar permissão para adicionar, remover ou renomear arquivos no projeto
+- Solicitar permissão para adicionar, remover ou renomear arquivos no projeto
 
 ## <a name="request-permission-to-transition-to-changed-state"></a>Solicitar permissão para fazer a transição para estado alterado
  Um editor ou projeto deve solicitar permissão para fazer a transição para o estado de alteração (sujo) chamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2>. Cada editor que implementa <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A> deve chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> e receber aprovação para alterar o documento do ambiente antes de retornar `True` para <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData.IsDocDataDirty%2A>. Um projeto é essencialmente um editor para um arquivo de projeto e tem como resultado, a responsabilidade de mesma para implementar o acompanhamento de estado alterado para o arquivo de projeto como um editor de texto faz para seus arquivos. O ambiente manipula o estado alterado da solução, mas você deve lidar com o estado de alteração de qualquer objeto na solução faz referência, mas não armazena, como um arquivo de projeto ou seus itens. Em geral, se seu projeto ou o editor é responsável por gerenciar a persistência para um item, é responsável por implementar o acompanhamento de estado alterado.

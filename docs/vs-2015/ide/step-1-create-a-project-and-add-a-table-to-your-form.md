@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f716c279bce14a2a262578de090ed59290890f57
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: bec6c539963d54bfa1d866ccc4811425bba9e3a4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068568"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>Etapa 1: Criar um projeto e adicionar uma tabela ao formulário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,9 +31,9 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
   
 4. Na janela **Propriedades**, defina as propriedades de formulário a seguir.  
   
-   1.  Altere a propriedade **Texto** do formulário, de **Form1** para **Jogo da Memória**. Esse texto aparece na parte superior da janela do jogo.  
+   1. Altere a propriedade **Texto** do formulário, de **Form1** para **Jogo da Memória**. Esse texto aparece na parte superior da janela do jogo.  
   
-   2.  Defina o tamanho do formulário para 550 pixels de largura por 550 de altura. Você pode fazer isso definindo a propriedade **Tamanho** como **550, 550** ou arrastando o canto do formulário até visualizar o tamanho correto no canto inferior direito do IDE (ambiente de desenvolvimento integrado).  
+   2. Defina o tamanho do formulário para 550 pixels de largura por 550 de altura. Você pode fazer isso definindo a propriedade **Tamanho** como **550, 550** ou arrastando o canto do formulário até visualizar o tamanho correto no canto inferior direito do IDE (ambiente de desenvolvimento integrado).  
   
 5. Exiba a caixa de ferramentas escolhendo a guia **Caixa de Ferramentas** no lado esquerdo do IDE.  
   
@@ -60,19 +60,19 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
   
     Enquanto TableLayoutPanel estiver selecionado, abra a caixa de ferramentas e adicione um controle **Rótulo** (localizado na categoria **Controles Comuns**) à célula superior esquerda de TableLayoutPanel. O controle `Label` agora deve estar selecionado no IDE. Defina as propriedades a seguir para ele.  
   
-   1.  Verifique se a propriedade **BackColor** do rótulo está definida como **CornflowerBlue**.  
+   1. Verifique se a propriedade **BackColor** do rótulo está definida como **CornflowerBlue**.  
   
-   2.  Defina a propriedade **AutoSize** para **False**.  
+   2. Defina a propriedade **AutoSize** para **False**.  
   
-   3.  Defina a propriedade **Encaixar** como **Preenchimento**.  
+   3. Defina a propriedade **Encaixar** como **Preenchimento**.  
   
-   4.  Defina a propriedade **TextAlign** como **MiddleCenter** escolhendo o botão suspenso próximo à propriedade e escolhendo o botão do meio. Isso garante que o ícone apareça no meio da célula.  
+   4. Defina a propriedade **TextAlign** como **MiddleCenter** escolhendo o botão suspenso próximo à propriedade e escolhendo o botão do meio. Isso garante que o ícone apareça no meio da célula.  
   
-   5.  Escolha a propriedade **Fonte**. O botão reticências (…) deverá aparecer.  
+   5. Escolha a propriedade **Fonte**. O botão reticências (…) deverá aparecer.  
   
-   6.  Escolha o botão de reticências e defina o valor de **Fonte** como **Webdings**, o **Estilo da Fonte** como **Negrito** e o **Tamanho** para **72**.  
+   6. Escolha o botão de reticências e defina o valor de **Fonte** como **Webdings**, o **Estilo da Fonte** como **Negrito** e o **Tamanho** para **72**.  
   
-   7.  Defina a propriedade **Texto** do rótulo como a letra **c**.  
+   7. Defina a propriedade **Texto** do rótulo como a letra **c**.  
   
         A célula superior esquerda no TableLayoutPanel agora deve conter uma caixa preta centrada em um plano de fundo azul.  
   
@@ -91,6 +91,6 @@ A primeira etapa da criação de um jogo da memória é criar o projeto e adicio
   
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar  
   
--   Para ir para a próxima etapa do tutorial, consulte [Etapa 2: adicionar um objeto aleatório e uma lista de ícones](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
+- Para ir para a próxima etapa do tutorial, confira [Etapa 2: Adicionar um objeto aleatório e uma lista de ícones](../ide/step-2-add-a-random-object-and-a-list-of-icons.md).  
   
--   Para retornar ao tópico de visão geral, consulte [Tutorial 3: criar um jogo da memória](../ide/tutorial-3-create-a-matching-game.md).
+- Para retornar ao tópico de visão geral, confira [Tutorial 3: Criar um jogo](../ide/tutorial-3-create-a-matching-game.md).

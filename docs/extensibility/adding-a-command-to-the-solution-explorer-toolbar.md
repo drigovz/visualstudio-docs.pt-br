@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fff1187793350b52484bcac99021be7fc2845607
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: e6eadc98ccdc0960e4b4bc400a94f06b90fe89bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56717787"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069491"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>Adicionar um comando à barra de ferramentas do Gerenciador de soluções
 Este passo a passo mostra como adicionar um botão para o **Gerenciador de soluções** barra de ferramentas.
@@ -38,13 +38,13 @@ Este passo a passo mostra como adicionar um botão para o **Gerenciador de solu�
 ## <a name="add-a-button-to-the-solution-explorer-toolbar"></a>Adicionar um botão na barra de ferramentas do Gerenciador de soluções
  Esta seção do passo a passo mostra como adicionar um botão para o **Gerenciador de soluções** barra de ferramentas. Quando o botão é clicado, o código no método de retorno de chamada é executado.
 
-1.  No *ToolbarButtonPackage.vsct* arquivo, vá para o `<Symbols>` seção. O `<GuidSymbol>` nó contém o grupo de menus e o comando que foi gerado pelo modelo de pacote. Adicionar um `<IDSymbol>` elemento para este nó para declarar o grupo que manterá seu comando.
+1. No *ToolbarButtonPackage.vsct* arquivo, vá para o `<Symbols>` seção. O `<GuidSymbol>` nó contém o grupo de menus e o comando que foi gerado pelo modelo de pacote. Adicionar um `<IDSymbol>` elemento para este nó para declarar o grupo que manterá seu comando.
 
     ```xml
     <IDSymbol name="SolutionToolbarGroup" value="0x0190"/>
     ```
 
-2.  No `<Groups>` seção, após a entrada de grupo existente, definir o novo grupo que você declarou na etapa anterior.
+2. No `<Groups>` seção, após a entrada de grupo existente, definir o novo grupo que você declarou na etapa anterior.
 
     ```xml
     <Group guid="guidToolbarButtonPackageCmdSet"
@@ -55,7 +55,7 @@ Este passo a passo mostra como adicionar um botão para o **Gerenciador de solu�
 
      Definir o pai GUID:ID par como `guidSHLMainMenu` e `IDM_VS_TOOL_PROJWIN` coloca esse grupo na **Gerenciador de soluções** barra de ferramentas e definir um valor de alta prioridade coloca-o depois de outros grupos de comando.
 
-3.  No `<Buttons>` seção, altere a ID do pai do gerado `<Button>` entrada para refletir o grupo que você definiu na etapa anterior. Modificado `<Button>` elemento deve ter esta aparência:
+3. No `<Buttons>` seção, altere a ID do pai do gerado `<Button>` entrada para refletir o grupo que você definiu na etapa anterior. Modificado `<Button>` elemento deve ter esta aparência:
 
     ```xml
     <Button guid="guidToolbarButtonPackageCmdSet" id="ToolbarButtonId" priority="0x0100" type="Button">
@@ -67,11 +67,11 @@ Este passo a passo mostra como adicionar um botão para o **Gerenciador de solu�
     </Button>
     ```
 
-4.  Compile o projeto e comece a depuração. A instância experimental é exibida.
+4. Compile o projeto e comece a depuração. A instância experimental é exibida.
 
      O **Gerenciador de soluções** barra de ferramentas deve exibir o novo botão de comando para a direita dos botões existentes. O ícone do botão é o tachado.
 
-5.  Clique no botão novo.
+5. Clique no botão novo.
 
      Caixa de diálogo que tem a mensagem **ToolbarButtonPackage dentro SolutionToolbar.ToolbarButton.MenuItemCallback()** deve ser exibido.
 

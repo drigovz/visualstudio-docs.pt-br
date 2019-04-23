@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5dbe3c5810de40e19ab5abc3698a791388508283
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 6e5b27eaff0b462e257d1d972c5b950cd1f5ab1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525190"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066761"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>Acesso global a objetos em projetos do Office
   Quando você cria um projeto do Office, o Visual Studio gera automaticamente uma classe chamada `Globals` no projeto. Você pode usar o `Globals` classe para acessar vários itens de projeto diferente no tempo de execução de qualquer código no projeto.
@@ -57,13 +57,13 @@ ms.locfileid: "57525190"
 
 - Um objeto de fábrica que permite que você crie controles de faixa de opções e hospedar itens em tempo de execução em projetos que se destinam a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Você pode acessar esse objeto usando o `Globals.Factory` propriedade. Esse objeto é uma instância de uma classe que implemente um as interfaces a seguir:
 
-  -   <xref:Microsoft.Office.Tools.Factory>
+  - <xref:Microsoft.Office.Tools.Factory>
 
-  -   <xref:Microsoft.Office.Tools.Excel.Factory>
+  - <xref:Microsoft.Office.Tools.Excel.Factory>
 
-  -   <xref:Microsoft.Office.Tools.Outlook.Factory>
+  - <xref:Microsoft.Office.Tools.Outlook.Factory>
 
-  -   <xref:Microsoft.Office.Tools.Word.Factory>
+  - <xref:Microsoft.Office.Tools.Word.Factory>
 
   Por exemplo, você pode usar o `Globals.Sheet1` propriedade para inserir texto em um <xref:Microsoft.Office.Tools.Excel.NamedRange> control em `Sheet1` quando um usuário clica em um botão no painel de ações em um projeto de nível de documento para Excel.
 

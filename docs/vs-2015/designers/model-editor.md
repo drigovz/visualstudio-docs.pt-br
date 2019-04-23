@@ -12,12 +12,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9247eae19d32ecc21069836d52192e7d466de1b7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 370f6992fb044f5bd7f3593e63afeab46c82830b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54802834"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072286"
 ---
 # <a name="model-editor"></a>Editor de modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,13 +40,13 @@ Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vspr
   
 #### <a name="to-add-a-3-d-model-to-your-project"></a>Para adicionar um modelo 3D ao projeto  
   
-1.  No **Gerenciador de Soluções**, abra o menu de atalho do projeto ao qual você deseja adicionar a imagem e selecione **Adicionar**, **Novo Item**.  
+1. No **Gerenciador de Soluções**, abra o menu de atalho do projeto ao qual você deseja adicionar a imagem e selecione **Adicionar**, **Novo Item**.  
   
-2.  Na caixa de diálogo **Adicionar Novo Item**, em **Instalado**, selecione **Gráficos** e **Cena 3D (.fbx)**.  
+2. Na caixa de diálogo **Adicionar Novo Item**, em **Instalado**, selecione **Gráficos** e **Cena 3D (.fbx)**.  
   
-3.  Especifique o **Nome** do arquivo de modelo e a **Localização** em que deseja que ele seja criado.  
+3. Especifique o **Nome** do arquivo de modelo e a **Localização** em que deseja que ele seja criado.  
   
-4.  Escolha o botão **Adicionar**.  
+4. Escolha o botão **Adicionar**.  
   
 ### <a name="axis-orientation"></a>Orientação do eixo  
  O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] oferece suporte a cada orientação do eixo 3D e carrega as informações da orientação do eixo dos formatos do arquivo de modelo que oferecem suporte a ele. Se nenhuma orientação de eixo for especificada, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usará o sistema de coordenadas da direita por padrão. O **indicador de eixo** mostra a orientação atual do eixo no canto inferior direito da superfície de design. No **indicador de eixo**, vermelho representa o eixo x, verde representa o eixo y e azul representa o eixo z.  
@@ -132,7 +132,7 @@ Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vspr
 ### <a name="viewing-additional-geometry-details"></a>Exibindo detalhes adicionais de geometria  
  Para entender melhor um objeto ou cena 3D, você pode exibir detalhes adicionais de geometria, como normais por vértice, normais por face, os pontos dinâmico da seleção ativa e outros detalhes. Para habilitá-los ou desabilitá-los, na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Exibir** e o modo desejado.  
   
-###  <a name="Adding3DObjects"></a> Criando e importando objetos 3D  
+### <a name="Adding3DObjects"></a> Criando e importando objetos 3D  
  Para adicionar uma forma 3D predefinida à cena, na **Caixa de Ferramentas**, selecione a forma desejada e mova-a para a superfície de design. As novas formas são posicionadas na origem da cena. O Editor de Modelos fornece sete formas: **Cone**, **Cubo**, **Cilindro**, **Disco**, **Plano**, **Esfera** e **Bule**.  
   
  Para importar um objeto 3D de um arquivo, na barra de ferramentas **Editor de Modelos**, escolha **Avançado**, **Gerenciamento de Cena**, **Importar** e especifique o arquivo que deseja importar.  
@@ -144,11 +144,11 @@ Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vspr
   
 ##### <a name="to-transform-an-object-by-using-modeling-tools"></a>Para transformar um objeto usando ferramentas de modelagem  
   
-1.  No modo **Selecionar**, selecione o objeto que deseja transformar. Uma sobreposição delineada indica que o objeto está selecionado.  
+1. No modo **Selecionar**, selecione o objeto que deseja transformar. Uma sobreposição delineada indica que o objeto está selecionado.  
   
-2.  Na barra de ferramentas **Editor de Modelos**, escolha a ferramenta **Mover**, **Dimensionar** ou **Girar**. Uma manipulador de translação, dimensionamento ou rotação é exibido para o objeto selecionado.  
+2. Na barra de ferramentas **Editor de Modelos**, escolha a ferramenta **Mover**, **Dimensionar** ou **Girar**. Uma manipulador de translação, dimensionamento ou rotação é exibido para o objeto selecionado.  
   
-3.  Use o manipulador para executar a transformação. Para transformações de translação e dimensionamento, o manipulador é um indicador de eixo. Você pode alterar um eixo por vez ou alterar todos os eixos ao mesmo tempo usando o cubo branco no centro do indicador. Para rotação, o manipulador é uma esfera feita de círculos codificados por cores que correspondem ao eixo x (vermelho), eixo y (verde) e o eixo z (azul). Você precisa alterar cada eixo individualmente para criar a rotação desejada.  
+3. Use o manipulador para executar a transformação. Para transformações de translação e dimensionamento, o manipulador é um indicador de eixo. Você pode alterar um eixo por vez ou alterar todos os eixos ao mesmo tempo usando o cubo branco no centro do indicador. Para rotação, o manipulador é uma esfera feita de círculos codificados por cores que correspondem ao eixo x (vermelho), eixo y (verde) e o eixo z (azul). Você precisa alterar cada eixo individualmente para criar a rotação desejada.  
   
 ##### <a name="to-transform-an-object-by-setting-its-properties"></a>Para transformar um objeto definindo suas propriedades  
   
@@ -173,16 +173,16 @@ Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vspr
 ### <a name="world-and-local-modes"></a>Modos local e mundial  
  A translação e a rotação podem ocorrer no sistema de coordenada local (ou *quadro de referência local*) do objeto ou no sistema de coordenada mundial (ou *quatro de referência mundial*). O quadro de referência mundial é independente da rotação do objeto. O modo local é o padrão. Para habilitar (ou desabilitar) o modo mundial, na barra de ferramentas **Modo do Editor de Modelos**, escolha o botão **WorldLocal**.  
   
-###  <a name="ModifyingObjects"></a> Modificando objetos  
+### <a name="ModifyingObjects"></a> Modificando objetos  
  Você pode alterar a forma de um objeto 3D movendo ou excluindo seus vértices, bordas e faces. Por padrão, o Editor de modelos está no *modo de objeto*, para que você possa selecionar e transformar objetos inteiros. Para selecionar os pontos, as bordas ou as faces, escolha o modo de seleção adequado. Na barra de ferramentas **Modo do Editor de Modelos**, escolha **Modos de seleção** e, em seguida, escolha o modo desejado.  
   
  É possível criar vértices adicionais por extrusão ou por subdivisão. A extrusão duplica os vértices de uma face (um conjunto coplanar de vértices), que permanece conectada pelos vértices duplicados. A subdivisão adiciona vértices para criar várias faces onde anteriormente havia uma. Para criar novas faces, novos vértices são adicionados – um no centro da face original e um entre cada borda – e unidos aos vértices originais. O número de faces adicionadas é igual ao número de bordas na face original. Em ambos os casos, você pode transladar, girar e dimensionar os novos vértices para alterar a geometria do objeto.  
   
 ##### <a name="to-extrude-a-face-from-an-object"></a>Para extrudar uma face de um objeto  
   
-1.  No modo de seleção de face, selecione aquela que deseja extrudar.  
+1. No modo de seleção de face, selecione aquela que deseja extrudar.  
   
-2.  Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Ferramentas** e **Extrusão**.  
+2. Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Ferramentas** e **Extrusão**.  
   
 ##### <a name="to-subdivide-faces"></a>Para subdividir faces  
   
@@ -194,21 +194,21 @@ Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vspr
   
 ##### <a name="to-triangulate-a-face"></a>Para triangular uma face  
   
-1.  No modo de seleção de face, selecione a face que deseja triangular.  
+1. No modo de seleção de face, selecione a face que deseja triangular.  
   
-2.  Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Ferramentas** e **Triangular**.  
+2. Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Ferramentas** e **Triangular**.  
   
 ##### <a name="to-merge-objects"></a>Para mesclar objetos  
   
-1.  No modo de seleção de objeto, selecione os objetos que deseja mesclar.  
+1. No modo de seleção de objeto, selecione os objetos que deseja mesclar.  
   
-2.  Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Ferramentas** e **Mesclar Objetos**.  
+2. Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Ferramentas** e **Mesclar Objetos**.  
   
 ##### <a name="to-create-an-object-from-a-polygon-selection"></a>Para criar um objeto de uma seleção de polígono  
   
-1.  No modo de seleção de face, selecione as faces das quais deseja criar um novo objeto.  
+1. No modo de seleção de face, selecione as faces das quais deseja criar um novo objeto.  
   
-2.  Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Ferramentas** e **Criar Novo Objeto da Seleção de Polígono**.  
+2. Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Ferramentas** e **Criar Novo Objeto da Seleção de Polígono**.  
   
 ### <a name="working-with-materials-and-shaders"></a>Trabalho com materiais e sombreadores  
  A aparência de um objeto é determinada pela interação da iluminação na cena e do material do objeto. Os materiais são definidos pelas propriedades que descrevem como a superfície reage a diferentes tipos de luz e por um programa sombreador que calcula a cor final de cada pixel na superfície do objeto com base na informação de iluminação, mapas de textura, mapas normais e outros dados.  
@@ -248,9 +248,9 @@ Este documento descreve como trabalhar com o Editor de Modelos do [!INCLUDE[vspr
   
 ##### <a name="to-create-a-hierarchy-that-has-a-parent-object"></a>Para criar uma hierarquia que tem um objeto pai  
   
-1.  No modo **Selecionar**, selecione dois ou mais objetos. O primeiro que você selecionar será o objeto pai.  
+1. No modo **Selecionar**, selecione dois ou mais objetos. O primeiro que você selecionar será o objeto pai.  
   
-2.  Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Gerenciamento de Cena** e **Anexar ao Pai**.  
+2. Na barra de ferramentas **Editor de Modelos**, escolha **Scripts**, **Gerenciamento de Cena** e **Anexar ao Pai**.  
   
 ##### <a name="to-create-a-hierarchy-of-sibling-objects"></a>Para criar uma hierarquia de objetos irmãos  
   

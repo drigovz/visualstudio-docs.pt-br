@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b554a197afe2deef3619551af2d45d4a80708afe
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 4b8452100eb744d019c0f4c8d5e62566ac761210
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715356"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072742"
 ---
-# <a name="how-to-page-up-or-down-in-memory"></a>Como subir ou descer a página na memória
+# <a name="how-to-page-up-or-down-in-memory"></a>Como: Mover para cima ou para baixo na memória
 
 Quando exibe conteúdos de memória na janela de **Memória** ou na janela de **Desmontagem**, você pode usar a barra de rolagem vertical para mover para cima ou para baixo no espaço de memória.
 
@@ -44,9 +44,9 @@ Quando exibe conteúdos de memória na janela de **Memória** ou na janela de **
 
 #### <a name="to-move-up-or-down-one-instruction"></a>Para mover para cima ou para baixo em uma instrução
 
--   Clique na seta na parte superior ou inferior da barra de rolagem vertical.
+- Clique na seta na parte superior ou inferior da barra de rolagem vertical.
 
 ## <a name="see-also"></a>Consulte também
 - [Janelas de Memória](../debugger/memory-windows.md)
-- [Como usar a Janela de Desmontagem](../debugger/how-to-use-the-disassembly-window.md)
+- [Como: Usar a janela Desmontagem](../debugger/how-to-use-the-disassembly-window.md)
 - [Exibindo dados no depurador](../debugger/viewing-data-in-the-debugger.md)

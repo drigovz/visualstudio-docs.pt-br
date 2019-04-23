@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95fa2a4146e151b689efbb82d933e05be698f62b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7b4d5e914566cc019a3882ed53923f84ecdddf85
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929159"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60069530"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Como: Recuperar informações de cadeia de consulta em um aplicativo ClickOnce online
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,26 +49,26 @@ O *cadeia de caracteres de consulta* é a parte de uma URL que comece com um pon
   
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>Para obter informações de cadeia de caracteres de consulta de um aplicativo ClickOnce  
   
-1.  Coloque o código a seguir em seu projeto. Em ordem para este código à função, você precisará ter uma referência a System. Web e adicionar `using` ou `Imports` instruções para System.Deployment.Application, Specialized e System. Web.  
+1. Coloque o código a seguir em seu projeto. Em ordem para este código à função, você precisará ter uma referência a System. Web e adicionar `using` ou `Imports` instruções para System.Deployment.Application, Specialized e System. Web.  
   
      [!code-csharp[ClickOnceQueryString#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceQueryString/CS/Form1.cs#1)]
      [!code-vb[ClickOnceQueryString#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceQueryString/VB/Form1.vb#1)]  
   
-2.  Chamar a função definida anteriormente para recuperar um <xref:System.Collections.DictionaryBase.Dictionary%2A> dos parâmetros de cadeia de caracteres de consulta, indexados pelo nome.  
+2. Chamar a função definida anteriormente para recuperar um <xref:System.Collections.DictionaryBase.Dictionary%2A> dos parâmetros de cadeia de caracteres de consulta, indexados pelo nome.  
   
 ### <a name="to-enable-query-string-passing-in-a-clickonce-application-with-mageuiexe"></a>Para habilitar a cadeia de caracteres de consulta passando em um aplicativo ClickOnce com MageUI.exe  
   
-1.  Abra o Prompt de comando do .NET e digite:  
+1. Abra o Prompt de comando do .NET e digite:  
   
     ```  
     MageUI  
     ```  
   
-2.  Do **arquivo** menu, selecione **abra**e abra o manifesto de implantação para seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo, que é o arquivo terminando no `.application` extensão.  
+2. Do **arquivo** menu, selecione **abra**e abra o manifesto de implantação para seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo, que é o arquivo terminando no `.application` extensão.  
   
-3.  Selecione o **opções de implantação** na janela de navegação à esquerda do painel e, em seguida, selecione o **parâmetros de URL de permitir a serem passados para o aplicativo** caixa de seleção.  
+3. Selecione o **opções de implantação** na janela de navegação à esquerda do painel e, em seguida, selecione o **parâmetros de URL de permitir a serem passados para o aplicativo** caixa de seleção.  
   
-4.  Dos **arquivo** menu, selecione **salvar**.  
+4. Dos **arquivo** menu, selecione **salvar**.  
   
 > [!NOTE]
 >  Como alternativa, você pode habilitar a cadeia de caracteres de consulta passando [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Selecione o **parâmetros de URL de permitir a serem passados para o aplicativo** caixa de seleção, que pode ser encontrada, abrindo o **propriedades do projeto**, selecionando o **publicar** guia, clicando no **Opções** botão e, em seguida, selecionando **manifestos**.  

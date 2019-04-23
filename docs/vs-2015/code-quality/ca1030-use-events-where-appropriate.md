@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 90605152607f403a089d59727d155cd154f7032e
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 9d00db6f9a00a273198cc50704d65ed6d2e4bb33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58926888"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072091"
 ---
 # <a name="ca1030-use-events-where-appropriate"></a>CA1030: Usar eventos quando apropriado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,13 +35,13 @@ ms.locfileid: "58926888"
 ## <a name="cause"></a>Causa
  Um nome de método público, protegido ou particular começa com um dos seguintes:
 
--   AddOn
+- AddOn
 
--   RemoveOn
+- RemoveOn
 
--   Fogo
+- Fogo
 
--   Gerar
+- Gerar
 
 ## <a name="rule-description"></a>Descrição da Regra
  Essa regra detecta métodos que têm nomes que seriam usados normalmente em eventos. Os eventos seguem o padrão de design do observador ou publicar-assinar; eles são usados quando uma alteração de estado em um objeto deve ser comunicada aos outros objetos. Se um método é chamado em resposta a uma alteração de estado claramente definida, o método deve ser invocado por um manipulador de eventos. Os objetos que chamam o método devem acionar eventos, em vez de chamar o método diretamente.

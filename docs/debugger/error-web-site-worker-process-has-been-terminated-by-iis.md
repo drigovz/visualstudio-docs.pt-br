@@ -1,5 +1,5 @@
 ---
-title: 'Erro: o processo de trabalho do site da Web foi encerrado pelo IIS | Microsoft Docs'
+title: 'Erro: Processo de trabalho do site da Web foi encerrado pelo IIS | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: troubleshooting
 f1_keywords:
@@ -14,14 +14,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d951486d41e3449410f6f815b3b355a281e0898
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 2d89eabec0c199b1b8df7eeb78d0e629d4a70b2e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698866"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072650"
 ---
-# <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Erro: o processo de trabalho do site foi encerrado pelo IIS
+# <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>Erro: O processo de trabalho do site foi terminado pelo IIS
 O depurador interrompeu a execução de código no site. Isso fez o IIS (Serviços de Informações da Internet) supor que o processo de trabalho parou de responder. Consequentemente, o IIS terminou o processo de trabalho.
 
  Para retomar a depuração, será necessário configurar o IIS para permitir que o processo de trabalho continue. Essa mensagem de erro não aparece em versões do IIS que são anteriores ao IIS 7.
@@ -30,9 +30,9 @@ O depurador interrompeu a execução de código no site. Isso fez o IIS (Serviç
 
 1. Abra a janela **Ferramentas Administrativas**.
 
-   1.  Clique em **Iniciar** e escolha **Painel de Controle**.
+   1. Clique em **Iniciar** e escolha **Painel de Controle**.
 
-   2.  No **Painel de Controle**, escolha **Alternar para o Modo de Exibição Clássico** se necessário e clique duas vezes em **Ferramentas Administrativas**.
+   2. No **Painel de Controle**, escolha **Alternar para o Modo de Exibição Clássico** se necessário e clique duas vezes em **Ferramentas Administrativas**.
 
 2. Na janela **Ferramentas Administrativas**, clique duas vezes em **Serviços de Informações da Internet (IIS)**.
 

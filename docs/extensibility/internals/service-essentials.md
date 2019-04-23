@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff3fc897c0b413d6882584671f9cebe1ef73d316
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 6e867c9e83bf353e57d75ee611fe1074efcc9cfe
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335305"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60070375"
 ---
 # <a name="service-essentials"></a>Conceitos básicos do serviço
 Um serviço é um contrato entre dois VSPackages. Um VSPackage fornece um conjunto específico de interfaces para outro VSPackage consumir. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] é uma coleção de VSPackages que fornece serviços a outros VSPackages.
@@ -68,15 +68,15 @@ Você pode obter a maioria dos serviços do Visual Studio chamando estático <xr
 
 Felizmente, <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> funciona corretamente na maioria das vezes.
 
--   Se um VSPackage fornece um serviço conhecido apenas outro VSPackage, o VSPackage solicitando o serviço é colocado no local antes do VSPackage fornecendo que o serviço é carregado.
+- Se um VSPackage fornece um serviço conhecido apenas outro VSPackage, o VSPackage solicitando o serviço é colocado no local antes do VSPackage fornecendo que o serviço é carregado.
 
--   Se uma janela de ferramenta é criada por um VSPackage, o VSPackage é colocado antes que a janela da ferramenta é criada no local.
+- Se uma janela de ferramenta é criada por um VSPackage, o VSPackage é colocado antes que a janela da ferramenta é criada no local.
 
--   Se um contêiner de controle for hospedado por uma janela de ferramenta criada por um VSPackage, o VSPackage é colocado antes que o contêiner de controle é criado no local.
+- Se um contêiner de controle for hospedado por uma janela de ferramenta criada por um VSPackage, o VSPackage é colocado antes que o contêiner de controle é criado no local.
 
 ### <a name="to-get-a-service-from-within-a-tool-window-or-control-container"></a>Para obter um serviço de dentro de um contêiner de controle ou janela de ferramenta
 
--   Inserir este código na janela da ferramenta, construtor ou contêiner de controle:
+- Inserir este código na janela da ferramenta, construtor ou contêiner de controle:
 
     ```csharp
     IVsActivityLog log = Package.GetGlobalService(typeof(SVsActivityLog)) as IVsActivityLog;

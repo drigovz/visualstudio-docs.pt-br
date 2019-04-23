@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: edeb59f08dba3328c464782dd685b24c6bcda852
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924807"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60066697"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,11 +117,11 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
 #### <a name="to-postpone-profiling-from-the-start-of-the-app"></a>Para adiar a criação de perfil após a inicialização do aplicativo:  
   
-1.  No menu principal, escolha **Depurar** e, em seguida, **Desempenho e Diagnóstico** (teclado: Pressione Alt + F2).  
+1. No menu principal, escolha **Depurar** e, em seguida, **Desempenho e Diagnóstico** (teclado: Pressione Alt + F2).  
   
-2.  No hub Desempenho e Diagnóstico, siga o link **Configurações** ao lado de **Uso de GPU**.  
+2. No hub Desempenho e Diagnóstico, siga o link **Configurações** ao lado de **Uso de GPU**.  
   
-3.  Em **Configuração de Criação de Perfil da GPU**, na página de propriedades **Geral**, desmarque a caixa de seleção **Iniciar a criação de perfil após a inicialização do aplicativo** para adiar a criação de perfil.  
+3. Em **Configuração de Criação de Perfil da GPU**, na página de propriedades **Geral**, desmarque a caixa de seleção **Iniciar a criação de perfil após a inicialização do aplicativo** para adiar a criação de perfil.  
   
      ![Configurar o início da coleta de Uso de GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
@@ -130,7 +130,7 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
  Ao adiar a coleta de informações de criação de perfil usando essa configuração, outro link ficará disponível na parte inferior da janela de ferramentas Uso de GPU quando o aplicativo for executado na ferramenta Uso de GPU. Para iniciar a coleta de informações de criação de perfil, escolha o link **Iniciar** na mensagem **Iniciar coleta de dados detalhados de Uso de GPU adicionais**.  
   
-##  <a name="hwsupport"></a> Suporte de hardware e driver  
+## <a name="hwsupport"></a> Suporte de hardware e driver  
  Há suporte para os seguintes hardware e drivers de GPU:  
   
 |Fornecedor|Descrição da GPU|Versão de driver necessária|  
@@ -143,10 +143,10 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
   
 ## <a name="see-also"></a>Consulte também  
   
--   [Resolver problemas difíceis de elementos gráficos no jogo usando as ferramentas do DirectX (vídeo)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
+- [Resolver problemas difíceis de elementos gráficos no jogo usando as ferramentas do DirectX (vídeo)](http://channel9.msdn.com/Events/GDC/GDC-2015/Solve-the-Tough-Graphics-Problems-with-your-Game-Using-DirectX-Tools)  
   
--   [Ferramenta Uso de GPU no Visual Studio (vídeo)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
+- [Ferramenta Uso de GPU no Visual Studio (vídeo)](http://channel9.msdn.com/Events/Visual-Studio/Connect-event-2014/715)  
   
--   [Ferramenta Uso de GPU no Visual Studio 2013 Atualização 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
+- [Ferramenta Uso de GPU no Visual Studio 2013 Atualização 4 CTP1 (blog)](http://blogs.msdn.com/b/vcblog/archive/2014/09/05/gpu-usage-tool-in-visual-studio-2013-update-4-ctp1.aspx)  
   
--   [Uso de GPU para o DirectX no Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)
+- [Uso de GPU para o DirectX no Visual Studio (blog)](http://blogs.msdn.com/b/ianhu/archive/2014/12/16/gpu-usage-for-directx-in-visual-studio.aspx)

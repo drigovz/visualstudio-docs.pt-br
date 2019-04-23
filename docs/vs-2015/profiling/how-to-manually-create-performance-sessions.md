@@ -1,5 +1,5 @@
 ---
-title: Como criar manualmente sessões de desempenho | Microsoft Docs
+title: 'Como: Criar manualmente sessões de desempenho | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,27 +15,27 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2e326bac1138fc03be94c1e6d1a5037e3d1a2f40
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 622d349fd063cf0a22e3c286003490e088cd4440
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54800824"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60068880"
 ---
-# <a name="how-to-manually-create-performance-sessions"></a>Como criar manualmente sessões de desempenho
+# <a name="how-to-manually-create-performance-sessions"></a>Como: Criar manualmente sessões de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode criar manualmente uma sessão de desempenho. Não é necessário abrir um projeto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para fazer isso. Para obter mais informações, consulte [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md).  
   
 ### <a name="to-manually-create-a-performance-session"></a>Para criar manualmente uma sessão de desempenho  
   
-1.  No menu **Analisar**, aponte para **Criador de Perfil** e, em seguida, clique em **Nova Sessão de Desempenho**.  
+1. No menu **Analisar**, aponte para **Criador de Perfil** e, em seguida, clique em **Nova Sessão de Desempenho**.  
   
      Uma sessão de desempenho vazia é adicionada ao **Gerenciador de Desempenho**.  
   
-2.  Clique com botão direito do mouse em **Destinos** e, em seguida, clique em **Adicionar Binário de Destino**.  
+2. Clique com botão direito do mouse em **Destinos** e, em seguida, clique em **Adicionar Binário de Destino**.  
   
-3.  Na caixa de diálogo **Adicionar Binário de Destino**, selecione o nome do arquivo e, em seguida, clique em **Abrir**.  
+3. Na caixa de diálogo **Adicionar Binário de Destino**, selecione o nome do arquivo e, em seguida, clique em **Abrir**.  
   
      Um novo binário é adicionado.  
   

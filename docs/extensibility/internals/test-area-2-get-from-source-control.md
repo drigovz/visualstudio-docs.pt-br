@@ -11,14 +11,14 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6e6a9f71a1ebda6e6366096881fb681a864ce31
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0d7942aa658208143aea3c3ae3a09eb677568f17
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630867"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60067177"
 ---
-# <a name="test-area-2-get-from-source-control"></a>Área de teste 2: Obter do controle de origem
+# <a name="test-area-2-get-from-source-control"></a>Área de teste 2: Obter do controle do código-fonte
 Esta área de teste aborda os casos de teste para recuperar itens do repositório de versão por meio do comando Get. Esses casos de teste podem ser aplicados para ambos os locais e para projetos da Web.
 
 ## <a name="command-menu-access"></a>Acesso ao Menu de comando
@@ -26,13 +26,13 @@ Esta área de teste aborda os casos de teste para recuperar itens do repositóri
 
 ##### <a name="get-latest-version"></a>Obter a versão mais recente:
 
--   **Arquivo**, **controle de origem**, **obter versão mais recente**.
+- **Arquivo**, **controle de origem**, **obter versão mais recente**.
 
--   **Arquivo**, **obter versão mais recente**.
+- **Arquivo**, **obter versão mais recente**.
 
--   Menu de atalho **obter última versão**.
+- Menu de atalho **obter última versão**.
 
--   Obter: **Arquivo**, **controle de origem**, **obter**.
+- Obter: **Arquivo**, **controle de origem**, **obter**.
 
 ## <a name="expected-behavior"></a>Comportamento esperado
 
