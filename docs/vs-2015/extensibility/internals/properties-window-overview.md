@@ -10,21 +10,21 @@ ms.assetid: 289ed4f2-02ac-4899-855e-42dfe57ee05f
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 224fb081f21701433a84121985f90351225036e5
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: e43893af3275258c49e3e23348afb106416636a6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58923270"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113840"
 ---
 # <a name="properties-window-overview"></a>Visão geral da janela Propriedades
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 O **propriedades** janela é usada para exibir as propriedades de objetos selecionados os dois tipos principais do windows disponíveis no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE). Esses dois tipos de janelas são:  
   
--   Janelas de ferramentas como o Gerenciador de soluções, o modo de exibição de classe e o objeto de navegador  
+- Janelas de ferramentas como o Gerenciador de soluções, o modo de exibição de classe e o objeto de navegador  
   
--   Janelas de documento que contém tais editores e designers como o designer de formulários, o editor de XML e o editor de HTML  
+- Janelas de documento que contém tais editores e designers como o designer de formulários, o editor de XML e o editor de HTML  
   
 ## <a name="using-the-properties-window"></a>Usando a janela Propriedades  
  O **propriedades** janela exibe as propriedades de um único ou vários itens selecionados. Se forem selecionados vários itens, a interseção de todas as propriedades de todos os objetos selecionados é exibida.  

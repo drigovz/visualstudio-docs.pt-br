@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 08c91b7a1f649340c3b0c9bece6b8b1b94c74324
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6c5a393c32d7f7182fc3226689e24d20a4cae1ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925086"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095347"
 ---
 # <a name="ca1065-do-not-raise-exceptions-in-unexpected-locations"></a>CA1065: Não acionar exceções em locais inesperados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,24 +65,24 @@ ms.locfileid: "58925086"
 
  As exceções a seguir têm permissão para ser lançada a partir de um método get de propriedade:
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> e todos os derivados (incluindo <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> e todos os derivados (incluindo <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> e todos os derivados
+- <xref:System.NotSupportedException?displayProperty=fullName> e todos os derivados
 
--   <xref:System.ArgumentException?displayProperty=fullName> (apenas no get indexada)
+- <xref:System.ArgumentException?displayProperty=fullName> (apenas no get indexada)
 
--   <xref:System.Collections.Generic.KeyNotFoundException> (apenas no get indexada)
+- <xref:System.Collections.Generic.KeyNotFoundException> (apenas no get indexada)
 
 ### <a name="event-accessor-methods"></a>Métodos de acessador de evento
  Acessadores de evento devem ser operações simples que não geram exceções. Um evento não deve lançar uma exceção ao tentar adicionar ou remover um manipulador de eventos.
 
  As exceções a seguir têm permissão para ser lançada a partir de um evento accesor:
 
--   <xref:System.InvalidOperationException?displayProperty=fullName> e todos os derivados (incluindo <xref:System.ObjectDisposedException?displayProperty=fullName>)
+- <xref:System.InvalidOperationException?displayProperty=fullName> e todos os derivados (incluindo <xref:System.ObjectDisposedException?displayProperty=fullName>)
 
--   <xref:System.NotSupportedException?displayProperty=fullName> e todos os derivados
+- <xref:System.NotSupportedException?displayProperty=fullName> e todos os derivados
 
--   <xref:System.ArgumentException> e derivados
+- <xref:System.ArgumentException> e derivados
 
 ### <a name="equals-methods"></a>Métodos Equals
  O seguinte **é igual a** métodos não devem lançar exceções:

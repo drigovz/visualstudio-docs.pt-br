@@ -8,12 +8,12 @@ ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 10d0ada1ba86f57b9b40a40b6ffc560379d411dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 257c5944ee1939849c4163fef518abf513183998
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670089"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095809"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Cores e estilos para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ ms.locfileid: "59670089"
 
  **Ferramentas > caixa de diálogo Opções**
 
-##  <a name="BKMK_TheVSColorService"></a> O serviço VSColor
+## <a name="BKMK_TheVSColorService"></a> O serviço VSColor
  Visual Studio fornece um serviço de cor de ambiente, também chamado de serviço VSColor ou o serviço de cor do shell. Esse serviço permite que você associe os valores de cor de seus elementos de interface do usuário a um conjunto que contém as cores para cada tema de cores de nome-valor. O serviço de VSColor deve ser usado para todos os elementos de interface do usuário, para que as cores automaticamente alterada para refletir o tema selecionado pelo usuário atual e para que a interface do usuário associado ao serviço de cor de ambiente serão integradas novos temas em futuras versões do Visual Studio.
 
 ### <a name="how-the-service-works"></a>Como funciona o serviço
@@ -256,18 +256,18 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> Escolher as cores de alto contraste
+## <a name="BKMK_ChoosingHighContrastColors"></a> Escolher as cores de alto contraste
 
 ### <a name="overview"></a>Visão geral
  Windows usa vários temas de nível de sistema de alto contraste que aumentam o contraste de cores de texto, planos de fundo e imagens, fazendo com que elementos são mais destacadas na tela. Por motivos de acessibilidade, é importante que os elementos de interface do Visual Studio respondam corretamente quando os usuários alternam para um tema de alto contraste.
 
  Apenas algumas poucas cores do sistema podem ser usada para temas de alto contraste. Ao escolher seu sistema de nomes de cores, lembre-se as dicas a seguir:
 
-1.  **Escolha as cores do sistema que têm o mesmo significado semântico** como o elemento que são de cores. Por exemplo, se você está escolhendo uma cor de alto contraste do texto dentro de uma janela, use WindowText e não ControlText.
+1. **Escolha as cores do sistema que têm o mesmo significado semântico** como o elemento que são de cores. Por exemplo, se você está escolhendo uma cor de alto contraste do texto dentro de uma janela, use WindowText e não ControlText.
 
-2.  **Escolha pares primeiro e segundo plano** juntos ou pode não estar certo de que sua opção de cor funcionará em todos os temas de alto contraste.
+2. **Escolha pares primeiro e segundo plano** juntos ou pode não estar certo de que sua opção de cor funcionará em todos os temas de alto contraste.
 
-3.  **Determinar quais partes da sua interface do usuário são os mais importantes e certifique-se de que áreas de conteúdo destacará.** Você perderá muitos detalhes que normalmente seriam distinguir a diferenças sutis de matiz da cor, portanto, o uso de cores da borda forte é comum definir áreas de conteúdo, porque não há nenhum variações de cor para diferentes áreas de conteúdo.
+3. **Determinar quais partes da sua interface do usuário são os mais importantes e certifique-se de que áreas de conteúdo destacará.** Você perderá muitos detalhes que normalmente seriam distinguir a diferenças sutis de matiz da cor, portanto, o uso de cores da borda forte é comum definir áreas de conteúdo, porque não há nenhum variações de cor para diferentes áreas de conteúdo.
 
 ### <a name="system-color-set"></a>Conjunto de cores do sistema
  A tabela no [Blog da equipe WPF: Referência de SystemColors](http://blogs.msdn.com/b/wpf/archive/2010/11/30/systemcolors-reference.aspx) indica o conjunto completo de nomes de cores do sistema e os matizes correspondentes exibidos em cada tema.
@@ -323,7 +323,7 @@ protected override void Dispose(bool disposing)
 |WindowFrame|-Borda IDE|
 |WindowText|-Em primeiro plano de guia ocultar automaticamente<br />-Primeiro plano de guia de janela de ferramenta selecionada<br />– Guia da janela de documento sem foco e primeiro plano de guia provisória sem foco ou não selecionado<br />-Árvore em primeiro plano do modo de exibição padrão e passe o mouse sobre o glifo não selecionado<br />-Borda da guia selecionada de janela de ferramenta<br />-Glifo, borda e tela de fundo de thumb barra de rolagem|
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> Expondo as cores para os usuários finais
+## <a name="BKMK_ExposingColorsForEndUsers"></a> Expondo as cores para os usuários finais
 
 ### <a name="overview"></a>Visão geral
  Às vezes, você desejará permitir que o usuário final personalizar a interface do usuário, como quando você estiver criando um editor de código ou a superfície de design. A maneira mais comum de fazer isso é usando o **Ferramentas > Opções** caixa de diálogo. A menos que você tenha altamente especializadas da interface do usuário que requer que os controles especiais, a maneira mais fácil para apresentar a personalização é por meio do **fontes e cores** página dentro de **ambiente** seção da caixa de diálogo. Para cada elemento que você expõe para personalização, o usuário pode optar por alterar a cor de primeiro plano, cor de plano de fundo ou ambos.
@@ -335,13 +335,13 @@ protected override void Dispose(bool disposing)
 
  Para implementar categorias personalizadas ou exibir itens, um VSPackage deve:
 
--   **Crie ou identifique categorias no registro.** Implementação do IDE do **fontes e cores** página de propriedades usa essas informações para consultar corretamente para o serviço que dão suporte a uma determinada categoria.
+- **Crie ou identifique categorias no registro.** Implementação do IDE do **fontes e cores** página de propriedades usa essas informações para consultar corretamente para o serviço que dão suporte a uma determinada categoria.
 
--   **Criar ou identificar grupos no registro (opcional).** Pode ser útil definir um grupo, que representa a união de duas ou mais categorias. Se um grupo estiver definido, o IDE automaticamente mescla subcategorias e distribui itens de exibição dentro do grupo.
+- **Criar ou identificar grupos no registro (opcional).** Pode ser útil definir um grupo, que representa a união de duas ou mais categorias. Se um grupo estiver definido, o IDE automaticamente mescla subcategorias e distribui itens de exibição dentro do grupo.
 
--   **Implementar o suporte do IDE.**
+- **Implementar o suporte do IDE.**
 
--   **Manipule as alterações de fonte e cor.**
+- **Manipule as alterações de fonte e cor.**
 
 #### <a name="to-create-or-identify-categories"></a>Para criar ou identificar categorias
  Construir um tipo especial de entrada de registro de categoria em [HKLM\Software\Microsoft. \Visual Studio\\< versão do Visual Studio\>\FontAndColors\\< categoria\>]. \<Categoria > é o nome não localizado da categoria.
@@ -426,11 +426,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\FontAndColors\CSharp T
 
  **OBSERVAÇÃO:**
 
--   "NameID" = a ID de recurso do nome de categoria localizada em seu pacote
+- "NameID" = a ID de recurso do nome de categoria localizada em seu pacote
 
--   "ToolWindowPackage" = GUID do pacote
+- "ToolWindowPackage" = GUID do pacote
 
--   "Category" = "{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}" é apenas um exemplo e o valor real pode ser um novo GUID fornecido pelo implementador.
+- "Category" = "{9FF46859-A47E-47bf-8AC5-EC3DBE69D1FE}" é apenas um exemplo e o valor real pode ser um novo GUID fornecido pelo implementador.
 
 ### <a name="set-the-font-and-color-property-category-guid"></a>Defina a categoria de propriedade da fonte e cor GUID
  O exemplo de código a seguir demonstra como definir os GUIDs de categoria.

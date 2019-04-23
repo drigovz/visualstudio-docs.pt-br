@@ -9,36 +9,36 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e4f1916fb7bfc0672efeddaac5e632692f92f9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54787324"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113749"
 ---
-# <a name="how-to-create-a-basic-phong-shader"></a>Como criar um sombreador Phong básico
+# <a name="how-to-create-a-basic-phong-shader"></a>Como: Criar um sombreador Phong básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este documento demonstra como usar o Designer de Sombreador e o DGSL (Directed Graph Shader Language) para criar um sombreador de iluminação que implementa o modelo de iluminação de Phong clássico.  
   
  Este documento demonstra essas atividades:  
   
--   Adicionar nós a um grafo de sombreador  
+- Adicionar nós a um grafo de sombreador  
   
--   Desconectar nós  
+- Desconectar nós  
   
--   Conectar nós  
+- Conectar nós  
   
 ## <a name="the-phong-lighting-model"></a>O modelo de iluminação de Phong  
  O modelo de iluminação de Phong amplia o modelo de iluminação de Lambert para incluir o realce especular, que simula as propriedades de reflexão de uma superfície. O componente especular fornece iluminação adicional das mesmas fontes de luz direcionais que são usadas no modelo de iluminação Lambert, mas sua contribuição para a cor final é processada de forma diferente. O realce especular afeta cada superfície na cena de forma diferente, com base na relação entre a direção da exibição, a direção das fontes de luz e a orientação da superfície. É um produto da cor especular, do potencial de reflexão e da orientação da superfície e a cor, intensidade e direção das fontes de luz. As superfícies que refletem a fonte de luz diretamente no visualizador recebem a contribuição especular máxima e as superfícies que refletem a fonte de luz distante do visualizador não recebem nenhuma contribuição. No modelo de iluminação de Phong, um ou mais componentes especulares são combinados para determinar a cor e a intensidade do realce especular para cada ponto no objeto e, em seguida, são adicionados ao resultado do modelo de iluminação de Lambert para produzir a cor final do pixel.  
   
- Para obter mais informações sobre o modelo de iluminação de Lambert, consulte [Como criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).  
+ Para obter mais informações sobre o modelo de iluminação de Lambert, confira [Como: Criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).  
   
  Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo exibidas.  
   
 #### <a name="to-create-a-phong-shader"></a>Para criar um sombreador Phong  
   
-1. Crie um sombreador Lambert, conforme descrito em [Como criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).  
+1. Crie um sombreador Lambert básico, conforme descrito em [Como: Criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md).  
   
 2. Desconecte o nó **Lambert** do nó **Cor Final**. Escolha o terminal **RGB** do nó **Lambert** e, em seguida, escolha **Quebrar Links**. Isso abre o espaço para o nó que será adicionado na próxima etapa.  
   
@@ -72,7 +72,7 @@ Este documento demonstra como usar o Designer de Sombreador e o DGSL (Directed G
   
 ## <a name="see-also"></a>Consulte também  
  [Como: Aplicar um sombreador a um modelo 3D](../designers/how-to-apply-a-shader-to-a-3-d-model.md)   
- [Como exportar um sombreador](../designers/how-to-export-a-shader.md)   
- [Como criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md)   
+ [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md)   
+ [Como: Criar um sombreador Lambert básico](../designers/how-to-create-a-basic-lambert-shader.md)   
  [Designer de Sombreador](../designers/shader-designer.md)   
  [Nós do Designer de Sombreador](../designers/shader-designer-nodes.md)

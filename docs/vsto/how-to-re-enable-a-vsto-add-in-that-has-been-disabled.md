@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 85a3ba42f4e22016f487e4a4024e4cfd6736be06
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8da3d003ea156ea3182ddbb5a5fd0da3c2681304
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617490"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095053"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Como: Reabilitar um suplemento VSTO que tenha sido desabilitado
   Aplicativos do Microsoft Office podem desabilitar suplementos do VSTO que tenha um comportamento inesperado. Se um aplicativo não carrega o suplemento do VSTO quando você tenta depurá-lo, o aplicativo pode ter desabilitado rígido ou flexível desabilitado o suplemento do VSTO.
@@ -33,21 +33,21 @@ ms.locfileid: "56617490"
 
 ### <a name="to-re-enable-a-vsto-add-in"></a>Para reabilitar um suplemento do VSTO
 
-1.  No aplicativo, clique no **arquivo** guia.
+1. No aplicativo, clique no **arquivo** guia.
 
-2.  Clique o *ApplicationName* **opções** botão.
+2. Clique o *ApplicationName* **opções** botão.
 
-3.  No painel de categorias, clique em **Add-ins**.
+3. No painel de categorias, clique em **Add-ins**.
 
-4.  No painel de detalhes, verifique se o suplemento do VSTO aparece na **suplementos de aplicativo desabilitado** lista.
+4. No painel de detalhes, verifique se o suplemento do VSTO aparece na **suplementos de aplicativo desabilitado** lista.
 
      O **nome** coluna especifica o nome do assembly e o **local** coluna especifica o caminho completo do manifesto do aplicativo.
 
-5.  No **Manage** , clique em **itens desabilitados**e, em seguida, clique em **vá**.
+5. No **Manage** , clique em **itens desabilitados**e, em seguida, clique em **vá**.
 
-6.  Selecione o suplemento do VSTO e clique em **habilitar**.
+6. Selecione o suplemento do VSTO e clique em **habilitar**.
 
-7.  Clique em **Fechar**.
+7. Clique em **Fechar**.
 
 ## <a name="soft-disabled-vsto-add-ins"></a>Suplementos do VSTO do soft-desabilitado
  Desabilitando reversível pode ocorrer quando um suplemento do VSTO produz um erro que não faz com que o aplicativo fechar inesperadamente. Por exemplo, um aplicativo flexível pode desativar um suplemento do VSTO se ele lançar uma exceção sem tratamento ao <xref:Microsoft.Office.Tools.AddIn.Startup> manipulador de eventos está em execução.
@@ -57,21 +57,21 @@ ms.locfileid: "56617490"
 
 ### <a name="to-re-enable-a-vsto-add-in"></a>Para reabilitar um suplemento do VSTO
 
-1.  No aplicativo, clique no **arquivo** guia.
+1. No aplicativo, clique no **arquivo** guia.
 
-2.  Clique o *ApplicationName* **opções** botão.
+2. Clique o *ApplicationName* **opções** botão.
 
-3.  No painel de categorias, clique em **Add-ins**.
+3. No painel de categorias, clique em **Add-ins**.
 
-4.  No painel de detalhes, verifique se o suplemento do VSTO aparece na **Add-ins de aplicativos inativo** lista.
+4. No painel de detalhes, verifique se o suplemento do VSTO aparece na **Add-ins de aplicativos inativo** lista.
 
      O **nome** coluna especifica o nome do assembly e o **local** coluna especifica o caminho completo do manifesto do aplicativo.
 
-5.  No **Manage** , clique em **suplementos COM**e, em seguida, clique em **vá**.
+5. No **Manage** , clique em **suplementos COM**e, em seguida, clique em **vá**.
 
-6.  No **suplementos COM** caixa de diálogo, selecione a caixa de seleção ao lado de desabilitado suplemento VSTO.
+6. No **suplementos COM** caixa de diálogo, selecione a caixa de seleção ao lado de desabilitado suplemento VSTO.
 
-7.  Clique em **OK**.
+7. Clique em **OK**.
 
 ## <a name="see-also"></a>Consulte também
 - [Compilar soluções do Office](../vsto/building-office-solutions.md)

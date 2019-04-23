@@ -20,30 +20,30 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db045700da02911cf52d69b36a68607ab8a43f69
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82532fc2864bcb4c19b0cf122e60fd9a64b2dbf9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929454"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113060"
 ---
 # <a name="invoking-the-visual-studio-debugger-for-windows-workflow-foundation-legacy"></a>Chamar o depurador do Visual Studio para Windows Workflow Foundation (legados)
 Este tópico descreve como usar o depurador de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] depuração de aplicativos [!INCLUDE[wf](../includes/wf-md.md)] em [!INCLUDE[wfd1](../includes/wfd1-md.md)]herdado. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].
 
  Geralmente, você depura fluxos de trabalho herdados assim como você os programas de depuração escritos em outras linguagens de programação do Visual Studio. Você pode iniciar o depurador de [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] para Windows Workflow Foundation as seguintes maneiras:
 
--   Selecione **anexar ao processo** sobre o **depurar** menu para selecionar uma instância de fluxo de trabalho em execução de processos disponíveis.
+- Selecione **anexar ao processo** sobre o **depurar** menu para selecionar uma instância de fluxo de trabalho em execução de processos disponíveis.
 
--   Pressione **F5** para iniciar a execução de uma instância do fluxo de trabalho, ou para continuar a executar após um ponto de interrupção foi atingido.
+- Pressione **F5** para iniciar a execução de uma instância do fluxo de trabalho, ou para continuar a executar após um ponto de interrupção foi atingido.
 
 ## <a name="stepping-through-code"></a>Percorrendo o código
  O depurador oferece suporte a um dos procedimentos de depuração mais comuns, pisando, que está executando a linha de código por vez. Há três comandos para depurar código:
 
--   **Etapa em**: Você pode entrar em uma atividade usando **F11**. O depurador avança em qualquer manipulador que é definido. Se nenhum manipulador é definido, você vai sobre a atividade, ou com atividades compostas, que contém outras atividades, você vai na primeira atividade executando. Não há suporte para a depuração em manipuladores de código do designer para as seguintes atividades: **IfElseActivity**, **WhileActivity**, **ConditionedActivityGroup**, ou o **ReplicatorActivity**. Para depurar os manipuladores associados com essas atividades, você deve colocar pontos de interrupção explícitos no código.
+- **Etapa em**: Você pode entrar em uma atividade usando **F11**. O depurador avança em qualquer manipulador que é definido. Se nenhum manipulador é definido, você vai sobre a atividade, ou com atividades compostas, que contém outras atividades, você vai na primeira atividade executando. Não há suporte para a depuração em manipuladores de código do designer para as seguintes atividades: **IfElseActivity**, **WhileActivity**, **ConditionedActivityGroup**, ou o **ReplicatorActivity**. Para depurar os manipuladores associados com essas atividades, você deve colocar pontos de interrupção explícitos no código.
 
--   **Depuração circular**: Você pode entrar fora de uma atividade usando **Shift-F11**. Depuração fora de uma atividade executa a atividade atual e todas as suas atividades irmãos para a conclusão. O depurador interrompe no pai de atividade atual. Para passar para fora de um manipulador de código, o depurador interrompe a atividade com que o manipulador está associado.
+- **Depuração circular**: Você pode entrar fora de uma atividade usando **Shift-F11**. Depuração fora de uma atividade executa a atividade atual e todas as suas atividades irmãos para a conclusão. O depurador interrompe no pai de atividade atual. Para passar para fora de um manipulador de código, o depurador interrompe a atividade com que o manipulador está associado.
 
--   **Depurar parcialmente**: Você pode entrar em uma atividade usando **F10**. Para entrar em uma atividade composta. o depurador interrompe no primeiro filho executável de atividade composta. Quando entrar em uma não composição, como um **CodeActivity** atividade, o depurador executa a atividade e seus manipuladores associados e quebras na atividade seguir. Se a atividade que é executada é a atividade filho a última em uma atividade de composição, então após a execução, as quebras do depurador na atividade pai.
+- **Depurar parcialmente**: Você pode entrar em uma atividade usando **F10**. Para entrar em uma atividade composta. o depurador interrompe no primeiro filho executável de atividade composta. Quando entrar em uma não composição, como um **CodeActivity** atividade, o depurador executa a atividade e seus manipuladores associados e quebras na atividade seguir. Se a atividade que é executada é a atividade filho a última em uma atividade de composição, então após a execução, as quebras do depurador na atividade pai.
 
 ## <a name="attaching-to-a-process"></a>Anexar a um processo
  Para depurar um fluxo de trabalho, anexando a um processo, selecione o processo disponível a partir de **processos disponíveis** caixa de listagem a **anexar ao processo** caixa de diálogo. Se **automático: Código de fluxo de trabalho** não é exibido na **anexar ao** texto caixa e, em seguida, clique em **selecione**. No **Selecionar tipo de código** caixa de diálogo, clique em **depurar esses tipos de código** e selecione **fluxo de trabalho**. Em seguida, clique em **Okey** e clique em **Attach**.

@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: 7236c0cde965a52ea6ea19f4244e90ec53851405
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c19ba7ea458f7922f5e82e3277b9ab305090a5cb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659157"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113073"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalar o Visual C++ para Desenvolvimento Móvel Multiplataforma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ O Visual C++ para Desenvolvimento Móvel Multiplataforma](http://go.microsoft.co
  [Instalar ferramentas para iOS](#InstallForiOS)   
  [Instalar ou atualizar as dependências manualmente](#ThirdParty)  
   
-##  <a name="Requirements"></a> Requisitos  
+## <a name="Requirements"></a> Requisitos  
   
 - Para ver os requisitos de instalação, consulte [Requisitos de sistema do Visual Studio 2015](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
   
@@ -44,23 +44,23 @@ O Visual C++ para Desenvolvimento Móvel Multiplataforma](http://go.microsoft.co
   
 - Compilar código para iOS requer uma Apple ID, uma conta do Programa de Desenvolvedores de iOS e um computador Mac que possa executar o [Xcode 6](http://go.microsoft.com/fwlink/p/?LinkId=536387) ou posterior versões OS X Mavericks ou posteriores. Para ver etapas de instalação simples, consulte [Instalar ferramentas para iOS](#InstallForiOS).  
   
-##  <a name="GetTheTools"></a> Obter as ferramentas  
+## <a name="GetTheTools"></a> Obter as ferramentas  
  O Visual C++ para Desenvolvimento Móvel de Multiplataforma é um componente instalável incluído nas edições Enterprise, Professional e Community do Visual Studio. Para obter o Visual Studio, vá até a página de [Downloads do Visual Studio 2015](http://go.microsoft.com/fwlink/p/?linkid=517106) e baixe o Visual Studio 2015 com a Atualização 2 ou posterior.  
   
-##  <a name="InstallTheTools"></a> Instalar as ferramentas  
+## <a name="InstallTheTools"></a> Instalar as ferramentas  
  O instalador do Visual Studio 2015 inclui uma opção para instalar o Visual C++ para Desenvolvimento Móvel de Multiplataforma. Isso instala os modelos, componentes e ferramentas de linguagem C++ necessários para o Visual Studio, os conjuntos de ferramentas GCC e Clang necessários para compilação e depuração de Android, e componentes para se comunicar com um Mac para desenvolvimento de iOS. Ele também instala todas as ferramentas de terceiros e kits de desenvolvimento de software que são necessários para dar suporte ao desenvolvimento de aplicativos Android e iOS. A maioria dessas ferramentas de terceiros são softwares livres necessários para dar suporte à plataforma Android.  
   
--   O NDK (Kit de Desenvolvimento Nativo) do Android é necessário para compilar código C++ que se destina à plataforma Android.  
+- O NDK (Kit de Desenvolvimento Nativo) do Android é necessário para compilar código C++ que se destina à plataforma Android.  
   
--   O SDK do Android, o Apache Ant e o Java SE Development Kit são necessários para o processo de build do Android.  
+- O SDK do Android, o Apache Ant e o Java SE Development Kit são necessários para o processo de build do Android.  
   
--   O Emulador do Microsoft Visual Studio para Android é um emulador de alto desempenho opcional útil para testar e depurar seu código.  
+- O Emulador do Microsoft Visual Studio para Android é um emulador de alto desempenho opcional útil para testar e depurar seu código.  
   
 #### <a name="to-install-visual-c-for-cross-platform-mobile-development-and-the-third-party-tools"></a>Para instalar o Visual C++ para Desenvolvimento Móvel de Multiplataforma e as ferramentas de terceiros  
   
-1.  Execute o instalador do Visual Studio 2015 que você baixou seguindo o link [Obter as ferramentas](#GetTheTools). Para instalar componentes opcionais, escolha **Personalizado** como o tipo de instalação. Escolha **Avançar** para selecionar os componentes opcionais a serem instalados.  
+1. Execute o instalador do Visual Studio 2015 que você baixou seguindo o link [Obter as ferramentas](#GetTheTools). Para instalar componentes opcionais, escolha **Personalizado** como o tipo de instalação. Escolha **Avançar** para selecionar os componentes opcionais a serem instalados.  
   
-2.  Em Selecionar recursos, expanda **Desenvolvimento Móvel de Multiplataforma** e marque **Desenvolvimento Móvel no Visual C++**.  
+2. Em Selecionar recursos, expanda **Desenvolvimento Móvel de Multiplataforma** e marque **Desenvolvimento Móvel no Visual C++**.  
   
      ![Selecionar Desenvolvimento Móvel no Visual C&#43;&#43;](../cross-platform/media/cppmdd-install-vcmdd.png "CPPMDD_Install_VCMDD")  
   
@@ -70,9 +70,9 @@ O Visual C++ para Desenvolvimento Móvel Multiplataforma](http://go.microsoft.co
   
      Escolha **Avançar** para continuar.  
   
-3.  Os componentes de terceiros têm seus próprios termos de licença. É possível exibir os termos de licença escolhendo o link **Termos de Licença** ao lado de cada componente. Escolha **Instalar** para adicionar os componentes e instalar o Visual Studio e o Visual C++ para Desenvolvimento Móvel Multiplataforma.  
+3. Os componentes de terceiros têm seus próprios termos de licença. É possível exibir os termos de licença escolhendo o link **Termos de Licença** ao lado de cada componente. Escolha **Instalar** para adicionar os componentes e instalar o Visual Studio e o Visual C++ para Desenvolvimento Móvel Multiplataforma.  
   
-4.  Quando a instalação for concluída, feche o instalador e reinicie o computador. Algumas ações de instalação dos componentes de terceiros não têm efeito até que o computador seja reiniciado.  
+4. Quando a instalação for concluída, feche o instalador e reinicie o computador. Algumas ações de instalação dos componentes de terceiros não têm efeito até que o computador seja reiniciado.  
   
     > [!IMPORTANT]
     >  Você deve reiniciar para certificar-se de que tudo esteja instalado corretamente.  
@@ -82,12 +82,12 @@ O Visual C++ para Desenvolvimento Móvel Multiplataforma](http://go.microsoft.co
     > [!NOTE]
     >  Se o seu computador ou sua versão do Windows não der suporte ao Hyper-V, não será possível usar o componente de Emulador do Microsoft Visual Studio para Android. A Home Edition do Windows não inclui suporte para Hyper-V.  
   
-5.  Abra o Visual Studio. Se esta for a primeira vez que você executa o Visual Studio, ele poderá levar algum tempo para ser configurado e se conectar. Quando o Visual Studio estiver pronto, no menu **Ferramentas**, selecione **Extensões e Atualizações**, **Atualizações**. Se houver atualizações do Visual Studio disponíveis para o Visual C++ para Desenvolvimento Móvel Multiplataforma ou para o Emulador do Microsoft Visual Studio para Android, instale-as.  
+5. Abra o Visual Studio. Se esta for a primeira vez que você executa o Visual Studio, ele poderá levar algum tempo para ser configurado e se conectar. Quando o Visual Studio estiver pronto, no menu **Ferramentas**, selecione **Extensões e Atualizações**, **Atualizações**. Se houver atualizações do Visual Studio disponíveis para o Visual C++ para Desenvolvimento Móvel Multiplataforma ou para o Emulador do Microsoft Visual Studio para Android, instale-as.  
   
-##  <a name="InstallForiOS"></a> Instalar ferramentas para iOS  
+## <a name="InstallForiOS"></a> Instalar ferramentas para iOS  
  É possível usar o Visual C++ para Desenvolvimento Móvel Multiplataforma para editar, depurar e implantar código do iOS no Simulador de IOS ou em um dispositivo iOS, mas devido a restrições de licenciamento, o código deve ser compilado remotamente em um Mac. Para compilar e executar aplicativos iOS usando o Visual Studio, é necessário instalar e configurar o agente remoto em seu Mac. Para obter instruções detalhadas sobre a instalação, pré-requisitos e opções de configuração, consulte [Instalar e configurar ferramentas para compilar usando iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md). Se não estiver compilando para iOS, você poderá ignorar esta etapa.  
   
-##  <a name="ThirdParty"></a> Instalar ou atualizar as dependências manualmente  
+## <a name="ThirdParty"></a> Instalar ou atualizar as dependências manualmente  
  Se você optar por não instalar uma ou mais dependências de terceiros usando o instalador do Visual Studio quando instalar a opção de Desenvolvimento Móvel do Visual C++, você poderá instalá-las mais tarde usando as etapas em [Instalar as ferramentas](#InstallTheTools). Também é possível instalar ou atualizá-las independentemente do Visual Studio.  
   
 > [!CAUTION]
@@ -123,15 +123,15 @@ O Visual C++ para Desenvolvimento Móvel Multiplataforma](http://go.microsoft.co
   
 #### <a name="to-set-the-paths-for-third-party-tools"></a>Para definir os caminhos para as ferramentas de terceiros  
   
-1.  Na barra de menus do Visual Studio, selecione **Ferramentas**, **Opções**.  
+1. Na barra de menus do Visual Studio, selecione **Ferramentas**, **Opções**.  
   
-2.  Na caixa de diálogo **Opções**, expanda **Multiplataforma**, **C++** e selecione **Android**.  
+2. Na caixa de diálogo **Opções**, expanda **Multiplataforma**, **C++** e selecione **Android**.  
   
      ![Opções de caminho da ferramenta Android](../cross-platform/media/cppmdd-options-android.PNG "CPPMDD_Options_Android")  
   
-3.  Para alterar o caminho usado por uma ferramenta, marque a caixa de seleção ao lado do caminho e edite o caminho da pasta na caixa de texto. Você também pode usar o botão Procurar (**...** ) para abrir uma caixa de diálogo **Selecionar local** para escolher a pasta.  
+3. Para alterar o caminho usado por uma ferramenta, marque a caixa de seleção ao lado do caminho e edite o caminho da pasta na caixa de texto. Você também pode usar o botão Procurar (**...** ) para abrir uma caixa de diálogo **Selecionar local** para escolher a pasta.  
   
-4.  Escolha **OK** para salvar os locais de pasta da ferramenta personalizada.  
+4. Escolha **OK** para salvar os locais de pasta da ferramenta personalizada.  
   
 ## <a name="see-also"></a>Consulte também  
  [Instalar e configurar ferramentas para criação usando iOS](../cross-platform/install-and-configure-tools-to-build-using-ios.md)   

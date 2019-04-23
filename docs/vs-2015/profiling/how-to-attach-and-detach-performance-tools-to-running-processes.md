@@ -17,14 +17,14 @@ caps.latest.revision: 35
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2357993f6f0d814bc2383564cafe16bb2e21225a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 873f4735cd1be2525b8b009dc94787b4eed394ad
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54762429"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60095731"
 ---
-# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Como anexar e desanexar ferramentas de desempenho de processos em execução
+# <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>Como: Anexar e desanexar ferramentas de desempenho para processos em execução
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O criador de perfil pode ser usado para anexar ou desanexar de um processo em execução para facilitar a amostragem e a coleta de dados de desempenho. É possível usar esse método para criar o perfil de um processo quando você deseja evitar a coleta de dados sobre o tempo de carregamento do aplicativo ou para monitorar o desempenho de um processo após ele atingir um estado específico.  
@@ -44,7 +44,7 @@ O criador de perfil pode ser usado para anexar ou desanexar de um processo em ex
   
 ### <a name="to-attach-to-a-running-process"></a>Para anexar a um processo em execução  
   
-1.  No menu **Analisar**, aponte para **Criador de Perfil** e clique em **Anexar/Desanexar**.  
+1. No menu **Analisar**, aponte para **Criador de Perfil** e clique em **Anexar/Desanexar**.  
   
      \- ou -  
   
@@ -52,13 +52,13 @@ O criador de perfil pode ser usado para anexar ou desanexar de um processo em ex
   
      É exibida a caixa de diálogo **Anexar Criador de Perfil a Processo**.  
   
-2.  Clique no nome do processo ao qual deseja anexar.  
+2. Clique no nome do processo ao qual deseja anexar.  
   
-3.  Clique em **Anexar**.  
+3. Clique em **Anexar**.  
   
 ### <a name="to-detach-from-a-running-process"></a>Para desanexar de um processo em execução  
   
-1.  No menu **Analisar**, aponte para **Criador de Perfil** e clique em **Anexar/Desanexar**.  
+1. No menu **Analisar**, aponte para **Criador de Perfil** e clique em **Anexar/Desanexar**.  
   
      \- ou -  
   
@@ -66,13 +66,13 @@ O criador de perfil pode ser usado para anexar ou desanexar de um processo em ex
   
      É exibida a caixa de diálogo **Anexar Criador de Perfil a Processo**.  
   
-2.  Clique no nome da imagem da qual deseja desanexar.  
+2. Clique no nome da imagem da qual deseja desanexar.  
   
-3.  Clique em **Desanexar**.  
+3. Clique em **Desanexar**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Controlling Data Collection](../profiling/controlling-data-collection.md)  (Controlando a coleta de dados)  
  [Visão geral da sessão de desempenho](../profiling/performance-session-overview.md)   
- [Como iniciar e encerrar a coleta de dados de desempenho](../profiling/how-to-start-and-end-performance-data-collection.md)   
+ [Como: Iniciar e terminar a coleta de dados de desempenho](../profiling/how-to-start-and-end-performance-data-collection.md)   
  [Criação de perfil e segurança do Windows Vista](../profiling/profiling-and-windows-vista-security.md)   
  [VSPerfCmd](../profiling/vsperfcmd.md)

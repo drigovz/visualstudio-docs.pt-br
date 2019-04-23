@@ -13,14 +13,14 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1059e4035e620d9feb0498bacf5516eed99b5ba3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 394c9adf6794ae6e6c547a46e1fe469e0c642ba8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54755333"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096446"
 ---
-# <a name="how-to-create-multi-project-templates"></a>Como criar modelos multiprojeto
+# <a name="how-to-create-multi-project-templates"></a>Como: Criar modelos multiprojetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Os modelos de vários projetos atuam como contêineres para dois ou mais projetos. Quando um projeto baseado em um modelo multiprojeto é criado com base na caixa de diálogo **Novo Projeto**, todo projeto no modelo é adicionado à solução.  
@@ -79,15 +79,15 @@ Os modelos de vários projetos atuam como contêineres para dois ou mais projeto
   
 ### <a name="to-create-a-multi-project-template"></a>Para criar um modelo multiprojeto  
   
-1.  Crie os projetos a serem incluídos no modelo multiprojeto.  
+1. Crie os projetos a serem incluídos no modelo multiprojeto.  
   
-2.  Crie arquivos .vstemplate para cada projeto. Para obter mais informações, consulte [Como criar modelos de projeto](../ide/how-to-create-project-templates.md).  
+2. Crie arquivos .vstemplate para cada projeto. Para obter mais informações, confira [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md).  
   
-3.  Crie um arquivo .vstemplate raiz para conter os metadados do modelo multiprojeto. Para obter mais informações, consulte o primeiro exemplo na seção a seguir.  
+3. Crie um arquivo .vstemplate raiz para conter os metadados do modelo multiprojeto. Para obter mais informações, consulte o primeiro exemplo na seção a seguir.  
   
-4.  Selecione os arquivos e pastas a serem incluídos em seu modelo, clique com o botão direito do mouse na seleção, clique em **Enviar Para** e, em seguida, clique em **Pasta Compactada (Zipada)**. Esses arquivos e pastas estão compactados em um arquivo .zip.  
+4. Selecione os arquivos e pastas a serem incluídos em seu modelo, clique com o botão direito do mouse na seleção, clique em **Enviar Para** e, em seguida, clique em **Pasta Compactada (Zipada)**. Esses arquivos e pastas estão compactados em um arquivo .zip.  
   
-5.  Coloque o arquivo de modelo .zip no diretório de modelo de projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Por padrão, esse diretório é \Meus Documentos\Visual Studio *Versão*\Templates\ProjectTemplates\\.  
+5. Coloque o arquivo de modelo .zip no diretório de modelo de projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Por padrão, esse diretório é \Meus Documentos\Visual Studio *Versão*\Templates\ProjectTemplates\\.  
   
 ## <a name="example"></a>Exemplo  
  Esse exemplo mostra um arquivo .vstemplate raiz multiprojeto básico. Neste exemplo, o modelo contém dois projetos, `My Windows Application` e `My Class Library`. O atributo `ProjectName` no elemento `ProjectTemplateLink` define o nome do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para atribuir este projeto. Se o atributo `ProjectName` não existir, o nome do arquivo .vstemplate é usado como o nome do projeto.  
@@ -152,7 +152,7 @@ Os modelos de vários projetos atuam como contêineres para dois ou mais projeto
 ## <a name="see-also"></a>Consulte também  
  [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)   
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
- [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)   
+ [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)   
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [Elemento SolutionFolder (modelos do Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)   
  [Elemento ProjectTemplateLink (modelos do Visual Studio)](../extensibility/projecttemplatelink-element-visual-studio-templates.md)
