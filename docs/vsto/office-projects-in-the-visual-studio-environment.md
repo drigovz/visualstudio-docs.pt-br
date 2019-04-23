@@ -41,12 +41,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e5d3017d293b8288df9b5d7bdbe09fe2e901fa58
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 65f3a3abfe7e49872c7131a247d74612200bf42a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54865977"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091008"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Projetos do Office no ambiente do Visual Studio
   Os projetos do Microsoft Office têm uma experiência de desenvolvimento semelhante a outros tipos de projeto no Visual Studio, como projetos do Windows Forms. Quando você cria ou abre um projeto do Office, os itens de projeto aparecem no **Gerenciador de soluções**. Para projetos no nível de documento, o documento (isto é, o documento do Word ou a pasta de trabalho do Excel) é aberto no Visual Studio e se comporta como um designer visual.
@@ -73,7 +73,7 @@ ms.locfileid: "54865977"
 ### <a name="temporary-certificates"></a>Certificados temporários
  Projetos do Office também incluem um certificado temporário chamado *nome do projeto*temporarykey. Esse certificado é usado para assinar o aplicativo e os manifestos de implantação do projeto durante o desenvolvimento. Para obter mais informações, consulte [conceder confiança a soluções do Office](../vsto/granting-trust-to-office-solutions.md) e [soluções do Office Secure](../vsto/securing-office-solutions.md).
 
-###  <a name="hiddenfiles"></a> Arquivos de projeto ocultos
+### <a name="hiddenfiles"></a> Arquivos de projeto ocultos
  Vários arquivos de projeto são ocultados por padrão. Esses arquivos são gerados pelo Visual Studio e diferem por tipo de projeto. Para exibir arquivos ocultos, clique em **Show All Files** na **Gerenciador de soluções**.
 
  Não modifique os arquivos de projeto ocultos. A alteração direta desses arquivos não tem suporte e pode corromper seu projeto. Os arquivos de projeto ocultos são regenerados sempre que determinadas alterações ocorrerem no documento. Se você fizer alterações manuais em um arquivo de projeto oculto, essas alterações serão perdidas quando o arquivo for regenerado.

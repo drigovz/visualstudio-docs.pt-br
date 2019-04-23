@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e53c91a641606f0ab4b29f9ce0357f4e9ee87022
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b38f81b3269d0a456c077023d23861a55ac06a4c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944620"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117183"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definindo uma política de bloqueio para criar segmentos somente leitura
 A API de imutabilidade do SDK de modelagem e visualização do Visual Studio permite que um programa bloquear a parte ou todo um modelo de linguagem específica do domínio (DSL), para que ele pode ser lido mas não alterado. Essa opção somente leitura pode ser usada, por exemplo, para que um usuário pode solicitar colegas para anotar e analisar um modelo de DSL, mas pode não permitir que alterem o original.
@@ -56,15 +56,15 @@ partition.SetLocks(Locks.Delete);
 ### <a name="using-locks"></a>Uso de bloqueios
  Você pode usar bloqueios para implementar esquemas, como os exemplos a seguir:
 
--   Não permitir alterações para todos os elementos e relações, exceto aqueles que representam os comentários. Isso permite que os usuários fazer anotações em um modelo sem alterá-lo.
+- Não permitir alterações para todos os elementos e relações, exceto aqueles que representam os comentários. Isso permite que os usuários fazer anotações em um modelo sem alterá-lo.
 
--   Não permitir alterações na partição padrão, mas permitir que as alterações na partição de diagrama. O usuário pode reorganizar o diagrama, mas não é possível alterar o modelo subjacente.
+- Não permitir alterações na partição padrão, mas permitir que as alterações na partição de diagrama. O usuário pode reorganizar o diagrama, mas não é possível alterar o modelo subjacente.
 
--   Não permitir alterações para a Store, exceto para um grupo de usuários que são registrados em um banco de dados separado. Para outros usuários, o diagrama e modelo são somente leitura.
+- Não permitir alterações para a Store, exceto para um grupo de usuários que são registrados em um banco de dados separado. Para outros usuários, o diagrama e modelo são somente leitura.
 
--   Não permitir alterações no modelo se uma propriedade booleana do diagrama for definida como true. Forneça um comando de menu para alterar essa propriedade. Isso ajuda a garantir que os usuários que não fazem com que as alterações acidentalmente.
+- Não permitir alterações no modelo se uma propriedade booleana do diagrama for definida como true. Forneça um comando de menu para alterar essa propriedade. Isso ajuda a garantir que os usuários que não fazem com que as alterações acidentalmente.
 
--   Não permitir a adição e exclusão de elementos e relações de classes específicas, mas permitir que as alterações de propriedade. Isso fornece aos usuários um formulário fixado na qual eles podem preencher as propriedades.
+- Não permitir a adição e exclusão de elementos e relações de classes específicas, mas permitir que as alterações de propriedade. Isso fornece aos usuários um formulário fixado na qual eles podem preencher as propriedades.
 
 ## <a name="lock-values"></a>Valores de bloqueio
  Bloqueios podem ser definidos em Store, partição ou ModelElement individual. Bloqueios é um `Flags` enumeração: você pode combinar seus valores usando '&#124;'.
@@ -95,9 +95,9 @@ partition.SetLocks(Locks.Delete);
 
  Para definir uma política de bloqueio, você deve:
 
--   Crie uma classe que implementa <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.
+- Crie uma classe que implementa <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy>.
 
--   Adicione essa classe para os serviços que estão disponíveis por meio de sua DSL DocData.
+- Adicione essa classe para os serviços que estão disponíveis por meio de sua DSL DocData.
 
 ### <a name="to-define-a-locking-policy"></a>Para definir uma política de bloqueio
  <xref:Microsoft.VisualStudio.Modeling.Immutability.ILockingPolicy> tem a seguinte definição:

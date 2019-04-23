@@ -13,12 +13,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ff52925dea61916b9fa27af8cfacc044588cdb75
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 81bb2392a4ea6d9860cdcf2beeadcfe4e6ec7940
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54785616"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091599"
 ---
 # <a name="performance-report-overview"></a>Visão geral de Relatório de Desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,19 +82,19 @@ Você pode exibir os dados de criação de perfil de uma sessão de desempenho n
 ## <a name="customizable-filter-control"></a>Controle de filtro personalizável  
  O controle de filtro personalizável tem as seguintes opções:  
   
--   **Importar Filtro** – recupera uma consulta personalizada salva anteriormente.  
+- **Importar Filtro** – recupera uma consulta personalizada salva anteriormente.  
   
--   **Exportar Filtro** – salva a consulta personalizada para o local especificado.  
+- **Exportar Filtro** – salva a consulta personalizada para o local especificado.  
   
--   **Executar Consulta** – executa a consulta, conforme exibido no controle de consulta personalizada.  
+- **Executar Consulta** – executa a consulta, conforme exibido no controle de consulta personalizada.  
   
--   **Parar Consulta** – interrompe a execução de uma consulta que está em execução. Este botão não estará disponível se nenhuma consulta estiver em execução.  
+- **Parar Consulta** – interrompe a execução de uma consulta que está em execução. Este botão não estará disponível se nenhuma consulta estiver em execução.  
   
--   **Mostrar Consulta** – Mostra/oculta o controle de consulta personalizada.  
+- **Mostrar Consulta** – Mostra/oculta o controle de consulta personalizada.  
   
--   **Salvar Analisados** – salva o relatório junto com sua análise atual como um arquivo .vsps.  
+- **Salvar Analisados** – salva o relatório junto com sua análise atual como um arquivo .vsps.  
   
--   **Exportar** – salva o relatório atual como um arquivo formatado em .CVS ou .XML, com opções para salvar as diferentes exibições.  
+- **Exportar** – salva o relatório atual como um arquivo formatado em .CVS ou .XML, com opções para salvar as diferentes exibições.  
   
 ## <a name="see-also"></a>Consulte também  
  [Analisando dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)   

@@ -23,12 +23,12 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7566d3a89ff27cc473b9352c7e0f02492dc736d1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ea1e932f7651439dcb9a1ff85094bd30e5239bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929136"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116142"
 ---
 # <a name="how-to-edit-a-register-value"></a>Como: Editar um valor de registro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,9 +37,9 @@ A janela Registros só ficará disponível se a depuração do nível de endere�
   
 ### <a name="to-change-the-value-of-a-register"></a>Para alterar o valor de um registro  
   
-1.  Na janela **Registros**, use a tecla TAB ou o mouse para mover o ponto de inserção para o valor que você deseja alterar. Quando você começa a digitar, o cursor deve estar localizado na frente do valor que você deseja substituir.  
+1. Na janela **Registros**, use a tecla TAB ou o mouse para mover o ponto de inserção para o valor que você deseja alterar. Quando você começa a digitar, o cursor deve estar localizado na frente do valor que você deseja substituir.  
   
-2.  Digite o novo valor.  
+2. Digite o novo valor.  
   
     > [!CAUTION]
     >  Alterar valores do registro (principalmente nos registros de EIP e EBP) pode afetar a execução do programa.  

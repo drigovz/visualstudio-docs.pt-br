@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6a23cca7e0ae333b50c06e5e4b40e0a51d626f9b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c693b85eb7441749300181da8108dae353e91ad1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56635703"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089361"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Atualizar e migrar soluções do Office
   Se você tiver um projeto do Microsoft Office que foi criado em uma versão anterior do Visual Studio, você deve atualizar o projeto para usá-lo nas versões atuais do Visual Studio. Para atualizar um projeto do Microsoft Office, abra-o em uma versão do Visual Studio que inclui o Microsoft Office developer tools. Para obter mais informações sobre as versões do Visual Studio que incluem o Microsoft Office developer tools, consulte [configurar um computador para desenvolver soluções do Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
@@ -35,22 +35,22 @@ ms.locfileid: "56635703"
 ## <a name="changes-to-upgraded-projects"></a>Alterações em projetos atualizados
  Quando você atualiza um projeto do Microsoft Office, o Visual Studio modifica o projeto para direcionar os itens a seguir:
 
--   O Visual Studio 2010 Tools for Office runtime. Para obter mais informações, consulte [Visual Studio Tools for Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+- O Visual Studio 2010 Tools for Office runtime. Para obter mais informações, consulte [Visual Studio Tools for Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
--   As referências de assembly atual.
+- As referências de assembly atual.
 
--   Uma versão do .NET Framework que é compatível com o tipo de projeto (quando você atualiza para o Visual Studio 2013 apenas).
+- Uma versão do .NET Framework que é compatível com o tipo de projeto (quando você atualiza para o Visual Studio 2013 apenas).
 
--   Uma versão do Microsoft Office que é compatível com o tipo de projeto (quando você atualiza para o Visual Studio 2013 apenas).
+- Uma versão do Microsoft Office que é compatível com o tipo de projeto (quando você atualiza para o Visual Studio 2013 apenas).
 
 ## <a name="assembly-references"></a>Referências de assembly
  O Visual Studio atualiza as seguintes referências de assembly no projeto:
 
--   Microsoft Office assemblies de interoperabilidade primários (PIAs).
+- Microsoft Office assemblies de interoperabilidade primários (PIAs).
 
--   Assemblies no [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Para obter mais informações sobre esses assemblies, consulte [Visual Studio Tools for Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
+- Assemblies no [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Para obter mais informações sobre esses assemblies, consulte [Visual Studio Tools for Office runtime overview](../vsto/visual-studio-tools-for-office-runtime-overview.md).
 
--   Versões novas ou atualizadas de assemblies dependentes.
+- Versões novas ou atualizadas de assemblies dependentes.
 
 ## <a name="targeted-net-framework"></a>.NET Framework de destino
  Quando você atualiza um projeto do Visual Studio 2013, Visual Studio modifica o projeto para qualquer um de destino a [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ou o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. A versão do .NET framework destinada pelo projeto depende de qual versão do Office está instalada em seu computador. Se [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] é instalado, o Visual Studio modifica o projeto tenha como destino o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Caso contrário, o Visual Studio modifica o projeto tenha como destino o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].

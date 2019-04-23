@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a13d0c8ff1383e27f9401f6549c422a8fef96e99
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e3361ba51607924ee0bd0701f6f2dddf12334f93
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650038"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090375"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>Como: Conectar-se a dados em um serviço
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,20 +43,20 @@ Você conecta seu aplicativo para os dados retornados de um serviço executando 
   
 ### <a name="to-connect-your-application-to-a-service"></a>Conectar seu aplicativo a um serviço  
   
-1.  No menu **Dados**, clique em **Adicionar Nova Fonte de Dados**.  
+1. No menu **Dados**, clique em **Adicionar Nova Fonte de Dados**.  
   
-2.  Selecione **serviço** sobre o **escolher um tipo de fonte de dados** página e, em seguida, clique em **próxima**.  
+2. Selecione **serviço** sobre o **escolher um tipo de fonte de dados** página e, em seguida, clique em **próxima**.  
   
-3.  Insira o endereço do serviço que você deseja usar ou clique em **Discover** para localizar serviços na solução atual e, em seguida, clique em **vá**.  
+3. Insira o endereço do serviço que você deseja usar ou clique em **Discover** para localizar serviços na solução atual e, em seguida, clique em **vá**.  
   
-4.  Opcionalmente, um novo **Namespace** podem ser digitados no lugar do valor padrão.  
+4. Opcionalmente, um novo **Namespace** podem ser digitados no lugar do valor padrão.  
   
     > [!NOTE]
     >  Clique em **Advanced** para abrir o [configurar a caixa de diálogo de referência de serviço](../data-tools/configure-service-reference-dialog-box.md).  
   
-5.  Clique em **Okey** para adicionar uma referência de serviço ao seu projeto.  
+5. Clique em **Okey** para adicionar uma referência de serviço ao seu projeto.  
   
-6.  Clique em **Finalizar**.  
+6. Clique em **Finalizar**.  
   
      A fonte de dados é adicionada para o **fontes de dados** janela.  
   
@@ -64,7 +64,7 @@ Você conecta seu aplicativo para os dados retornados de um serviço executando 
   
 #### <a name="to-add-functionality-to-your-application"></a>Para adicionar funcionalidade ao seu aplicativo  
   
--   Selecione um item na **fontes de dados** janela e arraste-o para um formulário para criar controles associados. Para obter mais informações, confira [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
+- Selecione um item na **fontes de dados** janela e arraste-o para um formulário para criar controles associados. Para obter mais informações, confira [Associar controles a dados no Visual Studio](../data-tools/bind-controls-to-data-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Associar controles WPF a um WCF data service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)   

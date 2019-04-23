@@ -11,12 +11,12 @@ ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: fcbf6c3908460ce9d0f34b31c9a815c652de8031
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba059cc1c5546bc437c7ea83a08aa8dca0a56f98
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117675"
 ---
 # <a name="evaluating-locals"></a>Avaliando locais
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ ms.locfileid: "58929026"
   
  Essa funcionalidade de recuperar o valor de um local é encapsulada em uma função auxiliar que realiza as seguintes tarefas:  
   
-1.  Associa a `IDebugField` objeto na memória para obter um `IDebugObject` objeto.  
+1. Associa a `IDebugField` objeto na memória para obter um `IDebugObject` objeto.  
   
-2.  Obtém o valor da memória. Esse valor é representado como uma série de bytes.  
+2. Obtém o valor da memória. Esse valor é representado como uma série de bytes.  
   
-3.  Formata o valor com base no tipo do local.  
+3. Formata o valor com base no tipo do local.  
   
-4.  Retorna um objeto genérico que contém o valor do local. No C#, isso é um `object`, e em C++, esse é um `VARIANT`.  
+4. Retorna um objeto genérico que contém o valor do local. No c#, isso é um `object`, e em C++, esse é um `VARIANT`.  
   
 ## <a name="managed-code"></a>Código gerenciado  
  Essa é uma implementação de uma função que recupera o valor de um local no código gerenciado.  

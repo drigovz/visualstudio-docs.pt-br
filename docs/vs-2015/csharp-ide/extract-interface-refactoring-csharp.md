@@ -1,5 +1,5 @@
 ---
-title: Extrair Interface refatoração (C#) | Microsoft Docs
+title: Extrair Interface refatoração (c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e59864cabf638f4525165ed4f31c42fff748bf26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 55b24facd3a9ec935277a42c211a64d824ed6d7f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925201"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116739"
 ---
 # <a name="extract-interface-refactoring-c"></a>Refatoração Extrair Interface (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Extrair Interface é uma operação de refatoração que fornece uma maneira fá
   
 ### <a name="to-use-extract-interface"></a>Usar extrair Interface  
   
-1.  Crie um aplicativo de console chamado `ExtractInterface`e, em seguida, substitua `Program` com o código a seguir  
+1. Crie um aplicativo de console chamado `ExtractInterface`e, em seguida, substitua `Program` com o código a seguir  
   
     ```csharp  
     // Invoke Extract Interface on ProtoA.  
@@ -45,7 +45,7 @@ Extrair Interface é uma operação de refatoração que fornece uma maneira fá
     }  
     ```  
   
-2.  Com o cursor posicionado no `MethodB`e clique em **extrair Interface** sobre o **refatorar** menu.  
+2. Com o cursor posicionado no `MethodB`e clique em **extrair Interface** sobre o **refatorar** menu.  
   
      O **extrair Interface** caixa de diálogo é exibida.  
   
@@ -53,9 +53,9 @@ Extrair Interface é uma operação de refatoração que fornece uma maneira fá
   
      Você pode também com o botão direito do mouse, aponte para **refatorar**e, em seguida, clique em **extrair Interface** para exibir o **extrair Interface** caixa de diálogo.  
   
-3.  Clique em **Selecionar tudo**.  
+3. Clique em **Selecionar tudo**.  
   
-4.  Clique em **OK**.  
+4. Clique em **OK**.  
   
      Você verá o novo arquivo, IProtoA.cs e o código a seguir:  
   

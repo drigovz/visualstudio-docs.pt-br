@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fee9738cfce003ef19d311856304d87f6a4b2f15
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ce46f1db900aa5c37b49a1cc228290d7d99d29a2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918904"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117246"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Como: Usar o editor de expressão
 
@@ -36,18 +36,18 @@ O **Editor de expressão** se comporta da seguinte maneira:
 
 ## <a name="use-the-expression-editor"></a>Usar o editor de Expressão
 
-1.  No Visual Studio, abra um projeto de fluxo de trabalho novo ou existente.
+1. No Visual Studio, abra um projeto de fluxo de trabalho novo ou existente.
 
-2.  Adicione, por exemplo, a atividade de <xref:System.Activities.Statements.Assign> ao fluxo de trabalho.
+2. Adicione, por exemplo, a atividade de <xref:System.Activities.Statements.Assign> ao fluxo de trabalho.
 
     > [!NOTE]
     > Várias atividades de fluxo de trabalho têm editores de expressão. A expressão TextBlocks também aparece no designer variável, no designer do argumento, e no designer dinâmico do argumento. A atividade de <xref:System.Activities.Statements.Assign> é usada como um exemplo.
 
-3.  Clique no editor de expressão esquerdo do designer de atividade para atividades de <xref:System.Activities.Statements.Assign> .
+3. Clique no editor de expressão esquerdo do designer de atividade para atividades de <xref:System.Activities.Statements.Assign> .
 
      As cadeias de caracteres de marca d'água cinza  **\<para >** e  **\<insira uma expressão VB >** são o padrão de cadeias de caracteres de texto para editores de expressão no <xref:System.Activities.Statements.Assign> atividade.
 
-4.  Digite sua expressão. Se você inserir uma cadeia de caracteres, certifique-se coloque aspas ao redor de cadeia de caracteres. Se você escolher para associar o argumento da expressão a uma variável, deixe a aspas - tica.
+4. Digite sua expressão. Se você inserir uma cadeia de caracteres, certifique-se coloque aspas ao redor de cadeia de caracteres. Se você escolher para associar o argumento da expressão a uma variável, deixe a aspas - tica.
 
      Quando terminar, selecione uma região ou uma área fora do Editor de expressão para deslocar o foco para outra parte do designer. Mudando o foco faz com que o compilador validar a expressão, conforme descrito anteriormente.
 

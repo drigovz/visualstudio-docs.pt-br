@@ -23,22 +23,22 @@ caps.latest.revision: 29
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ed3e54852ef9e6718f2f027c8aca608f11200b1d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f6351dd9db7e6f8f29bdd15f376f84511c64bfe7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116609"
 ---
 # <a name="context-operator-c"></a>Operador de contexto (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode usar o operador de contexto em C++ para qualificar um local de ponto de interrupção, nome de variável ou expressão. O operador de contexto é útil para especificar um nome de um escopo externo que está oculto por um nome local.  
   
-##  <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Sintaxe  
+## <a name="BKMK_Using_context_operators_to_specify_a_symbol"></a> Sintaxe  
  Há duas maneiras de especificar o contexto:  
   
-1.  {,,[*module*] } *expression*  
+1. {,,[*module*] } *expression*  
   
      As chaves devem conter duas vírgulas e o nome do módulo (executável ou DLL) ou o caminho completo.  
   
@@ -48,7 +48,7 @@ Você pode usar o operador de contexto em C++ para qualificar um local de ponto 
     {,,EXAMPLE.dll}SomeFunction  
     ```  
   
-2.  *módulo*! *expressão*  
+2. *módulo*! *expressão*  
   
     ```cpp  
     EXAMPLE.dll!SomeFunction  
@@ -66,12 +66,12 @@ Você pode usar o operador de contexto em C++ para qualificar um local de ponto 
   
   Quando o avaliador de expressão localiza um símbolo em uma expressão, procura pelo símbolo na seguinte ordem:  
   
-1.  Escopo léxico externo, começando com o bloco atual, série de instruções incluídas entre chaves e a continuação externa com o bloco delimitador. O bloco atual é o código que contém o local atual, endereço do ponteiro de instrução.  
+1. Escopo léxico externo, começando com o bloco atual, série de instruções incluídas entre chaves e a continuação externa com o bloco delimitador. O bloco atual é o código que contém o local atual, endereço do ponteiro de instrução.  
   
-2.  Escopo da função. A função atual.  
+2. Escopo da função. A função atual.  
   
-3.  Escopo da classe, se o local atual estiver dentro de uma função de membro C ++. O escopo da classe inclui todas as classes base. O avaliador de expressão usa regras de dominância normais.  
+3. Escopo da classe, se o local atual estiver dentro de uma função de membro C ++. O escopo da classe inclui todas as classes base. O avaliador de expressão usa regras de dominância normais.  
   
-4.  Símbolos globais no módulo atual.  
+4. Símbolos globais no módulo atual.  
   
-5.  Símbolos públicos no programa atual.
+5. Símbolos públicos no programa atual.

@@ -22,10 +22,10 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "59504413"
 ---
 # <a name="general-debugging-options"></a>Opções gerais de depuração
@@ -48,7 +48,7 @@ Você pode definir o seguinte **geral** opções:
 
 Em condições de 2 e 3, a exceção é às vezes detectada pelo código gerenciado em `mscorlib` em vez do common language runtime. Esta opção não afeta a quebra em exceções capturadas por `mscorlib`.
 
-**Habilitar depuração no nível do endereço**: Habilita recursos avançados para depurar a nível de endereço (a janela Desmontagem, a janela **Registros** e pontos de interrupção de endereço).
+**Habilitar depuração no nível do endereço**: Habilita recursos avançados para depurar a nível de endereço (a janela **Desmontagem**, a janela **Registros** e pontos de interrupção de endereço).
 
 - **Mostrar desmontagem se a fonte não estiver disponível**:   Mostra automaticamente a **desmontagem** janela ao depurar o código para o qual a fonte está indisponível.
 
@@ -93,7 +93,7 @@ Em condições de 2 e 3, a exceção é às vezes detectada pelo código gerenci
 
 **Exigir que os arquivos de código-fonte correspondam exatamente à versão original**: Informe ao depurador para verificar se um arquivo fonte corresponde à versão do código-fonte usado para criar o arquivo executável que você está depurando. Quando a versão não corresponde, você será solicitado para encontrar uma origem correspondente. Se uma fonte compatível não for encontrada, o código-fonte não será exibido durante a depuração.
 
-**Redirecionar todo o texto da Janela Saída para a Janela Imediato**: Em vez disso, envia todas as mensagens do depurador que normalmente apareceriam na janela Saída para a janela **Imediato**.
+**Redirecionar todo o texto da Janela Saída para a Janela Imediato**: Em vez disso, envia todas as mensagens do depurador que normalmente apareceriam na janela **Saída** para a janela **Imediato**.
 
 **Mostrar estrutura bruta de objetos nas janelas de variáveis**: Desative todas as personalizações de exibição da estrutura do objeto. Para obter mais informações sobre personalizações de exibição, consulte [criar exibições personalizadas de objetos gerenciados](../debugger/create-custom-views-of-dot-managed-objects.md).
 

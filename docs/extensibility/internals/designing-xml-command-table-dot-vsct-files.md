@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a833478a8dec3b9fe82b22295482fed6f5562d14
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1e70a64e01e388af61127fd76f4a2fcee8e5a9b9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641540"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091558"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Criar arquivos de tabela (. VSCT) do comando XML
 Uma tabela de comando do XML (*VSCT*) arquivo descreve o layout e aparência de itens de comando para um VSPackage. Itens de comando incluem caixas de combinação, botões, menus, barras de ferramentas e grupos de itens de comando. Este artigo descreve os arquivos da tabela de comandos XML, como eles afetam os menus e itens de comando e como criá-los.
@@ -98,19 +98,19 @@ Você pode usar o *vsct.exe* compilador para converter um existente *CTO já* o 
 ## <a name="vsct-file-design-guidelines"></a>diretrizes de design do arquivo. VSCT
  Design com êxito uma *VSCT* de arquivos, siga estas diretrizes.
 
--   Comandos podem ser colocados somente em grupos, grupos podem ser colocados somente nos menus e menus podem ser colocados apenas em grupos. Somente os menus, na verdade, são exibidos no IDE, grupos e comandos não são.
+- Comandos podem ser colocados somente em grupos, grupos podem ser colocados somente nos menus e menus podem ser colocados apenas em grupos. Somente os menus, na verdade, são exibidos no IDE, grupos e comandos não são.
 
--   Submenus não podem ser atribuídos diretamente a um menu, mas devem ser atribuídos a um grupo, que por sua vez é atribuído a um menu.
+- Submenus não podem ser atribuídos diretamente a um menu, mas devem ser atribuídos a um grupo, que por sua vez é atribuído a um menu.
 
--   Comandos, submenus e grupos podem ser atribuídos a um grupo de gerenciamento do domínio pai ou menu usando o campo pai da sua diretiva de definição.
+- Comandos, submenus e grupos podem ser atribuídos a um grupo de gerenciamento do domínio pai ou menu usando o campo pai da sua diretiva de definição.
 
--   Organizar uma tabela de comando somente por meio dos campos pai nas diretivas tem uma limitação significativa. As diretivas que definem objetos podem levar o argumento de apenas um pai.
+- Organizar uma tabela de comando somente por meio dos campos pai nas diretivas tem uma limitação significativa. As diretivas que definem objetos podem levar o argumento de apenas um pai.
 
--   Reutilização de comandos, grupos ou submenus requer o uso de uma diretiva de novo para criar uma nova instância do objeto com seu próprio `GUID:ID` par.
+- Reutilização de comandos, grupos ou submenus requer o uso de uma diretiva de novo para criar uma nova instância do objeto com seu próprio `GUID:ID` par.
 
--   Cada `GUID:ID` par deve ser exclusivo. Reutilizar um comando que, por exemplo, foi colocado em um menu, uma barra de ferramentas, ou em um menu de contexto, é tratada pelo <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface.
+- Cada `GUID:ID` par deve ser exclusivo. Reutilizar um comando que, por exemplo, foi colocado em um menu, uma barra de ferramentas, ou em um menu de contexto, é tratada pelo <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface.
 
--   Comandos e submenus também podem ser atribuídos a vários grupos e grupos podem ser atribuídos a vários menus usando o [elemento Commands](../../extensibility/commands-element.md).
+- Comandos e submenus também podem ser atribuídos a vários grupos e grupos podem ser atribuídos a vários menus usando o [elemento Commands](../../extensibility/commands-element.md).
 
 ## <a name="vsct-file-notes"></a>Notas de arquivo. VSCT
  Se você fizer alterações para um *VSCT* arquivo depois de compilá-lo e colocá-lo em uma DLL de satélite nativo, você deve ser executado **devenv.exe /setup /nosetupvstemplates**. Fazendo força caso especificados no registro experimental para ser lidos novamente e o banco de dados interno que descreve os recursos de VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] seja recriado.

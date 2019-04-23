@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cde839deb71358936410c4e4ca4269d3ce2ee88f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a55c1e71242e59c04066c09efa2375c4bafc485b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793459"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094771"
 ---
 # <a name="how-to-apply-a-shader-to-a-3-d-model"></a>Como: Aplicar um sombreador a um modelo 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ Este documento demonstra como usar o Editor de Modelos para aplicar um sombreado
   
  Este documento demonstra esta atividade:  
   
--   Aplicar um sombreador a um modelo 3D  
+- Aplicar um sombreador a um modelo 3D  
   
 ## <a name="applying-a-shader-to-a-3-d-model"></a>Aplicar um sombreador a um modelo 3D  
  Você pode aplicar um efeito de sombreador a um modelo 3D para dar a ele uma aparência interessante.  
@@ -44,6 +44,6 @@ Este documento demonstra como usar o Editor de Modelos para aplicar um sombreado
   
 ## <a name="see-also"></a>Consulte também  
  [Como: Criar um modelo 3D básico](../designers/how-to-create-a-basic-3-d-model.md)   
- [Como criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md)   
+ [Como: Criar um sombreador de cor básico](../designers/how-to-create-a-basic-color-shader.md)   
  [Editor de Modelo](../designers/model-editor.md)   
  [Designer de Sombreador](../designers/shader-designer.md)

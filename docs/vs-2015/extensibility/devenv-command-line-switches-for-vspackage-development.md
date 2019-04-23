@@ -17,12 +17,12 @@ ms.assetid: d65d2c04-dd84-42b0-b956-555b11f5a645
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8a32606b97e2831c2074c1feeaa71e74c116fdc4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 97ce429a7140d7b95393c2dcb8b34491b3adfefa
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928177"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118039"
 ---
 # <a name="devenv-command-line-switches-for-vspackage-development"></a>Opções de linha de comando devenv para desenvolvimento de VSPackage
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "58928177"
   
  As tarefas incluem:  
   
--   Implantando aplicativos em configurações predefinidas de fora do IDE.  
+- Implantando aplicativos em configurações predefinidas de fora do IDE.  
   
--   Compilando projetos usando a predefinição de configurações de build ou automaticamente configurações de depuração.  
+- Compilando projetos usando a predefinição de configurações de build ou automaticamente configurações de depuração.  
   
--   Carregando o IDE em configurações específicas, tudo a partir de fora do IDE. Além disso, você pode personalizar o IDE durante a inicialização.  
+- Carregando o IDE em configurações específicas, tudo a partir de fora do IDE. Além disso, você pode personalizar o IDE durante a inicialização.  
   
 ## <a name="guidelines-for-switches"></a>Diretrizes para comutadores  
  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] documentação descreve as opções de linha de comando do devenv do nível de usuário. Para obter mais informações, consulte [opções de linha de comando Devenv](../ide/reference/devenv-command-line-switches.md). Devenv também dá suporte a opções de linha de comando adicionais que são úteis com desenvolvimento VSPackage, implantação e depuração.  

@@ -28,12 +28,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7547f4c675bc7c68c61e86ef61a6285bfb65fb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba950d55dcb4a4a0e1a06b40b1ed00ee3f58e54e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924456"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116206"
 ---
 # <a name="format-specifiers-in-c"></a>Especificadores de formato em C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Você pode alterar o formato no qual um valor é exibido na **inspeção** janel
 >  O depurador nativo do Visual Studio foi alterado para um novo mecanismo de depuração. Como parte dessa alteração, alguns novos especificadores de formato foram adicionados e alguns antigos foram removidos. O depurador antigo ainda é usado quando você fizer interop (nativa e gerenciada combinadas) depuração com c++ CLI. As seções a seguir neste tópico mostram os especificadores de formato para cada mecanismo de depuração.  
 > 
 > - [Especificadores de formato](#BKMK_Visual_Studio_2012_format_specifiers) descreve os especificadores de formato no novo mecanismo de depuração.  
->   -   [Especificadores de formato para depuração interop com c++ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) descreve os especificadores de formato no mecanismo de depuração antigo.  
+>   - [Especificadores de formato para depuração interop com c++ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) descreve os especificadores de formato no mecanismo de depuração antigo.  
   
 ## <a name="using-format-specifiers"></a>Usando especificadores de formato  
  Se você tiver o seguinte código:  
@@ -63,8 +63,8 @@ int main() {
   
  ![WatchFormatCPlus1](../debugger/media/watchformatcplus1.png "WatchFormatCPlus1")  
   
-##  <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Especificadores de formato  
- As tabelas a seguir mostram os especificadores de formato que você pode usar no Visual Studio. Não há suporte para especificadores em negrito para depuração interop com C + + / CLI.  
+## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Especificadores de formato  
+ As tabelas a seguir mostram os especificadores de formato que você pode usar no Visual Studio. Não há suporte para especificadores em negrito para depuração interop com C++/CLI.  
   
 |Especificador|Formatar|Valor original de inspeção|Valor exibido|  
 |---------------|------------|--------------------------|---------------------|  
@@ -94,7 +94,7 @@ int main() {
 > [!NOTE]
 >  Quando o **hv** especificador de formato estiver presente, o depurador tenta determinar o comprimento do buffer e exibir o número apropriado de elementos. Como nem sempre é possível que o depurador localizar o tamanho do buffer exata de uma matriz, você deve usar um especificador de tamanho `(pBuffer,[bufferSize])` sempre que possível. O **hv** especificador de formato é destinado para cenários em que o tamanho do buffer não está prontamente disponível  
   
-###  <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Especificadores de tamanho para ponteiros como matrizes  
+### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Especificadores de tamanho para ponteiros como matrizes  
  Se você tiver um ponteiro para um objeto que queira exibir como uma matriz, pode usar um inteiro ou uma expressão para especificar o número de elementos da matriz:  
   
 |Especificador|Formatar|Valuen original de inspeção|Valor exibido|  
@@ -103,7 +103,7 @@ int main() {
 |**[exp]**|Uma expressão C++ válida que é avaliada como um inteiro.|pBuffer,[bufferSize]|Exibe pBuffer como uma matriz de `bufferSize` elementos.|  
 |**expand(n)**|Uma expressão C++ válida que é avaliada como um inteiro|pBuffer, expand(2)|Exibe o terceiro elemento da  `pBuffer`|  
   
-##  <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Especificadores de formato para depuração interop com c++ CLI  
+## <a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> Especificadores de formato para depuração interop com c++ CLI  
  Especificadores em **negrito** têm suporte somente para depuração nativos e c++ /CLI código CLI.  
   
 |Especificador|Formatar|Valor original de inspeção|Valor exibido|  
@@ -126,7 +126,7 @@ int main() {
 |wm|Números de mensagens do Windows|0x0010|WM_CLOSE|  
 |!|formato bruto, ignorando qualquer personalização de exibições de tipo de dados|\<personalizado representação >|4|  
   
-###  <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Formatar os locais de memória de especificadores em depuração interop com C + + / CLI  
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Formatar os locais de memória de especificadores em depuração interop com C++/CLI  
  A tabela a seguir contém os símbolos de formatação usados para locais de memória. Você pode usar um especificador de local da memória com qualquer valor ou expressão que seja avaliada como um local.  
   
 |Símbolo|Formatar|Valor original de inspeção|Valor exibido|  
@@ -139,7 +139,7 @@ int main() {
 |**mq**|2 palavras quádruplas|0x0012ffac|0x0012ffac 7ffdf00000000000 5f441a790012fdd4|  
 |**mu**|Caracteres de 2 bytes (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|  
   
-###  <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Especificador de tamanho para ponteiros como matrizes em depuração interop com c++ /CLI CLIt  
+### <a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> Especificador de tamanho para ponteiros como matrizes em depuração interop com c++ /CLI CLIt  
  Se você tiver um ponteiro para um objeto que você deseja exibir como uma matriz, pode usar um inteiro para especificar o número de elementos da matriz:  
   
 |Especificador|Formatar|Expressão|Valor exibido|  

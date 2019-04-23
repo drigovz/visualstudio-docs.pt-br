@@ -14,14 +14,14 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e28232db66663cb668a28a33d12daa8ff3f210ce
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 107b42500bbe2daed0d03d3e23e4817c9c3b3fc4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54761634"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089920"
 ---
-# <a name="how-to-manage-editor-windows"></a>Como gerenciar janelas do editor
+# <a name="how-to-manage-editor-windows"></a>Como: Gerenciar o Windows de Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode trabalhar com o código em vários locais ao mesmo tempo. Faça isso dividindo uma janela do Editor ou abrindo várias instâncias de janelas do editor.  
@@ -34,9 +34,9 @@ Você pode trabalhar com o código em vários locais ao mesmo tempo. Faça isso 
   
 #### <a name="to-split-a-pane"></a>Para dividir um painel  
   
-1.  Clique dentro da janela do editor para colocá-la em foco.  
+1. Clique dentro da janela do editor para colocá-la em foco.  
   
-2.  No menu **Janela**, selecione **Dividir**.  
+2. No menu **Janela**, selecione **Dividir**.  
   
      A área de edição é dividida em dois painéis separados por uma barra divisória. Você pode rolar esses painéis de forma independente para exibir e editar as diferentes partes do documento ativo ao mesmo tempo. Todas as alterações feitas em um painel são refletidas no outro.  
   
@@ -45,14 +45,14 @@ Você pode trabalhar com o código em vários locais ao mesmo tempo. Faça isso 
   
 #### <a name="to-return-to-single-pane-view"></a>Para retornar ao modo de exibição de painel único  
   
--   No menu **Janela**, selecione **Remover Divisão**.  
+- No menu **Janela**, selecione **Remover Divisão**.  
   
 ## <a name="creating-new-windows"></a>Criando novas janelas  
  Também é possível criar várias instâncias de uma janela do editor. Esse recurso permite abrir um documento longo em mais de uma instância de um editor, para que você possa exibir e editar seções diferentes simultaneamente em janelas do editor separadas, com tamanho normal.  
   
 #### <a name="to-create-a-new-window"></a>Para criar uma nova janela  
   
--   No menu **Janela**, clique em **Nova Janela**.  
+- No menu **Janela**, clique em **Nova Janela**.  
   
      Uma nova instância com guias do editor será adicionada.  
   

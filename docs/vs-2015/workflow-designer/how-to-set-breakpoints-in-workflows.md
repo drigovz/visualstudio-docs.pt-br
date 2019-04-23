@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2aaf61ada4167f29f1c6d4754ced7c9757054a88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: dc428d70e036da311d2cf3050cec9e94a13782e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929650"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60089972"
 ---
 # <a name="how-to-set-breakpoints-in-workflows"></a>Como: Definir pontos de interrupção em fluxos de trabalho
 Quando você usa [!INCLUDE[wfd1](../includes/wfd1-md.md)], você pode definir pontos de interrupção nos fluxos de trabalho gráficos como você faria em Visual Basic ou no código em c. Como esperado, a execução de fluxo de trabalho que ele pare em cada ponto de interrupção esse definido.  
@@ -32,9 +32,9 @@ Quando você usa [!INCLUDE[wfd1](../includes/wfd1-md.md)], você pode definir po
   
 ### <a name="to-set-a-breakpoint-on-an-activity-in-the-design-view"></a>Para definir um ponto de interrupção em uma atividade no modo design  
   
-1.  Selecione a atividade que você deseja que o depurador para interromper novamente.  
+1. Selecione a atividade que você deseja que o depurador para interromper novamente.  
   
-2.  Sobre o **Debug** menu, selecione **alternar ponto de interrupção**. Um ícone vermelho aparecerá na borda superior esquerda da atividade.  
+2. Sobre o **Debug** menu, selecione **alternar ponto de interrupção**. Um ícone vermelho aparecerá na borda superior esquerda da atividade.  
   
      Como alternativa, você também pode pressionar o atalho **F9** da chave depois que a atividade ou você pode a atividade com o botão direito e selecione **ponto de interrupção** , em seguida, **Inserir ponto de interrupção**no menu de contexto.  
   
