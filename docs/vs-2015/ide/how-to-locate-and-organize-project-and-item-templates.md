@@ -16,14 +16,14 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e734100928bdd6a8609ab59d172d278e91b8ae7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54778520"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091233"
 ---
-# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Como localizar e organizar projeto e modelos de item
+# <a name="how-to-locate-and-organize-project-and-item-templates"></a>Como: Localizar e organizar projeto e modelos de Item
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Arquivos de modelo devem ser colocados em um local reconhecido pelo Visual Studio, de modo que os modelos apareçam nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item**. É possível criar subcategorias personalizadas para os modelos, para que as subcategorias também apareçam na interface do usuário.  
@@ -90,23 +90,23 @@ Arquivos de modelo devem ser colocados em um local reconhecido pelo Visual Studi
   
 ##### <a name="to-create-new-installed-item-template-categories"></a>Para criar novas categorias do modelo de item instalado  
   
-1.  Crie uma pasta na pasta da linguagem do diretório do modelo instalado. Por exemplo, para criar uma categoria Web para modelos de item de [!INCLUDE[csprcs](../includes/csprcs-md.md)], você criaria o diretório a seguir:  
+1. Crie uma pasta na pasta da linguagem do diretório do modelo instalado. Por exemplo, para criar uma categoria Web para modelos de item de [!INCLUDE[csprcs](../includes/csprcs-md.md)], você criaria o diretório a seguir:  
   
      \\*VisualStudioInstallationDirectory*\Common7\IDE\ItemTemplates\CSharp\1033\Web\  
   
-2.  Coloque todos os modelos dessa categoria na nova pasta.  
+2. Coloque todos os modelos dessa categoria na nova pasta.  
   
-3.  Feche todas as instâncias de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Feche todas as instâncias de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  No menu **Iniciar**, clique em **Executar**, digite **cmd** e clique em **OK**.  
+4. No menu **Iniciar**, clique em **Executar**, digite **cmd** e clique em **OK**.  
   
-5.  No prompt de comando, localize o diretório que contém devenv.exe e digite **devenv /setup**.  
+5. No prompt de comando, localize o diretório que contém devenv.exe e digite **devenv /setup**.  
   
-6.  Execute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+6. Execute [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-7.  Crie um projeto ou abra um projeto existente.  
+7. Crie um projeto ou abra um projeto existente.  
   
-8.  No menu **Projeto**, clique em **Adicionar Novo Item**.  
+8. No menu **Projeto**, clique em **Adicionar Novo Item**.  
   
 9. Verifique se a categoria Web aparece na caixa de diálogo **Adicionar Novo Item**, no painel **Tipos de projeto**.  
   
@@ -129,30 +129,30 @@ Arquivos de modelo devem ser colocados em um local reconhecido pelo Visual Studi
   
 ##### <a name="to-create-new-custom-item-template-categories"></a>Para criar novas categorias de modelo de item personalizado  
   
-1.  Crie uma pasta na pasta da linguagem no diretório do modelo de item personalizado. Por exemplo, para criar uma categoria HelloWorld para modelos de [!INCLUDE[csprcs](../includes/csprcs-md.md)], você criaria o diretório a seguir:  
+1. Crie uma pasta na pasta da linguagem no diretório do modelo de item personalizado. Por exemplo, para criar uma categoria HelloWorld para modelos de [!INCLUDE[csprcs](../includes/csprcs-md.md)], você criaria o diretório a seguir:  
   
      \Meus Documentos\\<versão do Visual Studio\>\Templates\ItemTemplates\CSharp\HelloWorld\  
   
-2.  Coloque todos os modelos dessa categoria na nova pasta.  
+2. Coloque todos os modelos dessa categoria na nova pasta.  
   
-3.  Crie um projeto ou abra um projeto existente.  
+3. Crie um projeto ou abra um projeto existente.  
   
-4.  No menu **Projeto**, clique em **Adicionar Novo Item**.  
+4. No menu **Projeto**, clique em **Adicionar Novo Item**.  
   
-5.  Verifique se a categoria HelloWorld aparece na caixa de diálogo **Adicionar Novo Item**, no painel **Tipos de projeto**.  
+5. Verifique se a categoria HelloWorld aparece na caixa de diálogo **Adicionar Novo Item**, no painel **Tipos de projeto**.  
   
 ### <a name="displaying-templates-in-parent-categories"></a>Exibindo modelos em categorias pai  
  Você pode habilitar modelos em subcategorias a serem exibidos em suas categorias pai usando o elemento `NumberOfParentCategoriesToRollUp` no arquivo .vstemplate. Estas etapas são idênticas para modelos de projeto e modelos de item.  
   
 ##### <a name="to-display-templates-in-parent-categories"></a>Para exibir modelos em categorias pai  
   
-1.  Localize o arquivo .zip que contém o modelo.  
+1. Localize o arquivo .zip que contém o modelo.  
   
-2.  Extraia o arquivo .zip.  
+2. Extraia o arquivo .zip.  
   
-3.  Abra o arquivo .vstemplate em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+3. Abra o arquivo .vstemplate em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-4.  No elemento `TemplateData`, adicione um elemento `NumberOfParentCategoriesToRollUp`. Por exemplo, o código a seguir torna o modelo visível na categoria pai, mas não superior.  
+4. No elemento `TemplateData`, adicione um elemento `NumberOfParentCategoriesToRollUp`. Por exemplo, o código a seguir torna o modelo visível na categoria pai, mas não superior.  
   
     ```  
     <TemplateData>  
@@ -164,17 +164,17 @@ Arquivos de modelo devem ser colocados em um local reconhecido pelo Visual Studi
     </TemplateData>  
     ```  
   
-5.  Salve e feche o arquivo .vstemplate.  
+5. Salve e feche o arquivo .vstemplate.  
   
-6.  Selecione os arquivos em seu modelo, clique com o botão direito do mouse na seleção, clique em **Enviar Para** e, em seguida, em **Pasta Compactada (zipada)**. Os arquivos são compactados em um arquivo .zip.  
+6. Selecione os arquivos em seu modelo, clique com o botão direito do mouse na seleção, clique em **Enviar Para** e, em seguida, em **Pasta Compactada (zipada)**. Os arquivos são compactados em um arquivo .zip.  
   
-7.  Exclua os arquivos de modelo extraídos e o arquivo .zip de modelo antigo.  
+7. Exclua os arquivos de modelo extraídos e o arquivo .zip de modelo antigo.  
   
-8.  Coloque o novo arquivo .zip no diretório que tinha o arquivo .zip excluído.  
+8. Coloque o novo arquivo .zip no diretório que tinha o arquivo .zip excluído.  
   
 ## <a name="see-also"></a>Consulte também  
  [Personalizando modelos](../ide/customizing-project-and-item-templates.md)   
  [Referência de esquema de modelo do Visual Studio](../extensibility/visual-studio-template-schema-reference.md)   
  [NumberOfParentCategoriesToRollUp (modelos do Visual Studio)](../extensibility/numberofparentcategoriestorollup-visual-studio-templates.md)   
- [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)   
- [Como criar modelos de item](../ide/how-to-create-item-templates.md)
+ [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)   
+ [Como: Criar modelos de item](../ide/how-to-create-item-templates.md)

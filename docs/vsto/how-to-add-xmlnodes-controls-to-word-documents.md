@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a04daa909c712a0e721597ba93a03328e8414539
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0bbfa139605a6196cf57a5a887d9cb74f54527f7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598863"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090726"
 ---
 # <a name="how-to-add-xmlnodes-controls-to-word-documents"></a>Como: Adicionar controles XMLNodes a documentos do Word
   **Importante** as informações que propus neste tópico sobre o Microsoft Word são desenvolver ou apresentadas exclusivamente para o uso e benefício de indivíduos e organizações que estão localizados fora dos Estados Unidos e seus territórios ou que estão usando o programas que são executados em produtos do Microsoft Word que foram licenciados pela Microsoft antes de janeiro de 2010, quando a Microsoft removido uma implementação da funcionalidade específica relacionada para XML personalizado do Microsoft Word. Essas informações sobre o Microsoft Word não podem ser lidas ou usadas por indivíduos ou organizações nos Estados Unidos ou em seus territórios de quem estão usando ou desenvolver programas que são executados em produtos do Microsoft Word que foram licenciados pela Microsoft depois de 10 de janeiro de 2010 ; Esses produtos não se comportará como produtos licenciados antes dessa data ou adquirido e licenciado para uso fora dos Estados Unidos.
@@ -36,34 +36,34 @@ ms.locfileid: "56598863"
 
 ### <a name="to-add-an-xmlnodes-control-to-a-document"></a>Para adicionar um controle do XMLNodes a um documento
 
-1.  No documento no designer do Visual Studio, na faixa de opções, clique o **desenvolvedor** guia.
+1. No documento no designer do Visual Studio, na faixa de opções, clique o **desenvolvedor** guia.
 
     > [!NOTE]
     >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
-2.  No **XML** , clique em **esquema**.
+2. No **XML** , clique em **esquema**.
 
      O **modelos e suplementos** caixa de diálogo é aberta.
 
-3.  Clique o **esquema XML** guia.
+3. Clique o **esquema XML** guia.
 
-4.  Clique em **adicionar esquema**.
+4. Clique em **adicionar esquema**.
 
      O **adicionar esquema** caixa de diálogo é aberta.
 
-5.  Selecione um esquema XML que contém elementos do esquema de repetição e clique em **aberto**.
+5. Selecione um esquema XML que contém elementos do esquema de repetição e clique em **aberto**.
 
      O **configurações de esquema** caixa de diálogo é exibida.
 
-6.  Atribuir um alias ou clique em **Okey** para adicionar o esquema sem um alias.
+6. Atribuir um alias ou clique em **Okey** para adicionar o esquema sem um alias.
 
      O esquema é adicionado para o **adicionar esquema** caixa de diálogo.
 
-7.  No **adicionar esquema** caixa de diálogo, clique em **Okey**.
+7. No **adicionar esquema** caixa de diálogo, clique em **Okey**.
 
      O **estrutura XML** é aberto o painel de tarefas.
 
-8.  Clique no elemento do esquema de repetição na **estrutura XML** painel de tarefas para adicioná-lo ao documento.
+8. Clique no elemento do esquema de repetição na **estrutura XML** painel de tarefas para adicioná-lo ao documento.
 
      Um <xref:Microsoft.Office.Tools.Word.XMLNodes> controle é criado e adicionado ao projeto.
 
