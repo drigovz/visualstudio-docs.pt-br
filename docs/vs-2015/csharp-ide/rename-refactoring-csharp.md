@@ -1,5 +1,5 @@
 ---
-title: Renomear a refatoração (C#) | Microsoft Docs
+title: Renomear a refatoração (c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e13682b6ff22a0052adc7db9f9db9f18d36cc9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926893"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114724"
 ---
 # <a name="rename-refactoring-c"></a>Refatoração Renomear (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "58926893"
   
 #### <a name="to-rename-an-identifier"></a>Para renomear um identificador  
   
-1.  Crie um aplicativo de console chamado `RenameIdentifier`e, em seguida, substitua `Program` com o código de exemplo a seguir.  
+1. Crie um aplicativo de console chamado `RenameIdentifier`e, em seguida, substitua `Program` com o código de exemplo a seguir.  
   
     ```csharp  
     class ProtoClassA  
@@ -76,23 +76,23 @@ ms.locfileid: "58926893"
     }  
     ```  
   
-2.  Coloque o cursor em `MethodB`, na declaração de método ou a chamada de método.  
+2. Coloque o cursor em `MethodB`, na declaração de método ou a chamada de método.  
   
-3.  Dos **refatorar** menu, selecione **Renomear**. O **Renomear** caixa de diálogo é exibida.  
+3. Dos **refatorar** menu, selecione **Renomear**. O **Renomear** caixa de diálogo é exibida.  
   
      Pode também clicar duas vezes o cursor, aponte para **refatorar** no menu de contexto e clique **Renomear** para exibir o **Renomear** caixa de diálogo.  
   
-4.  No **newname** , digite `MethodC`.  
+4. No **newname** , digite `MethodC`.  
   
-5.  Selecione o **pesquisa nos comentários** caixa de seleção.  
+5. Selecione o **pesquisa nos comentários** caixa de seleção.  
   
-6.  Clique em **OK**.  
+6. Clique em **OK**.  
   
-7.  No **visualizar alterações** caixa de diálogo, clique em **aplicar**.  
+7. No **visualizar alterações** caixa de diálogo, clique em **aplicar**.  
   
 #### <a name="to-rename-an-identifier-using-smart-tags"></a>Para renomear um identificador usando smart tags  
   
-1.  Crie um aplicativo de console chamado `RenameIdentifier`e, em seguida, substitua `Program` com o código de exemplo a seguir.  
+1. Crie um aplicativo de console chamado `RenameIdentifier`e, em seguida, substitua `Program` com o código de exemplo a seguir.  
   
     ```csharp  
     class ProtoClassA  
@@ -113,18 +113,18 @@ ms.locfileid: "58926893"
     }  
     ```  
   
-2.  Na declaração para `MethodB`, digite ou backspace sobre o identificador de método. Será exibido um prompt de marca inteligente abaixo esse identificador.  
+2. Na declaração para `MethodB`, digite ou backspace sobre o identificador de método. Será exibido um prompt de marca inteligente abaixo esse identificador.  
   
     > [!NOTE]
     >  Não é possível invocar usando smart tags na declaração de um identificador de refatoração de renomeação.  
   
-3.  Digite o atalho de teclado SHIFT + ALT + F10 e, em seguida, pressione a seta para baixo para exibir o menu de marca inteligente.  
+3. Digite o atalho de teclado SHIFT + ALT + F10 e, em seguida, pressione a seta para baixo para exibir o menu de marca inteligente.  
   
      - ou -  
   
      Mova o ponteiro do mouse sobre o aviso de marca inteligente para exibir a marca inteligente. Em seguida, mova o ponteiro do mouse sobre a marca inteligente e clique na seta para baixo para exibir o menu de marca inteligente.  
   
-4.  Selecione o **renomear '\<identifer1 >' para '\<identifier2 >'** item de menu para invocar refatoração de renomeação sem uma visualização das alterações ao seu código. Todas as referências aos  **\<identifer1 >** serão automaticamente atualizadas para  **\<identifier2 >**.  
+4. Selecione o **renomear '\<identifer1 >' para '\<identifier2 >'** item de menu para invocar refatoração de renomeação sem uma visualização das alterações ao seu código. Todas as referências aos  **\<identifer1 >** serão automaticamente atualizadas para  **\<identifier2 >**.  
   
      - ou -  
   

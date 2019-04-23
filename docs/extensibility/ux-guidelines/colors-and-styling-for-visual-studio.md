@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e305ba59eaf5a0f60ec84d40ee9888ac17982c42
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0ba49e1ab3e25e3f22a9ca8642673aa0a62869f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650623"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114763"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Cores e estilos para o Visual Studio
 
@@ -85,7 +85,7 @@ Consulte: [Expondo as cores para os usuários finais](../../extensibility/ux-gui
 
 ![Ferramentas &gt; caixa de diálogo Opções](../../extensibility/ux-guidelines/media/0301-a_toolsoptionsdialog.png "a_ToolsOptionsDialog 0301")<br />Ferramentas &gt; caixa de diálogo Opções
 
-##  <a name="BKMK_TheVSColorService"></a> O serviço VSColor
+## <a name="BKMK_TheVSColorService"></a> O serviço VSColor
 
 Visual Studio fornece um serviço de cor de ambiente, também chamado de serviço VSColor ou o serviço de cor do shell. Esse serviço permite que você associe os valores de cor de seus elementos de interface do usuário a um conjunto que contém as cores para cada tema de cores de nome-valor. O serviço de VSColor deve ser usado para todos os elementos de interface do usuário, para que as cores automaticamente alterada para refletir o tema selecionado pelo usuário atual e para que a interface do usuário associado ao serviço de cor de ambiente serão integradas novos temas em futuras versões do Visual Studio.
 
@@ -267,7 +267,7 @@ protected override void Dispose(bool disposing)
 }
 ```
 
-##  <a name="BKMK_ChoosingHighContrastColors"></a> Escolher as cores de alto contraste
+## <a name="BKMK_ChoosingHighContrastColors"></a> Escolher as cores de alto contraste
 
 ### <a name="overview"></a>Visão geral
 
@@ -330,7 +330,7 @@ Vários elementos de interface do usuário comuns já têm cores de alto contras
 | WindowFrame | -Borda IDE |
 | WindowText | -Em primeiro plano de guia ocultar automaticamente<br />-Primeiro plano de guia de janela de ferramenta selecionada<br />– Guia da janela de documento sem foco e primeiro plano de guia provisória sem foco ou não selecionado<br />-Árvore em primeiro plano do modo de exibição padrão e passe o mouse sobre o glifo não selecionado<br />-Borda da guia selecionada de janela de ferramenta<br />-Barra de rolagem glifo, borda e tela de fundo do elevador |
 
-##  <a name="BKMK_ExposingColorsForEndUsers"></a> Expondo as cores para os usuários finais
+## <a name="BKMK_ExposingColorsForEndUsers"></a> Expondo as cores para os usuários finais
 
 ### <a name="overview"></a>Visão geral
 

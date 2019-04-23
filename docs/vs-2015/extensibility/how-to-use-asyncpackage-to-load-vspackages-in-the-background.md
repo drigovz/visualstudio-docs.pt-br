@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: dedf0173-197e-4258-ae5a-807eb3abc952
 caps.latest.revision: 9
 ms.author: gregvanl
-ms.openlocfilehash: 7de79fbbd5221a75bec1e168c22e687ddc9c7ffa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f59838913ed3f9bc6679336393f6db9181291e3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924855"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091662"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Como: Usar AsyncPackage para carregar VSPackages em segundo plano
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -18,7 +18,7 @@ ms.locfileid: "58924855"
 Carregar e inicializar um VS package podem resultar em e/s de disco. Se tal e/s acontece no thread da interface do usuário, ele pode levar a problemas de capacidade de resposta. Para resolver isso, o Visual Studio 2015 apresentou a <xref:Microsoft.VisualStudio.Shell.AsyncPackage> classe que habilita o carregamento do pacote em um thread em segundo plano.  
   
 ## <a name="creating-an-asyncpackage"></a>Criando um AsyncPackage  
- Você pode começar criando um projeto VSIX (**arquivo / novo / projeto / Visual C# / extensibilidade / projeto VSIX**) e a adição de um VSPackage ao projeto (clique com botão direito no projeto e **Add/New Item / C# item/extensibilidade/Visual Pacote do Studio**). Em seguida, você pode criar seus serviços e adicionar esses serviços ao seu pacote.  
+ Você pode começar criando um projeto VSIX (**arquivo / novo / projeto / Visual c# / extensibilidade / projeto VSIX**) e a adição de um VSPackage ao projeto (clique com botão direito no projeto e **Add/New Item / c# item/extensibilidade/Visual Pacote do Studio**). Em seguida, você pode criar seus serviços e adicionar esses serviços ao seu pacote.  
   
 1. Derivar o pacote de <xref:Microsoft.VisualStudio.Shell.AsyncPackage>.  
   
@@ -75,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Converter um VSPackage existente em AsyncPackage  
  A maioria do trabalho é o mesmo que criar um novo **AsyncPackage**. Você precisará seguir as etapas 1 a 5 acima. Você também precisará tomar muito cuidado sobre o seguinte:  
   
-1.  Lembre-se de remover o **inicializar** tinha em seu pacote de substituição.  
+1. Lembre-se de remover o **inicializar** tinha em seu pacote de substituição.  
   
-2.  Evite deadlocks: Pode haver oculto RPCs em seu código que acontecerá em um thread em segundo plano. Você precisa garantir que, se você estiver fazendo uma RPC (por exemplo, **GetService**), você precisa para qualquer comutador (1) para o thread principal ou (2) use a versão assíncrona da API se um existe (por exemplo, **GetServiceAsync**).  
+2. Evite deadlocks: Pode haver oculto RPCs em seu código que acontecerá em um thread em segundo plano. Você precisa garantir que, se você estiver fazendo uma RPC (por exemplo, **GetService**), você precisa para qualquer comutador (1) para o thread principal ou (2) use a versão assíncrona da API se um existe (por exemplo, **GetServiceAsync**).  
   
-3.  Não alterne entre threads com muita frequência. Tente localizar o trabalho que pode ocorrer em um thread em segundo plano. Isso reduz o tempo de carregamento.  
+3. Não alterne entre threads com muita frequência. Tente localizar o trabalho que pode ocorrer em um thread em segundo plano. Isso reduz o tempo de carregamento.  
   
 ## <a name="querying-services-from-asyncpackage"></a>Consultando serviços de AsyncPackage  
  Uma **AsyncPackage** podem ou não carregar assincronamente, dependendo do chamador. Por exemplo,  

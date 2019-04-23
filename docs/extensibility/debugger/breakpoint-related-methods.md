@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd40ac13cf00db2903f9c9dca7cf154572e2b81
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: c1781e6aab84bfcdc665ef0d779130decc9c6421
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711170"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091948"
 ---
 # <a name="breakpoint-related-methods"></a>Métodos relacionados ao ponto de interrupção
 Um mecanismo de depuração (DES) deve dar suporte a configuração de pontos de interrupção. Depuração do Visual Studio suporta os seguintes tipos de pontos de interrupção:
 
--   Associado
+- Associado
 
      Solicitado por meio da interface do usuário e associar com êxito para um local de código especificada
 
--   Pendente
+- Pendente
 
      Solicitado por meio da interface do usuário, mas ainda não é vinculado com o real de instruções
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c8a9661673adf6cdab2d9a880ce27197a4e53127
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
-ms.translationtype: MTE95
+ms.openlocfilehash: b2aff8e1b515f460e6fdc31a528e6730971b7853
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796550"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092274"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>Depurar usando o depurador Just-in-no Visual Studio
 
@@ -26,7 +26,7 @@ Depuração Just-In-Time funciona para aplicativos de desktop do Windows. Ele n�
 > [!TIP]
 > Se você quiser apenas interromper a caixa de diálogo do depurador Just-in-apareça, mas não tiver instalado o Visual Studio, consulte [desabilita o depurador Just-in-](../debugger/just-in-time-debugging-in-visual-studio.md). Se você tivesse uma vez instalado o Visual Studio, talvez você precise [Just-In-Time de desabilitar a depuração do registro do Windows](#disable-just-in-time-debugging-from-the-windows-registry).
 
-##  <a name="BKMK_Enabling"></a> Habilitar ou Desabilitar depuração no Visual Studio Just-In-Time
+## <a name="BKMK_Enabling"></a> Habilitar ou Desabilitar depuração no Visual Studio Just-In-Time
 
 >[!NOTE]
 >Para habilitar ou desabilitar a depuração Just-In-Time, você deve estar executando o Visual Studio como administrador. Ativando ou desativando o Just-In-Time depuração define uma chave do registro e podem ser necessários privilégios de administrador para alterar essa chave. Para abrir o Visual Studio como administrador, o aplicativo do Visual Studio com o botão direito e escolha **executar como administrador**.
@@ -39,7 +39,7 @@ Você pode configurar a depuração do Visual Studio Just-In-Time **ferramentas*
 
    ![Habilitar ou desabilitar a depuração JIT](../debugger/media/dbg-jit-enable-or-disable.png "habilitar ou desabilitar a depuração JIT")
 
-1. No **just-in-habilitar a depuração para esses tipos de código** , selecione os tipos de código de depuração para depuração Just-In-Time: **gerenciado**, **nativo**, e/ou  **Script**.
+1. No **just-in-habilitar a depuração para esses tipos de código** , selecione os tipos de código de depuração para depuração Just-In-Time: **Managed**, **nativo**, e/ou **Script**.
 
 1. Selecione **OK**.
 
@@ -51,25 +51,25 @@ A depuração Just-In-Time ainda poderá ser habilitada, mesmo que o Visual Stud
 
 **Para desabilitar a depuração Just-In-Time editando o Registro:**
 
-1.  De que o Windows **inicie** menu, execute o **Editor do registro** (*regedit.exe*).
+1. De que o Windows **inicie** menu, execute o **Editor do registro** (*regedit.exe*).
 
-2.  No **Editor do registro** janela, localize e exclua as seguintes entradas do registro:
+2. No **Editor do registro** janela, localize e exclua as seguintes entradas do registro:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\DbgManagedDebugger**
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     ![Chave do registro JIT](../debugger/media/dbg-jit-registry.png "chave do registro JIT")
 
-3.  Se o computador estiver executando um sistema operacional de 64 bits, também exclua as entradas de registro a seguir:
+3. Se o computador estiver executando um sistema operacional de 64 bits, também exclua as entradas de registro a seguir:
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\DbgManagedDebugger**
 
-    -   **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
+    - **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows NT\CurrentVersion\AeDebug\Debugger**
 
     Certifique-se de não excluir ou alterar outras chaves do registro.
 
-5.  Fechar o **Editor do registro** janela.
+5. Fechar o **Editor do registro** janela.
 
 ## <a name="enable-just-in-time-debugging-of-a-windows-form"></a>Habilitar Just-In-Time de depuração de um formulário do Windows
 
@@ -79,7 +79,7 @@ Por padrão, os aplicativos de formulário do Windows têm um manipulador de exc
 
 Para habilitar a depuração em vez do padrão de tratamento de erros do Windows Form Just-In-Time, adicione essas configurações:
 
--  No `system.windows.forms` seção o *Machine. config* ou  *\<nome do aplicativo >. exe* de arquivo, defina o `jitDebugging` valor para `true`:
+- No `system.windows.forms` seção o *Machine. config* ou  *\<nome do aplicativo >. exe* de arquivo, defina o `jitDebugging` valor para `true`:
 
     ```xml
     <configuration>
@@ -87,7 +87,7 @@ Para habilitar a depuração em vez do padrão de tratamento de erros do Windows
     </configuration>
     ```
 
--  Em um aplicativo de formulário do Windows C++, também definido `DebuggableAttribute` à `true` em um *. config* arquivo ou em seu código. Se você compilar com [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) e sem [/Og](/cpp/build/reference/og-global-optimizations), o compilador definirá esse atributo para você. Se você quiser depurar um build de versão não otimizada, no entanto, você deve definir `DebuggableAttribute` adicionando a seguinte linha em seu aplicativo *AssemblyInfo* arquivo:
+- Em um aplicativo de formulário do Windows C++, também definido `DebuggableAttribute` à `true` em um *. config* arquivo ou em seu código. Se você compilar com [/Zi](/cpp/build/reference/z7-zi-zi-debug-information-format) e sem [/Og](/cpp/build/reference/og-global-optimizations), o compilador definirá esse atributo para você. Se você quiser depurar um build de versão não otimizada, no entanto, você deve definir `DebuggableAttribute` adicionando a seguinte linha em seu aplicativo *AssemblyInfo* arquivo:
 
    ```cpp
    [assembly:System::Diagnostics::DebuggableAttribute(true, true)];
@@ -96,15 +96,15 @@ Para habilitar a depuração em vez do padrão de tratamento de erros do Windows
    Para obter mais informações, consulte <xref:System.Diagnostics.DebuggableAttribute>.
 
 ## <a name="BKMK_Using_JIT"></a>Usar Just-In-Time de depuração
- Este exemplo explica quando um aplicativo gera um erro de depuração Just-In-Time.
+Este exemplo explica quando um aplicativo gera um erro de depuração Just-In-Time.
 
- - Você deve ter o Visual Studio instalado para executar estas etapas. Se você não tiver o Visual Studio, você pode baixar gratuitamente [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
+- Você deve ter o Visual Studio instalado para executar estas etapas. Se você não tiver o Visual Studio, você pode baixar gratuitamente [Visual Studio Community Edition](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15).
 
- - Certifique-se de que Just-In-Time a depuração está [habilitada](#BKMK_Enabling) na **ferramentas** > **opções** > **depuração**  >  **Just-In-Time**.
+- Certifique-se de que Just-In-Time a depuração está [habilitada](#BKMK_Enabling) na **ferramentas** > **opções** > **depuração**  >  **Just-In-Time**.
 
 Neste exemplo, você fará uma C# aplicativo de console no Visual Studio que lança uma [NullReferenceException](/dotnet/api/system.nullreferenceexception).
 
-1. No Visual Studio, crie um C# aplicativo de console (**arquivo** > **New** > **projeto** > **C#**  >  **Aplicativo de console**) denominada *ThrowsNullException*. Para obter mais informações sobre como criar projetos no Visual Studio, consulte [instruções passo a passo: criar um aplicativo simples](/visualstudio/get-started/csharp/tutorial-wpf).
+1. No Visual Studio, crie um C# aplicativo de console (**arquivo** > **New** > **projeto** > **C#**  >  **Aplicativo de console**) denominada *ThrowsNullException*. Para obter mais informações sobre como criar projetos no Visual Studio, consulte [passo a passo: Criar um aplicativo simples](/visualstudio/get-started/csharp/tutorial-wpf).
 
 1. Quando o projeto é aberto no Visual Studio, abra o *Program.cs* arquivo. Substitua o método Main () com o código a seguir, que imprime uma linha para o console e, em seguida, lança uma NullReferenceException:
 
@@ -157,7 +157,7 @@ Se Just-In-Time de depuração não foi iniciada quando um aplicativo falha, mes
 
   - **HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\Windows Error Reporting**
 
-  - (Para computadores de 64 bits): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows relatório de erros**
+  - (Para computadores de 64 bits): **HKEY_LOCAL_MACHINE\Software\WOW6432Node\Microsoft\Windows\Windows Error Reporting**
 
   Para obter mais informações, consulte [. Configurações WER](https://docs.microsoft.com/windows/desktop/wer/wer-settings).
 
@@ -194,4 +194,4 @@ Você pode ver as seguintes mensagens de erro durante Just-In-Time de depuraçã
 - [Segurança do depurador](../debugger/debugger-security.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Opções, depuração, Just-In-Time caixa de diálogo](../debugger/just-in-time-debugging-options-dialog-box.md)
-- [Aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Aviso de segurança: A anexação a um processo pertencente a um usuário não confiável pode ser perigosa. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
