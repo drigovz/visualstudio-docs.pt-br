@@ -14,17 +14,16 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 22a1accc7421e169ee345fda0446a8474d2eda00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 611b9c02fd7aaeb4621c4e59555fae2c6dfab247
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776138"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656941"
 ---
 # <a name="debug-page-project-designer"></a>Página de Depuração, Designer de Projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 > [!WARNING]
 >  Este tópico não se aplica a aplicativos da Windows Store. Consulte [Iniciar uma sessão de depuração (VB, C#, C++ e XAML)](../../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md) no Centro de Desenvolvimento do Windows.  
   
@@ -80,5 +79,5 @@ ms.locfileid: "54776138"
  [Configurações do projeto para configurações de depuração de C#](../../debugger/project-settings-for-csharp-debug-configurations.md)   
  [Configurações do projeto para uma configuração de depuração do Visual Basic](../../debugger/project-settings-for-a-visual-basic-debug-configuration.md)   
  [Gerenciando propriedades de depuração](http://msdn.microsoft.com/92474d16-e7fe-4fac-9287-6bd6b3a7eb68)   
- [Como depurar um aplicativo ClickOnce com permissões restritas](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
- [Como criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md)
+ [Como: Depurar um aplicativo ClickOnce com permissões restritas](../../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)   
+ [Como: Criar e editar configurações](../../ide/how-to-create-and-edit-configurations.md)

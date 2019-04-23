@@ -20,17 +20,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 13f87f5ffaa255fc2c1c0f53b527ecbbceb8e8ee
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 578835b770a9895b00513b6907956bc3bb9f9da7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926911"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653746"
 ---
 # <a name="insert-new-records-into-a-database"></a>Inserir novos registros em um banco de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Para inserir novos registros em um banco de dados, você pode usar o `TableAdapter.Update` método, ou um dos métodos DBDirect do TableAdapter (especificamente o `TableAdapter.Insert` método).
   
  Se seu aplicativo não usar TableAdapters, você pode usar objetos de comando (por exemplo, <xref:System.Data.SqlClient.SqlCommand>) para inserir novos registros no banco de dados.  

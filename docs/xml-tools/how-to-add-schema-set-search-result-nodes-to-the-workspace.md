@@ -8,20 +8,19 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cb8e66292a1cdb393401d180bd8b9f8691dc8f0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 406eb2872a2be7127aaf2d37ee654cfe2f58ac3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913922"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654484"
 ---
-# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Como: Adicionar nós de resultados de pesquisa de conjunto de esquema para o espaço de trabalho
+# <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>Como: Adicionar nós de resultados da pesquisa de conjunto de esquema ao workspace
 
 Este tópico explica como adicionar nós realçados na **XML Schema Explorer** como resultado de uma pesquisa de palavra-chave no espaço de trabalho.
 
 > [!NOTE]
 > Somente os nós globais podem ser adicionados para o [espaço de trabalho](../xml-tools/xml-schema-designer-workspace.md).
-
 
  Este exemplo usa a amostra [esquema de ordem de compra](../xml-tools/sample-xsd-file-purchase-order-schema.md).
 

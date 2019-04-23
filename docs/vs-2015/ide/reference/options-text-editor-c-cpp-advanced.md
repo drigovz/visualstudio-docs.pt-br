@@ -15,17 +15,16 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c734e6bd41e91ba208a13e36c06f04111cac5ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: a4f7da520c1659ebb75b777c031f171d1465493e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790091"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660769"
 ---
 # <a name="options-text-editor-cc-advanced"></a>Opções, Editor de Texto, C/C++, Avançado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Ao alterar essas opções, você pode alterar o comportamento relacionado ao IntelliSense e ao banco de dados de navegação quando estiver programando em C ou C++.  
   
  Para acessar essa página, na caixa de diálogo **Opções**, no painel esquerdo, expanda **Editor de Texto**, expanda **C/C++** e escolha **Avançado**.  

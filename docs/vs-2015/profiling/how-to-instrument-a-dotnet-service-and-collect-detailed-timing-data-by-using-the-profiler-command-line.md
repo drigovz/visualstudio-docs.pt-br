@@ -1,5 +1,5 @@
 ---
-title: Como instrumentar um serviço do .NET e coletar dados de tempo detalhados usando a linha de comando do criador de perfil | Microsoft Docs
+title: 'Como: Instrumentar um serviço do .NET e coletar dados de tempo detalhados usando a linha de comando do criador de perfil | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 32
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7931341080fbb2d2a98b695e5a864365c7bf6784
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e1940bb3825fd610d4177b92c7147bfcd55b6174
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766426"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659352"
 ---
-# <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Como instrumentar um serviço do .NET e coletar dados de tempo detalhados usando a linha de comando do criador de perfil
+# <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>Como: Instrumentar um serviço do .NET e os dados de coleta de tempo detalhados usando a linha de comando do Profiler
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tópico descreve como usar as ferramentas da linha de comando das Ferramentas de criação de perfil do [!INCLUDE[vsPreShort](../includes/vspreshort-md.md)] para instrumentar um serviço do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] e coletar dados detalhados de tempo.  
@@ -75,7 +75,6 @@ Este tópico descreve como usar as ferramentas da linha de comando das Ferrament
    |    [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath`     |                                                                                                             Especifica um contador de desempenho do Windows que deve ser coletado durante a criação de perfil.                                                                                                              |
    |         [/automark](../profiling/automark.md) **:** `Interval`          |                                                                           Use somente com **/wincounter**. Especifica o número de milissegundos entre eventos de coleta do contador de desempenho do Windows. O padrão é 500 ms.                                                                            |
    |       [/events](../profiling/events-vsperfcmd.md) **:** `Config`        |                                                                              Especifica um evento de ETW (Rastreamento de Eventos para Windows) a ser coletado durante a criação de perfil. Eventos de ETW são coletados em um arquivo separado (.etl).                                                                              |
-
 
 8. Inicie o serviço do Gerenciador de Controle de Serviço Windows.  
 

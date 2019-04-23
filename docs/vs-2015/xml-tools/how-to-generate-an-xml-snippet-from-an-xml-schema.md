@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ec2d14a03649b63a068d2e0a95877ccd03ddf97a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5350c4cad7acf936d90698a99299757e13a7de3a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922046"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658819"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Como: Gerar um snippet de XML de um esquema XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 O editor XML tem a capacidade de gerar snippets de um esquema de linguagem de definição de esquema XML (XSD). Por exemplo, porque você está criando um arquivo XML, quando posicionado próximo ao nome do elemento, você pode pressionar a tecla TAB para preencher o elemento com os dados XML gerados de informações de esquema para esse elemento.  
   
  Este recurso está disponível somente nos elementos. As seguintes regras também se aplicam:  

@@ -14,17 +14,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a87c88aba4b0a622dd66440fca33ab99fd028d51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c2c5fba8914ba3b5404412c0cbc55af36fe15c21
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925491"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661029"
 ---
 # <a name="walkthrough-creating-a-simple-wcf-service-in-windows-forms"></a>Passo a passo: Criando um serviço WCF simples no Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Este passo a passo demonstra como criar um simples [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] de serviço, testá-lo e, em seguida, acessá-lo de um aplicativo Windows Forms.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
@@ -35,7 +34,7 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[vsindigo](../includ
   
 1.  No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
-2.  No **novo projeto** diálogo caixa, expanda o **Visual Basic** ou **Visual C#** nó e clique em **WCF**, seguido por **WCF Biblioteca de serviço**. Clique em **Okey** para abrir o projeto.  
+2.  No **novo projeto** diálogo caixa, expanda o **Visual Basic** ou **Visual c#** nó e clique em **WCF**, seguido por **WCF Biblioteca de serviço**. Clique em **Okey** para abrir o projeto.  
   
      ![O projeto de biblioteca de serviço do WCF](../data-tools/media/wcf1.PNG "wcf1")  
   
@@ -92,7 +91,7 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[vsindigo](../includ
   
 1.  No menu **Arquivo**, aponte para **Adicionar** e clique em **Novo Projeto**.  
   
-2.  No **novo projeto** diálogo caixa, expanda o **Visual Basic** ou **Visual C#** nó e selecione **Windows**e, em seguida, selecione **Aplicativo de formulários do Windows**. Clique em **Okey** para abrir o projeto.  
+2.  No **novo projeto** diálogo caixa, expanda o **Visual Basic** ou **Visual c#** nó e selecione **Windows**e, em seguida, selecione **Aplicativo de formulários do Windows**. Clique em **Okey** para abrir o projeto.  
   
      ![Projeto de aplicativo do Windows Forms](../data-tools/media/wcf7.png "wcf7")  
   

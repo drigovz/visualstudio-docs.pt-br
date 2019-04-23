@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1a4a8a8dfdbf34a52e48a47d691436188cca9c70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 149f9360569978cf3ec15fd60154ad6f1408362f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927652"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656590"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-types-do-not-match"></a>Não é possível criar uma associação &lt;nome da associação&gt; – os tipos de propriedade não correspondem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Não é possível criar uma associação \<nome da associação> – os tipos de propriedade não correspondem. As propriedades não têm tipos compatíveis: \<nomes de propriedade>.  
   
  Associações são definidas pelas **Propriedades de Associação**, selecionadas na caixa de diálogo **Editor de Associação**. As propriedades em cada lado de associação devem ser do mesmo tipo de dados.  

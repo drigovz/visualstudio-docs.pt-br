@@ -13,17 +13,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b8b195569d5e1daf0a414ee872a828f7c98be90
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 0ff92e93d2fa15591afddddc1a012ff94b8ba6c0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54753233"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656005"
 ---
-# <a name="how-to-manage-word-wrap-in-the-editor"></a>Como gerenciar a quebra de texto no Editor
+# <a name="how-to-manage-word-wrap-in-the-editor"></a>Como: Gerenciar a quebra automática de linha no Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 É possível definir e desmarcar a opção **Quebra automática de linha**. Quando essa opção for definida, a parte de uma linha longa que se estender além da largura atual da janela Editor de Código será exibida na próxima linha. Quando essa opção estiver desmarcada, por exemplo, para facilitar o uso de numeração de linha, será possível rolar para a direita para ver os finais das linhas longas.  
   
  Para obter mais informações, confira [Como: Definir opções gerais do Editor](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  

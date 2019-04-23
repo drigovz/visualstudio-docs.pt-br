@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a51deb24a2ba0088db8ed9a7acc1f8324f1fa92b
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 0bcd3855b5dd2fc701b78c5745a9053d19dc7fcf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605686"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658247"
 ---
 # <a name="template-directory-description-vsdir-files"></a>Arquivos de descrição do diretório de modelo (.Vsdir)
 Um arquivo de descrição de diretório do modelo (. vsdir) é um arquivo de texto que permite que o ambiente de desenvolvimento integrado (IDE) para exibir pastas, arquivos. vsz do assistente e arquivos de modelo que estão associados ao seu projeto em caixas de diálogo. O conteúdo inclui um registro por arquivo ou pasta. Todos os arquivos. vsdir em um local referenciado são mesclados, embora. vsdir apenas um arquivo geralmente é fornecido para descrever várias pastas, assistentes ou arquivos de modelo.
@@ -35,7 +35,6 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
 ## <a name="fields"></a>Campos
  A tabela a seguir lista os campos especificados para cada registro.
-
 
 | Campo | Descrição |
 | - | - |

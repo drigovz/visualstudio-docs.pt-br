@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 002aa5cf9e1324eb81996a5a14f7a1933a26ba9d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 2093db67a97bcd913773feebe0a4f10bf6ac9180
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605166"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659495"
 ---
 # <a name="test-area-8-plug-in-switching"></a>Área de teste 8: Alternância de plug-in
 O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE) tem a interface do usuário (UI) para alterar o plug-in de controle de origem atual. Essa área de teste fornece os casos de teste para o processo de selecionar o plug-in a ser usado para controle de código-fonte da solução.
@@ -39,7 +39,6 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de des
 #### <a name="expected-behavior"></a>Comportamento esperado
  Quando um usuário carrega uma solução sob controle do código-fonte, a solução é carregada automaticamente e o plug-in de controle de origem apropriada é selecionada como atual.
 
-
 | Ação | Etapas de teste | Resultados esperados para verificar |
 | - | - | - |
 | Alteração de plug-in de controle de fonte automática | 1.  Selecione plug-in em testar como atual (**ferramentas** -> **opções** -> **controle do código-fonte** -> **plug-in Seleção**.)<br />2.  Crie um novo projeto.<br />3.  Adicione a solução ao controle de origem.<br />4.  Selecione outro plug-in (por exemplo, [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]).<br />5.  Aceite solicitação de solução de descarregamento.<br />6.  Reabra a solução do disco. | Solução for aberta.<br /><br /> Plug-in em teste é o plug-in de controle de origem atual. |
@@ -48,7 +47,6 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de des
 
 #### <a name="expected-behavior"></a>Comportamento esperado
  A solução pode ter seu plug-in de controle de origem associado alterado.
-
 
 | Ação | Etapas de teste | Resultados esperados para verificar |
 |----------------------------------| - | - |

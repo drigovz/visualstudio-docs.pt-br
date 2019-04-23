@@ -19,17 +19,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c3d635750a01838cc40c9af8ec17465b25fc438
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 532781a2e816120dabfe2bec61059955cd0c82a6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929531"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658117"
 ---
 # <a name="n-tier-data-applications-overview"></a>Visão geral de aplicativos de dados de N camadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 N-camadas * aplicativos de dados são aplicativos de dados que são separados em várias *camadas*. Aplicativos de n camadas também chamados de "aplicativos distribuídos" e "aplicativos multicamados", separam o processamento em camadas discretas que são distribuídas entre o cliente e o servidor. Quando você desenvolve aplicativos que acessam dados, você deve ter uma separação clara entre as várias camadas que compõem o aplicativo.  
   
  Um aplicativo de n camadas típico inclui uma camada de apresentação, uma camada intermediária e uma camada de dados. A maneira mais fácil para separar as várias camadas em um aplicativo de n camadas é criar projetos discretos para cada camada que você deseja incluir em seu aplicativo. Por exemplo, a camada de apresentação pode ser um aplicativo Windows Forms, enquanto a lógica de acesso de dados pode ser uma biblioteca de classes localizada na camada intermediária. Além disso, a camada de apresentação pode se comunicar com a lógica de acesso de dados na camada intermediária por meio de um serviço como um serviço. Dividir componentes do aplicativo em camadas separadas aumenta a facilidade de manutenção e a escalabilidade do aplicativo. Ele faz isso permitindo adoção mais fácil de novas tecnologias que podem ser aplicadas a uma única camada sem a necessidade de recriar a solução inteira. Além disso, os aplicativos de n camadas normalmente armazenam informações confidenciais na camada intermediária, que mantém o isolamento da camada de apresentação.  

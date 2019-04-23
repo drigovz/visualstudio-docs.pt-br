@@ -26,20 +26,19 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e2586de5731aee916dfc877013269f8d08eb756d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: fc7c3202b26e94736f59561c6c13f8350102d7b6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54780363"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656473"
 ---
 # <a name="file-properties-javascript"></a>Propriedades de arquivo, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 É possível usar propriedades de arquivo para indicar quais ações o sistema de projeto deve executar nos arquivos. Por exemplo, é possível definir propriedades de arquivo para indicar se um arquivo deve ser adicionado ao pacote como um arquivo de recurso.  
   
- É possível selecionar qualquer arquivo no Gerenciador de Soluções e, em seguida, examinar suas propriedades na janela Propriedades. Os arquivos JavaScript têm quatro propriedades: **Copiar para Diretório de Saída**, **Ação do Pacote**, **Nome de Arquivo** e **Caminho do Arquivo**.  
+ É possível selecionar qualquer arquivo no Gerenciador de Soluções e, em seguida, examinar suas propriedades na janela Propriedades. Arquivos JavaScript têm quatro propriedades: **Copiar para Diretório de Saída**, **Ação do Pacote**, **Nome de Arquivo** e **Caminho do Arquivo**.  
   
 ## <a name="file-properties"></a>Propriedades do Arquivo  
  Esta seção descreve as propriedades comuns aos arquivos JavaScript.  

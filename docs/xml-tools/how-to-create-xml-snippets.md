@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd29a8d31d425529db377c812611f1efddc60f11
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 43305d7b9353bd34e98a3dcfd31205cb9159a2f3
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526614"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659911"
 ---
-# <a name="how-to-create-xml-snippets"></a>Como: Criar trechos de código XML
+# <a name="how-to-create-xml-snippets"></a>Como: Criar snippets XML
 
 O editor XML pode ser usado para criar novos trechos XML. O editor inclui um snippet XML, chamado “Snippets”, que é um snippet de texto constante para criar novos snippets XML.
 
@@ -64,7 +64,6 @@ O editor XML pode ser usado para criar novos trechos XML. O editor inclui um sni
 
 > [!NOTE]
 > O texto de snippet XML deve ser incluído em uma seção de `<![CDATA[...]]>` .
-
 
  O seguinte é o elemento de `Code` que é criado pelo snippet de texto constante.
 

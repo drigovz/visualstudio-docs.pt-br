@@ -16,17 +16,16 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dfc0c8eca387c2405881334670a51ee5d08685e5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 8e36d5e50b15a5ede425715ec756f05ab8d014de
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796871"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59655802"
 ---
 # <a name="common-msbuild-project-items"></a>Itens de projeto comuns do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Em [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], um item é uma referência nomeada a um ou mais arquivos. Itens contêm metadados, como nomes de arquivos, caminhos e números de versão. Todos os tipos de projeto em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] têm vários itens em comum. Esses itens são definidos no arquivo microsoft.build.commontypes.xsd.  
   
 ## <a name="common-items"></a>Itens Comuns  
@@ -121,7 +120,7 @@ Em [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], um item é uma refe
 |Visível|Booliano opcional. Indica se o arquivo no **Gerenciador de Soluções** deve ser exibido no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
 |CopyToOutputDirectory|Cadeia de caracteres opcional. Determina se o arquivo deve ser copiado para o diretório de saída. Os valores são:<br /><br /> 1.  Nunca<br />2.  Sempre<br />3.  PreserveNewest|  
   
-### <a name="none"></a>Nenhuma  
+### <a name="none"></a>Nenhum  
  Representa arquivos que não devem ter função no processo de build.  
   
 |Nome do Item|Descrição|  

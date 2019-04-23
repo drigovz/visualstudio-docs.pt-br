@@ -9,17 +9,16 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3024f9a8b33f27797c186b06b7ce89a7c18d844
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 350b97385ab03daca80cc86d4f672dfec07222aa
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929615"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654016"
 ---
 # <a name="integration-with-xml-editor"></a>Integração com editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 O designer de esquema XML está integrado com o editor XML. Se você modificar um arquivo XSD no Editor XML, a alteração será refletida na [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). Se você tiver o [exibição de gráfico](../xml-tools/graph-view.md) ou o [exibição de modelo de conteúdo](../xml-tools/content-model-view.md) aberto, a alteração será refletida também lá. Você pode navegar entre o designer de esquema XML e o editor XML das seguintes maneiras:  
   
 - No Editor de XML, um nó com o botão direito e selecione **Mostrar em XML Schema Explorer**.  

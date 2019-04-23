@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: e119a632210a8677f50a6c0d0bd2306b7c810f08
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 5bee805581f23e4654a8fce318a39b4ff3da4184
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57868295"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660704"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK do Microsoft Help Viewer
 
@@ -63,7 +63,7 @@ Suporte para cadeias de caracteres de idioma (não diferencia maiusculas de min�
 
 -   javascript
 
--   CSharp ou C#
+-   CSharp ou c#
 
 -   cplusplus ou visualc + + ou c + +
 
@@ -359,7 +359,6 @@ No IDE, sob o item de menu de Ajuda, selecione **contexto de ajudar a depurar**.
 **Metadados de conteúdo**
 
 A tabela a seguir, qualquer cadeia de caracteres que aparece entre colchetes é um espaço reservado que deve ser substituído por um valor reconhecido. Por exemplo, em \<name="Microsoft.Help.Locale meta" conteúdo = "[código do idioma]" / >, "[código de idioma]" deve ser substituído por um valor, como "en-us".
-
 
 | Propriedade (representação de HTML) | Descrição |
 | - | - |

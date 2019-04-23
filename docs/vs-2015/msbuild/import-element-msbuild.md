@@ -19,17 +19,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7aee698498fa59c4dc6fee66f89b496f8b21f34
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f7e119eccb31774bc5b300bf9608cb2e23eb83d7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804034"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654289"
 ---
 # <a name="import-element-msbuild"></a>Elemento Import (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.  
   
  \<Project>  
@@ -53,7 +52,7 @@ Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
 |`Condition`|Atributo opcional.<br /><br /> Uma condição a ser avaliada. Para obter mais informações, consulte [Condições](../msbuild/msbuild-conditions.md).|  
   
 ### <a name="child-elements"></a>Elementos filho  
- Nenhuma  
+ Nenhum  
   
 ### <a name="parent-elements"></a>Elementos pai  
   
@@ -117,4 +116,4 @@ Importa o conteúdo de um arquivo de projeto para outro arquivo de projeto.
   
 ## <a name="see-also"></a>Consulte também  
  [Referência do esquema de arquivos de projeto](../msbuild/msbuild-project-file-schema-reference.md)   
- [Como usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)
+ [Como: Usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md)

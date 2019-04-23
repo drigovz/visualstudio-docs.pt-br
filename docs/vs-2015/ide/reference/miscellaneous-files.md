@@ -21,17 +21,16 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b55bc206b204fe2b2e5ef71e2fdb1d48e67802d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: aadb6b0212f760ab16efd677e02e1d922ae52e12
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54802578"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658482"
 ---
 # <a name="miscellaneous-files"></a>Arquivos diversos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Talvez você queira usar os editores [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para trabalhar de forma independente nos arquivos de um projeto ou de uma solução. Enquanto você tiver uma solução aberta, pode abrir e modificar arquivos sem adicioná-los a uma solução ou um projeto. Os arquivos com os quais você deseja trabalhar independentemente dos contêineres são chamados de arquivos diversos. Os arquivos diversos são externos às soluções e projetos, não estão incluídos em builds e não podem ser incluídos com uma solução sob controle do código-fonte.  
   
  Abrir arquivos independentemente de um contêiner é útil para uma variedade de razões. Você pode ter um arquivo que deseja exibir enquanto desenvolve uma solução baseada em projeto, mas que não é parte integrante do desenvolvimento da solução. Exemplos comuns incluem instruções ou anotações de desenvolvimento, esquema de banco de dados e fragmentos de código. Além disso, você talvez queira criar um arquivo autônomo.  

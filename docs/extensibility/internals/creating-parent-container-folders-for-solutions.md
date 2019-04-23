@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6845e867a8c5fd0ef2b367dc5f2e3b5760869746
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6c23ec3101baac033cbef47f6f1c3ad6f717a15d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602007"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661055"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>Criar pastas de contêiner para soluções de pai
 No código-fonte controle plug-in API versão 1.2, um usuário pode especificar um destino de controle de origem de raiz única para todos os projetos da web dentro da solução. Essa única raiz é chamado de uma raiz de Unificação de Super (SUR).
@@ -42,7 +42,6 @@ No código-fonte controle plug-in API versão 1.2, um usuário pode especificar 
 -   Não há compartilhamento diferente para o projeto e o arquivo de solução.
 
 -   Projetos foram adicionados separadamente (em uma solução de controle do código-fonte).
-
 
 No [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], é aconselhável que o nome da pasta SUR ser o mesmo que o nome da solução sem a extensão. A tabela a seguir resume o comportamento em duas versões.
 

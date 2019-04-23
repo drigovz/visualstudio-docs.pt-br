@@ -18,17 +18,16 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4ddb6ad55a8d90a3e9d4f5b2568885cbe49fb66c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 120020f4ae1aa409f64ce9999c0fcd9c96e806a9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923649"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659014"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Salvar dados de um objeto em um banco de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Você pode salvar dados em objetos de um banco de dados, passando os valores de seu objeto para um dos métodos DBDirect do TableAdapter (por exemplo, `TableAdapter.Insert`).
   
  Para salvar dados de uma coleção de objetos, executar um loop através da coleção de objetos (por exemplo, um loop for-next) e enviar os valores para cada objeto no banco de dados usando um dos métodos DBDirect do TableAdapter.  

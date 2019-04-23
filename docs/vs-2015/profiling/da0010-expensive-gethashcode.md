@@ -1,5 +1,5 @@
 ---
-title: 'DA0010: função GetHashCode dispendiosa | Microsoft Docs'
+title: 'DA0010: Função GetHashCode dispendiosa | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,19 +14,17 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 111e3204224f1124476ab2a324df7be2b6ef2525
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MTE95
+ms.openlocfilehash: 1055136562d59412a6187524dc6023c55ef2dc3c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58354824"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659027"
 ---
-# <a name="da0010-expensive-gethashcode"></a>DA0010: função GetHashCode dispendiosa
+# <a name="da0010-expensive-gethashcode"></a>DA0010: Função GetHashCode dispendiosa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para a documentação mais recente do Visual Studio, consulte [da0010 função: GetHashCode dispendiosa](https://docs.microsoft.com/visualstudio/profiling/da0010-expensive-gethashcode) em docs.microsoft.com.  
-
-  
+Para a documentação mais recente do Visual Studio, consulte [da0010 função: GetHashCode dispendiosa](https://docs.microsoft.com/visualstudio/profiling/da0010-expensive-gethashcode).  
 
 |||  
 |-|-|  
@@ -40,7 +38,7 @@ Para a documentação mais recente do Visual Studio, consulte [da0010 função: 
  As chamadas para o método GetHashCode do tipo são uma parte significativa dos dados de criação de perfil ou do método de alocação de memória.  
   
 ## <a name="rule-description"></a>Descrição da Regra  
- O hash é uma técnica para localizar rapidamente um item específico em uma coleção grande. As tabelas de hash podem ser enormes e dão suporte às altas taxas de acesso e, por isso, são muito eficientes. No entanto, uma implicação desse requisito é que os métodos GetHashCode no .NET Framework não devem alocar memória. A alocação de memória aumenta a carga no coletor de lixo e expõe o método para possíveis atrasos se for necessário executar de uma coleta de lixo como um resultado da solicitação de alocação.  
+ O hash é uma técnica para localizar rapidamente um item específico em uma coleção grande. Como tabelas de hash podem ser muito grande e dar suporte a altos níveis de acesso, tabelas de hash devem ser extremamente eficientes. No entanto, uma implicação desse requisito é que os métodos GetHashCode no .NET Framework não devem alocar memória. A alocação de memória aumentará a carga no coletor de lixo e exporá o método a possíveis atrasos se for necessário executar de uma coleta de lixo como um resultado da solicitação de alocação.  
   
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
  Reduza a complexidade do método.

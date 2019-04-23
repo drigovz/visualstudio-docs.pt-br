@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec6f2a8b25438d7909f47087b8f6a80e595e7cba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: bd61d4bf97ce25d291268856a3e85729c98c1312
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56630516"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59658390"
 ---
 # <a name="registering-project-and-item-templates"></a>Registrando modelos de projeto e item
 Tipos de projeto devem registrar os diretórios onde se encontram seus modelos de projeto e item de projeto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] usa as informações de registro associadas com seus tipos de projeto para determinar o que mostrar nos **adicionar novo projeto** e **Adicionar Novo Item** caixas de diálogo.
@@ -54,7 +54,6 @@ Tipos de projeto devem registrar os diretórios onde se encontram seus modelos d
 "TemplatesLocalizedSubDir"="#10"
 "SortPriority"=dword:00000064
 ```
-
 
 | Nome | Tipo | Descrição |
 |--------------------------|-----------| - |

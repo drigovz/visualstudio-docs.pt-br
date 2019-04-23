@@ -8,16 +8,15 @@ ms.assetid: 35e766ad-269f-41e4-ba23-74a556c315f3
 caps.latest.revision: 7
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 6fd8b0079556b05cf7ba79245bab787c3b3578dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ebff9b9e41212fcb1d33b7672e87aae8103571b7
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54789808"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59653187"
 ---
 # <a name="system-requirements-for-the-visual-studio-emulator-for-android"></a>Requisitos do sistema para o emulador do Visual Studio para Android
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 O Emulador do Visual Studio para Android é executado como uma máquina virtual no Hyper-V, a tecnologia de virtualização para o Windows 8 e versões posteriores. Para executar o emulador, o computador deve atender aos requisitos para executar o Hyper-V, conforme descrito neste tópico.
 

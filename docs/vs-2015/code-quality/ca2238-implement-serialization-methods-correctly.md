@@ -15,24 +15,24 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 26d9c23ef8da970a29057c0e299d5b8d12dda524
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: cff617adf2b31ef773de3bc41db7245346795bee
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59000338"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59657123"
 ---
 # <a name="ca2238-implement-serialization-methods-correctly"></a>CA2238: Implementar métodos de serialização corretamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para a documentação mais recente do Visual Studio, consulte [CA2238: Implementar métodos de serialização corretamente](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly) em docs.microsoft.com.  
+Para a documentação mais recente do Visual Studio, consulte [CA2238: Implementar métodos de serialização corretamente](https://docs.microsoft.com/visualstudio/code-quality/ca2238-implement-serialization-methods-correctly).  
   
 |||  
 |-|-|  
 |NomeDoTipo|ImplementSerializationMethodsCorrectly|  
 |CheckId|CA2238|  
 |Categoria|Microsoft.Usage|  
-|Alteração Significativa|Quebrando - se o método é visível fora do assembly.<br /><br /> Não separável - se o método não é visível fora do assembly.|  
+|Alteração Significativa|Quebrando - se o método é visível fora do assembly.<br /><br /> Sem quebra - se o método não é visível fora do assembly.|  
   
 ## <a name="cause"></a>Causa  
  Um método que trata um evento de serialização não tem a assinatura, o tipo de retorno ou a visibilidade corretos.  

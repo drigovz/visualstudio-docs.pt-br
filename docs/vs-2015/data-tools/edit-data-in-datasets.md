@@ -17,17 +17,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 41467515e172b34fe96200020189a02a6a4fc8a2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0fa25e0bf7742420e21ac75883f9927478ee2c23
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928387"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656603"
 ---
 # <a name="edit-data-in-datasets"></a>Editar dados em conjuntos de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Você edite os dados em tabelas de dados assim que você edite os dados em uma tabela em qualquer banco de dados. O processo pode incluir inserir, atualizar e excluir registros na tabela. Em um formulário de associação de dados, você pode especificar quais campos são editáveis pelo usuário. Nesses casos, a infra-estrutura de ligação de dados lida com todos os controle de alterações para que as alterações podem ser enviadas no banco de dados mais tarde. Se você, por meio de programação, fazer edições em dados, e você pretende enviar essas alterações no banco de dados, você deve usar os objetos e métodos que fazem o controle de alterações para você.  
   
  Além de alterar os dados reais, você também pode consultar um <xref:System.Data.DataTable> para retornar linhas específicas de dados. Por exemplo, você pode consultar as linhas individuais, versões específicas de linhas (originais e propostas), linhas que foram alteradas ou linhas com erros.  

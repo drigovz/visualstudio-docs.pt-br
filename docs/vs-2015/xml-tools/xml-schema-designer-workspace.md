@@ -9,17 +9,16 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f65312776f56fc2c96f2da7b528cc8cc9d339fb2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6d0b14b9f1cbbb81cc814546c5965e505a42885d
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58921984"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59656538"
 ---
 # <a name="xml-schema-designer-workspace"></a>O workspace do designer de esquema XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 O designer de esquema XML (XSD) designer é uma ferramenta gráfico que ajuda você explora seus esquemas XML. Além de [XML Schema Explorer](../xml-tools/xml-schema-explorer.md), que permite procurar e navegar na árvore de esquema XML e realizar pesquisas, o Designer XSD fornece três modos de exibição que permitem que você explore o esquema XSD em mais detalhes. A Exibição inicial é o ponto de partida para o Designer XSD; A partir da exibição inicial, é possível navegar até outras exibições do Designer XSD e ver os detalhes de seu conjunto de esquema. A Exibição de Gráfico permite que você tenha uma visão geral do conjunto de esquema e veja a relação entre os nós do esquema. A Exibição de Modelo de Conteúdo oferece uma representação gráfica dos detalhes de nós de esquema local e global, incluindo tipos complexos e simples, elementos, grupos, atributos e grupos de atributos.  
   
  Para iniciar a exploração de nós que você está interessado, você deve adicioná-los ao workspace. O workspace é compartilhado entre todas as visualizações.  

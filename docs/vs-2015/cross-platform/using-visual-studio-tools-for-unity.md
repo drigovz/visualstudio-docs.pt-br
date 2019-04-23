@@ -9,17 +9,16 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 90926994f6cf67e36260dc85e29accaa88e519ca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 52c0ffe1c4261df6498cc03842d650360954eb44
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777375"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59660613"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Usando o Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Nesta seção, você aprenderá como usar os recursos de integração e produtividade das Ferramentas do Visual Studio para Unity e como usar o depurador do Visual Studio para desenvolvimento no Unity.  
   
 ## <a name="unity-integration-and-productivity"></a>Integração e produtividade do Unity  
@@ -169,7 +168,7 @@ Nesta seção, você aprenderá como usar os recursos de integração e produtiv
   
 ##### <a name="to-debug-a-managed-dll-project-used-in-your-unity-project"></a>Para depurar um projeto de DLL gerenciado usado em seu projeto do Unity  
   
-1. Adicione o projeto de DLL existente para a solução do Visual Studio gerada pelas Ferramentas do Visual Studio para Unity. Com menos frequência, você pode iniciar um novo projeto DLL gerenciado para conter componentes de código no seu projeto do Unity; Se esse for o caso, você poderá adicionar um novo projeto de DLL gerenciado para a solução do Visual Studio em vez disso. Para obter mais informações sobre como adicionar um projeto novo ou existente a uma solução, consulte [Como adicionar projetos a uma solução](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).  
+1. Adicione o projeto de DLL existente para a solução do Visual Studio gerada pelas Ferramentas do Visual Studio para Unity. Com menos frequência, você pode iniciar um novo projeto DLL gerenciado para conter componentes de código no seu projeto do Unity; Se esse for o caso, você poderá adicionar um novo projeto de DLL gerenciado para a solução do Visual Studio em vez disso. Para obter mais informações sobre como adicionar um projeto novo ou existente a uma solução, confira [Como: Adicionar projetos a uma solução](https://msdn.microsoft.com/library/vstudio/ff460187.aspx).  
   
     ![Adicione o projeto de DLL existente à solução.](../cross-platform/media/vstu-debugging-dll-add-existing.png "vstu_debugging_dll_add_existing")  
   

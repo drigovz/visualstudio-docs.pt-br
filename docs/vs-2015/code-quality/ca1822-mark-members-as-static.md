@@ -15,24 +15,24 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 156a839b015d8b8e16a7d047444ef01053400593
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
+ms.openlocfilehash: 42c6f0d333d1f7ee3f657b9c57c4154e9f824128
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59000339"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59659768"
 ---
 # <a name="ca1822-mark-members-as-static"></a>CA1822: Marcar membros como estáticos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para a documentação mais recente do Visual Studio, consulte [CA1822: Marcar membros como estáticos](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static) em docs.microsoft.com.  
+Para a documentação mais recente do Visual Studio, consulte [CA1822: Marcar membros como estáticos](https://docs.microsoft.com/visualstudio/code-quality/ca1822-mark-members-as-static).  
   
 |||  
 |-|-|  
 |NomeDoTipo|MarkMembersAsStatic|  
 |CheckId|CA1822|  
 |Categoria|Microsoft.Performance|  
-|Alteração Significativa|Separação de não - se o membro não é visível fora do assembly, independentemente da alteração é fazer. Não separável - se você alterar o membro a um membro de instância com o `this` palavra-chave.<br /><br /> Quebrando - se você alterar o membro de um membro de instância para um membro estático e é visível fora do assembly.|  
+|Alteração Significativa|Separação de não - se o membro não é visível fora do assembly, independentemente da alteração é fazer.<br /><br /> Separação de não - se você alterar o membro a um membro de instância com o `this` palavra-chave.<br /><br /> Quebrando - se você alterar o membro de um membro de instância para um membro estático e é visível fora do assembly.|  
   
 ## <a name="cause"></a>Causa  
  Um membro que não acessa os dados de instância não está marcado como estático (compartilhado no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]).  

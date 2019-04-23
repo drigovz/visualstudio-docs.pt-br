@@ -1,5 +1,5 @@
 ---
-title: Como especificar o destino a ser compilado primeiro | Microsoft Docs
+title: 'Como: Especificar o destino a ser compilado primeiro | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,17 +13,16 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 52baabe5a8cf2e064c72ef7a5ab146d534214d90
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c7e1c9c4374e35dd484d478118fe714ff415f93e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797032"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59654874"
 ---
-# <a name="how-to-specify-which-target-to-build-first"></a>Como especificar o destino a ser compilado primeiro
+# <a name="how-to-specify-which-target-to-build-first"></a>Como: Especificar qual destino será compilado primeiro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Um arquivo de projeto pode conter um ou mais elementos `Target` que definem como o projeto é compilado. O mecanismo [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) compila o primeiro projeto e as dependências que localizar, a menos que o arquivo de projeto contenha um atributo `DefaultTargets`, um atributo `InitialTargets` ou que um destino seja especificado na linha de comando usando a opção **/target**.  
   
 ## <a name="using-the-initialtargets-attribute"></a>Usar o atributo InitialTargets  
@@ -78,4 +77,4 @@ Um arquivo de projeto pode conter um ou mais elementos `Target` que definem como
 ## <a name="see-also"></a>Consulte também
   [MSBuild](msbuild.md)  
  [Destinos](../msbuild/msbuild-targets.md)   
- [Como limpar um build](../msbuild/how-to-clean-a-build.md)
+ [Como: Limpar um Build](../msbuild/how-to-clean-a-build.md)
