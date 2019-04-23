@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7e6e6bc1cd9794534f13915ffb41956e423e94c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928737"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088672"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Vincular um caso de uso a documentos e diagramas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,45 +40,45 @@ Você pode vincular um caso de uso em um diagrama de caso de uso para outro diag
   
 ### <a name="to-open-a-document-associated-with-an-artifact"></a>Para abrir um documento associado a um artefato  
   
--   No diagrama de caso de uso, clique duas vezes na forma de artefato.  
+- No diagrama de caso de uso, clique duas vezes na forma de artefato.  
   
      O documento associado é aberto.  
   
 ### <a name="to-link-a-use-case-to-a-diagram-or-file-in-the-same-solution"></a>Para vincular um caso de uso em um diagrama ou um arquivo na mesma solução  
   
-1.  Desenhe um diagrama como um diagrama de sequência ou um diagrama de atividade para ilustrar um cenário de caso de uso.  
+1. Desenhe um diagrama como um diagrama de sequência ou um diagrama de atividade para ilustrar um cenário de caso de uso.  
   
-2.  Volte para o diagrama de caso de uso.  
+2. Volte para o diagrama de caso de uso.  
   
-3.  Arraste o arquivo ou o diagrama no Gerenciador de soluções em uma parte em branco do diagrama de caso.  
+3. Arraste o arquivo ou o diagrama no Gerenciador de soluções em uma parte em branco do diagrama de caso.  
   
-4.  Conectar-se de que o artefato para o caso de uso usando um **dependência**.  
+4. Conectar-se de que o artefato para o caso de uso usando um **dependência**.  
   
 ### <a name="to-link-to-a-solution-file-such-as-a-word-document-or-powerpoint-presentation"></a>Para vincular a um arquivo de solução como um documento do Word ou apresentação do PowerPoint  
   
-1.  Adicione o documento à solução.  
+1. Adicione o documento à solução.  
   
-    1.  Mova o documento do Word na mesma pasta do Windows como a solução.  
+    1. Mova o documento do Word na mesma pasta do Windows como a solução.  
   
-    2.  No Gerenciador de soluções, clique com botão direito a solução, aponte para **Add**e, em seguida, clique em **Item existente**.  
+    2. No Gerenciador de soluções, clique com botão direito a solução, aponte para **Add**e, em seguida, clique em **Item existente**.  
   
-    3.  Navegue até o documento do Word e clique em **adicionar**.  
+    3. Navegue até o documento do Word e clique em **adicionar**.  
   
          O documento do Word é exibido em uma pasta de solução no Gerenciador de soluções.  
   
-2.  Arraste o documento do Word no Gerenciador de soluções em uma parte em branco do diagrama de caso.  
+2. Arraste o documento do Word no Gerenciador de soluções em uma parte em branco do diagrama de caso.  
   
      Um novo artefato é exibida.  
   
-3.  Conectar-se de que o artefato para o caso de uso usando um **dependência**.  
+3. Conectar-se de que o artefato para o caso de uso usando um **dependência**.  
   
 ### <a name="to-link-to-a-shared-document-onenote-element-or-web-page"></a>Para vincular a um documento compartilhado, o OneNote elemento ou página da web  
   
-1.  Obter a URL do elemento de dados compartilhado. Isso pode ser, por exemplo, um início de caminho do arquivo de rede '\\\\', ou uma página da web ou URL do Sharepoint início 'http://' ou um link para uma seção do OneNote, página ou início de parágrafo ' onenote:'.  
+1. Obter a URL do elemento de dados compartilhado. Isso pode ser, por exemplo, um início de caminho do arquivo de rede '\\\\', ou uma página da web ou URL do Sharepoint início 'http://' ou um link para uma seção do OneNote, página ou início de parágrafo ' onenote:'.  
   
-2.  Na caixa de ferramentas, clique em **artefato** e, em seguida, clique no diagrama de caso.  
+2. Na caixa de ferramentas, clique em **artefato** e, em seguida, clique no diagrama de caso.  
   
-3.  Com o novo artefato selecionado, digite ou cole a URL para o **hiperlink** propriedade.  
+3. Com o novo artefato selecionado, digite ou cole a URL para o **hiperlink** propriedade.  
   
     > [!NOTE]
     >  Se você quiser fornecer um caminho de arquivo, é melhor escolher um arquivo em um espaço de trabalho comuns (começando com '\\\\'), ou um arquivo em sua solução do Visual Studio. Isso garante que o caminho do arquivo permanecerá válido no computador de outro membro da equipe, ou se a solução é movida. Para adicionar um documento como um documento do Word à sua solução, clique com botão direito na solução no Gerenciador de soluções, aponte para **Add** e, em seguida, clique em **Item existente**.  

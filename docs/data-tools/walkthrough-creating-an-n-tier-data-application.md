@@ -1,5 +1,5 @@
 ---
-title: 'Instruções passo a passo: criando um aplicativo de dados de N camadas'
+title: 'Passo a passo: Criando um aplicativo de dados de N camadas'
 ms.date: 09/08/2017
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4edd2ce00439a791f55787e9d55e9e51b3c7b27b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 471f0e9b97293bd70457a8f41cb7efddd6acf6c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55933009"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091818"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Passo a passo: Criar um aplicativo de dados de n camadas
 Os aplicativos de dados de *N camadas* são aplicativos que acessam dados e são separados em várias *camadas* lógicas. A separação de componentes de aplicativos em camadas discretas aumenta a capacidade de manutenção e a escalabilidade do aplicativo. Isso é feito pela adoção com mais facilidade de novas tecnologias que podem ser aplicadas a uma única camada, sem precisar reprojetar toda a solução. A arquitetura de N camadas inclui uma camada de apresentação, uma camada intermediária e uma camada de dados. A camada intermediária geralmente inclui uma camada de acesso a dados, uma camada lógica de negócios e componentes compartilhados, tais como autenticação e validação. A camada de dados inclui um banco de dados relacional. Os aplicativos de N camadas geralmente armazenam informações confidenciais na camada de acesso a dados da camada intermediária para manter o isolamento de usuários finais que acessam a camada de apresentação. Para obter mais informações, consulte [visão geral dos aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md).
@@ -30,25 +30,25 @@ Esse passo a passo demonstra como separar o conjunto de dados e o código `Table
 
 Durante este passo a passo, você deve executar as seguintes etapas:
 
--   Crie uma nova solução de n camadas que contém vários projetos.
+- Crie uma nova solução de n camadas que contém vários projetos.
 
--   Adicionar dois projetos de bibliotecas de classes na solução de N camadas.
+- Adicionar dois projetos de bibliotecas de classes na solução de N camadas.
 
--   Criar um conjunto de dados tipado usando o **Assistente de Configuração de Fonte de Dados**.
+- Criar um conjunto de dados tipado usando o **Assistente de Configuração de Fonte de Dados**.
 
--   Separar gerado [TableAdapters](create-and-configure-tableadapters.md) e o código do conjunto de dados em projetos discretos.
+- Separar gerado [TableAdapters](create-and-configure-tableadapters.md) e o código do conjunto de dados em projetos discretos.
 
--   Criar um serviço do Windows Communication Foundation (WCF) a ser chamado na camada de acesso a dados.
+- Criar um serviço do Windows Communication Foundation (WCF) a ser chamado na camada de acesso a dados.
 
--   Criar funções no serviço para recuperar dados da camada de acesso a dados.
+- Criar funções no serviço para recuperar dados da camada de acesso a dados.
 
--   Criar um aplicativo do Windows Forms para servir como a camada de apresentação.
+- Criar um aplicativo do Windows Forms para servir como a camada de apresentação.
 
--   Criar controles do Windows Forms associados à fonte de dados.
+- Criar controles do Windows Forms associados à fonte de dados.
 
--   Gravar código para preencher as tabelas de dados.
+- Gravar código para preencher as tabelas de dados.
 
-![link para vídeo](../data-tools/media/playvideo.gif) para uma versão em vídeo deste tópico, consulte [vídeo de instruções: Criando um aplicativo de dados de N camadas](http://go.microsoft.com/fwlink/?LinkId=115188).
+![link para vídeo](../data-tools/media/playvideo.gif) para uma versão em vídeo deste tópico, consulte [vídeo de instruções: Criando um aplicativo de dados de n camadas](http://go.microsoft.com/fwlink/?LinkId=115188).
 
 ## <a name="prerequisites"></a>Pré-requisitos
 Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exemplo Northwind.
@@ -77,7 +77,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 1. No Visual Studio, sobre o **arquivo** menu, selecione **New** > **projeto**.
 
-2. Expanda o **Visual C#** ou **Visual Basic** no painel esquerdo, em seguida, selecione **área de trabalho do Windows**.
+2. Expanda o **Visual c#** ou **Visual Basic** no painel esquerdo, em seguida, selecione **área de trabalho do Windows**.
 
 3. No painel central, selecione a **biblioteca de classes** tipo de projeto.
 
@@ -104,7 +104,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
  A próxima etapa é criar um conjunto de dados tipado. Conjuntos de dados tipados são criados com a classe de conjunto de dados (incluindo `DataTables` classes) e o `TableAdapter` classes em um único projeto. (Todas as classes são geradas em um único arquivo.) Quando você separar o conjunto de dados e TableAdapters em diferentes projetos, é a classe de conjunto de dados é movida para outro projeto, deixando o `TableAdapter` classes no projeto original. Portanto, crie o conjunto de dados no projeto que conterá, por fim, os TableAdapters (no projeto DataAccessTier). Criar o conjunto de dados usando o **Data Source Configuration Wizard**.
 
 > [!NOTE]
-> É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
+> É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: Instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-dataset"></a>Para criar o conjunto de dados
 
@@ -154,7 +154,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 5. No menu **Build**, selecione **Compilar Solução**.
 
-   O conjunto de dados e os TableAdapters são separados em dois projetos de biblioteca de classes. O projeto que continha originalmente todo o conjunto de dados (`DataAccessTier`) agora contém somente os TableAdapters. O projeto atribuído a **projeto DataSet** propriedade (`DataEntityTier`) contém o conjunto de dados tipado: *NorthwindDataSet* (ou  *NorthwindDataSet.Dataset.Designer.cs*).
+   O conjunto de dados e os TableAdapters são separados em dois projetos de biblioteca de classes. O projeto que continha originalmente todo o conjunto de dados (`DataAccessTier`) agora contém somente os TableAdapters. O projeto atribuído a **projeto DataSet** propriedade (`DataEntityTier`) contém o conjunto de dados tipado: *NorthwindDataSet* (ou *NorthwindDataSet.Dataset.Designer.cs*).
 
 > [!NOTE]
 > Quando você separa os conjuntos de dados e os TableAdapters (configurando a propriedade **Projeto de Conjunto de Dados**), as classes dos conjuntos de dados parciais existentes no projeto não são movidas automaticamente. As classes parciais do conjunto de dados existentes devem ser movidas manualmente para o projeto do conjunto de dados.
@@ -301,7 +301,7 @@ Vamos definir a **PresentationTier** projeto como o projeto de inicialização p
 
 ### <a name="to-set-the-new-presentation-tier-project-as-the-startup-project"></a>Para configurar o novo projeto de camada de apresentação como o projeto de inicialização
 
--   Em **Gerenciador de Soluções**, clique com o botão direito do mouse em **PresentationTier** e clique em **Definir como Projeto de Inicialização**.
+- Em **Gerenciador de Soluções**, clique com o botão direito do mouse em **PresentationTier** e clique em **Definir como Projeto de Inicialização**.
 
 ## <a name="add-references-to-the-presentation-tier"></a>Adicione referências à camada de apresentação
  O aplicativo cliente PresentationTier requer uma referência de serviço para o serviço de dados para acessar os métodos no serviço. Além disso, uma referência ao conjunto de dados é necessária para permitir o compartilhamento de tipos pelo serviço WCF. Até que você habilite o compartilhamento por meio do serviço de dados de tipo, o código adicionado à classe parcial do conjunto de dados não está disponível para a camada de apresentação. Como você geralmente adiciona código, como o código de validação para a linha e coluna alterando eventos de uma tabela de dados, é provável que você desejará acessar esse código do cliente.
@@ -375,9 +375,9 @@ Execute o aplicativo pressionando **F5**. Os dados a partir de `Customers` e `Or
 ## <a name="next-steps"></a>Próximas etapas
  Dependendo dos requisitos do aplicativo, existem várias etapas que você talvez queira realizar após salvar os dados relacionados no aplicativo baseado em Windows. Por exemplo, você poderia fazer as seguintes melhorias a este aplicativo:
 
--   Adicionar validação ao conjunto de dados.
+- Adicionar validação ao conjunto de dados.
 
--   Adicionar métodos adicionais ao serviço para atualizar dados novamente no banco de dados.
+- Adicionar métodos adicionais ao serviço para atualizar dados novamente no banco de dados.
 
 ## <a name="see-also"></a>Consulte também
 

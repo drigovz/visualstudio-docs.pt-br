@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 93165a1534ed01dca057fc13059858c4c3e7a81c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0a440fbd87e85a72b2807ea09c7af61adf9f8af7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928740"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108354"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implantando um processador de diretiva personalizada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,27 +48,27 @@ Para usar um processador de diretriz personalizado no [!INCLUDE[vsprvs](../inclu
   
 #### <a name="to-develop-a-custom-directive-processor-in-a-vsix-project"></a>Para desenvolver um processador de diretriz personalizado em um projeto VSIX  
   
-1.  Crie um projeto VSIX no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+1. Crie um projeto VSIX no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-    -   No **novo projeto** diálogo caixa, expanda **Visual Basic** ou **Visual C#**, em seguida, expanda **extensibilidade**. Clique em **VSIX Project**.  
+    - No **novo projeto** diálogo caixa, expanda **Visual Basic** ou **Visual c#**, em seguida, expanda **extensibilidade**. Clique em **VSIX Project**.  
   
-2.  Na **vsixmanifest**, defina o tipo de conteúdo e edições com suporte.  
+2. Na **vsixmanifest**, defina o tipo de conteúdo e edições com suporte.  
   
-    1.  No VSIX editor, de manifesto na **ativos** guia, escolha **New** e definir propriedades do novo item:  
+    1. No VSIX editor, de manifesto na **ativos** guia, escolha **New** e definir propriedades do novo item:  
   
          **Tipo de conteúdo** = **VSPackage**  
   
          **Projeto de origem** = \<*o projeto atual*>  
   
-    2.  Clique em **edições selecionadas** e verifique os tipos de instalação no qual você deseja que o processador de diretriz seja utilizável.  
+    2. Clique em **edições selecionadas** e verifique os tipos de instalação no qual você deseja que o processador de diretriz seja utilizável.  
   
-3.  Adicione um arquivo .pkgdef e defina suas propriedades para ser incluídas no VSIX.  
+3. Adicione um arquivo .pkgdef e defina suas propriedades para ser incluídas no VSIX.  
   
-    1.  Crie um arquivo de texto e nomeie- \< *assemblyName*>. pkgdef.  
+    1. Crie um arquivo de texto e nomeie- \< *assemblyName*>. pkgdef.  
   
          \<*assemblyName*> geralmente é igual ao nome do projeto.  
   
-    2.  Selecione-o no Gerenciador de Soluções e defina suas propriedades da seguinte maneira:  
+    2. Selecione-o no Gerenciador de Soluções e defina suas propriedades da seguinte maneira:  
   
          **Ação de Build** = **conteúdo**  
   
@@ -76,9 +76,9 @@ Para usar um processador de diretriz personalizado no [!INCLUDE[vsprvs](../inclu
   
          **Incluir no VSIX** = **True**  
   
-    3.  Defina o nome da VSIX e verifique se a ID é exclusiva.  
+    3. Defina o nome da VSIX e verifique se a ID é exclusiva.  
   
-4.  Adicione o seguinte texto ao arquivo .pkgdef.  
+4. Adicione o seguinte texto ao arquivo .pkgdef.  
   
     ```  
     [$RootKey$\TextTemplating]  
@@ -91,46 +91,46 @@ Para usar um processador de diretriz personalizado no [!INCLUDE[vsprvs](../inclu
   
      Substitua os seguintes nomes pelos seus próprios nomes: `CustomDirectiveProcessorName`, `NamespaceName`, `ClassName`, `AssemblyName`.  
   
-5.  Adicione as seguintes referências ao projeto:  
+5. Adicione as seguintes referências ao projeto:  
   
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
   
-    -   **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.VSHost.\*.0**  
   
-6.  Adicione sua classe de processador de diretriz personalizado ao projeto.  
+6. Adicione sua classe de processador de diretriz personalizado ao projeto.  
   
      Essa é uma classe pública que deve implementar <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> ou <xref:Microsoft.VisualStudio.TextTemplating.RequiresProvidesDirectiveProcessor>.  
   
 #### <a name="to-install-the-custom-directive-processor"></a>Para instalar o Processador de Diretriz Personalizado  
   
-1.  No Windows Explorer (Explorador de Arquivos no Windows 8), abra o diretório de compilação (geralmente bin\Debug ou bin\Release).  
+1. No Windows Explorer (Explorador de Arquivos no Windows 8), abra o diretório de compilação (geralmente bin\Debug ou bin\Release).  
   
-2.  Se você desejar instalar o processador de diretriz em outro computador, copie o arquivo .vsix para o outro computador.  
+2. Se você desejar instalar o processador de diretriz em outro computador, copie o arquivo .vsix para o outro computador.  
   
-3.  Clique duas vezes no arquivo .vsix. O Instalador de Extensão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é exibido.  
+3. Clique duas vezes no arquivo .vsix. O Instalador de Extensão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é exibido.  
   
-4.  Reinicie o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Agora você poderá executar os modelos de texto que contêm diretivas que se referem ao processador de diretriz personalizado. Cada diretiva tem este formato:  
+4. Reinicie o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Agora você poderá executar os modelos de texto que contêm diretivas que se referem ao processador de diretriz personalizado. Cada diretiva tem este formato:  
   
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" … #>`  
   
 #### <a name="to-uninstall-or-temporarily-disable-the-custom-directive-processor"></a>Para desinstalar ou desabilitar temporariamente o processador de diretriz personalizado  
   
-1.  No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **ferramentas** menu, clique em **Gerenciador de extensões**.  
+1. No [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **ferramentas** menu, clique em **Gerenciador de extensões**.  
   
-2.  Selecione a VSIX que contém o processador de diretriz e, em seguida, clique em **Uninstall** ou **desabilitar**.  
+2. Selecione a VSIX que contém o processador de diretriz e, em seguida, clique em **Uninstall** ou **desabilitar**.  
   
 ### <a name="troubleshooting-a-directive-processor-in-a-vsix"></a>Solução de problemas de um processador de diretriz em uma VSIX  
  Se o processador de diretriz não funcionar, as sugestões a seguir podem ajudar:  
   
--   O nome do processador que você especifica na diretiva personalizada deve corresponder ao `CustomDirectiveProcessorName` que você especificou no arquivo .pkgdef.  
+- O nome do processador que você especifica na diretiva personalizada deve corresponder ao `CustomDirectiveProcessorName` que você especificou no arquivo .pkgdef.  
   
--   O método `IsDirectiveSupported` deve retornar `true` quando o nome de seu `CustomDirective` é aprovado.  
+- O método `IsDirectiveSupported` deve retornar `true` quando o nome de seu `CustomDirective` é aprovado.  
   
--   Se você não conseguir ver a extensão no Gerenciador de extensões, mas o sistema não permitirá que você instalá-lo, exclua a extensão de **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .  
+- Se você não conseguir ver a extensão no Gerenciador de extensões, mas o sistema não permitirá que você instalá-lo, exclua a extensão de **%localappdata%\Microsoft\VisualStudio\\\*. 0\Extensions\\** .  
   
--   Abra o arquivo .vsix e inspecione seu conteúdo. Para abri-lo, altere a extensão do nome do arquivo para .zip. Verifique se contém os arquivos .dll, .pkgdef e extension.vsixmanifest. O arquivo extension.vsixmanifest deve conter a lista apropriada no nó SupportedProducts e deve conter também um nó VsPackage, sob o nó Conteúdo:  
+- Abra o arquivo .vsix e inspecione seu conteúdo. Para abri-lo, altere a extensão do nome do arquivo para .zip. Verifique se contém os arquivos .dll, .pkgdef e extension.vsixmanifest. O arquivo extension.vsixmanifest deve conter a lista apropriada no nó SupportedProducts e deve conter também um nó VsPackage, sob o nó Conteúdo:  
   
      `<Content>`  
   
@@ -174,15 +174,15 @@ Para usar um processador de diretriz personalizado no [!INCLUDE[vsprvs](../inclu
   
 3. Adicione uma chave do Registro que tenha o mesmo nome da classe do processador de diretriz.  
   
-   -   Na árvore do registro, clique com botão direito do **DirectiveProcessors** nó, aponte para **New**e, em seguida, clique em **chave**.  
+   - Na árvore do registro, clique com botão direito do **DirectiveProcessors** nó, aponte para **New**e, em seguida, clique em **chave**.  
   
 4. No novo nó, adicione valores de cadeia de caracteres para Class e CodeBase ou Assembly, de acordo com as tabelas a seguir.  
   
-   1.  Clique com botão direito no nó que você criou, aponte para **New**e, em seguida, clique em **valor de cadeia de caracteres**.  
+   1. Clique com botão direito no nó que você criou, aponte para **New**e, em seguida, clique em **valor de cadeia de caracteres**.  
   
-   2.  Edite o nome do valor.  
+   2. Edite o nome do valor.  
   
-   3.  Clique duas vezes no nome e edite os dados.  
+   3. Clique duas vezes no nome e edite os dados.  
   
    Se o processador de diretriz personalizado não estiver no GAC, as subchaves do Registro deverão se parecer como na tabela a seguir:  
   

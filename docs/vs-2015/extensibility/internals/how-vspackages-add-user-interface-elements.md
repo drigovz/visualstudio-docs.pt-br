@@ -12,12 +12,12 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 caps.latest.revision: 61
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d020dd0e1d20facd431a31f5aabffb4ec9e2631a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: df04f8da29972b4be3967e5fd677a43e76ce1ac5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929169"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085619"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Como os VSPackages adicionam elementos da interface do usuário
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Um VSPackage pode adicionar elementos interface do usuário (IU), por exemplo, m
 ## <a name="the-visual-studio-command-table-architecture"></a>A arquitetura de tabela de comando do Visual Studio  
  Conforme observado, a arquitetura de tabela do comando dá suporte aos princípios de arquitetura acima. Os princípios por trás de abstrações, estruturas de dados e ferramentas da arquitetura de tabela do comando são da seguinte maneira:  
   
--   Há três tipos básicos de itens: menus, comandos e grupos. Menus podem ser expostos na interface do usuário como menus, submenus, barras de ferramentas ou janelas de ferramentas. Comandos são procedimentos que o usuário pode executar no IDE, e eles podem ser expostos como itens de menu, botões, caixas de listagem ou outros controles. Grupos são contêineres para os menus e comandos.  
+- Há três tipos básicos de itens: menus, comandos e grupos. Menus podem ser expostos na interface do usuário como menus, submenus, barras de ferramentas ou janelas de ferramentas. Comandos são procedimentos que o usuário pode executar no IDE, e eles podem ser expostos como itens de menu, botões, caixas de listagem ou outros controles. Grupos são contêineres para os menus e comandos.  
   
--   Cada item é especificado por uma definição que descreve o item, sua prioridade em relação a outros itens e os sinalizadores de modificam seu comportamento.  
+- Cada item é especificado por uma definição que descreve o item, sua prioridade em relação a outros itens e os sinalizadores de modificam seu comportamento.  
   
--   Cada item tem um posicionamento que descreve o pai do item. Um item pode ter vários pais, para que ele pode aparecer em vários locais na interface do usuário.  
+- Cada item tem um posicionamento que descreve o pai do item. Um item pode ter vários pais, para que ele pode aparecer em vários locais na interface do usuário.  
   
      Todos os comandos devem ter um grupo como pai, mesmo se ele for o único filho desse grupo. Cada menu padrão também deve ter um grupo pai. Barras de ferramentas e janelas de ferramenta atuam como suas próprias pais. Um grupo pode ter como seu pai, a barra de menus principal do Visual Studio, ou qualquer menu, barra de ferramentas ou janela de ferramentas.  
   
@@ -76,15 +76,15 @@ Um VSPackage pode adicionar elementos interface do usuário (IU), por exemplo, m
 ### <a name="menus-groups-and-commands"></a>Menus, grupos e comandos  
  Quando um menu, o grupo ou o comando tem um GUID e ID, podem ser adicionado ao IDE. Todos os elementos da interface do usuário devem ter o seguinte:  
   
--   Um `guid` que corresponde ao nome do atributo a `GuidSymbol` elemento que o elemento de interface do usuário é definido em.  
+- Um `guid` que corresponde ao nome do atributo a `GuidSymbol` elemento que o elemento de interface do usuário é definido em.  
   
--   Uma `id` atributo que corresponde ao nome do associado `IDSymbol` elemento.  
+- Uma `id` atributo que corresponde ao nome do associado `IDSymbol` elemento.  
   
      Juntos, o `guid` e `id` compõem atributos a *assinatura* do elemento de interface do usuário.  
   
--   Um `priority` que determina o posicionamento do elemento da interface do usuário no seu menu pai ou o grupo de atributo.  
+- Um `priority` que determina o posicionamento do elemento da interface do usuário no seu menu pai ou o grupo de atributo.  
   
--   Um [elemento pai](../../extensibility/parent-element.md) que tem `guid` e `id` atributos que especificam a assinatura do menu pai ou do grupo.  
+- Um [elemento pai](../../extensibility/parent-element.md) que tem `guid` e `id` atributos que especificam a assinatura do menu pai ou do grupo.  
   
 #### <a name="menus"></a>Menus  
  Cada menu é definida como uma [elemento Menu](../../extensibility/menu-element.md) no `Menus` seção. Menus devem ter `guid`, `id`, e `priority` atributos e um `Parent` elemento e também os seguintes atributos adicionais e filhos:  
@@ -271,17 +271,17 @@ priority="0x0100" type="Menu">
 ##### <a name="general-requirements"></a>Requisitos gerais  
  O comando deve passar a seguinte série de testes antes de ser exibido e habilitado:  
   
--   O comando é posicionado corretamente.  
+- O comando é posicionado corretamente.  
   
--   O `DefaultInvisible` sinalizador não estiver definido.  
+- O `DefaultInvisible` sinalizador não estiver definido.  
   
--   Barra de ferramentas ou menu pai está visível.  
+- Barra de ferramentas ou menu pai está visível.  
   
--   O comando não é invisível devido a uma entrada de contexto na [Element Visibilityconstraints](../../extensibility/visibilityconstraints-element.md) seção.  
+- O comando não é invisível devido a uma entrada de contexto na [Element Visibilityconstraints](../../extensibility/visibilityconstraints-element.md) seção.  
   
--   Código de VSPackage que implementa o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface Exibe e permite que seu comando. Nenhum código de interface interceptamos e foi agiu sobre ele.  
+- Código de VSPackage que implementa o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface Exibe e permite que seu comando. Nenhum código de interface interceptamos e foi agiu sobre ele.  
   
--   Quando um usuário clica em seu comando, ele fique sujeita ao procedimento descrito em [algoritmo de roteamento](../../extensibility/internals/command-routing-algorithm.md).  
+- Quando um usuário clica em seu comando, ele fique sujeita ao procedimento descrito em [algoritmo de roteamento](../../extensibility/internals/command-routing-algorithm.md).  
   
 ## <a name="calling-pre-defined-commands"></a>Comandos predefinidos de chamada  
  O [elemento UsedCommands](../../extensibility/usedcommands-element.md) permite que os VSPackages para acessar os comandos que são fornecidos por outros VSPackages ou pelo IDE. Para fazer isso, crie uma [elemento UsedCommand](../../extensibility/usedcommand-element.md) que tem o GUID e a ID do comando para usar. Isso garante que o comando será carregado pelo Visual Studio, mesmo se ele não é parte da configuração atual do Visual Studio. Para obter mais informações, consulte [elemento UsedCommand](../../extensibility/usedcommand-element.md).  
@@ -289,17 +289,17 @@ priority="0x0100" type="Menu">
 ## <a name="interface-element-appearance"></a>Aparência do elemento de interface  
  Considerações para selecionar e posicionar os elementos de comando são da seguinte maneira:  
   
--   [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oferece muitos elementos de interface do usuário que aparecem de forma diferente dependendo do posicionamento.  
+- [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] oferece muitos elementos de interface do usuário que aparecem de forma diferente dependendo do posicionamento.  
   
--   Um elemento de interface do usuário que é definido usando o `DefaultInvisible` sinalizador não será exibido no IDE, a menos que ele seja exibido por sua implementação de VSPackage do <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> método, ou associado a um determinado contexto de interface do usuário no `VisibilityConstraints` seção.  
+- Um elemento de interface do usuário que é definido usando o `DefaultInvisible` sinalizador não será exibido no IDE, a menos que ele seja exibido por sua implementação de VSPackage do <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> método, ou associado a um determinado contexto de interface do usuário no `VisibilityConstraints` seção.  
   
--   Não pode ser exibido até mesmo um comando posicionado com êxito. Isso é porque o IDE automaticamente oculta ou exibe alguns comandos, dependendo das interfaces que o VSPackage (ou não) implementado. Por exemplo, a implementação de um VSPackage de alguns criar interfaces de itens de menu relacionados à compilação de faz com que a ser mostrado automaticamente.  
+- Não pode ser exibido até mesmo um comando posicionado com êxito. Isso é porque o IDE automaticamente oculta ou exibe alguns comandos, dependendo das interfaces que o VSPackage (ou não) implementado. Por exemplo, a implementação de um VSPackage de alguns criar interfaces de itens de menu relacionados à compilação de faz com que a ser mostrado automaticamente.  
   
--   Aplicando o `CommandWellOnly` sinalizador na definição de elemento de interface do usuário significa que o comando possa ser adicionado somente por personalização.  
+- Aplicando o `CommandWellOnly` sinalizador na definição de elemento de interface do usuário significa que o comando possa ser adicionado somente por personalização.  
   
--   Comandos podem estar disponíveis apenas em determinados contextos de interface do usuário, por exemplo, somente quando uma caixa de diálogo é exibida quando o IDE está no modo de exibição de design.  
+- Comandos podem estar disponíveis apenas em determinados contextos de interface do usuário, por exemplo, somente quando uma caixa de diálogo é exibida quando o IDE está no modo de exibição de design.  
   
--   Para fazer com que determinados elementos de interface do usuário a ser exibido no IDE, você deve implementar uma ou mais interfaces ou escrever um código.  
+- Para fazer com que determinados elementos de interface do usuário a ser exibido no IDE, você deve implementar uma ou mais interfaces ou escrever um código.  
   
 ## <a name="see-also"></a>Consulte também  
  [Ampliar menus e comandos](../../extensibility/extending-menus-and-commands.md)

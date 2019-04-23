@@ -12,12 +12,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aa56b6c1dbb79cf3d6c59283856e763c2cf7a958
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 35fa2825d9fbb4b6a34d813c812bde1bc465f14f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799779"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108379"
 ---
 # <a name="how-to-customize-search-results"></a>Como personalizar resultados de pesquisa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,11 +29,11 @@ Você pode personalizar a aparência dos resultados da pesquisa na guia **Pesqui
   
 #### <a name="to-change-the-number-of-topics-displayed-at-a-time"></a>Para alterar o número de tópicos exibidos por vez  
   
-1.  Na **Barra de Ferramentas**, escolha **Opções do Visualizador**.  
+1. Na **Barra de Ferramentas**, escolha **Opções do Visualizador**.  
   
      A caixa de diálogo **Opções do Visualizador** é exibida.  
   
-2.  Na lista **Máximo de Resultados da Pesquisa**, escolha 25, 50, 100 ou 200.  
+2. Na lista **Máximo de Resultados da Pesquisa**, escolha 25, 50, 100 ou 200.  
   
 ## <a name="search-for-content-by-language"></a>Pesquisar conteúdo por idioma  
  A documentação pode incluir conteúdo em um idioma diferente do inglês. Você pode restringir os resultados da pesquisa ao conteúdo em um idioma específico. Você também pode incluir qualquer conteúdo em inglês que corresponder à sua consulta de pesquisa.  
@@ -43,11 +43,11 @@ Você pode personalizar a aparência dos resultados da pesquisa na guia **Pesqui
   
 #### <a name="to-include-english-content-alongside-content-in-another-language"></a>Para incluir o conteúdo em inglês juntamente com conteúdo em outro idioma  
   
-1.  Na **Barra de Ferramentas**, escolha **Opções do Visualizador**.  
+1. Na **Barra de Ferramentas**, escolha **Opções do Visualizador**.  
   
      A caixa de diálogo **Opções do Visualizador** é exibida.  
   
-2.  Selecione a caixa de seleção **Incluir conteúdo em inglês em todas as guias de navegação e solicitações F1**.  
+2. Selecione a caixa de seleção **Incluir conteúdo em inglês em todas as guias de navegação e solicitações F1**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Dicas de pesquisa de texto completo](../ide/full-text-search-tips.md)

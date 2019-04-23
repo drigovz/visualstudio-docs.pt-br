@@ -10,29 +10,29 @@ ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9a2898bb5736e6731d200fd4a05e84aeae8adb42
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5c9ea20e42ada09bd9ff2a5ab5fdb6222839380c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924690"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108042"
 ---
 # <a name="program-control"></a>Controle do programa
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 No Visual Studio de depuração, todos os procedimentos passo a passo e continuando rotinas ocorrerem no nível do programa:  
   
--   Ou seja, definir a próxima instrução, a configuração de seu computador para a próxima instrução a ser executada no ambiente de um determinado quadro  
+- Ou seja, definir a próxima instrução, a configuração de seu computador para a próxima instrução a ser executada no ambiente de um determinado quadro  
   
--   Ou seja, executar, continuando sair do modo de depuração  
+- Ou seja, executar, continuando sair do modo de depuração  
   
--   Passo a passo para a próxima instrução  
+- Passo a passo para a próxima instrução  
   
--   Continuando com o modo de depuração atual  
+- Continuando com o modo de depuração atual  
   
--   Suspender os threads contidos pelo programa  
+- Suspender os threads contidos pelo programa  
   
--   Retomar os threads contidos pelo programa  
+- Retomar os threads contidos pelo programa  
   
 > [!NOTE]
 >  Exibindo a pilha de chamadas é implementada no nível do thread. Para enumerar as informações do quadro ao exibir a pilha de chamadas para um thread, você deve implementar todos os métodos do [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) interface.  

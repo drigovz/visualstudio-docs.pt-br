@@ -13,12 +13,12 @@ ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
 caps.latest.revision: 19
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6e08d08e8ec68e684ced1972f277af9b04805c3e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e4f480275c29906f3bb941187ff537e3a02a1f45
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929465"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099124"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>Elemento ProjectItem (modelos de projeto do Visual Studio)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,21 +90,21 @@ Especifica um arquivo que está incluído no modelo de projeto.
   
 ### <a name="to-rename-files-with-parameters"></a>Para renomear arquivos com parâmetros  
   
-1.  Use o seguinte XML no arquivo. vstemplate:  
+1. Use o seguinte XML no arquivo. vstemplate:  
   
     ```  
     <ProjectItem TargetFileName="$safeprojectname$.vb">MyFile.vb</ProjectItem>  
     ```  
   
-2.  Abra o arquivo de projeto (. vbproj para um [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projeto) em um editor de texto ou [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+2. Abra o arquivo de projeto (. vbproj para um [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] projeto) em um editor de texto ou [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
-3.  Localize a linha no arquivo de projeto que é semelhante ao seguinte XML:  
+3. Localize a linha no arquivo de projeto que é semelhante ao seguinte XML:  
   
     ```  
     <Compile Include="MyFile.vb">  
     ```  
   
-4.  Substitua a linha de código com o seguinte XML:  
+4. Substitua a linha de código com o seguinte XML:  
   
     ```  
     <Compile Include="$safeprojectname$.vb">  

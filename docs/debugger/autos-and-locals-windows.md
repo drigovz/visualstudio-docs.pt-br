@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d270b14a0dda18a037eb74181c2eec69cf26dc8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 60bb98644c1905b030176b28b97575b379bed38d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366543"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103089"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>Inspecionar variáveis nas janelas Autos e locais
 
@@ -85,9 +85,9 @@ Definir um ponto de interrupção e iniciar a depuração. Quando o ponto de int
 
 ## <a name="bkmk_whatvariables"></a> As variáveis na janela Autos (C#, C++, Visual Basic, Python)
 
- Linguagens de código diferentes exibem variáveis diferentes nos **Autos** janela.
+Linguagens de código diferentes exibem variáveis diferentes nos **Autos** janela.
 
- - No C# e Visual Basic, a janela **Autos** exibirá qualquer variável usada na linha atual ou anterior. Por exemplo, em C# ou Visual Basic de código, declare as quatro variáveis a seguir:
+- No C# e Visual Basic, a janela **Autos** exibirá qualquer variável usada na linha atual ou anterior. Por exemplo, em C# ou Visual Basic de código, declare as quatro variáveis a seguir:
 
    ```csharp
        public static void Main()
@@ -106,7 +106,7 @@ Definir um ponto de interrupção e iniciar a depuração. Quando o ponto de int
 
    O valor de `c` é 0, porque a linha `c = 3` ainda não foi executada.
 
- - No C++, o **Autos** janela exibe as variáveis usadas em pelo menos três linhas antes da linha atual em que a execução está em pausa. Por exemplo, no código C++, declare seis variáveis:
+- No C++, o **Autos** janela exibe as variáveis usadas em pelo menos três linhas antes da linha atual em que a execução está em pausa. Por exemplo, no código C++, declare seis variáveis:
 
    ```C++
        void main() {
@@ -126,7 +126,7 @@ Definir um ponto de interrupção e iniciar a depuração. Quando o ponto de int
 
     A variável `e` não foi inicializada, porque a linha `e = 5` ainda não foi executada.
 
-##  <a name="bkmk_returnValue"></a> Modo de exibição de valores de retorno de chamadas de método
+## <a name="bkmk_returnValue"></a> Modo de exibição de valores de retorno de chamadas de método
  No código .NET e C++, você pode examinar os valores de retorno na **Autos** janela ao passar sobre ou fora de uma chamada de método. Pode ser útil exibir valores de retornor de chamadas de método quando eles não são armazenados em variáveis locais. Um método pode ser usado como um parâmetro ou como o valor retornado de outro método.
 
  Por exemplo, a seguinte C# código adiciona os valores de retorno das duas funções:

@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a67804984c427062e55b72e3bbe942e6e4839f99
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e69b9a96ba2529eba2f981ab79e59c5e7936cf97
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652820"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086579"
 ---
 # <a name="convert-dialog-box"></a>Caixa de diálogo Converter
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -33,11 +33,11 @@ A caixa de diálogo **Converter** permite selecionar uma ferramenta de conversã
   
 #### <a name="to-access-the-convert-dialog-box"></a>Para acessar a caixa de diálogo Converter  
   
-1.  Na barra de menus, escolha **Arquivo**, **Abrir**, **Converter**.  
+1. Na barra de menus, escolha **Arquivo**, **Abrir**, **Converter**.  
   
      Você verá uma lista de ferramentas de conversão de código que estão disponíveis no momento.  
   
-2.  Selecione a ferramenta apropriada para seu aplicativo.  
+2. Selecione a ferramenta apropriada para seu aplicativo.  
   
 ## <a name="see-also"></a>Consulte também  
  [NOTINBUILD – Como atualizar um projeto do Visual Basic 6.0](http://msdn.microsoft.com/c0421e57-5bba-422e-934d-ec42ab9f2af9)   

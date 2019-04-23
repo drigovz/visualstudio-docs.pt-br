@@ -11,19 +11,19 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e90b66288d15abdaf85c519bd89deb6262e4363
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 48d70901a2d616031eeed197b639f3a7bb7336c3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922716"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092988"
 ---
 # <a name="read-a-uml-model-in-program-code"></a>Ler um modelo UML no código do programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode carregar um modelo UML e seus diagramas usando a API UML.  
   
-##  <a name="Reading"></a> Leitura de um modelo no código do programa  
+## <a name="Reading"></a> Leitura de um modelo no código do programa  
  Para acessar o conteúdo de um modelo sem mostrá-lo em um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] janela, use `ModelingProject.LoadReadOnly()`.  
   
  Por exemplo:  
@@ -70,7 +70,7 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
  Você também pode abrir modelos e diagramas na interface do usuário usando o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] API. Para obter mais informações, consulte [abrir um modelo UML usando a API do Visual Studio](../modeling/open-a-uml-model-by-using-the-visual-studio-api.md).  
   
-##  <a name="Standalone"></a> Aplicativos autônomos  
+## <a name="Standalone"></a> Aplicativos autônomos  
  O exemplo na seção anterior funcionará em extensões do Visual Studio. É possível ler um modelo em um aplicativo autônomo, mas você deve adicionar algumas referências ao seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] projeto.  
   
 > [!NOTE]
@@ -82,9 +82,9 @@ foreach (string diagramFile in projectReader. DiagramFileNames)
   
 2. Adicionar o [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] referências necessárias para acessar os modelos UML, normalmente:  
   
-   -   Microsoft.VisualStudio.Uml.Interfaces.dll  
+   - Microsoft.VisualStudio.Uml.Interfaces.dll  
   
-   -   Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
+   - Microsoft.VisualStudio.ArchitectureTools.Extensibility.dll  
   
 3. Além das referências listadas nas seções anteriores, adicione as seguintes referências de projeto do **\Program Files\Microsoft Visual Studio [versão] \Common7\IDE\PrivateAssemblies**:  
   

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bb47aa94dbf444e27fd149e2e16c723677f973eb
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 8b4c763ff31c6c62a177c77f8886f1de305a5170
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537553"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097317"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>Aprender dicas de produtividade e truques do depurador no Visual Studio
 
@@ -74,17 +74,17 @@ Alterando o fluxo de execução, você pode fazer coisas como testar caminhos de
 
 #### <a name="to-create-an-object-id"></a>Para criar uma ID de objeto
 
-1.  Defina um ponto de interrupção perto de uma variável que você deseja controlar.
+1. Defina um ponto de interrupção perto de uma variável que você deseja controlar.
 
-2.  Inicie o depurador (**F5**) e interromperá no ponto de interrupção.
+2. Inicie o depurador (**F5**) e interromperá no ponto de interrupção.
 
 3. Localize a variável na **Locals** janela (**Depurar > Windows > Locals**), a variável com o botão direito e selecione **criar ID de objeto**.
 
     ![Criar uma ID de objeto](../debugger/media/dbg-tips-watch-create-object-id.png "CreateObjectID")
 
-4.  Você deve ver uma **$** além de um número no **locais** janela. Essa variável é a ID de objeto.
+4. Você deve ver uma **$** além de um número no **locais** janela. Essa variável é a ID de objeto.
 
-5.  A variável de ID de objeto com o botão direito e escolha **Adicionar inspeção**.
+5. A variável de ID de objeto com o botão direito e escolha **Adicionar inspeção**.
 
 Para obter mais informações, consulte [criar uma ID de objeto](../debugger/watch-and-quickwatch-windows.md#bkmk_objectIds).
 
@@ -126,13 +126,13 @@ Se você precisar depurar os tipos de problemas que são comuns a aplicativos mu
 
 #### <a name="to-show-threads-in-your-source-code"></a>Mostrar threads em seu código-fonte
 
-1.  Durante a depuração, clique o **Mostrar Threads em origem** botão ![Mostrar Threads em origem](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") no **depurar** barra de ferramentas.
+1. Durante a depuração, clique o **Mostrar Threads em origem** botão ![Mostrar Threads em origem](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker") no **depurar** barra de ferramentas.
 
-2.  Examine a medianiz no lado esquerdo da janela. Nessa linha, você verá uma *marcador de thread* ícone ![marcador de Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") que se parece com dois threads de pano. O marcador de thread indica que um thread está parado nesse local.
+2. Examine a medianiz no lado esquerdo da janela. Nessa linha, você verá uma *marcador de thread* ícone ![marcador de Thread](../debugger/media/dbg-thread-marker.png "ThreadMarker") que se parece com dois threads de pano. O marcador de thread indica que um thread está parado nesse local.
 
     Observe que um marcador de thread pode ser escondido parcialmente por um ponto de interrupção.
 
-3.  Passe o ponteiro sobre o marcador de thread. Um DataTip aparece. O DataTip mostra o nome e o número de ID do thread para cada thread parado.
+3. Passe o ponteiro sobre o marcador de thread. Um DataTip aparece. O DataTip mostra o nome e o número de ID do thread para cada thread parado.
 
     Você também pode exibir o local de threads na [janela pilhas paralelas](../debugger/get-started-debugging-multithreaded-apps.md).
 

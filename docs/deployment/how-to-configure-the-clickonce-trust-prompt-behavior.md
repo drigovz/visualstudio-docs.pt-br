@@ -1,5 +1,5 @@
 ---
-title: 'Como: configurar o comportamento do Prompt confiável do ClickOnce | Microsoft Docs'
+title: 'Como: Configurar o comportamento do Prompt confiável do ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -18,14 +18,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f2869e76b0b5fd70515701352d257530480f0920
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 9ec30f3200b5a1df587713a2ee2394f52e3fb333
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618127"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093209"
 ---
-# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Como configurar o comportamento do prompt confiável do ClickOnce
+# <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>Como: Configurar o comportamento do prompt confiável do ClickOnce
 Você pode configurar o prompt de confiança do ClickOnce para controlar se os usuários finais recebem a opção de instalação de aplicativos do ClickOnce, como aplicativos do Windows Forms, aplicativos do Windows Presentation Foundation, aplicativos de console, navegador do WPF os aplicativos e soluções do Office. Configurar o prompt de confiança, definindo as chaves do registro no computador de cada usuário final.
 
  A tabela a seguir mostra as opções de configuração que podem ser aplicadas a cada uma das cinco zonas (Internet, UntrustedSites, MyComputer, LocalIntranet e TrustedSites).
@@ -53,19 +53,19 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
 
 #### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Para habilitar o prompt de confiança do ClickOnce usando o editor do registro
 
-1.  Abra o Editor do Registro:
+1. Abra o Editor do Registro:
 
-    1.  Clique em **Iniciar** e depois em **Executar**.
+    1. Clique em **Iniciar** e depois em **Executar**.
 
-    2.  No **aberto** , digite `regedit`e, em seguida, clique em **Okey**.
+    2. No **aberto** , digite `regedit`e, em seguida, clique em **Okey**.
 
-2.  Localize a seguinte chave do registro:
+2. Localize a seguinte chave do registro:
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
      Se a chave não existir, crie-o.
 
-3.  Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se ainda não existirem, com os valores associados, mostrados na tabela a seguir.
+3. Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se ainda não existirem, com os valores associados, mostrados na tabela a seguir.
 
     |Subchave do valor de cadeia de caracteres|Valor|
     |-------------------------|-----------|
@@ -79,9 +79,9 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
 
 #### <a name="to-enable-the-clickonce-trust-prompt-programmatically"></a>Para habilitar o prompt de confiança do ClickOnce por meio de programação
 
-1.  Crie um aplicativo de console do Visual Basic ou Visual c# no Visual Studio.
+1. Crie um aplicativo de console do Visual Basic ou Visual c# no Visual Studio.
 
-2.  Abra o *Program. vb* ou *Program.cs* arquivo para edição e adicione o código a seguir.
+2. Abra o *Program. vb* ou *Program.cs* arquivo para edição e adicione o código a seguir.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -105,26 +105,26 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
     key.Close();
     ```
 
-3.  Crie e execute o aplicativo.
+3. Crie e execute o aplicativo.
 
 ## <a name="restrict-the-clickonce-trust-prompt"></a>Restringir o prompt de confiança do ClickOnce
  Restringir o prompt de confiança para que as soluções devem ser assinadas com certificados Authenticode que têm conhecidos identidade antes que os usuários são solicitados para uma decisão de confiança.
 
 #### <a name="to-restrict-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Para restringir o prompt de confiança do ClickOnce usando o editor do registro
 
-1.  Abra o Editor do Registro:
+1. Abra o Editor do Registro:
 
-    1.  Clique em **Iniciar** e depois em **Executar**.
+    1. Clique em **Iniciar** e depois em **Executar**.
 
-    2.  No **aberto** , digite `regedit`e, em seguida, clique em **Okey**.
+    2. No **aberto** , digite `regedit`e, em seguida, clique em **Okey**.
 
-2.  Localize a seguinte chave do registro:
+2. Localize a seguinte chave do registro:
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
      Se a chave não existir, crie-o.
 
-3.  Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se ainda não existirem, com os valores associados, mostrados na tabela a seguir.
+3. Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se ainda não existirem, com os valores associados, mostrados na tabela a seguir.
 
     |Subchave do valor de cadeia de caracteres|Valor|
     |-------------------------|-----------|
@@ -136,9 +136,9 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
 
 #### <a name="to-restrict-the-clickonce-trust-prompt-programmatically"></a>Para restringir o prompt de confiança do ClickOnce por meio de programação
 
-1.  Crie um aplicativo de console do Visual Basic ou Visual c# no Visual Studio.
+1. Crie um aplicativo de console do Visual Basic ou Visual c# no Visual Studio.
 
-2.  Abra o *Program. vb* ou *Program.cs* arquivo para edição e adicione o código a seguir.
+2. Abra o *Program. vb* ou *Program.cs* arquivo para edição e adicione o código a seguir.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -162,26 +162,26 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
     key.Close();
     ```
 
-3.  Crie e execute o aplicativo.
+3. Crie e execute o aplicativo.
 
 ## <a name="disable-the-clickonce-trust-prompt"></a>Desabilitar o prompt de confiança do ClickOnce
  Você pode desabilitar o prompt de confiança para que os usuários finais não recebem a opção de instalar as soluções que já não são confiáveis na sua política de segurança.
 
 #### <a name="to-disable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>Para desabilitar o prompt de confiança do ClickOnce usando o editor do registro
 
-1.  Abra o Editor do Registro:
+1. Abra o Editor do Registro:
 
-    1.  Clique em **Iniciar** e depois em **Executar**.
+    1. Clique em **Iniciar** e depois em **Executar**.
 
-    2.  No **aberto** , digite `regedit`e, em seguida, clique em **Okey**.
+    2. No **aberto** , digite `regedit`e, em seguida, clique em **Okey**.
 
-2.  Localize a seguinte chave do registro:
+2. Localize a seguinte chave do registro:
 
      **\HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\\.NETFramework\Security\TrustManager\PromptingLevel**
 
      Se a chave não existir, crie-o.
 
-3.  Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se ainda não existirem, com os valores associados, mostrados na tabela a seguir.
+3. Adicione as seguintes subchaves como **valor de cadeia de caracteres**, se ainda não existirem, com os valores associados, mostrados na tabela a seguir.
 
     |Subchave do valor de cadeia de caracteres|Valor|
     |-------------------------|-----------|
@@ -193,9 +193,9 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
 
 #### <a name="to-disable-the-clickonce-trust-prompt-programmatically"></a>Para desabilitar o prompt de confiança do ClickOnce por meio de programação
 
-1.  Crie um aplicativo de console do Visual Basic ou Visual c# no Visual Studio.
+1. Crie um aplicativo de console do Visual Basic ou Visual c# no Visual Studio.
 
-2.  Abra o *Program. vb* ou *Program.cs* arquivo para edição e adicione o código a seguir.
+2. Abra o *Program. vb* ou *Program.cs* arquivo para edição e adicione o código a seguir.
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -220,16 +220,16 @@ Você pode configurar o prompt de confiança do ClickOnce para controlar se os u
 
     ```
 
-3.  Crie e execute o aplicativo.
+3. Crie e execute o aplicativo.
 
 ## <a name="see-also"></a>Consulte também
 - [Proteger aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Segurança de acesso do código para aplicativos ClickOnce](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce e Authenticode](../deployment/clickonce-and-authenticode.md)
 - [Visão geral da implantação de aplicativos confiáveis](../deployment/trusted-application-deployment-overview.md)
-- [Como habilitar configurações de segurança do ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
-- [Como definir uma zona de segurança para um aplicativo ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [Como definir permissões personalizadas para um aplicativo ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
-- [Como depurar um aplicativo ClickOnce com permissões restritas](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
-- [Como adicionar um fornecedor confiável a um computador cliente para aplicativos ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
-- [Como reassinar manifestos do aplicativo e de implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+- [Como: Habilitar configurações de segurança do ClickOnce](../deployment/how-to-enable-clickonce-security-settings.md)
+- [Como: Definir uma zona de segurança para um aplicativo ClickOnce](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
+- [Como: Definir permissões personalizadas para um aplicativo ClickOnce](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [Como: Depurar um aplicativo ClickOnce com permissões restritas](../deployment/how-to-debug-a-clickonce-application-with-restricted-permissions.md)
+- [Como: Adicionar um fornecedor confiável a um computador cliente para aplicativos ClickOnce](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
+- [Como: Assinar novamente os manifestos de aplicativo e de implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

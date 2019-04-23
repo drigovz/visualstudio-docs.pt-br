@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 869075875f5de56cc7454c58f7dbb5dfda7a9f76
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: dbd65c5247a82f2a58a57e50402ecde5d330cc9b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928771"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111682"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Adicionar código a conjuntos de dados em aplicativos de n camadas
 Você pode estender a funcionalidade de um conjunto de dados, criando um arquivo de classe parcial para o conjunto de dados e adicionando código a ele (em vez de adicionar código para o *DatasetName*. Arquivo do DataSet). Classes parciais permitem codificar uma classe específica a ser dividido entre vários arquivos físicos. Para obter mais informações, consulte [parcial](/dotnet/visual-basic/language-reference/modifiers/partial) ou [classes e métodos parciais](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
@@ -35,15 +35,15 @@ Por padrão, após você separar o conjunto de dados e o código TableAdapter, o
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>Para adicionar código a conjuntos de dados em aplicativos de n camadas
 
-1.  Localize o projeto que contém o *. xsd* arquivo.
+1. Localize o projeto que contém o *. xsd* arquivo.
 
-2.  Selecione o **. xsd** arquivo para abrir o conjunto de dados.
+2. Selecione o **. xsd** arquivo para abrir o conjunto de dados.
 
-3.  Clique na tabela de dados ao qual você deseja adicionar o código (o nome da tabela na barra de título) e, em seguida, selecione **Exibir código**.
+3. Clique na tabela de dados ao qual você deseja adicionar o código (o nome da tabela na barra de título) e, em seguida, selecione **Exibir código**.
 
      Uma classe parcial é criada e é aberto no Editor de códigos.
 
-4.  Adicione o código dentro da declaração de classe parcial.
+4. Adicione o código dentro da declaração de classe parcial.
 
      O exemplo a seguir mostra onde adicionar código para o CustomersDataTable no NorthwindDataSet:
 
@@ -53,6 +53,7 @@ Por padrão, após você separar o conjunto de dados e o código TableAdapter, o
         ' to the CustomersDataTable.
     End Class
     ```
+
     ```csharp
     partial class CustomersDataTable
     {

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c8d86c206eca3ecb1e1fc43e9540485cd83f93a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 95e42442e8dce5db1ef6b670043bf1f26e554773
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918423"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094652"
 ---
 # <a name="keyboard-shortcuts-in-the-workflow-designer"></a>Atalhos de teclado no Designer de Fluxo de Trabalho
 
@@ -57,13 +57,13 @@ A lista a seguir mostra os gestos usados para construir um fluxograma pelo tecla
 
 - Para conectar atividades:
 
-    1.  Selecione a atividade de origem alternar a atividade.
+    1. Selecione a atividade de origem alternar a atividade.
 
-    2.  Pressione CTRL+E, M quantas vezes forem necessárias mover o foco do teclado a atividade de destino.
+    2. Pressione CTRL+E, M quantas vezes forem necessárias mover o foco do teclado a atividade de destino.
 
-    3.  Pressione CTRL+E, S para adicionar a atividade de destino a seleção.
+    3. Pressione CTRL+E, S para adicionar a atividade de destino a seleção.
 
-    4.  Pressione CTRL+E, F- 2.0 para adicionar o conector de origem para o destino.
+    4. Pressione CTRL+E, F- 2.0 para adicionar o conector de origem para o destino.
 
 Notas sobre como conectar atividades pelo teclado:
 

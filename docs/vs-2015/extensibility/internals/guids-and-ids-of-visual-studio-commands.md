@@ -14,12 +14,12 @@ ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 caps.latest.revision: 7
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 598daccecbd2b03d0df117262571f6f511e2a247
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2feef3cbe72b7eb8db96052236fe483733e22273
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929153"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107743"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>GUIDs e IDs de comandos do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -54,11 +54,11 @@ Os valores GUID e ID dos comandos incluídos no ambiente de desenvolvimento inte
 ### <a name="special-cases"></a>Casos especiais
  Nos casos a seguir, o texto de menu ou o texto de dica de ferramenta pode não corresponder exatamente o que está na definição de comando.
 
--   Itens de menu que incluem um caractere de sublinhado, como o **Print** comando as **arquivo** menu, em que o P está sublinhado.
+- Itens de menu que incluem um caractere de sublinhado, como o **Print** comando as **arquivo** menu, em que o P está sublinhado.
 
      Os caracteres que são precedidos pelo caractere '&' em nomes de item de menu são exibidos como sublinhado. No entanto, os arquivos. VSCT são gravados em XML, que usa o caractere '&' para indicar os caracteres especiais e requer um e comercial que deve ser exibido deve ser esclarecido como&amp;'. Portanto, em um arquivo. VSCT, o **Print** comando é exibido como '&amp;Print'.
 
--   Comandos que contêm texto dinâmico, como **salve** *nome do arquivo atual*e gerado dinamicamente os itens de menu, como os itens no **arquivos recentes** lista.
+- Comandos que contêm texto dinâmico, como **salve** *nome do arquivo atual*e gerado dinamicamente os itens de menu, como os itens no **arquivos recentes** lista.
 
      Não há nenhuma maneira confiável para pesquisar texto dinâmico. Em vez disso, localizar um grupo que hospeda o comando desejado por consultoria [GUIDs e IDs do Visual Studio Menus](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) ou [GUIDs e IDs do Visual Studio barras de ferramentas](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)e procure a ID do grupo. Se a definição de comando não tem o grupo como seu [elemento pai](../../extensibility/parent-element.md), procure SharedCmdPlace.vsct e ShellCmdPlace.vsct (ou VsDbgCmdPlace.vsct para comandos de depurador) um `<CommandPlacement>` que define o pai do elemento a comando. AndVsDbgCmdPlace.vsct SharedCmdPlace.vsct, ShellCmdPlace.vsct, estão na *caminho de instalação do SDK do Visual Studio*\VisualStudioIntegration\Common\Inc\ pasta.
 

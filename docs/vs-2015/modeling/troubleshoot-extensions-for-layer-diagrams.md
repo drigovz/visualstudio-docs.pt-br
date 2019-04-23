@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c3087353b4d8875d1933c285343c3f1460c0e276
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ba45ba733f5447523b6793d4f5e2946c3507c82e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924188"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098679"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Solucionar problemas de extensões para diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Este tópico aborda alguns problemas que você pode encontrar ao criar extensõe
   
 #### <a name="an-old-version-of-my-validation-results-appears-or-my-validation-method-is-not-called"></a>Uma versão antiga do meus resultados de validação é exibido ou meu método de validação não é chamado.  
   
-1.  Na instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]diante a **construir** menu, clique em **limpar solução**. Isso limpa os resultados em cache de análise de validação anterior.  
+1. Na instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]diante a **construir** menu, clique em **limpar solução**. Isso limpa os resultados em cache de análise de validação anterior.  
   
-2.  Certifique-se de que as camadas no seu modelo estão associadas a elementos de código, e se há pelo menos um link de dependência no modelo. Validação não é invocada se não há nada para validar.  
+2. Certifique-se de que as camadas no seu modelo estão associadas a elementos de código, e se há pelo menos um link de dependência no modelo. Validação não é invocada se não há nada para validar.  
   
-3.  Pontos de interrupção regulares podem não funcionar em um método de validação, pois ele é executado em um processo separado. Você deve inserir uma chamada a `System.Diagnostics.Debugger.Launch()` se você quiser depurar seu método.  
+3. Pontos de interrupção regulares podem não funcionar em um método de validação, pois ele é executado em um processo separado. Você deve inserir uma chamada a `System.Diagnostics.Debugger.Launch()` se você quiser depurar seu método.  
   
-4.  Na **vsixmanifest** em seu projeto de validação de camada, certifique-se de que você tenha adicionado ambos um **componente MEF** item e uma **tipo personalizado de extensão** item sob **Conteúdo**.  
+4. Na **vsixmanifest** em seu projeto de validação de camada, certifique-se de que você tenha adicionado ambos um **componente MEF** item e uma **tipo personalizado de extensão** item sob **Conteúdo**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Estender diagramas de camada](../modeling/extend-layer-diagrams.md)

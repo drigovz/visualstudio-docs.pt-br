@@ -14,12 +14,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b486326985261b5d024c747853d24be3fad19fd4
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: a370ae802408ecc821de4cd15824f9d1fca42b75
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780715"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105314"
 ---
 # <a name="performance-explorer-window"></a>Janela do Performance Explorer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,31 +28,31 @@ A janela do **Gerenciador de Desempenho** no IDE (ambiente de desenvolvimento in
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ## <a name="performance-explorer-toolbar"></a>Barra de Ferramentas do Gerenciador de Desempenho  
  As seguintes opções estão disponíveis na barra de ferramenta do **Gerenciador de Desempenho**:  
   
--   **Iniciar o Assistente de Desempenho** – Exibe o Assistente de Desempenho para adicionar uma nova sessão de desempenho à janela do Gerenciador de Desempenho.  
+- **Iniciar o Assistente de Desempenho** – Exibe o Assistente de Desempenho para adicionar uma nova sessão de desempenho à janela do Gerenciador de Desempenho.  
   
--   **Nova Sessão de Desempenho** – Adiciona uma sessão de desempenho vazia à janela do Gerenciador de Desempenho.  
+- **Nova Sessão de Desempenho** – Adiciona uma sessão de desempenho vazia à janela do Gerenciador de Desempenho.  
   
--   **Launch** – a lista do botão de comando **Launch** permite iniciar o aplicativo de destino com criação de perfil habilitada imediatamente (**Inicializar com criação de perfil**) ou com a criação de perfil suspensa (**Inicializar com criação de perfil em pausa**).  
+- **Launch** – a lista do botão de comando **Launch** permite iniciar o aplicativo de destino com criação de perfil habilitada imediatamente (**Inicializar com criação de perfil**) ou com a criação de perfil suspensa (**Inicializar com criação de perfil em pausa**).  
   
--   **Método** – Especifica se o método de criação de perfil da sessão é amostragem ou instrumentação.  
+- **Método** – Especifica se o método de criação de perfil da sessão é amostragem ou instrumentação.  
   
--   **Parar** – Sai imediatamente do aplicativo de destino e do criador de perfil.  
+- **Parar** – Sai imediatamente do aplicativo de destino e do criador de perfil.  
   
--   **Anexar/Desanexar** – exibe a caixa de diálogo **Anexar Criador de Perfil ao Processo** para selecionar um processo em execução ao qual anexar o criador de perfil.  
+- **Anexar/Desanexar** – exibe a caixa de diálogo **Anexar Criador de Perfil ao Processo** para selecionar um processo em execução ao qual anexar o criador de perfil.  
   
 ## <a name="performance-explorer-window"></a>Janela do Performance Explorer  
  A janela do **Gerenciador de Desempenho** contém um controle de árvore que exibe os binários e arquivos de dados do relatório de uma ou mais sessões de desempenho.  
   
--   **Nome da Sessão** – A raiz do controle de árvore contém o nome da sessão. Clique com o botão direito do mouse no nome de sessão para definir as propriedades de sessão ou para iniciar o aplicativo de destino e o criador de perfil.  
+- **Nome da Sessão** – A raiz do controle de árvore contém o nome da sessão. Clique com o botão direito do mouse no nome de sessão para definir as propriedades de sessão ou para iniciar o aplicativo de destino e o criador de perfil.  
   
--   **Destinos** – Exibe os nomes dos binários que devem ser criados na sessão. Clique com botão direito do mouse em **Destinos** para adicionar ou remover um binário, projeto do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou site. Clique com o botão direito do mouse no nome de um destino para definir propriedades para o binário individual.  
+- **Destinos** – Exibe os nomes dos binários que devem ser criados na sessão. Clique com botão direito do mouse em **Destinos** para adicionar ou remover um binário, projeto do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ou site. Clique com o botão direito do mouse no nome de um destino para definir propriedades para o binário individual.  
   
--   **Relatórios** – Exibe os nomes dos arquivos de dados do criador de perfil que são gerados para a sessão. Clique com botão direito do mouse em **Relatórios** para adicionar um relatório existente ou comparar dois arquivos de dados do criador de perfil. Clique com o botão direito do mouse em um nome de relatório para abrir, remover ou exportar um arquivo de dados do criador de perfil.  
+- **Relatórios** – Exibe os nomes dos arquivos de dados do criador de perfil que são gerados para a sessão. Clique com botão direito do mouse em **Relatórios** para adicionar um relatório existente ou comparar dois arquivos de dados do criador de perfil. Clique com o botão direito do mouse em um nome de relatório para abrir, remover ou exportar um arquivo de dados do criador de perfil.  
   
 ## <a name="see-also"></a>Consulte também  
  [Visões gerais](../profiling/overviews-performance-tools.md)   

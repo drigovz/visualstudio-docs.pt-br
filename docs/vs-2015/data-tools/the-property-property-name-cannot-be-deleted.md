@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a212250791ececddbf2227d67d1f4652dc7de466
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 50e91c47ef848eda51fe71c9dce09cd1ea4893a8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661201"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106444"
 ---
 # <a name="the-property-ltproperty-namegt-cannot-be-deleted"></a>A propriedade &lt;nome da propriedade&gt; não pode ser excluído
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ A propriedade \<nome da propriedade > não pode ser excluído porque ele está d
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-1.  Em object relational Designer de Objetos, selecione a linha de herança que conecta as classes de dados mencionadas na mensagem de erro.  
+1. Em object relational Designer de Objetos, selecione a linha de herança que conecta as classes de dados mencionadas na mensagem de erro.  
   
-2.  Defina a propriedade **discriminatória** para uma propriedade diferente.  
+2. Defina a propriedade **discriminatória** para uma propriedade diferente.  
   
-3.  Tente excluir novamente a propriedade.  
+3. Tente excluir novamente a propriedade.  
   
 ## <a name="see-also"></a>Consulte também  
  [Como: Configurar a herança usando o Designer relacional de objetos](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)   

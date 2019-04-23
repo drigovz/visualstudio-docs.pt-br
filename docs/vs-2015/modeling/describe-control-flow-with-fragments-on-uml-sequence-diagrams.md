@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbb3d6dd6e83d245afc8d2367e120db245d8285f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926770"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107080"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Descrever o fluxo de controle com fragmentos em diagramas de sequência UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,16 +38,16 @@ Em um diagrama de sequência UML *fragmentos combinados* permitem que você most
   
  Os elementos mostrados na figura são da seguinte maneira.  
   
-1.  Um fragmento combinado. Há vários tipos de fragmentos combinados. Este exemplo é um Alt fragmento combinado que você pode usar para mostrar que a alternativas sequências de mensagens podem ocorrer.  
+1. Um fragmento combinado. Há vários tipos de fragmentos combinados. Este exemplo é um Alt fragmento combinado que você pode usar para mostrar que a alternativas sequências de mensagens podem ocorrer.  
   
-2.  Operandos de interação. Cada fragmento combinado contém pelo menos um operando de interação, que pode conter mensagens, usos de interação e menores fragmentos combinados. Neste exemplo, a tecla Alt combinadas fragmento tem duas operações de interação, mostrando duas sequências alternativas de mensagens.  
+2. Operandos de interação. Cada fragmento combinado contém pelo menos um operando de interação, que pode conter mensagens, usos de interação e menores fragmentos combinados. Neste exemplo, a tecla Alt combinadas fragmento tem duas operações de interação, mostrando duas sequências alternativas de mensagens.  
   
-3.  Você pode selecionar cada operando de interação separadamente clicando nele. Neste exemplo, o operando de interação superior é selecionado, para que seu limite pode ser visto. Normalmente, somente as linhas divisórias entre os operandos de interação é visível.  
+3. Você pode selecionar cada operando de interação separadamente clicando nele. Neste exemplo, o operando de interação superior é selecionado, para que seu limite pode ser visto. Normalmente, somente as linhas divisórias entre os operandos de interação é visível.  
   
     > [!NOTE]
     >  Para selecionar o operando de interação superior, você deve clicar em muito próximas à parte superior do fragmento combinado.  
   
-4.  Protege. Você pode dar um protetor de cada operando de interação. Descreve a condição sob a qual as mensagens dentro do operando de interação serão executadas.  
+4. Protege. Você pode dar um protetor de cada operando de interação. Descreve a condição sob a qual as mensagens dentro do operando de interação serão executadas.  
   
 ## <a name="creating-combined-fragments"></a>Criando fragmentos combinados  
  Para obter uma lista dos tipos de fragmento, você pode criar, consulte [tipos de fragmento combinado](#KindsOfFragment).  
@@ -97,12 +97,12 @@ Em um diagrama de sequência UML *fragmentos combinados* permitem que você most
   
 #### <a name="to-set-or-view-the-properties-of-a-combined-fragment"></a>Para definir ou exibir as propriedades de um fragmento combinado  
   
--   Clique com botão direito no título do fragmento combinado e, em seguida, clique em **propriedades**.  
+- Clique com botão direito no título do fragmento combinado e, em seguida, clique em **propriedades**.  
   
     > [!NOTE]
     >  Tipos diferentes de fragmento combinado têm propriedades diferentes.  
   
-##  <a name="KindsOfFragment"></a> Tipos de fragmento combinado  
+## <a name="KindsOfFragment"></a> Tipos de fragmento combinado  
   
 ### <a name="fragments-describing-control-flow"></a>Fragmentos que descreve o fluxo de controle  
  Um diagrama de sequência simples mostra apenas uma sequência típica. Você pode usar os seguintes tipos de fragmentos combinados para descrever as variações que podem ocorrer em ocasiões diferentes.  

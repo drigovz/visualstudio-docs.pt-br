@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 42137beead40c0e032942116bc92a3b9a456fbc6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: becc123cab729aff7d1306bb0ee13aee521444ec
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924638"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105039"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definir um item de caixa de ferramentas de modelagem personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,38 +27,38 @@ Para tornar mais fácil criar um elemento ou um grupo de elementos de acordo com
   
  Uma ferramenta personalizada cria um ou mais novos elementos em um diagrama. Por exemplo, você poderia fazer uma ferramenta personalizada para criar elementos como estes:  
   
--   Um pacote é vinculado ao perfil do .NET e uma classe com o estereótipo do .NET.  
+- Um pacote é vinculado ao perfil do .NET e uma classe com o estereótipo do .NET.  
   
--   Um par de classes vinculadas por uma associação para representar o padrão de observador.  
+- Um par de classes vinculadas por uma associação para representar o padrão de observador.  
   
 > [!NOTE]
 >  Você pode usar esse método para criar ferramentas de elemento. Ou seja, você pode criar ferramentas que podem ser arrastadas da caixa de ferramentas para um diagrama. Você não pode criar ferramentas de conector.  
   
-##  <a name="DefineTool"></a> Definindo um ferramenta de modelagem personalizado  
+## <a name="DefineTool"></a> Definindo um ferramenta de modelagem personalizado  
   
 #### <a name="to-define-a-custom-modeling-tool"></a>Para definir uma ferramenta de modelagem personalizado  
   
-1.  Crie um diagrama UML que contém um elemento ou um grupo de elementos.  
+1. Crie um diagrama UML que contém um elemento ou um grupo de elementos.  
   
-    -   Esses elementos podem ter relações entre eles e podem ter elementos subsidiários, como portas, atributos, operações ou pinos.  
+    - Esses elementos podem ter relações entre eles e podem ter elementos subsidiários, como portas, atributos, operações ou pinos.  
   
-2.  Salve o diagrama usando o nome que você deseja dar a nova ferramenta. Sobre o **arquivo** menu, use **salvar... Como**.  
+2. Salve o diagrama usando o nome que você deseja dar a nova ferramenta. Sobre o **arquivo** menu, use **salvar... Como**.  
   
-3.  Usando o Windows Explorer, copie os arquivos de dois diagrama para a pasta a seguir ou qualquer subpasta:  
+3. Usando o Windows Explorer, copie os arquivos de dois diagrama para a pasta a seguir ou qualquer subpasta:  
   
      *YourDocuments* **\Visual Studio\Architecture Tools\Custom Toolbox Items**  
   
-    -   Crie essa pasta se ela ainda não existir. Talvez você precise criar ambos **ferramentas de arquitetura** e **itens de caixa de ferramentas personalizado**.  
+    - Crie essa pasta se ela ainda não existir. Talvez você precise criar ambos **ferramentas de arquitetura** e **itens de caixa de ferramentas personalizado**.  
   
-    -   Copie os dois arquivos de diagrama, uma com um nome que termina em..." **diagrama**"e o outro com um nome que termina"... **diagram.layout**"  
+    - Copie os dois arquivos de diagrama, uma com um nome que termina em..." **diagrama**"e o outro com um nome que termina"... **diagram.layout**"  
   
-    -   Você pode fazer tantas ferramentas personalizadas como desejar. Use um diagrama para cada ferramenta.  
+    - Você pode fazer tantas ferramentas personalizadas como desejar. Use um diagrama para cada ferramenta.  
   
-4.  (Opcional) Criar uma **.tbxinfo** do arquivo conforme descrito em [como definir as propriedades de ferramentas personalizado](#tbxinfo)e adicione-o no mesmo diretório. Isso permite que você definir um ícone da caixa de ferramentas, Dica de ferramenta e assim por diante.  
+4. (Opcional) Criar uma **.tbxinfo** do arquivo conforme descrito em [como definir as propriedades de ferramentas personalizado](#tbxinfo)e adicione-o no mesmo diretório. Isso permite que você definir um ícone da caixa de ferramentas, Dica de ferramenta e assim por diante.  
   
-    -   Uma única **.tbxinfo** arquivo pode ser usado para definir várias ferramentas. Ele pode se referir a arquivos de diagrama que estão em subpastas.  
+    - Uma única **.tbxinfo** arquivo pode ser usado para definir várias ferramentas. Ele pode se referir a arquivos de diagrama que estão em subpastas.  
   
-5.  Reinicie o Visual Studio. A ferramenta adicional será exibida na caixa de ferramentas para o tipo apropriado de diagrama.  
+5. Reinicie o Visual Studio. A ferramenta adicional será exibida na caixa de ferramentas para o tipo apropriado de diagrama.  
   
 ### <a name="what-the-custom-tool-will-replicate"></a>A ferramenta personalizada que replicará  
  Uma ferramenta personalizada replicará a maioria dos recursos do diagrama de origem:  
@@ -83,7 +83,7 @@ Para tornar mais fácil criar um elemento ou um grupo de elementos de acordo com
   
 - Conector de roteamento. Se você rotear conectores manualmente, o roteamento não será preservado quando a ferramenta é usada. As posições de algumas formas aninhadas, por exemplo, portas, não são preservadas em relação a seus proprietários.  
   
-##  <a name="tbxinfo"></a> Como definir as propriedades de ferramentas personalizadas  
+## <a name="tbxinfo"></a> Como definir as propriedades de ferramentas personalizadas  
  Informações de uma caixa de ferramentas (**.tbxinfo**) arquivo permite que você especifique um nome de caixa de ferramentas, o ícone, a dica de ferramenta, a guia e ajudar a palavra-chave para um ou mais ferramentas personalizadas. Dê a ele qualquer nome, como **MyTools.tbxinfo**.  
   
  A forma geral do arquivo é da seguinte maneira:  
@@ -138,35 +138,35 @@ Para tornar mais fácil criar um elemento ou um grupo de elementos de acordo com
 > [!NOTE]
 >  Se você começar a usar um arquivo .tbxinfo depois de testar usando arquivos de diagrama por conta própria, você poderá achar que a caixa de ferramentas contém as antigas e novas versões de um item de caixa de ferramentas. Isso também pode ocorrer se o nome do arquivo de diagrama foi digitado incorretamente no arquivo .tbxinfo. Se isso ocorrer, no menu de atalho da caixa de ferramentas escolher **caixa de ferramentas de redefinição de**. Os itens de caixa de ferramentas personalizado desaparecerá. Reinicie o Visual Studio, e os itens corretos de personalizada serão exibida.  
   
-##  <a name="Extension"></a> Como distribuir itens de caixa de ferramentas em uma extensão do Visual Studio  
+## <a name="Extension"></a> Como distribuir itens de caixa de ferramentas em uma extensão do Visual Studio  
  Você pode distribuir itens de caixa de ferramentas para outro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usuários por agrupá-las em um Visual Studio VSIX (extensão). Você pode empacotar os comandos, perfis e outras extensões no mesmo arquivo VSIX. Para obter mais informações, consulte [Implantando extensões do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160780).  
   
  Da maneira usual para compilar uma extensão do Visual Studio é usar o modelo de projeto do VSIX. Para fazer isso, você deve ter instalado [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)].  
   
 #### <a name="to-add-a-toolbox-item-to-a-visual-studio-extension"></a>Para adicionar um Item de caixa de ferramentas para uma extensão do Visual Studio  
   
-1.  [Criar e testar um ou mais ferramentas personalizadas](#DefineTool).  
+1. [Criar e testar um ou mais ferramentas personalizadas](#DefineTool).  
   
-2.  [Crie um arquivo .tbxinfo](#tbxinfo) que referencia as ferramentas.  
+2. [Crie um arquivo .tbxinfo](#tbxinfo) que referencia as ferramentas.  
   
-3.  Abra um projeto de extensão existente do Visual Studio.  
+3. Abra um projeto de extensão existente do Visual Studio.  
   
      \- ou -  
   
      Defina um novo projeto de extensão do Visual Studio.  
   
-    1.  No menu **Arquivo**, escolha **Novo**, **Projeto**.  
+    1. No menu **Arquivo**, escolha **Novo**, **Projeto**.  
   
-    2.  No **novo projeto** caixa de diálogo **modelos instalados**, escolha **Visual C#**, **extensibilidade**, **VSIX projeto**.  
+    2. No **novo projeto** caixa de diálogo **modelos instalados**, escolha **Visual c#**, **extensibilidade**, **VSIX projeto**.  
   
-4.  Adicione suas definições de caixa de ferramentas para o projeto. Incluir o **.tbxinfo** de arquivos, os arquivos de diagrama, arquivos de bitmap e quaisquer arquivos de recurso e certifique-se de que eles são incluídos no VSIX.  
+4. Adicione suas definições de caixa de ferramentas para o projeto. Incluir o **.tbxinfo** de arquivos, os arquivos de diagrama, arquivos de bitmap e quaisquer arquivos de recurso e certifique-se de que eles são incluídos no VSIX.  
   
-    -   No Gerenciador de soluções, no menu de atalho do projeto VSIX, escolha **Add**, **Item existente**. Na caixa de diálogo, defina **objetos do tipo: Todos os arquivos**. Localize os arquivos, selecione todas elas e, em seguida, escolha **adicionar**.  
+    - No Gerenciador de soluções, no menu de atalho do projeto VSIX, escolha **Add**, **Item existente**. Na caixa de diálogo, defina **objetos do tipo: Todos os arquivos**. Localize os arquivos, selecione todas elas e, em seguida, escolha **adicionar**.  
   
         > [!NOTE]
         >  Neste projeto, você não pode abrir os arquivos de diagrama no editor de modelo.  
   
-5.  Defina as seguintes propriedades de todos os arquivos que você acabou de adicionar. Você pode definir suas propriedades ao mesmo tempo, selecionando-os todos em Gerenciador de soluções. Tenha cuidado para não alterar as propriedades de outros arquivos no projeto.  
+5. Defina as seguintes propriedades de todos os arquivos que você acabou de adicionar. Você pode definir suas propriedades ao mesmo tempo, selecionando-os todos em Gerenciador de soluções. Tenha cuidado para não alterar as propriedades de outros arquivos no projeto.  
   
      **Copiar para diretório de saída** = **sempre copiar**  
   
@@ -174,24 +174,24 @@ Para tornar mais fácil criar um elemento ou um grupo de elementos de acordo com
   
      **Incluir no VSIX** = **true**  
   
-6.  Abra **vsixmanifest**. Ele é aberto no editor de manifesto de extensão.  
+6. Abra **vsixmanifest**. Ele é aberto no editor de manifesto de extensão.  
   
-7.  Sob **metadados**, adicione uma descrição para as ferramentas personalizadas.  
+7. Sob **metadados**, adicione uma descrição para as ferramentas personalizadas.  
   
      Sob **ativos**, escolha **New** e, em seguida, defina os campos na caixa de diálogo da seguinte maneira:  
   
-    -   **Tipo de** = **tipo de extensão personalizada**  
+    - **Tipo de** = **tipo de extensão personalizada**  
   
-    -   Type = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
+    - Type = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
         >  Isso não é uma das opções na lista suspensa. Você tem para inseri-la usando o teclado.  
   
-    -   **Código-fonte** = **arquivo no sistema de arquivos**.  
+    - **Código-fonte** = **arquivo no sistema de arquivos**.  
   
-    -   **Caminho** = sua **.tbxinfo** de arquivo, por exemplo **MyTools.tbxinfo**  
+    - **Caminho** = sua **.tbxinfo** de arquivo, por exemplo **MyTools.tbxinfo**  
   
-8.  Compile o projeto.  
+8. Compile o projeto.  
   
 9. **Para verificar se a extensão funciona**, pressione F5. A instância experimental do Visual Studio é iniciado.  
   
@@ -201,11 +201,11 @@ Para tornar mais fácil criar um elemento ou um grupo de elementos de acordo com
   
 #### <a name="to-install-custom-tools-from-a-visual-studio-extension"></a>Para instalar ferramentas personalizadas de uma extensão do Visual Studio  
   
-1.  Abra o `.vsix` arquivo no Windows Explorer ou no Visual Studio.  
+1. Abra o `.vsix` arquivo no Windows Explorer ou no Visual Studio.  
   
-2.  Escolher **instalar** na caixa de diálogo que aparece.  
+2. Escolher **instalar** na caixa de diálogo que aparece.  
   
-3.  Para desinstalar ou desabilitar temporariamente a extensão, abra **extensões e atualizações** da **ferramentas** menu.  
+3. Para desinstalar ou desabilitar temporariamente a extensão, abra **extensões e atualizações** da **ferramentas** menu.  
   
 ## <a name="localization"></a>Localização  
  Você pode tornar uma extensão que, quando ele é instalado em outro computador, exibirá os nomes de ferramenta e dicas de ferramentas no idioma do computador de destino.  

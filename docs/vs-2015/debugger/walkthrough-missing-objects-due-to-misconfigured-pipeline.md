@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 800fa29682460991ca28a0dacb6d5b5a4a9838d4
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 01366bfd0f32f9cbf731613339f2c592873e2623
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58923253"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114100"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Passo a passo: Objetos ausentes devido a configuração incorreta do pipeline
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../includes/vsprvs-md
   
  Este passo a passo ilustra essas tarefas:  
   
--   Usando o **lista de eventos gráficos** para localizar fontes potenciais do problema.  
+- Usando o **lista de eventos gráficos** para localizar fontes potenciais do problema.  
   
--   Usando o **estágios de Pipeline gráficos** janela para examinar o efeito do `DrawIndexed` chamada à API do Direct3D.  
+- Usando o **estágios de Pipeline gráficos** janela para examinar o efeito do `DrawIndexed` chamada à API do Direct3D.  
   
--   Inspecionando o contexto de dispositivo para confirmar que um estágio de sombreador não foi definido.  
+- Inspecionando o contexto de dispositivo para confirmar que um estágio de sombreador não foi definido.  
   
--   Usando o **estágios de Pipeline gráficos** janela junto com o **pilha de chamadas do evento de gráficos** para ajudar a encontrar a fonte do sombreador de pixel não definidas.  
+- Usando o **estágios de Pipeline gráficos** janela junto com o **pilha de chamadas do evento de gráficos** para ajudar a encontrar a fonte do sombreador de pixel não definidas.  
   
 ## <a name="scenario"></a>Cenário  
  Quando um objeto está ausente em um aplicativo 3D, às vezes, é porque um dos estágios do sombreador não está definido antes que o objeto é renderizado. Em aplicativos que têm necessidades de processamento simples, a origem desse erro é geralmente localizada em algum lugar na pilha de chamadas de chamada de desenho do objeto. No entanto, como uma otimização, alguns objetos de lote juntos de aplicativos que têm programas de sombreador, texturas ou outros dados em comum para minimizar a alteração de estadom sobrecarga. Esses aplicativos, a origem do erro pode ser escondida no sistema de envio em lote, em vez de localizado na pilha de chamadas da chamada de desenho. O cenário neste passo a passo demonstra um aplicativo que tem necessidades de processamento simples e, portanto, a origem do erro pode ser encontrada na pilha de chamadas.  

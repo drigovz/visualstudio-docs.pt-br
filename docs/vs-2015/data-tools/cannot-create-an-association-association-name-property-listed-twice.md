@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b9592605a25c76b4ea17b6efe91363d59585f56e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: dd366f6bc572798e1115991afccb2b39eb8f9f6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660964"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091571"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>Não é possível criar uma associação &lt;nome da associação&gt; – propriedade listada duas vezes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,13 +27,13 @@ Não é possível criar uma associação \<nome da associação>. A mesma propri
   
 ### <a name="to-resolve-this-condition"></a>Para resolver essa condição  
   
--   Examine a mensagem e observe a propriedade especificada na mensagem.  
+- Examine a mensagem e observe a propriedade especificada na mensagem.  
   
--   Clique em **OK** para descartar a caixa de mensagem.  
+- Clique em **OK** para descartar a caixa de mensagem.  
   
--   Inspecione **Propriedades de Associação** e remova as entradas duplicadas.  
+- Inspecione **Propriedades de Associação** e remova as entradas duplicadas.  
   
--   Clique em **OK**.  
+- Clique em **OK**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Ferramentas LINQ to SQL no Visual Studio](http://msdn.microsoft.com/library/a57e82d5-f7e4-4894-8add-3d9ba4fce186)   

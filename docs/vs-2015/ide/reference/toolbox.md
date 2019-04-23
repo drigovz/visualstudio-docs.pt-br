@@ -16,12 +16,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a7c2320f7943798a336e52ba2043f430cdb9231
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 98670f99779804cec87bc4afc03ab7d126024378
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661341"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105611"
 ---
 # <a name="toolbox"></a>Caixa de Ferramentas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,17 +38,17 @@ A **Caixa de Ferramentas** exibe ícones de controles e outros itens que você p
 ## <a name="help-on-toolbox-tabs"></a>Ajuda sobre as guias da Caixa de Ferramentas  
  Os documentos a seguir fornecem mais informações sobre guias específicas da **Caixa de Ferramentas**.  
   
--   [Caixa de Ferramentas, Guia Dados](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
+- [Caixa de Ferramentas, Guia Dados](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.110\))  
   
--   [Caixa de Ferramentas, Guia Componentes](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
+- [Caixa de Ferramentas, Guia Componentes](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.110\))  
   
--   [Caixa de Ferramentas, Guia HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
+- [Caixa de Ferramentas, Guia HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.110\))  
   
--   [Caixa de Ferramentas, Guia Dados](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
+- [Caixa de Ferramentas, Guia Dados](http://msdn.microsoft.com/library/8a41dyt7\(v=vs.120\))  
   
--   [Caixa de Ferramentas, Guia Componentes](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
+- [Caixa de Ferramentas, Guia Componentes](http://msdn.microsoft.com/library/kb1cz7z9\(v=vs.120\))  
   
--   [Caixa de Ferramentas, Guia HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
+- [Caixa de Ferramentas, Guia HTML](http://msdn.microsoft.com/library/w9ss7h1a\(v=vs.120\))  
   
 ## <a name="see-also"></a>Consulte também  
  [Usando a caixa de ferramentas](../../ide/using-the-toolbox.md)

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1769ed711c0334ef14a3567478cc5010ec4165ea
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04eefc37162eaa90743982a0039e21d1d9edfb1a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644946"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090713"
 ---
 # <a name="how-to-resize-bookmark-controls"></a>Como: Redimensionar controles de indicador
   Definir o tamanho de um <xref:Microsoft.Office.Tools.Word.Bookmark> controle quando você adiciona a um documento do Microsoft Office Word. Você também pode redimensioná-lo em um momento posterior.
@@ -47,15 +47,15 @@ ms.locfileid: "56644946"
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-design-time"></a>Para redimensionar um indicador em um projeto de nível de documento em tempo de design
 
-1.  Selecione o indicador a **propriedades** janela.
+1. Selecione o indicador a **propriedades** janela.
 
-2.  Aumente ou diminua o valor da <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> propriedade.
+2. Aumente ou diminua o valor da <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> propriedade.
 
-3.  Aumente ou diminua o valor da <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> propriedade.
+3. Aumente ou diminua o valor da <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> propriedade.
 
 ### <a name="to-resize-a-bookmark-in-a-document-level-project-at-runtime"></a>Para redimensionar um indicador em um projeto de nível de documento em tempo de execução
 
-1.  Modificar a <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> e <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> propriedades de um <xref:Microsoft.Office.Tools.Word.Bookmark> criado em tempo de execução ou em tempo de design.
+1. Modificar a <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> e <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> propriedades de um <xref:Microsoft.Office.Tools.Word.Bookmark> criado em tempo de execução ou em tempo de design.
 
      O exemplo de código a seguir adiciona cinco caracteres ao início de um indicador chamado `SampleBookmark`. Esse código supõe que há pelo menos cinco caracteres de texto antes do indicador.
 
@@ -69,7 +69,7 @@ ms.locfileid: "56644946"
 
 ### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-runtime"></a>Para redimensionar um indicador em um projeto de suplemento do VSTO em tempo de execução
 
-1.  Modificar a <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> e <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> propriedades de um <xref:Microsoft.Office.Tools.Word.Bookmark> criado em tempo de execução.
+1. Modificar a <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> e <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> propriedades de um <xref:Microsoft.Office.Tools.Word.Bookmark> criado em tempo de execução.
 
      O exemplo de código a seguir cria uma <xref:Microsoft.Office.Tools.Word.Bookmark> que contém o texto do primeiro parágrafo do documento ativo e, em seguida, remove cinco caracteres do início e fim do <xref:Microsoft.Office.Tools.Word.Bookmark>.
 
@@ -81,11 +81,11 @@ ms.locfileid: "56644946"
 
 ### <a name="to-recreate-a-bookmark-in-a-document-level-project-at-design-time"></a>Para recriar um indicador em um projeto de nível de documento em tempo de design
 
-1.  Selecione o texto a ser incluído no novo <xref:Microsoft.Office.Tools.Word.Bookmark> controle.
+1. Selecione o texto a ser incluído no novo <xref:Microsoft.Office.Tools.Word.Bookmark> controle.
 
-2.  Sobre o **inserir** menu, clique em **indicador**.
+2. Sobre o **inserir** menu, clique em **indicador**.
 
-3.  No **indicador** diálogo caixa, selecione o nome do indicador que você deseja redimensionar e clique em **Add**.
+3. No **indicador** diálogo caixa, selecione o nome do indicador que você deseja redimensionar e clique em **Add**.
 
 ## <a name="see-also"></a>Consulte também
 - [Como: Adicionar controles de indicador a documentos do Word](../vsto/how-to-add-bookmark-controls-to-word-documents.md)

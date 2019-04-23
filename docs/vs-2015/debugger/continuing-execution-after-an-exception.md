@@ -29,17 +29,17 @@ caps.latest.revision: 30
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 37a285a48ec58ddeaeae55601565c155d0455402
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a43983846263fa49a7ff501b0d87c460990e8a37
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926259"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105450"
 ---
 # <a name="continuing-execution-after-an-exception"></a>Continuando a execução depois de uma exceção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Quando o depurador interrompe a execução devido a uma exceção, uma caixa de diálogo é exibida. Para o Visual Basic ou C#, você verá a [Assistente de exceção](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) caixa de diálogo, por padrão. Para C++, você verá o mais antigo **exceção** caixa de diálogo. Se você estiver usando o Visual Basic ou C#, mas tiver desabilitado as **Assistente de exceção** na **opções** caixa de diálogo, você verá o **exceção** caixa de diálogo.  
+Quando o depurador interrompe a execução devido a uma exceção, uma caixa de diálogo é exibida. Para o Visual Basic ou c#, você verá a [Assistente de exceção](http://msdn.microsoft.com/library/992892ac-9d52-44cc-bf09-b44bfc5befeb) caixa de diálogo, por padrão. Para C++, você verá o mais antigo **exceção** caixa de diálogo. Se você estiver usando o Visual Basic ou c#, mas tiver desabilitado as **Assistente de exceção** na **opções** caixa de diálogo, você verá o **exceção** caixa de diálogo.  
   
  Quando o **Assistente de exceção** ou **exceção** caixa de diálogo for exibida, você pode tentar corrigir o problema que causou a exceção.  
   
@@ -49,9 +49,9 @@ Quando o depurador interrompe a execução devido a uma exceção, uma caixa de 
 ## <a name="native-code"></a>Código nativo  
  No modo nativo C/C++, você tem duas opções:  
   
--   Você pode clicar em **quebrar** e tentar corrigir o problema. Enquanto você estiver no modo de interrupção, você poderá desenrolar a pilha de chamadas clicando em um quadro na **pilha de chamadas** janela e selecionando **desenrolar para este quadro** no menu de atalho. Quando você continuar a depuração, o **exceção** caixa de diálogo será exibida novamente se você não tiver corrigido o problema. Caso contrário, o **exceção** caixa de diálogo não reaparecerá.  
+- Você pode clicar em **quebrar** e tentar corrigir o problema. Enquanto você estiver no modo de interrupção, você poderá desenrolar a pilha de chamadas clicando em um quadro na **pilha de chamadas** janela e selecionando **desenrolar para este quadro** no menu de atalho. Quando você continuar a depuração, o **exceção** caixa de diálogo será exibida novamente se você não tiver corrigido o problema. Caso contrário, o **exceção** caixa de diálogo não reaparecerá.  
   
--   Você pode clicar em **continuar** para continuar a execução sem tentar corrigir o problema. O **exceção** caixa de diálogo será exibida novamente.  
+- Você pode clicar em **continuar** para continuar a execução sem tentar corrigir o problema. O **exceção** caixa de diálogo será exibida novamente.  
   
 ## <a name="mixed-code"></a>Código misto  
  Se você atinge uma exceção não tratada ao depurar um código nativo misto e gerenciado, as restrições do sistema operacional impedem o desenrolar da pilha de chamadas. Se você tentar voltar a pilha de chamadas usando o menu de atalho, uma mensagem de erro explicará que o depurador não pode desenrolar de uma exceção não tratada exceto durante a depuração de código misto.  

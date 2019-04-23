@@ -19,12 +19,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dffe803bc0b082f4f14c9010e165bd6b169674fe
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 3c9902080ae501c1d77a59f152d7d272462d2264
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657448"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115413"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>Definir o controle a ser criado quando arrastado da janela Fontes de Dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,13 +57,13 @@ Você pode criar controles associados a dados arrastando itens dos **fontes de d
   
 #### <a name="to-set-the-controls-to-be-created-for-columns-or-properties"></a>Para definir os controles a serem criados para colunas ou propriedades  
   
-1.  Certifique-se de que o WPF designer ou o designer de formulários do Windows é aberto.  
+1. Certifique-se de que o WPF designer ou o designer de formulários do Windows é aberto.  
   
-2.  No **fontes de dados** janela, expanda a tabela desejada ou para exibir suas colunas ou propriedades do objeto.  
+2. No **fontes de dados** janela, expanda a tabela desejada ou para exibir suas colunas ou propriedades do objeto.  
   
-3.  Selecione cada coluna ou propriedade para o qual você deseja definir o controle a ser criado.  
+3. Selecione cada coluna ou propriedade para o qual você deseja definir o controle a ser criado.  
   
-4.  Clique no menu suspenso para a coluna ou propriedade e, em seguida, selecione o controle que você deseja criar quando o item é arrastado para o designer.  
+4. Clique no menu suspenso para a coluna ou propriedade e, em seguida, selecione o controle que você deseja criar quando o item é arrastado para o designer.  
   
      A lista de controles disponíveis depende, em que o designer você abriu, qual versão do .NET Framework o projeto está destinado e quais personalizado controles que suportam dados de associação que você adicionou à **caixa de ferramentas**. Se o controle que você deseja criar estiver na lista de controles disponíveis, você pode adicionar o controle à lista. Para obter mais informações, consulte [adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   

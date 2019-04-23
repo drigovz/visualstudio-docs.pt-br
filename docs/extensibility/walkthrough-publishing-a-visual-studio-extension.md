@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34a9a97e018642660d7424b0bfce2a1bbbc9c073
-ms.sourcegitcommit: 4c7a0c2d712eb24609216577a793e912a6083eaf
+ms.openlocfilehash: 6a7bf7d49430923652ece66fc566ee75af1884d0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "57983514"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093340"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>Passo a passo: Publicar uma extensão do Visual Studio
 
@@ -30,7 +30,7 @@ Este passo a passo mostra como publicar uma extensão do Visual Studio no Visual
 
 Este artigo usa uma extensão de VSPackage padrão, mas as etapas são válidas para cada tipo de extensão.
 
-1. Criar um VSPackage no C#, chamado `TestPublish` que possui um comando de menu. Para obter mais informações, consulte [criar sua primeira extensão: Olá, mundo](../extensibility/extensibility-hello-world.md).
+1. Criar um VSPackage no c#, chamado `TestPublish` que possui um comando de menu. Para obter mais informações, consulte [criar sua primeira extensão: Olá, mundo](../extensibility/extensibility-hello-world.md).
 
 ## <a name="package-your-extension"></a>Empacotar sua extensão
 
@@ -80,27 +80,27 @@ Este artigo usa uma extensão de VSPackage padrão, mas as etapas são válidas 
 
     * **ID do VSIX** é o identificador exclusivo que o Visual Studio usa para a sua extensão. Esse identificador é necessário se você gostaria de ter sua extensão atualizadas automaticamente. Esse identificador é preenchido automaticamente do *vsixmanifest* arquivo.
 
-   * **Logotipo** que é usado para a sua extensão. Esse logotipo é preenchido automaticamente do *vsixmanifest* arquivo se fornecido.
+    * **Logotipo** que é usado para a sua extensão. Esse logotipo é preenchido automaticamente do *vsixmanifest* arquivo se fornecido.
 
-     * **Descrição breve** do que faz a sua extensão. Essa descrição é preenchido automaticamente do *vsixmanifest* arquivo.
+    * **Descrição breve** do que faz a sua extensão. Essa descrição é preenchido automaticamente do *vsixmanifest* arquivo.
 
-     * **Visão geral** é um bom lugar para incluir capturas de tela e informações detalhadas sobre o que faz a sua extensão.
+    * **Visão geral** é um bom lugar para incluir capturas de tela e informações detalhadas sobre o que faz a sua extensão.
 
-     * **Suporte para versões do Visual Studio** permite que você escolha quais versões do Visual Studio que sua extensão funcionará em. Sua extensão for instalada apenas para essas versões.
+    * **Suporte para versões do Visual Studio** permite que você escolha quais versões do Visual Studio que sua extensão funcionará em. Sua extensão for instalada apenas para essas versões.
 
-     * * * Suporte para o Visual Studio edition permite que você escolha quais edições do Visual Studio que sua extensão funcionará em. Sua extensão for instalada apenas para essas edições.
+    * * * Suporte para o Visual Studio edition permite que você escolha quais edições do Visual Studio que sua extensão funcionará em. Sua extensão for instalada apenas para essas edições.
 
-     * **Tipo**. O tipo mais comum de extensões são **ferramentas**.
+    * **Tipo**. O tipo mais comum de extensões são **ferramentas**.
 
-     * **Categorias**. Escolha até três que são uma opção melhor para sua extensão.
+    * **Categorias**. Escolha até três que são uma opção melhor para sua extensão.
 
-     * **Marcas** são palavras-chave que ajudam os usuários a encontrar sua extensão. As marcas podem ajudar a aumentar a relevância de pesquisa de suas extensões no Marketplace.
+    * **Marcas** são palavras-chave que ajudam os usuários a encontrar sua extensão. As marcas podem ajudar a aumentar a relevância de pesquisa de suas extensões no Marketplace.
 
-     * **Categoria de preços** é o custo da sua extensão.
+    * **Categoria de preços** é o custo da sua extensão.
 
-     * **Repositório de código fonte** permite que você compartilhe um link para seu código-fonte com a comunidade.
+    * **Repositório de código fonte** permite que você compartilhe um link para seu código-fonte com a comunidade.
 
-     * **Permitir perguntas e respostas para a sua extensão** permite que os usuários deixe perguntas em sua página de entrada de extensão.
+    * **Permitir perguntas e respostas para a sua extensão** permite que os usuários deixe perguntas em sua página de entrada de extensão.
 
 9. Clique em **salvar e carregar**. Essa opção retorná-lo ao seu editor de página Gerenciar. Sua extensão ainda não foi publicada. Para publicar sua extensão, clique com botão direito em sua extensão e selecione **tornar público**. Você pode exibir a sua extensão de aparência, como no Marketplace, selecionando **extensão do modo de exibição**. Para números de aquisição, clique em **relatórios**. Para fazer alterações em sua extensão, clique em **editar**.
 

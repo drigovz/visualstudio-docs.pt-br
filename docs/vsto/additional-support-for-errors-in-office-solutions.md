@@ -56,12 +56,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 62cd0007a2dd231bcfc0e99f64ac76d20d415263
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fb5877bccdc60d031e6ccd799eb6536df15fda38
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643424"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088763"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>Suporte adicional para erros em soluções do Office
 
@@ -71,11 +71,11 @@ Você pode usar os seguintes recursos para ajudá-lo a encontrar respostas para 
 
 Para obter assistência com alguns erros comuns em soluções do Office, consulte os tópicos a seguir:
 
--   [Solucionar problemas de erros em soluções do Office](../vsto/troubleshooting-errors-in-office-solutions.md)
+- [Solucionar problemas de erros em soluções do Office](../vsto/troubleshooting-errors-in-office-solutions.md)
 
--   [Solucionar problemas de segurança de solução do Office](../vsto/troubleshooting-office-solution-security.md)
+- [Solucionar problemas de segurança de solução do Office](../vsto/troubleshooting-office-solution-security.md)
 
--   [Solucionar problemas de implantação de solução do Office](../vsto/troubleshooting-office-solution-deployment.md)
+- [Solucionar problemas de implantação de solução do Office](../vsto/troubleshooting-office-solution-deployment.md)
 
 ## <a name="other-resources"></a>Outros recursos
 

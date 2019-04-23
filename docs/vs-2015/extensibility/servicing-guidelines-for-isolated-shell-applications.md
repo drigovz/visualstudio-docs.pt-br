@@ -11,12 +11,12 @@ ms.assetid: 747d1a47-b8b3-4e8b-93c0-768724be48f2
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 13ec970b309c09bdbd0bffbc0a10c42b862ebe9b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 093690c293ff6857eedc50d5eccc793d7d5bb114
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926990"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097395"
 ---
 # <a name="servicing-guidelines-for-isolated-shell-applications"></a>Diretrizes de serviço para aplicativos de Shell isolado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,11 +34,11 @@ Quando você distribui um aplicativo de shell isolado do Visual Studio, você de
   
  Quando você usa ações personalizadas em um programa de instalação, você deve garantir que todas as ações personalizadas durante a instalação devem ter uma ação personalizada correspondente para desfazer a ação quando o usuário desinstala o aplicativo. Se seu programa de instalação falha para fornecer correspondente desinstalar ação personalizada, removendo o aplicativo sairá parcialmente instalado.  
   
--   Uma ação personalizada que se baseia em uma versão específica de um arquivo ou hash valores falhará quando as atualizações de software, alterar essas versões ou valores de hash. Nesse caso, a ação personalizada deve atualizar manualmente esses valores. Um problema adicional ocorrerá se as versões de um arquivo ou hash valores são compartilhadas entre versões do produto. Evite esta dependência sempre que possível.  
+- Uma ação personalizada que se baseia em uma versão específica de um arquivo ou hash valores falhará quando as atualizações de software, alterar essas versões ou valores de hash. Nesse caso, a ação personalizada deve atualizar manualmente esses valores. Um problema adicional ocorrerá se as versões de um arquivo ou hash valores são compartilhadas entre versões do produto. Evite esta dependência sempre que possível.  
   
 ### <a name="accounting-for-shared-files"></a>Estatísticas para arquivos compartilhados  
  Arquivos compartilhados têm os mesmos nomes e são instalados no mesmo local por vários produtos. Esses produtos podem diferir em versão, unidade de manter de estoque (SKU) ou ambos, e os produtos podem coexistir em um determinado computador. No entanto, os arquivos compartilhados criar problemas de manutenção por vários motivos:  
   
--   Atualizar arquivos compartilhados pode causar problemas de compatibilidade de aplicativos, porque uma atualização para um aplicativo pode alterar a versão de um arquivo usado por um segundo aplicativo que não foi atualizado. Instaladores para produtos que compartilham arquivos de contagem de referências para os arquivos compartilhados. Portanto, a desinstalação de um produto não afeta arquivos compartilhados, além de diminuir a contagem de instâncias instaladas.  
+- Atualizar arquivos compartilhados pode causar problemas de compatibilidade de aplicativos, porque uma atualização para um aplicativo pode alterar a versão de um arquivo usado por um segundo aplicativo que não foi atualizado. Instaladores para produtos que compartilham arquivos de contagem de referências para os arquivos compartilhados. Portanto, a desinstalação de um produto não afeta arquivos compartilhados, além de diminuir a contagem de instâncias instaladas.  
   
--   O instalador de Quick Fix Engineering (QFE) será revertido para versões de arquivos para as versões dos produtos que o instalador QFE atendido. Esse processo potencialmente interrompe um aplicativo que tinha entregue a um arquivo compartilhado atualizado.
+- O instalador de Quick Fix Engineering (QFE) será revertido para versões de arquivos para as versões dos produtos que o instalador QFE atendido. Esse processo potencialmente interrompe um aplicativo que tinha entregue a um arquivo compartilhado atualizado.

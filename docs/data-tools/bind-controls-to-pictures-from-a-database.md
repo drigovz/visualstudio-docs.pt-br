@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5afabf877fbd1a34bc579d81a137abbd5771fed5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: 4e41cb7bf747a1c083dc1728d7ea26f47ad8fa48
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944059"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106989"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Associar controles a imagens de um banco de dados
 
@@ -34,14 +34,14 @@ O procedimento a seguir pressupõe que o **fontes de dados** janela já está pr
 
 ## <a name="to-bind-a-picture-in-a-database-to-a-control"></a>Para vincular uma imagem em um banco de dados a um controle
 
-1.  Certifique-se de que a superfície de design que você deseja adicionar o controle é aberta no Designer do WPF ou o Designer de formulários do Windows.
+1. Certifique-se de que a superfície de design que você deseja adicionar o controle é aberta no Designer do WPF ou o Designer de formulários do Windows.
 
-2.  No **fontes de dados** janela, expanda a tabela desejada ou para exibir suas colunas ou propriedades do objeto.
+2. No **fontes de dados** janela, expanda a tabela desejada ou para exibir suas colunas ou propriedades do objeto.
 
    > [!TIP]
    > Se o **fontes de dados** janela não estiver aberta, abra-o selecionando **exibição** > **Other Windows** > **fontes de dados**.
 
-3.  Selecione a coluna ou propriedade que contém os dados de imagem e selecione um dos seguintes controles na sua lista de controle de lista suspensa:
+3. Selecione a coluna ou propriedade que contém os dados de imagem e selecione um dos seguintes controles na sua lista de controle de lista suspensa:
 
     - Se o WPF designer estiver aberto, selecione **imagem**.
 

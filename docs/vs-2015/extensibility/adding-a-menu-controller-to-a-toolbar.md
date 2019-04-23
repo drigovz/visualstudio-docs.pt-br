@@ -12,12 +12,12 @@ ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 28588f04119eea31dfb0f32beb3b78376aa1b6b3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3c63f6c98153c9f7a9fab171b3caddd57df717cc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926595"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107795"
 ---
 # <a name="adding-a-menu-controller-to-a-toolbar"></a>Adicionando um controlador de menu a uma barra de ferramentas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -114,7 +114,7 @@ Este passo a passo baseia-se a [adicionando uma barra de ferramentas para uma ja
   
 ## <a name="implementing-the-menu-controller-commands"></a>Implementando os comandos de Menu controlador  
   
-1.  No TWTestCommandPackageGuids.cs, adicione as IDs de comando para seus itens de três menu após o IDs de comando existente.  
+1. No TWTestCommandPackageGuids.cs, adicione as IDs de comando para seus itens de três menu após o IDs de comando existente.  
   
     ```csharp  
     public const int cmdidMCItem1 = 0x130;  
@@ -122,13 +122,13 @@ Este passo a passo baseia-se a [adicionando uma barra de ferramentas para uma ja
     public const int cmdidMCItem3 = 0x132;  
     ```  
   
-2.  No TWTestCommand.cs, adicione o seguinte código na parte superior da classe TWTestCommand.  
+2. No TWTestCommand.cs, adicione o seguinte código na parte superior da classe TWTestCommand.  
   
     ```csharp  
     private int currentMCCommand; // The currently selected menu controller command  
     ```  
   
-3.  No construtor TWTestCommand, após a última chamada para o `AddCommand` método, adicione código para os eventos para cada comando pelos mesmos manipuladores de rota.  
+3. No construtor TWTestCommand, após a última chamada para o `AddCommand` método, adicione código para os eventos para cada comando pelos mesmos manipuladores de rota.  
   
     ```csharp  
     for (int i = TWTestCommandPackageGuids.cmdidMCItem1; i <=  
@@ -149,7 +149,7 @@ Este passo a passo baseia-se a [adicionando uma barra de ferramentas para uma ja
     }  
     ```  
   
-4.  Adicione um manipulador de eventos à classe TWTestCommand para marcar o comando selecionado como verificado.  
+4. Adicione um manipulador de eventos à classe TWTestCommand para marcar o comando selecionado como verificado.  
   
     ```csharp  
     private void OnMCItemQueryStatus(object sender, EventArgs e)  
@@ -162,7 +162,7 @@ Este passo a passo baseia-se a [adicionando uma barra de ferramentas para uma ja
     }  
     ```  
   
-5.  Adicione um manipulador de eventos que exibe uma caixa de mensagem quando o usuário seleciona um comando no controlador de menu:  
+5. Adicione um manipulador de eventos que exibe uma caixa de mensagem quando o usuário seleciona um comando no controlador de menu:  
   
     ```csharp  
     private void OnMCItemClicked(object sender, EventArgs e)  
@@ -214,13 +214,13 @@ Este passo a passo baseia-se a [adicionando uma barra de ferramentas para uma ja
   
 ## <a name="testing-the-menu-controller"></a>Teste o controlador de Menu  
   
-1.  Compile o projeto e comece a depuração. Você deve ver a instância experimental.  
+1. Compile o projeto e comece a depuração. Você deve ver a instância experimental.  
   
-2.  Abra o **teste ToolWindow** no **modo de exibição / Other Windows** menu.  
+2. Abra o **teste ToolWindow** no **modo de exibição / Other Windows** menu.  
   
      O controlador de menu é exibido na barra de ferramentas na janela da ferramenta e exibe **MC Item 1**.  
   
-3.  Clique no botão de controlador do menu à esquerda da seta.  
+3. Clique no botão de controlador do menu à esquerda da seta.  
   
      Você deverá ver três itens, o primeiro deles é selecionado e tem uma caixa de realce em torno de seu ícone. Clique em **MC Item 3**.  
   

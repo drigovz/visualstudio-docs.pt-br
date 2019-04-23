@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8187fbfce9492623df5d998acd0bb4279b7ce0d2
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b4cfca45d2ad1979b091c668854990ce9a7c0311
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657461"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090414"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Geração de código na hora de design usando modelos de texto T4
 Modelos de texto T4 em tempo de design permitem que você gerar o código do programa e outros arquivos no projeto do Visual Studio. Normalmente, você escreve os modelos para que eles variem o código que geram de acordo com os dados de um *modelo*. Um modelo é um arquivo ou banco de dados que contém informações importantes sobre os requisitos do aplicativo.
@@ -141,9 +141,9 @@ Os modelos de texto permitem que você use o código de programa para alterar o 
 
 #### <a name="to-generate-program-code-or-resources"></a>Para gerar o código de programa ou recursos
 
-1.  Altere a diretiva de saída para gerar um arquivo do tipo apropriado, como .cs, .vb, .resx ou .xml.
+1. Altere a diretiva de saída para gerar um arquivo do tipo apropriado, como .cs, .vb, .resx ou .xml.
 
-2.  Insira o código que gerará o código da solução que você precisa. Por exemplo, se você deseja gerar três instruções de campo inteiro em uma classe:
+2. Insira o código que gerará o código da solução que você precisa. Por exemplo, se você deseja gerar três instruções de campo inteiro em uma classe:
 
     ```csharp
 
@@ -176,7 +176,7 @@ Os modelos de texto permitem que você use o código de programa para alterar o 
 
     ```
 
-3.  Salve o arquivo e inspecione o arquivo gerado, que agora contém o seguinte código:
+3. Salve o arquivo e inspecione o arquivo gerado, que agora contém o seguinte código:
 
     ```csharp
     class MyGeneratedClass {

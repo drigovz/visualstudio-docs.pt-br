@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 887f71f5aabf7acfdeb822bb4e05c1b0debf63ab
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1ef2edb8996984f943ce3d7ec168eed0692f2493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601994"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110070"
 ---
 # <a name="component-management"></a>Gerenciamento de componente
 Unidades de tarefas no instalador do Windows são chamadas de componentes do Windows Installer (às vezes chamados de WICs ou apenas componentes). Um GUID que identifica cada WIC, que é a unidade básica de instalação e a contagem de referências para instalações que usam o Windows Installer.
@@ -27,23 +27,23 @@ Unidades de tarefas no instalador do Windows são chamadas de componentes do Win
 
 ## <a name="guidelines-of-authoring-setup-for-side-by-side-installation"></a>Diretrizes de criação de instalação para instalação lado a lado
 
--   Arquivos de autor e chaves do registro que são compartilhadas entre versões em seus próprios componentes.
+- Arquivos de autor e chaves do registro que são compartilhadas entre versões em seus próprios componentes.
 
      Isso permite que você facilmente consumi-los na próxima versão. Por exemplo, as bibliotecas de tipos que são registradas globalmente, extensões de arquivo, outros itens registrados no **HKEY_CLASSES_ROOT**e assim por diante.
 
--   Agrupe componentes compartilhados em módulos de mesclagem separado.
+- Agrupe componentes compartilhados em módulos de mesclagem separado.
 
      Essa estratégia ajuda você autor corretamente para a instalação lado a lado seguindo em frente.
 
--   Instale arquivos compartilhados e chaves do registro, usando os mesmos componentes do Windows Installer entre versões.
+- Instale arquivos compartilhados e chaves do registro, usando os mesmos componentes do Windows Installer entre versões.
 
      Se você usar um componente diferente, arquivos e entradas do registro são desinstaladas quando um VSPackage de controle de versão é desinstalado, mas outra VSPackage ainda está instalado.
 
--   Não misture os itens com controle de versão e compartilhados no mesmo componente.
+- Não misture os itens com controle de versão e compartilhados no mesmo componente.
 
      Isso torna impossível instalar itens compartilhados em um local global e os itens com controle de versão para locais isolados.
 
--   Não tem chaves de registro compartilhadas que apontam para arquivos com controle de versão.
+- Não tem chaves de registro compartilhadas que apontam para arquivos com controle de versão.
 
      Se você fizer isso, as chaves compartilhadas serão substituídas quando outro VSPackage de controle de versão está instalada. Depois de remover a segunda versão, o arquivo ao qual a chave está apontando não existe mais.
 

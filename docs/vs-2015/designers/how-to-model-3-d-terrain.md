@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7935176505e535c35b1c864e56cd314a75e7897c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 3c9d088be89e2cf963df65a0163713c297615121
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764110"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097473"
 ---
 # <a name="how-to-model-3-d-terrain"></a>Como: Modelo de terreno 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,15 +23,15 @@ Este documento demonstra como usar o Editor de Modelo para criar um modelo de te
   
  Este documento demonstra essas atividades:  
   
--   Adicionar objetos a uma cena  
+- Adicionar objetos a uma cena  
   
--   Selecionar faces e pontos  
+- Selecionar faces e pontos  
   
--   Converter seleções  
+- Converter seleções  
   
--   Usando a ferramenta **Subdivide a face**  
+- Usando a ferramenta **Subdivide a face**  
   
--   Enquadrar um objeto na superfície de design  
+- Enquadrar um objeto na superfície de design  
   
 ## <a name="creating-a-3-d-terrain-model"></a>Criar um modelo de terreno 3D  
  Você pode criar um terreno 3D subdividindo um plano para fazer faces adicionais e, em seguida, manipular seus vértices para criar características de terreno interessantes.  
@@ -68,7 +68,7 @@ Este documento demonstra como usar o Editor de Modelo para criar um modelo de te
   
    ![Cena 3D que mostra um modelo de terreno](../designers/media/digit-terrain-model.png "Digit-Terrain-Model")  
   
-   Você pode usar esse modelo de terreno para demonstrar o efeito do sombreador de gradiente descrito em [Como criar um sombreador de gradiente com base na geometria](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
+   Use esse modelo de terreno para demonstrar o efeito do sombreador de gradiente descrito em [Como: Criar um sombreador de gradiente com base em geometria](../designers/how-to-create-a-geometry-based-gradient-shader.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Editor de modelo](../designers/model-editor.md)

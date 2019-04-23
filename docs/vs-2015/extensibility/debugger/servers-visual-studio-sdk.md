@@ -11,23 +11,23 @@ ms.assetid: 62236d64-7956-448c-9ac3-5528f3edac1d
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 81de310320fe45c06f2a233d7c8d742f9d55405e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7ed2ce924b22827a82a67664e3e473f0930a87e3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58921810"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093092"
 ---
 # <a name="servers-visual-studio-sdk"></a>Servidores (SDK do Visual Studio)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 Em termos de arquitetura do depurador, uma **server**:  
   
--   É um contêiner de portas e os fornecedores de porta e é usado para comunicar-se as portas e os fornecedores de porta para o Gerenciador de sessão de depuração (SDM) e mecanismos de depuração.  
+- É um contêiner de portas e os fornecedores de porta e é usado para comunicar-se as portas e os fornecedores de porta para o Gerenciador de sessão de depuração (SDM) e mecanismos de depuração.  
   
--   Pode identificar-se por nome e enumerar suas portas e os fornecedores de porta.  
+- Pode identificar-se por nome e enumerar suas portas e os fornecedores de porta.  
   
--   É representado por um [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interface, que só é implementada pelo Visual Studio (uma instância de um servidor para cada instância de execução do Visual Studio).  
+- É representado por um [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) interface, que só é implementada pelo Visual Studio (uma instância de um servidor para cada instância de execução do Visual Studio).  
   
 ## <a name="see-also"></a>Consulte também  
  [Portas](../../extensibility/debugger/ports.md)   

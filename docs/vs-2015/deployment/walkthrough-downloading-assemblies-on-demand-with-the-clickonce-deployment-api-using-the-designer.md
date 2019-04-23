@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9c65ca67b54396935f52aaa8168d802f0179afd2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4513a1fa35ab45cf36a8c86572eecd6043ee7415
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922152"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086839"
 ---
 # <a name="walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Passo a passo: Baixando Assemblies sob demanda com a implantação do ClickOnce usando o Designer de API
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,32 +40,32 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../incl
   
 #### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>Para criar um projeto que usa um assembly sob demanda com o Visual Studio  
   
-1.  Criar um novo projeto Windows Forms no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. No menu **Arquivo**, aponte para **Adicionar** e clique em **Novo Projeto**. Escolha uma **biblioteca de classes** na caixa de diálogo do projeto e nomeie-o `ClickOnceLibrary`.  
+1. Criar um novo projeto Windows Forms no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. No menu **Arquivo**, aponte para **Adicionar** e clique em **Novo Projeto**. Escolha uma **biblioteca de classes** na caixa de diálogo do projeto e nomeie-o `ClickOnceLibrary`.  
   
     > [!NOTE]
     >  No Visual Basic, é recomendável que você modifique as propriedades do projeto para alterar o namespace raiz para este projeto para `Microsoft.Samples.ClickOnceOnDemand` ou a um namespace de sua escolha. Para simplificar, os dois projetos neste passo a passo estão no mesmo namespace.  
   
-2.  Definir uma classe denominada `DynamicClass` com uma única propriedade chamada `Message`.  
+2. Definir uma classe denominada `DynamicClass` com uma única propriedade chamada `Message`.  
   
      [!code-csharp[ClickOnceLibrary#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceLibrary/CS/Class1.cs#1)]
      [!code-vb[ClickOnceLibrary#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceLibrary/VB/Class1.vb#1)]  
   
-3.  Selecione o projeto de formulários do Windows no **Gerenciador de soluções**. Adicione uma referência para o <xref:System.Deployment.Application> referenciarem de assembly e um projeto para o `ClickOnceLibrary` projeto.  
+3. Selecione o projeto de formulários do Windows no **Gerenciador de soluções**. Adicione uma referência para o <xref:System.Deployment.Application> referenciarem de assembly e um projeto para o `ClickOnceLibrary` projeto.  
   
     > [!NOTE]
     >  No Visual Basic, é recomendável que você modifique as propriedades do projeto para alterar o namespace raiz para este projeto para `Microsoft.Samples.ClickOnceOnDemand` ou a um namespace de sua escolha. Para simplificar, os dois projetos neste passo a passo estão localizados no mesmo namespace.  
   
-4.  Clique com botão direito do formulário, clique em **Exibir código** no menu e adicione as seguintes referências ao formulário.  
+4. Clique com botão direito do formulário, clique em **Exibir código** no menu e adicione as seguintes referências ao formulário.  
   
      [!code-csharp[ClickOnceOnDemand#1](../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs#1)]
      [!code-vb[ClickOnceOnDemand#1](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb#1)]  
   
-5.  Adicione o código a seguir para baixar esse assembly sob demanda. Este código mostra como mapear um conjunto de módulos (assemblies) para um nome de grupo usando um genérico <xref:System.Collections.DictionaryBase.Dictionary%2A> classe. Porque estamos apenas estiver baixando um único assembly neste passo a passo, há apenas um assembly em nosso grupo. Um aplicativo real, você provavelmente deseja baixar todos os assemblies relacionados a um único recurso em seu aplicativo ao mesmo tempo. A tabela de mapeamento permite que você faça isso com facilidade por meio da associação todas as DLLs que pertencem a um recurso com um nome de grupo de download.  
+5. Adicione o código a seguir para baixar esse assembly sob demanda. Este código mostra como mapear um conjunto de módulos (assemblies) para um nome de grupo usando um genérico <xref:System.Collections.DictionaryBase.Dictionary%2A> classe. Porque estamos apenas estiver baixando um único assembly neste passo a passo, há apenas um assembly em nosso grupo. Um aplicativo real, você provavelmente deseja baixar todos os assemblies relacionados a um único recurso em seu aplicativo ao mesmo tempo. A tabela de mapeamento permite que você faça isso com facilidade por meio da associação todas as DLLs que pertencem a um recurso com um nome de grupo de download.  
   
      [!code-csharp[ClickOnceOnDemand#2](../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs#2)]
      [!code-vb[ClickOnceOnDemand#2](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb#2)]  
   
-6.  No menu **Exibir**, clique em **Caixa de Ferramentas**. Arraste uma <xref:System.Windows.Forms.Button> do **caixa de ferramentas** para o formulário. Clique duas vezes no botão e adicione o seguinte código para o <xref:System.Windows.Forms.Control.Click> manipulador de eventos.  
+6. No menu **Exibir**, clique em **Caixa de Ferramentas**. Arraste uma <xref:System.Windows.Forms.Button> do **caixa de ferramentas** para o formulário. Clique duas vezes no botão e adicione o seguinte código para o <xref:System.Windows.Forms.Control.Click> manipulador de eventos.  
   
      [!code-csharp[ClickOnceOnDemand#3](../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemand/CS/Form1.cs#3)]
      [!code-vb[ClickOnceOnDemand#3](../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemand/VB/Form1.vb#3)]  
@@ -74,31 +74,31 @@ Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../incl
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-visual-studio"></a>Marcar assemblies como opcionais no seu aplicativo ClickOnce usando o Visual Studio  
   
-1.  Clique com botão direito no projeto de formulários do Windows no **Gerenciador de soluções** e clique em **propriedades**. Selecione o **publicar** guia.  
+1. Clique com botão direito no projeto de formulários do Windows no **Gerenciador de soluções** e clique em **propriedades**. Selecione o **publicar** guia.  
   
-2.  Clique o **arquivos de aplicativo** botão.  
+2. Clique o **arquivos de aplicativo** botão.  
   
-3.  Localize a listagem para ClickOnceLibrary.dll. Definir a **Status da publicação** caixa de lista suspensa **Include**.  
+3. Localize a listagem para ClickOnceLibrary.dll. Definir a **Status da publicação** caixa de lista suspensa **Include**.  
   
-4.  Expanda o **grupo** caixa de lista suspensa e selecione **New**. Insira o nome `ClickOnceLibrary` como o novo nome de grupo.  
+4. Expanda o **grupo** caixa de lista suspensa e selecione **New**. Insira o nome `ClickOnceLibrary` como o novo nome de grupo.  
   
-5.  Continuar publicando seu aplicativo, conforme descrito em [como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
+5. Continuar publicando seu aplicativo, conforme descrito em [como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).  
   
 #### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>Marcar assemblies como opcionais no seu aplicativo ClickOnce usando o Manifest Generation and Editing Tool, cliente gráfico (MageUI.exe)  
   
-1.  Criar seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestos conforme descrito em [passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+1. Criar seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestos conforme descrito em [passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
-2.  Antes de fechar MageUI.exe, selecione a guia que contém o manifesto do aplicativo da implantação e, nessa guia, selecione a **arquivos** guia.  
+2. Antes de fechar MageUI.exe, selecione a guia que contém o manifesto do aplicativo da implantação e, nessa guia, selecione a **arquivos** guia.  
   
-3.  Encontre ClickOnceLibrary.dll na lista de arquivos do aplicativo e defina suas **tipo de arquivo** coluna a ser **None**. Para o **grupo** coluna, digite `ClickOnceLibrary.dll`.  
+3. Encontre ClickOnceLibrary.dll na lista de arquivos do aplicativo e defina suas **tipo de arquivo** coluna a ser **None**. Para o **grupo** coluna, digite `ClickOnceLibrary.dll`.  
   
 ## <a name="testing-the-new-assembly"></a>Teste o novo Assembly  
   
 #### <a name="to-test-your-on-demand-assembly"></a>Para testar seu assembly sob demanda  
   
-1.  Iniciar o aplicativo implantado com [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
+1. Iniciar o aplicativo implantado com [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].  
   
-2.  Quando o formulário principal é exibida, pressione a <xref:System.Windows.Forms.Button>. Você deve ver uma cadeia de caracteres em uma janela de caixa de mensagem que se lê "Olá, mundo!"  
+2. Quando o formulário principal é exibida, pressione a <xref:System.Windows.Forms.Button>. Você deve ver uma cadeia de caracteres em uma janela de caixa de mensagem que se lê "Olá, mundo!"  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:System.Deployment.Application.ApplicationDeployment>

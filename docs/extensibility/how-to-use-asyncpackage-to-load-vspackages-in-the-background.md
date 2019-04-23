@@ -7,12 +7,12 @@ author: gregvanl
 ms.author: gregvanl
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a0de1ccf4a75bb10ae120e9237ceb176a3794a1
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 99b23c223d91678f03a52910ed4516be0839a338
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56680978"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60113957"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>Como: Usar AsyncPackage para carregar VSPackages em segundo plano
 Carregar e inicializar um VS package podem resultar em e/s de disco. Se tal e/s acontece no thread da interface do usuário, ele pode levar a problemas de capacidade de resposta. Para resolver isso, o Visual Studio 2015 apresentou a <xref:Microsoft.VisualStudio.Shell.AsyncPackage> classe que habilita o carregamento do pacote em um thread em segundo plano.
@@ -75,11 +75,11 @@ public sealed class TestPackage : AsyncPackage
 ## <a name="convert-an-existing-vspackage-to-asyncpackage"></a>Converter um VSPackage existente em AsyncPackage
  A maioria do trabalho é o mesmo que criar um novo **AsyncPackage**. Siga as etapas 1 a 5 acima. Você também precisará tomar muito cuidado com as seguintes recomendações:
 
-1.  Lembre-se de remover o `Initialize` tinha em seu pacote de substituição.
+1. Lembre-se de remover o `Initialize` tinha em seu pacote de substituição.
 
-2.  Evite deadlocks: Pode haver oculto RPCs em seu código. Agora, que ocorrem em um thread em segundo plano. Certifique-se de que se você estiver fazendo uma RPC (por exemplo, **GetService**), você precisa para qualquer comutador (1) para o thread principal ou (2) use a versão assíncrona da API se um existe (por exemplo, **GetServiceAsync**).
+2. Evite deadlocks: Pode haver oculto RPCs em seu código. Agora, que ocorrem em um thread em segundo plano. Certifique-se de que se você estiver fazendo uma RPC (por exemplo, **GetService**), você precisa para qualquer comutador (1) para o thread principal ou (2) use a versão assíncrona da API se um existe (por exemplo, **GetServiceAsync**).
 
-3.  Não alterne entre threads com muita frequência. Tente localizar o trabalho que pode ocorrer em um thread em segundo plano para reduzir o tempo de carregamento.
+3. Não alterne entre threads com muita frequência. Tente localizar o trabalho que pode ocorrer em um thread em segundo plano para reduzir o tempo de carregamento.
 
 ## <a name="querying-services-from-asyncpackage"></a>Consultando serviços de AsyncPackage
  Uma **AsyncPackage** podem ou não carregar assincronamente, dependendo do chamador. Por exemplo,

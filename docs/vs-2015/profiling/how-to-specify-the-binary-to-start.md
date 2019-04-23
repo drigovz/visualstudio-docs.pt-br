@@ -1,5 +1,5 @@
 ---
-title: Como especificar o binário para iniciar | Microsoft Docs
+title: 'Como: Especificar o binário para iniciar | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -15,37 +15,37 @@ caps.latest.revision: 15
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 45b5e3ba98c526ffea1ab63f58ef9193a3eaae75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 919e84393cf4aef929a504aadbefe905afe24bfb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759887"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098422"
 ---
-# <a name="how-to-specify-the-binary-to-start"></a>Como especificar o início do binário
+# <a name="how-to-specify-the-binary-to-start"></a>Como: Especificar o binário a iniciar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para analisar binários, como DLLs, você deve inserir informações na caixa de diálogo **\<Destino> Páginas de Propriedade**. Essa informação indica onde o projeto DLL pode localizar o aplicativo de chamada.  
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 ### <a name="to-specify-the-executable-to-start"></a>Para especificar o executável para iniciar  
   
-1.  No **Gerenciador de Desempenho**, clique com o botão direito do mouse no binário de destino e, em seguida, clique em **Propriedades**.  
+1. No **Gerenciador de Desempenho**, clique com o botão direito do mouse no binário de destino e, em seguida, clique em **Propriedades**.  
   
-2.  Na caixa de diálogo **Páginas de Propriedades**, clique nas propriedades de **Inicialização**.  
+2. Na caixa de diálogo **Páginas de Propriedades**, clique nas propriedades de **Inicialização**.  
   
-3.  Selecione a caixa de seleção **Substituir as propriedades de projeto**.  
+3. Selecione a caixa de seleção **Substituir as propriedades de projeto**.  
   
-4.  Na caixa de texto **Executável a Ser Iniciado**, especifique o local do arquivo.  
+4. Na caixa de texto **Executável a Ser Iniciado**, especifique o local do arquivo.  
   
-5.  Na caixa de texto **Argumentos**, especifique os argumentos que são necessários para iniciar o aplicativo.  
+5. Na caixa de texto **Argumentos**, especifique os argumentos que são necessários para iniciar o aplicativo.  
   
-6.  Na caixa de texto **Diretório de Trabalho**, especifique o local do diretório.  
+6. Na caixa de texto **Diretório de Trabalho**, especifique o local do diretório.  
   
-7.  Clique em **OK**.  
+7. Clique em **OK**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Configurando sessões de desempenho](../profiling/configuring-performance-sessions.md)

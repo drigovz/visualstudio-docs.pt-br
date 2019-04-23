@@ -12,23 +12,23 @@ ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 053d8ff8f7e75224b05b1a722ba1bce03cd53a59
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 4c7a4af5928f1d7b803e882c1826e451982389bc
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923782"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093924"
 ---
 # <a name="sccgetprojpath-function"></a>Função SccGetProjPath
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Essa função solicita ao usuário para um caminho de projeto, que é uma cadeia de caracteres que é significativa apenas para o plug-in de controle do código-fonte. Ele é chamado quando o usuário é:  
   
--   Criar um novo projeto  
+- Criar um novo projeto  
   
--   Adicionar um projeto existente ao controle de versão  
+- Adicionar um projeto existente ao controle de versão  
   
--   Tentativa de encontrar um projeto existente de controle de versão  
+- Tentativa de encontrar um projeto existente de controle de versão  
   
 ## <a name="syntax"></a>Sintaxe  
   

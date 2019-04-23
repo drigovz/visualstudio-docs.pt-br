@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25c5388c1b1d14efad9e76b2494f8da423d28979
-ms.sourcegitcommit: c0202a77d4dc562cdc55dc2e6223c062281d9749
+ms.openlocfilehash: 1fff7555c17f4fdac43de2690f8e133cc32881db
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54871657"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101224"
 ---
 # <a name="how-to-sign-office-solutions"></a>Como: Assinar soluções do Office
   Se você assinar uma solução, você pode conceder confiança à solução usando o certificado como prova. Você pode usar o mesmo certificado para várias soluções, e todas as soluções serão confiáveis sem atualizações de política de segurança adicional.
@@ -35,15 +35,15 @@ ms.locfileid: "54871657"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>Para assinar uma solução do Office por meio de um certificado
 
-1.  Sobre o **Project** menu, clique em _SolutionName_**propriedades**.
+1. Sobre o **Project** menu, clique em _SolutionName_**propriedades**.
 
-2.  Clique na guia **Assinatura**.
+2. Clique na guia **Assinatura**.
 
-3.  Selecione **assinar os manifestos do ClickOnce**.
+3. Selecione **assinar os manifestos do ClickOnce**.
 
-4.  Localize o certificado clicando **selecione na Store** ou **selecionar do arquivo** e navegando até o certificado.
+4. Localize o certificado clicando **selecione na Store** ou **selecionar do arquivo** e navegando até o certificado.
 
-5.  Para verificar se o certificado correto está sendo usado, clique em **mais detalhes** para exibir as informações do certificado.
+5. Para verificar se o certificado correto está sendo usado, clique em **mais detalhes** para exibir as informações do certificado.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 949014204f67f16e22d25cd604585a229c8967e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f3454ca7c01b44dcae60156e93bffde351209cc5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619219"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099371"
 ---
 # <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>Como: Adicionar e remover itens de recursos do SharePoint
   Quando você cria uma solução do SharePoint, o Visual Studio adiciona os itens de projeto do SharePoint padrão para seu recurso. Antes da implantação, você pode adicionar e remover itens de projeto do SharePoint para modificar o recurso do SharePoint.
@@ -46,9 +46,9 @@ ms.locfileid: "56619219"
 
 #### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>Para remover itens do SharePoint com o Designer de recursos
 
-1.  Escolha um ou mais itens na **itens no recurso** lista.
+1. Escolha um ou mais itens na **itens no recurso** lista.
 
-2.  Escolha o **remover** botão (<) para remover um item por vez, ou escolha a **remover tudo** botão (<<) para remover todos os itens.
+2. Escolha o **remover** botão (<) para remover um item por vez, ou escolha a **remover tudo** botão (<<) para remover todos os itens.
 
      Os itens de projeto do SharePoint aparecem na **itens na solução** lista.
 

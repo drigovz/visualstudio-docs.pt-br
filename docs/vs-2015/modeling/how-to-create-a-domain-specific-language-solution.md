@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f675b40f250505e654b287fcaa86e70aca4cdd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 57c843b7c556ac409a63d5e6c01e2699da59958b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928904"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099566"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Como: Criar uma solução de Linguagem Específica de Domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,9 +67,9 @@ Uma linguagem específica de domínio (DSL) é criada usando especializado [!INC
   
 3. Digite uma extensão de nome de arquivo **extensão de arquivo** página. Ele deve ser exclusivo no seu computador e, em todos os computadores nos quais você deseja instalar a DSL. Você deve ver a mensagem **nenhum aplicativo ou os editores do Visual Studio usam esta extensão**.  
   
-   -   Se você usou a extensão de nome de arquivo no anteriores DSLs experimentais que não foram totalmente instaladas, você pode desmarcá-las fora usando o **redefinir a instância Experimental** ferramenta, que pode ser encontrada no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu SDK.  
+   - Se você usou a extensão de nome de arquivo no anteriores DSLs experimentais que não foram totalmente instaladas, você pode desmarcá-las fora usando o **redefinir a instância Experimental** ferramenta, que pode ser encontrada no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] menu SDK.  
   
-   -   Se outro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão que usa esta extensão de arquivo tiver sido totalmente instalado em seu computador, considere desinstalá-lo. Sobre o **ferramentas** menu, clique em **Gerenciador de extensões**.  
+   - Se outro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão que usa esta extensão de arquivo tiver sido totalmente instalado em seu computador, considere desinstalá-lo. Sobre o **ferramentas** menu, clique em **Gerenciador de extensões**.  
   
 4. Inspecione e ajustar se necessário, os campos nas páginas restantes do assistente. Quando estiver satisfeito com as configurações, clique em **concluir**. Para obter mais informações sobre as configurações, consulte [páginas do Assistente de Designer de DSL](#settings).  
   
@@ -78,7 +78,7 @@ Uma linguagem específica de domínio (DSL) é criada usando especializado [!INC
    > [!NOTE]
    >  Se você vir uma mensagem que o alerta não executar modelos de texto de fontes não confiáveis, clique em **Okey**. Você pode definir essa mensagem não seja exibido novamente.  
   
-##  <a name="settings"></a> As páginas do Assistente de Designer de DSL  
+## <a name="settings"></a> As páginas do Assistente de Designer de DSL  
  Você pode deixar vários campos inalterados de seus valores padrão. No entanto, certifique-se de que você defina o campo de extensão de arquivo.  
   
 ### <a name="solution-settings-page"></a>Página de configurações de solução  
@@ -86,7 +86,7 @@ Uma linguagem específica de domínio (DSL) é criada usando especializado [!INC
  Escolha um modelo que é semelhante a DSL que você deseja criar. Os modelos diferentes oferecem pontos de partida. Quando você seleciona um modelo de solução, o assistente exibe uma descrição. Para obter mais informações sobre modelos de solução, consulte [escolhendo um modelo de solução de linguagem específica do domínio](../modeling/choosing-a-domain-specific-language-solution-template.md).  
   
  **O que você deseja nomear sua linguagem específica de domínio?**  
- O padrão é o nome da solução. Código é gerado a partir esse valor. Ele deve ser válido como um nome de classe C#.  
+ O padrão é o nome da solução. Código é gerado a partir esse valor. Ele deve ser válido como um nome de classe c#.  
   
 ### <a name="file-extension-page"></a>Página de extensão de arquivo  
  **Use arquivos de modelo do qual extensão deve?**  
@@ -98,15 +98,15 @@ Uma linguagem específica de domínio (DSL) é criada usando especializado [!INC
   
  Se você vir uma lista de ferramentas ou pacotes, você deve fazer o seguinte:  
   
--   Digite uma extensão de arquivo diferente.  
+- Digite uma extensão de arquivo diferente.  
   
      \- ou -  
   
--   Redefinir o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instância Experimental. Isso cancelará todas as DSLs que você tiver criado anteriormente. Sobre o **iniciar** menu, clique em **todos os programas**, **SDK do Microsoft Visual Studio 2010**, **ferramentas**e, em seguida, **redefinir o Instância do Microsoft Visual Studio 2010 Experimental**. Você pode recriar a outras DSLs que você deseja usar novamente.  
+- Redefinir o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instância Experimental. Isso cancelará todas as DSLs que você tiver criado anteriormente. Sobre o **iniciar** menu, clique em **todos os programas**, **SDK do Microsoft Visual Studio 2010**, **ferramentas**e, em seguida, **redefinir o Instância do Microsoft Visual Studio 2010 Experimental**. Você pode recriar a outras DSLs que você deseja usar novamente.  
   
      \- ou -  
   
--   Se um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão que usa esta extensão de arquivo tiver sido totalmente instalado em seu computador, desinstalá-lo. Sobre o **ferramentas** menu, clique em **Gerenciador de extensões**.  
+- Se um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão que usa esta extensão de arquivo tiver sido totalmente instalado em seu computador, desinstalá-lo. Sobre o **ferramentas** menu, clique em **Gerenciador de extensões**.  
   
 ### <a name="product-settings-page"></a>Página de configurações do produto  
  **O que é o nome do produto que a nova linguagem específica de domínio pertence?**  

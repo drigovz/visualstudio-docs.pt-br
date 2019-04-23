@@ -9,12 +9,12 @@ caps.latest.revision: 38
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cd8b160eca8b3a7e628ed9eda199c0b26fe38c14
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 619b64578c5fd626f9ffa8cfca8f777fdc1c93a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648648"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105709"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>Como: Anexar o Profiler para um aplicativo Web ASP.NET para coletar estatísticas do aplicativo usando a linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,9 +44,9 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
 
     **VSPerfClrEnv /globalsampleon** [**/samplelineoff**]  
 
-   -   **/globalsampleon** habilita a amostragem.  
+   - **/globalsampleon** habilita a amostragem.  
 
-   -   **/samplelineoff** desabilita a atribuição de dados coletados a linhas específicas do código-fonte. Quando essa opção for especificada, os dados serão atribuídos somente a funções.  
+   - **/samplelineoff** desabilita a atribuição de dados coletados a linhas específicas do código-fonte. Quando essa opção for especificada, os dados serão atribuídos somente a funções.  
 
 3. Reinicie o computador.  
 
@@ -73,9 +73,9 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
 
 6. Anexe o criador de perfil ao processo de trabalho do ASP.NET. Digite:**VSPerfCmd** [/attach](../profiling/attach.md)**:**{`PID`&#124;`ProcName`} [`Sample Event`] [[/targetclr](../profiling/targetclr.md)**:**`Version`]  
 
-   -   `PID` especifica a ID de processo do processo de trabalho do ASP.NET; `ProcName` especifica o nome do processo de trabalho. É possível exibir as IDs de processo e nomes de todos os processos em execução no Gerenciador de Tarefas do Windows.  
+   - `PID` especifica a ID de processo do processo de trabalho do ASP.NET; `ProcName` especifica o nome do processo de trabalho. É possível exibir as IDs de processo e nomes de todos os processos em execução no Gerenciador de Tarefas do Windows.  
 
-   -   Por padrão, os dados de desempenho têm amostra obtida a cada 10.000.000 ciclos de relógio de processador não interrompidos. Significa aproximadamente 100 vezes por segundo em um processador 1GH. Você pode especificar uma das opções **VSPerfCmd** a seguir para alterar o intervalo de ciclo de relógio ou especificar um evento de amostragem diferente.  
+   - Por padrão, os dados de desempenho têm amostra obtida a cada 10.000.000 ciclos de relógio de processador não interrompidos. Significa aproximadamente 100 vezes por segundo em um processador 1GH. Você pode especificar uma das opções **VSPerfCmd** a seguir para alterar o intervalo de ciclo de relógio ou especificar um evento de amostragem diferente.  
 
    |Evento de amostra|Descrição|  
    |------------------|-----------------|  
@@ -85,14 +85,14 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
    |[/counter](../profiling/counter.md) **:** `Config`|Altera o evento de amostragem e o intervalo para o contador de desempenho do processador e o intervalo especificado em `Config`.|  
    |[/targetclr](../profiling/targetclr.md) **:** `Version`|Especifica a versão do CLR (Common Language Runtime) a ser analisada quando mais de uma versão de tempo de execução for carregada em um aplicativo.|  
 
-   -   **targetclr:** `Version` especifica a versão do CLR analisada quando mais de uma versão do tempo de execução for carregada em um aplicativo. Opcional.  
+   - **targetclr:** `Version` especifica a versão do CLR analisada quando mais de uma versão do tempo de execução for carregada em um aplicativo. Opcional.  
 
 ## <a name="controlling-data-collection"></a>Controlando coleção de dados  
  Quando o aplicativo estiver em execução, você pode controlar a coleta de dados iniciando e parando a gravação de dados no arquivo usando as opções de **VSPerfCmd.exe**. Controlar a coleta de dados permite coletar dados de uma parte específica da execução do programa, como a inicialização ou o desligamento do aplicativo.  
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar e interromper a coleta de dados  
 
--   Os pares de opções **VSPerfCmd** a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
+- Os pares de opções **VSPerfCmd** a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.  
 
     |Opção|Descrição|  
     |------------|-----------------|  
@@ -109,21 +109,21 @@ Este tópico descreve como usar as Ferramentas de linha de comando das Ferrament
 
 #### <a name="to-end-a-profiling-session"></a>Para encerrar uma sessão de criação de perfil  
 
-1.  Siga um destes procedimentos para desanexar o criador de perfil do aplicativo de destino:  
+1. Siga um destes procedimentos para desanexar o criador de perfil do aplicativo de destino:  
 
-    -   Digite **VSPerfCmd /detach**  
+    - Digite **VSPerfCmd /detach**  
 
          - ou -  
 
-    -   Feche o processo de trabalho [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
+    - Feche o processo de trabalho [!INCLUDE[vstecasp](../includes/vstecasp-md.md)].  
 
-2.  Desligue o criador de perfil. Digite:**VSPerfCmd** [/shutdown](../profiling/shutdown.md)  
+2. Desligue o criador de perfil. Digite:**VSPerfCmd** [/shutdown](../profiling/shutdown.md)  
 
-3.  (Opcional) desmarcar as variáveis de ambiente de criação de perfil. Tipo:  
+3. (Opcional) desmarcar as variáveis de ambiente de criação de perfil. Tipo:  
 
      **VSPerfCmd /globaloff**  
 
-4.  Reinicie o computador.  
+4. Reinicie o computador.  
 
 ## <a name="see-also"></a>Consulte também  
  [Criando perfil de aplicativos Web ASP.NET](../profiling/command-line-profiling-of-aspnet-web-applications.md)   

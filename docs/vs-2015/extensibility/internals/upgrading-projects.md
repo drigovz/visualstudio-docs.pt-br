@@ -12,12 +12,12 @@ ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 47b4bacb8815db8cf7cb64f47534d1c3b10a8177
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7e97e21b2d08d7398a4372ac31cda63b5cfb9fe9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929472"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100587"
 ---
 # <a name="upgrading-projects"></a>Atualizando projetos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,9 +27,9 @@ Altera para o modelo de projeto de uma versão do [!INCLUDE[vsprvs](../../includ
 ## <a name="upgrade-strategies"></a>Estratégias de atualização  
  Para dar suporte a uma atualização, sua implementação do sistema de projeto deve definir e implementar uma estratégia de atualização. Para determinar sua estratégia, você pode optar por dar suporte a backup lado a lado (SxS), o backup de cópia ou ambos.  
   
--   Backup de SxS significa que um projeto copia somente os arquivos que precisam de atualização in loco, adicionando um sufixo de nome adequado do arquivo, por exemplo, ". old".  
+- Backup de SxS significa que um projeto copia somente os arquivos que precisam de atualização in loco, adicionando um sufixo de nome adequado do arquivo, por exemplo, ". old".  
   
--   Backup de cópia significa que um projeto copia todos os itens de projeto para um local de backup fornecido pelo usuário. Os arquivos relevantes no local original do projeto, em seguida, são atualizados.  
+- Backup de cópia significa que um projeto copia todos os itens de projeto para um local de backup fornecido pelo usuário. Os arquivos relevantes no local original do projeto, em seguida, são atualizados.  
   
 ## <a name="how-upgrade-works"></a>Como a atualização funciona  
  Quando uma solução criada em uma versão anterior do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] é aberto em uma versão mais recente, as verificações IDE a solução de arquivo para determinar se ele precisa ser atualizado. Se a atualização for necessária, o **Assistente de atualização** é iniciado automaticamente para explicar ao usuário o processo de atualização.  

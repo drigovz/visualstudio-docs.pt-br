@@ -12,12 +12,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 26dbe873d1552136c36748e638085bf39e5e530c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab8744e84e035501ba9bb8d531d982f4c17e206e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927237"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103230"
 ---
 # <a name="how-to-create-a-work-item-for-a-managed-code-defect"></a>Como: Criar um item de trabalho para um defeito de código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,16 +26,16 @@ Você pode usar o recurso para o item de trabalho do log de dentro de acompanham
   
 ### <a name="to-create-a-work-item-for-managed-code-defect"></a>Para criar um item de trabalho para defeitos de código gerenciado  
   
-1.  No **análise de código** janela, selecione o aviso.  
+1. No **análise de código** janela, selecione o aviso.  
   
-2.  Escolher **ações**, em seguida, escolha **Criar Item de trabalho** e escolha o tipo de item de trabalho a ser criado.  
+2. Escolher **ações**, em seguida, escolha **Criar Item de trabalho** e escolha o tipo de item de trabalho a ser criado.  
   
      Um novo item de trabalho é criado para você especificar as informações de defeito.  
   
 ### <a name="to-create-a-work-item-for-multiple-managed-code-defects"></a>Para criar um item de trabalho para vários defeitos de código gerenciado  
   
-1.  No **Error List**, selecione vários avisos e, em seguida, clique com botão direito os avisos.  
+1. No **Error List**, selecione vários avisos e, em seguida, clique com botão direito os avisos.  
   
-2.  Aponte para **Criar Item de trabalho** e clique no tipo de item de trabalho para criar.  
+2. Aponte para **Criar Item de trabalho** e clique no tipo de item de trabalho para criar.  
   
      Um único item de trabalho é criado para todos os avisos selecionados para que você especifique as informações de bug.
