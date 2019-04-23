@@ -23,17 +23,16 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb1bdb99db405962f487bc9ec13de961f352ec48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7c2dce31d5d2d2564c4a277b479dbf1e463b4632
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925206"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666124"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>Associar controles a imagens de um banco de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Você pode usar o **fontes de dados** window para vincular uma imagem em um banco de dados a um controle em seu aplicativo. Por exemplo, você pode vincular uma imagem para uma <xref:System.Windows.Controls.Image> de controle em um aplicativo WPF, ou como um <xref:System.Windows.Forms.PictureBox> controle em um aplicativo Windows Forms.  
   
  Imagens em um banco de dados normalmente são armazenadas como matrizes de bytes. Os itens na **fontes de dados** janela que são armazenados como matrizes de bytes têm seu controle tipo definido como **None** por padrão, como matrizes de bytes podem conter qualquer coisa, desde uma simples matriz de bytes para o arquivo executável de um aplicativo grande. Para criar um controle associado a dados para um item de matriz de bytes na **fontes de dados** janela que representa uma imagem, você deve selecionar o controle para criar.  

@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da49cd81ea309df2d8e2bd0b4c41c28a84564fa8
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MTE95
+ms.openlocfilehash: fd8928f204da4a3af15918a598df6241cd39df85
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526084"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665669"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>Criar um mapa visual da pilha de chamadas durante a depuração (C#, Visual Basic, C++, JavaScript)
 
@@ -45,7 +45,7 @@ Para obter instruções, assista a este vídeo: [Vídeo: Depurar visualmente com
 Para obter detalhes de comandos e ações que você pode usar com mapas de código, consulte [procurar e reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).
 
 >[!IMPORTANT]
->Você pode criar mapas de código somente no [Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/).
+>Você pode criar mapas de código somente no [Visual Studio Enterprise edition](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
 
 Aqui está uma rápida olhada um mapa de código:
 
@@ -53,7 +53,7 @@ Aqui está uma rápida olhada um mapa de código:
 
 ##  <a name="MapStack"></a> Mapear a pilha de chamadas
 
-1. Em um Visual Studio Enterprise C#, Visual Basic, C++ ou JavaScript do projeto, iniciar a depuração, selecionando **depurar** > **iniciar depuração** ou pressionando **F5**.
+1. Em um Visual Studio Enterprise C#, Visual Basic, C++, ou JavaScript do projeto, iniciar a depuração, selecionando **Debug** > **iniciar depuração** ou pressionando **F5** .
 
 1. Depois que seu aplicativo entra em modo de interrupção ou entrar em uma função, selecione **Debug** > **mapa de códigos**, ou pressione **Ctrl**+**Shift** +**`**.
 

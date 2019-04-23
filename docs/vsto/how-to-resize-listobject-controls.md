@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6d996cfcfb9dd8c63cf31b203905b486b3a1c82
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: af494a87b2feea10d121e59931e51ef3dd344f67
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598460"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669296"
 ---
 # <a name="how-to-resize-listobject-controls"></a>Como: Redimensionar controles ListObject
   Definir o tamanho de um <xref:Microsoft.Office.Tools.Excel.ListObject> controle quando você adiciona uma pasta de trabalho do Microsoft Office Excel; no entanto, você talvez queira para redimensioná-la em um momento posterior. Por exemplo, você talvez queira alterar uma lista de colunas de duas a três colunas.
@@ -43,7 +43,6 @@ ms.locfileid: "56598460"
  Para redimensionar uma lista, você pode clicar e arrastar uma das alças de dimensionamento, ou você pode redefinir seu tamanho na **redimensionar lista** caixa de diálogo.
 
 ### <a name="to-resize-a-list-by-using-the-resize-list-dialog-box"></a>Para redimensionar uma lista usando a caixa de diálogo de redimensionar lista
-
 
 1.  Clique em qualquer lugar a <xref:Microsoft.Office.Tools.Excel.ListObject> tabela. O **ferramentas de tabela** > **Design** guia na faixa de opções é exibida.
 

@@ -19,17 +19,16 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b81d3d9f7425874c8a3501d8e1d49eb813b97d9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926943"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668984"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Associar controles do Windows Forms a dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Você pode associar a fontes de dados a controles arrastando objetos do **fontes de dados** janela para um formulário do Windows ou para um controle existente em um formulário. Antes de você arrasta itens, você pode definir o tipo de controle que você deseja associar. Valores diferentes são exibidos, dependendo se você escolher a tabela a mesmo ou para uma coluna individual.  Você também pode definir valores personalizados. Para uma tabela "Detalhes" significa que cada coluna é associada a um controle separado.  
   
  ![Associar a fonte de dados a DataGridView](../data-tools/media/raddata-bind-data-source-to-datagridview.png "fonte de dados de ligação raddata DataGridView")  

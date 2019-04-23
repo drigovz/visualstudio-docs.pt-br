@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7be75a00925fbd3220934d50432f625c66fee9d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 063818aa828305eedfc184231f2dc4de4eec981c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723494"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667449"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Fundamentos de UX para Visual Studio
 ## <a name="best-practices"></a>Práticas recomendadas
@@ -102,7 +102,6 @@ ms.locfileid: "56723494"
 
 #### <a name="example-video-links-in-team-explorer"></a>Exemplo: links de vídeo no Team Explorer
 Forçar o usuário leia textos explicativos antes de ignorar a interface do usuário é um antipadrão dentro do Visual Studio. Links projetado corretamente, o vídeo deve exibir uma dica de ferramenta com informações adicionais no hover e clicando o "&times;" deve ignorar a mensagem sem a necessidade de interação adicional.
-
 
  ![Texto explicativo anti&#45;padrão &#45; incorreto](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />Padrão de link de vídeo incorreto
 

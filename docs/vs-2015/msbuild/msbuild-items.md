@@ -11,17 +11,16 @@ caps.latest.revision: 38
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 24756553f4b1f5eb1a0ce811842c2843debd71aa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: deeed2ed86b07ec6f3d36f7dd4b4be02c1060155
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54770844"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669803"
 ---
 # <a name="msbuild-items"></a>Itens do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Itens do MSBuild são entradas no sistema de build e eles normalmente representam arquivos. Os itens são agrupados em tipos de item com base em seus nomes de elemento. Os tipos de item são listas nomeadas de itens que podem ser usados como parâmetros para tarefas. As tarefas usam os valores do item para executar as etapas do processo de build.  
   
  Como os itens são nomeados pelo tipo de item ao qual pertencem, os termos “item” e “valor de item” podem ser usados alternadamente.  
@@ -88,9 +87,9 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
 -   A partir do .NET Framework 3.5, os elementos `Target` podem conter elementos [ItemGroup](../msbuild/itemgroup-element-msbuild.md) que podem conter elementos de item.  
   
 ##  <a name="BKMK_ReferencingItems"></a> Referenciando itens em um arquivo de projeto  
- Para referenciar tipos de item em todo o arquivo de projeto, use a sintaxe @(`ItemType`). Por exemplo, você faria referência no tipo de item no exemplo anterior usando `@(Compile)`. Usando esta sintaxe, você pode passar itens para tarefas, especificando o tipo de item como um parâmetro dessa tarefa. Para obter mais informações, consulte [Como selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md).  
+ Para referenciar tipos de item em todo o arquivo de projeto, use a sintaxe @(`ItemType`). Por exemplo, você faria referência no tipo de item no exemplo anterior usando `@(Compile)`. Usando esta sintaxe, você pode passar itens para tarefas, especificando o tipo de item como um parâmetro dessa tarefa. Para obter mais informações, confira [Como: Selecione os arquivos a compilar](../msbuild/how-to-select-the-files-to-build.md).  
   
- Por padrão, os itens de um tipo de item são separados por ponto e vírgula (;) quando são expandidos. Você pode usar a sintaxe @(*ItemType*, '*separator*') para especificar um separador diferente do padrão. Para mais informações, consulte [Como exibir uma lista de itens separada por vírgulas](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
+ Por padrão, os itens de um tipo de item são separados por ponto e vírgula (;) quando são expandidos. Você pode usar a sintaxe @(*ItemType*, '*separator*') para especificar um separador diferente do padrão. Para obter mais informações, confira [Como: Exibir uma lista de itens separada por vírgulas](../msbuild/how-to-display-an-item-list-separated-with-commas.md).  
   
 ##  <a name="BKMK_Wildcards"></a> Usando caracteres curinga para especificar itens  
  Você pode usar os caracteres curinga **, \* e ? para especificar um grupo de arquivos como entradas para um build em vez de listar cada arquivo separadamente.  
@@ -113,7 +112,7 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
 <VBFile Include="D:/**/*.vb"/>  
 ```  
   
- Para mais informações sobre os caracteres curinga, consulte [Como selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md).  
+ Para obter mais informações sobre caracteres curinga, confira [Como: Selecione os arquivos a compilar](../msbuild/how-to-select-the-files-to-build.md).  
   
 ##  <a name="BKMK_ExcludeAttribute"></a> Usando o atributo Exclude  
  Os elementos de item podem conter o atributo `Exclude`, que exclui itens específicos (arquivos) do tipo de item. O atributo `Exclude` normalmente é usado junto com caracteres curinga. Por exemplo, o XML a seguir adiciona cada arquivo .cs no diretório para o tipo de item de CSFile, exceto o arquivo `DoNotBuild.cs`.  
@@ -131,7 +130,7 @@ Itens do MSBuild são entradas no sistema de build e eles normalmente representa
 <Compile Include="*.res" Exclude="Form1.cs">  
 ```  
   
- Para mais informações, consulte [Como excluir arquivos do build](../msbuild/how-to-exclude-files-from-the-build.md).  
+ Para obter mais informações, confira [Como: Excluir arquivos do Build](../msbuild/how-to-exclude-files-from-the-build.md).  
   
 ##  <a name="BKMK_ItemMetadata"></a> Metadados de item  
  Os itens que podem conter metadados, além das informações nos atributos `Include` e `Exclude`. Esses metadados podem ser usados por tarefas que exigem mais informações sobre os itens ou para os destinos e tarefas de lote. Para obter mais informações, consulte [Envio em lote](../msbuild/msbuild-batching.md).  
@@ -358,9 +357,9 @@ Output:
 ## <a name="see-also"></a>Consulte também  
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)  
  [MSBuild](msbuild.md)   
- [Como selecionar os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md)   
- [Como excluir arquivos do build](../msbuild/how-to-exclude-files-from-the-build.md)   
- [Como exibir uma lista de itens separada por vírgulas](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
+ [Como: Selecione os arquivos a serem compilados](../msbuild/how-to-select-the-files-to-build.md)   
+ [Como: Excluir arquivos do Build](../msbuild/how-to-exclude-files-from-the-build.md)   
+ [Como: Exibir uma lista de itens separada por vírgulas](../msbuild/how-to-display-an-item-list-separated-with-commas.md)   
  [Definições de itens](../msbuild/item-definitions.md)   
  [Envio em lote](../msbuild/msbuild-batching.md)   
  [Elemento Item (MSBuild)](../msbuild/item-element-msbuild.md)

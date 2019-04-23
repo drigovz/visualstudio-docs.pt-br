@@ -16,17 +16,17 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ffe24127fc0b02b2abb8b4c91ff57345cf88ff7f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2613dbd0c803352c758ac1baf1b1f5d4469b9c73
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929588"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663986"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Gerar código por meio de diagramas de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para gerar código Visual C# .NET a partir de diagramas de classe UML no Visual Studio, use o **gerar código** comando. Por padrão, o comando gera um tipo do C# para cada tipo UML selecionado. É possível modificar e estender esse comportamento modificando ou copiando-se os modelos de texto que geram o código. É possível especificar o comportamento diferente para os tipos contidos em pacotes diferentes do modelo.  
+Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual Studio, use o **gerar código** comando. Por padrão, o comando gera um tipo do C# para cada tipo UML selecionado. É possível modificar e estender esse comportamento modificando ou copiando-se os modelos de texto que geram o código. É possível especificar o comportamento diferente para os tipos contidos em pacotes diferentes do modelo.  
 
  O **gerar código** comando é especialmente adequado à geração de código da seleção do usuário de elementos e à geração de um arquivo para cada classe UML ou outro elemento. Por exemplo, a captura de tela mostra dois arquivos do C# que foram gerados com base em duas classes UML.  
 
@@ -86,7 +86,7 @@ Para gerar código Visual C# .NET a partir de diagramas de classe UML no Visual 
 
   Adicionando um estereótipo a cada tipo UML, você pode controlar mais propriedades do tipo do C# gerado.  
 
-|**Para criar esse tipo de C#**|**Desenhar este tipo UML**|**Aplicar este estereótipo**|  
+|**Para criar esse tipo de c#**|**Desenhar este tipo UML**|**Aplicar este estereótipo**|  
 |---------------------------------|----------------------------|-------------------------------|  
 |Classe|Classe|\<none > ou<br /><br /> Classe do C#|  
 |Interface|Interface|\<none > ou<br /><br /> Interface do C#|  
@@ -101,7 +101,7 @@ Para gerar código Visual C# .NET a partir de diagramas de classe UML no Visual 
 2. No **propriedades** janela, escolha a seta suspensa na **estereótipos** propriedade e, em seguida, selecione a caixa de seleção do estereótipo que você deseja aplicar.  
 
    > [!TIP]
-   >  Se os estereótipos do C# não forem exibidos, habilite o Perfil do C# para o modelo ou para um pacote que contém os elementos de modelo nos quais você tem interesse. Selecione o pacote ou a raiz do modelo no **Gerenciador de modelos UML**. Em seguida, nos **propriedades** janela, escolha **perfil**e, em seguida, habilite o perfil do C#.  
+   >  Se os estereótipos do C# não forem exibidos, habilite o Perfil do C# para o modelo ou para um pacote que contém os elementos de modelo nos quais você tem interesse. Selecione o pacote ou a raiz do modelo no **Gerenciador de modelos UML**. Em seguida, nos **propriedades** janela, escolha **perfil**e, em seguida, habilite o perfil do c#.  
 
 3. Expanda o **estereótipos** propriedade para ver as propriedades adicionais que podem ser definidas.  
 
@@ -112,7 +112,7 @@ Para gerar código Visual C# .NET a partir de diagramas de classe UML no Visual 
 
  Além disso, cada estereótipo oferece várias propriedades adicionais que é possível definir. Esses valores são convertidos em palavras-chave no código do C#. Por exemplo, se você definir a propriedade `Is Static` em uma classe, a classe do C# será `static`.  
 
- Para definir essas propriedades adicionais, selecione a classe ou outro elemento no diagrama. Na janela Propriedades, expanda **estereótipos**e, em seguida, expanda o estereótipo do C#, como **classe C#**.  Para classes, entre essas propriedades adicionais estão:  
+ Para definir essas propriedades adicionais, selecione a classe ou outro elemento no diagrama. Na janela Propriedades, expanda **estereótipos**e, em seguida, expanda o estereótipo do c#, como **classe c#**.  Para classes, entre essas propriedades adicionais estão:  
 
 - Atributos CLR  
 
@@ -164,7 +164,6 @@ Para gerar código Visual C# .NET a partir de diagramas de classe UML no Visual 
 
 4. Na caixa de diálogo, defina as propriedades da associação do modelo de texto.  
 
-
    |    **Property**    |                                                                                                                                                                                                                                                                                                                    **Descrição**                                                                                                                                                                                                                                                                                                                    |
    |--------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
    |        Nome        |                                                                                                                                                                                                                                                  Um nome da associação. Para substituir uma associação herdada de um pacote ou de um modelo de conteúdo, use o mesmo nome da associação que você deseja substituir.                                                                                                                                                                                                                                                  |
@@ -173,7 +172,6 @@ Para gerar código Visual C# .NET a partir de diagramas de classe UML no Visual 
    |    Caminho do Projeto    |                                                                      Especifica o caminho para o projeto do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que conterá os arquivos de saída da transformação. Use valores digitados para criar um novo projeto. Escolha o botão de reticências (**[...]** ) para selecionar um projeto existente.<br /><br /> Se não existir, um novo projeto será criado. Ele será um projeto de biblioteca de classes do C#.<br /><br /> Para isso, você deve digitar o projeto diretamente. É possível incluir macros da variável de ambiente como %ProgramFiles% ou %LocalAppData%.                                                                       |
    |  Diretório de Destino  |                                                                                          A pasta na qual o arquivo de destino é gerado. O caminho se refere à pasta do projeto.<br /><br /> É possível usar a expressão `{PackageStructure}` para inserir um caminho correspondente aos nomes dos pacotes de contenção. O valor padrão é `\GeneratedCode\{PackageStructure}`. Também é possível incluir variáveis de ambiente como %TEMP% ou %HomePath%. **Importante:** `{PackageStructure}` pode ser usado somente na **diretório de destino** propriedade.                                                                                          |
    | Caminho do Arquivo de Modelo |                                                                                                                                                           O modelo que realizará a transformação.<br /><br /> É possível usar os modelos fornecidos ou criar os próprios. É possível encontrar os modelos fornecidos no seguinte local:<br /><br /> …\Program Files\Microsoft Visual Studio 12.0\Common7\IDE\Extensions\Microsoft\Architecture Tools\Extensibility\Templates\Text\                                                                                                                                                           |
-
 
 5. É possível anexar quantas associações a um elemento você quiser.  
 

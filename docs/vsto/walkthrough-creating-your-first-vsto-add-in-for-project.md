@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 870f5385074e02036a088b34a94bd4e60d8153bc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 5d257953aeefd56a8b58a75377a64a5d9e882a25
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641748"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665201"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-project"></a>Passo a passo: Criar seu primeiro suplemento VSTO para o projeto
   Este passo a passo mostra como criar um suplemento do VSTO para o Microsoft Office Project. Os recursos que você criar nesse tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual projeto estiver aberto. Para obter mais informações, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).
@@ -91,7 +91,6 @@ ms.locfileid: "56641748"
 1.  Se você estiver usando c#, adicione o seguinte código para o `ThisAddIn_Startup` manipulador de eventos. Esse código se conecta a `Application_Newproject` manipulador de eventos com o evento NewProject.
 
      [!code-csharp[Trin_ProjectAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ProjectAddInTutorial/ThisAddIn.cs#2)]
-
 
 ## <a name="test-the-project"></a>O projeto de teste
  Quando você compila e executa o projeto, verifique se a nova tarefa aparece no novo projeto resultante.

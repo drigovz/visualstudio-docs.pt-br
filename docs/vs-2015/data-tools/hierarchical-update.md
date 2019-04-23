@@ -24,17 +24,16 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 55452897212c0ce28ec44aa107de44b29ed9f80b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e2839cf3fdd780ffbf2c3cfb50e086996cfc865e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926362"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663291"
 ---
 # <a name="hierarchical-update"></a>Atualização hierárquica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Atualização hierárquica * refere-se ao processo de salvar dados atualizados (de um conjunto de dados com duas ou mais tabelas relacionadas) para um banco de dados, mantendo as regras de integridade referencial. *A integridade referencial* refere-se às regras de consistência fornecido pelas restrições em um banco de dados que controlam o comportamento de inserção, atualização e exclusão de registros relacionados. Por exemplo, é a integridade referencial que impõe a criação de um registro de cliente antes de permitir que os pedidos a ser criado para esse cliente.  Para obter mais informações sobre relacionamentos em conjuntos de dados, consulte [relacionamentos em conjuntos de dados](../data-tools/relationships-in-datasets.md)  
   
  O recurso de atualização hierárquica usa um `TableAdapterManager` para gerenciar o `TableAdapter`s em um dataset tipado. O `TableAdapterManager` componente é um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]-gerado de classe, portanto, não é parte do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)]. Quando você arrasta uma tabela da janela fontes de dados a um formulário do Windows ou a página do WPF, o Visual Studio adiciona uma variável do tipo TableAdapterManager ao formulário ou página e vê-lo no designer na bandeja de componentes. Para obter informações detalhadas sobre o `TableAdapterManager` classe, consulte a seção de referência do TableAdapterManager [visão geral de TableAdapterManager](http://msdn.microsoft.com/library/33076d42-6b41-491a-ac11-6c6339aea650).  

@@ -14,17 +14,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f230a2270274f85fd799f86caa278bb98cb5fd46
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4ef58a39f1ff96a3c72cbb5a48940e378997cbca
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54772229"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664476"
 ---
 # <a name="replace-command"></a>Comando Substituir
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 Substitui texto em arquivos usando um subconjunto das opções disponíveis na guia **Substituir nos Arquivos** da janela **Localizar e Substituir**.  
   
 ## <a name="syntax"></a>Sintaxe  

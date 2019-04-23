@@ -9,17 +9,16 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3c08dbb66e71cc1fd362279ae33006c20e11436
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 722d318d05b37a7dc9c41c8e7078c9b486de6318
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924936"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668347"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Como: Adicionar validação a classes de entidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 *Validar* classes de entidade é o processo que confirma que os valores inseridos em objetos de dados estão de acordo com as restrições do esquema de um objeto e também as regras estabelecidas para o aplicativo. Validar dados antes de enviar atualizações para o base de dados subjacente é uma boa prática que reduz erros. Também reduz o número potencial de processamentos entre um aplicativo e o base de dados.  
   
  O [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornece os métodos parciais que permitem aos usuários estender o código gerado pelo designer que é executado durante inserções, atualizações e exclusões de entidades completos e também durante e após a coluna individual alterações.  
@@ -110,7 +109,7 @@ ms.locfileid: "58924936"
   
       Para projetos C#:  
   
-   5. Porque os projetos C# não gerenciar automaticamente os manipuladores de eventos, você pode usar o IntelliSense para criar parcial `Update` *CLASSNAME* método.  
+   5. Porque os projetos c# não gerenciar automaticamente os manipuladores de eventos, você pode usar o IntelliSense para criar parcial `Update` *CLASSNAME* método.  
   
    6. Tipo `partial` e um espaço para acessar a lista de métodos parciais disponíveis. Clique no método de atualização para a classe que você deseja adicionar validação para. O código a seguir é semelhante ao código que é gerado quando você seleciona uma `Update` *CLASSNAME* método parcial:  
   

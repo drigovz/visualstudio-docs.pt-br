@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 90f7fe4d3e4b316f48aed46c40b3d24e0969a536
-ms.sourcegitcommit: 7eb85d296146186e7a39a17f628866817858ffb0
-ms.translationtype: MT
+ms.openlocfilehash: 7eb266eda25198f6d270ebcf48086141a73dcb9c
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504426"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665448"
 ---
 # <a name="deploy-an-office-solution-by-using-clickonce"></a>Implantar uma solução do Office usando o ClickOnce
   Se você usar o ClickOnce, você pode implantar sua solução do Office em menos etapas. Se você publicar atualizações, sua solução vai detectá-las e instalá-las automaticamente. No entanto, o ClickOnce exige que sua solução seja instalada separadamente para cada usuário de um computador. Portanto, você deve considerar o uso do Windows Installer (*. msi*) se mais de um usuário for executar a solução no mesmo computador.
@@ -27,11 +27,11 @@ ms.locfileid: "59504426"
 
 - [Publicar a solução](#Publish)
 
-- [Decidir como deseja conceder confiança à solução](#Trust)
+- [Decida como você deseja conceder confiança à solução](#Trust)
 
-- [Ajudar usuários a instalar a solução](#Helping)
+- [Ajudar os usuários a instalar a solução](#Helping)
 
-- [Colocar o documento de uma solução no computador do usuário final (somente personalizações no nível de documento)](#Put)
+- [Coloque o documento de uma solução no computador do usuário final (somente personalizações no nível de documento)](#Put)
 
 - [Colocar o documento de uma solução em um servidor que está executando o SharePoint (somente personalizações no nível de documento)](#SharePoint)
 
@@ -91,9 +91,9 @@ ms.locfileid: "59504426"
 
     |Opção|Descrição|
     |------------|-----------------|
-    |**Baixar os pré-requisitos do site do fornecedor do componente**|É solicitado que o usuário baixe e instale esses pré-requisitos do fornecedor.|
-    |**Baixar pré-requisitos do mesmo local de meu aplicativo**|O software de pré-requisito é instalado com a solução. Se você escolher essa opção, o Visual Studio copiará todos os pacotes do pré-requisito no local de publicação. Para que essa opção funcione, os pacotes do pré-requisito devem estar no computador de desenvolvimento.|
-    |**Baixar pré-requisitos a partir do seguinte local**|O Visual Studio copia todos os pacotes do pré-requisito no local que você especifica e os instala com a solução.|
+    |**Baixar os pré-requisitos no site do fornecedor do componente**|É solicitado que o usuário baixe e instale esses pré-requisitos do fornecedor.|
+    |**Baixar os pré-requisitos no mesmo local do meu aplicativo**|O software de pré-requisito é instalado com a solução. Se você escolher essa opção, o Visual Studio copiará todos os pacotes do pré-requisito no local de publicação. Para que essa opção funcione, os pacotes do pré-requisito devem estar no computador de desenvolvimento.|
+    |**Baixar os pré-requisitos no seguinte local**|O Visual Studio copia todos os pacotes do pré-requisito no local que você especifica e os instala com a solução.|
 
      Ver [caixa de diálogo de pré-requisitos](../ide/reference/prerequisites-dialog-box.md).
 
@@ -340,12 +340,11 @@ ms.locfileid: "59504426"
 
  Como parte do processo de instalação personalizado, chame a ferramenta do instalador para soluções do Office (*VSTOInstaller.exe*), que é instalado por padrão no seguinte local:
 
- *%commonprogramfiles%\microsoft shared\VSTO\10.0\VSTOInstaller.exe*
+ *%CommonProgramFiles%\Microsoft shared\VSTO\10.0\VSTOInstaller.exe*
 
  Se a ferramenta não estiver nesse local, você pode usar o **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VSTO Runtime Setup\v4\InstallerPath** ou **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VSTO Runtime Setup\v4 \InstallerPath** chave do registro para localizar o caminho dessa ferramenta.
 
  Você pode usar os seguintes parâmetros com *VSTOinstaller.exe*.
-
 
 | Parâmetro | Definição |
 |------------------| - |

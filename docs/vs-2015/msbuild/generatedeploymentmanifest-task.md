@@ -19,17 +19,16 @@ caps.latest.revision: 32
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7a564028017e97a10ba0dda51c2e0db23dd1067a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 6f0c13e5ea8778ca91c30383287aaad6e965bb65
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54792936"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665838"
 ---
 # <a name="generatedeploymentmanifest-task"></a>Tarefa GenerateDeploymentManifest
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Gera um manifesto de implantação do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. Um manifesto de implantação do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] descreve a implantação de um aplicativo definindo uma identidade exclusiva para a implantação, identificando as características de implantação tais como o modo online ou da instalação, especificando as configurações de atualização do aplicativo e locais de atualização e indicando o manifesto do aplicativo do [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] correspondente.  
   
 ## <a name="parameters"></a>Parâmetros  
@@ -44,7 +43,7 @@ Gera um manifesto de implantação do [!INCLUDE[ndptecclick](../includes/ndptecc
 |`Description`|Parâmetro `String` opcional.<br /><br /> Especifica uma descrição opcional para o aplicativo.|  
 |`DisallowUrlActivation`|Parâmetro `Boolean` opcional.<br /><br /> Especifica se o aplicativo deve ser executado automaticamente quando ele é aberto por meio de uma URL. Se esse parâmetro for `true`, o aplicativo só poderá ser iniciado pelo menu Iniciar. O valor padrão desse parâmetro é `false`. Esta entrada só se aplica quando o valor do parâmetro `Install` é `true`.|  
 |`EntryPoint`|Parâmetro opcional <xref:Microsoft.Build.Framework.ITaskItem>`[]`.<br /><br /> Indica o ponto de entrada para o assembly do manifesto gerado. Para um manifesto de implantação [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)], esta entrada especifica o manifesto do aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)].<br /><br /> Em [!INCLUDE[vsprvslong](../includes/vsprvslong-md.md)], a [Tarefa GenerateApplicationManifest](../msbuild/generateapplicationmanifest-task.md) exigiu um `EntryPoint` para gerar um manifesto do aplicativo. (Manifestos de assembly ou nativos não exigem um `EntryPoint`.) Esse requisito foi imposto com o erro de compilação: "MSB3185: EntryPoint não especificado para o manifesto."<br /><br /> [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] não emite esse erro quando o parâmetro da tarefa `EntryPoint` não é especificado. Em vez disso, a marca \<customHostSpecified> é inserida como um filho da marca \<entryPoint>, por exemplo:<br /><br /> `<entryPoint xmlns="urn:schemas-`<br /><br /> `microsoft-com:asm.v2">`<br /><br /> `<co.v1:customHostSpecified />`<br /><br /> `</entryPoint>`<br /><br /> Você pode adicionar dependências de DLL ao manifesto do aplicativo usando as seguintes etapas:<br /><br /> 1.  Resolver as referências de assembly com uma chamada para <xref:Microsoft.Build.Tasks.ResolveAssemblyReference>.<br />2.  Passar a saída da tarefa anterior e o próprio assembly para <xref:Microsoft.Build.Tasks.ResolveManifestFiles>.<br />3.  Passar as dependências usando o parâmetro `Dependencies` para <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>.|  
-|`ErrorReportUrl`|Parâmetro [String](<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) opcional.<br /><br /> Especifica a URL da página da Web que é exibida nas caixas de diálogo durante instalações ClickOnce.|  
+|`ErrorReportUrl`|(Opcional [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parâmetro.<br /><br /> Especifica a URL da página da Web que é exibida nas caixas de diálogo durante instalações ClickOnce.|  
 |`InputManifest`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem> opcional.<br /><br /> Indica um documento XML de entrada para servir como base para o gerador de manifesto. Isso permite que dados estruturados, tais como definições personalizadas de manifesto, sejam refletidos no manifesto de saída. O elemento raiz do documento XML deve ser um nó de assembly no namespace asmv1.|  
 |`Install`|Parâmetro `Boolean` opcional.<br /><br /> Especifica se o aplicativo é um aplicativo instalado ou um aplicativo somente online. Se esse parâmetro for `true`, o aplicativo será instalado no menu Iniciar do usuário e poderá ser removido usando a caixa de diálogo Adicionar ou Remover Programas. Se esse parâmetro for `false`, o aplicativo será destinado ao uso online de uma página da Web. O valor padrão desse parâmetro é `true`.|  
 |`MapFileExtensions`|Parâmetro `Boolean` opcional.<br /><br /> Especifica se o mapeamento da extensão de nome de arquivo .deploy é usado. Se esse parâmetro for `true`, cada arquivo de programa será publicado com uma extensão de nome de arquivo .deploy. Essa opção é útil para segurança do servidor Web limitar o número de extensões de nome de arquivo deve estar desbloqueada para habilitar a implantação do aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]. O valor padrão desse parâmetro é `false`.|  

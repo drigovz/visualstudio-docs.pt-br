@@ -19,17 +19,16 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 85ea10b956069415198feb74be8c9e546ecc7ff8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 488caf02a20b4f0855df1ba2ef64c85e70e1a6a4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769217"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668113"
 ---
 # <a name="generatebootstrapper-task"></a>Tarefa GenerateBootstrapper
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e seus pré-requisitos. Atua como um único instalador que integra os diferentes instaladores de todos os componentes que compõem um aplicativo.  
   
 ## <a name="task-parameters"></a>Parâmetros da tarefa  
@@ -96,11 +95,11 @@ Fornece uma forma automatizada de detectar, baixar e instalar um aplicativo e se
   
    Especifica um local no qual o bootstrapper deverá procurar os pré-requisitos de instalação a serem instalados. Esse parâmetro pode ter os seguintes valores:  
   
-  - `HomeSite`: indica que o pré-requisito está sendo hospedado pelo fornecedor do componente.  
+  - `HomeSite`: Indica que o pré-requisito está sendo hospedado pelo fornecedor do componente.  
   
-  - `Relative`: indica que o pré-requisito está no mesmo local que o aplicativo.  
+  - `Relative`: Indica que o pré-requisito está no mesmo local do aplicativo.  
   
-  - `Absolute`: indica que todos os componentes serão encontrados em uma URL centralizada. Esse valor deve ser usado em conjunto com o parâmetro de entrada `ComponentsUrl`.  
+  - `Absolute`: Indica que todos os componentes serão encontrados em uma URL centralizada. Esse valor deve ser usado em conjunto com o parâmetro de entrada `ComponentsUrl`.  
   
     Se `ComponentsLocation` não for especificado, `HomeSite` será usado por padrão.  
   

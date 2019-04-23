@@ -19,17 +19,16 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c780213083068d64a62791fdd858f692533bf40
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 183a0a489d18625521d01d5abca5ed4f1eb12535
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867928"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669595"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produtos e serviços de acessibilidade da Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços para todas as pessoas. Os tópicos a seguir fornecem informações sobre os recursos, os produtos e os serviços que tornam o Microsoft Windows mais acessível para pessoas portadoras de deficiências:  
   
 -   [Recursos de acessibilidade do Windows](../../ide/reference/accessibility-products-and-services-from-microsoft.md#windows)  
