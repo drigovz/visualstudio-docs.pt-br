@@ -12,12 +12,12 @@ ms.assetid: 6905845e-e88e-4805-adcf-21da39108ec7
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a8f4ce6ab886fea3364526b53a32f72ad3f1408e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 496ace3193ec2a78033b2e429f6fa7c6cbf11a07
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922034"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091519"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-scheme"></a>Como: Acessar as fontes internas e o esquema de cores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,13 +49,13 @@ O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de
   
 ### <a name="to-register-a-category-using-built-in-fonts-and-colors"></a>Para registrar uma categoria usando cores e fontes internas  
   
-1.  Construa um tipo especial de entrada de registro de categoria no seguinte local:  
+1. Construa um tipo especial de entrada de registro de categoria no seguinte local:  
   
      [HKLM\Software\Microsoft. \Visual Studio\\*\<versão do Visual Studio >* \FontAndColors\\*\<categoria >*]  
   
      *\<Categoria >* é o nome não localizado da categoria.  
   
-2.  Preencha o registro para usar as fontes de estoque e o esquema de cores com quatro valores:  
+2. Preencha o registro para usar as fontes de estoque e o esquema de cores com quatro valores:  
   
     |Nome|Tipo|Dados|Descrição|  
     |----------|----------|----------|-----------------|  
@@ -64,7 +64,7 @@ O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de
     |NameID|REG_DWORD|ID|A ID de recurso de um nome de categoria localizáveis em VSPackage.|  
     |ToolWindowPackage|REG_SZ|GUID|O GUID da implementação de VSPackage o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.|  
   
-3.  
+3. 
   
 ### <a name="to-initiate-the-use-of-system-provided-fonts-and-colors"></a>Para iniciar o uso de cores e fontes fornecidas pelo sistema  
   

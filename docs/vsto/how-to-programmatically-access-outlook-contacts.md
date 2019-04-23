@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c46df4218a12c0f9a155567aeee0c007d0a19c53
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: a9fc9cf214a8aebd663a7de29528790aa3cc0b46
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598200"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104220"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>Como: Acessar os contatos do Outlook de forma programática
   Este exemplo localiza todos os contatos cujos sobrenomes contêm uma cadeia de caracteres de pesquisa especificado.
@@ -32,7 +32,7 @@ ms.locfileid: "56598200"
 ## <a name="compile-the-code"></a>Compilar o código
  Este exemplo requer:
 
--   Contatos cujos sobrenomes contêm a cadeia de caracteres "**Na"** (por exemplo, Tzipi Butnaru) na **contatos** pasta.
+- Contatos cujos sobrenomes contêm a cadeia de caracteres "**Na"** (por exemplo, Tzipi Butnaru) na **contatos** pasta.
 
 ## <a name="see-also"></a>Consulte também
 - [Trabalhar com itens de contato](../vsto/working-with-contact-items.md)

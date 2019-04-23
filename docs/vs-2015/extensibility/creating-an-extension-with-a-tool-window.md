@@ -8,12 +8,12 @@ ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f07cb45d6b77fc554475558fddba34792c0d8a55
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 94c8335b8d723ef20c04cfffe6b3788d71ecaa4f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925238"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118117"
 ---
 # <a name="creating-an-extension-with-a-tool-window"></a>Criando uma extensão com uma janela de ferramentas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ Neste procedimento, você aprenderá a usar o modelo de projeto do VSIX e o **ja
   
 ### <a name="creating-a-tool-window"></a>Criação de uma janela de ferramentas  
   
-1.  Crie um projeto do VSIX chamado **FirstWindow**. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual c# / extensibilidade**.  
+1. Crie um projeto do VSIX chamado **FirstWindow**. Você pode encontrar o modelo de projeto VSIX na **novo projeto** diálogo sob **Visual c# / extensibilidade**.  
   
-2.  Quando o projeto aberto, adicione um modelo de item da janela de ferramenta denominado **FirstWindow**. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add / Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c# / extensibilidade** e selecione **janela de ferramenta personalizada**. No **nome** campo na parte inferior da janela, altere o nome de arquivo da janela de ferramenta **FirstWindow.cs**.  
+2. Quando o projeto aberto, adicione um modelo de item da janela de ferramenta denominado **FirstWindow**. No **Gerenciador de soluções**, clique com botão direito no nó do projeto e selecione **Add / Novo Item**. No **Adicionar Novo Item** caixa de diálogo, vá para **Visual c# / extensibilidade** e selecione **janela de ferramenta personalizada**. No **nome** campo na parte inferior da janela, altere o nome de arquivo da janela de ferramenta **FirstWindow.cs**.  
   
-3.  Compile o projeto e comece a depuração.  
+3. Compile o projeto e comece a depuração.  
   
      A instância experimental do Visual Studio é exibida. Para obter mais informações sobre a instância experimental, consulte [a instância Experimental](../extensibility/the-experimental-instance.md).  
   
-4.  Na instância experimental, vá para **exibição / Other Windows**.  
+4. Na instância experimental, vá para **exibição / Other Windows**.  
   
      Você deve ver um item de menu **FirstWindow**. Clique nele.  
   

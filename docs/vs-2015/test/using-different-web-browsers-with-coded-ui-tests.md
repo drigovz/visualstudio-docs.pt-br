@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7245af090cfdaa8e4282677c8b5a052d63b63e2
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MTE95
+ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "54805528"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100398"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Usando navegadores diferentes com testes de interface do usuário codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,19 +26,19 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
   
 - Sistemas operacionais:  
   
-  -   Microsoft Windows 7  
+  - Microsoft Windows 7  
   
-  -   Microsoft Windows 8  
+  - Microsoft Windows 8  
   
-  -   Microsoft Windows Server 2008 R2 SP1  
+  - Microsoft Windows Server 2008 R2 SP1  
   
 - Versões de navegadores da Web:  
   
-  -   Windows Internet Explorer 9  
+  - Windows Internet Explorer 9  
   
-  -   Windows Internet Explorer 10  
+  - Windows Internet Explorer 10  
   
-  -   Para versões com suporte do Mozilla Firefox e do Google Chrome, acesse [aqui](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
+  - Para versões com suporte do Mozilla Firefox e do Google Chrome, acesse [aqui](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/)  
   
 - Instale os [componentes Selenium para testes de IU codificados entre navegadores](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
@@ -56,14 +56,14 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
  Testando seu aplicativo Web com uma variedade de tipos de navegadores da Web, você emula melhor a experiência de IU de seus usuários que podem usar navegadores diferentes. Por exemplo, o aplicativo pode incluir um controle ou um código no Internet Explorer que não seja compatível com outros navegadores da Web. Executando os testes de IU codificados em outros navegadores, você pode identificar e corrigir qualquer problema antes que isso afete seus clientes.  
   
 ## <a name="how-do-i-record-and-play-back-coded-ui-tests-on-web-applications-using-the-supported-web-browsers"></a>Como faço para gravar e reproduzir testes de IU codificados em aplicativos Web usando os navegadores da Web com suporte?  
- **Gravação**: você deve usar o Construtor de teste de IU codificado para registrar o teste do aplicativo Web usando o Internet Explorer. Opcionalmente, você pode adicionar validação e código personalizado para os controles testados usando um conjunto predefinido de propriedades como você faria normalmente para testes de IU codificados. Para obter mais informações, confira [Uso da automação da interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md).  
+ **Gravando:** Você deve usar o Construtor de teste de IU codificado para registrar o teste do aplicativo Web usando o Internet Explorer. Opcionalmente, você pode adicionar validação e código personalizado para os controles testados usando um conjunto predefinido de propriedades como você faria normalmente para testes de IU codificados. Para obter mais informações, confira [Uso da automação da interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md).  
   
 > [!NOTE]
 >  Você não pode gravar testes de IU codificados usando os navegadores Google Chrome ou Mozilla Firefox.  
   
- **Reprodução com o Internet Explorer**: quando nenhum navegador é especificado, os testes são executados no Internet Explorer por padrão. Você pode declarar explicitamente o navegador a ser usado ao definir a propriedade **BrowserWindow.CurrentBrowser** no seu código de teste. Para o Internet Explorer, essa propriedade deve ser definida como **IE** ou **Internet Explorer**.  
+ **Reprodução com o Internet Explorer:** Quando nenhum navegador é especificado, os testes são executados no Internet Explorer por padrão. Você pode declarar explicitamente o navegador a ser usado ao definir a propriedade **BrowserWindow.CurrentBrowser** no seu código de teste. Para o Internet Explorer, essa propriedade deve ser definida como **IE** ou **Internet Explorer**.  
   
- **Reprodução com navegadores da Web diferentes do Internet Explorer**: para reproduzir em navegadores da Web diferentes do Internet Explorer, altere a propriedade BrowserWindow.CurrentBrowser no código de teste para **Firefox** ou **Chrome**.  
+ **Reprodução com navegadores da Web diferentes do Internet Explorer:** Para reproduzir em navegadores da Web diferentes do Internet Explorer, altere a propriedade BrowserWindow.CurrentBrowser no código de teste para **Firefox** ou **Chrome**.  
   
  Para executar testes em navegadores da web que não sejam o IE, você deve instalar os **componentes Selenium para testes de IU codificados entre navegadores**.  
   
@@ -83,19 +83,19 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
 ### <a name="enable-debugging"></a>Habilitar a depuração  
  Para habilitar a depuração em seu aplicativo Web, conclua as seguintes opções de configuração:  
   
-1.  Habilitar Apenas Meu Código:  
+1. Habilitar Apenas Meu Código:  
   
-    1.  No menu **Ferramentas**, escolha **Opções** e, então, **Depuração**.  
+    1. No menu **Ferramentas**, escolha **Opções** e, então, **Depuração**.  
   
-    2.  Selecione **Habilitar Apenas Meu Código**.  
+    2. Selecione **Habilitar Apenas Meu Código**.  
   
-2.  Desabilitar exceções CLR:  
+2. Desabilitar exceções CLR:  
   
-    1.  No menu **Depurar**, escolha **Exceções**.  
+    1. No menu **Depurar**, escolha **Exceções**.  
   
-    2.  Para **exceções de Common Language Runtime**, desmarque **Sem tratamento do usuário**.  
+    2. Para **exceções de Common Language Runtime**, desmarque **Sem tratamento do usuário**.  
   
-##  <a name="generate"></a> *Não vejo a opção para alterar BrowserWindow.CurrentBrowser no teste de IU codificado.*  
+## <a name="generate"></a> *Não vejo a opção para alterar BrowserWindow.CurrentBrowser no teste de IU codificado.*  
  Você pode usar uma versão do [!INCLUDE[vs2011_first](../includes/vs2011-first-md.md)] que não oferece suporte a testes de IU codificados usando vários navegadores da Web. Para usar tais testes de IU codificados, você precisa usar o Visual Studio Enterprise.  
   
  *O que mais eu deveria saber?*  
@@ -139,11 +139,11 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
  [Solucionar problemas de falhas de teste entre navegadores](https://skydrive.live.com/redir?resid=AE5CD7309CCCC43C!182&authkey=!AEpS48i295B49FI)  
   
 ### <a name="guidance"></a>Diretrizes  
- [Testes de Entrega Contínua com o Visual Studio 2012 – Capítulo 2: Teste de Unidade: Testando o Interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
+ [Testando para entrega contínua com Visual Studio 2012 – capítulo 2: Testes da unidade: Testando o interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
- [Teste de Entrega Contínua com o Visual Studio 2012 – Capítulo 5: Automatizar Testes do Sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
+ [Testando para entrega contínua com Visual Studio 2012 – capítulo 5: Automatizando testes do sistema](http://go.microsoft.com/fwlink/?LinkID=255196)  
   
-### <a name="faq"></a>Perguntas Frequentes  
+### <a name="faq"></a>Perguntas frequentes  
  [Perguntas frequentes sobre testes de IU codificados – 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
   
  [Perguntas frequentes sobre testes de IU codificados – 2](http://go.microsoft.com/fwlink/?LinkID=230578)  

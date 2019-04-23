@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 26c956255aba9a4ca67249a6e540a7899e0da28a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 2aa44ee0d7d4a1b9965e653ac089c4c5dd78821b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54794180"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108549"
 ---
 # <a name="attach"></a>Attach
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
  **Temporizador**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Eventos]**Contador**[**:**`Name`,`Reload`,`FriendlyName`]  
  Especifica o número e o tipo do intervalo de amostragem.  
   
--   **Temporizador** – exemplifica cada `Cycles` ciclo de relógio do processador. Se `Cycles` não for especificado, os 10.000.000 ciclos serão usados.  
+- **Temporizador** – exemplifica cada `Cycles` ciclo de relógio do processador. Se `Cycles` não for especificado, os 10.000.000 ciclos serão usados.  
   
--   **PF** – exemplifica cada `Events` falha de página. Se `Events` não for especificado, 10 falhas de página serão usadas.  
+- **PF** – exemplifica cada `Events` falha de página. Se `Events` não for especificado, 10 falhas de página serão usadas.  
   
--   **Sys** – exemplifica cada `Events` chamadas para o sistema operacional. Se `Events` não for especificado, 10 chamadas do sistema serão usadas.  
+- **Sys** – exemplifica cada `Events` chamadas para o sistema operacional. Se `Events` não for especificado, 10 chamadas do sistema serão usadas.  
   
--   **Contador** – exemplifica cada número `Reload` do contador de desempenho de CPU especificado por `Name`. Opcionalmente, `FriendlyName` pode especificar uma cadeia de caracteres para usar como o cabeçalho de coluna nos relatórios do criador de perfil.  
+- **Contador** – exemplifica cada número `Reload` do contador de desempenho de CPU especificado por `Name`. Opcionalmente, `FriendlyName` pode especificar uma cadeia de caracteres para usar como o cabeçalho de coluna nos relatórios do criador de perfil.  
   
 ## <a name="example"></a>Exemplo  
  Este exemplo demonstra como anexar a uma instância em execução de um aplicativo com a ID de processo 12345.  

@@ -1,5 +1,5 @@
 ---
-title: 'Erro: o serviço Depurador Remoto do Visual Studio no computador de destino não pode se reconectar a este computador'
+title: 'Erro: O serviço do Depurador Remoto do Visual Studio no computador de destino não pode se conectar novamente a esse computador'
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 11/04/2016
@@ -16,14 +16,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 823e4517deda68fc807c83373d26fc38740383c2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: e3f406ac338edfc79c3d8fd802d1cb43d0224f21
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713874"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107145"
 ---
-# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Erro: o serviço Depurador Remoto do Visual Studio no computador de destino não pode se reconectar a este computador
+# <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>Erro: O serviço do Depurador Remoto do Visual Studio no computador de destino não pode se conectar novamente a esse computador
 Esse erro significa que o serviço de depurador remoto do Visual Studio está em execução em uma conta de usuário que não pode autenticar ao tentar se conectar ao computador do qual você está depurando.
 
  A tabela a seguir mostra quais contas podem acessar o computador:
@@ -38,41 +38,41 @@ Esse erro significa que o serviço de depurador remoto do Visual Studio está em
 
  Além disso:
 
--   A conta na qual você executa o serviço de depurador remoto do Visual Studio deve ser administrador no computador remoto de modo que possa depurar qualquer processo.
+- A conta na qual você executa o serviço de depurador remoto do Visual Studio deve ser administrador no computador remoto de modo que possa depurar qualquer processo.
 
--   a conta também precisa receber o privilégio de `Log on as a service` no computador remoto que está usando a ferramenta administrativa **Política de Segurança Local**.
+- a conta também precisa receber o privilégio de `Log on as a service` no computador remoto que está usando a ferramenta administrativa **Política de Segurança Local**.
 
--   Se você estiver usando um acesso de conta local no computador, deverá executar o serviço de depurador remoto do Visual Studio em uma conta local.
+- Se você estiver usando um acesso de conta local no computador, deverá executar o serviço de depurador remoto do Visual Studio em uma conta local.
 
 ### <a name="to-correct-this-error"></a>Para corrigir este erro
 
-1.  Verifique se o serviço de depurador remoto do Visual Studio está configurado corretamente no computador remoto. Para obter mais informações, consulte [depuração remota](../debugger/remote-debugging.md).
+1. Verifique se o serviço de depurador remoto do Visual Studio está configurado corretamente no computador remoto. Para obter mais informações, consulte [depuração remota](../debugger/remote-debugging.md).
 
-2.  Execute o serviço de depurador remoto com uma conta que possa acessar o computador host do depurador, conforme mostrado na tabela anterior.
+2. Execute o serviço de depurador remoto com uma conta que possa acessar o computador host do depurador, conforme mostrado na tabela anterior.
 
 ### <a name="to-add-log-on-as-a-service-privilege"></a>Para adicionar o privilégio “Fazer logon como um serviço”
 
-1.  No menu **Iniciar**, escolha **Painel de Controle**.
+1. No menu **Iniciar**, escolha **Painel de Controle**.
 
-2.  No Painel de Controle, escolha o **Modo de Exibição Clássico**, se necessário.
+2. No Painel de Controle, escolha o **Modo de Exibição Clássico**, se necessário.
 
-3.  Clique duas vezes em **Ferramentas Administrativas**.
+3. Clique duas vezes em **Ferramentas Administrativas**.
 
-4.  Na janela Ferramentas Administrativas, clique duas vezes em **Política de Segurança Local**.
+4. Na janela Ferramentas Administrativas, clique duas vezes em **Política de Segurança Local**.
 
-5.  Na janela **Configurações de Segurança Local**, expanda a pasta **Políticas Locais**.
+5. Na janela **Configurações de Segurança Local**, expanda a pasta **Políticas Locais**.
 
-6.  Clique em **Atribuição de Direitos do Usuário**.
+6. Clique em **Atribuição de Direitos do Usuário**.
 
-7.  Na coluna **Política**, clique duas vezes em **Fazer logon como um serviço** para exibir as atribuições locais atuais da Política de Grupo na caixa de diálogo **Fazer logon como um serviço**.
+7. Na coluna **Política**, clique duas vezes em **Fazer logon como um serviço** para exibir as atribuições locais atuais da Política de Grupo na caixa de diálogo **Fazer logon como um serviço**.
 
-8.  Para adicionar novos usuários, clique no botão **Adicionar Usuário ou Grupo**.
+8. Para adicionar novos usuários, clique no botão **Adicionar Usuário ou Grupo**.
 
 9. Quando você terminar de adicionar usuários, clique em **OK**.
 
 ### <a name="to-work-around-this-error"></a>Para resolver esse erro
 
--   Execute o Monitor de Depuração Remota como um aplicativo em vez de um serviço.
+- Execute o Monitor de Depuração Remota como um aplicativo em vez de um serviço.
 
 ## <a name="see-also"></a>Consulte também
 - [Erros e solução de problemas de depuração remota](../debugger/remote-debugging-errors-and-troubleshooting.md)

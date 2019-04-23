@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ffc6f19a5b5d568968e95ee2f8b1b48feb619e6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: eeef19a04245d74d99050930cc3f66da627ffdd9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645583"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111162"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>Como: Classificar dados em planilhas de forma programática
   Você pode classificar os dados contidos nas listas e intervalos de planilhas em tempo de execução. O código a seguir classifica um intervalo de várias coluna chamado `Fruits` os dados na primeira coluna e, em seguida, pelos dados na segunda coluna.
@@ -40,7 +40,7 @@ ms.locfileid: "56645583"
 
 ### <a name="to-sort-data-in-a-listobject-control"></a>Para classificar dados em um controle ListObject
 
-1.  Chame o <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A> método da <xref:Microsoft.Office.Tools.Excel.ListObject.Range%2A> propriedade do <xref:Microsoft.Office.Tools.Excel.ListObject> controle de host.
+1. Chame o <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A> método da <xref:Microsoft.Office.Tools.Excel.ListObject.Range%2A> propriedade do <xref:Microsoft.Office.Tools.Excel.ListObject> controle de host.
 
      [!code-csharp[Trin_VstcoreExcelAutomation#79](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#79)]
      [!code-vb[Trin_VstcoreExcelAutomation#79](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#79)]
@@ -49,14 +49,14 @@ ms.locfileid: "56645583"
 
 ### <a name="to-sort-data-in-a-native-range"></a>Para classificar dados em um intervalo nativo
 
-1.  Chame o <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A> método do Excel nativo <xref:Microsoft.Office.Interop.Excel.Range> controle. O exemplo a seguir exige um controle nativo do Excel chamado `Fruits` em uma planilha.
+1. Chame o <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A> método do Excel nativo <xref:Microsoft.Office.Interop.Excel.Range> controle. O exemplo a seguir exige um controle nativo do Excel chamado `Fruits` em uma planilha.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#23](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#23)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#23](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#23)]
 
 ### <a name="to-sort-data-in-a-listobject-control"></a>Para classificar dados em um controle ListObject
 
-1.  Chame o <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A> método da <xref:Microsoft.Office.Tools.Excel.ListObject.Range%2A> propriedade do Excel nativo <xref:Microsoft.Office.Interop.Excel.ListObject> controle. O exemplo a seguir pressupõe que você tenha um arquivo do Excel nativo <xref:Microsoft.Office.Interop.Excel.ListObject> controle chamado `fruitList` na planilha ativa.
+1. Chame o <xref:Microsoft.Office.Interop.Excel.Range.Sort%2A> método da <xref:Microsoft.Office.Tools.Excel.ListObject.Range%2A> propriedade do Excel nativo <xref:Microsoft.Office.Interop.Excel.ListObject> controle. O exemplo a seguir pressupõe que você tenha um arquivo do Excel nativo <xref:Microsoft.Office.Interop.Excel.ListObject> controle chamado `fruitList` na planilha ativa.
 
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#24](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#24)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#24](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#24)]

@@ -12,12 +12,12 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 caps.latest.revision: 24
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd89520cb976cb6deaca957d97f952e4baa71def
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 986a392dc381b972c9e4d4bfa6dda06fe1aa878e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928083"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087736"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informações de parâmetro em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Informações de parâmetro do IntelliSense é uma dica de ferramenta que exibe 
  O <xref:Microsoft.VisualStudio.Package.TokenTriggers> valor de gatilho inicia uma chamada para o <xref:Microsoft.VisualStudio.Package.Source.MethodTip%2A> método, que por sua vez chama o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analisador de método com um motivo de análise de <xref:Microsoft.VisualStudio.Package.ParseReason>. Se o analisador determina se o identificador antes de começar a lista de parâmetros de caractere é um nome de método reconhecido, ele retorna uma lista de assinaturas de método em correspondentes a <xref:Microsoft.VisualStudio.Package.AuthoringScope> objeto. Se forem encontradas quaisquer assinaturas de método, a dica de ferramenta de informações do parâmetro é exibida com a primeira assinatura na lista. Esta dica de ferramenta, em seguida, é atualizada conforme mais da assinatura é digitado. Quando o caractere de final de lista de parâmetro é digitado, a dica de ferramenta de informações do parâmetro é removida do modo de exibição.  
   
 > [!NOTE]
->  Para garantir que a dica de ferramenta de informações do parâmetro está formatada corretamente, você deve substituir as propriedades no <xref:Microsoft.VisualStudio.Package.Methods> classe para fornecer os caracteres apropriados. A base <xref:Microsoft.VisualStudio.Package.Methods> pressupõe que a classe C# – assinatura do método de estilo. Consulte o <xref:Microsoft.VisualStudio.Package.Methods> classe para obter detalhes sobre como isso pode ser feito.  
+>  Para garantir que a dica de ferramenta de informações do parâmetro está formatada corretamente, você deve substituir as propriedades no <xref:Microsoft.VisualStudio.Package.Methods> classe para fornecer os caracteres apropriados. A base <xref:Microsoft.VisualStudio.Package.Methods> pressupõe que a classe c# – assinatura do método de estilo. Consulte o <xref:Microsoft.VisualStudio.Package.Methods> classe para obter detalhes sobre como isso pode ser feito.  
   
 ## <a name="enabling-support-for-the-parameter-info"></a>Habilitando o suporte para as informações de parâmetro  
  Para dar suporte a dicas de ferramenta de informações do parâmetro, você deve definir a `ShowCompletion` chamado parâmetro do <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> para `true`. O serviço de linguagem lê o valor desta entrada de registro do <xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableCodeSense%2A> propriedade.  
@@ -113,10 +113,10 @@ testfunc("a string",3);
   
  As etapas que usa o analisador são descritas abaixo:  
   
-1.  As chamadas de analisador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> com o texto "testfunc".  
+1. As chamadas de analisador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartName%2A> com o texto "testfunc".  
   
-2.  As chamadas de analisador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.  
+2. As chamadas de analisador <xref:Microsoft.VisualStudio.Package.AuthoringSink.StartParameters%2A>.  
   
-3.  As chamadas de analisador <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.  
+3. As chamadas de analisador <xref:Microsoft.VisualStudio.Package.AuthoringSink.NextParameter%2A>.  
   
-4.  As chamadas de analisador <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.
+4. As chamadas de analisador <xref:Microsoft.VisualStudio.Package.AuthoringSink.EndParameters%2A>.

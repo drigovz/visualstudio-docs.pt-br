@@ -14,23 +14,23 @@ ms.assetid: 5d88c93d-e5b5-4b11-9bb5-bf1a5e41ccc3
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 09027661b07bbc489dff4985d3858eb8366437a7
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 501496c4f1bb929308ffbb75c6572de3d3f5b33b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842202"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115088"
 ---
 # <a name="object-expected"></a>Objeto esperado
 Você tentou invocar um método ou propriedade em um objeto de um tipo diferente de `Object`, ou passou um argumento de um tipo diferente de `Object` quando um `Object` era necessário.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Invoque apenas o método ou propriedade em objetos do tipo `Object`.  
+- Invoque apenas o método ou propriedade em objetos do tipo `Object`.  
   
--   Se o erro ocorrer para um argumento não objeto, passe um objeto do tipo `Object`.  
+- Se o erro ocorrer para um argumento não objeto, passe um objeto do tipo `Object`.  
   
--   Verifique se uma referência indefinida ou nula está sendo invocada em vez de um objeto do tipo `Object`.  
+- Verifique se uma referência indefinida ou nula está sendo invocada em vez de um objeto do tipo `Object`.  
   
      Por exemplo, se você receber esse erro em myVar no código a seguir:  
   

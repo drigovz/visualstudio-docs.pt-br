@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 64c7bc0f5b9aa9b23aa940583cebcd3e202e6487
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 9c691eea7417e882ee3b73e9f2adc538714b486a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653639"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094653"
 ---
 # <a name="xml-editor-intellisense-features"></a>Recursos do IntelliSense o editor XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,19 +85,19 @@ O editor XML fornece os recursos do IntelliSense comparáveis a outros editores 
   
  O editor XML faz isso para os seguintes itens:  
   
--   Início correspondente e marcas de fim.  
+- Início correspondente e marcas de fim.  
   
--   Qualquer par de "\<" ou ">" colchetes angulares.  
+- Qualquer par de "\<" ou ">" colchetes angulares.  
   
--   Início e fim de comentários.  
+- Início e fim de comentários.  
   
--   Início e final de instrução de processamento.  
+- Início e final de instrução de processamento.  
   
--   Início e fim de blocos CDATA.  
+- Início e fim de blocos CDATA.  
   
--   Início e fim de declarações de DTD.  
+- Início e fim de declarações de DTD.  
   
--   Abrindo e fechando aspas em atributos.  
+- Abrindo e fechando aspas em atributos.  
   
 ## <a name="modifying-the-intellisense-options"></a>Alterando as opções do IntelliSense  
  Os recursos do IntelliSense e de preenchimento automático são ativados por padrão. No entanto, você pode alterar isso modificando suas configurações de opções de ferramentas.  
@@ -112,11 +112,11 @@ O editor XML fornece os recursos do IntelliSense comparáveis a outros editores 
   
 #### <a name="to-change-the-auto-completion-behavior"></a>Para alterar o comportamento de preenchimento automático  
   
-1.  Selecione **Opções** no menu **Ferramentas**.  
+1. Selecione **Opções** no menu **Ferramentas**.  
   
-2.  Expandir **Editor de texto**, expanda **XML**e selecione **diversos**.  
+2. Expandir **Editor de texto**, expanda **XML**e selecione **diversos**.  
   
-3.  Fazer alterações para o **AutoInserção** seção e clique em **Okey**.  
+3. Fazer alterações para o **AutoInserção** seção e clique em **Okey**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Editor de XML](../xml-tools/xml-editor.md)   

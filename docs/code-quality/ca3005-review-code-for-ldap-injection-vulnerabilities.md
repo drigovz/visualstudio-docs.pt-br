@@ -1,5 +1,5 @@
 ---
-title: 'CA3005: Examine o código para vulnerabilidades de injeção de LDAP'
+title: 'CA3005: Examinar código quanto a vulnerabilidades de injeção de LDAP'
 ms.date: 04/03/2019
 ms.topic: reference
 author: dotpaul
@@ -11,13 +11,13 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: 38c28153fa513c4f4db5b3a7833d279674f66734
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018456"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110366"
 ---
-# <a name="ca3005-review-code-for-ldap-injection-vulnerabilities"></a>CA3005: Examine o código para vulnerabilidades de injeção de LDAP
+# <a name="ca3005-review-code-for-ldap-injection-vulnerabilities"></a>CA3005: Examinar código quanto a vulnerabilidades de injeção de LDAP
 
 |||
 |-|-|

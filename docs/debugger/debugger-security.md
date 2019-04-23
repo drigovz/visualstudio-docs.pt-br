@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d23f3c2677f1e99a80b5a3f05d1f6f4f69294e27
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 384d7b3488e6ef90994e24e95fbe7a516428e2bd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56707361"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092351"
 ---
 # <a name="debugger-security"></a>Segurança do depurador
 A capacidade de depurar outro processo oferece poderes extremamente amplos que você não teria de outra forma, especialmente ao depurar remotamente. Um depurador mal-intencionado pode impor danos extensivos no computador que está sendo depurado.
@@ -37,7 +37,7 @@ A capacidade de depurar outro processo oferece poderes extremamente amplos que v
 ### <a name="managed-debugging-security"></a>Segurança de depuração gerenciada
  Aqui estão algumas recomendações gerais que se aplicam a todas as depurações gerenciadas.
 
-- Tenha cuidado ao anexar ao processo de um usuário não confiável: quando você faz isso, pressupõe que ele seja confiável. Quando você tenta anexar a um processo de usuário não confiável, uma caixa de diálogo de confirmação de aviso de segurança será exibida perguntando se você deseja anexar ao processo. Os "usuários confiáveis" incluem você e um conjunto de usuários padrão, comumente definidos em computadores que tenham o .NET Framework instalado, por exemplo, **aspnet**, **localsystem**, **networkservice** e **localservice**. Para obter mais informações, consulte [aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou se você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- Tenha cuidado ao anexar ao processo de um usuário não confiável: quando você faz isso, pressupõe que ele seja confiável. Quando você tenta anexar a um processo de usuário não confiável, uma caixa de diálogo de confirmação de aviso de segurança será exibida perguntando se você deseja anexar ao processo. Os "usuários confiáveis" incluem você e um conjunto de usuários padrão, comumente definidos em computadores que tenham o .NET Framework instalado, por exemplo, **aspnet**, **localsystem**, **networkservice** e **localservice**. Para obter mais informações, consulte [aviso de segurança: A anexação a um processo pertencente a um usuário não confiável pode ser perigosa. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md).
 
 - Tenha cuidado ao baixar um projeto fora da Internet e carregá-lo no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Isso é muito arriscado de fazer mesmo sem depuração. Quando você fizer isso, estará supondo que o projeto e o código que contém sejam confiáveis.
 
@@ -59,11 +59,11 @@ A capacidade de depurar outro processo oferece poderes extremamente amplos que v
 ### <a name="web-services-debugging-security"></a>Segurança de depuração de serviços Web
  É mais seguro depurar localmente, mas como você provavelmente não terá o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] instalado no servidor Web, a depuração local não poderá ser prática. Em geral, depurar serviços Web é feito remotamente, exceto durante o desenvolvimento, de modo que as recomendações para a segurança de depuração remota também se aplicarão à depuração de serviços Web. Aqui estão algumas práticas recomendadas adicionais. Para obter mais informações, consulte [depuração XML Web Services](https://msdn.microsoft.com/library/c900b137-9fbd-4f59-91b5-9c2c6ce06f00).
 
--   Não habilite a depuração em um servidor Web que tenha sido comprometido.
+- Não habilite a depuração em um servidor Web que tenha sido comprometido.
 
--   Verifique se você sabe que o servidor Web está seguro antes de depurá-lo. Se você não tiver certeza se ele está seguro, não o depure.
+- Verifique se você sabe que o servidor Web está seguro antes de depurá-lo. Se você não tiver certeza se ele está seguro, não o depure.
 
--   Tenha um cuidado especial se estiver depurando um serviço Web que está exposto na Internet.
+- Tenha um cuidado especial se estiver depurando um serviço Web que está exposto na Internet.
 
 ### <a name="external-components"></a>Componentes externos
  Conheça o status de confiança de componentes externos com os quais seu programa interage, especialmente se você não escreveu o código. Esteja ciente também dos componentes que o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ou o depurador podem usar.
@@ -71,7 +71,7 @@ A capacidade de depurar outro processo oferece poderes extremamente amplos que v
 ### <a name="symbols-and-source-code"></a>Símbolos e código-fonte
  As duas ferramentas do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que demandam preocupações com segurança são as seguintes:
 
-- O Servidor de Origem, que fornece versões do código-fonte de um repositório de códigos-fonte. É útil quando você não tem a versão atual do código-fonte de um programa. [Aviso de segurança: o depurador deve executar o comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+- O Servidor de Origem, que fornece versões do código-fonte de um repositório de códigos-fonte. É útil quando você não tem a versão atual do código-fonte de um programa. [Aviso de segurança: O depurador precisa executar um comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
 
 - O servidor do símbolo, que é usado para fornecer os símbolos necessárias para depurar uma falha durante uma chamada do sistema.
 
@@ -80,5 +80,5 @@ A capacidade de depurar outro processo oferece poderes extremamente amplos que v
 ## <a name="see-also"></a>Consulte também
 - [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
-- [Aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
-- [Aviso de segurança: o depurador deve executar o comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md)
+- [Aviso de segurança: A anexação a um processo pertencente a um usuário não confiável pode ser perigosa. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md)
+- [Aviso de segurança: O depurador deve executar o comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md)

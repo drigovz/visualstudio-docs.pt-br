@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6d338ee3660c4459510de7b01b42cb3670328e4c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 56ae0260b73d41e953fa25b74eae9b012604258a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923520"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106317"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>Erro: Só há suporte para a depuração de modo misto para processos x64 quando o Microsoft .NET Framework 4 ou superior é usado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ Para depurar código nativo e gerenciado misto em um processo de 64 bits, você 
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Execute uma das seguintes etapas:  
+- Execute uma das seguintes etapas:  
   
-    -   Atualize seu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] para a versão 4.  
+    - Atualize seu [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)] para a versão 4.  
   
-    -   Crie uma versão de 32 bits do aplicativo para depuração.  
+    - Crie uma versão de 32 bits do aplicativo para depuração.  
   
 ## <a name="see-also"></a>Consulte também  
  [Configurar as ferramentas remotas no dispositivo](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c)

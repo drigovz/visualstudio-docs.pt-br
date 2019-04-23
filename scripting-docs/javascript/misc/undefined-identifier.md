@@ -14,25 +14,25 @@ ms.assetid: 8c8000d9-dd14-487e-922d-98430024a0f6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 33d659b1c5dddc05d08088e876cb5661c1694766
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ee928a945081d1ac1369a71d11f74f2c5db2b365
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840504"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097096"
 ---
 # <a name="undefined-identifier"></a>Identificador indefinido
 Você tentou usar um identificador que o [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] compilador não reconhece. O valor indefinido é retornado sempre que você usa:  
   
--   uma variável que não existe  
+- uma variável que não existe  
   
--   uma variável que foi declarada, mas nunca teve um valor atribuído a ele,  
+- uma variável que foi declarada, mas nunca teve um valor atribuído a ele,  
   
--   uma propriedade de objeto que não existe.  
+- uma propriedade de objeto que não existe.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Declare a variável com um **var** instrução (como em `var` x;).  
+- Declare a variável com um **var** instrução (como em `var` x;).  
   
 ## <a name="see-also"></a>Consulte também  
  [Variáveis](../../javascript/variables-javascript.md)   

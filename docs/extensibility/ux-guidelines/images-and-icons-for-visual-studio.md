@@ -8,32 +8,32 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 272d9bd9b1e54c6ff97b522375b773002e93dd49
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: d57c06cbc465537e0ac523c8133a718369b5ea69
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683136"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087788"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Imagens e ícones para o Visual Studio
-##  <a name="BKMK_ImageUseInVisualStudio"></a> Uso de imagens no Visual Studio
+## <a name="BKMK_ImageUseInVisualStudio"></a> Uso de imagens no Visual Studio
  Antes de criar a arte final, considere fazer uso de mais de 1.000 imagens na [biblioteca de imagens do Visual Studio](http://www.microsoft.com/en-my/download/details.aspx?id=35825).
 
 ### <a name="types-of-images"></a>Tipos de imagens
 
--   **Ícones**. Imagens pequenas que aparecem nos comandos, hierarquias, modelos e assim por diante. O tamanho do ícone padrão usado no Visual Studio é um arquivo PNG de 16 x 16. Ícones produzidas pelo serviço de imagem automaticamente geram o formato XAML para suporte ao HDPI.
+- **Ícones**. Imagens pequenas que aparecem nos comandos, hierarquias, modelos e assim por diante. O tamanho do ícone padrão usado no Visual Studio é um arquivo PNG de 16 x 16. Ícones produzidas pelo serviço de imagem automaticamente geram o formato XAML para suporte ao HDPI.
 
      **OBSERVAÇÃO:** Embora as imagens são usadas no sistema de menu, você não deve criar um ícone para cada comando. Consultar [Menus e comandos para o Visual Studio](../../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md) para ver se o comando deve obter um ícone.
 
--   **Miniaturas.** Imagens usadas na área de visualização da caixa de diálogo, como a caixa de diálogo Novo projeto.
+- **Miniaturas.** Imagens usadas na área de visualização da caixa de diálogo, como a caixa de diálogo Novo projeto.
 
--   **Imagens de caixa de diálogo.** Imagens que aparecem em caixas de diálogo ou assistentes, como gráficos descritivos ou indicadores de mensagem. Use com pouca frequência e somente quando necessário para ilustrar um conceito difícil ou obter a atenção do usuário (aviso de alerta,).
+- **Imagens de caixa de diálogo.** Imagens que aparecem em caixas de diálogo ou assistentes, como gráficos descritivos ou indicadores de mensagem. Use com pouca frequência e somente quando necessário para ilustrar um conceito difícil ou obter a atenção do usuário (aviso de alerta,).
 
--   **Imagens animadas.** Usado em caixas de diálogo de operação, barras de status e indicadores de progresso.
+- **Imagens animadas.** Usado em caixas de diálogo de operação, barras de status e indicadores de progresso.
 
--   **Cursores.** Usado para indicar se uma operação é permitida usar o mouse, em que um objeto pode ser descartado e assim por diante.
+- **Cursores.** Usado para indicar se uma operação é permitida usar o mouse, em que um objeto pode ser descartado e assim por diante.
 
-##  <a name="BKMK_IconDesign"></a> Design de ícone
+## <a name="BKMK_IconDesign"></a> Design de ícone
 
 ### <a name="overview"></a>Visão geral
  O Visual Studio usa ícones de estilo moderno, que têm geometria limpa e um equilíbrio 50/50 positivos/negativos (claro/escuro) e usam metáforas diretas e legível. Design de ícone crucial pontos giram em torno de clareza, simplificação e contexto.
@@ -210,19 +210,19 @@ ms.locfileid: "56683136"
 
 #### <a name="file-types"></a>Tipos de arquivo
 
--   **PNG de 32 bits:** o formato preferencial para ícones. Um formato de arquivo de compactação sem perdas de dados que pode armazenar uma imagem de varredura única (pixel). arquivos PNG de 32 bits dão suporte a transparência de canal alfa, correção de gama e entrelaçamento.
+- **PNG de 32 bits:** o formato preferencial para ícones. Um formato de arquivo de compactação sem perdas de dados que pode armazenar uma imagem de varredura única (pixel). arquivos PNG de 32 bits dão suporte a transparência de canal alfa, correção de gama e entrelaçamento.
 
--   **BMP de 32 bits:** para controles não-WPF. Também chamado de XP ou colorido, 32-bit BMP é um formato de imagem RGB/A, uma imagem de true color com transparência de uma canal alfa. O canal alfa é uma camada de transparência designada do Adobe Photoshop, em seguida, é salvo dentro do bitmap como um adicional (quarta) canal de cor. Um plano de fundo preto é adicionado durante a produção de arte final para todos os arquivos BMP de 32 bits para fornecer uma indicação visual rápida sobre a intensidade de cor. Este plano de fundo preto representa a área a ser mascarado na interface do usuário.
+- **BMP de 32 bits:** para controles não-WPF. Também chamado de XP ou colorido, 32-bit BMP é um formato de imagem RGB/A, uma imagem de true color com transparência de uma canal alfa. O canal alfa é uma camada de transparência designada do Adobe Photoshop, em seguida, é salvo dentro do bitmap como um adicional (quarta) canal de cor. Um plano de fundo preto é adicionado durante a produção de arte final para todos os arquivos BMP de 32 bits para fornecer uma indicação visual rápida sobre a intensidade de cor. Este plano de fundo preto representa a área a ser mascarado na interface do usuário.
 
--   **ICO de 32 bits:** para ícones de projeto e adicionar o Item. Todos os arquivos ICO são cor true de 32 bits com transparência de canal alfa (A/RGB). Como os arquivos ICO podem armazenar vários tamanhos e intensidades de cores, ícones do Vista costumam ser em um formato ICO contendo 16 x 16, 32 x 32, 48 x 48 e tamanhos de imagem de 256 x 256. Para exibir corretamente no Windows Explorer, arquivos ICO devem ser salvo para baixo a intensidade de cor de 24 bits e de 8 bits para cada tamanho de imagem.
+- **ICO de 32 bits:** para ícones de projeto e adicionar o Item. Todos os arquivos ICO são cor true de 32 bits com transparência de canal alfa (A/RGB). Como os arquivos ICO podem armazenar vários tamanhos e intensidades de cores, ícones do Vista costumam ser em um formato ICO contendo 16 x 16, 32 x 32, 48 x 48 e tamanhos de imagem de 256 x 256. Para exibir corretamente no Windows Explorer, arquivos ICO devem ser salvo para baixo a intensidade de cor de 24 bits e de 8 bits para cada tamanho de imagem.
 
--   **XAML:** para superfícies de design e os adornos de Windows. Ícones XAML são arquivos de imagem baseado em vetor que dão suporte ao dimensionamento, girar, arquivamento e transparência. Eles não são comuns no Visual Studio hoje, mas estão se tornando mais populares devido à sua flexibilidade.
+- **XAML:** para superfícies de design e os adornos de Windows. Ícones XAML são arquivos de imagem baseado em vetor que dão suporte ao dimensionamento, girar, arquivamento e transparência. Eles não são comuns no Visual Studio hoje, mas estão se tornando mais populares devido à sua flexibilidade.
 
--   **SVG**
+- **SVG**
 
--   **BMP de 24 bits:** para a barra de comando do Visual Studio. Um formato de imagem RGB true color, 24 bits BMP é uma convenção de ícone que cria uma camada de transparência usando magenta (255 = R, G = 0, B = 255) como uma chave de cor para uma camada de transparência de toque no-out. Em um BMP com 24 bits, todas as superfícies magenta são exibidas usando a cor do plano de fundo.
+- **BMP de 24 bits:** para a barra de comando do Visual Studio. Um formato de imagem RGB true color, 24 bits BMP é uma convenção de ícone que cria uma camada de transparência usando magenta (255 = R, G = 0, B = 255) como uma chave de cor para uma camada de transparência de toque no-out. Em um BMP com 24 bits, todas as superfícies magenta são exibidas usando a cor do plano de fundo.
 
--   **GIF de 24 bits:** para a barra de comando do Visual Studio. Um formato de imagem RGB true color que dá suporte à transparência. Arquivos GIF geralmente são usados em arte final do assistente e animações de GIF.
+- **GIF de 24 bits:** para a barra de comando do Visual Studio. Um formato de imagem RGB true color que dá suporte à transparência. Arquivos GIF geralmente são usados em arte final do assistente e animações de GIF.
 
 ### <a name="icon-construction"></a>Construção de ícone
  O menor tamanho de ícone no Visual Studio é 16 x 16. O maior em comum o uso é 32 x 32. Tenha em mente, não para preencher todo o quadro de 16 x 16, 24 x 24 ou 32 x 32 durante a criação de um ícone. Construção de ícone uniforme, legível, é essencial para o reconhecimento de usuários. Seguem os seguintes pontos ao criar ícones.
@@ -244,18 +244,18 @@ ms.locfileid: "56683136"
 
  Para obter mais informações sobre como usar cores de ícones do Visual Studio, consulte [usando a cor em imagens](../../extensibility/ux-guidelines/images-and-icons-for-visual-studio.md#BKMK_UsingColorInImages).
 
-##  <a name="BKMK_UsingColorInImages"></a> Usando a cor em imagens
+## <a name="BKMK_UsingColorInImages"></a> Usando a cor em imagens
 
 ### <a name="overview"></a>Visão geral
  Os ícones no Visual Studio são principalmente monocromáticos. Cor é reservada para transmitir informações específicas e nunca para a decoração. Cor é usada:
 
--   para indicar uma ação
+- para indicar uma ação
 
--   para alertar o usuário para uma notificação de status
+- para alertar o usuário para uma notificação de status
 
--   para designar a afiliação do idioma
+- para designar a afiliação do idioma
 
--   para diferenciar itens dentro do IntelliSense
+- para diferenciar itens dentro do IntelliSense
 
 ### <a name="accessibility"></a>Acessibilidade
  Diretrizes de conformidade do Visual Studio exigem que todos os ícones de check-in na passagem de produto os requisitos de acessibilidade para cor e contraste. As cores na paleta de linguagem visual foram testadas e atenderam a esses requisitos.
@@ -318,7 +318,7 @@ ms.locfileid: "56683136"
 
 ||||||
 |-|-|-|-|-|
-|![Run icon](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />Executar|![Ícone de interrupção](../../extensibility/ux-guidelines/media/0405-19_stop.png "19_Stop 0405")<br />Stop|![Excluir ícone](../../extensibility/ux-guidelines/media/0405-20_delete.png "20_Delete 0405")<br />Excluir|![Ícone Salvar](../../extensibility/ux-guidelines/media/0405-21_save.png "21_Save 0405")<br />Salvar|![Ícone de voltar de navegar](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "22_NavigateBack 0405")<br />Navegação regressiva|
+|![Run icon](../../extensibility/ux-guidelines/media/0405-03_actionmodifierrun.png "0405-03_ActionModifierRun")<br />Executar|![Ícone de interrupção](../../extensibility/ux-guidelines/media/0405-19_stop.png "19_Stop 0405")<br />Stop|![Excluir ícone](../../extensibility/ux-guidelines/media/0405-20_delete.png "20_Delete 0405")<br />Excluir|![Ícone Salvar](../../extensibility/ux-guidelines/media/0405-21_save.png "21_Save 0405")<br />Salvar|![Ícone de voltar de navegar](../../extensibility/ux-guidelines/media/0405-22_navigateback.png "22_NavigateBack 0405")<br />Voltar|
 
 ### <a name="code-hierarchy-palette"></a>Paleta de hierarquia de código
 
@@ -328,7 +328,7 @@ ms.locfileid: "56683136"
 |-----------|----------|--------------------------|------------|-------------|
 |Pastas|Pasta|DCB67A / 220,182,122|![Swatch DCB67A](../../extensibility/ux-guidelines/media/0405_dcb67a.png "0405_DCB67A")|![Ícone de pasta de cor](../../extensibility/ux-guidelines/media/0405-23_foldercolor.png "23_FolderColor 0405")|
 
-#### <a name="visual-studio-languages"></a>Idiomas do Visual Studio
+#### <a name="visual-studio-languages"></a>Linguagens do Visual Studio
  Cada um dos idiomas comum ou plataformas disponíveis no Visual Studio tem uma cor associada. Essas cores são usadas no ícone de base, ou em modificadores de linguagem que aparecem no canto superior direito dos ícones compostas.
 
 |Uso|Nome|Valor (todos os temas)|Swatch|

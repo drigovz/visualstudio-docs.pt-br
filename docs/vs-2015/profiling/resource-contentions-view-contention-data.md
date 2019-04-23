@@ -13,12 +13,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f98cad59356b48be185ba8e73d91bd3d368ff2a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c6a7d4d1e80323b4d260ac558661c222f72ec3c1
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54804128"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108679"
 ---
 # <a name="resource-contentions-view---contention-data"></a>Exibição de contenções de recurso – Dados de contenção
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ A exibição Contenção de Recursos lista os dados de contenção para os recur
 ### <a name="function-values"></a>Valores de Função  
  Valores de função são baseados nas instâncias da função que ocorreram no caminho de execução representado na árvore de chamadas.  
   
--   Valores exclusivos baseiam-se nos eventos que ocorreram quando a função estava executando instruções no corpo da função. Eventos que ocorreram nas funções que foram chamadas pelas função não são incluídos nos valores exclusivos.  
+- Valores exclusivos baseiam-se nos eventos que ocorreram quando a função estava executando instruções no corpo da função. Eventos que ocorreram nas funções que foram chamadas pelas função não são incluídos nos valores exclusivos.  
   
--   Valores inclusivos baseiam-se nos eventos que ocorreram quando a função ou uma função chamada por ela, estava em execução.  
+- Valores inclusivos baseiam-se nos eventos que ocorreram quando a função ou uma função chamada por ela, estava em execução.  
   
 ### <a name="percentage-values"></a>Valores de percentual  
  Valores de percentual baseiam-se em eventos de tempo ou de contenção total nos dados de criação de perfil. Se o relatório ou a exibição da execução de criação de perfil for filtrado, somente o tempo bloqueado e as contenções nos dados filtrados serão usadas como o valor total.  

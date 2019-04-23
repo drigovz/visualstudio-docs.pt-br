@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd5755f2b0bf8fe4379d503d952341f176c0b870
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 648bf8baebc8a0a2f42c69bc698d9f2edd729615
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679262"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100242"
 ---
 # <a name="localize-menu-commands"></a>Localizar os comandos de menu
 Você pode fornecer o texto localizado para comandos de menu e barra de ferramentas criando localizada *VSCT* localizadas e arquivos *. resx* arquivos para o VSPackage e, em seguida, atualizar os arquivos de projeto incorporar o alterações.
@@ -76,19 +76,19 @@ Você pode fornecer o texto localizado para comandos de menu e barra de ferramen
 ## <a name="localize-other-text-resources"></a>Localizar outros recursos de texto
  Recursos de texto diferentes nomes de comando são definidos no recurso (*. resx*) arquivos.
 
-1.  Renomeie *VSPackage.resx* à *VSPackage.en resx*.
+1. Renomeie *VSPackage.resx* à *VSPackage.en resx*.
 
-2.  Faça uma cópia do *VSPackage.en resx* idioma localizado do arquivo para cada um.
+2. Faça uma cópia do *VSPackage.en resx* idioma localizado do arquivo para cada um.
 
      Nome de cada cópia *VSPackage. { Localidade} resx*, onde *{localidade}* é um nome de cultura específica.
 
-3.  Renomeie *Resources* à *Resources resx*.
+3. Renomeie *Resources* à *Resources resx*.
 
-4.  Faça uma cópia do *Resources resx* idioma localizado do arquivo para cada um.
+4. Faça uma cópia do *Resources resx* idioma localizado do arquivo para cada um.
 
      Nome de cada cópia *recursos. { Localidade} resx*, onde *{localidade}* é um nome de cultura específica.
 
-5.  Abra cada *. resx* arquivo para modificar a cadeia de caracteres de valores conforme apropriado para o determinado idioma e cultura. O exemplo a seguir mostra a definição de recurso localizado para a barra de título de uma janela de ferramentas.
+5. Abra cada *. resx* arquivo para modificar a cadeia de caracteres de valores conforme apropriado para o determinado idioma e cultura. O exemplo a seguir mostra a definição de recurso localizado para a barra de título de uma janela de ferramentas.
 
      [*Resources.en-US.resx*]
 
@@ -110,9 +110,9 @@ Você pode fornecer o texto localizado para comandos de menu e barra de ferramen
 ## <a name="incorporate-localized-resources-into-the-project"></a>Incorporar recursos localizados do projeto
  Você deve modificar o *assemblyinfo.cs* arquivo e o arquivo de projeto para incorporar os recursos localizados.
 
-1.  Dos **propriedades** nó no **Gerenciador de soluções**, abra *assemblyinfo.cs* ou *AssemblyInfo* no editor.
+1. Dos **propriedades** nó no **Gerenciador de soluções**, abra *assemblyinfo.cs* ou *AssemblyInfo* no editor.
 
-2.  Adicione a seguinte entrada.
+2. Adicione a seguinte entrada.
 
     ```csharp
     [assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
@@ -120,13 +120,13 @@ Você pode fornecer o texto localizado para comandos de menu e barra de ferramen
 
      Isso define o inglês dos EUA como o idioma padrão.
 
-3.  Descarregue o projeto.
+3. Descarregue o projeto.
 
-4.  Abra o arquivo de projeto no editor.
+4. Abra o arquivo de projeto no editor.
 
-5.  Localize o `ItemGroup` elemento que contém `EmbeddedResource` elementos.
+5. Localize o `ItemGroup` elemento que contém `EmbeddedResource` elementos.
 
-6.  No `EmbeddedResource` elemento que chama *VSPackage.en resx*, substitua o `ManifestResourceName` elemento com um `LogicalName` elemento, definido como `VSPackage.en-US.Resources`, da seguinte maneira.
+6. No `EmbeddedResource` elemento que chama *VSPackage.en resx*, substitua o `ManifestResourceName` elemento com um `LogicalName` elemento, definido como `VSPackage.en-US.Resources`, da seguinte maneira.
 
     ```xml
     <EmbeddedResource Include="VSPackage.en-US.resx">
@@ -135,9 +135,9 @@ Você pode fornecer o texto localizado para comandos de menu e barra de ferramen
     </EmbeddedResource>
     ```
 
-7.  Para cada idioma localizado, copie o `EmbeddedResource` elemento para `VsPackage.en-US`e defina as **Include** atributo e **LogicalName** elemento da cópia para a localidade de destino, conforme mostrado no exemplo a seguir exemplo.
+7. Para cada idioma localizado, copie o `EmbeddedResource` elemento para `VsPackage.en-US`e defina as **Include** atributo e **LogicalName** elemento da cópia para a localidade de destino, conforme mostrado no exemplo a seguir exemplo.
 
-8.  Para cada um localizado `VSCTCompile` elemento, adicione uma `ResourceName` elemento que aponta para `Menus.ctmenu`, conforme mostrado no exemplo a seguir.
+8. Para cada um localizado `VSCTCompile` elemento, adicione uma `ResourceName` elemento que aponta para `Menus.ctmenu`, conforme mostrado no exemplo a seguir.
 
     ```xml
     <ItemGroup>

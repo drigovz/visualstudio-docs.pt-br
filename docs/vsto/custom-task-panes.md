@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f034797a773602f714ce69193ce6987ba9560bf5
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526693"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106196"
 ---
 # <a name="custom-task-panes"></a>Painéis de tarefas personalizados
   Painéis de tarefas estão os painéis de interface do usuário que normalmente são encaixados em um dos lados de uma janela em um aplicativo do Microsoft Office. Painéis de tarefas personalizados oferecem uma maneira de criar seu próprio painel de tarefas e fornecer aos usuários uma interface familiar para acessar recursos da sua solução. Por exemplo, a interface pode conter controles que executar o código para modificar documentos ou exibir dados de uma fonte de dados.
@@ -126,7 +126,7 @@ ms.locfileid: "57526693"
 
  O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpa automaticamente os recursos usados pelo painel de tarefas personalizado quando o suplemento do VSTO é descarregado. Não chame o <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> ou <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> métodos no `ThisAddIn_Shutdown` manipulador de eventos em seu projeto. Esses métodos lançará um <xref:System.ObjectDisposedException>, porque o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] limpa os recursos usados pelo <xref:Microsoft.Office.Tools.CustomTaskPane> antes do objeto `ThisAddIn_Shutdown` é chamado. Para obter mais informações sobre `ThisAddIn_Shutdown`, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md)
 
-##  <a name="Managing"></a> Gerenciar painéis de tarefas personalizados em várias janelas de aplicativo
+## <a name="Managing"></a> Gerenciar painéis de tarefas personalizados em várias janelas de aplicativo
  Quando você cria um painel de tarefas personalizado em um aplicativo que usa várias janelas para exibir documentos e outros itens, você precisará executar etapas adicionais para garantir que o painel de tarefas seja visível quando o usuário espera que ele seja.
 
  Painéis de tarefas personalizados em todos os aplicativos são associados uma janela de quadro do documento, que apresenta uma exibição de um documento ou item para o usuário. O painel de tarefas é visível somente quando a janela associada está visível. No entanto, nem todos os aplicativos usam janelas de quadro do documento da mesma maneira.
@@ -137,7 +137,7 @@ ms.locfileid: "57526693"
 
 - [Word, InfoPath e PowerPoint](#WordAndInfoPath)
 
-##  <a name="Outlook"></a> Outlook
+## <a name="Outlook"></a> Outlook
  Quando você cria um painel de tarefas personalizado para o Outlook, o painel de tarefas personalizado está associado uma janela de navegador ou Inspetor específica. Explorers são janelas que exibem o conteúdo de uma pasta e inspetores são janelas que exibem um item como uma mensagem de email ou uma tarefa.
 
  Se você quiser exibir um painel de tarefas personalizado com o windows Explorer ou o Inspetor vários, você precisa criar uma nova instância do painel de tarefas personalizado quando abre uma janela de navegador ou Inspetor. Para fazer isso, manipular um evento que é gerado quando uma janela de navegador ou Inspetor é criada e, em seguida, criar o painel de tarefas no manipulador de eventos. Você também pode manipular eventos de navegador e Inspetor para ocultar ou exibir os painéis de tarefas, dependendo de qual janela é visível.
@@ -167,7 +167,7 @@ ms.locfileid: "57526693"
 
  Se você não remover explicitamente o painel de tarefas personalizado, o windows Outlook podem exibir várias instâncias do painel de tarefas personalizado. Outlook recicla, às vezes, o windows e windows reciclados mantém referências a quaisquer painéis de tarefas personalizados que foram anexados a eles.
 
-##  <a name="WordAndInfoPath"></a> Word, InfoPath e PowerPoint
+## <a name="WordAndInfoPath"></a> Word, InfoPath e PowerPoint
  Word, InfoPath e PowerPoint exibem cada documento em uma janela de quadro de documento diferente. Quando você cria um painel de tarefas personalizado para esses aplicativos, o painel de tarefas personalizado está associado apenas um documento específico. Se o usuário abre um documento diferente, o painel de tarefas personalizado está oculto até que o documento anterior esteja visível novamente.
 
  Se você quiser exibir um painel de tarefas personalizado com vários documentos, crie uma nova instância do painel de tarefas personalizado quando o usuário cria um novo documento ou abre um documento existente. Para fazer isso, lidar com eventos que são gerados quando um documento é criado ou aberto e, em seguida, criar o painel de tarefas nos manipuladores de eventos. Você também pode manipular eventos de documento para ocultar ou exibir os painéis de tarefas, dependendo de qual documento está visível.
@@ -177,43 +177,43 @@ ms.locfileid: "57526693"
 ### <a name="word-events"></a>Eventos do Word
  Para monitorar o estado das janelas de documento no Word, você pode manipular os eventos a seguir:
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeClose>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentOpen>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.NewDocument>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.NewDocument>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowActivate>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowActivate>
 
--   <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>
+- <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.WindowDeactivate>
 
 ### <a name="infopath-events"></a>Eventos do InfoPath
  Para monitorar o estado das janelas de documento no InfoPath, você pode manipular os eventos a seguir:
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.NewXDocument>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowActivate>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.WindowDeactivate>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentBeforeClose>
 
--   <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>
+- <xref:Microsoft.Office.Interop.InfoPath._ApplicationEvents_Event.XDocumentOpen>
 
 ### <a name="powerpoint-events"></a>Eventos de PowerPoint
  Para monitorar o estado das janelas de documento no PowerPoint, você pode manipular os eventos a seguir:
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterNewPresentation](/previous-versions/office/developer/office-2010/ff761105(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.AfterPresentationOpen](/previous-versions/office/developer/office-2010/ff762843(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.NewPresentation](/previous-versions/office/developer/office-2010/ff761498(v%3doffice.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.PresentationOpen](/previous-versions/office/developer/office-2010/ff760423(v=office.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowActivate](/previous-versions/office/developer/office-2010/ff761153(v=office.14))
 
--   [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
+- [Microsoft.Office.Interop.PowerPoint.EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
 ## <a name="see-also"></a>Consulte também
 - [Como: Adicionar um painel de tarefas personalizado a um aplicativo](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)

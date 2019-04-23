@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56e8a9210b842d6fe63140f643ac3c0712cd100d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 18ea294c204f1512aaa3eeae904eed52edf8e9f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656759"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114139"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Caixa de diálogo Configurar Referência de Serviço
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,17 +34,17 @@ O **Configure Service Reference** caixa de diálogo permite que você configure 
   
 ## <a name="task-list"></a>Lista de Tarefas  
   
--   Para alterar o endereço em que um serviço WCF está hospedado, digite o novo endereço na **endereço** campo.  
+- Para alterar o endereço em que um serviço WCF está hospedado, digite o novo endereço na **endereço** campo.  
   
--   Para alterar o nível de acesso para classes em um cliente WCF, selecione uma palavra-chave de nível de acesso na **nível para as classes geradas de acesso** lista.  
+- Para alterar o nível de acesso para classes em um cliente WCF, selecione uma palavra-chave de nível de acesso na **nível para as classes geradas de acesso** lista.  
   
--   Para chamar os métodos de um serviço WCF de forma assíncrona, selecione a **gerar operações assíncronas** caixa de seleção.  
+- Para chamar os métodos de um serviço WCF de forma assíncrona, selecione a **gerar operações assíncronas** caixa de seleção.  
   
--   Para gerar tipos de contrato de mensagem em um cliente de WCF, selecione a **sempre gerar contratos de mensagem** caixa de seleção.  
+- Para gerar tipos de contrato de mensagem em um cliente de WCF, selecione a **sempre gerar contratos de mensagem** caixa de seleção.  
   
--   Para especificar os tipos de coleção de dicionário ou lista para um cliente WCF, selecione os tipos a partir de **tipo de coleção** e **tipo de coleção de dicionário** lista.  
+- Para especificar os tipos de coleção de dicionário ou lista para um cliente WCF, selecione os tipos a partir de **tipo de coleção** e **tipo de coleção de dicionário** lista.  
   
--   Para desabilitar o compartilhamento de tipo, desmarque a **reutilizar os tipos em assemblies referenciados** caixa de seleção. Para habilitar o compartilhamento para um subconjunto dos assemblies referenciados de tipo, selecione o **reutilizar tipos em assemblies consultados** caixas de seleção **reutilizar os tipos em assemblies referenciados especificados**e selecione o desejado referências na **lista de assemblies referenciados**.  
+- Para desabilitar o compartilhamento de tipo, desmarque a **reutilizar os tipos em assemblies referenciados** caixa de seleção. Para habilitar o compartilhamento para um subconjunto dos assemblies referenciados de tipo, selecione o **reutilizar tipos em assemblies consultados** caixas de seleção **reutilizar os tipos em assemblies referenciados especificados**e selecione o desejado referências na **lista de assemblies referenciados**.  
   
 ## <a name="uielement-list"></a>Lista UIElement  
  **Endereço**  

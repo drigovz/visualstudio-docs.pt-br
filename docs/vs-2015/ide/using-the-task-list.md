@@ -16,12 +16,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f912b17e235e92496fa8ffc573429b7708d9198d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 9c9526b2deaafb36e991afce6d29ace47f8564ba
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54801164"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091402"
 ---
 # <a name="using-the-task-list"></a>Usando a lista de tarefas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,54 +30,54 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
   
  Neste tópico:  
   
--   [A janela Lista de Tarefas](../ide/using-the-task-list.md#taskListWindow)  
+- [A janela Lista de Tarefas](../ide/using-the-task-list.md#taskListWindow)  
   
--   [Tarefas do usuário](../ide/using-the-task-list.md#userTasks)  
+- [Tarefas do usuário](../ide/using-the-task-list.md#userTasks)  
   
--   [Tokens e comentários](../ide/using-the-task-list.md#tokensComments)  
+- [Tokens e comentários](../ide/using-the-task-list.md#tokensComments)  
   
--   [Tokens personalizados](../ide/using-the-task-list.md#customTokens)  
+- [Tokens personalizados](../ide/using-the-task-list.md#customTokens)  
   
--   [Comentários TODO em C++](../ide/using-the-task-list.md#cppComments)  
+- [Comentários TODO em C++](../ide/using-the-task-list.md#cppComments)  
   
--   [Atalhos](../ide/using-the-task-list.md#shortcuts)  
+- [Atalhos](../ide/using-the-task-list.md#shortcuts)  
   
-##  <a name="taskListWindow"></a> A janela Lista de Tarefas  
+## <a name="taskListWindow"></a> A janela Lista de Tarefas  
  Quando a **Lista de Tarefas** é aberta, ela aparece na parte inferior da janela do aplicativo.  
   
 #### <a name="to-open-the-task-list"></a>Para abrir a Lista de Tarefas  
   
--   No menu **Exibir**, escolha **Lista de Tarefas** (Teclado: Ctrl+\\,T).  
+- No menu **Exibir**, escolha **Lista de Tarefas** (Teclado: Ctrl+\\,T).  
   
      ![Janela Lista de Tarefas](../ide/media/vs2015-task-list.png "vs2015_task_list")  
   
 #### <a name="to-change-the-sort-order-of-the-list"></a>Para alterar a ordem de classificação da lista  
   
--   Clique no cabeçalho de qualquer coluna. Para refinar ainda mais os resultados da pesquisa, pressione Shift e clique em um segundo cabeçalho de coluna.  
+- Clique no cabeçalho de qualquer coluna. Para refinar ainda mais os resultados da pesquisa, pressione Shift e clique em um segundo cabeçalho de coluna.  
   
      Se preferir, no menu de atalho, escolha **Classificar por** e escolha um cabeçalho. Para refinar ainda mais os resultados da pesquisa, pressione Shift e escolha um segundo cabeçalho.  
   
 #### <a name="to-show-or-hide-columns"></a>Para mostrar ou ocultar colunas  
   
--   No menu de atalho, escolha **Mostrar Colunas**. Escolha as colunas que você deseja mostrar ou ocultar.  
+- No menu de atalho, escolha **Mostrar Colunas**. Escolha as colunas que você deseja mostrar ou ocultar.  
   
 #### <a name="to-change-the-order-of-the-columns"></a>Para alterar a ordem das colunas  
   
--   Arraste o cabeçalho de qualquer coluna para o local desejado.  
+- Arraste o cabeçalho de qualquer coluna para o local desejado.  
   
-##  <a name="userTasks"></a> Tarefas do usuário  
+## <a name="userTasks"></a> Tarefas do usuário  
  O recurso de tarefa de usuário foi removido no Visual Studio 2015. Quando você abre uma solução que tem dados de tarefa de usuário do Visual Studio 2013 e anteriores no Visual Studio 2015, os dados de tarefa do usuário em seu arquivo .suo não serão afetados, mas as tarefas do usuário não serão exibidas na lista de tarefas.  
   
  Se você quiser continuar a acessar e atualizar os dados de tarefa do usuário, abra o projeto no Visual Studio 2013 e copie o conteúdo de quaisquer tarefas do usuário para sua ferramenta de gerenciamento de projeto preferida (como o Team Foundation Server).  
   
-##  <a name="tokensComments"></a> Tokens e comentários  
+## <a name="tokensComments"></a> Tokens e comentários  
  Um comentário no código precedido por um marcador de comentário e um token predefinido também será exibido na janela **Lista de Tarefas**. Por exemplo, o seguinte comentário do C# tem três partes distintas:  
   
--   O marcador de comentário (`//`)  
+- O marcador de comentário (`//`)  
   
--   O token, por exemplo (`TODO`)  
+- O token, por exemplo (`TODO`)  
   
--   O comentário (o restante do texto)  
+- O comentário (o restante do texto)  
   
 ```  
 // TODO: Load state from previously suspended application  
@@ -85,44 +85,44 @@ Use a **Lista de Tarefas** para rastrear comentários de código que usam tokens
   
  Uma vez que `TODO` é um token, esse comentário aparece como uma tarefa `TODO` na lista.  
   
-###  <a name="customTokens"></a> Tokens personalizados  
+### <a name="customTokens"></a> Tokens personalizados  
  Por padrão, o Visual Studio inclui os seguintes tokens: HACK, TODO, UNDONE, NOTE. Eles não diferenciam maiúsculas de minúsculas.  
   
  Também é possível criar seus próprios tokens personalizados.  
   
 ##### <a name="to-create-a-custom-token"></a>Para criar um token personalizado  
   
-1.  No menu **Ferramentas**, escolha **Opções**.  
+1. No menu **Ferramentas**, escolha **Opções**.  
   
-2.  Abra a pasta **Ambiente** e escolha **Lista de Tarefas**.  
+2. Abra a pasta **Ambiente** e escolha **Lista de Tarefas**.  
   
      A [Caixa de diálogo Lista de Tarefas, Ambiente, Opções](../ide/reference/task-list-environment-options-dialog-box.md) é exibida.  
   
      ![Lista de tarefas do Visual Studio](../ide/media/vs2015-task-list-options.png "vs2015_task_list_options")  
   
-3.  Na categoria **Tokens**, na caixa de texto **Nome**, insira o nome do seu token, por exemplo, “BUG”.  
+3. Na categoria **Tokens**, na caixa de texto **Nome**, insira o nome do seu token, por exemplo, “BUG”.  
   
-4.  Na lista suspensa **Prioridade**, escolha uma prioridade padrão para o novo token. Escolha o botão **Adicionar**.  
+4. Na lista suspensa **Prioridade**, escolha uma prioridade padrão para o novo token. Escolha o botão **Adicionar**.  
   
-###  <a name="cppComments"></a> Comentários TODO em C++  
+### <a name="cppComments"></a> Comentários TODO em C++  
  Por padrão, os comentários TODO em C++ são exibidos na janela **Lista de Tarefas**. Você pode alterar esse comportamento.  
   
 ##### <a name="to-turn-off-c-todo-comments"></a>Para desligar os comentários TODO em C++  
   
-1.  No menu **Ferramentas**, vá para **Opções &#124; Editor de Texto &#124; C/C++ &#124; Exibir &#124; Enumerar Tarefas de Comentário** e defina o valor como false.  
+1. No menu **Ferramentas**, vá para **Opções &#124; Editor de Texto &#124; C/C++ &#124; Exibir &#124; Enumerar Tarefas de Comentário** e defina o valor como false.  
   
-2.  Na caixa de diálogo **Opções**, abra **Editor de Texto**.  
+2. Na caixa de diálogo **Opções**, abra **Editor de Texto**.  
   
-3.  Em **C/C++**, escolha **Exibir** e defina **Enumerar Tarefas em Comentários** como **False**.  
+3. Em **C/C++**, escolha **Exibir** e defina **Enumerar Tarefas em Comentários** como **False**.  
   
-##  <a name="shortcuts"></a> Atalhos  
+## <a name="shortcuts"></a> Atalhos  
  Um *atalho* é um indicador no código que é controlado na **Lista de Tarefas**; ele tem um ícone diferente de um indicador normal. Clique duas vezes no atalho na **Lista de Tarefas** para ir até o local correspondente no código.  
   
  ![Ícone de atalho de lista de tarefas do Visual Studio](../ide/media/vs2015-task-list-bookmark.png "vs2015_task_list_bookmark")  
   
 #### <a name="to-create-a-shortcut"></a>Para criar um atalho  
   
--   Insira o ponteiro no código onde deseja colocar um atalho. Escolha **Editar &#124; Indicadores &#124; Adicionar Atalho da Lista de Tarefas** ou pressione (Teclado: Ctrl+K, Ctrl+H).  
+- Insira o ponteiro no código onde deseja colocar um atalho. Escolha **Editar &#124; Indicadores &#124; Adicionar Atalho da Lista de Tarefas** ou pressione (Teclado: Ctrl+K, Ctrl+H).  
   
      Para navegar pelos atalhos no código, escolha um atalho na lista e escolha **Próxima Tarefa** ou **Tarefa Anterior** no menu de atalho.  
   

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0c39a82a6b381296c47dcbf059b22e351dba3afc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1da471ff1911cdda4a62ef9c150236b3a225342f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646077"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110161"
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>Como: Ocultar texto em documentos de forma programática
   Você pode ocultar texto em um documento Configurando o <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> propriedade do <xref:Microsoft.Office.Interop.Word.Range.Font%2A> para um determinado intervalo de texto.
@@ -29,17 +29,17 @@ ms.locfileid: "56646077"
 
 ## <a name="to-hide-text-in-a-bookmark-control-while-printing-the-document"></a>Para ocultar texto em um controle de indicador ao imprimir o documento
 
-1.  Crie um procedimento que oculta todo o texto que está em um intervalo especificado.
+1. Crie um procedimento que oculta todo o texto que está em um intervalo especificado.
 
      [!code-vb[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#105)]
      [!code-csharp[Trin_VstcoreWordAutomation#105](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#105)]
 
-2.  Crie um procedimento que exibe novamente todo o texto que está em um intervalo especificado.
+2. Crie um procedimento que exibe novamente todo o texto que está em um intervalo especificado.
 
      [!code-vb[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#106)]
      [!code-csharp[Trin_VstcoreWordAutomation#106](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#106)]
 
-3.  Passe o intervalo de um indicador para o `HideText` método, imprimir o documento e, em seguida, passar o mesmo intervalo para o `UnhideText` método.
+3. Passe o intervalo de um indicador para o `HideText` método, imprimir o documento e, em seguida, passar o mesmo intervalo para o `UnhideText` método.
 
      O exemplo de código a seguir pode ser usado em uma personalização no nível de documento. Para usar este exemplo, executá-la na `ThisDocument` classe em seu projeto.
 

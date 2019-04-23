@@ -16,12 +16,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5c970fe4cd1bbd87f54e10be85adf37554c10675
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed5b0f84ea19e465a9d820d9f25c4fc19546c639
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950533"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60103375"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>Salvar os dados com os métodos TableAdapter DBDirect
 
@@ -29,15 +29,15 @@ Este passo a passo fornece instruções detalhadas para executar instruções SQ
 
 Durante este passo a passo, você aprenderá a:
 
--   Criar um novo **Aplicativo do Windows Forms**.
+- Criar um novo **Aplicativo do Windows Forms**.
 
--   Criar e configurar um conjunto de dados com o [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).
+- Criar e configurar um conjunto de dados com o [Data Source Configuration Wizard](../data-tools/media/data-source-configuration-wizard.png).
 
--   Selecionar o controle a ser criado no formulário ao arrastar itens da janela **Fontes de Dados**. Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
+- Selecionar o controle a ser criado no formulário ao arrastar itens da janela **Fontes de Dados**. Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
--   Cria controles de associação de dados arrastando itens da janela **Fontes de Dados** para um formulário.
+- Cria controles de associação de dados arrastando itens da janela **Fontes de Dados** para um formulário.
 
--   Adicione métodos para acessar o banco de dados diretamente e executar inserções, atualizações e exclusões.
+- Adicione métodos para acessar o banco de dados diretamente e executar inserções, atualizações e exclusões.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -63,7 +63,7 @@ A primeira etapa é criar uma **aplicativo do Windows Forms**.
 
 1. No Visual Studio, sobre o **arquivo** menu, selecione **New** > **projeto**.
 
-2. Expanda o **Visual C#** ou **Visual Basic** no painel esquerdo, em seguida, selecione **área de trabalho do Windows**.
+2. Expanda o **Visual c#** ou **Visual Basic** no painel esquerdo, em seguida, selecione **área de trabalho do Windows**.
 
 3. No painel central, selecione a **aplicativo do Windows Forms** tipo de projeto.
 
@@ -73,7 +73,7 @@ A primeira etapa é criar uma **aplicativo do Windows Forms**.
 
 ## <a name="create-a-data-source-from-your-database"></a>Criar uma fonte de dados do banco de dados
 
-Esta etapa usa o **Assistente de Configuração de Fonte de Dados** para criar uma fonte de dados com base na tabela `Region` no banco de dados de exemplo Northwind. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
+Esta etapa usa o **Assistente de Configuração de Fonte de Dados** para criar uma fonte de dados com base na tabela `Region` no banco de dados de exemplo Northwind. É preciso ter acesso ao banco de dados de exemplo Northwind para criar a conexão. Para obter informações sobre como configurar o banco de dados de exemplo Northwind, consulte [como: Instalar bancos de dados de exemplo](../data-tools/installing-database-systems-tools-and-samples.md).
 
 ### <a name="to-create-the-data-source"></a>Para criar a fonte de dados
 
@@ -87,11 +87,11 @@ Esta etapa usa o **Assistente de Configuração de Fonte de Dados** para criar u
 
 4. Sobre o **escolha sua Conexão de dados** tela, siga um destes procedimentos:
 
-    -   Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
+    - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.
 
          - ou -
 
-    -   Selecione **Nova Conexão** para inicializar a caixa de diálogo **Adicionar/Modificar Conexão**.
+    - Selecione **Nova Conexão** para inicializar a caixa de diálogo **Adicionar/Modificar Conexão**.
 
 5. Se seu banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, selecione **próxima**.
 
@@ -152,21 +152,21 @@ Um controle <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramentas 
 
 ## <a name="run-the-application"></a>Executar o aplicativo
 
--   Selecione **F5** para executar o aplicativo.
+- Selecione **F5** para executar o aplicativo.
 
--   Selecione o **inserir** botão e, em seguida, verifique se o novo registro aparece na grade.
+- Selecione o **inserir** botão e, em seguida, verifique se o novo registro aparece na grade.
 
--   Selecione o **atualização** botão e, em seguida, verifique se o registro é atualizado na grade.
+- Selecione o **atualização** botão e, em seguida, verifique se o registro é atualizado na grade.
 
--   Selecione o **excluir** botão e, em seguida, verifique se o registro é removido da grade.
+- Selecione o **excluir** botão e, em seguida, verifique se o registro é removido da grade.
 
 ## <a name="next-steps"></a>Próximas etapas
 
 Dependendo dos requisitos do aplicativo, há várias etapas que você talvez queira realizar após criar um formulário de associação de dados. Entre algumas das melhorias que você poderia fazer nessa explicação passo a passo estão:
 
--   Adicionando funcionalidade de busca ao formulário.
+- Adicionando funcionalidade de busca ao formulário.
 
--   Adicionar tabelas ao conjunto de dados, selecionando **Configurar DataSet com Assistente** na janela **Fontes de Dados**. Você pode adicionar controles que exibem dados relacionados, arrastando os nós relacionados para o formulário. Para obter mais informações, consulte [relacionamentos em conjuntos de dados](relationships-in-datasets.md).
+- Adicionar tabelas ao conjunto de dados, selecionando **Configurar DataSet com Assistente** na janela **Fontes de Dados**. Você pode adicionar controles que exibem dados relacionados, arrastando os nós relacionados para o formulário. Para obter mais informações, consulte [relacionamentos em conjuntos de dados](relationships-in-datasets.md).
 
 ## <a name="see-also"></a>Consulte também
 

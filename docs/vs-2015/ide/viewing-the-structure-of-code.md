@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6a020ffcd3fa458bb0e1c5bdffd3716ed23f225
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4d80f8b9a6786d84d645a91dead2ac05a829718b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801206"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115062"
 ---
 # <a name="viewing-the-structure-of-code"></a>Exibindo a estrutura do código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ ms.locfileid: "54801206"
 > [!NOTE]
 >  A edição do Visual Studio e as configurações que você está usando podem afetar os recursos no IDE. Eles podem ser diferentes dos descritos neste tópico.  
   
-##  <a name="BKMK_ClassView"></a> Modo de Exibição de Classe (Visual Basic, C#, C++)  
+## <a name="BKMK_ClassView"></a> Modo de Exibição de Classe (Visual Basic, C#, C++)  
  O **Modo de Exibição de Classe** é mostrado como parte do **Gerenciador de Soluções**, bem como em uma janela separada. A janela **Modo de Exibição de Classe** exibe os elementos de um aplicativo. O painel superior exibe namespaces, tipos, interfaces, enumerações e classes, e o painel inferior exibe os membros que pertencem ao tipo selecionado no painel superior. Usando essa janela, você pode passar para definições de membro no código-fonte (ou no **Pesquisador de Objetos** se o elemento for definido fora de sua solução).  
   
  Não é necessário compilar um projeto para exibir seus elementos no **Modo de Exibição de Classe**. A janela é atualizada conforme você modifica o código em seu projeto.  
@@ -110,7 +110,7 @@ ms.locfileid: "54801206"
 |**Ir para Referência**|Exibe uma referência ao tipo ou membro no código-fonte, se disponível.|  
 |**Exibir Hierarquia de Chamada**|Exibe o método selecionado na janela **Hierarquia de Chamada**.|  
   
-##  <a name="BKMK_CallHierarchy"></a> Hierarquia de Chamada (Visual Basic, C#, C++)  
+## <a name="BKMK_CallHierarchy"></a> Hierarquia de Chamada (Visual Basic, C#, C++)  
  A janela **Hierarquia de Chamada** mostra onde um determinado método (ou propriedade ou construtor) é chamado e lista os métodos que são chamados desse método. É possível exibir vários níveis de grafo de chamadas, que mostra as relações de chamador/computador chamado entre os métodos em um escopo especificado.  
   
  Você pode exibir a janela **Hierarquia de Chamada** selecionando um método (ou propriedade ou construtor) e, em seguida, escolhendo **Exibir Hierarquia de Classe** no menu de atalho. A exibição deve se parecer com a imagem a seguir.  
@@ -135,7 +135,7 @@ Janela de Hierarquia de Chamada
 |**Copiar**|Copia o nó selecionado (mas não seus subnós).|  
 |**Atualizar**|Atualiza as informações.|  
   
-##  <a name="BKMK_ObjectBrowser"></a> Pesquisador de Objetos  
+## <a name="BKMK_ObjectBrowser"></a> Pesquisador de Objetos  
  O **Pesquisador de Objetos** exibe descrições do código em seus projetos.  
   
  Você pode filtrar o que deseja exibir no **Pesquisador de Objetos**. Usando a lista suspensa na parte superior da janela, você pode escolher entre as seguintes opções:  
@@ -194,7 +194,7 @@ Janela de Hierarquia de Chamada
 |**Ir para Referência**|Exibe uma referência ao tipo ou membro no código-fonte, se disponível.|  
 |**Exibir Hierarquia de Chamada**|Exibe o método selecionado na janela **Hierarquia de Chamada**.|  
   
-##  <a name="BKMK_CodeDefinition"></a> Janela de Definição de Código (C#, C++)  
+## <a name="BKMK_CodeDefinition"></a> Janela de Definição de Código (C#, C++)  
  A Janela de **Definição de Código** exibe a definição de um membro ou tipo selecionado no projeto ativo. O tipo ou membro pode ser selecionado no editor de código ou em uma janela de exibição de código.  
   
  Embora essa janela seja somente leitura, você pode definir pontos de interrupção ou indicadores nela. Para modificar a definição exibida, escolha **Editar Definição** no menu de atalho. Isso abre o arquivo de origem no editor de códigos e move o ponto de inserção para a linha em que a definição começa.  

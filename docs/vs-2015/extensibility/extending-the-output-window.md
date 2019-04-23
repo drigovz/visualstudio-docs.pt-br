@@ -10,12 +10,12 @@ ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0e4fe3b07a2a076218fd004328ad87e4d5e3bab7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2788903c60564d501770616fbe3ad2335e60a250
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925172"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105403"
 ---
 # <a name="extending-the-output-window"></a>Estendendo a Janela de Saída
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,22 +27,22 @@ O **saída** janela é um conjunto de painéis de texto de leitura/gravação. O
 ## <a name="creating-an-extension-that-uses-the-output-pane"></a>Criando uma extensão que usa o painel de saída  
  Você pode tornar uma extensão que exercite diferentes aspectos do painel de saída.  
   
-1.  Crie um projeto do VSIX chamado `TestOutput` com um comando de menu denominado **TestOutput**. Para obter mais informações, consulte [criar uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Crie um projeto do VSIX chamado `TestOutput` com um comando de menu denominado **TestOutput**. Para obter mais informações, consulte [criar uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Adicione as seguintes referências:  
+2. Adicione as seguintes referências:  
   
-    1.  EnvDTE  
+    1. EnvDTE  
   
-    2.  EnvDTE80  
+    2. EnvDTE80  
   
-3.  No TestOutput.cs, adicione a seguinte instrução using:  
+3. No TestOutput.cs, adicione a seguinte instrução using:  
   
     ```f#  
     using EnvDTE;  
     using EnvDTE80;  
     ```  
   
-4.  No TestOutput.cs, exclua o método ShowMessageBox. Adicione o seguinte stub do método:  
+4. No TestOutput.cs, exclua o método ShowMessageBox. Adicione o seguinte stub do método:  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  
@@ -50,7 +50,7 @@ O **saída** janela é um conjunto de painéis de texto de leitura/gravação. O
     }  
     ```  
   
-5.  No construtor TestOutput, altere o manipulador de comandos para OutputCommandHandler. Aqui está a parte que adiciona os comandos:  
+5. No construtor TestOutput, altere o manipulador de comandos para OutputCommandHandler. Aqui está a parte que adiciona os comandos:  
   
     ```csharp  
     OleMenuCommandService commandService = this.ServiceProvider.GetService(typeof(IMenuCommandService)) as OleMenuCommandService;  
@@ -63,7 +63,7 @@ O **saída** janela é um conjunto de painéis de texto de leitura/gravação. O
     }  
     ```  
   
-6.  As seções a seguir têm diferentes métodos que mostram diferentes maneiras de lidar com o painel de saída. Você pode chamar esses métodos ao corpo do método OutputCommandHandler(). Por exemplo, o código a seguir adiciona o método CreatePane() fornecido na próxima seção.  
+6. As seções a seguir têm diferentes métodos que mostram diferentes maneiras de lidar com o painel de saída. Você pode chamar esses métodos ao corpo do método OutputCommandHandler(). Por exemplo, o código a seguir adiciona o método CreatePane() fornecido na próxima seção.  
   
     ```csharp  
     private void OutputCommandHandler(object sender, EventArgs e)  

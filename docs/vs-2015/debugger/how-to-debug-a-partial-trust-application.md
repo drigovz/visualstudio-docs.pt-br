@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7864728237e1fc84958d3edea6806508f1339902
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 8340867406e99fd6c6f84d1dc84d89a395a338fb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923131"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106859"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Como: Depurar um aplicativo de confiança parcial
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,41 +45,41 @@ Aplica-se a aplicativos do Windows e do console.
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Para escolher uma zona para seu aplicativo de confiança parcial  
   
-1.  Dos **Project** menu, escolha _Projectname_**propriedades**.  
+1. Dos **Project** menu, escolha _Projectname_**propriedades**.  
   
-2.  No *NomeDoProjeto* páginas de propriedades, clique no **segurança** página.  
+2. No *NomeDoProjeto* páginas de propriedades, clique no **segurança** página.  
   
-3.  Selecione **Habilitar configurações de segurança do ClickOnce**.  
+3. Selecione **Habilitar configurações de segurança do ClickOnce**.  
   
-4.  Sob **seu aplicativo será instalado a partir de zona**, clique em caixa de listagem suspensa e escolha a zona que você deseja simular o aplicativo que está sendo instalado em.  
+4. Sob **seu aplicativo será instalado a partir de zona**, clique em caixa de listagem suspensa e escolha a zona que você deseja simular o aplicativo que está sendo instalado em.  
   
      O **as permissões exigidas pelo aplicativo** grade mostra todas as permissões disponíveis. A marca de seleção indica as permissões concedidas ao aplicativo.  
   
-5.  Se a zona que você escolher foi **(personalizado)**, selecione as configurações personalizadas corretas na **configuração** coluna do **permissões** grade.  
+5. Se a zona que você escolher foi **(personalizado)**, selecione as configurações personalizadas corretas na **configuração** coluna do **permissões** grade.  
   
-6.  Clique em **OK** para fechar as páginas de propriedades.  
+6. Clique em **OK** para fechar as páginas de propriedades.  
   
 ### <a name="to-add-an-extra-permission-when-a-security-exception-occurs"></a>Para adicionar uma permissão extra quando ocorrer uma exceção de segurança  
   
-1.  O **Assistente de exceção** caixa de diálogo é exibida com a mensagem: **SecurityException sem tratamento.**  
+1. O **Assistente de exceção** caixa de diálogo é exibida com a mensagem: **SecurityException sem tratamento.**  
   
-2.  No **Assistente de exceção** caixa de diálogo **ações**, clique em **adicionar permissão ao projeto**.  
+2. No **Assistente de exceção** caixa de diálogo **ações**, clique em **adicionar permissão ao projeto**.  
   
-3.  O **reiniciar depuração** caixa de diálogo é exibida.  
+3. O **reiniciar depuração** caixa de diálogo é exibida.  
   
-    -   Se você deseja reiniciar a sessão de depuração com a nova permissão, clique em **Sim**.  
+    - Se você deseja reiniciar a sessão de depuração com a nova permissão, clique em **Sim**.  
   
-    -   Se você não quiser reiniciar ainda, clique em **não**.  
+    - Se você não quiser reiniciar ainda, clique em **não**.  
   
 ### <a name="to-view-extra-permissions-added-while-debugging"></a>Para exibir as permissões adicionais adicionadas durante a depuração  
   
-1.  Dos **Project** menu, escolha _Projectname_**propriedades**.  
+1. Dos **Project** menu, escolha _Projectname_**propriedades**.  
   
-2.  No *NomeDoProjeto* páginas de propriedades, clique no **segurança** página.  
+2. No *NomeDoProjeto* páginas de propriedades, clique no **segurança** página.  
   
-3.  Examine os **as permissões exigidas pelo aplicativo** grade. Qualquer permissão adicional que você adicionou tem dois ícones na **incluídos** coluna: a marca de seleção normal, que tem permissões, todos incluídos e um ícone adicional, que se parece com um balão que contém a letra "i".  
+3. Examine os **as permissões exigidas pelo aplicativo** grade. Qualquer permissão adicional que você adicionou tem dois ícones na **incluídos** coluna: a marca de seleção normal, que tem permissões, todos incluídos e um ícone adicional, que se parece com um balão que contém a letra "i".  
   
-4.  Use a barra de rolagem vertical para exibir todo o **as permissões exigidas pelo aplicativo** grade.  
+4. Use a barra de rolagem vertical para exibir todo o **as permissões exigidas pelo aplicativo** grade.  
   
 ## <a name="see-also"></a>Consulte também  
  [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)   

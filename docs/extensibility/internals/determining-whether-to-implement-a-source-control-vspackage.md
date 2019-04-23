@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de43eaa56b4405c48be423f94b905cb845cc9843
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: fd3e0888cb45facbf2946e6a4656147dab75350e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628137"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100477"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>Determinar se deve implementar um VSPackage de controle do código-fonte
 Esta seção aborda as opções de plug-ins de controle do código-fonte e os VSPackages de controle de origem para estender o controle de fonte de soluções e fornece diretrizes amplas sobre como escolher um caminho de integração adequada.
@@ -28,13 +28,13 @@ Esta seção aborda as opções de plug-ins de controle do código-fonte e os VS
 
  Se você quiser implementar uma solução de controle do código-fonte que fornece flexibilidade e controle avançado sobre a lógica de controle do código-fonte e a interface do usuário, talvez você prefira a rota de integração de pacote de controle de origem. Você pode:
 
-1.  Registrar seu próprio VSPackage de controle do código-fonte (consulte [registro e seleção](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).
+1. Registrar seu próprio VSPackage de controle do código-fonte (consulte [registro e seleção](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)).
 
-2.  Substitua o controle de fonte padrão da interface do usuário com sua interface do usuário personalizada (consulte [interface do usuário personalizada](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)).
+2. Substitua o controle de fonte padrão da interface do usuário com sua interface do usuário personalizada (consulte [interface do usuário personalizada](../../extensibility/internals/custom-user-interface-source-control-vspackage.md)).
 
-3.  Especifique os glifos a ser usada e manipular eventos de glifo do Gerenciador de soluções (veja [controle de glifo](../../extensibility/internals/glyph-control-source-control-vspackage.md)).
+3. Especifique os glifos a ser usada e manipular eventos de glifo do Gerenciador de soluções (veja [controle de glifo](../../extensibility/internals/glyph-control-source-control-vspackage.md)).
 
-4.  Manipular eventos de consulta de editar e salvar consulta (consulte [consulta Editar consulta salvar](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).
+4. Manipular eventos de consulta de editar e salvar consulta (consulte [consulta Editar consulta salvar](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)).
 
 ## <a name="see-also"></a>Consulte também
 - [Criar um controle de fonte plug-in](../../extensibility/internals/creating-a-source-control-plug-in.md)

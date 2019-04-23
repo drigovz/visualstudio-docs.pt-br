@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5adc9574fa36fd77c1d30d6045795953c37349bc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.openlocfilehash: d693113db28acc456625f7c22b671006ed17038b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928667"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096979"
 ---
 # <a name="edit-data-in-datasets"></a>Editar dados em conjuntos de dados
 Você edite os dados em tabelas de dados assim que você edite os dados em uma tabela em qualquer banco de dados. O processo pode incluir inserir, atualizar e excluir registros na tabela. Em um formulário de associação de dados, você pode especificar quais campos são editáveis pelo usuário. Nesses casos, a infra-estrutura de ligação de dados lida com todos os controle de alterações para que as alterações podem ser enviadas no banco de dados mais tarde. Se você, por meio de programação, fazer edições em dados, e você pretende enviar essas alterações no banco de dados, você deve usar os objetos e métodos que fazem o controle de alterações para você.
@@ -53,7 +53,7 @@ Se seu aplicativo não precisa enviar atualizações de volta para uma fonte de 
 
 #### <a name="to-delete-records-from-a-data-table"></a>Para excluir registros de uma tabela de dados
 
--   Chame o <xref:System.Data.DataRow.Delete%2A> método de um <xref:System.Data.DataRow>.
+- Chame o <xref:System.Data.DataRow.Delete%2A> método de um <xref:System.Data.DataRow>.
 
      Esse método não remove o registro fisicamente. Em vez disso, ele marca o registro para exclusão.
 
@@ -70,15 +70,15 @@ Quando forem feitas alterações a registros em um conjunto de dados, informaç�
 
 As alterações são controladas de duas maneiras em cada linha de dados:
 
--   Cada linha de dados contém informações relacionadas ao seu <xref:System.Data.DataRow.RowState%2A> (por exemplo, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, ou <xref:System.Data.DataRowState.Unchanged>).
+- Cada linha de dados contém informações relacionadas ao seu <xref:System.Data.DataRow.RowState%2A> (por exemplo, <xref:System.Data.DataRowState.Added>, <xref:System.Data.DataRowState.Modified>, <xref:System.Data.DataRowState.Deleted>, ou <xref:System.Data.DataRowState.Unchanged>).
 
--   Cada linha de dados alterada contém várias versões dessa linha (<xref:System.Data.DataRowVersion>), a versão original (antes das alterações) e a versão atual (após alterações). Durante o período quando uma alteração fica pendente (o tempo em que você pode responder ao <xref:System.Data.DataTable.RowChanging> evento), uma terceira versão — a versão proposta — também está disponível.
+- Cada linha de dados alterada contém várias versões dessa linha (<xref:System.Data.DataRowVersion>), a versão original (antes das alterações) e a versão atual (após alterações). Durante o período quando uma alteração fica pendente (o tempo em que você pode responder ao <xref:System.Data.DataTable.RowChanging> evento), uma terceira versão — a versão proposta — também está disponível.
 
 O <xref:System.Data.DataSet.HasChanges%2A> método de um conjunto de dados retorna `true` se foram feitas alterações no conjunto de dados. Depois de determinar a existam de linhas alteradas, você pode chamar o `GetChanges` método de um <xref:System.Data.DataSet> ou <xref:System.Data.DataTable> para retornar um conjunto de linhas alteradas.
 
 #### <a name="to-determine-if-changes-have-been-made-to-any-rows"></a>Para determinar se foram feitas alterações para todas as linhas
 
--   Chamar o <xref:System.Data.DataSet.HasChanges%2A> linhas alteradas de método para verificar se há um conjunto de dados.
+- Chamar o <xref:System.Data.DataSet.HasChanges%2A> linhas alteradas de método para verificar se há um conjunto de dados.
 
 O exemplo a seguir mostra como verificar o valor de retorno de <xref:System.Data.DataSet.HasChanges%2A> método para detectar se há quaisquer linhas alteradas em um dataset chamado `NorthwindDataset1`:
 
@@ -90,7 +90,7 @@ Você também pode verificar ver que tipo de alterações foram feitas em um con
 
 #### <a name="to-determine-what-type-of-changes-have-been-made-to-a-row"></a>Para determinar quais tipos de alterações foram feitas em uma linha
 
--   Passar uma <xref:System.Data.DataRowState> de valor para o <xref:System.Data.DataSet.HasChanges%2A> método.
+- Passar uma <xref:System.Data.DataRowState> de valor para o <xref:System.Data.DataSet.HasChanges%2A> método.
 
 O exemplo a seguir mostra como verificar um conjunto de dados chamado `NorthwindDataset1` para determinar se as novas linhas foram adicionadas a ele:
 
@@ -100,9 +100,9 @@ O exemplo a seguir mostra como verificar um conjunto de dados chamado `Northwind
 ## <a name="to-locate-rows-that-have-errors"></a>Para localizar linhas com erros
 Ao trabalhar com colunas individuais e linhas de dados, você poderá encontrar erros. Você pode verificar a `HasErrors` propriedade para determinar se existem erros em um <xref:System.Data.DataSet>, <xref:System.Data.DataTable>, ou <xref:System.Data.DataRow>.
 
-1.  Verifique o `HasErrors` propriedade para ver se há erros no conjunto de dados.
+1. Verifique o `HasErrors` propriedade para ver se há erros no conjunto de dados.
 
-2.  Se o `HasErrors` é de propriedade `true`, iterar por meio de coleções de tabelas e, em seguida, o através das linhas, para localizar a linha com o erro.
+2. Se o `HasErrors` é de propriedade `true`, iterar por meio de coleções de tabelas e, em seguida, o através das linhas, para localizar a linha com o erro.
 
 [!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
 [!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]

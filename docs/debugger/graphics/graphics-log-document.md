@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c4d372c0f21bfeb9768796e494a2689b7fc9f32f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: aed2acd4dbf921d99bcefe2e74575401fc01c7d7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101307"
 ---
 # <a name="graphics-log-document"></a>Documentos de log de gráfico
 O documento de Log de gráficos é o registro de eventos de gráficos que ocorreu enquanto o aplicativo foi executado em uma sessão de diagnóstico de gráficos. Após ser gravado, você pode examinar o log no analisador de gráficos do Visual Studio para diagnosticar problemas de desempenho e renderização.
@@ -33,11 +33,11 @@ O documento de Log de gráficos é o registro de eventos de gráficos que ocorre
 
 #### <a name="to-inspect-a-frame"></a>Para inspecionar um quadro
 
--   Na **Lista de Quadros**, selecione o quadro que você quer inspecionar. A saída do destino de renderização que aparece na parte superior do documento de log de gráficos é atualizada para exibir o quadro selecionado.
+- Na **Lista de Quadros**, selecione o quadro que você quer inspecionar. A saída do destino de renderização que aparece na parte superior do documento de log de gráficos é atualizada para exibir o quadro selecionado.
 
 #### <a name="to-inspect-a-pixel"></a>Para inspecionar um pixel
 
--   Na parte superior do documento de log de gráficos, selecione o pixel desejado da saída do destino de renderização. Com um pixel selecionado, você pode usar a janela **Histórico de Pixel de Gráficos** para exibir informações detalhadas sobre o pixel selecionado. Para obter mais informações, consulte [histórico de Pixel](graphics-pixel-history.md).
+- Na parte superior do documento de log de gráficos, selecione o pixel desejado da saída do destino de renderização. Com um pixel selecionado, você pode usar a janela **Histórico de Pixel de Gráficos** para exibir informações detalhadas sobre o pixel selecionado. Para obter mais informações, consulte [histórico de Pixel](graphics-pixel-history.md).
 
 ## <a name="playback-machine"></a>Máquina de reprodução
  No canto superior direito da **Lista de Quadros** fica a **Máquina de Reprodução**. O computador de reprodução é um computador ou dispositivo usado para reproduzir eventos de gráficos de um arquivo de log de gráficos em uma sessão de diagnóstico posterior. Ao usar outro dispositivo para reproduzir eventos capturados no lugar de seu computador de desenvolvimento, você pode reproduzir com mais precisão o ambiente de execução no qual o problema ocorreu. Por exemplo, você pode usar um computador com drivers ou hardwares gráficos que seu computador de desenvolvimento não usa ou outros tipos de dispositivos, como um tablet Windows RT baseado em ARM ou um dispositivo com Windows Phone.

@@ -10,12 +10,12 @@ ms.assetid: 1942245d-7a1d-4a11-b5e7-a3fe29f11c0b
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 267cd5d5487bfb5f861143e3767c066330bff81e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0cd5c72f8f423ec8ace409cafa82a1e42c6eaf90
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925586"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112605"
 ---
 # <a name="how-to-implement-undo-management"></a>Como: Implementar o gerenciamento de desfazer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ A principal interface usada para o gerenciamento de desfazer é <xref:Microsoft.
   
 #### <a name="to-support-undo-management-for-a-single-view-editor"></a>Para dar suporte ao gerenciamento de desfazer para um editor de modo de exibição único  
   
-1.  Chame `QueryInterface` sobre o `IServiceProvider` interface no quadro de janela para `IOleUndoManager`, do objeto de visualização de documento para acessar o Gerenciador de desfazer (`IID_IOLEUndoManager`).  
+1. Chame `QueryInterface` sobre o `IServiceProvider` interface no quadro de janela para `IOleUndoManager`, do objeto de visualização de documento para acessar o Gerenciador de desfazer (`IID_IOLEUndoManager`).  
   
-2.  Quando um modo de exibição está localizado em um quadro de janela, ela recebe um ponteiro de site, o que ele pode usar para chamar `QueryInterface` para `IServiceProvider`.  
+2. Quando um modo de exibição está localizado em um quadro de janela, ela recebe um ponteiro de site, o que ele pode usar para chamar `QueryInterface` para `IServiceProvider`.  
   
 ## <a name="cases-where-an-editor-supports-multiple-views"></a>Casos em que um editor dá suporte a vários modos de exibição  
  Se você tiver a separação de documento e exibição, há o Gerenciador de desfazer normalmente um associado ao documento em si. Todas as unidades de desfazer são colocadas no Gerenciador de um Desfazer associado ao objeto de dados do documento.  
@@ -48,17 +48,17 @@ A principal interface usada para o gerenciamento de desfazer é <xref:Microsoft.
   
 3. Retransmissão sua <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> chamadas em armazenado `IOleCommandTarget` interface para os seguintes comandos StandardCommandSet97:  
   
-   -   cmdidUndo  
+   - cmdidUndo  
   
-   -   cmdidMultiLevelUndo  
+   - cmdidMultiLevelUndo  
   
-   -   cmdidRedo  
+   - cmdidRedo  
   
-   -   cmdidMultiLevelRedo  
+   - cmdidMultiLevelRedo  
   
-   -   cmdidMultiLevelUndoList  
+   - cmdidMultiLevelUndoList  
   
-   -   cmdidMultiLevelRedoList  
+   - cmdidMultiLevelRedoList  
   
 4. Chame `QueryInterface` na `IOleUndoManager` para `IID_IVsChangeTrackingUndoManager`. Store o ponteiro para <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>.  
   

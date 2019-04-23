@@ -18,12 +18,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db0aaaee01c27fa4588cc2268cd3106abfcc739e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: d91263dc0f66c048e308505e461c8b1536b77a06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763108"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109799"
 ---
 # <a name="creating-solutions-and-projects"></a>Criando soluções e projetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Os projetos são os contêineres lógicos para tudo que é necessário para cria
 ## <a name="adding-single-files-at-the-solution-level"></a>Adicionando arquivos individuais no nível da solução  
  Às vezes, você pode ter um arquivo que vários projetos referenciam ou que contém dados de texto ou diversos que pertencem logicamente no nível da solução em vez de em um projeto específico.  Para adicionar um item individual a uma solução:  
   
-1.  Clique com botão direito do mouse no nó da solução em **Gerenciador de Soluções** e escolha **Adicionar &#124; Novo Item** ou **Adicionar &#124; Item Existente**.  
+1. Clique com botão direito do mouse no nó da solução em **Gerenciador de Soluções** e escolha **Adicionar &#124; Novo Item** ou **Adicionar &#124; Item Existente**.  
   
 ## <a name="creating-empty-solutions"></a>Criando soluções vazias  
  Embora um projeto deva residir em uma solução, é possível criar uma solução que não tem projetos.  
@@ -87,11 +87,11 @@ Os projetos são os contêineres lógicos para tudo que é necessário para cria
   
 ##### <a name="to-delete-a-solution"></a>Para excluir uma solução  
   
-1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução a ser excluída e selecione **Abrir pasta no Gerenciador de Arquivos**.  
+1. No **Gerenciador de Soluções**, clique com o botão direito do mouse na solução a ser excluída e selecione **Abrir pasta no Gerenciador de Arquivos**.  
   
-2.  No Gerenciador de Arquivos, navegue um nível acima.  
+2. No Gerenciador de Arquivos, navegue um nível acima.  
   
-3.  Selecione o diretório que contém a solução e pressione Excluir.  
+3. Selecione o diretório que contém a solução e pressione Excluir.  
   
 ## <a name="see-also"></a>Consulte também  
  [Soluções e projetos](../ide/solutions-and-projects-in-visual-studio.md)   

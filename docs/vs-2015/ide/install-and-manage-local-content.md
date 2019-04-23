@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6e52c9a34b5fc6ea487cffd1728a525dc5a0984
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c549beaf58e64d8026b3f6bd39a3b69922d6b7f6
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54766218"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097408"
 ---
 # <a name="install-and-manage-local-content"></a>Instalar e gerenciar o conteúdo local
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,18 +43,18 @@ Usando o Microsoft Help Viewer, você pode adicionar, remover, atualizar e mover
   
 #### <a name="to-change-the-content-installation-source"></a>Para alterar a origem da instalação de conteúdo  
   
-1.  Na guia **Gerenciar Conteúdo**, escolha o botão de opção **Disco**.  
+1. Na guia **Gerenciar Conteúdo**, escolha o botão de opção **Disco**.  
   
     > [!NOTE]
     >  A opção **Disco** não estará disponível se o administrador o tiver impedido de modificar a origem de instalação de conteúdo. Para obter mais informações, consulte o [Guia do administrador do Help Viewer](../ide/help-viewer-administrator-guide.md).  
   
-2.  Execute uma das seguintes etapas:  
+2. Execute uma das seguintes etapas:  
   
-    -   Insira o caminho de um arquivo .msha ou a URL de um ponto de extremidade de serviço.  
+    - Insira o caminho de um arquivo .msha ou a URL de um ponto de extremidade de serviço.  
   
-    -   Escolha o botão Procurar (**...** ) para navegar para um arquivo .msha.  
+    - Escolha o botão Procurar (**...** ) para navegar para um arquivo .msha.  
   
-    -   Na lista, escolha a entrada usada mais recentemente.  
+    - Na lista, escolha a entrada usada mais recentemente.  
   
 ## <a name="download-and-install-content-locally"></a>Baixar e instalar o conteúdo localmente  
  Você poderá exibir tópicos sem uma conexão de Internet se baixar e instalar o conteúdo em seu computador local.  
@@ -66,13 +66,13 @@ Usando o Microsoft Help Viewer, você pode adicionar, remover, atualizar e mover
   
 #### <a name="to-download-and-install-content"></a>Para baixar e instalar conteúdo  
   
-1.  Escolha a guia **Gerenciar Conteúdo**.  
+1. Escolha a guia **Gerenciar Conteúdo**.  
   
-2.  Na lista de conteúdos, escolha o link **Adicionar** ao lado do livro ou dos livros que você deseja baixar e instalar.  
+2. Na lista de conteúdos, escolha o link **Adicionar** ao lado do livro ou dos livros que você deseja baixar e instalar.  
   
      O livro é adicionado à lista **Alterações pendentes** e o tamanho estimado do livro ou dos livros especificados é exibido abaixo da lista. Como alguns livros compartilham tópicos, o tamanho total do download de vários livros pode ser menor do que o resultado da soma dos tamanhos de cada livro especificado.  
   
-3.  Escolha o botão **Atualizar**.  
+3. Escolha o botão **Atualizar**.  
   
      O livro ou os livros especificados são instalados junto com todas as atualizações de livros que já estão no seu computador. Os tempos de instalação variam, mas você pode exibir o progresso na barra de status.  
   
@@ -86,13 +86,13 @@ Usando o Microsoft Help Viewer, você pode adicionar, remover, atualizar e mover
   
 #### <a name="to-remove-content"></a>Para remover conteúdo  
   
-1.  Escolha a guia **Gerenciar Conteúdo**.  
+1. Escolha a guia **Gerenciar Conteúdo**.  
   
-2.  Na lista de conteúdos, escolha o link **Remover** ao lado do livro ou dos livros que você deseja remover.  
+2. Na lista de conteúdos, escolha o link **Remover** ao lado do livro ou dos livros que você deseja remover.  
   
      O livro é adicionado à lista **Alterações pendentes**.  
   
-3.  Escolha o botão **Atualizar**.  
+3. Escolha o botão **Atualizar**.  
   
      O livro ou os livros especificados são removidos do seu computador.  
   
@@ -116,13 +116,13 @@ Usando o Microsoft Help Viewer, você pode adicionar, remover, atualizar e mover
   
 #### <a name="to-move-local-content"></a>Para mover o conteúdo local  
   
-1.  Na guia **Gerenciar Conteúdo**, escolha o botão **Mover** em **Caminho do Repositório Local**.  
+1. Na guia **Gerenciar Conteúdo**, escolha o botão **Mover** em **Caminho do Repositório Local**.  
   
      A caixa de diálogo **Mover Conteúdo** se abre.  
   
-2.  Na caixa de texto **Para**, insira um local diferente para o conteúdo e, em seguida, escolha o botão **OK**.  
+2. Na caixa de texto **Para**, insira um local diferente para o conteúdo e, em seguida, escolha o botão **OK**.  
   
-3.  Escolha o botão **Fechar** quando o conteúdo tiver sido movido.  
+3. Escolha o botão **Fechar** quando o conteúdo tiver sido movido.  
   
 ## <a name="see-also"></a>Consulte também  
  [Microsoft Help Viewer](../ide/microsoft-help-viewer.md)

@@ -11,12 +11,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 678e7a9c32f8c69e9f0bac5ebc3a077e7e625771
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f8de4432f1d0b4ab4bf24159744d20708d732fbd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929860"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108681"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Noções básicas sobre modelos, classes e relações
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,13 +65,13 @@ Uma linguagem específica de domínio (DSL) é definida por seu arquivo de defin
   
  Para reorganizar o diagrama de definição de DSL, você pode:  
   
--   Troque principal e fazer referência a modos de exibição usando o **trazer árvore aqui** e **dividir árvore** comandos. Clique em uma classe de domínio único para ver esses comandos.  
+- Troque principal e fazer referência a modos de exibição usando o **trazer árvore aqui** e **dividir árvore** comandos. Clique em uma classe de domínio único para ver esses comandos.  
   
--   Reordene as classes de domínio e forma, pressionando Ctrl + seta para cima e Ctrl + seta para baixo.  
+- Reordene as classes de domínio e forma, pressionando Ctrl + seta para cima e Ctrl + seta para baixo.  
   
--   Recolher ou expandir classes usando o ícone no canto superior direito de cada forma.  
+- Recolher ou expandir classes usando o ícone no canto superior direito de cada forma.  
   
--   Recolher partes da árvore clicando no sinal de subtração (-) na parte inferior de uma classe de domínio.  
+- Recolher partes da árvore clicando no sinal de subtração (-) na parte inferior de uma classe de domínio.  
   
 ## <a name="inheritance"></a>Herança  
  Classes de domínio podem ser definidas usando a herança. Para criar uma derivação de herança, clique na ferramenta de herança, clique na classe derivada e, em seguida, clique na classe base. Um elemento de modelo tem todas as propriedades que são definidas em sua própria classe de domínio, juntamente com todas as propriedades herdadas da classe base. Ele também herda suas funções em relações.  

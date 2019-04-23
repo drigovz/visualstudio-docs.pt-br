@@ -11,30 +11,30 @@ ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 27812d10c720d0507309513bd908498d9abcf92a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 687663a79ea5dca75da68013519f4652fa71460c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928458"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110564"
 ---
 # <a name="extending-the-solution-explorer-filter"></a>Estendendo o filtro do Gerenciador de Soluções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Você pode estender **Gerenciador de soluções** filtrar funcionalidade para mostrar ou ocultar arquivos diferentes. Por exemplo, você pode criar um filtro que mostra apenas classe factory arquivos C# na **Gerenciador de soluções**, como demonstra este passo a passo.  
+Você pode estender **Gerenciador de soluções** filtrar funcionalidade para mostrar ou ocultar arquivos diferentes. Por exemplo, você pode criar um filtro que mostra apenas classe factory arquivos c# na **Gerenciador de soluções**, como demonstra este passo a passo.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
 ### <a name="create-a-visual-studio-package-project"></a>Criar um projeto de pacote do Visual Studio  
   
-1.  Crie um projeto do VSIX chamado `FileFilter`. Adicionar um modelo de item de comando personalizado chamado **FileFilter**. Para obter mais informações, consulte [criar uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
+1. Crie um projeto do VSIX chamado `FileFilter`. Adicionar um modelo de item de comando personalizado chamado **FileFilter**. Para obter mais informações, consulte [criar uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
-2.  Adicione uma referência ao `System.ComponentModel.Composition` e `Microsoft.VisualStudio.Utilities`.  
+2. Adicione uma referência ao `System.ComponentModel.Composition` e `Microsoft.VisualStudio.Utilities`.  
   
-3.  Fazer com que o comando de menu apareça na **Gerenciador de soluções** barra de ferramentas. Abra o arquivo FileFilterPackage.vsct.  
+3. Fazer com que o comando de menu apareça na **Gerenciador de soluções** barra de ferramentas. Abra o arquivo FileFilterPackage.vsct.  
   
-4.  Alterar o `<Button>` bloco para o seguinte:  
+4. Alterar o `<Button>` bloco para o seguinte:  
   
     ```xml  
     <Button guid="guidFileFilterPackageCmdSet" id="FileFilterId" priority="0x0400" type="Button">  
@@ -48,28 +48,28 @@ Você pode estender **Gerenciador de soluções** filtrar funcionalidade para mo
   
 ### <a name="update-the-manifest-file"></a>Atualizar o arquivo de manifesto  
   
-1.  No arquivo vsixmanifest, adicione um ativo que é um componente MEF.  
+1. No arquivo vsixmanifest, adicione um ativo que é um componente MEF.  
   
-2.  Sobre o **ativos** guia, escolha o **New** botão.  
+2. Sobre o **ativos** guia, escolha o **New** botão.  
   
-3.  No **tipo** campo, escolha **mefcomponent**.  
+3. No **tipo** campo, escolha **mefcomponent**.  
   
-4.  No **fonte** campo, escolha **um projeto na solução atual**.  
+4. No **fonte** campo, escolha **um projeto na solução atual**.  
   
-5.  No **Project** campo, escolha **FileFilter**e, em seguida, escolha o **Okey** botão.  
+5. No **Project** campo, escolha **FileFilter**e, em seguida, escolha o **Okey** botão.  
   
 ### <a name="add-the-filter-code"></a>Adicione o código de filtro  
   
-1.  Adicione alguns GUIDs para o arquivo FileFilterPackageGuids.cs:  
+1. Adicione alguns GUIDs para o arquivo FileFilterPackageGuids.cs:  
   
     ```csharp  
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file  
     public const int FileFilterId = 0x100;  
     ```  
   
-2.  Adicione um arquivo de classe ao projeto FileFilter nomeado FileNameFilter.cs.  
+2. Adicione um arquivo de classe ao projeto FileFilter nomeado FileNameFilter.cs.  
   
-3.  Substitua o namespace vazio e a classe vazia com o código a seguir.  
+3. Substitua o namespace vazio e a classe vazia com o código a seguir.  
   
      O `Task<IReadOnlyObservableSet> GetIncludedItemsAsync(IEnumerable<IVsHierarchyItem rootItems)` método usa a coleção que contém a raiz da solução (`rootItems`) e retorna a coleção de itens a serem incluídos no filtro.  
   
@@ -160,7 +160,7 @@ Você pode estender **Gerenciador de soluções** filtrar funcionalidade para mo
   
     ```  
   
-4.  No FileFilter.cs, remova o código de posicionamento e manipulação de comando do construtor FileFilter. O resultado deve ter esta aparência:  
+4. No FileFilter.cs, remova o código de posicionamento e manipulação de comando do construtor FileFilter. O resultado deve ter esta aparência:  
   
     ```csharp  
     private FileFilter(Package package)  
@@ -176,7 +176,7 @@ Você pode estender **Gerenciador de soluções** filtrar funcionalidade para mo
   
      Remova o método ShowMessageBox() também.  
   
-5.  No FileFilterPackage, cs, substitua o código no método Initialize () com o seguinte:  
+5. No FileFilterPackage, cs, substitua o código no método Initialize () com o seguinte:  
   
     ```csharp  
     protected override void Initialize()  
@@ -188,10 +188,10 @@ Você pode estender **Gerenciador de soluções** filtrar funcionalidade para mo
   
 ### <a name="test-your-code"></a>Testar seu código  
   
-1.  Compile e execute o projeto. Uma segunda instância do Visual Studio é exibida. Isso é chamado na instância experimental.  
+1. Compile e execute o projeto. Uma segunda instância do Visual Studio é exibida. Isso é chamado na instância experimental.  
   
-2.  Na instância experimental do Visual Studio, abra um projeto C#.  
+2. Na instância experimental do Visual Studio, abra um projeto c#.  
   
-3.  Procure o botão que você adicionou na barra de ferramentas do Gerenciador de soluções. Ele deve ser o quarto botão da esquerda.  
+3. Procure o botão que você adicionou na barra de ferramentas do Gerenciador de soluções. Ele deve ser o quarto botão da esquerda.  
   
-4.  Quando você clica no botão, todos os arquivos devem ser filtrados e você deverá ver "todos os itens foram filtrados da exibição." no Gerenciador de soluções.
+4. Quando você clica no botão, todos os arquivos devem ser filtrados e você deverá ver "todos os itens foram filtrados da exibição." no Gerenciador de soluções.

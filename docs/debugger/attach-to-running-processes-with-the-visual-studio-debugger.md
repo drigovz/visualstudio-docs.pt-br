@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: dad698f2ba660b6848e614f13751335894a17ae0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: f810761d088eaf6ec94524a7d76ec255c931686b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366400"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115153"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar a processos em execução com o depurador do Visual Studio
 Você pode anexar o depurador do Visual Studio para um processo em execução em um computador local ou remoto. Depois que o processo está em execução, selecione **Debug** > **anexar ao processo** ou pressione **Ctrl**+**Alt** + **P** no Visual Studio e usar o **anexar ao processo** caixa de diálogo para anexar o depurador ao processo.
@@ -43,7 +43,7 @@ Você pode usar **anexar ao processo** para depurar aplicativos em execução em
 > [!TIP]
 > Não tenho certeza se deve ser usado **anexar ao processo** para seu cenário de depuração? Ver [comum de cenários de depuração](#BKMK_Scenarios).
 
-##  <a name="BKMK_Attach_to_a_running_process"></a> Anexar a um processo em execução no computador local
+## <a name="BKMK_Attach_to_a_running_process"></a> Anexar a um processo em execução no computador local
 
 Para reanexar rapidamente a um processo anexado ao anteriormente, consulte [anexar novamente a um processo](#BKMK_reattach).
 
@@ -79,7 +79,7 @@ Para depurar um processo em um computador remoto, consulte [anexar a um processo
 >[!NOTE]
 >Você também pode ser associada a vários aplicativos para depuração, mas apenas um aplicativo está ativo no depurador em um momento. Você pode definir o aplicativo ativo no Visual Studio **local de depuração** barra de ferramentas ou **processos** janela.
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Anexar a um processo em um computador remoto
+## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Anexar a um processo em um computador remoto
 
 Você também pode selecionar um computador remoto a **anexar ao processo** caixa de diálogo, exibir uma lista de processos disponíveis em execução nesse computador e anexar a um ou mais processos para depuração. O depurador remoto (*msvsmon.exe*) deve estar em execução no computador remoto. Para obter mais informações, consulte [depuração remota](../debugger/remote-debugging.md).
 
@@ -186,7 +186,7 @@ Para cenários de depuração remota, você deve ter o código-fonte (ou uma có
 
 Em alguns cenários de depuração locais, você pode depurar no Visual Studio sem acesso à fonte de se os arquivos de símbolos corretos estão presentes com o aplicativo. Por padrão, isso requer uma compilação de depuração. Para obter mais informações, consulte [especificar arquivos de origem e símbolo](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-##  <a name="BKMK_Troubleshoot_attach_errors"></a> Solucionar problemas de anexo
+## <a name="BKMK_Troubleshoot_attach_errors"></a> Solucionar problemas de anexo
  Quando o depurador se anexa a um processo em execução, o processo pode conter um ou mais tipos de código. Os tipos de código aos quais o depurador pode se anexar são exibidos e selecionados na caixa de diálogo **Selecionar Tipo de Código**.
 
  Às vezes, o depurador pode ser anexado com êxito a um tipo de código, mas não a outro tipo de código. Isso pode ocorrer se você estiver tentando anexar a um processo que esteja sendo executado em um computador remoto. O computador remoto pode ter componentes de depuração remota instalados para alguns tipos de código mas não para outros. Isso também pode ocorrer se você tentar anexar a dois ou mais processos para depuração direta de banco de dados. A depuração de SQL dá suporte à anexação de apenas um único processo.
@@ -199,19 +199,19 @@ Em alguns cenários de depuração locais, você pode depurar no Visual Studio s
 
  **Para obter informações específicas sobre o motivo de um tipo de código ter falhado na anexação:**
 
-1.  Desanexe do processo. Sobre o **Debug** menu, selecione **desanexar tudo**.
+1. Desanexe do processo. Sobre o **Debug** menu, selecione **desanexar tudo**.
 
-1.  Reanexe ao processo, selecionando apenas o tipo de código que não foi anexado.
+1. Reanexe ao processo, selecionando apenas o tipo de código que não foi anexado.
 
-    1.  Na caixa de diálogo **Anexar ao Processo**, selecione o processo na lista **Processos Disponíveis**.
+    1. Na caixa de diálogo **Anexar ao Processo**, selecione o processo na lista **Processos Disponíveis**.
 
-    2.  Selecione **selecionar**.
+    2. Selecione **selecionar**.
 
-    3.  Na caixa de diálogo **Tipo de Código Selecionado**, selecione **Depurar esses tipos de código** e o tipo de código que falhou em ser anexado. Desmarque os outros tipos de código.
+    3. Na caixa de diálogo **Tipo de Código Selecionado**, selecione **Depurar esses tipos de código** e o tipo de código que falhou em ser anexado. Desmarque os outros tipos de código.
 
-    4.  Selecione **OK**.
+    4. Selecione **OK**.
 
-    5.  No **anexar ao processo** caixa de diálogo, selecione **Attach**.
+    5. No **anexar ao processo** caixa de diálogo, selecione **Attach**.
 
     Desta vez, o anexo falhará completamente e você receberá uma mensagem de erro específica.
 

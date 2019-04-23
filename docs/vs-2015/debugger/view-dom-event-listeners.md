@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ed3a4e4f67ef8a7cc1e13e513d2f03db5f755363
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000326"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110473"
 ---
 # <a name="view-dom-event-listeners"></a>Exibir os ouvintes de eventos do DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,23 +41,23 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 
 #### <a name="to-view-event-listeners"></a>Para exibir os ouvintes de eventos
 
-1.  No Visual Studio, crie um aplicativo em JavaScript que use o modelo de projeto do Aplicativo Dinâmico do Windows Phone.
+1. No Visual Studio, crie um aplicativo em JavaScript que use o modelo de projeto do Aplicativo Dinâmico do Windows Phone.
 
-2.  Com o modelo aberto no Visual Studio, selecione **Emulator 8.1 WVGA 4 na 512MB** na lista suspensa na barra de ferramentas de depuração no depurador:
+2. Com o modelo aberto no Visual Studio, selecione **Emulator 8.1 WVGA 4 na 512MB** na lista suspensa na barra de ferramentas de depuração no depurador:
 
      ![Selecionando um destino de depuração](../debugger/media/js-dom-debug-target-emu.png "JS_DOM_Debug_Target_Emu")
 
-3.  Pressione F5 para executar o aplicativo no modo de depuração.
+3. Pressione F5 para executar o aplicativo no modo de depuração.
 
-4.  No aplicativo em execução, vá para o **seção 3** item dinâmico.
+4. No aplicativo em execução, vá para o **seção 3** item dinâmico.
 
-5.  Alterne para o Visual Studio (Alt+Tab ou F12).
+5. Alterne para o Visual Studio (Alt+Tab ou F12).
 
-6.  No Explorador do DOM, escolha `Find` no canto superior direito.
+6. No Explorador do DOM, escolha `Find` no canto superior direito.
 
-7.  Digite `ListView`e pressione Enter.
+7. Digite `ListView`e pressione Enter.
 
-8.  Se necessário, escolha o **próxima** botão para localizar o `DIV` elemento que representa o `ListView` controle (esse elemento tem um `data-win-control` valor de `WinJS.UI.ListView`).
+8. Se necessário, escolha o **próxima** botão para localizar o `DIV` elemento que representa o `ListView` controle (esse elemento tem um `data-win-control` valor de `WinJS.UI.ListView`).
 
      Agora o elemento `DIV` deve ser selecionado no Explorador do DOM.
 
@@ -75,16 +75,16 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 
      O **eventos** guia mostra os ouvintes de eventos para qualquer elemento que você escolher na lista de hierarquia.
 
-###  <a name="Tips"></a> Dicas para resolver problemas com ouvintes de eventos
+### <a name="Tips"></a> Dicas para resolver problemas com ouvintes de eventos
  Em alguns cenários de aplicativo, ouvintes de eventos devem ser removidos explicitamente usando [removeEventListener](http://msdn.microsoft.com/library/ie/ff975250\(v=vs.85\).aspx). Use o **eventos** guia no Explorador do DOM para testar se os ouvintes de evento foram removidos dos elementos DOM durante a execução de código. Aqui estão algumas dicas para ajudar a resolver esses tipos de problemas:
 
--   Para aplicativos que usam o modelo de navegação de página única implementado no Visual Studio [modelos de projeto](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), não é geralmente necessário remover os ouvintes de evento registrados para objetos, como elementos DOM, que fazem parte de uma página. Neste cenário, um elemento DOM e seus ouvintes de evento associados têm a mesma duração e podem ser coletados como lixo.
+- Para aplicativos que usam o modelo de navegação de página única implementado no Visual Studio [modelos de projeto](http://msdn.microsoft.com/library/windows/apps/hh758331.aspx), não é geralmente necessário remover os ouvintes de evento registrados para objetos, como elementos DOM, que fazem parte de uma página. Neste cenário, um elemento DOM e seus ouvintes de evento associados têm a mesma duração e podem ser coletados como lixo.
 
--   Se a duração do elemento DOM ou objeto for diferente do ouvinte de evento associado, pode ser necessário chamar o método `removeEventListener`. Por exemplo, se você usar o evento `window.onresize`, pode ser necessário remover o ouvinte de evento se você navegar para fora da página em que manipula o evento.
+- Se a duração do elemento DOM ou objeto for diferente do ouvinte de evento associado, pode ser necessário chamar o método `removeEventListener`. Por exemplo, se você usar o evento `window.onresize`, pode ser necessário remover o ouvinte de evento se você navegar para fora da página em que manipula o evento.
 
--   Se o `removeEventListener` falhar ao remover o ouvinte especificado, ele pode estar sendo chamado em uma instância do objeto diferente. Você pode usar o [método bind (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) método para resolver esse problema quando você adiciona o ouvinte.
+- Se o `removeEventListener` falhar ao remover o ouvinte especificado, ele pode estar sendo chamado em uma instância do objeto diferente. Você pode usar o [método bind (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) método para resolver esse problema quando você adiciona o ouvinte.
 
--   Para remover um ouvinte de evento que foi adicionado usando o [método bind (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) ou usando uma função anônima, armazene uma instância da função quando você adiciona o ouvinte. Aqui está uma maneira de usar este padrão com segurança:
+- Para remover um ouvinte de evento que foi adicionado usando o [método bind (Function)](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) ou usando uma função anônima, armazene uma instância da função quando você adiciona o ouvinte. Aqui está uma maneira de usar este padrão com segurança:
 
     ```javascript
     // You could use the following code within the constructor function of an object, or
@@ -104,9 +104,9 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
     elem.addEventListener('mouseup', this._handlerFunc.bind(this));
     ```
 
--   Você não pode remover um ouvinte de evento usando `removeEventListener` se ele foi adicionado com o atributo `obj.on<eventname>`, por exemplo, `window.onresize = handlerFunc`.
+- Você não pode remover um ouvinte de evento usando `removeEventListener` se ele foi adicionado com o atributo `obj.on<eventname>`, por exemplo, `window.onresize = handlerFunc`.
 
--   Usar o analisador de memória JavaScript [memória JavaScript](../profiling/javascript-memory.md) em seu aplicativo. Os ouvintes de evento que devem ser explicitamente removidos podem aparecer como perda de memória.
+- Usar o analisador de memória JavaScript [memória JavaScript](../profiling/javascript-memory.md) em seu aplicativo. Os ouvintes de evento que devem ser explicitamente removidos podem aparecer como perda de memória.
 
 ## <a name="see-also"></a>Consulte também
 

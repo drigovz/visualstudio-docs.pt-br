@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 79fe01ada43b1ac8fe408a1427fd9e65f9cd37cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 5873033e160a8354db70565606dcb399da13e073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924006"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109512"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Depuração remota de ASP.NET em um computador remoto IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,6 +74,7 @@ Depois de instalado, verifique se que o depurador remoto está em execução no 
       </system.web>
   
     ```
+
 1. Abra o **Gerenciador de serviços de informações da Internet (IIS)** e vá para **Sites**.
 1. Clique com botão direito do **Site padrão** nó e selecione **Adicionar aplicativo**.
 1. Defina as **Alias** campo **MyMVC** e o campo de pool de aplicativos para **ASP.NET v4.0** (ASP.NET 4.5 não é uma opção para o pool de aplicativos). Defina as **caminho físico** ao **C:\Publish** (onde você copiou o diretório de projeto do ASP.NET).

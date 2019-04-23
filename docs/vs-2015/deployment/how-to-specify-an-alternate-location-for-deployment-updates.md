@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b7817454cc2c5789975e064dec7a58d8e857a145
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6fafeeb386e1dd40067620d529cb25023d3f0f29
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923028"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087931"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Como: Especificar um local alternativo para as atualizações de implantação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,27 +33,27 @@ Você pode instalar seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] a
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Especificando um local alternativo para atualizações usando o MageUI.exe (utilitário baseado em Windows Forms)  
   
-1.  Abra um prompt de comando do .NET Framework e digite:  
+1. Abra um prompt de comando do .NET Framework e digite:  
   
      **mageui.exe**  
   
-2.  Sobre o **arquivo** menu, escolha **abrir** para abrir o manifesto de implantação do seu aplicativo.  
+2. Sobre o **arquivo** menu, escolha **abrir** para abrir o manifesto de implantação do seu aplicativo.  
   
-3.  Selecione o **opções de implantação** guia.  
+3. Selecione o **opções de implantação** guia.  
   
-4.  Na caixa de texto denominada **local da inicialização**, insira a URL para o diretório que contém o manifesto de implantação para atualizações de aplicativos.  
+4. Na caixa de texto denominada **local da inicialização**, insira a URL para o diretório que contém o manifesto de implantação para atualizações de aplicativos.  
   
-5.  Salve o manifesto de implantação.  
+5. Salve o manifesto de implantação.  
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageexe"></a>Especificando um local alternativo para atualizações usando o Mage.exe  
   
-1.  Abra um prompt de comando do .NET Framework.  
+1. Abra um prompt de comando do .NET Framework.  
   
-2.  Defina o local de atualização usando o comando a seguir. Neste exemplo, **HelloWorld.exe.application** é o caminho para seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto do aplicativo, que sempre tem a extensão. Application, e **http://adatum.com/Update/Path** é a URL que [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] verificará se há atualizações de aplicativo.  
+2. Defina o local de atualização usando o comando a seguir. Neste exemplo, **HelloWorld.exe.application** é o caminho para seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifesto do aplicativo, que sempre tem a extensão. Application, e **http://adatum.com/Update/Path** é a URL que [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] verificará se há atualizações de aplicativo.  
   
      **Mage-atualizar HelloWorld.exe.application - ProviderUrl http://adatum.com/Update/Path**  
   
-3.  Salve o arquivo.  
+3. Salve o arquivo.  
   
     > [!NOTE]
     >  Agora, você precisa assinar novamente o arquivo com Mage.exe. Para obter mais informações, confira [Passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  

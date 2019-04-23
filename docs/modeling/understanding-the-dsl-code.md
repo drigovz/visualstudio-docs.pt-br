@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ab82a563d5b5dce373394f9f83e883e2d2ee1129
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 9d8ce41d6532a7c389d20872c35a216a96910578
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416013"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087762"
 ---
 # <a name="understanding-the-dsl-code"></a>Noções básicas do código de DSL
 
@@ -45,15 +45,15 @@ Pressione **F5** e experimentar se você não estiver familiarizado com esse mod
 
  É altamente recomendável não editar o código gerado diretamente, pois, as edições serão perdidas ao recompilar a solução. Ao invés, para personalizar a DSL:
 
--   Ajuste os diversos parâmetros na Definição da DSL.
+- Ajuste os diversos parâmetros na Definição da DSL.
 
--   Grave classes parciais em arquivos de código separados, para substituir métodos que são definidos nas ou herdado pelas classes geradas. Em alguns casos, você deve definir a **gera derivado duplo** opção de uma classe na definição de DSL, para poder substituir um método gerado.
+- Grave classes parciais em arquivos de código separados, para substituir métodos que são definidos nas ou herdado pelas classes geradas. Em alguns casos, você deve definir a **gera derivado duplo** opção de uma classe na definição de DSL, para poder substituir um método gerado.
 
--   Definir opções na definição de DSL que fazem com que o código gerado forneça 'ganchos' para seu próprio código.
+- Definir opções na definição de DSL que fazem com que o código gerado forneça 'ganchos' para seu próprio código.
 
      Por exemplo, se você definir a **possui construtor personalizado** opção de uma classe de domínio e, em seguida, compile a solução, você verá mensagens de erro. Ao clicar duas vezes em uma dessas mensagens de erro, serão exibidos comentários sobre o código gerado que explicam o que o código personalizado deveria fornecer.
 
--   Grave seus próprios modelos de texto para gerar código específico para o aplicativo. Você pode usar arquivos de inclusão para compartilhar partes dos modelos que são comuns a muitos projetos, e você pode criar modelos de projeto do Visual Studio para configurar projetos que são inicializados com sua própria estrutura de arquivos.
+- Grave seus próprios modelos de texto para gerar código específico para o aplicativo. Você pode usar arquivos de inclusão para compartilhar partes dos modelos que são comuns a muitos projetos, e você pode criar modelos de projeto do Visual Studio para configurar projetos que são inicializados com sua própria estrutura de arquivos.
 
 ## <a name="generated-files-in-dsl"></a>Arquivos gerados na Dsl
  Os seguintes arquivos gerados são exibidos na **Dsl** projeto.

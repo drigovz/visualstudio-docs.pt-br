@@ -23,12 +23,12 @@ ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7ec7527e51175b82d06a35ad7a6bc26856acf5dd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c0344b9961e7ade31864d70c7d7422f328983abd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925128"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100970"
 ---
 # <a name="how-to-use-a-visualizer"></a>Como: Usar um visualizador
 Você pode usar um visualizador para exibir o conteúdo de uma variável ou objeto de uma maneira que seja mais significativa para o tipo de dados. Você pode usar visualizadores de **DataTips**, um **inspeção** janela, o **Autos** janela, ou o **Locals** janela.  
@@ -40,15 +40,15 @@ Você pode usar um visualizador para exibir o conteúdo de uma variável ou obje
   
 ### <a name="to-open-a-visualizer"></a>Para abrir um visualizador  
   
-1.  Clique no ícone de lupa que aparece ao lado do nome da variável no **DataTips**, um **inspeção** janela, ou nos **Autos**, **Locals**, ou **Inspeção rápida** janela.  
+1. Clique no ícone de lupa que aparece ao lado do nome da variável no **DataTips**, um **inspeção** janela, ou nos **Autos**, **Locals**, ou **Inspeção rápida** janela.  
   
      Uma lista de visualizadores é exibida.  
   
-2.  Clique no visualizador que você deseja usar.  
+2. Clique no visualizador que você deseja usar.  
   
 ### <a name="to-use-a-visualizer-for-managed-code-during-remote-debugging"></a>Para usar um visualizador para o código gerenciado durante a depuração remota  
   
--   Copie a DLL do visualizador para o computador remoto antes de iniciar a sessão de depuração.  
+- Copie a DLL do visualizador para o computador remoto antes de iniciar a sessão de depuração.  
   
      O caminho para a DLL deve ser o mesmo nos computadores local e remoto. Esse caminho pode ser qualquer um dos seguintes locais:  
   

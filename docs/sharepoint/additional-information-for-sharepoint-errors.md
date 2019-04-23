@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: afbfaae56470fa9b16c99277d36b0e39a6504906
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 362eb5fd1973035e31ccd301f6cc46a748a9b2ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628904"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60099722"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>Informações adicionais sobre erros do SharePoint
   Você pode encontrar assistência na solução de problemas [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] erros e avisos em fóruns públicos do e tópicos de solução de problemas de ferramentas do SharePoint.
@@ -29,11 +29,11 @@ ms.locfileid: "56628904"
 ## <a name="troubleshoot-errors-and-issues"></a>Solução de problemas e erros
  Para obter assistência com alguns erros comuns e outros problemas no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ferramentas do SharePoint, consulte os seguintes tópicos:
 
--   [Solucionar problemas de soluções do SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)
+- [Solucionar problemas de soluções do SharePoint](../sharepoint/troubleshooting-sharepoint-solutions.md)
 
--   [Depurar soluções do SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
+- [Depurar soluções do SharePoint](../sharepoint/debugging-sharepoint-solutions.md)
 
--   [Solucionar problemas de implantação e empacotamento do SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
+- [Solucionar problemas de implantação e empacotamento do SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 
 ## <a name="other-resources"></a>Outros recursos
  A seguinte tabela lista o [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] fóruns e outros recursos disponíveis de ferramentas do SharePoint.

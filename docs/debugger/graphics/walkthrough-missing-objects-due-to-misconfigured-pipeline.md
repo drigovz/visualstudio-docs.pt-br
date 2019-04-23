@@ -8,25 +8,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b32b76a4f063cd15d5f36db6ea8b672dbeda4d54
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: edffb60e59d2f8a9c8c9fe417bedb4d578215c9c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56698047"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097603"
 ---
-# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Instruções passo a passo: objetos ausentes devido ao pipeline configurado incorretamente
+# <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Passo a passo: Objetos ausentes devido a configuração incorreta do pipeline
 Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ferramentas de diagnóstico de gráficos para investigar um objeto que está faltando devido a um sombreador de pixel não definidas.
 
  Este passo a passo ilustra essas tarefas:
 
--   Usando o **lista de eventos gráficos** para localizar fontes potenciais do problema.
+- Usando o **lista de eventos gráficos** para localizar fontes potenciais do problema.
 
--   Usando o **estágios de Pipeline gráficos** janela para examinar o efeito do `DrawIndexed` chamada à API do Direct3D.
+- Usando o **estágios de Pipeline gráficos** janela para examinar o efeito do `DrawIndexed` chamada à API do Direct3D.
 
--   Inspecionando o contexto de dispositivo para confirmar que um estágio de sombreador não foi definido.
+- Inspecionando o contexto de dispositivo para confirmar que um estágio de sombreador não foi definido.
 
--   Usando o **estágios de Pipeline gráficos** janela junto com o **pilha de chamadas do evento de gráficos** para ajudar a encontrar a fonte do sombreador de pixel não definidas.
+- Usando o **estágios de Pipeline gráficos** janela junto com o **pilha de chamadas do evento de gráficos** para ajudar a encontrar a fonte do sombreador de pixel não definidas.
 
 ## <a name="scenario"></a>Cenário
  Quando um objeto está ausente em um aplicativo 3D, às vezes, é porque um dos estágios do sombreador não está definido antes que o objeto é renderizado. Em aplicativos que têm necessidades de processamento simples, a origem desse erro é geralmente localizada em algum lugar na pilha de chamadas de chamada de desenho do objeto. No entanto, como uma otimização, alguns objetos de lote juntos de aplicativos que têm programas de sombreador, texturas ou outros dados em comum para minimizar a alteração de estadom sobrecarga. Esses aplicativos, a origem do erro pode ser escondida no sistema de envio em lote, em vez de localizado na pilha de chamadas da chamada de desenho. O cenário neste passo a passo demonstra um aplicativo que tem necessidades de processamento simples e, portanto, a origem do erro pode ser encontrada na pilha de chamadas.

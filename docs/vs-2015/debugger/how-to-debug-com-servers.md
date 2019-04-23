@@ -23,12 +23,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a7548b100e5bbcccd75a3cd5e7d94d6e7f72ed48
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3552ff1ffb5d6b3e3789aebd3a8903bf82a66b16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927370"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088308"
 ---
 # <a name="how-to-debug-com-servers"></a>Como: Depurar servidores COM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,11 +39,11 @@ Depurar os aplicativos de servidor COM apresenta um conjunto exclusivo de proble
   
 ### <a name="to-debug-a-server-application-without-container-information"></a>Para depurar um aplicativo de servidor sem informações de contêiner  
   
-1.  Inicie a depuração do servidor como um aplicativo normal.  
+1. Inicie a depuração do servidor como um aplicativo normal.  
   
-2.  Defina pontos de interrupção como desejados.  
+2. Defina pontos de interrupção como desejados.  
   
-3.  Inicie o aplicativo de contêiner.  
+3. Inicie o aplicativo de contêiner.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depuração de COM e ActiveX](../debugger/com-and-activex-debugging.md)   

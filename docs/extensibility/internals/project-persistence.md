@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5c195697a94462ce1239318a309160220117b8e
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: c19b623efca921e7557a818c3915faf6ea158641
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146520"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087297"
 ---
 # <a name="project-persistence"></a>Persistência de projeto
 Persistência é uma consideração de design chave para seu projeto. A maioria dos projetos usar itens de projeto que representam arquivos; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] também oferece suporte a projetos cujos dados são não baseados em arquivo. Os arquivos de propriedade do projeto e o arquivo de projeto devem ser persistente. O IDE instrui o projeto para salvar a mesmo ou para um item de projeto.
@@ -25,9 +25,9 @@ Persistência é uma consideração de design chave para seu projeto. A maioria 
 
  Itens de projeto podem ser baseado em arquivo ou não se baseiam no arquivo:
 
--   Itens com base em arquivo podem ser local ou remoto. Em projetos da Web em C#, por exemplo, conexões com arquivos em um sistema remoto persistem localmente, enquanto que os próprios arquivos persistirem no sistema remoto.
+- Itens com base em arquivo podem ser local ou remoto. Em projetos da Web em c#, por exemplo, conexões com arquivos em um sistema remoto persistem localmente, enquanto que os próprios arquivos persistirem no sistema remoto.
 
--   Itens com base em arquivo não podem salvar os itens a um banco de dados ou o repositório.
+- Itens com base em arquivo não podem salvar os itens a um banco de dados ou o repositório.
 
 ## <a name="commit-models"></a>Modelos de confirmação
  Depois de decidir onde se encontram os itens de projeto, você deve escolher o modelo apropriado de confirmação. Por exemplo, em um modelo baseado em arquivo com arquivos locais, cada projeto pode ser salvo com autonomia. Em um modelo de repositório, você pode salvar vários itens em uma transação. Para obter mais informações, consulte [decisões de Design de tipo de projeto](../../extensibility/internals/project-type-design-decisions.md).

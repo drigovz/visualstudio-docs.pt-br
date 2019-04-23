@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f8e3f4d53b0a8b79367064761ba0fc5b901dc5e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: d694fe9bb614acfd80e5ec1b9f6bed166775c214
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670063"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091467"
 ---
 # <a name="how-to-select-the-xml-schemas-to-use"></a>Como: Selecionar os esquemas XML que serão usados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,23 +50,23 @@ O editor XML fornece um cache de esquema %InstallDir% localizado no diretório \
   
 ### <a name="to-add-an-xml-schema-to-the-schema-cache"></a>Para adicionar um esquema XML para o cache de esquema  
   
-1.  Na janela de propriedades do documento, clique no botão sobre a **esquemas** campo.  
+1. Na janela de propriedades do documento, clique no botão sobre a **esquemas** campo.  
   
-2.  Clique em **Adicionar**.  
+2. Clique em **Adicionar**.  
   
      Isso abre o **abrir esquema XSD** caixa de diálogo.  
   
-3.  Procurar e selecione os esquemas para adicionar ao cache de esquema.  
+3. Procurar e selecione os esquemas para adicionar ao cache de esquema.  
   
-4.  Clique em **Abrir**.  
+4. Clique em **Abrir**.  
   
      Os esquemas adicionados ao esquema armazenam em cache e é o **uso** o valor da coluna é definido como **usar este esquema**.  
   
 ### <a name="to-delete-an-xml-schema-from-the-schema-cache"></a>Para excluir um esquema XML de cache do esquema  
   
-1.  Na janela de propriedades do documento, clique no botão sobre a **esquemas** campo.  
+1. Na janela de propriedades do documento, clique no botão sobre a **esquemas** campo.  
   
-2.  Selecione o esquema para remover e, em seguida, clique em **remover**.  
+2. Selecione o esquema para remover e, em seguida, clique em **remover**.  
   
      O esquema é removido do cache de memória do esquema, mas não é removido do sistema de arquivos.  
   

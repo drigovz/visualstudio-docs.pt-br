@@ -13,12 +13,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be99c10a999ec190f538816e39eac411dc85544e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: daace3e78cca67fd9b44144cd6c8a5608dbd9a1e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54763368"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111188"
 ---
 # <a name="disk-operations-report-threads-view"></a>Relatório de operações de disco (exibição de threads)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,23 +27,23 @@ O relatório de operações de disco mostra operações de E/S de disco em canai
   
  Para cada acesso ao disco que ocorre em nome do processo que está sendo atribuído na janela de tempo visível no momento, essas informações são relatadas:  
   
--   O nome e o PID do processo que executou o acesso ao disco  
+- O nome e o PID do processo que executou o acesso ao disco  
   
--   A ID do thread que acessou o disco  
+- A ID do thread que acessou o disco  
   
--   O nome do arquivo que foi acessado  
+- O nome do arquivo que foi acessado  
   
--   O número de leituras por arquivo  
+- O número de leituras por arquivo  
   
--   O número de bytes lidos  
+- O número de bytes lidos  
   
--   A latência de leitura, em milissegundos  
+- A latência de leitura, em milissegundos  
   
--   O número de gravações  
+- O número de gravações  
   
--   O número de bytes gravados  
+- O número de bytes gravados  
   
--   A latência de gravação, em milissegundos  
+- A latência de gravação, em milissegundos  
   
 ## <a name="see-also"></a>Consulte também  
  [Exibição de Threads](../profiling/threads-view-parallel-performance.md)

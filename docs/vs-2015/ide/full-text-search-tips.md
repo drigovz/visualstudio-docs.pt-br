@@ -14,12 +14,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a015aeff983979bbb8f6ddedc245c74d3fb5f77b
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 686bf7962e164e718f007a44c83febfc8f49418d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54791702"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108367"
 ---
 # <a name="full-text-search-tips"></a>Dicas de pesquisa de texto completo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Um dos métodos mais úteis para localizar informações na Ajuda é executando 
   
 > [!IMPORTANT]
 > 1. Não há suporte para pesquisas de frase. Se você especificar mais de uma palavra em uma cadeia de caracteres de pesquisa, os tópicos retornados conterão todas as palavras especificadas, mas não necessariamente a frase exata especificada.  
->    2.  Use operadores lógicos para especificar a relação entre as palavras em sua frase de pesquisa. É possível incluir operadores lógicos como AND, OR, NOT e NEAR para refinar ainda mais a sua pesquisa. Por exemplo, se você pesquisar "declarando NEAR união", os resultados da pesquisa incluirão tópicos que contêm as palavras "declarando" e "união" com poucas palavras entre as duas. Para obter mais informações, consulte [Operadores lógicos em expressões de pesquisa](../ide/logical-operators-in-search-expressions.md).  
+>    2. Use operadores lógicos para especificar a relação entre as palavras em sua frase de pesquisa. É possível incluir operadores lógicos como AND, OR, NOT e NEAR para refinar ainda mais a sua pesquisa. Por exemplo, se você pesquisar "declarando NEAR união", os resultados da pesquisa incluirão tópicos que contêm as palavras "declarando" e "união" com poucas palavras entre as duas. Para obter mais informações, consulte [Operadores lógicos em expressões de pesquisa](../ide/logical-operators-in-search-expressions.md).  
   
 ### <a name="filters"></a>Filtros  
  É possível restringir ainda mais os resultados da pesquisa usando operadores de pesquisa avançada. A Ajuda inclui três categorias que você pode usar para filtrar os resultados de uma pesquisa de texto completo: Título, Código e Palavra-chave. Para obter mais informações, consulte [Operadores de pesquisa avançada em expressões de pesquisa](../ide/advanced-search-operators-in-search-expressions.md).  
@@ -51,11 +51,11 @@ Um dos métodos mais úteis para localizar informações na Ajuda é executando 
 ### <a name="ranking-of-search-results"></a>Classificação de resultados da pesquisa  
  O algoritmo de pesquisa é aplicável a determinados critérios para ajudar a classificar resultados da pesquisa superiores ou inferiores na lista de resultados. No geral:  
   
-1.  O conteúdo que inclui palavras de pesquisa no título tem uma classificação mais alta do que o conteúdo que não inclui.  
+1. O conteúdo que inclui palavras de pesquisa no título tem uma classificação mais alta do que o conteúdo que não inclui.  
   
-2.  O conteúdo que inclui palavras de pesquisa muito próximas tem uma classificação mais alta do que o conteúdo que não inclui.  
+2. O conteúdo que inclui palavras de pesquisa muito próximas tem uma classificação mais alta do que o conteúdo que não inclui.  
   
-3.  O conteúdo com uma densidade maior das palavras de pesquisa tem uma classificação mais alta do que o conteúdo que tem uma densidade menor das palavras de pesquisa.  
+3. O conteúdo com uma densidade maior das palavras de pesquisa tem uma classificação mais alta do que o conteúdo que tem uma densidade menor das palavras de pesquisa.  
   
 ### <a name="words-ignored-in-searches-stop-words"></a>Palavras ignoradas em pesquisas (palavras irrelevantes)  
  Palavras ou números que ocorrem com frequência, chamados de palavras irrelevantes, são automaticamente ignorados durante uma pesquisa de texto completo. Por exemplo, se você pesquisar a frase "passar por", os resultados da pesquisa exibirão tópicos que contêm a palavra "passar", mas não "por".  

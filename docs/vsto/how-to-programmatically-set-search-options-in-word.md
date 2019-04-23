@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e7443a4789008f3bb5992695761dff228bd32298
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6e3b66bfd7f3f5d0ef0f4893efeb81c80df5d4ae
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601402"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093508"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>Como: Definir programaticamente as opções de pesquisa no Word
   Há duas maneiras de definir opções de pesquisa para seleções em documentos do Microsoft Office Word:
@@ -38,7 +38,7 @@ ms.locfileid: "56601402"
 
 ### <a name="to-set-search-options-using-a-find-object"></a>Para definir opções de pesquisa usando um objeto Find
 
-1.  Definir as propriedades de um <xref:Microsoft.Office.Interop.Word.Find> objeto para pesquisar adiante por meio de uma seleção para o texto **estou me**.
+1. Definir as propriedades de um <xref:Microsoft.Office.Interop.Word.Find> objeto para pesquisar adiante por meio de uma seleção para o texto **estou me**.
 
      [!code-vb[Trin_VstcoreWordAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#76)]
 
@@ -47,7 +47,7 @@ ms.locfileid: "56601402"
 
 ### <a name="to-set-search-options-using-execute-method-arguments"></a>Para definir opções de pesquisa usando os argumentos de método Execute
 
-1.  Passe critérios de pesquisa como parâmetros do <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> método para pesquisar adiante por meio de uma seleção para o texto **estou me**.
+1. Passe critérios de pesquisa como parâmetros do <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> método para pesquisar adiante por meio de uma seleção para o texto **estou me**.
 
      [!code-vb[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#77)]
      [!code-csharp[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#77)]

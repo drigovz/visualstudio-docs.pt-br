@@ -13,12 +13,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a62aacf8ad702aca19531876c57aaf45b10ce639
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccf761521d43e3f5ff9d12a4af7fbae4addcddc9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924277"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100515"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizando a criação e o movimento de elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,9 +89,9 @@ Você pode permitir que um elemento a ser arrastado para outro, na caixa de ferr
   
 2. Para que os usuários a mesclagem de elementos no `ExampleElement` formas, crie um novo EMD no `ExampleElement` classe de domínio:  
   
-   1.  Na **Gerenciador de DSL**, expanda **Classes de domínio**. Clique com botão direito `ExampleElement` e, em seguida, clique em **adicionar nova diretiva Element Merge**.  
+   1. Na **Gerenciador de DSL**, expanda **Classes de domínio**. Clique com botão direito `ExampleElement` e, em seguida, clique em **adicionar nova diretiva Element Merge**.  
   
-   2.  Certifique-se de que o **detalhes de DSL** janela estiver aberta, para que você possa ver os detalhes de EMD o novo. (Menu: **Exiba**, **outros Windows**, **detalhes de DSL**.)  
+   2. Certifique-se de que o **detalhes de DSL** janela estiver aberta, para que você possa ver os detalhes de EMD o novo. (Menu: **Exiba**, **outros Windows**, **detalhes de DSL**.)  
   
 3. Defina as **classe de indexação** na janela de detalhes de DSL, para definir a classe de elementos pode ser mesclado com `ExampleElement` objetos.  
   
@@ -119,29 +119,29 @@ Você pode permitir que um elemento a ser arrastado para outro, na caixa de ferr
   
 5. Teste o DSL:  
   
-   1.  Pressione F5 para recompilar e executar a solução.  
+   1. Pressione F5 para recompilar e executar a solução.  
   
         Recriando levará mais tempo do que o normal porque o código gerado será atualizado a partir de modelos de texto em conformidade com a nova definição de DSL.  
   
-   2.  Quando a instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tiver iniciado, abra um arquivo de modelo de sua DSL. Crie alguns elementos de exemplo.  
+   2. Quando a instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] tiver iniciado, abra um arquivo de modelo de sua DSL. Crie alguns elementos de exemplo.  
   
-   3.  Arraste o **elemento de exemplo** ferramenta em uma forma existente.  
+   3. Arraste o **elemento de exemplo** ferramenta em uma forma existente.  
   
         Uma nova forma é exibido e ele está vinculado a forma com um conector existente.  
   
-   4.  Copie uma forma existente. Selecione outra forma e colar.  
+   4. Copie uma forma existente. Selecione outra forma e colar.  
   
         Uma cópia da primeira forma é criada.  Ele tem um novo nome e ele está vinculado a segunda forma com um conector.  
   
    Observe os seguintes pontos deste procedimento:  
   
--   Criando diretivas de mesclagem de elementos, você pode permitir que qualquer classe de elemento para aceitar qualquer outro. O EMD é criado na classe do receptor do domínio e a classe de domínio aceito é especificada na **classe Index** campo.  
+- Criando diretivas de mesclagem de elementos, você pode permitir que qualquer classe de elemento para aceitar qualquer outro. O EMD é criado na classe do receptor do domínio e a classe de domínio aceito é especificada na **classe Index** campo.  
   
--   Ao definir caminhos, você pode especificar quais links deve ser usado para conectar o novo elemento ao modelo existente.  
+- Ao definir caminhos, você pode especificar quais links deve ser usado para conectar o novo elemento ao modelo existente.  
   
      Os links que você especificar deve incluir uma relação de incorporação.  
   
--   O EMD afeta a criação da caixa de ferramentas e também operações de colagem.  
+- O EMD afeta a criação da caixa de ferramentas e também operações de colagem.  
   
      Se você escrever código personalizado que cria novos elementos, você pode invocar explicitamente o EMD usando o `ElementOperations.Merge` método. Isso garante que seu código vincula novos elementos no modelo da mesma forma como outras operações. Para obter mais informações, consulte [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md).  
   
@@ -150,21 +150,21 @@ Você pode permitir que um elemento a ser arrastado para outro, na caixa de ferr
   
 #### <a name="to-write-custom-accept-code-to-restrict-what-the-user-can-add"></a>Escrever código aceitação personalizada para restringir o que o usuário pode adicionar  
   
-1.  Criar uma DSL usando o **linguagem mínima** modelo de solução. Abra o diagrama de definição de DSL.  
+1. Criar uma DSL usando o **linguagem mínima** modelo de solução. Abra o diagrama de definição de DSL.  
   
-2.  No DSL Explorer, expanda **Classes de domínio**, `ExampleModel`, **diretivas de mesclagem de elementos**. Selecione a diretiva element merge chamado `ExampleElement`.  
+2. No DSL Explorer, expanda **Classes de domínio**, `ExampleModel`, **diretivas de mesclagem de elementos**. Selecione a diretiva element merge chamado `ExampleElement`.  
   
      Este EMD controla como o usuário pode criar novos `ExampleElement` objetos no modelo, por exemplo, arrastando da caixa de ferramentas.  
   
-3.  No **detalhes de DSL** janela, selecione **aceitação personalizada usa**.  
+3. No **detalhes de DSL** janela, selecione **aceitação personalizada usa**.  
   
-4.  Recompile a solução. Isso levará mais tempo porque o código gerado será atualizado do modelo.  
+4. Recompile a solução. Isso levará mais tempo porque o código gerado será atualizado do modelo.  
   
      Um erro de compilação será relatado, semelhante a: "Company.ElementMergeSample.ExampleElement não contém uma definição para CanMergeExampleElement..."  
   
      Você deve implementar o método `CanMergeExampleElement`.  
   
-5.  Criar um novo arquivo de código na **Dsl** projeto. Substitua seu conteúdo pelo código a seguir e altere o namespace para o namespace do seu projeto.  
+5. Criar um novo arquivo de código na **Dsl** projeto. Substitua seu conteúdo pelo código a seguir e altere o namespace para o namespace do seu projeto.  
   
     ```csharp  
     using Microsoft.VisualStudio.Modeling;  
@@ -194,19 +194,19 @@ Você pode permitir que um elemento a ser arrastado para outro, na caixa de ferr
   
      Este exemplo simple restringe o número de elementos que podem ser mescladas no modelo pai. Para condições mais interessantes, o método pode inspecionar qualquer uma das propriedades e links do objeto de recebimento. Ele também pode inspecionar as propriedades dos elementos de mesclagem, que são executadas em um <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. Para obter mais informações sobre `ElementGroupPrototypes`, consulte [Personalizando o comportamento de cópia](../modeling/customizing-copy-behavior.md). Para obter mais informações sobre como escrever código que lê um modelo, consulte [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
-6.  Teste o DSL:  
+6. Teste o DSL:  
   
-    1.  Pressione F5 para recompilar a solução. Quando a instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é aberta, abra uma instância de sua DSL.  
+    1. Pressione F5 para recompilar a solução. Quando a instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é aberta, abra uma instância de sua DSL.  
   
-    2.  Crie novos elementos de várias maneiras:  
+    2. Crie novos elementos de várias maneiras:  
   
-        1.  Arraste o **elemento de exemplo** ferramenta para o diagrama.  
+        1. Arraste o **elemento de exemplo** ferramenta para o diagrama.  
   
-        2.  No **Gerenciador de modelos de exemplo**, clique com botão direito no nó raiz e, em seguida, clique em **adicionar novo elemento de exemplo**.  
+        2. No **Gerenciador de modelos de exemplo**, clique com botão direito no nó raiz e, em seguida, clique em **adicionar novo elemento de exemplo**.  
   
-        3.  Copie e cole um elemento no diagrama.  
+        3. Copie e cole um elemento no diagrama.  
   
-    3.  Verifique se que você não pode usar qualquer uma das seguintes maneiras para adicionar mais de quatro elementos ao modelo. Isso ocorre porque todos eles usam a diretiva de mesclagem.  
+    3. Verifique se que você não pode usar qualquer uma das seguintes maneiras para adicionar mais de quatro elementos ao modelo. Isso ocorre porque todos eles usam a diretiva de mesclagem.  
   
 ## <a name="example-adding-custom-merge-code-to-an-emd"></a>Exemplo: Adicionar código personalizado de mesclagem em uma EMD  
  No código personalizado de mesclagem, você pode definir o que acontece quando o usuário arrasta uma ferramenta ou cola em um elemento. Há duas maneiras de definir uma mesclagem personalizada:  
@@ -219,19 +219,19 @@ Você pode permitir que um elemento a ser arrastado para outro, na caixa de ferr
   
 #### <a name="to-override-mergerelate"></a>Para substituir MergeRelate  
   
-1.  Na definição de DSL, certifique-se de que você definiu o EMD ao qual você deseja adicionar o código. Se você quiser, você pode adicionar caminhos e definir código de aceitação personalizada conforme descrito nas seções anteriores.  
+1. Na definição de DSL, certifique-se de que você definiu o EMD ao qual você deseja adicionar o código. Se você quiser, você pode adicionar caminhos e definir código de aceitação personalizada conforme descrito nas seções anteriores.  
   
-2.  No diagrama DslDefinition, selecione a classe de recebimento da mesclagem. Geralmente, é a classe na extremidade de origem de uma relação de incorporação.  
+2. No diagrama DslDefinition, selecione a classe de recebimento da mesclagem. Geralmente, é a classe na extremidade de origem de uma relação de incorporação.  
   
      Por exemplo, em uma DSL gerada a partir da solução de linguagem mínima, selecione `ExampleModel`.  
   
-3.  No **propriedades** janela, defina **gera derivado duplo** para **verdadeiro**.  
+3. No **propriedades** janela, defina **gera derivado duplo** para **verdadeiro**.  
   
-4.  Recompile a solução.  
+4. Recompile a solução.  
   
-5.  Inspecionar o conteúdo do **Dsl\Generated Files\DomainClasses.cs**. Procure métodos chamados `MergeRelate` e examine seu conteúdo. Isso ajudará você a escrever suas próprias versões.  
+5. Inspecionar o conteúdo do **Dsl\Generated Files\DomainClasses.cs**. Procure métodos chamados `MergeRelate` e examine seu conteúdo. Isso ajudará você a escrever suas próprias versões.  
   
-6.  Em um novo arquivo de código, escrever uma classe parcial para a classe de recebimento e substituir o `MergeRelate` método. Lembre-se de chamar o método base. Por exemplo:  
+6. Em um novo arquivo de código, escrever uma classe parcial para a classe de recebimento e substituir o `MergeRelate` método. Lembre-se de chamar o método base. Por exemplo:  
   
     ```csharp  
     partial class ExampleModel  
@@ -285,23 +285,23 @@ Você pode permitir que um elemento a ser arrastado para outro, na caixa de ferr
   
 #### <a name="to-create-a-forward-merge-directive"></a>Para criar uma diretiva de mesclagem de encaminhamento  
   
-1.  Criar um [!INCLUDE[dsl](../includes/dsl-md.md)] solução usando o modelo do modelo de componente.  
+1. Criar um [!INCLUDE[dsl](../includes/dsl-md.md)] solução usando o modelo do modelo de componente.  
   
-2.  Exibição de **Gerenciador de DSL** abrindo Dsldefinition.  
+2. Exibição de **Gerenciador de DSL** abrindo Dsldefinition.  
   
-3.  No **Gerenciador de DSL**, expanda **Classes de domínio**.  
+3. No **Gerenciador de DSL**, expanda **Classes de domínio**.  
   
-4.  O **ComponentPort** classe de domínio abstrata é a classe base de ambos **InPort** e **OutPort**. Clique com botão direito **ComponentPort** e, em seguida, clique em **adicionar nova diretiva Element Merge**.  
+4. O **ComponentPort** classe de domínio abstrata é a classe base de ambos **InPort** e **OutPort**. Clique com botão direito **ComponentPort** e, em seguida, clique em **adicionar nova diretiva Element Merge**.  
   
      Uma nova **diretiva Element Merge** nó aparece sob o **diretivas de mesclagem de elementos** nó.  
   
-5.  Selecione o **diretiva Element Merge** nó e abra o **detalhes de DSL** janela.  
+5. Selecione o **diretiva Element Merge** nó e abra o **detalhes de DSL** janela.  
   
-6.  Na lista de classe de indexação, selecione **ComponentPort**.  
+6. Na lista de classe de indexação, selecione **ComponentPort**.  
   
-7.  Selecione **encaminhar mesclagem para uma classe de domínio diferentes**.  
+7. Selecione **encaminhar mesclagem para uma classe de domínio diferentes**.  
   
-8.  Na lista de seleção de caminho, expanda **ComponentPort**, expanda **ComponentHasPorts**e, em seguida, selecione **componente**.  
+8. Na lista de seleção de caminho, expanda **ComponentPort**, expanda **ComponentHasPorts**e, em seguida, selecione **componente**.  
   
      O novo caminho deve ser semelhante a esta:  
   

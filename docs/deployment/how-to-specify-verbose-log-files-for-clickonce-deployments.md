@@ -1,5 +1,5 @@
 ---
-title: 'Como: especificar arquivos de Log detalhados para implantações do ClickOnce | Microsoft Docs'
+title: 'Como: Especificar arquivos de Log detalhados para implantações do ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -15,14 +15,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ffc7fbdace660a894352623a3ff8765a165b5556
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 70c83c31ba8c415de9c2a7be8f60c9c6ee8ba9ac
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56619492"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60111526"
 ---
-# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Como especificar arquivos de log detalhados para implantações do ClickOnce
+# <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Como: Especificar arquivos de log detalhados para implantações do ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] mantém os arquivos de log de atividades para todas as implantações. Esses logs documentar detalhes referentes à instalação, inicializando, atualizando e desinstalando uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação. Para aumentar o detalhe que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] gravações para esses arquivos de log, use o Editor do registro (*regedit.exe*) para especificar o nível de detalhamento.
 
 > [!CAUTION]
@@ -32,13 +32,13 @@ ms.locfileid: "56619492"
 
 ### <a name="to-specify-verbose-log-files"></a>Para especificar os arquivos de log detalhados
 
-1.  Abra *Regedit.exe*.
+1. Abra *Regedit.exe*.
 
-2.  Navegue até o nó **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**.
+2. Navegue até o nó **HKEY_CURRENT_USER\Software\Classes\Software\Microsoft\Windows\CurrentVersion\Deployment**.
 
-3.  Se necessário, crie um novo valor de cadeia de caracteres chamado `LogVerbosityLevel`.
+3. Se necessário, crie um novo valor de cadeia de caracteres chamado `LogVerbosityLevel`.
 
-4.  Defina as `LogVerbosityLevel` valor `1`.
+4. Defina as `LogVerbosityLevel` valor `1`.
 
 ## <a name="see-also"></a>Consulte também
 - [Solucionar problemas de implantações do ClickOnce](../deployment/troubleshooting-clickonce-deployments.md)

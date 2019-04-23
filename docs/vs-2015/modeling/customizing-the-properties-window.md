@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c2a4e9075bc45c052f28ee4a20e34c16651211a9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1c346cc488966448cc1b77b624c80fe602555840
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926769"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60088789"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizando a janela de propriedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,13 +51,13 @@ Você pode personalizar a aparência e comportamento da janela Propriedades em s
 ### <a name="default-property-forwarding-cases"></a>Casos de encaminhamento de propriedade padrão  
  Quando o usuário seleciona uma forma ou conector ou um elemento no Explorer, as propriedades a seguir são exibidas na janela Propriedades:  
   
--   As propriedades de domínio que são definidas na classe de domínio do elemento de modelo, incluindo aqueles que são definidos nas classes base. Uma exceção é que as propriedades de domínio para o qual você definiu **é navegável** para `False`.  
+- As propriedades de domínio que são definidas na classe de domínio do elemento de modelo, incluindo aqueles que são definidos nas classes base. Uma exceção é que as propriedades de domínio para o qual você definiu **é navegável** para `False`.  
   
--   Os nomes dos elementos que são vinculados por meio de relações que tenham uma multiplicidade de 0 a 1. Isso fornece um método conveniente de ver opcionalmente vinculado elementos, mesmo se você não definiu um mapeamento de conector para a relação.  
+- Os nomes dos elementos que são vinculados por meio de relações que tenham uma multiplicidade de 0 a 1. Isso fornece um método conveniente de ver opcionalmente vinculado elementos, mesmo se você não definiu um mapeamento de conector para a relação.  
   
--   Propriedades do domínio da relação inserida que tem como alvo o elemento. Porque as relações de incorporação não são geralmente exibidas explicitamente, isso permite que o usuário veja suas propriedades.  
+- Propriedades do domínio da relação inserida que tem como alvo o elemento. Porque as relações de incorporação não são geralmente exibidas explicitamente, isso permite que o usuário veja suas propriedades.  
   
--   Propriedades de domínio que são definidas no conector ou forma selecionada.  
+- Propriedades de domínio que são definidas no conector ou forma selecionada.  
   
 ### <a name="adding-property-forwarding"></a>Adicionando o encaminhamento de propriedade  
  Para encaminhar uma propriedade, você deve definir um descritor de tipo de domínio. Se você tiver uma relação de domínio entre duas classes de domínio, você pode usar um descritor de tipo de domínio para definir uma propriedade de domínio na primeira classe para o valor de uma propriedade de domínio na classe de domínio de segundo. Por exemplo, se você tiver uma relação entre um **livro** classe de domínio e um **autor** classe de domínio, você pode usar um descritor de tipo de domínio para fazer o **nome** propriedade de um Do livro **autor** aparecem na janela Propriedades quando o usuário seleciona o livro.  
@@ -69,29 +69,29 @@ Você pode personalizar a aparência e comportamento da janela Propriedades em s
   
 ##### <a name="to-forward-a-property-from-another-element"></a>Para encaminhar uma propriedade de outro elemento  
   
-1.  Criar uma [!INCLUDE[dsl](../includes/dsl-md.md)] solução que contenha pelo menos duas classes, que, neste exemplo, são chamados **livro** e **autor**. Deve haver uma relação de qualquer um dos tipos entre **livro** e **autor**.  
+1. Criar uma [!INCLUDE[dsl](../includes/dsl-md.md)] solução que contenha pelo menos duas classes, que, neste exemplo, são chamados **livro** e **autor**. Deve haver uma relação de qualquer um dos tipos entre **livro** e **autor**.  
   
      A multiplicidade da função de origem (a função na **livro** lado) deve ser entre 0 e 1. 1 ou 1, para que cada **livro** tem um **autor**.  
   
-2.  No **Gerenciador de DSL**, com o botão direito do **livro** classe de domínio e, em seguida, clique **o novo DomainTypeDescriptor adicionar**.  
+2. No **Gerenciador de DSL**, com o botão direito do **livro** classe de domínio e, em seguida, clique **o novo DomainTypeDescriptor adicionar**.  
   
      Um nó chamado **caminhos de descritores de propriedade personalizada** aparece sob o **descritor de tipo personalizado** nó.  
   
-3.  Com o botão direito do **descritor de tipo personalizado** nó e clique **adicionar novo PropertyPath**.  
+3. Com o botão direito do **descritor de tipo personalizado** nó e clique **adicionar novo PropertyPath**.  
   
      Um novo caminho de propriedade aparece sob o **caminhos de descritores de propriedade personalizada** nó.  
   
-4.  Selecione o novo caminho de propriedade e, na **propriedades** janela, defina **caminho para a propriedade** para o caminho do elemento de modelo apropriado.  
+4. Selecione o novo caminho de propriedade e, na **propriedades** janela, defina **caminho para a propriedade** para o caminho do elemento de modelo apropriado.  
   
      Você pode editar o caminho em uma exibição de árvore clicando na seta para baixo à direita dessa propriedade. Para obter mais informações sobre os caminhos de domínio, consulte [sintaxe de caminho de domínio](../modeling/domain-path-syntax.md). Quando você edita-lo, o caminho deve se parecer com **BookReferencesAuthor.Author/! Autor**.  
   
-5.  Definir **propriedade** para o **nome** propriedade domain da **autor**.  
+5. Definir **propriedade** para o **nome** propriedade domain da **autor**.  
   
-6.  Definir **nome de exibição** à **nome do autor**.  
+6. Definir **nome de exibição** à **nome do autor**.  
   
-7.  Transformar todos os modelos, compile e execute a DSL.  
+7. Transformar todos os modelos, compile e execute a DSL.  
   
-8.  Em um diagrama de modelo, crie um livro, um autor e vinculá-los usando a relação de referência. Selecione o elemento de livro e na janela Propriedades, você verá o nome do autor além das propriedades do livro. Altere o nome do autor vinculado, ou vincular o livro a um autor de diferente e observe que o nome do autor do livro é alterado.  
+8. Em um diagrama de modelo, crie um livro, um autor e vinculá-los usando a relação de referência. Selecione o elemento de livro e na janela Propriedades, você verá o nome do autor além das propriedades do livro. Altere o nome do autor vinculado, ou vincular o livro a um autor de diferente e observe que o nome do autor do livro é alterado.  
   
 ## <a name="custom-property-editors"></a>Editores de propriedade personalizada  
  A janela de propriedade fornece um padrão apropriado experiência para o tipo de cada propriedade de domínio de edição. Por exemplo, para um tipo enumerado, o usuário vê uma lista suspensa e, para uma propriedade numérica, o usuário pode inserir os dígitos. Isso somente é verdadeiro para os tipos internos. Se você especificar um tipo externo, o usuário será capaz de ver os valores da propriedade, mas não editá-lo.  
@@ -116,14 +116,14 @@ Você pode personalizar a aparência e comportamento da janela Propriedades em s
   
 2. Adicione o tipo para o **tipos de domínio** lista, a menos que você já tiver feito isso.  
   
-   1.  Abra o Dsldefinition e, na **Gerenciador de DSL**, clique com botão direito no nó raiz e, em seguida, clique em **adicionar novo tipo externo**.  
+   1. Abra o Dsldefinition e, na **Gerenciador de DSL**, clique com botão direito no nó raiz e, em seguida, clique em **adicionar novo tipo externo**.  
   
         Uma nova entrada aparece sob o **tipos de domínio** nó.  
   
        > [!WARNING]
        >  O item de menu não está no nó raiz do DSL, o **tipos de domínio** nó.  
   
-   2.  Na janela Propriedades, defina o nome e o namespace do novo tipo.  
+   2. Na janela Propriedades, defina o nome e o namespace do novo tipo.  
   
 3. Adicione uma propriedade de domínio a uma classe de domínio da maneira usual.  
   
@@ -149,9 +149,9 @@ Você pode personalizar a aparência e comportamento da janela Propriedades em s
   
 ##### <a name="to-define-a-file-name-domain-property"></a>Para definir uma propriedade de domínio de nome de arquivo  
   
-1.  Adicione uma propriedade de domínio a uma classe de domínio em sua definição de DSL.  
+1. Adicione uma propriedade de domínio a uma classe de domínio em sua definição de DSL.  
   
-2.  Selecione a nova propriedade. No **atributo personalizado** na janela Propriedades, insira o seguinte atributo. Para inserir esse atributo, clique no botão de reticências **[...]**  e, em seguida, digite o nome do atributo e os parâmetros separadamente:  
+2. Selecione a nova propriedade. No **atributo personalizado** na janela Propriedades, insira o seguinte atributo. Para inserir esse atributo, clique no botão de reticências **[...]**  e, em seguida, digite o nome do atributo e os parâmetros separadamente:  
   
     ```  
     [System.ComponentModel.Editor (  
@@ -160,15 +160,15 @@ Você pode personalizar a aparência e comportamento da janela Propriedades em s
   
     ```  
   
-3.  Deixe o tipo de propriedade de domínio em sua configuração padrão de **cadeia de caracteres**.  
+3. Deixe o tipo de propriedade de domínio em sua configuração padrão de **cadeia de caracteres**.  
   
-4.  Para testar o editor, verifique se que os usuários podem abrir o editor de nome de arquivo para editar a propriedade de domínio.  
+4. Para testar o editor, verifique se que os usuários podem abrir o editor de nome de arquivo para editar a propriedade de domínio.  
   
-    1.  Pressione CTRL + F5 ou F5. Na solução de depuração, abra um arquivo de teste. Criar um elemento da classe de domínio e selecioná-lo.  
+    1. Pressione CTRL + F5 ou F5. Na solução de depuração, abra um arquivo de teste. Criar um elemento da classe de domínio e selecioná-lo.  
   
-    2.  Na janela Propriedades, selecione a propriedade de domínio. O campo de valor mostra uma elipse **[...]** .  
+    2. Na janela Propriedades, selecione a propriedade de domínio. O campo de valor mostra uma elipse **[...]** .  
   
-    3.  Clique no botão de reticências. Uma caixa de diálogo é exibida. Selecione um arquivo e feche a caixa de diálogo. O caminho do arquivo agora é o valor da propriedade de domínio.  
+    3. Clique no botão de reticências. Uma caixa de diálogo é exibida. Selecione um arquivo e feche a caixa de diálogo. O caminho do arquivo agora é o valor da propriedade de domínio.  
   
 ### <a name="defining-your-own-property-editor"></a>Definindo seu próprio editor de propriedade  
  Você pode definir seu próprio editor. Você faria isso para permitir que o usuário para editar um tipo que você tenha definido, ou para editar um tipo padrão de uma maneira especial. Por exemplo, você pode permitir que o usuário insira uma cadeia de caracteres que representa uma fórmula.  

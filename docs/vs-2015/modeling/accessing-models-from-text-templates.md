@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a2ddeb3ab46bba30a505782fdd18d7df49574d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 1052529bb743091398b55535b231597c6609add9
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928931"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110486"
 ---
 # <a name="accessing-models-from-text-templates"></a>Acessando modelos a partir de modelos (templates) de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,15 +57,15 @@ Here is a list of elements in the model:
   
  Observe os seguintes pontos sobre este modelo:  
   
--   O modelo pode usar as classes de domínio, propriedades e relações que você definiu na definição de DSL.  
+- O modelo pode usar as classes de domínio, propriedades e relações que você definiu na definição de DSL.  
   
--   O modelo carrega o arquivo de modelo que você especificar na `requires` propriedade.  
+- O modelo carrega o arquivo de modelo que você especificar na `requires` propriedade.  
   
--   Uma propriedade em `this` contém o elemento raiz. A partir daí, seu código pode navegar para outros elementos do modelo. O nome da propriedade normalmente é o mesmo que a classe de domínio raiz de sua DSL. Neste exemplo, é `this.ExampleModel`.  
+- Uma propriedade em `this` contém o elemento raiz. A partir daí, seu código pode navegar para outros elementos do modelo. O nome da propriedade normalmente é o mesmo que a classe de domínio raiz de sua DSL. Neste exemplo, é `this.ExampleModel`.  
   
--   Embora o idioma no qual os fragmentos de código são escritos em C#, você pode gerar o texto de qualquer tipo. Como alternativa, você pode escrever o código em [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] adicionando a propriedade `language="VB"` para o `template` diretiva.  
+- Embora o idioma no qual os fragmentos de código são escritos em C#, você pode gerar o texto de qualquer tipo. Como alternativa, você pode escrever o código em [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] adicionando a propriedade `language="VB"` para o `template` diretiva.  
   
--   Para depurar o modelo, adicione `debug="true"` para o `template` diretiva. O modelo será aberto em outra instância do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se ocorrer uma exceção. Se você quiser interromper o depurador em um ponto específico no código, insira a instrução `System.Diagnostics.Debugger.Break();`  
+- Para depurar o modelo, adicione `debug="true"` para o `template` diretiva. O modelo será aberto em outra instância do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se ocorrer uma exceção. Se você quiser interromper o depurador em um ponto específico no código, insira a instrução `System.Diagnostics.Debugger.Break();`  
   
      Para obter mais informações, consulte [depurando um modelo de texto T4](../modeling/debugging-a-t4-text-template.md).  
   
@@ -80,9 +80,9 @@ Here is a list of elements in the model:
   
  O processador de diretriz DSL executa duas tarefas principais:  
   
--   Ele efetivamente insere diretivas de assembly e importar o modelo que faz referência a sua DSL. Isso permite que você use suas classes de domínio no código do modelo.  
+- Ele efetivamente insere diretivas de assembly e importar o modelo que faz referência a sua DSL. Isso permite que você use suas classes de domínio no código do modelo.  
   
--   Ele carrega o arquivo que você especificar na `requires` parâmetro e define uma propriedade na `this` que se refere ao elemento raiz do modelo carregado.  
+- Ele carrega o arquivo que você especificar na `requires` parâmetro e define uma propriedade na `this` que se refere ao elemento raiz do modelo carregado.  
   
 ## <a name="validating-the-model-before-running-the-template"></a>Validando o modelo antes de executar o modelo  
  Você pode fazer com que o modelo a ser validado antes do modelo é executado.  
@@ -100,7 +100,7 @@ Here is a list of elements in the model:
   
    Se um erro for encontrado, ele será relatado na janela de erros e o arquivo de resultados conterá uma mensagem de erro.  
   
-##  <a name="Multiple"></a> Acessando vários modelos de um modelo de texto  
+## <a name="Multiple"></a> Acessando vários modelos de um modelo de texto  
   
 > [!NOTE]
 >  Esse método permite que você leia vários modelos no mesmo modelo, mas não oferece suporte a referências do ModelBus. Para ler os modelos que estão interconectados por referências do ModelBus, consulte [usando o Visual Studio ModelBus em um modelo de texto](../modeling/using-visual-studio-modelbus-in-a-text-template.md).  

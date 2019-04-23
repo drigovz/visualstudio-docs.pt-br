@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e5e011ccd047551e7ea6cf1426b4118c3ad879f4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f03936b9404339e3ad46e30ef92286da360323bb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925636"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085760"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Não foi possível se conectar ao Monitor de Depuração Remota do Microsoft Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,11 +38,11 @@ Essa mensagem de erro aparece quando você insere um nome inválido do Visual St
   
 ## <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Verifique se o Monitor de Depuração Remota do Visual Studio está instalado e em execução no computador remoto. Para obter informações sobre o depurador remoto e como instalá-lo, consulte [depuração remota](../debugger/remote-debugging.md).  
+- Verifique se o Monitor de Depuração Remota do Visual Studio está instalado e em execução no computador remoto. Para obter informações sobre o depurador remoto e como instalá-lo, consulte [depuração remota](../debugger/remote-debugging.md).  
   
--   No Visual Studio, examine as propriedades do projeto (**projeto / propriedades / depuração**). Verifique se o **nome do servidor remoto** está correto.  
+- No Visual Studio, examine as propriedades do projeto (**projeto / propriedades / depuração**). Verifique se o **nome do servidor remoto** está correto.  
   
--   Verifique se o computador remoto está acessível na rede.  
+- Verifique se o computador remoto está acessível na rede.  
   
 ## <a name="the-remote-machine-is-not-reachable"></a>O computador remoto não está acessível  
  Tentar [ping](https://technet.microsoft.com/library/ee624059\(v=ws.10\).aspx) o computador remoto. Se ele não responder ao ping, as ferramentas remotas não será capazes de se conectar a qualquer um. Tente reiniciar o computador remoto e caso contrário, certificando-se de que ele está configurado corretamente na rede.  
@@ -58,13 +58,13 @@ Essa mensagem de erro aparece quando você insere um nome inválido do Visual St
 ## <a name="the-remote-debugger-is-running-under-a-different-user-account"></a>O depurador remoto está em execução em uma conta de usuário diferente  
  Você pode resolver isso em uma das seguintes maneiras:  
   
--   Você pode parar o depurador remoto e reiniciá-lo com a conta que você está usando no computador local.  
+- Você pode parar o depurador remoto e reiniciá-lo com a conta que você está usando no computador local.  
   
--   Você pode iniciar o depurador remoto na linha de comando com o **/Allow \<nome de usuário >** parâmetro: `msvsmon /allow <username@computer>`  
+- Você pode iniciar o depurador remoto na linha de comando com o **/Allow \<nome de usuário >** parâmetro: `msvsmon /allow <username@computer>`  
   
--   Você pode adicionar o usuário para permissões de usuário do depurador remoto (na janela do depurador remoto, **ferramentas / permissões**).  
+- Você pode adicionar o usuário para permissões de usuário do depurador remoto (na janela do depurador remoto, **ferramentas / permissões**).  
   
--   Se você não pode usar os métodos nas etapas anteriores, você pode permitir que qualquer usuário faça a depuração remota. Na janela do depurador remoto, vá para o **/Options ferramentas** caixa de diálogo. Quando você seleciona **sem autenticação**, em seguida, você pode verificar **permitem que qualquer usuário depure**. No entanto, você deve usar essa opção somente se você não tem escolha, ou se você estiver usando uma rede privada.  
+- Se você não pode usar os métodos nas etapas anteriores, você pode permitir que qualquer usuário faça a depuração remota. Na janela do depurador remoto, vá para o **/Options ferramentas** caixa de diálogo. Quando você seleciona **sem autenticação**, em seguida, você pode verificar **permitem que qualquer usuário depure**. No entanto, você deve usar essa opção somente se você não tem escolha, ou se você estiver usando uma rede privada.  
   
 ## <a name="the-firewall-on-the-remote-machine-doesnt-allow-incoming-connections-to-the-remote-debugger"></a>O firewall no computador remoto não permite conexões de entrada para o depurador remoto  
  O firewall no computador do Visual Studio e o firewall no computador remoto devem ser configurados para permitir a comunicação entre o Visual Studio e o depurador remoto. Para obter informações sobre as portas que o depurador remoto está usando, consulte [as atribuições de porta do depurador remoto](../debugger/remote-debugger-port-assignments.md). Para obter informações sobre como configurar o firewall do Windows, consulte [configurar o Firewall do Windows para depuração remota](../debugger/configure-the-windows-firewall-for-remote-debugging.md).  

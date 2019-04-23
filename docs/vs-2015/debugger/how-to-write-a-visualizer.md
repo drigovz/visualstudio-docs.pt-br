@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2421121e343fabbe3f2ec7d88ec087c6b84c8709
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: b0d27b8a326f72098df7f700c2bc3fac8b85e109
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924002"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60092923"
 ---
 # <a name="how-to-write-a-visualizer"></a>Como: Escrever um visualizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -58,23 +58,23 @@ Você pode escrever um visualizador personalizado para um objeto de qualquer cla
   
   Os visualizadores personalizados podem ter considerações de segurança. Ver [considerações de segurança do visualizador](../debugger/visualizer-security-considerations.md).  
   
-  Os procedimentos a seguir dão uma exibição de alto nível do que você precisa fazer para criar um visualizador. Para obter uma explicação mais detalhada, consulte [passo a passo: Escrevendo um visualizador em C#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
+  Os procedimentos a seguir dão uma exibição de alto nível do que você precisa fazer para criar um visualizador. Para obter uma explicação mais detalhada, consulte [passo a passo: Escrevendo um visualizador em c#](../debugger/walkthrough-writing-a-visualizer-in-csharp.md).  
   
 ### <a name="to-create-the-debugger-side"></a>Para criar o lado do depurador  
   
-1.  Use os métodos <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> para obter o objeto visualizado no lado do depurador.  
+1. Use os métodos <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> para obter o objeto visualizado no lado do depurador.  
   
-2.  Crie uma classe que herda de <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>.  
+2. Crie uma classe que herda de <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>.  
   
-3.  Substitua o método <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> para exibir sua interface. Use os métodos <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> para exibir os formulários, as caixas de diálogo e os controles do Windows como parte da interface.  
+3. Substitua o método <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> para exibir sua interface. Use os métodos <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> para exibir os formulários, as caixas de diálogo e os controles do Windows como parte da interface.  
   
-4.  Aplique <xref:System.Diagnostics.DebuggerVisualizerAttribute>, permitindo que você tenha um visualizador (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).  
+4. Aplique <xref:System.Diagnostics.DebuggerVisualizerAttribute>, permitindo que você tenha um visualizador (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>).  
   
 ### <a name="to-create-the-debuggee-side"></a>Para criar o lado a ser depurado  
   
-1.  Aplique <xref:System.Diagnostics.DebuggerVisualizerAttribute>, permitindo que você tenha um visualizador (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) e uma origem do objeto (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Se você omitir a origem do objeto, uma fonte do objeto padrão será usada  
+1. Aplique <xref:System.Diagnostics.DebuggerVisualizerAttribute>, permitindo que você tenha um visualizador (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>) e uma origem do objeto (<xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>). Se você omitir a origem do objeto, uma fonte do objeto padrão será usada  
   
-2.  Se você quiser que o visualizador edite objetos de dados, bem como exibi-los, precisará substituir os métodos `TransferData` ou `CreateReplacementObject` do <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.  
+2. Se você quiser que o visualizador edite objetos de dados, bem como exibi-los, precisará substituir os métodos `TransferData` ou `CreateReplacementObject` do <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>.  
   
 ## <a name="see-also"></a>Consulte também  
  [Criar visualizadores personalizados](../debugger/create-custom-visualizers-of-data.md)   

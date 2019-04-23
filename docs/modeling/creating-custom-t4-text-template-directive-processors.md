@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4221489318e4cdd4268d5c5d00cbaa079838dcba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6c159cd6fbd4f2fbfff414688e2ec865bcc8ddb4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940887"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109251"
 ---
 # <a name="creating-custom-t4-text-template-directive-processors"></a>Criando processadores de diretiva de modelo de texto T4 personalizados
 
@@ -40,9 +40,9 @@ Modelos de texto diferentes podem compartilhar a funcionalidade que fornece um �
 
 Alguns exemplos de processadores de diretriz personalizados podem ser:
 
--   Um processador de diretriz para retornar dados de um banco de dados que aceita um nome de usuário e senha como parâmetros.
+- Um processador de diretriz para retornar dados de um banco de dados que aceita um nome de usuário e senha como parâmetros.
 
--   Um processador de diretriz para abrir e ler um arquivo que aceita o nome do arquivo como um parâmetro.
+- Um processador de diretriz para abrir e ler um arquivo que aceita o nome do arquivo como um parâmetro.
 
 ### <a name="principal-parts-of-a-custom-directive-processor"></a>Partes de entidade de segurança de um processador de diretriz personalizado
 
@@ -50,19 +50,19 @@ Para desenvolver um processador de diretriz, você deve criar uma classe herdada
 
 O mais importante `DirectiveProcessor` são os métodos que você deve implementar.
 
--   `bool IsDirectiveSupported(string directiveName)` – Retorne `true` se o processador de diretriz pode lidar com a diretiva nomeada.
+- `bool IsDirectiveSupported(string directiveName)` – Retorne `true` se o processador de diretriz pode lidar com a diretiva nomeada.
 
--   `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -O mecanismo de modelo chama esse método para cada ocorrência de uma diretiva no modelo. O processador deve salvar os resultados.
+- `void ProcessDirective (string directiveName, IDictionary<string, string> arguments)` -O mecanismo de modelo chama esse método para cada ocorrência de uma diretiva no modelo. O processador deve salvar os resultados.
 
 Depois de todas as chamadas para ProcessDirective (), o mecanismo de modelagem chamará esses métodos:
 
--   `string[] GetReferencesForProcessingRun()` -Retorne os nomes dos assemblies que exige que o código de modelo.
+- `string[] GetReferencesForProcessingRun()` -Retorne os nomes dos assemblies que exige que o código de modelo.
 
--   `string[] GetImportsForProcessingRun()` – Retorne os namespaces que podem ser usados no código do modelo.
+- `string[] GetImportsForProcessingRun()` – Retorne os namespaces que podem ser usados no código do modelo.
 
--   `string GetClassCodeForProcessingRun()` -Retorna o código de métodos, propriedades e outras declarações que o código de modelo pode usar. A maneira mais fácil de fazer isso é criar uma cadeia de caracteres que contém o código C# ou Visual Basic. Para fazer com que o processador de diretriz capaz de sendo chamado de um modelo que use qualquer linguagem CLR, você pode construir as instruções de como uma árvore CodeDom e, em seguida, retornar o resultado de serializar a árvore no idioma usado pelo modelo.
+- `string GetClassCodeForProcessingRun()` -Retorna o código de métodos, propriedades e outras declarações que o código de modelo pode usar. A maneira mais fácil de fazer isso é criar uma cadeia de caracteres que contém o código c# ou Visual Basic. Para fazer com que o processador de diretriz capaz de sendo chamado de um modelo que use qualquer linguagem CLR, você pode construir as instruções de como uma árvore CodeDom e, em seguida, retornar o resultado de serializar a árvore no idioma usado pelo modelo.
 
--   Para obter mais informações, confira [Passo a passo: Criando um processador de diretriz personalizado](../modeling/walkthrough-creating-a-custom-directive-processor.md).
+- Para obter mais informações, confira [Passo a passo: Criando um processador de diretriz personalizado](../modeling/walkthrough-creating-a-custom-directive-processor.md).
 
 ## <a name="see-also"></a>Consulte também
 

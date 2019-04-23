@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91462511f5de22c51dd1d6fd07c192a72e69e541
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 5f17be088d27e473af0c45a950541fe0f5b77085
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59232691"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098643"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>O IntelliTrace para Visual Studio Enterprise (C#, Visual Basic, C++)
 
@@ -59,7 +59,7 @@ Você pode usar o IntelliTrace no Visual Studio Enterprise edition (mas não as 
 > [!NOTE]
 > Se você quiser depurar um processo que já está em execução, você pode coletar somente eventos do IntelliTrace (nenhuma informação de chamada). Você pode anexar a um processo de 32 bits ou 64 bits no computador local. Eventos que ocorrem antes de anexar ao processo não são coletados.
 
-##  <a name="IntelliTraceVSTraditional"></a> Por que depurar com o IntelliTrace?
+## <a name="IntelliTraceVSTraditional"></a> Por que depurar com o IntelliTrace?
 
 Tradicional ou *live* depuração mostra apenas o estado do aplicativo atual, com dados limitados sobre eventos passados. Você terá que interpretar esses eventos com base no estado atual do aplicativo, ou você precisa recriar esses eventos ao executar novamente o seu aplicativo.
 
@@ -97,7 +97,7 @@ Estes são alguns exemplos de como o IntelliTrace pode ajudar na depuração:
 
      Isso é útil quando você deseja diagnosticar problemas com os aplicativos durante a implantação. Ver [usar o coletor autônomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
-##  <a name="WhatData"></a> Que dados são coletados pelo IntelliTrace?
+## <a name="WhatData"></a> Que dados são coletados pelo IntelliTrace?
 
 **Coletar informações de evento**
 

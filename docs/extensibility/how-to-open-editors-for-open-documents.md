@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89fba307b40d7e0b8ede2d437b214e3f58929c39
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: 654fdb6a921a0d6a25490b17f6f0ce3ffafa4ae4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56702480"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085578"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>Como: Abrir editores para documentos abertos
 Antes de um projeto é aberto em uma janela de documento, o projeto primeiro deve determinar se o arquivo já está aberto na janela do documento para outro editor. O arquivo pode ser qualquer um dos software em um editor específico do projeto ou um dos editores padrão registrado com [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)].
@@ -46,11 +46,11 @@ Antes de um projeto é aberto em uma janela de documento, o projeto primeiro dev
 
 ### <a name="to-open-a-standard-editor-for-an-open-file"></a>Para abrir um editor padrão para um arquivo aberto
 
-1.  Chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.
+1. Chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>.
 
      Esse método primeiro verifica se o documento não ainda estiver aberto, chamando <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A>. Se o documento já estiver aberto, sua janela de editor é ressurgiu.
 
-2.  Se o documento não estiver aberto, em seguida, conclua as etapas em [como: Abrir editores padrão](../extensibility/how-to-open-standard-editors.md).
+2. Se o documento não estiver aberto, em seguida, conclua as etapas em [como: Abrir editores padrão](../extensibility/how-to-open-standard-editors.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Abrir e salvar itens de projeto](../extensibility/internals/opening-and-saving-project-items.md)

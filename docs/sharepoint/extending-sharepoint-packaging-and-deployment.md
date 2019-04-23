@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1f18c88e72a40d3070d9a366e0c6c4e0f3888565
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4bb98e2b1c83ff06570a77dc84ce6a7bf690f81d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628384"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60096992"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>Estender o SharePoint empacotamento e implantação
   Você pode estender o empacotamento e o processo de implantação para projetos do SharePoint.
@@ -35,9 +35,9 @@ ms.locfileid: "56628384"
 ## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>Executar o código quando uma solução do SharePoint é implantada ou cancelada
  Você pode manipular eventos para executar tarefas adicionais quando uma solução do SharePoint é implantada ou cancelada. Visual Studio gera eventos que você pode manipular nos seguintes cenários:
 
--   Antes e após a implantação de cada etapa é executada para um item de projeto do SharePoint. Para obter mais informações, confira [Como: Executar código quando etapas de implantação são executadas](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
+- Antes e após a implantação de cada etapa é executada para um item de projeto do SharePoint. Para obter mais informações, confira [Como: Executar código quando etapas de implantação são executadas](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md).
 
--   Antes e depois de um projeto do SharePoint é implantado ou cancelado. Para obter mais informações, confira [Como: Executar o código quando um projeto do SharePoint é implantado ou cancelado](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
+- Antes e depois de um projeto do SharePoint é implantado ou cancelado. Para obter mais informações, confira [Como: Executar o código quando um projeto do SharePoint é implantado ou cancelado](../sharepoint/how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted.md).
 
 ## <a name="handle-deployment-conflicts"></a>Lidar com conflitos de implantação
  Alguns tipos de itens de projeto do SharePoint, incluindo módulos, partes da Web, instâncias de lista e tipos de conteúdo, fornecem resolução de conflitos de implantação interna. Quando você implanta uma solução que contenha um desses itens de projeto, o Visual Studio primeiro verifica se um arquivo já existe no site do SharePoint com o mesmo nome, URL ou ID como um arquivo no item que você está implantando. Se houver um conflito, Visual Studio automaticamente pode resolver o conflito, ou você poderá ser solicitado para determinar se você deseja resolver o conflito ou cancelar a implantação tiver o Visual Studio. Para obter mais informações, consulte [implantação e solução de problemas de empacotamento de SharePoint](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md).

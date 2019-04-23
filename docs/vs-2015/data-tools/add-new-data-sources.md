@@ -19,27 +19,27 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1131f6d569d01787d26bea7dde1c993401ce9580
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670167"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60102751"
 ---
 # <a name="add-new-data-sources"></a>Adicionar novas fontes de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 No contexto das ferramentas de dados do .NET no Visual Studio, o termo *fonte de dados* refere-se a objetos .NET que se conectar a um armazenamento de dados e expõem os dados para um aplicativo .NET. Os designers do Visual Studio podem consumir a saída da fonte de dados para gerar o código clichê que associa os dados a formas quando você arrasta e solta os objetos de banco de dados a partir de **fontes de dados** janela. Esse tipo de fonte de dados pode ser:  
   
--   Uma classe em um modelo do Entity Framework que está associado a algum tipo de banco de dados.  
+- Uma classe em um modelo do Entity Framework que está associado a algum tipo de banco de dados.  
   
--   Um conjunto de dados que está associado a algum tipo de banco de dados.  
+- Um conjunto de dados que está associado a algum tipo de banco de dados.  
   
--   Uma classe que representa um serviço de rede como um serviço de dados do Windows Communication Foundation (WCF) ou um serviço REST.  
+- Uma classe que representa um serviço de rede como um serviço de dados do Windows Communication Foundation (WCF) ou um serviço REST.  
   
--   Uma classe que representa um serviço do SharePoint.  
+- Uma classe que representa um serviço do SharePoint.  
   
--   Uma classe ou uma coleção em sua solução.  
+- Uma classe ou uma coleção em sua solução.  
   
 > [!NOTE]
 >  Se você não estiver usando recursos de vinculação de dados, conjuntos de dados, o Entity Framework, LINQ to SQL, WCF ou o SharePoint, o conceito de uma "fonte de dados" não se aplica. Basta conectar-se diretamente ao banco de dados usando os objetos SQLCommand e se comunicar diretamente com o banco de dados.  
@@ -77,11 +77,11 @@ No contexto das ferramentas de dados do .NET no Visual Studio, o termo *fonte de
   
  Você pode criar uma fonte de dados entre os seguintes tipos de serviços:  
   
--   WCF Data Services. Para obter mais informações, consulte [visão geral](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
+- WCF Data Services. Para obter mais informações, consulte [visão geral](http://msdn.microsoft.com/library/7924cf94-c9a6-4015-afc9-f5d22b1743bb).  
   
--   Serviços de dados do WCF. Para obter mais informações, consulte [serviços do Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
+- Serviços de dados do WCF. Para obter mais informações, consulte [serviços do Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md).  
   
--   Serviços da Web.  
+- Serviços da Web.  
   
     > [!NOTE]
     >  Os itens que aparecem na **fontes de dados** janela são dependentes dos dados que o serviço retorna. Alguns serviços podem não fornecer informações suficientes para o **Assistente de Configuração de Fonte de Dados** criar objetos associáveis. Por exemplo, se o serviço retorna um conjunto de dados não tipado, nenhum item aparecerá na **fontes de dados** janela quando você concluir o assistente. Isso ocorre porque os conjuntos de dados não tipados não fornecem um esquema e, portanto, o assistente não tem informações suficientes para criar a fonte de dados.  

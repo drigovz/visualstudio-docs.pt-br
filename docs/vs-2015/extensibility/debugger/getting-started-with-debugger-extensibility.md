@@ -12,12 +12,12 @@ ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 12701abf66d49a3b462502700b3b57933369b6e8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: d1c616c7cf8ed90ec3d76046892167b9b742a1b0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923058"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085669"
 ---
 # <a name="getting-started-with-debugger-extensibility"></a>Introdução à extensibilidade do depurador
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,11 +30,11 @@ O [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)] fornece as informações que
   
  Usar melhor o [!INCLUDE[vsipsdk](../../includes/vsipsdk-md.md)], você deve estar familiarizado com o seguinte:  
   
--   O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE)  
+- O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE)  
   
--   A linguagem de programação do C++  
+- A linguagem de programação do C++  
   
--   ATL COM  
+- ATL COM  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Roteiro para estender o depurador](../../extensibility/debugger/roadmap-for-extending-the-debugger.md)  

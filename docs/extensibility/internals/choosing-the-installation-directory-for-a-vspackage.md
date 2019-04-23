@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59e712d9354432bc142478935827a6439547321c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662387"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106261"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Escolha o diretório de instalação para um VSPackage
 Um VSPackage e seus arquivos de suporte devem estar no sistema de arquivos do usuário. O local depende se o VSPackage é gerenciado ou não, seu esquema de controle de versão lado a lado e escolha do usuário.
@@ -47,15 +47,15 @@ Um VSPackage e seus arquivos de suporte devem estar no sistema de arquivos do us
 
  O [gerenciar VSPackages](../../extensibility/managing-vspackages.md) artigo indica que as entradas do registro controlam onde [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] , na verdade, o DLL de satélite procura um VSPackage. No entanto, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tenta carregar uma DLL satélite em um subdiretório nomeado para um valor LCID, na seguinte ordem:
 
-1.  LCID de padrão (LCID do Visual Studio; por exemplo, *\1033* para inglês)
+1. LCID de padrão (LCID do Visual Studio; por exemplo, *\1033* para inglês)
 
-2.  LCID padrão com a subidioma padrão.
+2. LCID padrão com a subidioma padrão.
 
-3.  LCID padrão do sistema.
+3. LCID padrão do sistema.
 
-4.  Padrão do sistema LCID com subidioma o padrão.
+4. Padrão do sistema LCID com subidioma o padrão.
 
-5.  DOS EUA Inglês (*. \1033* ou *. \0x409*).
+5. DOS EUA Inglês (*. \1033* ou *. \0x409*).
 
 Se a sua DLL VSPackage inclui recursos e o **SatelliteDll\DllName** entrada de registro aponta para ela, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] tentará carregá-los na ordem acima.
 

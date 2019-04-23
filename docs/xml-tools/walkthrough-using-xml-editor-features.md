@@ -8,14 +8,14 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 57f1f8274d121b5370f47dfdb62be3a8e5cdd017
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: 2f0b4069bf1b74c15f9fcf7cdb7e488247b8548e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525863"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086371"
 ---
-# <a name="walkthrough-use-xml-editor-features"></a>Passo a passo: Usar recursos do editor de XML
+# <a name="walkthrough-use-xml-editor-features"></a>Passo a passo: Usar recursos do editor XML
 
 As etapas nessa explicação passo a passo mostram como criar um novo documento XML. O passo a passo também usa alguns dos recursos do editor de XML que tornam valioso para a criação de XML.
 
@@ -24,59 +24,59 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
 ## <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para criar um novo arquivo XML e associá-lo a um esquema XML
 
-1.  Sobre o **arquivo** , aponte para **New**e clique em **arquivo**.
+1. Sobre o **arquivo** , aponte para **New**e clique em **arquivo**.
 
-2.  Selecione **arquivo XML** na **modelos** painel e clique em **abrir**.
+2. Selecione **arquivo XML** na **modelos** painel e clique em **abrir**.
 
      Um novo arquivo é aberto no editor. O arquivo contém uma declaração XML padrão, `<?xml version="1.0" encoding="utf-8">`.
 
-3.  Na janela de propriedades do documento, clique no botão Procurar (**...** ) sobre o **esquemas** campo.
+3. Na janela de propriedades do documento, clique no botão Procurar (**...** ) sobre o **esquemas** campo.
 
      O **esquemas XSD** caixa de diálogo é exibida.
 
-4.  Clique em **Adicionar**.
+4. Clique em **Adicionar**.
 
      O **abrir esquema XSD** caixa de diálogo é exibida.
 
-5.  Selecione o *HireDate* do arquivo e clique em **abrir**.
+5. Selecione o *HireDate* do arquivo e clique em **abrir**.
 
-6.  Clique em **OK**.
+6. Clique em **OK**.
 
      O esquema XML agora está associado com o documento XML. O esquema XML é usado para validar o documento. Também é usado pelo IntelliSense para preencher a lista de membros de elementos válidos.
 
 ## <a name="to-add-data"></a>Para adicionar dados
 
-1.  Tipo `<` no painel do editor.
+1. Tipo `<` no painel do editor.
 
      A lista de membros exibe os itens possíveis:
 
-    -   **! –** para adicionar um comentário.
+    - **! –** para adicionar um comentário.
 
-    -   **! DOCTYPE** para adicionar um tipo de documento.
+    - **! DOCTYPE** para adicionar um tipo de documento.
 
-    -   **?** Para adicionar uma instrução de processamento.
+    - **?** Para adicionar uma instrução de processamento.
 
-    -   **funcionário** para adicionar o elemento raiz.
+    - **funcionário** para adicionar o elemento raiz.
 
-2.  Selecione **<!-** para adicionar um nó de comentário e pressione **Enter**.
+2. Selecione **<!-** para adicionar um nó de comentário e pressione **Enter**.
 
      O editor insere uma marca de fim do comentário e colocar o cursor entre o início e marcas de comentário final.
 
-3.  Digite **arquivo de teste XML**.
+3. Digite **arquivo de teste XML**.
 
-4.  Em uma nova linha, digite `<`e selecione **funcionário** da lista de membros.
+4. Em uma nova linha, digite `<`e selecione **funcionário** da lista de membros.
 
      O editor adiciona o início de um elemento XML, `<employee`. Neste momento você pode adicionar atributos para o elemento ou você pode fechar a tag de início digitando `>`.
 
-5.  Tipo `>` para a marca de fechamento.
+5. Tipo `>` para a marca de fechamento.
 
-6.  O editor adiciona a marca de fim. A marca de fim é adicionada com um a linha subescrita ondulada que indica um erro de validação. O **dica de ferramenta** exibe a mensagem: **O elemento "empregado" tem conteúdo incompleto. Esperado 'ID'**.
+6. O editor adiciona a marca de fim. A marca de fim é adicionada com um a linha subescrita ondulada que indica um erro de validação. O **dica de ferramenta** exibe a mensagem: **O elemento "empregado" tem conteúdo incompleto. Esperado 'ID'**.
 
-7.  Tipo de `<` e selecione **ID** da lista de membros. Digite `>`.
+7. Tipo de `<` e selecione **ID** da lista de membros. Digite `>`.
 
      O editor adicione o elemento XML, `<ID></ID>`, e posicionar o cursor após a marca de início de identificação.
 
-8.  Tipo de **abc**.
+8. Tipo de **abc**.
 
      O **abc** texto tem uma linha ondulada. O **dica de ferramenta** exibe a mensagem: **O elemento 'ID' tem um valor inválido de acordo com seu tipo de dados**.
 
@@ -104,11 +104,11 @@ As etapas nessa explicação passo a passo mostram como criar um novo documento 
 
 ## <a name="to-save-the-xml-document"></a>Para salvar o documento XML
 
-1.  Dos **arquivo** menu, selecione **Salvar como**.
+1. Dos **arquivo** menu, selecione **Salvar como**.
 
      O **salvar arquivo como** caixa de diálogo é exibida. O nome de arquivo padrão é *"XMLFile1"*.
 
-2.  Insira o nome do arquivo e o local para o documento XML e clique em **salvar**.
+2. Insira o nome do arquivo e o local para o documento XML e clique em **salvar**.
 
 ## <a name="hiredatexsd-file"></a>hireDate.xsd file
 

@@ -8,12 +8,12 @@ ms.assetid: 2000b214-ae92-4334-b549-aa0eb4f45fe1
 caps.latest.revision: 19
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b13b8af221e317461f68a793e9b84420cd5dab48
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.openlocfilehash: 26cd34583f28c19770675b185f986149b23fdf6d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867894"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100425"
 ---
 # <a name="using-html5-controls-in-coded-ui-tests"></a>Usando controles HTML5 em testes de IU codificados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluíd
   
  **Requisitos**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 > [!WARNING]
 >  Em versões anteriores do Internet Explorer 10, era possível executar testes de UI codificados em um nível de privilégio mais alto em comparação do processo do Internet Explorer. Ao executar testes de UI codificados no Internet Explorer 10, o teste de IU codificado e o processo do Internet Explorer devem ser o mesmo nível de privilégio. Isso ocorre devido a recursos mais seguros do AppContainer no Internet Explorer 10.  
@@ -33,16 +33,16 @@ Os teste de IU codificados incluem suporte a alguns dos controles HTML5 incluíd
 ## <a name="supported-html5-controls"></a>Controles do HTML5 com suporte  
  Testes de UI codificados incluem suporte para registro, reprodução e validação dos seguintes controles HTML5:  
   
--   [Controle de áudio](#audio-control)  
+- [Controle de áudio](#audio-control)  
   
--   [Controle Video](#video-control)  
+- [Controle Video](#video-control)  
   
--   [Slider](#slider)  
+- [Slider](#slider)  
   
--   [ProgressBar](#progressbar)  
+- [ProgressBar](#progressbar)  
   
 ### <a name="audio-control"></a>Controle de áudio  
- **Controle de áudio:** ações no controle do HTML5 áudio são registradas e reproduzidas corretamente.  
+ **Controle de áudio:** Ações no controle do HTML5 áudio são registradas e reproduzidas corretamente.  
   
  ![Controle do HTML5 áudio](../test/media/codedui-html5-audio.png)  
   
@@ -76,15 +76,15 @@ string Src
 string Volume  
 ```  
   
- **Propriedades de pesquisa:** as propriedades de pesquisa para `HtmlAudio` são `Id`, `Name` e `Title`.  
+ **Propriedades de pesquisa:** As propriedades de pesquisa para `HtmlAudio` são `Id`, `Name` e `Title`.  
   
- **Propriedades de filtro:** as propriedades de filtro para `HtmlAudio` são `Src`, `Class`, `ControlDefinition` e `TagInstance`.  
+ **Propriedades do filtro:** As propriedades do filtro para `HtmlAudio` são `Src`, `Class`, `ControlDefinition` e `TagInstance`.  
   
 > [!NOTE]
 >  O tempo de busca de Seek e Pause pode ser significativo. Durante a reprodução, o teste de IU codificado aguardará até que o tempo especificado em `(TimeSpan)` antes da pausa do áudio. Se por alguma circunstância especial, o tempo especificado tiver passado antes de atingir o comando Pause, uma exceção será lançada.  
   
 ### <a name="video-control"></a>Controle de vídeo  
- **Controle de vídeo:** ações no controle de vídeo HTML5 são registradas e reproduzidas corretamente.  
+ **Controle de vídeo:** Ações no controle de vídeo do HTML5 são registradas e reproduzidas corretamente.  
   
  ![Controle do HTML5 vídeo](../test/media/codedui-html5-video.png)  
   
@@ -106,15 +106,15 @@ string VideoWidth
   
 ```  
   
- **Propriedades de pesquisa:** as propriedades de pesquisa para `HtmlVideo` são `Id`, `Name` e `Title`.  
+ **Propriedades de pesquisa:** As propriedades de pesquisa para `HtmlVideo` são `Id`, `Name` e `Title`.  
   
- **Propriedades de filtro:** as propriedades de filtro para `HtmlVideo` são `Src`, `Poster`, `Class`, `ControlDefinition` e `TagInstance`.  
+ **Propriedades do filtro:** As propriedades de pesquisa para `HtmlVideo` são `Src`, `Poster`, `Class`, `ControlDefinition` e `TagInstance`.  
   
 > [!NOTE]
 >  Se você Avançar ou retroceder rapidamente o vídeo usando rótulos-30s ou +30s, isso será agregado para buscar o momento apropriado.  
   
 ### <a name="slider"></a>Controle deslizante  
- **Controle deslizante:** ações no controle deslizante de HTML5 são registradas e reproduzidas corretamente.  
+ **Controle deslizante:** Ações no controle deslizante de HTML5 estão corretamente registradas e reproduzidas.  
   
  ![Controle deslizante do HTML5](../test/media/codedui-html5-slider.png)  
   
@@ -134,7 +134,7 @@ string ValueAsNumber
 ```  
   
 ### <a name="progressbar"></a>ProgressBar  
- **Controle de ProgressBar:** a ProgressBar é um controle não interagível. Você pode adicionar asserções nas propriedades `Value` e `Max` desse controle.  
+ **Controle ProgressBar:** A ProgressBar é um controle não interagível. Você pode adicionar asserções nas propriedades `Value` e `Max` desse controle.  
   
  ![Controle ProgressBar do HTML5](../test/media/codedui-html5-progressbar.png)  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: ae3bb98e91904debfd3c238e70ce0ff0127e82b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 6d7020563d7bcbc794a0d2980a8dcc77c0d98d0b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928478"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109971"
 ---
 # <a name="ca2208-instantiate-argument-exceptions-correctly"></a>CA2208: Criar instância de exceções de argumento corretamente
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,9 +35,9 @@ ms.locfileid: "58928478"
 ## <a name="cause"></a>Causa
  Possíveis causas incluem as seguintes situações:
 
--   É feita uma chamada ao construtor (sem parâmetros) padrão de um tipo de exceção que é, ou que deriva de [System. ArgumentException] (<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException?qualifyHint=True&amp;autoUpgrade=True>  -->).
+- É feita uma chamada ao construtor (sem parâmetros) padrão de um tipo de exceção que é, ou que deriva de [System. ArgumentException] (<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException?qualifyHint=True&amp;autoUpgrade=True>  -->).
 
--   Um argumento de cadeia de caracteres incorreto é passado para um construtor com parâmetros de um tipo de exceção que é, ou que deriva de [System. ArgumentException.] (<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException.?qualifyHint=True&amp;autoUpgrade=True>  -->)
+- Um argumento de cadeia de caracteres incorreto é passado para um construtor com parâmetros de um tipo de exceção que é, ou que deriva de [System. ArgumentException.] (<!-- TODO: review code entity reference <xref:assetId:///System.ArgumentException.?qualifyHint=True&amp;autoUpgrade=True>  -->)
 
 ## <a name="rule-description"></a>Descrição da Regra
  Em vez de chamar o construtor padrão, chame uma das sobrecargas de construtor que permite que uma mensagem de exceção mais significativa a ser fornecido. A mensagem de exceção deve direcionar o desenvolvedor e explicam claramente a condição de erro e como corrigir ou evitar a exceção.

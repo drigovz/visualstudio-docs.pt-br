@@ -9,12 +9,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb65f5b45c34672679f88c7f6ba12f972f0e0388
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4f0c0b7b3e1edb367db6a49987a67e8a6dfdc17c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766307"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60112046"
 ---
 # <a name="step-7-keep-pairs-visible"></a>Etapa 7: Manter os pares visíveis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ O jogo funciona bem, desde que o jogador escolha apenas pares de ícones que nã
   
 ### <a name="to-keep-pairs-visible"></a>Para manter os pares visíveis  
   
-1.  Adicione a instrução `if` a seguir ao método do manipulador de eventos `label_Click()`, próximo do fim do código, logo acima da instrução onde você inicia o temporizador. Observe mais detalhadamente o código enquanto o adiciona ao programa. Leve em consideração como o código funciona.  
+1. Adicione a instrução `if` a seguir ao método do manipulador de eventos `label_Click()`, próximo do fim do código, logo acima da instrução onde você inicia o temporizador. Observe mais detalhadamente o código enquanto o adiciona ao programa. Leve em consideração como o código funciona.  
   
      [!code-csharp[VbExpressTutorial4Step7#9](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial4step7/cs/form1.cs#9)]
      [!code-vb[VbExpressTutorial4Step7#9](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step7/vb/form1.vb#9)]  
@@ -54,13 +54,13 @@ O jogo funciona bem, desde que o jogador escolha apenas pares de ícones que nã
   
      A primeira dessas duas instruções verifica se dois ícones são iguais. Como dois valores estão sendo comparados, o programa Visual C# usa o operador de igualdade `==`. A segunda instrução realmente altera o valor (chamado *atribuição*), definindo a variável de referência `firstClicked` igual a `null` para redefini-la. Por esse motivo, ela usa o operador de atribuição `=` no lugar. O Visual C# usa `=` para definir valores e `==` para compará-los. O Visual Basic usa `=` para atribuição de variável e comparação.  
   
-2.  Salve e execute o programa e, em seguida, comece a escolher os ícones no formulário. Se você escolher um par que não corresponda, o evento Tick do temporizador é disparado e ambos os ícones desaparecem. Se você escolher um par correspondente, a nova instrução `if` será executada e a instrução de retorno fará com que o método pule o código que inicia o temporizador, de modo que o ícone permanece visível, conforme mostrado na imagem a seguir.  
+2. Salve e execute o programa e, em seguida, comece a escolher os ícones no formulário. Se você escolher um par que não corresponda, o evento Tick do temporizador é disparado e ambos os ícones desaparecem. Se você escolher um par correspondente, a nova instrução `if` será executada e a instrução de retorno fará com que o método pule o código que inicia o temporizador, de modo que o ícone permanece visível, conforme mostrado na imagem a seguir.  
   
      ![Jogo criado neste tutorial](../ide/media/express-finishedgame.png "Express_FinishedGame")  
 Jogo da memória com pares de ícone visíveis  
   
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar  
   
--   Para ir para a próxima etapa do tutorial, consulte [Etapa 8: Adicionar um método para verificar se o jogador ganhou](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
+- Para ir para a próxima etapa do tutorial, confira [Etapa 8: Adicione um método para verificar se o jogador ganhou](../ide/step-8-add-a-method-to-verify-whether-the-player-won.md).  
   
--   Para retornar à etapa anterior do tutorial, consulte [Etapa 6: Adicionar um temporizador](../ide/step-6-add-a-timer.md).
+- Para retornar à etapa anterior do tutorial, confira [Etapa 6: Adicionar um temporizador](../ide/step-6-add-a-timer.md).

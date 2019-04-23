@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5350c4cad7acf936d90698a99299757e13a7de3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 6a6c94382bd797b4c24057f623b334b2f2cd2983
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658819"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60115569"
 ---
 # <a name="how-to-generate-an-xml-snippet-from-an-xml-schema"></a>Como: Gerar um snippet de XML de um esquema XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,11 +27,11 @@ O editor XML tem a capacidade de gerar snippets de um esquema de linguagem de de
   
 - O elemento atual no editor deve ser deixado sem atributos. Por exemplo, todos os seguintes são válidos  
   
-  -   `<Account`  
+  - `<Account`  
   
-  -   `<Account>`  
+  - `<Account>`  
   
-  -   `<Account></Account>`  
+  - `<Account></Account>`  
   
 - O cursor deve ser localizado imediatamente à direita do nome do elemento.  
   
@@ -51,31 +51,31 @@ O editor XML tem a capacidade de gerar snippets de um esquema de linguagem de de
   
 #### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para criar um novo arquivo XML e associá-la com um esquema XML  
   
-1.  Sobre o **arquivo** , aponte para **New**e clique em **arquivo**.  
+1. Sobre o **arquivo** , aponte para **New**e clique em **arquivo**.  
   
-2.  Selecione **arquivo XML** na **modelos** painel e clique em **abrir**.  
+2. Selecione **arquivo XML** na **modelos** painel e clique em **abrir**.  
   
      Um novo arquivo é aberto no editor. O arquivo contém uma declaração XML padrão, `<?xml version="1.0" encoding="utf-8">`.  
   
-3.  Na janela de propriedades do documento, clique no botão Procurar (**...** ) sobre o **esquemas** campo.  
+3. Na janela de propriedades do documento, clique no botão Procurar (**...** ) sobre o **esquemas** campo.  
   
      O **esquemas XSD** caixa de diálogo é exibida.  
   
-4.  Clique em **Adicionar**.  
+4. Clique em **Adicionar**.  
   
      O **abrir esquema XSD** caixa de diálogo é exibida.  
   
-5.  Selecione o arquivo de esquema e clique em **aberto**.  
+5. Selecione o arquivo de esquema e clique em **aberto**.  
   
-6.  Clique em **OK**.  
+6. Clique em **OK**.  
   
      O esquema XML agora está associado com o documento XML.  
   
 #### <a name="to-generate-an-xml-snippet"></a>Para gerar um snippet XML  
   
-1.  Tipo `<` no painel do editor.  
+1. Tipo `<` no painel do editor.  
   
-2.  A lista de membros exibe os itens possíveis:  
+2. A lista de membros exibe os itens possíveis:  
   
      **! –** para adicionar um comentário.  
   
@@ -85,11 +85,11 @@ O editor XML tem a capacidade de gerar snippets de um esquema de linguagem de de
   
      **Entre em contato com** para adicionar o elemento raiz.  
   
-3.  Selecione **entre em contato com** na lista de membros e pressione ENTER.  
+3. Selecione **entre em contato com** na lista de membros e pressione ENTER.  
   
      O editor adiciona a tag de início `<Contact` e posicionar o cursor após o nome do elemento.  
   
-4.  Pressione a tecla TAB para gerar dados XML para o elemento de `Contact` com base em suas informações de esquema.  
+4. Pressione a tecla TAB para gerar dados XML para o elemento de `Contact` com base em suas informações de esquema.  
   
 ### <a name="input"></a>Entrada  
  O seguinte arquivo de esquema é usado por passo a passo.  

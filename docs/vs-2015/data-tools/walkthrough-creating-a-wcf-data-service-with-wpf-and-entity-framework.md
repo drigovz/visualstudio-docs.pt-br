@@ -14,12 +14,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67b3034ee1d651289c167b894b0417d11b5995e8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 52a2d7c239c9a4f3508f4bdb2077928e44ff802a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653080"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107030"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>Passo a passo: Criando um WCF Data Service com o WPF e o Entity Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,22 +28,22 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[ss_data_service](..
   
  Neste passo a passo, você realizará as seguintes tarefas:  
   
--   Criará um aplicativo Web para hospedar um [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Criará um aplicativo Web para hospedar um [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Criará um [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] que representa a tabela Customers no banco de dados da Northwind.  
+- Criará um [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] que representa a tabela Customers no banco de dados da Northwind.  
   
--   Criará um [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Criará um [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Criará um aplicativo cliente e adicionará uma referência ao [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
+- Criará um aplicativo cliente e adicionará uma referência ao [!INCLUDE[ss_data_service](../includes/ss-data-service-md.md)].  
   
--   Habilitará a associação de dados ao serviço e gerará a interface de usuário.  
+- Habilitará a associação de dados ao serviço e gerará a interface de usuário.  
   
--   Se desejar, adicionará recursos de filtragem ao aplicativo.  
+- Se desejar, adicionará recursos de filtragem ao aplicativo.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:  
   
--   O banco de dados de exemplo Northwind.  
+- O banco de dados de exemplo Northwind.  
   
      Se você não tiver esse banco de dados no computador de desenvolvimento, você pode baixá-lo partir o [Microsoft Download Center](http://go.microsoft.com/fwlink/?LinkID=98088). Para obter instruções, consulte [Downloading Sample Databases](http://msdn.microsoft.com/library/ef9d69a1-9461-43fe-94bb-7c836754bcb5).  
   
@@ -80,11 +80,11 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[ss_data_service](..
   
 5. Na página **Escolha a Conexão de Dados**, executa uma das seguintes etapas:  
   
-   -   Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-a.  
+   - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-a.  
   
         - ou -  
   
-   -   Escolha o botão **Nova Conexão** para configurar uma nova conexão de dados. Para obter mais informações, consulte [adicionar novas conexões](../data-tools/add-new-connections.md).  
+   - Escolha o botão **Nova Conexão** para configurar uma nova conexão de dados. Para obter mais informações, consulte [adicionar novas conexões](../data-tools/add-new-connections.md).  
   
 6. Se o banco de dados exigir uma senha, escolha o botão de opção **Sim, incluir os dados confidenciais da cadeia de conexão** e escolha o botão **Avançar**.  
   
@@ -236,11 +236,11 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[ss_data_service](..
   
 #### <a name="to-add-filtering-by-city"></a>Para adicionar a filtragem por cidade  
   
-1.  No **Gerenciador de Soluções**, abra o menu de atalho do nó **Form1.vb** ou **Form1.cs** e escolha **Abrir**.  
+1. No **Gerenciador de Soluções**, abra o menu de atalho do nó **Form1.vb** ou **Form1.cs** e escolha **Abrir**.  
   
-2.  Adicione um controle <xref:System.Windows.Forms.TextBox> e um controle <xref:System.Windows.Forms.Button> da **Caixa de Ferramentas** ao formulário.  
+2. Adicione um controle <xref:System.Windows.Forms.TextBox> e um controle <xref:System.Windows.Forms.Button> da **Caixa de Ferramentas** ao formulário.  
   
-3.  Abra o menu de atalho para o <xref:System.Windows.Forms.Button> controlar e, em seguida, escolha **Exibir código**e, em seguida, adicione o seguinte código no `Button1_Click` manipulador de eventos:  
+3. Abra o menu de atalho para o <xref:System.Windows.Forms.Button> controlar e, em seguida, escolha **Exibir código**e, em seguida, adicione o seguinte código no `Button1_Click` manipulador de eventos:  
   
     ```vb  
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click  
@@ -269,11 +269,11 @@ Este passo a passo demonstra como criar um simples [!INCLUDE[ss_data_service](..
     }  
     ```  
   
-4.  No código anterior, substitua `http://localhost:53161/NorthwindCustomers.svc` pela URL do manipulador de eventos `Form1_Load`.  
+4. No código anterior, substitua `http://localhost:53161/NorthwindCustomers.svc` pela URL do manipulador de eventos `Form1_Load`.  
   
-5.  Na barra de menus, escolha **Debug**, **iniciar depuração** para executar o aplicativo.  
+5. Na barra de menus, escolha **Debug**, **iniciar depuração** para executar o aplicativo.  
   
-6.  Na caixa de texto, insira **Londres** e escolha o botão. Somente os clientes de London são exibidos.  
+6. Na caixa de texto, insira **Londres** e escolha o botão. Somente os clientes de London são exibidos.  
   
 ## <a name="see-also"></a>Consulte também  
  [Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)   

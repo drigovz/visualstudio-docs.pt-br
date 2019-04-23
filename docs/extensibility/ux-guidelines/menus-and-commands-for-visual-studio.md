@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b7fb3b82d56038695c728d2125658a7f51d31f6
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.openlocfilehash: 94d4ac86f40f887eed9d858f10614441d88c9c54
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57870472"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108861"
 ---
 # <a name="menus-and-commands-for-visual-studio"></a>Menus e comandos para o Visual Studio
 ## <a name="command-usage"></a>Uso do comando
@@ -33,11 +33,11 @@ ms.locfileid: "57870472"
 ##### <a name="do-not-create-icons-for-every-command"></a>Não crie ícones para cada comando.
  Pense cuidadosamente antes de criar um ícone do comando. Ícones devem ser criados somente para os comandos que:
 
--   são exibidos em uma barra de ferramentas padrão.
+- são exibidos em uma barra de ferramentas padrão.
 
--   têm probabilidade de ser adicionados por usuários para uma barra de ferramentas por meio de **personalizar...**  caixa de diálogo.
+- têm probabilidade de ser adicionados por usuários para uma barra de ferramentas por meio de **personalizar...**  caixa de diálogo.
 
--   tem um ícone associado com a mesma ação em outro produto da Microsoft.
+- tem um ícone associado com a mesma ação em outro produto da Microsoft.
 
 ##### <a name="limit-the-addition-of-keyboard-shortcuts"></a>Limitar a adição de atalhos de teclado
  A grande maioria dos usuários empregar uma pequena fração de todos os atalhos disponíveis. Em caso de dúvida, a não vincule seu recurso para um atalho de teclado. Trabalhar com seu usuário experiência equipe antes de adicionar novos atalhos.
@@ -75,65 +75,65 @@ ms.locfileid: "57870472"
 
 ##### <a name="core-menus"></a>Menus de núcleo
 
--   Arquivo
+- Arquivo
 
--   Editar
+- Editar
 
--   Exibir
+- Exibir
 
--   Ferramentas
+- Ferramentas
 
--   Janela
+- Janela
 
--   Ajuda
+- Ajuda
 
 ##### <a name="project-specific-menus"></a>Menus específicos de projeto
 
--   Projeto
+- Projeto
 
--   Build
+- Build
 
--   Depurar
+- Depurar
 
 ##### <a name="context-specific-menus"></a>Menus de contexto específico
 
--   Equipe
+- Equipe
 
--   Dados
+- Dados
 
--   Teste
+- Teste
 
--   Arquitetura
+- Arquitetura
 
--   Analisar
+- Analisar
 
 ##### <a name="document-specific-menus"></a>Menus específicos de documento
 
--   Formatar
+- Formatar
 
--   Tabela
+- Tabela
 
 ##### <a name="when-designing-main-menus-adhere-to-these-rules"></a>Durante a criação de menus principais, seguem estas regras:
 
--   Não exceda 25 itens de nível superior em um determinado contexto
+- Não exceda 25 itens de nível superior em um determinado contexto
 
--   Menus nunca devem exceder 600 pixels de altura.
+- Menus nunca devem exceder 600 pixels de altura.
 
--   Avalie um menu principal em vários contextos, como no SKU Ultimate e o perfil geral.
+- Avalie um menu principal em vários contextos, como no SKU Ultimate e o perfil geral.
 
--   Menus suspensos são aceitáveis.
+- Menus suspensos são aceitáveis.
 
--   Menus suspensos devem conter pelo menos três itens e não mais de sete.
+- Menus suspensos devem conter pelo menos três itens e não mais de sete.
 
--   Menus suspensos devem ir somente um nível profundo – alguns itens de menu do Visual Studio tem submenus em cascata, mas não é incentivado, esse padrão.
+- Menus suspensos devem ir somente um nível profundo – alguns itens de menu do Visual Studio tem submenus em cascata, mas não é incentivado, esse padrão.
 
--   Use separadores não mais do que seis. Agrupamentos devem aderir à ilustração a seguir:
+- Use separadores não mais do que seis. Agrupamentos devem aderir à ilustração a seguir:
 
      ![Diretrizes para o agrupamento do menu principal](../../extensibility/ux-guidelines/media/0501-b_mainmenus.png "b_MainMenus 0501")
 
--   Embora isso não é necessário ter cada agrupamento na figura, adicionar agrupamentos adicionais é restrito.
+- Embora isso não é necessário ter cada agrupamento na figura, adicionar agrupamentos adicionais é restrito.
 
--   Cada agrupamento deve ter de dois a sete itens de menu.
+- Cada agrupamento deve ter de dois a sete itens de menu.
 
 #### <a name="main-menu-ordering"></a>Ordenação de menu principal
  Antes de adicionar um novo item de nível superior, considere colocar o comando em um menu de nível superior existente. Ao adicionar um novo menu de nível superior, certifique-se de colocá-lo no local correto. Decida se o menu é específico ao projeto, o contexto ou o documento. Manter o nome do menu de nível superior concisa e usar apenas uma palavra.
@@ -145,30 +145,30 @@ ms.locfileid: "57870472"
 
  Durante a criação de menus de contexto, seguem as mesmas regras que para o menu principal e, além disso:
 
--   Não exceda 25 itens de menu de nível superior.
+- Não exceda 25 itens de menu de nível superior.
 
--   Menus suspensos são aceitáveis, mas deve não exceder um nível de profundidade – nunca usar submenus em cascata.
+- Menus suspensos são aceitáveis, mas deve não exceder um nível de profundidade – nunca usar submenus em cascata.
 
--   Use separadores não mais do que seis.
+- Use separadores não mais do que seis.
 
 ### <a name="command-placement-in-toolbars"></a>Posicionamento do comando em barras de ferramentas
 
 #### <a name="general-toolbars"></a>Barras de ferramentas gerais
  Ao projetar e organizando as barras de ferramentas, siga estes padrões:
 
--   Não use mais de um verbo por botão. Um botão = uma ação.
+- Não use mais de um verbo por botão. Um botão = uma ação.
 
--   Use texto junto com o ícone somente se ele precisar ser reforçado com o rótulo.
+- Use texto junto com o ícone somente se ele precisar ser reforçado com o rótulo.
 
--   Use uma caixa de combinação exclusivamente para as propriedades que serão alternadas várias vezes em uma sessão. Caso contrário, expõem a propriedade em outro lugar.
+- Use uma caixa de combinação exclusivamente para as propriedades que serão alternadas várias vezes em uma sessão. Caso contrário, expõem a propriedade em outro lugar.
 
--   A largura de uma caixa de combinação deve ser igual a largura do item dentro do caixa + 30% mais longa. Por exemplo, se o item mais longo é 200 pixels, a caixa de combinação deve ser 260 pixels de largura.
+- A largura de uma caixa de combinação deve ser igual a largura do item dentro do caixa + 30% mais longa. Por exemplo, se o item mais longo é 200 pixels, a caixa de combinação deve ser 260 pixels de largura.
 
--   Limite o uso de separadores. O uso de um separador ao lado de uma lista suspensa é um antipadrão, porque a forma da lista suspensa em si atua como um separador visual.
+- Limite o uso de separadores. O uso de um separador ao lado de uma lista suspensa é um antipadrão, porque a forma da lista suspensa em si atua como um separador visual.
 
--   Grupos de ícone devem conter de três a seis ícones.
+- Grupos de ícone devem conter de três a seis ícones.
 
--   Se os qualificadores resultarem em vários comandos úteis, use um botão de divisão que armazena a última configuração:
+- Se os qualificadores resultarem em vários comandos úteis, use um botão de divisão que armazena a última configuração:
 
      ![Dividir botões no Visual Studio](../../extensibility/ux-guidelines/media/0501-c_splitbuttons.png "c_SplitButtons 0501")
 
@@ -229,13 +229,13 @@ ms.locfileid: "57870472"
 
 #### <a name="when-naming-commands"></a>Quando nomear comandos:
 
--   Construa o texto para que ele seja facilmente localizável. Para obter mais informações sobre como localizar texto, consulte [práticas recomendadas de localização](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
+- Construa o texto para que ele seja facilmente localizável. Para obter mais informações sobre como localizar texto, consulte [práticas recomendadas de localização](/dotnet/standard/globalization-localization/best-practices-for-developing-world-ready-apps#localization-best-practices).
 
--   Seja conciso. Comandos devem usar não mais do que três palavras.
+- Seja conciso. Comandos devem usar não mais do que três palavras.
 
--   Usar a capitalização de capitalização de título: a primeira letra de cada palavra deve estar em letras maiusculas. Para obter mais informações sobre formatação de texto no Visual Studio, consulte [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
+- Usar a capitalização de capitalização de título: a primeira letra de cada palavra deve estar em letras maiusculas. Para obter mais informações sobre formatação de texto no Visual Studio, consulte [estilo de texto](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_TextStyle).
 
--   Leve em consideração onde o comando será colocado. Está em um menu de nível superior ou um submenu? Por exemplo, quando os comandos de alinhamento de agrupamento em um submenu, o comando de nível superior devem ser "Alinhar" e os comandos do submenu deve ser "À esquerda," "Direita", "Centro", "justificar" e assim por diante. Seria redundante para nomear os comandos de menu suspenso "Alinhar à esquerda" ou "Alinhar à direita."
+- Leve em consideração onde o comando será colocado. Está em um menu de nível superior ou um submenu? Por exemplo, quando os comandos de alinhamento de agrupamento em um submenu, o comando de nível superior devem ser "Alinhar" e os comandos do submenu deve ser "À esquerda," "Direita", "Centro", "justificar" e assim por diante. Seria redundante para nomear os comandos de menu suspenso "Alinhar à esquerda" ou "Alinhar à direita."
 
      ![Menu do Visual Studio formato](../../extensibility/ux-guidelines/media/0502-a_formatmenu.png "a_FormatMenu 0502")
 
@@ -244,20 +244,20 @@ ms.locfileid: "57870472"
 
 #### <a name="use-an-icon-with-a-command-only-if"></a>Use um ícone com um comando apenas se:
 
--   O mesmo comando tem um ícone associado a ele em outro produto da Microsoft proeminente, por exemplo, um dos aplicativos do Microsoft Office.
+- O mesmo comando tem um ícone associado a ele em outro produto da Microsoft proeminente, por exemplo, um dos aplicativos do Microsoft Office.
 
--   O comando será colocado em uma barra de ferramentas padrão.
+- O comando será colocado em uma barra de ferramentas padrão.
 
--   O comando é um comando de especialidade que os usuários podem adicionar a uma barra de ferramentas usando o **"Personalizar..."** caixa de diálogo.
+- O comando é um comando de especialidade que os usuários podem adicionar a uma barra de ferramentas usando o **"Personalizar..."** caixa de diálogo.
 
 ## <a name="access-and-shortcut-keys"></a>Teclas de atalho e acesso
 
 ### <a name="overview"></a>Visão geral
  Há dois tipos de atribuições de teclas do teclado:
 
--   **Chaves de acesso** (também conhecido como aceleradores) permitem o acesso do teclado por meio de menus para comandos e a cada rótulo na caixa de diálogo da interface do usuário. Chaves de acesso são principalmente para fins de acessibilidade, são atribuídas a todos os menus e a maioria dos controles de caixa de diálogo, não devem ser memorizadas, afeta somente a janela atual e são localizadas.
+- **Chaves de acesso** (também conhecido como aceleradores) permitem o acesso do teclado por meio de menus para comandos e a cada rótulo na caixa de diálogo da interface do usuário. Chaves de acesso são principalmente para fins de acessibilidade, são atribuídas a todos os menus e a maioria dos controles de caixa de diálogo, não devem ser memorizadas, afeta somente a janela atual e são localizadas.
 
--   **Teclas de atalho** usar principalmente o controle (Ctrl) e sequências de teclas de função (Fn). Eles são projetados mais para usuários avançados e auxiliam na produtividade. Eles são atribuídos somente aos comandos usados com mais frequência e permitem o acesso rápido ao ignorar o menu principal. Teclas de atalho devem ser memorizadas e para que os motivo deve ser atribuído consistente com o esquema de perfil. Esquemas de chave de atalho podem variar de perfis. Um usuário pode personalizar as teclas de atalho por meio **Ferramentas > Opções > teclado**.
+- **Teclas de atalho** usar principalmente o controle (Ctrl) e sequências de teclas de função (Fn). Eles são projetados mais para usuários avançados e auxiliam na produtividade. Eles são atribuídos somente aos comandos usados com mais frequência e permitem o acesso rápido ao ignorar o menu principal. Teclas de atalho devem ser memorizadas e para que os motivo deve ser atribuído consistente com o esquema de perfil. Esquemas de chave de atalho podem variar de perfis. Um usuário pode personalizar as teclas de atalho por meio **Ferramentas > Opções > teclado**.
 
 ### <a name="assigning-access-keys"></a>Atribuindo teclas de acesso
  Chaves de acesso consistem em chaves Alt plus alfanuméricos. Atribua uma chave de acesso para cada item de menu sem exceção. Siga as convenções comuns para a atribuição de chaves de acesso e Windows. Por exemplo, a chave de acesso **arquivo > novo** deve ser sempre **Alt, F, N**.
@@ -285,6 +285,6 @@ ms.locfileid: "57870472"
 
   Não há uma maneira simples de verificar a disponibilidade de atalho. Se você quiser adicionar um atalho, siga estas etapas:
 
-1.  Verifique a lista de [atalhos do Visual Studio 2013](http://visualstudioshortcuts.com/2013/) para determinar se há comandos semelhantes para agrupar seus com.
+1. Verifique a lista de [atalhos do Visual Studio 2013](http://visualstudioshortcuts.com/2013/) para determinar se há comandos semelhantes para agrupar seus com.
 
-2.  Vá para **Ferramentas > Opções > ambiente > teclado** e testar o atalho. Verifique cada esquema de mapeamento de teclado listados em "Aplicar o seguinte esquema de mapeamento de teclado adicionais". Verifique perfis geral, C#, VB e C++, como aqueles compartilham atalhos exclusivos. O atalho está disponível se ela não estiver mapeada em qualquer um desses locais.
+2. Vá para **Ferramentas > Opções > ambiente > teclado** e testar o atalho. Verifique cada esquema de mapeamento de teclado listados em "Aplicar o seguinte esquema de mapeamento de teclado adicionais". Verifique perfis geral, c#, VB e C++, como aqueles compartilham atalhos exclusivos. O atalho está disponível se ela não estiver mapeada em qualquer um desses locais.

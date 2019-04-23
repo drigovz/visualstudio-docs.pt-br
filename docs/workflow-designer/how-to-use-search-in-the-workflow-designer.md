@@ -8,12 +8,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: b1d29c4398e6b6c377ab493c495951f942d15965
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0a80bfecaa288eabc0161d0262535a7912411f78
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60091285"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>Como: Usar a pesquisa no Designer de Fluxo de Trabalho
 
@@ -23,13 +23,13 @@ Para facilitar a criação de fluxos de trabalho maiores e mais complexos, você
 
 Localização rápida localiza o seguinte no designer:
 
--   Propriedades de objetos de <xref:System.Activities.Activity> , de objetos, <xref:System.Activities.Statements.FlowNode> de objetos <xref:System.Activities.Statements.State> , das transições, e outros itens personalizados de controle de fluxo.
+- Propriedades de objetos de <xref:System.Activities.Activity> , de objetos, <xref:System.Activities.Statements.FlowNode> de objetos <xref:System.Activities.Statements.State> , das transições, e outros itens personalizados de controle de fluxo.
 
--   Variáveis
+- Variáveis
 
--   Arguments
+- Arguments
 
--   Expressões
+- Expressões
 
 ### <a name="use-quick-find"></a>Usar a localização rápida
 
@@ -47,8 +47,8 @@ Localizar em arquivos localiza cadeias de caracteres em arquivos de fluxo de tra
 
 ### <a name="use-find-in-files"></a>Usar Localizar em arquivos
 
-1.  No Visual Studio, pressione **Ctrl**+**Shift**+**F**, ou selecione **editar**  >   **Localizar e substituir** > **localizar nos arquivos**.
+1. No Visual Studio, pressione **Ctrl**+**Shift**+**F**, ou selecione **editar**  >   **Localizar e substituir** > **localizar nos arquivos**.
 
-2.  Inserir o item de pesquisa para o **localizar** caixa de texto e clique em **Localizar tudo**.
+2. Inserir o item de pesquisa para o **localizar** caixa de texto e clique em **Localizar tudo**.
 
-3.  O resultado de alterações é mostrado na **localizar o resultado** modo de exibição. Clicar duas vezes em um item de resultado navegará para a atividade que contém a correspondência no designer de fluxo de trabalho.
+3. O resultado de alterações é mostrado na **localizar o resultado** modo de exibição. Clicar duas vezes em um item de resultado navegará para a atividade que contém a correspondência no designer de fluxo de trabalho.

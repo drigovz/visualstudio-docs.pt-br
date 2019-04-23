@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e3834e22f67001e38096032037f33c5d184a5330
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: f85169ebb6460ac42031aec7c75ff2e29154a9ed
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668893"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109109"
 ---
 # <a name="content-model-view"></a>O modo do modelo de conteúdo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,13 +91,13 @@ A exibição do modelo de conteúdo fornece uma representação gráfica de nós
 ## <a name="undoredo"></a>Desfazer/refazer  
  Desfazer/refaz o recurso é habilitado no modo de modelo de conteúdo para as seguintes ações:  
   
--   Adicionando um único nó arrastando e soltando-se.  
+- Adicionando um único nó arrastando e soltando-se.  
   
--   Adicionando mais nós da janela de resultados de pesquisa no esquema Explorer.  
+- Adicionando mais nós da janela de resultados de pesquisa no esquema Explorer.  
   
--   Adicionando a exibição de nós do início.  
+- Adicionando a exibição de nós do início.  
   
--   Excluindo única ou mais nós.  
+- Excluindo única ou mais nós.  
   
 ## <a name="zoom"></a>Aplicar Zoom  
  O zoom está disponível no canto inferior direito da exibição do modelo de conteúdo.  

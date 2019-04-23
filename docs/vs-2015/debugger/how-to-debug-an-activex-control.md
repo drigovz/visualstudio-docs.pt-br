@@ -25,12 +25,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1b822ed97b2f31b6838fcfc9ee2b6ea32760c54d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f8dea98b05f5350f581128f18f38ec5f095505a5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923137"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105651"
 ---
 # <a name="how-to-debug-an-activex-control"></a>Como: Depurar um controle ActiveX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,19 +42,19 @@ ms.locfileid: "58923137"
   
 ### <a name="to-specify-a-container-for-the-debug-session"></a>Para especificar um contêiner para a sessão de depuração  
   
-1.  No Gerenciador de Soluções, selecione o projeto.  
+1. No Gerenciador de Soluções, selecione o projeto.  
   
-2.  Dos **modo de exibição** menu, escolha **páginas de propriedade**.  
+2. Dos **modo de exibição** menu, escolha **páginas de propriedade**.  
   
-3.  Na caixa de diálogo **Páginas de Propriedades de Projeto**, abra a pasta **Propriedades de Configuração** e selecione **Depurando**.  
+3. Na caixa de diálogo **Páginas de Propriedades de Projeto**, abra a pasta **Propriedades de Configuração** e selecione **Depurando**.  
   
-4.  Na categoria **Depurando**, localize a propriedade **Comando**.  
+4. Na categoria **Depurando**, localize a propriedade **Comando**.  
   
-5.  Especifique o nome do caminho para o contêiner. Por exemplo, C:\Arquivos de Programas\Internet Explorer\IEXPLORE.EXE.  
+5. Especifique o nome do caminho para o contêiner. Por exemplo, C:\Arquivos de Programas\Internet Explorer\IEXPLORE.EXE.  
   
-6.  Se você especificar o Internet Explorer como o contêiner e estiver usando o Active Desktop, digite `/new` na caixa **Argumentos do Comando**.  
+6. Se você especificar o Internet Explorer como o contêiner e estiver usando o Active Desktop, digite `/new` na caixa **Argumentos do Comando**.  
   
-7.  Clique em **OK**.  
+7. Clique em **OK**.  
   
      Se você não especificar um contêiner na caixa de diálogo **Páginas de Propriedades do Projeto**, poderá especificar o contêiner quando iniciar a depuração. Quando você selecionar um comando de execução para iniciar a depuração, a [caixa de diálogo Executável para Sessão de Depuração](../debugger/executable-for-debugging-session-dialog-box.md) é exibida. Especifique o nome do caminho do contêiner na caixa de diálogo.  
   

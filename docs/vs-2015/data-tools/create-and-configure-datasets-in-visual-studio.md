@@ -17,12 +17,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a2930acee9e187f14b87e28190a88195b0bea7a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: b3073f79cc58296b6952d610384d06648aa6ce3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656239"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093469"
 ---
 # <a name="create-and-configure-datasets-in-visual-studio"></a>Criar e configurar conjuntos de dados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,23 +33,23 @@ Um *conjunto de dados* é um conjunto de objetos que armazenam dados de um banco
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>Criar um novo conjunto de dados usando o Assistente de configuração de fonte de dados
 
-1.  Sobre o **projeto** menu, clique em **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.
+1. Sobre o **projeto** menu, clique em **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.
 
-2.  Escolha o tipo de fonte de dados que você irá se conectar.
+2. Escolha o tipo de fonte de dados que você irá se conectar.
 
      ![Assistente de configuração de fonte de dados](../data-tools/media/data-source-configuration-wizard.png "Assistente de configuração de fonte de dados")
 
-3.  Para bancos de dados, escolha o banco de dados ou bancos de dados que serão a fonte de dados para seu conjunto de dados.
+3. Para bancos de dados, escolha o banco de dados ou bancos de dados que serão a fonte de dados para seu conjunto de dados.
 
      ![Fonte de dados escolha uma conexão](../data-tools/media/data-source-choose-a-connection.png "fonte de dados escolha uma conexão")
 
-4.  Escolha as tabelas (ou colunas individuais), procedimentos armazenados, funções e exibições do banco de dados que você deseja ser representado no conjunto de dados.
+4. Escolha as tabelas (ou colunas individuais), procedimentos armazenados, funções e exibições do banco de dados que você deseja ser representado no conjunto de dados.
 
      ![Escolher objetos do banco de dados](../data-tools/media/raddata-chose-objects.png "raddata escolher objetos")
 
-5.  Clique em **Finalizar**.
+5. Clique em **Finalizar**.
 
-6.  O conjunto de dados aparece como um nó no **Gerenciador de soluções**:
+6. O conjunto de dados aparece como um nó no **Gerenciador de soluções**:
 
      ![Conjunto de dados no Gerenciador de soluções](../data-tools/media/dataset-in-solution-explorer.png "conjunto de dados no Gerenciador de soluções")
 
@@ -57,11 +57,11 @@ Um *conjunto de dados* é um conjunto de objetos que armazenam dados de um banco
 
      ![DataSet Designer](../data-tools/media/dataset-designer.png "DataSet Designer")
 
-7.  As linhas de relação que conectam as tabelas representam relações de tabela, conforme definido no banco de dados. Por padrão, as restrições de chave estrangeira em um banco de dados são representadas como uma relação somente, com a atualização e excluir regras definidas como none. Normalmente, esse é o que você deseja. No entanto, você pode clicar para exibir as linhas as **relação** caixa de diálogo, onde é possível alterar o comportamento das atualizações hierárquicas. Para obter mais informações, consulte [relacionamentos em conjuntos de dados](../data-tools/relationships-in-datasets.md) e [atualização hierárquica](../data-tools/hierarchical-update.md).
+7. As linhas de relação que conectam as tabelas representam relações de tabela, conforme definido no banco de dados. Por padrão, as restrições de chave estrangeira em um banco de dados são representadas como uma relação somente, com a atualização e excluir regras definidas como none. Normalmente, esse é o que você deseja. No entanto, você pode clicar para exibir as linhas as **relação** caixa de diálogo, onde é possível alterar o comportamento das atualizações hierárquicas. Para obter mais informações, consulte [relacionamentos em conjuntos de dados](../data-tools/relationships-in-datasets.md) e [atualização hierárquica](../data-tools/hierarchical-update.md).
 
      ![Caixa de diálogo conjunto de dados de relação](../data-tools/media/raddata-relation-dialog.png "caixa de diálogo de relação raddata")
 
-8.  Clique em uma tabela, o adaptador de tabela ou o nome da coluna em uma tabela para ver suas propriedades na **propriedades** janela. Você pode modificar alguns valores aqui. Lembre-se de que você está modificando o conjunto de dados, não o banco de dados de origem.
+8. Clique em uma tabela, o adaptador de tabela ou o nome da coluna em uma tabela para ver suas propriedades na **propriedades** janela. Você pode modificar alguns valores aqui. Lembre-se de que você está modificando o conjunto de dados, não o banco de dados de origem.
 
      ![Propriedades de coluna do conjunto de dados](../data-tools/media/dataset-column-properties.png "propriedades de coluna do conjunto de dados")
 
@@ -74,22 +74,22 @@ Um *conjunto de dados* é um conjunto de objetos que armazenam dados de um banco
 ## <a name="add-a-database-table-or-other-object-to-an-existing-dataset"></a>Adicionar uma tabela de banco de dados ou outro objeto para um conjunto de dados existente
  Este procedimento mostra como adicionar uma tabela do mesmo banco de dados que você usou para primeiro criar o conjunto de dados.
 
-1.  Clique no nó do conjunto de dados do **Gerenciador de soluções** para trazer o Designer de conjunto de dados para o foco.
+1. Clique no nó do conjunto de dados do **Gerenciador de soluções** para trazer o Designer de conjunto de dados para o foco.
 
-2.  Clique o **fontes de dados** guia na margem esquerda do Visual Studio, ou insira `Data Sources` na **QuickLaunch**.
+2. Clique o **fontes de dados** guia na margem esquerda do Visual Studio, ou insira `Data Sources` na **QuickLaunch**.
 
-3.  Clique com botão direito no nó do conjunto de dados e selecione **configurar a fonte de dados com o assistente** .
+3. Clique com botão direito no nó do conjunto de dados e selecione **configurar a fonte de dados com o assistente** .
 
      ![Menu de contexto de fonte de dados](../data-tools/media/data-source-context-menu.png "menu de contexto de fonte de dados")
 
-4.  Use o Assistente para especificar quais tabelas adicionais, ou procedimentos armazenados ou outro objeto de banco de dados, para adicionar ao conjunto de dados.
+4. Use o Assistente para especificar quais tabelas adicionais, ou procedimentos armazenados ou outro objeto de banco de dados, para adicionar ao conjunto de dados.
 
 ## <a name="add-a-stand-alone-data-table-to-a-dataset"></a>Adicionar uma tabela de dados autônoma para um conjunto de dados
 
-1.  Abra o conjunto de dados no **Designer de Conjunto de Dados**.
+1. Abra o conjunto de dados no **Designer de Conjunto de Dados**.
 
-2.  Arraste uma <xref:System.Data.DataTable> de classe do **conjunto de dados** guia do **caixa de ferramentas** até a **Dataset Designer**.
+2. Arraste uma <xref:System.Data.DataTable> de classe do **conjunto de dados** guia do **caixa de ferramentas** até a **Dataset Designer**.
 
-3.  Adicione colunas para definir sua tabela de dados. Para obter mais informações, confira [Como: Adicionar colunas a uma DataTable](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
+3. Adicione colunas para definir sua tabela de dados. Para obter mais informações, confira [Como: Adicionar colunas a uma DataTable](http://msdn.microsoft.com/library/8ca21f77-b99a-47a7-a656-7cfd7a1bd9df).
 
-4.  Tabelas autônomas precisam implementar `Fill` lógica nas tabelas autônomas para que você pode preenchê-los com dados. Para obter informações sobre o preenchimento de tabelas de dados autônoma, consulte [populando um DataSet a partir de um DataAdapter](http://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).
+4. Tabelas autônomas precisam implementar `Fill` lógica nas tabelas autônomas para que você pode preenchê-los com dados. Para obter informações sobre o preenchimento de tabelas de dados autônoma, consulte [populando um DataSet a partir de um DataAdapter](http://msdn.microsoft.com/library/3fa0ac7d-e266-4954-bfac-3fbe2f913153).

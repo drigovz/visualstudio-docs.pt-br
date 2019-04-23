@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 765072cea77a23ca63a176555832bbc95f0ab4b6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ab2cb4562f816b254b658cfdc152dc38033fbe03
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950026"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104532"
 ---
 # <a name="error-messages-in-workflow-designer"></a>Mensagens de erro em Designer de Fluxo de Trabalho
 
@@ -27,13 +27,13 @@ Este tópico descreve os tipos de mensagens de erro que podem ser encontrados ao
 
 Erros no Designer de fluxo de trabalho ocorrem nas seguintes situações:
 
-1.  Há um erro em uma expressão.
+1. Há um erro em uma expressão.
 
-2.  As restrições de validação de uma atividade não foram satisfeitas.
+2. As restrições de validação de uma atividade não foram satisfeitas.
 
-3.  Há erros no arquivo XAML que fazem com que uma atividade a falha carregue.
+3. Há erros no arquivo XAML que fazem com que uma atividade a falha carregue.
 
-4.  Há erros no arquivo XAML que fazem com que o fluxo de trabalho a falha carregue.
+4. Há erros no arquivo XAML que fazem com que o fluxo de trabalho a falha carregue.
 
 As expressões inválidos e restrições insatisfeitas de validação não fazem com que o fluxo de trabalho a falha compile. Compilar seu fluxo de trabalho é bem-sucedido, mas <xref:System.Activities.InvalidWorkflowException> é lançada pelo tempo de execução. Se há erros no arquivo XAML, a compilação falhará.
 

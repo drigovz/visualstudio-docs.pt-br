@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82a76f36f3b7cf0f4687d8797fe2694b731933ca
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 0538620cde170ea9ae033a510c7fa01ff20c64d3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666917"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60093144"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>A cadeia de conexão contém credenciais com uma senha de texto não criptografado e não estiver usando segurança integrada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ Deseja salvar a cadeia de conexão no arquivo DBML atual e nos arquivos de confi
   
 ### <a name="to-save-the-connection-string-with-the-sensitive-information-in-the-projects-application-settings"></a>Para salvar a cadeia de conexão com informações sigilosas nas configurações de aplicativo do projeto  
   
--   Clique em **Sim**.  
+- Clique em **Sim**.  
   
      A cadeia de conexão é armazenada como uma configuração de aplicativo. A cadeia de conexão inclui informações sigilosas em texto sem formatação. O arquivo DBML não contém informações sigilosas.  
   
 ### <a name="to-save-the-connection-string-without-the-sensitive-information-in-the-projects-application-settings"></a>Para salvar a cadeia de conexão sem informações sigilosas nas configurações de aplicativo do projeto  
   
--   Clique em **Não**.  
+- Clique em **Não**.  
   
      A cadeia de conexão é armazenada como uma configuração de aplicativo, mas a senha não é incluído.  
   

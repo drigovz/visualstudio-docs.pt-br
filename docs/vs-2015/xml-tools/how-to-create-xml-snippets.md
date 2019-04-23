@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b64c94d26dcb197246f78b721fd087d5dbf1e0dc
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c6e6ec0cb8affbb820886f2bca163aae00d8536f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660353"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60101362"
 ---
 # <a name="how-to-create-xml-snippets"></a>Como: Criar snippet XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,23 +24,23 @@ O editor XML pode ser usado para criar novos snippets XML. O editor inclui um sn
 ## <a name="to-create-a-new-xml-snippet"></a>Para criar um novo snippet XML  
  Para criar um novo código XML, o trecho de código crie um novo arquivo XML e usar o **Inserir trecho** recurso.  
   
-1.  Sobre o **arquivo** menu, clique em **New** e, em seguida, clique em **arquivo**.  
+1. Sobre o **arquivo** menu, clique em **New** e, em seguida, clique em **arquivo**.  
   
-2.  Clique em **arquivo XML** e, em seguida, clique em **abrir**.  
+2. Clique em **arquivo XML** e, em seguida, clique em **abrir**.  
   
-3.  Clique com botão direito no painel do editor e selecione **Inserir trecho de código**.  
+3. Clique com botão direito no painel do editor e selecione **Inserir trecho de código**.  
   
-4.  Selecione **trecho** na lista e pressione ENTER.  
+4. Selecione **trecho** na lista e pressione ENTER.  
   
-5.  Faça as alterações para o novo snippet.  
+5. Faça as alterações para o novo snippet.  
   
-6.  Dos **arquivo** menu, selecione **salvar XMLFile**.  
+6. Dos **arquivo** menu, selecione **salvar XMLFile**.  
   
      O **salvar arquivo como** caixa de diálogo é exibida.  
   
-7.  Insira o nome para o novo trecho e selecione **arquivos de trecho** da **Salvar como tipo** janela suspensa.  
+7. Insira o nome para o novo trecho e selecione **arquivos de trecho** da **Salvar como tipo** janela suspensa.  
   
-8.  Use o **salvar no** lista suspensa para alterar o local do arquivo para a pasta de trechos de XML Snippets\XML\My 2005\Code Meus Documentos\Visual Studio e, em seguida, pressione **salvar**.  
+8. Use o **salvar no** lista suspensa para alterar o local do arquivo para a pasta de trechos de XML Snippets\XML\My 2005\Code Meus Documentos\Visual Studio e, em seguida, pressione **salvar**.  
   
 ## <a name="snippet-description"></a>Descrição de snippet  
  Esta seção descreve alguns dos elementos-chave no snippet de texto constante. Para obter mais informações sobre os elementos de esquema usados por trechos XML, consulte [referência de esquema de trechos de código](../ide/code-snippets-schema-reference.md).  

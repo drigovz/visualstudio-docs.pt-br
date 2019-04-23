@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02454e308a97f043caa6e85e1c4308c2d2a2402e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8eb5f93ef3770b0d275d71d818e44d52a067f83
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649037"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60094678"
 ---
 # <a name="the-selected-class-cannot-be-deleted-because-it-is-used-as-a-return-type-for-one-or-more-datacontext-methods"></a>A classe selecionada não pode ser excluída porque é usada como um tipo de retorno para um ou mais métodos DataContext
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ O tipo de retorno de um ou mais métodos de <xref:System.Data.Linq.DataContext> 
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
-1.  Identificar <xref:System.Data.Linq.DataContext> métodos que usam a classe de entidade como um tipo de retorno selecionando um <xref:System.Data.Linq.DataContext> método nos métodos de painel e inspecionando a **tipo de retorno** propriedade no **propriedades** janela .  
+1. Identificar <xref:System.Data.Linq.DataContext> métodos que usam a classe de entidade como um tipo de retorno selecionando um <xref:System.Data.Linq.DataContext> método nos métodos de painel e inspecionando a **tipo de retorno** propriedade no **propriedades** janela .  
   
-2.  Definir **Tipo de Retorno** a uma classe diferente de entidade ou exclui o método de <xref:System.Data.Linq.DataContext> do painel métodos.  
+2. Definir **Tipo de Retorno** a uma classe diferente de entidade ou exclui o método de <xref:System.Data.Linq.DataContext> do painel métodos.  
   
 ## <a name="see-also"></a>Consulte também  
  [Ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)   

@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b9908b906a780839da335ce38af5b0d927632bc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b36c149022849dd6a788bcb5ee8f58cc12ae4417
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596510"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110993"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Como: Exportar uma faixa de opções do Designer da faixa de opções para o XML da faixa de opções
   O **faixa de opções (Visual Designer)** item não oferece suporte a todos os tipos possíveis de personalização da faixa de opções. Para personalizar a faixa de opções de maneiras avançadas, você pode exportar a faixa de opções do designer para o XML da faixa de opções e editar o XML diretamente.
@@ -35,32 +35,32 @@ ms.locfileid: "56596510"
 
 ### <a name="to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>Para exportar uma faixa de opções do Designer da faixa de opções para XML da faixa de opções
 
-1.  O arquivo de código da faixa de opções no botão direito do mouse **Gerenciador de soluções**e, em seguida, clique em **View Designer**.
+1. O arquivo de código da faixa de opções no botão direito do mouse **Gerenciador de soluções**e, em seguida, clique em **View Designer**.
 
-2.  O Designer de faixa de opções com o botão direito e, em seguida, clique em **faixa de opções de exportação para XML**.
+2. O Designer de faixa de opções com o botão direito e, em seguida, clique em **faixa de opções de exportação para XML**.
 
      Visual Studio adiciona um arquivo XML de faixa de opções e um arquivo de código XML da faixa de opções ao seu projeto.
 
-3.  Na classe de código da faixa de opções, localize os comentários que começam com `TODO:`.
+3. Na classe de código da faixa de opções, localize os comentários que começam com `TODO:`.
 
-4.  Copie o bloco de código nesses comentários para o **ThisAddin**, **ThisWorkbook**, ou **ThisDocument** classe, dependendo de qual tipo de solução que você está desenvolvendo.
+4. Copie o bloco de código nesses comentários para o **ThisAddin**, **ThisWorkbook**, ou **ThisDocument** classe, dependendo de qual tipo de solução que você está desenvolvendo.
 
      Esse código permite que o aplicativo do Microsoft Office descobrir e carregar sua faixa de opções personalizada. Para obter mais informações, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).
 
-5.  No **ThisAddin**, **ThisWorkbook**, ou **ThisDocument** de classe, remova o bloco de código.
+5. No **ThisAddin**, **ThisWorkbook**, ou **ThisDocument** de classe, remova o bloco de código.
 
      Depois que você remova os comentários de código, ele deve se parecer com o exemplo a seguir. Neste exemplo, a classe de faixa de opções é chamada `MyRibbon`.
 
      [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
      [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
 
-6.  Alterne para o arquivo de código XML da faixa de opções e encontre o `Ribbon Callbacks` região.
+6. Alterne para o arquivo de código XML da faixa de opções e encontre o `Ribbon Callbacks` região.
 
      Isso é onde você pode escrever métodos de retorno de chamada para manipular ações do usuário, como clicar em um botão.
 
-7.  Crie um método de retorno de chamada para cada manipulador de eventos que você escreveu o código do Designer de faixa de opções.
+7. Crie um método de retorno de chamada para cada manipulador de eventos que você escreveu o código do Designer de faixa de opções.
 
-8.  Mover todo o código de manipulador de eventos de manipuladores de eventos para os métodos de retorno de chamada e modifique o código para trabalhar com a extensibilidade da faixa de opções (RibbonX) modelo de programação.
+8. Mover todo o código de manipulador de eventos de manipuladores de eventos para os métodos de retorno de chamada e modifique o código para trabalhar com a extensibilidade da faixa de opções (RibbonX) modelo de programação.
 
      Para obter informações sobre como escrever métodos de retorno de chamada e usar o modelo de programação do RibbonX, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).
 

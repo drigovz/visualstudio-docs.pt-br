@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 665c59e6881ec2e5924845dfc8dcc130b5044095
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 8d71c820435ccf5bd131c11bc79844ac157561c7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663382"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105299"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Passo a passo: Criando um processador de diretriz personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,18 +28,18 @@ Processadores de diretriz * funcionam adicionando código para o *classe de tran
 
  As tarefas ilustradas nesta explicação passo a passo incluem o seguinte:  
 
--   Criar um processador de diretriz personalizado  
+- Criar um processador de diretriz personalizado  
 
--   Registrar o processador de diretriz  
+- Registrar o processador de diretriz  
 
--   Testar o processador de diretriz  
+- Testar o processador de diretriz  
 
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para concluir esta explicação passo a passo, será necessário:  
 
--   Visual Studio 2010  
+- Visual Studio 2010  
 
--   SDL do Visual Studio 2010  
+- SDL do Visual Studio 2010  
 
 ## <a name="creating-a-custom-directive-processor"></a>Criando um processador de diretriz personalizado  
  Neste passo a passo, você cria um processador de diretriz personalizado. Você adiciona uma diretiva personalizado que lê um arquivo XML, armazena-o em uma variável <xref:System.Xml.XmlDocument> e o expõe por meio de uma propriedade. Na seção “Testando o processador de diretriz”, você usa essa propriedade em um modelo de texto para acessar o arquivo XML.  
@@ -83,18 +83,18 @@ End Property
 
 #### <a name="to-create-a-custom-directive-processor"></a>Para criar um processador de diretriz personalizado  
 
-1.  No Visual Studio, crie um novo projeto de biblioteca de classes C# ou Visual Basic chamado CustomDP.  
+1. No Visual Studio, crie um novo projeto de biblioteca de classes C# ou Visual Basic chamado CustomDP.  
 
     > [!NOTE]
     >  Se você quiser instalar o processador de diretriz em mais de um computador, é melhor usar um projeto de extensão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX) e incluir um arquivo .pkgdef na extensão. Para obter mais informações, consulte [Implantando um processador de diretriz personalizado](../modeling/deploying-a-custom-directive-processor.md).  
 
-2.  Adicione referências a estes assemblies:  
+2. Adicione referências a estes assemblies:  
 
-    -   **Microsoft.VisualStudio.TextTemplating.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.\*.0**  
 
-    -   **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
+    - **Microsoft.VisualStudio.TextTemplating.Interfaces.\*.0**  
 
-3.  Substitua o código em **Class1** com o código a seguir. Este código define uma classe CustomDirectiveProcessor que herda da classe <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> e implementa os métodos necessários.  
+3. Substitua o código em **Class1** com o código a seguir. Este código define uma classe CustomDirectiveProcessor que herda da classe <xref:Microsoft.VisualStudio.TextTemplating.DirectiveProcessor> e implementa os métodos necessários.  
 
     ```csharp  
     using System;  
@@ -606,11 +606,11 @@ End Property
     End Namespace  
     ```  
 
-4.  Para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] somente, abra o **Project** menu e clique em **as propriedades de CustomDP**. Sobre o **Application** guia de **namespace raiz**, exclua o valor padrão, `CustomDP`.  
+4. Para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] somente, abra o **Project** menu e clique em **as propriedades de CustomDP**. Sobre o **Application** guia de **namespace raiz**, exclua o valor padrão, `CustomDP`.  
 
-5.  No menu **Arquivo**, clique em **Salvar tudo**.  
+5. No menu **Arquivo**, clique em **Salvar tudo**.  
 
-6.  No menu **Compilar**, clique em **Compilar Solução**.  
+6. No menu **Compilar**, clique em **Compilar Solução**.  
 
 ### <a name="build-the-project"></a>Compilar o projeto  
  Compile o projeto. No menu **Compilar**, clique em **Compilar Solução**.  
@@ -684,12 +684,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 #### <a name="to-create-an-xml-file-for-use-in-testing-the-directive-processor"></a>Para criar um arquivo XML para uso no teste do processador de diretriz  
 
-1.  Crie um arquivo de texto chamado `DocFile.xml` usando qualquer editor de texto (por exemplo, o bloco de notas).  
+1. Crie um arquivo de texto chamado `DocFile.xml` usando qualquer editor de texto (por exemplo, o bloco de notas).  
 
     > [!NOTE]
     >  Você pode criar esse arquivo em qualquer local (por exemplo, C:\Test\DocFile.xml).  
 
-2.  Adicione o seguinte ao arquivo de texto:  
+2. Adicione o seguinte ao arquivo de texto:  
 
     ```  
     <?xml version="1.0"?>  
@@ -730,17 +730,17 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </doc>  
     ```  
 
-3.  Salve e feche o arquivo.  
+3. Salve e feche o arquivo.  
 
 #### <a name="to-create-a-text-template-to-test-the-directive-processor"></a>Para criar um modelo de texto para testar o processador de diretriz  
 
-1.  No Visual Studio, crie um novo projeto de biblioteca de classes C# ou Visual Basic chamado TemplateTest.  
+1. No Visual Studio, crie um novo projeto de biblioteca de classes C# ou Visual Basic chamado TemplateTest.  
 
-2.  Adicione um novo arquivo de modelo de texto chamado TestDP.tt.  
+2. Adicione um novo arquivo de modelo de texto chamado TestDP.tt.  
 
-3.  Certifique-se de que o **Custom Tool** propriedade de TestDP.tt está definida como `TextTemplatingFileGenerator`.  
+3. Certifique-se de que o **Custom Tool** propriedade de TestDP.tt está definida como `TextTemplatingFileGenerator`.  
 
-4.  Altere o conteúdo de TestDP.tt com o texto a seguir.  
+4. Altere o conteúdo de TestDP.tt com o texto a seguir.  
 
     > [!NOTE]
     >  Certifique-se de substituir a cadeia de caracteres <`YOUR PATH>` com o caminho para o arquivo DOCFILE.  
@@ -832,15 +832,15 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     > [!NOTE]
     >  Nesse exemplo, o valor do parâmetro `Processor` é `CustomDirectiveProcessor`. O valor do parâmetro `Processor` deve corresponder ao nome da chave do Registro do processador.  
 
-5.  No menu **Arquivo**, clique em **Salvar tudo**.  
+5. No menu **Arquivo**, clique em **Salvar tudo**.  
 
 #### <a name="to-test-the-directive-processor"></a>Para testar o processador de diretriz  
 
-1.  Na **Gerenciador de soluções**, TestDP.tt com o botão direito e, em seguida, clique em **executar ferramenta personalizada**.  
+1. Na **Gerenciador de soluções**, TestDP.tt com o botão direito e, em seguida, clique em **executar ferramenta personalizada**.  
 
      Para [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] usuários, Testdp pode não aparecer na **Gerenciador de soluções** por padrão. Para exibir todos os arquivos atribuídos ao projeto, abra o **Project** menu e clique em **Mostrar todos os arquivos**.  
 
-2.  Na **Gerenciador de soluções**, expanda o nó Testdp e, em seguida, clique duas vezes em Testdp para abri-lo no editor.  
+2. Na **Gerenciador de soluções**, expanda o nó Testdp e, em seguida, clique duas vezes em Testdp para abri-lo no editor.  
 
      A saída de texto gerada será exibida. A saída deve se parecer com o seguinte:  
 
@@ -879,7 +879,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 
 #### <a name="to-add-html-to-the-generated-text"></a>Para adicionar HTML ao texto gerado  
 
-1.  Substitua o código em TestDP.tt pelo código a seguir. O HTML é realçado. Certifique-se de substituir a cadeia de caracteres `YOUR PATH` com o caminho para o arquivo DOCFILE.  
+1. Substitua o código em TestDP.tt pelo código a seguir. O HTML é realçado. Certifique-se de substituir a cadeia de caracteres `YOUR PATH` com o caminho para o arquivo DOCFILE.  
 
     > [!NOTE]
     >  Abrir adicional \<# e close #> marcas separam o código da instrução das marcas HTML.  
@@ -964,8 +964,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     </body></html>  
     ```  
 
-2.  Sobre o **arquivo** menu, clique em **salvar Testdp**.  
+2. Sobre o **arquivo** menu, clique em **salvar Testdp**.  
 
-3.  Para exibir a saída em um navegador, no **Gerenciador de soluções**Testdp com o botão direito e clique em **exibir no navegador**.  
+3. Para exibir a saída em um navegador, no **Gerenciador de soluções**Testdp com o botão direito e clique em **exibir no navegador**.  
 
      O resultado deve ser igual ao texto original, exceto que deve ter o formato HTML aplicado. Cada nome de item deve aparecer em negrito.

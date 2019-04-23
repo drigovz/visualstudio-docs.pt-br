@@ -11,25 +11,25 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd04a0376c940f699cef8c42c5bae851ff3cf286
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: cd38fa74d43842bcb1a08c682049b9998bc11ab3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56705458"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60110109"
 ---
 # <a name="programs"></a>Programas
 Na arquitetura do depurador, uma *programa*:
 
--   É um contêiner para um conjunto de threads e um conjunto de módulos. Um programa não tem nenhum analogia única no sistema operacional Windows.
+- É um contêiner para um conjunto de threads e um conjunto de módulos. Um programa não tem nenhum analogia única no sistema operacional Windows.
 
      Um programa é um tipo de subprocesso. Por exemplo, quando você estiver depurando um site da Web, um script pode ser visto como um programa. Enquanto um script é executado no processo de mecanismo de script, independente dos outros scripts, ele também tem seu próprio conjunto de threads. Um mecanismo de depuração (DES) anexa a um programa e não a um processo ou um thread.
 
--   Pode identificar em si e o processo que está executando no. Pode ser anexado a um programa para ser desanexado do e descrever o DE que o criou, se houver. Um programa pode também executar, interromper, continuar e ser encerrada.
+- Pode identificar em si e o processo que está executando no. Pode ser anexado a um programa para ser desanexado do e descrever o DE que o criou, se houver. Um programa pode também executar, interromper, continuar e ser encerrada.
 
--   Pode enumerar todos os seus threads. Um programa também pode fornecer seu próprio fluxo de desmontagem e pode enumerar todos os contextos de código da posição de um determinado documento.
+- Pode enumerar todos os seus threads. Um programa também pode fornecer seu próprio fluxo de desmontagem e pode enumerar todos os contextos de código da posição de um determinado documento.
 
--   É representado por um [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interface, criada antes que o programa está anexado, ou como parte do processo de anexação, dependendo da implementação. Quando uma porta enumera os programas de um processo, cada programa é criado de acordo com um correspondente [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interface é passada como um argumento para [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Embora os mecanismos de depuração também criar `IDebugProgram2` interfaces para representar os programas, esses programas não são criadas de acordo com um nó de programa. O `IDebugProgramNode2` interfaces criados por um DE são usados para depuração real, enquanto os criados por uma porta são usados apenas para descobrir quais programas estão em execução em um processo.
+- É representado por um [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) interface, criada antes que o programa está anexado, ou como parte do processo de anexação, dependendo da implementação. Quando uma porta enumera os programas de um processo, cada programa é criado de acordo com um correspondente [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) interface é passada como um argumento para [AddProgramNode](../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md). Embora os mecanismos de depuração também criar `IDebugProgram2` interfaces para representar os programas, esses programas não são criadas de acordo com um nó de programa. O `IDebugProgramNode2` interfaces criados por um DE são usados para depuração real, enquanto os criados por uma porta são usados apenas para descobrir quais programas estão em execução em um processo.
 
 ## <a name="see-also"></a>Consulte também
 - [Processos](../../extensibility/debugger/processes.md)

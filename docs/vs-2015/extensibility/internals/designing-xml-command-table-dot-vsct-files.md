@@ -10,12 +10,12 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f83b5e85d02e4427e433a517bbac84dcccaab243
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 987536af051de4a66b3eccadb105fd98455ddf06
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923547"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60085890"
 ---
 # <a name="designing-xml-command-table-vsct-files"></a>Criando tabela de comando XML (. Arquivos de VSCT)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -100,19 +100,19 @@ Um arquivo de tabela (. VSCT) do comando XML descreve o layout e aparência de i
 ## <a name="vsct-file-design-guidelines"></a>. Diretrizes de Design do arquivo VSCT  
  Para desenvolver com êxito um arquivo. VSCT, siga estas diretrizes.  
   
--   Comandos podem ser colocados somente em grupos, grupos podem ser colocados somente nos menus e menus podem ser colocados apenas em grupos. Somente os menus, na verdade, são exibidos no IDE, grupos e comandos não são.  
+- Comandos podem ser colocados somente em grupos, grupos podem ser colocados somente nos menus e menus podem ser colocados apenas em grupos. Somente os menus, na verdade, são exibidos no IDE, grupos e comandos não são.  
   
--   Submenus não podem ser atribuídos diretamente a um menu, mas devem ser atribuídos a um grupo, que por sua vez é atribuído a um menu.  
+- Submenus não podem ser atribuídos diretamente a um menu, mas devem ser atribuídos a um grupo, que por sua vez é atribuído a um menu.  
   
--   Comandos, submenus e grupos podem ser atribuídos a um grupo de gerenciamento do domínio pai ou menu usando o campo pai da sua diretiva de definição.  
+- Comandos, submenus e grupos podem ser atribuídos a um grupo de gerenciamento do domínio pai ou menu usando o campo pai da sua diretiva de definição.  
   
--   Organizar uma tabela de comando somente por meio dos campos pai nas diretivas tem uma limitação significativa. As diretivas que definem objetos podem levar o argumento de apenas um pai.  
+- Organizar uma tabela de comando somente por meio dos campos pai nas diretivas tem uma limitação significativa. As diretivas que definem objetos podem levar o argumento de apenas um pai.  
   
--   Reutilização de comandos, grupos ou submenus requer o uso de uma diretiva de novo para criar uma nova instância do objeto com seu próprio `GUID:ID` par.  
+- Reutilização de comandos, grupos ou submenus requer o uso de uma diretiva de novo para criar uma nova instância do objeto com seu próprio `GUID:ID` par.  
   
--   Cada `GUID:ID` par deve ser exclusivo. Reutilizar um comando que, por exemplo, foi colocado em um menu, uma barra de ferramentas, ou em um menu de contexto, é tratada pelo <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface.  
+- Cada `GUID:ID` par deve ser exclusivo. Reutilizar um comando que, por exemplo, foi colocado em um menu, uma barra de ferramentas, ou em um menu de contexto, é tratada pelo <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface.  
   
--   Comandos e submenus também podem ser atribuídos a vários grupos e grupos podem ser atribuídos a vários menus usando o [comandos elemento](../../extensibility/commands-element.md).  
+- Comandos e submenus também podem ser atribuídos a vários grupos e grupos podem ser atribuídos a vários menus usando o [comandos elemento](../../extensibility/commands-element.md).  
   
 ## <a name="vsct-file-notes"></a>. Notas de arquivo VSCT  
  Se você fizer alterações em um arquivo. VSCT depois de compilá-lo e colocá-lo em uma DLL de satélite nativo, você deve executar **devenv.exe /setup /nosetupvstemplates**. Isso força os recursos de VSPackage especificados no registro experimental para ser lidos novamente e o banco de dados interno que descreve [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] seja recriado.  

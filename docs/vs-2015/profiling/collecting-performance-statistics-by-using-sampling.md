@@ -12,12 +12,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a557691d06c41fc3d8919be10ff22038975686a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 7a51487cd074229d3f2c5fc4074fd184b22170c8
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777099"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60117467"
 ---
 # <a name="collecting-performance-statistics-by-using-sampling"></a>Coletando estatísticas de desempenho usando amostragem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,18 +26,18 @@ Por padrão, o método de amostragem das Ferramentas de Criação de Perfil [!IN
   
  **Requisitos**  
   
--   [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
+- [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)], [!INCLUDE[vsPro](../includes/vspro-md.md)]  
   
 > [!NOTE]
 >  Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos da Windows Store também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).  
   
  É possível especificar o método de amostragem usando um dos seguintes recursos:  
   
--   Na primeira página do Assistente de Criação de Perfil, clique em **Amostragem de CPU (recomendada)**.  
+- Na primeira página do Assistente de Criação de Perfil, clique em **Amostragem de CPU (recomendada)**.  
   
--   Na barra de ferramentas **Gerenciador de Desempenho**, na lista **Método**, clique em **Amostragem**.  
+- Na barra de ferramentas **Gerenciador de Desempenho**, na lista **Método**, clique em **Amostragem**.  
   
--   Na página **Geral** da caixa de diálogo de propriedades da sessão de desempenho, clique em **Amostragem**.  
+- Na página **Geral** da caixa de diálogo de propriedades da sessão de desempenho, clique em **Amostragem**.  
   
 ## <a name="common-tasks"></a>Tarefas comuns  
  É possível especificar outras opções na caixa de diálogo _Sessão de Desempenho_**Páginas de Propriedades** da sessão de desempenho. Para abrir essa caixa de diálogo:  

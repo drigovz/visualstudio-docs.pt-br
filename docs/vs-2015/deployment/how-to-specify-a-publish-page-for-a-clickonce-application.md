@@ -18,12 +18,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e739edf3d32b011f915ca0aad69e5148104afc05
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 63356c6eb423ddead54290cc11c865a5102f55f2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927432"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60098461"
 ---
 # <a name="how-to-specify-a-publish-page-for-a-clickonce-application"></a>Como: Especificar uma página de publicação para um aplicativo ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,29 +36,29 @@ Ao publicar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo
   
 ### <a name="to-specify-a-custom-web-page-for-a-clickonce-application"></a>Para especificar uma página da Web personalizada para um aplicativo ClickOnce  
   
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2.  Selecione o **publicar** painel.  
+2. Selecione o **publicar** painel.  
   
-3.  Clique o **opções** para abrir o **opções de publicação** caixa de diálogo.  
+3. Clique o **opções** para abrir o **opções de publicação** caixa de diálogo.  
   
-4.  Clique em **implantação**.  
+4. Clique em **implantação**.  
   
-5.  No **opções de publicação** diálogo caixa, certifique-se de que o **página da web de implantação aberto depois de publicar** caixa de seleção está selecionada (ela deve ser selecionada por padrão).  
+5. No **opções de publicação** diálogo caixa, certifique-se de que o **página da web de implantação aberto depois de publicar** caixa de seleção está selecionada (ela deve ser selecionada por padrão).  
   
-6.  No **página da web de implantação:** caixa, digite o nome da página da Web e, em seguida, clique em **Okey**.  
+6. No **página da web de implantação:** caixa, digite o nome da página da Web e, em seguida, clique em **Okey**.  
   
 ### <a name="to-prevent-the-publish-page-from-launching-each-time-you-publish"></a>Para impedir que a página publish Inicie cada vez que você publicar  
   
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2.  Selecione o **publicar** painel.  
+2. Selecione o **publicar** painel.  
   
-3.  Clique o **opções** para abrir o **opções de publicação** caixa de diálogo.  
+3. Clique o **opções** para abrir o **opções de publicação** caixa de diálogo.  
   
-4.  Clique em **implantação**.  
+4. Clique em **implantação**.  
   
-5.  No **opções de publicação** caixa de diálogo, desmarque a **página da web de implantação aberto depois de publicar** caixa de seleção.  
+5. No **opções de publicação** caixa de diálogo, desmarque a **página da web de implantação aberto depois de publicar** caixa de seleção.  
   
 ## <a name="see-also"></a>Consulte também  
  [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   

@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6128ca2638f98600c9bfb17e8388cf0a663040a8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: af4b6ba85982c926230100aac5c7a451df79b825
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766257"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60100177"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Executar o teste de unidade de um código Visual C# em um aplicativo da Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,12 +29,12 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
 >  A comunidade do Visual Studio, Enterprise. e Professional fornece recursos adicionais para teste de unidade.  
 > 
 > - Use um framework de teste de unidade de software livre e de terceiros que tenha criado um adaptador complementar para o gerenciador de testes da Microsoft. Também é possível analisar e exibir informações de cobertura de código para os testes.  
->   -   Execute os testes depois de cada compilação.  
->   -   O VS Enterprise também contém Microsoft Fakes, uma estrutura de isolamento para código gerenciado que ajuda a focar os testes no seu próprio código substituindo o código de teste para funcionalidade do sistema e de terceiros.  
+>   - Execute os testes depois de cada compilação.  
+>   - O VS Enterprise também contém Microsoft Fakes, uma estrutura de isolamento para código gerenciado que ajuda a focar os testes no seu próprio código substituindo o código de teste para funcionalidade do sistema e de terceiros.  
 > 
 >   Para obter mais informações, confira [Verificação do código usando testes de unidade](http://msdn.microsoft.com/library/dd264975.aspx) na biblioteca MSDN.  
   
-##  <a name="BKMK_In_this_topic"></a> Neste tópico  
+## <a name="BKMK_In_this_topic"></a> Neste tópico  
  [Criar a solução e o projeto de teste de unidade](#BKMK_Create_the_solution_and_the_unit_test_project)  
   
  [Verificar se o testes são executados no Gerenciador de Testes](#BKMK_Verify_that_the_tests_run_in_Test_Explorer)  
@@ -49,21 +49,21 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
   
  [Como refatorar o código](#BKMK_Refactor_the_code_)  
   
-##  <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Criar a solução e o projeto de teste de unidade  
+## <a name="BKMK_Create_the_solution_and_the_unit_test_project"></a> Criar a solução e o projeto de teste de unidade  
   
-1.  No menu **Arquivo**, escolha **Novo** e, em seguida, **Novo Projeto**.  
+1. No menu **Arquivo**, escolha **Novo** e, em seguida, **Novo Projeto**.  
   
-2.  Na caixa de diálogo **Novo Projeto**, expanda **Instalado** e, em seguida, expanda **Visual C#** e escolha **Windows Store**. Escolha então **Aplicativo em Branco** na lista de modelos de projeto.  
+2. Na caixa de diálogo **Novo Projeto**, expanda **Instalado** e, em seguida, expanda **Visual C#** e escolha **Windows Store**. Escolha então **Aplicativo em Branco** na lista de modelos de projeto.  
   
-3.  Dê ao projeto o nome `Maths` e verifique se a opção **Criar diretório para a solução** está selecionada.  
+3. Dê ao projeto o nome `Maths` e verifique se a opção **Criar diretório para a solução** está selecionada.  
   
-4.  No Gerenciador de Soluções, escolha o nome da solução, escolha **Adicionar** no menu de atalho e escolha **Novo Projeto**.  
+4. No Gerenciador de Soluções, escolha o nome da solução, escolha **Adicionar** no menu de atalho e escolha **Novo Projeto**.  
   
-5.  Na caixa de diálogo **Novo Projeto**, expanda **Instalado** e **Visual C#** e, em seguida, escolha **Windows Store**. Em seguida, escolha **Biblioteca de Teste de Unidade (aplicativos da Windows Store)** na lista de modelos de projeto.  
+5. Na caixa de diálogo **Novo Projeto**, expanda **Instalado** e **Visual C#** e, em seguida, escolha **Windows Store**. Em seguida, escolha **Biblioteca de Teste de Unidade (aplicativos da Windows Store)** na lista de modelos de projeto.  
   
      ![Crie o projeto de teste de unidade](../test/media/ute-cs-windows-createunittestproject.png "UTE_Cs_windows_CreateUnitTestProject")  
   
-6.  Abra UnitTest1.cs no editor do Visual Studio.  
+6. Abra UnitTest1.cs no editor do Visual Studio.  
   
     ```csharp  
   
@@ -89,17 +89,17 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
   
      Observe que:  
   
-    1.  Cada teste é definido usando o `[TestMethod]`. Um método de teste deve retornar void e não pode ter nenhum parâmetro.  
+    1. Cada teste é definido usando o `[TestMethod]`. Um método de teste deve retornar void e não pode ter nenhum parâmetro.  
   
-    2.  Os métodos de teste devem estar em uma classe decorada com o atributo `[TestClass]`.  
+    2. Os métodos de teste devem estar em uma classe decorada com o atributo `[TestClass]`.  
   
          Quando os testes são executados, uma instância de cada classe de teste é criada. Os métodos de teste são chamados em uma ordem não especificada.  
   
-    3.  Você pode definir métodos especiais que são invocados antes e depois de cada módulo, classe ou método. Para obter mais informações, confira [Como usar membros Microsoft.VisualStudio.TestTools.UnitTesting em testes de unidade](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md) na biblioteca MSDN.  
+    3. Você pode definir métodos especiais que são invocados antes e depois de cada módulo, classe ou método. Para obter mais informações, confira [Como usar membros Microsoft.VisualStudio.TestTools.UnitTesting em testes de unidade](../test/using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md) na biblioteca MSDN.  
   
-##  <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Verificar se o testes são executados no Gerenciador de Testes  
+## <a name="BKMK_Verify_that_the_tests_run_in_Test_Explorer"></a> Verificar se o testes são executados no Gerenciador de Testes  
   
-1.  Insira um código de teste em `TestMethod1` do arquivo **UnitTest1.cs**:  
+1. Insira um código de teste em `TestMethod1` do arquivo **UnitTest1.cs**:  
   
     ```csharp  
   
@@ -113,19 +113,19 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
   
      Observe que a classe `Assert` fornece vários métodos estáticos que você pode usar para verificar os resultados em métodos de teste.  
   
-2.  No menu **Testar**, escolha **Executar** e **Executar Todos**.  
+2. No menu **Testar**, escolha **Executar** e **Executar Todos**.  
   
      O projeto de teste é compilado e executado. A janela Gerenciador de Testes é exibida e o teste é listado em **Testes Aprovados**. O painel Resumo, na parte inferior da janela, fornece mais detalhes sobre o teste selecionado.  
   
      ![Gerenciador de testes](../test/media/ute-cpp-testexplorer-testmethod1.png "UTE_Cpp_TestExplorer_TestMethod1")  
   
-##  <a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Adição da classe Rooter ao projeto Matemática  
+## <a name="BKMK_Add_the_Rooter_class_to_the_Maths_project"></a> Adição da classe Rooter ao projeto Matemática  
   
-1.  No Gerenciador de Soluções, escolha o nome do projeto **Matemática**. Do menu de atalho, escolha **Adicionar** e, então, **Classe**.  
+1. No Gerenciador de Soluções, escolha o nome do projeto **Matemática**. Do menu de atalho, escolha **Adicionar** e, então, **Classe**.  
   
-2.  Nomeie o arquivo de classe `Rooter.cs`  
+2. Nomeie o arquivo de classe `Rooter.cs`  
   
-3.  Adicione o código a seguir ao arquivo **Rooter.cs** da classe Rooter:  
+3. Adicione o código a seguir ao arquivo **Rooter.cs** da classe Rooter:  
   
     ```csharp  
   
@@ -143,23 +143,23 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
   
      A classe `Rooter` declara um construtor e o método avaliador `SqareRoot`.  
   
-4.  O método `SqareRoot` é apenas uma implementação mínima, suficiente para testar a estrutura básica da configuração de teste.  
+4. O método `SqareRoot` é apenas uma implementação mínima, suficiente para testar a estrutura básica da configuração de teste.  
   
-##  <a name="BKMK_Couple_the_test_project_to_the_app_project"></a> Como acoplar o projeto de teste ao projeto de aplicativo  
+## <a name="BKMK_Couple_the_test_project_to_the_app_project"></a> Como acoplar o projeto de teste ao projeto de aplicativo  
   
 1. Adicione uma referência ao aplicativo Matemática para o projeto RooterTests.  
   
-   1.  No Gerenciador de Soluções, escolha o projeto **RooterTests** e, em seguida, escolha **Adicionar Referência...** no menu de atalho.  
+   1. No Gerenciador de Soluções, escolha o projeto **RooterTests** e, em seguida, escolha **Adicionar Referência...** no menu de atalho.  
   
-   2.  Na caixa de diálogo **Adicionar Referência - RooterTests**, expanda **Solução** e escolha **Projetos**. Então, selecione o item **Matemática**.  
+   2. Na caixa de diálogo **Adicionar Referência - RooterTests**, expanda **Solução** e escolha **Projetos**. Então, selecione o item **Matemática**.  
   
         ![Adicione uma referência ao projeto Matemática](../test/media/ute-cs-windows-addreference.png "UTE_Cs_windows_AddReference")  
   
 2. Adicione uma instrução Using ao arquivo UnitTest1.cs:  
   
-   1.  Abra **UnitTest1.cs**.  
+   1. Abra **UnitTest1.cs**.  
   
-   2.  Adicione esse código abaixo da linha `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;`:  
+   2. Adicione esse código abaixo da linha `using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;`:  
   
        ```csharp  
        using Maths;  
@@ -190,9 +190,9 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
   
    Você configurou o teste e os projetos de código, além de ter verificado que pode executar testes que executam funções no projeto de código. Agora, você pode começar a escrever testes e códigos reais.  
   
-##  <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentar iterativamente os testes e fazer com que sejam aprovados  
+## <a name="BKMK_Iteratively_augment_the_tests_and_make_them_pass"></a> Aumentar iterativamente os testes e fazer com que sejam aprovados  
   
-1.  Adicione um novo teste:  
+1. Adicione um novo teste:  
   
     ```csharp  
     [TestMethod]  
@@ -215,16 +215,16 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
     >   
     >  Quando os usuários alterarem os respectivos requisitos, desabilite os testes que não estejam mais corretos. Escreva novos testes e faça-os funcionar, um por vez, da mesma maneira incremental.  
   
-2.  No Gerenciador de Testes, escolha **Executar Todos**.  
+2. No Gerenciador de Testes, escolha **Executar Todos**.  
   
-3.  O teste falhará.  
+3. O teste falhará.  
   
      ![Falha em RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
     >  Logo após escrevê-los, verifique se cada um deles falha. Isso ajuda a impedir a facilidade de errar ao escrever um teste que nunca falha.  
   
-4.  Aprimore o código sob teste para que o novo teste seja aprovado. Altere a função `SqareRoot` em **Rooter.cs** para:  
+4. Aprimore o código sob teste para que o novo teste seja aprovado. Altere a função `SqareRoot` em **Rooter.cs** para:  
   
     ```csharp  
     public double SquareRoot(double x)  
@@ -242,14 +242,14 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
   
     ```  
   
-5.  Compile a solução e, no Gerenciador de Testes, escolha **Executar Todos**.  
+5. Compile a solução e, no Gerenciador de Testes, escolha **Executar Todos**.  
   
      Os três testes agora foram aprovados.  
   
 > [!TIP]
 >  Desenvolva o código adicionando testes, um de cada vez. Verifique se todos os testes passaram após cada iteração.  
   
-##  <a name="BKMK_Debug_a_failing_test"></a> Depurar um teste que falhou  
+## <a name="BKMK_Debug_a_failing_test"></a> Depurar um teste que falhou  
   
 1. Adicione outro teste a **UnitTest1.cs**:  
   
@@ -292,13 +292,13 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
   
 3. Para ver o motivo da falha do teste, percorra a função:  
   
-   1.  Defina o ponto de interrupção no início da função `SquareRoot`.  
+   1. Defina o ponto de interrupção no início da função `SquareRoot`.  
   
-   2.  No menu de atalho do teste com falha, escolha **Depurar Testes Selecionados**.  
+   2. No menu de atalho do teste com falha, escolha **Depurar Testes Selecionados**.  
   
         Quando a execução for interrompida no ponto de interrupção, percorra o código.  
   
-   3.  Adicione o código ao método Rooter para capturar a exceção:  
+   3. Adicione o código ao método Rooter para capturar a exceção:  
   
        ```csharp  
        public double SquareRoot(double x)  
@@ -310,16 +310,16 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
   
        ```  
   
-   1.  No Gerenciador de Testes, escolha **Executar Tudo** para testar o método corrigido e ter certeza de que você não introduziu uma regressão.  
+   1. No Gerenciador de Testes, escolha **Executar Tudo** para testar o método corrigido e ter certeza de que você não introduziu uma regressão.  
   
    Todos os testes agora foram aprovados.  
   
    ![Todos os testes foram aprovados](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
-##  <a name="BKMK_Refactor_the_code_"></a> Como refatorar o código  
+## <a name="BKMK_Refactor_the_code_"></a> Como refatorar o código  
  **Simplifique o cálculo central na função SquareRoot.**  
   
-1.  Altere a implementação do resultado  
+1. Altere a implementação do resultado  
   
     ```csharp  
     // old code  
@@ -329,7 +329,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
   
     ```  
   
-2.  Escolha **Executar Tudo** para testar o método refatorado e ter certeza de que você não introduziu uma regressão.  
+2. Escolha **Executar Tudo** para testar o método refatorado e ter certeza de que você não introduziu uma regressão.  
   
 > [!TIP]
 >  Um conjunto estável de testes de unidade aprovados garante que você não introduziu bugs quando alterou o código.  
@@ -338,7 +338,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
   
  Observe que o método `RangeTest` não embute em código o denominador da variável de tolerância que é usado no método `Assert`. Se você pretende adicionar testes extras que usem o mesmo cálculo de tolerância, o uso de um valor embutido em código em vários locais poderá resultar em erros.  
   
-1.  Adicione um método privado à classe Unit1Test para calcular o valor de tolerância e chame esse método.  
+1. Adicione um método privado à classe Unit1Test para calcular o valor de tolerância e chame esse método.  
   
     ```csharp  
     private double ToleranceHelper(double expected)  
@@ -362,7 +362,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
   
     ```  
   
-2.  Escolha **Executar Tudo** para testar o método refatorado e verifique se você não introduziu um erro.  
+2. Escolha **Executar Tudo** para testar o método refatorado e verifique se você não introduziu um erro.  
   
 > [!NOTE]
 >  Para adicionar um método auxiliar a uma classe de teste, não adicione o atributo `[TestMethod]` ao método. O Gerenciador de Testes não registra o método a ser executado.

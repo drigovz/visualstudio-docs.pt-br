@@ -1,5 +1,5 @@
 ---
-title: 'Diagramas de dependência: Diretrizes'
+title: 'Diagramas de Dependência: Diretrizes'
 ms.date: 09/28/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb6908db6b111f2ff67f2e1ca3761b11c302f5d4
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f5973643d8f87b4c992209e6512c51bc275de60b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223813"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090111"
 ---
 # <a name="dependency-diagrams-guidelines"></a>Diagramas de dependência: diretrizes
 
@@ -39,21 +39,21 @@ As etapas a seguir fornecem uma visão geral de como usar diagramas de dependên
 > [!NOTE]
 > Essas etapas aparecem na ordem aproximada. Você provavelmente deseja sobrepor as tarefas, reordená-los de acordo com sua própria situação e revisá-las no início de cada iteração em seu projeto.
 
-1.  [Criar um diagrama de dependência](#Create) para o aplicativo inteiro ou para uma camada dentro dele.
+1. [Criar um diagrama de dependência](#Create) para o aplicativo inteiro ou para uma camada dentro dele.
 
-2.  [Definir camadas para representar as áreas funcionais principais ou componentes](#CreateLayers) do seu aplicativo. Nomeie dessas camadas de acordo com sua função, por exemplo, "Apresentação" ou "Serviços". Se você tiver uma solução do Visual Studio, você pode associar cada camada com uma coleção de *artefatos*, como namespaces, projetos, arquivos e assim por diante.
+2. [Definir camadas para representar as áreas funcionais principais ou componentes](#CreateLayers) do seu aplicativo. Nomeie dessas camadas de acordo com sua função, por exemplo, "Apresentação" ou "Serviços". Se você tiver uma solução do Visual Studio, você pode associar cada camada com uma coleção de *artefatos*, como namespaces, projetos, arquivos e assim por diante.
 
-3.  [Descubra as dependências existentes](#Generate) entre camadas.
+3. [Descubra as dependências existentes](#Generate) entre camadas.
 
-4.  [Editar as camadas e dependências](#EditArchitecture) para mostrar a atualização que você deseja que o código para refletir de design.
+4. [Editar as camadas e dependências](#EditArchitecture) para mostrar a atualização que você deseja que o código para refletir de design.
 
-5.  [Criar novas áreas do seu aplicativo](#NewAreas) criando camadas para representar os componentes ou blocos arquitetônicos principais e definir dependências para mostrar como cada camada usa os outros.
+5. [Criar novas áreas do seu aplicativo](#NewAreas) criando camadas para representar os componentes ou blocos arquitetônicos principais e definir dependências para mostrar como cada camada usa os outros.
 
-6.  [Editar o layout e aparência do diagrama](#EditLayout) para ajudá-lo a discutir isso com seus colegas.
+6. [Editar o layout e aparência do diagrama](#EditLayout) para ajudá-lo a discutir isso com seus colegas.
 
-7.  [Valide o código no diagrama de dependência](#Validate) para realçar os conflitos entre o código e a arquitetura que você precisa.
+7. [Valide o código no diagrama de dependência](#Validate) para realçar os conflitos entre o código e a arquitetura que você precisa.
 
-8.  [Atualize o código para estar de acordo com sua nova arquitetura](#UpdateCode). Desenvolver de forma iterativa e refatorar o código até que a validação não mostra nenhum conflito.
+8. [Atualize o código para estar de acordo com sua nova arquitetura](#UpdateCode). Desenvolver de forma iterativa e refatorar o código até que a validação não mostra nenhum conflito.
 
 9. [Incluir validação de camada no processo de build](#BuildValidation) para garantir que o código continue a aderir ao seu design.
 
@@ -79,11 +79,11 @@ Ao atualizar um aplicativo não familiar, você também pode criar mapas de cód
 
 Consulte:
 
--   [Criar diagramas de dependência usando seu código](../modeling/create-layer-diagrams-from-your-code.md)
+- [Criar diagramas de dependência usando seu código](../modeling/create-layer-diagrams-from-your-code.md)
 
--   [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)
+- [Usar mapas de códigos para depurar aplicativos](../modeling/use-code-maps-to-debug-your-applications.md)
 
--   [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)
+- [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)
 
 ## <a name="Generate"></a> Descubra as dependências existentes entre camadas
 
@@ -123,13 +123,13 @@ Se isso não for o caso, o código será mais difícil alterar ao longo do tempo
 
 Ao iniciar o desenvolvimento de um novo projeto ou uma nova área em um novo projeto, você pode desenhar camadas e dependências para ajudar a identificar os principais componentes antes de começar a desenvolver o código.
 
--   **Mostrar os padrões de arquitetura identificáveis** em seus diagramas de dependência, se possível. Por exemplo, um diagrama de dependência que descreve um aplicativo da área de trabalho pode incluir camadas como apresentação, lógica de domínio e Data Store. Um diagrama de dependência que aborda um recurso único dentro de um aplicativo pode ter camadas como modelo, exibição e controlador. Para obter mais informações sobre esses padrões, consulte [padrões & práticas: Arquitetura do aplicativo](http://go.microsoft.com/fwlink/?LinkId=145794).
+- **Mostrar os padrões de arquitetura identificáveis** em seus diagramas de dependência, se possível. Por exemplo, um diagrama de dependência que descreve um aplicativo da área de trabalho pode incluir camadas como apresentação, lógica de domínio e Data Store. Um diagrama de dependência que aborda um recurso único dentro de um aplicativo pode ter camadas como modelo, exibição e controlador. Para obter mais informações sobre esses padrões, consulte [padrões & práticas: Arquitetura do aplicativo](http://go.microsoft.com/fwlink/?LinkId=145794).
 
--   **Criar um artefato de código para cada camada** como um namespace, classe ou componente. Isso torna mais fácil de seguir o código e vincular os artefatos de código a camadas. Assim que você cria cada artefato, você deve vinculá-lo a camada apropriada.
+- **Criar um artefato de código para cada camada** como um namespace, classe ou componente. Isso torna mais fácil de seguir o código e vincular os artefatos de código a camadas. Assim que você cria cada artefato, você deve vinculá-lo a camada apropriada.
 
--   **Não é preciso vincular a maioria das classes e outros artefatos a camadas** porque eles se encaixam dentro de artefatos maiores, como namespaces que você já tiver vinculado a camadas.
+- **Não é preciso vincular a maioria das classes e outros artefatos a camadas** porque eles se encaixam dentro de artefatos maiores, como namespaces que você já tiver vinculado a camadas.
 
--   **Criar um novo diagrama para um novo recurso**. Normalmente, haverá um ou mais diagramas de dependência que descreve o aplicativo inteiro. Se você estiver criando um novo recurso dentro do aplicativo, não adicionar ou alterar os diagramas existentes. Em vez disso, crie seu próprio diagrama que reflete as novas partes do código. As camadas no novo diagrama podem incluir a apresentação, lógica de domínio e as camadas de banco de dados para o novo recurso.
+- **Criar um novo diagrama para um novo recurso**. Normalmente, haverá um ou mais diagramas de dependência que descreve o aplicativo inteiro. Se você estiver criando um novo recurso dentro do aplicativo, não adicionar ou alterar os diagramas existentes. Em vez disso, crie seu próprio diagrama que reflete as novas partes do código. As camadas no novo diagrama podem incluir a apresentação, lógica de domínio e as camadas de banco de dados para o novo recurso.
 
      Quando você compila o aplicativo, seu código será validado tanto em relação ao diagrama como um todo e seu diagrama mais detalhado do recurso.
 
@@ -137,11 +137,11 @@ Ao iniciar o desenvolvimento de um novo projeto ou uma nova área em um novo pro
 
 Para ajudar a identificar as camadas e dependências ou discuti-las com os membros da equipe, edite a aparência e o layout do diagrama das seguintes maneiras:
 
--   Altere as posições de camadas, formas e tamanhos.
+- Altere as posições de camadas, formas e tamanhos.
 
--   Altere as cores de camadas e dependências.
+- Altere as cores de camadas e dependências.
 
-    -   Selecione um ou mais camadas ou dependências, clique com botão direito e depois clique em **propriedades**. No **propriedades** janela, edite o **cor** propriedade.
+    - Selecione um ou mais camadas ou dependências, clique com botão direito e depois clique em **propriedades**. No **propriedades** janela, edite o **cor** propriedade.
 
 ## <a name="Validate"></a> Valide o código no diagrama
 
@@ -149,17 +149,17 @@ Quando você tiver editado o diagrama, você pode validá-lo com o código manua
 
 Consulte:
 
--   [Validar código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)
+- [Validar código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md)
 
--   [Incluir validação de camada no processo de compilação](#BuildValidation)
+- [Incluir validação de camada no processo de compilação](#BuildValidation)
 
 ## <a name="UpdateCode"></a> Atualize o código para estar de acordo com a nova arquitetura
 
 Normalmente, os erros serão exibidos na primeira vez que você valide o código em um diagrama de dependência atualizado. Esses erros podem ter várias causas:
 
--   Um artefato é atribuído à camada errada. Nesse caso, mova o artefato.
+- Um artefato é atribuído à camada errada. Nesse caso, mova o artefato.
 
--   Um artefato como, por exemplo, uma classe usa outra classe de maneira a entrar em conflito com a arquitetura. Nesse caso, refatore o código para remover a dependência.
+- Um artefato como, por exemplo, uma classe usa outra classe de maneira a entrar em conflito com a arquitetura. Nesse caso, refatore o código para remover a dependência.
 
 Para resolver esses erros, atualize o código até que mais nenhum erro seja exibido durante a validação. Isso geralmente é um processo iterativo. Para obter mais informações sobre esses erros, consulte [validar o código com diagramas de dependência](../modeling/validate-code-with-layer-diagrams.md).
 
@@ -174,5 +174,5 @@ Para garantir que as alterações futuras no código em conformidade com os diag
 
 ## <a name="see-also"></a>Consulte também
 
-- [Diagramas de dependência: Referência](../modeling/layer-diagrams-reference.md)
+- [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)
 - [Criar diagramas de dependência usando seu código](../modeling/create-layer-diagrams-from-your-code.md)

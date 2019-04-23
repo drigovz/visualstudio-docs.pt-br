@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ebbb10f0c317e79e22c8eb49b59e4e58a82b9d77
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: cd93ddb6e1d574460593f992f880ccd53d800842
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927888"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60097330"
 ---
 # <a name="graphics-pipeline-stages"></a>Estágios de Pipeline Gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,14 +46,14 @@ A janela estágios de Pipeline gráficos ajuda a entender como uma chamada de de
   
 ##### <a name="to-view-a-shaders-source-code"></a>Para exibir o código-fonte do sombreador  
   
--   No **estágios de Pipeline gráficos** janela, localize o estágio de sombreador que corresponde ao sombreador que deseja examinar. Em seguida, abaixo da imagem de visualização, siga o link de título do estágio de sombreador — por exemplo, siga o link **obj:30 do sombreador de vértices** para exibir o código de origem do sombreador de vértice.  
+- No **estágios de Pipeline gráficos** janela, localize o estágio de sombreador que corresponde ao sombreador que deseja examinar. Em seguida, abaixo da imagem de visualização, siga o link de título do estágio de sombreador — por exemplo, siga o link **obj:30 do sombreador de vértices** para exibir o código de origem do sombreador de vértice.  
   
     > [!TIP]
     >  O número de objeto **obj:30**, identifica esse sombreador em toda a interface de analisador de gráficos como a janela de histórico de pixel e de tabela do objeto.  
   
 ##### <a name="to-debug-a-shader"></a>Para depurar um sombreador  
   
--   No **estágios de Pipeline gráficos** janela, localize o estágio de sombreador que corresponde ao sombreador que deseja depurar. Em seguida, abaixo da imagem de visualização, escolha **iniciar depuração**. Esse ponto de entrada para os padrões de depurador HLSL para a primeira invocação do sombreador para o estágio correspondente — ou seja, o primeiro pixel, vértice ou primitivo que é processado pelo sombreador durante esta chamada de desenho. Invocações deste sombreador para um vértice ou pixel específico podem ser acessadas por meio de **histórico de Pixel de gráficos**.  
+- No **estágios de Pipeline gráficos** janela, localize o estágio de sombreador que corresponde ao sombreador que deseja depurar. Em seguida, abaixo da imagem de visualização, escolha **iniciar depuração**. Esse ponto de entrada para os padrões de depurador HLSL para a primeira invocação do sombreador para o estágio correspondente — ou seja, o primeiro pixel, vértice ou primitivo que é processado pelo sombreador durante esta chamada de desenho. Invocações deste sombreador para um vértice ou pixel específico podem ser acessadas por meio de **histórico de Pixel de gráficos**.  
   
 ### <a name="the-pipeline-stages"></a>Os estágios de pipeline  
  A janela estágios de Pipeline visualiza apenas os estágios do pipeline que estavam ativos durante a chamada de desenho. Cada estágio do pipeline gráfica transforma uma entrada de estágio anterior e passa o resultado para o próximo estágio. O primeiro estágio, o Assembler de entrada — extrai dados de índice e vértice de seu aplicativo como sua entrada; o último estágio — a fusão de saída — combina recentemente renderizado pixels junto com o conteúdo atual do framebuffer ou destino de renderização como sua saída para produzir a imagem final, você vê na tela.  

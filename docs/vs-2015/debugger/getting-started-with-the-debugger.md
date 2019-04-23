@@ -14,20 +14,20 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d30c45c0601b6e291604275fdc9cfc4f3b5def6d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e093abd5e836bcb7ee236979c00d574a07ecfd3d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923521"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109511"
 ---
 # <a name="getting-started-with-the-debugger"></a>Introdução ao depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-O depurador do Visual Studio é fácil de usar em qualquer idioma. Aqui, mostraremos como depurar um programa C# simples, mas você pode aplicar as mesmas etapas para o código em outras linguagens como C++ e JavaScript.  
+O depurador do Visual Studio é fácil de usar em qualquer idioma. Aqui, mostraremos como depurar um programa c# simples, mas você pode aplicar as mesmas etapas para o código em outras linguagens como C++ e JavaScript.  
   
-##  <a name="BKMK_Start_debugging_a_VS_project"></a> Depurar um projeto C# básico  
- Vamos começar com um simple aplicativo de console em C# (**arquivo / novo / projeto**, em seguida, selecione **Visual C#** e, em seguida, selecione **aplicativo de Console**). Se você nunca trabalhou com o Visual Studio antes, consulte [passo a passo: Criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). O **Main** método apenas adiciona 1 a uma variável de inteiro 10 vezes e imprime o resultado no console:  
+## <a name="BKMK_Start_debugging_a_VS_project"></a> Depurar um projeto c# básico  
+ Vamos começar com um simple aplicativo de console em c# (**arquivo / novo / projeto**, em seguida, selecione **Visual c#** e, em seguida, selecione **aplicativo de Console**). Se você nunca trabalhou com o Visual Studio antes, consulte [passo a passo: Criar um aplicativo simples](../ide/walkthrough-create-a-simple-application-with-visual-csharp-or-visual-basic.md). O **Main** método apenas adiciona 1 a uma variável de inteiro 10 vezes e imprime o resultado no console:  
   
 ```csharp  
 static void Main(string[] args)  
@@ -51,7 +51,7 @@ static void Main(string[] args)
   
  Para obter mais informações sobre pontos de interrupção, consulte [usando pontos de interrupção](../debugger/using-breakpoints.md).  
   
-##  <a name="BKMK_Inspect_Variables"></a> Inspecionar variáveis  
+## <a name="BKMK_Inspect_Variables"></a> Inspecionar variáveis  
  A depuração geralmente envolve encontrar as variáveis que não contêm os valores esperados em um ponto específico. Mostraremos algumas das maneiras que você pode inspecionar variáveis.  
   
  Inicie a depuração novamente. Interrompe a execução antes do `Console.WriteLine` código é executado. Você pode fazer com que ele execute passo à frente (clique em **Debug / etapa Over** ou **F10**). Nesse caso, você poderia escolher **intervir** (**F11**) e obter o mesmo resultado; vamos explicar a diferença mais tarde. A linha com a última chave de abertura do método deve ter desativado amarela. Examine a janela do Console. Você deve ver **10**.  
