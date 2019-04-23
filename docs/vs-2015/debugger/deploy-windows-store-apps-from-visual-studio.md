@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 520113d97bdf41d750cad340c0ab8868eb85f603
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 73b4350a2e7f277a11f4d6650d8089df0f87fe4d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929836"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60116388"
 ---
 # <a name="deploy-windows-store-apps-from-visual-studio"></a>Implantar aplicativos da Windows Store pelo Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
 
 - Implantação de um aplicativo que será depurado quando é iniciado por outro aplicativo ou método.
 
-##  <a name="BKMK_In_this_topic"></a> Neste tópico
+## <a name="BKMK_In_this_topic"></a> Neste tópico
  Neste tópico, você pode aprender:
 
  [Como implantar um aplicativo da Windows Store](#BKMK_How_to_deploy_a_Windows_Store_app)
@@ -49,25 +49,25 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
 
  [Opções de implantação](#BKMK_Deployment_options)
 
-##  <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Como implantar um aplicativo da Windows Store
+## <a name="BKMK_How_to_deploy_a_Windows_Store_app"></a> Como implantar um aplicativo da Windows Store
  Implantar manualmente um aplicativo é simples:
 
-1.  Se você está implantando para um dispositivo remoto, especifique o nome ou o endereço IP do dispositivo na página de propriedade do projeto de inicialização do aplicativo. (As etapas para fazer isso são listadas a seguir neste tópico.)
+1. Se você está implantando para um dispositivo remoto, especifique o nome ou o endereço IP do dispositivo na página de propriedade do projeto de inicialização do aplicativo. (As etapas para fazer isso são listadas a seguir neste tópico.)
 
-2.  Na barra de ferramentas Visual Studio do depurador, escolha o destino da implantação na lista suspensa ao lado do botão **Iniciar Depuração**.
+2. Na barra de ferramentas Visual Studio do depurador, escolha o destino da implantação na lista suspensa ao lado do botão **Iniciar Depuração**.
 
      ![Executar no computador Local](../debugger/media/vsrun-f5-local.png "VSRUN_F5_Local")
 
-3.  No menu **Compilar**, escolha **Implantar**
+3. No menu **Compilar**, escolha **Implantar**
 
-##  <a name="BKMK_How_to_specify_a_remote_device"></a> Como especificar um dispositivo remoto
+## <a name="BKMK_How_to_specify_a_remote_device"></a> Como especificar um dispositivo remoto
  **Pré-requisitos**
 
  Para implantar um aplicativo em um dispositivo remoto:
 
--   Uma licença de desenvolvedor deve estar instalada no dispositivo remoto.
+- Uma licença de desenvolvedor deve estar instalada no dispositivo remoto.
 
--   As Ferramentas Remotas do Visual Studio devem estar instaladas no dispositivo remoto e o Monitor de Depuração Remota deve estar em execução.
+- As Ferramentas Remotas do Visual Studio devem estar instaladas no dispositivo remoto e o Monitor de Depuração Remota deve estar em execução.
 
      A implantação usa o canal de rede do depurador remoto para enviar os arquivos do aplicativo ao dispositivo remoto.
 
@@ -101,7 +101,7 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
 
 8. Insira o nome de rede do dispositivo remoto na caixa **Computador Remoto** ou clique em **Localizar** para escolher o dispositivo na caixa de diálogo **Selecionar conexão de depurador remoto**.
 
-##  <a name="BKMK_Deployment_options"></a> Opções de implantação
+## <a name="BKMK_Deployment_options"></a> Opções de implantação
  Você pode definir as opções de implantação a seguir na página de propriedade de depuração do projeto de inicialização.
 
  **Permitir Loopback de rede** por motivos de segurança, um [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] aplicativo instalado da maneira padrão não tem permissão para fazer chamadas de rede para o dispositivo está instalado. Por padrão, a implantação do Visual Studio cria uma isenção dessa regra para o aplicativo implantado. Essa isenção permite que você teste procedimentos de comunicação em um único computador. Antes de enviar seu aplicativo para [!INCLUDE[win8_appstore_long](../includes/win8-appstore-long-md.md)], você deve testá-lo sem a isenção.
