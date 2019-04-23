@@ -10,12 +10,12 @@ ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bf3d9acd493cd10a8d014b4479684a0107cb8740
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 853a3f8db3623156e000c9360981933091ef9afd
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "58999974"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106952"
 ---
 # <a name="authoring-vsct-files"></a>Criação de páginas. Arquivos do VSCT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,9 +32,9 @@ Este documento mostra como criar um arquivo. VSCT para adicionar itens de menu, 
   
 ##### <a name="to-create-the-file-structure"></a>Para criar a estrutura de arquivo  
   
-1.  Adicionar um arquivo. VSCT ao seu projeto seguindo as etapas em [como: Criar um. Arquivo VSCT](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
+1. Adicionar um arquivo. VSCT ao seu projeto seguindo as etapas em [como: Criar um. Arquivo VSCT](../../extensibility/internals/how-to-create-a-dot-vsct-file.md).  
   
-2.  Adicione os namespaces necessários para o `CommandTable` elemento, conforme mostrado no exemplo a seguir.  
+2. Adicione os namespaces necessários para o `CommandTable` elemento, conforme mostrado no exemplo a seguir.  
   
     ```xml  
     <CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable"   
@@ -42,7 +42,7 @@ Este documento mostra como criar um arquivo. VSCT para adicionar itens de menu, 
   
     ```  
   
-3.  No `CommandTable` elemento, adicionar um `Commands` elemento para hospedar todos os seus menus personalizados, barras de ferramentas, grupos de comando e comandos. Para que podem carregar seus elementos de interface do usuário personalizados, o `Commands` elemento deve ter seu `Package` atributo definido como o nome do pacote.  
+3. No `CommandTable` elemento, adicionar um `Commands` elemento para hospedar todos os seus menus personalizados, barras de ferramentas, grupos de comando e comandos. Para que podem carregar seus elementos de interface do usuário personalizados, o `Commands` elemento deve ter seu `Package` atributo definido como o nome do pacote.  
   
      Após o `Commands` elemento, adicionar um `Symbols` elemento para definir os GUIDs para o pacote e os nomes e IDs de comando para elementos de interface do usuário.  
   
@@ -51,28 +51,28 @@ Este documento mostra como criar um arquivo. VSCT para adicionar itens de menu, 
   
 ##### <a name="to-include-visual-studio-resources"></a>Para incluir recursos do Visual Studio  
   
-1.  Na parte superior da `CommandTable` elemento, adicione uma `Extern` elemento para cada arquivo externo a ser referenciada e definir o `href` de atributo para o nome do arquivo. Você pode referenciar os seguintes arquivos de cabeçalho para acessar os recursos do Visual Studio:  
+1. Na parte superior da `CommandTable` elemento, adicione uma `Extern` elemento para cada arquivo externo a ser referenciada e definir o `href` de atributo para o nome do arquivo. Você pode referenciar os seguintes arquivos de cabeçalho para acessar os recursos do Visual Studio:  
   
-    -   Stdidcmd.h, define as IDs para todos os comandos expostos pelo Visual Studio.  
+    - Stdidcmd.h, define as IDs para todos os comandos expostos pelo Visual Studio.  
   
-    -   Vsshlids.h, contém as IDs de comando para menus do Visual Studio.  
+    - Vsshlids.h, contém as IDs de comando para menus do Visual Studio.  
   
-2.  Se o pacote chamar todos os comandos que são definidos pelo Visual Studio ou por outros pacotes, adicione uma `UsedCommands` elemento após o `Commands` elemento. Preencher esse elemento com um [UsedCommand](../../extensibility/usedcommand-element.md) elemento para cada comando, ou seja, você chama não faz parte do seu pacote. Defina as `guid` e `id` atributos do `UsedCommand` elementos para os valores GUID e ID dos comandos para chamar. Para obter mais informações sobre como localizar os comandos de GUIDs e IDs do Visual Studio, consulte [GUIDs e IDs de comandos do Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md). Para chamar comandos de outros pacotes, use o GUID e a ID do comando conforme definido no arquivo. VSCT para esses pacotes.  
+2. Se o pacote chamar todos os comandos que são definidos pelo Visual Studio ou por outros pacotes, adicione uma `UsedCommands` elemento após o `Commands` elemento. Preencher esse elemento com um [UsedCommand](../../extensibility/usedcommand-element.md) elemento para cada comando, ou seja, você chama não faz parte do seu pacote. Defina as `guid` e `id` atributos do `UsedCommand` elementos para os valores GUID e ID dos comandos para chamar. Para obter mais informações sobre como localizar os comandos de GUIDs e IDs do Visual Studio, consulte [GUIDs e IDs de comandos do Visual Studio](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md). Para chamar comandos de outros pacotes, use o GUID e a ID do comando conforme definido no arquivo. VSCT para esses pacotes.  
   
 ### <a name="declaring-ui-elements"></a>Declarando elementos de interface do usuário  
  Declarar todos os novos elementos de interface do usuário no `Symbols` seção do arquivo. VSCT.  
   
 ##### <a name="to-declare-ui-elements"></a>Para declarar os elementos de interface do usuário  
   
-1.  No `Symbols` elemento, adicione três [GuidSymbol](../../extensibility/guidsymbol-element.md) elementos. Cada `GuidSymbol` elemento tem um `name` atributo e um `value` atributo. Defina o `name` para que ele reflita o propósito do elemento de atributo. O `value` atributo utiliza um GUID. (Para gerar um GUID, o **ferramentas** menu, clique em **criar GUID**e, em seguida, selecione **formato de registro**.)  
+1. No `Symbols` elemento, adicione três [GuidSymbol](../../extensibility/guidsymbol-element.md) elementos. Cada `GuidSymbol` elemento tem um `name` atributo e um `value` atributo. Defina o `name` para que ele reflita o propósito do elemento de atributo. O `value` atributo utiliza um GUID. (Para gerar um GUID, o **ferramentas** menu, clique em **criar GUID**e, em seguida, selecione **formato de registro**.)  
   
      A primeira `GuidSymbol` elemento representa seu pacote e geralmente não tem filhos. O segundo `GuidSymbol` element representa o comando definido e irá conter todos os símbolos que definem seus menus, grupos e comandos. O terceiro `GuidSymbol` elemento representa seu repositório de imagens e contém símbolos para todos os ícones para seus comandos. Se você não tiver nenhum comando que usam ícones, você pode omitir o terceiro `GuidSymbol` elemento.  
   
-2.  No `GuidSymbol` elemento que representa o conjunto de comandos, adicione um ou mais [IDSymbol](../../extensibility/idsymbol-element.md) elementos. Cada um deles representa um menu, barra de ferramentas, grupo ou comando que você está adicionando à interface do usuário.  
+2. No `GuidSymbol` elemento que representa o conjunto de comandos, adicione um ou mais [IDSymbol](../../extensibility/idsymbol-element.md) elementos. Cada um deles representa um menu, barra de ferramentas, grupo ou comando que você está adicionando à interface do usuário.  
   
      Para cada `IDSymbol` elemento, defina a `name` do atributo para o nome que você usará para se referir ao comando, grupo ou menu correspondente e, em seguida, defina o `value` elemento em um número hexadecimal que representarão seu id de comando. Não existem dois `IDSymbol` elementos que têm o mesmo pai podem ter o mesmo valor.  
   
-3.  Se qualquer um de seus elementos de interface do usuário exigir ícones, adicione uma `IDSymbol` elemento para cada ícone para o `GuidSymbol` elemento que representa o repositório de imagens.  
+3. Se qualquer um de seus elementos de interface do usuário exigir ícones, adicione uma `IDSymbol` elemento para cada ícone para o `GuidSymbol` elemento que representa o repositório de imagens.  
   
 ### <a name="putting-ui-elements-in-the-ide"></a>Colocar os elementos de interface do usuário no IDE  
  O [Menus](../../extensibility/menus-element.md) elemento [grupos](../../extensibility/groups-element.md) elemento, e [botões](../../extensibility/buttons-element.md) elemento contêm as definições para todos os menus, grupos e comandos que são definidos em seu pacote. Coloque esses menus, grupos e comandos no IDE usando um [pai](../../extensibility/parent-element.md) elemento, que é parte da definição de elemento de interface do usuário, ou usando uma [CommandPlacement](../../extensibility/commandplacement-element.md) elemento que é definida em outro lugar.  
@@ -120,9 +120,9 @@ Este documento mostra como criar um arquivo. VSCT para adicionar itens de menu, 
   
     O destino do `Parent` elemento é o menu ou grupo que contém o menu, grupo ou comando.  
   
-   1.  Defina a `guid` de atributo para o nome da `GuidSymbol` elemento que define o conjunto de comandos. Se o elemento de destino não é parte do seu pacote, use o guid para esse conjunto de comandos, conforme definido no arquivo. VSCT correspondente.  
+   1. Defina a `guid` de atributo para o nome da `GuidSymbol` elemento que define o conjunto de comandos. Se o elemento de destino não é parte do seu pacote, use o guid para esse conjunto de comandos, conforme definido no arquivo. VSCT correspondente.  
   
-   2.  Defina a `id` atributo para corresponder a `id` atributo do grupo ou menu de destino. Para obter uma listagem dos menus e grupos que são expostos pelo Visual Studio, consulte [GUIDs e IDs do Visual Studio Menus](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) ou [GUIDs e IDs do Visual Studio barras de ferramentas](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).  
+   2. Defina a `id` atributo para corresponder a `id` atributo do grupo ou menu de destino. Para obter uma listagem dos menus e grupos que são expostos pelo Visual Studio, consulte [GUIDs e IDs do Visual Studio Menus](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) ou [GUIDs e IDs do Visual Studio barras de ferramentas](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md).  
   
    Se você tiver um grande número de elementos de interface do usuário para colocar no IDE, ou se você tiver elementos que devem aparecer em vários lugares, defina seus posicionamentos na [CommandPlacements](../../extensibility/commandplacements-element.md) elemento, conforme mostrado nas etapas a seguir.  
   
@@ -145,11 +145,11 @@ Este documento mostra como criar um arquivo. VSCT para adicionar itens de menu, 
   
 1. Para tornar um elemento de interface do usuário visível apenas em determinados contextos de interface do usuário, por exemplo, quando uma solução é carregada, use restrições de visibilidade.  
   
-   1.  Após o `Commands` elemento, adicionar um `VisibilityConstraints` elemento.  
+   1. Após o `Commands` elemento, adicionar um `VisibilityConstraints` elemento.  
   
-   2.  Para cada item de interface do usuário restringir, adicione uma [VisibilityItem](../../extensibility/visibilityitem-element.md) elemento.  
+   2. Para cada item de interface do usuário restringir, adicione uma [VisibilityItem](../../extensibility/visibilityitem-element.md) elemento.  
   
-   3.  Para cada `VisibilityItem` elemento, defina a `guid` e `id` atributos para o menu, grupo, ou comando e defina o `context` atributo para o contexto de interface do usuário desejado, conforme definido no <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> classe. Para obter mais informações, consulte [elemento VisibilityItem](../../extensibility/visibilityitem-element.md).  
+   3. Para cada `VisibilityItem` elemento, defina a `guid` e `id` atributos para o menu, grupo, ou comando e defina o `context` atributo para o contexto de interface do usuário desejado, conforme definido no <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> classe. Para obter mais informações, consulte [elemento VisibilityItem](../../extensibility/visibilityitem-element.md).  
   
 2. Para definir a visibilidade ou a disponibilidade de um item de interface do usuário no código, use um ou mais dos seguintes sinalizadores de comando:  
   

@@ -8,20 +8,20 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: faad46c6ac2686de69fcb33f2fb482bdb0f4fe00
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.openlocfilehash: b8a233c0a1bbd456e08fe5343adae8328c5cb774
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525125"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106313"
 ---
-# <a name="integration-with-xml-editor"></a>Integração com o editor de XML
+# <a name="integration-with-xml-editor"></a>Integração com editor XML
 
 O Designer de esquema XML está integrado com o editor de XML. Se você modificar um arquivo XSD no editor de XML, a alteração será refletida na [XML Schema Explorer](../xml-tools/xml-schema-explorer.md). Se você tiver o [exibição de gráfico](../xml-tools/graph-view.md) ou o [exibição de modelo de conteúdo](../xml-tools/content-model-view.md) aberto, a alteração será refletida também lá. Você pode navegar entre o Designer de esquema XML e o editor de XML das seguintes maneiras:
 
--   No editor de XML, um nó com o botão direito e selecione **Mostrar em XML Schema Explorer**.
+- No editor de XML, um nó com o botão direito e selecione **Mostrar em XML Schema Explorer**.
 
--   No modo de gráfico e o **XML Schema Explorer**, clique duas vezes em um nó, ou um nó com o botão direito e selecione **Exibir código**. Na exibição do modelo de conteúdo, um nó com o botão direito e selecione **Exibir código**.
+- No modo de gráfico e o **XML Schema Explorer**, clique duas vezes em um nó, ou um nó com o botão direito e selecione **Exibir código**. Na exibição do modelo de conteúdo, um nó com o botão direito e selecione **Exibir código**.
 
 Captura de tela a seguir mostra um esquema XML aberto na **XML Schema Explorer**. O **XML Schema Explorer** exibe o esquema definido em uma exibição de árvore. O editor de XML exibe o modo de exibição de texto do nó que está atualmente ativo na **XML Schema Explorer**.
 

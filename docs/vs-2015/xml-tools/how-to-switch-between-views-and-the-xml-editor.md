@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0bdc530656ef7e7a57b8e637aeca562eb483e0d9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: c8d396efdc615ae954ef16453c9c5459f0685650
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667619"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60107223"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>Como: Alternar entre os modos de exibição e o editor de XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,18 +23,18 @@ Este tópico mostra como alternar entre os modos de exibição do designer de es
   
 ### <a name="to-switch-between-the-views-and-the-xml-editor"></a>Para alternar entre modos de exibição e o editor XML  
   
-1.  Para criar e editar um novo arquivo de esquema XML, siga as etapas em [como: Criar e editar um arquivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
+1. Para criar e editar um novo arquivo de esquema XML, siga as etapas em [como: Criar e editar um arquivo de esquema XSD](../xml-tools/how-to-create-and-edit-an-xsd-schema-file.md).  
   
-2.  Para alternar para o Designer de esquema XML do Editor XML, o botão direito do mouse clique em qualquer lugar no Editor de XML e selecione **Designer de exibição**.  
+2. Para alternar para o Designer de esquema XML do Editor XML, o botão direito do mouse clique em qualquer lugar no Editor de XML e selecione **Designer de exibição**.  
   
-3.  Para alternar para o modo de exibição de gráfico usando a marca d'água, clique o **usar o modo de exibição de gráfico para ver a relação entre os nós** link no modo de início.  
+3. Para alternar para o modo de exibição de gráfico usando a marca d'água, clique o **usar o modo de exibição de gráfico para ver a relação entre os nós** link no modo de início.  
   
-4.  Arraste o nó de `USAddress` XML Schema Explorer no modo de gráfico. Clique com botão direito do `USAddress` nó no modo de exibição gráfico e selecione **Mostrar na exibição do modelo de conteúdo** no menu de contexto.  
+4. Arraste o nó de `USAddress` XML Schema Explorer no modo de gráfico. Clique com botão direito do `USAddress` nó no modo de exibição gráfico e selecione **Mostrar na exibição do modelo de conteúdo** no menu de contexto.  
   
      A exibição do modelo de conteúdo com os detalhes de nó de `USAddress` aparece.  
   
-5.  Para alternar a Início a exibição do modo de modelo de conteúdo usando a barra de ferramentas, clique no botão do modo de Início na barra de ferramentas XSD.  
+5. Para alternar a Início a exibição do modo de modelo de conteúdo usando a barra de ferramentas, clique no botão do modo de Início na barra de ferramentas XSD.  
   
-6.  Para alternar entre modos de exibição usando as teclas de atalho, pressione CTRL+1 para o modo de Início, CTRL+2 para o modo de gráfico, e CTRL+3 para a exibição do modelo de conteúdo.  
+6. Para alternar entre modos de exibição usando as teclas de atalho, pressione CTRL+1 para o modo de Início, CTRL+2 para o modo de gráfico, e CTRL+3 para a exibição do modelo de conteúdo.  
   
-7.  Para ir para o Editor de XML da exibição do modelo de conteúdo, clique com botão direito no nó e selecione **Exibir código** no menu de contexto.
+7. Para ir para o Editor de XML da exibição do modelo de conteúdo, clique com botão direito no nó e selecione **Exibir código** no menu de contexto.

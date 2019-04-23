@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ecfff316a6daa4fe7f0b1fc0619f7dd7961c682
-ms.sourcegitcommit: 447f2174bdecdd471d8a8e11c19554977db620a0
+ms.openlocfilehash: 15a07796278faad43f95b33c020b167f07daa009
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/28/2019
-ms.locfileid: "58999926"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60105624"
 ---
 # <a name="graphics-event-list"></a>Lista de eventos do gráfico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Use a lista de eventos de gráficos no analisador de gráficos do Visual Studio 
   
 ##### <a name="to-change-the-event-list-view-mode"></a>Para alterar o modo de exibição da lista de eventos  
   
--   No **lista de eventos gráficos** janela acima da lista de eventos, localize a **exibição** lista suspensa e escolha o **linha do tempo** exibição ou a **dechamadasdedesenho** modo de exibição.  
+- No **lista de eventos gráficos** janela acima da lista de eventos, localize a **exibição** lista suspensa e escolha o **linha do tempo** exibição ou a **dechamadasdedesenho** modo de exibição.  
   
 ### <a name="filtering-events"></a>Filtrando eventos  
  É possível usar a caixa Pesquisar, localizada no canto superior direito da janela **Lista de Eventos de Gráficos**, para filtrar a lista de eventos e incluir apenas eventos cujos nomes contenham palavras-chave específicas. Você pode especificar palavras-chave únicas como `Vertex`— conforme mostrado na ilustração anterior — ou várias palavras-chave, usando uma lista delimitada por ponto e vírgula como `Draw;Primitive`— que corresponde a eventos que tenham `Draw` ou `Primitive` em seus nomes. Pesquisas diferenciam espaço em branco — por exemplo, `VSSet` e `VS Set` são pesquisas diferentes — portanto, certifique-se de formar pesquisas com cuidado.  

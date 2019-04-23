@@ -10,12 +10,12 @@ ms.assetid: f8d68c3d-9134-4a8f-b566-485956cd321e
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cea41ee70001d32bb003a6ccefe033d42274f682
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 3a95b7da718f050357f6ecd79c90c389dd6085d5
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927938"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106599"
 ---
 # <a name="elements-of-the-isolated-shell"></a>Elementos do Shell isolado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,15 +27,15 @@ Você pode modificar as configurações do registro, configurações de tempo de
   
  Quando o aplicativo é executado, as configurações do registro são definidas na sequência a seguir:  
   
-1.  A chave do registro para o aplicativo é criada.  
+1. A chave do registro para o aplicativo é criada.  
   
-2.  O registro é atualizado a partir do arquivo. pkgdef do aplicativo definindo entradas e chaves especificadas.  
+2. O registro é atualizado a partir do arquivo. pkgdef do aplicativo definindo entradas e chaves especificadas.  
   
-3.  Para cada pacote que faz parte do seu aplicativo, o registro é atualizado do arquivo. pkgdef do que o pacote. Cada pacote é definido no arquivo. pkgdef do aplicativo pelo $RootKey$ \packages.\\{*vsPackageGuid*} chave para o pacote.  
+3. Para cada pacote que faz parte do seu aplicativo, o registro é atualizado do arquivo. pkgdef do que o pacote. Cada pacote é definido no arquivo. pkgdef do aplicativo pelo $RootKey$ \packages.\\{*vsPackageGuid*} chave para o pacote.  
   
-4.  O registro é atualizado na AppEnvConfig.pkgdef e BaseConfig.pkgdef na *caminho de instalação do SDK do Visual Studio*\Common7\IDE\ShellExtensions\Platform directory. Esses arquivos são parte do Visual Studio e também parte do pacote redistribuível do Shell do Visual Studio (modo isolado).  
+4. O registro é atualizado na AppEnvConfig.pkgdef e BaseConfig.pkgdef na *caminho de instalação do SDK do Visual Studio*\Common7\IDE\ShellExtensions\Platform directory. Esses arquivos são parte do Visual Studio e também parte do pacote redistribuível do Shell do Visual Studio (modo isolado).  
   
-5.  O registro é atualizado do arquivo. pkgundef do aplicativo, removendo as entradas e chaves especificadas.  
+5. O registro é atualizado do arquivo. pkgundef do aplicativo, removendo as entradas e chaves especificadas.  
   
 ## <a name="run-time-settings"></a>Configurações de tempo de execução  
  Quando um usuário inicia o aplicativo de shell isolado, ele chama o ponto de entrada do início do shell do Visual Studio. Configurações do aplicativo são definidas quando o aplicativo é iniciado, da seguinte maneira:  

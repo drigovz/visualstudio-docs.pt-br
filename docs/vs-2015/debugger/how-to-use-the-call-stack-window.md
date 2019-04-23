@@ -29,12 +29,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 993c1380a37b0fedad07427e65fda0a6a80a73f2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f40f5f27d603b67e6a7403f5327ffd89b486fa10
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922386"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60106443"
 ---
 # <a name="how-to-use-the-call-stack-window"></a>Como: Usar a janela de pilha de chamadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,53 +62,53 @@ Ao usar a janela **Pilha de Chamadas**, você pode exibir chamadas de função o
   
 ### <a name="to-display-the-call-stack-window-in-break-mode-or-in-run-mode"></a>Para exibir a janela Pilha de chamadas no modo de interrupção ou no modo de execução  
   
--   Sobre o **Debug** menu, selecione **Windows** e, em seguida, clique em **pilha de chamadas**.  
+- Sobre o **Debug** menu, selecione **Windows** e, em seguida, clique em **pilha de chamadas**.  
   
 ### <a name="to-change-the-optional-information-displayed"></a>Para alterar as informações opcionais exibidas  
   
--   Clique com botão direito do **pilha de chamadas** janela e defina ou desmarque **mostram \<**  _as informações que você deseja_ **>**.  
+- Clique com botão direito do **pilha de chamadas** janela e defina ou desmarque **mostram \<**  _as informações que você deseja_ **>**.  
   
 ### <a name="to-display-non-user-code-frames-in-the-call-stack-window"></a>Para exibir quadros de código de não usuário na janela Pilha de chamadas  
   
--   Clique com o botão direito do mouse na janela **Pilha de Chamadas** e selecione **Mostrar Código Externo**.  
+- Clique com o botão direito do mouse na janela **Pilha de Chamadas** e selecione **Mostrar Código Externo**.  
   
 ### <a name="to-switch-to-another-stack-frame"></a>Para alternar para outro registro de ativação  
   
-1.  No **pilha de chamadas** janela, clique com botão direito do quadro cujos código e os dados que você deseja exibir.  
+1. No **pilha de chamadas** janela, clique com botão direito do quadro cujos código e os dados que você deseja exibir.  
   
-2.  Selecione **Alternar para Quadro**.  
+2. Selecione **Alternar para Quadro**.  
   
      Uma seta verde com uma parte final encaracolada aparece ao lado do quadro que você selecionou. O ponteiro de execução permanece no quadro original, que ainda está marcado com a seta amarela. Se você selecionar **Etapa** ou **Continuar** no menu **Depurar**, a execução continuará no quadro original, não no quadro selecionado.  
   
 ### <a name="to-display-calls-to-or-from-another-thread"></a>Para exibir chamadas para ou de outro segmento  
   
--   Clique com o botão direito do mouse na janela **Pilha de Chamadas** e selecione **Incluir chamadas para/de outros threads**.  
+- Clique com o botão direito do mouse na janela **Pilha de Chamadas** e selecione **Incluir chamadas para/de outros threads**.  
   
 ### <a name="to-view-the-source-code-for-a-function-on-the-call-stack"></a>Para exibir o código-fonte em uma função na pilha de chamadas  
   
--   Na janela **Pilha de Chamadas**, clique com o botão direito do mouse na função cujo código-fonte você deseja ver e selecione **Ir para Código-Fonte**.  
+- Na janela **Pilha de Chamadas**, clique com o botão direito do mouse na função cujo código-fonte você deseja ver e selecione **Ir para Código-Fonte**.  
   
 ### <a name="to-visually-trace-the-call-stack"></a>Para rastrear visualmente a pilha de chamadas  
   
-1.  Na janela **Pilha de Chamadas**, abra o menu de atalho. Escolher **Mostrar pilha de chamadas no mapa de códigos**. (Teclado: **CTRL** + **SHIFT** + **`**)  
+1. Na janela **Pilha de Chamadas**, abra o menu de atalho. Escolher **Mostrar pilha de chamadas no mapa de códigos**. (Teclado: **CTRL** + **SHIFT** + **`**)  
   
      Ver [mapear métodos na pilha de chamadas ao depurar](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md).  
   
 ### <a name="to-view-the-disassembly-code-for-a-function-on-the-call-stack"></a>Para exibir o código de desmontagem de uma função na pilha de chamadas  
   
--   Na janela **Pilha de Chamadas**, clique com o botão direito do mouse na função cujo código de desmontagem você deseja ver e selecione **Ir para Desmontagem**.  
+- Na janela **Pilha de Chamadas**, clique com o botão direito do mouse na função cujo código de desmontagem você deseja ver e selecione **Ir para Desmontagem**.  
   
 ### <a name="to-run-to-a-specific-function-from-the-call-stack-window"></a>Para executar em uma função específica da janela de pilha de chamadas  
   
--  No **pilha de chamadas** janela, selecione a função, clique com botão direito e escolha **executar até o Cursor**.  
+- No **pilha de chamadas** janela, selecione a função, clique com botão direito e escolha **executar até o Cursor**.  
   
 ### <a name="to-set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Para definir um ponto de interrupção no ponto de saída de uma chamada de função  
   
--   Ver [defina um ponto de interrupção em uma função de pilha de chamada](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).  
+- Ver [defina um ponto de interrupção em uma função de pilha de chamada](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).  
   
 ### <a name="to-load-symbols-for-a-module"></a>Para carregar símbolos para um módulo  
   
--   No **pilha de chamadas** janela, clique com botão direito no quadro que mostra o módulo cujos símbolos você deseja recarregar e selecione **carregar símbolos**.  
+- No **pilha de chamadas** janela, clique com botão direito no quadro que mostra o módulo cujos símbolos você deseja recarregar e selecione **carregar símbolos**.  
   
 ## <a name="loading-symbols"></a>Carregando símbolos  
  Na janela **Pilha de Chamadas**, você pode carregar símbolos de depuração para o código que atualmente não tem símbolos carregados. Esses símbolos podem ser símbolos do .NET Framework ou do sistema baixados dos servidores públicos de símbolo da Microsoft ou de símbolos em um caminho de símbolo no computador que você está depurando.  
@@ -117,25 +117,25 @@ Ao usar a janela **Pilha de Chamadas**, você pode exibir chamadas de função o
   
 #### <a name="to-load-symbols"></a>Para carregar símbolos  
   
-1.  No **pilha de chamadas** janela, o botão direito do mouse o quadro para o qual os símbolos não foram carregados. O quadro ficará esmaecido.  
+1. No **pilha de chamadas** janela, o botão direito do mouse o quadro para o qual os símbolos não foram carregados. O quadro ficará esmaecido.  
   
-2.  Aponte para **carregar símbolos de** e, em seguida, clique em **servidores de símbolo Microsoft** ou **caminho de símbolo**.  
+2. Aponte para **carregar símbolos de** e, em seguida, clique em **servidores de símbolo Microsoft** ou **caminho de símbolo**.  
   
 #### <a name="to-set-the-symbol-path"></a>Para definir o caminho do símbolo  
   
-1.  Na janela **Pilha de Chamadas**, escolha **Configurações de Símbolo** no menu de atalho.  
+1. Na janela **Pilha de Chamadas**, escolha **Configurações de Símbolo** no menu de atalho.  
   
      A caixa de diálogo **Opções** abre e a página **Símbolos** é exibida.  
   
-2.  Clique em **configurações de símbolo**.  
+2. Clique em **configurações de símbolo**.  
   
-3.  Na caixa de diálogo **Opções**, clique no ícone da Pasta.  
+3. Na caixa de diálogo **Opções**, clique no ícone da Pasta.  
   
      Na caixa **Locais do arquivo de símbolo (.pdb)**, um cursor será exibido.  
   
-4.  Digite um nome de caminho de diretório no local do símbolo no computador que você está depurando. Para depuração local, este é o computador local. Para depuração remota, é o computador remoto.  
+4. Digite um nome de caminho de diretório no local do símbolo no computador que você está depurando. Para depuração local, este é o computador local. Para depuração remota, é o computador remoto.  
   
-5.  Clique em **OK** para fechar a caixa de diálogo **Opções**.  
+5. Clique em **OK** para fechar a caixa de diálogo **Opções**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Código misto e informações ausentes na janela pilha de chamadas](../debugger/mixed-code-and-missing-information-in-the-call-stack-window.md)   
