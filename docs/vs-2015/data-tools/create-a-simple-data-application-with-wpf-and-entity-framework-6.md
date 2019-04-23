@@ -9,17 +9,16 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 56c211597e99689e1ad263cfe12d7dafdf3cf5cc
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 62e1a6c317752dc5513a51d3e8018d15c9598b93
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000069"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664794"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Criar um aplicativo de dados simples com o WPF e o Entity Framework 6
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Essa explicação passo a passo mostra como criar um aplicativo básico "formulários sobre dados" no Visual Studio com o LocalDB do SQL Server, o banco de dados Northwind, Entity Framework 6 e do Windows Presentation Foundation. Ele mostra como fazer a associação de dados básica com um modo de exibição de detalhes mestre, e também tem um personalizado "associação Navigator" com botões para "Mover próximo", "Mover anterior," "Mover para o início," "Mover para o final," "Atualizar" e "Excluir".  
   
  Este artigo se concentra no uso de ferramentas de dados no Visual Studio e não tenta explicar as tecnologias subjacentes em qualquer profundidade. Ele pressupõe que você tenha uma familiaridade básica com XAML, Entity Framework e SQL. Este exemplo também demonstra arquitetura MVVM, que é o padrão para aplicativos WPF. No entanto, você pode copiar esse código em seu próprio aplicativo MVVM com poucas modificações.  
@@ -49,7 +48,7 @@ Essa explicação passo a passo mostra como criar um aplicativo básico "formul�
   
 ## <a name="create-the-model"></a>Criar o modelo  
   
-1. Clique com o botão direito no nó do projeto no Gerenciador de soluções e escolha **adicionar &#124; Novo Item**. No painel esquerdo, sob o nó C#, escolha **dados** e no painel central, escolha **modelo de dados de entidade ADO.NET**.  
+1. Clique com o botão direito no nó do projeto no Gerenciador de soluções e escolha **adicionar &#124; Novo Item**. No painel esquerdo, sob o nó c#, escolha **dados** e no painel central, escolha **modelo de dados de entidade ADO.NET**.  
   
     ![Entity Framework modelo novo Item de projeto](../data-tools/media/raddata-ef-new-project-item.png "raddata EF Novo Item de projeto")  
   
@@ -63,7 +62,7 @@ Essa explicação passo a passo mostra como criar um aplicativo básico "formul�
   
     ![Escolha os objetos de banco de dados para o modelo](../data-tools/media/raddata-choose-ef-objects.png "raddata escolher EF objetos")  
   
-5. O assistente gera as classes do C# que representam o modelo do Entity Framework. Esses são antigas classes C# simples e são o que faremos databind na interface de usuário do WPF. O arquivo. edmx descreve as relações e outros metadados que associa as classes de objetos no banco de dados.  Os arquivos. TT são modelos de T4 que geram o código que irá operar no modelo e salvar as alterações no banco de dados. Você pode ver todos esses arquivos no Gerenciador de soluções sob o nó Northwind_model:  
+5. O assistente gera as classes do c# que representam o modelo do Entity Framework. Esses são antigas classes c# simples e são o que faremos databind na interface de usuário do WPF. O arquivo. edmx descreve as relações e outros metadados que associa as classes de objetos no banco de dados.  Os arquivos. TT são modelos de T4 que geram o código que irá operar no modelo e salvar as alterações no banco de dados. Você pode ver todos esses arquivos no Gerenciador de soluções sob o nó Northwind_model:  
   
     ![Arquivos de modelo do Solution Explorer EF](../data-tools/media/raddata-solution-explorer-ef-model-files.png "raddata arquivos de modelo de EF do Gerenciador de soluções")  
   

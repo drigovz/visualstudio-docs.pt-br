@@ -12,22 +12,20 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0ad0d60921e9bb42f54cc70c49efbe64f036398d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c629d82d208f45433564c1b36bb5aa889e402915
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54801668"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668321"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurações padrão e personalizadas do Toolset
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 Um Conjunto de Ferramentas MSBuild contém referências a tarefas, destinos e ferramentas que você pode usar para criar um projeto de aplicativo. MSBuild inclui um Conjunto de Ferramentas padrão, mas você também pode criar ferramentas personalizadas. Para obter informações sobre como especificar um Conjunto de Ferramentas, consulte [Conjunto de Ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)  
 
 ## <a name="standard-toolset-configurations"></a>Configurações padrão do Conjunto de Ferramentas  
  O MSBuild 12.0 inclui os seguintes conjuntos de ferramentas padrão:  
-
 
 | ToolsVersion | Caminho do conjunto de ferramentas (conforme especificado na propriedade de build do MSBuildToolsPath ou MSBuildBinPath) |
 |--------------|--------------------------------------------------------------------------------------|

@@ -13,17 +13,16 @@ caps.latest.revision: 9
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eca5fc85f4a1bcd26c2c4c73ec39fbe855f77add
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9dd6c297e00a305fbd1b13cf0fe0bd4a4f151f6b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769364"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665461"
 ---
 # <a name="item-metadata-in-target-batching"></a>Metadados de itens na separação de destinos em lotes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] tem a capacidade de executar a análise de dependência em entradas e saídas de um destino de build. Se for determinado que as entradas ou saídas do destino estão atualizadas, o destino será ignorado e o build continuará. Elementos `Target` usam os atributos `Inputs` e `Outputs` para especificar os itens a fim de inspecionar durante a análise de dependência.  
   
  Se um destino contiver uma tarefa que usa itens em lotes como entradas ou saídas, o elemento `Target` do destino deve usar o envio em lote nos aributos `Inputs` ou `Outputs` para habilitar [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] a ignorar lotes de itens que já estão atualizados.  
@@ -70,7 +69,7 @@ ms.locfileid: "54769364"
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Como compilar incrementalmente](../msbuild/how-to-build-incrementally.md)   
+ [Como: Compilar incrementalmente](../msbuild/how-to-build-incrementally.md)   
  [Envio em lote](../msbuild/msbuild-batching.md)   
  [Elemento Target (MSBuild)](../msbuild/target-element-msbuild.md)   
  [Metadados de itens na separação de tarefas em lotes](../msbuild/item-metadata-in-task-batching.md)

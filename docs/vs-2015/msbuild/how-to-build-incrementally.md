@@ -1,5 +1,5 @@
 ---
-title: Como compilar incrementalmente | Microsoft Docs
+title: 'Como: Compilar incrementalmente | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -13,17 +13,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b1bcb8752d8defacadc641f55594e354e081d5cb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 4aba200bff4bc8a017756ece6576e589f33e9df6
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803904"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662242"
 ---
-# <a name="how-to-build-incrementally"></a>Como compilar incrementalmente
+# <a name="how-to-build-incrementally"></a>Como: Compilar de forma incremental
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Quando você cria um projeto grande, é importante que já tenha criado componentes que ainda estejam atualizados e não sejam recriados. Se todos os destinos forem criados todas as vezes, cada build levará muito tempo para ser concluída. Para habilitar as builds incrementais (builds nos quais somente os destinos que não foram criados antes ou destinos que estão desatualizados são recriadas), o [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] ([!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]) pode comparar os carimbos de data/hora dos arquivos de entrada com carimbos de data/hora dos arquivos de saída e determinar se ignora, compila ou recompila parcialmente um destino. No entanto, deve haver um mapeamento de um para um entre entradas e saídas. Você pode usar transformações para permitir que os destinos identifiquem esse mapeamento direto. Para obter mais informações sobre transformações, consulte [Transformações](../msbuild/msbuild-transforms.md).  
   
 ## <a name="specifying-inputs-and-outputs"></a>Especificando entradas e saídas  
@@ -62,9 +61,9 @@ Quando você cria um projeto grande, é importante que já tenha criado componen
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir usa um projeto que cria arquivos de ajuda para um sistema de ajuda hipotético. O projeto funciona convertendo arquivos de origem .txt em arquivos .content intermediários, que são então combinados com os arquivos de metadados XML para produzir o arquivo final .help usado pelo sistema de Ajuda. O projeto usa as seguintes tarefas hipotéticas:  
   
-- `GenerateContentFiles`: converte arquivos .txt em arquivos .content.  
+- `GenerateContentFiles`: Converte arquivos. txt em arquivos. Content.  
   
-- `BuildHelp`: combina arquivos .content e arquivos de metadados XML para criar o arquivo .help final.  
+- `BuildHelp`: Combina arquivos. Content e arquivos de metadados XML para criar o arquivo Help final.  
   
   O projeto usa transformações para criar um mapeamento de um para um entre entradas e saídas na tarefa `GenerateContentFiles`. Para obter mais informações, consulte [Transformações](../msbuild/msbuild-transforms.md). Além disso, o elemento `Output` é configurado para usar automaticamente as saídas da tarefa `GenerateContentFiles` como entradas para a tarefa `BuildHelp`.  
   

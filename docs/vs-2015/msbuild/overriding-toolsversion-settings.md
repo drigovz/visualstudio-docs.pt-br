@@ -12,17 +12,16 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e4cd6d3199d09ffa56c0ac6d2d29fcba613fd280
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 4402abed4fe7e588355614adaf5f1c689af75ad2
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54770704"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668230"
 ---
 # <a name="overriding-toolsversion-settings"></a>Substituindo as configurações de ToolsVersion
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Você pode alterar o conjunto de ferramentas para projetos e soluções de uma entre três maneiras:  
   
 1.  usando a opção `/ToolsVersion` (ou `/tv`, de forma abreviada) quando você compila o projeto ou solução por meio da linha de comando  

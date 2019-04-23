@@ -21,17 +21,16 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c21c14b8c84246545d9ffb3e3dc59210b56fe84e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 05290bed3fe51c69e29d8bafef927c91c63b5249
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54777146"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667255"
 ---
 # <a name="bscmake-task"></a>Tarefa BscMake
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 [IMPORTANTE]
 >  O bscmake não é usado pelo IDE do Visual Studio. Desde o Visual Studio 2008, as informações de procura são armazenadas automaticamente em um arquivo .sdf na pasta da solução.  
   

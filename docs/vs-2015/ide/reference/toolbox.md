@@ -16,17 +16,16 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f296cda3fb7b57ed323dd8b1a6bbff949b9a6d1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 0a7c2320f7943798a336e52ba2043f430cdb9231
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54799792"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661341"
 ---
 # <a name="toolbox"></a>Caixa de Ferramentas
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 A **Caixa de Ferramentas** exibe ícones de controles e outros itens que você pode adicionar a projetos [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para abrir a **Caixa de Ferramentas**, clique em **Caixa de Ferramentas** no menu **Exibir**. Você pode encaixar a **Caixa de Ferramentas** e pode fixá-la aberta ou configurá-la para **Ocultar Automaticamente**.  
   
  Ícones da **Caixa de Ferramentas** podem ser arrastados para o modo de exibição de Design ou colados em um editor de código. As duas ações adicionam o código fundamental para criar uma instância do item de **Caixa de Ferramentas** no arquivo de projeto ativo.  

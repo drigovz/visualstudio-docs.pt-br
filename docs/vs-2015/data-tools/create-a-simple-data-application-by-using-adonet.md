@@ -14,18 +14,17 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f3c5dd921ab9c86d197d22aea63bad86264bb5b
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 19c20241914001f7095e63e0cc25f91b2ab5c35e
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58924957"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664210"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo de dados simples usando o ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
-Quando você cria um aplicativo que manipule dados em um banco de dados, executar tarefas básicas, tais definindo cadeias de conexão, inserção de dados e executar procedimentos armazenados. Ao seguir este tópico, você pode descobrir como interagir com um banco de dados de dentro de um aplicativo simples de "formulários sobre dados" do Windows Forms usando o Visual C# ou Visual Basic e ADO.NET.  Todas as tecnologias de dados do .NET — inclusive conjuntos de dados, o LINQ to SQL e Entity Framework —, por fim, execute as etapas que são muito semelhantes às mostradas neste artigo.  
+Quando você cria um aplicativo que manipule dados em um banco de dados, executar tarefas básicas, tais definindo cadeias de conexão, inserção de dados e executar procedimentos armazenados. Ao seguir este tópico, você pode descobrir como interagir com um banco de dados de dentro de um aplicativo simples de "formulários sobre dados" do Windows Forms usando o Visual c# ou Visual Basic e ADO.NET.  Todas as tecnologias de dados do .NET — inclusive conjuntos de dados, o LINQ to SQL e Entity Framework —, por fim, execute as etapas que são muito semelhantes às mostradas neste artigo.  
   
  Este artigo demonstra uma maneira simples de obter dados para fora de um banco de dados de uma maneira muito rápida. Se seu aplicativo precisa modificar dados de maneiras não triviais e atualizar o banco de dados, você deve considerar usando o Entity Framework e usando a associação de dados para sincronizar automaticamente os controles de interface do usuário para as alterações nos dados subjacentes.  
   
@@ -57,7 +56,7 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
   
 - A cadeia de conexão para o banco de dados depois de você configurá-lo. Você pode encontrar esse valor abrindo **Pesquisador de objetos do SQL Server**, abrindo o menu de atalho para o banco de dados, selecionando **Properties**e, em seguida, rolando até o **ConnectionString** propriedade.  
   
-  Este tópico pressupõe que você está familiarizado com a funcionalidade básica do IDE do Visual Studio e pode criar um aplicativo Windows Forms, adicionar formulários a esse projeto, colocar botões e outros controles em formulários, definem as propriedades desses controles e codificar eventos simples . Se você não estiver confortável com essas tarefas, sugerimos que você conclua a [Introdução ao Visual C# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) antes de iniciar este tópico.  
+  Este tópico pressupõe que você está familiarizado com a funcionalidade básica do IDE do Visual Studio e pode criar um aplicativo Windows Forms, adicionar formulários a esse projeto, colocar botões e outros controles em formulários, definem as propriedades desses controles e codificar eventos simples . Se você não estiver confortável com essas tarefas, sugerimos que você conclua a [Introdução ao Visual c# e Visual Basic](../ide/getting-started-with-visual-csharp-and-visual-basic.md) antes de iniciar este tópico.  
   
 ##  <a name="BKMK_setupthesampledatabase"></a> Configurar o banco de dados de exemplo  
  O banco de dados de exemplo para este passo a passo consiste nas tabelas clientes e pedidos. As tabelas não contêm dados inicialmente, mas você adicionará dados ao executar o aplicativo que você vai criar. O banco de dados também tem cinco procedimentos armazenados simples. [Criar um banco de dados SQL usando um script](../data-tools/create-a-sql-database-by-using-a-script.md) contém um script Transact-SQL que cria as tabelas, as chaves primária e estrangeiras, restrições e os procedimentos armazenados.  
@@ -217,8 +216,8 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
     |Comentário|Descrição|  
     |-------------|-----------------|  
     |Util-1|Adicionar o `System.Configuration` namespace.|  
-    |Util-2|Defina uma variável `returnValue`e inicializá-lo para `null` (C#) ou `Nothing` (Visual Basic).|  
-    |Util-3|Mesmo que você inseriu `connString` como o nome da cadeia de caracteres de conexão na **Properties** janela, você deve especificar `"SimpleDataApp.Properties.Settings.connString"` (C#) ou `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) no código.|  
+    |Util-2|Defina uma variável `returnValue`e inicializá-lo para `null` (c#) ou `Nothing` (Visual Basic).|  
+    |Util-3|Mesmo que você inseriu `connString` como o nome da cadeia de caracteres de conexão na **Properties** janela, você deve especificar `"SimpleDataApp.Properties.Settings.connString"` (c#) ou `"SimpleDataApp.My.MySettings.connString"` (Visual Basic) no código.|  
   
 ##  <a name="BKMK_writethecodefortheforms"></a> Escreva o código para os formulários  
  Esta seção contém visões gerais breves das quais cada formulário faz e mostra o código que cria os formulários. Comentários numerados identificam seções do código.  
@@ -227,7 +226,7 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
  O formulário navegação abre quando você executar o aplicativo. O **adicionar uma conta** botão abre o formulário NewCustomer. O **preencher ou Cancelar ordens** botão abre o formulário FillOrCancel. O **Exit** botão fecha o aplicativo.  
   
 #### <a name="make-the-navigation-form-the-startup-form"></a>Tornar a navegação formam o formulário de inicialização  
- Se você estiver usando C#, em **Gerenciador de soluções**, abra Program.cs e altere o `Application.Run` linha a esta: `Application.Run(new Navigation());`  
+ Se você estiver usando c#, em **Gerenciador de soluções**, abra Program.cs e altere o `Application.Run` linha a esta: `Application.Run(new Navigation());`  
   
  Se você estiver usando Visual Basic, em **Gerenciador de soluções**, abra o **Properties** janela, selecione o **aplicativo** guia e, em seguida, selecione  **Simpledataapp** no **formulário de inicialização** lista.  
   

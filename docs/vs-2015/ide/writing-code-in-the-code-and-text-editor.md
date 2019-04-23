@@ -60,12 +60,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dbfb22a5854d8d966548e113f10c6fdb0ddc070a
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
-ms.translationtype: MT
+ms.openlocfilehash: 5953afed3ede465cab03677c00e2e930ac6b6cb4
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366608"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665735"
 ---
 # <a name="writing-code-in-the-code-and-text-editor"></a>Escrevendo código no editor de códigos e de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -171,7 +171,6 @@ O comando "Navegar Para" do Visual Studio faz uma pesquisa restrita do código p
     Conforme você digita, os resultados são exibidos em uma lista suspensa abaixo da caixa de texto.
 1. Para ir até um elemento, escolha-o na lista.
 
-
 ### <a name="filter-your-search"></a>Filtrar sua pesquisa
 
 Para limitar sua pesquisa a somente símbolos de código, preceda a consulta navegar para com um "\@" caracteres. Por exemplo, se você pesquisar `@application`, O Navegar Para exibe, por exemplo, somente as classes que têm a palavra "aplicativo" nelas.
@@ -191,7 +190,7 @@ Esse recurso é particularmente útil se seu código tem nomes longos.
 
 -   [Configurações do Visual Basic](http://msdn.microsoft.com/library/2712b3b1-18f2-430c-ae91-28468bbf5f32)  
 
--   [Usando o ambiente de desenvolvimento do Visual Studio para c#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
+-   [Usando o Ambiente de Desenvolvimento do Visual Studio para C#](../csharp-ide/using-the-visual-studio-development-environment-for-csharp.md)  
 
 -   [Opções, Editor de Texto, JavaScript, Formatação](../ide/reference/options-text-editor-javascript-formatting.md)  
 
@@ -207,13 +206,13 @@ Esse recurso é particularmente útil se seu código tem nomes longos.
 
 -   [Dicas de produtividade](../ide/productivity-tips-for-visual-studio.md)  
 
--   [Usando IntelliSense](../ide/using-intellisense.md)  
+-   [Usando o IntelliSense](../ide/using-intellisense.md)  
 
 -   [Personalizando o editor](../ide/customizing-the-editor.md)  
 
--   [Como: Acompanhar o código Personalizando a barra de rolagem](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
+-   [Como: Acompanhar o código personalizando a barra de rolagem](../ide/how-to-track-your-code-by-customizing-the-scrollbar.md)  
 
--   [Como: Exibir e editar códigos usando inspecionar definição (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
+-   [Como: Exibir e editar código usando o comando Inspecionar Definição (Alt + F12)](../ide/how-to-view-and-edit-code-by-using-peek-definition-alt-plus-f12.md)  
 
 -   [Realizar ações rápidas com lâmpadas](../ide/perform-quick-actions-with-light-bulbs.md)  
 
@@ -223,11 +222,11 @@ Esse recurso é particularmente útil se seu código tem nomes longos.
 
 -   [Exibindo a estrutura do código](../ide/viewing-the-structure-of-code.md)  
 
--   [Definindo identificadores no código](../ide/setting-bookmarks-in-code.md)  
+-   [Configurando identificadores no código](../ide/setting-bookmarks-in-code.md)  
 
--   [Usando a lista de tarefas](../ide/using-the-task-list.md)  
+-   [Usando a Lista de Tarefas](../ide/using-the-task-list.md)  
 
--   [Localizar alterações de código e outro histórico](../ide/find-code-changes-and-other-history-with-codelens.md)  
+-   [Localizar alterações de código e outros históricos](../ide/find-code-changes-and-other-history-with-codelens.md)  
 
 ## <a name="see-also"></a>Consulte também  
  [Visual Studio IDE](../ide/visual-studio-ide.md)

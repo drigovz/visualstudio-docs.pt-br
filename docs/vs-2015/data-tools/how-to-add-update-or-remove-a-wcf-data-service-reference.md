@@ -15,17 +15,16 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8bc4ebbb8ae22604d7ec803fd4234839a17694de
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 33c0f0235e2f4fe2fb633a94a024563b4fb9b276
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925527"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664915"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Como: Adicionar, atualizar ou remover uma referência do WCF Data Service
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Um *referência de serviço* permite que um projeto para acessar um ou mais [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)]. Use o **adicionar referência de serviço** caixa de diálogo para pesquisar [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)] na solução atual, localmente, em uma rede local ou na Internet.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  

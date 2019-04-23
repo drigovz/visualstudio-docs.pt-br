@@ -6,12 +6,12 @@ ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 caps.latest.revision: 38
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 95d3de67dce269696bdd3fbea7ec562511bd0347
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
-ms.translationtype: MT
+ms.openlocfilehash: 6e40401b533d5fcaad8dc9bb4530580608efaad9
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "58999963"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59670219"
 ---
 # <a name="image-service-and-catalog"></a>Catálogo e o serviço de imagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -160,7 +160,6 @@ Esse guia contém diretrizes e práticas recomendadas para adotar o serviço de 
       <!-- optional NativeResource element -->  
  </Source>  
 ```  
-
 
 |               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 |---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -521,7 +520,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 3. Altere a implementação dos VSHPROPIDs originais para ícones para criar versões "herdadas" dos ícones se pontos de extensão solicitação-los. **IVsImageService2** fornece a funcionalidade necessária obter esses ícones  
 
-   **Requisitos adicionais para o VB / C# projeto sabores**  
+   **Requisitos adicionais para o VB / c# projeto sabores**  
 
    Implementar apenas **VSHPROPID_SupportsIconMonikers** se você detectar que o seu projeto é a **sabor mais externo**. Caso contrário, o tipo mais externo real pode não oferecer suporte monikers de imagem na realidade, e seu tipo base pode efetivamente "Ocultar" imagens personalizadas.  
 
@@ -669,7 +668,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
  **ManifestToCode**  
 
- O manifesto para a ferramenta de código usa um arquivo de manifesto de imagem e gera um arquivo de wrapper para fazer referência os valores de manifesto em código (C++, C# ou VB) ou arquivos. VSCT.  
+ O manifesto para a ferramenta de código usa um arquivo de manifesto de imagem e gera um arquivo de wrapper para fazer referência os valores de manifesto em código (C++, c# ou VB) ou arquivos. VSCT.  
 
  **ImageLibraryViewer**  
 

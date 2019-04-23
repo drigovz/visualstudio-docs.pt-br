@@ -5,12 +5,12 @@ ms.topic: conceptual
 ms.assetid: 8dd2cd1d-d8ba-49b9-870a-45acf3a3259d
 caps.latest.revision: 8
 ms.author: gregvanl
-ms.openlocfilehash: fdaa8396049da2a0d875282b13eb2744bedbdd29
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ccdba95816d77e5282e978d508da581d9240ef06
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922878"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59664308"
 ---
 # <a name="how-to-use-rule-based-ui-context-for-visual-studio-extensions"></a>Como: Usar o contexto de interface do usuário baseado em regras para extensões do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,8 +137,6 @@ Visual Studio permite o carregamento de VSPackages quando determinados bem conhe
 |ActiveProjectCapability:\<Expression>|O termo é verdadeiro quando os recursos de projeto ativo corresponde à expressão fornecida. Uma expressão pode ser algo parecido com VB &#124; CSharp|
 |SolutionHasProjectCapability:\<Expression>|Semelhante ao acima mas termo é verdadeiro quando a solução tem qualquer projeto carregado que corresponde à expressão.|
 |SolutionHasProjectFlavor:\<projectTypeGuid>|O termo será true sempre que uma solução tem um projeto que é o tipo (agregado) e tem um tipo correspondente ao tipo de projeto determinado GUID.|
-
-
 
 ## <a name="compatibility-with-cross-version-extension"></a>Compatibilidade com a extensão de versão cruzada
  A regra com base contextos de interface do usuário é um novo recurso no Visual Studio 2015 e não ser transportado para versões anteriores. Isso cria um problema com as extensões/pacotes destinados a várias versões do Visual Studio que teria de ser carregados automaticamente no Visual Studio 2013 e versões anteriores, mas podem se beneficiar de contextos de interface do usuário com base em regra para impedir que está sendo carregado automaticamente no Visual Studio 2015.

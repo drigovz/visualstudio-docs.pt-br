@@ -28,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a9997601d906ac3be7c3eaf789a0d31e19dae613
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 32c96bf9e206a70f5de38459460d8bdcaee571cc
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681706"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666553"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>Especificar o símbolo (. PDB) e arquivos de origem no depurador do Visual Studio (C#, C++, Visual Basic, F#)
 
@@ -76,11 +76,11 @@ Além disso, o depurador procura por arquivos de símbolo nos seguintes locais:
 
      Servidores de símbolo, que você pode usar incluem:
 
-     **Servidores públicos de símbolos Microsoft**: para depurar uma falha que ocorre durante uma chamada para uma DLL do sistema ou em uma biblioteca de terceiros, você geralmente precisa de sistema *. PDB* arquivos. Sistema *. PDB* arquivos contêm símbolos para DLLs do Windows *.exe* arquivos e drivers de dispositivo. Você pode obter os símbolos para sistemas de operacionais do Windows, MDAC, IIS, ISA e o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dos servidores de símbolo Microsoft públicos.
+     **Servidores de símbolo públicos da Microsoft**: Para depurar uma falha que ocorre durante uma chamada para uma DLL do sistema ou em uma biblioteca de terceiros, você geralmente precisa de sistema *. PDB* arquivos. Sistema *. PDB* arquivos contêm símbolos para DLLs do Windows *.exe* arquivos e drivers de dispositivo. Você pode obter os símbolos para sistemas de operacionais do Windows, MDAC, IIS, ISA e o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] dos servidores de símbolo Microsoft públicos.
 
-     **Servidores em uma rede interna ou em seu computador local de símbolo**: sua equipe ou empresa pode criar servidores de símbolo para seus próprios produtos e como um cache para símbolos de fontes externas. Você pode ter um servidor de símbolo no seu próprio computador.
+     **Servidores de símbolo em uma rede interna ou no computador local**: Sua equipe ou empresa pode criar servidores de símbolo para seus próprios produtos e como um cache para símbolos de fontes externas. Você pode ter um servidor de símbolo no seu próprio computador.
 
-     **Servidores de símbolo de terceiros**: provedores de terceiros de bibliotecas e aplicativos do Windows podem fornecer acesso ao servidor de símbolo na internet.
+     **Servidores de símbolo de terceiros**: Provedores de terceiros de aplicativos e bibliotecas do Windows podem fornecer acesso ao servidor de símbolo na Internet.
 
      > [!WARNING]
      > Se você usar um servidor de símbolos que não seja a servidores públicos de símbolos da Microsoft, certifique-se de que o servidor de símbolos e seu caminho são confiáveis. Como arquivos de símbolo podem conter códigos executáveis arbitrários, você pode ser exposto às ameaças de segurança.
@@ -155,7 +155,7 @@ Você pode selecionar opções adicionais de símbolo na **ferramentas** > **op�
   Você pode limitar os comandos que *SRCSRV* pode executar a partir do aplicativo *. PDB* arquivo listando os comandos permitidos em um arquivo chamado *SRCSRV. ini*. Coloque o *SRCSRV. ini* arquivo na mesma pasta que *SRCSRV* e *devenv.exe*.
 
   >[!IMPORTANT]
-  >Comandos arbitrários podem ser inseridos em um aplicativo *. PDB* de arquivos, portanto, certifique-se de colocar somente os comandos que você deseja executar em um *SRCSRV. ini* arquivo. Qualquer tentativa de executar um comando que não esteja no arquivo *srcsvr.ini* fará com que uma caixa de diálogo de confirmação seja exibida. Para obter mais informações, consulte [aviso de segurança: depurador deve executar comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
+  >Comandos arbitrários podem ser inseridos em um aplicativo *. PDB* de arquivos, portanto, certifique-se de colocar somente os comandos que você deseja executar em um *SRCSRV. ini* arquivo. Qualquer tentativa de executar um comando que não esteja no arquivo *srcsvr.ini* fará com que uma caixa de diálogo de confirmação seja exibida. Para obter mais informações, consulte [aviso de segurança: O depurador precisa executar um comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md).
   >
   >Nenhuma validação é feita em parâmetros do comando. Portanto, tenha cuidado com comandos confiáveis. Por exemplo, se você listou *cmd.exe* no seu *SRCSRV. ini*, um usuário mal-intencionado pode especificar parâmetros na *cmd.exe* seria mais perigoso.
 
@@ -193,7 +193,7 @@ Quando você compila um projeto do IDE do Visual Studio com o padrão **depurar*
 
 ### <a name="net-framework-options"></a>Opções do .NET Framework
 
-Compilar com o **/Debug** para criar um *. PDB* arquivo. Você pode criar aplicativos com **/Debug: full** ou **/Debug: pdbonly**. Compilando com **/Debug: full** gera código depurável. Compilando com **/Debug: pdbonly** gera *. PDB* os arquivos, mas não gera o `DebuggableAttribute` que informa o compilador JIT que as informações de depuração estão disponíveis. Use **/Debug: pdbonly** se você quiser gerar *. PDB* arquivos para uma versão de compilação que você não deseja ser depurável. Para obter mais informações, consulte [/Debug (C# opções do compilador)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) ou [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).
+Compilar com o **/Debug** para criar um *. PDB* arquivo. Você pode criar aplicativos com **/Debug: full** ou **/Debug: pdbonly**. Compilando com **/Debug: full** gera código depurável. Compilando com **/Debug: pdbonly** gera *. PDB* os arquivos, mas não gera o `DebuggableAttribute` que informa o compilador JIT que as informações de depuração estão disponíveis. Use **/Debug: pdbonly** se você quiser gerar *. PDB* arquivos para uma versão de compilação que você não deseja ser depurável. Para obter mais informações, consulte [/debug (opções do compilador c#)](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option) ou [/debug (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/debug).
 
 ### <a name="web-applications"></a>Aplicativos Web
 
@@ -259,7 +259,6 @@ Você pode especificar os locais em que o depurador procura por arquivos de orig
 1. Sob **não procurar por esses arquivos de origem**, digite os nomes dos arquivos de origem serão excluídos da pesquisa.
 
 1. Selecione **Okey** ou **aplicar**.
-
 
 ## <a name="see-also"></a>Consulte também
 - [Entender os arquivos de símbolo e configurações de símbolo do Visual Studio](https://devblogs.microsoft.com/devops/understanding-symbol-files-and-visual-studios-symbol-settings/)

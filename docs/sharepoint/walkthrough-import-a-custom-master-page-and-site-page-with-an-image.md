@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 59dad7f376b79b2e8ac773f8cc604204dcd0c908
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3d99b76e1ca9c67c0cd29bd435759b529d97b348
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602193"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665988"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>Passo a passo: Importar uma página mestra personalizada e a página do site com uma imagem
   Este passo a passo demonstra como importar uma página mestra personalizada do SharePoint e uma página de site que possui uma imagem em um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeto do SharePoint.
@@ -150,13 +150,11 @@ ms.locfileid: "56602193"
 
 2. Sobre o **selecionar itens para importar** página em **módulo** no **tipo** coluna, marque as caixas de seleção para somente os arquivos na tabela a seguir para importar.
 
-
    | Nome do Arquivo | Descrição |
    |------------------------|-----------------------------------------------|
    | \_catalogsmasterpage\_ | A página mestra personalizada. |
    | images_ | O arquivo de imagem no sistema de arquivos do SharePoint. |
    | SitePages_ | A página do site. |
-
 
 3. Escolha o **concluir** botão para importar os itens selecionados.
 

@@ -19,17 +19,16 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c161dcd18a46928c9e180608a122f106ecd6554e
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 23b991efaa32e2c1886e6e0cd64bb9d6181190d0
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54780896"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59667164"
 ---
 # <a name="assignculture-task"></a>Tarefa AssignCulture
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Essa tarefa aceita uma lista de itens que pode conter uma cadeia de caracteres de identificador de cultura .NET válida como parte do nome de arquivo e produz itens com metadados nomeados como `Culture` que contêm o identificador de cultura correspondente. Por exemplo, o nome de arquivo Form1.fr-fr.resx tem um identificador de cultura "fr-fr" inserido, assim, essa tarefa produzirá um item com o mesmo nome de arquivo e com os metadados `Culture` iguais a `fr-fr`. A tarefa também produz uma lista de nomes de arquivo com a cultura removida do nome de arquivo.  
   
 ## <a name="task-parameters"></a>Parâmetros da tarefa  

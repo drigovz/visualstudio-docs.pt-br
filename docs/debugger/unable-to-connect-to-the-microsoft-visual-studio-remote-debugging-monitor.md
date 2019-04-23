@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 95a438c6776e468611a99691c0a4bfea2e4203a5
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
-ms.translationtype: MTE95
+ms.openlocfilehash: c58e6531847d7694d9bde0f4520a3e21de6ce23f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953642"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665617"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Não foi possível se conectar ao Monitor de Depuração Remota do Microsoft Visual Studio
 Essa mensagem pode ocorrer porque o monitor de depuração remota não está corretamente configurado no computador remoto ou o computador remoto está inacessível devido a problemas de rede ou a presença de um firewall.
@@ -80,7 +80,6 @@ Visual Studio não pôde se conectar ao depurador remoto. Essa mensagem pode oco
 - A porta está bloqueada no firewall. Verifique se o firewall está [sua solicitação de bloqueio não](#firewall), especialmente se você estiver usando um firewall de terceiros.
 
 - A versão do depurador remoto não coincide com o Visual Studio. Para obter a versão correta do depurador remoto, consulte [depuração remota](../debugger/remote-debugging.md)
-
 
 ## <a name="valid_name"></a> O nome solicitado era válido, mas nenhum dado do tipo solicitado foi encontrado
 

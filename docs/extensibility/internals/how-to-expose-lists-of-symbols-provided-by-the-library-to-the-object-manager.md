@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c890602fa35ae96c4a28ef3c6d39724ce062a3c9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: efc9fa354ab7dfc119efd747c54091d2426b257b
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612459"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59666579"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Como: Expor listas de símbolos fornecidos pela biblioteca para o Gerenciador de objetos
 As ferramentas de navegação de símbolo **Class View**, **Pesquisador de objetos**, **Pesquisador de chamadas** e **Find Symbol Results**, passar solicitações para que novos dados o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gerenciador de objetos. O Gerenciador de objetos localiza as bibliotecas apropriadas e solicita novas listas de símbolos. As bibliotecas de respondem, fornecendo os dados solicitados para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gerenciador de objetos por meio de <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Gerenciador de objeto chama os métodos em <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> de interface para obter os dados e usa-o para preencher ou atualizar as exibições das ferramentas de navegação de símbolo.
@@ -30,7 +30,6 @@ As ferramentas de navegação de símbolo **Class View**, **Pesquisador de objet
 >  Os exemplos de código gerenciado a seguir demonstram como fornecer listas de símbolos por meio de implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. O Gerenciador de objeto chama os métodos nessa interface e usa os dados obtidos para preencher ou atualizar as ferramentas de navegação de símbolo.
 >
 >  Para implementação de provedor de símbolo de código nativo, use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interface.
-
 
 ## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>Para fornecer listas de símbolos para o Gerenciador de objetos
 

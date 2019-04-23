@@ -15,17 +15,16 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9d3b9957d9eb08c8e6398866fa4b4dd51dbcea70
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 8ce14dacb805839a1e61d8cf56753cedd312c162
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799102"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59661861"
 ---
-# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Como alterar fontes e cores usadas no Editor
+# <a name="how-to-change-fonts-and-colors-in-the-editor"></a>Como: Alterar fontes e cores no Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-  
 É possível alterar a face de fonte padrão, ajustar o tamanho da fonte e alterar as cores de primeiro plano e da tela de fundo para várias opções **Exibir itens** de texto no Editor de Código. Ao alterar as configurações de fonte, tenha em mente as seguintes informações:  
   
 -   As configurações de **Fonte** e **Tamanho** são globais para todos os elementos de texto em todos os editores [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
@@ -58,4 +57,4 @@ ms.locfileid: "54799102"
  [Personalizando o editor](../../ide/customizing-the-editor.md)   
  [Caixa de diálogo Opções do Editor de Texto](../../ide/reference/text-editor-options-dialog-box.md)   
  [Escrevendo código](../../ide/writing-code-in-the-code-and-text-editor.md)   
- [Como alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+ [Como: Alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)

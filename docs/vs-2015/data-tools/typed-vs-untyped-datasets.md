@@ -9,17 +9,16 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 219ba8c35cf67e3675f565b89607e6d518599dfd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0d02f72a686d0f271e387e550122451db34c019a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928111"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668022"
 ---
 # <a name="typed-vs-untyped-datasets"></a>Conjuntos de dados tipados versus. não tipados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 Um dataset tipado é um conjunto de dados pela primeira vez é derivado da base <xref:System.Data.DataSet> de classe e, em seguida, usa as informações do **Dataset Designer**, que é armazenado em um arquivo. xsd, para gerar um novo, fortemente tipadas classe dataset. Informações do esquema (tabelas, colunas e assim por diante) são geradas e compiladas essa nova classe de conjunto de dados como um conjunto de objetos de primeira classe e propriedades. Como um conjunto de dados tipado herda da base <xref:System.Data.DataSet> classe, a classe tipada pressupõe que todas as funcionalidades do <xref:System.Data.DataSet> classe e pode ser usado com métodos que usam uma instância de um <xref:System.Data.DataSet> classe como um parâmetro.  
   
  Um conjunto de dados não tipado, por outro lado, não tem nenhum esquema interna correspondente. Como em um dataset tipado, um conjunto de dados não tipado contém tabelas, colunas e assim por diante —, mas esses são expostos apenas como coleções. (No entanto, depois que você cria manualmente as tabelas e outros elementos de dados em um conjunto de dados não tipado, você pode exportar estrutura do conjunto de dados como um esquema usando o conjunto de dados <xref:System.Data.DataSet.WriteXmlSchema%2A> método.)  

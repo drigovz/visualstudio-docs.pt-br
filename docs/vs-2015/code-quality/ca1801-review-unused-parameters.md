@@ -16,24 +16,24 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: d1a3b0c7672af9cf10804c84db5103a93ff3ad80
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MT
+ms.openlocfilehash: f356f0a13b9a1b9ecf3a8096b29c1f0c9c6f275a
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "59000342"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59662602"
 ---
 # <a name="ca1801-review-unused-parameters"></a>CA1801: Examinar parâmetros não utilizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para a documentação mais recente do Visual Studio, consulte [CA1801: Revisar parâmetros não utilizados](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters) em docs.microsoft.com.  
+Para a documentação mais recente do Visual Studio, consulte [CA1801: Revisar parâmetros não utilizados](https://docs.microsoft.com/visualstudio/code-quality/ca1801-review-unused-parameters).  
   
 |||  
 |-|-|  
 |NomeDoTipo|ReviewUnusedParameters|  
 |CheckId|CA1801|  
 |Categoria|Microsoft.Usage|  
-|Alteração Significativa|Não separável - se o membro não é visível fora do assembly, independentemente da alteração feita.<br /><br /> Não separável - se você alterar o membro para usar o parâmetro em seu corpo.<br /><br /> Quebrando - se você remover o parâmetro e é visível fora do assembly.|  
+|Alteração Significativa|Separação de não - se o membro não é visível fora do assembly, independentemente da alteração é fazer.<br /><br /> Sem quebra - se você alterar o membro para usar o parâmetro em seu corpo.<br /><br /> Quebrando - se você remover o parâmetro e é visível fora do assembly.|  
   
 ## <a name="cause"></a>Causa  
  Uma assinatura de método inclui um parâmetro que não é usado no corpo do método. Essa regra não examina os métodos a seguir:  

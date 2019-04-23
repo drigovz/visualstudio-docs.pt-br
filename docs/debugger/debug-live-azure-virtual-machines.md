@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 0bbe7d081e15fdf81308218f2bb4b54e7623b333
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 2880b8bee25a79f5f182043ffed5c50c4512d033
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856950"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59663166"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Depurar aplicativos ASP.NET dinâmicos em máquinas virtuais do Azure e conjuntos de dimensionamento de máquinas virtuais do Azure usando o Depurador de Instantâneos
 
@@ -35,11 +35,11 @@ Neste tutorial, você irá:
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* O Depurador de Instantâneos para Máquinas Virtuais (VM) do Azure e Conjuntos de Dimensionamento de Máquinas Virtuais (VMSS) só está disponível para versão prévia do Visual Studio 2019 Enterprise ou posterior, com a **carga de trabalho de desenvolvimento do Azure**. (Na guia **Componentes individuais**,é possível encontrá-lo em **Depuração e testes** > **Depurador de instantâneos**).
+* Depurador de instantâneos para máquinas virtuais do Azure (VM) e conjuntos de dimensionamento de máquina Virtual do Azure só está disponível para o Visual Studio 2019 Enterprise ou superior com o **carga de trabalho de desenvolvimento do Azure**. (Na guia **Componentes individuais**,é possível encontrá-lo em **Depuração e testes** > **Depurador de instantâneos**).
 
-    Se ainda não estiver instalado, instale a [versão prévia do Visual Studio Enterprise 2019](https://visualstudio.microsoft.com/vs/preview/).
+    Se ainda não estiver instalado, instale [Visual Studio Enterprise de 2019](https://visualstudio.microsoft.com/vs/).
 
-* A coleção de instantâneos está disponível para os seguintes aplicativos Web de Azure VM/VMSS:
+* Coleta de instantâneo está disponível para os seguintes aplicativos web do Azure conjuntos de dimensionamento de máquinas virtuais Machines\Virtual:
   * Aplicativos ASP.NET em execução no .NET Framework 4.6.1 ou posterior.
   * Aplicativos ASP.NET Core em execução no .NET Core 2.0 ou posterior no Windows.
 
@@ -48,9 +48,9 @@ Neste tutorial, você irá:
 1. Abra o projeto em que você gostaria de fazer a depuração de instantâneos.
 
     > [!IMPORTANT]
-    > Para realizar a depuração de instantâneos, você precisará abrir a *mesma versão do código-fonte* publicado no seu serviço de Azure VM/VMSS.
+    > A depuração de instantâneo, você precisará abrir o *mesma versão do código-fonte* que é publicado para o serviço do Azure Virtual Machine\Virtual máquina conjunto de dimensionamento.
 
-1. Escolha **Depurar > Anexar Depurador de Instantâneos...**. Selecione o recurso do Azure VM/VMSS em que seu aplicativo Web está implantado e uma conta de armazenamento do Azure e, em seguida, clique em **Anexar**.
+1. Escolha **Depurar > Anexar Depurador de Instantâneos...**. Selecione uma conta de armazenamento do Azure e o Azure Virtual Machine\Virtual máquina conjunto de dimensionamento de seu aplicativo web é implantado em e, em seguida, clique em **Attach**.
 
       ![Iniciar o depurador de instantâneos no menu Depurar](../debugger/media/snapshot-debug-menu-attach.png)
 
@@ -58,7 +58,7 @@ Neste tutorial, você irá:
 
     > [!IMPORTANT]
     > Na primeira vez que você selecionar **Anexar Depurador de Instantâneos** para sua VM, o IIS será reiniciado automaticamente.
-    > Na primeira vez que você selecionar **Anexar Depurador de Instantâneos** para seu VMSS, será preciso fazer a atualização manual de cada instância do VMSS.
+    > Na primeira vez que você seleciona **anexar o depurador de instantâneo** para seus conjuntos de dimensionamento de máquina Virtual, requer a atualização manual de cada instância dos conjuntos de escala de máquina Virtual.
 
     Os metadados para os **Módulos** não serão ativados inicialmente; navegue até o aplicativo Web, e o botão **Iniciar Coleção** ficará ativo. O Visual Studio agora está no modo de depuração de instantâneos.
 
@@ -66,9 +66,9 @@ Neste tutorial, você irá:
 
     > [!NOTE]
     > A extensão de site do Application Insights também dá suporte à depuração de instantâneos. Se você encontrar uma mensagem de erro "extensão de site desatualizada", veja [dicas de solução de problemas e problemas conhecidos da depuração de instantâneos](../debugger/debug-live-azure-apps-troubleshooting.md) para atualizar os detalhes.
-    > Nos VMSS, o usuário precisará atualizar manualmente as instâncias em seus VMSS depois de anexar o Depurador de Instantâneos pela primeira vez.
+    > Para VMSS o usuário é necessário para atualizar manualmente as instâncias em seus conjuntos de dimensionamento de máquina Virtual depois de anexar o depurador de instantâneo pela primeira vez.
 
-   A janela **Módulos** mostra quando todos os módulos de foram carregados para o Azure VM/VMSS (escolha **Depurar > Windows > Módulos** para abrir essa janela).
+   O **módulos** janela mostra quando todos os módulos de tem carregado para o Azure Virtual Machine\Virtual máquina conjunto de dimensionamento (escolher **Depurar > Windows > módulos** para abrir essa janela).
 
    ![Verificar a janela Módulos](../debugger/media/snapshot-modules.png)
 
@@ -148,4 +148,4 @@ Além de tirar um instantâneo quando um snappoint é atingido, também é poss�
 Neste tutorial, você aprendeu como usar o Depurador de Instantâneos para Máquinas Virtuais e Conjuntos de Dimensionamento de Máquinas Virtuais do Azure. Talvez você queira ler mais detalhes sobre esse recurso.
 
 > [!div class="nextstepaction"]
-> [Perguntas frequentes sobre depuração de instantâneo](../debugger/debug-live-azure-apps-faq.md)
+> [Perguntas frequentes sobre depuração de instantâneos](../debugger/debug-live-azure-apps-faq.md)

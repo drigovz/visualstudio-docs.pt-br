@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f61c9623cd2006f0df82c93dc420a25f23d3d2a
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: c84402fcccd289b7e4c80ffeaa988411e0c77baf
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416192"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59669947"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>Regras propagam alterações dentro do modelo
 Você pode criar uma regra do repositório para propagar uma alteração de um elemento para outro na visualização e o SDK de modelagem (VMSDK). Quando ocorre uma alteração a qualquer elemento na Store, as regras estão agendadas para ser executado, normalmente, quando a transação externa é confirmada. Há diferentes tipos de regras para diferentes tipos de eventos, como adicionar um elemento ou excluí-lo. Você pode anexar as regras para tipos específicos de elementos, formas ou diagramas. Muitos recursos internos são definidos por regras: por exemplo, as regras de garantem que um diagrama é atualizado quando o modelo é alterado. Você pode personalizar sua linguagem específica do domínio, adicionando suas próprias regras.
@@ -128,7 +128,6 @@ namespace ExampleNamespace
 
 - Derive a classe de regra de uma das seguintes classes base:
 
-
   | Classe base | Disparador |
   |-|-|
   | <xref:Microsoft.VisualStudio.Modeling.AddRule> | Um elemento, um link ou uma forma é adicionada.<br /><br /> Use isso para detectar novas relações, além de novos elementos. |
@@ -141,7 +140,6 @@ namespace ExampleNamespace
   | <xref:Microsoft.VisualStudio.Modeling.TransactionBeginningRule> | Executado quando uma transação é criada. |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionCommittingRule> | Executado quando a transação está prestes a ser confirmada. |
   | <xref:Microsoft.VisualStudio.Modeling.TransactionRollingBackRule> | Executado quando a transação está prestes a ser revertida. |
-
 
 - Cada classe tem um método que você substituir. Tipo `override` em sua classe para descobri-lo. O parâmetro deste método identifica o elemento que está sendo alterado.
 
