@@ -75,19 +75,19 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95add394f6f3e3e62a7441fe5bb0b4c415509527
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: e43175ace465abdece5ec1f06aeda10ecddb9a14
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922970"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057450"
 ---
 # <a name="crt-debug-heap-details"></a>Detalhes da pilha de depuração CRT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Este tópico fornece um aspecto detalhado na heap de depuração de CRT.  
   
-##  <a name="BKMK_Contents"></a> Conteúdo  
+## <a name="BKMK_Contents"></a> Conteúdo  
  [Localizar estouros de buffer com heap de depuração](#BKMK_Find_buffer_overruns_with_debug_heap)  
   
  [Tipos de blocos na heap de depuração](#BKMK_Types_of_blocks_on_the_debug_heap)  
@@ -102,7 +102,7 @@ Este tópico fornece um aspecto detalhado na heap de depuração de CRT.
   
  [Solicitações de alocação da heap de rastreamento](#BKMK_Track_Heap_Allocation_Requests)  
   
-##  <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> Localizar estouros de buffer com heap de depuração  
+## <a name="BKMK_Find_buffer_overruns_with_debug_heap"></a> Localizar estouros de buffer com heap de depuração  
  Dois dos problemas intratáveis mais comuns que os programadores encontram estão substituindo o final de um buffer alocado e os vazamentos de memória (não liberam alocações depois que não são mais necessários.) O heap de depuração fornece ferramentas avançadas para resolver problemas de alocação de memória desse tipo.  
   
  As versões de depuração de funções heap chamam o padrão ou as versões de base usadas nas compilações da release. Quando você solicita um bloco de memória, o gerenciador da heap de depuração aloca um bloco de memória ligeiramente maior do que o solicitado da heap de base e retorna um ponteiro para sua parte desse bloco. Por exemplo, suponha que seu aplicativo contém a chamada: `malloc( 10 )`. Em um build de versão [malloc](http://msdn.microsoft.com/library/144fcee2-be34-4a03-bb7e-ed6d4b99eea0) chamaria a rotina de alocação de heap de base solicitando uma alocação de 10 bytes. Em uma compilação de depuração, no entanto, `malloc` chamaria [malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb), que, em seguida, chamaria a rotina de alocação de heap de base solicitando uma alocação de 10 bytes mais aproximadamente 36 bytes de memória adicional. Todos os blocos de memória resultantes no heap de depuração estão conectados em uma única lista vinculada, ordenados de acordo com a data em que foram alocados.  
@@ -149,7 +149,7 @@ typedef struct _CrtMemBlockHeader
   
  ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
-##  <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Tipos de blocos na heap de depuração  
+## <a name="BKMK_Types_of_blocks_on_the_debug_heap"></a> Tipos de blocos na heap de depuração  
  Cada bloco de memória no heap de depuração é atribuído a um dos cinco tipos de alocação. Esses tipos são controlados e relatados de maneira diferente para fins de relatórios de estado e de detecção de vazamento. Você pode especificar o tipo de bloco atribuindo-o e usando uma chamada direta para uma das funções de alocação do heap de depuração como [_malloc_dbg](http://msdn.microsoft.com/library/c97eca51-140b-4461-8bd2-28965b49ecdb). Os cinco tipos de blocos de memória no heap de depuração (definido no membro de **nBlockUse** da estrutura de **_CrtMemBlockHeader**) são:  
   
  **_NORMAL_BLOCK**  
@@ -183,7 +183,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
-##  <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> Verifique a integridade e vazamentos de memória do heap  
+## <a name="BKMK_Check_for_heap_integrity_and_memory_leaks"></a> Verifique a integridade e vazamentos de memória do heap  
  Vários dos recursos da heap de depuração devem ser acessados de dentro de seu código. A seção a seguir descreve alguns dos recursos e como usá-los.  
   
  `_CrtCheckMemory`  
@@ -204,7 +204,7 @@ freedbg(pbData, _CLIENT_BLOCK|(MYSUBTYPE<<16));
   
  ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
-##  <a name="BKMK_Configure_the_debug_heap"></a> Configurar o heap de depuração  
+## <a name="BKMK_Configure_the_debug_heap"></a> Configurar o heap de depuração  
  Todas as chamadas para funções heap, como `malloc`, `free`, `calloc`, `realloc`, `new` e `delete` resolvem depurar versões dessas funções que operam no heap de depuração. Quando você libera um bloco de memória, a heap de depuração verifica automaticamente a integridade dos buffers em ambos os lados de sua área atribuída e emite um relatório de erro case a substituição tenha ocorrido.  
   
  **Para usar a heap de depuração**  
@@ -239,7 +239,7 @@ _CrtSetDbgFlag( tmpFlag );
   
  ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
-##  <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> new, delete e _CLIENT_BLOCKs no heap de depuração C++  
+## <a name="BKMK_new__delete__and__CLIENT_BLOCKs_in_the_C___debug_heap"></a> new, delete e _CLIENT_BLOCKs no heap de depuração C++  
  As versões de depuração de biblioteca em tempo de execução de C contêm versões de depuração do C++ `new` e operadores de `delete`. Se você usar o tipo de alocação `_CLIENT_BLOCK`, deverá chamar a versão de depuração do operador `new` diretamente ou criar macros que substituam o operador `new` no modo de depuração, como mostrado no exemplo a seguir:  
   
 ```  
@@ -277,7 +277,7 @@ int main( )   {
   
  ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
-##  <a name="BKMK_Heap_State_Reporting_Functions"></a> Funções de relatório de estado de heap  
+## <a name="BKMK_Heap_State_Reporting_Functions"></a> Funções de relatório de estado de heap  
  **_CrtMemState**  
   
  Para capturar um instantâneo de resumo do estado da heap em um determinado momento, use a estrutura _CrtMemState definida em CRTDBG.H:  
@@ -314,7 +314,7 @@ typedef struct _CrtMemState
   
  ![Voltar ao início](../debugger/media/pcs-backtotop.png "PCS_BackToTop") [Conteúdo](#BKMK_Contents)  
   
-##  <a name="BKMK_Track_Heap_Allocation_Requests"></a> Solicitações de alocação da heap de rastreamento  
+## <a name="BKMK_Track_Heap_Allocation_Requests"></a> Solicitações de alocação da heap de rastreamento  
  Apesar de localizar o nome do arquivo de origem e o número da linha, no qual uma declaração ou uma macro de relatório executa, é geralmente muito útil localizar a causa de um problema, provavelmente o mesmo não é verdade para funções de alocação do heap. Quando macros podem ser inseridas em vários pontos apropriados na árvore de lógica de um aplicativo, uma alocação geralmente é ocultada em uma rotina especial que é chamada de vários locais diferentes em muitas vezes diferentes. A pergunta geralmente não é qual linha de código fez uma alocação incorreta, mas qual das milhares de alocações feitas por essa linha de código está incorreta e porque.  
   
  **Números de solicitação de alocação exclusiva e _crtBreakAlloc**  

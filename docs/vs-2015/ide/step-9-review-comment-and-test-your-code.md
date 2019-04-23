@@ -1,5 +1,5 @@
 ---
-title: 'Etapa 9: examinar, comentar e testar o código | Microsoft Docs'
+title: 'Etapa 9: Revisar, comentar e testar seu código | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b03c6c7af9cfedcf7e45a61dba826d99b300ffbe
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f601c9cc404d605d5fb0ddf7ad149a595f77ef77
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54796731"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059858"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Etapa 9: Revisar, comentar e testar o código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Em seguida, adicione um comentário ao seu código. Um comentário é uma observ
   
 - Quando você clica duas vezes no botão **Mostrar uma imagem** no Designer de Formulários do Windows, o IDE adiciona automaticamente um *método* para o código do seu programa.  
   
-- Os métodos são a forma como você organiza seu código: é como o código é agrupado.  
+- Métodos são o modo como você organiza seu código: É como seu código é agrupado.  
   
 - Na maioria das vezes, um método faz um pequeno número de coisas em uma ordem específica, como a forma como o seu método `showButton_Click()` mostra uma caixa de diálogo e carrega uma imagem.  
   
@@ -45,11 +45,11 @@ Em seguida, adicione um comentário ao seu código. Um comentário é uma observ
   
    As instruções fazem com que seus programas funcionem. No Visual C#, uma instrução sempre termina em um ponto-e-vírgula. No Visual Basic, o final de uma linha é o fim de uma declaração. (Nenhuma vírgula é necessária no Visual Basic.) A instrução anterior diz ao controle `PictureBox` para carregar o arquivo que o usuário selecionou com o componente **OpenFileDialog**.  
   
-  ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")Para uma versão em vídeo deste tópico, consulte o [Tutorial 1: criar um Visualizador de Imagens no Visual Basic – Vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205216) ou o [Tutorial 1: criar um Visualizador de Imagens em C# – Vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.  
+  ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")para uma versão em vídeo deste tópico, consulte [Tutorial 1: Criar um visualizador de imagens no Visual Basic – vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205216) ou [Tutorial 1: Criar um visualizador de imagens em c# – vídeo 5](http://go.microsoft.com/fwlink/?LinkId=205206). Esses vídeos usam uma versão anterior do Visual Studio, portanto, existem pequenas diferenças em alguns comandos de menu e em outros elementos da interface do usuário. No entanto, os conceitos e procedimentos funcionam de maneiras semelhantes na versão atual do Visual Studio.  
   
 ### <a name="to-add-comments"></a>Para adicionar comentários  
   
-1.  Adicione o seguinte comentário ao seu código.  
+1. Adicione o seguinte comentário ao seu código.  
   
      [!code-csharp[VbExpressTutorial1Step9_10#1](../snippets/csharp/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/cs/form1.cs#1)]
      [!code-vb[VbExpressTutorial1Step9_10#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#1)]  
@@ -64,7 +64,7 @@ Em seguida, adicione um comentário ao seu código. Um comentário é uma observ
     >   
     >  Para ativar um snippet ao digitar o código, digite-o e pressione a tecla TAB. Muitos snippets aparecem na janela **IntelliSense**, e é por isso que você escolhe a tecla TAB duas vezes: primeiro para selecionar o snippet na janela **IntelliSense** e depois para mandar o IDE para usar o snippet. (O IntelliSense oferece suporte a snippets de `if`, mas não a snippets de `ifelse`.)  
   
-2.  Antes de executar o programa, salve seu programa clicando no botão **Salvar Todos** na barra de ferramentas, que aparece da seguinte forma.  
+2. Antes de executar o programa, salve seu programa clicando no botão **Salvar Todos** na barra de ferramentas, que aparece da seguinte forma.  
   
      ![Botão de barra de ferramentas Salvar tudo](../ide/media/express-iconsaveall.png "Express_IconSaveAll")  
 Botão Salvar todos  
@@ -78,19 +78,19 @@ Visualizador de imagem
   
 ### <a name="to-test-your-program"></a>Para testar o programa  
   
-1.  Escolha a tecla F5 ou escolha o botão de barra de ferramentas **Iniciar Depuração**.  
+1. Escolha a tecla F5 ou escolha o botão de barra de ferramentas **Iniciar Depuração**.  
   
-2.  Escolha o botão **Mostrar uma imagem** para executar o código que você acabou de escrever. Primeiro, o programa abre uma caixa de diálogo **Abrir Arquivo**. Verifique se seus filtros aparecem na lista suspensa **Arquivos de tipo** na parte inferior da caixa de diálogo. Em seguida, navegue para uma imagem e abra-a. Geralmente você pode localizar as imagens de exemplo fornecidas com o sistema operacional Windows em sua pasta de **Meus Documentos**, dentro da pasta **My Pictures\Sample Pictures**.  
+2. Escolha o botão **Mostrar uma imagem** para executar o código que você acabou de escrever. Primeiro, o programa abre uma caixa de diálogo **Abrir Arquivo**. Verifique se seus filtros aparecem na lista suspensa **Arquivos de tipo** na parte inferior da caixa de diálogo. Em seguida, navegue para uma imagem e abra-a. Geralmente você pode localizar as imagens de exemplo fornecidas com o sistema operacional Windows em sua pasta de **Meus Documentos**, dentro da pasta **My Pictures\Sample Pictures**.  
   
     > [!NOTE]
     >  Se você não vir nenhuma imagem na caixa de diálogo **Selecione um arquivo de imagem**, verifique se o filtro "Todos os arquivos (*.\*)" está selecionado na lista suspensa no canto inferior direito da caixa de diálogo.  
   
-3.  Carregue uma imagem e ela aparecerá em sua PictureBox. Tente redimensionar o formulário arrastando suas bordas. Como você tem seu PictureBox encaixado em um TableLayoutPanel, que está encaixado no formulário, sua área de imagem se redimensionará de modo que seja tão larga quando o formulário, e preencherá 90% da parte superior do formulário. É por isso que você usou os recipientes TableLayoutPanel e FlowLayoutPanel: eles mantêm seu formato dimensionado corretamente quando o usuário o redimensiona.  
+3. Carregue uma imagem e ela aparecerá em sua PictureBox. Tente redimensionar o formulário arrastando suas bordas. Como você tem seu PictureBox encaixado em um TableLayoutPanel, que está encaixado no formulário, sua área de imagem se redimensionará de modo que seja tão larga quando o formulário, e preencherá 90% da parte superior do formulário. É por isso que você usou os recipientes TableLayoutPanel e FlowLayoutPanel: Eles mantêm seu formato dimensionado corretamente quando o usuário o redimensiona.  
   
      Agora, imagens maiores vão além das bordas do visualizador de imagens. Na próxima etapa, você adicionará código para fazer as imagens caberem na janela.  
   
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar  
   
--   Para ir para a etapa seguinte do tutorial, consulte [Etapa 10: escrever código para botões adicionais e uma caixa de seleção](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).  
+- Para ir para a próxima etapa do tutorial, confira [Etapa 10: Escrever código para botões adicionais e uma caixa de seleção](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).  
   
--   Para voltar à próxima anterior do tutorial, consulte [Etapa 8: escrever código para o manipulador de eventos do botão Mostrar uma Imagem](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).
+- Para retornar à etapa anterior do tutorial, confira [Etapa 8: Escrever código para mostrar um manipulador de eventos do botão de imagem](../ide/step-8-write-code-for-the-show-a-picture-button-event-handler.md).

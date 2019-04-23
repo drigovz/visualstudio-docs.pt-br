@@ -10,12 +10,12 @@ ms.assetid: 4bb621bd-72f5-43d5-916f-9f66617da049
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 972d37e0b3b83db1b99f266a1ffafdc58b1f02b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 7db4296a8fa4146a52d167bce3d8b051aa3ca073
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922572"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055971"
 ---
 # <a name="drop-down-bar"></a>Barra de menu suspenso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,19 +30,19 @@ Barra de menu suspenso
   
  Ao implementar uma barra de menu suspenso, há quatro interfaces de importância fundamental:  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient>  
   
      Implemente essa interface para inserir o conteúdo da barra de menu suspenso. Cada combinação de lista suspensa pode conter texto sem formatação ou texto sofisticado (negrito, sublinhado ou itálico), pode ter cores de fonte do texto de janela ou cores de fonte cinza e, opcionalmente, pode fornecer um bitmap pequeno ao lado do item de lista suspensa. Semelhante ao <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> interface, imagens de bitmap são fornecidas em listas de imagens. Cada combinação de lista suspensa pode ter uma lista de imagem diferente; No entanto, cada lista de imagens deve conter imagens da mesma altura. Além disso, usando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarClient.GetComboTipText%2A> método, você pode fornecer uma dica de ferramenta para cada combinação.  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager>  
   
      Chame essa interface para criar ou destruir a barra de menu suspenso para uma janela de código. Essa interface também pode ser usada para determinar se uma barra de menu suspenso já está anexada a uma janela de código chamando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager.GetDropdownBar%2A> método. Chame <xref:System.Runtime.InteropServices.Marshal.QueryInterface%2A> para <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBarManager> de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>.  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsDropdownBar>  
   
      Chame essa interface para se comunicar diretamente com a barra de menu suspenso. Você pode usar essa interface para forçar uma atualização de lista suspensa da barra conteúdo ou para alterar a seleção de uma das caixas de listagem.  
   
--   <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents>  
+- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManagerEvents>  
   
      Se você tiver registrado o `ShowDropdownBarOption` na sua chave de registro do serviço de linguagem, em seguida, seu Gerenciador de janelas de código deve monitorar esse evento para sincronizar com as preferências do usuário sobre se a barra de menu deve ser exibida. Se você não registrar essa opção em sua chave de serviço de linguagem, então a opção para mostrar ou ocultar a barra de menu suspenso está desabilitada na **opções** menu.  
   

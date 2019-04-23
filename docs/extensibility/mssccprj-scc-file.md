@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05360ca6e557ae0153715497b85792bc2fb6e2fc
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.openlocfilehash: fbf9c2f914bbe0bed741a407faf1d0055a4b43a7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693029"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043714"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Arquivos SCC
 Quando você coloca uma solução do Visual Studio ou o projeto sob controle do código-fonte usando o IDE, o IDE recebe duas informações cruciais. A informação vem de controle de fonte de plug-in na forma de cadeias de caracteres. Essas cadeias de caracteres "AuxPath" e "Nomedoprojeto" são opacas para o IDE, mas eles são usados pelo plug-in para localizar a solução ou projeto no controle de versão. O IDE normalmente obtém essas cadeias de caracteres na primeira vez chamando o [SccGetProjPath](../extensibility/sccgetprojpath-function.md), e ele, em seguida, salva-os no arquivo de projeto ou solução para futuras chamadas para o [SccOpenProject](../extensibility/sccopenproject-function.md). Quando inseridos nos arquivos de solução e projeto, as cadeias de caracteres "AuxPath" e "Nomedoprojeto" não são atualizadas automaticamente quando um usuário de branches, bifurcações, ou copia os arquivos de solução e projeto que estão no controle de versão. Para certificar-se de que os arquivos de solução e projeto apontam para sua localização correta no controle de versão, os usuários devem atualizar manualmente as cadeias de caracteres. Porque as cadeias de caracteres devem ser opaco, pode não sempre ser claro como eles devem ser atualizados.
@@ -25,19 +25,19 @@ Quando você coloca uma solução do Visual Studio ou o projeto sob controle do 
 
  Um plug-in de controle de fonte que ofereça suporte a *Mssccprj* arquivo deve seguir as diretrizes a seguir:
 
--   Pode haver somente um *Mssccprj* arquivo por diretório.
+- Pode haver somente um *Mssccprj* arquivo por diretório.
 
--   Uma *Mssccprj* arquivo pode conter a "AuxPath" e "Nomedoprojeto" para vários arquivos que estão sob controle do código-fonte dentro de um determinado diretório.
+- Uma *Mssccprj* arquivo pode conter a "AuxPath" e "Nomedoprojeto" para vários arquivos que estão sob controle do código-fonte dentro de um determinado diretório.
 
--   A cadeia de caracteres "AuxPath" não deve ter aspas dentro dele. Ele tem permissão para ter aspas ao redor dele como delimitadores (por exemplo, um par de aspas duplas pode ser usado para indicar uma cadeia de caracteres vazia). O IDE removeremos todas as aspas da cadeia de caracteres "AuxPath" quando são lidos a partir de *Mssccprj* arquivo.
+- A cadeia de caracteres "AuxPath" não deve ter aspas dentro dele. Ele tem permissão para ter aspas ao redor dele como delimitadores (por exemplo, um par de aspas duplas pode ser usado para indicar uma cadeia de caracteres vazia). O IDE removeremos todas as aspas da cadeia de caracteres "AuxPath" quando são lidos a partir de *Mssccprj* arquivo.
 
--   Cadeia de caracteres "Nomedoprojeto" no *MSSCCPRJ. Arquivos SCC* deve corresponder exatamente a cadeia de caracteres retornada do `SccGetProjPath` função. Se a cadeia de caracteres retornada pela função tem aspas ao redor dela, a cadeia de caracteres na *Mssccprj* arquivo deve ter aspas ao redor dele e vice-versa.
+- Cadeia de caracteres "Nomedoprojeto" no *MSSCCPRJ. Arquivos SCC* deve corresponder exatamente a cadeia de caracteres retornada do `SccGetProjPath` função. Se a cadeia de caracteres retornada pela função tem aspas ao redor dela, a cadeia de caracteres na *Mssccprj* arquivo deve ter aspas ao redor dele e vice-versa.
 
--   Uma *Mssccprj* arquivo é criado ou atualizado sempre que um arquivo é colocado sob controle do código-fonte.
+- Uma *Mssccprj* arquivo é criado ou atualizado sempre que um arquivo é colocado sob controle do código-fonte.
 
--   Se um *Mssccprj* arquivo é excluído, um provedor deverá gerá-la novamente na próxima vez que ele executa uma operação de controle do código-fonte relativas a esse diretório.
+- Se um *Mssccprj* arquivo é excluído, um provedor deverá gerá-la novamente na próxima vez que ele executa uma operação de controle do código-fonte relativas a esse diretório.
 
--   Uma *Mssccprj* arquivo estritamente deve seguir o formato definido.
+- Uma *Mssccprj* arquivo estritamente deve seguir o formato definido.
 
 ## <a name="an-illustration-of-the-mssccprjscc-file-format"></a>Uma ilustração de MSSCCPRJ. Formato de arquivo do SCC
  A seguir está um exemplo do *Mssccprj* formato de arquivo (os números de linha são fornecidos apenas como um guia e não devem ser incluídos no corpo do arquivo):

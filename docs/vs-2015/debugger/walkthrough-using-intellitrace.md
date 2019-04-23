@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 195aba127c96e7d7b717f1a93346ebacbb99a502
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: bbc2135f292197a1856eaea8d80c03d1c41adff3
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923027"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053800"
 ---
 # <a name="walkthrough-using-intellitrace"></a>Passo a passo: Usando o IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,20 +23,20 @@ Você pode usar o IntelliTrace para coletar informações sobre categorias de ev
   
  Você pode usar o IntelliTrace no Visual Studio Enterprise edition (mas não as edições Professional ou Community).  
   
-##  <a name="GettingStarted"></a> Usando o IntelliTrace somente com eventos  
+## <a name="GettingStarted"></a> Usando o IntelliTrace somente com eventos  
  Você pode tentar depurar com apenas eventos do IntelliTrace. Os eventos do IntelliTrace são eventos do depurador, exceções, eventos do .NET Framework e outros eventos do sistema. Você deve ativar ou desativar eventos específicos para controlar os eventos que o IntelliTrace registra antes de iniciar a depuração. Para obter mais informações, consulte [recursos do IntelliTrace](../debugger/intellitrace-features.md).  
   
  As etapas a seguir mostram como depurar com somente eventos do IntelliTrace:  
   
-1.  Ative o evento do IntelliTrace para acesso a arquivos. Vá para o **Ferramentas / opções / IntelliTrace / eventos do IntelliTrace** página e, em seguida, expanda o **arquivo** categoria. Verifique as **arquivo** categoria de evento. Isso faz com que todos os arquivos eventos (acessar, fechar, excluir) a ser verificado.  
+1. Ative o evento do IntelliTrace para acesso a arquivos. Vá para o **Ferramentas / opções / IntelliTrace / eventos do IntelliTrace** página e, em seguida, expanda o **arquivo** categoria. Verifique as **arquivo** categoria de evento. Isso faz com que todos os arquivos eventos (acessar, fechar, excluir) a ser verificado.  
   
-2.  Crie um aplicativo de console C#. No arquivo Program.cs, adicione o seguinte `using` instrução:  
+2. Crie um aplicativo de console C#. No arquivo Program.cs, adicione o seguinte `using` instrução:  
   
     ```csharp  
     using System.IO;  
     ```  
   
-3.  Criar um <xref:System.IO.FileStream> no método Main, lê-lo, feche-o e exclua o arquivo. Adicione outra linha apenas para ter um local para definir um ponto de interrupção:  
+3. Criar um <xref:System.IO.FileStream> no método Main, lê-lo, feche-o e exclua o arquivo. Adicione outra linha apenas para ter um local para definir um ponto de interrupção:  
   
     ```csharp  
     static void Main(string[] args)  
@@ -50,14 +50,14 @@ Você pode usar o IntelliTrace para coletar informações sobre categorias de ev
     }  
     ```  
   
-4.  Definir um ponto de interrupção em `Console.WriteLine("done");`  
+4. Definir um ponto de interrupção em `Console.WriteLine("done");`  
   
-5.  Inicie a depuração como de costume. (Pressione **F5** ou clique em **depurar / iniciar depuração**.  
+5. Inicie a depuração como de costume. (Pressione **F5** ou clique em **depurar / iniciar depuração**.  
   
     > [!TIP]
     >  Manter o **Locals** e **Autos** janelas abertas enquanto você estiver depurando para consultar e registrar os valores nessas janelas.  
   
-6.  Interrompe a execução no ponto de interrupção. Se você não vir as **ferramentas de diagnóstico** janela, clique em **depurar / Windows / eventos do IntelliTrace**.  
+6. Interrompe a execução no ponto de interrupção. Se você não vir as **ferramentas de diagnóstico** janela, clique em **depurar / Windows / eventos do IntelliTrace**.  
   
      No **ferramentas de diagnóstico** janela, localizar o **eventos** guia (você deve ver 3 guias, **eventos**, **uso de memória**, e **CPU Uso**). O **eventos** guia mostra uma lista cronológica de eventos, terminando com o último evento antes que o depurador interromper a execução. Você deve ver um evento chamado **WordSearchInputs.txt acesso**.  
   
@@ -65,7 +65,7 @@ Você pode usar o IntelliTrace para coletar informações sobre categorias de ev
   
      ![IntelliTrace&#45;Update1](../debugger/media/intellitrace-update1.png "IntelliTrace-Update1")  
   
-7.  Selecione o evento para expandir seus detalhes.  
+7. Selecione o evento para expandir seus detalhes.  
   
      Captura de tela a seguir é do Visual Studio 2015 atualização 1.  
   
@@ -79,19 +79,19 @@ Você pode usar o IntelliTrace para coletar informações sobre categorias de ev
   
      ![HistoricalDebugging&#45;Update1](../debugger/media/historicaldebugging-update1.png "HistoricalDebugging-Update1")  
   
-8.  Se você não encontrou o bug, tente examinar outros eventos que levam ao bug. Você também pode fazer o IntelliTrace registrar informações de chamada para que você possa passar por chamadas de função.  
+8. Se você não encontrou o bug, tente examinar outros eventos que levam ao bug. Você também pode fazer o IntelliTrace registrar informações de chamada para que você possa passar por chamadas de função.  
   
 ## <a name="using-intellitrace-with-events-and-function-calls"></a>Usando o IntelliTrace com eventos e chamadas de função  
  O IntelliTrace poderá registrar chamadas de função juntamente com os eventos. Isso permite que você consulte o histórico da pilha de chamadas e retroceda e avance por meio de chamadas em seu código. O IntelliTrace registra dados como nomes de função, pontos de entrada e saída da função e determinados valores de parâmetros e valores de retorno. Ver [recursos do IntelliTrace](../debugger/intellitrace-features.md).  
   
-1.  Ative a coleta de chamadas. (No **Ferramentas / opções / IntelliTrace / contabilidade**, selecione **eventos do IntelliTrace e informações de chamada**. IntelliTrace iniciará a coleta dessas informações quando o próxima sessão de depuração é iniciada.  
+1. Ative a coleta de chamadas. (No **Ferramentas / opções / IntelliTrace / contabilidade**, selecione **eventos do IntelliTrace e informações de chamada**. IntelliTrace iniciará a coleta dessas informações quando o próxima sessão de depuração é iniciada.  
   
     > [!TIP]
     >  Isso pode reduzir a velocidade de seu aplicativo e aumentar o tamanho de qualquer arquivo de log do IntelliTrace (arquivos. itrace) que você está salvando em disco. Para obter a maioria dos dados de chamada, mas minimizar os efeitos, registrar dados somente dos módulos que lhe interessam. Para alterar o tamanho máximo dos seus arquivos. itrace, vá para **Ferramentas / opções / IntelliTrace / avançados**e especifique a quantidade máxima de espaço em disco. O padrão é 250 MB.  
   
-2.  Inicie a depuração do aplicativo de console C# criado na seção anterior. Interrompe a execução no ponto de interrupção. Se você não vir as **ferramentas de diagnóstico** janela, clique em **depurar / Windows / eventos do IntelliTrace**.  
+2. Inicie a depuração do aplicativo de console c# criado na seção anterior. Interrompe a execução no ponto de interrupção. Se você não vir as **ferramentas de diagnóstico** janela, clique em **depurar / Windows / eventos do IntelliTrace**.  
   
-3.  Alterne para o **chamadas** guia.  
+3. Alterne para o **chamadas** guia.  
   
      Agora você vê chamadas de função do seu aplicativo, começando com a chamada de raiz (na solução atual, o ponto de entrada principal) e terminando com o local em que a execução interrompida.  
   

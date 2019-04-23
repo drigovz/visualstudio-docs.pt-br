@@ -6,12 +6,12 @@ ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
 caps.latest.revision: 6
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f1a4f38224c31862f44e7d1d09578325ccc710bd
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: fe8e54876f5b2ab3eda5c1bd8d35f0b0d0c788b2
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58926873"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057739"
 ---
 # <a name="vsix-color-editor"></a>Editor de cores do VSIX
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,13 +28,13 @@ A ferramenta Editor de cores de extensão do Visual Studio pode criar e editar c
   
  Um token de cor é composto por quatro elementos:  
   
--   **Nome da categoria:** Um agrupamento lógico de um conjunto de cores. Use um nome de categoria existente se já houver cores que são específicas para o elemento desejado da interface do usuário ou grupo de elementos de interface do usuário.  
+- **Nome da categoria:** Um agrupamento lógico de um conjunto de cores. Use um nome de categoria existente se já houver cores que são específicas para o elemento desejado da interface do usuário ou grupo de elementos de interface do usuário.  
   
--   **Nome do token:** Define um nome descritivo para a cor de token e o token. Conjuntos incluem plano de fundo e nomes de token de primeiro plano (texto), bem como todos os seus estados e eles devem ser nomeados para que seja fácil identificar os pares e os estados que elas se aplicam.  
+- **Nome do token:** Define um nome descritivo para a cor de token e o token. Conjuntos incluem plano de fundo e nomes de token de primeiro plano (texto), bem como todos os seus estados e eles devem ser nomeados para que seja fácil identificar os pares e os estados que elas se aplicam.  
   
--   **Valores de cor (ou matizes):** Necessário para cada tema colorido. Sempre crie plano de fundo e texto cor valores em pares. As cores são combinadas para plano de fundo/primeiro plano para que a cor do texto (primeiro plano) é sempre legível em relação a cor do plano de fundo no qual ela é desenhada. Essas cores são vinculados e serão usadas juntas na interface do usuário. Se o plano de fundo não se destina para uso com o texto, não defina uma cor de primeiro plano.  
+- **Valores de cor (ou matizes):** Necessário para cada tema colorido. Sempre crie plano de fundo e texto cor valores em pares. As cores são combinadas para plano de fundo/primeiro plano para que a cor do texto (primeiro plano) é sempre legível em relação a cor do plano de fundo no qual ela é desenhada. Essas cores são vinculados e serão usadas juntas na interface do usuário. Se o plano de fundo não se destina para uso com o texto, não defina uma cor de primeiro plano.  
   
--   **Nome de cor do sistema:** Para uso em exibições de alto contraste.  
+- **Nome de cor do sistema:** Para uso em exibições de alto contraste.  
   
 ## <a name="how-to-use-the-tool"></a>Como usar a ferramenta  
  Tanto quanto possível, e quando apropriado, as cores existentes do Visual Studio devem ser reutilizadas em vez de fazer novos. No entanto, para casos em que nenhuma cores apropriadas são definidas, cores personalizadas devem ser criadas para manter um tema de extensão compatível.  

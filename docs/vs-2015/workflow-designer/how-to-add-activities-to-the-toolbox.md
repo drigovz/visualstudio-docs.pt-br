@@ -9,23 +9,23 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 52f9fabec46fb04f2cc936c7bf76d67bd2dabcd3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c5edf728df10d2418c4a3341fd54e4115439cc4a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929407"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055165"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Como: Adicionar atividades à caixa de ferramentas
 As atividades podem ser adicionadas para o **caixa de ferramentas** em sua solução de várias maneiras diferentes. Você pode adicioná-los do seu projeto atual, referênciá-los de um projeto diferente, ou referênciá-los de um conjunto diferente.  
   
 ### <a name="to-add-an-activity-from-within-your-current-project"></a>Para adicionar uma atividade do seu projeto atual  
   
-1.  Adicionar uma nova atividade personalizado ao seu projeto atual de fluxo de trabalho. [!INCLUDE[crabout](../includes/crabout-md.md)] Adicionar uma nova atividade personalizado ao seu projeto, consulte [como: Adicionar um novo Item a um projeto de fluxo de trabalho](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).  
+1. Adicionar uma nova atividade personalizado ao seu projeto atual de fluxo de trabalho. [!INCLUDE[crabout](../includes/crabout-md.md)] Adicionar uma nova atividade personalizado ao seu projeto, consulte [como: Adicionar um novo Item a um projeto de fluxo de trabalho](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md).  
   
-2.  Adicione lógica personalizada para a atividade.  
+2. Adicione lógica personalizada para a atividade.  
   
-3.  Compile o projeto. Se o build foi bem-sucedido, uma nova categoria na **caixa de ferramentas** denominado "\<*nome do projeto*>" com a atividade personalizado incluída na categoria é exibida.  
+3. Compile o projeto. Se o build foi bem-sucedido, uma nova categoria na **caixa de ferramentas** denominado "\<*nome do projeto*>" com a atividade personalizado incluída na categoria é exibida.  
   
     > [!NOTE]
     >  Se a caixa de ferramentas é reiniciada, as atividades personalizados serão removidas, mesmo se a solução é compilado novamente. Para preencher novamente a caixa de ferramentas com atividades personalizados depois que redefinido, reinicie [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
@@ -38,25 +38,25 @@ As atividades podem ser adicionadas para o **caixa de ferramentas** em sua solu�
   
 ### <a name="to-add-an-activity-from-within-a-different-project"></a>Para adicionar uma atividade de dentro de um projeto diferente  
   
-1.  Abra uma solução que contém pelo menos um projeto de fluxo de trabalho e um projeto personalizado de biblioteca de atividade ou outro projeto de fluxo de trabalho que define uma atividade personalizado.  
+1. Abra uma solução que contém pelo menos um projeto de fluxo de trabalho e um projeto personalizado de biblioteca de atividade ou outro projeto de fluxo de trabalho que define uma atividade personalizado.  
   
-2.  Criar ambos os projetos. Se as compilações foram bem-sucedidas, uma nova categoria na **caixa de ferramentas** denominado "\<*nome do projeto*>" com a atividade personalizado incluída na categoria é exibida.  
+2. Criar ambos os projetos. Se as compilações foram bem-sucedidas, uma nova categoria na **caixa de ferramentas** denominado "\<*nome do projeto*>" com a atividade personalizado incluída na categoria é exibida.  
   
 ### <a name="to-add-an-activity-to-the-toolbox-from-an-assembly"></a>Para adicionar uma atividade à caixa de ferramentas de um assembly  
   
-1.  Abra uma solução de fluxo de trabalho.  
+1. Abra uma solução de fluxo de trabalho.  
   
-2.  Dos **ferramentas** menu, selecione **escolher itens da caixa de ferramentas...** .  
+2. Dos **ferramentas** menu, selecione **escolher itens da caixa de ferramentas...** .  
   
-3.  No **Choose Toolbox Items** caixa de diálogo, selecione o **componentes de System. Activities** guia e clique em **procurar...** para navegar até o assembly que contém a atividade personalizada que você deseja adicionar.  
+3. No **Choose Toolbox Items** caixa de diálogo, selecione o **componentes de System. Activities** guia e clique em **procurar...** para navegar até o assembly que contém a atividade personalizada que você deseja adicionar.  
   
-4.  Selecione o assembly e clique em **Okey**. O componente personalizado de atividade é adicionado à lista de componentes e automaticamente selecionado.  
+4. Selecione o assembly e clique em **Okey**. O componente personalizado de atividade é adicionado à lista de componentes e automaticamente selecionado.  
   
-    1.  Clique em **Okey** para fechar a caixa de diálogo.  
+    1. Clique em **Okey** para fechar a caixa de diálogo.  
   
-5.  Para exibir a caixa de ferramentas, selecione **caixa de ferramentas** da **exibição** menu.  
+5. Para exibir a caixa de ferramentas, selecione **caixa de ferramentas** da **exibição** menu.  
   
-6.  A atividade personalizada é exibida na **caixa de ferramentas** sob a categoria que estava em foco antes que o item foi adicionado. Por exemplo, se o **geral** selecionada na categoria a **caixa de ferramentas** antes de adicionar o item de caixa de ferramentas, a atividade aparece sob o **geral** categoria.  
+6. A atividade personalizada é exibida na **caixa de ferramentas** sob a categoria que estava em foco antes que o item foi adicionado. Por exemplo, se o **geral** selecionada na categoria a **caixa de ferramentas** antes de adicionar o item de caixa de ferramentas, a atividade aparece sob o **geral** categoria.  
   
 ## <a name="see-also"></a>Consulte também  
  [Usando o Designer de Fluxo de Trabalho](../workflow-designer/using-the-workflow-designer.md)

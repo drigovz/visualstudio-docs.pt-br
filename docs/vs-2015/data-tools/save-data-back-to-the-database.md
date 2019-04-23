@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2358e177f049d9eda17bcb54baf6a547605419c
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: b0489dec1c2d6cb3d7559a2bdd029ccab6c3ce5f
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653093"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056803"
 ---
 # <a name="save-data-back-to-the-database"></a>Salvar dados novamente no banco de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -249,11 +249,11 @@ Processo de atualização de dois estágios e a função do DataRowVersion em um
   
  Para a segunda linha, no entanto, o `Update` método automaticamente chama o comando de dados correto e transmite para o banco de dados. A sintaxe específica da instrução SQL depende do dialeto do SQL que é compatível com o armazenamento de dados subjacente. Mas as seguintes características gerais da instrução SQL transmitida digno de nota:  
   
--   A instrução SQL transmitida é uma instrução UPDATE. O adaptador sabe para usar uma instrução UPDATE porque o valor da <xref:System.Data.DataRow.RowState%2A> é de propriedade <xref:System.Data.DataRowState>.  
+- A instrução SQL transmitida é uma instrução UPDATE. O adaptador sabe para usar uma instrução UPDATE porque o valor da <xref:System.Data.DataRow.RowState%2A> é de propriedade <xref:System.Data.DataRowState>.  
   
--   A instrução SQL transmitida inclui uma cláusula WHERE que indica que o destino da instrução UPDATE é a linha onde `CustomerID = 'c400'`. Esta parte da instrução SELECT distingue a linha de destino de todas as outras porque o `CustomerID` é a chave primária da tabela de destino. As informações para a cláusula WHERE é derivada da versão original do registro (`DataRowVersion.Original`), no caso dos valores que são necessárias para identificar a linha foram alterados.  
+- A instrução SQL transmitida inclui uma cláusula WHERE que indica que o destino da instrução UPDATE é a linha onde `CustomerID = 'c400'`. Esta parte da instrução SELECT distingue a linha de destino de todas as outras porque o `CustomerID` é a chave primária da tabela de destino. As informações para a cláusula WHERE é derivada da versão original do registro (`DataRowVersion.Original`), no caso dos valores que são necessárias para identificar a linha foram alterados.  
   
--   A instrução SQL transmitida inclui a cláusula SET, para definir os novos valores das colunas modificadas.  
+- A instrução SQL transmitida inclui a cláusula SET, para definir os novos valores das colunas modificadas.  
   
     > [!NOTE]
     >  Se o TableAdapter `UpdateCommand` propriedade foi definida para o nome de um procedimento armazenado, o adaptador não constrói uma instrução SQL. Em vez disso, ele chama o procedimento armazenado com os parâmetros apropriados passados.  

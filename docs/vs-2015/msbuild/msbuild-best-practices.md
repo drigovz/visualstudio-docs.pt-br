@@ -12,19 +12,19 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6973e905a0587ffdc7cbd0a401e03f933fc60a3a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: e597b10913ad495193545ab304b3b324d8f66b41
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662200"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043415"
 ---
 # <a name="msbuild-best-practices"></a>Práticas recomendadas do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Recomendamos as seguintes práticas recomendadas para escrever scripts MSBuild:  
   
--   Os valores de propriedade padrão são mais facilmente tratados usando o atributo `Condition` e não declarando uma propriedade cujo valor padrão pode ser substituído na linha de comando. Por exemplo, use  
+- Os valores de propriedade padrão são mais facilmente tratados usando o atributo `Condition` e não declarando uma propriedade cujo valor padrão pode ser substituído na linha de comando. Por exemplo, use  
   
      `<MyProperty Condition="$(MyProperty)" == ''>`  
   
@@ -32,7 +32,7 @@ Recomendamos as seguintes práticas recomendadas para escrever scripts MSBuild:
   
      `</MyProperty>`  
   
--   Evite curingas ao selecionar itens. Em vez disso, especifique os arquivos explicitamente. Isso torna mais fácil controlar os erros que podem ocorrer quando você adiciona ou exclui arquivos.  
+- Evite curingas ao selecionar itens. Em vez disso, especifique os arquivos explicitamente. Isso torna mais fácil controlar os erros que podem ocorrer quando você adiciona ou exclui arquivos.  
   
 ## <a name="see-also"></a>Consulte também  
  [Conceitos avançados](../msbuild/msbuild-advanced-concepts.md)

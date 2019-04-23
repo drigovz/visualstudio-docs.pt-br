@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be8d42a5a4557b39a02e724eb54b5434c1b454ea
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: HT
+ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59659963"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055256"
 ---
 # <a name="how-to-use-xml-snippets"></a>Como: Usar snippets XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,46 +31,46 @@ Você pode chamar snippets XML usando os dois seguintes comandos no menu de atal
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Para inserir snippets do menu de atalho  
   
-1.  Posicionar o cursor onde você deseja inserir o snippet XML.  
+1. Posicionar o cursor onde você deseja inserir o snippet XML.  
   
-2.  Clique com botão direito e selecione **Inserir trecho de código**.  
+2. Clique com botão direito e selecione **Inserir trecho de código**.  
   
      Uma lista de snippets disponíveis XML é exibida.  
   
-3.  Selecione um snippet de lista usando o mouse, ou digitando o nome do snippet e pressionando TAB ou ENTER.  
+3. Selecione um snippet de lista usando o mouse, ou digitando o nome do snippet e pressionando TAB ou ENTER.  
   
 #### <a name="to-insert-snippets-using-the-intellisense-menu"></a>Para inserir snippets usando o menu do IntelliSense  
   
-1.  Posicionar o cursor onde você deseja inserir o snippet XML.  
+1. Posicionar o cursor onde você deseja inserir o snippet XML.  
   
-2.  Dos **edite** , aponte para **IntelliSense**e, em seguida, selecione **Inserir trecho de código**.  
+2. Dos **edite** , aponte para **IntelliSense**e, em seguida, selecione **Inserir trecho de código**.  
   
      Uma lista de snippets disponíveis XML é exibida.  
   
-3.  Selecione um snippet de lista usando o mouse ou digitando o nome do snippet e pressionando TAB ou ENTRE-O.  
+3. Selecione um snippet de lista usando o mouse ou digitando o nome do snippet e pressionando TAB ou ENTRE-O.  
   
 #### <a name="to-insert-snippets-through-the-intellisense-complete-word-list"></a>Para inserir snippets com o IntelliSense concluir a lista de palavras  
   
-1.  Posicionar o cursor onde você deseja inserir o snippet XML.  
+1. Posicionar o cursor onde você deseja inserir o snippet XML.  
   
-2.  Comece a digitar o snippet XML que você deseja adicionar ao seu arquivo. Se o preenchimento automático é ativada, a lista de palavras completo do IntelliSense é exibida. Se não for exibido, para pressionar CTRL+BARRA DE ESPAÇOS para ativar-lo.  
+2. Comece a digitar o snippet XML que você deseja adicionar ao seu arquivo. Se o preenchimento automático é ativada, a lista de palavras completo do IntelliSense é exibida. Se não for exibido, para pressionar CTRL+BARRA DE ESPAÇOS para ativar-lo.  
   
-3.  Selecione o snippet XML da lista de palavras completo.  
+3. Selecione o snippet XML da lista de palavras completo.  
   
-4.  Pressione a tecla TAB, TAB para invocar o snippet XML.  
+4. Pressione a tecla TAB, TAB para invocar o snippet XML.  
   
 > [!NOTE]
 >  Pode haver casos quando o snippet XML não é chamado. Por exemplo, se você tentar inserir um elemento de `xs:complexType` dentro de um nó de `xs:element` , o editor não gerencia um snippet XML. Quando um elemento de `xs:complexType` é usado dentro de um nó de `xs:element` , não houver nenhum atributo ou subelements necessário, o editor não tem nenhum dados para inserir.  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>Para inserir snippets usando o nome do atalho  
   
-1.  Posicionar o cursor onde você deseja inserir o snippet XML.  
+1. Posicionar o cursor onde você deseja inserir o snippet XML.  
   
-2.  Tipo `<` no painel do editor.  
+2. Tipo `<` no painel do editor.  
   
-3.  Pressione ESC para fechar a lista de palavras completo do IntelliSense.  
+3. Pressione ESC para fechar a lista de palavras completo do IntelliSense.  
   
-4.  Digite o nome do atalho de snippet, e pressione a tecla TAB para invocar o snippet XML.  
+4. Digite o nome do atalho de snippet, e pressione a tecla TAB para invocar o snippet XML.  
   
 ## <a name="surround-with"></a>Envolver com  
  Os procedimentos a seguir descrevem como acessar o **envolver com** comando.  
@@ -80,23 +80,23 @@ Você pode chamar snippets XML usando os dois seguintes comandos no menu de atal
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>Para usar a bordadura com o menu de contexto  
   
-1.  Selecione o texto para colocar no editor XML.  
+1. Selecione o texto para colocar no editor XML.  
   
-2.  Clique com botão direito e selecione **envolver com**.  
+2. Clique com botão direito e selecione **envolver com**.  
   
      Uma lista de bordadura disponíveis com snippets XML é exibida.  
   
-3.  Selecione um snippet de lista usando o mouse, ou digitando o nome do snippet e pressionando TAB ou ENTER.  
+3. Selecione um snippet de lista usando o mouse, ou digitando o nome do snippet e pressionando TAB ou ENTER.  
   
 #### <a name="to-use-surround-with-from-the-intellisense-menu"></a>Para usar a bordadura com um menu do Intellisense  
   
-1.  Selecione o texto para colocar no editor XML.  
+1. Selecione o texto para colocar no editor XML.  
   
-2.  Dos **edite** , aponte para **IntelliSense**e, em seguida, selecione **Surround With**.  
+2. Dos **edite** , aponte para **IntelliSense**e, em seguida, selecione **Surround With**.  
   
      Uma lista de bordadura disponíveis com snippets XML é exibida.  
   
-3.  Selecione um snippet de lista usando o mouse, ou digitando o nome do snippet e pressionando TAB ou ENTER.  
+3. Selecione um snippet de lista usando o mouse, ou digitando o nome do snippet e pressionando TAB ou ENTER.  
   
 ## <a name="using-xml-snippets"></a>Usando snippets XML  
  Uma vez que você escolher um snippet XML, o texto de snippet de código é inserido automaticamente a posição do cursor. Todos os campos editáveis no snippet são realçadas, e o primeiro campo editável é automaticamente selecionado. O campo selecionado é convertido.  

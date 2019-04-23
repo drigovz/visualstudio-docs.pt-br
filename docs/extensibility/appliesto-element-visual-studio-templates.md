@@ -9,12 +9,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 348ddd00d6f6db0ac4080030d2ecaa5b73c57f18
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: f14924ac9464cc6239564f775a122551a9d94c15
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335188"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055191"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>Elemento AppliesTo (modelos do Visual Studio)
 
@@ -60,19 +60,19 @@ Um valor de texto é obrigatório. Esse texto especifica os recursos do projeto.
 
 A sintaxe da expressão válida é definida como:
 
--   A expressão de recurso, como "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
+- A expressão de recurso, como "(VisualC &#124; CSharp) + (MSTest &#124; NUnit)".
 
--   O "&#124;" é o operador OR.
+- O "&#124;" é o operador OR.
 
--   Os caracteres "&" e "+" são operadores AND.
+- O "&" e "+" caracteres são operadores AND.
 
--   O caractere "!" é o operador NOT.
+- O caractere "!" é o operador NOT.
 
--   Parênteses forçam a ordem de precedência de avaliação.
+- Parênteses forçam a ordem de precedência de avaliação.
 
--   Uma expressão nula ou vazia é avaliada como uma correspondência.
+- Uma expressão nula ou vazia é avaliada como uma correspondência.
 
--   Recursos de projeto podem ser qualquer caractere, exceto os caracteres reservados: "' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r
+- Recursos de projeto podem ser qualquer caractere, exceto os caracteres reservados: "' :;,+-*/\\! ~&#124;& %$@^() ={}<> []? \t\b\n\r
 
 ## <a name="example"></a>Exemplo
 

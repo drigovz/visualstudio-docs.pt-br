@@ -29,12 +29,12 @@ caps.latest.revision: 62
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3fca78c684ac30ca09aedf3c1b9547103608a4f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: f0ebd89937eedfc2851c3b57998ef2628f9e8904
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927620"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053293"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar aos processos em execução com o Depurador do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,12 +46,12 @@ Você pode usar esse recurso para depurar aplicativos em execução em um comput
 > [!TIP]
 > Não sabe se é necessário usar **anexar ao processo** para seu cenário de depuração? Ver [comum de cenários de depuração](#BKMK_Scenarios). Se você quiser depurar aplicativos ASP.NET que foi implantado no IIS, consulte [ASP.NET de depuração remota em um computador remoto do IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md).
 
-##  <a name="BKMK_Attach_to_a_running_process"></a> Anexar a um processo em execução no computador local
+## <a name="BKMK_Attach_to_a_running_process"></a> Anexar a um processo em execução no computador local
  Para anexar a um processo, você deve saber o nome do processo (consulte [comum de cenários de depuração](#BKMK_Scenarios) para alguns nomes comuns do processo).
 
-1.  No Visual Studio, selecione **depurar / anexar ao processo** (ou pressione **CTRL + ALT + P**).
+1. No Visual Studio, selecione **depurar / anexar ao processo** (ou pressione **CTRL + ALT + P**).
 
-2.  No **anexar ao processo** diálogo caixa, localize o programa que você deseja anexar a partir de **processos disponíveis** lista.
+2. No **anexar ao processo** diálogo caixa, localize o programa que você deseja anexar a partir de **processos disponíveis** lista.
 
      Para selecionar rapidamente o processo que você deseja, digite a primeira letra do nome do processo. Se você não souber o nome do processo, consulte [comum de cenários de depuração](#BKMK_Scenarios).
 
@@ -59,17 +59,17 @@ Você pode usar esse recurso para depurar aplicativos em execução em um comput
 
      Se o processo estiver sendo executado em uma conta de usuário diferente, marque a caixa de seleção **Mostrar processos de todos os usuários**.
 
-3.  No **anexar a** caixa, certifique-se de que o tipo de código que será depurado está listado. O padrão **automática** configuração tenta determinar que tipo de código que você deseja depurar. Para definir o tipo de código manualmente, faça o seguinte
+3. No **anexar a** caixa, certifique-se de que o tipo de código que será depurado está listado. O padrão **automática** configuração tenta determinar que tipo de código que você deseja depurar. Para definir o tipo de código manualmente, faça o seguinte
 
-    1.  No **anexar** , clique em **selecione**.
+    1. No **anexar** , clique em **selecione**.
 
-    2.  No **Selecionar tipo de código** caixa de diálogo, clique em **depurar esses tipos de código** e selecione os tipos para depurar.
+    2. No **Selecionar tipo de código** caixa de diálogo, clique em **depurar esses tipos de código** e selecione os tipos para depurar.
 
-    3.  Clique em **OK**.
+    3. Clique em **OK**.
 
-4.  Clique em **Anexar**.
+4. Clique em **Anexar**.
 
-##  <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Anexar a um processo em um computador remoto
+## <a name="BKMK_Attach_to_a_process_on_a_remote_computer"></a> Anexar a um processo em um computador remoto
  Para anexar a um processo, você deve saber o nome do processo (consulte [comum de cenários de depuração](#BKMK_Scenarios) para alguns nomes comuns do processo). Para obter orientação mais completa para aplicativos ASP.NET que foi implantado no IIS, consulte [ASP.NET de depuração remota em um computador remoto do IIS](../debugger/remote-debugging-aspnet-on-a-remote-iis-7-5-computer.md). Para outros aplicativos, você poderá localizar o nome do processo no Gerenciador de tarefas.
 
  Quando você usa o **anexar ao processo** caixa de diálogo, você pode selecionar outro computador que foi configurado para depuração remota. Para obter mais informações, consulte [depuração remota](http://msdn.microsoft.com/library/90f45630-0d26-4698-8c1f-63f85a12db9c). Quando você tiver selecionado um computador remoto, poderá exibir uma lista de processos disponíveis que estão em execução no computador e anexá-la a um ou mais processos para depuração.
@@ -146,7 +146,7 @@ Para cenários de depuração remota, você deve ter o código-fonte (ou uma có
 
 Em alguns cenários de depuração locais, você pode depurar no Visual Studio sem acesso à fonte de se os arquivos de símbolos corretos estão presentes com o aplicativo (por padrão, isso requer uma compilação de depuração). Para obter mais informações, consulte [arquivos de origem e especificar o símbolo](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).
 
-##  <a name="BKMK_Troubleshoot_attach_errors"></a> Solucionar problemas de anexo
+## <a name="BKMK_Troubleshoot_attach_errors"></a> Solucionar problemas de anexo
  Quando o depurador se anexa a um processo em execução, o processo pode conter um ou mais tipos de código. Os tipos de código aos quais o depurador pode se anexar são exibidos e selecionados na caixa de diálogo **Selecionar Tipo de Código**.
 
  Às vezes, o depurador pode ser anexado com êxito a um tipo de código, mas não a outro tipo de código. Isso pode ocorrer se você estiver tentando anexar a um processo que esteja sendo executado em um computador remoto. O computador remoto pode ter componentes de depuração remota instalados para alguns tipos de código mas não para outros. Isso também pode ocorrer se você tentar anexar a dois ou mais processos para depuração direta de banco de dados. A depuração de SQL dá suporte à anexação de apenas um único processo.

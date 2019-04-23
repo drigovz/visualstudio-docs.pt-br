@@ -11,23 +11,23 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 781e1cce1d363ade1d236c8e17f9c3feeb4b0f5c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 745fea2ebaba478d9c405ab51db607e5eb025cc7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913278"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057999"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizando o Gerenciador de Modelos
 Você pode alterar a aparência e comportamento do explorer para o seu designer de linguagem específica do domínio da seguinte maneira:
 
--   Altere o título da janela.
+- Altere o título da janela.
 
--   Altere o ícone de guia.
+- Altere o ícone de guia.
 
--   Altere os ícones para nós.
+- Altere os ícones para nós.
 
--   Oculte nós.
+- Oculte nós.
 
 ## <a name="changing-the-window-title"></a>Alterar o título da janela
  Para alterar o título da janela do explorer gerado, selecione **comportamento do Gerenciador** na **Gerenciador de DSL**e, em seguida, no **propriedades** janela, defina o  **Título** propriedade para o título que você deseja.
@@ -66,25 +66,25 @@ Você pode alterar a aparência e comportamento do explorer para o seu designer 
 
 #### <a name="to-display-a-property"></a>Para exibir uma propriedade
 
-1.  Abra a solução que você criou no procedimento anterior.
+1. Abra a solução que você criou no procedimento anterior.
 
-2.  Certifique-se de que o **comentário** faz referência a apenas uma classe de domínio único, definindo a multiplicidade da função com o nome da propriedade **assuntos** para entre 0 e 1. O nome da propriedade deve se tornar **assunto**, e o nome da relação deve se tornar **CommentReferencesSubject**.
+2. Certifique-se de que o **comentário** faz referência a apenas uma classe de domínio único, definindo a multiplicidade da função com o nome da propriedade **assuntos** para entre 0 e 1. O nome da propriedade deve se tornar **assunto**, e o nome da relação deve se tornar **CommentReferencesSubject**.
 
-3.  No **Gerenciador de DSL**, clique com botão direito **comportamento do Gerenciador** e, em seguida, clique em **adicionar novas configurações do Gerenciador de nó**.
+3. No **Gerenciador de DSL**, clique com botão direito **comportamento do Gerenciador** e, em seguida, clique em **adicionar novas configurações do Gerenciador de nó**.
 
      Uma **ExplorerNodeSettings** nó aparece sob o **configurações personalizadas de nó** nó.
 
-4.  Selecione **ExplorerNodeSettings**e, em seguida, o **propriedades** janela, defina **classe** para **comentário**.
+4. Selecione **ExplorerNodeSettings**e, em seguida, o **propriedades** janela, defina **classe** para **comentário**.
 
-5.  Clique com botão direito do **comentário** nó e clique **adicionar novo caminho de propriedade**.
+5. Clique com botão direito do **comentário** nó e clique **adicionar novo caminho de propriedade**.
 
      Um novo nó aparece chamado **propriedade exibida**.
 
-6.  Selecione **propriedade exibida**e, em seguida, no **propriedades** janela, clique no campo de valor de **caminho para propriedade**. Selecione **comentário**, em seguida, **CommentReferencesSubject**, em seguida, **FlowElement**. O caminho resultante deve se parecer com **CommentReferencesSubject.Subject/! Assunto**.
+6. Selecione **propriedade exibida**e, em seguida, no **propriedades** janela, clique no campo de valor de **caminho para propriedade**. Selecione **comentário**, em seguida, **CommentReferencesSubject**, em seguida, **FlowElement**. O caminho resultante deve se parecer com **CommentReferencesSubject.Subject/! Assunto**.
 
-7.  No campo de valor de **propriedade**, selecione **nome**.
+7. No campo de valor de **propriedade**, selecione **nome**.
 
-8.  Transformar todos os modelos e, em seguida, compilar e executar sua solução.
+8. Transformar todos os modelos e, em seguida, compilar e executar sua solução.
 
 9. No designer gerado, abra o diagrama de exemplo.
 
@@ -97,17 +97,17 @@ Você pode alterar a aparência e comportamento do explorer para o seu designer 
 
 #### <a name="to-hide-an-explorer-node"></a>Para ocultar um nó no explorer
 
-1.  Abra a solução que você criou no procedimento anterior.
+1. Abra a solução que você criou no procedimento anterior.
 
-2.  No **Gerenciador de DSL**, clique com botão direito **Explorer comportamento** e, em seguida, clique em **adicionar novo caminho de domínio**.
+2. No **Gerenciador de DSL**, clique com botão direito **Explorer comportamento** e, em seguida, clique em **adicionar novo caminho de domínio**.
 
      Um **caminho de domínio** nó aparece sob **de nós ocultos**.
 
-3.  Selecione **caminho de domínio**e, em seguida, no **propriedades** janela, clique no campo de valor de **definição de caminho**. Selecione **grafos**, em seguida, **FlowGraphHasComments**. O caminho resultante deve se parecer com **FlowGraphHasComments.Comments**
+3. Selecione **caminho de domínio**e, em seguida, no **propriedades** janela, clique no campo de valor de **definição de caminho**. Selecione **grafos**, em seguida, **FlowGraphHasComments**. O caminho resultante deve se parecer com **FlowGraphHasComments.Comments**
 
-4.  Transformar todos os modelos e, em seguida, compilar e executar sua solução.
+4. Transformar todos os modelos e, em seguida, compilar e executar sua solução.
 
-5.  No designer gerado, abra o diagrama de exemplo.
+5. No designer gerado, abra o diagrama de exemplo.
 
      O explorer deverá mostrar somente um **atores** nó e não deve mostrar a **comentários** nó.
 

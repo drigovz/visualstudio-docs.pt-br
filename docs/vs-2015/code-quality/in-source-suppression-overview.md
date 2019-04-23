@@ -12,19 +12,19 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: b7f0b3ef2b680dbe4675ef6e8875ef30a1f210bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928482"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057154"
 ---
 # <a name="in-source-suppression-overview"></a>Visão geral de supressão na origem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Supressão do código-fonte é a capacidade para suprimir ou ignorar violações de análise de código em código gerenciado, adicionando a **SuppressMessage** de atributo para os segmentos de código que fazem com que as violações. O **SuppressMessage** é um atributo condicional que está incluído nos metadados de IL do seu assembly de código gerenciado somente se o símbolo de compilação CODE_ANALYSIS for definido em tempo de compilação.  
   
- No C + + / CLI, use as macros CA_SUPPRESS_MESSAGE ou CA_GLOBAL_SUPPRESS_MESSAGE no arquivo de cabeçalho, para adicionar o atributo.  
+ No C++/CLI, use as macros CA_SUPPRESS_MESSAGE ou CA_GLOBAL_SUPPRESS_MESSAGE no arquivo de cabeçalho, para adicionar o atributo.  
   
  Você não deve usar supressões de código-fonte em builds de versão para impedir que os metadados de supressão na origem de envio acidentalmente. Devido ao custo de processamento de supressão de código-fonte, o desempenho do seu aplicativo também pode ser degradado, incluindo os metadados de supressão na origem.  
   
@@ -54,27 +54,27 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
   
  Sendo que:  
   
--   **Categoria de regra** -a categoria na qual a regra é definida. Para obter mais informações sobre categorias de regras de análise de código, consulte [análise de código para avisos de código gerenciado](../code-quality/code-analysis-for-managed-code-warnings.md).  
+- **Categoria de regra** -a categoria na qual a regra é definida. Para obter mais informações sobre categorias de regras de análise de código, consulte [análise de código para avisos de código gerenciado](../code-quality/code-analysis-for-managed-code-warnings.md).  
   
--   **Id da regra** -o identificador da regra. O suporte inclui tanto um nome curto e longo para o identificador de regra. O nome curto é CAXXXX; o nome longo é CAXXXX:FriendlyTypeName.  
+- **Id da regra** -o identificador da regra. O suporte inclui tanto um nome curto e longo para o identificador de regra. O nome curto é CAXXXX; o nome longo é CAXXXX:FriendlyTypeName.  
   
--   **Justificação** -o texto que é usado para documentar o motivo para suprimir a mensagem.  
+- **Justificação** -o texto que é usado para documentar o motivo para suprimir a mensagem.  
   
--   **Id da mensagem** -identificador exclusivo de um problema para cada mensagem.  
+- **Id da mensagem** -identificador exclusivo de um problema para cada mensagem.  
   
--   **Escopo** -o de destino no qual o aviso está sendo suprimido. Se o destino não for especificado, ele é definido como o destino do atributo. Escopos com suporte incluem o seguinte:  
+- **Escopo** -o de destino no qual o aviso está sendo suprimido. Se o destino não for especificado, ele é definido como o destino do atributo. Escopos com suporte incluem o seguinte:  
   
-    -   Módulo  
+    - Módulo  
   
-    -   Namespace  
+    - Namespace  
   
-    -   Recurso  
+    - Recurso  
   
-    -   Tipo  
+    - Tipo  
   
-    -   Membro  
+    - Membro  
   
--   **Destino** – um identificador que é usado para especificar o destino no qual o aviso está sendo suprimido. Ele deve conter um nome totalmente qualificado de item.  
+- **Destino** – um identificador que é usado para especificar o destino no qual o aviso está sendo suprimido. Ele deve conter um nome totalmente qualificado de item.  
   
 ## <a name="suppressmessage-usage"></a>Uso de SuppressMessage  
  Avisos da análise de código são suprimidos no nível ao qual uma instância das **SuppressMessage** atributo é aplicado. O objetivo é acoplar rigidamente as informações de supressão para o código onde ocorre a violação.  

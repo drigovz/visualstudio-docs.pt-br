@@ -23,12 +23,12 @@ caps.latest.revision: 55
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 48d6849a6656f5914d11250e26681e208cdb7487
-ms.sourcegitcommit: b7f25ae08e45fcaa84a84276b588cf6799cc7620
+ms.openlocfilehash: e344fa63a9778d0db45ceeb0e313faa4c6448241
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57567209"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60057090"
 ---
 # <a name="managing-references-in-a-project"></a>Gerenciando referências em um projeto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,15 +41,15 @@ Antes de escrever código em um componente externo ou um serviço conectado, o p
   
  É possível fazer uma referência aos seguintes tipos de componentes/serviços:  
   
--   Referências de aplicativo da Windows Store  
+- Referências de aplicativo da Windows Store  
   
--   Bibliotecas de classes ou assemblies do .NET Framework  
+- Bibliotecas de classes ou assemblies do .NET Framework  
   
--   componentes COM  
+- componentes COM  
   
--   Outros assemblies ou bibliotecas de classes de projetos na mesma solução  
+- Outros assemblies ou bibliotecas de classes de projetos na mesma solução  
   
--   Serviços Web XML  
+- Serviços Web XML  
   
 ## <a name="windows-store-app-references"></a>Referências de aplicativo da Windows Store  
   
@@ -63,9 +63,9 @@ Antes de escrever código em um componente externo ou um serviço conectado, o p
   
  Se você determinar que não há suporte para o SDK de Extensão que está sendo referenciado pelo aplicativo, é necessário realizar as seguintes etapas:  
   
-1.  Observe o nome do projeto que está causando o erro. A plataforma de destino do projeto é indicada entre parênteses ao lado do nome do projeto. Por exemplo, **MyProjectName (Windows 8.1)** significa que o projeto **MyProjectName** se destina à versão da plataforma [!INCLUDE[win81](../includes/win81-md.md)].  
+1. Observe o nome do projeto que está causando o erro. A plataforma de destino do projeto é indicada entre parênteses ao lado do nome do projeto. Por exemplo, **MyProjectName (Windows 8.1)** significa que o projeto **MyProjectName** se destina à versão da plataforma [!INCLUDE[win81](../includes/win81-md.md)].  
   
-2.  Acesse o site do fornecedor que é proprietário do SDK de Extensão sem suporte e instale a versão do SDK de Extensão com dependências que são compatíveis com a versão da plataforma de destino do projeto.  
+2. Acesse o site do fornecedor que é proprietário do SDK de Extensão sem suporte e instale a versão do SDK de Extensão com dependências que são compatíveis com a versão da plataforma de destino do projeto.  
   
     > [!NOTE]
     >  Uma maneira de descobrir se um SDK de Extensão tem dependências em outros SDKs de Extensão é reiniciar o Visual Studio, criar um novo projeto do C# da Windows Store, clicar com o botão direito do mouse no projeto e escolher **Adicionar Referência**, acessar a guia **Windows**, acessar a subguia **Extensões**, selecionar o SDK de Extensão e examinar o painel direito no **Gerenciador de Referências**. Se ele tiver dependências, elas serão listadas no painel.  
@@ -73,20 +73,20 @@ Antes de escrever código em um componente externo ou um serviço conectado, o p
     > [!IMPORTANT]
     >  Se o projeto tiver como destino o Windows 10 e o SDK de Extensão instalado na etapa anterior tiver uma dependência do Pacote de Tempo de Execução do Microsoft Visual C++, a versão do Pacote de Tempo de Execução do Microsoft Visual C++ compatível com o Windows 10 será v14.0 e ela será instalada com o Visual Studio 2015.  
   
-3.  Se o SDK de Extensão instalado na etapa anterior tiver dependências de outros SDKs de Extensão, acesse os sites dos fornecedores proprietários das dependências e instale as versões dessas dependências compatíveis com a versão da plataforma de destino do projeto.  
+3. Se o SDK de Extensão instalado na etapa anterior tiver dependências de outros SDKs de Extensão, acesse os sites dos fornecedores proprietários das dependências e instale as versões dessas dependências compatíveis com a versão da plataforma de destino do projeto.  
   
-4.  Reinicie o Visual Studio e abra o aplicativo.  
+4. Reinicie o Visual Studio e abra o aplicativo.  
   
-5.  Clique com o botão direito do mouse no nó **Referências** do projeto que causou o erro e escolha **Adicionar Referência**  
+5. Clique com o botão direito do mouse no nó **Referências** do projeto que causou o erro e escolha **Adicionar Referência**  
   
-6.  Clique na guia **Windows** e, em seguida, na subguia **Extensões**. Depois, desmarque as caixas de seleção dos SDKs de Extensão antigos e marque as caixas de seleção dos novos SDKs de Extensão. Clique em **OK**.  
+6. Clique na guia **Windows** e, em seguida, na subguia **Extensões**. Depois, desmarque as caixas de seleção dos SDKs de Extensão antigos e marque as caixas de seleção dos novos SDKs de Extensão. Clique em **OK**.  
   
 ## <a name="adding-a-reference-at-design-time"></a>Adicionando uma referência em tempo de design  
  Ao fazer uma referência a um assembly no projeto, o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pesquisa o assembly nos seguintes locais:  
   
--   O diretório atual do projeto. (É possível encontrar esses assemblies usando a guia **Procurar**.)  
+- O diretório atual do projeto. (É possível encontrar esses assemblies usando a guia **Procurar**.)  
   
--   Outros diretórios do projeto na mesma solução. (É possível encontrar esses assemblies na guia **Projetos**.)  
+- Outros diretórios do projeto na mesma solução. (É possível encontrar esses assemblies na guia **Projetos**.)  
   
 > [!NOTE]
 >  Todos os projetos contêm uma referência implícita a mscorlib. Os projetos do Visual Basic contêm uma referência implícita a `Microsoft.VisualBasic`.  

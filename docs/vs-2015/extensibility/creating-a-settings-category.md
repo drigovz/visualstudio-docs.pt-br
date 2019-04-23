@@ -10,12 +10,12 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d73acf8f46966cd0de9eb779acb5a5c53ad4e329
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 04151a6fd3b934dd39e795cafc375974ac5a6b33
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928444"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043660"
 ---
 # <a name="creating-a-settings-category"></a>Criar uma categoria de configurações
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Neste passo a passo, você cria uma categoria de configurações do Visual Studi
   
 #### <a name="to-create-a-settings-category"></a>Para criar uma categoria de configurações  
   
-1.  Conclua o [criando uma página de opções](../extensibility/creating-an-options-page.md).  
+1. Conclua o [criando uma página de opções](../extensibility/creating-an-options-page.md).  
   
-2.  Abra o arquivo VSPackage.resx e adicionar esses recursos de cadeia de caracteres de três:  
+2. Abra o arquivo VSPackage.resx e adicionar esses recursos de cadeia de caracteres de três:  
   
     |Nome|Valor|  
     |----------|-----------|  
@@ -49,7 +49,7 @@ Neste passo a passo, você cria uma categoria de configurações do Visual Studi
     > [!NOTE]
     >  Esses três, apenas o nome da categoria não aparece no Assistente para importar e exportar configurações.  
   
-3.  No MyToolsOptionsPackage.cs, adicione uma `float` propriedade nomeada `OptionFloat` para o `OptionPageGrid` de classe, conforme mostrado no exemplo a seguir.  
+3. No MyToolsOptionsPackage.cs, adicione uma `float` propriedade nomeada `OptionFloat` para o `OptionPageGrid` de classe, conforme mostrado no exemplo a seguir.  
   
     ```csharp  
     public class OptionPageGrid : DialogPage  
@@ -79,39 +79,39 @@ Neste passo a passo, você cria uma categoria de configurações do Visual Studi
     > [!NOTE]
     >  O `OptionPageGrid` categoria chamada "My Category" agora consiste em duas propriedades, `OptionInteger` e `OptionFloat`.  
   
-4.  Adicionar um <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> para o `MyToolsOptionsPackage` de classe e dê a ele CategoryName "My Category", dê a ele o ObjectName "My Settings" e defina isToolsOptionPage como true. Defina o categoryResourceID, objectNameResourceID e DescriptionResourceID para o recurso de cadeia de caracteres correspondente que IDs criadas anteriormente.  
+4. Adicionar um <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> para o `MyToolsOptionsPackage` de classe e dê a ele CategoryName "My Category", dê a ele o ObjectName "My Settings" e defina isToolsOptionPage como true. Defina o categoryResourceID, objectNameResourceID e DescriptionResourceID para o recurso de cadeia de caracteres correspondente que IDs criadas anteriormente.  
   
     ```csharp  
     [ProvideProfileAttribute(typeof(OptionPageGrid),   
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]  
     ```  
   
-5.  Compile o projeto e comece a depuração. Na instância experimental, você deverá ver que **minha grade página** agora tem valores flutuantes e inteiros.  
+5. Compile o projeto e comece a depuração. Na instância experimental, você deverá ver que **minha grade página** agora tem valores flutuantes e inteiros.  
   
 ## <a name="examining-the-settings-file"></a>Examinando o arquivo de configurações  
  Nesta seção, você pode exportar os valores de categoria de propriedade para um arquivo de configurações. Examine o arquivo e, em seguida, importe os valores novamente para a categoria de propriedade.  
   
-1.  Inicie o projeto no modo de depuração, pressionando F5. Isso inicia a instância experimental.  
+1. Inicie o projeto no modo de depuração, pressionando F5. Isso inicia a instância experimental.  
   
-2.  Abra o **Ferramentas / opções** caixa de diálogo.  
+2. Abra o **Ferramentas / opções** caixa de diálogo.  
   
-3.  Na exibição de árvore no painel esquerdo, expanda **My Category** e, em seguida, clique em **minha página de grade**.  
+3. Na exibição de árvore no painel esquerdo, expanda **My Category** e, em seguida, clique em **minha página de grade**.  
   
-4.  Altere o valor de **OptionFloat** para 3.1416 e **OptionInteger** a 12. Clique em **OK**.  
+4. Altere o valor de **OptionFloat** para 3.1416 e **OptionInteger** a 12. Clique em **OK**.  
   
-5.  No menu, **Ferramentas**, clique em **Importar e Exportar Configurações**.  
+5. No menu, **Ferramentas**, clique em **Importar e Exportar Configurações**.  
   
      O **importar e exportar configurações** assistente é exibido.  
   
-6.  Certifique-se **exportar configurações de ambiente selecionadas** está selecionado e, em seguida, clique em **próxima**.  
+6. Certifique-se **exportar configurações de ambiente selecionadas** está selecionado e, em seguida, clique em **próxima**.  
   
      O **escolher configurações para exportar** página será exibida.  
   
-7.  Clique em **minhas configurações**.  
+7. Clique em **minhas configurações**.  
   
      O **descrição** alterações **OptionInteger e OptionFloat**.  
   
-8.  Certifique-se de que **minhas configurações** é a única categoria que está selecionada e, em seguida, clique em **próxima**.  
+8. Certifique-se de que **minhas configurações** é a única categoria que está selecionada e, em seguida, clique em **próxima**.  
   
      O **nome do seu arquivo de configurações** página será exibida.  
   

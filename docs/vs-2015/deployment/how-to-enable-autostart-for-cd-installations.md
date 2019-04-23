@@ -17,12 +17,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6266f487e2e0c66e532297c3fdae3fd3e5498052
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c4bd14060517793d28e24818a051df63efb8f0e0
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925844"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60061093"
 ---
 # <a name="how-to-enable-autostart-for-cd-installations"></a>Como: Habilitar o AutoStart para instalações do CD
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,17 +33,17 @@ Ao implantar uma [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicati
   
 ### <a name="to-enable-autostart"></a>Para habilitar o AutoStart  
   
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.  
   
-2.  Clique o **publicar** guia.  
+2. Clique o **publicar** guia.  
   
-3.  Clique o **opções** botão.  
+3. Clique o **opções** botão.  
   
      O **opções de publicação** caixa de diálogo é exibida.  
   
-4.  Clique em **implantação**.  
+4. Clique em **implantação**.  
   
-5.  Selecione o **instalações para CD, iniciar automaticamente a instalação quando o CD é inserido** caixa de seleção.  
+5. Selecione o **instalações para CD, iniciar automaticamente a instalação quando o CD é inserido** caixa de seleção.  
   
      Um arquivo Autorun será copiado para o local de publicação quando o aplicativo é publicado.  
   

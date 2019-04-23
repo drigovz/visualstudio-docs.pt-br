@@ -22,12 +22,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 821396989a2de9444fdbf3499709588d00e66b45
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.openlocfilehash: 8315a797aec5fcedbf33df6ca96f41879b57d971
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58999853"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054294"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>Depurar aplicativos multithread no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,8 +77,9 @@ Um tour guiado dos recursos de depuração com ênfase nos recursos para [!INCLU
  [Como: Usar a janela de Threads da GPU](../debugger/how-to-use-the-gpu-threads-window.md) examinar e trabalhar com threads que estão em execução no GPU durante a depuração.
 
 ## <a name="related-sections"></a>Seções relacionadas
- [Usando pontos de interrupção](../debugger/using-breakpoints.md)
- -   Use filtros de ponto de interrupção quando você deseja colocar um ponto de interrupção em um segmento individual.
+
+[Usando pontos de interrupção](../debugger/using-breakpoints.md)
+- Use filtros de ponto de interrupção quando você deseja colocar um ponto de interrupção em um segmento individual.
 
 - Os pontos de controle permitem que você rastreie a execução do programa sem interrupções. Isso pode ser útil para estudar problemas, como deadlocks.
 

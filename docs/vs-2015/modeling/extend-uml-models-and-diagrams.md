@@ -12,12 +12,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2c13d30b1657917d55e5d3218c70aa8f2a69ec67
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 917c88056709cfbeb89ce3f19d9c8da9866feb4e
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "58999960"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054599"
 ---
 # <a name="extend-uml-models-and-diagrams"></a>Estender modelos e diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,11 +32,11 @@ Este tópico resume as diferentes maneiras em que você pode estender a ferramen
   
  Para obter mais informações, consulte este vídeo: ![link para vídeo](../data-tools/media/playvideo.gif "PlayVideo")[série MSDN como faço para: Ferramentas UML e extensibilidade](http://go.microsoft.com/fwlink/?LinkId=214467).  
   
-##  <a name="Requirements"></a> Requisitos  
+## <a name="Requirements"></a> Requisitos  
   
--   [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).  
+- [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).  
   
--   [SDK de modelagem para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).  
+- [SDK de modelagem para Visual Studio 2015](http://www.microsoft.com/download/details.aspx?id=48148).  
   
 ## <a name="profiles"></a>Perfis  
  Perfis permitem que você definir estereótipos e propriedades adicionais nos elementos UML.  

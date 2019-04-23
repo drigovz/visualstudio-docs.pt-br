@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f65760d8203ad01e9bab7987435691a8d5acf4b2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: ab88824055b890fcc65424d692dd12500d021712
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928962"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60056476"
 ---
 # <a name="error-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-conflict-with-dependency-39file39"></a>Erro: a dependência &#39;arquivo&#39; no projeto &#39;projeto&#39; não pode ser copiado para o diretório de execução porque ela entraria em conflito com dependência &#39;arquivo&#39;
 Há um conflito entre referências; mais de uma dependência distinta com o mesmo nome de arquivo que está sendo copiado para o diretório bin para a execução do aplicativo. O diretório de execução não é possível resolver o conflito porque nenhuma das dependências são referências primárias.  
@@ -27,11 +27,11 @@ Há um conflito entre referências; mais de uma dependência distinta com o mesm
   
  **Para corrigir este erro**  
   
--   Faça um dos assemblies de referência uma conexão direta do seu projeto. Uma possível desvantagem dessa abordagem é que o assembly que você escolher não é garantido para trabalhar com assemblies que exigem alguma outra versão do assembly referenciado.  
+- Faça um dos assemblies de referência uma conexão direta do seu projeto. Uma possível desvantagem dessa abordagem é que o assembly que você escolher não é garantido para trabalhar com assemblies que exigem alguma outra versão do assembly referenciado.  
   
      \- ou -  
   
--   Certifique-se de que ambas as cópias do assembly são fortes e no cache de assembly global. Isso elimina a necessidade de copiar os assemblies para o diretório bin.  
+- Certifique-se de que ambas as cópias do assembly são fortes e no cache de assembly global. Isso elimina a necessidade de copiar os assemblies para o diretório bin.  
   
 ## <a name="see-also"></a>Consulte também  
  [Gerenciando referências em um projeto](../ide/managing-references-in-a-project.md)   

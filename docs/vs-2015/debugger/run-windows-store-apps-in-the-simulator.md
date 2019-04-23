@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9ceda4b04d5a029066d5594cac7e0a0701b1b4ca
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 61c56636eec92f28468533b7c4d9a51e6f120363
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924007"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60054491"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Executar aplicativos da Windows Store no simulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,17 +35,17 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
 > [!IMPORTANT]
 >  O simulador do Visual Studio 2015 não inclui o botão de localização geográfica. Isso ocorre porque o simulador do Windows 10 não inclui a simulação de localização geográfica. Se você precisar fazer esse tipo de simulação, você pode usar o simulador do Visual Studio 2013 no Windows 8.1 ou sistemas operacionais anteriores.  
   
-##  <a name="BKMK_Set_the_simulator_as_the_target"></a> Definir o simulador como o destino  
+## <a name="BKMK_Set_the_simulator_as_the_target"></a> Definir o simulador como o destino  
  Para executar seu aplicativo da Windows Store no simulador, selecione **simulador** na lista suspensa lista ao lado de **iniciar depuração** botão no depurador **padrão** barra de ferramentas.  
   
  ![Em execução no simulador](../debugger/media/vsrun-f5-simulator.png "VSRUN_F5_Simulator")  
   
-##  <a name="BKMK_Choose_an_interaction_mode"></a> Escolher um modo de interação  
+## <a name="BKMK_Choose_an_interaction_mode"></a> Escolher um modo de interação  
  Você pode escolher os seguintes modos de interação  
   
--   ![Botão de modo do mouse](../debugger/media/simulator-mousemodebtn.png "SIMULATOR_MouseModeBtn") modo do Mouse: define o modo de interação para gestos do mouse. Esses gestos incluem cliques, cliques duplos e arrastos.  
+- ![Botão de modo do mouse](../debugger/media/simulator-mousemodebtn.png "SIMULATOR_MouseModeBtn") modo do Mouse: define o modo de interação para gestos do mouse. Esses gestos incluem cliques, cliques duplos e arrastos.  
   
--   ![Botão de emulação de toque iniciar](../debugger/media/simulator-starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") iniciar emulação de toque: define o modo de interação para gestos de um único dedo com. Os eventos desse tipo incluem tocar, arrastar e passar o dedo.  
+- ![Botão de emulação de toque iniciar](../debugger/media/simulator-starttouchemulationbtn.png "SIMULATOR_StartTouchEmulationBtn") iniciar emulação de toque: define o modo de interação para gestos de um único dedo com. Os eventos desse tipo incluem tocar, arrastar e passar o dedo.  
   
      ![Destino de um dedo Simulator](../debugger/media/simulator-onefinger.png "SIMULATOR_OneFinger") o ícone de alvo único indica o local dos eventos no simulador. Use o mouse para posicionar o ponteiro.  
   
@@ -54,35 +54,35 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
 ## <a name="pinch-and-zoom"></a>Aperto e zoom  
  Defina o modo de interação como sendo gestos de aperto e zoom com dois dedos.  
   
--   ![Destino do simulador dois dedos](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
+- ![Destino do simulador dois dedos](../debugger/media/simulator-twofinger.png "SIMULATOR_TwoFinger")  
   
-     O ícone de alvo duplo indica o local de dois dedos na tela do dispositivo.  
+    - O ícone de alvo duplo indica o local de dois dedos na tela do dispositivo.  
   
-    -   Mova o mouse para posicionar os ícones sobre o objeto na tela do dispositivo.  
+    - Mova o mouse para posicionar os ícones sobre o objeto na tela do dispositivo.  
   
-    -   Gire a roda do mouse para trás ou para a frente a fim de alterar a distância simulada dos dois dedos antes de apertar ou aplicar zoom.  
+    - Gire a roda do mouse para trás ou para a frente a fim de alterar a distância simulada dos dois dedos antes de apertar ou aplicar zoom.  
   
--   -   ![Aperto, zoom e girar destinos](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
+- ![Aperto, zoom e girar destinos](../debugger/media/simulator-twofingerengaged.png "SIMULATOR_TwoFingerEngaged")  
   
-         Pressione o botão esquerdo e gire a roda para trás (na sua direção) a fim de ampliar a exibição (aperto).  
+    - Pressione o botão esquerdo e gire a roda para trás (na sua direção) a fim de ampliar a exibição (aperto).  
   
-    -   Pressione o botão esquerdo e gire a roda do mouse para a frente (afastada de você) a fim de reduzir a exibição (zoom).  
+    - Pressione o botão esquerdo e gire a roda do mouse para a frente (afastada de você) a fim de reduzir a exibição (zoom).  
   
 ## <a name="object-rotation"></a>Rotação de objeto  
  O **rotação da emulação de toque** botão define o modo de interação para gestos de rotação usando dois dedos.  
   
--   -   Mova o mouse para posicionar os ícones sobre o objeto na tela do dispositivo.  
+- Mova o mouse para posicionar os ícones sobre o objeto na tela do dispositivo.  
   
-    -   Gire a roda do mouse para trás ou para frente para alterar a orientação simulada dos dois dedos antes de girar o objeto.  
+    - Gire a roda do mouse para trás ou para frente para alterar a orientação simulada dos dois dedos antes de girar o objeto.  
   
--   -   Pressione o botão esquerdo e gire a roda para trás (na sua direção) a fim de girar o objeto no sentido anti-horário. Conforme você gira a roda do mouse, um dos dois ícones de alvo gira em torno do outro para indicar o tamanho relativo da rotação.  
+- Pressione o botão esquerdo e gire a roda para trás (na sua direção) a fim de girar o objeto no sentido anti-horário. Conforme você gira a roda do mouse, um dos dois ícones de alvo gira em torno do outro para indicar o tamanho relativo da rotação.  
   
-    -   Pressione o botão esquerdo e gire a roda do mouse para a frente (afastada de você) a fim de girar o objeto no sentido horário.  
+    - Pressione o botão esquerdo e gire a roda do mouse para a frente (afastada de você) a fim de girar o objeto no sentido horário.  
   
-##  <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Habilitar ou desabilitar o modo Sempre visível  
+## <a name="BKMK_Enable_or_disable_Always_on_top_mode"></a> Habilitar ou desabilitar o modo Sempre visível  
  Você pode configurar a janela do simulador para ficar sempre por cima das outras janelas. O **alternar janela superior** botão habilita ou desabilita a **sempre visível** modo da janela do simulador.  
   
-##  <a name="BKMK_Change_the_device_orientation"></a> Alterar a orientação do dispositivo  
+## <a name="BKMK_Change_the_device_orientation"></a> Alterar a orientação do dispositivo  
  Você pode alternar a orientação do dispositivo entre retrato e paisagem girando o simulador 90 graus em qualquer direção.  
   
 > [!NOTE]
@@ -91,7 +91,7 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
 > [!NOTE]
 >  Se você gira o simulador de modo que uma borda dele fica maior do que a tela em que ele é exibido, o simulador é automaticamente redimensionado para caber na tela. O simulador não é redimensionado para o tamanho original se você o gira novamente.  
   
-##  <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Alterar o tamanho e a resolução de tela simulados  
+## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Alterar o tamanho e a resolução de tela simulados  
  Para alterar o tamanho e a resolução de tela simulados, escolha o botão **Alterar Resolução** na paleta e escolha um novo tamanho e uma nova resolução na lista.  
   
  O tamanho e a resolução da tela são listados como *Largura da tela em polegadas, largura em pixel X altura em pixel*. Observe que tanto o tamanho como a resolução da tela são simulados. As coordenadas de local no simulador são convertidas nas coordenadas do tamanho e da resolução do dispositivo selecionado.  
@@ -99,19 +99,19 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
 > [!NOTE]
 >  Você pode salvar versões dimensionadas de imagens de bitmap em seu aplicativo, e o Windows carregará a imagem correta para a escala atual. Para obter mais informações, consulte [101 de Design responsivo](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). No entanto, se você alterar a resolução do simulador de modo que o Windows selecione uma imagem diferente para ajustar à resolução, será preciso parar e reiniciar a sessão de depuração para exibir a nova imagem.  
   
-##  <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Uma captura de tela do seu aplicativo para envio para a Windows Store  
+## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Uma captura de tela do seu aplicativo para envio para a Windows Store  
  Quando você envia um aplicativo na app Store do Windows, você deve incluir capturas de tela do aplicativo.  
   
 > [!NOTE]
 >  A captura de tela é salva na resolução atual do simulador. Para alterar a resolução, escolha o botão **Alterar Resolução**.  
   
--   Para criar capturas de tela do aplicativo por meio do simulador, escolha o botão **Capturar tela na área de transferência**.  
+- Para criar capturas de tela do aplicativo por meio do simulador, escolha o botão **Capturar tela na área de transferência**.  
   
--   Para definir o local onde se encontram as capturas de tela, escolha o **configurações de captura de tela** botão e escolha o local no menu de atalho.  
+- Para definir o local onde se encontram as capturas de tela, escolha o **configurações de captura de tela** botão e escolha o local no menu de atalho.  
   
      ![Menu de contexto de configurações de captura de tela](../debugger/media/simulator-screenshotsettingscntxmnu.png "SIMULATOR_ScreenShotSettingsCntxMnu")  
   
-##  <a name="BKMK_Simulate_network_connection_properties"></a> Simular propriedades de conexão de rede  
+## <a name="BKMK_Simulate_network_connection_properties"></a> Simular propriedades de conexão de rede  
  Você pode ajudar os usuários de seu aplicativo a gerenciar o custo de conexões de rede limitadas mantendo a percepção do custo da conexão de rede ou as alterações de status do plano de dados e habilitando o aplicativo para usar essas informações para evitar a cobrança de custos adicionais para roaming ou exceder um limite especificado de transferência de dados. O [Windows.Networking.Connectivity](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.aspx) APIs permitem que você responda aos [NetworkStatusChanged](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.networkstatuschanged.aspx) e [TriggerType](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.background.systemtrigger.triggertype.aspx) eventos que assinar. Confira [Início Rápido: Gerenciando restrições de custo de rede limitada](http://msdn.microsoft.com/library/windows/apps/Hh750310.aspx).  
   
  Para depurar ou testar seu código com reconhecimento de custo de rede, o simulador pode imitar as propriedades de uma rede que são expostas por meio de [ConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.connectionprofile.aspx) objeto retornado por [GetInternetConnectionProfile](https://msdn.microsoft.com/library/windows/apps/windows.networking.connectivity.networkinformation.getinternetconnectionprofile.aspx)...  
@@ -148,7 +148,7 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
   
    [Como disparar suspender, continuar e eventos em aplicativos da Windows Store em segundo plano](http://msdn.microsoft.com/library/windows/apps/hh974425.aspx)  
   
-##  <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Navegar no simulador com o teclado  
+## <a name="BKMK_Navigate_the_simulator_with_the_keyboard"></a> Navegar no simulador com o teclado  
  Você pode navegar a barra de ferramentas do simulador pressionando **CTRL + ALT + seta acima** para alternar o foco da janela do simulador na barra de ferramentas do simulador. Use a **seta para cima** e a **seta para baixo** para navegar entre os botões da barra de ferramentas.  
   
  Você pode desligar o simulador pressionando **CTRL + ALT + F4**.  

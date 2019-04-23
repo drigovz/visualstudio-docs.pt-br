@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 58b8e9bc37cde33a09a06503755f2646cca6f75c
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 2673ed9a69a80b2e9ab9275ff54909e33e4434f4
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55018794"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60059273"
 ---
 # <a name="view-the-call-stack-and-use-the-call-stack-window-in-the-debugger"></a>Exibir a pilha de chamadas e usar a janela pilha de chamadas no depurador
 
@@ -60,7 +60,7 @@ Uma seta amarela identifica o quadro de pilha onde o ponteiro de execução est�
 
 ## <a name="display-non-user-code-in-the-call-stack-window"></a>Exibir o código de não usuário na janela pilha de chamadas
 
--   Clique com o botão direito do mouse na janela **Pilha de Chamadas** e selecione **Mostrar Código Externo**.
+- Clique com o botão direito do mouse na janela **Pilha de Chamadas** e selecione **Mostrar Código Externo**.
 
 Código de não usuário é qualquer código que não é mostrado quando [Just My Code](../debugger/just-my-code.md) está habilitado. No código gerenciado, os quadros de código não-usuário ficam ocultos por padrão. A notação a seguir será exibida no lugar os quadros de código não-usuário:
 
@@ -68,29 +68,29 @@ Código de não usuário é qualquer código que não é mostrado quando [Just M
 
 ## <a name="bkmk_switch"></a> Alternar para outro quadro de pilha (alterar o contexto do depurador)
 
-1.  No **pilha de chamadas** janela, o botão direito do mouse a pilha de quadro cujos código e os dados que você deseja exibir.
+1. No **pilha de chamadas** janela, o botão direito do mouse a pilha de quadro cujos código e os dados que você deseja exibir.
 
     Ou, você pode clicar duas vezes em um quadro do **pilha de chamadas** janela para alternar para quadro.
 
-2.  Selecione **Alternar para Quadro**.
+2. Selecione **Alternar para Quadro**.
 
      Uma seta verde com uma parte final encaracolada aparece ao lado do quadro de pilha que você selecionou. O ponteiro de execução permanece no quadro original, que ainda está marcado com a seta amarela. Se você selecionar **Etapa** ou **Continuar** no menu **Depurar**, a execução continuará no quadro original, não no quadro selecionado.
 
 ## <a name="view-the-source-code-for-a-function-on-the-call-stack"></a>Exibir o código-fonte para uma função na pilha de chamadas
 
--   Na janela **Pilha de Chamadas**, clique com o botão direito do mouse na função cujo código-fonte você deseja ver e selecione **Ir para Código-Fonte**.
+- Na janela **Pilha de Chamadas**, clique com o botão direito do mouse na função cujo código-fonte você deseja ver e selecione **Ir para Código-Fonte**.
 
 ## <a name="run-to-a-specific-function-from-the-call-stack-window"></a>Executar uma função específica da janela pilha de chamadas
 
--  No **pilha de chamadas** janela, selecione a função, clique com botão direito e, em seguida, escolha **executar até o Cursor**.
+- No **pilha de chamadas** janela, selecione a função, clique com botão direito e, em seguida, escolha **executar até o Cursor**.
 
 ## <a name="set-a-breakpoint-on-the-exit-point-of-a-function-call"></a>Defina um ponto de interrupção no ponto de saída de uma chamada de função
 
--   Ver [defina um ponto de interrupção em uma função de pilha de chamada](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
+- Ver [defina um ponto de interrupção em uma função de pilha de chamada](../debugger/using-breakpoints.md#BKMK_Set_a_breakpoint_in_the_call_stack_window).
 
 ## <a name="display-calls-to-or-from-another-thread"></a>Exibe chamadas para ou de outro thread
 
--   Clique com o botão direito do mouse na janela **Pilha de Chamadas** e selecione **Incluir chamadas para/de outros threads**.
+- Clique com o botão direito do mouse na janela **Pilha de Chamadas** e selecione **Incluir chamadas para/de outros threads**.
 
 ## <a name="visually-trace-the-call-stack"></a>Rastrear visualmente a pilha de chamadas
 
@@ -104,11 +104,11 @@ No Visual Studio Enterprise (somente), você pode exibir mapas de código para a
 
 ## <a name="view-the-disassembly-code-for-a-function-on-the-call-stack-c-c-visual-basic-f"></a>Exibir o código de desmontagem para uma função na pilha de chamadas (C#, C++, Visual Basic, F#)
 
--   Na janela **Pilha de Chamadas**, clique com o botão direito do mouse na função cujo código de desmontagem você deseja ver e selecione **Ir para Desmontagem**.
+- Na janela **Pilha de Chamadas**, clique com o botão direito do mouse na função cujo código de desmontagem você deseja ver e selecione **Ir para Desmontagem**.
 
 ## <a name="change-the-optional-information-displayed"></a>Alterar as informações opcionais exibidas
 
--   Clique com botão direito no **pilha de chamadas** janela e defina ou desmarque **mostram \<**  _as informações que você deseja_ **>**.
+- Clique com botão direito no **pilha de chamadas** janela e defina ou desmarque **mostram \<**  _as informações que você deseja_ **>**.
 
 ## <a name="bkmk_symbols"></a> Carregar símbolos para um módulo (C#, C++, Visual Basic, F#)
 
@@ -118,25 +118,25 @@ Confira [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specif
 
 ### <a name="to-load-symbols"></a>Para carregar símbolos
 
-1.  No **pilha de chamadas** janela, o botão direito do mouse quadro da pilha para o qual os símbolos não são carregados. O quadro ficará esmaecido.
+1. No **pilha de chamadas** janela, o botão direito do mouse quadro da pilha para o qual os símbolos não são carregados. O quadro ficará esmaecido.
 
-2.  Aponte para **Load Symbols** e, em seguida, selecione **servidores de símbolo Microsoft** (se disponível), ou navegue até o caminho do símbolo.
+2. Aponte para **Load Symbols** e, em seguida, selecione **servidores de símbolo Microsoft** (se disponível), ou navegue até o caminho do símbolo.
 
 ### <a name="to-set-the-symbol-path"></a>Para definir o caminho do símbolo
 
-1.  Na janela **Pilha de Chamadas**, escolha **Configurações de Símbolo** no menu de atalho.
+1. Na janela **Pilha de Chamadas**, escolha **Configurações de Símbolo** no menu de atalho.
 
      A caixa de diálogo **Opções** abre e a página **Símbolos** é exibida.
 
-2.  Selecione **configurações de símbolo**.
+2. Selecione **configurações de símbolo**.
 
-3.  Na caixa de diálogo **Opções**, clique no ícone da Pasta.
+3. Na caixa de diálogo **Opções**, clique no ícone da Pasta.
 
      Na caixa **Locais do arquivo de símbolo (.pdb)**, um cursor será exibido.
 
-4.  Insira um nome de caminho de diretório para o local do símbolo no computador que você está depurando. Para depuração local e remota, esse é um caminho no computador local.
+4. Insira um nome de caminho de diretório para o local do símbolo no computador que você está depurando. Para depuração local e remota, esse é um caminho no computador local.
 
-5.  Selecione **Okey** para fechar o **opções** caixa de diálogo.
+5. Selecione **Okey** para fechar o **opções** caixa de diálogo.
 
 ## <a name="see-also"></a>Consulte também
 

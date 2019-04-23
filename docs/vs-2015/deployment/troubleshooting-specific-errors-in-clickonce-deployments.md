@@ -20,12 +20,12 @@ caps.latest.revision: 15
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0dd4b04f3ded38717c14503cdc21d4c9433bd23f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 348cb15ebc348d6c0ece5e7118e896cc6a21b23b
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924553"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043190"
 ---
 # <a name="troubleshooting-specific-errors-in-clickonce-deployments"></a>Solução de problemas com erros específicos nas implantações do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,15 +44,15 @@ Este tópico lista os seguintes erros comuns que podem ocorrer quando você impl
 #### <a name="error-message-says-unable-to-retrieve-application-files-missing-in-deployment-or-application-download-has-been-interrupted-check-for-network-errors-and-try-again-later"></a>Mensagem de erro afirma, "não é possível recuperar o aplicativo. Arquivos ausentes na implantação"ou"download do aplicativo foi interrompido, verifique se há erros de rede e tente novamente mais tarde"  
  Esta mensagem indica que um ou mais arquivos que está sendo referenciados pelo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestos não podem ser baixados. A maneira mais fácil para depurar esse erro é tentar baixar a URL que [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] diz que ele não é possível baixar. Aqui estão algumas das possíveis causas:  
   
--   Se o arquivo de log diz "(403) proibido" ou "(404) não é encontrada," Verifique se o servidor Web é configurado para que ele não bloqueia o download deste arquivo. Para obter mais informações, consulte [Problemas de configuração de servidor e cliente em implantações do ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
+- Se o arquivo de log diz "(403) proibido" ou "(404) não é encontrada," Verifique se o servidor Web é configurado para que ele não bloqueia o download deste arquivo. Para obter mais informações, consulte [Problemas de configuração de servidor e cliente em implantações do ClickOnce](../deployment/server-and-client-configuration-issues-in-clickonce-deployments.md).  
   
--   Se o arquivo. config está sendo bloqueado pelo servidor, consulte a seção "Erro de Download quando você tenta instalar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo que tem um arquivo. config" mais adiante neste tópico.  
+- Se o arquivo. config está sendo bloqueado pelo servidor, consulte a seção "Erro de Download quando você tenta instalar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo que tem um arquivo. config" mais adiante neste tópico.  
   
--   Determinar se isso ocorreu porque o `deploymentProvider` URL no manifesto de implantação está apontando para um local diferente que a URL usada para ativação.  
+- Determinar se isso ocorreu porque o `deploymentProvider` URL no manifesto de implantação está apontando para um local diferente que a URL usada para ativação.  
   
--   Certifique-se de que todos os arquivos estão presentes no servidor. o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] log deve informar a qual arquivo não foi encontrado.  
+- Certifique-se de que todos os arquivos estão presentes no servidor. o [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] log deve informar a qual arquivo não foi encontrado.  
   
--   Se houver problemas de conectividade de rede; Você pode receber essa mensagem se o computador cliente ficou offline durante o download.  
+- Se houver problemas de conectividade de rede; Você pode receber essa mensagem se o computador cliente ficou offline durante o download.  
   
 #### <a name="download-error-when-you-try-to-install-a-clickonce-application-that-has-a-config-file"></a>Erro de download quando você tenta instalar um aplicativo ClickOnce que tem um arquivo. config  
  Por padrão, um aplicativo baseado em Windows do Visual Basic inclui um arquivo App. config. Haverá um problema quando um usuário tenta instalar de um servidor Web que usa o Windows Server 2003, porque o sistema operacional bloqueia a instalação de arquivos. config por motivos de segurança. Para habilitar o arquivo. config ser instalado, clique em **usar a extensão de arquivo. Deploy"** na **opções de publicação** caixa de diálogo.  
@@ -67,11 +67,11 @@ Este tópico lista os seguintes erros comuns que podem ocorrer quando você impl
 #### <a name="you-updated-your-application-on-the-server-but-the-client-does-not-download-the-update"></a>Você atualizou seu aplicativo no servidor, mas o cliente não baixa a atualização  
  Esse problema poderá ser resolvido executando uma das seguintes tarefas:  
   
--   Examinar o `deploymentProvider` URL no manifesto de implantação. Certifique-se de que você está atualizando os bits no mesmo local que `deploymentProvider` aponta.  
+- Examinar o `deploymentProvider` URL no manifesto de implantação. Certifique-se de que você está atualizando os bits no mesmo local que `deploymentProvider` aponta.  
   
--   Verifique se o intervalo de atualização no manifesto de implantação. Se esse intervalo é definido para um intervalo periódico, como uma vez a cada seis horas, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] não examinará uma atualização até que esse intervalo tenha passado. Você pode alterar o manifesto para procurar uma atualização sempre que o aplicativo for iniciado. Alterar o intervalo de atualização é uma opção conveniente durante o tempo de desenvolvimento para verificar se estão sendo instaladas atualizações, mas ele desacelera a ativação do aplicativo.  
+- Verifique se o intervalo de atualização no manifesto de implantação. Se esse intervalo é definido para um intervalo periódico, como uma vez a cada seis horas, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] não examinará uma atualização até que esse intervalo tenha passado. Você pode alterar o manifesto para procurar uma atualização sempre que o aplicativo for iniciado. Alterar o intervalo de atualização é uma opção conveniente durante o tempo de desenvolvimento para verificar se estão sendo instaladas atualizações, mas ele desacelera a ativação do aplicativo.  
   
--   Tente reiniciar o aplicativo no menu Iniciar. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pode ter detectado a atualização em segundo plano, mas solicitará que você instale os bits na próxima ativação.  
+- Tente reiniciar o aplicativo no menu Iniciar. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pode ter detectado a atualização em segundo plano, mas solicitará que você instale os bits na próxima ativação.  
   
 #### <a name="during-update-you-receive-an-error-that-has-the-following-log-entry-the-reference-in-the-deployment-does-not-match-the-identity-defined-in-the-application-manifest"></a>Durante a atualização, você recebe um erro com a seguinte entrada de log: "A referência na implantação não coincide com a identidade definida no manifesto do aplicativo"  
  Esse erro pode ocorrer porque você editar manualmente os manifestos de implantação e o aplicativo e ter causado a descrição da identidade de um assembly em um manifesto para que fiquem fora de sincronia com as outras. A identidade de um assembly consiste em seu nome, versão, cultura e token de chave pública. Examine as descrições de identidade em seus manifestos e corrigir quaisquer diferenças.  
@@ -84,9 +84,9 @@ Este tópico lista os seguintes erros comuns que podem ocorrer quando você impl
   
  Você deve fazer o seguinte:  
   
--   Verifique se a identidade do manifesto de implantação, identidade do manifesto de aplicativo e identidade do aplicativo principal EXE são exclusivos.  
+- Verifique se a identidade do manifesto de implantação, identidade do manifesto de aplicativo e identidade do aplicativo principal EXE são exclusivos.  
   
--   Verifique se seus caminhos de arquivo não estão mais de 100 caracteres. Se seu aplicativo contém os caminhos de arquivo que são muito longos, você poderá exceder as limitações do caminho máximo que você pode armazenar. Tente encurtar os caminhos e reinstale.  
+- Verifique se seus caminhos de arquivo não estão mais de 100 caracteres. Se seu aplicativo contém os caminhos de arquivo que são muito longos, você poderá exceder as limitações do caminho máximo que você pode armazenar. Tente encurtar os caminhos e reinstale.  
   
 #### <a name="privatepath-settings-in-application-config-file-are-not-honored"></a>PrivatePath configurações no arquivo de configuração de aplicativo não são consideradas  
  Para usar PrivatePath (caminhos de investigação do Fusion), o aplicativo deve solicitar permissão de confiança total. Tente alterar o manifesto do aplicativo para solicitar confiança total e, em seguida, tente novamente.  
@@ -115,9 +115,9 @@ Este tópico lista os seguintes erros comuns que podem ocorrer quando você impl
 #### <a name="you-tried-to-sign-with-a-certificate-in-your-certificate-store-and-a-received-blank-message-box"></a>Você tentou entrar com um certificado no repositório de certificados e uma caixa de mensagem em branco recebidos  
  No **Signing** caixa de diálogo, você deve:  
   
--   Selecione **assinar com um certificado armazenado**, e  
+- Selecione **assinar com um certificado armazenado**, e  
   
--   Selecione um certificado da lista; o primeiro certificado não é a seleção padrão.  
+- Selecione um certificado da lista; o primeiro certificado não é a seleção padrão.  
   
 #### <a name="clicking-the-dont-sign-button-causes-an-exception"></a>Clicar no botão "Entrar não" faz com que uma exceção  
  Esse problema é um bug conhecido. Todos os [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestos são necessários a serem assinados. Basta selecionar uma das opções de assinatura e, em seguida, clique em **Okey**.  

@@ -11,12 +11,12 @@ caps.latest.revision: 9
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 780cbcf5c6e03c5534b7f2125662696344e9cec4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c14fdcc5d58c62eebf993ba336a109adac5b7106
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924805"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053761"
 ---
 # <a name="how-to-use-the-finder-tool"></a>Como: Usar a ferramenta Localizador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,13 +30,13 @@ Ferramenta descobridora na caixa de diálogo Localizar janela
   
 ### <a name="to-display-window-properties-or-messages"></a>Para exibir propriedades da janela ou mensagens  
   
-1.  Organize as janelas para que o Spy + + e a janela de destino estão visíveis.  
+1. Organize as janelas para que o Spy + + e a janela de destino estão visíveis.  
   
-2.  Dos **Spy** menu, escolha **localizar janela**.  
+2. Dos **Spy** menu, escolha **localizar janela**.  
   
      O [caixa de diálogo Localizar janela](../debugger/find-window-dialog-box.md) é aberta.  
   
-3.  Arraste o **ferramenta Descobridora** sobre a janela de destino.  
+3. Arraste o **ferramenta Descobridora** sobre a janela de destino.  
   
      À medida que você arrasta a ferramenta, o **localizar janela** caixa de diálogo exibe detalhes sobre a janela selecionada.  
   
@@ -47,9 +47,9 @@ Ferramenta descobridora na caixa de diálogo Localizar janela
     > [!TIP]
     >  Para reduzir a desordem na tela, selecione a **Spy ocultar** opção. Esta opção oculta a janela principal do Spy + +, deixando apenas o **localizar janela** caixa de diálogo visível na parte superior de seus outros aplicativos. A janela principal do Spy + + é restaurada quando você clica **Okey** ou **Cancelar**, ou quando você desmarca a **ocultar Spy + +** opção.  
   
-4.  Sob **mostram**, selecione **Properties** ou **mensagens**.  
+4. Sob **mostram**, selecione **Properties** ou **mensagens**.  
   
-5.  Pressione **OK**.  
+5. Pressione **OK**.  
   
      Se você selecionou **propriedades**, o [caixa de diálogo de propriedades de janela](../debugger/window-properties-dialog-box.md) é aberta. Se você selecionou **mensagens**, um [exibição de mensagens](../debugger/messages-view.md) janela é aberta.  
   

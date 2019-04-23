@@ -26,12 +26,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a38b84c5b45ba8111977701d9026f22f90abf50
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 2ebcb793a0fc653931e1ea271340294aea532e02
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923126"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60055353"
 ---
 # <a name="how-to-debug-injected-code"></a>Como: Depurar código injetado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,25 +49,25 @@ ms.locfileid: "58923126"
   
 ### <a name="to-turn-on-source-annotation"></a>Para ativar a anotação de origem  
   
--   Clique com o botão direito do mouse na janela **Desmontagem** e escolha **Mostrar Código-Fonte** no menu de atalho.  
+- Clique com o botão direito do mouse na janela **Desmontagem** e escolha **Mostrar Código-Fonte** no menu de atalho.  
   
      Se você souber a localização de um atributo em uma janela de origem, poderá usar o menu de atalho para localizar o código injetado na janela **Desmontagem**.  
   
 ### <a name="to-view-injected-code"></a>Para exibir o código injetado  
   
-1.  O depurador deve estar no modo de interrupção.  
+1. O depurador deve estar no modo de interrupção.  
   
-2.  Em uma janela do código-fonte, coloque o cursor na frente do atributo cujo código injetado você deseja exibir.  
+2. Em uma janela do código-fonte, coloque o cursor na frente do atributo cujo código injetado você deseja exibir.  
   
-3.  Clique com o botão direito do mouse e selecione **Ir para Desmontagem** no menu de atalho.  
+3. Clique com o botão direito do mouse e selecione **Ir para Desmontagem** no menu de atalho.  
   
      Se a localização do atributo estiver perto do ponto de execução atual, você poderá selecionar a janela **Desmontagem** no menu **Depurar**.  
   
 ### <a name="to-view-the-disassembly-code-at-the-current-execution-point"></a>Para exibir o código de desmontagem no ponto de execução atual  
   
-1.  O depurador deve estar no modo de interrupção.  
+1. O depurador deve estar no modo de interrupção.  
   
-2.  No menu **Depurar**, escolha **Windows** e clique em **Desmontagem**.  
+2. No menu **Depurar**, escolha **Windows** e clique em **Desmontagem**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Segurança do depurador](../debugger/debugger-security.md)   

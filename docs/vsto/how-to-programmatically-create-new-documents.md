@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e05d6f5dd334e2c18f0f99fbe6c3ef21758a2de5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4940b5f5064fdb47439ad6b38b855785ae06c781
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623587"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60053449"
 ---
 # <a name="how-to-programmatically-create-new-documents"></a>Como: Criar novos documentos programaticamente
   Quando você cria um documento por meio de programação, o novo documento é um nativo <xref:Microsoft.Office.Interop.Word.Document> objeto. Este objeto não tem a eventos adicionais e recursos de associação de dados de um <xref:Microsoft.Office.Tools.Word.Document> item de host. Para obter mais informações, consulte [limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).
@@ -30,7 +30,7 @@ ms.locfileid: "56623587"
 
 ## <a name="to-create-a-new-document-based-on-the-normal-template"></a>Para criar um novo documento com base no modelo Normal
 
--   Use o <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> método da <xref:Microsoft.Office.Interop.Word.Documents> coleção para criar um novo documento com base no modelo Normal. Para usar este exemplo de código, executá-la na `ThisDocument` ou `ThisAddIn` classe em seu projeto.
+- Use o <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> método da <xref:Microsoft.Office.Interop.Word.Documents> coleção para criar um novo documento com base no modelo Normal. Para usar este exemplo de código, executá-la na `ThisDocument` ou `ThisAddIn` classe em seu projeto.
 
      [!code-vb[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#1)]
      [!code-csharp[Trin_VstcoreWordAutomation#1](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#1)]
@@ -40,7 +40,7 @@ ms.locfileid: "56623587"
 
 ### <a name="to-create-a-new-document-based-on-a-custom-template"></a>Para criar um novo documento com base em um modelo personalizado
 
--   Chame o <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> método da <xref:Microsoft.Office.Interop.Word.Documents> coleção e especifique o caminho para o modelo. Para usar este exemplo de código, executá-la na `ThisDocument` ou `ThisAddIn` classe em seu projeto.
+- Chame o <xref:Microsoft.Office.Interop.Word.Documents.Add%2A> método da <xref:Microsoft.Office.Interop.Word.Documents> coleção e especifique o caminho para o modelo. Para usar este exemplo de código, executá-la na `ThisDocument` ou `ThisAddIn` classe em seu projeto.
 
      [!code-vb[Trin_VstcoreWordAutomation#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#2)]
      [!code-csharp[Trin_VstcoreWordAutomation#2](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#2)]

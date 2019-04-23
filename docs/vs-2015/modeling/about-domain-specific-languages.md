@@ -11,17 +11,17 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: afa0cc3144840d547ea41cab21551fdcaae69980
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 0ddfc51c54c04ad0d79d7ef180a027cbd253ac09
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928932"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60043501"
 ---
 # <a name="about-domain-specific-languages"></a>Sobre linguagens específicas do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Ao contrário de uma linguagem de finalidade geral, como C# ou UML, uma linguagem específica de domínio (DSL) foi projetada para expressar declarações em um determinado problema de espaço ou domínio.  
+Ao contrário de uma linguagem de finalidade geral, como c# ou UML, uma linguagem específica de domínio (DSL) foi projetada para expressar declarações em um determinado problema de espaço ou domínio.  
   
  DSLs Well-Known incluem expressões regulares e SQL. Cada DSL é muito melhor do que uma linguagem de finalidade geral para descrever as operações em cadeias de caracteres de texto ou um banco de dados, mas um desempenho pior para descrever as ideias que estão fora do seu próprio escopo. Setores individuais também têm seus próprios DSLs. Por exemplo, na indústria de telecomunicações, chame descrição idiomas são amplamente usados para especificar a sequência dos estados em uma chamada telefônica e a indústria de viagem no ar um padrão de que DSL é usada para descrever as reservas de voo.  
   
@@ -62,15 +62,15 @@ Ao contrário de uma linguagem de finalidade geral, como C# ou UML, uma linguage
 ## <a name="aspects-of-graphical-domain-specific-development"></a>Aspectos do desenvolvimento de gráfico específica de domínio  
  Uma linguagem específica de domínio gráfica deve incluir os seguintes recursos:  
   
--   Notation  
+- Notation  
   
--   Modelo de domínio  
+- Modelo de domínio  
   
--   Geração de artefato  
+- Geração de artefato  
   
--   Serialização  
+- Serialização  
   
--   Integração com o Visual Studio  
+- Integração com o Visual Studio  
   
 ### <a name="notation"></a>Notation  
  Uma linguagem específica de domínio deve ter um conjunto razoavelmente pequeno de elementos que podem ser facilmente definidos e estendida para representar construções específicas do domínio. Uma notação consiste em formas, que representam os elementos, e conectores, que representam as relações entre os elementos em uma superfície de Diagrama gráfico. No [!INCLUDE[dsl](../includes/dsl-md.md)], as formas podem ser estendidas e refinadas para representar os elementos da sua linguagem específica do domínio.  
@@ -92,27 +92,27 @@ Ao contrário de uma linguagem de finalidade geral, como C# ou UML, uma linguage
 ## <a name="benefits-of-domain-specific-development"></a>Benefícios de desenvolvimento específicas do domínio  
  Uma linguagem específica de domínio pode fornecer os seguintes benefícios:  
   
--   Contém as construções que se ajuste exatamente o problema de espaço.  
+- Contém as construções que se ajuste exatamente o problema de espaço.  
   
      Ao contrário de linguagens de finalidade geral, uma linguagem específica de domínio consiste em elementos e relações que representam diretamente a lógica do problema. Por exemplo, um aplicativo da apólice de seguro deve incluir elementos de políticas e declarações. Uma linguagem específica de domínio torna mais fácil de criar o aplicativo e localizar e corrigir os erros de lógica.  
   
--   Permite que as pessoas que não conhecem o domínio de entender o design geral e não-desenvolvedores.  
+- Permite que as pessoas que não conhecem o domínio de entender o design geral e não-desenvolvedores.  
   
      Usando uma linguagem específica de domínio gráfica, você pode criar uma representação visual do domínio para que não-desenvolvedores podem facilmente entender o design do aplicativo.  
   
--   Torna mais fácil criar um protótipo do aplicativo final.  
+- Torna mais fácil criar um protótipo do aplicativo final.  
   
      Os desenvolvedores podem usar o código que gera de seu modelo para criar um aplicativo de protótipo que eles podem mostrar aos clientes.  
   
 ## <a name="the-process-of-domain-specific-development"></a>O processo de desenvolvimento específicas do domínio  
  A maioria das equipes de desenvolvimento de software que usam linguagens específicas de domínio siga estas etapas para criar e usar seus modelos:  
   
--   A equipe distingue as partes variáveis do domínio a partir das partes que nunca alterar.  
+- A equipe distingue as partes variáveis do domínio a partir das partes que nunca alterar.  
   
--   Os desenvolvedores escrever código para as partes fixas e deixar os pontos de extensão para as partes variáveis.  
+- Os desenvolvedores escrever código para as partes fixas e deixar os pontos de extensão para as partes variáveis.  
   
--   O gerente de desenvolvimento de software ou o arquiteto cria uma linguagem específica de domínio que incorpora os padrões de design das partes do domínio e os pontos de extensão para as partes variáveis fixas.  
+- O gerente de desenvolvimento de software ou o arquiteto cria uma linguagem específica de domínio que incorpora os padrões de design das partes do domínio e os pontos de extensão para as partes variáveis fixas.  
   
--   O gerente de desenvolvimento de software ou o arquiteto implanta a linguagem específica de domínio para os desenvolvedores dos vários aplicativos que produz a equipe.  
+- O gerente de desenvolvimento de software ou o arquiteto implanta a linguagem específica de domínio para os desenvolvedores dos vários aplicativos que produz a equipe.  
   
--   Todo desenvolvedor cria um modelo que se aplica ao aplicativo específico.
+- Todo desenvolvedor cria um modelo que se aplica ao aplicativo específico.
