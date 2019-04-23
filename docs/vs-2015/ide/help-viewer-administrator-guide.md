@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e0f63555cbda069c3db0a3a1d5819292fc3cda14
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54799699"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086592"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guia do administrador do Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,13 +60,13 @@ O Visualizador da Ajuda permite que você gerencie instalações da ajuda local 
   
 ##### <a name="to-install-english-content-from-the-internet"></a>Para instalar o conteúdo em inglês da Internet  
   
-1.  Escolha **Iniciar** e **Executar**.  
+1. Escolha **Iniciar** e **Executar**.  
   
-2.  Digite o seguinte:  
+2. Digite o seguinte:  
   
      C:\Program Files (x86)\Microsoft Help Viewer\v2.2\hlpctntmgr.exe /operation install /catalogname VisualStudio14 /locale en-us  
   
-3.  Pressione ENTER.  
+3. Pressione ENTER.  
   
 ## <a name="deploying-pre-installed-local-help-content-on-client-computers"></a>Implantando o conteúdo pré-instalado da Ajuda Local em computadores cliente  
  Você pode instalar um conjunto de conteúdo online em um computador, e então copiar o conjunto de conteúdo instalado em outros computadores.  
@@ -117,15 +117,15 @@ O Visualizador da Ajuda permite que você gerencie instalações da ajuda local 
   
 ##### <a name="to-package-the-content"></a>Para criar um pacote com o conteúdo  
   
-1.  Crie uma pasta para copiar o conteúdo para uma implantação posterior.  
+1. Crie uma pasta para copiar o conteúdo para uma implantação posterior.  
   
      Por exemplo: c:\VS12Help.  
   
-2.  Abra cmd.exe com permissões de administrador.  
+2. Abra cmd.exe com permissões de administrador.  
   
-3.  Navegue até a pasta que você criou na etapa 1.  
+3. Navegue até a pasta que você criou na etapa 1.  
   
-4.  Digite o seguinte:  
+4. Digite o seguinte:  
   
      Xcopy %SYSTEMDRIVE%\ProgramData\Microsoft\HelpLibrary2 \<*nome da pasta*>\ /y /e /k /o  
   
@@ -135,11 +135,11 @@ O Visualizador da Ajuda permite que você gerencie instalações da ajuda local 
   
 ##### <a name="to-deploy-the-content"></a>Para implantar o conteúdo  
   
-1.  Crie um compartilhamento de rede e copie o conteúdo da ajuda três para esse local.  
+1. Crie um compartilhamento de rede e copie o conteúdo da ajuda três para esse local.  
   
      Por exemplo, copie o conteúdo em c:\VS12Help para \\\myserver\VS12Help.  
   
-2.  Crie um arquivo .bat para conter o script de implantação do conteúdo da ajuda. Como o cliente provavelmente tenha um bloqueio de leitura em alguns dos arquivos que estão sendo excluídos como parte do envio, você deve encerrar cliente antes de enviar atualizações.  
+2. Crie um arquivo .bat para conter o script de implantação do conteúdo da ajuda. Como o cliente provavelmente tenha um bloqueio de leitura em alguns dos arquivos que estão sendo excluídos como parte do envio, você deve encerrar cliente antes de enviar atualizações.  
   
      Por exemplo:  
   
@@ -199,7 +199,7 @@ O Visualizador da Ajuda permite que você gerencie instalações da ajuda local 
     :CONTINUE  
     ```  
   
-3.  Execute o arquivo bat em computadores locais em que o conteúdo da ajuda deve estar instalado.  
+3. Execute o arquivo bat em computadores locais em que o conteúdo da ajuda deve estar instalado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Argumentos da linha de comando para o Gerenciador de Conteúdo da Ajuda](../ide/command-line-arguments-for-the-help-content-manager.md)   

@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 46e9ad272dd7d7b6e4a1f6033f09e99cb4b289d3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 9af0a3dc7c08a415f320ce3560cdfc23c462d4c7
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54782653"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087515"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usando cobertura de código para determinar quanto código está sendo testado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,17 +30,17 @@ Para determinar que proporção do código do projeto está sendo testada de fat
   
  **Requisitos**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ### <a name="to-analyze-code-coverage-on-unit-tests-in-test-explorer"></a>Para analisar a cobertura de código em testes de unidade no Gerenciador de Testes  
   
-1.  No menu **Teste**, escolha **Analisar Cobertura de Código**.  
+1. No menu **Teste**, escolha **Analisar Cobertura de Código**.  
   
-2.  Para ver quais linhas foram executadas, escolha o ![Ícone Mostrar Coloração de Cobertura de Código](../test/media/codecoverage-showcoloringicon.png "CodeCoverage ShowColoringIcon")**Mostrar Coloração de Cobertura de Código**.  
+2. Para ver quais linhas foram executadas, escolha o ![Ícone Mostrar Coloração de Cobertura de Código](../test/media/codecoverage-showcoloringicon.png "CodeCoverage ShowColoringIcon")**Mostrar Coloração de Cobertura de Código**.  
   
      Para alterar as cores ou usar negrito, escolha **ferramentas**, **opções**, **ambiente**, **fontes e cores**, **Mostrar configurações para: Editor de Texto**. Em **Exibir Itens**, ajuste os itens de cobertura.  
   
-3.  Se os resultados mostrarem baixa cobertura, investigue quais partes do código não estão sendo utilizadas e escreva mais testes para abrangê-las. As equipes de desenvolvimento normalmente desejam uma cobertura de código de aproximadamente 80%. Em algumas situações, uma cobertura menor é aceitável. Por exemplo, uma cobertura menor é aceitável onde um código é gerado a partir de um modelo padrão.  
+3. Se os resultados mostrarem baixa cobertura, investigue quais partes do código não estão sendo utilizadas e escreva mais testes para abrangê-las. As equipes de desenvolvimento normalmente desejam uma cobertura de código de aproximadamente 80%. Em algumas situações, uma cobertura menor é aceitável. Por exemplo, uma cobertura menor é aceitável onde um código é gerado a partir de um modelo padrão.  
   
 > [!TIP]
 >  Para obter resultados precisos:  
@@ -48,7 +48,7 @@ Para determinar que proporção do código do projeto está sendo testada de fat
 > - Verifique se a otimização do compilador será desativada.  
 > 
 >   Se você estiver trabalhando com código não gerenciado (nativo), use uma compilação de depuração.  
->   -   Verifique se você está gerando arquivos .pdb (símbolo) para cada assembly.  
+>   - Verifique se você está gerando arquivos .pdb (símbolo) para cada assembly.  
 > 
 >   Se você não obtiver os resultados esperados, consulte [Solução de problemas de cobertura de código](../test/troubleshooting-code-coverage.md). . Não se esqueça de executar novamente a cobertura de código depois de atualizar seu código. Os resultados de cobertura e a coloração de código não serão atualizados automaticamente depois que você alterar o código ou executar os testes.  
   
@@ -66,15 +66,15 @@ Para determinar que proporção do código do projeto está sendo testada de fat
   
  É possível mesclar os resultados de várias execuções, por exemplo, das execuções que usam dados de teste diferentes.  
   
--   **Para exibir um conjunto de resultados anterior**, selecione-o no menu suspenso. O menu mostra uma lista temporária que foi desmarcada quando você abrir uma nova solução.  
+- **Para exibir um conjunto de resultados anterior**, selecione-o no menu suspenso. O menu mostra uma lista temporária que foi desmarcada quando você abrir uma nova solução.  
   
--   **Para exibir os resultados de uma sessão anterior**, escolha **Importar Resultados da Cobertura de Código**, navegue até a pasta TestResults em sua solução e importe um arquivo .coverage.  
+- **Para exibir os resultados de uma sessão anterior**, escolha **Importar Resultados da Cobertura de Código**, navegue até a pasta TestResults em sua solução e importe um arquivo .coverage.  
   
      A coloração de cobertura podem estar incorreta se o código-fonte foi alterado desde que o arquivo .coverage foi gerado.  
   
--   **Para tornar os resultados legíveis como texto**, escolha **Exportar Resultados da Cobertura de Código**. Isso gera um arquivo .coveragexml legível que você pode processar com outras ferramentas ou enviar facilmente por email.  
+- **Para tornar os resultados legíveis como texto**, escolha **Exportar Resultados da Cobertura de Código**. Isso gera um arquivo .coveragexml legível que você pode processar com outras ferramentas ou enviar facilmente por email.  
   
--   **Para enviar resultados para outra pessoa**, envie um arquivo .coverage ou um arquivo .coveragexml exportado. A pessoa poderá importar o arquivo. Se ela tiver a mesma versão do código-fonte, poderá consultar a coloração de cobertura.  
+- **Para enviar resultados para outra pessoa**, envie um arquivo .coverage ou um arquivo .coveragexml exportado. A pessoa poderá importar o arquivo. Se ela tiver a mesma versão do código-fonte, poderá consultar a coloração de cobertura.  
   
 ## <a name="merging-results-from-different-runs"></a>Mesclando resultados de execuções diferentes  
  Em algumas situações, os blocos diferentes em seu código serão usados dependendo dos dados de teste. Portanto, você pode querer combinar os resultados de execuções de testes diferentes.  
@@ -87,11 +87,11 @@ Para determinar que proporção do código do projeto está sendo testada de fat
   
 ### <a name="limitations-in-merging"></a>Limitações na mesclagem  
   
--   Se você mesclar dados de cobertura de versões diferentes do código, os resultados serão mostrados separadamente, mas não combinados. Para obter resultados totalmente combinados, use a mesma compilação do código, alterando apenas os dados do teste.  
+- Se você mesclar dados de cobertura de versões diferentes do código, os resultados serão mostrados separadamente, mas não combinados. Para obter resultados totalmente combinados, use a mesma compilação do código, alterando apenas os dados do teste.  
   
--   Se você combinar um arquivo de resultados que foi exportado e depois importado, só poderá exibir os resultados por linhas, não por blocos. Use o comando **Adicionar/Remover Colunas** para mostrar os dados da linha.  
+- Se você combinar um arquivo de resultados que foi exportado e depois importado, só poderá exibir os resultados por linhas, não por blocos. Use o comando **Adicionar/Remover Colunas** para mostrar os dados da linha.  
   
--   Se você combinar os resultados dos testes de um projeto do ASP.NET, os resultados dos testes separados serão exibidos, mas não combinados. Isso se aplica apenas aos artefatos do ASP.NET em si: os resultados dos outros assemblies serão combinados.  
+- Se você combinar os resultados dos testes de um projeto do ASP.NET, os resultados dos testes separados serão exibidos, mas não combinados. Isso se aplica apenas aos artefatos do ASP.NET em si: os resultados dos outros assemblies serão combinados.  
   
 ## <a name="excluding-elements-from-the-code-coverage-results"></a>Excluindo elementos dos resultados da cobertura de código  
  Você pode excluir elementos específicos em seu código das pontuações de cobertura, por exemplo, se o código é gerado a partir de um modelo de texto. Adicione o atributo `System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage` a qualquer um dos seguintes elementos de código: class, struct, method, property, property setter ou getter, event. Observe que excluir uma classe não exclui as classes derivadas.  
@@ -225,19 +225,19 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
   
  `ExcludeSourceFromCodeCoverage(` *ExclusionName* `, L"` *SourceFilePath* `");`  
   
--   *ExclusionName* é qualquer nome exclusivo.  
+- *ExclusionName* é qualquer nome exclusivo.  
   
--   *FunctionName* é um nome de função totalmente qualificado. Pode conter curingas. Por exemplo, para excluir todas as funções de uma classe, escreva `MyNamespace::MyClass::*`  
+- *FunctionName* é um nome de função totalmente qualificado. Pode conter curingas. Por exemplo, para excluir todas as funções de uma classe, escreva `MyNamespace::MyClass::*`  
   
--   *SourceFilePath* é o local ou o caminho UNC de um arquivo .cpp. Pode conter curingas. O exemplo a seguir exclui todos os arquivos em um diretório específico: `\\MyComputer\Source\UnitTests\*.cpp`  
+- *SourceFilePath* é o local ou o caminho UNC de um arquivo .cpp. Pode conter curingas. O exemplo a seguir exclui todos os arquivos em um diretório específico: `\\MyComputer\Source\UnitTests\*.cpp`  
   
--   `#include <CodeCoverage\CodeCoverage.h>`  
+- `#include <CodeCoverage\CodeCoverage.h>`  
   
--   Coloque as chamadas para as macros de exclusão no namespace global, não em qualquer namespace ou classe.  
+- Coloque as chamadas para as macros de exclusão no namespace global, não em qualquer namespace ou classe.  
   
--   Você pode colocar as exclusões no arquivo de código de teste de unidade ou no arquivo de código do aplicativo.  
+- Você pode colocar as exclusões no arquivo de código de teste de unidade ou no arquivo de código do aplicativo.  
   
--   As exclusões devem ser criadas como o código não gerenciado (nativo), definindo a opção de compilador ou usando `#pragma managed(off)`.  
+- As exclusões devem ser criadas como o código não gerenciado (nativo), definindo a opção de compilador ou usando `#pragma managed(off)`.  
   
 > [!NOTE]
 >  Para excluir funções em código C++/CLI, aplique o atributo `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` à função. Esse é o mesmo para o C#.  
@@ -267,11 +267,11 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 ## <a name="analyzing-code-coverage-in-a-command-line"></a>Analisando a cobertura de código em uma linha de comando  
  Para executar testes a partir da linha de comando, use vstest.console.exe. A cobertura de código é uma opção desse utilitário. Para obter mais informações, consulte [Opções de linha de comando de VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11).  
   
-1.  Inicie o Prompt de Comando do Desenvolvedor do Visual Studio:  
+1. Inicie o Prompt de Comando do Desenvolvedor do Visual Studio:  
   
      No menu **Iniciar** do Windows, escolha **Todos os Programas**, **Microsoft Visual Studio**, **Ferramentas do Visual Studio** e **Prompt de Comando do Desenvolvedor**.  
   
-2.  Execute:  
+2. Execute:  
   
      `vstest.console.exe MyTestAssembly.dll /EnableCodeCoverage`  
   

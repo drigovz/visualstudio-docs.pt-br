@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2dda4193a0ea30ac08f8a63a39ce00fb634832d7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596419"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104454"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Como: Adicionar e remover funcionalidades e itens de um pacote usando o Packaging Explorer
   Para configurar um pacote para implantar recursos e itens do SharePoint, você pode usar o Packaging Explorer. Você pode ajustar os itens de projeto do SharePoint e recursos em seu arquivo. wsp.
@@ -31,7 +31,7 @@ ms.locfileid: "56596419"
 
 #### <a name="to-open-the-packaging-explorer"></a>Para abrir o Gerenciador de empacotamento
 
-1.  Na barra de menus, escolha **modo de exibição** > **Other Windows** > **Packaging Explorer**.
+1. Na barra de menus, escolha **modo de exibição** > **Other Windows** > **Packaging Explorer**.
 
      O **Packaging Explorer** aparece na **caixa de ferramentas**.
 
@@ -40,15 +40,15 @@ ms.locfileid: "56596419"
 
 #### <a name="to-add-a-sharepoint-feature"></a>Para adicionar um recurso do SharePoint
 
-1.  Abra o **Packaging Explorer**, abra o menu de atalho para o projeto e, em seguida, escolha **adicionar recurso**.
+1. Abra o **Packaging Explorer**, abra o menu de atalho para o projeto e, em seguida, escolha **adicionar recurso**.
 
 #### <a name="to-move-an-existing-sharepoint-feature"></a>Para mover um recurso existente do SharePoint
 
-1.  Abra o **Packaging Explorer**e, em seguida, execute uma das seguintes etapas:
+1. Abra o **Packaging Explorer**e, em seguida, execute uma das seguintes etapas:
 
-    -   Arraste uma **recurso** de um projeto para outro projeto.
+    - Arraste uma **recurso** de um projeto para outro projeto.
 
-    -   Abra o menu de atalho para um recurso, escolha **Recortar**, abra o menu de atalho para o projeto ao qual você deseja mover o recurso e, em seguida, escolha **colar**.
+    - Abra o menu de atalho para um recurso, escolha **Recortar**, abra o menu de atalho para o projeto ao qual você deseja mover o recurso e, em seguida, escolha **colar**.
 
     > [!NOTE]
     >  Use este procedimento se você tiver mais de um projeto do SharePoint em sua solução.
@@ -58,9 +58,9 @@ ms.locfileid: "56596419"
 
 #### <a name="to-validate-a-sharepoint-feature-or-package"></a>Para validar um pacote ou recurso do SharePoint
 
-1.  Abra o **Packaging Explorer**.
+1. Abra o **Packaging Explorer**.
 
-2.  Abra um menu de atalho para um recurso ou pacote e, em seguida, escolha **validar**.
+2. Abra um menu de atalho para um recurso ou pacote e, em seguida, escolha **validar**.
 
 ## <a name="see-also"></a>Consulte também
 - [Empacotar e implantar soluções do SharePoint](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

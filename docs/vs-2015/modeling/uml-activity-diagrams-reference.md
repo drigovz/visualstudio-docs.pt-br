@@ -20,12 +20,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c698b84ec3af759a4c276e0129e628abba9212f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: c60405331ebab909e8056d4800bd43b208c92493
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929677"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60087138"
 ---
 # <a name="uml-activity-diagrams-reference"></a>Diagramas de atividade UML: Referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Uma *diagrama de atividade* mostra um processo de negócios ou um software como 
 |13|**Enviar ação de sinal**|Uma ação que envia uma mensagem ou um sinal para outra atividade ou a um thread simultâneo na mesma atividade. O tipo e o conteúdo da mensagem é indicado pelo título da ação ou especificado nos comentários adicionais.<br /><br /> A ação pode enviar dados do sinal, que pode ser passado para a ação em um fluxo de objeto ou o pino de entrada (16).|  
 |14|**Aceitar a ação de evento**|Uma ação que aguarda uma mensagem ou um sinal de que a ação possa continuar. O tipo de mensagem, que a ação pode receber é indicado pelo título ou especificado nos comentários adicionais.<br /><br /> Se a ação não tem nenhum fluxo de controle de entrada, ele produz um token, sempre que receber uma mensagem.<br /><br /> A ação pode receber dados em sinal, que pode ser passado em um objeto fluxo ou saída de pin (17).<br /><br /> -   **IsUnmarshall** - se verdadeiro, pode haver vários pinos de saída com tipo e os dados são unmarshalled neles. Se for false, todos os dados apareçam em um pin.|  
   
-###  <a name="DataFlow"></a> Fluxos de dados  
+### <a name="DataFlow"></a> Fluxos de dados  
  Você pode descrever o fluxo de dados de uma ação para outro. Para obter mais informações sobre os elementos usados nesta seção, consulte a seção de fluxos de dados de desenho do tópico de diretrizes para desenhar um diagrama de atividade.  
   
  ![Diagrama de atividade mostrando o fluxo de dados](../modeling/media/uml-actovdata.png "UML_ActOvData")  

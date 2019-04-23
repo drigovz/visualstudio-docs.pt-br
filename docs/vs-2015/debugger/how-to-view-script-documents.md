@@ -16,12 +16,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cadfa9cf4c07b84f8e0f4c00678a858876c25bd0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: 88f923ab0447f1ac7d57e84d94f0ab442d912d67
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928706"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104195"
 ---
 # <a name="how-to-view-script-documents"></a>Como: Exibir documentos de script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,17 +36,17 @@ Em versões anteriores do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], os arqui
   
 ### <a name="to-view-a-server-side-script-document"></a>Para exibir um documento de script do lado do servidor  
   
-1.  No **Gerenciador de Soluções**, abra o nó **\<<Nome do caminho do site>**.  
+1. No **Gerenciador de Soluções**, abra o nó **\<<Nome do caminho do site>**.  
   
-2.  Clique duas vezes no arquivo de script que deseja exibir.  
+2. Clique duas vezes no arquivo de script que deseja exibir.  
   
      O arquivo de script do lado do servidor é aberto em uma janela de origem.  
   
 ### <a name="to-view-a-client-side-script-document"></a>Para exibir um documento de script do lado do cliente  
   
-1.  No **Gerenciador de Soluções**, abra o nó **Documentos de Script**.  
+1. No **Gerenciador de Soluções**, abra o nó **Documentos de Script**.  
   
-2.  Clique duas vezes no arquivo de script que deseja exibir.  
+2. Clique duas vezes no arquivo de script que deseja exibir.  
   
      O arquivo de script do lado do cliente é aberto em uma janela de origem.  
   

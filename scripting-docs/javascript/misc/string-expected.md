@@ -14,19 +14,19 @@ ms.assetid: 4c214c4b-9cd7-473b-8d90-2344c0375c25
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: eb942fcdbf475984766af44ada75072df1c2facb
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f6853d92608859e41fd7d8001ca6e350f5830504
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843994"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60086995"
 ---
 # <a name="string-expected"></a>Cadeia de caracteres esperada
 Você tentou invocar o **String.prototype.toString** ou **String.prototype.valueOf** método em um objeto de um tipo diferente de `String`. O objeto desse tipo de invocação deve ser do tipo `String`.  
   
 ### <a name="to-correct-this-error"></a>Para corrigir este erro  
   
--   Invoque apenas o **String.prototype.toString** ou **String.prototype.valueOf** métodos em objetos do tipo `String`.  
+- Invoque apenas o **String.prototype.toString** ou **String.prototype.valueOf** métodos em objetos do tipo `String`.  
   
 ## <a name="see-also"></a>Consulte também  
  [Objeto de cadeia de caracteres](../../javascript/reference/string-object-javascript.md)   

@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 7814bd356dfa50c121fc73c1b88c1ae12dfa3df4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.openlocfilehash: a326be363295ed1033d0e91e1675e326a51c9adf
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928124"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60104311"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Como: Configurar a análise de código para um projeto de código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,26 +31,26 @@ Na [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../i
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Para configurar uma regra definida para um projeto do .NET Framework  
   
-1.  Na **Gerenciador de soluções**, clique no projeto.  
+1. Na **Gerenciador de soluções**, clique no projeto.  
   
-2.  Sobre o **Analyze** menu, clique em **configurar a análise de código para** *ProjectName*.  
+2. Sobre o **Analyze** menu, clique em **configurar a análise de código para** *ProjectName*.  
   
-3.  No **Configuration** e **plataforma** listas, clique na plataforma de destino e a configuração de compilação.  
+3. No **Configuration** e **plataforma** listas, clique na plataforma de destino e a configuração de compilação.  
   
-4.  Para executar análise de código sempre que o projeto é compilado usando a configuração selecionada, selecione a **habilitar análise de código na compilação (define a constante CODE_ANALYSIS)** caixa de seleção. Você também pode executar a análise de código manualmente abrindo o **Analyze** menu e clicando em **executar análise de código na** *ProjectName*.  
+4. Para executar análise de código sempre que o projeto é compilado usando a configuração selecionada, selecione a **habilitar análise de código na compilação (define a constante CODE_ANALYSIS)** caixa de seleção. Você também pode executar a análise de código manualmente abrindo o **Analyze** menu e clicando em **executar análise de código na** *ProjectName*.  
   
-5.  Por padrão, a análise de código não relate os avisos de código que é gerado automaticamente por ferramentas externas. Para exibir avisos do código gerado, desmarque a **Suprimir resultados do código gerado** caixa de seleção.  
+5. Por padrão, a análise de código não relate os avisos de código que é gerado automaticamente por ferramentas externas. Para exibir avisos do código gerado, desmarque a **Suprimir resultados do código gerado** caixa de seleção.  
   
     > [!NOTE]
     >  Essa opção não suprime erros de análise de código e avisos do código gerado quando os erros e avisos que aparecem em formulários e modelos. Você pode exibir e manter o código-fonte para um formulário ou um modelo.  
   
-6.  No **executar este conjunto de regras** lista, siga um destes procedimentos:  
+6. No **executar este conjunto de regras** lista, siga um destes procedimentos:  
   
-    -   Clique o conjunto de regras que você deseja usar.  
+    - Clique o conjunto de regras que você deseja usar.  
   
-    -   Clique em  **\<procurar... >** especificar uma regra personalizada existente definida que não está na lista.  
+    - Clique em  **\<procurar... >** especificar uma regra personalizada existente definida que não está na lista.  
   
-    -   Defina um conjunto de regras personalizadas.  
+    - Defina um conjunto de regras personalizadas.  
   
          Para obter mais informações, consulte [criação de conjuntos de regras personalizado](../code-quality/creating-custom-code-analysis-rule-sets.md).  
   
