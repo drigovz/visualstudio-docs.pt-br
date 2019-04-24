@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c04afe2d739b172e74da4ae38bd122468643e6e6
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706984"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60039727"
 ---
 # <a name="troubleshooting-vspackages"></a>Solucionando problemas de VSPackages
 A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas para resolver os problemas.
@@ -56,52 +56,52 @@ A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas p
 
 ### <a name="to-troubleshoot-a-vspackage-that-does-not-register"></a>Para solucionar problemas de um VSPackage que não registra
 
-1.  Certifique-se de que o assembly de VSPackage reside em um local confiável. RegPkg não é possível registrar assemblies em um local não confiável ou parcialmente confiável, como um compartilhamento de rede na configuração de segurança do .net padrão. Embora um aviso é exibido sempre que um usuário cria um projeto em um local não confiável, a caixa de seleção "não mostrar esta mensagem novamente" pode impedir que esse aviso ocorra.
+1. Certifique-se de que o assembly de VSPackage reside em um local confiável. RegPkg não é possível registrar assemblies em um local não confiável ou parcialmente confiável, como um compartilhamento de rede na configuração de segurança do .net padrão. Embora um aviso é exibido sempre que um usuário cria um projeto em um local não confiável, a caixa de seleção "não mostrar esta mensagem novamente" pode impedir que esse aviso ocorra.
 
 ### <a name="to-troubleshoot-a-command-that-is-not-visible-or-that-generates-an-error-when-you-click-a-command"></a>Para solucionar problemas de um comando que não é visível ou que gera um erro quando você clica em um comando
 
-1. Mesclar os comandos de menu novos ou alterados e aqueles já no IDE, digitando o seguinte comando na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Prompt de comando: **devenv /rootsuffix Exp /Setup**.
+1. Mesclar os comandos de menu novos ou alterados e aqueles já no IDE, digitando o seguinte comando na [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Prompt de comando: **devenv /rootsuffix Exp /Setup.**.
 
 2. Certifique-se de que [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] pode encontrar UI.dll para o VSPackage.
 
-   1.  Localize o CLSID do VSPackage na seção de pacotes do registro:
+   1. Localize o CLSID do VSPackage na seção de pacotes do registro:
 
         Studio HKLM\Software\Microsoft\Visual\\*\<versão >* \packages.
 
-   2.  Verifique se o caminho fornecido pela subchave SatelliteDll está correto.
+   2. Verifique se o caminho fornecido pela subchave SatelliteDll está correto.
 
 ### <a name="to-troubleshoot-a-vspackage-that-behaves-unexpectedly"></a>Para solucionar problemas de um VSPackage que se comporta de forma inesperada
 
-1.  Defina os pontos de interrupção no seu código.
+1. Defina os pontos de interrupção no seu código.
 
      Bons pontos de partida para a depuração são o construtor e o método de inicialização. Você também pode definir pontos de interrupção na área que você deseja avaliar, como um comando de menu. Para habilitar os pontos de interrupção, você deve executar sob o depurador.
 
-    1.  No menu **Projeto**, clique em **Propriedades**.
+    1. No menu **Projeto**, clique em **Propriedades**.
 
-    2.  Sobre o **páginas de propriedades** caixa de diálogo, selecione o **depurar** guia.
+    2. Sobre o **páginas de propriedades** caixa de diálogo, selecione o **depurar** guia.
 
-    3.  No **argumentos de linha de comando** , digite o sufixo raiz do ambiente de desenvolvimento que os destinos de VSPackage. Por exemplo, para selecionar a compilação experimental, digite: **RootSuffix Exp**.
+    3. No **argumentos de linha de comando** , digite o sufixo raiz do ambiente de desenvolvimento que os destinos de VSPackage. Por exemplo, para selecionar a compilação experimental, digite: **RootSuffix Exp**.
 
-    4.  Sobre o **Debug** menu, clique em **iniciar depuração** ou pressione F5.
+    4. Sobre o **Debug** menu, clique em **iniciar depuração** ou pressione F5.
 
         > [!NOTE]
         >  Se você estiver depurando um projeto, criar ou carregar uma instância existente do seu projeto agora.
 
-2.  Use o log de atividades.
+2. Use o log de atividades.
 
      Rastrear o comportamento de VSPackage gravando informações ao log de atividades em pontos-chave. Essa técnica é especialmente útil quando você executa um VSPackage em um ambiente de varejo. Para obter mais informações, confira [Como: Usar o Log de atividades](../extensibility/how-to-use-the-activity-log.md).
 
-3.  Use os símbolos públicos.
+3. Use os símbolos públicos.
 
      Para melhorar a legibilidade durante a depuração, você pode anexar os símbolos do depurador.
 
-    1.  Dos **Ferramentas/opções** menu, navegue até a **depuração/símbolos** caixa de diálogo.
+    1. Dos **Ferramentas/opções** menu, navegue até a **depuração/símbolos** caixa de diálogo.
 
-    2.  Adicione isso **local do arquivo (. PDB) de símbolo**:
+    2. Adicione isso **local do arquivo (. PDB) de símbolo**:
 
          [http://msdl.microsoft.com/download/symbols](http://msdl.microsoft.com/download/symbols)
 
-    3.  Para melhorar o desempenho, especifique uma pasta de cache de símbolo, por exemplo:
+    3. Para melhorar o desempenho, especifique uma pasta de cache de símbolo, por exemplo:
 
         ```
         C:\symbols
@@ -111,9 +111,9 @@ A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas p
 
 1. Para código gerenciado, certifique-se de que os caminhos de referência estão corretos.
 
-   1.  No menu **Projeto**, clique em **Propriedades**.
+   1. No menu **Projeto**, clique em **Propriedades**.
 
-   2.  Selecione o **referências** guia o **páginas de propriedade** caixa de diálogo e verifique se todos os caminhos estão corretos. Como alternativa, você pode usar o **Pesquisador de objetos** para procurar os objetos referenciados.
+   2. Selecione o **referências** guia o **páginas de propriedade** caixa de diálogo e verifique se todos os caminhos estão corretos. Como alternativa, você pode usar o **Pesquisador de objetos** para procurar os objetos referenciados.
 
         Para código gerenciado, você pode usar o [Fuslogvw.exe (Assembly Binding Log Viewer)](/dotnet/framework/tools/fuslogvw-exe-assembly-binding-log-viewer) para exibir os detalhes de carregamentos de assembly com falha.
 
