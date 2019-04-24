@@ -15,12 +15,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 9079479ee66b741780eab4907325b1c43a3b5ee4
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476001"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856496"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Depurar o C# e o C++ na mesma sessão de depuração
 
@@ -41,10 +41,10 @@ Neste tutorial, você irá:
 ## <a name="prerequisites"></a>Pré-requisitos
 
 O Visual Studio precisa estar instalado, com as cargas de trabalho a seguir:
-- **Desenvolvimento para desktop com C++**
+- **Desenvolvimento de área de trabalho com o C++**
 - **Desenvolvimento para desktop com .NET** ou **Desenvolvimento multiplataforma com .NET Core**, dependendo de qual tipo de aplicativo você deseja criar.
 
-Se você não tiver o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+Se você não tiver o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalá-lo gratuitamente.
 
 Se o Visual Studio estiver instalado, mas as cargas de trabalho necessárias não estiverem, selecione **Abrir Instalador do Visual Studio** no painel esquerdo da caixa de diálogo **Novo projeto** do Visual Studio. No Instalador do Visual Studio, selecione as cargas de trabalho necessárias e, em seguida, selecione **Modificar**.
 
@@ -55,7 +55,7 @@ Se o Visual Studio estiver instalado, mas as cargas de trabalho necessárias nã
 1. Abra o Visual Studio e crie um projeto.
 
     ::: moniker range=">=vs-2019"
-    Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **Projeto Vazio**, escolha **Modelos** e, em seguida, escolha **Criar novo projeto de Projeto Vazio** para C++. Na caixa de diálogo que aparece, escolha **Criar**. Em seguida, digite um nome como **Mixed_Mode_Debugging** e clique em **criar**.
+    Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **Projeto Vazio**, escolha **Modelos** e, em seguida, escolha **Criar novo projeto de Projeto Vazio** para C++. Na caixa de diálogo que aparece, escolha **Criar**. Em seguida, digite um nome como **Mixed_Mode_Debugging** e clique em **criar**.
     ::: moniker-end
     ::: moniker range="vs-2017"
     Na barra de menus superior, escolha **Arquivo** > **Novo** > **Projeto**. No painel esquerdo da caixa de diálogo **Novo projeto**, em **Visual C++**, escolha **Outro** e, em seguida, no painel central, escolha **Projeto Vazio**. Em seguida, digite um nome como **Mixed_Mode_Debugging** e clique em **OK**.
@@ -106,7 +106,7 @@ Se o Visual Studio estiver instalado, mas as cargas de trabalho necessárias nã
 
 1. Selecione **Arquivo** > **Salvar Tudo** ou pressione **Ctrl**+**Shift**+**S** para salvar os arquivos.
 
-**Para configurar e compilar o projeto de DLL:**
+**Para configurar e criar o projeto de DLL:**
 
 1. Na barra de ferramentas do Visual Studio, selecione a configuração **Depurar** e a plataforma **x86** ou **x64**. Se o aplicativo de chamada será o .NET Core, que sempre é executado no modo de 64 bits, selecione **x64** como a plataforma.
 
@@ -132,7 +132,7 @@ Se o Visual Studio estiver instalado, mas as cargas de trabalho necessárias nã
 1. Abra o Visual Studio e crie um projeto.
 
     ::: moniker range=">=vs-2019"
-    Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **console**, escolha **Modelos** e, em seguida, escolha **Criar novo projeto de Aplicativo de Console (.NET Framework)** para C#. Na caixa de diálogo que aparece, escolha **Criar**.
+    Pressione **Esc** para fechar a janela de início. Digite **Ctrl + Q** para abrir a caixa de pesquisa, digite **console**, escolha **Modelos** e, em seguida, escolha **Criar novo projeto de Aplicativo de Console (.NET Framework)** para C#. Na caixa de diálogo que aparece, escolha **Criar**.
 
     Em seguida, digite um nome como **Mixed_Mode_Calling_App** e clique em **Criar**.
     ::: moniker-end
@@ -193,7 +193,7 @@ Se o Visual Studio estiver instalado, mas as cargas de trabalho necessárias nã
 
 ### <a name="to-configure-mixed-mode-debugging-for-a-net-core-app"></a>Para configurar a depuração de modo misto de um aplicativo .NET Core
 
-Na maioria das versões do Visual Studio 2017, você precisa usar o arquivo *launchSettings.json* em vez das propriedades do projeto para habilitar a depuração de modo misto de um código nativo em um aplicativo .NET Core. Para acompanhar as atualizações da interface do usuário desse recurso, confira [problema do GitHub](https://github.com/dotnet/project-system/issues/1125).
+Na maioria das versões do Visual Studio começando com o Visual Studio 2017, você precisa usar o arquivo *launchSettings.json* em vez das propriedades do projeto para habilitar a depuração de modo misto de um código nativo em um aplicativo .NET Core. Para acompanhar as atualizações da interface do usuário desse recurso, confira [problema do GitHub](https://github.com/dotnet/project-system/issues/1125).
 
 1. No **Gerenciador de Soluções**, expanda **Propriedades** e abra o arquivo *launchSettings.json*.
 

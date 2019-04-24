@@ -1,7 +1,7 @@
 ---
 title: Criar uma instalação baseada em rede
 description: Saiba como criar um ponto de instalação de rede para implantar o Visual Studio em uma empresa.
-ms.date: 02/27/2019
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,16 +15,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 63fad9e14bba478d2e0f2a69c42de18f45156482
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 5e499e54a7cf1c5c50a625cfe03482202e3a1f3f
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324273"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857419"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Criar uma instalação de rede do Visual Studio
 
-Normalmente, um administrador corporativo cria um ponto de instalação de rede para implantação em estações de trabalho do cliente. Criamos o Visual Studio de 2017 para permitir que você armazene em cache os arquivos para a instalação inicial juntamente com todas as atualizações de produto para uma única pasta. (Esse processo também é referido como _criação de um layout_.) 
+Normalmente, um administrador corporativo cria um ponto de instalação de rede para implantação em estações de trabalho do cliente. Criamos o Visual Studio para permitir que você armazene em cache os arquivos para a instalação inicial juntamente com todas as atualizações de produto para uma única pasta. (Esse processo também é referido como _criação de um layout_.) 
 
 Fizemos isso para que as estações de trabalho cliente pudessem usar o mesmo local de rede para gerenciar sua instalação, mesmo que elas ainda não tivessem sido atualizadas para a atualização de serviço mais recente.
 
@@ -37,35 +37,45 @@ Baixe a edição do Visual Studio desejada. Lembre-se de clicar em **Salvar** e,
 
 O executável de instalação &mdash; ou para ser mais específico, um arquivo bootstrapper &mdash; deverá corresponder a um dos listados a seguir.
 
+::: moniker range="vs-2017"
+
 |Edição | Baixar|
 |-------------|-----------------------|
 |Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
 |Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
-|Comunidade Visual Studio | [**vs_community.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=15&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2017) |
 
 Outros bootstrappers com suporte incluem [vs_buildtools.exe](https://aka.ms/vs/15/release/vs_buildtools.exe), [vs_feedbackclient.exe](https://aka.ms/vs/15/release/vs_feedbackclient.exe), [vs_teamexplorer.exe](https://aka.ms/vs/15/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/15/release/vs_testagent.exe), [vs_testcontroller.exe](https://aka.ms/vs/15/release/vs_testcontroller.exe) e [vs_testprofessional.exe](https://aka.ms/vs/15/release/vs_testprofessional.exe).
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+|Edição | Baixar|
+|-------------|-----------------------|
+|Visual Studio Enterprise | [**vs_enterprise.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
+|Visual Studio Professional | [**vs_professional.exe**](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
+
+Outros bootstrappers compatíveis incluem [vs_buildtools.exe](https://aka.ms/vs/16/release/vs_buildtools.exe), [vs_teamexplorer.exe](https://aka.ms/vs/16/release/vs_teamexplorer.exe), [vs_testagent.exe](https://aka.ms/vs/16/release/vs_testagent.exe) e [vs_testcontroller.exe](https://aka.ms/vs/16/release/vs_testcontroller.exe).
+
+::: moniker-end
 
 ## <a name="create-an-offline-installation-folder"></a>Criar uma pasta de instalação offline
 
 É preciso ter uma conexão com a Internet para concluir esta etapa. Para criar uma instalação offline com todos os idiomas e recursos, use um dos comandos dos exemplos a seguir.
 
    > [!IMPORTANT]
-   > Um layout completo do Visual Studio 2017 exige, pelo menos, 35 GB de espaço em disco e pode demorar um pouco para ser baixado.  Confira a seção [Personalizar o layout da rede](#customize-the-network-layout) para obter detalhes sobre como criar um layout com os componentes que deseja instalar.
+   > Um layout completo do Visual Studio exige, pelo menos, 35 GB de espaço em disco e pode demorar um pouco para ser baixado. Confira a seção [Personalizar o layout da rede](#customize-the-network-layout) para obter detalhes sobre como criar um layout com os componentes que deseja instalar.
    >
    > [!TIP]
    > Lembre-se de executar o comando no diretório de Download. Normalmente, isso é `C:\Users\<username>\Downloads` em um computador que executa o Windows 10.
 
 - Para o Visual Studio Enterprise, execute:
 
-  ```vs_enterprise.exe --layout c:\vs2017offline```
+  ```vs_enterprise.exe --layout c:\vsoffline```
 
 - Para o Visual Studio Professional, execute:
 
-  ```vs_professional.exe --layout c:\vs2017offline```
-
-- Para o Visual Studio Community, execute:
-
-  ```vs_community.exe --layout c:\vs2017offline```
+  ```vs_professional.exe --layout c:\vsoffline```
 
 ## <a name="modify-the-responsejson-file"></a>Modificar o arquivo response.json
 
@@ -76,15 +86,30 @@ Confira [Automatizar a instalação do Visual Studio com um arquivo de resposta]
 
 Hospede o layout em um compartilhamento de rede para que ele possa ser executado de outros computadores.
 
+::: moniker range="vs-2017"
+
 Exemplo:
 
 ```cmd
-xcopy /e c:\vs2017offline \\server\products\VS2017
+xcopy /e c:\vsoffline \\server\products\VS2017
 ```
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+```cmd
+xcopy /e c:\vsoffline \\server\products\VS2019
+```
+
+::: moniker-end
+
+> [!IMPORTANT]
+> Para evitar um erro, verifique se o caminho de instalação completo tem menos do que 80 caracteres.
 
 ## <a name="customize-the-network-layout"></a>Personalizar o layout de rede
 
-Há várias opções que você pode usar para personalizar o layout de rede. Você pode criar um layout parcial que contém apenas um conjunto específico de [localidades de idiomas](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales), [cargas de trabalho, componentes e suas dependências recomendadas ou opcionais](workload-and-component-ids.md). Isso poderá ser útil se você souber que só pretende implantar um subconjunto de cargas de trabalho em estações de trabalho cliente. Parâmetros de linha de comando típicos para personalizar o layout incluem:
+Há várias opções que você pode usar para personalizar o layout de rede. Você pode criar um layout parcial que contém apenas um conjunto específico de [localidades de idiomas](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales), [cargas de trabalho, componentes e suas dependências recomendadas ou opcionais](workload-and-component-ids.md). Isso pode ser útil se você sabe que só vai implantar um subconjunto de cargas de trabalho em estações de trabalho cliente. Parâmetros de linha de comando típicos para personalizar o layout incluem:
 
 * `--add` para especificar [IDs de componente ou carga de trabalho](workload-and-component-ids.md). <br>Se `--add` for usado, somente as cargas de trabalho e os componentes especificados com `--add` serão baixados.  Se `--add` não for usado, todas as cargas de trabalho e todos os componentes serão baixados.
 * `--includeRecommended` para incluir todos os componentes recomendados para as IDs de carga de trabalho especificadas
@@ -96,63 +121,72 @@ Aqui estão alguns exemplos de como criar um layout personalizado parcial.
 * Para baixar todas as cargas de trabalho e todos os componentes para um único idioma, execute:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vs2017offline --lang en-US
+    vs_enterprise.exe --layout C:\vsoffline --lang en-US
     ```
 
 * Para baixar todas as cargas de trabalho e todos os componentes para vários idiomas, execute:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vs2017offline --lang en-US de-DE ja-JP
+    vs_enterprise.exe --layout C:\vsoffline --lang en-US de-DE ja-JP
     ```
 
 * Para baixar uma carga de trabalho para todos os idiomas, execute:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --includeRecommended
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --includeRecommended
     ```
 
 * Para baixar duas cargas de trabalho e um componente opcional para três idiomas, execute:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP
     ```
 
 * Para baixar duas cargas de trabalho e todos os seus componentes recomendados:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended 
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended 
     ```
 
 * Para baixar duas cargas de trabalho e todos os seus componentes opcionais e recomendados, execute:
 
     ```cmd
-    vs_enterprise.exe --layout C:\vs2017offline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
+    vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
     ```
+::: moniker range="vs-2017"
 
 ### <a name="new-in-version-153"></a>Novidades na versão 15.3
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+### <a name="save-your-layout-options"></a>Salvar suas opções de layout
+
+::: moniker-end
 
 Quando você executa um comando de layout, as opções que você especifica são salvas (por exemplo, as cargas de trabalho e os idiomas). Comandos de layout subsequentes incluirão todas as opções anteriores.  Aqui está um exemplo de um layout com uma carga de trabalho apenas para inglês:
 
 ```cmd
-vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
+vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
 ```
 
 Quando você quer atualizar o layout para uma versão mais recente, não é necessário especificar nenhum parâmetro de linha de comando adicional. As configurações anteriores são salvas e usadas por quaisquer comandos de layout subsequentes nesta pasta de layout.  O comando seguinte atualizará o layout parcial existente.
 
 ```cmd
-vs_enterprise.exe --layout c:\VS2017Layout
+vs_enterprise.exe --layout c:\VSLayout
 ```
 
 Você pode consultar aqui um exemplo de como adicionar uma carga de trabalho adicional. Nesse caso, vamos adicionar a carga de trabalho do Azure e um idioma traduzido.  Agora, tanto a Área de Trabalho Gerenciada quanto o Azure são incluídos neste layout.  Os recursos de idioma para inglês e alemão estão incluídos para todas essas cargas de trabalho. O layout é atualizado para a versão mais recente disponível.
 
 ```cmd
-vs_enterprise.exe --layout c:\VS2017Layout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
+vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
 ```
 
 Se você deseja atualizar um layout existente para um layout completo, use a opção --all, conforme mostrado no exemplo a seguir.
 
 ```cmd
-vs_enterprise.exe --layout c:\VS2017Layout --all
+vs_enterprise.exe --layout c:\VSLayout --all
 ```
 
 ## <a name="deploy-from-a-network-installation"></a>Implantação por meio de uma instalação de rede
@@ -161,19 +195,23 @@ Os administradores podem implantar o Visual Studio em estações de trabalho cli
 
 * Os usuários podem fazer a instalação executando o seguinte comando: <br>
     ```cmd
-    \\server\products\VS2017\vs_enterprise.exe
+    \\server\products\VS\vs_enterprise.exe
     ```
 
 * Os administradores podem fazer a instalação em um modo autônomo executando o seguinte comando:
     ```cmd
-    \server\products\VS2017\vs_enterprise.exe --quiet --wait --norestart
+    \server\products\VS\vs_enterprise.exe --quiet --wait --norestart
     ```
 
 > [!IMPORTANT]
-> Para evitar erro, certifique-se de que seu caminho de instalação completo seja menor do que 80 caracteres.
+> Para evitar um erro, verifique se o caminho de instalação completo tem menos do que 80 caracteres.
 >
 > [!TIP]
-> Quando executada como parte de um arquivo em lotes, a opção `--wait` garante que o processo `vs_enterprise.exe` aguarde até que a instalação seja concluída antes de ela retornar um código de saída.<br><br>Isso é útil se um administrador corporativo deseja executar ações adicionais em uma instalação concluída (por exemplo, para [aplicar uma chave do produto (Product Key) a uma instalação bem-sucedida](automatically-apply-product-keys-when-deploying-visual-studio.md)), mas precisa aguardar a conclusão da instalação para obter o código de retorno dessa instalação.<br><br>Se você não usar `--wait`, o processo `vs_enterprise.exe` será encerrado antes que a instalação seja concluída e retornará um código de saída impreciso, que não representará o estado da operação de instalação.
+> Quando executada como parte de um arquivo em lotes, a opção `--wait` garante que o processo `vs_enterprise.exe` aguarde até que a instalação seja concluída antes de ela retornar um código de saída.
+>
+> Isso é útil se um administrador corporativo deseja executar ações adicionais em uma instalação concluída (por exemplo, para [aplicar uma chave do produto (Product Key) a uma instalação bem-sucedida](automatically-apply-product-keys-when-deploying-visual-studio.md)), mas precisa aguardar a conclusão da instalação para obter o código de retorno dessa instalação.
+>
+> Se você não usar `--wait`, o processo `vs_enterprise.exe` será encerrado antes que a instalação seja concluída e retornará um código de saída impreciso, que não representará o estado da operação de instalação.
 
 Quando você instala com base em um layout, o conteúdo instalado é adquirido do layout. No entanto, se você selecionar um componente que não está no layout, ele será adquirido da Internet.  Se você quiser impedir que a instalação do Visual Studio baixe qualquer conteúdo que está ausente em seu layout, use a opção `--noWeb`. Se `--noWeb` for usado e o layout não tiver qualquer conteúdo selecionado a ser instalado, a configuração falhará.
 
@@ -184,7 +222,7 @@ Quando você instala com base em um layout, o conteúdo instalado é adquirido d
 
 Se você tiver usado o parâmetro `--wait`, dependendo do resultado da operação, a variável de ambiente `%ERRORLEVEL%` será definida como um dos seguintes valores:
 
-  | **Valor** | **Result** |
+  | **Valor** | **Resultado** |
   | --------- | ---------- |
   | 0 | A operação foi concluída com êxito |
   | 3010 | A operação foi concluída com êxito, mas a instalação requer a reinicialização antes de ser usada |
@@ -194,12 +232,31 @@ Se você tiver usado o parâmetro `--wait`, dependendo do resultado da operaçã
 
 Quando atualizações de produto se tornam disponíveis, pode-se [atualizar o layout de instalação de rede](update-a-network-installation-of-visual-studio.md) para incorporar pacotes atualizados.
 
-## <a name="how-to-create-a-layout-for-a-previous-visual-studio-2017-release"></a>Como criar um layout para uma versão anterior do Visual Studio 2017
+## <a name="how-to-create-a-layout-for-a-previous-visual-studio-release"></a>Como criar um layout para uma versão anterior do Visual Studio
+
+::: moniker range="vs-2017"
 
 > [!NOTE]
-> Os bootstrappers do Visual Studio 2017 disponíveis em [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) baixam e instalam a última versão do Visual Studio 2017 disponível sempre que são executados.<br><br>Portanto, se você baixar um *bootstrapper* do Visual Studio hoje e executá-lo daqui a seis meses, ele instalará a versão do Visual Studio 2017 disponível no momento em que você executar o bootstrapper.<br><br>Porém, se você criar um *layout* e, em seguida, fizer a instalação por meio dele, o layout instalará a versão específica do Visual Studio existente nele. Mesmo que uma versão mais recente exista online, você obterá a versão do Visual Studio que está no layout.
+> Os bootstrappers do Visual Studio disponíveis em [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) baixam e instalam a última versão do Visual Studio disponível sempre que são executados.
+> 
+> Portanto, se você baixar um *bootstrapper* do Visual Studio hoje e executá-lo daqui a seis meses, ele instalará a versão do Visual Studio disponível no momento em que você executar o bootstrapper.
+> 
+> Porém, se você criar um *layout* e, em seguida, fizer a instalação por meio dele, o layout instalará a versão específica do Visual Studio existente nele. Mesmo que uma versão mais recente exista online, você obterá a versão do Visual Studio que está no layout.
 
-Caso precise criar um layout para uma versão mais antiga do Visual Studio 2017, acesse [https://my.visualstudio.com](https://my.visualstudio.com) para baixar versões "corrigidas" dos bootstrappers do Visual Studio 2017.
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+> [!NOTE]
+> Os bootstrappers do Visual Studio disponíveis em [visualstudio.microsoft.com](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) baixam e instalam a última versão do Visual Studio disponível sempre que são executados.
+> 
+> Portanto, se você baixar um *bootstrapper* do Visual Studio hoje e executá-lo daqui a seis meses, ele instalará a versão do Visual Studio disponível no momento em que você executar o bootstrapper.
+> 
+> Porém, se você criar um *layout* e, em seguida, fizer a instalação por meio dele, o layout instalará a versão específica do Visual Studio existente nele. Mesmo que uma versão mais recente exista online, você obterá a versão do Visual Studio que está no layout.
+
+::: moniker-end
+
+Caso precise criar um layout para uma versão mais antiga do Visual Studio, acesse [https://my.visualstudio.com](https://my.visualstudio.com) para baixar versões "corrigidas" dos bootstrappers do Visual Studio.
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>Como obter suporte para o instalador offline
 
@@ -215,4 +272,4 @@ Também temos outras opções de suporte disponíveis. Para obter uma lista dela
 * [Atualizações de controle para implantações do Visual Studio com base em rede](controlling-updates-to-visual-studio-deployments.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
 * [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Carga de trabalho do Visual Studio e IDs do componente](workload-and-component-ids.md)
+* [IDs de carga de trabalho e de componente do Visual Studio](workload-and-component-ids.md)
