@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d67dd56ad26d3dff3912ae5bdca979c2eaf9d9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 94fff3c08d9bf6be7467e98a08d107b65928bd60
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325286"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790661"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>Introdução ao IDE do Visual Studio
 
@@ -112,13 +112,13 @@ Vamos criar o projeto para ver uma saída de build. No menu **Compilação**, es
 
 ![Janela de Saída no Visual Studio](media/build-output-minimal.png)
 
-## <a name="quick-launch"></a>Início Rápido
+## <a name="search-box"></a>Caixa de pesquisa
 
-A caixa **Início Rápido** é uma maneira rápida e fácil de fazer praticamente tudo no Visual Studio. Você pode inserir um texto relacionado ao que você deseja fazer e ele mostrará uma lista de opções que pertencem ao texto. Por exemplo, imagine que você deseje aumentar o detalhamento da saída de build para que ela exiba mais detalhes sobre o que o build está fazendo exatamente. Veja como você pode fazer isso:
+A caixa pesquisa é uma maneira rápida e fácil de fazer praticamente tudo no Visual Studio. Você pode inserir um texto relacionado ao que você deseja fazer e ele mostrará uma lista de opções que pertencem ao texto. Por exemplo, imagine que você deseje aumentar o detalhamento da saída de build para que ela exiba mais detalhes sobre o que o build está fazendo exatamente. Veja como você pode fazer isso:
 
-1. Digite **detalhamento** na caixa **Início Rápido**. Nos resultados exibidos, escolha **Projetos e Soluções -> Compilar e Executar** na categoria **Opções**.
+1. Digite **detalhamento** na caixa de pesquisa. Nos resultados exibidos, escolha **Projetos e Soluções -> Compilar e Executar** na categoria **Opções**.
 
-   ![Caixa Início Rápido no Visual Studio](media/quickstart-IDE-quick-launch.png)
+   ![Caixa de pesquisa no Visual Studio](media/quickstart-IDE-quick-launch.png)
 
    A caixa de diálogo **Opções**é aberta na página de opções **Compilar e Executar**.
 
@@ -132,7 +132,7 @@ A caixa **Início Rápido** é uma maneira rápida e fácil de fazer praticament
 
 ## <a name="send-feedback-menu"></a>Menu Enviar Comentários
 
-Caso encontre problemas enquanto estiver usando o Visual Studio ou tenha sugestões de como melhorar o produto, use o menu **Enviar Comentários** na parte superior da janela do Visual Studio, ao lado da caixa **Início Rápido**.
+Caso encontre problemas enquanto estiver usando o Visual Studio ou se tiver sugestões de como melhorar o produto, use o menu **Enviar Comentários** na parte superior da janela do Visual Studio.
 
 ![Menu Enviar Comentários no Visual Studio](../ide/media/quickstart-ide-send-feedback.png)
 

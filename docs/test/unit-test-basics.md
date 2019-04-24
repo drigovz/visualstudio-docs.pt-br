@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 080674094ede1a1d0f38327fc47e238d5f958362
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416364"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647408"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 
@@ -78,7 +78,7 @@ Agora que temos alguns códigos, é hora de testar.
 
 ## <a name="create-unit-test-projects-and-test-methods"></a>Criar projetos de teste de unidade e métodos de teste
 
-Geralmente é mais rápido gerar o projeto de teste de unidade e os stubs de teste de unidade no seu código. Ou você pode optar por criar o projeto de teste de unidade e os testes manualmente, dependendo dos seus requisitos.
+Geralmente é mais rápido gerar o projeto de teste de unidade e os stubs de teste de unidade no seu código. Ou você pode optar por criar o projeto de teste de unidade e os testes manualmente, dependendo dos seus requisitos. Se você quiser criar testes de unidade com uma estrutura de terceiros, você precisará ter uma das seguintes extensões instalada: [NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) ou [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator).
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Gerar o projeto de teste de unidade e os stubs de teste de unidade
 
@@ -88,7 +88,7 @@ Geralmente é mais rápido gerar o projeto de teste de unidade e os stubs de tes
 
 2. Clique em **OK** para aceitar os padrões e criar os testes de unidade ou altere os valores usados para criar e nomear o projeto de teste de unidade e os testes de unidade. Você pode selecionar o código que é adicionado por padrão aos métodos de teste de unidade.
 
-    ![Clique com o botão direito do mouse no editor e escolha Criar Testes de Unidade](../test/media/createunittestsdialog.png)
+    ![Caixa de diálogo Criar Testes de Unidade no Visual Studio](../test/media/create-unit-tests.png)
 
 3. Os stubs de teste de unidade são criados em um novo projeto de teste de unidade para todos os métodos na classe.
 

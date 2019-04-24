@@ -12,27 +12,29 @@ caps.latest.revision: 14
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 189430a1ff22450f887cc8e6903db5537b137f17
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 8eede58ab2e17d417f50cbdfe517bcfba99a6b6f
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57872076"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652271"
 ---
 # <a name="install-multiple-language-versions-of-visual-studio"></a>Instalar várias versões de idioma do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente do Visual Studio 2017, consulte [pacotes de idioma de instalação no Visual Studio 2017](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-6---install-language-packs-optional).
+Para obter a documentação mais recente do Visual Studio, confira [Instalar pacotes de idiomas](/visualstudio/install/install-visual-studio?view=vs-2019#step-6---install-language-packs-optional).
 
 Ao instalar um ou mais pacotes de idioma, você pode executar o Visual Studio 2015 em outros idiomas no mesmo computador. Você deve obter um pacote de idioma separado para cada idioma que deseja instalar.
 
 ## <a name="important-considerations"></a>Considerações importantes
 
--   Quando você instala um pacote de idioma, os arquivos de recursos para os recursos instalados são instalados automaticamente para cada versão de idioma.
+- Quando você instala um pacote de idioma, os arquivos de recursos para os recursos instalados são instalados automaticamente para cada versão de idioma.
 
--   Os pacotes de serviços do Visual Studio aplicam-se a todas as versões de idioma instaladas do Visual Studio. Você não precisa instalar um pacote de serviço para cada versão de idioma do Visual Studio instalada.
+- Os pacotes de serviços do Visual Studio aplicam-se a todas as versões de idioma instaladas do Visual Studio. Você não precisa instalar um pacote de serviço para cada versão de idioma do Visual Studio instalada.
 
--   Você pode desinstalar pacotes de idioma usando o modo de manutenção da configuração do Visual Studio. Abra **Painel de Controle**, abra **Programas e Recursos**, escolha sua edição do Visual Studio e, em seguida, escolha **Desinstalar/Alterar**.
+- Você pode desinstalar pacotes de idioma usando o modo de manutenção da configuração do Visual Studio. Abra **Painel de Controle**, abra **Programas e Recursos**, escolha sua edição do Visual Studio e, em seguida, escolha **Desinstalar/Alterar**.
 
 ## <a name="see-also"></a>Consulte também
- [Microsoft Language Interface Packs (LIPs) e o Visual Studio](../install/microsoft-language-interface-packs-lips-and-visual-studio.md) [instalar o Visual Studio](../install/install-visual-studio-2015.md)
+
+- [Microsoft LIPs (Language Interface Packs) e Visual Studio](../install/microsoft-language-interface-packs-lips-and-visual-studio.md)
+- [Instalar o Visual Studio](../install/install-visual-studio-2015.md)

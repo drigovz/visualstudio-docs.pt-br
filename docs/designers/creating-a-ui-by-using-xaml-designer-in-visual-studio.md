@@ -1,6 +1,6 @@
 ---
 title: Criando uma interface do usuário usando o Designer XAML
-ms.date: 11/05/2018
+ms.date: 03/28/2019
 ms.topic: conceptual
 f1_keywords:
 - VS.XamlDesigner
@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 6c84017ac7cbeb33e4ce63297ade66d54dfa152b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3cd26f35111fc2e79290b30e7ae488b268e558d0
+ms.sourcegitcommit: f17e3afa5c324595afccf15a8a69df8c33b873d5
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955187"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58658860"
 ---
 # <a name="create-a-ui-by-using-xaml-designer-in-visual-studio"></a>Criar uma interface do usuário usando o Designer XAML no Visual Studio
 
@@ -104,56 +104,9 @@ A barra do modo divisão é exibida na parte superior do modo de exibição XAML
 
 O zoom de marcação permite dimensionar o modo de exibição **XAML**. Você pode aplicar zoom de 20% a 400%.
 
-## <a name="device-window"></a>Janela Dispositivo
-
-> [!NOTE]
-> Se a versão da plataforma de destino (`TargetPlatformVersion`) de um aplicativo UWP for 10.0.16299.0 ou superior, a janela **Dispositivo** não estará disponível.
-
-A janela **Dispositivo** no Designer XAML permite simular no tempo de design vários modos de exibição, vídeos e opções de exibição para o projeto. A janela **Dispositivo** fica disponível no menu **Design** quando você está trabalhando no Designer XAML. Veja como ela se parece:
-
-![Janela Dispositivo](../designers/media/xaml_editor_device_panel.png)
-
-Estas são as opções disponíveis na janela Dispositivo:
-
-**Vídeo**
-
-Especifica diferentes resoluções e tamanhos de exibição para o aplicativo.
-
-**Orientação**
-
-Especifica diferentes orientações para o aplicativo: **Paisagem** ou **Retrato**.
-
-**Borda**
-
-Especifica diferentes alinhamentos de borda para o aplicativo: **Ambos**, **Esquerda**, **Direita** ou **Nenhum**.
-
-**Alto Contraste**
-
-Visualize o aplicativo com base na configuração de contraste selecionada. Essa configuração, quando definida como um valor diferente do **Padrão**, substitui a propriedade `RequestedTheme` definida no arquivo *App.xaml*.
-
-**Substituir colocação em escala**
-
-Ativa e desativa a emulação da colocação de documento em escala na superfície de design. Isso permite aumentar o percentual de colocação em escala por um fator. Marque a caixa de seleção para ativar a emulação. Por exemplo, se o percentual de colocação em escala for de 100%, o documento na superfície de design será dimensionado em até 140%. Essa opção será desabilitada se o percentual de colocação em escala atual for de 180.
-
-**Largura mínima**
-
-Especifica a configuração de largura mínima. A largura mínima pode ser alterada em *App.xaml*.
-
-**Tema**
-
-Especifica o tema do aplicativo. Por exemplo, você pode alternar entre um tema **Escuro** e **Claro**.
-
-**Mostrar cromado**
-
-Ativa ou desativa o quadro de tablet simulado em torno do aplicativo no modo Design. Marque a caixa de seleção para mostrar o quadro.
-
-**Recortar para exibir**
-
-Especifica o modo de exibição. Marque a caixa de seleção para recortar o tamanho do documento de acordo com o tamanho do vídeo.
-
 ## <a name="document-outline-window"></a>Janela Estrutura de Tópicos de Documento
 
-A janela Estrutura de Tópicos de Documento no Designer XAML ajuda a executar estas tarefas:
+A janela Estrutura de Tópicos do Documento no Designer XAML é semelhante à janela **Objetos e Linha do Tempo** no Blend para Visual Studio. A **Estrutura de Tópicos do Documento** ajuda você a executar estas tarefas:
 
 - Exibir a estrutura hierárquica de todos os elementos no artboard.
 
@@ -165,11 +118,11 @@ A janela Estrutura de Tópicos de Documento no Designer XAML ajuda a executar es
 
 Para exibir a janela **Estrutura de Tópicos do Documento**, na barra de menus escolha **Exibir** > **Outras Janelas** > **Estrutura de Tópicos do Documento**.
 
-![Janela Estrutura de Tópicos de Documento](../designers/media/xaml_editor_doc_outline.png)
+![Janela Estrutura de Tópicos do Documento no Visual Studio](../designers/media/document-outline-window.png)
 
 Estas são as opções disponíveis na janela **Estrutura de Tópicos do Documento**:
 
-**Estrutura de Tópicos do Documento**
+**Estrutura de tópicos do documento**
 
 O modo de exibição principal na janela **Estrutura de Tópicos de Documento** exibe a hierarquia de um documento em uma estrutura de árvore. Você pode usar a natureza hierárquica da estrutura de tópicos de documento para examinar o documento em vários níveis de detalhes, bem como para bloquear e ocultar os elementos individualmente ou em grupos.
 
@@ -179,7 +132,7 @@ Exibe ou oculta os elementos da prancheta que correspondem aos itens na estrutur
 
 **Bloquear/desbloquear**
 
-Bloqueia ou desbloqueia os elementos do artboard que correspondem aos itens na Estrutura de Tópicos de Documento. Os elementos bloqueados não podem ser modificados. Use os botões **Bloquear/desbloquear**, que exibem um símbolo de cadeado quando bloqueados ou pressione **Ctrl**+**L** para bloquear elementos e **Shift**+**Ctrl**+**L** para desbloqueá-los.
+Bloqueia ou desbloqueia os elementos da prancheta que correspondem aos itens na estrutura de tópicos do documento. Os elementos bloqueados não podem ser modificados. Use os botões **Bloquear/desbloquear**, que exibem um símbolo de cadeado quando bloqueados ou pressione **Ctrl**+**L** para bloquear elementos e **Shift**+**Ctrl**+**L** para desbloqueá-los.
 
 **Retornar escopo para pageRoot**
 
@@ -189,9 +142,13 @@ A opção na parte superior da janela **Estrutura de Tópicos de Documento**, qu
 
 A janela **Propriedades** permite definir valores de propriedade em controles. Veja como ela se parece:
 
-![Janela de Propriedades](../designers/media/xaml_editor_prop_window.png)
+![Janela de Propriedades](../designers/media/xaml-designer-properties-window.png)
 
-Há várias opções na parte superior da janela **Propriedades**. Você pode alterar o nome do elemento atualmente selecionado usando a caixa **Nome**. No canto esquerdo superior, há um ícone que representa o elemento atualmente selecionado. Para organizar as propriedades por categoria ou em ordem alfabética, clique em **Categoria**, **Nome** ou **Fonte** na lista **Organizar por**. Para ver a lista de eventos de um controle, clique no botão **Eventos**, que exibe um símbolo de relâmpago. Para pesquisar uma propriedade, comece a digitar o nome da propriedade na caixa **Propriedades de Pesquisa**. A janela **Propriedades** exibe as propriedades que correspondem à pesquisa à medida que você digita. Algumas propriedades permitem que você defina propriedades avançadas selecionando um botão de seta para baixo. Para obter mais informações de como usar propriedades e manipular eventos, confira [Introdução a controles e padrões](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)
+Há várias opções na parte superior da janela **Propriedades**. Você pode alterar o nome do elemento atualmente selecionado usando a caixa **Nome**. No canto esquerdo superior, há um ícone que representa o elemento atualmente selecionado. Para organizar as propriedades por categoria ou em ordem alfabética, clique em **Categoria**, **Nome** ou **Fonte** na lista **Organizar por**. Para ver a lista de eventos de um controle, clique no botão **Eventos**, que exibe um símbolo de relâmpago.
+
+Para procurar uma propriedade, comece a digitar o nome da propriedade na caixa de pesquisa. A janela **Propriedades** exibe as propriedades que correspondem à pesquisa à medida que você digita. Algumas propriedades permitem que você defina propriedades avançadas selecionando um botão de seta para baixo.
+
+Para obter mais informações de como usar propriedades e manipular eventos, confira [Introdução a controles e padrões](/windows/uwp/design/controls-and-patterns/controls-and-events-intro)
 
 À direita de cada valor da propriedade, está um *marcador de propriedade* que é exibido como símbolo de caixa. A aparência do marcador da propriedade indica se existe uma associação de dados ou um recurso aplicado à propriedade. Por exemplo, um símbolo de caixa branca indica um valor padrão, um símbolo de caixa preta normalmente indica que um recurso local foi aplicado, e uma caixa laranja geralmente indica que uma associação de dados foi aplicada. Quando você clica no marcador da propriedade, pode navegar para a definição de um estilo, abrir o construtor da associação de dados ou abrir o selecionador de recurso.
 

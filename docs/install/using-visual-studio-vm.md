@@ -2,7 +2,7 @@
 title: Usando o Visual Studio em uma máquina virtual do Azure
 titleSuffix: ''
 description: Saiba como usar o Visual Studio de uma máquina virtual do Azure
-ms.date: 03/25/2019
+ms.date: 04/02/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 3853d91d6bd473499f47ad47c9d72e708420a1f3
-ms.sourcegitcommit: 8d453b345c72339c37b489a140dad00b244e6ba4
+ms.openlocfilehash: 669d239aa7c26a99774ce12cdd3e1b43c5d7ccb7
+ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/26/2019
-ms.locfileid: "58476014"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58866712"
 ---
 # <a id="top"> </a> Imagens do visual Studio no Azure
 
@@ -32,12 +32,12 @@ Novo usuário do Azure? [Crie uma conta gratuita do Azure](https://azure.microso
 
 ## <a name="what-configurations-and-versions-are-available"></a>Quais configurações e versões estão disponíveis?
 
-As imagens para as versões principais mais recentes, Visual Studio 2017 e Visual Studio 2015, podem ser encontradas no Azure Marketplace.  Recentemente, adicionamos o suporte para as Versões Prévias da próxima versão principal – Visual Studio 2019.  Para cada versão principal lançada, você verá a versão lançada originalmente (RTW) e as últimas versões atualizadas.  Cada uma dessas versões oferece as edições do Visual Studio Enterprise e do Visual Studio Community.  Essas imagens são atualizadas pelo menos uma vez por mês para incluir as atualizações mais recentes do Visual Studio e do Windows.  Embora os nomes das imagens permaneçam os mesmos, a descrição de cada imagem inclui a versão instalada do produto e a data "desde" da imagem.
+As imagens para as versões principais mais recentes, Visual Studio 2019, Visual Studio 2017 e Visual Studio 2015, podem ser encontradas no Azure Marketplace.  Para cada versão principal lançada, você verá a versão RTW (lançada originalmente para a Web) e as últimas versões atualizadas.  Cada uma dessas versões oferece as edições do Visual Studio Enterprise e do Visual Studio Community.  Essas imagens são atualizadas pelo menos uma vez por mês para incluir as atualizações mais recentes do Visual Studio e do Windows.  Embora os nomes das imagens permaneçam os mesmos, a descrição de cada imagem inclui a versão instalada do produto e a data "desde" da imagem.
 
 | Versão de lançamento                                              | Edições                     |     Versão do produto      |
 |:------------------------------------------------------------:|:----------------------------:|:------------------------:|
-|       Visual Studio 2019: Preview (RC3)                      |           Enterprise         |    Versão 16.0.0 RC3    |
-| Visual Studio 2017: Última (Versão 15.9)                    |    Enterprise, Community     |      Versão 15.9.9      |
+|       Visual Studio 2019: RTW                                |    Enterprise, Community     |      Versão 16.0.0      |
+| Visual Studio 2017: Última (Versão 15.9)                    |    Enterprise, Community     |      Versão 15.9.10     |
 |         Visual Studio 2017: RTW                              |    Enterprise, Community     |      Versão 15.0.22     |
 |   Visual Studio 2015: Última (Atualização 3)                      |    Enterprise, Community     |  Versão 14.0.25431.01   |
 |         Visual Studio 2015: RTW                              |             Nenhum             | (Expirado para manutenção)  |
@@ -121,5 +121,5 @@ Além disso, talvez as tarefas de desenvolvimento ou as tecnologias precisem de 
 
 Agora que você já conhece as imagens pré-configuradas do Visual Studio, a próxima etapa é criar uma nova VM:
 
-* [Criar uma VM por meio do Portal do Azure](/azure/virtual-machines/windows/quick-create-portal)
+* [Criar uma VM por meio do portal do Azure](/azure/virtual-machines/windows/quick-create-portal)
 * [Visão geral das máquinas virtuais do Windows](/azure/virtual-machines/windows/overview)

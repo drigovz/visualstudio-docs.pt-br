@@ -1,70 +1,36 @@
 ---
 title: Instalar estruturas de teste de unidade de terceiros
-ms.date: 06/07/2018
+ms.date: 04/01/2019
 ms.topic: conceptual
 ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: bf56749ccf49755fa66d44a3ab535d0b3e7611ce
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 9f61b52f72474a8ecd8fac4c30265dcd7cf36a5e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57982916"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857691"
 ---
 # <a name="install-unit-test-frameworks"></a>Instalar estruturas de teste de unidade
 
-O Gerenciador de Testes do Visual Studio pode executar qualquer estrutura de teste de unidade que desenvolveu uma interface de adaptador para o Gerenciador. O programa de instalação da estrutura instala os binários e adiciona modelos de projeto do Visual Studio para os idiomas que ele dá suporte. Quando você cria um projeto com o modelo, a estrutura é registrada com o Gerenciador de Testes. Uma solução do Visual Studio pode conter projetos de teste de unidade que usam diferentes estruturas e que são direcionados em diferentes idiomas. O Gerenciador de Testes executa todos eles.
+O Gerenciador de Testes do Visual Studio pode executar testes de qualquer estrutura de teste de unidade que desenvolveu uma interface de adaptador para ele. A instalação da estrutura copia os binários e adiciona modelos de projeto do Visual Studio para os idiomas que ele dá suporte. Quando você cria um projeto com o modelo, a estrutura é registrada com o Gerenciador de Testes.
 
-O [MSTest](getting-started-with-unit-testing.md) é a estrutura de teste fornecida pelo Visual Studio e é instalada com o Visual Studio por padrão.
+Uma solução do Visual Studio pode conter projetos de teste de unidade que usam diferentes estruturas e que são direcionados em diferentes idiomas.
+
+O [MSTest](getting-started-with-unit-testing.md) é a estrutura de teste fornecida pelo Visual Studio e é instalada por padrão.
 
 ## <a name="acquire-frameworks"></a>Adquirir estruturas
 
-Baixe e instale estruturas de teste de unidade de terceiros usando o Gerenciador de Extensões do Visual Studio ou o [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs). Estruturas também podem ser baixadas de outros sites, como o site da estrutura.
+Instalar estruturas de teste de unidade de terceiros usando o **Gerenciador de Pacotes do NuGet**.
 
-### <a name="install-from-visual-studio"></a>Instalar do Visual Studio
+1. Clique com o botão direito do mouse no projeto que conterá o código de teste e selecione **Gerenciar Pacotes do NuGet**.
 
-::: moniker range="vs-2017"
+2. No **Gerenciador de Pacotes do NuGet**, procure a estrutura de teste que você deseja instalar e, em seguida, clique em **Instalar**.
 
-1. Escolha **Ferramentas** > **Extensões e Atualizações**.
-
-::: moniker-end
-
-::: moniker range=">=vs-2019"
-
-1. Escolha **Extensões** > **Gerenciar Extensões**.
-
-::: moniker-end
-
-2. Expanda **Online** > **Visual Studio Marketplace** > **Ferramentas** e, em seguida, escolha **Testes**.
-
-3. Navegue pela lista para localizar a estrutura.
-
-4. Selecione a estrutura e escolha **Download**.
-
-Para obter mais informações, confira [Localizar e usar extensões do Visual Studio](../ide/finding-and-using-visual-studio-extensions.md).
-
-### <a name="install-from-the-web"></a>Instalação da Web
-
-Se você souber a estrutura em que você está interessado:
-
-1. Abra [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs).
-
-2. Digite o nome da estrutura na caixa **Localizar**.
-
-3. Escolha a estrutura na lista de resultados para navegar para a página do **Visual Studio Marketplace** da ferramenta.
-
-Para procurar uma lista de estruturas juntamente com outras ferramentas de teste:
-
-1. Abra [Visual Studio Marketplace](https://marketplace.visualstudio.com/vs).
-
-2. Em **Filtrar por categoria/coleção**, escolha **Ver tudo**.
-
-3. Na lista **Categoria** (rotulada como **Mostrando**), expanda o nó **Ferramentas** e, em seguida, escolha **Teste**.
-
-4. Escolha uma estrutura na lista de resultados para navegar para uma página do **Visual Studio Marketplace** da ferramenta.
+   ![Gerenciador de Pacotes do NuGet no Visual Studio](media/vs-2019/nuget-package-manager.png)
 
 ## <a name="update-to-the-latest-test-adapters"></a>Atualizar para os adaptadores de teste mais recentes
 
@@ -84,4 +50,4 @@ Atualização para o adaptador de teste estável mais recente para aproveitar me
 
 ## <a name="see-also"></a>Consulte também
 
-- [Efetuar teste de unidade em seu código](../test/unit-test-your-code.md)
+- [Efetue testes de unidade em seu código](../test/unit-test-your-code.md)

@@ -2,7 +2,7 @@
 title: Remover o Visual Studio
 titleSuffix: ''
 description: Saiba como remover completamente o Visual Studio de seu computador, passo a passo.
-ms.date: 09/12/2017
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -22,16 +22,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c115b345dbc1ddd3b13b2e0e7a9363229d971ea2
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 779771c51299239814f7ddd6a9cdbfbed017ac72
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322711"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790115"
 ---
 # <a name="remove-visual-studio"></a>Remover o Visual Studio
 
-Se você encontrar um erro fatal e não puder reparar ou desinstalar o Visual Studio, poderá executar a ferramenta `InstallCleanup.exe` para remover os arquivos de instalação e informações do produto de todas as instâncias instaladas do Visual Studio 2017 e versões posteriores. Essa ferramenta deverá ser executada como um último recurso se a reparação ou a desinstalação falhararem. Ela pode desinstalar recursos de outras instalações do Visual Studio ou outros produtos que precisam ser reparados.
+Se você encontrar um erro fatal e não puder reparar ou desinstalar o Visual Studio, poderá executar a ferramenta `InstallCleanup.exe` para remover os arquivos de instalação e informações do produto de todas as instâncias instaladas do Visual Studio 2017 ou Visual Studio 2019. Essa ferramenta deverá ser executada somente como um último recurso se a reparação ou a desinstalação falharem. Ela poderá desinstalar recursos de outras instalações do Visual Studio ou outros produtos que, nesse caso, talvez também precisem ser reparados.
 
 Nas instruções a seguir, você pode executar a ferramenta com diferentes opções de linha de comando com o seguinte comportamento:
 
@@ -42,8 +42,7 @@ Nas instruções a seguir, você pode executar a ferramenta com diferentes opç�
 
 1. Fechar o instalador do Visual Studio.
 2. Abrir um prompt de comando de administrador. Para abrir um prompt de comando de administrador, siga estas etapas:
-   * Clique no menu **Iniciar**
-   * Digite **cmd**.
+   * Digite **cmd** na caixa "Digite aqui para pesquisar".
    * Clique com o botão direito em **Prompt de Comando**e em **Executar como administrador**.
 3. Digite o caminho completo do utilitário `InstallCleanup.exe` e passe qualquer opção de linha de comando desejada. Por padrão, o caminho do utilitário é o seguinte:
    ```

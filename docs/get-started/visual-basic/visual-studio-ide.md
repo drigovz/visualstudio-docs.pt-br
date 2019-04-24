@@ -11,12 +11,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2bba6a290e8d34b2f809916341e9258ae5d36fa9
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: aa242fc8908ec7d07728b706c12f581e5f02548d
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324075"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58790674"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>Bem-vindo ao IDE do Visual Studio | Visual Basic
 
@@ -102,22 +102,24 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 
    ::: moniker-end
 
-- [Início Rápido](../../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Caixa de pesquisa
 
-   O Visual Studio pode parecer assustador, às vezes, com tantas propriedades, opções e menus. A caixa de pesquisa **Início Rápido** é uma ótima maneira de encontrar rapidamente o que você precisa no Visual Studio. Quando você começa a digitar o nome de algo que está procurando, o Visual Studio lista resultados que levam você exatamente para o local em que precisa ir. Caso você precise adicionar uma funcionalidade ao Visual Studio, por exemplo, para adicionar suporte a outra linguagem de programação, o **Início Rápido** fornecerá resultados que abrem o Instalador do Visual Studio para instalar uma carga de trabalho ou um componente individual.
+   O Visual Studio pode parecer assustador, às vezes, com tantas propriedades, opções e menus. A caixa de pesquisa é uma ótima maneira de encontrar rapidamente o que você precisa no Visual Studio. Quando você começa a digitar o nome de algo que está procurando, o Visual Studio lista resultados que levam você exatamente para o local em que precisa ir. Caso você precise adicionar uma funcionalidade ao Visual Studio, por exemplo, para adicionar suporte a outra linguagem de programação, a caixa de pesquisa fornecerá resultados que abrem o Instalador do Visual Studio para instalar uma carga de trabalho ou um componente individual.
 
    > [!TIP]
-   > Pressione **Ctrl**+**Q** como atalho para a pesquisa do **Início Rápido**.
+   > Pressione **Ctrl**+**Q** como atalho para a caixa de pesquisa.
 
    ::: moniker range="vs-2017"
 
    ![Caixa de pesquisa Início Rápido no Visual Studio 2017](../media/quick-launch-nuget.png)
 
+   Para obter mais informações, consulte [Início Rápido](../../ide/reference/quick-launch-environment-options-dialog-box.md).
+
    ::: moniker-end
 
    ::: moniker range=">=vs-2019"
 
-   ![Caixa de pesquisa Início Rápido no Visual Studio 2019](media/vs-2019/quick-launch.png)
+   ![Caixa de pesquisa no Visual Studio 2019](media/vs-2019/quick-launch.png)
 
    ::: moniker-end
 

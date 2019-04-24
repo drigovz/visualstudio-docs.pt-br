@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b9cd7e785b1c4ffa8613b6f5440a33b99dd2de6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 727bf173336a25f380cc938c3252530f86f22ab8
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955304"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647447"
 ---
 # <a name="modify-the-style-of-objects-in-blend"></a>Modificar o estilo de objetos no Blend
 
@@ -78,13 +78,13 @@ Na caixa de diálogo **Criar Recurso de Estilo**, você pode nomear o estilo ou 
 
 ### <a name="apply-a-style-or-template-to-a-control"></a>Aplicar um estilo ou modelo a um controle
 
-Clique com o botão direito do mouse em um objeto no painel [Objetos e Linha do Tempo](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-objects-and-timeline-panel), escolha **Editar Modelo** e escolha**Aplicar Recurso**.
+Clique com o botão direito do mouse em um objeto na janela [Objetos e Linha do Tempo](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#objects-and-timeline-window), escolha **Editar Modelo** e escolha **Aplicar Recurso**.
 
 ![Menu Aplicar Recurso](../designers/media/dc12debc-7711-47d9-84ce-10322a384397.png)
 
 ### <a name="restore-the-default-style-or-template-of-a-control"></a>Restaurar o estilo ou modelo padrão de um controle
 
-Selecione o controle e, no painel [Propriedades](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#tour-of-the-properties-panel), localize a propriedade **Estilo** ou **Modelo**. Escolha **Opções avançadas** e clique em **Redefinir** no menu de atalho.
+Selecione o controle e, na janela [Propriedades](../designers/creating-a-ui-by-using-blend-for-visual-studio.md#properties-window), localize a propriedade **Estilo** ou **Modelo**. Escolha **Opções avançadas** e clique em **Redefinir** no menu de atalho.
 
 ## <a name="visual-states-change-the-appearance-of-a-control-based-on-its-state"></a>Estados visuais: Alterar a aparência de um controle com base em seu estado
 

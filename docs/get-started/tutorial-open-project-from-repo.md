@@ -2,7 +2,7 @@
 title: 'Tutorial: Abrir um projeto de um repositório'
 description: Saiba como abrir um projeto em um repositório Git ou DevOps do Azure usando o Visual Studio.
 ms.custom: get-started
-ms.date: 03/13/2019
+ms.date: 03/30/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f017e0ef3d7b76ba4d5de18ecab614f030b07501
-ms.sourcegitcommit: 4ffb7be5384ad566ce46538032bf8561754c61a4
+ms.openlocfilehash: 928e77c5c28b76570525b8ea9037cd0d0cef7f99
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/15/2019
-ms.locfileid: "58070068"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857561"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Abrir um projeto de um repositório
 
@@ -33,11 +33,13 @@ Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads
 
 ::: moniker range="vs-2019"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019+rc) para instalá-lo gratuitamente.
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
 ## <a name="open-a-project-from-a-github-repo"></a>Abrir um projeto de um repositório GitHub
+
+::: moniker range="vs-2017"
 
 1. Abra o Visual Studio 2017.
 
@@ -69,7 +71,33 @@ Exiba a animação a seguir para verificar o trabalho que você concluiu a seç�
 
    ![Animação da abertura de um projeto em um repositório GitHub usando o Visual Studio](./media/open-project-from-github.gif)
 
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Abra o Visual Studio 2019.
+
+1. Na janela de início, escolha **Clonar ou verificar código**.
+
+   ![Exibir a janela 'Criar um novo projeto'](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+
+1. Insira ou digite a localização do repositório e, em seguida, escolha **Clonar**.
+
+   ![Exibir a janela 'Clonar ou verificar código'](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+
+   O Visual Studio abre o projeto do repositório.
+
+1. Se houver um arquivo de solução disponível, ele será exibido no menu suspenso "Soluções e Pastas". Escolha-o, e o Visual Studio abrirá sua solução.
+
+   ![Escolha o que você deseja abrir na lista suspensa do Gerenciador de Soluções](./media/open-proj-repo-github-solutions-folders-picker.png)
+
+   Se você não tiver um arquivo de solução (especificamente, um arquivo .sln) no seu repositório, o menu suspenso mostrará a mensagem "Nenhuma solução encontrada". No entanto, você pode clicar duas vezes em qualquer arquivo no menu de pastas para abri-lo no editor de códigos do Visual Studio.
+
+::: moniker-end
+
 ## <a name="open-a-project-from-an-azure-devops-repo"></a>Abrir um projeto de um repositório Azure DevOps
+
+::: moniker range="vs-2017"
 
 1. Abra o Visual Studio 2017.
 
@@ -103,7 +131,48 @@ Exiba a animação a seguir para verificar o trabalho que você concluiu a seç�
    Um arquivo de solução (especificamente, um arquivo .sln) será exibido no menu suspenso "Soluções e Pastas". Escolha-o, e o Visual Studio abrirá sua solução.
 
    Se você não tiver um arquivo de solução no seu repositório, o menu suspenso mostrará a mensagem "Nenhuma solução encontrada". No entanto, você pode clicar duas vezes em qualquer arquivo no menu de pastas para abri-lo no editor de códigos do Visual Studio.
-  
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Abra o Visual Studio 2019.
+
+1. Na janela de início, escolha **Clonar ou verificar código**.
+
+   ![Exibir a janela 'Criar um novo projeto'](../get-started/media/vs-2019/clone-checkout-code-dark.png)
+
+1. Na seção **Navegar em um repositório**, escolha **Azure DevOps**.
+
+   ![Exibir a janela 'Clonar ou verificar código'](../get-started/media/vs-2019/clone-checkout-code-git-repo-dark.png)
+
+   Se você vir uma janela de entrada, entre em sua conta.
+
+1. Na caixa de diálogo **Conectar-se a um Projeto**, escolha o repositório a que você deseja se conectar e escolha **Clone**.
+
+      ![A caixa de diálogo "Conectar-se a um Projeto" gerada a partir do Visual Studio](./media/open-proj-azure-devops-connect-cloud-clone.png)
+
+    > [!NOTE]
+    > O que é exibido na caixa de listagem depende dos repositórios Azure DevOps a que você tem acesso.
+
+   O Visual Studio abrirá o **Team Explorer** e uma notificação será exibida quando a clonagem for concluída.
+
+     ![A janela do Team Explorer no Visual Studio após a conclusão da clonagem](./media/vs-2019/clone-complete-azure-devops.png)
+
+1. Para exibir pastas e arquivos, escolha o link **Mostrar Exibição de Pasta**.
+
+     ![A seção Soluções da janela do Team Explorer no Visual Studio após a conclusão da clonagem](./media/vs-2019/show-folder-view-azure-devops.png)
+
+     O Visual Studio abre o **Gerenciador de Soluções**.
+
+1. Escolha o link **Soluções e Pastas** para procurar um arquivo de solução (especificamente, um arquivo .sln) para abrir.
+
+      ![A notificação "Soluções e Pastas" do Team Explorer no Visual Studio](./media/open-proj-repo-solutions-folders.png)
+
+   Se você não tiver um arquivo de solução no seu repositório, a mensagem "Nenhuma Solução Encontrada" aparecerá. No entanto, você pode clicar duas vezes em qualquer arquivo no menu de pastas para abri-lo no editor de códigos do Visual Studio.
+
+::: moniker-end
+
 ## <a name="next-steps"></a>Próximas etapas
 
 Se estiver pronto para codificar com o Visual Studio, aprofunde-se em qualquer um dos seguintes tutoriais específicos a um idioma:
@@ -116,5 +185,5 @@ Se estiver pronto para codificar com o Visual Studio, aprofunde-se em qualquer u
 
 ## <a name="see-also"></a>Consulte também
 
-- [Azure DevOps Services: introdução ao Azure Repos e ao Visual Studio](/azure/devops/repos/git/gitquickstart/)
-- [Microsoft Learn: introdução ao Azure DevOps](/learn/modules/get-started-with-devops/)
+- [Azure DevOps Services: Introdução ao Azure Repos e ao Visual Studio](/azure/devops/repos/git/gitquickstart/)
+- [Microsoft Learn: Introdução ao Azure DevOps](/learn/modules/get-started-with-devops/)
