@@ -5,16 +5,16 @@ description: Usar IDs de carga de trabalho e de componente do Visual Studio para
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.date: 03/01/2019
+ms.date: 04/02/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: f74b014efff346993dbebb1b605e8f6f194f1502
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 333ecaa39fb0f3ea736b2b2a3efc6980b1ff8d87
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160981"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58872901"
 ---
 ## <a name="azure-development-build-tools"></a>Ferramentas de build de desenvolvimento do Azure
 
@@ -76,7 +76,7 @@ Microsoft.Net.Component.4.5.TargetingPack | Pacote de direcionamento do .NET Fra
 Microsoft.Net.Component.4.6.TargetingPack | Pacote de direcionamento do .NET Framework 4.6 | 16.0.28517.75 | Recomendado
 Microsoft.Net.Component.4.TargetingPack | Pacote de direcionamento do .NET Framework 4 | 16.0.28517.75 | Recomendado
 Microsoft.Net.ComponentGroup.TargetingPacks.Common | Ferramentas de desenvolvimento do .NET Framework 4 a 4.6 | 16.0.28516.191 | Recomendado
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28528.71 | Recomendado
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Recomendado
 Microsoft.VisualStudio.Component.Roslyn.LanguageServices | C# e Visual Basic | 16.0.28625.61 | Recomendado
 Microsoft.VisualStudio.Component.SQL.SSDTBuildSku | SQL Server Data Tools – Ferramentas de Build | 16.0.28315.86 | Recomendado
 
@@ -94,7 +94,7 @@ Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Necessária
 Microsoft.Net.Component.4.6.1.SDK | SDK do .NET Framework 4.6.1 | 16.0.28517.75 | Necessária
 Microsoft.Net.Component.4.6.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.6.1 | 16.0.28517.75 | Necessária
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Os destinos e as tarefas de compilação do NuGet | 16.0.28625.61 | Necessária
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28528.71 | Necessária
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Necessária
 Microsoft.Component.ClickOnce.MSBuild | Ferramentas de build do ClickOnce | 16.0.28625.61 | Recomendado
 Microsoft.Net.Component.4.5.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.1 | 16.0.28517.75 | Recomendado
 Microsoft.Net.Component.4.5.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.5.2 | 16.0.28517.75 | Recomendado
@@ -131,7 +131,7 @@ ID do componente | Nome | Versão | Tipo de dependência
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Necessária
 Microsoft.VisualStudio.Component.CoreBuildTools | Principais Ferramentas de Build do Visual Studio | 16.0.28315.86 | Necessária
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28528.71 | Necessária
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Necessária
 
 ## <a name="net-core-build-tools"></a>Ferramentas de compilação do .NET Core
 
@@ -181,7 +181,7 @@ Microsoft.Net.Component.4.TargetingPack | Pacote de direcionamento do .NET Frame
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Ferramentas de desenvolvimento do .NET Framework 4.7.2 | 16.0.28516.191 | Necessária
 Microsoft.VisualStudio.Component.NuGet | Gerenciador de pacotes NuGet | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Os destinos e as tarefas de compilação do NuGet | 16.0.28625.61 | Necessária
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28528.71 | Necessária
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Necessária
 Microsoft.VisualStudio.Component.Sharepoint.BuildTools | Ferramentas de build de desenvolvimento do Office/SharePoint | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.Workflow.BuildTools | Ferramentas de Build do Windows Workflow Foundation | 16.0.28315.86 | Necessária
 Microsoft.VisualStudio.Wcf.BuildTools.ComponentGroup | Ferramentas de build do Windows Communication Foundation | 16.0.28516.191 | Necessária
@@ -216,7 +216,7 @@ Microsoft.Component.VC.Runtime.OSSupport | Tempo de execução da Plataforma Uni
 Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 16.0.28517.75 | Necessária
 Microsoft.Net.Core.Component.SDK.2.1 | Ferramentas de desenvolvimento do .NET Core 2.1 | 16.0.28621.142 | Necessária
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Os destinos e as tarefas de compilação do NuGet | 16.0.28625.61 | Necessária
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28528.71 | Necessária
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Necessária
 Microsoft.VisualStudio.Component.VC.Tools.ARM | MSVC v142 – ferramentas de build do C++ para VS 2019 ARM (v14.20) | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | MSVC v142 – ferramentas de build do C++ para VS 2019 x64/x86 (v14.20) | 16.0.28625.61 | Necessária
 Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | Pré-requisitos de build da Plataforma Universal do Windows | 16.0.28621.142 | Necessária
@@ -245,7 +245,7 @@ Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Opcional
 Microsoft.Component.VC.Runtime.UCRTSDK | SDK do CRT Universal do Windows | 16.0.28625.61 | Opcional
 Microsoft.Net.Component.4.6.1.SDK | SDK do .NET Framework 4.6.1 | 16.0.28517.75 | Opcional
 Microsoft.Net.Component.4.6.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.6.1 | 16.0.28517.75 | Opcional
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28528.71 | Opcional
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Opcional
 Microsoft.VisualStudio.Component.TextTemplating | Transformação de modelo de texto | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.VC.140 | MSVC v140 – ferramentas de build do C++ para VS 2015 (v14.00) | 16.0.28625.61 | Opcional
 Microsoft.VisualStudio.Component.VC.ATL | ATL do C++ para ferramentas de build v142 (x86 e x64) | 16.0.28625.61 | Opcional
@@ -274,7 +274,7 @@ Microsoft.Net.Component.4.7.2.SDK | SDK do .NET Framework 4.7.2 | 16.0.28517.75 
 Microsoft.Net.Component.4.7.2.TargetingPack | Pacote de direcionamento do .NET Framework 4.7.2 | 16.0.28517.75 | Necessária
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | Ferramentas de desenvolvimento do .NET Framework 4.7.2 | 16.0.28516.191 | Necessária
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Os destinos e as tarefas de compilação do NuGet | 16.0.28625.61 | Necessária
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28528.71 | Necessária
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Necessária
 Microsoft.VisualStudio.Component.VSSDKBuildTools | Núcleo de Ferramentas de Build do SDK do Visual Studio | 16.0.28315.86 | Necessária
 Microsoft.VisualStudio.ComponentGroup.VisualStudioExtensionBuildTools.Prerequisites | Pré-requisitos para o desenvolvimento de extensões do Visual Studio | 16.0.28528.71 | Necessária
 Component.Dotfuscator | Proteção PreEmptive – Dotfuscator | 16.0.28528.71 | Opcional
@@ -341,7 +341,7 @@ Microsoft.Component.MSBuild | MSBuild | 16.0.28517.75 | Necessária
 Microsoft.Net.Component.4.6.1.SDK | SDK do .NET Framework 4.6.1 | 16.0.28517.75 | Necessária
 Microsoft.Net.Component.4.6.1.TargetingPack | Pacote de direcionamento do .NET Framework 4.6.1 | 16.0.28517.75 | Necessária
 Microsoft.VisualStudio.Component.NuGet.BuildTools | Os destinos e as tarefas de compilação do NuGet | 16.0.28625.61 | Necessária
-Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28528.71 | Necessária
+Microsoft.VisualStudio.Component.Roslyn.Compiler | Compiladores Roslyn do C# e Visual Basic | 16.0.28714.129 | Necessária
 Component.Android.SDK27 | Instalação do SDK do Android (nível 27 da API) | 16.0.28517.75 | Opcional
 Component.OpenJDK | OpenJDK (distribuição da Microsoft) | 16.0.28625.61 | Opcional
 

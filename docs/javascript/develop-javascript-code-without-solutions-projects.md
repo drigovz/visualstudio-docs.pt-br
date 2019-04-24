@@ -13,21 +13,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 30479614158686ee50ba704bcf148760136138f0
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: 3d6e3479fe27c5d88b58f096ab5405d75c6c98e3
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796758"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857834"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>Desenvolver código JavaScript e TypeScript no Visual Studio sem projetos ou soluções
 
-O Visual Studio 2017 introduziu a capacidade de [desenvolver o código sem projetos nem soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), o que permite que você abra uma pasta de códigos e comece a trabalhar imediatamente com o suporte avançado do editor, como IntelliSense, pesquisa, refatoração, depuração, entre outros. Além desses recursos, as Ferramentas Node.js para Visual Studio adicionam suporte para criação de arquivos TypeScript, o gerenciamento de pacotes npm e a execução de scripts npm.
+Com o Visual Studio 2017 ou posterior, é possível [desenvolver o código sem projetos nem soluções](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md), o que permite que você abra uma pasta de códigos e comece a trabalhar imediatamente com o suporte avançado do editor, como IntelliSense, pesquisa, refatoração, depuração, entre outros. Além desses recursos, as Ferramentas Node.js para Visual Studio adicionam suporte para criação de arquivos TypeScript, o gerenciamento de pacotes npm e a execução de scripts npm.
 
 Para começar, selecione **Arquivo** > **Abrir** > **Pasta** na barra de ferramentas. O Gerenciador de Soluções exibe todos os arquivos na pasta, e você pode abrir qualquer um dos arquivos para começar a editar. Em segundo plano, o Visual Studio indexa os arquivos para habilitar recursos de npm, build e depuração.
 
 > [!IMPORTANT]
-> Muitos dos recursos descritos neste artigo, incluindo a integração com npm, exigem o Visual Studio 2017 versão 15.8.
+> Muitos dos recursos descritos neste artigo, incluindo a integração com npm, exigem o Visual Studio 2017 versão 15.8 ou posterior.
 
 ## <a name="npm-integration"></a>Integração com npm
 

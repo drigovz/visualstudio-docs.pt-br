@@ -1,5 +1,5 @@
 ---
-title: 'Como: estender o processo de Build | Microsoft Docs'
+title: Como estender o processo de build | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: msbuild
@@ -14,16 +14,15 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 43b95fd47c2d5b859478814dd330c175e82bac89
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 1f86605f3e76dc17fd8e404eb0d189f51ff2dc69
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758659"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59652157"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Como estender o processo de build do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
-
 
 O processo de build [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é definido por uma série de arquivos .targets [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que são importados para seu arquivo de projeto. Um desses arquivos importados, Microsoft.Common.targets, pode ser estendido para permitir a execução de tarefas personalizadas em vários pontos no processo de build. Este tópico explica os dois métodos que você pode usar para estender o processo de build do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:
 
@@ -127,4 +126,4 @@ O processo de build [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é definido por
 |`CompileDependsOn`|A propriedade a ser substituída se você quiser inserir processos personalizados antes ou após a etapa de compilação.|
 
 ## <a name="see-also"></a>Consulte também
- [Integração do Visual Studio](../msbuild/visual-studio-integration-msbuild.md) [conceitos do MSBuild](../msbuild/msbuild-concepts.md) [. Arquivos de destino](../msbuild/msbuild-dot-targets-files.md)
+ [Integração com o Visual Studio](../msbuild/visual-studio-integration-msbuild.md) [Conceitos do MSBuild](../msbuild/msbuild-concepts.md) [.Arquivos de destino](../msbuild/msbuild-dot-targets-files.md)

@@ -9,26 +9,27 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10cf59d4350d71d6f7feb75757b1c5ea9c9d1363
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54834433"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59665136"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>How to Report a Problem with Visual Studio 2015 (Como relatar um problema com o Visual Studio 2015)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-Para obter a documentação mais recente do Visual Studio 2017, consulte [como relatar um problema no Visual Studio 2017](/visualstudio/ide/how-to-report-a-problem-with-visual-studio-2017).
+Para obter a documentação mais recente sobre Visual Studio, confira [Como relatar um problema no Visual Studio](/visualstudio/ide/how-to-report-a-problem-with-visual-studio).
 
-Se você encontrar um problema com o Visual Studio 2015, queremos saber sobre ele para que possamos pode diagnosticar e corrigi-lo.  Usando a ferramenta **Relatar um Problema**, você pode coletar informações detalhadas sobre o problema e enviá-las à Microsoft com apenas alguns cliques de botão.
+Se você encontrar um problema com o Visual Studio 2015, gostaríamos de saber sobre isso para que possamos diagnosticá-lo e corrigi-lo.  Usando a ferramenta **Relatar um Problema**, você pode coletar informações detalhadas sobre o problema e enviá-las à Microsoft com apenas alguns cliques de botão.
 
- A Microsoft respeita sua privacidade. Para obter informações sobre como tratamos os dados que você nos envia, consulte a [Política de privacidade da família de produtos do Microsoft Visual Studio](https://www.visualstudio.com/dn948229).
+A Microsoft respeita sua privacidade. Para obter informações sobre como tratamos os dados que você nos envia, consulte a [Política de privacidade da família de produtos do Microsoft Visual Studio](https://www.visualstudio.com/dn948229).
 
 ## <a name="open-the-report-a-problem-tool"></a>Abrir a ferramenta Relatar um Problema
- Clique no ícone de comentários do usuário ao lado de **Início Rápido** na barra de título ou clique em **Ajuda &#124; Enviar Comentários &#124; Relatar um Problema**.
 
- ![Item de menu Relatar um Problema](../ide/media/report-a-problem-menu-item.png "Item de menu Relatar um Problema")
+Clique no ícone de comentários do usuário ao lado de **Início Rápido** na barra de título ou clique em **Ajuda > Enviar Comentários > Relatar um Problema**.
+
+![Item de menu Relatar um Problema](../ide/media/report-a-problem-menu-item.png "Item de menu Relatar um Problema")
 
 ## <a name="describe-the-problem"></a>Descrever o problema
 
@@ -43,7 +44,8 @@ Se você encontrar um problema com o Visual Studio 2015, queremos saber sobre el
    ![Caixa de diálogo Relatar um Problema](../ide/media/report-a-problem-dialog.png "Caixa de diálogo Relatar um Problema")
 
 ## <a name="provide-a-screenshot-optional"></a>Fornecer uma captura de tela (opcional)
- Escolha **Incluir uma captura de tela** para enviar sua tela atual à Microsoft. A ferramenta permite que você recorte a imagem para mostrar apenas a parte da tela que mostra o problema. Você pode anexar capturas de tela adicionais ou outros arquivos clicando no botão **Anexar Arquivos Adicionais**.
+
+Escolha **Incluir uma captura de tela** para enviar sua tela atual à Microsoft. A ferramenta permite que você recorte a imagem para mostrar apenas a parte da tela que mostra o problema. Você pode anexar capturas de tela adicionais ou outros arquivos clicando no botão **Anexar Arquivos Adicionais**.
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Fornecer um despejo de heap e rastreamento (opcional)
 
@@ -60,10 +62,13 @@ Se você encontrar um problema com o Visual Studio 2015, queremos saber sobre el
      ![Gravar um arquivo de rastreamento](../ide/media/record-a-trace-file.png "Gravar um arquivo de rastreamento")
 
 ## <a name="describe-the-workaround-if-there-is-one"></a>Descrever a solução alternativa, se houver uma
- Se você conseguir contornar o problema, descreva a solução alternativa na caixa de edição fornecida para essa finalidade. Isso nos ajuda não apenas a diagnosticar o problema, mas também a ajudar outros usuários que podem ter o mesmo problema.
+
+Se você conseguir contornar o problema, descreva a solução alternativa na caixa de edição fornecida para essa finalidade. Isso nos ajuda não apenas a diagnosticar o problema, mas também a ajudar outros usuários que podem ter o mesmo problema.
 
 ## <a name="submit-the-report"></a>Enviar o relatório
- Clique no botão Enviar para enviar seu relatório, juntamente com as imagens e os arquivos de despejo ou de rastreamento. Se o botão **Enviar** estiver esmaecido, certifique-se de que você forneceu um título e uma descrição.
+
+Clique no botão Enviar para enviar seu relatório, juntamente com as imagens e os arquivos de despejo ou de rastreamento. Se o botão **Enviar** estiver esmaecido, certifique-se de que você forneceu um título e uma descrição.
 
 ## <a name="see-also"></a>Consulte também
- [Fale conosco](../ide/talk-to-us.md)
+
+- [Fale conosco](../ide/talk-to-us.md)

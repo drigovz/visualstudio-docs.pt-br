@@ -6,12 +6,12 @@ ms.author: gewarren
 author: gewarren
 manager: jillfra
 ms.topic: include
-ms.openlocfilehash: 63e39c3879d51a34bc61f703eaae1e75dc2fd742
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: cd4fefc8a3f63cf3c4bf4c2ca61a09ce9e40170a
+ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58342648"
+ms.lasthandoff: 04/01/2019
+ms.locfileid: "58807385"
 ---
 O *ambiente de desenvolvimento integrado* do Visual Studio é um painel de inicialização criativo que você pode usar para editar, depurar e compilar o código e, em seguida, publicar um aplicativo. Um IDE (ambiente de desenvolvimento integrado) é um programa repleto de recursos que pode ser usado por muitos aspectos do desenvolvimento de software. Além do editor e do depurador padrão fornecidos pela maioria dos IDEs, o Visual Studio inclui compiladores, ferramentas de preenchimento de código, designers gráficos e muitos outros recursos para facilitar o processo de desenvolvimento de software.
 
@@ -91,22 +91,24 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 
    ![Lista de membros do Visual Studio](../media/intellisense-list-members.png)
 
-- [Início Rápido](../../ide/reference/quick-launch-environment-options-dialog-box.md)
+- Caixa de pesquisa
 
-   O Visual Studio pode parecer assustador, às vezes, com tantas propriedades, opções e menus. A caixa de pesquisa **Início Rápido** é uma ótima maneira de encontrar rapidamente o que você precisa no Visual Studio. Quando você começa a digitar o nome de algo que está procurando, o Visual Studio lista resultados que levam você exatamente para o local em que precisa ir. Caso você precise adicionar uma funcionalidade ao Visual Studio, por exemplo, para adicionar suporte a outra linguagem de programação, o **Início Rápido** fornecerá resultados que abrem o Instalador do Visual Studio para instalar uma carga de trabalho ou um componente individual.
+   O Visual Studio pode parecer assustador, às vezes, com tantas propriedades, opções e menus. A caixa de pesquisa é uma ótima maneira de encontrar rapidamente o que você precisa no Visual Studio. Quando você começa a digitar o nome de algo que está procurando, o Visual Studio lista resultados que levam você exatamente para o local em que precisa ir. Caso você precise adicionar uma funcionalidade ao Visual Studio, por exemplo, para adicionar suporte a outra linguagem de programação, a caixa de pesquisa fornecerá resultados que abrem o Instalador do Visual Studio para instalar uma carga de trabalho ou um componente individual.
 
    > [!TIP]
-   > Pressione **Ctrl**+**Q** como atalho para a pesquisa do **Início Rápido**.
+   > Pressione **Ctrl**+**Q** como atalho para a caixa de pesquisa.
 
    ::: moniker range="vs-2017"
 
    ![Caixa de pesquisa Início Rápido no Visual Studio 2017](../media/quick-launch-nuget.png)
 
+   Para obter mais informações, consulte [Início Rápido](../../ide/reference/quick-launch-environment-options-dialog-box.md).
+
    ::: moniker-end
 
    ::: moniker range="vs-2019"
 
-   ![Caixa de pesquisa Início Rápido no Visual Studio 2019](../media/vs-2019/quick-launch-nuget.png)
+   ![Caixa de pesquisa no Visual Studio 2019](../media/vs-2019/quick-launch-nuget.png)
 
    ::: moniker-end
 

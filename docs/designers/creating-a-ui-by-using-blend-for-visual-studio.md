@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7886981dd3bc2ed93e987256a906f021e6ea5f2a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a27799eb9c22ec633d5c8d8604fe58d6924cd623
+ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941070"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58647434"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Visão geral do Blend para Visual Studio
 
@@ -30,11 +30,18 @@ Se você estiver começando a usar o Blend for Visual Studio, reserve um tempo p
 > [!NOTE]
 > Para fazer um tour pelos recursos de design compartilhados, como a prancheta, a janela **Estrutura de Tópicos do Documento** e a janela **Dispositivo**, confira [Criando uma interface do usuário usando o Designer XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 
-## <a name="tour-of-the-tools-panel"></a>Tour pelo painel Ferramentas
+## <a name="tools-panel"></a>Painel Ferramentas
 
-É possível usar o painel **Ferramentas** no Blend for Visual Studio para criar e modificar objetos no aplicativo. Você cria os objetos selecionando uma ferramenta e desenhando na prancheta com o mouse.
+É possível usar o painel **Ferramentas** no Blend for Visual Studio para criar e modificar objetos no aplicativo. O painel **Ferramentas** aparece no lado esquerdo do Designer XAML quando você tem um arquivo *.xaml* aberto.
 
-![Painel Ferramentas](../designers/media/blend5toolspanel.png)
+Você cria os objetos selecionando uma ferramenta e desenhando na prancheta com o mouse.
+
+![Painel Ferramentas no Blend para Visual Studio](../designers/media/blend5toolspanel.png)
+
+> [!TIP]
+> Algumas das ferramentas no painel **Ferramentas** têm variações (mostradas na ilustração como A a F). Para acessar essas variações, clique com o botão direito do mouse na ferramenta ou clique nela e mantenha o botão do mouse pressionado.
+>
+> ![Variações de ferramenta Forma no Blend para Visual Studio](media/rectangle-shape-tool-blend.png)
 
 |||||
 |-|-|-|-|
@@ -45,13 +52,11 @@ Se você estiver começando a usar o Blend for Visual Studio, reserve um tempo p
 |![Ferramentas de ativo](../designers/media/b1_5.png)|**Ferramentas de ativos** Acesse o painel **Ativos** e mostre o ativo usado mais recentemente na biblioteca.|![Texto explicativo E](../designers/media/b5_label_e.png)|**Controles de texto**|
 |||![Texto explicativo F](../designers/media/b5_label_f.png)|**Controles comuns**|
 
-**Assista a um breve vídeo:** ![Configurar as funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [A barra de ferramentas](https://www.youtube.com/watch?v=VkdUJcvoo54&list=PLBDF977B2F1DAB358&index=4).
+## <a name="assets-window"></a>Janela Ativos
 
-## <a name="tour-of-the-assets-panel"></a>Tour pelo painel Ativos
+A janela **Ativos** contém todos os controles disponíveis e é semelhante à **Caixa de ferramentas** no Visual Studio. Além dos controles, você encontrará tudo o que pode adicionar à sua prancheta na janela **Ativos**, incluindo estilos, mídias, comportamentos e efeitos. Para abrir a janela **Ativos**, escolha **Exibir** > **Janela Ativos** ou pressione **Ctrl**+**Alt**+**X**.
 
-É possível encontrar todos os controles no painel **Ativos**, semelhante à **Caixa de ferramentas** no Visual Studio. Além dos controles, você encontrará tudo o que pode adicionar à sua prancheta no painel **Ativos**, incluindo estilos, mídias, comportamentos e efeitos.
-
-![Painel Ativos](../designers/media/blend5_assets_panel.png)
+![Janela Ativos no Blend para Visual Studio](../designers/media/blend5_assets_panel.png)
 
 |||
 |-|-|
@@ -61,11 +66,11 @@ Se você estiver começando a usar o Blend for Visual Studio, reserve um tempo p
 |![Estilos](../designers/media/b1_4.png)|**Estilos** Mostre todos os estilos contidos no dicionário de recursos.|
 |![Descrição](../designers/media/b1_5.png)|**Descrição** Exiba uma descrição da categoria ou subcategoria de ativos selecionada.|
 
-## <a name="tour-of-the-objects-and-timeline-panel"></a>Tour pelo painel Objetos e Linha do Tempo
+## <a name="objects-and-timeline-window"></a>Janela Objetos e Linha do Tempo
 
-Use esse painel para organizar os objetos na prancheta e, se quiser, para animá-los.
+Use essa janela para organizar os objetos na prancheta e, se quiser, para animá-los. Para abrir a janela **Objetos e Linha do Tempo**, escolha **Exibição** > **Objetos e Linha do Tempo** ou pressione **Ctrl**+**W**, **U**.
 
-![Painel Objeto e Linha do Tempo no modo de animação](../designers/media/b5_object_timeline_animation.png)
+![Janela Objetos e Linha do Tempo no modo de animação](../designers/media/b5_object_timeline_animation.png)
 
 |||
 |-|-|
@@ -86,11 +91,11 @@ Use esse painel para organizar os objetos na prancheta e, se quiser, para animá
 |![Zoom da linha do tempo](../designers/media/b1_15.png)|**Zoom da linha do tempo** Defina a resolução de zoom da linha do tempo. Aumentar o zoom permite editar uma animação com mais detalhes e diminuir o zoom mostra mais uma visão geral do que está acontecendo no decorrer de períodos de tempo mais longos. Se você aumentar o zoom, mas não conseguir definir um quadro chave na posição de tempo desejada, verifique se a resolução de ajuste está definida com um valor suficientemente alto.|
 |![Texto explicativo 16](../designers/media/b5_label_16.png)|**Área de composição da linha do tempo** Exiba a linha do tempo e mova quadros chave arrastando-os ou usando os menus de atalho.|
 
-## <a name="tour-of-the-properties-panel"></a>Tour pelo painel Propriedades
+## <a name="properties-window"></a>Janela de Propriedades
 
-Use esse painel para exibir e modificar as propriedades de um objeto. Você também pode defini-las diretamente na prancheta. Nesse caso, as alterações na propriedade serão refletidas no painel **Propriedades**.
+Use essa janela para exibir e modificar as propriedades de um objeto. Você também pode defini-las diretamente na prancheta. Nesse caso, as alterações na propriedade são refletidas na janela **Propriedades**. Para abrir a janela **Propriedades**, escolha **Exibir** > **Janela Propriedades** ou pressione **Ctrl**+**W**, **P**.
 
-![Painel Propriedades](../designers/media/blend5_properties_panel.png)
+![Janela Propriedades no Blend para Visual Studio](../designers/media/blend5_properties_panel.png)
 
 **Categorias** Expanda e recolha categorias de propriedades. Clique em **Expandir** ![Expandir](../designers/media/6375953d-074c-421a-bbb3-6f5055b67b64.png) e em **Recolher** ![Recolher](../designers/media/b5_collapse_button.png) para mostrar ou ocultar detalhes da categoria.
 
@@ -113,8 +118,6 @@ Use esse painel para exibir e modificar as propriedades de um objeto. Você tamb
 |![](../designers/media/b1_15.png)|**Valor hexadecimal** Exibe o valor hexadecimal da cor exibida.|
 |![Texto explicativo 16](../designers/media/b5_label_16.png)|**Controle deslizante de gradiente** É exibido somente se um pincel de gradiente é selecionado.|
 |![Propriedades avançadas de apresentação](../designers/media/d50027a1-6824-4ad8-8b4e-558b0756dcf8.png)|**Mostrar propriedades avançadas** Exiba categorias das propriedades menos usadas.|
-
-**Assista a um breve vídeo:** ![Configurar as funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Painel Propriedades](https://www.youtube.com/watch?v=HCqQfiobdag&list=PLBDF977B2F1DAB358&index=7).
 
 ## <a name="see-also"></a>Consulte também
 

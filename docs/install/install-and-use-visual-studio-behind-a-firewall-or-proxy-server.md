@@ -1,7 +1,7 @@
 ---
 title: Instalar e usar por trás de um firewall ou servidor proxy
 description: Examine as URLs de domínio, as portas e os protocolos que você pode querer adicionar à lista de permissões ou abrir se sua organização usar um firewall ou um servidor proxy
-ms.date: 07/10/2018
+ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b483115daf15d7bf44c188e76993e5ffaedab699
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 227525b08e45832041b573fbb7cf3719484d1b8e
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323838"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58857522"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy
 
@@ -102,7 +102,7 @@ Para certificar-se de que você tem acesso a tudo o que é necessário ao usar o
 | Informações do repositório GitHub | api.github.com | HTTPS | 443 | Necessária para obter informações adicionais sobre pacotes de Bower |
 | Linters da Web | Eslint.org<br><br>www.Bing.com <br><br>www.coffeelint.org | HTTP | 80 | |
 | Criação do projeto do<br>Explorador do Cookiecutter<br>descoberta <br><br>Criação do projeto do <br>Explorador do Cookiecutter<br> criação  | api.github.com <br>raw.githubusercontent.com <br>go.microsoft.com<br><br>pypi.org <br> pypi.python.org | HTTPS | 443<br> | Usada para descobrir modelos online de nosso feed recomendado e de repositórios GitHub <br><br>Usada para criar um projeto de um modelo de cookiecutter que requer uma instalação sob demanda única de um pacote do Python de cookiecutter do PyPI (índice de pacote do Python) |
-| Pacote do Python <br>descoberta<br><br>Pacote do Python <br>gerenciamento<br><br>Python <br>Novo Projeto <br>modelos | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | HTTPS | 443 | Fornece a capacidade de pesquisar pacotes de pip<br><br>Usada para instalar o pip automaticamente se ele estiver ausente <br><br> Usada para criar o <br><br>Usada para resolver os seguintes modelos de projeto do Python na caixa de diálogo Novo Projeto para URLs de modelo do cookiecutter:<br> – Projeto de classificador<br>– Projeto de clustering <br> – Projeto de regressão <br> – PyGame usando PyKinect <br> – Projeto Pyvot |
+| Pacote do Python <br>descoberta<br><br>Pacote do Python <br>gerenciamento<br><br>Novo <br>Python <br> projeto <br>modelos | pypi.org<br> <br>pypi.python.org <br>bootstrap.pypa.io<br><br>go.microsoft.com | HTTPS | 443 | Fornece a capacidade de pesquisar pacotes de pip<br><br>Usada para instalar o pip automaticamente se ele estiver ausente <br><br>Usada para resolver os seguintes novos modelos de projeto do Python para URLs de modelo do cookiecutter:<br> – Projeto de classificador<br>– Projeto de clustering <br> – Projeto de regressão <br> – PyGame usando PyKinect <br> – Projeto Pyvot |
 | Web do Office <br>add-in <br> Manifest <br>Verificação <br>Serviço | verificationservice.osi.office.net | HTTPS | 443 | Usada para validar os manifestos de suplementos de Web do Office |
 | Suplementos do SharePoint <br>e do Office | sharepoint.com | HTTPS | 443 | Usada para publicar e testar o SharePoint e os Suplementos do Office para o SharePoint Online |
 | Serviço de teste do <br>Gerenciador de Fluxo de Trabalho<br> Host | | HTTP | 12292 | Uma regra de firewall que é criada automaticamente para testar suplementos do SharePoint com fluxos de trabalho |
@@ -141,6 +141,7 @@ Aqui estão algumas outras opções de suporte:
 
 ## <a name="see-also"></a>Consulte também
 
+* [Requisitos de conectividade do Live Share](/visualstudio/liveshare/reference/connectivity/)
 * [Criar uma instalação de rede do Visual Studio](create-a-network-installation-of-visual-studio.md)
 * [Solução de erros relacionados à rede no Visual Studio](troubleshooting-network-related-errors-in-visual-studio.md)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
