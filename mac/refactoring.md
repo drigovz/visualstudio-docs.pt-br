@@ -1,17 +1,17 @@
 ---
 title: Código de refatoração
-description: Facilita a tarefa de reorganizar o código no Visual Studio para Mac usando a Análise de Código-Fonte.
+description: Como refinar código usando o Visual Studio para Mac e ações rápidas.
 author: conceptdev
 ms.author: crdun
-ms.date: 05/06/2018
+ms.date: 03/29/2019
 ms.assetid: C7782BF3-016F-4B41-8A81-85FC540A1A8F
 ms.custom: video
-ms.openlocfilehash: d7df01e2d2c6e4acb347b40cb82a04bee9394fe1
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 48e290fddd1c4b7c95ac5e76cb6cf5908247e6f6
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335383"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856509"
 ---
 # <a name="refactoring"></a>Refatoração
 
@@ -23,25 +23,45 @@ A integração do Visual Studio para Mac com o Roslyn, a plataforma de compilado
 
 ## <a name="renaming"></a>Renomear
 
-O comando de refatoração *Renomear* pode ser usado em qualquer identificador de código (por exemplo, um nome de classe, nome de propriedade, etc.) para localizar todas as ocorrências do identificador em questão e alterá-las. Para renomear um símbolo, clique com botão direito do mouse nele e escolha **Refatorar > Renomear** ou a associação de teclas **Cmd + R**:
+O comando de refatoração *Renomear* pode ser usado em qualquer identificador de código (por exemplo, um nome de classe, nome de propriedade, etc.) para localizar todas as ocorrências do identificador em questão e alterá-las. Para renomear um símbolo, clique com o botão direito do mouse nele e escolha **Renomear...** ou use a associação de teclas **Cmd (⌘) + R**:
 
 ![Renomear um item de menu](media/refactoring-renaming1.png)
 
-Isso destaca o símbolo e todas as referências a ele. Quando você começar a digitar um novo nome, ele será alterado automaticamente em todas as referências no código e você poderá sinalizar a conclusão da renomeação pressionando **Enter**:
+Isso destaca o símbolo e todas as referências a ele. Quando você começar a digitar um novo nome, ele será alterado automaticamente em todas as referências no código e você poderá confirmar as alterações pressionando **Enter**:
 
 ![Renomear e identificador](media/refactoring-renaming2.png)
 
-## <a name="context-actions"></a>Ações de contexto
+## <a name="quick-actions"></a>Ações rápidas
 
-Ações de contexto permitem que você inspecione qualquer código C# e veja todas as possíveis opções de refatoração.
+As Ações Rápidas permitem refatorar, gerar ou, de outro modo, modificar o código de maneira fácil com uma única ação.
 
-Os itens de contexto **Resolver** e **Refatorar** são combinados em um único item *Correção rápida...* que fornece todas as ações de contexto disponíveis:
+É possível usar as Ações rápidas para:
+
+* Aplicar uma correção de código para uma violação de regra do analisador de código
+* Suprimir uma violação de regra do analisador de código
+* Aplicar uma refatoração (por exemplo, embutir uma variável temporária)
+* Gerar um código (por exemplo, introduzir uma variável local)
+
+Agora, as correções rápidas podem ser aplicadas usando os ícones de lâmpada ![ícone de lâmpada](media/quick-actions-light-bulb-icon.png) ou chave de fenda ![ícone chave de fenda](media/quick-actions-screwdriver-icon.png) ou pressionando **Opção (⌥)**+**Enter** quando o cursor estiver em uma linha de código em que a ação está disponível. Você verá uma lâmpada erro ![ícone de lâmpada de erro](media/quick-actions-error-light-bulb-icon.png) se houver um rabisco vermelho, indicando um erro e o Visual Studio terá uma solução disponível para esse erro.
+
+Para qualquer idioma, terceiros podem oferecer diagnósticos e sugestões personalizados, por exemplo, como parte de um SDK, e as lâmpadas do Visual Studio são acesas de acordo com essas regras.
+
+### <a name="quick-action-icons"></a>Ícones de Ação Rápida
+O ícone exibido quando uma Ação Rápida fica disponível oferece uma indicação do tipo de correção ou que a refatoração está disponível. O ícone de *chave de fenda* ![ícone de chave de fenda](media/quick-actions-screwdriver-icon.png) indica apenas que há ações disponíveis para alterar o código, mas você não deve necessariamente usá-las. O ícone de *lâmpada amarela* ![ícone de lâmpada](media/quick-actions-light-bulb-icon.png) indica que há ações disponíveis que você *deve* executar para melhorar o seu código. O ícone de *lâmpada de erro* ![ícone de lâmpada de erro](media/quick-actions-error-light-bulb-icon.png) indica que há uma ação disponível que corrige um erro no seu código.
+
+### <a name="to-see-a-light-bulb-or-screwdriver"></a>Para ver uma lâmpada ou chave de fenda
+
+- Se uma correção estiver disponível, lâmpadas serão exibidas espontaneamente quando você passar o mouse no local de um erro.
+
+   ![Lâmpada com o mouse focalizando](media/refactoring-lightbulb-hover.png)
+
+- Lâmpadas e chaves de fenda são exibidas na margem esquerda do editor quando você move o cursor para uma linha de código para o qual uma Ação Rápida está disponível.
+
+- Pressione **Opção (⌥)**+**Enter** em qualquer lugar em uma linha para ver uma lista de Ações Rápidas e refatorações disponíveis.
 
 ![Exibir itens de contexto](media/refactoring-context-action.png)
 
 Focalizar uma das ações de contexto fornecerá uma visualização do que será adicionado ou removido do código.
-
-Outra opção é pressionar **Option + Enter** em qualquer lugar no seu código:
 
 ![Itens de contexto Option Enter](media/refactoring-image2a.png)
 
@@ -53,47 +73,9 @@ Há mais de 100 ações possíveis que podem ser sugeridas, as quais são habili
 
 ![Ações da Análise de código-fonte C#](media/refactoring-image3a.png)
 
-### <a name="common-context-actions"></a>Ações de contexto comuns
+### <a name="common-quick-actions"></a>Ações rápidas comuns
 
-Algumas das ações de contexto mais usadas são explicadas abaixo.
-
-#### <a name="extract-method"></a>Extrair método
-
-A operação de refatoração Extrair método permite que você crie um novo método extraindo uma seleção do código em um membro existente. Esta ação faz duas coisas:
-
-* Cria um novo método que contém o código selecionado
-* Chama o método de novo no local em que o código selecionado estava.
-
-##### <a name="example"></a>Exemplo
-
-1. Adicione o seguinte código:
-
-```csharp
-    class MainClass
-    {
-
-        double CalculatePyramidVolume(double baseArea, double height)
-        {
-
-            double volume = (baseArea * height) / 3;
-
-            return volume;
-        }
-    }
-```
-
-2. Realce a linha `double volume = (baseArea * height) / 3;`, clique com o botão direito do mouse nela e selecione **Refatorar > Extrair método**.
-
-3. Use as teclas de direção para selecionar onde o novo método deve ser colocado no seu código.
-
-#### <a name="encapsulate-field"></a>Encapsular campo
-
-A operação de Encapsular campo permite que você crie uma propriedade de um campo existente e atualiza seu código para fazer referência à propriedade recém-criada. Ao criar uma propriedade que encapsula o campo, você está cancelando a permissão de acesso direto ao seu campo público, o que significa que outros objetos não poderão modificá-lo.
-
-Essa ação faz o seguinte:
-
-* Altera o modificador de acesso para privado.
-* Gera um getter e um setter para o campo (a menos que o campo seja somente leitura, pois nesse caso ele criará somente um getter).
+Você pode aprender mais sobre as ações rápidas comuns no artigo [Ações Rápidas Comuns](/visualstudio/ide/common-quick-actions).
 
 ## <a name="source-analysis"></a>Análise de código-fonte
 

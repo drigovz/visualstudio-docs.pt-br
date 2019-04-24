@@ -11,17 +11,16 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 08d91cbeb4424e2285a49e45d10c5ef2a0484afe
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 83c2de11e31dced3be48e390d8bd5b21d57d2092
+ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54796666"
+ms.lasthandoff: 04/17/2019
+ms.locfileid: "59668484"
 ---
 # <a name="item-definitions"></a>Definições de itens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-  
 O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 permite a declaração estática de itens em arquivos de projeto usando o elemento [ItemGroup](../msbuild/itemgroup-element-msbuild.md). No entanto, metadados podem ser adicionados somente no nível de item, mesmo que os metadados sejam idênticos para todos os itens. Do [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 3.5 em diante, um elemento de projeto chamado [ItemDefinitionGroup](../msbuild/itemdefinitiongroup-element-msbuild.md) supera essa limitação. *ItemDefinitionGroup* permite que você defina um conjunto de definições de item, que adicionam valores de metadados padrão a todos os itens no tipo de item nomeado.  
   
  O elemento *ItemDefinitionGroup* aparece logo após o elemento [Project](../msbuild/project-element-msbuild.md) do arquivo de projeto. Definições de item fornecem a seguinte funcionalidade:  
@@ -175,7 +174,7 @@ O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 permite a declara
 </ItemDefinitionGroup>  
 ```  
   
- Neste exemplo, item "i" faz referência a item "test" na condição.  
+ Neste exemplo, o item "i" faz referência ao item "test" em Condition.  
   
 ## <a name="overriding-and-deleting-metadata"></a>Substituição e exclusão de metadados  
  Metadados definidos em um elemento ItemDefinitionGroup podem ser substituídos em um elemento ItemDefinitionGroup posterior, definindo-se o valor dos metadados como em branco. Você também pode excluir efetivamente um item de metadados configurando seu valor como vazio. Por exemplo:  

@@ -6,20 +6,20 @@ ms.assetid: 79C0F1A3-0C13-4E55-A820-1138A4082B77
 author: asb3993
 ms.author: amburns
 ms.date: 10/23/2018
-ms.openlocfilehash: 70ac8defdcea9cccd8a3b3f9be71d38fb78c9c50
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: bf12f8803fbdbbf1de31899501c31545a09d6b09
+ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51295183"
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58856535"
 ---
 # <a name="install-and-use-visual-studio-for-mac-behind-a-firewall-or-proxy-server"></a>Instalar e usar o Visual Studio para Mac por trás de um firewall ou servidor proxy
 
 Se você ou sua organização usa medidas de segurança como um firewall ou um servidor proxy, há URLs de domínio que você talvez queira adicionar à "lista de permissões" e portas e protocolos que talvez você queira abrir para que tenha a melhor experiência ao instalar e usar o Visual Studio para Mac e os Serviços do Azure.
 
-- [**Instalar o Visual Studio para Mac**](#install-visual-studio-for-mac): essas tabelas incluem as URLs na lista de permissões para que você tenha acesso a todos os recursos e cargas de trabalho do Visual Studio para Mac.
+- [**Instalar o Visual Studio para Mac**](#install-visual-studio-for-mac): Essas tabelas incluem as URLs na lista de permissões para que você tenha acesso a todos os recursos e cargas de trabalho do Visual Studio para Mac.
 
-- [**Usar o Visual Studio para Mac**](#use-visual-studio-for-mac): essas tabelas incluem as URLs na lista de permissões para que você tenha acesso a todos os serviços e recursos desejados.
+- [**Usar o Visual Studio para Mac**](#use-visual-studio-for-mac): Essas tabelas incluem as URLs na lista de permissões para que você tenha acesso a todos os serviços e recursos desejados.
 
 ## <a name="install-visual-studio-for-mac"></a>Instalar o Visual Studio para Mac
 
@@ -89,5 +89,5 @@ Para garantir que você tenha acesso a todos os recursos de que precisa no Visua
 
 ## <a name="see-also"></a>Consulte também
 
-- [Instalar e usar o Visual Studio 2017 e os Serviços do Azure atrás de um firewall ou servidor proxy](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
+- [Instalar e usar o Visual Studio e os Serviços do Azure atrás de um firewall ou servidor proxy](/visualstudio/install/install-and-use-visual-studio-behind-a-firewall-or-proxy-server)
 - [Solucionar problemas semelhantes no Windows](/visualstudio/install/troubleshooting-network-related-errors-in-visual-studio)
