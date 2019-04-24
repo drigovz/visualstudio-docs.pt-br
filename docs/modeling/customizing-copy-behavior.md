@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 898c1e88e4fd1ac0fc5f3d1f338b70a2d038fe79
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
-ms.translationtype: MT
+ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416307"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60109823"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizando o comportamento da operação de copiar
 Em uma linguagem de específica de domínio (DSL) criada com o SDK de modelagem e visualização do Visual Studio, você pode alterar o que acontece quando o usuário copia e cola elementos.
@@ -242,7 +242,7 @@ Confira [Como Adicionar um manipulador de arrastar e soltar](../modeling/how-to-
 
 1. Em um novo arquivo no seu projeto DSL, crie uma classe que derivada de <xref:Microsoft.VisualStudio.Modeling.Diagrams.DesignSurfaceElementOperations>.
 
-2. Adicione uma definição de classe parcial para a sua classe de diagrama. O nome dessa classe pode ser encontrado no **dsl\generatedcode\diagrams.cs**.
+2. Adicione uma definição de classe parcial para a sua classe de diagrama. O nome dessa classe pode ser encontrado no **dsl\generatedcode\diagrams.cs.**.
 
     Na classe de diagrama, substitua <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> para retornar uma instância de sua subclasse ElementOperations. Você deve retornar a mesma instância em cada chamada.
 
@@ -284,9 +284,9 @@ using Microsoft.VisualStudio.Modeling.Diagrams.ExtensionEnablement;
 
  Defina dois métodos em sua classe ElementOperations:
 
--   `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` que determina se o elemento de origem pode ser arrastado para a forma, conector ou diagrama de destino.
+- `CanMerge(ModelElement targetElement, System.Windows.Forms.IDataObject data)` que determina se o elemento de origem pode ser arrastado para a forma, conector ou diagrama de destino.
 
--   `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` que combina o elemento de origem no destino.
+- `MergeElementGroupPrototype(ModelElement targetElement, ElementGroupPrototype sourcePrototype)` que combina o elemento de origem no destino.
 
 ### <a name="canmerge"></a>CanMerge()
  `CanMerge()` é chamado para determinar o feedback que será dado ao usuário conforme o mouse se move pelo diagrama. Os parâmetros para o método são o elemento sobre o qual o mouse está passando, e os dados sobre a origem a partir da qual a operação de arrastar foi realizada. O usuário pode arrastar a partir de qualquer lugar na tela. Portanto, o objeto de origem pode ser de muitos tipos diferentes e pode ser serializado em diferentes formatos. Se a origem for um modelo DSL ou UML, o parâmetro de dados é a serialização de um <xref:Microsoft.VisualStudio.Modeling.ElementGroupPrototype>. As operações de arrastar, copiar e da caixa de ferramentas usam o ElementGroupPrototypes para representar fragmentos de modelos.
