@@ -32,11 +32,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e74358d4eb24d54c36ee099942dfbf0b5ca40210
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647252"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827044"
 ---
 # <a name="options-dialog-box-environment--documents"></a>Caixa de diálogo Opções: Ambiente \> documentos
 
@@ -66,9 +66,9 @@ Selecione esta opção para que o editor verifique as terminações de linha em 
 
 Selecione esta opção para exibir uma caixa de mensagem quando o comando **Desfazer Global** for reverter alterações de refatoração feitas em arquivos que também foram alterados após a operação de refatoração. Retornar um arquivo ao seu estado pré-refatoração pode descartar alterações feitas posteriormente no arquivo.
 
-**Mostrar Arquivos diversos no Gerenciador de Soluções**
+**Mostrar arquivos diversos no Gerenciador de Soluções**
 
-Selecione esta opção para exibir o nó **Arquivos diversos** no **Gerenciador de Soluções**. Arquivos diversos são arquivos que não estão associadas um projeto ou solução, mas podem aparecer no **Gerenciador de Soluções** por questões de conveniência.
+Selecione esta opção para exibir o nó **Arquivos Diversos** no **Gerenciador de Soluções**. Arquivos diversos são arquivos que não estão associadas um projeto ou solução, mas podem aparecer no **Gerenciador de Soluções** por questões de conveniência.
 
 > [!NOTE]
 > Selecione esta opção para habilitar o comando **Exibir no Navegador** no menu **Arquivo** para documentos da Web não incluídos no aplicativo Web ativo.
@@ -77,7 +77,7 @@ Selecione esta opção para exibir o nó **Arquivos diversos** no **Gerenciador 
 
 Especifica o número de arquivos a persistir na pasta **Arquivos diversos** do **Gerenciador de Soluções**. Esses arquivos são listados mesmo que não estejam mais abertos em um editor. É possível especificar qualquer número inteiro entre 0 e 256. O número padrão é 0.
 
-Por exemplo, se você definir essa opção como 5 e tiver 10 arquivos diversos abertos, quando você fechar todos os 10 arquivos, os 5 primeiros ainda aparecerão na pasta **Arquivos diversos**.
+Por exemplo, se você definir essa opção como 5 e tiver 10 arquivos diversos abertos, quando você fechar todos os 10 arquivos, os 5 primeiros ainda aparecerão na pasta **Arquivos Diversos**.
 
 **Salvar documentos como Unicode quando os dados não puderem ser salvos em página de código**
 

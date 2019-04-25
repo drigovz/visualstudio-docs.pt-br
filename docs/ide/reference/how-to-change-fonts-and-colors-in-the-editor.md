@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b4fba419605dd332346885dbf93460c1a4e53c9d
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: f0ebc1e4707b0240791524cb0b6b4ba75be897cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57223176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789586"
 ---
 # <a name="how-to-change-fonts-and-colors-for-the-editor-in-visual-studio"></a>Como: Alterar as fontes e as cores do editor no Visual Studio
 
@@ -33,20 +33,20 @@ Altere o tipo da fonte padrão, ajuste o tamanho da fonte e altere as cores de p
 
 ## <a name="change-the-default-font-face-size-and-colors"></a>Alterar o tipo da fonte padrão, o tamanho e as cores
 
-1.  Selecione **Opções** no menu **Ferramentas** e, na pasta **Ambiente**, selecione **Fontes e Cores**.
+1. Selecione **Opções** no menu **Ferramentas** e, na pasta **Ambiente**, selecione **Fontes e Cores**.
 
      A [caixa de diálogo Fontes e Cores, Ambiente, Opções](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md) é aberta.
 
-2.  Em **Mostrar configurações de**, selecione **Editor de Texto**.
+2. Em **Mostrar configurações de**, selecione **Editor de Texto**.
 
-3.  Modifique as opções **Fonte** e **Tamanho** para alterar a face de fonte e o tamanho de todos os elementos de texto em todos os editores.
+3. Modifique as opções **Fonte** e **Tamanho** para alterar a face de fonte e o tamanho de todos os elementos de texto em todos os editores.
 
-4.  Selecione o item apropriado em **Exibir itens** e, em seguida, modifique as opções **Primeiro plano do item** e **Tela de fundo do item**.
+4. Selecione o item apropriado em **Exibir itens** e, em seguida, modifique as opções **Primeiro plano do item** e **Tela de fundo do item**.
 
     > [!TIP]
     > Clique em **Usar Padrões** para redefinir as configurações padrão.
 
-5.  Clique em **OK**.
+5. Clique em **OK**.
 
 ## <a name="see-also"></a>Consulte também
 

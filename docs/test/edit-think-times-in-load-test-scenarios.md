@@ -10,12 +10,12 @@ ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bb5227c4b5f771747a43a7f0f12e0125b125604e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e19e1cb4f9b49c40923d96b177ceb4d6c31b746f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55943370"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783312"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>Editar tempos de processamento para simular atrasos de interação humana no site em cenários de testes de carga
 
@@ -48,13 +48,13 @@ Os tempos de processamento são usados, mas variados em uma curva normal. Fornec
 
 ### <a name="to-change-a-think-profile-in-a-load-test-scenario"></a>Para alterar um perfil de processamento em um cenário de teste de carga
 
-1.  No projeto de teste de carga e de desempenho na Web, abra um teste de carga.
+1. No projeto de teste de carga e de desempenho na Web, abra um teste de carga.
 
-2.  No **Editor de Teste de Carga**, escolha o nó do cenário em que deseja alterar o **Perfil de Processamento**. O **Perfil de Processamento** é exibido na janela **Propriedades**. Pressione **F4** para exibir a janela **Propriedades**.
+2. No **Editor de Teste de Carga**, escolha o nó do cenário em que deseja alterar o **Perfil de Processamento**. O **Perfil de Processamento** é exibido na janela **Propriedades**. Pressione **F4** para exibir a janela **Propriedades**.
 
-3.  Altere a propriedade de **Perfil de Processamento** na janela **Propriedades**.
+3. Altere a propriedade de **Perfil de Processamento** na janela **Propriedades**.
 
-4.  Depois de alterar as propriedades, escolha **Salvar** no menu **Arquivo**. Você pode executar o teste de carga com o novo perfil de processamento.
+4. Depois de alterar as propriedades, escolha **Salvar** no menu **Arquivo**. Você pode executar o teste de carga com o novo perfil de processamento.
 
 ## <a name="see-also"></a>Consulte também
 

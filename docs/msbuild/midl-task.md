@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cb6698ac7652eab416523418458fa0c8b820097
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 301ca4ee88368b9134bbbcd2dc41435590becaed
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817565"
 ---
 # <a name="midl-task"></a>tarefa MIDL
 Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl.exe*. Para obter mais informações, confira [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
@@ -39,7 +39,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 ## <a name="parameters"></a>Parâmetros
  Veja a seguir a descrição dos parâmetros da tarefa **MIDL**. A maioria dos parâmetros de tarefa e alguns conjuntos de parâmetros correspondem a uma opção de linha de comando.
 
--   **AdditionalIncludeDirectories**
+- **AdditionalIncludeDirectories**
 
      Parâmetro **String[]** opcional.
 
@@ -47,7 +47,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/I** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      Parâmetro **String** opcional.
 
@@ -55,7 +55,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ApplicationConfigurationMode**
+- **ApplicationConfigurationMode**
 
      Parâmetro **Boolean** opcional.
 
@@ -63,7 +63,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/app_config** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ClientStubFile**
+- **ClientStubFile**
 
      Parâmetro **String** opcional.
 
@@ -71,7 +71,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/cstub** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Consulte também o parâmetro **ServerStubFile** nessa tabela.
 
--   **CPreprocessOptions**
+- **CPreprocessOptions**
 
      Parâmetro **String** opcional.
 
@@ -79,7 +79,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/cpp_opt** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **DefaultCharType**
+- **DefaultCharType**
 
      Parâmetro **String** opcional.
 
@@ -95,7 +95,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/char** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **DllDataFileName**
+- **DllDataFileName**
 
      Parâmetro **String** opcional.
 
@@ -103,7 +103,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/dlldata** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **EnableErrorChecks**
+- **EnableErrorChecks**
 
      Parâmetro **String** opcional.
 
@@ -119,7 +119,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/error** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckAllocations**
+- **ErrorCheckAllocations**
 
      Parâmetro **Boolean** opcional.
 
@@ -127,7 +127,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/error allocation** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckBounds**
+- **ErrorCheckBounds**
 
      Parâmetro **Boolean** opcional.
 
@@ -135,7 +135,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/error bounds_check** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckEnumRange**
+- **ErrorCheckEnumRange**
 
      Parâmetro **Boolean** opcional.
 
@@ -143,7 +143,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/error enum** na ajuda da linha de comando (**/?**) do *midl.exe*.
 
--   **ErrorCheckRefPointers**
+- **ErrorCheckRefPointers**
 
      Parâmetro **Boolean** opcional.
 
@@ -151,7 +151,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/error ref** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ErrorCheckStubData**
+- **ErrorCheckStubData**
 
      Parâmetro **Boolean** opcional.
 
@@ -159,7 +159,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/error stub_data** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateClientFiles**
+- **GenerateClientFiles**
 
      Parâmetro **String** opcional.
 
@@ -174,7 +174,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/client** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateServerFiles**
+- **GenerateServerFiles**
 
      Parâmetro **String** opcional.
 
@@ -189,7 +189,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/server** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateStublessProxies**
+- **GenerateStublessProxies**
 
      Parâmetro **Boolean** opcional.
 
@@ -197,7 +197,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/Oicf** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **GenerateTypeLibrary**
+- **GenerateTypeLibrary**
 
      Parâmetro **Boolean** opcional.
 
@@ -205,7 +205,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/notlb** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **HeaderFileName**
+- **HeaderFileName**
 
      Parâmetro **String** opcional.
 
@@ -213,7 +213,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/h** ou **/header** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **IgnoreStandardIncludePath**
+- **IgnoreStandardIncludePath**
 
      Parâmetro **Boolean** opcional.
 
@@ -221,7 +221,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/no_def_idir** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **InterfaceIdentifierFileName**
+- **InterfaceIdentifierFileName**
 
      Parâmetro **String** opcional.
 
@@ -229,7 +229,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/iid** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **LocaleID**
+- **LocaleID**
 
      Parâmetro **int** opcional.
 
@@ -237,7 +237,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/lcid** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Confira também [Identificadores de localidade](https://docs.microsoft.com/windows/desktop/intl/locale-identifiers).
 
--   **MkTypLibCompatible**
+- **MkTypLibCompatible**
 
      Parâmetro **Boolean** opcional.
 
@@ -245,7 +245,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/mktyplib203** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Além disso, confira [Sintaxe do arquivo ODL](/previous-versions/windows/desktop/automat/odl-file-syntax) no site do MSDN.
 
--   **OutputDirectory**
+- **OutputDirectory**
 
      Parâmetro **String** opcional.
 
@@ -253,7 +253,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/out** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **PreprocessorDefinitions**
+- **PreprocessorDefinitions**
 
      Parâmetro **String[]** opcional.
 
@@ -261,7 +261,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/D** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Consulte também o parâmetro **UndefinePreprocessorDefinitions** nessa tabela.
 
--   **ProxyFileName**
+- **ProxyFileName**
 
      Parâmetro **String** opcional.
 
@@ -269,7 +269,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/proxy** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **RedirectOutputAndErrors**
+- **RedirectOutputAndErrors**
 
      Parâmetro **String** opcional.
 
@@ -277,7 +277,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/o** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **ServerStubFile**
+- **ServerStubFile**
 
      Parâmetro **String** opcional.
 
@@ -285,13 +285,13 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/sstub** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Consulte também o parâmetro **ClientStubFile** nessa tabela.
 
--   **Source**
+- **Source**
 
      Parâmetro `ITaskItem[]` obrigatório.
 
      Especifica uma lista de arquivos de origem separados por espaços.
 
--   **StructMemberAlignment**
+- **StructMemberAlignment**
 
      Parâmetro **String** opcional.
 
@@ -309,7 +309,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/Zp** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). A opção **/Zp** é equivalente à opção **/pack** e à opção **/align** antiga.
 
--   **SuppressCompilerWarnings**
+- **SuppressCompilerWarnings**
 
      Parâmetro **Boolean** opcional.
 
@@ -317,7 +317,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/no_warn** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      Parâmetro `Boolean` opcional.
 
@@ -325,7 +325,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/nologo** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **TargetEnvironment**
+- **TargetEnvironment**
 
      Parâmetro **String** opcional.
 
@@ -342,13 +342,13 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/env** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      Parâmetro `String` opcional.
 
      Especifica o diretório intermediário em que os logs de rastreamento para essa tarefa são armazenados.
 
--   **TypeLibFormat**
+- **TypeLibFormat**
 
      Parâmetro **String** opcional.
 
@@ -363,7 +363,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira as opções **/newtlb** e **/oldtlb** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **TypeLibraryName**
+- **TypeLibraryName**
 
      Parâmetro **String** opcional.
 
@@ -371,7 +371,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/tlb** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **UndefinePreprocessorDefinitions**
+- **UndefinePreprocessorDefinitions**
 
      Parâmetro **String[]** opcional.
 
@@ -379,7 +379,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira a opção **/U** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Consulte também o parâmetro **PreprocessorDefinitions** nessa tabela.
 
--   **ValidateAllParameters**
+- **ValidateAllParameters**
 
      Parâmetro `Boolean` opcional.
 
@@ -387,7 +387,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira as opções **/robust** e **/no_robust** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference).
 
--   **WarnAsError**
+- **WarnAsError**
 
      Parâmetro `Boolean` opcional.
 
@@ -397,7 +397,7 @@ Encapsula a ferramenta do compilador da MIDL (linguagem IDL) da Microsoft, *midl
 
      Para obter mais informações, confira as opções **/WX** em [Referência da linha de comando MIDL](https://docs.microsoft.com/windows/desktop/Midl/midl-command-line-reference). Consulte também o parâmetro **WarningLevel** nessa tabela.
 
--   **WarningLevel**
+- **WarningLevel**
 
      Parâmetro **String** opcional.
 

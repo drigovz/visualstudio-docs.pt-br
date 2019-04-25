@@ -4,28 +4,30 @@ description: Saiba como assegurar que o VIP (endereço IP virtual) do seu servi�
 author: ghogen
 manager: jillfra
 assetId: 4a58e2c6-7a79-4051-8a2c-99182ff8b881
+ms.prod: visual-studio-dev14
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: e17e99b9a1270b3d6a99429bd24103a10d347d69
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62550821"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>Reter um endereço IP virtual constante para um serviço de nuvem do Azure
 Quando você atualiza um serviço de nuvem que é hospedado no Azure, você precisará garantir que o VIP (endereço IP virtual) do serviço não mude. Muitos serviços de gerenciamento de domínio usam o DNS (sistema de nome de domínio) para o registro de nomes de domínio. O DNS só funciona se o VIP permanece o mesmo. Você pode usar o **Assistente de Publicação** nas Ferramentas do Azure para garantir que o VIP do seu serviço de nuvem não seja alterado quando você atualizá-lo. Para obter mais informações sobre como usar o gerenciamento de domínio DNS para serviços de nuvem, consulte [Configurando um nome de domínio personalizado para um serviço de nuvem do Azure](/azure/cloud-services/cloud-services-custom-domain-name-portal).
 
 ## <a name="publish-a-cloud-service-without-changing-its-vip"></a>Publicar um serviço de nuvem sem alterar seu VIP
-O VIP de um serviço de nuvem é alocado ao implantá-lo pela primeira vez no Azure em um ambiente específico, como o ambiente de produção. O VIP só será alterado se você excluir a implantação explicitamente ou se ela for excluída implicitamente pelo processo de atualização de implantação. Para manter o VIP, você não pode excluir sua implantação e deve certificar-se de que ela não seja excluída automaticamente pelo Visual Studio.
+O VIP de um serviço de nuvem é alocado ao implantá-lo pela primeira vez no Azure em um ambiente específico, como o ambiente de produção. O VIP só será alterado se você excluir a implantação explicitamente ou se ela for excluída implicitamente pelo processo de atualização de implantação. Para manter o VIP, você não pode excluir sua implantação e deve certificar-se de que ela não seja excluída automaticamente pelo Visual Studio. 
 
 Você pode especificar configurações de implantação no **Assistente de Publicação**, que dá suporte a várias opções de implantação. Você pode especificar uma nova implantação ou uma implantação de atualização, que pode ser incremental ou simultânea. Ambos esses tipos de implantação de atualização retêm o VIP. Para obter definições desses tipos diferentes de implantação, consulte o [Assistente Publicar Aplicativo no Azure](vs-azure-tools-publish-azure-application-wizard.md). Além disso, você pode controlar se a implantação anterior de um serviço de nuvem deve ou não ser excluída caso um erro ocorra. O VIP poderá mudar inesperadamente se você não definir essa opção corretamente.
 
 ## <a name="update-a-cloud-service-without-changing-its-vip"></a>Para atualizar um serviço de nuvem sem alterar o respectivo VIP
-1. Crie ou abra um projeto de serviço de nuvem do Azure no Visual Studio.
+1. Crie ou abra um projeto de serviço de nuvem do Azure no Visual Studio. 
 
 2. No **Gerenciador de Soluções**, clique com o botão direito do mouse no nome do projeto. No menu de atalho, selecione **Publicar**.
 
@@ -39,7 +41,7 @@ Você pode especificar configurações de implantação no **Assistente de Publi
 
     ![Guia Publicar aplicativo do Azure – Configurações Comuns](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-common-settings.png)
 
-5. Na guia **Configurações Avançadas**, verifique se o **Rótulo de implantação** e a **Conta de armazenamento** estão corretas. Verifique se a caixa de seleção **excluir implantação em caso de falha** está desmarcada e se a caixa de seleção **Atualização de implantação** está selecionada. Ao limpar a caixa de seleção **Excluir implantação em caso de falha**, você garante que o VIP não será perdido se ocorrer um erro durante a implantação. Ao marcar a caixa de seleção **Atualização de implantação**, você garante que a implantação não será excluída e que o VIP não será perdido quando você republicar o aplicativo.
+5. Na guia **Configurações Avançadas**, verifique se o **Rótulo de implantação** e a **Conta de armazenamento** estão corretas. Verifique se a caixa de seleção **excluir implantação em caso de falha** está desmarcada e se a caixa de seleção **Atualização de implantação** está selecionada. Ao limpar a caixa de seleção **Excluir implantação em caso de falha**, você garante que o VIP não será perdido se ocorrer um erro durante a implantação. Ao marcar a caixa de seleção **Atualização de implantação**, você garante que a implantação não será excluída e que o VIP não será perdido quando você republicar o aplicativo. 
 
     ![Guia Publicar aplicativo do Azure – Configurações Avançadas](./media/vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address/azure-publish-advanced-settings.png)
 

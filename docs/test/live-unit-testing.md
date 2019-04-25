@@ -9,12 +9,12 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1a51b056e4a3a4f2f434e6fd57ec270029d9155b
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: ce9a1a2da7397dbc7ce4235391c962cada7d59eb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786447"
 ---
 # <a name="live-unit-testing-with-visual-studio"></a>Live Unit Testing com o Visual Studio
 
@@ -27,7 +27,6 @@ Quando você utilizar o Live Unit Testing para seu teste, ele preservará os dad
 
 ## <a name="supported-test-frameworks"></a>Estruturas de teste com suporte
 O Live Unit Testing funciona com as três estruturas de teste de unidade populares listadas na tabela a seguir. A versão mínima com suporte de seus adaptadores e suas estruturas também é listada na tabela. As estruturas de teste de unidade estão disponíveis em NuGet.org.
-
 
 |Estrutura de teste  |Versão mínima do Adaptador do Visual Studio  |Versão mínima da Estrutura  |
 |---------|---------|---------|

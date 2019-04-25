@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: fda68b9e5bffbd1afab3389a0d8d624312a8de3f
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429984"
 ---
 # <a name="step-2-write-and-run-code"></a>Etapa 2: Escrever e executar o código
 
-**Etapa anterior: [Criar um novo projeto do Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
+**Etapa anterior: [Criar um projeto do Python](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)**
 
 Embora o **Gerenciador de Soluções** seja o local em que você gerencia arquivos de projeto, a janela do *editor* normalmente é o local em que você trabalha com o *conteúdo* dos arquivos, como o código-fonte. O editor tem reconhecimento contextual do tipo de arquivo que você está editando, incluindo a linguagem de programação (com base na extensão do arquivo) e oferece recursos apropriados para essa linguagem, como a coloração de sintaxe e o preenchimento automático usando o IntelliSense.
 
@@ -94,6 +94,6 @@ Embora o **Gerenciador de Soluções** seja o local em que você gerencia arquiv
 ## <a name="go-deeper"></a>Aprofunde-se um pouco mais
 
 - [Editar código](editing-python-code-in-visual-studio.md)
-- [Código de formatação](formatting-python-code.md)
+- [Formatar código](formatting-python-code.md)
 - [Refatorar o código](refactoring-python-code.md)
 - [Usar PyLint](linting-python-code.md)

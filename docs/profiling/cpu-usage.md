@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4843f1e49e705e42a58afa8a882018463ce46f7b
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 351247f50560896d53267fcf8d7f4a66a81b9461
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553434"
 ---
 # <a name="analyze-cpu-usage"></a>Analisar o uso de CPU
 
@@ -31,7 +31,7 @@ Geralmente, o computador local replica melhor a execução do aplicativo instala
 >[!NOTE]
 >O Windows 7 ou posterior é necessário para usar o [Criador de Perfil de Desempenho](../profiling/profiling-feature-tour.md).
 
-##  <a name="collect-cpu-usage-data"></a>Coletar dados de uso da CPU
+## <a name="collect-cpu-usage-data"></a>Coletar dados de uso da CPU
 
 1. No projeto do Visual Studio, defina a configuração da solução como **Versão** e selecione **Computador Local** como o destino de implantação.
 
@@ -51,7 +51,6 @@ Geralmente, o computador local replica melhor a execução do aplicativo instala
 
    ![Relatório de uso da CPU](../profiling/media/cpu_use_wt_report.png "Relatório de uso da CPU")
 
-
 ## <a name="analyze-the-cpu-usage-report"></a>Analise o relatório de uso da CPU
 
 O relatório de diagnóstico é classificado por **CPU total**, do mais alto para o mais baixo. Altere a ordem de classificação ou a coluna de classificação selecionando os cabeçalhos de coluna. Use o menu suspenso **Filtrar** para marcar ou desmarcar os threads a serem exibidos e use a caixa **Pesquisar** para procurar um thread ou um nó específico.
@@ -60,7 +59,7 @@ O relatório de diagnóstico é classificado por **CPU total**, do mais alto par
 A partir do Visual Studio 2019, você pode clicar nos botões **Expandir Afunilamento** e **Mostrar Afunilamento** para ver as chamadas de função que usam a porcentagem mais alta da CPU no modo de exibição de árvore de chamada.
 ::: moniker-end
 
-###  <a name="BKMK_Call_tree_data_columns"></a> Colunas de dados de Uso da CPU
+### <a name="BKMK_Call_tree_data_columns"></a> Colunas de dados de Uso da CPU
 
 |||
 |-|-|
@@ -68,11 +67,11 @@ A partir do Visual Studio 2019, você pode clicar nos botões **Expandir Afunila
 |**CPU própria [unidade, %]**|![Equação % própria](../profiling/media/cpu_use_wt_selflpercentequation.png "CPU_USE_WT_SelflPercentEquation")<br /><br /> Os milissegundos e o percentual da CPU usados por chamadas à função no intervalo de tempo selecionado, excluindo funções chamadas pela função.|
 |**Módulo**|O nome do módulo que contém a função.
 
-###  <a name="BKMK_The_CPU_Usage_call_tree"></a> A árvore de chamadas de Uso da CPU
+### <a name="BKMK_The_CPU_Usage_call_tree"></a> A árvore de chamadas de Uso da CPU
 
 Para exibir a árvore de chamadas, selecione o nó pai no relatório. A página **Uso da CPU** é aberta na exibição **Chamador/receptor**. Na lista suspensa **Exibição Atual**, selecione **Árvore de Chamadas**.
 
-####  <a name="BKMK_Call_tree_structure"></a> Estrutura da árvore de chamadas
+#### <a name="BKMK_Call_tree_structure"></a> Estrutura da árvore de chamadas
 
 ::: moniker range=">=vs-2019"
 ![Estrutura de árvore de chamadas](../profiling/media/vs-2019/cpu-use-wt-getmaxnumbercalltree-annotated.png "Estrutura de árvore de chamadas")
@@ -88,7 +87,7 @@ Para exibir a árvore de chamadas, selecione o nó pai no relatório. A página 
 |![Etapa 3](../profiling/media/procguid_3.png "ProcGuid_3")|Os filhos do nó de segundo nível são métodos e rotinas assíncronas do código de usuário que são chamados ou criados pelo sistema de segundo nível e código do framework.|
 |![Etapa 4](../profiling/media/procguid_4.png "ProcGuid_4")|Os nós filhos de um método só têm dados das chamadas do método pai. Quando **Mostrar Código Externo** é desabilitado, os métodos de aplicativo também podem conter um nó **[Código Externo]**.|
 
-####  <a name="BKMK_External_Code"></a> Código externo
+#### <a name="BKMK_External_Code"></a> Código externo
 
 As funções do sistema e do framework executadas pelo seu código são chamadas *código externo*. As funções do código externo iniciam e interrompem o aplicativo, elaboram a interface do usuário, controlam o threading e fornecem ao aplicativo outros serviços de nível inferior. Na maioria dos casos, você não se interessa pelo código externo, então, a árvore de chamadas de Uso da CPU coleta as funções externas de um método de usuário em um nó **[Código Externo]**.
 
@@ -109,7 +108,7 @@ Para localizar um nome de função que você está procurando, use a caixa de pe
 ![Pesquisar código externo aninhado](../profiling/media/cpu_use_wt_showexternalcodetoowide_found.png "Pesquisar código externo aninhado")
 ::: moniker-end
 
-###  <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funções assíncronas na árvore de chamadas de Uso da CPU
+### <a name="BKMK_Asynchronous_functions_in_the_CPU_Usage_call_tree"></a> Funções assíncronas na árvore de chamadas de Uso da CPU
 
  Quando o compilador encontra um método assíncrono, ele cria uma classe oculta para controlar a execução do método. Conceitualmente, a classe é uma máquina de estado. A classe tem funções geradas por compilador que chamam os métodos originais de maneira assíncrona e os retornos de chamada, agendadores e iteradores necessários para executá-los. Quando um método pai chama o método original, o compilador remove o método do contexto de execução do pai e executa os métodos de classe ocultos no contexto do código do sistema e da estrutura que controla a execução do aplicativo. Os métodos assíncronos são geralmente, mas nem sempre, executados em uma ou mais segmentos diferentes. Esse código é exibido na árvore de chamadas **Uso da CPU** como filhos do nó **[Código Externo]** imediatamente embaixo do nó superior da árvore.
 

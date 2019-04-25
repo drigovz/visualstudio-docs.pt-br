@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: b21e9b1735f7d6e631d25cecb2923662625400c0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2026767778f1e060ccff4a05af2649a40c1d984f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810075"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet"></a>Início Rápido: Analisar dados de uso da CPU no Visual Studio | Microsoft Docs (ASP.NET)
 
@@ -153,30 +153,30 @@ O Windows 8 ou posterior é necessário para executar ferramentas de criação d
     }
     ```
 
-##  <a name="step-1-collect-profiling-data"></a>Etapa 1: Coletar dados de criação de perfil
+## <a name="step-1-collect-profiling-data"></a>Etapa 1: Coletar dados de criação de perfil
 
-1.  Primeiro, defina um ponto de interrupção em seu aplicativo nesta linha de código no construtor `Simple`:
+1. Primeiro, defina um ponto de interrupção em seu aplicativo nesta linha de código no construtor `Simple`:
 
     `for (int i = 0; i < 200; i++)`
 
     Defina um ponto de interrupção clicando na medianiz à esquerda da linha de código.
 
-1.  Em seguida, defina um segundo ponto de interrupção no colchete de fechamento no final do construtor `Simple`:
+1. Em seguida, defina um segundo ponto de interrupção no colchete de fechamento no final do construtor `Simple`:
 
      ![Definir pontos de interrupção para criação de perfil](../profiling/media/quickstart-cpu-usage-breakpoints-aspnet.png)
 
     > [!TIP]
     > Definindo dois pontos de interrupção, você pode limitar a coleta de dados às partes do código que deseja analisar.
 
-1.  A janela **Ferramentas de Diagnóstico** já fica visível, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico**.
+1. A janela **Ferramentas de Diagnóstico** já fica visível, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico**.
 
-1.  Clique em **Depurar** > **Iniciar Depuração** (ou em **Iniciar** na barra de ferramentas ou em **F5**).
+1. Clique em **Depurar** > **Iniciar Depuração** (ou em **Iniciar** na barra de ferramentas ou em **F5**).
 
-1.  Quando o aplicativo terminar de ser carregado, clique no link **Sobre** na parte superior da página da Web para iniciar a execução do novo código.
+1. Quando o aplicativo terminar de ser carregado, clique no link **Sobre** na parte superior da página da Web para iniciar a execução do novo código.
 
-1.  Observe a exibição **Resumo** das Ferramentas de Diagnóstico aparecer.
+1. Observe a exibição **Resumo** das Ferramentas de Diagnóstico aparecer.
 
-1.  Enquanto o depurador estiver em pausa, habilite a coleta dos dados de Uso da CPU escolhendo **Registrar perfil da CPU** e abra a guia **Uso da CPU**.
+1. Enquanto o depurador estiver em pausa, habilite a coleta dos dados de Uso da CPU escolhendo **Registrar perfil da CPU** e abra a guia **Uso da CPU**.
 
      ![Habilitar criação de perfil de CPU de Ferramentas de Diagnóstico](../profiling/media/quickstart-cpu-usage-summary.png)
 
@@ -184,7 +184,7 @@ O Windows 8 ou posterior é necessário para executar ferramentas de criação d
 
      Quando você escolhe **Registrar perfil de CPU**, o Visual Studio começará a gravar as funções e quanto tempo elas levam para serem executadas, fornecendo também um gráfico de linha do tempo que você pode usar para se concentrar em segmentos específicos da sessão de amostragem. Você só pode exibir os dados coletados quando seu aplicativo é interrompido no ponto de interrupção.
 
-6.  Pressione F5 para executar o aplicativo até o segundo ponto de interrupção.
+6. Pressione F5 para executar o aplicativo até o segundo ponto de interrupção.
 
      Agora, você tem dados de desempenho do aplicativo especificamente para a região do código que é executada entre os dois pontos de interrupção.
 

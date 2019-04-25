@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 684e638d1a2e69d48381964272294999d43c5242
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c8bb8bc743aea29219edc8db9c0c52bf839954a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790642"
 ---
 # <a name="file-properties-javascript"></a>Propriedades de arquivo, JavaScript
 É possível usar propriedades de arquivo para indicar quais ações o sistema de projeto deve executar nos arquivos. Por exemplo, é possível definir propriedades de arquivo para indicar se um arquivo deve ser adicionado ao pacote como um arquivo de recurso.
@@ -46,13 +46,13 @@ ms.locfileid: "55956760"
 ### <a name="package-action"></a>Ação do Pacote
  A propriedade **Ação do Pacote** indica o que o Visual Studio faz com um arquivo quando um build é executado. A **Ação do Pacote** pode ter um valor dentre vários:
 
--   **Nenhum** – O arquivo não está incluído no manifesto do pacote. Um exemplo é um arquivo de texto que contém a documentação, como um arquivo Leiame.
+- **Nenhum** – O arquivo não está incluído no manifesto do pacote. Um exemplo é um arquivo de texto que contém a documentação, como um arquivo Leiame.
 
--   **Conteúdo** – O arquivo está incluído no manifesto do pacote. Por exemplo, essa configuração é o valor padrão para um arquivo .htm, .js, .css, de imagem, de áudio ou de vídeo.
+- **Conteúdo** – O arquivo está incluído no manifesto do pacote. Por exemplo, essa configuração é o valor padrão para um arquivo .htm, .js, .css, de imagem, de áudio ou de vídeo.
 
--   **Manifesto** – O arquivo não está incluído no manifesto do pacote. Em vez disso, o arquivo é usado para entrada ao gerar o manifesto do pacote. Esse é o valor padrão do arquivo package.appxmanifest.
+- **Manifesto** – O arquivo não está incluído no manifesto do pacote. Em vez disso, o arquivo é usado para entrada ao gerar o manifesto do pacote. Esse é o valor padrão do arquivo package.appxmanifest.
 
--   **Recurso** – O arquivo não está incluído no manifesto do pacote. Em vez disso, o conteúdo do arquivo é indexado no PRI (Índice de Recurso do Pacote) que entra no manifesto do pacote. Normalmente, ele é usado para arquivos de recurso.
+- **Recurso** – O arquivo não está incluído no manifesto do pacote. Em vez disso, o conteúdo do arquivo é indexado no PRI (Índice de Recurso do Pacote) que entra no manifesto do pacote. Normalmente, ele é usado para arquivos de recurso.
 
 O valor padrão para **Ação do Pacote** depende da extensão do arquivo adicionado à solução.
 

@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bebc8581ead00eeb6b28c2c45f4dcfe991a9e1a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3dfaa1fb344f11817cc67a074580c726f3d23036
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918138"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429166"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>Testar um aplicativo grande com vários Mapas de Interface do Usuário
 
@@ -42,9 +42,9 @@ Usando diversos arquivos desse tipo, você pode proporcionar estes benefícios:
 ## <a name="do-you-need-multiple-ui-maps"></a>Você precisa de diversos mapas de interface do usuário?
  Crie diversos mapas em cada uma destas situações:
 
--   Diversos conjuntos complexos de controles de interface do usuário compostos que, juntos, executam uma operação lógica, como uma página de registro de um site ou a página de compras de um carrinho de compras.
+- Diversos conjuntos complexos de controles de interface do usuário compostos que, juntos, executam uma operação lógica, como uma página de registro de um site ou a página de compras de um carrinho de compras.
 
--   Um conjunto independente de controles que é acessado por diversos pontos do aplicativo, como um assistente com várias páginas de operações. Se cada página de um assistente for muito complexa, você pode criar mapas de interface do usuário para cada página.
+- Um conjunto independente de controles que é acessado por diversos pontos do aplicativo, como um assistente com várias páginas de operações. Se cada página de um assistente for muito complexa, você pode criar mapas de interface do usuário para cada página.
 
 ## <a name="add-multiple-ui-maps"></a>Adicionar vários Mapas de Interface do Usuário
 

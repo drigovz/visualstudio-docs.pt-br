@@ -16,12 +16,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d03ef199e0c1c4ea3684287e1621e6d9b5fc52f8
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a770cf1ded0ef85e92f192398b03aa2015502fdf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56315528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789651"
 ---
 # <a name="how-to-use-the-keyboard-exclusively"></a>Como: Usar exclusivamente o teclado
 
@@ -55,19 +55,19 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece muitas co
 
 ### <a name="to-set-dialog-box-options-from-the-keyboard"></a>Para definir opções da caixa de diálogo usando o teclado
 
-1.  Use **Tab** ou **Shift** + **Tab** para mover para cima e para baixo pelos controles na caixa de diálogo.
+1. Use **Tab** ou **Shift** + **Tab** para mover para cima e para baixo pelos controles na caixa de diálogo.
 
-2.  Para alterar as configurações de opção:
+2. Para alterar as configurações de opção:
 
-    -   Para botões de opção, use a **SETA PARA CIMA** e a **SETA PARA BAIXO** para alterar a seleção.
+    - Para botões de opção, use a **SETA PARA CIMA** e a **SETA PARA BAIXO** para alterar a seleção.
 
-    -   Para caixas de seleção, use a **BARRA DE ESPAÇO** para marcar ou desmarcar.
+    - Para caixas de seleção, use a **BARRA DE ESPAÇO** para marcar ou desmarcar.
 
-    -   Para listas suspensas, use **Alt** + **SETA PARA BAIXO** para exibir itens e, em seguida, use **SETA PARA CIMA** e **SETA PARA BAIXO** para alterar o item selecionado.
+    - Para listas suspensas, use **Alt** + **SETA PARA BAIXO** para exibir itens e, em seguida, use **SETA PARA CIMA** e **SETA PARA BAIXO** para alterar o item selecionado.
 
-    -   Para botões, pressione **Enter** para invocar.
+    - Para botões, pressione **Enter** para invocar.
 
-    -   Para grades, use as teclas de direção para navegar. Para listas suspensas em grades, use **Shift** + **Alt** + **SETA PARA BAIXO** para exibir itens e, em seguida, use **SETA PARA CIMA** e **SETA PARA BAIXO** para alterar o item selecionado.
+    - Para grades, use as teclas de direção para navegar. Para listas suspensas em grades, use **Shift** + **Alt** + **SETA PARA BAIXO** para exibir itens e, em seguida, use **SETA PARA CIMA** e **SETA PARA BAIXO** para alterar o item selecionado.
 
 ## <a name="window-and-file-navigation"></a>Navegação em janelas e arquivos
 
@@ -75,29 +75,29 @@ O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] fornece muitas co
 
 ### <a name="to-navigate-among-windows-and-files-in-the-ide-from-the-keyboard"></a>Para navegar entre janelas e arquivos no IDE usando o teclado
 
--   Para percorrer os arquivos em um editor ou designer, escolha as teclas CTRL + TAB para exibir o Navegador do IDE com **Arquivos Ativos** selecionado. Pressione a tecla Enter para navegar até o arquivo realçado.
+- Para percorrer os arquivos em um editor ou designer, escolha as teclas CTRL + TAB para exibir o Navegador do IDE com **Arquivos Ativos** selecionado. Pressione a tecla Enter para navegar até o arquivo realçado.
 
--   Para percorrer janelas de ferramentas encaixadas, escolha Alt + F7 para exibir o Navegador do IDE com **Janelas de Ferramentas Ativas** selecionado. Escolha a tecla Enter para navegar até a janela realçada.
+- Para percorrer janelas de ferramentas encaixadas, escolha Alt + F7 para exibir o Navegador do IDE com **Janelas de Ferramentas Ativas** selecionado. Escolha a tecla Enter para navegar até a janela realçada.
 
 ### <a name="to-move-and-dock-tool-windows-from-the-keyboard"></a>Para mover e encaixar janelas de ferramentas usando o teclado
 
-1.  Navegue até a janela da ferramenta que você pretende mover e coloque-a em foco.
+1. Navegue até a janela da ferramenta que você pretende mover e coloque-a em foco.
 
-2.  No menu **Janela**, selecione a opção **Encaixável**.
+2. No menu **Janela**, selecione a opção **Encaixável**.
 
-3.  Pressione **ALT** + **Espaço** e, em seguida, escolha **Mover**.
+3. Pressione **ALT** + **Espaço** e, em seguida, escolha **Mover**.
 
      O losango guia de encaixe é exibido.
 
-4.  Use as teclas de **DIREÇÃO** para mover a janela para um novo local.
+4. Use as teclas de **DIREÇÃO** para mover a janela para um novo local.
 
      O ponteiro do mouse se move com a janela quando você usa as teclas de **DIREÇÃO**.
 
-5.  Quando atingir o novo local, use as teclas de **DIREÇÃO** para mover o ponteiro do mouse para a parte correta do losango guia.
+5. Quando atingir o novo local, use as teclas de **DIREÇÃO** para mover o ponteiro do mouse para a parte correta do losango guia.
 
      Uma estrutura de tópicos da janela de ferramentas aparece no novo local de encaixe.
 
-6.  Pressione **ENTER**.
+6. Pressione **ENTER**.
 
      A janela de ferramentas é encaixada no novo local de encaixe.
 

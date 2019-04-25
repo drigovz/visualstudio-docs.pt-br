@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: aac0487e2faafdf608975a30f737b01b669db273
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 10b6331c4f0f4e2590fff76d2d7bf8a33a82376f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797763"
 ---
 # <a name="resource-details-view---contention-data"></a>Exibição de detalhes do recurso – Dados de contenção
 A exibição de Detalhes do Recurso apresenta um gráfico de linha do tempo dos eventos de bloqueio que foram causados por contenções em um recurso selecionado. Um evento de bloqueio ocorre quando um thread é forçado a suspender a execução porque outro thread bloqueou o acesso ao recurso.
@@ -28,21 +28,21 @@ A exibição de Detalhes do Recurso apresenta um gráfico de linha do tempo dos 
 
 #### <a name="to-magnify-a-timeline-segment"></a>Para ampliar um segmento de linha do tempo
 
--   Arraste o ponteiro do mouse sobre uma área da linha do tempo.
+- Arraste o ponteiro do mouse sobre uma área da linha do tempo.
 
      Quando você soltar o botão do mouse, o modo de exibição ampliará o segmento de tempo selecionado. Você pode repetir o processo para ampliar ainda mais o segmento. A caixa de rolagem na barra de rolagem de tempo representa o tamanho relativo do segmento de tempo que aparece na exibição.
 
 #### <a name="to-zoom-out-on-a-timeline"></a>Para reduzir uma linha do tempo
 
--   Execute uma das seguintes etapas:
+- Execute uma das seguintes etapas:
 
-    -   Clique em **Reduzir** para retornar ao nível de zoom anterior.
+    - Clique em **Reduzir** para retornar ao nível de zoom anterior.
 
-    -   Clique em **Redefinir Zoom** para mostrar toda a linha do tempo na exibição.
+    - Clique em **Redefinir Zoom** para mostrar toda a linha do tempo na exibição.
 
 #### <a name="to-view-the-call-stack-of-an-event"></a>Para exibir a pilha de chamadas de um evento
 
--   No gráfico de linha do tempo, clique na barra de eventos.
+- No gráfico de linha do tempo, clique na barra de eventos.
 
 #### <a name="to-view-or-edit-the-source-code-of-a-function-in-the-call-stack"></a>Para exibir ou editar o código-fonte de uma função na pilha de chamadas
 
@@ -52,12 +52,12 @@ A exibição de Detalhes do Recurso apresenta um gráfico de linha do tempo dos 
 
 #### <a name="to-view-the-call-tree-of-contention-events-for-the-resource"></a>Para exibir a árvore de chamadas de eventos de contenção do recurso
 
--   No gráfico de linha do tempo, clique em **Total**.
+- No gráfico de linha do tempo, clique em **Total**.
 
      A exibição Contenções aparece para o recurso. Para obter mais informações, consulte [Exibição de Contenções de Recursos](../profiling/resource-contentions-view-contention-data.md)
 
 #### <a name="to-view-all-the-contention-events-of-a-thread"></a>Para exibir todos os eventos de contenção de um thread
 
--   No gráfico de linha do tempo, clique no nome ou ID do thread.
+- No gráfico de linha do tempo, clique no nome ou ID do thread.
 
      A Exibição de Detalhes de Thread é exibida para o thread selecionado. Para obter mais informações, consulte [Exibição de Detalhes do Thread](../profiling/thread-details-view-contention-data.md).
