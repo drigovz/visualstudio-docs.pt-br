@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 36d280cd62420b9805d0a4359df1b72ae452236d
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62777658"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>Medir o desempenho do aplicativo analisando o uso da CPU
 Você pode usar as ferramentas de criação de perfil do Visual Studio para analisar problemas de desempenho em seu aplicativo. Este procedimento mostra como usar a guia **Uso de CPU** das Ferramentas de Diagnóstico para obter dados de desempenho do seu aplicativo. As Ferramentas de Diagnóstico têm suporte para desenvolvimento de .NET no Visual Studio, incluindo o ASP.NET e para desenvolvimento nativo/C++.
@@ -169,4 +169,4 @@ Use a caixa de pesquisa para localizar um nó que você esteja procurando e use 
 Neste tutorial, você aprendeu como coletar e analisar dados de uso da CPU. Se você já concluiu o [Introdução às ferramentas de criação de perfil](../profiling/profiling-feature-tour.md), obtenha uma visão geral de como analisar o uso de memória em seus aplicativos.
 
 > [!div class="nextstepaction"]
-> [Uso de memória de perfil no Visual Studio](../profiling/memory-usage.md)
+> [Analisar o uso de memória no Visual Studio](../profiling/memory-usage.md)

@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 2ee3b0d82251d01e8ede22be238dc1bca5a4e092
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536245"
 ---
 # <a name="python-projects-in-visual-studio"></a>Projetos do Python no Visual Studio
 
@@ -81,14 +81,14 @@ A seguinte tabela resume os modelos disponíveis no Visual Studio 2017 e posteri
 | --- | --- |
 | [**Com base em um código existente do Python**](#create-project-from-existing-files) | Cria um projeto do Visual Studio com base em um código existente do Python em uma estrutura de pastas.  |
 | **Aplicativo do Python** | Uma estrutura de projeto básica para um novo aplicativo do Python com um único arquivo de origem vazio. Por padrão, o projeto é executado no interpretador do console do ambiente global padrão, que pode ser alterado com a [atribuição de outro ambiente](selecting-a-python-environment-for-a-project.md). |
-| [**Serviço de nuvem do Azure**](python-azure-cloud-service-project-template.md) | Um projeto para um serviço de nuvem do Azure escrito em Python. |
+| [**Serviço de Nuvem do Azure**](python-azure-cloud-service-project-template.md) | Um projeto para um serviço de nuvem do Azure escrito em Python. |
 | [**Projetos Web**](python-web-application-project-templates.md) | Projetos para aplicativos Web baseados em várias estruturas, incluindo Bottle, Django e Flask. |
 | **Aplicativo do IronPython** | Semelhante ao modelo de Aplicativo do Python, mas usa o IronPython, por padrão, habilitando a interoperabilidade do .NET e a depuração de modo misto com as linguagens .NET. |
 | **Aplicativo WPF do IronPython** | Uma estrutura de projeto que usa o IronPython com arquivos XAML do Windows Presentation Foundation para a interface do usuário do aplicativo. O Visual Studio fornece um designer de interface do usuário XAML, code-behind pode ser escrito no Python e o aplicativo é executado sem exibir um console. |
 | **Página da Web do IronPython Silverlight** | Um projeto do IronPython executado em um navegador usando o Silverlight. O código do aplicativo do Python é incluído na página da Web como um script. Uma marca de script de texto clichê puxa um código JavaScript que inicializa o IronPython em execução dentro do Silverlight, no qual o código do Python pode interagir com o DOM. |
 | **Aplicativo do Windows Forms do IronPython** | Uma estrutura de projeto que usa o IronPython com a interface do usuário criada usando o código com o Windows Forms. O aplicativo é executado sem exibir um console. |
 | **Aplicativo em segundo plano (IoT)** | Dá suporte à implantação de projetos do Python a serem executados como serviços em segundo plano em dispositivos. Visite a [Central de desenvolvedores do Windows IoT](https://dev.windows.com/en-us/iot) para obter mais informações. |
-| **Módulo de extensão do Python** | Esse modelo é exibido no Visual C++ se você instalou as **ferramentas de desenvolvimento nativo do Python** com a carga de trabalho do Python no Visual Studio 2017 ou posteriores (consulte [Instalação](installing-python-support-in-visual-studio.md)). Ele fornece a estrutura principal para uma DLL de extensão do C++, semelhante ao que é descrito em [Criar uma extensão do C++ para o Python](working-with-c-cpp-python-in-visual-studio.md). |
+| **Módulo de Extensão do Python** | Esse modelo é exibido no Visual C++ se você instalou as **ferramentas de desenvolvimento nativo do Python** com a carga de trabalho do Python no Visual Studio 2017 ou posteriores (consulte [Instalação](installing-python-support-in-visual-studio.md)). Ele fornece a estrutura principal para uma DLL de extensão do C++, semelhante ao que é descrito em [Criar uma extensão do C++ para o Python](working-with-c-cpp-python-in-visual-studio.md). |
 
 > [!Note]
 > Como Python é uma linguagem interpretada, os projetos em Python no Visual Studio não produzem um executável autônomo como outros projetos de linguagem compilada (C#, por exemplo). Para saber mais, confira [Perguntas e respostas](overview-of-python-tools-for-visual-studio.md#questions-and-answers).

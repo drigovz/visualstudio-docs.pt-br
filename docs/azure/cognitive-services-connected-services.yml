@@ -1,10 +1,4 @@
 ### YamlMime:YamlDocument
-ms.openlocfilehash: 78d27da24684d8d516921ae5258fe42f5e70f7e7
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55924052"
 documentType: LandingData
 title: Serviços Cognitivos no Visual Studio
 metadata:
@@ -19,26 +13,26 @@ metadata:
   ms.date: 10/09/2018
   ms.author: ghogen
 sections:
-- title: Conecte seus aplicativos aos Serviços Cognitivos com os Serviços Conectados do Visual Studio
-  items:
-  - type: paragraph
-    text: 'O Visual Studio oferece uma maneira conveniente de conectar seu projeto de aplicativo ou de serviço a uma variedade de serviços do Azure, incluindo os Serviços Cognitivos, que fornecem um poderoso conjunto de funcionalidades de inteligência artificial. O uso dos Serviços Conectados do Visual Studio simplifica bastante o processo de desenvolvimento, pois toda a configuração é feita automaticamente para você. Para obter um tutorial, escolha para qual serviço deseja adicionar suporte no projeto:'
-  - type: list
-    style: icon48
+  - title: Conecte seus aplicativos aos Serviços Cognitivos com os Serviços Conectados do Visual Studio
     items:
-    - image:
-        src: https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg
-      text: Análise de Texto
-      href: /azure/cognitive-services/text-analytics/vs-text-connected-service
-    - image:
-        src: https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg
-      text: Pesquisa de Notícias do Bing
-      href: /azure/cognitive-services/bing-news-search/vs-bing-news-search-connected-service
-    - image:
-        src: https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg
-      text: API de Detecção Facial
-      href: /azure/cognitive-services/face/vs-face-connected-service
-    - image:
-        src: https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg
-      text: Pesquisa Visual Computacional
-      href: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service
+      - type: paragraph
+        text: 'O Visual Studio oferece uma maneira conveniente de conectar seu projeto de aplicativo ou de serviço a uma variedade de serviços do Azure, incluindo os Serviços Cognitivos, que fornecem um poderoso conjunto de funcionalidades de inteligência artificial. O uso dos Serviços Conectados do Visual Studio simplifica bastante o processo de desenvolvimento, pois toda a configuração é feita automaticamente para você. Para obter um tutorial, escolha para qual serviço deseja adicionar suporte no projeto:'
+      - type: list
+        style: icon48
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg'
+            text: Análise de Texto
+            href: /azure/cognitive-services/text-analytics/vs-text-connected-service
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg'
+            text: Pesquisa de Notícias do Bing
+            href: /azure/cognitive-services/bing-news-search/vs-bing-news-search-connected-service
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg'
+            text: API de Detecção Facial
+            href: /azure/cognitive-services/face/vs-face-connected-service
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/i_azure-cognitive-services-color.svg'
+            text: Pesquisa Visual Computacional
+            href: /azure/cognitive-services/computer-vision/vs-computer-vision-connected-service

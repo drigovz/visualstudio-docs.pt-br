@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 40a8ea93075294bb4419cfe4178965a8a4808cfc
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 373a70c3a33258be6b9f618fa190fde4b9b80b0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62547813"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>Como: Compilar para um diretório de saída em comum
 
@@ -26,13 +26,13 @@ Por padrão, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] compila c
 
 ## <a name="to-place-all-solution-outputs-in-a-common-directory"></a>Para colocar todas as saídas de solução em um diretório comum
 
-1.  Clique em um projeto na solução.
+1. Clique em um projeto na solução.
 
-2.  No menu **Projeto**, clique em **Propriedades**.
+2. No menu **Projeto**, clique em **Propriedades**.
 
-3.  Dependendo do tipo de projeto, clique na guia **Compilar** ou na guia **Build** e defina o **Caminho de saída** para uma pasta usar para todos os projetos na solução.
+3. Dependendo do tipo de projeto, clique na guia **Compilar** ou na guia **Build** e defina o **Caminho de saída** para uma pasta usar para todos os projetos na solução.
 
-4.  Repita as etapas 1 a 3 para todos os projetos na solução.
+4. Repita as etapas 1 a 3 para todos os projetos na solução.
 
 ## <a name="see-also"></a>Consulte também
 

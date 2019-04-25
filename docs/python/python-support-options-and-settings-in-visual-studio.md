@@ -18,11 +18,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d917f0211a0888fa2a712b0c010cf6177823c223
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430907"
 ---
 # <a name="options-for-python-in-visual-studio"></a>Opções para o Python no Visual Studio
 
@@ -106,7 +106,7 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 
 | Opção | Padrão | Descrição |
 | --- | --- | --- |
-| **Inclui logs de análise** | On | Inclui logs detalhados relacionados à análise de ambientes do Python instalados ao salvar o diagnóstico em um arquivo ou copiá-los na área de transferência usando os botões. Essa opção pode aumentar significativamente o tamanho do arquivo gerado, mas costuma ser necessária para diagnosticar problemas do IntelliSense. |
+| **Incluir logs de análise** | On | Inclui logs detalhados relacionados à análise de ambientes do Python instalados ao salvar o diagnóstico em um arquivo ou copiá-los na área de transferência usando os botões. Essa opção pode aumentar significativamente o tamanho do arquivo gerado, mas costuma ser necessária para diagnosticar problemas do IntelliSense. |
 | Botão **Salvar o diagnóstico no arquivo** | N/D | Solicita um nome de arquivo e salva o log em um arquivo de texto. |
 | Botão **Copiar diagnóstico na área de transferência** | N/D | Coloca a totalidade do log na área de transferência; essa operação pode levar algum tempo, dependendo do tamanho do log. |
 
@@ -120,7 +120,7 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 | --- | --- | --- |
 | **Scripts** | N/D | Especifica uma pasta geral para scripts de inicialização que serão aplicados às janelas **Interativas** de todos os ambientes. Consulte [Scripts de inicialização](python-environments-window-tab-reference.md#startup-scripts). No entanto, observe que esse recurso não funciona no momento. |
 | **As setas para cima e para baixo navegam o histórico** | On | Usa as teclas de direção para navegar no histórico na janela **Interativa**. Desmarque essa configuração para usar as teclas de direção para navegar na saída da janela **Interativa**. |
-| **Modo de Conclusão** | **Avaliar somente expressões sem função chamadas** | O processo de determinar os membros disponíveis em uma expressão na janela **Interativa** pode exigir a avaliação da expressão incompleta atual, que pode resultar em efeitos colaterais ou funções sendo chamadas várias vezes. A configuração padrão **Avaliar somente expressões sem função chamadas** exclui expressões que aparecem para chamar uma função, mas avaliada outras expressões. Por exemplo, ele avalia `a.b`, mas não `a().b`.  **Nunca avaliar expressões** impede todos os efeitos colaterais, usando apenas o mecanismo IntelliSense normal para obter sugestões. **Avaliar todas as expressões** avalia a expressão completa para obter sugestões, independentemente de efeitos colaterais. |
+| **Modo de Conclusão** | **Avaliar somente expressões sem chamadas de função** | O processo de determinar os membros disponíveis em uma expressão na janela **Interativa** pode exigir a avaliação da expressão incompleta atual, que pode resultar em efeitos colaterais ou funções sendo chamadas várias vezes. A configuração padrão **Avaliar somente expressões sem função chamadas** exclui expressões que aparecem para chamar uma função, mas avaliada outras expressões. Por exemplo, ele avalia `a.b`, mas não `a().b`.  **Nunca avaliar expressões** impede todos os efeitos colaterais, usando apenas o mecanismo IntelliSense normal para obter sugestões. **Avaliar todas as expressões** avalia a expressão completa para obter sugestões, independentemente de efeitos colaterais. |
 | **Ocultar sugestões de análise estática** | Off | Quando definido, exibe apenas sugestões que são obtidas avaliando a expressão. Se combinado com o valor do **Modo de Conclusão** **Nunca avaliar expressões**, nenhuma conclusão útil será exibida na janela **Interativa**. |
 
 ![Caixa de diálogo de opções do Python, guia Janelas Interativas](media/options-interactive-windows.png)
@@ -147,9 +147,9 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 
 | Opção | Padrão | Descrição |
 | --- | --- | --- |
-| **A conclusão de membro exibe a interseção de membros** | Off | Quando definido, mostra apenas conclusões que têm suporte por todos os tipos possíveis. |
+| **A conclusão de membros exibe a interseção de membros** | Off | Quando definido, mostra apenas conclusões que têm suporte por todos os tipos possíveis. |
 | **Lista de filtro com base na cadeia de pesquisa** | On | Aplica a filtragem de sugestões de preenchimento conforme você digita (o padrão é marcado). |
-| **Mostra automaticamente preenchimentos para todos os identificadores** | On | Desmarque esta opção para desabilitar as conclusões no editor e nas janelas **Interativas**. |
+| **Mostrar automaticamente conclusões para todos os identificadores** | On | Desmarque esta opção para desabilitar as conclusões no editor e nas janelas **Interativas**. |
 
 ### <a name="selection-in-completion-list"></a>Seleção em listas de conclusão
 
@@ -163,7 +163,7 @@ Também há opções adicionais específicas do Python na guia **Editor de Texto
 
 | Opção | Padrão | Descrição |
 | --- | --- | --- |
-| **Entre no modo estrutura de tópicos quando os arquivos abrem** | On | Ative automaticamente o recurso de estrutura de tópicos do Visual Studio no editor ao abrir o arquivo de código do Python. |
+| **Entrar no modo de estrutura de tópicos na abertura dos arquivos** | On | Ative automaticamente o recurso de estrutura de tópicos do Visual Studio no editor ao abrir o arquivo de código do Python. |
 | **Colar prompts REPL removidos** | On | Remove **>>>** e **...** do texto colado, permitindo a transferência fácil do código da janela **Interativa** para o editor. Desmarque essa opção se você precisar manter esses caracteres ao colar de outras fontes. |
 | **Nomes de cores com base em tipos** | On | Habilita as cores de sintaxe no código do Python. |
 

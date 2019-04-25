@@ -10,12 +10,12 @@ ms.assetid: 0ba0363b-7f50-4bde-a919-0e3bce7bc115
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a2c368f15da44bdc965d2176f290c2a796f4347
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 299cca5249872b1be7f20cf4fca8c0dcd563794c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784240"
 ---
 # <a name="edit-load-patterns-to-model-virtual-user-activities"></a>Editar padrões de carga para modelar atividades de usuário virtual
 
@@ -46,7 +46,6 @@ O padrão de carga é um componente de um cenário. Os cenários, com os padrõe
 
 > [!NOTE]
 > Se a duração total do teste for menor que o tempo necessário para passar à carga de usuário máxima, o teste irá parar depois da duração decorrida e não alcançará o destino **Contagem Máxima de Usuários**.
-
 
  Você pode usar a meta da etapa para aumentar a carga até o servidor atingir um ponto em que o desempenho diminui significativamente. À medida que a carga aumentar, o servidor acabará ficando sem recursos. A carga em etapa é uma boa maneira de determinar o número de usuários em que ela ocorre. Com a carga em etapa, você também precisa monitorar recursos do agente atentamente para ter certeza de que os agentes possam gerar a carga desejada.
 
@@ -122,36 +121,34 @@ O padrão de carga é um componente de um cenário. Os cenários, com os padrõe
 > [!NOTE]
 > Para obter uma lista completa das propriedades de cenário de teste de carga e suas descrições, confira [Propriedades do cenário de teste de carga](../test/load-test-scenario-properties.md).
 
-
  Um padrão de carga especifica o número de usuários virtuais ativos durante um teste de carga e a taxa em que os novos usuários são adicionados. Você pode escolher um dos três padrões disponíveis: padrão em etapa, constante e baseado em meta. Para saber mais, confira [Especificar o número de usuários virtuais com padrões de carga em um cenário de teste de carga](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
 > [!NOTE]
 > Você também pode alterar as propriedades de carga programaticamente usando um plug-in de teste de carga. Para obter mais informações, confira [Como: Criar um plug-in de teste de carga](../test/how-to-create-a-load-test-plug-in.md).
 
-
 ### <a name="to-change-the-load-pattern"></a>Para alterar o padrão de carga
 
-1.  Abra um teste de carga.
+1. Abra um teste de carga.
 
-2.  No **Editor de Teste de Carga**, na pasta *Cenários*, expanda o cenário cujo padrão de carga você deseja editar e escolha o padrão de carga do cenário.
+2. No **Editor de Teste de Carga**, na pasta *Cenários*, expanda o cenário cujo padrão de carga você deseja editar e escolha o padrão de carga do cenário.
 
     > [!NOTE]
     > A expressão do nó do padrão de carga, como ele é exibido na árvore de cenário do teste de carga, reflete o perfil de carga que você escolheu ao criar o teste de carga. Ela pode ser **Perfil de carga constante** ou **Perfil da carga em etapa**.
 
-3.  Pressione **F4** para exibir a janela **Propriedades**.
+3. Pressione **F4** para exibir a janela **Propriedades**.
 
      As categorias **Padrão de carga** e **Parâmetros** são exibidas na janela **Propriedades**.
 
-4.  (Opcional) Altere propriedade **Padrão** na categoria **Padrão de carga**.
+4. (Opcional) Altere propriedade **Padrão** na categoria **Padrão de carga**.
 
      As opções escolhidas para a propriedade **Padrão** são **Etapa**, **Constante** e **Baseadas em meta**. Para saber mais sobre os tipos de padrão de carga, confira [Especificar o número de usuários virtuais com padrões de carga em um cenário de teste de carga](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-5.  (Opcional) Na categoria **Parâmetros**, altere os valores.
+5. (Opcional) Na categoria **Parâmetros**, altere os valores.
 
     > [!NOTE]
     > Os valores que você pode definir para **Parâmetros** mudam de acordo com o valor selecionado para a propriedade **Padrão**.
 
-6.  Depois de alterar as propriedades, escolha **Salvar** no menu **Arquivo**. Você pode executar o teste de carga com o novo padrão de carga.
+6. Depois de alterar as propriedades, escolha **Salvar** no menu **Arquivo**. Você pode executar o teste de carga com o novo padrão de carga.
 
 ## <a name="see-also"></a>Consulte também
 
