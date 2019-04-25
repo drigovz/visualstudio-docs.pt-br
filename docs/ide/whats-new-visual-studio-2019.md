@@ -33,9 +33,9 @@ O Visual Studio 2019 fornece os melhores serviços e ferramentas do mercado para
 
 Veja uma recapitulação de alto nível sobre as novidades:
 
-* **[Desenvolver](#develop)**: mantenha a concentração e aumente a produtividade com desempenho aperfeiçoado, limpeza de código instantânea e melhores resultados de pesquisa.
+* **[Desenvolver](#develop)**: mantenha a concentração e aumente a produtividade com desempenho aperfeiçoado, limpeza instantânea de código e melhores resultados de pesquisa.
 * **[Colaborar](#collaborate)**: aproveite a colaboração natural por meio de um fluxo de trabalho do Git, depuração e edição em tempo real, e revisões de código diretamente no Visual Studio.
-* **[Depurar](#debug)**: realce e navegue para valores específicos, otimize o uso de memória e faça instantâneos automáticos da execução do aplicativo.
+* **[Depurar](#debug)**: realce e navegue para valores específicos, otimize o uso de memória e faça instantâneos automáticos da execução do seu aplicativo.
 
 Para obter uma lista completa de todas as novidades incluídas nesta versão, confira as [notas de versão](/visualstudio/releases/2019/release-notes/).
 
@@ -59,7 +59,7 @@ Há muitas refatorações novas e altamente úteis no C# que facilitam a organiz
 
    ![Animação da nova experiência de refatorações do Visual Studio 2019](media/vs-2019/refactorings.gif)
 
-Basta invocar as refatorações pressionando **Ctrl+** e selecionar a ação desejada.
+Basta invocar as refatorações pressionando **Ctrl+ .** e selecionar a ação desejada.
 
 ### <a name="intellicode"></a>IntelliCode
 
