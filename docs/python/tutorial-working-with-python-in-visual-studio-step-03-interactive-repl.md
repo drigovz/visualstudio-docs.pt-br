@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 14015c01b487bfe7963d36154ff2dc9b599d7c49
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366809"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430803"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>Etapa 3: Usar a janela Interativa REPL
 
-**Etapa anterior: [Escrever e executar código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
+**Etapa anterior: [Escrever e executar o código](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)**
 
 A janela **Interativa** do Visual Studio para Python oferece uma experiência avançada de REPL (leitura-avaliação-impressão-loop), que reduz consideravelmente o ciclo comum de edição-build-depuração. A janela **Interativa** fornece todos os recursos da experiência de REPL da linha de comando do Python. Ela também facilita a troca de código com arquivos de origem no editor do Visual Studio, o que seria difícil com a linha de comando.
 

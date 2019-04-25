@@ -9,12 +9,12 @@ ms.assetid: 08a7fe98-a7f7-4b8d-94a3-ec82b65a2aaf
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: de19f24040d285392c2ed2a69776c8ecf39c9f36
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ef80a10954e9cf58db04e46f11934ffd86974bea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910786"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786098"
 ---
 # <a name="how-to-specify-if-test-failures-are-saved-to-test-logs-using-the-load-test-editor"></a>Como: Especificar se as falhas de teste são salvas em logs de teste usando o Editor de Teste de Carga
 
@@ -27,17 +27,17 @@ Depois de criar seu teste de carga com o **Novo Assistente de Teste de Carga**, 
 
 ## <a name="to-specify-if-the-test-log-is-saved-when-a-test-fails-in-a-scenario"></a>Para especificar se o log de teste será salvo quando um teste falhar em um cenário
 
-1.  Abra um teste de carga.
+1. Abra um teste de carga.
 
      O **Editor de Teste de Carga** é exibido. A árvore do teste de carga é exibida.
 
-2.  Na pasta **Configurações de Execução** das árvores de teste de carga, escolha o nó das configurações de execução para o qual deseja especificar o número máximo de iterações de teste.
+2. Na pasta **Configurações de Execução** das árvores de teste de carga, escolha o nó das configurações de execução para o qual deseja especificar o número máximo de iterações de teste.
 
-3.  No menu **Exibir**, selecione **Janela de Propriedades**.
+3. No menu **Exibir**, selecione **Janela de Propriedades**.
 
      As categorias e as propriedades das configurações de execução de carga são exibidas na janela **Propriedades**.
 
-4.  Na propriedade **Salvar Log em caso de Falha de Teste**, selecione **Verdadeiro** ou **Falso** para especificar se deseja salvar o log de teste em caso de falha de teste no cenário.
+4. Na propriedade **Salvar Log em caso de Falha de Teste**, selecione **Verdadeiro** ou **Falso** para especificar se deseja salvar o log de teste em caso de falha de teste no cenário.
 
      Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**.
 

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c5550f844eaecf9cf7c98281421806ce37aad4f2
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790037"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790935"
 ---
 # <a name="options-dialog-box-environment"></a>Caixa de diálogo Opções: Ambiente
 
@@ -27,7 +27,7 @@ Você pode usar as páginas da pasta **Ambiente** na caixa de diálogo **Opçõe
 |Personalizar a aparência e o comportamento dos menus, das janelas e de outros elementos do IDE.|[Caixa de diálogo Geral, Ambiente, Opções](../../ide/reference/general-environment-options-dialog-box.md)|
 |Para especificar se deseja usar perfil móvel para as configurações entre computadores.|[Caixa de diálogo Contas, Ambiente, Opções](../../ide/reference/accounts-environment-options-dialog-box.md)|
 |Alterar as configurações para salvamento e restauração automáticos de arquivos.|[Caixa de diálogo Recuperação Automática, Ambiente, Opções](../../ide/reference/autorecover-environment-options-dialog-box.md)|
-|Estabelecer configurações de gerenciamento e exibição de documento que incluem o comportamento de Arquivos diversos.|[Caixa de diálogo Documentos, Ambiente, Opções](../../ide/reference/documents-environment-options-dialog-box.md)|
+|Estabelecer configurações de gerenciamento e exibição de documento que incluem o comportamento de arquivos diversos.|[Caixa de diálogo Documentos, Ambiente, Opções](../../ide/reference/documents-environment-options-dialog-box.md)|
 |Personalize como as atualizações ocorrem e como as extensões são gerenciadas.|[Caixa de diálogo Extensões, Ambiente e Opções](../../ide/reference/extensions-and-updates-environment-options-dialog-box.md)|
 |Personalize a exibição das caixas de mensagem e o comportamento da janela **Localizar e Substituir** durante uma Localização Rápida ou uma Substituição Rápida, bem como o preenchimento automático de Localizar.|[Caixa de diálogo Localizar e Substituir, Ambiente, Opções](../../ide/reference/find-and-replace-environment-options-dialog-box.md)|
 |Definir a fonte e a cor de determinados editores, caixas de diálogo, janelas de ferramentas e outros elementos da interface do usuário.|[Caixa de diálogo Fontes e Cores, Ambiente, Opções](../../ide/reference/fonts-and-colors-environment-options-dialog-box.md)|

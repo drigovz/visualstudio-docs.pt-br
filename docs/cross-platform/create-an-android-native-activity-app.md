@@ -12,12 +12,12 @@ ms.author: corob
 manager: jillfra
 ms.workload:
 - xplat-cplusplus
-ms.openlocfilehash: fbe0942226e44e5ca2908f7c13f34595bef34887
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: ac2f040addb4c387afe0b325fe53b6a9c289f33a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62819585"
 ---
 # <a name="create-an-android-native-activity-app"></a>Criar um aplicativo de Atividade Nativa do Android
 
@@ -45,9 +45,9 @@ Neste tutorial, primeiro você criará um novo projeto de Atividade Nativa do An
 
    A nova solução de aplicativo de Atividade Nativa do Android inclui dois projetos:
 
--   `MyAndroidApp.NativeActivity` contém as referências e o código de cola para que seu aplicativo seja executado como uma Atividade Nativa no Android. A implementação dos pontos de entrada do código de cola está em *main.cpp*. Os cabeçalhos pré-compilados estão em *pch.h*. Esse projeto de aplicativo de Atividade Nativa é compilado em um arquivo *.so* de biblioteca compartilhada que é obtido pelo projeto de Empacotamento.
+- `MyAndroidApp.NativeActivity` contém as referências e o código de cola para que seu aplicativo seja executado como uma Atividade Nativa no Android. A implementação dos pontos de entrada do código de cola está em *main.cpp*. Os cabeçalhos pré-compilados estão em *pch.h*. Esse projeto de aplicativo de Atividade Nativa é compilado em um arquivo *.so* de biblioteca compartilhada que é obtido pelo projeto de Empacotamento.
 
--   `MyAndroidApp.Packaging` cria o arquivo *.apk* para implantação em um emulador ou dispositivo Android. Isso contém os recursos e o arquivo *AndroidManifest.xml* no qual as propriedades do manifesto são definidas. Também contém o arquivo *build.xml* que controla o processo de build Ant. Ele é definido como o projeto de inicialização por padrão, para que possa ser implantado e executado diretamente no Visual Studio.
+- `MyAndroidApp.Packaging` cria o arquivo *.apk* para implantação em um emulador ou dispositivo Android. Isso contém os recursos e o arquivo *AndroidManifest.xml* no qual as propriedades do manifesto são definidas. Também contém o arquivo *build.xml* que controla o processo de build Ant. Ele é definido como o projeto de inicialização por padrão, para que possa ser implantado e executado diretamente no Visual Studio.
 
 ## <a name="build-and-run-the-default-android-native-activity-app"></a>Criar e executar o aplicativo de atividade nativa do Android padrão
 
@@ -55,21 +55,21 @@ Compile e execute o aplicativo gerado pelo modelo para verificar a instalação 
 
 ## <a name="to-build-and-run-the-default-native-activity-app"></a>Para compilar e executar o aplicativo de Atividade Nativa padrão
 
-1.  Se ainda não estiver selecionado, escolha **x86** na lista suspensa **Plataformas da Solução**.
+1. Se ainda não estiver selecionado, escolha **x86** na lista suspensa **Plataformas da Solução**.
 
      ![Seleção suspensa do x86 de Plataformas da Solução](../cross-platform/media/cppmdd_rc_na_solution_x86.png "CPPMDD_RC_NA_Solution_x86")
 
      Se a lista **Plataformas da Solução** não estiver visível, escolha **Plataformas da Solução** na lista **Adicionar/Remover Botões** e, em seguida, escolha sua plataforma.
 
-2.  Na barra de menus, escolha **Compilar** > **Compilar Solução**.
+2. Na barra de menus, escolha **Compilar** > **Compilar Solução**.
 
      A Janela de Saída exibe a saída do processo de build dos dois projetos na solução.
 
-3.  Escolha um dos perfis de Telefone Android do Emulador do VS (x86) como o destino de implantação.
+3. Escolha um dos perfis de Telefone Android do Emulador do VS (x86) como o destino de implantação.
 
      Se você tiver instalado outros emuladores ou conectado um dispositivo Android, poderá escolhê-los na lista suspensa de destino de implantação.
 
-4.  Pressione **F5** para iniciar a depuração ou Shift+F5 para iniciar sem depuração.
+4. Pressione **F5** para iniciar a depuração ou Shift+F5 para iniciar sem depuração.
 
      Esta é a aparência do aplicativo padrão no Emulador do Visual Studio para Android.
 
@@ -77,6 +77,6 @@ Compile e execute o aplicativo gerado pelo modelo para verificar a instalação 
 
      O Visual Studio inicia o emulador, que leva alguns segundos para carregar e implantar o código. Quando o aplicativo tiver sido iniciado, você poderá definir pontos de interrupção e usar o depurador para executar o código em etapas, examinar os locais e inspecionar os valores.
 
-5.  Pressione **Shift**+**F5** para parar a depuração.
+5. Pressione **Shift**+**F5** para parar a depuração.
 
      O emulador é um processo separado que continua sendo executado. É possível editar, compilar e implantar o código várias vezes no mesmo emulador.

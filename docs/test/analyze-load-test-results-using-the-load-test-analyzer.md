@@ -10,12 +10,12 @@ ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: de44dde72e339a2afe4caff779e3468ae2b8601e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 197df09d54500e16ca4f904662693bdfc983f7b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822788"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>Analisar resultados do teste de carga usando o Analisador de Teste de Carga
 
@@ -25,11 +25,11 @@ Localize gargalos, identifique erros e meça as melhorias em seu aplicativo ao u
 
 Analise resultados de teste de carga das seguintes maneiras:
 
--   Monitore um teste de carga quando ele estiver em execução.
+- Monitore um teste de carga quando ele estiver em execução.
 
--   Analise um teste de carga depois de concluído.
+- Analise um teste de carga depois de concluído.
 
--   Exiba resultados de um teste de carga anterior.
+- Exiba resultados de um teste de carga anterior.
 
 Você também pode criar relatórios que comparam dois ou mais relatórios para análise de tendência para compartilhar com os participantes. Confira [Relatando resultados do teste de carga para comparações de testes ou análise de tendências](../test/compare-load-test-results.md).
 

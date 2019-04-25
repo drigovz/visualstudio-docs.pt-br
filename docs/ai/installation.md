@@ -9,12 +9,12 @@ ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fe18719e55a59abfcbde35195ed499fe9882c6c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 623aa21e94ff25b8190bae82ca836ed16f64bcaa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62548411"
 ---
 # <a name="installation"></a>Instalação
 
@@ -87,6 +87,7 @@ As estruturas de aprendizagem profunda dependem do pip para sua própria instala
 Em seguida, precisamos verificar se o Python 3.5 está instalado corretamente e atualizar o pip para a versão mais recente, executando os seguintes comandos em um terminal:
 
 - **Windows**
+
     ```cmd
     C:\Users\test>python -V
     Python 3.5.4
@@ -98,6 +99,7 @@ Em seguida, precisamos verificar se o Python 3.5 está instalado corretamente e 
     ```
 
 - **macOS**
+
     ```bash
     MyMac:~ test$ python3.5 -V
     Python 3.5.4
@@ -159,10 +161,13 @@ O [Apache MXNet (em encubação)](https://mxnet.incubator.apache.org/) é uma es
 Para instalar o MXNet, execute o seguinte comando em um terminal:
 
 - Com a GPU
+
     ```bash
     pip3.5 install mxnet-cu80==0.12.0
     ```
+
 - Sem a GPU
+
     ```bash
     pip3.5 install mxnet==0.12.0
     ```

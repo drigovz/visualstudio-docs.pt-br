@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f90e6c4bb3759adb46bf827580cc94dc4a8ed71f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 69a8d3f1b84bd59cec9e13bf50eb8eaa46795cdf
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55927172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779013"
 ---
 # <a name="options-text-editor-html-web-forms-formatting"></a>Opções, Editor de Texto, HTML (Web Forms), Formatação
 
@@ -41,7 +41,6 @@ Essas opções especificam como a marcação para controles de servidor Web é c
 |**Minúsculas**|Nomes de elementos são reformatados para minúsculas.|
 |**Definição do assembly**|A capitalização do elemento é determinada pelo modo como o elemento é definido na classe de tipo correspondente.|
 
-
 **Marca de cliente, Atributos do cliente**
 
 Essas opções especificam se a formatação automática altera os nomes dos atributos e das propriedades HTML para maiúsculas ou minúsculas, ou se os mantêm como foram inseridos.
@@ -51,7 +50,6 @@ Essas opções especificam se a formatação automática altera os nomes dos atr
 |**Como inserido**|A capitalização do atributo fica exatamente como foi inserida.|
 |**Maiúsculas**|Os nomes de atributo são reformatados para maiúsculas.|
 |**Minúsculas**|Os nomes de atributo são reformatados para minúsculas.|
-
 
 ## <a name="automatic-formatting-options"></a>Opções de formatação automática
 
@@ -65,7 +63,6 @@ Essas opções fazem com que o Editor de exibição do código-fonte adicione ou
 - **Inserir aspas ao valor do atributo ao digitar**
 
    Quando esta opção está selecionada, o editor coloca automaticamente aspas nos atributos enquanto você digita (por exemplo, ID="Select1"). Desmarque esta opção se você preferir manualmente inserir aspas na marcação.
-
 
    > [!NOTE]
    > Se esta opção está selecionada, qualquer aspas existente - as marcas na marcação são retidas; aspas são removidas nunca.

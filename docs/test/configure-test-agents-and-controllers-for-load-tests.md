@@ -7,12 +7,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 16686d3900b3db2656492f5049590eeff47eb93a
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.openlocfilehash: fca2436b99f97e18801f8adffdc27fd348fc8123
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56796343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783912"
 ---
 # <a name="configure-test-agents-and-test-controllers-for-running-load-tests"></a>Configurar controladores e agentes de teste para executar testes de carga
 
@@ -27,11 +27,11 @@ O Visual Studio pode gerar uma carga simulada para seu aplicativo usando máquin
 
 A arquitetura de simulação da carga consiste em um cliente do Visual Studio, um controlador de teste e agentes de teste.
 
--   O cliente é usado para desenvolver testes, executar testes e exibir resultados do teste.
+- O cliente é usado para desenvolver testes, executar testes e exibir resultados do teste.
 
--   O controlador de teste é usado para administrar os agentes de teste e coletar resultados do teste.
+- O controlador de teste é usado para administrar os agentes de teste e coletar resultados do teste.
 
--   Os agentes de teste são usados para executar testes e coletar dados que incluem informações do sistema e dados de criação de perfil do ASP.NET definidos na configuração de teste.
+- Os agentes de teste são usados para executar testes e coletar dados que incluem informações do sistema e dados de criação de perfil do ASP.NET definidos na configuração de teste.
 
 Essa arquitetura oferece os seguintes benefícios:
 

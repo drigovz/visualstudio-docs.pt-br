@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ca466163ed7e6bd610b5041d3731bdc2d43c6e16
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b90a80ffb958fb08a39a4f3b7f4350aa80d830d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55912789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788746"
 ---
 # <a name="manage-test-controllers-and-test-agents"></a>Gerenciar controladores e agentes de teste
 
@@ -184,27 +184,27 @@ Se quiser registrar seu controlador de teste em sua coleção de projetos do Tea
 
 Ao adicionar funções para seu aplicativo às configurações de teste para Visual Studio, você pode adicionar propriedades de agente para cada uma de suas funções. Isso determina que agentes de teste estão disponíveis para essa função. Quando você executa seus testes usando essas configurações de teste, o controlador de teste que é selecionado para as configurações determina a disponibilidade de agentes necessários. Estas são as seguintes situações que podem ocorrer quando a disponibilidade do agente é determinada:
 
--   Não há nenhum agente disponível para a função que deve executar os testes. Seus testes não podem ser executados. Você pode executar uma das seguintes ações e executar novamente seus testes:
+- Não há nenhum agente disponível para a função que deve executar os testes. Seus testes não podem ser executados. Você pode executar uma das seguintes ações e executar novamente seus testes:
 
-    -   Você pode esperar um agente para ficar disponível para essa função para executar os testes.
+    - Você pode esperar um agente para ficar disponível para essa função para executar os testes.
 
-    -   Se houver qualquer agente que esteja offline que possa ser usado para esta função, você poderá reiniciar o agente para que ele fique disponível.
+    - Se houver qualquer agente que esteja offline que possa ser usado para esta função, você poderá reiniciar o agente para que ele fique disponível.
 
-    -   Você pode adicionar outro agente com as propriedades corretas de agente para essa função ao controlador de teste.
+    - Você pode adicionar outro agente com as propriedades corretas de agente para essa função ao controlador de teste.
 
-    -   Você pode alterar as propriedades do agente para esta função nas configurações de teste para ativar outros agentes que deseja usar.
+    - Você pode alterar as propriedades do agente para esta função nas configurações de teste para ativar outros agentes que deseja usar.
 
--   Não há nenhum agente disponível para uma ou mais funções que executam adaptadores de dados de diagnóstico. Os testes podem ser executados, mas o adaptador de dados de diagnóstico não pode ser executado. Você pode executar seus testes sem o adaptador de dados de diagnóstico, ou pode executar uma das seguintes ações e executar novamente seus testes:
+- Não há nenhum agente disponível para uma ou mais funções que executam adaptadores de dados de diagnóstico. Os testes podem ser executados, mas o adaptador de dados de diagnóstico não pode ser executado. Você pode executar seus testes sem o adaptador de dados de diagnóstico, ou pode executar uma das seguintes ações e executar novamente seus testes:
 
-    -   Você pode esperar um agente ficar disponível para essas funções.
+    - Você pode esperar um agente ficar disponível para essas funções.
 
-    -   Se houver qualquer agente que esteja offline e que possa ser usado para esta função, você deverá alterar o estado do agente para online de **Administrar Controlador de Teste** no menu **Testar**. Além disso, você poderá ter que reiniciar o agente se ele tiver sido desconectado do controlador.
+    - Se houver qualquer agente que esteja offline e que possa ser usado para esta função, você deverá alterar o estado do agente para online de **Administrar Controlador de Teste** no menu **Testar**. Além disso, você poderá ter que reiniciar o agente se ele tiver sido desconectado do controlador.
 
-    -   Certifique-se de que nenhum agente que você possa precisar para esta execução de teste esteja ocupado executando testes. Você pode verificar o status de todos os agentes de **Administrar Controlador de Teste** no menu **Testar**.
+    - Certifique-se de que nenhum agente que você possa precisar para esta execução de teste esteja ocupado executando testes. Você pode verificar o status de todos os agentes de **Administrar Controlador de Teste** no menu **Testar**.
 
-    -   Você pode adicionar outro agente com as propriedades corretas de agente para a função ao controlador de teste.
+    - Você pode adicionar outro agente com as propriedades corretas de agente para a função ao controlador de teste.
 
-    -   Você pode alterar as propriedades do agente para a função nas configurações de teste para ativar outros agentes que deseja usar.
+    - Você pode alterar as propriedades do agente para a função nas configurações de teste para ativar outros agentes que deseja usar.
 
 ## <a name="load-tests-from-delay-signed-assemblies"></a>Carregar testes de assemblies assinados com atraso
 

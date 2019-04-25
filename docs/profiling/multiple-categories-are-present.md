@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 69b3de3a7f1554bc3ad95874a58b75b809d610a2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597979"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794656"
 ---
 # <a name="multiple-categories-are-present"></a>Há várias categorias presentes
 Uma seção que contém mais de um tipo de atividade em um intervalo de tempo determinado é selecionada. Observe que duas cores são exibidas, uma verticalmente empilhada na outra. Essas cores representam apenas as duas atividades mais frequentes no intervalo de tempo determinado. A relação da frequência dessas duas atividades é mostrada como terços ou metades da barra vertical. Para ver mais detalhes, tente aumentar o zoom nessa seção da exibição de threads.
