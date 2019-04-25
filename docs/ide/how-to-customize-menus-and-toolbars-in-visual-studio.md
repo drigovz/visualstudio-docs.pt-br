@@ -27,12 +27,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84c4b2e5aa532becc1bf9bc50a3c7bcdbd2b8d4e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4986faba52606937993af17824789ced2d600ad5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429261"
 ---
 # <a name="how-to-customize-menus-and-toolbars-in-visual-studio"></a>Como: Personalizar menus e barras de ferramentas no Visual Studio
 
@@ -43,38 +43,38 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
 
 ## <a name="add-remove-or-move-a-menu-on-the-menu-bar"></a>Adicionar, remover ou mover um menu na barra de menus
 
-1.  Na barra de menus, escolha **Ferramentas** > **Personalizar**.
+1. Na barra de menus, escolha **Ferramentas** > **Personalizar**.
 
      A caixa de diálogo **Personalizar** é aberta.
 
-2.  Na guia **Comandos**, deixe o botão de opção **Barra de menus** selecionado, deixe **Barra de Menus** selecionado na lista ao lado dessa opção e realize um dos seguintes conjuntos de etapas:
+2. Na guia **Comandos**, deixe o botão de opção **Barra de menus** selecionado, deixe **Barra de Menus** selecionado na lista ao lado dessa opção e realize um dos seguintes conjuntos de etapas:
 
-    -   Para adicionar um menu, escolha o botão **Adicionar Novo Menu**, escolha o botão **Modificar Seleção** e nomeie o menu que você deseja adicionar.
+    - Para adicionar um menu, escolha o botão **Adicionar Novo Menu**, escolha o botão **Modificar Seleção** e nomeie o menu que você deseja adicionar.
 
         ![Personalizar a caixa de diálogo mostrando como adicionar um menu](../ide/media/addmenu.png)
 
-    -   Para remover um menu, selecione-o na lista **Controles** e escolha o botão **Excluir**.
+    - Para remover um menu, selecione-o na lista **Controles** e escolha o botão **Excluir**.
 
-    -   Para mover um menu na barra de menus, escolha o menu na lista **Controles** e escolha o botão **Mover para Cima** ou **Mover para Baixo**.
+    - Para mover um menu na barra de menus, escolha o menu na lista **Controles** e escolha o botão **Mover para Cima** ou **Mover para Baixo**.
 
 ## <a name="add-remove-or-move-a-toolbar"></a>Adicionar, remover ou mover uma barra de ferramentas
 
-1.  Na barra de menus, escolha **Ferramentas** > **Personalizar**.
+1. Na barra de menus, escolha **Ferramentas** > **Personalizar**.
 
      A caixa de diálogo **Personalizar** é aberta.
 
-2.  Na guia **Barra de Ferramentas**, realize um dos seguintes conjuntos de etapas:
+2. Na guia **Barra de Ferramentas**, realize um dos seguintes conjuntos de etapas:
 
-    -   Para adicionar uma barra de ferramentas, escolha o botão **Novo**, especifique um nome para a barra de ferramentas que você deseja adicionar e escolha o botão **OK**.
+    - Para adicionar uma barra de ferramentas, escolha o botão **Novo**, especifique um nome para a barra de ferramentas que você deseja adicionar e escolha o botão **OK**.
 
         ![Personalizar a caixa de diálogo mostrando como adicionar uma barra de ferramentas](../ide/media/addtoolbar.png)
 
-    -   Para remover uma barra de ferramentas personalizada, selecione-a na lista **Barras de Ferramentas** e escolha o botão **Excluir**.
+    - Para remover uma barra de ferramentas personalizada, selecione-a na lista **Barras de Ferramentas** e escolha o botão **Excluir**.
 
         > [!IMPORTANT]
         > Você pode excluir as barras de ferramentas que cria, mas não as barras de ferramentas padrão.
 
-    -   Para mover uma barra de ferramentas para outro local de encaixe, selecione-a na lista **Barras de Ferramentas**, escolha o botão **Modificar Seleção** e escolha um local na lista exibida.
+    - Para mover uma barra de ferramentas para outro local de encaixe, selecione-a na lista **Barras de Ferramentas**, escolha o botão **Modificar Seleção** e escolha um local na lista exibida.
 
         Você também pode arrastar uma barra de ferramentas pela sua borda esquerda para movê-la para qualquer lugar na área de encaixe principal.
 
@@ -83,37 +83,37 @@ Para personalizar o Visual Studio, além de adicionar e remover barras de ferram
 
 ## <a name="customizing_menu">Personalizar um menu ou uma barra de ferramentas</a>
 
-1.  Na barra de menus, escolha **Ferramentas** > **Personalizar**.
+1. Na barra de menus, escolha **Ferramentas** > **Personalizar**.
 
     A caixa de diálogo **Personalizar** é aberta.
 
-2.  Na guia **Comandos**, escolha o botão de opção do tipo de elemento que você deseja personalizar.
+2. Na guia **Comandos**, escolha o botão de opção do tipo de elemento que você deseja personalizar.
 
-3.  Na lista desse tipo de elemento, escolha o menu ou a barra de ferramentas que deseja personalizar e executa um dos seguintes conjuntos de etapas:
+3. Na lista desse tipo de elemento, escolha o menu ou a barra de ferramentas que deseja personalizar e executa um dos seguintes conjuntos de etapas:
 
-    -   Para adicionar um comando, escolha o botão **Adicionar Comando**.
+    - Para adicionar um comando, escolha o botão **Adicionar Comando**.
 
         Na caixa de diálogo **Adicionar Comando**, escolha um item na lista **Categorias**, escolha um item na lista **Comandos** e escolha o botão **OK**.
 
         ![Adicionar caixa de diálogo Comando no Visual Studio](../ide/media/addcommand.png)
 
-    -   Para excluir um comando, escolha-o na lista **Controles** e escolha o botão **Excluir**.
+    - Para excluir um comando, escolha-o na lista **Controles** e escolha o botão **Excluir**.
 
-    -   Para reorganizar comandos, escolha um comando na lista **Controles** e escolha o botão **Mover para Cima** ou **Mover para Baixo**.
+    - Para reorganizar comandos, escolha um comando na lista **Controles** e escolha o botão **Mover para Cima** ou **Mover para Baixo**.
 
-    -   Para agrupar comandos em uma linha horizontal, primeiro escolha um comando na lista **Controles**, escolha o botão **Modificar Seleção** e, em seguida, escolha **Começar um Grupo** no menu exibido.
+    - Para agrupar comandos em uma linha horizontal, primeiro escolha um comando na lista **Controles**, escolha o botão **Modificar Seleção** e, em seguida, escolha **Começar um Grupo** no menu exibido.
 
 ## <a name="reset-a-menu-or-a-toolbar"></a>Redefinir um menu ou uma barra de ferramentas
 
-1.  Na barra de menus, escolha **Ferramentas** > **Personalizar**.
+1. Na barra de menus, escolha **Ferramentas** > **Personalizar**.
 
     A caixa de diálogo **Personalizar** é aberta.
 
-2.  Na guia **Comandos**, escolha o botão de opção do tipo de elemento que você deseja redefinir.
+2. Na guia **Comandos**, escolha o botão de opção do tipo de elemento que você deseja redefinir.
 
-3.  Na lista desse tipo de elemento, escolha o menu ou a barra de ferramentas que deseja redefinir.
+3. Na lista desse tipo de elemento, escolha o menu ou a barra de ferramentas que deseja redefinir.
 
-4.  Escolha o botão **Modificar Seleção** e escolha **Redefinir** no menu exibido.
+4. Escolha o botão **Modificar Seleção** e escolha **Redefinir** no menu exibido.
 
     Também é possível redefinir todos os menus e barras de ferramentas escolhendo o botão **Redefinir Tudo**.
 

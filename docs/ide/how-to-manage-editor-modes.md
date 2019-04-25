@@ -24,12 +24,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b441543079ab3369beddcd95999809e075b3bb2b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 57987b67a2fa081ebaa577f10de478b5fd250aca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907135"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429776"
 ---
 # <a name="how-to-manage-editor-modes"></a>Como: Gerenciar modos do editor
 
@@ -42,21 +42,21 @@ Você pode exibir o editor de código do Visual Studio em vários modos de exibi
 
 É possível escolher ocultar todas as janelas de ferramentas e exibir apenas janelas do documento, habilitando o modo de **Tela Inteira**.
 
--   Pressione **ALT**+**SHIFT**+**ENTER** para entrar ou sair do modo de **Tela Inteira**.
+- Pressione **ALT**+**SHIFT**+**ENTER** para entrar ou sair do modo de **Tela Inteira**.
 
      --ou--
 
--   Emita o comando `View.Fullscreen` na janela **Comando**.
+- Emita o comando `View.Fullscreen` na janela **Comando**.
 
 ## <a name="enable-virtual-space-mode"></a>Habilitar o modo de espaço virtual
 
 No modo **Espaço virtual**, os espaços são inseridos no final de cada linha de código. Selecione essa opção para posicionar comentários em um ponto consistente ao lado do seu código.
 
-1.  Selecione **Opções** no menu **Ferramentas**.
+1. Selecione **Opções** no menu **Ferramentas**.
 
-2.  Expanda a pasta **Editor de Texto** e escolha **Todas as Linguagens** para definir essa opção globalmente ou escolha uma pasta de idioma específico. Por exemplo, para ativar os números de linha apenas no Visual Basic, escolha o nó **Básico** > **Editor de Texto**.
+2. Expanda a pasta **Editor de Texto** e escolha **Todas as Linguagens** para definir essa opção globalmente ou escolha uma pasta de idioma específico. Por exemplo, para ativar os números de linha apenas no Visual Basic, escolha o nó **Básico** > **Editor de Texto**.
 
-3.  Selecione as opções **Gerais** e, em **Configurações**, selecione **Habilitar Espaço virtual**.
+3. Selecione as opções **Gerais** e, em **Configurações**, selecione **Habilitar Espaço virtual**.
 
     > [!NOTE]
     > O **Espaço virtual** está habilitado no modo **Seleção de Coluna**. Quando o modo **Espaço virtual** não está habilitado, o ponto de inserção é movido do final de uma linha diretamente para o primeiro caractere da próxima.

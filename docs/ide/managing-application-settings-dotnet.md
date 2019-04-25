@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91d3004edc39b2fd4f9cc6be72407fd6a46274d1
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: dad84145200b09cfbddab63bd9994096d0ba3e17
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537275"
 ---
 # <a name="manage-application-settings-net"></a>Gerenciar configurações de aplicativo (.NET)
 
@@ -84,9 +84,9 @@ Se as configurações no escopo do usuário forem alteradas durante o tempo de e
 
 É altamente recomendável que você use o objeto `My.Settings` e o arquivo *.settings* padrão para acessar as configurações. Isso ocorre porque você pode usar o **Designer de Configurações** para atribuir propriedades às configurações e, além disso, as configurações de usuário são salvas automaticamente antes do desligamento do aplicativo. No entanto, seu aplicativo do Visual Basic pode acessar as configurações diretamente. Nesse caso você precisa acessar a classe `MySettings` e usar um arquivo *.settings* personalizado na raiz do projeto. Você deve salvar as configurações do usuário antes de encerrar o aplicativo, como você faria para um aplicativo C#. Isso é descrito na próxima seção.
 
-<!-- markdownlint-disable MD003 -->
+<!-- markdownlint-disable MD003 MD020 -->
 ## <a name="access-or-change-application-settings-at-run-time-in-c"></a>Acessar ou alterar as configurações de aplicativo no tempo de execução em C#
-<!-- markdownlint-enable MD003 -->
+<!-- markdownlint-enable MD003 MD020 -->
 
 Em linguagens diferentes do Visual Basic, como C#, você deve acessar a classe `Settings` diretamente, conforme mostrado no exemplo [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] a seguir.
 
