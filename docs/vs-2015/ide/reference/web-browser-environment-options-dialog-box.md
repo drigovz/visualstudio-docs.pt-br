@@ -24,12 +24,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aba4d37d672d3e544d65f46c6f32062f9b2637eb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: df33215bab20be8744ed2455ef87f1a037871f95
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663973"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419716"
 ---
 # <a name="web-browser-environment-options-dialog-box"></a>Caixa de diálogo Navegador da Web, Ambiente, Opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -37,10 +37,10 @@ ms.locfileid: "59663973"
 Define opções para o navegador da Web interno e o Internet Explorer. Para acessar essa caixa de diálogo, clique em **Opções** no menu **Ferramentas**, expanda a pasta **Ambiente** e selecione **Navegador da Web**.  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 > [!IMPORTANT]
->  Abrir determinados arquivos ou componentes da Web pode executar código no computador.  
+> Abrir determinados arquivos ou componentes da Web pode executar código no computador.  
   
  Home page  
  Define a página exibida ao abrir o Navegador da Web do IDE.  
@@ -61,7 +61,7 @@ Define opções para o navegador da Web interno e o Internet Explorer. Para aces
   Clique para alterar as opções do Internet Explorer na caixa de diálogo **Propriedades da Internet**. As alterações feitas nessa caixa de diálogo afetam o navegador da Web interno e as instâncias do Internet Explorer iniciadas fora do IDE do Visual Studio (por exemplo, no menu Iniciar).  
   
 > [!NOTE]
->  Use a caixa de diálogo Procurar Com para substituir o navegador da Web interno do Visual Studio, que é uma versão do Internet Explorer, usando outro navegador da Web externo.  
+> Use a caixa de diálogo Procurar Com para substituir o navegador da Web interno do Visual Studio, que é uma versão do Internet Explorer, usando outro navegador da Web externo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Caixa de diálogo Opções do Ambiente](../../ide/reference/environment-options-dialog-box.md)   

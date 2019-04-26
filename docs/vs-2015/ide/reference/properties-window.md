@@ -21,12 +21,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: beb0296834986648f47357da50d4022c1f632823
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 582905042938d79a1885279bd19c18f48b49bb84
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438027"
 ---
 # <a name="properties-window"></a>Janela Propriedades
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -58,25 +58,25 @@ Use esta janela para exibir e alterar as propriedades de tempo de design e os ev
  Exibe os eventos de um objeto.  
   
 > [!NOTE]
->  Esse controle de barra de ferramentas da janela **Propriedades** só está disponível quando um formulário ou designer de controle está ativo no contexto de um projeto [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Ao editar arquivos XAML, os eventos são exibidos em uma guia separada da janela Propriedades.  
+> Esse controle de barra de ferramentas da janela **Propriedades** só está disponível quando um formulário ou designer de controle está ativo no contexto de um projeto [!INCLUDE[csprcs](../../includes/csprcs-md.md)]. Ao editar arquivos XAML, os eventos são exibidos em uma guia separada da janela Propriedades.  
   
  Mensagens  
  Lista todas as mensagens do Windows. Permite adicionar ou excluir funções especificadas do manipulador para as mensagens fornecidas para a classe selecionada.  
   
 > [!NOTE]
->  Esse controle de barra de ferramentas da janela **Propriedades** está disponível somente quando **Modo de Exibição de Classe** é a janela ativa no contexto de um projeto [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
+> Esse controle de barra de ferramentas da janela **Propriedades** está disponível somente quando **Modo de Exibição de Classe** é a janela ativa no contexto de um projeto [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
  Substituições  
  Lista todas as funções virtuais para a classe selecionada e permite adicionar ou excluir funções de substituição.  
   
 > [!NOTE]
->  Esse controle de barra de ferramentas da janela **Propriedades** está disponível somente quando **Modo de Exibição de Classe** é a janela ativa no contexto de um projeto [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
+> Esse controle de barra de ferramentas da janela **Propriedades** está disponível somente quando **Modo de Exibição de Classe** é a janela ativa no contexto de um projeto [!INCLUDE[vcprvc](../../includes/vcprvc-md.md)].  
   
  Painel de descrição  
  Mostra o tipo de propriedade e uma breve descrição da propriedade. Você pode ativar e desativar a descrição da propriedade usando o comando Descrição no menu de atalho.  
   
 > [!NOTE]
->  Esse controle de barra de ferramentas da janela **Propriedades** não está disponível ao editar arquivos XAML no designer.  
+> Esse controle de barra de ferramentas da janela **Propriedades** não está disponível ao editar arquivos XAML no designer.  
   
  Exibição de miniatura  
  Mostra uma representação visual do elemento selecionado no momento ao editar arquivos XAML no designer.  

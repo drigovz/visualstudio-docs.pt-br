@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4cbfaea72633f6f4bbeb7da3bf6e7c02069889f9
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0d4ebb383e7dfb18ed4e119e9b34111ac809e2a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433696"
 ---
 # <a name="choose-toolbox-items-wpf-components"></a>Escolher Itens da Caixa de Ferramentas, Componentes WPF
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,12 +29,12 @@ Essa guia da caixa de diálogo **Escolher Itens da Caixa de Ferramentas** exibe 
 - Quando a caixa de seleção ao lado de um componente for selecionada, um ícone desse componente será exibido na **Caixa de ferramentas**.  
   
   > [!TIP]
-  >  Para adicionar uma instância de um controle WPF a um documento de projeto aberto para edição, arraste seu ícone **Caixa de ferramentas** para a superfície do modo de exibição de Design. Uma marcação e um código padrão do componente são inseridos no projeto, prontos para modificação. Para obter mais informações, consulte [Como gerenciar a janela de ferramentas](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) e [Como manipular as guias da caixa de ferramentas](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
+  > Para adicionar uma instância de um controle WPF a um documento de projeto aberto para edição, arraste seu ícone **Caixa de ferramentas** para a superfície do modo de exibição de Design. Uma marcação e um código padrão do componente são inseridos no projeto, prontos para modificação. Para obter mais informações, consulte [Como gerenciar a janela de ferramentas](http://msdn.microsoft.com/a022c3fe-298c-4a59-a48f-b050da90ebc2) e [Como manipular as guias da caixa de ferramentas](http://msdn.microsoft.com/21285050-cadd-455a-b1f5-a2289a89c4db).  
   
 - Quando a caixa de seleção ao lado de um componente for desmarcada, o ícone correspondente será removido da **Caixa de ferramentas.**  
   
   > [!NOTE]
-  >  Os componentes do .NET Framework instalados no computador permanecem disponíveis independentemente de seus ícones serem exibidos ou não na **Caixa de ferramentas**.  
+  > Os componentes do .NET Framework instalados no computador permanecem disponíveis independentemente de seus ícones serem exibidos ou não na **Caixa de ferramentas**.  
   
   As colunas da guia **Componentes do WPF** contêm as seguintes informações:  
   

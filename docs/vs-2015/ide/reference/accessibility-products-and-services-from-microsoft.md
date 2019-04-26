@@ -19,12 +19,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae91a057dc983044caa9544030571a8be34deef7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 8d1991ad3b99e3ab46e6ebea527ff839ef960ac7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441119"
 ---
 # <a name="accessibility-products-and-services-from-microsoft"></a>Produtos e serviços de acessibilidade da Microsoft
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ A Microsoft tem o compromisso de facilitar o uso de seus produtos e serviços pa
 - [Para obter mais informações](../../ide/reference/accessibility-products-and-services-from-microsoft.md#moreinfo)  
   
 > [!NOTE]
->  As informações nesta seção somente podem ser aplicadas aos usuários que licenciam produtos Microsoft nos Estados Unidos. Se tiver adquirido este produto fora dos Estados Unidos, você pode usar o cartão de informações da subsidiária que acompanha seu pacote de software ou visitar o site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) para obter uma lista dos telefones e dos endereços dos serviços de Suporte da Microsoft. Você pode contatar qualquer subsidiária para descobrir se os tipos de produtos ou serviços descritos nesta seção estão disponíveis na sua área. As informações sobre acessibilidade estão disponíveis em outros idiomas, incluindo japonês e francês.  
+> As informações nesta seção somente podem ser aplicadas aos usuários que licenciam produtos Microsoft nos Estados Unidos. Se tiver adquirido este produto fora dos Estados Unidos, você pode usar o cartão de informações da subsidiária que acompanha seu pacote de software ou visitar o site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431) para obter uma lista dos telefones e dos endereços dos serviços de Suporte da Microsoft. Você pode contatar qualquer subsidiária para descobrir se os tipos de produtos ou serviços descritos nesta seção estão disponíveis na sua área. As informações sobre acessibilidade estão disponíveis em outros idiomas, incluindo japonês e francês.  
   
 ## <a name="windows"></a> Recursos de acessibilidade do Windows  
  O sistema operacional Windows tem muitos recursos de acessibilidade internos que são úteis para indivíduos com dificuldade para digitar ou usar um mouse, são cegas ou têm deficiências visuais ou são surdas ou têm deficiências auditivas. Os recursos são instalados durante a Instalação. Para obter mais informações sobre esses recursos, consulte a Ajuda no Windows e o site [Microsoft Accessibility](http://go.microsoft.com/fwlink/?LinkId=8431).  

@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 496fcdf28f8ce9b0809988949d435c064734b508
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7bd8bae0213755b11c145c4bef9c312fe3990c4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432322"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>Como ver, salvar e configurar arquivos de log de build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Depois de compilar um projeto no Visual Studio IDE, é possível exibir informa�
      Para obter mais informações, consulte [Caixa de diálogo Opções, Projetos e Soluções, Compilar e Executar](../ide/reference/options-dialog-box-projects-and-solutions-build-and-run.md) e <xref:Microsoft.Build.Framework.LoggerVerbosity>.  
   
     > [!IMPORTANT]
-    >  É necessário recompilar o projeto para que suas alterações tenham efeito na Janela de **Saída** (todos os projetos) e no arquivo *ProjectName*.txt (apenas projetos C++).  
+    > É necessário recompilar o projeto para que suas alterações tenham efeito na Janela de **Saída** (todos os projetos) e no arquivo *ProjectName*.txt (apenas projetos C++).  
   
 ## <a name="see-also"></a>Consulte também  
  [Obtaining Build Logs (Obtendo logs de build)](../msbuild/obtaining-build-logs-with-msbuild.md)   

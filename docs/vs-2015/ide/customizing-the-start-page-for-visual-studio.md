@@ -1,5 +1,5 @@
 ---
-title: Personalizando a página inicial | Microsoft Docs
+title: Como personalizar a página inicial | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -17,12 +17,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f043e3cfbc6d81306abfb68276f2e32cce63ed45
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: fd47441a0e9b1c97851aa8a6acac712c51a4493a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869025"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60062926"
 ---
 # <a name="customizing-the-start-page-for-visual-studio"></a>Personalizando a página inicial do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,35 +31,35 @@ ms.locfileid: "57869025"
 
 ## <a name="customizing-the-default-start-page"></a>Personalizando a página inicial padrão
 
-1.  Na barra de menus, escolha **Ferramentas**, **Opções**.
+1. Na barra de menus, escolha **Ferramentas**, **Opções**.
 
-2.  Expanda **Ambiente** e escolha **Inicialização**.
+2. Expanda **Ambiente** e escolha **Inicialização**.
 
-3.  Na lista **Na inicialização**, escolha o item da personalização desejado.
+3. Na lista **Na inicialização**, escolha o item da personalização desejado.
 
 ## <a name="show-a-custom-start-page"></a>Mostrar uma página inicial personalizado
 
-1.  Instale uma página inicial personalizada de uma das seguintes maneiras:
+1. Instale uma página inicial personalizada de uma das seguintes maneiras:
 
-    -   Instale-o na [Visual Studio Marketplace](https://marketplace.visualstudio.com/), outro site ou uma página da intranet local.
+    - Instale-a por meio do [Visual Studio Marketplace](https://marketplace.visualstudio.com/), de outro site ou de uma página da intranet local.
 
         > [!NOTE]
-        >  Se desejar uma página que é direcionada para uma versão anterior do Visual Studio, você pode atualizá-la usando o SDK do Visual Studio. Ver [como: atualizar uma página de início personalizados do Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).
+        >  Se desejar uma página que é direcionada para uma versão anterior do Visual Studio, você pode atualizá-la usando o SDK do Visual Studio. Confira [Como fazer upgrade de uma página inicial personalizada do Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).
 
          Abra um arquivo .vsix que contenha uma página inicial personalizada ou copie e cole os arquivos de página inicial na pasta **%USERPROFILE% \My Documents\Visual Studio 2015\StartPages** do computador.
 
-    -   Criar sua própria página inicial se você instalou o SDK do Visual Studio.
+    - Criar sua própria página inicial se você instalou o SDK do Visual Studio.
 
-         Ver [criar a sua própria página inicial](../misc/creating-your-own-start-page.md).
+         Veja [Como criar uma página inicial personalizada](../misc/creating-your-own-start-page.md).
 
-2.  Na barra de menus, escolha **Ferramentas**, **Opções**.
+2. Na barra de menus, escolha **Ferramentas**, **Opções**.
 
-3.  Expanda **Ambiente** e escolha **Inicialização**.
+3. Expanda **Ambiente** e escolha **Inicialização**.
 
-4.  Na lista **Personalizar Página Inicial**, escolha a página desejada.
+4. Na lista **Personalizar Página Inicial**, escolha a página desejada.
 
 > [!NOTE]
 >  Se um erro em uma página inicial personalizada causar pane no Visual Studio, você poderá iniciar o Visual Studio no modo de segurança e defini-lo para usar a página inicial padrão. Consulte [/SafeMode (devenv.exe)](../ide/reference/safemode-devenv-exe.md).
 
 ## <a name="see-also"></a>Consulte também
- [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [criando sua própria página inicial](../misc/creating-your-own-start-page.md)
+ [Como personalizar as configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3) [Como criar uma página inicial personalizada](../misc/creating-your-own-start-page.md)

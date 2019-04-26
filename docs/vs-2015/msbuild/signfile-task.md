@@ -19,12 +19,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: dc65715c2e0bc1e6e36e86c1ce8e3cd1b4c81058
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 081899efb202917f1ebeac97a58dd89cf5a04f53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444388"
 ---
 # <a name="signfile-task"></a>Tarefa SignFile
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Assina o arquivo especificado usando o certificado especificado.
  Observe que os certificados SHA-256 são permitidos apenas em computadores que tenham o .NET 4.5 e superior.  
   
 > [!WARNING]
->  A partir do Visual Studio 2013 Atualização 3, essa tarefa tem uma nova assinatura que permite que você especifique a versão da estrutura de destino do arquivo. Você é incentivado a usar a nova assinatura sempre que possível, pois o processo do MSBuild usa hashes SHA-256 somente quando a estrutura de destino for .NET 4.5 ou superior. Se a estrutura de destino for .NET 4.0 ou abaixo, o hash SHA-256 não será usado.  
+> A partir do Visual Studio 2013 Atualização 3, essa tarefa tem uma nova assinatura que permite que você especifique a versão da estrutura de destino do arquivo. Você é incentivado a usar a nova assinatura sempre que possível, pois o processo do MSBuild usa hashes SHA-256 somente quando a estrutura de destino for .NET 4.5 ou superior. Se a estrutura de destino for .NET 4.0 ou abaixo, o hash SHA-256 não será usado.  
   
 |Parâmetro|Descrição|  
 |---------------|-----------------|  
@@ -70,7 +70,7 @@ Assina o arquivo especificado usando o certificado especificado.
 ```  
   
 > [!NOTE]
->  A impressão digital do certificado é o hash SHA-1 do certificado. Para obter mais informações, consulte [Obter o hash SHA-1 de um certificado de autoridade de certificação raiz confiável](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
+> A impressão digital do certificado é o hash SHA-1 do certificado. Para obter mais informações, consulte [Obter o hash SHA-1 de um certificado de autoridade de certificação raiz confiável](http://msdn.microsoft.com/dd641990-9a88-4228-a245-017797131a87).  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir usa a tarefa `Exec` para assinar os arquivos especificados na coleção de itens `FilesToSign` com o certificado especificado pela propriedade `Certificate`. Você pode usar isso para assinar arquivos do Windows Installer durante o processo de compilação.  

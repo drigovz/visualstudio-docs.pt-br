@@ -13,12 +13,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 81bb2392a4ea6d9860cdcf2beeadcfe4e6ec7940
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fd8732a914581b39566bac88fe73698850893f77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091599"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434279"
 ---
 # <a name="performance-report-overview"></a>Visão geral de Relatório de Desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60091599"
 Você pode exibir os dados de criação de perfil de uma sessão de desempenho na janela **Relatório de Desempenho** do IDE (Ambiente de Desenvolvimento Integrado) do Visual Studio Team System Development Edition. Os dados de criação de perfil são salvos em arquivos .vsp e .vsps. As janelas de exibição de relatório permitem exibir e analisar problemas de desempenho do aplicativo.  
   
 > [!CAUTION]
->  Um arquivo de dados de criação de perfil contém informações confidenciais como o nome do computador, a versão do sistema operacional, caminhos de arquivo, informações de memória e outras informações de configuração do computador. Você deve manter um controle rígido sobre a distribuição de dados, tanto em seu formato .vsp nativo quanto exportado para um arquivo .csv ou .xml.  
+> Um arquivo de dados de criação de perfil contém informações confidenciais como o nome do computador, a versão do sistema operacional, caminhos de arquivo, informações de memória e outras informações de configuração do computador. Você deve manter um controle rígido sobre a distribuição de dados, tanto em seu formato .vsp nativo quanto exportado para um arquivo .csv ou .xml.  
 >   
->  Se os dados de rastreamento de eventos forem coletados como parte da sessão de desempenho, informações adicionais podem aparecer no arquivo de log de rastreamento de evento (.etl). Essas informações incluem seu nome de usuário e domínio, por isso, você deve manter um rígido controle sobre a distribuição do arquivo de log.  
+> Se os dados de rastreamento de eventos forem coletados como parte da sessão de desempenho, informações adicionais podem aparecer no arquivo de log de rastreamento de evento (.etl). Essas informações incluem seu nome de usuário e domínio, por isso, você deve manter um rígido controle sobre a distribuição do arquivo de log.  
   
 ## <a name="performance-report-window"></a>Janela no Relatório de Desempenho  
  A janela Relatório de Desempenho é uma janela de ferramentas que é usada para exibir, gerenciar e filtrar dados de desempenho e inclui um controle de consulta personalizável.  

@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5c2082e4f2c67696f057ea8fc779bfaf391e0af1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a77c390dd0934b0f02320080765765163a8afb93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096576"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445607"
 ---
 # <a name="walkthrough-creating-an-msbuild-project-file-from-scratch"></a>Instruções passo a passo: criando um arquivo de projeto do MSBuild do zero
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -151,11 +151,11 @@ As linguagens de programação que tenham como destino o .NET Framework usam arq
  As tarefas no destino Compilar são executadas em sequência. Nesse caso, a tarefa `Csc` do compilador do Visual C# é a única tarefa. Ela espera que uma lista de arquivos de origem seja compilada e isso ocorre pelo valor do item `Compile`. O item `Compile` faz referências a apenas um arquivo de origem, Helloworld.cs.  
   
 > [!NOTE]
->  No elemento do item, você pode usar o caractere curinga de asterisco (*) para fazer referência a todos os arquivos que tenham a extensão de nome de arquivo .cs, como a seguir:  
+> No elemento do item, você pode usar o caractere curinga de asterisco (*) para fazer referência a todos os arquivos que tenham a extensão de nome de arquivo .cs, como a seguir:  
 >   
->  `<Compile Include="*.cs" />`  
+> `<Compile Include="*.cs" />`  
 >   
->  No entanto, não recomendamos o uso de caracteres curinga, pois eles tornam a depuração e o direcionamento seletivo mais difícil se arquivos de origem forem adicionados ou excluídos.  
+> No entanto, não recomendamos o uso de caracteres curinga, pois eles tornam a depuração e o direcionamento seletivo mais difícil se arquivos de origem forem adicionados ou excluídos.  
   
 ## <a name="extending-the-path-to-include-msbuild"></a>Estendendo o caminho para incluir o MSBuild  
  Para poder acessar o MSBuild, você deve estender a variável de ambiente PATH para incluir a pasta do .NET Framework.  
@@ -182,9 +182,9 @@ As linguagens de programação que tenham como destino o .NET Framework usam arq
      A mensagem **Hello, world!** deve ser exibida.  
   
 > [!NOTE]
->  Você pode ver mais detalhes sobre a compilação aumentando o nível de detalhamento. Para configurar o nível de detalhamento como "detalhado", digite um destes comandos no prompt de comando:  
+> Você pode ver mais detalhes sobre a compilação aumentando o nível de detalhamento. Para configurar o nível de detalhamento como "detalhado", digite um destes comandos no prompt de comando:  
 >   
->  **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
+> **msbuild helloworld.csproj /t:Build /verbosity:detailed**  
   
 ## <a name="adding-build-properties"></a>Adicionando propriedades de compilação  
  Você pode adicionar propriedades de compilação ao arquivo de projeto para controlar ainda mais a compilação. Agora, adicione estas propriedades:  
@@ -243,17 +243,17 @@ As linguagens de programação que tenham como destino o .NET Framework usam arq
 ```  
   
 > [!NOTE]
->  Recomendamos que você adicione um delimitador de caminho de barra invertida (\\) no final do nome da pasta ao especificá-lo no elemento `OutputPath`, em vez de adicioná-lo ao atributo `OutputAssembly` da tarefa `Csc`. Portanto,  
+> Recomendamos que você adicione um delimitador de caminho de barra invertida (\\) no final do nome da pasta ao especificá-lo no elemento `OutputPath`, em vez de adicioná-lo ao atributo `OutputAssembly` da tarefa `Csc`. Portanto,  
 >   
->  `<OutputPath>Bin\</OutputPath>`  
+> `<OutputPath>Bin\</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)$(AssemblyName).exe" />`  
 >   
->  é melhor que  
+> é melhor que  
 >   
->  `<OutputPath>Bin</OutputPath>`  
+> `<OutputPath>Bin</OutputPath>`  
 >   
->  `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
+> `OutputAssembly=="$(OutputPath)\$(AssemblyName).exe" />`  
   
 ## <a name="testing-the-build-properties"></a>Testando as propriedades de compilação  
  Agora, você pode compilar o aplicativo usando o arquivo de projeto no qual usou as propriedades de compilação para especificar a pasta de saída e o nome do aplicativo.  

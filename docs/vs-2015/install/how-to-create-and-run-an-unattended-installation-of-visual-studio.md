@@ -12,12 +12,12 @@ caps.latest.revision: 44
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: deabd34896b327f7cbbb35c7af75f5810dcfbf17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 26e059d4fdc8eadd422924dd6bbda6f7c945ccfb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433045"
 ---
 # <a name="how-to-create-and-run-an-unattended-installation-of-visual-studio"></a>Como criar e executar uma instalação autônoma do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Você pode executar o aplicativo de instalação para [!INCLUDE[vsprvs](../inclu
      O caminho de rede do aplicativo de instalação para [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] se parece com \\\\*NomeDoservidor*\IDEinstall\\*Product*.exe.
 
     > [!NOTE]
-    >  A instalação pode falhar se qualquer combinação de caminho e nome de arquivo exceder 260 caracteres. O comprimento máximo de um caminho no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é de 221 caracteres.  O nome do caminho local deve ter no máximo 70 caracteres, e o nome do caminho de rede deve ter no máximo 39 caracteres.
+    > A instalação pode falhar se qualquer combinação de caminho e nome de arquivo exceder 260 caracteres. O comprimento máximo de um caminho no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é de 221 caracteres.  O nome do caminho local deve ter no máximo 70 caracteres, e o nome do caminho de rede deve ter no máximo 39 caracteres.
 
      A instalação também pode falhar se os nomes de pastas no caminho incluírem espaços inseridos (por exemplo, "\\\\*NomeDoServidor*\IDE install" ou \\\\*NomeDoServidor*\Visual Studio\\).
 
@@ -46,16 +46,16 @@ Você pode executar o aplicativo de instalação para [!INCLUDE[vsprvs](../inclu
  Para implantar o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no modo autônomo, é necessário modificar o arquivo AdminDeployment.xml. Para fazer isso, primeiro crie o arquivo AdminDeployment.xml usando o parâmetro de linha de comando `/CreateAdminFile` *\<local do arquivo>*. Em seguida, você poderá usar esse arquivo a fim de enviar uma implantação do Visual Studio para sua rede ou receber em uma instalação, caso tenha colocado esse arquivo no diretório *Unidade*:\IDEinstall\packages. O arquivo AdminDeployment.xml não é exclusivo de um sistema operacional, uma arquitetura, uma edição Visual Studio ou de um idioma de sistema operacional.
 
 > [!CAUTION]
->  Às vezes, os itens listados como selecionados no arquivo AdminDeployment.xml não são instalados. Para resolver esse problema, coloque os itens marcados como "Selected="yes"" no **final** do arquivo AdminDeployment.xml.
+> Às vezes, os itens listados como selecionados no arquivo AdminDeployment.xml não são instalados. Para resolver esse problema, coloque os itens marcados como "Selected="yes"" no **final** do arquivo AdminDeployment.xml.
 >
->  Se preferir não instalar as dependências opcionais de um item, primeiro selecione o pai e, em seguida, desmarque as dependências opcionais após o pai, conforme mostrado na captura de tela a seguir:
+> Se preferir não instalar as dependências opcionais de um item, primeiro selecione o pai e, em seguida, desmarque as dependências opcionais após o pai, conforme mostrado na captura de tela a seguir:
 >
->  ![Itens de instalação no final do arquivo AdminDeployment.xml](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
+> ![Itens de instalação no final do arquivo AdminDeployment.xml](../install/media/vs2015-install-endoffileadmindeploy.PNG "vs2015_Install_EndOfFileAdminDeploy")
 >
->  Como alternativa, basta omitir os filhos opcionais de um pai, ou seja, não incluir itens marcados como "Selected="no"". No entanto, continua sendo necessário colocar todos os itens marcados como "Selected="yes"" no final do arquivo AdminDeployment.xml.
+> Como alternativa, basta omitir os filhos opcionais de um pai, ou seja, não incluir itens marcados como "Selected="no"". No entanto, continua sendo necessário colocar todos os itens marcados como "Selected="yes"" no final do arquivo AdminDeployment.xml.
 
 > [!IMPORTANT]
->  Durante a instalação, o computador pode reiniciar automaticamente uma ou mais vezes. Depois de reiniciado, entre novamente com a mesma conta de usuário com a qual você se conectou para executar a instalação, antes de reiniciar o computador. Você pode evitar reinicializações automáticos instalando os componentes de pré-requisitos, antes de executar uma instalação autônoma. Para saber mais, confira a seção chamada "Evite reiniciar durante a instalação", no [Guia do administrador do Visual Studio](../install/visual-studio-administrator-guide.md).
+> Durante a instalação, o computador pode reiniciar automaticamente uma ou mais vezes. Depois de reiniciado, entre novamente com a mesma conta de usuário com a qual você se conectou para executar a instalação, antes de reiniciar o computador. Você pode evitar reinicializações automáticos instalando os componentes de pré-requisitos, antes de executar uma instalação autônoma. Para saber mais, confira a seção chamada "Evite reiniciar durante a instalação", no [Guia do administrador do Visual Studio](../install/visual-studio-administrator-guide.md).
 
  O esquema do arquivo AdminDeployment contém os seguintes elementos:
 
@@ -71,11 +71,11 @@ Você pode executar o aplicativo de instalação para [!INCLUDE[vsprvs](../inclu
 |BundleCustomizations|NoCacheOnlyMode|sim&#124;padrão|Impede pré-população do cache de pacote.|
 
 > [!WARNING]
->  O aplicativo de instalação respeitará o estado Selecionado de um SelectableItem, mesmo se estiver oculto. Por exemplo, se você quiser instalar sempre um item selecionável, poderá marcá-lo como oculto e selecionado.
+> O aplicativo de instalação respeitará o estado Selecionado de um SelectableItem, mesmo se estiver oculto. Por exemplo, se você quiser instalar sempre um item selecionável, poderá marcá-lo como oculto e selecionado.
 
 #### <a name="to-create-an-unattended-installation-of-visual-studio"></a>Para criar uma instalação autônoma do Visual Studio
 
-1. No arquivo *Unidade*:\IDEinstall\AdminDeployment.xml, altere o valor do atributo NoWeb do elemento BundleCustomizations de "default" para "yes" como mostra o exemplo a seguir:
+1. No arquivo *Drive*:\IDEinstall\AdminDeployment.xml, altere o valor do atributo NoWeb do elemento BundleCustomizations de "default" para "yes" como mostra o exemplo a seguir:
 
      Altere `<BundleCustomizations TargetDir="default" NoWeb="default"/>` para `<BundleCustomizations TargetDir="default" NoWeb="yes"/>`
 
@@ -100,7 +100,7 @@ Você pode executar o aplicativo de instalação para [!INCLUDE[vsprvs](../inclu
  Ao abrir o **Painel de Controle** e executar novamente o aplicativo de instalação, você poderá modificar os recursos do Visual Studio, desinstalar linguagens de programação e reparar ou desinstalar o Visual Studio.
 
 > [!NOTE]
->  Você deve ter credenciais administrativas no computador local para usar o modo de manutenção.
+> Você deve ter credenciais administrativas no computador local para usar o modo de manutenção.
 
 #### <a name="to-maintain-an-installation-on-a-client-computer"></a>Para manter uma instalação em um computador cliente
 

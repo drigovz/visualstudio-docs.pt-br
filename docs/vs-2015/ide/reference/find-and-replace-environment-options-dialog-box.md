@@ -15,12 +15,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 974aceecd7c95d5a7b3f8a46d5dcbdfb15f37961
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 305a19ed08c58d6858c95a3f1109cdf4877d848f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437172"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>Caixa de diálogo Localizar e Substituir, Ambiente, Opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "59661758"
 Use esta página da caixa de diálogo **Opções** para controlar caixas de mensagem e outros aspectos de uma operação de localizar e substituir. Você pode acessar essa caixa de diálogo no menu **Ferramentas**, clicando em **Opções**, expandindo **Ambiente** e, em seguida, clicando em **Localizar e Substituir**. Se essa página não aparecer na lista, selecione **Mostrar todas as configurações** na caixa de diálogo **Opções**.  
   
 > [!NOTE]
->  As opções disponíveis nas caixas de diálogo e os nomes os locais dos comandos de menu que você vê podem diferir do que é descrito na Ajuda, dependendo de suas configurações ativas ou da edição. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As opções disponíveis nas caixas de diálogo e os nomes os locais dos comandos de menu que você vê podem diferir do que é descrito na Ajuda, dependendo de suas configurações ativas ou da edição. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="uielement-list"></a>Lista UIElement  
  **Exibir mensagens informativas**  
@@ -39,7 +39,7 @@ Use esta página da caixa de diálogo **Opções** para controlar caixas de mens
  Quando você desmarcar a opção **Sempre mostrar esta mensagem** em algumas, mas não em todas as mensagens informativas de **Localizar e Substituir**, a caixa de seleção **Exibir mensagens informativas** parecerá estar preenchida, mas não selecionada. Para restaurar todas as mensagens opcionais de **Localizar e Substituir**, desmarque essa opção e selecione-a novamente.  
   
 > [!NOTE]
->  Essa opção não afeta nenhuma mensagem informativa de **Localizar e Substituir** que não exibe a opção **Sempre mostrar esta mensagem**.  
+> Essa opção não afeta nenhuma mensagem informativa de **Localizar e Substituir** que não exibe a opção **Sempre mostrar esta mensagem**.  
   
  **Exibir mensagens de aviso**  
  Selecione esta opção para exibir todas as mensagens de aviso de Localizar e Substituir que têm a opção **Sempre mostrar esta mensagem**. Por exemplo, se você optar por não exibir a mensagem de aviso de **Substituir tudo** que aparece quando você tenta fazer substituições em arquivos que não estão abertos para edição, selecionar esta opção faria com que a mensagem de aviso aparecesse novamente quando você tentasse substituir tudo.  
@@ -49,7 +49,7 @@ Use esta página da caixa de diálogo **Opções** para controlar caixas de mens
  Quando você desmarcar a opção **Sempre mostrar esta mensagem** em algumas, mas não em todas as mensagens de aviso de **Localizar e Substituir**, a caixa de seleção **Exibir mensagens de aviso** parecerá estar preenchida, mas não selecionada. Para restaurar todas as mensagens opcionais de **Localizar e Substituir**, desmarque essa opção e selecione-a novamente.  
   
 > [!NOTE]
->  Essa opção não afeta nenhuma mensagem de aviso de **Localizar e Substituir** que não exibe a opção **Sempre mostrar esta mensagem**.  
+> Essa opção não afeta nenhuma mensagem de aviso de **Localizar e Substituir** que não exibe a opção **Sempre mostrar esta mensagem**.  
   
  **Preencher automaticamente a opção Localizar no editor**  
  Selecione esta opção para colar o texto de um dos lados do ponto de inserção atual do editor no campo **Localizar** quando você selecionar qualquer modo de exibição da janela **Localizar e Substituir** no menu **Editar**. Desmarque esta opção para usar o último padrão de pesquisa da pesquisa anterior como a cadeia de caracteres para **Localizar**.  
