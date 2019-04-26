@@ -17,12 +17,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00534f5ff415ba836d8c2d581e599669941fda6f
-ms.sourcegitcommit: d4bea2867a4f0c3b044fd334a54407c0fe87f9e8
+ms.openlocfilehash: 85a0dcb3b10db33605f1411615210928cde565fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/01/2019
-ms.locfileid: "58790843"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946915"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Como: Assinar manifestos de aplicativo e implantação
 
@@ -39,43 +39,43 @@ Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os 
 
 ## <a name="sign-using-a-certificate"></a>Assinar usando um certificado
 
-1.  Vá para a janela de propriedades do projeto (clique com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecione **Propriedades**). Na guia **Assinatura**, selecione a caixa de seleção **Assinar os manifestos do ClickOnce**.
+1. Vá para a janela de propriedades do projeto (clique com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecione **Propriedades**). Na guia **Assinatura**, selecione a caixa de seleção **Assinar os manifestos do ClickOnce**.
 
-2.  Clique no botão **Selecionar do Repositório**.
+2. Clique no botão **Selecionar do Repositório**.
 
      A caixa de diálogo **Selecionar um Certificado** é exibida e mostra o conteúdo do repositório de certificados do Windows.
 
     > [!TIP]
     > Se você clicar em **Clique aqui para exibir as propriedades do certificado**, a caixa de diálogo **Detalhes do Certificado** será exibida. Essa caixa de diálogo inclui informações detalhadas sobre o certificado, bem como outras opções. É possível clicar em **Certificados** para exibir informações adicionais de ajuda.
 
-3.  Selecione o certificado que você deseja usar para assinar os manifestos.
+3. Selecione o certificado que você deseja usar para assinar os manifestos.
 
-4.  Além disso, é possível especificar o endereço de um servidor de carimbo de data/hora na caixa de texto **URL do servidor de carimbo de data/hora**. Esse é um servidor que fornece um carimbo de data/hora que especifica quando o manifesto foi assinado.
+4. Além disso, é possível especificar o endereço de um servidor de carimbo de data/hora na caixa de texto **URL do servidor de carimbo de data/hora**. Esse é um servidor que fornece um carimbo de data/hora que especifica quando o manifesto foi assinado.
 
 ## <a name="sign-using-an-existing-key-file"></a>Assinar usando um arquivo de chave existente
 
-1.  Na página **Assinatura**, selecione a caixa de seleção **Assinar os manifestos do ClickOnce**.
+1. Na página **Assinatura**, selecione a caixa de seleção **Assinar os manifestos do ClickOnce**.
 
-2.  Clique no botão **Selecionar do Arquivo**.
+2. Clique no botão **Selecionar do Arquivo**.
 
      A caixa de diálogo **Selecionar Arquivo** é exibida.
 
-3.  Na caixa de diálogo **Selecionar Arquivo**, procure o local do arquivo de chave (*.pfx*) que você deseja usar e clique no botão **Abrir**.
+3. Na caixa de diálogo **Selecionar Arquivo**, procure o local do arquivo de chave (*.pfx*) que você deseja usar e clique no botão **Abrir**.
 
     > [!NOTE]
     > Essa opção é compatível apenas com os arquivos que têm a extensão *.pfx*. Se você tiver um arquivo de chave ou um certificado em outro formato, armazene-o no repositório de certificados do Windows e selecione o certificado que é descrito no procedimento anterior. A finalidade do certificado selecionado deve incluir a assinatura de código.
 
      A caixa de diálogo **Inserir senha para abrir o arquivo** é exibida. (Se o arquivo *.pfx* já estiver armazenado no repositório de certificados do Windows ou não for protegido por senha, você não precisará inserir uma senha.)
 
-4.  Insira a senha para acessar o arquivo de chave e pressione **Enter**.
+4. Insira a senha para acessar o arquivo de chave e pressione **Enter**.
 
 ## <a name="sign-using-a-test-certificate"></a>Assinar usando um certificado de teste
 
-1.  Na página **Assinatura**, selecione a caixa de seleção **Assinar os manifestos do ClickOnce**.
+1. Na página **Assinatura**, selecione a caixa de seleção **Assinar os manifestos do ClickOnce**.
 
-2.  Para criar um novo certificado para teste, clique no botão **Criar Certificado de Teste**.
+2. Para criar um novo certificado para teste, clique no botão **Criar Certificado de Teste**.
 
-3.  Na caixa de diálogo **Criar Certificado de Teste**, insira uma senha para ajudar a proteger o certificado de teste.
+3. Na caixa de diálogo **Criar Certificado de Teste**, insira uma senha para ajudar a proteger o certificado de teste.
 
 ## <a name="generate-unsigned-manifests"></a>Gerar manifestos não assinados
 
@@ -88,24 +88,24 @@ A assinatura dos manifestos do ClickOnce é opcional para aplicativos baseados e
 
 ### <a name="to-generate-unsigned-manifests-and-include-all-files-in-the-generated-hash"></a>Para gerar manifestos não assinados e incluir todos os arquivos no hash gerado
 
-1.  Para gerar manifestos não assinados que incluem todos os arquivos no hash, primeiro é necessário publicar o aplicativo junto com manifestos assinados. Portanto, primeiro assine os manifestos do ClickOnce seguindo um dos procedimentos anteriores e, em seguida, publique o aplicativo.
+1. Para gerar manifestos não assinados que incluem todos os arquivos no hash, primeiro é necessário publicar o aplicativo junto com manifestos assinados. Portanto, primeiro assine os manifestos do ClickOnce seguindo um dos procedimentos anteriores e, em seguida, publique o aplicativo.
 
-2.  Na página **Assinatura**, limpe a caixa de seleção **Assinar os manifestos do ClickOnce**.
+2. Na página **Assinatura**, limpe a caixa de seleção **Assinar os manifestos do ClickOnce**.
 
-3.  Redefina a versão de publicação para que apenas uma versão do aplicativo esteja disponível. Por padrão, o Visual Studio incrementa automaticamente o número de revisão da versão de publicação sempre que um aplicativo é publicado. Para obter mais informações, confira [Como: Definir a versão da publicação do ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
+3. Redefina a versão de publicação para que apenas uma versão do aplicativo esteja disponível. Por padrão, o Visual Studio incrementa automaticamente o número de revisão da versão de publicação sempre que um aplicativo é publicado. Para obter mais informações, confira [Como: Definir a versão da publicação do ClickOnce](../deployment/how-to-set-the-clickonce-publish-version.md).
 
-4.  Publique o aplicativo.
+4. Publique o aplicativo.
 
 ### <a name="to-generate-unsigned-manifests-and-exclude-one-or-more-files-from-the-generated-hash"></a>Para gerar manifestos não assinados e excluir um ou mais arquivos do hash gerado
 
-1.  Na página **Assinatura**, limpe a caixa de seleção **Assinar os manifestos do ClickOnce**.
+1. Na página **Assinatura**, limpe a caixa de seleção **Assinar os manifestos do ClickOnce**.
 
-2.  Abra a caixa de diálogo **Arquivos do Aplicativo** e defina o **Hash** como **Excluir** para os arquivos que você deseja excluir do hash gerado.
+2. Abra a caixa de diálogo **Arquivos do Aplicativo** e defina o **Hash** como **Excluir** para os arquivos que você deseja excluir do hash gerado.
 
     > [!NOTE]
     > A exclusão de um arquivo do hash configura o ClickOnce para desabilitar a assinatura automática dos manifestos; portanto, você não precisa primeiro publicar com manifestos assinados, conforme mostrado no procedimento anterior.
 
-3.  Publique o aplicativo.
+3. Publique o aplicativo.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -8,12 +8,12 @@ ms.assetid: 4a69e857-f93b-4907-9a01-fd1b66291205
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9240a4129e7a58443ca0efaaa7ee1e27da96dcad
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f3353b6c46520dde1134c7ccff835b215b2d0ef8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55916707"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821085"
 ---
 # <a name="how-to-specify-the-step-ramp-time-property-for-a-step-load-pattern"></a>Como: Especificar a propriedade de tempo de rampa de etapa para um padrão de carga de etapa
 
@@ -30,15 +30,15 @@ A propriedade **Tempo de rampa de etapa** é usada apenas com um padrão de carg
 
 O padrão de carga em etapa é usado para aumentar a carga nos servidores à medida que o teste de carga é executado, de modo que você possa ver como o desempenho varia à medida que a carga de usuários aumenta. Por exemplo, para ver como será o desempenho dos servidores à medida que a carga de usuário aumenta para 2.000 usuários, você pode executar um teste de carga de 10 horas usando um padrão de carga em etapa com as seguintes propriedades:
 
--   Contagem inicial de usuários: 100
+- Contagem inicial de usuários: 100
 
--   Contagem máxima de usuários: 2000
+- Contagem máxima de usuários: 2000
 
--   Duração da etapa (segundos): 1800
+- Duração da etapa (segundos): 1800
 
--   Tempo de rampa de etapa (segundos): 20
+- Tempo de rampa de etapa (segundos): 20
 
--   Contagem de usuário em etapas: 100
+- Contagem de usuário em etapas: 100
 
 Essas configurações têm o teste de carga em execução por 30 minutos (1.800 segundos) nas cargas de 100, 200, 300, até 2.000 usuários.
 
@@ -49,24 +49,24 @@ A propriedade **Tempo de rampa de etapa** permite que o aumento de uma etapa par
 
 ## <a name="to-edit-the-step-ramp-time-property-for-a-step-load-pattern"></a>Para editar a propriedade de tempo de rampa de etapa para um padrão de carga de etapa
 
-1.  Abra um teste de carga.
+1. Abra um teste de carga.
 
      O **Editor de Teste de Carga** é exibido. A árvore do teste de carga é exibida.
 
-2.  Na pasta **Cenários** das árvores de teste de carga, abra o nó do cenário para o qual deseja especificar o tempo de rampa de etapa.
+2. Na pasta **Cenários** das árvores de teste de carga, abra o nó do cenário para o qual deseja especificar o tempo de rampa de etapa.
 
-3.  Selecione o nó **Padrão de carga de etapa**.
+3. Selecione o nó **Padrão de carga de etapa**.
 
     > [!NOTE]
     > O padrão de carga para o cenário deve ser um padrão de carga em etapa. Caso contrário, o padrão de carga exibirá o tipo de padrão de carga que está atualmente associado ao cenário. Para obter mais informações, confira [Editar padrões de carga para modelar atividades de usuário virtual](../test/edit-load-patterns-to-model-virtual-user-activities.md).
 
-4.  No menu **Exibir**, selecione **Janela de Propriedades**.
+4. No menu **Exibir**, selecione **Janela de Propriedades**.
 
      As categorias e as propriedades do cenário são exibidas na janela **Propriedades**.
 
-5.  Defina o valor para a propriedade **Tempo de rampa de etapa** inserindo um número para os segundos usados em cada etapa para adicionar gradualmente os usuários especificados pela propriedade **Contagem de usuário em etapas**.
+5. Defina o valor para a propriedade **Tempo de rampa de etapa** inserindo um número para os segundos usados em cada etapa para adicionar gradualmente os usuários especificados pela propriedade **Contagem de usuário em etapas**.
 
-6.  Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Em seguida, você pode executar o teste de carga usando o novo valor de **Tempo de rampa de etapa**.
+6. Depois de alterar a propriedade, escolha **Salvar** no menu **Arquivo**. Em seguida, você pode executar o teste de carga usando o novo valor de **Tempo de rampa de etapa**.
 
 ## <a name="see-also"></a>Consulte também
 

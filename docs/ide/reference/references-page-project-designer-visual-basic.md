@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a7c1bcb041101cf90957d02991ab1619d47051b5
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 88bd7571179d7841cc239052b7bf9f410761174c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/18/2019
-ms.locfileid: "56335124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956447"
 ---
 # <a name="references-page-project-designer-visual-basic"></a>Página Referências, Designer de Projeto (Visual Basic)
 
@@ -82,11 +82,11 @@ Clique neste botão para acessar a caixa de diálogo **Caminhos de Referência**
 
  Selecione um namespace especificado pelo usuário na lista de namespaces, digite o nome com o qual deseja substituí-lo na caixa **Namespaces importados** e, em seguida, clique neste botão para alterar para o novo namespace. O botão fica ativo somente se o namespace selecionado for aquele que você adicionou à lista usando o botão **Adicionar Importação de Usuário**. Você pode adicionar:
 
--   Classes ou namespaces, como <xref:System.Math?displayProperty=fullName>.
+- Classes ou namespaces, como <xref:System.Math?displayProperty=fullName>.
 
--   Importações com alias, como `VB=Microsoft.VisualBasic`.
+- Importações com alias, como `VB=Microsoft.VisualBasic`.
 
--   Namespaces XML, como `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
+- Namespaces XML, como `<xmlns:xsl="http://www.w3.org/1999/XSL/Transform">`.
 
 ## <a name="see-also"></a>Consulte também
 

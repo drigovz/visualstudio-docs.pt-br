@@ -10,12 +10,12 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3f1172cff8abc53867f4a13cacdf16fe2d1f065e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3fd640a79a81e2306c8abd1c3c5279b1fc8f335f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954966"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950131"
 ---
 # <a name="how-to-create-a-web-service-test"></a>Como: Criar um teste de serviço Web
 
@@ -31,21 +31,21 @@ Visual Studio Enterprise
 
 ## <a name="to-test-a-web-service"></a>Para testar um serviço Web
 
-1.  Crie um novo teste de desempenho na Web. Assim que o navegador abrir, escolha **Parar**.
+1. Crie um novo teste de desempenho na Web. Assim que o navegador abrir, escolha **Parar**.
 
-2.  No **Editor de Testes de Desempenho Web**, clique com o botão direito do mouse no teste de desempenho Web e selecione **Adicionar solicitação de serviço Web**.
+2. No **Editor de Testes de Desempenho Web**, clique com o botão direito do mouse no teste de desempenho Web e selecione **Adicionar solicitação de serviço Web**.
 
-3.  Na propriedade **URL** da nova solicitação, digite o nome do serviço Web, como **http://localhost/storecsvs/InstantOrder.asmx**.
+3. Na propriedade **URL** da nova solicitação, digite o nome do serviço Web, como **http://localhost/storecsvs/InstantOrder.asmx**.
 
-4.  Abra uma sessão separada do navegador e digite a URL da página *.asmx* na barra de ferramentas **Endereço**. Selecione o método que você deseja testar e examine a mensagem SOAP. Contém `SOAPAction`.
+4. Abra uma sessão separada do navegador e digite a URL da página *.asmx* na barra de ferramentas **Endereço**. Selecione o método que você deseja testar e examine a mensagem SOAP. Contém `SOAPAction`.
 
-5.  No **Editor de Testes de Desempenho Web**, clique com o botão direito do mouse na solicitação e selecione **Adicionar Cabeçalho** para adicionar um novo cabeçalho. Na propriedade **Nome**, digite `SOAPAction`. Na propriedade **Valor**, digite o valor que você vê em `SOAPAction`, como `"http://tempuri.org/CheckStatus"`.
+5. No **Editor de Testes de Desempenho Web**, clique com o botão direito do mouse na solicitação e selecione **Adicionar Cabeçalho** para adicionar um novo cabeçalho. Na propriedade **Nome**, digite `SOAPAction`. Na propriedade **Valor**, digite o valor que você vê em `SOAPAction`, como `"http://tempuri.org/CheckStatus"`.
 
-6.  Expanda o nó da URL no editor, selecione o nó **Corpo da String** e na propriedade **Tipo de Conteúdo** insira um valor de `text/xml`.
+6. Expanda o nó da URL no editor, selecione o nó **Corpo da String** e na propriedade **Tipo de Conteúdo** insira um valor de `text/xml`.
 
-7.  Retorne ao navegador na etapa 4, selecione a parte XML da solicitação SOAP da página de descrição do serviço Web e copie-a para a área de transferência.
+7. Retorne ao navegador na etapa 4, selecione a parte XML da solicitação SOAP da página de descrição do serviço Web e copie-a para a área de transferência.
 
-8.  O conteúdo XML é semelhante ao seguinte exemplo:
+8. O conteúdo XML é semelhante ao seguinte exemplo:
 
      ```xml
      <?xml version="1.0" encoding="utf-8"?>

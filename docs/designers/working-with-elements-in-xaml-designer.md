@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 1fa232ccefed20608ec2391f591ac0a8a6f31fe2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1c3d0e7d30778580ac09bfd4476e44280c775a2c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844036"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>Trabalhar com elementos no Designer XAML
 
@@ -61,11 +61,11 @@ Uma *guia de alinhamento* é uma indicação visual que ajuda você a alinhar um
 
 Para alinhar dois ou mais elementos usando os comandos de menu:
 
-1.  Selecione os elementos que deseja alinhar. Selecione mais de um elemento mantendo a tecla **Ctrl** pressionada enquanto seleciona os elementos.
+1. Selecione os elementos que deseja alinhar. Selecione mais de um elemento mantendo a tecla **Ctrl** pressionada enquanto seleciona os elementos.
 
-2.  Selecione uma das seguintes propriedades em **HorizontalAlignment** na seção **Layout** da janela Propriedades: **Left**, **Center**, **Right** ou **Stretch**.
+2. Selecione uma das seguintes propriedades em **HorizontalAlignment** na seção **Layout** da janela Propriedades: **Left**, **Center**, **Right** ou **Stretch**.
 
-3.  Selecione uma das seguintes propriedades em **VerticalAlignment** na seção **Layout** da janela Propriedades: **Top**, **Center**, **Bottom** ou **Stretch**.
+3. Selecione uma das seguintes propriedades em **VerticalAlignment** na seção **Layout** da janela Propriedades: **Top**, **Center**, **Bottom** ou **Stretch**.
 
 Para alinhar dois ou mais elementos usando guias de alinhamento no Designer XAML, em um layout que contenha pelo menos dois elementos, arraste ou redimensione um dos elementos de forma que a borda fique alinhada a outro elemento.
 
@@ -77,9 +77,9 @@ As margens no XAML Designer determinam o espaço vazio ao redor de um elemento n
 
 Para alterar as margens de um elemento na janela Propriedades:
 
-1.  Selecione o elemento cujas margens você deseja alterar.
+1. Selecione o elemento cujas margens você deseja alterar.
 
-2.  Em **Layout**, na janela Propriedades, altere o valor (em pixels ou em unidades independentes de dispositivos, de aproximadamente 1/96 polegada) de qualquer propriedade **Margem** (**Superior**, **Esquerda**, **Direita** ou **Inferior**).
+2. Em **Layout**, na janela Propriedades, altere o valor (em pixels ou em unidades independentes de dispositivos, de aproximadamente 1/96 polegada) de qualquer propriedade **Margem** (**Superior**, **Esquerda**, **Direita** ou **Inferior**).
 
 Na prancheta, para alterar as margens de um elemento relativo ao contêiner de layout do elemento, clique nos *adornos de margem* que serão exibidos ao redor do elemento quando ele estiver selecionado e estiver em um contêiner de layout. Para obter uma ilustração que mostra adornos de margem, consulte [Criando uma interface do usuário usando o Designer XAML](../designers/creating-a-ui-by-using-xaml-designer-in-visual-studio.md).
 

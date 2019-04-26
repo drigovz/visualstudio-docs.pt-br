@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8245c8a3decdd9e9576d3a24b37df4971dbb9284
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d6b5df5e8b8dba85ae26d0c606f4ed3f0b343d7b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968169"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c"></a>Início Rápido: Analisar dados de uso da CPU no Visual Studio | Microsoft Docs (C++)
 
@@ -115,26 +115,26 @@ O Windows 8 ou posterior é necessário para executar ferramentas de criação d
 
 ## <a name="step-1-collect-profiling-data"></a>Etapa 1: Coletar dados de criação de perfil
 
-1.  Primeiro, defina um ponto de interrupção em seu aplicativo nesta linha de código na função `main`:
+1. Primeiro, defina um ponto de interrupção em seu aplicativo nesta linha de código na função `main`:
 
     `for (int i = 0; i < 10; ++i) {`
 
     Defina um ponto de interrupção clicando na medianiz à esquerda da linha de código.
 
-2.  Em seguida, defina um segundo ponto de interrupção no colchete de fechamento no final da função `main`:
+2. Em seguida, defina um segundo ponto de interrupção no colchete de fechamento no final da função `main`:
 
      ![Definir pontos de interrupção para criação de perfil](../profiling/media/quickstart-cpu-usage-breakpoints-cplusplus.png "Definir pontos de interrupção para criação de perfil")
 
     > [!TIP]
     > Definindo dois pontos de interrupção, você pode limitar a coleta de dados às partes do código que deseja analisar.
 
-3.  A janela **Ferramentas de Diagnóstico** já fica visível, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico**.
+3. A janela **Ferramentas de Diagnóstico** já fica visível, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico**.
 
-4.  Clique em **Depurar** > **Iniciar Depuração** (ou em **Iniciar** na barra de ferramentas ou em **F5**).
+4. Clique em **Depurar** > **Iniciar Depuração** (ou em **Iniciar** na barra de ferramentas ou em **F5**).
 
      Quando o aplicativo terminar de ser carregado, a exibição **Resumo** das Ferramentas de Diagnóstico será exibida.
 
-5.  Enquanto o depurador estiver em pausa, habilite a coleta dos dados de Uso da CPU escolhendo **Registrar perfil da CPU** e abra a guia **Uso da CPU**.
+5. Enquanto o depurador estiver em pausa, habilite a coleta dos dados de Uso da CPU escolhendo **Registrar perfil da CPU** e abra a guia **Uso da CPU**.
 
      ![Habilitar a criação de perfil da CPU das ferramentas de diagnóstico](../profiling/media/quickstart-cpu-usage-summary.png "Diagnostics Tools Enable CPU Profiling")
 
@@ -142,7 +142,7 @@ O Windows 8 ou posterior é necessário para executar ferramentas de criação d
 
      Quando você escolhe **Registrar perfil de CPU**, o Visual Studio começará a gravar as funções e quanto tempo elas levam para serem executadas, fornecendo também um gráfico de linha do tempo que você pode usar para se concentrar em segmentos específicos da sessão de amostragem. Você só pode exibir os dados coletados quando seu aplicativo é interrompido no ponto de interrupção.
 
-6.  Pressione F5 para executar o aplicativo até o segundo ponto de interrupção.
+6. Pressione F5 para executar o aplicativo até o segundo ponto de interrupção.
 
      Agora, você tem dados de desempenho do aplicativo especificamente para a região do código que é executada entre os dois pontos de interrupção.
 
