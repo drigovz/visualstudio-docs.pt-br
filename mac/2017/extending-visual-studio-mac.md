@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: D5245AB0-8404-426B-B538-F49125E672B2
-ms.openlocfilehash: 8212039cd4f83cd9ea2b53a1050f32ed5dbad367
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 3465ef29ca732cd26c03919082052d8b26a83ba1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62998207"
 ---
 # <a name="extending-visual-studio-for-mac"></a>Estendendo o Visual Studio para Mac
 
@@ -81,10 +81,10 @@ As extensões de comando são definidas ao adicionar entradas ao ponto de extens
 
 O nó de extensão contém um atributo de caminho que especifica o ponto de extensão de conexão, nesse caso `/MonoDevelop/Ide/Commands/Edit`. Além disso, ele atua como um nó pai para o Comando. O nó Comando tem os seguintes atributos:
 
-*   **id** – Especifica o identificador para esse Comando. Identificadores de comando devem ser declarados como membros de enumeração e são usados para conectar os Comandos aos CommandItems.
-*   **_label** – O texto a ser mostrado nos menus.
-*   **_description** –O texto a ser mostrado como uma dica de ferramenta para os botões da barra de ferramentas.
-*   **defaultHandler** – Especifica a classe `CommandHandler` que habilita o Comando
+* **id** – Especifica o identificador para esse Comando. Identificadores de comando devem ser declarados como membros de enumeração e são usados para conectar os Comandos aos CommandItems.
+* **_label** – O texto a ser mostrado nos menus.
+* **_description** –O texto a ser mostrado como uma dica de ferramenta para os botões da barra de ferramentas.
+* **defaultHandler** – Especifica a classe `CommandHandler` que habilita o Comando
 
 <!--To invoke the command from the Edit Menu, the walkthrough creates a CommandItem extension that plugs into the `/MonoDevelop/Ide/MainMenu/Edit` extension point:-->
 
@@ -137,27 +137,27 @@ Isso vincula o Comando e o CommandItem – o CommandItem chama o Comando quando 
 
 Para ver informações sobre o escopo das áreas que estão disponíveis para o desenvolvimento, consulte a [Referência de árvore de extensões](http://monodevelop.com/Developers/Articles/Extension_Tree_Reference) e [Visão geral da API](http://monodevelop.com/Developers/Articles/API_Overview). Ao criar pacotes de extensão avançados, consulte também [Artigos do desenvolvedor](http://monodevelop.com/Developers/Articles). Veja abaixo uma lista parcial das áreas de personalização:
 
-*   Painéis
-*   Esquemas de associação de teclas
-*   Políticas
-*   Formatadores de código
-*   Formatos de arquivo de projeto
-*   Painéis de preferências
-*   Painéis de opções
-*   Protocolos do depurador
-*   Visualizadores do depurador
-*   Layouts de workspace
-*   Nós de árvore do painel de soluções
-*   Margens do editor de código-fonte
-*   Mecanismos de teste de unidade
-*   Geradores de código
-*   Snippets de código
-*   Frameworks de destino
-*   Tempo de execução de destino
-*   Back-ends de VCS
-*   Refatoração
-*   Manipuladores de execução
-*   Realce de sintaxe
+* Painéis
+* Esquemas de associação de teclas
+* Políticas
+* Formatadores de código
+* Formatos de arquivo de projeto
+* Painéis de preferências
+* Painéis de opções
+* Protocolos do depurador
+* Visualizadores do depurador
+* Layouts de workspace
+* Nós de árvore do painel de soluções
+* Margens do editor de código-fonte
+* Mecanismos de teste de unidade
+* Geradores de código
+* Snippets de código
+* Frameworks de destino
+* Tempo de execução de destino
+* Back-ends de VCS
+* Refatoração
+* Manipuladores de execução
+* Realce de sintaxe
 
 ## <a name="additional-information"></a>Informações adicionais
 

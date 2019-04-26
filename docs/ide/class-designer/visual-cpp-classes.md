@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: aea3dd9c4821b3c06839c746111c131eedcfa455
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b8312e0db76dd3ce064172116aecd82daab56e90
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939106"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975041"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Classes do Visual C++ no Designer de Classe
 
@@ -128,7 +128,6 @@ Para obter mais informações sobre classes anônimas, consulte [Tipos de classe
 ## <a name="template-classes"></a>Classes de modelo
 
 O **Designer de Classe** é compatível com a visualização de classes de modelo. Declarações aninhadas têm suporte. A tabela a seguir mostra algumas declarações típicas.
-
 
 | Elemento de código | Modo de exibição do Designer de Classe |
 | - | - |

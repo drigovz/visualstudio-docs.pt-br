@@ -9,12 +9,12 @@ ms.assetid: 257d2a24-d582-4cfe-8b2b-51f51ba9cc84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bd5a7183589255d246fd299b9ec628330d948dcf
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1d7f9d0c9ad07223d0b59d7aeca585b53432280
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55917539"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002248"
 ---
 # <a name="how-to-add-additional-run-settings-to-a-load-test"></a>Como: Adicionar outras configurações de execução a um teste de carga
 
@@ -26,21 +26,21 @@ Você pode adicionar mais configurações de execução ao teste de carga com co
 
 ## <a name="to-add-another-run-setting"></a>Para adicionar outra configuração de execução
 
-1.  Abra um teste de carga.
+1. Abra um teste de carga.
 
-2.  (Opcional) Expanda a pasta **Configurações de Execução**.
+2. (Opcional) Expanda a pasta **Configurações de Execução**.
 
-3.  Clique com o botão direito do mouse na pasta **Configurações de Execução** e selecione **Adicionar Configurações de Execução**.
+3. Clique com o botão direito do mouse na pasta **Configurações de Execução** e selecione **Adicionar Configurações de Execução**.
 
      Uma nova configuração de execução é adicionada à pasta **Configurações de Execução**.
 
-4.  No menu **Exibir**, escolha **Janela de Propriedades**.
+4. No menu **Exibir**, escolha **Janela de Propriedades**.
 
      A Janela **Propriedades** é exibida com as propriedades da configuração de execução selecionada.
 
-5.  Na janela **Propriedades**, use a caixa de texto da propriedade **Nome** para dar à nova configuração de execução um nome que descreva a intenção da configuração de execução (por exemplo, **Configuração da Execução: Execução de cinco minutos**).
+5. Na janela **Propriedades**, use a caixa de texto da propriedade **Nome** para dar à nova configuração de execução um nome que descreva a intenção da configuração de execução (por exemplo, **Configuração da Execução: Execução de cinco minutos**).
 
-6.  Use a janela **Propriedades** para alterar as configurações de execução. Por exemplo, altere a duração da execução para **00:05:00** a fim de executar o teste por cinco minutos.
+6. Use a janela **Propriedades** para alterar as configurações de execução. Por exemplo, altere a duração da execução para **00:05:00** a fim de executar o teste por cinco minutos.
 
     > [!NOTE]
     > Para obter uma lista completa das propriedades das configurações de execução e suas descrições, confira [Propriedades de configurações de execução de teste de carga](../test/load-test-run-settings-properties.md).

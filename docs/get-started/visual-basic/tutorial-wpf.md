@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: b64972f2bf2ef0bb34722f717f7ddf8bf032349d
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: d1fcb7b139e374f49df84fe17b8e12ea6aa6b625
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857393"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965692"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>Tutorial: como criar um aplicativo simples com o Visual Basic
 
@@ -27,7 +27,7 @@ Ao concluir este tutorial, você estará familiarizado com vários designers, fe
 
 ::: moniker range="vs-2017"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -116,7 +116,7 @@ Adicionaremos três tipos de controles a este aplicativo: um controle <xref:Syst
 
 ### <a name="add-a-textblock-control"></a>Adicionar um controle TextBlock
 
-1.  Insira **Ctrl**+**Q** para ativar a caixa de pesquisa e digite **Caixa de ferramentas**. Escolha **Exibir > Caixa de ferramentas** na lista de resultados.
+1. Insira **Ctrl**+**Q** para ativar a caixa de pesquisa e digite **Caixa de ferramentas**. Escolha **Exibir > Caixa de ferramentas** na lista de resultados.
 
 2. No **Caixa de Ferramentas**, expanda o nó **Controles Comuns do WPF** para ver o controle TextBlock.
 

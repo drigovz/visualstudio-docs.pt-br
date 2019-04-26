@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e35e3815ebb0fb4c8ed4aca376f519d9720a01b7
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 80b5021af7047725f4b8cb31f55bcbfea800cf93
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971550"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>Tutorial: Criar um aplicativo de console simples em C# no Visual Studio
 
@@ -28,7 +28,7 @@ Neste tutorial do C#, você usará o Visual Studio para criar e executar um apli
 
 ::: moniker range="vs-2017"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -602,4 +602,4 @@ Parabéns por concluir este tutorial. Para saber ainda mais, acompanhe os tutori
 ## <a name="see-also"></a>Consulte também
 
 * [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
-* [Aprender a depurar o código C# no Visual Studio](tutorial-debugger.md)
+* [Aprenda a depurar o código C# no Visual Studio](tutorial-debugger.md)

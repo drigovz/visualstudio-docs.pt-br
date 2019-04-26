@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cea673bdf0378c5ce2c5e3e1925139523b498a5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cdc03624b2260870ca43643caa995db5621dbec9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975184"
 ---
 # <a name="how-to-print-class-diagrams"></a>Como: Imprimir diagramas de classe
 
@@ -24,9 +24,9 @@ ms.locfileid: "55925196"
 
 ## <a name="to-print-a-class-diagram"></a>Para imprimir um diagrama de classe
 
-1.  Abra o diagrama de classe.
+1. Abra o diagrama de classe.
 
-2.  Clique em **Imprimir** no menu **Arquivo**.
+2. Clique em **Imprimir** no menu **Arquivo**.
 
 O diagrama de classe inteiro é impresso. Pode ser necessário ajustar as configurações na caixa de diálogo **Configuração de Página** para imprimir em um tamanho apropriado.
 

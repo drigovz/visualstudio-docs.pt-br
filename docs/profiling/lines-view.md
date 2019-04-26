@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 905979e0bc563e7525f1385a484e9b44b523a1f9
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: dbfb1780cfb8a64ebe20fc45f02992e60d7bb201
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56613980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63000088"
 ---
 # <a name="lines-view"></a>Exibição de linhas
 A exibição de Linhas está disponível somente para dados de criador de perfil coletados por meio do método de amostragem. A exibição não está disponível para dados coletados por meio de instrumentação.
@@ -30,17 +30,17 @@ A exibição de Linhas está disponível somente para dados de criador de perfil
 
  Uma instrução é identificada pelo seguinte:
 
--   O arquivo de origem que contém a instrução da função.
+- O arquivo de origem que contém a instrução da função.
 
--   A função que contém a instrução.
+- A função que contém a instrução.
 
--   A linha de origem em que a instrução se inicia.
+- A linha de origem em que a instrução se inicia.
 
--   O caractere na linha de origem em que a instrução se inicia.
+- O caractere na linha de origem em que a instrução se inicia.
 
--   A linha de origem em que a instrução termina.
+- A linha de origem em que a instrução termina.
 
--   O caractere na linha de origem em que a instrução termina.
+- O caractere na linha de origem em que a instrução termina.
 
 ## <a name="see-also"></a>Consulte também
 - [Exibição de Linhas](../profiling/lines-view-sampling-data.md)

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c38ebb717b351bacdb5704b72af25320fd98763c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8674f0c8ed833ac8db80f30f616aa8b0dbf4cf9f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977175"
 ---
 # <a name="how-to-use-the-same-target-in-multiple-project-files"></a>Como: Usar o mesmo destino em vários arquivos de projeto
 Se você tiver criado vários arquivos de projeto [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], talvez você tenha descoberto que precisa usar as mesmas tarefas e destinos em diferentes arquivos de projeto. Em vez de incluir a descrição completa dessas tarefas ou destinos em todos os arquivos de projeto, você pode salvar um destino em um arquivo de projeto separado e, em seguida, importar o projeto para qualquer outro projeto que precise usar o destino.
@@ -26,13 +26,13 @@ Se você tiver criado vários arquivos de projeto [!INCLUDE[vstecmsbuild](../ext
 
 #### <a name="to-import-a-project"></a>Para importar um projeto
 
-1.  Defina, no arquivo de projeto para o qual está sendo realizada a importação, todas as propriedades e itens que são usados como parâmetros para propriedades e itens no projeto importado.
+1. Defina, no arquivo de projeto para o qual está sendo realizada a importação, todas as propriedades e itens que são usados como parâmetros para propriedades e itens no projeto importado.
 
-2.  Use o elemento `Import` para importar o projeto. Por exemplo:
+2. Use o elemento `Import` para importar o projeto. Por exemplo:
 
      `<Import Project="MyCommon.targets"/>`
 
-3.  Após o elemento `Import`, defina todas as propriedades e itens que devem substituir as definições padrão de propriedades e itens no projeto importado.
+3. Após o elemento `Import`, defina todas as propriedades e itens que devem substituir as definições padrão de propriedades e itens no projeto importado.
 
 ## <a name="order-of-evaluation"></a>Ordem de avaliação
  Quando [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] atinge um elemento `Import`, o projeto importado é inserido efetivamente no projeto para o qual está sendo realizada a importação, no local do elemento `Import`. Portanto, o local do elemento `Import` pode afetar os valores de propriedades e de itens. É importante entender as propriedades e os itens que são definidos pelo projeto importado e as propriedades e itens usados pelo projeto importado.
@@ -74,11 +74,11 @@ Se você tiver criado vários arquivos de projeto [!INCLUDE[vstecmsbuild](../ext
 
 #### <a name="use-the-following-approach-when-importing-projects"></a>Usar a abordagem a seguir ao importar projetos
 
-1.  Defina, no arquivo de projeto, todas as propriedades e itens que são usados como parâmetros para propriedades e itens no projeto importado.
+1. Defina, no arquivo de projeto, todas as propriedades e itens que são usados como parâmetros para propriedades e itens no projeto importado.
 
-2.  Importe o projeto.
+2. Importe o projeto.
 
-3.  Defina, no arquivo de projeto, todas as propriedades e itens que devem substituir as definições padrão de propriedades e itens no projeto importado.
+3. Defina, no arquivo de projeto, todas as propriedades e itens que devem substituir as definições padrão de propriedades e itens no projeto importado.
 
 ## <a name="example"></a>Exemplo
  O exemplo de código a seguir mostra o arquivo *MyCommon.targets*, importado pelo segundo exemplo de código. O arquivo *.targets* avalia propriedades do projeto de importação para configurar o build.

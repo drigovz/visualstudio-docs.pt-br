@@ -14,12 +14,12 @@ dev_langs:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5c1a065d30f3925ba5c567d562d0138de8c5953
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a6f1c524b879d5d5476491a8979d86449f3d43c0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57869270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002499"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>Gerar e executar um teste de desempenho para Web codificado
 
@@ -29,13 +29,13 @@ Testes de desempenho Web são gravados navegando-se no aplicativo Web. Os testes
 
 ## <a name="generate-a-coded-web-performance-test"></a>Gerar um teste de desempenho na Web codificado
 
-1.  Se não tiver criado um teste de desempenho Web, consulte [Gravar um teste de desempenho Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
+1. Se não tiver criado um teste de desempenho Web, consulte [Gravar um teste de desempenho Web](/azure/devops/test/load-test/run-performance-tests-app-before-release#create-a-web-performance-and-load-test-project).
 
-2.  Gere o teste codificado.
+2. Gere o teste codificado.
 
      ![Gerar um teste de desempenho na Web codificado](../test/media/web_test_coded_generate.png)
 
-3.  Nomeie o teste.
+3. Nomeie o teste.
 
      ![Insira um nome para o teste de desempenho Web codificado](../test/media/web_test_coded_generate_nametest.png)
 
@@ -47,7 +47,7 @@ Testes de desempenho Web são gravados navegando-se no aplicativo Web. Os testes
 
      Você pode ver no código que o método GetRequestEnumerator() em C# ou o método Run() em Visual Basic contém cada regra de validação e solicitação da Web que estava no teste gravado.
 
-4.  Para demonstrar a adição de alguns códigos simples, role para baixo até o final do método e depois do código da solicitação da Web mais recente e adicione o seguinte código:
+4. Para demonstrar a adição de alguns códigos simples, role para baixo até o final do método e depois do código da solicitação da Web mais recente e adicione o seguinte código:
 
     ```c#
     if (DateTime.Today.DayOfWeek == DayOfWeek.Wednesday)
@@ -72,9 +72,9 @@ Testes de desempenho Web são gravados navegando-se no aplicativo Web. Os testes
     End If
     ```
 
-5.  Compile a solução para verificar se o código personalizado é compilado.
+5. Compile a solução para verificar se o código personalizado é compilado.
 
-6.  Execute o teste.
+6. Execute o teste.
 
      ![Executar o teste de desempenho Web codificado](../test/media/web_test_coded_generate_run.png)
 

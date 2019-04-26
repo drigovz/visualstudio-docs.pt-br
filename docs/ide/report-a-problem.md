@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 23ed63846eb11fd8eba95219aecaae3210e161fd
-ms.sourcegitcommit: 1c8e07b98fc0a44b5ab90bcef77d9fac7b3eb452
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/25/2019
-ms.locfileid: "56800525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62980025"
 ---
 # <a name="overview-report-a-problem"></a>Visão geral: Relatar um problema
 
@@ -104,7 +104,7 @@ Depois de relatar um problema, os estados indicam onde seus envios estão no seu
 
 - - -
 
-## <a name="faq"></a>Perguntas Frequentes
+## <a name="faq"></a>Perguntas frequentes
 
 ### <a name="how-can-i-increase-the-chance-of-my-problem-getting-resolved-quickly"></a>Como faço para aumentar a chance de o meu problema ser resolvido rapidamente?
 

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bc629f44ed39fb07459916f07ef430f87b00e14a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2e0efd4b4f9fb301f5bcba4a12857647a8d911f1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899330"
 ---
 # <a name="draw-shapes-and-paths"></a>Desenhe as formas e demarcadores
 
@@ -21,7 +21,7 @@ No Designer XAML, uma *forma* é exatamente o que se espera que seja. Por exempl
 
 Formas e caminhos usam gráficos vetoriais, portanto, eles se adaptam bem a exibições de alta resolução. Caso queira saber mais sobre gráficos vetoriais, consulte [O que são Gráficos Vetoriais](https://www.youtube.com/watch?v=MoCSwF0n-io) ou [gráficos vetoriais](http://www.webopedia.com/TERM/V/vector_graphics.html).
 
-##  <a name="Shape"></a> Desenhar uma forma
+## <a name="Shape"></a> Desenhar uma forma
  É possível encontrar formas no painel **Ativos**.
 
  ![Categoria Formas no painel Ativos](../designers/media/b4_shapes_assetspanel.png)
@@ -30,7 +30,7 @@ Formas e caminhos usam gráficos vetoriais, portanto, eles se adaptam bem a exib
 
  ![Alças](../designers/media/84261e83-3091-4490-ab58-4218b188439e.png)
 
-##  <a name="Path"></a> Desenhar um caminho
+## <a name="Path"></a> Desenhar um caminho
  Um caminho é uma série de linhas e curvas conectadas. Use um caminho para criar formas interessantes que não estão disponíveis no painel **Ativos**.
 
  É possível desenhar um caminho usando uma linha, caneta ou lápis. Essas ferramentas podem ser encontradas no painel **Ferramentas**.
@@ -80,12 +80,12 @@ Formas e caminhos usam gráficos vetoriais, portanto, eles se adaptam bem a exib
 
  Use a ferramenta **Seleção** ![Ferramenta Seleção](../designers/media/2ff91340-477e-4efa-a0f7-af20851e4daa.png) para selecionar o caminho. Use a ferramenta **Caneta** ![ferramenta Caneta](../designers/media/894f8612-e0ed-4e00-84cf-a9bc8f38fc54.png) para clicar em qualquer local do caminho em que deseja adicionar o ponto.
 
-##  <a name="Convert"></a> Converter uma forma em um caminho
+## <a name="Convert"></a> Converter uma forma em um caminho
  Para modificar uma forma da mesma maneira que um caminho, converta a forma em um caminho.
 
  **Assista a um breve vídeo:** ![Configurar as funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabalhando com demarcadores: Converter uma forma em um demarcador](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147).
 
-##  <a name="Combine"></a> Combinar caminhos
+## <a name="Combine"></a> Combinar caminhos
  É possível combinar caminhos e formas em um único caminho.
 
  ![Combinar demarcadores](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
@@ -98,7 +98,7 @@ Formas e caminhos usam gráficos vetoriais, portanto, eles se adaptam bem a exib
 
  **Assista a um breve vídeo:** ![Configurar as funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabalhando com demarcadores: Combinar demarcadores](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195).
 
-##  <a name="Compound"></a> Criar um caminho composto
+## <a name="Compound"></a> Criar um caminho composto
  Quando você cria um caminho composto, todas as partes de interseção dos caminhos são subtraídas do resultado e o caminho resultante assume as propriedades visuais do caminho mais baixo.
 
  É possível separar um caminho composto a qualquer momento após sua criação.
@@ -107,7 +107,7 @@ Formas e caminhos usam gráficos vetoriais, portanto, eles se adaptam bem a exib
 
  **Assista a um breve vídeo:** ![Configurar as funcionalidades instaladas](../designers/media/bldadminconsoleinitialconfigicon.png) [Trabalhando com demarcadores: Criar um demarcador composto](https://www.youtube.com/watch?v=Io5bC0-nH6Q).
 
-##  <a name="Clipping"></a> Criar um caminho de recorte
+## <a name="Clipping"></a> Criar um caminho de recorte
  Um caminho de recorte é um caminho ou uma forma que é aplicada a outro objeto, o que oculta as partes do objeto mascarado que fica fora do caminho de recorte.
 
  ![Demarcador de recorte](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)

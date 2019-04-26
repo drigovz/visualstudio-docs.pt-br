@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b79d1f95b6aab700de060a3749374e9ecb48c229
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7fe2a4b57fda3ab861b5471e1af70cd4bfcc55e6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55952653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811775"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>Recursos para criar aplicativos acessíveis
 
@@ -43,13 +43,13 @@ Use os links a seguir para localizar informações sobre as tecnologias compatí
 
 ## <a name="websites"></a>Sites
 
--   [Passo a passo: Diretrizes de acessibilidade para usar Controles de Imagem, Controles Menu e AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Este artigo apresenta instruções passo a passo para incluir controles acessíveis em uma página da Web de exemplo. Ele também fornece algumas dicas de design de acessibilidade para a Web.
+- [Passo a passo: Diretrizes de acessibilidade para usar Controles de Imagem, Controles Menu e AutoPostBack](https://msdn.microsoft.com/Library/ff7b5021-48b3-46bf-921f-9fe1e0e32202) Este artigo apresenta instruções passo a passo para incluir controles acessíveis em uma página da Web de exemplo. Ele também fornece algumas dicas de design de acessibilidade para a Web.
 
--   **Como criar páginas da Web acessíveis com DHTML** Esse artigo técnico lista os elementos HTML 4.0 acessíveis, bem como dicas de Web design acessíveis. Para obter mais informações, confira [Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx) (Criar páginas da Web acessíveis com DHTML).
+- **Como criar páginas da Web acessíveis com DHTML** Esse artigo técnico lista os elementos HTML 4.0 acessíveis, bem como dicas de Web design acessíveis. Para obter mais informações, confira [Create accessible web pages with DHTML](https://msdn.microsoft.com/library/ms528445.aspx) (Criar páginas da Web acessíveis com DHTML).
 
 ### <a name="third-party-resources"></a>Recursos de terceiros
 
--   **Iniciativa de Acessibilidade na Web do W3C (World Wide Web Consortium)** Esse site apresenta diretrizes e técnicas para o desenvolvimento de site acessível. Para obter mais informações, consulte [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
+- **Iniciativa de Acessibilidade na Web do W3C (World Wide Web Consortium)** Esse site apresenta diretrizes e técnicas para o desenvolvimento de site acessível. Para obter mais informações, consulte [https://www.w3.org/WAI/GL/](https://www.w3.org/WAI/GL/).
 
 ## <a name="see-also"></a>Consulte também
 

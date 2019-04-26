@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a228b3f69730eee5fb1672e07a6eea74d18c71e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 64c336db07eab794a6595cb2de9026c1269a33c4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62893373"
 ---
 # <a name="how-to-export-a-texture-that-has-premultiplied-alpha"></a>Como: Exportar uma textura que tenha o alfa pré-multiplicado
 
@@ -21,20 +21,20 @@ O Pipeline de conteúdo de imagem pode gerar texturas alfa pré-multiplicadas de
 
 Este documento demonstra essas atividades:
 
--   Configurando a imagem de origem a ser processada pelo Pipeline de conteúdo da imagem.
+- Configurando a imagem de origem a ser processada pelo Pipeline de conteúdo da imagem.
 
--   Configurando o Pipeline de conteúdo de imagem para gerar alfa pré-multiplicado.
+- Configurando o Pipeline de conteúdo de imagem para gerar alfa pré-multiplicado.
 
 ## <a name="premultiplied-alpha"></a>Alfa pré-multiplicado
  O alfa pré-multiplicado oferece diversas vantagens em relação ao alfa convencional, não multiplicado, porque ele representa melhor a interação real da luz com materiais físicos, separando a contribuição de cor do texel (a cor que ele adiciona à cena) de sua transparência (a quantidade de cor subjacente permitida). Algumas das vantagens de usar alfa pré-multiplicado são:
 
--   A combinação com alfa pré-multiplicado é uma operação de associação; o resultado da combinação de várias texturas translúcidas é o mesmo, independentemente da ordem na qual as texturas são mescladas.
+- A combinação com alfa pré-multiplicado é uma operação de associação; o resultado da combinação de várias texturas translúcidas é o mesmo, independentemente da ordem na qual as texturas são mescladas.
 
--   Devido à natureza associativa de combinação com alfa pré-multiplicado, a renderização multipassagem de objetos translúcidos é simplificada.
+- Devido à natureza associativa de combinação com alfa pré-multiplicado, a renderização multipassagem de objetos translúcidos é simplificada.
 
--   Ao usar alfa pré-multiplicado, tanto a combinação aditiva pura (pela configuração de alfa para zero) quanto a combinação interpoladas linearmente podem ser obtidas simultaneamente. Por exemplo, em um sistema de partículas, uma partícula de fogo combinada de forma aditiva pode se tornar uma partícula de fumaça translúcida combinada por meio do uso da interpolação linear. Sem alfa pré-multiplicado, você precisa extrair as partículas de fogo separadamente das partículas de fumaça e modificar o estado de renderização entre chamadas de retirada.
+- Ao usar alfa pré-multiplicado, tanto a combinação aditiva pura (pela configuração de alfa para zero) quanto a combinação interpoladas linearmente podem ser obtidas simultaneamente. Por exemplo, em um sistema de partículas, uma partícula de fogo combinada de forma aditiva pode se tornar uma partícula de fumaça translúcida combinada por meio do uso da interpolação linear. Sem alfa pré-multiplicado, você precisa extrair as partículas de fogo separadamente das partículas de fumaça e modificar o estado de renderização entre chamadas de retirada.
 
--   As texturas que usam alfa pré-multiplicado são compactadas com qualidade mais alta do que aquelas que não usam e elas não exibem as bordas descoloridas (ou "efeito de halo") que podem ocorrer ao combinar texturas que não usam alfa pré-multiplicado.
+- As texturas que usam alfa pré-multiplicado são compactadas com qualidade mais alta do que aquelas que não usam e elas não exibem as bordas descoloridas (ou "efeito de halo") que podem ocorrer ao combinar texturas que não usam alfa pré-multiplicado.
 
 #### <a name="to-create-a-texture-that-uses-premultiplied-alpha"></a>Como criar uma textura que usa alfa pré-multiplicado
 

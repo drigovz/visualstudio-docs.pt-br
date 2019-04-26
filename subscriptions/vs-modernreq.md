@@ -7,17 +7,16 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Saiba mais sobre o pacote de produtos ModernRequirements incluído em assinaturas selecionadas do Visual Studio Enterprise.
 searchscope: VS Subscription
-ms.openlocfilehash: b35dae73b0fad0acb0acb7f67a2a35533d7cf95a
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 77729e8e5bf39d252ebd570d7d6d514e9ffdcdbb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842501"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62947739"
 ---
 # <a name="the-modernrequirements4tfs-benefit-in-visual-studio-subscriptions"></a>O benefício MODERNRequirements4TFS nas assinaturas do Visual Studio
 
 Assinaturas selecionadas do Visual Studio incluem uma assinatura de seis meses do MODERNRequirements SmartOffice 4TFS e do ModernRequirements4TFS.  O MODERNRequirements SmartOffice4TFS estende as funcionalidades do TFS ou do Azure DevOps Services com relatórios baseados no Microsoft Word e com a criação rápida e simplificada em rich text.  O ModernRequirements4TFS fornece linhas de base de item de trabalho e recursos de simulação de HTML5.
-
 
 ## <a name="activation-steps"></a>Etapas de ativação
 1. Para usar o benefício MODERNRequirementsTFS, entre em [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
@@ -31,11 +30,9 @@ Assinaturas selecionadas do Visual Studio incluem uma assinatura de seis meses d
    > [!div class="mx-imgBorder"]
    > ![Página de aterrissagem ModernRequirements](_img/vs-modernreq/vs-modernreq-landing.png)
 
-
 5. A próxima página contém a chave de licença.  Examine as informações sobre as instalações fornecidas na página e, em seguida, clique no link azul **Para baixar o software, clique aqui** no meio da página.
    > [!div class="mx-imgBorder"]
    > ![Chave de licença ModernRequirements](_img/vs-modernreq/vs-modernreq-license-new-resized.png)
-
 
 6. Na página de download, você tem a opção de instalar os pacotes do MODERNRequirements ou instalar os módulos individuais do pacote SMARTOffice4TFS.  As opções mais adequadas para você dependerão de suas preferências e também da versão do TFS que você instalou.  Familiarize-se com as informações na página para ajudá-lo a selecionar a versão mais adequada dos produtos para você.
    > [!div class="mx-imgBorder"]
@@ -98,10 +95,9 @@ Assinaturas selecionadas do Visual Studio incluem uma assinatura de seis meses d
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
 
-
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
 ## <a name="support-resources"></a>Recursos de suporte
--  Precisa de ajuda com produtos do ModernRequirements?  Visite https://www.modernrequirements.com/support-2/.
--  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
--  Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
+- Precisa de ajuda com produtos do ModernRequirements?  Visite https://www.modernrequirements.com/support-2/.
+- Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
+- Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).

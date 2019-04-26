@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df1e76c895102d5a33d66628a7c6436ab604b1ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: e85c589866aba54e856afb066cec253c7057aaad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979673"
 ---
 # <a name="start"></a>Início
 A opção **Start** é uma opção de *VSPerfCmd.exe* que inicializa o criador de perfil para o método de criação de perfil especificado.
@@ -27,13 +27,13 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 #### <a name="parameters"></a>Parâmetros
  `Method` Precisa ser uma das seguintes palavras-chave:
 
--   **TRACE** – especifica o método de instrumentação.
+- **TRACE** – especifica o método de instrumentação.
 
--   **SAMPLE** – especifica o método de amostragem.
+- **SAMPLE** – especifica o método de amostragem.
 
--   **COVERAGE** – especifica a cobertura de código.
+- **COVERAGE** – especifica a cobertura de código.
 
--   **CONCURRENCY** – especifica o método de contenção de recursos.
+- **CONCURRENCY** – especifica o método de contenção de recursos.
 
 ## <a name="required-options"></a>Opções obrigatórias
  A opção **Output** deverá ser especificada quando **Start** for especificada na linha de comando.

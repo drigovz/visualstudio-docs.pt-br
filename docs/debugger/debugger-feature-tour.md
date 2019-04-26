@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 78b27626c457b857f6f0ce195852922f2d5c89de
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62853922"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>Introdução ao Depurador do Visual Studio
 
@@ -217,4 +217,4 @@ Para obter mais informações, confira a página [Inspecionar estados anteriores
 Neste tutorial, você obteve uma visão rápida de muitos recursos do depurador. Talvez você deseje fazer uma análise mais detalhada de uma dessas funcionalidades, como pontos de interrupção.
 
 > [!div class="nextstepaction"]
-> [Aprender a usar pontos de interrupção](../debugger/using-breakpoints.md)
+> [Aprenda a usar pontos de interrupção](../debugger/using-breakpoints.md)

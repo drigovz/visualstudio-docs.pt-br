@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: ae4c5281386cb43d4dddb55db8578aea7515dce1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793975"
 ---
 # <a name="performance-report-view-filter"></a>Filtro de exibição de relatório de desempenho
 A janela **Filtro de Exibição de Relatório do Criador de Perfil** está localizada na parte superior da janela **Relatório de Desempenho**. Se não estiver visível, clique no botão **Mostrar Filtro**.

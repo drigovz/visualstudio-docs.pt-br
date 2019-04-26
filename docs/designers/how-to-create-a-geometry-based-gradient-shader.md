@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1baaccbe2d7df07900eecbedd385ce8c5a031cc5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: cfb6a629b5ff0ddddeead8f9f53d43580aba084a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55957760"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897818"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Como: Criar um sombreador de gradiente com base na geometria
 
@@ -25,21 +25,21 @@ Você pode implementar um sombreador com base na geometria, incorporando a posi�
 
 Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo exibidas.
 
-1.  Crie um sombreador DGSL com o qual trabalhar. Para obter informações sobre como adicionar um sombreador DGSL ao seu projeto, consulte a seção de Introdução em [Designer de Sombreador](../designers/shader-designer.md).
+1. Crie um sombreador DGSL com o qual trabalhar. Para obter informações sobre como adicionar um sombreador DGSL ao seu projeto, consulte a seção de Introdução em [Designer de Sombreador](../designers/shader-designer.md).
 
-2.  Desconectar o nó **Ponto de Cor** do nó **Cor Final**. Escolha o terminal **RGB** do nó **Ponto de Cor** e, em seguida, escolha **Quebrar Links**. Isso abre o espaço para o nó que será adicionado na próxima etapa.
+2. Desconectar o nó **Ponto de Cor** do nó **Cor Final**. Escolha o terminal **RGB** do nó **Ponto de Cor** e, em seguida, escolha **Quebrar Links**. Isso abre o espaço para o nó que será adicionado na próxima etapa.
 
-3.  Adicione um nó **Multiplicar** ao grafo. Na **Caixa de Ferramentas**, em **Matemática**, selecione **Multiplicar** e mova-a para a superfície de design.
+3. Adicione um nó **Multiplicar** ao grafo. Na **Caixa de Ferramentas**, em **Matemática**, selecione **Multiplicar** e mova-a para a superfície de design.
 
-4.  Adicionar um nó **Vetor de Máscara** ao grafo. Na **Caixa de Ferramentas**, em **Utilitário**, selecione **Vetor de Máscara** e mova-o para a superfície de design.
+4. Adicionar um nó **Vetor de Máscara** ao grafo. Na **Caixa de Ferramentas**, em **Utilitário**, selecione **Vetor de Máscara** e mova-o para a superfície de design.
 
-5.  Especifique os valores de máscara para o nó **Vetor de Máscara**. No modo de **Seleção**, selecione o nó **Vetor de Máscara** e, em seguida, na janela **Propriedades**, defina a propriedade **Verde / Y** como **Verdadeiro** e, em seguida, defina as propriedades **Vermelho / X**, **Azul / Z** e **Alfa / W** como **Falso**. Neste exemplo, as propriedades **Vermelho / X**, **Verde / Y** e **Azul / Z** correspondem aos componentes x, y e z do nó **Posição do Mundo** e **Alfa / W** não é usada. Como somente **Verde / Y** está definido como **Verdadeiro**, apenas o componente y do vetor de entrada permanecerá depois que ele for mascarado.
+5. Especifique os valores de máscara para o nó **Vetor de Máscara**. No modo de **Seleção**, selecione o nó **Vetor de Máscara** e, em seguida, na janela **Propriedades**, defina a propriedade **Verde / Y** como **Verdadeiro** e, em seguida, defina as propriedades **Vermelho / X**, **Azul / Z** e **Alfa / W** como **Falso**. Neste exemplo, as propriedades **Vermelho / X**, **Verde / Y** e **Azul / Z** correspondem aos componentes x, y e z do nó **Posição do Mundo** e **Alfa / W** não é usada. Como somente **Verde / Y** está definido como **Verdadeiro**, apenas o componente y do vetor de entrada permanecerá depois que ele for mascarado.
 
-6.  Adicione um nó **Posição do Mundo** ao grafo. Na **Caixa de Ferramentas**, em **Constantes**, selecione **Posição do Mundo** e mova para a superfície de design.
+6. Adicione um nó **Posição do Mundo** ao grafo. Na **Caixa de Ferramentas**, em **Constantes**, selecione **Posição do Mundo** e mova para a superfície de design.
 
-7.  Mascarar a posição do espaço de mundo do fragmento. No modo de **Seleção**, mova o terminal de **Saída** do nó **Posição do Mundo** para o terminal **Vetor** do nó **Vetor de Máscara**. Essa conexão mascara a posição do fragmento para ignorar os componentes x e z.
+7. Mascarar a posição do espaço de mundo do fragmento. No modo de **Seleção**, mova o terminal de **Saída** do nó **Posição do Mundo** para o terminal **Vetor** do nó **Vetor de Máscara**. Essa conexão mascara a posição do fragmento para ignorar os componentes x e z.
 
-8.  Multiplique a constante de cor RGB pela posição de espaço de mundo mascarada. Mova o terminal **RGB** do nó **Ponto de Cor** para o terminal **Y** do nó **Multiplicar** e, em seguida, mova o terminal de **Saída** do nó **Vetor de Máscara** para o terminal **X** do nó **Multiplicar**. Essa conexão ajusta a escala do valor de cor pela altura do pixel no espaço de mundo.
+8. Multiplique a constante de cor RGB pela posição de espaço de mundo mascarada. Mova o terminal **RGB** do nó **Ponto de Cor** para o terminal **Y** do nó **Multiplicar** e, em seguida, mova o terminal de **Saída** do nó **Vetor de Máscara** para o terminal **X** do nó **Multiplicar**. Essa conexão ajusta a escala do valor de cor pela altura do pixel no espaço de mundo.
 
 9. Conecte o valor de cor ajustado à cor final. Mova o terminal de **Saída** do nó **Multiplicar** para o terminal **RGB** do nó **Cor Final**.
 

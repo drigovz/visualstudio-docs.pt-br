@@ -11,12 +11,12 @@ ms.assetid: 63f4bd42-3cfb-4eee-af68-e8334976539e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a0d656aea42fff774e5e9c58068eff7039cfe79
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 54f9c7b982f1774c79d7cd1e7c0affa29dfbb65d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62823400"
 ---
 # <a name="analyzing-load-test-virtual-user-activity-in-the-details-view-of-the-load-test-analyzer"></a>Analisando a atividade do usuário virtual do teste de carga na exibição Detalhes do Analisador de Teste de Carga
 
@@ -45,11 +45,11 @@ A exibição **Detalhes** mostra o **Gráfico de Atividade do Usuário Virtual**
 
  O painel Resultados do filtro está visível no **Gráfico de Atividade do Usuário Virtual**. Esse painel pode filtrar o seguinte:
 
--   **Mostrar apenas os resultados com logs** Exibe apenas resultados de teste com logs de teste associados.
+- **Mostrar apenas os resultados com logs** Exibe apenas resultados de teste com logs de teste associados.
 
--   **Mostrar resultados bem-sucedidos** Exibe resultados bem-sucedidos.
+- **Mostrar resultados bem-sucedidos** Exibe resultados bem-sucedidos.
 
--   **Mostrar resultados com erros** Exibe resultados com erros que podem ajudar na depuração.
+- **Mostrar resultados com erros** Exibe resultados com erros que podem ajudar na depuração.
 
 ## <a name="tasks"></a>Tarefas
 

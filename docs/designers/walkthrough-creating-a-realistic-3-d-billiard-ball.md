@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 241416a8c874a131b4c766bc0a707019d9ea12f1
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 9f5788b2c6b2dab4b6f0f7a6c520aa1f2ab5f9ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844508"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>Passo a passo: Criar uma bola de bilhar 3D realista
 
@@ -23,11 +23,11 @@ Este passo a passo demonstra como criar uma bola de bilhar realista em 3D usando
 
 Você precisa dos seguintes componentes e habilidades para concluir este passo a passo:
 
--   Uma ferramenta para criar texturas em um mapa de cubo, como a ferramenta de textura do DirectX que está incluída no SDK do DirectX de junho de 2010.
+- Uma ferramenta para criar texturas em um mapa de cubo, como a ferramenta de textura do DirectX que está incluída no SDK do DirectX de junho de 2010.
 
--   Familiaridade com o Editor de Imagens no Visual Studio.
+- Familiaridade com o Editor de Imagens no Visual Studio.
 
--   Familiaridade com o Designer de Sombreador no Visual Studio.
+- Familiaridade com o Designer de Sombreador no Visual Studio.
 
 ## <a name="create-the-basic-appearance-with-shape-and-texture"></a>Criar a aparência básica com forma e textura
 

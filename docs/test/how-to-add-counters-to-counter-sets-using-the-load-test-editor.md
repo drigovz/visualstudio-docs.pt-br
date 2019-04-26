@@ -10,12 +10,12 @@ ms.assetid: e17d0e71-f982-4fc1-a2df-a1065d37473d
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 539d56d4adaa0cf831bde96ccd280fd03750b89f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 004eff423874a07e2b49713eaed16eb1bf8be609
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979440"
 ---
 # <a name="how-to-add-counters-to-counter-sets-using-the-load-test-editor"></a>Como: Adicionar contadores a conjuntos de contadores usando o Editor de Teste de Carga
 
@@ -30,34 +30,34 @@ Você gerencia os contadores no **Editor de Teste de Carga**. Os conjuntos de co
 
 ## <a name="to-add-counters-to-a-counter-set"></a>Para adicionar contadores a um conjunto de contadores
 
-1.  Abra um teste de carga.
+1. Abra um teste de carga.
 
-2.  Expanda o nó **Conjuntos de contadores**. Todos os conjuntos de contadores que foram adicionados ao teste de carga estarão visíveis.
+2. Expanda o nó **Conjuntos de contadores**. Todos os conjuntos de contadores que foram adicionados ao teste de carga estarão visíveis.
 
     > [!NOTE]
     > A árvore hierárquica de testes de carga também contém o nó **Configurações de execução**. Esse nó contém o nó **Mapeamentos de conjuntos de contadores**, que mostra todos os computadores e conjuntos de contadores mapeados para esses computadores.
 
-3.  Clique com o botão direito do mouse em um conjunto de contadores existente e escolha **Adicionar contadores**.
+3. Clique com o botão direito do mouse em um conjunto de contadores existente e escolha **Adicionar contadores**.
 
      A caixa de diálogo **Selecionar contadores de desempenho** é exibida.
 
-4.  Na caixa de combinação suspensa **Computador**, digite o nome do computador para o qual deseja mapear. Opcionalmente, selecione um dos computadores na lista suspensa.
+4. Na caixa de combinação suspensa **Computador**, digite o nome do computador para o qual deseja mapear. Opcionalmente, selecione um dos computadores na lista suspensa.
 
     > [!NOTE]
     > Como os conjuntos de contadores devem ser mapeados para um computador antes que os dados de desempenho sejam coletados, você deve especificar um computador no qual coletar dados de desempenho.
 
-5.  Selecione **Categoria de desempenho** para filtrar as categorias de contadores de dados de desempenho. Você verá duas colunas de dados para selecionar contadores de desempenho.
+5. Selecione **Categoria de desempenho** para filtrar as categorias de contadores de dados de desempenho. Você verá duas colunas de dados para selecionar contadores de desempenho.
 
     > [!NOTE]
     > Algumas categorias de contadores exigirão que você selecione uma instância também. Por exemplo, se você selecionar o contador SQL, deverá selecionar uma instância SQL porque pode haver mais de uma instância do SQL instalada no computador de destino.
 
-6.  Selecione um contador e uma instância para adicionar ao seu conjunto de contadores personalizado.
+6. Selecione um contador e uma instância para adicionar ao seu conjunto de contadores personalizado.
 
      \- ou -
 
      Selecione o botão de opção **Todos os contadores** para selecionar todos os contadores disponíveis.
 
-7.  Escolha **OK**.
+7. Escolha **OK**.
 
     > [!NOTE]
     > Também é possível adicionar contadores como um conjunto de contadores escolhendo um contador ou uma categoria de contador existente, selecionando Copiar e depois colando-o(a) em um nó diferente do conjunto de contadores. Os contadores extras que são copiados, mas não são necessários, podem ser excluídos.

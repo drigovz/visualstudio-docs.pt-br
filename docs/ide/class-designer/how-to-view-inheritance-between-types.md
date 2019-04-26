@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b23a676e4028e8f06f26ccc985ca22b85f56ac95
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 8d1a15765bff6d391afc7395be03172bf5d5fc32
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55907823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975093"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>Como: Exibir herança entre tipos no Designer de Classe
 
@@ -27,9 +27,9 @@ Você poderá localizar a relação de herança, se ela existir, entre um tipo b
 
 ## <a name="to-find-the-base-type"></a>Para localizar o tipo base
 
-1.  No diagrama de classe, clique no tipo para o qual você deseja ver a classe ou a interface base.
+1. No diagrama de classe, clique no tipo para o qual você deseja ver a classe ou a interface base.
 
-2.  No menu **Diagrama de Classe**, escolha **Mostrar Classe Base** ou **Mostrar Interfaces Base**.
+2. No menu **Diagrama de Classe**, escolha **Mostrar Classe Base** ou **Mostrar Interfaces Base**.
 
      A classe ou a interface base do tipo aparece selecionada no diagrama. Todas as linhas de herança ocultas aparecem agora entre as duas formas.
 
@@ -37,9 +37,9 @@ Você pode também clicar com o botão direito do mouse no tipo cujo tipo base d
 
 ## <a name="to-find-the-derived-types"></a>Para localizar os tipos derivados
 
-1.  No diagrama de classe, clique no tipo para o qual você deseja ver as classes ou interfaces derivadas.
+1. No diagrama de classe, clique no tipo para o qual você deseja ver as classes ou interfaces derivadas.
 
-2.  No menu **Diagrama de Classe**, escolha **Mostrar Classes Derivadas** ou **Mostrar Interfaces Derivadas**.
+2. No menu **Diagrama de Classe**, escolha **Mostrar Classes Derivadas** ou **Mostrar Interfaces Derivadas**.
 
      As classes ou interfaces derivadas do tipo aparecem no diagrama. Todas as linhas de herança ocultas aparecem agora entre as formas.
 

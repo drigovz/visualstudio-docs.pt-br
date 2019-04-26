@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 64b602b5c00380449eb1c296ccde98a88bdc1abc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ab5e4b65db5c3d96b16a68a7b8e21a2786b9110b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600227"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001056"
 ---
 # <a name="concurrency-visualizer-markers"></a>Marcadores da Visualização Simultânea
 Na Visualização Simultânea, os marcadores são ícones que representam os eventos em um aplicativo.  Normalmente, o aplicativo gera esses eventos para designar fases ou ocorrências em um aplicativo.  Os eventos podem ser gerados pelo aplicativo ou por bibliotecas e tempos de execução que o aplicativo usa.
@@ -23,11 +23,11 @@ Na Visualização Simultânea, os marcadores são ícones que representam os eve
 ## <a name="kinds-of-markers"></a>Tipos de marcadores
  A Visualização Simultânea usa três tipos de marcadores para representar eventos do aplicativo: sinalizadores, mensagens e intervalos.
 
-1.  Use um *sinalizador* para indicar um ponto no tempo interessante em seu aplicativo.  Por exemplo, é possível usar um sinalizador para representar que o valor de uma variável atingiu um certo limite ou que uma exceção foi lançada.
+1. Use um *sinalizador* para indicar um ponto no tempo interessante em seu aplicativo.  Por exemplo, é possível usar um sinalizador para representar que o valor de uma variável atingiu um certo limite ou que uma exceção foi lançada.
 
-2.  Uma *mensagem* também marca um ponto no tempo, mas é possível usá-la para rastreamento de estilo do log.  Por exemplo, o que pode ter sido despejado em um arquivo de log agora pode ser encapsulado em uma chamada de mensagem para poder rastreá-la e visualizá-la na Visualização Simultânea. Também é possível usar a Visualização Simultânea para exportar esses dados para um arquivo CSV.
+2. Uma *mensagem* também marca um ponto no tempo, mas é possível usá-la para rastreamento de estilo do log.  Por exemplo, o que pode ter sido despejado em um arquivo de log agora pode ser encapsulado em uma chamada de mensagem para poder rastreá-la e visualizá-la na Visualização Simultânea. Também é possível usar a Visualização Simultânea para exportar esses dados para um arquivo CSV.
 
-3.  O *intervalo* representa um intervalo de tempo em seu aplicativo, por exemplo, uma das suas fases.
+3. O *intervalo* representa um intervalo de tempo em seu aplicativo, por exemplo, uma das suas fases.
 
 ## <a name="marker-linkage-to-threads"></a>Vinculação de marcador para threads
  Cada thread que gera marcadores tem um canal separado de linha do tempo.  A ID do thread responsável por gerar os eventos de marcador é mostrada ao lado da descrição do canal do marcador.  A ID mostrada no lado esquerdo do canal do marcador corresponde à ID de outro thread no processo atual.

@@ -12,15 +12,15 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 734a192a00ee0c509ed16e71a8629837155888ae
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956996"
 ---
 # <a name="step-5-use-the-polls-flask-web-project-template"></a>Etapa 5: Usar o modelo de Projeto Web Votações do Flask
 
-**Etapa anterior: [Usar o modelo completo Projeto Web do Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
+**Etapa anterior: [Usar o modelo completo de Projeto Web do Flask](learn-flask-visual-studio-step-04-full-flask-project-template.md)**
 
 Depois de entender o modelo "Projeto Web do Flask" do Visual Studio, agora será possível examinar o terceiro modelo do Flask, "Pesquisas do Projeto Web do Flask", criado sobre a mesma base de código.
 

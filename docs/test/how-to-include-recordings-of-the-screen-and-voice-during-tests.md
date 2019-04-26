@@ -8,12 +8,12 @@ ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9043411cd6681078e9e4d0418e6f3686aa37fc17
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 663f89c65604c42b356830b3a0c6d61bdcb265e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950080"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>Como: Incluir gravações da tela e de voz durante testes usando as configurações do teste
 
@@ -28,35 +28,35 @@ O gravador de tela e voz pode ser usado com testes manuais ou automatizados. Por
 
 ## <a name="to-configure-screen-and-voice-recording-for-your-test-settings"></a>Para configurar a gravação de voz e tela para suas configurações de teste
 
-1.  Abra as configurações de teste que você deseja definir para registrar a tela e a voz. Para obter mais informações, confira [Coletar dados de diagnóstico durante o teste (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) ou [Coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md).
+1. Abra as configurações de teste que você deseja definir para registrar a tela e a voz. Para obter mais informações, confira [Coletar dados de diagnóstico durante o teste (Azure Test Plans)](/azure/devops/test/collect-diagnostic-data?view=vsts) ou [Coletar informações de diagnóstico usando configurações de teste](../test/collect-diagnostic-information-using-test-settings.md).
 
-2.  Nas configurações de teste, selecione a **Função** a ser usada para gravar a tela e a voz.
+2. Nas configurações de teste, selecione a **Função** a ser usada para gravar a tela e a voz.
 
     > [!NOTE]
     > Para testes manuais e testes automatizados, essa seria a máquina que executa os testes.
 
-3.  Selecione **Gravador de Tela e Voz** e escolha **Configurar**.
+3. Selecione **Gravador de Tela e Voz** e escolha **Configurar**.
 
      A caixa de diálogo **Configurar Adaptador de Dados de Diagnóstico – Gravador de Tela e Voz** é exibida.
 
      ![Configuração de vídeo](../test/media/testsettingvideoconfiggdr.png)
 
-4.  (Opcional) Selecione **Habilitar registro de voz** para capturar o conteúdo de áudio em sua gravação.
+4. (Opcional) Selecione **Habilitar registro de voz** para capturar o conteúdo de áudio em sua gravação.
 
-5.  (Opcional) Marque a caixa de seleção ao lado de **Salvar a gravação se o caso de teste passar** para especificar que a tela e as gravações de voz sejam salvas independentemente dos testes serem aprovados ou reprovados.
+5. (Opcional) Marque a caixa de seleção ao lado de **Salvar a gravação se o caso de teste passar** para especificar que a tela e as gravações de voz sejam salvas independentemente dos testes serem aprovados ou reprovados.
 
     > [!WARNING]
     > Se você selecionar **Salvar a gravação se o caso de teste passar**, a gravação será armazenada com os resultados de teste, o que usará espaço de armazenamento no servidor. Use a ferramenta **Limpeza de Anexo de Teste** para limpar esses anexos.
 
-6.  Em **Qualidade de Gravação da Tela**, configure as seguintes opções da lista suspensa:
+6. Em **Qualidade de Gravação da Tela**, configure as seguintes opções da lista suspensa:
 
-    1.  **Taxa de quadros:** Especifique quantos quadros por segundo você deseja usar na gravação de voz e tela. O valor padrão é 4 quadros por segundo. Valores entre 2 e 20 podem ser especificados.
+    1. **Taxa de quadros:** Especifique quantos quadros por segundo você deseja usar na gravação de voz e tela. O valor padrão é 4 quadros por segundo. Valores entre 2 e 20 podem ser especificados.
 
-    2.  **Taxa de bits:** Especifique quantos quilobytes serão usados por segundo na gravação de voz e tela. O valor padrão é 512. Valores entre 512 e 10.000 podem ser especificados.
+    2. **Taxa de bits:** Especifique quantos quilobytes serão usados por segundo na gravação de voz e tela. O valor padrão é 512. Valores entre 512 e 10.000 podem ser especificados.
 
-    3.  **Qualidade (1-100):** Você pode especificar a qualidade da gravação de voz e tela selecionando um intervalo entre 1 e 100. O padrão é 50 (intermediário).
+    3. **Qualidade (1-100):** Você pode especificar a qualidade da gravação de voz e tela selecionando um intervalo entre 1 e 100. O padrão é 50 (intermediário).
 
-7.  Escolha **OK**. As configurações do coletor de rastreamento de diagnóstico agora estão definidas e salvas em suas configurações de teste.
+7. Escolha **OK**. As configurações do coletor de rastreamento de diagnóstico agora estão definidas e salvas em suas configurações de teste.
 
     > [!TIP]
     > Para redefinir a configuração desse adaptador de dados de diagnóstico, escolha **Restaurar configuração padrão** para o Visual Studio e **Redefinir como padrão** para o Microsoft Test Manager.

@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 03b11b478ef441dc7a09902a7185bfdf45e20dc3
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 48ac65ef8fb7a67783a3c9c5a9652accf86821fc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979829"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>Especificar o caminho para as ferramentas de linha de comando das Ferramentas de Criação de Perfil
 
@@ -34,21 +34,21 @@ O caminho das ferramentas de linha de comando das Ferramentas de Criação de Pe
 Em computadores de 64 bits, especifique o caminho de acordo com a plataforma de destino do aplicativo cujo perfil foi criado.
 
 ::: moniker range=">=vs-2019"
--   No caso de aplicativos de 32 bits, o diretório padrão das ferramentas de criação de perfil é:
+- No caso de aplicativos de 32 bits, o diretório padrão das ferramentas de criação de perfil é:
 
      (nativo) *Microsoft Visual Studio\2019\Team Tools\Performance Tools\PerfSDK* (gerenciado) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
--   No caso de aplicativos de 64 bits, o diretório padrão das ferramentas de criação de perfil é:
+- No caso de aplicativos de 64 bits, o diretório padrão das ferramentas de criação de perfil é:
 
      (nativo) *Microsoft Visual Studio\2019\Team Tools\Performance Tools\x64\PerfSDK* (gerenciado) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
 ::: moniker-end
 
 ::: moniker range="vs-2017"
--   No caso de aplicativos de 32 bits, o diretório padrão das ferramentas de criação de perfil é:
+- No caso de aplicativos de 32 bits, o diretório padrão das ferramentas de criação de perfil é:
 
      (nativo) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\PerfSDK* (gerenciado) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*
 
--   No caso de aplicativos de 64 bits, o diretório padrão das ferramentas de criação de perfil é:
+- No caso de aplicativos de 64 bits, o diretório padrão das ferramentas de criação de perfil é:
 
      (nativo) *Microsoft Visual Studio\2017\Team Tools\Performance Tools\x64\PerfSDK* (gerenciado) *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*
 ::: moniker-end

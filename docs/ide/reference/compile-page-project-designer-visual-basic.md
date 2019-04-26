@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fe0f5be0dfaf9f35f390c78633f41711f6bcbc9
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 957e9e4b51dbca2f27e042b185b6dd071791cfad
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968591"
 ---
 # <a name="compile-page-project-designer-visual-basic"></a>Página de Compilação, Designer de Projeto (Visual Basic)
 
@@ -70,11 +70,11 @@ As configurações a seguir permitem definir as opções de configuração do co
 
  **Opção strict** Especifica se deve ser imposta a semântica de tipo estrito. Quando **Opção Estrita** está **Ativada**, as seguintes condições causam um erro em tempo de compilação:
 
--   Conversões de estreitamento implícitas
+- Conversões de estreitamento implícitas
 
--   Associação tardia
+- Associação tardia
 
--   Digitação implícita que resulta em um tipo `Object`
+- Digitação implícita que resulta em um tipo `Object`
 
 Erros de conversão de redução implícita ocorrerem quando há uma conversão de tipo de dados implícita que é uma conversão de redução. Para obter mais informações, consulte [Instrução Opção Estrita](/dotnet/visual-basic/language-reference/statements/option-strict-statement), [Conversões Explícitas e Implícitas](/dotnet/visual-basic/programming-guide/language-features/data-types/implicit-and-explicit-conversions) e [Conversões de Expansão e Redução](/dotnet/visual-basic/programming-guide/language-features/data-types/widening-and-narrowing-conversions).
 
@@ -91,11 +91,11 @@ Quando você cria um projeto, a configuração **Opção Estrita** na **página 
 **Avisos Individuais da Opção Estrita.**
 A seção **Configurações de Aviso** da **página Compilar** tem configurações que correspondem às três condições que causam um erro em tempo de compilação quando `Option Strict` está ativado. A seguir estão estas configurações:
 
--   **Conversão implícita**
+- **Conversão implícita**
 
--   **Associação tardia; a chamada poderia falhar no tempo de execução**
+- **Associação tardia; a chamada poderia falhar no tempo de execução**
 
--   **Tipo implícito; objeto assumido**
+- **Tipo implícito; objeto assumido**
 
 Quando você define **Opção Estrita** como **Ativada**, todas estas três definições de configuração de aviso são definidas como **Erro**. Quando você define **Opção Estrita** como **Desativada**, todas as três configurações são definidas como **Nenhum**.
 
@@ -127,11 +127,11 @@ Executar como um aplicativo de 64 bits duplica o tamanho do ponteiro e pode caus
 
 Essa caixa de seleção estará disponível somente se todas as seguintes condições forem verdadeiras:
 
--   Na **Página Compilar**, a lista **CPU de destino** está definida como **Qualquer CPU**.
+- Na **Página Compilar**, a lista **CPU de destino** está definida como **Qualquer CPU**.
 
--   Na **Página Aplicativo**, a lista **Tipo de aplicativo** especifica que o projeto é um aplicativo.
+- Na **Página Aplicativo**, a lista **Tipo de aplicativo** especifica que o projeto é um aplicativo.
 
--   Na **Página Aplicativo**, a lista **Estrutura de destino** especifica o .NET Framework 4.5.
+- Na **Página Aplicativo**, a lista **Estrutura de destino** especifica o .NET Framework 4.5.
 
 **Configurações de aviso** Esta tabela lista as condições de build e o nível de notificação correspondente de **Nenhum**, **Aviso** ou **Erro** para cada um.
 
@@ -158,7 +158,6 @@ Essa opção não está disponível para projetos de Aplicativos do Windows ou A
 **Eventos de Build** Clique neste botão para acessar a caixa de diálogo **Eventos de Build**. Use essa caixa de diálogo para especificar as instruções de configuração de pré e de pós-build para o projeto. Essa caixa de diálogo aplica-se a somente projetos Visual Basic. Para obter mais informações, consulte [Caixa de diálogo Eventos de Build(Visual Basic)](../../ide/reference/build-events-dialog-box-visual-basic.md).
 
 **Opções Avançadas de Build** Clique neste botão para acessar a caixa de diálogo **Configurações do AdvancedCompiler**. Use a caixa de diálogo **Configurações Avançadas do Compilador** para especificar as propriedades avançadas de configuração de build de um projeto. Essa caixa de diálogo aplica-se a somente projetos Visual Basic. Para obter mais informações, consulte [Caixa de diálogo Configurações Avançadas do Compilador (Visual Basic)](../../ide/reference/advanced-compiler-settings-dialog-box-visual-basic.md).
-
 
 ## <a name="see-also"></a>Consulte também
 

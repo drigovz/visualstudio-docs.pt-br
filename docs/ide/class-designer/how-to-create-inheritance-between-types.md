@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8060f17277a5e80a139ee8d6406fb40d0a84ec71
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5c1a4f8db08ec80714fe2cd74e4d1300d68a56e5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55915846"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975366"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>Como: Criar herança entre tipos no Designer de Classe
 
@@ -26,21 +26,21 @@ Para criar uma relação de herança entre dois tipos em um diagrama de classe u
 
 ## <a name="to-create-an-inheritance-between-types"></a>Para criar uma herança entre tipos
 
-1.  Em seu projeto no **Gerenciador de Soluções**, abra um arquivo de diagrama de classe (.cd).
+1. Em seu projeto no **Gerenciador de Soluções**, abra um arquivo de diagrama de classe (.cd).
 
      Se você não possuir um diagrama de classes, crie um. Confira [Como Adicionar diagramas de classe a projetos](how-to-add-class-diagrams-to-projects.md).
 
-2.  Na **Caixa de Ferramentas**, no **Designer de Classe**, clique em **Herança**.
+2. Na **Caixa de Ferramentas**, no **Designer de Classe**, clique em **Herança**.
 
-3.  No diagrama de classes, desenhe uma linha de herança entre os tipos que você deseja, começando de:
+3. No diagrama de classes, desenhe uma linha de herança entre os tipos que você deseja, começando de:
 
-    -   Uma classe derivada para uma classe base
+    - Uma classe derivada para uma classe base
 
-    -   Uma classe de implementação para uma interface implementada
+    - Uma classe de implementação para uma interface implementada
 
-    -   Uma interface em extensão para uma interface estendida
+    - Uma interface em extensão para uma interface estendida
 
-4.  Se desejar, quando você tiver um tipo derivado de um tipo genérico, clique na linha de herança. Na janela **Propriedades**, defina a propriedade **Argumentos de Tipo** para corresponder ao tipo que você deseja para o tipo genérico.
+4. Se desejar, quando você tiver um tipo derivado de um tipo genérico, clique na linha de herança. Na janela **Propriedades**, defina a propriedade **Argumentos de Tipo** para corresponder ao tipo que você deseja para o tipo genérico.
 
     > [!NOTE]
     > Se uma classe abstrata pai contiver pelo menos um membro abstrato, todos os membros abstratos serão implementados como classes de herança não abstratas.

@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial: Azure Functions'
+title: 'Tutorial: Verificação de'
 description: Usando o Azure Functions no Visual Studio para Mac.
 author: conceptdev
 ms.author: crdun
@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
-ms.openlocfilehash: d6a0683405340d479fb3289540ffde2c5e7a4f78
-ms.sourcegitcommit: 0a8ac5f2a685270d9ca79bb39d26fd90099bfa29
+ms.openlocfilehash: f1c619bbddd5116ad2d425909d80e30ca99e06c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 11/09/2018
-ms.locfileid: "51296431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62986505"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>Tutorial: Introdução ao Azure Functions
 
@@ -30,7 +30,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 - Visual Studio para Mac 7.5 ou posterior.
 - Uma assinatura do Azure (disponível gratuitamente em [https://azure.com/free](https://azure.com/free)).
 
-## <a name="exercise-1-creating-an-azure-functions-project"></a>Exercício 1: Criar um projeto do Azure Functions
+## <a name="exercise-1-creating-an-azure-functions-project"></a>Exercício 1: Como criar um projeto do Azure Functions
 
 1. Inicialize o **Visual Studio para Mac**.
 
@@ -53,7 +53,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
     ![Painel de Soluções exibindo o arquivo local.settings.json](media/azure-functions-lab-image3.png)
 
-## <a name="exercise-2-creating-an-azure-storage-account"></a>Exercício 2: Criar uma Conta de Armazenamento do Azure
+## <a name="exercise-2-creating-an-azure-storage-account"></a>Exercício 2: Como criar uma Conta de Armazenamento do Azure
 
 1. Faça logon na sua conta do Azure em [https://portal.azure.com](https://portal.azure.com).
 
@@ -87,7 +87,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
     ![Arquivo de configurações local com a chave de conexão inserida](media/azure-functions-lab-image10.png)
 
-## <a name="example-3-creating-and-debugging-an-azure-function"></a>Exemplo 3: Criar e depurar uma função do Azure
+## <a name="example-3-creating-and-debugging-an-azure-function"></a>Exemplo 3: Como criar e depurar uma função do Azure
 
 1. Agora, você está pronto para começar a adicionar algum código. Ao trabalhar com uma biblioteca de classes .NET, funções do Azure são adicionadas como métodos estáticos. No **Painel de Soluções**, clique com o botão direito do mouse no nó do projeto do **AzureFunctions** e selecione **Adicionar > Adicionar Função**:
 
@@ -104,6 +104,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
     using System.Web;
     using Microsoft.WindowsAzure.Storage.Table;
     ```
+
 1. Remova o método `Run` existente e adicione o método a seguir à classe como sua função do Azure:
 
     ```csharp
@@ -119,6 +120,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
         return x + y;
     }
     ```
+
 1. Vamos examinar a definição do método detalhadamente.
 
     A primeira coisa que você verá é o atributo **FunctionName**, que marca este método como uma função do Azure. O atributo designa o nome público da função. O nome do atributo não precisa corresponder ao nome real do método.
@@ -180,6 +182,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
     return x + y;
     ```
+
 1. Execute o aplicativo.
 
 1. Retorne à janela do navegador e acrescente a cadeia de caracteres `/?x=2&y=3` à URL. A URL inteira agora deve ser `http://localhost:7071/api/Add?x=2&y=3`. Navegue até a nova URL.
@@ -188,10 +191,9 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
 1. Interrompa a sessão de depuração.
 
+## <a name="exercise-4-working-with-functionjson"></a>Exercício 4: Como trabalhar com o function.json
 
-## <a name="exercise-4-working-with-functionjson"></a>Exercício 4: Trabalhar com function.json
-
-1.  Em um exercício anterior, mencionamos que o Visual Studio para Mac “gera” uma função de trabalho para a função do Azure definida na biblioteca. Isso acontece porque o Azure Functions não usa de fato os atributos de método em tempo de execução, mas usa uma convenção de sistema de arquivos em tempo de compilação para configurar onde e como as funções do Azure são disponibilizadas. No **Painel de Soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Revelar no Localizador**.
+1. Em um exercício anterior, mencionamos que o Visual Studio para Mac “gera” uma função de trabalho para a função do Azure definida na biblioteca. Isso acontece porque o Azure Functions não usa de fato os atributos de método em tempo de execução, mas usa uma convenção de sistema de arquivos em tempo de compilação para configurar onde e como as funções do Azure são disponibilizadas. No **Painel de Soluções**, clique com o botão direito do mouse no nó do projeto e selecione **Revelar no Localizador**.
 
      ![Opção de menu Revelar no Localizador](media/azure-functions-lab-image23.png)
 
@@ -290,6 +292,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
         return x + y;
     }
     ```
+
 1. Pressione **F5** para criar e executar o projeto.
 
 1. Conforme o build é concluído e a plataforma o executa, será indicado que há uma segunda rota disponível para as solicitações, que é mapeada para o método recém-adicionado:
@@ -302,7 +305,7 @@ Neste laboratório, você aprenderá a começar a criar no Azure Functions usand
 
 1. Retorne ao **Visual Studio para Mac** e encerre a sessão de depuração.
 
-## <a name="exercise-5-working-with-azure-storage-tables"></a>Exercício 5: Trabalhar com tabelas de armazenamento do Azure
+## <a name="exercise-5-working-with-azure-storage-tables"></a>Exercício 5: Como trabalhar com tabelas de armazenamento do Azure
 
 Frequentemente, o serviço criado pode ser muito mais complexo do que o que criamos até o momento, e pode demandar tempo e/ou estrutura significativa para ser executado. Nesse caso, você pode achar eficiente aceitar solicitações enfileiradas para processamento quando os recursos ficarem disponíveis, e o Azure Functions dá suporte a isso. Em outros casos, você vai preferir armazenar dados centralmente. As tabelas de Armazenamento do Azure permitem fazer isso facilmente.
 
@@ -316,6 +319,7 @@ Frequentemente, o serviço criado pode ser muito mais complexo do que o que cria
         public int Sum { get; set; }
     }
     ```
+
 1. Dentro da classe **Add**, adicione o código abaixo para introduzir outra função. Observe que esta é única até o momento, pois não envolve uma resposta HTTP. A linha final retorna uma nova **TableRow** preenchida com informações de chave que facilitarão a recuperação posteriormente (**PartitionKey** e **RowKey**), bem como seus parâmetros e uma soma. O código dentro do método também usa o **TraceWriter** para ficar mais fácil saber quando a função é executada.
 
     ```csharp
@@ -341,6 +345,7 @@ Frequentemente, o serviço criado pode ser muito mais complexo do que o que cria
         };
     }
     ```
+
 1. Pressione **F5** para criar e executar o projeto.
 
 1. Na guia do navegador, navegue até **http://localhost:7071/api/Process/4/6**. Isso colocará outra mensagem na fila, o que deve fazer com que outra linha seja adicionada à tabela.
@@ -363,6 +368,7 @@ Frequentemente, o serviço criado pode ser muito mais complexo do que o que cria
     [Table("Results", "sums", "{x}_{y}")]
     TableRow tableRow,
     ```
+
 1. Adicione o código abaixo ao início do método. Se **tableRow** não for nulo, já teremos o resultado da operação solicitada e poderemos retorná-lo imediatamente. Caso contrário, a função continua como antes. Embora essa possa não ser a forma mais robusta de retornar dados, ela ilustra o fato de que é possível orquestrar operações extremamente sofisticadas em várias camadas escalonáveis com pouquíssimo código.
 
     ```csharp
@@ -372,6 +378,7 @@ Frequentemente, o serviço criado pode ser muito mais complexo do que o que cria
         return null;
     }
     ```
+
 1. Pressione **F5** para criar e executar o projeto.
 
 1. Na guia do navegador, atualize a URL em **http://localhost:7071/api/Process/4/6**. Como a linha da tabela para este registro existe, ela deve ser retornada imediatamente em erros. Como não há uma saída HTTP, você pode ver a saída no Terminal.
@@ -409,4 +416,3 @@ Frequentemente, o serviço criado pode ser muito mais complexo do que o que cria
 ## <a name="summary"></a>Resumo
 
 Neste laboratório, você aprendeu a criar no Azure Functions com o Visual Studio para Mac.
-

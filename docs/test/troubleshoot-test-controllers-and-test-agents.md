@@ -11,12 +11,12 @@ ms.assetid: 77329348-3a5d-43de-b6cb-90f93296a081
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: be34e52df0442e071e666da5e66eb31f041d2941
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3ca2a69fc0f5777c34857f6f3da0c7faabcd81ce
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922167"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990544"
 ---
 # <a name="strategies-for-troubleshooting-test-controllers-and-test-agents-in-load-tests"></a>Estratégias para solução de problemas em controladores e agentes de teste em testes de carga
 
@@ -24,7 +24,7 @@ Este artigo aborda alguns problemas comuns que você pode encontrar ao trabalhar
 
 [!INCLUDE [web-load-test-deprecated](includes/web-load-test-deprecated.md)]
 
-##  <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>Não é possível coletar contadores de desempenho no computador do agente de teste
+## <a name="unable-to-collect-performance-counters-on-test-agent-computer"></a>Não é possível coletar contadores de desempenho no computador do agente de teste
 
 Ao executar um teste de carga, você pode receber erros ao tentar se conectar a um computador do agente de teste e coletar contadores de desempenho. O serviço Registro Remoto é o serviço responsável por fornecer dados do contador de desempenho a um computador remoto. Em alguns sistemas operacionais, o serviço Registro Remoto não é iniciado automaticamente. Para corrigir esse problema, inicie manualmente o serviço Registro Remoto.
 
@@ -39,11 +39,11 @@ Você pode controlar o nível de registro em log em um computador do controlador
 
 ### <a name="to-set-the-logging-level-on-a-test-controller-computer"></a>Para definir o nível de registro em log em um computador do controlador de teste
 
-1.  Interrompa o serviço do controlador de teste. Em um prompt de comando, digite `net stop vsttcontroller`.
+1. Interrompa o serviço do controlador de teste. Em um prompt de comando, digite `net stop vsttcontroller`.
 
-2.  Abra o arquivo *QTController.exe.config*. Esse arquivo está localizado no diretório de instalação do controlador.
+2. Abra o arquivo *QTController.exe.config*. Esse arquivo está localizado no diretório de instalação do controlador.
 
-3.  Edite a entrada da opção `EqtTraceLevel` na seção de diagnóstico do sistema do arquivo. Seu código deve se parecer com este:
+3. Edite a entrada da opção `EqtTraceLevel` na seção de diagnóstico do sistema do arquivo. Seu código deve se parecer com este:
 
     ```xml
     <system.diagnostics>
@@ -64,23 +64,23 @@ Você pode controlar o nível de registro em log em um computador do controlador
     </system.diagnostics>
     ```
 
-4.  Salve o arquivo.
+4. Salve o arquivo.
 
-5.  Inicie o serviço do controlador. Em um prompt de comando, digite `net start vsttcontroller`.
+5. Inicie o serviço do controlador. Em um prompt de comando, digite `net start vsttcontroller`.
 
 Isso se aplica ao controlador de teste, ao serviço do agente de teste e ao processo do agente de teste. Ao diagnosticar problemas, é útil habilitar o registro em log desses três processos. O procedimento para definir o nível de registro em log é o mesmo para os três processos, conforme especificado anteriormente para o controlador de teste. Para definir níveis de registro em log para o serviço do agente de teste e o processo de agente, use os seguintes arquivos de configuração:
 
--   *QTController.exe.config* Serviço do controlador
+- *QTController.exe.config* Serviço do controlador
 
--   *QTAgentService.exe.config* Serviço do agente
+- *QTAgentService.exe.config* Serviço do agente
 
--   *QTDCAgent(32).exe.config* Processo do adaptador de dados do agente para uma arquitetura de 32 bits.
+- *QTDCAgent(32).exe.config* Processo do adaptador de dados do agente para uma arquitetura de 32 bits.
 
--   *QTDCAgent(64).exe.config* Processo do adaptador de dados do agente para uma arquitetura de 64 bits.
+- *QTDCAgent(64).exe.config* Processo do adaptador de dados do agente para uma arquitetura de 64 bits.
 
--   *QTAgent(32).exe.config* Processo de teste do agente para uma arquitetura de 32 bits.
+- *QTAgent(32).exe.config* Processo de teste do agente para uma arquitetura de 32 bits.
 
--   *QTAgent(64).exe.config* Processo de teste do agente para uma arquitetura de 64 bits.
+- *QTAgent(64).exe.config* Processo de teste do agente para uma arquitetura de 64 bits.
 
 ## <a name="bind-a-test-controller-to-a-network-adapter"></a>Associar um controlador de teste a um adaptador de rede
 
@@ -97,25 +97,25 @@ Para corrigir este erro, você deve associar o controlador de teste a um dos ada
 
 ### <a name="to-obtain-the-ip-address-of-the-network-adapter"></a>Para obter o endereço IP do adaptador de rede
 
-1.  Escolha **Iniciar** e **Executar**.
+1. Escolha **Iniciar** e **Executar**.
 
      A caixa de diálogo **Executar** é exibida.
 
-2.  Digite `cmd` e escolha **OK**.
+2. Digite `cmd` e escolha **OK**.
 
      Um prompt de comando é aberto.
 
-3.  Digite `ipconfig /all` no terminal integrado.
+3. Digite `ipconfig /all` no terminal integrado.
 
      Os endereços IP de seus adaptadores de rede são exibidos. Registre o endereço IP do adaptador de rede ao qual você deseja associar o controlador.
 
 ### <a name="to-bind-a-test-controller-to-a-network-adapter"></a>Para associar um controlador de teste a um adaptador de rede
 
-1.  Interrompa o serviço do controlador de teste. Em um prompt de comando, digite `net stop vsttcontroller`.
+1. Interrompa o serviço do controlador de teste. Em um prompt de comando, digite `net stop vsttcontroller`.
 
-2.  Abra o arquivo *QTController.exe.config*. Esse arquivo está localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
+2. Abra o arquivo *QTController.exe.config*. Esse arquivo está localizado em *%ProgramFiles(x86)%\Microsoft Visual Studio\2017\Enterprise\Common7\IDE*.
 
-3.  Adicione uma entrada para a propriedade `BindTo` nas configurações do aplicativo. Especifique o endereço IP do adaptador de rede ao qual deseja associar o controlador. Seu código deve se parecer com este:
+3. Adicione uma entrada para a propriedade `BindTo` nas configurações do aplicativo. Especifique o endereço IP do adaptador de rede ao qual deseja associar o controlador. Seu código deve se parecer com este:
 
     ```xml
     <appSettings>
@@ -129,13 +129,13 @@ Para corrigir este erro, você deve associar o controlador de teste a um dos ada
     </appSettings>
     ```
 
-4.  Salve o arquivo.
+4. Salve o arquivo.
 
-5.  Inicie o serviço do controlador de teste. Em um prompt de comando, digite `net start vsttcontroller`.
+5. Inicie o serviço do controlador de teste. Em um prompt de comando, digite `net start vsttcontroller`.
 
 ### <a name="to-connect-a-test-agent-to-a-bound-controller"></a>Para conectar um agente de teste a um controlador associado
 
--   Execute a instalação do agente de teste novamente. Dessa vez, especifique o endereço IP do controlador de teste em vez do nome do controlador de teste.
+- Execute a instalação do agente de teste novamente. Dessa vez, especifique o endereço IP do controlador de teste em vez do nome do controlador de teste.
 
 Isso se aplica ao controlador de teste, ao serviço do agente de teste e ao processo do agente de teste. A propriedade `BindTo` deve ser definida para cada processo em execução em um computador que tem mais de um adaptador de rede. O procedimento para definir a propriedade `BindTo` é o mesmo para os três processos, conforme especificado anteriormente para o controlador de teste. Para definir os níveis de log para o serviço e o processo do agente de teste, use os arquivos de configuração listados em [Definir o nível de log em um computador do controlador de teste](#set-the-logging-level-on-a-test-controller-computer).
 

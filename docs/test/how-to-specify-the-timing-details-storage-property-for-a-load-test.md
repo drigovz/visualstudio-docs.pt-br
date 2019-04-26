@@ -9,12 +9,12 @@ ms.assetid: 867a9c21-0909-4963-bc02-d41e9393008c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 94d996dbd069c258522418b9ca0be14bf54df156
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ec6ca0e39a7816d99377bc13e1274cbc96a663ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970627"
 ---
 # <a name="how-to-specify-the-timing-details-storage-property-for-a-load-test-run-setting"></a>Como: Especificar a propriedade de armazenamento de detalhes de tempo para uma configuração de execução de teste de carga
 
@@ -47,15 +47,15 @@ Você pode editar um valor da propriedade **Armazenamento de detalhes de mediç�
 
 ## <a name="to-configure-the-timing-details-storage-property-in-a-load-test"></a>Para configurar a propriedade de armazenamento de detalhes de medição de tempo em um teste de carga
 
-1.  Abra um teste de carga no Editor de testes de carga.
+1. Abra um teste de carga no Editor de testes de carga.
 
-2.  Expanda o nó **Configurações de execução** no teste de carga.
+2. Expanda o nó **Configurações de execução** no teste de carga.
 
-3.  Escolha as configurações de execução que deseja definir, por exemplo **Configurações de Execução1[Ativas]**.
+3. Escolha as configurações de execução que deseja definir, por exemplo **Configurações de Execução1[Ativas]**.
 
-4.  Abra a Janela **Propriedades**. No menu **Exibir**, selecione **Janela de Propriedades**.
+4. Abra a Janela **Propriedades**. No menu **Exibir**, selecione **Janela de Propriedades**.
 
-5.  Na categoria **Resultados**, escolha a propriedade **Armazenamento de detalhes de medição de tempo** e selecione **Todos os detalhes individuais**.
+5. Na categoria **Resultados**, escolha a propriedade **Armazenamento de detalhes de medição de tempo** e selecione **Todos os detalhes individuais**.
 
      Depois de definir a configuração de **Todos os Detalhes Individuais** para a propriedade **Armazenamento de Detalhes de Medição de Tempo**, execute o teste de carga e exiba o **Gráfico de Atividade de Usuário Virtual**. Para obter mais informações, confira [Como: Analisar o que os usuários virtuais fazem durante um teste de carga](../test/how-to-analyze-virtual-user-activity-during-a-load-test.md).
 
