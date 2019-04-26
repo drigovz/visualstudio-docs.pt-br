@@ -29,12 +29,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 962b3ef149730772c01c8cfe3a3bf026d59fd3b0
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: 39932fe8d4afa31c66d6daa4af33d963b5612eb2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975539"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>Criar e configurar membros de tipo no Designer de Classe
 
@@ -86,41 +86,41 @@ Você pode criar um membro usando qualquer uma das ferramentas a seguir:
 
 ### <a name="create-a-member-using-class-designer"></a>Criar um membro usando o Designer de Classe
 
-1.  Clique com o botão direito do mouse no tipo ao qual deseja adicionar um membro, aponte para **Adicionar** e escolha o tipo de membro que deseja adicionar.
+1. Clique com o botão direito do mouse no tipo ao qual deseja adicionar um membro, aponte para **Adicionar** e escolha o tipo de membro que deseja adicionar.
 
      Uma nova assinatura de membro é criada e adicionada ao tipo. Ela recebe um nome padrão que pode ser alterado no **Designer de Classe**, na Janela **Detalhes da Classe** ou na janela **Propriedades**.
 
-2.  Se preferir, especifique outros detalhes sobre o membro, como seu tipo.
+2. Se preferir, especifique outros detalhes sobre o membro, como seu tipo.
 
 ### <a name="create-a-member-using-the-class-details-window-toolbar"></a>Criar um membro usando a barra de ferramentas da janela Detalhes da Classe
 
-1.  Na superfície de diagrama, selecione o tipo ao qual deseja adicionar um membro.
+1. Na superfície de diagrama, selecione o tipo ao qual deseja adicionar um membro.
 
      O tipo obtém foco e seu conteúdo é exibido na janela **Detalhes da Classe**.
 
-2.  Na barra de ferramentas da Janela **Detalhes da Classe**, clique no ícone superior e selecione **Novo \<membro>** na lista suspensa.
+2. Na barra de ferramentas da Janela **Detalhes da Classe**, clique no ícone superior e selecione **Novo \<membro>** na lista suspensa.
 
      O cursor é movido para o campo **Nome** em uma linha para o tipo de membro que você deseja adicionar. Por exemplo, se você tiver clicado em **Nova Propriedade**, o cursor passará para uma nova linha na seção **Propriedades** da janela **Detalhes da Classe**.
 
-3.  Digite o nome do membro que deseja criar e pressione Enter (ou, de outra forma, mova o foco, pressionando Tab).
+3. Digite o nome do membro que deseja criar e pressione Enter (ou, de outra forma, mova o foco, pressionando Tab).
 
      Uma nova assinatura de membro é criada e adicionada ao tipo. Agora, o membro existe no código e é exibido no **Designer de Classe**, na janela **Detalhes da Classe** e na janela Propriedades.
 
-4.  Se preferir, especifique outros detalhes sobre o membro, como seu tipo.
+4. Se preferir, especifique outros detalhes sobre o membro, como seu tipo.
 
 ### <a name="create-a-member-using-the-class-details-window"></a>Criar um membro usando a janela Detalhes da Classe
 
-1.  Na superfície de diagrama, selecione o tipo ao qual deseja adicionar um membro.
+1. Na superfície de diagrama, selecione o tipo ao qual deseja adicionar um membro.
 
      O tipo obtém foco e seu conteúdo é exibido na janela **Detalhes da Classe**.
 
-2.  Na janela **Detalhes da Classe**, na seção que contém o tipo de membro que você deseja adicionar, clique em **\<adicionar membro>**. Por exemplo, se quiser adicionar um campo, clique em **\<adicionar campo>**.
+2. Na janela **Detalhes da Classe**, na seção que contém o tipo de membro que você deseja adicionar, clique em **\<adicionar membro>**. Por exemplo, se quiser adicionar um campo, clique em **\<adicionar campo>**.
 
-3.  Digite o nome do membro que deseja criar e pressione Enter.
+3. Digite o nome do membro que deseja criar e pressione Enter.
 
      Uma nova assinatura de membro é criada e adicionada ao tipo. Agora, o membro existe no código e é exibido no **Designer de Classe**, na janela **Detalhes da Classe** e na janela Propriedades.
 
-4.  Se preferir, especifique outros detalhes sobre o membro, como seu tipo.
+4. Se preferir, especifique outros detalhes sobre o membro, como seu tipo.
 
      **Observação:** Use também atalhos de teclado para criar membros. Para obter mais informações, confira [Atalhos de teclado e do mouse no Diagrama de Classe e na janela Detalhes da Classe](keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window.md).
 
@@ -170,11 +170,11 @@ Cada linha de membro exibe os seguintes elementos:
 
 ### <a name="to-modify-a-type-member"></a>Para modificar um membro de tipo
 
-1.  Usando o Designer de Classe, selecione um tipo.
+1. Usando o Designer de Classe, selecione um tipo.
 
-2.  Se a janela **Detalhes da Classe** não for exibida, clique no botão da janela **Detalhes da Classe** na barra de ferramentas do Designer de Classe.
+2. Se a janela **Detalhes da Classe** não for exibida, clique no botão da janela **Detalhes da Classe** na barra de ferramentas do Designer de Classe.
 
-3.  Edite os valores nos campos da grade da janela **Detalhes da Classe**. Após cada edição, pressione ENTER ou, caso contrário, mova o foco para longe do campo editado, por exemplo, pressionando TAB. Suas edições são refletidas imediatamente no código.
+3. Edite os valores nos campos da grade da janela **Detalhes da Classe**. Após cada edição, pressione ENTER ou, caso contrário, mova o foco para longe do campo editado, por exemplo, pressionando TAB. Suas edições são refletidas imediatamente no código.
 
     > [!NOTE]
     > Se desejar modificar apenas o nome de um membro, você poderá fazer isso usando a edição in-loco.
@@ -217,35 +217,35 @@ A janela **Propriedades** exibe as mesmas propriedades de parâmetro exibidas na
 
 ### <a name="to-add-a-parameter-to-a-method"></a>Para adicionar um parâmetro a um método
 
-1.  Na superfície de diagrama, clique no tipo que contém o método ao qual deseja adicionar um parâmetro.
+1. Na superfície de diagrama, clique no tipo que contém o método ao qual deseja adicionar um parâmetro.
 
      O tipo obtém foco e seu conteúdo é exibido na janela **Detalhes da Classe**.
 
-2.  Na janela **Detalhes da Classe**, expanda a linha do método ao qual deseja adicionar um parâmetro.
+2. Na janela **Detalhes da Classe**, expanda a linha do método ao qual deseja adicionar um parâmetro.
 
      Uma linha de parâmetro recuada é exibida, contendo apenas um par de parênteses e as palavras **\<adicionar parâmetro>.**
 
-3.  Clique em **\<adicionar parâmetro>**, digite o nome do novo parâmetro e pressione **Enter**.
+3. Clique em **\<adicionar parâmetro>**, digite o nome do novo parâmetro e pressione **Enter**.
 
      O novo parâmetro é adicionado ao método e ao código do método. Ele é exibido na janela **Detalhes da Classe** e na janela Propriedades.
 
-4.  Se preferir, especifique outros detalhes sobre o parâmetro, como seu tipo.
+4. Se preferir, especifique outros detalhes sobre o parâmetro, como seu tipo.
 
 ### <a name="to-add-an-optional-parameter-to-a-method"></a>Para adicionar um parâmetro opcional a um método
 
-1.  Na superfície de diagrama, clique no tipo que contém o método ao qual deseja adicionar um parâmetro opcional.
+1. Na superfície de diagrama, clique no tipo que contém o método ao qual deseja adicionar um parâmetro opcional.
 
      O tipo obtém foco e seu conteúdo é exibido na janela **Detalhes da Classe**.
 
-2.  Na janela **Detalhes da Classe**, expanda a linha do método ao qual deseja adicionar um parâmetro opcional.
+2. Na janela **Detalhes da Classe**, expanda a linha do método ao qual deseja adicionar um parâmetro opcional.
 
      Uma linha de parâmetro recuada é exibida, contendo apenas um par de parênteses e as palavras **\<adicionar parâmetro>.**
 
-3.  Clique em **\<adicionar parâmetro>**, digite o nome do novo parâmetro e pressione **Enter**.
+3. Clique em **\<adicionar parâmetro>**, digite o nome do novo parâmetro e pressione **Enter**.
 
      O novo parâmetro é adicionado ao método e ao código do método. Ele é exibido na janela **Detalhes da Classe** e na janela Propriedades.
 
-4.  Na janela Propriedades, digite um valor para a propriedade **Padrão Opcional**. Definir a propriedade Padrão Opcional de um parâmetro o torna opcional.
+4. Na janela Propriedades, digite um valor para a propriedade **Padrão Opcional**. Definir a propriedade Padrão Opcional de um parâmetro o torna opcional.
 
     > [!NOTE]
     > Os parâmetros opcionais devem ser os últimos parâmetros na lista de parâmetros.

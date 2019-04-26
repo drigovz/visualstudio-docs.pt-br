@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66feaa25b9910a48e192e80798e50d80d861fb08
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c1acd55ad9ea2d671730a656a673fd1f2ca3aa19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55940601"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430876"
 ---
 # <a name="specify-custom-build-events-in-visual-studio"></a>Especificar eventos de build personalizados no Visual Studio
 
@@ -24,11 +24,11 @@ Ao especificar um evento de build personalizado, é possível executar comandos 
 
  Para obter informações específicas sobre a linguagem de programação que está sendo usada, consulte os seguintes tópicos:
 
--   Visual Basic – [Como: Especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
+- Visual Basic – [Como: Especificar eventos de build (Visual Basic)](../ide/how-to-specify-build-events-visual-basic.md).
 
--   C# e F# – [Como: Especificar eventos de build (C#)](../ide/how-to-specify-build-events-csharp.md).
+- C# e F# – [Como: Especificar eventos de build (C#)](../ide/how-to-specify-build-events-csharp.md).
 
--   Visual C++ – [Especificar eventos de build](/cpp/ide/specifying-build-events).
+- Visual C++ – [Especificar eventos de build](/cpp/ide/specifying-build-events).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -53,7 +53,7 @@ Os eventos de build seguem a mesma sintaxe dos comandos do DOS, mas é possível
    Exemplo: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
 
   > [!NOTE]
-  >  `%I` no código acima deve ser `%%I` em scripts em lote.
+  > `%I` no código acima deve ser `%%I` em scripts em lote.
 
 ## <a name="see-also"></a>Consulte também
 

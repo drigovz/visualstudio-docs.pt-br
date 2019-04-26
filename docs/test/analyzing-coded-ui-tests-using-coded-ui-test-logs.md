@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 85be4e713a4cf2581200da7589a1001e6510459d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a5ce4f298039d6d86f8c4855d1f139b6be1d1175
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55948544"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822706"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisando testes de IU codificados usando logs de teste de IU codificado
 
@@ -60,18 +60,18 @@ De acordo com seu cenário, use um destes métodos para habilitar o log:
 
 Ao executar um teste de IU codificado com as modificações no arquivo *QTAgent32.exe.config* em vigor, você verá um link de saída nos resultados do **Gerenciador de Testes**. Os arquivos de log são gerados não apenas quando o teste falha, mas também quando o nível de rastreamento está definido como "detalhado" e os testes são bem-sucedidos.
 
-1.  No menu **Teste**, escolha a opção **Windows** e selecione **Gerenciador de Testes**.
+1. No menu **Teste**, escolha a opção **Windows** e selecione **Gerenciador de Testes**.
 
-2.  No menu **Compilar**, escolha **Compilar Solução**.
+2. No menu **Compilar**, escolha **Compilar Solução**.
 
-3.  No **Gerenciador de Testes**, selecione o teste de IU codificado que você deseja executar, abra seu menu de atalho e escolha em **Executar Testes Selecionados**.
+3. No **Gerenciador de Testes**, selecione o teste de IU codificado que você deseja executar, abra seu menu de atalho e escolha em **Executar Testes Selecionados**.
 
      Os testes automatizados são executados e indicam se passaram ou falharam.
 
     > [!TIP]
     > Para exibir o **Gerenciador de Testes**, escolha **Teste** > **Windows** e escolha **Gerenciador de Testes**.
 
-4.  Clique no link **Saída** nos resultados do **Gerenciador de Testes**.
+4. Clique no link **Saída** nos resultados do **Gerenciador de Testes**.
 
      ![Link de saída no Gerenciador de Testes](../test/media/cuit_htmlactionlog1.png)
 
@@ -79,7 +79,7 @@ Ao executar um teste de IU codificado com as modificações no arquivo *QTAgent3
 
      ![Resultados e links de saída do teste de IU codificado](../test/media/cuit_htmlactionlog2.png)
 
-5.  Escolha o link *UITestActionLog.html*.
+5. Escolha o link *UITestActionLog.html*.
 
      O log é exibido em seu navegador da Web.
 

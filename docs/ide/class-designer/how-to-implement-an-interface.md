@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f070e3224dcc683d766da556512f285751c37ca4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e76aeea4c6779e97d882705e8680cd7a3b00d129
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975171"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>Como: Implementar uma interface no Designer de Classe
 
@@ -27,9 +27,9 @@ No **Designer de Classe**, você pode implementar uma interface no diagrama de c
 
 ## <a name="to-implement-an-interface-by-drawing-an-inheritance-line"></a>Para implementar uma interface desenhando uma linha de herança
 
-1.  No diagrama de classe, exiba a interface e a classe que a implementará.
+1. No diagrama de classe, exiba a interface e a classe que a implementará.
 
-2.  Desenhe uma linha de herança da classe e da interface.
+2. Desenhe uma linha de herança da classe e da interface.
 
      Um pirulito aparece anexado à classe, e um rótulo com o nome da interface identifica a relação de herança. O Visual Studio gera stubs para todos os membros da interface.
 
@@ -37,14 +37,14 @@ Para obter mais informações, confira [Como: Criar herança entre tipos](how-to
 
 ## <a name="to-implement-an-interface-from-the-class-view-window"></a>Para implementar uma interface da janela do Modo de Exibição de Classe
 
-1.  No diagrama de classe, exiba a classe cuja interface você deseja implementar.
+1. No diagrama de classe, exiba a classe cuja interface você deseja implementar.
 
-2.  Abra o **Modo de Exibição de Classe** e localize a interface.
+2. Abra o **Modo de Exibição de Classe** e localize a interface.
 
     > [!TIP]
     > Se o **Modo de Exibição de Classe** não estiver aberto, abra o **Modo de Exibição de Classe** no menu **Exibir** ou pressione **Ctrl**+**Shift**+**C**.
 
-3.  Arraste o nó da interface para a forma de classe no diagrama.
+3. Arraste o nó da interface para a forma de classe no diagrama.
 
      Um pirulito aparece anexado à classe, e um rótulo com o nome da interface identifica a relação de herança. O Visual Studio gera stubs para todos os membros da interface. Neste ponto, a interface é implementada.
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639941"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830818"
 ---
 # <a name="measure-mode-onoff"></a>Ativar/desativar modo de medida
 Com essa ferramenta, é possível medir com precisão um período de tempo na linha do tempo. Para habilitar o modo de medida, clique no botão de medida (que tem um ícone de régua) e, em seguida, arraste a linha do tempo. Ao arrastar, observe que a área abaixo do ponteiro será realçada em amarelo e o tempo medido aparecerá na barra de ferramentas à direita do botão. Esse valor é calculado dinamicamente conforme você arrasta a fim de que seja possível ver imediatamente o quanto um determinado evento está demorando. Quando você soltar o botão do mouse, o valor temporal permanecerá visível.

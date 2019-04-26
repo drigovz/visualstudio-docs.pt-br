@@ -7,12 +7,12 @@ ms.date: 10/03/2017
 ms.topic: conceptual
 description: Saiba como obter e gerenciar as chaves do produto (Product Keys) nas assinaturas do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 9a1163aecab9f9330f1464704d0aa97018e51d6b
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 74d13602dd27669233cd40ebdd2f5e165c09079a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977704"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>Usando as chaves do produto (Product Keys) nas assinaturas do Visual Studio
 
@@ -53,7 +53,6 @@ Algumas chaves são fornecidas automaticamente, como as chaves “estáticas”,
 
 Vários tipos de chave estão disponíveis, de acordo com o produto.
 
-
 ### <a name="product-key-types"></a>Tipos de chave do produto (Product Key)
 
 |    Tipo de chave           |    Descrição                                                                                                                                                                                                           |
@@ -74,7 +73,6 @@ Você pode solicitar uma chave na página de download do produto ou pesquisar a 
 
 ### <a name="claiming-product-keys"></a>Solicitando chaves do produto (Product Keys)
 Somente os assinantes com assinaturas ativas podem baixar produtos e solicitar chaves do produto (Product Keys).  Você poderá exportar as chaves solicitadas na página [Chaves do Produto (Product Keys)](https://my.visualstudio.com/productkeys) enquanto a assinatura estiver ativa.
-
 
 Para solicitar a chave do produto (Product Key):
 1. Entre na sua assinatura do Visual Studio.  Você deve estar conectado para baixar produtos ou solicitar chaves do produto (Product Keys).

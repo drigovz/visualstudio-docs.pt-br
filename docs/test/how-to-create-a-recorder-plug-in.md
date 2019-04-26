@@ -8,12 +8,12 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e86f026ec4d4133635ba5cf9d6c37970abe6e139
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: e49fbb3411aee98fce5899c522b9743b3f2afa33
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415895"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950248"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>Como: Criar um plug-in do gravador
 
@@ -33,20 +33,20 @@ Os procedimentos a seguir descrevem como criar o código rudimentar para um plug
 
 ### <a name="to-create-a-recorder-plug-in"></a>Para criar um plug-in de gravação
 
-1.  Abra uma solução que contenha o projeto de teste de carga e desempenho na Web com o teste de desempenho na Web para o qual você deseja criar um plug-in de gravação.
+1. Abra uma solução que contenha o projeto de teste de carga e desempenho na Web com o teste de desempenho na Web para o qual você deseja criar um plug-in de gravação.
 
-2.  Adicione um novo projeto de **Biblioteca de Classes** à solução.
+2. Adicione um novo projeto de **Biblioteca de Classes** à solução.
 
-3.  No **Gerenciador de Soluções**, na nova pasta de projeto da biblioteca de classes, clique com o botão direito do mouse na pasta **Referências** e selecione **Adicionar Referência**.
+3. No **Gerenciador de Soluções**, na nova pasta de projeto da biblioteca de classes, clique com o botão direito do mouse na pasta **Referências** e selecione **Adicionar Referência**.
 
     > [!TIP]
     > Um exemplo de uma nova pasta de projeto de biblioteca de classes é **RecorderPlugins**.
 
      A caixa de diálogo **Adicionar Referência** é exibida.
 
-4.  Selecione a guia **.NET**.
+4. Selecione a guia **.NET**.
 
-5.  Role para baixo, selecione **Microsoft.VisualStudio.QualityTools.WebTestFramework** e escolha **OK**.
+5. Role para baixo, selecione **Microsoft.VisualStudio.QualityTools.WebTestFramework** e escolha **OK**.
 
      O **Microsoft.VisualStudio.QualityTools.WebTestFramework** é adicionado à pasta **Referências** do **Gerenciador de Soluções**.
 
@@ -88,11 +88,11 @@ Depois de compilar o plug-in de gravação, coloque a DLL resultante em um dos d
 
 ### <a name="execute-the-recorder-plug-in"></a>Executar o plug-in de gravador
 
-1.  Crie um novo teste de desempenho na Web.
+1. Crie um novo teste de desempenho na Web.
 
      A caixa de diálogo **Habilitar WebTestRecordPlugins** é exibida.
 
-2.  Marque a caixa de seleção do plug-in de gravador e escolha **OK**.
+2. Marque a caixa de seleção do plug-in de gravador e escolha **OK**.
 
      Depois que o teste de desempenho na Web concluir a gravação, o novo plug-in de gravação será executado.
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0138ec1e2a36ce20b80982103ec408077502993a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ff63e6cca9deebbfcfa5960b41d85f9425f7a73
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975503"
 ---
 # <a name="how-to-change-between-member-notation-and-association-notation-in-class-designer"></a>Como: Alterar entre notação de membro e notação de associação no Designer de Classe
 
@@ -29,9 +29,9 @@ No **Designer de Classe**, você pode alterar a maneira que o diagrama de classe
 
 ## <a name="to-change-member-notation-to-association-notation"></a>Para alterar de notação de membro para notação de associação
 
-1.  No nó do projeto no Gerenciador de Soluções, abra um arquivo de diagrama de classe (.cd).
+1. No nó do projeto no Gerenciador de Soluções, abra um arquivo de diagrama de classe (.cd).
 
-2.  Na forma de tipo no diagrama de classe, clique com o botão direito do mouse na propriedade do membro ou no campo que representa a associação e escolha **Mostrar como Associação**.
+2. Na forma de tipo no diagrama de classe, clique com o botão direito do mouse na propriedade do membro ou no campo que representa a associação e escolha **Mostrar como Associação**.
 
     > [!TIP]
     > Se não houver campos ou propriedades visíveis na forma de tipo, os compartimentos da forma poderão ser recolhidos. Para expandir a forma do tipo, clique duas vezes no nome do compartimento ou clique com o botão direito do mouse na forma de tipo e escolha **Expandir**.

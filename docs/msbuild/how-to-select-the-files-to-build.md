@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9942c680f93614a84da3502de4b3a26a08576fb7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 7f8f582a0148f5fddd88393e008593d9ad9a05ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386180"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Como: Selecionar os arquivos a serem compilados
 Quando você compila um projeto que contém vários arquivos, é possível listar cada arquivo separadamente no arquivo de projeto ou usar caracteres curinga para incluir todos os arquivos em um diretório ou um conjunto aninhado de diretórios.
@@ -42,7 +42,7 @@ Para incluir arquivos para um build, eles devem ser incluídos em uma lista de i
 
 #### <a name="to-declare-multiple-items"></a>Para declarar vários itens
 
--   Use os atributos `Include` semelhantes ao seguinte:
+- Use os atributos `Include` semelhantes ao seguinte:
 
     `<CSFile Include="form1.cs;form2.cs"/>`
 
@@ -97,7 +97,7 @@ Em um arquivo de projeto, você pode usar a notação @() em tarefas para especi
     `<VBC Sources="@(VBFile)">...</VBC>`
 
 > [!NOTE]
->  Use curingas com itens para especificar as entradas para um build; não é possível especificar as entradas usando o atributo `Sources` em tarefas do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] como [Csc](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). O exemplo a seguir não é válido em um arquivo de projeto:
+> Use curingas com itens para especificar as entradas para um build; não é possível especificar as entradas usando o atributo `Sources` em tarefas do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] como [Csc](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). O exemplo a seguir não é válido em um arquivo de projeto:
 >
 > `<CSC Sources="*.cs">...</CSC>`
 

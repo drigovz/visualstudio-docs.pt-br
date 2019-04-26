@@ -10,18 +10,28 @@ manager: jillfra
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 05551799a0f97178c5a52d7468f6c6abb505e4c3
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: f81ca0d5c41f08174adfc891055939414e1bfe6f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953785"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>Início Rápido: Criar seu primeiro aplicativo Web do Python usando o Visual Studio
 
 Nesta introdução de 5 a 10 minutos do Visual Studio como um IDE do Python, você criará um aplicativo Web Python simples na estrutura Flask. Crie o projeto por meio de etapas simples para ajudarão a saber mais sobre os recursos básicos do Visual Studio.
 
-Se você ainda não tiver instalado o Visual Studio, acesse [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente. No instalador, selecione a carga de trabalho de **Desenvolvimento de Python**.
+::: moniker range="vs-2017"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente. No instalador, selecione a carga de trabalho de **Desenvolvimento de Python**.
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente. No instalador, selecione a carga de trabalho de **Desenvolvimento de Python**.
+
+::: moniker-end
 
 ## <a name="create-the-project"></a>Criar o projeto
 

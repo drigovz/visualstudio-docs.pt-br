@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 4EB95F75-BC2E-4982-9564-2975805712D8
-ms.openlocfilehash: ef208a9f74c1c8ee1ccb6df2c1e54917cd354be3
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 428c5ceb878d2ec0f4185ad70772672733fda517
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856441"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971429"
 ---
 # <a name="uninstalling-visual-studio-for-mac"></a>Desinstalando o Visual Studio para Mac
 
@@ -36,9 +36,9 @@ Você pode desinstalar os componentes do Visual Studio e do Xamarin de uma só v
 
 Esse script de desinstalação contém a maioria dos comandos que você encontrará no artigo. Há três omissões principais do script que não estão incluídas devido a possíveis dependências externas. Para removê-las, vá para a seção relevante abaixo e remova manualmente:
 
-- **[Desinstalando Mono](#uninstall-mono-sdk-mdk)**
-- **[Desinstalando o Android AVD](#uninstall-android-avd)**
-- **[Como desinstalar o SDK do Android e o SDK do Java](#uninstall-android-sdk-and-java-sdk)**
+- **[Desinstalar o Mono](#uninstall-mono-sdk-mdk)**
+- **[Desinstalar o Android AVD](#uninstall-android-avd)**
+- **[Desinstalar o SDK do Android e o SDK do Java](#uninstall-android-sdk-and-java-sdk)**
 
 Para executar o script, execute as seguintes etapas:
 
@@ -48,12 +48,14 @@ Para executar o script, execute as seguintes etapas:
     ```bash
     cd /location/of/file
     ```
+
 3. Torne o script executável e execute-o com o **sudo**:
 
     ```bash
     chmod +x ./uninstall-vsmac.sh
     sudo ./uninstall-vsmac.sh
     ```
+
 4. Por fim, exclua o script de desinstalação.
 
 ### <a name="net-core-script"></a>Script do .NET Core
@@ -68,12 +70,14 @@ Para executar o script, execute as seguintes etapas:
     ```bash
     cd /location/of/file
     ```
+
 3. Torne o script executável e execute-o com o **sudo**:
 
     ```bash
     chmod +x ./dotnet-uninstall-pkgs.sh
     sudo ./dotnet-uninstall-pkgs.sh
     ```
+
 4. Por fim, exclua o script de desinstalação do .NET Core.
 
 ## <a name="uninstall-visual-studio-for-mac"></a>Desinstalar o Visual Studio para Mac
@@ -104,7 +108,6 @@ Talvez você queira remover o seguinte diretório que contém vários arquivos e
 ```bash
 rm -rf ~/Library/Developer/Xamarin
 ```
-
 
 ## <a name="uninstall-mono-sdk-mdk"></a>Desinstalar o SDK do Mono (MDK)
 

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2526a6bcf6dc03379c22e38fb646acba450a9ec5
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 188865b715c7c071222f7132c6f9bdd9b3dc596a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366595"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961717"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>Etapa 2: Criar um aplicativo do Flask com modos de exibição e modelos de página
 
@@ -77,6 +77,7 @@ No código criado pelo modelo "Projeto Web em Branco do Flask", você tem um ún
 
         app.run(HOST, PORT)
     ```
+
 6. A estrutura do seu projeto deve ser semelhante à da imagem a seguir:
 
     ![Estrutura do projeto após a refatoração do código](media/flask/step02-project-structure.png)
