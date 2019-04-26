@@ -19,12 +19,12 @@ caps.latest.revision: 108
 author: kraigb
 ms.author: kraigb
 manager: jillfra
-ms.openlocfilehash: bdb3973502d57ef326d0e13b1ddc43d0e9c89c87
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0554302f408547ea08c886bc3b458efdf7ddd412
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654692"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60046585"
 ---
 # <a name="porting-migrating-and-upgrading-visual-studio-projects"></a>Portando, migrando e atualizando projetos do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Quando estiver pensando se deve migrar para uma versão mais nova do Visual Stud
 
  Se usar o [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] com o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou Visual Studio 2010 SP1, você também poderá criar e modificar projetos e arquivos em qualquer uma das versões. É possível transferir projetos e arquivos entre as versões, contanto que você não adicione recursos que não tenham suporte em uma das versões.
 
-##  <a name="project"></a> Projetos
+## <a name="project"></a> Projetos
  A lista a seguir descreve o suporte do [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)] e [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] a projetos criados no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou no Visual Studio 2010 SP1. Use essa lista para determinar se é possível abrir um projeto “no estado em que se encontra” no [!INCLUDE[vs_dev14](../includes/vs-dev14-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)], [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou Visual Studio 2010 SP1 ou se você precisará modificá-lo para garantir a compatibilidade.
 
 |Tipo de projeto|Compatibilidade|
@@ -101,7 +101,7 @@ Quando estiver pensando se deve migrar para uma versão mais nova do Visual Stud
 
   Para obter informações adicionais de solução de problemas, confira o artigo da base de dados de conhecimento [Compatibilidade do Visual Studio 2013](http://support.microsoft.com/kb/2863286).
 
-##  <a name="file"></a> Arquivos
+## <a name="file"></a> Arquivos
  A lista a seguir identifica se o [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] oferece suporte a cada tipo de arquivo, se você pode abrir o arquivo no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] e no Visual Studio 2010 SP1, e se você precisa modificá-lo para garantir a compatibilidade.
 
 |Tipo de arquivo|Compatibilidade|
@@ -121,7 +121,7 @@ Quando estiver pensando se deve migrar para uma versão mais nova do Visual Stud
 |Arquivos de log do IntelliTrace do [!INCLUDE[vs2010](../includes/vs2010-md.md)]|Você pode abrir esses arquivos no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] e Visual Studio 2010 SP1.|
 |Arquivos JavaScript Memory Analyzer (.diagsession)|Os arquivos criados por versões anteriores do Visual Studio podem ser exibidos no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)]. No entanto, dependendo das informações coletadas, os arquivos criados no [!INCLUDE[vs_dev12](../includes/vs-dev12-md.md)] podem não ser abertos no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou Visual Studio 2010 SP1.|
 
-##  <a name="integration"></a> Ativos de integração
+## <a name="integration"></a> Ativos de integração
  Você poderá encontrar problemas de compatibilidade se usar clientes e servidores de versões diferentes do Visual Studio Team Foundation Server.
 
 |Tipo de integração|Compatibilidade|
