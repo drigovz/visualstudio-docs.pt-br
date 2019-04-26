@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5a6e0ae31068144cb7de5ff83ac562db8f833d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 1063a94ad2ff08942ec191e9162b4b2d506bb048
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045134"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403454"
 ---
 # <a name="working-with-elements-in-xaml-designer"></a>Trabalhando com elementos no Designer XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -94,7 +94,7 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
      Quando você abre um adorno de margem, e a margem oposta não está definida, a margem oposta é definida como o valor correto de acordo com o local do elemento na prancheta. Para margens opostas, como as margens **Esquerda** e **Direita**, pelo menos uma propriedade sempre será definida.  
   
     > [!IMPORTANT]
-    >  Elementos colocados dentro de alguns contêineres de layout, como <xref:Windows.UI.Xaml.Controls.Canvas>, não têm adornos de margem. Elementos colocados dentro de um <xref:Windows.UI.Xaml.Controls.StackPanel> têm adornos para as margens esquerda e direita ou para as margens superior e inferior, dependendo da orientação do `StackPanel`.  
+    > Elementos colocados dentro de alguns contêineres de layout, como <xref:Windows.UI.Xaml.Controls.Canvas>, não têm adornos de margem. Elementos colocados dentro de um <xref:Windows.UI.Xaml.Controls.StackPanel> têm adornos para as margens esquerda e direita ou para as margens superior e inferior, dependendo da orientação do `StackPanel`.  
   
 ## <a name="grouping-and-ungrouping-elements"></a>Agrupando e desagrupando elementos  
  O agrupamento de dois ou mais elementos no XAML Designer cria um novo contêiner de layout e coloca esses elementos dentro do contêiner. A colocação de dois ou mais elementos juntos em um contêiner de layout permite que você selecione, mova e transforme facilmente o grupo como se os elementos nesse grupo fossem um único elemento. O agrupamento também é útil para identificar elementos relacionados entre si de alguma forma, como os botões que compõem um elemento de navegação. Ao desagrupar elementos, você simplesmente exclui o contêiner de layout que continha os elementos.  
@@ -106,7 +106,7 @@ Você pode adicionar elementos - controles, layouts e formas - ao seu aplicativo
 2. Clique com o botão direito do mouse nos elementos selecionados, aponte para **Agrupar em** e clique no tipo de contêiner de layout no qual deseja que o grupo resida.  
   
     > [!TIP]
-    >  Se você selecionar <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer> para agrupar os elementos, os elementos serão colocados em um novo painel de <xref:Windows.UI.Xaml.Controls.Grid> dentro de <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Se você desagrupar elementos em um desses contêineres de layout, apenas <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer> será excluído, e o painel <xref:Windows.UI.Xaml.Controls.Grid> permanecerá. Para excluir o painel `Grid`, desagrupe os elementos novamente.  
+    > Se você selecionar <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer> para agrupar os elementos, os elementos serão colocados em um novo painel de <xref:Windows.UI.Xaml.Controls.Grid> dentro de <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer>. Se você desagrupar elementos em um desses contêineres de layout, apenas <xref:Windows.UI.Xaml.Controls.Viewbox>, <xref:Windows.UI.Xaml.Controls.Border> ou <xref:Windows.UI.Xaml.Controls.ScrollViewer> será excluído, e o painel <xref:Windows.UI.Xaml.Controls.Grid> permanecerá. Para excluir o painel `Grid`, desagrupe os elementos novamente.  
   
 #### <a name="to-ungroup-elements-and-delete-the-layout"></a>Para desagrupar elementos e excluir o layout  
   

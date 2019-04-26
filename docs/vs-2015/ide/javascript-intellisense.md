@@ -26,12 +26,12 @@ caps.latest.revision: 67
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af1484bef2baadf961eb00c952a50abec5c4a9f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 84a630a679e95d8a6848592b183749c2ace3ea86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412305"
 ---
 # <a name="javascript-intellisense"></a>JavaScript IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ O IntelliSense ajuda a escrever código mais rapidamente e com menos erros forne
 - O [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)], se você estiver trabalhando em um aplicativo Web ASP.NET habilitado para AJAX.
 
     > [!NOTE]
-    >  O IntelliSense não tem suporte para script que esteja nos atributos de manipulador de eventos em elementos HTML ou que esteja definido nos atributos `href`.
+    > O IntelliSense não tem suporte para script que esteja nos atributos de manipulador de eventos em elementos HTML ou que esteja definido nos atributos `href`.
 
 ## <a name="ProcessingIntelliSenseInformation"></a> Processamento de informações do IntelliSense
  Para fornecer o JavaScript IntelliSense, o serviço de linguagem executa as seguintes operações:
@@ -189,7 +189,7 @@ O IntelliSense ajuda a escrever código mais rapidamente e com menos erros forne
  `/// <reference path="~/Services/MyService.asmx" />`
 
 > [!NOTE]
->  O JavaScript IntelliSense não tem suporte no script que está contido em arquivos de serviço Web (.asmx) em Projetos de Aplicativo Web (WAP).
+> O JavaScript IntelliSense não tem suporte no script que está contido em arquivos de serviço Web (.asmx) em Projetos de Aplicativo Web (WAP).
 
  O exemplo a seguir mostra como fazer referência de script baseado em página:
 
@@ -233,18 +233,18 @@ O IntelliSense ajuda a escrever código mais rapidamente e com menos erros forne
   Na maioria dos cenários, não é preciso modificar grupos de referência. No entanto, se desejar fazer alterações, você poderá usar opções de configuração do Editor de Códigos do JavaScript para especificar os arquivos incluídos nos grupos de referência. Para obter instruções sobre como usar este recurso, confira [Opções, Editor de texto, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).
 
 > [!TIP]
->  Geralmente, as referências do IntelliSense são usadas para oferecer suporte a objetos globais e a [extensões](#Extensibility) do IntelliSense. Também é possível usar esse recurso para scripts que devem ser carregados no tempo de execução usando o carregador de scripts.
+> Geralmente, as referências do IntelliSense são usadas para oferecer suporte a objetos globais e a [extensões](#Extensibility) do IntelliSense. Também é possível usar esse recurso para scripts que devem ser carregados no tempo de execução usando o carregador de scripts.
 
 ### <a name="remote-file-references"></a>Referências de arquivo remoto
  Você pode orientar o Visual Studio a baixar arquivos JavaScript remotos que são referenciados em um arquivo JavaScript para fornecer suporte ao arquivo remoto ou à biblioteca do IntelliSense. Quando você usa esse recurso, os arquivos são baixados quando são incluídos como uma referência no seu arquivo JavaScript.
 
 > [!NOTE]
->  Com exceção dos projetos Web, esse recurso funciona apenas para arquivos JavaScript que são abertos fora do contexto de um projeto. Em projetos Web, os arquivos remotos referenciados no seu projeto são baixados por padrão.
+> Com exceção dos projetos Web, esse recurso funciona apenas para arquivos JavaScript que são abertos fora do contexto de um projeto. Em projetos Web, os arquivos remotos referenciados no seu projeto são baixados por padrão.
 
  Para obter instruções sobre como usar este recurso, confira [Opções, Editor de texto, JavaScript, IntelliSense](../ide/reference/options-text-editor-javascript-intellisense.md).
 
 > [!WARNING]
->  Se você habilitar esse recurso e perceber diminuição de desempenho no Editor de Códigos, é recomendável desabilitá-lo.
+> Se você habilitar esse recurso e perceber diminuição de desempenho no Editor de Códigos, é recomendável desabilitá-lo.
 
 ### <a name="XMLDocComments"></a> Comentários da documentação XML
  Os comentários da documentação XML são descrições de texto de elementos de código que você adiciona ao script. Essas descrições de texto são exibidas no IntelliSense quando você faz referência ao script comentado. Por exemplo, é possível fornecer informações sobre parâmetros e valor de retorno de uma função. Os comentários da documentação XML estão disponíveis somente em assemblies, serviços e arquivos referenciados. Para saber mais, confira [Comentários da documentação XML](../ide/xml-documentation-comments-javascript.md) e [Criar comentários da documentação XML](../ide/create-xml-documentation-comments-for-javascript-intellisense.md).
@@ -263,7 +263,7 @@ O IntelliSense ajuda a escrever código mais rapidamente e com menos erros forne
  O AJAX ASP.NET também oferece suporte ao JavaScript IntelliSense. O AJAX ASP.NET inclui uma estrutura de cliente que estende os tipos padrão que estão disponíveis no ECMAScript (JavaScript). Para permitir que o JavaScript IntelliSense forneça detalhes sobre objetos AJAX ASP.NET, os comentários da documentação XML foram adicionados em todo o [!INCLUDE[atlaslib_current_ext](../includes/atlaslib-current-ext-md.md)]. Esses comentários da documentação XML são exibidos quando você usa tipos e membros que estão contidos na biblioteca AJAX ASP.NET.
 
 > [!NOTE]
->  Os membros privados não são exibidos pelo JavaScript IntelliSense. Os membros privados são denotados no AJAX ASP.NET como membros que começam com um sublinhado (_).
+> Os membros privados não são exibidos pelo JavaScript IntelliSense. Os membros privados são denotados no AJAX ASP.NET como membros que começam com um sublinhado (_).
 
 ## <a name="Extensibility"></a> Extensibilidade do JavaScript IntelliSense
  O serviço de linguagem JavaScript fornece objetos e funções que permitem modificar a experiência do IntelliSense para desenvolvedores que usam bibliotecas de terceiros. Esses recursos são especialmente úteis quando o serviço de linguagem padrão não pode fornecer todas as informações que você deseja fornecer aos clientes. Para saber mais, confira [Como estender o JavaScript IntelliSense](../ide/extending-javascript-intellisense.md).

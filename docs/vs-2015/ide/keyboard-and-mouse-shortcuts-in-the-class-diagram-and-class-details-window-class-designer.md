@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3fc21eb85c46d74fabc777147b14575babd9be8b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 861ce1cf40dd5c56c043399387ef51fa3b4efee2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412251"
 ---
 # <a name="keyboard-and-mouse-shortcuts-in-the-class-diagram-and-class-details-window-class-designer"></a>Atalhos de teclado e mouse no diagrama de classe e janela Detalhes da Classe (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ ms.locfileid: "60113008"
 ## <a name="KeyboardClassDetails"></a> Usando o teclado na Janela Detalhes da Classe  
   
 > [!NOTE]
->  As seguintes associações de teclas foram escolhidas para reproduzir especificamente a experiência de digitar código.  
+> As seguintes associações de teclas foram escolhidas para reproduzir especificamente a experiência de digitar código.  
   
  Use as teclas a seguir para navegar na Janela Detalhes da Classe:  
   
