@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 669d239aa7c26a99774ce12cdd3e1b43c5d7ccb7
-ms.sourcegitcommit: 40393347a36779230d128f2355a911632a8d458e
+ms.openlocfilehash: 41619e780d02f20fc21bd2b51cc0b0a3eede90fd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58866712"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951484"
 ---
 # <a id="top"> </a> Imagens do visual Studio no Azure
 
@@ -77,13 +77,13 @@ Se as imagens não incluírem um recurso do Visual Studio do qual você precisa,
 
 O Azure oferece uma gama completa de tamanhos de máquina virtual. Como o Visual Studio é um aplicativo multithread poderoso, convém ter um tamanho de VM que inclua pelo menos dois processadores e 7 GB de memória. Recomendamos os seguintes tamanhos de VM para as imagens do Visual Studio:
 
-   * Standard_D2_v3
-   * Standard_D2s_v3
-   * Standard_D4_v3
-   * Standard_D4s_v3
-   * Standard_D2_v2
-   * Standard_D2S_v2
-   * Standard_D3_v2
+* Standard_D2_v3
+* Standard_D2s_v3
+* Standard_D4_v3
+* Standard_D4s_v3
+* Standard_D2_v2
+* Standard_D2S_v2
+* Standard_D3_v2
 
 Para saber mais sobre os tamanhos de máquina mais recentes, veja [Tamanhos de máquinas virtuais do Windows no Azure](/azure/virtual-machines/windows/sizes).
 
@@ -121,5 +121,5 @@ Além disso, talvez as tarefas de desenvolvimento ou as tecnologias precisem de 
 
 Agora que você já conhece as imagens pré-configuradas do Visual Studio, a próxima etapa é criar uma nova VM:
 
-* [Criar uma VM por meio do portal do Azure](/azure/virtual-machines/windows/quick-create-portal)
+* [Criar uma VM por meio do Portal do Azure](/azure/virtual-machines/windows/quick-create-portal)
 * [Visão geral das máquinas virtuais do Windows](/azure/virtual-machines/windows/overview)

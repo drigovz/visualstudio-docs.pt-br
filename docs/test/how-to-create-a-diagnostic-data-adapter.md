@@ -8,12 +8,12 @@ ms.assetid: bd7ad36c-54cb-4d2a-9aea-9d10ad98d7ba
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 487af3eb2a2cce1c68a94b996f371ab1c491e4c5
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 517d4e0558aeca1518316520191ae6c662b41a9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950733"
 ---
 # <a name="how-to-create-a-diagnostic-data-adapter"></a>Como: Criar um adaptador de dados de diagnóstico
 
@@ -54,19 +54,19 @@ Para obter um projeto completo do adaptador de dados de diagnóstico de exemplo,
 
 2. Adicione o assembly **Microsoft.VisualStudio.QualityTools.ExecutionCommon**.
 
-   1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e escolha o comando **Adicionar Referência**.
+   1. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e escolha o comando **Adicionar Referência**.
 
-   2.  Escolha **.NET** e localize **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
+   2. Escolha **.NET** e localize **Microsoft.VisualStudio.QualityTools.ExecutionCommon.dll**.
 
-   3.  Escolha **OK**.
+   3. Escolha **OK**.
 
 3. Adicione o assembly **Microsoft.VisualStudio.QualityTools.Common**.
 
-   1.  No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e selecione o comando **Adicionar Referência**.
+   1. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Referências** e selecione o comando **Adicionar Referência**.
 
-   2.  Escolha **.NET** e localize **Microsoft.VisualStudio.QualityTools.Common.dll**.
+   2. Escolha **.NET** e localize **Microsoft.VisualStudio.QualityTools.Common.dll**.
 
-   3.  Escolha **OK**.
+   3. Escolha **OK**.
 
 4. Adicione as seguintes instruções `using` para seu arquivo de classe:
 

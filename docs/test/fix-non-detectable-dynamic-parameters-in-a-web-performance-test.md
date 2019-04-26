@@ -10,22 +10,22 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 148ec42a7c0a0f8c040eabb75991b54c78f511ab
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: b02be3e0ed5cb59e57e4aec28b3d7979d77f7652
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955109"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004078"
 ---
-# <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Corrigir parâmetros dinâmicos não detectáveis em um teste de desempenho Web
+# <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>Corrigir parâmetros dinâmicos não detectáveis em um teste de desempenho para Web
 
 Alguns sites usam parâmetros dinâmicos para processar algumas de suas solicitações da Web. Um parâmetro dinâmico é um parâmetro cujo valor é gerado novamente, sempre que um usuário executa o aplicativo. Um exemplo de um parâmetro dinâmico é uma ID de sessão. A ID de sessão normalmente muda a cada 5 a 30 minutos. O registrador de teste de desempenho na Web e o mecanismo da reprodução tratam automaticamente aos tipos mais comuns de parâmetros dinâmicos:
 
--   Valores de parâmetro dinâmicos que são definidos em um valor de cookie. O mecanismo de teste de desempenho na Web os identifica automaticamente durante a reprodução.
+- Valores de parâmetro dinâmicos que são definidos em um valor de cookie. O mecanismo de teste de desempenho na Web os identifica automaticamente durante a reprodução.
 
--   Valores de parâmetro dinâmicos que são definidos nos campos ocultos em páginas HTML, como o estado de exibição do ASP.NET. Esses são tratados automaticamente pelo registrador, que adiciona regras ocultas de extração de campo ao teste.
+- Valores de parâmetro dinâmicos que são definidos nos campos ocultos em páginas HTML, como o estado de exibição do ASP.NET. Esses são tratados automaticamente pelo registrador, que adiciona regras ocultas de extração de campo ao teste.
 
--   Valores de parâmetro dinâmicos que são definidos como cadeias de caracteres de consulta ou parâmetros de postagem de formulário Eles são tratados pela detecção de parâmetro dinâmico depois que você registra um teste de desempenho Web.
+- Valores de parâmetro dinâmicos que são definidos como cadeias de caracteres de consulta ou parâmetros de postagem de formulário Eles são tratados pela detecção de parâmetro dinâmico depois que você registra um teste de desempenho Web.
 
 Alguns tipos de parâmetros dinâmicos não são detectados. Um parâmetro dinâmico não detectado irá fazer com que seu teste de desempenho na Web falhe porque o valor dinâmico provavelmente será diferente sempre que o teste for executado. Para manipular corretamente esses parâmetros, você pode adicionar regras de extração aos parâmetros dinâmicos em seu teste de desempenho na Web manualmente.
 
@@ -35,17 +35,17 @@ Alguns tipos de parâmetros dinâmicos não são detectados. Um parâmetro dinâ
 
 Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nós criaremos um aplicativo Web ASP.NET simples que tenha três formulários da Web com alguns controles e alguns códigos personalizados. Nós saberemos como isolar os parâmetros dinâmicos e como tratá-los.
 
-1.  Crie um novo projeto ASP.NET chamado **DynamicParameterSample**.
+1. Crie um novo projeto ASP.NET chamado **DynamicParameterSample**.
 
      ![Criar um projeto de aplicativo Web ASP.NET vazio](../test/media/web_test_dynamicparameter_aspproject.png)
 
-2.  Adicionar um formulário de Web chamado *Querystring.aspx*.
+2. Adicionar um formulário de Web chamado *Querystring.aspx*.
 
-3.  No modo design, arraste um HiddenField para a página e em seguida altere o valor da propriedade (ID) para HiddenFieldSessionID.
+3. No modo design, arraste um HiddenField para a página e em seguida altere o valor da propriedade (ID) para HiddenFieldSessionID.
 
      ![Adicionar um HiddenField](../test/media/web_test_dynamicparameter_hiddenfield.png)
 
-4.  Altere para a exibição de origem para a página Querystring e adicione o seguinte código ASP.NET e JavaScript realçado usado para gerar os parâmetros dinâmicos de identificação de sessão fictícios:
+4. Altere para a exibição de origem para a página Querystring e adicione o seguinte código ASP.NET e JavaScript realçado usado para gerar os parâmetros dinâmicos de identificação de sessão fictícios:
 
     ```html
     <head runat="server">
@@ -62,7 +62,7 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
     </html>
     ```
 
-5.  Abra o arquivo *Querystring.aspx.cs* e adicione o seguinte código realçado ao método Page_Load:
+5. Abra o arquivo *Querystring.aspx.cs* e adicione o seguinte código realçado ao método Page_Load:
 
     ```csharp
     public partial class Querystring : System.Web.UI.Page
@@ -74,13 +74,13 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
     }
     ```
 
-6.  Adicionar um segundo formulário chamado *ASPQuery.aspx*.
+6. Adicionar um segundo formulário chamado *ASPQuery.aspx*.
 
-7.  No modo design, arraste um **Rótulo** para a página e altere o valor de sua propriedade **(ID)** para **IndexLabel**.
+7. No modo design, arraste um **Rótulo** para a página e altere o valor de sua propriedade **(ID)** para **IndexLabel**.
 
      ![Adicionar um rótulo ao formulário Web](../test/media/web_test_dynamicparameter_label.png)
 
-8.  Arraste um **hiperlink** para a página e altere o valor da propriedade **Texto** para **Voltar**.
+8. Arraste um **hiperlink** para a página e altere o valor da propriedade **Texto** para **Voltar**.
 
      ![Adicionar um hiperlink ao formulário Web](../test/media/web_test_dynamicparameter_hyperlink.png)
 
@@ -132,31 +132,31 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
 ## <a name="create-a-web-performance-test"></a>Criar um teste de desempenho na Web
 
-1.  Adicione um projeto de teste de carga e de desempenho na Web à sua solução.
+1. Adicione um projeto de teste de carga e de desempenho na Web à sua solução.
 
      ![Adicionar um projeto de teste de carga e de desempenho na Web](../test/media/web_test_dynamicparameter_addtestproject.png)
 
-2.  Renomeie WebTest1.webtest para DynamicParameterSampleApp.webtest.
+2. Renomeie WebTest1.webtest para DynamicParameterSampleApp.webtest.
 
      ![Renomear o teste de desempenho Web](../test/media/web_test_dynamicparameter_renametest.png)
 
-3.  Grave o teste.
+3. Grave o teste.
 
      ![Registrar o teste de desempenho Web](../test/media/web_test_dynamicparameter_recordtest.png)
 
-4.  Copie e cole a URL do site que você está testando no navegador.
+4. Copie e cole a URL do site que você está testando no navegador.
 
      ![Colar a URL do site que está sendo testado](../test/media/web_test_dynamicparameter_recordtest2.png)
 
-5.  Procurar no aplicativo Web. Escolha o link ASP.NET, o link Voltar e no link javascript, seguido pelo link voltar.
+5. Procurar no aplicativo Web. Escolha o link ASP.NET, o link Voltar e no link javascript, seguido pelo link voltar.
 
      O gravador de testes na Web exibe as URLs de solicitação e resposta HTTP conforme você navega pelo aplicativo Web.
 
-6.  Escolha o botão **Parar** no gravador de teste.
+6. Escolha o botão **Parar** no gravador de teste.
 
      A caixa de diálogo para detectar parâmetros dinâmicos exibe uma barra de progresso que mostra o status de detecção de parâmetro nas respostas HTTP que foram recebidas.
 
-7.  O parâmetro dinâmico para CustomQueryString na página ASPQuery é detectado automaticamente. Entretanto, o parâmetro dinâmico para CustomQueryString na página JScriptQuery não é detectado.
+7. O parâmetro dinâmico para CustomQueryString na página ASPQuery é detectado automaticamente. Entretanto, o parâmetro dinâmico para CustomQueryString na página JScriptQuery não é detectado.
 
      Escolha **OK** para adicionar uma regra de extração a *Querystring.aspx*, associando-a à página ASPQuery.
 
@@ -170,15 +170,15 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
      ![CustomQueryString associado à regra de extração](../test/media/web_test_dynamicparameter_autoextractionrule2.png)
 
-8.  Salve o teste.
+8. Salve o teste.
 
 ## <a name="run-the-test-to-isolate-the-non-detected-dynamic-parameter"></a>Executar o teste para isolar o parâmetro dinâmico não detectado
 
-1.  Execute o teste.
+1. Execute o teste.
 
      ![Executar o teste de desempenho Web](../test/media/web_test_dynamicparameter_runtest.png)
 
-2.  A quarta solicitação para a página *JScriptQuery.aspx* falha. Vá para o teste de Web.
+2. A quarta solicitação para a página *JScriptQuery.aspx* falha. Vá para o teste de Web.
 
      ![Erro de parâmetro dinâmico nos resultados de teste](../test/media/web_test_dynamicparameter_runresults.png)
 
@@ -186,11 +186,11 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
      ![Parâmetro dinâmico suspeito em CustomQueryString](../test/media/web_test_dynamicparameter_runresults2.png)
 
-3.  Retorne ao Visualizador dos Resultados de Teste de Desempenho na Web e selecione a página *JScriptQuery.aspx* que falhou. Em seguida, escolha a guia de solicitação, verifique se a caixa de seleção de dados brutos de apresentação está desmarcada, role para baixo e escolha a localização rápida no CustomQueryString.
+3. Retorne ao Visualizador dos Resultados de Teste de Desempenho na Web e selecione a página *JScriptQuery.aspx* que falhou. Em seguida, escolha a guia de solicitação, verifique se a caixa de seleção de dados brutos de apresentação está desmarcada, role para baixo e escolha a localização rápida no CustomQueryString.
 
      ![Usar a localização rápida para isolar o parâmetro dinâmico](../test/media/web_test_dynamicparameter_runresultsquckfind.png)
 
-4.  Nós sabemos, ao examinar o editor de teste, que a solicitação *JScriptQuery.aspx* do CustomQueryString recebeu um valor de: `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` e que a parte dinâmica suspeita é “1v0yhyiyr0raa2w4j4pwf5zl”. Na lista suspensa localizar, remova a parte suspeita da cadeia de caracteres de pesquisa. A cadeia de caracteres deve ser "CustomQueryString=jScriptQueryString___".
+4. Nós sabemos, ao examinar o editor de teste, que a solicitação *JScriptQuery.aspx* do CustomQueryString recebeu um valor de: `jScriptQueryString___1v0yhyiyr0raa2w4j4pwf5zl` e que a parte dinâmica suspeita é “1v0yhyiyr0raa2w4j4pwf5zl”. Na lista suspensa localizar, remova a parte suspeita da cadeia de caracteres de pesquisa. A cadeia de caracteres deve ser "CustomQueryString=jScriptQueryString___".
 
      Os parâmetros dinâmicos obtêm seus valores de uma das solicitações que precedem a solicitação com o erro. Portanto, marque a caixa de seleção de pesquisa anterior e escolha Localizar próximo até você vir a solicitação anterior para *Querystring.aspx* realçado no painel de solicitação. Isso deve ocorrer depois que você escolhe localizar nas próximas três vezes.
 
@@ -205,17 +205,17 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
      Agora que nós sabemos onde o erro está ocorrendo, e o que nós precisamos para extrair o valor para o sessionId. No entanto, o valor de extração é somente texto, então precisamos isolar ainda mais o erro tentando localizar uma cadeia de caracteres onde o valor real de sessionId é exibido. Ao examinar o código, você pode ver que o sessionId é igual ao valor retornado por HiddenFieldSessionID.
 
-5.  Use a localização rápida em HiddenFieldSessionID, limpando a pesquisa anterior da caixa de seleção e selecionando a solicitação atual.
+5. Use a localização rápida em HiddenFieldSessionID, limpando a pesquisa anterior da caixa de seleção e selecionando a solicitação atual.
 
      ![Usar a localização rápida em HiddenFieldSession](../test/media/web_test_dynamicparameter_runresultsquckfindhiddensession.png)
 
      Observe que o valor retornado não seja a mesma cadeia de caracteres que a da gravação original do teste de desempenho na Web. Para esta execução de teste, o valor retornado é "5w4v3yrse4wa4axrafykqksq" e, na gravação original, o valor é "1v0yhyiyr0raa2w4j4pwf5zl". Como o valor não coincide com o da gravação original, o erro é gerado.
 
-6.  Como é necessário corrigir o parâmetro dinâmico na escrita original, escolha o resultado gravado na barra de ferramentas.
+6. Como é necessário corrigir o parâmetro dinâmico na escrita original, escolha o resultado gravado na barra de ferramentas.
 
      ![Escolher resultado gravado](../test/media/web_test_dynamicparameter_recordedresult.png)
 
-7.  Nos resultados gravados, selecione a terceira solicitação, que é a mesma solicitação de *Querystringrequest.aspx* que você isolou nos resultados da execução do teste.
+7. Nos resultados gravados, selecione a terceira solicitação, que é a mesma solicitação de *Querystringrequest.aspx* que você isolou nos resultados da execução do teste.
 
      ![Escolher a mesma solicitação nos resultados gravados](../test/media/web_test_dynamicparameter_recordedresultsselectnode.png)
 
@@ -229,7 +229,7 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
      ![Regra de extração criada](../test/media/web_test_dynamicparameter_addextractiondialog.png)
 
-8.  Escolha **Localizar Próximo**. A primeira correspondência é aquela que nós precisamos alterar, que é o parâmetro para CustomQueryString na página JScriptQuery.
+8. Escolha **Localizar Próximo**. A primeira correspondência é aquela que nós precisamos alterar, que é o parâmetro para CustomQueryString na página JScriptQuery.
 
      ![Localizar e substituir o texto do parâmetro](../test/media/web_test_dynamicparameter_addextractionfindreplace.png)
 
@@ -253,7 +253,7 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
  **R:** Sim, use o seguinte procedimento:
 
-1.  Na barra de ferramentas, escolha o botão **Promover parâmetros dinâmicos a parâmetros de teste na Web**.
+1. Na barra de ferramentas, escolha o botão **Promover parâmetros dinâmicos a parâmetros de teste na Web**.
 
      Após o processo de detecção ser concluído, se qualquer parâmetro dinâmico for detectado, a caixa de diálogo **Promover parâmetros dinâmicos a parâmetros de teste na Web** é exibida.
 
@@ -261,7 +261,7 @@ Para demonstrar um parâmetro dinâmico perceptível e um não perceptível, nó
 
      Se você escolher um parâmetro dinâmico na caixa de diálogo **Promover parâmetros dinâmicos a parâmetros de teste na Web**, duas solicitações estarão realçadas na árvore de solicitação do Editor de Testes de Desempenho Web. A primeira solicitação será aquela para a qual a regra de extração será adicionada. A segunda solicitação é onde o valor extraído será associado.
 
-2.  Marque ou desmarque a caixa de seleção ao lado dos parâmetros dinâmicos que você gostaria de correlacionar automaticamente. Por padrão, todos os parâmetros dinâmicos são verificados.
+2. Marque ou desmarque a caixa de seleção ao lado dos parâmetros dinâmicos que você gostaria de correlacionar automaticamente. Por padrão, todos os parâmetros dinâmicos são verificados.
 
 ### <a name="q-do-i-need-to-configure-visual-studio-to-detect-dynamic-parameters"></a>P: Preciso configurar o Visual Studio para detectar parâmetros dinâmicos?
 

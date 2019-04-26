@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Saiba como localizar e baixar os produtos da Microsoft incluídos na sua assinatura do Visual Studio.
 searchscope: VS Subscription
 ms.openlocfilehash: 5aec4ca179f5adc77a01538807ae3498c69964ae
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953685"
 ---
 # <a name="using-subscriber-downloads-in-visual-studio-subscriptions"></a>Usando os downloads do assinante nas assinaturas do Visuals Studio
 Como parte de seus benefícios de assinante, você tem acesso a uma ampla variedade de downloads de software.

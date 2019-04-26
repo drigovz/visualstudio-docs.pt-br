@@ -33,19 +33,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bef757222638d35c0f90d0c25e7836d49d1d1e1f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 977bd72b478d2106f687d3666aad574a63ca68ec
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969053"
 ---
 # <a name="pre-build-eventpost-build-event-command-line-dialog-box"></a>Caixa de diálogo Evento de Pré-build/Linha de Comando do Evento de Pós-build
 Você pode digitar eventos de pré ou de pós-build para a [Página de Eventos de Build, Designer de Projeto (C#)](../../ide/reference/build-events-page-project-designer-csharp.md) diretamente na caixa Editar, ou pode selecionar macros pré e pós-build em uma lista de macros disponíveis.
 
 > [!NOTE]
 > Eventos de pré-build não serão executados se o projeto estiver atualizado e nenhum build será disparado.
-
 
 ## <a name="ui-element-list"></a>Lista de elementos da interface de usuário
  **Caixa de edição de linha de comando**
@@ -54,7 +53,6 @@ Você pode digitar eventos de pré ou de pós-build para a [Página de Eventos d
 
 > [!NOTE]
 > Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo, `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
-
 
  **Macros**
 

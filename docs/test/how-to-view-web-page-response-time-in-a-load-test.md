@@ -10,12 +10,12 @@ ms.assetid: e61c49f3-3161-45b1-9220-08b5459065a2
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d835660995e92df1f6aca94ae9b9b3ccebb5d87
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ed1bd922b390d5b6e90c68b08683e1b9bdb46f32
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821180"
 ---
 # <a name="how-to-view-web-page-response-time-in-a-load-test-using-the-load-test-analyzer"></a>Como: Exibir o tempo de resposta da página da Web em um teste de carga usando o Analisador de Teste de Carga
 
@@ -25,15 +25,15 @@ O tempo necessário para cada página da Web carregar é conhecido como *tempo d
 
 Se você executar o teste de desempenho na Web sob estresse em um teste de carga, poderá analisar as seguintes informações para cada página:
 
--   O tempo médio de resposta da página.
+- O tempo médio de resposta da página.
 
--   A porcentagem de iterações de teste que correspondem à meta de tempo de resposta para a página.
+- A porcentagem de iterações de teste que correspondem à meta de tempo de resposta para a página.
 
--   Você pode analisar os tempos de resposta da página da Web usando a exibição Tabelas ou a exibição Grafos no **Analisador de Teste de Carga**:
+- Você pode analisar os tempos de resposta da página da Web usando a exibição Tabelas ou a exibição Grafos no **Analisador de Teste de Carga**:
 
--   Analisando o tempo de resposta da página da Web na exibição de tabelas
+- Analisando o tempo de resposta da página da Web na exibição de tabelas
 
--   Analisando o tempo de resposta da página da Web na exibição de grafos
+- Analisando o tempo de resposta da página da Web na exibição de grafos
 
 ## <a name="view-response-time-data-in-a-table"></a>Exibir dados de tempo de resposta em uma tabela
 

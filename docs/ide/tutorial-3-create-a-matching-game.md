@@ -8,26 +8,26 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 799f5bfaad3433bebeca54367c91fefc34e05a21
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 151b9be68b82f2b9fdcb20cd105890914333a2b6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928485"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821514"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>Tutorial 3: Criar um jogo da memória
 
 Neste tutorial, você cria um jogo da memória, onde o jogador deve combinar pares de ícones ocultos. Você aprenderá como:
 
--   Armazenar objetos, como ícones, em um objeto <xref:System.Collections.Generic.List%601>.
+- Armazenar objetos, como ícones, em um objeto <xref:System.Collections.Generic.List%601>.
 
--   Usar um loop `foreach` no Visual C# ou um loop `For Each` no Visual Basic para iterar pelos itens em uma lista.
+- Usar um loop `foreach` no Visual C# ou um loop `For Each` no Visual Basic para iterar pelos itens em uma lista.
 
--   Acompanhar o estado de um formulário usando variáveis de referência.
+- Acompanhar o estado de um formulário usando variáveis de referência.
 
--   Criar um manipulador de eventos para responder a eventos que você pode usar com vários objetos.
+- Criar um manipulador de eventos para responder a eventos que você pode usar com vários objetos.
 
--   Criar um temporizador que faça a contagem regressiva e dispare um evento logo depois que ele for iniciado.
+- Criar um temporizador que faça a contagem regressiva e dispare um evento logo depois que ele for iniciado.
 
 Quando terminar este tutorial, seu programa se parecerá com a imagem a seguir:
 

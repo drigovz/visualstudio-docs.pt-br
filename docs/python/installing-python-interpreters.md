@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 8e7648496e85b35d4f97fc9c85dc0bce6d17000e
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957400"
 ---
 # <a name="install-python-interpreters"></a>Instalar interpretadores do Python
 
@@ -63,7 +63,7 @@ Esse processo garante que as entradas do Registro que identificam o local do int
 ## <a name="see-also"></a>Consulte também
 
 - [Gerenciar ambientes do Python](managing-python-environments-in-visual-studio.md)
-- [Selecionar um interpretador para um projeto](selecting-a-python-environment-for-a-project.md)
+- [Selecionar um intérprete para um projeto](selecting-a-python-environment-for-a-project.md)
 - [Usar requirements.txt para dependências](managing-required-packages-with-requirements-txt.md)
 - [Caminhos de pesquisa](search-paths.md)
-- [Referência da janela de ambientes do Python](python-environments-window-tab-reference.md)
+- [Referência à janela Ambientes do Python](python-environments-window-tab-reference.md)

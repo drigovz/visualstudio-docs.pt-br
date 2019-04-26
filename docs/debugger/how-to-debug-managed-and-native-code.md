@@ -16,11 +16,11 @@ ms.workload:
 - dotnet
 - cplusplus
 ms.openlocfilehash: d1fefda9d8d639bf8d360bbd6b869b75b7dae903
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856496"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847941"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>Tutorial: Depurar o C# e o C++ na mesma sessão de depuração
 
@@ -41,7 +41,7 @@ Neste tutorial, você irá:
 ## <a name="prerequisites"></a>Pré-requisitos
 
 O Visual Studio precisa estar instalado, com as cargas de trabalho a seguir:
-- **Desenvolvimento de área de trabalho com o C++**
+- **Desenvolvimento para desktop com C++**
 - **Desenvolvimento para desktop com .NET** ou **Desenvolvimento multiplataforma com .NET Core**, dependendo de qual tipo de aplicativo você deseja criar.
 
 Se você não tiver o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/) para instalá-lo gratuitamente.
@@ -106,7 +106,7 @@ Se o Visual Studio estiver instalado, mas as cargas de trabalho necessárias nã
 
 1. Selecione **Arquivo** > **Salvar Tudo** ou pressione **Ctrl**+**Shift**+**S** para salvar os arquivos.
 
-**Para configurar e criar o projeto de DLL:**
+**Para configurar e compilar o projeto de DLL:**
 
 1. Na barra de ferramentas do Visual Studio, selecione a configuração **Depurar** e a plataforma **x86** ou **x64**. Se o aplicativo de chamada será o .NET Core, que sempre é executado no modo de 64 bits, selecione **x64** como a plataforma.
 

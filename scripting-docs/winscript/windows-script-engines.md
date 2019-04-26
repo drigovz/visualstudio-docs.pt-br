@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 3434e9baaeb483e60087aec1b8536108c8af4471
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1acbc364e9ee2a5a4911564eb6d2c7d4c34de458
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157757"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415992"
 ---
 # <a name="windows-script-engines"></a>Mecanismos de script do Windows
 Para implementar um mecanismo do Microsoft Windows Script, crie um objeto OLE COM que dá suporte às interfaces a seguir.  
@@ -31,7 +31,7 @@ Para implementar um mecanismo do Microsoft Windows Script, crie um objeto OLE CO
 |IPersist*|Fornece suporte a persistência. A implementação de pelo menos uma das interfaces a seguir é necessária se [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) não está implementado.<br /><br /> IPersistStorage: Dá suporte ao atributo DATA={url} na marca OBJECT.<br /><br /> IPersistStreamInit: Dá suporte para o mesmo que `IPersistStorage`, bem como o atributo DATA="string-encoded byte stream" na marca OBJECT.<br /><br /> IPersistPropertyBag: Dá suporte ao atributo PARAM= na marca OBJECT.|  
   
 > [!NOTE]
->  É possível que o mecanismo de script nunca seja chamado para salvar ou restaurar um estado de script por meio de `IPersist*`. Em vez disso, [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) é usado chamando [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) para criar um script em branco, em seguida, miniscripts são adicionados e conectados aos eventos com [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) e o código geral é adicionado com [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). No entanto, um mecanismo de script deve implementar totalmente pelo menos uma interface `IPersist*` (preferencialmente `IPersistStreamInit`), pois outros aplicativos de host podem tentar utilizá-las.  
+> É possível que o mecanismo de script nunca seja chamado para salvar ou restaurar um estado de script por meio de `IPersist*`. Em vez disso, [IActiveScriptParse](../winscript/reference/iactivescriptparse.md) é usado chamando [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) para criar um script em branco, em seguida, miniscripts são adicionados e conectados aos eventos com [IActiveScriptParse::AddScriptlet](../winscript/reference/iactivescriptparse-addscriptlet.md) e o código geral é adicionado com [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md). No entanto, um mecanismo de script deve implementar totalmente pelo menos uma interface `IPersist*` (preferencialmente `IPersistStreamInit`), pois outros aplicativos de host podem tentar utilizá-las.  
   
  As seções a seguir descrevem como implementar um mecanismo do Windows Script em mais detalhes.  
   

@@ -8,30 +8,30 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ad05083fa8cb1310e9be0b0dabb8333cb840a466
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 46ce6f92acb7ed6e92af07729a14720d3a8421a8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821801"
 ---
 # <a name="tutorial-1-create-a-picture-viewer"></a>Tutorial 1: Criar um visualizador de imagens
 
 Neste tutorial, você cria um programa que carrega uma imagem de um arquivo e a exibe em uma janela. Você aprende a usar o **Designer de Formulários do Windows** para arrastar controles como botões e caixas de imagem no formulário, definir as respectivas propriedades e usar contêineres para redimensionar suavemente o formulário. Você também pode começar a escrever código. Você aprenderá como:
 
--   Crie um novo projeto.
+- Crie um novo projeto.
 
--   Testar (depurar) um aplicativo.
+- Testar (depurar) um aplicativo.
 
--   Adicionar controles básicos como caixas de seleção e botões para um formulário.
+- Adicionar controles básicos como caixas de seleção e botões para um formulário.
 
--   Posicionar controles em um formulário usando layouts.
+- Posicionar controles em um formulário usando layouts.
 
--   Adicionar as caixas de diálogo **Abrir Arquivo** e **Cor** a um formulário.
+- Adicionar as caixas de diálogo **Abrir Arquivo** e **Cor** a um formulário.
 
--   Escrever código usando o IntelliSense e snippets de código.
+- Escrever código usando o IntelliSense e snippets de código.
 
--   Escrever métodos de manipulador de eventos.
+- Escrever métodos de manipulador de eventos.
 
 Quando você terminar, seu programa será como a imagem a seguir:
 

@@ -7,12 +7,12 @@ ms.date: 03/24/2019
 ms.topic: conceptual
 description: Saiba como exibir o número máximo de assinaturas atribuídas no portal de administração
 searchscope: VS Subscription
-ms.openlocfilehash: cdeddc7bbd62c88096e61753351f3609197d3c72
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: c263c610b140d3662cb17ba9f2c3d3f1a1907ab7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58572748"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965385"
 ---
 # <a name="using-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>Como usar o recurso de Uso Máximo para controlar o número de assinaturas atribuídas
 
@@ -32,7 +32,7 @@ Para ver o número máximo de assinaturas atribuídas para qualquer nível de as
     > [!div class="mx-imgBorder"]
     > ![Resumo de Uso Máximo](_img/maximum-usage/maximum-usage-summary.png)
 
-4.  Para ver o número máximo de assinaturas atribuídas durante a vida útil do contrato, clique na guia **Termo completo**.
+4. Para ver o número máximo de assinaturas atribuídas durante a vida útil do contrato, clique na guia **Termo completo**.
 
 ## <a name="viewing-assignment-history"></a>Como exibir o histórico de atribuições
 

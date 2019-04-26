@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - aspnet
 ms.openlocfilehash: e78aa662d8bd90f3b2d11766d3a43f42dc1bbccf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62994971"
 ---
 # <a name="profile-aspnet-load-tests"></a>Testes de carga do ASP.NET de perfil
 Você pode coletar dados de criação de perfil de testes da Web [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] automatizados executados em projetos de sites da Web ASP.NET. Você pode coletar dados de amostragem e interação entre camadas. Para mais informações, consulte os seguintes tópicos:

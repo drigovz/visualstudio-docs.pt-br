@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ff36bf74249ec5266218060eedb879e4d796625c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 04ef05c5823c6a07fb6f93d82ddae55830e0e3ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778561"
 ---
 # <a name="options-text-editor-javascript-intellisense"></a>Opções, Editor de Texto, JavaScript, IntelliSense
 Use a página **IntelliSense** da caixa de diálogo **Opções** para modificar as configurações que afetam o comportamento do IntelliSense para JavaScript. É possível acessar a página **IntelliSense** escolhendo **Ferramentas** > **Opções** na barra de menus e, em seguida, expandindo **Editor de texto** > **JavaScript** > **IntelliSense.**
@@ -59,7 +59,6 @@ Essa opção especifica a ordem na qual os arquivos são carregados no contexto 
 > [!CAUTION]
 > Se um objeto for definido incondicionalmente em duas ou mais referências implícitas, a última referência nessa lista será usada para definir o objeto.
 
-
 **Adicionar uma referência ao grupo**
 
 Essa opção fornece uma maneira de adicionar arquivos .js extras do IntelliSense navegando até os arquivos apropriados.
@@ -70,8 +69,6 @@ Quando essa caixa de seleção for marcada e se você tiver um arquivo JavaScrip
 
 > [!NOTE]
 > Em projetos Web, os arquivos remotos referenciados no seu projeto são baixados por padrão.
-
-
 
 ## <a name="see-also"></a>Consulte também
 
