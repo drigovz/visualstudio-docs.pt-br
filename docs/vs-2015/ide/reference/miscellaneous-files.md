@@ -21,12 +21,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aadb6b0212f760ab16efd677e02e1d922ae52e12
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 266db8199160f58c62b7587f55029cff2bb26c29
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59658482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441696"
 ---
 # <a name="miscellaneous-files"></a>Arquivos diversos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Talvez você queira usar os editores [!INCLUDE[vsprvs](../../includes/vsprvs-md.
  A pasta Arquivos Diversos representa os arquivos como links. Embora essa pasta não seja parte de uma solução, quando você abre uma solução, alguns ou todos os arquivos diversos que estavam abertos quando a solução foi fechada pela última vez são reabertos, dependendo das configurações da pasta.  
   
 > [!NOTE]
->  Alguns dos arquivos que não aparecem na pasta Arquivos Diversos são arquivos que você não pode modificar dentro do IDE, como arquivos .zip e arquivos .doc. O IDE não rastreará arquivos que podem ser modificados apenas por um editor externo.  
+> Alguns dos arquivos que não aparecem na pasta Arquivos Diversos são arquivos que você não pode modificar dentro do IDE, como arquivos .zip e arquivos .doc. O IDE não rastreará arquivos que podem ser modificados apenas por um editor externo.  
   
 ## <a name="commands-available-in-the-ide"></a>Comandos disponíveis no IDE  
  Os menus, barras de ferramentas e os comandos que eles contêm mudam com base no formato do arquivo aberto. Quando você abre um arquivo de texto, por exemplo, a barra de ferramentas Editor de Texto aparece e seus comandos estão disponíveis. Se você abrir um arquivo de Esquema XML, a barra de ferramentas Esquema XML será exibida. Ao editar o Esquema XML, os comandos da barra de ferramentas Editor de Texto (ou a barra de ferramentas em si) estão indisponíveis. O Esquema XML é a janela ativa e como tal, tem contexto de seleção atual. Quando você muda entre um arquivo de projeto e um arquivo diverso, todos os comandos relacionados ao projeto desaparecem e somente aqueles que estão diretamente relacionados aos arquivos diversos são exibidos.  

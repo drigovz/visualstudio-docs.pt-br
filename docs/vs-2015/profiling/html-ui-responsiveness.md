@@ -20,12 +20,12 @@ caps.latest.revision: 52
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bf70ab2477d135486f09b60ef143bd2569c87298
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 91e2c0f91d3234dd9f96a29cc914ae9e4d3847b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438382"
 ---
 # <a name="html-ui-responsiveness"></a>Capacidade de Resposta de interface do usuário HTML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ Este tópico descreve como isolar problemas de desempenho em seus aplicativos us
 4. Opcionalmente, adicione marcas de usuário ao seu código usando [Marcar código para análise](#ProfileMark).  
   
     > [!TIP]
-    >  As marcas de usuário podem ajudá-lo a identificar o problema de capacidade de resposta durante a exibição de dados do criador de perfil visual. Por exemplo, você pode incluir uma marca de usuário no início e no fim de uma seção de código que está causando um problema de capacidade de resposta.  
+    > As marcas de usuário podem ajudá-lo a identificar o problema de capacidade de resposta durante a exibição de dados do criador de perfil visual. Por exemplo, você pode incluir uma marca de usuário no início e no fim de uma seção de código que está causando um problema de capacidade de resposta.  
   
 5. Execute o Criador de Perfil de Capacidade de Resposta da Interface de Usuário seguindo as instruções na seção anterior.  
   
@@ -127,7 +127,7 @@ Este tópico descreve como isolar problemas de desempenho em seus aplicativos us
     - Outros eventos especificados em [Referência do criador de perfil](#ProfilerEvents).  
   
     > [!TIP]
-    >  A maioria das informações úteis do criador de perfil aparece no gráfico de detalhes da linha do tempo.  
+    > A maioria das informações úteis do criador de perfil aparece no gráfico de detalhes da linha do tempo.  
   
 12. Com uma área selecionada no gráfico de utilização da CPU ou de taxa de transferência visual (FPS), escolha **Ampliar** (o botão ou o menu de contexto) para obter informações mais detalhadas. A linha do tempo do gráfico muda para mostrar somente o período selecionado.  
   
@@ -153,7 +153,7 @@ if (performance && performance.mark) {
  A descrição do evento aparece como uma dica de ferramenta quando você posiciona o ponteiro do mouse sobre a marca de usuário. Você pode adicionar quantas marcas de usuário forem necessárias.  
   
 > [!NOTE]
->  `console.timeStamp`, um comando do Chrome, também é mostrado como uma marca de usuário.  
+> `console.timeStamp`, um comando do Chrome, também é mostrado como uma marca de usuário.  
   
  A ilustração a seguir mostra a régua de diagnóstico com uma única marca de usuário e sua dica de ferramenta.  
   
@@ -198,7 +198,7 @@ if (performance.mark && performance.measure) {
  O gráfico da utilização da CPU mostra a quantidade de tempo gasto em todos os threads de aplicativo, combinando valores de utilização da CPU para uma ou mais CPUs em um único valor de porcentagem. O valor da utilização da CPU poderá exceder 100 por cento quando mais de uma CPU estiver sendo usada.  
   
 > [!NOTE]
->  A utilização da CPU não aparece no gráfico.  
+> A utilização da CPU não aparece no gráfico.  
   
  Este exemplo mostra a aparência do gráfico da utilização da CPU:  
   
@@ -243,7 +243,7 @@ if (performance.mark && performance.measure) {
  O gráfico mostra o trabalho de threads de interface de usuário e trabalha em threads de plano de fundo que podem contribuir para a lentidão das atualizações visuais. O gráfico não mostra o trabalho JavaScript JIT, o trabalho de GPU assíncrono, o trabalho executado fora do processo do host (como o trabalho RuntimeBroker.exe e dwm.exe) ou o trabalho para as áreas do Windows Runtime que não foram instrumentadas para criação de perfil (como o E/S de disco).  
   
 > [!TIP]
->  Quando ocorre um evento em um thread de plano de fundo, a ID do thread aparece entre colchetes ao lado do nome do evento.  
+> Quando ocorre um evento em um thread de plano de fundo, a ID do thread aparece entre colchetes ao lado do nome do evento.  
   
  Este exemplo mostra a aparência do gráfico de detalhes da linha do tempo quando o ouvinte de eventos para um evento de clique DOM é selecionado:  
   
@@ -274,7 +274,7 @@ if (performance.mark && performance.measure) {
     - Para timers, ouvintes de eventos (eventos DOM), eventos de layout e retornos de chamada de quadro de animação, um resumo codificado por cores do evento selecionado e todos os seus filhos aparecem na seção **Resumo do tempo inclusivo** (o anel codificado por cor). Cada fatia codificada por cor da imagem representa um tipo de evento. As dicas de ferramenta fornecem o nome do tipo de evento.  
   
     > [!TIP]
-    >  O gráfico de detalhes da linha do tempo e o **Resumo de tempo inclusivo** podem ajudá-lo a identificar áreas para otimização. Se uma dessas exibições mostrar grandes números de pequenas tarefas, o evento poderá ser um candidato à otimização. Por exemplo, um aplicativo pode estar atualizando elementos DOM com frequência, resultando em um grande número de eventos de layout e análise de HTML. Você poderá otimizar o desempenho processando esse trabalho em lotes.  
+    > O gráfico de detalhes da linha do tempo e o **Resumo de tempo inclusivo** podem ajudá-lo a identificar áreas para otimização. Se uma dessas exibições mostrar grandes números de pequenas tarefas, o evento poderá ser um candidato à otimização. Por exemplo, um aplicativo pode estar atualizando elementos DOM com frequência, resultando em um grande número de eventos de layout e análise de HTML. Você poderá otimizar o desempenho processando esse trabalho em lotes.  
   
 ### <a name="FilterTimelineDetails"></a> Filtrar detalhes da linha do tempo  
  Você pode filtrar a exibição nos detalhes da linha do tempo para um evento particular selecionando **Filtrar para evento** no menu de contexto de um evento específico. Quando você escolhe essa opção, a linha do tempo e a exibição de grade têm como escopo o evento selecionado A seleção no gráfico de uso da CPU também tem como escopo o evento especial.  
@@ -293,7 +293,7 @@ if (performance.mark && performance.measure) {
  Para filtrar a atividade do thread da interface do usuário, desmarque a opção **Atividade da interface do usuário**.  
   
 > [!TIP]
->  Desmarque esta opção e marque a opção Tráfego de rede para investigar problemas relacionados à latência de rede.  
+> Desmarque esta opção e marque a opção Tráfego de rede para investigar problemas relacionados à latência de rede.  
   
  Para filtrar as medidas do usuário, desmarque a opção **Medidas do usuário**. As medidas do usuário são eventos de nível superior, sem filhos.  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 40e2e4f3882a6bd3b3f7ce9b70aec45f244377d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: f0967f50c9dce325ff1595fec9d50138aa0a8d74
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438133"
 ---
 # <a name="walkthrough-creating-a-multiple-computer-build-environment"></a>Instruções passo a passo: criando um ambiente de build de vários computadores
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ Você pode criar um ambiente de build na sua organização instalando o Visual S
   Observe que o nome da pasta Arquivos de Programa depende do sistema operacional que está instalado. Em um computador x86, o nome é \Program Files\\; em um computador x64, o nome é \Program Files (x86)\\. Independentemente da arquitetura do sistema, este passo a passo refere-se à pasta Arquivos de Programa como %ProgramFiles%.  
   
 > [!NOTE]
->  No computador de build, todos os arquivos relevantes devem estar na mesma unidade; no entanto, a letra da unidade pode ser diferente da letra da unidade em que o Visual Studio está instalado no computador host. Em qualquer caso, você deve considerar o local dos arquivos ao criar entradas de Registro conforme descrito mais adiante neste documento.  
+> No computador de build, todos os arquivos relevantes devem estar na mesma unidade; no entanto, a letra da unidade pode ser diferente da letra da unidade em que o Visual Studio está instalado no computador host. Em qualquer caso, você deve considerar o local dos arquivos ao criar entradas de Registro conforme descrito mais adiante neste documento.  
   
 #### <a name="to-copy-the-windows-sdk-files-to-the-build-computer"></a>Para copiar os arquivos do SDK do Windows para o computador de build  
   
@@ -223,7 +223,7 @@ Você pode criar um ambiente de build na sua organização instalando o Visual S
 1. Identifique a pasta pai para entradas do Registro. Todas as entradas de Registro são criadas sob a mesma chave pai. Em um computador x86, a chave pai é HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\. Em um computador x64, a chave pai é HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\. Independentemente da arquitetura do sistema, este passo a passo refere-se à chave pai como %RegistryRoot%.  
   
    > [!NOTE]
-   >  Se a arquitetura do computador host for diferente do computador de build, certifique-se de usar a chave pai apropriado em cada computador. Isso é especialmente importante se você estiver automatizando o processo de exportação.  
+   > Se a arquitetura do computador host for diferente do computador de build, certifique-se de usar a chave pai apropriado em cada computador. Isso é especialmente importante se você estiver automatizando o processo de exportação.  
    >   
    >  Além disso, se você estiver usando uma letra da unidade diferente no computador de build daquela usada no computador host, altere os valores das entradas do Registro de acordo.  
   
@@ -334,7 +334,7 @@ Você pode criar um ambiente de build na sua organização instalando o Visual S
      **gacutil -i \<file>**  
   
     > [!NOTE]
-    >  Uma reinicialização pode ser necessária para um assembly ser instalado totalmente no GAC.  
+    > Uma reinicialização pode ser necessária para um assembly ser instalado totalmente no GAC.  
   
 ## <a name="BuildingProjects"></a> Compilando projetos  
  Você pode usar o Team Foundation Build para compilar projetos e soluções [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou você pode compilá-los na linha de comando. Quando você usa o Team Foundation Build para compilar projetos, ele invoca o executável do MSBuild que corresponde à arquitetura do sistema.  Na linha de comando, você pode usar o MSBuild de 32 bits ou 64 bits e escolher a arquitetura do MSBuild configurando a variável de ambiente PATH ou invocando diretamente o executável do MSBuild específico da arquitetura.  
@@ -346,17 +346,17 @@ Você pode criar um ambiente de build na sua organização instalando o Visual S
  Para obter mais informações sobre como usar o MSBuild na linha de comando, consulte [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  Para compilar projetos [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], use o Conjunto de Ferramentas da Plataforma "v110". Se você não quiser editar os arquivos de projeto [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], poderá definir o conjunto de ferramentas de plataforma usando este argumento de linha de comando:  
+> Para compilar projetos [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], use o Conjunto de Ferramentas da Plataforma "v110". Se você não quiser editar os arquivos de projeto [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], poderá definir o conjunto de ferramentas de plataforma usando este argumento de linha de comando:  
 >   
->  **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
+> **msbuild** *solution.sln* **/p:PlatformToolset=v110**  
   
 ## <a name="CreatingForSourceControl"></a> Criando o ambiente de build para que se possa verificá-lo no controle do código-fonte  
  Você pode criar um ambiente de build que possa ser implantado em vários computadores e não exija arquivos de GAC nem a modificação de configurações do Registro. As etapas a seguir são apenas uma maneira de fazer isso. Adapte estas etapas às características exclusivas do seu ambiente de build.  
   
 > [!NOTE]
->  Você deve desabilitar a compilação incremental para que tracker.exe não gere um erro durante um build. Para desabilitar a compilação incremental, defina este parâmetro de build:  
+> Você deve desabilitar a compilação incremental para que tracker.exe não gere um erro durante um build. Para desabilitar a compilação incremental, defina este parâmetro de build:  
 >   
->  **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
+> **msbuild** *solution.sln* **/p:TrackFileAccess=false**  
   
 #### <a name="to-create-a-build-environment-that-can-be-checked-into-source-control"></a>Para criar um ambiente de compilação que se possa verificar no controle do código-fonte  
   
