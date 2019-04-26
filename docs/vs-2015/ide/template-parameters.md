@@ -14,12 +14,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dc5f69fee15d3dc67b31c54f0b397fbf039aa52a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ed7dd478f63cf4d5dba38f6d721d4b728e1856b4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077336"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419627"
 ---
 # <a name="template-parameters"></a>Parâmetros de modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Usando parâmetros em seus modelos, você pode substituir os valores das princip
  A tabela a seguir lista os parâmetros de modelo reservados que podem ser usados por qualquer modelo.  
   
 > [!NOTE]
->  Parâmetros de modelo diferenciam maiúsculas de minúsculas.  
+> Parâmetros de modelo diferenciam maiúsculas de minúsculas.  
   
 |Parâmetro|Descrição|  
 |---------------|-----------------|  

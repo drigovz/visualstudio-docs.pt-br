@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 83c2de11e31dced3be48e390d8bd5b21d57d2092
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668484"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60090753"
 ---
 # <a name="item-definitions"></a>Definições de itens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,15 +25,15 @@ O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 permite a declara
   
  O elemento *ItemDefinitionGroup* aparece logo após o elemento [Project](../msbuild/project-element-msbuild.md) do arquivo de projeto. Definições de item fornecem a seguinte funcionalidade:  
   
--   Você pode definir metadados globais padrão para itens fora de um destino. Ou seja, os mesmos metadados se aplicam a todos os itens do tipo especificado.  
+- Você pode definir metadados globais padrão para itens fora de um destino. Ou seja, os mesmos metadados se aplicam a todos os itens do tipo especificado.  
   
--   Tipos de item podem ter várias definições. Quando as especificações de metadados adicionais são adicionadas ao tipo, a última especificação tem precedência. \(Os metadados seguem a mesma ordem de importação das propriedades a seguir.\)  
+- Tipos de item podem ter várias definições. Quando as especificações de metadados adicionais são adicionadas ao tipo, a última especificação tem precedência. \(Os metadados seguem a mesma ordem de importação das propriedades a seguir.\)  
   
--   Os metadados podem ser aditivos. Por exemplo, valores de CDefines são acumulados condicionalmente, dependendo das propriedades sendo definidas. Por exemplo, `MT;STD_CALL;DEBUG;UNICODE`.  
+- Os metadados podem ser aditivos. Por exemplo, valores de CDefines são acumulados condicionalmente, dependendo das propriedades sendo definidas. Por exemplo, `MT;STD_CALL;DEBUG;UNICODE`.  
   
--   Os metadados podem ser removidos.  
+- Os metadados podem ser removidos.  
   
--   É possível usar Conditions para controlar a inclusão de metadados.  
+- É possível usar Conditions para controlar a inclusão de metadados.  
   
 ## <a name="item-metadata-default-values"></a>Valores padrão de metadados do item  
  Metadados do item que são definido em um ItemDefinitionGroup são apenas uma declaração de metadados padrão. Os metadados não se aplicam a menos que você defina um Item que use um ItemGroup para conter os valores de metadados.  
@@ -66,21 +66,21 @@ O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 permite a declara
 ## <a name="value-sources"></a>Fontes de valores  
  Os valores dos metadados definidos em um ItemDefinitionGroup podem vir de várias fontes diferentes, da seguinte maneira:  
   
--   Propriedade PropertyGroup  
+- Propriedade PropertyGroup  
   
--   Item de um ItemDefinitionGroup  
+- Item de um ItemDefinitionGroup  
   
--   Transformação de item em um Item ItemDefinitionGroup  
+- Transformação de item em um Item ItemDefinitionGroup  
   
--   Variável de ambiente  
+- Variável de ambiente  
   
--   Propriedade global \(da linha de comando MSBuild.exe\)  
+- Propriedade global \(da linha de comando MSBuild.exe\)  
   
--   Propriedade reservada  
+- Propriedade reservada  
   
--   Metadados conhecidos em um Item de um ItemDefinitionGroup  
+- Metadados conhecidos em um Item de um ItemDefinitionGroup  
   
--   Seção CDATA \<\!\[CDATA\[qualquer conteúdo presente aqui não será analisado\]\]\>  
+- Seção CDATA \<\!\[CDATA\[qualquer conteúdo presente aqui não será analisado\]\]\>  
   
 > [!NOTE]
 >  Metadados de item de um ItemGroup não são úteis em uma declaração de metadados de ItemDefinitionGroup porque elementos de ItemDefinitionGroup são processados antes de elementos de ItemGroup.  

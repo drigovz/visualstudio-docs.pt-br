@@ -13,12 +13,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61b20ea728cd0b714ba61dfa7aef1893a91cfaca
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 894378d6648139b7ec2b587eb0066a5725af7a71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443728"
 ---
 # <a name="manage-channels"></a>Gerenciar canais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Em **Exibição de Threads** na Visualização Simultânea, você pode organizar
  Escolha este controle quando quiser ocultar canais. Por exemplo, se um thread tiver 100 por cento da sincronização da vida útil de seu processo gerenciado, você poderá ocultá-lo ao analisar outros threads.  
   
 > [!NOTE]
->  Ocultar um thread também o remove do horário de cálculo, que é mostrado na legenda ativa e nos relatórios do perfil.  
+> Ocultar um thread também o remove do horário de cálculo, que é mostrado na legenda ativa e nos relatórios do perfil.  
   
 ## <a name="show-all-channels"></a>Mostrar todos os canais  
  Esse controle é ativado quando um ou mais canais estão ocultos. Se você clicar nele, todos os elementos ocultos serão mostrados e retornados aos cálculos de tempo.  

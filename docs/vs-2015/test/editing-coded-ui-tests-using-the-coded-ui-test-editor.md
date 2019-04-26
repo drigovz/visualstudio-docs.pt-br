@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e25ce519510f9b003784806bf6055b19c11ba285
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 21acd0970415db23da330ece46131cde72cd706a
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54793757"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60118000"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editando testes de interface de usuário codificada usando o editor de teste de interface de usuário codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,28 +26,28 @@ o Editor de testes de interface de usuário codificada permite modificar facilme
   
  **Requisitos**  
   
--   Visual Studio Enterprise  
+- Visual Studio Enterprise  
   
 ## <a name="why-should-i-do-this"></a>Por que devo fazer isso?  
  Usar o Editor de Teste de IU Codificado é mais rápido e eficiente do que editar o código utilizando métodos de testes de IU codificados por meio do Editor de Códigos. Com o Editor de Teste de IU Codificado, é possível usar a barra de ferramentas e os menus de atalho para localizar e modificar rapidamente valores de propriedade associados a ações e controles de interface do usuário. Por exemplo, é possível utilizar a barra de ferramentas do Editor de Teste de IU Codificado para executar os seguintes comandos:  
   
  ![UI Test Edito](../test/media/uitesteditor.png "UITestEditor")  
   
-1.  [Localizar](../ide/finding-and-replacing-text.md) ajuda a localizar ações e controles de interface do usuário.  
+1. [Localizar](../ide/finding-and-replacing-text.md) ajuda a localizar ações e controles de interface do usuário.  
   
-2.  [Excluir](#CodedUITestEditor_DeleteUIActions) remove ações de interface do usuário indesejadas.  
+2. [Excluir](#CodedUITestEditor_DeleteUIActions) remove ações de interface do usuário indesejadas.  
   
-3.  **Renomear** altera os nomes de métodos de teste e controles.  
+3. **Renomear** altera os nomes de métodos de teste e controles.  
   
-4.  **Propriedades** abre a janela Propriedades do item selecionado.  
+4. **Propriedades** abre a janela Propriedades do item selecionado.  
   
-5.  [Dividir em um novo método](#CodedUITestEditor_SplitMethods) permite modularizar as ações de interface do usuário.  
+5. [Dividir em um novo método](#CodedUITestEditor_SplitMethods) permite modularizar as ações de interface do usuário.  
   
-6.  [Mover o Código](#CodedUITestEditor_MoveMethods) adiciona o código personalizado aos métodos de teste.  
+6. [Mover o Código](#CodedUITestEditor_MoveMethods) adiciona o código personalizado aos métodos de teste.  
   
-7.  [Inserir Atraso Antes](#CodedUITestEditor_InsertDelay) adiciona uma pausa antes de uma ação de interface do usuário, especificada em milissegundos.  
+7. [Inserir Atraso Antes](#CodedUITestEditor_InsertDelay) adiciona uma pausa antes de uma ação de interface do usuário, especificada em milissegundos.  
   
-8.  [Localizar o Controle de interface do usuário](#CodedUITestEditor_LocateUIControl) identifica o local do controle na interface do usuário do aplicativo em teste.  
+8. [Localizar o Controle de interface do usuário](#CodedUITestEditor_LocateUIControl) identifica o local do controle na interface do usuário do aplicativo em teste.  
   
 9. [Localizar Todos](#CodedUITestEditor_LocateDecendants) ajuda a verificar a propriedade de controle e as mudanças significativas nos controles do aplicativo.  
   
@@ -67,7 +67,7 @@ o Editor de testes de interface de usuário codificada permite modificar facilme
  *Não vejo* o Editor de Teste de IU Codificado.  
  Você pode estar usando uma versão do Visual Studio Enterprise anterior a 2012. O Editor de Teste de IU Codificado também estava disponível no Feature Pack 2 do Visual Studio 2010, com uma assinatura do MSDN. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Feature Pack 2 do Microsoft Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=204119).  
   
-##  <a name="CodedUITestEditor_EditActionAndControlProperties"></a> Modificar propriedades de ação de interface do usuário e as propriedades de controle correspondentes  
+## <a name="CodedUITestEditor_EditActionAndControlProperties"></a> Modificar propriedades de ação de interface do usuário e as propriedades de controle correspondentes  
  Por meio do Editor de Teste de IU Codificado, é possível localizar e exibir rapidamente todas as ações de interface do usuário de métodos de teste. Ao selecionar a ação de interface do usuário no editor, o controle correspondente será realçado automaticamente. Do mesmo modo, ao selecionar um controle, as ações de interface do usuário correspondentes serão realçadas. Selecionar uma ação ou controle de interface do usuário facilita o uso da janela Propriedades para modificar as propriedades correspondentes.  
   
  ![Propriedades de ação de interface do usuário](../test/media/codeduiedituiaction.png "CodedUIEditUIAction")  
@@ -89,24 +89,24 @@ Editar propriedades de controle
  *O que mais eu deveria saber?*  
  **Dicas**  
   
--   ![Dica](../test/media/tip.png "Dica") Se a janela Propriedades não for exibida, pressione e segure a tecla **Alt** ao mesmo tempo em que pressiona **Enter** ou pressione a tecla **F4**.  
+- ![Dica](../test/media/tip.png "Dica") Se a janela Propriedades não for exibida, pressione e segure a tecla **Alt** ao mesmo tempo em que pressiona **Enter** ou pressione a tecla **F4**.  
   
--   ![Dica](../test/media/tip.png "Dica") Para desfazer as alterações de propriedade, selecione **Desfazer** no menu **Editar** ou pressione Ctrl+Z.  
+- ![Dica](../test/media/tip.png "Dica") Para desfazer as alterações de propriedade, selecione **Desfazer** no menu **Editar** ou pressione Ctrl+Z.  
   
--   ![Dica](../test/media/tip.png "Dica") É possível usar o botão **Localizar** na barra de ferramentas do Editor de Teste de IU Codificado para abrir a ferramenta Localizar e Substituir no Visual Studio. Em seguida, será possível usar o controle Localizar para localizar uma ação de interface do usuário no Editor de Teste de IU Codificado. Por exemplo, você pode tentar localizar “Clique no botão ‘Logon’”. Isso pode ser útil em testes grandes. Não é possível utilizar a funcionalidade de substituição na ferramenta Localizar e Substituir no Editor de Teste de IU Codificado. Para obter mais informações, consulte o controle Localizar em [Localizando e Substituindo Texto](../ide/finding-and-replacing-text.md).  
+- ![Dica](../test/media/tip.png "Dica") É possível usar o botão **Localizar** na barra de ferramentas do Editor de Teste de IU Codificado para abrir a ferramenta Localizar e Substituir no Visual Studio. Em seguida, será possível usar o controle Localizar para localizar uma ação de interface do usuário no Editor de Teste de IU Codificado. Por exemplo, você pode tentar localizar “Clique no botão ‘Logon’”. Isso pode ser útil em testes grandes. Não é possível utilizar a funcionalidade de substituição na ferramenta Localizar e Substituir no Editor de Teste de IU Codificado. Para obter mais informações, consulte o controle Localizar em [Localizando e Substituindo Texto](../ide/finding-and-replacing-text.md).  
   
--   ![Dica](../test/media/tip.png "Dica") Algumas vezes, pode ser difícil visualizar onde os controles estão localizados na interface do usuário do aplicativo em teste. Um dos recursos do Editor de Teste de IU Codificado é a seleção de um controle listado no mapa de controle da interface do usuário e a exibição da localização desse controle no aplicativo em teste. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Localizar um Controle de interface do usuário no aplicativo em Teste](#CodedUITestEditor_LocateUIControl) pode ser consultado mais adiante neste tópico.  
+- ![Dica](../test/media/tip.png "Dica") Algumas vezes, pode ser difícil visualizar onde os controles estão localizados na interface do usuário do aplicativo em teste. Um dos recursos do Editor de Teste de IU Codificado é a seleção de um controle listado no mapa de controle da interface do usuário e a exibição da localização desse controle no aplicativo em teste. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Localizar um Controle de interface do usuário no aplicativo em Teste](#CodedUITestEditor_LocateUIControl) pode ser consultado mais adiante neste tópico.  
   
--   ![Dica](../test/media/tip.png "Dica") Pode ser necessário expandir a caixa de controles que contém o controle a ser editado. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Localizar um controle e seus descendentes](#CodedUITestEditor_LocateDecendants) pode ser consultado mais adiante neste tópico.  
+- ![Dica](../test/media/tip.png "Dica") Pode ser necessário expandir a caixa de controles que contém o controle a ser editado. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Localizar um controle e seus descendentes](#CodedUITestEditor_LocateDecendants) pode ser consultado mais adiante neste tópico.  
   
-##  <a name="CodedUITestEditor_DeleteUIActions"></a> Excluir ações de interface do usuário indesejadas  
+## <a name="CodedUITestEditor_DeleteUIActions"></a> Excluir ações de interface do usuário indesejadas  
  É possível remover ações de interface do usuário indesejadas do teste de IU codificado facilmente.  
   
  ![Excluir a ação de interface do usuário](../test/media/codeduideleteuiaction.png "CodedUIDeleteUIAction")  
   
  No painel **Ações de interface do usuário**, expanda o método de teste que contém a ação de interface do usuário a ser excluída. Abra o menu de atalho da ação de interface do usuário e escolha **Excluir**.  
   
-##  <a name="CodedUITestEditor_SplitMethods"></a> Dividir um método de teste em dois métodos separados  
+## <a name="CodedUITestEditor_SplitMethods"></a> Dividir um método de teste em dois métodos separados  
  É possível dividir um método de teste para refinar ou modularizar as ações de interface do usuário. Por exemplo, o teste pode ter um único método de teste com ações de interface do usuário em duas caixas de controles. As ações de interface do usuário podem ser modularizadas com mais eficiência em dois métodos que correspondam a um contêiner.  
   
  ![Dividir um método de teste](../test/media/codeduitestsplitmethod1.png "CodedUITestSplitMethod1")  
@@ -134,7 +134,7 @@ Editar propriedades de controle
   
    Uma caixa de diálogo do Microsoft Visual Studio é exibida. Ela avisa que é necessário modificar os códigos que referenciam o método. Escolha **Sim**.  
   
-##  <a name="CodedUITestEditor_MoveMethods"></a> Mover um método de teste para o arquivo UIMap a fim de facilitar a personalização  
+## <a name="CodedUITestEditor_MoveMethods"></a> Mover um método de teste para o arquivo UIMap a fim de facilitar a personalização  
  Se que um dos métodos de teste no teste de IU codificado requerer um código personalizado, será necessário movê-lo para o arquivo UIMap.cs ou UIMap.vb. Caso contrário, o código será substituído sempre que o teste de IU codificado for recompilado. Se o método não for movido, o código personalizado será substituído sempre que o teste for recompilado.  
   
  No painel **Ações de interface do usuário**, selecione o método de teste a ser movido para o arquivo UIMap.cs ou UIMap.vb para facilitar a funcionalidade de código personalizado que não será substituída quando o código de teste for recompilado. Em seguida, escolha o botão **Mover Código** na barra de ferramentas do Editor de Teste de IU Codificado ou abra o menu de atalho do método de teste e escolha **Mover Código**. O método de teste é removido do arquivo UIMap.uitest e não é mais exibido no painel Ações de interface do usuário. Para editar o arquivo de teste movido, abra o arquivo UIMap.cs ou UIMap.vb no Gerenciador de Soluções.  
@@ -150,7 +150,7 @@ Editar propriedades de controle
   
 - ![Dica](../test/media/tip.png "Dica") Para desfazer a movimentação, selecione **Desfazer** no menu **Editar** ou pressione Ctrl+Z. No entanto, em seguida, será necessário remover manualmente o código do arquivo UIMap.cs ou UIMap.vb.  
   
-##  <a name="CodedUITestEditor_LocateUIControl"></a> Localizar um Controle de interface do usuário no aplicativo em teste  
+## <a name="CodedUITestEditor_LocateUIControl"></a> Localizar um Controle de interface do usuário no aplicativo em teste  
  Algumas vezes, pode ser difícil visualizar onde os controles estão localizados na interface do usuário do aplicativo em teste. Um dos recursos do Editor de Teste de IU Codificado é a seleção de um controle listado no mapa de controle da interface do usuário e a exibição da localização desse controle no aplicativo em teste. O recurso **Localizar o Controle de interface do usuário** no aplicativo em teste também pode ser usado para verificar modificações na propriedade de pesquisa de um controle.  
   
  ![Localizar o controle de interface do usuário](../test/media/codeduilocatecontrol.png "CodedUILocateControl")  
@@ -168,7 +168,7 @@ Editar propriedades de controle
   
 - ![Dica](../test/media/tip.png "dica") Como alternativa, é possível usar a opção **Localizar Tudo** para verificar se todos os controles em um contêiner estão localizados corretamente. Essa opção será descrita na próxima seção.  
   
-##  <a name="CodedUITestEditor_LocateDecendants"></a> Localizar um controle e seus descendentes  
+## <a name="CodedUITestEditor_LocateDecendants"></a> Localizar um controle e seus descendentes  
  É possível verificar se todos os controles em um contêiner estão localizados corretamente na interface do usuário do aplicativo em teste. Isso pode ser útil para verificar alterações de propriedade de pesquisa realizadas no contêiner. Além disso, se houve alterações significativas na interface do usuário do aplicativo em teste, é possível validar se os controles de propriedades de pesquisa existentes ainda estão corretos.  
   
  ![Localizar todos os controles descendentes](../test/media/codeduilocateall.png "CodedUILocateAll")  
@@ -180,9 +180,9 @@ Editar propriedades de controle
  *O que mais eu deveria saber?*  
  **Questões importantes**  
   
--   ![Ícone de cuidado](../test/media/caution.gif "cuidado") **Aviso:** Antes de localizar os controles de interface do usuário, verifique se o aplicativo associado ao teste está em execução.  
+- ![Ícone de cuidado](../test/media/caution.gif "cuidado") **Aviso:** Antes de localizar os controles de interface do usuário, verifique se o aplicativo associado ao teste está em execução.  
   
-##  <a name="CodedUITestEditor_InsertDelay"></a> Inserir um atraso antes de uma ação de interface do usuário  
+## <a name="CodedUITestEditor_InsertDelay"></a> Inserir um atraso antes de uma ação de interface do usuário  
  Ocasionalmente, convém instruir o teste a aguardar a ocorrência de determinados eventos, como a exibição de uma janela, o desaparecimento da barra de progresso etc. Ao utilizar o Editor de Teste de IU Codificado, isso pode ser feito inserindo um atraso antes de uma ação de interface do usuário. É possível especificar quantos segundos o atraso durará.  
   
  ![Inserir um atraso antes de uma ação de interface do usuário](../test/media/codeduidelay.png "CodedUIDelay")  
@@ -207,7 +207,7 @@ Editar propriedades de controle
 ### <a name="guidance"></a>Diretrizes  
  [Testando para entrega contínua com Visual Studio 2012 – capítulo 2: Testes da unidade: Testando o interior](http://go.microsoft.com/fwlink/?LinkID=255188)  
   
-### <a name="faq"></a>Perguntas Frequentes  
+### <a name="faq"></a>Perguntas frequentes  
  [Perguntas frequentes sobre testes de IU codificados – 1](http://go.microsoft.com/fwlink/?LinkID=230576)  
   
  [Perguntas frequentes sobre testes de IU codificados – 2](http://go.microsoft.com/fwlink/?LinkID=230578)  
@@ -220,4 +220,4 @@ Editar propriedades de controle
  [Criando testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate)   
  [Criando um Teste de IU Codificado Controlado por Dados](../test/creating-a-data-driven-coded-ui-test.md)   
  [Gerar um Teste de IU Codificado de uma Gravação da Ação Existente](http://msdn.microsoft.com/library/56736963-9027-493b-b5c4-2d4e86d1d497)   
- [Passo a passo: criando, editando e mantendo um teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)
+ [Passo a passo: Criação, edição e manutenção do teste de IU codificado](../test/walkthrough-creating-editing-and-maintaining-a-coded-ui-test.md)

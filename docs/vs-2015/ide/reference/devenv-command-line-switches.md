@@ -21,12 +21,12 @@ caps.latest.revision: 36
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4eadb8c9553873f43ad9435ad43fae00f57affcb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0cb2d42db65c5eb77aae324d2c10c25010eb8b8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444744"
 ---
 # <a name="devenv-command-line-switches"></a>Opções de linha de comando do desenvolvedor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "60050694"
 O Devenv permite definir várias opções para o IDE (ambiente de desenvolvimento integrado) e também criar, depurar e implantar projetos com base na linha de comando. Use essas opções para executar o IDE com base em um script ou um arquivo .bat, por exemplo, um script de build noturno ou para iniciar o IDE em uma configuração específica.  
   
 > [!NOTE]
->  Para tarefas relacionadas ao build, agora é recomendável usar o MSBuild em vez do devenv. Para obter mais informações, consulte [Referência de linha de comando](../../msbuild/msbuild-command-line-reference.md).  
+> Para tarefas relacionadas ao build, agora é recomendável usar o MSBuild em vez do devenv. Para obter mais informações, consulte [Referência de linha de comando](../../msbuild/msbuild-command-line-reference.md).  
   
 > [!NOTE]
->  É necessário executar o devenv como um administrador para usar as opções [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) e [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md).  
+> É necessário executar o devenv como um administrador para usar as opções [/Setup (devenv.exe)](../../ide/reference/setup-devenv-exe.md) e [/InstallVSTemplates (devenv.exe)](../../ide/reference/installvstemplates-devenv-exe.md).  
   
 ## <a name="devenv-switch-syntax"></a>Sintaxe da opção do devenv  
  Por padrão, os comandos do devenv passam opções para o utilitário devenv.com.  
@@ -57,7 +57,7 @@ O Devenv permite definir várias opções para o IDE (ambiente de desenvolviment
 - Ao fornecer um nome de arquivo de projeto em vez de um nome de arquivo de solução, um comando `devenv` pesquisará na pasta pai do arquivo de projeto um arquivo de solução que tem o mesmo nome. Por exemplo, o comando `devenv /build myproject1.vbproj` pesquisará na pasta pai um arquivo de solução chamado "myproject1.sln".  
   
     > [!NOTE]
-    >  Apenas um arquivo de solução que referencia esse projeto deve ser localizado em sua pasta pai. Se a pasta pai não contiver nenhum arquivo de solução que referencie esse projeto ou se a pasta pai contiver dois ou mais arquivos de solução que a referenciem, então um arquivo de solução temporário será criado, nomeado para esse projeto e o referenciará.  
+    > Apenas um arquivo de solução que referencia esse projeto deve ser localizado em sua pasta pai. Se a pasta pai não contiver nenhum arquivo de solução que referencie esse projeto ou se a pasta pai contiver dois ou mais arquivos de solução que a referenciem, então um arquivo de solução temporário será criado, nomeado para esse projeto e o referenciará.  
   
 - Quando nomes de arquivo e caminhos de arquivo incluírem espaços, será necessário circunscrevê-los em aspas duplas (""). Por exemplo, "c:\project um\\".  
   

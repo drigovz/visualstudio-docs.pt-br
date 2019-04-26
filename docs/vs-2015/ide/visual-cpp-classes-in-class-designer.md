@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04392545b5b5c352a35b9a3d523f0c6ff5d98b01
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: c1fb81261f52fa5aaf73c30579332779ae5bfa17
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54787070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443177"
 ---
 # <a name="visual-c-classes-in-class-designer"></a>Classes do Visual C++ no Designer de Classe
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "54787070"
 O Designer de Classe dá suporte a classes do C++ e visualiza classes nativas do C++ da mesma maneira que formas de classe do Visual Basic e do Visual C#, exceto pelo fato de classes do C++ poderem ter múltiplas relações de herança. É possível expandir a forma de classe para exibir mais campos e métodos na classe ou recolhê-la para economizar espaço.  
   
 > [!NOTE]
->  O Designer de Classe não dá suporte a uniões (um tipo especial de classe em que a memória alocada é apenas a quantidade necessária para o maior membro de dados da união).  
+> O Designer de Classe não dá suporte a uniões (um tipo especial de classe em que a memória alocada é apenas a quantidade necessária para o maior membro de dados da união).  
   
 ## <a name="simple-inheritance"></a>Herança simples  
  Quando você arrasta mais de uma classe para um diagrama de classe e as classes têm uma relação de herança de classe, uma seta as conecta. A seta aponta para a direção da classe base. Por exemplo, quando as classes a seguir são exibidas em um diagrama de classe, uma seta as conecta, apontando de B para A:  
@@ -52,7 +52,7 @@ class Penguin : public Bird, public Swimmer {};
  Clicar com o botão direito do mouse em uma forma de classe e, depois, clicar em **Mostrar Classes Base** exibe as classes base da classe selecionada.  
   
 > [!NOTE]
->  O comando **Mostrar Classes Derivadas** não tem suporte para código C++. É possível exibir as classes derivadas indo até o Modo de Exibição de Classe, expandindo o nó de tipo, expandindo a subpasta **Tipos Derivados** e, em seguida, arrastando esses tipos para o diagrama de classe.  
+> O comando **Mostrar Classes Derivadas** não tem suporte para código C++. É possível exibir as classes derivadas indo até o Modo de Exibição de Classe, expandindo o nó de tipo, expandindo a subpasta **Tipos Derivados** e, em seguida, arrastando esses tipos para o diagrama de classe.  
   
  Para obter mais informações sobre a herança de classes múltiplas, consulte [(NOTINBUILD) Herança múltipla](http://msdn.microsoft.com/3b74185e-2beb-4e29-8684-441e51d2a2ca) e [Classes Base Múltiplas](http://msdn.microsoft.com/library/a30c69fe-401c-4a87-96a0-e0da70c7c740).  
   

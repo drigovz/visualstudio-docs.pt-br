@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 95e0d070bb69bd6918025298f865236a382d16e0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: bf2882120f2e4c27e33b105585ba56261122055d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59669036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445647"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -73,7 +73,7 @@ Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-elem
  Variáveis de ambiente, propriedades de linha de comando e propriedades de nível de projeto podem ser referenciadas em algum lugar do elemento `UsingTask` se ele aparecer no arquivo de projeto explicitamente ou por meio de um arquivo de projeto importado. Para obter mais informações, consulte [Tarefas](../msbuild/msbuild-tasks.md).  
   
 > [!NOTE]
->  Propriedades de nível de projeto não têm significado se o elemento `UsingTask` for proveniente de um dos arquivos .tasks globalmente registrados com o mecanismo do MSBuild. Propriedades de nível de projeto não são globais para o MSBuild.  
+> Propriedades de nível de projeto não têm significado se o elemento `UsingTask` for proveniente de um dos arquivos .tasks globalmente registrados com o mecanismo do MSBuild. Propriedades de nível de projeto não são globais para o MSBuild.  
   
  No MSBuild 4.0, usar tarefas pode ser carregado de arquivos .overridetask.  
   

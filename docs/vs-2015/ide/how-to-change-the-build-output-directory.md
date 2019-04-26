@@ -11,12 +11,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b2e1fd8e54d34d8998158781c9de67d2e3a8cf01
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 03288cdfce66527fb48a16891e745765a72615f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439266"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Como alterar o diretório de saída do build
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60104857"
 Você pode especificar o local de saída por configuração (para depuração, versão ou ambas) gerada pelo projeto.  
   
 > [!NOTE]
->  Se você tiver um projeto de **Instalação**, consulte a observação no final deste artigo.  
+> Se você tiver um projeto de **Instalação**, consulte a observação no final deste artigo.  
   
 ## <a name="changing-the-build-output-directory"></a>Alterando o diretório de saída do build  
   
@@ -39,7 +39,7 @@ Você pode especificar o local de saída por configuração (para depuração, v
      Localize a entrada do caminho de saída (**Caminho de Saída do Build** no Visual Basic, **Diretório de Saída** no Visual C++, **Caminho de Saída** no JavaScript e C#). Especifique um novo diretório de saída de build em relação ao diretório do projeto.  
   
 > [!NOTE]
->  Em um Projeto de Instalação, a caixa **Nome do arquivo de saída** muda apenas o local do arquivo Setup.exe, não o local dos arquivos de projeto. Para obter mais informações, consulte **Build, Configuration Properties, Deployment Project Properties Dialog Box** (Caixa de diálogo Build, Propriedades de Configuração, Propriedades do Projeto de Implantação).  
+> Em um Projeto de Instalação, a caixa **Nome do arquivo de saída** muda apenas o local do arquivo Setup.exe, não o local dos arquivos de projeto. Para obter mais informações, consulte **Build, Configuration Properties, Deployment Project Properties Dialog Box** (Caixa de diálogo Build, Propriedades de Configuração, Propriedades do Projeto de Implantação).  
   
 ## <a name="see-also"></a>Consulte também  
  [Página de Build, Designer de Projeto (C#)](../ide/reference/build-page-project-designer-csharp.md)   

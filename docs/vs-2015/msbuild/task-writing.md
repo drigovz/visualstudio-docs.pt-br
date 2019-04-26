@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fab26a750dab2a1099280b886342731fe8a4612e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: eaf927b1049709a04d8a883615d1997e9316599e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445394"
 ---
 # <a name="task-writing"></a>Escrevendo tarefas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -105,7 +105,7 @@ namespace MyTasks
  O arquivo [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] Microsoft.Common.Tasks é um arquivo de projeto que contém uma lista de elementos `UsingTask` que registra todas as tarefas que são fornecidas com [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)]. Esse arquivo é incluído automaticamente na criação de cada projeto. Se uma tarefa que está registrada no Microsoft.Common.Tasks também é registrada no arquivo de projeto atual, o arquivo de projeto atual tem precedência; ou seja, você pode substituir uma tarefa padrão com sua própria tarefa que tem o mesmo nome.  
   
 > [!TIP]
->  Você pode ver uma lista de tarefas que são fornecidos com [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] exibindo o conteúdo de Microsoft.Common.Tasks.  
+> Você pode ver uma lista de tarefas que são fornecidos com [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] exibindo o conteúdo de Microsoft.Common.Tasks.  
   
 ## <a name="raising-events-from-a-task"></a>Gerando eventos de uma tarefa  
  Se a tarefa deriva da classe auxiliar <xref:Microsoft.Build.Utilities.Task>, você pode usar qualquer um dos seguintes métodos auxiliares na classe <xref:Microsoft.Build.Utilities.Task> para acionar eventos que serão capturados e exibidos por quaisquer agentes registrados:  

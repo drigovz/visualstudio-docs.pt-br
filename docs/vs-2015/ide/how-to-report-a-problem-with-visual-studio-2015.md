@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73b06f4235d5770cb6c086d6aed54229e00702de
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: d8cedd5ab26539d5ebe32aee8df272691dd0a779
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59665136"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60083643"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-2015"></a>How to Report a Problem with Visual Studio 2015 (Como relatar um problema com o Visual Studio 2015)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Clique no ícone de comentários do usuário ao lado de **Início Rápido** na b
 
 ## <a name="describe-the-problem"></a>Descrever o problema
 
-###  <a name="describe_the_problem"></a>
+### <a name="describe_the_problem"></a>
 
 1. Forneça um título descritivo para o problema que nos ajudará a roteá-lo para a equipe correta no Visual Studio.
 
@@ -49,15 +49,15 @@ Escolha **Incluir uma captura de tela** para enviar sua tela atual à Microsoft.
 
 ## <a name="provide-a-trace-and-heap-dump-optional"></a>Fornecer um despejo de heap e rastreamento (opcional)
 
-###  <a name="provide_a_trace_and_heap_dump"></a>
+### <a name="provide_a_trace_and_heap_dump"></a>
 
-1.  Os arquivos de despejo de heap e rastreamento são muito úteis para nos ajudar a diagnosticar problemas.   Apreciamos muito quando você usa a ferramenta Relatar um Problema para registrar as etapas de reprodução e enviar os dados para a Microsoft.
+1. Os arquivos de despejo de heap e rastreamento são muito úteis para nos ajudar a diagnosticar problemas.   Apreciamos muito quando você usa a ferramenta Relatar um Problema para registrar as etapas de reprodução e enviar os dados para a Microsoft.
 
-2.  Clique na divisa ao lado **Registrar suas ações para reproduzir o problema**. Se o problema estiver fazendo com que o Visual Studio trave ou falhe, abra outra instância do Visual Studio e selecione-o na exibição de lista.
+2. Clique na divisa ao lado **Registrar suas ações para reproduzir o problema**. Se o problema estiver fazendo com que o Visual Studio trave ou falhe, abra outra instância do Visual Studio e selecione-o na exibição de lista.
 
-3.  Clique em **Iniciar Gravação** e execute as etapas que reproduzem o problema. Quando terminar, clique no botão **Parar Gravação** na janela flutuante.
+3. Clique em **Iniciar Gravação** e execute as etapas que reproduzem o problema. Quando terminar, clique no botão **Parar Gravação** na janela flutuante.
 
-4.  Aguarde alguns minutos para o Visual Studio coletar e compactar as informações gravadas. A caixa de diálogo terá uma aparência semelhante a essa quando o processo de coleção for concluído:
+4. Aguarde alguns minutos para o Visual Studio coletar e compactar as informações gravadas. A caixa de diálogo terá uma aparência semelhante a essa quando o processo de coleção for concluído:
 
      ![Gravar um arquivo de rastreamento](../ide/media/record-a-trace-file.png "Gravar um arquivo de rastreamento")
 

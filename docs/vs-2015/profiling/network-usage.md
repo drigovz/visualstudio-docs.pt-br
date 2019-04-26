@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b2a411a135330fbf36bde9b28f8015e96a4555c3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 62f6847e03484838f232a9b64f392ca0938f213d
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54759903"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60114490"
 ---
 # <a name="network-usage"></a>Uso de rede
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as 
   
 1. Abra o projeto no Visual Studio.  
   
-2. No menu, clique em **Depurar/Criador de Perfil de Desempenho...**. Escolha **Rede**, **Iniciar**.  
+2. No menu, clique em **Depurar/Criador de Perfil de Desempenho...**. Escolha Rede, **Iniciar**.  
   
 3. A ferramenta de rede começa coletando o tráfego HTTP do seu aplicativo.  
   
@@ -67,13 +67,13 @@ A ferramenta de diagnóstico de **rede** do Visual Studio coleta dados sobre as 
 ### <a name="analysis-tips"></a>Dicas de análise  
  Essa ferramenta destaca determinadas áreas que podem ser úteis ao executar a análise relacionada à rede:  
   
-1.  As solicitações que são totalmente atendidas do cache são mostradas como **(do cache)** na coluna **Recebido**. Isso pode ajudar a determinar se você está usando o cache com eficiência para economizar largura de banda do usuário ou se está armazenando em cache respostas por engano e fornecendo ao usuário final do seu aplicativo dados desatualizados.  
+1. As solicitações que são totalmente atendidas do cache são mostradas como **(do cache)** na coluna **Recebido**. Isso pode ajudar a determinar se você está usando o cache com eficiência para economizar largura de banda do usuário ou se está armazenando em cache respostas por engano e fornecendo ao usuário final do seu aplicativo dados desatualizados.  
   
-2.  As respostas de erro (4xx ou 5xx) são exibidas na coluna **Resultados** com um código de status vermelho e também são realçadas na barra de resumo. Isso torna fácil a identificação de erros entre as várias solicitações em potencial em seu aplicativo.  
+2. As respostas de erro (4xx ou 5xx) são exibidas na coluna **Resultados** com um código de status vermelho e também são realçadas na barra de resumo. Isso torna fácil a identificação de erros entre as várias solicitações em potencial em seu aplicativo.  
   
-3.  O botão de impressão de resposta (dentro da guia Corpo) pode ajudá-lo a analisar as cargas de resposta JSON, XML, HTML, CSS, JavaScript e TypeScript aumentando a legibilidade do conteúdo.  
+3. O botão de impressão de resposta (dentro da guia Corpo) pode ajudá-lo a analisar as cargas de resposta JSON, XML, HTML, CSS, JavaScript e TypeScript aumentando a legibilidade do conteúdo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Executar ferramentas de criação de perfil sem depuração](http://msdn.microsoft.com/library/e97ce1a4-62d6-4b8e-a2f7-61576437ff01)   
- [Blog do Visual Studio: Apresentando o inspetor de rede do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
- [Vídeo do Channel 9: ferramentas de diagnóstico do VS – novo criador de perfil de rede](http://channel9.msdn.com/Series/ConnectOn-Demand/206)
+ [Blog do Visual Studio: Introdução ao Inspetor de rede do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=535022)   
+ [Vídeo do Channel 9: Ferramentas de diagnóstico do VS – novo Profiler de rede](http://channel9.msdn.com/Series/ConnectOn-Demand/206)

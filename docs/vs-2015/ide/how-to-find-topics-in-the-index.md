@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c2ad1e97302a822bacc2fbbc983002626adb78a
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 67eb54d06297458915edfe34718948b085c6e86b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416829"
 ---
 # <a name="how-to-find-topics-in-the-index"></a>Como localizar tópicos no Índice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ O índice contém uma lista de palavras-chave que são associadas a tópicos no 
       Escolhendo o botão de filtro perto da parte superior da guia, você pode exibir todas as entradas que contêm o texto especificado ou apenas as entradas que começam com o texto especificado.  
   
      > [!NOTE]
-     >  Quando o botão de filtro é exibido em uma tela de fundo mais escura com uma borda, as entradas devem conter o texto especificado. Se a tela de fundo e a borda não aparecerem, as entradas deverão começar com o texto especificado.  
+     > Quando o botão de filtro é exibido em uma tela de fundo mais escura com uma borda, as entradas devem conter o texto especificado. Se a tela de fundo e a borda não aparecerem, as entradas deverão começar com o texto especificado.  
   
    - Percorra o índice e escolha uma palavra-chave.  
   

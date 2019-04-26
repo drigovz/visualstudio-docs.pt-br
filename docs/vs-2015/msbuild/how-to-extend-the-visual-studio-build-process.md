@@ -14,21 +14,21 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f86605f3e76dc17fd8e404eb0d189f51ff2dc69
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 789c60da5be841721ab3a999120e2fe560ffd588
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59652157"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60108589"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>Como estender o processo de build do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O processo de build [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é definido por uma série de arquivos .targets [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] que são importados para seu arquivo de projeto. Um desses arquivos importados, Microsoft.Common.targets, pode ser estendido para permitir a execução de tarefas personalizadas em vários pontos no processo de build. Este tópico explica os dois métodos que você pode usar para estender o processo de build do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]:
 
--   Substituindo destinos predefinidos específicos definidos no Microsoft.Common.targets.
+- Substituindo destinos predefinidos específicos definidos no Microsoft.Common.targets.
 
--   Substituindo as propriedades “DependsOn” definidas no Microsoft.Common.targets.
+- Substituindo as propriedades “DependsOn” definidas no Microsoft.Common.targets.
 
 ## <a name="overriding-predefined-targets"></a>Substituindo destinos predefinidos
  O arquivo Microsoft.Common.targets contém um conjunto de destinos vazios predefinidos que são chamados antes e depois de alguns dos principais destinos no processo de build. Por exemplo, [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] chama o destino `BeforeBuild` antes do destino `CoreBuild` principal e o destino `AfterBuild` após o destino `CoreBuild`. Por padrão, os destinos vazios Microsoft.Common.targets não fazem nada, mas você pode substituir o comportamento padrão definindo os destinos que você desejar em um arquivo de projeto que importa o Microsoft.Common.targets. Fazendo isso, você pode usar as tarefas [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] para obter maior controle sobre o processo de build.
@@ -109,13 +109,13 @@ O processo de build [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] é definido por
 
 #### <a name="to-override-a-dependson-property"></a>Para substituir uma propriedade “DependsOn”
 
-1.  Identifique uma propriedade “DependsOn” predefinida no Microsoft.Common.targets que você deseja substituir. Consulte a tabela abaixo para obter uma lista das propriedades “DependsOn” comumente substituídas.
+1. Identifique uma propriedade “DependsOn” predefinida no Microsoft.Common.targets que você deseja substituir. Consulte a tabela abaixo para obter uma lista das propriedades “DependsOn” comumente substituídas.
 
-2.  Defina outra instância da propriedade ou propriedades no final do seu arquivo de projeto. Inclua a propriedade original, por exemplo `$(BuildDependsOn)`, na nova propriedade.
+2. Defina outra instância da propriedade ou propriedades no final do seu arquivo de projeto. Inclua a propriedade original, por exemplo `$(BuildDependsOn)`, na nova propriedade.
 
-3.  Defina seus destinos personalizados antes ou após a definição da propriedade.
+3. Defina seus destinos personalizados antes ou após a definição da propriedade.
 
-4.  Compile o arquivo de projeto.
+4. Compile o arquivo de projeto.
 
 ### <a name="commonly-overridden-dependson-properties"></a>Propriedades “DependsOn” geralmente substituídas
 

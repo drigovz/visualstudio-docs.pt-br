@@ -1,5 +1,5 @@
 ---
-title: Microsoft Language Interface Packs (LIPs) | Microsoft Docs
+title: Microsoft Language Interface Packs | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-install
@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: TerryGLee
 ms.author: tglee
 manager: jillfra
-ms.openlocfilehash: 8d5bf89a4f4b33306176b1fe5e33fa91fb1d325d
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 503f97d1530f8d22184f42a2452046782a997c18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54776916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433005"
 ---
 # <a name="microsoft-language-interface-packs-lips-and-visual-studio"></a>Microsoft Language Interface Packs (LIPs) e Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,62 +33,62 @@ Usando um Windows Language Interface Pack (LIP), você pode instalar uma versão
  Em computadores com os LIPs e versões de vários idiomas do Visual Studio instaladas, a alteração da configuração do idioma para exibição do Windows define o Windows e o Visual Studio quando pacotes de idiomas correspondentes são instalados.
 
 ## <a name="limitations-of-multi-language-installations"></a>Limitações de instalações multilíngues
- Quando você instala as versões de idioma diferente do Visual Studio no mesmo computador, você só poderá alternar idiomas entre edições correspondentes. Por exemplo, se você tiver uma Express Edition instalada em inglês, uma Express Edition instalada em alemão e uma Professional Edition instalada, só poderá alternar idiomas para as Express Editions, e não para a Professional Edition.
+ Quando instala versões de idioma diferentes do Visual Studio no mesmo computador, você pode alternar apenas idiomas entre edições correspondentes. Por exemplo, se você tiver uma Express Edition instalada em inglês, uma Express Edition instalada em alemão e uma Professional Edition instalada, só poderá alternar idiomas para as Express Editions, e não para a Professional Edition.
 
  O Visual Studio usa um pacote de idiomas unificado. Para instalar mais de uma versão de idioma desses produtos, você deve instalar um produto com todos os idiomas primeiro e então instalar um ou mais pacotes de idioma.
 
 > [!NOTE]
->  Visual Studio não oferece suporte à instalação de várias versões de idioma do produto completo de idiomas no mesmo computador. Depois de instalar um produto com todos os idiomas, você deverá adicionar versões de idioma usando pacotes de idiomas. Você ainda pode instalar vários produtos de idiomas completos das edições Express no mesmo computador.
+> O Visual Studio não fornece suporte para instalação de várias versões de idioma do produto de idioma completo no mesmo computador. Depois de instalar um produto com todos os idiomas, você deverá adicionar versões de idioma usando pacotes de idiomas. Você ainda pode instalar vários produtos de idiomas completos das edições Express no mesmo computador.
 
 ### <a name="support-for-code-pages"></a>Suporte para páginas de código
  Algumas ferramentas do Visual Studio não exibem o texto corretamente quando o texto contém caracteres que não estão na página de código atual. Em vez disso, os pontos de interrogação aparecem ou texto está corrompido. As seguintes ferramentas ou áreas são afetadas:
 
--   Sites implantados usando FTP.
+- Sites implantados usando FTP.
 
--   Nomes de computador não ASCII em alguns controles.
+- Nomes de computador não ASCII em alguns controles.
 
--   Ferramentas de linha de comando executadas fora do Visual Studio.
+- Ferramentas de linha de comando executadas fora do Visual Studio.
 
--   Assistente de Migração do Visual Basic.
+- Assistente de Migração do Visual Basic.
 
--   Contêiner de teste de controle ActiveX.
+- Contêiner de teste de controle ActiveX.
 
--   Visualizador de Objeto OLE/COM.
+- Visualizador de Objeto OLE/COM.
 
--   Ferramenta de depuração ISAPI Web.
+- Ferramenta de depuração ISAPI Web.
 
--   Os projetos de aplicativos MFC que têm conteúdo da Ajuda HTML.
+- Os projetos de aplicativos MFC que têm conteúdo da Ajuda HTML.
 
--   A interface do usuário do Visual SourceSafe/SCCI voltará para o inglês quando houver uma página de código incompatível.
+- A interface do usuário do Visual SourceSafe/SCCI voltará para o inglês quando houver uma página de código incompatível.
 
--   O Visual SourceSafe não dá suporte para nomes de arquivo Unicode.
+- O Visual SourceSafe não dá suporte para nomes de arquivo Unicode.
 
--   Caracteres Definidos pelo Usuário Final (zona de uso particular) não podem ser usados como tokens/identificadores.
+- Caracteres Definidos pelo Usuário Final (zona de uso particular) não podem ser usados como tokens/identificadores.
 
--   Os caracteres Latinos Estendidos-B não podem ser exibidos em algumas janelas de ferramentas do Visual Studio quando a página de código do Windows estiver definida para um idioma do leste asiático.
+- Os caracteres Latinos Estendidos-B não podem ser exibidos em algumas janelas de ferramentas do Visual Studio quando a página de código do Windows estiver definida para um idioma do leste asiático.
 
--   As execuções de texto que consistem em caracteres de scripts de vários idiomas podem exibir o glifo padrão para alguns caracteres.
+- As execuções de texto que consistem em caracteres de scripts de vários idiomas podem exibir o glifo padrão para alguns caracteres.
 
--   Copiar e colar cadeias de caracteres de script complexas para controles pode causar a perda do shaping de caractere. Em vez disso, use o teclado de idioma correspondente para inserir texto.
+- Copiar e colar cadeias de caracteres de script complexas para controles pode causar a perda do shaping de caractere. Em vez disso, use o teclado de idioma correspondente para inserir texto.
 
 ##### <a name="to-correctly-display-characters-that-are-not-included-in-the-current-code-page"></a>Para exibir corretamente caracteres que não estejam incluídos na página de código atual
 
-1.  Clique em **Iniciar**, clique em **Painel de Controle** e, em seguida, abra **Opções regionais e de idiomas** (ou **Região** em [!INCLUDE[win8](../includes/win8-md.md)]).
+1. Clique em **Iniciar**, clique em **Painel de Controle** e, em seguida, abra **Opções regionais e de idiomas** (ou **Região** em [!INCLUDE[win8](../includes/win8-md.md)]).
 
     > [!NOTE]
-    >  Você deve ser um administrador no computador para seguir estas etapas.
+    > Você deve ser um administrador no computador para seguir estas etapas.
 
-2.  Clique na aba **Avançado**.
+2. Clique na aba **Avançado**.
 
-3.  Na lista **Selecionar um idioma para corresponder à versão do idioma dos programas não Unicode que você deseja usar**, selecione o idioma que você está usando atualmente.
+3. Na lista **Selecionar um idioma para corresponder à versão do idioma dos programas não Unicode que você deseja usar**, selecione o idioma que você está usando atualmente.
 
-4.  Clique em **OK**.
+4. Clique em **OK**.
 
 ## <a name="changing-the-language-used-for-the-ui-text-in-visual-studio"></a>Alterando o idioma usado para o texto da interface do usuário no Visual Studio
  Quando você instalar versões de vários idiomas do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no mesmo computador, a interface do usuário do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] será padronizada para **O mesmo que o do Microsoft Windows**. Essa configuração indica que o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] exibirá o texto da interface do usuário no idioma especificado como o idioma do sistema operacional.
 
 > [!NOTE]
->  Se o Visual Studio estiver definido como **Usar o idioma do Microsoft Windows** e se o pacote de idiomas do Visual Studio correspondente não estiver instalado, o Visual Studio usará o idioma da primeira instalação do Visual Studio.
+> Se o Visual Studio estiver definido como **Usar o idioma do Microsoft Windows** e se o pacote de idiomas do Visual Studio correspondente não estiver instalado, o Visual Studio usará o idioma da primeira instalação do Visual Studio.
 
 #### <a name="to-set-the-language-that-is-used-for-the-ui-text-in-visual-studio"></a>Para definir o idioma usado para o texto da interface do usuário no Visual Studio
 
@@ -100,7 +100,7 @@ Usando um Windows Language Interface Pack (LIP), você pode instalar uma versão
 
     Para que o texto de interface do usuário no IDE corresponda à configuração de idioma do sistema operacional, selecione **O mesmo que o do Microsoft Windows**.
 
-   Você também pode usar o comando devenv para definir o idioma usado para interface do usuário. Para obter mais informações, consulte [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md).
+   Você também pode usar o comando devenv para definir o idioma usado para interface do usuário. Para saber mais, confira [/LCID (devenv.exe)](../ide/reference/lcid-devenv-exe.md).
 
 ## <a name="see-also"></a>Consulte também
  [Caixa de diálogo Configurações Internacionais, Ambiente, Opções](../ide/reference/international-settings-environment-options-dialog-box.md)
