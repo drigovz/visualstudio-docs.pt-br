@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f3e9ff4acbfd6df1980a3882311b3d3c4611e064
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: dd20552a72775723c4ad006708ce1fb7f18d4181
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54758115"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424627"
 ---
 # <a name="managing-project-and-solution-properties"></a>Gerenciando propriedades de solução e projeto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Projetos têm propriedades que controlam muitos aspectos da compilação, da dep
  ![Nó de propriedades na árvore do Gerenciador de Soluções](../ide/media/vs2015-props-se.png "VS2015_Props_SE")  
   
 > [!TIP]
->  As soluções têm algumas propriedades, bem como os itens de projeto; essas propriedades são acessadas na [Janela Propriedades](../ide/reference/properties-window.md), não no **Designer de Projeto**.  
+> As soluções têm algumas propriedades, bem como os itens de projeto; essas propriedades são acessadas na [Janela Propriedades](../ide/reference/properties-window.md), não no **Designer de Projeto**.  
   
 ## <a name="project-properties"></a>Propriedades do projeto  
  Propriedades do Projeto são organizadas em grupos, cada grupo tem sua própria página de propriedades, e as páginas podem ser diferentes para diferentes linguagens e tipos de projeto.  

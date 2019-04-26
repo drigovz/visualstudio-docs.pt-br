@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e2fd0e329e6cf3434348fba1d3282921ee8c1f57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 0d685dc39f5e07840a5995f7fe67988840c3f50a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441665"
 ---
 # <a name="threads-view-parallel-performance"></a>Exibição de threads (desempenho em paralelo)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ A Exibição Threads é a exibição mais detalhada e com uma grande variedade d
  Ao selecionar um ponto em um segmento de execução, a Visualização Simultânea procura esse ponto no tempo na pilha de chamadas relevante e, em seguida, exibe um cursor preto acima do ponto selecionado no segmento de execução e exibe a própria pilha de chamadas na guia **Pilha atual**. É possível selecionar vários pontos no segmento de execução.  
   
 > [!NOTE]
->  A Visualização Simultânea pode não conseguir resolver uma seleção em um segmento de execução. Normalmente, isso ocorre quando a duração do segmento é inferior a um milissegundo.  
+> A Visualização Simultânea pode não conseguir resolver uma seleção em um segmento de execução. Normalmente, isso ocorre quando a duração do segmento é inferior a um milissegundo.  
   
  Para obter um perfil de execução para todos os threads habilitados (não ocultos) no intervalo de tempo selecionado, escolha o botão **Execução** na legenda ativa.  
   

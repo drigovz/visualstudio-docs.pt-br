@@ -1,5 +1,5 @@
 ---
-title: Desbloquear o Visual Studio 2015 | Microsoft Docs"
+title: Desbloquear o Visual Studio 2015 | Microsoft Docs
 titleSuffix: ''
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
@@ -10,44 +10,44 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8876cebf5851454aa3140f6a3269fa0d3ecbbc95
-ms.sourcegitcommit: a83c60bb00bf95e6bea037f0e1b9696c64deda3c
+ms.openlocfilehash: 05153b7829281684ff9f27f2b5ac708903982b57
+ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/19/2019
-ms.locfileid: "54774537"
+ms.lasthandoff: 04/22/2019
+ms.locfileid: "60072546"
 ---
 # <a name="how-to-unlock-visual-studio"></a>Como desbloquear o Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Você pode avaliar o Visual Studio gratuitamente por até 30 dias. Ao entrar no IDE, você pode estender o período de teste por 90 dias. Para continuar usando o Visual Studio, você pode desbloquear o IDE
 
-1.  usando uma assinatura online.
+1. usando uma assinatura online.
 
-2.  inserindo uma chave do produto (Product Key).
+2. inserindo uma chave do produto (Product Key).
 
 ## <a name="to-unlock-visual-studio-using-an-online-subscription"></a>Para desbloquear o Visual Studio usando uma assinatura online
  Para desbloquear o Visual Studio usando uma assinatura online do MSDN ou do Visual Studio associada a uma conta da Microsoft ou uma conta corporativa ou de estudante:
 
-1.  Clique no botão "Entrar" no canto superior direito do IDE (ou vá para Arquivo > Configurações de Conta para abrir a caixa de diálogo Configurações de Conta e clique no botão "Entrar".)
+1. Clique no botão "Entrar" no canto superior direito do IDE (ou vá para Arquivo > Configurações de Conta para abrir a caixa de diálogo Configurações de Conta e clique no botão "Entrar".)
 
-2.  Insira as credenciais para uma conta da Microsoft ou uma conta corporativa ou de estudante. O Visual Studio encontrará uma assinatura do MSDN ou uma assinatura do Visual Studio Team Services associada à sua conta.
+2. Insira as credenciais para uma conta da Microsoft ou uma conta corporativa ou de estudante. O Visual Studio encontrará uma assinatura do MSDN ou uma assinatura do Visual Studio Team Services associada à sua conta.
 
 > [!IMPORTANT]
 >  O Visual Studio procura automaticamente assinaturas online associadas ao se conectar a uma conta do Visual Studio Team Services pela janela de ferramentas do Team Explorer. Quando você se conecta a uma conta do Visual Studio Team Services, pode entrar usando contas da Microsoft ou corporativas ou de estudante. Se houver uma assinatura online para aquela conta de usuário, o Visual Studio automaticamente desbloqueará o IDE para você.
 
 ## <a name="to-unlock-visual-studio-with-a-product-key"></a>Para desbloquear o Visual Studio com uma chave do produto (Product Key)
 
-1.  Selecione **Arquivo > Configurações de Conta** para abrir a caixa de diálogo Configurações de Conta e clique no link "**Licenciar com uma Chave do Produto (Product Key)**".
+1. Selecione **Arquivo > Configurações de Conta** para abrir a caixa de diálogo Configurações de Conta e clique no link "**Licenciar com uma Chave do Produto (Product Key)**".
 
-2.  Insira a chave do produto (Product Key) no espaço fornecido.
+2. Insira a chave do produto (Product Key) no espaço fornecido.
 
 > [!TIP]
 >  Versões de pré-lançamento do Visual Studio não têm chaves do produto (Product Keys). Você deve entrar no IDE para usar versões de pré-lançamento.
 
-## <a name="addressing-license-problem-states"></a>Endereçamento de estados de problema de licença
+## <a name="addressing-license-problem-states"></a>Como tratar os estados de problema de licença
 
-### <a name="updating-stale-licenses"></a>Atualizar licenças obsoletas
+### <a name="updating-stale-licenses"></a>Como atualizar licenças obsoletas
  Talvez você tenha visto a mensagem abaixo indicando que sua licença ficará obsoleta no Visual Studio.
 
  ![Caixa de diálogo de informações de usuário do Visual Studio](../ide/media/vs2013-userinfo.png "VS2013_UserInfo")
@@ -65,12 +65,12 @@ Você pode avaliar o Visual Studio gratuitamente por até 30 dias. Ao entrar no 
 > [!IMPORTANT]
 >  Se estiver usando o Visual Studio por longos períodos em ambientes com acesso limitado ou sem acesso à Internet, você deverá usar uma chave do produto (Product Key) para desbloquear o Visual Studio para evitar a interrupção.
 
-### <a name="updating-expired-licenses"></a>Atualizar licenças expiradas
+### <a name="updating-expired-licenses"></a>Como atualizar licenças expiradas
  Se sua assinatura tiver expirado completamente e você não tiver mais direitos de acesso ao Visual Studio, você precisará:
 
-1.  Renovar sua assinatura. Para obter mais informações sobre a licença que você está usando, acesse a caixa de diálogo Arquivo > Configurações de Conta e procure as informações de licença no lado direito da caixa de diálogo.
+1. Renovar sua assinatura. Para obter mais informações sobre a licença que você está usando, acesse a caixa de diálogo Arquivo > Configurações de Conta e procure as informações de licença no lado direito da caixa de diálogo.
 
-2.  Se você tiver outra assinatura associada a uma conta diferente, adicione essa conta à lista Todas as Contas no lado esquerdo da caixa de diálogo Arquivo > Configurações de Conta clicando no link “Adicionar uma conta...” .
+2. Se você tiver outra assinatura associada a uma conta diferente, adicione essa conta à lista Todas as Contas no lado esquerdo da caixa de diálogo Arquivo > Configurações de Conta clicando no link “Adicionar uma conta...” .
 
 ## <a name="see-also"></a>Consulte também
  [Signing in to Visual Studio](../ide/signing-in-to-visual-studio.md) (Entrando no Visual Studio)
