@@ -24,12 +24,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c549beaf58e64d8026b3f6bd39a3b69922d6b7f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a5ad9c363a590ef692bdcd1d8c00727d55113b97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412351"
 ---
 # <a name="install-and-manage-local-content"></a>Instalar e gerenciar o conteúdo local
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Usando o Microsoft Help Viewer, você pode adicionar, remover, atualizar e mover
 1. Na guia **Gerenciar Conteúdo**, escolha o botão de opção **Disco**.  
   
     > [!NOTE]
-    >  A opção **Disco** não estará disponível se o administrador o tiver impedido de modificar a origem de instalação de conteúdo. Para obter mais informações, consulte o [Guia do administrador do Help Viewer](../ide/help-viewer-administrator-guide.md).  
+    > A opção **Disco** não estará disponível se o administrador o tiver impedido de modificar a origem de instalação de conteúdo. Para obter mais informações, consulte o [Guia do administrador do Help Viewer](../ide/help-viewer-administrator-guide.md).  
   
 2. Execute uma das seguintes etapas:  
   
@@ -60,7 +60,7 @@ Usando o Microsoft Help Viewer, você pode adicionar, remover, atualizar e mover
  Você poderá exibir tópicos sem uma conexão de Internet se baixar e instalar o conteúdo em seu computador local.  
   
 > [!IMPORTANT]
->  Para instalar o conteúdo, faça logon com uma conta que tenha permissões administrativas.  
+> Para instalar o conteúdo, faça logon com uma conta que tenha permissões administrativas.  
   
  Se o IDE do Visual Studio estiver definido como um idioma diferente do inglês, você poderá instalar o conteúdo em inglês, o conteúdo localizado ou ambos. No entanto, nenhum conteúdo será exibido se você instalar apenas a versão em inglês e a caixa de seleção **Incluir conteúdo em inglês em todas as solicitações de F1 e guias de navegação** na caixa de diálogo **Opções do Visualizador** estiver desmarcada.  
   
@@ -80,7 +80,7 @@ Usando o Microsoft Help Viewer, você pode adicionar, remover, atualizar e mover
  Você pode economizar espaço em disco removendo conteúdo indesejado do seu computador.  
   
 > [!IMPORTANT]
->  É preciso ter permissões administrativas para remover conteúdo.  
+> É preciso ter permissões administrativas para remover conteúdo.  
   
  Nenhum conteúdo será exibido se o IDE do Visual Studio estiver definido como um idioma diferente do inglês, você remover o conteúdo localizado e a caixa de seleção **Incluir conteúdo em inglês em todas as solicitações de F1 e guias de navegação** na caixa de diálogo **Opções do Visualizador** estiver desmarcada.  
   
@@ -100,7 +100,7 @@ Usando o Microsoft Help Viewer, você pode adicionar, remover, atualizar e mover
  A barra de status indica quando estão disponíveis atualizações para o conteúdo instalado.  
   
 > [!IMPORTANT]
->  Se desejar que o Help Viewer verifique automaticamente atualizações online, abra a caixa de diálogo **Opções do Visualizador** e, em seguida, marque a caixa de seleção **Ficar online para verificar se há atualizações de conteúdo**.  
+> Se desejar que o Help Viewer verifique automaticamente atualizações online, abra a caixa de diálogo **Opções do Visualizador** e, em seguida, marque a caixa de seleção **Ficar online para verificar se há atualizações de conteúdo**.  
   
 #### <a name="to-update-local-content"></a>Para atualizar o conteúdo local  
   
@@ -112,7 +112,7 @@ Usando o Microsoft Help Viewer, você pode adicionar, remover, atualizar e mover
  Você pode economizar espaço em disco movendo conteúdo instalado do computador local para um compartilhamento de rede ou outra partição no computador local.  
   
 > [!IMPORTANT]
->  Para mover o conteúdo, faça logon com uma conta que tenha permissões administrativas.  
+> Para mover o conteúdo, faça logon com uma conta que tenha permissões administrativas.  
   
 #### <a name="to-move-local-content"></a>Para mover o conteúdo local  
   

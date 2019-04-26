@@ -15,12 +15,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6c0603bd820990789af0d9bbca147acd7004e1a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 35c5b1275ced5eb7f2fee85c0592be2b5ed94533
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097525"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419752"
 ---
 # <a name="toolbox-html-tab"></a>Caixa de Ferramentas, Guia HTML
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -96,7 +96,7 @@ A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em p
  Para saber mais, confira [Controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintaxe declarativa do controle de servidor HtmlInputText](http://msdn.microsoft.com/87060d90-a11c-434d-9fc9-b03a8487041e), [Visão geral do controle de servidor Web TextBox](http://msdn.microsoft.com/library/ab354bc1-f23a-48fc-93d8-d4d7c1b7396f), <xref:System.Web.UI.HtmlControls.HtmlInputText> e <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
->  É recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validando a entrada do usuário em Páginas da Web do ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> É recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validando a entrada do usuário em Páginas da Web do ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Entrada (Arquivo)**  
  ![Campo de arquivo de paginação HTML](../../ide/reference/media/vxfilefield.gif "vxFilefield")  
@@ -112,7 +112,7 @@ A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em p
  Para saber mais, confira [Controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintaxe declarativa do controle de servidor HtmlInputFile](http://msdn.microsoft.com/a817b4a0-056f-4c17-a696-b9fdcde43db6) e <xref:System.Web.UI.HtmlControls.HtmlInputFile>.  
   
 > [!IMPORTANT]
->  É recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validando a entrada do usuário em Páginas da Web do ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> É recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validando a entrada do usuário em Páginas da Web do ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Entrada (Senha)**  
  ![Campo de senha do Visual Studio](../../ide/reference/media/vxpassword.gif "vxPassword")  
@@ -128,7 +128,7 @@ A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em p
  Para obter mais informações, consulte [Controles de entrada HTML](http://msdn.microsoft.com/library/2ba82c6b-dff7-4b73-b1c2-9e76a48a69de), [Sintaxe declarativa do controle de servidor HtmlInputPassword](http://msdn.microsoft.com/df703dd0-1624-4e5a-a547-c97f2f331b9f), [Como definir um controle de servidor Web TextBox para uma entrada de senha](http://msdn.microsoft.com/library/5b5069f3-64a1-435a-aee6-da263f4e6310) e [Passo a passo: Validando uma entrada do usuário em uma página do Web Forms](http://msdn.microsoft.com/library/7141d6ba-34f3-410b-b5cd-2102a24cb436).  
   
 > [!IMPORTANT]
->  Se o aplicativo transmitir nomes de usuário e senhas, será necessário configurar o site para usar o protocolo SSL para criptografar a transmissão. Para obter mais informações, consulte “Protegendo conexões com o protocolo SSL” no [Guia de Operações do IIS](http://go.microsoft.com/fwlink/?linkid=47856). Além disso, é recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validando a entrada do usuário em Páginas da Web do ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> Se o aplicativo transmitir nomes de usuário e senhas, será necessário configurar o site para usar o protocolo SSL para criptografar a transmissão. Para obter mais informações, consulte “Protegendo conexões com o protocolo SSL” no [Guia de Operações do IIS](http://go.microsoft.com/fwlink/?linkid=47856). Além disso, é recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validando a entrada do usuário em Páginas da Web do ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Entrada (caixa de seleção)**  
  ![Opção Caixa de seleção da caixa de ferramentas da página da Web HTML](../../ide/reference/media/vxcheckbox.gif "vxCheckbox")  
@@ -183,7 +183,7 @@ A guia **HTML** da Caixa de ferramentas fornece componentes que são úteis em p
  Para saber mais, confira [Sintaxe declarativa do controle de servidor HtmlTextArea](http://msdn.microsoft.com/5a103ffa-235b-4452-ba2b-a4fb8ba8cb87), <xref:System.Web.UI.HtmlControls.HtmlTextArea> e <xref:System.Web.UI.WebControls.TextBox>.  
   
 > [!IMPORTANT]
->  É recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validando a entrada do usuário em Páginas da Web do ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
+> É recomendável validar todas as entradas do usuário. Para obter mais informações, consulte [Validando a entrada do usuário em Páginas da Web do ASP.NET](http://msdn.microsoft.com/library/4ad3dacb-89e0-4cee-89ac-40a3f2a85461).  
   
  **Tabela**  
  ![Captura de tela de HTMLpageToolbarTable](../../ide/reference/media/vxtable.gif "vxTable")  

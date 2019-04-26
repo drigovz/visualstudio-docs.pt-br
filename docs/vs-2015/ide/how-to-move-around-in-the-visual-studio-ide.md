@@ -18,12 +18,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 269b6bba8c832d240813641317b8f0aa61fa0f34
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: df45f28076bb520a3b1e8055d9c6fbac08cb7669
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069504"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435256"
 ---
 # <a name="how-to-move-around-in-the-visual-studio-ide"></a>Como mover-se no Visual Studio IDE
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ ms.locfileid: "60069504"
 O IDE (ambiente de desenvolvimento integrado) foi projetado para que você possa mover de uma janela para outra e de um arquivo para outro de várias maneiras diferentes, dependendo dos requisitos do projeto ou de preferência. Você pode optar por percorrer os arquivos abertos no editor ou percorrer todas as janelas de ferramentas ativas no IDE. Você também pode mudar diretamente para qualquer arquivo aberto no editor, independentemente da ordem em que ele foi acessado pela última vez. Esses recursos podem ajudar a aumentar sua produtividade ao trabalhar no IDE.
 
 > [!NOTE]
->  As opções disponíveis nas caixas de diálogo e os nomes os locais dos comandos de menu que você vê podem diferir do que é descrito na Ajuda, dependendo de suas configurações ativas ou da edição. Esta página de Ajuda foi escrita pensando nas **Configurações Gerais de Desenvolvimento**. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> As opções disponíveis nas caixas de diálogo e os nomes os locais dos comandos de menu que você vê podem diferir do que é descrito na Ajuda, dependendo de suas configurações ativas ou da edição. Esta página de Ajuda foi escrita pensando nas **Configurações Gerais de Desenvolvimento**. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="keyboard-shortcuts"></a>Atalhos de teclado
  Quase todos os comandos de menu no Visual Studio têm um atalho de teclado. Também é possível criar seus próprios atalhos personalizados. Para obter mais informações, consulte [Identificando e personalizando atalhos de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
@@ -48,7 +48,7 @@ O IDE (ambiente de desenvolvimento integrado) foi projetado para que você possa
 - Para ativar os documentos abertos na ordem inversa, pressione CTRL + SHIFT + SINAL DE SUBTRAÇÃO.
 
   > [!NOTE]
-  >  As opções **Navegar para Trás** e **Navegar para Frente** também podem ser encontradas no menu **Exibir**.
+  > As opções **Navegar para Trás** e **Navegar para Frente** também podem ser encontradas no menu **Exibir**.
 
   Você também pode mudar para um arquivo específico aberto no editor, independentemente de quando o arquivo foi acessado pela última vez, usando o **Navegador de IDE**, a lista **Arquivos Ativos** no editor ou a caixa de diálogo **Windows**.
 
@@ -59,14 +59,14 @@ O IDE (ambiente de desenvolvimento integrado) foi projetado para que você possa
   O `Window.PreviousDocumentWindowNav` permite ir para o arquivo acessado mais recentemente e `Window.NextDocumentWindowNav` permite mover-se na ordem inversa. Configurações Gerais de Desenvolvimento atribuem CTRL + SHIFT + TAB a `Window.PreviousDocumentWindowNav` e CTRL + TAB a `Window.NextDocumentWindowNav`.
 
 > [!NOTE]
->  Se a combinação de configurações que você está usando ainda não tiver uma combinação de teclas de atalho atribuída a esse comando, você poderá atribuir seu próprio comando personalizado usando a página **Teclado** da caixa de diálogo **Opções**. Para obter mais informações, consulte [Identificando e personalizando atalhos de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+> Se a combinação de configurações que você está usando ainda não tiver uma combinação de teclas de atalho atribuída a esse comando, você poderá atribuir seu próprio comando personalizado usando a página **Teclado** da caixa de diálogo **Opções**. Para obter mais informações, consulte [Identificando e personalizando atalhos de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 #### <a name="to-switch-to-specific-files-in-the-editor"></a>Para mudar para arquivos específicos no editor
 
 - Pressione CTRL + TAB para exibir o **Navegador de IDE**. Mantenha pressionada a tecla CTRL e pressione TAB repetidamente até selecionar o arquivo para o qual você deseja mudar.
 
     > [!TIP]
-    >  Para inverter a ordem em que você percorre a lista **Arquivos Ativos**, mantenha pressionadas as teclas CTRL + SHIFT e pressione a tecla TAB.
+    > Para inverter a ordem em que você percorre a lista **Arquivos Ativos**, mantenha pressionadas as teclas CTRL + SHIFT e pressione a tecla TAB.
 
      \- ou -
 
@@ -82,14 +82,14 @@ O IDE (ambiente de desenvolvimento integrado) foi projetado para que você possa
  O **Navegador de IDE** também permite percorrer as janelas de ferramenta abertas no IDE. Você pode usar qualquer um dos dois comandos para acessar o **Navegador de IDE** para percorrer janelas de ferramentas, dependendo da ordem na qual deseja percorrê-las. O `Window.PreviousToolWindowNav` permite ir para o arquivo acessado mais recentemente e `Window.NextToolWindowNav` permite mover-se na ordem inversa. Configurações gerais de desenvolvimento atribuem SHIFT + ALT + F7 a `Window.PreviousDocumentWindowNav` e ALT + F7 a `Window.NextDocumentWindowNav`.
 
 > [!NOTE]
->  Se a combinação de configurações que você está usando ainda não tiver uma combinação de teclas de atalho atribuída a esse comando, você poderá atribuir seu próprio comando personalizado usando a página **Teclado** da caixa de diálogo **Opções**. Para obter mais informações, consulte [Identificando e personalizando atalhos de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
+> Se a combinação de configurações que você está usando ainda não tiver uma combinação de teclas de atalho atribuída a esse comando, você poderá atribuir seu próprio comando personalizado usando a página **Teclado** da caixa de diálogo **Opções**. Para obter mais informações, consulte [Identificando e personalizando atalhos de teclado](../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).
 
 #### <a name="to-switch-to-a-specific-tool-window-in-the-ide"></a>Para mudar para uma janela de ferramentas específica no IDE
 
 - Pressione ALT + F7 para exibir o **Navegador de IDE**. Mantenha pressionada a tecla ALT e pressionar F7 repetidamente até que selecionar a janela para a qual você pretende mudar.
 
     > [!TIP]
-    >  Para inverter a ordem em que você percorre a lista **Janelas de Ferramentas Ativas**, mantenha pressionada as teclas ALT + SHIFT e pressione F7.
+    > Para inverter a ordem em que você percorre a lista **Janelas de Ferramentas Ativas**, mantenha pressionada as teclas ALT + SHIFT e pressione F7.
 
 ## <a name="see-also"></a>Consulte também
  [Como personalizar layouts de janela](../ide/customizing-window-layouts-in-visual-studio.md) [Atalhos de teclado padrão](../ide/default-keyboard-shortcuts-in-visual-studio.md)

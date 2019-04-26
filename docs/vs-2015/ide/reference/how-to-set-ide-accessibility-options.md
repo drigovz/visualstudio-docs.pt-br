@@ -11,12 +11,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18f03e2bd37d8275685f34a65c9ab96740ed80a3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: dbd746a52084d2a2fc90a0c6890e20687fe7ee26
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405623"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Como definir opções de acessibilidade IDE
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60051607"
  Além disso, [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] dá suporte a layouts de teclado Dvorak, que tornam os caracteres digitados com maior frequência mais acessíveis. Você também pode personalizar as teclas de atalho padrão disponíveis com [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Para obter mais informações, consulte [Identificando e personalizando atalhos de teclado](../../ide/identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md).  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="editors-dialogs-and-tool-windows"></a>Editores, caixas de diálogo e janelas de ferramentas  
  Por padrão, caixas de diálogo e janelas de ferramentas no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] usam o mesmo tamanho da fonte e as mesmas cores do sistema operacional. As configurações de cor do quadro do IDE, das caixas de diálogo, das barras de ferramentas e das janelas de ferramentas são baseadas em um esquema de cores: clara ou escuro. É possível alterar o tema da cor atual em [Geral, Ambiente, caixa de diálogo Opções](../../ide/reference/general-environment-options-dialog-box.md).  
@@ -63,7 +63,7 @@ ms.locfileid: "60051607"
 6. Em **Tamanho**, selecione um novo tamanho da fonte.  
   
     > [!NOTE]
-    >  Para redefinir o tamanho do texto em editores e janelas de ferramentas baseadas em texto, escolha **Usar Padrões**.  
+    > Para redefinir o tamanho do texto em editores e janelas de ferramentas baseadas em texto, escolha **Usar Padrões**.  
   
 7. Escolha **OK**.  
   
@@ -71,7 +71,7 @@ ms.locfileid: "60051607"
  Você também pode optar por alterar as cores padrão de texto, indicadores de margem, espaços em branco e elementos de código no editor.  
   
 > [!NOTE]
->  Para usar cores de alto contraste para todas as janelas de aplicativo no sistema operacional, pressione Esquerda <strong>ALT +</strong> Esquerda **SHIFT + PRINT SCREEN**. Se [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] estiver aberto, feche e reabra [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para implementar completamente as cores de alto contraste.  
+> Para usar cores de alto contraste para todas as janelas de aplicativo no sistema operacional, pressione Esquerda <strong>ALT +</strong> Esquerda **SHIFT + PRINT SCREEN**. Se [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] estiver aberto, feche e reabra [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] para implementar completamente as cores de alto contraste.  
   
 ##### <a name="to-change-the-color-of-items-in-the-editor"></a>Para alterar a cor de itens no editor  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2484d0fc921d8a5bb42c8e89306a57c3ab6c11d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 4c4e034659298cfa4aa67023767bd4c90ac745c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433760"
 ---
 # <a name="application-page-project-designer-visual-basic"></a>Página de Aplicativo, Designer de Projeto (Visual Basic)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Use a página **Aplicativo** do Designer de Projeto para especificar as propried
  Se você desmarcar **Namespace raiz**, será possível especificar a estrutura do namespace do seu projeto no código.  
   
 > [!NOTE]
->  Se você usar a palavra-chave global em uma [Instrução Namespace](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), será possível definir um namespace fora do namespace raiz do seu projeto. Se você desmarcar a **Namespace raiz**, `Global` se tornará o namespace de nível superior, que acaba com a necessidade da palavra-chave `Global` em uma instrução `Namespace`. Para obter mais informações, consulte "Palavra-chave nas declarações de Namespace global" em [Namespaces no Visual Basic](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).  
+> Se você usar a palavra-chave global em uma [Instrução Namespace](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2), será possível definir um namespace fora do namespace raiz do seu projeto. Se você desmarcar a **Namespace raiz**, `Global` se tornará o namespace de nível superior, que acaba com a necessidade da palavra-chave `Global` em uma instrução `Namespace`. Para obter mais informações, consulte "Palavra-chave nas declarações de Namespace global" em [Namespaces no Visual Basic](http://msdn.microsoft.com/library/cffac744-ab8c-4f1f-ba50-732c22ab4b88).  
   
  Para obter informações sobre como criar namespaces no seu código, consulte [Instrução Namespace](http://msdn.microsoft.com/library/a31fbd95-9ace-4c3d-bbb1-51222a2272b2).  
   
@@ -57,7 +57,7 @@ Use a página **Aplicativo** do Designer de Projeto para especificar as propried
  O valor padrão corresponde à estrutura de destino especificada na caixa de diálogo **Novo projeto**.  
   
 > [!NOTE]
->  Os pacotes de pré-requisitos listados na [Caixa de diálogo Pré-requisitos](../../ide/reference/prerequisites-dialog-box.md) são definidos automaticamente quando você abre a caixa de diálogo pela primeira vez. Se você alterar posteriormente a estrutura de destino do projeto, será necessário especificar os pré-requisitos manualmente para corresponder à nova estrutura de destino.  
+> Os pacotes de pré-requisitos listados na [Caixa de diálogo Pré-requisitos](../../ide/reference/prerequisites-dialog-box.md) são definidos automaticamente quando você abre a caixa de diálogo pela primeira vez. Se você alterar posteriormente a estrutura de destino do projeto, será necessário especificar os pré-requisitos manualmente para corresponder à nova estrutura de destino.  
   
  Para obter mais informações, consulte [Como destinar uma versão do .NET Framework](../../ide/how-to-target-a-version-of-the-dotnet-framework.md) e [Visão geral de multiplataforma Visual Studio](../../ide/visual-studio-multi-targeting-overview.md).  
   
@@ -69,7 +69,7 @@ Use a página **Aplicativo** do Designer de Projeto para especificar as propried
  Se você especificar a opção **Arquivo WinMD**, os tipos poderão ser projetados em uma linguagem de programação do Windows Runtime. Ao empacotar a saída do projeto como um arquivo WinMD, é possível codificar um aplicativo em várias linguagens e ter interoperação de código como se você tivesse escrito tudo na mesma linguagem. É possível usar a opção **Arquivo WinMD** para soluções que direcionam as bibliotecas do Windows Runtime, incluindo os aplicativos [!INCLUDE[win8_appname_long](../../includes/win8-appname-long-md.md)]. Para obter mais informações, consulte [Criando componentes do Windows Runtime em C# e Visual Basic](http://go.microsoft.com/fwlink/?LinkId=231895).  
   
 > [!NOTE]
->  O Windows Runtime pode projetar tipos para que eles sejam exibidos como objetos nativos em qualquer que os use. Por exemplo, aplicativos JavaScript que interagem com o Windows Runtime usam-no como um conjunto de objetos JavaScript e aplicativos C# usam a biblioteca como uma coleção de objetos .NET. Ao empacotar a saída do projeto como um arquivo WinMD, é possível usar a mesma tecnologia que o Windows Runtime usa.  
+> O Windows Runtime pode projetar tipos para que eles sejam exibidos como objetos nativos em qualquer que os use. Por exemplo, aplicativos JavaScript que interagem com o Windows Runtime usam-no como um conjunto de objetos JavaScript e aplicativos C# usam a biblioteca como uma coleção de objetos .NET. Ao empacotar a saída do projeto como um arquivo WinMD, é possível usar a mesma tecnologia que o Windows Runtime usa.  
   
  Para obter mais informações sobre a propriedade **Tipo de aplicativo**, consulte [/target (Visual Basic)](http://msdn.microsoft.com/library/e0954147-548b-461f-9c4b-a8f88845616c). Para obter informações sobre como acessar essa propriedade de forma programática, consulte <xref:VSLangProj.ProjectProperties.OutputType%2A>.  
   
