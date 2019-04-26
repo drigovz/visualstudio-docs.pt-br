@@ -24,12 +24,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e4010d474c2f1ab1997b372fa551e168fe618021
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.openlocfilehash: 0d24556be75547a4944ad1faca47c4545f8812ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410044"
 ---
 # <a name="task-list-environment-options-dialog-box"></a>Caixa de diálogo Lista de Tarefas, Ambiente, Opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Esta página Opções permite a você adicionar, excluir e alterar os tokens de 
  Quando selecionada, uma caixa de mensagem é exibida sempre que uma Tarefa de Usuário é excluída da **Lista de Tarefas**, permitindo que você confirme a exclusão. Essa opção é habilitada por padrão.  
   
 > [!NOTE]
->  Para excluir um Comentário de Tarefa, use o link para localizar o comentário e, em seguida, remova-o do seu código.  
+> Para excluir um Comentário de Tarefa, use o link para localizar o comentário e, em seguida, remova-o do seu código.  
   
  Mostrar apenas nomes de arquivo  
  Quando selecionada, a coluna **Arquivo** da **Lista de Tarefas** exibe somente os nomes dos arquivos a serem editados, não seus caminhos completos.  
@@ -53,7 +53,7 @@ Esta página Opções permite a você adicionar, excluir e alterar os tokens de 
  Exibe uma lista de tokens e permite que você adicione ou remova tokens personalizados. Tokens de comentário diferenciam maiúsculas de minúsculas no Visual C# e no Visual C++, mas não no Visual Basic.  
   
 > [!NOTE]
->  Se você não digitar o token desejado exatamente como ele é exibido na **Lista de Tokens**, uma tarefa de comentário não será exibida na **Lista de Tarefas**.  
+> Se você não digitar o token desejado exatamente como ele é exibido na **Lista de Tokens**, uma tarefa de comentário não será exibida na **Lista de Tarefas**.  
   
  Prioridade  
  Define a prioridade das tarefas que usam o token selecionado. Os comentários de tarefa que começam com esse token recebem automaticamente a prioridade designada na **Lista de Tarefas**.  
@@ -71,7 +71,7 @@ Esta página Opções permite a você adicionar, excluir e alterar os tokens de 
  Clique para fazer alterações em um token existente usando os valores inseridos nos campos **Nome** e **Prioridade**.  
   
 > [!NOTE]
->  Não é possível renomear nem excluir o token de comentário padrão, mas é possível alterar seu nível de prioridade.  
+> Não é possível renomear nem excluir o token de comentário padrão, mas é possível alterar seu nível de prioridade.  
   
 ## <a name="see-also"></a>Consulte também  
  [Usando a Lista de Tarefas](../../ide/using-the-task-list.md)   
