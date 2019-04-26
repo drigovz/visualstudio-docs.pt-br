@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a9298f57e3b1f4a05effcb82a39e14503c9cbf74
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 7097311c3d1aae718096c3bf74ec04c3e5ea8818
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433583"
 ---
 # <a name="item-definitions"></a>Definições de itens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 permite a declara
  Metadados do item que são definido em um ItemDefinitionGroup são apenas uma declaração de metadados padrão. Os metadados não se aplicam a menos que você defina um Item que use um ItemGroup para conter os valores de metadados.  
   
 > [!NOTE]
->  Em muitos dos exemplos neste tópico, um elemento ItemDefinitionGroup é mostrado mas sua definição de ItemGroup correspondente é omitida para fins de clareza.  
+> Em muitos dos exemplos neste tópico, um elemento ItemDefinitionGroup é mostrado mas sua definição de ItemGroup correspondente é omitida para fins de clareza.  
   
  Os metadados definidos explicitamente em um ItemGroup têm precedência sobre metadados em ItemDefinitionGroup. Os metadados em ItemDefinitionGroup são aplicados somente a metadados indefinidos em um ItemGroup. Por exemplo:  
   
@@ -61,7 +61,7 @@ O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 permite a declara
  Nesse exemplo, os metadados padrão "m" são aplicados ao Item "i" porque os metadados "m" não estão explicitamente definidos pelo Item "i". No entanto, os metadados padrão "n" não são aplicados ao Item "i" porque os metadados "n" já estão definidos pelo Item "i".  
   
 > [!NOTE]
->  Nomes de parâmetro e de elemento XML diferenciam maiúsculas e minúsculas. Nomes de metadados de item e de propriedades de item não diferenciam maiúsculas e minúsculas. Portanto, itens ItemDefinitionGroup que têm nomes que diferem somente por maiúsculas e minúsculas devem ser tratados como o mesmo ItemGroup.  
+> Nomes de parâmetro e de elemento XML diferenciam maiúsculas e minúsculas. Nomes de metadados de item e de propriedades de item não diferenciam maiúsculas e minúsculas. Portanto, itens ItemDefinitionGroup que têm nomes que diferem somente por maiúsculas e minúsculas devem ser tratados como o mesmo ItemGroup.  
   
 ## <a name="value-sources"></a>Fontes de valores  
  Os valores dos metadados definidos em um ItemDefinitionGroup podem vir de várias fontes diferentes, da seguinte maneira:  
@@ -83,7 +83,7 @@ O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 permite a declara
 - Seção CDATA \<\!\[CDATA\[qualquer conteúdo presente aqui não será analisado\]\]\>  
   
 > [!NOTE]
->  Metadados de item de um ItemGroup não são úteis em uma declaração de metadados de ItemDefinitionGroup porque elementos de ItemDefinitionGroup são processados antes de elementos de ItemGroup.  
+> Metadados de item de um ItemGroup não são úteis em uma declaração de metadados de ItemDefinitionGroup porque elementos de ItemDefinitionGroup são processados antes de elementos de ItemGroup.  
   
 ## <a name="additive-and-multiple-definitions"></a>Aditivos e várias definições  
  Quando você adicionar definições ou usar vários ItemDefinitionGroups, lembre-se do seguinte:  
@@ -128,7 +128,7 @@ O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 permite a declara
  Neste exemplo, o valor \(m1\) definido anteriormente para metadados "m" é adicionado ao novo valor \(m2\), de modo que o valor final é "m1; m2".  
   
 > [!NOTE]
->  Isso também pode ocorrer no mesmo ItemDefinitionGroup.  
+> Isso também pode ocorrer no mesmo ItemDefinitionGroup.  
   
  Quando você substituir os metadados definidos anteriormente, a última especificação terá precedência. No exemplo a seguir, o valor final de metadados "m" muda de "m1" para "m1a".  
   
@@ -159,7 +159,7 @@ O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] 2.0 permite a declara
  Nesse caso, os metadados padrão "m1" no item "i" são incluídos somente se o valor da propriedade "Configuration" é "Debug".  
   
 > [!NOTE]
->  Somente as referências de metadados locais têm suporte em condições.  
+> Somente as referências de metadados locais têm suporte em condições.  
   
  Referências a metadados definidos em um ItemDefinitionGroup anterior são locais para o item, não para o grupo de definição. Ou seja, o escopo das referências é específico de cada item. Por exemplo:  
   
