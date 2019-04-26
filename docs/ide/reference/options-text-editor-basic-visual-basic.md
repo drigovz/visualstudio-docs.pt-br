@@ -18,12 +18,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7ea9c2efd6a204932e24de0ef250ba143b8b34
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: aa331fea595c2143dd3ab47aa562fbd61277f81f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817782"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>Opções, Editor de Texto, Basic (Visual Basic), Avançado
 A página de propriedades **Específico do VB**, na pasta **Básico** da pasta **Editor de Texto** da caixa de diálogo **Opções** (menu **Ferramentas**) inclui as seguintes propriedades:
@@ -50,7 +50,6 @@ A página de propriedades **Específico do VB**, na pasta **Básico** da pasta *
    Quando essas opções estiverem selecionadas, uma [Ação Rápida](../quick-actions.md) estará disponível para instalar um pacote NuGet e para adicionar uma diretiva `using` para tipos não referenciados.
 
    ![Ação rápida para instalar o pacote NuGet no Visual Studio](media/nuget-lightbulb.png)
-
 
 ## <a name="highlighting"></a>Realce
 
@@ -82,19 +81,19 @@ Quando essa opção estiver selecionada, as linhas verticais serão exibidas no 
 
 **Reformatação automática do código** O editor de texto reformata seu código conforme o necessário. Quando essa opção é selecionada, o editor de códigos:
 
--   Alinhará seu código com a posição correta de guia
+- Alinhará seu código com a posição correta de guia
 
--   Redefinirá as maiúsculas e minúsculas de palavras-chave, variáveis e objetos para o formato correto
+- Redefinirá as maiúsculas e minúsculas de palavras-chave, variáveis e objetos para o formato correto
 
--   Adicionará um `Then` ausente a uma instrução `If...Then`
+- Adicionará um `Then` ausente a uma instrução `If...Then`
 
--   Adicionará parênteses a chamadas de função
+- Adicionará parênteses a chamadas de função
 
--   Adicionará aspas finais faltando a cadeias de caracteres
+- Adicionará aspas finais faltando a cadeias de caracteres
 
--   Reformatará notação exponencial
+- Reformatará notação exponencial
 
--   Reformatará datas
+- Reformatará datas
 
 **Inserção automática de constructos finais**
 

@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Saiba como os administradores de assinaturas podem acessar o portal de administração e gerenciar as assinaturas adquiridas por meio de VL (licenciamento por volume)
 searchscope: VS Subscription
 ms.openlocfilehash: 6c8a68a1a25e99018e7f41fedbfc9d01b191e2e7
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428034"
 ---
 # <a name="accessing-the-portal-and-managing-administrators---for-subscriptions-acquired-through-volume-licensing-vl"></a>Acessando o portal e gerenciando administradores – para assinaturas adquiridas por meio de VL (licenciamento por volume)
 

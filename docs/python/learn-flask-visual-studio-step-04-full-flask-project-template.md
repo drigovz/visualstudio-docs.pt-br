@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3c583ee2dd652a81410a756a5297e570afb20f76
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 9f4c165f3e882cea71ee4aaff9f2358c27ce6a2b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957217"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>Etapa 4: Usar o modelo completo de Projeto Web do Flask
 
@@ -169,6 +169,7 @@ O arquivo *\_\_init\_\_.py* do aplicativo contém uma linha para
 ```python
 app.jinja_env.add_extension('pyjade.ext.jinja.PyJadeExtension')
 ```
+
 Na pasta *templates*, são exibidos arquivos *.jade* em vez de modelos *.html*, e as exibições em *views.py* referenciam esses arquivos em suas chamadas a `flask.render_template`. Caso contrário, o código de modos de exibição é o mesmo.
 
 Abrindo um dos arquivos *.jade*, você pode ver a expressão mais sucinta de um modelo. Por exemplo, este é o conteúdo de *templates/layout.jade*, conforme criado pelo modelo "Projeto Web do Flask/Jade":

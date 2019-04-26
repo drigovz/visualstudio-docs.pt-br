@@ -11,12 +11,12 @@ ms.assetid: 716c2af5-8737-4d31-956f-a0273f7c5c0c
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7bc496c4f6a445ffd43e992302457bdb92f3239a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 477ab8ce86188af9a3db03b92e1ea0f574d8a6a3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55949857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949910"
 ---
 # <a name="how-to-export-load-test-results-from-a-repository"></a>Como: Exportar os resultados do teste de carga de um repositório
 
@@ -28,25 +28,25 @@ Quando você executar um teste de carga, as informações coletadas durante a ex
 
 ## <a name="to-export-results-from-a-repository"></a>Para exportar resultados de um repositório
 
-1.  De um projeto de teste de carga e de desempenho na Web, abra um teste de carga.
+1. De um projeto de teste de carga e de desempenho na Web, abra um teste de carga.
 
-2.  Na barra de ferramentas inserida, escolha **Abrir e gerenciar resultados**.
+2. Na barra de ferramentas inserida, escolha **Abrir e gerenciar resultados**.
 
      A caixa de diálogo **Abrir e gerenciar resultados de testes de carga** é exibida.
 
-3.  Em **Digite um nome de controlador para encontrar resultados de testes de carga**, selecione um controlador. Selecione **\<Local – Nenhum controlador** para acessar resultados armazenados localmente.
+3. Em **Digite um nome de controlador para encontrar resultados de testes de carga**, selecione um controlador. Selecione **\<Local – Nenhum controlador** para acessar resultados armazenados localmente.
 
-4.  Em **Exibir resultados para o seguinte teste de carga**, selecione o teste de carga cujos resultados deseja exibir. Selecione **\<Mostrar resultados para todos os testes>** para ver todos os resultados de todos os testes.
+4. Em **Exibir resultados para o seguinte teste de carga**, selecione o teste de carga cujos resultados deseja exibir. Selecione **\<Mostrar resultados para todos os testes>** para ver todos os resultados de todos os testes.
 
      Se resultados de testes de carga estiverem disponíveis, eles aparecerão na lista **Resultados de testes de carga**. As colunas são **Hora**, **Duração**, **Usuário**, **Resultado**, **Teste** e **Descrição**. **Teste** contém o nome do teste e **Descrição** contém a descrição opcional adicionada antes da execução do teste. A coluna **Descrição** exibe as descrições resumidas inseridas nos **Comentários de Análise** para esse resultado do teste.
 
-5.  Na lista **Resultados de testes de carga**, escolha um resultado. Use a tecla **Shift**, a tecla **Ctrl** ou ambas para selecionar mais de um resultado e exportá-los para um único arquivo.
+5. Na lista **Resultados de testes de carga**, escolha um resultado. Use a tecla **Shift**, a tecla **Ctrl** ou ambas para selecionar mais de um resultado e exportá-los para um único arquivo.
 
-6.  Escolha **Exportar**.
+6. Escolha **Exportar**.
 
      A caixa de diálogo **Exportar resultados de teste de carga** é exibida.
 
-7.  Na caixa **Nome do arquivo**, digite um nome e escolha **Salvar**.
+7. Na caixa **Nome do arquivo**, digite um nome e escolha **Salvar**.
 
      Os resultados são exportados para um arquivo morto.
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb06b656b107dce623ea75df162b20a1ea34b401
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f8a2f4810c8a485d6b9013f658e221db39d8071f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56610314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63003353"
 ---
 # <a name="generatedeploymentmanifest-task"></a>Tarefa GenerateDeploymentManifest
 
@@ -31,7 +31,6 @@ Gera um manifesto de implantação do [!INCLUDE[ndptecclick](../deployment/inclu
 ## <a name="parameters"></a>Parâmetros
 
 A tabela a seguir descreve os parâmetros da tarefa `GenerateDeploymentManifest`.
-
 
 | Parâmetro | Descrição |
 |--------------------------| - |

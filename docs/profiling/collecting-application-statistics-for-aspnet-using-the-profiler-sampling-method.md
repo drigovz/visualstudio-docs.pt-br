@@ -11,22 +11,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: f8fd108e71a49e8860a0fd4fec8751da4bc81644
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 6ff7f1596d9b3336cb7fdbc02de7d1bc10172f94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405759"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>Coletar estatísticas para aplicativos Web ASP.NET
 
 Esta seção descreve os procedimentos e as opções para coletar estatísticas de desempenho de um aplicativo Web ASP .NET usando a ferramenta de linha de comando **VSPerfASPNETCmd** e **VSPerfCmd** e o método de criação de perfil de amostragem.
 
 > [!NOTE]
->  Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 > [!NOTE]
->  Embora a ferramenta **VSPerfCmd** forneça acesso completo à funcionalidade de Ferramentas de Criação de Perfil, inclusive pausar e retomar a criação de perfil e coletar outros dados do processador e de contadores de desempenho do Windows, você deverá usar a ferramenta de linha de comando **VSPerfASPNETCmd** quando não precisar dessa funcionalidade. A ferramenta de linha de comando **VSPerfASPNETCmd** é o método de preferência quando você está criando o perfil de sites da Web ASP.NET usando o criador de perfil autônomo. Em comparação com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), nenhuma variável de ambiente precisa ser definida nem é necessário reiniciar o computador. Para saber mais, confira [Criação de perfil de site rápida com VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
+> Embora a ferramenta **VSPerfCmd** forneça acesso completo à funcionalidade de Ferramentas de Criação de Perfil, inclusive pausar e retomar a criação de perfil e coletar outros dados do processador e de contadores de desempenho do Windows, você deverá usar a ferramenta de linha de comando **VSPerfASPNETCmd** quando não precisar dessa funcionalidade. A ferramenta de linha de comando **VSPerfASPNETCmd** é o método de preferência quando você está criando o perfil de sites da Web ASP.NET usando o criador de perfil autônomo. Em comparação com a ferramenta de linha de comando [VSPerfCmd](../profiling/vsperfcmd.md), nenhuma variável de ambiente precisa ser definida nem é necessário reiniciar o computador. Para saber mais, confira [Criação de perfil de site rápida com VSPerfASPNETCmd](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md).
 
 ## <a name="common-tasks"></a>Tarefas comuns
 

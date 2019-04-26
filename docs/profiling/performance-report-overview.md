@@ -12,20 +12,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 26cc1d8c0063d23b20c6c0a8938a67793a2a1532
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 04abc2de21469b696df1365b001b60b9b3ba5e8c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432018"
 ---
 # <a name="performance-report-overview"></a>Visão geral do relatório de desempenho
 Você pode exibir os dados de criação de perfil de uma sessão de desempenho na janela **Relatório de Desempenho** do IDE (Ambiente de Desenvolvimento Integrado) do Visual Studio Team System Development Edition. Os dados de criação de perfil são salvos em arquivos .vsp e .vsps. As janelas de exibição de relatório permitem exibir e analisar problemas de desempenho do aplicativo.
 
 > [!CAUTION]
->  Um arquivo de dados de criação de perfil contém informações confidenciais como o nome do computador, a versão do sistema operacional, caminhos de arquivo, informações de memória e outras informações de configuração do computador. Você deve manter um controle restrito sobre a distribuição de dados, tanto em seu formato nativo .*vsp* quanto no formato exportado para um arquivo .*csv* ou .*xml*.
+> Um arquivo de dados de criação de perfil contém informações confidenciais como o nome do computador, a versão do sistema operacional, caminhos de arquivo, informações de memória e outras informações de configuração do computador. Você deve manter um controle restrito sobre a distribuição de dados, tanto em seu formato nativo .*vsp* quanto no formato exportado para um arquivo .*csv* ou .*xml*.
 >
->  Se os dados de rastreamento de eventos forem coletados como parte da sessão de desempenho, informações adicionais poderão aparecer no arquivo de log de rastreamento de eventos (.*etl*). Essas informações incluem seu nome de usuário e domínio, por isso, você deve manter um rígido controle sobre a distribuição do arquivo de log.
+> Se os dados de rastreamento de eventos forem coletados como parte da sessão de desempenho, informações adicionais poderão aparecer no arquivo de log de rastreamento de eventos (.*etl*). Essas informações incluem seu nome de usuário e domínio, por isso, você deve manter um rígido controle sobre a distribuição do arquivo de log.
 
 ## <a name="performance-report-window"></a>Janela Relatório de Desempenho
  A janela Relatório de Desempenho é uma janela de ferramentas que é usada para exibir, gerenciar e filtrar dados de desempenho e inclui um controle de consulta personalizável.
@@ -79,19 +79,19 @@ Você pode exibir os dados de criação de perfil de uma sessão de desempenho n
 ## <a name="customizable-filter-control"></a>Controle de filtro personalizável
  O controle de filtro personalizável tem as seguintes opções:
 
--   **Importar Filtro** – recupera uma consulta personalizada salva anteriormente.
+- **Importar Filtro** – recupera uma consulta personalizada salva anteriormente.
 
--   **Exportar Filtro** – salva a consulta personalizada para o local especificado.
+- **Exportar Filtro** – salva a consulta personalizada para o local especificado.
 
--   **Executar Consulta** – executa a consulta, conforme exibido no controle de consulta personalizada.
+- **Executar Consulta** – executa a consulta, conforme exibido no controle de consulta personalizada.
 
--   **Parar Consulta** – interrompe a execução de uma consulta que está em execução. Este botão não estará disponível se nenhuma consulta estiver em execução.
+- **Parar Consulta** – interrompe a execução de uma consulta que está em execução. Este botão não estará disponível se nenhuma consulta estiver em execução.
 
--   **Mostrar Consulta** – Mostra/oculta o controle de consulta personalizada.
+- **Mostrar Consulta** – Mostra/oculta o controle de consulta personalizada.
 
--   **Salvar Analisados** – salva o relatório junto com sua análise atual como um arquivo .vsps.
+- **Salvar Analisados** – salva o relatório junto com sua análise atual como um arquivo .vsps.
 
--   **Exportar** – salva o relatório atual como um arquivo formatado em .CVS ou .XML, com opções para salvar as diferentes exibições.
+- **Exportar** – salva o relatório atual como um arquivo formatado em .CVS ou .XML, com opções para salvar as diferentes exibições.
 
 ## <a name="see-also"></a>Consulte também
 - [Analisar dados de ferramentas de desempenho](../profiling/analyzing-performance-tools-data.md)

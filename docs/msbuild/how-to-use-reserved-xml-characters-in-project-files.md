@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 02c5693a2edca0d81e21e73215e00f25aae939eb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: c79dfa33af5e0e80db682f272c5673856dbbcd8d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603854"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840376"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>Como: Usar caracteres XML reservados em arquivos de projeto
 Quando você cria arquivos de projeto, talvez seja necessário usar caracteres XML reservados, por exemplo, nos valores de propriedade ou em valores de parâmetro de tarefa. No entanto, alguns caracteres reservados devem ser substituídos por uma entidade nomeada para que o arquivo de projeto possa ser analisado.
@@ -34,7 +34,7 @@ Quando você cria arquivos de projeto, talvez seja necessário usar caracteres X
 
 #### <a name="to-use-double-quotes-in-a-project-file"></a>Para usar aspas duplas em um arquivo de projeto
 
--   Substitua as aspas duplas pela entidade nomeada correspondente, &amp;quot;. Por exemplo, para colocar aspas duplas em torno da lista de itens `EXEFile`, digite:
+- Substitua as aspas duplas pela entidade nomeada correspondente, &amp;quot;. Por exemplo, para colocar aspas duplas em torno da lista de itens `EXEFile`, digite:
 
     ```xml
     <Message Text="The output file is &quot;@(EXEFile)&quot;."/>

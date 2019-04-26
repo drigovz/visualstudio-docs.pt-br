@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: eaf6f82cdc40b174dcd1ca8deb12c412fe675d70
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 8ceee693ee7b20e7045aa8bca4b895a0df383c80
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568368"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62933606"
 ---
 # <a name="introduction-to-azure-functions"></a>Introdução ao Azure Functions
 
@@ -149,9 +149,7 @@ Desse ponto em diante, você pode definir as configurações do aplicativo para 
     - Http POST CRUD
     - Gatilho Http com parâmetros
 
-
 - **Temporizador** – Execute a limpeza ou outras tarefas em lote seguindo um cronograma predefinido. Esse modelo tem dois campos: um nome e um cronograma, que é uma expressão CRON de seis campos. Para obter mais informações, consulte o [Artigo do Azure Functions sobre o Temporizador](/azure/azure-functions/functions-create-scheduled-function)
-
 
 - **Gatilho de fila** – Esta é uma função que responderá às mensagens conforme elas chegarem na fila do Armazenamento do Azure. Além do nome da função, esse modelo tem um **Caminho** (o nome da fila da qual a mensagem será lida) e uma **Conexão** da conta de armazenamento (o nome da configuração de aplicativo que contém a cadeia de conexão da conta de armazenamento). Para obter mais informações, consulte o [Artigo do Azure Functions sobre o Armazenamento de Filas](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 

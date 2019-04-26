@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Saiba mais sobre o benefício LinkedIn Learning incluído como parte de uma assinatura Premium do LinkedIn incluída em assinaturas selecionadas do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 2f1e465be1d9c81235af1bad723f827a0f04147c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: b6d60a5bedb960c2302a8823d1248b36849c604d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948509"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>O benefício LinkedIn Learning em assinaturas do Visual Studio
 
@@ -28,7 +28,6 @@ Para ativar a assinatura Premium do LinkedIn e o benefício do LinkedIn Learning
 2. Localize o bloco do LinkedIn Learning na categoria Educação e clique no link **Obter código**.
    > [!div class="mx-imgBorder"]
    > ![Bloco do Benefício do LinkedIn Learning](_img/vs-linkedin/vs-linkedin-3-month-tile.png)
-
 
 3. Caso já tenha uma conta do LinkedIn com entrada automática, você será levado imediatamente para a página de ativação do LinkedIn Learning.  Caso já tenha uma conta do LinkedIn sem entrada automática, basta digitar seu nome de usuário e senha e clicar em **Entrar**.  Passe para [esta etapa](#activate-your-offer) para ativar sua oferta.
 
@@ -80,7 +79,6 @@ Para ativar a assinatura Premium do LinkedIn e o benefício do LinkedIn Learning
    > [!div class="mx-imgBorder"]
    > ![Ativar o LinkedIn Learning](_img/vs-linkedin/vs-linkedin-Activate1.png)
 
-
 16. Você pode começar a explorar as habilidades que lhe interessam.  Escolha na lista de recomendações, pesquise outras habilidades ou clique em **Ignorar** para continuar sem escolher habilidades.
    > [!div class="mx-imgBorder"]
    > ![Habilidades no LinkedIn Learning](_img/vs-linkedin/vs-linkedin-skills.png)
@@ -97,15 +95,13 @@ Para ativar a assinatura Premium do LinkedIn e o benefício do LinkedIn Learning
 | Visual Studio Professional (Standard) | VL, Azure, Retail                                       | 3 meses                                                            |Nº  Disponível apenas para novos assinantes         |
 | Visual Studio Test Professional (Padrão)                         | VL, Retail                                              | 3 meses                                             |  Nº  Disponível apenas para novos assinantes         |
 | Plataformas MSDN (Padrão)                                          | VL, Retail                                              | 3 meses                                              | Nº  Disponível apenas para novos assinantes         |
-| Visual Studio Dev Essentials | NA  | 3 meses |Nº  Disponível apenas para novos assinantes |
+| Visual Studio Dev Essentials | NA  | Não disponível |NA|
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure                                       | Não disponível                                                           |NA|
 
 <sup>1</sup> *Inclui:  NFR (Proibida a revenda) e VSIP (Visual Studio Industry Partner).  Exclui:  MPN (Microsoft Partner Network), FTE, MCT Software & Services Developer, BizSpark, Imagine, MVP (Most Valuable Professional), RD (Diretor regional).  MCT Software & Services.*
 
-
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
-
 
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
@@ -114,8 +110,8 @@ Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://
 R:  Não, a oferta LinkedIn Learning está disponível somente para novos assinantes.
 
 ## <a name="support-resources"></a>Recursos de suporte
--  Precisa de ajuda com o LinkedIn Learning?  Confira estes recursos:
+- Precisa de ajuda com o LinkedIn Learning?  Confira estes recursos:
     - Ajuda para [usar o LinkedIn Learning](https://www.linkedin.com/help/learning).
     - Ajuda para dúvidas gerais sobre o [LinkedIn](https://www.linkedin.com/help/linkedin), como criar perfis e contas e manter a rede.
--  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
--  Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
+- Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
+- Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).

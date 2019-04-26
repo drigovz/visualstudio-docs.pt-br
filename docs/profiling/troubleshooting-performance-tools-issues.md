@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 68250d8767910106ab7e6a3c3239beeb292bdfd8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ef65019223ba1978ea31fbdb9020993a166da89b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422194"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>Solução de problemas das ferramentas de desempenho
 Você pode ter um dos seguintes problemas ao usar as ferramentas de criação de perfil:
 
--   [Nenhum dado é coletado pelas ferramentas de criação de perfil](#no-data-is-collected-by-the-profiling-tools)
+- [Nenhum dado é coletado pelas ferramentas de criação de perfil](#no-data-is-collected-by-the-profiling-tools)
 
--   [As Exibições de Desempenho e os relatórios exibem números para nomes de função](#performance-views-and-reports-display-numbers-for-function-names)
+- [As Exibições de Desempenho e os relatórios exibem números para nomes de função](#performance-views-and-reports-display-numbers-for-function-names)
 
 ## <a name="no-data-is-collected-by-the-profiling-tools"></a>Nenhum dado é coletado pelas ferramentas de criação de perfil
  Depois que você analisa um aplicativo, um arquivo de dados de criação de perfil (.*vsp*) não é criado e você recebe o seguinte aviso na janela de **Saída** ou na janela Comando:
@@ -29,7 +29,7 @@ Você pode ter um dos seguintes problemas ao usar as ferramentas de criação de
 
  Esse problema pode ser causado por vários motivos:
 
--   Um processo para o qual foi criado um perfil usando a amostragem ou o método de memória .NET inicia um processo filho que se torna o processo que executa o trabalho do aplicativo. Por exemplo, alguns aplicativos leem a linha de comando para determinar se foram iniciados como um aplicativo do Windows ou um aplicativo de linha de comando. Se um aplicativo do Windows foi solicitado, o processo original iniciará um novo processo configurado como um aplicativo do Windows e o processo original será encerrado. Como as ferramentas de criação de perfil não coletam dados automaticamente para processos filho, nenhum dado é coletado.
+- Um processo para o qual foi criado um perfil usando a amostragem ou o método de memória .NET inicia um processo filho que se torna o processo que executa o trabalho do aplicativo. Por exemplo, alguns aplicativos leem a linha de comando para determinar se foram iniciados como um aplicativo do Windows ou um aplicativo de linha de comando. Se um aplicativo do Windows foi solicitado, o processo original iniciará um novo processo configurado como um aplicativo do Windows e o processo original será encerrado. Como as ferramentas de criação de perfil não coletam dados automaticamente para processos filho, nenhum dado é coletado.
 
      Para coletar dados de criação de perfil nessa situação, anexe o criador de perfil ao processo filho em vez de iniciar o aplicativo com o criador de perfil. Para obter mais informações, confira [Como: Como anexar e desanexar ferramentas de desempenho de processos em execução](../profiling/how-to-attach-and-detach-performance-tools-to-running-processes.md) e [Anexar (VSPerfCmd)](../profiling/attach.md)
 
@@ -40,9 +40,9 @@ Você pode ter um dos seguintes problemas ao usar as ferramentas de criação de
 
  Você pode corrigir o problema em uma das duas maneiras:
 
--   Encontre os arquivos .*pdb* e coloque-os no mesmo diretório dos arquivos de aplicativo.
+- Encontre os arquivos .*pdb* e coloque-os no mesmo diretório dos arquivos de aplicativo.
 
--   Insira as informações de símbolo no arquivo de dados de criação de perfil (.*vsp*). Para obter mais informações, confira [Salvar informações de símbolo com arquivos de dados de desempenho](../profiling/saving-symbol-information-with-performance-data-files.md).
+- Insira as informações de símbolo no arquivo de dados de criação de perfil (.*vsp*). Para obter mais informações, confira [Salvar informações de símbolo com arquivos de dados de desempenho](../profiling/saving-symbol-information-with-performance-data-files.md).
 
 > [!NOTE]
->  O mecanismo de análise exige que o arquivo .*pdb* tenha a mesma versão do arquivo de aplicativo compilado. Um arquivo .*pdb* de um build anterior ou posterior do arquivo de aplicativo não funcionará.
+> O mecanismo de análise exige que o arquivo .*pdb* tenha a mesma versão do arquivo de aplicativo compilado. Um arquivo .*pdb* de um build anterior ou posterior do arquivo de aplicativo não funcionará.

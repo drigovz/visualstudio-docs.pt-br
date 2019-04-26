@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 20f5a8b3400ab70db9988fcb38bdc26e15307d36
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: abfe762b354d11297aa4d0c574b8f0e0a081d349
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438002"
 ---
 # <a name="debug-a-javascript-or-typescript-app-in-visual-studio"></a>Depurar um aplicativo JavaScript ou TypeScript no Visual Studio
 
@@ -62,8 +62,10 @@ Para anexar o depurador por meio do Visual Studio e atingir pontos de interrupç
     Esse comando inicia o Chrome com a depuração habilitada.
 
     ::: moniker range=">=vs-2019"
+
     > [!NOTE]
     > Você também pode definir o sinalizador `--remote-debugging-port` na inicialização do navegador selecionando **Procurar Com...** > na barra de ferramentas **Depurar**, escolhendo **Adicionar** e, em seguida, definindo o sinalizador no campo **Argumentos**. Usar um nome amigável diferente para o navegador, como **Chrome com depuração**. Para obter detalhes, confira [Notas sobre a versão](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+
     ::: moniker-end
 
 3. Alterne para o Visual Studio e defina um ponto de interrupção no código-fonte. (Defina o ponto de interrupção em uma linha de código que permita pontos de interrupção, como uma instrução `return` ou uma declaração `var`).

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: afa9be494aaaf79b7235cb9af2393406a6e49abf
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b84d78426ccc3294d908e52ee87ce6d521da89cd
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56634416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004584"
 ---
 # <a name="msbuild-targets"></a>Destinos do MSBuild
 Destinos agrupam tarefas em uma ordem específica e permitem que o processo de build seja decomposto em unidades menores. Por exemplo, um destino pode excluir todos os arquivos no diretório de saída para se preparar para o build, enquanto outro compila as entradas para o projeto e as coloca no diretório vazio. Para obter mais informações sobre tarefas, consulte [Tarefas](../msbuild/msbuild-tasks.md).
@@ -45,15 +45,15 @@ Destinos agrupam tarefas em uma ordem específica e permitem que o processo de b
 ## <a name="target-build-order"></a>Ordem de build de destino
  Os destinos deverão ser ordenados se a entrada para um destino depender da saída de outro. Há várias maneiras de especificar a ordem na qual os destinos são executados.
 
--   Destinos Iniciais
+- Destinos Iniciais
 
--   Destinos padrão
+- Destinos padrão
 
--   Primeiro destino
+- Primeiro destino
 
--   Dependências de destino
+- Dependências de destino
 
--   `BeforeTargets` e `AfterTargets` (MSBuild 4.0)
+- `BeforeTargets` e `AfterTargets` (MSBuild 4.0)
 
 Um destino nunca é executado duas vezes durante uma único build, mesmo se um destino posterior no build depender dele. Depois da execução de um destino, sua contribuição para o build será concluída.
 

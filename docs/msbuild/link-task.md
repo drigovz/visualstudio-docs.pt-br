@@ -30,12 +30,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 55d84dc8aed00cf037efc8b35efa13fa712092c7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 58691d5c6a7f44361d40a50898395ed1200a06c6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627149"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817630"
 ---
 # <a name="link-task"></a>tarefa de vinculação
 Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de vinculador vincula arquivos-objeto e bibliotecas de formato COFF para criar um arquivo *.exe* (executável) ou uma DLL (biblioteca de vínculo dinâmico). Para obter mais informações, confira [Opções do vinculador](/cpp/build/reference/linker-options).
@@ -43,7 +43,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 ## <a name="parameters"></a>Parâmetros
  Veja a seguir uma descrição dos parâmetros da tarefa **Link**. A maioria dos parâmetros de tarefa e alguns conjuntos de parâmetros correspondem a uma opção de linha de comando.
 
--   **AdditionalDependencies**
+- **AdditionalDependencies**
 
      Parâmetro **String[]** opcional.
 
@@ -51,7 +51,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [Arquivos de entrada LINK](/cpp/build/reference/link-input-files).
 
--   **AdditionalLibraryDirectories**
+- **AdditionalLibraryDirectories**
 
      Parâmetro **String[]** opcional.
 
@@ -59,7 +59,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, consulte [/LIBPATH (Libpath Adicional)](/cpp/build/reference/libpath-additional-libpath).
 
--   **AdditionalManifestDependencies**
+- **AdditionalManifestDependencies**
 
      Parâmetro **String[]** opcional.
 
@@ -67,7 +67,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/MANIFESTDEPENDENCY (Especificar dependências de manifesto)](/cpp/build/reference/manifestdependency-specify-manifest-dependencies). Confira também [Arquivos de configuração de editor](https://docs.microsoft.com/windows/desktop/SbsCs/publisher-configuration-files).
 
--   **AdditionalOptions**
+- **AdditionalOptions**
 
      Parâmetro **String** opcional.
 
@@ -75,7 +75,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [Opções do vinculador](/cpp/build/reference/linker-options).
 
--   **AddModuleNamesToAssembly**
+- **AddModuleNamesToAssembly**
 
      Parâmetro **String[]** opcional.
 
@@ -83,7 +83,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/ASSEMBLYMODULE (Adicionar um módulo MSIL ao assembly)](/cpp/build/reference/assemblymodule-add-a-msil-module-to-the-assembly).
 
--   **AllowIsolation**
+- **AllowIsolation**
 
      Parâmetro **Boolean** opcional.
 
@@ -91,7 +91,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/ALLOWISOLATION (Pesquisa de manifesto)](/cpp/build/reference/allowisolation-manifest-lookup).
 
--   **AssemblyDebug**
+- **AssemblyDebug**
 
      Parâmetro **Boolean** opcional.
 
@@ -99,7 +99,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, consulte [/ASSEMBLYDEBUG (Adicionar DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute).
 
--   **AssemblyLinkResource**
+- **AssemblyLinkResource**
 
      Parâmetro **String[]** opcional.
 
@@ -107,13 +107,13 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/ASSEMBLYLINKRESOURCE (Link para recurso do .NET Framework)](/cpp/build/reference/assemblylinkresource-link-to-dotnet-framework-resource).
 
--   **AttributeFileTracking**
+- **AttributeFileTracking**
 
      Parâmetro **Booliano** implícito.
 
      Habilita um acompanhamento de arquivos mais profundo a fim de capturar o comportamento incremental do link. Sempre retorna `true`.
 
--   **BaseAddress**
+- **BaseAddress**
 
      Parâmetro **String** opcional.
 
@@ -121,7 +121,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/BASE (Endereço básico)](/cpp/build/reference/base-base-address).
 
--   **BuildingInIDE**
+- **BuildingInIDE**
 
      Parâmetro **Boolean** opcional.
 
@@ -129,7 +129,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Esse parâmetro não tem nenhuma opção de vinculador equivalente.
 
--   **CLRImageType**
+- **CLRImageType**
 
      Parâmetro **String** opcional.
 
@@ -137,17 +137,17 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Especifique um dos valores a seguir, cada um correspondente a uma opção de vinculador.
 
-    -   **Default** - *\<none>*
+    - **Default** - *\<none>*
 
-    -   **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
+    - **ForceIJWImage** - **/CLRIMAGETYPE:IJW**
 
-    -   **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
+    - **ForcePureILImage** - **/CLRIMAGETYPE:PURE**
 
-    -   **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
+    - **ForceSafeILImage** - **/CLRIMAGETYPE:SAFE**
 
     Para obter mais informações, confira, [/CLRIMAGETYPE (Especificar tipo de imagem CLR)](/cpp/build/reference/clrimagetype-specify-type-of-clr-image).
 
--   **CLRSupportLastError**
+- **CLRSupportLastError**
 
      Parâmetro **String** opcional.
 
@@ -155,15 +155,15 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Especifique um dos valores a seguir, cada um correspondente a uma opção de vinculador.
 
-    -   **Enabled** - **/CLRSupportLastError**
+    - **Enabled** - **/CLRSupportLastError**
 
-    -   **Desabilitado** - **/CLRSupportLastError:NO**
+    - **Desabilitado** - **/CLRSupportLastError:NO**
 
-    -   **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
+    - **SystemDlls** - **/CLRSupportLastError:SYSTEMDLL**
 
     Para obter mais informações, confira [/CLRSUPPORTLASTERROR (Preservar último código de erro para chamadas PInvoke)](/cpp/build/reference/clrsupportlasterror-preserve-last-error-code-for-pinvoke-calls).
 
--   **CLRThreadAttribute**
+- **CLRThreadAttribute**
 
      Parâmetro **String** opcional.
 
@@ -171,15 +171,15 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Especifique um dos valores a seguir, cada um correspondente a uma opção de vinculador.
 
-    -   **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**
+    - **DefaultThreadingAttribute** - **/CLRTHREADATTRIBUTE:NONE**
 
-    -   **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
+    - **MTAThreadingAttribute** - **/CLRTHREADATTRIBUTE:MTA**
 
-    -   **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
+    - **STAThreadingAttribute** - **/CLRTHREADATTRIBUTE:STA**
 
     Para obter mais informações, confira [/CLRTHREADATTRIBUTE (Definir atributo de thread CLR)](/cpp/build/reference/clrthreadattribute-set-clr-thread-attribute).
 
--   **CLRUnmanagedCodeCheck**
+- **CLRUnmanagedCodeCheck**
 
      Parâmetro **Boolean** opcional.
 
@@ -187,7 +187,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
     Para obter mais informações, confira [/CLRUNMANAGEDCODECHECK (Adicionar o SuppressUnmanagedCodeSecurityAttribute)](/cpp/build/reference/clrunmanagedcodecheck-add-suppressunmanagedcodesecurityattribute).
 
--   **CreateHotPatchableImage**
+- **CreateHotPatchableImage**
 
      Parâmetro **String** opcional.
 
@@ -195,17 +195,17 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Especifique um dos valores a seguir, que corresponda a uma opção de vinculador.
 
-    -   **Enabled** - **/FUNCTIONPADMIN**
+    - **Enabled** - **/FUNCTIONPADMIN**
 
-    -   **X86Image** - **/FUNCTIONPADMIN:5**
+    - **X86Image** - **/FUNCTIONPADMIN:5**
 
-    -   **X64Image** - **/FUNCTIONPADMIN:6**
+    - **X64Image** - **/FUNCTIONPADMIN:6**
 
-    -   **ItaniumImage** - **/FUNCTIONPADMIN:16**
+    - **ItaniumImage** - **/FUNCTIONPADMIN:16**
 
     Para obter mais informações, confira [/FUNCTIONPADMIN (Criar imagem para patch instantâneo)](/cpp/build/reference/functionpadmin-create-hotpatchable-image).
 
--   **DataExecutionPrevention**
+- **DataExecutionPrevention**
 
      Parâmetro **Boolean** opcional.
 
@@ -213,7 +213,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, consulte [/NXCOMPAT (Compatível com a Prevenção de Execução de Dados)](/cpp/build/reference/nxcompat-compatible-with-data-execution-prevention).
 
--   **DelayLoadDLLs**
+- **DelayLoadDLLs**
 
      Parâmetro **String[]** opcional.
 
@@ -221,7 +221,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/DELAYLOAD (Importação de carga com atraso)](/cpp/build/reference/delayload-delay-load-import).
 
--   **DelaySign**
+- **DelaySign**
 
      Parâmetro **Boolean** opcional.
 
@@ -229,7 +229,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/DELAYSIGN (Assinar parcialmente um assembly)](/cpp/build/reference/delaysign-partially-sign-an-assembly).
 
--   **Driver**
+- **Driver**
 
      Parâmetro **String** opcional.
 
@@ -237,17 +237,17 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Especifique um dos valores a seguir, cada um correspondente a uma opção de vinculador.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **Driver** - **/Driver**
+    - **Driver** - **/Driver**
 
-    -   **UpOnly** - **/DRIVER:UPONLY**
+    - **UpOnly** - **/DRIVER:UPONLY**
 
-    -   **WDM** - **/DRIVER:WDM**
+    - **WDM** - **/DRIVER:WDM**
 
     Para obter mais informações, confira [/DRIVER (Driver de modo kernel do Windows NT)](/cpp/build/reference/driver-windows-nt-kernel-mode-driver).
 
--   **EmbedManagedResourceFile**
+- **EmbedManagedResourceFile**
 
      Parâmetro **String[]** opcional.
 
@@ -255,7 +255,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/ASSEMBLYRESOURCE (Inserir um recurso gerenciado)](/cpp/build/reference/assemblyresource-embed-a-managed-resource).
 
--   **EnableCOMDATFolding**
+- **EnableCOMDATFolding**
 
      Parâmetro **Boolean** opcional.
 
@@ -263,7 +263,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, consulte o argumento `ICF[= iterations]` de [/OPT (Otimizações)](/cpp/build/reference/opt-optimizations).
 
--   **EnableUAC**
+- **EnableUAC**
 
      Parâmetro **Boolean** opcional.
 
@@ -271,7 +271,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, consulte [/MANIFESTUAC (Insere informações UAC no manifesto)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **EntryPointSymbol**
+- **EntryPointSymbol**
 
      Parâmetro **String** opcional.
 
@@ -279,7 +279,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/ENTRY (Símbolo de ponto de entrada)](/cpp/build/reference/entry-entry-point-symbol).
 
--   **FixedBaseAddress**
+- **FixedBaseAddress**
 
      Parâmetro **Boolean** opcional.
 
@@ -287,7 +287,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/FIXED (Endereço básico fixo)](/cpp/build/reference/fixed-fixed-base-address).
 
--   **ForceFileOutput**
+- **ForceFileOutput**
 
      Parâmetro **String** opcional.
 
@@ -295,15 +295,15 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-    -   **Enabled** - **/FORCE**
+    - **Enabled** - **/FORCE**
 
-    -   **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
+    - **MultiplyDefinedSymbolOnly** - **/FORCE:MULTIPLE**
 
-    -   **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**
+    - **UndefinedSymbolOnly** - **/FORCE:UNRESOLVED**
 
     Para obter mais informações, confira [/FORCE (Forçar saída de arquivo)](/cpp/build/reference/force-force-file-output).
 
--   **ForceSymbolReferences**
+- **ForceSymbolReferences**
 
      Parâmetro **String[]** opcional.
 
@@ -311,7 +311,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/INCLUDE (Forçar referências de símbolo)](/cpp/build/reference/include-force-symbol-references).
 
--   **FunctionOrder**
+- **FunctionOrder**
 
      Parâmetro **String** opcional.
 
@@ -319,7 +319,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/ORDER (Colocar funções na ordem)](/cpp/build/reference/order-put-functions-in-order).
 
--   **GenerateDebugInformation**
+- **GenerateDebugInformation**
 
      Parâmetro **Boolean** opcional.
 
@@ -327,7 +327,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/DEBUG (Gerar informações de depuração)](/cpp/build/reference/debug-generate-debug-info).
 
--   **GenerateManifest**
+- **GenerateManifest**
 
      Parâmetro **Boolean** opcional.
 
@@ -335,7 +335,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/MANIFEST (Criar manifesto do assembly lado a lado)](/cpp/build/reference/manifest-create-side-by-side-assembly-manifest).
 
--   **GenerateMapFile**
+- **GenerateMapFile**
 
      Parâmetro **Boolean** opcional.
 
@@ -343,7 +343,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/MAP (Gerar arquivo de mapa)](/cpp/build/reference/map-generate-mapfile).
 
--   **HeapCommitSize**
+- **HeapCommitSize**
 
      Parâmetro **String** opcional.
 
@@ -351,7 +351,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira o argumento `commit` em [/HEAP (Definir tamanho do heap)](/cpp/build/reference/heap-set-heap-size). Consulte também o parâmetro **HeapReserveSize**.
 
--   **HeapReserveSize**
+- **HeapReserveSize**
 
      Parâmetro **String** opcional.
 
@@ -359,7 +359,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira o argumento `reserve` em [/HEAP (Definir tamanho do heap)](/cpp/build/reference/heap-set-heap-size). Consulte também o parâmetro **HeapCommitSize** nesta tabela.
 
--   **IgnoreAllDefaultLibraries**
+- **IgnoreAllDefaultLibraries**
 
      Parâmetro **Boolean** opcional.
 
@@ -367,7 +367,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/NODEFAULTLIB (Ignorar bibliotecas)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
--   **IgnoreEmbeddedIDL**
+- **IgnoreEmbeddedIDL**
 
      Parâmetro **Boolean** opcional.
 
@@ -375,7 +375,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/IGNOREIDL (Não processar atributos em MIDL)](/cpp/build/reference/ignoreidl-don-t-process-attributes-into-midl).
 
--   **IgnoreImportLibrary**
+- **IgnoreImportLibrary**
 
      Parâmetro **Boolean** opcional.
 
@@ -383,7 +383,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Esse parâmetro não corresponde a uma opção de vinculador.
 
--   **IgnoreSpecificDefaultLibraries**
+- **IgnoreSpecificDefaultLibraries**
 
      Parâmetro **String[]** opcional.
 
@@ -391,7 +391,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/NODEFAULTLIB (Ignorar bibliotecas)](/cpp/build/reference/nodefaultlib-ignore-libraries).
 
--   **ImageHasSafeExceptionHandlers**
+- **ImageHasSafeExceptionHandlers**
 
      Parâmetro **Boolean** opcional.
 
@@ -399,13 +399,13 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/SAFESEH (A imagem tem manipuladores de exceção seguros)](/cpp/build/reference/safeseh-image-has-safe-exception-handlers).
 
--   **ImportLibrary**
+- **ImportLibrary**
 
      Um nome de biblioteca de importação especificado pelo usuário que substitui o nome da biblioteca padrão.
 
      Para obter mais informações, confira [/IMPLIB (Nomear biblioteca de importações)](/cpp/build/reference/implib-name-import-library).
 
--   **KeyContainer**
+- **KeyContainer**
 
      Parâmetro **String** opcional.
 
@@ -413,7 +413,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/KEYCONTAINER (Especificar um contêiner de chave para assinar um assembly)](/cpp/build/reference/keycontainer-specify-a-key-container-to-sign-an-assembly). Consulte também o parâmetro **KeyFile** nesta tabela.
 
--   **KeyFile**
+- **KeyFile**
 
      Parâmetro **String** opcional.
 
@@ -421,7 +421,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/KEYFILE (Especificar chave ou par de chaves para assinar um assembly)](/cpp/build/reference/keyfile-specify-key-or-key-pair-to-sign-an-assembly). Consulte também o parâmetro **KeyContainer**.
 
--   **LargeAddressAware**
+- **LargeAddressAware**
 
      Parâmetro **Boolean** opcional.
 
@@ -429,7 +429,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/LARGEADDRESSAWARE (Identificar endereços grandes)](/cpp/build/reference/largeaddressaware-handle-large-addresses).
 
--   **LinkDLL**
+- **LinkDLL**
 
      Parâmetro **Boolean** opcional.
 
@@ -437,7 +437,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, consulte [/DLL (Compilar uma DLL)](/cpp/build/reference/dll-build-a-dll).
 
--   **LinkErrorReporting**
+- **LinkErrorReporting**
 
      Parâmetro **String** opcional.
 
@@ -445,17 +445,17 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-    -   **NoErrorReport** - **/ERRORREPORT:NONE**
+    - **NoErrorReport** - **/ERRORREPORT:NONE**
 
-    -   **PromptImmediately** - **/ERRORREPORT:PROMPT**
+    - **PromptImmediately** - **/ERRORREPORT:PROMPT**
 
-    -   **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
+    - **QueueForNextLogin** - **/ERRORREPORT:QUEUE**
 
-    -   **SendErrorReport** - **/ERRORREPORT:SEND**
+    - **SendErrorReport** - **/ERRORREPORT:SEND**
 
     Para obter mais informações, confira [/ERRORREPORT (Relatar erros internos do vinculador)](/cpp/build/reference/errorreport-report-internal-linker-errors).
 
--   **LinkIncremental**
+- **LinkIncremental**
 
      Parâmetro **Boolean** opcional.
 
@@ -463,7 +463,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/INCREMENTAL (Vincular de forma incremental)](/cpp/build/reference/incremental-link-incrementally).
 
--   **LinkLibraryDependencies**
+- **LinkLibraryDependencies**
 
      Parâmetro **Boolean** opcional.
 
@@ -471,7 +471,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Esse parâmetro não corresponde a uma opção de vinculador.
 
--   **LinkStatus**
+- **LinkStatus**
 
      Parâmetro **Boolean** opcional.
 
@@ -479,7 +479,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira o argumento `STATUS` de [/LTCG (Geração de código durante o tempo de vinculação)](/cpp/build/reference/ltcg-link-time-code-generation).
 
--   **LinkTimeCodeGeneration**
+- **LinkTimeCodeGeneration**
 
      Parâmetro **String** opcional.
 
@@ -487,21 +487,21 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-    -   **Default** - *\<none>*
+    - **Default** - *\<none>*
 
-    -   **UseLinkTimeCodeGeneration** - **/LTCG**
+    - **UseLinkTimeCodeGeneration** - **/LTCG**
 
-    -   **PGInstrument** - **/LTCG:PGInstrument**
+    - **PGInstrument** - **/LTCG:PGInstrument**
 
-    -   **PGOptimization** - **/LTCG:PGOptimize**
+    - **PGOptimization** - **/LTCG:PGOptimize**
 
-    -   **PGUpdate**
+    - **PGUpdate**
 
          \- **/LTCG:PGUpdate**
 
     Para obter mais informações, confira [/LTCG (Geração de código durante o tempo de vinculação)](/cpp/build/reference/ltcg-link-time-code-generation).
 
--   **ManifestFile**
+- **ManifestFile**
 
      Parâmetro **String** opcional.
 
@@ -509,7 +509,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/MANIFESTFILE (Nomear arquivo de manifesto)](/cpp/build/reference/manifestfile-name-manifest-file).
 
--   **MapExports**
+- **MapExports**
 
      Parâmetro **Boolean** opcional.
 
@@ -517,13 +517,13 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira o argumento `EXPORTS` de [/MAPINFO (Incluir informações no arquivo de mapa)](/cpp/build/reference/mapinfo-include-information-in-mapfile).
 
--   **MapFileName**
+- **MapFileName**
 
      Parâmetro **String** opcional.
 
      Altera o nome do arquivo de mapa padrão para o nome de arquivo especificado.
 
--   **MergedIDLBaseFileName**
+- **MergedIDLBaseFileName**
 
      Parâmetro **String** opcional.
 
@@ -531,7 +531,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/IDLOUT (Nomear arquivos de saída MIDL)](/cpp/build/reference/idlout-name-midl-output-files).
 
--   **MergeSections**
+- **MergeSections**
 
      Parâmetro **String** opcional.
 
@@ -539,7 +539,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/MERGE (Combinar seções)](/cpp/build/reference/merge-combine-sections).
 
--   **MidlCommandFile**
+- **MidlCommandFile**
 
      Parâmetro **String** opcional.
 
@@ -547,13 +547,13 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/MIDL (Especificar opções de linha de comando MIDL)](/cpp/build/reference/midl-specify-midl-command-line-options).
 
--   **MinimumRequiredVersion**
+- **MinimumRequiredVersion**
 
      Parâmetro **String** opcional.
 
      Especifica a versão mínima necessária do subsistema. Os argumentos são números decimais no intervalo de 0 a 65535.
 
--   **ModuleDefinitionFile**
+- **ModuleDefinitionFile**
 
      Parâmetro **String** opcional.
 
@@ -561,7 +561,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/DEF (Especificar arquivo de definição de módulo)](/cpp/build/reference/def-specify-module-definition-file).
 
--   **MSDOSStubFileName**
+- **MSDOSStubFileName**
 
      Parâmetro **String** opcional.
 
@@ -569,7 +569,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/STUB (Nome do arquivo stub do MS-DOS)](/cpp/build/reference/stub-ms-dos-stub-file-name).
 
--   **NoEntryPoint**
+- **NoEntryPoint**
 
      Parâmetro **Boolean** opcional.
 
@@ -577,13 +577,13 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/NOENTRY (Sem ponto de entrada)](/cpp/build/reference/noentry-no-entry-point).
 
--   **ObjectFiles**
+- **ObjectFiles**
 
      Parâmetro implícito **Cadeia de Caracteres[]**.
 
      Especifica os arquivos-objeto vinculados.
 
--   **OptimizeReferences**
+- **OptimizeReferences**
 
      Parâmetro **Boolean** opcional.
 
@@ -591,7 +591,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, consulte o argumento `REF` em [/OPT (Otimizações)](/cpp/build/reference/opt-optimizations).
 
--   **OutputFile**
+- **OutputFile**
 
      Parâmetro **String** opcional.
 
@@ -599,19 +599,19 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/OUT (Nome do arquivo de saída)](/cpp/build/reference/out-output-file-name).
 
--   **PerUserRedirection**
+- **PerUserRedirection**
 
      Parâmetro **Boolean** opcional.
 
      Se `true` e Registrar Saída estiverem habilitados, forçará as gravações de Registro para **HKEY_CLASSES_ROOT** a serem redirecionadas para **HKEY_CURRENT_USER**.
 
--   **PreprocessOutput**
+- **PreprocessOutput**
 
      Parâmetro `ITaskItem[]` opcional.
 
      Define uma matriz de itens de saída do pré-processador que podem ser consumidos e emitidos por tarefas.
 
--   **PreventDllBinding**
+- **PreventDllBinding**
 
      Parâmetro **Boolean** opcional.
 
@@ -619,7 +619,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/ALLOWBIND (Prevenir associação de DLL)](/cpp/build/reference/allowbind-prevent-dll-binding).
 
--   **Perfil**
+- **Perfil**
 
      Parâmetro **Boolean** opcional.
 
@@ -627,7 +627,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/PROFILE (Criador de perfil das ferramentas de desempenho)](/cpp/build/reference/profile-performance-tools-profiler).
 
--   **ProfileGuidedDatabase**
+- **ProfileGuidedDatabase**
 
      Parâmetro **String** opcional.
 
@@ -635,7 +635,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/PGD (Especificar banco de dados para otimizações guiadas por perfil)](/cpp/build/reference/pgd-specify-database-for-profile-guided-optimizations).
 
--   **ProgramDatabaseFile**
+- **ProgramDatabaseFile**
 
      Parâmetro **String** opcional.
 
@@ -643,7 +643,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/PDB (Usar banco de dados de programa)](/cpp/build/reference/pdb-use-program-database).
 
--   **RandomizedBaseAddress**
+- **RandomizedBaseAddress**
 
      Parâmetro **Boolean** opcional.
 
@@ -651,13 +651,13 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, consulte [/DYNAMICBASE (Usar Aleatorização do Layout de Espaço do Endereço)](/cpp/build/reference/dynamicbase-use-address-space-layout-randomization).
 
--   **RegisterOutput**
+- **RegisterOutput**
 
      Parâmetro **Boolean** opcional.
 
      Se `true`, registrará a saída primária desse build.
 
--   **SectionAlignment**
+- **SectionAlignment**
 
      Parâmetro opcional de **Inteiro**.
 
@@ -665,7 +665,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/ALIGN (Alinhamento da seção)](/cpp/build/reference/align-section-alignment).
 
--   **SetChecksum**
+- **SetChecksum**
 
      Parâmetro **Boolean** opcional.
 
@@ -673,7 +673,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/RELEASE (Definir a soma de verificação)](/cpp/build/reference/release-set-the-checksum).
 
--   **ShowProgress**
+- **ShowProgress**
 
      Parâmetro **String** opcional.
 
@@ -681,29 +681,29 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **LinkVerbose** - **/VERBOSE**
+    - **LinkVerbose** - **/VERBOSE**
 
-    -   **LinkVerboseLib** - **/VERBOSE:Lib**
+    - **LinkVerboseLib** - **/VERBOSE:Lib**
 
-    -   **LinkVerboseICF** - **/VERBOSE:ICF**
+    - **LinkVerboseICF** - **/VERBOSE:ICF**
 
-    -   **LinkVerboseREF** - **/VERBOSE:REF**
+    - **LinkVerboseREF** - **/VERBOSE:REF**
 
-    -   **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
+    - **LinkVerboseSAFESEH** - **/VERBOSE:SAFESEH**
 
-    -   **LinkVerboseCLR** - **/VERBOSE:CLR**
+    - **LinkVerboseCLR** - **/VERBOSE:CLR**
 
     Para obter mais informações, confira [/VERBOSE (Imprimir mensagens de progresso)](/cpp/build/reference/verbose-print-progress-messages).
 
--   **Sources**
+- **Sources**
 
      Parâmetro `ITaskItem[]` obrigatório.
 
      Define uma matriz de itens de arquivo de origem do MSBuild que pode ser consumida e emitida por tarefas.
 
--   **SpecifySectionAttributes**
+- **SpecifySectionAttributes**
 
      Parâmetro **String** opcional.
 
@@ -711,7 +711,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/SECTION (Especificar atributos de seção)](/cpp/build/reference/section-specify-section-attributes).
 
--   **StackCommitSize**
+- **StackCommitSize**
 
      Parâmetro **String** opcional.
 
@@ -719,7 +719,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira o argumento `commit` de [/STACK (Alocações da pilha)](/cpp/build/reference/stack-stack-allocations).
 
--   **StackReserveSize**
+- **StackReserveSize**
 
      Parâmetro **String** opcional.
 
@@ -727,7 +727,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira o argumento `reserve` de [/STACK (Alocações da pilha)](/cpp/build/reference/stack-stack-allocations).
 
--   **StripPrivateSymbols**
+- **StripPrivateSymbols**
 
      Parâmetro **String** opcional.
 
@@ -735,7 +735,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/PDBSTRIPPED (Remover símbolos privados)](/cpp/build/reference/pdbstripped-strip-private-symbols).
 
--   **SubSystem**
+- **SubSystem**
 
      Parâmetro **String** opcional.
 
@@ -743,29 +743,29 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **Console** - **/SUBSYSTEM:CONSOLE**
+    - **Console** - **/SUBSYSTEM:CONSOLE**
 
-    -   **Windows** - **/SUBSYSTEM:WINDOWS**
+    - **Windows** - **/SUBSYSTEM:WINDOWS**
 
-    -   **Native** - **/SUBSYSTEM:NATIVE**
+    - **Native** - **/SUBSYSTEM:NATIVE**
 
-    -   **EFI Application** - **/SUBSYSTEM:EFI_APPLICATION**
+    - **EFI Application** - **/SUBSYSTEM:EFI_APPLICATION**
 
-    -   **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
+    - **EFI Boot Service Driver** - **/SUBSYSTEM:EFI_BOOT_SERVICE_DRIVER**
 
-    -   **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
+    - **EFI ROM** - **/SUBSYSTEM:EFI_ROM**
 
-    -   **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
+    - **EFI Runtime** - **/SUBSYSTEM:EFI_RUNTIME_DRIVER**
 
-    -   **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
+    - **WindowsCE** - **/SUBSYSTEM:WINDOWSCE**
 
-    -   **POSIX** - **/SUBSYSTEM:POSIX**
+    - **POSIX** - **/SUBSYSTEM:POSIX**
 
     Para obter mais informações, confira [/SUBSYSTEM (Especificar subsistema)](/cpp/build/reference/subsystem-specify-subsystem).
 
--   **SupportNobindOfDelayLoadedDLL**
+- **SupportNobindOfDelayLoadedDLL**
 
      Parâmetro **Boolean** opcional.
 
@@ -773,7 +773,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira o argumento `NOBIND` de [/DELAY (Configurações de importação de carga com atraso)](/cpp/build/reference/delay-delay-load-import-settings).
 
--   **SupportUnloadOfDelayLoadedDLL**
+- **SupportUnloadOfDelayLoadedDLL**
 
      Parâmetro **Boolean** opcional.
 
@@ -781,7 +781,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira o argumento `UNLOAD` de [/DELAY (Configurações de importação de carga com atraso)](/cpp/build/reference/delay-delay-load-import-settings).
 
--   **SuppressStartupBanner**
+- **SuppressStartupBanner**
 
      Parâmetro **Boolean** opcional.
 
@@ -789,7 +789,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/NOLOGO (Suprimir faixa de inicialização) (vinculador)](/cpp/build/reference/nologo-suppress-startup-banner-linker).
 
--   **SwapRunFromCD**
+- **SwapRunFromCD**
 
      Parâmetro **Boolean** opcional.
 
@@ -797,7 +797,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira o argumento `CD` de [/SWAPRUN (Carregar saída do vinculador no arquivo de permuta)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Consulte também o parâmetro **SwapRunFromNET**.
 
--   **SwapRunFromNET**
+- **SwapRunFromNET**
 
      Parâmetro **Boolean** opcional.
 
@@ -805,7 +805,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira o argumento `NET` de [/SWAPRUN (Carregar saída do vinculador no arquivo de permuta)](/cpp/build/reference/swaprun-load-linker-output-to-swap-file). Consulte também o parâmetro **SwapRunFromCD** nesta tabela.
 
--   **TargetMachine**
+- **TargetMachine**
 
      Parâmetro **String** opcional.
 
@@ -813,33 +813,33 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-    -   **NotSet** - *\<none>*
+    - **NotSet** - *\<none>*
 
-    -   **MachineARM** - **/MACHINE:ARM**
+    - **MachineARM** - **/MACHINE:ARM**
 
-    -   **MachineEBC** - **/MACHINE:EBC**
+    - **MachineEBC** - **/MACHINE:EBC**
 
-    -   **MachineIA64** - **/MACHINE:IA64**
+    - **MachineIA64** - **/MACHINE:IA64**
 
-    -   **MachineMIPS** - **/MACHINE:MIPS**
+    - **MachineMIPS** - **/MACHINE:MIPS**
 
-    -   **MachineMIPS16** - **/MACHINE:MIPS16**
+    - **MachineMIPS16** - **/MACHINE:MIPS16**
 
-    -   **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
+    - **MachineMIPSFPU** - **/MACHINE:MIPSFPU**
 
-    -   **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
+    - **MachineMIPSFPU16** - **/MACHINE:MIPSFPU16**
 
-    -   **MachineSH4** - **/MACHINE:SH4**
+    - **MachineSH4** - **/MACHINE:SH4**
 
-    -   **MachineTHUMB** - **/MACHINE:THUMB**
+    - **MachineTHUMB** - **/MACHINE:THUMB**
 
-    -   **MachineX64** - **/MACHINE:X64**
+    - **MachineX64** - **/MACHINE:X64**
 
-    -   **MachineX86** - **/MACHINE:X86**
+    - **MachineX86** - **/MACHINE:X86**
 
     Para obter mais informações, confira [/MACHINE (Especificar plataforma de destino)](/cpp/build/reference/machine-specify-target-platform).
 
--   **TerminalServerAware**
+- **TerminalServerAware**
 
      Parâmetro **Boolean** opcional.
 
@@ -847,13 +847,13 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/TSAWARE (Criar aplicativo com reconhecimento do servidor Host da Sessão da Área de Trabalho Remota)](/cpp/build/reference/tsaware-create-terminal-server-aware-application).
 
--   **TrackerLogDirectory**
+- **TrackerLogDirectory**
 
      Parâmetro **String** opcional.
 
      Especifica o diretório de log de rastreamento.
 
--   **TreatLinkerWarningAsErrors**
+- **TreatLinkerWarningAsErrors**
 
      Parâmetro **Boolean** opcional.
 
@@ -861,7 +861,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/WX (Tratar avisos do vinculador como erros)](/cpp/build/reference/wx-treat-linker-warnings-as-errors).
 
--   **TurnOffAssemblyGeneration**
+- **TurnOffAssemblyGeneration**
 
      Parâmetro **Boolean** opcional.
 
@@ -869,7 +869,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/NOASSEMBLY (Criar um módulo MSIL)](/cpp/build/reference/noassembly-create-a-msil-module).
 
--   **TypeLibraryFile**
+- **TypeLibraryFile**
 
      Parâmetro **String** opcional.
 
@@ -877,7 +877,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/TLBOUT (Nomear arquivo .tlb)](/cpp/build/reference/tlbout-name-dot-tlb-file).
 
--   **TypeLibraryResourceID**
+- **TypeLibraryResourceID**
 
      Parâmetro opcional de **Inteiro**.
 
@@ -885,7 +885,7 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, confira [/TLBID (Especificar ID do recurso para TypeLib)](/cpp/build/reference/tlbid-specify-resource-id-for-typelib).
 
--   **UACExecutionLevel**
+- **UACExecutionLevel**
 
      Parâmetro **String** opcional.
 
@@ -893,15 +893,15 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Especifique um dos valores a seguir, cada um correspondendo a uma opção de linha de comando.
 
-    -   **AsInvoker** - `level='asInvoker'`
+    - **AsInvoker** - `level='asInvoker'`
 
-    -   **HighestAvailable** - `level='highestAvailable'`
+    - **HighestAvailable** - `level='highestAvailable'`
 
-    -   **RequireAdministrator** - `level='requireAdministrator'`
+    - **RequireAdministrator** - `level='requireAdministrator'`
 
     Para obter mais informações, consulte o argumento `level` de [/MANIFESTUAC (Insere informações UAC no manifesto)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **UACUIAccess**
+- **UACUIAccess**
 
      Parâmetro **Boolean** opcional.
 
@@ -909,13 +909,13 @@ Encapsula a ferramenta de vinculador do Visual C++, *link.exe*. A ferramenta de 
 
      Para obter mais informações, consulte o argumento `uiAccess` de [/MANIFESTUAC (Insere informações UAC no manifesto)](/cpp/build/reference/manifestuac-embeds-uac-information-in-manifest).
 
--   **UseLibraryDependencyInputs**
+- **UseLibraryDependencyInputs**
 
      Parâmetro **Boolean** opcional.
 
      Se `true`, as entradas para a ferramenta de biblioteca serão usadas em vez do próprio arquivo de biblioteca ao vincular saídas de biblioteca de dependências do projeto.
 
--   **Versão**
+- **Versão**
 
      Parâmetro **String** opcional.
 

@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a77797cb519294c16329a432cf742746293c13
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a8d3e78e4bd49c36174280c62ca8f24cdbd7f648
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983397"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440031"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>Configurações padrão e personalizadas do Conjunto de Ferramentas
 Um Conjunto de Ferramentas MSBuild contém referências a tarefas, destinos e ferramentas que você pode usar para criar um projeto de aplicativo. MSBuild inclui um Conjunto de Ferramentas padrão, mas você também pode criar ferramentas personalizadas. Para obter informações sobre como especificar um Conjunto de Ferramentas, consulte [Conjunto de Ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md)
@@ -68,7 +68,7 @@ O Visual Studio 2017 e versões posteriores não usam uma chave do Registro no c
  A propriedade do build `VisualStudioVersion` indica se um subconjunto de ferramentas se torna ativo. Por exemplo, um valor `VisualStudioVersion` de "12.0" especifica o subconjunto de ferramentas MSBuild 12.0. Para obter mais informações, consulte a seção de subconjuntos de ferramentas de [Conjunto de ferramentas (ToolsVersion)](../msbuild/msbuild-toolset-toolsversion.md).
 
 > [!NOTE]
->  É recomendável que você evite a alteração dessas configurações. No entanto, você pode adicionar suas próprias configurações e definir as definições personalizadas do Conjunto de Ferramentas em todo o computador, conforme descrito na próxima seção.
+> É recomendável que você evite a alteração dessas configurações. No entanto, você pode adicionar suas próprias configurações e definir as definições personalizadas do Conjunto de Ferramentas em todo o computador, conforme descrito na próxima seção.
 
 ## <a name="custom-toolset-definitions"></a>Definições personalizadas do Conjunto de Ferramentas
  Quando um conjunto de ferramentas padrão não atender a seus requisitos de build, você pode criar um conjunto de ferramentas personalizado. Por exemplo, você pode ter um cenário de laboratório de build que você deve ter um sistema separado para projetos de build [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. Usando um Conjunto de Ferramentas personalizado, você pode atribuir valores personalizados para o `ToolsVersion` atributo ao criar projetos ou executar *MSBuild.exe*. Fazendo isso, você também pode usar a propriedade `$(MSBuildToolsPath)` para importar arquivos *.targets* do diretório, bem como definir suas próprias propriedades de Conjunto de Ferramentas personalizadas, as quais podem ser usadas para qualquer projeto que use esse Conjunto de Ferramentas.
@@ -97,12 +97,12 @@ O Visual Studio 2017 e versões posteriores não usam uma chave do Registro no c
 ```
 
 > [!NOTE]
->  Para ser lido corretamente, `<configSections>` deve ser a primeira subseção na seção `<configuration>`.
+> Para ser lido corretamente, `<configSections>` deve ser a primeira subseção na seção `<configuration>`.
 
  `ToolsetConfigurationSection` é uma seção de configuração personalizada que pode ser usada por qualquer hose de MSBuild para configuração personalizada. Se você usar um conjunto de ferramentas personalizado, um host não precisará fazer nada para inicializar o mecanismo de build, exceto fornecer as entradas de arquivo de configuração. Ao definir as entradas no Registro, você pode especificar Conjuntos de Ferramentas em todo o computador que se aplicam ao *MSBuild.exe*, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] e todos os hosts do MSBuild.
 
 > [!NOTE]
->  Se um arquivo de configuração define as configurações para um `ToolsVersion` que já foi definido no Registro, as duas definições não são mescladas. A definição no arquivo de configuração tem precedência e as configurações no Registro para esse `ToolsVersion` são ignoradas.
+> Se um arquivo de configuração define as configurações para um `ToolsVersion` que já foi definido no Registro, as duas definições não são mescladas. A definição no arquivo de configuração tem precedência e as configurações no Registro para esse `ToolsVersion` são ignoradas.
 
  As seguintes propriedades são específicas para o valor de `ToolsVersion`, que é usado em projetos:
 

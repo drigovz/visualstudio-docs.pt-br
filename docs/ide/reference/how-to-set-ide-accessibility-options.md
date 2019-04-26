@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5763178ecf30cc0c946c8810770ba2948383a715
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: a69f821a27d6fed4fe478122344d1a7afbc8f8c7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56317179"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62789794"
 ---
 # <a name="how-to-set-ide-accessibility-options"></a>Como: Definir opções de acessibilidade do IDE
 
@@ -46,11 +46,11 @@ Além disso, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dá su
 
 #### <a name="to-change-the-size-of-text-in-text-based-tool-windows-and-editors"></a>Para alterar o tamanho do texto em editores e janelas de ferramentas baseadas em texto
 
-1.  No menu **Ferramentas**, escolha **Opções**.
+1. No menu **Ferramentas**, escolha **Opções**.
 
-2.  Escolha **Fontes e Cores** na pasta **Ambiente**.
+2. Escolha **Fontes e Cores** na pasta **Ambiente**.
 
-3.  Selecione uma opção no menu suspenso **Mostrar configurações de**.
+3. Selecione uma opção no menu suspenso **Mostrar configurações de**.
 
      Para alterar o tamanho da fonte do texto em um editor, escolha **Editor de Texto**.
 
@@ -60,16 +60,16 @@ Além disso, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dá su
 
      Para alterar o tamanho da fonte do texto em pop-ups de preenchimento de declaração, escolha **Preenchimento de declaração**.
 
-4.  Em **Exibir Itens**, selecione **Texto sem formatação**.
+4. Em **Exibir Itens**, selecione **Texto sem formatação**.
 
-5.  Em **Fonte**, selecione um novo tipo de fonte.
+5. Em **Fonte**, selecione um novo tipo de fonte.
 
-6.  Em **Tamanho**, selecione um novo tamanho da fonte.
+6. Em **Tamanho**, selecione um novo tamanho da fonte.
 
     > [!NOTE]
     > Para redefinir o tamanho do texto em editores e janelas de ferramentas baseadas em texto, escolha **Usar Padrões**.
 
-7.  Escolha **OK**.
+7. Escolha **OK**.
 
 ### <a name="change-the-colors-that-are-used-in-the-ide"></a>Alterando as cores usadas no IDE
 
@@ -80,17 +80,17 @@ Além disso, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dá su
 
 #### <a name="to-change-the-color-of-items-in-the-editor"></a>Para alterar a cor de itens no editor
 
-1.  No menu **Ferramentas**, escolha **Opções**.
+1. No menu **Ferramentas**, escolha **Opções**.
 
-2.  Na pasta **Ambiente**, escolha **Fontes e Cores**.
+2. Na pasta **Ambiente**, escolha **Fontes e Cores**.
 
-3.  Em **Mostrar configurações de**, escolha **Editor de Texto**.
+3. Em **Mostrar configurações de**, escolha **Editor de Texto**.
 
-4.  Em **Exibir Itens**, selecione um item cuja exibição você precisa alterar, como **Texto sem formatação**, **Margem de Indicadores**, **Espaço em branco visível**, **Nome do Atributo HTML** ou **Atributo XML**.
+4. Em **Exibir Itens**, selecione um item cuja exibição você precisa alterar, como **Texto sem formatação**, **Margem de Indicadores**, **Espaço em branco visível**, **Nome do Atributo HTML** ou **Atributo XML**.
 
-5.  Selecione as configurações de exibição entre as seguintes opções: **Primeiro plano do item**, **Tela de fundo do item** e **Negrito**.
+5. Selecione as configurações de exibição entre as seguintes opções: **Primeiro plano do item**, **Tela de fundo do item** e **Negrito**.
 
-6.  Escolha **OK**.
+6. Escolha **OK**.
 
 ## <a name="toolbars"></a>Barras de ferramentas
 
@@ -98,23 +98,23 @@ Além disso, [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] dá su
 
 ### <a name="to-assign-text-to-toolbar-buttons"></a>Para atribuir texto a botões da barra de ferramentas
 
-1.  No menu **Ferramentas**, escolha **Personalizar**.
+1. No menu **Ferramentas**, escolha **Personalizar**.
 
-2.  Na caixa de diálogo **Personalizar**, selecione a guia **Comandos**.
+2. Na caixa de diálogo **Personalizar**, selecione a guia **Comandos**.
 
-3.  Selecione **Barra de ferramentas** e escolha o nome da barra de ferramentas que contém o botão para o qual você pretende exibir texto.
+3. Selecione **Barra de ferramentas** e escolha o nome da barra de ferramentas que contém o botão para o qual você pretende exibir texto.
 
-4.  Na lista, selecione o comando que deseja alterar.
+4. Na lista, selecione o comando que deseja alterar.
 
-5.  Escolha **Modificar seleção**.
+5. Escolha **Modificar seleção**.
 
-6.  Escolha **Imagem e Texto**.
+6. Escolha **Imagem e Texto**.
 
 ### <a name="to-modify-the-displayed-text-in-a-button"></a>Para modificar o texto exibido em um botão
 
-1.  Selecione **Modificar seleção** novamente.
+1. Selecione **Modificar seleção** novamente.
 
-2.  Ao lado de **Nome**, forneça uma nova legenda para o botão selecionado.
+2. Ao lado de **Nome**, forneça uma nova legenda para o botão selecionado.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6acba17aca08b233dd80b7eb7ea9e385d907ffb5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0c28ef62629011b222ae1a846c04cbf4cdff17d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440252"
 ---
 # <a name="call-tree-view"></a>Visualização Árvore de Chamadas
 O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de função que foram percorridos no aplicativo analisado. A raiz da árvore é o ponto de entrada do aplicativo ou do componente. Cada nó da função lista todas as funções que ela chamou e os dados de desempenho sobre essas chamadas de função.
@@ -36,7 +36,7 @@ O modo de exibição de Árvore de Chamadas exibe os caminhos de execução de f
  A exibição de árvore de chamadas pode ser configurada para redução de ruído, limitando a quantidade de dados que são apresentados. Ao usar a redução de ruído, os problemas de desempenho serão mais proeminentes na visualização. Quando os problemas de desempenho são fáceis de distinguir, a análise é mais fácil. Para obter mais informações, confira [Como: Configurar a redução de ruído em exibições de relatório](../profiling/how-to-configure-noise-reduction-in-report-views.md).
 
 > [!NOTE]
->  Se a redução de ruído está configurada para exibir um aviso quando está ativada, uma barra de informações é exibida no relatório.
+> Se a redução de ruído está configurada para exibir um aviso quando está ativada, uma barra de informações é exibida no relatório.
 
  Para obter mais informações sobre as definições de colunas na exibição de árvore de chamadas, confira o seguinte:
 

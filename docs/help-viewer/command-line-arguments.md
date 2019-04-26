@@ -8,24 +8,24 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c79f70129a21ab28c653ecfbef5e00a8050d9b0
-ms.sourcegitcommit: 11337745c1aaef450fd33e150664656d45fe5bc5
+ms.openlocfilehash: 6a310a1b92d5e4558e097cf82501960bf6a9a535
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/04/2019
-ms.locfileid: "57323459"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824675"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Argumentos da linha de comando para o Gerenciador de Conteúdo da Ajuda
 
 Você pode especificar como implantar e gerenciar conteúdo da Ajuda local usando argumentos de linha de comando para o Gerenciador de Conteúdo da Ajuda (*HlpCtntMgr.exe*). Você deve executar scripts para essa ferramenta de linha de comando com permissões de administrador e não pode executar esses scripts como um serviço. Você pode realizar as seguintes tarefas usando esta ferramenta:
 
--   Adicionar ou atualizar o conteúdo da ajuda local de um disco ou da nuvem.
+- Adicionar ou atualizar o conteúdo da ajuda local de um disco ou da nuvem.
 
--   Remova o conteúdo da ajuda local.
+- Remova o conteúdo da ajuda local.
 
--   Mova o repositório de conteúdo local da Ajuda.
+- Mova o repositório de conteúdo local da Ajuda.
 
--   Adicionar, atualizar, remover ou mover o conteúdo da ajuda local silenciosamente.
+- Adicionar, atualizar, remover ou mover o conteúdo da ajuda local silenciosamente.
 
 Sintaxe:
 

@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 71411ed03906e13ae666a12a67fbdb499d737b5f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: fe78b2473fc58166edb124924673ff0c49ba92a4
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936129"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945486"
 ---
 # <a name="security-page-project-designer"></a>Página Segurança, Designer de Projeto
 
@@ -34,7 +34,6 @@ A página **Segurança** do **Designer de Projeto** é usada para definir config
 
 > [!NOTE]
 > Quando você publica um aplicativo usando o assistente **Publicar**, essa opção fica habilitada automaticamente.
-
 
  Quando seleciona essa opção, você tem a opção de selecionar um dos dois botões de opção: **Este é um aplicativo de confiança total** ou **Este é um aplicativo de confiança parcial**.
 

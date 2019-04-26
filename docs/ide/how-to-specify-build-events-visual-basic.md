@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 88903c1370219976bca6e8418c3254d048db51d2
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: e9dc571576346aa246452cdebf0a147468d6dfea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58324715"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62549327"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Como: Especificar eventos de build (Visual Basic)
 
@@ -34,13 +34,13 @@ Eventos de build são especificados na caixa de diálogo **Eventos de Build**, d
 
 ### <a name="to-specify-a-build-event"></a>Para especificar um evento de build
 
-1.  Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
+1. Com um projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
 
-2.  Clique na guia **Compilar**.
+2. Clique na guia **Compilar**.
 
-3.  Clique no botão **Eventos de Build** para abrir a caixa de diálogo **Eventos de Build**.
+3. Clique no botão **Eventos de Build** para abrir a caixa de diálogo **Eventos de Build**.
 
-4.  Insira os argumentos de linha de comando para a ação pré ou pós-build e, em seguida, clique em **OK**.
+4. Insira os argumentos de linha de comando para a ação pré ou pós-build e, em seguida, clique em **OK**.
 
     > [!NOTE]
     > Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos *.bat*. Por exemplo `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.
@@ -125,14 +125,14 @@ O procedimento a seguir mostra como definir a versão mínima do sistema operaci
 
 ### <a name="to-invoke-a-post-build-event-to-change-the-application-manifest"></a>Para invocar um evento de pós-build para alterar o manifesto do aplicativo
 
-1.  Crie um aplicativo do Windows para o projeto a ser publicado. No menu **Arquivo**, clique em **Novo** e em **Projeto**.
+1. Crie um aplicativo do Windows para o projeto a ser publicado. No menu **Arquivo**, clique em **Novo** e em **Projeto**.
 
-2.  Na caixa de diálogo **Novo Projeto**, no nó **Visual Basic**, selecione **Área de Trabalho do Windows** e, em seguida, o modelo **Aplicativo do Windows Forms**. Nomeie o projeto `VBWinApp`.
-3.  Com o projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
+2. Na caixa de diálogo **Novo Projeto**, no nó **Visual Basic**, selecione **Área de Trabalho do Windows** e, em seguida, o modelo **Aplicativo do Windows Forms**. Nomeie o projeto `VBWinApp`.
+3. Com o projeto selecionado no **Gerenciador de Soluções**, no menu **Projeto**, clique em **Propriedades**.
 
-4.  No **Designer de Projeto**, acesse a página **Publicar** e defina o **Local de publicação** como *C:\TEMP*.
+4. No **Designer de Projeto**, acesse a página **Publicar** e defina o **Local de publicação** como *C:\TEMP*.
 
-5.  Publique o projeto clicando em **Publicar Agora**.
+5. Publique o projeto clicando em **Publicar Agora**.
 
      O arquivo de manifesto será compilado e colocado em *C:\TEMP\VBWinApp_1_0_0_0\VBWinApp.exe.manifest*. Para exibir o manifesto, clique com o botão direito do mouse no arquivo, clique em **Abrir com**, então clique em **Selecionar um programa em uma lista de programas instalados** e clique em **Bloco de Notas**.
 
@@ -142,9 +142,9 @@ O procedimento a seguir mostra como definir a versão mínima do sistema operaci
     <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
     ```
 
-6.  No **Designer de Projeto**, vá para a guia **Compilar** e clique no botão **Eventos de Build** para abrir a caixa de diálogo **Eventos de Build**.
+6. No **Designer de Projeto**, vá para a guia **Compilar** e clique no botão **Eventos de Build** para abrir a caixa de diálogo **Eventos de Build**.
 
-7.  Na caixa **Linha de Comando do Evento de Pós-Build**, digite o seguinte comando:
+7. Na caixa **Linha de Comando do Evento de Pós-Build**, digite o seguinte comando:
 
      `C:\TEMP\ChangeOSVersionVB.exe "$(TargetPath).manifest" 5.1.2600.0`
 
@@ -152,7 +152,7 @@ O procedimento a seguir mostra como definir a versão mínima do sistema operaci
 
      A macro `$(TargetPath)` expressa o caminho completo para o arquivo executável que está sendo criado. Portanto, *$(TargetPath).manifest* especificará o manifesto do aplicativo criado no diretório *bin*. A publicação copiará esse manifesto para o local de publicação definido anteriormente.
 
-8.  Publique o projeto novamente. Acesse a página **Publicar** e clique em **Publicar Agora**.
+8. Publique o projeto novamente. Acesse a página **Publicar** e clique em **Publicar Agora**.
 
      Exiba o manifesto novamente. Para exibir o manifesto, vá para o diretório de publicação, clique com o botão direito do mouse no arquivo, clique em **Abrir com**, então em **Selecionar o programa em uma lista** e, em seguida, clique no **Bloco de Notas**.
 

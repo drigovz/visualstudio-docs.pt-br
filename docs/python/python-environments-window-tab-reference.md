@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 578f73aabfb8b5a4c8336c8611f634b8947c8885
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366517"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62784946"
 ---
 # <a name="python-environments-window-tabs-reference"></a>Referência as guias da janela Ambientes do Python
 
@@ -168,6 +168,6 @@ As bibliotecas para as quais os dados não foram compilados serão marcadas com 
 ## <a name="see-also"></a>Consulte também
 
 - [Gerenciar ambientes do Python no Visual Studio](managing-python-environments-in-visual-studio.md)
-- [Selecionar um interpretador para um projeto](selecting-a-python-environment-for-a-project.md)
+- [Selecionar um intérprete para um projeto](selecting-a-python-environment-for-a-project.md)
 - [Usar requirements.txt para dependências](managing-required-packages-with-requirements-txt.md)
 - [Caminhos de pesquisa](search-paths.md)

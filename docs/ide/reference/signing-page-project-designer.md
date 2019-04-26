@@ -19,12 +19,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3411d3e9960235f7fbd948e82cf9498377746b7d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 862f2ca7da96e7d084d2af7bfa53a5640bed22d8
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938755"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950535"
 ---
 # <a name="signing-page-project-designer"></a>Página de Assinatura, Designer de Projeto
 Use a página **Assinatura** do **Designer de Projeto** para assinar os manifestos do aplicativo e de implantação e também para assinar o assembly (assinatura de nome forte).
@@ -93,7 +93,6 @@ Use a página **Assinatura** do **Designer de Projeto** para assinar os manifest
 
 > [!NOTE]
 > Ao assinar um assembly, talvez você nem sempre tenha acesso a uma chave privada. Por exemplo, uma organização pode ter um par de chaves bem protegido ao qual os desenvolvedores não têm acesso todos os dias. A chave pública pode estar disponível, mas o acesso à chave privada é restrito a algumas pessoas. Nesse caso, é possível usar a *assinatura com atraso* ou *parcial* para fornecer a chave pública, adiando a adição da chave privada até a entrega do assembly.
-
 
 ## <a name="see-also"></a>Consulte também
 

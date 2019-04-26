@@ -20,16 +20,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20c1207051fbd8a2c4857a277868145795e14224
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 27315682c26769ea5c529ceb21c99458c86f0220
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56626512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63385811"
 ---
 # <a name="bscmake-task"></a>Tarefa BscMake
 > [!IMPORTANT]
->  O BscMake não é mais usado pelo IDE do Visual Studio. Desde o Visual Studio 2008, as informações de procura são armazenadas automaticamente em um arquivo *.sdf* na pasta *Solution*.
+> O BscMake não é mais usado pelo IDE do Visual Studio. Desde o Visual Studio 2008, as informações de procura são armazenadas automaticamente em um arquivo *.sdf* na pasta *Solution*.
 
  Encapsula a ferramenta Utilitário de Manutenção de Informações de Procura da Microsoft (*bscmake.exe*).  A ferramenta *bscmake.exe* compila um arquivo de informações de procura (*.bsc*) com base nos arquivos do navegador de origem (*.sbr*) que são criados durante a compilação. Use o **Pesquisador de Objetos** para exibir um arquivo *.bsc*. Para obter mais informações, confira [Referência do BSCMAKE](/cpp/build/reference/bscmake-reference).
 

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 20842cc277246bba6c9e05c6c59a937a89b5f6bc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62943494"
 ---
 # <a name="thread-ready-connector"></a>Conector pronto para thread
 Ao clicar em um segmento de bloqueio para ver uma pilha de chamadas e sua pilha de desbloqueio, o conector pronto thread também pode aparecer. Se o evento desbloqueio ocorreu em outro thread no processo atual, o conector pronto para thread identificará visualmente o thread e o segmento de execução que habilitou o thread bloqueado para retomar a execução.

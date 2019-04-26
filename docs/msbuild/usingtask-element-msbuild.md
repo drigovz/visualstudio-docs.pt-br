@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b97999b7a6aa56dc9be17d853c306c71a5ff290
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 36e310688b8305b2d5986a1b29d34895f02bc4d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645739"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411005"
 ---
 # <a name="usingtask-element-msbuild"></a>Elemento UsingTask (MSBuild)
 Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-element-msbuild.md) para o assembly que contém a implementação de tarefas.
@@ -69,7 +69,7 @@ Mapeia a tarefa que é referenciada em um elemento [Tarefa](../msbuild/task-elem
  Variáveis de ambiente, propriedades de linha de comando, propriedades no nível do projeto e itens no nível do projeto podem ser referenciadas no elemento `UsingTask` incluído no arquivo de projeto, explicitamente ou por meio de um arquivo de projeto importado. Para obter mais informações, consulte [Tarefas](../msbuild/msbuild-tasks.md).
 
 > [!NOTE]
->  Propriedades e itens no nível do projeto não têm significado se o elemento `UsingTask` for proveniente de um dos arquivos *.tasks* globalmente registrados com o mecanismo do MSBuild. Valores no nível do projeto não são globais ao MSBuild.
+> Propriedades e itens no nível do projeto não têm significado se o elemento `UsingTask` for proveniente de um dos arquivos *.tasks* globalmente registrados com o mecanismo do MSBuild. Valores no nível do projeto não são globais ao MSBuild.
 
  No MSBuild 4.0, usar tarefas pode ser carregado a partir de arquivos *.overridetask*.
 

@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ce4963f753498ff4c43b92b0b59fbfae25a45315
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.openlocfilehash: 53408ba2345c1bb7b3fc3f99939736c7a697d2df
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446641"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>Como instalar o suporte do Python no Visual Studio no Windows
 
@@ -39,7 +39,7 @@ Para testar rapidamente o suporte do Python depois de seguir as etapas de instal
 1. Baixe e execute o Instalador do Visual Studio mais recente. Se já tiver o Visual Studio instalado, execute o Instalador do Visual Studio, selecione a opção **Modificar** (consulte [Modificar o Visual Studio](../install/modify-visual-studio.md)) e vá para a etapa 2.
 
     > [!div class="nextstepaction"]
-    > [Instalar o Visual Studio 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
+    > [Instalar Visual Studio 2019 Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
 
     >[!Tip]
     > A edição Community é para desenvolvedores individuais, aprendizado em sala de aula, pesquisa acadêmica e desenvolvimento de software livre. Para outros usos, instale o [Visual Studio 2019 Professional](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Professional&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted) ou o [Visual Studio 2019 Enterprise](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Enterprise&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted).
@@ -53,6 +53,7 @@ Para testar rapidamente o suporte do Python depois de seguir as etapas de instal
 
     > [!Note]
     > As cargas de trabalho para Python e para Ciência de dados estão disponíveis apenas com a versão Visual Studio 2017 15.2 e posterior.
+
     ::: moniker-end
 
     ::: moniker range=">=vs-2019"
@@ -74,7 +75,7 @@ Para testar rapidamente o suporte do Python depois de seguir as etapas de instal
     | Distribuições do Python | Escolha qualquer combinação de opções disponíveis, como variantes de 32 bits e de 64 bits das distribuições do Python 2, do Python 3, do Miniconda, do Anaconda2 e do Anaconda3 com as quais planeja trabalhar. Cada uma delas inclui o interpretador, o tempo de execução e as bibliotecas da distribuição. O Anaconda, especificamente, é uma plataforma de ciência de dados aberta que inclui uma grande variedade de pacotes pré-instalados. (Você pode retornar ao Instalador do Visual Studio a qualquer momento para adicionar ou remover distribuições.)  **Observação**: Se você tiver instalado uma distribuição fora do Instalador do Visual Studio, não será necessário marcar a opção equivalente aqui. O Visual Studio automaticamente detecta as instalações existentes do Python. Confira [A janela Ambientes do Python](managing-python-environments-in-visual-studio.md#the-python-environments-window). Além disso, se uma versão mais nova que a mostrada no instalador do Python estiver disponível, você poderá instalar essa versão separadamente, e o Visual Studio a detectará. |
     | **Suporte do modelo Cookiecutter** | Instala a interface gráfica do usuário Cookiecutter para descobrir modelos, inserir opções de modelo e criar projetos e arquivos. Confira [Usar a extensão Cookiecutter](using-python-cookiecutter-templates.md). |
     | **Suporte Web do Python** | Instala as ferramentas para desenvolvimento para a Web, incluindo suporte à edição HTML, CSS e JavaScript, juntamente com modelos para projetos que usam as estruturas Bottle, Flask e Django. Veja [Modelos de projeto Web do Python](python-web-application-project-templates.md). |
-    | **Suporte ao Python IoT** | Compatível com o desenvolvimento do Windows IoT Core usando Python. |
+    | **Suporte de IoT do Python** | Compatível com o desenvolvimento do Windows IoT Core usando Python. |
     | **Ferramentas de desenvolvimento nativo do Python** | Instala o compilador do C++ e outros componentes necessários para desenvolver extensões nativas para Python. Confira [Criar uma extensão do C++ para o Python](working-with-c-cpp-python-in-visual-studio.md). Além disso, instale a carga de trabalho **Desenvolvimento de área de trabalho C++** para obter suporte total a C++. |
     | **Principais ferramentas dos Serviços de Nuvem do Azure** | Fornece suporte adicional para os Serviços de Nuvem do Azure do desenvolvedor no Python. Confira [Projetos de serviço de nuvem do Azure](python-azure-cloud-service-project-template.md). |
 

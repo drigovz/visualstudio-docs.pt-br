@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d61814c9d47ea5c8b42e8a0b2f72a3797b6ec291
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: c67dfa80ec7b194f7014f77de1cdd589bf7130e5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897758"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446335"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>Tutorial: Criar um aplicativo Node.js e React no Visual Studio
 
@@ -376,8 +376,10 @@ Na seção anterior, você anexou o depurador ao código do Node.js do lado do s
     Isso inicia o Chrome com a depuração habilitada.
 
     ::: moniker range=">=vs-2019"
+
     > [!NOTE]
     > Você também pode definir o sinalizador `--remote-debugging-port` na inicialização do navegador selecionando **Procurar Com...**> na barra de ferramentas **Depurar**, escolhendo **Adicionar** e, em seguida, definindo o sinalizador no campo **Argumentos**. Usar um nome amigável diferente para o navegador, como **Chrome com depuração**. Para obter detalhes, confira [Notas sobre a versão](https://docs.microsoft.com/visualstudio/releases/2019/release-notes-preview#browser-cli-params-support).
+
     ::: moniker-end
 
 3. Alterne para o Visual Studio e defina um ponto de interrupção no código *app-bundle.js* na função `render()`, conforme mostrado na ilustração a seguir:
