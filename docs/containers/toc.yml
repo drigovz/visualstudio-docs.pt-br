@@ -1,37 +1,30 @@
-items:
 - name: Ferramentas de contêiner do Visual Studio
   href: index.yml
-  items:
-  - name: Visão geral
-    href: overview.md
-  - name: Guia de Início Rápido
-    items:
-    - name: Ferramentas de contêiner no Visual Studio
-      href: container-tools.md
-    expanded: true
-  - name: Tutoriais
-    items:
-    - name: Tutorial – aplicativo de vários contêineres com o Docker Compose
-      href: tutorial-multicontainer.md
-    - name: Tutorial – Kubernetes no Visual Studio
-      href: tutorial-kubernetes-tools.md
-    expanded: true
-  - name: Como
-    items:
-    - name: Depurar aplicativo em um contêiner local do Docker
-      href: edit-and-refresh.md
-    - name: Implantar em um registro de contêiner
-      href: hosting-web-apps-in-docker.md
-    - name: Implantar no Serviço de Aplicativo do Azure
-      href: deploy-app-service.md
-    - name: Configurar Ferramentas de Contêiner
-      href: container-tools-configure.md
-  - name: Solução de problemas
-    href: troubleshooting-docker-errors.md
   expanded: true
-ms.openlocfilehash: e667c577f9cf618139246145ff08edc9233903f3
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
-ms.translationtype: HT
-ms.contentlocale: pt-BR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537683"
+  items:
+    - name: Visão geral
+      href: overview.md
+    - name: Guia de Início Rápido
+      expanded: true
+      items:
+        - name: Ferramentas de contêiner no Visual Studio
+          href: container-tools.md
+    - name: Tutoriais
+      expanded: true
+      items:
+        - name: Tutorial – aplicativo de vários contêineres com o Docker Compose
+          href: tutorial-multicontainer.md
+        - name: Tutorial – Kubernetes no Visual Studio
+          href: tutorial-kubernetes-tools.md
+    - name: Como
+      items:
+        - name: Depurar aplicativo em um contêiner local do Docker
+          href: edit-and-refresh.md
+        - name: Implantar em um registro de contêiner
+          href: hosting-web-apps-in-docker.md
+        - name: Implantar no Serviço de Aplicativo do Azure
+          href: deploy-app-service.md
+        - name: Configurar Ferramentas de Contêiner
+          href: container-tools-configure.md
+    - name: Solução de problemas
+      href: troubleshooting-docker-errors.md

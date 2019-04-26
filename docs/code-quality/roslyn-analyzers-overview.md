@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: ba1529840a38a23929b9926cc4bed5cc22a058cb
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825451"
 ---
 # <a name="overview-of-net-compiler-platform-analyzers"></a>Visão geral dos analisadores do .NET Compiler Platform
 
@@ -83,13 +83,13 @@ Não é possível definir a gravidade das regras de analisadores que foram insta
 ## <a name="next-steps"></a>Próximas etapas
 
 > [!div class="nextstepaction"]
-> [Instalar analisadores do Roslyn no Visual Studio](../code-quality/install-roslyn-analyzers.md)
+> [Instalar Analisadores do Roslyn no Visual Studio](../code-quality/install-roslyn-analyzers.md)
 
 > [!div class="nextstepaction"]
-> [Usar analisadores do Roslyn no Visual Studio](../code-quality/use-roslyn-analyzers.md)
+> [Usar Analisadores do Roslyn no Visual Studio](../code-quality/use-roslyn-analyzers.md)
 
 ## <a name="see-also"></a>Consulte também
 
 - [Perguntas frequentes sobre analisadores](analyzers-faq.md)
 - [Escrever seu próprio analisador do Roslyn](../extensibility/getting-started-with-roslyn-analyzers.md)
-- [SDK da Plataforma do Compilador .NET](/dotnet/csharp/roslyn-sdk/)
+- [SDK do .NET Compiler Platform](/dotnet/csharp/roslyn-sdk/)

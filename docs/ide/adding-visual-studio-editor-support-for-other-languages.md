@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3c87339e26e5b08fbcbdcde94d43c9f0009e1a22
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975655"
 ---
 # <a name="add-visual-studio-editor-support-for-other-languages"></a>Adicionar suporte para outras linguagens ao editor do Visual Studio
 
@@ -89,5 +89,5 @@ Para obter detalhes sobre como criar Gramáticas TextMate, confira [TextMate: in
 
 ## <a name="see-also"></a>Consulte também
 
-- [Passo a passo: Para criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)
+- [Passo a passo: Criar um snippet de código](../ide/walkthrough-creating-a-code-snippet.md)
 - [Passo a passo: Exibir o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)

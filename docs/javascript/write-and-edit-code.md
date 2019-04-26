@@ -11,11 +11,11 @@ dev_langs:
 ms.workload:
 - nodejs
 ms.openlocfilehash: 111100038817d16d4655271f648aeb076bf1e9af
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856626"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840720"
 ---
 # <a name="learn-to-use-the-code-editor"></a>Saiba como usar o editor de códigos
 
@@ -119,7 +119,7 @@ Examine os snippets de código disponíveis para a linguagem escolhendo **Editar
 ## <a name="see-also"></a>Consulte também
 
 - [Snippets de código](../ide/code-snippets.md)
-- [Navegue pelos códigos](../ide/navigating-code.md)
+- [Navegar pelo código](../ide/navigating-code.md)
 - [Estrutura de tópicos](../ide/outlining.md)
 - [Ir para Definição e Definição de Pico](../ide/go-to-and-peek-definition.md)
 - [Refatoração](../ide/refactoring-in-visual-studio.md)

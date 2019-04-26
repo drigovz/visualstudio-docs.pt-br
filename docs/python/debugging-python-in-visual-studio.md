@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: 4678e3508c16b38fec2a10cdeb79bc499eaf15fd
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62959660"
 ---
 # <a name="debug-your-python-code"></a>Depurar o código do Python
 
@@ -25,7 +25,7 @@ Veja também os seguintes artigos sobre depuração específicos ao cenário:
 
 - [Depuração remota do Linux](debugging-python-code-on-remote-linux-machines.md)
 - [Depuração de modo misto do Python/C++](debugging-mixed-mode-c-cpp-python-in-visual-studio.md)
-- [Símbolos para a depuração de modo misto](debugging-symbols-for-mixed-mode-c-cpp-python.md)
+- [Símbolos para a depuração do modo misto](debugging-symbols-for-mixed-mode-c-cpp-python.md)
 
 <a name="debugging-without-a-project"></a>
 
@@ -69,11 +69,11 @@ Depois de interromper em um ponto de interrupção, você tem várias maneiras p
 | Recurso | Pressionamento de tecla | Descrição |
 | --- | --- | --- |
 | **Continue** | **F5** | Executa o código até chegar ao próximo ponto de interrupção. |
-| **Entrar em** | **F11** | Executa a próxima instrução e para. Se a próxima instrução for uma chamada a uma função, o depurador parará na primeira linha da função que está sendo chamada. |
+| **Intervir** | **F11** | Executa a próxima instrução e para. Se a próxima instrução for uma chamada a uma função, o depurador parará na primeira linha da função que está sendo chamada. |
 | **Depuração Parcial** | **F10** | Executa a próxima instrução, incluindo fazer uma chamada a uma função (executando todo o código) e aplicar qualquer valor retornado. A depuração parcial permite ignorar facilmente as funções que não precisam ser depuradas. |
 | **Depuração Circular** | **Shift**+**F11** | Executa o código até o final da função atual e, em seguida, executa em etapas até a instrução de chamada.  Esse comando é útil quando não é necessário depurar o restante da função atual. |
 | **Executar até o cursor** | **Ctrl**+**F10** | Executa o código até a localização do cursor no editor. Esse comando permite ignorar facilmente um segmento de código que não precisa ser depurado. |
-| **Definir próxima instrução** | **Ctrl**+**Shift**+**F10** | Altera o ponto de execução atual no código para a localização atual do cursor. Esse comando permite omitir a execução de um segmento de código, como nos casos em que você sabe que o código tem uma falha ou produz um efeito colateral indesejado. |
+| **Definir Próxima Instrução** | **Ctrl**+**Shift**+**F10** | Altera o ponto de execução atual no código para a localização atual do cursor. Esse comando permite omitir a execução de um segmento de código, como nos casos em que você sabe que o código tem uma falha ou produz um efeito colateral indesejado. |
 | **Mostrar Próxima Instrução** | **Alt**+**Num** **&#42;**| Retorna à próxima instrução a ser executada. Esse comando é muito útil se você está procurando em várias partes do código e não se lembra em qual parte o depurador foi interrompido. |
 
 ### <a name="inspect-and-modify-values"></a>Inspecionar e modificar valores
@@ -144,8 +144,8 @@ Por padrão, o depurador inicia o programa com o inicializador padrão do Python
 | Opção | Descrição |
 | --- | --- |
 | **Caminhos de Pesquisa** | Esses valores correspondem ao que é mostrado no nó **Caminhos de Pesquisa** do projeto no **Gerenciador de Soluções**. É possível modificar esse valor aqui, mas é mais fácil usar o **Gerenciador de Soluções**, que permite procurar pastas e converter os caminhos automaticamente no formato relativo. |
-| **Argumentos de script** | Esses argumentos são adicionados ao comando usado para iniciar o script, aparecendo após o nome de arquivo do script. O primeiro item aqui está disponível para o script como `sys.argv[1]`, o segundo como `sys.argv[2]` e assim por diante. |
-| **Argumentos do interpretador** | Esses argumentos são adicionados à linha de comando do inicializador antes do nome do script. Os argumentos comuns aqui são `-W ...` para controlar avisos, `-O` para otimizar o programa ligeiramente e `-u` para usar o E/S não armazenado em buffer. Provavelmente, os usuários do IronPython usarão esse campo para passar opções `-X`, como `-X:Frames` ou `-X:MTA`. |
+| **Argumentos de Script** | Esses argumentos são adicionados ao comando usado para iniciar o script, aparecendo após o nome de arquivo do script. O primeiro item aqui está disponível para o script como `sys.argv[1]`, o segundo como `sys.argv[2]` e assim por diante. |
+| **Argumentos do Interpretador** | Esses argumentos são adicionados à linha de comando do inicializador antes do nome do script. Os argumentos comuns aqui são `-W ...` para controlar avisos, `-O` para otimizar o programa ligeiramente e `-u` para usar o E/S não armazenado em buffer. Provavelmente, os usuários do IronPython usarão esse campo para passar opções `-X`, como `-X:Frames` ou `-X:MTA`. |
 | **Caminho do Interpretador** | Substitui o caminho associado ao ambiente atual. O valor pode ser útil para iniciar o script com um interpretador não padrão. |
 | **Variáveis de ambiente** | Nessa caixa de texto multilinha, adicione entradas com o formato \<NAME>=\<VALUE>. Como essa configuração é aplicada por último, com base nas variáveis de ambiente globais existentes e depois que `PYTHONPATH` é definido de acordo com a configuração de **Caminhos de Pesquisa**, ela pode ser usada para substituir qualquer um dos outros valores manualmente. |
 

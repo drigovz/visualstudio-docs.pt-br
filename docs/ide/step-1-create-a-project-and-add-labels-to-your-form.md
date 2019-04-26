@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d077cd549b5bef703229b2c43f4ce36d9735d512
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: d32ae922726a13416086e982679483ae36f2ad0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647395"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949107"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Etapa 1: Criar um projeto e adicionar rótulos ao formulário
 
@@ -28,11 +28,11 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 ::: moniker range="vs-2017"
 
-1.  Na barra de menus, escolha **Arquivo** > **Novo** > **Projeto**.
+1. Na barra de menus, escolha **Arquivo** > **Novo** > **Projeto**.
 
-1.  Na lista **Modelos Instalados** escolha **C#** ou **Visual Basic**.
+1. Na lista **Modelos Instalados** escolha **C#** ou **Visual Basic**.
 
-1.  Na lista de modelos, escolha o modelo de **Aplicativo do Windows Forms**, dê o nome **MathQuiz** a ele e, então, clique no botão **OK**.
+1. Na lista de modelos, escolha o modelo de **Aplicativo do Windows Forms**, dê o nome **MathQuiz** a ele e, então, clique no botão **OK**.
 
      Um formulário chamado *Form1.cs* ou *Form1.vb* aparece, dependendo da linguagem de programação que você escolheu.
 
@@ -50,43 +50,43 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 ::: moniker-end
 
-1.  Escolha o formulário e, em seguida, altere sua propriedade **Text** para **Teste de matemática**.
+1. Escolha o formulário e, em seguida, altere sua propriedade **Text** para **Teste de matemática**.
 
      A janela **Propriedades** contém propriedades para o formulário.
 
-1.  Altere o tamanho do formulário para 500 pixels de largura por 400 pixels de altura.
+1. Altere o tamanho do formulário para 500 pixels de largura por 400 pixels de altura.
 
      É possível redimensionar o formulário arrastando as bordas até que o tamanho correto apareça no canto inferior esquerdo do ambiente de desenvolvimento integrado (IDE). Como alternativa, você pode alterar os valores da propriedade **Size**.
 
-1.  Altere o valor da propriedade **FormBorderStyle** para **Fixed3D** e defina a propriedade **MaximizeBox** para **False**.
+1. Altere o valor da propriedade **FormBorderStyle** para **Fixed3D** e defina a propriedade **MaximizeBox** para **False**.
 
      Esses valores impedem que os participantes de teste redimensionem o formulário.
 
 ## <a name="to-create-the-time-remaining-box"></a>Para criar a caixa tempo restante
 
-1.  Adicione um controle <xref:System.Windows.Forms.Label> da **caixa de ferramentas** e, em seguida, defina o valor de sua propriedade **(Name)** para **timeLabel**.
+1. Adicione um controle <xref:System.Windows.Forms.Label> da **caixa de ferramentas** e, em seguida, defina o valor de sua propriedade **(Name)** para **timeLabel**.
 
      Este rótulo se tornará uma caixa no canto superior direito que mostra o número de segundos que permanece em teste.
 
-2.  Altere a propriedade **AutoSize** para **False** de modo que você possa redimensionar a caixa.
+2. Altere a propriedade **AutoSize** para **False** de modo que você possa redimensionar a caixa.
 
-3.  Altere a propriedade **BorderStyle** para **FixedSingle** para desenhar uma linha em torno da caixa.
+3. Altere a propriedade **BorderStyle** para **FixedSingle** para desenhar uma linha em torno da caixa.
 
-4.  Defina a propriedade **Size** como **200, 30**.
+4. Defina a propriedade **Size** como **200, 30**.
 
-5.  Mova o rótulo para o canto superior direito do formulário, onde as linhas espaçadoras azuis serão exibidas.
+5. Mova o rótulo para o canto superior direito do formulário, onde as linhas espaçadoras azuis serão exibidas.
 
      Essas linhas ajudam você a alinhar controles no formulário.
 
-6.  Na janela **Propriedades**, escolha a propriedade **Text** e pressione a tecla **Backspace** para apagar o seu valor.
+6. Na janela **Propriedades**, escolha a propriedade **Text** e pressione a tecla **Backspace** para apagar o seu valor.
 
-7.  Escolha o sinal de mais (**+**) ao lado da propriedade **Font** e, em seguida, altere o valor da propriedade **Size** para **15,75**.
+7. Escolha o sinal de mais (**+**) ao lado da propriedade **Font** e, em seguida, altere o valor da propriedade **Size** para **15,75**.
 
      É possível alterar várias propriedades de fonte, como mostra a imagem a seguir.
 
      ![Tamanho da fonte de exibição na janela Propriedades](../ide/media/express_setfontsize.png)
 
-8.  Adicione outro controle Label da **caixa de ferramentas** e, em seguida, defina seu tamanho da fonte para **15,75**.
+8. Adicione outro controle Label da **caixa de ferramentas** e, em seguida, defina seu tamanho da fonte para **15,75**.
 
 9. Defina a propriedade **Text** como **Time Left**.
 
@@ -94,21 +94,21 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 ### <a name="to-add-controls-for-the-addition-problems"></a>Para adicionar controles para os problemas de adição
 
-1.  Adicione um controle Label da **caixa de ferramentas** e, em seguida, defina sua propriedade **Text** para **?** (ponto de interrogação).
+1. Adicione um controle Label da **caixa de ferramentas** e, em seguida, defina sua propriedade **Text** para **?** (ponto de interrogação).
 
-2.  Defina a propriedade **AutoSize** para **False**.
+2. Defina a propriedade **AutoSize** para **False**.
 
-3.  Defina a propriedade **Size** como **60, 50**.
+3. Defina a propriedade **Size** como **60, 50**.
 
-4.  Defina o tamanho da fonte como **18**.
+4. Defina o tamanho da fonte como **18**.
 
-5.  Defina a propriedade **TextAlign** como **MiddleCenter**.
+5. Defina a propriedade **TextAlign** como **MiddleCenter**.
 
-6.  Defina a propriedade **Location** para **50, 75** para posicionar o controle no formulário.
+6. Defina a propriedade **Location** para **50, 75** para posicionar o controle no formulário.
 
-7.  Defina a propriedade **(Name)** como **plusLeftLabel**.
+7. Defina a propriedade **(Name)** como **plusLeftLabel**.
 
-8.  Escolha o rótulo **plusLeftLabel** e, em seguida, pressione as teclas **Ctrl**+**C** ou **Copiar** no menu **Editar**.
+8. Escolha o rótulo **plusLeftLabel** e, em seguida, pressione as teclas **Ctrl**+**C** ou **Copiar** no menu **Editar**.
 
 9. Cole o rótulo três vezes usando as teclas **Ctrl**+**V** ou a opção **Colar** no menu **Editar**.
 
@@ -136,25 +136,25 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 ## <a name="to-add-controls-for-the-subtraction-multiplication-and-division-problems"></a>Para adicionar controles para subtração, multiplicação e problemas de divisão
 
-1.  Copiar todos os cinco controles para o problema de adição (os quatro controles de rótulo e o controle NumericUpDown) e, em seguida, cola-os.
+1. Copiar todos os cinco controles para o problema de adição (os quatro controles de rótulo e o controle NumericUpDown) e, em seguida, cola-os.
 
      O formulário contém cinco novos controles, que ainda são selecionados.
 
-2.  Mova todos os controles no local de modo que eles se alinhem abaixo dos controles de adição.
+2. Mova todos os controles no local de modo que eles se alinhem abaixo dos controles de adição.
 
      É possível usar as linhas separadoras para fornecer distância suficiente entre as duas linhas.
 
-3.  Altere o valor da propriedade **Text** do segundo rótulo para **-** (sinal de subtração).
+3. Altere o valor da propriedade **Text** do segundo rótulo para **-** (sinal de subtração).
 
-4.  Nomeie o primeiro rótulo de interrogação **minusLeftLabel**.
+4. Nomeie o primeiro rótulo de interrogação **minusLeftLabel**.
 
-5.  Nomeie o segundo rótulo de interrogação **minusRightLabel**.
+5. Nomeie o segundo rótulo de interrogação **minusRightLabel**.
 
-6.  Nomeie o controle NumericUpDown como **difference**.
+6. Nomeie o controle NumericUpDown como **difference**.
 
-7.  Cole os cinco controles mais duas vezes.
+7. Cole os cinco controles mais duas vezes.
 
-8.  Para a terceira linha, nomeie o primeiro rótulo como **timesLeftLabel**, altere a propriedade **Text** para **x** (sinal de multiplicação), nomeie o terceiro rótulo como **timesRightLabel** e nomeie o controle NumericUpDown como **product**.
+8. Para a terceira linha, nomeie o primeiro rótulo como **timesLeftLabel**, altere a propriedade **Text** para **x** (sinal de multiplicação), nomeie o terceiro rótulo como **timesRightLabel** e nomeie o controle NumericUpDown como **product**.
 
 9. Para a quarta linha, nomeie o primeiro rótulo como **dividedLeftLabel**, altere a propriedade **Text** para **÷** (sinal de divisão), nomeie o terceiro rótulo como **dividedRightLabel** e nomeie o controle NumericUpDown como **quotient**.
 
@@ -163,31 +163,31 @@ Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e a
 
 ## <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>Para adicionar um botão Iniciar e definir a ordem do índice de guias
 
-1.  Adicione um controle de <xref:System.Windows.Forms.Button> da **caixa de ferramentas** e, em seguida, defina sua propriedade **(Name)** para **startButton**.
+1. Adicione um controle de <xref:System.Windows.Forms.Button> da **caixa de ferramentas** e, em seguida, defina sua propriedade **(Name)** para **startButton**.
 
-2.  Defina a propriedade **Text** como **Iniciar o teste**.
+2. Defina a propriedade **Text** como **Iniciar o teste**.
 
-3.  Defina o tamanho da fonte como **14**.
+3. Defina o tamanho da fonte como **14**.
 
-4.  Defina a propriedade **AutoSize** como **True**, o que faz com que o botão seja redimensionado automaticamente para se ajustar ao texto.
+4. Defina a propriedade **AutoSize** como **True**, o que faz com que o botão seja redimensionado automaticamente para se ajustar ao texto.
 
-5.  Centralize o botão próximo à parte inferior do formulário.
+5. Centralize o botão próximo à parte inferior do formulário.
 
-6.  Defina o valor da propriedade **TabIndex** para o controle **startButton** como **1**.
+6. Defina o valor da propriedade **TabIndex** para o controle **startButton** como **1**.
 
     > [!NOTE]
     > A propriedade **TabIndex** define a ordem dos controles quando a pessoa realizando o teste escolhe a tecla **Tab**. Para ver como funciona, abra qualquer caixa de diálogo (por exemplo, na barra de menus, escolha **Arquivo** > **Abrir**) e escolha a tecla **Tab** algumas vezes. Inspecione como o cursor move o controle para controlar cada vez que você escolhe a tecla **Tab**. Um programador decidiu a ordem ao criar o formulário.
 
-7.  Defina o valor da propriedade de **TabIndex** para o controle de soma NumericUpDown como **2**, o controle da diferença como **3**, o controle do produto como **4** e o controle do quociente como **5**.
+7. Defina o valor da propriedade de **TabIndex** para o controle de soma NumericUpDown como **2**, o controle da diferença como **3**, o controle do produto como **4** e o controle do quociente como **5**.
 
      O formulário deve parecer com a ilustração a seguir.
 
      ![Formulário inicial do teste de matemática](../ide/media/express_formlaidout.png)
 
-8.  Para verificar se a propriedade **TabIndex** funciona como você espera, salve e execute seu programa escolhendo a tecla **F5** ou a barra de menus **Depurar** > **Iniciar Depuração** na barra de menus. Em seguida, escolha a tecla **Tab** algumas vezes.
+8. Para verificar se a propriedade **TabIndex** funciona como você espera, salve e execute seu programa escolhendo a tecla **F5** ou a barra de menus **Depurar** > **Iniciar Depuração** na barra de menus. Em seguida, escolha a tecla **Tab** algumas vezes.
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
--   Para ir para a próxima etapa do tutorial, confira [Etapa 2: Criar um problema de adição aleatório](../ide/step-2-create-a-random-addition-problem.md).
+- Para ir para a próxima etapa do tutorial, confira [Etapa 2: Criar um problema de adição aleatório](../ide/step-2-create-a-random-addition-problem.md).
 
--   Para retornar ao tópico de visão geral, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+- Para retornar ao tópico de visão geral, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).

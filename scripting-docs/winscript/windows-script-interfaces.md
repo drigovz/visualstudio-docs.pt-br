@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: acb62f3dc5774ef8574fded3c0537e97611049c2
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 0aebd0857ba847d5c5eba5e3a4a8a01da73ec159
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840025"
 ---
 # <a name="windows-script-interfaces"></a>Interfaces do Windows Script
 
@@ -62,21 +62,21 @@ A ilustração a seguir mostra a interação entre um host do Windows Script e u
 
 As etapas envolvidas na interação entre o host e o mecanismo são fornecidas na lista a seguir.
 
-1.  Criar um projeto. O host carrega um projeto ou documento. (Essa etapa não é específica para o Windows Script, mas é incluída aqui para integridade.)
+1. Criar um projeto. O host carrega um projeto ou documento. (Essa etapa não é específica para o Windows Script, mas é incluída aqui para integridade.)
 
-2.  Crie o mecanismo do Windows Script. O host chama `CoCreateInstance` para criar um novo mecanismo do Windows Script, especificando o CLSID (identificador de classe) do mecanismo de script específico a ser usado. Por exemplo, o navegador HTML do Internet Explorer recebe o identificador de classe do mecanismo de script por meio do atributo CLSID= da marca HTML \<OBJECT>.
+2. Crie o mecanismo do Windows Script. O host chama `CoCreateInstance` para criar um novo mecanismo do Windows Script, especificando o CLSID (identificador de classe) do mecanismo de script específico a ser usado. Por exemplo, o navegador HTML do Internet Explorer recebe o identificador de classe do mecanismo de script por meio do atributo CLSID= da marca HTML \<OBJECT>.
 
-3.  Carregue o script. Se o conteúdo do script é mantido, o host chama o método `IPersist*::Load` do mecanismo de script para alimentar o recipiente de propriedades, fluxo ou armazenamento de script. Caso contrário, o host usa o método `IPersist*::InitNew` ou [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) para criar um script nulo. Um host que mantém um script como texto pode usar [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) para alimentar o texto do script ao mecanismo de script, depois de chamar `IActiveScriptParse::InitNew`.
+3. Carregue o script. Se o conteúdo do script é mantido, o host chama o método `IPersist*::Load` do mecanismo de script para alimentar o recipiente de propriedades, fluxo ou armazenamento de script. Caso contrário, o host usa o método `IPersist*::InitNew` ou [IActiveScriptParse::InitNew](../winscript/reference/iactivescriptparse-initnew.md) para criar um script nulo. Um host que mantém um script como texto pode usar [IActiveScriptParse::ParseScriptText](../winscript/reference/iactivescriptparse-parsescripttext.md) para alimentar o texto do script ao mecanismo de script, depois de chamar `IActiveScriptParse::InitNew`.
 
-4.  Adicione itens nomeados. Para cada item de nível superior nomeado (como páginas e formulários) importado para o namespace do mecanismo de script, o host chama o método [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md) para criar uma entrada no namespace do mecanismo. Essa etapa não é necessária se os itens nomeados de nível superior já fazem parte do estado persistente do script carregado na etapa 3. Um host não usa `IActiveScript::AddNamedItem` para adicionar itens nomeados como subníveis (como controles em uma página HTML); em vez disso, o mecanismo indiretamente obtém itens de subnível de itens de nível superior usando as interfaces `ITypeInfo` e `IDispatch` do host.
+4. Adicione itens nomeados. Para cada item de nível superior nomeado (como páginas e formulários) importado para o namespace do mecanismo de script, o host chama o método [IActiveScript::AddNamedItem](../winscript/reference/iactivescript-addnameditem.md) para criar uma entrada no namespace do mecanismo. Essa etapa não é necessária se os itens nomeados de nível superior já fazem parte do estado persistente do script carregado na etapa 3. Um host não usa `IActiveScript::AddNamedItem` para adicionar itens nomeados como subníveis (como controles em uma página HTML); em vez disso, o mecanismo indiretamente obtém itens de subnível de itens de nível superior usando as interfaces `ITypeInfo` e `IDispatch` do host.
 
-5.  Execute o script. O host faz com que o mecanismo inicie a execução do script, definindo o sinalizador SCRIPTSTATE_CONNECTED no método [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md). Essa chamada provavelmente executaria qualquer trabalho de construção de mecanismo de script, incluindo associação estática, conexão a eventos (veja abaixo) e execução de código, de forma semelhante a uma função `main()` em script.
+5. Execute o script. O host faz com que o mecanismo inicie a execução do script, definindo o sinalizador SCRIPTSTATE_CONNECTED no método [IActiveScript::SetScriptState](../winscript/reference/iactivescript-setscriptstate.md). Essa chamada provavelmente executaria qualquer trabalho de construção de mecanismo de script, incluindo associação estática, conexão a eventos (veja abaixo) e execução de código, de forma semelhante a uma função `main()` em script.
 
-6.  Obtenha informações sobre o item. Cada vez que o mecanismo de script deve associar um símbolo com um item de nível superior, ele chama o método [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md), que retorna informações sobre o item fornecido.
+6. Obtenha informações sobre o item. Cada vez que o mecanismo de script deve associar um símbolo com um item de nível superior, ele chama o método [IActiveScriptSite::GetItemInfo](../winscript/reference/iactivescriptsite-getiteminfo.md), que retorna informações sobre o item fornecido.
 
-7.  Conectar eventos. Antes de iniciar o script real, o mecanismo de script se conecta aos eventos de todos os objetos relevantes por meio da interface `IConnectionPoint`.
+7. Conectar eventos. Antes de iniciar o script real, o mecanismo de script se conecta aos eventos de todos os objetos relevantes por meio da interface `IConnectionPoint`.
 
-8.  Invoque propriedades e métodos. Conforme o script é executado, o mecanismo de script percebe referências a propriedades e métodos em objetos nomeados por meio de `IDispatch::Invoke` ou outros mecanismos de associação OLE padrão.
+8. Invoque propriedades e métodos. Conforme o script é executado, o mecanismo de script percebe referências a propriedades e métodos em objetos nomeados por meio de `IDispatch::Invoke` ou outros mecanismos de associação OLE padrão.
 
 ## <a name="windows-script-terms"></a>Termos do Windows Script
 

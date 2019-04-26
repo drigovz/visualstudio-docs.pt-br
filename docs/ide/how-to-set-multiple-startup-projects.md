@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 988bc52cbf163c4b7e0f4c8d821a769f21df0413
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e4675977872057010e4279f88739981505bf73e9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55938196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946863"
 ---
 # <a name="how-to-set-multiple-startup-projects"></a>Como: Definir vários projetos de inicialização
 
@@ -23,13 +23,13 @@ O Visual Studio permite especificar como mais de um projeto é executado ao inic
 
 ## <a name="to-set-multiple-startup-projects"></a>Para definir vários projetos de inicialização
 
-1.  No **Gerenciador de Soluções**, selecione a solução (o nó superior).
+1. No **Gerenciador de Soluções**, selecione a solução (o nó superior).
 
-2.  Selecione o menu de contexto do nó da solução (clique com o botão direito do mouse) e escolha **Propriedades**. A caixa de diálogo **Páginas de Propriedades da Solução** é exibida.
+2. Selecione o menu de contexto do nó da solução (clique com o botão direito do mouse) e escolha **Propriedades**. A caixa de diálogo **Páginas de Propriedades da Solução** é exibida.
 
-3.  Expanda o nó **Propriedades Comuns** e escolha **Projeto de Inicialização**.
+3. Expanda o nó **Propriedades Comuns** e escolha **Projeto de Inicialização**.
 
-4.  Escolha a opção **Vários Projetos de Inicialização** e defina as ações apropriadas.
+4. Escolha a opção **Vários Projetos de Inicialização** e defina as ações apropriadas.
 
 ## <a name="see-also"></a>Consulte também
 

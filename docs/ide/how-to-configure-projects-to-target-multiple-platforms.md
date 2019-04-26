@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e1f302821b219266cf7080437a73cc577ffb0ffa
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 5449f0b5cb7d2310f7f71a93236bbe5fd62eacae
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55920087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824276"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>Como: Configurar projetos para se destinarem a várias plataformas
 
@@ -27,19 +27,19 @@ O Visual Studio fornece uma maneira de uma solução se destinar a várias plata
 
 A caixa de diálogo **Configuration Manager** permite criar e definir configurações e plataformas no nível do projeto e da solução. Cada combinação de destinos e configurações no nível da solução pode ter um conjunto exclusivo de propriedades associadas a ela, permitindo mudar facilmente entre, por exemplo, uma configuração de Versão destinada a uma plataforma [!INCLUDE[vcprx64](../extensibility/internals/includes/vcprx64_md.md)], uma configuração de versão destinada a uma plataforma x86 e uma configuração de Depuração destinada a uma plataforma x86.
 
-1.  No menu **Build**, clique em **Configuration Manager**.
+1. No menu **Build**, clique em **Configuration Manager**.
 
-2.  Na caixa **Plataforma da solução ativa**, selecione a plataforma a que você deseja que a solução seja destinada ou selecione **\<Novo >** para criar uma nova plataforma. O Visual Studio compilará seu aplicativo para direcionar a plataforma definida como a plataforma ativa na caixa de diálogo **Configuration Manager**.
+2. Na caixa **Plataforma da solução ativa**, selecione a plataforma a que você deseja que a solução seja destinada ou selecione **\<Novo >** para criar uma nova plataforma. O Visual Studio compilará seu aplicativo para direcionar a plataforma definida como a plataforma ativa na caixa de diálogo **Configuration Manager**.
 
 ## <a name="remove-a-platform"></a>Remover uma plataforma
 
 Se perceber que não precisa de uma plataforma, você pode removê-la usando a caixa de diálogo **Gerenciador de Configurações**. Isso removerá todas as configurações de solução e projeto que você definiu para essa combinação de configuração e destino.
 
-1.  No menu **Build**, clique em **Configuration Manager**.
+1. No menu **Build**, clique em **Configuration Manager**.
 
-2.  Na caixa **Plataforma da solução ativa**, selecione **\<Editar>**. A caixa de diálogo **Editar Plataformas de Solução** é aberta.
+2. Na caixa **Plataforma da solução ativa**, selecione **\<Editar>**. A caixa de diálogo **Editar Plataformas de Solução** é aberta.
 
-3.  Clique na plataforma que deseja remover e clique em **Remover**.
+3. Clique na plataforma que deseja remover e clique em **Remover**.
 
 ## <a name="target-multiple-platforms-with-one-solution"></a>Ter várias plataformas como destino com uma solução
 
@@ -47,11 +47,11 @@ Uma vez que pode alterar as configurações com base na combinação de definiç
 
 ### <a name="to-target-multiple-platforms"></a>Para destinar-se a várias plataformas
 
-1.  Use o **Configuration Manager** para adicionar pelo menos duas plataformas de destino para a solução.
+1. Use o **Configuration Manager** para adicionar pelo menos duas plataformas de destino para a solução.
 
-2.  Selecione a plataforma a que deseja se destinar na lista **Plataforma da solução ativa**.
+2. Selecione a plataforma a que deseja se destinar na lista **Plataforma da solução ativa**.
 
-3.  Compile a solução.
+3. Compile a solução.
 
 ### <a name="to-build-multiple-solution-configurations-at-once"></a>Para criar várias configurações de solução de uma vez
 

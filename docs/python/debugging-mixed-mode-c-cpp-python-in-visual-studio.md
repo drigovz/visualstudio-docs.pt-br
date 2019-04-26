@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: a2848f04e2765c23f60de041e865e7684901b924
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62962597"
 ---
 # <a name="debug-python-and-c-together"></a>Depurar o Python e o C++ juntos
 
@@ -87,7 +87,7 @@ Para todas as versões anteriores do Visual Studio, a depuração direta de modo
 ## <a name="mixed-mode-specific-features"></a>Recursos específicos ao modo misto
 
 - [Pilha de chamadas combinada](#combined-call-stack)
-- [Etapa entre o Python e o código nativo](#step-between-python-and-native-code)
+- [Executar em etapas o código do Python e o código nativo](#step-between-python-and-native-code)
 - [Exibição de valores PyObject no código nativo](#pyobject-values-view-in-native-code)
 - [Exibição de valores Nativos no código do Python](#native-values-view-in-python-code)
 

@@ -7,12 +7,12 @@ ms.date: 12/11/2017
 ms.topic: conceptual
 description: Como atribuir assinaturas do Visual Studio a usuários finais, para parceiros do MPN.
 searchscope: VS Subscription
-ms.openlocfilehash: 9b9d7aa6095b6d5147482b139fdfe43378ad346c
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 8a0a0f3b6b093c023a8a0129c34d16aa75fffdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412396"
 ---
 # <a name="managing-visual-studio-subscriptions-offered-through-the-microsoft-partner-network-mpn"></a>Gerenciando assinaturas do Visual Studio oferecidas pelo MPN (Microsoft Partner Network)
 
@@ -42,7 +42,6 @@ Assinante do Microsoft Action Pack e assinaturas do Visual Studio
     - Email de Contato
 13. Agora a entrada está concluída, e o assinante deve ter acesso aos benefícios
 
-
 ### <a name="competency-partners"></a>Parceiros de Competência
 1. Selecione **Requisitos e Ativos**
 2. Selecione **Privilégios**
@@ -66,7 +65,7 @@ Assinante do Microsoft Action Pack e assinaturas do Visual Studio
 
 > [!NOTE]
 > A Função de Contato Técnico é necessária para assinaturas do Visual Studio
->     - PG 8 – atribuir assinaturas do Visual Studio a parceiros de competência
+> - PG 8 – atribuir assinaturas do Visual Studio a parceiros de competência
 
 ## <a name="need-help"></a>Precisa de ajuda?
 Assinantes e Administradores de Programa devem trabalhar diretamente com a equipe de suporte do Microsoft Partner Network para resolver quaisquer problemas com o acesso a assinaturas pelos assinantes. Acesse a página [Suporte para Parceiros](https://partner.microsoft.com/support) para obter assistência. (Serão necessárias as credenciais de entrada do MPN).

@@ -11,12 +11,12 @@ ms.assetid: 777d0db5-0073-458a-a2a3-58b1c1f24c60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b0e71e499eb1920dd59ee47533855cf9f86cbbd0
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: 5e703ca3e1770d92a2dc01402acaaba0b4988e92
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58416091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970624"
 ---
 # <a name="how-to-specify-timeout-periods-for-test-controllers-and-test-agents"></a>Como: Especificar períodos de tempo limite para controladores e agentes de teste
 
@@ -26,7 +26,7 @@ O controlador de teste e o agente de teste têm várias configurações de tempo
 
 Para editar várias configurações de tempo limite de um controlador de teste ou de um agente de teste, modifique os seguintes arquivos de configuração usando os nomes de chaves e valores nas tabelas:
 
--   Controlador de teste: *QTController.exe.config*
+- Controlador de teste: *QTController.exe.config*
 
     |Nome da chave|Descrição|Valor|
     |-|-----------------|-|
@@ -35,7 +35,7 @@ Para editar várias configurações de tempo limite de um controlador de teste o
     |AgentInitializeTimeout|Número de segundos da espera pela inicialização de todos os agentes e seus coletores de dados no início de uma execução de teste, antes de cancelar a execução. Esse valor deverá ser bastante grande se forem usados coletores de dados.|"n" segundos. Padrão: "120" (dois minutos).|
     |AgentCleanupTimeout|Número de segundos da espera pela limpeza de todos os agentes e seus coletores de dados, antes de concluir a execução do teste. Esse valor deverá ser bastante grande se forem usados coletores de dados.|"n" segundos. Padrão: "120" (dois minutos).|
 
--   Agente de Teste: *QTAgentService.exe.config*
+- Agente de Teste: *QTAgentService.exe.config*
 
     |Nome da chave|Descrição|Valor|
     |-|-----------------|-|

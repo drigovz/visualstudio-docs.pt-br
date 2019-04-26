@@ -8,12 +8,12 @@ ms.author: karann
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d92c266b0504f021328175d436216d9c86a6032
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: d3ae795b464d8a693371b1ebb9238a897debbf02
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892609"
 ---
 # <a name="xaml-errors-and-warnings"></a>Avisos e erros de XAML
 
@@ -31,7 +31,6 @@ Em segundo plano, várias ferramentas analisam o XAML em paralelo. Erros de XAML
 
 > [!Note]
 > Nem todos os erros ou avisos têm um código correspondente. Geralmente, esses erros são do XAML Designer.
-
 
 ## <a name="suppress-xaml-designer-errors"></a>Suprimir erros do XAML Designer
 
