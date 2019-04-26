@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f68bd5803d418f674007fff34aa0fa016c1804a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4e186bf0aa362f153ad3e6f57c39abc55c558270
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55918579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824273"
 ---
 # <a name="how-to-search-for-topics"></a>Como: Pesquisar tópicos
 
@@ -23,18 +23,18 @@ Para abrir a guia **Pesquisar**, escolha a guia **Pesquisar** na janela do **Vis
 
 ## <a name="to-perform-a-full-text-search"></a>Para realizar uma pesquisa de texto completo
 
-1.  Na caixa de pesquisa, digite a palavra que deseja localizar.
+1. Na caixa de pesquisa, digite a palavra que deseja localizar.
 
-2.  Na consulta de pesquisa, especifique quais operadores de pesquisa avançados ou lógicos deseja aplicar à pesquisa, se houver. Para pesquisar toda a ajuda disponível, não use operadores.
+2. Na consulta de pesquisa, especifique quais operadores de pesquisa avançados ou lógicos deseja aplicar à pesquisa, se houver. Para pesquisar toda a ajuda disponível, não use operadores.
 
     > [!NOTE]
     > Na caixa de diálogo **Opções do Visualizador**, você pode especificar preferências adicionais, como o número máximo de resultados da pesquisa a serem exibidos por vez e se deseja incluir conteúdo em inglês se a localidade principal não for inglês.
 
-3.  Escolha a tecla **ENTER**.
+3. Escolha a tecla **ENTER**.
 
      Uma pesquisa retorna no máximo 200 ocorrências, por padrão, e as exibe na área de resultados da pesquisa. Informações adicionais de versão para cada resultado podem aparecer, dependendo do conteúdo.
 
-4.  Para exibir um tópico, escolha seu título na lista de resultados.
+4. Para exibir um tópico, escolha seu título na lista de resultados.
 
 ## <a name="full-text-search-tips"></a>Dicas de pesquisa de texto completo
 
@@ -66,11 +66,11 @@ Se você especificar uma cadeia de caracteres de pesquisa que inclui várias pal
 
 O algoritmo de pesquisa é aplicável a determinados critérios para ajudar a classificar resultados da pesquisa superiores ou inferiores na lista de resultados. No geral:
 
-1.  O conteúdo que inclui palavras de pesquisa no título tem uma classificação mais alta do que o conteúdo que não inclui.
+1. O conteúdo que inclui palavras de pesquisa no título tem uma classificação mais alta do que o conteúdo que não inclui.
 
-2.  O conteúdo que inclui palavras de pesquisa muito próximas tem uma classificação mais alta do que o conteúdo que não inclui.
+2. O conteúdo que inclui palavras de pesquisa muito próximas tem uma classificação mais alta do que o conteúdo que não inclui.
 
-3.  O conteúdo com uma densidade maior das palavras de pesquisa tem uma classificação mais alta do que o conteúdo que tem uma densidade menor das palavras de pesquisa.
+3. O conteúdo com uma densidade maior das palavras de pesquisa tem uma classificação mais alta do que o conteúdo que tem uma densidade menor das palavras de pesquisa.
 
 ### <a name="stopwords"> Palavras ignoradas em pesquisas (palavras irrelevantes)</a>
 

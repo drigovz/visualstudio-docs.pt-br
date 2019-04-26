@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: abe8be0804877b4836a766f2c4fec37321534b5f
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 342d3288d647018af7faf42ab3e669bb8a62594f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56318583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793151"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Recursos de acessibilidade do Visual Studio
 
@@ -26,15 +26,15 @@ ms.locfileid: "56318583"
 
 Além dos recursos de acessibilidade e utilitários no Windows, os seguintes recursos tornam o Visual Studio mais acessível para pessoas portadoras de deficiência:
 
--   Ampliação de texto e botão da barra de ferramentas
+- Ampliação de texto e botão da barra de ferramentas
 
--   Opções de tamanho de texto em editores
+- Opções de tamanho de texto em editores
 
--   Personalização de cor em editores
+- Personalização de cor em editores
 
--   Personalização de atalhos de teclado
+- Personalização de atalhos de teclado
 
--   Preenchimento automático para métodos e parâmetros
+- Preenchimento automático para métodos e parâmetros
 
 > [!NOTE]
 > Este tópico aplica-se ao Visual Studio no Windows. Para o Visual Studio para Mac, confira [Acessibilidade do Visual Studio para Mac](/visualstudio/mac/accessibility).
@@ -44,15 +44,15 @@ Além dos recursos de acessibilidade e utilitários no Windows, os seguintes rec
 
 Para mais informações, consulte os seguintes tópicos:
 
--   [Como: Definir opções de acessibilidade do IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
+- [Como: Definir opções de acessibilidade do IDE](../../ide/reference/how-to-set-ide-accessibility-options.md)
 
--   [Como: Usar exclusivamente o teclado](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
+- [Como: Usar exclusivamente o teclado](../../ide/reference/how-to-use-the-keyboard-exclusively.md)
 
--   [Atalhos de teclado padrão](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
+- [Atalhos de teclado padrão](../../ide/default-keyboard-shortcuts-in-visual-studio.md)
 
--   [Dicas e truques de acessibilidade](../../ide/reference/accessibility-tips-and-tricks.md)
+- [Dicas e truques de acessibilidade](../../ide/reference/accessibility-tips-and-tricks.md)
 
--   [Como: Alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
+- [Como: Alterar fontes e cores](../../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 
 ## <a name="see-also"></a>Consulte também
 

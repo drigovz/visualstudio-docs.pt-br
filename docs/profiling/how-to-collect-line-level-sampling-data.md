@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cb55221eb8d4a0d60832853499096747e836da6a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 2e447b0b15a7a541567932a72dffd7abfc9851e7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834582"
 ---
 # <a name="how-to-collect-line-level-sampling-data"></a>Como: Coletar dados de amostragem no nível de linha
 A amostragem de nível de linha é a capacidade do criador de perfil para determinar o local no código de uma função de processamento intensivo em que o processador tem que gastar a maior parte de seu tempo, como uma função que tem amostras altamente exclusivas.
@@ -49,11 +49,11 @@ A amostragem de nível de linha é a capacidade do criador de perfil para determ
 ### <a name="turn-off-line-level-sampling-for-managed-code"></a>Desligar a amostragem no nível de linha para o código gerenciado
  Por padrão, a amostragem de nível de linha está ativada. Desligue a coleta de dados no nível de linha para o código gerenciado usando um dos seguintes comandos:
 
--   Antes da criação de perfil, digite **VSPerfCLREnv /samplelineoff**. Isso afeta os aplicativos e os serviços.
+- Antes da criação de perfil, digite **VSPerfCLREnv /samplelineoff**. Isso afeta os aplicativos e os serviços.
 
      – ou —
 
--   Ao iniciar um aplicativo, digite **VSPerfCmd /lineoff \<outros argumentos>**.
+- Ao iniciar um aplicativo, digite **VSPerfCmd /lineoff \<outros argumentos>**.
 
 ## <a name="see-also"></a>Consulte também
 - [Configurar sessões de desempenho](../profiling/configuring-performance-sessions.md)

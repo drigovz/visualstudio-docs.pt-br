@@ -11,18 +11,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 06d1f4fa13f2cdb51e7e2fe6939b449fdb1c3f78
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 411459cb55c54c96fb54000249f733d492e45820
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440197"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>Criação de perfil de linha de comando dos aplicativos Web ASP.NET
 Esta seção descreve os procedimentos e as opções para coletar dados de desempenho para aplicativos Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] usando as Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] na linha de comando.
 
 > [!NOTE]
->  Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 
 ## <a name="common-tasks"></a>Tarefas comuns
 
@@ -36,7 +36,6 @@ Esta seção descreve os procedimentos e as opções para coletar dados de desem
 | **Adicionar dados de interação entre camadas:** É possível adicionar dados de desempenho sobre chamadas [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] síncronas que o aplicativo Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] efetua para um banco de dados [!INCLUDE[ssNoVersion](../data-tools/includes/ssnoversion_md.md)] da Microsoft. | -   [Coletar dados de interação entre camadas](../profiling/adding-tier-interaction-data-from-the-command-line.md) |
 
 ## <a name="related-tasks"></a>Tarefas relacionadas
-
 
 |Tarefa|Conteúdo relacionado|
 |----------|---------------------|

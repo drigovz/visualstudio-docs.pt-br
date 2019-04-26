@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ab09f43d5c665067786fc502137902eee846d4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: ba95cde967f428717be852dad785233eb96cb290
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444887"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038: Alta taxa de contenções de bloqueio
 
@@ -46,7 +46,7 @@ ms.locfileid: "56654133"
  Essa regra é acionada quando as medições feitas durante uma execução de criação de perfil indicam que há uma quantidade excessivamente alta de contenções de bloqueio. As contenções de bloqueio atrasam a execução de threads que estão aguardando o bloqueio. Até mesmo pequenas quantidades de contenção de bloqueio em testes de unidade ou em testes de carga em execução em um hardware de extremidade inferior devem ser investigadas.
 
 > [!NOTE]
->  Quando a taxa de contenções de bloqueio relatadas nos dados de criação de perfil é excessivamente alta, a mensagem de aviso [DA0039: Taxa de contenções de bloqueio muito alta](../profiling/da0039-very-high-rate-of-lock-contentions.md) é acionada em lugar dessa mensagem de informações.
+> Quando a taxa de contenções de bloqueio relatadas nos dados de criação de perfil é excessivamente alta, a mensagem de aviso [DA0039: Taxa de contenções de bloqueio muito alta](../profiling/da0039-very-high-rate-of-lock-contentions.md) é acionada em lugar dessa mensagem de informações.
 
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso
  Clique duas vezes na mensagem para navegar para a exibição [Marcas](../profiling/marks-view.md) dos dados de criação de perfil.  Encontre a coluna **.NET CLR LocksAndThreads\Taxa de contenção/s**. Determine se há fases específicas da execução do programa em que a contenção de bloqueio é mais pesada do que em outras fases.

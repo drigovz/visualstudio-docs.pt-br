@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e3881bc346c5074c7fd4277708a16e22d4acd7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 8d396d56aea8be3724078223261a3b6eb8835692
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597849"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445371"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Integração com o Visual Studio (MSBuild)
 O Visual Studio hospeda o [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] para carregar e compilar projetos gerenciados. Como [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] é responsável pelo projeto, quase todo projeto que estiver no formato [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] poderá ser utilizado com êxito no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mesmo se o projeto tiver sido criado por meio de uma ferramenta diferente e tenha um processo de build personalizado.
@@ -63,7 +63,7 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ```
 
 > [!NOTE]
->  Alguns nomes de tipo de item são específicos do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mas não aparecem nessa lista suspensa.
+> Alguns nomes de tipo de item são específicos do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], mas não aparecem nessa lista suspensa.
 
 ## <a name="in-process-compilers"></a>Compiladores em processo
  Quando possível, [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tentará usar a versão em processo do compilador [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] para melhorar o desempenho. (não se aplica a [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)]). Para que isso funcione corretamente, as condições a seguir devem ser cumpridas:
@@ -75,13 +75,13 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-intellisense"></a>IntelliSense do Tempo de Design
  Para obter o suporte do IntelliSense em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] antes que o build gere um assembly de saída, as condições a seguir devem ser cumpridas:
 
--   Deve haver um destino com o nome `Compile`.
+- Deve haver um destino com o nome `Compile`.
 
--   É necessário que o destino `Compile` ou uma de suas dependências chame a tarefa do compilador do projeto, como `Csc` ou `Vbc`.
+- É necessário que o destino `Compile` ou uma de suas dependências chame a tarefa do compilador do projeto, como `Csc` ou `Vbc`.
 
--   O destino `Compile` ou uma de suas dependências deve fazer com que o compilador receba todos os parâmetros necessários para o IntelliSense, em particular, todas as referências.
+- O destino `Compile` ou uma de suas dependências deve fazer com que o compilador receba todos os parâmetros necessários para o IntelliSense, em particular, todas as referências.
 
--   As condições listadas na seção [Compiladores em processo](#in-process-compilers) devem ser cumpridas.
+- As condições listadas na seção [Compiladores em processo](#in-process-compilers) devem ser cumpridas.
 
 ## <a name="build-solutions"></a>Soluções de compilação
  Dentro do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], as ordens do arquivo de solução e do build de projeto são controladas pelo próprio [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Ao compilar uma solução com o *msbuild.exe* na linha de comando, [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] analisa o arquivo de solução e ordena os builds de projeto. Em ambos os casos, os projetos são compilados individualmente em ordem de dependência e as referências projeto a projeto não são percorridas. Por outro lado, quando projetos individuais são compilados com o *msbuild.exe*, as referências projeto a projeto são percorridas.
@@ -126,22 +126,22 @@ Condition=" '$(Something)|$(Configuration)|$(SomethingElse)' == 'xxx|Debug|yyy' 
 ## <a name="design-time-target-execution"></a>Execução de destino do tempo de design
  [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] tentará executar destinos com determinados nomes ao carregar um projeto. Esses destinos incluem `Compile`, `ResolveAssemblyReferences`, `ResolveCOMReferences`, `GetFrameworkPaths` e `CopyRunEnvironmentFiles`. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] executará esses destinos para que o compilador seja inicializado a fim de fornecer o IntelliSense, o depurador poderá ser inicializado e as referências exibidas no Gerenciador de Soluções poderão ser resolvidas. Se esses destinos não estiverem presentes, o projeto carregará e compilará corretamente, mas a experiência de tempo de design no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] não será totalmente funcional.
 
-##  <a name="edit-project-files-in-visual-studio"></a>Editar arquivos de projeto no Visual Studio
+## <a name="edit-project-files-in-visual-studio"></a>Editar arquivos de projeto no Visual Studio
  Para editar um [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] diretamente do projeto, abra o arquivo de projeto no editor de XML do Visual Studio.
 
 #### <a name="to-unload-and-edit-a-project-file-in-visual-studio"></a>Para descarregar e editar um arquivo de projeto no Visual Studio
 
-1.  No **Gerenciador de Soluções**, abra o menu de atalho do projeto e, em seguida, escolha **Descarregar Projeto**.
+1. No **Gerenciador de Soluções**, abra o menu de atalho do projeto e, em seguida, escolha **Descarregar Projeto**.
 
      O projeto está marcado como **(indisponível)**.
 
-2.  No **Gerenciador de Soluções**, abra o menu de atalho do projeto indisponível e, em seguida, escolha **Editar \<Arquivo de Projeto>**.
+2. No **Gerenciador de Soluções**, abra o menu de atalho do projeto indisponível e, em seguida, escolha **Editar \<Arquivo de Projeto>**.
 
      O arquivo de projeto será aberto no Editor de XML do Visual Studio.
 
-3.  Edite, salve e feche o arquivo de projeto.
+3. Edite, salve e feche o arquivo de projeto.
 
-4.  No **Gerenciador de Soluções**, abra o menu de atalho do projeto indisponível e, em seguida, escolha **Recarregar Projeto**.
+4. No **Gerenciador de Soluções**, abra o menu de atalho do projeto indisponível e, em seguida, escolha **Recarregar Projeto**.
 
 ## <a name="intellisense-and-validation"></a>IntelliSense e validação
  Ao usar o editor XML para editar arquivos de projeto, o IntelliSense e a validação são controlados pelos arquivos de esquema [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Eles são instalados no cache do esquema, que pode ser encontrado no *\<diretório de instalação do Visual Studio>\Xml\Schemas\1033\MSBuild*.

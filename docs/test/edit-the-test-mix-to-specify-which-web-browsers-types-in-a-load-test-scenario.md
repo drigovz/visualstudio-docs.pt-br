@@ -11,12 +11,12 @@ ms.assetid: 47f981d9-3038-45cc-a486-82b9daf9a9a1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed7c90e292b2ed77eeae4096e967f10068664659
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4da3fc51593cc877e09ca6f46db70303186b293e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55955551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783829"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario"></a>Editar a combinação de testes para especificar os tipos de navegadores da Web em um cenário de teste de carga
 
@@ -34,34 +34,34 @@ Depois de especificar uma combinação de navegadores, posteriormente, você pod
 
 ### <a name="to-add-new-browsers-to-a-scenario"></a>Para adicionar novos navegadores a um cenário
 
-1.  Durante o processo de especificar a combinação de navegadores para um cenário, escolha **Adicionar**.
+1. Durante o processo de especificar a combinação de navegadores para um cenário, escolha **Adicionar**.
 
      Uma nova entrada de navegador é adicionada à grade.
 
     > [!NOTE]
     > Para exibir a caixa de diálogo **Editar combinação de navegadores**, clique com o botão direito do mouse em um cenário existente e escolha **Editar combinação de navegadores**.
 
-2.  Na coluna **Tipo de navegador**, escolha a seta para a nova entrada e escolha o tipo de navegador desejado.
+2. Na coluna **Tipo de navegador**, escolha a seta para a nova entrada e escolha o tipo de navegador desejado.
 
-3.  (Opcional) Ajuste o controle misto para especificar a distribuição de teste.
+3. (Opcional) Ajuste o controle misto para especificar a distribuição de teste.
 
-4.  Quando terminar de adicionar os navegadores, escolha **OK**.
+4. Quando terminar de adicionar os navegadores, escolha **OK**.
 
-##  <a name="remove-browsers-from-a-scenario"></a>Remover navegadores de um cenário
+## <a name="remove-browsers-from-a-scenario"></a>Remover navegadores de um cenário
 
 ### <a name="to-remove-browsers-from-a-scenario"></a>Para remover navegadores de um cenário
 
-1.  Abra um teste de carga.
+1. Abra um teste de carga.
 
-2.  Clique com o botão direito do mouse no cenário do qual deseja remover um navegador e escolha **Editar combinação de navegadores**.
+2. Clique com o botão direito do mouse no cenário do qual deseja remover um navegador e escolha **Editar combinação de navegadores**.
 
      A caixa de diálogo **Editar combinação de navegadores** é exibida.
 
-3.  Selecione o navegador na grade e escolha **Remover**.
+3. Selecione o navegador na grade e escolha **Remover**.
 
-4.  (Opcional) Ajuste o controle misto para especificar a distribuição de teste.
+4. (Opcional) Ajuste o controle misto para especificar a distribuição de teste.
 
-5.  Quando terminar de remover os navegadores, escolha **OK**.
+5. Quando terminar de remover os navegadores, escolha **OK**.
 
 ## <a name="about-the-mix-control"></a>Sobre o controle misto
 

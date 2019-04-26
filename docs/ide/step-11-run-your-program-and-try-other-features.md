@@ -8,12 +8,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fbceecbbe03e84e1dac6c851f3bbb692c0e26539
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: ee62d8c5b9a657b09feda01d6275a79ee91b487d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55934647"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430817"
 ---
 # <a name="step-11-run-your-program-and-try-other-features"></a>Etapa 11: Executar o programa e experimentar outros recursos
 O programa é concluído e pronto para ser executado. Você pode executar o programa e definir a cor do plano de fundo de <xref:System.Windows.Forms.PictureBox>. Para saber mais, tente melhorar o programa alterando a cor do formulário, personalizando os botões e a caixa de seleção, e modificando as propriedades do formulário.
@@ -24,38 +24,38 @@ O programa é concluído e pronto para ser executado. Você pode executar o prog
 
 ## <a name="to-run-your-program-and-set-the-background-color"></a>Para executar o programa e definir a cor do plano de fundo
 
-1.  Selecione **F5** ou, na barra de menus, selecione **Depurar** > **Iniciar Depuração**.
+1. Selecione **F5** ou, na barra de menus, selecione **Depurar** > **Iniciar Depuração**.
 
-2.  Antes de abrir uma imagem, clique no botão **Definir a cor da tela de fundo**. A caixa de diálogo **Cor** é aberta.
+2. Antes de abrir uma imagem, clique no botão **Definir a cor da tela de fundo**. A caixa de diálogo **Cor** é aberta.
 
      ![Caixa de diálogo Cor](../ide/media/express_colordialog.png)
 Caixa de diálogo **Cor**
 
-3.  Escolha uma cor para definir a cor do plano de fundo de PictureBox. Examine cuidadosamente o método `backgroundButton_Click()` para compreender como ele funciona.
+3. Escolha uma cor para definir a cor do plano de fundo de PictureBox. Examine cuidadosamente o método `backgroundButton_Click()` para compreender como ele funciona.
 
     > [!NOTE]
-    >  Você pode carregar uma imagem da Internet colando sua URL na caixa de diálogo **Abrir Arquivo**. Tente localizar uma imagem com um plano de fundo transparente, para que sua cor do plano de fundo seja exibida.
+    > Você pode carregar uma imagem da Internet colando sua URL na caixa de diálogo **Abrir Arquivo**. Tente localizar uma imagem com um plano de fundo transparente, para que sua cor do plano de fundo seja exibida.
 
-4.  Escolha o botão **Limpar a imagem** para certificar-se de que ela desaparece. Em seguida, sai do programa escolhendo o botão **Fechar**.
+4. Escolha o botão **Limpar a imagem** para certificar-se de que ela desaparece. Em seguida, sai do programa escolhendo o botão **Fechar**.
 
 ## <a name="to-try-other-features"></a>Para testar outros recursos
 
--   Altere a cor do formulário e os botões usando a propriedade **BackColor**.
+- Altere a cor do formulário e os botões usando a propriedade **BackColor**.
 
--   Personalize seus botões e sua caixa de seleção usando as propriedades **Font** e **ForeColor**.
+- Personalize seus botões e sua caixa de seleção usando as propriedades **Font** e **ForeColor**.
 
--   Altere as propriedades **FormBorderStyle** e **ControlBox** do formulário.
+- Altere as propriedades **FormBorderStyle** e **ControlBox** do formulário.
 
--   Use as propriedades **AcceptButton** e **CancelButton** do formulário de modo que os botões sejam escolhidos automaticamente quando o usuário escolher as teclas **Enter** ou **Esc**. Faça o programa abrir a caixa de diálogo **Abrir Arquivo** quando o usuário escolher **Enter** e fechar a caixa quando o usuário escolher **Esc**.
+- Use as propriedades **AcceptButton** e **CancelButton** do formulário de modo que os botões sejam escolhidos automaticamente quando o usuário escolher as teclas **Enter** ou **Esc**. Faça o programa abrir a caixa de diálogo **Abrir Arquivo** quando o usuário escolher **Enter** e fechar a caixa quando o usuário escolher **Esc**.
 
 ## <a name="to-continue-or-review"></a>Para continuar ou revisar
 
--   Para aprender sobre programação no Visual Studio, veja [Conceitos de programação](https://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).
+- Para aprender sobre programação no Visual Studio, veja [Conceitos de programação](https://msdn.microsoft.com/Library/65c12cca-af4f-4017-886e-2dbc00a189d6).
 
--   Para saber mais sobre o Visual Basic, veja [Desenvolver aplicativos com o Visual Basic](/dotnet/visual-basic/developing-apps/index).
+- Para saber mais sobre o Visual Basic, veja [Desenvolver aplicativos com o Visual Basic](/dotnet/visual-basic/developing-apps/index).
 
--   Para saber mais sobre o Visual [Introdução à linguagem C# e ao .NET Framework](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework).
+- Para saber mais sobre o Visual [Introdução à linguagem C# e ao .NET Framework](/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework).
 
--   Para passar para o próximo tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
+- Para passar para o próximo tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).
 
--   Para retornar à etapa anterior do tutorial, confira [Etapa 10: Escrever o código dos botões adicionais e de uma caixa de seleção](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).
+- Para retornar à etapa anterior do tutorial, confira [Etapa 10: Escrever o código dos botões adicionais e de uma caixa de seleção](../ide/step-10-write-code-for-additional-buttons-and-a-check-box.md).

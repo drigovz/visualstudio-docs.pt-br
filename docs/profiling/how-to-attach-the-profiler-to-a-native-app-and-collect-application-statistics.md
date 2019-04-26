@@ -9,20 +9,20 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 8c249f3a7e1bad7adf75020adf571588148f6166
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: d9f82efee62519fd50604268bf873d1db364209a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654107"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439611"
 ---
 # <a name="how-to-attach-the-profiler-to-a-native-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Como: Anexar o criador de perfil a um aplicativo autônomo nativo e coletar estatísticas do aplicativo usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um aplicativo (cliente) independente nativo em execução e coletar estatísticas de desempenho usando o método de amostragem.
 
 > [!NOTE]
->  Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 >
->  Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.
+> Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.
 
  Quando criador de perfil estiver anexado ao aplicativo, você poderá pausar e retomar a coleta de dados. Para concluir uma sessão de criação de perfil, o Criador de perfil não pode mais estar anexado ao aplicativo e o Criador de perfil deve ser desligado explicitamente.
 
@@ -51,7 +51,6 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
    | [/automark](../profiling/automark.md) **:** `Interval` | Use somente com **/wincounter**. Especifica o número de milissegundos entre eventos de coleta do contador de desempenho do Windows. O padrão é 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Especifica um evento de ETW (Rastreamento de Eventos para Windows) a ser coletado durante a criação de perfil. Os eventos do ETW são coletados em um arquivo separado (.*etl*). |
 
-
 3. Anexe o criador de perfil ao aplicativo de destino. Tipo:
 
     **VSPerfCmd**  [/attach](../profiling/attach.md) **:**{`PID`&#124;`ProcName`} [`Sample Event`]
@@ -72,7 +71,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar e interromper a coleta de dados
 
--   Os pares de opções **VSPerfCmd** a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.
+- Os pares de opções **VSPerfCmd** a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.
 
     |Opção|Descrição|
     |------------|-----------------|
@@ -85,19 +84,19 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
 #### <a name="to-end-a-profiling-session"></a>Para encerrar uma sessão de criação de perfil
 
-1.  Execute uma das etapas a seguir para desanexar o criador de perfil do aplicativo de destino.
+1. Execute uma das etapas a seguir para desanexar o criador de perfil do aplicativo de destino.
 
-    -   Digite **VSPerfCmd /detach**
+    - Digite **VSPerfCmd /detach**
 
          - ou -
 
-    -   Feche o aplicativo de destino.
+    - Feche o aplicativo de destino.
 
-2.  Desligue o criador de perfil. Tipo:
+2. Desligue o criador de perfil. Tipo:
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 
-3.  (Opcional) desmarcar as variáveis de ambiente de criação de perfil. Tipo:
+3. (Opcional) desmarcar as variáveis de ambiente de criação de perfil. Tipo:
 
      **VSPerfClrEnv /off**
 

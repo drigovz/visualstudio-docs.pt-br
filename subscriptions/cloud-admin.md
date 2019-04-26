@@ -7,12 +7,12 @@ ms.date: 03/28/2018
 ms.topic: conceptual
 description: Configuração de administradores para assinaturas de nuvem
 searchscope: VS Subscription
-ms.openlocfilehash: fafac6b36c2abd34f47d4321155d123ce7cecd90
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 34479c21ec3cb0672b8d2354595c971b062bba56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945816"
 ---
 # <a name="set-up-administrators-for-visual-studio-cloud-subscriptions"></a>Configure administradores para assinaturas de nuvem do Visual Studio
 
@@ -45,7 +45,6 @@ Para adicionar administradores:
 O assinante designado aparecerá no centro da página e sua função será mostrada como "Administrador de Acesso do Usuário".
 
 Agora, o novo administrador pode entrar no [portal de gerenciamento](https://manage.visualstudio.com), selecionar a mesma assinatura do Azure que foi usada para comprar as assinaturas de nuvem na lista no canto superior esquerdo da página e começar a gerenciar essas assinaturas.
-
 
 > [!NOTE]
 > Se você vir os usuários com acesso para editar suas assinaturas de nuvem que você não estabeleceu como administradores, isso poderá significar que eles têm funções na assinatura do Azure subjacente que lhes permite gerenciar assinaturas. Essas funções incluem: proprietário, colaborador, administrador de serviços ou coadministrador. Para obter mais informações, visite [Add billing managers](/azure/devops/organizations/billing/add-backup-billing-managers?view=vsts) (Adicionar gerenciadores de cobrança).

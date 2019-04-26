@@ -7,12 +7,12 @@ ms.date: 2/13/2019
 ms.topic: conceptual
 description: Saiba como ativar o benefício do suporte técnico incluído na assinatura do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: ab56754f6ef707eb619d7473cb391d415506a396
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5464157d27833781edbcbe041d17ad5ecab5eebb
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57867097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811431"
 ---
 # <a name="activate-and-use-the-technical-support-benefit-in-visual-studio-subscriptions"></a>Ativar e usar o benefício do Suporte Técnico em assinaturas do Visual Studio
 
@@ -82,7 +82,6 @@ Ao enviar um incidente online, primeiro você deverá entrar. Usando a lista sus
    > ![Envio de Incidente do Benefício de Suporte Técnico – Adicionar Contrato](_img/vs-tech-support/vs-tech-support-add-contract.png)
 
 4. Insira a **ID de Acesso** e a **ID do Contrato**.  Clique em **Adicionar**.
-
 
    > [!div class="mx-imgBorder"]
    > ![Envio de Incidente do Benefício de Suporte Técnico – Adicionar ID do Contrato](_img/vs-tech-support/vs-tech-support-add-contract-id.png)

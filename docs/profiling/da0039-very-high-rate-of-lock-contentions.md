@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ebc8e008152936da9d1d8fee86e99e54d15ce09c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f441cb5e6f8febf374a9ea024db9bec95960e11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444851"
 ---
 # <a name="da0039-very-high-rate-of-lock-contentions"></a>DA0039: Taxa muito alta de contenções de bloqueio
 
@@ -46,7 +46,7 @@ ms.locfileid: "56639018"
  Essa regra é acionada quando as medições feitas durante uma execução de criação de perfil indicam que há uma quantidade excessivamente alta de contenções de bloqueio. As contenções de bloqueio atrasam a execução de threads que estão aguardando o bloqueio. Até mesmo pequenas quantidades de contenção de bloqueio em testes de unidade ou em testes de carga em execução em um hardware de extremidade inferior devem ser investigadas.
 
 > [!NOTE]
->  Quando a taxa de contenções de bloqueio relatadas nos dados de criação de perfil é significativa mas não excessiva, a mensagem informativa [DA0038: Taxa alta de contenções de bloqueio](../profiling/da0038-high-rate-of-lock-contentions.md) é acionada em lugar dessa mensagem de aviso.
+> Quando a taxa de contenções de bloqueio relatadas nos dados de criação de perfil é significativa mas não excessiva, a mensagem informativa [DA0038: Taxa alta de contenções de bloqueio](../profiling/da0038-high-rate-of-lock-contentions.md) é acionada em lugar dessa mensagem de aviso.
 
 ## <a name="how-to-investigate-a-warning"></a>Como investigar um aviso
  Clique duas vezes na mensagem para navegar para a exibição [Marcas](../profiling/marks-view.md) dos dados de criação de perfil.  Encontre a coluna **.NET CLR LocksAndThreads\Taxa de contenção/s**. Determine se há fases específicas da execução do programa em que a contenção de bloqueio é mais pesada do que em outras fases.

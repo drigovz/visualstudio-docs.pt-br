@@ -10,15 +10,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0c49e6ae5e1da7f21186596f5e8626e99ea0a7d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 570c3c1cfa4ee42b0b7262b92fba3c936297387c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56617984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440263"
 ---
 # <a name="c-library-reference"></a>Referência de biblioteca C
 Esta seção contém informações de referência para o SDK da Visualização Simultânea.
 
 > [!NOTE]
->  O padrão da linguagem C++ reserva o uso de identificadores que começam com um caractere de sublinhado (`_`) para implementações, como bibliotecas. Não use nomes que começam com um sublinhado no código. O comportamento de elementos de código cujos nomes seguem essa convenção não é garantido e está sujeito a alteração em versões futuras. Por esses motivos, esses elementos de código são omitidos desta documentação.
+> O padrão da linguagem C++ reserva o uso de identificadores que começam com um caractere de sublinhado (`_`) para implementações, como bibliotecas. Não use nomes que começam com um sublinhado no código. O comportamento de elementos de código cujos nomes seguem essa convenção não é garantido e está sujeito a alteração em versões futuras. Por esses motivos, esses elementos de código são omitidos desta documentação.

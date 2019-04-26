@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: ae318a4fbfe7e452ab995ad53d961d288c0cbcf5
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: ee57e0fb78eadce226a7fa8371d395181c6060a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445301"
 ---
 # <a name="walkthrough-use-msbuild"></a>Passo a passo: Usar o MSBuild
 
@@ -56,13 +56,13 @@ Você pode executar o MSBuild no Visual Studio ou na **janela Comando**. Nestas 
 
 **Para examinar o arquivo de projeto**
 
-1.  No **Gerenciador de Soluções**, clique no nó do projeto **BuildApp**.
+1. No **Gerenciador de Soluções**, clique no nó do projeto **BuildApp**.
 
-2.  No navegador **Propriedades**, observe que a propriedade de **Arquivo de Projeto** é *BuildApp.csproj*. Todos os arquivos de projeto são nomeados com o sufixo *proj*. Se você tivesse criado um projeto do Visual Basic, o nome do arquivo de projeto seria *BuildApp.vbproj*.
+2. No navegador **Propriedades**, observe que a propriedade de **Arquivo de Projeto** é *BuildApp.csproj*. Todos os arquivos de projeto são nomeados com o sufixo *proj*. Se você tivesse criado um projeto do Visual Basic, o nome do arquivo de projeto seria *BuildApp.vbproj*.
 
-3.  Clique com o botão direito do mouse no nó do projeto e clique em **Descarregar Projeto**.
+3. Clique com o botão direito do mouse no nó do projeto e clique em **Descarregar Projeto**.
 
-4.  Clique com o botão direito do mouse no nó de projeto novamente e clique em **Editar BuildApp.csproj**.
+4. Clique com o botão direito do mouse no nó de projeto novamente e clique em **Editar BuildApp.csproj**.
 
      O arquivo de projeto aparecerá no editor de códigos.
 
@@ -130,7 +130,7 @@ A tarefa Message usa o valor de cadeia de caracteres do atributo Text como entra
  Execute o MSBuild no **Prompt de Comando do Desenvolvedor** para o Visual Studio para compilar o destino HelloWorld definido acima. Use a opção de linha de comando -target ou -t para selecionar o destino.
 
 > [!NOTE]
->  Nós nos referiremos ao **Prompt de Comando do Desenvolvedor** como a **janela Comando** nas seções abaixo.
+> Nós nos referiremos ao **Prompt de Comando do Desenvolvedor** como a **janela Comando** nas seções abaixo.
 
 **Para compilar o destino**
 
@@ -156,7 +156,7 @@ A tarefa Message usa o valor de cadeia de caracteres do atributo Text como entra
     ```
 
 > [!NOTE]
->  Se em vez disso aparecer `The target "HelloWorld" does not exist in the project`, será porque você provavelmente se esqueceu de salvar o arquivo de projeto no editor de códigos. Salve o arquivo e tente novamente.
+> Se em vez disso aparecer `The target "HelloWorld" does not exist in the project`, será porque você provavelmente se esqueceu de salvar o arquivo de projeto no editor de códigos. Salve o arquivo e tente novamente.
 
  Ao alternar entre o editor de códigos e a janela Comando, você poderá alterar o arquivo de projeto e ver os resultados rapidamente.
 
@@ -222,20 +222,24 @@ $(PropertyName)
 4. Examine o resultado. Você deverá ver estas duas linhas (a sua versão do .NET Framework poderá ser diferente):
 
     ::: moniker range=">=vs-2019"
+
     ```
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2019\<Visual Studio SKU>\MSBuild\15.0\Bin
     ```
+
     ::: moniker-end
     ::: moniker range="vs-2017"
+
     ```
     Configuration is Debug
     MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2017\<Visual Studio SKU>\MSBuild\15.0\Bin
     ```
+
     ::: moniker-end
 
 > [!NOTE]
->  Se essas linhas não aparecerem, será porque você provavelmente se esqueceu de salvar o arquivo de projeto no editor de códigos. Salve o arquivo e tente novamente.
+> Se essas linhas não aparecerem, será porque você provavelmente se esqueceu de salvar o arquivo de projeto no editor de códigos. Salve o arquivo e tente novamente.
 
 ### <a name="conditional-properties"></a>Propriedades condicionais
 
@@ -263,13 +267,13 @@ $(PropertyName)
 
 **Para definir um valor da propriedade da linha de comando**
 
-1.  Na **janela Comando**, digite e execute esta linha:
+1. Na **janela Comando**, digite e execute esta linha:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld -p:Configuration=Release
     ```
 
-2.  Examine o resultado. Você deverá ver esta linha:
+2. Examine o resultado. Você deverá ver esta linha:
 
     ```
     Configuration is Release.
@@ -333,7 +337,7 @@ Para saber mais, confira [Caracteres especiais no MSBuild](../msbuild/msbuild-sp
 Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).
 
 > [!NOTE]
->  Os caminhos de arquivo são relativos à pasta que contém o arquivo de projeto do MSBuild.
+> Os caminhos de arquivo são relativos à pasta que contém o arquivo de projeto do MSBuild.
 
 ## <a name="examine-item-type-values"></a>Examinar os valores de tipo de item
 
@@ -381,21 +385,21 @@ Altere a tarefa Message para usar retornos de carro e alimentações de linha (%
 
 **Para exibir os valores de tipo de item em linhas individuais**
 
-1.  No editor de códigos, substitua a tarefa Message por esta linha:
+1. No editor de códigos, substitua a tarefa Message por esta linha:
 
     ```xml
     <Message Text="Compile item type contains @(Compile, '%0A%0D')" />
     ```
 
-2.  Salve o arquivo de projeto.
+2. Salve o arquivo de projeto.
 
-3.  Na **janela Comando**, digite e execute esta linha:
+3. Na **janela Comando**, digite e execute esta linha:
 
     ```cmd
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-4.  Examine o resultado. Você deverá ver estas linhas:
+4. Examine o resultado. Você deverá ver estas linhas:
 
     ```
     Compile item type contains Form1.cs

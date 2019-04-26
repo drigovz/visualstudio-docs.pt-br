@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da7b755c5b0ec72a9e1b906bdc1cd27a6dca7c0a
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: 2bb6b2d6e7ae3504415f59aeef1fddb8d9f98865
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778095"
 ---
 # <a name="customize-your-build"></a>Personalizar seu build
 
@@ -51,6 +51,7 @@ Por exemplo, se você desejasse habilitar todos os seus projetos para acessar o 
     </PropertyGroup>
    </Project>
    ```
+
 3. Execute o MSBuild. As importações do *Microsoft.Common.props* e *Microsoft.Common.targets* existentes do projeto encontram o arquivo e o importam.
 
 ### <a name="search-scope"></a>Escopo da pesquisa

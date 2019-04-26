@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c0f21042a7b49780dae3a46ec5a1f284dc0430a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435623"
 ---
 # <a name="manage-channels"></a>Gerenciar canais
 Em **Exibição de Threads** na Visualização Simultânea, você pode organizar os canais para o seu processo, de forma que você possa examinar padrões específicos. Você pode classificar os canais, movê-los para cima e para baixo, ocultá-los ou mostrá-los.
@@ -47,7 +47,7 @@ Em **Exibição de Threads** na Visualização Simultânea, você pode organizar
  Escolha este controle quando quiser ocultar canais. Por exemplo, se um thread tiver 100 por cento da sincronização da vida útil de seu processo gerenciado, você poderá ocultá-lo ao analisar outros threads.
 
 > [!NOTE]
->  Ocultar um thread também o remove do horário de cálculo, que é mostrado na legenda ativa e nos relatórios do perfil.
+> Ocultar um thread também o remove do horário de cálculo, que é mostrado na legenda ativa e nos relatórios do perfil.
 
 ## <a name="show-all-channels"></a>Mostrar todos os canais
  Esse controle é ativado quando um ou mais canais estão ocultos. Se você clicar nele, todos os elementos ocultos serão mostrados e retornados aos cálculos de tempo.

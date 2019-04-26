@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 915a46a1f201dab55edb0b0b091c003d6b449049
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 1e59e1bd618cfeb28b93d073997ef451357ee8d0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57873448"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62830602"
 ---
 # <a name="analyze-memory-usage-without-the-debugger"></a>Analisar o uso de memória sem o depurador
 
@@ -56,13 +56,13 @@ Um aplicativo usa um grande número de objetos e talvez convenha concentrar sua 
 
 Para coletar instantâneos, selecione **Tirar instantâneo** quando desejar capturar os dados de memória.
 
-###  <a name="BKMK_Close_a_monitoring_session"></a> Fechar a sessão de diagnóstico
+### <a name="BKMK_Close_a_monitoring_session"></a> Fechar a sessão de diagnóstico
 
 Para parar uma sessão de monitoramento sem criar um relatório, apenas feche a janela de diagnóstico. Para gerar um relatório quando você terminar de coletar ou tiver tirado instantâneos, selecione **Interromper Coleta**.
 
 ![Interromper Coleta](../profiling/media/memuse__stopcollection.png "Interromper Coleta")
 
-##  <a name="memory-usage-reports"></a>Relatórios de uso de memória
+## <a name="memory-usage-reports"></a>Relatórios de uso de memória
 
 Após interromper a coleta de dados, a ferramenta **Uso de Memória** interromperá o aplicativo e exibirá a página de visão geral **Uso de Memória**.
 
@@ -103,7 +103,7 @@ No relatório de instantâneos:
 
 - A árvore **Tipos Referenciados** ou **Objetos Referenciados** mostra os objetos que a instância ou tipo selecionado referencia.
 
-###  <a name="BKMK_Report_tree_filters_"></a> Filtros da árvore de relatórios
+### <a name="BKMK_Report_tree_filters_"></a> Filtros da árvore de relatórios
 
 Muitos tipos em aplicativos não são muito interessantes para os desenvolvedores de aplicativos. Os filtros de relatório de instantâneos podem ocultar a maioria desses tipos nas árvores de **Heap Gerenciado** e **Caminhos para a Raiz**.
 
@@ -123,7 +123,7 @@ Muitos tipos em aplicativos não são muito interessantes para os desenvolvedore
 
 Os dois links abrem o mesmo relatório. A única diferença é a ordem de classificação inicial da árvore de **Heap Gerenciado**. O link do tamanho classifica o relatório pela coluna **Tamanho Inclusivo (Bytes)**. O link de classifica o relatório pela coluna **Contagem**. É possível alterar a ordem ou coluna de classificação depois que o relatório é aberto.
 
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Árvore de Heap Gerenciado (relatórios de detalhes do instantâneo)
+### <a name="BKMK_Managed_Heap_tree__Snapshot_details_"></a> Árvore de Heap Gerenciado (relatórios de detalhes do instantâneo)
  A árvore **Heap Gerenciado** lista os tipos de objetos que são mantidos na memória. Expanda um nome do tipo para exibir as dez maiores instâncias do tipo, classificadas por tamanho. Selecione um tipo ou instância para exibir as árvores **Caminhos para a Raiz** e **Objetos Referenciados** para o item selecionado.
 
  ![Árvore de Heap Gerenciado](../profiling/media/memuse__snapshotdetails_managedheaptree.png "Árvore de Heap Gerenciado")
@@ -138,14 +138,14 @@ A árvore de **Heap Gerenciado** em um relatório de detalhes do instantâneo te
 |**Tamanho Inclusivo (Bytes)**|O tamanho das instâncias do tipo ou o tamanho de uma única instância, incluindo o tamanho dos objetos contidos.|
 |**Módulo**|O módulo que contém o objeto.|
 
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Árvore de Caminhos para a Raiz (relatórios detalhes do instantâneo)
+### <a name="BKMK_Paths_to_Root_tree__Snapshot_details_"></a> Árvore de Caminhos para a Raiz (relatórios detalhes do instantâneo)
 A **árvore Caminhos para a Raiz** mostra a cadeia de objetos que referenciam um tipo ou uma instância. O coletor de lixo .NET Framework limpa a memória de um objeto apenas quando todas as referências a ele foram liberadas.
 
 Para um tipo na árvore **Caminhos para a Raiz**, o número de objetos que têm referências para esse tipo é exibido na coluna **Contagem de Referência**.
 
 ![Árvore de Caminhos para a Raiz para tipos](../profiling/media/memuse_snapshotdetails_type_pathstoroottree.png "Árvore de Caminhos para a Raiz para tipos")
 
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Árvore de Tipos referenciados ou de Objetos referenciados (relatórios de detalhes do instantâneo)
+### <a name="BKMK_Referenced_Objects_tree__Snapshot_details_"></a> Árvore de Tipos referenciados ou de Objetos referenciados (relatórios de detalhes do instantâneo)
 A árvore **Tipos Referenciados** ou **Objetos Referenciados** mostra os objetos que a instância ou tipo selecionado referencia.
 
 ![Árvore de Objetos referenciados para instâncias](../profiling/media/memuse_snapshotdetails_referencedobjects_instance.png "Árvore de Objetos referenciados para instâncias")
@@ -168,7 +168,7 @@ Os dois links abrem o mesmo relatório. A única diferença é a ordem de classi
 
  ![Links para o relatório de diferenças em um painel de instantâneo](../profiling/media/memuse_snapshotview_snapshotdifflinks.png "Links para o relatório de diferenças em um painel de instantâneo")
 
-###  <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Árvore de Heap Gerenciado (relatórios de diferenças de instantâneos)
+### <a name="BKMK_Managed_Heap_tree__Snapshot_diff_"></a> Árvore de Heap Gerenciado (relatórios de diferenças de instantâneos)
 
  A árvore **Heap Gerenciado** lista os tipos de objetos que são mantidos na memória. Você pode expandir um nome do tipo para ver as dez maiores instâncias do tipo, classificadas por tamanho. Selecione um tipo ou instância para exibir as árvores **Caminhos para a Raiz** e **Objetos Referenciados** para o item selecionado.
 
@@ -187,7 +187,7 @@ A árvore de **Heap Gerenciado** em um relatório de diferenças de instantâneo
 |**Diferença de Tamanho Inclusivo (Bytes)**|No caso de um tipo, a diferença no tamanho de todas as instâncias do tipo entre o instantâneo primário e o instantâneo anterior, incluindo o tamanho dos objetos nos objetos. O campo fica em branco no caso de uma instância.|
 |**Módulo**|O módulo que contém o objeto.|
 
-###  <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Árvore de Caminhos para a Raiz (relatórios de diferenças de instantâneos)
+### <a name="BKMK_Paths_to_Root_tree__Snapshot_diff_"></a> Árvore de Caminhos para a Raiz (relatórios de diferenças de instantâneos)
 
 A **árvore Caminhos para a Raiz** mostra a cadeia de objetos que referenciam um tipo ou uma instância. O coletor de lixo .NET Framework limpa a memória de um objeto apenas quando todas as referências a ele foram liberadas.
 
@@ -195,7 +195,7 @@ Para um tipo na árvore **Caminhos para a Raiz**, o número de objetos que têm 
 
  ![Árvore de Caminhos para a raiz em um relatório de diferenças](../profiling/media/memuse_snapshotdiff_pathstoroot_instance_all.png "Árvore de Caminhos para a raiz em um relatório de diferenças")
 
-###  <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Árvore de Tipos referenciados ou de Objetos referenciados (relatórios de diferenças de instantâneos)
+### <a name="BKMK_Referenced_Objects_tree__Snapshot_diff_"></a> Árvore de Tipos referenciados ou de Objetos referenciados (relatórios de diferenças de instantâneos)
 
 A árvore **Tipos Referenciados** ou **Objetos Referenciados** mostra os objetos que a instância ou tipo selecionado referencia.
 

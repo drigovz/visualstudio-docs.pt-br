@@ -9,22 +9,22 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 04ed59cb3b603c86735b3fadc948d1be72ebc839
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1a667c259c6cd924c0ff698a47858c08d0f7cf42
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431553"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-framework-stand-alone-application-and-collect-application-statistics-by-using-the-command-line"></a>Como: Anexar o criador de perfil a um aplicativo autônomo do .NET Framework e coletar estatísticas do aplicativo usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um aplicativo (cliente) .NET Framework independente em execução e coletar estatísticas de desempenho usando o método de amostragem.
 
 > [!NOTE]
->  Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
+> Os recursos de segurança aprimorados no Windows 8 e no Windows Server 2012 exigiram alterações significativas na maneira como o criador de perfil do Visual Studio coleta dados nessas plataformas. Os aplicativos UWP também requerem novas técnicas de coleta. Consulte [Ferramentas de desempenho em aplicativos do Windows 8 e do Windows Server 2012](../profiling/performance-tools-on-windows-8-and-windows-server-2012-applications.md).
 >
->  Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.
+> Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.
 >
->  Adicionar dados de interação de camada a uma execução de criação de perfil requer procedimentos específicos com ferramentas de criação de perfil de linha de comando. Confira [Coletar dados de interação de camada](../profiling/adding-tier-interaction-data-from-the-command-line.md).
+> Adicionar dados de interação de camada a uma execução de criação de perfil requer procedimentos específicos com ferramentas de criação de perfil de linha de comando. Confira [Coletar dados de interação de camada](../profiling/adding-tier-interaction-data-from-the-command-line.md).
 
  Para coletar dados de desempenho de um aplicativo do .NET Framework, as variáveis de ambiente apropriadas devem ser inicializadas antes de iniciar o aplicativo de destino. Quando criador de perfil estiver anexado ao aplicativo, você poderá pausar e retomar a coleta de dados.
 
@@ -40,7 +40,7 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
     **VSPerfClrEnv /sampleon** [**/samplelineoff**]
 
-   -   A opção **/samplelineoff** desabilita a coleta de dados do número de linha do código-fonte.
+   - A opção **/samplelineoff** desabilita a coleta de dados do número de linha do código-fonte.
 
 3. Inicie o criador de perfil. Tipo:
 
@@ -60,18 +60,17 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
    | [/automark](../profiling/automark.md) **:** `Interval` | Use somente com **/wincounter**. Especifica o número de milissegundos entre eventos de coleta do contador de desempenho do Windows. O padrão é 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Especifica um evento de ETW (Rastreamento de Eventos para Windows) a ser coletado durante a criação de perfil. Os eventos do ETW são coletados em um arquivo separado (.*etl*). |
 
-
 4. Se necessário, inicie o aplicativo de destino normalmente.
 
 5. Anexe o criador de perfil ao aplicativo de destino. Tipo:
 
     **VSPerfCmd /attach:**{`PID`&#124;`ProcessName`} [`Sample Event`] [**/targetclr:**`Version`]
 
-   -   `PID` especifica a ID do processo ou o nome do aplicativo de destino. `ProcessName` especifica o nome do processo. Observe que, se você especificar `ProcessName` e vários processos que têm o mesmo nome estiverem em execução, os resultados serão imprevisíveis. É possível exibir as IDs de processo de todos os processos em execução no Gerenciador de Tarefas do Windows.
+   - `PID` especifica a ID do processo ou o nome do aplicativo de destino. `ProcessName` especifica o nome do processo. Observe que, se você especificar `ProcessName` e vários processos que têm o mesmo nome estiverem em execução, os resultados serão imprevisíveis. É possível exibir as IDs de processo de todos os processos em execução no Gerenciador de Tarefas do Windows.
 
-   -   [/targetclr](../profiling/targetclr.md) **:** `Version` especifica a versão do CLR (Common Language Runtime) cujo perfil deverá ser criado quando mais de uma versão do tempo de execução for carregada em um aplicativo. Opcional.
+   - [/targetclr](../profiling/targetclr.md) **:** `Version` especifica a versão do CLR (Common Language Runtime) cujo perfil deverá ser criado quando mais de uma versão do tempo de execução for carregada em um aplicativo. Opcional.
 
-   -   Por padrão, os dados de desempenho têm amostra obtida a cada 10.000.000 ciclos de relógio de processador não interrompidos. Significa aproximadamente uma vez a cada 10 segundos em um processador de 1GH. Você pode especificar uma das opções a seguir para alterar o intervalo de ciclo de relógio ou especificar um evento de amostragem diferente. [/targetclr](../profiling/targetclr.md)**:**`Version` especifica a versão do CLR a ser analisada quando mais de uma versão do tempo de execução é carregada em um aplicativo. Opcional.
+   - Por padrão, os dados de desempenho têm amostra obtida a cada 10.000.000 ciclos de relógio de processador não interrompidos. Significa aproximadamente uma vez a cada 10 segundos em um processador de 1GH. Você pode especificar uma das opções a seguir para alterar o intervalo de ciclo de relógio ou especificar um evento de amostragem diferente. [/targetclr](../profiling/targetclr.md)**:**`Version` especifica a versão do CLR a ser analisada quando mais de uma versão do tempo de execução é carregada em um aplicativo. Opcional.
 
    |||
    |-|-|
@@ -81,14 +80,12 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
    |[/sys](../profiling/sys-vsperfcmd.md) [**:**`Interval`]|Altera o evento de amostragem para chamadas do sistema do processo para o kernel do sistema operacional (syscalls). Se `Interval` for especificado, define o número de chamadas entre as amostras. O padrão é 10.|
    |[/counter](../profiling/counter.md) **:** `Config`|Altera o evento de amostragem e o intervalo para o contador de desempenho do processador e o intervalo especificado em `Config`.|
 
-
-
 ## <a name="control-data-collection"></a>Controlar a coleta de dados
  Quando o aplicativo de destino estiver em execução, você pode controlar a coleta de dados iniciando e interrompendo a gravação de dados no arquivo de dados do criador de perfil usando as opções do *VSPerfCmd.exe*. Controlar a coleta de dados permite coletar dados de uma parte específica da execução do programa, como a inicialização ou o desligamento do aplicativo.
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar e interromper a coleta de dados
 
--   Os pares de opções a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.
+- Os pares de opções a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.
 
     |Opção|Descrição|
     |------------|-----------------|
@@ -101,19 +98,19 @@ Este artigo descreve como usar as ferramentas de linha de comando das Ferramenta
 
 #### <a name="to-end-a-profiling-session"></a>Para encerrar uma sessão de criação de perfil
 
-1.  Realize uma das etapas a seguir para desanexar o criador de perfil do aplicativo de destino:
+1. Realize uma das etapas a seguir para desanexar o criador de perfil do aplicativo de destino:
 
-    -   Digite **VSPerfCmd /detach**
+    - Digite **VSPerfCmd /detach**
 
          - ou -
 
-    -   Feche o aplicativo de destino.
+    - Feche o aplicativo de destino.
 
-2.  Desligue o criador de perfil. Tipo:
+2. Desligue o criador de perfil. Tipo:
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 
-3.  (Opcional) desmarcar as variáveis de ambiente de criação de perfil. Tipo:
+3. (Opcional) desmarcar as variáveis de ambiente de criação de perfil. Tipo:
 
      **VSPerfClrEnv /off**
 

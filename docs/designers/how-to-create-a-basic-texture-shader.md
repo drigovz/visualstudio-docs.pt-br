@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ac687b7e859830790c0192399893ec39b9f0044
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7f511b837609f8de644d042b367ef46648b7551e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55953432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62897717"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>Como: Criar um sombreador de textura básica
 
@@ -25,21 +25,21 @@ Você pode implementar um sombreador de textura única básico ao gravar os valo
 
 Antes de começar, verifique se a janela **Propriedades** e a **Caixa de Ferramentas** estão sendo exibidas.
 
-1.  Crie um sombreador DGSL com o qual trabalhar. Para obter informações sobre como adicionar um sombreador DGSL ao seu projeto, consulte a seção de Introdução em [Designer de Sombreador](../designers/shader-designer.md).
+1. Crie um sombreador DGSL com o qual trabalhar. Para obter informações sobre como adicionar um sombreador DGSL ao seu projeto, consulte a seção de Introdução em [Designer de Sombreador](../designers/shader-designer.md).
 
-2.  Exclua o nó **Ponto de Cor**. No modo de **Seleção**, selecione o nó **Cor do Ponto** e, em seguida, na barra de menus, escolha **Editar** > **Excluir**. Isso abre o espaço para o nó que será adicionado na próxima etapa.
+2. Exclua o nó **Ponto de Cor**. No modo de **Seleção**, selecione o nó **Cor do Ponto** e, em seguida, na barra de menus, escolha **Editar** > **Excluir**. Isso abre o espaço para o nó que será adicionado na próxima etapa.
 
-3.  Adicione um nó **Amostra de Textura** ao grafo. Na **Caixa de Ferramentas**, em **Textura**, selecione **Amostra de Textura** e mova-a para a superfície de design.
+3. Adicione um nó **Amostra de Textura** ao grafo. Na **Caixa de Ferramentas**, em **Textura**, selecione **Amostra de Textura** e mova-a para a superfície de design.
 
-4.  Adicione um nó **Coordenada de Textura** ao grafo. Na **Caixa de Ferramentas**, em **Textura**, selecione **Coordenada de Textura** e mova-a para a superfície de design.
+4. Adicione um nó **Coordenada de Textura** ao grafo. Na **Caixa de Ferramentas**, em **Textura**, selecione **Coordenada de Textura** e mova-a para a superfície de design.
 
-5.  Escolha uma textura para aplicar. No modo de **Seleção**, selecione o nó **Amostra de Textura** e, em seguida, na janela **Propriedades**, especifique a textura que você deseja usar através da propriedade **Filename**.
+5. Escolha uma textura para aplicar. No modo de **Seleção**, selecione o nó **Amostra de Textura** e, em seguida, na janela **Propriedades**, especifique a textura que você deseja usar através da propriedade **Filename**.
 
-6.  Torne a textura publicamente acessível. Selecione o nó **Amostra de Textura** e, em seguida, na janela **Propriedades**, defina a propriedade **Acesso** como **Público**. Agora é possível definir a textura de outra ferramenta, como o **Editor de Modelo**.
+6. Torne a textura publicamente acessível. Selecione o nó **Amostra de Textura** e, em seguida, na janela **Propriedades**, defina a propriedade **Acesso** como **Público**. Agora é possível definir a textura de outra ferramenta, como o **Editor de Modelo**.
 
-7.  Conecte as coordenadas de textura à amostra de textura. No modo de **Seleção**, mova o terminal de **Saída** do nó **Coordenada de Textura** para o terminal **UV** do nó **Amostra de Textura**. Essa conexão retira uma amostra de textura nas coordenadas especificadas.
+7. Conecte as coordenadas de textura à amostra de textura. No modo de **Seleção**, mova o terminal de **Saída** do nó **Coordenada de Textura** para o terminal **UV** do nó **Amostra de Textura**. Essa conexão retira uma amostra de textura nas coordenadas especificadas.
 
-8.  Conecte a amostra de textura à cor final. Mova o terminal **RGB** do nó **Amostra de Textura** para o terminal **RGB** do nó **Cor Final** e, em seguida, mova o terminal **Alfa** do nó **Amostra de Textura** para o terminal **Alfa** do nó **Cor Final**.
+8. Conecte a amostra de textura à cor final. Mova o terminal **RGB** do nó **Amostra de Textura** para o terminal **RGB** do nó **Cor Final** e, em seguida, mova o terminal **Alfa** do nó **Amostra de Textura** para o terminal **Alfa** do nó **Cor Final**.
 
 A ilustração a seguir mostra o grafo de sombreador concluído e uma visualização do sombreador aplicado a um cubo.
 

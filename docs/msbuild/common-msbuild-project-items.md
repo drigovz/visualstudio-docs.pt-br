@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 43844fc1e8ffed9853f287f82e79d9859b774755
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.openlocfilehash: 54288f345276a019bf8fd6987a9e138c53c8a9e2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62569858"
 ---
 # <a name="common-msbuild-project-items"></a>Itens de projeto comuns do MSBuild
 Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], um item é uma referência nomeada a um ou mais arquivos. Itens contêm metadados, como nomes de arquivos, caminhos e números de versão. Todos os tipos de projeto em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] têm vários itens em comum. Esses itens são definidos no arquivo *Microsoft.Build.CommonTypes.xsd*.
@@ -81,7 +81,6 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="compile"></a>Compilar
  Representa os arquivos de origem do compilador.
 
-
 | Nome de metadados de item | Descrição |
 |-----------------------| - |
 | DependentUpon | Cadeia de caracteres opcional. Especifica o arquivo do qual esse arquivo depende para compilar corretamente. |
@@ -92,7 +91,6 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 
 ### <a name="embeddedresource"></a>EmbeddedResource
  Representa os recursos a serem inseridos no assembly gerado.
-
 
 | Nome de metadados de item | Descrição |
 |-----------------------| - |
@@ -108,7 +106,6 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 ### <a name="content"></a>Conteúdo
  Representa os arquivos não compilados no projeto, mas pode ser inserido ou publicado junto com ele.
 
-
 | Nome de metadados de item | Descrição |
 |-----------------------| - |
 | DependentUpon | Cadeia de caracteres opcional. Especifica o arquivo do qual esse arquivo depende para compilar corretamente. |
@@ -123,7 +120,6 @@ Em [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.m
 
 ### <a name="none"></a>Nenhum
  Representa arquivos que não devem ter função no processo de build.
-
 
 | Nome de metadados de item | Descrição |
 |-----------------------| - |

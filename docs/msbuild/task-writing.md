@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fdeab63dffaf7884484f46fbfe9eac2002514e52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: de860c8d177a12d8283ae4f3a9b0f36dab1cc96d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440006"
 ---
 # <a name="task-writing"></a>Produção de tarefas
 Tarefas fornecem o código que é executado durante o processo de compilação. Tarefas estão contidas nos destinos. Uma biblioteca de tarefas típicas está incluída no [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] e você também pode criar suas próprias tarefas. Para saber mais sobre a biblioteca de tarefas incluída no [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)], confira [Referência de tarefas](../msbuild/msbuild-task-reference.md).
@@ -27,9 +27,9 @@ Tarefas fornecem o código que é executado durante o processo de compilação. 
 
  Há duas abordagens que você pode usar ao implementar uma tarefa:
 
--   Implemente a interface <xref:Microsoft.Build.Framework.ITask> diretamente.
+- Implemente a interface <xref:Microsoft.Build.Framework.ITask> diretamente.
 
--   Derive a classe da classe auxiliar, <xref:Microsoft.Build.Utilities.Task>, definida no assembly *Microsoft.Build.Utilities.dll*. Tarefa implementa ITask e fornece implementações padrão de alguns membros do ITask. Além disso, o registro em log é mais fácil.
+- Derive a classe da classe auxiliar, <xref:Microsoft.Build.Utilities.Task>, definida no assembly *Microsoft.Build.Utilities.dll*. Tarefa implementa ITask e fornece implementações padrão de alguns membros do ITask. Além disso, o registro em log é mais fácil.
 
 Em ambos os casos, você deve adicionar à sua classe um método chamado `Execute`, que é o método que é chamado quando a tarefa é executada. Esse método não usa nenhum parâmetro e retorna um `Boolean` valor: `true` se a tarefa foi bem-sucedida ou `false` se falhou. O exemplo a seguir mostra uma tarefa que não executa nenhuma ação e retorna `true`.
 
@@ -97,7 +97,7 @@ namespace MyTasks
  O arquivo *Microsoft.Common.Tasks* do [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] é um arquivo de projeto que contém uma lista de elementos `UsingTask` que registra todas as tarefas que são fornecidas com [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)]. Esse arquivo é incluído automaticamente na criação de cada projeto. Se uma tarefa que está registrada no *Microsoft.Common.Tasks* também estiver registrada no arquivo de projeto atual, o último terá precedência; ou seja, você pode substituir uma tarefa padrão por sua própria tarefa de mesmo nome.
 
 > [!TIP]
->  Veja uma lista de tarefas fornecidas com [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] exibindo o conteúdo de *Microsoft.Common.Tasks*.
+> Veja uma lista de tarefas fornecidas com [!INCLUDE[vstecmsbuild](../extensibility/internals/includes/vstecmsbuild_md.md)] exibindo o conteúdo de *Microsoft.Common.Tasks*.
 
 ## <a name="raise-events-from-a-task"></a>Gerar eventos de uma tarefa
  Se a tarefa deriva da classe auxiliar <xref:Microsoft.Build.Utilities.Task>, você pode usar qualquer um dos seguintes métodos auxiliares na classe <xref:Microsoft.Build.Utilities.Task> para acionar eventos que serão capturados e exibidos por quaisquer agentes registrados:

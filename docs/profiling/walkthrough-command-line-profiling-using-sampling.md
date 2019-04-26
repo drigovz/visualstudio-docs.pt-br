@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bf9fd3006ab584dddfcb089ae31fb945fe69049a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1c76fd1d18b41073bf92ed18dadeeeb3a90c9209
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56624887"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433607"
 ---
 # <a name="walkthrough-command-line-profiling-using-sampling"></a>Passo a passo: Criação de perfil de linha de comando usando amostragem
 
@@ -41,7 +41,7 @@ Neste passo a passo, você seguirá estas etapas:
 A amostragem é um método de criação de perfil pelo qual um processo específico é monitorado periodicamente para determinar a função ativa. Os dados resultantes fornecem uma contagem da frequência da função na parte superior da pilha de chamadas, quando o processo foi amostrado.
 
 > [!NOTE]
->  Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.
+> Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.
 
 ### <a name="to-profile-the-peopletrax-application-by-using-the-sampling-method"></a>Para criar o perfil do aplicativo PeopleTrax usando o método de amostragem
 

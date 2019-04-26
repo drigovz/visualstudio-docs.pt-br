@@ -1,5 +1,5 @@
 ---
-title: Adicionar uma fonte de dados a um teste de desempenho Web
+title: Adicionar uma fonte de dados a um teste de desempenho para Web
 ms.date: 10/03/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,14 +9,14 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7f56491a8268e939f7bd455c4afef6813116ef9f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: c22d9327deb0c04790a3adfc809d9ae5da483916
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834696"
 ---
-# <a name="add-a-data-source-to-a-web-performance-test"></a>Adicionar uma fonte de dados a um teste de desempenho Web
+# <a name="add-a-data-source-to-a-web-performance-test"></a>Adicionar uma fonte de dados a um teste de desempenho para Web
 
 Associe dados para fornecer valores diferentes para o mesmo teste, por exemplo, para fornecer valores diferentes para seus parâmetros de postagem de formulário.
 
@@ -34,7 +34,9 @@ Sua solução também deve incluir um teste de desempenho Web que navegará pela
 
 ## <a name="create-a-sql-database"></a>Criar um banco de dados SQL
 
-1. Se você não tiver o Visual Studio Enterprise, baixe-o da página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017).
+::: moniker range="vs-2017"
+
+1. Se você não tiver o Visual Studio Enterprise, baixe-o da página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download).
 
 2. Crie um banco de dados SQL.
 
@@ -59,6 +61,38 @@ Sua solução também deve incluir um teste de desempenho Web que navegará pela
 7. Adicione dados aos campos.
 
      ![Adicione dados aos campos](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. Se você não tiver o Visual Studio Enterprise, baixe-o da página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
+
+2. Crie um banco de dados SQL.
+
+     ![Adicione um novo banco de dados SQL](../test/media/web_test_databinding_sql_addnewdb.png)
+
+3. Crie um projeto de banco de dados.
+
+     ![Crie um novo projeto do banco de dados](../test/media/web_test_databinding_sql_addnewdbproject.png)
+
+4. Adicione uma tabela ao projeto de banco de dados.
+
+     ![Adicione uma nova tabela ao projeto de banco de dados](../test/media/web_test_databinding_sql_addnewdbtablename.png)
+
+5. Adicione campos à tabela.
+
+     ![Adicione campos à tabela](../test/media/web_test_databinding_sql_addnewdbaddfields.png)
+
+6. Publique o projeto de banco de dados.
+
+     ![Publique o projeto de banco de dados do Gerenciador de Soluções](../test/media/web_test_databinding_sql_addnewdbpublish.png)
+
+7. Adicione dados aos campos.
+
+     ![Adicione dados aos campos](../test/media/web_test_databinding_sql_addnewfieldsadddata.png)
+
+::: moniker-end
 
 ## <a name="add-the-data-source"></a>Adicionar a fonte de dados
 

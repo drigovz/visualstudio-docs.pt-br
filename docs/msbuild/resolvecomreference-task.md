@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 86155da1a14516992841aa5e19de2606eb09fbd8
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 123aa52b5062d8ac083f054074df2c65ba77f80d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56639057"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431288"
 ---
 # <a name="resolvecomreference-task"></a>Tarefa ResolveComReference
 Obtém uma lista de um ou mais nomes de bibliotecas de tipo ou arquivos *.tlb* e resolve essas bibliotecas de tipo em locais no disco.
@@ -70,7 +70,7 @@ Obtém uma lista de um ou mais nomes de bibliotecas de tipo ou arquivos *.tlb* e
 |`WrapperTool`|Metadados opcionais do item.<br /><br /> Especifica a ferramenta wrapper que é usada para gerar o wrapper do assembly para esta biblioteca de tipos. Se esses metadados de item não forem especificados, a tarefa usará uma ferramenta wrapper padrão de “tlbimp”. As opções de typelibs disponíveis que não diferenciam maiúsculas e minúsculas são:<br /><br /> -   `Primary`: Use essa ferramenta wrapper quando desejar usar um assembly de interoperabilidade primário já gerado para o componente COM. Quando você usar essa ferramenta wrapper, não especifique um diretório de saída do wrapper, pois isso fará com que a tarefa falhe.<br />-   `TLBImp`: Use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para o componente COM.<br />-   `AXImp`: Use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para um Controle ActiveX.|
 
 > [!NOTE]
->  Quanto mais informações você fornece para identificar uma biblioteca de tipos com exclusividade, maior a possibilidade de que a tarefa será resolvida para o arquivo correto no disco.
+> Quanto mais informações você fornece para identificar uma biblioteca de tipos com exclusividade, maior a possibilidade de que a tarefa será resolvida para o arquivo correto no disco.
 
 ## <a name="remarks"></a>Comentários
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, confira [Classe base Task](../msbuild/task-base-class.md).

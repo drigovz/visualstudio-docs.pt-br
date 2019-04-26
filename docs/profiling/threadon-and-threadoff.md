@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2516ff5597151e65276b0fcb2bef5bb81c929cd3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56632713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62965226"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn e ThreadOff
 Os subcomandos *ThreadOff* e **ThreadOn** do **VSPerfCmd.exe** só estão disponíveis em sessões de criação de perfil de linha de comando que usam o método de instrumentação. **ThreadOff** e **ThreadOn** pausam e retomam a criação de perfil para o thread especificado. O **ThreadOff** para a criação de perfil do thread e o **ThreadOn** inicia a criação de perfil do thread.

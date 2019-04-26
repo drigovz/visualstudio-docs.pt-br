@@ -7,12 +7,12 @@ ms.date: 11/07/2018
 ms.topic: conceptual
 description: Saiba mais sobre problemas que podem surgir ao entrar em assinaturas do Visual Studio
 searchscope: VS Subscription
-ms.openlocfilehash: 0073ec4193190e56fb5147b5da56898e1a289fd5
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: ebdca1a8b38fd6ecbe895524da9c090be0620894
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56840942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008035"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>Problemas ao entrar em assinaturas do Visual Studio
 Para usar sua Assinatura do Visual Studio, primeiro é necessário entrar.  Dependendo da sua assinatura, talvez você a tenha configurado com uma identidade da MSA (conta Microsoft) ou do AAD (Azure Active Directory).  Este artigo discute alguns problemas que podem ser encontrados ao entrar em sua assinatura.
@@ -55,7 +55,6 @@ Se você excluir uma ou mais identidades (MSA ou AAD) associadas a sua assinatur
 Para evitar impactos no acesso da sua assinatura, use uma dessas técnicas.
 - Implante um sistema de gerenciamento de identidades único, MSA ou AAD, mas não ambos.
 - Associe as identidades do AAD e MSA por meio do locatário.
-
 
 ## <a name="next-steps"></a>Próximas etapas
 - Saiba como [vincular contas MSA e AAD](/azure/active-directory/b2b/add-users-administrator) dentro do AAD.

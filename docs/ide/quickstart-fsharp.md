@@ -11,18 +11,28 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f0fab988185efef6baf7e39c0b4250ada88b5fbd
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.openlocfilehash: c24803f3817aa8461f9445e390fe44853d2d27c5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62953306"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>Início Rápido: Usar o Visual Studio para criar seu primeiro serviço Web ASP.NET Core no F\#
 
 Nesta introdução de 5 a 10 minutos para o F# no Visual Studio, você criará um aplicativo Web ASP.NET Core em F#.
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+::: moniker range="vs-2017"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019) para instalá-lo gratuitamente.
+
+::: moniker-end
 
 ## <a name="create-a-project"></a>Criar um projeto
 

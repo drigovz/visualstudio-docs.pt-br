@@ -25,12 +25,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b48c86c74b724dc6df5d5935f1340f6de0fc9185
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: b1576af2511f3bd24c26a64c1667c6b466bedd1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647460"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790202"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Caixa de diálogo Fontes e Cores, Ambiente, Opções
 
@@ -42,26 +42,26 @@ Alterações do esquema de cores não terão efeito durante a sessão em que for
 
 Lista todos os elementos da interface do usuário para os quais é possível alterar os esquemas de fontes e cores. Após selecionar um item da lista, você pode personalizar as configurações de cor do item selecionado em **Exibir itens**.
 
--   **Editor de Texto**
+- **Editor de Texto**
 
      Alterações nas configurações de exibição de cor, tamanho e estilo da fonte do Editor de Texto afetam a aparência do texto no editor de texto padrão. Documentos abertos em um editor de texto fora do IDE não serão afetados por essas configurações.
 
--   **Impressora**
+- **Impressora**
 
      Alterações nas configurações de exibição de cor, tamanho e estilo da fonte da Impressora afetam a aparência do texto em documentos impressos.
 
     > [!NOTE]
     > Conforme for necessário, é possível selecionar uma fonte padrão para impressão diferente daquela usada para exibição no editor de texto. Isso pode ser útil ao imprimir códigos que contêm caracteres de byte único e de caractere duplo.
 
--   **Preenchimento de Declaração**
+- **Preenchimento de Declaração**
 
      Altera o tamanho e o estilo da fonte do texto que aparece no pop-up de preenchimento de declaração no editor.
 
--   **Dica de ferramenta do Editor**
+- **Dica de ferramenta do Editor**
 
      Altera o tamanho e o estilo da fonte do texto que aparece em ToolTips exibidas no editor.
 
--   **Fonte do ambiente**
+- **Fonte do ambiente**
 
      Altera o tamanho e o estilo da fonte de todos os elementos de interface do usuário do IDE que ainda não têm uma opção separada em **Mostrar configurações de**.
 
@@ -71,7 +71,7 @@ Lista todos os elementos da interface do usuário para os quais é possível alt
 
      ::: moniker-end
 
--   **[Todas as janelas de ferramentas de texto]**
+- **[Todas as janelas de ferramentas de texto]**
 
      Alterações nas configurações de exibição de cor, tamanho e estilo da fonte deste item afetam a aparência do texto nas janelas de ferramentas que têm painéis de saída no IDE. Por exemplo, Janela de Saída, janela Comando, janela Imediato etc.
 

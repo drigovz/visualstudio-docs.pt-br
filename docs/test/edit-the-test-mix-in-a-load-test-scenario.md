@@ -11,12 +11,12 @@ ms.assetid: 303e1d70-5d98-424a-b51e-e0898e16d3f8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5503c6d579fc77aa066e4052aa109b531ff1e39c
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: e1c58cae9983cc14878ba548177bf9ba6ad44255
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62783963"
 ---
 # <a name="edit-the-test-mix-to-specify-which-web-performance-unit-and-coded-ui-tests-to-include-in-a-load-test-scenario"></a>Editar a combinação de testes para especificar quais testes de IU codificados, de desempenho Web e de unidade incluir em um cenário de teste de carga
 
@@ -41,37 +41,37 @@ Você pode adicionar mais testes de unidade e desempenho na Web à combinação 
 
 ### <a name="to-add-more-tests-to-an-existing-scenario"></a>Para adicionar mais testes a um cenário existente
 
-1.  Abra um teste de carga.
+1. Abra um teste de carga.
 
-2.  No **Editor de Teste de Carga**, clique com o botão direito do mouse em um cenário existente e escolha **Adicionar testes**.
+2. No **Editor de Teste de Carga**, clique com o botão direito do mouse em um cenário existente e escolha **Adicionar testes**.
 
      A caixa de diálogo **Adicionar testes** é exibida. Todos os testes de desempenho na Web, unidade, e de IU codificados na solução que ainda não estejam em seu cenário estão disponíveis para adição ao cenário.
 
-3.  No painel **Testes disponíveis**, selecione os testes de desempenho Web, de unidade e de IU codificados que você deseja adicionar. Escolha a seta para a direita para adicionar os testes ao painel **Testes selecionados**.
+3. No painel **Testes disponíveis**, selecione os testes de desempenho Web, de unidade e de IU codificados que você deseja adicionar. Escolha a seta para a direita para adicionar os testes ao painel **Testes selecionados**.
 
-4.  Quando terminar de adicionar os testes, escolha **OK**.
+4. Quando terminar de adicionar os testes, escolha **OK**.
 
      Os testes são adicionados à combinação de testes. Uma nova distribuição é atribuída automaticamente aos testes na combinação de testes.
 
-5.  (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para saber mais, confira [Sobre o controle misto](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
+5. (Opcional) Ajuste o controle misto para especificar a distribuição de teste. Para saber mais, confira [Sobre o controle misto](../test/edit-the-test-mix-to-specify-which-web-browsers-types-in-a-load-test-scenario.md).
 
-##  <a name="remove-tests-from-a-scenario"></a>Remover testes de um cenário
+## <a name="remove-tests-from-a-scenario"></a>Remover testes de um cenário
  ![Removendo um teste de um teste de carga existente](../test/media/ltest_removetest.png)
 
 ### <a name="to-remove-tests-from-a-scenario"></a>Para remover testes de um cenário
 
-1.  Abra um teste de carga.
+1. Abra um teste de carga.
 
-2.  No **Editor de Teste de Carga**, na árvore de teste de carga, clique com o botão direito do mouse no cenário do qual você deseja remover um teste e selecione **Editar combinação de testes**. A caixa de diálogo **Editar combinação de testes** é exibida.
+2. No **Editor de Teste de Carga**, na árvore de teste de carga, clique com o botão direito do mouse no cenário do qual você deseja remover um teste e selecione **Editar combinação de testes**. A caixa de diálogo **Editar combinação de testes** é exibida.
 
-3.  Selecione o teste de desempenho Web, de unidade ou de IU codificado na grade e escolha **Remover**.
+3. Selecione o teste de desempenho Web, de unidade ou de IU codificado na grade e escolha **Remover**.
 
     > [!NOTE]
     > Depois de remover o teste, ajuste a combinação de testes de acordo com sua distribuição preferencial.
 
-4.  Quando terminar a remoção dos testes, escolha **OK**.
+4. Quando terminar a remoção dos testes, escolha **OK**.
 
-##  <a name="EditingTestMixAboutMixControl"></a> Sobre o controle misto
+## <a name="EditingTestMixAboutMixControl"></a> Sobre o controle misto
  O controle misto permite que você ajuste a porcentagem de carga distribuída entre testes, tipos de navegador ou tipos de rede em um cenário de teste de carga. Você ajusta os valores de porcentagem movendo controles deslizantes. O ajuste da combinação de testes especifica a probabilidade de um usuário virtual executar um teste específico em um cenário de teste de carga.
 
  Quando você move um controle deslizante, os valores de porcentagem de todos os itens disponíveis mudam. Se você tiver mais de dois itens, a quantidade adicionada ou removida será distribuída por igual entre os outros itens. É possível substituir esse comportamento. Se marcar a caixa de seleção na coluna de cadeado de um item específico, você bloqueará o valor de porcentagem especificado do item. Então, quando você mover um controle deslizante, o valor adicionado ou removido só será aplicado aos itens desbloqueados restantes.
@@ -81,12 +81,10 @@ Você pode adicionar mais testes de unidade e desempenho na Web à combinação 
 > [!WARNING]
 > O botão **Distribuir** substitui todos os itens bloqueados.
 
-
  Também é possível digitar os valores de percentual diretamente na coluna **%** em vez de usar os controles deslizantes. Se você inserir um valor de porcentagem diretamente, os outros itens não serão ajustados automaticamente.
 
 > [!NOTE]
 > Os controles deslizantes serão desabilitados quando o total não for 100% ou quando os valores de percentual inseridos na coluna **%** forem decimais.
-
 
  Ao inserir valores de porcentagem manualmente, você deve ter certeza de que a soma de todos os itens seja 100%. Ao salvar uma combinação, se a soma não for 100%, você deverá aceitar os valores de porcentagem como estão ou voltar e ajustá-los. Se você optar por aceitá-los como estão, eles serão rateados em 100%.  Por exemplo, se você tiver dois itens e defini-los manualmente como 80% e 40%, o primeiro item será definido como 66,67% (80 dividido por 120) e o segundo item será definido como 33,33% (40 dividido por 120).
 

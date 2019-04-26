@@ -8,12 +8,12 @@ ms.author: kraigb
 manager: jillfra
 ms.workload:
 - data-science
-ms.openlocfilehash: c99d7d01009ef064056f0ca91688ad043880cffd
-ms.sourcegitcommit: d78821f8c353e0102b1554719f549f32dffac71b
+ms.openlocfilehash: a24f887b5e8d12a757098eb94768ad110a5cb727
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/27/2019
-ms.locfileid: "58515184"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62809884"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>Criar projetos do R no Visual Studio
 
@@ -62,7 +62,6 @@ Se você tem uma pasta existente de arquivos *.R* que deseja gerenciar em um pro
 ## <a name="project-properties"></a>Propriedades de projeto
 
 Para abrir as páginas de propriedades do projeto, clique com o botão direito do mouse no projeto no **Gerenciador de Soluções** e selecione **Propriedades** ou selecione o item de menu **Projeto > Propriedades do (nome do projeto)**. A janela aberta exibe propriedades do projeto:
-
 
 | Tabulação | Propriedade | Descrição |
 | --- | --- | --- |

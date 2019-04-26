@@ -11,12 +11,12 @@ ms.assetid: 729b4c30-4bc3-4698-91b3-17a676897443
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 09a0b390299c354494ef29d177a4bd6c72f0548d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f570e2085bf9d0707bb5a8bfe33576466a6d7b41
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55913061"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62821192"
 ---
 # <a name="how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results"></a>Como: Ampliar uma região do grafo nos resultados do teste de carga
 
@@ -51,17 +51,17 @@ Antes de modificar a exibição de um gráfico ampliando ou reduzindo, ou roland
 
 Para exibir gráficos:
 
-1.  Execute um teste de carga até que ele seja todo concluído.
+1. Execute um teste de carga até que ele seja todo concluído.
 
-2.  Ao fim da execução de teste de carga, escolha **Sim** na caixa de diálogo que pergunta sobre exibir resultados do repositório de resultados de testes de carga.
+2. Ao fim da execução de teste de carga, escolha **Sim** na caixa de diálogo que pergunta sobre exibir resultados do repositório de resultados de testes de carga.
 
      \- ou -
 
      Exiba os detalhes de um teste de carga executado anteriormente. Para obter mais informações, confira [Como: Acessar os resultados do teste de carga para análise](../test/how-to-access-load-test-results-for-analysis.md).
 
-3.  Escolha **Gráficos** se os gráficos não forem exibidos.
+3. Escolha **Gráficos** se os gráficos não forem exibidos.
 
-4.  Se as barras de zoom não forem exibidas, escolha **Mostrar controles de zoom**.
+4. Se as barras de zoom não forem exibidas, escolha **Mostrar controles de zoom**.
 
      Duas barras de zoom são disponibilizadas para cada gráfico. A barra de zoom que controla a escala vertical é exibida à esquerda do gráfico. A barra de zoom que controla a escala horizontal é exibida abaixo do gráfico.
 
@@ -73,21 +73,21 @@ Quando vários gráficos forem exibidos, você poderá mantê-los sincronizados 
 
 ### <a name="to-synchronize-zooming-and-scrolling"></a>Para sincronizar a ampliação e a rolagem
 
-1.  No **Analisador de Teste de Carga**, escolha **Sincronizar Controles de Zoom Horizontal**.
+1. No **Analisador de Teste de Carga**, escolha **Sincronizar Controles de Zoom Horizontal**.
 
      Quando o botão **Sincronizar Controles de Zoom Horizontal** for selecionado, a ampliação e a rolagem da escala de tempo de um grafo individual também ampliará e rolará a escala de tempo dos outros grafos.
 
-2.  Novamente, escolha **Sincronizar Controles de Zoom Horizontal**.
+2. Novamente, escolha **Sincronizar Controles de Zoom Horizontal**.
 
      Quando o botão **Sincronizar Controles de Zoom Horizontal** não está selecionado, a ampliação e a rolagem da escala de tempo de um grafo individual afeta apenas esse grafo.
 
 ### <a name="to-zoom-and-scroll-to-a-region-of-the-graph"></a>Para ampliar e rolar para uma região do gráfico
 
-1.  Na barra de zoom abaixo de um gráfico, arraste a alça do lado esquerdo para a direita.
+1. Na barra de zoom abaixo de um gráfico, arraste a alça do lado esquerdo para a direita.
 
      Isso amplia a última parte da execução de teste. Da mesma forma, arrastar a alça do lado direito para a esquerda amplia as partes anteriores da execução de teste.
 
-2.  Para ampliar uma determinada área, deslize ambas as alças para o centro de um gráfico.
+2. Para ampliar uma determinada área, deslize ambas as alças para o centro de um gráfico.
 
      Quanto mais próximas as duas alças estiverem uma da outra, mais você ampliará para exibir segmentos mais curtos e finos do teste de carga.
 
@@ -107,9 +107,9 @@ Quando vários gráficos forem exibidos, você poderá mantê-los sincronizados 
 
 ### <a name="to-zoom-out"></a>Para reduzir
 
-1.  Clique com o botão direito do mouse em um gráfico ampliado.
+1. Clique com o botão direito do mouse em um gráfico ampliado.
 
-2.  No menu de atalho, selecione **Aplicar zoom horizontal**.
+2. No menu de atalho, selecione **Aplicar zoom horizontal**.
 
      Isso reduz para mostrar a duração inteira da execução de teste de carga.
 

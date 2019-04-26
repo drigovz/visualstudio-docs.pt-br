@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Saiba mais sobre a assinatura de treinamento do DataCamp incluída na assinatura do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: 0751c29833b9fac85107af9992910f8046487a70
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
+ms.openlocfilehash: 5d6f9d2a642a13b350e539383a1abb74835bf9d3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428629"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948040"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>O benefício de treinamento do DataCamp em assinaturas do Visual Studio
 
@@ -48,7 +48,6 @@ A duração do benefício do DataCamp depende da sua assinatura do Visual Studio
    > [!div class="mx-imgBorder"]
    > ![Conjunto de qualificações de ciência de dados do DataCamp](_img/vs-datacamp/vs-datacamp-datascience.png)
 
-
 6. Com base no roteiro e nas opções que você selecionou, você verá uma seleção de faixas de carreira.  Clique no botão **Registrar** na faixa de sua preferência.
    > [!div class="mx-imgBorder"]
    > ![Faixa de carreiras do DataCamp](_img/vs-datacamp/vs-datacamp-all-tracks.png)
@@ -75,22 +74,17 @@ Você pode parar a qualquer momento e retomar seu treinamento na próxima sessã
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Não disponível  | N/D |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
 
-
-
 <sup>1</sup> *Inclui:  NFR (Proibida a revenda), FTE, MVP (Most Valuable Professional), RD (Diretor Regional), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark e Imagine*
-
 
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
 
-
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
-
 ## <a name="support-resources"></a>Recursos de suporte
--  Precisa de ajuda para usar o DataCamp?  Confira estes recursos:
+- Precisa de ajuda para usar o DataCamp?  Confira estes recursos:
     - [Comunidade DataCamp](https://www.datacamp.com/community/tutorials), com fóruns e tutoriais.
     - [Centro de Ajuda do DataCamp](https://support.datacamp.com/hc), onde procurar tópicos de suporte e consultar as perguntas de usuário de solicitação.
     - [Enviar uma solicitação de suporte](https://support.datacamp.com/hc/requests/new)
--  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
--  Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
+- Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
+- Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).

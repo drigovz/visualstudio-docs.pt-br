@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Exemplo de comunicações de integração fornecidas aos administradores do Centro de Empresas
 searchscope: VS Subscription
 ms.openlocfilehash: 2f2b376ca3a7de91f67d45f7a138dbefd6b65988
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56844315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427878"
 ---
 # <a name="onboarding-email-communications-for-administrators"></a>Comunicações por email sobre a integração para administradores
 

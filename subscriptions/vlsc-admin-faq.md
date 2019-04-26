@@ -8,11 +8,11 @@ ms.topic: conceptual
 description: Perguntas frequentes sobre migração de administrador no Centro de Empresas da Microsoft
 searchscope: VS Subscription
 ms.openlocfilehash: 43b5ff7aeddf5ba1d938709e9f395f50395d0f3d
-ms.sourcegitcommit: 05d104a14ff357d599ff274f97cd59d464ee4a46
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/03/2019
-ms.locfileid: "58897654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62427969"
 ---
 # <a name="visual-studio-subscriptions-administration-migration"></a>Migração de administração de assinaturas do Visual Studio
 
@@ -44,7 +44,7 @@ Sim.  Há duas fases nesse processo. Configurar (ou integrar) a organização an
 ### <a name="what-is-the-onboarding-process"></a>O que é o processo de integração?
 Um email é enviado para os Contatos Principal/para Notificações convidando-os a concluir o processo de integração.
 Confira abaixo as instruções sobre o processo.
-1. **Localizar o PCN e entrar:**
+1. **Localizando o PCN e entrando:**
 
     a. No email, os Contatos Principal/para Notificações recebem um link exclusivo e os últimos três dígitos do PCN (número do cliente).*
 
@@ -54,7 +54,7 @@ Confira abaixo as instruções sobre o processo.
 
     d. Em seguida, será solicitado que eles insiram o PCN.
 
-2. **Configurar os administradores:**
+2. **Configure os administradores:**
 
     Depois de inserir o PCN, eles serão levados à página em que é possível adicionar superadministradores e administradores (conhecidos anteriormente como Gerentes de Assinatura). O ideal é que isso seja concluído antes da data de migração da organização, para que não haja nenhuma interrupção no gerenciamento de suas assinaturas.
 

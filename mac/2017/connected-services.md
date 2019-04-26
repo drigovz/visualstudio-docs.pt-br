@@ -6,11 +6,11 @@ author: conceptdev
 ms.author: crdun
 ms.date: 11/06/2018
 ms.openlocfilehash: 7f3cf8ce9e82310a8fe2f6ab9542d3d575a30f5b
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62932087"
 ---
 # <a name="connected-services-walkthrough"></a>Passo a passo do Connected Services
 

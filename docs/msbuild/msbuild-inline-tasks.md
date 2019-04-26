@@ -10,18 +10,17 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 707169e0b4c7463cb2df45a40ebe4380b6706a52
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 1039f46e0d2dcf3c18138e66e77e62dadb36a3f2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443603"
 ---
 # <a name="msbuild-inline-tasks"></a>Tarefas embutidas do MSBuild
 As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implementa a interface <xref:Microsoft.Build.Framework.ITask>. Para obter mais informações, consulte [Tarefas](../msbuild/msbuild-tasks.md).
 
  A partir do .NET Framework versão 4, você pode criar tarefas embutidas no arquivo de projeto. Você não precisa criar um assembly separado para hospedar a tarefa. Isso facilita o controle do código-fonte e a implantação da tarefa. O código-fonte é integrado ao script.
-
 
  No MSBuild 15.8, foi adicionada a [RoslynCodeTaskFactory](../msbuild/msbuild-roslyncodetaskfactory.md), que pode criar tarefas embutidas multiplataforma do .NET Standard.  Caso precise usar tarefas embutidas no .NET Core, use a RoslynCodeTaskFactory.
 ## <a name="the-structure-of-an-inline-task"></a>A estrutura de uma tarefa embutida
@@ -47,26 +46,26 @@ As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implem
 
  O elemento `UsingTask` no exemplo tem três atributos que descrevem a tarefa e a fábrica de tarefas em linha que a compila.
 
--   O atributo `TaskName` nomeia a tarefa, neste caso, `DoNothing`.
+- O atributo `TaskName` nomeia a tarefa, neste caso, `DoNothing`.
 
--   O atributo `TaskFactory` nomeia a classe que implementa a fábrica de tarefas em linha.
+- O atributo `TaskFactory` nomeia a classe que implementa a fábrica de tarefas em linha.
 
--   O atributo `AssemblyFile` fornece o local da fábrica de tarefas em linha. Como alternativa, você pode usar o atributo `AssemblyName` para especificar o nome totalmente qualificado da classe de fábrica de tarefas em linha, que normalmente está localizado no GAC (cache de assembly global).
+- O atributo `AssemblyFile` fornece o local da fábrica de tarefas em linha. Como alternativa, você pode usar o atributo `AssemblyName` para especificar o nome totalmente qualificado da classe de fábrica de tarefas em linha, que normalmente está localizado no GAC (cache de assembly global).
 
 Os elementos restantes da tarefa `DoNothing` estão vazios w são fornecidos para ilustrar a ordem e a estrutura de uma tarefa em linha. Um exemplo mais robusto será apresentado posteriormente neste tópico.
 
--   O elemento `ParameterGroup` é opcional. Quando especificado, ele declara os parâmetros para a tarefa. Para obter mais informações sobre parâmetros de entrada e de saída, confira [Parâmetros de entrada e de saída](#input-and-output-parameters) mais adiante neste tópico.
+- O elemento `ParameterGroup` é opcional. Quando especificado, ele declara os parâmetros para a tarefa. Para obter mais informações sobre parâmetros de entrada e de saída, confira [Parâmetros de entrada e de saída](#input-and-output-parameters) mais adiante neste tópico.
 
--   O elemento `Task` descreve e contém o código de origem da tarefa.
+- O elemento `Task` descreve e contém o código de origem da tarefa.
 
--   O elemento `Reference` especifica referências aos assemblies do .NET que você está usando em seu código. Isso equivale à adição de uma referência a um projeto no Visual Studio. O atributo `Include` especifica o caminho do assembly referenciado.
+- O elemento `Reference` especifica referências aos assemblies do .NET que você está usando em seu código. Isso equivale à adição de uma referência a um projeto no Visual Studio. O atributo `Include` especifica o caminho do assembly referenciado.
 
--   O elemento `Using` lista os namespaces que você deseja acessar. Isso se assemelha à instrução `Using` no Visual C#. O atributo `Namespace` especifica o namespace a ser incluído.
+- O elemento `Using` lista os namespaces que você deseja acessar. Isso se assemelha à instrução `Using` no Visual C#. O atributo `Namespace` especifica o namespace a ser incluído.
 
 Os elementos `Reference`e `Using` independem da linguagem. As tarefas em linha podem ser escritas em qualquer idioma com suporte do CodeDom .NET, por exemplo, Visual Basic ou Visual C#.
 
 > [!NOTE]
->  Os elementos contidos pelo elemento `Task` são específicos da fábrica de tarefas, nesse caso, a fábrica de tarefas de código.
+> Os elementos contidos pelo elemento `Task` são específicos da fábrica de tarefas, nesse caso, a fábrica de tarefas de código.
 
 ### <a name="code-element"></a>Elemento de código
  O último elemento filho a aparecer no elemento `Task` é o elemento `Code`. O elemento `Code` contém ou localiza o código que você deseja compilar em uma tarefa. O que é colocado no elemento `Code` depende de como você deseja escrever a tarefa.
@@ -75,18 +74,18 @@ Os elementos `Reference`e `Using` independem da linguagem. As tarefas em linha p
 
  O atributo `Type` especifica o tipo de código que é encontrado no elemento `Code`.
 
--   Se o valor de `Type` é `Class`, o elemento `Code` contém o código para uma classe que deriva da interface <xref:Microsoft.Build.Framework.ITask>.
+- Se o valor de `Type` é `Class`, o elemento `Code` contém o código para uma classe que deriva da interface <xref:Microsoft.Build.Framework.ITask>.
 
--   Se o valor de `Type` é `Method`, o código define uma substituição do método `Execute` da interface <xref:Microsoft.Build.Framework.ITask>.
+- Se o valor de `Type` é `Method`, o código define uma substituição do método `Execute` da interface <xref:Microsoft.Build.Framework.ITask>.
 
--   Se o valor de `Type` é `Fragment`, o código define o conteúdo do método `Execute`, mas não a assinatura ou a instrução `return`.
+- Se o valor de `Type` é `Fragment`, o código define o conteúdo do método `Execute`, mas não a assinatura ou a instrução `return`.
 
 O próprio código normalmente aparece entre um marcador `<![CDATA[` e um marcador `]]>`. Como o código está em uma seção CDATA, você não precisa se preocupar com o escape de caracteres reservados, por exemplo, "\<" ou ">".
 
 Como alternativa, você pode usar o atributo `Source` do elemento `Code` para especificar o local de um arquivo que contém o código da sua tarefa. O código no arquivo de origem deve ser do tipo especificado pelo atributo `Type`. Se o atributo `Source` estiver presente, o valor padrão de `Type` será `Class`. Se `Source` é não estiver presente, o valor padrão será `Fragment`.
 
 > [!NOTE]
->  Ao definir a classe de tarefa no arquivo de origem, o nome da classe deve concordar com o atributo `TaskName` do elemento [UsingTask](../msbuild/usingtask-element-msbuild.md) correspondente.
+> Ao definir a classe de tarefa no arquivo de origem, o nome da classe deve concordar com o atributo `TaskName` do elemento [UsingTask](../msbuild/usingtask-element-msbuild.md) correspondente.
 
 ## <a name="helloworld"></a>HelloWorld
  Vejamos uma tarefa em linha mais robusta. A tarefa HelloWorld exibe "Hello, world!" no dispositivo de registro de erros em log padrão, que é normalmente o console do sistema ou a janela **Saída** do Visual Studio. O elemento `Reference` no exemplo é incluído apenas para ilustração.
@@ -136,11 +135,11 @@ Log.LogError("Hello, world!");
 
  Os parâmetros podem ter um ou mais destes atributos:
 
--   `Required` é um atributo opcional que é `false` por padrão. Se `true`, o parâmetro é necessário e deve receber um valor antes de chamar a tarefa.
+- `Required` é um atributo opcional que é `false` por padrão. Se `true`, o parâmetro é necessário e deve receber um valor antes de chamar a tarefa.
 
--   `ParameterType` é um atributo opcional que é `System.String` por padrão. Ele pode ser definido como qualquer tipo totalmente qualificado que seja um item ou um valor que pode ser convertido em uma cadeia de caracteres usando System.Convert.ChangeType. (Em outras palavras, qualquer tipo que possa ser passado de e para uma tarefa externa.)
+- `ParameterType` é um atributo opcional que é `System.String` por padrão. Ele pode ser definido como qualquer tipo totalmente qualificado que seja um item ou um valor que pode ser convertido em uma cadeia de caracteres usando System.Convert.ChangeType. (Em outras palavras, qualquer tipo que possa ser passado de e para uma tarefa externa.)
 
--   `Output` é um atributo opcional que é `false` por padrão. Se `true`, o parâmetro deve receber um valor antes de retornar do método Execute.
+- `Output` é um atributo opcional que é `false` por padrão. Se `true`, o parâmetro deve receber um valor antes de retornar do método Execute.
 
 Por exemplo,
 
@@ -154,11 +153,11 @@ Por exemplo,
 
 define esses três parâmetros:
 
--   `Expression` é um parâmetro de entrada obrigatório do tipo System.String.
+- `Expression` é um parâmetro de entrada obrigatório do tipo System.String.
 
--   `Files` é um parâmetro de entrada de lista do item obrigatório.
+- `Files` é um parâmetro de entrada de lista do item obrigatório.
 
--   `Tally`é um parâmetro de saída do tipo System.Int32.
+- `Tally`é um parâmetro de saída do tipo System.Int32.
 
 Se o elemento `Code` tem o atributo `Type` de `Fragment` ou `Method`, as propriedades são criadas automaticamente para cada parâmetro. Caso contrário, as propriedades devem ser declaradas explicitamente no código-fonte da tarefa e devem coincidir exatamente com suas definições de parâmetro.
 

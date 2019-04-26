@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 61b9cb5bfc1b310bf7947c51fa3ba718db824fce
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 5b1b6817b31272bf01c92e77ff5b04dfff35f6ad
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57868196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428123"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>Passo a passo: Usando APIs do criador de perfil
 
@@ -39,8 +39,6 @@ O passo a passo usa um aplicativo C# para demonstrar como usar as APIs de Ferram
 
  Para o código gerenciado, as APIs do criador de perfil estão na *Microsoft.VisualStudio.Profiler.dll*. Essa DLL é encontrada no diretório *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*. Para aplicativos de 64 bits, a pasta é *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools\x64*. Para obter mais informações, consulte <xref:Microsoft.VisualStudio.Profiler>.
 
-
-
 ## <a name="prerequisites"></a>Pré-requisitos
  Este passo a passo pressupõe que a escolha do ambiente de desenvolvimento está configurada para dar suporte à depuração e amostragem. Os tópicos a seguir fornecem uma visão geral desses pré-requisitos:
 
@@ -62,12 +60,12 @@ DataCollection.CurrentId);
 
 #### <a name="to-create-the-code-to-profile"></a>Para criar o código para o perfil
 
-1.  Crie um novo projeto C# no Visual Studio, ou use uma compilação de linha de comando, dependendo de sua preferência.
+1. Crie um novo projeto C# no Visual Studio, ou use uma compilação de linha de comando, dependendo de sua preferência.
 
     > [!NOTE]
-    >  O build precisa referenciar a biblioteca *Microsoft.VisualStudio.Profiler.dll*, localizada no diretório *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.
+    > O build precisa referenciar a biblioteca *Microsoft.VisualStudio.Profiler.dll*, localizada no diretório *Microsoft Visual Studio\Shared\Common\VSPerfCollectionTools*.
 
-2.  Copie e cole o código a seguir em seu projeto:
+2. Copie e cole o código a seguir em seu projeto:
 
     ```csharp
     using System;
@@ -150,23 +148,23 @@ DataCollection.CurrentId);
 
 #### <a name="to-collect-and-view-data-at-the-command-line"></a>Para coletar e exibir dados na linha de comando
 
-1.  Compile uma versão de depuração do código de exemplo que você criou no procedimento "Criar o código para o perfil" neste passo a passo.
+1. Compile uma versão de depuração do código de exemplo que você criou no procedimento "Criar o código para o perfil" neste passo a passo.
 
-2.  Para criar o perfil de um aplicativo gerenciado, digite o comando a seguir para definir as variáveis de ambiente apropriadas:
+2. Para criar o perfil de um aplicativo gerenciado, digite o comando a seguir para definir as variáveis de ambiente apropriadas:
 
      **VsPerfCLREnv /traceon**
 
-3.  Digite o seguinte comando: **VSInstr \<nomedoarquivo>.exe**
+3. Digite o seguinte comando: **VSInstr \<nomedoarquivo>.exe**
 
-4.  Digite o seguinte comando: **VSPerfCmd /start:trace /output:\<nomedoarquivo>.vsp**
+4. Digite o seguinte comando: **VSPerfCmd /start:trace /output:\<nomedoarquivo>.vsp**
 
-5.  Digite o seguinte comando: **VSPerfCmd /globaloff**
+5. Digite o seguinte comando: **VSPerfCmd /globaloff**
 
-6.  Execute seu programa.
+6. Execute seu programa.
 
-7.  Digite o seguinte comando: **VSPerfCmd /shutdown**
+7. Digite o seguinte comando: **VSPerfCmd /shutdown**
 
-8.  Digite o seguinte comando: **VSPerfReport /calltrace:\<nomedoarquivo>.vsp**
+8. Digite o seguinte comando: **VSPerfReport /calltrace:\<nomedoarquivo>.vsp**
 
      Um arquivo .*csv* é criado no diretório atual com os dados de desempenho resultantes.
 

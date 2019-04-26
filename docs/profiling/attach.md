@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c5c734d4d0b12bea1e13ac216700be5f85ed088
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: f080957774b33ca00787f061708426a62bd7768f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56627331"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440289"
 ---
 # <a name="attach"></a>Attach
 A opção **Attach** do *VSPerfCmd.exe* inicia a criação de perfil de exemplo do processo em execução especificado pela PID (ID do processo).
@@ -21,7 +21,7 @@ A opção **Attach** do *VSPerfCmd.exe* inicia a criação de perfil de exemplo 
  Para usar a opção **Anexar**, você deve especificar o método de **exemplo** na opção de início.
 
 > [!NOTE]
->  Se a opção **Iniciar** foi especificada com a opção **Crosssession**, todas as chamadas para **VSPerfCmd /Attach** ou **VSPerfCmd /Detach** também deverão especificar **Crosssession**.
+> Se a opção **Iniciar** foi especificada com a opção **Crosssession**, todas as chamadas para **VSPerfCmd /Attach** ou **VSPerfCmd /Detach** também deverão especificar **Crosssession**.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -50,13 +50,13 @@ VSPerfCmd.exe /Attach:ProcessID [Options]
 
  **Timer**[**:**`Cycles`]**PF**[**:**`Events`]**Sys**[<strong>:</strong>Eventos]**Contador**[**:**`Name`,`Reload`,`FriendlyName`] Especifica o número e o tipo de intervalo de amostragem.
 
--   **Temporizador** – exemplifica cada `Cycles` ciclo de relógio do processador. Se `Cycles` não for especificado, os 10.000.000 ciclos serão usados.
+- **Temporizador** – exemplifica cada `Cycles` ciclo de relógio do processador. Se `Cycles` não for especificado, os 10.000.000 ciclos serão usados.
 
--   **PF** – exemplifica cada `Events` falha de página. Se `Events` não for especificado, 10 falhas de página serão usadas.
+- **PF** – exemplifica cada `Events` falha de página. Se `Events` não for especificado, 10 falhas de página serão usadas.
 
--   **Sys** – exemplifica cada `Events` chamadas para o sistema operacional. Se `Events` não for especificado, 10 chamadas do sistema serão usadas.
+- **Sys** – exemplifica cada `Events` chamadas para o sistema operacional. Se `Events` não for especificado, 10 chamadas do sistema serão usadas.
 
--   **Contador** – exemplifica cada número `Reload` do contador de desempenho de CPU especificado por `Name`. Opcionalmente, `FriendlyName` pode especificar uma cadeia de caracteres para usar como o cabeçalho de coluna nos relatórios do criador de perfil.
+- **Contador** – exemplifica cada número `Reload` do contador de desempenho de CPU especificado por `Name`. Opcionalmente, `FriendlyName` pode especificar uma cadeia de caracteres para usar como o cabeçalho de coluna nos relatórios do criador de perfil.
 
 ## <a name="example"></a>Exemplo
  Este exemplo demonstra como anexar a uma instância em execução de um aplicativo com a ID de processo 12345.

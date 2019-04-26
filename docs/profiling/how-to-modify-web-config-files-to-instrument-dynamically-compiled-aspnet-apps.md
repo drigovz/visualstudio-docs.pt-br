@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: 925112de25a127d4664bb66d602ca137ad624f70
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 257d6142fd53914a15e8503121cab1215182ec04
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616684"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422929"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>Como: Modificar arquivos web.config para instrumentar e analisar aplicativos Web ASP.NET compilados dinamicamente
 Você pode usar o método de instrumentação das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para coletar dados de tempo detalhados, dados de alocação de memória do .NET e dados de tempo de vida do objeto do .NET de aplicativos Web do [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] dinamicamente compilados.
@@ -21,7 +21,7 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
  Este tópico descreve como modificar o arquivo de configuração *web.config* para habilitar a instrumentação e a criação de perfil de aplicativos Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)].
 
 > [!NOTE]
->  Não é necessário modificar o arquivo *web.config* quando você usa o método de criação de perfil por amostragem ou quando você deseja instrumentar um módulo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pré-compilado.
+> Não é necessário modificar o arquivo *web.config* quando você usa o método de criação de perfil por amostragem ou quando você deseja instrumentar um módulo [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] pré-compilado.
 
  A raiz de um arquivo *web.config* é o elemento **configuration**. Para instrumentar e criar o perfil de um aplicativo Web [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] compilado dinamicamente, é necessário adicionar ou modificar os seguintes elementos:
 
@@ -45,11 +45,9 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
 
 3. Adicione os seguintes nomes de atributo e valor ao elemento **assemblyBinding**:
 
-
    | Nome do atributo | Valor do Atributo |
    |----------------|--------------------------------------|
    | **Xmlns** | **urn:schemas-microsoft-com:asm.v1** |
-
 
 4. Adicione um elemento **dependentAssembly** como um elemento filho do elemento **assemblyBinding**.
 
@@ -59,13 +57,11 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
 
 6. Adicione os seguintes nomes de atributo e valores ao elemento **assemblyIdentity**:
 
-
    | Nome do atributo | Valor do Atributo |
    |--------------------| - |
    | **name** | **Microsoft.VisualStudio.Enterprise.ASPNetHelper** |
    | **PublicKeyToken** | **b03f5f7f11d50a3a** |
    | **culture** | **Neutral** |
-
 
 7. Adicione um elemento **codeBase** como um filho do elemento **dependentAssembly**.
 
@@ -100,15 +96,15 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
 
 ### <a name="to-add-the-profiler-post-process-step-to-the-configurationsystemwebcompilation-element"></a>Para adicionar a etapa de pós-processamento do criador de perfil ao elemento configuration/system.web/compilation
 
-1.  Se necessário, adicione o elemento **system.web** como um elemento filho do elemento **configuration**. Caso contrário, vá para a próxima etapa.
+1. Se necessário, adicione o elemento **system.web** como um elemento filho do elemento **configuration**. Caso contrário, vá para a próxima etapa.
 
      O elemento **system.web** não tem atributos. O elemento **configuration** pode ter apenas um elemento filho **system.web**.
 
-2.  Se necessário, adicione o elemento **compilation** como um elemento filho do elemento **system.web**. Caso contrário, vá para a próxima etapa.
+2. Se necessário, adicione o elemento **compilation** como um elemento filho do elemento **system.web**. Caso contrário, vá para a próxima etapa.
 
      O elemento **system.web** pode ter apenas um elemento filho **compilation**.
 
-3.  Remova todos os atributos existentes do elemento **compilation** e adicione os seguintes nomes de atributo e valor:
+3. Remova todos os atributos existentes do elemento **compilation** e adicione os seguintes nomes de atributo e valor:
 
     |Nome do atributo|Valor do Atributo|
     |--------------------|---------------------|
@@ -140,12 +136,10 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
 
 3. Adicione os seguintes nomes de atributo e valores ao elemento **add**:
 
-
    | Nome do atributo | Valor do Atributo |
    |----------------| - |
    | **key** | **Microsoft.VisualStudio.Enterprise.AspNetHelper.VsInstrLocation** |
    | **value** | `PerformanceToolsFolder` **\VSInstr.Exe** |
-
 
 4. Adicione outro elemento **add** como um filho do elemento **appSettings**.
 
@@ -157,7 +151,6 @@ Você pode usar o método de instrumentação das Ferramentas de Criação de Pe
    |**value**|`PerformanceToolsFolder`|
 
     `PerformanceToolsFolder` é o caminho dos arquivos executáveis do criador de perfil. Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md).
-
 
 ```xml
     <configuration>

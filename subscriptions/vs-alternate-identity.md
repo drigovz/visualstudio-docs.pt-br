@@ -7,12 +7,12 @@ ms.date: 04/10/2018
 ms.topic: conceptual
 description: Como adicionar uma identidade alternativa à sua Assinatura do Visual Studio para ser usada com o Azure DevOps e o Azure
 searchscope: vs subscription
-ms.openlocfilehash: ee1db1fc10629c5476b9fd78b826993401aa14db
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 63a372d4a0e0e70a008f86a36aae73516bf42458
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62428052"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Identidades para assinantes do Visual Studio
 
@@ -33,9 +33,7 @@ Isso não fornece uma cópia da assinatura para a outra conta; apenas possibilit
 
 Para todas as assinaturas, é possível adicionar uma "conta corporativa ou de estudante" para que você possa usar essa conta com benefícios que exigem um logon (VS IDE, Azure DevOps e Azure).
 
-
 ### <a name="add-the-alternate-account"></a>Adicionar a conta alternativa
-
 
 1. Entre no portal do Assinante do Visual Studio com sua Conta Microsoft (https://my.visualstudio.com).
 
@@ -58,7 +56,7 @@ Para todas as assinaturas, é possível adicionar uma "conta corporativa ou de e
 
 Sua conta alternativa é adicionada à Assinatura do Visual Studio, permitindo que as duas identidades utilizem os benefícios da assinatura que exigem que você entre com a conta alternativa (IDE, Azure DevOps e Azure).
 
-## <a name="faq"></a>Perguntas Frequentes
+## <a name="faq"></a>Perguntas frequentes
 
 ### <a name="q--why-doesnt-azure-devops-recognize-me-as-a-visual-studio-subscriber"></a>P:  Por que o Azure DevOps não me reconhece como um assinante do Visual Studio?
 

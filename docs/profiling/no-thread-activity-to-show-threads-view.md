@@ -12,25 +12,25 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 999be3e6d97158406aad32e79be87051ff11d3b3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 91cc840a69135edf59603ba62d15985eb541df0e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62794460"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>Não há nenhuma atividade de thread a ser mostrada (exibição Threads)
 Essa área mostra dados sobre threads não ocultos no intervalo de tempo visível no momento.
 
  Se nenhuma informação estiver visível, verifique as seguintes configurações:
 
--   O nível de zoom está alto? Tente ampliar ou rolar para colocar mais atividade de thread no intervalo.
+- O nível de zoom está alto? Tente ampliar ou rolar para colocar mais atividade de thread no intervalo.
 
--   Muitos threads estão ocultos? Nesse caso, tente mostrar todos os threads
+- Muitos threads estão ocultos? Nesse caso, tente mostrar todos os threads
 
--   Se **Apenas Meu Código** estiver selecionado, será possível exibir apenas os dados sobre o seu código. Tente desmarcar a configuração para determinar se há alguma atividade de thread do sistema.
+- Se **Apenas Meu Código** estiver selecionado, será possível exibir apenas os dados sobre o seu código. Tente desmarcar a configuração para determinar se há alguma atividade de thread do sistema.
 
--   Verifique se a Redução de Ruído está definida com um limite baixo.
+- Verifique se a Redução de Ruído está definida com um limite baixo.
 
 ## <a name="see-also"></a>Consulte também
 - [Exibição de Threads](../profiling/threads-view-parallel-performance.md)

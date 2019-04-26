@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bcb24742a4387a84bba0b52763cdb559280c24c4
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 34efc198b1237028c84e86e8cb34db9270b6d646
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426656"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>Medir o uso de memória no Visual Studio
 
@@ -41,48 +41,48 @@ Neste tutorial, você irá:
 
 ## <a name="collect-memory-usage-data"></a>Coletar dados de uso de memória
 
-1.  Abra o projeto que deseja depurar no Visual Studio e defina um ponto de interrupção no aplicativo no ponto em que deseja começar a examinar o uso da memória.
+1. Abra o projeto que deseja depurar no Visual Studio e defina um ponto de interrupção no aplicativo no ponto em que deseja começar a examinar o uso da memória.
 
     Se houver uma área em que você suspeite de um problema de memória, defina o primeiro ponto de interrupção antes que ocorra o problema de memória.
 
     > [!TIP]
-    >  Como pode ser um desafio capturar o perfil de memória de uma operação de seu interesse quando o aplicativo aloca e desaloca memória com frequência, defina pontos de interrupção no início e no final da operação (ou percorra a operação) para localizar o ponto exato em que a memória foi alterada.
+    > Como pode ser um desafio capturar o perfil de memória de uma operação de seu interesse quando o aplicativo aloca e desaloca memória com frequência, defina pontos de interrupção no início e no final da operação (ou percorra a operação) para localizar o ponto exato em que a memória foi alterada.
 
-2.  Defina um segundo ponto de interrupção ao fim da função ou região de código que você deseja analisar (ou após a ocorrência de um problema de memória suspeito).
+2. Defina um segundo ponto de interrupção ao fim da função ou região de código que você deseja analisar (ou após a ocorrência de um problema de memória suspeito).
 
-3.  A janela **Ferramentas de Diagnóstico** é exibida automaticamente, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico**.
+3. A janela **Ferramentas de Diagnóstico** é exibida automaticamente, a menos que tenha sido desativada. Para abrir a janela novamente, clique em **Depurar** > **Windows** > **Mostrar Ferramentas de Diagnóstico**.
 
-4.  Escolha **Uso de Memória** com a configuração **Selecionar Ferramentas** na barra de ferramentas.
+4. Escolha **Uso de Memória** com a configuração **Selecionar Ferramentas** na barra de ferramentas.
 
      ![Mostrar Ferramentas de Diagnósticos](../profiling/media/diag-tools-select-tool-2.png "DiagToolsSelectTool")
 
-5.  Clique em **Depurar/Iniciar Depuração** (ou em **Iniciar** na barra de ferramentas ou em **F5**).
+5. Clique em **Depurar/Iniciar Depuração** (ou em **Iniciar** na barra de ferramentas ou em **F5**).
 
      Quando o aplicativo terminar de ser carregado, a exibição Resumo das Ferramentas de Diagnóstico será exibida.
 
      ![Guia Resumo das Ferramentas de Diagnóstico](../profiling/media/diag-tools-summary-tab-2.png "DiagToolsSummaryTab")
 
      > [!NOTE]
-     >  Como a coleta de dados de memória pode afetar o desempenho de depuração de seus aplicativos mistos ou nativos, os instantâneos de memória são desabilitados por padrão. Para habilitar instantâneos em aplicativos nativos ou de modo misto, inicie uma sessão de depuração (tecla de atalho: **F5**). Quando a janela **Ferramentas de Diagnóstico** for exibida, escolha a guia **Uso de Memória** e, em seguida, **Criação de Perfil de Heap**.
+     > Como a coleta de dados de memória pode afetar o desempenho de depuração de seus aplicativos mistos ou nativos, os instantâneos de memória são desabilitados por padrão. Para habilitar instantâneos em aplicativos nativos ou de modo misto, inicie uma sessão de depuração (tecla de atalho: **F5**). Quando a janela **Ferramentas de Diagnóstico** for exibida, escolha a guia **Uso de Memória** e, em seguida, **Criação de Perfil de Heap**.
      >
      >  ![Habilitar instantâneos](../profiling/media/dbgdiag_mem_mixedtoolbar_enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")
      >
      >  Interrompa (tecla de atalho: **Shift**+**F5**) e reinicie a depuração.
 
-6.  Para obter um instantâneo no início da sessão de depuração, escolha **Tirar instantâneo** na barra de ferramentas de resumo **Uso de Memória**. (Talvez seja útil definir um ponto de interrupção aqui também.)
+6. Para obter um instantâneo no início da sessão de depuração, escolha **Tirar instantâneo** na barra de ferramentas de resumo **Uso de Memória**. (Talvez seja útil definir um ponto de interrupção aqui também.)
 
     ![Tirar instantâneo](../profiling/media/dbgdiag_mem_mixedtoolbar_takesnapshot.png "DBGDIAG_MEM_MixedToolbar_TakeSnapshot")
 
      > [!TIP]
-     >  Para criar uma linha de base para comparações de memória, tire um instantâneo no início da sessão de depuração.
+     > Para criar uma linha de base para comparações de memória, tire um instantâneo no início da sessão de depuração.
 
-6.  Execute o cenário que fará com que o primeiro ponto de interrupção seja atingido.
+6. Execute o cenário que fará com que o primeiro ponto de interrupção seja atingido.
 
-7.  Enquanto o depurador estiver pausado no primeiro ponto de interrupção, escolha **Tirar instantâneo** na barra de ferramentas de resumo **Uso de Memória**.
+7. Enquanto o depurador estiver pausado no primeiro ponto de interrupção, escolha **Tirar instantâneo** na barra de ferramentas de resumo **Uso de Memória**.
 
-8.  Pressione **F5** para executar o aplicativo até o segundo ponto de interrupção.
+8. Pressione **F5** para executar o aplicativo até o segundo ponto de interrupção.
 
-9.  Agora, crie outro instantâneo.
+9. Agora, crie outro instantâneo.
 
      Neste ponto, você pode começar a analisar os dados.
 
@@ -93,9 +93,9 @@ As linhas da tabela de resumo de Uso de Memória listam os instantâneos que voc
 
  O nome das colunas depende do modo de depuração escolhido nas propriedades do projeto: .NET, nativo ou misto (.NET e nativo).
 
--   As colunas **Objetos (Diff)** e **Alocações (Diff)** exibem o número de objetos no .NET e na memória nativa quando o instantâneo foi criado.
+- As colunas **Objetos (Diff)** e **Alocações (Diff)** exibem o número de objetos no .NET e na memória nativa quando o instantâneo foi criado.
 
--   A coluna **Tamanho do Heap (Diff)** exibe o número de bytes no .NET e heaps nativos
+- A coluna **Tamanho do Heap (Diff)** exibe o número de bytes no .NET e heaps nativos
 
 Quando você tira vários instantâneos, as células da tabela de resumo incluem a alteração no valor entre o instantâneo de linha e o instantâneo anterior.
 
@@ -136,13 +136,13 @@ Para analisar o uso da memória, clique em um dos links que abre um relatório d
 
  O **Modo de exibição de tipos** exibe o número e tamanho dos tipos no instantâneo.
 
--   Escolha o ícone de instâncias (![O ícone de instância na coluna Tipo de Objeto](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) de um tipo selecionado para exibir informações sobre os objetos do tipo selecionado no instantâneo.
+- Escolha o ícone de instâncias (![O ícone de instância na coluna Tipo de Objeto](../profiling/media/dbg_mma_instancesicon.png "DBG_MMA_InstancesIcon")) de um tipo selecionado para exibir informações sobre os objetos do tipo selecionado no instantâneo.
 
      O modo de exibição **Instâncias** mostra cada instância do tipo selecionado. A seleção de uma instância exibe a pilha de chamadas resultou na criação da instância no painel **Pilha de Chamadas de Alocação**.
 
      ![Modo de exibição de instâncias](../profiling/media/dbgdiag_mem_native_instances.png "DBGDIAG_MEM_Native_Instances")
 
--   Escolha **Exibição de Pilhas** na lista **Exibir Modo** para ver a pilha de alocação do tipo selecionado.
+- Escolha **Exibição de Pilhas** na lista **Exibir Modo** para ver a pilha de alocação do tipo selecionado.
 
      ![Exibição de Pilhas](../profiling/media/dbgdiag_mem_native_stacksview.png "DBGDIAG_MEM_Native_StacksView")
 
@@ -162,7 +162,7 @@ O relatório de comparação adiciona colunas (marcadas com **(Diff)**) ao relat
 
 ## <a name="blogs-and-videos"></a>Blogs e vídeos
 
-[Analisar a CPU e a memória durante a depuração](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/)
+[Analyze CPU and Memory While Debugging](https://devblogs.microsoft.com/visualstudio/analyze-cpu-memory-while-debugging/) (Analisar a CPU e a memória durante a depuração)
 
 [Blog do Visual C++: Criação de perfil de memória no Visual C++ 2015](https://devblogs.microsoft.com/cppblog/memory-profiling-in-visual-c-2015/)
 

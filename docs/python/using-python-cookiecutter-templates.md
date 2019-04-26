@@ -11,11 +11,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: eeea19b1d2ff4a4d24f27280a48b9ae673406908
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832129"
 ---
 # <a name="use-the-cookiecutter-extension"></a>Usar a extensão Cookiecutter
 
@@ -37,7 +37,7 @@ A home page do Cookiecutter exibe uma lista de modelos a serem escolhidos, organ
 
 | Grupo | Descrição |
 | --- | --- |
-| **Instalados** | Modelos que foram instalados no computador local. Quando um modelo online é usado, seu repositório é clonado automaticamente em uma subpasta de *~/.cookiecutters*. É possível excluir um modelo instalado escolhido pressionando **Delete**. |
+| **Instalado** | Modelos que foram instalados no computador local. Quando um modelo online é usado, seu repositório é clonado automaticamente em uma subpasta de *~/.cookiecutters*. É possível excluir um modelo instalado escolhido pressionando **Delete**. |
 | **Recomendado** | Modelos carregados do feed recomendado. O feed padrão é coletado pela Microsoft. Consulte [Opções do Cookiecutter](#cookiecutter-options) abaixo para obter detalhes sobre como personalizar o feed. |
 | **GitHub** | Resultados da pesquisa do GitHub para a palavra-chave cookiecutter. Os resultados do GitHub retornam paginados e, se houver mais resultados disponíveis, a opção **Carregar Mais** será exibida ao final da lista. |
 | **Personalizado** | Quando uma localização personalizada é inserida na caixa de pesquisa, ela é exibida nesse grupo. É possível digitar um caminho completo para o repositório GitHub ou o caminho completo para uma pasta no disco local. |

@@ -8,18 +8,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2f2c146398e6ec3d8fba7f3bf0922c0050eddb4d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 47b004c5f7d127c78e4fd6f7c00b34c502d07f18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386730"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>Como: Iniciar um aplicativo independente do .NET Framework com o criador de perfil para coletar dados de simultaneidade usando a linha de comando
 Este tópico descreve como usar ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para iniciar um aplicativo autônomo (cliente) do .NET Framework e coletar dados de simultaneidade de thread e processo
 
 > [!NOTE]
->  Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.
+> Para obter o caminho para as ferramentas de criação de perfil, confira [Especificar o caminho para ferramentas de linha de comando](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md). Em computadores de 64 bits, as versões de 64 e de 32 bits das ferramentas estão disponíveis. Para usar ferramentas de linha de comando do criador de perfil, você precisa adicionar o caminho das ferramentas à variável de ambiente PATH da janela de Prompt de Comando ou adicioná-lo ao próprio comando.
 
  Enquanto o criador de perfil estiver anexado ao aplicativo, você pode pausar e retomar a coleta de dados. Para concluir uma sessão de criação de perfil, o Criador de perfil não pode mais estar anexado ao aplicativo e o Criador de perfil deve ser desligado explicitamente.
 
@@ -36,13 +36,11 @@ Este tópico descreve como usar ferramentas de linha de comando das Ferramentas 
 
    - A opção [/start](../profiling/start.md) inicializa o criador de perfil.
 
-
      | | |
      |-------------------------------------| - |
      | **/start:concurrency** | Permite a coleta de dados de contenção de recursos e de execução do thread. |
      | **/start:concurrency,resourceonly** | Habilita apenas a coleta de dados de contenção de recursos. |
      | **/start:concurrency,threadonly** | Habilita apenas a coleta de dados de execução de thread. |
-
 
    - A opção [/output](../profiling/output.md)**:**`OutputFile` é necessária com **/start**. `OutputFile` especifica o nome e o local do arquivo de dados de criação de perfil (.vsp).
 
@@ -55,7 +53,6 @@ Este tópico descreve como usar ferramentas de linha de comando das Ferramentas 
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | Especifica um contador de desempenho do Windows que deve ser coletado durante a criação de perfil. |
    | [/automark](../profiling/automark.md) **:** `Interval` | Use somente com **/wincounter**. Especifica o número de milissegundos entre eventos de coleta do contador de desempenho do Windows. O padrão é 500 ms. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Especifica um evento de ETW (Rastreamento de Eventos para Windows) a ser coletado durante a criação de perfil. Os eventos do ETW são coletados em um arquivo separado (.*etl*). |
-
 
 3. Inicie o aplicativo de destino. Tipo:
 
@@ -74,7 +71,7 @@ Este tópico descreve como usar ferramentas de linha de comando das Ferramentas 
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar e interromper a coleta de dados
 
-1.  Os pares de opções do *VSPerfCmd.exe* a seguir iniciam e interrompem a coleta de dados. Especifica cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.
+1. Os pares de opções do *VSPerfCmd.exe* a seguir iniciam e interrompem a coleta de dados. Especifica cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.
 
     |Opção|Descrição|
     |------------|-----------------|
@@ -87,15 +84,15 @@ Este tópico descreve como usar ferramentas de linha de comando das Ferramentas 
 
 #### <a name="to-end-a-profiling-session"></a>Para encerrar uma sessão de criação de perfil
 
-1.  Siga um destes procedimentos para desanexar o criador de perfil do aplicativo de destino.
+1. Siga um destes procedimentos para desanexar o criador de perfil do aplicativo de destino.
 
-    -   Feche o aplicativo de destino.
+    - Feche o aplicativo de destino.
 
          - ou -
 
-    -   Digite **VSPerfCmd /detach**
+    - Digite **VSPerfCmd /detach**
 
-2.  Desligue o criador de perfil
+2. Desligue o criador de perfil
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 

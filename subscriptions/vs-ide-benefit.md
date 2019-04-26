@@ -7,21 +7,20 @@ ms.date: 04/03/2019
 ms.topic: conceptual
 description: Saiba como baixar e instalar o IDE do Visual Studio incluído em sua assinatura do Visual Studio.
 searchscope: VS Subscription
-ms.openlocfilehash: e2ac206e85d43cff897ff97b42b4b8fccaeec906
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: af721e567e451c50533d0e476ec01acfa4022a53
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018136"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420806"
 ---
 # <a name="using-the-visual-studio-2019-benefit"></a>Usar o benefício do Visual Studio 2019
 
 Como assinante do Visual Studio, você tem acesso ao IDE do Visual Studio.  A versão específica dependerá do nível de sua assinatura.  O benefício aparecerá como um bloco na categoria Ferramentas na página [Benefícios](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs) do portal do assinante.
 
-
 ## <a name="activation-steps"></a>Etapas de ativação
 
-*(O Visual Studio Enterprise é usado para este exemplo.)*
+*(O Visual Studio Enterprise é usado para este exemplo).*
 
 Para baixar o IDE:
 1. Entre no [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs).
@@ -56,8 +55,10 @@ Para baixar o IDE:
 14. O Visual Studio é aberto. Você está pronto para começar a usar o Visual Studio!
 
     ::: moniker range="vs-2017"
+
     > [!div class="mx-imgBorder"]
     > ![Começar a usar o Visual Studio Enterprise](_img/vs-ide-experience/vs-ide-start-cropped.png)
+
     ::: moniker-end
 
 ## <a name="eligibility"></a>Qualificação
@@ -75,12 +76,10 @@ Para baixar o IDE:
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
 
-
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
-
 ## <a name="support-resources"></a>Recursos de suporte
--  Se precisar de ajuda com o IDE do Visual Studio, confira estes recursos:
+- Se precisar de ajuda com o IDE do Visual Studio, confira estes recursos:
     - Suporte técnico: [https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
     - [Documentação](/visualstudio/)
--  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
+- Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.

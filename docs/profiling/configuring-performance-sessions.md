@@ -13,18 +13,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f74c55cf6b21b67cf0f1ab8b1f862f84964e3eae
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 4a36486816d9b6bdc160616b893c6d7a79dfad58
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405779"
 ---
 # <a name="configure-performance-sessions"></a>Configurar sessões de desempenho
 Usando as Ferramentas de criação de perfil [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], é possível coletar uma grande variedade de dados de desempenho para um grande número de tipos de aplicativos. Esta seção mostra como usar o Assistente de Desempenho, as propriedades da sessão de desempenho e o binário de destino para configurar as Ferramentas de Criação de Perfil para coletar os dados que lhe interessam. As propriedades de configuração das Ferramentas de Criação de Perfil também podem ser usadas para controlar a quantidade de dados coletada em uma execução de criação de perfil. Para saber mais, confira [Controlar a coleta de dados](../profiling/controlling-data-collection.md).
 
 > [!NOTE]
->  Em muitos casos, usar as propriedades padrão do Assistente de Desempenho é uma maneira eficiente de coletar dados de criação de perfil. Para saber mais, veja o [Guia para iniciantes da criação de perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md) e a [Introdução](../profiling/getting-started-with-performance-tools.md).
+> Em muitos casos, usar as propriedades padrão do Assistente de Desempenho é uma maneira eficiente de coletar dados de criação de perfil. Para saber mais, veja o [Guia para iniciantes da criação de perfil de desempenho](../profiling/beginners-guide-to-performance-profiling.md) e a [Introdução](../profiling/getting-started-with-performance-tools.md).
 
 ## <a name="common-tasks"></a>Tarefas comuns
 

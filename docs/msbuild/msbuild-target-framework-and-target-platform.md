@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da54bae8c1a688e4708a71476e6654132708a511
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 3ff626078296c61d5f2588434942d4016cba0c1e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004631"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>Estrutura de destino e plataforma de destino do MSBuild
 Um projeto pode ser compilado para executar tanto em uma *estrutura de destino*, que é uma versão específica do .NET Framework, quanto em uma *plataforma de destino*, que é uma arquitetura de software específico.  Por exemplo, você pode direcionar um aplicativo para execução no .NET Framework 2.0 em uma plataforma de 32 bits compatível com a família de processadores 802x86 ("x86"). A combinação de estrutura de destino e plataforma de destino é conhecida como o *contexto de destino*.
@@ -61,11 +61,11 @@ A estrutura de destino é especificada na propriedade `TargetFrameworkVersion` n
 ## <a name="target-platform"></a>Plataforma de destino
  A *plataforma* é a combinação de hardware e software que define um ambiente de tempo de execução específico. Por exemplo,
 
--   `x86` designa um sistema operacional Windows de 32 bits em execução em um processador Intel 80x86 ou equivalente.
+- `x86` designa um sistema operacional Windows de 32 bits em execução em um processador Intel 80x86 ou equivalente.
 
--   `x64` designa um sistema operacional Windows de 64 bits em execução em um processador Intel x64 ou equivalente.
+- `x64` designa um sistema operacional Windows de 64 bits em execução em um processador Intel x64 ou equivalente.
 
--   `Xbox` designa a plataforma Microsoft Xbox 360.
+- `Xbox` designa a plataforma Microsoft Xbox 360.
 
 Uma *plataforma de destino* é a plataforma específica na qual seu projeto é criado para ser executado. A plataforma de destino é especificada na propriedade de build `PlatformTarget` em um arquivo de projeto. Você pode alterar a plataforma de destino usando as páginas de propriedades do projeto ou **Gerenciador de Configurações** no IDE.
 
