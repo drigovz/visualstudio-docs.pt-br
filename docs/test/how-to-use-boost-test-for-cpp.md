@@ -7,12 +7,12 @@ ms.author: mblome
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 31de4178d5d6ab2e1798c0b881ceb0fcb6fb2366
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: ed4d024b7d10f4432c6a2326f07bb068075971f7
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56954209"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970498"
 ---
 # <a name="how-to-use-boosttest-for-c-in-visual-studio"></a>Como usar o Boost.Test para C++ no Visual Studio
 
@@ -73,6 +73,7 @@ No Visual Studio 2017 versão 15.5, não há nenhum modelo de projeto de teste o
         <VcpkgEnabled>true</VcpkgEnabled>
     </PropertyGroup>
     ```
+
    c. Salve e feche o arquivo *\*.vcxproj* e, em seguida, recarregue o projeto.
 
    d. Para abrir a **Páginas de Propriedades**, clique com o botão direito do mouse no nó do projeto e escolha **Propriedades**.

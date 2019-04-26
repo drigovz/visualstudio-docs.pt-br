@@ -10,11 +10,11 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: dbebf486680375622e6dc313a71e82f541107fc8
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366322"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62958273"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>Instalar o suporte para ciência de dados no Visual Studio
 
@@ -111,4 +111,4 @@ O SDK do Azure para Python facilita o consumo e gerenciamento de serviços do Mi
 O Azure Notebooks (atualmente em versão prévia) fornece acesso online gratuito aos blocos de anotações do Jupyter em execução na nuvem no Microsoft Azure. Como introdução, o serviço inclui blocos de anotações de exemplo em Python, em R e em F#. Visite [notebooks.azure.com](https://notebooks.azure.com/).
 
 <!--Note link on the image because this one is large -->
-[![Capturas de tela do Azure Notebooks com a introdução do exemplo de R](media/workload/data-science-workload-notebooks.png)](media/workload/data-science-workload-notebooks.png#lightbox)
+[![Capturas de tela Azure Notebooks com a introdução ao exemplo em R](media/workload/data-science-workload-notebooks.png)](media/workload/data-science-workload-notebooks.png#lightbox)

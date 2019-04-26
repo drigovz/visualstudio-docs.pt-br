@@ -25,11 +25,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2f860293669ddab035ddd1c53e09dbb9962df01
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018188"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62790129"
 ---
 # <a name="options-dialog-box-environment--general"></a>Caixa de diálogo Opções: Ambiente \> Geral
 
@@ -59,7 +59,7 @@ Esta opção habilita ou desabilita o reconhecimento de DPI (pontos por polegada
 
 ::: moniker-end
 
-**Ajustar automaticamente a experiência visual com base no desempenho do cliente**
+**Ajustar autom. a experiência visual com base no desempenho do cliente**
 
 Especifica se o Visual Studio ajusta automaticamente a experiência visual ou se você a ajusta de maneira explícita. Esse ajuste pode alterar a exibição de cores de gradientes para cores simples ou pode restringir o uso de animações em menus ou janelas pop-up.
 
@@ -74,7 +74,7 @@ Especifica se o Visual Studio ajusta automaticamente a experiência visual ou se
 
 Habilita a experiência visual completa do Visual Studio, incluindo animações e gradientes. Desmarque esta opção quando estiver usando conexões da Área de Trabalho Remota ou adaptadores de gráficos mais antigos, uma vez que esses recursos podem ter um desempenho ruim nesses casos. Essa opção fica disponível somente quando você desmarca a opção **Ajustar autom. a experiência visual com base no desempenho do cliente**.
 
-**Usar aceleração de elementos gráficos de hardware, se disponível**
+**Usar aceleração de elementos gráficos de hardware se disponível**
 
 Usa aceleração de elementos gráficos de hardware se estiver disponível, em vez de aceleração de software.
 
@@ -92,11 +92,11 @@ Personaliza o número de projetos e arquivos usados mais recentemente que aparec
 
 Exibe a barra de status. A barra de status fica localizada na parte inferior da janela do IDE e exibe informações sobre o progresso das operações em andamento.
 
-**Botão Fechar afeta apenas a janela de ferramentas ativa**
+**Botão Fechar afeta apenas a janela da ferramenta ativa**
 
 Especifica que, quando o botão **Fechar** é acionado, somente a janela da ferramenta que está em foco é fechada, e não todas as janelas de ferramentas do conjunto encaixado. Por padrão, essa opção é selecionada.
 
-**Botão Ocultar Automaticamente afeta apenas a janela de ferramentas ativa**
+**Botão Ocultar Automaticamente afeta apenas a janela da ferramenta ativa**
 
 Especifica que, quando o botão **Ocultar Automaticamente** é acionado, somente a janela da ferramenta que está em foco é ocultada automaticamente, e não todas as janelas de ferramentas do conjunto encaixado. Por padrão, essa opção não é selecionada.
 

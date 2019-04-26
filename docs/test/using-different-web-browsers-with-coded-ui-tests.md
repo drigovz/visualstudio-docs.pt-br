@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 822ce0a2f0e8632706a4a1551cc53aafb23563ed
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: 2e397d587032bb6a8c125d38c10000e6a496c2d2
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57983020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973013"
 ---
 # <a name="use-different-web-browsers-with-coded-ui-tests"></a>Usar navegadores da Web diferentes com testes de IU codificados
 
@@ -24,13 +24,13 @@ Primeiro, instale os [Componentes do Selenium para testes de IU codificados entr
 
 ## <a name="whats-supported-across-all-web-browsers"></a>O que tem suporte em todos os navegadores da Web?
 
--   [Adicionar código personalizado para recursos de controle, ](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/)como propriedades, pesquisa e waiters de reprodução.
+- [Adicionar código personalizado para recursos de controle, ](https://devblogs.microsoft.com/devops/coded-ui-test-configuring-search-properties-while-recording-on-internet-explorer/)como propriedades, pesquisa e waiters de reprodução.
 
--   Pop-ups e caixas de diálogo
+- Pop-ups e caixas de diálogo
 
--   [Executar JavaScript básico sem tipo de retorno](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
+- [Executar JavaScript básico sem tipo de retorno](https://devblogs.microsoft.com/devops/introducing-javascript-execution-on-internetexplorer-and-crossbrowser-in-coded-ui-test/)
 
--   Resiliência de pesquisa (usando smart match) e [melhorias de desempenho](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
+- Resiliência de pesquisa (usando smart match) e [melhorias de desempenho](https://devblogs.microsoft.com/devops/guidelines-on-improving-performance-of-coded-ui-test-playback/)
 
 ## <a name="why-should-i-use-coded-ui-tests-across-multiple-web-browser-types"></a>Por que eu deveria usar testes de IU codificados em vários tipos de navegadores da Web?
 
@@ -78,17 +78,17 @@ Para obter mais informações sobre como criar e usar testes de IU codificados, 
 
 Para habilitar a depuração em seu aplicativo Web, conclua as seguintes opções de configuração:
 
-1.  Habilitar Apenas Meu Código:
+1. Habilitar Apenas Meu Código:
 
-    1.  No menu **Ferramentas**, escolha **Opções** e, então, **Depuração**.
+    1. No menu **Ferramentas**, escolha **Opções** e, então, **Depuração**.
 
-    2.  Selecione **Habilitar Apenas Meu Código**.
+    2. Selecione **Habilitar Apenas Meu Código**.
 
-2.  Desabilitar exceções CLR:
+2. Desabilitar exceções CLR:
 
-    1.  No menu **Depurar**, escolha **Exceções**.
+    1. No menu **Depurar**, escolha **Exceções**.
 
-    2.  Para **exceções de Common Language Runtime**, desmarque **Sem tratamento do usuário**.
+    2. Para **exceções de Common Language Runtime**, desmarque **Sem tratamento do usuário**.
 
 Se não vir a opção para alterar `BrowserWindow.CurrentBrowser` no teste de IU codificado, talvez você esteja usando uma versão do Visual Studio sem suporte para testes de IU codificados usando vários navegadores da Web. Para usar tais testes de IU codificados, é necessário usar a edição Visual Studio Enterprise.
 

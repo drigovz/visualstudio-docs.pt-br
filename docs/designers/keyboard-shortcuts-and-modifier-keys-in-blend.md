@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9575effa2740620c585e1dddc64bb67a1d919d2f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2689f0d96189b496e147a074a38313c164b453d1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844471"
 ---
 # <a name="keyboard-shortcuts-and-modifier-keys-in-blend"></a>Atalhos de teclado e teclas modificadoras no Blend
 
@@ -37,8 +37,8 @@ Para obter mais informações sobre acessibilidade e recursos, consulte [Acessib
 
 Alguns atalhos de teclado não têm itens de menu associados, o que significa que você não pode usar a interface do usuário do [!INCLUDE[blend_subs](../debugger/includes/blend_subs_md.md)] para descobri-los. Os tópicos a seguir listam atalhos que modificam o comportamento de ferramentas ou que modificam uma ação, como redimensionar um objeto:
 
--   [Teclas modificadoras da prancheta](../designers/artboard-modifier-keys-in-blend.md)
+- [Teclas modificadoras da prancheta](../designers/artboard-modifier-keys-in-blend.md)
 
--   [Teclas modificadoras da ferramenta Caneta](../designers/pen-tool-modifier-keys-in-blend.md)
+- [Teclas modificadoras da ferramenta Caneta](../designers/pen-tool-modifier-keys-in-blend.md)
 
--   [Teclas modificadoras da ferramenta Seleção Direta](../designers/direct-selection-tool-modifier-keys-in-blend.md)
+- [Teclas modificadoras da ferramenta Seleção Direta](../designers/direct-selection-tool-modifier-keys-in-blend.md)

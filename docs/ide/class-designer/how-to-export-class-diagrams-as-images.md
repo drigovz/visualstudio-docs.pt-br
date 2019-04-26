@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 06c0b46c1c9fbb8aef5a2e31e42a02fe6a0db494
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 3fb8f735478da16989830a1a68c239b9a2a98496
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910528"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62975197"
 ---
 # <a name="how-to-export-class-diagrams-as-images"></a>Como: Exportar diagramas de classe como imagens
 
@@ -25,15 +25,15 @@ Para exportar um diagrama de classe que você criou do código em um projeto, sa
 
 ## <a name="export-a-diagram"></a>Exportar um diagrama
 
-1.  Abra seu arquivo de diagrama de classe (*.cd*).
+1. Abra seu arquivo de diagrama de classe (*.cd*).
 
-2.  No menu **Diagrama de Classe** ou no menu de atalho da superfície do diagrama, escolha **Exportar Diagrama como Imagem**.
+2. No menu **Diagrama de Classe** ou no menu de atalho da superfície do diagrama, escolha **Exportar Diagrama como Imagem**.
 
-3.  Selecione um diagrama.
+3. Selecione um diagrama.
 
-4.  Selecione o formato que você deseja.
+4. Selecione o formato que você deseja.
 
-5.  Escolha **Exportar** para concluir a exportação.
+5. Escolha **Exportar** para concluir a exportação.
 
 Para atualizar automaticamente as imagens exportadas vinculadas de outros documentos, exporte o diagrama novamente no Visual Studio.
 

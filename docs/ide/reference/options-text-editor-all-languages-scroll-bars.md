@@ -33,11 +33,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a753574e883872780446929f7c2349b0d726c71a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55925950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817578"
 ---
 # <a name="options-text-editor-all-languages-scroll-bars"></a>Opções, Editor de Texto, Todas as Linguagens, Barras de Rolagem
 Essa caixa de diálogo permite alterar o comportamento padrão da barra de rolagem do editor de código. Para exibir essas opções, selecione **Opções** do menu **Ferramentas**. Na pasta **Editor de Texto**, expanda a subpasta **Todas as Linguagens** e, em seguida, escolha **Barras de Rolagem**.

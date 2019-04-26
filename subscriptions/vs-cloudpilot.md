@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Saiba mais sobre o benefício do CloudPilot disponível nas assinaturas do Visual Studio selecionadas
 searchscope: VS Subscription
-ms.openlocfilehash: 5368bc386b7ee4ff1fa709fcc038ddb7a7a0c13d
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: f251073337c862e0d96fb3550b163da29ce8f42e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56842553"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62948357"
 ---
 # <a name="the-cloudpilot-benefit-in-visual-studio-subscriptions"></a>O benefício CloudPilot nas assinaturas do Visual Studio
 
@@ -44,18 +44,17 @@ O CloudPilot, da UnifyCloud, foi projetado para ajudar os desenvolvedores a move
    > [!NOTE]
    > As ativações do benefício do CloudPilot são limitadas a dez por organização, resgatadas em qualquer combinação de assinaturas do Visual Studio Enterprise ou do Visual Studio Professional.  Se as dez ativações da sua organização já tiverem sido consumidas, não será possível ativar o benefício do CloudPilot e você receberá um email da UnifyCloud com informações adicionais.
 
- 0. Em seguida, você verá uma página de produto projetada para que você se familiarize com o CloudPilot.  Clique em **Navegar para o CloudPilot** no canto superior direito para ir para o portal do CloudPilot.
+0. Em seguida, você verá uma página de produto projetada para que você se familiarize com o CloudPilot.  Clique em **Navegar para o CloudPilot** no canto superior direito para ir para o portal do CloudPilot.
 
     > [!div class="mx-imgBorder"]
     > ![Página de produto do CloudPilot](_img/vs-cloudpilot/vs-cloudpilot-navigate.png)
 
-0.  É só isso!  Você verá o portal do CloudPilot e estará pronto para começar a usar sua assinatura do CloudPilot para mover os aplicativos para o Microsoft Azure.
+0. É só isso!  Você verá o portal do CloudPilot e estará pronto para começar a usar sua assinatura do CloudPilot para mover os aplicativos para o Microsoft Azure.
 
-0.  Assim que a conta for criada com êxito, você receberá um email do suporte de VSS da UnifyCloud confirmando a criação bem-sucedida de sua conta.
+0. Assim que a conta for criada com êxito, você receberá um email do suporte de VSS da UnifyCloud confirmando a criação bem-sucedida de sua conta.
 
     > [!div class="mx-imgBorder"]
     > ![Email de confirmação do CloudPilot](_img/vs-cloudpilot/vs-cloudpilot-email.png)
-
 
 ## <a name="eligibility"></a>Qualificação
 
@@ -69,25 +68,21 @@ O CloudPilot, da UnifyCloud, foi projetado para ajudar os desenvolvedores a move
 | Visual Studio Enterprise (Standard)  | NFR<sup>1</sup> |Não disponível  | N/D |
 | Visual Studio Enterprise, Visual Studio Professional (nuvem mensal) | Azure | Não disponível | N/D |
 
-
-
 <sup>1</sup> *Inclui:  NFR (Proibida a revenda), FTE, MVP (Most Valuable Professional), RD (Diretor Regional), MPN (Microsoft Partner Network), VSIP (Visual Studio Industry Partner), Microsoft Certified Trainer, BizSpark e Imagine*
-
 
 > [!NOTE]
 > A Microsoft não oferece mais assinaturas anuais do Visual Studio Professional e do Visual Studio Enterprise nas Assinaturas na Nuvem. Não haverá nenhuma alteração na experiência dos clientes existentes nem na capacidade de renovar, aumentar, diminuir ou cancelar suas assinaturas. Os novos clientes são incentivados a acessar [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/) para explorar diferentes opções de compra do Visual Studio.
 
-
 Não tem certeza de qual assinatura você está usando?  Conecte-se ao [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs) para ver todas as assinaturas atribuídas ao seu endereço de email. Se não vir todas as suas assinaturas, talvez você tenha uma ou mais atribuídas a outro endereço de email.  Você precisará entrar com esse endereço de email para ver as assinaturas.
 
 ## <a name="support-resources"></a>Recursos de suporte
--  Precisa de ajuda para usar o CloudPilot?  Confira estes recursos:
+- Precisa de ajuda para usar o CloudPilot?  Confira estes recursos:
     - [Entre em contato com UnifyCloud](https://www.unifycloud.com/contacts/) para consultas sobre produtos UnifyCloud.
     - [Manual do usuário do CloudPilot](https://www.cloudatlasinc.com/cloudpilot/doc/CloudPilot-User-Manual.pdf )
     - [Enviar uma solicitação de suporte](https://support.datacamp.com/hc/requests/new)
 
--  Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
--  Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
+- Para obter assistência com vendas, assinaturas, contas e cobrança para Assinaturas do Visual Studio, entre em contato com o [Suporte a Assinaturas](https://visualstudio.microsoft.com/subscriptions/support/) do Visual Studio.
+- Tem alguma pergunta sobre o IDE do Visual Studio, o Azure DevOps Services ou outros produtos ou serviços do Visual Studio?  Acesse o [Suporte do Visual Studio](https://visualstudio.microsoft.com/support/).
 
 ## <a name="next-steps"></a>Próximas etapas
 

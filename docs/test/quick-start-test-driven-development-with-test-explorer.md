@@ -7,12 +7,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: 2ba4b896a5cea964a4df6392a7c1963f8df00d31
-ms.sourcegitcommit: 489aca71046fb6e4aafd0a4509cd7dc149d707b1
+ms.openlocfilehash: cd80739f887a42c62af55bc06cfb65704f4755ef
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/25/2019
-ms.locfileid: "58415597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002168"
 ---
 # <a name="quickstart-test-driven-development-with-test-explorer"></a>Início Rápido: Desenvolvimento orientado por testes com o Gerenciador de Testes
 
@@ -57,7 +57,6 @@ O Gerenciador de Testes substitui as janelas de teste de unidade encontradas em 
 > [!IMPORTANT]
 > Os resultados que são exibidos são para as execuções mais recentes. A barra colorida de resultados mostra somente os resultados dos testes que foram executados. Por exemplo, se você executar vários testes e alguns deles falharem e executar apenas os testes com sucesso, a barra de resultados mostrará todos na cor verde.
 
-
 > [!NOTE]
 > Se nenhum teste for exibido, certifique-se de que você tenha instalado um adaptador para conectar o Gerenciador de Testes a estruturas de teste que você está usando. Para saber mais, consulte [Instalar estruturas de teste de unidade de terceiros](install-third-party-unit-test-frameworks.md).
 
@@ -95,15 +94,15 @@ Este passo a passo demonstra como desenvolver um método testado em C# usando a 
 
 4. Gere o método do teste.
 
-   1.  Coloque o cursor em `Rooter` e, em seguida, no menu de atalho, escolha **Gerar** > **Novo Tipo**.
+   1. Coloque o cursor em `Rooter` e, em seguida, no menu de atalho, escolha **Gerar** > **Novo Tipo**.
 
-   2.  Na caixa de diálogo **Gerar Novo Tipo**, defina **Projeto** para o projeto de biblioteca de classes. Neste exemplo, é `MyMath`.
+   2. Na caixa de diálogo **Gerar Novo Tipo**, defina **Projeto** para o projeto de biblioteca de classes. Neste exemplo, é `MyMath`.
 
-   3.  Coloque o cursor em `SquareRoot` e, em seguida, no menu de atalho, escolha **Gerar** > **Stub do Método**.
+   3. Coloque o cursor em `SquareRoot` e, em seguida, no menu de atalho, escolha **Gerar** > **Stub do Método**.
 
 5. Execute o teste de unidade.
 
-   1.  No menu **Teste**, escolha **Executar Testes de Unidade** > **Todos os Testes**.
+   1. No menu **Teste**, escolha **Executar Testes de Unidade** > **Todos os Testes**.
 
         A solução é criada e executada.
 
@@ -123,7 +122,7 @@ Este passo a passo demonstra como desenvolver um método testado em C# usando a 
 
 #### <a name="after-every-change-make-all-the-tests-pass"></a>Após cada alteração, faça todos os testes serem aprovados
 
-1.  Em *MyMath\Rooter.cs*, melhore o código de `SquareRoot`:
+1. Em *MyMath\Rooter.cs*, melhore o código de `SquareRoot`:
 
     ```csharp
     public double SquareRoot(double input)
@@ -132,7 +131,7 @@ Este passo a passo demonstra como desenvolver um método testado em C# usando a 
      }
     ```
 
-2.  No Gerenciador de Testes, escolha **Executar Todos**.
+2. No Gerenciador de Testes, escolha **Executar Todos**.
 
      Compila o código e o teste é executado.
 
@@ -142,7 +141,7 @@ Este passo a passo demonstra como desenvolver um método testado em C# usando a 
 
 #### <a name="add-tests-to-extend-the-range-of-inputs"></a>Adicionar testes para estender o intervalo de entradas
 
-1.  Para aumentar sua confiança que seu código funciona em todos os casos, adicione os testes que tente uma variedade maior de valores de entrada.
+1. Para aumentar sua confiança que seu código funciona em todos os casos, adicione os testes que tente uma variedade maior de valores de entrada.
 
     > [!TIP]
     > Evite alterar testes existentes que foram aprovados. Em vez disso, adicione novos testes. Altere os testes existentes somente quando os requisitos de usuário forem alterados. Essa política ajuda a garantir que você não perca a funcionalidade existente enquanto trabalha para estender o código.
@@ -173,13 +172,13 @@ Este passo a passo demonstra como desenvolver um método testado em C# usando a 
     }
     ```
 
-2.  No Gerenciador de Testes, escolha **Executar Todos**.
+2. No Gerenciador de Testes, escolha **Executar Todos**.
 
      O novo teste falha, embora o primeiro teste ainda seja aprovado.
 
      Para localizar o ponto de falha, selecione o teste com falha e, em seguida, na parte inferior do Gerenciador de Testes, selecione o item superior do **Rastreamento de pilha**.
 
-3.  Inspecione o método sob teste para ver o que pode estar errado. Na classe `MyMath.Rooter`, reescreva o código:
+3. Inspecione o método sob teste para ver o que pode estar errado. Na classe `MyMath.Rooter`, reescreva o código:
 
     ```csharp
     public double SquareRoot(double input)
@@ -195,13 +194,13 @@ Este passo a passo demonstra como desenvolver um método testado em C# usando a 
     }
     ```
 
-4.  No Gerenciador de Testes, escolha **Executar Todos**.
+4. No Gerenciador de Testes, escolha **Executar Todos**.
 
      Ambos os testes agora foram aprovados.
 
 #### <a name="add-tests-for-exceptional-cases"></a>Adicionar testes para casos excepcionais
 
-1.  Adicione um teste para entradas negativas:
+1. Adicione um teste para entradas negativas:
 
     ```csharp
     [TestMethod]
@@ -220,15 +219,15 @@ Este passo a passo demonstra como desenvolver um método testado em C# usando a 
      }
     ```
 
-2.  No Gerenciador de Testes, escolha **Executar Todos**.
+2. No Gerenciador de Testes, escolha **Executar Todos**.
 
      O método sob teste é executado em loop e deve ser cancelado manualmente.
 
-3.  Escolha **Cancelar**.
+3. Escolha **Cancelar**.
 
      O teste para após 10 segundos.
 
-4.  Corrija o código do método:
+4. Corrija o código do método:
 
     ```csharp
 
@@ -241,13 +240,13 @@ Este passo a passo demonstra como desenvolver um método testado em C# usando a 
     ...
     ```
 
-5.  No Gerenciador de Testes, escolha **Executar Todos**.
+5. No Gerenciador de Testes, escolha **Executar Todos**.
 
      Dessa vez os testes são aprovados.
 
 #### <a name="refactor-without-changing-tests"></a>Faça refatoração sem alterar os testes
 
-1.  Simplifique o código, mas não altere os testes.
+1. Simplifique o código, mas não altere os testes.
 
     > [!TIP]
     > Uma *refatoração* é uma alteração que é destinada para fazer o código funcionar melhor ou para tornar o código mais fácil de entender. Não deve alterar o comportamento do código e, portanto, os testes não são alterados.
@@ -276,7 +275,7 @@ Este passo a passo demonstra como desenvolver um método testado em C# usando a 
     }
     ```
 
-2.  Escolha **Executar Todos**.
+2. Escolha **Executar Todos**.
 
      Todos os testes ainda são aprovados.
 

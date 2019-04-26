@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0da4ea0080bfbfb3e4192902f63f50a640b14c8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56640942"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62995375"
 ---
 # <a name="instrumentation-method-data-views"></a>Exibições de dados do método de instrumentação
 Esta seção contém informações de referência sobre as exibições e os relatórios dos arquivos de dados do criador de perfil que foram gerados usando o método de instrumentação.

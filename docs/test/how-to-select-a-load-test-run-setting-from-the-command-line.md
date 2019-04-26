@@ -9,12 +9,12 @@ ms.assetid: 175d1d58-f09a-4449-b132-a29a394a7c8e
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e022eec099682581f244ad426500a512c63035d4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 466ea9a7e0b877af55219be497eefde963e80853
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949845"
 ---
 # <a name="how-to-select-a-load-test-run-setting-to-use-from-the-command-line"></a>Como: Selecionar uma configuração de execução de teste de carga a ser usada por meio da linha de comando
 
@@ -26,11 +26,11 @@ Se contiver apenas uma configuração de execução, o teste de carga será semp
 
 ## <a name="to-change-the-run-setting-from-the-command-line"></a>Para alterar a configuração de execução na linha de comando
 
-1.  Se quiser usar configurações de execução diferentes na linha de comando para se beneficiar da estratégia do parâmetro de contexto, use o seguinte comando:
+1. Se quiser usar configurações de execução diferentes na linha de comando para se beneficiar da estratégia do parâmetro de contexto, use o seguinte comando:
 
     `Set Test.UseRunSetting= CorporateStagingWebServer`
 
-2.  Execute o teste de carga usando mstest:
+2. Execute o teste de carga usando mstest:
 
     `mstest /testcontainer:loadtest1.loadtest`
 

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f254c29f2951484869b814f13d1a346080fab07
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6ea7cae6dd709e407a5c1a9832092586d217689b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55911527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824224"
 ---
 # <a name="how-to-change-the-build-output-directory"></a>Como: Alterar o diretório de saída do build
 
@@ -27,11 +27,11 @@ Você pode especificar o local de saída por configuração (para depuração, v
 
 ## <a name="change-the-build-output-directory"></a>Alterar o diretório de saída do build
 
-1.  Na barra de menus, escolha **Projeto** > **\<Appname> Propriedades**. Clique também com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecione **Propriedades**.
+1. Na barra de menus, escolha **Projeto** > **\<Appname> Propriedades**. Clique também com o botão direito do mouse no nó do projeto no **Gerenciador de Soluções** e selecione **Propriedades**.
 
-2.  Se você tiver um projeto do Visual Basic, selecione a guia **Compilar**. Se você tiver um projeto em C#, selecione a guia **Build**. Se você tiver um projeto C++ ou um projeto de JavaScript, selecione a guia **Geral**.
+2. Se você tiver um projeto do Visual Basic, selecione a guia **Compilar**. Se você tiver um projeto em C#, selecione a guia **Build**. Se você tiver um projeto C++ ou um projeto de JavaScript, selecione a guia **Geral**.
 
-3.  Na lista suspensa de configuração na parte superior, escolha a configuração cujo local do arquivo de saída você deseja alterar (depuração, versão ou todos).
+3. Na lista suspensa de configuração na parte superior, escolha a configuração cujo local do arquivo de saída você deseja alterar (depuração, versão ou todos).
 
      Localize a entrada do caminho de saída (**Caminho de saída do build** no Visual Basic, **Diretório de saída** no Visual C++, **Caminho de saída** no JavaScript e C#). Especifique um novo diretório de saída de build em relação ao diretório do projeto.
 

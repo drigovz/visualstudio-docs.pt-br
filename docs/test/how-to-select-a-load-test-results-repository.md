@@ -15,12 +15,12 @@ ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d1b324eb2122559eb45a22bc463458d4f6661ef
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 602327d49733077e3c180c0e192027be6374afe6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55941069"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950015"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>Como: Selecionar um repositório de resultados do teste de carga
 
@@ -32,26 +32,26 @@ Os resultados do teste de seus agentes ou do seu computador local podem ser salv
 
 ## <a name="identify-a-results-store-for-load-test-data"></a>Identificar um repositório de resultados para dados de testes de carga
 
-1.  No **Gerenciador de Soluções**, abra o arquivo de teste de carga.
+1. No **Gerenciador de Soluções**, abra o arquivo de teste de carga.
 
-2.  Na barra de ferramentas **Teste de Carga**, selecione **Gerenciar Controladores de Teste**. A caixa de diálogo **Gerenciar Controlador de Teste** é exibida. Se você estiver usando um agente remotamente, selecione um controlador.
+2. Na barra de ferramentas **Teste de Carga**, selecione **Gerenciar Controladores de Teste**. A caixa de diálogo **Gerenciar Controlador de Teste** é exibida. Se você estiver usando um agente remotamente, selecione um controlador.
 
      ![Propriedades de conexão de repositório de resultados de teste de carga](../test/media/loadtestconnectionproperties.png) Propriedades de conexão de repositório de resultados de teste de carga
 
-3.  No **Repositório de resultados do teste de carga**, clique em **(…)** para exibir a caixa de diálogo **Propriedades da Conexão**.
+3. No **Repositório de resultados do teste de carga**, clique em **(…)** para exibir a caixa de diálogo **Propriedades da Conexão**.
 
-4.  Em **Nome do Servidor**, digite o nome do servidor em que você executou os scripts `LoadTest`.
+4. Em **Nome do Servidor**, digite o nome do servidor em que você executou os scripts `LoadTest`.
 
     > [!TIP]
     > Se estiver usando o SQL Express no computador local como repositório de testes de carga, digite \<nomedocomputador>\sqlexpress (for example, **MyComputer\sqlexpress**).
 
-5.  Em **Fazer logon no servidor**, você pode escolher **Usar Autenticação do Windows**. Você pode especificar o nome de usuário e a senha, mas se fizer isso, deverá selecionar a opção **Salvar minha senha**.
+5. Em **Fazer logon no servidor**, você pode escolher **Usar Autenticação do Windows**. Você pode especificar o nome de usuário e a senha, mas se fizer isso, deverá selecionar a opção **Salvar minha senha**.
 
-6.  Em **Conectar a um banco de dados**, escolha **Selecionar ou digitar um nome de banco de dados**. Selecione **LoadTest** na caixa de listagem suspensa.
+6. Em **Conectar a um banco de dados**, escolha **Selecionar ou digitar um nome de banco de dados**. Selecione **LoadTest** na caixa de listagem suspensa.
 
-7.  Escolha **OK**. Você pode testar a conexão escolhendo **Testar Conexão**.
+7. Escolha **OK**. Você pode testar a conexão escolhendo **Testar Conexão**.
 
-8.  Escolha **Fechar** na caixa de diálogo **Gerenciar o controlador de teste**.
+8. Escolha **Fechar** na caixa de diálogo **Gerenciar o controlador de teste**.
 
 ## <a name="see-also"></a>Consulte também
 

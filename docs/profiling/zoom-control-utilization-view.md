@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7c7f50a3117daeee0ec1727adbcdcc5ca710be36
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960101"
 ---
 # <a name="zoom-control-utilization-view"></a>Controle de zoom (exibição de utilização)
 O controle de zoom ajuda você a ampliar o gráfico de utilização da CPU para focar áreas de interesse específico. Esse controle amplia o centro da exibição. Portanto, você deve centralizar a área de interesse antes de ampliá-la.

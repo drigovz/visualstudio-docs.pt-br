@@ -7,15 +7,14 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Alugue o Visual Studio Professional ou o Visual Studio Enterprise mês a mês ou anualmente, sem nenhum contrato de longo prazo.
 searchscope: VS Subscription
-ms.openlocfilehash: eb9d7034a18d8be6fd4c20ddde1c3708cc206fa0
-ms.sourcegitcommit: cea6187005f8a0cdf44e866a1534a4cf5356208c
+ms.openlocfilehash: 0f20db92099dfadadf710e9f3da24846b10406ac
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/27/2019
-ms.locfileid: "56953415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978811"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>Comprar assinaturas de nuvem do Visual Studio Professional e do Visual Studio Enterprise
-
 
 Você pode comprar [assinaturas do Visual Studio Professional e do Visual Studio Enterprise](https://visualstudio.microsoft.com/subscriptions/) no [Visual Studio Marketplace](https://marketplace.visualstudio.com). Elas são chamadas de **"assinaturas de nuvem"**.
 
@@ -65,12 +64,12 @@ Se você comprou mais de uma assinatura, acesse o [Portal de administração de 
 
 ## <a name="manage-subscriptions"></a>Cancelar as renovações das assinaturas de nuvem que você comprou
 
-*   Para alterar o número de assinaturas compradas:
+* Para alterar o número de assinaturas compradas:
 
 > [!div class="mx-imgBorder"]
 > ![Alterar assinaturas](_img/buy-vs-subscriptions/manage-subscriptions.png)
 
-*   Para cancelar essas assinaturas, reduza o número de assinaturas para zero (0). Elas não serão renovadas no início do próximo período de cobrança (no primeiro dia do próximo mês para assinaturas de nuvem mensais e 12 meses depois para assinaturas de nuvem anuais).
+* Para cancelar essas assinaturas, reduza o número de assinaturas para zero (0). Elas não serão renovadas no início do próximo período de cobrança (no primeiro dia do próximo mês para assinaturas de nuvem mensais e 12 meses depois para assinaturas de nuvem anuais).
 
 ## <a name="buy-cloud-subscriptions-now"></a>Comprar assinaturas de nuvem agora
 

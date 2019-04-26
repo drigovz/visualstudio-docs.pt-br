@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 07/13/2017
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 7544d3aa72bb981a35b3c7fc63db3f397f8f26dd
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: ae4d824a4746889447650efdb4dada061b7c712b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62933197"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introdução ao ASP.NET Core
 
@@ -63,6 +63,7 @@ public static void Main(string[] args)
     host.Run();
 }
 ```
+
 Um aplicativo ASP.NET Core cria um servidor Web em seu método principal configurando e iniciando um host por meio de uma instância de [`WebHostBuilder`](/aspnet/core/fundamentals/hosting). Este construtor fornece métodos para permitir que o host seja configurado. As seguintes configurações são usadas no aplicativo modelo:
 
 * `UseKestrel`: especifica que o servidor Kestrel será usado pelo aplicativo.
@@ -104,8 +105,8 @@ public class Startup
 
 Essa classe Startup sempre deve cumprir as seguintes regras:
 
- - Ele sempre deve ser pública
- - Ela deve conter os dois métodos públicos: `ConfigureServices` e `Configure`
+- Ele sempre deve ser pública
+- Ela deve conter os dois métodos públicos: `ConfigureServices` e `Configure`
 
 O método `ConfigureServices` define os serviços que serão usados pelo seu aplicativo.
 
@@ -218,7 +219,6 @@ Para adicionar um controlador, faça o seguinte:
 9. Tente navegar para `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy` (substituindo `xxxx` pela porta correta), você deverá ver o seguinte:
 
     ![Executando o aplicativo no navegador com argumentos](media/asp-net-core-image10.png)
-
 
 ## <a name="troubleshooting"></a>Solução de problemas
 

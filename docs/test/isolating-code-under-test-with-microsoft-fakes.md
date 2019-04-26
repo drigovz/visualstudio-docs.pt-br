@@ -10,12 +10,12 @@ author: gewarren
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 1d3ec88a8abc0a6fcac47043a1b27d27f5b3e6f4
-ms.sourcegitcommit: 752f03977f45169585e407ef719450dbe219b7fc
+ms.openlocfilehash: 89d072c7f9643c5991ec098f87d7ec35a295bbe1
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/15/2019
-ms.locfileid: "56316451"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62971298"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>Isolar o código em teste com elementos fictícios da Microsoft
 
@@ -23,16 +23,16 @@ O Microsoft Fakes ajuda a isolar o código em teste substituindo outras partes d
 
 O Fakes vem em duas versões:
 
--   Um [stub](#get-started-with-stubs) substitui uma classe por um pequeno substituto que implementa a mesma interface.  Para usar stubs, você precisa criar seu aplicativo de modo que cada componente dependa apenas das interfaces, e não de outros componentes. (Por “componente”, queremos dizer uma classe ou um grupo de classes que são criadas e atualizadas em conjunto e normalmente estão contidas em um assembly.)
+- Um [stub](#get-started-with-stubs) substitui uma classe por um pequeno substituto que implementa a mesma interface.  Para usar stubs, você precisa criar seu aplicativo de modo que cada componente dependa apenas das interfaces, e não de outros componentes. (Por “componente”, queremos dizer uma classe ou um grupo de classes que são criadas e atualizadas em conjunto e normalmente estão contidas em um assembly.)
 
--   Um [shim](#get-started-with-shims) modifica o código compilado do aplicativo no tempo de execução para que, em vez de fazer uma chamada de método específica, ele execute o código shim que fornecido pelo teste. Os shims podem ser usados para substituir chamadas para assemblies que você não pode modificar, como assemblies do .NET.
+- Um [shim](#get-started-with-shims) modifica o código compilado do aplicativo no tempo de execução para que, em vez de fazer uma chamada de método específica, ele execute o código shim que fornecido pelo teste. Os shims podem ser usados para substituir chamadas para assemblies que você não pode modificar, como assemblies do .NET.
 
 ![As falsificações substituem outros componentes](../test/media/fakes-2.png)
 
 **Requisitos**
 
--   Visual Studio Enterprise
--   Um projeto do .NET Framework
+- Visual Studio Enterprise
+- Um projeto do .NET Framework
 
 > [!NOTE]
 > - Projetos do .NET Standard não têm suporte.
@@ -57,10 +57,10 @@ Outras considerações são:
 
 Em geral, recomendamos que você use tipos de stub para isolar das dependências dentro de sua base de código. É possível fazer isso ocultando os componentes atrás das interfaces. Os tipos de shims podem ser usados para isolar de componentes de terceiros que não oferecem uma API testável.
 
-##  <a name="get-started-with-stubs"></a>Introdução aos stubs
+## <a name="get-started-with-stubs"></a>Introdução aos stubs
 Para obter uma descrição mais detalhada, confira [Usar stubs para isolar partes do aplicativo para teste de unidade](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
-1.  **Injetar interfaces**
+1. **Injetar interfaces**
 
      Para usar stubs, você precisa escrever o código que deseja testar de forma que ele não mencione explicitamente as classes em outro componente de seu aplicativo. Por “componente”, queremos dizer uma classe ou um grupo de classes que são criadas e atualizadas em conjunto e normalmente estão contidas em um projeto do Visual Studio. As variáveis e os parâmetros devem ser declarados usando interfaces e instâncias de outros componentes que devem ser passados ou criados usando uma fábrica. Por exemplo, se StockFeed é uma classe em outro componente do aplicativo, ele é considerado incorreto:
 
@@ -81,15 +81,15 @@ Para obter uma descrição mais detalhada, confira [Usar stubs para isolar parte
 
     ```
 
-2.  **Adicionar Assembly do Fakes**
+2. **Adicionar Assembly do Fakes**
 
-    1.  No **Gerenciador de Soluções**, expanda a lista de referências do projeto de teste. Se estiver trabalhando no Visual Basic, escolha **Mostrar Todos os Arquivos** para ver a lista de referências.
+    1. No **Gerenciador de Soluções**, expanda a lista de referências do projeto de teste. Se estiver trabalhando no Visual Basic, escolha **Mostrar Todos os Arquivos** para ver a lista de referências.
 
-    2.  Selecione a referência ao assembly em que a interface (por exemplo, IStockFeed) é definida. No menu de atalho dessa referência, escolha **Adicionar Assembly do Fakes**.
+    2. Selecione a referência ao assembly em que a interface (por exemplo, IStockFeed) é definida. No menu de atalho dessa referência, escolha **Adicionar Assembly do Fakes**.
 
-    3.  Recompile a solução.
+    3. Recompile a solução.
 
-3.  Em seus testes, construa instâncias do stub e forneça o código para seus métodos:
+3. Em seus testes, construa instâncias do stub e forneça o código para seus métodos:
 
     ```csharp
     [TestClass]
@@ -151,7 +151,7 @@ Para obter uma descrição mais detalhada, confira [Usar stubs para isolar parte
 
     Os stubs também são gerados para getters e setters de propriedades, para eventos e métodos genéricos. Para obter mais informações, confira [Usar stubs para isolar partes do aplicativo para teste de unidade](../test/using-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing.md).
 
-##  <a name="get-started-with-shims"></a>Introdução aos shims
+## <a name="get-started-with-shims"></a>Introdução aos shims
 (Para obter uma descrição mais detalhada, confira [Usar shims para isolar o aplicativo de outros assemblies para o teste de unidade](../test/using-shims-to-isolate-your-application-from-other-assemblies-for-unit-testing.md).)
 
 Suponhamos que seu componente contenha chamadas para `DateTime.Now`:
@@ -168,13 +168,13 @@ Durante os testes, você gostaria de corrigir a propriedade `Now`, porque a vers
 
 Para usar shims, você não precisa modificar o código do aplicativo ou escrevê-lo de uma maneira específica.
 
-1.  **Adicionar Assembly do Fakes**
+1. **Adicionar Assembly do Fakes**
 
      No **Gerenciador de Soluções**, abra as referências do projeto de teste de unidade e selecione a referência ao assembly que contém o método que você deseja tornar fictício. Nesse exemplo, a classe `DateTime` está em *System.dll*.  Para ver as referências em um projeto do Visual Basic, escolha **Mostrar Todos os Arquivos**.
 
      Escolha **Adicionar Assembly do Fakes**.
 
-2.  **Inserir um shim em um ShimsContext**
+2. **Inserir um shim em um ShimsContext**
 
     ```csharp
     [TestClass]

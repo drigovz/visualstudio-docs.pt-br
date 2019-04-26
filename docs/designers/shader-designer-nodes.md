@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d5e27f6cc244580ac4f3c72724dd6fdb6d09999
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 7bd7282a0826f10a0438f95164600419e0784a2a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844223"
 ---
 # <a name="shader-designer-nodes"></a>Nós do Designer de Sombreador
 Os artigos nesta seção da documentação contêm informações sobre os vários nós do Designer de Sombreador que você pode usar para criar efeitos gráficos.
@@ -27,15 +27,15 @@ Os artigos nesta seção da documentação contêm informações sobre os vário
 ### <a name="promotion-of-inputs"></a>Promoção de entradas
  Como o Designer de Sombreador, em última análise, deve gerar código-fonte HLSL para que o efeito possa ser usado em um jogo ou aplicativo, os nós do Designer de Sombreador são sujeito às regras da promoção de tipos que o HLSL usa. Como o hardware gráfico opera principalmente em valores de ponto flutuante, a promoção de tipos entre tipos diferentes — por exemplo, de `int` para `float` ou de `float` para `double` — é incomum. Em vez disso, como o hardware gráfico usa a mesma operação em várias partes de informações ao mesmo tempo, um tipo diferente de promoção pode ocorrer, no qual o mais curto de um número de entradas é aumentado para corresponder ao tamanho da entrada maior. A forma como o aumento é feito depende do tipo de entrada e também da própria operação:
 
--   **Se o menor tipo for um valor escalar, então:**
+- **Se o menor tipo for um valor escalar, então:**
 
      O valor escalar será replicado em um vetor que é igual à entrada maior. Por exemplo, a entrada escalar 5.0 se torna o vetor (5.0, 5.0, 5.0) quando a entrada maior da operação for um vetor de três elementos, independentemente de qual é a operação.
 
--   **Se o menor tipo for um vetor e a operação for de multiplicação (\*, /, % e assim por diante), então:**
+- **Se o menor tipo for um vetor e a operação for de multiplicação (\*, /, % e assim por diante), então:**
 
      O valor do vetor será copiado nos elementos à esquerda de um vetor que é igual à entrada maior e os elementos à direita serão definidos como 1.0. Por exemplo, a entrada de vetor (5.0, 5.0) se torna o vetor (5.0, 5.0, 1.0, 1.0) quando ele é multiplicado por um vetor de quatro elementos. Isso preserva o terceiro e o quarto elemento da saída usando a identidade de multiplicação, 1.0.
 
--   **Se o menor tipo for um vetor e a operação for aditiva (+,- e assim por diante), então:**
+- **Se o menor tipo for um vetor e a operação for aditiva (+,- e assim por diante), então:**
 
      O valor do vetor será copiado nos elementos à esquerda de um vetor que é igual à entrada maior e os elementos à direita serão definidos como 0.0. Por exemplo, a entrada de vetor (5.0, 5.0) se torna o vetor (5.0, 5.0, 0.0, 0.0) quando ele é adicionado a um vetor de quatro elementos. Isso preserva o terceiro e o quarto elemento da saída usando a identidade de adição, 0.0.
 

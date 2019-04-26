@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a4aa53efb690faa0d31a35b9b19d0d5ee9781352
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 803129ea758a6648c0caa8303e1d191c0e8a74f5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55939996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62844378"
 ---
 # <a name="how-to-export-a-texture-for-use-with-direct2d-or-javascipt-apps"></a>Como: Exportar uma textura para ser usada com aplicativos Direct2D ou Javascript
 
@@ -21,31 +21,31 @@ O Pipeline de conteúdo de imagem pode gerar texturas que são compatíveis com 
 
 Este documento demonstra essas atividades:
 
--   Configurando a imagem de origem a ser processada pelo Pipeline de conteúdo da imagem.
+- Configurando a imagem de origem a ser processada pelo Pipeline de conteúdo da imagem.
 
--   Configurando o Pipeline de conteúdo de imagem para gerar uma textura que possa ser usada em um aplicativo Direct2D ou JavaScript.
+- Configurando o Pipeline de conteúdo de imagem para gerar uma textura que possa ser usada em um aplicativo Direct2D ou JavaScript.
 
-    -   Gerar um arquivo *.dds* compactado em bloco.
+    - Gerar um arquivo *.dds* compactado em bloco.
 
-    -   Gerar alfa pré-multiplicado.
+    - Gerar alfa pré-multiplicado.
 
-    -   Desabilite a geração de mipmap.
+    - Desabilite a geração de mipmap.
 
 ## <a name="rendering-conventions-in-direct2d"></a>Convenções de renderização do Direct2D
 
 Texturas que são usadas no contexto do Direct2D devem estar em conformidade com as seguintes convenções de renderização internas do Direct2D:
 
--   O Direct2D implementa a transparência e a translucência usando alfa pré-multiplicado. Texturas usadas com Direct2D devem conter alfa pré-multiplicado, mesmo se a textura não usar transparência ou translucência. Para obter mais informações sobre alfa pré-multiplicado, confira [Como: Exportar uma textura que tenha o alfa pré-multiplicado](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
+- O Direct2D implementa a transparência e a translucência usando alfa pré-multiplicado. Texturas usadas com Direct2D devem conter alfa pré-multiplicado, mesmo se a textura não usar transparência ou translucência. Para obter mais informações sobre alfa pré-multiplicado, confira [Como: Exportar uma textura que tenha o alfa pré-multiplicado](../designers/how-to-export-a-texture-that-has-premultiplied-alpha.md).
 
--   A textura precisa ser fornecida no formato *.dds*, usando um desses formatos de compactação em bloco:
+- A textura precisa ser fornecida no formato *.dds*, usando um desses formatos de compactação em bloco:
 
-    -   Compactação BC1_UNORM
+    - Compactação BC1_UNORM
 
-    -   Compactação BC2_UNORM
+    - Compactação BC2_UNORM
 
-    -   Compactação BC3_UNORM
+    - Compactação BC3_UNORM
 
--   Não há suporte para mipmaps.
+- Não há suporte para mipmaps.
 
 ### <a name="to-create-a-texture-thats-compatible-with-direct2d-rendering-conventions"></a>Para criar uma textura compatível com as convenções de renderização do Direct2D
 

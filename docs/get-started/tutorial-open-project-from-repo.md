@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 928e77c5c28b76570525b8ea9037cd0d0cef7f99
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: a3925fcac62dfee9f448bd826dc7948f8b08d498
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857561"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944096"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>Tutorial: Abrir um projeto de um repositório
 
@@ -27,7 +27,7 @@ Neste tutorial, você usará o Visual Studio para se conectar a um repositório 
 
 ::: moniker range="vs-2017"
 
-Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2017) para instalá-lo gratuitamente.
+Se você ainda não tiver instalado o Visual Studio, acesse a página [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) para instalá-lo gratuitamente.
 
 ::: moniker-end
 
@@ -185,5 +185,5 @@ Se estiver pronto para codificar com o Visual Studio, aprofunde-se em qualquer u
 
 ## <a name="see-also"></a>Consulte também
 
-- [Azure DevOps Services: Introdução ao Azure Repos e ao Visual Studio](/azure/devops/repos/git/gitquickstart/)
-- [Microsoft Learn: Introdução ao Azure DevOps](/learn/modules/get-started-with-devops/)
+- [Azure DevOps Services: introdução ao Azure Repos e ao Visual Studio](/azure/devops/repos/git/gitquickstart/)
+- [Microsoft Learn: introdução ao Azure DevOps](/learn/modules/get-started-with-devops/)

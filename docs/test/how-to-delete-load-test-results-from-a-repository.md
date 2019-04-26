@@ -13,12 +13,12 @@ ms.assetid: c2afe36b-d061-4f0e-9580-c18569ec08f9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5e351ccaa6dddcf4773169a1e0a3f8e074002f2d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: f37edcadb1d8800cb784771f9cc4f93d885bea65
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950001"
 ---
 # <a name="how-to-delete-load-test-results-from-a-repository"></a>Como: Excluir os resultados do teste de carga de um repositório
 
@@ -30,21 +30,21 @@ Quando você executar um teste de carga, as informações que foram coletadas du
 
 ## <a name="to-delete-results-from-a-repository"></a>Para excluir resultados de um repositório
 
-1.  De um projeto de teste de carga e de desempenho na Web, abra um teste de carga.
+1. De um projeto de teste de carga e de desempenho na Web, abra um teste de carga.
 
-2.  Na barra de ferramentas inserida, escolha **Abrir e gerenciar resultados**.
+2. Na barra de ferramentas inserida, escolha **Abrir e gerenciar resultados**.
 
      A caixa de diálogo **Abrir e gerenciar resultados de testes de carga** é exibida.
 
-3.  Em **Digite um nome de controlador para encontrar resultados de testes de carga**, selecione um controlador. Selecione **\<Local – Nenhum controlador>** para acessar os resultados armazenados localmente.
+3. Em **Digite um nome de controlador para encontrar resultados de testes de carga**, selecione um controlador. Selecione **\<Local – Nenhum controlador>** para acessar os resultados armazenados localmente.
 
-4.  Em **Exibir resultados para o seguinte teste de carga**, selecione o teste de carga cujos resultados deseja exibir. Selecione **\<Mostrar resultados para todos os testes>** para ver todos os resultados de todos os testes.
+4. Em **Exibir resultados para o seguinte teste de carga**, selecione o teste de carga cujos resultados deseja exibir. Selecione **\<Mostrar resultados para todos os testes>** para ver todos os resultados de todos os testes.
 
      Se resultados de testes de carga estiverem disponíveis, eles aparecerão na lista **Resultados de testes de carga**. As colunas são **Hora**, **Duração**, **Usuário**, **Resultado**, **Teste** e **Descrição**. **Teste** contém o nome do teste e **Descrição** contém a descrição opcional adicionada antes da execução do teste. A coluna **Descrição** exibe as descrições resumidas inseridas nos **Comentários de Análise** para esse resultado do teste.
 
-5.  Na lista **Resultados de testes de carga**, escolha um resultado. Use a tecla **Shift**, a tecla **Ctrl** ou ambas para selecionar mais de um resultado.
+5. Na lista **Resultados de testes de carga**, escolha um resultado. Use a tecla **Shift**, a tecla **Ctrl** ou ambas para selecionar mais de um resultado.
 
-6.  Escolha **Remover**.
+6. Escolha **Remover**.
 
      Os resultados são removidos do repositório.
 

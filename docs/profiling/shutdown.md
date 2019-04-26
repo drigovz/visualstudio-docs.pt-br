@@ -8,12 +8,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: deeb74e8e8763feb62b0cc21fcfbfbf3c6b220ca
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 29f6ab4b750370467fa75c2341e20264db756a7f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979881"
 ---
 # <a name="shutdown"></a>Desligar
 A opção **Desligamento** aguarda qualquer processo com perfil finalizar ou desanexar e, em seguida, desativa o criador de perfil e fecha o arquivo de dados de criação de perfil. A opção **desligamento** deve ser o último comando de criação de um perfil.
@@ -29,8 +29,8 @@ VSPerfCmd.exe /Shutdown[:Timeout]
 ```
 
 #### <a name="parameters"></a>Parâmetros
- `Timeout`
- -   (Opcional) Se especificado, a opção retorna após o número especificado de segundos sem desativar o criador de perfil ou fechar o arquivo de dados de criação de perfil.
+`Timeout`
+- (Opcional) Se especificado, a opção retorna após o número especificado de segundos sem desativar o criador de perfil ou fechar o arquivo de dados de criação de perfil.
 
 ## <a name="see-also"></a>Consulte também
 - [VSPerfCmd](../profiling/vsperfcmd.md)

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 5a68a2a9f0ca96b943c0b09da5c60268963bc6a7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973663"
 ---
 # <a name="process-view"></a>Exibição de processo
 A exibição do processo exibe dados de criação de perfil para os processos e threads executados durante o processo de criação de perfil.

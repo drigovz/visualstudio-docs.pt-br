@@ -12,17 +12,17 @@ ms.workload:
 - python
 - data-science
 ms.openlocfilehash: d9c84e72551911135550c43da2b99ecb1357f9b6
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59365724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62957401"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>Bem-vindo ao IDE do Visual Studio | Python
 
 O *ambiente de desenvolvimento integrado* do Visual Studio é um painel de inicialização criativo para o Python (e outras linguagens) que você pode usar para editar, depurar e testar o código e, em seguida, publicar um aplicativo. Um IDE (ambiente de desenvolvimento integrado) é um programa repleto de recursos que pode ser usado por muitos aspectos do desenvolvimento de software. Além do editor e do depurador padrão fornecidos pela maioria dos IDEs, o Visual Studio inclui ferramentas de preenchimento de código, ambientes de REPL interativo e outras funcionalidades para facilitar o processo de desenvolvimento de software.
 
-[![VVisual Studio com um projeto do Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
+[![Visual Studio com um projeto do Python](media/tour-ide-overview.png)](media/tour-ide-overview.png#lightbox)
 
 Esta imagem mostra o Visual Studio com um projeto aberto do Python e várias janelas de ferramentas importantes que você provavelmente usará:
 
@@ -80,7 +80,7 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 
    ![Rabiscos no Visual Studio](media/tour-ide-squiggles.png)
 
-- [Acessar e Escolher Definição](../ide/go-to-and-peek-definition.md)
+- [Ir para Definição e Inspecionar Definição](../ide/go-to-and-peek-definition.md)
 
    A funcionalidade **Ir para Definição** leva você diretamente para a localização em que uma função ou um tipo está definido. O comando **Inspecionar Definição** exibe a definição em uma janela sem abrir um arquivo separado. O comando **Localizar Todas as Referências** também fornece uma maneira útil de descobrir em que local um identificador especificado foi definido e usado.
 
@@ -106,7 +106,7 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 
     ![Depurando o Python no Visual Studio](media/remote-debugging-breakpoint-hit.png)
 
-- [Interagir com C++](working-with-c-cpp-python-in-visual-studio.md)
+- [Interagindo com o C++](working-with-c-cpp-python-in-visual-studio.md)
 
     Muitas bibliotecas criadas para o Python são escritas em C++ para um desempenho ideal. O Visual Studio fornece funcionalidades sofisticadas para o desenvolvimento de extensões em C++, incluindo a [depuração de modo misto](debugging-mixed-mode-c-cpp-python-in-visual-studio.md).
 
@@ -118,7 +118,7 @@ Alguns dos recursos populares no Visual Studio que ajudam você a ser mais produ
 
     ![Relatório de desempenho de criação de perfil](media/profiling-results.png)
 
-- [Teste de unidade](unit-testing-python-in-visual-studio.md)
+- [Testes de Unidade](unit-testing-python-in-visual-studio.md)
 
     O Visual Studio fornece suporte integrado para descoberta, execução e depuração de testes de unidade, tudo no contexto do IDE.
 
@@ -135,10 +135,10 @@ Explore ainda mais o Python no Visual Studio seguindo um destes tutoriais ou in�
 > [Trabalhar com o Python no Visual Studio](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)
 
 > [!div class="nextstepaction"]
-> [Introdução à estrutura da Web do Django no Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)
+> [Introdução à estrutura da Web Django no Visual Studio](learn-django-in-visual-studio-step-01-project-and-solution.md)
 
 > [!div class="nextstepaction"]
-> [Introdução à estrutura da Web do Flask no Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)
+> [Introdução à estrutura da Web Flask no Visual Studio](learn-flask-visual-studio-step-01-project-solution.md)
 
 ## <a name="see-also"></a>Consulte também
 

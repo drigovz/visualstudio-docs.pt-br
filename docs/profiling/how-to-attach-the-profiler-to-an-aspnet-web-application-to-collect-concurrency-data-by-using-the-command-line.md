@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - aspnet
-ms.openlocfilehash: f01f0fd090bdfdef1f09f0446980756232a3abf3
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 443086a77adbd872c63eab5b432ec7144acb9d69
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974261"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-concurrency-data-by-using-the-command-line"></a>Como: Anexar o criador de perfil a um aplicativo Web ASP.NET para coletar dados de simultaneidade usando a linha de comando
 Este artigo descreve como usar as ferramentas de linha de comando das Ferramentas de Criação de Perfil do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para anexar o criador de perfil a um aplicativo ASP.NET e coletar dados de simultaneidade de thread e do processo.
@@ -45,21 +45,20 @@ Para obter o caminho para as ferramentas de criação de perfil, confira [Especi
    | [/automark](../profiling/automark.md) **:** `Interval` | Use somente com **/wincounter**. Especifica o número de milissegundos entre eventos de coleta do contador de desempenho do Windows. O valor padrão é 500. |
    | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | Especifica um evento de ETW (Rastreamento de Eventos para Windows) a ser coletado durante a criação de perfil. Os eventos do ETW são coletados em um arquivo separado (.*etl*). |
 
-
 2. Inicie o aplicativo ASP.NET de maneira normal.
 
 3. Anexe o criador de perfil ao processo de trabalho do ASP.NET digitando o seguinte comando:**VSPerfCmd /attach:**`PID` [**/targetclr:**`Version`]
 
-   -   `PID` especifica a ID ou o nome do processo de trabalho do ASP.NET. É possível exibir as IDs de processo de todos os processos em execução no Gerenciador de Tarefas do Windows.
+   - `PID` especifica a ID ou o nome do processo de trabalho do ASP.NET. É possível exibir as IDs de processo de todos os processos em execução no Gerenciador de Tarefas do Windows.
 
-   -   [/targetclr](../profiling/targetclr.md) **:** `Version` especifica a versão do CLR (Common Language Runtime) cujo perfil deverá ser criado quando mais de uma versão do tempo de execução for carregada em um aplicativo. Esse parâmetro é opcional.
+   - [/targetclr](../profiling/targetclr.md) **:** `Version` especifica a versão do CLR (Common Language Runtime) cujo perfil deverá ser criado quando mais de uma versão do tempo de execução for carregada em um aplicativo. Esse parâmetro é opcional.
 
 ## <a name="control-data-collection"></a>Controlar a coleta de dados
  Durante a execução do aplicativo, você pode controlar a coleta de dados iniciando e parando a gravação de dados no arquivo usando as opções do *VSPerfCmd.exe*. Controlando a coleta de dados, é possível coletar dados de uma parte específica da execução do programa, como o início ou o desligamento do aplicativo.
 
 #### <a name="to-start-and-stop-data-collection"></a>Para iniciar e interromper a coleta de dados
 
--   Os pares de opções VSPerfCmd na tabela a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.
+- Os pares de opções VSPerfCmd na tabela a seguir iniciam e interrompem a coleta de dados. Especifique cada opção em uma linha de comando separada. É possível ativar e desativar a coleta de dados várias vezes.
 
     |Opção|Descrição|
     |------------|-----------------|
@@ -72,11 +71,11 @@ Para obter o caminho para as ferramentas de criação de perfil, confira [Especi
 
 #### <a name="to-end-a-profiling-session"></a>Para encerrar uma sessão de criação de perfil
 
-1.  Desanexe o criador de perfil do aplicativo de destino fechando-o ou digitando o seguinte no prompt de comando:
+1. Desanexe o criador de perfil do aplicativo de destino fechando-o ou digitando o seguinte no prompt de comando:
 
      **VSPerfCmd /detach**
 
-2.  Desligue o criador de perfil digitando o seguinte comando em um prompt de comando:
+2. Desligue o criador de perfil digitando o seguinte comando em um prompt de comando:
 
      **VSPerfCmd**  [/shutdown](../profiling/shutdown.md)
 

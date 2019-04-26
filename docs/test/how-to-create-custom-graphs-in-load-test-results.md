@@ -9,12 +9,12 @@ ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a03d16f74623d935e8f4f09b0f397672ad226487
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 6df80340f57ba40597af67d57ba1bda3da778f4b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55932398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62949945"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>Como: Criar grafos personalizados nos resultados do teste de carga
 
@@ -26,7 +26,7 @@ Você pode executar o procedimento a seguir enquanto um teste de carga está em 
 
 ## <a name="to-create-a-custom-load-test-results-graph"></a>Para criar um grafo de resultados de teste de carga personalizado
 
-1.  Na barra de ferramentas **Teste de Carga**, escolha **Adicionar um Novo Grafo**.
+1. Na barra de ferramentas **Teste de Carga**, escolha **Adicionar um Novo Grafo**.
 
      \- ou -
 
@@ -34,11 +34,11 @@ Você pode executar o procedimento a seguir enquanto um teste de carga está em 
 
      A caixa de diálogo **Digite o nome do gráfico** é exibida.
 
-2.  Em **Nome do gráfico**, digite um nome para o gráfico e escolha **OK**.
+2. Em **Nome do gráfico**, digite um nome para o gráfico e escolha **OK**.
 
      O novo grafo é exibido no **Analisador de Teste de Carga**. Ele é exibido no painel de gráfico selecionado no momento; ele substitui o gráfico que foi exibido nesse painel.
 
-3.  Personalize o novo gráfico adicionando contadores. Para obter mais informações, confira [Como: Adicionar e excluir contadores em grafos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
+3. Personalize o novo gráfico adicionando contadores. Para obter mais informações, confira [Como: Adicionar e excluir contadores em grafos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md).
 
 ## <a name="see-also"></a>Consulte também
 

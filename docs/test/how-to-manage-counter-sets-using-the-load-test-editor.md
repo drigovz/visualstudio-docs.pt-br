@@ -13,12 +13,12 @@ ms.assetid: 64315c2f-a0b2-4378-be16-0774b99beef5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ae61b261e9a613a2eee9ca8baca24773253a6df8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 4ca910038e35ee65e6d97999f08013f398eaec9e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950087"
 ---
 # <a name="how-to-manage-counter-sets-using-the-load-test-editor"></a>Como: Gerenciar conjuntos de contadores usando o Editor de Teste de Carga
 
@@ -35,9 +35,9 @@ Gerenciar conjuntos de contadores envolve escolher o conjunto de computadores do
 
 ## <a name="to-manage-counter-sets"></a>Para gerenciar conjuntos de contadores
 
-1.  Abra um teste de carga.
+1. Abra um teste de carga.
 
-2.  Escolha o botão **Gerenciar conjuntos de contadores**.
+2. Escolha o botão **Gerenciar conjuntos de contadores**.
 
      – ou –
 
@@ -45,20 +45,20 @@ Gerenciar conjuntos de contadores envolve escolher o conjunto de computadores do
 
      A caixa de diálogo **Gerenciar conjuntos de contadores** é exibida.
 
-3.  (Opcional) Na caixa de listagem **Computadores e conjuntos de contadores selecionados serão adicionados nas seguintes configurações de execução**, selecione outra configuração de execução.
+3. (Opcional) Na caixa de listagem **Computadores e conjuntos de contadores selecionados serão adicionados nas seguintes configurações de execução**, selecione outra configuração de execução.
 
     > [!NOTE]
     > Isso se aplicará apenas se você tiver mais de uma configuração de execução no teste de carga.
 
-4.  (Opcional) Escolha **Adicionar Computador** para adicionar um novo computador ao monitor. Será solicitado que você forneça um nome. Digite o nome de um computador e você verá os nós abaixo da nova entrada. Por exemplo **ASP.NET**, **IIS**, **SQL**, entre outros. Marque as caixas de seleção na frente dos nós que deseja selecionar. Os contadores são exibidos no painel **Versão prévia das seleções**.
+4. (Opcional) Escolha **Adicionar Computador** para adicionar um novo computador ao monitor. Será solicitado que você forneça um nome. Digite o nome de um computador e você verá os nós abaixo da nova entrada. Por exemplo **ASP.NET**, **IIS**, **SQL**, entre outros. Marque as caixas de seleção na frente dos nós que deseja selecionar. Os contadores são exibidos no painel **Versão prévia das seleções**.
 
-5.  (Opcional) Na caixa de texto **Marcações de Computador**, digite uma marcação a ser associada ao computador. Por exemplo, "TestMachine12 em lab3".
+5. (Opcional) Na caixa de texto **Marcações de Computador**, digite uma marcação a ser associada ao computador. Por exemplo, "TestMachine12 em lab3".
 
      Os marcadores de computador permitem identificar um computador com um nome fácil de reconhecer.
 
      As marcações são exibidas no nó **Mapeamentos de conjuntos de contadores** da árvore no Editor de Teste de Carga. O mais importante é que os marcadores são exibidos em relatórios do Excel, o que ajuda os participantes a identificar qual função o computador tem no teste de carga. Por exemplo, "Web Server1 em lab2" ou "SQL Server2 em Phoenix office". Para saber mais, confira [Relatar resultados do teste de carga para comparações de testes ou análise de tendências](../test/compare-load-test-results.md).
 
-6.  Escolha **OK**.
+6. Escolha **OK**.
 
 ## <a name="see-also"></a>Consulte também
 

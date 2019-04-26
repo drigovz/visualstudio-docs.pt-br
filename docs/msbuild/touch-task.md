@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 96bf92f6e0649a2d1eedda63d6159c3de95ae6bd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62938850"
 ---
 # <a name="touch-task"></a>tarefa Touch
 Define os horários de modificação e acesso aos arquivos.

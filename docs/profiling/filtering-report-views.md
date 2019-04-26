@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c099fac3abba543c177becc1fe375b43ce1dd2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: b2f06778de19c16df9d6e43108ecf4daba539c06
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62969882"
 ---
 # <a name="filter-report-views"></a>Filtrar exibições de relatório
 Você pode aplicar filtros para arquivos de dados de criação de perfil para limitar os dados de criação de perfil que são exibidos nas exibições de Relatório de Desempenho e exportados para arquivos de relatório. Você pode limitar um relatório aos dados entre os valores de carimbo de data/hora e limitar os dados a processos e threads específicos. Você pode salvar filtros em um arquivo e, em seguida, criar um filtro em um arquivo de dados de criação de perfil diferente importando o filtro salvo.
@@ -28,11 +28,11 @@ Você pode aplicar filtros para arquivos de dados de criação de perfil para li
 
 #### <a name="to-create-a-profiler-report-filter"></a>Para criar um filtro de relatório do criador de perfil
 
-1.  Se a janela de Filtro de exibição de relatório de desempenho não for exibida, clique em **Mostrar Filtro** na barra de ferramentas Exibição de Relatório de Desempenho.
+1. Se a janela de Filtro de exibição de relatório de desempenho não for exibida, clique em **Mostrar Filtro** na barra de ferramentas Exibição de Relatório de Desempenho.
 
      O Filtro de Exibição do Relatório de Desempenho é uma tabela. Cada linha da tabela representa uma cláusula do filtro. Você pode adicionar quantas cláusulas quiser a um filtro.
 
-2.  Para cada cláusula que desejar adicionar a um filtro, selecione ou insira valores nos seguintes campos de uma linha.
+2. Para cada cláusula que desejar adicionar a um filtro, selecione ou insira valores nos seguintes campos de uma linha.
 
     |Campo|Descrição|
     |-----------|-----------------|
@@ -40,7 +40,6 @@ Você pode aplicar filtros para arquivos de dados de criação de perfil para li
     |**Campo**|Selecione o campo de relatório para usar na cláusula de filtro da lista de campos de dados exibida.|
     |**Operador**|Selecione o operador que especifica o relacionamento que deseja na cláusula entre o campo e o valor.<br /><br /> =    É igual a<br /><br /> <>  Não é igual a<br /><br /> <    Menor que<br /><br /> >    Maior que<br /><br /> <=  Menor ou igual a<br /><br /> >= Maior ou igual a|
     |**Valor**|Selecione ou insira o valor a ser procurado. Alguns campos listam os valores disponíveis para o campo.|
-
 
 #### <a name="to-create-a-profiler-report-filter-from-the-marks-report-view"></a>Para criar um filtro de relatório do criador de perfil na exibição de Relatório de Marcas
 
@@ -62,33 +61,33 @@ Você pode aplicar filtros para arquivos de dados de criação de perfil para li
 
 #### <a name="to-load-an-existing-filter-from-a-file"></a>Para carregar um filtro existente de um arquivo
 
-1.  Na barra de ferramentas de Exibição de relatório de desempenho, clique em **Filtro de Importação**.
+1. Na barra de ferramentas de Exibição de relatório de desempenho, clique em **Filtro de Importação**.
 
      A caixa de diálogo **Carregar Filtro** é exibida.
 
-2.  Especifique o local e o nome do arquivo do filtro (.vspf) para carregar.
+2. Especifique o local e o nome do arquivo do filtro (.vspf) para carregar.
 
 #### <a name="to-execute-a-filter"></a>Para executar um filtro
 
--   Na barra de ferramentas de Exibição de Relatório de Desempenho, clique em **Executar Filtro**.
+- Na barra de ferramentas de Exibição de Relatório de Desempenho, clique em **Executar Filtro**.
 
 #### <a name="to-stop-a-filter-that-is-taking-too-long-to-execute"></a>Para interromper um filtro que esteja levando muito tempo para executar
 
--   Na barra de ferramentas de Exibição de Relatório de Desempenho, clique em **Parar Filtro**.
+- Na barra de ferramentas de Exibição de Relatório de Desempenho, clique em **Parar Filtro**.
 
 #### <a name="to-remove-a-filter-on-a-report-view"></a>Para remover um filtro em uma exibição de relatório
 
-1.  Exclua as linhas das cláusulas no filtro de Exibição de Relatório de Desempenho.
+1. Exclua as linhas das cláusulas no filtro de Exibição de Relatório de Desempenho.
 
-2.  Na barra de ferramentas de Exibição de Relatório de Desempenho, clique em **Executar Filtro**.
+2. Na barra de ferramentas de Exibição de Relatório de Desempenho, clique em **Executar Filtro**.
 
 #### <a name="to-save-a-filter-to-a-file"></a>Para salvar um filtro em um arquivo
 
-1.  Na barra de ferramentas de Exibição de Relatório de Desempenho, clique em **Exportar Filtro**.
+1. Na barra de ferramentas de Exibição de Relatório de Desempenho, clique em **Exportar Filtro**.
 
      A caixa de diálogo **Salvar Filtro** é exibida.
 
-2.  Especifique o local e o nome do arquivo do filtro (.vspf) para salvar.
+2. Especifique o local e o nome do arquivo do filtro (.vspf) para salvar.
 
 ## <a name="see-also"></a>Consulte também
 - [Personalizando exibições de relatório das ferramentas de desempenho](../profiling/customizing-performance-tools-report-views.md)

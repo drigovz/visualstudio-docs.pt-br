@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: efbc02bb536ca8e39454fbbb476460c4cbd51363
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56638717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62856028"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>Registrando em log em um ambiente multiprocessador
 A capacidade do MSBuild de usar vários processadores pode diminuir bastante o tempo de criação do projeto, mas também adiciona complexidade ao registrar em logs. Em um ambiente de processador único, o agente pode gerenciar eventos recebidos, mensagens, avisos e erros de uma maneira previsível e sequencial. No entanto, em um ambiente com vários processadores, eventos de origens diferentes podem surgir simultaneamente ou fora de sequência. O MSBuild fornece um novo agente com reconhecimento de vários processadores e permite a criação de “agentes de encaminhamento” personalizados.

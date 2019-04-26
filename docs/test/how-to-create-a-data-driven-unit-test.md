@@ -14,12 +14,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: gewarren
-ms.openlocfilehash: dc5c4b68b5713ba8831d840decea7f2ea25704f4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 58b7348a1bd46b426339effbe259e6f5058c769b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55931436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62979234"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>Como: Criar um teste de unidade controlado por dados
 
@@ -27,27 +27,27 @@ Ao usar a estrutura de teste de unidade da Microsoft para código gerenciado, vo
 
 A criação de um teste de unidade orientado a dados envolve as seguintes etapas:
 
-1.  Criar uma fonte de dados que contém os valores a serem usados no método de teste. A fonte de dados pode ser de qualquer tipo que esteja registrado no computador que executa o teste.
+1. Criar uma fonte de dados que contém os valores a serem usados no método de teste. A fonte de dados pode ser de qualquer tipo que esteja registrado no computador que executa o teste.
 
-2.  Adicionar um campo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> privado e uma propriedade `TestContext` pública à classe de teste.
+2. Adicionar um campo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext> privado e uma propriedade `TestContext` pública à classe de teste.
 
-3.  Criear um método de teste de unidade e adicionar um atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> a ele.
+3. Criear um método de teste de unidade e adicionar um atributo <xref:Microsoft.VisualStudio.TestTools.UnitTesting.DataSourceAttribute> a ele.
 
-4.  Usar o propriedade do indexador <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> para recuperar os valores que você pode usar em um teste.
+4. Usar o propriedade do indexador <xref:Microsoft.VisualStudio.TestTools.UnitTesting.TestContext.DataRow%2A> para recuperar os valores que você pode usar em um teste.
 
 ## <a name="the-method-under-test"></a>O método em teste
 
 Por exemplo, vamos supor que você tenha:
 
-1.  Uma solução chamada `MyBank` que aceita e processa transações para diferentes tipos de contas.
+1. Uma solução chamada `MyBank` que aceita e processa transações para diferentes tipos de contas.
 
-2.  Um projeto em `MyBank` chamado `BankDb` que gerencia as transações das contas.
+2. Um projeto em `MyBank` chamado `BankDb` que gerencia as transações das contas.
 
-3.  Uma classe chamada `Maths` no projeto `DbBank` que executa as funções matemáticas para garantir que qualquer transação seja vantajosa para o banco.
+3. Uma classe chamada `Maths` no projeto `DbBank` que executa as funções matemáticas para garantir que qualquer transação seja vantajosa para o banco.
 
-4.  Um projeto de teste de unidade chamado `BankDbTests` para testar o comportamento do componente `BankDb`.
+4. Um projeto de teste de unidade chamado `BankDbTests` para testar o comportamento do componente `BankDb`.
 
-5.  Uma classe de teste de unidade chamada `MathsTests` para verificar o comportamento da classe `Maths`.
+5. Uma classe de teste de unidade chamada `MathsTests` para verificar o comportamento da classe `Maths`.
 
 Testaremos um método em `Maths` que acrescenta dois inteiros usando um loop:
 

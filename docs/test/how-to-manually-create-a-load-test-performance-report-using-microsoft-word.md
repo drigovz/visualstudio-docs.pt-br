@@ -9,12 +9,12 @@ ms.assetid: 3b864c75-2699-48c1-a2b4-9651f108c267
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: dfd565deb8336346e127e084b720f391440dc6e4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: a82479fabda0cd64e977af01f87492563a02853f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928797"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950066"
 ---
 # <a name="how-to-manually-create-a-load-test-performance-report-using-microsoft-word"></a>Como: Criar manualmente um relatório de desempenho de teste de carga usando o Microsoft Word
 
@@ -30,27 +30,27 @@ Você pode criar manualmente relatórios de teste de carga do Microsoft Word cop
 
 ## <a name="copy-summary-view-data"></a>Copiar dados da exibição resumida
 
-1.  Se a exibição de resumo não estiver sendo mostrada nos **Resultados do Teste de Carga**, clique em **Resumo** na barra de ferramentas.
+1. Se a exibição de resumo não estiver sendo mostrada nos **Resultados do Teste de Carga**, clique em **Resumo** na barra de ferramentas.
 
-2.  Na exibição resumida, clique com o botão direito do mouse e selecione **Selecionar Tudo**.
+2. Na exibição resumida, clique com o botão direito do mouse e selecione **Selecionar Tudo**.
 
-3.  Na exibição resumida, clique com o botão direito do mouse e selecione **Copiar**. Isso renderiza os dados da exibição resumida como formato HTML na área de transferência.
+3. Na exibição resumida, clique com o botão direito do mouse e selecione **Copiar**. Isso renderiza os dados da exibição resumida como formato HTML na área de transferência.
 
-4.  No Microsoft Word, cole os dados da exibição resumida no local desejado.
+4. No Microsoft Word, cole os dados da exibição resumida no local desejado.
 
-5.  Agora é possível modificar, formatar e excluir aspectos do conteúdo copiado para que ele atenda às suas necessidades de relatório.
+5. Agora é possível modificar, formatar e excluir aspectos do conteúdo copiado para que ele atenda às suas necessidades de relatório.
 
 ## <a name="copy-graph-view-data"></a>Copiar dados de exibição de gráfico
 
-1.  Se a exibição de grafos não estiver sendo mostrada nos **Resultados do Teste de Carga**, escolha **Grafos** na barra de ferramentas.
+1. Se a exibição de grafos não estiver sendo mostrada nos **Resultados do Teste de Carga**, escolha **Grafos** na barra de ferramentas.
 
-2.  (Opcional) Amplie o gráfico específico que você deseja copiar no documento do Microsoft Word, conforme mostrado na ilustração a seguir. Para obter mais informações, confira [Como: Ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
+2. (Opcional) Amplie o gráfico específico que você deseja copiar no documento do Microsoft Word, conforme mostrado na ilustração a seguir. Para obter mais informações, confira [Como: Ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md).
 
      ![Controle de zoom da exibição de grafo](../test/media/ltest_zoomcontrol.png)
 
-3.  No gráfico que deseja copiar no documento do Microsoft Word, clique com o botão direito do mouse e selecione **Copiar**.
+3. No gráfico que deseja copiar no documento do Microsoft Word, clique com o botão direito do mouse e selecione **Copiar**.
 
-4.  No Microsoft Word, cole o gráfico e os dados da tabela associada no local desejado.
+4. No Microsoft Word, cole o gráfico e os dados da tabela associada no local desejado.
 
     > [!WARNING]
     > Não é possível copiar o gráfico de uma área de trabalho remota e colá-lo em outro computador, pois somente as informações da tabela associada ao gráfico serão copiadas, e não a imagem do gráfico. A imagem do gráfico é armazenada no diretório temporário do computador do qual ela foi copiada e o segundo computador não pode desreferenciar esse diretório.

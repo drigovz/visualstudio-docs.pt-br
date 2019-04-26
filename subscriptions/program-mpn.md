@@ -7,12 +7,12 @@ ms.date: 12/19/2018
 ms.topic: conceptual
 description: Detalhes de quais assinaturas são oferecidas, quais regras se aplicam e quantas assinaturas são oferecidas no MPN.
 searchscope: VS Subscription
-ms.openlocfilehash: b9445b3b990698b273145ab8791e03ee6690570b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: c7e58cd53ccbab31e90f2fc73a07b1011473777e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56843141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62945395"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>Assinaturas do Visual Studio oferecidas aos parceiros no MPN (Microsoft Partner Network)
 Os parceiros que ganham uma competência ou que compram o Action Pack no MPN estão qualificados para usar assinaturas do Visual Studio. Essas assinaturas são licenciadas por usuário e são válidas somente quando atribuídas a um usuário nomeado específico que trabalha para a empresa parceira.
@@ -43,7 +43,6 @@ Independentemente de quantas competências um parceiro ganha, o número de assin
 | Benefício máximo para parceiros somente com Competências Silver                   | Benefício máximo para parceiros com pelo menos uma Competência Gold               |
 |------------------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 25 assinaturas do Visual Studio Enterprise por país, 75 globalmente          | 50 assinaturas do Visual Studio Enterprise por país, 150 globalmente         |
-
 
 ## <a name="subscriptions-for-partners-purchasing-the-action-pack"></a>Assinaturas para parceiros que compram o Action Pack
 Os parceiros que têm uma competência não são qualificados para comprar o Action Pack. Apenas um Action Pack pode ser comprado por parceiro.

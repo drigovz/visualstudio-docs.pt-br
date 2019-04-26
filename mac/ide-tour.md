@@ -7,11 +7,11 @@ ms.date: 04/02/2019
 ms.assetid: 7DC64A52-AA41-4F3A-A8A1-8A20BCD81CC7
 ms.custom: video
 ms.openlocfilehash: a621faece8ed0cef3dd48d46fc41857af6e62c9e
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856308"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62983848"
 ---
 # <a name="visual-studio-2019-for-mac-tour"></a>Tour do Visual Studio 2019 para Mac
 
@@ -115,7 +115,7 @@ Para saber mais sobre como usar o controle de versão no Visual Studio, veja o a
 ## <a name="next-steps"></a>Próximas etapas
 
 - [Instalar o Visual Studio para Mac](installation.md)
-- [Examinar as cargas de trabalho disponíveis](/visualstudio/mac/workloads/)
+- [Examine as cargas de trabalho disponíveis](/visualstudio/mac/workloads/)
 
 ## <a name="related-video"></a>Vídeo relacionados
 

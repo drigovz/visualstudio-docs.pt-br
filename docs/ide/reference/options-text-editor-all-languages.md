@@ -42,12 +42,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a8b1b7c4ea16151c94c825b6e5467e40e3e6099b
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 2ef04af4fda717d3f2fa6a90ba6b9ffdc681d5a6
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55929330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62817842"
 ---
 # <a name="options-text-editor-all-languages"></a>Opções, Editor de Texto, Todos os Idiomas
 
@@ -115,9 +115,9 @@ Quando selecionada, exibe a **Barra de navegação** na parte superior do editor
 
 Esta opção define o comportamento do editor quando você coloque o ponto de inserção em uma linha em branco, não seleciona nada e então Copia ou Corta.
 
--   Quando essa opção está selecionada, a linha em branco é copiada ou cortada. Se você então Colar, uma nova linha em branco será inserida.
+- Quando essa opção está selecionada, a linha em branco é copiada ou cortada. Se você então Colar, uma nova linha em branco será inserida.
 
--   Quando essa opção está desmarcada, o comando Cortar remove linhas em branco. No entanto, os dados na Área de Transferência são preservados. Portanto, se você usar o comando Colar, o conteúdo copiado mais recentemente para a Área de Transferência será colado. Se nada foi copiado anteriormente, nada é colado.
+- Quando essa opção está desmarcada, o comando Cortar remove linhas em branco. No entanto, os dados na Área de Transferência são preservados. Portanto, se você usar o comando Colar, o conteúdo copiado mais recentemente para a Área de Transferência será colado. Se nada foi copiado anteriormente, nada é colado.
 
 Essa configuração não tem efeito sobre o Copiar ou Cortar quando uma linha não está em branco. Se nada é selecionado, a linha inteira é copiada ou recortar. Se você então Colar, o texto da linha inteira e seu caractere de fim de linha serão colados.
 

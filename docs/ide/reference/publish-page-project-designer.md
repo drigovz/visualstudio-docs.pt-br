@@ -12,12 +12,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 00202ab13001a56d472027d538bc5560f936ef93
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 731ed637c8c728f51dd318e6c06b980e512b7d57
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55909343"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968884"
 ---
 # <a name="publish-page-project-designer"></a>Página de Publicação, Designer de Projeto
 A página **Publicar** do **Designer de Projeto** é usada para configurar as propriedades de implantação do ClickOnce.
@@ -26,7 +26,6 @@ A página **Publicar** do **Designer de Projeto** é usada para configurar as pr
 
 > [!NOTE]
 > Algumas das propriedades do ClickOnce descritas aqui também podem ser definidas no **PublishWizard**, disponível no menu **Build** ou clicando no botão **PublishWizard** nesta página.
-
 
 ## <a name="uielement-list"></a>Lista UIElement
  **Local da Pasta de Publicação**

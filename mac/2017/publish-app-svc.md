@@ -12,12 +12,12 @@ ms.prod: visual-studio-mac
 ms.custom: video
 ms.workload:
 - azure
-ms.openlocfilehash: 8cc0678dbb3e55d80f51e457f141c7f2dc5a12d9
-ms.sourcegitcommit: da73f7a0cf1795d5d400c0897ae3326191435dd0
+ms.openlocfilehash: 48cf25a7164fabc96924897c0a4a28bbbe4bea74
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/28/2019
-ms.locfileid: "58568478"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62988552"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>Publicar um aplicativo Web no Serviço de Aplicativo do Azure usando o Visual Studio para Mac
 
@@ -25,9 +25,9 @@ Você pode usar a ferramenta Publicar para publicar aplicativos do ASP.NET Core 
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
- - [Visual Studio 2017 para Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) instalado com o ASP.NET Core habilitado.
- - Uma assinatura do Azure. Se você ainda não tiver uma assinatura, [Inscreva-se gratuitamente](https://azure.microsoft.com/free/dotnet/), ganhando US$ 200 em créditos para 30 dias e 12 meses de serviços populares gratuitos.
- - Um projeto ASP.NET Core. Se você ainda não tiver um projeto, [crie um](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
+- [Visual Studio 2017 para Mac](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs4mac2017) instalado com o ASP.NET Core habilitado.
+- Uma assinatura do Azure. Se você ainda não tiver uma assinatura, [Inscreva-se gratuitamente](https://azure.microsoft.com/free/dotnet/), ganhando US$ 200 em créditos para 30 dias e 12 meses de serviços populares gratuitos.
+- Um projeto ASP.NET Core. Se você ainda não tiver um projeto, [crie um](https://docs.microsoft.com/visualstudio/mac/create-new-projects?view=vsmac-2017).
 
 ## <a name="publish-to-azure-app-service"></a>Publicar no Serviço de Aplicativo do Azure
 

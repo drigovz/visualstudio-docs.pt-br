@@ -8,30 +8,30 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3985d8a11118097a4d1d97b95340702d1ed23209
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.openlocfilehash: 60770dfa64c1a648d2a7ae56b38d66fe39e46183
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445745"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Visão geral da multiplataforma do MSBuild
 Usando o MSBuild, você pode compilar um aplicativo para ser executado em qualquer uma das várias versões do .NET Framework e em qualquer uma das várias plataformas de sistema. Por exemplo, você pode compilar um aplicativo para execução no .NET Framework 2.0 em uma plataforma de 32 bits e pode compilar o mesmo aplicativo para ser executado no .NET Framework 4.5 em uma plataforma de 64 bits.
 
 > [!IMPORTANT]
->  Apesar do nome "multiplataforma", um projeto pode ser destinado apenas a uma estrutura e apenas a uma plataforma por vez.
+> Apesar do nome "multiplataforma", um projeto pode ser destinado apenas a uma estrutura e apenas a uma plataforma por vez.
 
  Estes são alguns dos recursos de multiplataforma do MSBuild:
 
--   Você pode desenvolver um aplicativo destinado a uma versão anterior do .NET Framework, por exemplo, as versões 2.0, 3.5 ou 4.
+- Você pode desenvolver um aplicativo destinado a uma versão anterior do .NET Framework, por exemplo, as versões 2.0, 3.5 ou 4.
 
--   Você pode direcionar uma estrutura que não sejam o .NET Framework, por exemplo, o Silverlight Framework.
+- Você pode direcionar uma estrutura que não sejam o .NET Framework, por exemplo, o Silverlight Framework.
 
--   Você pode direcionar um *perfil de estrutura*, que é um subconjunto predefinido de uma estrutura de destino.
+- Você pode direcionar um *perfil de estrutura*, que é um subconjunto predefinido de uma estrutura de destino.
 
--   Se um service pack para a versão atual do .NET Framework for lançado, você poderá visá-lo.
+- Se um service pack para a versão atual do .NET Framework for lançado, você poderá visá-lo.
 
--   O direcionamento do MSBuild garante que um aplicativo use apenas a funcionalidade que está disponível na estrutura e na plataforma direcionadas.
+- O direcionamento do MSBuild garante que um aplicativo use apenas a funcionalidade que está disponível na estrutura e na plataforma direcionadas.
 
 ## <a name="target-framework-and-platform"></a>Estrutura e plataforma de destino
  Uma *estrutura de destino* é a versão do .NET Framework sobre a qual um projeto é compilado para executar, e uma *plataforma de destino* é a plataforma do sistema em que o projeto é compilado para executar.  Por exemplo, você talvez queira um aplicativo .NET Framework 2.0 para ser executado em uma plataforma de 32 bits que seja compatível com a família de processadores x86 802 (x86) de destino. A combinação de estrutura de destino e plataforma de destino é conhecida como o *contexto de destino*. Para obter mais informações, confira [Estrutura de destino e plataforma de destino](../msbuild/msbuild-target-framework-and-target-platform.md).
