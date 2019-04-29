@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.assetid: 6E8B0C90-33D6-4546-8207-CE0787584565
 ms.custom: video
-ms.openlocfilehash: 183431a160245fd8fc0ec2193c00c32659230459
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: 257d60d87a743d5c5e1099ee443c7bdb38055cca
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58856788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62985730"
 ---
 # <a name="getting-started-with-aspnet-core"></a>Introdução ao ASP.NET Core
 
@@ -63,6 +63,7 @@ Abra e inspecione o arquivo **Program.cs** no seu projeto. Observe que várias c
                 .UseStartup<Startup>();
     }
 ```
+
 Um aplicativo ASP.NET Core cria um servidor Web em seu método principal configurando e iniciando um host por meio de uma instância de [`WebHostBuilder`](/aspnet/core/fundamentals/hosting). Este construtor fornece métodos para permitir que o host seja configurado. As seguintes configurações são usadas no aplicativo modelo:
 
 * `.UseStartup<Startup>()`: especifica a classe Startup.
@@ -106,8 +107,8 @@ Abra e inspecione o arquivo **Startup.cs** no seu projeto:
 
 Essa classe Startup sempre deve cumprir as seguintes regras:
 
- - Ele sempre deve ser pública
- - Ela deve conter os dois métodos públicos: `ConfigureServices` e `Configure`
+- Ele sempre deve ser pública
+- Ela deve conter os dois métodos públicos: `ConfigureServices` e `Configure`
 
 O método `ConfigureServices` define os serviços que serão usados pelo seu aplicativo.
 
@@ -220,7 +221,6 @@ Para adicionar um controlador, faça o seguinte:
 9. Tente navegar para `http://localhost:xxxx/HelloWorld/Xamarin?name=Amy` (substituindo `xxxx` pela porta correta), você deverá ver o seguinte:
 
     ![Executando o aplicativo no navegador com argumentos](media/asp-net-core-image10.png)
-
 
 ## <a name="troubleshooting"></a>Solução de problemas
 

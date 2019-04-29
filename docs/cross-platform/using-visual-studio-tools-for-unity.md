@@ -10,12 +10,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 380618e0cee57a1cf0f45a1324d150170e5ee16e
-ms.sourcegitcommit: 5c049194fa256b876ad303f491af11edd505756c
+ms.openlocfilehash: abae34aad980d42018c217e150ea72b5896e436e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 12/07/2018
-ms.locfileid: "53027335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815884"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>Usar as Ferramentas do Visual Studio para Unity
 
@@ -189,6 +189,9 @@ Observe que o cenário descrito aqui pressupõe que você tenha o código-fonte,
 
 2. Faça referência ao perfil de framework do Unity correto no projeto de DLL. No Visual Studio, nas propriedades do projeto DLL, defina a propriedade **Estrutura de destino** para a versão do framework do Unity que você está usando. Essa é a Biblioteca de classes base di Unity que corresponde à compatibilidade de API que seu projeto tenha como alvo, como bibliotecas de classes base completas, micro ou da Web. Isso impede que a DLL chame métodos do framework que existem em outros frameworks ou níveis de compatibilidade, mas que podem não existir na versão de framework do Unity que você está usando.
 
+> [!NOTE]
+> O seguinte só é necessário se você estiver usando o tempo de execução herdado do Unity. Se você estiver usando o novo tempo de execução do Unity, não precisará mais usar esses perfis dedicados do 3.5. Use um perfil do .NET 4.x compatível com sua versão do Unity.
+
    ![Defina a estrutura de destino da DLL para o framework do Unity.](../cross-platform/media/vstu_debugging_dll_target_framework.png "vstu_debugging_dll_target_framework")
 
 3. Copie a DLL para a pasta Ativos do seu projeto do Unity. No Unity, ativos são arquivos que são empacotados e implantados juntos com seu aplicativo do Unity para que eles possam ser carregados no tempo de execução. Como DLLs vinculadas no tempo de execução, elas devem ser implantadas como ativos. Para serem implantadas como um ativo, o Editor do Unity exige que as DLLs sejam colocadas dentro da pasta Ativos em seu projeto do Unity. Há duas formas de fazer isso:
@@ -197,7 +200,9 @@ Observe que o cenário descrito aqui pressupõe que você tenha o código-fonte,
 
    - Modifique as configurações de build do seu projeto de DLL para definir a pasta de saída como a pasta **Ativos** do seu projeto do Unity. Arquivos DLL e PDB serão colocados na pasta **Ativos**.
 
-   Os arquivos PDB são necessários para a depuração porque eles contêm símbolos de depuração da DLL e mapeiam o código da DLL para sua forma de código-fonte. As Ferramentas do Visual Studio para Unity usarão informações da DLL e PDB para criar um arquivo DLL.MDB, que é o formato de símbolo de depuração usado pelo mecanismo de script do Unity.
+   Os arquivos PDB são necessários para a depuração porque eles contêm símbolos de depuração da DLL e mapeiam o código da DLL para sua forma de código-fonte. Se você tem como objetivo o tempo de execução herdado, as Ferramentas do Visual Studio para Unity usarão informações da DLL e PDB para criar um arquivo DLL.MDB, que é o formato de símbolo de depuração usado pelo mecanismo de script do Unity herdado. Se você tem como objetivo o novo tempo de execução e usa o Portable-PDB, o Ferramentas do Visual Studio para Unity não tentará fazer nenhuma conversão de símbolo, pois o novo tempo de execução do Unity é capaz de consumir nativamente PDBs portáteis.
+   
+   Veja mais informações sobre a geração de PDB [aqui](https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019). Se você tem como objetivo o novo tempo de execução, certifique-se de que "Informações de depuração" está definido como "Portátil", para gerar o PDB portátil corretamente. Se você tem como objetivo o tempo de execução herdado, precisará usar "Full".
 
 4. Depure seu código. Agora você pode depurar seu código-fonte de DLL junto com o código-fonte do seu projeto do Unity e usar todos os recursos de depuração com os quais esteja acostumado, como pontos de interrupção e depuração no código.
 

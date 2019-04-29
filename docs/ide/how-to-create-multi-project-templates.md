@@ -1,6 +1,6 @@
 ---
 title: Criar modelos de multiprojeto
-ms.date: 01/02/2018
+ms.date: 04/17/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio templates, creating multi-project
@@ -9,12 +9,12 @@ helpviewer_keywords:
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 01bd8101aa1e62e65c83d4da40af4eb624338a89
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: f24a7c0d07c804ca45bb31058061cda714ef6a51
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232614"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62430491"
 ---
 # <a name="how-to-create-multi-project-templates"></a>Como: Criar modelos de multiprojeto
 
@@ -67,6 +67,19 @@ O arquivo *vstemplate* raiz para um modelo multiprojeto difere de um modelo de p
         </ProjectCollection>
     </TemplateContent>
     ```
+
+> [!TIP]
+> Se você deseja que o modelo de multiprojetos apareça apenas na nova caixa de diálogo do projeto e não nos projetos individuais que ele contém, marque os modelos internos como [oculto](../extensibility/hidden-element-visual-studio-templates.md). Por exemplo:
+>
+> ```xml
+> <VSTemplate Type="Project" ... >
+>     <TemplateData>
+>         ...
+>         <Hidden>true</Hidden>
+>     </TemplateData>
+>     ...
+> </VSTemplate>
+> ```
 
 ## <a name="create-a-multi-project-template-from-an-existing-solution"></a>Criar um modelo multiprojetos usando uma solução existente
 
@@ -175,7 +188,7 @@ Este exemplo usa o elemento **SolutionFolder** para dividir os projetos em dois 
 
 ## <a name="see-also"></a>Consulte também
 
-- [Criar modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
+- [Criando modelos de projeto e de item](../ide/creating-project-and-item-templates.md)
 - [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)
 - [Referência de esquema de modelo do Visual Studio (extensibilidade)](../extensibility/visual-studio-template-schema-reference.md)
 - [Elemento SolutionFolder (modelos do Visual Studio)](../extensibility/solutionfolder-element-visual-studio-templates.md)

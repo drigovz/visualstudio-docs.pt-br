@@ -6,12 +6,12 @@ ms.author: crdun
 ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: DB8DC9FE-FF21-4061-8A96-3F9FC08A4F8F
-ms.openlocfilehash: 8c2c6fa6f947f43ed03fd1ec474c9ecb8b84a9fa
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: 8cadbeba73afadbffb32aeaca04ad3de4df8733b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827471"
 ---
 # <a name="update-visual-studio-for-mac"></a>Atualizar o Visual Studio para Mac
 
@@ -54,7 +54,7 @@ Dependendo dos componentes que precisam ser instalados, poderá ser necessário 
 
 ## <a name="troubleshooting"></a>Solução de problemas
 
-Se você tiver problemas com o atualizador, siga as etapas no guia [Solução de problemas do atualizador](updater-troubleshooting.md).
+Se tiver problemas com o atualizador, siga as etapas no guia [Solução de problemas do atualizador](updater-troubleshooting.md).
 
 ## <a name="see-also"></a>Consulte também
 

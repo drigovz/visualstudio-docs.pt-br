@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
-ms.openlocfilehash: 52f9e5f5d21fe69cde613d8e05b365fc8d795dd8
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: b56d7d97ec49bf4c83f2d26a38648cd22cdcfe6a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62982995"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>Instalar o Visual Studio 2019 para Mac
 
@@ -24,7 +24,7 @@ Para começar a desenvolver aplicativos nativos de multiplataforma do .NET no ma
 
 Para criar aplicativos Xamarin para iOS ou macOS, você também precisará de:
 
-- Xcode 11.0 ou posterior. A versão estável mais recente geralmente é recomendada.
+- Xcode 10.0 ou posterior. A versão estável mais recente geralmente é recomendada.
 - Uma ID da Apple. Se ainda não tiver uma ID da Apple, crie uma nova em https://appleid.apple.com. Será necessário ter uma ID da Apple para instalar e entrar no Xcode.
 
 ## <a name="installation-instructions"></a>Instruções de instalação
@@ -32,20 +32,20 @@ Para criar aplicativos Xamarin para iOS ou macOS, você também precisará de:
 1. Baixe o instalador da [página de download do Visual Studio para Mac](https://aka.ms/vsmac).
 2. Depois que o download for concluído, clique no **VisualStudioforMacInstaller.dmg** para montar o instalador e, em seguida, execute-o clicando duas vezes no logotipo de seta:
 
-    [![CClique na seta grande para iniciar a instalação](media/install-installer-sml.png)](media/install-installer.png#lightbox)
+    [![Clique na seta grande para iniciar a instalação](media/install-installer-sml.png)](media/install-installer.png#lightbox)
 
 3. Poderá ser apresentado a você um aviso de que o aplicativo está sendo baixado da Internet. Clique em **Abrir**.
 4. Aguarde enquanto o instalador verifica seu sistema:
 
-    [![TO instalador verifica o sistema em busca de componentes instalados](media/install-checking-sml.png)](media/install-checking.png#lightbox)
+    [![O instalador verifica o sistema em busca de componentes instalados](media/install-checking-sml.png)](media/install-checking.png#lightbox)
 
 5. Um alerta será exibido solicitando que você reconheça os termos de licença e privacidade. Siga os links para lê-los e, em seguida, pressione **Continuar** se você concordar com eles:
 
-    [![FSiga os links para a privacidade e termos e, em seguida, continue se você concordar com eles](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
+    [![Siga os links para a privacidade e termos e, em seguida, continue se você concordar com eles](media/install-privacy-sml.png)](media/install-privacy.png#lightbox)
 
 6. A lista de cargas de trabalho disponíveis é exibida. Selecione aquelas que você deseja usar:
 
-    [![CEscolha quais recursos opcionais de carga de trabalho você deseja instalar](media/install-selection-sml.png)](media/install-selection.png#lightbox)
+    [![Escolha quais recursos opcionais de carga de trabalho você deseja instalar](media/install-selection-sml.png)](media/install-selection.png#lightbox)
 
 7. Após você ter feito suas seleções, pressione o botão **Instalar**.
 8. O instalador exibirá o andamento conforme o download acontece e instalará o Visual Studio para Mac e as cargas de trabalho selecionadas. Talvez seja solicitado que você insira sua senha para conceder os privilégios necessários para a instalação.
@@ -76,7 +76,7 @@ A instalação do Visual Studio para Mac permite que você comece a escrever có
 
 ### <a name="android"></a>Android
 
-1. [Como usar o Gerenciador de SDK do Xamarin Android](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
+1. [Usando o Gerenciador de SDK do Xamarin Android](https://developer.xamarin.com/guides/android/getting_started/installation/android-sdk/?ide=xs)
 2. [Emulador do SDK do Android](https://developer.xamarin.com/guides/android/getting_started/installation/android-emulator/)
 4. [Configurar o dispositivo para desenvolvimento](https://developer.xamarin.com/guides/android/getting_started/installation/set_up_device_for_development/)
 

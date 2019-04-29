@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c48fe67c8d52f962589c9f8628ff49f12f7770c5
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822996"
 ---
 # <a name="analyze-load-test-results-in-the-graphs-view-of-the-load-test-analyzer"></a>Analisar resultados do teste de carga na exibição Grafos do Analisador de Teste de Carga
 
@@ -81,7 +81,7 @@ A tabela a seguir lista os gráficos internos que estão disponíveis para anali
 |**Personalizar os grafos usando a legenda:** A legenda da exibição de Grafos exibe informações de cada contador de desempenho associado a um grafo. Você pode usar a legenda para remover os contadores de desempenho, realçar contadores de desempenho no gráfico e personalizar as opções de plotagem.|-   [Usando a legenda da exibição Grafos para analisar testes de carga](../test/use-the-graphs-view-legend-to-analyze-load-tests.md)|
 |**Exibir contadores em grafos:** Você pode adicionar diferentes tipos de dados a um grafo de resultados do teste de carga colocando contadores no grafo.|-   [Como: Adicionar e excluir contadores em grafos](../test/how-to-add-and-delete-counters-on-graphs-in-load-test-results.md)|
 |**Ampliar grafos:** Após a conclusão de um teste de carga, você poderá usar as barras de zoom para ampliar e rolar para uma região do gráfico. Ao ampliar, você pode examinar detalhadamente os dados que foram gerados durante uma execução de teste de carga.|-   [Como: Ampliar uma região do grafo](../test/how-to-zoom-in-on-a-region-of-the-graph-in-load-test-results.md)|
-|**Organizar grafos lado a lado:** Você pode organizar grafos de resultados de testes de carga em qualquer um dos diversos padrões. Você pode organizar até quatro grafos lado a lado.||
+|**Organizar grafos lado a lado:** Você pode organizar gráficos de resultados de testes de carga em qualquer um dos diversos padrões. Você pode organizar até quatro grafos lado a lado.||
 |**Criar grafos personalizados:** Você pode projetar gráficos que exibam informações específicas sobre resultados de teste de carga. Você cria um gráfico personalizado especificando os contadores de teste de carga que o gráfico exibirá.|-   [Como: Criar grafos personalizados](../test/how-to-create-custom-graphs-in-load-test-results.md)|
 |**Exportar os dados de contadores de desempenho no grafo:** Você pode exportar os dados do grafo para o Microsoft Excel usando o botão **Exportar Dados do Grafo para o Excel** na barra de ferramentas do **Analisador de Teste de Carga** enquanto estiver na exibição **Grafos**.||
 
