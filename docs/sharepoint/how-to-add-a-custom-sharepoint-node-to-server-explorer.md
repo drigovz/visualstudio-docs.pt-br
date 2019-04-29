@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8ece5c207a0244a55078ef44f9156e7e95cedf5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066488"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62556683"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>Como: Adicionar um nó do SharePoint personalizado ao Gerenciador de servidores
   Você pode adicionar nós personalizado sob o **conexões do SharePoint** nó no **Gerenciador de servidores**. Isso é útil quando você deseja exibir componentes adicionais do SharePoint que não são exibidos na **Gerenciador de servidores** por padrão. Para obter mais informações, consulte [estender o nó de conexões do SharePoint no Gerenciador de servidores](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md).

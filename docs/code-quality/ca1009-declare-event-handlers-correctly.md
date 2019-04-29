@@ -19,11 +19,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c3c5d2df6be4fef281d91794b5b71bfa0c3e653f
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55956058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62779669"
 ---
 # <a name="ca1009-declare-event-handlers-correctly"></a>CA1009: Declarar manipuladores de eventos corretamente
 
@@ -40,7 +40,7 @@ ms.locfileid: "55956058"
 ## <a name="rule-description"></a>Descrição da regra
  Os métodos de manipulador de eventos utilizam dois parâmetros. A primeira é do tipo <xref:System.Object?displayProperty=fullName> e é denominado 'remetente'. Este é o objeto que acionou o evento. O segundo parâmetro é do tipo <xref:System.EventArgs?displayProperty=fullName> e é chamado 'e'. Esses são os dados associados ao evento. Por exemplo, se o evento é gerado sempre que um arquivo é aberto, os dados de evento normalmente contém o nome do arquivo.
 
- Métodos do manipulador de eventos não devem retornar um valor. No C# linguagem de programação, isso é indicado pelo tipo de retorno `void`. Um manipulador de eventos pode chamar vários métodos em vários objetos. Se os métodos eram permitidos para retornar um valor, vários valores de retorno ocorreria para cada evento, e apenas o valor do último método que foi invocado estaria disponível.
+ Métodos do manipulador de eventos não devem retornar um valor. No c# linguagem de programação, isso é indicado pelo tipo de retorno `void`. Um manipulador de eventos pode chamar vários métodos em vários objetos. Se os métodos eram permitidos para retornar um valor, vários valores de retorno ocorreria para cada evento, e apenas o valor do último método que foi invocado estaria disponível.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
  Para corrigir uma violação dessa regra, corrija a assinatura, tipo de retorno ou nomes de parâmetro do delegado. Para obter detalhes, consulte o exemplo a seguir.

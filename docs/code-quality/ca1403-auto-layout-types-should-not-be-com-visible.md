@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: fa965caf63dad6e81e2aeabbc93e97c7aa4b7a80
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55910864"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546193"
 ---
 # <a name="ca1403-auto-layout-types-should-not-be-com-visible"></a>CA1403: Tipos de layout automático não devem ser visíveis no COM
 
@@ -39,7 +39,7 @@ Um tipo de valor visível (COM Component Object Model) é marcado com o <xref:Sy
 
 ## <a name="rule-description"></a>Descrição da regra
 
-<xref:System.Runtime.InteropServices.LayoutKind> tipos de layout são gerenciados pelo common language runtime. O layout desses tipos pode ser alterado entre as versões do .NET Framework, que interrompe a clientes COM que esperam um layout específico. Se o <xref:System.Runtime.InteropServices.StructLayoutAttribute> atributo não for especificado, os compiladores do C#, Visual Basic e C++ especificam [LayoutKind](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) para tipos de valor.
+<xref:System.Runtime.InteropServices.LayoutKind> tipos de layout são gerenciados pelo common language runtime. O layout desses tipos pode ser alterado entre as versões do .NET Framework, que interrompe a clientes COM que esperam um layout específico. Se o <xref:System.Runtime.InteropServices.StructLayoutAttribute> atributo não for especificado, os compiladores do c#, Visual Basic e C++ especificam [LayoutKind](<xref:System.Runtime.InteropServices.LayoutKind.Auto>) para tipos de valor.
 
 Marcado como caso contrário, todos os tipos públicos e não genérica são visíveis no COM, e todos os tipos não públicos e genéricos são invisíveis a com.&lt;1} No entanto, para reduzir os falsos positivos, essa regra exige a visibilidade de COM do tipo a ser declarado explicitamente. O assembly que contém deve ser marcado com o <xref:System.Runtime.InteropServices.ComVisibleAttribute?displayProperty=fullName> definido como `false` e o tipo deve ser marcado com o <xref:System.Runtime.InteropServices.ComVisibleAttribute> definido como `true`.
 

@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f73b67ac4268c04dfa9ff7ab020891623f528f9b
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851261"
 ---
 # <a name="edit-and-continue-visual-basic"></a>Editar e Continuar (Visual Basic)
 Editar e Continuar são um recurso para depuração do [!INCLUDE [vbprvb](../code-quality/includes/vbprvb_md.md)] que permite alterar seu código durante a execução em modo de interrupção. Depois que as edições do código tiverem sido aplicadas, você poderá retomar a execução de código com as novas edições no lugar e visualizar o efeito.
@@ -45,7 +45,7 @@ Editar e Continuar são um recurso para depuração do [!INCLUDE [vbprvb](../cod
  Os tópicos desta seção fornecem detalhes adicionais sobre como usar esse recurso e que tipos de alterações não são permitidas.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Como: aplicar edições no modo de interrupção com editar e continuar](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md) explica como aplicar edições de código no modo de interrupção.
+ [Como: Aplicar edições no modo de interrupção com editar e continuar](../debugger/how-to-apply-edits-in-break-mode-with-edit-and-continue.md) explica como aplicar edições de código no modo de interrupção.
 
  [Suporte para alterações de código (C# e Visual Basic)](../debugger/supported-code-changes-csharp.md) descreve quais tipos de edições não podem ser executadas no [!INCLUDE [vb_current_short](../debugger/includes/vb_current_short_md.md)] editar e continuar.
 

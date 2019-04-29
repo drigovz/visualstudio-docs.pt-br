@@ -34,11 +34,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b83cb026bec6d33490517e5703a042b4a8e2434c
-ms.sourcegitcommit: cdcbf254db737d42275e95de4ffc4f8c14e87e00
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57428694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846445"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>Gerenciar exceções com o depurador do Visual Studio
 
@@ -66,14 +66,14 @@ O depurador pode interromper a execução no ponto em que uma exceção é lanç
 
 No **configurações de exceção** janela (**Depurar > Windows > configurações de exceção**), expanda o nó para uma categoria de exceções, tais como **exceções Common Language Runtime**. Em seguida, selecione a caixa de seleção para uma exceção específica dentro dessa categoria, como **System. AccessViolationException**. Você também pode selecionar uma categoria inteira de exceções.
 
-![Check-AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
+![Checked AccessViolationException](../debugger/media/exceptionsettingscheckaccess.png "ExceptionSettingsCheckAccess")
 
 > [!TIP]
 > Você pode encontrar exceções específicas usando o **pesquisa** janela na **configurações de exceção** barra de ferramentas, ou usar Pesquisar para filtrar para namespaces específicos (como **System.IO**).
 
 Se você selecionar uma exceção na **configurações de exceção** janela, a execução do depurador interromperá sempre que a exceção é lançada, não importa se ele é manipulado. Agora, a exceção é chamada uma exceção de primeira chance. Por exemplo, aqui estão alguns cenários:
 
-- A seguir C# gera do método Main do aplicativo de console, um **AccessViolationException** dentro de um `try/catch` bloco.
+- O seguinte c# aplicativo de console, o método Main lança um **AccessViolationException** dentro de um `try/catch` bloco.
 
   ```csharp
   static void Main(string[] args)
@@ -100,7 +100,7 @@ Se você selecionar uma exceção na **configurações de exceção** janela, a 
 
   mas ele não exibe o `here` linha.
 
-- Um C# aplicativo de console faz referência a uma biblioteca de classes com uma classe que tem dois métodos. Um método lança uma exceção e lida com isso, enquanto um segundo método gera a mesma exceção, mas não lida com ele.
+- Um aplicativo de console c# faz referência a uma biblioteca de classes com uma classe que tem dois métodos. Um método lança uma exceção e lida com isso, enquanto um segundo método gera a mesma exceção, mas não lida com ele.
 
   ```csharp
   public class Class1
@@ -223,7 +223,7 @@ Para adicionar exceções condicionais:
 ## <a name="see-also"></a>Consulte também
 
 - [Continuar a execução depois de uma exceção](../debugger/continuing-execution-after-an-exception.md)<br/>
-- [Como examinar um código de sistema após uma exceção](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
-- [Como usar verificações de tempo de execução nativas](../debugger/how-to-use-native-run-time-checks.md)<br/>
+- [Como: Examinar o código do sistema após uma exceção](../debugger/how-to-examine-system-code-after-an-exception.md)<br/>
+- [Como: Usar verificações de tempo de execução nativas](../debugger/how-to-use-native-run-time-checks.md)<br/>
 - [Usar verificações de tempo de execução sem a biblioteca em tempo de execução C](../debugger/using-run-time-checks-without-the-c-run-time-library.md)<br/>
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)

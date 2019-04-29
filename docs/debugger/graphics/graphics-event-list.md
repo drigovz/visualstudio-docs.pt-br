@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6af97740302d5e7053323b54ef11cbf1a279dd94
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066774"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848871"
 ---
 # <a name="graphics-event-list"></a>Lista de eventos do gráfico
 Use a lista de eventos de gráficos no analisador de gráficos do Visual Studio para explorar os eventos Direct3D registrados durante a renderização de um quadro do seu jogo ou aplicativo.

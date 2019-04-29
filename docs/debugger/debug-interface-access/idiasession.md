@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c69383eacfdb39a65cd9a791185d6793e9e6f681
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642801"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62832301"
 ---
 # <a name="idiasession"></a>IDiaSession
 Fornece um contexto de consulta para símbolos de depuração.
@@ -34,7 +34,7 @@ A tabela a seguir mostra os métodos de `IDiaSession`.
 |Método|Descrição|
 |------------|-----------------|
 |[IDiaSession::get_loadAddress](../../debugger/debug-interface-access/idiasession-get-loadaddress.md)|Recupera o endereço de carregamento para o arquivo executável que corresponde aos símbolos nesse repositório de símbolos. Este é o mesmo valor que foi passado para o `put_loadAddress` método.|
-|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Define o endereço de carregamento para o arquivo executável que corresponde aos símbolos nesse repositório de símbolos. **Observação:** é importante chamar esse método quando você receber um `IDiaSession` do objeto e antes de começar a usar o objeto.|
+|[IDiaSession::put_loadAddress](../../debugger/debug-interface-access/idiasession-put-loadaddress.md)|Define o endereço de carregamento para o arquivo executável que corresponde aos símbolos nesse repositório de símbolos. **Observação:**  É importante chamar esse método quando você receber um `IDiaSession` do objeto e antes de começar a usar o objeto.|
 |[IDiaSession::get_globalScope](../../debugger/debug-interface-access/idiasession-get-globalscope.md)|Recupera uma referência ao escopo global.|
 |[IDiaSession::getEnumTables](../../debugger/debug-interface-access/idiasession-getenumtables.md)|Recupera um enumerador para todas as tabelas contidas no repositório de símbolos.|
 |[IDiaSession::getSymbolsByAddr](../../debugger/debug-interface-access/idiasession-getsymbolsbyaddr.md)|Recupera um enumerador para todos os símbolos nomeados em locais estáticos.|

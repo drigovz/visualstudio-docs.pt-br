@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 4038f1f65d688ee8d9bbf9ad01eb1698b811bee5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075214"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62850111"
 ---
 # <a name="error-unable-to-connect-to-sql-server-on-remote-machine"></a>Erro: Não é possível se conectar ao SQL Server no computador remoto
 Não é possível conectar ao SQL Server no computador remoto *nome*. Acesso negado. Verifique se você instalou o depurador remoto no computador remoto. Se o computador remoto não estiver em um domínio ou se o Visual Studio for executado em uma conta local, o computador remoto deverá ter uma conta com o mesmo nome de usuário e senha que a conta local.

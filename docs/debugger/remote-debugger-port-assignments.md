@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 672d54b29e6de9302e88b1b95b4117783b8a0113
-ms.sourcegitcommit: 1024f336dcd8e8a4c50b9a9ad8ec85b6e70073a8
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/09/2019
-ms.locfileid: "57699610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62903038"
 ---
 # <a name="remote-debugger-port-assignments"></a>Atribuições de porta do depurador remoto
 O depurador remoto do Visual Studio pode ser executado como um aplicativo ou como um serviço em segundo plano. Quando ele é executado como um aplicativo, ele usa uma porta atribuída por padrão, da seguinte maneira:
@@ -54,12 +54,12 @@ O depurador remoto do Visual Studio pode ser executado como um aplicativo ou com
  Quando a versão de 64 bits do depurador remoto é iniciada, ele usa principal da porta (4022) por padrão.  Se você depurar um processo de 32 bits, a versão de 64 bits do depurador remoto inicia uma versão de 32 bits do depurador remoto na porta 4023 (o número de porta principal incrementado em 1). Se você executar o depurador remoto de 32 bits, ele usa 4022 e 4023 não é usado.
 :::moniker-end
 
- Essa porta é configurável na linha de comando: **Msvsmon /wow64port \<número da porta >**.
+ Essa porta é configurável na linha de comando: **O msvsmon /wow64port \<número da porta >**.
 
 ## <a name="the-discovery-port"></a>A porta de descoberta
  UDP 3702 é usada para localizar instâncias em execução do depurador remoto na rede (por exemplo, o **encontrar** caixa de diálogo na **anexar ao processo** caixa de diálogo). Ele é usado apenas para a descoberta de uma máquina executando o depurador remoto, portanto, é opcional se você tiver alguma outra maneira de saber o nome do computador ou endereço IP do computador de destino. Esta é uma porta padrão para a descoberta, portanto, o número da porta não pode ser configurado.
 
- Se você não quiser habilitar a descoberta, você pode iniciar o msvsmon da linha de comando com a descoberta desabilitada: **Msvsmon /nodiscovery**.
+ Se você não quiser habilitar a descoberta, você pode iniciar o msvsmon da linha de comando com a descoberta desabilitada:  **O msvsmon /nodiscovery**.
 
 ## <a name="remote-debugger-ports-on-azure"></a>Portas do depurador remoto no Azure
  As seguintes portas são usadas pelo depurador remoto no Azure. As portas no serviço de nuvem são mapeadas para as portas na VM individual. Todas as portas são TCP.

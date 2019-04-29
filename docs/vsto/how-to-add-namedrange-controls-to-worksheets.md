@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2cc909828dc77c0f1dbe31c79255f2c93d2a95b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066829"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826547"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>Como: Adicionar controles NamedRange a planilhas
   Você pode adicionar <xref:Microsoft.Office.Tools.Excel.NamedRange> controles a uma planilha do Microsoft Office Excel em tempo de design e em tempo de execução em projetos de nível de documento.

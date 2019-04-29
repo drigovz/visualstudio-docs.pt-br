@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 581f9c0b9907fd59863f6a468a45ef67d9966475
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813146"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>Como: Executar código quando etapas de implantação são executadas
   Se você quiser realizar tarefas adicionais para uma etapa de implantação em um projeto do SharePoint, você pode manipular eventos que são gerados por itens de projeto do SharePoint antes e após cada etapa de implantação de execução do Visual Studio. Para obter mais informações, consulte [estendendo SharePoint empacotamento e implantação](../sharepoint/extending-sharepoint-packaging-and-deployment.md).

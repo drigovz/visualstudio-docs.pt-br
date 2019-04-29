@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 490c131820cbe16b8e18be649ad5439c024ad3c9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56677882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62874244"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
 Esse método cancela a avaliação da expressão assíncrona como iniciados por uma chamada para o [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) método.

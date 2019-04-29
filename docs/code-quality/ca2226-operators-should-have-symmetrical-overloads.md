@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a903fbd3b01523a86302b58f8e9a74917312566c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541725"
 ---
 # <a name="ca2226-operators-should-have-symmetrical-overloads"></a>CA2226: Operadores devem ter sobrecargas simétricas
 
@@ -40,7 +40,7 @@ Por padrão, essa regra olha apenas tipos visíveis externamente, mas isso é [c
 
 Não há nenhuma circunstância onde igualdade ou desigualdade é aplicável a instâncias de um tipo, e o operador oposto é indefinido. Tipos normalmente implementam o operador de desigualdade, retornando o valor negado do operador de igualdade.
 
-O compilador C# emite um erro para as violações dessa regra.
+O compilador c# emite um erro para as violações dessa regra.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 

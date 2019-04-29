@@ -19,17 +19,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 9cf25518a5511c0da629c400adfe866789929ea2
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708713"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852353"
 ---
-# <a name="debugging-web-applications-troubleshooting"></a>Depurando aplicativos Web: solucionando problemas
+# <a name="debugging-web-applications-troubleshooting"></a>Depurando aplicativos Web: Solução de problemas
 Esta seção contém procedimentos comuns que podem ser usados para resolver erros.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Como: verificar as configurações de propriedade do IIS](../debugger/how-to-verify-iis-property-settings.md) explica como definir corretamente as propriedades no IIS para habilitar a depuração.
+ [Como: Verificar as configurações de propriedade do IIS](../debugger/how-to-verify-iis-property-settings.md) explica como definir corretamente as propriedades no IIS para habilitar a depuração.
 
 ## <a name="related-sections"></a>Seções relacionadas
  [Depurando aplicativos Web: Erros e solução de problemas](../debugger/debugging-web-applications-errors-and-troubleshooting.md) explica a resolução de erro e solução de problemas.

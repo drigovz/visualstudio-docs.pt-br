@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 384d7b3488e6ef90994e24e95fbe7a516428e2bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092351"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852771"
 ---
 # <a name="debugger-security"></a>Segurança do depurador
 A capacidade de depurar outro processo oferece poderes extremamente amplos que você não teria de outra forma, especialmente ao depurar remotamente. Um depurador mal-intencionado pode impor danos extensivos no computador que está sendo depurado.

@@ -11,11 +11,11 @@ ms.assetid: 9358e8c3-b9d2-4fd4-aaab-cf48d1526db4
 caps.latest.revision: 9
 manager: jillfra
 ms.openlocfilehash: 18ecf0a21c5b2d73bdf8e439d25765b6b275cbd9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434183"
 ---
 # <a name="updating-property-values-in-the-properties-window"></a>Atualizando valores de propriedade na janela Propriedades
 Há duas maneiras de manter o **propriedades** janela em sincronia com o valor da propriedade muda. A primeira é chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> interface, que fornece acesso à funcionalidade de janelas básicas, incluindo acesso a e criação de janelas de documentos e de ferramentas fornecidas pelo ambiente. As etapas a seguir descrevem esse processo de sincronização.  

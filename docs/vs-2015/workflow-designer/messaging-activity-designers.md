@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 250b213fc3bc54d67f55d41c5eb3aba7e3488cd4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926522"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62420159"
 ---
 # <a name="messaging-activity-designers"></a>Designer de atividade de mensagem
 Os designers de atividade de mensagem são usados para criar e configurar as atividades de mensagem que enviam e recebem mensagens de [!INCLUDE[indigo1](../includes/indigo1-md.md)] de dentro de um aplicativo de [!INCLUDE[wf](../includes/wf-md.md)] . [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)] apresenta cinco atividades de mensagem e [!INCLUDE[wfd1](../includes/wfd1-md.md)] fornece dois novos designer do modelo que permitem a você gerenciar a mensagem em um fluxo de trabalho. Os tópicos contidos nesta seção e listados na tabela a seguir fornecem orientação sobre como usar o designer de atividade e modelo de [!INCLUDE[wfd2](../includes/wfd2-md.md)] .  

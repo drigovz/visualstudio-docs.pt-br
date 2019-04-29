@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: fb4bbb124575346c930fa5539801deb3c9981cac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575238"
 ---
 # <a name="how-to-programmatically-count-characters-in-documents"></a>Como: Por meio de programação contar caracteres em documentos
   É o primeiro caractere em um documento na posição do caractere 0, que representa o ponto de inserção. A última posição de caractere é igual ao número total de caracteres no documento. Você pode determinar o número de caracteres em um documento usando o <xref:Microsoft.Office.Interop.Word.Characters.Count%2A> propriedade do <xref:Microsoft.Office.Interop.Word.Characters> coleção.

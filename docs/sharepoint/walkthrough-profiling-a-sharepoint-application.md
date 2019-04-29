@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3e10c76d40efefe28decd9efd554e928ffea20c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62834005"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>Passo a passo: Perfil de um aplicativo do SharePoint
   Este passo a passo mostra como usar as ferramentas de criação de perfil no Visual Studio para otimizar o desempenho de um aplicativo do SharePoint. O aplicativo de exemplo é um receptor de evento de recurso do SharePoint que contém um loop ocioso que pode degradar o desempenho do receptor de evento do recurso. O criador de perfil do Visual Studio permite que você localize e eliminar a parte mais cara (desempenho mais lento) do projeto, também conhecido como o *afunilamento*.

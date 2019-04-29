@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6ff9c73ebbe976df7c3d25304280e743cad0423c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908504"
 ---
 # <a name="source-control-plug-in-architecture"></a>Arquitetura do plug-in de controle do código-fonte
 Você pode adicionar suporte de controle do código-fonte para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE), implementando e anexar um plug-in de controle do código-fonte. O IDE se conecta ao controle de fonte de plug-in por meio da API de plug-in de controle de origem bem definido. O IDE expõe os recursos de controle de versão do sistema de controle de origem, fornecendo uma interface do usuário (IU) que consiste em barras de ferramentas e comandos de menu. O plug-in de controle de origem implementa a funcionalidade de controle do código-fonte.

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 663bc7a2add5e436cb7b0166387d6e3638087a1a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62432155"
 ---
 # <a name="tool-window-display-configuration"></a>Configuração de exibição da janela de ferramenta
 Quando um VSPackage registra uma janela de ferramentas, a posição padrão, tamanho, estilo de encaixe e outras informações de visibilidade é especificado em valores opcionais. Para obter mais informações sobre o registro de janela da ferramenta, consulte [ferramenta Windows no registro](../extensibility/tool-windows-in-the-registry.md)

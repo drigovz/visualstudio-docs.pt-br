@@ -12,13 +12,13 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: fb7b601c04c73cd1f617e42c848edaf7dc65bde8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54798940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62429314"
 ---
-# <a name="how-to-create-starter-kits"></a>Como criar kits de início
+# <a name="how-to-create-starter-kits"></a>Como: Criar Kits de início
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Um kit de início contém código para um aplicativo completo e a documentação sobre como modificar ou expandir o aplicativo. Criar um kit de início é fundamentalmente o mesmo que criar um modelo de projeto normal, a única diferença é que um Kit de Início contem arquivos de documentação definidos para abrir quando um projeto baseado no Kit de Início é criado.  
@@ -47,10 +47,10 @@ Um kit de início contém código para um aplicativo completo e a documentação
   
  Os tópicos a seguir contêm informações sobre a criação de modelos.  
   
- [Como criar modelos de projeto](../ide/how-to-create-project-templates.md)  
+ [Como: Criar modelos de projeto](../ide/how-to-create-project-templates.md)  
  Explica como usar o assistente **Exportar Modelo** para criar um modelo.  
   
- [Como atualizar modelos existentes](../ide/how-to-update-existing-templates.md)  
+ [Como: Atualizar modelos existentes](../ide/how-to-update-existing-templates.md)  
  Descreve como editar um modelo exportado. Use este procedimento para modificar o arquivo .vstemplate para personalizar seu kit de início.  
   
 ## <a name="see-also"></a>Consulte também  

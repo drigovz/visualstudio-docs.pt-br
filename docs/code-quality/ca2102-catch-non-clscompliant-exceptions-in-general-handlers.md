@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 2f361720f45a24e561ab2a886537bda02c73c006
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55923702"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545766"
 ---
 # <a name="ca2102-catch-non-clscompliant-exceptions-in-general-handlers"></a>CA2102: Capturar exceções não CLSCompliant em manipuladores gerais
 
@@ -35,7 +35,7 @@ Um membro em um assembly que não está marcado com o <xref:System.Runtime.Compi
 
 ## <a name="rule-description"></a>Descrição da regra
 
-Um bloco catch que manipula <xref:System.Exception> captura todas as exceções de Common Language Specification (CLS) em conformidade. No entanto, ele não capturará exceções de não-CLS em conformidade. Não-CLS exceções em conformidade podem ser geradas a partir de código nativo ou código gerenciado que foi gerado pelo Microsoft intermediate language (MSIL) montador. Observe que o C# e [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] compiladores não permite não-CLS em conformidade com exceções sejam geradas e [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] não capturará exceções de não-CLS em conformidade. Se for a intenção do bloco catch tratar todas as exceções, use a seguinte sintaxe do bloco catch geral.
+Um bloco catch que manipula <xref:System.Exception> captura todas as exceções de Common Language Specification (CLS) em conformidade. No entanto, ele não capturará exceções de não-CLS em conformidade. Não-CLS exceções em conformidade podem ser geradas a partir de código nativo ou código gerenciado que foi gerado pelo Microsoft intermediate language (MSIL) montador. Observe que o c# e [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] compiladores não permite não-CLS em conformidade com exceções sejam geradas e [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] não capturará exceções de não-CLS em conformidade. Se for a intenção do bloco catch tratar todas as exceções, use a seguinte sintaxe do bloco catch geral.
 
 - C#: `catch {}`
 

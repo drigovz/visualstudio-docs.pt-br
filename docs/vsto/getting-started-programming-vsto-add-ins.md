@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 7b709012dafe0db3dcc0959908a1e6b4d9e07e21
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061977"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62788760"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>Introdução à programação VSTO Add-ins
   Você pode usar suplementos do VSTO para automatizar aplicativos do Microsoft Office, estender os recursos do aplicativo e personalizar a interface do usuário (IU) do aplicativo. Para obter informações sobre como os suplementos do VSTO são comparados a outros tipos de soluções do Office que você pode criar usando o Visual Studio, consulte [visão geral de desenvolvimento de soluções do Office &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md).

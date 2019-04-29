@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 8cecb3e78cea90b927dc6b67b5b4a2cb50bfa87c
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62581090"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>Criar colunas de site, tipos de conteúdo e listas para o SharePoint
   Visual Studio fornece modelos de item de projeto para muitos fundamentais SharePoint itens diferentes, incluindo *listas* e *tipos de conteúdo*, que podem incorporar as colunas de site (ou  *campos*). Os novos designers para tipos de conteúdo e listas facilitam a criação desses itens mais fácil do que nunca.

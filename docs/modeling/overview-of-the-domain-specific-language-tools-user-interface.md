@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3bcc16b5287e4980d94a7cbcc4dff4d1f5f63d00
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936884"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62808311"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>Visão geral da interface de usuário das Ferramentas de Linguagem Específica do Domínio
 Quando você abre uma solução de ferramentas de linguagem específica do domínio (ferramentas DSL) no Visual Studio, a interface do usuário será semelhante a figura a seguir.
@@ -39,7 +39,7 @@ Quando você abre uma solução de ferramentas de linguagem específica do domí
 
  A tabela a seguir explica alguns dos elementos do diagrama de modelo de domínio.
 
-|**Termo**|**Definição**|
+|**Prazo**|**Definição**|
 |-|-|
 |Classe de domínio|As classes de domínio são os tipos de elementos em seus modelos.<br /><br /> Uma classe de domínio pode aparecer mais de uma vez em um diagrama, se ela for o destino de mais de um relacionamento.<br /><br /> Para adicionar uma classe de domínio, arraste a ferramenta de classe de domínio da **Caixa de ferramentas** para o lado **Classes e relacionamentos** do diagrama.|
 |Relacionamento de domínio|Os relacionamentos de domínio são os tipos de links entre os elementos nos modelos.<br /><br /> Um *relacionamento de incorporação* indica que o elemento de destino pertence ou está contido no elemento de origem e aparece como uma linha sólida. Cada elemento em um modelo deve ser o destino de um relacionamento de incorporação, para que o modelo forme uma árvore. Um *relacionamento de referência* indica um link geral entre elementos de modelo e aparece como uma linha tracejada. Qualquer elemento pode ter qualquer número de links de referência.<br /><br /> Crie um relacionamento clicando na ferramenta na **Caixa de ferramentas** e clicando na classe de domínio de origem e, em seguida, na classe de destino.|

@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 79d116cfb7c9b6514032aa12d916b21b38ae94b3
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942616"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62811681"
 ---
 # <a name="create-models-for-your-app"></a>Criar modelos para o aplicativo
 
@@ -38,7 +38,7 @@ Para visualizar a arquitetura de um sistema ou o código existente, crie diagram
 
 |**Diagrama**|**Shows**|
 |-|-|
-|[Diagramas de dependência: Diretrizes](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramas de dependência: Referência](../modeling/layer-diagrams-reference.md)|Arquitetura de alto nível do sistema|
+|[Diagramas de dependência: diretrizes](../modeling/layer-diagrams-guidelines.md)<br /><br /> [Diagramas de dependência: referência](../modeling/layer-diagrams-reference.md)|Arquitetura de alto nível do sistema|
 |Mapas de código<br /><br /> [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)<br /><br /> [Encontrar possíveis problemas usando analisadores de mapa de códigos](../modeling/find-potential-problems-using-code-map-analyzers.md)|Dependências e outros relacionamentos no código existente|
 |Diagramas de classe do código gerado<br /><br /> [Trabalhando com diagramas de classe (Designer de Classe)](../ide/class-designer/designing-and-viewing-classes-and-types.md)|Tipos e suas relações no código do .NET|
 

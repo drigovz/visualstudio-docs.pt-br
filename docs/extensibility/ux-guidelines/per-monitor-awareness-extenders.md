@@ -17,11 +17,11 @@ ms.topic: reference
 ms.workload:
 - multiple
 ms.openlocfilehash: 44938c5753491521702867398a514f770cf831fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62793627"
 ---
 # <a name="per-monitor-awareness-support-for-visual-studio-extenders"></a>Suporte a reconhecimento por Monitor Extensores do Visual Studio
 Versões anteriores do Visual Studio de 2019 tinham seu contexto de reconhecimento DPI definido como o sistema sem suporte, em vez de reconhecimento de DPI (PMA) por monitor. Em execução no reconhecimento de sistema resultou em um visual degradado experiência sempre que o Visual Studio tinha que processar em vários monitores com fatores de escala diferente ou remota em máquinas com configurações de exibição diferentes, por exemplo, (diferente de (por exemplo, desfocadas fontes ou ícones) Windows dimensionamento).

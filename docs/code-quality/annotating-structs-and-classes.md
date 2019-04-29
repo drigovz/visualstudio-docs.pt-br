@@ -25,11 +25,11 @@ manager: wpickett
 ms.workload:
 - multiple
 ms.openlocfilehash: fa459e3461ef5e58eb1e5b0c675c7e1b408d6f88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079665"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62571414"
 ---
 # <a name="annotating-structs-and-classes"></a>Anotando estruturas e classes
 Você pode anotar os membros de classe e struct usando anotações que atuam como as invariáveis — elas são presumidos como verdadeiro em qualquer chamada de função ou entrada/saída da função que envolve a estrutura de inclusão como um parâmetro ou um valor de resultado.

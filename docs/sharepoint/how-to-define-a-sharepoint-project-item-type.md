@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 0e0483f535dfd7a483d2b83728f78fa9c7167bcb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061431"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814031"
 ---
 # <a name="how-to-define-a-sharepoint-project-item-type"></a>Como: Definir um tipo de item de projeto do SharePoint
   Defina um tipo de item de projeto quando você deseja criar um item de projeto personalizado do SharePoint. Para obter mais informações, consulte [definindo tipos personalizados de item de projeto do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md).

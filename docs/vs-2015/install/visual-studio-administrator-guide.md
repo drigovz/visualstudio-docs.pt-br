@@ -14,11 +14,11 @@ author: TerryGLee
 ms.author: tglee
 manager: jillfra
 ms.openlocfilehash: 5a84f0a037df92ff31ce66eb6692367ef1d209f6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546651"
 ---
 # <a name="visual-studio-administrator-guide"></a>Guia do Administrador do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,8 +69,8 @@ Por padrão, a instalação do Visual Studio habilita os comentários do cliente
   
 |Tópico|Descrição|  
 |-----------|-----------------|  
-|[Como: Instalar uma versão específica do Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Descreve como instalar configurações específicas da versão atual do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
-|[Como: Criar e executar uma instalação autônoma do Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Descreve como instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no modo autônomo.|  
-|[Como: Aplicar chaves de produto durante a implantação do Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Descreve como aplicar chaves de produto durante a implantação em vários computadores.|  
+|[Como: instalar uma versão específica do Visual Studio](../install/how-to-install-a-specific-release-of-visual-studio.md)|Descreve como instalar configurações específicas da versão atual do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|  
+|[Como: criar e executar uma instalação autônoma do Visual Studio](../install/how-to-create-and-run-an-unattended-installation-of-visual-studio.md)|Descreve como instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] no modo autônomo.|  
+|[Como: aplicar automaticamente chaves do produto (Product Keys) durante a implantação do Visual Studio](../install/how-to-automatically-apply-product-keys-when-deploying-visual-studio.md)|Descreve como aplicar chaves de produto durante a implantação em vários computadores.|  
 |[Guia do administrador do Help Viewer](../ide/help-viewer-administrator-guide.md)|Fornece informações sobre como gerenciar as instalações da Ajuda local para ambientes de rede que têm ou não tem acesso à internet.|  
 |[Instalar o Visual Studio](../install/install-visual-studio-2015.md)|Fornece instruções e links para tópicos que descrevem como instalar [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].|

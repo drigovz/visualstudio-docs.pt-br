@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2abf61bbc960e342a395e9c0ff3395ecde852137
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604852"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580962"
 ---
 # <a name="create-site-definitions-for-sharepoint"></a>Criar definições de site do SharePoint
   O projeto de definição de Site do SharePoint no [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] permite que você crie uma *definição de site*, que serve como base para um novo site do SharePoint. Essas definições não apenas determinam a aparência e comportamento de site do SharePoint, mas também seu conteúdo padrão e funcionalidade. Na definição, você pode colocar pré-configurada listas, tipos de conteúdo, receptores de eventos, imagens e outros itens. O SharePoint inclui algumas definições de site, como de BLOG, por exemplo. Quando você cria um site com base na definição do site BLOG, o site contém as listas, Web parts e outros itens que exige que um site de blog.

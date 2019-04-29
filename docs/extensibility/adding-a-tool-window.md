@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 22b84716f320883c71f534ea762adf34d5c2a983
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56709935"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891939"
 ---
 # <a name="add-a-tool-window"></a>Adicionar uma janela de ferramentas
 Neste passo a passo, você aprenderá como criar uma janela de ferramenta e integrá-la no Visual Studio das seguintes maneiras:

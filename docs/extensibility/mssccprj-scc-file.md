@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fbf9c2f914bbe0bed741a407faf1d0055a4b43a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806429"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ. Arquivos SCC
 Quando você coloca uma solução do Visual Studio ou o projeto sob controle do código-fonte usando o IDE, o IDE recebe duas informações cruciais. A informação vem de controle de fonte de plug-in na forma de cadeias de caracteres. Essas cadeias de caracteres "AuxPath" e "Nomedoprojeto" são opacas para o IDE, mas eles são usados pelo plug-in para localizar a solução ou projeto no controle de versão. O IDE normalmente obtém essas cadeias de caracteres na primeira vez chamando o [SccGetProjPath](../extensibility/sccgetprojpath-function.md), e ele, em seguida, salva-os no arquivo de projeto ou solução para futuras chamadas para o [SccOpenProject](../extensibility/sccopenproject-function.md). Quando inseridos nos arquivos de solução e projeto, as cadeias de caracteres "AuxPath" e "Nomedoprojeto" não são atualizadas automaticamente quando um usuário de branches, bifurcações, ou copia os arquivos de solução e projeto que estão no controle de versão. Para certificar-se de que os arquivos de solução e projeto apontam para sua localização correta no controle de versão, os usuários devem atualizar manualmente as cadeias de caracteres. Porque as cadeias de caracteres devem ser opaco, pode não sempre ser claro como eles devem ser atualizados.

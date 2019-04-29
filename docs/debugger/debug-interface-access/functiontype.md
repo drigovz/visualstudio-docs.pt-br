@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 8913d9b26ab79a37e9d6f28a5f3bf1974df15a5f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62554450"
 ---
 # <a name="functiontype"></a>FunctionType
 Cada assinatura de função exclusiva é identificada por um `SymTagFunctionType` símbolo. Cada parâmetro é identificado como um símbolo de filho de classe com um `SymTagFunctionArgType` marca.

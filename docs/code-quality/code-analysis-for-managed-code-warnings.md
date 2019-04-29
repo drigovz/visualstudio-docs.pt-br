@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: d6238919db971492ffd226708209b97bceceb9e0
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55970095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62540762"
 ---
 # <a name="code-analysis-for-managed-code-warnings"></a>Avisos da análise de código para código gerenciado
 A ferramenta de análise de código gerenciado fornece avisos que indicam a violações de regra em bibliotecas de código gerenciado. Os avisos são organizados em áreas de regra, como design, localização, desempenho e segurança. Cada aviso significa que uma violação de uma regra de análise de código gerenciado. Esta seção fornece discussões detalhadas e exemplos de cada aviso de análise de código gerenciado.

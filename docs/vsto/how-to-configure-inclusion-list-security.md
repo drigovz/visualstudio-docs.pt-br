@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ef4d25088e56f2223cb392dbc00c8454e1a291ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102010"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826373"
 ---
 # <a name="how-to-configure-inclusion-list-security"></a>Como: Configurar a segurança da lista de inclusões
   Se você tiver permissões de administrador, você pode configurar o [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] prompt confiável para controlar se os usuários finais recebem a opção de instalação de soluções do Office, salvando uma decisão de confiança para a lista de inclusão. Para obter informações sobre listas de inclusão, consulte [soluções do Office de confiança usando listas de inclusão](../vsto/trusting-office-solutions-by-using-inclusion-lists.md).

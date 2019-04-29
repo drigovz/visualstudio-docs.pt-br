@@ -10,15 +10,15 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: dbd4cf06a5d51a668acc5c980e7e93a94f2992f2
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816433"
 ---
 # <a name="how-to-enable-and-disable-full-solution-analysis-for-managed-code"></a>Como: Habilitar e desabilitar análise de solução completa para código gerenciado
 
-*Análise de solução completa* é um recurso do Visual Studio que permite que você veja problemas de análise de código somente em arquivos abertos de Visual C# ou Visual Basic em sua solução, ou também em código, arquivos que estão fechadas. Por padrão, a análise de solução completa é *habilitados* para o Visual Basic, e *desabilitada* do Visual C#.
+*Análise de solução completa* é um recurso do Visual Studio que permite que você veja problemas de análise de código somente em arquivos abertos de Visual c# ou Visual Basic em sua solução, ou também em código, arquivos que estão fechadas. Por padrão, a análise de solução completa é *habilitados* para o Visual Basic, e *desabilitada* do Visual c#.
 
 Pode ser útil ver todos os problemas em todos os arquivos, mas também pode ser distração. Ele desacelera Visual Studio se sua solução for muito grande ou tiver vários arquivos. Para limitar o número de problemas mostrados e melhorar o desempenho do Visual Studio, você pode desabilitar análise completa da solução. Você pode facilmente habilitar este recurso novamente se necessário.
 
@@ -26,7 +26,7 @@ Pode ser útil ver todos os problemas em todos os arquivos, mas também pode ser
 
 1. Para abrir o **opções** caixa de diálogo, na barra de menus no Visual Studio escolher **ferramentas** > **opções**.
 
-1. No **opções** diálogo caixa, escolha **Editor de texto** > **C#** ou **básica**  >   **Advanced**.
+1. No **opções** diálogo caixa, escolha **Editor de texto** > **c#** ou **básica**  >   **Advanced**.
 
 1. Selecione o **habilitar a análise de solução completa** caixa de seleção para habilitar a análise de solução completa, ou desmarque a caixa para desativá-lo. Escolher **Okey** quando você terminar.
 
