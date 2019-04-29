@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a2e05b47563c62f34e4a01c945a45d5c7ec069ee
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612225"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909468"
 ---
 # <a name="nesting-projects"></a>Aninhando projetos
 Os desenvolvedores de aplicativos corporativos que usam o seu pacote VS convenientemente podem agrupar tipos semelhantes de projetos juntos em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] por meio *aninhamento de projeto*. Por exemplo, o projeto de modelo empresarial usa projetos aninhados para projetos de grupo em categorias. Projetos de fachada de negócios, projetos de interface do usuário Web e assim por diante são agrupados em uma categoria.
@@ -33,12 +33,12 @@ Os desenvolvedores de aplicativos corporativos que usam o seu pacote VS convenie
  ![Aninhado projetos de solução](../../extensibility/internals/media/vsnestedprojects.gif "vsNestedProjects") exemplo de projetos aninhados
 
 ## <a name="see-also"></a>Consulte também
-- [Como: Implementar projetos aninhados](../../extensibility/internals/how-to-implement-nested-projects.md)
+- [Como: implementar projetos aninhados](../../extensibility/internals/how-to-implement-nested-projects.md)
 - [Considerações para descarregar e recarregar projetos aninhados](../../extensibility/internals/considerations-for-unloading-and-reloading-nested-projects.md)
 - [Suporte do assistente para projetos aninhados](../../extensibility/internals/wizard-support-for-nested-projects.md)
 - [Registrar modelos de projeto e de item](../../extensibility/internals/registering-project-and-item-templates.md)
 - [Implementar manipulação de comando para projetos aninhados](../../extensibility/internals/implementing-command-handling-for-nested-projects.md)
 - [Filtrar a caixa de diálogo Adicionar Item para projetos aninhados](../../extensibility/internals/filtering-the-additem-dialog-box-for-nested-projects.md)
-- [Lista de verificação: Criação de novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Lista de verificação: criação de novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Parâmetros de contexto](../../extensibility/internals/context-parameters.md)
 - [Arquivo do assistente (.Vsz)](../../extensibility/internals/wizard-dot-vsz-file.md)

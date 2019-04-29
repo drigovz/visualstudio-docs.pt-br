@@ -1,54 +1,54 @@
 ---
 title: IDebugThread2::GetLogicalThread | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugThread2::GetLogicalThread
 helpviewer_keywords:
 - IDebugThread2::GetLogicalThread
 ms.assetid: bce6230e-41d4-49b7-a050-2dde5efb6805
-author: gregvanl
+caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: 99e8dbd78ef262479fbc8405b77fa0cf53f8087a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62915565"
 ---
 # <a name="idebugthread2getlogicalthread"></a>IDebugThread2::GetLogicalThread
-Mecanismos de depuração não implementam este método.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Sintaxe
-
-```cpp
-HRESULT GetLogicalThread( 
-   IDebugStackFrame2*     pStackFrame,
-   IDebugLogicalThread2** ppLogicalThread
-);
-```
-
-```csharp
-int GetLogicalThread( 
-   IDebugStackFrame2        pStackFrame,
-   out IDebugLogicalThread2 ppLogicalThread
-);
-```
-
-#### <a name="parameters"></a>Parâmetros
- `pStackFrame`
-
- [in] Uma [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objeto que representa o quadro de pilhas.
-
- `ppLogicalThread`
-
- [out] Retorna um `IDebugLogicalThread2` interface que representa o thread lógico associado. Uma implementação do mecanismo de depuração deve definir isso como um valor nulo.
-
-## <a name="return-value"></a>Valor de retorno
- Depurar as implementações de mecanismo sempre retornam `E_NOTIMPL`.
-
-## <a name="see-also"></a>Consulte também
-- [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
+Mecanismos de depuração não implementam este método.  
+  
+## <a name="syntax"></a>Sintaxe  
+  
+```cpp#  
+HRESULT GetLogicalThread(   
+   IDebugStackFrame2*     pStackFrame,  
+   IDebugLogicalThread2** ppLogicalThread  
+);  
+```  
+  
+```csharp  
+int GetLogicalThread(   
+   IDebugStackFrame2        pStackFrame,  
+   out IDebugLogicalThread2 ppLogicalThread  
+);  
+```  
+  
+#### <a name="parameters"></a>Parâmetros  
+ `pStackFrame`  
+ [in] Uma [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) objeto que representa o quadro de pilhas.  
+  
+ `ppLogicalThread`  
+ [out] Retorna um `IDebugLogicalThread2` interface que representa o thread lógico associado. Uma implementação do mecanismo de depuração deve definir isso como um valor nulo.  
+  
+## <a name="return-value"></a>Valor de retorno  
+ Depurar as implementações de mecanismo sempre retornam `E_NOTIMPL`.  
+  
+## <a name="see-also"></a>Consulte também  
+ [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

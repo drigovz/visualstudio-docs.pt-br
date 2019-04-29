@@ -1,5 +1,5 @@
 ---
-title: 'Nova geração de projeto: Nos bastidores, parte 2 | Microsoft Docs'
+title: 'Geração de novo projeto: Nos bastidores, parte 2 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,15 +12,15 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5ccdd4cd8bafc4bc4a899ea47d62ec10e578569c
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909301"
 ---
-# <a name="new-project-generation-under-the-hood-part-two"></a>Nova geração de projeto: Nos bastidores, parte dois
+# <a name="new-project-generation-under-the-hood-part-two"></a>Geração de novo projeto: Bastidores, parte dois
 
-No [nova geração de projeto: Nos bastidores, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) vimos como o **novo projeto** caixa de diálogo caixa é preenchida. Vamos supor que você selecionou uma **Visual C# Windows Application**, preenchido a **nome** e **local** caixas de texto e Okey clicado.
+No [nova geração de projeto: Nos bastidores, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md) vimos como o **novo projeto** caixa de diálogo caixa é preenchida. Vamos supor que você selecionou uma **Visual c# Windows Application**, preenchido a **nome** e **local** caixas de texto e Okey clicado.
 
 ## <a name="generating-the-solution-files"></a>Gerar os arquivos de solução
  Escolher um modelo de aplicativo direciona [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] para descompactar e abrir o arquivo. vstemplate correspondente e para iniciar um modelo para interpretar os comandos XML neste arquivo. Esses comandos criam projetos e itens de projeto na solução nova ou existente.
@@ -156,5 +156,5 @@ namespace Simple
 
 ## <a name="see-also"></a>Consulte também
 
-- [Nova geração de projeto: Nos bastidores, parte 1](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
+- [Geração de novo projeto: bastidores, parte um](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

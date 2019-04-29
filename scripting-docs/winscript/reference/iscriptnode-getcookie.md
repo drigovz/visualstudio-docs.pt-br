@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: b05d184af3ecd6302fc05893600fd7026eeca3ad
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62787046"
 ---
 # <a name="iscriptnodegetcookie"></a>IScriptNode::GetCookie
 Retorna um valor definido pelo aplicativo que é usado para associar um scriptlet com o objeto de host.  

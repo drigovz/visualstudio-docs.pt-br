@@ -29,11 +29,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: f810761d088eaf6ec94524a7d76ec255c931686b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565764"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>Anexar a processos em execução com o depurador do Visual Studio
 Você pode anexar o depurador do Visual Studio para um processo em execução em um computador local ou remoto. Depois que o processo está em execução, selecione **Debug** > **anexar ao processo** ou pressione **Ctrl**+**Alt** + **P** no Visual Studio e usar o **anexar ao processo** caixa de diálogo para anexar o depurador ao processo.

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 437372a5b88e58c12b7a7d34102d87afce5c086b
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909809"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Hierarquias no Visual Studio
 O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ambiente de desenvolvimento integrado (IDE) exibe um projeto como um *hierarquia*. No IDE, uma hierarquia é uma árvore de nós, onde cada nó tem um conjunto de propriedades associadas. Um *hierarquia de projeto* é um contêiner que mantém os itens do projeto, as relações dos itens e propriedades associadas dos itens e comandos.

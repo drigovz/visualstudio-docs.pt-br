@@ -1,5 +1,5 @@
 ---
-title: 'Aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo | Microsoft Docs'
+title: 'Aviso de segurança: A anexação a um processo pertencente a um usuário não confiável pode ser perigosa. Se as informações a seguir parecerem suspeitas ou você não tiver certeza, não anexe a esse processo | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 0f44c429dad42a0a46fe2c00f9b6a82dfcdb92b8
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56687244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929778"
 ---
-# <a name="security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process"></a>Aviso de segurança: anexar a um processo pertencente a um usuário não confiável pode ser perigoso. Se as informações a seguir parecerem suspeitas ou, se você não tiver certeza, não anexe a esse processo
+# <a name="security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process"></a>Aviso de segurança: A anexação a um processo pertencente a um usuário não confiável pode ser perigosa. Se as informações a seguir parecerem suspeitas ou, se você não tiver certeza, não anexe a esse processo
 Essa caixa de diálogo de aviso é exibida quando você anexa a um processo que contém o código parcialmente confiável ou seja de propriedade de um usuário não confiável imediatamente antes de ocorrer a anexação. Um processo não confiável que contém o código mal-intencionado tem o potencial de danificar o computador que faz a depuração. Se você tiver razão para desconfiar do processo, clique em **Cancelar** para evitar a depuração.
 
  Para suprimir esse aviso ao depurar um cenário legítimo, feche o Visual Studio e defina o valor dessa chave do registro como 1: `HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\<version>\Debugger\DisableAttachSecurityWarning`e, em seguida, reinicie o Visual Studio. Depois de concluir a depurar do cenário, redefina o valor como 0 e reinicie o Visual Studio.

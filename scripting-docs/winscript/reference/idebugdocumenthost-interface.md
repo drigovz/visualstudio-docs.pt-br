@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 226e2700b471cd34496682d233e57946e124ff3b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155661"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939216"
 ---
 # <a name="idebugdocumenthost-interface"></a>Interface IDebugDocumentHost
 Expõe a funcionalidade específica de host, como coloração de sintaxe, o depurador. O `IDebugDocumentHelper::SetDebugDocumentHost` método usa essa interface como um argumento.  

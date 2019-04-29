@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 153df515fc762b7262dce81d8c1d1c4fe617ad61
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608416"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900605"
 ---
 # <a name="clickonce-and-application-settings"></a>ClickOnce e as configurações de aplicativo
 Configurações de aplicativo para Windows Forms torna mais fácil criar, armazenar e manter aplicativos personalizados e preferências do usuário no cliente. Este documento descreve como os arquivos de configurações do aplicativo funcionam em um aplicativo ClickOnce e como o ClickOnce migra as configurações quando o usuário é atualizado para a próxima versão.

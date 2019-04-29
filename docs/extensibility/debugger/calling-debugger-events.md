@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6b4a727b078d55227b557621b673ea39b36d790f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62890912"
 ---
 # <a name="call-debugger-events"></a>Chamar eventos do depurador
 Eventos em sessões de depuração ocorrerem em uma ordem específica.

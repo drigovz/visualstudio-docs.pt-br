@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: b85999a22bf49923630a0abe2f9ef33950edd8fe
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325075"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815624"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>Associar controles do WPF a um conjunto de dados
 
@@ -256,7 +256,7 @@ Depois de concluir este passo a passo, você pode experimentar as seguintes tare
 
 - Saiba como usar a janela **Fontes de Dados** no Visual Studio para associar controles do WPF a outros tipos de fontes de dados. Para obter mais informações, consulte [controles de WPF associar a um WCF data service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md).
 
-- Saiba como usar a janela **Fontes de Dados** no Visual Studio para exibir dados relacionados (isto é, dados em uma relação pai-filho) em controles do WPF. Para obter mais informações, consulte [instruções passo a passo: exibir dados relacionados em um aplicativo WPF](../data-tools/display-related-data-in-wpf-applications.md).
+- Saiba como usar a janela **Fontes de Dados** no Visual Studio para exibir dados relacionados (isto é, dados em uma relação pai-filho) em controles do WPF. Para obter mais informações, confira [Passo a passo: Exibir dados relacionados em um aplicativo WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>Consulte também
 

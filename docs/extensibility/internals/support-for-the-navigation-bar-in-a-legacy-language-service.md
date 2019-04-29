@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eccbf178b3515cd23695d899749beb478e942ff7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858117"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>Suporte para a barra de navegação em um serviço de linguagem herdado
 A barra de navegação na parte superior do editor de modo de exibição exibe os tipos e membros no arquivo. Tipos são mostrados no menu suspenso à esquerda e os membros são mostrados na parte direita lista suspensa. Quando o usuário seleciona um tipo, o cursor é colocado na primeira linha do tipo. Quando o usuário seleciona um membro, o cursor é colocado na definição do membro. As caixas suspensas são atualizadas para refletir o local atual do cursor.

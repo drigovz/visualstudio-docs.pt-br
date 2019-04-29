@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 421eea42c169f586657998e5d4cd57c4c797b71e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693185"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62916898"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 Obtém o nome e o identificador do mecanismo de depuração (DES) executando um programa.
@@ -41,11 +41,11 @@ int GetEngineInfo(
 #### <a name="parameters"></a>Parâmetros
  `pbstrEngine`
 
- [out] Retorna o nome do DE execução do programa (específico do C++: isso pode ser um ponteiro nulo, indicando que o chamador não está interessado no nome do mecanismo de).
+ [out] Retorna o nome do DE execução do programa (C++-específico: isso pode ser um ponteiro nulo, indicando que o chamador não está interessado no nome do mecanismo de).
 
  `pguidEngine`
 
- [out] Retorna o identificador global exclusivo do DE execução do programa (específico do C++: isso pode ser um ponteiro nulo, indicando que o chamador não está interessado no GUID do mecanismo de).
+ [out] Retorna o identificador global exclusivo do DE execução do programa (C++-específico: isso pode ser um ponteiro nulo, indicando que o chamador não está interessado no GUID do mecanismo de).
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.

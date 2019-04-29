@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: ceaf74ad2673b0dae80c9529ad082c6ae3187352
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58069769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824845"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>Associar controles do WPF a um WCF Data Service
 
@@ -66,7 +66,7 @@ Conhecimento prévio dos conceitos a seguir também é útil, mas não é necess
 
 ## <a name="create-an-entity-data-model-for-the-service"></a>Criar um modelo de dados de entidade para o serviço
 
-Para expor os dados a um aplicativo usando um WCF Data Service, você deve definir um modelo de dados para o serviço. O WCF Data Service dá suporte a dois tipos de modelos de dados: modelos de dados de entidade e modelos de dados personalizados que são definidos usando objetos common language runtime (CLR) que implementam o <xref:System.Linq.IQueryable%601> interface. Neste passo a passo, você criará um Modelo de Dados de Entidade para o modelo de dados.
+Para expor os dados a um aplicativo usando um WCF Data Service, você deve definir um modelo de dados para o serviço. O WCF Data Service dá suporte a dois tipos de modelos de dados: Modelos de dados de entidade e modelos de dados personalizados que são definidos usando objetos common language runtime (CLR) que implementam o <xref:System.Linq.IQueryable%601> interface. Neste passo a passo, você criará um Modelo de Dados de Entidade para o modelo de dados.
 
 1. No menu **Projeto**, clique em **Adicionar Novo Item**.
 
@@ -293,7 +293,7 @@ Depois de completar este passo a passo, você poderá realizar as seguintes tare
 
 - Saiba como usar a janela **Fontes de Dados** no Visual Studio para associar controles do WPF a outros tipos de fontes de dados. Para obter mais informações, consulte [controles de WPF associar a um conjunto de dados](../data-tools/bind-wpf-controls-to-a-dataset.md).
 
-- Saiba como usar a janela **Fontes de Dados** no Visual Studio para exibir dados relacionados (isto é, dados em uma relação pai-filho) em controles do WPF. Para obter mais informações, consulte [instruções passo a passo: exibindo dados relacionados em um aplicativo WPF](../data-tools/display-related-data-in-wpf-applications.md).
+- Saiba como usar a janela **Fontes de Dados** no Visual Studio para exibir dados relacionados (isto é, dados em uma relação pai-filho) em controles do WPF. Para obter mais informações, confira [Passo a passo: Exibindo dados relacionados em um aplicativo do WPF](../data-tools/display-related-data-in-wpf-applications.md).
 
 ## <a name="see-also"></a>Consulte também
 

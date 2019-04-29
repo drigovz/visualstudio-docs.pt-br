@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: be54c19a1e09b610611c8791d62d012ebdaf5ae8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62862039"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>Escolha o diretório de instalação para um VSPackage
 Um VSPackage e seus arquivos de suporte devem estar no sistema de arquivos do usuário. O local depende se o VSPackage é gerenciado ou não, seu esquema de controle de versão lado a lado e escolha do usuário.

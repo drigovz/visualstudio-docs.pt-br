@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - uwp
 ms.openlocfilehash: d5b04a64ea75458d23e64e83a405a103ae70a100
-ms.sourcegitcommit: 22b73c601f88c5c236fe81be7ba4f7f562406d75
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/13/2019
-ms.locfileid: "56227690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906031"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>Inspecione as propriedades XAML durante a depuração
 Você pode obter uma exibição em tempo real de seu código XAML em execução com o **Live Visual Tree** e o **Live Property Explorer**. Essas ferramentas oferecem um modo de exibição de árvore dos elementos da interface do usuário do seu aplicativo em execução do XAML e mostram as propriedades de tempo de execução de qualquer elemento de interface do usuário selecionado.

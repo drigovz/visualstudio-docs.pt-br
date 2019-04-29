@@ -17,17 +17,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1501cd0243d6dc17cc627715eda85e755aec4502
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56637094"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564080"
 ---
 # <a name="client-side-script-debugging"></a>Depuração de script do lado do cliente
 O depurador do Visual Studio fornece um ambiente de depuração abrangente para localizar e corrigir erros em scripts do lado do cliente em páginas ASP.NET.
 
 ## <a name="opening-script-documents"></a>Abrindo Documentos de Script
-Você pode ver a lista de documentos de script do lado do servidor e cliente na **Gerenciador de soluções** para exibir. Você pode abrir qualquer documento de script do **Gerenciador de Soluções**. Para obter mais informações, consulte [como: exibir documentos de Script](../debugger/how-to-view-script-documents.md).
+Você pode ver a lista de documentos de script do lado do servidor e cliente na **Gerenciador de soluções** para exibir. Você pode abrir qualquer documento de script do **Gerenciador de Soluções**. Para obter mais informações, confira [Como: Exibir documentos de script](../debugger/how-to-view-script-documents.md).
 
 ## <a name="breakpoint-mapping"></a>Mapeamento de ponto de interrupção
  No Visual Studio, você não pode depurar diretamente o código do lado do servidor, mas pode definir um ponto de interrupção em um arquivo do lado do servidor. O Visual Studio automaticamente mapeia o ponto de interrupção em um local correspondente no arquivo do cliente e cria um ponto de interrupção mapeado no código do cliente.
@@ -35,7 +35,7 @@ Você pode ver a lista de documentos de script do lado do servidor e cliente na 
 ## <a name="manually-or-automatically-attaching-to-script"></a>Anexar a script manual ou automaticamente
  Para iniciar a depuração de script no [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)], o depurador deve anexar o script que você deseja depurar. Isso pode acontecer manualmente ou automaticamente.
 
- Você pode anexar manualmente usando a interface do depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para escolher um processo em execução do script ao qual você deseja anexar. Para obter mais informações, consulte [como: anexar ao Script](../debugger/how-to-attach-to-script.md).
+ Você pode anexar manualmente usando a interface do depurador de [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] para escolher um processo em execução do script ao qual você deseja anexar. Para obter mais informações, confira [Como: Anexar ao script](../debugger/how-to-attach-to-script.md).
 
  O depurador é anexado automaticamente ao script quando uma das situações ocorrer:
 

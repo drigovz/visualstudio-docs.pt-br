@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d1e540d959661a576e211cba526391f852b79a20
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56682382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62873200"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 Essa interface representa uma posição no espaço de endereço do computador que executa o programa que está sendo depurado.

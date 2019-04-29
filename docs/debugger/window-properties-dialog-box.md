@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: c27f10298f3a5621bc68e31bc2b150663955d6c9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56699152"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929208"
 ---
 # <a name="window-properties-dialog-box"></a>Caixa de diálogo Propriedades da Janela
 Use essa caixa de diálogo para obter mais informações sobre uma janela específica. Para exibir essa caixa de diálogo, mova o foco para o [modo de exibição do Windows](../debugger/windows-view.md) janela. Selecione qualquer nó de janela na árvore e escolha **propriedades** da **exibição** menu.

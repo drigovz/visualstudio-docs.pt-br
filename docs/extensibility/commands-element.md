@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 823a91f15ef1dca47e8fd58db0646cd5248cfb1f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62891246"
 ---
 # <a name="commands-element"></a>Elemento Commands
 Representa a coleção de comandos na barra de ferramentas do VSPackage. A coleção pode ter até cinco subseções, da seguinte maneira: grupos, menus, botões, combos e bitmaps.

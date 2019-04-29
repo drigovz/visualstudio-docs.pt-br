@@ -1,5 +1,5 @@
 ---
-title: 'Como: mostrar as exibições do Spy + + | Microsoft Docs'
+title: 'Como: Mostrar exibições do Spy + + | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,14 +11,14 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 230834e7915114e2a647b21834b4e90b12c54a64
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56688804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62894255"
 ---
-# <a name="how-to-display-spy-views"></a>Como mostrar exibições do Spy++
-Quando o Spy + + é iniciado, ele é aberto no [modo de exibição do Windows](../debugger/windows-view.md), uma exibição de árvore de todas as janelas e controles disponíveis no seu computador. Essa janela raiz é legenda "Windows 1". Também há três outros Spy + + modos de exibição disponíveis: [exibição de mensagens](../debugger/messages-view.md), [exibição de processos](../debugger/processes-view.md), e [exibição de Threads](../debugger/threads-view.md). Você pode exibir o modo de exibição desejado do **Spy** menu. Para obter mais informações, consulte [exibições do Spy + +](../debugger/spy-increment-views.md).
+# <a name="how-to-display-spy-views"></a>Como: Mostrar exibições do Spy++
+Quando o Spy + + é iniciado, ele é aberto no [modo de exibição do Windows](../debugger/windows-view.md), uma exibição de árvore de todas as janelas e controles disponíveis no seu computador. Essa janela raiz é legenda "Windows 1". Também há três outros Spy + + modos de exibição disponíveis: [A exibição de mensagens](../debugger/messages-view.md), [exibição de processos](../debugger/processes-view.md), e [exibição de Threads](../debugger/threads-view.md). Você pode exibir o modo de exibição desejado do **Spy** menu. Para obter mais informações, consulte [exibições do Spy + +](../debugger/spy-increment-views.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Usando Spy++](../debugger/using-spy-increment.md)

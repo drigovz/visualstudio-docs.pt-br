@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7e3a9043215c5242246e54dc3e1eb2e85cd26c91
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62925887"
 ---
 # <a name="debugger-concepts"></a>Conceitos do depurador
 Para compilar no pacote de depuração do Visual Studio, você precisa estar familiarizado com os conceitos de arquiteturas usados na criação do pacote.

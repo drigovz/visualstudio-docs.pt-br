@@ -1,41 +1,43 @@
 ---
 title: IDebugProcess2::CauseBreak | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-sdk
 ms.topic: reference
 f1_keywords:
 - IDebugProcess2::CauseBreak
 helpviewer_keywords:
 - IDebugProcess2::CauseBreak
 ms.assetid: efda8865-2319-4d53-90bf-6d9d74cd5195
-author: gregvanl
+caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.workload:
-- vssdk
 ms.openlocfilehash: a85ab02bce7e1748e769694ee8e06e7898ba2ffb
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62917887"
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
-Solicitações que o próximo código de programa que é em execução nesse processo de interromper e enviar uma [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) objeto de evento.
+[!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
 
-## <a name="syntax"></a>Sintaxe
-
-```cpp
-HRESULT CauseBreak( 
-   void
-);
-```
-
-```csharp
-int CauseBreak();
-```
-
-## <a name="return-value"></a>Valor de retorno
- Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.
-
-## <a name="see-also"></a>Consulte também
-- [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
+Solicitações que o próximo código de programa que é em execução nesse processo de interromper e enviar uma [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) objeto de evento.  
+  
+## <a name="syntax"></a>Sintaxe  
+  
+```cpp#  
+HRESULT CauseBreak(   
+   void  
+);  
+```  
+  
+```csharp  
+int CauseBreak();  
+```  
+  
+## <a name="return-value"></a>Valor de retorno  
+ Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna um código de erro.  
+  
+## <a name="see-also"></a>Consulte também  
+ [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

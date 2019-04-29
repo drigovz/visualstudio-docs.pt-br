@@ -1,5 +1,5 @@
 ---
-title: 'Como: criar associações de arquivo para um aplicativo ClickOnce | Microsoft Docs'
+title: 'Como: Criar associações de arquivo para um aplicativo ClickOnce | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 15d9b81bd342ccd8a5ee3377323e140ab1167c10
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56633038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62899454"
 ---
-# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Como criar associações de arquivo para um aplicativo ClickOnce
+# <a name="how-to-create-file-associations-for-a-clickonce-application"></a>Como: Criar associações de arquivos para um aplicativo ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos podem ser associados com uma ou mais extensões de nome de arquivo, para que o aplicativo será iniciado automaticamente quando o usuário abre um arquivo desses tipos. Adicionando suporte à extensão de nome do arquivo para um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo é simples.
 
 ### <a name="to-create-file-associations-for-a-clickonce-application"></a>Para criar associações de arquivo para um aplicativo ClickOnce
@@ -41,7 +41,7 @@ ms.locfileid: "56633038"
 
    - `progid`: Uma cadeia de caracteres que identifica exclusivamente o tipo de arquivo, para marcá-la no registro.
 
-   - `defaultIcon`: Um ícone a ser usado para esse tipo de arquivo. O ícone deve ser adicionado como um recurso de arquivo no manifesto do aplicativo. Para obter mais informações, consulte [Como incluir um arquivo de dados em um aplicativo ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
+   - `defaultIcon`: Um ícone a ser usado para esse tipo de arquivo. O ícone deve ser adicionado como um recurso de arquivo no manifesto do aplicativo. Para obter mais informações, confira [Como: Incluir um arquivo de dados em um aplicativo ClickOnce](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md).
 
      Para obter um exemplo de `file` e `fileAssociation` elementos, consulte [ \<fileAssociation > elemento](../deployment/fileassociation-element-clickonce-application.md).
 

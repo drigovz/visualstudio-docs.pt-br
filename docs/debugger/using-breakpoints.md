@@ -35,11 +35,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f9150a815f424c0b4a7bfe5f2e92ea7cd424ddb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085253"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62902061"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>Usar pontos de interrupção no depurador do Visual Studio
 Pontos de interrupção são uma das técnicas de depuração mais importantes na caixa de ferramentas do seu desenvolvedor. Sempre que você deseja pausar a execução do depurador, você definir pontos de interrupção. Por exemplo, talvez você queira ver o estado das variáveis de código ou examinar a pilha de chamadas em um determinado ponto de interrupção. Se esta for sua primeira tentativa de depurar um código, leia [Como depurar para iniciantes absolutos](../debugger/debugging-absolute-beginners.md) antes continuar neste artigo.

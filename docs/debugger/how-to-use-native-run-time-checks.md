@@ -38,11 +38,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 4ccf0fea80ddfcc7db0921512391f5063a8f2dad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100203"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846960"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>Como: Usar verificações de tempo de execução nativas
 No Visual C++, você pode usar nativo [runtime_checks](/cpp/preprocessor/runtime-checks) para capturar erros comuns de tempo de execução, como:

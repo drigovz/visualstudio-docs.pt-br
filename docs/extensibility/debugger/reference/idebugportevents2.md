@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fb6a13b47013153de284ad1997a484efb3be1c98
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712457"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62918321"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 Essa interface notifica um ouvinte (normalmente o sessão Gerenciador de depuração [SDM] ou um mecanismo de depuração) do programa e o processo de criação e destruição em uma porta específica. Essas informações podem ser usadas para apresentar uma exibição em tempo real dos processos e programas em execução na porta.

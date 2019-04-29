@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 307e8e5285dd0023d30772c5eac7a4e351287aa5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060925"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909177"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>Mantendo os dados no arquivo de projeto do MSBuild
 Talvez seja necessário um subtipo de projeto manter dados específicos subtipo-no arquivo de projeto para uso posterior. Um subtipo de projeto usa a persistência de arquivo de projeto para atender aos seguintes requisitos:

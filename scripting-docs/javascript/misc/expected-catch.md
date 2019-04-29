@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 941d49a530b14e2af64ddcb599dd775feb347de0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053216"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935393"
 ---
 # <a name="expected-catch"></a>'catch' esperado
 Você usou a manipulação de exceção **tente** bloquear, mas não escreveu associado **catch** instrução. A mecanismo de tratamento de exceção requer que o código que pode falhar, juntamente com o código que não deve ser executada se ocorrer uma exceção, ser encapsulados dentro de um **tente** bloco. As exceções são geradas de dentro de **tente** bloquear usando o **lançar** instrução e capturada fora o **tente** bloco com um ou mais **catch**as instruções.  

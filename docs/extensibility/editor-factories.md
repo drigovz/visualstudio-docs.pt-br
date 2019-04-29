@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: f5c6b6dc6f02bfc22e6a02f708deefe4208d91ff
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694641"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912624"
 ---
 # <a name="editor-factories"></a>Fábricas de editor
 Uma fábrica de editor cria objetos do editor e coloca-os em um quadro de janela conhecido como uma exibição física. Ele cria os dados de documentos e objetos de exibição de documento que são necessários para criar editores e designers. Uma fábrica de editor é necessário para criar o editor principal do Visual Studio e qualquer editor padrão. Um editor personalizado também pode ser criado com uma fábrica de editor.

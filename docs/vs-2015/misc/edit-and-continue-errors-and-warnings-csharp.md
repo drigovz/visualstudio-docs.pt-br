@@ -62,11 +62,11 @@ caps.latest.revision: 11
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: f83f421203b25edbbccf767c0661ece709dd63c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085072"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822945"
 ---
 # <a name="edit-and-continue-errors-and-warnings-c"></a>Erros e avisos de Editar e Continuar (C#)
 Você fez uma edição em uma seção do código que não é permitido em Editar e Continuar do Visual C#.  

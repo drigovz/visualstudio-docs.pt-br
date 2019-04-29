@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fdefbfa71ed220eed6e3f32ee95c02197f58a85d
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62923420"
 ---
 # <a name="idebugbreakevent2"></a>IDebugBreakEvent2
 Essa interface informa o Gerenciador de sessão de depuração (SDM) que a interrupção assíncrona foi concluída com êxito.

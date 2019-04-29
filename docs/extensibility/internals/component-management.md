@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1ef2edb8996984f943ce3d7ec168eed0692f2493
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110070"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910367"
 ---
 # <a name="component-management"></a>Gerenciamento de componente
 Unidades de tarefas no instalador do Windows são chamadas de componentes do Windows Installer (às vezes chamados de WICs ou apenas componentes). Um GUID que identifica cada WIC, que é a unidade básica de instalação e a contagem de referências para instalações que usam o Windows Installer.

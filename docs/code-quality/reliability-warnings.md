@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 74c1a5202b05b3ffe6f9b6c5b24804fb259287c4
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825332"
 ---
 # <a name="reliability-warnings"></a>Avisos de confiabilidade
 Avisos de confiabilidade dão suporte a confiabilidade de biblioteca e o aplicativo, como o uso de memória e thread corretos.

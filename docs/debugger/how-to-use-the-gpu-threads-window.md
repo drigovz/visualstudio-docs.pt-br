@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 59229b1ca2b055fc8242bf6446541a395eceaa56
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071350"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846837"
 ---
 # <a name="how-to-use-the-gpu-threads-window-c"></a>Como: Usar a janela de Threads GPU (C++)
 Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão sendo executadas no GPU no aplicativo que você está depurando. Para obter mais informações sobre aplicativos que são executados na GPU, consulte [visão geral do C++ AMP](/cpp/parallel/amp/cpp-amp-overview).
@@ -105,4 +105,4 @@ Na janela Threads da GPU, você pode examinar e trabalhar com threads que estão
 ## <a name="see-also"></a>Consulte também
 - [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)
 - [Como: Usar a janela Inspeção Paralela](../debugger/how-to-use-the-parallel-watch-window.md)
-- [Passo a passo: Depurando um aplicativo C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)
+- [Passo a passo: depurar um aplicativo C++ AMP](/cpp/parallel/amp/walkthrough-debugging-a-cpp-amp-application)

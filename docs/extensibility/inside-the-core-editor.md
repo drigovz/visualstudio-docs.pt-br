@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a188116b09b846e81023c239d64d6386c7f2c6ae
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861965"
 ---
 # <a name="inside-the-core-editor"></a>Dentro do editor de núcleo
 O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor principal é um conjunto de vários componentes que permitem que você modifique e consultar informações textuais. Se você tiver personalizado o editor principal usando a API herdada, você pode continuar a usar essas personalizações, que serão roteadas por meio de adaptadores do editor. No entanto, ele é recomendável que você adapte suas personalizações para o novo editor de API.

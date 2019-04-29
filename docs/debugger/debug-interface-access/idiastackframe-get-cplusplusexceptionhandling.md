@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f0c2e07b5c9141b8cf31511405939fc65be6446
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615579"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62839056"
 ---
 # <a name="idiastackframegetcplusplusexceptionhandling"></a>IDiaStackFrame::get_cplusplusExceptionHandling
 Recupera um sinalizador que indica se o tratamento de exceções C++ está em vigor.
@@ -33,7 +33,7 @@ HRESULT get_cplusplusExceptionHandling ( 
 #### <a name="parameters"></a>Parâmetros
  `pRetVal`
 
-[out] Retorna `TRUE` se o tratamento de exceções C++ está em vigor para esse quadro; caso contrário, retornará `FALSE`.
+[out] Retorna `TRUE` se C++ tratamento de exceção estiver em vigor para este quadro; caso contrário, retornará `FALSE`.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`. Retorna `S_FALSE` se não há suporte para a propriedade. Caso contrário, retornará um código de erro.

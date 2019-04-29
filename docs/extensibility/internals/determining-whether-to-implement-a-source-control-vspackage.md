@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: fd3e0888cb45facbf2946e6a4656147dab75350e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100477"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910014"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>Determinar se deve implementar um VSPackage de controle do código-fonte
 Esta seção aborda as opções de plug-ins de controle do código-fonte e os VSPackages de controle de origem para estender o controle de fonte de soluções e fornece diretrizes amplas sobre como escolher um caminho de integração adequada.

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c19b623efca921e7557a818c3915faf6ea158641
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859707"
 ---
 # <a name="project-persistence"></a>Persistência de projeto
 Persistência é uma consideração de design chave para seu projeto. A maioria dos projetos usar itens de projeto que representam arquivos; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] também oferece suporte a projetos cujos dados são não baseados em arquivo. Os arquivos de propriedade do projeto e o arquivo de projeto devem ser persistente. O IDE instrui o projeto para salvar a mesmo ou para um item de projeto.
@@ -43,5 +43,5 @@ Persistência é uma consideração de design chave para seu projeto. A maioria 
  Os métodos no `IVsPersistHierarchyItem2` interface são usados para determinar se um item pode ser recarregado e, se o item pode ser, para recarregá-lo. Além disso, o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.IgnoreItemFileChanges%2A> método pode ser implementado para fazer com que itens alterados para serem descartados sem ser salvado.
 
 ## <a name="see-also"></a>Consulte também
-- [Lista de verificação: Criação de novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)
+- [Lista de verificação: criação de novos tipos de projeto](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Criar instâncias de projetos usando fábricas de projetos](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

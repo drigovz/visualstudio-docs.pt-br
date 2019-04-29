@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 81941d131b51135771333aeab966716f4126a58b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091266"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575202"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>Como: Copiar e colar formas em um documento do Visio de forma programática
   Programaticamente, você pode copiar formas em uma única página de um documento e colá-los em uma nova página no mesmo documento. Você pode optar por colá-los para o local padrão (o centro da janela ativa) ou para os mesmos locais de coordenadas que tiveram na página original.

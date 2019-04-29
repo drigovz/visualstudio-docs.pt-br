@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5d752626f56c63c5d21777288340c921ec755867
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56600305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62908941"
 ---
 # <a name="source-control-vspackage-features"></a>Recursos do VSPackage do controle do código-fonte
 Esta seção descreve os vários recursos de um VSPackage de controle do código-fonte. Descreve o registro e seleção de detalhes para tal um VSPackage e aborda três dos recursos relacionados ao controle de origem principal: manipulação de eventos, substituição de glifo e (UI) de interface do usuário personalizada para o controle de fonte de salvar a consulta de edição de consulta (QEQS) funções.

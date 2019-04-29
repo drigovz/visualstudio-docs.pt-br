@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 86498adc4d8bce2a7d428b2951764e5d4b8a96a9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912389"
 ---
 # <a name="extend-the-output-window"></a>Estender a janela de saída
 O **saída** janela é um conjunto de painéis de texto de leitura/gravação. O Visual Studio tem esses painéis internos: **Construir**, em quais projetos de se comunicar mensagens sobre compilações, e **gerais**, no qual [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] transmite mensagens sobre o IDE. Projetos de obtém uma referência para o **compilar** automaticamente por meio do painel a <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> métodos de interface e o Visual Studio oferece acesso direto ao **geral** painel por meio do <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> serviço. Além de painéis internos, você pode criar e gerenciar seus próprios painéis personalizados.
