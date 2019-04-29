@@ -1,5 +1,5 @@
 ---
-title: 'Como: depurar de um projeto DLL | Microsoft Docs'
+title: 'Como: Depurar de um projeto DLL | Microsoft Docs'
 ms.date: 10/10/2018
 ms.topic: conceptual
 dev_langs:
@@ -19,17 +19,17 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a2e4df2028a14281ee2343ad48b4b71812d29fca
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684306"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62847959"
 ---
-# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Como: depurar de um projeto DLL no Visual Studio (C#, C++, Visual Basic, F#)
+# <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>Como: Depurar de um projeto DLL no Visual Studio (C#, C++, Visual Basic, F#)
 
 Uma maneira de depurar um projeto de DLL é especificar o aplicativo de chamada nas propriedades do projeto DLL. Em seguida, você pode iniciar a depuração a partir do projeto de DLL. Para esse método funcione, o aplicativo deve chamar a mesma DLL no mesmo local que você configurar. Se o aplicativo localiza e carrega uma versão diferente da DLL, essa versão não conterá seus pontos de interrupção. Para outros métodos de depuração de DLLs, consulte [projetos de DLL de depuração](../debugger/debugging-dll-projects.md).
 
-Se seu aplicativo gerenciado chama uma DLL nativa, ou se seu aplicativo nativo chama uma DLL gerenciada, você pode depurar a DLL e o aplicativo de chamada. Para obter mais informações, consulte [como: depurar no modo misto](../debugger/how-to-debug-in-mixed-mode.md).
+Se seu aplicativo gerenciado chama uma DLL nativa, ou se seu aplicativo nativo chama uma DLL gerenciada, você pode depurar a DLL e o aplicativo de chamada. Para obter mais informações, confira [Como: Depurar no modo misto](../debugger/how-to-debug-in-mixed-mode.md).
 
 Projetos DLL nativos e gerenciados tem configurações diferentes para especificar os aplicativos de chamada.
 
@@ -53,7 +53,7 @@ Projetos DLL nativos e gerenciados tem configurações diferentes para especific
 
 ## <a name="specify-a-calling-app-in-a-managed-dll-project"></a>Especifique um aplicativo de chamada em um projeto DLL gerenciado
 
-1. Selecione o C# ou o projeto de DLL do Visual Basic no **Gerenciador de soluções**. Selecione o **propriedades** ícone, pressione **Alt**+**Enter**, ou clique com botão direito e escolha **propriedades**.
+1. Selecione o projeto c# ou Visual Basic DLL no **Gerenciador de soluções**. Selecione o **propriedades** ícone, pressione **Alt**+**Enter**, ou clique com botão direito e escolha **propriedades**.
 
 1. Certifique-se de que o **Configuration** campo na parte superior da janela é definido como **depurar**.
 
@@ -67,7 +67,7 @@ Projetos DLL nativos e gerenciados tem configurações diferentes para especific
 
 1. Adicionar todos os argumentos de linha de comando necessários na **argumentos de linha de comando** ou **argumentos do aplicativo** campo.
 
-   ![C#Janela de propriedades de depuração](../debugger/media/dbg-debugging-properties-dll-csharp.png " C# janela Propriedades de depuração")
+   ![Janela de propriedades de depuração do c#](../debugger/media/dbg-debugging-properties-dll-csharp.png "janela de propriedades de depuração do c#")
 
 1. Use **arquivo** > **salvar itens selecionados** ou **Ctrl**+**S** para salvar as alterações.
 

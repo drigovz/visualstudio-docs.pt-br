@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: b19a301f7c170ee28d774ea0d96397dc2cfef312
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62855297"
 ---
 # <a name="workflow-designer-ui-help"></a>Ajuda de Designer de Fluxo de Trabalho interface de usuário
 Esta seção contém tópicos da Ajuda contextuais para [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Ao trabalhar no [!INCLUDE[vs2010](../includes/vs2010-md.md)], você pode acessar esses tópicos na interface do usuário, pressionando **F1** quando um [!INCLUDE[wfd2](../includes/wfd2-md.md)] caixa de diálogo é aberta.  

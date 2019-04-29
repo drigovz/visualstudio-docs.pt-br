@@ -11,11 +11,11 @@ ms.assetid: bb84a79e-cd4c-4a58-8871-2513e7119b6e
 caps.latest.revision: 38
 manager: jillfra
 ms.openlocfilehash: 54026b770a0de7780e950a3e30e649cb67ce1d3b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822543"
 ---
 # <a name="extending-the-toolbox"></a>Estendendo a caixa de ferramentas
 O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] **caixa de ferramentas** fornece uma coleção de objetos que fornecem funcionalidade para designers e editores por meio do mecanismo de arrastar e soltar do IDE.  

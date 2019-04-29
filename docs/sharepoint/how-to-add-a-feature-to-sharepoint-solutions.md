@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 143ab857af7c48f711e47910df07b6c58d07bc31
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967501"
 ---
 # <a name="how-to-add-a-feature-to-sharepoint-solutions"></a>Como: Adicionar um recurso para soluções do SharePoint
   Quando você cria uma solução do SharePoint, um recurso e um pacote são adicionados à solução. Você pode adicionar mais itens de recurso para organizar os diferentes tipos de arquivos do SharePoint.

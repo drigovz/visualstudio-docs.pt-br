@@ -1,5 +1,5 @@
 ---
-title: 'Como: alterar fontes | Microsoft Docs'
+title: 'Como: Alterar fontes | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,13 +11,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 33fee74bf2fd26cfe7af7f7bed90a06553c7fb27
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56713953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62848057"
 ---
-# <a name="how-to-change-fonts"></a>Como alterar fontes
+# <a name="how-to-change-fonts"></a>Como: Alterar fontes
 Você pode alterar a fonte, estilo de fonte e tamanho da fonte para o windows Spy + +.
 
 ### <a name="to-change-font-options"></a>Para alterar as opções de fonte

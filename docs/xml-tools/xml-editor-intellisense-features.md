@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 312c304855a450a648b000b8306b80ade969c785
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807954"
 ---
-# <a name="xml-editor-intellisense-features"></a>Recursos de IntelliSense do editor de XML
+# <a name="xml-editor-intellisense-features"></a>Recursos do IntelliSense o editor XML
 
 O editor XML fornece os recursos do IntelliSense comparáveis a outros editores de idioma fornecidos no Visual Studio. Esta seção explica como você pode usar o IntelliSense com a linguagem de definição de esquema XML (XSD) e documentos XSLT.
 
@@ -129,4 +129,4 @@ O **AutoInserção** seção o **diversos** página controla o comportamento a s
 
 - [Editor de XML](../xml-tools/xml-editor.md)
 - [Usando o IntelliSense](../ide/using-intellisense.md)
-- [Passo a passo: Usando XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)
+- [Passo a passo: usando XSLT IntelliSense](../xml-tools/walkthrough-using-xslt-intellisense.md)

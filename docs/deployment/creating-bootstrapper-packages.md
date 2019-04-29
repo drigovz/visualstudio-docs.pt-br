@@ -21,11 +21,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 960ecd2680585602b2c026b00b36bf7d93b8021d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62900225"
 ---
 # <a name="create-bootstrapper-packages"></a>Criar pacotes de bootstrapper
 O programa de instalação é um instalador genérico que pode ser configurado para detectar e instalar componentes redistribuíveis como arquivos do Windows Installer (*.msi*) e programas executáveis. O instalador também é conhecido como bootstrapper. Ele é programado por um conjunto de manifestos XML que especificam os metadados para gerenciar a instalação do componente.  Cada componente redistribuível, ou o pré-requisito, que aparece na **pré-requisitos** caixa de diálogo do ClickOnce é um pacote de bootstrapper. Um pacote de bootstrapper é um grupo de diretórios e arquivos que contém arquivos de manifesto que descrevem como o pré-requisito deve ser instalado.
@@ -33,13 +33,13 @@ O programa de instalação é um instalador genérico que pode ser configurado p
 O bootstrapper primeiro detecta se qualquer um dos pré-requisitos já está instalado. Se os pré-requisitos não estiverem instalados, primeiro o bootstrapper mostra os contratos de licença. Em segundo lugar, depois que o usuário final aceita os contratos de licença, a instalação dos pré-requisitos começa. Caso contrário, se forem detectados todos os pré-requisitos, o bootstrapper apenas inicia o instalador do aplicativo.
 
 ## <a name="create-custom-bootstrapper-packages"></a>Criar pacotes de bootstrapper personalizado
-Você pode gerar os manifestos do bootstrapper usando o Editor de XML no Visual Studio. Para ver um exemplo de como criar um pacote de bootstrapper, consulte [instruções passo a passo: criar um bootstrapper personalizado com um prompt de privacidade](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).
+Você pode gerar os manifestos do bootstrapper usando o Editor de XML no Visual Studio. Para ver um exemplo de como criar um pacote de bootstrapper, consulte [passo a passo: Criar um bootstrapper personalizado com um prompt de privacidade](../deployment/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt.md).
 
 Para criar um pacote de bootstrapper, você precisa criar um manifesto de produto e, para cada versão localizada de um componente, um manifesto de pacote.
 
-* O manifesto do produto *Product*, contém todos os metadados com neutralidade de idioma para o pacote. Esse manifesto contém metadados comuns a todas as versões localizadas do componente redistribuível.  Para criar esse arquivo, consulte [como: criar um manifesto de produto](../deployment/how-to-create-a-product-manifest.md).
+* O manifesto do produto *Product*, contém todos os metadados com neutralidade de idioma para o pacote. Esse manifesto contém metadados comuns a todas as versões localizadas do componente redistribuível.  Para criar esse arquivo, consulte [como: Criar um manifesto de produto](../deployment/how-to-create-a-product-manifest.md).
 
-* O manifesto de pacote *Package*, contém metadados específicos do idioma; geralmente contém mensagens de erro localizada. Um componente deve ter, pelo menos, um pacote de manifesto para cada versão localizada desse componente. Para criar esse arquivo, consulte [como: criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md).
+* O manifesto de pacote *Package*, contém metadados específicos do idioma; geralmente contém mensagens de erro localizada. Um componente deve ter, pelo menos, um pacote de manifesto para cada versão localizada desse componente. Para criar esse arquivo, consulte [como: Criar um manifesto de pacote](../deployment/how-to-create-a-package-manifest.md).
 
 Depois que esses arquivos são criados, coloque o arquivo de manifesto do produto em uma pasta indicada para o bootstrapper personalizado. O arquivo de manifesto do pacote vai para uma pasta nomeada de acordo com a localidade. Por exemplo, se o arquivo de manifesto do pacote for para redistribuição em inglês, coloque o arquivo em uma pasta chamada en. Repita esse processo para cada localidade, como ja para japonês e de para alemão. O pacote final de bootstrapper personalizado pode ter estrutura de pastas a seguir.
 
@@ -58,7 +58,7 @@ Depois que esses arquivos são criados, coloque o arquivo de manifesto do produt
         package.xml
     ```
 
-Em seguida, copie os arquivos redistribuíveis para o local de pasta do bootstrapper. Para obter mais informações, consulte [como: criar um pacote de bootstrapper localizado](../deployment/how-to-create-a-localized-bootstrapper-package.md).
+Em seguida, copie os arquivos redistribuíveis para o local de pasta do bootstrapper. Para obter mais informações, confira [Como: Criar um pacote de bootstrapper localizado](../deployment/how-to-create-a-localized-bootstrapper-package.md).
 
     *\Program Files\Microsoft Visual Studio 14.0\SDK\Bootstrapper\Packages*
 
@@ -95,7 +95,7 @@ Você pode evitar que seus arquivos redistribuíveis sejam implantados em projet
 
 `%ProgramFiles%\Microsoft.NET\RedistList`
 
-A lista redistribuível é um arquivo XML que você deve nomear usando o seguinte formato: *\<Nome da empresa>.\<Nome do componente>.RedistList.xml*. Assim, por exemplo, se o componente for chamado de DataWidgets feito por Acme, use *Acme.DataWidgets.RedistList.xml*. Um exemplo de conteúdo da lista redistribuível pode ser semelhante a:
+A lista redistribuível é um arquivo XML que você deve nomear usando o seguinte formato: *\<Nome da empresa >. \<Nome do componente >. Redistlist*. Assim, por exemplo, se o componente for chamado de DataWidgets feito por Acme, use *Acme.DataWidgets.RedistList.xml*. Um exemplo de conteúdo da lista redistribuível pode ser semelhante a:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -105,7 +105,7 @@ A lista redistribuível é um arquivo XML que você deve nomear usando o seguint
 ```
 
 ## <a name="see-also"></a>Consulte também
-- [Como instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [Como: Instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [Caixa de diálogo Pré-requisitos](../ide/reference/prerequisites-dialog-box.md)
 - [Referência de esquema de produto e pacote](../deployment/product-and-package-schema-reference.md)
 - [Use o Bootstrapper do Visual Studio 2005 para iniciar sua instalação](http://go.microsoft.com/fwlink/?LinkId=107537)

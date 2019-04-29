@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c4bd2a688e2a10bf0b931851b0d4366684820bf1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859012"
 ---
 # <a name="source-control-integration-overview"></a>Visão geral da integração do controle do código-fonte
 Esta seção compara as duas formas de integrar o controle do código-fonte do Visual Studio; um controle de fonte plug-in e um VSPackage que fornece uma solução de controle do código-fonte e destaca os novos recursos de controle do código-fonte. Visual Studio permite manual alternando VSPackages de controle de origem e plug-ins de controle de origem, bem como a comutação automática baseados em soluções.

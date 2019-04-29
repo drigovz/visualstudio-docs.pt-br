@@ -11,11 +11,11 @@ ms.assetid: c94ed6a5-d5a2-40d3-b227-65318a3eb364
 caps.latest.revision: 17
 manager: jillfra
 ms.openlocfilehash: 82e383f9853bd43d1da4ac47df7e45c3808722a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928249"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934516"
 ---
 # <a name="releasing-a-visual-studio-integration-product"></a>Liberando um produto de integração do Visual Studio
 Os tópicos nesta seção mostram como liberar seu produto de integração do Visual Studio criando e instalando VSPackages e usando o teste de integração do Visual Studio (VSIT).

@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2be88a29d3e9e3da9d1963aa1226ffca0a0a2bbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813043"
 ---
 # <a name="how-to-use-a-resource-file-to-specify-localized-names-properties-and-permissions"></a>Como: Use um arquivo de recurso para especificar nomes localizados, propriedades e permissões
   Usando um arquivo de recurso, forneça nomes localizados, defina as propriedades e aplicar permissões tor objetos que são definidos em um modelo de conectividade de dados comerciais (BDC). Para especificar essas informações, você adiciona uma **recurso de conectividade de dados de negócios** item a um projeto que contém uma **modelo de conectividade de dados corporativos** item. Em seguida, especifique nomes, propriedades e permissões, editando o XML para o arquivo de recurso.

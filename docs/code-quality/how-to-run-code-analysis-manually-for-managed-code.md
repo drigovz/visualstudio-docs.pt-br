@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 75b518e1bf59ebd0e92d7cef311277ccf7d98c82
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096745"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62815812"
 ---
 # <a name="how-to-run-code-analysis-manually-for-managed-code"></a>Como: Executar análise de código manualmente para código gerenciado
 A ferramenta de análise de código fornece informações a você sobre possíveis defeitos no seu código-fonte. Você pode executar a análise de código automaticamente com cada compilação de um projeto de código, e você também pode executar a análise de código manualmente. As regras que são verificadas quando a análise de código é executada são especificadas na página de análise de código das páginas de propriedades do projeto. Para obter mais informações, confira [Como: Configurar análise de código para um projeto de código gerenciado](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)

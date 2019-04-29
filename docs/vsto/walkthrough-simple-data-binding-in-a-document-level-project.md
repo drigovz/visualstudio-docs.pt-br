@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f3b573842aee5f00f161213cf3e01dfcc4c8ba93
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066643"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981056"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>Passo a passo: Associação de dados simples em um projeto de nível de documento
   Este passo a passo demonstra as Noções básicas de vinculação de dados em um projeto de nível de documento. Um único campo de dados em um banco de dados do SQL Server está associado a um intervalo nomeado no Microsoft Office Excel. O passo a passo também mostra como adicionar controles que permitem que você percorra todos os registros na tabela.

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: c31dc8b9ced1ca36b96c73ff8e19fa8c08d98cc5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723533"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62863802"
 ---
 # <a name="extend-properties-and-the-property-window"></a>Estender propriedades e a janela de propriedade
 O **propriedades** janela é usada para exibir e editar as propriedades de tempo de design e os eventos dos objetos selecionados.

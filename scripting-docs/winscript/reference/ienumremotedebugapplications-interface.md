@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 430551002bc7603d86f9c7fb624ec438734bd766
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58150615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62963244"
 ---
 # <a name="ienumremotedebugapplications-interface"></a>Interface IEnumRemoteDebugApplications
 Enumera os objetos de aplicativo. Essa interface pode ser usada para enumerar os aplicativos em execução em um computador para uma caixa de diálogo "anexar ao aplicativo".  

@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 62b0d04e37072af1f0053a6e395edcb856a115c1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56645375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62939313"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>Dados armazenados em cache em personalizações no nível de documento
   É dos principais objetivos das personalizações em nível de documento separar dados de exibição em documentos do Office. Dados refere-se às informações que são armazenadas no documento, incluindo números e texto. Modo de exibição refere-se a interface do usuário e o modelo de objeto do Microsoft Office Word e Microsoft Office Excel.

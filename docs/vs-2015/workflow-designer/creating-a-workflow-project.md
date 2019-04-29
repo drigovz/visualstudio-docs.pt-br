@@ -14,16 +14,16 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: cdf4d9657832c2dc1e7691eed5c334e770de5700
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58929119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62976981"
 ---
 # <a name="creating-a-workflow-project"></a>Criando um fluxo de trabalho Projeto
 Fluxos de trabalho, os serviços de fluxo de trabalho [!INCLUDE[indigo1](../includes/indigo1-md.md)] , as atividades personalizados, e designers personalizados de atividade podem ser criados usando modelos de projeto [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] . Esta seção descreve como criar bibliotecas e aplicativos com modelos de projeto disponíveis em [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
- Os primeiros quatro tópicos a seguir descrevem como usar os modelos de fluxo de trabalho encontrado na **novo projeto** janela. Esses modelos podem ser acessados abrindo [!INCLUDE[vs2010](../includes/vs2010-md.md)] e selecionando **arquivo** -> **New** -> **projeto...** , em seguida, a **fluxo de trabalho** categoria do **modelos instalados** seção à esquerda, em qualquer um os **Visual Basic** ou **Visual C#** nó.  
+ Os primeiros quatro tópicos a seguir descrevem como usar os modelos de fluxo de trabalho encontrado na **novo projeto** janela. Esses modelos podem ser acessados abrindo [!INCLUDE[vs2010](../includes/vs2010-md.md)] e selecionando **arquivo** -> **New** -> **projeto...** , em seguida, a **fluxo de trabalho** categoria do **modelos instalados** seção à esquerda, em qualquer um os **Visual Basic** ou **Visual c#** nó.  
   
  O tópico o último descreve como adicionar atividades de fluxo de trabalho, designer e serviços ou outros itens de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] a um fluxo de trabalho WF existente (ou a outro projeto.)  
   

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 84fef8d0f63f76c7810c94ade2e1eb58e55b94cd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602969"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62861293"
 ---
 # <a name="extend-properties"></a>Estender propriedades
 O [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **Properties** janela é um navegador de propriedade universal para componentes COM e COM+ e dá suporte a todas [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] produtos. O **propriedades** janela funciona com `ITypeInfo` COM+ metadados para listar as propriedades de tempo de design para o objeto atualmente selecionado em outra janela no ambiente de desenvolvimento integrado (IDE) e informações de tipo.

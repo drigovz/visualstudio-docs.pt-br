@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 318744ec1a1a9214ce0385fc56fb1c0cf340339b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068490"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62814105"
 ---
 # <a name="how-to-define-a-method-instance"></a>Como: Definir uma instância de método
   Você deve definir pelo menos uma instância de método para cada método em seu modelo.
