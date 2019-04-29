@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: bfaf520658edfdcf5b80fb89f89489a47c7fffa3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56695577"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62852685"
 ---
 # <a name="debugger-project-settings"></a>Configurações de projeto do depurador
 Determinadas configurações de projeto também afetam a depuração. Essas configurações determinam coisas como quais diretórios o depurador analisa, os comandos e os argumentos de comando usados para iniciar o programa e o tipo de informações de depuração criadas para o programa. Você poderá alterar essas configurações na caixa de diálogo **Páginas de Propriedades**.
@@ -29,11 +29,11 @@ Determinadas configurações de projeto também afetam a depuração. Essas conf
  Esta seção descreve quais opções estão disponíveis e como defini-las.
 
 ## <a name="in-this-section"></a>Nesta seção
- [Como: especificar as configurações do depurador](../debugger/how-to-specify-debugger-settings.md) descreve as configurações do depurador na **opções** caixa de diálogo.
+ [Como: Especificar configurações do depurador](../debugger/how-to-specify-debugger-settings.md) descreve as configurações do depurador na **opções** caixa de diálogo.
 
- [Como: Set Debug and Release Configurations](../debugger/how-to-set-debug-and-release-configurations.md) descreve o **Debug** e **versão** configurações e como alternar entre eles.
+ [Como: Definir configurações de depuração e versão](../debugger/how-to-set-debug-and-release-configurations.md) descreve o **Debug** e **versão** configurações e como alternar entre eles.
 
- [Configurações do projeto para uma configuração de depuração de C++](../debugger/project-settings-for-a-cpp-debug-configuration.md) lista as propriedades disponíveis em de **páginas de propriedade** caixa de diálogo para projetos C ou C++.
+ [Configurações do projeto para um C++ configuração de depuração](../debugger/project-settings-for-a-cpp-debug-configuration.md) lista as propriedades disponíveis na **páginas de propriedades** caixa de diálogo de C ou C++ projetos.
 
  [Configurações do projeto para C# configurações de depuração](../debugger/project-settings-for-csharp-debug-configurations.md) lista as propriedades disponíveis na **páginas de propriedades** caixa de diálogo C# projetos.
 

@@ -22,11 +22,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b37522fec0438278f8cf063637132b146b3d3748
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563901"
 ---
 # <a name="com-and-activex-debugging"></a>Depuração de COM e ActiveX
 Essa seção fornece dicas sobre depuração de aplicativos COM e controles ActiveX.
@@ -34,7 +34,7 @@ Essa seção fornece dicas sobre depuração de aplicativos COM e controles Acti
 ## <a name="in-this-section"></a>Nesta seção
  [Servidor COM e contêiner depuração](../debugger/com-server-and-container-debugging.md) Mencione considerações especiais ao depurar aplicativos COM. Os problemas incluem: depurar um servidor e um contêiner COM usando dois projetos dentro da mesma solução, rastreamento em chamadas que atravessam os limites do processo, definição de pontos de interrupção em funções de retorno de chamada e passagem pelos contêineres e servidores.
 
- [Como: depurar um controle ActiveX](../debugger/how-to-debug-an-activex-control.md) contém informações sobre como depurar controles ActiveX. Isso inclui: especificar um contêiner para que a sessão de depuração veja como o código no controle ActiveX é executado, depurar um controle ActiveX associado a dados, simular um contêiner específico e entrar no código do contêiner.
+ [Como: Depurar um controle ActiveX](../debugger/how-to-debug-an-activex-control.md) contém informações sobre como depurar controles ActiveX. Isso inclui: especificar um contêiner para que a sessão de depuração veja como o código no controle ActiveX é executado, depurar um controle ActiveX associado a dados, simular um contêiner específico e entrar no código do contêiner.
 
  [Ferramentas de depuração COM](../debugger/com-debugging-tools.md) relaciona visualizadores e aplicativos de exemplo que podem ser úteis na depuração de seu aplicativo COM.
 

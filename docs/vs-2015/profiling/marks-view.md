@@ -15,11 +15,11 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 ms.openlocfilehash: fb5fb56a011355abb991d6e8da122461045af2b1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54764918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62562846"
 ---
 # <a name="marks-view"></a>Exibição de marcas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ A exibição Marcas mostra os eventos de amostragem e ETW que foram inseridos no
   
  As marcas padrão que são pré-populadas no rótulo de relatório no início e no final do programa.  
   
- Dados de contadores do Windows das marcas geradas automaticamente também são apresentadas nesta exibição. Para obter mais informações, consulte [Como coletar dados de contadores do Windows](../profiling/how-to-collect-windows-counter-data.md).  
+ Dados de contadores do Windows das marcas geradas automaticamente também são apresentadas nesta exibição. Para obter mais informações, confira [Como: Coletar dados de contador do Windows](../profiling/how-to-collect-windows-counter-data.md).  
   
  Para criar um filtro entre duas marcas, selecione a marca, clique com o botão direito do mouse clique em **Adicionar filtro por marcas** ou **Adicionar filtro por carimbo de data/hora**.  
   
@@ -50,5 +50,5 @@ A exibição Marcas mostra os eventos de amostragem e ETW que foram inseridos no
  [Visão geral de Relatório de Desempenho](../profiling/performance-report-overview.md)   
  [< PAVE_OVER > como: Configurar marcas de criação de perfil](http://msdn.microsoft.com/library/65a23880-e5e8-4d5a-82b3-6498b9ef8975)   
  [< PAVE_OVER > como: Inserir marcas em um arquivo de dados do Profiler](http://msdn.microsoft.com/library/856bfc81-a60f-42e5-a9bc-71b986c1e09d)   
- [Como coletar dados do contador do Windows](../profiling/how-to-collect-windows-counter-data.md)   
+ [Como: Coletar dados de contador do Windows](../profiling/how-to-collect-windows-counter-data.md)   
  [&#91;NIB&#93; Janela de Controle de Coleta de Dados](http://msdn.microsoft.com/98d740d8-459f-4605-bf04-fb17aafaaa8f)

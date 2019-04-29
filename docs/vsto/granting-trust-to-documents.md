@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: be8a17496788b0f4fe8abc9859b46cbfa11a6ed7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62827031"
 ---
 # <a name="grant-trust-to-documents"></a>Conceder confiança a documentos
   Um projeto de nível de documento tem os mesmos requisitos de segurança que projetos de nível de aplicativo: os manifestos com um certificado de assinatura ou clicando no prompt de confiança. Além disso, o documento ou pasta de trabalho deve estar localizada em um diretório que é designado como um local confiável.

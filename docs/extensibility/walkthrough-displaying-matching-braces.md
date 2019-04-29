@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: ae1b0f45d119b759d6618630a65353eff4415c78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62795989"
 ---
 # <a name="walkthrough-display-matching-braces"></a>Passo a passo: Exibir chaves correspondentes
 Implemente recursos de baseada na linguagem, por exemplo, definindo as chaves que você deseja corresponder e adicionando uma marca de marcador de texto para as chaves correspondentes, quando o cursor está em uma das chaves a correspondência de chaves. Você pode definir chaves no contexto de um idioma, definir sua própria extensão de nome de arquivo e o tipo de conteúdo e aplicar as marcas para apenas esse tipo ou aplicam as marcas a um tipo de conteúdo existente (como "texto"). A instrução a seguir mostra como aplicar marcas para o tipo de conteúdo "texto" a correspondência de chaves.

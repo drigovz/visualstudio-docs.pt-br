@@ -110,9 +110,9 @@ Quando você usa o Roaming Extension Manager, há três tipos de ícones em sua 
 
 * ![Ícone de Roaming](media/vs2017ide-roamedicon.png) **_Roaming_**: Uma extensão que faz parte dessa Lista de Roaming, mas que não está instalada no computador.
   (Você pode instalá-las usando o botão **Download**).
-* ![Ícone de Roaming e Instalado](media/vs2017ide-roamedinstalledicon.png)  **_Roaming e Instalado_**: Todas as extensões que fazem parte da Lista de Roaming e que estão instaladas no ambiente de desenvolvimento.
+* ![Ícone de Roaming e Instalado](media/vs2017ide-roamedinstalledicon.png) ** _Roaming e Instalado_**: Todas as extensões que fazem parte da Lista de Roaming e que estão instaladas no ambiente de desenvolvimento.
   (Se você decidir que não deseja usar perfil móvel, poderá remover essas extensões usando o botão **Parar Roaming**).
-* ![Ícone de Instalado](media/vs2017ide-installedicon.png)  **_Instalado_**: Todas as extensões instaladas nesse ambiente, mas que não fazem parte da Lista de Roaming.
+* ![Ícone de Instalado](media/vs2017ide-installedicon.png) ** _Instalado_**: Todas as extensões instaladas nesse ambiente, mas que não fazem parte da Lista de Roaming.
   (Você pode adicionar extensões à Lista de Roaming usando o botão **Iniciar Roaming**).
 
 Qualquer extensão baixada enquanto você estiver conectado será adicionada à lista como **Roaming e Instalado**. Além disso, a extensão fará parte da lista Roaming, que fornece acesso a ela em qualquer computador.

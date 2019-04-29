@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4086c473270befcf2213f003e516128b45c4227
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59366985"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62563540"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>Caixa de diálogo Visualizador do Conjunto de Dados
 O Visualizador de DataSet permite que você exiba o conteúdo de um objeto de DataSet, DataTable, DataView ou DataViewManager. Você pode acessar esse visualizador clicando no ícone de lupa que aparece ao lado do valor para um desses objetos em uma janela de variáveis do depurador ou em um DataTip.

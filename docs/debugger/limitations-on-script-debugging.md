@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 69c5bb23745719edf5e67400d97202f4d14ac17d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846254"
 ---
 # <a name="limitations-on-script-debugging"></a>Limitações na depuração de script
 O [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] dá suporte à depuração de script do lado do cliente, sujeito às restrições neste tópico.

@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: f567fa1d1f793395532efac5991b01c5087b638a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545741"
 ---
 # <a name="ca1804-remove-unused-locals"></a>CA1804: Remover locais não utilizados
 
@@ -40,7 +40,7 @@ ms.locfileid: "55908524"
  As variáveis locais não utilizadas e as atribuições desnecessárias aumentam o tamanho de um assembly e diminuem o desempenho.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra, remova ou use a variável local. Observe que o compilador do C# que está incluído nas [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] remove as variáveis locais não utilizados quando a `optimize` opção está habilitada.
+ Para corrigir uma violação dessa regra, remova ou use a variável local. Observe que o compilador do c# que está incluído nas [!INCLUDE[dnprdnlong](../code-quality/includes/dnprdnlong_md.md)] remove as variáveis locais não utilizados quando a `optimize` opção está habilitada.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Suprima um aviso nessa regra se a variável tiver sido emitido de compilador. Também é seguro para suprimir um aviso nessa regra, ou para desabilitar a regra, se o desempenho e manutenção de código não são principais preocupações.

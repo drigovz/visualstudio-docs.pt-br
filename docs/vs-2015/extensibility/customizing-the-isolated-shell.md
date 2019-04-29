@@ -11,11 +11,11 @@ caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 724d4d0c4b392a362e702f33ea996df3a6fc0ad6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927531"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555962"
 ---
 # <a name="customizing-the-isolated-shell"></a>Personalizar o Shell isolado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Você pode personalizar seu aplicativo de shell isolado do Visual Studio, altera
  Você pode personalizar o ícone do aplicativo, que é o ícone que é exibido pelo nome do aplicativo na barra de título do aplicativo. Copie um ícone diferente para o diretório de ícone. Na **Gerenciador de soluções**, adicionar o ícone para a pasta de arquivos de recurso. Em seguida, abra o arquivo VSShellStub.rc e substitua o valor de IDI_STUBPROGRAM com o nome do novo ícone. Para obter mais detalhes, consulte [passo a passo: Criando um Basic o aplicativo de Shell isolado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ##### <a name="the-command-line-logo"></a>O logotipo de linha de comando  
- Você pode personalizar o logotipo de linha de comando, que é o texto que aparece quando o aplicativo é iniciado na linha de comando, alterando o valor da linha "CommandLineLogo" a *SolutionName*. Arquivo Application.pkgdef. Para obter mais detalhes, consulte [passo a passo: Criando um aplicativo básico de Shell isolado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ Você pode personalizar o logotipo de linha de comando, que é o texto que aparece quando o aplicativo é iniciado na linha de comando, alterando o valor da linha "CommandLineLogo" a *SolutionName*. Arquivo Application.pkgdef. Para obter mais detalhes, consulte [passo a passo: criar um aplicativo básico de Shell isolado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="the-name-of-the-user-files-subfolder"></a>O nome da subpasta de arquivos do usuário  
  Você pode alterar o nome da pasta do seu aplicativo mantém para arquivos do usuário, alterando o valor da linha "UserFilesSubFolderName" na *SolutionName*. Arquivo Application.pkgdef.  
@@ -58,7 +58,7 @@ Você pode personalizar seu aplicativo de shell isolado do Visual Studio, altera
  Você pode personalizar a página do navegador da web, que é exibido quando a janela do navegador da web é aberta, alterando o valor da linha "DefaultSearchPage" na página de *SolutionName*. Arquivo Application.pkgdef.  
   
 ##### <a name="the-default-home-page"></a>A home page padrão  
- Você pode personalizar a home page, alterando o valor da linha "DefaultHomePage" a *SolutionName*. Arquivo Application.pkgdef. Para obter mais detalhes, consulte [passo a passo: Criando um aplicativo básico de Shell isolado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
+ Você pode personalizar a home page, alterando o valor da linha "DefaultHomePage" a *SolutionName*. Arquivo Application.pkgdef. Para obter mais detalhes, consulte [passo a passo: criar um aplicativo básico de Shell isolado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)  
   
 ##### <a name="whether-or-not-to-hide-the-solution-concept"></a>Se deseja ou não ocultam o conceito de solução  
  Você pode especificar se deseja ou não ocultar a solução em seu aplicativo, alterando o valor da linha "HideSolutionConcept" a *SolutionName*. Arquivo Application.pkgdef. Para ocultar a solução, defina o valor `dword:00000001`e para mostrar a solução, defina o valor `dword:00000000`.  

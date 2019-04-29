@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 2673b22bf502f019f0a10361c9d0cef9d5ac1b8c
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58322526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816831"
 ---
 # <a name="projectoutputfile-element"></a>Elemento ProjectOutputFile
   Representa a saída de um projeto separado para incluir com o item de projeto quando ele é implantado no SharePoint.

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 896832ac3e96e499aa564d5bce44dc06185090de
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62555241"
 ---
 # <a name="compilanddetails"></a>CompilandDetails
 Informações de Compiland são divididas entre símbolos com um `SymTagCompiland` marca (nível baixo de detalhe) e um `SymTagCompilandDetails` marca (maior nível de detalhes). `SymTagCompilandDetails` requer o carregamento de símbolos adicionais. No entanto, ele fornece uma grande quantidade de informações sobre o compiland que não está disponível com um `SymTagCompiland` símbolo.

@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: a13aeeffbc77e4f40ff886c0d890f181697fcc11
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55950676"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62797173"
 ---
 # <a name="ca1800-do-not-cast-unnecessarily"></a>CA1800: Não converta sem necessidade
 
@@ -41,7 +41,7 @@ Para concluir a análise por essa regra, testado assembly deve ser criado usando
 ## <a name="rule-description"></a>Descrição da regra
 As conversões duplicadas diminui o desempenho, especialmente quando as conversões são realizadas em instruções de iteração compactas. Para operações de conversão explícita de duplicados, armazenar o resultado da conversão em uma variável local e usa a variável local em vez de operações de conversão duplicados.
 
-Se a linguagem C# `is` operador é usado para testar se a conversão for bem-sucedida antes que a conversão real é executada, Experimente testar o resultado do `as` operador em vez disso. Isso fornece a mesma funcionalidade sem a operação de conversão implícita é executada pelo `is` operador. Ou, no C# 7.0 e posterior, use o `is` operador com [correspondência de padrões](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) para verificar a conversão de tipo e converter a expressão a uma variável desse tipo em uma única etapa.
+Se a linguagem c# `is` operador é usado para testar se a conversão for bem-sucedida antes que a conversão real é executada, Experimente testar o resultado do `as` operador em vez disso. Isso fornece a mesma funcionalidade sem a operação de conversão implícita é executada pelo `is` operador. Ou, no c# 7.0 e posterior, use o `is` operador com [correspondência de padrões](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) para verificar a conversão de tipo e converter a expressão a uma variável desse tipo em uma única etapa.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
  Para corrigir uma violação dessa regra, modificar a implementação do método para minimizar o número de operações de conversão.
@@ -50,7 +50,7 @@ Se a linguagem C# `is` operador é usado para testar se a conversão for bem-suc
  É seguro para suprimir um aviso nessa regra, ou ignorar a regra completamente, se o desempenho não for uma preocupação.
 
 ## <a name="examples"></a>Exemplos
- O exemplo a seguir mostra um método que viola a regra usando o C# `is` operador. Um segundo método satisfaz a regra, substituindo o `is` operador com um teste com o resultado do `as` operador, que diminui o número de operações de conversão por iteração de dois para um. Um terceiro método também atende a regra usando `is` com [correspondência de padrões](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) para criar uma variável do tipo desejado se a conversão de tipo teria êxito.
+ O exemplo a seguir mostra um método que viola a regra usando o c# `is` operador. Um segundo método satisfaz a regra, substituindo o `is` operador com um teste com o resultado do `as` operador, que diminui o número de operações de conversão por iteração de dois para um. Um terceiro método também atende a regra usando `is` com [correspondência de padrões](/dotnet/csharp/language-reference/keywords/is#pattern-matching-with-is) para criar uma variável do tipo desejado se a conversão de tipo teria êxito.
 
  [!code-csharp[FxCop.Performance.UnnecessaryCastsAsIs#1](../code-quality/codesnippet/CSharp/ca1800-do-not-cast-unnecessarily_1.cs)]
 
@@ -61,5 +61,5 @@ Se a linguagem C# `is` operador é usado para testar se a conversão for bem-suc
 
 ## <a name="see-also"></a>Consulte também
 
-- [as (referência de C#)](/dotnet/csharp/language-reference/keywords/as)
-- [IS (referência de C#)](/dotnet/csharp/language-reference/keywords/is)
+- [as (referência de c#)](/dotnet/csharp/language-reference/keywords/as)
+- [IS (referência de c#)](/dotnet/csharp/language-reference/keywords/is)

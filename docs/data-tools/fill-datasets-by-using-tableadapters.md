@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: eb1fdf57be1630468ee3990028a417565a914639
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55937988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566891"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Preencher conjuntos de dados usando TableAdapters
 
@@ -114,7 +114,7 @@ Se você não quiser criar esses métodos diretos, defina o TableAdapter **Gener
 
 ## <a name="tableadapter-support-for-nullable-types"></a>Suporte do TableAdapter para tipos anuláveis
 
-TableAdapters oferecem suporte a tipos anuláveis `Nullable(Of T)` e `T?`. Para obter mais informações sobre tipos que permitem valor nulo no Visual Basic, consulte [Tipos de valores que permitem valor nulo](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types). Para obter mais informações sobre tipos anuláveis no C#, consulte [Use tipos anuláveis](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types).
+TableAdapters oferecem suporte a tipos anuláveis `Nullable(Of T)` e `T?`. Para obter mais informações sobre tipos que permitem valor nulo no Visual Basic, consulte [Tipos de valores que permitem valor nulo](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types). Para obter mais informações sobre tipos anuláveis no c#, consulte [Use tipos anuláveis](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types).
 
 <a name="tableadaptermanager-reference"></a>
 

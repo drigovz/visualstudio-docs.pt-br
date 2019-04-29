@@ -1,5 +1,5 @@
 ---
-title: 'Passo a passo: criando um Serviço WCF simples no Windows Forms'
+title: 'Passo a passo: Criando um serviço WCF simples no Windows Forms'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 97bbf8212caf87f28849df15d350811579f22ccd
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58325221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565256"
 ---
 # <a name="walkthrough-create-a-simple-wcf-service-in-windows-forms"></a>Passo a passo: Criar um serviço WCF simples no Windows Forms
 
@@ -117,7 +117,7 @@ Este passo a passo demonstra como criar um serviço simples do Windows Communica
 
 1. No menu **Arquivo**, aponte para **Adicionar** e clique em **Novo Projeto**.
 
-2. No **novo projeto** diálogo caixa, expanda o **Visual Basic** ou **Visual C#** nó, selecione **Windows**e, em seguida, selecione  **Aplicativo de formulários do Windows**. Clique em **Okey** para abrir o projeto.
+2. No **novo projeto** diálogo caixa, expanda o **Visual Basic** ou **Visual c#** nó, selecione **Windows**e, em seguida, selecione  **Aplicativo de formulários do Windows**. Clique em **Okey** para abrir o projeto.
 
      ![Projeto de aplicativo do Windows Forms](../data-tools/media/wcf7.png)
 

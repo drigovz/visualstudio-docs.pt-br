@@ -18,11 +18,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: c138c05d755b05275755f96776764604997cbbcd
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55921543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62778779"
 ---
 # <a name="ca1047-do-not-declare-protected-members-in-sealed-types"></a>CA1047: Não declarar membros protegidos em tipos selados
 
@@ -34,12 +34,12 @@ ms.locfileid: "55921543"
 |Alteração Significativa|Não são significativas|
 
 ## <a name="cause"></a>Causa
- É um tipo público `sealed` (`NotInheritable` no Visual Basic) e declara um membro protegido ou um tipo aninhado protegido. Essa regra não relata violações para <xref:System.Object.Finalize%2A> métodos, que devem seguir esse padrão.
+ É um tipo público `sealed` (`NotInheritable` no Visual basic) e declara um membro protegido ou um tipo aninhado protegido. Essa regra não relata violações para <xref:System.Object.Finalize%2A> métodos, que devem seguir esse padrão.
 
 ## <a name="rule-description"></a>Descrição da regra
  Os tipos declaram membros protegidos de forma que a herança de tipos possa acessar ou substituir o membro. Por definição, você não pode herdar de um tipo selado, o que significa que métodos em tipos lacrados protegidos não pode ser chamada.
 
- O compilador C# emite um aviso para esse erro.
+ O compilador c# emite um aviso para esse erro.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
  Para corrigir uma violação dessa regra, altere o nível de acesso do membro particular ou tornar o tipo herdável.

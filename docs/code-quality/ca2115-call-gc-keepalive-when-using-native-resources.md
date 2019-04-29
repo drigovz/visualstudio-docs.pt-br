@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 9a74f6313f90a31d43cf39443b1c44d78f0628f8
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930981"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62545183"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: Chamar GC.KeepAlive ao usar recursos nativos
 
@@ -42,7 +42,7 @@ Esta regra pressupõe que <xref:System.IntPtr> e <xref:System.UIntPtr> campos ar
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 
-Para corrigir uma violação dessa regra, adicione uma chamada para <xref:System.GC.KeepAlive%2A> para o método, passando a instância atual (`this` em C# e C++) como o argumento. Posicione a chamada após a última linha de código em que o objeto deve ser protegido de coleta de lixo. Imediatamente após a chamada para <xref:System.GC.KeepAlive%2A>, o objeto é considerado novamente pronto para a coleta de lixo supondo que nenhuma referência gerenciada para ele.
+Para corrigir uma violação dessa regra, adicione uma chamada para <xref:System.GC.KeepAlive%2A> para o método, passando a instância atual (`this` em c# e C++) como o argumento. Posicione a chamada após a última linha de código em que o objeto deve ser protegido de coleta de lixo. Imediatamente após a chamada para <xref:System.GC.KeepAlive%2A>, o objeto é considerado novamente pronto para a coleta de lixo supondo que nenhuma referência gerenciada para ele.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
 

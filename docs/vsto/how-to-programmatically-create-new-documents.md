@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 4940b5f5064fdb47439ad6b38b855785ae06c781
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053449"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575124"
 ---
 # <a name="how-to-programmatically-create-new-documents"></a>Como: Criar novos documentos programaticamente
   Quando você cria um documento por meio de programação, o novo documento é um nativo <xref:Microsoft.Office.Interop.Word.Document> objeto. Este objeto não tem a eventos adicionais e recursos de associação de dados de um <xref:Microsoft.Office.Tools.Word.Document> item de host. Para obter mais informações, consulte [limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md).

@@ -18,13 +18,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 711a8c1e8353f6e57f7101549a3b5421a33e0ae4
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56679301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62846276"
 ---
-# <a name="managed-debugging-recommended-property-settings"></a>Depuração gerenciada: configurações de propriedade recomendadas
+# <a name="managed-debugging-recommended-property-settings"></a>Depuração gerenciada: Configurações de propriedade recomendadas
 Certas propriedades devem ser definidas da mesma maneira para todos os cenários gerenciados de depuração.
 
  As tabelas a seguir exibem as configurações de propriedade recomendadas.
@@ -35,9 +35,9 @@ Certas propriedades devem ser definidas da mesma maneira para todos os cenários
 
 |**Nome da propriedade**|**Configuração**|
 |-----------------------|-----------------|
-|**Definir a constante DEBUG**|C# e F#: defina a caixa de seleção como verificado. Isso permite que o aplicativo use uma classe de Depuração.|
-|**Definir a constante TRACE**|C# e F#: defina a caixa de seleção como verificado. Isso permite que o aplicativo use uma classe de rastreamento.|
-|**Otimizar código**|F#, C# e Visual Basic: definidos como falso. O código otimizado é mais difícil de depurar porque as instruções geradas não correspondem diretamente ao código-fonte. Se você descobrir que seu programa tem um bug que aparece apenas em código otimizado, habilite essa configuração, mas lembre-se de que o código exibido na janela **Desmontagem** será gerado da origem otimizada que pode não corresponder ao que aparece no Editor de Códigos. Para depurar um código otimizado, você deve desativar o Apenas Meu Código. (Confira [Restringir a depuração a Apenas Meu Código](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)).<br /><br /> Para obter mais informações, consulte [configurações do projeto para configurações de depuração do c#](../debugger/project-settings-for-csharp-debug-configurations.md) ou [configurações do projeto para uma configuração de depuração do Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|
+|**Definir a constante DEBUG**|C#e F#: Defina a caixa de seleção. Isso permite que o aplicativo use uma classe de Depuração.|
+|**Definir a constante TRACE**|C#e F#: Defina a caixa de seleção. Isso permite que o aplicativo use uma classe de rastreamento.|
+|**Otimizar código**|C#, F#e o Visual Basic: Defina como false. O código otimizado é mais difícil de depurar porque as instruções geradas não correspondem diretamente ao código-fonte. Se você descobrir que seu programa tem um bug que aparece apenas em código otimizado, habilite essa configuração, mas lembre-se de que o código exibido na janela **Desmontagem** será gerado da origem otimizada que pode não corresponder ao que aparece no Editor de Códigos. Para depurar um código otimizado, você deve desativar o Apenas Meu Código. (Confira [Restringir a depuração a Apenas Meu Código](../debugger/navigating-through-code-with-the-debugger.md#BKMK_Restrict_stepping_to_Just_My_Code)).<br /><br /> Para obter mais informações, consulte [configurações do projeto para configurações de depuração do c#](../debugger/project-settings-for-csharp-debug-configurations.md) ou [configurações do projeto para uma configuração de depuração do Visual Basic](../debugger/project-settings-for-a-visual-basic-debug-configuration.md).|
 |**Caminho de saída**|Definido para bin\Debug\\.|
 |**Opções avançadas de compilação**|Somente Visual Basic. Clique em **Avançado** para definir as propriedades avançadas descritas na tabela a seguir.|
 

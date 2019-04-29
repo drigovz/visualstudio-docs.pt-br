@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 9d831cb629665e641394d011bd11eb74481c4f94
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826438"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>Como: Adicionar um iniciador da caixa de diálogo a um grupo de faixa de opções
   Você pode adicionar um iniciador da caixa de diálogo a qualquer grupo de uma faixa de opções. Um iniciador da caixa de diálogo é um pequeno ícone que aparece em um grupo. Os usuários clicam nesse ícone para abrir caixas de diálogo relacionadas ou painéis de tarefas que fornecem mais opções relacionadas ao grupo.

@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 109f6b85653a842f7c6fc9ce2d2c09b74113bbc7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641241"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583914"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>Gerenciamento de direitos de informação e visão geral das extensões de código gerenciado
   Microsoft Office Word e Microsoft Office Excel fornecem gerenciamento de direitos de informação (IRM), um recurso que pode ajudar a impedir que pessoas não autorizadas de exibir ou alterar informações confidenciais. Para obter detalhes sobre como funciona o gerenciamento de direitos de informações, consulte a Ajuda no aplicativo do Office específico.

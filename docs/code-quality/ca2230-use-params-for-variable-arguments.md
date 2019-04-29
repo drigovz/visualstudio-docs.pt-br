@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: b3318a9f5bd65c6b9514519936cc52e037e0c215
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55944982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541777"
 ---
 # <a name="ca2230-use-params-for-variable-arguments"></a>CA2230: Usar parâmetros para argumentos variáveis
 
@@ -36,10 +36,10 @@ ms.locfileid: "55944982"
 ## <a name="rule-description"></a>Descrição da regra
  O `VarArgs` convenção de chamada é usada com determinadas definições de método que levam a um número variável de parâmetros. Um método usando o `VarArgs` convenção de chamada não é Common Language Specification (CLS) em conformidade e pode não estar acessível em linguagens de programação.
 
- No C#, o `VarArgs` convenção de chamada é usada quando a lista de parâmetros do método termina com o `__arglist` palavra-chave. Visual Basic não oferece suporte a `VarArgs` convenção de chamada e Visual C++ permite que seu uso apenas em código não gerenciado que usa a elipse `...` notação.
+ No c#, o `VarArgs` convenção de chamada é usada quando a lista de parâmetros do método termina com o `__arglist` palavra-chave. Visual Basic não oferece suporte a `VarArgs` convenção de chamada e Visual C++ permite que seu uso apenas em código não gerenciado que usa a elipse `...` notação.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
- Para corrigir uma violação dessa regra no C#, use o [params](/dotnet/csharp/language-reference/keywords/params) palavra-chave, em vez de `__arglist`.
+ Para corrigir uma violação dessa regra no c#, use o [params](/dotnet/csharp/language-reference/keywords/params) palavra-chave, em vez de `__arglist`.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Não suprima um aviso nessa regra.

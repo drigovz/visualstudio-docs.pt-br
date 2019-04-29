@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 62e7740915d341eee1bbf5e112c4f09297c98be1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62813793"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>Como: Lidar com conflitos de implantação
   Você pode fornecer seu próprio código para lidar com conflitos de implantação para um item de projeto do SharePoint. Por exemplo, você pode determinar se todos os arquivos no item de projeto atual já existem no local de implantação e, em seguida, excluir os arquivos implantados antes que o item de projeto atual seja implantado. Para obter mais informações sobre conflitos de implantação, consulte [estendendo SharePoint empacotamento e implantação](../sharepoint/extending-sharepoint-packaging-and-deployment.md).

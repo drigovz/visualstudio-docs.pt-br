@@ -12,11 +12,11 @@ caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: a0f3380622f20e8518eed8ea2a8071518fe4a099
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000060"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62537427"
 ---
 # <a name="visual-studio-sdk-reference"></a>Referência ao SDK do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -200,31 +200,31 @@ Esta seção contém informações sobre namespaces, namespaces relacionados e o
  Usado para o Assistente do Visual Studio.  
   
  <xref:VSLangProj>  
- Usado para a automação de projeto C# e Visual Basic.  
+ Usado para a automação de projeto c# e Visual Basic.  
   
  <xref:VSLangProj2>  
- Usado para a automação de projeto C# e Visual Basic.  
+ Usado para a automação de projeto c# e Visual Basic.  
   
  <xref:VSLangProj80>  
- Usado para a automação de projeto C# e Visual Basic.  
+ Usado para a automação de projeto c# e Visual Basic.  
   
  <xref:VSLangProj90>  
- Usado para a automação de projeto C# e Visual Basic.  
+ Usado para a automação de projeto c# e Visual Basic.  
   
  <xref:VSLangProj100>  
- Usado para a automação de projeto C# e Visual Basic.  
+ Usado para a automação de projeto c# e Visual Basic.  
   
  <xref:VSLangProj110>  
- Usado para a automação de projeto C# e Visual Basic.  
+ Usado para a automação de projeto c# e Visual Basic.  
   
  <xref:VSLangProj140>  
- Usado para a automação de projeto C# e Visual Basic.  
+ Usado para a automação de projeto c# e Visual Basic.  
   
  <xref:Microsoft.VisualStudio.Language.CallHierarchy>  
- Usado para a automação de C# e Visual Basic.  
+ Usado para a automação de c# e Visual Basic.  
   
  <xref:Microsoft.VisualStudio.Language.NavigateTo.Interfaces>  
- Usado para a automação de C# e Visual Basic.  
+ Usado para a automação de c# e Visual Basic.  
   
  <xref:Microsoft.VisualStudio.Threading>  
  Usado para threading do Visual Studio.  

@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 327a53a28e5b37d33d44375653c1bffa56c7ddd2
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62829026"
 ---
 # <a name="idialinenumber"></a>IDiaLineNumber
 Acessa as informações que descreve o processo de mapeamento de um bloco de bytes de texto da imagem para um número de linha do arquivo de origem.

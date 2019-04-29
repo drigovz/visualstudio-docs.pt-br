@@ -11,11 +11,11 @@ caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: f15c649b8d857d2e920bb957e5975d296749cb86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925769"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62556108"
 ---
 # <a name="customizing-code-windows-by-using-the-legacy-api"></a>Personalizando o Windows do código usando a API herdada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,10 +35,10 @@ Janela de código
  `Customizing Code Windows by Using the Legacy API`  
  Explica como personalizar o windows de código usando a API herdada.  
   
- [Como: Hospedar um Editor em outro Editor](../extensibility/how-to-host-an-editor-in-another-editor.md)  
+ [Como: hospedar um editor em outro editor](../extensibility/how-to-host-an-editor-in-another-editor.md)  
  Explica como hospedar um segundo editor dentro de uma janela do editor.  
   
- [Como: Disparar eventos quando o Editor perde o foco](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
+ [Como: disparar eventos quando o editor perde o foco](../extensibility/how-to-fire-events-when-the-editor-loses-focus.md)  
  Explica como anexar um modo de exibição de documento para um objeto de dados do documento.  
   
 ## <a name="see-also"></a>Consulte também  

@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: 471f0e9b97293bd70457a8f41cb7efddd6acf6c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564790"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>Passo a passo: Criar um aplicativo de dados de n camadas
 Os aplicativos de dados de *N camadas* são aplicativos que acessam dados e são separados em várias *camadas* lógicas. A separação de componentes de aplicativos em camadas discretas aumenta a capacidade de manutenção e a escalabilidade do aplicativo. Isso é feito pela adoção com mais facilidade de novas tecnologias que podem ser aplicadas a uma única camada, sem precisar reprojetar toda a solução. A arquitetura de N camadas inclui uma camada de apresentação, uma camada intermediária e uma camada de dados. A camada intermediária geralmente inclui uma camada de acesso a dados, uma camada lógica de negócios e componentes compartilhados, tais como autenticação e validação. A camada de dados inclui um banco de dados relacional. Os aplicativos de N camadas geralmente armazenam informações confidenciais na camada de acesso a dados da camada intermediária para manter o isolamento de usuários finais que acessam a camada de apresentação. Para obter mais informações, consulte [visão geral dos aplicativos de dados de N camadas](../data-tools/n-tier-data-applications-overview.md).
@@ -92,7 +92,7 @@ Este passo a passo usa o SQL Server Express LocalDB e o banco de dados de exempl
 
 ### <a name="to-create-a-separate-class-library-for-the-tableadapters"></a>Para criar uma biblioteca de classes separado para os TableAdapters
 
-1. Clique com botão direito na solução no **Gerenciador de soluções** e escolha **Add** > **novo projeto**.
+1. Clique com o botão direito do mouse na solução no **Gerenciador de Soluções** e escolha **Adicionar** > **Novo Projeto**.
 
 2. No **novo projeto** caixa de diálogo, no painel central, selecione **biblioteca de classes**.
 
@@ -164,7 +164,7 @@ Este passo a passo demonstra como acessar a camada de acesso de dados por meio d
 
 ### <a name="to-create-a-new-wcf-service-application"></a>Para criar um novo aplicativo de Serviço WCF
 
-1. Clique com botão direito na solução no **Gerenciador de soluções** e escolha **Add** > **novo projeto**.
+1. Clique com o botão direito do mouse na solução no **Gerenciador de Soluções** e escolha **Adicionar** > **Novo Projeto**.
 
 2. No **novo projeto** caixa de diálogo, no painel esquerdo, selecione **WCF**. No painel central, selecione **WCF Service Library**.
 
@@ -288,7 +288,7 @@ Este passo a passo demonstra como acessar a camada de acesso de dados por meio d
 
 ### <a name="to-create-the-presentation-tier-project"></a>Para criar o projeto da camada de apresentação
 
-1. Clique com botão direito na solução no **Gerenciador de soluções** e escolha **Add** > **novo projeto**.
+1. Clique com o botão direito do mouse na solução no **Gerenciador de Soluções** e escolha **Adicionar** > **Novo Projeto**.
 
 2. No **novo projeto** caixa de diálogo, no painel esquerdo, selecione **área de trabalho do Windows**. No painel central, selecione **aplicativo de formulários do Windows**.
 
