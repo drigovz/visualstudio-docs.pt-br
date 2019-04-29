@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 540427286306999b25fba99a2efbd17013740d90
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62869737"
 ---
 # <a name="idebugproperty3destroyobjectid"></a>IDebugProperty3::DestroyObjectID
 Destrói a ID exclusiva associada a essa propriedade, que indica que o chamador não precisa mais identificar essa propriedade exclusivamente de todas as outras propriedades.

@@ -19,11 +19,11 @@ dev_langs:
 ms.workload:
 - multiple
 ms.openlocfilehash: b794eb7c7a258a843763b2c68902000031c17eb3
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873598"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807141"
 ---
 # <a name="ca1715-identifiers-should-have-correct-prefix"></a>CA1715: Identificadores devem ter um prefixo correto
 
@@ -38,7 +38,7 @@ ms.locfileid: "57873598"
 
 O nome de uma interface não começar com letras maiusculas 'I'.
 
--ou-
+- ou -
 
 O nome de um [parâmetro de tipo genérico](/dotnet/csharp/programming-guide/generics/generic-type-parameters) em um tipo ou método não começa com uma letra maiuscula ' t '.
 

@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0cf41afa91ce1e77904b99f17ea0321e9bdb12d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62889543"
 ---
 # <a name="launch-based-attachment"></a>Anexo de inicialização
 Com base em inicialização anexo a um programa é automático. Quando o processo que hospeda o programa é iniciado pelo SDM, anexo com base em inicialização segue um caminho semelhante do método manual de anexo. Para obter informações, consulte [anexação ao programa](../../extensibility/debugger/attaching-to-the-program.md).

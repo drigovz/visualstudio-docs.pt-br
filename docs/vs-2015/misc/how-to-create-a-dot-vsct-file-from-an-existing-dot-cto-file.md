@@ -10,11 +10,11 @@ ms.assetid: 847717c9-477d-4ac9-8b2c-2da878912478
 caps.latest.revision: 11
 manager: jillfra
 ms.openlocfilehash: 83608d768940158dcdab427a557577677e56f7c8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62822432"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-cto-file"></a>Como: Criar um. Arquivo VSCT de um existente. Arquivo CTO
 Você pode criar um arquivo. VSCT de baseado em XML de um arquivo binário CTO de já existente. Isso permite aproveitar o novo formato de compilador de tabela do comando. Esse processo funciona mesmo se o arquivo de CTO já foi compilado a partir de um arquivo. ctc. Você pode editar e compilar o arquivo. VSCT em outro arquivo CTO já.  

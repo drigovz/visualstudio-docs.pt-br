@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: c231aac3b78ddb5100cc06600059045fdc463e51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62826739"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>Como: Cache de dados em um documento protegido por senha
   Se você adicionar dados ao cache de dados em um documento ou pasta de trabalho protegida com uma senha, as alterações nos dados armazenados em cache não são salvas automaticamente. Você pode salvar as alterações aos dados armazenados em cache por substituir dois métodos em seu projeto.

@@ -12,11 +12,11 @@ caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
 ms.openlocfilehash: 8601b4f072c206ab19fdcb4a7248e79784af934a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925264"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62546795"
 ---
 # <a name="package-guids-of-visual-studio-features"></a>GUIDs de pacote de recursos do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Você pode usar os GUIDs a seguir no arquivo. pkgundef do seu aplicativo de shel
 ||Pacote de Build de solução do Visual Studio|{282BD676-8B5B-11D0-8A34-00A0C91E2ACD}|
 ||Pacote de gerenciamento de texto|{F5E7E720-1401-11d1-883B-0000F87579D2}|
 ||Pacote do Visual Studio VsSettings|{F74C5077-D848-4630-80C9-B00E68A1CA0C}|
-|Ajuda|Pacote de Ajuda do Visual Studio|{4A791146-19E4-11D3-B86B-00C04F79F802}|
+|Help|Pacote de Ajuda do Visual Studio|{4A791146-19E4-11D3-B86B-00C04F79F802}|
 |Lista de tarefas, lista de erros|ErrorListPackage|{4A9B7E50-AA16-11D0-A8C5-00A0C921A4D2}|
 |Estrutura de tópicos de classe|Pacote de estrutura de tópicos de classe|{21AF45B0-FFA5-11D0-G63F-00A0C922E851}|
 |Instalador de controles de caixa de ferramentas|Pacote do instalador de controles de caixa de ferramentas|{2C298B35-07DA-45F1-96A3-BE55D91C8d7A}|

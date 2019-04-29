@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 6688844b5e5353d0d80ef2fb5fa2466a53f5f34a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56623886"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840064"
 ---
 # <a name="idiaframedatagetlengthlocals"></a>IDiaFrameData::get_lengthLocals
 Recupera o número de bytes de variáveis locais empurradas na pilha.

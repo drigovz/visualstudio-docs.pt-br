@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc6093d9bdbd780e1c8ddeb941f5f80dd479f77a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607597"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910145"
 ---
 # <a name="custom-tools"></a>Ferramentas personalizadas
 *Ferramentas personalizadas* permitem que você associe uma ferramenta de um item em um projeto e executar essa ferramenta, sempre que o arquivo é salvo. Determinadas ferramentas personalizadas, também conhecido como *geradores de arquivo único*, costumam ser usados para implementar os tradutores que geram código de dados e vice-versa. Por exemplo, criar geradores de arquivo único [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] código fora da fonte a *Settings* e *. resx* arquivos. O código-fonte gerado fornece acesso fortemente tipado aos dados na *. Settings* e *resx* arquivos. O [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] e [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] ferramentas personalizadas; dar suporte a tipos de projeto [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] tipos de projeto não fizer isso. Seus próprios tipos de projeto também podem dar suporte a ferramentas personalizadas.

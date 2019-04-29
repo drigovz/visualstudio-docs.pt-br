@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1ad60503c9f7b15bd4665fb8f9552864debc381d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56609573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909206"
 ---
 # <a name="model-for-source-control-packages"></a>Modelo de pacotes de controle do código-fonte
 O modelo a seguir representa um exemplo de uma implementação de controle do código-fonte. No modelo, você pode ver as que você deve implementar interfaces e os serviços de ambiente que você deve chamar. Assim como todos os serviços, você realmente chama os métodos de uma interface específica que você obtém por meio do serviço. Os nomes das classes são identificados para torná-lo mais fácil de ver como o controle de origem é realizado.

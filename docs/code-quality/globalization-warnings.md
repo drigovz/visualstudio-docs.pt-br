@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3b61b0f10e4231ce1970a55cf352490cbf02a42d
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55936675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62816525"
 ---
 # <a name="globalization-warnings"></a>Avisos de globalização
 Avisos de globalização dão suporte a aplicativos e bibliotecas do mundo.

@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: e5e627d758a1249a1e9b5e877255a67cfb255cf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060664"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62799066"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Coloração de sintaxe em editores personalizados
 Editores de SDK de ambiente do Studio Visual, incluindo o editor de núcleo, usam serviços de linguagem para identificar itens específicos de sintáticos e exibi-las com as cores especificadas para uma exibição de documento fornecido.
@@ -58,5 +58,5 @@ Editores de SDK de ambiente do Studio Visual, incluindo o editor de núcleo, usa
 
 - [Coloração de sintaxe em um serviço de linguagem herdado](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [Implementar a coloração de sintaxe](../extensibility/internals/implementing-syntax-coloring.md)
-- [Como: Usar itens de coloração internos](../extensibility/internals/how-to-use-built-in-colorable-items.md)
+- [Como: usar itens de coloração internos](../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [Itens de coloração personalizados](../extensibility/internals/custom-colorable-items.md)

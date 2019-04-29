@@ -8,11 +8,11 @@ manager: wpickett
 dev_langs:
 - CPP
 ms.openlocfilehash: 7d888204de33ba870111be08ae91bb09d09416d4
-ms.sourcegitcommit: 3d37c2460584f6c61769be70ef29c1a67397cf14
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/21/2019
-ms.locfileid: "58323692"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820901"
 ---
 # <a name="use-the-c-core-guidelines-checkers"></a>Usar os verificadores de Diretrizes Principais do C++
 
@@ -159,7 +159,7 @@ Em vez de #pragmas, você pode usar as opções de linha de comando na página d
 
 1. Clique no arquivo em **Gerenciador de soluções**
 
-2. Escolha **propriedades | C / C + + | Linha de comando**
+2. Escolha **propriedades | C /C++| Linha de comando**
 
 3. No **opções adicionais** janela, adicione `/wd26400`.
 
@@ -174,8 +174,8 @@ Você pode usar a opção de linha de comando para desabilitar temporariamente t
 3. Carregue seu projeto e abra suas propriedades.
 4. Habilitar análise de código, selecione os conjuntos de regra apropriado, mas não habilitar extensões de análise de código.
 5. Vá até o arquivo que você deseja analisar com o verificador de diretrizes de núcleo do C++ e abrir suas propriedades.
-6. Escolher **C / C + + \Command opções de linha de** e adicionar `/analyze:plugin EspXEngine.dll`
-7. Desabilitar o uso de cabeçalho pré-compilado (**C / C + + \Precompiled cabeçalhos**). Isso é necessário porque o mecanismo de extensões pode tentar ler suas informações internas de cabeçalho pré-compilado (PCH); Se o PCH compilado com as opções de projeto padrão, ele não será compatível.
+6. Escolher **C /C++opções de linha de \Command** e adicione `/analyze:plugin EspXEngine.dll`
+7. Desabilitar o uso de cabeçalho pré-compilado (**C /C++\Precompiled cabeçalhos**). Isso é necessário porque o mecanismo de extensões pode tentar ler suas informações internas de cabeçalho pré-compilado (PCH); Se o PCH compilado com as opções de projeto padrão, ele não será compatível.
 8. Recompile o projeto. As verificações de PREFast comuns devem ser executado em todos os arquivos. Porque o verificador de diretrizes do C++ Core não está habilitado por padrão, ele só deve ser executado no arquivo que está configurado para usá-lo.
 
 ## <a name="how-to-use-the-c-core-guidelines-checker-outside-of-visual-studio"></a>Como usar o verificador de diretrizes do C++ Core fora do Visual Studio

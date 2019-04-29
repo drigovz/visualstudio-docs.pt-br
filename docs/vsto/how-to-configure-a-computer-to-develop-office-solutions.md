@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: b1f87b9548aceab58e1a8e1c6178a1dca759c312
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052839"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62825983"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>Como: Configurar um computador para desenvolver soluções do Office
   Para configurar um computador de desenvolvimento para que você pode usar o Microsoft Office developer tools no Visual Studio, siga as instruções neste tópico. Você deve ter privilégios administrativos no computador de desenvolvimento para executar essas etapas.

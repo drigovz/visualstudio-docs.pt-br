@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0a9c13a1b1bb9c8240faeaaf8d67b0b8df259227
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59649245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62857687"
 ---
 # <a name="test-area-5-change-source-control"></a>Área de teste 5: Alterar controle do código-fonte
 Essa área de plug-in de teste de controle de origem aborda alterando o controle do código-fonte por meio de **alterar controle do código-fonte** comando.
