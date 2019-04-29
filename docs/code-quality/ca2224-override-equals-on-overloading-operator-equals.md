@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3fa6bfa5b590d330d791eb8c735099e619ffaf3a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62541904"
 ---
 # <a name="ca2224-override-equals-on-overloading-operator-equals"></a>CA2224: Substituir equals ao sobrecarregar operador equals
 
@@ -39,7 +39,7 @@ Um tipo público implementa o operador de igualdade, mas não substitui <xref:Sy
 
 O operador de igualdade se destina a ser uma forma conveniente sintaticamente para acessar a funcionalidade do <xref:System.Object.Equals%2A> método. Se você implementar o operador de igualdade, sua lógica deve ser idêntica de <xref:System.Object.Equals%2A>.
 
-O compilador C# emite um aviso se seu código viola essa regra.
+O compilador c# emite um aviso se seu código viola essa regra.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
 

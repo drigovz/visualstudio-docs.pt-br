@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e020e2f4e1ffae9c0e979f2230ff845b1cda203e
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55942694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62536419"
 ---
 # <a name="interop-activity-designer"></a>Designer de atividade de Interoperabilidade
 
@@ -31,7 +31,7 @@ O **Interop** designer de atividade pode ser encontrado na **migração** catego
 
 O [migração](../workflow-designer/migration-activity-designers.md) categoria que contém o <xref:System.Activities.Statements.Interop> atividade aparece somente na **caixa de ferramentas** se seu projeto tiver como alvo o .NET Framework 4 completo.
 
-Para projetos C#, você pode redirecionar o projeto para usar o .NET Framework 4 completo clicando com o projeto no **Gerenciador de soluções** e selecionando **propriedades**. Sobre o **aplicativo** guia, selecione o **NET Framework 4** opção no **estrutura de destino**. Selecione **Sim** confirme essa alteração.
+Para projetos c#, você pode redirecionar o projeto para usar o .NET Framework 4 completo clicando com o projeto no **Gerenciador de soluções** e selecionando **propriedades**. Sobre o **aplicativo** guia, selecione o **NET Framework 4** opção no **estrutura de destino**. Selecione **Sim** confirme essa alteração.
 
 Para projetos do Visual Basic, você pode redirecionar o projeto para usar o .NET Framework 4 completo pelo botão direito do mouse no projeto no **Gerenciador de soluções** e selecionando **propriedades**. Sobre o **Compile** , clique no **opções avançadas de compilação** botão. Selecione **.Net Framework 4** da **lista do framework de destino**e, em seguida, clique em **Okey**. Selecione **Sim** confirme essa alteração.
 

@@ -12,11 +12,11 @@ ms.assetid: 8af29dd4-eaf1-4b3c-b602-198e1a3dff23
 caps.latest.revision: 14
 manager: jillfra
 ms.openlocfilehash: c07f8f62fb7ae84b5f3ee6140cccecf744c759e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083914"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62434170"
 ---
 # <a name="upgrading-project-items"></a>Atualizando itens de projeto
 Se você adicionar ou gerenciar itens de sistemas de projeto, você não implemente, você talvez precise participar do processo de atualização do projeto. Crystal Reports é um exemplo de um item que pode ser adicionado ao sistema de projeto.  
