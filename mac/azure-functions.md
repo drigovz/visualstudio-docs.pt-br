@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
-ms.openlocfilehash: ac0786e9b52a149fe8067c41aaabe61ad9fd5c87
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: db25a9cbc647e399da86781d155a7b55d8e3802e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62985095"
 ---
 # <a name="introduction-to-azure-functions"></a>Introdução ao Azure Functions
 
@@ -37,7 +37,7 @@ Para criar e implantar funções, você também precisará de uma assinatura do 
 
     > [!TIP]
     > Embora os modelos (CLI) e o Azure Functions Runtime em pacote sejam mantidos tão atualizados quanto possível, eles inevitavelmente ficam desatualizados. Ao criar um projeto do Functions, o Visual Studio para Mac verificará se há atualizações para a CLI e notificará você conforme mostrado na imagem abaixo. Basta clicar no botão para baixar os modelos atualizados.
-    > ![Caixa de diálogo Novo projeto mostrando que atualizações do Azure Functions estão disponíveis](media/azure-functions-update.png)
+    > ![Caixa de diálogo Novo projeto mostrando que estão disponíveis atualizações do Azure Functions](media/azure-functions-update.png)
 
     Dependendo do tipo de função que você selecionar, a próxima página solicitará que você insira detalhes como direitos de acesso, conforme ilustrado na imagem a seguir:
 
@@ -103,7 +103,7 @@ Você pode usar o procedimento acima para adicionar mais funções ao seu projet
     |Configuração  |Descrição  |
     |---------|---------|
     |**Nome do Serviço de Aplicativo**|Um nome exclusivo que identifica seu novo aplicativo de funções.|
-    |**Assinatura**|A assinatura do Azure a utilizar.|
+    |**Assinatura**|A assinatura do Azure a usar.|
     |**[Grupo de Recursos](/azure/azure-resource-manager/resource-group-overview)**|O Nome do grupo de recursos no qual criar o seu aplicativo de funções. Escolha **+** para criar um novo grupo de recursos.|
     |**[Plano de Serviço](/azure/azure-functions/functions-scale)**|Escolha um plano existente ou crie um personalizado. Escolha um local em uma região perto de você ou perto de outros serviços acessados pelas funções.|
 
@@ -147,9 +147,7 @@ Desse ponto em diante, você pode definir as configurações do aplicativo para 
     - Http POST CRUD
     - Gatilho Http com parâmetros
 
-
 - **Temporizador** – Execute a limpeza ou outras tarefas em lote seguindo um cronograma predefinido. Esse modelo tem dois campos: um nome e um cronograma, que é uma expressão CRON de seis campos. Para obter mais informações, consulte o [Artigo do Azure Functions sobre o Temporizador](/azure/azure-functions/functions-create-scheduled-function)
-
 
 - **Gatilho de fila** – Esta é uma função que responderá às mensagens conforme elas chegarem na fila do Armazenamento do Azure. Além do nome da função, esse modelo tem um **Caminho** (o nome da fila da qual a mensagem será lida) e uma **Conexão** da conta de armazenamento (o nome da configuração de aplicativo que contém a cadeia de conexão da conta de armazenamento). Para obter mais informações, consulte o [Artigo do Azure Functions sobre o Armazenamento de Filas](/azure/azure-functions/functions-create-storage-queue-triggered-function).
 

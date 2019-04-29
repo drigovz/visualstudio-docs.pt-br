@@ -10,16 +10,18 @@ author: rpetrusha
 ms.author: ronpet
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7cdf118ef901e607d24609e521325e27b90d345b
-ms.sourcegitcommit: 87d7123c09812534b7b08743de4d11d6433eaa13
+ms.openlocfilehash: a5acf1857309236727cd0bab4d9d981d814292b9
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/01/2019
-ms.locfileid: "57222003"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786075"
 ---
-# <a name="introducing-live-unit-testing"></a>Introdução ao Live Unit Testing
+# <a name="live-unit-testing-introduction"></a>Introdução ao Live Unit Testing
 
-O Live Unit Testing é uma tecnologia que foi introduzida no Visual Studio 2017. Ele executa os testes de unidade automaticamente em tempo real conforme você faz alterações de código. Live Unit Testing:
+O Live Unit Testing é uma tecnologia que foi introduzida no Visual Studio 2017. Ele executa os testes de unidade automaticamente em tempo real conforme você faz alterações de código.
+
+Live Unit Testing:
 
 - Permite refatorar e alterar o código com maior confiança. O Live Unit Testing executa automaticamente todos os testes afetados conforme você edita o código para garantir que as alterações não prejudiquem os testes.
 
@@ -27,13 +29,16 @@ O Live Unit Testing é uma tecnologia que foi introduzida no Visual Studio 2017.
 
 Caso tenha uma solução que inclua um ou mais projetos de teste de unidade, habilite o Live Unit Testing selecionando **Teste** > **Live Unit Testing** > **Iniciar** no menu de nível superior do Visual Studio.
 
+> [!NOTE]
+> O Live Unit Testing está disponível somente na edição do Visual Studio Enterprise.
+
 Para saber mais sobre o Live Unit Testing:
 
-- Consulte o tutorial de Introdução, [Introdução ao Live Unit Testing no Visual Studio](live-unit-testing-start.md).
+- Confira o tutorial de introdução, [Introdução ao Live Unit Testing](live-unit-testing-start.md).
 
 - Leia a documentação detalhada [Usar o Live Unit Testing no Visual Studio Enterprise Edition](live-unit-testing.md).
 
-- Leia [Perguntas frequentes sobre o Live Unit Testing](live-unit-testing-faq.md) para saber as novidades do Live Unit Testing e ler sobre dicas e técnicas para usar o Live Unit Testing.
+- Leia as [Perguntas frequentes sobre o Live Unit Testing](live-unit-testing-faq.md) para saber as novidades do Live Unit Testing e ler sobre dicas e técnicas.
 
 - Assista ao vídeo do Channel 9 para obter uma visão geral dos Live Unit Testing e de seus recursos. </p>
 

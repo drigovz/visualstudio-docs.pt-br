@@ -17,17 +17,17 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: c1d95d7621a97a36fdf737e7d3dd4f8baf713645
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018175"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62553907"
 ---
 # <a name="step-3-work-with-data-using-entity-framework"></a>Etapa 3: Trabalhar com dados usando o Entity Framework
 
 Siga estas etapas para começar a trabalhar com dados usando Entity Framework Core em seu aplicativo Web ASP.NET Core.
 
-_Assista a este vídeo e acompanhe-o para adicionar dados em seu primeiro aplicativo Web ASP.NET Core._
+_Assista a este vídeo e siga as instruções para adicionar dados em seu primeiro aplicativo Web ASP.NET Core._
 
 > [!VIDEO https://www.youtube.com/embed/dulJCwNrqhM]
 

@@ -10,18 +10,18 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e99e07f2f39ef4e01a2b79e5a391c32f6510e3a
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: bb72f491046d16f028561c19995a27a6ab64a830
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557290"
 ---
 # <a name="net-naming-conventions-for-editorconfig"></a>Convenções de nomenclatura do .NET para EditorConfig
 
 As convenções de nomenclatura referem-se à nomenclatura dos elementos de código, como classes, propriedades e métodos. Por exemplo, é possível especificar que membros públicos devem ser escritos em maiúsculas ou que métodos assíncronos devem terminar com "Async". É possível aplicar essas regras especificando-as em um [arquivo .editorconfig](../ide/create-portable-custom-editor-options.md). Violações de regras de nomenclatura são exibidas na **Lista de Erros** ou como uma sugestão embaixo do nome, dependendo da gravidade escolhida para a regra. Não é necessário criar o projeto para ver as violações.
 
-As convenções de nomenclatura devem ser ordenadas da mais específica para a menos específica no arquivo *.editorconfig*. A primeira regra encontrada que pode ser aplicada é a única regra que é aplicada.
+As convenções de nomenclatura devem ser ordenadas da mais específica para a menos específica no arquivo EditorConfig. A primeira regra encontrada que pode ser aplicada é a única regra que é aplicada. No entanto, se houver várias *propriedades* de regras com o mesmo nome, a propriedade mais recente encontrada com esse nome terá precedência. Confira mais informações em [Precedência e hierarquia de arquivos](create-portable-custom-editor-options.md#file-hierarchy-and-precedence).
 
 Para cada convenção de nomenclatura, é necessário especificar os símbolos aos quais ela se aplica, um estilo de nomenclatura e uma gravidade para impor a convenção, usando as propriedades descritas abaixo. A ordem das propriedades não é importante.
 
@@ -209,6 +209,6 @@ Se você fechar e reabrir o arquivo de código, em vez de ver a sugestão embaix
 
 ## <a name="see-also"></a>Consulte também
 
-- [Convenções de formatação e de linguagem do .NET](../ide/editorconfig-code-style-settings-reference.md)
+- [Convenções de formatação e linguagem .NET](../ide/editorconfig-code-style-settings-reference.md)
 - [Criar opções do editor portátil e personalizado](../ide/create-portable-custom-editor-options.md)
 - [Arquivo .editorconfig da plataforma do compilador do .NET](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

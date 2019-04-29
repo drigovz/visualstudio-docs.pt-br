@@ -16,12 +16,12 @@ manager: jillfra
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e06421955089a378cd20399280d066cc27bfe03f
-ms.sourcegitcommit: 36f5ffd6ae3215fe31837f4366158bf0d871f7a9
+ms.openlocfilehash: 3cdd9f0b46c578f713b7f2af2940f4d7742df19a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/08/2019
-ms.locfileid: "59232795"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62557210"
 ---
 # <a name="net-coding-convention-settings-for-editorconfig"></a>Configurações de convenção de codificação do .NET para o EditorConfig
 
@@ -70,7 +70,7 @@ Severidade | Efeito
 A lista a seguir mostra as configurações de estilo de código da linguagem permitidas:
 
 - Configurações de estilo de código do .NET
-    - [Qualificadores "Este." e "Eu.](#this_and_me)
+    - [Qualificadores "This." e "Me."](#this_and_me)
         - dotnet\_style\_qualification\_for_field
         - dotnet\_style\_qualification\_for_property
         - dotnet\_style\_qualification\_for_method
@@ -106,7 +106,7 @@ A lista a seguir mostra as configurações de estilo de código da linguagem per
         - csharp\_style\_var\_for\_built\_in_types
         - csharp\_style\_var\_when\_type\_is_apparent
         - csharp\_style\_var_elsewhere
-    - [Membros aptos para expressão](#expression_bodied_members)
+    - [Membros de expressão incorporada](#expression_bodied_members)
         - csharp\_style\_expression\_bodied_methods
         - csharp\_style\_expression\_bodied_constructors
         - csharp\_style\_expression\_bodied_operators
@@ -329,13 +329,14 @@ A tabela a seguir mostra os nomes das regras, as IDs de regra, as linguagens de 
 
 **dotnet\_style\_require\_accessibility_modifiers**
 
-Essa regra não aceita um valor **true** ou **false**; em vez disso, ela aceita um valor da tabela a seguir:
+Esta regra aceita um valor da seguinte tabela:
 
 | Valor | Descrição |
 | ----- |:----------- |
 | always | Preferir que modificadores de acessibilidade sejam especificados |
-| for\_non\_interface_members | Preferir que modificadores de acessibilidade sejam declarados, exceto os membros de interface pública. Isso é o mesmo que **always** e foi adicionado para durabilidade, caso o C# adicione métodos de interface padrão. |
+| for\_non\_interface_members | Preferir que modificadores de acessibilidade sejam declarados, exceto os membros de interface pública. (Isso é o mesmo que **always** e foi adicionado para durabilidade, caso o C# adicione métodos de interface padrão.) |
 | never | Não preferir que modificadores de acessibilidade sejam especificados |
+| omit_if_default | Preferir que modificadores de acessibilidade sejam especificados, exceto se forem o modificador padrão |
 
 Exemplos de código:
 
@@ -748,8 +749,6 @@ If Object.ReferenceEquals(value, Nothing)
     Return
 End If
 ```
-
-
 
 **dotnet\_style\_prefer\_conditional\_expression\_over_assignment**
 
@@ -2358,7 +2357,7 @@ visual_basic_preferred_modifier_order = Partial,Default,Private,Protected,Public
 
 ## <a name="see-also"></a>Consulte também
 
-- [Ações Rápidas](../ide/quick-actions.md)
-- [Convenções de nomenclatura do .NET para EditorConfig](../ide/editorconfig-naming-conventions.md)
+- [Ações rápidas](../ide/quick-actions.md)
+- [Convenções de nomenclatura .NET para EditorConfig](../ide/editorconfig-naming-conventions.md)
 - [Criar opções do editor portátil e personalizado](../ide/create-portable-custom-editor-options.md)
 - [Arquivo .editorconfig da plataforma do compilador do .NET](https://github.com/dotnet/roslyn/blob/master/.editorconfig)

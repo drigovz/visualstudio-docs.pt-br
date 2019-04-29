@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: fea8aeac90a974fc6b1cb89d9419c0652c184796
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: eabfb7ffd365ab377bc80997138a4f3368db488d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62583272"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Novidades no Visual Studio 2017
 
@@ -32,7 +32,7 @@ ms.locfileid: "58857808"
 Deseja atualizar de uma versão anterior do Visual Studio? Isto é o que o Visual Studio 2017 pode oferecer a você: Produtividade inigualável para qualquer desenvolvimento, aplicativo e plataforma. Use o Visual Studio 2017 para desenvolver aplicativos para Android, iOS, Windows, Linux, Web e nuvem. Codifique rapidamente, depure e diagnostique com facilidade, teste com frequência e faça lançamentos com confiança. Também é possível estender e personalizar o Visual Studio criando suas próprias extensões. Use o controle de versão, seja ágil e colabore de maneira eficiente com esse lançamento!
 
 >[!div class="button"]
->[Baixe o Visual Studio](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)
+>[Baixar o Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)
 
 Veja uma recapitulação de alto nível das alterações feitas em relação à versão anterior, o Visual Studio 2015:
 
@@ -110,9 +110,9 @@ Quando você usa o Roaming Extension Manager, há três tipos de ícones em sua 
 
 * ![Ícone de Roaming](media/vs2017ide-roamedicon.png) **_Roaming_**: Uma extensão que faz parte dessa Lista de Roaming, mas que não está instalada no computador.
   (Você pode instalá-las usando o botão **Download**).
-* ![Ícone de Roaming e Instalado](media/vs2017ide-roamedinstalledicon.png) **_Roaming e Instalado_**: Todas as extensões que fazem parte da Lista de Roaming e que estão instaladas no ambiente de desenvolvimento.
+* ![Ícone de Roaming e Instalado](media/vs2017ide-roamedinstalledicon.png)  **_Roaming e Instalado_**: Todas as extensões que fazem parte da Lista de Roaming e que estão instaladas no ambiente de desenvolvimento.
   (Se você decidir que não deseja usar perfil móvel, poderá remover essas extensões usando o botão **Parar Roaming**).
-* ![Ícone de Instalado](media/vs2017ide-installedicon.png) **_Instalado_**: Todas as extensões instaladas nesse ambiente, mas que não fazem parte da Lista de Roaming.
+* ![Ícone de Instalado](media/vs2017ide-installedicon.png)  **_Instalado_**: Todas as extensões instaladas nesse ambiente, mas que não fazem parte da Lista de Roaming.
   (Você pode adicionar extensões à Lista de Roaming usando o botão **Iniciar Roaming**).
 
 Qualquer extensão baixada enquanto você estiver conectado será adicionada à lista como **Roaming e Instalado**. Além disso, a extensão fará parte da lista Roaming, que fornece acesso a ela em qualquer computador.
@@ -268,7 +268,7 @@ Escolha sua linguagem de desenvolvimento preferencial&mdash;entre C#, Visual Bas
 
 **Novidade na versão 15.5**: O Visual Studio 2017 versão 15.5 fornece o melhor suporte para o SDK do Windows 10 Fall Creators Update (10.0.16299.0). O Windows 10 Fall Creators Update também oferece várias melhorias para os desenvolvedores da UWP. Aqui estão algumas das maiores alterações: 
 
-* **Suporte para .NET Standard 2.0**<br/>Além da implantação simplificada do aplicativo, o Windows 10 Fall Creators Update é a primeira versão do Windows 10 compatível com o .NET Standard 2.0. De fato, o [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) é uma implementação de referência da biblioteca de classes base que qualquer plataforma do .NET pode implementar. A meta do .NET Standard é facilitar o máximo possível para os desenvolvedores do .NET compartilhar o código em qualquer plataforma do .NET que eles escolham trabalhar.
+* **Compatível com o .NET Standard 2.0**<br/>Além da implantação simplificada do aplicativo, o Windows 10 Fall Creators Update é a primeira versão do Windows 10 compatível com o .NET Standard 2.0. De fato, o [.NET Standard](https://devblogs.microsoft.com/dotnet/introducing-net-standard/) é uma implementação de referência da biblioteca de classes base que qualquer plataforma do .NET pode implementar. A meta do .NET Standard é facilitar o máximo possível para os desenvolvedores do .NET compartilhar o código em qualquer plataforma do .NET que eles escolham trabalhar.
 * **O melhor da UWP e do Win32**<br/>Melhoramos a Plataforma do Windows 10 com a [Ponte de Desktop](https://docs.microsoft.com/windows/uwp/porting/desktop-to-uwp-root) para tornar o Windows 10 melhor para todos os desenvolvedores do .NET, quer o foco atual esteja na UWP, no WPF, no Windows Forms ou no Xamarin. Com o novo tipo de projeto do Pacote de Aplicativo no Visual Studio 2017 versão 15.5, você pode criar Pacotes de Aplicativos do Windows para seus projetos do WPF ou do Windows Forms, assim como você pode fazer com os projetos da UWP. Depois de empacotar seu aplicativo, você obterá todos os benefícios de implantação de aplicativo do Windows 10 e terá a opção de distribuir por meio da Microsoft Store (para aplicativos de consumidor) ou da Microsoft Store para Empresas e Educação. Como os aplicativos empacotados têm acesso à superfície da API da UWP completa e às APIs do Win32 na área de trabalho, agora você pode modernizar seus aplicativos do WPF e do Windows Forms gradualmente com as APIs da UWP e com os recursos do Windows 10. Além disso, você pode incluir os componentes do Win32 em seus aplicativos da UWP que são aprimorados na área de trabalho com todos os recursos do Win32.
 
 Para obter mais informações sobre a UWP, consulte a página [Desenvolver aplicativos para a UWP (Plataforma Universal do Windows)](../cross-platform/develop-apps-for-the-universal-windows-platform-uwp.md).
@@ -371,9 +371,11 @@ O Visual Studio 2017 é atualizado frequentemente com novos recursos que melhora
 
 Quer saber mais sobre as novidades do Visual Studio 2017? Confira a página [Roteiro do Visual Studio](/visualstudio/productinfo/vs2018-roadmap).
 
+E não se esqueça de conferir nossa versão mais recente, [Visual Studio de 2019](whats-new-visual-studio-2019.md).
+
 ## <a name="contact-us"></a>Fale conosco
 
- Por que enviar comentários à equipe do Visual Studio? Porque nós levamos a sério os comentários dos clientes. Eles motivam muito do que fazemos.
+Por que enviar comentários à equipe do Visual Studio? Porque nós levamos a sério os comentários dos clientes. Eles motivam muito do que fazemos.
 
 Se você quiser sugerir maneiras de melhorar o Visual Studio ou saber mais sobre as opções de suporte ao produto, confira a página [Fale conosco](talk-to-us.md).
 
@@ -387,6 +389,6 @@ Se você quiser sugerir maneiras de melhorar o Visual Studio ou saber mais sobre
 * [Novidades no SDK do Visual Studio 2017](/visualstudio/extensibility/what-s-new-in-the-visual-studio-2017-sdk)
 * [Novidades no Visual C++](/cpp/top/what-s-new-for-visual-cpp-in-visual-studio)
 * [Novidades no C#](/dotnet/csharp/whats-new)
-* [Novidades do Team Foundation Server](/tfs/server/whats-new?view=vsts)
+* [Novidades para o Team Foundation Server](/tfs/server/whats-new?view=vsts)
 * [Novidades no Visual Studio para Mac](https://visualstudio.microsoft.com/vs/visual-studio-mac/)
 * [Novidades no Visual Studio 2019](whats-new-visual-studio-2019.md)
