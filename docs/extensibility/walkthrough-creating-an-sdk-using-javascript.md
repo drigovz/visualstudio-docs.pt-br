@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76aa6fe6218205874ab616f5c0ffb09f5c5c3cbf
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: f15dc7ef3c5ab06857307081511f1c9aa2285566
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56711794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62796335"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>Passo a passo: Criar um SDK usando JavaScript
 Este passo a passo ensina como usar JavaScript para criar uma matemática simples SDK como um Visual Studio VSIX (extensão).  O passo a passo é dividida nestas partes:
@@ -27,19 +27,19 @@ Este passo a passo ensina como usar JavaScript para criar uma matemática simple
 ## <a name="prerequisites"></a>Pré-requisitos
  Para seguir este passo a passo, você deve instalar o SDK do Visual Studio. Para obter mais informações, consulte [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).
 
-##  <a name="createSimpleMathVSIX"></a> Para criar o projeto do SDK de extensão SimpleMathVSIX
+## <a name="createSimpleMathVSIX"></a> Para criar o projeto do SDK de extensão SimpleMathVSIX
 
-1.  Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
+1. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
 
-2.  Na lista de categorias de modelo, sob **Visual c#**, selecione **extensibilidade**e, em seguida, selecione o **projeto VSIX** modelo.
+2. Na lista de categorias de modelo, sob **Visual c#**, selecione **extensibilidade**e, em seguida, selecione o **projeto VSIX** modelo.
 
-3.  No **nome** texto, especifique `SimpleMathVSIX` e escolha o **Okey** botão.
+3. No **nome** texto, especifique `SimpleMathVSIX` e escolha o **Okey** botão.
 
-4.  Se o **Assistente de pacote do Visual Studio** for exibida, escolha o **próxima** botão o **boas-vindas** página e, em seguida, na **página 1 de 7**, escolha o **Concluir** botão.
+4. Se o **Assistente de pacote do Visual Studio** for exibida, escolha o **próxima** botão o **boas-vindas** página e, em seguida, na **página 1 de 7**, escolha o **Concluir** botão.
 
      Embora o **Designer de manifesto** é aberto, vamos manter este passo a passo simples, modificando o arquivo de manifesto diretamente.
 
-5.  Na **Gerenciador de soluções**, abra o menu de atalho para o **vsixmanifest** file e, em seguida, escolha **Exibir código**. Use este código para substituir o conteúdo existente no arquivo.
+5. Na **Gerenciador de soluções**, abra o menu de atalho para o **vsixmanifest** file e, em seguida, escolha **Exibir código**. Use este código para substituir o conteúdo existente no arquivo.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -61,11 +61,11 @@ Este passo a passo ensina como usar JavaScript para criar uma matemática simple
     </PackageManifest>
     ```
 
-6.  Na **Gerenciador de soluções**, abra o menu de atalho para o **SimpleMathVSIX** do projeto e, em seguida, escolha **Add** > **Novo Item**.
+6. Na **Gerenciador de soluções**, abra o menu de atalho para o **SimpleMathVSIX** do projeto e, em seguida, escolha **Add** > **Novo Item**.
 
-7.  No **dados** categoria, selecione **arquivo XML**, nomeie o arquivo `SDKManifest.xml`e escolha o **Add** botão.
+7. No **dados** categoria, selecione **arquivo XML**, nomeie o arquivo `SDKManifest.xml`e escolha o **Add** botão.
 
-8.  Na **Gerenciador de soluções**, abra o menu de atalho para o **Sdkmanifest** file e, em seguida, escolha **abrir** para exibir o arquivo no **doEditordeXML**.
+8. Na **Gerenciador de soluções**, abra o menu de atalho para o **Sdkmanifest** file e, em seguida, escolha **abrir** para exibir o arquivo no **doEditordeXML**.
 
 9. Adicione o seguinte código para o **Sdkmanifest** arquivo.
 
@@ -126,9 +126,9 @@ Este passo a passo ensina como usar JavaScript para criar uma matemática simple
 
 17. Na **Gerenciador de soluções**, no menu de atalho para o **arithmetic.js** do arquivo, escolha **propriedades**. Faça estas alterações de propriedade:
 
-    -   Defina a **incluir em VSIX** propriedade **verdadeiro**.
+    - Defina a **incluir em VSIX** propriedade **verdadeiro**.
 
-    -   Defina a **Copy to Output Directory** propriedade **copiar sempre**.
+    - Defina a **Copy to Output Directory** propriedade **copiar sempre**.
 
 18. Na **Gerenciador de soluções**, no menu de atalho para o **SimpleMathVSIX** do projeto, escolha **Build**.
 
@@ -138,7 +138,7 @@ Este passo a passo ensina como usar JavaScript para criar uma matemática simple
 
 21. Reinicie o Visual Studio.
 
-##  <a name="createSampleApp"></a> Para criar um aplicativo de exemplo que usa o SDK
+## <a name="createSampleApp"></a> Para criar um aplicativo de exemplo que usa o SDK
 
 1. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
 

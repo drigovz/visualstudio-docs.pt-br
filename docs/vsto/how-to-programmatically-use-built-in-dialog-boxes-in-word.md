@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f8037e4d91aa7706c7ffd7b9f32778dfeac79488
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62961635"
 ---
 # <a name="how-to-programmatically-use-built-in-dialog-boxes-in-word"></a>Como: Usar as caixas de diálogo integradas no Word de forma programática
   Ao trabalhar com o Microsoft Office Word, há ocasiões em que você precisa para exibir caixas de diálogo para entrada do usuário. Embora você possa criar seus próprios, você também poderá usar a abordagem do uso de caixas de diálogo integradas no Word, que são expostas na <xref:Microsoft.Office.Interop.Word.Dialogs> coleção do <xref:Microsoft.Office.Interop.Word.Application> objeto. Isso permite que você acesse mais de 200 caixas de diálogo internas, que são representadas como enumerações.

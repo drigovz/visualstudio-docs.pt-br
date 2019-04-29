@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: a002c3876eecf0f31a8d104fa235b1208af90699
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57875247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929140"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>Escrever e depurar o código XAML em execução com o recarregamento de hot XAML no Visual Studio
 
@@ -43,7 +43,7 @@ A seguir é conhecidos limitações do XAML hot recarregar. Para contornar qualq
 
 |Limitação|WPF|UWP|Observações|
 |-|-|-|-|
-|Conectar eventos a controles, enquanto o aplicativo está em execução|Sem suporte|Sem suporte|Consulte o erro: *Certifique-se a falha do evento*|
+|Conectar eventos a controles, enquanto o aplicativo está em execução|Sem suporte|Sem suporte|Consulte o erro: *Verifique se o evento de falha*|
 |Criando objetos de recursos em um dicionário de recursos, como aqueles na janela da página do seu aplicativo ou *App. XAML*|Sem suporte|Com suporte|Exemplo: adicionando um ```SolidColorBrush``` em um dicionário de recursos para uso como um ```StaticResource```.</br>Observação: Recursos estáticos, conversores de estilo e outros elementos escritos em um dicionário de recursos podem ser aplicadas/usados durante o uso de recarregamento XAML ativo. Não há suporte apenas a criação do recurso.</br> Alterar o dicionário de recursos ```Source``` propriedade.| 
 |Adicionando novos controles, classes, windows ou outros arquivos ao seu projeto, enquanto o aplicativo está em execução|Sem suporte|Sem suporte|Nenhum|
 |Gerenciamento de pacotes do NuGet (adição/remoção/atualização de pacotes)|Sem suporte|Sem suporte|Nenhum|

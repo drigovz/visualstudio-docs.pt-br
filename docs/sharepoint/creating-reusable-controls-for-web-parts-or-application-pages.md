@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 71e67ab41fd39563520370eb079fca1b7c82015e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56601121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952783"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>Criar controles reutilizáveis para web parts ou páginas de aplicativo
   No Visual Studio, você pode criar controles reutilizáveis personalizados que podem ser consumidos por páginas de aplicativos e Web Parts executadas no SharePoint. Esses controles são chamados de controles de usuário. Um controle de usuário é um tipo de controle de composição que funciona de maneira muito parecida com uma página da Web do ASP.NET — você pode adicionar controles de servidor da Web existentes e a marcação para um controle de usuário e definir propriedades e métodos para o controle. Em seguida, você pode inseri-las nas páginas da Web do ASP.NET, onde eles atuam como uma unidade.

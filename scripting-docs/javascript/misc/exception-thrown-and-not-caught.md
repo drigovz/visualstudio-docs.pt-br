@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bae4ed0a335a9c12d16cb46208f77c4b66f12547
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050487"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62946323"
 ---
 # <a name="exception-thrown-and-not-caught"></a>Exceção lançada, mas não capturada
 Você incluído um `throw` instrução em seu código, mas não foi incluída dentro uma **tente** bloco, ou houve não associado **catch** bloco para interceptar o erro. As exceções são geradas de dentro a **tente** bloquear usando o **throw** instrução e capturada fora o **tente** bloco com um **catch** instrução.  

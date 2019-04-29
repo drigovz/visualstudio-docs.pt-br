@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8fbe2f3c3835c55fffefe4692c4e8779b48e9c5e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56683380"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62890445"
 ---
 # <a name="control-events"></a>Eventos de controle
 Você deve enviar eventos durante a execução controlada do seu programa. Todos os eventos são enviados usando o [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) interface e têm os atributos que exigem que você implemente a [IDebugEvent2::GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) método.

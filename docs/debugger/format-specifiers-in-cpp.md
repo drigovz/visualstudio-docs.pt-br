@@ -25,13 +25,13 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 8e6be79bc38e9283493bf5b7428a21c17cf9d3e0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "57870587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62896614"
 ---
-# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Especificadores de formato para C++ no depurador do Visual Studio
+# <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Os especificadores de formato de C++ no depurador do Visual Studio
 Você pode alterar o formato no qual um valor é exibido na **Watch**, **Autos**, e **locais** windows usando especificadores de formato.
 
 Você também pode usar especificadores de formato na **Immediate** janela, o **comando** janela, na [tracepoints](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)e até mesmo em janelas de origem. Se você pausar em uma expressão nessas janelas, o resultado é exibido em uma [DataTip](../debugger/view-data-values-in-data-tips-in-the-code-editor.md). A exibição de DataTip reflete o especificador de formato.
@@ -62,7 +62,7 @@ Você pode exibir e selecionar em uma lista de especificadores de formato dispon
 ::: moniker-end
 
 ## <a name="BKMK_Visual_Studio_2012_format_specifiers"></a> Especificadores de formato
-As tabelas a seguir descrevem os especificadores de formato que você pode usar no Visual Studio. Especificadores em negrito têm suporte apenas para o novo depurador e não para depuração interop com C + + / CLI.
+As tabelas a seguir descrevem os especificadores de formato que você pode usar no Visual Studio. Especificadores em negrito têm suporte apenas para o novo depurador e não para depuração interop com C++/CLI.
 
 ::: moniker range=">= vs-2019" 
 
@@ -86,7 +86,7 @@ As tabelas a seguir descrevem os especificadores de formato que você pode usar 
 |su|Cadeia de caracteres Unicode (codificação UTF-16) (com aspas)|\<local > L "hello world"|L"hello world"<br /><br /> u "hello world"|
 |sub|Cadeia de caracteres Unicode (codificação UTF-16) (sem aspas)|\<local > L "hello world"|hello world|
 |bstr|Cadeia de caracteres binária (com aspas) BSTR|\<local > L "hello world"|L"hello world"|
-|env|Bloco de ambiente (cadeia de caracteres terminada em nulo duplo)|\<local > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
+|env|Bloco de ambiente (cadeia de caracteres terminada em nulo duplo)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
 |**s32**|Cadeia de caracteres UTF-32 (com aspas)|\<local > U "hello world"|u "hello world"|
 |**s32b**|Cadeia de caracteres UTF-32 (sem aspas)|\<local > U "hello world"|hello world|
 |**en**|enum|Saturday(6)|Sábado|
@@ -118,7 +118,7 @@ As tabelas a seguir descrevem os especificadores de formato que você pode usar 
 |su|Cadeia de caracteres Unicode (codificação UTF-16) (com aspas)|\<local > L "hello world"|L"hello world"<br /><br /> u "hello world"|
 |sub|Cadeia de caracteres Unicode (codificação UTF-16) (sem aspas)|\<local > L "hello world"|hello world|
 |bstr|Cadeia de caracteres binária (com aspas) BSTR|\<local > L "hello world"|L"hello world"|
-|env|Bloco de ambiente (cadeia de caracteres terminada em nulo duplo)|\<local > L "=:: =::\\\\"|L "=:: =::\\\\\\0 = C: = C:\\\\windows\\\\system32\\0ALLUSERSPROFILE =...|
+|env|Bloco de ambiente (cadeia de caracteres terminada em nulo duplo)|\<location> L"=::=::\\\\"|L"=::=::\\\\\\0=C:=C:\\\\windows\\\\system32\\0ALLUSERSPROFILE=...|
 |**s32**|Cadeia de caracteres UTF-32 (com aspas)|\<local > U "hello world"|u "hello world"|
 |**s32b**|Cadeia de caracteres UTF-32 (sem aspas)|\<local > U "hello world"|hello world|
 |**en**|enum|Saturday(6)|Sábado|
@@ -167,7 +167,7 @@ Especificadores em **negrito** têm suporte somente para depuração nativos e c
 |wm|Números de mensagens do Windows|0x0010|WM_CLOSE|
 |!|formato bruto, ignorando qualquer personalização de modo de exibição do tipo de dados|\<personalizado representação >|4|
 
-### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Formatar os especificadores de locais de memória em depuração interop com C + + / CLI
+### <a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a> Formatar os especificadores de locais de memória em depuração interop com C++/CLI
 A tabela a seguir descreve os símbolos de formatação usados para locais de memória. Você pode usar um especificador de local da memória com qualquer valor ou expressão que seja avaliada como um local.
 
 |Símbolo|Formatar|Valor original de inspeção|Valor exibido|

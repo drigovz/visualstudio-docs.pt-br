@@ -26,11 +26,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 489415eba929a73c25b8aea7262c3e930a5d90cd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56598980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898127"
 ---
 # <a name="product-and-package-schema-reference"></a>Referência de esquema de produto e pacote
 Um *arquivo de produto* é um manifesto XML que descreve todas as dependências externas necessárias por um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Exemplos de dependências externas incluem o [!INCLUDE[dnprdnshort](../code-quality/includes/dnprdnshort_md.md)] e o Microsoft Data Access Components (MDAC). Um arquivo de pacote é semelhante a um arquivo de produto, mas é usado para instalar os componentes dependentes de cultura de uma dependência, como assemblies localizados, contratos de licença e documentação.
@@ -39,13 +39,13 @@ Um *arquivo de produto* é um manifesto XML que descreve todas as dependências 
 
 |Elemento|Descrição|Atributos|
 |-------------|-----------------|----------------|
-|[\<Produto > elemento](../deployment/product-element-bootstrapper.md)|Elemento de nível superior necessário para arquivos de produto.|Nenhum|
-|[\<Pacote > elemento](../deployment/package-element-bootstrapper.md)|Elemento de nível superior necessário para arquivos de pacote.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
-|[\<RelatedProducts > elemento](../deployment/relatedproducts-element-bootstrapper.md)|Elemento opcional para arquivos de produto. Os outros produtos que este produto instala ou depende.|Nenhum|
-|[\<InstallChecks > elemento](../deployment/installchecks-element-bootstrapper.md)|Elemento obrigatório. Listas de verifica se a dependência para executar no computador local durante a instalação.|Nenhum|
-|[\<Comandos > elemento](../deployment/commands-element-bootstrapper.md)|Elemento obrigatório.  Executa uma ou mais verificações de instalação conforme descrito pelo `InstallChecks`e indica qual pacote de instalação deve a verificação falhar.|Nenhum|
-|[\<PackageFiles > elemento](../deployment/packagefiles-element-bootstrapper.md)|Elemento obrigatório. Lista os pacotes que podem ser instalados por esse processo de instalação.|Nenhum|
-|[\<Cadeias de caracteres > elemento](../deployment/strings-element-bootstrapper.md)|Elemento obrigatório. Armazena as versões localizadas das cadeias de caracteres de erro e o nome de produto.|Nenhum|
+|[Elemento \<Product>](../deployment/product-element-bootstrapper.md)|Elemento de nível superior necessário para arquivos de produto.|Nenhum|
+|[Elemento \<Package>](../deployment/package-element-bootstrapper.md)|Elemento de nível superior necessário para arquivos de pacote.|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
+|[Elemento \<RelatedProducts>](../deployment/relatedproducts-element-bootstrapper.md)|Elemento opcional para arquivos de produto. Os outros produtos que este produto instala ou depende.|Nenhum|
+|[Elemento \<InstallChecks>](../deployment/installchecks-element-bootstrapper.md)|Elemento obrigatório. Listas de verifica se a dependência para executar no computador local durante a instalação.|Nenhum|
+|[Elemento \<Commands>](../deployment/commands-element-bootstrapper.md)|Elemento obrigatório.  Executa uma ou mais verificações de instalação conforme descrito pelo `InstallChecks`e indica qual pacote de instalação deve a verificação falhar.|Nenhum|
+|[Elemento \<PackageFiles>](../deployment/packagefiles-element-bootstrapper.md)|Elemento obrigatório. Lista os pacotes que podem ser instalados por esse processo de instalação.|Nenhum|
+|[Elemento \<Strings>](../deployment/strings-element-bootstrapper.md)|Elemento obrigatório. Armazena as versões localizadas das cadeias de caracteres de erro e o nome de produto.|Nenhum|
 
 ## <a name="remarks"></a>Comentários
  O esquema do pacote é consumido pelos *Setup.exe*, um programa stub gerado pelo MS Build que contém pouca lógica embutido em código de sua própria tarefa de inicialização. O esquema de unidades de todos os aspectos do processo de instalação.

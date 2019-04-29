@@ -22,18 +22,18 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 16091b8743a30404560a1bf841710f65ad1343a3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56701349"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62929761"
 ---
 # <a name="select-code-type-dialog-box"></a>Caixa de diálogo Selecionar Tipo de Código
 Para abrir essa caixa de diálogo, abra a caixa de diálogo **Anexar ao Processo** e clique no botão **Selecionar**.
 
  **Determine automaticamente o tipo de código para depurar** o depurador apropriado será selecionado com base no tipo de código que está sendo executado.
 
- **Depurar esses tipos de código:** na lista fornecida, escolha o tipo de código que você deseja depurar.
+ **Depurar estes tipos de código:** Na lista fornecida, escolha o tipo de código que você deseja depurar.
 
 ## <a name="see-also"></a>Consulte também
 - [Segurança do depurador](../debugger/debugger-security.md)

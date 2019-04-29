@@ -8,12 +8,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f79796d186f5a365c37a8e24a3e523aba7ceb72
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: f306e0a30dc8faa8f961cb7096a31a049547a70e
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55946646"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62820400"
 ---
 # <a name="understanding-sal"></a>Noções básicas de SAL
 
@@ -110,9 +110,9 @@ Essa implementação contém um erro comum de off-by-one. Felizmente, o autor do
 
 #### <a name="to-use-visual-studio-code-analysis-tools-and-sal"></a>Usar ferramentas de análise de código do Visual Studio e o SAL
 
-1.  No Visual Studio, abra um projeto de C++ que contém as anotações de SAL.
+1. No Visual Studio, abra um projeto de C++ que contém as anotações de SAL.
 
-2.  Na barra de menus, escolha **construir**, **executar análise de código na solução**.
+2. Na barra de menus, escolha **construir**, **executar análise de código na solução**.
 
      Considere a \_em\_ exemplo nesta seção. Se você executar a análise de código nele, esse aviso é exibido:
 
@@ -122,15 +122,15 @@ Essa implementação contém um erro comum de off-by-one. Felizmente, o autor do
 
 O `_In_` anotação indica que:
 
--   O parâmetro deve ser válido e não será modificado.
+- O parâmetro deve ser válido e não será modificado.
 
--   A função lerá apenas do buffer de elemento único.
+- A função lerá apenas do buffer de elemento único.
 
--   O chamador deve fornecer ao buffer e inicializá-lo.
+- O chamador deve fornecer ao buffer e inicializá-lo.
 
--   `_In_` Especifica a "somente leitura". Um erro comum é aplicar `_In_` para um parâmetro que deve ter o `_Inout_` anotação em vez disso.
+- `_In_` Especifica a "somente leitura". Um erro comum é aplicar `_In_` para um parâmetro que deve ter o `_Inout_` anotação em vez disso.
 
--   `_In_` é permitido, mas são ignorados pelo analisador de em não ponteiro escalares.
+- `_In_` é permitido, mas são ignorados pelo analisador de em não ponteiro escalares.
 
 ```cpp
 void InCallee(_In_ int *pInt)

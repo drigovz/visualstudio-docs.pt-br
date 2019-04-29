@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6f5de8be3463ff0e96d516c8dec592d0aff3cfc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084009"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981419"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>Passo a passo: Criar seu primeiro suplemento VSTO para Excel
   Este passo a passo introdutório mostra como criar um suplemento em nível de aplicativo do Microsoft Office Excel. Os recursos que você criar nesse tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual pastas de trabalho estão abertas.

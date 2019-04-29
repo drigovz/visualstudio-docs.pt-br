@@ -24,11 +24,11 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 733f3ec7573287e934f8a5f0167db89c0683759a
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537472"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564002"
 ---
 # <a name="create-custom-views-of-objects-c-visual-basic-c"></a>Criar exibições personalizadas de objetos (C#, Visual Basic, C++)
 Você pode personalizar o modo como o Visual Studio exibe tipos de dados nas janelas variáveis do depurador.

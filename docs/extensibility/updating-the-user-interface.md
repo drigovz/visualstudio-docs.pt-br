@@ -12,11 +12,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d3745cd73e09031b747b6bd17973abb97196ce46
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62798417"
 ---
 # <a name="updating-the-user-interface"></a>Atualizando a interface do usuário
 Depois de implementar um comando, você pode adicionar código para atualizar a interface do usuário com o estado de seus novos comandos.

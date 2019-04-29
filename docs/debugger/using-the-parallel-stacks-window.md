@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e9728346bc4c6d805bb0febd3a0d5bef0ed809a5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56712535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62902247"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>Exibir threads e tarefas na janela pilhas paralelas (C#, Visual Basic, C++)
 
@@ -137,7 +137,7 @@ Se você alternar para um novo quadro de pilha, você torna o método atual, e *
 
 ## <a name="see-also"></a>Consulte também
 - [Introdução ao depurar um aplicativo multithreaded](../debugger/get-started-debugging-multithreaded-apps.md)
-- [Passo a passo: depurar um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md)
+- [Passo a passo: Depurar um aplicativo paralelo](../debugger/walkthrough-debugging-a-parallel-application.md)
 - [Introdução ao depurador](../debugger/debugger-feature-tour.md)
 - [Depurando código gerenciado](../debugger/debugging-managed-code.md)
 - [Programação paralela](/dotnet/standard/parallel-programming/index)

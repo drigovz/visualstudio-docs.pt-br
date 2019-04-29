@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: e82166ab336023812c63045c031b81d94dea67e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066240"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62566990"
 ---
 # <a name="how-to-extend-code-generated-by-the-or-designer"></a>Como: Estender o código gerado pelo Designer Relacional de Objetos
 Código gerado pelo **Relational Designer** é regenerado quando alterações são feitas para as classes de entidade e outros objetos na superfície do designer. Devido a essa regeneração de código, qualquer código que você adicionar ao código gerado seja substituído normalmente quando o código de regenerados de designer. O **Relational Designer** fornece a capacidade de gerar arquivos de classe parcial na qual você pode adicionar código que não será substituído. Um exemplo de como adicionar seu próprio código para o código gerado pelo **Relational Designer** está adicionando validação de dados a LINQ para classes SQL (entidade). Para obter mais informações, confira [Como: Adicionar validação a classes de entidade](../data-tools/how-to-add-validation-to-entity-classes.md).

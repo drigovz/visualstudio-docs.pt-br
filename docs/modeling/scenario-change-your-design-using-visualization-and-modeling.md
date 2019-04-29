@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 7d0a24301f7571225ed1002ce4e331f29fd4d77c
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57873865"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62824040"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: Alterar o design usando visualização e modelagem
 
@@ -95,7 +95,7 @@ Consulte:
 
 - [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md)
 
-- [Como: Adicionar diagramas de classe a projetos (Designer de classe)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [Como: adicionar diagramas de classe a projetos (Designer de Classe)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 - [SDK de Modelagem para Visual Studio – linguagens específicas de domínio](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)
 
@@ -383,7 +383,7 @@ Um diagrama de classe tem os seguintes recursos principais:
 
 Como ponto de partida para explorar e discutir as classes existentes, você pode usar o Designer de classe para criar diagramas de classe do código.
 
-- [Como: Adicionar diagramas de classe a projetos (Designer de classe)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
+- [Como: adicionar diagramas de classe a projetos (Designer de Classe)](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)
 
 #### <a name="summary-strengths-of-class-diagrams"></a>Resumo: Pontos fortes de diagramas de classe
  Diagramas de classe ajudam você a definir:

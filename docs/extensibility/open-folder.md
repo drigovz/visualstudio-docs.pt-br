@@ -9,11 +9,11 @@ manager: viveis
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2bb74703f639848d643f536edf620e30b1836310
-ms.sourcegitcommit: 37fb7075b0a65d2add3b137a5230767aa3266c74
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/02/2019
-ms.locfileid: "53986005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62806427"
 ---
 # <a name="open-folder-extensibility"></a>Extensibilidade de pasta aberta
 
@@ -26,7 +26,7 @@ O [Abrir pasta](../ide/develop-code-in-visual-studio-without-projects-or-solutio
 
 Quando usado com cargas de trabalho como para desenvolvimento .NET e C++, os usuários também obtém:
 
-* Intellisense avançado
+* Rich Intellisense
 * Funcionalidade específica ao idioma
 
 Com Abrir pasta, os autores de extensão podem criar recursos avançados para qualquer idioma. Existem APIs para dar suporte à construção, depuração e a pesquisa de símbolo para qualquer arquivo em um usuário da Base de código. Extensores atuais podem atualizar seus recursos existentes do Visual Studio para entender o código sem o apoio de projetos ou uma solução.

@@ -1,5 +1,5 @@
 ---
-title: 'Como: usar Editar e continuar (c#) | Microsoft Docs'
+title: 'Como: Usar Editar e continuar (c#) | Microsoft Docs'
 ms.date: 10/04/2018
 ms.topic: conceptual
 dev_langs:
@@ -16,13 +16,13 @@ manager: jillfra
 ms.workload:
 - dotnet
 ms.openlocfilehash: 515068f29045ef92ee7d2323f752ba2185f28cac
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696344"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62906265"
 ---
-# <a name="how-to-use-edit-and-continue-c"></a>Como usar Editar e Continuar (C#)
+# <a name="how-to-use-edit-and-continue-c"></a>Como: Usar Editar e Continuar (C#)
 Com editar e continuar, você pode fazer e aplicar as alterações ao seu código no modo de interrupção durante a depuração, sem a necessidade de parar e reiniciar a sessão de depuração.
 
 Editar e continuar para C# ocorre automaticamente quando você faça alterações de código no modo de interrupção, e em seguida, continua a depuração usando **continuar**, **etapa**, ou **definir próxima instrução**, ou avaliar uma função em uma janela do depurador.

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 6cdfe722e957eaae97b587940a1b8fb3db1112c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62574845"
 ---
 # <a name="how-to-programmatically-define-and-select-ranges-in-documents"></a>Como: Definir e selecionar intervalos em documentos programaticamente
   Você pode definir um intervalo em um documento do Microsoft Office Word usando um <xref:Microsoft.Office.Interop.Word.Range> objeto. Você pode selecionar todo o documento de várias maneiras, por exemplo, usando o <xref:Microsoft.Office.Interop.Word.Range.Select%2A> método da <xref:Microsoft.Office.Interop.Word.Range> do objeto ou usando a propriedade Content da <xref:Microsoft.Office.Tools.Word.Document> classe (em uma personalização no nível de documento) ou o <xref:Microsoft.Office.Interop.Word.Document> classe (em um Suplemento do VSTO).

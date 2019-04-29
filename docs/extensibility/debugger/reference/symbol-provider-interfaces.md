@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9e98d792da99cafb670f64f572a1d6e3e4597f8e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715720"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62913508"
 ---
 # <a name="symbol-provider-interfaces"></a>Interfaces de provedor de símbolos
 A seguir estão as Interfaces de tratamento de símbolo para o [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)].

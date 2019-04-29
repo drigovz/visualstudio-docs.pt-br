@@ -83,7 +83,7 @@ Para criar definições de método MonoBehavior vazias usando o assistente do Mo
 
 6. Selecione o botão **OK** para sair do assistente e inserir os métodos em seu código.
 
-   ![A caixa de diálogo Assistente de monobehavior. ](../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
+   ![A caixa de diálogo Assistente de monobehavior. ] (../cross-platform/media/vstu_monobehavior_wizard_full.png "vstu_monobehavior_wizard_full")
 
 ## <a name="unity-project-explorer"></a>Gerenciador de Projetos do Unity
 
@@ -93,7 +93,7 @@ O Gerenciador de Projetos do Unity exibe todos os seus arquivos e diretórios de
 
 - No menu principal do Visual Studio, escolha **Exibir > Gerenciador de Projetos do Unity**. Atalho de teclado: **Alt**+**Shift**+**E**
 
-   ![Exibir a janela Gerenciador de Projetos do Unity. ](../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
+   ![Exibir a janela Gerenciador de Projetos do Unity. ] (../cross-platform/media/vstu_view_unity_project_explorer.png "vstu_view_unity_project_explorer")
 
 ## <a name="unity-debugging"></a>Depuração do Unity
 
@@ -151,11 +151,11 @@ Você pode depurar builds de desenvolvimento de vários player do Unity com o Vi
 
 - No Visual Studio, no menu principal, escolha **Depurar > Anexar Depurador do Unity**.
 
-   ![Anexe o depurador do Unity. ](../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
+   ![Anexe o depurador do Unity. ] (../cross-platform/media/vstu_debugging_attach_unity_debugger.png "vstu_debugging_attach_unity_debugger")
 
    A caixa de diálogo **Selecionar Instância do Unity** exibe informações sobre cada instância do Unity a que você pode se conectar.
 
-   ![Escolha uma instância do Unity à qual se conectar. ](../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
+   ![Escolha uma instância do Unity à qual se conectar. ] (../cross-platform/media/vstu_attach-debugger.png "vstu_connection_to_unity")
 
    **Projeto**
 

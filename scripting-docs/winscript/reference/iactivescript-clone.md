@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: bec912596c792a67f65434062bc0d0ed11bd3fb9
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58149020"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935699"
 ---
 # <a name="iactivescriptclone"></a>IActiveScript::Clone
 Clona o mecanismo de script atual (menos qualquer estado de execução atual), retornando um mecanismo de script carregado com nenhum site no thread atual. As propriedades desse novo mecanismo de script serão idênticas às propriedades que do mecanismo de script original seria em se ele foi transferida volta ao estado inicializado.  

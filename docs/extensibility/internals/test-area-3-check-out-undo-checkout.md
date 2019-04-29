@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: eb95c5475c653e60c863ddf093d3a92e0c70cf45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858284"
 ---
 # <a name="test-area-3-check-outundo-checkout"></a>Área de teste 3: Fazer Check-Out / desfazer check-out
 Essa área de plug-in de teste de controle de origem aborda itens de edição e reversão do repositório de versão por meio de **Check-Out** e **desfazer check-out** comandos.

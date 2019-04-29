@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 1746b8419c342b5627e1c6374b2b29f08f7ee75c
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691885"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62849873"
 ---
 # <a name="font-dialog-box-microsoft-spy-help"></a>Caixa de diálogo Fonte (Ajuda do Microsoft Spy++)
 Use essa caixa de diálogo para configurar a fonte de caracteres usada em uma [exibições do Spy + +](../debugger/spy-increment-views.md) janela. Para exibir essa caixa de diálogo, expanda o **modo de exibição** menu e escolha **fonte**.

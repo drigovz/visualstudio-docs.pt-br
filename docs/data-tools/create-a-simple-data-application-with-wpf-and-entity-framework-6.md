@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - data-storage
 ms.openlocfilehash: f5d65ff675329fdc714026ce6fe04ee3bd93086f
-ms.sourcegitcommit: 5af29226aef0a3b4a506b69a08a97cfd21049521
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/20/2019
-ms.locfileid: "58268789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62568552"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>Criar um aplicativo de dados simples com o WPF e o Entity Framework 6
 
@@ -58,7 +58,7 @@ Este exemplo usa o SQL Server Express LocalDB e o banco de dados de exemplo Nort
 
 ## <a name="create-the-model"></a>Criar o modelo
 
-1. Clique com botão direito no nó do projeto no **Gerenciador de soluções** e escolha **Add** > **Novo Item**. No painel esquerdo, sob o nó C#, escolha **dados** e no painel central, escolha **modelo de dados de entidade ADO.NET**.
+1. Clique com botão direito no nó do projeto no **Gerenciador de soluções** e escolha **Add** > **Novo Item**. No painel esquerdo, sob o nó c#, escolha **dados** e no painel central, escolha **modelo de dados de entidade ADO.NET**.
 
    ![Item de novo modelo do Entity Framework](../data-tools/media/raddata-ef-new-project-item.png)
 
@@ -72,7 +72,7 @@ Este exemplo usa o SQL Server Express LocalDB e o banco de dados de exemplo Nort
 
     ![Escolha os objetos de banco de dados para o modelo](../data-tools/media/raddata-choose-ef-objects.png)
 
-5. O assistente gera as classes do C# que representam o modelo do Entity Framework. As classes são antigas classes C# simples e são o que podemos databind na interface de usuário do WPF. O *. edmx* arquivo descreve as relações e outros metadados que associa as classes de objetos no banco de dados. O *. TT* arquivos são modelos T4 que geram o código que opera no modelo e salve as alterações no banco de dados. Você pode ver todos esses arquivos em **Gerenciador de soluções** sob o nó Northwind_model:
+5. O assistente gera as classes do c# que representam o modelo do Entity Framework. As classes são antigas classes c# simples e são o que podemos databind na interface de usuário do WPF. O *. edmx* arquivo descreve as relações e outros metadados que associa as classes de objetos no banco de dados. O *. TT* arquivos são modelos T4 que geram o código que opera no modelo e salve as alterações no banco de dados. Você pode ver todos esses arquivos em **Gerenciador de soluções** sob o nó Northwind_model:
 
       ![Arquivos de modelo de EF do Gerenciador de soluções](../data-tools/media/raddata-solution-explorer-ef-model-files.png)
 

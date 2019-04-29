@@ -11,11 +11,11 @@ ms.assetid: 408dcdef-8ef9-4644-97d2-f311cd35824f
 caps.latest.revision: 12
 manager: jillfra
 ms.openlocfilehash: a244463832ff5620efa74a2c7fd20d6d47d79e76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117519"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62810690"
 ---
 # <a name="providing-a-custom-properties-window"></a>Fornecendo uma janela de propriedades personalizadas
 É possível fornecer seus próprios **propriedades** janela para um sistema de projeto determinado, em vez de ampliar a **propriedades** janela fornecida pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE). O cenário mais frequentemente encontrado é quando você mesmo implementa o objeto localizado no quadro de janela.  

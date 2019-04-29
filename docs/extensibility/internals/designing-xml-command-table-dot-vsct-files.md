@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1e70a64e01e388af61127fd76f4a2fcee8e5a9b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091558"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62910643"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>Criar arquivos de tabela (. VSCT) do comando XML
 Uma tabela de comando do XML (*VSCT*) arquivo descreve o layout e aparência de itens de comando para um VSPackage. Itens de comando incluem caixas de combinação, botões, menus, barras de ferramentas e grupos de itens de comando. Este artigo descreve os arquivos da tabela de comandos XML, como eles afetam os menus e itens de comando e como criá-los.

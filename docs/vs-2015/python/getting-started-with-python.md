@@ -10,11 +10,11 @@ author: kraigb
 ms.author: kraigb
 manager: jillfra
 ms.openlocfilehash: 9c18ae2731d92e6d128d13e7687bac77ae76dc8a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648440"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62575644"
 ---
 # <a name="getting-started-with-python"></a>Introdução ao Python
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -91,9 +91,9 @@ Além de todas as bibliotecas de cientistas de dados do Python, as Ferramentas P
   
 ## <a name="see-also"></a>Consulte também  
 
-[Introdução ao PTVS: Configurar o Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
+[Introdução às PTVS: Configurar o Visual Studio](../python/getting-started-with-ptvs-setting-up-visual-studio.md)
 [Introdução ao PTVS: Iniciar a codificação (projetos)](../python/getting-started-with-ptvs-start-coding-projects.md)
 [Introdução ao PTVS: Edição de código](../python/getting-started-with-ptvs-editing-code.md)
 [Introdução ao PTVS: Depurando](../python/getting-started-with-ptvs-debugging.md)
 [Introdução ao PTVS: Python interativo](../python/getting-started-with-ptvs-interactive-python.md)
-[Introdução ao PTVS: Compilando um site no Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)
+[Introdução ao PTVS: compilar um site no Azure](../python/getting-started-with-ptvs-building-a-website-in-azure.md)

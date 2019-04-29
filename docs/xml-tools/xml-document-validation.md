@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d9953190220acf572ac04b18e9018c1d45a3b2c
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 59b8ed5c74d998b47ff4a187b420695eab5be035
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525742"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62807707"
 ---
 # <a name="xml-document-validation"></a>Validação de documento XML
 
@@ -21,21 +21,21 @@ O editor de XML verifica a sintaxe XML 1.0 e também realiza validação de dado
 
  Os esquemas usados na validação são encontrados correspondendo o `targetNamespace` de um esquema compilado com a declaração xmlns do elemento. Os esquemas compilados são carregados de um dos seguintes locais, listados por ordem de prioridade:
 
--   Do nome de arquivo especificado na **esquemas** campo do documento **propriedades** janela.
+- Do nome de arquivo especificado na **esquemas** campo do documento **propriedades** janela.
 
--   Um esquema ou DTD embutido.
+- Um esquema ou DTD embutido.
 
--   Uma DTD externa ou os atributos `xsd:schemaLocation` e `xsd:noNamespaceSchemaLocation`
+- Uma DTD externa ou os atributos `xsd:schemaLocation` e `xsd:noNamespaceSchemaLocation`
 
--   Um URI de um namespace do esquema XDR "x-schema".
+- Um URI de um namespace do esquema XDR "x-schema".
 
 Os esquemas também podem ser encontrados nos seguintes locais adicionais quando o esquema tiver um namespace de destino não vazio:
 
--   Outra janela do editor que contenha o esquema.
+- Outra janela do editor que contenha o esquema.
 
--   Um esquema na solução atual.
+- Um esquema na solução atual.
 
--   Um esquema do diretório de cache de esquema.
+- Um esquema do diretório de cache de esquema.
 
 ## <a name="xslt-files"></a>Arquivos XSLT
  Ao editar um arquivo XSLT, o *XSLT* arquivo localizado no cache do esquema é usado para validação. Os erros de validação são mostrados como sublinhados ondulados azuis. Os erros do compilador XSLT são mostrados como sublinhados ondulados vermelhos.

@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 64f44379c98808cb93fbe51498234a34a695c3d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048938"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62564712"
 ---
 # <a name="create-custom-data-visualizers"></a>Criar visualizadores de dados personalizados
  Um *visualizer* faz parte do [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] interface de usuário do depurador que exibe uma variável ou objeto de maneira apropriada para o tipo de dados. Por exemplo, um visualizador de HTML interpreta uma cadeia de caracteres HTML e exibe o resultado como seria exibido em uma janela do navegador. Um visualizador de bitmap interpreta uma estrutura de bitmap e exibe o gráfico representa. Alguns visualizadores permitem que você modifique, bem como exibir os dados.

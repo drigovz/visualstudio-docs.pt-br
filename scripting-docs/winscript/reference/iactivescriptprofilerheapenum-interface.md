@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: fe83f00a96013ffcf7c5df2d47eb1ba7d7a0bae1
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992826"
 ---
 # <a name="iactivescriptprofilerheapenum-interface"></a>Interface IActiveScriptProfilerHeapEnum
 Um iterador em heap de objetos associado com um mecanismo de script, coletado pela [método IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md).  

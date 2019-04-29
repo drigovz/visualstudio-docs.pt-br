@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ad17041650324e597fb76925f521bb7fc2e9ce93
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56629177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967651"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>Como: Impedir que o Outlook exiba uma região de formulário
   Pode haver situações em que você quer que o Microsoft Office Outlook para exibir uma região de formulário para um determinado item. Por exemplo, se um item de contato não contiver um endereço comercial, você pode impedir que uma região de formulário que mostra o local da empresa em um mapa apareça.

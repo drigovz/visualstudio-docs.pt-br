@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: b4d13ed44a3704095b95a899a3ec35b806011b71
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56605816"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62858170"
 ---
 # <a name="source-control"></a>Controle do código-Fonte
 Esta seção discute as opções para implementar o controle de origem como um recurso integrado do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], por meio de um plug-in de controle do código-fonte ou um VSPackage de controle do código-fonte.

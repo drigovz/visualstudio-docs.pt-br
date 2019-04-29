@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: ab8096b79cfbb91e4b65256c84ab1ba01207d9ed
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992848"
 ---
 # <a name="iactivescriptprofilerheapenumgetoptionalinfo-method"></a>Método IActiveScriptProfilerHeapEnum::GetOptionalInfo
 Obtém informações opcionais no objeto especificado (o conjunto de objetos de heap retornados do [método IActiveScriptProfilerControl3::EnumHeap](../../winscript/reference/iactivescriptprofilercontrol3-enumheap-method.md)).  

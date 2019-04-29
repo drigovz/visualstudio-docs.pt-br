@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: eef5973eb7ec4b8779f89779fe1aad62d86f4850
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612573"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62898114"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>Solucionar problemas de implantações do ClickOnce
 Este tópico ajuda você a diagnosticar e resolver os problemas mais comuns com [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações.
@@ -32,11 +32,11 @@ Este tópico ajuda você a diagnosticar e resolver os problemas mais comuns com 
 
 ## <a name="deployment-considerations"></a>Considerações de implantação
 
- [Como definir o local de um arquivo de log personalizado para erros de implantação do ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)
+ [Como: Definir uma localização de arquivo de log personalizado para erros de implantação do ClickOnce](../deployment/how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors.md)
 
  Descreve como redirecionar todas [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] falhas de ativação em um computador para um único arquivo de log.
 
- [Como especificar arquivos de log detalhados para implantações do ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)
+ [Como: Especificar arquivos de log detalhados para implantações do ClickOnce](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)
 
  Descreve como aumentar o detalhe que [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] grava em arquivos de log.
 

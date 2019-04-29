@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 460b948ea7b5bace1b91143d46a4ca2f4c823608
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62859156"
 ---
 # <a name="saving-a-standard-document"></a>Salvando um documento padrão
 O ambiente manipula o salvamento, salvar como e salvar todos os comandos. Quando um usuário escolhe **salvar**, **Salvar como**, ou **Salvar tudo** do **arquivo** menu ou fecha a solução, resultando em um  **Salvar tudo**, ocorre o seguinte processo.

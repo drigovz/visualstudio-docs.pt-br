@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: d2f2a70df72f6dfcdc8946ca2f5afec9efa21a65
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934427"
 ---
 # <a name="warning-the-dependency-39file39-in-project-39project39-cannot-be-copied-to-the-run-directory-because-it-would-overwrite-the-reference-39file39"></a>Aviso: a dependência &#39;arquivo&#39; no projeto &#39;projeto&#39; não pode ser copiado para o diretório de execução porque ela substituiria a referência de &#39;arquivo.&#39;
 Há um conflito entre as dependências; mais de um arquivo de assembly distintos com o mesmo nome deve ser copiados para o diretório bin para a execução do aplicativo. O diretório de execução é capaz de resolver o conflito, pois uma das dependências é uma referência primária.  

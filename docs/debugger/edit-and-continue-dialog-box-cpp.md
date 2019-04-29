@@ -20,11 +20,11 @@ manager: jillfra
 ms.workload:
 - cplusplus
 ms.openlocfilehash: 6e7183845e9c0b9b50b8feaedf9e6327b06678ad
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56690013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62851427"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>Caixa de diálogo Editar e Continuar (C++)
 Editar e Continuar não poderiam aplicar as alterações feitas ao seu código nativo. Essa pode ser uma condição temporária. Às vezes, Editar e Continuar não pode aplicar alterações de código nativo imediatamente, mas pode aplicá-las posteriormente durante a sessão de depuração (por exemplo, após a conclusão da chamada atual ao procedimento que agora é executado). Para obter mais informações, confira [Editar e Continuar](../debugger/edit-and-continue.md).
