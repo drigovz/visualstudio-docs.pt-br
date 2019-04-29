@@ -16,11 +16,11 @@ author: gewarren
 ms.author: gewarren
 manager: wpickett
 ms.openlocfilehash: 127bb322a9dd5c841f71a5da49b0d9a6fceaf5e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926456"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62559806"
 ---
 # <a name="ca1036-override-methods-on-comparable-types"></a>CA1036: Substituir métodos em tipos comparáveis
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ ms.locfileid: "58926456"
 
 - op_GreaterThan
 
-  No C#, os tokens que são usados para representar esses operadores são os seguintes: = =,! =, \<, e >.
+  No c#, os tokens que são usados para representar esses operadores são os seguintes: = =,! =, \<, e >.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  É seguro suprimir um aviso nessa regra, quando a violação é causada por falta de operadores e sua linguagem de programação não oferece suporte a sobrecarga de operador, como é o caso com o Visual Basic .NET. Também é seguro suprimir um aviso para essa regra quando ela é acionada em operadores de igualdade diferente de op_Equality se você determinar que os operadores a implementação não faz sentido no contexto do aplicativo. No entanto, você deve sempre sobre op_Equality e o operador = = se substitui Object. Equals.

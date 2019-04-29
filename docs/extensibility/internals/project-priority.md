@@ -11,11 +11,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6d444896c305130c7805b8fd6ec1bdf020ed446d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089439"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62909236"
 ---
 # <a name="project-priority"></a>Prioridade do projeto
 Um item de projeto geralmente é um membro de apenas um projeto na solução. Portanto, o IDE pode facilmente determinar qual projeto é usado para abrir o item. No entanto, se um item for um membro de mais de um projeto, o IDE usa um esquema de prioridade para determinar o melhor projeto para abrir o item.
@@ -34,5 +34,5 @@ Um item de projeto geralmente é um membro de apenas um projeto na solução. Po
 
 ## <a name="see-also"></a>Consulte também
 - [Projeto de arquivos diversos](../../extensibility/internals/miscellaneous-files-project.md)
-- [Como: Abrir editores para documentos abertos](../../extensibility/how-to-open-editors-for-open-documents.md)
+- [Como: abrir editores para documentos abertos](../../extensibility/how-to-open-editors-for-open-documents.md)
 - [Adicionar modelos projeto e de item de projeto](../../extensibility/internals/adding-project-and-project-item-templates.md)

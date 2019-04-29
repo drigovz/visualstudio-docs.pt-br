@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7ca83cb6d2913e0c0a91f4a6e874640ae57c7708
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62860001"
 ---
 # <a name="opening-and-saving-project-items"></a>Abrindo e salvando itens de projeto
 Quando você adiciona um novo tipo de projeto, você deve gerenciar a abertura e salvar os seus arquivos de projetos no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] o ambiente de desenvolvimento integrado (IDE). Os tópicos a seguir discutem as diferentes abordagens para abrir e salvar arquivos.
@@ -31,15 +31,15 @@ Quando você adiciona um novo tipo de projeto, você deve gerenciar a abertura e
 
  Fornece uma explicação detalhada, passo a passo de como o IDE manipula a **abrir com** comando, solicitando a abertura de um arquivo que tem algumas opções de editores padrão.
 
-- [Como: Editores abertos específicos do projeto](../../extensibility/how-to-open-project-specific-editors.md)
+- [Como: abrir editores específicos a um projeto](../../extensibility/how-to-open-project-specific-editors.md)
 
  Fornece instruções passo a passo para especificar se os arquivos de um tipo específico em seu projeto devem ser abertos usando um editor específico do projeto.
 
-- [Como: Abrir editores padrão](../../extensibility/how-to-open-standard-editors.md)
+- [Como: abrir editores padrão](../../extensibility/how-to-open-standard-editors.md)
 
  Fornece instruções passo a passo para especificar como habilitar o IDE abrir um editor padrão para arquivos em seu tipo de projeto.
 
-- [Como: Abrir editores para documentos abertos](../../extensibility/how-to-open-editors-for-open-documents.md)
+- [Como: abrir editores para documentos abertos](../../extensibility/how-to-open-editors-for-open-documents.md)
 
  Fornece instruções passo a passo para abrir um editor específico do projeto para um arquivo aberto.
 

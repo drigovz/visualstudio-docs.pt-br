@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: de300a7af8492e6431f6b8513cde84a15895ad96
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62786302"
 ---
 # <a name="isetnextstatement-interface"></a>Interface ISetNextStatement
 Essa interface é implementada por um interpretador para permitir que o Gerenciador de depuração do processo atualizar a instrução atual. Ele é implementado de um objeto de quadro de pilha e o PDM obtém essa interface por meio de QueryInterface.  

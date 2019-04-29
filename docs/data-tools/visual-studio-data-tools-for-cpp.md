@@ -1,5 +1,5 @@
 ---
-title: Ferramentas de dados para C++
+title: Ferramentas de dados paraC++
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -11,19 +11,19 @@ ms.workload:
 - data-storage
 - cplusplus
 ms.openlocfilehash: 5157f1d6a851e0784e79dfbfe5b94aef0490a026
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55930552"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62565196"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>Ferramentas de dados do Visual Studio para C++
 
-C++ nativo geralmente fornecem o melhor desempenho quando você está acessando fontes de dados. No entanto, os dados de ferramentas para aplicativos do C++ no Visual Studio não são tão rico quanto vale para aplicativos .NET. Por exemplo, o **fontes de dados** janela não pode ser usada para arrastar e soltar fontes de dados em uma superfície de design de C++. Se você precisar de uma camada relacional de objeto, você precisará escrever sua própria ou usar um produto de terceiros. O mesmo é verdadeiro para a funcionalidade de associação de dados, embora os aplicativos que usam a biblioteca Microsoft Foundation Class podem usar algumas classes de banco de dados, junto com os documentos e exibições, para armazenar dados na memória e exibi-lo ao usuário. Para obter mais informações, consulte [acesso a dados no Visual C++](/cpp/data/data-access-in-cpp).
+C++ nativo geralmente fornecem o melhor desempenho quando você está acessando fontes de dados. No entanto, os dados de ferramentas para aplicativos do C++ no Visual Studio não são tão rico quanto vale para aplicativos .NET. Por exemplo, o **fontes de dados** janela não pode ser usada para arrastar e soltar fontes de dados em um C++ superfície de design. Se você precisar de uma camada relacional de objeto, você precisará escrever sua própria ou usar um produto de terceiros. O mesmo é verdadeiro para a funcionalidade de associação de dados, embora os aplicativos que usam a biblioteca Microsoft Foundation Class podem usar algumas classes de banco de dados, junto com os documentos e exibições, para armazenar dados na memória e exibi-lo ao usuário. Para obter mais informações, consulte [acesso a dados no Visual C++](/cpp/data/data-access-in-cpp).
 
 Para se conectar aos bancos de dados SQL, os aplicativos nativos do C++ podem usar os drivers ODBC e OLE DB e o provedor ADO que estão incluídos com o Windows. Eles podem se conectar a qualquer banco de dados que dá suporte a essas interfaces. O driver ODBC é o padrão. OLE DB é fornecido para compatibilidade com versões anteriores. Para obter mais informações sobre essas tecnologias de dados, consulte [Windows Data Access Components](/previous-versions/windows/desktop/ms692897(v=vs.85)).
 
-Para tirar proveito da funcionalidade personalizada no SQL Server 2005 e posterior, use o [SQL Server native client](/sql/relational-databases/native-client/sql-server-native-client). O native client também contém o driver ODBC do SQL Server e o provedor OLE DB do SQL Server em uma biblioteca de vínculo dinâmico (DLL). Suporte a aplicativos que usam APIs de código nativo (ODBC, OLE DB e ADO) para o Microsoft SQL Server. SQL Server Native Client é instalado com o SQL Server Data Tools. O guia de programação está aqui: [SQL Server native client de programação](/sql/relational-databases/native-client/sql-server-native-client-programming).
+Para tirar proveito da funcionalidade personalizada no SQL Server 2005 e posterior, use o [SQL Server native client](/sql/relational-databases/native-client/sql-server-native-client). O native client também contém o driver ODBC do SQL Server e o provedor OLE DB do SQL Server em uma biblioteca de vínculo dinâmico (DLL). Suporte a aplicativos que usam APIs de código nativo (ODBC, OLE DB e ADO) para o Microsoft SQL Server. SQL Server Native Client é instalado com o SQL Server Data Tools. O guia de programação está aqui: [Programação de cliente nativo do SQL Server](/sql/relational-databases/native-client/sql-server-native-client-programming).
 
 ## <a name="to-connect-to-localdb-through-odbc-and-sql-native-client-from-a-c-application"></a>Para conectar-se ao localDB por meio de ODBC e SQL Native Client de um aplicativo C++
 
