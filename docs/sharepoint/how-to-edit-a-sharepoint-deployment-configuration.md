@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cfaa260b32deb2cb91b27dfcaa910e950ee00752
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffa7923bbe7e8a7b44fec280a5528ab023feed37
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093703"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444707"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>Como: Editar uma configuração de implantação do SharePoint
   Você pode criar uma configuração de implantação ou modificar uma configuração de implantação existente. Por exemplo, você pode executar uma única etapa ou alterar a ordem das etapas no processo de implantação. Você talvez queira criar ou modificar as configurações de implantação porque não não possível alterar as configurações internas e adicionadas programaticamente.
@@ -39,7 +39,7 @@ ms.locfileid: "60093703"
 4. No **as etapas de implantação disponíveis** painel, escolha as etapas que você deseja adicionar a configuração de implantação, escolha o (**>**) botão e, em seguida, escolha o **Okey** botão.
 
     > [!NOTE]
-    >  Se você tiver configurado um comando de pré-implantação ou um comando de pós-implantação, essas etapas executadas somente se você adicioná-los a uma configuração de implantação personalizada.
+    > Se você tiver configurado um comando de pré-implantação ou um comando de pós-implantação, essas etapas executadas somente se você adicioná-los a uma configuração de implantação personalizada.
 
 ## <a name="change-the-active-deployment-configuration"></a>Alterar a configuração de implantação ativa
 

@@ -11,12 +11,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d93c18f1b62ef7171fb35af896a8e9adbc461680
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bc11af7d259f252d7659f559be15b85f4af90149
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437936"
 ---
 # <a name="graphics-frame-analysis"></a>Análise de quadro de gráficos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60053527"
 Use análise de quadros de gráficos no analisador de gráficos do Visual Studio para analisar e otimizar o desempenho de renderização do Direct3D jogo ou aplicativo.  
   
 > [!IMPORTANT]
->  Analisador de gráficos dá suporte à análise de quadros para aplicativos que usam o Direct3D 11 em plataformas com suporte, incluindo o Windows 10. Análise de quadro não é suportada para aplicativos que usam o Direct3D 12.  
+> Analisador de gráficos dá suporte à análise de quadros para aplicativos que usam o Direct3D 11 em plataformas com suporte, incluindo o Windows 10. Análise de quadro não é suportada para aplicativos que usam o Direct3D 12.  
   
 ## <a name="frame-analysis"></a>Análise de quadro  
  A análise de quadro usa as mesmas informações capturadas em um arquivo de log de elementos gráficos para fins de diagnóstico, mas as utiliza para resumir o desempenho de renderização. As informações de desempenho não são registradas no log durante a captura; ao invés disso, as informações de desempenho são geradas posteriormente, durante a análise de quadro, programando eventos e coletando estatísticas conforme o quadro é reproduzido. Essa abordagem possui diversas vantagens em relação a registrar informações de desempenho durante a captura:  
@@ -118,7 +118,7 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
  As informações do contador de hardware oferecem uma visão bastante detalhada de comportamentos específicos da plataforma de hardware para cada chamada de desempenho, o que pode ajudar a identificar a causa de gargalos de desempenho de maneira bastante precisa.  
   
 > [!NOTE]
->  Diferentes plataformas de hardware oferecem suporte a diferentes contadores; não há um padrão. Os contadores e aquilo que eles representam são determinados exclusivamente para cada fabricante de GPU.  
+> Diferentes plataformas de hardware oferecem suporte a diferentes contadores; não há um padrão. Os contadores e aquilo que eles representam são determinados exclusivamente para cada fabricante de GPU.  
   
 ### <a name="marker-regions-and-events"></a>Regiões e eventos do marcador  
  A Análise de Quadro oferece suporte a marcadores de evento e grupos de evento definidos pelo usuário. Eles são exibidos na tabela de Resumo nas tabelas de Detalhes.  
@@ -145,7 +145,7 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
  Carimbos de data/hora têm suporte em todas as plataformas compatíveis com Análise de Quadro. Consultas de oclusão de profundidade, necessárias para o contador de Pixels Obstruídos, são suportadas em plataformas com nível de recurso de suporte 9.2 ou superior.  
   
 > [!NOTE]
->  Embora carimbos de data e hora sejam suportados em todas as plataformas que dão suporte à Análise de Quadros, a precisão e a consistência dos carimbos varia de uma plataforma para outra.  
+> Embora carimbos de data e hora sejam suportados em todas as plataformas que dão suporte à Análise de Quadros, a precisão e a consistência dos carimbos varia de uma plataforma para outra.  
   
 ### <a name="gpu-counters"></a>Contadores de GPU  
  O suporte a contadores de hardware de GPU dependem do hardware.  
@@ -159,7 +159,7 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
   Nenhuma outra plataforma com suporte à Análise de Quadro coleta contadores de hardware de GPU.  
   
 > [!NOTE]
->  Como os contadores de hardware de GPU são recursos de hardware, pode levar vários passos para coletar o conjunto completo de contadores de hardware para cada variante de renderização. Como resultado, a ordem na qual os contadores de GPU são coletados não é especificada.  
+> Como os contadores de hardware de GPU são recursos de hardware, pode levar vários passos para coletar o conjunto completo de contadores de hardware para cada variante de renderização. Como resultado, a ordem na qual os contadores de GPU são coletados não é especificada.  
   
 ### <a name="windows-phone"></a>Windows Phone  
  Carimbos de data/hora, consultas de oclusão e contadores de hardware de GPU só têm suporte em aparelhos Windows Phone que tenham sido enviados originalmente com o Windows Phone 8.1. A Análise de Quadro requer esses recursos para reproduzir o arquivo de log de elementos gráficos. Aparelhos Windows Phone que tenham sido originalmente enviados com Windows Phone 8 não oferecem suporte à Análise de Quadro, mesmo para aparelhos que tenham sido atualizados para Windows Phone 8.1.  
@@ -174,13 +174,13 @@ Use análise de quadros de gráficos no analisador de gráficos do Visual Studio
  No analisador de gráficos, ao reproduzir um arquivo de log de gráficos que usa um nível mais alto de recurso que dá suporte ao computador de reprodução, ele recorre automaticamente ao WARP. Na Análise de Quadro, ele não recorre explicitamente ao WARP e gera um erro; o WARP é útil para examinar a precisão do aplicativo Direct3D, mas não para examinar seu desempenho.  
   
 > [!NOTE]
->  Embora seja importante manter os problemas de nível de recurso em mente, você pode capturar e reproduzir arquivos de log de elementos gráficos em diferentes configurações de hardware e dispositivos. Por exemplo, você pode capturar informações de gráficos em um Windows Phone e reproduzi-las em um computador desktop, ou vice-versa. Em ambos os casos, o log de elementos gráficos pode ser reproduzido considerando que o arquivo de log não contenha APIs nem utilize níveis de recurso sem suporte no computador de reprodução.  
+> Embora seja importante manter os problemas de nível de recurso em mente, você pode capturar e reproduzir arquivos de log de elementos gráficos em diferentes configurações de hardware e dispositivos. Por exemplo, você pode capturar informações de gráficos em um Windows Phone e reproduzi-las em um computador desktop, ou vice-versa. Em ambos os casos, o log de elementos gráficos pode ser reproduzido considerando que o arquivo de log não contenha APIs nem utilize níveis de recurso sem suporte no computador de reprodução.  
   
 ### <a name="direct3d-10-and-lower"></a>Direct3D 10 e versão anterior  
  A Análise de Quadro só tem suporte para API do Direct3D 11. Se seu aplicativo chama a API do Direct3D 10, a análise de quadro não reconhece ou criar o perfil mesmo que ela seja reconhecida e usadas por outras ferramentas do analisador de gráficos. Se seu aplicativo usar as APIs do Direct3D11 e Direct3D 10, apenas as chamadas do Direct3D 11 serão analisadas.  
   
 > [!NOTE]
->  Isso se aplica somente às chamadas à API do Direct3D que você estiver utilizando, e não aos níveis de recurso. Contanto que esteja utilizando a API do Direct3D 11, do Direct3D 11.1 ou do Direct3D 11.2, você poderá usar o nível de recurso desejado e a Análise de Quadro funcionará.  
+> Isso se aplica somente às chamadas à API do Direct3D que você estiver utilizando, e não aos níveis de recurso. Contanto que esteja utilizando a API do Direct3D 11, do Direct3D 11.1 ou do Direct3D 11.2, você poderá usar o nível de recurso desejado e a Análise de Quadro funcionará.  
   
 ## <a name="Variants"></a> Variantes  
  Cada alteração que a Análise de Quadros realiza na maneira em que um quadro é renderizado durante a reprodução é conhecida como uma *variante*. As variantes examinadas pela Análise de Quadro correspondem a alterações comuns e relativamente fáceis que podem ser feitas para aprimorar o desempenho de renderização ou a qualidade visual do aplicativo; por exemplo, reduzir o tamanho das texturas, usar a compactação de texturas ou habilitar diferentes tipos de suavização. As variantes substituem o contexto de renderização e os parâmetros comuns do seu aplicativo. Segue um resumo:  

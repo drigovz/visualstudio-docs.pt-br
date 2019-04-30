@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 957805caa946dced54d52f1aa6b4a7f96e75b31a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 401ce9b8421cd636fc72c59dcd6641ff4e05d968
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440344"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>Arquitetura de suplementos do VSTO
   Suplementos do VSTO criados usando as ferramentas de desenvolvedor do Office no Visual Studio tem recursos de arquitetura que enfatizam a estabilidade e segurança e permitem que eles trabalham em conjunto com o Microsoft Office. Este tópico descreve os seguintes aspectos de suplementos do VSTO:
@@ -44,7 +44,7 @@ ms.locfileid: "60091065"
  Se vários suplementos do VSTO são instalados para um aplicativo, cada suplemento do VSTO é carregado em um domínio de aplicativo diferente. Isso significa que um suplemento VSTO que se comporte incorretamente não pode causar outros suplementos do VSTO falhe. Ele também ajuda a garantir que, quando o aplicativo é fechado, todos os do suplemento do VSTO assemblies são descarregados da memória. Para obter mais informações sobre domínios de aplicativo, consulte [domínios de aplicativo](/dotnet/framework/app-domains/application-domains).
 
 > [!NOTE]
->  Suplementos do VSTO que você criar usando as ferramentas de desenvolvedor do Office no Visual Studio são projetados para ser usado somente quando o host de aplicativo do Microsoft Office é iniciado por um usuário final. Se o aplicativo for iniciado por meio de programação (por exemplo, usando a automação), o suplemento do VSTO pode não funcionar conforme o esperado.
+> Suplementos do VSTO que você criar usando as ferramentas de desenvolvedor do Office no Visual Studio são projetados para ser usado somente quando o host de aplicativo do Microsoft Office é iniciado por um usuário final. Se o aplicativo for iniciado por meio de programação (por exemplo, usando a automação), o suplemento do VSTO pode não funcionar conforme o esperado.
 
 ## <a name="AddinComponents"></a> Componentes de suplementos do VSTO
  Embora o assembly do suplemento do VSTO é o componente principal, há vários outros componentes que desempenham um papel importante na maneira como os aplicativos do Microsoft Office descobrirem e carregar suplementos do VSTO.
@@ -70,7 +70,7 @@ ms.locfileid: "60091065"
  ![Arquitetura de suplemento do office de 2007](../vsto/media/office07addin.png "arquitetura de suplemento do Office de 2007")
 
 > [!NOTE]
->  Em soluções do Office que se destinam a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], soluções chamam o modelo de objeto do aplicativo host, usando as informações de tipo PIA que estão incorporadas no assembly de solução, em vez de chamar o PIA diretamente. Para obter mais informações, consulte [Design e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md).
+> Em soluções do Office que se destinam a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)], soluções chamam o modelo de objeto do aplicativo host, usando as informações de tipo PIA que estão incorporadas no assembly de solução, em vez de chamar o PIA diretamente. Para obter mais informações, consulte [Design e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md).
 
 ### <a name="loading-process"></a>Processo de carregamento
  Quando um usuário inicia um aplicativo, ocorrem as seguintes etapas:
@@ -100,7 +100,7 @@ ms.locfileid: "60091065"
      Opcionalmente, você pode substituir esse método para estender um recurso do Microsoft Office, retornando um objeto que implementa uma interface de extensibilidade. Para obter mais informações, consulte [recursos de interface do usuário personalizar usando interfaces de extensibilidade](../vsto/customizing-ui-features-by-using-extensibility-interfaces.md).
 
     > [!NOTE]
-    >  O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] faz chamadas separadas para o <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> método para cada interface de extensibilidade que tem suporte pelo aplicativo host. Embora a primeira chamada para o <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> método geralmente acontece antes da chamada para o `ThisAddIn_Startup` método, o suplemento do VSTO não faça suposições sobre quando o <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> método será chamado ou quantas vezes ele será chamado.
+    > O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] faz chamadas separadas para o <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> método para cada interface de extensibilidade que tem suporte pelo aplicativo host. Embora a primeira chamada para o <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> método geralmente acontece antes da chamada para o `ThisAddIn_Startup` método, o suplemento do VSTO não faça suposições sobre quando o <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> método será chamado ou quantas vezes ele será chamado.
 
 11. O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] chama o `ThisAddIn_Startup` método no seu suplemento do VSTO. Esse método é o manipulador de eventos padrão para o <xref:Microsoft.Office.Tools.AddInBase.Startup> eventos. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
 

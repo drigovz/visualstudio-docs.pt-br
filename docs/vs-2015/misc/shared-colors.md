@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: 9d3186f3-07d2-441f-b33e-435e95d8a0b8
 caps.latest.revision: 11
 ms.author: brgeorge
-ms.openlocfilehash: c09419d1294d51fe0b566acc649bc3f9612acfca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 421ff85831bb611b655de2bc35f01423b61921a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436579"
 ---
 # <a name="shared-colors"></a>Cores compartilhadas
 Inserir introdução aqui.  
@@ -31,7 +31,7 @@ Inserir introdução aqui.
 - **Use cores do controle que são apropriadas para seu local.** Em alguns estados, alguns controles do Visual Studio não tem borda separada e cores de plano de fundo. Em vez disso, eles selecionam essas cores de superfícies de por trás delas. Certifique-se de que você sempre use os nomes de token que são apropriados para o local onde você está colocando o controle.  
   
 > [!IMPORTANT]
->  Não use tokens localizadas nas categorias de "Página inicial" ou "Cider"!  
+> Não use tokens localizadas nas categorias de "Página inicial" ou "Cider"!  
   
 ### <a name="command-structures"></a>Estruturas de comando  
   
@@ -240,7 +240,7 @@ Não use...
 ##### <a name="BKMK_CommandComboBox"></a> Caixa de combinação  
   
 > [!IMPORTANT]
->  Caixas de combinação são semelhantes às listas suspensas, mas incluam uma região de texto editável. Se sua lista suspensa não incluir uma região de texto editável, usar os tokens de cor encontrados em [suspensa](../misc/shared-colors.md#BKMK_CommandDropDown).  
+> Caixas de combinação são semelhantes às listas suspensas, mas incluam uma região de texto editável. Se sua lista suspensa não incluir uma região de texto editável, usar os tokens de cor encontrados em [suspensa](../misc/shared-colors.md#BKMK_CommandDropDown).  
   
  ![Corte de funcionários da caixa de combinação](../extensibility/ux-guidelines/media/0303-029-comboboxredline.png "0303 029_ComboBoxRedline")  
   
@@ -318,7 +318,7 @@ Não use...
 ##### <a name="BKMK_CommandDropDown"></a> Drop-down  
   
 > [!IMPORTANT]
->  Menus suspensos são semelhantes às caixas de combinação, mas não têm regiões de texto editável. Se o menu suspenso inclui uma região de texto editável, usar os tokens de cor encontrados em [caixa de combinação](../misc/shared-colors.md#BKMK_CommandComboBox).  
+> Menus suspensos são semelhantes às caixas de combinação, mas não têm regiões de texto editável. Se o menu suspenso inclui uma região de texto editável, usar os tokens de cor encontrados em [caixa de combinação](../misc/shared-colors.md#BKMK_CommandComboBox).  
   
  ![Remova&#45;corte de funcionários para baixo](../extensibility/ux-guidelines/media/0303-042-dropdownredline.png "0303 042_DropdownRedline")  
   

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f6a9b62c62b863448bb1333b162c6706c48cd72b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b5a4152d655dd36eb258ff6b378bf79f87123a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443834"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-document-using-a-button"></a>Passo a passo: Exibir texto em uma caixa de texto em um documento usando um botão
   Este passo a passo demonstra como usar os botões e caixas de texto em uma personalização no nível de documento para o Microsoft Office Word.
@@ -60,7 +60,7 @@ ms.locfileid: "60071753"
 2. Dos **controles comuns** guia da **caixa de ferramentas**, arraste um <xref:Microsoft.Office.Tools.Word.Controls.TextBox> controle ao documento.
 
    > [!NOTE]
-   >  No Word, os controles são descartados em linha com o texto por padrão. Você pode modificar os maneira como os controles e objetos shape são inseridos, alterando o padrão no **edite** guia da **opções** caixa de diálogo do Word.
+   > No Word, os controles são descartados em linha com o texto por padrão. Você pode modificar os maneira como os controles e objetos shape são inseridos, alterando o padrão no **edite** guia da **opções** caixa de diálogo do Word.
 
 3. Sobre o **modo de exibição** menu, clique em **janela propriedades**.
 

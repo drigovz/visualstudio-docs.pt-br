@@ -19,12 +19,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 91300aea88c86d0791db5bd73b91c3b5069ad607
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 581906741bb43eb221c6a0b6f6bb9aeccd2f3945
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424376"
 ---
 # <a name="uml-component-diagrams-reference"></a>Diagramas de componente UML: Referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ No Visual Studio, uma *diagrama de componente* mostra as partes de um design par
  Para obter mais informações sobre como usar diagramas de componente no processo de design, consulte [modelar a arquitetura do seu aplicativo](../modeling/model-your-app-s-architecture.md).  
 
 > [!NOTE]
->  Este tópico descreve os elementos que você pode usar em diagramas de componente. Para obter mais informações sobre como desenhar diagramas de componente detalhados consulte [diagramas de componente UML: Diretrizes de](../modeling/uml-component-diagrams-guidelines.md). Para obter mais informações sobre como desenhar diagramas de modelagem em geral, consulte [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
+> Este tópico descreve os elementos que você pode usar em diagramas de componente. Para obter mais informações sobre como desenhar diagramas de componente detalhados consulte [diagramas de componente UML: Diretrizes de](../modeling/uml-component-diagrams-guidelines.md). Para obter mais informações sobre como desenhar diagramas de modelagem em geral, consulte [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
 
 ## <a name="reading-component-diagrams"></a>Leitura de diagramas de componente  
  A tabela a seguir descreve os elementos que você pode usar em um diagrama de componente, junto com suas propriedades principais. Para obter uma lista completa das propriedades dos elementos, consulte [propriedades de elementos em diagramas de componente UML](../modeling/properties-of-elements-on-uml-component-diagrams.md).  

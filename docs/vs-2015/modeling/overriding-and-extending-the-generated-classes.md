@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34e40863883643955c4517337de5410f0745703d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a7b9733a47b4763a0f28ee4b24b54fdfd44bf066
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923359"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434997"
 ---
 # <a name="overriding-and-extending-the-generated-classes"></a>Substituindo e estendendo as classes geradas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Sua definição de DSL é uma plataforma na qual você pode criar um conjunto po
  `} }`  
   
 > [!NOTE]
->  Para substituir métodos em uma classe gerada, sempre escreva seu código em um arquivo separado dos arquivos gerados. Normalmente, o arquivo está contido em uma pasta chamada CustomCode. Se você fizer alterações no código gerado, eles serão perdidos quando você regenera o código da definição de DSL.  
+> Para substituir métodos em uma classe gerada, sempre escreva seu código em um arquivo separado dos arquivos gerados. Normalmente, o arquivo está contido em uma pasta chamada CustomCode. Se você fizer alterações no código gerado, eles serão perdidos quando você regenera o código da definição de DSL.  
   
  Para descobrir quais você pode substituir os métodos, digite **substituir** na classe, seguido por um espaço. A dica de ferramenta do IntelliSense informará quais métodos podem ser substituídos.  
   

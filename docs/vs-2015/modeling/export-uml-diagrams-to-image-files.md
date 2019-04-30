@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ebd8317af13ab542936b5f5d2f886b937bc6e65d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7c04b8bd4ab956fe60191237910db35e2e463d3e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442942"
 ---
 # <a name="export-uml-diagrams-to-image-files"></a>Exportar diagramas UML para arquivos de imagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Você pode exportar um documento de UML de [!INCLUDE[vsprvs](../includes/vsprvs-
  O código a seguir define um comando de menu de atalho, também conhecido como um comando de menu de contexto, que salva uma imagem em um arquivo.  
   
 > [!NOTE]
->  Para fazer com que esse código funcione como um comando de menu, você deve incorporá-la em um componente MEF. Para obter mais informações, consulte [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
+> Para fazer com que esse código funcione como um comando de menu, você deve incorporá-la em um componente MEF. Para obter mais informações, consulte [definir um comando de menu em um diagrama de modelagem](../modeling/define-a-menu-command-on-a-modeling-diagram.md).  
   
  O código usa o primeiro <xref:Microsoft.VisualStudio.ArchitectureTools.Extensibility.Presentation.IShape.GetObject%2A> para obter o <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> da implementação subjacente. Esse tipo tem um método <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.CreateBitmap%2A>.  
   

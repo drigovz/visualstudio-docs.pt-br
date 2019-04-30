@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 716e6141d9f5ae76773a47b81ae54f5d7b70a9ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4da615971004cb499fb6bab414517474c2bf6265
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104170"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445964"
 ---
 # <a name="unit-testing-a-visual-c-dll-for-store-apps"></a>Executar o teste de unidade de uma DLL do Visual C++ para aplicativos da Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -220,7 +220,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL em C++
     ```  
   
     > [!TIP]
-    >  É recomendável não alterar testes que tenham sido aprovados. Em vez disso, adicione um novo teste, atualize o código para que o teste seja aprovado e adicione outro teste, e assim por diante.  
+    > É recomendável não alterar testes que tenham sido aprovados. Em vez disso, adicione um novo teste, atualize o código para que o teste seja aprovado e adicione outro teste, e assim por diante.  
     >   
     >  Quando os usuários alterarem os respectivos requisitos, desabilite os testes que não estejam mais corretos. Escreva novos testes e faça-os funcionar, um por vez, da mesma maneira incremental.  
   
@@ -231,7 +231,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL em C++
      ![Falha em RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Verifique se os testes falham imediatamente após escrevê-los. Isso ajuda a impedir a facilidade de errar ao escrever um teste que nunca falha.  
+    > Verifique se os testes falham imediatamente após escrevê-los. Isso ajuda a impedir a facilidade de errar ao escrever um teste que nunca falha.  
   
 4. Aprimore o código sob teste para que o novo teste seja aprovado. Adicione o seguinte ao **RooterLib.cpp**:  
   
@@ -259,7 +259,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL em C++
      Ambos os testes são aprovados.  
   
 > [!TIP]
->  Desenvolva o código adicionando testes, um de cada vez. Verifique se todos os testes passaram após cada iteração.  
+> Desenvolva o código adicionando testes, um de cada vez. Verifique se todos os testes passaram após cada iteração.  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> Depurar um teste que falhou  
   
@@ -346,6 +346,6 @@ Este tópico descreve uma maneira de criar testes de unidade para uma DLL em C++
 2. Escolha **Executar Tudo** para testar o método refatorado e ter certeza de que você não introduziu uma regressão.  
   
     > [!TIP]
-    >  Um conjunto estável de testes de unidade aprovados garante que você não introduziu bugs quando alterou o código.  
+    > Um conjunto estável de testes de unidade aprovados garante que você não introduziu bugs quando alterou o código.  
     >   
     >  Mantenha a refatoração separada das outras alterações.

@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 6f793675d40c87e4c64c2a83d37327f5222d8d1f
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 8a84640f020a1ff255b8c7e5dd753752e0d310a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58144882"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446887"
 ---
 # <a name="idisperrorgetsource"></a>IDispError::GetSource
 Retorna o identificador programático do dependente de idioma para a classe ou um aplicativo que gerou o erro.  
@@ -50,7 +50,7 @@ HRESULT GetSource(
  Esse método é usado para determinar a classe ou um aplicativo onde ocorreu a exceção. O identificador programático pode ser retornado no idioma especificado pelo identificador de localidade (LCID) fornecido no momento da invocação.  
   
 > [!NOTE]
->  Este método não está implementado.  
+> Este método não está implementado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDispError](../../winscript/reference/idisperror-interface.md)

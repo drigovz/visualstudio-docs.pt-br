@@ -27,12 +27,12 @@ caps.latest.revision: 42
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f622440c5bd0f0d09967eff56479459a4a3bfbb0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 506425f4de218e258ca9a86bfad5154cbda5c223
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445037"
 ---
 # <a name="how-to-use-the-registers-window"></a>Como: Usar a janela registros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ A janela registros estará disponível somente se a depuração do nível de end
  Para obter uma introdução de alto nível para conceitos por trás de registros e a janela registros, consulte [Noções básicas de depuração: Janela de registros](../debugger/debugging-basics-registers-window.md).  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-display-the-registers-window"></a>Para exibir a janela Registros  
   
@@ -55,7 +55,7 @@ A janela registros estará disponível somente se a depuração do nível de end
      O depurador deve estar em execução ou no modo de interrupção.  
   
     > [!NOTE]
-    >  As informações de registro não estão disponíveis para scripts ou aplicativos SQL.  
+    > As informações de registro não estão disponíveis para scripts ou aplicativos SQL.  
   
 ## <a name="see-also"></a>Consulte também  
  [Noções básicas de depuração: Janela registros](../debugger/debugging-basics-registers-window.md)   

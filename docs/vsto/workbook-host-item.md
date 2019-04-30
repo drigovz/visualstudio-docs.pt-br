@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b8ffe18ea3407480faa69a6b9b3ba4309b28b279
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e30ab9ce498134426caa35e0c3c9f9652f683535
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56625251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445539"
 ---
 # <a name="workbook-host-item"></a>Item de host da pasta de trabalho
   O <xref:Microsoft.Office.Tools.Excel.Workbook> item de host é um tipo que estende o <xref:Microsoft.Office.Interop.Excel.Workbook> o tipo do assembly de interoperabilidade primário para o Excel. O <xref:Microsoft.Office.Tools.Excel.Workbook> item de host fornece todas as mesmas propriedades, métodos e eventos como um <xref:Microsoft.Office.Interop.Excel.Workbook> objeto, mas ele também fornece recursos adicionais.
@@ -49,7 +49,7 @@ ms.locfileid: "56625251"
  O <xref:Microsoft.Office.Tools.Excel.Workbook> item de host não age como um contêiner para controles de host. Portanto, você não pode adicionar todos os controles visíveis na pasta de trabalho, mas você pode adicionar componentes, como um <xref:System.Data.DataSet>, de modo que os componentes podem ser compartilhados por todas as planilhas. Em um projeto de nível de documento, os componentes disponíveis para a pasta de trabalho podem ser encontrados na **componente** guia, **dados** guia, e **todos os formulários do Windows** guia o  **Caixa de ferramentas**.
 
 > [!NOTE]
->  As ferramentas de desenvolvimento do Office no Visual Studio não dão suporte a pastas de trabalho compartilhadas.
+> As ferramentas de desenvolvimento do Office no Visual Studio não dão suporte a pastas de trabalho compartilhadas.
 
 ## <a name="understand-workbook-host-items-in-vsto-add-in-projects"></a>Entender os itens de host da pasta de trabalho em projetos de suplemento do VSTO
  Em projetos de suplemento do VSTO, você pode gerar um <xref:Microsoft.Office.Tools.Excel.Workbook> item de host em tempo de execução para qualquer pasta de trabalho que está aberto no Excel. Para gerar uma <xref:Microsoft.Office.Tools.Excel.Workbook> item de host, use o `GetVstoObject` método. Para obter mais informações, consulte [documentos de estender o Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).

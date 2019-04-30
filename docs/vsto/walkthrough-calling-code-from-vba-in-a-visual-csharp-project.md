@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f4f71bbc725d6c9f9fe90f0e4421892fa34ed886
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 46f88b47e135331e5f1dc010aa4a73abed520f51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438654"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>Passo a passo: Chamar o código do VBA em um projeto do Visual c#
   Este passo a passo demonstra como chamar um método em uma personalização no nível de documento do Microsoft Office Excel no Visual Basic para código Applications (VBA) na pasta de trabalho. O procedimento envolve três etapas básicas: adicionar um método para o `Sheet1` classe de item de host, expõem o método ao código VBA na pasta de trabalho e, em seguida, chame o método do código VBA na pasta de trabalho.
@@ -48,7 +48,7 @@ ms.locfileid: "60082263"
 - Chamando o método do código do VBA.
 
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
@@ -71,7 +71,7 @@ ms.locfileid: "60082263"
 3. Na faixa de opções, clique no **desenvolvedor** guia.
 
     > [!NOTE]
-    >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 4. No **código** , clique em **Visual Basic**.
 
@@ -209,7 +209,7 @@ ms.locfileid: "60082263"
  Agora você pode chamar o `CreateVstoNamedRange` método do código VBA na pasta de trabalho.
 
 > [!NOTE]
->  Neste passo a passo, você adicionará código VBA na pasta de trabalho durante a depuração do projeto. O código do VBA que você adicionar a este documento será substituído na próxima vez que você compila o projeto, porque o Visual Studio substitui o documento na pasta de saída de compilação com uma cópia do documento da pasta do projeto principal. Se você deseja salvar o código do VBA, você pode copiar no documento na pasta do projeto. Para obter mais informações, consulte [combinar o VBA e personalizações no nível de documento](../vsto/combining-vba-and-document-level-customizations.md).
+> Neste passo a passo, você adicionará código VBA na pasta de trabalho durante a depuração do projeto. O código do VBA que você adicionar a este documento será substituído na próxima vez que você compila o projeto, porque o Visual Studio substitui o documento na pasta de saída de compilação com uma cópia do documento da pasta do projeto principal. Se você deseja salvar o código do VBA, você pode copiar no documento na pasta do projeto. Para obter mais informações, consulte [combinar o VBA e personalizações no nível de documento](../vsto/combining-vba-and-document-level-customizations.md).
 
 ### <a name="to-call-the-method-from-vba-code"></a>Para chamar o método do código do VBA
 

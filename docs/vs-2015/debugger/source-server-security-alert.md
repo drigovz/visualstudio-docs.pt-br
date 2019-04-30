@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 76d61520bf17ad3230a437c295de387a910f808f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cc7c68fe767d2add0842e30f66c51a3dcc84905f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922542"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447293"
 ---
 # <a name="source-server-security-alert"></a>Alerta de segurança do servidor de origem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Ao usar o Servidor de Origem, use somente os arquivos de símbolo que forem de u
  Este aviso aparece quando você ativa o suporte do servidor de origem. Os comandos do servidor de origem são inseridos nos arquivos de símbolo de depuração (arquivos de PDB). Verifique se você sabe de onde vêm seus arquivos PDB.  
   
 > [!IMPORTANT]
->  As seguintes ameaças potenciais de segurança devem ser levadas em conta ao usar o servidor de origem: Comandos arbitrários podem ser inseridos no arquivo PDB do aplicativo, portanto, certifique-se de que colocar somente aqueles que deseja executar no arquivo SRCSRV. ini. Qualquer tentativa de executar um comando que não esteja no arquivo srcsvr.ini fará com que uma caixa de diálogo de confirmação seja exibida. Para obter mais informações, consulte [aviso de segurança: O depurador deve executar o comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Nenhuma validação é feita em parâmetros de comando, portanto, tenha cuidado com comandos confiáveis. Por exemplo, se você confiar no cmd.exe, um usuário mal-intencionado pode especificar parâmetros que tornariam o comando perigoso.  
+> As seguintes ameaças potenciais de segurança devem ser levadas em conta ao usar o servidor de origem: Comandos arbitrários podem ser inseridos no arquivo PDB do aplicativo, portanto, certifique-se de que colocar somente aqueles que deseja executar no arquivo SRCSRV. ini. Qualquer tentativa de executar um comando que não esteja no arquivo srcsvr.ini fará com que uma caixa de diálogo de confirmação seja exibida. Para obter mais informações, consulte [aviso de segurança: O depurador deve executar o comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Nenhuma validação é feita em parâmetros de comando, portanto, tenha cuidado com comandos confiáveis. Por exemplo, se você confiar no cmd.exe, um usuário mal-intencionado pode especificar parâmetros que tornariam o comando perigoso.  
   
 ## <a name="see-also"></a>Consulte também  
  [Especificar arquivos de símbolo (.pdb) e de origem](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)   

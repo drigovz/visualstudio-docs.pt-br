@@ -24,12 +24,12 @@ caps.latest.revision: 91
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b9744cf6d3ff8be30d06ffa877f96940fd20a24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffb29ee31390c512802bfd16c7b94333d0c6c403
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055243"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433420"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>Procurar e reorganizar mapas de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -103,7 +103,7 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
 - Um link agregado representa todas as relações de ponto na mesma direção entre dois grupos.  
   
 > [!TIP]
->  Por padrão, o mapa mostra os links de grupo cruzado apenas para nós selecionados. Para alterar esse comportamento para mostrar ou ocultar links agregados entre grupos, clique em **Layout** no código da barra de ferramentas do mapa e escolha **avançado**, em seguida, **Mostrar todos os Links de grupo cruzado** ou **Ocultar todos os Links de grupo cruzado**. Ver [ocultar ou Mostrar nós e links](#HidingShowing) para obter mais detalhes.  
+> Por padrão, o mapa mostra os links de grupo cruzado apenas para nós selecionados. Para alterar esse comportamento para mostrar ou ocultar links agregados entre grupos, clique em **Layout** no código da barra de ferramentas do mapa e escolha **avançado**, em seguida, **Mostrar todos os Links de grupo cruzado** ou **Ocultar todos os Links de grupo cruzado**. Ver [ocultar ou Mostrar nós e links](#HidingShowing) para obter mais detalhes.  
   
 |**To**|**Execute estas etapas**|  
 |------------|-----------------------------|  
@@ -118,7 +118,7 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
  Ocultar nós os impede de participar de algoritmos de layout. Por padrão, links de grupo cruzado permanecem ocultos. Links de grupo cruzado são links individuais que conectam nós entre os grupos. Quando os grupos são recolhidos, o mapa agrega todos os links de grupo cruzado em links únicos entre grupos. Quando você expande um grupo e seleciona nós dentro do grupo, os links de grupo cruzado são exibidos e mostram as dependências nesse grupo.  
   
 > [!CAUTION]
->  Antes de compartilhar um mapa que foi criado no Visual Studio Enterprise com aqueles que usam o Visual Studio Professional, certifique-se reexibir todos os nós ou links de grupo cruzado que você deseja que outras pessoas vejam. Do contrário, os usuários não poderão reexibir esses itens.  
+> Antes de compartilhar um mapa que foi criado no Visual Studio Enterprise com aqueles que usam o Visual Studio Professional, certifique-se reexibir todos os nós ou links de grupo cruzado que você deseja que outras pessoas vejam. Do contrário, os usuários não poderão reexibir esses itens.  
   
 ### <a name="to-hide-or-show-nodes"></a>Para ocultar ou mostrar nós  
   
@@ -153,7 +153,7 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
  Você pode exibir mais ou menos itens em um mapa para fazer uma busca detalhada ou para simplificar o mapa. Você também pode renomear itens e adicionar comentários aos itens.  
   
 > [!CAUTION]
->  Antes de compartilhar um mapa que foi criado usando o Visual Studio Enterprise com aqueles que usam Visual Professional, verifique se quaisquer elementos de código que você deseja que outras pessoas vejam estão visíveis no mapa. Caso contrário, os usuários não poderão recuperar os elementos de código excluído.  
+> Antes de compartilhar um mapa que foi criado usando o Visual Studio Enterprise com aqueles que usam Visual Professional, verifique se quaisquer elementos de código que você deseja que outras pessoas vejam estão visíveis no mapa. Caso contrário, os usuários não poderão recuperar os elementos de código excluído.  
   
 ### <a name="add-a-node-for-a-code-element"></a>Adicionar um nó para um elemento de código  
   
@@ -267,7 +267,7 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
 3. Se a lista não inclui a categoria ou propriedade, escolha **+** no **legenda** caixa e, em seguida, escolha **propriedade nó**, **categoria do nó** , **Vincular a propriedade**, ou **vincular categoria**. Em seguida, escolha a categoria ou propriedade. A categoria ou propriedade aparece agora o **legenda** caixa.  
   
     > [!NOTE]
-    >  Para criar e atribuir uma categoria ou uma propriedade a um elemento de código, você pode editar o arquivo. dgml do mapa; ver [mapas de código de personalizar, editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
+    > Para criar e atribuir uma categoria ou uma propriedade a um elemento de código, você pode editar o arquivo. dgml do mapa; ver [mapas de código de personalizar, editando os arquivos DGML](../modeling/customize-code-maps-by-editing-the-dgml-files.md).  
   
 4. No **legenda** caixa, clique no ícone ao lado de categoria ou propriedade que você adicionou ou você deseja alterar.  
   
@@ -290,7 +290,7 @@ Reorganize itens em mapas de código para torná-los mais fáceis de ler e melho
     |Cor específica ou ícone|Abra a categoria ou a lista de valores da propriedade. Selecione uma cor ou um ícone.|  
   
     > [!NOTE]
-    >  Você pode reorganizar, excluir ou Inativar temporariamente estilos na **legenda** caixa. Ver [editar a caixa legenda](#ModifyLegend).  
+    > Você pode reorganizar, excluir ou Inativar temporariamente estilos na **legenda** caixa. Ver [editar a caixa legenda](#ModifyLegend).  
   
 ## <a name="ModifyLegend"></a> Editar a caixa de legenda  
  Você pode reorganizar, excluir ou Inativar temporariamente estilos na **legenda** caixa:  

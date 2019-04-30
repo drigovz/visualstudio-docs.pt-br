@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3b2421a8c1002e8fed1830a9de51383c35c01393
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ecfd329e0e5c096e6e0c2011b60cd97dcd1c2937
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059221"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433814"
 ---
 # <a name="beginners-guide-to-performance-profiling"></a>Guia do iniciante à criação de perfil do desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Use as Ferramentas de Criação de Perfil do Visual Studio para analisar problem
  Se a **Amostragem** não fornecer os dados que você precisa, outros métodos de coleção das ferramentas de criação de perfil fornecem diferentes tipos de informações que poderão ser úteis. Para obter mais informações sobre esses métodos, confira [Como: Escolher métodos de coleta](../profiling/how-to-choose-collection-methods.md).  
   
 > [!TIP]
->  Ao analisar o código que chama as funções do Windows, você deverá verificar se tem os arquivos .pdb mais recentes. Sem esses arquivos, as exibições de relatório listarão nomes de funções do Windows criptografadas e difíceis de entender. Para obter mais informações sobre como verificar se você tem os arquivos necessários, confira [Como: Informações de símbolo de referência Windows](../profiling/how-to-reference-windows-symbol-information.md).  
+> Ao analisar o código que chama as funções do Windows, você deverá verificar se tem os arquivos .pdb mais recentes. Sem esses arquivos, as exibições de relatório listarão nomes de funções do Windows criptografadas e difíceis de entender. Para obter mais informações sobre como verificar se você tem os arquivos necessários, confira [Como: Informações de símbolo de referência Windows](../profiling/how-to-reference-windows-symbol-information.md).  
   
 ## <a name="Step1"></a> Criar e executar uma sessão de desempenho  
  Para obter os dados que precisa analisar, você deve primeiro criar uma sessão de desempenho e, em seguida, executar a sessão. O **Assistente de Desempenho** permite executar esses dois procedimentos.  
@@ -46,7 +46,7 @@ Use as Ferramentas de Criação de Perfil do Visual Studio para analisar problem
 1. Abra a solução no Visual Studio. Defina a configuração como Versão. (Localize a caixa **Configurações da Solução** na barra de ferramentas, que é definida como **Depurar**, por padrão. Altere-a para **Versão**.)  
   
     > [!IMPORTANT]
-    >  Se você não for um administrador do computador que está usando, execute o Visual Studio como um administrador enquanto estiver usando o criador de perfil. (Clique com o botão direito do mouse no ícone do aplicativo do Visual Studio e, em seguida, clique em **Executar como administrador**.  
+    > Se você não for um administrador do computador que está usando, execute o Visual Studio como um administrador enquanto estiver usando o criador de perfil. (Clique com o botão direito do mouse no ícone do aplicativo do Visual Studio e, em seguida, clique em **Executar como administrador**.  
   
 2. No menu **Depurar**, clique em **Criador de Perfil de Desempenho**.  
   

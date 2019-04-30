@@ -11,12 +11,12 @@ ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 caps.latest.revision: 53
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cc12854574f21c1d75f57bae592d6a504db9b189
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9099bc79a555f908ddda12dc9da83f015791fd86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087556"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444826"
 ---
 # <a name="adding-a-tool-window"></a>Adicionando uma janela de ferramentas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Neste passo a passo, você aprenderá como criar uma janela de ferramenta e inte
 1. Crie um projeto chamado **FirstToolWin** usando o modelo VSIX e adicionar um modelo de item da janela de ferramenta personalizada denominado **FirstToolWindow**.  
   
     > [!NOTE]
-    >  Para obter mais informações sobre como criar uma extensão com uma janela de ferramentas, consulte [criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md).  
+    > Para obter mais informações sobre como criar uma extensão com uma janela de ferramentas, consulte [criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md).  
   
 ## <a name="add-a-control-to-the-tool-window"></a>Adicionar um controle para a janela da ferramenta  
   
@@ -264,7 +264,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
      É o primeiro parâmetro nomeado `Style` e seu valor é `Tabbed`, que significa que a janela será uma guia em uma janela existente. A posição de encaixe é especificada pelo `Window` parâmetro, n neste caso, o GUID do **Gerenciador de soluções**.  
   
     > [!NOTE]
-    >  Para obter mais informações sobre os tipos de janelas no IDE, consulte <xref:EnvDTE.vsWindowType>.  
+    > Para obter mais informações sobre os tipos de janelas no IDE, consulte <xref:EnvDTE.vsWindowType>.  
   
 ## <a name="testing-the-tool-window"></a>Testando a janela da ferramenta  
   

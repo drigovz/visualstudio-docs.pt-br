@@ -11,12 +11,12 @@ ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
 caps.latest.revision: 35
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 56aeb6a43cea18513a422741289a08a5b7c901c5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f060f6c49fc02c75b3fe9f792133c9ee88c6d56c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441598"
 ---
 # <a name="command-availability"></a>Disponibilidade de comando
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ O contexto do Visual Studio determina quais comandos estão disponíveis. O cont
 3. Ativar e desativar os GUIDs de contexto chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> método.  
   
     > [!CAUTION]
-    >  Certifique-se de que o VSPackage não afeta nenhum contexto existente GUIDs porque pode depender de outros VSPackages neles.  
+    > Certifique-se de que o VSPackage não afeta nenhum contexto existente GUIDs porque pode depender de outros VSPackages neles.  
   
 ## <a name="see-also"></a>Consulte também  
  [Objetos de contexto de seleção](../../extensibility/internals/selection-context-objects.md)   

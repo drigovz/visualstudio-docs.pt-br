@@ -12,20 +12,20 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fcdd4e2253652246e3d0cb3fcd829c8e5d7786bf
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 2b3138e148ea44371c7bd9b5fb82c583cd00e832
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869909"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436420"
 ---
 # <a name="create-sharepoint-solutions"></a>Criar soluções do SharePoint
-  Você pode criar aplicativos do SharePoint no Visual Studio como uma alternativa a criá-los no SharePoint Designer. O Visual Studio promove rápido desenvolvimento do SharePoint, fornecendo recursos como ferramentas avançadas de depuração, IntelliSense, conclusão da instrução e modelos de projeto. Visual Studio também aproveita ferramentas avançadas com base no .NET Framework e linguagens. Você pode desenvolver projetos do SharePoint usando o Visual Basic ou Visual C#, e você pode desenvolver aplicativos para projetos SharePoint usando JavaScript.
+  Você pode criar aplicativos do SharePoint no Visual Studio como uma alternativa a criá-los no SharePoint Designer. O Visual Studio promove rápido desenvolvimento do SharePoint, fornecendo recursos como ferramentas avançadas de depuração, IntelliSense, conclusão da instrução e modelos de projeto. Visual Studio também aproveita ferramentas avançadas com base no .NET Framework e linguagens. Você pode desenvolver projetos do SharePoint usando o Visual Basic ou Visual c#, e você pode desenvolver aplicativos para projetos SharePoint usando JavaScript.
 
  Para obter informações sobre os suplementos do SharePoint e SharePoint 2013, consulte [SharePoint 2013](https://products.office.com/previous-versions/microsoft-sharepoint-2013) e [crie aplicativos para o SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins).
 
 > [!NOTE]
->  Saiba como usar a nova [modelo de suplemento do SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) para estender a experiência do SharePoint para seus usuários. Esses suplementos têm superfície muito pequenas em comparação com soluções do SharePoint, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
+> Saiba como usar a nova [modelo de suplemento do SharePoint](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) para estender a experiência do SharePoint para seus usuários. Esses suplementos têm superfície muito pequenas em comparação com soluções do SharePoint, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
 
 |||
 |-|-|

@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d4f53d723ca9249386027264038df6c5895b7d03
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a60a44a20c06c24645583db4e16ce60cef166554
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441642"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Trabalhar com várias contas de usuário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Se você tem várias contas da Microsoft e/ou contas corporativas ou de estudant
 2. Clique com o botão direito no nó do projeto no Gerenciador de soluções e escolha **Add > serviço conectado**. O assistente Adicionar Serviço Conectado é exibido e mostra a lista de serviços na conta do Azure associada à sua ID de logon do Visual Studio. Observe que você não precisa entrar separadamente no Azure. No entanto, é necessário entrar nas outras contas na primeira vez que você tentar acessar os recursos delas de um determinado computador.  
   
     > [!WARNING]
-    >  Se esta for a primeira vez que você está criando um aplicativo da Store no Visual Studio 2015 em um computador específico, você será solicitado a habilitar o dispositivo para o modo de desenvolvimento acessando **configurações &#124; . Segurança e atualizações &#124; para desenvolvedores** em seu computador. Para obter mais informações, consulte [Habilitar seu dispositivo para desenvolvimento](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
+    > Se esta for a primeira vez que você está criando um aplicativo da Store no Visual Studio 2015 em um computador específico, você será solicitado a habilitar o dispositivo para o modo de desenvolvimento acessando **configurações &#124; . Segurança e atualizações &#124; para desenvolvedores** em seu computador. Para obter mais informações, consulte [Habilitar seu dispositivo para desenvolvimento](https://msdn.microsoft.com/library/windows/apps/dn706236.aspx).  
   
 ### <a name="access_azure"></a> Acessar o Azure Active Directory em um projeto Web  
  O Azure AD habilita o suporte para o logon única do usuário final em aplicativos Web ASP.NET MVC ou autenticação AD nos serviços de API Web. A autenticação de domínio é diferente da autenticação de conta de usuário individual. Os usuários que têm acesso ao seu domínio do Active Directory podem usar suas contas existentes do Azure AD para conectar-se aos aplicativos Web. Os aplicativos do Office 365 também podem usar a autenticação de domínio. Para ver isso em ação, crie um aplicativo Web (**Arquivo > Novo Projeto > C# > Nuvem > Aplicativo Web ASP.NET**). Na caixa de diálogo Novo Projeto ASP.NET escolha **Alterar Autenticação**. O assistente de autenticação aparece e habilita você a escolher o tipo de autenticação a ser usado em seu aplicativo.  

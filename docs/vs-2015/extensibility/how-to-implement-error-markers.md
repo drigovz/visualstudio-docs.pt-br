@@ -10,12 +10,12 @@ ms.assetid: e8e78514-5720-4fc2-aa43-00b6af482e38
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 00a2f5e4e405ff2cba7275cd4c1310db850632b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2af9e0765fb5bc73a35bebfc2f50f5d2a41122d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435965"
 ---
 # <a name="how-to-implement-error-markers"></a>Como: Implementar o marcador de erros
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Marcadores de erro (ou ondulados vermelhos) são as personalizações do editor 
 1. Em uma exibição que está sendo filtrada, o filtro obtém um ponteiro para o provedor de tarefas associado aos dados do modo de exibição.  
   
     > [!NOTE]
-    >  Você pode usar o mesmo filtro de comando para dicas de método, preenchimento de declaração, marcadores de erro e assim por diante.  
+    > Você pode usar o mesmo filtro de comando para dicas de método, preenchimento de declaração, marcadores de erro e assim por diante.  
   
 2. Quando o filtro recebe um evento indicando que você tenha movido para outra linha, uma tarefa é criada para verificar se há erros.  
   
@@ -59,4 +59,4 @@ Marcadores de erro (ou ondulados vermelhos) são as personalizações do editor 
  [Usar marcadores de texto com a API herdada](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Como: Adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)   
  [Como: Criar marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)   
- [Como: Usar marcadores de texto](../extensibility/how-to-use-text-markers.md)
+ [Como: usar marcadores de texto](../extensibility/how-to-use-text-markers.md)

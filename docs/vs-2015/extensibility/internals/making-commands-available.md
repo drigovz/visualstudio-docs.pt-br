@@ -13,12 +13,12 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 caps.latest.revision: 36
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 78561db4bbf9517cc3fbcd5d9ac6ca36fcafbe05
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cab4244fbf9173895159a4b104260006fc93f0c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071220"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436257"
 ---
 # <a name="making-commands-available"></a>Disponibilizando comandos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ Quando vários VSPackages são adicionados ao Visual Studio, a interface do usu�
 - Ativar o contexto `GUID`s e desativar (chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> método).  
   
     > [!CAUTION]
-    >  Certifique-se de que o VSPackage não afeta o estado de qualquer contexto existente GUID porque pode depender de outros VSPackages neles.  
+    > Certifique-se de que o VSPackage não afeta o estado de qualquer contexto existente GUID porque pode depender de outros VSPackages neles.  
   
 ## <a name="example"></a>Exemplo  
  O exemplo a seguir de um comando de VSPackage demonstra a visibilidade dinâmica de um comando que é gerenciado pelo contextos de comando sem carregar o VSPackage.  

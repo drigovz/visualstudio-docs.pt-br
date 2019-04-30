@@ -8,12 +8,12 @@ ms.assetid: a859595f-6517-43f2-9d61-c706cb55a388
 caps.latest.revision: 25
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5289804eb85b9af4fff090f98cc97f8d2c9ec676
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d3854f4844fba3b3c1a0a519f06d59d31c4f7072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100398"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445888"
 ---
 # <a name="using-different-web-browsers-with-coded-ui-tests"></a>Usando navegadores diferentes com testes de interface do usuário codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
  **Gravando:** Você deve usar o Construtor de teste de IU codificado para registrar o teste do aplicativo Web usando o Internet Explorer. Opcionalmente, você pode adicionar validação e código personalizado para os controles testados usando um conjunto predefinido de propriedades como você faria normalmente para testes de IU codificados. Para obter mais informações, confira [Uso da automação da interface do usuário para testar o código](../test/use-ui-automation-to-test-your-code.md).  
   
 > [!NOTE]
->  Você não pode gravar testes de IU codificados usando os navegadores Google Chrome ou Mozilla Firefox.  
+> Você não pode gravar testes de IU codificados usando os navegadores Google Chrome ou Mozilla Firefox.  
   
  **Reprodução com o Internet Explorer:** Quando nenhum navegador é especificado, os testes são executados no Internet Explorer por padrão. Você pode declarar explicitamente o navegador a ser usado ao definir a propriedade **BrowserWindow.CurrentBrowser** no seu código de teste. Para o Internet Explorer, essa propriedade deve ser definida como **IE** ou **Internet Explorer**.  
   
@@ -76,7 +76,7 @@ Os testes de IU codificados podem automatizar testes para aplicativos Web gravan
 3. Realce a extensão e escolha **Baixar**.  
   
    > [!TIP]
-   >  Você também pode baixar os componentes Selenium para testes de IU codificados entre navegadores [aqui](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
+   > Você também pode baixar os componentes Selenium para testes de IU codificados entre navegadores [aqui](http://visualstudiogallery.msdn.microsoft.com/11cfc881-f8c9-4f96-b303-a2780156628d/).  
   
    Para obter mais informações sobre a criação e o uso de testes de IU codificados, confira [Criação de testes de IU codificados](../test/use-ui-automation-to-test-your-code.md#VerifyingCodeUsingCUITCreate).  
   

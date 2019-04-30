@@ -23,12 +23,12 @@ caps.latest.revision: 48
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c7161d8115f8cc99f830293cdf5f957a2264f5a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d7d4524f1839179ac253265d95f191caf1c50af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445679"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>Como: Adicionar ou remover referências usando o Gerenciador de referências
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -99,7 +99,7 @@ ms.locfileid: "60041176"
 - Você deve evitar adicionar referências de arquivo às saídas de outro projeto na mesma solução, porque essa ação poderá causar erros de compilação. Em vez disso, use a guia **Projetos** da caixa de diálogo **Adicionar Referência** para criar referências projeto a projeto. Essa ação facilita o desenvolvimento em equipe, permitindo um melhor gerenciamento das bibliotecas de classes criadas nos projetos. Para obter mais informações, consulte [Solução de problemas de referências desfeitas](../ide/troubleshooting-broken-references.md).  
   
 - > [!NOTE]
-    >  No Visual Studio 2015, uma referência de arquivo, em vez de uma referência de projeto é criada se a versão de destino do .NET Framework de um projeto é a versão 4.5, e a versão de destino de outro projeto é a versão 2, 3, 3.5 ou 4.0.  
+    > No Visual Studio 2015, uma referência de arquivo, em vez de uma referência de projeto é criada se a versão de destino do .NET Framework de um projeto é a versão 4.5, e a versão de destino de outro projeto é a versão 2, 3, 3.5 ou 4.0.  
   
 #### <a name="to-display-an-assembly-in-the-add-reference-dialog-box"></a>Para exibir um assembly na caixa de diálogo Adicionar Referência  
   
@@ -181,7 +181,7 @@ ms.locfileid: "60041176"
  O SDK é uma coleção de arquivos que o Visual Studio trata como um único componente. Na guia Extensões, os SDKs que se aplicam ao projeto do qual a caixa de diálogo **Gerenciador de Referências** foi invocada são listados como entradas únicas. Quando adicionado a um projeto, todo o conteúdo do SDK é consumido pelo Visual Studio de modo que o usuário não precisa realizar uma ação adicional para aproveitar os conteúdos do SDK no IntelliSense, na caixa de ferramentas, no designer, no Pesquisador de Objetos, na criação, implantação, depuração nem nos pacotes. Para obter informações sobre como exibir o SDK na guia Extensões, consulte [Criando um Software Development Kit](../extensibility/creating-a-software-development-kit.md).  
   
 > [!NOTE]
->  Se um projeto referencia o SDK que depende de outro SDK, o Visual Studio não consumirá o segundo SDK a menos que o usuário adicione manualmente uma referência ao segundo SDK. Quando um usuário escolhe um SDK na guia **Extensões**, a caixa de diálogo **Gerenciador de Referências** ajuda o usuário a identificar dependências do SDK listando não apenas o nome e a versão do SDK, mas também o nome de todas as dependências do SDK no painel de detalhes. Se um usuário não observar as dependências e adicionar somente aquele SDK, o MSBuild solicitará que o usuário adicione dependências.  
+> Se um projeto referencia o SDK que depende de outro SDK, o Visual Studio não consumirá o segundo SDK a menos que o usuário adicione manualmente uma referência ao segundo SDK. Quando um usuário escolhe um SDK na guia **Extensões**, a caixa de diálogo **Gerenciador de Referências** ajuda o usuário a identificar dependências do SDK listando não apenas o nome e a versão do SDK, mas também o nome de todas as dependências do SDK no painel de detalhes. Se um usuário não observar as dependências e adicionar somente aquele SDK, o MSBuild solicitará que o usuário adicione dependências.  
   
  Se um tipo de projeto não der suporte a **Extensões**, a guia não será exibida na caixa de diálogo **Gerenciador de Referências**.  
   
@@ -207,7 +207,7 @@ ms.locfileid: "60041176"
     ```  
   
     > [!NOTE]
-    >  Se você adicionar a propriedade, a compilação pode ficar mais lenta.  
+    > Se você adicionar a propriedade, a compilação pode ficar mais lenta.  
   
 ## <a name="recent"></a>Recente  
  Assemblies, COM, Windows e Navegador suportam uma guia Recente, que enumera a lista de componentes adicionados recentemente aos projetos.  

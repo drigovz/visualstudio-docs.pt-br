@@ -20,12 +20,12 @@ caps.latest.revision: 10
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b03f7c69e5eac71f9edc790df31d9704a141e590
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 313c189a05ae2a4e338c6f6bb9d7e9341e34284c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446122"
 ---
 # <a name="quickstart-debug-javascript-using-the-console"></a>Guia de início rápido: Depurar JavaScript usando o console
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 - [Alternar o contexto de execução do script](#Switching)  
   
 > [!TIP]
->  Se a janela do Console do JavaScript estiver fechada, escolha **Debug**>**Windows** > **Console do JavaScript** para abri-la novamente. A janela só aparece durante uma sessão de depuração de script.  
+> Se a janela do Console do JavaScript estiver fechada, escolha **Debug**>**Windows** > **Console do JavaScript** para abri-la novamente. A janela só aparece durante uma sessão de depuração de script.  
   
  Usando a janela Console do JavaScript, você pode interagir com seu aplicativo sem parar e reiniciar o depurador. Para obter mais informações, consulte [atualizar um aplicativo (JavaScript)](../debugger/refresh-an-app-javascript.md). Para obter informações sobre outro recursos, como usando o Explorador do DOM e configuração de pontos de interrupção, de depuração de JavaScript consulte [guia de início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [depurar aplicativos no Visual Studio](../debugger/debug-store-apps-in-visual-studio.md).  
   
@@ -67,7 +67,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
  As seguintes etapas criam um aplicativo `FlipView` e mostram como depurar interativamente um erro de codificação JavaScript.  
   
 > [!CAUTION]
->  O aplicativo de exemplo é um aplicativo da Windows Store. No entanto, os recursos de console descritos aqui também se aplicam a aplicativos criados usando ferramentas do Visual Studio para Apache Cordova.  
+> O aplicativo de exemplo é um aplicativo da Windows Store. No entanto, os recursos de console descritos aqui também se aplicam a aplicativos criados usando ferramentas do Visual Studio para Apache Cordova.  
   
 #### <a name="to-debug-javascript-code-in-the-flipview-app"></a>Para depurar o código JavaScript no aplicativo FlipView  
   
@@ -182,7 +182,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
      Copie e cole esse código no aviso de entrada do console JavaScript.  
   
     > [!TIP]
-    >  Quando você cola um código de várias linhas no prompt de entrada do Console do JavaScript, o prompt de entrada do console alterna automaticamente para o modo de várias linhas. Você pode pressionar Ctrl+Alt+M para ativar e desativar o modo de várias linhas. Para executar um script no modo de várias linhas, pressione Ctrl+Enter ou escolha o símbolo de seta no canto inferior direito da janela. Para obter mais informações, consulte [modo de linha única e modo multilinha na janela do Console do JavaScript](#SinglelineMultilineMode).  
+    > Quando você cola um código de várias linhas no prompt de entrada do Console do JavaScript, o prompt de entrada do console alterna automaticamente para o modo de várias linhas. Você pode pressionar Ctrl+Alt+M para ativar e desativar o modo de várias linhas. Para executar um script no modo de várias linhas, pressione Ctrl+Enter ou escolha o símbolo de seta no canto inferior direito da janela. Para obter mais informações, consulte [modo de linha única e modo multilinha na janela do Console do JavaScript](#SinglelineMultilineMode).  
   
 12. Corrija as chamadas de função `push` no prompt, substituindo `pages.push` por `Data.items.setAt`. O código corrigido deve ter esta aparência:  
   
@@ -193,7 +193,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
     ```  
   
     > [!TIP]
-    >  Se você quiser usar o objeto `pages` em vez de `Data.items`, será necessário definir um ponto de interrupção em seu código para manter o objeto `pages` no escopo.  
+    > Se você quiser usar o objeto `pages` em vez de `Data.items`, será necessário definir um ponto de interrupção em seu código para manter o objeto `pages` no escopo.  
   
 13. Escolha o símbolo de seta verde para executar o script.  
   

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d8da1446682c36549440e9b9e38ce110e0b35ba
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e2683c3a2ea80aad341b7fab4fb35d13ea5379c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56614813"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429047"
 ---
 # <a name="solution-configuration"></a>Configuração da solução
 Configurações da solução armazenam propriedades de nível de solução. Eles direcionam o comportamento do **inicie** chave (F5) e **Build** comandos. Por padrão, esses comandos criaram e iniciar a configuração de depuração. Ambos os comandos são executados no contexto de uma configuração de solução. Isso significa que o usuário pode esperar F5 para iniciar e seja qual for a solução ativa é configurada por meio das configurações de compilação. O ambiente foi projetado para otimizar para soluções em vez de projetos, quando se trata de criação e execução.
@@ -23,7 +23,7 @@ Configurações da solução armazenam propriedades de nível de solução. Eles
  A barra de ferramentas padrão do Visual Studio contém um botão de início e uma lista suspensa à direita do botão Iniciar configuração da solução. Essa lista permite aos usuários escolher a configuração a ser iniciado quando F5 é pressionado, criar suas próprias configurações de solução ou editar uma configuração existente.
 
 > [!NOTE]
->  Não há nenhuma interface de extensibilidade para criar ou editar as configurações da solução. Você deve usar `DTE.SolutionBuilder`. No entanto, há APIs de extensibilidade para gerenciar a compilação da solução. Para obter mais informações, consulte <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
+> Não há nenhuma interface de extensibilidade para criar ou editar as configurações da solução. Você deve usar `DTE.SolutionBuilder`. No entanto, há APIs de extensibilidade para gerenciar a compilação da solução. Para obter mais informações, consulte <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>.
 
  Aqui está como você pode implementar as configurações de solução com suporte pelo seu tipo de projeto:
 

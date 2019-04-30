@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 628620005c43ae465107e43572684cb74c8d1aa9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c088078ce594ab1333eb4ec2316e120cc153ced
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440379"
 ---
 # <a name="actions-pane-overview"></a>Visão geral do painel de ações
   Um painel de ações é um personalizável **ações do documento** painel de tarefas que está anexado a um documento específico do Microsoft Office Word ou uma pasta de trabalho do Microsoft Office Excel. O painel de ações está hospedado dentro do painel de tarefas do Office, juntamente com outros painéis de tarefas interna, como o **origem XML** painel de tarefas no Excel ou o **estilos e formatação** painel de tarefas no Word. Você pode usar controles dos Windows Forms ou controles do WPF para projetar a interface de usuário do painel Ações.
@@ -30,7 +30,7 @@ ms.locfileid: "60099735"
  Você pode criar um painel de ações somente em uma personalização no nível de documento para Word ou Excel. Você não pode criar um painel de ações em um suplemento do VSTO. Para obter mais informações, consulte [recursos disponíveis por tipo de projeto e aplicativo do Office](../vsto/features-available-by-office-application-and-project-type.md).
 
 > [!NOTE]
->  O painel de ações é diferente de painéis de tarefas personalizados. Painéis de tarefas personalizados estão associados com o aplicativo, não é um documento específico. Você pode criar painéis de tarefas personalizados no VSTO Add-ins para alguns aplicativos do Microsoft Office. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
+> O painel de ações é diferente de painéis de tarefas personalizados. Painéis de tarefas personalizados estão associados com o aplicativo, não é um documento específico. Você pode criar painéis de tarefas personalizados no VSTO Add-ins para alguns aplicativos do Microsoft Office. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
 
  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Usar controles do WPF dentro de um painel de ações do Excel? ](http://go.microsoft.com/fwlink/?LinkId=132763).
 
@@ -50,7 +50,7 @@ ms.locfileid: "60099735"
 2. Adicionar controles Windows Forms para o <xref:System.Windows.Forms.UserControl> usando o designer, ou escrevendo código.
 
    > [!NOTE]
-   >  Você também pode adicionar controles do WPF para o painel de ações, adicionando um WPF <xref:System.Windows.Controls.UserControl> para o Windows Forms <xref:System.Windows.Forms.UserControl>. Para obter mais informações, consulte [controla o uso de WPF em soluções do Office](../vsto/using-wpf-controls-in-office-solutions.md).
+   > Você também pode adicionar controles do WPF para o painel de ações, adicionando um WPF <xref:System.Windows.Controls.UserControl> para o Windows Forms <xref:System.Windows.Forms.UserControl>. Para obter mais informações, consulte [controla o uso de WPF em soluções do Office](../vsto/using-wpf-controls-in-office-solutions.md).
 
 3. Adicionar uma instância do controle de usuário personalizadas para os controles que estão contidos na `ActionsPane` campo do `ThisWorkbook` (para Excel) ou `ThisDocument` (para o Word) de classe em seu projeto.
 
@@ -141,7 +141,7 @@ ms.locfileid: "60099735"
  [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
 
 > [!NOTE]
->  Os usuários finais podem reposicionar o painel de tarefas manualmente a qualquer momento. Não há nenhuma maneira de garantir que o painel de tarefas permanecerão ancorado na posição em que você indicar programaticamente. No entanto, você pode verificar as alterações de orientação e certifique-se de que os controles no painel de ações são empilhados na direção correta. Para obter mais informações, confira [Como: Gerenciar o layout do controle em painéis de ações](../vsto/how-to-manage-control-layout-on-actions-panes.md).
+> Os usuários finais podem reposicionar o painel de tarefas manualmente a qualquer momento. Não há nenhuma maneira de garantir que o painel de tarefas permanecerão ancorado na posição em que você indicar programaticamente. No entanto, você pode verificar as alterações de orientação e certifique-se de que os controles no painel de ações são empilhados na direção correta. Para obter mais informações, confira [Como: Gerenciar o layout do controle em painéis de ações](../vsto/how-to-manage-control-layout-on-actions-panes.md).
 
  Definindo o <xref:Microsoft.Office.Tools.ActionsPane.Top%2A> e <xref:Microsoft.Office.Tools.ActionsPane.Left%2A> propriedades da <xref:Microsoft.Office.Tools.ActionsPane> não altera sua posição porque o <xref:Microsoft.Office.Tools.ActionsPane> objeto é inserido no painel de tarefas.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3ca6fc205585d832f4dadc5f4ce4709a71c7b6fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c2aef08695d2cea04d23a343d318680bc53f44c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432595"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>Organizar objetos em contêineres de layout no XAML Designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Imagine o local em que você deseja que os objetos apareçam, tais como imagens,
  Esta página descreve painéis de layout e controles e conduz a vídeos curtos que ajudarão a introduzi-los.  
   
 > [!NOTE]
->  Alguns dos vídeos podem se referir ao Blend ou ao Expression Blend, que usam o mesmo Designer XAML do Visual Studio e do Blend for Visual Studio.  
+> Alguns dos vídeos podem se referir ao Blend ou ao Expression Blend, que usam o mesmo Designer XAML do Visual Studio e do Blend for Visual Studio.  
   
 ## <a name="layout-panels"></a>Painéis de layout  
  Comece a página escolhendo um destes painéis de layout. A página pode ter mais de um. Por exemplo, é possível iniciar com um painel de layout em **Grade** e, em seguida, adicionar um **StackPanel** a uma área na **Grade** para organizar os controles verticalmente nesse elemento.  

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 745fea2ebaba478d9c405ab51db607e5eb025cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 65ada4a061fd928a074c9fcdb24fab60a277c457
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445847"
 ---
 # <a name="customizing-the-model-explorer"></a>Personalizando o Gerenciador de Modelos
 Você pode alterar a aparência e comportamento do explorer para o seu designer de linguagem específica do domínio da seguinte maneira:
@@ -59,7 +59,7 @@ Você pode alterar a aparência e comportamento do explorer para o seu designer 
     O Explorer deve mostrar três **ator** nós que têm seu ícone.
 
 > [!NOTE]
->  Se você tiver definido um ícone de nó para qualquer elemento que é exibido no Gerenciador de gerado, todos os nós de explorer exibirá o ícone. Se nenhum ícone tiver sido definido, os nós exibirá o ícone padrão.
+> Se você tiver definido um ícone de nó para qualquer elemento que é exibido no Gerenciador de gerado, todos os nós de explorer exibirá o ícone. Se nenhum ícone tiver sido definido, os nós exibirá o ícone padrão.
 
 ## <a name="changing-the-name-displayed-on-an-explorer-node"></a>Alterando o nome exibido em um nó no Explorer
  Você pode alterar como os nomes de elementos de modelo são exibidos no seu Explorador. O procedimento a seguir mostra como exibir o nome da **tarefa** que é referenciado por uma **comentário** no nó de comentário.

@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2e9cef8726ad690508948ac0a9878df1bd85c96e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b78c409a761a98439cbbbfdf088e052eca745f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922274"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444471"
 ---
 # <a name="properties-of-domain-roles"></a>Propriedades de funções de domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ As propriedades na tabela a seguir estão associadas com uma função de domíni
 |Nome de exibição de propriedade|O nome que é exibido no designer gerado para a propriedade de função gerado.|O valor ajustado da propriedade nome da propriedade.|  
   
 > [!NOTE]
->  O valor padrão de um nome de exibição baseia-se no valor da propriedade associado inserindo espaços antes de cada caractere maiusculo, que é precedido por um caractere em minúscula e que não é seguido por outro caractere maiusculo.  
+> O valor padrão de um nome de exibição baseia-se no valor da propriedade associado inserindo espaços antes de cada caractere maiusculo, que é precedido por um caractere em minúscula e que não é seguido por outro caractere maiusculo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Propriedades de relacionamentos de domínios](../modeling/properties-of-domain-relationships.md)

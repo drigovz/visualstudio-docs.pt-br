@@ -16,21 +16,21 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c693b85eb7441749300181da8108dae353e91ad1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 72f00a5235ac30c65c16da2fd5ef1d900779dbac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089361"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436457"
 ---
 # <a name="upgrade-and-migrate-office-solutions"></a>Atualizar e migrar soluções do Office
   Se você tiver um projeto do Microsoft Office que foi criado em uma versão anterior do Visual Studio, você deve atualizar o projeto para usá-lo nas versões atuais do Visual Studio. Para atualizar um projeto do Microsoft Office, abra-o em uma versão do Visual Studio que inclui o Microsoft Office developer tools. Para obter mais informações sobre as versões do Visual Studio que incluem o Microsoft Office developer tools, consulte [configurar um computador para desenvolver soluções do Office](../vsto/configuring-a-computer-to-develop-office-solutions.md).
 
 > [!NOTE]
->  Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
+> Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
 
 > [!NOTE]
->  Visual Studio não pode atualizar projetos de modelo de formulário do InfoPath que foram criados usando versões anteriores do Visual Studio. Não há suporte para esses tipos de projetos na versão atual do Visual Studio.
+> Visual Studio não pode atualizar projetos de modelo de formulário do InfoPath que foram criados usando versões anteriores do Visual Studio. Não há suporte para esses tipos de projetos na versão atual do Visual Studio.
 
 ## <a name="changes-to-upgraded-projects"></a>Alterações em projetos atualizados
  Quando você atualiza um projeto do Microsoft Office, o Visual Studio modifica o projeto para direcionar os itens a seguir:
@@ -56,7 +56,7 @@ ms.locfileid: "60089361"
  Quando você atualiza um projeto do Visual Studio 2013, Visual Studio modifica o projeto para qualquer um de destino a [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ou o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. A versão do .NET framework destinada pelo projeto depende de qual versão do Office está instalada em seu computador. Se [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] é instalado, o Visual Studio modifica o projeto tenha como destino o [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]. Caso contrário, o Visual Studio modifica o projeto tenha como destino o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)].
 
 > [!NOTE]
->  Talvez seja necessário executar algumas etapas adicionais para executar uma solução redirecionada em desenvolvimento e os computadores dos usuários finais, e seu projeto não serão mais compilados se usar determinados recursos. Para obter mais informações, consulte [soluções do Office de migrar para o .NET Framework 4 ou posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).
+> Talvez seja necessário executar algumas etapas adicionais para executar uma solução redirecionada em desenvolvimento e os computadores dos usuários finais, e seu projeto não serão mais compilados se usar determinados recursos. Para obter mais informações, consulte [soluções do Office de migrar para o .NET Framework 4 ou posterior](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md).
 
  Se você destinar a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior em um projeto do Office, você pode usar alguns recursos que não estão disponíveis quando você tem como alvo o .NET Framework 3.5. Para obter mais informações, consulte [Design e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md).
 
@@ -66,12 +66,12 @@ ms.locfileid: "60089361"
  Projetos do Office no Visual Studio 2013 podem direcionar [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] e [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] aplicativos. Visual Studio modifica o projeto para direcionar para a versão mais recente do office que você instalou. Se nenhuma dessas versões do Office estiver instalada, o Visual Studio não atualiza o projeto.
 
 > [!NOTE]
->  Se você atualizar um projeto de suplemento do VSTO para destino [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ou posterior, certifique-se de que o `ThisAddIn_Startup` manipulador de eventos do que o suplemento do VSTO não contém código que acessa um documento no aplicativo. Para obter mais informações, consulte [acessa um documento quando inicia o aplicativo do Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
+> Se você atualizar um projeto de suplemento do VSTO para destino [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] ou posterior, certifique-se de que o `ThisAddIn_Startup` manipulador de eventos do que o suplemento do VSTO não contém código que acessa um documento no aplicativo. Para obter mais informações, consulte [acessa um documento quando inicia o aplicativo do Office](../vsto/programming-vsto-add-ins.md#AccessingDocuments).
 
  Para personalizações de nível de documento [!INCLUDE[vs_current_short](../sharepoint/includes/vs-current-short-md.md)] converte os documentos em um projeto que têm um formato binário, como documentos que tenham uma *. xls* ou *. doc* extensão, no formato Office Open XML. Para obter mais informações sobre o Open XML, consulte [Introdução às novas extensões de nome de arquivo e o Open XML formatos](https://support.office.com/en-nz/article/Introduction-to-new-file-name-extensions-eca81dcb-5626-4e5b-8362-524d13ae4ec1).
 
 > [!NOTE]
->  Marcas inteligentes foram preteridas no Excel 2010 e o Word 2010. Portanto, se sua solução usar marcas inteligentes, você deve removê-los antes de testar e depurá-lo no Visual Studio 2013 ou Visual Studio 2015.
+> Marcas inteligentes foram preteridas no Excel 2010 e o Word 2010. Portanto, se sua solução usar marcas inteligentes, você deve removê-los antes de testar e depurá-lo no Visual Studio 2013 ou Visual Studio 2015.
 
 ## <a name="upgrade-microsoft-office-2003-projects"></a>Atualizar projetos do Microsoft Office 2003
  Há algumas considerações adicionais para atualizar personalizações em nível de documento e suplementos do VSTO que se destinam a Microsoft Office 2003.

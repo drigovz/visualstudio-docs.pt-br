@@ -20,12 +20,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba3ee5d8ee04b4a0f2cd360d6b213c69c6f8d1bc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: cb1747341de65a5f642790410c35eee35620575e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442709"
 ---
 # <a name="how-to-stop-code-changes"></a>Como: Parar alterações de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "58929335"
 Quando Editar e Continuar estiver no processo de aplicar alterações de código, você poderá interromper a operação.  
   
 > [!CAUTION]
->  Parar alterações de código em código gerenciado pode produzir resultados inesperados. Aplicar alterações a código gerenciado é geralmente um processo rápido, então raramente há necessidade de parar alterações de código em código gerenciado.  
+> Parar alterações de código em código gerenciado pode produzir resultados inesperados. Aplicar alterações a código gerenciado é geralmente um processo rápido, então raramente há necessidade de parar alterações de código em código gerenciado.  
   
 ### <a name="to-stop-applying-code-changes"></a>Para parar de aplicar alterações de código  
   

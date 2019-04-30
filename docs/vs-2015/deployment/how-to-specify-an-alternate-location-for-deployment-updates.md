@@ -16,12 +16,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6fafeeb386e1dd40067620d529cb25023d3f0f29
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9040c55b2298d18d1c87e652f76950f771bd14f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087931"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437650"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>Como: Especificar um local alternativo para as atualizações de implantação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60087931"
 Você pode instalar seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo inicialmente a partir de um CD ou um compartilhamento de arquivos, mas o aplicativo deve verificar se há atualizações periódicas na Web. Você pode especificar um local alternativo para atualizações em seu manifesto de implantação para que seu aplicativo pode se atualizar da Web após sua instalação inicial.  
   
 > [!NOTE]
->  Seu aplicativo deve ser configurado para instalar localmente para usar esse recurso. Para obter mais informações, confira [Passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Além disso, se você instalar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo de rede, configuração de um local alternativo faz com que [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] para usar esse local para a instalação inicial e todas as atualizações subsequentes. Se você instalar o aplicativo localmente (por exemplo, a partir de um CD), a instalação inicial é executada usando a mídia original e todas as atualizações subsequentes usarão o local alternativo.  
+> Seu aplicativo deve ser configurado para instalar localmente para usar esse recurso. Para obter mais informações, confira [Passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Além disso, se você instalar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo de rede, configuração de um local alternativo faz com que [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] para usar esse local para a instalação inicial e todas as atualizações subsequentes. Se você instalar o aplicativo localmente (por exemplo, a partir de um CD), a instalação inicial é executada usando a mídia original e todas as atualizações subsequentes usarão o local alternativo.  
   
 ### <a name="specifying-an-alternate-location-for-updates-by-using-mageuiexe-windows-forms-based-utility"></a>Especificando um local alternativo para atualizações usando o MageUI.exe (utilitário baseado em Windows Forms)  
   
@@ -56,7 +56,7 @@ Você pode instalar seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] a
 3. Salve o arquivo.  
   
     > [!NOTE]
-    >  Agora, você precisa assinar novamente o arquivo com Mage.exe. Para obter mais informações, confira [Passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
+    > Agora, você precisa assinar novamente o arquivo com Mage.exe. Para obter mais informações, confira [Passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 ## <a name="net-framework-security"></a>Segurança do .NET Framework  
  Se você instalar o aplicativo de uma mídia offline como um CD, e o computador está online, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] primeiro verifica a URL especificada pelo `<deploymentProvider>` marca no manifesto de implantação para determinar se o local de atualização contém uma versão mais recente das aplicativo. Se isso acontecer, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] instala o aplicativo diretamente a partir daí, em vez do diretório de instalação inicial, e o common language runtime (CLR) determina a relação de confiança do seu aplicativo usando o nível `<deploymentProvider>`. Se o computador estiver offline, ou `<deploymentProvider>` estiver inacessível, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] instalações do CD e o CLR concede confiança com base no ponto de instalação; para uma instalação com CD, isso significa que seu aplicativo recebe confiança total. Todas as atualizações subsequentes herdará esse nível de confiança.  

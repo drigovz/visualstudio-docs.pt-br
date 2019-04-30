@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: be0b661c85165ff348eccf7d55507ce228100091
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 208ff7f9bbfc2d07669a8b485edffc8dfc4cd54f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437796"
 ---
 # <a name="command-line-capture-tool"></a>Ferramenta de captura de linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ DXCap.exe –info
  No modo de validação, `events` especifica o conjunto de eventos gráficos cujos resultados imediatos são comparados. Por exemplo, `-examine present,draw,copy,clear` limita a comparação aos eventos que pertencem a essas categorias.  
   
 > [!TIP]
->  É recomendável iniciar com `-examine present,draw,copy,clear` porque isso irá revelar a maioria dos problemas, mas leva muito menos tempo que um conjunto mais abrangente de eventos. Se necessário, você pode especificar um conjunto diferente ou maior de eventos para validar tais eventos e revelar outros tipos de problemas.  
+> É recomendável iniciar com `-examine present,draw,copy,clear` porque isso irá revelar a maioria dos problemas, mas leva muito menos tempo que um conjunto mais abrangente de eventos. Se necessário, você pode especificar um conjunto diferente ou maior de eventos para validar tais eventos e revelar outros tipos de problemas.  
   
  `-haltonfail`  
  No modo de validação, `-haltonfail` interrompe a validação quando são detectadas diferenças entre o hardware e o renderizador WARP. A validação continua após uma tecla ser pressionada.  
@@ -140,7 +140,7 @@ DXCap.exe –c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.co
  O comando no exemplo acima captura informações de gráficos da versão da área de trabalho do Internet Explorer ao exibir a página da Web localizada em www.fishgl.com que usa a API WebGL para renderizar conteúdo 3D.  
   
 > [!NOTE]
->  Como argumentos de linha de comando que aparecem após o aplicativo são passados a ele, você deve especificar os argumentos destinados ao DXCap.exe antes de usar a opção `–c`.  
+> Como argumentos de linha de comando que aparecem após o aplicativo são passados a ele, você deve especificar os argumentos destinados ao DXCap.exe antes de usar a opção `–c`.  
   
 ### <a name="capture-graphics-information-from-a-windows-store-app"></a>Capturar as informações gráficas de um aplicativo da Windows Store.  
  Você pode capturar as informações gráficas de um aplicativo da Windows Store.  

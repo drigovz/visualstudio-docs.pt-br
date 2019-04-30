@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 702c671922d8ea7a1552504be062b7b31de16a09
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d1373339fac4768e2af1eda5770d5058ae8078
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053930"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446599"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow-into-visual-studio"></a>Passo a passo: Importar um fluxo de trabalho reutilizável do SharePoint Designer no Visual Studio
   Este passo a passo demonstra como importar um fluxo de trabalho reutilizável criado no SharePoint Designer 2010 em um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] o projeto de fluxo de trabalho do SharePoint.
@@ -124,7 +124,7 @@ ms.locfileid: "60053930"
  Porque [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] pode importar somente *wsp* arquivos, você deve salvar o fluxo de trabalho reutilizável, como um *. wsp* de arquivo e implantá-lo no SharePoint antes de importá-lo em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)].
 
 > [!IMPORTANT]
->  Se você receber um erro de tempo de execução executar o procedimento a seguir, você precisa executar o procedimento em um sistema que tem acesso ao site do SharePoint.
+> Se você receber um erro de tempo de execução executar o procedimento a seguir, você precisa executar o procedimento em um sistema que tem acesso ao site do SharePoint.
 
 #### <a name="to-save-and-deploy-the-reusable-workflow"></a>Para salvar e implantar o fluxo de trabalho reutilizável
 
@@ -170,7 +170,7 @@ ms.locfileid: "60053930"
 6. No **especifique a nova origem do projeto** página, navegue até o local no sistema onde você salvou anteriormente a *. wsp* do arquivo, abra o arquivo e, em seguida, escolha o **próxima** botão.
 
    > [!NOTE]
-   >  Escolha o **terminar** botão para importar todos os itens disponíveis na *. wsp* arquivo.
+   > Escolha o **terminar** botão para importar todos os itens disponíveis na *. wsp* arquivo.
 
     Isso exibe uma lista de fluxos de trabalho reutilizáveis disponíveis para a importação.
 
@@ -256,7 +256,7 @@ ms.locfileid: "60053930"
 12. No **iniciar um novo fluxo de trabalho** , escolha o link para **teste de fluxo de trabalho SPD**e, em seguida, escolha o **iniciar** botão para iniciar o fluxo de trabalho.
 
     > [!NOTE]
-    >  Como alternativa, você pode auto-associação um fluxo de trabalho com uma lista executando o Assistente de configurações de fluxo de trabalho e definindo o fluxo de trabalho para associar automaticamente.
+    > Como alternativa, você pode auto-associação um fluxo de trabalho com uma lista executando o Assistente de configurações de fluxo de trabalho e definindo o fluxo de trabalho para associar automaticamente.
 
      Observe que duas ações são executadas pelo fluxo de trabalho: seu nome é exibido na tarefa de **atribuído a** coluna e um aviso será exibida a **anúncios** lista.
 

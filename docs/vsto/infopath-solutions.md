@@ -18,28 +18,28 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 674050711e69ae97c7e1faa361122bee0d755ae7
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: c7342524d1e7682fd088c4f7ea44037a32c220e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621143"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441750"
 ---
 # <a name="infopath-solutions"></a>Soluções InfoPath
   Visual Studio fornece modelos de projeto, que você pode usar para criar suplementos do VSTO para o Microsoft Office InfoPath 2013 e InfoPath 2010. O InfoPath não está disponível no Office 2016.
 
 > [!NOTE]
->  Você pode ainda criar um suplemento do VSTO para InfoPath, mesmo se você tiver instalado o Office 2016. Instale apenas o InfoPath 2013 ou Office 2013 lado a lado com o Office 2016.
+> Você pode ainda criar um suplemento do VSTO para InfoPath, mesmo se você tiver instalado o Office 2016. Instale apenas o InfoPath 2013 ou Office 2013 lado a lado com o Office 2016.
 
  [!INCLUDE[appliesto_infoallapp](../vsto/includes/appliesto-infoallapp-md.md)]
 
 > [!NOTE]
->  Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
+> Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
 
  Suplementos do VSTO para InfoPath são semelhantes do VSTO Add-ins para outros aplicativos do Microsoft Office. Esses tipos de soluções consistem em um assembly que é carregado pelo aplicativo. Os usuários finais podem ter acesso à funcionalidade desse assembly, independentemente de qual formulário ou modelo é aberto. Para obter mais informações sobre o VSTO Add-ins, consulte [começar a programar VSTO Add-ins](../vsto/getting-started-programming-vsto-add-ins.md) e [arquitetura do VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 > [!NOTE]
->  Visual Studio 2015 não inclui os projetos de modelo de formulário do InfoPath que foram fornecidos nas versões anteriores do Visual Studio. Você também não é possível usar o Visual Studio 2015 para abrir ou editar um projeto de modelo de formulário do InfoPath que foi criado em uma versão anterior do Visual Studio. No entanto, você pode abrir e editar um projeto de modelo de formulário do InfoPath usando Visual Studio Tools for Applications. Para obter mais informações, consulte [trabalhar com projetos do VSTO 2008 no InfoPath 2010.](http://go.microsoft.com/fwlink/?LinkID=218903).
+> Visual Studio 2015 não inclui os projetos de modelo de formulário do InfoPath que foram fornecidos nas versões anteriores do Visual Studio. Você também não é possível usar o Visual Studio 2015 para abrir ou editar um projeto de modelo de formulário do InfoPath que foi criado em uma versão anterior do Visual Studio. No entanto, você pode abrir e editar um projeto de modelo de formulário do InfoPath usando Visual Studio Tools for Applications. Para obter mais informações, consulte [trabalhar com projetos do VSTO 2008 no InfoPath 2010.](http://go.microsoft.com/fwlink/?LinkID=218903).
 
 ## <a name="automate-infopath-by-using-an-add-in"></a>Automatizar o InfoPath usando um suplemento
  Para acessar o modelo de objeto do InfoPath em um Add-in do VSTO do Office criado usando ferramentas de desenvolvimento do Office no Visual Studio, use o `Application` campo do `ThisAddIn` classe em seu projeto. O `Application` campo retorna um <xref:Microsoft.Office.Interop.InfoPath.Application> objeto que representa a instância atual do InfoPath. Para obter mais informações, consulte [suplementos do VSTO do programa](../vsto/programming-vsto-add-ins.md).

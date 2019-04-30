@@ -11,23 +11,23 @@ ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7effa937a8faa0a238f8be2505ddf47223010bc1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b7e710cec4536a5a1327580e56c60cb23ca36f4c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039943"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436367"
 ---
-# <a name="how-to-debug-a-custom-debug-engine"></a>Como: Depurar um mecanismo de depuração personalizado
+# <a name="how-to-debug-a-custom-debug-engine"></a>Como: depurar um mecanismo de depuração personalizado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 O mecanismo de depuração (DES) é iniciado de um tipo de projeto na <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> método. Isso significa que a Alemanha é iniciada sob o controle da instância do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] controlar o tipo de projeto. No entanto, essa instância do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] não é possível depurar o DE. A seguir estão as etapas para permitir a depuração DE seu personalizado.  
   
 > [!NOTE]
->  :     No procedimento "Depurando uma personalizada mecanismo de depuração", você deve aguardar o DE iniciar antes que você pode anexar a ela. Se você colocar uma caixa de mensagem no início do seu DE que aparece quando o DE é iniciado, você pode anexar nesse momento e, em seguida, desmarque a caixa de mensagem para continuar. Dessa forma, você pode capturar todos os eventos DE.  
+> :     No procedimento "Depurando uma personalizada mecanismo de depuração", você deve aguardar o DE iniciar antes que você pode anexar a ela. Se você colocar uma caixa de mensagem no início do seu DE que aparece quando o DE é iniciado, você pode anexar nesse momento e, em seguida, desmarque a caixa de mensagem para continuar. Dessa forma, você pode capturar todos os eventos DE.  
   
 > [!WARNING]
->  Você deve ter a depuração remota instalados antes de tentar os procedimentos a seguir. Ver [depuração remota](../../debugger/remote-debugging.md) para obter detalhes.  
+> Você deve ter a depuração remota instalados antes de tentar os procedimentos a seguir. Ver [depuração remota](../../debugger/remote-debugging.md) para obter detalhes.  
   
 ### <a name="debugging-a-custom-debug-engine"></a>Depuração de um mecanismo de depuração personalizado  
   

@@ -8,12 +8,12 @@ ms.assetid: 4f4b5f10-7314-4725-8c6e-e72f52eff918
 caps.latest.revision: 16
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 02c819ee0311066fb2a4e543213faaedfee5a2ad
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d532234e50177222c3165638c0d77a8bd7c1b142
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109407"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437970"
 ---
 # <a name="writing-unit-tests-for-cc-with-the-microsoft-unit-testing-framework-for-c"></a>Escrevendo teste de unidade para C/C++ com o Microsoft Unit Testing Framework para C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -247,7 +247,7 @@ No Visual Studio, você pode criar testes de unidade para código não gerenciad
     ```  
   
     > [!TIP]
-    >  É recomendável não alterar testes que tenham sido aprovados. Em vez disso, adicione um novo teste, atualize o código para que o teste seja aprovado e adicione outro teste, e assim por diante.  
+    > É recomendável não alterar testes que tenham sido aprovados. Em vez disso, adicione um novo teste, atualize o código para que o teste seja aprovado e adicione outro teste, e assim por diante.  
     >   
     >  Quando os usuários alterarem os respectivos requisitos, desabilite os testes que não estejam mais corretos. Escreva novos testes e faça-os funcionar, um por vez, da mesma maneira incremental.  
   
@@ -258,7 +258,7 @@ No Visual Studio, você pode criar testes de unidade para código não gerenciad
      ![Falha em RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Verifique se os testes falham imediatamente após escrevê-los. Isso ajuda a impedir a facilidade de errar ao escrever um teste que nunca falha.  
+    > Verifique se os testes falham imediatamente após escrevê-los. Isso ajuda a impedir a facilidade de errar ao escrever um teste que nunca falha.  
   
 3. Aprimore o código em teste para que o novo teste seja aprovado:  
   
@@ -286,7 +286,7 @@ No Visual Studio, você pode criar testes de unidade para código não gerenciad
      ![Gerenciador de Testes de Unidade &#45; Teste de intervalo aprovado](../test/media/utecpp12.png "UteCpp12")  
   
     > [!TIP]
-    >  Desenvolva o código adicionando testes, um de cada vez. Verifique se todos os testes passaram após cada iteração.  
+    > Desenvolva o código adicionando testes, um de cada vez. Verifique se todos os testes passaram após cada iteração.  
   
 ### <a name="debug"></a> Depurar um teste que falhou  
   
@@ -361,7 +361,7 @@ No Visual Studio, você pode criar testes de unidade para código não gerenciad
      ![Todos os testes foram aprovados](../test/media/ute-ult-alltestspass.png "UTE_ULT_AllTestsPass")  
   
 > [!TIP]
->  Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o botão de alternância ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.  
+> Se os testes individuais não tiverem dependências que os impeçam de serem executados em qualquer ordem, ative a execução de teste em paralelo com o botão de alternância ![UTE&#95;parallelicon&#45;small](../test/media/ute-parallelicon-small.png "UTE_parallelicon-small") na barra de ferramentas. Isso pode reduzir consideravelmente o tempo necessário para executar todos os testes.  
   
 ### <a name="refactor"></a> Refatorar o código sem alterar os testes  
   
@@ -378,7 +378,7 @@ No Visual Studio, você pode criar testes de unidade para código não gerenciad
 2. Compile a solução e escolha **Executar Todos** para verificar se você não introduziu nenhum erro.  
   
     > [!TIP]
-    >  Um bom conjunto de testes de unidade garante que você não introduza bugs ao alterar o código.  
+    > Um bom conjunto de testes de unidade garante que você não introduza bugs ao alterar o código.  
     >   
     >  Mantenha a refatoração separada das outras alterações.  
   

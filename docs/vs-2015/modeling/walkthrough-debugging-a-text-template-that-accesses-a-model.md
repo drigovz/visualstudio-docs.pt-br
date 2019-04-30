@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: eb5a9e6806c76cbb072090c35444d936ce50bb79
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b589050c156e4c3d1e322bfa5996364016cbe38e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446726"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>Passo a passo: Depurando um modelo de texto que acessa um modelo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60087112"
 Quando você modificar ou adicionar modelos de texto em uma solução de linguagem específica de domínio, você pode receber erros quando o mecanismo transforma o modelo de código-fonte ou quando ele compila o código gerado. A instrução a seguir demonstra algumas das coisas que você pode fazer para depurar um modelo de texto.  
   
 > [!NOTE]
->  Para obter mais informações sobre o texto modelos em geral, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md). Para obter mais informações sobre a depuração de modelos de texto, consulte [passo a passo: Depurando um modelo de texto](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
+> Para obter mais informações sobre o texto modelos em geral, consulte [geração de código e modelos de texto T4](../modeling/code-generation-and-t4-text-templates.md). Para obter mais informações sobre a depuração de modelos de texto, consulte [passo a passo: Depurando um modelo de texto](http://msdn.microsoft.com/library/5c3fd3b7-c110-4e86-a22f-d5756be6b94f).  
   
 ## <a name="creating-a-domain-specific-language-solution"></a>Criando uma solução de linguagem específica do domínio  
  Neste procedimento, você deve criar uma solução de linguagem específica de domínio que tem as seguintes características:  
@@ -58,7 +58,7 @@ Quando você modificar ou adicionar modelos de texto em uma solução de linguag
 1. Substitua o código no DebugTest.tt com o código a seguir:  
   
     > [!NOTE]
-    >  O código contém um erro. Apresentando o erro para depurá-lo.  
+    > O código contém um erro. Apresentando o erro para depurá-lo.  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  
@@ -122,7 +122,7 @@ Quando você modificar ou adicionar modelos de texto em uma solução de linguag
 1. Substitua o código no DebugTest.tt com o código a seguir:  
   
     > [!NOTE]
-    >  O código contém um erro. Apresentando o erro para depurá-lo.  
+    > O código contém um erro. Apresentando o erro para depurá-lo.  
   
     ```csharp  
     <#@ template language="C#" inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>  

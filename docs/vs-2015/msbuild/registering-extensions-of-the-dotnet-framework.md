@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3cea1375b59b791c7c81c79be0a462d5eb690776
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: a5963faa5acb72ab0c94ca6b346456d83276e361
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445236"
 ---
 # <a name="registering-extensions-of-the-net-framework"></a>Registrando extensões do .NET Framework
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Você pode desenvolver um assembly que estende uma versão específica do .NET F
  Registre essa pasta usando esta chave: HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\. Forneça esse valor padrão à chave: C:\TreyResearch\Extensions4.  
   
 > [!NOTE]
->  O número de build da versão do .NET Framework pode ser diferente.  
+> O número de build da versão do .NET Framework pode ser diferente.  
   
  Para registrar um assembly de 32 bits em um computador de 64 bits, use o nó Wow6432, por exemplo: HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\\.NETFramework\v4.0.21006\AssemblyFoldersEx\TreyResearch\\.  
   

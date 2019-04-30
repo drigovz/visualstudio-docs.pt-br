@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 18ca5e0cbf341f27454377c544e20cd2aba1388f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f56d51817491726e6011e965bfd6d68630bb0dbf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60044258"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441796"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>Como: Anexar extensões de código gerenciado para documentos
   Você pode anexar a um assembly de personalização a um documento existente do Microsoft Office Word ou uma pasta de trabalho do Microsoft Office Excel. O documento ou pasta de trabalho pode ser qualquer formato que oferece suporte a projetos do Microsoft Office e as ferramentas de desenvolvimento no Visual Studio. Para obter mais informações, consulte [arquitetura de personalizações no nível do documento](../vsto/architecture-of-document-level-customizations.md).
@@ -28,7 +28,7 @@ ms.locfileid: "60044258"
  Para anexar uma personalização a um documento do Word ou Excel, use o <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> método da <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe. Porque o <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe é projetada para ser executado em um computador que não tenha o Microsoft Office instalado, você pode usar esse método em soluções que não estão diretamente relacionadas ao desenvolvimento do Microsoft Office (como um console ou aplicativo Windows Forms).
 
 > [!NOTE]
->  A personalização não conseguirá carregar se o código espera que os controles que não tenha o documento especificado.
+> A personalização não conseguirá carregar se o código espera que os controles que não tenha o documento especificado.
 
  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Anexar ou desanexar um assembly do VSTO a partir de um documento do Word? ](http://go.microsoft.com/fwlink/?LinkId=136782).
 

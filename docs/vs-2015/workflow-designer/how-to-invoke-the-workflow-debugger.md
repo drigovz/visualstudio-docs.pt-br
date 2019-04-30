@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 73bbfc4557324a221e993ed51c300b6924abd6c3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a3d5033bc9953aa00efb950eabce5e7346952f9d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444161"
 ---
 # <a name="how-to-invoke-the-workflow-debugger"></a>Como: Invocar o depurador de fluxo de trabalho
 Geralmente, você depura fluxos de trabalho assim como você os programas de depuração escritos em outras linguagens de programação do Visual Studio. Você pode iniciar o depurador de fluxo de trabalho das seguintes maneiras:  
@@ -26,7 +26,7 @@ Geralmente, você depura fluxos de trabalho assim como você os programas de dep
 - Use a depuração remota. Para obter informações sobre como usar a depuração remota, consulte [como: Habilitar a depuração remota](http://go.microsoft.com/fwlink/?LinkId=196257).  
   
     > [!NOTE]
-    >  Se o aplicativo de fluxo de trabalho se destina a x86 arquitetura e é hospedado em um computador executando um sistema operacional de 64 bits, então a depuração remota não funcionará a menos que [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] está instalado no computador remoto ou o destino para o aplicativo de fluxo de trabalho é alterado para **Qualquer CPU**.  
+    > Se o aplicativo de fluxo de trabalho se destina a x86 arquitetura e é hospedado em um computador executando um sistema operacional de 64 bits, então a depuração remota não funcionará a menos que [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] está instalado no computador remoto ou o destino para o aplicativo de fluxo de trabalho é alterado para **Qualquer CPU**.  
   
 ### <a name="stepping-through-code"></a>Percorrendo o código  
   

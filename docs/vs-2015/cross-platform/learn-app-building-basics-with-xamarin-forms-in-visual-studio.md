@@ -6,12 +6,12 @@ ms.assetid: d22b5186-9e03-4e85-afc9-7cbe28522a6d
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 96a4795d83c4ef4b5bad2d7dc2d5f06f2f3ab4cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 18ea10e25117ee5bf52c6369e575d70a989435db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444513"
 ---
 # <a name="learn-app-building-basics-with-xamarinforms-in-visual-studio"></a>Aprender as noções básicas de criação de aplicativos com o Xamarin.Forms no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Após você concluir as etapas em [Configuração e instalação](../cross-platf
 - [Concluir a interface do usuário com uma aparência nativa entre plataformas](#finish)
 
 > [!TIP]
->  Você pode encontrar o código-fonte completo desse projeto no [repositório xamarin-forms-samples no GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).
+> Você pode encontrar o código-fonte completo desse projeto no [repositório xamarin-forms-samples no GitHub](https://github.com/xamarin/xamarin-forms-samples/tree/master/Weather).
 
 ## <a name="solution"></a> Configurar sua solução
  Estas etapas criam uma solução do Xamarin.Forms que contém uma PCL para o código compartilhado e dois pacotes NuGet adicionados.
@@ -59,7 +59,7 @@ Após você concluir as etapas em [Configuração e instalação](../cross-platf
     - **WeatherApp.WinPhone (Windows Phone 8.1)**: o projeto que contém o código nativo do Windows Phone.
 
     > [!NOTE]
-    >  Você tem a liberdade de excluir qualquer um dos projetos que for relativo a uma plataforma que não for de seu interesse. Para os fins deste passo a passo, faremos referência aos projetos do Android, iOS e Windows Phone 8.1. Trabalhar com os projetos da UWP e do Windows 8.1 é muito semelhante a trabalhar com o projeto do Windows Phone 8.1.
+    > Você tem a liberdade de excluir qualquer um dos projetos que for relativo a uma plataforma que não for de seu interesse. Para os fins deste passo a passo, faremos referência aos projetos do Android, iOS e Windows Phone 8.1. Trabalhar com os projetos da UWP e do Windows 8.1 é muito semelhante a trabalhar com o projeto do Windows Phone 8.1.
 
      Dentro de cada projeto nativo, você tem acesso ao designer nativo da plataforma correspondente e pode implementar telas e funcionalidades específicas da plataforma, conforme necessário.
 

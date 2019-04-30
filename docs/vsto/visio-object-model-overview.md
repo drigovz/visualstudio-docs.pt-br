@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dbae3a1e003c0d9381b80fc24227e65a18c1c8f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ca692e85396b11647c507b18c95ca095b3f8072
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438764"
 ---
 # <a name="visio-object-model-overview"></a>Visão geral do modelo de objeto do Visio
   Para desenvolver soluções do Office para Microsoft Office Visio, você pode interagir com o modelo de objeto do Visio. Esse modelo de objeto consiste em classes e interfaces que são fornecidos no assembly de interoperabilidade primário do Visio e são definidos na `Microsoft.Office.Interop.Visio` namespace.
@@ -67,7 +67,7 @@ ms.locfileid: "60096550"
  Todos os objetos e membros na referência de modelo de objeto do VBA correspondem aos tipos e membros no Visio assembly de interoperabilidade primário (PIA). Por exemplo, o `Document` objeto na referência de modelo de objeto do VBA corresponde ao tipo Microsoft.Office.Interop.Visio.Document no PIA do Visio. Embora a referência de modelo de objeto VBA fornece exemplos de código para a maioria das propriedades, métodos e eventos, você deve converter o código VBA essa referência para o Visual Basic ou Visual c#, se você quiser usá-los em um projeto de suplemento VSTO do Visio que você cria usando o Visual Studio.
 
 > [!NOTE]
->  Neste momento, não há nenhuma documentação de referência para o assembly de interoperabilidade primária do Visio.
+> Neste momento, não há nenhuma documentação de referência para o assembly de interoperabilidade primária do Visio.
 
  Para obter exemplos de código relacionadas e ferramentas adicionais para a criação de soluções do Visio, consulte [software development kit do Visio 2010](http://go.microsoft.com/fwlink/?LinkId=196501).
 

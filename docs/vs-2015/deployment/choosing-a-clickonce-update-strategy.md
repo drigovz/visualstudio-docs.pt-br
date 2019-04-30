@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f0f6d09dbd653dc332fd01414ff1ebb73cd2d014
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8215b8e0955b79224341d5d43b51a473740f5fe5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929160"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442330"
 ---
 # <a name="choosing-a-clickonce-update-strategy"></a>Escolhendo uma estratégia de atualização do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,10 +34,10 @@ ms.locfileid: "58929160"
  Além disso, você poderá determinar a frequência com que o aplicativo verificará se há atualizações e fazer as atualizações necessárias.  
   
 > [!NOTE]
->  Atualizações de aplicativos necessitam de conectividade de rede. Se uma conexão de rede não estiver presente, o aplicativo será executado sem verificar se há atualizações, independentemente da estratégia de atualização que você escolher.  
+> Atualizações de aplicativos necessitam de conectividade de rede. Se uma conexão de rede não estiver presente, o aplicativo será executado sem verificar se há atualizações, independentemente da estratégia de atualização que você escolher.  
   
 > [!NOTE]
->  No .NET Framework 2.0 e .NET Framework 3.0, quando seu aplicativo verificar se há atualizações, antes ou após a inicialização, ou ao usar as APIs <xref:System.Deployment.Application>, você deverá definir `deploymentProvider` no manifesto de implantação. O elemento `deploymentProvider` corresponde no Visual Studio ao campo **Localização de atualização** na caixa de diálogo **Atualizações** da guia **Publicar**. Essa regra é consentida no .NET Framework 3.5. Para obter mais informações, consulte [implantação de ClickOnce aplicativos para teste e servidores de produção sem Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
+> No .NET Framework 2.0 e .NET Framework 3.0, quando seu aplicativo verificar se há atualizações, antes ou após a inicialização, ou ao usar as APIs <xref:System.Deployment.Application>, você deverá definir `deploymentProvider` no manifesto de implantação. O elemento `deploymentProvider` corresponde no Visual Studio ao campo **Localização de atualização** na caixa de diálogo **Atualizações** da guia **Publicar**. Essa regra é consentida no .NET Framework 3.5. Para obter mais informações, consulte [implantação de ClickOnce aplicativos para teste e servidores de produção sem Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-servers-without-resigning.md).  
   
 ## <a name="checking-for-updates-after-application-startup"></a>Verificando se há atualizações após a inicialização do aplicativo  
  Ao usar esta estratégia, o aplicativo tentará localizar e ler o arquivo de manifesto de implantação em segundo plano enquanto estiver em execução. Se uma atualização estiver disponível, na próxima vez que o usuário executar o aplicativo, o download e a instalação da atualização serão solicitados.  
@@ -79,7 +79,7 @@ ms.locfileid: "58929160"
  Talvez haja ocasiões em que você deseje exigir que usuários executem uma versão atualizada de seu aplicativo. Por exemplo, você pode fazer uma alteração em um recurso externo como um serviço Web que impeça o funcionamento correto da versão anterior de seu aplicativo. Nesse caso, talvez você deseje marcar sua atualização como obrigatória e evitar que os usuários executem a versão anterior.  
   
 > [!NOTE]
->  Embora você possa exigir atualizações ao usar as outras estratégias de atualização, selecionar **Antes do aplicativo inicializar** é a única maneira de garantir que uma versão mais antiga não possa ser executada. Quando a atualização obrigatória for detectada na inicialização, o usuário deverá aceitar a atualização ou fechar o aplicativo.  
+> Embora você possa exigir atualizações ao usar as outras estratégias de atualização, selecionar **Antes do aplicativo inicializar** é a única maneira de garantir que uma versão mais antiga não possa ser executada. Quando a atualização obrigatória for detectada na inicialização, o usuário deverá aceitar a atualização ou fechar o aplicativo.  
   
  Para marcar uma atualização como obrigatória, clique em **Especifique a versão mínima necessária para este aplicativo** na caixa de diálogo **Atualizações do Aplicativo** e especifique a versão de publicação (**Principal**, **Secundária**, **Build**, **Revisão**) que especifica o número de versão mais antigo do aplicativo que pode ser instalado.  
   
@@ -117,7 +117,7 @@ ms.locfileid: "58929160"
 ## <a name="permission-elevation-and-updates"></a>Elevação de permissões e atualizações  
  Se uma nova versão de um aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] exigir um nível mais alto de confiança para execução do que a versão anterior, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] perguntará ao usuário se ele deseja que o aplicativo receba esse nível mais alto de confiança. Se o usuário recusar a concessão do nível mais alto de confiança, a atualização não será instalada. [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] solicitará que o usuário instale o aplicativo novamente quando ele for reiniciado na próxima vez. Se o usuário recusar conceder o nível mais alto de confiança neste momento, e a atualização não estiver marcada como o necessário, a versão antiga do aplicativo será executada. No entanto, se a atualização for necessária, o aplicativo não será executado novamente até que o usuário aceite o nível mais alto de confiança.  
   
- Nenhum aviso sobre níveis de confiança ocorrerá se você usar a Implantação de Aplicativo de Confiança. Para obter mais informações, consulte [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+ Nenhum aviso sobre níveis de confiança ocorrerá se você usar a Implantação de Aplicativo de Confiança. Para saber mais, veja [Visão geral da implantação de aplicativos confiáveis](../deployment/trusted-application-deployment-overview.md).  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:System.Deployment.Application>   

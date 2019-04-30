@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e9e12894a6c526e70e9d2ea814c2634a271098d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 315a0e2f6c68a98eac8bb2c36d184ef68998e5ae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104259"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435131"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>Como: Especificar eventos de build (Visual Basic)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Eventos de build no Visual Basic podem ser usados para executar scripts, macros 
  Eventos de build são especificados na caixa de diálogo **Eventos de Build**, disponível na página **Compilar** do **Designer de Projeto**.  
   
 > [!NOTE]
->  O Visual Basic Express não dá suporte à entrada de eventos de build. Isso tem suporte apenas no produto Visual Studio completo.  
+> O Visual Basic Express não dá suporte à entrada de eventos de build. Isso tem suporte apenas no produto Visual Studio completo.  
   
 ## <a name="how-to-specify-pre-build-and-post-build-events"></a>Como especificar eventos de pré-build e de pós-build  
   
@@ -45,10 +45,10 @@ Eventos de build no Visual Basic podem ser usados para executar scripts, macros 
 4. Insira os argumentos de linha de comando para a ação pré ou pós-build e, em seguida, clique em **OK**.  
   
     > [!NOTE]
-    >  Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.  
+    > Adicione uma instrução `call` antes de todos os comandos pós-build que executam arquivos .bat. Por exemplo `call C:\MyFile.bat` ou `call C:\MyFile.bat call C:\MyFile2.bat`.  
   
     > [!NOTE]
-    >  Se o evento de pré ou de pós-build não for concluído com êxito, você poderá encerrar o build fazendo a ação do evento terminar com um código diferente de zero (0), o que indica uma ação bem-sucedida.  
+    > Se o evento de pré ou de pós-build não for concluído com êxito, você poderá encerrar o build fazendo a ação do evento terminar com um código diferente de zero (0), o que indica uma ação bem-sucedida.  
   
 ## <a name="example-how-to-change-manifest-information-using-a-post-build-event"></a>Exemplo: Como alterar informações de manifesto usando um evento de pós-compilação  
  O procedimento a seguir mostra como definir a versão mínima do sistema operacional no manifesto do aplicativo usando um comando .exe chamado de um evento de pós-build (o arquivo .exe.manifest no diretório do projeto). A versão mínima do sistema operacional é um número de quatro partes, como 4.10.0.0. Para fazer isso, o comando alterará a seção `<dependentOS>` do manifesto:  

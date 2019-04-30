@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 041e33f04c3f9d376dbc82839e2256b4000147f6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d28c9456afdc60b1bddadf759ec3090ba37f2040
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445484"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>Personalizar os recursos de interface do usuário usando interfaces de extensibilidade
   As ferramentas de desenvolvimento do Office no Visual Studio fornecem classes e designers que lidar com muitos detalhes de implementação quando usá-los para criar painéis de tarefas personalizados, personalizações da faixa de opções e regiões de formulário do Outlook em um suplemento do VSTO. No entanto, você também pode implementar o *interface de extensibilidade* para cada recurso por conta própria, se você tiver requisitos especiais.
@@ -63,7 +63,7 @@ ms.locfileid: "56622924"
 - O `TaskPaneUI` classe fornece a interface do usuário do painel de tarefas. Os atributos para o `TaskPaneUI` classe torná-la visível para COM, que permite que os aplicativos do Microsoft Office descobrir a classe. Neste exemplo, a interface do usuário é um vazio <xref:System.Windows.Forms.UserControl>, mas você pode adicionar controles ao modificar o código.
 
   > [!NOTE]
-  >  Para expor os `TaskPaneUI` classe ao COM, você também deve definir o **registrar para interoperabilidade COM** propriedade para o projeto.
+  > Para expor os `TaskPaneUI` classe ao COM, você também deve definir o **registrar para interoperabilidade COM** propriedade para o projeto.
 
   [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
   [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]

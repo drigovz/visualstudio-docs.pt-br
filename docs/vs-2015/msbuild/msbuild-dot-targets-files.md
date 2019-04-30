@@ -17,12 +17,12 @@ caps.latest.revision: 20
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 74ac0a2c1ab50cf4c707f4fc9414fe4aa4f403b8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bab229a3246ac91eaa652be67e98a68aab40e820
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59655056"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439378"
 ---
 # <a name="msbuild-targets-files"></a>Arquivos .targets do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] inclui vários arquiv
  O valor `$(MSBuildToolsPath)` especifica o caminho desses arquivos .targets comuns. Se o `ToolsVersion` for 4.0, os arquivos estarão no seguinte local: `WindowsInstallationPath\Microsoft.NET\Framework\v4.0.30319\`  
   
 > [!NOTE]
->  Para obter informações sobre como criar seus próprios destinos, consulte [Destinos](../msbuild/msbuild-targets.md). Para obter informações sobre como usar o `Import` elemento para inserir um arquivo de projeto em outro arquivo de projeto, consulte [elemento Import (MSBuild)](../msbuild/import-element-msbuild.md) e [como: Usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).  
+> Para obter informações sobre como criar seus próprios destinos, consulte [Destinos](../msbuild/msbuild-targets.md). Para obter informações sobre como usar o `Import` elemento para inserir um arquivo de projeto em outro arquivo de projeto, consulte [elemento Import (MSBuild)](../msbuild/import-element-msbuild.md) e [como: Usar o mesmo destino em vários arquivos de projeto](../msbuild/how-to-use-the-same-target-in-multiple-project-files.md).  
   
 ## <a name="common-targets-files"></a>Arquivos .targets comuns  
   

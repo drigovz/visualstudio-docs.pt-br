@@ -13,12 +13,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2545db069db73fed59c95b3b4adc576facd51bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b3517322087c940636be07f50a013fe79307f0b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446719"
 ---
 # <a name="writing-a-t4-text-template"></a>Gravando um modelo de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -100,7 +100,7 @@ Hello!
  Você pode inserir um bloco de texto sempre que uma instrução `Write();` for permitida no código.  
   
 > [!NOTE]
->  Quando você inserir um bloco de texto dentro de uma instrução composta, como um loop ou condicional, sempre use chaves {...} para conter o bloco de texto.  
+> Quando você inserir um bloco de texto dentro de uma instrução composta, como um loop ou condicional, sempre use chaves {...} para conter o bloco de texto.  
   
 ### <a name="expression-control-blocks"></a>Blocos de controle de expressão  
  Um bloco de controle de expressão avalia uma expressão e a converte em uma cadeia de caracteres. Essa cadeia é inserida no arquivo de saída.  

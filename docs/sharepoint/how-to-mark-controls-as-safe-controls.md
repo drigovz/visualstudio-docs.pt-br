@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0d2dfe0da64abb9540724c05d13b84715a684af0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30bb597288c19328bb71ce7b5212200991d7181e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443078"
 ---
 # <a name="how-to-mark-controls-as-safe-controls"></a>Como: Marcar controles como controles seguros
   Para segurança, o SharePoint faz distinção entre controles da Web que estão protegidos contra injeção de script e controles da Web que não são. Protegido por controles, ou *controles seguros*, pode ser acessado por usuários não confiáveis. Você pode marcar os controles como seguro em que a propriedade de entradas de controle seguro de um item de projeto do SharePoint ou nos **Designer de pacote** quando você adiciona um assembly no pacote. Para saber mais, veja
@@ -27,7 +27,7 @@ ms.locfileid: "60082029"
 - [Alteração das configurações de arquivo de Web. config](http://go.microsoft.com/fwlink/?LinkId=178965) e [Registrando um Assembly de Web Part como um controle seguro](http://go.microsoft.com/fwlink/?LinkId=171013).
 
 > [!IMPORTANT]
->  Esses procedimentos são para fins ilustrativos. Marcar controles seguros apenas se você tiver certeza de que eles sejam seguros.
+> Esses procedimentos são para fins ilustrativos. Marcar controles seguros apenas se você tiver certeza de que eles sejam seguros.
 
 ## <a name="marking-safe-controls-in-the-safe-control-entries-property"></a>Marcação de controles seguros na propriedade de entradas de controle seguro
 
@@ -94,7 +94,7 @@ ms.locfileid: "60082029"
     |Seguro em relação ao Script|Deixe o **seguro contra Script** caixa de seleção desmarcada.|
 
     > [!NOTE]
-    >  O **nome do Assembly** valor adicionado por meio de assemblies a **avançado** guia da **Package Designer** não é possível um token, ele deve ser um assembly de nome forte. Para obter mais informações, consulte [Criando e usando assemblies de nomes fortes](http://go.microsoft.com/fwlink/?LinkId=177513).
+    > O **nome do Assembly** valor adicionado por meio de assemblies a **avançado** guia da **Package Designer** não é possível um token, ele deve ser um assembly de nome forte. Para obter mais informações, consulte [Criando e usando assemblies de nomes fortes](http://go.microsoft.com/fwlink/?LinkId=177513).
 
 13. Escolha o **guia** tecla para criar outra entrada de controle seguro.
 

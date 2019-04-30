@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 536e3a2aa6254004fb34eb243583184e5ab0279e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: aef35ff50080e9b596cc63915da77851b549bc3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092169"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438870"
 ---
 # <a name="working-with-xml-data"></a>Trabalhando com dados XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ O XML e as tecnologias relacionadas desempenham uma grande função na maneira c
  O Visual Studio dá suporte a depuração de folhas de estilos XSLT. Usando o depurador, você pode definir pontos de quebra em uma folha de estilos XSLT, entrar em uma folha de estilos XSLT a partir do código, e assim por diante.  
   
 > [!NOTE]
->  A depuração XSLT está disponível nas edições Professional e Team.  
+> A depuração XSLT está disponível nas edições Professional e Team.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Editor de XML](../xml-tools/xml-editor.md)  

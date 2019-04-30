@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cc1f87ac6ce94a1ef474388f75b33aa963b19f8d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d54fdce78528f348e99436c3a58d15e1cbe861b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444275"
 ---
 # <a name="walkthrough-missing-objects-due-to-vertex-shading"></a>Passo a passo: Objetos ausentes devido ao sombreamento de vértice
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../includes/vsprvs-md
     No **estágios de Pipeline gráficos** janela, o **Assembler de entrada** estágio mostra a geometria do objeto antes de transformados e o **sombreador de vértices** estágio mostra a mesma objeto depois que ele é transformado. Nesse cenário, você sabe que você encontrou o objeto ausente quando ele for exibido na **Assembler de entrada** estágio e nada é exibido na **sombreador de vértices** estágio.  
   
    > [!NOTE]
-   >  Se outros estágios de geometria — por exemplo, os estágios de sombreador Hull, o sombreador de domínio ou o sombreador de geometria — processar o objeto, eles podem ser a causa do problema. Normalmente, o problema está relacionado ao mais cedo em que o resultado não é exibido ou é exibido de forma inesperada.  
+   > Se outros estágios de geometria — por exemplo, os estágios de sombreador Hull, o sombreador de domínio ou o sombreador de geometria — processar o objeto, eles podem ser a causa do problema. Normalmente, o problema está relacionado ao mais cedo em que o resultado não é exibido ou é exibido de forma inesperada.  
   
 4. Pare quando atingir a chamada de desenho que corresponde ao objeto ausente. Nesse cenário, o **estágios de Pipeline gráficos** janela indica que a geometria foi emitida para a GPU (indicada pela miniatura Assembler de entrada), mas não aparecerão no destino de renderização porque algo deu errado durante a estágio de sombreador de vértice (indicado pela miniatura do sombreador de vértices):  
   
@@ -107,7 +107,7 @@ Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../includes/vsprvs-md
     ![O código que define o buffer de constantes do objeto](../debugger/media/gfx-diag-demo-missing-object-shader-step-7.png "gfx_diag_demo_missing_object_shader_step_7")  
   
    > [!TIP]
-   >  Se estiver depurando seu aplicativo ao mesmo tempo, você pode definir um ponto de interrupção neste local e será atingido quando o próximo quadro é renderizado. Em seguida, você pode inspecionar os membros da `m_marbleConstantBufferData` para confirmar que o valor da `projection` membro está definido como todos os zeros quando o buffer de constantes é preenchido.  
+   > Se estiver depurando seu aplicativo ao mesmo tempo, você pode definir um ponto de interrupção neste local e será atingido quando o próximo quadro é renderizado. Em seguida, você pode inspecionar os membros da `m_marbleConstantBufferData` para confirmar que o valor da `projection` membro está definido como todos os zeros quando o buffer de constantes é preenchido.  
   
    Depois de encontrar o local em que o buffer de constantes estiver sendo preenchido e descobrir que seus valores provenientes de variável `m_marbleConstantBufferData`, a próxima etapa é descobrir onde o `m_marbleConstantBufferData.projection` membro está definido como todos os zeros. Você pode usar **localizar todas as referências** examinar rapidamente para o código que altera o valor de `m_marbleConstantBufferData.projection`.  
   

@@ -12,12 +12,12 @@ caps.latest.revision: 76
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d71c820435ccf5bd131c11bc79844ac157561c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 438dd372cc2d70ecb8d1d41602751b6ce0cdf821
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446755"
 ---
 # <a name="walkthrough-creating-a-custom-directive-processor"></a>Passo a passo: Criando um processador de diretriz personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ End Property
 1. No Visual Studio, crie um novo projeto de biblioteca de classes C# ou Visual Basic chamado CustomDP.  
 
     > [!NOTE]
-    >  Se você quiser instalar o processador de diretriz em mais de um computador, é melhor usar um projeto de extensão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX) e incluir um arquivo .pkgdef na extensão. Para obter mais informações, consulte [Implantando um processador de diretriz personalizado](../modeling/deploying-a-custom-directive-processor.md).  
+    > Se você quiser instalar o processador de diretriz em mais de um computador, é melhor usar um projeto de extensão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX) e incluir um arquivo .pkgdef na extensão. Para obter mais informações, consulte [Implantando um processador de diretriz personalizado](../modeling/deploying-a-custom-directive-processor.md).  
 
 2. Adicione referências a estes assemblies:  
 
@@ -619,7 +619,7 @@ End Property
  Antes de chamar uma diretiva de um modelo de texto no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], você deve adicionar uma chave do registro para o processador de diretriz.  
 
 > [!NOTE]
->  Se você quiser instalar o processador de diretriz em mais de um computador, é melhor definir uma extensão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX) que inclua um arquivo .pkgdef juntamente com seu assembly. Para obter mais informações, consulte [Implantando um processador de diretriz personalizado](../modeling/deploying-a-custom-directive-processor.md).  
+> Se você quiser instalar o processador de diretriz em mais de um computador, é melhor definir uma extensão do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] (VSIX) que inclua um arquivo .pkgdef juntamente com seu assembly. Para obter mais informações, consulte [Implantando um processador de diretriz personalizado](../modeling/deploying-a-custom-directive-processor.md).  
 
  As chaves dos processadores de diretriz estão no Registro, no seguinte local:  
 
@@ -636,7 +636,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
  Nesta seção, você adiciona uma chave para o processador de diretriz personalizado ao Registro no mesmo local.  
 
 > [!CAUTION]
->  A edição incorreta do registro pode danificar gravemente o sistema. Antes de alterar o Registro, faça o backup de todos os dados importantes que estão no computador.  
+> A edição incorreta do registro pode danificar gravemente o sistema. Antes de alterar o Registro, faça o backup de todos os dados importantes que estão no computador.  
 
 #### <a name="to-add-a-registry-key-for-the-directive-processor"></a>Para adicionar uma chave do Registro para o processador de diretriz  
 
@@ -649,7 +649,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 3. Adicione uma nova chave chamada CustomDirectiveProcessor.  
 
    > [!NOTE]
-   >  Este é o nome que você usará no campo Processador de suas diretivas personalizadas. Esse nome não precisa corresponder ao nome da diretiva, ao nome da classe do processador de diretriz ou ao namespace do processador de diretriz.  
+   > Este é o nome que você usará no campo Processador de suas diretivas personalizadas. Esse nome não precisa corresponder ao nome da diretiva, ao nome da classe do processador de diretriz ou ao namespace do processador de diretriz.  
 
 4. Adicione um novo valor da cadeia de caracteres chamada Class que tenha o valor CustomDP.CustomDirectiveProcessor como o nome da nova cadeia de caracteres.  
 
@@ -687,7 +687,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. Crie um arquivo de texto chamado `DocFile.xml` usando qualquer editor de texto (por exemplo, o bloco de notas).  
 
     > [!NOTE]
-    >  Você pode criar esse arquivo em qualquer local (por exemplo, C:\Test\DocFile.xml).  
+    > Você pode criar esse arquivo em qualquer local (por exemplo, C:\Test\DocFile.xml).  
 
 2. Adicione o seguinte ao arquivo de texto:  
 
@@ -743,7 +743,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 4. Altere o conteúdo de TestDP.tt com o texto a seguir.  
 
     > [!NOTE]
-    >  Certifique-se de substituir a cadeia de caracteres <`YOUR PATH>` com o caminho para o arquivo DOCFILE.  
+    > Certifique-se de substituir a cadeia de caracteres <`YOUR PATH>` com o caminho para o arquivo DOCFILE.  
 
      A linguagem do modelo de texto não precisa corresponder à linguagem do processador de diretriz.  
 
@@ -830,7 +830,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
     ```  
 
     > [!NOTE]
-    >  Nesse exemplo, o valor do parâmetro `Processor` é `CustomDirectiveProcessor`. O valor do parâmetro `Processor` deve corresponder ao nome da chave do Registro do processador.  
+    > Nesse exemplo, o valor do parâmetro `Processor` é `CustomDirectiveProcessor`. O valor do parâmetro `Processor` deve corresponder ao nome da chave do Registro do processador.  
 
 5. No menu **Arquivo**, clique em **Salvar tudo**.  
 
@@ -882,7 +882,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
 1. Substitua o código em TestDP.tt pelo código a seguir. O HTML é realçado. Certifique-se de substituir a cadeia de caracteres `YOUR PATH` com o caminho para o arquivo DOCFILE.  
 
     > [!NOTE]
-    >  Abrir adicional \<# e close #> marcas separam o código da instrução das marcas HTML.  
+    > Abrir adicional \<# e close #> marcas separam o código da instrução das marcas HTML.  
 
     ```csharp  
     <#@ assembly name="System.Xml" #>  

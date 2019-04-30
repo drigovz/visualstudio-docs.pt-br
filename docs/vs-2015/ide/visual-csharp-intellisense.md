@@ -13,12 +13,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ea48e1807291e935081f01e821cffafa794104f5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8de573e8d5f46988868f18114fdabb07f62690e0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075753"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443161"
 ---
 # <a name="visual-c-intellisense"></a>Visual C# IntelliSense
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ O Visual C# IntelliSense fica disponível durante a codificação no editor e du
  No Visual C#, a lista de preenchimento inclui Métodos de Extensão que estão no escopo.  
   
 > [!NOTE]
->  A lista de conclusão não exibe todos os métodos de extensão para objetos <xref:System.String>.  
+> A lista de conclusão não exibe todos os métodos de extensão para objetos <xref:System.String>.  
   
  Os métodos de extensão usam um ícone diferente dos métodos de instância. Para obter uma listagem de ícones de lista, consulte [Modo de Exibição de Classe e ícones do Pesquisador de Objetos](../ide/class-view-and-object-browser-icons.md). Quando um método de instância e um método de extensão com o mesmo nome estão no escopo, a lista de preenchimento exibe o ícone do método de extensão.  
   
@@ -148,12 +148,12 @@ O Visual C# IntelliSense fica disponível durante a codificação no editor e du
  ![Gerar manipulador de eventos](../ide/media/vxgenerateeventhandler.gif "vxGenerateEventHandler")  
   
 > [!NOTE]
->  Se um novo delegado criado pelo IntelliSense referenciar um manipulador de eventos existente, o IntelliSense comunicará essas informações na dica de ferramenta. Depois, é possível modificar essa referência; o texto já está selecionado no Editor de Código. Caso contrário, o vínculo automático de evento será concluído nesse ponto.  
+> Se um novo delegado criado pelo IntelliSense referenciar um manipulador de eventos existente, o IntelliSense comunicará essas informações na dica de ferramenta. Depois, é possível modificar essa referência; o texto já está selecionado no Editor de Código. Caso contrário, o vínculo automático de evento será concluído nesse ponto.  
   
  Se você pressionar TAB, o IntelliSense criará um stub de um método com a assinatura correta e colocará o cursor no corpo do manipulador de eventos.  
   
 > [!NOTE]
->  Use o comando **Navegação Regressiva** no menu **Exibir** (CTRL+-) para retornar à declaração de vínculo de evento.  
+> Use o comando **Navegação Regressiva** no menu **Exibir** (CTRL+-) para retornar à declaração de vínculo de evento.  
   
  A tarefa a seguir mostra como o IntelliSense vincula automaticamente um manipulador de eventos chamado `button1_Click` a um campo de evento chamado `button1.Click`.  
   

@@ -6,12 +6,12 @@ ms.assetid: e970d936-1df4-4c0c-96e3-ef6191295882
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: 346cc2b68193a72d532ba0542cc406e4afa75234
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d709dc2b5262f4fbad341b0b77d45a90b138ed6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097382"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443991"
 ---
 # <a name="learn-about-mobile-development-with-xamarin"></a>Saiba mais sobre desenvolvimento móvel com o Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -19,9 +19,9 @@ ms.locfileid: "60097382"
 Este tópico direciona você a materiais de visão geral que ajudam a entender o desenvolvimento de aplicativos móveis de plataforma cruzada com o Xamarin. Se você não ainda tiver instalado o Visual Studio e o Xamarin, inicie primeiro o processo de [Instalação](../cross-platform/setup-and-install.md), depois volte aqui para trabalhar com esses recursos enquanto os instaladores estão em execução.  
   
 > [!NOTE]
->  Salvo indicação em contrário, sugerimos inicialmente ler somente as páginas vinculadas diretamente aqui, e não páginas subsidiárias. Se o processo de instalação ainda estiver em execução após você concluir esta lista, fique à vontade para voltar e explorar tópicos adicionais.  
+> Salvo indicação em contrário, sugerimos inicialmente ler somente as páginas vinculadas diretamente aqui, e não páginas subsidiárias. Se o processo de instalação ainda estiver em execução após você concluir esta lista, fique à vontade para voltar e explorar tópicos adicionais.  
 >   
->  Também fique à vontade para examinar os tópicos marcados como "Fundamentos" e para voltar aos tópicos de "Aprofundamento" mais tarde.  
+> Também fique à vontade para examinar os tópicos marcados como "Fundamentos" e para voltar aos tópicos de "Aprofundamento" mais tarde.  
   
 ## <a name="essentials-introduction-to-xamarin"></a>Fundamentos: Introdução ao Xamarin  
  *10 a 20 minutos*  

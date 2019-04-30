@@ -15,12 +15,12 @@ caps.latest.revision: 50
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 626be40ed9889ff7d16c07d511cbd060232412af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 16bc3bf0f2cb7fa51a42986ee99976410ca7874a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439732"
 ---
 # <a name="uml-activity-diagrams-guidelines"></a>Diagramas de atividade UML: Diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
      Comece colocando as atividades principais no diagrama, conectando-os e, em seguida, adicionar os toques finais como nós iniciais e finais.  
   
     > [!NOTE]
-    >  É possível arrastar os elementos existentes para o diagrama do Gerenciador de modelos UML.  
+    > É possível arrastar os elementos existentes para o diagrama do Gerenciador de modelos UML.  
   
 2. Para conectar os elementos, siga estas etapas:  
   
@@ -87,7 +87,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
     3. Clique no elemento de destino.  
   
         > [!NOTE]
-        >  Para usar uma ferramenta várias vezes, clique duas vezes na ferramenta na caixa de ferramentas.  
+        > Para usar uma ferramenta várias vezes, clique duas vezes na ferramenta na caixa de ferramentas.  
   
 #### <a name="to-move-an-activity-to-another-package"></a>Para mover uma atividade para outro pacote  
   
@@ -98,7 +98,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 - Na **Gerenciador de modelos UML**, a atividade com o botão direito e clique em **Recortar**. Em seguida, o pacote com o botão direito e clique em **colar**.  
   
     > [!NOTE]
-    >  A atividade será exibida no Gerenciador de modelos UML somente quando você adiciona o primeiro elemento no diagrama.  
+    > A atividade será exibida no Gerenciador de modelos UML somente quando você adiciona o primeiro elemento no diagrama.  
   
 ## <a name="SimpleControlFlow"></a> Descrevendo o fluxo de controle  
  Um diagrama de atividade descreve um algoritmo de processo ou software de negócios como uma série de ações. Setas de conector mostram como controle é passado em sequência de uma ação para a próxima. Normalmente, uma ação pode iniciar somente depois que a ação anterior foi concluída.  
@@ -112,7 +112,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 - Criar uma **ação** (1) para cada tarefa principal que é executada por um usuário, o sistema ou ambos em colaboração.  
   
   > [!NOTE]
-  >  Tente descrever seu processo ou o algoritmo com apenas algumas ações. Você pode usar **chame ações de comportamento** para definir cada ação em mais detalhes em um diagrama separado, conforme descrito em [descrevendo subpropriedades atividades com ações de comportamento chamar](#Subactivities).  
+  > Tente descrever seu processo ou o algoritmo com apenas algumas ações. Você pode usar **chame ações de comportamento** para definir cada ação em mais detalhes em um diagrama separado, conforme descrito em [descrevendo subpropriedades atividades com ações de comportamento chamar](#Subactivities).  
   
 - Certifique-se de que o título de cada ação indica claramente o que ele normalmente alcança.  
   
@@ -133,12 +133,12 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 - Use uma **nó mesclar** (5) para reunir-se de que dois ou mais fluxos alternativos ramificam em uma **nó de decisão**.  
   
     > [!NOTE]
-    >  Você deve usar um **mesclar nó** reunir todos os fluxos alternativos, em vez de reunir os fluxos em uma ação. No exemplo, não seria correto para se conectar a partir do nó de decisão diretamente de volta para **escolha o Item de Menu**. Isso ocorre porque uma ação não é iniciado até que os threads de controle tem chegado em todos os seus conectores de entrada. Portanto, você deve reunir apenas fluxos simultâneos em uma ação. Para obter mais informações, consulte [fluxos simultâneos](#Concurrent).  
+    > Você deve usar um **mesclar nó** reunir todos os fluxos alternativos, em vez de reunir os fluxos em uma ação. No exemplo, não seria correto para se conectar a partir do nó de decisão diretamente de volta para **escolha o Item de Menu**. Isso ocorre porque uma ação não é iniciado até que os threads de controle tem chegado em todos os seus conectores de entrada. Portanto, você deve reunir apenas fluxos simultâneos em uma ação. Para obter mais informações, consulte [fluxos simultâneos](#Concurrent).  
   
 - Use ramificações para descrever loops, conforme mostrado no exemplo.  
   
     > [!NOTE]
-    >  Experimente aninhar loops de forma bem estruturada, como você faria no código do programa. Se você descrevendo um processo de negócios existente, isso poderia revelar algumas oportunidades para melhorá-lo.  
+    > Experimente aninhar loops de forma bem estruturada, como você faria no código do programa. Se você descrevendo um processo de negócios existente, isso poderia revelar algumas oportunidades para melhorá-lo.  
   
 ### <a name="starting-the-activity"></a>Iniciar a atividade  
  Há duas maneiras de indicar pontos de entrada em uma atividade:  
@@ -182,7 +182,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 - Use uma **pino de saída** e uma **entrada de Pin**. Esse método permite descrever separadamente as saídas de uma ação e as entradas para outra. PINs são como parâmetros em um programa. PINs representam portas em que os objetos podem entram e saem de uma ação.  
   
     > [!NOTE]
-    >  Para obter uma visão geral dos elementos usados nesta seção, consulte a seção de fluxos de dados do tópico consulte [diagramas de atividade UML: Referência](../modeling/uml-activity-diagrams-reference.md).  
+    > Para obter uma visão geral dos elementos usados nesta seção, consulte a seção de fluxos de dados do tópico consulte [diagramas de atividade UML: Referência](../modeling/uml-activity-diagrams-reference.md).  
   
 ### <a name="describing-data-flow-with-object-nodes"></a>Descrevendo o fluxo de dados conosco de objeto  
  A maioria dos fluxos de controle carregam dados. Por exemplo, o fluxo de saída da ação de "Cliente fornece detalhes" transmite uma referência para o endereço de envio.  
@@ -198,7 +198,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
  Você pode definir as **tipo** do nó de objeto na janela Propriedades. O tipo pode ser um tipo primitivo como inteiro, ou uma classe, interface ou enumeração que você tenha definido em um diagrama de classe. Por exemplo, você poderia criar um endereço de remessa de classe com atributos de endereço de rua, cidade e assim por diante, junto com uma associação a uma outra classe é chamada Customer. Para obter mais informações, confira [Diagramas de classe UML: Diretrizes de](../modeling/uml-class-diagrams-guidelines.md).  
   
 > [!NOTE]
->  Se você digitar o nome de um tipo que não tenha sido definido, um item será adicionado sob **tipos não especificados** no Gerenciador de modelos UML. Se você definir um tipo de nome em um diagrama de classe depois, você deve redefinir o tipo de nó de objeto, de modo que ele se refere ao novo tipo.  
+> Se você digitar o nome de um tipo que não tenha sido definido, um item será adicionado sob **tipos não especificados** no Gerenciador de modelos UML. Se você definir um tipo de nome em um diagrama de classe depois, você deve redefinir o tipo de nó de objeto, de modo que ele se refere ao novo tipo.  
   
 #### <a name="buffering-data-in-object-nodes"></a>Buffer de dados em nós de objeto  
  Um nó de objeto pode agir como um buffer para vários objetos. Na ilustração a seguir, o fluxo de controle mostra que o usuário pode ir em torno de [escolha mais] (1) muitas vezes, um loop enquanto o nó do objeto de itens de Menu escolhida (2) acumula as opções do usuário. Por fim, quando o usuário tiver concluído sua seleção, o controle passa para a ação de confirmar a ordem (3), que aceita a lista completa de opções do buffer de itens de Menu escolhido.  
@@ -265,7 +265,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 4. Definir a **comportamento** propriedade do **plano de ação de comportamento** para se referir ao diagrama de comportamento de chamada.  
   
     > [!NOTE]
-    >  O diagrama de atividade de subpropriedades deve ter alguns elementos nele ou o diagrama não estará disponível na lista suspensa para o **comportamento** propriedade. Além disso, o ícone trident não aparecerão no seu **plano de ação de comportamento** forma até que você defina seu **comportamento** propriedade.  
+    > O diagrama de atividade de subpropriedades deve ter alguns elementos nele ou o diagrama não estará disponível na lista suspensa para o **comportamento** propriedade. Além disso, o ícone trident não aparecerão no seu **plano de ação de comportamento** forma até que você defina seu **comportamento** propriedade.  
   
 5. Defina as **é síncrona** propriedade da ação para indicar se sua atividade aguarda para concluir a atividade de chamada.  
   
@@ -279,7 +279,7 @@ No Visual Studio, você pode desenhar um diagrama de atividade para descrever um
 - No diagrama de atividade de subpropriedades, criar uma **nó do parâmetro de atividade** (2) para cada pino de entrada e saído na chamada da ação. Atribua o mesmo nome como seu pino correspondente a cada nó.  
   
   > [!NOTE]
-  >  Um nó de parâmetro de atividade é semelhante a um nó de objeto. Para verificar que tipo de nó que você está examinando, clique com botão direito no nó e, em seguida, clique em **propriedades**. O tipo de nó é mostrado no cabeçalho da janela Propriedades.  
+  > Um nó de parâmetro de atividade é semelhante a um nó de objeto. Para verificar que tipo de nó que você está examinando, clique com botão direito no nó e, em seguida, clique em **propriedades**. O tipo de nó é mostrado no cabeçalho da janela Propriedades.  
   
 - No diagrama de atividade de subpropriedades, desenhe conectores que mostram o fluxo de objetos para dentro ou fora de cada nó de parâmetro de atividade.  
   

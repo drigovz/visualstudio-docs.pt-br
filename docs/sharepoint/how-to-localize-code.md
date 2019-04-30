@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbcf07b462e280f522741b8329d34c2907f5b454
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b848bdb4d0b71f5762601204195f0e81a1c2733
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443087"
 ---
 # <a name="how-to-localize-code"></a>Como: Localizar código
   O código não localizado usa valores de cadeia de caracteres embutida. Para localizar as cadeias de caracteres de código, substitua-as por chamadas para <xref:System.Web.HttpContext.GetGlobalResourceObject%2A>, que é um método que referencia recursos localizados.
@@ -32,7 +32,7 @@ ms.locfileid: "60066280"
      Escolha o **arquivo de recursos** modelo.
 
     > [!NOTE]
-    >  Certifique-se de adicionar o arquivo de recurso a um item de projeto do SharePoint para que a propriedade de tipo de implantação está disponível. Essa propriedade é necessária neste procedimento.
+    > Certifique-se de adicionar o arquivo de recurso a um item de projeto do SharePoint para que a propriedade de tipo de implantação está disponível. Essa propriedade é necessária neste procedimento.
 
 2. Nomeie o arquivo de recurso de idioma padrão de sua escolha com uma *. resx* extensão, como *Myappresources*.
 

@@ -15,12 +15,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1485ee6f0737363bc6ab9105b70c93acef866c82
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ab7ecbe97ba0b174a1cc4c0f0d169834ce25e8d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038337"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439709"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>Como: Especificar comandos pré e pós-instrumento
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Você pode especificar comandos que são executados antes ou depois que os biná
 3. Digite o comando na caixa de texto **Linha de comando** em **Eventos Pré-Instrumento**.  
   
     > [!NOTE]
-    >  Você pode clicar no botão de reticências **(...)** ao lado da caixa **Linha de comando** para navegar até o arquivo apropriado .exe, .cmd ou .bat e selecioná-lo.  
+    > Você pode clicar no botão de reticências **(...)** ao lado da caixa **Linha de comando** para navegar até o arquivo apropriado .exe, .cmd ou .bat e selecioná-lo.  
   
 4. Clique em **OK**.  
   
@@ -83,7 +83,7 @@ Você pode especificar comandos que são executados antes ou depois que os biná
 3. Digite o comando na caixa de texto **Linha de comando** em **Eventos Pós-Instrumento**.  
   
     > [!NOTE]
-    >  Você pode clicar no botão de reticências **(...)** ao lado da caixa **Linha de comando** para navegar até o arquivo apropriado .exe, .cmd ou .bat e selecioná-lo.  
+    > Você pode clicar no botão de reticências **(...)** ao lado da caixa **Linha de comando** para navegar até o arquivo apropriado .exe, .cmd ou .bat e selecioná-lo.  
   
 4. Clique em **OK**.  
   

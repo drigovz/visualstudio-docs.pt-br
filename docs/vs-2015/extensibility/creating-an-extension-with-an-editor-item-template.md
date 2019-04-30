@@ -10,12 +10,12 @@ ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 56d9ea80054ec3732f62f70a582b95da32fdbe9c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 46ccdd87d44ee90c925992f4d7b997c9bbe09684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086709"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435523"
 ---
 # <a name="creating-an-extension-with-an-editor-item-template"></a>Criando uma extensão com um modelo de item do editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Você pode usar modelos de item que estão incluídos no SDK do Visual Studio pa
  O modelo do adorno de visor Editor cria um adorno de visor relativo que adiciona uma caixa violeta que tem um contorno vermelho para o canto superior direito do visor.  
   
 > [!NOTE]
->  O *visor* é a área do modo de exibição de texto que está sendo exibida.  
+> O *visor* é a área do modo de exibição de texto que está sendo exibida.  
   
 #### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Para criar uma extensão de adorno do visor, usando o modelo do adorno de visor do Editor  
   

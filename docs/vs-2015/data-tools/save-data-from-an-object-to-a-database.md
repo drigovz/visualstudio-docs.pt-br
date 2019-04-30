@@ -18,12 +18,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6980ecc7676afd978f8dfd243ef8f383413ad83d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c079d3f85dbab87e30edb059c76202dd727f715c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425055"
 ---
 # <a name="save-data-from-an-object-to-a-database"></a>Salvar dados de um objeto em um banco de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Você pode salvar dados em objetos de um banco de dados, passando os valores de 
  Por padrão, os métodos DBDirect são criados em um TableAdapter que pode ser executado diretamente no banco de dados. Esses métodos podem ser chamados diretamente e não exigem <xref:System.Data.DataSet> ou <xref:System.Data.DataTable> objetos para reconciliar as alterações para enviar atualizações para um banco de dados.  
   
 > [!NOTE]
->  Quando você estiver configurando um TableAdapter, a consulta principal deve fornecer informações suficientes para que os métodos DBDirect a ser criado. Por exemplo, se um TableAdapter é configurado para consultar dados de uma tabela que não tem uma coluna de chave primária definida, ela não gera métodos DBDirect.  
+> Quando você estiver configurando um TableAdapter, a consulta principal deve fornecer informações suficientes para que os métodos DBDirect a ser criado. Por exemplo, se um TableAdapter é configurado para consultar dados de uma tabela que não tem uma coluna de chave primária definida, ela não gera métodos DBDirect.  
   
 |Métodos DBDirect TableAdapter|Descrição|  
 |----------------------------------|-----------------|  
@@ -57,7 +57,7 @@ Você pode salvar dados em objetos de um banco de dados, passando os valores de 
 - Modificar os registros chamando o `TableAdapter.Update` método, passando os novos valores para atualizar o registro e passando os valores originais para localizar o registro.  
   
     > [!NOTE]
-    >  O objeto precisa manter os valores originais e passá-los para o `Update` método. Este exemplo usa as propriedades com um `orig` prefixo para armazenar os valores originais.  
+    > O objeto precisa manter os valores originais e passá-los para o `Update` método. Este exemplo usa as propriedades com um `orig` prefixo para armazenar os valores originais.  
   
      O exemplo a seguir atualiza um registro existente na `Customers` tabela passando os valores novos e originais na `Customer` do objeto para o `TableAdapter.Update` método.  
   
@@ -69,7 +69,7 @@ Você pode salvar dados em objetos de um banco de dados, passando os valores de 
 - Excluir registros chamando o `TableAdapter.Delete` método e passar os valores originais para localizar o registro.  
   
     > [!NOTE]
-    >  O objeto precisa manter os valores originais e passá-los para o `Delete` método. Este exemplo usa as propriedades com um `orig` prefixo para armazenar os valores originais.  
+    > O objeto precisa manter os valores originais e passá-los para o `Delete` método. Este exemplo usa as propriedades com um `orig` prefixo para armazenar os valores originais.  
   
      O exemplo a seguir exclui um registro do `Customers` tabela, passando os valores originais na `Customer` do objeto para o `TableAdapter.Delete` método.  
   

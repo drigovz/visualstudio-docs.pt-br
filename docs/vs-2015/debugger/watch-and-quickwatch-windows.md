@@ -24,12 +24,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d1a6167759d35dd67142e1919423df6aa380fe88
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3f79e492440f98f733488afb241fa6f86e220b9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063524"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444237"
 ---
 # <a name="watch-and-quickwatch-windows"></a>Inspeção e QuickWatch Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -162,7 +162,7 @@ var1 = var2
  Há vezes quando você deseja observar o comportamento de um objeto específico; Por exemplo, você talvez queira controlar um objeto referenciado por uma variável local depois que essa variável tiver saído do escopo. Em c# e Visual Basic, você pode criar IDs para instâncias específicas de tipos de referência de objeto e usá-los na janela de inspeção e em condições de ponto de interrupção. A ID de objeto é gerada pelo common language runtime (CLR) serviços de depuração e associada ao objeto.  
   
 > [!NOTE]
->  IDs de objeto criem referências fracas e não impedem que o objeto que está sendo coletado como lixo. Eles só são válidos para a sessão de depuração atual.  
+> IDs de objeto criem referências fracas e não impedem que o objeto que está sendo coletado como lixo. Eles só são válidos para a sessão de depuração atual.  
   
  No código a seguir cria um método de um `Person` usando uma variável local, mas você deseja descobrir o que o `Person`do nome está em um método diferente:  
   
@@ -215,7 +215,7 @@ public class Program
 6. Continuar a depuração, e quando a execução é interrompida na `DoSomething()` método, o **inspeção** janela exibe o `Person` objeto.  
   
 > [!NOTE]
->  Se você deseja ver as propriedades do objeto, como `Person.Name` no exemplo acima, você deve habilitar avaliação de propriedade.  
+> Se você deseja ver as propriedades do objeto, como `Person.Name` no exemplo acima, você deve habilitar avaliação de propriedade.  
   
 ## <a name="using-registers-in-the-watch-window-c-only"></a>Usando os registros na janela Watch (apenas C++)  
  Se você estiver depurando código nativo, você pode adicionar nomes de registro, como também os nomes de variáveis usando  **$ \<registrar nome >** ou  **@ \<registrar nome >**.  Para obter mais informações, consulte [pseudovariáveis](../debugger/pseudovariables.md).  

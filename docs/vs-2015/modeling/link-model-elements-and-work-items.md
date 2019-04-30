@@ -19,12 +19,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2b0ec545defec941d9a59001841d8bea443aa522
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cdfcb6bb07f167ea1da81101ae00613a5b2fac93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440945"
 ---
 # <a name="link-model-elements-and-work-items"></a>Vincular elementos de modelo e itens de trabalho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Acompanhe tarefas, casos de teste, bugs, requisitos, problemas e outros trabalho
  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Você deve usar o Team Explorer para criar e abrir links. Verifique se o projeto e os diagramas de modelagem têm controle de versão de forma que outras pessoas possam abrir diagramas vinculados.  
+> Você deve usar o Team Explorer para criar e abrir links. Verifique se o projeto e os diagramas de modelagem têm controle de versão de forma que outras pessoas possam abrir diagramas vinculados.  
   
  Por exemplo, é possível vincular:  
   
@@ -61,7 +61,7 @@ Acompanhe tarefas, casos de teste, bugs, requisitos, problemas e outros trabalho
 - Diagramas. Para selecionar um diagrama, escolha uma parte em branco do diagrama.  
   
 > [!WARNING]
->  Você já deve estar conectado ao TFS fonte de código de controle (SCC) para criar ou vincular a um item de trabalho. Se você tentar abrir uma conexão em um SCC diferentes do TFS, o Visual Studio fecha automaticamente a solução atual. Certifique-se de que você já estiver conectado ao SCC apropriado antes de tentar criar ou vincular a um item de trabalho. Em versões posteriores do Visual Studio, os comandos de menu não estão disponíveis se você não estiver conectado a um SCC.  
+> Você já deve estar conectado ao TFS fonte de código de controle (SCC) para criar ou vincular a um item de trabalho. Se você tentar abrir uma conexão em um SCC diferentes do TFS, o Visual Studio fecha automaticamente a solução atual. Certifique-se de que você já estiver conectado ao SCC apropriado antes de tentar criar ou vincular a um item de trabalho. Em versões posteriores do Visual Studio, os comandos de menu não estão disponíveis se você não estiver conectado a um SCC.  
   
 - [Conectar a um projeto de equipe](#ConnectTFS)  
   
@@ -99,7 +99,7 @@ Acompanhe tarefas, casos de teste, bugs, requisitos, problemas e outros trabalho
      O Visual Studio vincula o elemento de modelo ao novo item de trabalho. Um ícone é exibido em ou próximo ao elemento de modelo.  
   
 > [!WARNING]
->  Você já deve estar conectado ao TFS fonte de código de controle (SCC) para criar ou vincular a um item de trabalho. Se você tentar abrir uma conexão em um SCC diferentes do TFS, o Visual Studio fecha automaticamente a solução atual. Certifique-se de que você já estiver conectado ao SCC apropriado antes de tentar criar ou vincular a um item de trabalho. Em versões posteriores do Visual Studio, os comandos de menu não estão disponíveis se você não estiver conectado a um SCC.  
+> Você já deve estar conectado ao TFS fonte de código de controle (SCC) para criar ou vincular a um item de trabalho. Se você tentar abrir uma conexão em um SCC diferentes do TFS, o Visual Studio fecha automaticamente a solução atual. Certifique-se de que você já estiver conectado ao SCC apropriado antes de tentar criar ou vincular a um item de trabalho. Em versões posteriores do Visual Studio, os comandos de menu não estão disponíveis se você não estiver conectado a um SCC.  
   
 ## <a name="LinkExisting"></a> Vincular um elemento de modelo a um item de trabalho existente  
  Ao vincular elementos de modelo a itens de trabalho, comece pelo elemento de modelo, e não pelo item de trabalho.  
@@ -123,7 +123,7 @@ Acompanhe tarefas, casos de teste, bugs, requisitos, problemas e outros trabalho
      Quando você terminar, o **itens de trabalho** propriedade do elemento de modelo mostra um número maior do que antes. Um ícone também é exibido em ou próximo ao elemento de modelo.  
   
 > [!WARNING]
->  Você já deve estar conectado ao TFS fonte de código de controle (SCC) para criar ou vincular a um item de trabalho. Se você tentar abrir uma conexão em um SCC diferentes do TFS, o Visual Studio fecha automaticamente a solução atual. Certifique-se de que você já estiver conectado ao SCC apropriado antes de tentar criar ou vincular a um item de trabalho. Em versões posteriores do Visual Studio, os comandos de menu não estão disponíveis se você não estiver conectado a um SCC.  
+> Você já deve estar conectado ao TFS fonte de código de controle (SCC) para criar ou vincular a um item de trabalho. Se você tentar abrir uma conexão em um SCC diferentes do TFS, o Visual Studio fecha automaticamente a solução atual. Certifique-se de que você já estiver conectado ao SCC apropriado antes de tentar criar ou vincular a um item de trabalho. Em versões posteriores do Visual Studio, os comandos de menu não estão disponíveis se você não estiver conectado a um SCC.  
   
 ## <a name="OpenWorkItem"></a> Exibir itens de trabalho vinculado a um elemento de modelo  
   
@@ -132,7 +132,7 @@ Acompanhe tarefas, casos de teste, bugs, requisitos, problemas e outros trabalho
 2. No diagrama de modelagem ou no **Gerenciador de modelos UML**, abra o menu de atalho para o elemento de modelo. Escolher **exibir itens de trabalho** para exibir a lista de itens de trabalho vinculados.  
   
     > [!NOTE]
-    >  Somente os itens de trabalho do servidor conectado são exibidos. Se você não vir quaisquer itens de trabalho, verifique se você estiver conectado ao servidor correto em **Team Explorer**.  
+    > Somente os itens de trabalho do servidor conectado são exibidos. Se você não vir quaisquer itens de trabalho, verifique se você estiver conectado ao servidor correto em **Team Explorer**.  
   
 ## <a name="ViewLinkedModels"></a> Exibir elementos de modelo vinculado a um item de trabalho  
  Você pode exibir diagramas de modelagem e os elementos que estão vinculados a um item de trabalho no Visual Studio Team Services e no Team Foundation Server 2012 ou posterior. Por exemplo, um item de trabalho talvez esteja vinculado a modelos de classe que mostram o design de novas classes que serão implementadas.  
@@ -140,7 +140,7 @@ Acompanhe tarefas, casos de teste, bugs, requisitos, problemas e outros trabalho
 1. Na **Team Explorer**, verifique se você está conectado ao projeto de equipe onde os elementos de modelo estão vinculados ao item de trabalho.  
   
     > [!NOTE]
-    >  Só é possível usar o Team Explorer, e não o Team Web Access, para exibir elementos de modelo vinculados. Verifique se o workspace está mapeado para o projeto de modelagem que contém os diagramas ou os elementos de modelagem. Se não tiver um workspace, você deverá criá-lo. Ver [solução de problemas](#Troubleshooting) e [criar e trabalhar com espaços de trabalho](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
+    > Só é possível usar o Team Explorer, e não o Team Web Access, para exibir elementos de modelo vinculados. Verifique se o workspace está mapeado para o projeto de modelagem que contém os diagramas ou os elementos de modelagem. Se não tiver um workspace, você deverá criá-lo. Ver [solução de problemas](#Troubleshooting) e [criar e trabalhar com espaços de trabalho](http://msdn.microsoft.com/library/1d7f6ed8-ec7c-48f8-86da-9aea55a90d5a).  
   
 2. Abra o item de trabalho, escolha **Links**. Sob **Link de modelo**, abra o menu de atalho para o elemento de modelo vinculado. Escolher **Abrir Item vinculado**.  
   
@@ -160,7 +160,7 @@ Acompanhe tarefas, casos de teste, bugs, requisitos, problemas e outros trabalho
     2. No **itens de trabalho** propriedade, escolha o botão de reticências **[...]** .  
   
         > [!NOTE]
-        >  Somente itens de trabalho no servidor atual são exibidos. Se a lista estiver vazia, mas o número de itens de trabalho não for zero, verifique se você está conectado ao servidor correto em **Team Explorer**.  
+        > Somente itens de trabalho no servidor atual são exibidos. Se a lista estiver vazia, mas o número de itens de trabalho não for zero, verifique se você está conectado ao servidor correto em **Team Explorer**.  
   
 3. Sob **remover Links para itens de trabalho**, desmarque os itens selecionados que você deseja desvincular. Escolha **OK**.  
   

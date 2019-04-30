@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ab8c437285a55013e2c0367865044ee12ba061ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: de101e33e94889a44fe9bc4e21db857763b1c9aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071802"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447029"
 ---
 # <a name="registry-entries-for-vsto-add-ins"></a>Entradas do registro para suplementos VSTO
   Quando você implanta o VSTO Add-ins que são criados usando o Visual Studio, você deve criar um conjunto específico de entradas do registro. Essas entradas de registro fornecem informações que permitem que o aplicativo do Microsoft Office descobrir e carregar o suplemento do VSTO.
@@ -33,7 +33,7 @@ ms.locfileid: "60071802"
  Para obter mais informações sobre como as entradas do registro são usadas durante o processo de carregamento de suplementos do VSTO, consulte [arquitetura do VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md).
 
 > [!NOTE]
->  Neste tópico, o texto *ID do suplemento* representa uma ID exclusiva para seu suplemento do VSTO. Por padrão, a ID é o nome do assembly do suplemento do VSTO.
+> Neste tópico, o texto *ID do suplemento* representa uma ID exclusiva para seu suplemento do VSTO. Por padrão, a ID é o nome do assembly do suplemento do VSTO.
 
 ## <a name="register-vsto-add-ins-for-the-current-user-vs-all-users"></a>Registre-se suplementos do VSTO para o atual usuário versus todos os usuários
  Quando um suplemento do VSTO é instalado, podem ser registrada de duas maneiras:

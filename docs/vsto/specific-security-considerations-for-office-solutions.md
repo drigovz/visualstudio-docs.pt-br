@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5c59824594a783ad952a7b15c47ee3f781aba79d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8a29c813a5217e68541fd076eadf62bf54710014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081314"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436485"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Considerações sobre segurança específicas para soluções do Office
   Os recursos de segurança fornecidos pelo Microsoft .NET Framework e do Microsoft Office podem ajudar a proteger suas soluções do Office em relação a possíveis ameaças à segurança. Este tópico explica algumas dessas ameaças e fornece recomendações para ajudar a proteger contra elas. Ele também inclui informações sobre como as configurações de segurança do Microsoft Office afetam soluções do Office.
@@ -74,7 +74,7 @@ ms.locfileid: "60081314"
  [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]
 
 > [!NOTE]
->  Se o Outlook é usado com o Exchange, em seguida, obtendo todos os objetos do Outlook de `ThisAddIn.Application` não garante que o suplemento do VSTO poderão acessar todo o modelo de objeto do Outlook. Por exemplo, se um administrador do Exchange define automaticamente o Outlook negar todas as tentativas de acessar informações de endereço usando o modelo de objeto do Outlook, em seguida, o Outlook não permitirá que o exemplo de código anterior acessar a propriedade To, mesmo que use o exemplo de código o confiável `ThisAddIn.Application` campo.
+> Se o Outlook é usado com o Exchange, em seguida, obtendo todos os objetos do Outlook de `ThisAddIn.Application` não garante que o suplemento do VSTO poderão acessar todo o modelo de objeto do Outlook. Por exemplo, se um administrador do Exchange define automaticamente o Outlook negar todas as tentativas de acessar informações de endereço usando o modelo de objeto do Outlook, em seguida, o Outlook não permitirá que o exemplo de código anterior acessar a propriedade To, mesmo que use o exemplo de código o confiável `ThisAddIn.Application` campo.
 
 ### <a name="specify-which-add-ins-to-trust-when-using-exchange"></a>Especifique quais suplementos confiar ao usar o Exchange
  Quando o Outlook é usado com o Exchange, os administradores podem especificar que certos VSTO Add-ins pode ser executada sem encontrar o object model guard. Outlook VSTO Add-ins criados por meio de soluções do Office no Visual Studio não pode ser confiáveis individualmente; eles só podem ser confiáveis como um grupo.

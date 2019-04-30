@@ -11,12 +11,12 @@ caps.latest.revision: 24
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1806e39e70d98ce7f47dda6bbc32a8f261b96acd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dc2fe8e6f9b0ed1e6970943ab5eedf1b62eb961
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432672"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-dlls"></a>Como: Limite de instrumentação a DLLs específicas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ Ao usar o método de criação de perfil de instrumentação, é possível limit
 7. Opcional. Para adicionar mais arquivos .dll, clique com botão direito do mouse em **Destinos** e, em seguida, selecione **Adicionar Binário de Destino**. Selecione os arquivos na caixa de diálogo **Adicionar Binário de Destino**.  
   
     > [!NOTE]
-    >  Não especifique o arquivo executável (.exe) que exerce as DLLs.  
+    > Não especifique o arquivo executável (.exe) que exerce as DLLs.  
   
 ## <a name="see-also"></a>Consulte também  
  [Controlling Data Collection](../profiling/controlling-data-collection.md)  (Controlando a coleta de dados)  

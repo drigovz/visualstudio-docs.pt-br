@@ -9,12 +9,12 @@ caps.latest.revision: 21
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: af4b6ba85982c926230100aac5c7a451df79b825
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ec7d42fe5f1db8a44f17cf3dffdfd6174a58995
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100177"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445936"
 ---
 # <a name="unit-testing-visual-c-code-in-a-store-app"></a>Executar o teste de unidade de um código Visual C# em um aplicativo da Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
  Este tópico também cria uma única solução do Visual Studio e projetos separados para os testes de unidade e a DLL que você deseja testar. Também é possível incluir os testes de unidade diretamente no projeto de DLL ou criar soluções separadas para os testes de unidade e a DLL.  
   
 > [!NOTE]
->  A comunidade do Visual Studio, Enterprise. e Professional fornece recursos adicionais para teste de unidade.  
+> A comunidade do Visual Studio, Enterprise. e Professional fornece recursos adicionais para teste de unidade.  
 > 
 > - Use um framework de teste de unidade de software livre e de terceiros que tenha criado um adaptador complementar para o gerenciador de testes da Microsoft. Também é possível analisar e exibir informações de cobertura de código para os testes.  
 >   - Execute os testes depois de cada compilação.  
@@ -211,7 +211,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
     ```  
   
     > [!TIP]
-    >  É recomendável não alterar testes que tenham sido aprovados. Em vez disso, adicione um novo teste, atualize o código para que o teste seja aprovado e adicione outro teste, e assim por diante.  
+    > É recomendável não alterar testes que tenham sido aprovados. Em vez disso, adicione um novo teste, atualize o código para que o teste seja aprovado e adicione outro teste, e assim por diante.  
     >   
     >  Quando os usuários alterarem os respectivos requisitos, desabilite os testes que não estejam mais corretos. Escreva novos testes e faça-os funcionar, um por vez, da mesma maneira incremental.  
   
@@ -222,7 +222,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
      ![Falha em RangeTest](../test/media/ute-cpp-testexplorer-rangetest-fail.png "UTE_Cpp_TestExplorer_RangeTest_Fail")  
   
     > [!TIP]
-    >  Logo após escrevê-los, verifique se cada um deles falha. Isso ajuda a impedir a facilidade de errar ao escrever um teste que nunca falha.  
+    > Logo após escrevê-los, verifique se cada um deles falha. Isso ajuda a impedir a facilidade de errar ao escrever um teste que nunca falha.  
   
 4. Aprimore o código sob teste para que o novo teste seja aprovado. Altere a função `SqareRoot` em **Rooter.cs** para:  
   
@@ -247,7 +247,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
      Os três testes agora foram aprovados.  
   
 > [!TIP]
->  Desenvolva o código adicionando testes, um de cada vez. Verifique se todos os testes passaram após cada iteração.  
+> Desenvolva o código adicionando testes, um de cada vez. Verifique se todos os testes passaram após cada iteração.  
   
 ## <a name="BKMK_Debug_a_failing_test"></a> Depurar um teste que falhou  
   
@@ -332,7 +332,7 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
 2. Escolha **Executar Tudo** para testar o método refatorado e ter certeza de que você não introduziu uma regressão.  
   
 > [!TIP]
->  Um conjunto estável de testes de unidade aprovados garante que você não introduziu bugs quando alterou o código.  
+> Um conjunto estável de testes de unidade aprovados garante que você não introduziu bugs quando alterou o código.  
   
  **Refatore o código de teste para eliminar o código duplicado.**  
   
@@ -365,4 +365,4 @@ Este tópico descreve uma maneira de criar testes de unidade para uma classe Vis
 2. Escolha **Executar Tudo** para testar o método refatorado e verifique se você não introduziu um erro.  
   
 > [!NOTE]
->  Para adicionar um método auxiliar a uma classe de teste, não adicione o atributo `[TestMethod]` ao método. O Gerenciador de Testes não registra o método a ser executado.
+> Para adicionar um método auxiliar a uma classe de teste, não adicione o atributo `[TestMethod]` ao método. O Gerenciador de Testes não registra o método a ser executado.

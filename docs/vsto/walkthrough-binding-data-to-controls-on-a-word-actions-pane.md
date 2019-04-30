@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7069da816d8f693fc38856d1218f5f9f6284dd4c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddeba1539cf68d53f4b9f931d2bcd18a159028fd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438689"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>Passo a passo: Associar dados a controles em um painel de ações do Word
   Este passo a passo demonstra a associação de dados a controles em um painel de ações no Word. Os controles de demonstram uma relação mestre/detalhes entre tabelas em um banco de dados do SQL Server.
@@ -38,7 +38,7 @@ ms.locfileid: "60063602"
 - Mostre o painel de ações quando o aplicativo é aberto.
 
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
@@ -78,7 +78,7 @@ ms.locfileid: "60063602"
 1. Se o **fontes de dados** janela não estiver visível, exibi-lo, na barra de menus, escolhendo **exibição** > **Other Windows**  >   **Fontes de dados**.
 
    > [!NOTE]
-   >  Se **Show Data Sources** não estiver disponível, clique no documento do Word e, em seguida, verifique novamente.
+   > Se **Show Data Sources** não estiver disponível, clique no documento do Word e, em seguida, verifique novamente.
 
 2. Clique em **Add New Data Source** para iniciar o **Data Source Configuration Wizard**.
 
@@ -111,7 +111,7 @@ ms.locfileid: "60063602"
 4. Selecione `SuppliersBindingNavigator` no **componente** bandeja e pressione **excluir**. Você não usará o `SuppliersBindingNavigator` neste passo a passo.
 
     > [!NOTE]
-    >  Excluindo o `SuppliersBindingNavigator` não remove todo o código que foi gerado para ele. Você pode remover esse código.
+    > Excluindo o `SuppliersBindingNavigator` não remove todo o código que foi gerado para ele. Você pode remover esse código.
 
 5. Mover a caixa de combinação para que ele está sob o rótulo e a alteração a **tamanho** propriedade **171, 21**.
 

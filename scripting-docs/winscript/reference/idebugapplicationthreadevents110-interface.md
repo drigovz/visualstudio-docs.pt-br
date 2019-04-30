@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 0051f18c67fffc9801ad326745a0dc9dd63f4391
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: b2cdde46484f95aa57404ebe6b6cb4c86ef458c9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148848"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440499"
 ---
 # <a name="idebugapplicationthreadevents110-interface"></a>Interface IDebugApplicationThreadEvents110
 Adiciona mais eventos de thread. Esses eventos são apenas locais. Ou seja, você pode se inscrever neles apenas no processo que está sendo depurado, usando o [IConnectionPoint](http://go.microsoft.com/fwlink/?LinkId=232738) aconselhá- e não recomendar métodos em objetos de thread de aplicativo do PDM (objetos que implementam [IDebugApplicationThread Interface](../../winscript/reference/idebugapplicationthread-interface.md)). Eles ocorrem no thread em que eles são provenientes.  
   
 > [!IMPORTANT]
->  Esta interface é implementada pelo PDM v11.0 e superiores. Localizado em. activdbg100.h.  
+> Esta interface é implementada pelo PDM v11.0 e superiores. Localizado em. activdbg100.h.  
   
 ## <a name="methods"></a>Métodos  
  A interface `IDebugActivationThreadEvents110` expõe os métodos a seguir.  

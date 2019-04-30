@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: eed341b5ae43f52e7df35d820012e760166e096f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd05f5ebad1a07e818e377b90aeb5e137f296cd9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073420"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443357"
 ---
 # <a name="using-visual-studio-tools-for-unity"></a>Usando o Visual Studio Tools for Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ Nesta seção, você aprenderá como usar os recursos de integração e produtiv
      ![Esse ícone mostra que VSTU está conectado ao Unity. ](../cross-platform/media/vstu-connection-connected.png "vstu_connection_connected")  
   
 > [!TIP]
->  Se o ícone de plugue mostrar uma marca de seleção, você já está conectado a uma instância do Unity.  
+> Se o ícone de plugue mostrar uma marca de seleção, você já está conectado a uma instância do Unity.  
   
  A caixa de diálogo **Selecionar Instância do Unity** exibe informações sobre cada instância do Unity a que você pode se conectar.  
   
@@ -136,7 +136,7 @@ Nesta seção, você aprenderá como usar os recursos de integração e produtiv
  O número da porta do soquete UDP pela qual esta instância do Unity está se comunicando.  
   
 > [!IMPORTANT]
->  Como as Ferramentas do Visual Studio para Unity e a instância do Unity se comunicam por um soquete de rede UDP, o firewall pode perguntar sobre ele. Se isso acontecer, você precisará autorizar a conexão para que o VSTU e o Unity possam se comunicar.  
+> Como as Ferramentas do Visual Studio para Unity e a instância do Unity se comunicam por um soquete de rede UDP, o firewall pode perguntar sobre ele. Se isso acontecer, você precisará autorizar a conexão para que o VSTU e o Unity possam se comunicar.  
   
 ### <a name="debugging-your-project-in-a-unity-player"></a> Depurando seu projeto em um Player do Unity  
  Você pode conectar as Ferramentas do Visual Studio para Unity diretamente ao seu aplicativo do Unity em execução em um player autônomo quando não estiver executando o Editor do Unity ou para depurar os problemas que são específicos à plataforma.  
@@ -154,7 +154,7 @@ Nesta seção, você aprenderá como usar os recursos de integração e produtiv
 - No Web Player do Unity, no menu de contexto, escolha **Canal de Versão** e certifique-se de que a opção **Desenvolvimento** esteja habilitada.  
   
   > [!IMPORTANT]
-  >  No Unity 4.2 e posterior, o item de menu de contexto **Canal de Versão** só está disponível no menu de contexto do Web Player quando a tecla **Alt** é pressionada à medida que o menu de contexto é aberto. Se o Web Player estiver sendo executado no Mac OS X, pressione a tecla **Opção**.  
+  > No Unity 4.2 e posterior, o item de menu de contexto **Canal de Versão** só está disponível no menu de contexto do Web Player quando a tecla **Alt** é pressionada à medida que o menu de contexto é aberto. Se o Web Player estiver sendo executado no Mac OS X, pressione a tecla **Opção**.  
   
   Finalmente, certifique-se de que você esteja conectado à instância do Unity que você deseja depurar. Para obter informações sobre como fazer isso, consulte a seção [Conectando o Visual Studio ao Unity](#connecting-visual-studio-to-unity).  
   
@@ -162,7 +162,7 @@ Nesta seção, você aprenderá como usar os recursos de integração e produtiv
  Muitos desenvolvedores do Unity estão escrevendo componentes de código como DLLs externas para que a funcionalidade que desenvolvem possa ser facilmente compartilhada com outros projetos. Ferramentas do Visual Studio para Unity facilitam a depuração do código nessas DLLs perfeitamente com outro código no seu projeto do Unity.  
   
 > [!NOTE]
->  Neste momento, as Ferramentas do Visual Studio para Unity dá suporte somente DLLs gerenciadas. Elas não oferecem suporte à depuração de DLLs de código nativo, como aquelas escritas em C++.  
+> Neste momento, as Ferramentas do Visual Studio para Unity dá suporte somente DLLs gerenciadas. Elas não oferecem suporte à depuração de DLLs de código nativo, como aquelas escritas em C++.  
   
  Observe que o cenário descrito aqui pressupõe que você tenha o código-fonte, ou seja, se você estiver desenvolvendo ou reutilizando seu próprio código primário ou se você tiver o código-fonte em uma biblioteca de terceiros e pretender implantá-lo em seu projeto do Unity como uma DLL. Esse cenário não descreve como depurar uma DLL para a qual você não tem o código-fonte.  
   

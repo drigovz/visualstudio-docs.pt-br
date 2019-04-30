@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ed55c42211222ca94587b4358bb904f9637cb3f4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 320b20fa40250ca47dd414b362059e152eba2c3b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420990"
 ---
 # <a name="imanagedaddin-interface"></a>Interface IManagedAddin
   Implementar a interface IManagedAddin para criar um componente que carrega gerenciados VSTO Add-ins. Essa interface foi adicionada no 2007 Microsoft Office system.
@@ -82,7 +82,7 @@ interface IManagedAddin : IUnknown
  Aplicativos do Microsoft Office usam este CLSID para criar o objeto COM que implementa IManagedAddin.
 
 > [!CAUTION]
->  Este CLSID também é usado pelo *vstoloader. dll* no [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Portanto, se você usar IManagedAddin para criar seu próprio carregador de suplemento do VSTO e o componente de tempo de execução, você não pode implantar seu componente para computadores que estão executando suplementos do VSTO que dependem de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
+> Este CLSID também é usado pelo *vstoloader. dll* no [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]. Portanto, se você usar IManagedAddin para criar seu próprio carregador de suplemento do VSTO e o componente de tempo de execução, você não pode implantar seu componente para computadores que estão executando suplementos do VSTO que dependem de [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)].
 
 ## <a name="see-also"></a>Consulte também
 - [Referência de API não gerenciada &#40;desenvolvimento do Office no Visual Studio&#41;](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

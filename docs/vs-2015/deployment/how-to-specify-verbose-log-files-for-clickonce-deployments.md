@@ -16,12 +16,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e200d0918e3d346f71da6ec2184e07e7d8433174
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 78fa278952004348e035a675a1e159b2164285b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441616"
 ---
 # <a name="how-to-specify-verbose-log-files-for-clickonce-deployments"></a>Como: Especificar arquivos de log detalhados para implantações do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60069764"
 [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] mantém os arquivos de log de atividades para todas as implantações. Esses logs documentar detalhes referentes à instalação, inicializando, atualizando e desinstalando uma [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação. Para aumentar o detalhe que [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] gravações para esses arquivos de log, use o Editor do registro (**regedit.exe**) para especificar o nível de detalhamento.  
   
 > [!CAUTION]
->  Se você usar o Editor do Registro incorretamente, poderá causar sérios problemas que talvez exijam a reinstalação do sistema operacional. Use o Editor do Registro por sua conta e risco.  
+> Se você usar o Editor do Registro incorretamente, poderá causar sérios problemas que talvez exijam a reinstalação do sistema operacional. Use o Editor do Registro por sua conta e risco.  
   
  O procedimento a seguir descreve como especificar o nível de detalhamento para [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] arquivos de log para o usuário atual. Para reduzir o nível de detalhamento, remova esse valor do registro.  
   

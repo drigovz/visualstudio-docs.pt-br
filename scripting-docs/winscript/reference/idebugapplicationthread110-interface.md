@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: a40b1a6f194ef0f335d8c6516b101250b0d980fe
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 44df7168c241c9a750354e1a603d6c5ba96dabd2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58158403"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440541"
 ---
 # <a name="idebugapplicationthread110-interface"></a>Interface IDebugApplicationThread110
 Fornece mais funcionalidade para o [IDebugApplicationThread Interface](../../winscript/reference/idebugapplicationthread-interface.md) interface.  
   
 > [!IMPORTANT]
->  Esta interface é implementada pelo PDM v11.0 e superiores. Localizado em. activdbg100.h.  
+> Esta interface é implementada pelo PDM v11.0 e superiores. Localizado em. activdbg100.h.  
   
 ## <a name="methods"></a>Métodos  
  A interface `IDebugApplicationThread110` expõe os métodos a seguir.  

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 55a27a8d0c5c119870e92bfbf7cff4b85f90cf99
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 84a62fc796243172c9130c8113c4e6d289ed3092
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447019"
 ---
 # <a name="publish-page-project-designer-office-development-in-visual-studio"></a>Página de publicação, Designer de projeto (desenvolvimento do Office no Visual Studio)
   O **Publish** página do **Designer de projeto** é usado para configurar as propriedades de implantação.
@@ -29,7 +29,7 @@ ms.locfileid: "60103506"
  Para acessar essa página, selecione o projeto no **Gerenciador de soluções**e, em seguida, na **Project** menu, escolha *Projectname* **propriedades** . Se o **Publish** página não for exibida, escolha o **publicar** guia.
 
 > [!NOTE]
->  Você também pode definir o local de publicação **Assistente de publicação**. Para obter mais informações, confira [Como: Publicar uma solução do Office usando o ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
+> Você também pode definir o local de publicação **Assistente de publicação**. Para obter mais informações, confira [Como: Publicar uma solução do Office usando o ClickOnce](https://msdn.microsoft.com/2b6c247e-bc04-4ce4-bb64-c4e79bb3d5b8).
 
 ## <a name="uielement-list"></a>Lista UIElement
  **Pasta local (site da web, servidor ftp ou caminho do arquivo) de publicação** necessária.

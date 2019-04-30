@@ -13,12 +13,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 766ecde2da88c2a666470c790f6399cce198b2a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b1ad310385d5c8c8cecaee408d049a172d53e1e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053150"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436843"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>Como: Criar ou atualizar políticas de check-in de análise de código padrão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60053150"
 Você pode exigir que a análise de código ser executado em todos os projetos de código em um projeto de equipe usando a análise de código check-in de política. Exigir que a análise de código pode melhorar a qualidade do código que é verificado na base de código.  
   
 > [!NOTE]
->  Esse recurso está disponível apenas se você estiver usando o Team Foundation Server.  
+> Esse recurso está disponível apenas se você estiver usando o Team Foundation Server.  
   
  Políticas do check-in de análise de código são definidas nas configurações do projeto de equipe e se aplicam a cada projeto de código no projeto de equipe. Execuções de análise de código são configuradas para projetos de código no arquivo de projeto (xxproj) para o projeto de código. Execuções de análise de código são executadas no computador local. Quando você habilitar uma política de check-in do análise código, arquivos em um projeto de código são check-in devem ser compilados após sua última edição e uma análise de código que contém, no mínimo, as regras nas configurações do projeto de equipe devem ser executadas no computador em que o c foram feitas alterações pendentes.  
   

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f9f381fbd9c6cb3f4f2128adc3910516be42962
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: ed96b7c893ba3ececb33be5dda55093b70c28659
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681654"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434687"
 ---
 # <a name="sccdiff-function"></a>Função SccDiff
 Esta função exibe (ou, opcionalmente, apenas verifica) as diferenças entre o arquivo atual (no disco local) e a última versão de check-in na fonte de sistema de controle.
@@ -77,7 +77,7 @@ SCCRTN SccDiff(
  Como uma otimização de desempenho, o plug-in de controle de origem pode usar uma alternativa com base em uma soma de verificação ou um carimbo de hora, em vez da comparação byte por byte chamado para `SCC_DIFF_CONTENTS`: essas formas de comparação são, obviamente, mais rápido, mas menos confiável. Nem todos os sistemas de controle do código-fonte podem dar suporte a esses métodos alternativos de comparação, e o plug-in pode ter a cair para uma comparação de conteúdo. Controle de origem todos os plug-ins deve, no mínimo, dar suporte a uma comparação de conteúdo.
 
 > [!NOTE]
->  Os sinalizadores de diferença rápido são mutuamente exclusivos. Ele é válido não passar nenhum sinalizador, mas não é válido para transmitir simultaneamente mais de um. `SCC_DIFF_QUICK_DIFF`, que é uma máscara que combina todos os sinalizadores, pode ser usado para testar, mas nunca deve ser passado como um parâmetro.
+> Os sinalizadores de diferença rápido são mutuamente exclusivos. Ele é válido não passar nenhum sinalizador, mas não é válido para transmitir simultaneamente mais de um. `SCC_DIFF_QUICK_DIFF`, que é uma máscara que combina todos os sinalizadores, pode ser usado para testar, mas nunca deve ser passado como um parâmetro.
 
 |`fOption`|Significado|
 |---------------|-------------|

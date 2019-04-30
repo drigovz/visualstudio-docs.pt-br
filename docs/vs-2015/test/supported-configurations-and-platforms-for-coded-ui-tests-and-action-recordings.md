@@ -10,12 +10,12 @@ ms.assetid: 544742b5-4ec1-4d51-b941-72b2f6ff17bc
 caps.latest.revision: 108
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3337aed321d642fac5ef065d78cfd8cb1191c3a8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 880f0096f33bf08d3415b79edfb8445143e18587
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109030"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446011"
 ---
 # <a name="supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings"></a>Configurações e plataformas compatíveis para testes de IU codificados e gravações das ações
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60109030"
 As configurações e as plataformas de testes de IU codificados com suporte no Visual Studio Enterprise são listadas na tabela a seguir. Essas configurações também se aplicam às gravações de ação criadas usando o [!INCLUDE[MTRlong](../includes/mtrlong-md.md)].  
   
 > [!NOTE]
->  O processo de teste de IU codificado deve ter os mesmos privilégios que o aplicativo testado.  
+> O processo de teste de IU codificado deve ter os mesmos privilégios que o aplicativo testado.  
   
  **Requisitos**  
   
@@ -39,7 +39,7 @@ As configurações e as plataformas de testes de IU codificados com suporte no V
 |.NET|.NET 2.0, 3.0, 3.5, 4 e 4.5. **Observação:** o [!INCLUDE[TCMext](../includes/tcmext-md.md)] e o Visual Studio exigirão o .NET 4 para funcionar. No entanto, há suporte para os aplicativos desenvolvidos usando as versões listadas do .NET.|  
   
 > [!NOTE]
->  *Sincronização de interface do usuário* é um recurso em que a reprodução é verificada na fila de mensagens de cada controle. Se um controle não respondeu ao evento enviado para ele, o evento será enviado novamente.  
+> *Sincronização de interface do usuário* é um recurso em que a reprodução é verificada na fila de mensagens de cada controle. Se um controle não respondeu ao evento enviado para ele, o evento será enviado novamente.  
   
 ## <a name="platform-support"></a>Suporte de plataforma  
   

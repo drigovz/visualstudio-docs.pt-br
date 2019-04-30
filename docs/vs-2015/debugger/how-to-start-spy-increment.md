@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4ade2b369cd1c9e0371acacfcd63b06a2d89e58a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 36555d9b00c9aff3f594ae2217afe8434bb41542
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066696"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442749"
 ---
 # <a name="how-to-start-spy"></a>Como: Iniciar Spy++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Você pode iniciar o Spy + + do Visual Studio ou em um prompt de comando.
  Ao iniciar o Spy + +, se uma mensagem é exibida para pedir permissão para fazer alterações no computador, clique em **Sim**.  
   
 > [!NOTE]
->  Você pode executar apenas uma instância do Spy + +. Se você tentar executar outra instância, ele apenas faz com que a instância em execução no momento obter o foco.  
+> Você pode executar apenas uma instância do Spy + +. Se você tentar executar outra instância, ele apenas faz com que a instância em execução no momento obter o foco.  
   
 ### <a name="to-start-spy-from-visual-studio"></a>Para iniciar o Spy + + do Visual Studio  
   
@@ -35,7 +35,7 @@ Você pode iniciar o Spy + + do Visual Studio ou em um prompt de comando.
      Como o Spy + + é executado de forma independente, depois de iniciada, você pode fechar o Visual Studio.  
   
     > [!NOTE]
-    >  Quando você registra mensagens com Spy + +, pode fazer com que o sistema operacional executar mais lentamente.  
+    > Quando você registra mensagens com Spy + +, pode fazer com que o sistema operacional executar mais lentamente.  
   
 ### <a name="to-start-spy-at-a-command-prompt"></a>Para iniciar o Spy + + em um prompt de comando  
   

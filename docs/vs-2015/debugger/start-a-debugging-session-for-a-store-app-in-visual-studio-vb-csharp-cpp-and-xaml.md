@@ -34,12 +34,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fc5dfaa203e3e915075ad819fa859be46b9e2b7a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dd61ea128093735a69ad9b1f30cddc593b5856a4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440435"
 ---
 # <a name="start-a-debugging-session-for-a-store-app-in-visual-studio-vb-c-c-and-xaml"></a>Iniciar uma sessão de depuração de um aplicativo da Store no Visual Studio (VB, C#, C++ e XAML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
  Este tópico descreve como iniciar uma sessão de depuração para aplicativos da Windows Store escritos em XAML e Visual C++, Visual C# ou Visual Basic. Depurar um aplicativo envolve configurar a sessão de depuração e escolher a maneira de iniciar o aplicativo.
 
 > [!NOTE]
->  Para aplicativos escritos em JavaScript e HTML, consulte [iniciar uma sessão de depuração (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
+> Para aplicativos escritos em JavaScript e HTML, consulte [iniciar uma sessão de depuração (JavaScript)](../debugger/start-a-debugging-session-for-store-apps-in-visual-studio-javascript.md).
 
 ## <a name="BKMK_In_this_topic"></a> Neste tópico
  [A maneira fácil de iniciar a depuração](#BKMK_The_easy_way_to_start_debugging)
@@ -152,7 +152,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
     ![Marque a caixa de diálogo Conexão de depurador remoto](../debugger/media/vsrun-selectremotedebuggerdlg.png "VSRUN_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  O **Selecionar Conexão de depurador remoto** caixa de diálogo exibe computadores que estão na sub-rede local e os computadores que estão diretamente conectados ao computador do Visual Studio por um cabo Ethernet. Para especificar outro computador, digite o nome na **nome da máquina** caixa.
+  > O **Selecionar Conexão de depurador remoto** caixa de diálogo exibe computadores que estão na sub-rede local e os computadores que estão diretamente conectados ao computador do Visual Studio por um cabo Ethernet. Para especificar outro computador, digite o nome na **nome da máquina** caixa.
 
   ![Se aplica somente ao Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -210,7 +210,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
  Por padrão, você deve fornecer credenciais para executar o depurador remoto.
 
 > [!IMPORTANT]
->  Você também pode optar por executar o depurador remoto no Modo Sem Autenticação, mas isso é altamente desaconselhável. Nesse modo, não há nenhuma segurança de rede. Escolha o Modo Sem Autenticação somente se você tiver certeza de que a rede não corre risco de tráfego mal-intencionado ou hostil.
+> Você também pode optar por executar o depurador remoto no Modo Sem Autenticação, mas isso é altamente desaconselhável. Nesse modo, não há nenhuma segurança de rede. Escolha o Modo Sem Autenticação somente se você tiver certeza de que a rede não corre risco de tráfego mal-intencionado ou hostil.
 
  Para remover a requisição de autenticação:
 
@@ -250,7 +250,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
  Para definir um aplicativo instalado para ser executado no modo de depuração, faça o seguinte:
 
 > [!NOTE]
->  O aplicativo não deve estar em execução quando você iniciar este procedimento.
+> O aplicativo não deve estar em execução quando você iniciar este procedimento.
 
 1. Sobre o **Debug** menu, escolha **depurar pacote do aplicativo instalado**
 

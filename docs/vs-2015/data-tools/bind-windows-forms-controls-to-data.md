@@ -19,12 +19,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d2aefe68761d31f87d84c9215a6187c28e7b471b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3541dada6167bd2f0a95913d9ccc385dc3e5ccc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439478"
 ---
 # <a name="bind-windows-forms-controls-to-data"></a>Associar controles do Windows Forms a dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Você pode associar a fontes de dados a controles arrastando objetos do **fontes
  ![Associar a fonte de dados para obter detalhes](../data-tools/media/raddata-bind-data-source-to-details.png "raddata fonte de dados de ligação para obter detalhes")  
   
 > [!IMPORTANT]
->  Observe que, na ilustração anterior, você arrasta da propriedade Orders de tabela de clientes, não da tabela Orders. Fazendo a ligação com a propriedade Orders, feitos no DataGridView de comandos de navegação são refletidos imediatamente nos controles de detalhes. Se você arrastou da tabela Pedidos, os controles ainda poderá estar associados ao conjunto de dados, mas não eles não seriam ser sincronizados com o DataGridView.  
+> Observe que, na ilustração anterior, você arrasta da propriedade Orders de tabela de clientes, não da tabela Orders. Fazendo a ligação com a propriedade Orders, feitos no DataGridView de comandos de navegação são refletidos imediatamente nos controles de detalhes. Se você arrastou da tabela Pedidos, os controles ainda poderá estar associados ao conjunto de dados, mas não eles não seriam ser sincronizados com o DataGridView.  
   
  A ilustração a seguir mostra o padrão controles ligados a dados que são adicionados ao formulário depois que a propriedade de pedidos na tabela Customers é associada a "Detalhes" a **fontes de dados** janela.  
   

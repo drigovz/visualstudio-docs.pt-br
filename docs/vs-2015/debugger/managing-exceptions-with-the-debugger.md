@@ -33,12 +33,12 @@ caps.latest.revision: 40
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2a8bc2e1f4c78e32db6fa5e09ec50bdd182f4fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6e50f19c4889e5f15c7dc3d458d1347912ecbc1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040958"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439172"
 ---
 # <a name="managing-exceptions-with-the-debugger"></a>Gerenciando exceções com o depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,10 +54,10 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
 - Se você tiver definido [Just My Code](../debugger/just-my-code.md), e o depurador está definido como interromper qualquer exceção que não é tratada no código do usuário.  
   
 > [!NOTE]
->  O ASP.NET tem um manipulador de exceção de nível superior que mostra páginas de erro em um navegador. Ele não interromper a execução, a menos que **Just My Code** está ativado. Por exemplo, consulte [definindo o depurador para continuar em exceções sem tratamento do usuário](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) abaixo.  
+> O ASP.NET tem um manipulador de exceção de nível superior que mostra páginas de erro em um navegador. Ele não interromper a execução, a menos que **Just My Code** está ativado. Por exemplo, consulte [definindo o depurador para continuar em exceções sem tratamento do usuário](../debugger/managing-exceptions-with-the-debugger.md#BKMK_UserUnhandled) abaixo.  
   
 > [!NOTE]
->  Em um aplicativo Visual Basic, o depurador gerencia todos os erros como exceções, mesmo se você usar em manipuladores de erro – estilo de erro.  
+> Em um aplicativo Visual Basic, o depurador gerencia todos os erros como exceções, mesmo se você usar em manipuladores de erro – estilo de erro.  
   
 ## <a name="managing-exceptions-with-the-exception-settings-window"></a>Gerenciando exceções com a janela de configurações de exceção  
  Você pode usar o **configurações de exceção** janela para especificar quais exceções (ou conjuntos de exceções) fará com que o depurador seja interrompido e, no ponto em que você deseja que sua interrupção. Você pode adicionar ou excluir exceções ou especificar exceções ao interromper em. Abrir essa janela quando uma solução é aberta clicando **depurar / Windows / configurações de exceção**.  
@@ -162,7 +162,7 @@ Uma exceção é uma indicação de um estado de erro que ocorre enquanto um pro
  Se você quiser adicionar uma exceção para as exceções de acesso de memória de GPU, exceções de tempo de execução do JavaScript ou categorias de exceções do Win32, você precisa incluir o código de erro, bem como a descrição.  
   
 > [!TIP]
->  Verifique a ortografia. O **configurações de exceção** janela não verifica a existência de uma exceção adicionada. Portanto, se você digitar **Sytem.UriTemplateMatchException**, você obterá uma entrada para essa exceção (e não para **System.UriTemplateMatchException**).  
+> Verifique a ortografia. O **configurações de exceção** janela não verifica a existência de uma exceção adicionada. Portanto, se você digitar **Sytem.UriTemplateMatchException**, você obterá uma entrada para essa exceção (e não para **System.UriTemplateMatchException**).  
   
  Configurações de exceção são persistidas no arquivo. suo da solução, para que elas se aplicam a uma determinada solução. É possível reutilizar configurações de exceção específicos em soluções. Neste ponto, apenas as exceções adicionadas são persistentes; não são excluídos de exceções. Em outras palavras, você pode adicionar uma exceção, feche e reabra a solução e a exceção ainda estará lá. Mas se você excluir uma exceção e fechar/reabrir a solução, a exceção reaparecerá.  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9b373551444087ad8ff3789d927267a30efd5e4d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 335058a6521f10313c94cbfbdd9657348cc90963
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59668906"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438071"
 ---
 # <a name="output-window"></a>Janela Saída
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "59668906"
 A Janela de **Saída** pode exibir mensagens de status para vários recursos no IDE (ambiente de desenvolvimento integrado). Para abrir a Janela de **Saída**, na barra de menus, escolha **Exibir/Saída** (ou clique em CTRL+ALT+O).  
   
 > [!WARNING]
->  A Janela de Saída não é exibida no menu Exibir nas edições do Visual Studio Express. Para mostrá-la, use as teclas de atalho CTRL+ALT+O.  
+> A Janela de Saída não é exibida no menu Exibir nas edições do Visual Studio Express. Para mostrá-la, use as teclas de atalho CTRL+ALT+O.  
   
 ## <a name="toolbar"></a>Barra de ferramentas  
  **Mostrar saída de**  

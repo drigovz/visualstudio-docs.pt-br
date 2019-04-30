@@ -28,12 +28,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4d80f8b9a6786d84d645a91dead2ac05a829718b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1277370ca14044755988affc5ccf2bf1fb851a09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60115062"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443201"
 ---
 # <a name="viewing-the-structure-of-code"></a>Exibindo a estrutura do código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ ms.locfileid: "60115062"
  Se tiver o Visual Studio Enterprise, você pode usar mapas de código para visualizar a estrutura do código e suas dependências em toda a solução, bem como detalhar as partes do código que lhe interessarem. Para obter mais informações, consulte [Mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md).  
   
 > [!NOTE]
->  A edição do Visual Studio e as configurações que você está usando podem afetar os recursos no IDE. Eles podem ser diferentes dos descritos neste tópico.  
+> A edição do Visual Studio e as configurações que você está usando podem afetar os recursos no IDE. Eles podem ser diferentes dos descritos neste tópico.  
   
 ## <a name="BKMK_ClassView"></a> Modo de Exibição de Classe (Visual Basic, C#, C++)  
  O **Modo de Exibição de Classe** é mostrado como parte do **Gerenciador de Soluções**, bem como em uma janela separada. A janela **Modo de Exibição de Classe** exibe os elementos de um aplicativo. O painel superior exibe namespaces, tipos, interfaces, enumerações e classes, e o painel inferior exibe os membros que pertencem ao tipo selecionado no painel superior. Usando essa janela, você pode passar para definições de membro no código-fonte (ou no **Pesquisador de Objetos** se o elemento for definido fora de sua solução).  

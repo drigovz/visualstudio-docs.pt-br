@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 012ab6828364af155b52bc19d9a83564b2126a6b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee7657b12741cf65583317ba87bd465e15eb02bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088672"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440975"
 ---
 # <a name="link-a-use-case-to-documents-and-diagrams"></a>Vincular um caso de uso a documentos e diagramas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Você pode vincular um caso de uso em um diagrama de caso de uso para outro diag
 3. Com o novo artefato selecionado, digite ou cole a URL para o **hiperlink** propriedade.  
   
     > [!NOTE]
-    >  Se você quiser fornecer um caminho de arquivo, é melhor escolher um arquivo em um espaço de trabalho comuns (começando com '\\\\'), ou um arquivo em sua solução do Visual Studio. Isso garante que o caminho do arquivo permanecerá válido no computador de outro membro da equipe, ou se a solução é movida. Para adicionar um documento como um documento do Word à sua solução, clique com botão direito na solução no Gerenciador de soluções, aponte para **Add** e, em seguida, clique em **Item existente**.  
+    > Se você quiser fornecer um caminho de arquivo, é melhor escolher um arquivo em um espaço de trabalho comuns (começando com '\\\\'), ou um arquivo em sua solução do Visual Studio. Isso garante que o caminho do arquivo permanecerá válido no computador de outro membro da equipe, ou se a solução é movida. Para adicionar um documento como um documento do Word à sua solução, clique com botão direito na solução no Gerenciador de soluções, aponte para **Add** e, em seguida, clique em **Item existente**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Diagrama de casos de uso UML: Referência](../modeling/uml-use-case-diagrams-reference.md)   

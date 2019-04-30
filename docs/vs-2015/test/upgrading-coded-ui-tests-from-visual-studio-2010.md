@@ -8,12 +8,12 @@ ms.assetid: 11232a83-73ea-46bd-bc0c-46f74f6e3a42
 caps.latest.revision: 35
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 58bfe0a2a6c337081ebb96464a701decb73cc022
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 42db6024353e3b26ddcaf6b5fa838ff791d964f4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080690"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445900"
 ---
 # <a name="upgrading-coded-ui-tests-from-visual-studio-2010"></a>Atualizando testes de IU codificados a partir do Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,19 +25,19 @@ Projetos de teste que contêm testes de IU codificados criados no [!INCLUDE[vs_d
 - Visual Studio Enterprise
 
 > [!NOTE]
->  O Visual Studio inclui mais de um tipo de projeto de teste. Se você criar um novo teste de IU codificado, ele será criado em um tipo de projeto de teste de IU codificado. Para saber mais, consulte [Atualizar testes de versões anteriores do Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
+> O Visual Studio inclui mais de um tipo de projeto de teste. Se você criar um novo teste de IU codificado, ele será criado em um tipo de projeto de teste de IU codificado. Para saber mais, consulte [Atualizar testes de versões anteriores do Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52).
 
 > [!WARNING]
->  Projetos de teste do [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] que contêm testes de IU codificados devem ser recriados ao abri-los no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou no [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] lado a lado com [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
+> Projetos de teste do [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] que contêm testes de IU codificados devem ser recriados ao abri-los no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou no [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] lado a lado com [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 > [!WARNING]
->  Quando um projeto de teste criado no [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] e que contém somente os testes de unidade é aberto no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], não é possível adicionar testes de IU codificados a ele. Da mesma forma, não é possível adicionar um teste de IU codificado a um projeto de teste de unidade que foi criado no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
+> Quando um projeto de teste criado no [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] e que contém somente os testes de unidade é aberto no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], não é possível adicionar testes de IU codificados a ele. Da mesma forma, não é possível adicionar um teste de IU codificado a um projeto de teste de unidade que foi criado no [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 ## <a name="compatibility-issues-between-visual-studio-2010-and-visual-studio-2012"></a>Problemas de compatibilidade entre o Visual Studio 2010 e o Visual Studio 2012
  A tabela a seguir lista os problemas dos quais você deve estar ciente ao migrar testes de IU codificados entre o [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] e o [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 > [!CAUTION]
->  Há um problema conhecido no qual as referências em projetos de teste de IU codificados não aparecem no Gerenciador de soluções. Para saber mais, consulte o arquivo Leiame na mídia de instalação do [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
+> Há um problema conhecido no qual as referências em projetos de teste de IU codificados não aparecem no Gerenciador de soluções. Para saber mais, consulte o arquivo Leiame na mídia de instalação do [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)].
 
 |Funcionalidade de IU codificada|Problema|Solução|
 |----------------------------|-----------|--------------|

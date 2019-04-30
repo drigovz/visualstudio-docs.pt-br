@@ -18,12 +18,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca7a85bf7ace1f9aeb0e47e031cda5f793df2331
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa8fbfd8837fb35617b79089fffd11ea3b8d2e93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444533"
 ---
 # <a name="refactoring-c"></a>Refatoração (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Refatoração é o processo de aperfeiçoar seu código após ele ter sido grava
  Se o compilador não tem uma compreensão completa de seu programa, e é possível que o mecanismo de refatoração não pode atualizar todas as referências apropriadas, a caixa de diálogo de aviso é exibida. Essa caixa de diálogo de aviso também fornece uma oportunidade para que você possa visualizar seu código na **visualizar alterações** caixa de diálogo antes de confirmar as alterações.  
   
 > [!NOTE]
->  Se um método contém um erro de sintaxe (que indica o IDE com um sublinhado ondulado vermelho), o mecanismo de refatoração não atualizará todas as referências a um elemento dentro do método. O exemplo a seguir ilustra esse comportamento.  
+> Se um método contém um erro de sintaxe (que indica o IDE com um sublinhado ondulado vermelho), o mecanismo de refatoração não atualizará todas as referências a um elemento dentro do método. O exemplo a seguir ilustra esse comportamento.  
   
  Por padrão, se você executar uma operação de refatoração sem referência a visualização é alterado é detectado um erro de compilação em seu programa e o ambiente de desenvolvimento exibe essa caixa de diálogo de aviso.  
   

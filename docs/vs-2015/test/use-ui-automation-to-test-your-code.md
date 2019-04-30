@@ -17,12 +17,12 @@ ms.assetid: ad9e3eaa-ab86-436e-95b8-dc20eb1f8b2a
 caps.latest.revision: 87
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8840c570d4de2544a5cdb4831f083e5a3598ca72
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f9a7d4288258ab3e90a7eec6ba3de7ac6892ee93
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113783"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442898"
 ---
 # <a name="use-ui-automation-to-test-your-code"></a>Usar automação de interface do usuário para testar código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -98,7 +98,7 @@ Os testes automatizados que orientam o aplicativo por meio da interface do usuá
     **Para pausar o registro**, por exemplo, se você precisar lidar com emails recebidos, escolha **Pausar**.
 
    > [!WARNING]
-   >  Todas as ações realizadas na área de trabalho serão registradas. Pause a gravação se estiver realizando ações que possam levar à exclusão de dados confidenciais na gravação.
+   > Todas as ações realizadas na área de trabalho serão registradas. Pause a gravação se estiver realizando ações que possam levar à exclusão de dados confidenciais na gravação.
 
     **Para excluir ações** registradas por equívoco, escolha **Editar Ações**.
 
@@ -113,7 +113,7 @@ Os testes automatizados que orientam o aplicativo por meio da interface do usuá
     ![Elemento de destino do teste de IU codificado](../test/media/codedui-1.png "CodedUI_1")
 
    > [!TIP]
-   >  Alterne entre o registro de ações e a verificação de valores. Gere códigos no final de cada sequência de ações ou verificações. Se quiser, você poderá inserir novas ações e verificações depois.
+   > Alterne entre o registro de ações e a verificação de valores. Gere códigos no final de cada sequência de ações ou verificações. Se quiser, você poderá inserir novas ações e verificações depois.
 
     Para obter mais detalhes, consulte [Validando Propriedades de Controles](#VerifyingCodeUsingCUITGenerateAssertions).
 
@@ -230,7 +230,7 @@ Os testes automatizados que orientam o aplicativo por meio da interface do usuá
   Para usar o teclado e selecionar um controle de interface de usuário, focalize o controle usando o mouse. Em seguida, mantenha as teclas **Ctrl** e **I** pressionadas simultaneamente. Solte as teclas. O controle é registrado pelo Construtor de Teste de IU Codificado.
 
 > [!WARNING]
->  Se usar o Microsoft Lync, feche o Lync antes de iniciar o Construtor de Teste de IU Codificado. O Microsoft Lync interfere no atalho de teclado **Ctrl+I**.
+> Se usar o Microsoft Lync, feche o Lync antes de iniciar o Construtor de Teste de IU Codificado. O Microsoft Lync interfere no atalho de teclado **Ctrl+I**.
 
  *Não consigo registrar uma passagem do mouse sobre um controle. Existe uma solução alternativa para isso?*
  **Registrar manualmente passagens do mouse**
@@ -255,7 +255,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
  Se necessário, a atribuição de teclado padrão de Ctrl+Shift+R usada para aplicar eventos de passagem do mouse nos testes de IU codificados pode ser configurada para usar teclas diferentes.
 
 > [!WARNING]
->  Você não deve alterar as atribuições de teclado para eventos de passagem do mouse em circunstâncias comuns. Tenha cuidado ao definir a atribuição de teclado. A opção talvez já esteja em uso em outro lugar dentro do Visual Studio ou no aplicativo que está sendo testado.
+> Você não deve alterar as atribuições de teclado para eventos de passagem do mouse em circunstâncias comuns. Tenha cuidado ao definir a atribuição de teclado. A opção talvez já esteja em uso em outro lugar dentro do Visual Studio ou no aplicativo que está sendo testado.
 
  Para alterar as atribuições de teclado, você deve modificar o seguinte arquivo de configuração:
 
@@ -356,7 +356,7 @@ Mouse.Hover(uIItem1Text, new Point(87, 9));
   ```
 
   > [!WARNING]
-  >  Você não deve editar esse arquivo, porque ele será registrado quando mais testes forem criados.
+  > Você não deve editar esse arquivo, porque ele será registrado quando mais testes forem criados.
 
    É possível criar versões adaptadas desses métodos copiando-os em UIMap.cs. Por exemplo, você poderia criar uma versão parametrizada que seria chamada a partir de um método de teste:
 

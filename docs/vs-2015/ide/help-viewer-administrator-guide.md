@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 51dfdc95748690f43809244dc14ae2662d8aec39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b00f89b60c7e884bfaf71e971722530b44a78b4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086592"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445689"
 ---
 # <a name="help-viewer-administrator-guide"></a>Guia do administrador do Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ O Visualizador da Ajuda permite que você gerencie instalações da ajuda local 
 - A fonte padrão para a ajuda ainda será online.  
   
   > [!TIP]
-  >  Você pode alterar a fonte padrão da Ajuda modificando a chave do Registro HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Para obter mais informações, consulte [Substituições do Gerenciador de Conteúdo da Ajuda](../ide/help-content-manager-overrides.md).  
+  > Você pode alterar a fonte padrão da Ajuda modificando a chave do Registro HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\14.0\help\UseOnlineHelp. Para obter mais informações, consulte [Substituições do Gerenciador de Conteúdo da Ajuda](../ide/help-content-manager-overrides.md).  
   
 - Os clientes serão solicitados ainda a instalar o conteúdo da ajuda básica na primeira inicialização do Visual Studio. Você pode desabilitar esse prompt alterando a chave do Registro HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\14.0\Help\DisableFirstRunHelpSelection.  
   
@@ -78,7 +78,7 @@ O Visualizador da Ajuda permite que você gerencie instalações da ajuda local 
 - Os usuários devem ter direitos de administrador para atualizar, adicionar, ou remover o conteúdo da ajuda local depois que foi instalado.  
   
   > [!TIP]
-  >  Se os usuários não tiverem direitos de administrador, é recomendável que você desabilite a guia Gerenciar Conteúdo no Visualizador da Ajuda. Para obter mais informações, consulte [Substituições do Gerenciador de Conteúdo da Ajuda](../ide/help-content-manager-overrides.md).  
+  > Se os usuários não tiverem direitos de administrador, é recomendável que você desabilite a guia Gerenciar Conteúdo no Visualizador da Ajuda. Para obter mais informações, consulte [Substituições do Gerenciador de Conteúdo da Ajuda](../ide/help-content-manager-overrides.md).  
   
   Restrições:  
   

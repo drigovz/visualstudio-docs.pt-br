@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b7d8b859efa5fac2e3643f4d3a0bd694cd2edd9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 04842202e8534c551212d7322ab74e9b0ace5848
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924032"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446188"
 ---
 # <a name="prefetch-content-for-windows-store-apps"></a>Executar pré-busca de conteúdo para aplicativos da Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
    Agora você pode depurar, testar ou analisar seu aplicativo com os recursos Web pré-buscados.  
   
 > [!NOTE]
->  Repita estas etapas sempre que adicionarem ou modificar o conteúdo da Web especificado.  
+> Repita estas etapas sempre que adicionarem ou modificar o conteúdo da Web especificado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Postagem no blog: Acionar a pré-busca para aplicativos da Windows Store no Visual Studio 2013 atualização 2](http://blogs.msdn.com/b/visualstudioalm/archive/2014/02/06/triggering-prefetch-for-windows-store-apps-in-visual-studio-2013-update-2.aspx)

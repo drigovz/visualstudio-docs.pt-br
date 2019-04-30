@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d8aefab319b9b197b9b7df0e23fec71aa3cb64d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c729896083c7d32a48ba39906d8e9a0ebde4b59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039305"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420946"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>Como: Validar dados quando uma nova linha é adicionada a um controle ListObject
   Os usuários podem adicionar novas linhas para um <xref:Microsoft.Office.Tools.Excel.ListObject> controle que está associado a dados. Você pode validar os dados do usuário antes de confirmar as alterações à fonte de dados.
@@ -30,7 +30,7 @@ ms.locfileid: "60039305"
  Sempre que uma linha é adicionada a um <xref:Microsoft.Office.Tools.Excel.ListObject> que está associado a dados, o <xref:Microsoft.Office.Tools.Excel.ListObject.BeforeAddDataBoundRow> é gerado. Você pode manipular esse evento para executar a validação de dados. Por exemplo, se seu aplicativo exigir que somente os funcionários entre as idades de 18 e 65 podem ser adicionados à fonte de dados, verifique se a idade inserida cai dentro desse intervalo antes da linha será adicionada.
 
 > [!NOTE]
->  Você sempre deve verificar a entrada do usuário no servidor, além do cliente. Para obter mais informações, consulte [proteger aplicativos cliente](/dotnet/framework/data/adonet/secure-client-applications).
+> Você sempre deve verificar a entrada do usuário no servidor, além do cliente. Para obter mais informações, consulte [proteger aplicativos cliente](/dotnet/framework/data/adonet/secure-client-applications).
 
 ### <a name="to-validate-data-when-a-new-row-is-added-to-data-bound-listobject"></a>Para validar dados quando uma nova linha é adicionada à associação de dados ListObject
 

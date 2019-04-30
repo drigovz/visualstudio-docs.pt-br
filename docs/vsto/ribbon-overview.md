@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c2d06098d1643f4c9b5e64206cdf94362a2c97b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8697a49c57840d358eeaa597fe984b6671958b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446957"
 ---
 # <a name="ribbon-overview"></a>Visão geral da faixa de opções
   A faixa de opções é uma maneira de organizar os comandos relacionados para que eles são mais fáceis de encontrar. Comandos são exibidos como controles da faixa de opções. Controles são organizados em *grupos* ao longo de uma faixa horizontal na borda superior da janela do aplicativo. Grupos relacionados são organizados em guias.
@@ -49,7 +49,7 @@ ms.locfileid: "60040140"
 - Adicione grupos personalizados a uma guia interna ou personalizada.
 
   > [!NOTE]
-  >  Uma guia interna ou grupo é aquele que já existe na faixa de opções de um aplicativo do Microsoft Office. Por exemplo, o **dados** guia é uma guia interna no Excel. O **conexões** é um grupo interno sobre o **dados** guia.
+  > Uma guia interna ou grupo é aquele que já existe na faixa de opções de um aplicativo do Microsoft Office. Por exemplo, o **dados** guia é uma guia interna no Excel. O **conexões** é um grupo interno sobre o **dados** guia.
 
 - Adicione controles personalizados a um grupo personalizado.
 
@@ -96,7 +96,7 @@ ms.locfileid: "60040140"
 - Criar faixas de opções do Outlook *inspetores*. Para obter mais informações, consulte [personalizar uma faixa de opções para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
     > [!NOTE]
-    >  Um Inspector é uma janela que é aberta quando os usuários executam determinadas tarefas, como a criação de uma mensagem de email.
+    > Um Inspector é uma janela que é aberta quando os usuários executam determinadas tarefas, como a criação de uma mensagem de email.
 
 - Selecione quais da faixa de opções para exibir no tempo de execução.
 
@@ -106,7 +106,7 @@ ms.locfileid: "60040140"
  Para selecionar uma faixa de opções para exibir no tempo de execução, substituir os `CreateRibbonExtensibilityObject` método na `ThisAddin`, `ThisWorkbook`, ou `ThisDocument` classe do seu projeto e o retorno de faixa de opções que você deseja exibir. O exemplo a seguir verifica o valor de um campo denominado `myCondition` e retorna a faixa de opções apropriada.
 
 > [!NOTE]
->  A sintaxe usada neste exemplo retorna uma faixa de opções que foi criada usando o **faixa de opções (Visual Designer)** item. A sintaxe para retornar uma faixa de opções é criada usando um **da faixa de opções (XML)** item é um pouco diferente. Para obter mais informações sobre como retornar um **da faixa de opções (XML)** item, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).
+> A sintaxe usada neste exemplo retorna uma faixa de opções que foi criada usando o **faixa de opções (Visual Designer)** item. A sintaxe para retornar uma faixa de opções é criada usando um **da faixa de opções (XML)** item é um pouco diferente. Para obter mais informações sobre como retornar um **da faixa de opções (XML)** item, consulte [XML da faixa de opções](../vsto/ribbon-xml.md).
 
  Adicione o seguinte código:
 

@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c9ea6398ca02291bb9dc11693c98336cd33b14b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d281b0ddb15a2acc455acd037c088c133c74c1f1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440984"
 ---
 # <a name="layer-diagrams-reference"></a>Diagramas de camada: Referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ No Visual Studio, você pode usar um *diagrama de camada* para visualizar a arqu
      **Gerenciador de camada** é aberta e mostra os artefatos que são vinculados para as camadas selecionadas. **Gerenciador de camada** tem uma coluna que mostra cada uma das propriedades dos links de artefato.  
   
     > [!NOTE]
-    >  Se você não vir todas essas propriedades, expanda o **Gerenciador de camadas** janela.  
+    > Se você não vir todas essas propriedades, expanda o **Gerenciador de camadas** janela.  
   
     |**Coluna no Gerenciador de camadas**|**Descrição**|  
     |----------------------------------|---------------------|  

@@ -17,12 +17,12 @@ caps.latest.revision: 47
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c2d8ecd09487248b4c4be05b354133c710febf30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cfc486401792afc7d2c6295cacca843aa6c5b11b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076192"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445028"
 ---
 # <a name="securing-clickonce-applications"></a>Protegendo aplicativos ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ Os aplicativos [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] estão suj
  Você nunca deve passar argumentos recuperados por meio de uma cadeia de caracteres de consulta a um banco de dados ou linha de comando sem verificar os argumentos para garantir que eles sejam seguros. Os argumentos inseguros são os que incluem caracteres de escape da linha de comando ou banco de dados que poderiam permitir que um usuário mal-intencionado manipulasse o seu aplicativo e executasse comandos arbitrários.  
   
 > [!NOTE]
->  Os argumentos de cadeia de caracteres de consulta são a única maneira de passar argumentos para um aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] na inicialização. Você não poderá passar argumentos para um aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] da linha de comando.  
+> Os argumentos de cadeia de caracteres de consulta são a única maneira de passar argumentos para um aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] na inicialização. Você não poderá passar argumentos para um aplicativo [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] da linha de comando.  
   
 ## <a name="deploying-obfuscated-assemblies"></a>Implantando assemblies ofuscados  
  Talvez você deseje ofuscar seu aplicativo ao usar o Dotfuscator para evitar que outras pessoas executem engenharia reversa do código. No entanto, o ofuscamento do assembly não é integrado ao Visual Studio IDE ou ao processo de implantação do ClickOnce. Portanto, será necessário executar o ofuscamento fora do processo de implantação, talvez usando uma etapa de pós-compilação. Depois de compilar o projeto, você executaria as seguintes etapas manualmente, fora do Visual Studio:  

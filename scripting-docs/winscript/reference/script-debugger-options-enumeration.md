@@ -13,18 +13,18 @@ caps.latest.revision: 5
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 25f74902e2fea451ae5ddaf75d215c3a6c70b050
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 404d3939e0a328beb5e2413d25885fddf8478ead
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443636"
 ---
 # <a name="scriptdebuggeroptions-enumeration"></a>Enumeração SCRIPT_DEBUGGER_OPTIONS
 Indica um conjunto de opções e/ou recursos que se aplicam ao depurador anexado. Usado na [IDebugApplicationNode100::GetExcludedDocuments](../../winscript/reference/idebugapplicationnode100-getexcludeddocuments.md) e [IDebugApplicationNode100::SetFilterForEventSink](../../winscript/reference/idebugapplicationnode100-setfilterforeventsink.md)  
   
 > [!IMPORTANT]
->  Essas constantes são implementadas pelo PDM v10.0 e maior. Localizado em. activdbg100.h.  
+> Essas constantes são implementadas pelo PDM v10.0 e maior. Localizado em. activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxe  
   

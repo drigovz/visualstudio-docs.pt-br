@@ -9,12 +9,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9330a41d0888532640774891386011f6b8dbfc24
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0de96057326a9e4b6a64865ef34972d5542aff30
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106014"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442994"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>Referência DGML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Directed Graph Markup Language (DGML) descreve as informações usadas para visu
  Observe que algumas versões do Visual Studio suporta apenas um subconjunto dos recursos DGML, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Quando você edita um arquivo .dgml, o IntelliSense ajuda você a identificar atributos disponíveis para cada elemento e seus valores. Para especificar a cor em um atributo, use nomes de cores comuns como, por exemplo, "Azul", ou valores hexadecimais ARGB, como "#ffa0b1c3". DGML usa um subconjunto pequeno de formatos de definição de cor do WPF (Windows Presentation Foundation). Para obter mais informações, consulte [cores classe](http://go.microsoft.com/fwlink/?LinkId=182345).  
+> Quando você edita um arquivo .dgml, o IntelliSense ajuda você a identificar atributos disponíveis para cada elemento e seus valores. Para especificar a cor em um atributo, use nomes de cores comuns como, por exemplo, "Azul", ou valores hexadecimais ARGB, como "#ffa0b1c3". DGML usa um subconjunto pequeno de formatos de definição de cor do WPF (Windows Presentation Foundation). Para obter mais informações, consulte [cores classe](http://go.microsoft.com/fwlink/?LinkId=182345).  
   
 ## <a name="DGML"></a> Sintaxe DGML  
  A tabela a seguir descreve os tipos de elementos que são usados em DGML:  
@@ -70,7 +70,7 @@ Directed Graph Markup Language (DGML) descreve as informações usadas para visu
    Esse elemento opcional contém uma lista de `<Node/>` elementos, que definem nós no mapa. Para obter mais informações, consulte o elemento `<Node/>`.  
   
   > [!NOTE]
-  >  Quando você faz referência a um nó indefinido em um `<Link/>` o mapa de elemento, cria um `<Node/>` elemento automaticamente.  
+  > Quando você faz referência a um nó indefinido em um `<Link/>` o mapa de elemento, cria um `<Node/>` elemento automaticamente.  
   
    Exemplo:  
   
@@ -151,7 +151,7 @@ Directed Graph Markup Language (DGML) descreve as informações usadas para visu
    Esse elemento define um único link que conecta um nó de origem a um nó de destino. Ele é exibido na lista de elementos `<Links></Links>`.  
   
   > [!NOTE]
-  >  Se esse elemento fizer referência a um nó indefinido, o documento de mapa cria automaticamente um nó que possui os atributos especificados, se houver.  
+  > Se esse elemento fizer referência a um nó indefinido, o documento de mapa cria automaticamente um nó que possui os atributos especificados, se houver.  
   
    Esse elemento deve incluir os seguintes atributos:  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ece5c23a04901eaf0c17e7dfbf59f1ce7c5ccfa2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3a7b3edb0262e3e2b4f0cde51b499e25b04aba51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922694"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442907"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Hierarquia de classes de tipos de símbolos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ A tabela a seguir descreve os tipos de símbolo na hierarquia de classe.
 |[Dimensão](../../debugger/debug-interface-access/dimension.md)|Símbolo de dimensões de matriz.|  
   
 > [!NOTE]
->  Cada símbolo pode ter propriedades que contêm informações sobre o símbolo, bem como referências a outros símbolos. Essas propriedades são listadas nos tópicos individuais de símbolo.  
+> Cada símbolo pode ter propriedades que contêm informações sobre o símbolo, bem como referências a outros símbolos. Essas propriedades são listadas nos tópicos individuais de símbolo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Enumeração CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)   

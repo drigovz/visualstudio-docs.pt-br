@@ -20,12 +20,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1fae6a503323d42d4f759a30b4db790a88079815
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eaee3dae25f5f2e5544a2521a7bce0201b45a3e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048392"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441152"
 ---
 # <a name="refactoring-classes-and-types-class-designer"></a>Refatorando classes e tipos (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60048392"
 Quando você refatora o código, ele fica mais fácil de entender, manter e mais eficiente, alterando a estrutura interna e como os seus objetos são criados, não o comportamento externo dele. Use o Designer de Classe e a janela Detalhes da Classe para reduzir o trabalho que é necessário e a possibilidade de introduzir bugs quando você refatora o código do Visual C# .NET, Visual Basic .NET ou C++ em seu projeto do Visual Studio.  
   
 > [!NOTE]
->  Os arquivos de um projeto podem ser somente leitura porque o projeto está sob controle do código-fonte e não está submetido a check-out, ele é um projeto referenciado ou seus arquivos são marcados como somente leitura no disco. Quando você trabalha em um projeto em um desses estados, você tem várias maneiras de salvar o trabalho, dependendo do estado do projeto. Isso se aplica ao código de refatoração e também ao código que você altera de outra forma, como editando-o diretamente. Para obter mais informações, consulte [Exibição de informações somente leitura (Designer de Classe)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
+> Os arquivos de um projeto podem ser somente leitura porque o projeto está sob controle do código-fonte e não está submetido a check-out, ele é um projeto referenciado ou seus arquivos são marcados como somente leitura no disco. Quando você trabalha em um projeto em um desses estados, você tem várias maneiras de salvar o trabalho, dependendo do estado do projeto. Isso se aplica ao código de refatoração e também ao código que você altera de outra forma, como editando-o diretamente. Para obter mais informações, consulte [Exibição de informações somente leitura (Designer de Classe)](http://msdn.microsoft.com/33e2d3a9-1668-4d10-ae56-fa09b3156e0a).  
   
 ## <a name="common-tasks"></a>Tarefas comuns  
   
@@ -65,7 +65,7 @@ Quando você refatora o código, ele fica mais fácil de entender, manter e mais
 3. Para mover o foco da célula, pressione a tecla **ENTER** ou clique fora da célula.  
   
     > [!NOTE]
-    >  Na janela Detalhes da Classe, você pode alterar o nome de um membro, mas não um tipo.  
+    > Na janela Detalhes da Classe, você pode alterar o nome de um membro, mas não um tipo.  
   
 ##### <a name="to-rename-a-name-in-the-properties-window"></a>Para mudar um nome na janela Propriedades  
   

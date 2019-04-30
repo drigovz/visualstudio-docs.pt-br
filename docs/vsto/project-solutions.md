@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 07586cd9b839a514ebe3a0677fb894a8d6e9c71f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f5fe9f47fca2b83e0095c67e59c2db54a4a04159
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56642190"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447048"
 ---
 # <a name="project-solutions"></a>Soluções de projeto
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] fornece modelos de projeto, que você pode usar para criar suplementos do VSTO para o Microsoft Office Project. Você pode usar suplementos do VSTO para automatizar o projeto, estender os recursos de projeto ou personalizar a interface de usuário (IU) do Project.
@@ -32,7 +32,7 @@ ms.locfileid: "56642190"
  [!INCLUDE[appliesto_projallapp](../vsto/includes/appliesto-projallapp-md.md)]
 
 > [!NOTE]
->  Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
+> Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
 
 ## <a name="automate-project-by-using-the-project-object-model"></a>Automatizar o projeto usando o modelo de objeto do projeto
  O modelo de objeto do projeto expõe vários tipos que você pode usar para automatizar o projeto. Esses tipos permitem que você escrever código para realizar tarefas comuns como criar e modificar tarefas em um projeto de forma programática.
@@ -47,7 +47,7 @@ ms.locfileid: "56642190"
  Todos os objetos e membros na referência de modelo de objeto do VBA correspondem aos tipos e membros no projeto assembly de interoperabilidade primário (PIA). Por exemplo, o objeto de calendário na referência de modelo de objeto do VBA corresponde à `Microsoft.Office.Interop.MSProject.Calendar` tipo no PIA do projeto. Embora a referência de modelo de objeto VBA fornece exemplos de código para a maioria das propriedades, métodos e eventos, você deve converter o código VBA essa referência para o Visual Basic ou Visual c#, se você quiser usá-los em um projeto de suplemento do VSTO do projeto que você cria usando o Visual Studio.
 
 > [!NOTE]
->  Neste momento, não há nenhuma documentação de referência para o assembly de interoperabilidade primária do projeto.
+> Neste momento, não há nenhuma documentação de referência para o assembly de interoperabilidade primária do projeto.
 
 ### <a name="infrastructure-types-in-the-project-primary-interop-assembly"></a>Tipos de infraestrutura em que o assembly de interoperabilidade primária do projeto
  Conforme você escreve o código que usa o PIA do projeto, você poderá notar vários tipos que não são descritos na referência do VBA. Esses tipos adicionais ajuda a converter objetos no modelo de objeto baseado em COM de projeto para código gerenciado, não se destina a ser usado diretamente em seu código.

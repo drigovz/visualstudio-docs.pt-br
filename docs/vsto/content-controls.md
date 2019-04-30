@@ -38,12 +38,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cca58ec0c9f493cd418cbb5aabca7a8d2c1939b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4cecbaf834185e66d7d584d58d2abb4dbdf46f9e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445592"
 ---
 # <a name="content-controls"></a>Controles de conteúdo
   Controles de conteúdo fornecem uma maneira para você aos documentos de design e modelos que têm esses recursos:
@@ -72,7 +72,7 @@ ms.locfileid: "60062172"
   Em projetos de nível de documento, você pode adicionar controles de conteúdo ao documento em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO, você pode adicionar controles de conteúdo para qualquer documento aberto no tempo de execução. Para obter mais informações, confira [Como: Adicionar controles content a documentos do Word](../vsto/how-to-add-content-controls-to-word-documents.md).
 
 > [!NOTE]
->  Você pode usar controles de conteúdo somente em documentos que são salvos no formato Open XML. Você não pode usar controles de conteúdo em documentos que são salvas no documento do Word 97-2003 (*. doc*) formato.
+> Você pode usar controles de conteúdo somente em documentos que são salvos no formato Open XML. Você não pode usar controles de conteúdo em documentos que são salvas no documento do Word 97-2003 (*. doc*) formato.
 
 ## <a name="types-of-content-controls"></a>Tipos de controles de conteúdo
  Há nove tipos diferentes de controles de conteúdo que você pode adicionar aos documentos. A maioria dos controles de conteúdo tem um tipo correspondente <xref:Microsoft.Office.Tools.Word> namespace. Você também pode usar um genérico <xref:Microsoft.Office.Tools.Word.ContentControl>, que pode representar qualquer um dos controles de conteúdo disponíveis. Para um passo a passo que demonstra como usar cada um dos controles de conteúdo disponíveis, consulte [passo a passo: Criar um modelo usando os controles de conteúdo](../vsto/walkthrough-creating-a-template-by-using-content-controls.md).
@@ -137,7 +137,7 @@ ms.locfileid: "60062172"
   Se a área que você deseja proteger não está dentro de um controle de conteúdo, ou se você quiser proteger uma área que contém controles de conteúdo e outros tipos de conteúdo, você pode colocar toda a área em um <xref:Microsoft.Office.Tools.Word.GroupContentControl>. Ao contrário de outros controles de conteúdo, um <xref:Microsoft.Office.Tools.Word.GroupContentControl> não fornece nenhuma interface do usuário que é visível para o usuário. Sua única finalidade é definir uma região que os usuários não podem editar.
 
 > [!NOTE]
->  Se você criar um <xref:Microsoft.Office.Tools.Word.GroupContentControl> que contém os controles de conteúdo incorporados, os controles de conteúdo inseridos não são protegidos automaticamente. Você deve usar o **LockContents** incorporado de propriedade de cada controle para impedir que usuários editem seu conteúdo.
+> Se você criar um <xref:Microsoft.Office.Tools.Word.GroupContentControl> que contém os controles de conteúdo incorporados, os controles de conteúdo inseridos não são protegidos automaticamente. Você deve usar o **LockContents** incorporado de propriedade de cada controle para impedir que usuários editem seu conteúdo.
 
  Para obter mais informações sobre como usar controles de conteúdo para proteger partes de documentos, consulte [como: Proteger partes de documentos usando controles de conteúdo](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 
@@ -170,7 +170,7 @@ ms.locfileid: "60062172"
  Controles de conteúdo também dão suporte a associação de dados bidirecional, em que as alterações no controle são atualizadas para a fonte de dados. Para obter mais informações, confira [Como: Atualizar uma fonte de dados com dados de um controle de host](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md).
 
 > [!NOTE]
->  Controles de conteúdo não dão suporte a vinculação de dados complexos. Se você associar um <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> ou <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> a uma fonte de dados usando o modelo de dados do Windows Forms, os usuários verão apenas um único valor quando eles clicam no controle. Se você quiser vincular esses controles a um conjunto de valores de dados que os usuários podem escolher, você pode vincular esses controles aos elementos em uma parte XML personalizada.
+> Controles de conteúdo não dão suporte a vinculação de dados complexos. Se você associar um <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> ou <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> a uma fonte de dados usando o modelo de dados do Windows Forms, os usuários verão apenas um único valor quando eles clicam no controle. Se você quiser vincular esses controles a um conjunto de valores de dados que os usuários podem escolher, você pode vincular esses controles aos elementos em uma parte XML personalizada.
 
 ### <a name="bind-content-controls-to-custom-xml-parts"></a>Associar controles de conteúdo a partes XML personalizadas
  Você pode associar alguns controles de conteúdo a elementos em partes XML personalizadas que são inseridos no documento. Para obter mais informações sobre partes XML personalizadas, consulte [visão geral de partes XML personalizadas](../vsto/custom-xml-parts-overview.md).

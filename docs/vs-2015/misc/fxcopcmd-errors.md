@@ -10,12 +10,12 @@ ms.assetid: bb614ed0-1b7c-4b56-99ae-da50ef6cfef9
 caps.latest.revision: 12
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 016f22591deb019718c8271cf0b307d3f4c597c1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e0770654f564c57cf576666dcd9575f47d9ce1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432286"
 ---
 # <a name="fxcopcmd-errors"></a>Erros (FxCopCmd)
 FxCopCmd não considera todos os erros fatais. Se o FxCopCmd tem informações suficientes para executar uma análise parcial, ele executa as análise e relatórios de erros que ocorreram. O código de erro, que é um inteiro de 32 bits, contém uma combinação bit a bit de valores numéricos que correspondem aos erros.  
@@ -49,7 +49,7 @@ FxCopCmd não considera todos os erros fatais. Se o FxCopCmd tem informações s
 - A opção de saída não foi especificada ou não foi possível gravar o arquivo.  
   
     > [!NOTE]
-    >  O FxCopCmd retornar o código de "Erro de referências de Assembly" 0x200 por si só é um aviso em vez de um erro. Esse código de retorno indica que referências indiretas ausentes foram encontradas, mas que FxCopCmd foi capaz de lidar com eles. É um aviso de que há uma possibilidade de que alguns resultados de análise podem ter sido comprometidos. Considere o código de retorno de "Erro de referências de Assembly" como um erro quando ele é combinado com qualquer outro código de retorno.  
+    > O FxCopCmd retornar o código de "Erro de referências de Assembly" 0x200 por si só é um aviso em vez de um erro. Esse código de retorno indica que referências indiretas ausentes foram encontradas, mas que FxCopCmd foi capaz de lidar com eles. É um aviso de que há uma possibilidade de que alguns resultados de análise podem ter sido comprometidos. Considere o código de retorno de "Erro de referências de Assembly" como um erro quando ele é combinado com qualquer outro código de retorno.  
   
 ## <a name="see-also"></a>Consulte também  
  [Erros de aplicativo de análise de código](../code-quality/code-analysis-application-errors.md)

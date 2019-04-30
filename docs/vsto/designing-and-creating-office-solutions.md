@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b939640b0676ae34eedeed96c8a4b6b21a5a37e4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6ea209b380948196ee20cc4e2085fa46fab76efc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599513"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441840"
 ---
 # <a name="design-and-create-office-solutions"></a>Projetar e criar soluções do Office
 
@@ -54,7 +54,7 @@ Visual Studio fornece modelos de projeto que você pode usar para criar vários 
   Se o Visual Studio altera o .NET Framework de destino para o seu projeto e você estiver usando o ClickOnce para implantar sua solução, certifique-se de que você também pode selecionar a versão correspondente do .NET Framework na **pré-requisitos** caixa de diálogo. Essa seleção não será alterada automaticamente quando você altera a estrutura de destino para o seu projeto. Para obter mais informações, confira [Como: Instalar os pré-requisitos em computadores de usuário final para executar soluções do Office](https://msdn.microsoft.com/74dd2c52-838f-4abf-b2b4-4d7b0c2a0a98).
 
 > [!NOTE]
->  Não é possível direcionar o .NET Framework 3.5 ou anterior em projetos do Office que você cria usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Projetos do Office que você cria usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] exigem recursos que foram introduzidos primeiro no [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]
+> Não é possível direcionar o .NET Framework 3.5 ou anterior em projetos do Office que você cria usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)]. Projetos do Office que você cria usando [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] exigem recursos que foram introduzidos primeiro no [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)]
 
 ### <a name="understand-when-the-office-pias-are-required-on-end-user-computers"></a>Entenda quando os PIAs do Office são necessários em computadores de usuários finais
  Por padrão, assemblies de interoperabilidade primários do Office (PIAs) não precisa ser instalado em computadores de usuários finais se a **Embed Interop Types** de cada referência de PIA do Office no projeto estiver definida como **verdadeiro**, qual é o valor padrão. Nesse cenário, as informações de tipo para os tipos PIA que são usados pela sua solução são incorporadas no assembly da solução quando você compila o projeto. Em tempo de execução, as informações de tipo inserido são usadas em vez dos PIAs chamem o modelo de objeto baseado em COM de aplicativo do Office. Para obter mais informações sobre como os tipos de PIAs são inseridos em sua solução, consulte [equivalência de tipos e tipos de interoperabilidade inseridos](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types).

@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 39cdb98f14823b02c8d4d2b60575eddca6da0420
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 927451ed35ce4bbdfbff7531b2828b0571354f34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445359"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Controles de formulários do Windows na visão geral de documentos do Office
   Controles dos Windows Forms são objetos que os usuários podem interagir com a inserção ou manipular dados. Nos projetos em nível de documento do Microsoft Office Excel e Microsoft Office Word, você pode adicionar controles de formulários do Windows para o documento ou pasta de trabalho em seu projeto em tempo de design, ou você pode adicionar programaticamente esses controles em tempo de execução. Você pode adicionar esses controles programaticamente para qualquer documento aberto ou a planilha em tempo de execução em um suplemento do VSTO para Excel ou Word.
@@ -109,7 +109,7 @@ Em um formulário do Windows.
 - **Igualar espaçamento Vertical**
 
 > [!NOTE]
->  Em projetos do Word, esses botões são habilitados somente se os controles selecionados não estiverem alinhado com o texto. Por padrão, os controles que você adiciona ao documento em tempo de design estão de acordo com o texto.
+> Em projetos do Word, esses botões são habilitados somente se os controles selecionados não estiverem alinhado com o texto. Por padrão, os controles que você adiciona ao documento em tempo de design estão de acordo com o texto.
 
 ### <a name="prevent-old-data-from-appearing-in-excel-workbooks-during-loading"></a>Impedir que os dados antigos que aparecem em pastas de trabalho do Excel durante o carregamento
  Quando você adiciona controles dos Windows Forms a documentos ou planilhas em tempo de design, os controles permanecem no documento quando o usuário fecha o documento. Também são chamados de controles adicionados em tempo de design *controles estáticos*.

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 528a57ddf6dd9b193e767a4942d26e43789043c0
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
-ms.translationtype: MT
+ms.openlocfilehash: 1f6a8c3ca6c6c4015acc6c8be3914d4c458dfeb0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57525892"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447097"
 ---
 # <a name="office-primary-interop-assemblies"></a>assemblies de Interoperabilidade primária do Office
 
@@ -84,7 +84,7 @@ Na maioria dos casos, você deve adicionar referências aos PIAs são instalados
 Se você tiver instalado e registrado os PIAs no cache de assembly global, estas versões de assemblies aparecem na **COM** guia o **Gerenciador de referências** caixa de diálogo. Você deve evitar adicionar referências a essas versões de assemblies, porque alguns problemas de desenvolvimento podem ocorrer ao usá-las. Por exemplo, se você registrou diferentes versões de PIAs no cache de assembly global, seu projeto se associará automaticamente para a versão do assembly que foi registrado por último — mesmo se você especificar uma versão diferente do assembly no  **COM** guia do **Gerenciador de referências** caixa de diálogo.
 
 > [!NOTE]
->  Alguns assemblies são adicionados a um projeto automaticamente quando um assembly que lhes faz referência é adicionado. Por exemplo, a referência para o *dll* e *Office* assemblies são adicionados automaticamente quando você adiciona uma referência para o Word, Excel, Outlook, Microsoft Forms ou gráfico assemblies.
+> Alguns assemblies são adicionados a um projeto automaticamente quando um assembly que lhes faz referência é adicionado. Por exemplo, a referência para o *dll* e *Office* assemblies são adicionados automaticamente quando você adiciona uma referência para o Word, Excel, Outlook, Microsoft Forms ou gráfico assemblies.
 
 <a name="pialist"></a>
 

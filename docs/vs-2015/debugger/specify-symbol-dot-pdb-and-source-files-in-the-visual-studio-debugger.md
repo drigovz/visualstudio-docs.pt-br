@@ -27,12 +27,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6be45876174afa00a58ea9948661f051f8df1ddc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e6c234b622dcc335a6fe42fd57f1f815a5fd9d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045701"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447307"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger"></a>Especificar arquivos de símbolo (.pdb) e de origem no Depurador do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,7 +72,7 @@ Um arquivo de banco de dados do programa (.pdb), também chamado de arquivo de s
 4. Para melhorar o símbolo de desempenho de carregamento digite o caminho de um diretório local em que os símbolos podem ser copiados por servidores de símbolo na **armazenar em Cache os símbolos neste diretório** caixa um diretório local que os símbolos podem ser copiados para.
 
    > [!NOTE]
-   >  Não coloque o cache de símbolo em uma pasta protegida (como a pasta C:\Windows ou uma de suas subpastas). Use uma pasta de leitura/gravação.
+   > Não coloque o cache de símbolo em uma pasta protegida (como a pasta C:\Windows ou uma de suas subpastas). Use uma pasta de leitura/gravação.
 
    **Especificar o comportamento de carregamento de símbolo**
 
@@ -116,7 +116,7 @@ Um arquivo de banco de dados do programa (.pdb), também chamado de arquivo de s
  Provedores de terceiros de aplicativos e bibliotecas do Windows podem fornecer acesso ao servidor de símbolo na Internet. Você também insere a URL desses servidores de símbolo **Debugging**/**símbolos** página,
 
 > [!NOTE]
->  Ao usar um servidor de símbolo que não seja um dos servidores de símbolo públicos da Microsoft, verifique se o servidor de símbolo e seu caminho são confiáveis. Como os arquivos de símbolo podem conter códigos executáveis arbitrários, você pode ser exposto às ameaças de segurança.
+> Ao usar um servidor de símbolo que não seja um dos servidores de símbolo públicos da Microsoft, verifique se o servidor de símbolo e seu caminho são confiáveis. Como os arquivos de símbolo podem conter códigos executáveis arbitrários, você pode ser exposto às ameaças de segurança.
 
 ### <a name="BKMK_Find_and_load_symbols_while_debugging"></a> Localizar e carregar símbolos durante a depuração
  Sempre que o depurador estiver no modo de interrupção, você poderá carregar símbolos para um módulo que foi excluído anteriormente pelas opções de depurador ou que o compilador não pôde localizar. É possível carregar símbolos usando os menus de atalho das janelas Pilha de Chamadas, Módulos, Locais, Autos e de todas as janelas de Inspeção. Se o depurador for interrompido no código que não tenha arquivos de símbolo ou de origem disponíveis, será exibida uma janela de documento. Aqui você pode localizar informações sobre os arquivos ausentes e executar ações para encontrá-los e carregá-los.
@@ -224,7 +224,7 @@ Um arquivo de banco de dados do programa (.pdb), também chamado de arquivo de s
  Quando não há nenhum código-fonte no computador local ou o arquivo .pdb não corresponde ao código-fonte, você pode usar o servidor de origem para ajudar na depuração de um aplicativo. O Servidor de Origem recebe solicitações de arquivos e retorna os arquivos reais. O Servidor de Origem é executado por meio de um arquivo DLL chamado srcsrv.dll. O Servidor de Origem lê o arquivo .pdb do aplicativo, que contém ponteiros para o repositório do código-fonte, bem como os comandos usados para recuperar o código-fonte do repositório. Você pode limitar quais comandos terão permissão para execução do arquivo .pdb, listando os comandos permitidos dentro de um arquivo denominado srcsrv.ini, que deve ser colocado no mesmo diretório que srcsrv.dll e devenv.exe.
 
 > [!IMPORTANT]
->  Os comandos arbitrários podem ser inseridos no arquivo .pdb do aplicativo, portanto, certifique-se de colocar somente aqueles que você deseja executar no arquivo srcsrv.ini. Qualquer tentativa de executar um comando que não esteja no arquivo srcsvr.ini fará com que uma caixa de diálogo de confirmação seja exibida. Para obter mais informações, consulte [aviso de segurança: O depurador precisa executar um comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Nenhuma validação é feita em parâmetros do comando. Portanto, tenha cuidado com comandos confiáveis. Por exemplo, se você confiar no cmd.exe, um usuário mal-intencionado pode especificar parâmetros que tornariam o comando perigoso.
+> Os comandos arbitrários podem ser inseridos no arquivo .pdb do aplicativo, portanto, certifique-se de colocar somente aqueles que você deseja executar no arquivo srcsrv.ini. Qualquer tentativa de executar um comando que não esteja no arquivo srcsvr.ini fará com que uma caixa de diálogo de confirmação seja exibida. Para obter mais informações, consulte [aviso de segurança: O depurador precisa executar um comando não confiável](../debugger/security-warning-debugger-must-execute-untrusted-command.md). Nenhuma validação é feita em parâmetros do comando. Portanto, tenha cuidado com comandos confiáveis. Por exemplo, se você confiar no cmd.exe, um usuário mal-intencionado pode especificar parâmetros que tornariam o comando perigoso.
 
  **Para habilitar o uso de um servidor de origem**
 

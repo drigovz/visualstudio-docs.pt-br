@@ -18,12 +18,12 @@ caps.latest.revision: 36
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2e9292464ee117cf79a249c1c1a0636edb931c1d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8b9d0d2a3250785e5ff60d65a6bf1264892c6f98
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063226"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434114"
 ---
 # <a name="debug-layout-using-dom-explorer"></a>Depurar o layout com o Explorador do DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
  O **Layout** guia do Explorador do DOM mostra o [modelo de caixa CSS](http://go.microsoft.com/fwlink/?LinkID=238778) para o elemento selecionado em um [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] app, aplicativo do Windows Phone Store ou um aplicativo criado usando ferramentas do Visual Studio para Apache Cordova. Você pode usar essa representação visual do modelo de caixa para identificar e modificar os valores relacionados a layout que afetam a aparência dos elementos.  
   
 > [!TIP]
->  As alterações feitas na **Layout** guia não são permanentes. Você pode fazer mudanças permanentes no seu código-fonte e, em seguida, atualize seu aplicativo usando o **Windows atualizar aplicativo** botão (somente para aplicativos Windows Store e Windows Phone Store) na barra de ferramentas Depurar. Dessa maneira, você pode evitar reiniciar o depurador.  
+> As alterações feitas na **Layout** guia não são permanentes. Você pode fazer mudanças permanentes no seu código-fonte e, em seguida, atualize seu aplicativo usando o **Windows atualizar aplicativo** botão (somente para aplicativos Windows Store e Windows Phone Store) na barra de ferramentas Depurar. Dessa maneira, você pode evitar reiniciar o depurador.  
   
  Para usar o Explorador do DOM para modificar os aspectos do layout que não são mostrados no modelo de caixa, consulte [guia de início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md) e [estilos de CSS depurar usando o Explorador do DOM](../debugger/debug-css-styles-using-dom-explorer.md).  
   
@@ -76,21 +76,21 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 7. Abra a Seção 4 rolando ou movendo.  
   
     > [!TIP]
-    >  Posicione o Simulador ou o Emulador do Windows Phone bem ao lado da janela do Visual Studio, para que você possa ver imediatamente os resultados das seleções e mudanças feitas em estilos de CSS.  
+    > Posicione o Simulador ou o Emulador do Windows Phone bem ao lado da janela do Visual Studio, para que você possa ver imediatamente os resultados das seleções e mudanças feitas em estilos de CSS.  
   
      Quando a Seção 4 for carregada, você poderá ver que as imagens inferiores não aparecem corretamente. Cada imagem de item aparece cortada ao meio (com a metade esquerda ausente).  
   
 8. Alterne para o Visual Studio e escolha **selecionar elemento** no Explorador do DOM (ou pressione Ctrl + B). Isso altera o modo de seleção, permitindo que você selecione um item ao clicar nele, e traz o aplicativo para o primeiro plano. O modo é revertido após um único clique.  
   
     > [!TIP]
-    >  Você também pode usar as teclas de seta ou outros métodos para selecionar os elementos HTML diretamente no Explorador do DOM. Para obter mais informações sobre como selecionar elementos, consulte [guia de início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
+    > Você também pode usar as teclas de seta ou outros métodos para selecionar os elementos HTML diretamente no Explorador do DOM. Para obter mais informações sobre como selecionar elementos, consulte [guia de início rápido: Depurar HTML e CSS](../debugger/quickstart-debug-html-and-css.md).  
   
 9. No Simulador ou Emulador do Windows Phone, selecione a metade cinza à direita de uma das imagens que estão cortadas ao meio. Aparecem realces ao redor do elemento selecionado, como mostrado aqui no Emulador do Windows Phone:  
   
      ![Selecionando um elemento DOM](../debugger/media/js-css-layout-select.png "JS_CSS_Layout_Select")  
   
     > [!TIP]
-    >  O Simulador suporta focalizar os elementos para exibir realces da caixa ao redor dos elementos DOM antes de selecionar um. O Emulador do Windows Phone não tem suporte a isso.  
+    > O Simulador suporta focalizar os elementos para exibir realces da caixa ao redor dos elementos DOM antes de selecionar um. O Emulador do Windows Phone não tem suporte a isso.  
   
      Quando você seleciona um elemento DOM, o Explorador do DOM seleciona automaticamente o elemento IMG correspondente no Visual Studio. O elemento selecionado no Explorador de DOMs tem esta aparência:  
   
@@ -114,7 +114,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 11. Para ver como a regra margin-left é aplicada, escolha o **computado** guia e procure a regra margin-left. Você pode ver que essa regra está definida com o valor 5em, mas o valor computado é 66,66 px ou 146,66 px, dependendo do dispositivo de destino.  
   
     > [!TIP]
-    >  O **computado** guia mostra que a regra margin-left é definida `..hubpage .hub. section4 .sub-image-row img` seletor de CSS, encontrado no CSS. Neste aplicativo de demonstração, é aqui que você precisa fazer a correção.  
+    > O **computado** guia mostra que a regra margin-left é definida `..hubpage .hub. section4 .sub-image-row img` seletor de CSS, encontrado no CSS. Neste aplicativo de demonstração, é aqui que você precisa fazer a correção.  
   
      Você também pode usar o **Layout** guia para testar as modificações de valores de layout.  
   

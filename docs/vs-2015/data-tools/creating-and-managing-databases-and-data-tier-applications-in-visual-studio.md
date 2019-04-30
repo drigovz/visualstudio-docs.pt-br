@@ -14,18 +14,18 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b6ee9413a2394d0477cd1c7b1a0caf83dd6ad6d
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d6cb4a3beb12d2b33b8b13441df66116fe449d09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59651377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431152"
 ---
 # <a name="creating-and-managing-databases-and-data-tier-applications-in-visual-studio"></a>Criar e gerenciar bancos de dados e aplicativos da camada de dados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [IMPORTANTE]
->  Os projetos de banco de dados que foram incluídos em versões anteriores do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] agora são fornecidos em [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] ferramentas. Para obter mais informações, consulte [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).
+> Os projetos de banco de dados que foram incluídos em versões anteriores do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] agora são fornecidos em [!INCLUDE[sql_Denali_long](../includes/sql-denali-long-md.md)] ferramentas. Para obter mais informações, consulte [SQL Server Developer Tools](http://go.microsoft.com/fwlink/?LinkId=228126).
 
  Você pode usar os projetos de banco de dados para criar novos bancos de dados, novos aplicativos de camada de dados (DACs) e atualizar bancos de dados existentes e aplicativos da camada de dados. Projetos de banco de dados e projetos de DAC permitem aplicar técnicas de gerenciamento de projeto e controle de versão para seus esforços de desenvolvimento de banco de dados da mesma forma que você aplica essas técnicas para código gerenciado ou nativo. Você pode ajudar sua equipe de desenvolvimento a gerenciar as alterações de bancos de dados e servidores de banco de dados com a criação de um *projeto de DAC*, *projeto de banco de dados*, ou uma *projeto do servidor* e colocá-lo sob o controle de versão. Membros de sua equipe podem, em seguida, check-out de arquivos para fazer, compilar e testar as alterações em um *ambiente de desenvolvimento isolado*, ou de área restrita, antes de compartilhá-los com a equipe. Para ajudar a garantir a qualidade do código, sua equipe pode concluir e testar todas as alterações para uma versão específica do banco de dados em um ambiente de preparo antes de implantar as alterações em produção.
 

@@ -19,12 +19,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc6c7af3732f2f96ad53651b146898b655b68fdd
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 91b438e8646a215aeed3390e87ce9c20ca923fae
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59647919"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441286"
 ---
 # <a name="security-page-project-designer"></a>Página Segurança, Designer de Projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ A página **Segurança** do **Designer de Projeto** é usada para definir config
  Determina se as configurações de segurança estão habilitadas no tempo de design. Quando esta opção estiver desmarcada, todas as outras opções na página **Segurança** não ficarão disponíveis.  
   
 > [!NOTE]
->  Quando você publica um aplicativo usando o assistente **Publicar**, essa opção fica habilitada automaticamente.  
+> Quando você publica um aplicativo usando o assistente **Publicar**, essa opção fica habilitada automaticamente.  
   
  Quando seleciona essa opção, você tem a opção de selecionar um dos dois botões de opção: **Este é um aplicativo de confiança total** ou **Este é um aplicativo de confiança parcial**.  
   

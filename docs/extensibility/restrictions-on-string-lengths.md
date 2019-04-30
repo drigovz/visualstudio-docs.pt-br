@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b989fc18ae14790b001b7eca9b403a65c0dfa9b9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 8ade5e9ac188cd6c1b721ed276e0c4e2aff71f32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56716682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434745"
 ---
 # <a name="restrictions-on-string-lengths"></a>Restrições em comprimentos de cadeia de caracteres
 A API de plug-in de controle do código-fonte limita os comprimentos das cadeias de caracteres usadas em várias funções.
@@ -30,7 +30,7 @@ A API de plug-in de controle do código-fonte limita os comprimentos das cadeias
 |`SCC_PRJPATH_LEN`|300|
 
 > [!NOTE]
->  Tamanho não inclui a terminação `null`. Outras constantes com um sufixo tamanho"em vez de"_LEN"incluir espaço para a terminação `null`.
+> Tamanho não inclui a terminação `null`. Outras constantes com um sufixo tamanho"em vez de"_LEN"incluir espaço para a terminação `null`.
 
 |Constante|Valor|
 |--------------|-----------|

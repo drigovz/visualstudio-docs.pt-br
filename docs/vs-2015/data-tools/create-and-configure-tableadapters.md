@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82ef77884d4ade77e8d940df6c37d8336c2a1dbf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 759cf18033adb962a6ccb97a31802963e12ba5c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097005"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431210"
 ---
 # <a name="create-and-configure-tableadapters"></a>Criar e configurar TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ TableAdapters fornecem comunicação entre seu aplicativo e um banco de dados. C
      Mapear parâmetros desde o procedimento armazenado selecionado até as colunas correspondentes na tabela de dados. Por exemplo, se seu procedimento armazenado aceita um parâmetro chamado `@CompanyName` que ele passa para o `CompanyName` conjunto de colunas na tabela, o **coluna de origem** da `@CompanyName` parâmetro `CompanyName`.  
   
     > [!NOTE]
-    >  O procedimento armazenado que é atribuído para o comando SELECT é executado chamando o método do TableAdapter que você nomeia na próxima etapa do assistente. O método padrão é `Fill`, portanto, o código que normalmente é usado para executar o procedimento SELECT é `TableAdapter.Fill(tableName)`. Se você alterar o nome padrão do `Fill`, substitua `Fill` com o nome atribuir e substituir "TableAdapter" pelo nome real do TableAdapter (por exemplo, `CustomersTableAdapter`).  
+    > O procedimento armazenado que é atribuído para o comando SELECT é executado chamando o método do TableAdapter que você nomeia na próxima etapa do assistente. O método padrão é `Fill`, portanto, o código que normalmente é usado para executar o procedimento SELECT é `TableAdapter.Fill(tableName)`. Se você alterar o nome padrão do `Fill`, substitua `Fill` com o nome atribuir e substituir "TableAdapter" pelo nome real do TableAdapter (por exemplo, `CustomersTableAdapter`).  
   
 - O **opções avançadas** no assistente que você possa gerar instruções INSERT, UPDATE e DELETE com base na instrução SELECT que é definida na **gerar instruções SQL** página. Usar a simultaneidade otimista e especificar se para atualizar a tabela de dados após a inserção e atualização instruções são executadas.  
   
@@ -82,7 +82,7 @@ TableAdapters fornecem comunicação entre seu aplicativo e um banco de dados. C
 3. Sobre o **escolha sua Conexão de dados** de tela, selecione ou crie a conexão que a consulta usará.  
   
     > [!NOTE]
-    >  Essa tela aparece somente quando o designer não pode determinar a conexão apropriada para usar, ou quando não há conexões disponíveis.  
+    > Essa tela aparece somente quando o designer não pode determinar a conexão apropriada para usar, ou quando não há conexões disponíveis.  
   
 4. Sobre o **escolher um tipo de comando** tela, selecione os seguintes métodos de busca de dados do banco de dados:  
   
@@ -97,7 +97,7 @@ TableAdapters fornecem comunicação entre seu aplicativo e um banco de dados. C
 - Se você estiver editando uma consulta TableAdapter existente, a consulta com o botão direito e, em seguida, escolha **configurar** no menu de atalho.  
   
     > [!NOTE]
-    >  Clicando duas vezes na consulta principal de um TableAdapter reconfigura o TableAdapter e <xref:System.Data.DataTable> esquema. No entanto, clicando duas vezes uma consulta adicional em um TableAdapter, configura a consulta selecionada. O **Assistente de configuração TableAdapter** reconfigura a definição do TableAdapter, enquanto o Assistente de configuração de consulta do TableAdapter reconfigura a consulta selecionada.  
+    > Clicando duas vezes na consulta principal de um TableAdapter reconfigura o TableAdapter e <xref:System.Data.DataTable> esquema. No entanto, clicando duas vezes uma consulta adicional em um TableAdapter, configura a consulta selecionada. O **Assistente de configuração TableAdapter** reconfigura a definição do TableAdapter, enquanto o Assistente de configuração de consulta do TableAdapter reconfigura a consulta selecionada.  
   
 #### <a name="to-add-a-global--query-to-a-tableadapter"></a>Para adicionar uma consulta global a um TableAdapter  
   
@@ -108,7 +108,7 @@ TableAdapters fornecem comunicação entre seu aplicativo e um banco de dados. C
 - Forneça uma consulta que realiza a tarefa desejada, por exemplo, `SELECT COUNT(*) AS CustomerCount FROM Customers`.  
   
     > [!NOTE]
-    >  Arrastando um **consulta** do objeto diretamente para o **Dataset Designer** cria um método que retorna um valor escalar (único). Enquanto a consulta ou procedimento armazenado que você selecionar pode retornar mais de um único valor, o método que é criado pelo assistente retorna apenas um único valor. Por exemplo, a consulta pode retornar a primeira coluna da primeira linha dos dados retornados.  
+    > Arrastando um **consulta** do objeto diretamente para o **Dataset Designer** cria um método que retorna um valor escalar (único). Enquanto a consulta ou procedimento armazenado que você selecionar pode retornar mais de um único valor, o método que é criado pelo assistente retorna apenas um único valor. Por exemplo, a consulta pode retornar a primeira coluna da primeira linha dos dados retornados.  
   
 ## <a name="see-also"></a>Consulte também  
  [Preencher conjuntos de dados usando TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)

@@ -8,12 +8,12 @@ ms.assetid: f7c25ba7-5c9c-455b-9242-701cda56f90c
 caps.latest.revision: 43
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8df705e1e4da6a54f060de45a90aed7c41691683
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 940a7551c83ec9a195ac0d54b430115ed926abf5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428230"
 ---
 # <a name="walkthrough-creating-editing-and-maintaining-a-coded-ui-test"></a>Passo a passo: Criando, editando e mantendo um teste de IU codificado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -123,7 +123,7 @@ Neste passo a passo, você criará um aplicativo simples do Windows Presentation
 2. Crie um atalho na área de trabalho para o aplicativo SimpleWPFApp. Clique com o botão direito do mouse em SimpleWPFApp.exe e escolha **Copiar**. Na área de trabalho, clique com o botão direito do mouse e escolha **Colar atalho**.  
   
     > [!TIP]
-    >  Um atalho para o aplicativo facilita adicionar ou modificar testes de IU codificados para seu aplicativo porque permite iniciar rapidamente o aplicativo.  
+    > Um atalho para o aplicativo facilita adicionar ou modificar testes de IU codificados para seu aplicativo porque permite iniciar rapidamente o aplicativo.  
   
 3. No Gerenciador de Soluções, clique com o botão direito do mouse na solução, clique em **Adicionar** e selecione **Novo Projeto**.  
   
@@ -154,7 +154,7 @@ Neste passo a passo, você criará um aplicativo simples do Windows Presentation
      ![Pausar a gravação](../test/media/cuit.png "CUIT_")  
   
     > [!WARNING]
-    >  Todas as ações realizadas na área de trabalho serão registradas. Pause a gravação se estiver realizando ações que possam levar à exclusão de dados confidenciais na gravação.  
+    > Todas as ações realizadas na área de trabalho serão registradas. Pause a gravação se estiver realizando ações que possam levar à exclusão de dados confidenciais na gravação.  
   
 9. Abra o SimpleWPFApp usando o atalho da área de trabalho.  
   
@@ -203,7 +203,7 @@ Neste passo a passo, você criará um aplicativo simples do Windows Presentation
 3. Para corrigir esse problema, você pode fazer o teste de IU codificado esperar o controle CheckBox ser habilitado antes de continuar nessa linha usando o método `WaitForControlEnabled()`.  
   
     > [!WARNING]
-    >  Não modifique o arquivo UIMap.Designer.cs. Todas as alterações de código que você fez no arquivo UIMapDesigner.cs serão substituídas cada vez que você gerenciar o código usando o UIMap - Construtor de Teste de IU Codificado. Se você tiver de modificar um método gravado, copie-o para o arquivo UIMap.cs e renomeie-o. O arquivo UIMap.cs pode ser usado para substituir métodos e propriedades no arquivo UIMapDesigner.cs. Você deve remover a referência para o método original no arquivo Coded UITest.cs e substituí-la pelo nome do método renomeado.  
+    > Não modifique o arquivo UIMap.Designer.cs. Todas as alterações de código que você fez no arquivo UIMapDesigner.cs serão substituídas cada vez que você gerenciar o código usando o UIMap - Construtor de Teste de IU Codificado. Se você tiver de modificar um método gravado, copie-o para o arquivo UIMap.cs e renomeie-o. O arquivo UIMap.cs pode ser usado para substituir métodos e propriedades no arquivo UIMapDesigner.cs. Você deve remover a referência para o método original no arquivo Coded UITest.cs e substituí-la pelo nome do método renomeado.  
   
 4. No Gerenciador de Soluções, localize **UIMap.uitest** em seu projeto de teste de IU codificado.  
   
@@ -224,7 +224,7 @@ Neste passo a passo, você criará um aplicativo simples do Windows Presentation
      As atualizações do método de teste são salvas no arquivo UIMap.Designer.  
   
     > [!CAUTION]
-    >  Depois de mover o método, você não pode mais editá-lo usando o Editor de Teste de IU Codificado. Você deve adicionar seu código personalizado e mantê-lo usando o Editor de Códigos.  
+    > Depois de mover o método, você não pode mais editá-lo usando o Editor de Teste de IU Codificado. Você deve adicionar seu código personalizado e mantê-lo usando o Editor de Códigos.  
   
 10. Renomear o método de `SimpleAppTest()` para `ModifiedSimpleAppTest()`  
   

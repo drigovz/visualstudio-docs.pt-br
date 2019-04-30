@@ -15,12 +15,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0b4a5e7e626e7cf9510047f0b016ff80ea8203e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef8a152293ef5e1cf9137540abb5590eb43c057a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424445"
 ---
 # <a name="uml-component-diagrams-guidelines"></a>Diagramas de componente UML: Diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
  Para obter mais informações sobre como usar diagramas de componente no processo de design, consulte [modelar a arquitetura do seu aplicativo](../modeling/model-your-app-s-architecture.md).  
   
 > [!NOTE]
->  Etapas detalhadas para a criação de qualquer um dos diagramas de modelagem são descritas em [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
+> Etapas detalhadas para a criação de qualquer um dos diagramas de modelagem são descritas em [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-component-diagram"></a>Para criar um diagrama de componente  
   
@@ -157,7 +157,7 @@ No Visual Studio, você pode desenhar um *diagrama de componente* para mostrar a
          Uma interface fornecida é exibida no componente. Uma marca Action é exibida próxima.  
   
         > [!NOTE]
-        >  Se você usar **colar** em vez de **Colar referência**, uma nova interface que tem um novo nome será criada.  
+        > Se você usar **colar** em vez de **Colar referência**, uma nova interface que tem um novo nome será criada.  
   
     3. Se você quisesse criar uma interface obrigatória, clique na marca de ação e, em seguida, clique em **converter a Interface necessária**.  
   
