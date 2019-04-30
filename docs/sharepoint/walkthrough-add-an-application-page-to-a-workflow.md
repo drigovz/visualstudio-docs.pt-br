@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fe2e782723b35a8cdd5505c60f74d1be12bb2077
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 032447051bc03b037abba2920d48473f0d73935f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409554"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>Passo a passo: Adicionar uma página de aplicativo a um fluxo de trabalho
   Este passo a passo demonstra como adicionar uma página de aplicativo que exibe dados derivados de um fluxo de trabalho a um projeto de fluxo de trabalho. Ele se baseia no projeto descrito no tópico [passo a passo: Criar um fluxo de trabalho com formulários de associação e iniciação](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md).
@@ -295,7 +295,7 @@ ms.locfileid: "60083019"
     ```
 
     > [!WARNING]
-    >  Certifique-se de substituir "TestServer" no código com o nome de um servidor válido que está executando o SharePoint.
+    > Certifique-se de substituir "TestServer" no código com o nome de um servidor válido que está executando o SharePoint.
 
 ## <a name="test-the-application-page"></a>Testar a página de aplicativo
  Em seguida, determine se a página de aplicativo exibe corretamente os dados de despesas.

@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8a24b934b0ffe4cc22dc7be01aca19910ee3c768
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cb70705d29ad636329803656aeaa1a27ddf237d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402760"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>Conjuntos de dados e TableAdapters separados m diferentes projetos
 Conjuntos de dados tipados foram aprimorados para que o [TableAdapters](create-and-configure-tableadapters.md) e classes de conjunto de dados podem ser geradas em projetos separados. Isso permite que você separe as camadas de aplicativos rapidamente e gerar aplicativos de dados de n camadas.
@@ -33,7 +33,7 @@ Quando você separar o código do conjunto de dados de código TableAdapter, o p
 1. Abrir uma solução que contém um conjunto de dados (*. xsd* arquivo).
 
     > [!NOTE]
-    >  Se a solução não contém o projeto no qual você deseja separar o código do conjunto de dados, criar o projeto, ou adicionar um projeto existente à solução.
+    > Se a solução não contém o projeto no qual você deseja separar o código do conjunto de dados, criar o projeto, ou adicionar um projeto existente à solução.
 
 2. Clique duas vezes em um arquivo de conjunto de dados tipado (um *. xsd* arquivo) em **Gerenciador de soluções** para abrir o conjunto de dados do **Dataset Designer**.
 
@@ -46,7 +46,7 @@ Quando você separar o código do conjunto de dados de código TableAdapter, o p
      Depois de selecionar o projeto no qual você deseja gerar o código do conjunto de dados, o **arquivo de conjunto de dados** propriedade é preenchida com um nome de arquivo padrão. Você pode alterar esse nome, se necessário. Além disso, se você quiser gerar o código do conjunto de dados em um diretório específico, você pode definir as **pasta do projeto** propriedade para o nome de uma pasta.
 
     > [!NOTE]
-    >  Quando você separa os conjuntos de dados e TableAdapters (Configurando o **projeto DataSet** propriedade), classes parciais do conjunto de dados existentes no projeto não serão movidas automaticamente. As classes parciais do conjunto de dados existentes devem ser movidas manualmente para o projeto de conjunto de dados.
+    > Quando você separa os conjuntos de dados e TableAdapters (Configurando o **projeto DataSet** propriedade), classes parciais do conjunto de dados existentes no projeto não serão movidas automaticamente. As classes parciais do conjunto de dados existentes devem ser movidas manualmente para o projeto de conjunto de dados.
 
 6. Salve o conjunto de dados.
 
@@ -55,7 +55,7 @@ Quando você separar o código do conjunto de dados de código TableAdapter, o p
 Por padrão, após você separar o conjunto de dados e o código TableAdapter, o resultado é um arquivo de classe distintas em cada projeto. O projeto original tem um arquivo chamado *DatasetName.Designer.vb* (ou *DatasetName.Designer.cs*) que contém o código do TableAdapter. O projeto que é designado na **projeto Dataset** propriedade tem um arquivo chamado *DatasetName.DataSet.Designer.vb* (ou *DatasetName.DataSet.Designer.cs*) que contém o código do conjunto de dados.
 
 > [!NOTE]
->  Para exibir o arquivo de classe gerado, selecione o conjunto de dados ou projeto do TableAdapter. Em seguida, na **Gerenciador de soluções**, selecione **Mostrar todos os arquivos**.
+> Para exibir o arquivo de classe gerado, selecione o conjunto de dados ou projeto do TableAdapter. Em seguida, na **Gerenciador de soluções**, selecione **Mostrar todos os arquivos**.
 
 ## <a name="see-also"></a>Consulte também
 

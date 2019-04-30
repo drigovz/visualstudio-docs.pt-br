@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 44e12e616e453dcdc0390e8a6eb5b2065a51a6bb
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 31bbc54b08fc053d10bd79d6a6b24e7605bc0351
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656928"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384054"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Ferramentas LINQ to SQL no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ O LINQ to SQL foi a primeira tecnologia de mapeamento relacional de objeto lanç
  ![O LINQ to SQL Designer](../data-tools/media/raddata-linq-to-sql-designer.png "raddata LINQ to SQL Designer")
 
 > [!IMPORTANT]
->  O [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] é um mapeador relacional de objeto simples, pois suporta apenas as relações de mapeamento de 1:1. Em outras palavras, uma classe de entidade pode ter apenas uma relação de mapeamento de 1:1 com uma tabela ou exibição de banco de dados. Não há suporte para o mapeamento complexo, como o mapeamento de uma classe de entidade associado a uma tabela, Use o Entity Framework para o mapeamento complexo. Além disso, o designer é um gerador de código unidirecional. Isso significa que somente as alterações feitas à superfície de designer são refletidas no arquivo de código. Alterações manuais ao arquivo de código não são refletidas no [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. As alterações que você fizer manualmente no arquivo de código são substituídas quando o designer é salvo e o código for gerado novamente. Para obter informações sobre como adicionar código de usuário e estender as classes geradas pela [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], consulte [como: Estender o código gerado pelo Designer relacional de objetos](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
+> O [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] é um mapeador relacional de objeto simples, pois suporta apenas as relações de mapeamento de 1:1. Em outras palavras, uma classe de entidade pode ter apenas uma relação de mapeamento de 1:1 com uma tabela ou exibição de banco de dados. Não há suporte para o mapeamento complexo, como o mapeamento de uma classe de entidade associado a uma tabela, Use o Entity Framework para o mapeamento complexo. Além disso, o designer é um gerador de código unidirecional. Isso significa que somente as alterações feitas à superfície de designer são refletidas no arquivo de código. Alterações manuais ao arquivo de código não são refletidas no [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. As alterações que você fizer manualmente no arquivo de código são substituídas quando o designer é salvo e o código for gerado novamente. Para obter informações sobre como adicionar código de usuário e estender as classes geradas pela [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], consulte [como: Estender o código gerado pelo Designer relacional de objetos](../data-tools/how-to-extend-code-generated-by-the-o-r-designer.md).
 
 ## <a name="creating-and-configuring-the-datacontext"></a>Criando e configurando o DataContext
  Depois de adicionar um **Classes LINQ to SQL** item a um projeto e abrir os [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], a superfície de design vazio representa vazio <xref:System.Data.Linq.DataContext> pronto para ser configurado. o <xref:System.Data.Linq.DataContext> é configurado com as informações de conexão fornecidas pelo primeiro item que é arrastado para a superfície de design... Portanto, o <xref:System.Data.Linq.DataContext> é configurado usando as informações de conexão do primeiro item solto na superfície de design. Para obter mais informações sobre o <xref:System.Data.Linq.DataContext> classe, consulte [métodos de DataContext (Designer relacional de objetos)](../data-tools/datacontext-methods-o-r-designer.md).
@@ -53,7 +53,7 @@ O LINQ to SQL foi a primeira tecnologia de mapeamento relacional de objeto lanç
  Você pode criar <xref:System.Data.Linq.DataContext> métodos que chamam (são mapeados) procedimentos armazenados e funções arrastando-as da **Gerenciador de servidores**/**Database Explorer** até o [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]. Os procedimentos armazenados e funções são adicionados a [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] como métodos de <xref:System.Data.Linq.DataContext>.
 
 > [!NOTE]
->  Quando você arrasta procedimentos armazenados e funções do **Gerenciador de servidores**/**Database Explorer** até a [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], o tipo de retorno de gerado <xref:System.Data.Linq.DataContext> difere do método Dependendo de onde você solta o item. Para obter mais informações, consulte [métodos de DataContext (Designer relacional de objetos)](../data-tools/datacontext-methods-o-r-designer.md).
+> Quando você arrasta procedimentos armazenados e funções do **Gerenciador de servidores**/**Database Explorer** até a [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)], o tipo de retorno de gerado <xref:System.Data.Linq.DataContext> difere do método Dependendo de onde você solta o item. Para obter mais informações, consulte [métodos de DataContext (Designer relacional de objetos)](../data-tools/datacontext-methods-o-r-designer.md).
 
 ## <a name="configuring-a-datacontext-to-use-stored-procedures-to-save-data-between-entity-classes-and-a-database"></a>Configurando um DataContext para usar procedimentos armazenados para salvar dados entre classes de entidade e um base de dados
  Conforme observado anteriormente, você pode criar os métodos de <xref:System.Data.Linq.DataContext> que chamam procedimentos armazenados e funções. Além disso, você também pode atribuir procedimentos armazenados que podem ser usados para o comportamento padrão de tempo de execução de [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] que executa inserções, atualiza, e exclui as. Para obter mais informações, confira [Como: Atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md).

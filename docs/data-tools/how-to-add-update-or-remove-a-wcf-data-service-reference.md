@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4591c6b794905eb0b8742292c752762cdea991e0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1fd14dcbe2ed5840fdaa2da755fe6a95d7c8e68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402919"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Como: Adicionar, atualizar ou remover uma referência do WCF Data Service
 Um *referência de serviço* permite que um projeto para acessar um ou mais [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]. Use o **adicionar referência de serviço** caixa de diálogo para pesquisar [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] na solução atual, localmente, em uma rede local ou na Internet.
@@ -37,7 +37,7 @@ Um *referência de serviço* permite que um projeto para acessar um ou mais [!IN
 2. No **endereço** caixa, digite a URL para o serviço e, em seguida, clique em **vá** para procurar o serviço. Se o serviço implementar segurança de nome e a senha do usuário, você será solicitado um nome de usuário e senha.
 
     > [!NOTE]
-    >  Você só deve fazer referência a serviços de uma fonte confiável. A adição de referências de uma fonte não confiável pode comprometer a segurança.
+    > Você só deve fazer referência a serviços de uma fonte confiável. A adição de referências de uma fonte não confiável pode comprometer a segurança.
 
      Você também pode selecionar a URL do **endereço** lista, que armazena as URLs de 15 anteriores na qual os metadados de serviço válido foi encontrado.
 
@@ -88,7 +88,7 @@ Um *referência de serviço* permite que um projeto para acessar um ou mais [!IN
      O cliente do serviço será removido da solução e os metadados que descrevem o serviço serão removido do *App. config* arquivo.
 
     > [!NOTE]
-    >  Qualquer código que faz referência a referência de serviço deve ser removido manualmente.
+    > Qualquer código que faz referência a referência de serviço deve ser removido manualmente.
 
 ## <a name="see-also"></a>Consulte também
 

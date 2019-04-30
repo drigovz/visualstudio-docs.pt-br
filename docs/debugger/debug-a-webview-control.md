@@ -14,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 726a61ae6c515d80fae13c8bfbac6a13943be6ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 43d545a52cbe066e4bb5002b57e9539b9a1b303c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402638"
 ---
 # <a name="debug-a-webview-control-in-a-uwp-app"></a>Depurar um controle WebView em um aplicativo UWP
 
@@ -42,7 +42,7 @@ ms.locfileid: "60081756"
 4. (Opcional) No caso de versões não Expressas do Visual Studio, desabilite a depuração JIT (Just-In-Time) escolhendo **Ferramentas, Opções, Depuração, Just-In-Time**, em seguida, desabilite a depuração JIT para o Script.
 
     > [!NOTE]
-    >  Desabilitando a depuração JIT, você pode ocultar caixas de diálogo para exceções não tratadas que ocorrem em algumas páginas da Web. No Visual Studio Express, a depuração JIT sempre fica desabilitada.
+    > Desabilitando a depuração JIT, você pode ocultar caixas de diálogo para exceções não tratadas que ocorrem em algumas páginas da Web. No Visual Studio Express, a depuração JIT sempre fica desabilitada.
 
 5. Pressione F5 para iniciar a depuração.
 
@@ -79,7 +79,7 @@ ms.locfileid: "60081756"
      ![Destino de seleção na janela do console JavaScript](../debugger/media/js_console_target.png "JS_Console_Target")
 
     > [!NOTE]
-    >  Usando o console, você pode interagir com um único `WebView`, `iFrame`, compartilhar o contrato ou web worker por vez. Cada elemento requer uma instância separada do host da plataforma web (WWAHost.exe). Você pode interagir com um host por vez.
+    > Usando o console, você pode interagir com um único `WebView`, `iFrame`, compartilhar o contrato ou web worker por vez. Cada elemento requer uma instância separada do host da plataforma web (WWAHost.exe). Você pode interagir com um host por vez.
 
 6. Exibir e modificar variáveis no seu aplicativo ou usar comandos do console, conforme descrito em [guia de início rápido: Depurar o JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [comandos do JavaScript Console](../debugger/javascript-console-commands.md).
 

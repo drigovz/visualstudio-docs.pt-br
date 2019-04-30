@@ -11,19 +11,19 @@ ms.assetid: 9fcfaa0f-7b41-4b68-82ec-7a151dca5d7e
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c4c62bf12505bf04b8a680946ce848ea92709507
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4b01b38510b11f5a9928e865b1511d0ea5639ea8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408573"
 ---
 # <a name="support-for-project-and-configuration-properties"></a>Suporte para propriedades do projeto e de configuração
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 O **propriedades** janela no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o ambiente de desenvolvimento integrado (IDE) pode exibir propriedades do projeto e configuração. Você pode fornecer uma página de propriedades para seu próprio tipo de projeto para que o usuário pode definir propriedades de seu aplicativo.  
   
- Selecionando um nó do projeto no **Gerenciador de soluções** e, em seguida, clicando em **propriedades** sobre o **projeto** menu, você pode abrir uma caixa de diálogo que inclui o projeto e a configuração Propriedades. Na [!INCLUDE[csprcs](../../includes/csprcs-md.md)] e [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]e tipos derivados desses idiomas, essa caixa de diálogo é exibida como uma página com guias do projeto do [geral, ambiente, caixa de diálogo Opções](../../ide/reference/general-environment-options-dialog-box.md). Para obter mais informações, consulte [não está em compilação: Passo a passo: Expondo propriedades de configuração (C#) e de projeto](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
+ Selecionando um nó do projeto no **Gerenciador de soluções** e, em seguida, clicando em **propriedades** sobre o **projeto** menu, você pode abrir uma caixa de diálogo que inclui o projeto e a configuração Propriedades. Na [!INCLUDE[csprcs](../../includes/csprcs-md.md)] e [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]e tipos derivados desses idiomas, essa caixa de diálogo é exibida como uma página com guias do projeto do [geral, ambiente, caixa de diálogo Opções](../../ide/reference/general-environment-options-dialog-box.md). Para obter mais informações, consulte [não está em compilação: Passo a passo: Expondo propriedades de configuração (c#) e de projeto](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e).  
   
  A estrutura de pacote gerenciado para projetos (MPFProj) fornece classes auxiliares para criar e gerenciar o novo sistema de projeto. Você pode encontrar a fonte de instruções de código e compilação em [MPF de projetos – Visual Studio 2013](http://mpfproj12.codeplex.com/).  
   
@@ -53,7 +53,7 @@ O **propriedades** janela no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o a
  É responsabilidade do projeto para persistir as propriedades do projeto e a configuração do arquivo de projeto.  
   
 > [!NOTE]
->  Um projeto pode otimizar persistência persistentes somente valores de propriedade que são diferentes dos seus valores padrão.  
+> Um projeto pode otimizar persistência persistentes somente valores de propriedade que são diferentes dos seus valores padrão.  
   
 ## <a name="support-for-project-and-configuration-properties"></a>Suporte para propriedades do projeto e de configuração  
  O `Microsoft.VisualStudio.Package.SettingsPage` classe implementa as páginas de propriedades de projeto e a configuração. A implementação padrão de `SettingsPage` oferece propriedades públicas para um usuário em uma grade de propriedade genérica. O `Microsoft.VisualStudio.Package.HierarchyNode.GetPropertyPageGuids` método seleciona classes derivadas de `SettingsPage` para grades de propriedades do projeto. O `Microsoft.VisualStudio.Package.ProjectNode.GetConfigPropertyPageGuids` método seleciona classes derivadas de `SettingsPage` para grades de propriedades de configuração. O tipo de projeto deve substituir esses métodos para selecionar as páginas de propriedades apropriadas.  
@@ -65,7 +65,7 @@ O **propriedades** janela no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o a
 - `Microsoft.VisualStudio.Package.SettingsPage.GetConfigProperty` e `Microsoft.VisualStudio.Package.SettingsPage.SetConfigProperty` persistir as propriedades de configuração.  
   
   > [!NOTE]
-  >  As implementações do `Microsoft.VisualStudio.Package.SettingsPage` e `Microsoft.VisualStudio.Package.ProjectNode` classes usam o `Microsoft.Build.BuildEngine` métodos (MSBuild) para obter e definir propriedades do projeto e configuração do arquivo de projeto.  
+  > As implementações do `Microsoft.VisualStudio.Package.SettingsPage` e `Microsoft.VisualStudio.Package.ProjectNode` classes usam o `Microsoft.Build.BuildEngine` métodos (MSBuild) para obter e definir propriedades do projeto e configuração do arquivo de projeto.  
   
   A classe derivar de `SettingsPage` deve implementar `Microsoft.VisualStudio.Package.SettingsPage.ApplyChanges` e `Microsoft.VisualStudio.Package.SettingsPage.BindProperties` para persistir as propriedades do projeto ou a configuração do arquivo de projeto.  
   
@@ -83,7 +83,7 @@ O **propriedades** janela no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o a
  O <xref:System.ComponentModel.CategoryAttribute>, <xref:System.ComponentModel.DisplayNameAttribute>, e <xref:System.ComponentModel.DescriptionAttribute> atributos determinam o layout, rotulagem e a descrição das propriedades de projeto e configuração em uma página de propriedades genérico. Esses atributos determinar a categoria, nome de exibição e descrição da opção, respectivamente.  
   
 > [!NOTE]
->  Atributos equivalentes, SRCategory, LocDisplayName e SRDescription, usar os recursos de cadeia de caracteres para localização e são definidos no [MPF de projetos – Visual Studio 2013](http://mpfproj12.codeplex.com/).  
+> Atributos equivalentes, SRCategory, LocDisplayName e SRDescription, usar os recursos de cadeia de caracteres para localização e são definidos no [MPF de projetos – Visual Studio 2013](http://mpfproj12.codeplex.com/).  
   
  Considere o fragmento de código a seguir:  
   
@@ -93,7 +93,7 @@ O **propriedades** janela no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] o a
  O `MyConfigProp` propriedade configuração aparece na página de propriedades de configuração como **propriedade de configuração My** na categoria de **My Category**. Se a opção for selecionada, a descrição **minha descrição**, aparece no painel de descrição.  
   
 ## <a name="see-also"></a>Consulte também  
- [Não está em compilação: Passo a passo: Expondo o projeto e propriedades de configuração (C#)](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
+ [Não está em compilação: Passo a passo: Expondo o projeto e propriedades de configuração (c#)](http://msdn.microsoft.com/d850d63b-25e2-4505-9f3d-eb038d7c1d0e)   
  [Adicionando e removendo páginas de propriedades](../../extensibility/adding-and-removing-property-pages.md)   
  [Estado de VSPackage](../../misc/vspackage-state.md)   
  [Projetos](../../extensibility/internals/projects.md)   

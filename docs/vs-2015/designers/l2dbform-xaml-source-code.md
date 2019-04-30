@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 11b35534641ec01c9d622b35caacf2e68162e4e1
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: f08045a83849bdbd5bf6fb51287a66806d3bf4d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54797347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403494"
 ---
 # <a name="l2dbformxaml-source-code"></a>Código de L2DBForm.xaml
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -87,7 +87,7 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
 ### <a name="description"></a>Descrição  
   
 > [!NOTE]
->  Recomendamos que você copie o seguinte código abaixo em um editor de códigos, como o editor de código-fonte C# no Visual Studio, de modo que a linha números é mais fácil de controlar.  
+> Recomendamos que você copie o seguinte código abaixo em um editor de códigos, como o editor de código-fonte C# no Visual Studio, de modo que a linha números é mais fácil de controlar.  
   
 ### <a name="code"></a>Código  
   
@@ -242,5 +242,5 @@ Text="{Binding Path=Attribute[id].Value}"...Text="{Binding Path=Value}"
  Para o código-fonte de C# para os manipuladores de eventos associados com os elementos de interface do usuário WPF, consulte [Código-fonte de L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: exemplo de LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)   
+ [Passo a passo: Exemplo de LinqToXmlDataBinding](../designers/walkthrough-linqtoxmldatabinding-example.md)   
  [Código-fonte de L2DBForm.xaml.cs](../designers/l2dbform-xaml-cs-source-code.md)

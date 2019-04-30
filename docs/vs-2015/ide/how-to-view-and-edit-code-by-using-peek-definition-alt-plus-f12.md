@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4c170b533b1eadb60be2ec1ca5d5fe000c5b4d6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76a45297062b42b559f07867b20bdadac79cc082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055725"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386850"
 ---
 # <a name="how-to-view-and-edit-code-by-using-peek-definition-altf12"></a>Como: Exibir e editar códigos usando inspecionar definição (Alt + F12)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ Você pode usar o comando **Inspecionar Definição** para exibir e editar códi
  Você pode usar **Inspecionar Definição** com código C#, Visual Basic e C++. No Visual Basic, **Inspecionar Definição** mostra um link para o **Pesquisador de Objetos** de símbolos sem metadados de definição (por exemplo, os tipos internos do .NET Framework).  
   
 > [!IMPORTANT]
->  Você não pode usar esse comando em qualquer versão Express do Visual Studio 2013.  
+> Você não pode usar esse comando em qualquer versão Express do Visual Studio 2013.  
   
 ## <a name="working-with-peek-definition"></a>Trabalhando com Inspecionar Definição  
   
@@ -76,7 +76,7 @@ Você pode usar o comando **Inspecionar Definição** para exibir e editar códi
     |Alternar entre a janela do editor de códigos e a janela de definição|Shift+Esc|  
   
     > [!NOTE]
-    >  Você também pode usar os mesmos atalhos de teclado para editar código em uma janela **Inspecionar Definição**, como usa em qualquer outro lugar no Visual Studio.  
+    > Você também pode usar os mesmos atalhos de teclado para editar código em uma janela **Inspecionar Definição**, como usa em qualquer outro lugar no Visual Studio.  
   
 ## <a name="see-also"></a>Consulte também  
  [Dicas de produtividade](../ide/productivity-tips-for-visual-studio.md)

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: de9e1a002bf31335131e741a8ce5adc0b2219dbc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d83a4c3d9c070f77a6a13b28da0a57dbe6c48be0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56606622"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415365"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>Correspondência de chave em um serviço de linguagem herdado
 Correspondência de chaves ajuda o desenvolvedor a acompanhar os elementos de linguagem que precisam ocorrer em conjunto, como parênteses e as chaves. Quando um desenvolvedor entra em uma chave de fechamento, a chave de abertura é realçada.
@@ -26,7 +26,7 @@ Correspondência de chaves ajuda o desenvolvedor a acompanhar os elementos de li
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar correspondência de chaves, consulte [passo a passo: Exibir chaves correspondentes](../../extensibility/walkthrough-displaying-matching-braces.md).
 
 > [!NOTE]
->  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
+> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
 
  O <xref:Microsoft.VisualStudio.Package.AuthoringSink> dá suporte a ambos os pares de classe e triplica com o <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchPair%2A> e <xref:Microsoft.VisualStudio.Package.AuthoringSink.MatchTriple%2A> métodos.
 

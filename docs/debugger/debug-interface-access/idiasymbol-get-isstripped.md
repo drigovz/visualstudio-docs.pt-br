@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e21e212bc425a1cdbbe51ba6039167b42a186814
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: c46319714e24a64ad71951b78c55c140028c3ab0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56654055"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400117"
 ---
 # <a name="idiasymbolgetisstripped"></a>IDiaSymbol::get_isStripped
 Sinalizador recupera que indica se símbolos particulares foram retirados do arquivo de símbolo.
@@ -39,7 +39,7 @@ HRESULT get_isStripped(
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
  Essa propriedade está disponível do `SymTagExe` tipo de símbolo (consulte [Exe](../../debugger/debug-interface-access/exe.md)).

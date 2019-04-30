@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 20c449148b98c89f1eb64beb61588661f02ab74a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 21dc0cb7f02639ca6faa89ae4c067f21e083d6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60073521"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387507"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>Ler modelos e diagramas em outras edições do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,14 +31,14 @@ Quando você abre um modelo em uma versão do Visual Studio que não dá suporte
  Por esse motivo, se você quiser ler um diagrama UML ou diagrama de camada, deve também ter acesso ao projeto de modelagem no qual ele foi criado. Você pode fazer isso acessando o projeto do [!INCLUDE[esprscc](../includes/esprscc-md.md)], ou obtendo uma cópia dos arquivos de projeto.  
   
 > [!NOTE]
->  Isso não se aplica ao código gerados a partir de código de diagramas de classe de mapas e .NET. Esses diagramas podem ser exibidos independentemente de um projeto de modelagem.  
+> Isso não se aplica ao código gerados a partir de código de diagramas de classe de mapas e .NET. Esses diagramas podem ser exibidos independentemente de um projeto de modelagem.  
   
  Para ler um diagrama UML ou em um diagrama de camada, o conjunto mínimo de arquivos que você precisa é da seguinte maneira:  
   
 - Os dois arquivos para o diagrama que você deseja ler, por exemplo, de diagrama **MyDiagram.classdiagram e MyDiagram.classdiagram.layout**.  
   
     > [!NOTE]
-    >  Para obter diagramas de camada, você também deve ter o arquivo chamado _MyDiagram_**. layerdiagram.suppressions**.  
+    > Para obter diagramas de camada, você também deve ter o arquivo chamado _MyDiagram_**. layerdiagram.suppressions**.  
   
 - Arquivo de projeto de modelagem (**MyModel.modelproj**)  
   

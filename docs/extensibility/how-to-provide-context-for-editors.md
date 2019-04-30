@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0adc498ebaaf7ea1b5de033d4d589d99545da976
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f37550dbea8b3633c79358822fa8f2bdf1ecb6d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068230"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417156"
 ---
 # <a name="how-to-provide-context-for-editors"></a>Como: Fornecer contexto para editores
 Para um editor, o contexto está ativo somente quando o editor tem o foco ou imediatamente antes do foco foi movido para uma janela de ferramentas tinha o foco. Você pode fornecer contexto para um editor, fazendo as seguintes tarefas:
@@ -65,7 +65,7 @@ Para um editor, o contexto está ativo somente quando o editor tem o foco ou ime
      Quando o **ajuda dinâmica** janela chamadas <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> para indicar que ele está sendo atualizado, o editor ou designer pode atualizar o contexto corretamente para o recipiente de contexto de pai e qualquer recipientes de subcontexto nesse momento.
 
     > [!NOTE]
-    >  O `SetDirty` sinalizador é definido automaticamente como `true` sempre que o contexto é adicionado ou removido do recipiente de contexto. O **ajuda dinâmica** janela só chama <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> no conjunto de contexto se o `SetDirty` sinalizador é definido como `true`. Ele é redefinido para `false` após a atualização.
+    > O `SetDirty` sinalizador é definido automaticamente como `true` sempre que o contexto é adicionado ou removido do recipiente de contexto. O **ajuda dinâmica** janela só chama <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContextUpdate.UpdateUserContext%2A> no conjunto de contexto se o `SetDirty` sinalizador é definido como `true`. Ele é redefinido para `false` após a atualização.
 
 3. Chame <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.AddAttribute%2A> para adicionar contexto à coleção de contexto ativo ou <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserContext.RemoveAttribute%2A> para remover o contexto.
 
@@ -73,7 +73,7 @@ Para um editor, o contexto está ativo somente quando o editor tem o foco ou ime
  Se você estiver escrevendo seu próprio editor, você deve concluir todas as três dos procedimentos neste artigo para fornecer contexto para o editor.
 
 > [!NOTE]
->  Para ativar corretamente uma janela do editor ou designer e certifique-se de que o roteamento de comando é atualizado corretamente, você deve chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> no componente para torná-lo a janela de foco.
+> Para ativar corretamente uma janela do editor ou designer e certifique-se de que o roteamento de comando é atualizado corretamente, você deve chamar <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.Show%2A> no componente para torná-lo a janela de foco.
 
  O SEID é uma coleção de propriedades que são alteradas com base na seleção. Informações de SEID estão disponíveis por meio da seleção global. A seleção global é conectados com eventos disparados pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> interface, e tem uma lista de tudo que está selecionado (editor atual, a janela de ferramentas atual, hierarquia atual e assim por diante).
 

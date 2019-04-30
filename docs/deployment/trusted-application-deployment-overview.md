@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 65b06ada96387ac4bff022c92e4025718b0291d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8222c6526d54ffb7721c2f2799458fe5c8277cd7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406644"
 ---
 # <a name="trusted-application-deployment-overview"></a>Visão geral da implantação de aplicativos confiáveis
 Este tópico fornece uma visão geral de como implantar [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos que têm permissões elevadas, usando a tecnologia de implantação de aplicativos confiáveis.
@@ -29,7 +29,7 @@ Este tópico fornece uma visão geral de como implantar [!INCLUDE[ndptecclick](.
  Confiável para implantação do aplicativo, parte do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] tecnologia de implantação, torna mais fácil para as organizações de qualquer tamanho para conceder permissões adicionais a um aplicativo gerenciado de maneira mais seguro sem nenhum aviso ao usuário. Com a implantação de aplicativo confiável, uma organização pode simplesmente configurar um computador cliente para ter uma lista de editores confiáveis, que são identificados usando certificados Authenticode. Depois disso, qualquer [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo assinado por um destes trusted publishers recebe um nível mais alto de confiança.
 
 > [!NOTE]
->  Confiável para que implantação de aplicativo requer uma configuração única de um computador do usuário. Em ambientes de área de trabalho gerenciados, essa configuração pode ser executada por meio da política global. Se isso é não o que você deseja para seu aplicativo, use a elevação de permissões. Para obter mais informações, consulte [Securing ClickOnce Applications](../deployment/securing-clickonce-applications.md) (Protegendo aplicativos ClickOnce).
+> Confiável para que implantação de aplicativo requer uma configuração única de um computador do usuário. Em ambientes de área de trabalho gerenciados, essa configuração pode ser executada por meio da política global. Se isso é não o que você deseja para seu aplicativo, use a elevação de permissões. Para obter mais informações, consulte [Securing ClickOnce Applications](../deployment/securing-clickonce-applications.md) (Protegendo aplicativos ClickOnce).
 
 ## <a name="trusted-application-deployment-basics"></a>Noções básicas de implantação de aplicativos confiáveis
  A tabela a seguir mostra os objetos e as funções que estão envolvidas na implantação de aplicativos confiáveis.
@@ -88,7 +88,7 @@ Você deve seguir estas etapas para tirar proveito da implantação de aplicativ
  Depois de obter seu certificado, você deve usá-lo para assinar a sua implantação. Se você estiver implantando seu aplicativo usando o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] Assistente de publicação, o assistente irá gerar automaticamente um certificado de teste para que você se você não especificou um certificado por conta própria. Você também pode usar o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] janela do Designer de projeto, no entanto, para fornecer um certificado fornecido por uma autoridade de certificação.  Consulte também [como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
 > [!CAUTION]
->  Não é recomendável que o aplicativo ser implantado com um certificado de teste.
+> Não é recomendável que o aplicativo ser implantado com um certificado de teste.
 
  Você também pode assinar o aplicativo usando o *Mage.exe* ou *MageUI.exe* ferramentas do SDK. Para obter mais informações, confira [Passo a passo: Implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md). Para obter uma lista completa das opções de linha de comando relacionados à entrada de implantação, consulte [Mage.exe (Manifest Generation and Editing Tool)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool).
 

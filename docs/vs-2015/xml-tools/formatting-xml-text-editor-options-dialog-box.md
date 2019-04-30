@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 34eedf61afd79570ca1e4ba471efa9802aae7bfa
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 588bf415a801a9244cd9a046e0c503c0b238db58
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664119"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417411"
 ---
 # <a name="formatting-xml-text-editor-options-dialog-box"></a>Formatação, XML, editor de texto, a caixa de diálogo opções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,14 +22,14 @@ ms.locfileid: "59664119"
 Esta caixa de diálogo permite que você especifique as configurações de formatação para o editor XML. Você pode acessar o **opções** caixa de diálogo do **ferramentas** menu.  
   
 > [!NOTE]
->  Essas configurações estão disponíveis quando você seleciona os **Editor de texto** pasta, o **XML** pasta e, em seguida, o **formatação** opção o **opções** caixa de diálogo.  
+> Essas configurações estão disponíveis quando você seleciona os **Editor de texto** pasta, o **XML** pasta e, em seguida, o **formatação** opção o **opções** caixa de diálogo.  
   
 ## <a name="attributes"></a>Atributos  
  **Preservar formatação manual de atributos**  
  Os atributos não são reformatados. Esse é o padrão.  
   
 > [!NOTE]
->  Se os atributos estão em várias linhas, o editor recua cada linha de atributos para coincidir com o recuo de elemento pai.  
+> Se os atributos estão em várias linhas, o editor recua cada linha de atributos para coincidir com o recuo de elemento pai.  
   
  **Alinhar cada atributo em sua própria linha**  
  Alinha os segundos e atributos subsequentes verticalmente para coincidir com o recuo do primeiro atributo. O texto a seguir XML é um exemplo de como os atributos seriam alinhados.  

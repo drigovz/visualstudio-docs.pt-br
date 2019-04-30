@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0530e5547fd17e1db84e7164039b507cb4583703
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 836788e0d9d44c7da5dda44ce80f76ab91642dda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60086307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423974"
 ---
 # <a name="parameter-info-in-a-legacy-language-service"></a>Informações de parâmetro em um serviço de linguagem herdado
 A dica de ferramenta informações de parâmetro do IntelliSense fornece aos usuários com dicas sobre onde eles estão em um constructo de linguagem.
@@ -27,7 +27,7 @@ A dica de ferramenta informações de parâmetro do IntelliSense fornece aos usu
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações, consulte [estender o Editor e os serviços de linguagem](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
->  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
+> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
 
 ## <a name="how-parameter-info-tooltips-work"></a>Como funciona a dica de ferramenta de informações de parâmetro
  Quando você digita uma instrução no editor, o VSPackage exibe uma janela de dica de ferramenta pequeno que contém a definição da instrução que está sendo digitada. Por exemplo, se você digitar uma instrução do Microsoft Foundation Classes (MFC) (tais como `pMainFrame ->UpdateWindow`) e pressione a tecla de parêntese de abertura para iniciar a lista de parâmetros, uma dica de método aparece exibindo a definição do `UpdateWindow` método.

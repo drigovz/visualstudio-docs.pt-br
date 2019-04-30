@@ -8,12 +8,12 @@ ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8de4960548b363c99b9625553c47b2cbad2df2de
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d5e45c91e9dadb0f457e3a2ecfa2e5484fbe0e78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063680"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412326"
 ---
 # <a name="managing-universal-windows-projects"></a>Gerenciando projetos universais do Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -235,7 +235,7 @@ Aplicativos universais do Windows são aplicativos que direcionam o Windows 8.1 
     ```  
   
     > [!IMPORTANT]
-    >  Se o usuário abrir um projeto de aplicativo do Windows universal C++ na instância experimental, o código acima gera uma exceção. Este é um problema conhecido. Para evitar a exceção, substitua o `foreach` bloco acima com o seguinte:  
+    > Se o usuário abrir um projeto de aplicativo do Windows universal C++ na instância experimental, o código acima gera uma exceção. Este é um problema conhecido. Para evitar a exceção, substitua o `foreach` bloco acima com o seguinte:  
   
     ```csharp  
     var importingProjects = sharedAssetsProject.EnumImportingProjects();  
@@ -525,7 +525,7 @@ Aplicativos universais do Windows são aplicativos que direcionam o Windows 8.1 
 9. Modifica o item compartilhado. Você não pode modificar itens compartilhados em um projeto de plataforma; em vez disso, você deve modificá-los no projeto compartilhado que é o proprietário real desses itens. Você pode obter a ID do item correspondente no projeto compartilhado com <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.IsDocumentInProject%2A>, dando a ela caminho completo do item compartilhado. Em seguida, você pode modificar o item compartilhado. A alteração é propagada para os projetos de plataforma.  
   
     > [!IMPORTANT]
-    >  Você deve descobrir se um item de projeto é um item compartilhado antes de modificá-lo.  
+    > Você deve descobrir se um item de projeto é um item compartilhado antes de modificá-lo.  
   
      O método a seguir modifica o nome de um arquivo de item de projeto.  
   

@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c57df245e897452d0bb8f3ae32d6490af9ee91fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8927e6140792c12f42f1822afd0e715881384f1c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063004"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402794"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>Como: Configurar a herança usando o Designer Relacional de Objetos
 O **Object Relational Designer** (**Relational Designer**) suporta o conceito de herança de tabela única como geralmente é implementado em sistemas relacionais. Herança de tabela única, há uma tabela de banco de dados individual que contém campos para informações pai e informações de filho. Com os dados relacionais, uma coluna de discriminador contém o valor que determina qual classe qualquer registro pertence.
@@ -33,12 +33,12 @@ Criar um modelo de objeto que usar herança (e corresponde a dados relacionais) 
 4. Clique na guia **Herança** no **Object Relational Designer** da **Caixa de Ferramentas** e em seguida, clique na subclasse (a tabela que você renomeou) e conecta-se a classe base.
 
     > [!NOTE]
-    >  Clique no item de **Herança** em **Caixa de Ferramentas** e solte o botão do mouse, clique na segunda cópia de classe que você criou na etapa 3 e depois clique na primeira classe que você criou na etapa 2. A seta na linha de herança aponta para a primeira classe.
+    > Clique no item de **Herança** em **Caixa de Ferramentas** e solte o botão do mouse, clique na segunda cópia de classe que você criou na etapa 3 e depois clique na primeira classe que você criou na etapa 2. A seta na linha de herança aponta para a primeira classe.
 
 5. Em cada classe, excluir todas as propriedades do objeto que você não deseja que apareça e que não são usadas para associações. Você receberá um erro se você tentar excluir as propriedades do objeto usadas para associações: [A propriedade \<nome da propriedade > não pode ser excluída porque participa da associação \<nome da associação >](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md).
 
     > [!NOTE]
-    >  Como uma classe derivada herda as propriedades definidas na sua classe base, as mesmas colunas não podem ser definidas em cada classe. (As colunas são implementadas como propriedades.) Você pode habilitar a criação das colunas na classe derivada definindo o modificador de herança na propriedade na classe base. Para obter mais informações, consulte [Noções básicas de herança (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
+    > Como uma classe derivada herda as propriedades definidas na sua classe base, as mesmas colunas não podem ser definidas em cada classe. (As colunas são implementadas como propriedades.) Você pode habilitar a criação das colunas na classe derivada definindo o modificador de herança na propriedade na classe base. Para obter mais informações, consulte [Noções básicas de herança (Visual Basic)](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics).
 
 6. Selecione a linha de herança na **Relational Designer**.
 

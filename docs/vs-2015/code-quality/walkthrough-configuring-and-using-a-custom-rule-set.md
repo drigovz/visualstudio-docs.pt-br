@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: da7b1f1bda7fac222d0d47c6bf2a15eaf3a8396f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa3a91df779094e3e11722dfc7bfc03c58bcea7e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052058"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383413"
 ---
 # <a name="walkthrough-configuring-and-using-a-custom-rule-set"></a>Passo a passo: Configurando e usando um conjunto de regras personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -70,7 +70,7 @@ Este passo a passo mostra como usar as ferramentas de análise de código que fo
     No menu Arquivo, clique em **salvar itens selecionados** para atualizar o arquivo de projeto com informações sobre o conjunto de regras que você selecionou e suas configurações.  
   
    > [!TIP]
-   >  Em uma situação de mundo real, uma boa prática a ser usado para priorizar os problemas que você deseja direcionar com análise de código é começar com o **mínimo recomendado regras** conjunto de regras e corrigir os problemas desejados e, em seguida, adicionar incrementalmente mais regras ou regra define a encontrar e corrigir os problemas adicionais.  
+   > Em uma situação de mundo real, uma boa prática a ser usado para priorizar os problemas que você deseja direcionar com análise de código é começar com o **mínimo recomendado regras** conjunto de regras e corrigir os problemas desejados e, em seguida, adicionar incrementalmente mais regras ou regra define a encontrar e corrigir os problemas adicionais.  
   
    Em seguida, você adicionará um código para a biblioteca de classes que será usada para demonstrar violações de CA1704 "Identificadores devem ter grafia correta" regra de análise de código. Para obter mais informações, consulte [CA1704: Identificadores devem ter grafia correta](../code-quality/ca1704-identifiers-should-be-spelled-correctly.md).  
   

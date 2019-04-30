@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 756b8859c2f13c53eb46a0d9ae9d32836997f70f
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
-ms.translationtype: MTE95
+ms.openlocfilehash: 9b498bdb491e3a15dddf005d43435d84b837fcd0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55035920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387752"
 ---
 # <a name="how-to-debug-optimized-code"></a>Como: Depurar o código otimizado
 
@@ -77,7 +77,7 @@ ms.locfileid: "55035920"
 9. Selecione as propriedades de configuração, C/C++, nó de linha de comando da página de propriedades do projeto e adicione `(` [/Zo](/cpp/build/reference/zo-enhance-optimized-debugging) `)` para o **opções adicionais** caixa de texto.
 
     > [!WARNING]
-    >  `/Zo` requer o Visual Studio 2013 atualização 3 ou posterior.
+    > `/Zo` requer o Visual Studio 2013 atualização 3 ou posterior.
     >
     >  Adicionando `/Zo` desabilitará [editar e continuar](../debugger/edit-and-continue-visual-csharp.md).
 

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: eab627b09c1544b69a8834711e51a3bbbdd63e5a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 2b23e10dfd00f4e1b9bde8520ef50aa60cd18b35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58866780"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406754"
 ---
 # <a name="secure-clickonce-applications"></a>Proteger aplicativos ClickOnce
 Os aplicativos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] estão sujeitos às restrições de segurança de acesso a código no .NET Framework para ajudar a limitar o acesso que o código tem a recursos e operações protegidos. Por esse motivo, é importante compreender as implicações de segurança de acesso a código para desenvolver seus aplicativos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] adequadamente. Seus aplicativos podem usar o modo Confiança Total ou zonas parciais, como as zonas da Internet e intranet, para limitar o acesso.
@@ -71,7 +71,7 @@ Os aplicativos [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
  Você nunca deve passar argumentos recuperados por meio de uma cadeia de caracteres de consulta a um banco de dados ou linha de comando sem verificar os argumentos para garantir que eles sejam seguros. Os argumentos inseguros são os que incluem caracteres de escape da linha de comando ou banco de dados que poderiam permitir que um usuário mal-intencionado manipulasse o seu aplicativo e executasse comandos arbitrários.
 
 > [!NOTE]
->  Os argumentos de cadeia de caracteres de consulta são a única maneira de passar argumentos para um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] na inicialização. Você não poderá passar argumentos para um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] da linha de comando.
+> Os argumentos de cadeia de caracteres de consulta são a única maneira de passar argumentos para um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] na inicialização. Você não poderá passar argumentos para um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] da linha de comando.
 
 ## <a name="deploying-obfuscated-assemblies"></a>Implantando assemblies ofuscados
  O Visual Studio inclui a versão gratuita da [PreEmptive Protection – Dotfuscator Community](../ide/dotfuscator/index.md), que pode ser usada para proteger os aplicativos ClickOnce por meio de ofuscação de código e medidas de proteção ativas.  Para obter detalhes, veja [Seção do ClickOnce do Guia do Usuário do Dotfuscator Community](https://www.preemptive.com/dotfuscator/ce/docs/help/5.27/advanced_clickonce.html).

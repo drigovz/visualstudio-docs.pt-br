@@ -14,12 +14,12 @@ ms.assetid: 2b018b18-b412-4e0e-b0ee-b580a2f3ba9c
 caps.latest.revision: 85
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ad9a30f5a54177a9df955cbe78d0ad0bc5d99ac3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7fcea011f78688630a94cff64f9d2a627acea88c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408478"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-managed-code"></a>Passo a passo: Criando e executando testes de unidade para código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,10 +47,10 @@ Este passo a passo guiará você pela criação, execução e personalização d
   [Usar testes da unidade para melhorar o código](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md#BKMK_Use_unit_tests_to_improve_your_code)  
   
 > [!NOTE]
->  Este passo a passo usa a estrutura de teste de unidade do Microsoft para código gerenciado. O Gerenciador de testes também pode executar testes em estruturas de teste de unidade de terceiros que têm adaptadores para o Gerenciador de Testes. Para obter mais informações, consulte [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)  
+> Este passo a passo usa a estrutura de teste de unidade do Microsoft para código gerenciado. O Gerenciador de testes também pode executar testes em estruturas de teste de unidade de terceiros que têm adaptadores para o Gerenciador de Testes. Para obter mais informações, consulte [Instalar estruturas de teste de unidade de terceiros](../test/install-third-party-unit-test-frameworks.md)  
   
 > [!NOTE]
->  Para obter informações sobre como executar testes de uma linha de comando, consulte [Passo a passo: Usando o utilitário de teste da linha de comando](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
+> Para obter informações sobre como executar testes de uma linha de comando, consulte [Passo a passo: Usando o utilitário de teste da linha de comando](http://msdn.microsoft.com/library/52c11992-9e94-4067-a4b7-59f19d69d867).  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
   
@@ -71,12 +71,12 @@ Este passo a passo guiará você pela criação, execução e personalização d
 5. Na caixa **Nome**, digite `Bank` e clique em **OK**.  
   
    > [!NOTE]
-   >  Se o nome "Banco" já foi usado, escolha outro nome para o projeto.  
+   > Se o nome "Banco" já foi usado, escolha outro nome para o projeto.  
   
     O novo projeto Banco é criado e exibido no Gerenciador de Soluções com o arquivo Class1.cs aberto no Editor de códigos.  
   
    > [!NOTE]
-   >  Se o arquivo Class1. cs não estiver aberto no Editor de códigos, clique duas vezes no arquivo Class1.cs no Gerenciador de Soluções para abri-lo.  
+   > Se o arquivo Class1. cs não estiver aberto no Editor de códigos, clique duas vezes no arquivo Class1.cs no Gerenciador de Soluções para abri-lo.  
   
 6. Copie o código-fonte do [Projeto de exemplo para criar testes de unidade](../test/sample-project-for-creating-unit-tests.md).  
   

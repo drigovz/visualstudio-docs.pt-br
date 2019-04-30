@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b464fd4e8c1748adf50e9997dbbac553288043da
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61e71f31ce887c7e1ea9ec57b0aa3f24a45be364
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414276"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>Passo a passo: Inserir texto em um documento de um painel de ações
   Este passo a passo demonstra como criar um painel de ações em um documento do Microsoft Office Word. O painel de ações contém dois controles que coletar entrada e, em seguida, enviar o texto para o documento.
@@ -34,7 +34,7 @@ ms.locfileid: "60088516"
 - Exiba o painel de ações quando o aplicativo é aberto.
 
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
@@ -78,7 +78,7 @@ ms.locfileid: "60088516"
 2. Selecionar a palavra **nome**, sem selecionar a marca de parágrafo e clique em **Okey**.
 
     > [!NOTE]
-    >  A marca de parágrafo deve estar fora do indicador. Se as marcas de parágrafo não estiverem visíveis no documento, clique no **ferramentas** , aponte para **ferramentas do Microsoft Office Word** e, em seguida, clique em **opções**. Clique no **modo de exibição** guia e, em seguida, selecione o **marcas de parágrafo** caixa de seleção na **marcas de formatação** seção o **opções** caixa de diálogo.
+    > A marca de parágrafo deve estar fora do indicador. Se as marcas de parágrafo não estiverem visíveis no documento, clique no **ferramentas** , aponte para **ferramentas do Microsoft Office Word** e, em seguida, clique em **opções**. Clique no **modo de exibição** guia e, em seguida, selecione o **marcas de parágrafo** caixa de seleção na **marcas de formatação** seção o **opções** caixa de diálogo.
 
 3. No **propriedades** janela, altere o **nome** propriedade de **Bookmark1** para **showName**.
 

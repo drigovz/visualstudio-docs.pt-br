@@ -1,6 +1,6 @@
 ---
 title: Conjuntos de regras do analisador
-ms.date: 07/20/2018
+ms.date: 04/22/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - analyzers, rule sets
@@ -10,12 +10,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da5eab1424ac6f6fe580ec0f71ec3efd6e120020
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
-ms.translationtype: MT
+ms.openlocfilehash: 32ed328cb399f0cd3e9a2a147d29fad56b845399
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57866991"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387691"
 ---
 # <a name="rule-sets-for-roslyn-analyzers"></a>Conjuntos de regras para analisadores de Roslyn
 
@@ -25,7 +25,7 @@ Se você estiver migrando de análise de código estático "FxCop" herdada para 
 
 ## <a name="use-analyzer-rule-sets"></a>Usar conjuntos de regras do analisador
 
-Depois que você [instalar um pacote do NuGet analyzer](install-roslyn-analyzers.md), localize a conjunto de regras predefinidas seus *rulesets* diretório, por exemplo *% USERPROFILE %\\.nuget\packages\ Microsoft.codequality.Analyzers\<versão > \rulesets*. A partir daí, você pode arrastar e soltar, ou copiar e colar, um ou mais dos conjuntos de regras ao seu projeto do Visual Studio no **Gerenciador de soluções**.
+Depois que você [instalar um pacote do NuGet analyzer](install-roslyn-analyzers.md), localize a conjunto de regras predefinidas seus *rulesets* directory. Por exemplo, se você fez referência a `Microsoft.CodeAnalysis.FxCopAnalyzers` analisador de pacote e em seguida, você pode localizar seu diretório de rulesets em *% USERPROFILE %\\.nuget\packages\microsoft.codeanalysis.fxcopanalyzers\\\<versão \>\rulesets*. A partir daí, você pode arrastar e soltar, ou copiar e colar, um ou mais dos conjuntos de regras ao seu projeto do Visual Studio no **Gerenciador de soluções**.
 
 Para tornar uma regra para definir a regra ativa definido para análise, clique com botão direito no projeto no **Gerenciador de soluções** e escolha **propriedades**. Nas páginas de propriedade do projeto, selecione a **análise de código** guia. Sob **executar este conjunto de regras**, selecione **procurar**e, em seguida, selecione o conjunto de regras desejado que você copiou para o diretório do projeto. Agora, você verá somente as violações de regra para as regras que estão habilitadas no conjunto de regras selecionado.
 
@@ -54,7 +54,7 @@ O [fxcopanalyzers](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAn
 
 ## <a name="see-also"></a>Consulte também
 
-- [Analisadores de perguntas Frequentes](analyzers-faq.md)
+- [Perguntas frequentes sobre analisadores](analyzers-faq.md)
 - [Visão geral dos analisadores do .NET Compiler Platform](roslyn-analyzers-overview.md)
 - [Instalar analisadores](install-roslyn-analyzers.md)
 - [Usar analisadores](use-roslyn-analyzers.md)

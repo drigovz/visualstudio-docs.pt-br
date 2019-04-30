@@ -13,12 +13,12 @@ ms.assetid: ba237712-f8c4-4d13-854b-ab4a16afa309
 caps.latest.revision: 128
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 05fd28e6b47d74c28edc491458b73b487d282a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a2418df5a831416d74328e4ca926cdf8c3a721e2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067723"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383423"
 ---
 # <a name="welcome-to-visual-studio-2015"></a>Bem-vindo ao Visual Studio de 2015
 [!INCLUDE[vs2017banner](includes/vs2017banner.md)]
@@ -26,9 +26,9 @@ ms.locfileid: "60067723"
 Bem-vindo ao Visual Studio! Temos tudo o que você precisa para criar ótimos aplicativos para dispositivos ou aplicativos de área de trabalho, para a Web e na nuvem. Escreva código para iOS, Android e Windows em um IDE. Obtenha o excelente IntelliSense, a navegação de código fácil, bem como builds e implantação rápidos. O Visual Studio aumenta a sua produtividade e faz com que fique fácil para você fazer o seu trabalho sozinho ou como parte de uma equipe maior.
 
 > [!NOTE]
->  Clique aqui para obter notas de versão do [Visual Studio 2015 atualização 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
+> Clique aqui para obter notas de versão do [Visual Studio 2015 atualização 3](https://www.visualstudio.com/news/releasenotes/vs2015-update3-vs).
 >
->  Clique aqui para obter as notas de versão do [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
+> Clique aqui para obter as notas de versão do [Visual Studio 2017](https://www.visualstudio.com/news/releasenotes/vs2017-relnotes).
 
  Baixe o [Visual Studio Community](http://go.microsoft.com/fwlink/?LinkId=517106) gratuitamente para começar a codificar agora mesmo. Se desejar fazer desenvolvimento multiplataforma, não deixe de instalar os pacotes opcionais. (Você pode obter mais recursos com [outras edições do Visual Studio](http://www.visualstudio.com/products/compare-visual-studio-products-vs).)
 

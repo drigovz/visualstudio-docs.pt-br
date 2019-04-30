@@ -11,20 +11,20 @@ ms.assetid: b36c1eb5-1aaf-48a6-b287-ee7a273d2b1c
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0fb29119fd0598547925cad5ca82ab40ab693a07
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b75cb1b0604f3611c0e51c6f458939433d2a5470
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924819"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63383523"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Common Language Runtime e avaliação de expressão
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
- Compiladores, como Visual Basic e C# (pronuncia-se C-sharp), que direcionam o tempo de execução de linguagem comum (CLR), produzem MSIL Microsoft Intermediate Language (), que é posterior compilados para código nativo. O CLR fornece um mecanismo de depuração (DE) para depurar o código resultante. Se você pretende integrar a linguagem de programação proprietária ao IDE do Visual Studio, você pode optar por compilar para MSIL e, portanto, não precisa escrever seu próprio DE. No entanto, você terá que escrever um avaliador de expressão (EE) que é capaz de avaliar expressões dentro do contexto de sua linguagem de programação.  
+ Compiladores, como Visual Basic e c# (pronuncia-se C-sharp), que direcionam o tempo de execução de linguagem comum (CLR), produzem MSIL Microsoft Intermediate Language (), que é posterior compilados para código nativo. O CLR fornece um mecanismo de depuração (DE) para depurar o código resultante. Se você pretende integrar a linguagem de programação proprietária ao IDE do Visual Studio, você pode optar por compilar para MSIL e, portanto, não precisa escrever seu próprio DE. No entanto, você terá que escrever um avaliador de expressão (EE) que é capaz de avaliar expressões dentro do contexto de sua linguagem de programação.  
   
 ## <a name="discussion"></a>Discussão  
  Expressões de idioma do computador geralmente são analisadas para produzir um conjunto de objetos de dados e um conjunto de operadores usados para manipulá-los. Por exemplo, a expressão "A + B" pode ser analisada para aplicar o operador de adição (+) para os dados de objetos "A" e "B", possivelmente resultando em outro objeto de dados. O conjunto total de objetos de dados, operadores e suas associações com mais frequência são representados em um programa como uma árvore, os operadores em nós da árvore e os objetos de dados nas ramificações. Uma expressão que tem sido dividida em forma de árvore é frequentemente chamada de uma árvore analisada.  

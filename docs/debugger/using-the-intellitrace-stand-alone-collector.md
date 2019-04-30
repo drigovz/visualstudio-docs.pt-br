@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a44a6a3474d56b1254333731d79b2172fd6143b9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ff893f5603d3156d4ed6fe09848682ab5d04b06
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077649"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407624"
 ---
 # <a name="using-the-intellitrace-stand-alone-collector-c-visual-basic"></a>Usando o coletor IntelliTrace autônomo (C#, Visual Basic)
 
@@ -26,10 +26,10 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
  Veja o IntelliTrace em ação: [Coletando e analisando dados IntelliTrace em produção para depuração (vídeo do Channel 9)](http://go.microsoft.com/fwlink/?LinkID=251851)
 
 > [!NOTE]
->  Você também pode coletar os mesmos dados IntelliTrace para aplicativos da web e do Sharepoint executados em computadores remotos usando o **Microsoft Monitoring Agent** no modo **Rastrear**.
+> Você também pode coletar os mesmos dados IntelliTrace para aplicativos da web e do Sharepoint executados em computadores remotos usando o **Microsoft Monitoring Agent** no modo **Rastrear**.
 >
->  Você pode coletar eventos relacionados ao desempenho nos dados IntelliTrace executando o agente no modo **Monitorar**. O modo **Monitorar** tem menos um impacto no desempenho que o modo **Rastrear** ou que o **coletor autônomo do IntelliTrace**. O Microsoft Monitoring Agent altera o ambiente do sistema de destino quando instalado. Ver [usando o Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
->  O coletor IntelliTrace autônomo não oferece suporte a instantâneos do processo.
+> Você pode coletar eventos relacionados ao desempenho nos dados IntelliTrace executando o agente no modo **Monitorar**. O modo **Monitorar** tem menos um impacto no desempenho que o modo **Rastrear** ou que o **coletor autônomo do IntelliTrace**. O Microsoft Monitoring Agent altera o ambiente do sistema de destino quando instalado. Ver [usando o Microsoft Monitoring Agent](../debugger/using-the-microsoft-monitoring-agent.md).
+> O coletor IntelliTrace autônomo não oferece suporte a instantâneos do processo.
 
  **Requisitos**
 
@@ -38,7 +38,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 - Visual Studio Enterprise (mas não no Professional ou Community edições) em um computador de desenvolvimento ou em outro computador para abrir arquivos. itrace
 
   > [!NOTE]
-  >  Certifique-se de salvar o símbolo arquivos (.pdb). Para depurar com o IntelliTrace e percorrer o código, você deve ter os arquivos de origem e de símbolo correspondentes. Ver [diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md).
+  > Certifique-se de salvar o símbolo arquivos (.pdb). Para depurar com o IntelliTrace e percorrer o código, você deve ter os arquivos de origem e de símbolo correspondentes. Ver [diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md).
 
   **PERGUNTAS FREQUENTES**
 
@@ -111,7 +111,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
         `expand  /f:* IntelliTraceCollection.cab .`
 
        > [!NOTE]
-       >  O ponto (**.**) preserva as subpastas que contêm planos de coleta localizada.
+       > O ponto (**.**) preserva as subpastas que contêm planos de coleta localizada.
 
 ## <a name="ConfigurePermissionsRunningCollector"></a> Configurar permissões para o diretório do coletor
 
@@ -216,7 +216,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
      `Start-IntelliTraceCollection` `"` *\<ApplicationPool>* `"` *\<PathToCollectionPlan>* *\<FullPathToITraceFileDirectory>*
 
     > [!IMPORTANT]
-    >  Depois de executar esse comando, digite **Y** para confirmar que você deseja iniciar a coleta de dados.
+    > Depois de executar esse comando, digite **Y** para confirmar que você deseja iniciar a coleta de dados.
 
      Por exemplo, para coletar dados de um aplicativo do SharePoint na **SharePoint - 80** pool de aplicativos:
 
@@ -247,7 +247,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
      `Stop-IntelliTraceCollection` `"` *\<ApplicationPool>* `"`
 
     > [!IMPORTANT]
-    >  Depois de executar esse comando, digite **Y** para confirmar que você deseja parar a coleta de dados. Caso contrário, o coletor podem continuar com a coleta de dados, o arquivo iTrace permanecerá bloqueado ou o arquivo pode não conter dados úteis.
+    > Depois de executar esse comando, digite **Y** para confirmar que você deseja parar a coleta de dados. Caso contrário, o coletor podem continuar com a coleta de dados, o arquivo iTrace permanecerá bloqueado ou o arquivo pode não conter dados úteis.
 
 6. [Abra o arquivo. itrace no Visual Studio Enterprise](#BKMK_View_IntelliTrace_Log_Files)
 
@@ -275,7 +275,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
 ## <a name="BKMK_View_IntelliTrace_Log_Files"></a> Abra o arquivo. itrace no Visual Studio Enterprise
 
 > [!NOTE]
->  Para depurar com o IntelliTrace e percorrer o código, você deve ter os arquivos de origem e de símbolo correspondentes. Ver [diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md).
+> Para depurar com o IntelliTrace e percorrer o código, você deve ter os arquivos de origem e de símbolo correspondentes. Ver [diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md).
 
 1. Mover o arquivo. itrace ou copie-o para um computador com Visual Studio Enterprise (mas as edições não Professional ou Community).
 
@@ -284,7 +284,7 @@ O **coletor autônomo do IntelliTrace** permite coletar dados de diagnóstico In
      O Visual Studio mostra a página **Resumo do IntelliTrace**. Na maioria das seções, você pode examinar eventos ou outros itens, escolher um item e iniciar a depuração com o IntelliTrace no ponto onde e quando um evento que ocorreu. Ver [usando dados salvo do IntelliTrace](../debugger/using-saved-intellitrace-data.md).
 
     > [!NOTE]
-    >  Para depurar com o IntelliTrace e percorrer o código, você deve ter os arquivos de origem e de símbolo correspondentes no seu computador de desenvolvimento. Ver [diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md).
+    > Para depurar com o IntelliTrace e percorrer o código, você deve ter os arquivos de origem e de símbolo correspondentes no seu computador de desenvolvimento. Ver [diagnosticar problemas após a implantação](../debugger/diagnose-problems-after-deployment.md).
 
 ## <a name="Minimizing"></a> Como faço para obter o máximo de dados sem deixar meu aplicativo mais lento?
  O IntelliTrace pode coletar grandes quantidades de dados, por isso o impacto no desempenho do aplicativo depende dos dados que o IntelliTrace coleta e do tipo de código analisado. Ver [otimizando a coleção de IntelliTrace em servidores de produção](http://go.microsoft.com/fwlink/?LinkId=255233).

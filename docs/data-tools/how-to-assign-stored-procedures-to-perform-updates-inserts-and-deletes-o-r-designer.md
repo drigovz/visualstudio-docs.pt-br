@@ -8,12 +8,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05dd21bbb423d75cd175f13ca945516024db01eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: da666f237824ccae349a023611f7e7b78fdaf684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049836"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402824"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Como: Atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)
 
@@ -59,7 +59,7 @@ Por padrão, a lógica para atualizar um banco de dados (inserções, atualizaç
 10. Clique em **OK** ou em **Aplicar**.
 
     > [!NOTE]
-    >  Você pode continuar a configurar o comportamento para cada combinação de classe e o comportamento desde que você clique em **aplicar** após cada alteração. Se você alterar a classe ou o comportamento antes de clicar em **aplicar**, uma caixa de diálogo de aviso é exibida e fornece a você uma oportunidade para aplicar suas alterações.
+    > Você pode continuar a configurar o comportamento para cada combinação de classe e o comportamento desde que você clique em **aplicar** após cada alteração. Se você alterar a classe ou o comportamento antes de clicar em **aplicar**, uma caixa de diálogo de aviso é exibida e fornece a você uma oportunidade para aplicar suas alterações.
 
 Para voltar a usar a lógica padrão em tempo de execução para atualizações, clique nas reticências ao lado do comando **Insert**, **Update** ou **Delete**, na janela **Propriedades**, e selecione **Usar tempo de execução** na caixa de diálogo **Configurar Comportamento**.
 

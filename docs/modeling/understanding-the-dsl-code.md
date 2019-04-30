@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d8ce41d6532a7c389d20872c35a216a96910578
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c2ff6d38ef4fcce400888121ef12883b00bcc0c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087762"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386699"
 ---
 # <a name="understanding-the-dsl-code"></a>Noções básicas do código de DSL
 
@@ -131,7 +131,7 @@ Pressione **F5** e experimentar se você não estiver familiarizado com esse mod
   A classe que representa o modelo do domínio. É derivado de <xref:Microsoft.VisualStudio.Modeling.DomainModel>.
 
 > [!NOTE]
->  Não é a mesma que a classe raiz do modelo.
+> Não é a mesma que a classe raiz do modelo.
 
  Fechamentos de Copiar e Excluir define quais outros elementos devem ser incluídos quando um elemento é copiado ou excluído. Você pode controlar esse comportamento, definindo a **propaga cópia** e **propaga exclusão** propriedades das funções em cada lado de cada relação. Se desejar determinar os valores dinamicamente, é possível gravar código para substituir os métodos das classes de Fechamento.
 
@@ -340,7 +340,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Para personalizar esse arquivo, edite o arquivo `.tt`.
 
 > [!WARNING]
->  Ao editar o arquivo .tt para incluir recursos como ícones ou imagens, certifique-se de que o recurso será incluído na compilação VSIX. No Solution Explorer, selecione o arquivo e certifique-se de que o **incluir em VSIX** é de propriedade `True`.
+> Ao editar o arquivo .tt para incluir recursos como ícones ou imagens, certifique-se de que o recurso será incluído na compilação VSIX. No Solution Explorer, selecione o arquivo e certifique-se de que o **incluir em VSIX** é de propriedade `True`.
 
  Esse arquivo controla como a DSL é empacotada em uma Extensão de Integração do Visual Studio (VSIX). Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md).
 

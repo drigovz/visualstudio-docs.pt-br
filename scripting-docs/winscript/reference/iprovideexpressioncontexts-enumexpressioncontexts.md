@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: d1e4c462780f7026329ff7a5d22c86dbb6058dc5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 965147083bdc11a3544561fdd96cd85221ccd443
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157744"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410148"
 ---
 # <a name="iprovideexpressioncontextsenumexpressioncontexts"></a>IProvideExpressionContexts::EnumExpressionContexts
 Retorna um enumerador dos contextos de expressão conhecidos por este componente.  
@@ -50,7 +50,7 @@ HRESULT EnumExpressionContexts(
  O Gerenciador de depuração do processo usa esse método para localizar todos os contextos de expressão global associados com um determinado thread.  
   
 > [!NOTE]
->  Esse método é chamado de dentro do thread de interesse. Cabe ao implementador para identificar o thread atual e retorna um enumerador apropriado.  
+> Esse método é chamado de dentro do thread de interesse. Cabe ao implementador para identificar o thread atual e retorna um enumerador apropriado.  
   
 ## <a name="see-also"></a>Consulte também  
  [IProvideExpressionContexts Interface](../../winscript/reference/iprovideexpressioncontexts-interface.md)

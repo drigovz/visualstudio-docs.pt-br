@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 936770859d3bdfe81c84245d32ae63346b142a01
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58153741"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63009526"
 ---
 # <a name="iactivescripterrordebug-interface"></a>Interface IActiveScriptErrorDebug
 Fornece informações de contexto de documento para erros de tempo de compilação e exceções de tempo de execução. O `IActiveScriptError::QueryInterface` método suporta a `IActiveScriptErrorDebug` interface.  

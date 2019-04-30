@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32e571f46b30e4f54322fc0138ebfc9b27e3753a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 3e13233950940c01c758a0faf07611c1426475e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56708999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412682"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 Essa interface representa uma propriedade de quadro de pilha, uma propriedade de documento do programa ou outra propriedade. A propriedade é geralmente o resultado de uma avaliação de expressão.
 
 > [!NOTE]
->  Esse uso de "property" não deve ser confundido com esse que significa que uma variável de membro de uma classe, embora um `IDebugProperty2` pode representar essa entidade.
+> Esse uso de "property" não deve ser confundido com esse que significa que uma variável de membro de uma classe, embora um `IDebugProperty2` pode representar essa entidade.
 
 ## <a name="syntax"></a>Sintaxe
 

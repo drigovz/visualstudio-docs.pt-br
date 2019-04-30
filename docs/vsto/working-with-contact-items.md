@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 325f6b1b7ee489102d1ed4d2ef72350b3a6f5f3d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631023"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008632"
 ---
 # <a name="work-with-contact-items"></a>Trabalhar com itens de contato
   O <xref:Microsoft.Office.Interop.Outlook.ContactItem> classe contém os métodos e propriedades que você pode usar para executar tarefas com contatos.

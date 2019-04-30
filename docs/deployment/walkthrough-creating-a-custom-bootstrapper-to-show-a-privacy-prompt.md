@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1973d5d71308cc5fda6e48acfc60d256775ff2cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00c5266d57ae5633313465796c718d989f783ea6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406857"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>Passo a passo: Criar um bootstrapper personalizado com um aviso de privacidade
 Você pode configurar os aplicativos ClickOnce para atualizar automaticamente quando assemblies com versões do assembly e versões mais recentes do arquivo se tornam disponíveis. Para certificar-se de que seus clientes de consentimento para esse comportamento, você pode exibir um prompt de privacidade para eles. Então, eles podem escolher se deseja conceder permissão ao aplicativo para atualizar automaticamente. Se o aplicativo não tem permissão para atualizar automaticamente, ele não é instalado.
@@ -125,7 +125,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
     6. No **objeto de inicialização** menu suspenso, selecione **Module1**.
 
        > [!NOTE]
-       >  Desabilitar a estrutura de aplicativo desabilita recursos, como estilos visuais do Windows XP, os eventos de aplicativo, tela inicial, aplicativo de instância única e muito mais. Para obter mais informações, consulte [Página de aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
+       > Desabilitar a estrutura de aplicativo desabilita recursos, como estilos visuais do Windows XP, os eventos de aplicativo, tela inicial, aplicativo de instância única e muito mais. Para obter mais informações, consulte [Página de aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).
 
        Visual c# somente para desenvolvedores:
 
@@ -151,12 +151,12 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
 1. Crie um diretório chamado **UpdateConsentDialog** na *%PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages*.
 
     > [!NOTE]
-    >  Você pode precisar de privilégios administrativos para criar essa pasta.
+    > Você pode precisar de privilégios administrativos para criar essa pasta.
 
 2. No *UpdateConsentDialog* diretório, crie um subdiretório chamado *en*.
 
     > [!NOTE]
-    >  Crie um novo diretório para cada localidade. Por exemplo, você pode adicionar subdiretórios para as localidades fr e Alemanha. Esses diretórios conteria o francês e alemão cadeias de caracteres e os pacotes de idiomas, se necessário.
+    > Crie um novo diretório para cada localidade. Por exemplo, você pode adicionar subdiretórios para as localidades fr e Alemanha. Esses diretórios conteria o francês e alemão cadeias de caracteres e os pacotes de idiomas, se necessário.
 
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Etapa 2: Para criar o arquivo de manifesto Product
 
@@ -221,7 +221,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
 4. Criar um documento chamado *EULA. rtf* para os termos de licença de software.
 
     > [!NOTE]
-    >  Os termos de licença de software devem incluir informações sobre licenciamento, garantias, responsabilidades e as leis locais. Esses arquivos devem ser específicos da localidade, portanto certifique-se de que o arquivo é salvo em um formato que oferece suporte a caracteres MBCS ou UNICODE. Consulte o departamento jurídico sobre o conteúdo dos termos de licença de software.
+    > Os termos de licença de software devem incluir informações sobre licenciamento, garantias, responsabilidades e as leis locais. Esses arquivos devem ser específicos da localidade, portanto certifique-se de que o arquivo é salvo em um formato que oferece suporte a caracteres MBCS ou UNICODE. Consulte o departamento jurídico sobre o conteúdo dos termos de licença de software.
 
 5. Salve o documento para o subdiretório en na *UpdateConsentDialog* diretório de bootstrapper.
 
@@ -241,7 +241,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
 4. Selecione **atualizar caixa de diálogo de consentimento**.
 
     > [!NOTE]
-    >  Talvez você precise fechar e reabrir o Visual Studio para ver o diálogo de consentimento de atualização na caixa de diálogo pré-requisitos.
+    > Talvez você precise fechar e reabrir o Visual Studio para ver o diálogo de consentimento de atualização na caixa de diálogo pré-requisitos.
 
 5. Clique em **OK**.
 

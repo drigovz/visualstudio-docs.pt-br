@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 83fda196a50c433de182a64f39faef7a6ba6cb17
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: f2a952c074e62e7fe999826882e382a552789f3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63400559"
 ---
 # <a name="idiasymbolgetundecoratednameex"></a>IDiaSymbol::get_undecoratedNameEx
 Recupera parte ou todo um nome não decorado para um C++ decoradas nome (ligação).
@@ -38,19 +38,19 @@ HRESULT get_undecoratedNameEx( 
 
  `pRetVal`
 
-[out] Retorna o que nome decorado do nome não decorado para um C++.
+[out] Retorna o nome não decorado de um C++ nome decorado.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="remarks"></a>Comentários
  O `undecorateOptions` pode ser uma combinação dos sinalizadores a seguir.
 
 > [!NOTE]
->  Os nomes de sinalizador não são definidos no DIA SDK, portanto, você precisa adicionar as declarações em seu código ou usar os valores brutos.
+> Os nomes de sinalizador não são definidos no DIA SDK, portanto, você precisa adicionar as declarações em seu código ou usar os valores brutos.
 
 |Sinalizador|Valor|Descrição|
 |----------|-----------|-----------------|

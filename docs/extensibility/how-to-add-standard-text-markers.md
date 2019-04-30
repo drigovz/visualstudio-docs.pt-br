@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 021e5f39f3296a475795b991283e60aa518b98dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 53aece13887fc727e7b0b1497f9546ee7a2fe63b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060079"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415502"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Como: Adicionar marcadores de texto padrão
 Use o procedimento a seguir para criar um dos tipos de marcador de texto padrão fornecidos com o [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] editor de núcleo.
@@ -27,7 +27,7 @@ Use o procedimento a seguir para criar um dos tipos de marcador de texto padrão
      Nessa chamada de método, especifique um tipo de marcador, um intervalo de texto para criar o marcador de failover e um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface. Esse método, em seguida, retorna um ponteiro para o marcador de texto criado recentemente. Tipos de marcador são tirados o <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> enumeração. Especifique um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface se você quiser ser informado sobre eventos de marcador.
 
     > [!NOTE]
-    >  Crie marcadores de texto no thread da interface do usuário principal somente. O editor de núcleo depende do conteúdo do buffer de texto para criar marcadores de texto e o buffer de texto não é thread-safe.
+    > Crie marcadores de texto no thread da interface do usuário principal somente. O editor de núcleo depende do conteúdo do buffer de texto para criar marcadores de texto e o buffer de texto não é thread-safe.
 
 ## <a name="add-a-custom-command"></a>Adicionar um comando personalizado
  Implementando o `IVsTextMarkerClient` aprimora a interface e fornecer um ponteiro para ele de um marcador de comportamento de marcador de várias maneiras. Em primeiro lugar, isso permite que você forneça dicas para o marcador e executar comandos. Isso também permite que você deseja receber notificações de evento de marcadores individuais e para criar um menu de contexto sobre o marcador. Use o procedimento a seguir para adicionar um comando personalizado para o menu de contexto do marcador.

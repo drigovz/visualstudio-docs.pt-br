@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ca9d7841671c44702b883cc8efcc23e803ea8fe
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: fd13d67917a395eb33e26a53e0db1fed7340c9c6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56693679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412854"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 Continua a execução deste programa de um estado parado. Qualquer estado de execução anterior (por exemplo, uma etapa) é preservado, e o programa inicia a execução novamente.
 
 > [!NOTE]
->  Este método foi preterido. Use o [continuar](../../../extensibility/debugger/reference/idebugprocess3-continue.md) método em vez disso.
+> Este método foi preterido. Use o [continuar](../../../extensibility/debugger/reference/idebugprocess3-continue.md) método em vez disso.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -51,7 +51,7 @@ int Continue( 
  Este método é chamado neste programa, independentemente de quantos aplicativos estão sendo depurados, ou qual programa gerou o evento de interrupção. A implementação deve manter o estado de execução anterior (por exemplo, uma etapa) e continuar a execução como se ele nunca foi interrompido antes de concluir sua execução anterior. Ou seja, se um thread nesse programa estava fazendo uma operação de percorrer e foi interrompido porque algum outro programa é interrompido e, em seguida, esse método foi chamado, o programa deve concluir a operação percorrer original.
 
 > [!WARNING]
->  Não enviar um evento de interrupção ou um evento (síncrono) imediato [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) ao manipular essa chamada; caso contrário, o depurador poderá parar de responder.
+> Não enviar um evento de interrupção ou um evento (síncrono) imediato [evento](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) ao manipular essa chamada; caso contrário, o depurador poderá parar de responder.
 
 ## <a name="see-also"></a>Consulte também
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)

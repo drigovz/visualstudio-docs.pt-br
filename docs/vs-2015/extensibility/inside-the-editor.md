@@ -10,12 +10,12 @@ ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 caps.latest.revision: 32
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 83bc344cf4c99efd426066a47c240b710ef455e4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8dfc751b040bd775c3f55ff7db804c2a16d45d5f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056036"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414623"
 ---
 # <a name="inside-the-editor"></a>Dentro do editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ O editor é composto de um número de diferentes subsistemas, que são projetado
  Você pode exibir o conteúdo de um instantâneo de texto como uma sequência de caracteres ou como uma sequência de linhas. Caracteres e as linhas são que ambas indexados começando com zero. Um instantâneo de texto vazio contém zero caracteres e uma linha vazia. Uma linha é delimitada por qualquer sequência válida de caracteres de quebra de linha Unicode ou pelo início ou no final do buffer. Caracteres de quebra de linha explicitamente são representados no instantâneo de texto e as quebras de linha em um instantâneo de texto não tiverem o mesmo.  
   
 > [!NOTE]
->  Para obter mais informações sobre caracteres de quebra de linha no editor do Visual Studio, consulte [codificações e quebras de linha](../ide/encodings-and-line-breaks.md).  
+> Para obter mais informações sobre caracteres de quebra de linha no editor do Visual Studio, consulte [codificações e quebras de linha](../ide/encodings-and-line-breaks.md).  
   
  Uma linha de texto é representada por um <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> objeto, que pode ser obtido de um instantâneo de texto para um número de linha específico ou para uma posição de caractere específico.  
   

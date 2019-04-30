@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bdee0fadfb1101d7087b7154f231958615aee227
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c3211f72b867063e07e339ff803019cb9699e94a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795926"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403473"
 ---
 # <a name="working-with-textures-and-images"></a>Trabalhando com texturas e imagens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "54795926"
 Você pode usar o Editor de Imagens no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para criar e modificar imagens e texturas. O Editor de Imagens dá suporte aos formatos avançados de textura e imagens como aqueles que são usados no desenvolvimento de aplicativos do DirectX.  
   
 > [!NOTE]
->  O Editor de Imagens não dá suporte a imagens com poucas cores como ícones ou cursores. Para criar ou modificar esses tipos de imagens, use o [Editor de imagens para ícones](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd).  
+> O Editor de Imagens não dá suporte a imagens com poucas cores como ícones ou cursores. Para criar ou modificar esses tipos de imagens, use o [Editor de imagens para ícones](http://msdn.microsoft.com/library/586d2b8b-0348-4883-a85d-1ff0ddbf14dd).  
   
 ## <a name="textures-and-images"></a>Texturas e imagens  
  Texturas e imagens são, em um nível básico, apenas tabelas de dados que são usadas para fornecer detalhes visuais em aplicativos de gráficos. O tipo de detalhe que uma imagem ou textura fornece depende de como ela é usada, mas amostras de cores, valores de alfa (transparência), normais da superfície e valores de altura são exemplos comuns. A principal diferença entre uma textura e uma imagem é que uma textura deve ser usada junto com uma representação de forma — normalmente um modelo 3D — para expressar um objeto completo ou cena, mas uma imagem é normalmente uma representação independente do objeto ou cena.  

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58d5fd0bfe1c8d5f5896d365a7b0ecfdb8da25b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 71797d3e080ad4fbbb1256914e98bc3a62f9fb01
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068217"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415514"
 ---
 # <a name="how-to-access-the-built-in-fonts-and-color-ccheme"></a>Como: Acessar as fontes internas e ccheme de cores
 O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de fontes e cores que está associado com a janela do editor. Você pode acessar esse esquema por meio de <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> interface.
@@ -39,7 +39,7 @@ O ambiente de desenvolvimento integrado (IDE) do Visual Studio tem um esquema de
      Esse GUID é usado para identificar exclusivamente uma categoria. Esta categoria reutiliza a especificação de cores e fontes de padrão do IDE.
 
     > [!NOTE]
-    >  Ao recuperar dados de fontes e cores com o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou outras interfaces, VSPackages usará esse GUID para fazer referência a informações internas.
+    > Ao recuperar dados de fontes e cores com o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> ou outras interfaces, VSPackages usará esse GUID para fazer referência a informações internas.
 
 2. Nome da categoria deve ser adicionado a uma tabela de cadeia de caracteres dentro de recursos do VSPackage (*. rc*) de arquivo, para que ele pode ser localizado conforme necessário, quando exibidas no IDE.
 
