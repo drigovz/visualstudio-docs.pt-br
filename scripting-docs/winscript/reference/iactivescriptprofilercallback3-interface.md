@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: be963a21cd95a2ae0b6fbe2cebb57292df846cf0
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58148955"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993300"
 ---
 # <a name="iactivescriptprofilercallback3-interface"></a>Interface IActiveScriptProfilerCallback3
 Fornece um método para notificar o criador de perfil que as execuções de criação de perfil estão ocorrendo no contexto de um web worker.  

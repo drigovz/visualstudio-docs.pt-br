@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: d23c0803bb81b34156d2cdb56e54388ba3cc5661
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56681303"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926710"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>Criar um sistema de projeto básico, parte 2
 A primeiro passo a passo desta série [criar um sistema de projeto básico, parte 1](../extensibility/creating-a-basic-project-system-part-1.md), mostra como criar um sistema de projeto básico. Este passo a passo se baseia no sistema de projeto básico, adicionando um modelo do Visual Studio, uma página de propriedades e outros recursos. Você deve concluir o passo a passo primeiro antes de iniciar este.

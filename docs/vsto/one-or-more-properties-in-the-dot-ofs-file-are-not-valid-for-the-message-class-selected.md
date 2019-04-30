@@ -13,11 +13,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: d58ad6ff89d8cf41ec60135cfbfe3deac1382f1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095263"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977855"
 ---
 # <a name="one-or-more-properties-in-the-ofs-file-are-not-valid-for-the-message-class-selected"></a>Uma ou mais propriedades no arquivo .ofs não são válidas para a classe de mensagem selecionada
   Este erro aparece quando você importa uma região de formulário projetada no Outlook, mas um ou mais campos na região do formulário não são compatíveis com as classes de mensagem que você selecionar na página final do **nova região de formulário** assistente.

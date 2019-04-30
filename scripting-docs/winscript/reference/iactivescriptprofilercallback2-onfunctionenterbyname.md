@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: f6fdb4addace1b0bbabdd4303c3943b976763514
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146091"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993261"
 ---
 # <a name="iactivescriptprofilercallback2onfunctionenterbyname"></a>IActiveScriptProfilerCallback2::OnFunctionEnterByName
 Notifica o objeto de criador de perfil que o mecanismo de script será executada uma chamada de função do modelo de objeto de documento (DOM).  

@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 6e4ec765d61da4d727fc9b500602c0619569ff67
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992328"
 ---
 # <a name="iactivescriptsiteinterruptpoll-interface"></a>Interface IActiveScriptSiteInterruptPoll
 O `IActiveScriptSiteInterruptPoll` interface permite que um host ao especificar um script deve ser interrompido.  

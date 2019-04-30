@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 729fafd1f6dfdf889293c9686f455be8de5a81fc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643711"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62970366"
 ---
 # <a name="migrate-office-solutions-to-the-net-framework-4-or-later"></a>Migrar soluções do Office para o .NET Framework 4 ou posterior
   Se a estrutura de destino de um projeto do Office será alterada para o [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior de uma versão anterior do .NET Framework, algumas etapas adicionais podem ser necessárias para continuar a executar a solução em computadores de desenvolvimento e do usuário final. Para obter mais informações, consulte [exigiu alterações para executar projetos do Office migrados para o .NET Framework 4 ou o .NET Framework 4.5](../vsto/required-changes-to-run-office-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md).
@@ -38,6 +38,6 @@ ms.locfileid: "56643711"
 
 ## <a name="see-also"></a>Consulte também
 - [Projetar e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md)
-- [Como: Uma versão do .NET Framework de destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md)
+- [Como: Definir uma versão do .NET Framework como destino](../ide/how-to-target-a-version-of-the-dotnet-framework.md)
 - [Solucionar problemas de erros em soluções do Office](../vsto/troubleshooting-errors-in-office-solutions.md)
 - [Suporte adicional para erros em soluções do Office](../vsto/additional-support-for-errors-in-office-solutions.md)

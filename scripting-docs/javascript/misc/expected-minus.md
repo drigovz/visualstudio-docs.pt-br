@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e897133b39110f65dfadc091f77855cfef1f6f6b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117272"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62934893"
 ---
 # <a name="expected--"></a>Esperado '-'
 Você tentou criar uma expressão regular literal, mas não incluiu uma das barras "/" (/). Assim como literais de cadeia de caracteres são gravados como caracteres dentro de um par de aspas, literais de expressões regulares são expressos como caracteres dentro de um par de caracteres de barra (/).  

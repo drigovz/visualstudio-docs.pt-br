@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 354fe62914a8708ac63acdde7d30060aca8d52fe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60072013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62966816"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>Como: Criar uma Web Part do SharePoint usando um designer
   Você pode criar uma web part, adicionando um **Web Part Visual** item para qualquer projeto do SharePoint. Isso abre o designer do Visual Web Developer no Visual Studio, onde você pode adicionar controles e código para a web part. Web parts visuais funcionam da mesma forma como partes da web. A única diferença é que você criar web parts visuais no designer do Visual Web Developer.

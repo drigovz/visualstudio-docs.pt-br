@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: ad45097146a7566f2d043fba5e14265c05dc4d7a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62955903"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>Como: Proteger pastas de trabalho de forma programática
   Você pode proteger uma pasta de trabalho do Microsoft Office Excel para que os usuários não podem adicionar ou excluir planilhas e também desproteger a pasta de trabalho por meio de programação. Opcionalmente, você pode especificar uma senha, indique se você deseja que a estrutura protegida (para que os usuários não é possível mover planilhas em torno de) e indique se deseja que o windows da pasta de trabalho protegidas.
