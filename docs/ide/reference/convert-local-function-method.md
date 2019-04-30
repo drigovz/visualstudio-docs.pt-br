@@ -10,39 +10,39 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 96064b16e53081e0456ed43275acd5edf7ead468
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.openlocfilehash: a580077528c87e62f81e840ed6dee76ff1eac57f
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58152948"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62968259"
 ---
-# <a name="convert-local-function-to-method"></a>Converter uma função local em um método
+# <a name="convert-a-local-function-to-a-method"></a>Converter uma função local em um método
 
 Esta refatoração aplica-se a:
 
 - C#
 - Visual Basic
 
-**O quê:** Converter uma função local em um método
+**O quê:** converter uma função local em um método.
 
-**Quando:** Você tem uma função local que deseja definir fora do contexto local atual.
+**Quando:** você tem uma função local que deseja definir fora do contexto local atual.
 
-**Por que:** O ideal é converter uma função local em um método para que você possa chamá-la fora do contexto local. O recomendado é converter em um método quando a função local está ficando muito longa. A definição dela em um método separado facilita a leitura do código.
+**Por que:** você deseja converter uma função local em um método para poder chamá-la fora do contexto local. O recomendado é converter em um método quando a função local está ficando muito longa. Ao definir a função em um método separado, seu código fica mais fácil de ler.
 
 ## <a name="convert-local-function-to-method-refactoring"></a>Refatoração de converter uma função local em um método
 
-1. Coloque o cursor em uma função local.
+1. Coloque o cursor na função local.
 
-    ![Converter uma função local em um método](media/convert-local-function-to-method.png)
+    ![Converter uma função local em um exemplo de código de método](media/convert-local-function-to-method.png)
 
 2. Pressione **Ctrl**+**.** para acionar o menu **Ações e Refatorações Rápidas**.
 
-    ![Converter uma função local em uma correção de código de método](media/convert-local-function-to-method-codefix.png)
+    ![Converter uma função local em um exemplo de correção de código de método](media/convert-local-function-to-method-codefix.png)
 
-2. Pressione **Enter** para aceitar a refatoração.
+2. Pressione Enter para aceitar a refatoração.
 
-    ![Converter uma função local em um resultado de método](media/convert-local-function-to-method-result.png)
+    ![Converter a função local para um exemplo de resultado de método](media/convert-local-function-to-method-result.png)
 
 ## <a name="see-also"></a>Consulte também
 

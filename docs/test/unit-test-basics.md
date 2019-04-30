@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: df0d6c25bad57550fcfc9ce475dcc9da488f195f
-ms.sourcegitcommit: b14b7a938a2aba9fcce4d5e813aadf2040b0dcda
+ms.openlocfilehash: 7a464103d38a9ba0d2215f53a593809b6136aa3d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58647408"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62990292"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 
@@ -82,9 +82,12 @@ Geralmente é mais rápido gerar o projeto de teste de unidade e os stubs de tes
 
 ### <a name="generate-unit-test-project-and-unit-test-stubs"></a>Gerar o projeto de teste de unidade e os stubs de teste de unidade
 
-1. Na janela do editor de código, clique com o botão direito do mouse e escolha **Criar Testes de Unidade** no menu do clique com o botão direito.
+1. Na janela do editor de código, clique com o botão direito do mouse e escolha [**Criar Testes de Unidade**](create-unit-tests-menu.md) no menu do clique com o botão direito.
 
-    ![Na janela do editor, exiba o menu de contexto](../test/media/createunittestsrightclick.png)
+   ![Na janela do editor, exiba o menu de contexto](../test/media/createunittestsrightclick.png)
+
+   > [!NOTE]
+   > O comando de menu **Criar Testes de Unidade** está disponível somente para código gerenciado direcionado ao .NET Framework (mas não ao .NET Core).
 
 2. Clique em **OK** para aceitar os padrões e criar os testes de unidade ou altere os valores usados para criar e nomear o projeto de teste de unidade e os testes de unidade. Você pode selecionar o código que é adicionado por padrão aos métodos de teste de unidade.
 
@@ -127,17 +130,17 @@ Um projeto de teste de unidade geralmente espelha a estrutura de um projeto de c
 
    Para criar a referência ao projeto de código:
 
-   1.  Selecione o projeto no **Gerenciador de Soluções**.
+   1. Selecione o projeto no **Gerenciador de Soluções**.
 
-   2.  No menu **Projeto**, escolha **Adicionar Referência**.
+   2. No menu **Projeto**, escolha **Adicionar Referência**.
 
-   3.  Na caixa de diálogo **Gerenciador de Referências**, abra o nó **Solução** e escolha **Projetos**. Selecione o nome do projeto de código e feche a caixa de diálogo.
+   3. Na caixa de diálogo **Gerenciador de Referências**, abra o nó **Solução** e escolha **Projetos**. Selecione o nome do projeto de código e feche a caixa de diálogo.
 
 Cada projeto de teste de unidade contém classes que refletem os nomes das classes no projeto do código. Em nosso exemplo, o projeto `AccountsTests` contém as seguintes classes:
 
--   A classe `AccountInfoTests` contém os métodos de teste de unidade para a classe `AccountInfo` no projeto `Accounts`
+- A classe `AccountInfoTests` contém os métodos de teste de unidade para a classe `AccountInfo` no projeto `Accounts`
 
--   A classe `CheckingAccountTests` contém os métodos de teste de unidade para a classe `CheckingAccount`.
+- A classe `CheckingAccountTests` contém os métodos de teste de unidade para a classe `CheckingAccount`.
 
 ## <a name="write-your-tests"></a>Escrever seus testes
 
@@ -185,11 +188,11 @@ Observe que `Withdraw_ValidAmount_ChangesBalance` usa uma instrução `Assert` e
 
 Para saber mais sobre as estruturas de testes de unidade da Microsoft, confira um dos seguintes tópicos:
 
--   [Efetuar teste de unidade em seu código](unit-test-your-code.md)
+- [Efetuar teste de unidade em seu código](unit-test-your-code.md)
 
--   [Escrevendo Testes de Unidade para C/C++](writing-unit-tests-for-c-cpp.md)
+- [Escrevendo Testes de Unidade para C/C++](writing-unit-tests-for-c-cpp.md)
 
--   [Usar a estrutura do MSTest em testes de unidade](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
+- [Usar a estrutura do MSTest em testes de unidade](using-microsoft-visualstudio-testtools-unittesting-members-in-unit-tests.md)
 
 ## <a name="set-timeouts-for-unit-tests"></a>Definir tempos limite para testes de unidade
 
@@ -260,12 +263,12 @@ Para obter mais informações, consulte [Executar testes de unidade com o Gerenc
 
 **R:** Use o **Gerenciador de Testes** para iniciar uma sessão de depuração para os testes. Passar pelo código com o depurador do Visual Studio permite-lhe navegar facilmente entre os testes de unidade e o projeto sendo testado. Para iniciar a depuração:
 
-1.  No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar.
+1. No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar.
 
     > [!NOTE]
     > Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.
 
-2.  No **Gerenciador de Testes**, selecione os métodos de teste e, em seguida, escolha **Depurar Testes Selecionados** no menu de atalho.
+2. No **Gerenciador de Testes**, selecione os métodos de teste e, em seguida, escolha **Depurar Testes Selecionados** no menu de atalho.
 
 Obter mais detalhes sobre [como depurar testes de unidade](../debugger/debugger-feature-tour.md).
 
@@ -327,9 +330,9 @@ Saiba mais sobre [cobertura de código](../test/using-code-coverage-to-determine
 
 O Microsoft Fakes usa duas abordagens a fim de criar classes substitutas para dependências externas:
 
-1.  *Stubs* geram classes substitutas derivadas da interface pai da classe de dependência de destino. Os métodos stub podem ser substituídos por métodos virtuais públicos da classe de destino.
+1. *Stubs* geram classes substitutas derivadas da interface pai da classe de dependência de destino. Os métodos stub podem ser substituídos por métodos virtuais públicos da classe de destino.
 
-2.  *Shims* usam a instrumentação de tempo de execução para desviar as chamadas a um método de destino para um método shim substituto no caso de métodos não virtuais.
+2. *Shims* usam a instrumentação de tempo de execução para desviar as chamadas a um método de destino para um método shim substituto no caso de métodos não virtuais.
 
 Em ambas as abordagens, você pode usar os representantes de chamadas gerados para o método de dependência a fim de especificar o comportamento desejado no método de teste.
 

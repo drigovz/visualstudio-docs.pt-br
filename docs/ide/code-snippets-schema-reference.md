@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a57ff548aeb566605802a0e270534df727a7c0f
-ms.sourcegitcommit: 23feea519c47e77b5685fec86c4bbd00d22054e3
+ms.openlocfilehash: 034fd1f31b24dce2d8ecc3d805b78c35c8498d6c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/26/2019
-ms.locfileid: "56841851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974976"
 ---
 # <a name="code-snippets-schema-reference"></a>Referência de esquema dos snippets de código
 
@@ -318,10 +318,7 @@ Um valor de texto é obrigatório. Esse texto especifica o identificador exclusi
 
 ## <a name="import-element"></a>Elemento Import
 
-Especifica os namespaces importados usados por um Snippet de Código IntelliSense.
-
-> [!NOTE]
-> O elemento `Import` tem suporte apenas em projetos do Visual Basic.
+Especifica os namespaces importados usados por um snippet de código IntelliSense.
 
 ```xml
 <Import>
@@ -340,9 +337,6 @@ Especifica os namespaces importados usados por um Snippet de Código IntelliSens
 ## <a name="imports-element"></a>Elemento Imports
 
 Agrupa elementos `Import` individuais.
-
-> [!NOTE]
-> O elemento `Imports` tem suporte apenas em projetos do Visual Basic.
 
 ```xml
 <Imports>
@@ -425,10 +419,7 @@ Os literais e objetos não podem conter um elemento **ID** com um valor de selec
 
 ## <a name="namespace-element"></a>Elemento Namespace
 
-Especifica o namespace que deve ser importado para compilação e execução do snippet de código. O namespace especificado no elemento `Namespace` é adicionado automaticamente a uma instrução `Imports` no início do código, se ele ainda não existir.
-
-> [!NOTE]
-> O elemento `Namespace` tem suporte apenas em projetos do Visual Basic.
+Especifica o namespace que deve ser importado para compilação e execução do snippet de código. O namespace especificado no elemento `Namespace` é adicionado automaticamente a uma diretiva `using` ou instrução `Imports` no início do código, se ainda não existir.
 
 ```xml
 <Namespace>
@@ -569,11 +560,11 @@ Especifica como o Visual Studio insere o snippet de código.
 
 O valor de texto deve ser um dos seguintes valores:
 
--   `SurroundsWith`: permite que o snippet de código seja colocado em torno de uma parte do código selecionada.
+- `SurroundsWith`: permite que o snippet de código seja colocado em torno de uma parte do código selecionada.
 
--   `Expansion`: permite que o snippet de código seja inserido onde está o cursor.
+- `Expansion`: permite que o snippet de código seja inserido onde está o cursor.
 
--   `Refactoring`: especifica que o snippet de código é usado durante refatoração de C#. `Refactoring` não pode ser usado em snippets de código personalizados.
+- `Refactoring`: especifica que o snippet de código é usado durante refatoração de C#. `Refactoring` não pode ser usado em snippets de código personalizados.
 
 ## <a name="snippettypes-element"></a>Elemento SnippetTypes
 

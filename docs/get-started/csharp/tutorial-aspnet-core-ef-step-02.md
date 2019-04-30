@@ -17,17 +17,17 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 5e9cc4f579b5913d5be3030828cad1a799efcd72
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58859383"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62840393"
 ---
 # <a name="step-2-create-your-first-aspnet-core-web-app"></a>Etapa 2: Criar seu primeiro aplicativo Web ASP.NET Core
 
 Crie seu primeiro aplicativo Web ASP.NET Core com este tutorial em vídeo e instruções passo a passo.
 
-_Assista a este vídeo e acompanhe-o para criar seu primeiro aplicativo Web ASP.NET Core._
+_Assista a este vídeo e siga as etapas para criar seu primeiro aplicativo ASP.NET Core._
 
 > [!VIDEO https://www.youtube.com/embed/-79RkpyFB6E]
 
@@ -118,8 +118,8 @@ Agora você deve ver o tempo real do servidor no navegador quando você navega p
 
 No próximo vídeo, você aprenderá como adicionar suporte a dados em seu aplicativo.
 
-[Tutorial: Como trabalhar com dados em um aplicativo ASP.NET Core](tutorial-aspnet-core-ef-step-03.md)
+[Tutorial: como trabalhar com dados em um aplicativo ASP.NET Core](tutorial-aspnet-core-ef-step-03.md)
 
 ## <a name="see-also"></a>Consulte também
 
-- [Tutorial: Criar um aplicativo Web de Páginas do Razor com o ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)
+- [Tutorial: criar um aplicativo Web de Razor Pages com o ASP.NET Core](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1)

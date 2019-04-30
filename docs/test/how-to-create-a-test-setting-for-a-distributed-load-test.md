@@ -8,12 +8,12 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f8cb4c3c2cba9f7734aa50c95f28bb6cef6bcba
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 1e55e4fd2e67c07110fcd3351e492ec94ccc47fa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55928875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62950187"
 ---
 # <a name="how-to-create-a-test-setting-for-a-distributed-load-test"></a>Como: Criar uma configuração de teste para um teste de carga distribuída
 
@@ -25,11 +25,11 @@ Por exemplo, você pode usar o adaptador de dados de diagnóstico do Criador de 
 
 As configurações de teste do Visual Studio são armazenadas em um arquivo. As configurações de teste definem as seguintes informações sobre cada função:
 
--   O conjunto de funções que são necessárias para seu aplicativo em teste
+- O conjunto de funções que são necessárias para seu aplicativo em teste
 
--   A função a ser usada para executar seus testes
+- A função a ser usada para executar seus testes
 
--   Os adaptadores de dados de diagnóstico a serem usados para cada função
+- Os adaptadores de dados de diagnóstico a serem usados para cada função
 
 Ao executar seus testes, você seleciona as configurações de teste para usar como as configurações ativas de teste, dependendo do que você precisa para essa execução específica de teste. O arquivo de configurações de teste é armazenado como parte de sua solução. O nome do arquivo tem a extensão *.testsettings*.
 
@@ -43,33 +43,33 @@ Siga estas etapas para criar e remover configurações de teste em sua solução
 
 ### <a name="to-add-a-test-settings-for-a-distributed-load-test"></a>Para adicionar configurações de teste para um teste de carga distribuído
 
-1.  Na **Gerenciador de Soluções**, clique com o botão direito do mouse em **Itens da Solução**, aponte para **Adicionar** e, em seguida, escolha **Novo Item**.
+1. Na **Gerenciador de Soluções**, clique com o botão direito do mouse em **Itens da Solução**, aponte para **Adicionar** e, em seguida, escolha **Novo Item**.
 
      A caixa de diálogo **Adicionar Novo Item** é exibida.
 
-2.  No painel **Modelos Instalados**, escolha **Configurações de Teste**.
+2. No painel **Modelos Instalados**, escolha **Configurações de Teste**.
 
-3.  (Opcional) Na caixa de **Nome**, altere o nome do arquivo de configurações de teste.
+3. (Opcional) Na caixa de **Nome**, altere o nome do arquivo de configurações de teste.
 
-4.  Escolha **Adicionar**.
+4. Escolha **Adicionar**.
 
      O novo arquivo de configurações de teste é exibido no **Gerenciador de Soluções**, na pasta **Itens da Solução**.
 
     > [!NOTE]
     > A lista de configurações de teste que o Visual Studio Enterprise exibe é derivada da lista de arquivos de configurações de teste na pasta **Itens de Solução**. Por exemplo, os arquivos de configurações de teste da pasta **Itens da Solução** são exibidos quando você usa a opção **Selecionar Configurações de Teste Ativo** no menu **Testar**. Isso significa que se você mover um arquivo de configurações de teste para outro local na sua hierarquia de solução, ele não poderá mais ser usado como uma configuração de teste no ambiente de desenvolvimento integrado do Visual Studio.
 
-5.  A caixa de diálogo **Configurações de Teste** é exibida. A página **Geral** está selecionada.
+5. A caixa de diálogo **Configurações de Teste** é exibida. A página **Geral** está selecionada.
 
      Agora você pode editar e salvar valores das configurações de teste.
 
     > [!NOTE]
     > Cada configuração de teste que você cria é listada como uma escolha para as opções **Selecionar Configurações de Teste Ativo** e **Editar Configurações de Teste** no menu **Teste**.
 
-6.  Em **Nome**, digite o nome das configurações de teste.
+6. Em **Nome**, digite o nome das configurações de teste.
 
-7.  (Opcional) Em **Descrição**, digite uma descrição para a configuração do teste para que outros membros da equipe saibam de sua finalidade.
+7. (Opcional) Em **Descrição**, digite uma descrição para a configuração do teste para que outros membros da equipe saibam de sua finalidade.
 
-8.  (Opcional) Para selecionar o esquema de nomenclatura padrão para seus ensaios, selecione **Esquema de nomenclatura padrão**. Para definir seus próprios esquema de nomeação, selecione **Esquema definido pelo usuário** e digite o texto que você deseja em **Texto de prefixo**. Para anexar o carimbo de data/hora ao nome da execução de teste, selecione **Acrescentar carimbo de data/hora**.
+8. (Opcional) Para selecionar o esquema de nomenclatura padrão para seus ensaios, selecione **Esquema de nomenclatura padrão**. Para definir seus próprios esquema de nomeação, selecione **Esquema definido pelo usuário** e digite o texto que você deseja em **Texto de prefixo**. Para anexar o carimbo de data/hora ao nome da execução de teste, selecione **Acrescentar carimbo de data/hora**.
 
 9. Escolha **Funções**.
 
@@ -125,14 +125,14 @@ Siga estas etapas para criar e remover configurações de teste em sua solução
 
     |Adaptador de dados de diagnóstico|Usado em testes de carga|Tópico associado|
     |-|-------------------------|-|
-    |**Proxy de Cliente do ASP.NET para IntelliTrace e Impacto de Teste:** Esse proxy permite que você colete informações sobre as chamadas HTTP de um cliente para um servidor Web para os adaptadores de dados de diagnóstico do IntelliTrace e de Impacto de Teste.|![Ícone de informações](../test/media/vc364f4.gif)<br /><br /> A menos que você tenha uma necessidade específica de coletar informações do sistema para os computadores do agente de teste, não inclua este adaptador. **Cuidado:**  Não recomendamos o uso do adaptador IntelliTrace em testes de carga devido a problemas que ocorrem devido à grande quantidade de dados que são coletados. <br /><br /> Os dados do impacto de teste não são coletados usando testes de carga.||
+    |**Proxy de Cliente do ASP.NET para IntelliTrace e Impacto de Teste:** Esse proxy permite que você colete informações sobre as chamadas HTTP de um cliente para um servidor Web para os adaptadores de dados de diagnóstico do IntelliTrace e de Impacto de Teste.|![Ícone de informações](../test/media/vc364f4.gif)<br /><br /> A menos que você tenha uma necessidade específica de coletar informações do sistema para os computadores do agente de teste, não inclua este adaptador. **Cuidado:**  não recomendamos o uso do adaptador IntelliTrace em testes de carga devido a problemas que ocorrem devido à grande quantidade de dados que são coletados. <br /><br /> Os dados do impacto de teste não são coletados usando testes de carga.||
     |**IntelliTrace:** Configure informações de rastreamento de diagnóstico específicas armazenadas em um arquivo de log. Um arquivo de log tem uma extensão *.tdlog*. Ao executar o teste e uma etapa falhar, você pode criar um bug. O arquivo de log que contém o rastreamento de diagnóstico que é anexado automaticamente a este bug. Os dados coletados no arquivo do log aumentam a produtividade de depuração reduzindo o tempo necessário para reproduzir e diagnosticar um erro no código. Deste arquivo de log, a sessão local pode ser recriada em outro computador. Isso reduz o risco de um bug não poder ser reproduzido.<br /><br /> Para obter mais informações, consulte [Coletar dados do IntelliTrace](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md).|![Ícone de importante](../test/media/vc364f3.gif)<br /><br /> Não recomendamos o uso do adaptador IntelliTrace em testes de carga devido a problemas que ocorrem devido à grande quantidade de dados que são coletados e registrados em log. Você deve tentar usar o adaptador de IntelliTrace somente em testes de carga que não são executados por muito tempo e não usam vários agentes de teste.|[Como: Coletar dados do IntelliTrace para ajudar a depurar problemas difíceis](../test/how-to-collect-intellitrace-data-to-help-debug-difficult-issues.md)|
     |**Criador de Perfil do ASP.NET:** Crie uma configuração de teste que inclui a criação de perfis do ASP.NET, que coleta dados de desempenho em aplicativos Web ASP.NET.|O adaptador de dados de diagnóstico do criador de perfis do ASP.NET cria perfis do processo do IIS (Serviços de Informações da Internet), portanto ele não funcionará em um servidor Web de desenvolvimento. Para analisar o site no teste de carga, você precisa instalar um agente de teste no computador em que o IIS está sendo executado. O agente de teste não estará gerando carga, mas será um agente de coleção somente. Para obter mais informações, consulte [Instalar e configurar agentes de teste](../test/lab-management/install-configure-test-agents.md).|[Como: Configurar o criador de perfil do ASP.NET para carregar testes usando configurações de teste](../test/how-to-configure-aspnet-profiler-for-load-tests-using-test-settings.md)|
     |**Log de eventos:** Defina uma configuração de teste para incluir a coleta de logs de eventos, que será incluída nos resultados do teste.||[Como: Configurar a coleta de logs de evento usando configurações de teste](https://msdn.microsoft.com/48d67891-6018-4549-83e3-213d5d824a02)|
-    |**Emulação de rede:** Especifique que você deseja colocar uma carga de rede artificial no teste usando uma configuração de teste. A emulação de rede afeta a comunicação para e do computador emulando uma velocidade de conexão de rede específica, como a conexão discada. **Observação:**  A emulação de rede não pode ser usada para aumentar a velocidade de conexão de rede.|O adaptador Emulação de Rede é ignorado por teste de carga. Em vez disso, os testes de carga usam as configurações especificadas na mistura de rede do cenário de teste de carga.<br /><br /> Para obter mais informações, confira [Especificar tipos de rede virtual](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
+    |**Emulação de rede:** Especifique que você deseja colocar uma carga de rede artificial no teste usando uma configuração de teste. A emulação de rede afeta a comunicação para e do computador emulando uma velocidade de conexão de rede específica, como a conexão discada. **Observação:**  a emulação de rede não pode ser usada para aumentar a velocidade de conexão de rede.|O adaptador Emulação de Rede é ignorado por teste de carga. Em vez disso, os testes de carga usam as configurações especificadas na mistura de rede do cenário de teste de carga.<br /><br /> Para obter mais informações, confira [Especificar tipos de rede virtual](../test/specify-virtual-network-types-in-a-load-test-scenario.md).||
     |**Informações do sistema:** Uma configuração de teste pode ser definida para incluir as informações do sistema sobre os computadores nos quais o coletor de dados e diagnóstico de Informações do Sistema é executado. As informações do sistema são especificadas nos resultados do teste usando uma configuração de teste.|![Ícone de informações](../test/media/vc364f4.gif)<br /><br /> Você pode reunir informações do sistema de agentes de carregamento e do sistema em teste.|Nenhuma configuração é necessária para coletar essa informação.|
     |**Impacto de teste:** Colete informações sobre quais métodos do código de aplicativos foram usados quando um caso de teste estava sendo executado. Podem ser usadas em conjunto com as alterações feitas no código do aplicativo por desenvolvedores para determinar quais testes foram afetados pelas alterações de desenvolvimento.|Os dados do impacto de teste não são coletados com testes de carga.||
-    |**Gravador de vídeo:** Crie uma gravação de vídeo da sessão de área de trabalho ao executar um teste automatizado. Isso pode ser útil para a exibição das ações do usuário para um teste codificado de interface do usuário. O vídeo pode ajudar outros membros de equipe a isolar problemas de aplicativo que sejam difíceis de reproduzir. **Observação:**  Ao executar testes remotamente, o gravador de exibição não funcionará a menos que o agente esteja executando no modo interativo do processo.|![Ícone Importante](../test/media/vc364f3.gif) **Aviso:**  Não recomendamos o uso do adaptador de gravação de vídeo para testes de carga.|[Como: Incluir gravações da tela e de voz durante testes usando as configurações de teste](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
+    |**Gravador de vídeo:** Crie uma gravação de vídeo da sessão de área de trabalho ao executar um teste automatizado. Isso pode ser útil para a exibição das ações do usuário para um teste codificado de interface do usuário. O vídeo pode ajudar outros membros de equipe a isolar problemas de aplicativo que sejam difíceis de reproduzir. **Observação:**  ao executar testes remotamente, o gravador de exibição não funcionará a menos que o agente esteja executando no modo interativo do processo.|![Ícone Importante](../test/media/vc364f3.gif) **Aviso:**  não recomendamos o uso do adaptador de gravação de vídeo para testes de carga.|[Como: Incluir gravações da tela e de voz durante testes usando as configurações de teste](../test/how-to-include-recordings-of-the-screen-and-voice-during-tests.md)|
 
 19. Escolha **Implantação**.
 
@@ -154,27 +154,27 @@ Siga estas etapas para criar e remover configurações de teste em sua solução
 
      A página **Scripts de Instalação e Limpeza** é exibida.
 
-    1.  Digite o local do arquivo de script em **Script de instalação** ou escolha as reticências (**…**) para localizar o script de instalação.
+    1. Digite o local do arquivo de script em **Script de instalação** ou escolha as reticências (**…**) para localizar o script de instalação.
 
-    2.  Digite o local do arquivo de script em **Script de limpeza** ou escolha as reticências (**…**) para localizar o script de limpeza.
+    2. Digite o local do arquivo de script em **Script de limpeza** ou escolha as reticências (**…**) para localizar o script de limpeza.
 
 24. Para executar testes usando um host diferente, escolha **Hosts**.
 
-    1.  Em **Tipo de Host**, verifique se **Padrão** está selecionado.
+    1. Em **Tipo de Host**, verifique se **Padrão** está selecionado.
 
         > [!NOTE]
         > **ASP.NET** em **Tipo de host** não tem suporte em testes de carga.
 
-    2.  Use o menu suspenso **Executar teste em processo de 32 ou 64 bits** para selecionar se deseja que os testes de desempenho Web e os testes de unidade no teste de carga sejam executados como processos de 32 ou 64 bits.
+    2. Use o menu suspenso **Executar teste em processo de 32 ou 64 bits** para selecionar se deseja que os testes de desempenho Web e os testes de unidade no teste de carga sejam executados como processos de 32 ou 64 bits.
 
         > [!NOTE]
         > Para a máxima flexibilidade, você deve compilar seus projetos de teste de carga e de desempenho na Web usando a configuração **Qualquer CPU**. Em seguida, você poderá executar os agentes de 32 bits e de 64 bits. A compilação de projetos de teste de carga e de desempenho na Web com a configuração de **64 bits** não oferece nenhuma vantagem.
 
 25. (Opcional) Para delimitar o tempo para cada execução de teste e testes individuais, selecione **Tempos limite de testes.**
 
-    1.  Para anular uma execução de teste quando um limite de tempo for excedido, selecione **Anular uma execução de teste se o tempo total exceder** e digite um valor para esse limite.
+    1. Para anular uma execução de teste quando um limite de tempo for excedido, selecione **Anular uma execução de teste se o tempo total exceder** e digite um valor para esse limite.
 
-    2.  Para não passar em um teste individual quando um limite de tempo for excedido, selecione **Marcar um teste individual como reprovado se seu tempo de execução exceder** e digite um valor para este limite.
+    2. Para não passar em um teste individual quando um limite de tempo for excedido, selecione **Marcar um teste individual como reprovado se seu tempo de execução exceder** e digite um valor para este limite.
 
 26. Ignorar **Teste de unidade**. Os testes de carga não usam essas configurações.
 

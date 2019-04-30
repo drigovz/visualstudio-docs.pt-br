@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 07584f9e04be805ed699676c678b2147ec3679ff
-ms.sourcegitcommit: cd91a8a4f6086cda9ba6948be25864fc7d6b8e44
+ms.openlocfilehash: 3e1f82a58dac3b0a6f607d1de7f881c5de9e91aa
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/12/2019
-ms.locfileid: "59537618"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62973251"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>Guia de produtividade do Visual Studio para desenvolvedores de C#
 
@@ -154,10 +154,12 @@ Baixe a [extensão do IntelliCode](https://marketplace.visualstudio.com/items?it
 A partir do Visual Studio 2017, há vários aprimoramentos na experiência de teste. Você pode realizar testes com as estruturas de teste MSTest v1, MSTest v2, NUnit ou XUnit.
 
 - A detecção de testes do **Gerenciador de Testes** é rápida.
-- Organize seus testes no **Gerenciador de Testes** com a *classificação hierárquica*.
-- O [Live Unit Testing](../test/live-unit-testing.md) executa continuamente os testes afetados pelas alterações de código e atualiza os ícones do editor embutido para informar o status dos testes. Inclua ou exclua testes específicos ou projetos de teste pelo Live Test Set (conjunto de teste de modo real).
 
-![Exibição de hierarquia do Gerenciador de Testes no Visual Studio](../ide/media/VSGuide_Testing.png)
+- Organize seus testes no **Gerenciador de Testes** com a *classificação hierárquica*.
+
+   ![Exibição de hierarquia do Gerenciador de Testes no Visual Studio](../ide/media/VSGuide_Testing.png)
+
+- O [Live Unit Testing](../test/live-unit-testing.md) executa continuamente os testes afetados pelas alterações de código e atualiza os ícones do editor embutido para informar o status dos testes. Inclua ou exclua testes específicos ou projetos de teste pelo Live Test Set (conjunto de teste de modo real). (somente na edição Visual Studio Enterprise.)
 
 ## <a name="debugging"></a>Depuração
 
@@ -211,5 +213,5 @@ Aqui está uma lista dos recursos do editor e de produtividade para escrever có
 | Habilitar análise de solução completa | Ver todos os erros na solução na **Lista de Erros** | **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Avançado** > **Habilitar análise completa da solução** |
 | Habilitar a navegação para origens descompiladas | Habilite Ir Para a Definição em tipos/membros de fontes externas e usar o descompilador ILSpy para mostrar os corpos de método | **Ferramentas** > **Opções** > **Editor de Texto** > **C#** > **Avançado** > **Habilitar navegação para fontes descompiladas** |
 | Modo de conclusão/sugestão | Altera o comportamento de conclusão no IntelliSense. Os desenvolvedores com experiência em IntelliJ tendem a usar uma configuração diferente da configuração padrão aqui. | **Menu** > **Editar** > **IntelliSense** > **Ativar/Desativar Modo de Preenchimento** |
-| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Exibe informações de referência de código e o histórico de alterações no editor | **Ferramentas** > **Opções** > **Editor de Texto** > **Todas as Linguagens** > **CodeLens** |
+| [CodeLens](../ide/find-code-changes-and-other-history-with-codelens.md) | Exibe informações de referência de código e o histórico de alterações no editor. (Os indicadores do CodeLens de controle do código-fonte não estão disponíveis na edição do Visual Studio Community.) | **Ferramentas** > **Opções** > **Editor de Texto** > **Todas as Linguagens** > **CodeLens** |
 | [Snippets de código](../ide/visual-csharp-code-snippets.md) | Ajudar a apagar um código clichê comum | Digite um nome de snippet e pressione **Tab** duas vezes. |

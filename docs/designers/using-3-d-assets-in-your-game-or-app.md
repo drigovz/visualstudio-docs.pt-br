@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 2fb6897d9dd603b5a86a6774336d64f51a6bb5d6
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.openlocfilehash: 0cb6b6d7969742f4cd1c155e800464a6f645649d
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55908615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62892899"
 ---
 # <a name="use-3d-assets-in-your-game-or-app"></a>Usar ativos 3D em seu jogo ou aplicativo
 
@@ -34,9 +34,9 @@ Antes que seja possível implantar os ativos 3D como parte da criação, o Visua
 
 ### <a name="to-add-the-build-customizations-to-your-project"></a>Para adicionar as personalizações de compilação ao seu projeto
 
-1.  No **Gerenciador de Soluções**, abra o menu de atalho do projeto e, em seguida, escolha **Dependências de Build** > **Personalizações de Build**. A caixa de diálogo **Arquivos de Personalizações de Build do Visual C++** será exibida.
+1. No **Gerenciador de Soluções**, abra o menu de atalho do projeto e, em seguida, escolha **Dependências de Build** > **Personalizações de Build**. A caixa de diálogo **Arquivos de Personalizações de Build do Visual C++** será exibida.
 
-2.  Em **Arquivos de Personalização de Build Disponíveis**, marque as caixas de seleção que correspondem aos tipos de ativo que você deseja usar no projeto, conforme descrito na seguinte tabela:
+2. Em **Arquivos de Personalização de Build Disponíveis**, marque as caixas de seleção que correspondem aos tipos de ativo que você deseja usar no projeto, conforme descrito na seguinte tabela:
 
     |Tipo de ativo|Nome da personalização de compilação|
     |----------------| - |
@@ -44,23 +44,23 @@ Antes que seja possível implantar os ativos 3D como parte da criação, o Visua
     |Modelos 3D|**MeshContentTask(.targets, .props)**|
     |Sombreadores|**ShaderGraphContentTask(.targets, .props)**|
 
-3.  Escolha o botão **OK**.
+3. Escolha o botão **OK**.
 
 ## <a name="include-assets-in-your-build"></a>Incluir ativos na criação
  Agora que seu projeto conhece os diferentes tipos de ativos 3D que você deseja usar, a próxima etapa é dizer quais arquivos são ativos 3D e quais tipos de ativos eles são.
 
 ### <a name="to-add-an-asset-to-your-build"></a>Para adicionar um ativo à sua compilação
 
-1.  No **Gerenciador de Soluções**, no seu projeto, abra o menu de atalho do ativo e selecione **Propriedades**. A caixa de diálogo **Página de Propriedades** do ativo é exibida.
+1. No **Gerenciador de Soluções**, no seu projeto, abra o menu de atalho do ativo e selecione **Propriedades**. A caixa de diálogo **Página de Propriedades** do ativo é exibida.
 
-2.  Verifique se as propriedades **Configuração** e **Plataforma** estão definidas com os valores aos quais você deseja aplicar as alterações.
+2. Verifique se as propriedades **Configuração** e **Plataforma** estão definidas com os valores aos quais você deseja aplicar as alterações.
 
-3.  Em **Propriedades da Configuração**, escolha **Geral** e, na grade de propriedades, em **Geral**, defina a propriedade **Tipo de Item** para o tipo de item do pipeline de conteúdo adequado. Por exemplo, no caso um arquivo de imagem ou de textura, escolha **Pipeline de Conteúdo da Imagem**.
+3. Em **Propriedades da Configuração**, escolha **Geral** e, na grade de propriedades, em **Geral**, defina a propriedade **Tipo de Item** para o tipo de item do pipeline de conteúdo adequado. Por exemplo, no caso um arquivo de imagem ou de textura, escolha **Pipeline de Conteúdo da Imagem**.
 
     > [!IMPORTANT]
     > Por padrão, o Visual Studio presume que muitos tipos de arquivos de imagem devem ser classificados usando o tipo de item **Imagem**, integrado ao Visual Studio. Portanto, você precisa alterar a propriedade **Tipo de Item** de cada imagem que deseja que seja processada pelo pipeline de conteúdo da imagem. Outros tipos de arquivos de origem de pipeline de conteúdo para modelos 3D e gráficos de sombreador visual assumem como padrão o **Tipo de Item** correto.
 
-4.  Escolha o botão **OK**.
+4. Escolha o botão **OK**.
 
 Veja a seguir os três tipos de item de pipeline de conteúdo e seus tipos de arquivo de origem e de saída associados.
 
@@ -76,13 +76,13 @@ Veja a seguir os três tipos de item de pipeline de conteúdo e seus tipos de ar
 
 ### <a name="to-configure-content-pipeline-properties"></a>Para configurar as propriedades de pipeline de conteúdo
 
-1.  No **Gerenciador de Soluções**, no seu projeto, abra o menu de atalho para o arquivo do ativo e selecione **Propriedades**. A caixa de diálogo **Página de Propriedades** do ativo é exibida.
+1. No **Gerenciador de Soluções**, no seu projeto, abra o menu de atalho para o arquivo do ativo e selecione **Propriedades**. A caixa de diálogo **Página de Propriedades** do ativo é exibida.
 
-2.  Verifique se as propriedades **Configuração** e **Plataforma** estão definidas para os valores aos quais você deseja aplicar as suas alterações.
+2. Verifique se as propriedades **Configuração** e **Plataforma** estão definidas para os valores aos quais você deseja aplicar as suas alterações.
 
-3.  Em **Propriedades de Configuração**, escolha o nó do pipeline de conteúdo (por exemplo, **Pipeline de Conteúdo de Imagem** para ativos de textura e imagens) e, na grade de propriedade, defina as propriedades para os valores adequados. Por exemplo, para gerar mipmaps para um ativo de textura no tempo de build, defina a propriedade **Gerar Mips** como **Sim**.
+3. Em **Propriedades de Configuração**, escolha o nó do pipeline de conteúdo (por exemplo, **Pipeline de Conteúdo de Imagem** para ativos de textura e imagens) e, na grade de propriedade, defina as propriedades para os valores adequados. Por exemplo, para gerar mipmaps para um ativo de textura no tempo de build, defina a propriedade **Gerar Mips** como **Sim**.
 
-4.  Escolha o botão **OK**.
+4. Escolha o botão **OK**.
 
 ### <a name="image-content-pipeline-configuration"></a>Configuração do pipeline de conteúdo da imagem
 
@@ -93,7 +93,7 @@ Ao usar a ferramenta de pipeline de conteúdo da imagem para compilar um ativo d
 |**Compress**|Especifica o tipo de compactação usado para o arquivo de saída.<br /><br /> As opções disponíveis são:<br /><br /> -   **Sem Compactação**<br />-   **Compactação BC1_UNORM**<br />-   **Compactação BC1_UNORM_SRGB**<br />-   **Compactação BC2_UNORM**<br />-   **Compactação BC2_UNORM_SRGB**<br />-   **Compactação BC3_UNORM**<br />-   **Compactação BC3_UNORM_SRGB**<br />-   **Compactação BC4_UNORM**<br />-   **Compactação BC4_SNORM**<br />-   **Compactação BC5_UNORM**<br />-   **Compactação BC5_SNORM**<br />-   **Compactação BC6H_UF16**<br />-   **Compactação BC6H_SF16**<br />-   **Compactação BC7_UNORM**<br />-   **Compactação BC7_UNORM_SRGB**<br /><br /> Para obter informações sobre quais formatos de compactação têm suporte em diferentes versões do DirectX, consulte [Guia de programação para DXGI](http://go.microsoft.com/fwlink/p/?LinkId=246265).|
 |Converter para formato alfa pré-multiplicado|**Sim** para converter a imagem para um formato alfa pré-multiplicado no arquivo de saída; caso contrário, **Não**. Apenas o arquivo de saída é alterado, a imagem de origem permanece inalterada.|
 |**Gerar Mips**|**Sim** para gerar uma cadeia de MIP completa no tempo de build no arquivo de saída; caso contrário, **Não**. Se **Não** e o arquivo de origem já contiver uma cadeia de mipmap, o arquivo de saída terá uma cadeia MIP; caso contrário, o arquivo de saída não terá uma cadeia MIP.|
-|**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:**  Alterar a extensão do nome do arquivo de saída não tem efeito sobre o formato do arquivo.|
+|**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:**  alterar a extensão do nome do arquivo de saída não tem efeito sobre o formato do arquivo.|
 
 ### <a name="mesh-content-pipeline-configuration"></a>Configuração do pipeline de conteúdo da malha
 
@@ -101,7 +101,7 @@ Quando você usar a ferramenta de pipeline de conteúdo da malha para criar um a
 
 |Propriedade|Descrição|
 |--------------|-----------------|
-|**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:**  Alterar a extensão do nome do arquivo de saída não tem efeito sobre o formato do arquivo.|
+|**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:**  alterar a extensão do nome do arquivo de saída não tem efeito sobre o formato do arquivo.|
 
 ### <a name="shader-content-pipeline-configuration"></a>Configuração do pipeline de conteúdo do sombreador
 
@@ -109,7 +109,7 @@ Quando você usar a ferramenta de pipeline de conteúdo do sombreador para criar
 
 |Propriedade|Descrição|
 |--------------|-----------------|
-|**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:**  Alterar a extensão do nome do arquivo de saída não tem efeito sobre o formato do arquivo.|
+|**Saída de conteúdo**|Especifica o nome do arquivo de saída. **Importante:**  alterar a extensão do nome do arquivo de saída não tem efeito sobre o formato do arquivo.|
 
 ## <a name="load-and-use-3d-assets-at-run-time"></a>Carregar e usar ativos 3D em tempo de execução
 

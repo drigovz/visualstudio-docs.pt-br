@@ -18,27 +18,27 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 711082c70c6174bdf3363ddb12d233ceb3f78f0d
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018110"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62838917"
 ---
 # <a name="tutorial-create-your-first-aspnet-core-app-using-entity-framework-with-visual-studio-2019"></a>Tutorial: Criar seu primeiro aplicativo ASP.NET Core usando Entity Framework com Visual Studio 2019
 
 Neste tutorial, você criará um aplicativo Web ASP.NET Core que usa dados e o implantará no Azure. O tutorial consiste nas seguintes etapas:
 
-- [Etapa 1: Instalar o Visual Studio 2019](#step-1-install-visual-studio-2019)
-- [Etapa 2: Criar seu primeiro aplicativo Web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
-- [Etapa 3: Trabalhar com dados usando o Entity Framework](tutorial-aspnet-core-ef-step-03.md)
-- [Etapa 4: Expor uma API Web do seu aplicativo ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
-- [Etapa 5: Implantar o aplicativo ASP.NET Core no Azure](tutorial-aspnet-core-ef-step-05.md)
+- [Etapa 1: instalar o Visual Studio 2019](#step-1-install-visual-studio-2019)
+- [Etapa 2: criar seu primeiro aplicativo Web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
+- [Etapa 3: trabalhar com dados usando o Entity Framework](tutorial-aspnet-core-ef-step-03.md)
+- [Etapa 4: expor uma API Web do seu aplicativo ASP.NET Core](tutorial-aspnet-core-ef-step-04.md)
+- [Etapa 5: implantar o aplicativo ASP.NET Core no Azure](tutorial-aspnet-core-ef-step-05.md)
 
 ## <a name="step-1-install-visual-studio-2019"></a>Etapa 1: Instalar o Visual Studio 2019
 
 Aprenda como instalar o Visual Studio 2019 com este tutorial em vídeo e instruções passo a passo. Se você já tiver instalado o Visual Studio, vá direto para [Etapa 2: Criar seu primeiro aplicativo Web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md).
 
-_Assista a este vídeo e acompanhe-o para instalar o Visual Studio e criar seu primeiro aplicativo Web ASP.NET Core._
+_Assista a este vídeo e siga as etapas para instalar o Visual Studio e criar seu primeiro aplicativo Web ASP.NET Core._
 
 > [!VIDEO https://www.youtube.com/embed/Fz_HAqQGLtY]
 
@@ -96,7 +96,7 @@ Selecione o modelo de aplicativo Web padrão Sem autenticação e clique em **Ok
 
 No próximo vídeo, você aprenderá mais sobre o seu primeiro projeto do ASP.NET Core.
 
-[Tutorial: Criar seu primeiro aplicativo Web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
+[Tutorial: criar seu primeiro aplicativo Web ASP.NET Core](tutorial-aspnet-core-ef-step-02.md)
 
 ## <a name="see-also"></a>Consulte também
 

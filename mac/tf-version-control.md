@@ -8,11 +8,11 @@ ms.topic: article
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.openlocfilehash: d98ffc8c9d864afaf0b42d029a4d65850f64d806
-ms.sourcegitcommit: 0e22ead8234b2c4467bcd0dc047b4ac5fb39b977
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/09/2019
-ms.locfileid: "59366153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62972550"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>Conexão com o Controle de Versão do Team Foundation
 
@@ -23,7 +23,7 @@ O Azure Repos fornece dois modelos de controle de versão: [Git](/azure/devops/r
 
 O Visual Studio para Mac fornece suporte completo para repositórios Git, mas requer algumas soluções alternativas para trabalhar com o TFVC. Se você estiver usando o TFVC para controle de versão hoje, aqui estão algumas soluções que você pode usar para acessar seu código-fonte hospedado no TFVC.
 
-* [Usar o Visual Studio Code e a extensão Azure Repos, para uma interface gráfica](#use-visual-studio-code-and-the-azure-repos-extension)
+* [Usar o Visual Studio Code e a extensão Azure Repos para uma interface gráfica](#use-visual-studio-code-and-the-azure-repos-extension)
 * [Conectar-se ao seu repositório usando o cliente de linha de comando Team Explorer Everywhere (TEE-CLC)](#connecting-using-the-team-explorer-everywhere-command-line-client)
 * [Conectar-se ao TFVC usando a extensão Controle de Versão do Team Foundation (sem suporte) para o Visual Studio para Mac](#connect-to-tfvc-using-the-team-foundation-version-control-extension)
 
@@ -273,4 +273,4 @@ Ao tentar [criar um workspace](#creating-a-new-workspace), verifique se as segui
 
 ### <a name="see-also"></a>Consulte também
 
-- [Desenvolver e compartilhar seu código no TFVC usando o Visual Studio (no Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs)
+- [Develop and share your code in TFVC using Visual Studio (on Windows)](/azure/devops/repos/tfvc/share-your-code-in-tfvc-vs) [Desenvolver e compartilhar seu código no TFVC usando o Visual Studio (no Windows)]
