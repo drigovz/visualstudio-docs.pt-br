@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17d18a485e57b896aaf3f40b0cfdab63e10dce2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 996f2f75499a54e0d5514590f2b087130b73ffb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387780"
 ---
 # <a name="properties-of-types-on-uml-class-diagrams"></a>Propriedades de tipos em diagramas de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60062224"
 Em um diagrama de classe UML, uma *tipo* é uma classe, uma interface ou uma enumeração.  
   
 > [!NOTE]
->  Este tópico é sobre as propriedades de tipos em diagramas de classe UML. Para mais informações, consulte os seguintes tópicos:  
+> Este tópico é sobre as propriedades de tipos em diagramas de classe UML. Para mais informações, consulte os seguintes tópicos:  
   
 - [Diagramas de classe UML: referência](../modeling/uml-class-diagrams-reference.md)  
   

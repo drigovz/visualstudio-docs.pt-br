@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0699e3a7ad4a56f7e102ca896359290cd7dbecb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d6aca6166486d0eda1a4a92167c0e8d6a8a2924
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053124"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415525"
 ---
 # <a name="how-to-use-the-activity-log"></a>Como: Usar o log de atividades
 Os VSPackages pode gravar mensagens no log de atividade. Esse recurso é especialmente útil para depurar os VSPackages em ambientes de varejo.
 
 > [!TIP]
->  O log de atividades está sempre ativado. O Visual Studio manterá um buffer progressivo das últimas 100 entradas, bem como as 10 primeiras entradas, o que tem informações de configuração geral.
+> O log de atividades está sempre ativado. O Visual Studio manterá um buffer progressivo das últimas 100 entradas, bem como as 10 primeiras entradas, o que tem informações de configuração geral.
 
 ## <a name="to-write-an-entry-to-the-activity-log"></a>Para gravar uma entrada ao log de atividades
 

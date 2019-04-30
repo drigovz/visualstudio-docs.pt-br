@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb3168a53ca503a60a8aa5009d02a0f3a4d72b94
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d9705555ad76663e1fb1bc402d5b050649d934ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411191"
 ---
 # <a name="implement-type-visualizers-and-custom-viewers"></a>Implementar visualizadores de tipo e visualizadores personalizados
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Visualizadores de tipo e visualizadores personalizados permitem que um usuário exibir dados de um tipo específico de forma que seja mais significativa do que um despejo hexadecimal simple de números. Um avaliador de expressão (EE) pode associar os visualizadores personalizados com tipos específicos de dados ou variáveis. Esses visualizadores personalizados são implementados com o EE. O EE também pode dar suporte a visualizadores de tipo externo, que podem vir de outro fornecedor de terceiros ou até mesmo o usuário final.
 

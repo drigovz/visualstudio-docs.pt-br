@@ -23,12 +23,12 @@ caps.latest.revision: 37
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0183e17da3eacad4fbcb3eed256396ab68249099
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef0bda55c42d384f9e7285b445e4cb3c19144289
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054541"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408425"
 ---
 # <a name="building-and-cleaning-projects-and-solutions-in-visual-studio"></a>Compilando e limpando projetos e soluções no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ ms.locfileid: "60054541"
 Usando os procedimentos neste tópico, é possível criar, recriar ou limpar todos ou alguns projetos ou itens de projeto em uma solução. Para obter um tutorial passo a passo, confira [Passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md).
 
 > [!NOTE]
->  A interface do usuário na sua edição do Visual Studio pode ser diferente do que este tópico descreve, dependendo das suas configurações ativas. Para alterar as configurações, abra o menu **Ferramentas** e escolha **Importar e Exportar Configurações**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> A interface do usuário na sua edição do Visual Studio pode ser diferente do que este tópico descreve, dependendo das suas configurações ativas. Para alterar as configurações, abra o menu **Ferramentas** e escolha **Importar e Exportar Configurações**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ## <a name="to-build-rebuild-or-clean-an-entire-solution"></a>Para criar, recriar ou limpar uma solução inteira
 
@@ -47,7 +47,7 @@ Usando os procedimentos neste tópico, é possível criar, recriar ou limpar tod
     - Escolha **Compilar** ou **Compilar Solução** para compilar somente esses componentes e arquivos de projeto e componentes que foram alterados desde o build mais recente.
 
         > [!NOTE]
-        >  O comando **Compilar** torna-se **Compilar Solução** quando uma solução inclui mais de um projeto.
+        > O comando **Compilar** torna-se **Compilar Solução** quando uma solução inclui mais de um projeto.
 
     - Escolha **Recompilar Solução** para "limpar" a solução e, em seguida, crie todos os arquivos de projeto e componentes.
 

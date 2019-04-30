@@ -24,12 +24,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 17eb5c1ca2ad35b7a510c5a70d3ad5c5f741c69d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 666b5acaae84a1b16c1b4bdfeb7cb1b8f4bcfb64
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386002"
 ---
 # <a name="hierarchical-update"></a>Atualização hierárquica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Atualização hierárquica * refere-se ao processo de salvar dados atualizados (
  Definindo a ordem para executar atualizações define a ordem do indivíduo inserções, atualizações e exclusões que é necessárias para salvar todos os dados modificados em todas as tabelas de um conjunto de dados. Quando a atualização hierárquica é habilitada, inserções são executadas em primeiro lugar, em seguida, atualiza e, em seguida, exclui. O `TableAdapterManager` fornece um `UpdateOrder` propriedade que pode ser definida para executar atualizações em primeiro lugar, em seguida, inserções e exclusões.  
   
 > [!NOTE]
->  É importante entender que a ordem de atualização é totalmente inclusiva. Ou seja, quando as atualizações são executadas, inserções e exclusões são executadas para todas as tabelas no conjunto de dados.  
+> É importante entender que a ordem de atualização é totalmente inclusiva. Ou seja, quando as atualizações são executadas, inserções e exclusões são executadas para todas as tabelas no conjunto de dados.  
   
  Para definir a `UpdateOrder` propriedade, depois de arrastar itens da [janela fontes de dados](http://msdn.microsoft.com/library/0d20f699-cc95-45b3-8ecb-c7edf1f67992) para um formulário, selecione o `TableAdapterManager` na bandeja de componentes e em seguida, defina a `UpdateOrder` propriedade no **propriedades** janela. Para obter mais informações, confira [Como: Definir a ordem ao executar uma atualização hierárquica](http://msdn.microsoft.com/library/a0734935-78dd-4c0b-80d7-5e7925789c83).  
   
@@ -71,7 +71,7 @@ Atualização hierárquica * refere-se ao processo de salvar dados atualizados (
  No entanto, às vezes, você talvez queira restaurar o conjunto de dados da cópia de backup. Um exemplo disso pode ocorrer quando você estiver usando valores de incremento automático. Por exemplo, se um salvamento operação não for bem-sucedida, os valores de incremento automático não são redefinidos no conjunto de dados e o conjunto de dados continua a criar valores de incremento automático. Isso deixa uma lacuna na numeração que pode não ser aceitável em seu aplicativo. Em situações em que isso é um problema, o `TableAdapterManager` fornece um `BackupDataSetBeforeUpdate` propriedade que substitui o conjunto de dados existente por uma cópia de backup se a transação falhar.  
   
 > [!NOTE]
->  A cópia de backup está apenas na memória enquanto o `TableAdapterManager.UpdateAll` método está sendo executado. Portanto, não há nenhum acesso programático a esse conjunto de dados de backup porque ele substitui o conjunto de dados original ou sai do escopo assim que o `TableAdapterManager.UpdateAll` método termina a execução.  
+> A cópia de backup está apenas na memória enquanto o `TableAdapterManager.UpdateAll` método está sendo executado. Portanto, não há nenhum acesso programático a esse conjunto de dados de backup porque ele substitui o conjunto de dados original ou sai do escopo assim que o `TableAdapterManager.UpdateAll` método termina a execução.  
   
 ## <a name="modify-the-generated-save-code-to-perform-the-hierarchical-update"></a>Modificar o gerado salvar o código para executar a atualização hierárquica  
  Salve as alterações das tabelas relacionadas de dados no conjunto de dados para o banco de dados chamando o método `TableAdapterManager.UpdateAll` e passando no nome do conjunto de dados que contém as tabelas relacionadas. Por exemplo, execute o método `TableAdapterManager.UpdateAll(NorthwindDataset)` para enviar atualizações de todas as tabelas no NorthwindDataset para o banco de dados back-end.  
@@ -81,7 +81,7 @@ Atualização hierárquica * refere-se ao processo de salvar dados atualizados (
  O código salvar gerado também contém uma linha de código que chama o método `CustomersBindingSource.EndEdit`. Mais especificamente, ele chama o <xref:System.Windows.Forms.BindingSource.EndEdit%2A> método do primeiro <xref:System.Windows.Forms.BindingSource>que é adicionado ao formulário. Em outras palavras, esse código é gerado apenas para a primeira tabela que é arrastada do **fontes de dados** janela para o formulário. A chamada <xref:System.Windows.Forms.BindingSource.EndEdit%2A> confirma as alterações que estão em processo em qualquer controle de associação de dados sendo editado no momento. Portanto, se um controle associado a dados ainda estiver em foco e você clicar no botão **Salvar**, todas as edições pendentes nesse controle serão confirmadas antes da gravação real (o método `TableAdapterManager.UpdateAll`).  
   
 > [!NOTE]
->  O Designer de conjunto de dados só adiciona o `BindingSource.EndEdit` código para a primeira tabela que é arrastada para o formulário. Portanto, é necessário adicionar uma linha de código para chamar o método `BindingSource.EndEdit` para cada tabela relacionada no formulário. Para este passo a passo, isso significa que você precisa adicionar uma chamada ao método `OrdersBindingSource.EndEdit`.  
+> O Designer de conjunto de dados só adiciona o `BindingSource.EndEdit` código para a primeira tabela que é arrastada para o formulário. Portanto, é necessário adicionar uma linha de código para chamar o método `BindingSource.EndEdit` para cada tabela relacionada no formulário. Para este passo a passo, isso significa que você precisa adicionar uma chamada ao método `OrdersBindingSource.EndEdit`.  
   
 #### <a name="to-update-the-code-to-commit-changes-to-the-related-tables-before-saving"></a>Para atualizar o código para confirmar as alterações às tabelas relacionadas antes de salvar  
   
@@ -95,7 +95,7 @@ Atualização hierárquica * refere-se ao processo de salvar dados atualizados (
    Além de confirmar as alterações em uma tabela filho relacionada antes de salvar dados em um banco de dados, você também pode confirmar registros pais recém-criados antes de adicionar novos registros filhos a um conjunto de dados. Em outras palavras, pode ser necessário adicionar o novo registro pai (Cliente) para o conjunto de dados antes que as restrições de chave estrangeira permitam que novos registros filhos (Pedidos) sejam adicionados ao conjunto de dados. Para realizar isso, você pode usar o evento filho `BindingSource.AddingNew`.  
   
 > [!NOTE]
->  Se você precisa confirmar novos registros pais depende do tipo de controle que é usada para associar à fonte de dados. Neste passo a passo, você pode usar controles individuais para associar a tabela pai. Isso exige que o código adicional para confirmar o novo registro pai. Se os registros pai em vez disso, foram exibidos em um controle de vinculação complexa como o <xref:System.Windows.Forms.DataGridView>adicionais nesse <xref:System.Windows.Forms.BindingSource.EndEdit%2A> chamada para o registro pai não seria necessário. Isso porque a funcionalidade subjacente de associação de dados do controle processa a confirmação dos novos registros.  
+> Se você precisa confirmar novos registros pais depende do tipo de controle que é usada para associar à fonte de dados. Neste passo a passo, você pode usar controles individuais para associar a tabela pai. Isso exige que o código adicional para confirmar o novo registro pai. Se os registros pai em vez disso, foram exibidos em um controle de vinculação complexa como o <xref:System.Windows.Forms.DataGridView>adicionais nesse <xref:System.Windows.Forms.BindingSource.EndEdit%2A> chamada para o registro pai não seria necessário. Isso porque a funcionalidade subjacente de associação de dados do controle processa a confirmação dos novos registros.  
   
 #### <a name="to-add-code-to-commit-parent-records-in-the-dataset-before-adding-new-child-records"></a>Para adicionar código para confirmar registros pais no conjunto de dados antes de adicionar novos registros filhos  
   

@@ -18,12 +18,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7cb80c7ad81708724750660560d65cfef722af86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ef14396e681f77eca469f40b2253c8a64296423d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54785043"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422830"
 ---
 # <a name="class-view-and-object-browser-icons"></a>Exibição de classe ícones do Pesquisador de Objetos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ O Modo de Exibição de Classe** e o **Pesquisador de Objetos** exibem ícones q
  Os ícones de sinal a seguir aplicam-se a todos os ícones anteriores e indicam sua acessibilidade.  
   
 > [!NOTE]
->  Se seu projeto estiver incluído em um banco de dados de controle do código-fonte, ícones de sinal adicionais poderão ser exibidos para indicar o status de controle de origem, como check-in ou check-out.  
+> Se seu projeto estiver incluído em um banco de dados de controle do código-fonte, ícones de sinal adicionais poderão ser exibidos para indicar o status de controle de origem, como check-in ou check-out.  
   
 |Ícone|Descrição|  
 |----------|-----------------|  

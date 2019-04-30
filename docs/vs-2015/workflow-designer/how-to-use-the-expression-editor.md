@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: caf878f6ea43a7f041285fb02b2f32175ca862b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc876426c18184c966c277e8dafb5a373da332b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057180"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408379"
 ---
 # <a name="how-to-use-the-expression-editor"></a>Como: Usar o editor de expressão
 O editor de expressão é um controle de [!INCLUDE[wfd1](../includes/wfd1-md.md)] que é usado em muitas atividades de fluxo de trabalho como um meio de inserir e avaliar dessas expressões. O editor de expressão fornece IDE completo que a experiência de edição IntelliSense, que inclui coloração, ParamInfo, squiggles de erro, entre outros recursos. O compilador valida a expressão após está conectado. Se a expressão é inválido, um ícone de erro é exibido. O editor também pode ser aberto como uma **Editor de expressão** caixa de diálogo.  
@@ -32,7 +32,7 @@ O editor de expressão é um controle de [!INCLUDE[wfd1](../includes/wfd1-md.md)
 - Se você fica no editor de expressão em um designer rehosted de fluxo de trabalho, então se comporta como uma caixa de texto. Quando o foco é perdido no designer rehosted de fluxo de trabalho, o editor de expressão parece uma TextBlock normal novamente.  
   
 > [!NOTE]
->  O IntelliSense para o editor de expressão está disponível somente dentro de [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Em [!INCLUDE[vs2010](../includes/vs2010-md.md)] e em cenários rehosted, o compilador valida a expressão após está conectado e o editor de expressão um ícone de erro se a expressão não é válido.  
+> O IntelliSense para o editor de expressão está disponível somente dentro de [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Em [!INCLUDE[vs2010](../includes/vs2010-md.md)] e em cenários rehosted, o compilador valida a expressão após está conectado e o editor de expressão um ícone de erro se a expressão não é válido.  
   
 ### <a name="using-the-expression-editor"></a>Usando o editor de expressão  
   
@@ -41,7 +41,7 @@ O editor de expressão é um controle de [!INCLUDE[wfd1](../includes/wfd1-md.md)
 2. Adicione, por exemplo, a atividade de <xref:System.Activities.Statements.Assign> ao fluxo de trabalho.  
   
     > [!NOTE]
-    >  Várias atividades de fluxo de trabalho têm editores de expressão. A expressão TextBlocks também aparece no designer variável, no designer do argumento, e no designer dinâmico do argumento. A atividade de <xref:System.Activities.Statements.Assign> é usada como um exemplo.  
+    > Várias atividades de fluxo de trabalho têm editores de expressão. A expressão TextBlocks também aparece no designer variável, no designer do argumento, e no designer dinâmico do argumento. A atividade de <xref:System.Activities.Statements.Assign> é usada como um exemplo.  
   
 3. Clique no editor de expressão esquerdo do designer de atividade para atividades de <xref:System.Activities.Statements.Assign> .  
   

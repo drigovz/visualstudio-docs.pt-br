@@ -14,12 +14,12 @@ ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c799d2733c4deca07cdcbe087b1b694f9d1725e6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: fb85bc64164acc09aef6464b69e72b7c6cf46d77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405633"
 ---
 # <a name="binding-keyboard-shortcuts-to-menu-items"></a>Associando atalhos de teclado a itens de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,7 +44,7 @@ Para associar um atalho de teclado a um comando de menu personalizado, adicione 
 4. Tente diferentes combinações de teclas até encontrar uma que não está mapeado.  
   
    > [!NOTE]
-   >  Atalhos de teclado que usam ALT podem abrir um menu e não diretamente, executar um comando. Portanto, o **atalho usado atualmente por** caixa pode estar em branco quando você digita um atalho que inclui ALT. Você pode verificar o atalho não abre um menu ao fechar o **opções** caixa de diálogo e, em seguida, pressionando as teclas.  
+   > Atalhos de teclado que usam ALT podem abrir um menu e não diretamente, executar um comando. Portanto, o **atalho usado atualmente por** caixa pode estar em branco quando você digita um atalho que inclui ALT. Você pode verificar o atalho não abre um menu ao fechar o **opções** caixa de diálogo e, em seguida, pressionando as teclas.  
   
    O procedimento a seguir pressupõe que você tenha um VSPackage existente com um comando de menu. Se você precisar de ajuda para fazer isso, dê uma olhada [criar uma extensão com um comando de Menu](../extensibility/creating-an-extension-with-a-menu-command.md).  
   
@@ -55,7 +55,7 @@ Para associar um atalho de teclado a um comando de menu personalizado, adicione 
 2. Criar vazio `<KeyBindings>` seção após o `<Commands>` se ele não ainda estiver presente.  
   
    > [!WARNING]
-   >  Para obter mais informações sobre associações de teclas, consulte [Keybinding](../extensibility/keybinding-element.md).  
+   > Para obter mais informações sobre associações de teclas, consulte [Keybinding](../extensibility/keybinding-element.md).  
   
     No `<KeyBindings>` seção, crie um `<KeyBinding>` entrada.  
   

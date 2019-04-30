@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d7a486ea4a448cb30b64631589f003854e8b1b40
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: c9d005ef8bade9f83027c216d875d24aad602449
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56644387"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418350"
 ---
 # <a name="how-to-add-a-deleter-method"></a>Como: Adicionar um método Deleter
   Você pode habilitar um usuário final excluir um registro de dados de uma lista externa em um site do SharePoint, adicionando um método Deleter ao modelo. Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -58,10 +58,10 @@ ms.locfileid: "56644387"
 5. Adicione código ao método de agente de exclusão para excluir um registro. O exemplo a seguir exclui um item de linha de um pedido de vendas usando o banco de dados de exemplo AdventureWorks para SQL Server.
 
    > [!NOTE]
-   >  O método neste exemplo usa dois parâmetros de entrada.
+   > O método neste exemplo usa dois parâmetros de entrada.
 
    > [!NOTE]
-   >  Substitua o valor da `ServerName` campo com o nome do seu servidor.
+   > Substitua o valor da `ServerName` campo com o nome do seu servidor.
 
     [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
     [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]

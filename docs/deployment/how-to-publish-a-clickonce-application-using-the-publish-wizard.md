@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 5937a54c43cf972dcebb25c12cddf6b76b2cb4bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2eac5778320b45b841cdff2c8d95f6a591386712
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406731"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Como: Publicar um aplicativo ClickOnce usando o assistente de publicação
 Para disponibilizar um aplicativo ClickOnce para os usuários, você deve publicá-lo para um compartilhamento de arquivo ou caminho, servidor FTP ou mídia removível. É possível publicar o aplicativo usando o Assistente de Publicação; as propriedades adicionais relacionadas à publicação estão disponíveis na página **Publicar** do **Designer de Projeto**. Para obter mais informações, consulte [aplicativos ClickOnce publicação](../deployment/publishing-clickonce-applications.md).
@@ -80,7 +80,7 @@ Antes de executar o Assistente de Publicação, configure as propriedades de pub
 4. Na página **Como os usuários farão a instalação do aplicativo?**, clique em **De um CD-ROM ou DVD-ROM** e clique em **Avançar**.
 
    > [!NOTE]
-   >  Se desejar executar a instalação automaticamente quando o CD-ROM for inserido na unidade, abra a página **Publicar** no **Designer de Projeto** e clique no botão **Opções** e, em seguida, no assistente **Opções de Publicação**, selecione **Em instalações com CD, o programa de instalação será iniciado automaticamente quando o CD for inserido**.
+   > Se desejar executar a instalação automaticamente quando o CD-ROM for inserido na unidade, abra a página **Publicar** no **Designer de Projeto** e clique no botão **Opções** e, em seguida, no assistente **Opções de Publicação**, selecione **Em instalações com CD, o programa de instalação será iniciado automaticamente quando o CD for inserido**.
 
 5. Ao distribuir o aplicativo em CD-ROM, você poderá desejar fornecer atualizações a partir de um site da Web. Na página **Em que local o aplicativo verificará atualizações?**, escolha uma opção de atualização:
 
@@ -95,7 +95,7 @@ Antes de executar o Assistente de Publicação, configure as propriedades de pub
     O status da publicação é exibido na área de notificação de status.
 
    > [!NOTE]
-   >  Após a publicação estar concluída, será necessário utilizar um CD-Rewriter ou DVD-Rewriter para copiar os arquivos do local especificado na etapa 3 para a mídia de CD-ROM ou DVD-ROM.
+   > Após a publicação estar concluída, será necessário utilizar um CD-Rewriter ou DVD-Rewriter para copiar os arquivos do local especificado na etapa 3 para a mídia de CD-ROM ou DVD-ROM.
 
 ## <a name="see-also"></a>Consulte também
 

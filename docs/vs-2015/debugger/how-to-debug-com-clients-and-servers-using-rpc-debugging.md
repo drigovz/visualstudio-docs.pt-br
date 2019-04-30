@@ -26,12 +26,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2b40e7814fb809298c71d0078e644c12bd5a9a9e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fda2a10cd559f940ab87e5cc8c26f5b47dbec194
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064954"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384031"
 ---
 # <a name="how-to-debug-com-clients-and-servers-using-rpc-debugging"></a>Como: Depurar clientes e servidores COM usando a depuração RPC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,10 +49,10 @@ Você pode usar a depuração de chamada de procedimento remoto (RPC) para depur
 4. Marque a caixa de seleção **Depuração RPC**.  
   
     > [!NOTE]
-    >  Para depurar chamadas de RPC, você deve ter privilégios de Administrador ou Usuário avançado.  
+    > Para depurar chamadas de RPC, você deve ter privilégios de Administrador ou Usuário avançado.  
   
     > [!NOTE]
-    >  A entrada de RPC em um servidor remoto que executa o Microsoft Windows Vista só funcionará se um depurador nativo for anexado ao servidor remoto. Caso contrário, a chamada de RPC apresentará falha sem uma mensagem de erro. De outro modo, a chamada de RPC será concluída, mas a depuração da chamada de RPC não funcionará.  
+    > A entrada de RPC em um servidor remoto que executa o Microsoft Windows Vista só funcionará se um depurador nativo for anexado ao servidor remoto. Caso contrário, a chamada de RPC apresentará falha sem uma mensagem de erro. De outro modo, a chamada de RPC será concluída, mas a depuração da chamada de RPC não funcionará.  
   
 ## <a name="see-also"></a>Consulte também  
  [Depuração de servidor e contêiner COM](../debugger/com-server-and-container-debugging.md)   

@@ -9,11 +9,11 @@ ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
 ms.openlocfilehash: 22db75783734a695ded937d8e6b93431568acd5b
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59736841"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62902845"
 ---
 No dispositivo remoto ou servidor que você deseja depurar na, em vez de computador do Visual Studio, baixe e instale a versão correta das ferramentas remotas nos links na tabela a seguir.
 

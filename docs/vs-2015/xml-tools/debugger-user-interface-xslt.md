@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1af3b47b2d7c897b36556f0ebac105088cdc9b75
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f2920f73560e622c4336a1eedc23e5034fa8ff91
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929788"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417445"
 ---
 # <a name="debugger-user-interface-xslt"></a>Interface de usuário do depurador (XSLT)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Este tópico descreve as janelas e caixas de diálogo do depurador. Discute some
  A lista de tarefas inclui todos os erros que ocorrem nos blocos de script no arquivo fonte.  
   
 > [!NOTE]
->  O depurador XSLT não tem nenhum aviso, o que nunca aparece na lista de tarefas.  
+> O depurador XSLT não tem nenhum aviso, o que nunca aparece na lista de tarefas.  
   
 ## <a name="breakpoints-window"></a>A janela de pontos de interrupção  
  A janela de pontos de interrupção mostra os pontos de interrupção definidos no projeto atual. Se um ponto de interrupção é adicionado quando a janela está em modo de exibição, a janela é atualizado automaticamente para mostrar o novo ponto de interrupção.  

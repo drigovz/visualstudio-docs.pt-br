@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 794b9605664315e47e7ae2a778c76652c420a7f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30211d773036bbe12c0e807e3be18f13793360b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066384"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388630"
 ---
 # <a name="hlsl-shader-debugger"></a>Depurador de sombreador HLSL
 O depurador HLSL no analisador de gráficos do Visual Studio ajuda você a entender como o código do sombreador HLSL opera em condições reais do seu aplicativo.
@@ -55,7 +55,7 @@ O depurador HLSL no analisador de gráficos do Visual Studio ajuda você a enten
 2. Abaixo do título do estágio de pipeline, escolha **Iniciar Depuração**, que aparece como uma pequena seta verde.
 
     > [!NOTE]
-    >  Esse ponto de entrada no depurador HLSL depura apenas o primeiro thread do sombreador para o estágio correspondente, isto é, o primeiro vértice ou pixel que é processado. Você pode usar o histórico de Pixel para acessar outros threads dos estágios desse sombreador.
+    > Esse ponto de entrada no depurador HLSL depura apenas o primeiro thread do sombreador para o estágio correspondente, isto é, o primeiro vértice ou pixel que é processado. Você pode usar o histórico de Pixel para acessar outros threads dos estágios desse sombreador.
 
 #### <a name="to-start-the-hlsl-debugger-from-the-graphics-pixel-history"></a>Para iniciar o depurador HLSL do Histórico de Pixel de Gráficos
 
@@ -68,7 +68,7 @@ O depurador HLSL no analisador de gráficos do Visual Studio ajuda você a enten
     À direita do sombreador escolhido, escolha **Iniciar Depuração**, que aparece como uma pequena seta verde.
 
    > [!NOTE]
-   >  Esse ponto de entrada no depurador HLSL depura o thread do sombreador de pixel, que corresponde à chamada de desenho, ao primitivo e ao pixel que você escolheu, ou os threads do sombreador de vértices, cujos resultados são interpolados pela chamada de desenho, pelo primitivo e pelo pixel que você escolheu. No caso de sombreadores de vértices, você ainda pode refinar o ponto de entrada para um vértice específico expandindo os detalhes do sombreador de vértices.
+   > Esse ponto de entrada no depurador HLSL depura o thread do sombreador de pixel, que corresponde à chamada de desenho, ao primitivo e ao pixel que você escolheu, ou os threads do sombreador de vértices, cujos resultados são interpolados pela chamada de desenho, pelo primitivo e pelo pixel que você escolheu. No caso de sombreadores de vértices, você ainda pode refinar o ponto de entrada para um vértice específico expandindo os detalhes do sombreador de vértices.
 
    Para obter exemplos sobre como usar o depurador HLSL para depurar erros do sombreador, consulte [exemplos](graphics-diagnostics-examples.md) ou explicações passo a passo vinculadas na seção Consulte também.
 

@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29659af4fa05c6556656a0a11f13377119f9df9e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 86c69070a6c954ccf01581690e11237fea4e52c7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612901"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406762"
 ---
 # <a name="clickonce-security-and-deployment"></a>Segurança e implantação do ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] é uma tecnologia de implantação que permite que você crie aplicativos AutoAtualizáveis baseados em Windows que podem ser instalados e executados com interação mínima do usuário. [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] fornece suporte completo para publicar e atualizar aplicativos implantados com a tecnologia ClickOnce, se você tiver desenvolvido seus projetos com o Visual Basic e Visual c#. Para obter informações sobre como implantar aplicativos do Visual C++, consulte [implantação de ClickOnce para aplicativos do Visual C++](/cpp/ide/clickonce-deployment-for-visual-cpp-applications).
@@ -54,13 +54,13 @@ ms.locfileid: "56612901"
  Segurança de acesso de código ajuda a limitar o acesso que o código tem a recursos protegidos. Na maioria dos casos, você pode escolher as zonas da Internet ou Intranet Local para limitar as permissões. Use o **segurança** página na **ProjectDesigner** para solicitar a zona apropriada para o aplicativo. Você também pode depurar aplicativos com permissões restritas para emular a experiência do usuário final. Para obter mais informações, consulte [Segurança de acesso do código para aplicativos ClickOnce](../deployment/code-access-security-for-clickonce-applications.md).
 
 ### <a name="clickonce-trust-prompt"></a>Solicitação de confiança do ClickOnce
- Se o aplicativo solicitar mais permissões do que permite que a zona, o usuário final pode ser solicitado a tomar uma decisão de confiança. O usuário final pode decidir se os aplicativos ClickOnce, como aplicativos do Windows Forms, aplicativos do Windows Presentation Foundation, aplicativos de console, aplicativos de navegador XAML e soluções do Office são confiáveis para executar. Para obter mais informações, consulte [como: configurar o comportamento do prompt confiável ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
+ Se o aplicativo solicitar mais permissões do que permite que a zona, o usuário final pode ser solicitado a tomar uma decisão de confiança. O usuário final pode decidir se os aplicativos ClickOnce, como aplicativos do Windows Forms, aplicativos do Windows Presentation Foundation, aplicativos de console, aplicativos de navegador XAML e soluções do Office são confiáveis para executar. Para obter mais informações, confira [Como: Configurar o comportamento do prompt confiável do ClickOnce](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md).
 
 ## <a name="how-clickonce-deployment-works"></a>Como funciona a implantação do ClickOnce
  O núcleo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] arquitetura de implantação se baseia em dois arquivos de manifesto XML: um manifesto de aplicativo e um manifesto de implantação. Os arquivos são usados para descrever onde os aplicativos ClickOnce são instalados a partir, como eles são atualizados e quando eles são atualizados.
 
 ### <a name="publish-clickonce-applications"></a>Publicar aplicativos ClickOnce
- O manifesto do aplicativo descreve o próprio aplicativo. Isso inclui os assemblies, as dependências e os arquivos que compõem o aplicativo, as permissões necessárias e o local onde as atualizações estarão disponíveis. Os desenvolvedores de aplicativo criam o manifesto do aplicativo usando o Assistente de publicação no Visual Studio ou o Manifest Generation and Editing Tool (*Mage.exe*) na [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Para obter mais informações, consulte [como: publicar um aplicativo ClickOnce usando o Assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
+ O manifesto do aplicativo descreve o próprio aplicativo. Isso inclui os assemblies, as dependências e os arquivos que compõem o aplicativo, as permissões necessárias e o local onde as atualizações estarão disponíveis. Os desenvolvedores de aplicativo criam o manifesto do aplicativo usando o Assistente de publicação no Visual Studio ou o Manifest Generation and Editing Tool (*Mage.exe*) na [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)]. Para obter mais informações, confira [Como: Publicar um aplicativo ClickOnce usando o assistente de publicação](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md).
 
  O manifesto de implantação descreve como o aplicativo é implantado. Isso inclui o local do manifesto do aplicativo e a versão do aplicativo que os clientes devem ser executados.
 
@@ -75,13 +75,13 @@ ms.locfileid: "56612901"
  O aplicativo pode ser adicionado para o usuário **inicie** menu e o **adicionar ou remover programas** grupo o **painel de controle**. Ao contrário de outras tecnologias de implantação, nada é adicionado a **arquivos de programas** pasta ou no registro e não há direitos administrativos são necessários para instalação
 
 > [!NOTE]
->  Também é possível impedir que o aplicativo que está sendo adicionado para o **inicie** menu e **adicionar ou remover programas** grupo, em vigor tornando-se comportam como um aplicativo Web. Para obter mais informações, consulte [escolher uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
+> Também é possível impedir que o aplicativo que está sendo adicionado para o **inicie** menu e **adicionar ou remover programas** grupo, em vigor tornando-se comportam como um aplicativo Web. Para obter mais informações, consulte [escolher uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md).
 
 ### <a name="update-clickonce-applications"></a>Atualizar os aplicativos ClickOnce
  Quando os desenvolvedores de aplicativos criam uma versão atualizada do aplicativo, eles geram um novo manifesto de aplicativo e copiar arquivos para um local de implantação — normalmente uma pasta irmã para a pasta de implantação do aplicativo original. O administrador atualiza o manifesto de implantação para que ele aponte para a localização da nova versão do aplicativo.
 
 > [!NOTE]
->  O **Assistente de publicação** no Visual Studio pode ser usado para executar essas etapas.
+> O **Assistente de publicação** no Visual Studio pode ser usado para executar essas etapas.
 
  Além da localização da implantação, o manifesto de implantação também contém uma localização de atualização (uma página da Web ou um compartilhamento de arquivo na rede), em que o aplicativo verifica a existência de versões atualizadas. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] **Publicar** propriedades são usadas para especificar quando e com que frequência o aplicativo deve verificar se há atualizações. Comportamento de atualização pode ser especificado no manifesto de implantação ou ele pode ser apresentado como opções ao usuário na interface do usuário do aplicativo por meio do [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] APIs. Além disso, as propriedades **Publish** podem ser empregadas para tornar as atualizações obrigatórias ou para a reversão para uma versão anterior. Para obter mais informações, confira [Escolhendo uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md).
 

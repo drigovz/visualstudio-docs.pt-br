@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c24126f18cc55bdddcda97a750b1f443bb8b4d8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e52acc18aa18873076df3d02071616c0399b1f33
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407125"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>Como: Habilitar configurações de segurança do ClickOnce
 Segurança de acesso do código para aplicativos ClickOnce deve ser habilitada para publicar o aplicativo. Isso é feito automaticamente quando você publica um aplicativo usando o Assistente de publicação.
@@ -41,7 +41,7 @@ Segurança de acesso do código para aplicativos ClickOnce deve ser habilitada p
      Agora você pode personalizar as configurações de segurança para seu aplicativo na página de segurança.
 
     > [!NOTE]
-    >  Essa caixa de seleção é selecionada automaticamente cada vez que o aplicativo é publicado com o **publicar** assistente.
+    > Essa caixa de seleção é selecionada automaticamente cada vez que o aplicativo é publicado com o **publicar** assistente.
 
 ### <a name="to-disable-clickonce-security-settings"></a>Para desabilitar as configurações de segurança do ClickOnce
 
@@ -54,7 +54,7 @@ Segurança de acesso do código para aplicativos ClickOnce deve ser habilitada p
      O aplicativo será executado com as configurações de segurança de confiança total; todas as configurações de **segurança** página será ignorada.
 
     > [!NOTE]
-    >  Cada vez que o aplicativo é publicado com o Assistente de publicação, essa caixa de seleção será selecionada; Você deverá desmarcá-la novamente depois de cada publicação bem-sucedida.
+    > Cada vez que o aplicativo é publicado com o Assistente de publicação, essa caixa de seleção será selecionada; Você deverá desmarcá-la novamente depois de cada publicação bem-sucedida.
 
 ## <a name="see-also"></a>Consulte também
 - [Proteger aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)

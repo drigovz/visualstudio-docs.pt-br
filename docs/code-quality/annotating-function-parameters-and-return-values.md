@@ -125,12 +125,12 @@ ms.author: mblome
 manager: wpickett
 ms.workload:
 - multiple
-ms.openlocfilehash: bda668e457cd144d868680f2dc009580c34ea81b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ace5afbf1c587a2c54c4221469cb7be0d6487c9a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109850"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388555"
 ---
 # <a name="annotating-function-parameters-and-return-values"></a>Anotando parâmetros de função e valores de retorno
 Este artigo descreve os usos comuns de anotações para parâmetros de função simples — escalares e ponteiros para estruturas e classes — e a maioria dos tipos de buffers.  Este artigo também mostra padrões comuns de uso para anotações. Para anotações adicionais que estão relacionadas a funções, consulte [anotando o comportamento da função](../code-quality/annotating-function-behavior.md)
@@ -315,7 +315,7 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
   Na tabela a seguir, as subcadeias de caracteres adicionais são inseridas no nome da anotação para qualificar ainda mais o significado da anotação.  Diversas subcadeias de caracteres são `_z`, `_COM_`, `_buffer_`, `_bytebuffer_`, e `_to_`.
 
 > [!IMPORTANT]
->  Se a interface que você estiver fazendo anotações é COM, use o formulário COM dessas anotações. Não use anotações COM qualquer outra interface de tipo.
+> Se a interface que você estiver fazendo anotações é COM, use o formulário COM dessas anotações. Não use anotações COM qualquer outra interface de tipo.
 
  **Descrições e anotações**
 
@@ -471,7 +471,7 @@ Este artigo descreve os usos comuns de anotações para parâmetros de função 
      O parâmetro, o campo ou o resultado está no intervalo (inclusivo) de `low` para `hi`.  Equivalente a `_Satisfies_(_Curr_ >= low && _Curr_ <= hi)` que é aplicado ao objeto anotado junto com as condições de estado pré ou pós-estaduais apropriados.
 
     > [!IMPORTANT]
-    >  Embora os nomes contêm "in" e "out", a semântica dos `_In_` e `_Out_` fazer **não** se aplicam a essas anotações.
+    > Embora os nomes contêm "in" e "out", a semântica dos `_In_` e `_Out_` fazer **não** se aplicam a essas anotações.
 
 - `_Pre_equal_to_(expr)`
 

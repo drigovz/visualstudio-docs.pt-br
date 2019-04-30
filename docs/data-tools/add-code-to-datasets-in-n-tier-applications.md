@@ -13,12 +13,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: dbd65c5247a82f2a58a57e50402ecde5d330cc9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a66250c9d376962bfef2db6b563070696fd33346
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402870"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>Adicionar código a conjuntos de dados em aplicativos de n camadas
 Você pode estender a funcionalidade de um conjunto de dados, criando um arquivo de classe parcial para o conjunto de dados e adicionando código a ele (em vez de adicionar código para o *DatasetName*. Arquivo do DataSet). Classes parciais permitem codificar uma classe específica a ser dividido entre vários arquivos físicos. Para obter mais informações, consulte [parcial](/dotnet/visual-basic/language-reference/modifiers/partial) ou [classes e métodos parciais](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
@@ -28,10 +28,10 @@ O código que define um conjunto de dados é gerado sempre que forem feitas alte
 Por padrão, após você separar o conjunto de dados e o código TableAdapter, o resultado é um arquivo de classe distintas em cada projeto. O projeto original tem um arquivo chamado *DatasetName.Designer.vb* (ou *DatasetName.Designer.cs*) que contém o código do TableAdapter. O projeto que é designado na **projeto Dataset** propriedade tem um arquivo chamado *DatasetName.DataSet.Designer.vb* (ou *DatasetName.DataSet.Designer.cs*) . Esse arquivo contém o código do conjunto de dados.
 
 > [!NOTE]
->  Quando você separa os conjuntos de dados e TableAdapters (Configurando o **projeto DataSet** propriedade), classes parciais do conjunto de dados existentes no projeto não serão movidas automaticamente. Classes parciais do conjunto de dados existente devem ser movidas manualmente para o projeto de conjunto de dados.
+> Quando você separa os conjuntos de dados e TableAdapters (Configurando o **projeto DataSet** propriedade), classes parciais do conjunto de dados existentes no projeto não serão movidas automaticamente. Classes parciais do conjunto de dados existente devem ser movidas manualmente para o projeto de conjunto de dados.
 
 > [!NOTE]
->  Quando o código de validação precisa ser adicionado, o conjunto de dados tipado fornece a funcionalidade para gerar <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> manipuladores de eventos. Para obter mais informações, consulte [adicionar validação a um conjunto de dados de n camadas](../data-tools/add-validation-to-an-n-tier-dataset.md).
+> Quando o código de validação precisa ser adicionado, o conjunto de dados tipado fornece a funcionalidade para gerar <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> manipuladores de eventos. Para obter mais informações, consulte [adicionar validação a um conjunto de dados de n camadas](../data-tools/add-validation-to-an-n-tier-dataset.md).
 
 ## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>Para adicionar código a conjuntos de dados em aplicativos de n camadas
 

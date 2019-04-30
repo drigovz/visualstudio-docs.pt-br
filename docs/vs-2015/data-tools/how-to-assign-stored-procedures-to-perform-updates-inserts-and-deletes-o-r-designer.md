@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84aa3400eb6b64e8904d95e0fce7b43ae9351ad8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1b5834e00cfaf43d1e5230ffbb221dbd5044d687
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386833"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>Como: Atribuir procedimentos armazenados para executar atualizações, inserções e exclusões (Designer Relacional de Objetos)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,10 +22,10 @@ ms.locfileid: "60060859"
 Os procedimentos armazenados podem ser adicionados ao Designer Relacional de Objetos e executados como métodos típicos do <xref:System.Data.Linq.DataContext>. Eles também podem ser usados para substituir o padrão [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] comportamento de tempo de execução que executa inserções, atualizações e exclusões quando alterações são salvas de classes de entidade para um banco de dados (por exemplo, ao chamar o <xref:System.Data.Linq.DataContext.SubmitChanges%2A> método).  
   
 > [!NOTE]
->  Se seu procedimento armazenado retornar valores que precisem ser reenviados ao cliente (por exemplo, valores calculados no procedimento armazenado), crie parâmetros de saída em seus procedimentos armazenados. Se você não pode usar parâmetros de saída, escreva uma implementação de método parcial em vez de depender das substituições geradas pelo Designer Relacional de Objetos. Os membros mapeados para os valores gerados por banco de dados precisam ser definidos para valores apropriados após a conclusão com êxito de operações INSERT ou UPDATE. Para obter mais informações, consulte [responsabilidades do desenvolvedor em Substituir padrão comportamento](http://msdn.microsoft.com/library/c6909ddd-e053-46a8-980c-0e12a9797be1).  
+> Se seu procedimento armazenado retornar valores que precisem ser reenviados ao cliente (por exemplo, valores calculados no procedimento armazenado), crie parâmetros de saída em seus procedimentos armazenados. Se você não pode usar parâmetros de saída, escreva uma implementação de método parcial em vez de depender das substituições geradas pelo Designer Relacional de Objetos. Os membros mapeados para os valores gerados por banco de dados precisam ser definidos para valores apropriados após a conclusão com êxito de operações INSERT ou UPDATE. Para obter mais informações, consulte [responsabilidades do desenvolvedor em Substituir padrão comportamento](http://msdn.microsoft.com/library/c6909ddd-e053-46a8-980c-0e12a9797be1).  
   
 > [!NOTE]
->  O [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] manipula automaticamente os valores gerados por banco de dados para colunas de identidade (incremento automático), rowguidcol (GUID gerado por banco de dados) e carimbo de data/hora. Os valores gerados pelo banco de dados em outros tipos de coluna resultarão inesperadamente em um valor nulo. Para retornar os valores gerados pelo banco de dados, você deve definir manualmente <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> à `true` e <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> para um dos seguintes: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, ou <xref:System.Data.Linq.Mapping.AutoSync>.  
+> O [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)] manipula automaticamente os valores gerados por banco de dados para colunas de identidade (incremento automático), rowguidcol (GUID gerado por banco de dados) e carimbo de data/hora. Os valores gerados pelo banco de dados em outros tipos de coluna resultarão inesperadamente em um valor nulo. Para retornar os valores gerados pelo banco de dados, você deve definir manualmente <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> à `true` e <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> para um dos seguintes: <xref:System.Data.Linq.Mapping.AutoSync>, <xref:System.Data.Linq.Mapping.AutoSync>, ou <xref:System.Data.Linq.Mapping.AutoSync>.  
   
 ## <a name="configuring-the-update-behavior-of-an-entity-class"></a>Configurando o comportamento de atualização de uma classe de entidade  
  Por padrão, a lógica para atualizar um banco de dados (inserções, atualizações e exclusões), com alterações que foram feitas nos dados em classes de entidade [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)], é fornecida em tempo de execução pelo [!INCLUDE[vbtecdlinq](../includes/vbtecdlinq-md.md)]. O tempo de execução cria padrão de comandos Insert, Update e Delete com base no esquema da tabela (a coluna e informações de chave primária). Quando o comportamento padrão não for desejado, você pode configurar o comportamento de atualização atribuindo procedimentos armazenados específicos para executar as inserções, atualizações e exclusões necessárias para manipular os dados em sua tabela. Você também pode fazer isso quando o comportamento padrão não é gerado, por exemplo, quando as classes de entidade mapeiam para as exibições. Finalmente, você pode substituir o comportamento de atualização padrão quando o banco de dados exige o acesso à tabela através de procedimentos armazenados.  
@@ -55,12 +55,12 @@ Os procedimentos armazenados podem ser adicionados ao Designer Relacional de Obj
 9. Inspecione a lista de **Argumentos de Método** e de **Propriedades de Classe** para verificar se **Argumentos de Método** é mapeado para **Propriedades de Classe** apropriado. Mapeie os argumentos de método originais (original _*ArgumentName*) para as propriedades originais (*PropertyName* (Original)) para os comandos Update e Delete.  
   
     > [!NOTE]
-    >  Por padrão, os argumentos do método são mapeados para as propriedades de classe quando os nomes coincidem. Se os nomes de propriedade forem modificados, não haverá mais correspondência entre a tabela e a classe de entidade. Talvez seja necessário selecionar a propriedade de classe equivalente para mapeamento se o designer não puder determinar o mapeamento correto.  
+    > Por padrão, os argumentos do método são mapeados para as propriedades de classe quando os nomes coincidem. Se os nomes de propriedade forem modificados, não haverá mais correspondência entre a tabela e a classe de entidade. Talvez seja necessário selecionar a propriedade de classe equivalente para mapeamento se o designer não puder determinar o mapeamento correto.  
   
 10. Clique em **OK** ou em **Aplicar**.  
   
     > [!NOTE]
-    >  Você pode continuar a configurar o comportamento para cada combinação de classe/comportamento quando você clica em **Aplicar** depois de cada alteração. Se você alterar a classe ou o comportamento antes de clicar em **aplicar**, uma caixa de diálogo de aviso fornecendo uma oportunidade de aplicar as alterações serão exibidas.  
+    > Você pode continuar a configurar o comportamento para cada combinação de classe/comportamento quando você clica em **Aplicar** depois de cada alteração. Se você alterar a classe ou o comportamento antes de clicar em **aplicar**, uma caixa de diálogo de aviso fornecendo uma oportunidade de aplicar as alterações serão exibidas.  
   
      Para reverter para usar a lógica de tempo de execução padrão para atualizações, clique no botão de reticências ao lado de Insert, Update, ou excluir na **propriedades** janela e, em seguida, selecione **usar tempo de execução** no  **Configurar o comportamento de** caixa de diálogo.  
   

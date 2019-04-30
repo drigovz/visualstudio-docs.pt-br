@@ -9,12 +9,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6971da256d638b8248e49235a4d8d3ded71dc10e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c5b97247ebf16a588e8f28b4b4e6f7c512566226
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386775"
 ---
 # <a name="how-to-create-an-association-relationship-between-linq-to-sql-classes-or-designer"></a>Como: Criar uma associação (relação) entre classes LINQ to SQL (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ As associações entre classes de entidade no [!INCLUDE[vbtecdlinq](../includes/
  Você deve selecionar uma classe pai e uma classe filho ao usar a caixa de diálogo **Editor de Associação** para criar uma associação. A classe pai é a classe de entidade que contém a chave primária; a classe filho é a classe de entidade que contém a chave estrangeira. Por exemplo, se as classes de entidade foram criadas que mapeiam para as tabelas Customers e Orders do Northwind, a classe Customer seria a classe pai e a classe Order seria a classe filho.  
   
 > [!NOTE]
->  Quando você arrasta tabelas do **Gerenciador de servidores**/**Database Explorer** até a [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]), associações são criadas automaticamente com base em existente relações de chave estrangeira no banco de dados.  
+> Quando você arrasta tabelas do **Gerenciador de servidores**/**Database Explorer** até a [!INCLUDE[vs_ordesigner_long](../includes/vs-ordesigner-long-md.md)] ([!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)]), associações são criadas automaticamente com base em existente relações de chave estrangeira no banco de dados.  
   
  Depois de criar uma associação, quando você seleciona a associação no Designer relacional de objetos, há algumas propriedades configuráveis na **propriedades** janela. (A associação é a linha entre as classes relacionadas.) A tabela a seguir fornece descrições para as propriedades de uma associação.  
   

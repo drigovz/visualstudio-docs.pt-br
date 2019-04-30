@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f64a7f7c018863e85900da2b09e018d29da4dfe
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: d5174d00593b44d51b5628851039b1d0a37753c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922869"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387489"
 ---
 # <a name="ca1045-do-not-pass-types-by-reference"></a>CA1045: Não passar tipos por referência
 
@@ -43,7 +43,7 @@ ms.locfileid: "55922869"
  Embora os valores de retorno são comuns e usadas intensamente, a aplicação correta de `out` e `ref` parâmetros requer habilidades de codificação e design intermediário. Os arquitetos de bibliotecas que projetam para um público em geral não deve esperar que os usuários dominem o trabalho com `out` ou `ref` parâmetros.
 
 > [!NOTE]
->  Quando você trabalha com parâmetros que são estruturas grandes, os recursos adicionais que são necessárias para copiar essas estruturas pode causar um efeito de desempenho quando você passa por valor. Nesses casos, você pode considerar o uso `ref` ou `out` parâmetros.
+> Quando você trabalha com parâmetros que são estruturas grandes, os recursos adicionais que são necessárias para copiar essas estruturas pode causar um efeito de desempenho quando você passa por valor. Nesses casos, você pode considerar o uso `ref` ou `out` parâmetros.
 
 ## <a name="how-to-fix-violations"></a>Como corrigir violações
  Para corrigir uma violação dessa regra que é causado por um tipo de valor, fazer com que o método retornar o objeto como seu valor de retorno. Se o método deve retornar vários valores, recrie-o para uma única instância de um objeto que contém os valores de retorno.

@@ -10,12 +10,12 @@ ms.assetid: 69e8f78e-bcf1-46cb-8866-7de37d134997
 caps.latest.revision: 28
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6f2ed846e8644f5f6e391d9c850016721186021e
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0f8ac7b6cea0896c597dc46b8b5edd7072069840
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386029"
 ---
 # <a name="modifying-the-isolated-shell-by-using-the-pkgdef-file"></a>Modificar o Shell isolado usando o. Arquivo Pkgdef
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "59663960"
 O arquivo. pkgdef dá suporte a configurações que você pode usar para personalizar um aplicativo de shell isolado. Ele especifica valores que são criados quando um aplicativo é instalado em um computador e que são referenciados pelo shell do Visual Studio quando ele inicia o aplicativo. As configurações são organizadas no arquivo com base nas chaves de registro aplicável.  
 
 > [!WARNING]
->  Observe que os arquivos. pkgdef que não são declarados no arquivo .vsixmanifest do VSPackage não sejam verificados quando o Visual Studio é iniciado.  
+> Observe que os arquivos. pkgdef que não são declarados no arquivo .vsixmanifest do VSPackage não sejam verificados quando o Visual Studio é iniciado.  
 
  O arquivo. pkgdef contém seções que são identificadas por uma chave, tanto `[$RootKey$]` ou `[$RootKey$\` *subchave*`]`, onde $ $RootKey é a chave de raiz para o aplicativo.  
 
@@ -53,7 +53,7 @@ O arquivo. pkgdef dá suporte a configurações que você pode usar para persona
  As seções a seguir descrevem os valores de registro específicos que afetam o comportamento do shell do Visual Studio no modo isolado. Você também pode definir valores de registro adicionais para o aplicativo nesse arquivo.  
 
 > [!NOTE]
->  Se uma configuração não for fornecida no arquivo. pkgdef, nenhuma entrada correspondente é feita no registro.  
+> Se uma configuração não for fornecida no arquivo. pkgdef, nenhuma entrada correspondente é feita no registro.  
 
 ## <a name="settings"></a>Configurações  
  A tabela a seguir descreve os valores definidos em [$$RootKey].  

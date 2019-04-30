@@ -27,12 +27,12 @@ caps.latest.revision: 23
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 92718187fd8c83eb20ce8b39d323d60434f5f48f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2a55b78cfa962abe4a1eecf778be9cdc6de3aa6e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065747"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384062"
 ---
 # <a name="mfc-debugging-techniques"></a>Técnicas de depuração MFC
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -236,10 +236,10 @@ Total allocations: 67 bytes
  Em um programa MFC, você pode usar [CMemoryState::DumpAllObjectsSince](http://msdn.microsoft.com/library/a7f89034-bca4-4786-88d5-1571a5425ab2) para despejar uma descrição de todos os objetos no heap que não foram desalocados. `DumpAllObjectsSince` Despeja todos os objetos alocados desde o último [CMemoryState::Checkpoint](http://msdn.microsoft.com/library/b2d80fea-3d21-457e-816d-b035909bf21a). Se nenhuma chamada de `Checkpoint` tiver ocorrido, o `DumpAllObjectsSince` despejará todos os objetos e não objetos atualmente na memória.  
   
 > [!NOTE]
->  Antes de usar o despejo de objeto do MFC, você deverá [habilitar o rastreamento de diagnóstico](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics).  
+> Antes de usar o despejo de objeto do MFC, você deverá [habilitar o rastreamento de diagnóstico](../debugger/mfc-debugging-techniques.md#BKMK_Enabling_memory_diagnostics).  
   
 > [!NOTE]
->  O MFC despeja automaticamente todos os objetos vazados quando o programa sair, portanto você não precisará criar o código para despejar objetos nesse momento.  
+> O MFC despeja automaticamente todos os objetos vazados quando o programa sair, portanto você não precisará criar o código para despejar objetos nesse momento.  
   
  O código a seguir testa um vazamento de memória comparando dois estados de memória e despeja todos os objetos se um vazamento for detectado.  
   

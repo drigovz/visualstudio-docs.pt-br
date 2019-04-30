@@ -1,5 +1,5 @@
 ---
-title: 'Como: parar alterações de código | Microsoft Docs'
+title: 'Como: Parar alterações de código | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 661b18ef061a6bfdb2bcbe68f30463f39d08efe7
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 33bc24aaea0f24d592a897bcc70f553cfaab9667
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700426"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388356"
 ---
-# <a name="how-to-stop-code-changes"></a>Como parar as alterações de código
+# <a name="how-to-stop-code-changes"></a>Como: Parar alterações de código
 Quando Editar e Continuar estiver no processo de aplicar alterações de código, você poderá interromper a operação.
 
 > [!CAUTION]
->  Parar alterações de código em código gerenciado pode produzir resultados inesperados. Aplicar alterações a código gerenciado é geralmente um processo rápido, então raramente há necessidade de parar alterações de código em código gerenciado.
+> Parar alterações de código em código gerenciado pode produzir resultados inesperados. Aplicar alterações a código gerenciado é geralmente um processo rápido, então raramente há necessidade de parar alterações de código em código gerenciado.
 
 ### <a name="to-stop-applying-code-changes"></a>Para parar de aplicar alterações de código
 

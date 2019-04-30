@@ -8,25 +8,27 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 255b49d3bf07a5a91896d2aff87001f1c68f3afe
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4678d79c7d2b1e19ab96502778ce51f8a3226010
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077414"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417185"
 ---
 # <a name="faq-converting-add-ins-to-vspackage-extensions"></a>Perguntas Frequentes: Convertendo suplementos em extensões VSPackage
 Suplementos agora são preteridos. Para fazer uma nova extensão do Visual Studio, você precisará criar uma extensão do VSIX. Aqui estão as respostas a algumas perguntas frequentes sobre como converter um suplemento do Visual Studio em uma extensão do VSIX.
 
 > [!WARNING]
->  Iniciando no Visual Studio 2015, para projetos c# e Visual Basic, você pode usar o projeto do VSIX e adicionar modelos de item para comandos de menu, janelas de ferramenta e VSPackages. Para obter mais informações, consulte [o que há de novo no SDK do Visual Studio 2015](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).
+> Iniciando no Visual Studio 2015, para projetos c# e Visual Basic, você pode usar o projeto do VSIX e adicionar modelos de item para comandos de menu, janelas de ferramenta e VSPackages. Para obter mais informações, consulte [o que há de novo no SDK do Visual Studio 2015](../extensibility/what-s-new-in-the-visual-studio-2015-sdk.md).
 
 > [!IMPORTANT]
->  Em muitos casos, você pode simplesmente transferir o seu código de suplemento a um projeto do VSIX com um item de projeto de VSPackage. Você pode obter o objeto de automação DTE chamando <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> no método <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
+> Em muitos casos, você pode simplesmente transferir o seu código de suplemento a um projeto do VSIX com um item de projeto de VSPackage. Você pode obter o objeto de automação DTE chamando <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> no método <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A>.
 >
->  `DTE2 dte = (DTE2)GetService(typeof(DTE));`
+> ```csharp
+> DTE2 dte = (DTE2)GetService(typeof(DTE));
+> ```
 >
->  Para obter mais informações, consulte [como posso executar meu código de suplemento em um VSPackage?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) abaixo.
+> Para obter mais informações, consulte [como posso executar meu código de suplemento em um VSPackage?](../extensibility/faq-converting-add-ins-to-vspackage-extensions.md#BKMK_RunAddin) abaixo.
 
 ## <a name="what-software-do-i-need-to-develop-vsix-extensions"></a>Qual software precisa desenvolver extensões VSIX?
  A partir do Visual Studio 2015, você não instale o SDK do Visual Studio no Centro de download. Ele é incluído como um recurso opcional na instalação do Visual Studio. Você também pode instalar o SDK do VS mais tarde. Para obter mais informações, consulte [instalar o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).

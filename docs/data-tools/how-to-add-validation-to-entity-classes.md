@@ -11,12 +11,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: ce3658f93df11b83f89e89931d03f35b0fa801a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b91fc7fb356ebd0db4a0bd7960ac060e7d152ec1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070232"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402840"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>Como: Adicionar validação a classes de entidade
 *Validar* classes de entidade é o processo que confirma que os valores inseridos em objetos de dados estão de acordo com as restrições do esquema de um objeto e também as regras estabelecidas para o aplicativo. Validar dados antes de enviar atualizações para o base de dados subjacente é uma boa prática que reduz erros. Também reduz o número potencial de processamentos entre um aplicativo e o base de dados.
@@ -24,7 +24,7 @@ ms.locfileid: "60070232"
  O [LINQ to SQL das ferramentas no Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md) fornece os métodos parciais que permitem aos usuários estender o código gerado pelo designer que é executado durante inserções, atualizações e exclusões de entidades completos e também durante e após a coluna individual alterações.
 
 > [!NOTE]
->  Este tópico fornece as etapas básicas para adicionar validação a classes de entidade usando o **Relational Designer**. Porque ele pode ser difícil seguir essas etapas genéricos sem se referir a uma classe de entidade específica, é fornecida um passo a passo que usa dados reais.
+> Este tópico fornece as etapas básicas para adicionar validação a classes de entidade usando o **Relational Designer**. Porque ele pode ser difícil seguir essas etapas genéricos sem se referir a uma classe de entidade específica, é fornecida um passo a passo que usa dados reais.
 
 ## <a name="add-validation-for-changes-to-the-value-in-a-specific-column"></a>Adicionar validação para alterações ao valor em uma coluna específica
  Este procedimento mostra como validar dados quando o valor em uma coluna é alterado. Uma vez que a validação é executada na definição de classe (em vez de na interface do usuário), será lançada uma exceção se o valor causar a falha da validação. Implementar manipulação de erro para o código em seu aplicativo que tenta alterar os valores de coluna.
@@ -75,7 +75,7 @@ ms.locfileid: "60070232"
  Além de verificar valores alterações pendentes, você também pode validar dados quando é feita uma tentativa de atualizar uma classe completa de entidade. A validação durante uma atualização tentada permite que você comparar valores em várias colunas se as regras comerciais exigem esta. O procedimento a seguir mostra como validar quando é feita uma tentativa de atualizar uma classe completa de entidade.
 
 > [!NOTE]
->  O código de validação para que as atualizações terminem classes de entidade é executado na classe parcial de <xref:System.Data.Linq.DataContext> (em vez de na classe parcial de uma classe específica de entidade).
+> O código de validação para que as atualizações terminem classes de entidade é executado na classe parcial de <xref:System.Data.Linq.DataContext> (em vez de na classe parcial de uma classe específica de entidade).
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>Para validar dados durante uma atualização para uma entidade
 

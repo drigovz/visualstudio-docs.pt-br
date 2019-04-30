@@ -14,11 +14,11 @@ ms.workload:
 - aspnet
 - azure
 ms.openlocfilehash: 2880b8bee25a79f5f182043ffed5c50c4512d033
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59663166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399430"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>Depurar aplicativos ASP.NET dinâmicos em máquinas virtuais do Azure e conjuntos de dimensionamento de máquinas virtuais do Azure usando o Depurador de Instantâneos
 

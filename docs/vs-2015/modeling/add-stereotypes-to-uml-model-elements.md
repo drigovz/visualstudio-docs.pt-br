@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 092c07e9aa5f2999bcf3a28977151878123f6bfc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bba638a595a01f17e4b7e4f8269a69cb6e466a1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043640"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430495"
 ---
 # <a name="add-stereotypes-to-uml-model-elements"></a>Adicionar estereótipos a elementos de modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -44,14 +44,14 @@ Você pode adicionar um estereótipo para um elemento de modelo UML anotá-lo e 
 1. Clique com botão direito do elemento de modelo ou relação, em um diagrama ou no **Gerenciador de modelos UML**e, em seguida, clique em **propriedades**.  
   
     > [!NOTE]
-    >  Para adicionar os estereótipos mesmos a vários elementos, você pode selecionar vários elementos e, em seguida, clique em um deles.  
+    > Para adicionar os estereótipos mesmos a vários elementos, você pode selecionar vários elementos e, em seguida, clique em um deles.  
   
 2. Clique o **estereótipos** propriedade e selecione os estereótipos que você deseja aplicar.  
   
      Os estereótipos selecionados aparecem em «divisas» no elemento de modelo, para a maioria dos tipos de relação e de elemento.  
   
     > [!NOTE]
-    >  Se você não conseguir ver a **estereótipos** propriedade, ou se o estereótipo desejado não aparecer, verifique se o elemento de modelo está dentro de um pacote ou um modelo ao qual o perfil apropriado foi vinculado.  
+    > Se você não conseguir ver a **estereótipos** propriedade, ou se o estereótipo desejado não aparecer, verifique se o elemento de modelo está dentro de um pacote ou um modelo ao qual o perfil apropriado foi vinculado.  
   
 3. Alguns estereótipos permitem que você defina os valores das propriedades adicionais para o elemento de modelo. Para ver essas propriedades, expanda o **estereótipos** propriedade.  
   

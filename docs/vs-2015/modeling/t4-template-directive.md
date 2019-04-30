@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 71d7dc0fc208fa3c108019f6324c3d053673e918
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 252b554542df23e2d3197dfe28100546a6d25b32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070830"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411458"
 ---
 # <a name="t4-template-directive"></a>Diretiva de modelo T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -212,7 +212,7 @@ This is the common footer.
  Você também pode usar uma classe escrita manualmente comum como a classe base. A classe base deve fornecer os métodos usados pela classe derivada.  
   
 > [!WARNING]
->  Se você usar os atributos `inherits` e `hostspecific` juntos, especifique hostspecific="trueFromBase" na classe derivada e host="true” na classe base. Isso evita uma definição dupla da propriedade `Host` no código gerado.  
+> Se você usar os atributos `inherits` e `hostspecific` juntos, especifique hostspecific="trueFromBase" na classe derivada e host="true” na classe base. Isso evita uma definição dupla da propriedade `Host` no código gerado.  
   
 ### <a name="inheritance-in-a-design-time-text-template"></a>Herança em um modelo de texto de tempo de design  
  Um modelo de texto de tempo de design é um arquivo para o qual **Custom Tool** é definido como **TextTemplatingFileGenerator**. O modelo gera um arquivo de saída de código ou texto, que faz parte do seu projeto do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Para gerar o arquivo de saída, primeiro o modelo é convertido em um arquivo de código de programa intermediário, que você normalmente não vê. O atributo `inherits` especifica a classe base para esse código intermediário.  

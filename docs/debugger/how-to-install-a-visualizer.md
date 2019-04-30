@@ -17,18 +17,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d5b27d52c1f390e6c9f60ef10a91d9a93f903f5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b9b09bc837cae4eaad2c0dbcb2bb82a7daa248eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104469"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63389317"
 ---
 # <a name="how-to-install-a-visualizer"></a>Como: Instalar um visualizador
 Após ter criado um visualizador, você deverá instalar o visualizador de modo que esteja disponível em [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]. Instalar um visualizador é um processo simples.
 
 > [!NOTE]
->  Em aplicativos UWP, apenas o texto padrão, os visualizadores HTML, XML e JSON são suportados. Não há suporte para visualizadores personalizados (criados pelo usuário).
+> Em aplicativos UWP, apenas o texto padrão, os visualizadores HTML, XML e JSON são suportados. Não há suporte para visualizadores personalizados (criados pelo usuário).
 
 ### <a name="to-install-a-visualizer"></a>Para instalar um visualizador
 

@@ -1,71 +1,74 @@
 ---
 title: Estado gráfico | Microsoft Docs
-ms.date: 11/04/2016
+ms.date: 11/15/2016
+ms.prod: visual-studio-dev14
+ms.technology: vs-ide-debug
 ms.topic: conceptual
 f1_keywords:
 - vs.graphics.statewindow
 ms.assetid: 97e7757e-c372-4626-8149-99a81367a0e1
-author: mikejo5000
+caps.latest.revision: 5
+author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.workload:
-- multiple
-ms.openlocfilehash: f7f4dbeb378f0ac921f42f2ad71d3b5cae8d10ca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8d75dbc03d95b0460c0adc5c62c2a831ac7271e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088373"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388624"
 ---
 # <a name="graphics-state"></a>Estado gráfico
-A janela de estado no diagnóstico de gráficos do Visual Studio ajuda a entender o estado dos gráficos que está ativo no momento do evento atual, como uma chamada de desenho.
+[!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
-## <a name="understanding-the-state-window"></a>Noções básicas sobre a janela de estado
- A janela de estado juntos coleta o estado que afeta a renderização e a apresenta hierarquicamente, em um só lugar. Dependendo da versão do Direct3D seu aplicativo usa, as informações apresentadas na janela de estado podem ter diferenças.
-
-### <a name="state-views"></a>Exibições de estado
- Você pode exibir a tabela de estado de várias maneiras diferentes:
-
-|Exibir|Descrição|
-|----------|-----------------|
-|Modo de exibição de estado de entrada de API|Essa exibição apresenta o estado em um layout semelhante aos objetos Direct3D que compõem o estado.|
-|Modo de exibição de estado lógico de entrada|Essa exibição apresenta o estado em uma exibição lógica que não refletem o layout dos objetos Direct3D que compõem o estado.|
-|Fixado a exibição de estado|Em vez de uma hierarquia, o modo de exibição de estado fixos apresenta estado fixado itens em uma lista simples com nomes totalmente qualificados. Essa exibição faz é possível exibir muitos itens de estado de diferentes pacotes de estado em um pequeno número de linhas.|
-
-##### <a name="to-change-the-state-view"></a>Para alterar a exibição de estado
-
-- Na janela de estado, no canto superior esquerdo logo abaixo a barra de título, escolha o botão que corresponde ao estilo de exibição de estado que deseja usar.
-
-    - **Mostrar exibição de estado de recebimento de API**
-
-    - **Mostrar exibição de estado lógico**
-
-    - **Mostrar modo de exibição de estado fixos**
-
+A janela de estado no diagnóstico de gráficos do Visual Studio ajuda a entender o estado dos gráficos que está ativo no momento do evento atual, como uma chamada de desenho.  
+  
+## <a name="understanding-the-state-window"></a>Noções básicas sobre a janela de estado  
+ A janela de estado juntos coleta o estado que afeta a renderização e a apresenta hierarquicamente, em um só lugar. Dependendo da versão do Direct3D seu aplicativo usa, as informações apresentadas na janela de estado podem ter diferenças.  
+  
+### <a name="state-views"></a>Exibições de estado  
+ Você pode exibir a tabela de estado de várias maneiras diferentes:  
+  
+|Exibir|Descrição|  
+|----------|-----------------|  
+|Modo de exibição de estado de entrada de API|Essa exibição apresenta o estado em um layout semelhante aos objetos Direct3D que compõem o estado.|  
+|Modo de exibição de estado lógico de entrada|Essa exibição apresenta o estado em uma exibição lógica que não refletem o layout dos objetos Direct3D que compõem o estado.|  
+|Fixado a exibição de estado|Em vez de uma hierarquia, o modo de exibição de estado fixos apresenta estado fixado itens em uma lista simples com nomes totalmente qualificados. Essa exibição faz é possível exibir muitos itens de estado de diferentes pacotes de estado em um pequeno número de linhas.|  
+  
+##### <a name="to-change-the-state-view"></a>Para alterar a exibição de estado  
+  
+- Na janela de estado, no canto superior esquerdo logo abaixo a barra de título, escolha o botão que corresponde ao estilo de exibição de estado que deseja usar.  
+  
+    - **Mostrar exibição de estado de recebimento de API**  
+  
+    - **Mostrar exibição de estado lógico**  
+  
+    - **Mostrar modo de exibição de estado fixos**  
+  
 > [!IMPORTANT]
->  Você deve fixar estado na **API mostrar o estado de entrada** ou **estado lógico mostram** modos de exibição para que ele seja exibido no **fixado Mostrar modo de exibição de estado**.
-
-### <a name="state-table-format"></a>Formato de tabela de estado
- A janela de estado apresenta várias colunas de informações.
-
-|Column|Descrição|
-|------------|-----------------|
-|Nome|O nome do item de estado. Se esse item representa um pacote do estado, o item pode ser expandido para exibi-la.<br /><br /> No **exibição de estado de entrada da API** e **exibição de estado lógico** afirma, nomes são recuados para mostrar a relação hierárquica entre estados.<br /><br /> No **fixado a exibição de estado** de estado, nomes totalmente qualificados são exibidos em uma lista simples.|
-|Valor|O valor do item de estado.|
-|Tipo|O tipo de item de estado.|
-
-### <a name="changed-state"></a>Estado alterado
- Estado dos gráficos geralmente altera incrementalmente entre chamadas de desenho subsequentes, e muitos tipos de problemas de renderização são causados quando o estado é alterado incorretamente. Para ajudá-lo a localizar qual estado foi alterado desde que a chamada de desenho anterior, estado que tiver sido alterado é marcado com um asterisco e exibido em vermelho — isso se aplica não apenas o estado em si, mas seu item de estado do pai, para que você possa identificar facilmente o estado alterado no nível mais alto e, em seguida, drill-down até os detalhes.
-
-### <a name="pinning-state"></a>Fixar estado
- Porque muitos aplicativos renderizam objetos semelhantes em sequência, a alteração de um conjunto conhecido de estado, às vezes é útil fixar os estados de alteração em vigor para que você pode observar como ele é alterado à medida que você move da chamada de desenho para a chamada de desenho.
-
- Isso também pode ser útil se você tiver isolado a origem de um problema ao ser devido a uma alteração em um estado específico.
-
-##### <a name="to-pin-state-in-place"></a>Para fixar o estado em vigor
-
-1. Na janela de estado, localize o estado em que você está interessado. Você talvez precise expandir o estado de nível superior para localizar os detalhes que você está interessado.
-
-2. Coloque o cursor sobre o estado em que você está interessado. Um ícone de alfinete aparece à esquerda do item de estado.
-
+> Você deve fixar estado na **API mostrar o estado de entrada** ou **estado lógico mostram** modos de exibição para que ele seja exibido no **fixado Mostrar modo de exibição de estado**.  
+  
+### <a name="state-table-format"></a>Formato de tabela de estado  
+ A janela de estado apresenta várias colunas de informações.  
+  
+|Column|Descrição|  
+|------------|-----------------|  
+|Nome|O nome do item de estado. Se esse item representa um pacote do estado, o item pode ser expandido para exibi-la.<br /><br /> No **exibição de estado de entrada da API** e **exibição de estado lógico** afirma, nomes são recuados para mostrar a relação hierárquica entre estados.<br /><br /> No **fixado a exibição de estado** de estado, nomes totalmente qualificados são exibidos em uma lista simples.|  
+|Valor|O valor do item de estado.|  
+|Tipo|O tipo de item de estado.|  
+  
+### <a name="changed-state"></a>Estado alterado  
+ Estado dos gráficos geralmente altera incrementalmente entre chamadas de desenho subsequentes, e muitos tipos de problemas de renderização são causados quando o estado é alterado incorretamente. Para ajudá-lo a localizar qual estado foi alterado desde que a chamada de desenho anterior, estado que tiver sido alterado é marcado com um asterisco e exibido em vermelho — isso se aplica não apenas o estado em si, mas seu item de estado do pai, para que você possa identificar facilmente o estado alterado no nível mais alto e, em seguida, drill-down até os detalhes.  
+  
+### <a name="pinning-state"></a>Fixar estado  
+ Porque muitos aplicativos renderizam objetos semelhantes em sequência, a alteração de um conjunto conhecido de estado, às vezes é útil fixar os estados de alteração em vigor para que você pode observar como ele é alterado à medida que você move da chamada de desenho para a chamada de desenho.  
+  
+ Isso também pode ser útil se você tiver isolado a origem de um problema ao ser devido a uma alteração em um estado específico.  
+  
+##### <a name="to-pin-state-in-place"></a>Para fixar o estado em vigor  
+  
+1. Na janela de estado, localize o estado em que você está interessado. Você talvez precise expandir o estado de nível superior para localizar os detalhes que você está interessado.  
+  
+2. Coloque o cursor sobre o estado em que você está interessado. Um ícone de alfinete aparece à esquerda do item de estado.  
+  
 3. Escolha o ícone de pino para fixar o item de estado em vigor.

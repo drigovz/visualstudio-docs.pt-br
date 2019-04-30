@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 529adc66ece75219e71d7ae8b17857f5036e1668
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 81ee263b3bb908daace4bf27f86cff710ae90684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097278"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406792"
 ---
 # <a name="localize-clickonce-applications"></a>Localizar aplicativos ClickOnce
 Localização é o processo de tornar seu aplicativo apropriado para uma cultura específica. Esse processo envolve a tradução de texto de (UI) de interface do usuário para uma linguagem específica de região, usando a data correta e a formatação de moeda, ajustando o tamanho dos controles em um formulário, e controles de espelhamento da direita para a esquerda, se necessário.
@@ -51,7 +51,7 @@ Localização é o processo de tornar seu aplicativo apropriado para uma cultura
  O benefício dessa abordagem é que ele cria uma única implantação e simplifica a sua história de implantação localizada. Em tempo de execução, o assembly satélite adequado será usado, dependendo da cultura padrão do sistema de operacional do Windows do usuário. Uma desvantagem dessa abordagem é que ele baixa todos os assemblies de satélite, sempre que o aplicativo é instalado ou atualizado em um computador cliente. Se seu aplicativo tiver um grande número de cadeias de caracteres ou seus clientes têm uma conexão de rede lenta, esse processo pode afetar o desempenho durante a atualização do aplicativo.
 
 > [!NOTE]
->  Essa abordagem supõe que o seu aplicativo se ajusta a altura, largura e a posição dos controles automaticamente para acomodar os tamanhos de cadeia de caracteres de texto diferente em diferentes culturas. Windows Forms contém uma variedade de controles e tecnologias que permitem que você cria um formulário para torná-lo facilmente localizável, incluindo o <xref:System.Windows.Forms.FlowLayoutPanel> e <xref:System.Windows.Forms.TableLayoutPanel> controles, bem como a <xref:System.Windows.Forms.Control.AutoSize%2A> propriedade.  Consulte também [como: Suporte à localização em formulários do Windows usando AutoSize e o controle TableLayoutPanel](/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100)).
+> Essa abordagem supõe que o seu aplicativo se ajusta a altura, largura e a posição dos controles automaticamente para acomodar os tamanhos de cadeia de caracteres de texto diferente em diferentes culturas. Windows Forms contém uma variedade de controles e tecnologias que permitem que você cria um formulário para torná-lo facilmente localizável, incluindo o <xref:System.Windows.Forms.FlowLayoutPanel> e <xref:System.Windows.Forms.TableLayoutPanel> controles, bem como a <xref:System.Windows.Forms.Control.AutoSize%2A> propriedade.  Consulte também [como: Suporte à localização em formulários do Windows usando AutoSize e o controle TableLayoutPanel](/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100)).
 
 ## <a name="generate-one-deployment-for-each-culture"></a>Gerar uma implantação para cada cultura
  Essa estratégia de implantação, você gera várias implantações. Em cada implantação, você inclui apenas o assembly satélite necessário para uma cultura específica e você marcar a implantação como específico para aquela cultura.

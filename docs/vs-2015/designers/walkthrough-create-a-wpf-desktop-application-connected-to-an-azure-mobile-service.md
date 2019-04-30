@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a4d4d6a8399d3d40eaefe86ed9cbb3105729f08a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 126aa1ad57aa5f8961803b8443365c208f5623ff
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118013"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421244"
 ---
 # <a name="walkthrough-create-a-wpf-desktop-application-connected-to-an-azure-mobile-service"></a>Passo a passo: Criar um aplicativo de área de trabalho do WPF conectado a um serviço móvel do Azure
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,14 +56,14 @@ Você pode usar o WPF (Windows Presentation Foundation) para criar rapidamente u
 3. No painel esquerdo, escolha **WindowsAzure.MobileServices**e, em seguida, no painel direito, escolha o botão **Instalar**.  
   
     > [!NOTE]
-    >  Se uma caixa de diálogo **Visualização** aparecer, examine as alterações propostas e, em seguida, escolha o botão **OK**.  
+    > Se uma caixa de diálogo **Visualização** aparecer, examine as alterações propostas e, em seguida, escolha o botão **OK**.  
   
 4. Na caixa de diálogo **Aceitação da Licença**, examine os termos da licença e aceite-os, escolhendo o botão **Eu aceito**.  
   
      As referências necessárias serão adicionadas ao **Gerenciador de Soluções**.  
   
     > [!NOTE]
-    >  Se você não concordar com os termos de licença, escolha o botão **Eu recuso**. Você não poderá concluir o restante do passo a passo.  
+    > Se você não concordar com os termos de licença, escolha o botão **Eu recuso**. Você não poderá concluir o restante do passo a passo.  
   
 ## <a name="create-the-user-interface"></a>Criar a interface do usuário  
  A próxima etapa é criar a interface do usuário para o aplicativo. Primeiro, você cria um controle de usuário reutilizável que exibe um layout padrão lado a lado com dois painéis. Em seguida, adiciona o controle do usuário à janela principal do aplicativo e acrescenta controles para inserir e exibir dados e escreve um código para definir a interação com o back-end do serviço móvel.  
@@ -288,7 +288,7 @@ Você pode usar o WPF (Windows Presentation Foundation) para criar rapidamente u
      ![MainWindow no designer](../designers/media/wpfquickstart2.PNG "WPFQuickStart2")  
   
     > [!NOTE]
-    >  Ao seguir os próximos procedimentos, você poderá ver erros na **Lista de Erros** se ela estiver aberta. Não se preocupe; esses erros desaparecerão após a conclusão dos procedimentos restantes.  
+    > Ao seguir os próximos procedimentos, você poderá ver erros na **Lista de Erros** se ela estiver aberta. Não se preocupe; esses erros desaparecerão após a conclusão dos procedimentos restantes.  
   
 6. No **Gerenciador de Soluções**, expanda o nó **MainWindow.xaml** e abra o arquivo **MainWindow.xaml.cs** ou **MainWindow.xaml.vb**.  
   
@@ -482,7 +482,7 @@ Você pode usar o WPF (Windows Presentation Foundation) para criar rapidamente u
 3. Na caixa de diálogo **NOVO SERVIÇO MÓVEL**, escolha a caixa de texto **URL** e insira `wpfquickstart01`.  
   
     > [!NOTE]
-    >  Talvez seja necessário alterar a parte numérica da URL. O Microsoft Azure requer uma URL exclusiva para cada serviço móvel.  
+    > Talvez seja necessário alterar a parte numérica da URL. O Microsoft Azure requer uma URL exclusiva para cada serviço móvel.  
   
      Isso define a URL para o serviço `https://wpfquickstart01.azure-mobile.net/`.  
   
@@ -491,7 +491,7 @@ Você pode usar o WPF (Windows Presentation Foundation) para criar rapidamente u
 5. Na lista **REGIÃO**, escolha o data center em que você deseja implantar o serviço móvel e, em seguida, escolha o botão **Avançar** (seta para a direita).  
   
     > [!NOTE]
-    >  Para este serviço, você usará a configuração padrão de **BACK-END**, **JavaScript**.  
+    > Para este serviço, você usará a configuração padrão de **BACK-END**, **JavaScript**.  
   
 6. Se você estiver criando um novo banco de dados na página **Especificar configurações de banco de dados**, na lista **SERVIDOR** escolha **Novo servidor de banco de dados SQL**, insira seu **NOME DE LOGON DO SQL** e sua **SENHA**e, em seguida, escolha o botão **Concluir** (marca de seleção).  
   

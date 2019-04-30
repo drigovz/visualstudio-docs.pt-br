@@ -19,12 +19,12 @@ caps.latest.revision: 36
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 635dd8d9f7860b075de9b35e21fcf42bdad2ea1a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ebde75fdf36c84f40ae660a24d469c36e72ceaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386594"
 ---
 # <a name="walkthrough-creating-a-custom-installer-for-a-clickonce-application"></a>Passo a passo: Criando um instalador personalizado para um aplicativo ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Qualquer aplicativo ClickOnce com base em um arquivo .exe pode ser instalado sil
      Esses métodos chamam <xref:System.Deployment.Application.InPlaceHostingManager> métodos para baixar o manifesto de implantação, declarar permissões apropriadas, solicitará ao usuário permissão para instalar e, em seguida, baixar e instalar o aplicativo no cache do ClickOnce. Um instalador personalizado pode especificar que um aplicativo ClickOnce é previamente confiável, ou pode adiar a decisão de confiança a <xref:System.Deployment.Application.InPlaceHostingManager.AssertApplicationRequirements%2A> chamada de método. Esse código previamente relações de confiança do aplicativo.  
   
     > [!NOTE]
-    >  As permissões atribuídas confiando previamente não podem exceder as permissões do código do instalador personalizado.  
+    > As permissões atribuídas confiando previamente não podem exceder as permissões do código do instalador personalizado.  
   
      [!code-csharp[System.Deployment.Application.InPlaceHostingManager#1](../snippets/csharp/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/CS/Form1.cs#1)]
      [!code-vb[System.Deployment.Application.InPlaceHostingManager#1](../snippets/visualbasic/VS_Snippets_Winforms/System.Deployment.Application.InPlaceHostingManager/VB/Form1.vb#1)]  

@@ -13,11 +13,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: a16fb8b0da7a74a9cb0d48cf6f7f338b3586db4b
+ms.openlocfilehash: 021bc563846f4dcfcea07a16dfcbb4023da3e88a
 ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
 ms.lasthandoff: 04/23/2019
-ms.locfileid: "62891195"
+ms.locfileid: "62855038"
 ---
-Windows Library para JavaScript (WinJS)
+JScript

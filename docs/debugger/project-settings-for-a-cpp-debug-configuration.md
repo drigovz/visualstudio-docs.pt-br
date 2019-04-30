@@ -1,5 +1,5 @@
 ---
-title: Configurações do projeto para uma configuração de depuração de C++
+title: Configurações do projeto para um C++ configuração de depuração
 ms.custom: seodec18
 ms.date: 11/26/2018
 ms.topic: reference
@@ -112,18 +112,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99c81952ee150e185f52edc624663c3cca9a9164
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: fb4f60c9e36b7c8c7a918b2298d7522e7c5d3793
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407881"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>Configurações do projeto para uma configuração de depuração do C++
 Você pode alterar as configurações de projeto para uma configuração de depuração C ou Visual C++ na **páginas de propriedades** caixa de diálogo, conforme discutido em [como: Definir as configurações de depuração e de versão](../debugger/how-to-set-debug-and-release-configurations.md). As tabelas a seguir mostram como localizar configurações relacionadas ao depurador na caixa de diálogo **Páginas de Propriedades**.
 
 > [!NOTE]
->  As configurações de projeto de depuração na **propriedades de configuração/depuração** categoria são diferentes para aplicativos UWP e componentes que são escritos em C++. Ver [iniciar uma sessão de depuração (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
+> As configurações de projeto de depuração na **propriedades de configuração/depuração** categoria são diferentes para aplicativos UWP e componentes que são escritos em C++. Ver [iniciar uma sessão de depuração (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md).
 
  Cada configuração de propriedade de depuração é automaticamente gravada e salva no arquivo "por usuário" (. vcxproj) para sua solução quando você salvar sua solução.
 
@@ -142,15 +142,15 @@ Você pode alterar as configurações de projeto para uma configuração de depu
 | **Nome do Servidor Remoto** (Depurador Remoto do Windows) | Especifica o nome de um computador (diferente do seu) no qual você deseja depurar um aplicativo.<br /><br /> A macro de build RemoteMachine é definida com o valor desta propriedade; para obter mais informações, confira [Macros para comandos e propriedades de compilação](/cpp/ide/common-macros-for-build-commands-and-properties). |
 | **Conexão** (Depurador Remoto do Windows) | Permite que você alterne entre tipos de conexão padrão e sem autenticação para depuração remota. Especifique um nome do computador remoto na caixa de **Nome do Servidor Remoto**. Tipos de conexão incluem o seguinte:<br /><br /> -   **Remoto sem Autenticação do Windows**<br />-   **Remoto Sem Autenticação**<br /><br /> **Observação** Depuração remota sem a autenticação pode deixar o computador remoto vulnerável às violações de segurança. O modo de Autenticação do Windows é mais seguro.<br /><br /> Para obter mais informações, confira [Configuração de depuração remota](../debugger/remote-debugging.md). |
 | **URL HTTP** (depurador de serviço Web e depurador de navegador da Web) | Especifica a URL no qual o projeto que você está depurar está localizado. |
-| **Tipo de Depurador** | Especifica o tipo de depurador a ser usado: **Somente Nativo**, **Somente Gerenciado**, **Somente GPU**, **Misto**, **Automático** (padrão) ou **Script**.<br /><br /> -   **Apenas Nativo** é para código C++ não gerenciado.<br />-   **Gerenciado Somente** é para código executado no Common Language Runtime (código gerenciado).<br />-   **Misto** invoca depuradores para código gerenciado e não gerenciado.<br />-   **Automático** determina o tipo do depurador com base no compilador e as informações de EXE.<br />-   **Script** chama um depurador para scripts.<br />-   **Somente GPU** é para o código C++ AMP que é executado em um dispositivo GPU ou no rasterizador de referência de DirectX. Ver [código de depuração de GPU](../debugger/debugging-gpu-code.md). |
-| **Ambiente** (Local do Windows e depurador remoto do Windows) | Especifica variáveis de ambiente para o programa que você está depurando. Use a sintaxe de variável de ambiente padrão (por exemplo, `PATH="%SystemRoot%\..."`). Essas variáveis substituem o ambiente do sistema ou são mescladas com o ambiente do sistema, dependendo da configuração de **Ambiente de Mesclagem**. Quando você clique na coluna de configurações, um "Editar..." é exibida. Selecione o link para editar as variáveis de ambiente. |
+| **Tipo de Depurador** | Especifica o tipo de depurador a ser usado: **Somente nativo**, **gerenciado somente**, **somente GPU**, **misto**, **automático** (padrão), ou **Script**.<br /><br /> -   **Apenas Nativo** é para código C++ não gerenciado.<br />-   **Gerenciado Somente** é para código executado no Common Language Runtime (código gerenciado).<br />-   **Misto** invoca depuradores para código gerenciado e não gerenciado.<br />-   **Automático** determina o tipo do depurador com base no compilador e as informações de EXE.<br />-   **Script** chama um depurador para scripts.<br />-   **Somente GPU** é para o código C++ AMP que é executado em um dispositivo GPU ou no rasterizador de referência de DirectX. Ver [código de depuração de GPU](../debugger/debugging-gpu-code.md). |
+| **Ambiente** (Local do Windows e depurador remoto do Windows) | Especifica variáveis de ambiente para o programa que você está depurando. Use a sintaxe de variável de ambiente padrão (por exemplo, `PATH="%SystemRoot%\..."`). Essas variáveis substituem o ambiente do sistema ou são mescladas com o ambiente do sistema, dependendo da configuração de **Ambiente de Mesclagem**. Quando você clique na coluna configurações, um "Editar..." é exibida. Selecione o link para editar as variáveis de ambiente. |
 | **Ambiente de Mesclagem** (Depurador Local do Windows) | Determina se as variáveis que são especificadas na caixa **Ambiente** serão mescladas com o ambiente definido pelo sistema operacional. A configuração padrão é Sim. |
 | **Depuração de SQL** (todos, com exceção do Depurador do Conjunto de MPI) | Permite a depuração de procedimentos SQL do seu aplicativo [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)]. A configuração padrão é Não. |
 | **Tipo de Acelerador de Depuração** (somente depuração de GPU) | Especifica o dispositivo GPU a ser usado para depuração. A instalação de drivers de dispositivo para dispositivos compatíveis com GPU adicionará outras opções. A configuração padrão é **GPU – Emulador de Software**. |
 | **Comportamento de ponto de interrupção padrão GPU** (somente depuração de GPU) | Especifica se um evento de ponto de interrupção deve ser gerado para cada thread em um warp SIMD. A configuração padrão é gerar o evento do ponto de interrupção apenas uma vez por encurvamento. |
 | **Acelerador Padrão de Amp** | Especifica o acelerador padrão de AMP ao depurar o código de GPU. Escolha **Acelerador de software WARP** para investigar se um problema é causado por hardware ou por um driver em vez de por seu código. |
-| **Diretório de Implantação** (Depurador Remoto do Windows) | Especifica o caminho no computador remoto onde a saída do projeto será copiada antes da inicialização. O caminho pode ser um compartilhamento de rede no computador remoto, ou pode ser um caminho para uma pasta no computador remoto. A configuração padrão está vazia, o que significa que a saída do projeto não é copiada para um compartilhamento de rede. Para habilitar a implantação de arquivos, você também deve marcar a caixa de seleção **Implantar** na caixa de diálogo Configuration Manager. Para obter mais informações, consulte [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md). |
-| **Arquivos adicionais para implantar** (depurador remoto do Windows) | Se a propriedade de diretório de implantação é definida, isso é uma lista delimitada por ponto e vírgula de arquivos adicionais para copiar para diretório de implantação. A configuração padrão está vazia, o que significa que nenhum arquivo adicional é copiado para o diretório de implantação. Para habilitar a implantação de arquivos, você também deve marcar a caixa de seleção **Implantar** na caixa de diálogo Configuration Manager. Para obter mais informações, consulte [Como criar e editar configurações](../ide/how-to-create-and-edit-configurations.md). |
+| **Diretório de Implantação** (Depurador Remoto do Windows) | Especifica o caminho no computador remoto onde a saída do projeto será copiada antes da inicialização. O caminho pode ser um compartilhamento de rede no computador remoto, ou pode ser um caminho para uma pasta no computador remoto. A configuração padrão está vazia, o que significa que a saída do projeto não é copiada para um compartilhamento de rede. Para habilitar a implantação de arquivos, você também deve marcar a caixa de seleção **Implantar** na caixa de diálogo Configuration Manager. Para obter mais informações, confira [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md). |
+| **Arquivos adicionais para implantar** (depurador remoto do Windows) | Se a propriedade de diretório de implantação é definida, isso é uma lista delimitada por ponto e vírgula de arquivos adicionais para copiar para diretório de implantação. A configuração padrão está vazia, o que significa que nenhum arquivo adicional é copiado para o diretório de implantação. Para habilitar a implantação de arquivos, você também deve marcar a caixa de seleção **Implantar** na caixa de diálogo Configuration Manager. Para obter mais informações, confira [Como: Criar e editar configurações](../ide/how-to-create-and-edit-configurations.md). |
 | **Implantar Bibliotecas de Tempo de Execução de Depuração do Visual C++** (Depurador Remoto do Windows) | Se a propriedade do diretório de implantação estiver definida, isso especifica se as bibliotecas em tempo de execução de depuração do Visual C++ da plataforma atual devem ser copiadas para o compartilhamento de rede. A configuração padrão é Sim. |
 
 ## <a name="cc-folder-general-category"></a>Pasta C/C++ (Categoria geral)
@@ -188,6 +188,6 @@ Para depurar DLLs que são externas ao seu projeto, consulte [projetos de DLL de
 ## <a name="see-also"></a>Consulte também
 - [Depurando código nativo](../debugger/debugging-native-code.md)
 - [Preparação e configurações do depurador](../debugger/debugger-settings-and-preparation.md)
-- [Criar e gerenciar projetos do Visual C++](/cpp/ide/creating-and-managing-visual-cpp-projects)
+- [Criar e gerenciar o Visual C++ projetos](/cpp/ide/creating-and-managing-visual-cpp-projects)
 - [/ASSEMBLYDEBUG (adicionar DebuggableAttribute)](/cpp/build/reference/assemblydebug-add-debuggableattribute)
 - [Macros comuns para comandos e propriedades de build](/cpp/ide/common-macros-for-build-commands-and-properties)

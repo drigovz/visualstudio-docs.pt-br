@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85e253491a4cb3713b5920c9abd09f9396298319
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc247a6391df0357905e2cbdb895bec4e469a248
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387522"
 ---
 # <a name="how-to-start-spy"></a>Como: Iniciar Spy++
 
@@ -24,7 +24,7 @@ Você pode iniciar o Spy + + do Visual Studio ou em um prompt de comando.
  Ao iniciar o Spy + +, se uma mensagem é exibida para solicitar permissão para fazer alterações no computador, selecione **Sim**.
 
 > [!NOTE]
->  Você pode executar apenas uma instância do Spy + +. Se você tentar iniciar uma segunda instância, ele apenas faz com que a instância em execução no momento obter o foco.
+> Você pode executar apenas uma instância do Spy + +. Se você tentar iniciar uma segunda instância, ele apenas faz com que a instância em execução no momento obter o foco.
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
@@ -42,7 +42,7 @@ Sobre o **ferramentas** menu, selecione **Spy + +**.
 Como o Spy + + é executado de forma independente, depois de iniciada, você pode fechar o Visual Studio.
 
 > [!NOTE]
->  Quando você registra mensagens com Spy + +, pode fazer com que o sistema operacional executar mais lentamente.
+> Quando você registra mensagens com Spy + +, pode fazer com que o sistema operacional executar mais lentamente.
 
 ## <a name="start-spy-at-a-command-prompt"></a>Iniciar o Spy + + em um prompt de comando
 

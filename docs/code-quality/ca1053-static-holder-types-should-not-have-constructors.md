@@ -14,12 +14,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: da5edc8f31510fa01d2132735ede502ad7f6ad6a
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
-ms.translationtype: MT
+ms.openlocfilehash: 52f04355a266f87a039b8197675c2f5377b840ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55922596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388310"
 ---
 # <a name="ca1053-static-holder-types-should-not-have-constructors"></a>CA1053: Tipos de suporte estático não devem ter construtores
 
@@ -40,12 +40,12 @@ ms.locfileid: "55922596"
  Para corrigir uma violação dessa regra, remova o construtor padrão ou torná-la particular.
 
 > [!NOTE]
->  Alguns compiladores criar automaticamente um construtor padrão público se o tipo de não definir nenhum construtor. Se esse for o caso com seu tipo, adicione um construtor padrão particular para eliminar a violação.
+> Alguns compiladores criar automaticamente um construtor padrão público se o tipo de não definir nenhum construtor. Se esse for o caso com seu tipo, adicione um construtor padrão particular para eliminar a violação.
 
 ## <a name="when-to-suppress-warnings"></a>Quando suprimir avisos
  Não suprima um aviso nessa regra. A presença do construtor sugere que o tipo não é um tipo estático.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir mostra um tipo que viola essa regra. Observe que não há nenhum construtor padrão no código-fonte. Quando esse código é compilado em um assembly, o compilador C# irá inserir um construtor padrão, que irá violar essa regra. Para corrigir isso, declare um construtor particular.
+ O exemplo a seguir mostra um tipo que viola essa regra. Observe que não há nenhum construtor padrão no código-fonte. Quando esse código é compilado em um assembly, o compilador c# irá inserir um construtor padrão, que irá violar essa regra. Para corrigir isso, declare um construtor particular.
 
  [!code-csharp[FxCop.Design.StaticTypes#1](../code-quality/codesnippet/CSharp/ca1053-static-holder-types-should-not-have-constructors_1.cs)]

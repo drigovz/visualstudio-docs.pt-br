@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7e7f70808ff91ec32ef52deedc05724f9bac3f7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 970f3828319e2e9c016baa66bb1e5fc2032b81ce
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079131"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387032"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>Como: Adicionar, atualizar ou remover uma referência do WCF Data Service
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Um *referência de serviço* permite que um projeto para acessar um ou mais [!IN
 2. No **endereço** caixa, digite a URL para o serviço e, em seguida, clique em **vá** para procurar o serviço. Se o serviço implementar segurança de nome e a senha do usuário, você será solicitado um nome de usuário e senha.  
   
     > [!NOTE]
-    >  Você só deve fazer referência a serviços de uma fonte confiável. A adição de referências de uma fonte não confiável pode comprometer a segurança.  
+    > Você só deve fazer referência a serviços de uma fonte confiável. A adição de referências de uma fonte não confiável pode comprometer a segurança.  
   
      Você também pode selecionar a URL do **endereço** lista, que armazena as URLs de 15 anteriores na qual os metadados de serviço válido foi encontrado.  
   
@@ -91,7 +91,7 @@ Um *referência de serviço* permite que um projeto para acessar um ou mais [!IN
      O cliente do serviço será removido da solução e os metadados que descrevem o serviço serão removido do arquivo App. config.  
   
     > [!NOTE]
-    >  Qualquer código que faz referência a referência de serviço precisará ser removido manualmente.  
+    > Qualquer código que faz referência a referência de serviço precisará ser removido manualmente.  
   
 ## <a name="see-also"></a>Consulte também  
  [Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

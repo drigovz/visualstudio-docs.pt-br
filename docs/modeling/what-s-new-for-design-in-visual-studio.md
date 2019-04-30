@@ -1,5 +1,5 @@
 ---
-title: O que há de novo no design no Visual Studio 2017
+title: Novidades no design no Visual Studio 2017
 titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,13 +14,13 @@ ms.workload:
 - multiple
 monikerRange: vs-2017
 ms.openlocfilehash: fb7ef710d117318d475e32f19b5ca2511b94f8bc
-ms.sourcegitcommit: f7c401a376ce410336846835332a693e6159c551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/14/2019
-ms.locfileid: "57869883"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386935"
 ---
-# <a name="whats-new-for-design-in-visual-studio-2017"></a>O que há de novo no design no Visual Studio 2017
+# <a name="whats-new-for-design-in-visual-studio-2017"></a>Novidades no design no Visual Studio 2017
 
 ## <a name="live-dependency-validation"></a>Validação de dependência dinâmica
 

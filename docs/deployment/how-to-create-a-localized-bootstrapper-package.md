@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a1a6b131e75e61e319a691a0b132bb57b7d0c227
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 856ea1e59a32a64c6a48b52c3ef1dcad9e0bbb80
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406840"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Como: Criar um pacote de bootstrapper localizado
 Depois de criar um pacote de bootstrapper, você pode criar versões localizadas desse pacote criando mais dois arquivos para cada localidade: um arquivo de termos de licença de software (como um *eula.rtf*) e um manifesto do pacote (*package.xml*).
@@ -31,7 +31,7 @@ Depois de criar um pacote de bootstrapper, você pode criar versões localizadas
 3. Crie um manifesto do pacote com o nome *package.xml*, atualize as cadeias de caracteres e cultura e coloque o arquivo na nova pasta. Se você já criou um bootstrapper do Visual Studio no idioma de destino, você pode copiar o arquivo *package.xml* do Visual Studio e modificá-lo nesta etapa.
 
 > [!NOTE]
->  Se você estiver usando um projeto de instalação para implantar aplicativos, você poderá localizar o aplicativo alterando a propriedade **Localização**.
+> Se você estiver usando um projeto de instalação para implantar aplicativos, você poderá localizar o aplicativo alterando a propriedade **Localização**.
 
  [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 

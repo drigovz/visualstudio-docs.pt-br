@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1b21f8c84082e19c1d9f43d6a2ae36d158a15c01
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612550"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63008684"
 ---
 # <a name="work-with-documents"></a>Trabalhar com documentos
   Os tópicos nesta seção fornecem procedimentos passo a passo e exemplos de código para usar o modelo de objeto do Microsoft Office Word para trabalhar com documentos em projetos do Office.

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 67e32d855ec6d0c172542cbdacc235f6b3e1b003
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: bc9981d324fe61cd3afe6cce4bc08d7b9b686c7f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604438"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402616"
 ---
 # <a name="class-hierarchy-of-symbol-types"></a>Hierarquia de classes de tipos de símbolos
 A tabela a seguir descreve os tipos de símbolo na hierarquia de classe.
@@ -43,7 +43,7 @@ A tabela a seguir descreve os tipos de símbolo na hierarquia de classe.
 |[Dimensão](../../debugger/debug-interface-access/dimension.md)|Símbolo de dimensões de matriz.|
 
 > [!NOTE]
->  Cada símbolo pode ter propriedades que contêm informações sobre o símbolo, bem como referências a outros símbolos. Essas propriedades são listadas nos tópicos individuais de símbolo.
+> Cada símbolo pode ter propriedades que contêm informações sobre o símbolo, bem como referências a outros símbolos. Essas propriedades são listadas nos tópicos individuais de símbolo.
 
 ## <a name="see-also"></a>Consulte também
 - [Enumeração CV_access_e](../../debugger/debug-interface-access/cv-access-e.md)

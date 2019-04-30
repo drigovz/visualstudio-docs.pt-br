@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 395c45b19559833549c9613278f1a4ddbb06f30a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ffd060ca442d0979c76781ae4467b28af69a42b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104052"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415199"
 ---
 # <a name="expose-types-to-visual-designers"></a>Expor tipos aos designers visuais
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve ter acesso a definições de classe e tipo em tempo de design para exibir um designer visual. As classes são carregadas de um conjunto predefinido de assemblies que incluem o conjunto completo de dependência do projeto atual (referências além de suas dependências). Ele também pode ser necessário para designers visuais classes de acesso e tipos que são definidos nos arquivos gerados por ferramentas personalizadas.
@@ -27,7 +27,7 @@ ms.locfileid: "60104052"
  O sistema de projeto fornece suporte completo para o controle de alterações ao arquivo de saída de uma ferramenta personalizada, desde que essas alterações são o resultado da execução da ferramenta personalizada. Cada vez que a ferramenta personalizada é executada, um novo PE temporário é gerado e são enviadas notificações apropriadas para designers.
 
 > [!NOTE]
->  Porque o arquivo de geração de executáveis de programas temporários ocorre em segundo plano, sem erros são relatados para o usuário se a compilação falhará.
+> Porque o arquivo de geração de executáveis de programas temporários ocorre em segundo plano, sem erros são relatados para o usuário se a compilação falhará.
 
  Ferramentas personalizadas que tiram proveito do suporte de PE temporário devem seguir as regras a seguir:
 

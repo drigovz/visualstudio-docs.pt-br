@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c1e6aa853d2f8202ed42652a0d0f70a7300c0b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5069f6d45d72606bce7de2866c6328864fcde21f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433254"
 ---
 # <a name="customizing-text-and-image-fields"></a>Personalizando campos de texto e imagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -93,7 +93,7 @@ public virtual StyleSetResourceId GetFontId(ShapeElement parentShape)
  Se não, em seguida, substituir os `InitializeShapeFields` método de sua classe shape e atribuir um valor a apropriado `Default...` propriedade do campo de texto.  
   
 > [!WARNING]
->  Para substituir `InitializeShapeFields()`, você deve definir o **gera derivado duplo** propriedade da classe shape para `true` na definição de DSL.  
+> Para substituir `InitializeShapeFields()`, você deve definir o **gera derivado duplo** propriedade da classe shape para `true` na definição de DSL.  
   
  Neste exemplo, uma forma tem um campo de texto que será usado para comentários do usuário. Queremos usar a fonte de comentário padrão. Porque é uma fonte padrão do conjunto de estilo, podemos definir a id da fonte padrão:  
   
@@ -202,7 +202,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  Este exemplo faz um ícone Alterar dependente do estado do elemento de modelo da forma.  
   
 > [!WARNING]
->  Este exemplo demonstra como fazer um decorador de imagem dinâmica. Mas se você quiser alternar entre uma ou duas imagens, dependendo do estado de uma variável de modelo, é mais simples de criar vários decoradores de imagem, localizá-los na mesma posição na forma e, em seguida, defina o filtro de visibilidade dependem de valores específicos do modelo variável. Para definir esse filtro, selecione o mapa de formas na definição de DSL, abra a janela de detalhes de DSL e clique na guia de decoradores.  
+> Este exemplo demonstra como fazer um decorador de imagem dinâmica. Mas se você quiser alternar entre uma ou duas imagens, dependendo do estado de uma variável de modelo, é mais simples de criar vários decoradores de imagem, localizá-los na mesma posição na forma e, em seguida, defina o filtro de visibilidade dependem de valores específicos do modelo variável. Para definir esse filtro, selecione o mapa de formas na definição de DSL, abra a janela de detalhes de DSL e clique na guia de decoradores.  
   
  Para executar esse código de exemplo, crie uma nova solução DSL usando o modelo de linguagem mínima. Adicionar uma propriedade de domínio booliano `AlternateState` à classe de domínio ExampleElement. Adicione um decorador de ícone para a classe ExampleShape e defina sua imagem para um arquivo de bitmap. Clique em **transformar todos os modelos**. Adicione um novo arquivo de código no projeto DSL e insira o código a seguir.  
   

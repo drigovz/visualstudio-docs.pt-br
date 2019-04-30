@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 29b730bacd589e7b42b9f87086eda91d9e199622
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 8579504f549cb078fee178127c7396896fce5313
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59504413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63399355"
 ---
 # <a name="general-debugging-options"></a>Opções gerais de depuração
 
@@ -85,7 +85,7 @@ Em condições de 2 e 3, a exceção é às vezes detectada pelo código gerenci
 **Habilitar suporte de Link de Origem**: Informa o depurador do Visual Studio para baixar os arquivos de origem *. PDB* arquivos que contêm informações de Link de origem. Para obter mais informações sobre o Link de origem, consulte a [especificação de link de origem](https://github.com/dotnet/core/blob/master/Documentation/diagnostics/source_link.md).
 
 > [!IMPORTANT]
->  Porque vínculo da fonte será baixar arquivos usando http ou https, verifique se você confia as *. PDB* arquivo.
+> Porque vínculo da fonte será baixar arquivos usando http ou https, verifique se você confia as *. PDB* arquivo.
 
 - **Fazer o fallback para autenticação de Gerenciador de Credenciais do Git para todas as solicitações de Vínculo da Fonte**:   Quando o suporte de Link de origem está habilitado e uma solicitação de Link de origem falhar na autenticação, o Visual Studio, em seguida, chama o Gerenciador de credenciais do Git.
 

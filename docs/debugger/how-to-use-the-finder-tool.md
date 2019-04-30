@@ -1,5 +1,5 @@
 ---
-title: 'Como: usar a ferramenta localizador | Microsoft Docs'
+title: 'Como: Usar a ferramenta localizador | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,14 +10,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42cd2ec74c92bce545c459765f32eea479a2d5b3
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MTE95
+ms.openlocfilehash: 5bf3fcf00486ebb8ec54f2d692d483a7f9cf18d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56694615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63387661"
 ---
-# <a name="how-to-use-the-finder-tool"></a>Como usar a ferramenta Localizador
+# <a name="how-to-use-the-finder-tool"></a>Como: Usar a ferramenta Localizador
 Você pode usar a ferramenta de localização na **localizar janela** caixa de diálogo para exibir propriedades da janela ou mensagens. A ferramenta localizador também poderá localizar janelas filho desabilitadas e distinguir qual janela para realçar se desabilitada a janelas filho se sobrepuserem.
 
  ![Spy&#43; &#43; caixa de diálogo Localizar janela](../debugger/media/icon_spy--_find.png "Icon_Spy + + Find") ferramenta Descobridora na caixa de diálogo Localizar janela
@@ -41,7 +41,7 @@ Você pode usar a ferramenta de localização na **localizar janela** caixa de d
      Se você tiver o identificador da janela que você deseja examinar (por exemplo, copiado do depurador), digite-o para o **manipular** caixa de texto.
 
    > [!TIP]
-   >  Para reduzir a desordem na tela, selecione a **Spy ocultar** opção. Esta opção oculta a janela principal do Spy + +, deixando apenas o **localizar janela** caixa de diálogo visível na parte superior de seus outros aplicativos. A janela principal do Spy + + é restaurada quando você clica **Okey** ou **Cancelar**, ou quando você desmarca a **ocultar Spy + +** opção.
+   > Para reduzir a desordem na tela, selecione a **Spy ocultar** opção. Esta opção oculta a janela principal do Spy + +, deixando apenas o **localizar janela** caixa de diálogo visível na parte superior de seus outros aplicativos. A janela principal do Spy + + é restaurada quando você clica **Okey** ou **Cancelar**, ou quando você desmarca a **ocultar Spy + +** opção.
 
 4. Sob **mostram**, selecione **Properties** ou **mensagens**.
 
