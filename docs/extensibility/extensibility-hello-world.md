@@ -9,11 +9,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3beedce039d1c093b5dfebce07b09d7d3a5795dc
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58194730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62912217"
 ---
 # <a name="create-your-first-extension-hello-world"></a>Crie sua primeira extensão: Hello World
 
@@ -26,7 +26,7 @@ O processo, você aprenderá como:
 * **[Modificar o código-fonte](#modify-the-source-code)**
 * **[Executá-lo](#run-it)**
 
-Neste exemplo, você usará o Visual C# para adicionar que um botão de menu personalizado chamado "Diga Hello World!" Isso se parece com isso:
+Neste exemplo, você usará o Visual c# para adicionar que um botão de menu personalizado chamado "Diga Hello World!" Isso se parece com isso:
 
 ![Comando do Hello World](media/hello-world-say-hello-world.png)
 

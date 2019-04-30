@@ -10,11 +10,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: 41baf6b8405e45600050e508b7fd7523e19533ca
-ms.sourcegitcommit: 2193323efc608118e0ce6f6b2ff532f158245d56
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/25/2019
-ms.locfileid: "55025716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62926587"
 ---
 # <a name="buildprojectonload-element-visual-studio-templates"></a>Elemento buildProjectOnload (modelos do Visual Studio)
 Como criar e adicioná-los a uma solução se baseia somente novos projetos. A solução inteira não é criada.
@@ -57,7 +57,7 @@ Hierarquia de elemento:
  `BuildProjectOnLoad` é um elemento opcional. O valor padrão é `false`.
 
 ## <a name="example"></a>Exemplo
- O exemplo a seguir ilustra os metadados para um modelo do Visual C#.
+ O exemplo a seguir ilustra os metadados para um modelo do Visual c#.
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
