@@ -19,11 +19,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e934832f20ea7ab11484cdeb345f989aa842e06d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097007"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62928350"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>Como: Assinar novamente os manifestos de aplicativo e de implantação
 Depois de fazer alterações às propriedades de implantação no manifesto do aplicativo para aplicativos do Windows Forms, aplicativos do Windows Presentation Foundation (xbap) ou soluções do Office, você deve reassinar o aplicativo e manifestos de implantação com um certificado. Esse processo ajuda a garantir que arquivos violados não sejam instalados nos computadores dos usuários finais.

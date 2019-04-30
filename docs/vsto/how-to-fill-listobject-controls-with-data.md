@@ -18,11 +18,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: f65f6de7cfb336eb001de47fb6562b7200391419
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62967972"
 ---
 # <a name="how-to-fill-listobject-controls-with-data"></a>Como: Preencher controles ListObject com dados
   Você pode usar a vinculação de dados como uma maneira de adicionar rapidamente os dados para seu documento. Após a vinculação de dados para um objeto de lista, você pode desconectar o objeto de lista para que ele exibe os dados, mas não está mais ligado à fonte de dados.

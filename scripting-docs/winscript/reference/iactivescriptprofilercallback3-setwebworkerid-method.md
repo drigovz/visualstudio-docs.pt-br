@@ -12,11 +12,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 0798a23b4c8ad4e5859bec73ebfed47a56b322d6
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58151291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993097"
 ---
 # <a name="iactivescriptprofilercallback3setwebworkerid-method"></a>Método IActiveScriptProfilerCallback3::SetWebWorkerId
 Notifica o criador de perfil sobre a ID do trabalho a ser usado para esta sessão de criação de perfil. Se a função não estiver em execução no contexto da página, esse método não é invocado. O valor de `webWorkerId` aumenta em incrementos de 1 para cada funcionário, começando em 1. Os valores de ID não pretendem ser estável, além de uma sessão e correspondem somente à ordem em que os trabalhos foram criados.  

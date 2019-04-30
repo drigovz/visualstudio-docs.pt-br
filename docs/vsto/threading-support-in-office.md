@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3218a12add86739c76cd50f82fdda5d845e2b069
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56620324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978761"
 ---
 # <a name="threading-support-in-office"></a>Suporte a Threading no Office
   Este artigo fornece informações sobre como threading é suportado no modelo de objeto do Microsoft Office. O modelo de objeto do Office não é thread-safe, mas é possível trabalhar com vários threads em uma solução do Office. Aplicativos do Office são servidores do modelo de objeto de componente (COM). COM permite que os clientes chamar servidores COM em threads arbitrários. Para servidores COM que não são thread-safe, COM fornece um mecanismo para serializar as chamadas simultâneas para que apenas um thread lógico seja executado no servidor a qualquer momento. Esse mecanismo é conhecido como o modelo de single-threaded apartment (STA). Porque as chamadas são serializadas, os chamadores podem ser bloqueados por períodos de tempo enquanto o servidor está ocupado ou está manipulando outras chamadas em um thread em segundo plano.

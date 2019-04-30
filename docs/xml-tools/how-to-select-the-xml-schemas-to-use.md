@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 41f830214b20df24587cf902e6b180e8a43a8cd3
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526666"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007382"
 ---
-# <a name="how-to-select-the-xml-schemas-to-use"></a>Como: Selecione os esquemas XML para usar
+# <a name="how-to-select-the-xml-schemas-to-use"></a>Como: Selecionar os esquemas XML que serão usados
 
 O editor XML fornece um cache de esquema localizado na *%VSInstallDir%\xml\Schemas* directory. O cache de esquema inclui esquemas XML conhecidos que são usados para validação do IntelliSense e de documento XML.
 
@@ -40,7 +40,7 @@ Os esquemas que você especifica são salvos em um arquivo de opções do usuár
 
    - Selecione um esquema listado na **esquemas XML** caixa de diálogo, clique o **uso** coluna e, em seguida, selecione **usar este esquema**.
 
-     -ou-
+     - ou -
 
    - Selecione vários esquemas listados na **esquemas XML** caixa de diálogo e, em seguida, o botão direito do mouse e selecione **usar este esquema**.
 
