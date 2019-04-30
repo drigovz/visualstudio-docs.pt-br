@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: aabd45871e55fd22b9b9e35597555fd13b15d6eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62981670"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>Passo a passo: Associação de dados complexos em um projeto de nível de documento
   Este passo a passo demonstra as Noções básicas de vinculação de dados complexos em um projeto de nível de documento. Você pode vincular várias células em uma planilha do Microsoft Office Excel para os campos no banco de dados Northwind do SQL Server.

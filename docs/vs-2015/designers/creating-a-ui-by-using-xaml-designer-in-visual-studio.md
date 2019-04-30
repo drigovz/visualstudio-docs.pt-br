@@ -15,11 +15,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: c928d9f939db96ae302620952bbb6bbdedc396a3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795163"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62580609"
 ---
 # <a name="creating-a-ui-by-using-xaml-designer-in-visual-studio"></a>Criando uma interface de usuário usando o XAML Designer no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -89,7 +89,7 @@ O Designer XAML no Visual Studio fornece uma interface visual para ajudá-lo a c
 
  **Orientação** Especifica diferentes orientações para o aplicativo: **Paisagem** ou **Retrato**.
 
- **Borda** Especifica diferentes alinhamentos de borda para o aplicativo: **Ambos**, **Esquerda**, **Direita** ou **Nenhum**.
+ **Borda** Especifica diferentes alinhamentos de borda para seu aplicativo: **Ambos**, **Esquerda**, **Direita** ou **Nenhum**.
 
  **Alto Contraste** Visualize o aplicativo com base na configuração de contraste selecionada. Essa configuração, quando definida como um valor diferente do valor **Padrão**, substituirá a propriedade `RequestedTheme` definida no arquivo App.xaml.
 

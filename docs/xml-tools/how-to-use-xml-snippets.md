@@ -9,13 +9,13 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: e4a56249c0a87b2516dc233818208f7c7c4b696e
-ms.sourcegitcommit: 3ca33862c1cfc3ccb83de3e95f1e69e860ab143a
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/06/2019
-ms.locfileid: "57526211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002060"
 ---
-# <a name="how-to-use-xml-snippets"></a>Como: Usar trechos de código XML
+# <a name="how-to-use-xml-snippets"></a>Como: Usar snippets XML
 
 Você pode chamar trechos XML usando dois comandos a seguir no menu de atalho do editor de XML. O **Inserir trecho** comando insere o trecho XML a posição do cursor. O **envolver com** comando encapsula o trecho XML ao redor do texto selecionado. Cada snippets XML designou tipos de snippets. Os tipos de trecho determinam se o trecho de código está disponível com o **Inserir trecho** comando, o **envolver com** , ou ambos.
 
@@ -98,7 +98,7 @@ Os procedimentos a seguir descrevem como acessar o **envolver com** comando.
 
 3. Selecione um trecho de lista usando o mouse ou digitando o nome do trecho de código e pressionar **guia** ou **Enter**.
 
-## <a name="use-xml-snippets"></a>Usar trechos de código XML
+## <a name="use-xml-snippets"></a>Usar snippets XML
 
 Uma vez que você escolher um snippet XML, o texto de snippet de código é inserido automaticamente a posição do cursor. Todos os campos editáveis no snippet são realçadas, e o primeiro campo editável é automaticamente selecionado. O campo selecionado é convertido.
 

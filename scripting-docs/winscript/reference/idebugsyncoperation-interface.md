@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7184be62a8ad2b65e81d1ad82f01f0ce3f4668c5
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58146377"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63004885"
 ---
 # <a name="idebugsyncoperation-interface"></a>Interface IDebugSyncOperation
 Permite que um mecanismo de script extraia uma operação que precisa ser executada enquanto aninhado em um thread bloqueado específico (por exemplo, a avaliação de expressão). A interface também fornece um mecanismo para cancelar operações sem resposta.  

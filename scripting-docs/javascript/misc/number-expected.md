@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: e07b9e55ddfff54d0668433137079a38c0ddd296
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007416"
 ---
 # <a name="number-expected"></a>Número esperado
 Você tentou invocar o **Number.prototype.toString** ou **Number.prototype.valueOf** método em um objeto de um tipo diferente de **número**. O objeto desse tipo de invocação deve ser do tipo **número**.  

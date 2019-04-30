@@ -14,11 +14,11 @@ ms.assetid: a7536f82-afd7-4894-9a60-84307fb92b7e
 caps.latest.revision: 13
 manager: jillfra
 ms.openlocfilehash: 6296993d3a1f5039024556f09b721daa82ca4f53
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089257"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002446"
 ---
 # <a name="announcing-property-window-selection-tracking"></a>Anunciando a seleção da janela de propriedades de controle
 Se você quiser trabalhar com o **propriedades** janela ou o **propriedade** páginas, por exemplo, um formulário, texto ou uma seleção para o qual você deseja ver as propriedades, em seguida, você deve ter um conhecimento completo de como você Coordene a seleção. Por exemplo, você deve saber se você tem uma seleção única ou várias seleções. Em seguida, você precisa anunciar seu tipo de seleção (um ou vários) no IDE usando o <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> interface. Essa interface fornece informações necessárias para o **propriedades** janela.  

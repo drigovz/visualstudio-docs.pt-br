@@ -11,11 +11,11 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 ms.openlocfilehash: c71e33445db7745f71e374c586d079a9665776b2
-ms.sourcegitcommit: 116e9614867e0b3c627ce9001012a4c39435a42b
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/08/2019
-ms.locfileid: "54087888"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992491"
 ---
 # <a name="iactivescriptsitedebug32getapplication"></a>IActiveScriptSiteDebug32::GetApplication
 Retorna o objeto de aplicativo de depuração associado a este site de script.  
@@ -44,5 +44,5 @@ HRESULT GetApplication(
  O `GetApplication` método fornece uma maneira para um host inteligente definir o objeto de aplicativo ao qual pertence cada script. Mecanismos de script devem tentar chamar esse método para obter o seu aplicativo de contenção e recorrer a `IProcessDebugManager::GetDefaultApplication` no caso de falha.  
   
 ## <a name="see-also"></a>Consulte também  
- [Interface IActiveScriptSiteDebug32](../../winscript/reference/iactivescriptsitedebug32-interface.md)   
+ [IActiveScriptSiteDebug32 Interface](../../winscript/reference/iactivescriptsitedebug32-interface.md)   
  [IProcessDebugManager::GetDefaultApplication](../../winscript/reference/iprocessdebugmanager-getdefaultapplication.md)

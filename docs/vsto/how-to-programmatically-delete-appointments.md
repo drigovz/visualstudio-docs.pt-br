@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 1a5fc7f15a7fe4ec0f267eef669fc99af38375dc
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63001008"
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>Como: Excluir compromissos programaticamente
   Este exemplo exclui uma instância de um compromisso recorrente. O exemplo supõe que uma instância de um compromisso recorrente ocorre em 28 de junho de 2006 08:00.

@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: a5c6f44124ff49982d3821b1441eacf8dec7a666
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006984"
 ---
 # <a name="label-redefined"></a>Rótulo redefinido
 Você criou um novo rótulo, mas deu a ele o nome de um rótulo existente. Rótulos podem ser usados para marcar os blocos de código, mas em um escopo especificado, eles devem ser exclusivos.  
