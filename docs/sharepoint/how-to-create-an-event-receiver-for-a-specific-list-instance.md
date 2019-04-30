@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: deba5e493f58a99e672e362977406670e1eee0e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34114c12ef47fb796de7354aa3133af1fc704267
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408545"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>Como: Criar um receptor de evento para uma instância de lista específica
   Um receptor de evento da instância de lista responde a eventos que ocorrem em qualquer instância de uma definição de lista. Embora o modelo de receptor de evento não permite o direcionamento de uma instância de lista específica, você pode modificar um receptor de eventos com escopo em uma definição de lista para responder a eventos em uma instância de lista específica.
@@ -43,7 +43,7 @@ ms.locfileid: "60094340"
 6. No **que tipo de receptor de eventos você deseja?** , escolha **eventos de Item de lista**.
 
     > [!NOTE]
-    >  Você também pode selecionar qualquer outro tipo de receptor de evento que tem como escopo a uma definição de lista, por exemplo, **listar eventos de Email** ou **eventos de fluxo de trabalho de lista**.
+    > Você também pode selecionar qualquer outro tipo de receptor de evento que tem como escopo a uma definição de lista, por exemplo, **listar eventos de Email** ou **eventos de fluxo de trabalho de lista**.
 
 7. No **qual item deve ser a origem do evento?** , escolha **anúncios**.
 

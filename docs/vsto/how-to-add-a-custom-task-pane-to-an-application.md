@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 047728f00fae9dbf3cf2511300beaa84c2201cdd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88ac74d0e2c666926c5b88976146878991729628
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039824"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427917"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>Como: Adicionar um painel de tarefas personalizado a um aplicativo
   Você pode adicionar um painel de tarefas personalizado para os aplicativos listados acima por meio do suplemento do VSTO. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
@@ -26,7 +26,7 @@ ms.locfileid: "60039824"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="add-a-custom-task-pane-to-an-application"></a>Adicionar um painel de tarefas personalizado a um aplicativo
 
@@ -55,7 +55,7 @@ ms.locfileid: "60039824"
      [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]
 
     > [!NOTE]
-    >  Esse código associa o seu painel de tarefas personalizado com a janela ativa no aplicativo. Para alguns aplicativos, você talvez queira modificar este código para garantir que o painel de tarefas é exibida com outros documentos ou itens no aplicativo. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
+    > Esse código associa o seu painel de tarefas personalizado com a janela ativa no aplicativo. Para alguns aplicativos, você talvez queira modificar este código para garantir que o painel de tarefas é exibida com outros documentos ou itens no aplicativo. Para obter mais informações, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
 
 ## <a name="see-also"></a>Consulte também
 - [Personalização da interface do usuário do Office](../vsto/office-ui-customization.md)

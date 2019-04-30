@@ -37,12 +37,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a0edc40a8a6523c76a6b6f8074a108219152c06
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 51d361bf74fb1181c64e5299b0925c262f185e9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54756872"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426328"
 ---
 # <a name="finding-and-replacing-text"></a>Localizando e substituindo texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ ms.locfileid: "54756872"
  Para localizar e substituir expressões regulares, consulte [Usando expressões regulares no Visual Studio](../ide/using-regular-expressions-in-visual-studio.md).  
   
 > [!TIP]
->  A caixa **Localizar/Comando** ainda está disponível como um controle de barra de ferramentas, mas não fica mais visível por padrão. Você pode exibir a caixa **Localizar/Comando** escolhendo **Adicionar ou Remover Botões** na barra de ferramentas **Padrão** e escolhendo **Localizar**. Para obter mais informações, consulte [Caixa Localizar/Comando](../ide/find-command-box.md).  
+> A caixa **Localizar/Comando** ainda está disponível como um controle de barra de ferramentas, mas não fica mais visível por padrão. Você pode exibir a caixa **Localizar/Comando** escolhendo **Adicionar ou Remover Botões** na barra de ferramentas **Padrão** e escolhendo **Localizar**. Para obter mais informações, consulte [Caixa Localizar/Comando](../ide/find-command-box.md).  
   
 ## <a name="find-and-replace-control"></a>Controle Localizar e Substituir  
  O controle **Localizar e Substituir** aparece no canto superior direito da janela do editor de código. O controle **Localizar e Substituir** realça imediatamente todas as ocorrências da cadeia de caracteres de pesquisa fornecida no documento atual. Você pode navegar de uma ocorrência para outra escolhendo o botão **Localizar próximo** ou o botão **Localizar anterior** no controle de pesquisa.  

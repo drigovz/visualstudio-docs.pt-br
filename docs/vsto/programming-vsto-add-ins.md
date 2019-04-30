@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6b9b809750e658b6a5e496e2d90b7b396157f87a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e5de89bdeade136577e05c700ec242a956a03455
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079001"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425843"
 ---
 # <a name="program-vsto-add-ins"></a>Suplementos do VSTO do programa
   Quando você estende um aplicativo do Microsoft Office, criando um suplemento do VSTO, você escreve código diretamente no `ThisAddIn` classe em seu projeto. Você pode usar essa classe para executar tarefas como acessar o modelo de objeto do aplicativo host do Microsoft Office, personalizando a interface do usuário (IU) do aplicativo e expor objetos no seu suplemento do VSTO para outras soluções do Office.
@@ -54,7 +54,7 @@ ms.locfileid: "60079001"
  Há dois manipuladores de eventos padrão no `ThisAddIn` classe. Para executar código quando o suplemento do VSTO é carregado, adicione código para o `ThisAddIn_Startup` manipulador de eventos. Para executar código antes que o suplemento do VSTO é descarregado, adicione código para o `ThisAddIn_Shutdown` manipulador de eventos. Para obter mais informações sobre esses manipuladores de eventos, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
 
 > [!NOTE]
->  No Outlook, por padrão o `ThisAddIn_Shutdown` manipulador de eventos não é sempre chamado quando o suplemento do VSTO é descarregado. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
+> No Outlook, por padrão o `ThisAddIn_Shutdown` manipulador de eventos não é sempre chamado quando o suplemento do VSTO é descarregado. Para obter mais informações, consulte [eventos em projetos do Office](../vsto/events-in-office-projects.md).
 
 ### <a name="access-the-object-model-of-the-host-application"></a>Acessar o modelo de objeto do aplicativo host
  Para acessar o modelo de objeto do aplicativo host, use o `Application` campo do `ThisAddIn` classe. Esse campo retorna um objeto que representa a instância atual do aplicativo host. A tabela a seguir lista o tipo do valor de retorno para o `Application` campo em cada projeto de suplemento do VSTO.

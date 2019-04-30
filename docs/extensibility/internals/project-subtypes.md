@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 027dc559c33b5b8f10a4555985e8b2a5a5a416c5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 73cf7fe43dcbe15bdeedf6822c9172533e6d420b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56604932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423059"
 ---
 # <a name="project-subtypes"></a>Subtipos de projeto
 Subtipos do projeto permitem que você personalize ou flavor o comportamento dos sistemas de projeto [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]. As personalizações incluem salvando dados adicionais no arquivo de projeto, adicionando ou filtrando itens na **Adicionar Novo Item** caixa de diálogo, controlando como os assemblies são depurados e implantados e estendendo o projeto **propriedade Páginas** caixa de diálogo. Os VSPackages implementar subtipos de projeto usando a agregação COM.
 
 > [!NOTE]
->  O sistema de projeto do Visual C++ não oferece suporte para os subtipos de projeto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] em si usa subtipos do projeto para implementar projetos de dispositivo inteligente e do SQL Server.
+> O sistema de projeto do Visual C++ não oferece suporte para os subtipos de projeto. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] em si usa subtipos do projeto para implementar projetos de dispositivo inteligente e do SQL Server.
 
 ## <a name="in-this-section"></a>Nesta seção
 - [Design de subtipos de projeto](../../extensibility/internals/project-subtypes-design.md)

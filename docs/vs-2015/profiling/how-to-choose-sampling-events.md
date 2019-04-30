@@ -19,12 +19,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 50b9fcb98b64e36d37ec2153588dcbb388ea960b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 017414bdbf8e0e1a3a664782aab1ea44bda030c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105494"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432829"
 ---
 # <a name="how-to-choose-sampling-events"></a>Como: Escolher eventos de amostragem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ Por padrão, as ferramentas de criação de perfil do [!INCLUDE[vsprvs](../inclu
 - Contador de desempenho – contadores de CPU para problemas de baixo desempenho.  
   
 > [!IMPORTANT]
->  Se você estiver coletando dados de memória do .NET (alocações, tempos de vida do objeto ou ambos) usando o método de amostragem, todos os eventos de amostragem especificados pelo usuário serão ignorados e os eventos de alocação de memória ou de coleta de lixo adequados ou ambos, serão usados para coletar dados.  
+> Se você estiver coletando dados de memória do .NET (alocações, tempos de vida do objeto ou ambos) usando o método de amostragem, todos os eventos de amostragem especificados pelo usuário serão ignorados e os eventos de alocação de memória ou de coleta de lixo adequados ou ambos, serão usados para coletar dados.  
   
 ### <a name="to-select-a-sample-event"></a>Para selecionar um evento de amostragem  
   
@@ -51,7 +51,7 @@ Por padrão, as ferramentas de criação de perfil do [!INCLUDE[vsprvs](../inclu
 3. Na lista suspensa **Evento de amostra**, selecione o evento de amostragem que você deseja usar para criar o perfil de seu aplicativo.  
   
     > [!NOTE]
-    >  Os **Contadores de desempenho disponíveis** serão habilitados somente se você selecionar **Contador de desempenho** na lista suspensa **Evento de amostra**.  
+    > Os **Contadores de desempenho disponíveis** serão habilitados somente se você selecionar **Contador de desempenho** na lista suspensa **Evento de amostra**.  
   
 4. Se você selecionar **Contador de desempenho**, selecione um contador de CPU específico no controle de exibição de árvore **Contadores de desempenho disponíveis**.  
   

@@ -16,12 +16,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1f4788ab9fa23049ded8107fe1d33a9419b79c00
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b14a374214a605ec718ad60c6942752f3134edd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091233"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416730"
 ---
 # <a name="how-to-locate-and-organize-project-and-item-templates"></a>Como: Localizar e organizar projeto e modelos de Item
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Arquivos de modelo devem ser colocados em um local reconhecido pelo Visual Studi
  As categorias nas caixas de diálogo **Novo Projeto** e **Adicionar Novo Item** refletem as estruturas de diretório que existem nos locais dos modelos instalados e personalizados. É possível modificar essas estruturas de diretório para organizar seus modelos de forma que faça sentido para você.  
   
 > [!NOTE]
->  Você não pode criar uma nova categoria no nível da linguagem de programação. Novas categorias podem ser criadas apenas dentro de cada linguagem.  
+> Você não pode criar uma nova categoria no nível da linguagem de programação. Novas categorias podem ser criadas apenas dentro de cada linguagem.  
   
  Se as estruturas de diretório dos modelos instalados e personalizados de uma determinada linguagem não tiverem a mesma estrutura (ou seja, se houver diretórios dentro de uma pasta que não existem em outra), o conjunto de categorias que aparecem na caixa de diálogo **Novo Projeto** será a fusão de todas as categorias.  
   

@@ -8,12 +8,12 @@ ms.assetid: adb6c011-5abd-41d2-8ead-08cd7579bf37
 caps.latest.revision: 14
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e31f0170d10e3b8088ec9860a6bb9a3ad5306b0f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4e8b2c26050fd3e78e76b93e6372a03836916387
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416354"
 ---
 # <a name="how-to-configure-unit-tests-to-target-an-earlier-version-of-the-net-framework"></a>Como: Configurar testes de unidade para usar uma versão anterior do .NET Framework como destino
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ Quando você cria um projeto de teste no Microsoft Visual Studio, a versão mais
      A caixa de diálogo **Novo Projeto** é exibida.  
   
     > [!WARNING]
-    >  Para compilar testes de unidade do C++/CLI para uma versão anterior do .NET Framework para o Visual C++, é necessário usar a versão correspondente do Visual Studio. Por exemplo, para direcionar para o .NET Framework 3.5, é necessário instalar o [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] e o [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] Service Pack 1.  
+    > Para compilar testes de unidade do C++/CLI para uma versão anterior do .NET Framework para o Visual C++, é necessário usar a versão correspondente do Visual Studio. Por exemplo, para direcionar para o .NET Framework 3.5, é necessário instalar o [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] e o [!INCLUDE[vs_orcas_long](../includes/vs-orcas-long-md.md)] Service Pack 1.  
   
 2. Em **Modelos Instalados**, expanda **Visual C++**. Selecione **Testar** e, em seguida, selecione o modelo de **Projeto de Teste**.  
   

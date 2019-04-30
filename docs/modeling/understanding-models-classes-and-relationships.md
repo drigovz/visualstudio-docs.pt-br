@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d486ae5c056be37c0284d39fabaa6945f5c91659
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d629c0049966d0520e0e40d23b0fd41798ccf2b6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045025"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63386976"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>Noções básicas sobre modelos, classes e relações
 Uma linguagem específica de domínio (DSL) é definida por seu arquivo de definição de DSL, junto com qualquer código de programa personalizado você pode escrever. A maioria do código do programa na solução DSL é gerada a partir desse arquivo.
@@ -93,7 +93,7 @@ Uma linguagem específica de domínio (DSL) é definida por seu arquivo de defin
  Quando um modelo é salvo para o arquivo no formato XML, os elementos incorporados estão aninhados dentro de seus pais, a menos que você personalizou a serialização.
 
 > [!NOTE]
->  Incorporação não é o mesmo que herança. Filhos em uma relação de incorporação não herdam as propriedades do pai. Uma inserção é um tipo de link entre os elementos de modelo. Herança é uma relação entre classes e não criar links entre elementos de modelo.
+> Incorporação não é o mesmo que herança. Filhos em uma relação de incorporação não herdam as propriedades do pai. Uma inserção é um tipo de link entre os elementos de modelo. Herança é uma relação entre classes e não criar links entre elementos de modelo.
 
 ### <a name="embedding-rules"></a>Regras de incorporação
  Todos os elementos em um modelo de instância devem ser o destino de exatamente um link de incorporação, exceto para a raiz do modelo.

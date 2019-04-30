@@ -12,22 +12,22 @@ ms.assetid: 7b5578b4-a20a-4b94-ad4c-98687ac133b9
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c99943a2f0ebd05236caf7706021cfb8ac58fa84
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6096f89a36cdd47d2dec68af5801a94dc77acb43
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924404"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408552"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>Estrutura de tópicos em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-Estrutura de tópicos torna possível recolher um programa complexo em uma visão geral ou a estrutura de tópicos. Por exemplo, no C# todos os métodos podem ser recolhidos para uma única linha, mostrando apenas a assinatura do método. Além disso, as estruturas e classes podem ser recolhidas para mostrar somente os nomes das estruturas e classes. Dentro de um único método, uma lógica complexa pode ser recolhida para mostrar o fluxo geral mostrando apenas a primeira linha de instruções, como `foreach`, `if`, e `while`.  
+Estrutura de tópicos torna possível recolher um programa complexo em uma visão geral ou a estrutura de tópicos. Por exemplo, no c# todos os métodos podem ser recolhidos para uma única linha, mostrando apenas a assinatura do método. Além disso, as estruturas e classes podem ser recolhidas para mostrar somente os nomes das estruturas e classes. Dentro de um único método, uma lógica complexa pode ser recolhida para mostrar o fluxo geral mostrando apenas a primeira linha de instruções, como `foreach`, `if`, e `while`.  
   
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações, consulte [passo a passo: Estrutura de tópicos](../../extensibility/walkthrough-outlining.md).  
   
 > [!NOTE]
->  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
+> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
   
 ## <a name="enabling-support-for-outlining"></a>Habilitando o suporte para a estrutura de tópicos  
  O `AutoOutlining` entrada do registro é definida como 1 para habilitar a estrutura de tópicos automática. Estrutura de tópicos automática configura uma análise da fonte inteira quando um arquivo for carregado ou alterado para identificar regiões ocultas e mostrar os glifos de estrutura de tópicos. Estrutura de tópicos também pode ser controlada manualmente pelo usuário.  
@@ -35,7 +35,7 @@ Estrutura de tópicos torna possível recolher um programa complexo em uma visã
  O valor da `AutoOutlining` entrada de registro pode ser obtida por meio do <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> propriedade no <xref:Microsoft.VisualStudio.Package.LanguagePreferences> classe. O `AutoOutlining` entrada de registro pode ser inicializada com um parâmetro nomeado para o <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute> atributo (consulte [Registrando um serviço de linguagem herdado](../../extensibility/internals/registering-a-legacy-language-service1.md) para obter detalhes).  
   
 ## <a name="the-hidden-region"></a>A região oculta  
- Para fornecer a estrutura de tópicos, o serviço de linguagem deve dar suporte a regiões ocultas. Esses são os intervalos de texto que podem ser expandidos ou recolhidos. Regiões ocultas podem ser delimitados por símbolos de idioma padrão, como chaves, ou por símbolos personalizados. Por exemplo, o C# tem um `#region` / `#endregion` par que delimita uma região oculta.  
+ Para fornecer a estrutura de tópicos, o serviço de linguagem deve dar suporte a regiões ocultas. Esses são os intervalos de texto que podem ser expandidos ou recolhidos. Regiões ocultas podem ser delimitados por símbolos de idioma padrão, como chaves, ou por símbolos personalizados. Por exemplo, o c# tem um `#region` / `#endregion` par que delimita uma região oculta.  
   
  Regiões ocultas são gerenciados por um Gerenciador de região oculta, que é exposto como o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextSession> interface.  
   
@@ -48,7 +48,7 @@ Estrutura de tópicos torna possível recolher um programa complexo em uma visã
 ### <a name="example"></a>Exemplo  
  Aqui está um exemplo simplificado de criação de regiões ocultas para todos os pares de chaves. Supõe-se que a linguagem fornece a correspondência de chaves e as chaves a serem correspondidos incluem pelo menos as chaves ({e}). Essa abordagem é apenas para fins ilustrativos. Uma implementação completa teria um tratamento completo de casos no <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A>. Este exemplo também mostra como definir a <xref:Microsoft.VisualStudio.Package.LanguagePreferences.AutoOutlining%2A> preferência para `true` temporariamente. Uma alternativa é especificar o `AutoOutlining` parâmetro no nomeado o `ProvideLanguageServiceAttribute` atributo em seu pacote de idiomas.  
   
- Este exemplo presume C# regras para comentários, cadeias de caracteres e literais.  
+ Este exemplo presume c# regras para comentários, cadeias de caracteres e literais.  
   
 ```csharp  
 using Microsoft.VisualStudio.Package;  

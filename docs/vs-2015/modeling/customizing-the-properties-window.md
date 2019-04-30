@@ -11,12 +11,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c346cc488966448cc1b77b624c80fe602555840
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e391e21ac16bdbee9fc2881b264f964a4b28cc0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433226"
 ---
 # <a name="customizing-the-properties-window"></a>Personalizando a janela de propriedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Você pode personalizar a aparência e comportamento da janela Propriedades em s
  Para encaminhar uma propriedade, você deve definir um descritor de tipo de domínio. Se você tiver uma relação de domínio entre duas classes de domínio, você pode usar um descritor de tipo de domínio para definir uma propriedade de domínio na primeira classe para o valor de uma propriedade de domínio na classe de domínio de segundo. Por exemplo, se você tiver uma relação entre um **livro** classe de domínio e um **autor** classe de domínio, você pode usar um descritor de tipo de domínio para fazer o **nome** propriedade de um Do livro **autor** aparecem na janela Propriedades quando o usuário seleciona o livro.  
   
 > [!NOTE]
->  Encaminhamento de propriedade afeta somente a janela de propriedades quando o usuário está editando um modelo. Ele não define uma propriedade de domínio na classe de recebimento. Se você quiser acessar a propriedade de domínio encaminhados em outras partes da definição de DSL ou no código do programa, você deve acessar o elemento de encaminhamento.  
+> Encaminhamento de propriedade afeta somente a janela de propriedades quando o usuário está editando um modelo. Ele não define uma propriedade de domínio na classe de recebimento. Se você quiser acessar a propriedade de domínio encaminhados em outras partes da definição de DSL ou no código do programa, você deve acessar o elemento de encaminhamento.  
   
  O procedimento a seguir pressupõe que você tenha criado uma DSL. As primeiro algumas etapas resumem os pré-requisitos.  
   
@@ -121,7 +121,7 @@ Você pode personalizar a aparência e comportamento da janela Propriedades em s
         Uma nova entrada aparece sob o **tipos de domínio** nó.  
   
        > [!WARNING]
-       >  O item de menu não está no nó raiz do DSL, o **tipos de domínio** nó.  
+       > O item de menu não está no nó raiz do DSL, o **tipos de domínio** nó.  
   
    2. Na janela Propriedades, defina o nome e o namespace do novo tipo.  
   
@@ -182,7 +182,7 @@ Você pode personalizar a aparência e comportamento da janela Propriedades em s
   Você também pode fornecer uma representação gráfica do valor da propriedade que será exibido na grade de propriedade. Para fazer isso, substitua `GetPaintValueSupported`, e `PaintValue`.  Para obter mais informações, consulte <xref:System.Drawing.Design.UITypeEditor>.  
   
 > [!NOTE]
->  Adicione o código em um arquivo de código separado na **Dsl** projeto.  
+> Adicione o código em um arquivo de código separado na **Dsl** projeto.  
   
  Por exemplo:  
   
@@ -214,7 +214,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
  Você pode fornecer uma lista de valores para um usuário à sua escolha.  
   
 > [!NOTE]
->  Essa técnica fornece uma lista de valores que podem ser alterados em tempo de execução. Se você quiser fornecer uma lista que não são alterados, em vez disso, considere usar um tipo enumerado como o tipo de sua propriedade de domínio.  
+> Essa técnica fornece uma lista de valores que podem ser alterados em tempo de execução. Se você quiser fornecer uma lista que não são alterados, em vez disso, considere usar um tipo enumerado como o tipo de sua propriedade de domínio.  
   
  Para definir uma lista de valores padrão, você adicionar à sua propriedade de domínio um atributo CLR que tem a seguinte forma:  
   

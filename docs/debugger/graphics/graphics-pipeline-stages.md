@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0eb6cf6f460ca0cf164f6acb78b1309d2222ea39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 042eebc6d672000aa43425a30e96a8ac41bcd8af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089127"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388533"
 ---
 # <a name="graphics-pipeline-stages"></a>Estágios de Pipeline Gráficos
 A janela estágios de Pipeline gráficos ajuda a entender como uma chamada de desenho individuais é transformada por cada estágio do pipeline de gráficos do Direct3D.
@@ -46,7 +46,7 @@ A janela estágios de Pipeline gráficos ajuda a entender como uma chamada de de
 - No **estágios de Pipeline gráficos** janela, localize o estágio de sombreador que corresponde ao sombreador que deseja examinar. Em seguida, abaixo da imagem de visualização, siga o link de título do estágio de sombreador — por exemplo, siga o link **obj:30 do sombreador de vértices** para exibir o código de origem do sombreador de vértice.
 
     > [!TIP]
-    >  O número de objeto **obj:30**, identifica esse sombreador em toda a interface de analisador de gráficos como a janela de histórico de pixel e de tabela do objeto.
+    > O número de objeto **obj:30**, identifica esse sombreador em toda a interface de analisador de gráficos como a janela de histórico de pixel e de tabela do objeto.
 
 #### <a name="to-debug-a-shader"></a>Para depurar um sombreador
 
@@ -56,21 +56,21 @@ A janela estágios de Pipeline gráficos ajuda a entender como uma chamada de de
  A janela estágios de Pipeline visualiza apenas os estágios do pipeline que estavam ativos durante a chamada de desenho. Cada estágio do pipeline gráfica transforma uma entrada de estágio anterior e passa o resultado para o próximo estágio. O primeiro estágio, o Assembler de entrada — extrai dados de índice e vértice de seu aplicativo como sua entrada; o último estágio — a fusão de saída — combina recentemente renderizado pixels junto com o conteúdo atual do framebuffer ou destino de renderização como sua saída para produzir a imagem final, você vê na tela.
 
 > [!NOTE]
->  Os sombreadores de computação não têm suporte na janela **Estágios de Pipeline Gráficos**.
+> Os sombreadores de computação não têm suporte na janela **Estágios de Pipeline Gráficos**.
 
  **Entrada do Assembler** o Assembler de entrada lê os dados de índice e vértice especificados pelo seu aplicativo e monta no hardware de gráficos.
 
  Na janela estágios de Pipeline, a saída do Assembler de entrada é visualizada como um modelo de wireframe. Para tirar a examinar mais detalhadamente os resultados, selecione **Assembler de entrada** na **estágios de Pipeline gráficos** janela para exibir os vértices montados em 3D completo usando o Editor de modelo.
 
 > [!NOTE]
->  Se a semântica `POSITION` não estiver presente na saída do assembler de entrada, nada é exibido no estágio **Entrada do Assembler**.
+> Se a semântica `POSITION` não estiver presente na saída do assembler de entrada, nada é exibido no estágio **Entrada do Assembler**.
 
  **Sombreador de vértices** o estágio de sombreador de vértice processa vértices, normalmente executando operações como a transformação, colocação de capa e iluminação. Sombreadores de vértices produzem o mesmo número de vértices que eles utiliza como entrada.
 
  Na janela estágios de Pipeline, a saída do sombreador de vértice é visualizada como uma imagem de varredura de wireframe. Para tirar a examinar mais detalhadamente os resultados, selecione **sombreador de vértice** na **estágios de Pipeline gráficos** windows para exibir os vértices processados no Editor de imagens.
 
 > [!NOTE]
->  Se a semântica `POSITION` ou `SV_POSITION` não estiver presente na saída do sombreador de vértice, nada é exibido no estágio **Sombreador de Vértice**.
+> Se a semântica `POSITION` ou `SV_POSITION` não estiver presente na saída do sombreador de vértice, nada é exibido no estágio **Sombreador de Vértice**.
 
  **Sombreador Hull** (Direct3D 11 e Direct3D 12 somente) o estágio de sombreador hull processa os pontos de controle que definem uma superfície de ordem inferior, como uma linha, triângulo ou quad. Como saída, ele produz um patch de geometria de ordem superior e constantes do patch que são passados para o estágio de mosaico de função fixa.
 

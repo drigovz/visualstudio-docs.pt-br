@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 23d423314653a6b5ae1bea899b6931d188667a30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4de0471dcc94a709156f5dc9fcce57dca8fb82bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427596"
 ---
 # <a name="how-to-add-custom-xml-parts-to-document-level-customizations"></a>Como: Adicionar partes XML personalizadas a personalizações no nível do documento
   Você pode armazenar dados XML em uma pasta de trabalho do Microsoft Office Excel ou um documento do Microsoft Office Word, criando uma parte XML personalizada em uma personalização no nível de documento. Para obter mais informações, consulte [visão geral de partes XML personalizadas](../vsto/custom-xml-parts-overview.md).
@@ -30,7 +30,7 @@ ms.locfileid: "60117103"
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 > [!NOTE]
->  Visual Studio não fornece os projetos de nível de documento para o Microsoft Office PowerPoint. Para obter informações sobre como adicionar uma parte XML personalizada a uma apresentação do PowerPoint usando um suplemento do VSTO, consulte [como: Adicionar partes XML personalizadas aos documentos usando suplementos VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).
+> Visual Studio não fornece os projetos de nível de documento para o Microsoft Office PowerPoint. Para obter informações sobre como adicionar uma parte XML personalizada a uma apresentação do PowerPoint usando um suplemento do VSTO, consulte [como: Adicionar partes XML personalizadas aos documentos usando suplementos VSTO](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md).
 
 ### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>Para adicionar uma parte XML personalizada a uma pasta de trabalho do Excel
 

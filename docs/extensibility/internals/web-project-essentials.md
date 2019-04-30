@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1cfd7c6c8543537f88bdf033068d2ae62c7a634a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 30ffd684eb6527ee73e54cc590dc3e4b1d3c51d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071325"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429348"
 ---
 # <a name="web-project-essentials"></a>Conceitos básicos do projeto Web
 Projetos da Web criam aplicativos Web. Você pode usar um projeto da Web para criar um aplicativo Web que tem inteligentes páginas da Web. Uma página da Web inteligente tem o código do lado do servidor que processa a página da Web sob demanda.
@@ -35,7 +35,7 @@ Projetos da Web criam aplicativos Web. Você pode usar um projeto da Web para cr
 - O arquivo de solução para um projeto da Web está localizado separadamente do site em si. Por padrão, arquivos de solução estão localizados em \Documents and Settings\\*Suaconta*\My Documents\\*\<Visual Studio # # # >* \Projects\\ *YourWebSite*.
 
   > [!NOTE]
-  >  Se você quiser manter o arquivo de solução com o site da Web, movê-lo lá e reabri-lo.
+  > Se você quiser manter o arquivo de solução com o site da Web, movê-lo lá e reabri-lo.
 
 - Se você abrir um site que não tiver nenhum arquivo de solução no Visual Studio, um novo arquivo de solução é gerado automaticamente para ele.
 

@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 13ea06abff2237c0b9262ba01dcb243afe6c3c3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4881604c4fe2ab85f4c32361eddb5f5bb228b3cd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430453"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>Passo a passo: Chamar o modelo de objeto de cliente do SharePoint em uma extensão do Gerenciador de servidores
   Este passo a passo demonstra como chamar o modelo de objeto de cliente do SharePoint de uma extensão para o **conexões do SharePoint** nó no **Gerenciador de servidores**. Para obter mais informações sobre como usar o modelo de objeto de cliente do SharePoint, consulte [chamam os modelos de objeto SharePoint](../sharepoint/calling-into-the-sharepoint-object-models.md).
@@ -36,7 +36,7 @@ ms.locfileid: "60063108"
 - Depurando e testando a extensão.
 
 > [!NOTE]
->  A extensão que você cria neste passo a passo se parece com a extensão que você cria no [passo a passo: Estender o Gerenciador de servidores para exibir web parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Essa explicação passo a passo usa o modelo de objeto do SharePoint server, mas este passo a passo realiza as mesmas tarefas usando o modelo de objeto do cliente.
+> A extensão que você cria neste passo a passo se parece com a extensão que você cria no [passo a passo: Estender o Gerenciador de servidores para exibir web parts](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md). Essa explicação passo a passo usa o modelo de objeto do SharePoint server, mas este passo a passo realiza as mesmas tarefas usando o modelo de objeto do cliente.
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passo:
@@ -69,7 +69,7 @@ Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir
 3. No **novo projeto** diálogo caixa, expanda o **Visual c#** ou **Visual Basic** nós e, em seguida, escolha **extensibilidade**.
 
     > [!NOTE]
-    >  O **extensibilidade** o nó está disponível somente se você instalar o SDK do Visual Studio. Para obter mais informações, consulte a seção pré-requisitos no início deste tópico.
+    > O **extensibilidade** o nó está disponível somente se você instalar o SDK do Visual Studio. Para obter mais informações, consulte a seção pré-requisitos no início deste tópico.
 
 4. Na parte superior da caixa de diálogo, escolha **.NET Framework 4.5** na lista de versões do .NET Framework.
 
@@ -161,7 +161,7 @@ Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir
 1. Cole o seguinte código para o **SiteNodeExtension** arquivo de código para o **WebPartNodeExtension** projeto.
 
     > [!NOTE]
-    >  Depois de adicionar esse código, o projeto terá alguns erros de compilação. Esses erros serão eliminados quando você adicionar o código em etapas posteriores.
+    > Depois de adicionar esse código, o projeto terá alguns erros de compilação. Esses erros serão eliminados quando você adicionar o código em etapas posteriores.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -205,7 +205,7 @@ Conhecimento dos conceitos a seguir é útil, mas não necessário para concluir
 6. No **adicionar novo ativo** na caixa de **tipo** , escolha **mefcomponent**.
 
     > [!NOTE]
-    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. No **fonte** , escolha **um projeto na solução atual**.
 

@@ -15,12 +15,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8b84e16ec3a1905866add7bd62962501b32cc46
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4fdeef3a21407b4473ed412019e936d7b30389c5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60038097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63402885"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>Adicionar validação a um conjunto de dados de n camadas
 Adicionando validação a um conjunto de dados que é separado em uma solução de n camadas é basicamente o mesmo que adicionar validação a um conjunto de dados de arquivo único (um conjunto de dados em um único projeto). O local sugerido para executar a validação nos dados é durante o <xref:System.Data.DataTable.ColumnChanging> e/ou <xref:System.Data.DataTable.RowChanging> eventos de uma tabela de dados.
@@ -28,10 +28,10 @@ Adicionando validação a um conjunto de dados que é separado em uma solução 
  O conjunto de dados fornece a funcionalidade para criar classes parciais para o qual você pode adicionar código de usuário para eventos de alteração de coluna e linha das tabelas de dados no conjunto de dados. Para obter mais informações sobre como adicionar código a um conjunto de dados em uma solução de n camadas, consulte [adicione o código a conjuntos de dados em aplicativos de n camadas](../data-tools/add-code-to-datasets-in-n-tier-applications.md), e [adicionar código a TableAdapters em aplicativos de n camadas](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md). Para obter mais informações sobre classes parciais, consulte [como: Dividir uma classe em classes parciais (Designer de classe)](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) ou [classes e métodos parciais](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods).
 
 > [!NOTE]
->  Quando você separa os conjuntos de dados de TableAdapters (Configurando o **projeto DataSet** propriedade), classes parciais do conjunto de dados existentes no projeto não serão movidas automaticamente. As classes parciais do conjunto de dados existentes devem ser movidas manualmente para o projeto de conjunto de dados.
+> Quando você separa os conjuntos de dados de TableAdapters (Configurando o **projeto DataSet** propriedade), classes parciais do conjunto de dados existentes no projeto não serão movidas automaticamente. As classes parciais do conjunto de dados existentes devem ser movidas manualmente para o projeto de conjunto de dados.
 
 > [!NOTE]
->  O Designer de conjunto de dados não cria automaticamente manipuladores de eventos em c# para o <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> eventos. Você precisa criar um manipulador de eventos manualmente e conectar o manipulador de eventos ao evento subjacente. Os procedimentos a seguir descrevem como criar manipuladores de eventos necessários no Visual Basic e c#.
+> O Designer de conjunto de dados não cria automaticamente manipuladores de eventos em c# para o <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> eventos. Você precisa criar um manipulador de eventos manualmente e conectar o manipulador de eventos ao evento subjacente. Os procedimentos a seguir descrevem como criar manipuladores de eventos necessários no Visual Basic e c#.
 
 ## <a name="validate-changes-to-individual-columns"></a>Validar alterações em colunas individuais
  Valide os valores em colunas individuais manipulando o <xref:System.Data.DataTable.ColumnChanging> eventos. O <xref:System.Data.DataTable.ColumnChanging> é gerado quando um valor em uma coluna é modificado. Crie um manipulador de eventos para o <xref:System.Data.DataTable.ColumnChanging> evento clicando duas vezes na coluna desejada na **Dataset Designer**.
@@ -47,7 +47,7 @@ End Sub
 ```
 
 > [!NOTE]
->  Em projetos c#, o Designer de conjunto de dados só cria classes parciais para o conjunto de dados e tabelas individuais no conjunto de dados. O Designer de conjunto de dados não cria automaticamente manipuladores de eventos para o <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> eventos no c#, como ele faz no Visual Basic. Em projetos c#, você precisa criar manualmente um método para manipular o evento e conectar o método ao evento subjacente. O procedimento a seguir fornece as etapas para criar os manipuladores de eventos necessários no Visual Basic e c#.
+> Em projetos c#, o Designer de conjunto de dados só cria classes parciais para o conjunto de dados e tabelas individuais no conjunto de dados. O Designer de conjunto de dados não cria automaticamente manipuladores de eventos para o <xref:System.Data.DataTable.ColumnChanging> e <xref:System.Data.DataTable.RowChanging> eventos no c#, como ele faz no Visual Basic. Em projetos c#, você precisa criar manualmente um método para manipular o evento e conectar o método ao evento subjacente. O procedimento a seguir fornece as etapas para criar os manipuladores de eventos necessários no Visual Basic e c#.
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -58,7 +58,7 @@ End Sub
 2. Clique duas vezes a coluna que você deseja validar. Essa ação cria o <xref:System.Data.DataTable.ColumnChanging> manipulador de eventos.
 
     > [!NOTE]
-    >  O Designer de conjunto de dados não cria automaticamente um manipulador de eventos para o evento em C#. O código que é necessário para manipular o evento em c# está incluído na próxima seção. `SampleColumnChangingEvent` é criado e, em seguida, conectado à <xref:System.Data.DataTable.ColumnChanging> evento no <xref:System.Data.DataTable.EndInit%2A> método.
+    > O Designer de conjunto de dados não cria automaticamente um manipulador de eventos para o evento em C#. O código que é necessário para manipular o evento em c# está incluído na próxima seção. `SampleColumnChangingEvent` é criado e, em seguida, conectado à <xref:System.Data.DataTable.ColumnChanging> evento no <xref:System.Data.DataTable.EndInit%2A> método.
 
 3. Adicione código para verificar que `e.ProposedValue` contém dados que atenda aos requisitos do seu aplicativo. Se o valor proposto for inaceitável, configure a coluna para indicar que ele contém um erro.
 
@@ -117,7 +117,7 @@ End Sub
      Uma classe parcial é criada com um `RowChanging` manipulador de eventos e é aberto no Editor de códigos.
 
     > [!NOTE]
-    >  O Designer de conjunto de dados não cria automaticamente um manipulador de eventos para o <xref:System.Data.DataTable.RowChanging> eventos em projetos c#. Você precisa criar um método para manipular o <xref:System.Data.DataTable.RowChanging> eventos e executar código em seguida, vincular o evento no método de inicialização da tabela.
+    > O Designer de conjunto de dados não cria automaticamente um manipulador de eventos para o <xref:System.Data.DataTable.RowChanging> eventos em projetos c#. Você precisa criar um método para manipular o <xref:System.Data.DataTable.RowChanging> eventos e executar código em seguida, vincular o evento no método de inicialização da tabela.
 
 3. Adicione o código do usuário dentro da declaração de classe parcial.
 

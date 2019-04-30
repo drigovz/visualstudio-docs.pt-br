@@ -12,12 +12,12 @@ ms.assetid: 47f295b5-1ca5-4e7b-bb52-7b926b136622
 caps.latest.revision: 37
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0b7b9e352c3042e5175b7420a9d4203ca7f59e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c28a0520680951920ee19e91f3df098066f432dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117123"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432111"
 ---
 # <a name="exposing-properties-to-the-properties-window"></a>Expondo propriedades na janela Propriedades
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -177,7 +177,7 @@ Este passo a passo expõe as propriedades públicas de um objeto para o **propri
 10. A caixa de seleção fazer check-in a **MyToolWindow** janela. **IsChecked** no **Properties** janela é alterado para **True**. Desmarque a caixa de seleção de **MyToolWindow** janela. **IsChecked** no **Properties** janela é alterado para **False**. Altere o valor de **IsChecked** na **propriedades** janela. A caixa de seleção de **MyToolWindow** alterações de janela para coincidir com o novo valor.  
   
     > [!NOTE]
-    >  Se você deve descartar um objeto que é exibido na **propriedades** janela, chame `OnSelectChange` com um `null` contêiner de seleção primeiro. Depois de descartar a propriedade ou o objeto, você pode alterar para um contêiner de seleção que atualizou <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> e <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> lista.  
+    > Se você deve descartar um objeto que é exibido na **propriedades** janela, chame `OnSelectChange` com um `null` contêiner de seleção primeiro. Depois de descartar a propriedade ou o objeto, você pode alterar para um contêiner de seleção que atualizou <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectableObjects%2A> e <xref:Microsoft.VisualStudio.Shell.SelectionContainer.SelectedObjects%2A> lista.  
   
 ## <a name="changing-selection-lists"></a>Alterar listas de seleção  
  Nesta seção, você adiciona uma lista de seleção para uma classe de propriedade básico e usa a interface de janela de ferramenta para escolher em qual lista de seleção para exibir.  
@@ -261,7 +261,7 @@ Este passo a passo expõe as propriedades públicas de um objeto para o **propri
 6. Selecione a caixa de seleção de **MyToolWindow** janela. O **propriedades** janela exibe o `Simple` propriedades do objeto **SomeText** e **ReadOnly**. Desmarque a caixa de seleção. As propriedades públicas da janela aparecem na **propriedades** janela.  
   
     > [!NOTE]
-    >  O nome de exibição **SomeText** é **meu texto**.  
+    > O nome de exibição **SomeText** é **meu texto**.  
   
 ## <a name="best-practice"></a>Prática recomendada  
  Neste passo a passo, <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> é implementada de modo que a coleção do objeto selecionável e a coleção de objetos selecionados são a mesma coleção. Apenas o objeto selecionado é exibida na lista de navegador de propriedade. Para uma implementação de ISelectionContainer mais completa, consulte os exemplos de Reference.ToolWindow.  

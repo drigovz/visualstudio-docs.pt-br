@@ -13,24 +13,24 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e1855c64e88cdf45715654eede780aaa20d0258
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6a9a11f42acae44c441aca8cb06a1a363fea5a73
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60091415"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418853"
 ---
 # <a name="how-to-show-the-developer-tab-on-the-ribbon"></a>Como: Mostrar a guia Desenvolvedor na faixa de opções
   Para acessar o **desenvolvedor** guia na faixa de opções de um aplicativo do Office, você deve configurá-lo para mostrar essa guia porque ela não aparece por padrão. Por exemplo, você deve mostrar essa guia se você deseja adicionar um <xref:Microsoft.Office.Tools.Word.GroupContentControl> para uma personalização no nível de documento para Word.
 
 > [!NOTE]
->  Essa orientação se aplica ao Office 2010 ou posterior apenas a aplicativos. Se você desejar mostrar essa guia no 2007 Microsoft Office System, consulte a seguinte versão deste tópico [como: Mostrar a guia Desenvolvedor na faixa de opções](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
+> Essa orientação se aplica ao Office 2010 ou posterior apenas a aplicativos. Se você desejar mostrar essa guia no 2007 Microsoft Office System, consulte a seguinte versão deste tópico [como: Mostrar a guia Desenvolvedor na faixa de opções](https://web.archive.org/web/20140303033431/msdn.microsoft.com/library/bb608625(v=vs.90).aspx
 ).
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
->  Acesso não tem um **desenvolvedor** guia.
+> Acesso não tem um **desenvolvedor** guia.
 
 ## <a name="to-show-the-developer-tab"></a>Para mostrar a guia do desenvolvedor
 

@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e54d2dc388ca308e037fb8ff918f521ee16e9092
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a00f3c58f917e7355a63ebca71c74127826a2e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067255"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429222"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>Como: Personalizar um recurso do SharePoint
   Você pode criar e personalizar os recursos do SharePoint usando o Designer de recursos no Visual Studio. Por exemplo, você pode definir o escopo do recurso e adicionar outros recursos como dependências. Por padrão, o Designer de recursos é aberto quando você adiciona um novo recurso no Gerenciador de soluções ou o Explorador de pacotes do SharePoint.
@@ -49,7 +49,7 @@ ms.locfileid: "60067255"
 2. Expanda recursos, expanda o nome do recurso, expanda FeatureName.feature e, em seguida, abra o  *\<FeatureName >. Template* arquivo.
 
     > [!NOTE]
-    >  Quando você abre o arquivo de manifesto de modelo de recurso XML, os arquivos são validados automaticamente e os avisos que aparecem na janela lista de erros podem ser ignorados.
+    > Quando você abre o arquivo de manifesto de modelo de recurso XML, os arquivos são validados automaticamente e os avisos que aparecem na janela lista de erros podem ser ignorados.
 
 ## <a name="change-the-manifest-template"></a>Alterar o modelo de manifesto
  Você pode alterar o código XML para o arquivo de manifesto de recurso no Editor de XML do Visual Studio ou no painel de modelo de manifesto. Todas as alterações no código XML é mesclado no arquivo de manifesto do pacote para o recurso. Por exemplo, você talvez queira alterar o modelo de manifesto para personalizar uma propriedade de recurso.
@@ -70,7 +70,7 @@ ms.locfileid: "60067255"
  Você pode desabilitar o Designer de recursos e criar o *Feature* arquivo manualmente. Na primeira vez que você executar esse procedimento, as configurações atuais no Designer de recurso são salvas no arquivo de XML do modelo de recurso. Em seguida, você pode modificar ou substituir o código XML.
 
 > [!NOTE]
->  Se você adicionar ou remove itens de projeto do SharePoint no arquivo XML, enquanto o Designer de recursos estiver desabilitado, esses itens de projeto não são compactados.
+> Se você adicionar ou remove itens de projeto do SharePoint no arquivo XML, enquanto o Designer de recursos estiver desabilitado, esses itens de projeto não são compactados.
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Para substituir o arquivo de manifesto empacotado, desabilitando o designer
 

@@ -10,12 +10,12 @@ ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 caps.latest.revision: 43
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c263dfaa6f2326f6ed43c596cad4b96404443d17
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 512d2aaffe64ea6ed17e909d9177aad74c654462
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408785"
 ---
 # <a name="walkthrough-highlighting-text"></a>Passo a passo: Realçando o texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -353,7 +353,7 @@ Você pode adicionar efeitos visuais diferentes para o editor, Criando component
  Para criar o marcador, você deve implementar um <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider>. Essa classe é uma parte do componente de MEF, portanto, você deve definir os atributos corretos para que essa extensão é reconhecida.  
   
 > [!NOTE]
->  Para obter mais informações sobre o MEF, consulte [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+> Para obter mais informações sobre o MEF, consulte [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 #### <a name="to-create-a-tagger-provider"></a>Para criar um provedor de marcador  
   
@@ -408,4 +408,4 @@ Você pode adicionar efeitos visuais diferentes para o editor, Criando component
 4. Posicione o cursor em uma das ocorrências de "hello". Todas as ocorrências devem ser realçadas em azul.  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: Vinculando a um tipo de conteúdo para uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Passo a passo: vincular um tipo de conteúdo a uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

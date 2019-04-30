@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c3e942128cdf05f19ecf618cc78dcc1d401ea6ac
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 70036cd8add5c9c72262f29ba92fa6c7eaf8977d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56603749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401518"
 ---
 # <a name="idiasymbolgethaslongjump"></a>IDiaSymbol::get_hasLongJump
 Recupera um sinalizador que especifica se a função contém um uso do [longjmp](/cpp/c-runtime-library/reference/longjmp) comando (emparelhado com um [setjmp](/cpp/c-runtime-library/reference/setjmp) de comando, elas formam o método de estilo C de tratamento de exceções).
@@ -39,7 +39,7 @@ HRESULT get_hasLongJump
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou um código de erro.
 
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="requirements"></a>Requisitos
 

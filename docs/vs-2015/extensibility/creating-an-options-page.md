@@ -10,12 +10,12 @@ ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 caps.latest.revision: 63
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 204c141fb1bb8021ce1908b9c0db7fcf3e0104bc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7b5897f6c4463cc5a3c7928a722ed5a0a09e42b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059737"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430587"
 ---
 # <a name="creating-an-options-page"></a>Criando uma página de opções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ Este passo a passo cria uma página Ferramentas/opções simples que usa uma gra
     ```  
   
     > [!NOTE]
-    >  A implementação padrão de <xref:Microsoft.VisualStudio.Shell.DialogPage> dá suporte às propriedades que têm conversores apropriados ou que são estruturas ou matrizes que podem ser expandidos em propriedades que têm conversores apropriados. Para obter uma lista de conversores, consulte o <xref:System.ComponentModel> namespace.  
+    > A implementação padrão de <xref:Microsoft.VisualStudio.Shell.DialogPage> dá suporte às propriedades que têm conversores apropriados ou que são estruturas ou matrizes que podem ser expandidos em propriedades que têm conversores apropriados. Para obter uma lista de conversores, consulte o <xref:System.ComponentModel> namespace.  
   
 6. Compile o projeto e comece a depuração.  
   

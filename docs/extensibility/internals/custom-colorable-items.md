@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95ebf093b8ed761f39cc3cac290a99708b7f417f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 35a3b7a82431354345c7a7b583b35891657350f3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641527"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415178"
 ---
 # <a name="custom-colorable-items"></a>Itens de coloração personalizados
 Você pode substituir a lista de tipos para colorir, como palavras-chave e comentários, com a implementação de itens de coloração personalizados como parte de seu serviço de linguagem.
@@ -28,11 +28,11 @@ Você pode substituir a lista de tipos para colorir, como palavras-chave e comen
  Porque o IDE manipula substituições do usuário de itens de coloração na **fontes e cores** caixa de diálogo, você precisa apenas fornecer a cada item personalizado que pode ser colorido com um nome. Esse nome é o que aparece na **exibir itens** lista. Os itens de coloração aparecem em ordem alfabética. Para agrupar itens de coloração personalizados do seu serviço de linguagem, você pode começar cada nome com seu nome de idioma, por exemplo **NewLanguage - comentário** e **NewLanguage - palavra-chave**.
 
 > [!CAUTION]
->  Você deve incluir o nome do idioma no nome do item que pode ser colorido para evitar colisões com nomes existentes de item que pode ser colorido. Se você alterar o nome de um dos itens de coloração durante o desenvolvimento, você deve redefinir o cache que foi criado na primeira vez em que seus itens de coloração foram acessado. Você pode redefinir o cache experimental com as **CreateExpInstance** ferramenta, que é instalada com o SDK do Visual Studio, normalmente no diretório:
+> Você deve incluir o nome do idioma no nome do item que pode ser colorido para evitar colisões com nomes existentes de item que pode ser colorido. Se você alterar o nome de um dos itens de coloração durante o desenvolvimento, você deve redefinir o cache que foi criado na primeira vez em que seus itens de coloração foram acessado. Você pode redefinir o cache experimental com as **CreateExpInstance** ferramenta, que é instalada com o SDK do Visual Studio, normalmente no diretório:
 >
->  *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
+> *C:\Program Files (x86)\Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin*
 >
->  Para redefinir o cache, digite **CreateExpInstance /Reset**. Para obter mais informações sobre **CreateExpInstance**, consulte [utilitário CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).
+> Para redefinir o cache, digite **CreateExpInstance /Reset**. Para obter mais informações sobre **CreateExpInstance**, consulte [utilitário CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md).
 
  O primeiro item na sua lista de itens de coloração nunca é referenciado. O primeiro item corresponde a um índice do item que pode ser colorido 0, e [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] sempre fornece a cores de texto padrão e os atributos para aquele item. A maneira mais fácil de lidar com esse item não referenciado é fornecer um item que pode ser colorido de espaço reservado na sua lista como o primeiro item.
 

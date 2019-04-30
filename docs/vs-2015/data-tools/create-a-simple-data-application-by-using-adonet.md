@@ -14,12 +14,12 @@ caps.latest.revision: 46
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 234c289cd039485163aa201516c418bacaed590b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9b41d199ab634ef5eeb2a6baaef8401919870b63
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436975"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>Criar um aplicativo de dados simples usando o ADO.NET
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
  Este artigo demonstra uma maneira simples de obter dados para fora de um banco de dados de uma maneira muito rápida. Se seu aplicativo precisa modificar dados de maneiras não triviais e atualizar o banco de dados, você deve considerar usando o Entity Framework e usando a associação de dados para sincronizar automaticamente os controles de interface do usuário para as alterações nos dados subjacentes.  
   
 > [!IMPORTANT]
->  Para manter o código simples, ele não inclui tratamento de exceção pronta para produção.  
+> Para manter o código simples, ele não inclui tratamento de exceção pronta para produção.  
   
  **Neste tópico**  
   
@@ -78,7 +78,7 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
 3. Para cada formulário, adicione as caixas de texto, botões e outros controles que aparecem nas ilustrações a seguir. Para cada controle, defina as propriedades que descrevem as tabelas.  
   
    > [!NOTE]
-   >  A caixa de grupo e os controles de rótulo adicionam clareza mas não são usados no código.  
+   > A caixa de grupo e os controles de rótulo adicionam clareza mas não são usados no código.  
   
    **Formulário de navegação**  
   
@@ -135,7 +135,7 @@ Quando você cria um aplicativo que manipule dados em um banco de dados, executa
 5. No **valor** coluna, insira sua cadeia de conexão (sem qualquer fora de aspas) e, em seguida, salve suas alterações.  
   
 > [!NOTE]
->  Em um aplicativo real, você deve armazenar a cadeia de caracteres de conexão com segurança, conforme descrito em [cadeias de caracteres de Conexão e arquivos de configuração](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
+> Em um aplicativo real, você deve armazenar a cadeia de caracteres de conexão com segurança, conforme descrito em [cadeias de caracteres de Conexão e arquivos de configuração](http://msdn.microsoft.com/library/37df2641-661e-407a-a3fb-7bf9540f01e8).  
   
 ## <a name="BKMK_retrievetheconnectionstring"></a> Recuperar a cadeia de conexão  
   

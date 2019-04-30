@@ -6,12 +6,12 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], custom - in-place view activation
 ms.assetid: 7d316945-06e0-4d8e-ba3a-0ef96fc75399
 manager: jillfra
-ms.openlocfilehash: 9952cc804e548896fb4dec9f6c1a447835ba251e
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 284a0da3aaf0b88f7f0d2c7fc3983ca3c6aacbc6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56723767"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415263"
 ---
 # <a name="in-place-activation"></a>Ativação in-loco
 Se seu modo de exibição do editor hospeda ActiveX ou outros controles Active Directory, você deve implementar o modo de exibição do editor como um controle ActiveX ou como um objeto de dados de documento ativo usando o modelo de ativação no local.
@@ -22,7 +22,7 @@ Se seu modo de exibição do editor hospeda ActiveX ou outros controles Active D
  Se você implementar um controle ActiveX, você pode hospedar outros objetos inseridos. Se você implementar um objeto de dados de documento, o quadro de janela restringe sua capacidade de usar controles ActiveX.
 
 > [!NOTE]
->  O <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> interfaces permitem que uma separação de dados e o modo de exibição. No entanto, o Visual Studio não oferece suporte a essa funcionalidade, e essas interfaces são usadas apenas para representar o objeto de exibição de documento.
+> O <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocument> e <xref:Microsoft.VisualStudio.OLE.Interop.IOleDocumentView> interfaces permitem que uma separação de dados e o modo de exibição. No entanto, o Visual Studio não oferece suporte a essa funcionalidade, e essas interfaces são usadas apenas para representar o objeto de exibição de documento.
 
  Editores que usam o <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> service pode fornecer menu, barra de ferramentas e integração de comando chamando os métodos do <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> interface implementada pelo <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> service. Editores também oferecem outras funcionalidades do Visual Studio, como acompanhamento da seleção e desfazer o gerenciamento. Para obter mais informações, consulte [criar designers e editores personalizados](../extensibility/creating-custom-editors-and-designers.md).
 
@@ -32,7 +32,7 @@ Se seu modo de exibição do editor hospeda ActiveX ou outros controles Active D
  ![No&#45;Editor de ativação de colocar](../extensibility/media/vsinplaceactivationeditor.gif "vsInPlaceActivationEditor") editor de ativação no local
 
 > [!NOTE]
->  Os objetos neste desenho, apenas o `CYourEditorFactory` objeto é necessária para criar um editor padrão. Se você estiver criando um editor personalizado, não é necessário implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> porque seu editor provavelmente terá seu próprio mecanismo de persistência privada. Para obter mais informações, consulte [criar designers e editores personalizados](../extensibility/creating-custom-editors-and-designers.md).
+> Os objetos neste desenho, apenas o `CYourEditorFactory` objeto é necessária para criar um editor padrão. Se você estiver criando um editor personalizado, não é necessário implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2> porque seu editor provavelmente terá seu próprio mecanismo de persistência privada. Para obter mais informações, consulte [criar designers e editores personalizados](../extensibility/creating-custom-editors-and-designers.md).
 
  Todas as interfaces que são implementadas para criar uma ativação in-loco editor são mostradas na única `CYourEditorDocument` objeto, mas essa configuração dá suporte apenas a uma única exibição de dados de documentos. Para obter mais informações sobre o suporte a vários modos de exibição de seus dados de documento, consulte [dar suporte a vários modos de exibição de documento](../extensibility/supporting-multiple-document-views.md).
 

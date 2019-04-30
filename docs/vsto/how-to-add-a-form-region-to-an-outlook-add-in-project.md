@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 139cdb0314783c76352cc499256fb89610354843
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c742b4cbbda440ea84314efbc5281e54771fe60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427889"
 ---
 # <a name="how-to-add-a-form-region-to-an-outlook-add-in-project"></a>Como: Adicionar uma região de formulário a um projeto de suplemento do Outlook
   Criar uma região de formulário para estender um formulário personalizado ou padrão do Microsoft Office Outlook usando o **nova região de formulário do Outlook** assistente. Você pode criar uma nova região de formulário e projetar a interface do usuário no Visual Studio, ou você pode importar de uma região de formulário que foi projetada no Outlook e adicione o código do Visual Basic ou c#.
@@ -48,7 +48,7 @@ ms.locfileid: "60083940"
 6. Sobre o **selecione como você deseja criar a região do formulário** , selecione se deseja criar a região do formulário. basta arrastar controles gerenciados em um designer visual ou importar uma região de formulário que foi projetada no Outlook.
 
     > [!NOTE]
-    >  Se você optar por importar de uma região de formulário que foi projetada no Outlook e, em seguida, você deve especificar o local de um armazenamento de formulário do Outlook (*ofs*) arquivos. Você não pode adicionar controles gerenciados em uma região de formulário que você cria no Outlook; Você só pode adicionar o código por trás da interface do usuário existente. Para obter mais informações, consulte [regiões de formulário do Outlook criar](../vsto/creating-outlook-form-regions.md).
+    > Se você optar por importar de uma região de formulário que foi projetada no Outlook e, em seguida, você deve especificar o local de um armazenamento de formulário do Outlook (*ofs*) arquivos. Você não pode adicionar controles gerenciados em uma região de formulário que você cria no Outlook; Você só pode adicionar o código por trás da interface do usuário existente. Para obter mais informações, consulte [regiões de formulário do Outlook criar](../vsto/creating-outlook-form-regions.md).
 
 7. Sobre o **selecione o tipo da região de formulário que você deseja criar** página, examine os tipos de região de formulário, selecione um e, em seguida, clique em **próxima**. Para obter mais informações sobre os tipos de região de formulário, consulte [regiões de formulário do Outlook criar](../vsto/creating-outlook-form-regions.md).
 

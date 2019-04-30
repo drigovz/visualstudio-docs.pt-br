@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46d35961e1db1acf11d544b7523a264470340de0
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: c069e082d4bd9a11278a63d33a68822e528db795
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56710871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409983"
 ---
 # <a name="launch-a-program"></a>Iniciar um programa
 Os usuários que desejam depurar um programa podem pressionar **F5** para executar o depurador do IDE. Isso inicia uma série de eventos que resultam, por fim, o IDE com a conexão com um mecanismo de depuração (DE), que por sua vez conectado, ou anexado, o programa da seguinte maneira:
@@ -25,17 +25,17 @@ Os usuários que desejam depurar um programa podem pressionar **F5** para execut
 
 2. Se a DE for especificada, o DE chama o sistema operacional para iniciar o programa. Como consequência de iniciar o programa, o ambiente de tempo de execução do programa carrega. Por exemplo, se um programa é escrito em MSIL, o common language runtime será invocado para executar o programa.
 
-    -ou-
+    - ou -
 
     Se a DE não for especificada, a porta chama o sistema operacional para iniciar o programa, o que faz com que o ambiente de tempo de execução do programa carregar.
 
    > [!NOTE]
-   >  Se a DE é usada para iniciar um programa, é provável que o mesmo DE será anexado ao programa.
+   > Se a DE é usada para iniciar um programa, é provável que o mesmo DE será anexado ao programa.
 
 3. Dependendo se a porta ou o DE iniciado o programa, o DE ou no ambiente de tempo de execução, em seguida, cria uma descrição do programa ou nó e notifica a porta que o programa está em execução.
 
    > [!NOTE]
-   >  É recomendável que o ambiente de tempo de execução criar o nó de programa, porque o nó do programa é uma representação leve de um programa que pode ser depurado. Não é necessário para carregar um inteiro DE apenas para criar e registrar um nó de programa. Se a Alemanha é projetada ser executado no processo do IDE, mas nenhum IDE está realmente em execução, é preciso haver um componente que pode adicionar um nó de programa para a porta.
+   > É recomendável que o ambiente de tempo de execução criar o nó de programa, porque o nó do programa é uma representação leve de um programa que pode ser depurado. Não é necessário para carregar um inteiro DE apenas para criar e registrar um nó de programa. Se a Alemanha é projetada ser executado no processo do IDE, mas nenhum IDE está realmente em execução, é preciso haver um componente que pode adicionar um nó de programa para a porta.
 
    O programa criado recentemente, juntamente com outros programas, relacionados ou não relacionados, iniciado ou anexados a partir do mesmo IDE, compor uma sessão de depuração.
 

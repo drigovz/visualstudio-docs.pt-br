@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d96fffad2159d8a8f7a8ab785ad9d5d8f35186f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 67ef0d68df50d89f0ec22631a731ea9eb50dad46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415490"
 ---
 # <a name="how-to-implement-error-markers"></a>Como: Implementar o marcador de erros
 Marcadores de erro (ou ondulados vermelhos) são as personalizações do editor de texto para implementar mais difícil. No entanto, os benefícios que eles oferecem aos usuários de seu VSPackage podem compensam o custo para fornecê-las. Marcadores de erro sutilmente marcam o texto que o analisador de linguagem considera incorreta com uma linha vermelha ondulada ou ondulada. Este indicador ajuda a programadores visualmente, exibindo um código incorreto.
@@ -45,7 +45,7 @@ Marcadores de erro (ou ondulados vermelhos) são as personalizações do editor 
 1. Em uma exibição que está sendo filtrada, o filtro obtém um ponteiro para o provedor de tarefas associado aos dados do modo de exibição.
 
     > [!NOTE]
-    >  Você pode usar o mesmo filtro de comando para dicas de método, preenchimento de declaração, marcadores de erro e assim por diante.
+    > Você pode usar o mesmo filtro de comando para dicas de método, preenchimento de declaração, marcadores de erro e assim por diante.
 
 2. Quando o filtro recebe um evento indicando que você tenha movido para outra linha, uma tarefa é criada para verificar se há erros.
 

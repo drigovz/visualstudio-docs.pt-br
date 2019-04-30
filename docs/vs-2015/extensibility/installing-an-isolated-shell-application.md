@@ -11,12 +11,12 @@ ms.assetid: 33416226-9083-41b5-b153-10d2bf35c012
 caps.latest.revision: 41
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 55c4ebc96d93d9b068c29d24727d40975518b1ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60862d631d93788f10c372310da9eb3d181943ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414539"
 ---
 # <a name="installing-an-isolated-shell-application"></a>Instalação de um aplicativo de Shell isolado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ Para instalar um aplicativo de Shell, você deve executar as etapas a seguir.
 2. Identificar os componentes que exigem o Shell e o seu aplicativo de Shell, como mostra o exemplo a seguir.  
   
     > [!NOTE]
-    >  Alguns elementos podem se referir às definições em outros arquivos .wxs.  
+    > Alguns elementos podem se referir às definições em outros arquivos .wxs.  
   
     ```xml  
     <Feature Id="ProductFeature" Title="$(var.ShortProductName)Shell" Level="1">  
@@ -159,7 +159,7 @@ Para instalar um aplicativo de Shell, você deve executar as etapas a seguir.
         ```  
   
     > [!NOTE]
-    >  As dependências necessárias para aplicativos de Shell (isolado) são: DebuggerProxy, MasterPkgDef, recursos (especialmente o arquivo .winprf), aplicativo e PkgDefs.  
+    > As dependências necessárias para aplicativos de Shell (isolado) são: DebuggerProxy, MasterPkgDef, recursos (especialmente o arquivo .winprf), aplicativo e PkgDefs.  
   
 ### <a name="registry-entries"></a>Entradas do registro  
  O modelo de projeto do Shell (isolado) inclui um *ProjectName*arquivo. reg para chaves do registro mesclar em instalação. Essas entradas do registro devem ser parte do MSI para fins de limpeza e de instalação. Você também deve criar blocos de registro correspondente no ApplicationRegistry.wxs.  
@@ -211,7 +211,7 @@ Para instalar um aplicativo de Shell, você deve executar as etapas a seguir.
  Para determinar se o Shell do Visual Studio (isolado) deve ser instalado, primeiro determine se ele já está instalado verificando o valor do registro de HKLM\Software\Microsoft\DevDiv\vs\Servicing\ShellVersion\isoshell\LCID\Install.  
   
 > [!NOTE]
->  Esses valores também são lidos pelo bloco de detecção de Shell em Product. wxs.  
+> Esses valores também são lidos pelo bloco de detecção de Shell em Product. wxs.  
   
  HKLM\Software\Microsoft\AppEnv\14.0\ShellFolder Especifica o local em que o Shell do Visual Studio foi instalado, e você pode verificar para arquivos de lá.  
   
@@ -369,4 +369,4 @@ dwResult = ExecCmd(boutiqueInstallCmd, FALSE);
 ```  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: Criando um aplicativo básico de Shell isolado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+ [Passo a passo: criar um aplicativo básico de Shell isolado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 020fdd5f3df5f0f3b53f1ca28992c2b6a40a35f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7a1b7c93e4b30bbfd373a5fad9d7001452d4f587
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116141"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403543"
 ---
 # <a name="how-to-set-a-custom-log-file-location-for-clickonce-deployment-errors"></a>Como: Definir um local de arquivo de log personalizado para erros de implantação do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,10 +32,10 @@ ms.locfileid: "60116141"
  Você pode alterar esse comportamento para um cliente específico usando o Editor do registro (**regedit.exe**) para definir um caminho de arquivo de log personalizado. Nesse caso, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] registra êxitos de ativação e falhas para todas as implantações em um único arquivo.  
   
 > [!CAUTION]
->  Se você usar o Editor do Registro incorretamente, poderá causar sérios problemas que talvez exijam a reinstalação do sistema operacional. Use o Editor do Registro por sua conta e risco.  
+> Se você usar o Editor do Registro incorretamente, poderá causar sérios problemas que talvez exijam a reinstalação do sistema operacional. Use o Editor do Registro por sua conta e risco.  
   
 > [!NOTE]
->  Você precisará Trunque ou exclua o arquivo de log, ocasionalmente, para impedir que ele fique muito grande.  
+> Você precisará Trunque ou exclua o arquivo de log, ocasionalmente, para impedir que ele fique muito grande.  
   
  O procedimento a seguir descreve como definir um local de arquivo de log personalizado para um único cliente.  
   

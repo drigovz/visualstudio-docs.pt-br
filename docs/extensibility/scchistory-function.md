@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c22583890d476f6ada0838877360c1405e911db
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: d84de96181018858515bd74156f844ed6022f0a9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56691144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434609"
 ---
 # <a name="scchistory-function"></a>Função SccHistory
 Esta função exibe o histórico dos arquivos especificados.
@@ -80,7 +80,7 @@ SCCRTN SccHistory(
  Observe que, em determinadas circunstâncias, o arquivo que está sendo examinado pode ser alterados durante a execução desta chamada. Por exemplo, o [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] comando history dá ao usuário uma chance de obter uma versão antiga do arquivo. Nesse caso, o controle de fonte plug-in retorna `SCC_I_RELOAD` para avisar o IDE que ele precisa recarregar o arquivo.
 
 > [!NOTE]
->  Se o plug-in de controle do código-fonte não dá suporte a essa função para uma matriz de arquivos, somente o histórico de arquivos para o primeiro arquivo pode ser exibido.
+> Se o plug-in de controle do código-fonte não dá suporte a essa função para uma matriz de arquivos, somente o histórico de arquivos para o primeiro arquivo pode ser exibido.
 
 ## <a name="see-also"></a>Consulte também
 - [Funções de API do plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

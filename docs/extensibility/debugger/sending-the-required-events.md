@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcff0d559894e8d4ba322e4e8ebab71000a3809e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 45a65259c88eb9e8e946aa226eecc7cffa053552
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083547"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415612"
 ---
 # <a name="send-the-required-events"></a>Enviar os eventos necessários
 Use este procedimento para o envio de eventos necessários.
@@ -34,7 +34,7 @@ Use este procedimento para o envio de eventos necessários.
 5. Se o aplicativo a ser depurado é iniciado, envie uma [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) o objeto de evento para o SDM quando a primeira instrução de código na arquitetura de tempo de execução está prestes a ser executada. Esse evento é sempre um evento de interrupção. Quando passo a passo para a sessão de depuração, o IDE para esse evento.
 
 > [!NOTE]
->  Muitas linguagens usam inicializadores globais ou funções externas pré-compilado (da biblioteca CRT ou Main) no início do seu código. Se o idioma do programa que você está depurando contém qualquer um desses tipos de elementos antes do ponto de entrada inicial, esse código é executado e o evento de ponto de entrada é enviado quando o usuário ponto de entrada, como **principal** ou `WinMain`, é atingido.
+> Muitas linguagens usam inicializadores globais ou funções externas pré-compilado (da biblioteca CRT ou Main) no início do seu código. Se o idioma do programa que você está depurando contém qualquer um desses tipos de elementos antes do ponto de entrada inicial, esse código é executado e o evento de ponto de entrada é enviado quando o usuário ponto de entrada, como **principal** ou `WinMain`, é atingido.
 
 ## <a name="see-also"></a>Consulte também
 - [Habilitar um programa a ser depurado](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 279b9cc03b79efe2fbf9daa7457f5dce88e7a432
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 16871ba1115407e2665886d84b72594470f91287
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56597862"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420618"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Menus de GUIDs e IDs do Visual Studio
 Este artigo enumera os valores GUID e ID de menus e grupos na barra de menus do Visual Studio. Esses valores são definidos no *VSCT* arquivos que são instalados como parte do SDK do Visual Studio. Para obter mais informações, consulte [definidos pelo IDE comandos, menus e grupos](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
@@ -59,7 +59,7 @@ Este artigo enumera os valores GUID e ID de menus e grupos na barra de menus do 
 |Janela|IDM_VS_MENU_WINDOW|
 |Suplementos|IDM_VS_MENU_ADDINS|
 |Comunidade|IDM_VS_MENU_COMMUNITY|
-|Ajuda|IDM_VS_MENU_HELP|
+|Help|IDM_VS_MENU_HELP|
 
 ## <a name="groups-on-visual-studio-menus"></a>Grupos de menus do Visual Studio
  As listas a seguir mostram os grupos que descendem diretamente dos menus na barra de menus do Visual Studio. A maneira mais rápida para adicionar um comando ao menu Visual Studio é definir um desses grupos como o pai. Grupos que descendem dos seus submenus não aparecem nesta seção.
@@ -178,7 +178,7 @@ Este artigo enumera os valores GUID e ID de menus e grupos na barra de menus do 
  A hierarquia a seguir mostra os submenus que estão associados com os menus na barra de menus do Visual Studio. Como apenas um grupo pode ter um menu como seu pai, cada submenu deve descender de um grupo em um menu, em vez de diretamente do menu. Para obter mais informações sobre a relação entre os submenus de menus e grupos, consulte [adicionar um submenu a um menu](../../extensibility/adding-a-submenu-to-a-menu.md).
 
 > [!NOTE]
->  Os nomes dos menus na barra de menus do Visual Studio não são mostrados separadamente nesta hierarquia porque eles podem ser inferidos de convenção de nomenclatura para grupos no IDE, da seguinte maneira: *IDG_VS_\<nome do Menu\>_\<nome do grupo\>*.
+> Os nomes dos menus na barra de menus do Visual Studio não são mostrados separadamente nesta hierarquia porque eles podem ser inferidos de convenção de nomenclatura para grupos no IDE, da seguinte maneira: *IDG_VS_\<nome do Menu\>_\<nome do grupo\>*.
 
 |Grupo pai|Submenu|Grupos filho|
 |------------------|-------------|------------------|

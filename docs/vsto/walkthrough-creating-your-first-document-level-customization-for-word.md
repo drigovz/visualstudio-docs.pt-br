@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 66580d29c50332d32554334e1315d7be88810a0b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a38d3ae806439c286a5230ee704acedf2070e27
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438518"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>Passo a passo: Criar a primeira personalização no nível de documento para Word
   Este passo a passo introdutório mostra como criar uma personalização no nível de documento para o Microsoft Office Word. Os recursos que você criar nesse tipo de solução estão disponíveis somente quando um documento específico estiver aberto. Você não pode usar uma personalização no nível de documento para fazer alterações em todo o aplicativo, por exemplo, exibindo uma nova guia de faixa de opções quando qualquer documento é aberto.
@@ -112,7 +112,7 @@ ms.locfileid: "60095450"
      [!code-csharp[Trin_WordDocumentTutorial#1](../vsto/codesnippet/CSharp/FirstDocumentCustomization/ThisDocument.cs#1)]
 
     > [!NOTE]
-    >  Esse código usa o valor de índice 1 para acessar o primeiro parágrafo de <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A> propriedade. Embora o Visual Basic e Visual c# usam conjuntos baseados em 0, os limites inferiores da matriz da maioria das coleções no modelo de objeto do Word é 1. Para obter mais informações, consulte [escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md).
+    > Esse código usa o valor de índice 1 para acessar o primeiro parágrafo de <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A> propriedade. Embora o Visual Basic e Visual c# usam conjuntos baseados em 0, os limites inferiores da matriz da maioria das coleções no modelo de objeto do Word é 1. Para obter mais informações, consulte [escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md).
 
 ## <a name="test-the-project"></a>O projeto de teste
 

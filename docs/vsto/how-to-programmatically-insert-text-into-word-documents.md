@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a24fde5f04a88de7eec34836df38bc1cca8669ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e04f3b4420cc8f3b56eee304ae199cf87fa4a3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060625"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412584"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>Como: Programaticamente, inserir texto em documentos do Word
   Há três formas principais para inserir texto em documentos do Microsoft Office Word:
@@ -33,7 +33,7 @@ ms.locfileid: "60060625"
 - Use o <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> método de um <xref:Microsoft.Office.Interop.Word.Selection> objeto a ser inserido texto na seleção ou cursor.
 
 > [!NOTE]
->  Você também pode inserir texto em controles de conteúdo e indicadores. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md) e [controle do indicador](../vsto/bookmark-control.md).
+> Você também pode inserir texto em controles de conteúdo e indicadores. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md) e [controle do indicador](../vsto/bookmark-control.md).
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 

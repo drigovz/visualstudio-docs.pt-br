@@ -13,18 +13,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96b0343cd088a8d608cd3503162bf7fa737b79f4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 19372b341a0a8ba49caa0208a9a2fbbfd0a6b29b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602436"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418707"
 ---
 # <a name="createpkgdef-utility"></a>Utilitário CreatePkgDef
 Usa um arquivo. dll para uma extensão do Visual Studio como um parâmetro e cria um *pkgdef* arquivo para acompanhar as *. dll* arquivo. O *pkgdef* arquivo contém todas as informações que, caso contrário, seriam gravadas no registro do sistema quando a extensão está instalada.
 
 > [!NOTE]
->  A maioria dos modelos de projeto que estão incluídos no SDK do Visual Studio automaticamente cria *pkgdef* arquivos como parte do processo de compilação. Este documento destina-se para aqueles que desejam criar pacotes manualmente ou converter pacotes existentes para usar *pkgdef* implantação.
+> A maioria dos modelos de projeto que estão incluídos no SDK do Visual Studio automaticamente cria *pkgdef* arquivos como parte do processo de compilação. Este documento destina-se para aqueles que desejam criar pacotes manualmente ou converter pacotes existentes para usar *pkgdef* implantação.
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -55,7 +55,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
   Se a pasta de instalação estiver *%vsinstalldir%\Common7\IDE\Extensions\\*, a extensão está habilitada por padrão.
 
 > [!NOTE]
->  O **extensões e atualizações** ferramenta não pode ser usada para acessar uma extensão, a menos que ele é instalado como parte de um pacote VSIX.
+> O **extensões e atualizações** ferramenta não pode ser usada para acessar uma extensão, a menos que ele é instalado como parte de um pacote VSIX.
 
 ## <a name="see-also"></a>Consulte também
 - [Utilitário CreateExpInstance](../../extensibility/internals/createexpinstance-utility.md)

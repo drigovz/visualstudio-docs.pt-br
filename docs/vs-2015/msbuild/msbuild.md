@@ -12,12 +12,12 @@ caps.latest.revision: 62
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b204a0f3bda5eab9291d4201fbea3c39a3f62ca6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2534726de9f4aeb015753e0b1ea6870f2120e014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050394"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425908"
 ---
 # <a name="msbuild"></a>MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ O [!INCLUDE[vstecmsbuildengine](../includes/vstecmsbuildengine-md.md)] é uma pl
   Você pode escrever código no IDE do Visual Studio, mas executar os builds usando o MSBuild. Como outra alternativa, você pode compilar o código no IDE em um computador de desenvolvimento, mas usar uma linha de comando do MSBuild para compilar o código integrado de vários desenvolvedores.  
   
 > [!NOTE]
->  Você pode usar o Team Foundation Build para compilar, testar e implantar seu aplicativo automaticamente. O sistema de build pode executar builds automaticamente quando os desenvolvedores fazem o check-in de código (por exemplo, como parte de uma estratégia de Integração Contínua) ou de acordo com um cronograma (por exemplo, um build de teste de aceitação pós-build noturno). O Team Foundation Build compila seu código usando o MSBuild. Para obter mais informações, consulte [Compilar o aplicativo](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
+> Você pode usar o Team Foundation Build para compilar, testar e implantar seu aplicativo automaticamente. O sistema de build pode executar builds automaticamente quando os desenvolvedores fazem o check-in de código (por exemplo, como parte de uma estratégia de Integração Contínua) ou de acordo com um cronograma (por exemplo, um build de teste de aceitação pós-build noturno). O Team Foundation Build compila seu código usando o MSBuild. Para obter mais informações, consulte [Compilar o aplicativo](http://msdn.microsoft.com/library/a971b0f9-7c28-479d-a37b-8fd7e27ef692).  
   
  Este tópico fornece uma visão geral do MSBuild. Para obter um tutorial de introdução, confira [Passo a passo: Usando o MSBuild](../msbuild/walkthrough-using-msbuild.md).  
   
@@ -83,7 +83,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
  Para obter mais informações sobre opções de linha de comando [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)], consulte [Referência de linha de comando](../msbuild/msbuild-command-line-reference.md).  
   
 > [!IMPORTANT]
->  Antes de baixar um projeto, determine a confiabilidade do código.  
+> Antes de baixar um projeto, determine a confiabilidade do código.  
   
 ## <a name="BKMK_ProjectFile"></a> Arquivo de Projeto  
  O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] usa um formato de arquivo de projeto baseado em XML que é simples e extensível. O formato de arquivo de projeto do [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] permite que os desenvolvedores descrevam os itens que devem ser compilados e também como eles devem ser compilados para diferentes sistemas operacionais e configurações. Além disso, o formato de arquivo de projeto permite aos desenvolvedores criar regras de build reutilizáveis que podem ser fatoradas em arquivos separados para que os builds possam ser realizados de forma consistente entre os diferentes projetos no produto.  
@@ -193,7 +193,7 @@ MSBuild.exe MyProj.proj /property:Configuration=Debug
   
 |Título|Descrição|  
 |-----------|-----------------|  
-|[Passo a passo: Criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Mostra como criar um arquivo de projeto básico de forma incremental, usando somente um editor de texto.|  
+|[Passo a passo: criando um arquivo de projeto do MSBuild do zero](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)|Mostra como criar um arquivo de projeto básico de forma incremental, usando somente um editor de texto.|  
 |[Passo a passo: Usando o MSBuild](../msbuild/walkthrough-using-msbuild.md)|Apresenta os blocos de construção do MSBuild e mostra como escrever, manipular e depurar projetos do MSBuild sem fechar o IDE do Visual Studio.|  
 |[Conceitos do MSBuild](../msbuild/msbuild-concepts.md)|Apresenta os quatro blocos de construção do MSBuild: propriedades, itens, destinos e tarefas.|  
 |[Itens](../msbuild/msbuild-items.md)|Descreve os conceitos gerais por trás do formato do arquivo [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] e como as partes se encaixam.|  

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ac93b71d67bc842b2498fbd4d017b17d9ddcf00c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 62d84dcb7ce22f1199d12a958250a465cd25a49c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062590"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412461"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>Como: Proteger documentos e partes de documentos de forma programática
   Você pode adicionar proteção para documentos do Microsoft Office Word para impedir que usuários fazendo nenhuma edição ao documento.
@@ -29,7 +29,7 @@ ms.locfileid: "60062590"
  Você também pode marcar determinadas áreas do documento como exceções para que os usuários especificados podem editar somente essas áreas do documento. Por exemplo, você talvez queira proteger um documento inteiro, exceto para um indicador específico. Opcionalmente, você pode adicionar uma senha para que os usuários não é possível remover a proteção do documento, a menos que eles conhecem a senha.
 
 > [!NOTE]
->  O exemplo a seguir não usa a proteção por senha; No entanto, você talvez queira considerar o uso de uma senha ao adicionar a proteção do documento. Para obter mais informações, consulte o exemplo de documento protetor em [exemplos de desenvolvimento do Office e instruções passo a passo](../vsto/office-development-samples-and-walkthroughs.md).
+> O exemplo a seguir não usa a proteção por senha; No entanto, você talvez queira considerar o uso de uma senha ao adicionar a proteção do documento. Para obter mais informações, consulte o exemplo de documento protetor em [exemplos de desenvolvimento do Office e instruções passo a passo](../vsto/office-development-samples-and-walkthroughs.md).
 
  Você também pode usar controles de conteúdo para proteger partes de documentos. Para obter mais informações, confira [Como: Proteger partes de documentos usando controles de conteúdo](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md).
 

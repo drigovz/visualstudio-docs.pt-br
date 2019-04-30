@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4aba200bff4bc8a017756ece6576e589f33e9df6
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: c4b2e6dd825cfcf67ffffd9ace27017c8d01aa33
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59662242"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431399"
 ---
 # <a name="how-to-build-incrementally"></a>Como: Compilar de forma incremental
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Quando você cria um projeto grande, é importante que já tenha criado componen
  Quando entradas e saídas são especificadas em um destino, cada saída pode mapear para apenas uma entrada ou não pode haver nenhum mapeamento direto entre as saídas e entradas. Na [Tarefa Csc](../msbuild/csc-task.md) anterior, por exemplo, a saída, hello.exe, não pode ser mapeada para uma única entrada, ela depende de todas as entradas.  
   
 > [!NOTE]
->  Um destino no qual não há nenhum mapeamento direto entre as entradas e saídas sempre será compilado com mais frequência do que um destino no qual cada saída possa mapear para apenas uma entrada porque o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] não pode determinar quais saídas precisam ser recriadas se algumas das entradas tiverem sido alteradas.  
+> Um destino no qual não há nenhum mapeamento direto entre as entradas e saídas sempre será compilado com mais frequência do que um destino no qual cada saída possa mapear para apenas uma entrada porque o [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] não pode determinar quais saídas precisam ser recriadas se algumas das entradas tiverem sido alteradas.  
   
  Tarefas nas quais você pode identificar um mapeamento direto entre as saídas e entradas, como a [Tarefa LC](../msbuild/lc-task.md), são mais adequadas para builds incrementais, ao contrário de tarefas como `Csc` e [Vbc](../msbuild/vbc-task.md), que produzem um assembly de saída de diversas entradas.  
   
@@ -70,7 +70,7 @@ Quando você cria um projeto grande, é importante que já tenha criado componen
   Este arquivo de projeto contém os destinos `Convert` e `Build`. As tarefas `GenerateContentFiles` e `BuildHelp` são colocadas nos destinos `Convert` e `Build`, respectivamente, para que cada destino possa ser compilado de forma incremental. Ao usar o elemento `Output`, as saídas da tarefa `GenerateContentFiles` são colocadas na lista de itens de `ContentFile`, na qual elas podem ser usadas como entradas para a tarefa `BuildHelp`. Usar o elemento `Output` dessa maneira fornece automaticamente as saídas de uma tarefa como entradas para outra tarefa para que você não precise listar os itens individuais ou listas de itens manualmente em cada tarefa.  
   
 > [!NOTE]
->  Embora o destino `GenerateContentFiles` possa ser compilado incrementalmente, todas as saídas desse destino sempre serão necessárias como entradas para o destino `BuildHelp`. O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] fornece automaticamente todas as saídas de um destino como entradas para outro destino quando você usa o elemento `Output`.  
+> Embora o destino `GenerateContentFiles` possa ser compilado incrementalmente, todas as saídas desse destino sempre serão necessárias como entradas para o destino `BuildHelp`. O [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] fornece automaticamente todas as saídas de um destino como entradas para outro destino quando você usa o elemento `Output`.  
   
 ```  
 <Project DefaultTargets="Build"  

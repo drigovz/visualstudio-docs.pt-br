@@ -11,12 +11,12 @@ ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2566c97a4dc025e27aecf64a7a8950a578882348
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 516deb626bd8c6056612fcc481b9d530da504b9d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054374"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437265"
 ---
 # <a name="windows-installer-basics"></a>Noções básicas do Windows Installer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ O Windows Installer instala e desinstala aplicativos ou produtos de software no 
  Dois conjuntos de regras determinam a implantação de recursos por meio de componentes do seu programa de instalação. Um conjunto de regras é mantido pelo instalador do Windows em si, enquanto você deve aplicar o segundo conjunto como autor da instalação.  
   
 > [!NOTE]
->  A imposição de regras do Windows Installer ocorre somente se você executar uma validação de seu arquivo. msi. No entanto, são evitaram para tratar essas regras como as práticas recomendadas. Para obter mais informações, consulte [validação de um banco de dados de instalação](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) e [validação de pacote](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
+> A imposição de regras do Windows Installer ocorre somente se você executar uma validação de seu arquivo. msi. No entanto, são evitaram para tratar essas regras como as práticas recomendadas. Para obter mais informações, consulte [validação de um banco de dados de instalação](http://msdn.microsoft.com/library/aa372477\(VS.85\).aspx) e [validação de pacote](http://msdn.microsoft.com/library/aa370569\(VS.85\).aspx).  
   
 #### <a name="installer-enforced-rules"></a>Regras aplicadas pelo instalador  
   

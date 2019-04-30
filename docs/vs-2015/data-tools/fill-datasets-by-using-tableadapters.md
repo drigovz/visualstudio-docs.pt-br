@@ -22,12 +22,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4c036cac8fa60e3f0353815cb3790f0f74ddc77
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 0d4fca66296f4437d3c9af55142d9fdbc56f21b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431952"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>Preencher conjuntos de dados usando TableAdapters
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "59656772"
 Um componente do TableAdapter preenche um dataset com os dados do banco de dados, com base em uma ou mais consultas ou procedimentos armazenados que você especificar. Também pode executar a TableAdapters adiciona, atualiza e exclui o banco de dados para manter as alterações feitas ao conjunto de dados. Você também pode emitir comandos globais que não estão relacionados a qualquer tabela específica.  
   
 > [!NOTE]
->  TableAdapters são gerados por designers do Visual Studio. Se você estiver criando conjuntos de dados programaticamente, em seguida, use DataAdapter, que é uma classe do .NET Framework.  
+> TableAdapters são gerados por designers do Visual Studio. Se você estiver criando conjuntos de dados programaticamente, em seguida, use DataAdapter, que é uma classe do .NET Framework.  
   
  Para obter informações detalhadas sobre as operações do TableAdapter, você pode ignorar diretamente para um destes tópicos:  
   
@@ -98,7 +98,7 @@ Um componente do TableAdapter preenche um dataset com os dados do banco de dados
  Quando você usa um TableAdapter, ele efetivamente executa as mesmas operações com os comandos que você geralmente deseja executar. Por exemplo, quando você chama o adaptador `Fill` método, o adaptador executa o comando de dados no seu `SelectCommand` propriedade e usa um leitor de dados (por exemplo, <xref:System.Data.SqlClient.SqlDataReader>) para carregar o resultado na tabela de dados. Da mesma forma, quando você chama o adaptador `Update` método, ele executa o comando apropriado (em de `UpdateCommand`, `InsertCommand`, e `DeleteCommand` propriedades) para cada registro na tabela de dados alterado.  
   
 > [!NOTE]
->  Se não houver informações suficientes na consulta principal, o `InsertCommand`, `UpdateCommand`, e `DeleteCommand` comandos são criados por padrão quando o TableAdapter é gerado. Se a consulta principal do TableAdapter é a mais de uma instrução SELECT única tabela, é possível que o designer não será capaz de gerar `InsertCommand`, `UpdateCommand`, e `DeleteCommand`. Se esses comandos não são gerados, você pode receber um erro ao executar o `TableAdapter.Update` método.  
+> Se não houver informações suficientes na consulta principal, o `InsertCommand`, `UpdateCommand`, e `DeleteCommand` comandos são criados por padrão quando o TableAdapter é gerado. Se a consulta principal do TableAdapter é a mais de uma instrução SELECT única tabela, é possível que o designer não será capaz de gerar `InsertCommand`, `UpdateCommand`, e `DeleteCommand`. Se esses comandos não são gerados, você pode receber um erro ao executar o `TableAdapter.Update` método.  
   
 ## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter GenerateDbDirectMethods  
  Além `InsertCommand`, `UpdateCommand`, e `DeleteCommand`, TableAdapters são criados com métodos que podem ser executados diretamente no banco de dados. Esses métodos (`TableAdapter.Insert`, `TableAdapter.Update`, e `TableAdapter.Delete`) podem ser chamados diretamente para manipular dados no banco de dados. Isso significa que você pode chamar esses métodos individuais do seu código em vez de chamar `TableAdapter.Update` para lidar com as inserções, atualizações e exclusões pendentes para a tabela de dados associada.  

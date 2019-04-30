@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 37fa7bafb77c67d29ff9625fa04388f9dd826f8e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 586ad1d68ce1d0310b30b8bdac8aa2fb55acdeb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059260"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411871"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>Geração de texto de tempo de execução com modelos de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ This report is Company Confidential.
 3. Digite um nome para seu arquivo de modelo.  
   
     > [!NOTE]
-    >  O nome do arquivo de modelo será ser usado como um nome de classe no código gerado. Portanto, ele não deve ter espaços ou pontuação.  
+    > O nome do arquivo de modelo será ser usado como um nome de classe no código gerado. Portanto, ele não deve ter espaços ou pontuação.  
   
 4. Escolha **Adicionar**.  
   
@@ -84,7 +84,7 @@ This report is Company Confidential.
 2. O arquivo de conjunto **ferramentas personalizados** propriedade **TextTemplatingFilePreprocessor**. No Gerenciador de soluções, no menu de atalho do arquivo, escolha **propriedades**.  
   
     > [!NOTE]
-    >  Se a propriedade já está definida, certifique-se de que se trata **TextTemplatingFilePreprocessor** e não **TextTemplatingFileGenerator**. Isso pode acontecer se você incluir um arquivo que já tenha a extensão **. TT**.  
+    > Se a propriedade já está definida, certifique-se de que se trata **TextTemplatingFilePreprocessor** e não **TextTemplatingFileGenerator**. Isso pode acontecer se você incluir um arquivo que já tenha a extensão **. TT**.  
   
 3. Alterar a extensão de nome de arquivo para **. TT**. Embora esta etapa seja opcional, ele ajuda a evitar abrir o arquivo em um editor incorreto.  
   

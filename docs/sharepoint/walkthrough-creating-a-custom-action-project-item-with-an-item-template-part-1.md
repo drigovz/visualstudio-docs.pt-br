@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7397da630a5fd6f2c649d6f448627d7c77c55128
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9417c2116dde909bda948e7d9140d7f52b090d68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059117"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430485"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>Passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 1
   Você pode estender o sistema de projeto do SharePoint no Visual Studio com a criação de tipos de item de seu próprio projeto. Neste passo a passo, você criará um item de projeto que pode ser adicionado a um projeto do SharePoint para criar uma ação personalizada em um site do SharePoint. A ação personalizada adiciona um item de menu para o **ações do Site** menu do site do SharePoint.
@@ -44,7 +44,7 @@ ms.locfileid: "60059117"
   Esse é um passo a passo autônoma. Depois de concluir este passo a passo, você pode aprimorar o item de projeto com a adição de um Assistente para o modelo de item. Para obter mais informações, confira [Passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 2](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-2.md).
 
 > [!NOTE]
->  Você pode baixar um exemplo de [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) que mostra como criar atividades personalizadas para um fluxo de trabalho.
+> Você pode baixar um exemplo de [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) que mostra como criar atividades personalizadas para um fluxo de trabalho.
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passo:
@@ -81,7 +81,7 @@ ms.locfileid: "60059117"
 4. No **novo projeto** diálogo caixa, expanda o **Visual c#** ou **Visual Basic** nós e, em seguida, escolha o **extensibilidade** nó.
 
     > [!NOTE]
-    >  O **extensibilidade** o nó está disponível somente se você instalar o SDK do Visual Studio. Para obter mais informações, consulte a seção pré-requisitos no início deste tópico.
+    > O **extensibilidade** o nó está disponível somente se você instalar o SDK do Visual Studio. Para obter mais informações, consulte a seção pré-requisitos no início deste tópico.
 
 5. Escolha o **VSIX Project** modelo.
 
@@ -164,7 +164,7 @@ ms.locfileid: "60059117"
 2. Na lista de itens de projeto, escolha o **arquivo de ícone** item.
 
     > [!NOTE]
-    >  Em projetos do Visual Basic, você deve escolher o **gerais** nó para exibir o **arquivo de ícone** item.
+    > Em projetos do Visual Basic, você deve escolher o **gerais** nó para exibir o **arquivo de ícone** item.
 
 3. No **nome** , digite **CustomAction_SolutionExplorer.ico**e, em seguida, escolha o **Add** botão.
 
@@ -197,7 +197,7 @@ ms.locfileid: "60059117"
 3. Substitua o conteúdo do arquivo pelo XML a seguir e, em seguida, salve e feche o arquivo.
 
     > [!NOTE]
-    >  O XML a seguir é para um modelo de item do Visual c#. Se você estiver criando um modelo de item do Visual Basic, substitua o valor de `ProjectType` elemento com `VisualBasic`.
+    > O XML a seguir é para um modelo de item do Visual c#. Se você estiver criando um modelo de item do Visual Basic, substitua o valor de `ProjectType` elemento com `VisualBasic`.
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -310,7 +310,7 @@ ms.locfileid: "60059117"
 6. No **tipo** , escolha **Microsoft.VisualStudio.ItemTemplate**.
 
     > [!NOTE]
-    >  Esse valor corresponde à `ItemTemplate` elemento no arquivo Extension vsixmanifest. Este elemento identifica a subpasta no pacote VSIX que contém o modelo de item de projeto. Para obter mais informações, consulte [ItemTemplate Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
+    > Esse valor corresponde à `ItemTemplate` elemento no arquivo Extension vsixmanifest. Este elemento identifica a subpasta no pacote VSIX que contém o modelo de item de projeto. Para obter mais informações, consulte [ItemTemplate Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393681\(v\=vs.100\)).
 
 7. No **fonte** , escolha **um projeto na solução atual**.
 
@@ -323,7 +323,7 @@ ms.locfileid: "60059117"
 10. No **tipo** , escolha **mefcomponent**.
 
     > [!NOTE]
-    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 11. No **fonte** , escolha **um projeto na solução atual**.
 
@@ -425,7 +425,7 @@ ms.locfileid: "60059117"
      A ação personalizada é empacotada e implantada para o site do SharePoint que é especificado na **URL do Site** propriedade do projeto. O navegador da web abre a página padrão deste site.
 
     > [!NOTE]
-    >  Se o **Script Debugging Disabled** caixa de diálogo for exibida, escolha o **Sim** botão para continuar a depuração do projeto.
+    > Se o **Script Debugging Disabled** caixa de diálogo for exibida, escolha o **Sim** botão para continuar a depuração do projeto.
 
 4. Sobre o **ações do Site** menu, escolha **Central de desenvolvedores do SharePoint**, verifique se o navegador abre o site https://docs.microsoft.com/sharepoint/dev/e, em seguida, feche o navegador da web.
 

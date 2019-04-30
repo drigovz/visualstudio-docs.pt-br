@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8af9386d192c6dd96669dbfada298317cf5fe0e5
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 1378cddbc9770af923a98f1b7083a8792874b5b3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56646298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429280"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>Mesclar o XML em manifestos de recurso e pacote
   Recursos e pacotes são definidos por [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] arquivos de manifesto. Esses manifestos empacotados são uma combinação de dados gerados em designers e personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] inseridos no modelo de manifesto pelos usuários. No tempo de empacotamento [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] mescla personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] instruções com o designer fornecido pelo [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] para formar o empacotados [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] arquivo de manifesto. Elementos semelhantes, com as exceções disponível mais adiante exceções de mesclagem, são mesclados para evitar [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] erros de validação depois de implantar os arquivos para o SharePoint e para tornar o manifesto arquivos menores e mais eficiente.
@@ -55,7 +55,7 @@ ms.locfileid: "56646298"
 |CustomUpgradeActionParameter|Nome|
 
 > [!NOTE]
->  Porque a única maneira de modificar o elemento CustomUpgradeAction está em personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editor, o efeito da mesclagem não é baixo.
+> Porque a única maneira de modificar o elemento CustomUpgradeAction está em personalizado [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] editor, o efeito da mesclagem não é baixo.
 
 ## <a name="package-manifest-elements"></a>Elementos do manifesto de pacote
  A tabela a seguir é uma lista de todos os elementos de manifesto de pacote que podem ser mesclados e sua chave exclusiva que é usado para correspondência.

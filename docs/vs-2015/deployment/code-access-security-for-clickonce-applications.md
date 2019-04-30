@@ -24,12 +24,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b56f926006b952b0e92a791e36bb821f3df0197d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 54160bbdfe834a1b3226f4445b862c151bcf35c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423274"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>Segurança de acesso do código para aplicativos ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Os aplicativos ClickOnce são baseados no .NET Framework e estão sujeitos a res
 - Quando um aplicativo requer permissões de confiança total, o usuário final será solicitado a conceder permissões para o aplicativo. Isso significa que o aplicativo não fornece realmente uma experiência de ClickOnce, e o prompt pode ser potencialmente confuso para usuários menos experientes.  
   
   > [!NOTE]
-  >  Ao instalar um aplicativo de mídia removível, como um CD-ROM, o usuário não é solicitado. Além disso, um administrador de rede pode configurar a política de rede para que os usuários não são solicitados ao instalar um aplicativo de uma fonte confiável. Para obter mais informações, consulte [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).  
+  > Ao instalar um aplicativo de mídia removível, como um CD-ROM, o usuário não é solicitado. Além disso, um administrador de rede pode configurar a política de rede para que os usuários não são solicitados ao instalar um aplicativo de uma fonte confiável. Para saber mais, veja [Visão geral da implantação de aplicativos confiáveis](../deployment/trusted-application-deployment-overview.md).  
   
   Para restringir as permissões para um aplicativo ClickOnce, você pode modificar as permissões de segurança de acesso do código para seu aplicativo solicitar a zona que melhor se adapta as permissões que seu aplicativo requer. Na maioria dos casos, você pode selecionar a zona da qual o aplicativo está sendo implantado. Por exemplo, se seu aplicativo for um aplicativo empresarial, você pode usar o **Intranet Local** zona. Se seu aplicativo for um aplicativo da internet, você pode usar o **Internet** zona.  
   

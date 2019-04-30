@@ -12,18 +12,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67a58ab1bf508ba1b2edc7117412638de6c2231a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9c714aec9bf4bb1fa28bd04a1b5e3375f98da4dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099540"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410088"
 ---
 # <a name="create-a-custom-debug-engine"></a>Criar um mecanismo de depuração personalizado
 Um mecanismo de depuração (DES) é um componente que permite a depuração de arquiteturas de tempo de execução específicas. Normalmente, há apenas uma implementação DE cada ambiente de tempo de execução.
 
 > [!NOTE]
->  Embora existam implementações DE separadas para Transact-SQL e JScript, VBScript e JScript compartilham um único DE.
+> Embora existam implementações DE separadas para Transact-SQL e JScript, VBScript e JScript compartilham um único DE.
 
  A DE funciona com o sistema de operação ou interpretador para fornecer esses serviços de depuração como avaliação de expressão, os pontos de interrupção e controle de execução. Esses serviços são implementados por meio DE interfaces e podem fazer com que o depurador para fazer a transição entre os modos operacionais diferentes. Para obter mais informações, consulte [modos operacionais](../../extensibility/debugger/operational-modes.md).
 

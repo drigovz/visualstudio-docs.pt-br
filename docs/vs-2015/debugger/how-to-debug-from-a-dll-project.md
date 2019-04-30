@@ -20,12 +20,12 @@ caps.latest.revision: 33
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 360384118f5c2d02801b63b8836800eca5e26d78
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6496d38e753d2338966916d1d7855abca77ace34
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438486"
 ---
 # <a name="how-to-debug-from-a-dll-project"></a>Como: Depurar de um projeto DLL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Para iniciar a depuração de um projeto DLL, você deve especificar o aplicativ
  Se uma DLL gerenciada for chamada por código nativo e você quiser depurar os dois, você pode especificar isso nas propriedades do projeto. Para obter mais informações, confira [Como: Depurar no modo misto](../debugger/how-to-debug-in-mixed-mode.md).  
   
 > [!NOTE]
->  Você não pode especificar um aplicativo de chamada externa nas edições Express do Visual Studio. Em vez disso, você precisa adicionar um projeto executável à solução, defini-lo como o projeto de inicialização e chamar métodos na DLL do projeto executável.  
+> Você não pode especificar um aplicativo de chamada externa nas edições Express do Visual Studio. Em vez disso, você precisa adicionar um projeto executável à solução, defini-lo como o projeto de inicialização e chamar métodos na DLL do projeto executável.  
   
 ### <a name="to-specify-the-calling-application-in-a-c-project"></a>Para especificar o aplicativo de chamada em um projeto C++  
   

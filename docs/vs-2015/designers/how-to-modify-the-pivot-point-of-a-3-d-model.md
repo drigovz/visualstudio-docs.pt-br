@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f63c271e096793a03616356b9eb7229e4f823fbd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a89e06fad1e47e3c2fd7be565acab9d94e3f29d5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071779"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434425"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3-d-model"></a>Como: Modificar o ponto dinâmico de um modelo 3D
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Este documento demonstra como usar o Editor de Modelo para modificar o *ponto di
     Você também pode especificar o ponto dinâmico usando a propriedade **Translação do Pivô** na janela **Propriedades**.  
   
    > [!TIP]
-   >  Você pode exibir o efeito do novo ponto dinâmico, girando o objeto. Para girá-lo, use a ferramenta **Girar** ou modifique a propriedade **Rotação**.  
+   > Você pode exibir o efeito do novo ponto dinâmico, girando o objeto. Para girá-lo, use a ferramenta **Girar** ou modifique a propriedade **Rotação**.  
   
    Aqui está um modelo que tem um ponto dinâmico modificado:  
   

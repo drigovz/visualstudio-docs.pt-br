@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 577b12be220e2a695609db6c508d7aaf69c79f92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 537bae766b71744a61e5158b1a859cade4cdcda7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419646"
 ---
 # <a name="how-to-create-event-handlers-in-office-projects"></a>Como: Criar manipuladores de eventos em projetos do Office
   Há várias maneiras de criar manipuladores de eventos no Visual Basic e c#. No modo design, você pode criar o padrão de manipuladores de eventos para controles clicando duas vezes no controle ou usar o painel de eventos do **propriedades** janela para criar manipuladores de qualquer evento no controle. No entanto, se você estiver no modo de exibição de código, talvez não queira alternar para modo de Design para criar um manipulador de eventos.
@@ -34,7 +34,7 @@ ms.locfileid: "60054515"
 1. Dos **nome da classe** lista suspensa na parte superior do Editor de códigos, selecione o objeto que você deseja criar um manipulador de eventos.
 
     > [!NOTE]
-    >  Se você quiser criar manipuladores de eventos para `ThisDocument` ou `ThisWorkbook`, você deve selecionar **(eventos ThisDocument)** ou **(eventos ThisWorkbook)** no **nome da classe**lista suspensa
+    > Se você quiser criar manipuladores de eventos para `ThisDocument` ou `ThisWorkbook`, você deve selecionar **(eventos ThisDocument)** ou **(eventos ThisWorkbook)** no **nome da classe**lista suspensa
 
 2. Dos **nome do método** lista suspensa na parte superior do Editor de códigos, selecione o evento.
 

@@ -1,5 +1,5 @@
 ---
-title: 'DA0017: altas taxas de paginação de memória ativa em disco | Microsoft Docs'
+title: 'DA0017: Altas taxas de paginação de memória ativa em disco | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -13,14 +13,14 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 136a8489ed3eac621543cb40b004052c2c9d3324
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 00df8bf8757b9dba35537942716c37f66675bf32
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54803482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435858"
 ---
-# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: taxas elevadas de paginação de memória ativa em disco
+# <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017: Altas taxas de paginação de memória ativa para o disco
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id da regra | DA0017 |  
@@ -37,7 +37,7 @@ Id da regra | DA0017 |
 ## <a name="rule-description"></a>Descrição da Regra  
   
 > [!NOTE]
->  Essa regra informativa é acionada quando os níveis de paginação de memória ativa atingem uma quantidade significativa. Quando ocorre um nível extremamente alto de paginação, a regra de aviso [DA0014: taxas extremamente altas de paginação de memória ativa em disco](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) é acionada.  
+> Essa regra informativa é acionada quando os níveis de paginação de memória ativa atingem uma quantidade significativa. Quando ocorre um nível extremamente alto de paginação, a regra de aviso [DA0014: Taxas de paginação de memória ativa para o disco extremamente altas](../profiling/da0014-extremely-high-rates-of-paging-active-memory-to-disk.md) é disparada em vez disso.  
   
  A paginação excessiva em disco pode ser causada pela memória física insuficiente. Se as operações de paginação dominarem o uso do disco físico em que o arquivo de paginação reside, elas poderão deixar mais lentas outras operações de disco orientadas por aplicativo no mesmo disco.  
   

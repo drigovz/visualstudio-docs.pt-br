@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c6e6ec0cb8affbb820886f2bca163aae00d8536f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2c7eecfb6d56d4db378882f6cd45f96454a086dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421731"
 ---
 # <a name="how-to-create-xml-snippets"></a>Como: Criar snippet XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ O editor XML pode ser usado para criar novos snippets XML. O editor inclui um sn
  O elemento de `Code` define o texto XML que será inserido quando o snippet é chamado.  
   
 > [!NOTE]
->  O texto de snippet XML deve ser incluído em uma seção de `<![CDATA[...]]>` .  
+> O texto de snippet XML deve ser incluído em uma seção de `<![CDATA[...]]>` .  
   
  O seguinte é o elemento de `Code` que é criado pelo snippet de texto constante.  
   

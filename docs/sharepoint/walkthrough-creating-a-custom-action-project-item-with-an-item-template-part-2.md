@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b71b092bcadef24e564b14dd215bc9c328aa8e7f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d9170c6ed32c7a807af8c869ca9616db3bdff683
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081132"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430462"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>Passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 2
   Depois de definir um tipo personalizado de item de projeto do SharePoint e associá-lo a um modelo de item no Visual Studio, você também poderá fornecer um assistente do modelo. Você pode usar o Assistente para coletar informações dos usuários quando eles usam seu modelo para adicionar uma nova instância do item de projeto a um projeto. As informações que você coleta podem ser usadas para inicializar o item de projeto.
@@ -34,7 +34,7 @@ ms.locfileid: "60081132"
 - Depurando e testando o assistente.
 
 > [!NOTE]
->  Você pode baixar um exemplo de [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) que mostra como criar atividades personalizadas para um fluxo de trabalho.
+> Você pode baixar um exemplo de [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) que mostra como criar atividades personalizadas para um fluxo de trabalho.
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Para executar este passo a passo, você deve primeiro criar a solução CustomActionProjectItem Concluindo [passo a passo: Criar um item de projeto de ação personalizado com um modelo de item, parte 1](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md).
@@ -125,12 +125,12 @@ ms.locfileid: "60081132"
 2. No modo de exibição XAML, substitua o XAML atual com o XAML a seguir. O XAML define uma interface do usuário que inclui um título, controla para especificar o comportamento da ação personalizada e botões de navegação na parte inferior da janela.
 
     > [!NOTE]
-    >  O projeto terá alguns erros de compilação, depois de adicionar esse código. Esses erros serão eliminados quando você adicionar o código em etapas posteriores.
+    > O projeto terá alguns erros de compilação, depois de adicionar esse código. Esses erros serão eliminados quando você adicionar o código em etapas posteriores.
 
      [!code-xml[SPExtensibility.ProjectItem.CustomAction#9](../sharepoint/codesnippet/Xaml/customactionprojectitem/itemtemplatewizard/wizardwindow.xaml#9)]
 
     > [!NOTE]
-    >  A janela que é criada nesse XAML é derivada de <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> classe base. Quando você adiciona uma caixa de diálogo do WPF personalizada para o Visual Studio, é recomendável que você derive sua caixa de diálogo desta classe ter estilo consistentes com as outras caixas de diálogo no Visual Studio e para evitar problemas que possam ocorrer com caixas de diálogo modal. Para obter mais informações, consulte [criando e gerenciando as caixas de diálogo Modal](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > A janela que é criada nesse XAML é derivada de <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> classe base. Quando você adiciona uma caixa de diálogo do WPF personalizada para o Visual Studio, é recomendável que você derive sua caixa de diálogo desta classe ter estilo consistentes com as outras caixas de diálogo no Visual Studio e para evitar problemas que possam ocorrer com caixas de diálogo modal. Para obter mais informações, consulte [criando e gerenciando as caixas de diálogo Modal](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
 
 3. Se você estiver desenvolvendo um projeto do Visual Basic, remova os `ItemTemplateWizard` namespace do `WizardWindow` nome da classe a `x:Class` atributo do `Window` elemento. Esse elemento é na primeira linha do XAML. Quando terminar, a primeira linha deve se parecer com o código a seguir:
 
@@ -314,7 +314,7 @@ ms.locfileid: "60081132"
      A ação personalizada é empacotada e implantada para o site do SharePoint especificado pela **URL do Site** propriedade do projeto e o navegador da web abre a página padrão deste site.
 
     > [!NOTE]
-    >  Se o **Script Debugging Disabled** caixa de diálogo for exibida, escolha o **Sim** botão.
+    > Se o **Script Debugging Disabled** caixa de diálogo for exibida, escolha o **Sim** botão.
 
 2. Na área de listas do site do SharePoint, escolha o **tarefas** link.
 
@@ -346,5 +346,5 @@ ms.locfileid: "60081132"
 - [Definir tipos personalizados de item de projeto do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Criar modelos de projeto do SharePoint para itens de projeto e modelos de item](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Referência de esquema do modelo do Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Como: Usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)
 - [IDs e os locais padrão de ação personalizada](http://go.microsoft.com/fwlink/?LinkId=181964)

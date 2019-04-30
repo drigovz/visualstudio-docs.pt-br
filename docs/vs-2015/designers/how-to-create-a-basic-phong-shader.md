@@ -9,12 +9,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 78ff2ecf77d3d8943601b8bd0779fa37811ec2d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7153c02f5cd3d494edb56b218512ba5de87f318a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113749"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438426"
 ---
 # <a name="how-to-create-a-basic-phong-shader"></a>Como: Criar um sombreador Phong básico
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Este documento demonstra como usar o Designer de Sombreador e o DGSL (Directed G
    A ilustração a seguir mostra o grafo de sombreador concluído e uma visualização do sombreador aplicado a um modelo de bule.  
   
 > [!NOTE]
->  Para demonstrar melhor o efeito do sombreador nesta ilustração, foi especificada uma cor laranja usando o parâmetro **MaterialDiffuse** do sombreador e foi especificado um acabamento de aparência metálica usando os parâmetros **MaterialSpecular** e **MaterialSpecularPower**. Para obter informações sobre parâmetros de material, consulte a seção Visualização de Sombreadores em [Designer de Sombreador](../designers/shader-designer.md).  
+> Para demonstrar melhor o efeito do sombreador nesta ilustração, foi especificada uma cor laranja usando o parâmetro **MaterialDiffuse** do sombreador e foi especificado um acabamento de aparência metálica usando os parâmetros **MaterialSpecular** e **MaterialSpecularPower**. Para obter informações sobre parâmetros de material, consulte a seção Visualização de Sombreadores em [Designer de Sombreador](../designers/shader-designer.md).  
   
  ![Grafo de sombreador e uma visualização de seu efeito](../designers/media/digit-lighting-graph.png "Digit-Lighting-Graph")  
   
@@ -62,9 +62,9 @@ Este documento demonstra como usar o Designer de Sombreador e o DGSL (Directed G
  A ilustração a seguir mostra o sombreador que é descrito neste documento, aplicado a um modelo 3D. A propriedade **MaterialSpecular** foi definida como (1,00, 0,50, 0,20, 0,00) e sua propriedade **MaterialSpecularPower** foi definida como 16.  
   
 > [!NOTE]
->  A propriedade **MaterialSpecular** determina o acabamento aparente do material da superfície. Uma superfície brilhante como vidro ou plástico tende a apresentar uma cor especular com uma tonalidade clara de branco. Uma superfície metálica tende a apresentar uma cor especular próxima de sua cor difusa. Uma superfície de acabamento acetinado tende a apresentar uma cor especular com um tom de cinza escuro.  
+> A propriedade **MaterialSpecular** determina o acabamento aparente do material da superfície. Uma superfície brilhante como vidro ou plástico tende a apresentar uma cor especular com uma tonalidade clara de branco. Uma superfície metálica tende a apresentar uma cor especular próxima de sua cor difusa. Uma superfície de acabamento acetinado tende a apresentar uma cor especular com um tom de cinza escuro.  
 >   
->  A propriedade **MaterialSpecularPower** determina a intensidade dos realces especulares. Alta potência especular simula realces mais opacos e localizados. A potência especular muito baixa simula realces intensos e abrangentes que podem saturar e ocultar a cor da superfície inteira.  
+> A propriedade **MaterialSpecularPower** determina a intensidade dos realces especulares. Alta potência especular simula realces mais opacos e localizados. A potência especular muito baixa simula realces intensos e abrangentes que podem saturar e ocultar a cor da superfície inteira.  
   
  ![Iluminação de Phong aplicada a um modelo](../designers/media/digit-lighting-model.png "Digit-Lighting-Model")  
   

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc42301901c6642a54dcb6b84de52a4acc198b4a
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 4953c8478e25a1534691e99c41dce03930ac46ef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56720413"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434671"
 ---
 # <a name="sccdirqueryinfo-function"></a>Função SccDirQueryInfo
 Essa função examina uma lista de diretórios totalmente qualificados para o seu status atual.
@@ -66,7 +66,7 @@ LPLONG  lpStatus
  O IDE usa essa função antes de um diretório é renomeado para verificar se o diretório está sob controle do código-fonte, consultando se ele tem um projeto correspondente. Se o diretório não está sob controle de origem, o IDE pode fornecer o aviso apropriado para o usuário.
 
 > [!NOTE]
->  Se um plug-in de controle do código-fonte optar por não implementar uma ou mais dos valores de status, o bits não implementadas devem ser definidos como zero.
+> Se um plug-in de controle do código-fonte optar por não implementar uma ou mais dos valores de status, o bits não implementadas devem ser definidos como zero.
 
 ## <a name="see-also"></a>Consulte também
 - [Funções de API de plug-in da controle de origem](../extensibility/source-control-plug-in-api-functions.md)

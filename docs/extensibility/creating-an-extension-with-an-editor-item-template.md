@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e87429c38d5b456eca08daa6675edcb0bd3f056
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 88ace66b8a28061ea7e8fdc7fa64f419042edf11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079805"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63410131"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>Criar uma extensão com um modelo de item editor
 Você pode usar modelos de item que estão incluídos no SDK do Visual Studio para criar extensões de editor básico que adicionar classificadores, adornos e margens no Editor. Os modelos de item editor estão disponíveis para projetos do Visual c# ou Visual Basic VSIX.
@@ -63,7 +63,7 @@ Você pode usar modelos de item que estão incluídos no SDK do Visual Studio pa
  O modelo do adorno de visor Editor cria um adorno de visor relativo que adiciona uma caixa violeta que tem um contorno vermelho para o canto superior direito do visor.
 
 > [!NOTE]
->  O **visor** é a área do modo de exibição de texto que está sendo exibida.
+> O **visor** é a área do modo de exibição de texto que está sendo exibida.
 
 ### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>Para criar uma extensão de adorno do visor, usando o modelo do adorno de visor do Editor
 

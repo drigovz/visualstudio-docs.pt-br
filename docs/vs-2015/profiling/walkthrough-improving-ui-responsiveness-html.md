@@ -19,12 +19,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ae2bb442edbeb49de25b44056263607fa4f26111
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7224dc1ddcffc203c930a3ead01c2f541af2122f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071636"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433166"
 ---
 # <a name="walkthrough-improving-ui-responsiveness-html"></a>Passo a passo: Melhorando a capacidade de resposta da interface do usuário (HTML)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Este passo a passo o orienta no processo de identificação e correção de um p
 1. No Visual Studio, crie um novo projeto de JavaScript universal do Windows. (Selecione **Arquivo/Novo/Projeto**. Escolha **JavaScript** no painel esquerdo e depois escolha **Windows**, **Windows 10**, em seguida, **Universal** ou **Windows Phone**.  
   
 2. > [!IMPORTANT]
-    >  Os resultados do diagnóstico mostrados neste tópico são mostrados para um aplicativo do Windows 8.  
+    > Os resultados do diagnóstico mostrados neste tópico são mostrados para um aplicativo do Windows 8.  
   
 3. Escolha um dos modelos de projeto em branco no painel central, como **Aplicativo em Branco**.  
   

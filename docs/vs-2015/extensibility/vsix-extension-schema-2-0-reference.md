@@ -11,12 +11,12 @@ ms.assetid: 0da81b98-f5e3-40d3-ba9a-94551378d0b4
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3e5808d23f34c6d9cfa5c355092e0fd55b5f4270
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a8c6d236f9f11f53e79e4239868815c7bbe9137
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048650"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436928"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referência do esquema de extensão do VSIX 2.0
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60048650"
 Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um pacote VSIX. O formato de arquivo é regido por um esquema. A versão 2.0 desse esquema dá suporte a adição de atributos e tipos personalizados.  O esquema do manifesto é extensível. O carregador de manifesto ignora elementos XML e atributos que não entende.  
   
 > [!IMPORTANT]
->  Visual Studio 2015 pode carregar arquivos VSIX nos formatos de Visual Studio 2010, Visual Studio 2012 ou Visual Studio 2013.  
+> Visual Studio 2015 pode carregar arquivos VSIX nos formatos de Visual Studio 2010, Visual Studio 2012 ou Visual Studio 2013.  
   
 ## <a name="package-manifest-schema"></a>Esquema de manifesto de pacote  
  O elemento raiz do arquivo manifesto XML é `<PackageManifest>`, com um único atributo `Version`, que é a versão do formato de manifesto. Se forem feitas alterações principais para o formato, o formato da versão será alterado. Este tópico descreve a versão do formato de manifesto 2.0, que é especificado no manifesto, definindo o `Version` de atributo para o valor da versão = "2.0".  
@@ -129,7 +129,7 @@ Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um paco
         - Única versão # - somente a versão especificada.  
   
         > [!IMPORTANT]
-        >  A versão 2.0 do VSIX esquema foi introduzido no Visual Studio 2012. Para usar este esquema você deve ter o Visual Studio 2012 ou posterior instalado no computador e usa o VSIXInstaller.exe que faz parte do produto. Você pode direcionar versões anteriores do Visual Studio com um Visual Studio 2012 ou posterior VSIXInstaller, mas somente usando as versões posteriores do instalador.  
+        > A versão 2.0 do VSIX esquema foi introduzido no Visual Studio 2012. Para usar este esquema você deve ter o Visual Studio 2012 ou posterior instalado no computador e usa o VSIXInstaller.exe que faz parte do produto. Você pode direcionar versões anteriores do Visual Studio com um Visual Studio 2012 ou posterior VSIXInstaller, mas somente usando as versões posteriores do instalador.  
   
     - `AnyAttribute*` – A `<InstallationTarget>` elemento permite que um conjunto em aberto de atributos que serão expostos em tempo de execução como um dicionário de par nome-valor.  
   

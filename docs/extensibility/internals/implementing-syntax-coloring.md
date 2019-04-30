@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 453952f52561a761ab4cf01825d07aa97595d0c2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 15659cc8061601776e3a3197a49f14e2c824aa7b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420436"
 ---
 # <a name="implementing-syntax-coloring"></a>Implementando a coloração de sintaxe
 Quando o serviço de linguagem fornece colorização de sintaxe, o analisador converte uma linha de texto em uma matriz de itens de coloração e retorna os tipos de token correspondente a esse itens de coloração. O analisador deve retornar tipos de token que pertencem a uma lista de itens de coloração. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] Exibe cada item que pode ser colorido na janela de código de acordo com os atributos atribuídos pelo objeto colorizador para o tipo de token apropriado.
@@ -27,7 +27,7 @@ Quando o serviço de linguagem fornece colorização de sintaxe, o analisador co
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar a coloração de sintaxe, consulte [passo a passo: Realçar o texto](../../extensibility/walkthrough-highlighting-text.md).
 
 > [!NOTE]
->  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
+> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
 
 ## <a name="steps-followed-by-an-editor-to-colorize-text"></a>Etapas seguidas por um Editor para colorir o texto
 
@@ -63,7 +63,7 @@ Quando o serviço de linguagem fornece colorização de sintaxe, o analisador co
  A estrutura de pacote gerenciado (MPF) fornece todas as classes que são necessários para implementar um colorizador. Sua classe de serviço de linguagem deve herdar o <xref:Microsoft.VisualStudio.Package.LanguageService> de classe e implementar os métodos necessários. Você deve fornecer um analisador e scanner, Implementando a <xref:Microsoft.VisualStudio.Package.IScanner> interface e retornar uma instância dessa interface do <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> método (um dos métodos que devem ser implementados no <xref:Microsoft.VisualStudio.Package.LanguageService> classe). Para obter mais informações, consulte [coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md).
 
 ## <a name="see-also"></a>Consulte também
-- [Como: Usar itens de coloração internos](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
+- [Como: usar itens de coloração internos](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [Itens de coloração personalizados](../../extensibility/internals/custom-colorable-items.md)
 - [Desenvolver um serviço de linguagem herdado](../../extensibility/internals/developing-a-legacy-language-service.md)
 - [Coloração de sintaxe em um serviço de linguagem herdado](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)

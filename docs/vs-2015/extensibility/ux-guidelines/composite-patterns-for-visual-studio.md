@@ -8,12 +8,12 @@ ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 caps.latest.revision: 9
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3d719a52535614b8cddf1c31aeb97e41c7614767
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 196fc4bddba0cfa6addb786148cd3876e1ec8260
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045077"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430015"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Padrões de composição para Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -433,7 +433,7 @@ Padrões compostos combinam elementos de design e interação em configurações
  O conceito fundamental na seleção de lista é que ele é baseado em linha, que significa que, quando uma seleção é feita em toda a linha está selecionada como uma unidade. Por outro lado, grades podem permitir a células específicas a ser selecionado sem afetar qualquer outro aspecto da linha. Grades também podem conter uma hierarquia de linhas aninhadas (como em uma grade de árvore) que permitem que todo ramificações da hierarquia a ser selecionada e desmarcada com a interação com as linhas pai. Seleção em listas é mostrada por uma cor de realce simples em toda a linha de dados. O foco é mostrado por uma borda pontilhada de pixel único ao redor da linha editável atual ou uma célula (linha se todas as células são somente leitura).
 
 > [!NOTE]
->  **Foco** e **seleção** são conceitos diferentes. *Foco* é uma indicação de qual interface do usuário do elemento é direcionado para receber entrada dirigida não explicitamente a outro objeto, enquanto *seleção* refere-se ao estado da inclusão de um objeto em um conjunto de objetos dos quais subsequentes as operações podem ocorrer.
+> **Foco** e **seleção** são conceitos diferentes. *Foco* é uma indicação de qual interface do usuário do elemento é direcionado para receber entrada dirigida não explicitamente a outro objeto, enquanto *seleção* refere-se ao estado da inclusão de um objeto em um conjunto de objetos dos quais subsequentes as operações podem ocorrer.
 
  As seleções nas listas podem ser contíguos, não contíguo, ou região. Quando várias seleções são permitidas, contíguos e seleção de disjunção sempre deve ser compatível, enquanto o suporte para as seleções de região (caixa) são opcional. Seleções de região são iniciadas, arrastando o espaço em branco do corpo da lista.
 

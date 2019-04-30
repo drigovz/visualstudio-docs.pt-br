@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2e3d51f35be039c5eafe15956b2d403c11005b68
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fccd328c521789c8ebb4b32c49b2a03a46027eb5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056309"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427756"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>Como: Adicionar controles Chart a planilhas
   Você pode adicionar <xref:Microsoft.Office.Tools.Excel.Chart> controles a uma planilha do Microsoft Office Excel em tempo de design e em tempo de execução em personalizações no nível do documento. Você também pode adicionar <xref:Microsoft.Office.Tools.Excel.Chart> controles em tempo de execução VSTO Add-ins.
@@ -39,7 +39,7 @@ ms.locfileid: "60056309"
  Você pode adicionar o <xref:Microsoft.Office.Tools.Excel.Chart> controle à sua planilha da mesma maneira que adicionaria um gráfico de dentro do aplicativo.
 
 > [!NOTE]
->  O <xref:Microsoft.Office.Tools.Excel.Chart> controle não está disponível na **caixa de ferramentas** ou o **fontes de dados** janela.
+> O <xref:Microsoft.Office.Tools.Excel.Chart> controle não está disponível na **caixa de ferramentas** ou o **fontes de dados** janela.
 
 ### <a name="to-add-a-chart-host-control-to-a-worksheet-in-excel"></a>Para adicionar um controle de host do gráfico para uma planilha do Excel
 

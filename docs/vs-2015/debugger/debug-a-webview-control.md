@@ -14,12 +14,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1ffb19e85d7294c082f7eecb0dbffd8aa436a03c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f2da5b3122bd97fcbef0db7124049372c21983f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065461"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422078"
 ---
 # <a name="debug-a-webview-control"></a>Depurar um controle do WebView
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 4. (Opcional) Para versões de não Express do Visual Studio, desabilitar a depuração de just-in-time (JIT) escolhendo **ferramentas**, **opções**, **depuração**, **Just-In-Time**, e, em seguida, desabilite a depuração JIT para Script.  
   
     > [!NOTE]
-    >  Desabilitando a depuração JIT, você pode ocultar caixas de diálogo para exceções não tratadas que ocorrem em algumas páginas da Web. No Visual Studio Express, a depuração JIT sempre fica desabilitada.  
+    > Desabilitando a depuração JIT, você pode ocultar caixas de diálogo para exceções não tratadas que ocorrem em algumas páginas da Web. No Visual Studio Express, a depuração JIT sempre fica desabilitada.  
   
 5. Pressione F5 para iniciar a depuração.  
   
@@ -82,7 +82,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
      ![Destino de seleção na janela do console JavaScript](../debugger/media/js-console-target.png "JS_Console_Target")  
   
     > [!NOTE]
-    >  Usando o console, você pode interagir com um único `WebView`, `iFrame`, compartilhar o contrato ou web worker por vez. Cada elemento requer uma instância separada do host da plataforma web (WWAHost.exe). Você pode interagir com um host por vez.  
+    > Usando o console, você pode interagir com um único `WebView`, `iFrame`, compartilhar o contrato ou web worker por vez. Cada elemento requer uma instância separada do host da plataforma web (WWAHost.exe). Você pode interagir com um host por vez.  
   
 6. Exibir e modificar variáveis no seu aplicativo ou usar comandos do console, conforme descrito em [guia de início rápido: Depurar o JavaScript](../debugger/quickstart-debug-javascript-using-the-console.md) e [comandos do JavaScript Console](../debugger/javascript-console-commands.md).  
   

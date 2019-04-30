@@ -16,12 +16,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 82f3d4a3ae9bc587fef038186afe9faef880571c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 971ca4e94f28016335483a03f4b0121de587f00d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439953"
 ---
 # <a name="rename-refactoring-c"></a>Refatoração Renomear (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60114724"
 **Renomear** é um recurso de refatoração no ambiente de desenvolvimento integrado (IDE) do Visual Studio que fornece uma maneira fácil de renomear identificadores para símbolos de código, como campos, variáveis locais, métodos, namespaces, propriedades e tipos. **Renomear** pode ser usado para alterar os nomes em comentários em cadeias de caracteres e para alterar as declarações e chamadas de um identificador.  
   
 > [!NOTE]
->  Ao usar o controle de origem para o Visual Studio, obtenha a versão mais recente das fontes antes de tentar realizar a refatoração de renomeação.  
+> Ao usar o controle de origem para o Visual Studio, obtenha a versão mais recente das fontes antes de tentar realizar a refatoração de renomeação.  
   
  Refatoração de renomeação está disponível dos seguintes recursos do Visual Studio:  
   
@@ -116,7 +116,7 @@ ms.locfileid: "60114724"
 2. Na declaração para `MethodB`, digite ou backspace sobre o identificador de método. Será exibido um prompt de marca inteligente abaixo esse identificador.  
   
     > [!NOTE]
-    >  Não é possível invocar usando smart tags na declaração de um identificador de refatoração de renomeação.  
+    > Não é possível invocar usando smart tags na declaração de um identificador de refatoração de renomeação.  
   
 3. Digite o atalho de teclado SHIFT + ALT + F10 e, em seguida, pressione a seta para baixo para exibir o menu de marca inteligente.  
   
@@ -144,7 +144,7 @@ ms.locfileid: "60114724"
  Se **Renomear sobrecargas** estiver marcada, o mecanismo de refatorar renomeia `Derived.Method(int i)` porque sobrecarrega `Derived.Method()`, `Base.Method(int i)` porque ele é substituído pelo `Derived.Method(int i)`, e `Base.Method()` porque ele é uma sobrecarga de `Base.Method(int i)`.  
   
 > [!NOTE]
->  Quando você renomeia um membro que foi definido em um assembly referenciado, uma caixa de diálogo explica que a renomeação causará erros de compilação.  
+> Quando você renomeia um membro que foi definido em um assembly referenciado, uma caixa de diálogo explica que a renomeação causará erros de compilação.  
   
 ## <a name="renaming-properties-of-anonymous-types"></a>Renomear propriedades de tipos anônimos  
  Quando você renomeia uma propriedade nos tipos anônimos, a operação de renomeação será propagado para as propriedades em outros tipos anônimos que têm as mesmas propriedades. Os exemplos a seguir ilustram esse comportamento.  

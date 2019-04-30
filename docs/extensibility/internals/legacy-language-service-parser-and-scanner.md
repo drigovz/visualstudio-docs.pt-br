@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: a92554843c1bdde48123515cb2548b2c513ef756
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 84b569a843a3ee414143dbfffb0dba6e881f5567
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418372"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>Analisador e scanner do serviço de linguagem herdado
 O analisador é o coração do serviço de linguagem. As classes de linguagem da estrutura de pacote gerenciado (MPF) exigem um analisador de linguagem para selecionar as informações sobre o código que está sendo exibido. Um analisador separa o texto em tokens léxicos e, em seguida, identifica esses tokens por tipo e funcionalidade.
@@ -66,7 +66,7 @@ namespace MyNamespace
  Ao contrário de um analisador que é usado como parte de um compilador (no qual os tokens são convertidos em alguma forma de código executável), um analisador de serviço de linguagem pode ser chamado por muitas razões diferentes e em muitos contextos diferentes. Como você pode implementar essa abordagem na <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método no <xref:Microsoft.VisualStudio.Package.LanguageService> classe cabe a você. É importante ter em mente que o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método pode ser chamado em um thread em segundo plano.
 
 > [!CAUTION]
->  O <xref:Microsoft.VisualStudio.Package.ParseRequest> estrutura contém uma referência para o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objeto. Isso <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objeto não pode ser usado no thread de segundo plano. Na verdade, muitas das classes base MPF não podem ser usadas no thread de segundo plano. Isso inclui o <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> classes e qualquer outra classe que direta ou indiretamente se comunica com o modo de exibição.
+> O <xref:Microsoft.VisualStudio.Package.ParseRequest> estrutura contém uma referência para o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objeto. Isso <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> objeto não pode ser usado no thread de segundo plano. Na verdade, muitas das classes base MPF não podem ser usadas no thread de segundo plano. Isso inclui o <xref:Microsoft.VisualStudio.Package.Source>, <xref:Microsoft.VisualStudio.Package.ViewFilter>, <xref:Microsoft.VisualStudio.Package.CodeWindowManager> classes e qualquer outra classe que direta ou indiretamente se comunica com o modo de exibição.
 
  Esse analisador normalmente analisa a hora do arquivo a primeira de origem inteira ele é chamado ou quando a análise motivo, o valor de <xref:Microsoft.VisualStudio.Package.ParseReason> é fornecido. As chamadas subsequentes para o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método lidar com uma pequena parte do código analisado e pode ser executado muito mais rapidamente, usando os resultados da operação de análise completa anterior. O <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> método comunica os resultados da operação de análise por meio de <xref:Microsoft.VisualStudio.Package.AuthoringSink> e <xref:Microsoft.VisualStudio.Package.AuthoringScope> objetos. O <xref:Microsoft.VisualStudio.Package.AuthoringSink> objeto é usado para coletar informações por um motivo específico de análise, por exemplo, informações sobre os intervalos de chaves ou assinaturas de método que possuem listas de parâmetros correspondentes. O <xref:Microsoft.VisualStudio.Package.AuthoringScope> fornece coleções de declarações e assinaturas de método e também suporte para ir para avançada opção Editar (**ir para definição**, **ir para declaração**, **ir para Fazer referência a**).
 

@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 23bdabcdd19bd12729d7b505ef4897d38ba8ad69
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 23ada46a28d692daf238147ea07f34d440a99869
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100976"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63388597"
 ---
 # <a name="graphics-pixel-history"></a>Histórico de pixel gráfico
 A janela de histórico de Pixel de gráficos no analisador de gráficos do Visual Studio ajuda a entender como um pixel específico é afetado pelos eventos Direct3D que ocorrem durante um quadro do seu jogo ou aplicativo.
@@ -59,7 +59,7 @@ A janela de histórico de Pixel de gráficos no analisador de gráficos do Visua
 3. Sob o primitivo que você está interessado, siga o link de título do sombreador — por exemplo, siga o link **obj:30 do sombreador de vértices** para exibir o código de origem do sombreador de vértice.
 
     > [!TIP]
-    >  O número de objeto **obj:30**, identifica esse sombreador em toda a interface de analisador de gráficos como a janela de estágios de pipeline e a tabela de objeto.
+    > O número de objeto **obj:30**, identifica esse sombreador em toda a interface de analisador de gráficos como a janela de estágios de pipeline e a tabela de objeto.
 
 ##### <a name="to-debug-a-shader"></a>Para depurar um sombreador
 

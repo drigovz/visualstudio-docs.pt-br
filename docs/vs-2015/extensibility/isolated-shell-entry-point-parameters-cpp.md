@@ -11,12 +11,12 @@ ms.assetid: 18f4b18b-2173-4afa-ba0a-42fe33e61118
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6089c4ef32ef0d0b0bce081cef6d16bd569c0901
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9e736343212c4bf6acd833f5740b996c6c032c3f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041940"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439819"
 ---
 # <a name="isolated-shell-entry-point-parameters-c"></a>Parâmetros de ponto de entrada do Shell isolado (C++)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ typedef int (__cdecl *STARTFCN)(LPSTR, LPWSTR, int, GUID *, WCHAR *pszSettings);
  Para substituir um ou mais configurações, passe uma cadeia de caracteres Unicode que contém as configurações a ser substituído. A cadeia de caracteres é uma lista separada por ponto e vírgula de pares nome-valor. Cada par contém o nome da configuração a ser substituída, seguido por um sinal de igual (=), seguido pelo valor a ser aplicado à configuração.  
   
 > [!NOTE]
->  Não inclua espaços em branco nas cadeias de caracteres Unicode.  
+> Não inclua espaços em branco nas cadeias de caracteres Unicode.  
   
  Para configurações de Boolianas, as cadeias de caracteres a seguir representam o valor true; todas as outras cadeias de caracteres representam o valor false. Essas cadeias de caracteres diferenciam maiusculas de minúsculas.  
   

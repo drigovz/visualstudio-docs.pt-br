@@ -16,12 +16,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6d4199b0f1daad60ea7fdcdf6405ae232a70d5b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 20e2b63e98969241dc91a24da81d4c170ef98b47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082588"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419733"
 ---
 # <a name="replace-in-files"></a>Substituir nos Arquivos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "60082588"
 O recurso Substituir nos Arquivos** permite pesquisar o código de um conjunto especificado de arquivos em busca de uma cadeia de caracteres ou uma expressão e alterar algumas ou todas as correspondências encontradas. As correspondências encontradas e as ações executadas são listadas na janela **Localizar Resultados** selecionada em **Opções de resultado**.  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  É possível usar qualquer um dos métodos a seguir para exibir **Substituir nos Arquivos** na janela **Localizar e Substituir**.  
   
@@ -53,7 +53,7 @@ O recurso Substituir nos Arquivos** permite pesquisar o código de um conjunto e
  A opção escolhida na lista suspensa **Examinar** determina se **Substituir nos Arquivos** pesquisa apenas em arquivos ativos ou em todos os arquivos armazenados em determinadas pastas. Selecione um escopo da pesquisa na lista, digite um caminho de pasta ou clique no botão **Procurar (...)**  para exibir a caixa de diálogo **Escolher Pastas de Pesquisa** e escolha um conjunto de pastas a pesquisar. Também é possível digitar um caminho diretamente na caixa **Examinar**.  
   
 > [!NOTE]
->  Se a opção **Examinar** selecionada fizer com que você pesquise um arquivo do qual você fez check-out do controle do código-fonte, apenas a versão desse arquivo que tiver sido baixada em seu computador local será pesquisada.  
+> Se a opção **Examinar** selecionada fizer com que você pesquise um arquivo do qual você fez check-out do controle do código-fonte, apenas a versão desse arquivo que tiver sido baixada em seu computador local será pesquisada.  
   
 ## <a name="find-options"></a>Opções de busca  
  É possível expandir ou recolher a seção **Localizar opções**. As opções a seguir podem ser marcadas ou desmarcadas:  
@@ -88,7 +88,7 @@ O recurso Substituir nos Arquivos** permite pesquisar o código de um conjunto e
  Quando selecionada, deixa abertos todos os arquivos nos quais foram feitas substituições, portanto, você pode desfazer ou salvar as alterações. Restrições de memória podem limitar o número de arquivos podem permanecer abertos após uma operação de substituição.  
   
 > [!CAUTION]
->  Você pode usar **Desfazer** somente em arquivos que permanecem abertos para edição. Se essa opção não for selecionada, arquivos que não ainda estiverem abertos para edição permanecerão fechados e nenhuma opção **Desfazer** estará disponível nesses arquivos.  
+> Você pode usar **Desfazer** somente em arquivos que permanecem abertos para edição. Se essa opção não for selecionada, arquivos que não ainda estiverem abertos para edição permanecerão fechados e nenhuma opção **Desfazer** estará disponível nesses arquivos.  
   
 ## <a name="see-also"></a>Consulte também  
  [Localizando e substituindo texto](../ide/finding-and-replacing-text.md)   

@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d55d4ae23b2fd8bf03e6aa9ad7301531aedcfcac
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fddd8efd11d2a3d61f0cff33cb832ebd8a0c5d2a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107756"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406934"
 ---
 # <a name="view-threads-in-the-visual-studio-debugger-by-using-the-threads-window-c-visual-basic-c"></a>Exibir threads no depurador do Visual Studio usando a janela de Threads (C#, Visual Basic, C++)
 No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo que você está depurando. Para obter orientação passo a passo sobre como usar o **Threads** janela, consulte [passo a passo: Depurar usando a janela Threads](../debugger/how-to-use-the-threads-window.md).
@@ -85,7 +85,7 @@ No **Threads** janela, você pode examinar e trabalhar com threads no aplicativo
  No código gerenciado, a contagem suspensa muda quando você congela ou descongelar um thread. Se você congela um thread em código gerenciado, sua contagem suspensa é 1. Quando você congela um thread em código nativo, sua contagem suspensa é 0, a menos que você usou o `SuspendThread` chamar.
 
 > [!NOTE]
->  Quando você depura uma chamada de código nativo para o código gerenciado, o código gerenciado é executado no mesmo thread físico que o código nativo que o chamou. Suspender ou congelar o thread nativo também congela o código gerenciado.
+> Quando você depura uma chamada de código nativo para o código gerenciado, o código gerenciado é executado no mesmo thread físico que o código nativo que o chamou. Suspender ou congelar o thread nativo também congela o código gerenciado.
 
 ### <a name="to-freeze-or-thaw-execution-of-a-thread"></a>Para congelar ou descongelar a execução de um thread
 

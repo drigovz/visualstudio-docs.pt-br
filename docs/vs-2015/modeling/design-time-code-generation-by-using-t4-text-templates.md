@@ -17,12 +17,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f2bd66ca5e5cc7e5884e98ddf4d5c2ba5df15742
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d74b989c5615f1fca079b9d8b41fdc7560e4e274
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60065137"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422441"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>Geração de código na hora de design usando modelos de texto T4
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Modelos de texto T4 em tempo de design permitem que você gere código de progra
  Por exemplo, você pode ter um modelo que define um fluxo de trabalho, como uma tabela ou um diagrama. A partir do modelo, você pode gerar o software que executa o fluxo de trabalho. Quando os requisitos dos seus usuários mudam, fica fácil discutir o novo fluxo de trabalho com os usuários. Gerar novamente o código do fluxo de trabalho é mais confiável do que atualizar o código manualmente.  
   
 > [!NOTE]
->  Um *modelo* é uma fonte de dados que descreve um aspecto específico de um aplicativo. Ela pode estar em qualquer formulário, tipo de arquivo ou banco de dados. Ela não precisa estar em qualquer formulário particular, como um modelo UML ou modelo DSL. Os modelos comuns estão na forma de tabelas ou arquivos XML.  
+> Um *modelo* é uma fonte de dados que descreve um aspecto específico de um aplicativo. Ela pode estar em qualquer formulário, tipo de arquivo ou banco de dados. Ela não precisa estar em qualquer formulário particular, como um modelo UML ou modelo DSL. Os modelos comuns estão na forma de tabelas ou arquivos XML.  
   
  Você provavelmente já está familiarizado com a geração de código. Quando você define recursos em um **. resx** do arquivo no seu [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] solução, um conjunto de classes e métodos é gerado automaticamente. O arquivo de recursos torna mais fácil e confiável editar os recursos do que se você tivesse que editar as classes e métodos. Com modelos de texto, você pode gerar o código da mesma forma a partir de uma fonte de seu próprio projeto.  
   
@@ -74,7 +74,7 @@ Modelos de texto T4 em tempo de design permitem que você gere código de progra
 6. Na **Gerenciador de soluções**, expanda o nó do arquivo de modelo e você encontrará um arquivo que tem a extensão **. txt**. O arquivo contém o texto gerado a partir do modelo.  
   
     > [!NOTE]
-    >  Se seu projeto é um projeto do Visual Basic, você deve clicar **Show All Files** para ver o arquivo de saída.  
+    > Se seu projeto é um projeto do Visual Basic, você deve clicar **Show All Files** para ver o arquivo de saída.  
   
 ### <a name="regenerating-the-code"></a>Gerando novamente o código  
  Um modelo será executado, gerando o arquivo subsidiário, em qualquer um dos seguintes casos:  
@@ -141,9 +141,9 @@ Modelos de texto T4 em tempo de design permitem que você gere código de progra
   O modelo executará e parará nos pontos de interrupção. Você pode examinar variáveis ​​e percorrer o código como de costume.  
   
 > [!TIP]
->  O `debug="true"` torna o mapa de código gerado mais preciso para o modelo de texto, com a inserção de mais diretivas de numeração de linhas no código gerado. Se você deixa-o de fora, os pontos de interrupção podem parar a execução no estado errado.  
+> O `debug="true"` torna o mapa de código gerado mais preciso para o modelo de texto, com a inserção de mais diretivas de numeração de linhas no código gerado. Se você deixa-o de fora, os pontos de interrupção podem parar a execução no estado errado.  
 >   
->  Mas, você pode deixar a cláusula na diretiva do modelo mesmo quando você não estiver depurando. Isso causa apensa uma pequena queda de desempenho.  
+> Mas, você pode deixar a cláusula na diretiva do modelo mesmo quando você não estiver depurando. Isso causa apensa uma pequena queda de desempenho.  
   
 ## <a name="generating-code-or-resources-for-your-solution"></a>Gerando código ou recursos para sua solução  
  Você pode gerar arquivos de programas que variam de acordo com o modelo. Um modelo é uma entrada, como um banco de dados, arquivo de configuração, o modelo UML, o modelo DSL ou outra fonte. Você normalmente gera vários arquivos de programas do mesmo modelo. Para isso, você cria um arquivo de modelo para cada arquivo de programa gerado e faz com que todos os modelos leiam o mesmo modelo.  
@@ -293,7 +293,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 ```  
   
 > [!TIP]
->  Um modelo de texto é executado em seu próprio domínio de aplicativo e os serviços são acessados ​​por empacotamento. Nesse caso, GetCOMService() é mais confiável que GetService().  
+> Um modelo de texto é executado em seu próprio domínio de aplicativo e os serviços são acessados ​​por empacotamento. Nesse caso, GetCOMService() é mais confiável que GetService().  
   
 ## <a name="Regenerating"></a> Gerando o código automaticamente  
  Normalmente, vários arquivos em uma solução [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] são gerados com um modelo de entrada. Cada arquivo é gerado a partir do seu próprio modelo, mas todos os modelos se referem ao mesmo modelo.  

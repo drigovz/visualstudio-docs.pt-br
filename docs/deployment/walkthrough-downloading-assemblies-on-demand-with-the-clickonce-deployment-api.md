@@ -16,18 +16,18 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: e363989094f4d4859f272423792aa32152c6de57
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 99d8804b5c6050665508a9a1a6edc8b37fe7ff0c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063875"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405854"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>Passo a passo: Baixar assemblies sob demanda com a API de implantação do ClickOnce
 Por padrão, todos os assemblies incluídos em um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo são baixadas quando o aplicativo é executado pela primeira vez. No entanto, você pode ter partes de seu aplicativo que são usados por um pequeno conjunto de seus usuários. Nesse caso, você deseja baixar um assembly somente quando você cria um de seus tipos. A instrução a seguir demonstra como marcar determinados assemblies em seu aplicativo como "opcional", e como baixá-los usando as classes no <xref:System.Deployment.Application> namespace quando o common language runtime (CLR) requê-los.
 
 > [!NOTE]
->  Seu aplicativo precisará executar em confiança total para usar este procedimento.
+> Seu aplicativo precisará executar em confiança total para usar este procedimento.
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Será necessário um dos seguintes componentes para concluir este passo a passo:

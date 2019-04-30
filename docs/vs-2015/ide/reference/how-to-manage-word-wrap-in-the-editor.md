@@ -13,12 +13,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 172c5b049e19700d3ce2e4ff1fe43490a2194a92
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 07dda6011b25df1cfcd4d17e46c2591f87ab7413
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088035"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437145"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>Como: Gerenciar a quebra automática de linha no Editor
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60088035"
  Para obter mais informações, confira [Como: Definir opções gerais do Editor](http://msdn.microsoft.com/704e4a7b-2162-4bed-8a47-f4f6ffec98c2).  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu vistos podem ser diferentes daqueles descritos na **Ajuda**, dependendo da edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e os comandos de menu vistos podem ser diferentes daqueles descritos na **Ajuda**, dependendo da edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="procedure"></a>Procedimento  
   
@@ -49,7 +49,7 @@ ms.locfileid: "60088035"
 4. Selecione a opção **Mostrar glifos visuais para quebra automática de linha** caso prefira exibir um indicador de seta de retorno em que uma linha longa é quebrada em uma segunda linha. Desmarque esta opção se você preferir não exibir setas indicadoras.  
   
     > [!NOTE]
-    >  Essas setas de lembrete não são adicionadas ao seu código: elas são apenas para exibição.  
+    > Essas setas de lembrete não são adicionadas ao seu código: elas são apenas para exibição.  
   
 ## <a name="see-also"></a>Consulte também  
  [Personalizando o editor](../../ide/customizing-the-editor.md)   

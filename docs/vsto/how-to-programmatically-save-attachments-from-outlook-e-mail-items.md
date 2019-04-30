@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 413cee4a768dcf2fe1b6b82b78e213db5b1df9b6
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 874f19e0ae4e752a36ce95deab669ab46bfbf038
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631114"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419507"
 ---
 # <a name="how-to-programmatically-save-attachments-from-outlook-email-items"></a>Como: Salvar anexos de itens de email do Outlook de forma programática
   Este exemplo salva anexos de email para uma pasta especificada quando o email é recebido na caixa de entrada.
 
 > [!IMPORTANT]
->  Este exemplo só funcionará se você adicionar uma pasta chamada **TestFileSave** na raiz do diretório C.
+> Este exemplo só funcionará se você adicionar uma pasta chamada **TestFileSave** na raiz do diretório C.
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 

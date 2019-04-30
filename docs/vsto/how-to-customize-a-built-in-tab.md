@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5a686d2a43fed0fdb8c5c1e8f21d4b35fd63f3a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8e6f2d0da758a8897f28a22dec8adf1f8e05a36c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419457"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>Como: Personalizar uma guia interna
   Você pode adicionar grupos e controles a uma guia interna. Uma guia interna é uma guia que já está na faixa de opções de um aplicativo do Microsoft Office. Por exemplo, o **dados** guia é uma guia interna no Excel. Quando você cria um grupo personalizado, ele é exibido por último na guia, mas você pode mover seu grupo de qualquer lugar na guia.
@@ -26,14 +26,14 @@ ms.locfileid: "60075656"
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
 > [!NOTE]
->  Você pode adicionar grupos a uma guia interna, mas você não pode remover grupos internos de uma guia interna.
+> Você pode adicionar grupos a uma guia interna, mas você não pode remover grupos internos de uma guia interna.
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>Para adicionar grupos a uma guia interna
 
 1. O arquivo de código da faixa de opções no botão direito do mouse **Gerenciador de soluções**e, em seguida, clique em **View Designer**.
 
     > [!NOTE]
-    >  Se o arquivo de código da faixa de opções não aparecer na **Gerenciador de soluções**, você deve adicionar uma **item da faixa de opções** ao seu projeto. Confira [Como Introdução à personalização da faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md).
+    > Se o arquivo de código da faixa de opções não aparecer na **Gerenciador de soluções**, você deve adicionar uma **item da faixa de opções** ao seu projeto. Confira [Como Introdução à personalização da faixa de opções](../vsto/how-to-get-started-customizing-the-ribbon.md).
 
 2. Qualquer guia no designer de faixa de opções com o botão direito e, em seguida, clique em **propriedades**.
 
@@ -48,7 +48,7 @@ ms.locfileid: "60075656"
 5. Dos **controles de faixa de opções do Office** guia da **caixa de ferramentas**, arraste os grupos para a guia.
 
     > [!NOTE]
-    >  Grupos internos não aparecem no designer. Portanto, a única maneira de determinar se você estiver trabalhando com uma guia interna é examinar o **ControlId** propriedade da guia.
+    > Grupos internos não aparecem no designer. Portanto, a única maneira de determinar se você estiver trabalhando com uma guia interna é examinar o **ControlId** propriedade da guia.
 
 ### <a name="to-position-groups-on-a-built-in-tab"></a>Para posicionar os grupos em uma guia interna
 

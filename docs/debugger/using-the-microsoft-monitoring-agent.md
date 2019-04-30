@@ -8,19 +8,19 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fb9f1ec1eafb0dbea7ca5437d80a32e4fe9d9dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c8f136b28c30c1fe79eda2f7c97540cb60a3ffda
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043116"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407553"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>Usando o Microsoft Monitoring Agent (C#, Visual Basic)
 
 Você pode monitorar localmente aplicativos Web do ASP.NET hospedados no IIS e os aplicativos do SharePoint 2010 ou 2013 em busca de erros, problemas de desempenho ou outros problemas usando o **Microsoft Monitoring Agent**. Você pode salvar eventos de diagnóstico do agente em um arquivo de log do IntelliTrace (.iTrace). Em seguida, você pode abrir o log no Visual Studio Enterprise (mas não as edições Professional ou Community) para depurar problemas com todas as ferramentas de diagnóstico do Visual Studio. Você também pode coletar dados de diagnóstico do IntelliTrace e dados de método executando o agente em modo **Rastrear**. Microsoft Monitoring Agent podem ser integrado [Application Insights](/azure/application-insights/) e [System Center Operation Manager](/previous-versions/system-center/system-center-2012-R2/hh205987(v=sc.12)). O Microsoft Monitoring Agent altera o ambiente do sistema de destino quando instalado.
 
 > [!NOTE]
->  Você também pode coletar dados de diagnóstico e método do IntelliTrace para aplicativos Web, SharePoint, WPF e Windows Form em computadores remotos sem alterar o ambiente de destino usando o **coletor autônomo do IntelliTrace**. O coletor autônomo tem um impacto de desempenho maior do que quando executar o Microsoft Monitoring Agent no modo **Monitorar**. Ver [usando o coletor autônomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
+> Você também pode coletar dados de diagnóstico e método do IntelliTrace para aplicativos Web, SharePoint, WPF e Windows Form em computadores remotos sem alterar o ambiente de destino usando o **coletor autônomo do IntelliTrace**. O coletor autônomo tem um impacto de desempenho maior do que quando executar o Microsoft Monitoring Agent no modo **Monitorar**. Ver [usando o coletor autônomo IntelliTrace](../debugger/using-the-intellitrace-stand-alone-collector.md).
 
  Se você usar o System Center 2012, use o Microsoft Monitoring Agent com Operations Manager para obter alertas sobre problemas e criar itens de trabalho do Team Foundation Server com links para os logs do IntelliTrace salvos. Você pode atribuir esses itens de trabalho a outros para uma depuração adicional. Confira [Integrando o Operations Manager aos processos de desenvolvimento](/previous-versions/system-center/system-center-2012-R2/jj614609(v=sc.12)) e [Monitorando com Microsoft Monitoring Agent](/previous-versions/system-center/system-center-2012-R2/dn465153(v=sc.12)).
 
@@ -59,7 +59,7 @@ Você pode monitorar localmente aplicativos Web do ASP.NET hospedados no IIS e o
      Não se esqueça de criar esse diretório antes de começar o monitoramento. Para evitar que seu aplicativo fique mais lento, escolha um local em um disco de alta velocidade local que não seja muito ativo.
 
     > [!IMPORTANT]
-    >  Os logs do IntelliTrace podem conter dados pessoais e confidenciais. Restrinja esse diretório a apenas essas identidades que devam funcionar com os arquivos. Verifique as políticas de privacidade da empresa.
+    > Os logs do IntelliTrace podem conter dados pessoais e confidenciais. Restrinja esse diretório a apenas essas identidades que devam funcionar com os arquivos. Verifique as políticas de privacidade da empresa.
 
 5. Para executar ou monitorar aplicativos do SharePoint de monitoramento detalhados, no nível da função, dê ao pool de aplicativos que hospeda o aplicativo Web ou o aplicativo do SharePoint permissões de leitura e gravação para o diretório do log do IntelliTrace. [P: Como configuro permissões para o pool de aplicativos?](#FullPermissionsITLog)
 
@@ -257,7 +257,7 @@ O agente registra valores de `id`, `Employee.Id`, `Employee.Name` e o objeto `Em
 3. Copie o log para uma pasta compartilhada segura e, em seguida, abra o log de um computador que tem o Visual Studio Enterprise (mas não as edições Professional ou Community).
 
    > [!IMPORTANT]
-   >  Tome cuidado ao compartilhar logs do IntelliTrace, porque eles podem conter dados pessoais e confidenciais. Verifique se a pessoa que pode acessar esses logs tem permissões para analisar esses dados. Verifique as políticas de privacidade da empresa.
+   > Tome cuidado ao compartilhar logs do IntelliTrace, porque eles podem conter dados pessoais e confidenciais. Verifique se a pessoa que pode acessar esses logs tem permissões para analisar esses dados. Verifique as políticas de privacidade da empresa.
 
    **Avançar:** [Diagnosticar eventos gravados no Visual Studio Enterprise](../debugger/diagnose-problems-after-deployment.md#InvestigateEvents)
 

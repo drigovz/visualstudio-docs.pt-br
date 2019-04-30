@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 99fdded48ab720e7b5efbe0e4801926fe4c4c64a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a13d0b648be87f1378ae74e6f321c1c369d7795
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427060"
 ---
 # <a name="getting-started-with-domain-specific-languages"></a>Introdução às linguagens específicas do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -79,7 +79,7 @@ Este tópico explica os conceitos básicos na definindo e usando uma linguagem e
     É gerada uma solução que contém dois projetos. Dsl e DslPackage são nomeados. Um arquivo de diagrama é aberto que é nomeado Dsldefinition.  
   
    > [!NOTE]
-   >  A maioria do código que você pode ver nas pastas nos dois projetos é gerada de Dsldefinition. Por esse motivo, a maioria das modificações à DSL são feitas neste arquivo.  
+   > A maioria do código que você pode ver nas pastas nos dois projetos é gerada de Dsldefinition. Por esse motivo, a maioria das modificações à DSL são feitas neste arquivo.  
   
    A interface do usuário agora se assemelha à imagem a seguir.  
   
@@ -104,7 +104,7 @@ Este tópico explica os conceitos básicos na definindo e usando uma linguagem e
 1. Clique em **transformar todos os modelos** na barra de ferramentas do Gerenciador de soluções. Isso gera novamente a maioria do código-fonte do Dsldefinition.  
   
    > [!NOTE]
-   >  Sempre que alterar Dsldefinition, você deve clicar **transformar todos os modelos** antes de recriar a solução. Você pode automatizar esta etapa. Para obter mais informações, consulte [como automatizar a transformar todos os modelos](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+   > Sempre que alterar Dsldefinition, você deve clicar **transformar todos os modelos** antes de recriar a solução. Você pode automatizar esta etapa. Para obter mais informações, consulte [como automatizar a transformar todos os modelos](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 2. Pressione F5, ou o **depurar** menu, clique em **iniciar depuração**.  
   
@@ -171,7 +171,7 @@ Este tópico explica os conceitos básicos na definindo e usando uma linguagem e
    Você pode adicionar qualquer número de arquivos de modelo de texto a um projeto. Cada modelo gera um arquivo de resultado.  
   
 > [!NOTE]
->  Quando você altera a definição de DSL, o código de modelo de texto de exemplo não funcionará, a menos que você atualizá-lo.  
+> Quando você altera a definição de DSL, o código de modelo de texto de exemplo não funcionará, a menos que você atualizá-lo.  
   
  Para obter mais informações, consulte [código de geração de uma linguagem específica de domínio](../modeling/generating-code-from-a-domain-specific-language.md) e [escrevendo código para personalizar uma linguagem específica do domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
@@ -179,7 +179,7 @@ Este tópico explica os conceitos básicos na definindo e usando uma linguagem e
  Quando você quiser modificar a definição de DSL, feche a instância experimental e atualizar a definição no principal [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] instância.  
   
 > [!NOTE]
->  Depois que você modificou a definição de DSL, você poderá perder informações nos modelos de teste que você criou usando versões anteriores.  Por exemplo, a solução de depuração contém um arquivo que é chamado de exemplo, que contém algumas formas e conectores. Depois de você começa a desenvolver sua definição de DSL, não será visíveis, e eles serão perdidos quando você salva o arquivo.  
+> Depois que você modificou a definição de DSL, você poderá perder informações nos modelos de teste que você criou usando versões anteriores.  Por exemplo, a solução de depuração contém um arquivo que é chamado de exemplo, que contém algumas formas e conectores. Depois de você começa a desenvolver sua definição de DSL, não será visíveis, e eles serão perdidos quando você salva o arquivo.  
   
  Você pode fazer uma grande variedade de extensões para sua DSL. Os exemplos a seguir lhe dará uma impressão das possibilidades.  
   
@@ -285,7 +285,7 @@ Este tópico explica os conceitos básicos na definindo e usando uma linguagem e
          Defina seu nome, por exemplo **Cidade**.  
   
         > [!NOTE]
-        >  Cada classe de domínio, exceto a raiz do modelo deve ser o destino de pelo menos uma relação de incorporação ou ela deve herdar de uma classe que é o destino de uma inserção. Por esse motivo, é conveniente com frequência criar uma classe de domínio usando a ferramenta de relação de incorporação.  
+        > Cada classe de domínio, exceto a raiz do modelo deve ser o destino de pelo menos uma relação de incorporação ou ela deve herdar de uma classe que é o destino de uma inserção. Por esse motivo, é conveniente com frequência criar uma classe de domínio usando a ferramenta de relação de incorporação.  
   
     2. Adicionar uma propriedade de domínio para a nova classe, por exemplo **nome**.  
   
@@ -296,7 +296,7 @@ Este tópico explica os conceitos básicos na definindo e usando uma linguagem e
          ![Fragmento da definição de DSL: raiz da árvore genealógica](../modeling/media/familyt-root.png "FamilyT_Root")  
   
         > [!NOTE]
-        >  Relações de referência representam referências cruzadas de uma parte da árvore modelo para outro.  
+        > Relações de referência representam referências cruzadas de uma parte da árvore modelo para outro.  
   
 3. Adicione uma forma para representar as cidades em diagramas de modelo.  
   

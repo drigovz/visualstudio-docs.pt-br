@@ -11,12 +11,12 @@ caps.latest.revision: 41
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 2aef2183cde96bfb5faa1bb62fa341f901dd7018
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 274aa497e004ddafee9a56b028f3001bb8deb630
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922812"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437065"
 ---
 # <a name="creating-and-using-code-analysis-check-in-policies"></a>Criando e usando políticas de check-in de análise do código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Quando você usa o controle de versão do Team Foundation (TFVC), você pode cri
  A política é aprovada quando a compilação local está atualizada e análise de código foi executada nos arquivos de origem mais recentes. No mínimo, as regras de análise de código que estão habilitadas no código do projeto devem conter as mesmas regras que aquelas que são definidos na política de check-in do projeto team. As regras que foram especificadas como erros nas configurações do projeto de equipe também devem ser especificadas como erros no código do projeto  
   
 > [!IMPORTANT]
->  Políticas do check-in de análise de código não podem ser aplicadas a projetos de site da web. Elas podem ser aplicadas a projetos de aplicativos web.  
+> Políticas do check-in de análise de código não podem ser aplicadas a projetos de site da web. Elas podem ser aplicadas a projetos de aplicativos web.  
   
  Criar código de políticas de check-in de análise usando as configurações de projeto de equipe do [!INCLUDE[esprscc](../includes/esprscc-md.md)]. Políticas de check-in são especificadas e impostas para um projeto de equipe, mas as execuções de análise de código são configuradas e executadas para projetos de código individuais nos computadores de desenvolvimento local. Esta seção descreve como especificar políticas análise de código check-in para um projeto de equipe e como implementar políticas de análise de código personalizado para código gerenciado.  
   

@@ -8,12 +8,12 @@ ms.assetid: efd27f00-7fe5-45f8-9b97-371af732be97
 caps.latest.revision: 4
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5d48535bf8e2eb0c5204be0b06701b54cc6e365b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 764d9b81297c6bbefd1f5fdf7c77e4d514bb5045
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408496"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Gravando no repositório de configurações do usuário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Configurações de usuário são graváveis como aquelas na **Ferramentas / opç
 3. Navegue até ferramentas HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.  
   
     > [!NOTE]
-    >  Certifique-se de que você está vendo a chave que contém \14.0Exp\ e não \14.0\\. Quando você executa a instância experimental do Visual Studio, as configurações de usuário estão no hive do Registro "14.0Exp".  
+    > Certifique-se de que você está vendo a chave que contém \14.0Exp\ e não \14.0\\. Quando você executa a instância experimental do Visual Studio, as configurações de usuário estão no hive do Registro "14.0Exp".  
   
 4. Clique com botão direito na subchave \External Tools\ e, em seguida, clique em **exportar**. Certifique-se de que **ramificação selecionada** está selecionado.  
   

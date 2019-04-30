@@ -8,12 +8,12 @@ ms.assetid: 6b0f72a4-70ca-4e55-b236-2ea1034fd8a7
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4852dc5b65f00f7d298f5f1a15d39ff041022578
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 61c802ebca49c15a3a7baa785400f90621a27e9f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54791986"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416461"
 ---
 # <a name="extending-coded-ui-tests-and-action-recordings-to-support-microsoft-excel"></a>Estendendo testes de IU codificado e gravações da ação para dar suporte ao Microsoft Excel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ A estrutura de teste para testes de IU codificados e gravações da ação não 
   Obtenha a amostra desta [postagem de blog](http://go.microsoft.com/fwlink/?LinkID=185592).  
   
 > [!NOTE]
->  A amostra é destinada para uso com o Microsoft Excel 2010. A amostra pode funcionar com outras versões do Microsoft Excel, mas isso não tem suporte atualmente.  
+> A amostra é destinada para uso com o Microsoft Excel 2010. A amostra pode funcionar com outras versões do Microsoft Excel, mas isso não tem suporte atualmente.  
   
 ## <a name="details-about-the-sample"></a>Detalhes sobre a amostra  
  As seções a seguir fornecem informações sobre a amostra e sua estrutura.  
@@ -51,9 +51,9 @@ A estrutura de teste para testes de IU codificados e gravações da ação não 
 ### <a name="microsoft-excel-add-in-excelcodeduiaddinhelper"></a>Suplemento do Microsoft Excel: ExcelCodedUIAddinHelper  
  Este projeto inclui um suplemento que é executado no processo do Excel. Consulte [Suplemento de exemplo do Excel para testes de IU codificados](../test/sample-excel-add-in-for-coded-ui-testing.md) para obter uma visão geral sobre o projeto de suplemento.  
   
- Para obter mais informações, consulte [Passo a passo: criando o primeiro suplemento do VSTO para Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
+ Para obter mais informações, confira [Passo a passo: Criando seu primeiro suplemento VSTO para Excel](http://msdn.microsoft.com/library/a855e2be-3ecf-4112-a7f5-ec0f7fad3b5f).  
   
-### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Comunicação de interface do usuário do Excel: ExcelUICommunicationHelper  
+### <a name="excel-ui-communication-exceluicommunicationhelper"></a>Comunicação de interface do usuário do Excel: ExcelUIcommunicationHelper  
  Esse projeto inclui a interface `IExcelUICommunication` e as classes de informações que são usadas para passar dados entre o Excel e estrutura de testes de IU codificados. Para obter mais informações, consulte [Interface de comunicador do Excel de amostra](../test/sample-excel-communicator-interface.md).  
   
 ### <a name="coded-ui-test-extension-codeduiexentsibilitysample"></a>Extensão de teste de IU codificado: CodedUIExentsibilitySample  

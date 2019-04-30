@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 43ee8d26338b6d15530c51191c3368d3fc556d2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 08c63966528a2ae34d5a9d776ee111ecee96b22f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430371"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>Passo a passo: Criar um fluxo de trabalho com formulários de associação e iniciação
   Este passo a passo demonstra como criar um fluxo de trabalho sequencial básico que incorpora o uso de formulários de associação e iniciação. Esses são os formulários ASPX que permitem que os parâmetros a ser adicionado a um fluxo de trabalho quando ele pela primeira vez é associado pelo administrador do SharePoint (o formulário de associação), e quando o fluxo de trabalho é iniciado pelo usuário (o formulário de inicialização).
@@ -50,9 +50,9 @@ ms.locfileid: "60081730"
 - O fluxo de trabalho é iniciado manualmente.
 
 > [!NOTE]
->  Embora este passo a passo usa um projeto de fluxo de trabalho sequencial, o processo é o mesmo para fluxos de trabalho de máquina de estado.
+> Embora este passo a passo usa um projeto de fluxo de trabalho sequencial, o processo é o mesmo para fluxos de trabalho de máquina de estado.
 >
->  Além disso, seu computador pode mostrar diferentes nomes ou localizações para alguns do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] elementos de interface do usuário nas instruções a seguir. O [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] edição que você tem e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Além disso, seu computador pode mostrar diferentes nomes ou localizações para alguns do [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] elementos de interface do usuário nas instruções a seguir. O [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] edição que você tem e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
@@ -134,7 +134,7 @@ ms.locfileid: "60081730"
 3. Expanda o **ExpenseReportAssocForm.aspx** arquivo no **Gerenciador de soluções** para exibir seus arquivos dependentes.
 
     > [!NOTE]
-    >  Se seu projeto estiver no [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)], você deve escolher o **exibir todos os arquivos** botão para executar esta etapa.
+    > Se seu projeto estiver no [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)], você deve escolher o **exibir todos os arquivos** botão para executar esta etapa.
 
 4. Abra o menu de atalho para o arquivo ExpenseReportAssocForm.aspx e escolha **Exibir código**.
 
@@ -325,7 +325,7 @@ ms.locfileid: "60081730"
     ```
 
     > [!NOTE]
-    >  No código, substitua `somedomain\\someuser` com um nome de usuário e domínio para o qual uma tarefa será criada, por exemplo, "`Office\\JoeSch`". Para testar é mais fácil de usar a conta que você está desenvolvendo com.
+    > No código, substitua `somedomain\\someuser` com um nome de usuário e domínio para o qual uma tarefa será criada, por exemplo, "`Office\\JoeSch`". Para testar é mais fácil de usar a conta que você está desenvolvendo com.
 
 3. Abaixo de `MethodInvoking` método, adicione o exemplo a seguir:
 

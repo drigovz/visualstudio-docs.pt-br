@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 4b188be0a8ff3c8bac6dc8fd2b5474756a1565f3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f6cc62e4ba56cb7be461bbf3cee5435cb404b7fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090012"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439982"
 ---
 # <a name="0x2x4x-msaa-variants"></a>Variantes MSAA 0x/2x/4x
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Substitui a MSAA (suavização de múltipla amostra) em todos os destinos de ren
  Se seu aplicativo ainda não tem MSAA habilitado, então as variantes de MSAA de 2x e 4x indicam o custo sobre o desempenho relativo de habilitá-las em seu aplicativo. Quando o custo for aceitavelmente baixo, considere habilitar MSAA para aprimorar a qualidade de imagem do seu aplicativo.  
   
 > [!NOTE]
->  Seu hardware pode não oferecer suporte completo a MSAA para todos os formatos. Se uma dessas variantes encontrar uma limitação de hardware que não tenha uma solução alternativa, sua coluna na tabela de resumo de desempenho estará em brando e uma mensagem de erro será produzida.  
+> Seu hardware pode não oferecer suporte completo a MSAA para todos os formatos. Se uma dessas variantes encontrar uma limitação de hardware que não tenha uma solução alternativa, sua coluna na tabela de resumo de desempenho estará em brando e uma mensagem de erro será produzida.  
   
 ## <a name="remarks"></a>Comentários  
  Essas variantes substituem a contagem de amostra e os argumentos de qualidade de amostra em chamadas para `ID3DDevice::CreateTexture2D` que criam destinos de renderização. Especificamente, esses parâmetros são substituídos quando:  

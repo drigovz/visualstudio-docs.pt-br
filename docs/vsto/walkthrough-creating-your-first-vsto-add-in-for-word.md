@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b68884d5cf5b6603d3b0ecdb9885e3466859001b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ed5c5e5b03ce7ee0ffbd361b896f288f6b93a806
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079286"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438496"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>Passo a passo: Criar seu primeiro suplemento VSTO para Word
   Este passo a passo introdutório mostra como criar um suplemento do VSTO para o Microsoft Office Word. Os recursos que você criar nesse tipo de solução estão disponíveis para o aplicativo em si, independentemente de qual documento está aberto.
@@ -83,7 +83,7 @@ ms.locfileid: "60079286"
     [!code-csharp[Trin_WordAddInTutorial#1](../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs#1)]
 
    > [!NOTE]
-   >  Esse código usa um valor de índice de 1 para acessar o primeiro parágrafo de <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> coleção. Embora o Visual Basic e Visual c# usam conjuntos baseados em 0, os limites inferiores da matriz da maioria das coleções no modelo de objeto do Word é 1. Para obter mais informações, consulte [escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md).
+   > Esse código usa um valor de índice de 1 para acessar o primeiro parágrafo de <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> coleção. Embora o Visual Basic e Visual c# usam conjuntos baseados em 0, os limites inferiores da matriz da maioria das coleções no modelo de objeto do Word é 1. Para obter mais informações, consulte [escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md).
 
 2. Se você estiver usando c#, adicione o seguinte código necessário para o `ThisAddIn_Startup` manipulador de eventos. Esse código é usado para se conectar a `Application_DocumentBeforeSave` manipulador de eventos com o <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> eventos.
 

@@ -14,12 +14,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cb0502128b95716b0598b373be81519a06911f06
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 863df1da686e56a8b38c0652baf0aafab7436d08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052799"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434353"
 ---
 # <a name="define-packages-and-namespaces"></a>Definir pacotes e namespaces
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ No Visual Studio, uma *pacote* é um contêiner para as definições dos element
 2. Clique com botão direito um pacote ou um modelo ao qual você deseja adicionar um novo pacote.  
   
    > [!NOTE]
-   >  Você pode aninhar um pacote dentro de outro pacote.  
+   > Você pode aninhar um pacote dentro de outro pacote.  
   
 3. Aponte para **Add** e, em seguida, clique em **pacote**.  
   
@@ -95,7 +95,7 @@ No Visual Studio, uma *pacote* é um contêiner para as definições dos element
 - Arraste o pacote do Gerenciador de modelos UML para o diagrama de classe.  
   
     > [!NOTE]
-    >  Isso cria um modo de exibição do pacote neste diagrama. Ele não necessariamente mostrará todos os elementos que o pacote contém. Para certificar-se de que você vê que todo o conteúdo do pacote, exibi-lo no Gerenciador de modelos UML.  
+    > Isso cria um modo de exibição do pacote neste diagrama. Ele não necessariamente mostrará todos os elementos que o pacote contém. Para certificar-se de que você vê que todo o conteúdo do pacote, exibi-lo no Gerenciador de modelos UML.  
   
 ## <a name="Elements"></a> Criar elementos de modelo dentro de pacotes  
  Há quatro maneiras em que você pode colocar os elementos de modelo dentro de um pacote:  
@@ -123,7 +123,7 @@ No Visual Studio, uma *pacote* é um contêiner para as definições dos element
 4. Digite um nome para o novo elemento.  
   
     > [!NOTE]
-    >  O novo elemento não aparece em qualquer diagrama. Para criar um modo de exibição do novo elemento, você pode arrastá-lo do Gerenciador de modelos UML para um diagrama. O diagrama deve ser um tipo que exibirá esse tipo de elemento.  
+    > O novo elemento não aparece em qualquer diagrama. Para criar um modo de exibição do novo elemento, você pode arrastá-lo do Gerenciador de modelos UML para um diagrama. O diagrama deve ser um tipo que exibirá esse tipo de elemento.  
   
 #### <a name="to-create-an-element-in-a-package-on-a-uml-class-diagram"></a>Para criar um elemento em um pacote em um diagrama de classe UML  
   
@@ -173,7 +173,7 @@ No Visual Studio, uma *pacote* é um contêiner para as definições dos element
      O nome qualificado do elemento será alterado para mostrar o novo pacote de proprietário.  
   
     > [!NOTE]
-    >  Se você arrastar um elemento fora de um pacote em uma parte em branco do diagrama, seu pacote proprietário não é alterado. Isso permite que você faça um diagrama que mostra os elementos de vários pacotes sem a necessidade de mostrar os pacotes em si.  
+    > Se você arrastar um elemento fora de um pacote em uma parte em branco do diagrama, seu pacote proprietário não é alterado. Isso permite que você faça um diagrama que mostra os elementos de vários pacotes sem a necessidade de mostrar os pacotes em si.  
   
 ## <a name="Pasting"></a> Colar elementos em um pacote  
  Você pode colar um elemento em um pacote. Se você colar um grupo de elementos relacionados em um pacote, as relações entre elas também serão coladas.  
@@ -185,7 +185,7 @@ No Visual Studio, uma *pacote* é um contêiner para as definições dos element
 2. O pacote com o botão direito e, em seguida, clique em **colar**.  
   
     > [!NOTE]
-    >  O pacote pode estar em um diagrama de diferente.  
+    > O pacote pode estar em um diagrama de diferente.  
   
 ## <a name="Import"></a> Importar relações entre os pacotes  
  Você pode definir uma relação de importação entre pacotes, usando o **importação** ferramenta.  

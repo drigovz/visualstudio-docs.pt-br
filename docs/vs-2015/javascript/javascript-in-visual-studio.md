@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 14da091149f44d185d783c071f67294b7d2431e6
-ms.sourcegitcommit: 4d9c54f689416bf1dc4ace058919592482d02e36
-ms.translationtype: MTE95
+ms.openlocfilehash: b9005b6cf7f23639481505a4727f8faa08241684
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58195015"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433482"
 ---
 # <a name="javascript-in-visual-studio"></a>JavaScript no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ O JavaScript é uma linguagem de primeira classe no Visual Studio. Você pode us
 - Para criar sites e aplicativos Web, [consulte o site do ASP.NET](http://www.asp.net/get-started/websites).
 
   > [!NOTE]
-  >  Você pode criar um site ASP.NET vazio e usá-lo para programação em HTML, CSS e JavaScript. O arquivo Webconfig fornecido pelo ASP.NET habilita a depuração no Visual Studio (ou você pode usar ferramentas F12 quando executa o aplicativo).
+  > Você pode criar um site ASP.NET vazio e usá-lo para programação em HTML, CSS e JavaScript. O arquivo Webconfig fornecido pelo ASP.NET habilita a depuração no Visual Studio (ou você pode usar ferramentas F12 quando executa o aplicativo).
 
   O editor de JavaScript no Visual Studio fornece é compatível com o IntelliSense. Para obter mais informações, consulte [JavaScript IntelliSense](../ide/javascript-intellisense.md).
 
@@ -45,7 +45,7 @@ O JavaScript é uma linguagem de primeira classe no Visual Studio. Você pode us
 |-------------|-----------------|
 |Classes|A nova sintaxe dá suporte a declaração de [classes](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Statements/class).|
 |Promises|[Promises](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise) permitem codificação assíncrona mais fácil e limpa. Construtores Promise têm suporte, juntamente com os métodos de utilitário `all` e `race`.|
-|Iterators|Agora você pode iterar pelos objetos que permitem iteração (incluindo matrizes, objetos de tipo matriz e iteradores), invocando um gancho de iteração personalizado com as instruções a serem executadas para o valor de cada propriedade distinta. Para obter mais informações, consulte [Iteradores e geradores](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Observação:** ainda não há suporte para geradores.|
+|Iterators|Agora você pode iterar pelos objetos que permitem iteração (incluindo matrizes, objetos de tipo matriz e iteradores), invocando um gancho de iteração personalizado com as instruções a serem executadas para o valor de cada propriedade distinta. Para obter mais informações, consulte [Iteradores e geradores](https://developer.mozilla.org/docs/Web/JavaScript/Guide/Iterators_and_Generators). **Observação:**  Ainda não há suporte para geradores.|
 |Funções de seta|A função de seta (=>) fornece uma sintaxe abreviada para a palavra-chave `function`, que apresenta uma associação `this` léxica.|
 |Novos métodos para objetos internos|Os objetos internos [Array](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array), [Math](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math), [Number](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number), [Object](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object) e [String](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String) incluem muitas novas propriedades e funções de utilitário para manipular e inspecionar dados.|
 |Aprimoramentos de literal de objeto|Os objetos agora dão suporte a propriedades computadas, definições de método concisas e sintaxe abreviada para propriedades cujo valor é inicializado com uma variável de mesmo nome. Para obter mais informações, consulte [Criando objetos](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object).|

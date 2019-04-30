@@ -10,12 +10,12 @@ ms.assetid: 937a0b19-1216-45d5-a7ad-4fe1d6f73097
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: af08f5c2b487505b1c0800db852760c2f139dae0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 03b68c0fbaf92ff2c768c36ccdbea1988c99a973
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430110"
 ---
 # <a name="using-text-markers-with-the-legacy-api"></a>Usar marcadores de texto com a API herdada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,16 +25,16 @@ Um marcador de texto é um intervalo de texto em um buffer que pode afetar a exi
  Devido à sobrecarga de desempenho associada com marcadores de texto, não crie muitos marcadores para seus buffers de texto. Cada marcador é atualizado toda vez que um usuário edita o conteúdo do buffer.  
   
 > [!NOTE]
->  Os usuários podem alterar a cor de um tipo de marcador visíveis, mas não sua forma e estilo. Para obter mais informações, consulte [fontes e cores, ambiente, caixa de diálogo Opções](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
+> Os usuários podem alterar a cor de um tipo de marcador visíveis, mas não sua forma e estilo. Para obter mais informações, consulte [fontes e cores, ambiente, caixa de diálogo Opções](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).  
   
 ## <a name="related-topics"></a>Tópicos relacionados  
   
 |Título|Descrição|  
 |-----------|-----------------|  
-|[Como: Adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)|Descreve como adicionar um tipo de marcador de texto padrão fornecido pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor de núcleo para uma exibição de texto.|  
-|[Como: Implementar o marcador de erros](../extensibility/how-to-implement-error-markers.md)|Descreve como implementar uma instância da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] marcador que é usado para indicar erros usando ondulados vermelhos.|  
-|[Como: Criar marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)|Descreve como criar e adicionar um tipo de marcador de texto personalizado a uma exibição de texto.|  
-|[Como: Usar marcadores de texto](../extensibility/how-to-use-text-markers.md)|Explica como adicionar marcadores de texto.|  
+|[Como: adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)|Descreve como adicionar um tipo de marcador de texto padrão fornecido pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor de núcleo para uma exibição de texto.|  
+|[Como: implementar o marcador de erros](../extensibility/how-to-implement-error-markers.md)|Descreve como implementar uma instância da [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] marcador que é usado para indicar erros usando ondulados vermelhos.|  
+|[Como: criar marcadores de texto personalizados](../extensibility/how-to-create-custom-text-markers.md)|Descreve como criar e adicionar um tipo de marcador de texto personalizado a uma exibição de texto.|  
+|[Como: usar marcadores de texto](../extensibility/how-to-use-text-markers.md)|Explica como adicionar marcadores de texto.|  
 |[Dentro do editor principal](../extensibility/inside-the-core-editor.md)|Descreve os recursos do editor de núcleo e fornece detalhes sobre como personalizar o editor de núcleo.|  
 |[Recursos do Editor](http://msdn.microsoft.com/bdac940d-1f14-4019-a01f-fd0bb3dc7198)|Descreve os recursos disponíveis no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] editor de núcleo.|  
   

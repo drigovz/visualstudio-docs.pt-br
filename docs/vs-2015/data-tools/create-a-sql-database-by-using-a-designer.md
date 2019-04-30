@@ -25,12 +25,12 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: acab2df1ff39d5f245baf27642f1ab71104671a7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f816095992379748b6d1888b5df54dc5433a8306
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069777"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436964"
 ---
 # <a name="create-a-sql-database-by-using-a-designer"></a>Criar um banco de dados SQL usando um designer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -180,14 +180,14 @@ ms.locfileid: "60069777"
 6. Adicione dados para pelo menos três pedidos.  
   
     > [!IMPORTANT]
-    >  Verifique se todas as IDs e as quantidades de pedido são inteiros e se cada ID do cliente corresponde a um valor especificado na coluna CustomerID da tabela Customers.  
+    > Verifique se todas as IDs e as quantidades de pedido são inteiros e se cada ID do cliente corresponde a um valor especificado na coluna CustomerID da tabela Customers.  
   
 7. Na barra de menus, selecione **arquivo** > **Salvar tudo**.  
   
 8. Na barra de menus, selecione **arquivo** > **fechar solução**.  
   
     > [!NOTE]
-    >  Como prática recomendada, é possível fazer backup do arquivo de banco de dados recém-criado copiando-o e colando a cópia em outro local ou dando à cópia um nome diferente.  
+    > Como prática recomendada, é possível fazer backup do arquivo de banco de dados recém-criado copiando-o e colando a cópia em outro local ou dando à cópia um nome diferente.  
   
 ## <a name="next-steps"></a>Próximas etapas  
  Agora que você tem um arquivo de banco de dados local com alguns dados de exemplo, você pode concluir qualquer uma das instruções passo a passo que demonstram tarefas de banco de dados.

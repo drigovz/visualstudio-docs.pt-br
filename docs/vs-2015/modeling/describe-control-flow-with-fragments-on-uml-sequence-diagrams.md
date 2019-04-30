@@ -17,12 +17,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 829e219056b7c0a74226dd933ab38b8559ebd6b2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c296be2e3a00efcdf48bdd6e4442e88fc32b3695
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107080"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422536"
 ---
 # <a name="describe-control-flow-with-fragments-on-uml-sequence-diagrams"></a>Descrever o fluxo de controle com fragmentos em diagramas de sequência UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Em um diagrama de sequência UML *fragmentos combinados* permitem que você most
  Um fragmento combinado consiste em um ou mais *operandos de interação*, e cada um deles inclui um ou mais mensagens, usos de interação ou fragmentos combinados.  
   
 > [!NOTE]
->  Este tópico é sobre fragmentos em diagramas de sequência. Para obter mais informações sobre como ler diagramas de sequência UML, consulte [diagramas de sequência UML: Referência](../modeling/uml-sequence-diagrams-reference.md). Para obter mais informações sobre como desenhar diagramas de sequência UML, consulte [diagramas de sequência UML: Diretrizes de](../modeling/uml-sequence-diagrams-guidelines.md).  
+> Este tópico é sobre fragmentos em diagramas de sequência. Para obter mais informações sobre como ler diagramas de sequência UML, consulte [diagramas de sequência UML: Referência](../modeling/uml-sequence-diagrams-reference.md). Para obter mais informações sobre como desenhar diagramas de sequência UML, consulte [diagramas de sequência UML: Diretrizes de](../modeling/uml-sequence-diagrams-guidelines.md).  
   
  ![Combinados fragmento com dois operandos de interação](../modeling/media/uml-seqfragments.png "UML_SeqFragments")  
   
@@ -45,7 +45,7 @@ Em um diagrama de sequência UML *fragmentos combinados* permitem que você most
 3. Você pode selecionar cada operando de interação separadamente clicando nele. Neste exemplo, o operando de interação superior é selecionado, para que seu limite pode ser visto. Normalmente, somente as linhas divisórias entre os operandos de interação é visível.  
   
     > [!NOTE]
-    >  Para selecionar o operando de interação superior, você deve clicar em muito próximas à parte superior do fragmento combinado.  
+    > Para selecionar o operando de interação superior, você deve clicar em muito próximas à parte superior do fragmento combinado.  
   
 4. Protege. Você pode dar um protetor de cada operando de interação. Descreve a condição sob a qual as mensagens dentro do operando de interação serão executadas.  
   
@@ -57,7 +57,7 @@ Em um diagrama de sequência UML *fragmentos combinados* permitem que você most
 1. Selecione uma mensagem ou uma sequência de mensagens, que tudo comece na ocorrência de linha da vida ou execução mesma.  
   
    > [!NOTE]
-   >  Se você selecionar mais de uma mensagem, eles devem formar uma sequência ininterrupta.  
+   > Se você selecionar mais de uma mensagem, eles devem formar uma sequência ininterrupta.  
   
 2. Clique em uma das mensagens, aponte para **envolver com**e, em seguida, clique em tipo de fragmento combinado que você deseja, tal como **fragmento combinado de Alt**.  
   
@@ -100,7 +100,7 @@ Em um diagrama de sequência UML *fragmentos combinados* permitem que você most
 - Clique com botão direito no título do fragmento combinado e, em seguida, clique em **propriedades**.  
   
     > [!NOTE]
-    >  Tipos diferentes de fragmento combinado têm propriedades diferentes.  
+    > Tipos diferentes de fragmento combinado têm propriedades diferentes.  
   
 ## <a name="KindsOfFragment"></a> Tipos de fragmento combinado  
   

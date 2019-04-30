@@ -12,18 +12,18 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a8fbc314580b106f5e1e8dae5a0a78d043d3940b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5097ecb0f7458e739def275d616eb344a2a6db0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080898"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426563"
 ---
 # <a name="how-to-suppress-warnings-by-using-the-menu-item"></a>Como: Suprimir avisos usando o item de menu
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [OBSERVAÇÃO]
->  No código-fonte supressão não há suporte para projetos de site.  
+> No código-fonte supressão não há suporte para projetos de site.  
   
  Você pode usar a janela de análise de código para suprimir avisos da análise de código. Suprimir um aviso não é igual a desabilitá-lo. Quando você suprime um aviso, ele se aplica somente a uma instância particular da violação. Outras violações do aviso mesmo ainda serão relatadas na janela lista de erros.  
   
@@ -42,4 +42,4 @@ ms.locfileid: "60080898"
      O aviso específico é suprimido e o aviso é exibido na janela análise de código com um tachado.  
   
 > [!NOTE]
->  Supressões que não têm um destino aparecem no arquivo de supressão global.
+> Supressões que não têm um destino aparecem no arquivo de supressão global.

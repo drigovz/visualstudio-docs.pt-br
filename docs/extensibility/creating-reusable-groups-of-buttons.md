@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe0d5c3dd55380587f8f5f1c6477ee8c53bf1156
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 48ab55b58eee8f6444b253c09db1eeedcc8c5692
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051655"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411351"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>Criar grupos reutilizáveis de botões
 Um grupo de comandos é uma coleção de comandos que sempre aparecem juntas em um menu ou barra de ferramentas. Qualquer grupo de comando pode ser usado novamente, atribuindo a ela a menus pai diferente na seção CommandPlacements a *VSCT* arquivo.
@@ -81,7 +81,7 @@ Um grupo de comandos é uma coleção de comandos que sempre aparecem juntas em 
     ```
 
     > [!NOTE]
-    >  O valor do campo de prioridade determina a posição do comando no novo grupo de comando. As prioridades de conjunto no CommandPlacement elemento substituem aquelas configuradas na definição de item. Comandos que têm valores de prioridade mais baixos são exibidos antes de comandos que têm valores de prioridade mais alta. Os valores de prioridade duplicados são permitidos, mas a posição relativa de comandos que têm o mesmo valor de prioridade não pode ser garantida, porque a ordem na qual o **devenv /setup** comando cria a interface final do registro pode não ser consistente.
+    > O valor do campo de prioridade determina a posição do comando no novo grupo de comando. As prioridades de conjunto no CommandPlacement elemento substituem aquelas configuradas na definição de item. Comandos que têm valores de prioridade mais baixos são exibidos antes de comandos que têm valores de prioridade mais alta. Os valores de prioridade duplicados são permitidos, mas a posição relativa de comandos que têm o mesmo valor de prioridade não pode ser garantida, porque a ordem na qual o **devenv /setup** comando cria a interface final do registro pode não ser consistente.
 
 ## <a name="to-put-a-reusable-group-of-buttons-on-a-menu"></a>Para colocar um grupo reutilizável de botões em um menu
 

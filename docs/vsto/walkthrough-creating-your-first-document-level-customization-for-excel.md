@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 81020496c1e80718d1aa0995791762d55ef70a76
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9cc23e140f0bfa2654cef1c3faeb805620a683b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104493"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438522"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>Passo a passo: Criar a primeira personalização no nível de documento para Excel
   Este passo a passo introdutório mostra como criar uma personalização no nível de documento do Microsoft Office Excel. Os recursos que você criar nesse tipo de solução estão disponíveis somente quando uma pasta de trabalho específica é aberta. Você não pode usar uma personalização no nível de documento para fazer alterações em todo o aplicativo, por exemplo, exibindo uma nova guia de faixa de opções quando qualquer pasta de trabalho é aberta.
@@ -106,7 +106,7 @@ ms.locfileid: "60104493"
      **Este texto foi adicionado usando o designer.**
 
 > [!WARNING]
->  Se você adicionar essa linha de texto para a célula **A2**, ele será substituído por outro código neste exemplo.
+> Se você adicionar essa linha de texto para a célula **A2**, ele será substituído por outro código neste exemplo.
 
 ## <a name="add-text-to-a-worksheet-programmatically"></a>Adicionar texto a uma planilha programaticamente
  Em seguida, adicione código ao arquivo de código Sheet1. O novo código usa o modelo de objeto do Excel para adicionar uma segunda linha de texto para a pasta de trabalho. Por padrão, o arquivo de código Sheet1 contém o seguinte código gerado:

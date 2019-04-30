@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca4e817ae33d3129259de619e07bf256e6f544bd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b392c962a2ddbed57ca1af934c0ef9d8b5175595
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092312"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418406"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Como os VSPackages adicionam elementos da interface do usuário
 Um VSPackage pode adicionar elementos de (UI) de interface do usuário, por exemplo, menus, barras de ferramentas e das janelas, para o Visual Studio por meio das *VSCT* arquivo.
@@ -63,7 +63,7 @@ Um VSPackage pode adicionar elementos de (UI) de interface do usuário, por exem
  O elemento de nível superior a `Symbols` seção é o [elemento GuidSymbol](../../extensibility/guidsymbol-element.md). `GuidSymbol` elementos mapeiam nomes de GUIDs que são usados pelo IDE para identificar os pacotes e suas partes do componente.
 
 > [!NOTE]
->  GUIDs são gerados automaticamente pelo modelo de pacote do Visual Studio. Você também pode criar um GUID exclusivo clicando **criar GUID** sobre o **ferramentas** menu.
+> GUIDs são gerados automaticamente pelo modelo de pacote do Visual Studio. Você também pode criar um GUID exclusivo clicando **criar GUID** sobre o **ferramentas** menu.
 
  A primeira `GuidSymbol` elemento, `guid<PackageName>Pkg`, é o GUID do pacote em si. Esse é o GUID que é usado pelo Visual Studio para carregar o pacote. Normalmente, ele não tem elementos filho.
 

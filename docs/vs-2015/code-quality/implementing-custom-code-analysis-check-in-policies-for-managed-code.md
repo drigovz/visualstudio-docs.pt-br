@@ -13,12 +13,12 @@ caps.latest.revision: 23
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: e27892859dd58add2f505fa04e21faac5576a80b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 91f81036345e647820353911356c01b7c4caff99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088750"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426556"
 ---
 # <a name="implementing-custom-code-analysis-check-in-policies-for-managed-code"></a>Implementando políticas de check-in de análise do código personalizadas para código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Uma política de check-in Especifica um conjunto de regras que os membros de um 
  Para criar uma regra personalizada definida para um projeto de equipe, você primeiro crie uma pasta especial para a conjunto de regras de política de check-in **Gerenciador de controle do código-fonte**. Em seguida, crie o arquivo de conjunto de regras e adicionar o arquivo ao controle de versão. Por fim, você pode especificar a conjunto de regras como a código check-in política de análise para o projeto de equipe.  
   
 > [!NOTE]
->  Para criar uma pasta em um projeto de equipe, primeiro você deve mapear a raiz do projeto de equipe para um local no computador local. Para obter mais informações, consulte [criar e trabalhar com espaços de trabalho (antigo)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
+> Para criar uma pasta em um projeto de equipe, primeiro você deve mapear a raiz do projeto de equipe para um local no computador local. Para obter mais informações, consulte [criar e trabalhar com espaços de trabalho (antigo)](http://msdn.microsoft.com/db4d5692-179a-44fe-ad31-0c1c900c9cb2).  
   
 #### <a name="to-create-the-version-control-folder-for-the-check-in-policy-rule-set"></a>Para criar a pasta de controle de versão para o conjunto de regras de política de check-in  
   
@@ -72,7 +72,7 @@ Uma política de check-in Especifica um conjunto de regras que os membros de um 
 4. No **Check-in** caixa de diálogo, você tem a opção de adicionar um comentário e, em seguida, clique em **Fazer Check-In**.  
   
     > [!NOTE]
-    >  Se você já tiver configurado uma política de check-in do análise código para seu projeto de equipe e você tiver selecionado a **impor check-in contenha somente os arquivos que fazem parte da solução atual**, você irá disparar um aviso de falha de política. Na caixa de diálogo Falha de política, selecione **substituir falha da política e continuar o check-in**. Adicionar um comentário necessário e, em seguida, clique em **Okey**.  
+    > Se você já tiver configurado uma política de check-in do análise código para seu projeto de equipe e você tiver selecionado a **impor check-in contenha somente os arquivos que fazem parte da solução atual**, você irá disparar um aviso de falha de política. Na caixa de diálogo Falha de política, selecione **substituir falha da política e continuar o check-in**. Adicionar um comentário necessário e, em seguida, clique em **Okey**.  
   
 #### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>Para especificar a regra definir o arquivo como a política de check-in  
   
@@ -91,7 +91,7 @@ Uma política de check-in Especifica um conjunto de regras que os membros de um 
      **$/** `TeamProjectName` **/** `VersionControlPath`  
   
     > [!NOTE]
-    >  Você pode copiar o caminho usando um dos procedimentos a seguir em **Gerenciador de controle do código-fonte**:  
+    > Você pode copiar o caminho usando um dos procedimentos a seguir em **Gerenciador de controle do código-fonte**:  
   
     - No **pastas** painel, clique na pasta que contém o arquivo de conjunto de regras. Copie o caminho da pasta que aparece no controle de versão do **origem** caixa e, em seguida, digite o nome do arquivo de conjunto de regras manualmente.  
   

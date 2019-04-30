@@ -20,12 +20,12 @@ caps.latest.revision: 53
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0c76ed1b24350a10891df69687080988603553fa
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4945efddb91142ce04f5b117129428ec4a054fc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925560"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427254"
 ---
 # <a name="application-deployment-prerequisites"></a>Pré-requisitos de implantação de aplicativos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Para garantir que seu aplicativo será instalado e executará com êxito, você 
   [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] pode detectar pré-requisitos ausentes, e você pode instalar os pré-requisitos usando um bootstrapper. Para obter mais informações, confira [Como: Instalar pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md).  
   
 > [!NOTE]
->  Para alterar os valores nos manifestos gerados pelas ferramentas, tais como [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e MageUI.exe, você precisa editar o manifesto do aplicativo em um editor de texto e assinar novamente os manifestos do aplicativo e de implantação. Para obter mais informações, confira [Como: Assinar novamente os manifestos de aplicativo e implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
+> Para alterar os valores nos manifestos gerados pelas ferramentas, tais como [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e MageUI.exe, você precisa editar o manifesto do aplicativo em um editor de texto e assinar novamente os manifestos do aplicativo e de implantação. Para obter mais informações, confira [Como: Assinar novamente os manifestos de aplicativo e implantação](../deployment/how-to-re-sign-application-and-deployment-manifests.md).  
   
  Se você usar o Visual Studio e o ClickOnce para implantar seu aplicativo, os pacotes do bootstrapper selecionados por padrão dependerão da versão do .NET Framework na solução. No entanto, se você alterar a versão do .NET Framework de destino, deverá atualizar as opções na **Caixa de Diálogo Pré-requisitos** manualmente.  
   

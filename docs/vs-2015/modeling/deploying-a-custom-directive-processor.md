@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 0a440fbd87e85a72b2807ea09c7af61adf9f8af7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c485209f47e2d119fe469a59fe379f7cabe03813
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108354"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422585"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>Implantando um processador de diretiva personalizada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -148,7 +148,7 @@ Para usar um processador de diretriz personalizado no [!INCLUDE[vsprvs](../inclu
 ```  
   
 > [!NOTE]
->  Esse atributo é colocado na classe de pacote, e não na classe de processador de diretriz.  
+> Esse atributo é colocado na classe de pacote, e não na classe de processador de diretriz.  
   
  O arquivo .pkgdef será gerado quando você compilar o projeto. Quando você instala o VSPackage, o arquivo .pkgdef registra o processador de diretriz.  
   
@@ -160,7 +160,7 @@ Para usar um processador de diretriz personalizado no [!INCLUDE[vsprvs](../inclu
  Esse método de instalação de um processador de diretriz personalizado é o menos preferido. Não fornece uma maneira conveniente de habilitar e desabilitar o processador de diretriz, e não fornece um método de distribuição do processador de diretriz para outros usuários.  
   
 > [!CAUTION]
->  A edição incorreta do registro pode danificar gravemente o sistema. Antes de alterar o Registro, faça o backup de todos os dados importantes no computador.  
+> A edição incorreta do registro pode danificar gravemente o sistema. Antes de alterar o Registro, faça o backup de todos os dados importantes no computador.  
   
 #### <a name="to-register-a-directive-processor-by-setting-a-registry-key"></a>Para registrar um processador de diretriz definindo uma chave do Registro  
   

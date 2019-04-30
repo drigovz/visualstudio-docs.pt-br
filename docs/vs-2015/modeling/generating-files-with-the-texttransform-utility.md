@@ -12,12 +12,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 75438b5a2ffa5917f667ab3fdc3a9bd3528f0e55
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 607eda7550819e4150f026a0671ed744ba9c10a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929584"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427052"
 ---
 # <a name="generating-files-with-the-texttransform-utility"></a>Gerando arquivos com o utilitário TextTransform
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ ms.locfileid: "58929584"
 TextTransform.exe é uma ferramenta de linha de comando que você pode usar para transformar um modelo de texto. Quando você chama TextTransform.exe, você especifica o nome de um arquivo de modelo de texto como um argumento. TextTransform.exe chama o mecanismo de transformação de texto e processa o modelo de texto. TextTransform.exe geralmente é chamado de scripts. No entanto, não é geralmente necessário, porque você pode executar a transformação de texto no Visual Studio ou no processo de compilação.  
   
 > [!NOTE]
->  Se você deseja executar a transformação de texto como parte de um processo de compilação, considere usar a tarefa de transformação de texto do MSBuild. Para obter mais informações, consulte [geração de código em um processo de compilação](../modeling/code-generation-in-a-build-process.md). Em um computador em que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estiver instalado, você também pode escrever um aplicativo ou [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão que pode transformar modelos de texto. Para obter mais informações, consulte [modelos de processamento de texto usando um Host personalizado](../modeling/processing-text-templates-by-using-a-custom-host.md).  
+> Se você deseja executar a transformação de texto como parte de um processo de compilação, considere usar a tarefa de transformação de texto do MSBuild. Para obter mais informações, consulte [geração de código em um processo de compilação](../modeling/code-generation-in-a-build-process.md). Em um computador em que [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estiver instalado, você também pode escrever um aplicativo ou [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão que pode transformar modelos de texto. Para obter mais informações, consulte [modelos de processamento de texto usando um Host personalizado](../modeling/processing-text-templates-by-using-a-custom-host.md).  
   
  TextTransform.exe está localizado no seguinte diretório:  
   

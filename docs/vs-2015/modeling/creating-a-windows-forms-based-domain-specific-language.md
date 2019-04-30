@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba23da85e24dd7c1020b19b66852cad86f79a03b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b733af14e5b5124928c315ae4a87098513714214
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084772"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433346"
 ---
 # <a name="creating-a-windows-forms-based-domain-specific-language"></a>Criando uma linguagem específica do domínio baseada no Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -85,7 +85,7 @@ Uma instância DSL, mostrando uma interface do usuário do Windows Form e o Gere
      Dê a ele propriedades de domínio adicional denominadas `Size` do tipo **Int32**, e `IsOrganic` do tipo **booliano**.  
 
     > [!NOTE]
-    >  Se você excluir a classe de domínio raiz e, em seguida, cria uma nova raiz, você precisará redefinir a propriedade de classe de raiz do Editor. Na **Gerenciador de DSL**, selecione **Editor**. Em seguida, na janela Propriedades, defina **classe raiz** para `Farm`.  
+    > Se você excluir a classe de domínio raiz e, em seguida, cria uma nova raiz, você precisará redefinir a propriedade de classe de raiz do Editor. Na **Gerenciador de DSL**, selecione **Editor**. Em seguida, na janela Propriedades, defina **classe raiz** para `Farm`.  
 
 4. Use o **classe de domínio chamado** ferramenta para criar as seguintes classes de domínio:  
 
@@ -110,7 +110,7 @@ Uma instância DSL, mostrando uma interface do usuário do Windows Form e o Gere
 10. Criar o **Dsl** projeto.  
 
     > [!NOTE]
-    >  Nesse estágio, os outros projetos não serão compilados sem erros. No entanto, queremos compilar o projeto de Dsl, para que seu assembly está disponível para o Assistente de fonte de dados.  
+    > Nesse estágio, os outros projetos não serão compilados sem erros. No entanto, queremos compilar o projeto de Dsl, para que seu assembly está disponível para o Assistente de fonte de dados.  
 
 ## <a name="updating-the-ui-project"></a>Atualizando o projeto de interface do usuário  
  Agora você pode criar um novo controle de usuário que exibirá as informações que são armazenadas no modelo de DSL. A maneira mais fácil para conectar-se o controle de usuário para o modelo é por meio de associações de dados. Os tipo de adaptador chamado de associação de dados **ModelingBindingSource** foi projetado especificamente para se conectar a DSLs às interfaces não VMSDK.  
@@ -154,7 +154,7 @@ Uma instância DSL, mostrando uma interface do usuário do Windows Form e o Gere
 6. Usando a caixa de ferramentas, crie duas instâncias de **DataGridView**e nomeá-los `AnimalGridView` e `FieldGridView`.  
 
    > [!NOTE]
-   >  É uma etapa de alternativa ao arrastar os itens de animais e campos da janela fontes de dados para o controle. Essa ação cria automaticamente grades de dados e associações entre a exibição de grade e a fonte de dados. No entanto, essa associação não funciona corretamente para DSLs. Portanto, é melhor criar grades de dados e associações manualmente.  
+   > É uma etapa de alternativa ao arrastar os itens de animais e campos da janela fontes de dados para o controle. Essa ação cria automaticamente grades de dados e associações entre a exibição de grade e a fonte de dados. No entanto, essa associação não funciona corretamente para DSLs. Portanto, é melhor criar grades de dados e associações manualmente.  
 
 7. Se a caixa de ferramentas não contém o **ModelingBindingSource** ferramenta, adicioná-lo. No menu de atalho do **dados** guia, escolha **escolher itens**. No **Choose Toolbox Items** caixa de diálogo, selecione **ModelingBindingSource** do **guia do .NET Framework**.  
 
@@ -227,7 +227,7 @@ Uma instância DSL, mostrando uma interface do usuário do Windows Form e o Gere
      `Goat1` aparece na **animais** modo de exibição.  
 
     > [!WARNING]
-    >  Você deve usar o menu de atalho na **Farm** nó, não a **animais** nó.  
+    > Você deve usar o menu de atalho na **Farm** nó, não a **animais** nó.  
 
 4. Selecione o **Farm** nó raiz e exibir suas propriedades.  
 

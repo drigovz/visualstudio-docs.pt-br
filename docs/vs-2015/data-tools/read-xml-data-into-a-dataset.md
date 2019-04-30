@@ -23,12 +23,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b858a6c513c1b9e1caa4f17c1bd8af067de47365
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dea8565810a904ff80a0790a9b219f3744b1e156
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114893"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425394"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>Ler dados XML em um conjunto de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ O ADO.NET fornece métodos simples para trabalhar com dados XML. Neste passo a p
 5. Adicionando código para exibir o esquema XML com base no arquivo XML em um <xref:System.Windows.Forms.TextBox> controle  
   
 > [!NOTE]
->  As caixas de diálogo e comandos de menu que você vê podem diferir dos descritos na Ajuda, dependendo de suas configurações ativas ou a edição que você está usando. Para alterar suas configurações, nos **ferramentas** menu, selecione**Import and Export Settings**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e comandos de menu que você vê podem diferir dos descritos na Ajuda, dependendo de suas configurações ativas ou a edição que você está usando. Para alterar suas configurações, nos **ferramentas** menu, selecione**Import and Export Settings**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Criar um novo projeto  
  Nesta etapa, você cria um projeto do Visual Basic ou Visual c# que contém este passo a passo.  

@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1d4221cfdc0d741264aa4667892117ba0cc24f9a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f5b60f44dd1d32a9d19814b4d2194e7586d86865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108276"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426857"
 ---
 # <a name="msbuild-multitargeting-overview"></a>Visão geral da multiplataforma no MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60108276"
 Usando o MSBuild, você pode compilar um aplicativo para ser executado em qualquer uma das várias versões do .NET Framework e em qualquer uma das várias plataformas de sistema. Por exemplo, você pode compilar um aplicativo para execução no .NET Framework 2.0 em uma plataforma de 32 bits e pode compilar o mesmo aplicativo para ser executado no .NET Framework 4.5 em uma plataforma de 64 bits.  
   
 > [!IMPORTANT]
->  Apesar do nome "multiplataforma", um projeto pode direcionar apenas uma estrutura e apenas uma plataforma por vez.  
+> Apesar do nome "multiplataforma", um projeto pode direcionar apenas uma estrutura e apenas uma plataforma por vez.  
   
  Estes são alguns dos recursos de multiplataforma do MSBuild:  
   

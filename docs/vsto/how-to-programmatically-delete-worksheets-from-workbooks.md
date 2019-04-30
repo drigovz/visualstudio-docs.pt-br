@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1ea87ac85ed187becb2f463dfe95fd3dcb812f28
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9ecc39e72a336c390c85f1caf2c80c6643acbb61
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066546"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63412532"
 ---
 # <a name="how-to-programmatically-delete-worksheets-from-workbooks"></a>Como: Excluir planilhas de pastas de trabalho de forma programática
   Você pode excluir qualquer planilha em uma pasta de trabalho. Para excluir uma planilha, use o item de host da planilha ou acessar a planilha usando a coleção de planilhas da pasta de trabalho.
@@ -29,7 +29,7 @@ ms.locfileid: "60066546"
  Se a planilha foi adicionada em tempo de design em uma personalização no nível de documento, use o <xref:Microsoft.Office.Tools.Excel.Worksheet.Delete%2A> método para excluir uma planilha especificada. O código a seguir exclui uma planilha de uma pasta de trabalho referenciando o item de host da planilha diretamente.
 
 > [!IMPORTANT]
->  Esse código é executado apenas em projetos que você cria usando qualquer um dos modelos de projeto a seguir:
+> Esse código é executado apenas em projetos que você cria usando qualquer um dos modelos de projeto a seguir:
 >
 > - Pasta de trabalho do Excel 2013
 > - Modelo do Excel 2013
@@ -55,7 +55,7 @@ ms.locfileid: "60066546"
   O código a seguir exclui uma planilha de uma pasta de trabalho referenciando a folha até o número de índice do **folhas** coleção. Esse código supõe que uma nova planilha foi criada por meio de programação.
 
 > [!IMPORTANT]
->  Se você quiser executar essa tarefa em qualquer outro tipo de projeto, você deve adicionar uma referência para o **Interop** assembly e, em seguida, você deve usar classes do assembly para abrir uma pasta de trabalho e excluir uma planilha. Para obter mais informações, confira [Como: Destinar aplicativos do Office por meio de assemblies de interoperabilidade primários](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) e [referência de assembly de interoperabilidade primária do Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).
+> Se você quiser executar essa tarefa em qualquer outro tipo de projeto, você deve adicionar uma referência para o **Interop** assembly e, em seguida, você deve usar classes do assembly para abrir uma pasta de trabalho e excluir uma planilha. Para obter mais informações, confira [Como: Destinar aplicativos do Office por meio de assemblies de interoperabilidade primários](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md) e [referência de assembly de interoperabilidade primária do Excel 2010](http://go.microsoft.com/fwlink/?LinkId=189585).
 
 ### <a name="to-delete-a-worksheet-by-using-the-sheets-collection-of-the-excel-workbook"></a>Para excluir uma planilha usando a coleção de planilhas da pasta de trabalho do Excel
 

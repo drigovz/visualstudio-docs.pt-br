@@ -17,12 +17,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b1549cf23f87a56f724a0b5e56b7b59f4fa88ac2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9962bb1dbeef089d409cbe100daa37777b45e67d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425380"
 ---
 # <a name="edit-data-in-datasets"></a>Editar dados em conjuntos de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Você edite os dados em tabelas de dados assim que você edite os dados em uma t
      Esse método não remove o registro fisicamente. Em vez disso, ele marca o registro para exclusão.  
   
     > [!NOTE]
-    >  Se você receber a propriedade count de um <xref:System.Data.DataRowCollection>, a contagem resultante inclui registros que foram marcados para exclusão. Para obter uma contagem precisa de registros que não são marcados para exclusão, você pode fazer um loop através da coleção examinando o <xref:System.Data.DataRow.RowState%2A> propriedade de cada registro. (Registros marcados para exclusão tem uma <xref:System.Data.DataRow.RowState%2A> de <xref:System.Data.DataRowState>.) Como alternativa, você pode criar uma exibição de dados de um conjunto de dados que filtra com base em estado de linha e obter a propriedade de contagem a partir daí.  
+    > Se você receber a propriedade count de um <xref:System.Data.DataRowCollection>, a contagem resultante inclui registros que foram marcados para exclusão. Para obter uma contagem precisa de registros que não são marcados para exclusão, você pode fazer um loop através da coleção examinando o <xref:System.Data.DataRow.RowState%2A> propriedade de cada registro. (Registros marcados para exclusão tem uma <xref:System.Data.DataRow.RowState%2A> de <xref:System.Data.DataRowState>.) Como alternativa, você pode criar uma exibição de dados de um conjunto de dados que filtra com base em estado de linha e obter a propriedade de contagem a partir daí.  
   
      O exemplo a seguir mostra como chamar o <xref:System.Data.DataRow.Delete%2A> método para marcar a primeira linha no `Customers` como excluído de tabela:  
   

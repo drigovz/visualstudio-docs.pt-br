@@ -11,16 +11,16 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f466473bcc811a688f06e6cf4cdd8b4fc8e80648
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: e6fdbdcdf292d90fc63758c2b7d183225e63a850
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56700244"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411313"
 ---
 # <a name="common-language-runtime-and-expression-evaluation"></a>Avaliação de tempo de execução e a expressão de linguagem comum
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
+> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).
 
  Compiladores, como Visual Basic e c# (pronuncia-se C-sharp), que direcionam o tempo de execução de linguagem comum (CLR), produzem MSIL Microsoft Intermediate Language (), que é posterior compilados para código nativo. O CLR fornece um mecanismo de depuração (DE) para depurar o código resultante. Se você pretende integrar a linguagem de programação proprietária ao IDE do Visual Studio, você pode optar por compilar para MSIL e, portanto, não precisa escrever seu próprio DE. No entanto, você terá que escrever um avaliador de expressão (EE) que é capaz de avaliar expressões dentro do contexto de sua linguagem de programação.
 

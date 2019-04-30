@@ -14,12 +14,12 @@ caps.latest.revision: 64
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a3ff96a68d66c95d4f1302ba2f419c873e8f077d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8fd8188ef0efbe540e086ca6ce284a49b71444ed
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433374"
 ---
 # <a name="create-layer-diagrams-from-your-code"></a>Criar diagramas de camada por meio de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,9 +34,9 @@ Para visualizar a arquitetura de alto nível, a lógica do seu sistema de softwa
  Antes de criar um diagrama de camada, verifique se a solução tem um projeto de modelagem. Ver [diagramas e projetos de modelagem UML criar](../modeling/create-uml-modeling-projects-and-diagrams.md).  
   
 > [!IMPORTANT]
->  Não adicione, arraste ou copie um diagrama de camada existente de um projeto de modelagem a outro projeto de modelagem ou a outro local na solução. Isso preserva as referências do diagrama original, mesmo que você altere o diagrama. Isso também impede que a validação da camada funcione corretamente e talvez cause outros problemas como, por exemplo, elementos não encontrados ou outros erros quando você tenta abrir o diagrama.  
+> Não adicione, arraste ou copie um diagrama de camada existente de um projeto de modelagem a outro projeto de modelagem ou a outro local na solução. Isso preserva as referências do diagrama original, mesmo que você altere o diagrama. Isso também impede que a validação da camada funcione corretamente e talvez cause outros problemas como, por exemplo, elementos não encontrados ou outros erros quando você tenta abrir o diagrama.  
 >   
->  Em vez disso, adicione um novo diagrama de camada ao projeto de modelagem. Copie os elementos do diagrama de origem para o novo diagrama. Salve o projeto de modelagem e o novo diagrama de camada.  
+> Em vez disso, adicione um novo diagrama de camada ao projeto de modelagem. Copie os elementos do diagrama de origem para o novo diagrama. Salve o projeto de modelagem e o novo diagrama de camada.  
   
 #### <a name="to-add-a-new-layer-diagram-to-a-modeling-project"></a>Para adicionar um novo diagrama de camada a um projeto de modelagem  
   
@@ -53,7 +53,7 @@ Para visualizar a arquitetura de alto nível, a lógica do seu sistema de softwa
      Escolher **criar um novo projeto de modelagem** para adicionar um novo projeto de modelagem à solução.  
   
     > [!NOTE]
-    >  O diagrama de camada deve estar dentro de um projeto de modelagem. Porém, é possível vinculá-lo a itens em qualquer lugar na solução.  
+    > O diagrama de camada deve estar dentro de um projeto de modelagem. Porém, é possível vinculá-lo a itens em qualquer lugar na solução.  
   
 5. Não se esqueça de salvar o projeto de modelagem e o diagrama de camada.  
   
@@ -106,7 +106,7 @@ Para visualizar a arquitetura de alto nível, a lógica do seu sistema de softwa
  Existirá uma dependência sempre que um artefato associado a uma camada tiver uma referência a um artefato associado a outra camada. Por exemplo, uma classe em uma camada declara uma variável que tem uma classe em outra camada. É possível fazer engenharia reversa em dependências existentes para artefatos vinculados a camadas no diagrama.  
   
 > [!NOTE]
->  As dependências não podem sofrer engenharia reversa para determinados tipos de artefatos. Por exemplo, nenhuma dependência sofrerá engenharia reversa de ou para uma camada vinculada a um arquivo de texto. Para ver quais artefatos têm dependências que você pode fazer engenharia reversa, abra o menu de atalho para uma ou várias camadas e, em seguida, escolha **Exibir Links**. Na **Gerenciador de camadas**, examine o **dá suporte à validação** coluna. As dependências não sofrerão engenharia reversa para artefatos para o qual essa coluna mostra **falsos**.  
+> As dependências não podem sofrer engenharia reversa para determinados tipos de artefatos. Por exemplo, nenhuma dependência sofrerá engenharia reversa de ou para uma camada vinculada a um arquivo de texto. Para ver quais artefatos têm dependências que você pode fazer engenharia reversa, abra o menu de atalho para uma ou várias camadas e, em seguida, escolha **Exibir Links**. Na **Gerenciador de camadas**, examine o **dá suporte à validação** coluna. As dependências não sofrerão engenharia reversa para artefatos para o qual essa coluna mostra **falsos**.  
   
 - Selecione uma ou várias camadas, abra o menu de atalho para uma camada selecionada e, em seguida, escolha **gerar dependências**.  
   

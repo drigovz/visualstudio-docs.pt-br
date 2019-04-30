@@ -28,14 +28,14 @@ helpviewer_keywords:
 ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
 caps.latest.revision: 43
 author: MikeJo5000
-ms.author: mikejo
+ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5afc30707a2bffdfe6286289e5e93ca9321a4957
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b55c677f4ba241260f1ebebc024a150dcd23eb19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432163"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>Mapear métodos na pilha de chamadas ao depurar no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ Crie um mapa de códigos para acompanhar visualmente a pilha de chamadas durante
  ![Mostrar campos em um método no mapa de códigos de pilha de chamadas](../debugger/media/debuggermap-showfields.png "DebuggerMap_ShowFields")
 
 > [!NOTE]
->  Por padrão, a adição de itens no mapa também adiciona os nós do grupo pai, como a classe, namespace e assembly. Embora isso seja útil, você pode manter o mapa simples desativando esse recurso usando o **incluem pais** botão na barra de ferramentas do mapa ou pressionando **CTRL** quando você adiciona itens.
+> Por padrão, a adição de itens no mapa também adiciona os nós do grupo pai, como a classe, namespace e assembly. Embora isso seja útil, você pode manter o mapa simples desativando esse recurso usando o **incluem pais** botão na barra de ferramentas do mapa ou pressionando **CTRL** quando você adiciona itens.
 
  ![Campos relacionados a um método no mapa de códigos de pilha de chamadas](../debugger/media/debuggermap-showedfields.png "DebuggerMap_ShowedFields")
 

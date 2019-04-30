@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f1d72d3da8adeff7b8280bda84eb92b730679fea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f9696640358626c254f1792fc29a31a41d4bafb3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085838"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427903"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>Como: Adicionar um painel de ações a documentos do Word ou pastas de trabalho do Excel
   Para adicionar um painel de ações para um documento do Microsoft Office Word ou uma pasta de trabalho do Microsoft Excel, primeiro crie um controle de usuário do Windows Forms. Em seguida, adicione o controle de usuário para o <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> propriedade do `ThisDocument.ActionsPane` campo (Word) ou `ThisWorkbook.ActionsPane` campo (Excel) em seu projeto.
@@ -28,7 +28,7 @@ ms.locfileid: "60085838"
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="creating-the-user-control"></a>Criando o controle de usuário
  O procedimento a seguir mostra como criar o controle de usuário em uma palavra ou um projeto do Excel. Ele também adiciona um botão para o controle de usuário que grava o texto no documento ou pasta de trabalho quando ele for clicado.
@@ -42,12 +42,12 @@ ms.locfileid: "60085838"
 3. No **Adicionar Novo Item** caixa de diálogo, selecione **controle do painel Ações**, nomeie- **HelloControl**e clique em **adicionar**.
 
     > [!NOTE]
-    >  Como alternativa, você pode adicionar um **controle de usuário** item ao seu projeto. As classes geradas pela **controle do painel Ações** e **controle de usuário** itens são funcionalmente equivalentes.
+    > Como alternativa, você pode adicionar um **controle de usuário** item ao seu projeto. As classes geradas pela **controle do painel Ações** e **controle de usuário** itens são funcionalmente equivalentes.
 
 4. Do **dos Windows Forms** guia da **caixa de ferramentas,** arraste uma **botão** controle para o controle.
 
     > [!NOTE]
-    >  Se o controle não estiver visível no designer, clique duas vezes **HelloControl** na **Gerenciador de soluções**.
+    > Se o controle não estiver visível no designer, clique duas vezes **HelloControl** na **Gerenciador de soluções**.
 
 5. Adicione o código para o <xref:System.Windows.Forms.Control.Click> manipulador de eventos do botão. O exemplo a seguir mostra o código para um documento do Microsoft Office Word.
 
