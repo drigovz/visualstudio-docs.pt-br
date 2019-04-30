@@ -10,11 +10,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 25f8db1f6d14692538fe7f61ed2f9dbd37e0bd29
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000088"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977224"
 ---
 # <a name="control-flow-activity-designers"></a>Designer de atividade de fluxo de controle
 [!INCLUDE[wfd1](../includes/wfd1-md.md)] inclui um número o sistema forneceu as atividades que você pode usar para construir os fluxos de trabalho. Esta seção contém sistema forneceu as atividades usadas para controlar o fluxo em um fluxo de trabalho. Os tópicos a seguir descrevem essas atividades e fornecem orientação sobre como usá-los.  

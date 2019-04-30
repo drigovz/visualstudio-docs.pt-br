@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 433972790310559b19ca5bc2c982c32e699e0e60
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064526"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63007437"
 ---
 # <a name="object-doesnt-support-this-property-or-method"></a>O objeto não dá suporte a essa propriedade ou método
 Você especificou uma propriedade ou um método que não existe para esse objeto. Nem todos os objetos são compatíveis com todas as propriedades e todos os métodos.  

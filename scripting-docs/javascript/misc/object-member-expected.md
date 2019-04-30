@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 5a30da75d5498cb9cb827ffaa89d2079f4e1b7a0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006374"
 ---
 # <a name="object-member-expected"></a>Membro de objeto esperado
 Você tentou executar uma operação de membro de dados de um objeto, mas o membro não existe.  

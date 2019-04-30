@@ -15,11 +15,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 31a17fdf51e838405c93efca79d7994cd40ece5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107613"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62978572"
 ---
 # <a name="secure-office-solutions"></a>Proteger as soluções do Office
   O modelo de segurança para soluções do Office envolve várias tecnologias: o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)], [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)], a Central de confiabilidade no Microsoft Office e a zona de sites restritos do Internet Explorer. As seções a seguir descrevem como funcionam os recursos de segurança diferentes:

@@ -13,11 +13,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 564ac5591595c62f1e5770176a383413b2e755bf
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63002100"
 ---
 # <a name="walkthrough-customizing-the-domain-specific-language-definition"></a>Passo a passo: Personalizando a definição de linguagem específica do domínio
 Este conteúdo é obsoleto. Consulte [personalizando e estendendo uma linguagem específica do domínio](../modeling/customizing-and-extending-a-domain-specific-language.md).

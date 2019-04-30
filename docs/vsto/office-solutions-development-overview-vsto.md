@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 45b9dba16a0a8ebf6baaf2f1d7660035294fd80d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061951"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62977933"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Visão geral do desenvolvimento de soluções Office (VSTO)
   Ao usar o Microsoft Office como o front-end para soluções, você pode tirar proveito das interfaces de usuário do Microsoft Office e ferramentas como os recursos de processamento de texto no Word, os recursos de análise de dados do Excel e os recursos de gerenciamento de email do Outlook familiares . Você pode desenvolver soluções no Visual Studio para personalizar aplicativos do Office e adicionar os recursos específicos que você precisa para seus processos de negócios. Por exemplo, você pode transformar o Word em um gerador de contrato que monta contratos fora das partes pré-existentes que podem ser feitas editáveis ou não editável. Com o Excel, você pode criar uma planilha de orçamento automatizado personalizada para diferentes projetos. Os usuários também podem executar soluções do office offline, que torna mais prático do que seria se você usar uma arquitetura baseada na web a soluções complexas.

@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - vssdk
 ms.openlocfilehash: a6ad2051212a943cea805579f0f1ab083af60602
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62911951"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>Elemento folder (modelos de projeto do Visual Studio)
 Especifica uma pasta que será adicionada ao projeto.

@@ -14,11 +14,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: d68c044cdc3d523841cc56814b8ca34bcd8aa037
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157224"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62944799"
 ---
 # <a name="iprocessdebugmanager-interface"></a>Interface IProcessDebugManager
 A interface primária para o gerenciador de depuração do processo. Essa interface pode criar, adicionar ou remover um aplicativo virtual de um processo. Ele pode enumerar os quadros de pilha e threads do aplicativo.  

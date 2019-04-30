@@ -15,11 +15,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 8fd8add72d016bc3f2e815f41c29c735505c8817
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63006215"
 ---
 # <a name="the-uri-to-be-decoded-is-not-a-valid-encoding"></a>O URI a ser decodificado não tem uma codificação válida
 Tentativa de decodificar um formada incorretamente URI (Uniform Resource Identifier). URIs têm uma sintaxe especial; a maioria dos caracteres não alfanuméricos devem ser codificados antes que possam ser usados em um URI. Você pode usar o `encodeURI` e `encodeURIComponent` métodos para criar um URI de um normal [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] cadeia de caracteres.  
