@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 451d7a735116d7b181263eebe76751fd49900ce3
-ms.sourcegitcommit: 847d192013eb8225776243045c9b5a53d1ba4a59
+ms.openlocfilehash: ff323547135d4c0d57900ac4e871cf053dedf096
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/15/2019
-ms.locfileid: "59584409"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62960616"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>Criar um aplicativo Vue.js usando as Ferramentas Node.js para Visual Studio
 
@@ -31,12 +31,17 @@ Os seguintes novos recursos dão suporte ao desenvolvimento de aplicativos Vue.j
 
 ## <a name="prerequisites"></a>Pré-requisitos
 
-* É necessário ter o Visual Studio 2017 versão 15.8 Versão Prévia 3 ou posterior instalado e a carga de trabalho **Desenvolvimento do Node.js**.
+* É necessário ter o Visual Studio 2017 versão 15.8 ou posterior instalado e a carga de trabalho **Desenvolvimento do Node.js**.
 
     > [!IMPORTANT]
-    > Este artigo exige recursos que estão disponíveis apenas a partir do Visual Studio 2017 versão 15.8 Versão Prévia 3.
+    > Este artigo exige recursos que estão disponíveis apenas a partir do Visual Studio 2017 versão 15.8.
 
-    Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://www.visualstudio.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=button+cta&utm_content=download+vs2017)  para instalá-lo gratuitamente.
+    ::: moniker range=">=vs-2019"
+    Se a versão necessária ainda não estiver instalada, instale o [Visual Studio de 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019).
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+    Se você ainda não instalou o Visual Studio, acesse a página  [Downloads do Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  para instalá-lo gratuitamente.
+    ::: moniker-end
 
     Caso precise instalar a carga de trabalho, mas já tiver o Visual Studio, acesse **Ferramentas** > **Obter Ferramentas e Funcionalidades...**, que abre o Instalador do Visual Studio. Escolha a carga de trabalho **Desenvolvimento de Node.js** e, em seguida, selecione **Modificar**.
 

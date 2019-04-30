@@ -2,7 +2,7 @@
 title: Novidades no Visual Studio 2019
 titleSuffix: ''
 description: Saiba mais sobre os novos recursos do Visual Studio 2019.
-ms.date: 04/04/2019
+ms.date: 04/23/2019
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 399207f81ec1f25e6a5169235820989c1b2c34e4
-ms.sourcegitcommit: 0a2fdc23faee77187e10a1c19665ba5a1ac68e72
+ms.openlocfilehash: 3093641ad07ad3ae0f4796c2064c3e6901ae03ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/10/2019
-ms.locfileid: "59477535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432027"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Novidades no Visual Studio 2019
 
@@ -84,7 +84,7 @@ Para saber mais sobre o IntelliCode, confira a postagem no blog [Code more, scro
 
 Juntamente com um novo indicador de integridade do documento, temos um novo comando de limpeza de código. Você pode usar esse novo comando para identificar e depois corrigir avisos e sugestões com o clique de um botão.
 
-A limpeza formatará o código e aplicará quaisquer correções de código conforme sugerido pelas [configurações atuais](code-styles-and-quick-actions.md), [arquivos .editorconfig](create-portable-custom-editor-options.md) ou [analisadores de Roslyn](../code-quality/roslyn-analyzers-overview.md).
+A limpeza formata o código e aplica todas as correções de código conforme sugerido pelas [configurações atuais](code-styles-and-quick-actions.md) e [arquivos .editorconfig](create-portable-custom-editor-options.md).
 
    ![Captura de tela do novo controle de limpeza de código no Visual Studio 2019](media/vs-2019/code-cleanup-profile.png)
 
@@ -168,6 +168,12 @@ Adicionamos suporte para direcionamento de aplicativos do ASP.NET (Core e área 
 
 Para saber mais, confira a página [Depurar aplicativos ASP.NET dinâmicos usando o Depurador de Instantâneos](../debugger/debug-live-azure-applications.md) e a postagem no blog [Apresentação da depuração de viagem no tempo para o Visual Studio Enterprise 2019](https://devblogs.microsoft.com/visualstudio/introducing-time-travel-debugging-for-visual-studio-enterprise-2019/).
 
+## <a name="whats-next"></a>O que vem a seguir
+
+O Visual Studio 2019 é atualizado frequentemente com novos recursos que melhoram ainda mais a experiência de desenvolvimento. Saiba mais sobre as inovações mais recentes no [Blog do Visual Studio](https://devblogs.microsoft.com/visualstudio/). E para descobrir o que já lançamos até agora na versão prévia, leia as [Notas da versão prévia](/visualstudio/releases/2019/release-notes-preview/).
+
+Quer saber mais sobre as novidades do Visual Studio 2019? Confira o [Roteiro do Visual Studio](/visualstudio/productinfo/vs-roadmap/).
+
 ## <a name="give-us-feedback"></a>Fornecer comentários
 
 Por que enviar comentários à equipe do Visual Studio? Porque nós levamos a sério os comentários dos clientes. Eles motivam muito do que fazemos.
@@ -179,7 +185,7 @@ Por que enviar comentários à equipe do Visual Studio? Porque nós levamos a s�
 ## <a name="see-also"></a>Consulte também
 
 * [Apresentação do Visual Studio 2019](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-code-faster-work-smarter-create-the-future/)
-* [Notas de versão do Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
+* [Notas sobre a versão do Visual Studio 2019](/visualstudio/releases/2019/release-notes/)
 * [Novidades do SDK do Visual Studio 2019](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [O Visual Studio 2019 para Mac já está disponível](https://devblogs.microsoft.com/visualstudio/visual-studio-2019-for-mac-is-now-available/)
 * [Microsoft Connect(); conferência de 2018](https://www.microsoft.com/connectevent)

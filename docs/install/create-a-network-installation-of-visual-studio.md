@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5e499e54a7cf1c5c50a625cfe03482202e3a1f3f
-ms.sourcegitcommit: 509fc3a324b7748f96a072d0023572f8a645bffc
+ms.openlocfilehash: c727b31f353015ca6f43157c4b6afc67339526f0
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58857419"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62974089"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>Criar uma instalação de rede do Visual Studio
 
@@ -153,6 +153,7 @@ Aqui estão alguns exemplos de como criar um layout personalizado parcial.
     ```cmd
     vs_enterprise.exe --layout C:\vsoffline --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional 
     ```
+
 ::: moniker range="vs-2017"
 
 ### <a name="new-in-version-153"></a>Novidades na versão 15.3
@@ -194,11 +195,13 @@ vs_enterprise.exe --layout c:\VSLayout --all
 Os administradores podem implantar o Visual Studio em estações de trabalho cliente como parte de um script de instalação. Ou, os usuários que têm direitos de administrador podem executar a instalação diretamente do compartilhamento para instalar o Visual Studio em seu computador.
 
 * Os usuários podem fazer a instalação executando o seguinte comando: <br>
+
     ```cmd
     \\server\products\VS\vs_enterprise.exe
     ```
 
 * Os administradores podem fazer a instalação em um modo autônomo executando o seguinte comando:
+
     ```cmd
     \server\products\VS\vs_enterprise.exe --quiet --wait --norestart
     ```
@@ -222,7 +225,7 @@ Quando você instala com base em um layout, o conteúdo instalado é adquirido d
 
 Se você tiver usado o parâmetro `--wait`, dependendo do resultado da operação, a variável de ambiente `%ERRORLEVEL%` será definida como um dos seguintes valores:
 
-  | **Valor** | **Resultado** |
+  | **Valor** | **Result** |
   | --------- | ---------- |
   | 0 | A operação foi concluída com êxito |
   | 3010 | A operação foi concluída com êxito, mas a instalação requer a reinicialização antes de ser usada |
@@ -270,6 +273,7 @@ Também temos outras opções de suporte disponíveis. Para obter uma lista dela
 
 * [Atualizar uma instalação em rede do Visual Studio](update-a-network-installation-of-visual-studio.md)
 * [Atualizações de controle para implantações do Visual Studio com base em rede](controlling-updates-to-visual-studio-deployments.md)
+* [Ciclo de vida e manutenção do produto Visual Studio](/visualstudio/releases/2019/servicing/)
 * [Guia do administrador do Visual Studio](visual-studio-administrator-guide.md)
 * [Usar parâmetros de linha de comando para instalar o Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [IDs de carga de trabalho e de componente do Visual Studio](workload-and-component-ids.md)
+* [Carga de trabalho do Visual Studio e IDs do componente](workload-and-component-ids.md)

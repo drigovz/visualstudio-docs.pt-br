@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6a72f78e89af41509711c94a00c8ab11b11fc549
-ms.sourcegitcommit: b6177ce198c7c5a00030604c9d4faa735405d5df
+ms.openlocfilehash: 006a3fa3d41799a87449b8f9e111ca341a698bf5
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/04/2019
-ms.locfileid: "59018208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62935406"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>Ferramentas para detectar e gerenciar instâncias do Visual Studio
 
@@ -39,11 +39,12 @@ Além disso, a [API de Configuração de Instalação](<xref:Microsoft.VisualStu
 
 ## <a name="using-vswhereexe"></a>Usar o vswhere.exe
 
-`vswhere.exe` é automaticamente incluído no Visual Studio (a partir do Visual Studio 2017 versão 15.2 e posteriores), ou você pode baixá-lo da [página de versões do vswhere](https://github.com/Microsoft/vswhere/releases). Use o `vswhere -?` para obter informações de ajuda sobre a ferramenta. Como exemplo, este comando mostra todas as versões do Visual Studio, incluindo versões mais antigas do produto e pré-lançamentos e gera os resultados no formato JSON:
+`vswhere.exe` é automaticamente incluído no Visual Studio (a partir do Visual Studio 2017 versão 15.2 e posteriores), ou você pode baixá-lo [da página de versões do vswhere](https://github.com/Microsoft/vswhere/releases). Use o `vswhere -?` para obter informações de ajuda sobre a ferramenta. Como exemplo, este comando mostra todas as versões do Visual Studio, incluindo versões mais antigas do produto e pré-lançamentos e gera os resultados no formato JSON:
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+
 ::: moniker range="vs-2017"
 
 > [!TIP]
@@ -64,6 +65,7 @@ Como essas entradas não são armazenadas no Registro global, há instruções e
 1. Selecione o nó `HKEY_LOCAL_MACHINE`.
 
 1. No menu principal do Regedit, selecione **Arquivo** > **Carregar Hive...** e selecione o arquivo de Registro privado, que é armazenado na pasta **AppData\Local**. Por exemplo:
+
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
    ```
