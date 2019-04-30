@@ -14,12 +14,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e105ef33202781dcf3a2f82706827156e76548eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 560ab40811bc53c97e7097e510144d62aeddfbb2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084330"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421822"
 ---
 # <a name="just-my-code"></a>Apenas Meu Código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,13 +32,13 @@ Os desenvolvedores que usam as linguagens do .NET Framework estão familiarizado
  ![Habilitar apenas meu código na caixa de diálogo Opções](../debugger/media/dbg-justmycode-options.png "DBG_JustMyCode_Options")  
   
 > [!NOTE]
->  O **habilitar apenas meu código** configuração é uma configuração global que é aplicada a todos os projetos do Visual Studio em todos os idiomas.  
+> O **habilitar apenas meu código** configuração é uma configuração global que é aplicada a todos os projetos do Visual Studio em todos os idiomas.  
   
 ### <a name="BKMK_Override_call_stack_filtering"></a> Substituir filtragem da pilha de chamadas  
  Em exibições da pilha de chamadas, como as janelas pilha de chamadas e tarefas, apenas meu código recolhe o código de não usuário em um quadro anotado rotulado `[External Code]`. Para exibir os quadros recolhidos, escolha **Mostrar código externo** no menu de contexto da pilha de chamadas exibição.  
   
 > [!NOTE]
->  O **Mostrar código externo** configuração é salva para o criador de perfil do usuário atual. Ela é aplicada a todos os projetos em todas as linguagens que são abertos pelo usuário.  
+> O **Mostrar código externo** configuração é salva para o criador de perfil do usuário atual. Ela é aplicada a todos os projetos em todas as linguagens que são abertos pelo usuário.  
   
 ## <a name="BKMK__NET_Framework_Just_My_Code"></a> Apenas meu código do .NET framework  
   

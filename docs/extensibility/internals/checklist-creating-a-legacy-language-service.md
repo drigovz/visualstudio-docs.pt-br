@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0af3634c2aeb851dab580922f8c282824f41626
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7037b49763d4fda844b7692052935a4eee7f7107
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60075984"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420687"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>Lista de verificação: Criar um serviço de linguagem herdado
 A lista de verificação a seguir resume as etapas básicas que você deve executar para criar um serviço de linguagem para o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] editor de núcleo. Integre seu serviço de linguagem em [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você deve criar um avaliador de expressão de depuração. Para obter mais informações, consulte [escrever um avaliador de expressão de CLR](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md) na [extensibilidade do depurador do Visual Studio](../../extensibility/debugger/visual-studio-debugger-extensibility.md).
@@ -61,7 +61,7 @@ A lista de verificação a seguir resume as etapas básicas que você deve execu
     Comandos que devem ser tratados dependem os serviços que são fornecidos. Para obter mais informações, consulte [comandos importantes para a linguagem de filtros do serviço](../../extensibility/internals/important-commands-for-language-service-filters.md).
 
     > [!NOTE]
-    >  O <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> interface deve ser implementada no mesmo objeto como o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface.
+    > O <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> interface deve ser implementada no mesmo objeto como o <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> interface.
 
 - Conclusão da instrução
 

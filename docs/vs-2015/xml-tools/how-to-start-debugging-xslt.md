@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 186ca5857d949c7a7a8c90e3e5ec8770705e19cc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e3067b86c7474858379a26803e6809b1c21f8d21
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433088"
 ---
 # <a name="how-to-start-debugging-xslt"></a>Como: Iniciar a depuração XSLT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ O depurador XSLT pode ser usado para depurar uma folha de estilos XSLT ou um apl
  Você também pode entrar em XSLT ao depurar um aplicativo. Quando você pressiona a tecla F11 em uma chamada de <xref:System.Xml.Xsl.XslCompiledTransform.Transform%2A?displayProperty=fullName> , o depurador pode entrar no código XSLT.  
   
 > [!NOTE]
->  Entrar em XSLT da classe de <xref:System.Xml.Xsl.XslTransform> não é suportado. A classe de <xref:System.Xml.Xsl.XslCompiledTransform> é o único processador XSLT que suporte em avançar XSLT a depuração.  
+> Entrar em XSLT da classe de <xref:System.Xml.Xsl.XslTransform> não é suportado. A classe de <xref:System.Xml.Xsl.XslCompiledTransform> é o único processador XSLT que suporte em avançar XSLT a depuração.  
   
 #### <a name="to-start-debugging-an-xslt-application"></a>Para iniciar a depuração de um aplicativo XSLT  
   

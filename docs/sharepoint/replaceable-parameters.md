@@ -14,12 +14,12 @@ author: John-Hart
 ms.author: johnhart
 manager: jillfra
 ms.workload: office
-ms.openlocfilehash: d85e125ee09d459d23b3b709f58d5af43e76e984
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 165ef1256a0150e0942d85c4f876c8b3f5e15c72
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56611855"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422911"
 ---
 # <a name="replaceable-parameters"></a>Parâmetros substituíveis
   Parâmetros substituíveis, ou *tokens*, pode ser usado em arquivos de projeto para fornecer valores para os itens de solução do SharePoint cujos valores reais não são conhecidos em tempo de design. Elas são semelhantes em função para o padrão [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] tokens de modelo. Para obter mais informações, consulte [parâmetros de modelo](../ide/template-parameters.md).
@@ -86,7 +86,7 @@ ms.locfileid: "56611855"
   No entanto, você pode, adicionar extensões de arquivo adicionais à lista. Adicionar um `<TokenReplacementFileExtensions>` elemento para qualquer PropertyGroup no arquivo de projeto do SharePoint que é definido antes do \<importação > do arquivo de destinos do SharePoint.
 
 > [!NOTE]
->  Como a substituição de token ocorre depois que um projeto é compilado, você não deve adicionar extensões de arquivo para tipos de arquivos que são compilados, como *. CS*, *. vb* ou *. resx*. Tokens são substituídos somente em arquivos que não são compilados.
+> Como a substituição de token ocorre depois que um projeto é compilado, você não deve adicionar extensões de arquivo para tipos de arquivos que são compilados, como *. CS*, *. vb* ou *. resx*. Tokens são substituídos somente em arquivos que não são compilados.
 
  Por exemplo, para adicionar as extensões de nome de arquivo (*.myextension* e *.yourextension*) à lista de extensões de nome de arquivo de substituição de token, adicione o seguinte a um projeto (*. csproj* ) arquivo:
 

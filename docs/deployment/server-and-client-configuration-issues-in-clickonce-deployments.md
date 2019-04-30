@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 85c3e70fd1d88bfa82d1aa55fe27505414986415
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 5be4e6546d5900fbd3274ab1eb8d55622fb2c58b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59654081"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406780"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuração de servidor e cliente em implantações do ClickOnce
 Se você usar os serviços de informações da Internet (IIS) no Windows Server, e sua implantação contém um tipo de arquivo que o Windows não reconhecem, como um arquivo do Microsoft Word, o IIS se recusará a transmitir esse arquivo e sua implantação não terá êxito.
@@ -57,7 +57,7 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
  Atualmente, [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] instalações iniciará somente se a URL para o manifesto de implantação é aberta usando o Internet Explorer. Uma implantação cuja URL é iniciado a partir de outro aplicativo, como o Microsoft Office Outlook, será iniciado com êxito apenas se o Internet Explorer está definido como o navegador da Web padrão.
 
 > [!NOTE]
->  Mozilla Firefox é suportado se o provedor de implantação não está em branco ou a extensão do Assistente do Microsoft .NET Framework está instalada. Essa extensão é empacotada com o .NET Framework 3.5 SP1. Para obter suporte XBAP, o plug-in de NPWPF é ativado quando necessário.
+> Mozilla Firefox é suportado se o provedor de implantação não está em branco ou a extensão do Assistente do Microsoft .NET Framework está instalada. Essa extensão é empacotada com o .NET Framework 3.5 SP1. Para obter suporte XBAP, o plug-in de NPWPF é ativado quando necessário.
 
 ## <a name="activate-clickonce-applications-through-browser-scripting"></a>Ativar aplicativos ClickOnce por meio de scripts de navegador
  Se você tiver desenvolvido uma página da Web personalizada que inicia um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo usando o script ativo, você pode achar que o aplicativo não será iniciado em alguns computadores. Internet Explorer contém uma configuração chamada **aviso automático para downloads de arquivo**, que afeta esse comportamento. Essa configuração está disponível na **segurança** guia no seu **opções** menu que afeta esse comportamento. Ele é chamado **aviso automático para downloads de arquivo**, e ele é listado sob os **Downloads** categoria. A propriedade é definida como **habilitar** por padrão para páginas da Web de intranet e para **desabilitar** por padrão para páginas da Web da Internet. Quando essa configuração é definida como **desabilitar**, qualquer tentativa de ativar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo por meio de programação (por exemplo, atribuindo sua URL para o `document.location` propriedade) serão bloqueados. Nestas circunstâncias, os usuários podem iniciar aplicativos por meio de um download iniciado pelo usuário, por exemplo, ao clicar em um hiperlink definido como a URL do aplicativo.
@@ -75,7 +75,7 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
 ```
 
 > [!NOTE]
->  Você pode fazer com que a autenticação NTLM (NT desafio-resposta) funcionará se o site solicita as credenciais que não seja de suas credenciais padrão e, na caixa de diálogo de segurança, clique em **Okey** quando for perguntado se você quiser salvar fornecido credenciais para sessões futuras. No entanto, essa solução alternativa não funcionará para a autenticação básica.
+> Você pode fazer com que a autenticação NTLM (NT desafio-resposta) funcionará se o site solicita as credenciais que não seja de suas credenciais padrão e, na caixa de diálogo de segurança, clique em **Okey** quando for perguntado se você quiser salvar fornecido credenciais para sessões futuras. No entanto, essa solução alternativa não funcionará para a autenticação básica.
 
 ## <a name="use-third-party-web-servers"></a>Usar servidores de Web de terceiros
  Se você estiver implantando um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo de um servidor Web que não seja o IIS, você poderá ter um problema se o servidor está retornando o tipo de conteúdo incorreto para a chave [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] arquivos, como o manifesto de implantação e o manifesto do aplicativo. Para resolver esse problema, consulte a Ajuda da seu servidor Web documentação sobre como adicionar novos tipos de conteúdo para o servidor e certifique-se de que todos os mapeamentos de extensão de nome arquivo listado na tabela a seguir estão em vigor.

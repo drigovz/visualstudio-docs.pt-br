@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ddba23ecb6007ff3b678932b118208742d1f0d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b6f701e3962a25e7239c829d409a3ad69a1833a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109498"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419604"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>Como: Instalar assemblies de interoperabilidade primários do Office
   Instale os assemblies de interoperabilidade primária (PIAs) do Microsoft Office ao instalar o Office.
@@ -30,7 +30,7 @@ ms.locfileid: "60109498"
 2. Instale o Microsoft Office e certifique-se de que o **suporte à programação do .NET** está selecionado para os aplicativos que você deseja estender (este recurso está incluído na instalação padrão).
 
     > [!WARNING]
-    >  Por padrão, os PIAs são embutidos em sua solução quando você compila para que você não precise distribuir PIAs aos usuários como um pré-requisito para usar o suplemento do VSTO ou personalização.
+    > Por padrão, os PIAs são embutidos em sua solução quando você compila para que você não precise distribuir PIAs aos usuários como um pré-requisito para usar o suplemento do VSTO ou personalização.
 
 ## <a name="see-also"></a>Consulte também
 - [Assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md)

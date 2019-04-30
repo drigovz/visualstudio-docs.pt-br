@@ -20,14 +20,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 39d482b6e2b0e2cdd9fce553a1cb11b1b27e9467
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 60173bd8a48b067757bbccfad42a2feaf5633082
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628098"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405790"
 ---
-# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Passo a passo: implantar um aplicativo ClickOnce manualmente
+# <a name="walkthrough-manually-deploy-a-clickonce-application"></a>Passo a passo: Implantar manualmente um aplicativo ClickOnce
 Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo ou você precisa usar recursos de implantação avançada, como implantação de aplicativos confiáveis, você deve usar o *Mage.exe* ferramenta de linha de comando para criar o seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] manifestos. Este passo a passo descreve como criar uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantação usando a versão de linha de comando (*Mage.exe*) ou a versão gráfica (*MageUI.exe*) da geração de manifesto e Ferramenta de edição.
 
 ## <a name="prerequisites"></a>Pré-requisitos
@@ -43,7 +43,7 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
 
 - Determine como a implantação será distribuída.
 
-   As opções de distribuição incluem: Web, compartilhamento de arquivos ou de CD. Para obter mais informações, consulte [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md).
+   As opções de distribuição incluem: Web, compartilhamento de arquivos ou CD. Para obter mais informações, consulte [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md).
 
 - Determine se o aplicativo requer um nível elevado de confiança.
 
@@ -51,10 +51,10 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
 
 - Obtenha um certificado Authenticode.
 
-   Você deve entrar sua implantação com um certificado Authenticode. Você pode gerar um certificado de teste usando o Visual Studio, *MageUI.exe*, ou *MakeCert.exe* e *Pvk2Pfx.exe* ferramentas, ou você pode obter um certificado de um certificado Autoridade (CA). Se você optar por usar a implantação de aplicativos confiáveis, você também deve executar uma única instalação do certificado em todos os computadores cliente. Para obter mais informações, consulte [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md).
+   Você deve entrar sua implantação com um certificado Authenticode. Você pode gerar um certificado de teste usando o Visual Studio, *MageUI.exe*, ou *MakeCert.exe* e *Pvk2Pfx.exe* ferramentas, ou você pode obter um certificado de um certificado Autoridade (CA). Se você optar por usar a implantação de aplicativos confiáveis, você também deve executar uma única instalação do certificado em todos os computadores cliente. Para saber mais, veja [Visão geral da implantação de aplicativos confiáveis](../deployment/trusted-application-deployment-overview.md).
 
   > [!NOTE]
-  >  Você também pode entrar sua implantação com um certificado CNG que você pode obter de uma autoridade de certificação.
+  > Você também pode entrar sua implantação com um certificado CNG que você pode obter de uma autoridade de certificação.
 
 - Certifique-se de que o aplicativo não tem um manifesto com informações do UAC.
 
@@ -73,7 +73,7 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
 2. No diretório de implantação que você acabou de criar, crie um subdiretório de versão. Se essa for a primeira vez que você está implantando o aplicativo, nomeie o subdiretório de versão **1.0.0.0**.
 
    > [!NOTE]
-   >  A versão da sua implantação pode ser distinta da versão do seu aplicativo.
+   > A versão da sua implantação pode ser distinta da versão do seu aplicativo.
 
 3. Copie todos os arquivos de aplicativo para o subdiretório de versão, incluindo arquivos executáveis, assemblies, recursos e arquivos de dados. Se necessário, você pode criar subpastas adicionais que contêm arquivos adicionais.
 
@@ -86,7 +86,7 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
    ```
 
    > [!NOTE]
-   >  Certifique-se de incluir o ponto (.) após o `-FromDirectory` opção, que indica o diretório atual. Se você não incluir o ponto, você deve especificar o caminho para os arquivos do aplicativo.
+   > Certifique-se de incluir o ponto (.) após o `-FromDirectory` opção, que indica o diretório atual. Se você não incluir o ponto, você deve especificar o caminho para os arquivos do aplicativo.
 
 6. Assinar o manifesto de aplicativo com seu certificado Authenticode. Substitua *mycert* com o caminho para o arquivo de certificado. Substitua *passwd* com a senha para o arquivo de certificado.
 
@@ -121,7 +121,7 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
 2. No diretório de implantação que você acabou de criar, crie um subdiretório de versão. Se essa for a primeira vez que você está implantando o aplicativo, nomeie o subdiretório de versão **1.0.0.0**.
 
    > [!NOTE]
-   >  A versão da sua implantação é provavelmente diferente da versão do seu aplicativo.
+   > A versão da sua implantação é provavelmente diferente da versão do seu aplicativo.
 
 3. Copie todos os arquivos de aplicativo para o subdiretório de versão, incluindo arquivos executáveis, assemblies, recursos e arquivos de dados. Se necessário, você pode criar subpastas adicionais que contêm arquivos adicionais.
 

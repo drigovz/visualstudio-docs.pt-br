@@ -12,12 +12,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0accb5165b1aded6318012ffb07755a63222283c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e39168e36e9540ec8c5e23a9030d996b81c4097c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923806"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431725"
 ---
 # <a name="how-to-search-for-a-process-in-processes-view"></a>Como: Pesquise um processo na exibição de processos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Você pode procurar um processo específico na exibição de processos por meio 
 4. Limpe todos os campos para o qual você deseja especificar valores.  
   
    > [!TIP]
-   >  Para localizar todos os processos pertencentes a um módulo, desmarque a **processo** caixa e digite o nome do módulo na **módulo** caixa. Em seguida, use **Localizar próximo** para continuar a pesquisa de processos.  
+   > Para localizar todos os processos pertencentes a um módulo, desmarque a **processo** caixa e digite o nome do módulo na **módulo** caixa. Em seguida, use **Localizar próximo** para continuar a pesquisa de processos.  
   
 5. Escolher **para cima** ou **para baixo** para a direção inicial da pesquisa.  
   

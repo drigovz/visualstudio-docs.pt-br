@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 071077c54abe3126febdc098b6860a65ce0fd792
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 42fdbcb3da2e2b3c335b55ca66449d6264c2cf16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041698"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63407609"
 ---
 # <a name="how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications"></a>Como: Adicionar um fornecedor confiável a um computador cliente para aplicativos ClickOnce
 Com a implantação de aplicativos confiáveis, você pode configurar computadores cliente para que seu [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos executados com um nível mais alto de confiança, sem avisar o usuário. Os procedimentos a seguir mostram como usar a ferramenta de linha de comando CertMgr.exe para adicionar um certificado de editor para o repositório de editores confiáveis em um computador cliente.
@@ -28,7 +28,7 @@ Com a implantação de aplicativos confiáveis, você pode configurar computador
  Os comandos usados variam um pouco dependendo se a autoridade de certificação (CA) que emitiu o certificado for parte de raiz confiável de um cliente. Se um computador de cliente do Windows fizer parte de um domínio, ele conterá, em uma lista, autoridades de certificação que são considerados raízes confiáveis. Geralmente, essa lista é configurada pelo administrador do sistema. Se seu certificado foi emitido por uma dessas raízes confiáveis ou por uma autoridade de certificação que se encadeie a um dessas raízes confiáveis, você pode adicionar o certificado ao repositório de raiz confiável do cliente. Se, por outro lado, o seu certificado não foi emitido por uma dessas raízes confiáveis, você deve adicionar o certificado para o repositório de raiz confiável do cliente e armazenamento de fornecedor confiável.
 
 > [!NOTE]
->  Você deve adicionar certificados dessa maneira em cada computador cliente para o qual você planeja implantar uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo que requer permissões elevadas. Adicione os certificados manualmente ou por meio de um aplicativo que você distribuir aos seus clientes. Você só precisará configurar esses computadores de uma vez, após o qual você pode implantar qualquer quantidade de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos assinados com o mesmo certificado.
+> Você deve adicionar certificados dessa maneira em cada computador cliente para o qual você planeja implantar uma [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo que requer permissões elevadas. Adicione os certificados manualmente ou por meio de um aplicativo que você distribuir aos seus clientes. Você só precisará configurar esses computadores de uma vez, após o qual você pode implantar qualquer quantidade de [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos assinados com o mesmo certificado.
 
  Você também pode adicionar um certificado para um armazenamento de forma programática, usando o <xref:System.Security.Cryptography.X509Certificates.X509Store> classe.
 

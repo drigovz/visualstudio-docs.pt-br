@@ -14,12 +14,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 107b42500bbe2daed0d03d3e23e4817c9c3b3fc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 29047f53b08472a0ff65960bfe694789f7f7cbe1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089920"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430503"
 ---
 # <a name="how-to-manage-editor-windows"></a>Como: Gerenciar o Windows de Editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60089920"
 Você pode trabalhar com o código em vários locais ao mesmo tempo. Faça isso dividindo uma janela do Editor ou abrindo várias instâncias de janelas do editor.  
   
 > [!NOTE]
->  Nem todas as janelas do editor dão suporte a várias instâncias.  
+> Nem todas as janelas do editor dão suporte a várias instâncias.  
   
 ## <a name="splitting-an-editor-window"></a>Dividir uma janela do editor  
  Uma instância de uma janela do editor pode ser dividida em dois modos de exibição separados para facilitar a edição.  
@@ -41,7 +41,7 @@ Você pode trabalhar com o código em vários locais ao mesmo tempo. Faça isso 
      A área de edição é dividida em dois painéis separados por uma barra divisória. Você pode rolar esses painéis de forma independente para exibir e editar as diferentes partes do documento ativo ao mesmo tempo. Todas as alterações feitas em um painel são refletidas no outro.  
   
     > [!TIP]
-    >  Para tornar um painel maior do que o outro, arraste a barra de divisão para cima ou para baixo.  
+    > Para tornar um painel maior do que o outro, arraste a barra de divisão para cima ou para baixo.  
   
 #### <a name="to-return-to-single-pane-view"></a>Para retornar ao modo de exibição de painel único  
   

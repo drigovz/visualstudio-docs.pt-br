@@ -16,12 +16,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a4cbc68e84c6593ca61be9234fcec3e88f3f333
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 9603c8d7955a34ae42dd7339a708c12441e98634
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56631868"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418660"
 ---
 # <a name="develop-a-legacy-language-service"></a>Desenvolver um serviço de linguagem herdado
 Links essas seção para tópicos que ajudam você a criar um serviço de linguagem herdada.
@@ -29,7 +29,7 @@ Links essas seção para tópicos que ajudam você a criar um serviço de lingua
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar um serviço de linguagem, consulte [extensões de serviços do Editor e linguagem](../../extensibility/editor-and-language-service-extensions.md).
 
 > [!NOTE]
->  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
+> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
 
 ## <a name="in-this-section"></a>Nesta seção
 - [Modelo de um serviço de linguagem herdado](../../extensibility/internals/model-of-a-legacy-language-service.md)

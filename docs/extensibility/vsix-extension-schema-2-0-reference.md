@@ -11,18 +11,18 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a029345afb8b54c85d35e500e4ada48c02c54ff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7cf2840c22bcddb9090cb078be6a8ad53d1ca1aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411135"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>Referência de esquema 2.0 de extensão do VSIX
 Um arquivo de manifesto de implantação do VSIX descreve o conteúdo de um pacote VSIX. O formato de arquivo é regido por um esquema. A versão 2.0 desse esquema dá suporte a adição de atributos e tipos personalizados.  O esquema do manifesto é extensível. O carregador de manifesto ignora elementos XML e atributos que não entende.
 
 > [!IMPORTANT]
->  Visual Studio 2015 pode carregar arquivos VSIX nos formatos de Visual Studio 2010, Visual Studio 2012 ou Visual Studio 2013.
+> Visual Studio 2015 pode carregar arquivos VSIX nos formatos de Visual Studio 2010, Visual Studio 2012 ou Visual Studio 2013.
 
 ## <a name="package-manifest-schema"></a>Esquema de manifesto de pacote
  O elemento raiz do arquivo manifesto XML é `<PackageManifest>`. Ele tem um único atributo `Version`, que é a versão do formato de manifesto. Se forem feitas alterações principais para o formato, o formato da versão é alterado. Este artigo descreve a versão do formato de manifesto 2.0, que é especificado no manifesto, definindo o `Version` de atributo para o valor da versão = "2.0".

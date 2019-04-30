@@ -20,12 +20,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8e95a2170bd90fbd2610cefb8ff986111ff0480a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 27d4b1ec935444009be1f85f4c1ad95f9da91f68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107067"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425506"
 ---
 # <a name="pass-data-between-forms"></a>Passar dados entre formulários
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60107067"
 Este passo a passo fornece instruções detalhadas de como passar os dados de um formulário para outro. Usando as tabelas customers e orders do Northwind, um formulário que os usuários selecionem um cliente e um segundo formulário exibe os pedidos do cliente selecionado. Este passo a passo mostra como criar um método no segundo formulário que recebe dados do primeiro formulário.  
   
 > [!NOTE]
->  Este passo a passo demonstra apenas uma maneira de passar dados entre formulários. Há outras opções para passar dados para um formulário, incluindo a criação de um segundo construtor para receber dados, ou criando uma propriedade pública que pode ser definida com os dados do primeiro formulário.  
+> Este passo a passo demonstra apenas uma maneira de passar dados entre formulários. Há outras opções para passar dados para um formulário, incluindo a criação de um segundo construtor para receber dados, ou criando uma propriedade pública que pode ser definida com os dados do primeiro formulário.  
   
  As tarefas ilustradas neste passo a passo incluem:  
   
@@ -142,7 +142,7 @@ Este passo a passo fornece instruções detalhadas de como passar os dados de um
     ```  
   
     > [!NOTE]
-    >  Verifique a sintaxe de parâmetro correta para o seu banco de dados. Por exemplo, no Microsoft Access, a cláusula WHERE seria algo como: `WHERE CustomerID = ?`.  
+    > Verifique a sintaxe de parâmetro correta para o seu banco de dados. Por exemplo, no Microsoft Access, a cláusula WHERE seria algo como: `WHERE CustomerID = ?`.  
   
 6. Clique em **Avançar**.  
   

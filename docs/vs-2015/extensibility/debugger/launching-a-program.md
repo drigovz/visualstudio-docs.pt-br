@@ -11,12 +11,12 @@ ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cd23fdc3baf4afd6dde50a4310abf1b5c1841fd7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b54250a54960f346f60c5d668755fb5d28ab376e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927729"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430203"
 ---
 # <a name="launching-a-program"></a>Iniciando um programa
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -32,12 +32,12 @@ Os usuários que desejam depurar um programa podem pressionar F5 para executar o
     Se a DE não for especificada, a porta chama o sistema operacional para iniciar o programa, o que faz com que o ambiente de tempo de execução do programa a ser carregado.  
   
    > [!NOTE]
-   >  Se a DE é usada para iniciar um programa, é provável que o mesmo DE será anexado ao programa.  
+   > Se a DE é usada para iniciar um programa, é provável que o mesmo DE será anexado ao programa.  
   
 3. Dependendo se a porta ou o DE iniciado o programa, o DE ou no ambiente de tempo de execução, em seguida, cria uma descrição do programa ou nó e notifica a porta que o programa está em execução.  
   
    > [!NOTE]
-   >  É recomendável que o ambiente de tempo de execução criar o nó de programa, porque o nó do programa é uma representação leve de um programa que pode ser depurado. Não é necessário para carregar um inteiro DE apenas para criar e registrar um nó de programa. Se a Alemanha é projetada ser executado no processo do IDE, mas nenhum IDE está realmente em execução, é preciso haver um componente que pode adicionar um nó de programa para a porta.  
+   > É recomendável que o ambiente de tempo de execução criar o nó de programa, porque o nó do programa é uma representação leve de um programa que pode ser depurado. Não é necessário para carregar um inteiro DE apenas para criar e registrar um nó de programa. Se a Alemanha é projetada ser executado no processo do IDE, mas nenhum IDE está realmente em execução, é preciso haver um componente que pode adicionar um nó de programa para a porta.  
   
    O programa criado recentemente, juntamente com outros programas, relacionados ou não relacionados, iniciado ou anexados a partir do mesmo IDE, compor uma sessão de depuração.  
   

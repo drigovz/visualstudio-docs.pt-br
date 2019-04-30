@@ -9,12 +9,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c392323905676706835a94bd86fcd53e3f6b8cc7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 69ca24f45384ef650c4a692a8ec0afc079f19bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054775"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425368"
 ---
 # <a name="query-datasets"></a>Consultar conjuntos de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Para procurar registros específicos em um conjunto de dados, use o método Find
  Dentro de um conjunto de dados, nomes de coluna e tabela diferenciam maiusculas de minúsculas por padrão — ou seja, uma tabela em um conjunto de dados chamado "Clientes" pode também ser referida como "clientes". Isso coincide com as convenções de nomenclatura em vários bancos de dados, incluindo o SQL servidor SQL Server, o comportamento padrão é que os nomes dos elementos de dados não podem ser diferenciados apenas por maiusculas.  
   
 > [!NOTE]
->  Ao contrário de conjuntos de dados, documentos XML diferenciam maiusculas de minúsculas, portanto, os nomes de elementos de dados definidos em esquemas diferenciam maiusculas de minúsculas. Por exemplo, o protocolo de esquema permite que o esquema definir uma tabela chamada "Clientes" e uma tabela diferente chamada "clientes". Isso pode resultar em conflitos de nome quando um esquema que contém elementos que diferem somente maiusculas é usado para gerar uma classe de conjunto de dados.  
+> Ao contrário de conjuntos de dados, documentos XML diferenciam maiusculas de minúsculas, portanto, os nomes de elementos de dados definidos em esquemas diferenciam maiusculas de minúsculas. Por exemplo, o protocolo de esquema permite que o esquema definir uma tabela chamada "Clientes" e uma tabela diferente chamada "clientes". Isso pode resultar em conflitos de nome quando um esquema que contém elementos que diferem somente maiusculas é usado para gerar uma classe de conjunto de dados.  
   
  Diferenciar maiusculas de minúsculas, no entanto, podem ser um fator em como os dados são interpretados no conjunto de dados. Por exemplo, se você filtrar dados em uma tabela de conjunto de dados, os critérios de pesquisa podem retornar resultados diferentes dependendo se a comparação não diferencia maiusculas de minúsculas. Você pode controlar a diferenciação de filtragem, pesquisa e classificação definindo o conjunto de dados <xref:System.Data.DataSet.CaseSensitive%2A> propriedade. Todas as tabelas no conjunto de dados herdam o valor dessa propriedade por padrão. (Você pode substituir essa propriedade para cada tabela individual, definindo a tabela <xref:System.Data.DataTable.CaseSensitive%2A> propriedade.)  
   

@@ -13,12 +13,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ccf761521d43e3f5ff9d12a4af7fbae4addcddc9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f956f492c3dc690ef2edb67d9a7c75e6c0108820
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433280"
 ---
 # <a name="customizing-element-creation-and-movement"></a>Personalizando a criação e o movimento de elementos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -72,9 +72,9 @@ Você pode permitir que um elemento a ser arrastado para outro, na caixa de ferr
    Por exemplo, você pode definir propriedades no elemento mesclado usando dados de seu novo local no modelo.  
   
 > [!NOTE]
->  Se você escrever código personalizado de mesclagem, ele afeta somente mesclagens que são executadas usando este EMD. Se não houver outros EMDs que a mesclagem do mesmo tipo de objeto, ou se não houver outro código personalizado que cria esses objetos sem usar o EMD, em seguida, eles não serão afetados pelo seu código personalizado de mesclagem.  
+> Se você escrever código personalizado de mesclagem, ele afeta somente mesclagens que são executadas usando este EMD. Se não houver outros EMDs que a mesclagem do mesmo tipo de objeto, ou se não houver outro código personalizado que cria esses objetos sem usar o EMD, em seguida, eles não serão afetados pelo seu código personalizado de mesclagem.  
 >   
->  Se você quiser garantir que um novo elemento ou um novo relacionamento sempre é processado por seu código personalizado, considere definir uma `AddRule` sobre a relação de incorporação e um `DeleteRule` na classe de domínio do elemento. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).  
+> Se você quiser garantir que um novo elemento ou um novo relacionamento sempre é processado por seu código personalizado, considere definir uma `AddRule` sobre a relação de incorporação e um `DeleteRule` na classe de domínio do elemento. Para obter mais informações, consulte [propagam alterações dentro do modelo de regras](../modeling/rules-propagate-changes-within-the-model.md).  
   
 ## <a name="example-defining-an-emd-without-custom-code"></a>Exemplo: Definindo uma EMD sem código personalizado  
  O exemplo a seguir permite aos usuários criar um elemento e um conector ao mesmo tempo, arrastando da caixa de ferramentas para uma forma existente. O exemplo adiciona uma EMD a definição de DSL. Antes dessa modificação, os usuários podem arrastar as ferramentas para o diagrama, mas não para formas existentes.  

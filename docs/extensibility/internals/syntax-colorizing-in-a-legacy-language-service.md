@@ -13,12 +13,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: f6c2ee578b0462ef23f0a4c2fe33f817454967bd
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: ab4cd40393efcf0e3b5f037d2f0818319b60c890
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56612108"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429901"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>Coloração de sintaxe em um serviço de linguagem herdado
 Colorização de sintaxe é um recurso que faz com que os diferentes elementos de uma linguagem de programação a ser exibido em um arquivo de origem em diferentes cores e estilos. Para dar suporte a esse recurso, você precisa fornecer um analisador ou um scanner que pode identificar os tipos de elementos léxicos ou tokens no arquivo. Muitas linguagens de distinguir as palavras-chave, delimitadores (por exemplo, parênteses ou chaves) e comentários por colori-los de maneiras diferentes.
@@ -26,7 +26,7 @@ Colorização de sintaxe é um recurso que faz com que os diferentes elementos d
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações, consulte [estender o Editor e os serviços de linguagem](../../extensibility/extending-the-editor-and-language-services.md).
 
 > [!NOTE]
->  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
+> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
 
 ## <a name="implementation"></a>Implementação
  Para dar suporte a colorização, a estrutura de pacote gerenciado (MPF) inclui o <xref:Microsoft.VisualStudio.Package.Colorizer> de classe que implementa o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> interface. Essa classe interage com um <xref:Microsoft.VisualStudio.Package.IScanner> para determinar o token e cores. Para obter mais informações sobre scanners, consulte [analisador de serviço de linguagem herdado e o Scanner](../../extensibility/internals/legacy-language-service-parser-and-scanner.md). O <xref:Microsoft.VisualStudio.Package.Colorizer> classe, em seguida, cada caractere do token com as informações de cores de marca e retorna essas informações para o editor exibindo o arquivo de origem.
@@ -37,10 +37,10 @@ Colorização de sintaxe é um recurso que faz com que os diferentes elementos d
  Para fornecer seus próprios itens de coloração personalizados, você deve substituir a <xref:Microsoft.VisualStudio.Package.LanguageService.GetItemCount%2A> e <xref:Microsoft.VisualStudio.Package.LanguageService.GetColorableItem%2A> método o <xref:Microsoft.VisualStudio.Package.LanguageService> classe. O primeiro método retorna o número de itens de coloração personalizados que dá suporte a seu serviço de linguagem e a segunda obtém o item de coloração personalizado por índice. Você criar a lista padrão de itens de coloração personalizados. No construtor do seu serviço de linguagem, tudo o que você precisa fazer é fornecer a cada item que pode ser colorido com um nome. Visual Studio identifica automaticamente o caso em que o usuário seleciona um conjunto de itens de coloração diferente. Esse nome é o que aparece na **fontes e cores** página de propriedades na **opções** caixa de diálogo (disponível no Visual Studio **ferramentas** menu) e determina a quais esse nome cor de que um usuário tiver substituído. As opções do usuário são armazenadas em cache no registro e acessadas pelo nome de cor. O **fontes e cores** página de propriedades lista todos os nomes de cor em ordem alfabética, portanto, você pode agrupar suas cores personalizadas, precedendo cada nome de cor com seu nome de idioma; por exemplo, "**TestLanguage - comentário**"e"**TestLanguage - palavra-chave**". Ou você pode agrupar seu itens de coloração por tipo, "**comentário (TestLanguage)**"e"**palavra-chave (TestLanguage)**". O agrupamento por nome de idioma é preferencial.
 
 > [!CAUTION]
->  É altamente recomendável que você inclua o nome do idioma no nome do item que pode ser colorido para evitar colisões com nomes existentes de item que pode ser colorido.
+> É altamente recomendável que você inclua o nome do idioma no nome do item que pode ser colorido para evitar colisões com nomes existentes de item que pode ser colorido.
 
 > [!NOTE]
->  Se você alterar o nome de uma das suas cores durante o desenvolvimento, você deve redefinir o cache que o Visual Studio criado na primeira vez em que suas cores foram acessadas. Você pode fazer isso executando o **redefinir o Hive Experimental** comando no menu de programa do SDK do Visual Studio.
+> Se você alterar o nome de uma das suas cores durante o desenvolvimento, você deve redefinir o cache que o Visual Studio criado na primeira vez em que suas cores foram acessadas. Você pode fazer isso executando o **redefinir o Hive Experimental** comando no menu de programa do SDK do Visual Studio.
 
  Observe que o primeiro item na sua lista de itens de coloração nunca é referenciado. O Visual Studio sempre fornece a cores de texto padrão e os atributos para aquele item. A maneira mais fácil de lidar com isso é fornecer um item que pode ser colorido de espaço reservado como o primeiro item.
 

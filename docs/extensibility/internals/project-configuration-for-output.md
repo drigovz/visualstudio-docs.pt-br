@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d030b4a59f2140b99df19e141f2d872c1e8fc394
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a7ac9c63a8524de17541a46f4fecb9e8d9a5ff69
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56616450"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63423298"
 ---
 # <a name="project-configuration-for-output"></a>Configuração de projeto para saída
 Cada configuração pode dar suporte a um conjunto de processos de compilação que produzir saída itens como arquivos de recurso ou executável. Esses itens de saída são particulares para o usuário e podem ser colocados em grupos que vinculam os tipos relacionados de saída, como arquivos executáveis (.exe,. dll,. lib) e arquivos de origem (. idl, arquivos. h).
@@ -25,7 +25,7 @@ Cada configuração pode dar suporte a um conjunto de processos de compilação 
  A construção desenvolvidos com a implementação de `IVsOutputGroup` permite que os projetos para saídas de grupo de acordo com o uso. Por exemplo, uma DLL pode ser agrupada com seu banco de dados do programa (PDB).
 
 > [!NOTE]
->  Um arquivo PDB contiver informações de depuração e ele é criado quando a opção 'Gerar informações de depuração' é especificada ao criar o arquivo. dll ou .exe. Geralmente, o arquivo. PDB é gerado para configuração de projeto de depuração somente.
+> Um arquivo PDB contiver informações de depuração e ele é criado quando a opção 'Gerar informações de depuração' é especificada ao criar o arquivo. dll ou .exe. Geralmente, o arquivo. PDB é gerado para configuração de projeto de depuração somente.
 
  O projeto deve retornar o mesmo número de grupos para cada configuração com suporte, mesmo que o número de saídas contido dentro de um grupo pode variar de uma configuração para a configuração. Por exemplo, Matt do projeto DLL pode incluir mattd.dll e mattd.pdb na configuração de depuração, mas apenas incluir matt.dll na configuração de varejo.
 

@@ -13,12 +13,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d5e3669ddaf9d8073038f0fa0c01c7e5a19a209d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f103a1239996e1f68fb6dae7a9f0a41f55ad858e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437097"
 ---
 # <a name="code-metrics-values"></a>Valores de métricas do código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ As métricas de código são um conjunto de medidas de software que fornecem aos
 - **A complexidade ciclomática** – mede a complexidade do código estrutural. Ele é criado pelo cálculo do número de diferentes caminhos de código no fluxo do programa. Um programa que tem o fluxo de controle complexo exigirá mais testes para obter boa cobertura do código e será menos capaz de manutenção.  
   
     > [!NOTE]
-    >  Em alguns casos, o cálculo da complexidade ciclomática de um método em [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] difere das versões anteriores. Para obter mais informações, consulte "Alterações no Visual Studio 2010 seção de código complexidade cálculos" de [solução de problemas de métricas de código](../code-quality/troubleshooting-code-metrics-issues.md).  
+    > Em alguns casos, o cálculo da complexidade ciclomática de um método em [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] difere das versões anteriores. Para obter mais informações, consulte "Alterações no Visual Studio 2010 seção de código complexidade cálculos" de [solução de problemas de métricas de código](../code-quality/troubleshooting-code-metrics-issues.md).  
   
 - **Profundidade de herança** – indica o número de definições de classe que estenda para a raiz da hierarquia de classe. Quanto mais a hierarquia mais difícil pode ser entender onde os campos e métodos particulares são definidos ou / e redefinido.  
   

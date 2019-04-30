@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89c4a4598b92096d968225f7420d46244aeca3dc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a2354df7027f3aa73f13e830b9a85895e54c920
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419292"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>Como: Armazenar e recuperar valores de datas em intervalos do Excel programaticamente
   Você pode armazenar e recuperar valores em um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle ou um objeto de intervalo do Excel nativo.
@@ -34,7 +34,7 @@ ms.locfileid: "60082900"
  Se você armazenar um valor de data que está em ou após 1/1/1900 em um intervalo usando ferramentas de desenvolvimento do Office no Visual Studio, ele é armazenado no formato OLE Automation (OA). Você deve usar o <xref:System.DateTime.FromOADate%2A> método para recuperar o valor de datas OLE Automation (OA). Se a data for anterior a 1/1/1900, ele é armazenado como uma cadeia de caracteres.
 
 > [!NOTE]
->  Datas do Excel são diferentes das datas de automação OLE para os primeiros dois meses de 1900. Também há diferenças se o **sistema de data 1904** opção estiver marcada. Os exemplos de código a seguir aborda essas diferenças.
+> Datas do Excel são diferentes das datas de automação OLE para os primeiros dois meses de 1900. Também há diferenças se o **sistema de data 1904** opção estiver marcada. Os exemplos de código a seguir aborda essas diferenças.
 
 ## <a name="use-a-namedrange-control"></a>Usar um controle NamedRange
 

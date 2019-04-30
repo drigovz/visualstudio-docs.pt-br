@@ -14,12 +14,12 @@ ms.assetid: 19757068-bdaa-4e7e-85d6-f8ce5026a859
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ca01f28b7f0ad7c1e4bad5ee13e6e21a5f2f7e2f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 888ffbf255816fb04d84cb72219df2cfeae73f45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431645"
 ---
 # <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>Como: Expor listas de símbolos fornecidos pela biblioteca ao Gerenciador de Objetos
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,9 +29,9 @@ As ferramentas de navegação de símbolo **Class View**, **Pesquisador de objet
  Uma biblioteca pode receber solicitações de dados quando a ferramenta é invocada, o nó é expandido ou a exibição seja atualizada. Quando uma ferramenta de navegação de símbolo é invocada pela primeira vez, o Gerenciador de objetos solicita a biblioteca para fornecer a lista de nível superior. Quando o usuário expande um nó da lista, a biblioteca fornece uma lista de filhos sob aquele nó. Cada consulta do Gerenciador de objeto contém um índice do item de interesse. Para exibir uma nova lista, o Gerenciador de objetos deve determinar quantos itens estão na lista, o tipo de itens, seus nomes, acessibilidade e outras propriedades.  
   
 > [!NOTE]
->  Os exemplos de código gerenciado a seguir demonstram como fornecer listas de símbolos por meio de implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. O Gerenciador de objeto chama os métodos nessa interface e usa os dados obtidos para preencher ou atualizar as ferramentas de navegação de símbolo.  
+> Os exemplos de código gerenciado a seguir demonstram como fornecer listas de símbolos por meio de implementar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> interface. O Gerenciador de objeto chama os métodos nessa interface e usa os dados obtidos para preencher ou atualizar as ferramentas de navegação de símbolo.  
 >   
->  Para implementação de provedor de símbolo de código nativo, use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interface.  
+> Para implementação de provedor de símbolo de código nativo, use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interface.  
   
 ## <a name="providing-lists-of-symbols-to-the-object-manager"></a>Fornecendo listas de símbolos para o Gerenciador de objetos  
   

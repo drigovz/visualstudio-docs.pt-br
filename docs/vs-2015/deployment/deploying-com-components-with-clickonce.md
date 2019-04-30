@@ -19,12 +19,12 @@ caps.latest.revision: 14
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 63328af2211f18fe553c32b018ed0a8422a1857f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 282945f473f2799b92b24321383190ca38557cbc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066345"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422765"
 ---
 # <a name="deploying-com-components-with-clickonce"></a>Implantando componentes do COM com o ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -65,7 +65,7 @@ Implantação de componentes legados COM tradicionalmente tem sido uma tarefa di
 2. No **novo projeto** caixa de diálogo, selecione o **Visual Basic** nó e selecione uma **ActiveX DLL** projeto. Na caixa **Nome**, digite `VB6Hello`.  
   
     > [!NOTE]
-    >  Somente tipos de projeto ActiveX DLL e o controle ActiveX são compatíveis com o COM sem registro; Não há suporte para tipos de projeto EXE ActiveX e documento ActiveX.  
+    > Somente tipos de projeto ActiveX DLL e o controle ActiveX são compatíveis com o COM sem registro; Não há suporte para tipos de projeto EXE ActiveX e documento ActiveX.  
   
 3. Na **Gerenciador de soluções**, clique duas vezes em **Class1.vb** para abrir o editor de texto.  
   
@@ -80,7 +80,7 @@ Implantação de componentes legados COM tradicionalmente tem sido uma tarefa di
 5. Crie o componente. Dos **construir** menu, clique em **compilar solução**.  
   
 > [!NOTE]
->  COM sem registro dá suporte somente DLLs e COM controles de tipos de projeto. É possível usar EXEs com sem registro COM.  
+> COM sem registro dá suporte somente DLLs e COM controles de tipos de projeto. É possível usar EXEs com sem registro COM.  
   
  Agora você pode criar um aplicativo baseado em Windows e adicione uma referência ao componente COM a ele.  
   
@@ -128,7 +128,7 @@ Implantação de componentes legados COM tradicionalmente tem sido uma tarefa di
    Agora, quando você pressionar F5, o aplicativo funciona conforme o esperado, mas ele está em execução em COM. sem registro Para provar isso, tente cancelar o registro do componente VB6Hello.dll e executando RegFreeComDemo1.exe fora do IDE do Visual Studio. Desta vez, quando o botão é clicado, ele ainda funcionará. Se você renomeie temporariamente o manifesto do aplicativo, ele novamente falhará.  
   
 > [!NOTE]
->  Você pode simular a ausência de um componente COM temporariamente cancelar o registro. Abra um prompt de comando, vá para a pasta do sistema digitando `cd /d %windir%\system32`, em seguida, cancelar o registro do componente digitando `regsvr32 /u VB6Hello.dll`. Você pode registrá-lo novamente, digitando `regsvr32 VB6Hello.dll`.  
+> Você pode simular a ausência de um componente COM temporariamente cancelar o registro. Abra um prompt de comando, vá para a pasta do sistema digitando `cd /d %windir%\system32`, em seguida, cancelar o registro do componente digitando `regsvr32 /u VB6Hello.dll`. Você pode registrá-lo novamente, digitando `regsvr32 VB6Hello.dll`.  
   
  A etapa final é publicar o aplicativo usando [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)]:  
   

@@ -15,12 +15,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2070c9c68719e51357f3cd5fed4bee3cfbc35fcf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f4878827ae65a8f42e8225c7daab207a27a0614a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051902"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426384"
 ---
 # <a name="finding-and-using-visual-studio-extensions"></a>Encontrando e usando extensões do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ As extensões do Visual Studio são pacotes de código executados dentro do Visu
  É possível usar a caixa de diálogo **Extensões e Atualizações** para instalar as extensões e amostras do Visual Studio de sites e outros locais e habilitá-las, desabilitá-las, atualizá-las ou desinstalá-las. (**Ferramentas/Extensões e Atualizações** ou digite ou **Extensões** na janela **Início Rápido**). A caixa de diálogo também mostra atualizações para amostras e extensões instaladas. Também é possível baixar extensões de sites ou obtê-las de outros desenvolvedores.
 
 > [!NOTE]
->  A partir do Visual Studio 2015, as extensões hospedadas na Galeria do Visual Studio serão atualizadas automaticamente.  É possível alterar essa configuração por meio da caixa de diálogo **Extensões e Atualizações**.  Consulte a seção **Atualizações automáticas de extensões** abaixo para obter detalhes.
+> A partir do Visual Studio 2015, as extensões hospedadas na Galeria do Visual Studio serão atualizadas automaticamente.  É possível alterar essa configuração por meio da caixa de diálogo **Extensões e Atualizações**.  Consulte a seção **Atualizações automáticas de extensões** abaixo para obter detalhes.
 
 ## <a name="finding-visual-studio-extensions"></a>Localizando extensões do Visual Studio
  Você pode instalar as extensões do [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ou o [Galeria de exemplos](https://code.msdn.microsoft.com/vstudio) no site da Microsoft. As extensões podem ser controles, exemplos, modelos, ferramentas ou outros componentes que adicionam funcionalidades ao Visual Studio. O Visual Studio dá suporte a extensões no formato do pacote VSIX, o que inclui modelos de projeto, modelos de item, itens da **Caixa de Ferramentas**, componentes MEF (Managed Extension Framework) e VSPackages. Também é possível baixar e instalar extensões baseadas em MSI, mas a caixa de diálogo **Extensões e Atualizações** não pode habilitá-las nem desabilitá-las. A Galeria do Visual Studio contém extensões VSIX e MSI.
@@ -59,7 +59,7 @@ As extensões do Visual Studio são pacotes de código executados dentro do Visu
 - Para desabilitar as atualizações automáticas de uma extensão específica, desmarque a opção **Atualizar automaticamente essa extensão** no painel de detalhes da extensão do lado direito da caixa de diálogo **Extensões e Atualizações**.
 
 > [!NOTE]
->  A partir do Visual Studio 2015 Atualização 2, é possível especificar (em **Ferramentas/Opções/Ambiente/Extensões e Atualizações**) se você deseja atualizações automáticas para extensões por usuário, todas as extensões do usuário ou ambas (a configuração padrão).
+> A partir do Visual Studio 2015 Atualização 2, é possível especificar (em **Ferramentas/Opções/Ambiente/Extensões e Atualizações**) se você deseja atualizações automáticas para extensões por usuário, todas as extensões do usuário ou ambas (a configuração padrão).
 
 ## <a name="sample-master-copies-and-working-copies"></a>Cópias mestras e cópias funcionais de amostras
  Quando você instala um exemplo online, a solução é armazenada em dois locais:
@@ -89,4 +89,4 @@ As extensões do Visual Studio são pacotes de código executados dentro do Visu
  O Visual Studio continua dando suporte a extensões instaladas pelo MSI (Microsoft Installer), mas não por meio da caixa de diálogo **Extensões e Atualizações** sem modificação.
 
 > [!TIP]
->  Se uma extensão baseada em MSI incluir um arquivo extension.vsixmanifest, a extensão será exibida na caixa de diálogo **Extensões e Atualizações**.
+> Se uma extensão baseada em MSI incluir um arquivo extension.vsixmanifest, a extensão será exibida na caixa de diálogo **Extensões e Atualizações**.

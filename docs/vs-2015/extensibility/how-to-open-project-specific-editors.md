@@ -12,12 +12,12 @@ ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 46f6b64fecfbbe3a57dad130ad0a65475fad56af
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2439a07f63b8da854ca8dc331d26e30f49503257
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435937"
 ---
 # <a name="how-to-open-project-specific-editors"></a>Como: Editores abertos específicos do projeto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Se um arquivo de item que está sendo aberto por um projeto é intrinsecamente a
 1. Chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.FindAndLockDocument%2A> método (RDT_EditLock) para determinar se o arquivo (objeto de dados de documento) já está aberto.  
   
     > [!NOTE]
-    >  Para obter mais informações sobre dados de documentos e objetos de exibição de documento, consulte [dados de documentos e exibição de documentos em editores personalizados](../extensibility/document-data-and-document-view-in-custom-editors.md).  
+    > Para obter mais informações sobre dados de documentos e objetos de exibição de documento, consulte [dados de documentos e exibição de documentos em editores personalizados](../extensibility/document-data-and-document-view-in-custom-editors.md).  
   
 2. Se o arquivo já estiver aberto, repavimentar o arquivo chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.IsDocumentOpen%2A> método e especificando um valor de IDO_ActivateIfOpen para o `grfIDO` parâmetro.  
   
@@ -56,4 +56,4 @@ Se um arquivo de item que está sendo aberto por um projeto é intrinsecamente a
 ## <a name="see-also"></a>Consulte também  
  [Abrir e salvar itens de projeto](../extensibility/internals/opening-and-saving-project-items.md)   
  [Como: Abrir editores padrão](../extensibility/how-to-open-standard-editors.md)   
- [Como: Abrir editores para documentos abertos](../extensibility/how-to-open-editors-for-open-documents.md)
+ [Como: abrir editores para documentos abertos](../extensibility/how-to-open-editors-for-open-documents.md)

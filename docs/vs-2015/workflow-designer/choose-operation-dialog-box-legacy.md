@@ -11,12 +11,12 @@ caps.latest.revision: 10
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7b9d40f3627cd24aa7758a0d599eb6e5d770c9f8
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b42ecd7ad38144786ff12d5cad20c9e8a1437646
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417571"
 ---
 # <a name="choose-operation-dialog-box-legacy"></a>Escolha a caixa de diálogo da operação (o legados)
 Este tópico descreve como usar o **escolher operação** caixa de diálogo em novas [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -36,7 +36,7 @@ Este tópico descreve como usar o **escolher operação** caixa de diálogo em n
 |**Permissões**|Catalogue para conter propriedades de <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionName%2A> e de <xref:System.Workflow.Activities.OperationInfoBase.PrincipalPermissionRole%2A> de usuários são permitidos que chamar a operação. Por exemplo, se apenas os usuários do grupo Administradores foram permissão para chamar a operação, em seguida, você escreveria "Administradores" **função** caixa de texto.<br /><br /> Essa guia está habilitado para ambas as operações criadas por meio de **ChooseOperation** caixa de diálogo e operações que foram importados por meio do **importação** botão.|  
   
 > [!NOTE]
->  O **escolher operação** caixa de diálogo mostra somente contratos ou operações que são usadas por outras <xref:System.Workflow.Activities.SendActivity> atividades no fluxo de trabalho. Da mesma forma, o **escolher operação** caixa de diálogo <xref:System.Workflow.Activities.ReceiveActivity> mostra as atividades somente contratos ou operações que são usadas por outras **ReceiveActivity** atividades no fluxo de trabalho.  
+> O **escolher operação** caixa de diálogo mostra somente contratos ou operações que são usadas por outras <xref:System.Workflow.Activities.SendActivity> atividades no fluxo de trabalho. Da mesma forma, o **escolher operação** caixa de diálogo <xref:System.Workflow.Activities.ReceiveActivity> mostra as atividades somente contratos ou operações que são usadas por outras **ReceiveActivity** atividades no fluxo de trabalho.  
   
 ## <a name="see-also"></a>Consulte também  
  [Como: Implementar uma operação de contrato do Windows (legados)](../workflow-designer/how-to-implement-a-windows-communication-foundation-contract-operation-legacy.md)   

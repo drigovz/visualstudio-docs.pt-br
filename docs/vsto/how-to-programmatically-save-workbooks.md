@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 0ac57569802bbab5317f59e5311e4871a6e74ba1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f82e469997a7d072ab04e4c5ef6df0f36a8dc9ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60093053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419479"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>Como: Salvar pastas de trabalho de forma programática
   Há várias maneiras de salvar uma pasta de trabalho. Você pode salvar uma pasta de trabalho sem alterar o caminho. Se a pasta de trabalho não tiver sido salvo antes, você deve salvar a pasta de trabalho, especificando um caminho. Sem um caminho explícito, o Microsoft Office Excel salva o arquivo na pasta atual com o nome que foi fornecido quando ele foi criado. Você também pode salvar uma cópia da pasta de trabalho sem modificar a pasta de trabalho aberta na memória.
@@ -46,7 +46,7 @@ ms.locfileid: "60093053"
  Você pode salvar a pasta de trabalho especificada para um novo local ou com um novo nome, opcionalmente especificando um formato de arquivo, uma senha, um modo de acesso e muito mais.
 
 > [!NOTE]
->  Você talvez queira definir o <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> propriedade para **falso** antes de salvar a pasta de trabalho com um novo caminho, como salvando em alguns formatos requer interação. Definir essa propriedade como **falsos** faz com que o Excel para usar todos os padrões.
+> Você talvez queira definir o <xref:Microsoft.Office.Interop.Excel._Application.DisplayAlerts%2A> propriedade para **falso** antes de salvar a pasta de trabalho com um novo caminho, como salvando em alguns formatos requer interação. Definir essa propriedade como **falsos** faz com que o Excel para usar todos os padrões.
 
 ### <a name="to-save-a-workbook-associated-with-a-document-level-customization"></a>Para salvar uma pasta de trabalho associada a uma personalização no nível de documento
 

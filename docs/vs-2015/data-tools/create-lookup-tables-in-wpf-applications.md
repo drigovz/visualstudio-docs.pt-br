@@ -22,12 +22,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d069f48e39327cf73f741eb2b2ff02688fa4c3d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8401a41c479dea70289cd0ebf072fc3b57eff78d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095913"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434505"
 ---
 # <a name="create-lookup-tables-in-wpf-applications"></a>Criar tabelas de pesquisa em aplicativos do WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ O termo *tabela de pesquisa* (às vezes chamado de um *vinculação de pesquisa*
     - Objetos. Para obter mais informações, confira [Como: Conectar-se a dados em objetos](http://msdn.microsoft.com/library/862fd351-0f4d-4220-9743-6103b87dc24b).  
   
     > [!NOTE]
-    >  Antes de criar uma tabela de pesquisa, duas tabelas relacionadas ou objetos devem existir como uma fonte de dados para o projeto.  
+    > Antes de criar uma tabela de pesquisa, duas tabelas relacionadas ou objetos devem existir como uma fonte de dados para o projeto.  
   
 2. Abra o**WPF Designer**e certifique-se de que o designer contém um contêiner que é um destino de soltar válido para itens na **fontes de dados** janela.  
   
@@ -58,7 +58,7 @@ O termo *tabela de pesquisa* (às vezes chamado de um *vinculação de pesquisa*
 4. Expanda os nós na **fontes de dados** janela, até que você possa ver a tabela pai ou objeto e a tabela filho relacionada ou objeto.  
   
     > [!NOTE]
-    >  A tabela filho relacionada ou o objeto é o nó que aparece como um nó filho expansível sob a tabela pai ou o objeto.  
+    > A tabela filho relacionada ou o objeto é o nó que aparece como um nó filho expansível sob a tabela pai ou o objeto.  
   
 5. Clique no menu suspenso para o nó filho e selecione **detalhes**.  
   
@@ -73,12 +73,12 @@ O termo *tabela de pesquisa* (às vezes chamado de um *vinculação de pesquisa*
     - **ListView**  
   
         > [!NOTE]
-        >  Se o **ListBox** ou **ListView** controle não aparecer na lista, você pode adicionar esses controles à lista. Para obter informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
+        > Se o **ListBox** ou **ListView** controle não aparecer na lista, você pode adicionar esses controles à lista. Para obter informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).  
   
     - Qualquer controle personalizado que deriva de <xref:System.Windows.Controls.Primitives.Selector>.  
   
         > [!NOTE]
-        >  Para obter informações sobre como adicionar personalizado controles à lista de controles que você podem selecionar para itens na **fontes de dados** janela, consulte [adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
+        > Para obter informações sobre como adicionar personalizado controles à lista de controles que você podem selecionar para itens na **fontes de dados** janela, consulte [adicionar controles personalizados à janela fontes de dados](../data-tools/add-custom-controls-to-the-data-sources-window.md).  
   
 8. Arraste o nó filho do **fontes de dados** window para um contêiner no WPF designer. (No exemplo anterior, o nó filho é o **pedidos** nó.)  
   

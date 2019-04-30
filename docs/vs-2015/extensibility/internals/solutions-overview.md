@@ -10,12 +10,12 @@ ms.assetid: 3b21e3a1-170a-4485-941e-6b04b7b27886
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8daa7922b1f1ba7cb90cca9a77a6db14977c7518
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fb3bb85ab172404262c147cce285cebaf756afc9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077609"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432075"
 ---
 # <a name="solutions-overview"></a>Visão geral das soluções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Uma solução é um agrupamento de um ou mais projetos que trabalham juntos para
  Qualquer VSPackage pode gravar em um dos tipos de arquivo de solução. Devido à natureza dos arquivos, há duas interfaces diferentes implementados para gravar a eles. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps> interface grava informações de texto para o arquivo e o <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> interface grava fluxos binários no arquivo. suo.  
   
 > [!NOTE]
->  Um projeto não precisa gravar explicitamente uma entrada para si mesmo no arquivo de solução; o ambiente cuida disso para o projeto. Portanto, a menos que você deseja adicionar o conteúdo adicional especificamente para o arquivo de solução, não é necessário registrar o VSPackage dessa maneira.  
+> Um projeto não precisa gravar explicitamente uma entrada para si mesmo no arquivo de solução; o ambiente cuida disso para o projeto. Portanto, a menos que você deseja adicionar o conteúdo adicional especificamente para o arquivo de solução, não é necessário registrar o VSPackage dessa maneira.  
   
  Cada VSPackage que dão suporte a persistência de solução usa três interfaces, o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> interface, que é implementada pelo ambiente e chamado pelo VSPackage, e `IVsPersistSolutionProps` e `IVsPersistSolutionOpts`, que são implementados pelo VSPackage. O `IVsPersistSolutionOpts` interface só precisa ser implementado se informações particulares deve ser gravada pelo VSPackage para o arquivo. suo.  
   
@@ -44,7 +44,7 @@ Uma solução é um agrupamento de um ou mais projetos que trabalham juntos para
    Informações específicas relacionadas ao uso desses arquivos podem ser encontradas no [solução (. Arquivo DPD)](../../extensibility/internals/solution-dot-sln-file.md) e [opções de usuário da solução (. Arquivo suo)](../../extensibility/internals/solution-user-options-dot-suo-file.md).  
   
 > [!NOTE]
->  Se você quiser criar uma nova configuração de solução consiste em configurações de dois projetos e exclusão de um terço da compilação, você precisa usar a automação ou páginas de propriedade de interface do usuário. Você não pode alterar as configurações de Gerenciador de build da solução e suas propriedades diretamente, mas você pode manipular o Gerenciador de build da solução usando o `SolutionBuild` classe do DTE no modelo de automação. Para obter mais informações sobre a configuração de soluções, consulte [configuração da solução](../../extensibility/internals/solution-configuration.md).  
+> Se você quiser criar uma nova configuração de solução consiste em configurações de dois projetos e exclusão de um terço da compilação, você precisa usar a automação ou páginas de propriedade de interface do usuário. Você não pode alterar as configurações de Gerenciador de build da solução e suas propriedades diretamente, mas você pode manipular o Gerenciador de build da solução usando o `SolutionBuild` classe do DTE no modelo de automação. Para obter mais informações sobre a configuração de soluções, consulte [configuração da solução](../../extensibility/internals/solution-configuration.md).  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage>   

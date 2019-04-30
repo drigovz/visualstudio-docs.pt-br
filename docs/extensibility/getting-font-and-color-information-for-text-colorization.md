@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f6e55c99d874bd18f0045746bbab4ac96370bc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f03b23076b1eea203166bb0322f05927480a278
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417165"
 ---
 # <a name="get-font-and-color-information-for-text-colorization"></a>Obter informações de fonte e cor para a colorização do texto
 O processo que processa ou exibe texto coloridos serão em elementos de (UI) interface do usuário depende do tipo de projeto, sua tecnologia e desenvolvedor preferências. O **fontes e cores** página de propriedades armazena as configurações.
@@ -24,7 +24,7 @@ O processo que processa ou exibe texto coloridos serão em elementos de (UI) int
  A maioria das implementações que exibem texto coloridos serão precisa o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults> e associados a interfaces para as configurações de exibição de apresentação, recuperar e armazenar texto.
 
 > [!NOTE]
->  Ao personalizar o editor principal (que oferece suporte a **EditorCategory texto**), é recomendável que você use a tecnologia de cores no serviço de linguagem. Para obter mais informações, consulte [visão geral de fontes e cores](../extensibility/font-and-color-overview.md).
+> Ao personalizar o editor principal (que oferece suporte a **EditorCategory texto**), é recomendável que você use a tecnologia de cores no serviço de linguagem. Para obter mais informações, consulte [visão geral de fontes e cores](../extensibility/font-and-color-overview.md).
 
 ## <a name="get-default-font-and-color-information"></a>Obter informações de fonte e cor padrão
  Todos os as **fontes e cores** configurações de qualquer janela de exibição de texto devem ser especificadas na **itens de exibição** de um **categoria**. Para obter mais informações, consulte [fontes e cores, ambiente, caixa de diálogo Opções](../ide/reference/fonts-and-colors-environment-options-dialog-box.md).

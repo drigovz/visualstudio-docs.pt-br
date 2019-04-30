@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f16385452fa0fa0f4e706da1856185355aa95a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3d5d9e4cd0baa2343a68a3d86a96110c97b6cbb7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047183"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426811"
 ---
 # <a name="registering-single-file-generators"></a>Registrando geradores de arquivo único
 Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], você deve registrá-lo tão [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] pode instanciá-la e a associa a um tipo de projeto específico.
@@ -51,7 +51,7 @@ Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../code
         Necessário. Indica se os tipos de arquivos gerados por essa ferramenta personalizada são disponibilizados aos designers visuais. O valor desse parâmetro precisa ser (zero) 0 para tipos não disponíveis aos designers visuais ou 1 (um) para os tipos disponíveis para designers visuais.
 
    > [!NOTE]
-   >  Você deve registrar a ferramenta personalizada separadamente para cada idioma para o qual você deseja que a ferramenta personalizada esteja disponível.
+   > Você deve registrar a ferramenta personalizada separadamente para cada idioma para o qual você deseja que a ferramenta personalizada esteja disponível.
 
     Por exemplo, o MSDataSetGenerator se registra uma vez para cada idioma:
 

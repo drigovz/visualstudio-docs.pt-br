@@ -24,12 +24,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 07930dc31651d11aedccc6c597070bbba62ff0b9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 2be23466642357d19dad52407fcb9bf82e843c5b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928916"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424482"
 ---
 # <a name="uml-class-diagrams-reference"></a>Diagramas de classe UML: Referência
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ ms.locfileid: "58928916"
 Um diagrama de classe UML descreve o objeto e as informações de estruturas usadas pelo seu aplicativo, tanto internamente e em comunicação com seus usuários. Ele descreve as informações sem referência a qualquer implementação específica. Suas classes e relações podem ser implementadas de várias maneiras, como tabelas de banco de dados, nós XML ou composições de objetos de software.  
   
 > [!NOTE]
->  Este tópico é sobre diagramas de classe UML. Há outro tipo de diagrama de classe, o diagrama de classe do .NET, que é usado para visualizar o código do programa. Para obter mais informações, consulte [Projetando e exibindo Classes e tipos](http://go.microsoft.com/fwlink/?LinkId=142231).  
+> Este tópico é sobre diagramas de classe UML. Há outro tipo de diagrama de classe, o diagrama de classe do .NET, que é usado para visualizar o código do programa. Para obter mais informações, consulte [Projetando e exibindo Classes e tipos](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
  Para criar um diagrama de classe UML, nos **arquitetura** menu, escolha **UML novo ou diagrama de camada**. Para obter mais informações sobre como desenhar diagramas de classe UML, consulte [diagramas de classe UML: Diretrizes de](../modeling/uml-class-diagrams-guidelines.md). Para obter mais informações sobre como criar e desenhar diagramas de modelagem, consulte [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
   

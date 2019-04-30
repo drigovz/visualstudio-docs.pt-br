@@ -14,12 +14,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db58bb1826aab9a26dcec6a9475c49fc99057891
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: e10279740d590b63bb3781afd3486f7952123664
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431930"
 ---
 # <a name="entity-data-model-tools-in-visual-studio"></a>Ferramentas de modelo de dados de entidade no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Entity Framework é uma tecnologia de mapeamento relacional de objeto que permit
 - Você pode usar o **Assistente de atualização de modelo** para atualizar seu modelo conceitual, o modelo de armazenamento e a mapeamentos de quando foram feitas alterações no banco de dados subjacente.
 
   > [!NOTE]
-  >  Começando com o Visual Studio 2010, [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] as ferramentas não suportam [!INCLUDE[ss2k](../includes/ss2k-md.md)].
+  > Começando com o Visual Studio 2010, [!INCLUDE[adonet_edm](../includes/adonet-edm-md.md)] as ferramentas não suportam [!INCLUDE[ss2k](../includes/ss2k-md.md)].
 
   As ferramentas de geram ou modificar um arquivo. edmx. Esse arquivo contém informações que descrevem o modelo conceitual, o modelo de armazenamento e os mapeamentos entre eles. Para obter mais informações, consulte [EDMX](https://msdn.microsoft.com/data/jj650889.aspx).
 

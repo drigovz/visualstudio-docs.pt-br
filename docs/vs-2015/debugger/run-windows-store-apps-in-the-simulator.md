@@ -14,12 +14,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 61c56636eec92f28468533b7c4d9a51e6f120363
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0588d887cc1ba36a1ebb71df933686f68be524fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054491"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426620"
 ---
 # <a name="run-windows-store-apps-in-the-simulator"></a>Executar aplicativos da Windows Store no simulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
  Ver [aplicativos de execução do Windows Phone no emulador](../debugger/run-windows-phone-apps-in-the-emulator.md) para obter informações do Windows Phone.  
   
 > [!IMPORTANT]
->  O simulador do Visual Studio 2015 não inclui o botão de localização geográfica. Isso ocorre porque o simulador do Windows 10 não inclui a simulação de localização geográfica. Se você precisar fazer esse tipo de simulação, você pode usar o simulador do Visual Studio 2013 no Windows 8.1 ou sistemas operacionais anteriores.  
+> O simulador do Visual Studio 2015 não inclui o botão de localização geográfica. Isso ocorre porque o simulador do Windows 10 não inclui a simulação de localização geográfica. Se você precisar fazer esse tipo de simulação, você pode usar o simulador do Visual Studio 2013 no Windows 8.1 ou sistemas operacionais anteriores.  
   
 ## <a name="BKMK_Set_the_simulator_as_the_target"></a> Definir o simulador como o destino  
  Para executar seu aplicativo da Windows Store no simulador, selecione **simulador** na lista suspensa lista ao lado de **iniciar depuração** botão no depurador **padrão** barra de ferramentas.  
@@ -86,10 +86,10 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
  Você pode alternar a orientação do dispositivo entre retrato e paisagem girando o simulador 90 graus em qualquer direção.  
   
 > [!NOTE]
->  O simulador não respeita a propriedade [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) de um projeto. Por exemplo, se o projeto define a orientação como `Landscape` e você gira o simulador até a orientação retrato, a imagem de exibição do simulador também é girada e redimensionada. Teste essas configurações em um dispositivo real.  
+> O simulador não respeita a propriedade [DisplayProperties.AutoRotationPreferences](http://go.microsoft.com/fwlink/?LinkId=249460) de um projeto. Por exemplo, se o projeto define a orientação como `Landscape` e você gira o simulador até a orientação retrato, a imagem de exibição do simulador também é girada e redimensionada. Teste essas configurações em um dispositivo real.  
   
 > [!NOTE]
->  Se você gira o simulador de modo que uma borda dele fica maior do que a tela em que ele é exibido, o simulador é automaticamente redimensionado para caber na tela. O simulador não é redimensionado para o tamanho original se você o gira novamente.  
+> Se você gira o simulador de modo que uma borda dele fica maior do que a tela em que ele é exibido, o simulador é automaticamente redimensionado para caber na tela. O simulador não é redimensionado para o tamanho original se você o gira novamente.  
   
 ## <a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> Alterar o tamanho e a resolução de tela simulados  
  Para alterar o tamanho e a resolução de tela simulados, escolha o botão **Alterar Resolução** na paleta e escolha um novo tamanho e uma nova resolução na lista.  
@@ -97,13 +97,13 @@ O simulador do Visual Studio para aplicativos da Windows Store é um aplicativo 
  O tamanho e a resolução da tela são listados como *Largura da tela em polegadas, largura em pixel X altura em pixel*. Observe que tanto o tamanho como a resolução da tela são simulados. As coordenadas de local no simulador são convertidas nas coordenadas do tamanho e da resolução do dispositivo selecionado.  
   
 > [!NOTE]
->  Você pode salvar versões dimensionadas de imagens de bitmap em seu aplicativo, e o Windows carregará a imagem correta para a escala atual. Para obter mais informações, consulte [101 de Design responsivo](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). No entanto, se você alterar a resolução do simulador de modo que o Windows selecione uma imagem diferente para ajustar à resolução, será preciso parar e reiniciar a sessão de depuração para exibir a nova imagem.  
+> Você pode salvar versões dimensionadas de imagens de bitmap em seu aplicativo, e o Windows carregará a imagem correta para a escala atual. Para obter mais informações, consulte [101 de Design responsivo](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx). No entanto, se você alterar a resolução do simulador de modo que o Windows selecione uma imagem diferente para ajustar à resolução, será preciso parar e reiniciar a sessão de depuração para exibir a nova imagem.  
   
 ## <a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> Uma captura de tela do seu aplicativo para envio para a Windows Store  
  Quando você envia um aplicativo na app Store do Windows, você deve incluir capturas de tela do aplicativo.  
   
 > [!NOTE]
->  A captura de tela é salva na resolução atual do simulador. Para alterar a resolução, escolha o botão **Alterar Resolução**.  
+> A captura de tela é salva na resolução atual do simulador. Para alterar a resolução, escolha o botão **Alterar Resolução**.  
   
 - Para criar capturas de tela do aplicativo por meio do simulador, escolha o botão **Capturar tela na área de transferência**.  
   

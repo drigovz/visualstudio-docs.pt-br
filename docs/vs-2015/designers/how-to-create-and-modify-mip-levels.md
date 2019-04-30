@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac8612530ad7a28fef76b3339b9207408842aa8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1c1d0babfec4a2fd56e2ed40c5f2c75329ccb6d3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055087"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434455"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>Como: Criar e modificar os níveis de MIP
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ Este documento demonstra como usar o **Editor de Imagens** para gerar e modifica
 2. Depois de selecionar o nível de MIP que você deseja modificar, você pode usar as ferramentas de desenho para modificá-la sem alterar o conteúdo de outros níveis de MIP. As ferramentas de desenho estão disponíveis na barra de ferramentas **Editor de Imagens**. Depois de selecionar uma ferramenta, você pode alterar suas propriedades na janela **Propriedades**. Para obter informações sobre as ferramentas de desenho e suas propriedades, consulte [Editor de Imagens](../designers/image-editor.md).  
   
 > [!NOTE]
->  Se você não precisar modificar o conteúdo dos níveis de MIP individuais – como você poderia fazer para obter certos efeitos – é recomendável que você gere mipmaps com base na textura de origem no momento do build. Isso ajuda a assegurar que os níveis de MIP fiquem em sincronia com a textura de origem porque modificações em um nível de MIP não são propagadas automaticamente para outros níveis. Para obter mais informações de como gerar mipmaps no tempo de build, confira [Como: Exportar uma textura que contenha Mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md).  
+> Se você não precisar modificar o conteúdo dos níveis de MIP individuais – como você poderia fazer para obter certos efeitos – é recomendável que você gere mipmaps com base na textura de origem no momento do build. Isso ajuda a assegurar que os níveis de MIP fiquem em sincronia com a textura de origem porque modificações em um nível de MIP não são propagadas automaticamente para outros níveis. Para obter mais informações de como gerar mipmaps no tempo de build, confira [Como: Exportar uma textura que contenha Mipmaps](../designers/how-to-export-a-texture-that-contains-mipmaps.md).  
   
 ## <a name="see-also"></a>Consulte também  
- [Como: Criar uma textura básica](../designers/how-to-create-a-basic-texture.md)
+ [Como: criar uma textura básica](../designers/how-to-create-a-basic-texture.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fd0bf5c0e95b4c859dc2d6470ab6f922041b20ba
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c0dc7b406f7e04aaa9848e2f5dcb96f17430f6d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049874"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436952"
 ---
 # <a name="create-a-sql-database-by-using-a-script"></a>Criar um banco de dados SQL usando um script
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -234,7 +234,7 @@ Neste passo a passo, você usa o Visual Studio para criar um banco de dados pequ
 2. Sob **instalados**, expanda o **modelos** nó, expanda o **outros idiomas** nó, selecione o **do SQL Server** categoria e, em seguida, Selecione o **projeto de banco de dados do SQL Server** modelo.  
   
     > [!NOTE]
-    >  O **outras linguagens** nó não aparece em todas as instalações do Visual Studio.  
+    > O **outras linguagens** nó não aparece em todas as instalações do Visual Studio.  
   
 3. No **nome** , digite `Small Database`.  
   

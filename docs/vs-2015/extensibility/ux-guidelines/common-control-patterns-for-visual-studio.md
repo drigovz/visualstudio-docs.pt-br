@@ -8,12 +8,12 @@ ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9644aeed1df42aa3a73af7d2cd7d7fa81bd27684
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 246464baea7e07e4d97e3483b423d200cf2b960c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040825"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430034"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Padrões comuns de controle para o Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -325,7 +325,7 @@ ms.locfileid: "60040825"
  Alguns botões devem sempre usar uma imagem gráfica e nunca inclua texto para conservar o espaço e evitar problemas de localização. Geralmente, eles são usados no seletor de campo e outras listas classificável.
 
 > [!NOTE]
->  Os usuários precisam pressionar tab até esses botões (não há nenhuma chave de acesso), portanto, colocá-los em uma ordem adequada. Mapear a propriedade de nome do botão para a ação que leva para que os leitores de tela interpretam corretamente a ação do botão.
+> Os usuários precisam pressionar tab até esses botões (não há nenhuma chave de acesso), portanto, colocá-los em uma ordem adequada. Mapear a propriedade de nome do botão para a ação que leva para que os leitores de tela interpretam corretamente a ação do botão.
 
 |||
 |-|-|

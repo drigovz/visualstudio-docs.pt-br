@@ -11,12 +11,12 @@ caps.latest.revision: 52
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 84f5b5de8b28062023d851e38e26930718d599e7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0da69de4a91ebabce4af99e26195b349ef5daa60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928019"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411405"
 ---
 # <a name="text-template-utility-methods"></a>Métodos de utilitário do modelo de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58928019"
 Há vários métodos que estão sempre disponíveis para você quando você escreve código um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] modelo de texto. Esses métodos são definidos no <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation>.  
   
 > [!TIP]
->  Você também pode usar outros métodos e os serviços fornecidos pelo ambiente de host em um modelo de texto (não pré-processado) regular. Por exemplo, você pode resolver caminhos de arquivo, log de erros e obtenha serviços fornecidos pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e qualquer carregados pacotes.  Para obter mais informações, consulte [acessando o Visual Studio a partir de um modelo de texto](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
+> Você também pode usar outros métodos e os serviços fornecidos pelo ambiente de host em um modelo de texto (não pré-processado) regular. Por exemplo, você pode resolver caminhos de arquivo, log de erros e obtenha serviços fornecidos pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] e qualquer carregados pacotes.  Para obter mais informações, consulte [acessando o Visual Studio a partir de um modelo de texto](http://msdn.microsoft.com/0556f20c-fef4-41a9-9597-53afab4ab9e4).  
   
 ## <a name="write-methods"></a>Escrever métodos  
  Você pode usar o `Write()` e `WriteLine()` métodos para acrescentar texto dentro de um bloco de código padrão, em vez de usar um bloco de código de expressão. Os seguintes blocos de código são funcionalmente equivalentes.  

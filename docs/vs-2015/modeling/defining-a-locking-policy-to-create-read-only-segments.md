@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ed3eeb8e2907eb71a75884a19f174774055783c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6044e9c47a0dcbc95fd1503906cbd81ac8e44526
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062237"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422651"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>Definindo uma política de bloqueio para criar segmentos somente leitura
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ A API de imutabilidade do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] SDK de vi
  Além disso, como autor de uma DSL, você pode definir um *política de bloqueio.* Uma política de bloqueio define quais bloqueios são permitidas, não permitido ou obrigatório. Por exemplo, quando você publica uma DSL, você pode encorajar os desenvolvedores de terceiros para estendê-lo com novos comandos. Mas você também pode usar uma política de bloqueio para impedir que alterar o status somente leitura de partes especificadas do modelo.  
   
 > [!NOTE]
->  Uma política de bloqueio pode ser evitada por meio de reflexão. Ele fornece um limite de claro para os desenvolvedores de terceiros, mas não oferece segurança forte.  
+> Uma política de bloqueio pode ser evitada por meio de reflexão. Ele fornece um limite de claro para os desenvolvedores de terceiros, mas não oferece segurança forte.  
   
  Mais informações e exemplos estão disponíveis na [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] [SDK de visualização e modelagem](http://go.microsoft.com/fwlink/?LinkId=186128) site da Web.  
   

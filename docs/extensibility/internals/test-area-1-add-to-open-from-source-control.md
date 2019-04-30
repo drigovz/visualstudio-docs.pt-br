@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 699496825e272fc492bac8ef4fe472019b1935d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2ba64bdcf299f52d0200e1fa66dead11a8824c14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083497"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429983"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>Área de teste 1: Adicionar ao / abrir do controle de origem
 Esse controle de origem plug-in de teste área abrange colocando soluções ou projetos sob controle do código-fonte e recuperá-los do controle de origem.
@@ -37,7 +37,7 @@ Esse controle de origem plug-in de teste área abrange colocando soluções ou p
 - Para [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)], adicionar controle do código-fonte também está disponível no **arquivo**, **Add**, **projeto existente**; procure no [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] local.
 
   > [!NOTE]
-  >  Um caminho de um arquivo local ou um local IIS (servidor web) pode ser usado nesse teste.
+  > Um caminho de um arquivo local ou um local IIS (servidor web) pode ser usado nesse teste.
 
 ## <a name="expected-behavior"></a>Comportamento esperado
 

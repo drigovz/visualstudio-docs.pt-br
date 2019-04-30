@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 88644f3bf768f1b3467467a31edbd83e8e5f151c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: db9a3e08e14e7fadca6df9e32361c0b042f565e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039871"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438329"
 ---
 # <a name="how-to-debug-with-code-center-premium-source"></a>Como: Depurar com a origem do Code Center Premium
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,12 +56,12 @@ Com o depurador do [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], v
      `src=https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  Certifique-se de incluir a barra à direita<strong>/</strong> no final do caminho.  
+   > Certifique-se de incluir a barra à direita<strong>/</strong> no final do caminho.  
   
      Mova esses locais até a parte superior da lista para garantir que os símbolos sejam carregados primeiro.  
   
    > [!NOTE]
-   >  Esses locais do Code Center Premium devem ser listados primeiro para que sejam os primeiros locais a serem carregados. No Visual Studio 2010, você não pode mover servidores acima de **servidores de símbolo Microsoft** entrada, por isso, você deve desmarcar a caixa de seleção.  
+   > Esses locais do Code Center Premium devem ser listados primeiro para que sejam os primeiros locais a serem carregados. No Visual Studio 2010, você não pode mover servidores acima de **servidores de símbolo Microsoft** entrada, por isso, você deve desmarcar a caixa de seleção.  
    > 
    >  Para carregar símbolos dos símbolos Microsoft durante uma sessão de depuração, faça isso:  
    > 
@@ -113,7 +113,7 @@ Com o depurador do [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], v
     `https://codepremium.msdn.microsoft.com/source/Visual%20Studio%202010/SP1/`  
   
    > [!NOTE]
-   >  Certifique-se de incluir a barra à direita<strong>/</strong> no final do caminho.  
+   > Certifique-se de incluir a barra à direita<strong>/</strong> no final do caminho.  
   
 4. Para cada projeto gerenciado na sua solução, faça o seguinte  
   

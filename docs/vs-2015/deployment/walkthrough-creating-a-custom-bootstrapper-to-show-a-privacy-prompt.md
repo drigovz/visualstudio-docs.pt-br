@@ -20,12 +20,12 @@ caps.latest.revision: 12
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 153773d27d4f27a6987f7984955dde26b187b65e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6d93d9f771da9387661603f3eb71301e9d9aead7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427136"
 ---
 # <a name="walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt"></a>Passo a passo: Criando um Bootstrapper personalizado para mostrar um Prompt de privacidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -128,7 +128,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
     6. No **objeto de inicialização** menu suspenso, selecione **Module1**.  
   
        > [!NOTE]
-       >  Desabilitar a estrutura de aplicativo desabilita recursos, como estilos visuais do Windows XP, os eventos de aplicativo, tela inicial, aplicativo de instância única e muito mais. Para obter mais informações, consulte [Página de aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
+       > Desabilitar a estrutura de aplicativo desabilita recursos, como estilos visuais do Windows XP, os eventos de aplicativo, tela inicial, aplicativo de instância única e muito mais. Para obter mais informações, consulte [Página de aplicativo, Designer de Projeto (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md).  
   
        Visual c# somente para desenvolvedores:  
   
@@ -154,12 +154,12 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
 1. Crie um diretório chamado **UpdateConsentDialog** em %PROGRAMFILES%\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages.  
   
     > [!NOTE]
-    >  Você pode precisar de privilégios administrativos para criar essa pasta.  
+    > Você pode precisar de privilégios administrativos para criar essa pasta.  
   
 2. No diretório UpdateConsentDialog, crie um subdiretório chamado en.  
   
     > [!NOTE]
-    >  Crie um novo diretório para cada localidade. Por exemplo, você pode adicionar subdiretórios para as localidades fr e Alemanha. Esses diretórios conteria o francês e alemão cadeias de caracteres e os pacotes de idiomas, se necessário.  
+    > Crie um novo diretório para cada localidade. Por exemplo, você pode adicionar subdiretórios para as localidades fr e Alemanha. Esses diretórios conteria o francês e alemão cadeias de caracteres e os pacotes de idiomas, se necessário.  
   
 #### <a name="step-2-to-create-the-productxml-manifest-file"></a>Etapa 2: Para criar o arquivo de manifesto Product  
   
@@ -224,7 +224,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
 4. Crie um documento chamado EULA. RTF para os termos de licença de software.  
   
     > [!NOTE]
-    >  Os termos de licença de software devem incluir informações sobre licenciamento, garantias, responsabilidades e as leis locais. Esses arquivos devem ser específicos da localidade, portanto certifique-se de que o arquivo é salvo em um formato que oferece suporte a caracteres MBCS ou UNICODE. Consulte o departamento jurídico sobre o conteúdo dos termos de licença de software.  
+    > Os termos de licença de software devem incluir informações sobre licenciamento, garantias, responsabilidades e as leis locais. Esses arquivos devem ser específicos da localidade, portanto certifique-se de que o arquivo é salvo em um formato que oferece suporte a caracteres MBCS ou UNICODE. Consulte o departamento jurídico sobre o conteúdo dos termos de licença de software.  
   
 5. Salve o documento para o subdiretório en no diretório UpdateConsentDialog bootstrapper.  
   
@@ -244,7 +244,7 @@ Você pode configurar os aplicativos ClickOnce para atualizar automaticamente qu
 4. Selecione **atualizar caixa de diálogo de consentimento**.  
   
     > [!NOTE]
-    >  Talvez você precise fechar e reabrir o Visual Studio para ver o diálogo de consentimento de atualização na caixa de diálogo pré-requisitos.  
+    > Talvez você precise fechar e reabrir o Visual Studio para ver o diálogo de consentimento de atualização na caixa de diálogo pré-requisitos.  
   
 5. Clique em **OK**.  
   

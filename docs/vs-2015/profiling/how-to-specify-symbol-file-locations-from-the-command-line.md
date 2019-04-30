@@ -1,5 +1,5 @@
 ---
-title: Como especificar locais de arquivo de símbolo na linha de comando | Microsoft Docs
+title: 'Como: Especificar locais de arquivo de símbolo na linha de comando | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -9,14 +9,14 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d4cb6fcfac8e9f619ab99e1d96472824d6c98e51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: e5ff4290d0cffa99a9f476c543626c5aa15be87a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54776172"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436920"
 ---
-# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Como especificar locais de arquivo de símbolo a partir da linha de comando
+# <a name="how-to-specify-symbol-file-locations-from-the-command-line"></a>Como: Especificar locais de arquivo de símbolo na linha de comando
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Para exibir informações de símbolo como nomes de função e números de linha, a ferramenta de linha de comando VSPerfReport necessita de acesso aos arquivos de símbolo (.pdb) dos componentes analisados e aos arquivos de sistema do Windows. Os arquivos de símbolo são criados quando um componente é compilado. Para obter mais informações, confira [VSPerfReport](../profiling/vsperfreport.md). A VSPerfReport procura arquivos de símbolo automaticamente nos seguintes locais:  
@@ -38,7 +38,7 @@ Para exibir informações de símbolo como nomes de função e números de linha
   Você também pode usar ambos os métodos.  
   
 > [!NOTE]
->  Se o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estiver instalado no computador local, um local para os arquivos de símbolo do Windows já foi provavelmente especificado. Para obter mais informações, consulte [Como fazer referência a informações de símbolo do Windows](../profiling/how-to-reference-windows-symbol-information.md). Você ainda deve configurar a VSPerfReport para usar o local e o servidor, conforme descrito posteriormente neste tópico.  
+> Se o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] estiver instalado no computador local, um local para os arquivos de símbolo do Windows já foi provavelmente especificado. Para obter mais informações, confira [Como: Informações de símbolo de referência Windows](../profiling/how-to-reference-windows-symbol-information.md). Você ainda deve configurar a VSPerfReport para usar o local e o servidor, conforme descrito posteriormente neste tópico.  
   
 ## <a name="specifying-windows-symbol-files"></a>Especificar arquivos de símbolo do Windows  
   

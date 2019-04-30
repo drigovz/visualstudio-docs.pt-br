@@ -20,12 +20,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 10b4efd574dd5829e4717b168dc4e565476e9b52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4a6909bade36dce15bfae725fbaab60f24236451
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102936"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436995"
 ---
 # <a name="connect-to-data-in-an-access-database-windows-forms"></a>Conectar-se a dados em um banco de dados do Access (Windows Forms)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ Você pode se conectar a um banco de dados do Access (um arquivo. mdf ou um arqu
      ![Alterar o provedor de dados para o banco de dados OLE](../data-tools/media/datachangedatasourceoledb.png "dataChangeDataSourceOLEDB")  
   
     > [!IMPORTANT]
-    >  Embora uma fonte de dados do **arquivo de banco de dados do Microsoft Access (OLE DB)** parece ser a escolha certa, você usar esse tipo de fonte de dados somente para arquivos de banco de dados. mdb.  
+    > Embora uma fonte de dados do **arquivo de banco de dados do Microsoft Access (OLE DB)** parece ser a escolha certa, você usar esse tipo de fonte de dados somente para arquivos de banco de dados. mdb.  
   
 8. Na **OLE DB Provider**, selecione **Microsoft Office 12.0 Access Database Engine OLE DB Provider**.  
   
@@ -70,7 +70,7 @@ Você pode se conectar a um banco de dados do Access (um arquivo. mdf ou um arqu
 9. Na **nome do servidor ou o arquivo**, especifique o caminho e nome do arquivo. accdb ao qual você deseja se conectar e, em seguida, selecione **Okey**.  
   
     > [!NOTE]
-    >  Se o arquivo de banco de dados tem um nome de usuário e senha, especifique-os antes de selecionar **Okey**.  
+    > Se o arquivo de banco de dados tem um nome de usuário e senha, especifique-os antes de selecionar **Okey**.  
   
 10. Selecione **próxima** sobre o **escolha sua Conexão de dados** página.  
   

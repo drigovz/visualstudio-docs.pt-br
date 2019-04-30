@@ -12,12 +12,12 @@ caps.latest.revision: 47
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 08fd0d6e33de0c032ab63f013fca7ee3174b260e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eba06da32c04fa0ac8824d3cd1c8d024d96c3091
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077375"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434404"
 ---
 # <a name="image-editor"></a>Editor de imagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -82,7 +82,7 @@ Este documento descreve como trabalhar com o Editor de Imagens do [!INCLUDE[vspr
  Antes de começar a trabalhar com a imagem que você acabou de criar, você pode alterar sua configuração padrão. Por exemplo, você pode alterar suas dimensões ou o formato de cores que ela usa. Para obter informações sobre como configurar essas e outras propriedades da imagem, consulte [Propriedades da imagem](#ImageProperties).  
   
 > [!NOTE]
->  Antes de salvar seu trabalho, verifique se a propriedade **Formato de Cor** foi definida se você quiser usar um formato de cor específico. Se o formato de arquivo der suporte à compactação, você poderá ajustar as configurações de compactação quando salvar o arquivo pela primeira vez ou ao escolher **Salvar como**.  
+> Antes de salvar seu trabalho, verifique se a propriedade **Formato de Cor** foi definida se você quiser usar um formato de cor específico. Se o formato de arquivo der suporte à compactação, você poderá ajustar as configurações de compactação quando salvar o arquivo pela primeira vez ou ao escolher **Salvar como**.  
   
 ## <a name="working-with-the-image-editor"></a>Trabalhando com o Editor de Imagens  
  Essa seção descreve como usar o Editor de Imagens para modificar texturas e imagens.  
@@ -136,7 +136,7 @@ Este documento descreve como trabalhar com o Editor de Imagens do [!INCLUDE[vspr
 |**Cortar**|Corta a imagem para a seleção ativa.|  
   
 ### <a name="working-with-mip-levels"></a>Trabalhando com níveis de MIP  
- Alguns formatos de imagem — por exemplo, DirectDraw Surface (.dds) — dão suporte a níveis de MIP para LOD (Nível de Detalhe) de espaço de texturas. Para obter informações sobre como gerar e trabalhar com níveis de MIP, confira [Como: Criar e modificar níveis MIP](../designers/how-to-create-and-modify-mip-levels.md)  
+ Alguns formatos de imagem — por exemplo, DirectDraw Surface (.dds) — dão suporte a níveis de MIP para LOD (Nível de Detalhe) de espaço de texturas. Para obter informações sobre como gerar e trabalhar com níveis de MIP, confira [Como: criar e modificar os níveis de MIP](../designers/how-to-create-and-modify-mip-levels.md)  
   
 ### <a name="working-with-transparency"></a>Trabalhando com transparência  
  Alguns formatos de imagem — por exemplo, DirectDraw Surface (.dds) — dão suporte a transparência. Há várias maneiras de usar transparências, dependendo da ferramenta que você está usando. Para especificar o nível de transparência de uma seleção de cor, na janela **Propriedades**, defina o componente **A** (alfa) da seleção de cores. Veja aqui como a transparência é aplicada nos diferentes tipos de controle de ferramentas:  
@@ -166,7 +166,7 @@ Este documento descreve como trabalhar com o Editor de Imagens do [!INCLUDE[vspr
 |Fatia de Profundidade|A fatia de profundidade atual. Somente a primeira fatia pode ser exibida; todas as demais fatias são perdidas quando a imagem é salva.|  
   
 > [!NOTE]
->  Como a propriedade **Girar por** se aplica a todas as ferramentas e regiões selecionadas, ela sempre aparece na parte inferior da janela **Propriedades** junto com outras propriedades de ferramenta. **Girar por** sempre é exibido, pois a imagem inteira é implicitamente selecionada quando não há nenhuma outra seleção ou ferramenta ativa. Para obter mais informações sobre a propriedade **Girar por**, consulte as [Propriedades de Ferramenta](#ToolProperties).  
+> Como a propriedade **Girar por** se aplica a todas as ferramentas e regiões selecionadas, ela sempre aparece na parte inferior da janela **Propriedades** junto com outras propriedades de ferramenta. **Girar por** sempre é exibido, pois a imagem inteira é implicitamente selecionada quando não há nenhuma outra seleção ou ferramenta ativa. Para obter mais informações sobre a propriedade **Girar por**, consulte as [Propriedades de Ferramenta](#ToolProperties).  
   
 #### <a name="resizing-images"></a>Redimensionando imagens  
  Essas são duas maneiras de redimensionar uma imagem. Em ambos os casos, o Editor de Imagens usa interpolação bi-linear para obter uma nova amostra da imagem.  

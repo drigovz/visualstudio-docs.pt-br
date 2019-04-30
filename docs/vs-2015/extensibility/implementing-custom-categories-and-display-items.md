@@ -11,12 +11,12 @@ ms.assetid: 99311a93-d642-4344-bbf9-ff6e7fa5bf7f
 caps.latest.revision: 26
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f84d66a1dc51baffe743b1f7c16b4bf0ff15ef3a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 474d5c66507b56bea609568b6acfe9f5eff75e9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117896"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414601"
 ---
 # <a name="implementing-custom-categories-and-display-items"></a>Implementação de categorias personalizadas e itens de exibição
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -90,7 +90,7 @@ Um VSPackage pode fornecer controle de fontes e cores do texto para o [!INCLUDE[
   - Exibir informações para cada membro da **categoria**.  
   
   > [!NOTE]
-  >  Cada **categoria** deve conter pelo menos um **item de exibição**.  
+  > Cada **categoria** deve conter pelo menos um **item de exibição**.  
   
 - O IDE usa o `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup` interface para definir uma união de várias categorias.  
   
@@ -122,7 +122,7 @@ Um VSPackage pode fornecer controle de fontes e cores do texto para o [!INCLUDE[
      Isso pode ser feito por meio do sistema implementado <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface. Embora principalmente para oferecer suporte a persistência, o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> método pode ser usado para obter informações de fonte e cor para **exibir itens**. Para obter mais informações, consulte [acessar fonte armazenados e as configurações de cor](../extensibility/accessing-stored-font-and-color-settings.md).  
   
     > [!NOTE]
-    >  Para garantir que os resultados obtidos por meio de sondagem estão corretos, talvez seja útil usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interface para determinar se uma liberação do cache e atualização são necessários antes de chamar os métodos de recuperação do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
+    > Para garantir que os resultados obtidos por meio de sondagem estão corretos, talvez seja útil usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interface para determinar se uma liberação do cache e atualização são necessários antes de chamar os métodos de recuperação do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A>   

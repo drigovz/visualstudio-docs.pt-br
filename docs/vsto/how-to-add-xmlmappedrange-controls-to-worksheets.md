@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cef35cd1aa19ad27e7c47227b726a44756b0fae8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60f1fe8330e3a40676738c4187273ee60215db6d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427441"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>Como: Adicionar controles XMLMappedRange a planilhas
   Quando você mapeia um elemento XML a uma célula no Microsoft Office Excel, o Visual Studio adiciona automaticamente um <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controle à sua planilha.
@@ -26,7 +26,7 @@ ms.locfileid: "60085704"
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
 > [!NOTE]
->  O <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controle não está disponível na **caixa de ferramentas** ou o **fontes de dados** janela. Além disso, não é possível criar <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controla por meio de programação.
+> O <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controle não está disponível na **caixa de ferramentas** ou o **fontes de dados** janela. Além disso, não é possível criar <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> controla por meio de programação.
 
 ## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>Para adicionar um controle XMLMappedRange a uma planilha
 
@@ -37,7 +37,7 @@ ms.locfileid: "60085704"
 3. Sobre o **Developer** , clique em **origem**.
 
     > [!NOTE]
-    >  Se o **desenvolvedor** guia não estiver visível na faixa de opções, você deve habilitá-lo. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Se o **desenvolvedor** guia não estiver visível na faixa de opções, você deve habilitá-lo. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
      O **código-fonte XML** painel de tarefas é exibida.
 
@@ -58,7 +58,7 @@ ms.locfileid: "60085704"
      Um <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> é criado e adicionado ao projeto.
 
     > [!NOTE]
-    >  Se você arrastar um elemento pai do **origem XML** painel de tarefas, uma <xref:Microsoft.Office.Tools.Excel.ListObject> controle é criado.
+    > Se você arrastar um elemento pai do **origem XML** painel de tarefas, uma <xref:Microsoft.Office.Tools.Excel.ListObject> controle é criado.
 
 ## <a name="see-also"></a>Consulte também
 - [Controle XmlMappedRange](../vsto/xmlmappedrange-control.md)

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 12a64f35e7d530b80e44f3098035093509766c60
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 436fefd425da46cea6a8cd1aba95fb9eb14362f7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113021"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418955"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>Como: Atualizar o texto do indicador de forma programática
   Você pode inserir texto em um indicador de espaço reservado em um documento do Microsoft Office Word para que você possa recuperar o texto em um momento posterior, ou para substituir o texto em um indicador. Se você estiver desenvolvendo uma personalização no nível de documento, você também pode atualizar o texto em um <xref:Microsoft.Office.Tools.Word.Bookmark> controle que está associado a dados. Para obter mais informações, consulte [ligar dados a controles em soluções do Office](../vsto/binding-data-to-controls-in-office-solutions.md).
@@ -45,7 +45,7 @@ ms.locfileid: "60113021"
 1. Criar um procedimento que usa um `bookmark` argumento para o nome do indicador e uma `newText` argumento da cadeia de caracteres atribuir ao <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> propriedade.
 
     > [!NOTE]
-    >  Atribuição de texto para o <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> ou <xref:Microsoft.Office.Tools.Word.Bookmark.FormattedText%2A> propriedade de um <xref:Microsoft.Office.Tools.Word.Bookmark> controle não faz com que o indicador a ser excluído.
+    > Atribuição de texto para o <xref:Microsoft.Office.Tools.Word.Bookmark.Text%2A> ou <xref:Microsoft.Office.Tools.Word.Bookmark.FormattedText%2A> propriedade de um <xref:Microsoft.Office.Tools.Word.Bookmark> controle não faz com que o indicador a ser excluído.
 
      [!code-vb[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#63)]
      [!code-csharp[Trin_VstcoreWordAutomation#63](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#63)]
@@ -62,7 +62,7 @@ ms.locfileid: "60113021"
 1. Criar um procedimento que tem um `bookmark` argumento para o nome da <xref:Microsoft.Office.Interop.Word.Bookmark>e um `newText` argumento da cadeia de caracteres atribuir ao <xref:Microsoft.Office.Interop.Word.Range.Text%2A> propriedade do indexador.
 
     > [!NOTE]
-    >  Atribuir o texto a uma palavra nativa <xref:Microsoft.Office.Interop.Word.Bookmark> objeto faz com que o indicador a ser excluído.
+    > Atribuir o texto a uma palavra nativa <xref:Microsoft.Office.Interop.Word.Bookmark> objeto faz com que o indicador a ser excluído.
 
      [!code-vb[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#65)]
      [!code-csharp[Trin_VstcoreWordAutomation#65](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#65)]

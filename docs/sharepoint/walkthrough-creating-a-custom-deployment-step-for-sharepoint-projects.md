@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2d4f42793c061436fee83e007def9f1d7e1d8f7c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: facf9b32553ada46ed969aa6e616f20eb378fd60
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040166"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430426"
 ---
 # <a name="walkthrough-create-a-custom-deployment-step-for-sharepoint-projects"></a>Passo a passo: Criar uma etapa de implantação para projetos do SharePoint
   Quando você implanta um projeto do SharePoint, o Visual Studio executa uma série de etapas de implantação em uma ordem específica. O Visual Studio inclui várias etapas de implantação interna, mas você também pode criar seus próprios.
@@ -74,7 +74,7 @@ ms.locfileid: "60040166"
 3. No **novo projeto** diálogo caixa, expanda o **Visual c#** ou **Visual Basic** nós e, em seguida, escolha o **extensibilidade** nó.
 
     > [!NOTE]
-    >  O **extensibilidade** o nó está disponível somente se você instalar o SDK do Visual Studio. Para obter mais informações, consulte a seção pré-requisitos no início deste tópico.
+    > O **extensibilidade** o nó está disponível somente se você instalar o SDK do Visual Studio. Para obter mais informações, consulte a seção pré-requisitos no início deste tópico.
 
 4. Na parte superior da caixa de diálogo, escolha **.NET Framework 4.5** na lista de versões do .NET Framework.
 
@@ -147,7 +147,7 @@ ms.locfileid: "60040166"
 1. No **DeploymentStepExtension** do projeto, abra o arquivo de código UpgradeStep e, em seguida, cole o seguinte código nele.
 
     > [!NOTE]
-    >  Depois que você adicionar esse código, o projeto terá alguns erros de compilação, mas eles desaparecem quando você adiciona código em etapas posteriores.
+    > Depois que você adicionar esse código, o projeto terá alguns erros de compilação, mas eles desaparecem quando você adiciona código em etapas posteriores.
 
      [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/deploymentstepextension/upgradestep.cs#1)]
      [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#1](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/deploymentstepextension/upgradestep.vb#1)]
@@ -205,7 +205,7 @@ ms.locfileid: "60040166"
 6. No **tipo** , escolha **mefcomponent**.
 
     > [!NOTE]
-    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. No **fonte** , escolha **um projeto na solução atual**.
 
@@ -218,7 +218,7 @@ ms.locfileid: "60040166"
 10. No **tipo** , digite **SharePoint.Commands.v4**.
 
     > [!NOTE]
-    >  Esse elemento Especifica uma extensão personalizada que você deseja incluir na extensão do Visual Studio. Para obter mais informações, consulte [ativo Element (esquema de VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Esse elemento Especifica uma extensão personalizada que você deseja incluir na extensão do Visual Studio. Para obter mais informações, consulte [ativo Element (esquema de VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
 11. No **fonte** , escolha **um projeto na solução atual**.
 
@@ -262,7 +262,7 @@ ms.locfileid: "60040166"
 6. Sob **qual é o nível de confiança para essa solução do SharePoint**, escolha o **implantar como uma solução de farm** botão de opção.
 
    > [!NOTE]
-   >  A etapa de implantação de atualização não oferece suporte a soluções em área restrita.
+   > A etapa de implantação de atualização não oferece suporte a soluções em área restrita.
 
 7. Escolha o **concluir** botão.
 

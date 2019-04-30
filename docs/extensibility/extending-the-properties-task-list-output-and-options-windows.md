@@ -15,12 +15,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3bf289a20f206db5aede2de01ddc2030c52b8fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a0e38daa68999da32c3b667a5e220c622b012667
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078376"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417230"
 ---
 # <a name="extend-the-properties-task-list-output-and-options-windows"></a>Estender as janelas de propriedades, lista de tarefas, saída e opções
 Você pode acessar qualquer janela de ferramentas no Visual Studio. Este passo a passo mostra como integrar informações sobre sua janela de ferramentas em uma nova **opções** página e uma nova configuração na **propriedades** página e também como gravar na **listadetarefas** e **saída** windows.
@@ -33,7 +33,7 @@ Você pode acessar qualquer janela de ferramentas no Visual Studio. Este passo a
 1. Crie um projeto chamado **TodoList** usando o modelo VSIX e adicionar um modelo de item da janela de ferramenta personalizada denominado **TodoWindow**.
 
     > [!NOTE]
-    >  Para obter mais informações sobre como criar uma extensão com uma janela de ferramentas, consulte [criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md).
+    > Para obter mais informações sobre como criar uma extensão com uma janela de ferramentas, consulte [criar uma extensão com uma janela de ferramentas](../extensibility/creating-an-extension-with-a-tool-window.md).
 
 ## <a name="set-up-the-tool-window"></a>Configurar a janela da ferramenta
  Adicione uma caixa de texto no qual você pode digitar um novo item ToDo, um botão para adicionar o novo item à lista e uma caixa de listagem para exibir os itens na lista.
@@ -41,7 +41,7 @@ Você pode acessar qualquer janela de ferramentas no Visual Studio. Este passo a
 1. Na *TodoWindow.xaml*, excluir os controles de botão, a caixa de texto e o StackPanel de UserControl.
 
     > [!NOTE]
-    >  Isso não exclui os **button1_Click** manipulador de eventos, que serão reutilizados em uma etapa posterior.
+    > Isso não exclui os **button1_Click** manipulador de eventos, que serão reutilizados em uma etapa posterior.
 
 2. Do **todos os controles do WPF** seção o **caixa de ferramentas**, arraste uma **tela** controle à grade.
 

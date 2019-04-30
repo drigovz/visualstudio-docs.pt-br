@@ -11,21 +11,21 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d07ba77739b4ff9749591405daf12fa66bae94e5
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 255d752e09a14e784de276fbed0d86a587bc4512
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56715934"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411235"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>Como: Depurar um mecanismo de depuração personalizado
 O mecanismo de depuração (DES) é iniciado de um tipo de projeto na <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> método. Isso significa que a Alemanha é iniciada sob o controle da instância do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] controlar o tipo de projeto. No entanto, essa instância do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] não é possível depurar o DE. A seguir estão as etapas que permitem a depuração DE seu personalizado.
 
 > [!NOTE]
->  :     No procedimento "Debug um mecanismo de depuração personalizado", você deve aguardar o DE iniciar antes que você pode anexar a ela. Se você colocar uma caixa de mensagem no início do seu DE que aparece quando o DE é iniciado, você pode anexar nesse momento e, em seguida, desmarque a caixa de mensagem para continuar. Dessa forma, você pode capturar todos os eventos DE.
+> :     No procedimento "Debug um mecanismo de depuração personalizado", você deve aguardar o DE iniciar antes que você pode anexar a ela. Se você colocar uma caixa de mensagem no início do seu DE que aparece quando o DE é iniciado, você pode anexar nesse momento e, em seguida, desmarque a caixa de mensagem para continuar. Dessa forma, você pode capturar todos os eventos DE.
 
 > [!WARNING]
->  Você deve ter a depuração remota instalados antes de tentar os procedimentos a seguir. Ver [depuração remota](../../debugger/remote-debugging.md) para obter detalhes.
+> Você deve ter a depuração remota instalados antes de tentar os procedimentos a seguir. Ver [depuração remota](../../debugger/remote-debugging.md) para obter detalhes.
 
 ## <a name="debug-a-custom-debug-engine"></a>Depurar um mecanismo de depuração personalizado
 

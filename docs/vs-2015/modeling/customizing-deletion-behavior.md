@@ -13,12 +13,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d22db963f895c4ca53a44e20bc0babd0dff49853
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fa7db2f55a89bd6c542bff0cf30ee058e339f15c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433281"
 ---
 # <a name="customizing-deletion-behavior"></a>Personalizando o comportamento da operação de excluir
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ A exclusão de um elemento geralmente provoca também a exclusão de seus elemen
  As opções no arquivo Definição de DSL só permitem que você escolha se a exclusão se propaga para um vizinho imediato ou não. Para implementar um esquema mais complexo de propagação de exclusão, você pode gravar o código do programa.  
   
 > [!NOTE]
->  Para adicionar o código de programa à definição de DSL, crie um arquivo de código separado na **Dsl** de projeto e escreva definições parciais para aumentar as classes na pasta código gerado. Para obter mais informações, consulte [escrevendo código para personalizar uma linguagem específica do domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
+> Para adicionar o código de programa à definição de DSL, crie um arquivo de código separado na **Dsl** de projeto e escreva definições parciais para aumentar as classes na pasta código gerado. Para obter mais informações, consulte [escrevendo código para personalizar uma linguagem específica do domínio](../modeling/writing-code-to-customise-a-domain-specific-language.md).  
   
 ## <a name="closure"></a> Definindo um fechamento de exclusão  
  A operação de exclusão usa a classe _YourModel_**DeleteClosure** para determinar quais os elementos excluir, de acordo com uma seleção inicial. Ela chama `ShouldVisitRelationship()` e `ShouldVisitRolePlayer()` repetidamente, percorrendo o gráfico de relações. Você pode substituir esses métodos. ShouldVisitRolePlayer é fornecido com a identidade de um vínculo e o elemento de uma das funções do vínculo. Ele deve retornar um dos seguintes valores:  
@@ -213,7 +213,7 @@ partial class Artist
      Para obter mais informações, consulte [manipuladores de propagar alterações fora o modelo de evento](../modeling/event-handlers-propagate-changes-outside-the-model.md).  
   
     > [!WARNING]
-    >  Quando um elemento é excluído, você pode acessar seus valores de propriedade de domínio, mas não é possível navegar nos vínculos de relação. No entanto, se você definir um evento excluído em um relacionamento, também poderá acessar os dois elementos que eram seus usuários. Assim, se você quiser responder à exclusão de um elemento de modelo, mas quiser acessar um elemento ao qual ele estava vinculado, defina um evento de exclusão no relacionamento em vez da classe de domínio do elemento modelo.  
+    > Quando um elemento é excluído, você pode acessar seus valores de propriedade de domínio, mas não é possível navegar nos vínculos de relação. No entanto, se você definir um evento excluído em um relacionamento, também poderá acessar os dois elementos que eram seus usuários. Assim, se você quiser responder à exclusão de um elemento de modelo, mas quiser acessar um elemento ao qual ele estava vinculado, defina um evento de exclusão no relacionamento em vez da classe de domínio do elemento modelo.  
   
 ### <a name="example-deletion-rules"></a>Exemplo de regras de exclusão  
   

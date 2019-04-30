@@ -15,12 +15,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a39b6f84185c78ccea11e09e628050a6bf4f601
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e6bbbd4fa2ad051407ece3e05c1806c1231ef2e8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053386"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437125"
 ---
 # <a name="immediate-window"></a>Janela imediata
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ A janela **Imediato** é usada para depurar e avaliar expressões, executar inst
  As duas versões desse comando retornarão o valor da variável `varA`.  
   
 > [!NOTE]
->  Para emitir um comando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] na janela **Imediato**, você deve preceder o comando com um sinal de maior que (>). Para inserir vários comandos, mude para a janela **Comando**.  
+> Para emitir um comando [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] na janela **Imediato**, você deve preceder o comando com um sinal de maior que (>). Para inserir vários comandos, mude para a janela **Comando**.  
   
 ## <a name="design-time-expression-evaluation"></a>Avaliação de expressões em tempo de design  
  Você pode usar a janela **Imediato** para executar uma função ou sub-rotina em tempo de design.  

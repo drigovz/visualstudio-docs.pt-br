@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03f3c9ca624f0cccae5f9a21573fdcf01b7e9143
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1bf74bb93901cbd1637efd22690b8b1ba52f6b97
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425730"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Interfaces e campos da janela Propriedades
 O modelo para a seleção determinar quais informações são exibidas na **propriedades** janela baseia-se na janela que tem o foco no IDE. Cada janela e o objeto dentro da janela selecionada, podem ter seu objeto de contexto de seleção enviados por push para o contexto da seleção global. O ambiente atualiza o contexto da seleção global com valores de um quadro de janela quando essa janela tem o foco. Quando o foco é alterado, portanto, não o contexto da seleção.
@@ -81,7 +81,7 @@ Na parte inferior a **propriedades** janela, uma área de descrição exibe info
 1. Adicione a `helpstringdll` para a instrução library na biblioteca de tipos de atributo (`typelib`).
 
    > [!NOTE]
-   >  Esta etapa é opcional se a biblioteca de tipos está em um arquivo de biblioteca (. olb) do objeto.
+   > Esta etapa é opcional se a biblioteca de tipos está em um arquivo de biblioteca (. olb) do objeto.
 
 2. Especificar `helpstringcontext` atributos para as cadeias de caracteres. Você também pode especificar `helpstring` atributos.
 

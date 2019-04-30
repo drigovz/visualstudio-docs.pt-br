@@ -15,12 +15,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18ea294c204f1512aaa3eeae904eed52edf8e9f2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b490b379df401f4eb0c680524be8bac91dee410
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114139"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437022"
 ---
 # <a name="configure-service-reference-dialog-box"></a>Caixa de diálogo Configurar Referência de Serviço
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "60114139"
 O **Configure Service Reference** caixa de diálogo permite que você configure o comportamento de [!INCLUDE[vsindigo](../includes/vsindigo-md.md)] serviços.  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha Importar e Exportar Configurações no menu Ferramentas. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Para acessar o **Configure Service Reference** caixa de diálogo, o botão direito do mouse, um serviço de referência na **Gerenciador de soluções** e escolha **configurar referência de serviço**. Você também pode acessar a caixa de diálogo clicando o **Advanced** botão na **Adicionar caixa de diálogo de referência de serviço**.  
   
@@ -51,13 +51,13 @@ O **Configure Service Reference** caixa de diálogo permite que você configure 
  Usado para atualizar o endereço da Web onde o procura uma referência de serviço para um serviço. Por exemplo, durante o desenvolvimento de serviço pode estar hospedado em um servidor de desenvolvimento e posteriormente movido para um servidor de produção, a necessidade de uma alteração de endereço.  
   
 > [!NOTE]
->  O elemento de endereço não está disponível quando o **Configure Service Reference** caixa de diálogo é exibida da **Adicionar caixa de diálogo de referência de serviço**.  
+> O elemento de endereço não está disponível quando o **Configure Service Reference** caixa de diálogo é exibida da **Adicionar caixa de diálogo de referência de serviço**.  
   
  **Nível de acesso para classes geradas**  
  Determina o nível de acesso do código para classes de cliente do WCF.  
   
 > [!NOTE]
->  Para projetos de site, essa opção é sempre definida como `Public` e não pode ser alterado. Para obter mais informações, consulte [solução de problemas de referências de serviço](../data-tools/troubleshooting-service-references.md).  
+> Para projetos de site, essa opção é sempre definida como `Public` e não pode ser alterado. Para obter mais informações, consulte [solução de problemas de referências de serviço](../data-tools/troubleshooting-service-references.md).  
   
  **Gerar operações assíncronas**  
  Determina se os métodos de serviço WCF serão ser chamados de forma síncrona (o padrão) ou assíncrona.  
@@ -90,10 +90,10 @@ O **Configure Service Reference** caixa de diálogo permite que você configure 
  Exibe o [NIB: Adicionar caixa de diálogo de referência da Web](http://msdn.microsoft.com/bdf05776-c591-40af-bfd7-e1e2aa1e87b5).  
   
 > [!NOTE]
->  Essa opção deve ser usada somente para projetos que usam a versão 2.0 do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
+> Essa opção deve ser usada somente para projetos que usam a versão 2.0 do [!INCLUDE[dnprdnshort](../includes/dnprdnshort-md.md)].  
   
 > [!NOTE]
->  O **Add Web Reference** botão está disponível apenas quando o **Configure Service Reference** caixa de diálogo é exibida da **Adicionar caixa de diálogo de referência de serviço**.  
+> O **Add Web Reference** botão está disponível apenas quando o **Configure Service Reference** caixa de diálogo é exibida da **Adicionar caixa de diálogo de referência de serviço**.  
   
 ## <a name="see-also"></a>Consulte também  
  [Como: Adicionar, atualizar ou remover uma referência de serviço](http://msdn.microsoft.com/library/cacc14bd-4455-4a44-be78-d2ac16113dd9)   

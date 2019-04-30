@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 1be553955abdc42c2a9b4d09ff857e9236b1a002
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6cac959fb4f9c52849e6e121943fd847deb923d0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427396"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>Como: Importar uma página mestra ou tema
   Você pode dar o páginas no site do SharePoint uma aparência consistente, criando e usando páginas mestras e temas. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] não fornece modelos para esses elementos, mas você pode criá-los no SharePoint Designer e, em seguida, importá-los para [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]. Para obter mais informações, consulte [bloco de construção: Interface do usuário e páginas](http://go.microsoft.com/fwlink/?LinkID=182095) no site da Microsoft.
@@ -48,7 +48,7 @@ ms.locfileid: "60081900"
 8. Se você tiver adicionado uma página mestra, altere sua **resolução de conflitos de implantação** definir como **automático** nas propriedades do módulo.
 
     > [!NOTE]
-    >  Podem ocorrer erros se o nome da página mestra for igual ao nome de uma página mestra existente que está marcado como página padrão do mestre ou página mestra personalizada. Para obter informações sobre como resolver esse problema, consulte [passo a passo: Importar uma página mestra personalizada e a página do site com uma imagem](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
+    > Podem ocorrer erros se o nome da página mestra for igual ao nome de uma página mestra existente que está marcado como página padrão do mestre ou página mestra personalizada. Para obter informações sobre como resolver esse problema, consulte [passo a passo: Importar uma página mestra personalizada e a página do site com uma imagem](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md).
 
 9. O módulo, abra *Elements. XML*.
 
@@ -81,7 +81,7 @@ ms.locfileid: "60081900"
      Um valor de **Web** significa que a página mestra se aplica somente ao site que é especificado no momento no projeto. Um valor de **Site** significa que a página mestra se aplica à coleção de site atual, que inclui todos os subsites e web raiz. Não se aplicam os outros valores.
 
     > [!NOTE]
-    >  Como os temas se aplicam somente ao nível de coleção de sites, é recomendável que você não definir o escopo de um tema para qualquer coisa diferente de **Site**. Podem ocorrer erros se um tema é usado em um subsite.
+    > Como os temas se aplicam somente ao nível de coleção de sites, é recomendável que você não definir o escopo de um tema para qualquer coisa diferente de **Site**. Podem ocorrer erros se um tema é usado em um subsite.
 
 12. Na barra de menus, escolha **construir** > **implantar solução**.
 

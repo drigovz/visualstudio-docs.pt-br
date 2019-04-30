@@ -8,12 +8,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 3664061cf8c1233f3aa25341b5c77c21de51d2c7
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 1923b2c41675bfcf20ca1f9c0035dd1e500debe4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927231"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425431"
 ---
 # <a name="ca3075-insecure-dtd-processing"></a>CA3075: Processamento de DTD não seguro
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -68,7 +68,7 @@ ms.locfileid: "58927231"
 - Certifique-se de que o método Load () usa uma instância de XmlReader em todos os casos de InnerXml.
 
 > [!NOTE]
->  Essa regra pode relatar falsos positivos em algumas instâncias de XmlSecureResolver válidas. Estamos trabalhando para resolver esse problema em meados de 2016.
+> Essa regra pode relatar falsos positivos em algumas instâncias de XmlSecureResolver válidas. Estamos trabalhando para resolver esse problema em meados de 2016.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  A menos que você tiver certeza de que a entrada é conhecida por ser de uma fonte confiável, não suprima uma regra deste aviso.

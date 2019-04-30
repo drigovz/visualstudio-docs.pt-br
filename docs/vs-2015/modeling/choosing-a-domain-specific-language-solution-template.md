@@ -11,12 +11,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 943493273808afdb2dfb099ff1f44900028e4dd6
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 36b821219b02fa77171d89214d8cf4813ce92303
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929685"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433394"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>Escolhendo um modelo de solução de linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Para criar uma solução de linguagem específica de domínio, escolha um dos mo
  Os seguintes modelos de solução estão disponíveis no Assistente de Designer de linguagem específica do domínio.  
   
 > [!NOTE]
->  A finalidade dos modelos é fornecer uma DSL de partida. Os modelos de diagramas de classe e componente de chamada não estão completos diagramas UML. Se você quiser criar um modelo UML, considere a ferramentas, que fornecem um conjunto de diagramas são integrados em um único modelo de modelagem UML. Elas são extensíveis e podem ser integradas à sua DSL usando ModelBus. Para obter mais informações, consulte [criar modelos para o aplicativo](../modeling/create-models-for-your-app.md).  
+> A finalidade dos modelos é fornecer uma DSL de partida. Os modelos de diagramas de classe e componente de chamada não estão completos diagramas UML. Se você quiser criar um modelo UML, considere a ferramentas, que fornecem um conjunto de diagramas são integrados em um único modelo de modelagem UML. Elas são extensíveis e podem ser integradas à sua DSL usando ModelBus. Para obter mais informações, consulte [criar modelos para o aplicativo](../modeling/create-models-for-your-app.md).  
   
 |Modelo|Recursos|Descrição|  
 |--------------|--------------|-----------------|  

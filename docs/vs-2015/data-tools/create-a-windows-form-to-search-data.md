@@ -20,12 +20,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a6080539a3f8b5f93a8d6fcd144dbd26dbd9eeaf
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: f12e8e50b07157f581635fcbd43dbe7863ec40f1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59667008"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436934"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>Criar um Windows Form para pesquisar dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,35 +38,35 @@ Um cenário de aplicativo comum exibirá dados selecionados em um formulário. P
   
  As tarefas ilustradas neste passo a passo incluem:  
   
--   Criar um novo projeto de aplicativo do Windows Forms.  
+- Criar um novo projeto de aplicativo do Windows Forms.  
   
--   Criando e configurando a fonte de dados em seu aplicativo com o **configuração de fonte de dados** assistente.  
+- Criando e configurando a fonte de dados em seu aplicativo com o **configuração de fonte de dados** assistente.  
   
--   Definição do tipo subjacente dos itens na **fontes de dados** janela.  
+- Definição do tipo subjacente dos itens na **fontes de dados** janela.  
   
--   Criar controles que exibem dados arrastando itens da janela **Fontes de Dados** para um formulário.  
+- Criar controles que exibem dados arrastando itens da janela **Fontes de Dados** para um formulário.  
   
--   Adicionar controles para exibir os dados no formulário.  
+- Adicionar controles para exibir os dados no formulário.  
   
--   Concluindo a **construtor de critérios de pesquisa** caixa de diálogo.  
+- Concluindo a **construtor de critérios de pesquisa** caixa de diálogo.  
   
--   Inserir parâmetros no formulário e executar a consulta parametrizada.  
+- Inserir parâmetros no formulário e executar a consulta parametrizada.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para concluir este passo a passo, você precisará de:  
   
--   Acesso ao banco de dados de exemplo Northwind.  
+- Acesso ao banco de dados de exemplo Northwind.  
   
 ## <a name="create-the-windows-application"></a>Criar o aplicativo do Windows  
  A primeira etapa é criar uma **aplicativo do Windows**. Atribuir um nome para o projeto é opcional nesta etapa, mas você dar a ele um nome aqui porque você salvá-lo mais tarde.  
   
 #### <a name="to-create-the-new-windows-application-project"></a>Para criar o novo projeto de Aplicativo do Windows  
   
-1.  Dos **arquivo** menu, crie um novo projeto.  
+1. Dos **arquivo** menu, crie um novo projeto.  
   
-2.  Nomeie o projeto `WindowsSearchForm`.  
+2. Nomeie o projeto `WindowsSearchForm`.  
   
-3.  Selecione **aplicativo do Windows** e clique em **Okey**.  
+3. Selecione **aplicativo do Windows** e clique em **Okey**.  
   
      O projeto **WindowsSearchForm** é criado e adicionado ao **Gerenciador de Soluções**.  
   
@@ -75,25 +75,25 @@ Um cenário de aplicativo comum exibirá dados selecionados em um formulário. P
   
 #### <a name="to-create-the-data-source"></a>Para criar a fonte de dados  
   
-1.  No menu **Dados**, clique em **Mostrar Fontes de Dados**.  
+1. No menu **Dados**, clique em **Mostrar Fontes de Dados**.  
   
-2.  Na janela **Fontes de Dados**, selecione **Adicionar Nova Fonte de Dados** para iniciar o assistente de **Configuração de Fonte de Dados**.  
+2. Na janela **Fontes de Dados**, selecione **Adicionar Nova Fonte de Dados** para iniciar o assistente de **Configuração de Fonte de Dados**.  
   
-3.  Selecione **Banco de Dados** na página **Escolher um Tipo de Fonte de Dados** e, em seguida, clique em **Avançar**.  
+3. Selecione **Banco de Dados** na página **Escolher um Tipo de Fonte de Dados** e, em seguida, clique em **Avançar**.  
   
-4.  Na página **Escolha a Conexão de Dados**, faça o seguinte:  
+4. Na página **Escolha a Conexão de Dados**, faça o seguinte:  
   
-    -   Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.  
+    - Se uma conexão de dados com o banco de dados de exemplo Northwind estiver disponível na lista suspensa, selecione-o.  
   
-    -   Selecione **Nova Conexão** para inicializar a caixa de diálogo **Adicionar/Modificar Conexão**.  
+    - Selecione **Nova Conexão** para inicializar a caixa de diálogo **Adicionar/Modificar Conexão**.  
   
-5.  Se o banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, clique em **Avançar**.  
+5. Se o banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, clique em **Avançar**.  
   
-6.  Sobre o **salvar a cadeia de caracteres de conexão para o arquivo de configuração de aplicativo** , clique em **próxima**.  
+6. Sobre o **salvar a cadeia de caracteres de conexão para o arquivo de configuração de aplicativo** , clique em **próxima**.  
   
-7.  Sobre o **Choose your Database Objects** página, expanda o **tabelas** nó.  
+7. Sobre o **Choose your Database Objects** página, expanda o **tabelas** nó.  
   
-8.  Selecione a tabela **Clientes** e clique em **Concluir**.  
+8. Selecione a tabela **Clientes** e clique em **Concluir**.  
   
      O **NorthwindDataSet** é adicionado ao seu projeto e a tabela **Clientes** aparece na janela **Fontes de Dados**.  
   
@@ -102,9 +102,9 @@ Um cenário de aplicativo comum exibirá dados selecionados em um formulário. P
   
 #### <a name="to-create-data-bound-controls-on-the-form"></a>Para criar controles de associação de dados no formulário  
   
-1.  Expanda o nó **Clientes** na janela **Fontes de Dados**.  
+1. Expanda o nó **Clientes** na janela **Fontes de Dados**.  
   
-2.  Arraste o nó **Clientes** da janela **Fontes de Dados** para o formulário.  
+2. Arraste o nó **Clientes** da janela **Fontes de Dados** para o formulário.  
   
      Um <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) para navegação em registros são exibidos no formulário. Um [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md), CustomersTableAdapter, <xref:System.Windows.Forms.BindingSource> e <xref:System.Windows.Forms.BindingNavigator> são exibidos na bandeja de componentes.  
   
@@ -113,11 +113,11 @@ Um cenário de aplicativo comum exibirá dados selecionados em um formulário. P
   
 #### <a name="to-create-a-parameterized-query-and-controls-to-enter-the-parameters"></a>Para criar uma consulta parametrizada e controles para inserir os parâmetros  
   
-1.  Selecione o controle <xref:System.Windows.Forms.DataGridView> e escolha **Adicionar Consulta** no menu **Dados**.  
+1. Selecione o controle <xref:System.Windows.Forms.DataGridView> e escolha **Adicionar Consulta** no menu **Dados**.  
   
-2.  Tipo `FillByCity` no **nome da nova consulta** área o **Pesquisar Construtor de critérios** caixa de diálogo.  
+2. Tipo `FillByCity` no **nome da nova consulta** área o **Pesquisar Construtor de critérios** caixa de diálogo.  
   
-3.  Adicione `WHERE City = @City` à consulta na área **Texto da Consulta**.  
+3. Adicione `WHERE City = @City` à consulta na área **Texto da Consulta**.  
   
      A consulta deve ser semelhante ao seguinte:  
   
@@ -128,9 +128,9 @@ Um cenário de aplicativo comum exibirá dados selecionados em um formulário. P
      `WHERE City = @City`  
   
     > [!NOTE]
-    >  Fontes de dados do Access e o OLE DB usam o ponto de interrogação ('? ') para denotar parâmetros, portanto, a cláusula WHERE seria algo como este: `WHERE City = ?`.  
+    > Fontes de dados do Access e o OLE DB usam o ponto de interrogação ('? ') para denotar parâmetros, portanto, a cláusula WHERE seria algo como este: `WHERE City = ?`.  
   
-4.  Clique em **OK** para fechar a caixa de diálogo **Construtor de Critérios de Pesquisa**.  
+4. Clique em **OK** para fechar a caixa de diálogo **Construtor de Critérios de Pesquisa**.  
   
      Um **FillByCityToolStrip** é adicionado ao formulário.  
   
@@ -139,18 +139,18 @@ Um cenário de aplicativo comum exibirá dados selecionados em um formulário. P
   
 #### <a name="to-test-the-application"></a>Para testar o aplicativo  
   
-1.  Pressione F5 para executar o aplicativo.  
+1. Pressione F5 para executar o aplicativo.  
   
-2.  Digite **Londres** na caixa de texto **Cidade** e clique em **FillByCity**.  
+2. Digite **Londres** na caixa de texto **Cidade** e clique em **FillByCity**.  
   
      A grade de dados é preenchida com os clientes que atendem aos critérios. Neste exemplo, a grade de dados exibe os clientes que têm o valor **Londres** na coluna **Cidade**.  
   
 ## <a name="next-steps"></a>Próximas etapas  
  Dependendo dos requisitos de aplicativo, existem várias etapas que você talvez queira realizar após criar um formulário parametrizado. Entre algumas das melhorias que você poderia fazer nessa explicação passo a passo estão:  
   
--   Adicionar controles que exibem dados relacionados.  
+- Adicionar controles que exibem dados relacionados.  
   
--   Editando o conjunto de dados para adicionar ou remover objetos de banco de dados. Para obter mais informações, consulte [Create and configure datasets (Criar e configurar conjuntos de dados)](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
+- Editando o conjunto de dados para adicionar ou remover objetos de banco de dados. Para obter mais informações, consulte [Create and configure datasets (Criar e configurar conjuntos de dados)](../data-tools/create-and-configure-datasets-in-visual-studio.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Associando controles do Windows Forms a dados no Visual Studio](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

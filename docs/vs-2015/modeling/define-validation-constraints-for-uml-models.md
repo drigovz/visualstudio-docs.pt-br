@@ -11,12 +11,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9591875b525d44e343f8326b7f5a145b04b57cff
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4107a5fb88392f9d02cca8f41b0f53d5844d9490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071156"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63422716"
 ---
 # <a name="define-validation-constraints-for-uml-models"></a>Definir restrições de validação para modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Você pode definir restrições de validação que testam se o modelo de atende 
     Para obter mais informações, consulte [avaliando a restrição de validação](#Implementing).  
   
    > [!IMPORTANT]
-   >  Certifique-se de que seu **. CS** arquivos contêm o seguinte `using` instrução:  
+   > Certifique-se de que seu **. CS** arquivos contêm o seguinte `using` instrução:  
    >   
    >  `using Microsoft.VisualStudio.ArchitectureTools.Extensibility.Uml;`  
   
@@ -223,7 +223,7 @@ using Microsoft.VisualStudio.Uml.Classes;
  O método de validação deve determinar se a restrição de validação que você deseja aplicar é true ou false. Se for true, ele deve fazer nada. Se false, ele deve relatar um erro usando os métodos fornecidos pelo `ValidationContext` parâmetro.  
   
 > [!NOTE]
->  Métodos de validação não devem alterar o modelo. Não há nenhuma garantia de quando ou em que ordem que as restrições serão executadas. Se você tiver que passar informações entre as execuções sucessivas de um método de validação dentro de uma execução de validação, você pode usar o cache de contexto descrito em [Coordenando várias validações](#ContextCache).  
+> Métodos de validação não devem alterar o modelo. Não há nenhuma garantia de quando ou em que ordem que as restrições serão executadas. Se você tiver que passar informações entre as execuções sucessivas de um método de validação dentro de uma execução de validação, você pode usar o cache de contexto descrito em [Coordenando várias validações](#ContextCache).  
   
  Por exemplo, se você quiser garantir que todos os tipos (classe, interface ou enumerador) tem um nome que seja pelo menos três caracteres, você pode usar esse método:  
   

@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 773a9f5a990b3432484c1ff13012b173c9fac1cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 50febcb027ec51b62bdde7ea06a7112470cdc247
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076218"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405852"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>Passo a passo: Implantar manualmente um aplicativo ClickOnce que não requer nova assinatura e que preserva informações de identidade Visual
 Quando você cria um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e, em seguida, dê a ele a um cliente para publicar e implantar, o cliente teve tradicionalmente atualizar o manifesto de implantação e assine-o novamente. Enquanto ainda é o método preferencial na maioria dos casos, o .NET Framework 3.5 permite que você crie [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] implantações que podem ser implantadas por clientes sem precisar regenerar um novo manifesto de implantação. Para obter mais informações, consulte [ClickOnce implantar aplicativos para servidores de teste e produção sem assinar novamente](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
@@ -35,7 +35,7 @@ Quando você cria um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
  Quando você cria um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo e, em seguida, dê a ele a um cliente para publicar e implantar, o aplicativo pode usar a identidade visual do cliente ou pode preservar a sua identidade visual. Por exemplo, se o aplicativo for um aplicativo proprietário único, você talvez queira preservar sua identidade visual. Se o aplicativo é altamente personalizado para cada cliente, você talvez queira usar a identidade visual do cliente. O .NET Framework 3.5 permite que você preserve sua identidade visual, informações do publicador e assinatura de segurança quando você der um aplicativo como uma organização para implantar. Para obter mais informações, consulte [ClickOnce criar aplicativos para que outros possam implantar](../deployment/creating-clickonce-applications-for-others-to-deploy.md).
 
 > [!NOTE]
->  Neste passo a passo é cria implantações manualmente usando a ferramenta de linha de comando *Mage.exe* ou a ferramenta gráfica *MageUI.exe*. Para obter mais informações sobre implantações manuais, consulte [passo a passo: Implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
+> Neste passo a passo é cria implantações manualmente usando a ferramenta de linha de comando *Mage.exe* ou a ferramenta gráfica *MageUI.exe*. Para obter mais informações sobre implantações manuais, consulte [passo a passo: Implantar manualmente um aplicativo ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Para executar as etapas neste passo a passo, você precisa do seguinte:
@@ -51,7 +51,7 @@ Quando você cria um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 2. Crie um diretório chamado depois da versão atual da sua implantação. Se essa for a primeira vez que você está implantando o aplicativo, você deverá escolher provavelmente **1.0.0.0**.
 
    > [!NOTE]
-   >  A versão da sua implantação pode ser diferente do que a versão dos arquivos do aplicativo.
+   > A versão da sua implantação pode ser diferente do que a versão dos arquivos do aplicativo.
 
 3. Criar um subdiretório chamado **bin** e copie todos os arquivos do aplicativo aqui, incluindo arquivos executáveis, assemblies, recursos e arquivos de dados.
 
@@ -101,7 +101,7 @@ Quando você cria um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_m
 3. Crie um subdiretório chamado depois da versão atual da sua implantação. Se essa for a primeira vez que você está implantando o aplicativo, você deverá escolher provavelmente **1.0.0.0**.
 
    > [!NOTE]
-   >  A versão da sua implantação pode ser diferente do que a versão dos arquivos do aplicativo.
+   > A versão da sua implantação pode ser diferente do que a versão dos arquivos do aplicativo.
 
 4. Mover o \\ **bin** diretório para o diretório que você criou na etapa 2.
 

@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dec32c47354f43cee33077985c122c92aaebc6f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: f70e8301b6a44397d351345fe3cb8fe0c3d3426e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56718112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414038"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 Recupera um nome amigável para o servidor.
@@ -42,7 +42,7 @@ int GetServerFriendlyName(
  [out] Retorna um nome amigável para o servidor.
 
 > [!NOTE]
->  O chamador é responsável por liberar a cadeia de caracteres.
+> O chamador é responsável por liberar a cadeia de caracteres.
 
 ## <a name="return-value"></a>Valor de retorno
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retornará o código de erro.

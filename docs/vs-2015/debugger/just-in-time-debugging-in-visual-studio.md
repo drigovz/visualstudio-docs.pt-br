@@ -16,12 +16,12 @@ caps.latest.revision: 51
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1f2d3f0bd70a4c7be82b991eb5397065fe3d4ee7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e78e23d7e176dffef1531da1af28d318253d9d1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431436"
 ---
 # <a name="just-in-time-debugging-in-visual-studio"></a>Depuração Just-In-Time no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -92,7 +92,7 @@ As ações que você deve executar quando você vir o Visual Studio Just-in-Time
 5. Fechar o **Editor do registro** janela.
 
 > [!NOTE]
->  Se você está tentando desabilitar depuração para um aplicativo do lado do servidor Just-In-Time e essas etapas não resolverem o problema, desative a depuração do lado do servidor nas configurações de aplicativo do IIS e tente novamente.
+> Se você está tentando desabilitar depuração para um aplicativo do lado do servidor Just-In-Time e essas etapas não resolverem o problema, desative a depuração do lado do servidor nas configurações de aplicativo do IIS e tente novamente.
 
 #### <a name="to-enable-just-in-time-debugging-of-a-windows-form"></a>Para habilitar a depuração Just-In-Time de um formulário do Windows
 
@@ -140,7 +140,7 @@ static void Main(string[] args)
 ```
 
 > [!IMPORTANT]
->  Para que este procedimento trabalhar um [configuração de versão](../debugger/how-to-set-debug-and-release-configurations.md), você precisará desativar [Just My Code](../debugger/just-my-code.md). No Visual Studio, clique em **Ferramentas / opções**. No **opções** caixa de diálogo, selecione **depuração**. Remover a seleção de **habilitar apenas meu código**.
+> Para que este procedimento trabalhar um [configuração de versão](../debugger/how-to-set-debug-and-release-configurations.md), você precisará desativar [Just My Code](../debugger/just-my-code.md). No Visual Studio, clique em **Ferramentas / opções**. No **opções** caixa de diálogo, selecione **depuração**. Remover a seleção de **habilitar apenas meu código**.
 
  Compile a solução (no Visual Studio, escolha **construir / recompilar solução**). Você pode escolher a depuração ou a configuração de versão. Para obter mais informações sobre configurações de build, consulte [Noções básicas sobre configurações de build](../ide/understanding-build-configurations.md).
 
@@ -157,7 +157,7 @@ static void Main(string[] args)
  Não clique **Cancelar**! Depois de alguns segundos, você deverá ver dois botões, **Debug** e **fechar programa**. Clique em **depurar**.
 
 > [!CAUTION]
->  Se seu aplicativo contém código não confiável, aparecerá uma caixa de diálogo com um aviso de segurança. Essa caixa de diálogo permite que você decida se deseja continuar com a depuração. Antes de prosseguir com a depuração, decida se você confia no código. Você mesmo escreveu o código? Você confia no programador? Se o aplicativo está sendo executado em um computador remoto, você reconhece o nome do processo? Mesmo que o aplicativo seja executado localmente, isso não significa necessariamente que ele é confiável. Considere a possibilidade de código mal-intencionado em execução no seu computador. Se você decidir que o código você está prestes a depurar é confiável, clique em **depurar**. Caso contrário, clique em **Don't Debug**.
+> Se seu aplicativo contém código não confiável, aparecerá uma caixa de diálogo com um aviso de segurança. Essa caixa de diálogo permite que você decida se deseja continuar com a depuração. Antes de prosseguir com a depuração, decida se você confia no código. Você mesmo escreveu o código? Você confia no programador? Se o aplicativo está sendo executado em um computador remoto, você reconhece o nome do processo? Mesmo que o aplicativo seja executado localmente, isso não significa necessariamente que ele é confiável. Considere a possibilidade de código mal-intencionado em execução no seu computador. Se você decidir que o código você está prestes a depurar é confiável, clique em **depurar**. Caso contrário, clique em **Don't Debug**.
 
  O **depurador do Visual Studio Just-in-** janela é exibida:
 

@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d74448479fc71af493ef720586541d92d614b24f
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 71d7da44eacecfc8a06f202a27f7758d6eb2ca98
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56696292"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415652"
 ---
 # <a name="supported-event-types"></a>Tipos de eventos com suporte
 Depuração do Visual Studio atualmente dá suporte aos seguintes tipos de evento:
@@ -43,7 +43,7 @@ Depuração do Visual Studio atualmente dá suporte aos seguintes tipos de event
     As interfaces [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) e [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) são exemplos de eventos de interrupção.
 
   > [!NOTE]
-  >  Não há suporte para eventos de interrupção assíncrona. É um erro ao enviar um evento de interrupção assíncrono.
+  > Não há suporte para eventos de interrupção assíncrona. É um erro ao enviar um evento de interrupção assíncrono.
 
 ## <a name="discussion"></a>Discussão
  A implementação real de eventos depende do design do seu DE. O tipo de cada evento enviado é determinado por seus atributos, que são definidos quando você projeta a Alemanha. Por exemplo, um Alemanha pode enviar uma [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) como um evento assíncrono, enquanto outro pode enviá-lo como um evento de interrupção.
@@ -51,7 +51,7 @@ Depuração do Visual Studio atualmente dá suporte aos seguintes tipos de event
  A tabela a seguir especifica quais parâmetros de thread e programa são necessários para o qual eventos, bem como os tipos de evento. Qualquer evento pode ser síncrono. Nenhum evento precisa ser síncronas.
 
 > [!NOTE]
->  O [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) interface é necessária para todos os eventos.
+> O [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) interface é necessária para todos os eventos.
 
 |evento|IDebugProgram2|IDebugThread2|Eventos de parada|
 |-----------|--------------------|-------------------|---------------------|
@@ -62,8 +62,8 @@ Depuração do Visual Studio atualmente dá suporte aos seguintes tipos de event
 |[IDebugBreakpointUnboundEvent2](../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)|Permitido, mas não obrigatórios|Permitido, mas não obrigatórios|Não|
 |[IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md)|Necessária|Necessária|Sim|
 |[IDebugCanStopEvent2](../../extensibility/debugger/reference/idebugcanstopevent2.md)|Necessária|Necessária|Não|
-|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|Não permitido|Não permitido|Não|
-|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|Não permitido|Não permitido|Não|
+|[IDebugDocumentTextEvents2](../../extensibility/debugger/reference/idebugdocumenttextevents2.md)|Não permitida|Não permitida|Não|
+|[IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md)|Não permitida|Não permitida|Não|
 |[IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md)|Necessária|Necessária|Sim|
 |[IDebugErrorEvent2](../../extensibility/debugger/reference/idebugerrorevent2.md)|Permitido, mas não obrigatórios|Permitido, mas não obrigatórios|Pode ser|
 |[IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md)|Necessária|Necessária|Sim|

@@ -17,12 +17,12 @@ caps.latest.revision: 27
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12c5fb2db92c70144e38aa3ca2110b8b3d5c354e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 630b2896e7446cf62982dd62ed12f9f7b7ca4aa9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105076"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427291"
 ---
 # <a name="start-a-debugging-session-for-store-apps-in-visual-studio-javascript"></a>Iniciar uma sessão de depuração para aplicativos da Store no Visual Studio (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
  Este tópico descreve como iniciar uma sessão de depuração para os aplicativos da Windows Store gravados em JavaScript e HTML5. Você pode iniciar a depuração com um único pressionamento de tecla ou configurar a sessão de depuração para cenários específicos e escolher a maneira de iniciar o aplicativo.
 
 > [!NOTE]
->  Para aplicativos escritos em XAML e Visual c#, Visual C++ ou Visual Basic, consulte [iniciar uma sessão de depuração (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
+> Para aplicativos escritos em XAML e Visual c#, Visual C++ ou Visual Basic, consulte [iniciar uma sessão de depuração (VB, c#, C++ e XAML)](../debugger/start-a-debugging-session-for-a-store-app-in-visual-studio-vb-csharp-cpp-and-xaml.md)
 
 ## <a name="BKMK_In_this_topic"></a> Neste tópico
  [Neste tópico](#BKMK_In_this_topic)
@@ -117,7 +117,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
    ![Selecione a Conexão de depurador remoto](../debugger/media/vsrun-pro-selectremotedebuggerdlg.png "VSRUN_PRO_SelectRemoteDebuggerDlg")
 
   > [!NOTE]
-  >  A caixa de diálogo Selecionar Conexão de Depurador Remoto exibe os computadores que estão na sub-rede local e os computadores que estão diretamente conectados ao computador com o Visual Studio por um cabo Ethernet. Para especificar outro computador, digite o nome na **nome da máquina** caixa.
+  > A caixa de diálogo Selecionar Conexão de Depurador Remoto exibe os computadores que estão na sub-rede local e os computadores que estão diretamente conectados ao computador com o Visual Studio por um cabo Ethernet. Para especificar outro computador, digite o nome na **nome da máquina** caixa.
 
   ![Se aplica somente ao Windows Phone](../debugger/media/phone-only-content.png "phone_only_content")
 
@@ -178,7 +178,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
  Para definir um aplicativo instalado para ser executado no modo de depuração, faça o seguinte:
 
 > [!NOTE]
->  O aplicativo não deve estar em execução quando você iniciar este procedimento.
+> O aplicativo não deve estar em execução quando você iniciar este procedimento.
 
 1. Sobre o **Debug** menu, escolha **depurar pacote do aplicativo instalado**
 
@@ -226,9 +226,9 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
 ### <a name="BKMK_Attach_the_debugger"></a> Anexar o depurador
 
 > [!TIP]
->  Os aplicativos JavaScript são executados em uma instância do processo wwahost.exe. Se outros aplicativos JavaScript estiverem em execução quando você anexa ao aplicativo, será necessário saber a ID do processo numérico (PID) do wwahost.exe em que o aplicativo está executando.
+> Os aplicativos JavaScript são executados em uma instância do processo wwahost.exe. Se outros aplicativos JavaScript estiverem em execução quando você anexa ao aplicativo, será necessário saber a ID do processo numérico (PID) do wwahost.exe em que o aplicativo está executando.
 >
->  A maneira mais fácil de lidar com essa situação é fechar todos os outros aplicativos JavaScript. Do contrário, você pode abrir o Gerenciador de Tarefas do Windows antes de iniciar o aplicativo e observar as IDs dos processos wwahost.exe. Quando você especifica que o processo para anexar na **processos disponíveis** caixa de diálogo, wwahost.exe do aplicativo terá uma id diferente daquelas que você observou.
+> A maneira mais fácil de lidar com essa situação é fechar todos os outros aplicativos JavaScript. Do contrário, você pode abrir o Gerenciador de Tarefas do Windows antes de iniciar o aplicativo e observar as IDs dos processos wwahost.exe. Quando você especifica que o processo para anexar na **processos disponíveis** caixa de diálogo, wwahost.exe do aplicativo terá uma id diferente daquelas que você observou.
 
  Para anexar o depurador:
 

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 565d735e2d822d6cc7b353ffdf106b30201c22d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3feb17c2cfc51326f125fb6991b37ccde1f9b1bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438571"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>Passo a passo: Criar um modelo usando os controles de conteúdo
   Este passo a passo demonstra como criar uma personalização no nível de documento que usa controles de conteúdo para criar conteúdo reutilizável e não estruturados em um modelo do Microsoft Office Word.
@@ -83,7 +83,7 @@ ms.locfileid: "60074369"
 5. Na faixa de opções, clique no **desenvolvedor** guia.
 
    > [!NOTE]
-   >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+   > Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 6. No **controles** , clique no **texto** botão ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>para a primeira célula.
 

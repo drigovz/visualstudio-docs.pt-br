@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 7c53d7bd1264ff21866746796d598b27cfac5984
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 510d923d2503aeb6e07859813537c9094fe25b09
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094535"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63419697"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>Como: Armazenar em cache dados para uso offline ou em um servidor
   Você pode marcar um item de dados sejam armazenados em cache no documento, para que ele esteja disponível offline. Isso também torna possível para os dados do documento ser manipulados por outro código quando o documento é armazenado em um servidor.
@@ -32,7 +32,7 @@ ms.locfileid: "60094535"
  Você pode marcar um item de dados sejam armazenados em cache quando o item de dados é declarado em seu código, ou, se você estiver usando um <xref:System.Data.DataSet>, definindo uma propriedade de **propriedades** janela. Se você estiver armazenando em cache um item de dados que não é um <xref:System.Data.DataSet> ou <xref:System.Data.DataTable>, certifique-se de que ele atende aos critérios para serem armazenados em cache no documento. Para obter mais informações, consulte [armazenar em Cache dados](../vsto/caching-data.md).
 
 > [!NOTE]
->  Conjuntos de dados criados usando o Visual Basic que são marcados como **em cache** e **WithEvents** (incluindo os conjuntos de dados que são arrastados do **fontes de dados** janela ou **Caixa de ferramentas** que têm o **CacheInDocument** propriedade definida como **verdadeira**) tem um sublinhado prefixado com seus nomes no cache. Por exemplo, se você cria um conjunto de dados e nomeá-lo **clientes**, o <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> nome será **_Customers** no cache. Quando você usa <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> para acessar este item em cache, você deve especificar **_Customers** em vez de **clientes**.
+> Conjuntos de dados criados usando o Visual Basic que são marcados como **em cache** e **WithEvents** (incluindo os conjuntos de dados que são arrastados do **fontes de dados** janela ou **Caixa de ferramentas** que têm o **CacheInDocument** propriedade definida como **verdadeira**) tem um sublinhado prefixado com seus nomes no cache. Por exemplo, se você cria um conjunto de dados e nomeá-lo **clientes**, o <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> nome será **_Customers** no cache. Quando você usa <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> para acessar este item em cache, você deve especificar **_Customers** em vez de **clientes**.
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>Os dados em cache no documento usando código
 

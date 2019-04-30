@@ -17,12 +17,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7bca2a98ba4df4294d401e2cd5f5b6e80e5d31c4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 914d5806ed0b40a227d61c673e5f463624b0cc11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099670"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403567"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>Cenário: Alterar o design usando visualização e modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -120,7 +120,7 @@ Certifique-se de que seu sistema de software atende às necessidades dos usuári
 - [Validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md)  
   
   > [!NOTE]
-  >  Algumas versões do Visual Studio dão suporte a validação de camada e versões de somente leitura de mapas de código e diagramas UML para visualização e modelagem. Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
+  > Algumas versões do Visual Studio dão suporte a validação de camada e versões de somente leitura de mapas de código e diagramas UML para visualização e modelagem. Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 ## <a name="UnderstandingCommunicating"></a> Compreender e comunicar informações sobre o sistema  
  Não há nenhuma ordem prescrita para usando o Visual Studio, diagramas, de modelagem, portanto, você pode usá-los de acordo com suas necessidades ou abordagem. Geralmente, as equipes revisitam seus modelos e de forma iterativa com frequência em todo o projeto. Cada diagrama oferece pontos específicos para ajudá-lo a entender, descrever e comunicar os diferentes aspectos do sistema em desenvolvimento.  

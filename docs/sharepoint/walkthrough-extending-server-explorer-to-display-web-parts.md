@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 29fcd40a2fc64a12ed7b29845b0a9f0ea3db5589
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ef444d78e5a486f9e384ea02d1eb88461e3fce2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430332"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>Passo a passo: Estender o Gerenciador de servidores para exibir web parts
   No Visual Studio, você pode usar o **conexões do SharePoint** nó do **Gerenciador de servidores** para componentes de exibição nos sites do SharePoint. No entanto, **Gerenciador de servidores** não exibe alguns componentes por padrão. Neste passo a passo, você estenderá **Gerenciador de servidores** para que ele exiba a Galeria de Web Parts em cada uma conectada site do SharePoint.
@@ -40,7 +40,7 @@ ms.locfileid: "60040566"
 - Depurando e testando a extensão.
 
 > [!NOTE]
->  Para obter uma versão alternativa deste passo a passo que usa o modelo de objeto do cliente para o SharePoint, em vez de seu modelo de objeto de servidor, consulte [passo a passo: Chame o modelo de objeto de cliente do SharePoint em uma extensão do Gerenciador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
+> Para obter uma versão alternativa deste passo a passo que usa o modelo de objeto do cliente para o SharePoint, em vez de seu modelo de objeto de servidor, consulte [passo a passo: Chame o modelo de objeto de cliente do SharePoint em uma extensão do Gerenciador de servidores](../sharepoint/walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes no computador de desenvolvimento para concluir este passo a passo:
@@ -75,7 +75,7 @@ ms.locfileid: "60040566"
 3. No **novo projeto** diálogo caixa, expanda o **Visual c#** ou **Visual Basic** nós e, em seguida, escolha o **extensibilidade** nó.
 
     > [!NOTE]
-    >  O **extensibilidade** o nó está disponível somente se você instalar o SDK do Visual Studio. Para obter mais informações, consulte a seção pré-requisitos no início deste tópico.
+    > O **extensibilidade** o nó está disponível somente se você instalar o SDK do Visual Studio. Para obter mais informações, consulte a seção pré-requisitos no início deste tópico.
 
 4. Na parte superior da caixa de diálogo, escolha **.NET Framework 4.5** na lista de versões do .NET Framework.
 
@@ -211,7 +211,7 @@ ms.locfileid: "60040566"
 1. No projeto WebPartNodeExtension, abra o arquivo de código SiteNodeExtension e, em seguida, cole o seguinte código nele.
 
     > [!NOTE]
-    >  Depois que você adicionar esse código, o projeto terá alguns erros de compilação, mas eles desaparecem quando você adiciona código em etapas posteriores.
+    > Depois que você adicionar esse código, o projeto terá alguns erros de compilação, mas eles desaparecem quando você adiciona código em etapas posteriores.
 
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
@@ -266,7 +266,7 @@ ms.locfileid: "60040566"
 1. Na barra de menus, escolha **Compilar** > **Compilar Solução**.
 
     > [!WARNING]
-    >  Neste ponto, o projeto WebPartNode pode ter um erro de compilação porque o arquivo de manifesto do VSIX não tem um valor para o autor. Esse erro desaparecerá quando você adiciona um valor em etapas posteriores.
+    > Neste ponto, o projeto WebPartNode pode ter um erro de compilação porque o arquivo de manifesto do VSIX não tem um valor para o autor. Esse erro desaparecerá quando você adiciona um valor em etapas posteriores.
 
 ## <a name="create-a-vsix-package-to-deploy-the-extension"></a>Criar um pacote VSIX para implantar a extensão
  Para implantar a extensão, use o projeto do VSIX em sua solução para criar um pacote VSIX. Primeiro, configure o pacote VSIX modificando o arquivo vsixmanifest no projeto VSIX. Em seguida, crie o pacote VSIX criando a solução.
@@ -290,7 +290,7 @@ ms.locfileid: "60040566"
 6. No **tipo** , escolha **mefcomponent**.
 
     > [!NOTE]
-    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 7. No **fonte** , escolha **um projeto na solução atual**.
 
@@ -303,7 +303,7 @@ ms.locfileid: "60040566"
 10. No **tipo** , digite **SharePoint.Commands.v4**.
 
     > [!NOTE]
-    >  Esse elemento Especifica uma extensão personalizada que você deseja incluir na extensão do Visual Studio. Para obter mais informações, consulte [ativo Element (esquema de VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
+    > Esse elemento Especifica uma extensão personalizada que você deseja incluir na extensão do Visual Studio. Para obter mais informações, consulte [ativo Element (esquema de VSX)](https://msdn.microsoft.com/9fcfc098-edc7-484b-9d4c-acd17829d737).
 
 11. No **fonte** , escolha o **um projeto na solução atual** item de lista.
 

@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 25c4359a5ff64a3ddd229e872aa8a52303c22bf2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fef5d4ab83d22b31b64c6e6ec509cab47a426f9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068425"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426951"
 ---
 # <a name="understanding-the-dsl-code"></a>Noções básicas do código de DSL
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode s
  Para criar a solução que é a origem da maioria dos exemplos neste tópico, crie uma DLs a partir de **modelos do componente** modelo de solução. Esse é um dos modelos padrão que são exibidos ao criar uma nova solução DSL.  
   
 > [!NOTE]
->  O modelo DSL de diagramas de componente não está relacionado aos diagramas de componente UML que você pode criar usando o menu de arquitetura no Visual Studio. No **novo projeto** diálogo caixa, expanda **outros tipos/extensibilidades do projeto** e, em seguida, clique em **Designer de linguagem específica do domínio**.  
+> O modelo DSL de diagramas de componente não está relacionado aos diagramas de componente UML que você pode criar usando o menu de arquitetura no Visual Studio. No **novo projeto** diálogo caixa, expanda **outros tipos/extensibilidades do projeto** e, em seguida, clique em **Designer de linguagem específica do domínio**.  
   
  Pressione F5 e experimente, se ainda não estiver familiarizado com esse modelo de solução. Observe especificamente que é possível criar portas arrastando uma ferramenta de porta para um componente e que é possível conectar portas.  
   
@@ -133,7 +133,7 @@ Uma solução de Linguagem Específica do Domínio (DSL) gera uma API que pode s
   A classe que representa o modelo do domínio. É derivado de <xref:Microsoft.VisualStudio.Modeling.DomainModel>.  
   
 > [!NOTE]
->  Não é a mesma que a classe raiz do modelo.  
+> Não é a mesma que a classe raiz do modelo.  
   
  Fechamentos de Copiar e Excluir define quais outros elementos devem ser incluídos quando um elemento é copiado ou excluído. Você pode controlar esse comportamento, definindo a **propaga cópia** e **propaga exclusão** propriedades das funções em cada lado de cada relação. Se desejar determinar os valores dinamicamente, é possível gravar código para substituir os métodos das classes de Fechamento. Confira mais informações em [Como Programar o comportamento copiar e colar – redirecionamento](../misc/how-to-program-copy-and-paste-behavior-redirect.md).  
   
@@ -344,7 +344,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
  Para personalizar esse arquivo, edite o arquivo `.tt`.  
   
 > [!WARNING]
->  Ao editar o arquivo .tt para incluir recursos como ícones ou imagens, certifique-se de que o recurso será incluído na compilação VSIX. No Solution Explorer, selecione o arquivo e certifique-se de que o **incluir em VSIX** é de propriedade `True`.  
+> Ao editar o arquivo .tt para incluir recursos como ícones ou imagens, certifique-se de que o recurso será incluído na compilação VSIX. No Solution Explorer, selecione o arquivo e certifique-se de que o **incluir em VSIX** é de propriedade `True`.  
   
  Esse arquivo controla como a DSL é empacotada em uma Extensão de Integração do Visual Studio (VSIX). Para obter mais informações, confira [Implantando soluções de linguagem específica de domínio](../modeling/deploying-domain-specific-language-solutions.md).  
   

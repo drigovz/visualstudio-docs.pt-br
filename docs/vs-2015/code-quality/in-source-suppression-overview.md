@@ -12,12 +12,12 @@ caps.latest.revision: 42
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 046ae576880c6749c6bb033f66124c0085dfab16
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5bb3632e1ed7bf07e236322700ba8553b53a75cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057154"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426610"
 ---
 # <a name="in-source-suppression-overview"></a>Visão geral de supressão na origem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Supressão do código-fonte é a capacidade para suprimir ou ignorar violações
  Você não deve usar supressões de código-fonte em builds de versão para impedir que os metadados de supressão na origem de envio acidentalmente. Devido ao custo de processamento de supressão de código-fonte, o desempenho do seu aplicativo também pode ser degradado, incluindo os metadados de supressão na origem.  
   
 > [!NOTE]
->  Você não tem manualmente código esses atributos por conta própria. Para obter mais informações, confira [Como: Suprimir Avisos usando o Item de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). O item de menu não está disponível para código C++.  
+> Você não tem manualmente código esses atributos por conta própria. Para obter mais informações, confira [Como: Suprimir Avisos usando o Item de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md). O item de menu não está disponível para código C++.  
   
 ## <a name="suppressmessage-attribute"></a>Atributo SuppressMessage  
  Quando você com o botão direito em um aviso de análise de código a **lista de erros** e, em seguida, clique em **suprimir mensagem (NS)**, um **SuppressMessage** atributo é adicionado em seu código ou para o arquivo de supressões globais do projeto.  
@@ -109,7 +109,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1020:AvoidNamespacesWithFewTypes", Scope = "namespace", Target = "MyNamespace")]`  
   
 > [!NOTE]
->  Quando você suprime um aviso com escopo de namespace, ele suprime o aviso em relação ao namespace em si. Ele não suprime o aviso em relação aos tipos no namespace.  
+> Quando você suprime um aviso com escopo de namespace, ele suprime o aviso em relação ao namespace em si. Ele não suprime o aviso em relação aos tipos no namespace.  
   
  Qualquer supressão pode ser expressos com a especificação de um escopo explícito. Esses supressões devem residir no nível global. Você não pode especificar a supressão de nível de membro decorando um tipo.  
   
@@ -118,7 +118,7 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
  `[module: SuppressMessage("Microsoft.Design", "CA1055:AbstractTypesDoNotHavePublicConstructors", Scope="member", Target="Microsoft.Tools.FxCop.Type..ctor()")]`  
   
 > [!NOTE]
->  Destino sempre contém o nome do item totalmente qualificado.  
+> Destino sempre contém o nome do item totalmente qualificado.  
   
 ## <a name="global-suppression-file"></a>Arquivo de supressão global  
  O arquivo de supressão global mantém supressões supressões no nível global ou supressões que não especificam um destino. Por exemplo, supressões de violações no nível de assembly são armazenadas nesse arquivo. Além disso, alguns supressões de ASP.NET são armazenados nesse arquivo, porque as configurações de nível de projeto não estão disponíveis para o código por trás de um formulário. Uma supressão global é criada e adicionada ao seu projeto na primeira vez que você seleciona os **no arquivo de supressão do projeto** opção do **suprimir mensagem (NS)** comando na janela lista de erros. Para obter mais informações, confira [Como: Suprimir Avisos usando o Item de Menu](../code-quality/how-to-suppress-warnings-by-using-the-menu-item.md).  

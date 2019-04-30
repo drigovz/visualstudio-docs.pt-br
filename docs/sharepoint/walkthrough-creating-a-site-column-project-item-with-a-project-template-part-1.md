@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: d4dec78b368991da18c5bc0f5a673c1dca91fbfc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 34808d70a7df1bf5d030e4205de34ff3ec4d03b2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430402"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>Passo a passo: Criar um item de projeto da coluna de site com um modelo de projeto, parte 1
   Projetos do SharePoint são contêineres para um ou mais itens de projeto do SharePoint. Você pode estender o sistema de projeto do SharePoint no Visual Studio criando seus próprios tipos de item de projeto do SharePoint e, em seguida, associá-los a um modelo de projeto. Neste passo a passo, você definirá um tipo de item de projeto para a criação de uma coluna de site e, em seguida, você criará um modelo de projeto que pode ser usado para criar um novo projeto que contém um item de projeto da coluna de site.
@@ -75,7 +75,7 @@ ms.locfileid: "60059988"
 4. Expanda o **Visual Basic** ou **Visual c#** nós e, em seguida, escolha o **extensibilidade** nó.
 
     > [!NOTE]
-    >  O **extensibilidade** o nó está disponível somente se você instalar o SDK do Visual Studio. Para obter mais informações, consulte a seção pré-requisitos no início deste tópico.
+    > O **extensibilidade** o nó está disponível somente se você instalar o SDK do Visual Studio. Para obter mais informações, consulte a seção pré-requisitos no início deste tópico.
 
 5. Na lista de modelos de projeto, escolha **VSIX Project**.
 
@@ -162,7 +162,7 @@ ms.locfileid: "60059988"
 2. Criar um projeto do SharePoint 2010 que é denominado **BaseSharePointProject**.
 
    > [!IMPORTANT]
-   >  No **Assistente para personalização do SharePoint**, não selecione a **implantar como uma solução de farm** botão de opção.
+   > No **Assistente para personalização do SharePoint**, não selecione a **implantar como uma solução de farm** botão de opção.
 
 3. Adicionar um item de elemento vazio ao projeto e, em seguida, o nome do item **campo1**.
 
@@ -175,7 +175,7 @@ ms.locfileid: "60059988"
 7. No diretório que contém o projeto BaseSharePointProject, selecione o arquivo snk e, em seguida, escolha o **adicionar** botão.
 
    > [!NOTE]
-   >  Neste passo a passo, o modelo de projeto que você cria usa o mesmo arquivo de snk para assinar cada projeto que é criado usando o modelo. Para saber como expandir esse exemplo para criar um arquivo snk diferentes para cada instância de projeto, consulte [passo a passo: Criar um item de projeto da coluna de site com um modelo de projeto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
+   > Neste passo a passo, o modelo de projeto que você cria usa o mesmo arquivo de snk para assinar cada projeto que é criado usando o modelo. Para saber como expandir esse exemplo para criar um arquivo snk diferentes para cada instância de projeto, consulte [passo a passo: Criar um item de projeto da coluna de site com um modelo de projeto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
 8. Repita as etapas 5 a 8 para adicionar os seguintes arquivos de subpastas no diretório BaseSharePointProject especificadas:
 
@@ -654,7 +654,7 @@ ms.locfileid: "60059988"
 6. No **tipo** , escolha **Microsoft.VisualStudio.ProjectTemplate**.
 
     > [!NOTE]
-    >  Esse valor corresponde à `ProjectTemplate` elemento no arquivo Extension vsixmanifest. Este elemento identifica a subpasta no pacote VSIX que contém o modelo de projeto. Para obter mais informações, consulte [ProjectTemplate Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)).
+    > Esse valor corresponde à `ProjectTemplate` elemento no arquivo Extension vsixmanifest. Este elemento identifica a subpasta no pacote VSIX que contém o modelo de projeto. Para obter mais informações, consulte [ProjectTemplate Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\)).
 
 7. No **fonte** , escolha **um projeto na solução atual**.
 
@@ -667,7 +667,7 @@ ms.locfileid: "60059988"
 10. No **tipo** , escolha **mefcomponent**.
 
     > [!NOTE]
-    >  Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
+    > Esse valor corresponde à `MefComponent` elemento no arquivo Extension vsixmanifest. Esse elemento Especifica o nome de um assembly de extensão no pacote VSIX. Para obter mais informações, consulte [MEFComponent Element (esquema de VSX)](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\)).
 
 11. No **fonte** , escolha **um projeto na solução atual**.
 
@@ -715,14 +715,14 @@ ms.locfileid: "60059988"
      Esta etapa Especifica o local do SharePoint no computador de desenvolvimento que você deseja usar para depuração.
 
     > [!NOTE]
-    >  O **URL do Site** propriedade é vazia por padrão, porque o modelo de projeto da coluna de Site não fornece um Assistente para coletar esse valor quando o projeto é criado. Para saber como adicionar um assistente que solicita que o desenvolvedor para esse valor e, em seguida, configura essa propriedade no novo projeto, consulte [passo a passo: Criar um item de projeto da coluna de site com um modelo de projeto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
+    > O **URL do Site** propriedade é vazia por padrão, porque o modelo de projeto da coluna de Site não fornece um Assistente para coletar esse valor quando o projeto é criado. Para saber como adicionar um assistente que solicita que o desenvolvedor para esse valor e, em seguida, configura essa propriedade no novo projeto, consulte [passo a passo: Criar um item de projeto da coluna de site com um modelo de projeto, parte 2](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md).
 
 3. Pressione a tecla **F5**.
 
      A coluna de site é empacotada e implantada para o site do SharePoint que é especificado na **URL do Site** propriedade do projeto. O navegador da web abre a página padrão deste site.
 
     > [!NOTE]
-    >  Se o **Script Debugging Disabled** caixa de diálogo for exibida, escolha o **Sim** botão para continuar a depuração do projeto.
+    > Se o **Script Debugging Disabled** caixa de diálogo for exibida, escolha o **Sim** botão para continuar a depuração do projeto.
 
 4. Sobre o **ações do Site** menu, escolha **configurações de Site**.
 

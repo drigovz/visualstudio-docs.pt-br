@@ -12,12 +12,12 @@ ms.assetid: 93f79774-7b79-4dd6-94ad-13698f72c257
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 87bfa86585d384c7940d5a5bcf31d07579bc75a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0d1464cdd2be79cd93a3e98bcf8769e8f4b8b89f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435892"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>Como: Atualizar uma extensão do Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Você pode atualizar uma extensão do Visual Studio em seu sistema por meio **ex
 1. No Visual Studio, abra a solução para a extensão que você deseja atualizar. Faça as alterações.
 
     > [!IMPORTANT]
-    >  Sem sinal que todas as extensões de usuário não são atualizadas automaticamente. Você sempre deve assinar suas extensões.
+    > Sem sinal que todas as extensões de usuário não são atualizadas automaticamente. Você sempre deve assinar suas extensões.
 
 2. Na **Gerenciador de soluções**, abra source.extension.manifest.
 
@@ -60,7 +60,7 @@ Você pode atualizar uma extensão do Visual Studio em seu sistema por meio **ex
      Você pode habilitar ou desabilitar a verificação automática de atualizações na parte inferior da **atualizações** painel (**Habilita/desabilita a detecção automática de atualizações disponíveis**), as alterações que o **verificar as atualizações** definindo no **Ferramentas / opções / ambiente / extensões e atualizações**.
 
     > [!NOTE]
-    >  A partir do Visual Studio 2015 Atualização 2, é possível especificar (em **Ferramentas/Opções/Ambiente/Extensões e Atualizações**) se você deseja atualizações automáticas para extensões por usuário, todas as extensões do usuário ou ambas (a configuração padrão).
+    > A partir do Visual Studio 2015 Atualização 2, é possível especificar (em **Ferramentas/Opções/Ambiente/Extensões e Atualizações**) se você deseja atualizações automáticas para extensões por usuário, todas as extensões do usuário ou ambas (a configuração padrão).
 
 ## <a name="see-also"></a>Consulte também
  [Anatomia de um pacote VSIX](../extensibility/anatomy-of-a-vsix-package.md) [Localizando e usando extensões do Visual Studio](../ide/finding-and-using-visual-studio-extensions.md)

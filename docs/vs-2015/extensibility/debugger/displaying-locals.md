@@ -11,18 +11,18 @@ ms.assetid: 62264cec-845b-4233-aed7-0b038fa79250
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 29744e3e981c62b5c941cf9e59745913fb329803
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: 9cdbba0cfa48792127accc71cba75f8542556d67
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58999857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63409376"
 ---
 # <a name="displaying-locals"></a>Exibindo locais
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  Execução sempre ocorre dentro do contexto de um método, também conhecido como método de inclusão ou o método atual. Quando a execução pausa, o Visual Studio chama o mecanismo de depuração (DE) para obter uma lista de variáveis locais e os argumentos, coletivamente chamados de locais do método. Esses locais e seus valores no Visual Studio exibe a **Locals** janela.  
   
@@ -31,7 +31,7 @@ ms.locfileid: "58999857"
  As chamadas DE [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) para obter uma [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) object, que é filtrada para retornar somente locais e enumerado para produzir uma lista de [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md)estruturas. Cada estrutura contém o nome, tipo e valor de um local. O tipo e valor são armazenados como cadeias de caracteres formatadas, adequadas para exibição. O nome, tipo e valor normalmente são exibidos juntos em uma linha do **Locals** janela.  
   
 > [!NOTE]
->  O **QuickWatch** e **inspeção** janelas também exibem as variáveis com o mesmo formato de nome, valor e tipo. No entanto, esses valores são obtidos chamando [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) em vez de `IDebugProperty2::EnumChildren`.  
+> O **QuickWatch** e **inspeção** janelas também exibem as variáveis com o mesmo formato de nome, valor e tipo. No entanto, esses valores são obtidos chamando [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) em vez de `IDebugProperty2::EnumChildren`.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Exemplo de implementação de Locals](../../extensibility/debugger/sample-implementation-of-locals.md)  

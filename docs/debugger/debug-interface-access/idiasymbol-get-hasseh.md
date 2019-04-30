@@ -12,15 +12,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6bf5d6f31d25d72cd6bc71f9d8b17443b3d8fc8a
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: 41987007dd5121dff8cce1eb91ea9e1c4d93578c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56643724"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63401443"
 ---
 # <a name="idiasymbolgethasseh"></a>IDiaSymbol::get_hasSEH
-Recupera um sinalizador que especifica se a função contém qualquer [tratamento de exceções estruturado (C/C++)](/cpp/cpp/structured-exception-handling-c-cpp) (por exemplo, Try /\_blocos EXCEPT).
+Recupera um sinalizador que especifica se a função contém qualquer [tratamento de exceções estruturado (C /C++)](/cpp/cpp/structured-exception-handling-c-cpp) (por exemplo, Try /\_blocos EXCEPT).
 
 ## <a name="syntax"></a>Sintaxe
 
@@ -39,7 +39,7 @@ HRESULT get_hasSEH(
  Se for bem-sucedido, retornará `S_OK`; caso contrário, retorna `S_FALSE` ou código de erro.
 
 > [!NOTE]
->  Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
+> Um valor de retorno `S_FALSE` significa que a propriedade não está disponível para o símbolo.
 
 ## <a name="requirements"></a>Requisitos
 

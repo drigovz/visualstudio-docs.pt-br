@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 85bdd48f37d8b8d60df6821934980bf46ebf29cd
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f7e9aee38208a96ab75318a86810359392b5b8e1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433353"
 ---
 # <a name="customize-your-model-with-profiles-and-stereotypes"></a>Personalizar o modelo com perfis e estereótipos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ No Visual Studio, você pode adaptar os elementos de modelo UML padrão, como cl
  ![Uma classe UML com um estereótipo. ](../modeling/media/uml-class-stereotype.png "UML_class_stereotype")  
   
 > [!NOTE]
->  Se você usar um perfil para criar um modelo e, em seguida, compartilhar o modelo com outra pessoa, eles poderão ver os estereótipos, a menos que eles instalaram o mesmo perfil em seu computador.  
+> Se você usar um perfil para criar um modelo e, em seguida, compartilhar o modelo com outra pessoa, eles poderão ver os estereótipos, a menos que eles instalaram o mesmo perfil em seu computador.  
   
 ## <a name="related-topics"></a>Tópicos relacionados  
   

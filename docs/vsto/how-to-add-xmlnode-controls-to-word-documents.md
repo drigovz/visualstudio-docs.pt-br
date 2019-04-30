@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 79ae6aee44f720b868e30c831ee4d6aa61c9611d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f0f849088a2c3cc726adc6054aef1ff7a7c1c52f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090401"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427417"
 ---
 # <a name="how-to-add-xmlnode-controls-to-word-documents"></a>Como: Adicionar controles XMLNode a documentos do Word
   **Importante** as informações que propus neste tópico sobre o Microsoft Word são desenvolver ou apresentadas exclusivamente para o uso e benefício de indivíduos e organizações que estão localizados fora dos Estados Unidos e seus territórios ou que estão usando o programas que são executados em produtos do Microsoft Word que foram licenciados pela Microsoft antes de janeiro de 2010, quando a Microsoft removido uma implementação da funcionalidade específica relacionada para XML personalizado do Microsoft Word. Essas informações sobre o Microsoft Word não podem ser lidas ou usadas por indivíduos ou organizações nos Estados Unidos ou em seus territórios de quem estão usando ou desenvolver programas que são executados em produtos do Microsoft Word que foram licenciados pela Microsoft depois de 10 de janeiro de 2010 ; Esses produtos não se comportará como produtos licenciados antes dessa data ou adquirido e licenciado para uso fora dos Estados Unidos.
@@ -28,7 +28,7 @@ ms.locfileid: "60090401"
  Quando você mapeia um elemento de esquema XML não-repetição para um documento do Microsoft Office Word, o Visual Studio adiciona automaticamente um <xref:Microsoft.Office.Tools.Word.XMLNode> controle ao documento. Para obter informações sobre como mapear elementos repetidos de esquema XML, consulte [como: Adicionar controles XMLNodes a documentos do Word](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md).
 
 > [!NOTE]
->  O <xref:Microsoft.Office.Tools.Word.XMLNode> controle não está disponível na **caixa de ferramentas** ou o **fontes de dados** janela e ele não podem ser criado de forma programática.
+> O <xref:Microsoft.Office.Tools.Word.XMLNode> controle não está disponível na **caixa de ferramentas** ou o **fontes de dados** janela e ele não podem ser criado de forma programática.
 
  [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -37,7 +37,7 @@ ms.locfileid: "60090401"
 1. No documento no designer do Visual Studio, na faixa de opções, clique o **desenvolvedor** guia.
 
     > [!NOTE]
-    >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 2. No **XML** , clique em **esquema**.
 

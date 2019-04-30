@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2643c88eaf133d41fba7a8112f9b92150be3148
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 37b3f3105280ec384b6c180a65d2492ffd3bb02c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56684631"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411104"
 ---
 # <a name="vsct-xml-schema-reference"></a>Referência de esquema XML do VSCT
 Fornece uma tabela de elementos de esquema do compilador de tabela de comando, com filho permitido elementos e atributos para cada um.
@@ -24,7 +24,7 @@ Fornece uma tabela de elementos de esquema do compilador de tabela de comando, c
  Um arquivo de configuração (. VSCT) da tabela de comando baseado em XML define os elementos de comando que fornece um VSPackage para o ambiente de desenvolvimento integrado (IDE). Esses elementos incluem itens de menu, menus, barras de ferramentas e caixas de combinação.
 
 > [!NOTE]
->  O compilador VSCT pode executar um pré-processador no arquivo. VSCT. Como isso é normalmente o pré-processador, que você pode definir C++ inclui e macros que têm a mesma sintaxe que é usada em arquivos de C++. Exemplos disso são fornecidos na. VSCT de arquivos que o **novo projeto** assistente cria para um projeto de VSPackage.
+> O compilador VSCT pode executar um pré-processador no arquivo. VSCT. Como isso é normalmente o pré-processador, que você pode definir C++ inclui e macros que têm a mesma sintaxe que é usada em arquivos de C++. Exemplos disso são fornecidos na. VSCT de arquivos que o **novo projeto** assistente cria para um projeto de VSPackage.
 
 ## <a name="optional-elements"></a>Elementos opcionais
  Alguns elementos VSCT são opcionais. Se um `Parent` argumento não for especificado, Group_Undefined:0 será implícita. Se um `Icon` argumento não for especificado, guidOfficeIcon:msotcidNoIcon será implícita. Quando uma tecla de atalho é definida, a emulação, que é normalmente usada, é opcional.

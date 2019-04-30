@@ -16,12 +16,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 3095bccd25548e55f750ee11f26d20fdc9fe603d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 39137d5fe60a3c91c8fd3904e797eb83420a8f5d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60042773"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63384018"
 ---
 # <a name="how-to-use-edit-and-continue-c"></a>Como: Usar Editar e Continuar (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Com a função Editar e Continuar no C#, é possível fazer alterações em seu 
  Editar e continuar é invocado automaticamente quando você faça alterações no modo de interrupção e escolha a execução de um depurador comando, como **Continue**, **etapa**, ou **definir próxima instrução**, ou avaliar uma função em uma janela do depurador.  
   
 > [!NOTE]
->  A função Editar e Continuar não tem suporte ao depurar o Compact Framework, código otimizado, código nativo misto/gerenciado ou código de integração do SQL Server Common Language Runtime (CLR). Se você tentar aplicar alterações de código em um desses cenários, o depurador coloca uma caixa de diálogo explicando que a função Editar e Continuar não tem suporte.  
+> A função Editar e Continuar não tem suporte ao depurar o Compact Framework, código otimizado, código nativo misto/gerenciado ou código de integração do SQL Server Common Language Runtime (CLR). Se você tentar aplicar alterações de código em um desses cenários, o depurador coloca uma caixa de diálogo explicando que a função Editar e Continuar não tem suporte.  
   
 ### <a name="to-invoke-edit-and-continue-automatically"></a>Para invocar a função Editar e Continuar automaticamente  
   

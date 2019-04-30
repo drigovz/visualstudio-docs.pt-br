@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: edba26d951afb0ba2215af4c0a0eac09b1c31513
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MTE95
+ms.openlocfilehash: cbddf759841dbe9626868d6c00f42a0849d70520
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608482"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406839"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>Escolher uma estratégia de atualização do ClickOnce
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] pode fornecer atualizações automáticas para o aplicativo. Um aplicativo [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] lê periodicamente o arquivo de manifesto de implantação para verificar se há atualizações disponíveis para ele. Se disponível, a nova versão do aplicativo será baixada e executada. Para proporcionar eficiência, somente os arquivos que foram alterados serão baixados.
@@ -31,10 +31,10 @@ ms.locfileid: "56608482"
  Além disso, você poderá determinar a frequência com que o aplicativo verificará se há atualizações e fazer as atualizações necessárias.
 
 > [!NOTE]
->  Atualizações de aplicativos necessitam de conectividade de rede. Se uma conexão de rede não estiver presente, o aplicativo será executado sem verificar se há atualizações, independentemente da estratégia de atualização que você escolher.
+> Atualizações de aplicativos necessitam de conectividade de rede. Se uma conexão de rede não estiver presente, o aplicativo será executado sem verificar se há atualizações, independentemente da estratégia de atualização que você escolher.
 
 > [!NOTE]
->  No .NET Framework 2.0 e no .NET Framework 3.0, sempre que seu aplicativo verificar se as atualizações, antes ou após a inicialização ou por meio de \<xref:System.Deployment.Application > APIs, você deve definir `deploymentProvider` no manifesto de implantação. O elemento `deploymentProvider` corresponde no Visual Studio ao campo **Localização de atualização** na caixa de diálogo **Atualizações** da guia **Publicar**. Essa regra é consentida no .NET Framework 3.5. Para obter mais informações, consulte [implantação de ClickOnce aplicativos para teste e servidores de produção sem Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
+> No .NET Framework 2.0 e no .NET Framework 3.0, sempre que seu aplicativo verificar se as atualizações, antes ou após a inicialização ou por meio de \<xref:System.Deployment.Application > APIs, você deve definir `deploymentProvider` no manifesto de implantação. O elemento `deploymentProvider` corresponde no Visual Studio ao campo **Localização de atualização** na caixa de diálogo **Atualizações** da guia **Publicar**. Essa regra é consentida no .NET Framework 3.5. Para obter mais informações, consulte [implantação de ClickOnce aplicativos para teste e servidores de produção sem Resigning](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md).
 
 ## <a name="check-for-updates-after-application-startup"></a>Verifique se há atualizações após a inicialização do aplicativo
  Ao usar esta estratégia, o aplicativo tentará localizar e ler o arquivo de manifesto de implantação em segundo plano enquanto estiver em execução. Se uma atualização estiver disponível, na próxima vez que o usuário executar o aplicativo, o download e a instalação da atualização serão solicitados.
@@ -76,7 +76,7 @@ ms.locfileid: "56608482"
  Talvez haja ocasiões em que você deseje exigir que usuários executem uma versão atualizada de seu aplicativo. Por exemplo, você pode fazer uma alteração em um recurso externo como um serviço Web que impeça o funcionamento correto da versão anterior de seu aplicativo. Nesse caso, talvez você deseje marcar sua atualização como obrigatória e evitar que os usuários executem a versão anterior.
 
 > [!NOTE]
->  Embora você possa exigir atualizações ao usar as outras estratégias de atualização, selecionar **Antes do aplicativo inicializar** é a única maneira de garantir que uma versão mais antiga não possa ser executada. Quando a atualização obrigatória for detectada na inicialização, o usuário deverá aceitar a atualização ou fechar o aplicativo.
+> Embora você possa exigir atualizações ao usar as outras estratégias de atualização, selecionar **Antes do aplicativo inicializar** é a única maneira de garantir que uma versão mais antiga não possa ser executada. Quando a atualização obrigatória for detectada na inicialização, o usuário deverá aceitar a atualização ou fechar o aplicativo.
 
  Para marcar uma atualização como obrigatória, clique em **Especifique a versão mínima necessária para este aplicativo** na caixa de diálogo **Atualizações do Aplicativo** e especifique a versão de publicação (**Principal**, **Secundária**, **Build**, **Revisão**) que especifica o número de versão mais antigo do aplicativo que pode ser instalado.
 
@@ -122,4 +122,4 @@ ms.locfileid: "56608482"
 - [Escolher uma estratégia de implantação do ClickOnce](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [Proteger aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)
 - [Como o ClickOnce executa atualizações de aplicativos](../deployment/how-clickonce-performs-application-updates.md)
-- [Como gerenciar atualizações em um aplicativo ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+- [Como: Gerenciar atualizações para um aplicativo ClickOnce](../deployment/how-to-manage-updates-for-a-clickonce-application.md)

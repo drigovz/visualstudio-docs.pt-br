@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: fbd12f7579cc401284515de1f950ad2a9809dbca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 822676baf9f0c599fd1383f1841c8f85136be879
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116583"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411743"
 ---
 # <a name="standard-stereotypes-for-uml-models"></a>Estereótipos padrão para modelos UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Você pode adicionar estereótipos a elementos de modelo UML para fornecer infor
 2. Na janela Propriedades, defina as **perfis** propriedade vazia.  
   
     > [!NOTE]
-    >  Você pode desvincular um perfil somente se nenhum dos elementos no modelo ou pacote usar estereótipos do perfil.  
+    > Você pode desvincular um perfil somente se nenhum dos elementos no modelo ou pacote usar estereótipos do perfil.  
   
 #### <a name="to-apply-a-stereotype-to-a-model-element"></a>Para aplicar um estereótipo para um elemento de modelo  
   
@@ -67,7 +67,7 @@ Você pode adicionar estereótipos a elementos de modelo UML para fornecer infor
      Os estereótipos selecionados aparecem em «divisas» no elemento de modelo, para a maioria dos tipos de elemento.  
   
     > [!NOTE]
-    >  Se você não conseguir ver a **estereótipos** propriedade, ou se o estereótipo desejado não aparecer, verifique se o elemento de modelo está dentro de um pacote ou um modelo ao qual o perfil apropriado foi vinculado.  
+    > Se você não conseguir ver a **estereótipos** propriedade, ou se o estereótipo desejado não aparecer, verifique se o elemento de modelo está dentro de um pacote ou um modelo ao qual o perfil apropriado foi vinculado.  
   
 3. Alguns estereótipos permitem que você defina os valores das propriedades adicionais para o elemento de modelo. Para ver essas propriedades, expanda o **estereótipos** propriedade.  
   
@@ -102,7 +102,7 @@ Você pode adicionar estereótipos a elementos de modelo UML para fornecer infor
 |refinar|Dependência|A classe de cliente, do componente ou pacote fornece mais informações sobre a especificação ou design que o fornecedor.|  
 |responsabilidade|Dependência|O comentário no final de fornecedor da dependência define as responsabilidades da classe de cliente ou componente.|  
 |script|Artefato|Que é interpretado «souboru».|  
-|Enviar|Dependência|A operação de origem envia o sinal de destino.|  
+|send|Dependência|A operação de origem envia o sinal de destino.|  
 |serviço|Componente|Um componente sem monitoração de estado.|  
 |origem|Artefato|Compilável «arquivo».|  
 |especificação|Componente de classe, Interface,|Define o comportamento de um componente ou objeto sem definir como ele funciona internamente.|  

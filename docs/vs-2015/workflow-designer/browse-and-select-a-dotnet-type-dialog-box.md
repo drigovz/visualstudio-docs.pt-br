@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b4c02c7dbce09383b5fc3cb1fd7f5eec6e9116b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e7a4169d57cd5b004ded9fbc9b8a16bf7537754b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079831"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63417560"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>Procurar e selecione uma caixa de diálogo de tipo do .NET
 No **propriedades** designers como o designer variável, quando você seleciona, caixas de diálogo ou janela **procurar tipos...** em uma lista de tipos de dados, é o **navegue e selecione um tipo .NET** caixa de diálogo (conhecida na forma abreviada, como o tipo "navegador"). Na caixa de diálogo, você pode escolher um tipo de um modo de exibição de árvore de assemblies e de projetos.  
@@ -31,7 +31,7 @@ No **propriedades** designers como o designer variável, quando você seleciona,
 - Para adicionar uma captura na atividade de <xref:System.Activities.Statements.TryCatch> .  
   
 > [!NOTE]
->  O navegador do tipo pode exibir tipos de jagged array Visual Basic, mas não tipos de matriz multidimensional. Ver [matrizes denteadas](http://go.microsoft.com/fwlink/?LinkId=195226) e [matrizes multidimensionais](http://go.microsoft.com/fwlink/?LinkId=195227) para obter detalhes.  
+> O navegador do tipo pode exibir tipos de jagged array Visual Basic, mas não tipos de matriz multidimensional. Ver [matrizes denteadas](http://go.microsoft.com/fwlink/?LinkId=195226) e [matrizes multidimensionais](http://go.microsoft.com/fwlink/?LinkId=195227) para obter detalhes.  
   
 ## <a name="selecting-a-value-or-reference-type-from-the-type-browser"></a>Selecionando um tipo de valor ou tipo de referência de navegador de tipo  
   

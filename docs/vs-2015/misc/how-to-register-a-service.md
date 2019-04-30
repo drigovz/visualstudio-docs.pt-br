@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: d086be78-ec3c-43cc-b799-5180a71e19f1
 caps.latest.revision: 16
 manager: jillfra
-ms.openlocfilehash: 0ec69fa123775cb477195d4022fb439fb990f415
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: f41578f2522487f746a469933a2269a621390f3c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "59000099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408420"
 ---
 # <a name="how-to-register-a-service"></a>Como: Registrar um serviço
 A estrutura de pacote gerenciado (MPF) fornece os atributos para controlar o registro de serviços gerenciados. O utilitário RegPkg usa esses atributos para registrar um serviço com [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
@@ -30,7 +30,7 @@ A estrutura de pacote gerenciado (MPF) fornece os atributos para controlar o reg
  Para registrar um serviço que substitui outro serviço com o mesmo nome, use o <xref:Microsoft.VisualStudio.Shell.ProvideServiceOverrideAttribute> em vez do <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute>.  
   
 ## <a name="robust-programming"></a>Programação robusta  
- Para facilitar recompilar um provedor de serviço sem alterar o cliente do serviço, ou vice-versa, você pode definir o serviço e suas interfaces em um módulo de assembly separado. O código a seguir é do arquivo IMyGlobalService.cs na amostra Reference.Services (C#).  
+ Para facilitar recompilar um provedor de serviço sem alterar o cliente do serviço, ou vice-versa, você pode definir o serviço e suas interfaces em um módulo de assembly separado. O código a seguir é do arquivo IMyGlobalService.cs na amostra Reference.Services (c#).  
   
  [!code-csharp[VSSDKRegisterService#2](../snippets/csharp/VS_Snippets_VSSDK/vssdkregisterservice/cs/vssdkregisterservicepackage.cs#2)]
  [!code-vb[VSSDKRegisterService#2](../snippets/visualbasic/VS_Snippets_VSSDK/vssdkregisterservice/vb/vssdkregisterservicepackage.vb#2)]  
@@ -38,7 +38,7 @@ A estrutura de pacote gerenciado (MPF) fornece os atributos para controlar o reg
  O <xref:System.Runtime.InteropServices.ComVisibleAttribute> é necessária para obter a interface de código não gerenciado.  
   
 > [!NOTE]
->  Embora você possa usar o mesmo tipo ou o GUID para o serviço e a interface, é recomendável que você separe as duas como um serviço pode expor interfaces diferentes.  
+> Embora você possa usar o mesmo tipo ou o GUID para o serviço e a interface, é recomendável que você separe as duas como um serviço pode expor interfaces diferentes.  
   
 ## <a name="see-also"></a>Consulte também  
  [Registrar VSPackages](../extensibility/internals/registering-vspackages.md)   

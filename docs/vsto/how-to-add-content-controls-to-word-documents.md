@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9efc655997a48e070ee60a1d66dc57be31362403
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6c7746137cf10e0146ff68eeb2cec9005b72a670
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080405"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427619"
 ---
 # <a name="how-to-add-content-controls-to-word-documents"></a>Como: Adicionar conteúdo controles a documentos do Word
   Em projetos em nível de documento do Word, você pode adicionar controles de conteúdo para o documento em seu projeto em tempo de design ou em tempo de execução. Em projetos de suplemento do VSTO do Word, você pode adicionar controles de conteúdo para qualquer documento aberto no tempo de execução.
@@ -78,10 +78,10 @@ ms.locfileid: "60080405"
     - Arraste um controle de conteúdo do **caixa de ferramentas** ao documento. O controle de conteúdo é adicionado na seleção atual no documento, não no local do ponteiro do mouse.
 
 > [!NOTE]
->  Não é possível adicionar um <xref:Microsoft.Office.Tools.Word.GroupContentControl> usando o **caixa de ferramentas**. Você só pode adicionar um <xref:Microsoft.Office.Tools.Word.GroupContentControl> no Word ou em tempo de execução.
+> Não é possível adicionar um <xref:Microsoft.Office.Tools.Word.GroupContentControl> usando o **caixa de ferramentas**. Você só pode adicionar um <xref:Microsoft.Office.Tools.Word.GroupContentControl> no Word ou em tempo de execução.
 
 > [!NOTE]
->  Visual Studio não fornece um controle de conteúdo da caixa de seleção na caixa de ferramentas. Para adicionar um controle de caixa de seleção de conteúdo ao documento, você deve criar um <xref:Microsoft.Office.Tools.Word.ContentControl> por meio de programação do objeto. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md).
+> Visual Studio não fornece um controle de conteúdo da caixa de seleção na caixa de ferramentas. Para adicionar um controle de caixa de seleção de conteúdo ao documento, você deve criar um <xref:Microsoft.Office.Tools.Word.ContentControl> por meio de programação do objeto. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md).
 
 #### <a name="to-add-a-content-control-to-a-document-in-word"></a>Para adicionar um controle de conteúdo a um documento do Word
 
@@ -90,7 +90,7 @@ ms.locfileid: "60080405"
 2. Na faixa de opções, clique no **desenvolvedor** guia.
 
     > [!NOTE]
-    >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. No **controles** de grupo, clique no ícone para o controle de conteúdo que você deseja adicionar.
 
@@ -106,7 +106,7 @@ ms.locfileid: "60080405"
   Criados dinamicamente o conteúdo de controles não são mantidos no documento quando o documento é fechado. No entanto, um controle de conteúdo nativo permanece no documento. Você pode recriar um controle de conteúdo com base em um controle de conteúdo nativo na próxima vez em que o documento é aberto. Para obter mais informações, consulte [adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 > [!NOTE]
->  Para adicionar um controle de conteúdo da caixa de seleção a um documento em um projeto do Word 2010, você deve criar um <xref:Microsoft.Office.Tools.Word.ContentControl> objeto. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md).
+> Para adicionar um controle de conteúdo da caixa de seleção a um documento em um projeto do Word 2010, você deve criar um <xref:Microsoft.Office.Tools.Word.ContentControl> objeto. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md).
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Para adicionar um controle de conteúdo na seleção atual
 
@@ -149,7 +149,7 @@ ms.locfileid: "60080405"
   Para obter mais informações sobre como gerar itens de host em projetos de suplemento do VSTO, consulte [documentos de estender o Word e pastas de trabalho do Excel em suplementos do VSTO em tempo de execução](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md).
 
 > [!NOTE]
->  Para adicionar um controle de conteúdo da caixa de seleção a um documento, você deve criar um <xref:Microsoft.Office.Tools.Word.ContentControl> objeto. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md).
+> Para adicionar um controle de conteúdo da caixa de seleção a um documento, você deve criar um <xref:Microsoft.Office.Tools.Word.ContentControl> objeto. Para obter mais informações, consulte [controles de conteúdo](../vsto/content-controls.md).
 
 ### <a name="to-add-a-content-control-at-the-current-selection"></a>Para adicionar um controle de conteúdo na seleção atual
 

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b0535ec606722ec162804718e7ee14bdd4714f4b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 047ac897931cbb93d8a06406e300d39cd83a9fe4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076999"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63406775"
 ---
 # <a name="how-to-install-prerequisites-with-a-clickonce-application"></a>Como: Instalar pré-requisitos com um aplicativo ClickOnce
 Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativos exigem que a versão correta do .NET Framework está instalada em um computador antes que eles possam ser executados; muitos aplicativos têm também outros pré-requisitos. Ao publicar um [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo, você pode escolher um conjunto de componentes de pré-requisitos sejam empacotados juntamente com seu aplicativo. No momento da instalação, uma verificação será executada para cada pré-requisito determinar se ele já existe; Se não, ele será instalado antes de instalar o [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo.
@@ -29,12 +29,12 @@ Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplic
  Em vez de empacotamento e publicação de pré-requisitos, você também pode especificar um local de download para os componentes. Por exemplo, em vez de incluir pré-requisitos com todos os aplicativos que você publicar, você pode usar um compartilhamento de arquivos centralizado ou o local da Web que contém os instaladores para todos os seus pré-requisitos — no momento da instalação, os componentes serão baixados e instalado a partir desse local.
 
 > [!IMPORTANT]
->  Você deve adicionar pacotes de instalador de pré-requisitos para seu computador de desenvolvimento antes de publicar seu primeiro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Para obter mais informações, confira [Como: Incluir pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).
+> Você deve adicionar pacotes de instalador de pré-requisitos para seu computador de desenvolvimento antes de publicar seu primeiro [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplicativo. Para obter mais informações, confira [Como: Incluir pré-requisitos com um aplicativo ClickOnce](../deployment/how-to-include-prerequisites-with-a-clickonce-application.md).
 
  Pré-requisitos são gerenciados na **pré-requisitos** caixa de diálogo, acessível a partir o **publicar** painel do **Project Designer**.
 
 > [!NOTE]
->  Além da lista predeterminada de pré-requisitos, você pode adicionar seus próprios componentes à lista. Para obter mais informações, consulte [criando pacotes de bootstrapper](../deployment/creating-bootstrapper-packages.md).
+> Além da lista predeterminada de pré-requisitos, você pode adicionar seus próprios componentes à lista. Para obter mais informações, consulte [criando pacotes de bootstrapper](../deployment/creating-bootstrapper-packages.md).
 
 ### <a name="to-specify-prerequisites-to-install-with-a-clickonce-application"></a>Para especificar os pré-requisitos para instalar com um aplicativo ClickOnce
 
@@ -65,7 +65,7 @@ Todos os [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] aplic
 6. Selecione um local na lista suspensa, ou digite uma URL, o caminho do arquivo ou o local do FTP e, em seguida, clique em **Okey.**
 
     > [!NOTE]
-    >  Certifique-se de que os instaladores para os componentes especificados existem no local especificado.
+    > Certifique-se de que os instaladores para os componentes especificados existem no local especificado.
 
 ## <a name="see-also"></a>Consulte também
 - [Publicar aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)

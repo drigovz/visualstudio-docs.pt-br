@@ -27,12 +27,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a1a66ae20065546d5a42b990d0ba0009d0657ed0
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 1cd4b57e2dccbb26c3b6ceba1be51fa5022469cb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59656018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437160"
 ---
 # <a name="fonts-and-colors-environment-options-dialog-box"></a>Caixa de diálogo Fontes e Cores, Ambiente, Opções
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "59656018"
 A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelecer um esquema de cores e fontes personalizado para vários elementos da interface do usuário no IDE (ambiente de desenvolvimento integrado). É possível acessar essa caixa de diálogo clicando em **Ferramentas / Opções** e, em seguida, selecionando **Ambiente / Fontes e Cores**. Se essa página não aparecer na lista, selecione **Mostrar todas as configurações** na caixa de diálogo **Opções**.  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e os comandos de menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da sua edição ou das configurações ativas. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  Alterações do esquema de cores não terão efeito durante a sessão em que foram feitas. É possível avaliar alterações de cores abrindo outra instância do Visual Studio e produzindo as condições nas quais você espera aplicar essas alterações.  
   
@@ -56,7 +56,7 @@ A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelec
    Alterações nas configurações de exibição de cor, tamanho e estilo da fonte da Impressora afetam a aparência do texto em documentos impressos.  
   
   > [!NOTE]
-  >  Conforme for necessário, é possível selecionar uma fonte padrão para impressão diferente daquela usada para exibição no editor de texto. Isso pode ser útil ao imprimir códigos que contêm caracteres de byte único e de caractere duplo.  
+  > Conforme for necessário, é possível selecionar uma fonte padrão para impressão diferente daquela usada para exibição no editor de texto. Isso pode ser útil ao imprimir códigos que contêm caracteres de byte único e de caractere duplo.  
   
 - **Preenchimento de Declaração**  
   
@@ -75,7 +75,7 @@ A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelec
    Alterações nas configurações de exibição de cor, tamanho e estilo da fonte deste item afetam a aparência do texto nas janelas de ferramentas que têm painéis de saída no IDE. Por exemplo, Janela de Saída, janela Comando, janela Imediato etc.  
   
   > [!NOTE]
-  >  Alterações no texto de itens **[Todas as janelas de ferramentas de texto]** não terão efeito durante a sessão em que forem feitas. É possível avaliar tais alterações abrindo outra instância do Visual Studio.  
+  > Alterações no texto de itens **[Todas as janelas de ferramentas de texto]** não terão efeito durante a sessão em que forem feitas. É possível avaliar tais alterações abrindo outra instância do Visual Studio.  
   
   **Usar Padrões**  
   Redefine os valores de fonte e cor do item de lista selecionado em **Mostrar configurações de**. O botão **Usar** é exibido quando outros esquemas de exibição estão disponíveis para seleção. Por exemplo, é possível escolher entre dois esquemas para a impressora.  
@@ -90,7 +90,7 @@ A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelec
   Lista os itens cuja cor de primeiro plano e a cor da tela de fundo você pode modificar.  
   
 > [!NOTE]
->  **Texto sem Formatação** é o item de exibição padrão. Sendo assim, propriedades atribuídas a **PlainText** serão substituídas por propriedades atribuídas a outros itens de exibição. Por exemplo, se você atribuir a cor azul a **PlainText** e a cor verde a **Identificador**, todos os identificadores serão exibidos em verde. Neste exemplo, as propriedades de **Identificador** substituem as propriedades em **PlainText**.  
+> **Texto sem Formatação** é o item de exibição padrão. Sendo assim, propriedades atribuídas a **PlainText** serão substituídas por propriedades atribuídas a outros itens de exibição. Por exemplo, se você atribuir a cor azul a **PlainText** e a cor verde a **Identificador**, todos os identificadores serão exibidos em verde. Neste exemplo, as propriedades de **Identificador** substituem as propriedades em **PlainText**.  
   
  Alguns dos itens de exibição incluem:  
   
@@ -214,7 +214,7 @@ A página **Fontes e Cores** da caixa de diálogo **Opções** permite estabelec
  Exibe a caixa de diálogo Cor para permitir que você defina uma cor personalizada para o item selecionado na lista de itens de Exibição.  
   
 > [!NOTE]
->  Sua capacidade de definir cores personalizadas pode ser limitada pelas configurações de cor de exibição do computador. Por exemplo, se o computador estiver configurado para exibir 256 cores e você selecionar uma cor personalizada na caixa de diálogo **Cor**, o IDE assume como padrão a **Cor básica** mais próxima disponível e exibe a cor preta na caixa de visualização **Cor**.  
+> Sua capacidade de definir cores personalizadas pode ser limitada pelas configurações de cor de exibição do computador. Por exemplo, se o computador estiver configurado para exibir 256 cores e você selecionar uma cor personalizada na caixa de diálogo **Cor**, o IDE assume como padrão a **Cor básica** mais próxima disponível e exibe a cor preta na caixa de visualização **Cor**.  
   
  **Tela de fundo do item**  
  Fornece uma paleta de cores na qual você pode escolher uma cor da tela de fundo para o item selecionado em **Exibir itens**. Como alguns itens estão relacionados e, portanto, devem manter um esquema de exibição consistente, alterar a cor da tela de fundo do texto também altera os padrões para elementos como Erro do Compilador, Palavra-Chave ou Operador.  

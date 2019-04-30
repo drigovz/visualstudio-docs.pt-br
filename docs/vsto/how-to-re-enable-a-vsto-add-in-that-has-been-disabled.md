@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8da3d003ea156ea3182ddbb5a5fd0da3c2681304
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9cdb05328d2a59eb61c57f8f028ade1af0f7ce2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095053"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418806"
 ---
 # <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>Como: Reabilitar um suplemento VSTO que tenha sido desabilitado
   Aplicativos do Microsoft Office podem desabilitar suplementos do VSTO que tenha um comportamento inesperado. Se um aplicativo não carrega o suplemento do VSTO quando você tenta depurá-lo, o aplicativo pode ter desabilitado rígido ou flexível desabilitado o suplemento do VSTO.
@@ -53,7 +53,7 @@ ms.locfileid: "60095053"
  Desabilitando reversível pode ocorrer quando um suplemento do VSTO produz um erro que não faz com que o aplicativo fechar inesperadamente. Por exemplo, um aplicativo flexível pode desativar um suplemento do VSTO se ele lançar uma exceção sem tratamento ao <xref:Microsoft.Office.Tools.AddIn.Startup> manipulador de eventos está em execução.
 
 > [!NOTE]
->  Quando você reabilitar um suplemento do VSTO do soft-desabilitado, o aplicativo imediatamente tenta carregar o suplemento do VSTO. Se não tiver sido corrigido o problema que causou inicialmente o aplicativo reversível desabilitar o suplemento do VSTO, o aplicativo de forma reversível desabilitará o suplemento do VSTO novamente.
+> Quando você reabilitar um suplemento do VSTO do soft-desabilitado, o aplicativo imediatamente tenta carregar o suplemento do VSTO. Se não tiver sido corrigido o problema que causou inicialmente o aplicativo reversível desabilitar o suplemento do VSTO, o aplicativo de forma reversível desabilitará o suplemento do VSTO novamente.
 
 ### <a name="to-re-enable-a-vsto-add-in"></a>Para reabilitar um suplemento do VSTO
 

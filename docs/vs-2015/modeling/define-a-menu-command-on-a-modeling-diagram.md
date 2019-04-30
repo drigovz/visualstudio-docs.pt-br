@@ -11,12 +11,12 @@ caps.latest.revision: 63
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f5805483b78798aabc3641c6aa17379370c6a199
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cab72753016c49b4d959d2224dbfd99f8a0c07bb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046234"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433143"
 ---
 # <a name="define-a-menu-command-on-a-modeling-diagram"></a>Definir um comando de menu em um diagrama de modelagem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ No Visual Studio, você pode definir itens de menu adicionais nos menus de atalh
 3. Adicionar um arquivo de classe ao projeto e defina seu conteúdo para o código a seguir.  
 
    > [!NOTE]
-   >  Alterar o namespace, nome de classe e o valor retornado por `Text` com sua preferência.  
+   > Alterar o namespace, nome de classe e o valor retornado por `Text` com sua preferência.  
    >   
    >  Se você definir vários comandos, eles aparecem no menu em ordem alfabética dos nomes de classe.  
 

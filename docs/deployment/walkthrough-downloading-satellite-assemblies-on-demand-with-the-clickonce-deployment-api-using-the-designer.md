@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af25c298970d9fe7f4a1442dedaf3af9f0172d1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cb3003ebf8fe102caac1dabfb4c87de521a57c77
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63405902"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>Passo a passo: Baixar os assemblies satélite por demanda com a implantação do ClickOnce usando o Designer de API
 Aplicativos do Windows Forms podem ser configurados para várias culturas com o uso de assemblies satélite. Um *assembly satélite* é um assembly que contém os recursos de aplicativo para uma cultura que não seja a cultura padrão do aplicativo.
@@ -35,7 +35,7 @@ Aplicativos do Windows Forms podem ser configurados para várias culturas com o 
  Este passo a passo demonstra como marcar seus assemblies satélites como opcionais e baixar somente o assembly precisa de um computador cliente para suas configurações de cultura.
 
 > [!NOTE]
->  Para fins de teste, os exemplos de código a seguir por meio de programação definem a cultura `ja-JP`. Consulte a seção "Próximas etapas" mais adiante neste tópico para obter informações sobre como ajustar esse código para um ambiente de produção.
+> Para fins de teste, os exemplos de código a seguir por meio de programação definem a cultura `ja-JP`. Consulte a seção "Próximas etapas" mais adiante neste tópico para obter informações sobre como ajustar esse código para um ambiente de produção.
 
 ### <a name="to-mark-satellite-assemblies-as-optional"></a>Para marcar os assemblies satélites como opcionais
 

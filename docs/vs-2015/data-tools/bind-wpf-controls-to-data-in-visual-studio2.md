@@ -22,12 +22,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 003b010ed5b1e3bf442be778b6cbb7d6e35efe1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c1733d6d4e60aad10896dbd2fcad16406830b83
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437050"
 ---
 # <a name="bind-wpf-controls-to-data-in-visual-studio"></a>Associar controles WPF a dados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Você pode criar uma associação de dados [!INCLUDE[TLA#tla_titlewinclient](../
      Para selecionar um controle diferente, clique na seta suspensa próxima ao item e selecione um controle. Para obter mais informações, consulte [definir o controle a ser criado quando arrastado da janela fontes de dados](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md).
 
     > [!NOTE]
-    >  Caso não deseje exibir uma coluna ou propriedade específica, expanda o item para exibir seus filhos. Clique na seta suspensa ao lado da coluna ou propriedade que você não deseja exibir e, em seguida, clique em **None**.
+    > Caso não deseje exibir uma coluna ou propriedade específica, expanda o item para exibir seus filhos. Clique na seta suspensa ao lado da coluna ou propriedade que você não deseja exibir e, em seguida, clique em **None**.
 
 3. Arraste o item para um contêiner válido no designer, como uma <xref:System.Windows.Controls.Grid>. Para obter mais informações sobre contêineres válidos, consulte [WPF associar controles a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
@@ -96,7 +96,7 @@ Você pode criar uma associação de dados [!INCLUDE[TLA#tla_titlewinclient](../
 2. Clique na seta suspensa ao lado do item e selecione **detalhes**.
 
     > [!NOTE]
-    >  Caso não deseje exibir uma coluna ou propriedade específica, expanda o item para exibir seus filhos. Clique na seta suspensa ao lado da coluna ou propriedade que você não deseja exibir e, em seguida, clique em **None**.
+    > Caso não deseje exibir uma coluna ou propriedade específica, expanda o item para exibir seus filhos. Clique na seta suspensa ao lado da coluna ou propriedade que você não deseja exibir e, em seguida, clique em **None**.
 
 3. Arraste o item para um contêiner válido no designer, como uma <xref:System.Windows.Controls.Grid>. Para obter mais informações sobre contêineres válidos, consulte [WPF associar controles a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
@@ -118,7 +118,7 @@ Você pode criar uma associação de dados [!INCLUDE[TLA#tla_titlewinclient](../
      [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] gera [!INCLUDE[TLA#tla_titlexaml](../includes/tlasharptla-titlexaml-md.md)] e o código para associar o controle aos dados. Para obter mais informações, consulte [WPF associar controles a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md).
 
     > [!NOTE]
-    >  Se o controle já estiver associado aos dados, a associação de dados para o controle é reiniciada para aquele item que foi arrastado para o controle mais recentemente.
+    > Se o controle já estiver associado aos dados, a associação de dados para o controle é reiniciada para aquele item que foi arrastado para o controle mais recentemente.
 
 ## <a name="see-also"></a>Consulte também
  [Associar controles WPF a dados no Visual Studio](../data-tools/bind-wpf-controls-to-data-in-visual-studio1.md) [criar tabelas de pesquisa em aplicativos WPF](../data-tools/create-lookup-tables-in-wpf-applications.md) [exibem dados relacionados em aplicativos WPF](../data-tools/display-related-data-in-wpf-applications.md) [WPF associar controles a um conjunto de dados](../data-tools/bind-wpf-controls-to-a-dataset.md) [Controles de WPF associar a um WCF data service](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md) [passo a passo: Exibindo dados relacionados em um aplicativo WPF](../data-tools/walkthrough-displaying-related-data-in-a-wpf-application.md)

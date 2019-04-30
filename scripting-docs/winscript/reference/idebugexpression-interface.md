@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 589c231afbc149c4eeface784d3cdbd43c4e5e40
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 1757317e9ab148b508bfed95107b5c3b3369b598
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58156340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430021"
 ---
 # <a name="idebugexpression-interface"></a>Interface IDebugExpression
 Representa uma expressão avaliada de forma assíncrona. Mecanismos de script geralmente implementam essa interface. Um IDE de depurador normalmente usa essa interface para habilitar uma janela de execução imediata ou janela de observação.  
   
 > [!NOTE]
->  O `IDebugExpression` interface está disponível somente a partir de um quadro de pilha.  
+> O `IDebugExpression` interface está disponível somente a partir de um quadro de pilha.  
   
  Além dos métodos herdados de `IUnknown`, o `IDebugExpression` interface expõe os métodos a seguir.  
   

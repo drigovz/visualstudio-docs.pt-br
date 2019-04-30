@@ -11,12 +11,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ded3910e74120433038132eb0135a869ea92d58d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a5f60338a8a856b4c6ef8fa913d6d7168ff67bb9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922277"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427033"
 ---
 # <a name="get-uml-model-elements-from-idataobject"></a>Obter elementos de modelo UML de IDataObject
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "58922277"
 Quando o usuário arrasta elementos de qualquer fonte para um diagrama, os elementos arrastados são codificados em um `System.Windows.Forms.IDataObject`. A codificação depende do tipo de objeto de origem. O fragmento a seguir demonstra como recuperar os elementos quando a fonte for um diagrama UML.  
   
 > [!NOTE]
->  A maioria das operações que você precisa fazer em modelos de UML pode ser executada usando os tipos no definido nos assemblies **Microsoft.VisualStudio.Uml.Interfaces** e  **Microsoft.VisualStudio.ArchitectureTools.Extensibility**. Mas, para essa finalidade, você precisa usar algumas classes que fazem parte da implementação de ferramentas de modelagem UML. Por exemplo, `ShapeElement` neste fragmento não é o mesmo que UML `IShape`. Para reduzir o risco de colocar o modelo UML e diagramas em um estado inconsistente, é melhor evitar usar os métodos nessas classes de implementação, exceto onde não há nenhuma alternativa.  
+> A maioria das operações que você precisa fazer em modelos de UML pode ser executada usando os tipos no definido nos assemblies **Microsoft.VisualStudio.Uml.Interfaces** e  **Microsoft.VisualStudio.ArchitectureTools.Extensibility**. Mas, para essa finalidade, você precisa usar algumas classes que fazem parte da implementação de ferramentas de modelagem UML. Por exemplo, `ShapeElement` neste fragmento não é o mesmo que UML `IShape`. Para reduzir o risco de colocar o modelo UML e diagramas em um estado inconsistente, é melhor evitar usar os métodos nessas classes de implementação, exceto onde não há nenhuma alternativa.  
   
 ## <a name="code-sample"></a>Exemplo de código  
  Seu projeto deve referenciar os seguintes [!INCLUDE[TLA2#tla_net](../includes/tla2sharptla-net-md.md)] assemblies:  

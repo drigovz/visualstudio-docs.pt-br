@@ -19,14 +19,14 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - dotnet
-ms.openlocfilehash: c2e388154e0efa129a916fd0461a01317edbb870
-ms.sourcegitcommit: 3201da3499051768ab59f492699a9049cbc5c3c6
-ms.translationtype: MT
+ms.openlocfilehash: 4c646f8f6dc228d42d6efb5ec44f3ec19a53a551
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/22/2019
-ms.locfileid: "58355157"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63408532"
 ---
-# <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Depuração remota de um projeto C# ou Visual Basic no Visual Studio
+# <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>Depuração remota de um projeto c# ou Visual Basic no Visual Studio
 Para depurar um aplicativo do Visual Studio que tenha sido implantado em um computador diferente, instalar e executar as ferramentas remotas no computador onde você implantou seu aplicativo, configure seu projeto para se conectar ao computador remoto do Visual Studio e, em seguida, executar seu aplicativo.
 
 ![Componentes do depurador remoto](../debugger/media/remote-debugger-client-apps.png "Remote_debugger_components")
@@ -90,7 +90,7 @@ O depurador não é possível implantar aplicativos de desktop em Visual C# ou V
 10. Copie o arquivo executável que você acabou de criar do seu computador do Visual Studio para a pasta recém-criada no computador remoto.
 
     > [!CAUTION]
-    >  Não faça alterações no código ou recriação (ou você deve repetir esta etapa). O executável que você copiou para o computador remoto deve corresponder exatamente, seu local de origem e símbolos.
+    > Não faça alterações no código ou recriação (ou você deve repetir esta etapa). O executável que você copiou para o computador remoto deve corresponder exatamente, seu local de origem e símbolos.
 
     Você pode copiar o projeto manualmente, use Xcopy, Robocopy, Powershell ou outras opções.
 

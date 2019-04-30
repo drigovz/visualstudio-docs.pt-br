@@ -21,12 +21,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7ee82187adac74f90b6f5cb8485c68452d8329b0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 421360421a732935d452053630c17cda319f4b0d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060704"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434493"
 ---
 # <a name="handle-a-concurrency-exception"></a>Tratar uma exceção de simultaneidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
 - Acesso ao banco de dados de exemplo Northwind com permissão para executar atualizações.
   
 > [!NOTE]
->  As caixas de diálogo e comandos de menu que você vê podem diferir dos descritos na Ajuda, dependendo de suas configurações ativas ou a edição que você está usando. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e comandos de menu que você vê podem diferir dos descritos na Ajuda, dependendo de suas configurações ativas ou a edição que você está usando. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="create-a-new-project"></a>Criar um novo projeto  
  Passo a passo você começa criando um novo aplicativo do Windows.  
@@ -86,7 +86,7 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
 3. Selecione uma conexão para o banco de dados de exemplo Northwind na lista de conexões disponíveis. Se a conexão não está disponível na lista de conexões, selecione**nova Conexão**  
   
     > [!NOTE]
-    >  Se você estiver se conectando a um arquivo de banco de dados local, selecione **não** quando for perguntado se você preferir que você deseja adicionar o arquivo ao seu projeto.  
+    > Se você estiver se conectando a um arquivo de banco de dados local, selecione **não** quando for perguntado se você preferir que você deseja adicionar o arquivo ao seu projeto.  
   
 4. Sobre o **salvar a cadeia de caracteres de conexão no arquivo de configuração de aplicativo**tela, selecione **próxima**.  
   
@@ -149,7 +149,7 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
  Nesta seção, você deve adicionar código que tenta atualizar o banco de dados. Você também lidar com qualquer <xref:System.Data.DBConcurrencyException> que pode ser gerada, bem como todas as outras exceções.  
   
 > [!NOTE]
->  O `CreateMessage` e `ProcessDialogResults` métodos serão adicionados posteriormente neste passo a passo.  
+> O `CreateMessage` e `ProcessDialogResults` métodos serão adicionados posteriormente neste passo a passo.  
   
 ##### <a name="to-add-error-handling-for-the-concurrency-error"></a>Para adicionar o tratamento de erro para o erro de simultaneidade  
   
@@ -201,7 +201,7 @@ Exceções de simultaneidade (<xref:System.Data.DBConcurrencyException>) são ac
 6. No primeiro registro (`ALFKI`) alterar `ContactName` para `Maria Anders2`.  
   
     > [!NOTE]
-    >  Navegue até uma linha diferente para confirmar a alteração.  
+    > Navegue até uma linha diferente para confirmar a alteração.  
   
 7. Alterne para o `ConcurrencyWalkthrough`do formulário em execução.  
   

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 567eba3da4856cd88a583bf614d5afbc13e77b0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0aa124d25e279b7e44292645d81d80829f5d3f8f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074915"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420191"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>Como: Personalizar um pacote de solução do SharePoint
   Você pode usar o Designer de pacote para criar e personalizar um pacote (*. wsp*). Por exemplo, você pode adicionar itens de projeto do SharePoint e recursos, especifique se o servidor Web é redefinido quando a solução é implantada e defina o tipo de servidor de implantação.
@@ -47,7 +47,7 @@ ms.locfileid: "60074915"
 2. Expanda o pacote, expanda o pacote e, em seguida, abra o *Package.Template.xml* arquivo.
 
     > [!NOTE]
-    >  Quando você abre o arquivo de manifesto XML para o modelo de pacote, os arquivos são validados automaticamente e você pode ignorar os avisos que aparecem na janela lista de erros.
+    > Quando você abre o arquivo de manifesto XML para o modelo de pacote, os arquivos são validados automaticamente e você pode ignorar os avisos que aparecem na janela lista de erros.
 
 ## <a name="change-the-manifest-template"></a>Alterar o modelo de manifesto
  Você pode alterar o código XML para o arquivo de manifesto empacotado no Editor de XML do Visual Studio ou no painel de modelo de manifesto. Todas as alterações no código XML são mescladas no arquivo de manifesto empacotado para o pacote.
@@ -68,7 +68,7 @@ ms.locfileid: "60074915"
  Você pode desabilitar o Designer de pacote e criar o *manifest. XML* arquivo manualmente. Na primeira vez que você executar esse procedimento, as configurações atuais no Designer de pacote são salvas no arquivo de XML do modelo de pacote. Em seguida, você pode modificar ou substituir o código XML.
 
 > [!NOTE]
->  Se você adicionar ou remove itens de projeto do SharePoint e recursos no arquivo XML, enquanto o Designer de pacote estiver desabilitado, esses itens de projeto e os recursos não são empacotados.
+> Se você adicionar ou remove itens de projeto do SharePoint e recursos no arquivo XML, enquanto o Designer de pacote estiver desabilitado, esses itens de projeto e os recursos não são empacotados.
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>Para substituir o arquivo de manifesto empacotado, desabilitando o designer
 

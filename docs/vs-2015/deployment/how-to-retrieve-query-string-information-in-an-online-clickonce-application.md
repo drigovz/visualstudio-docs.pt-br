@@ -16,12 +16,12 @@ caps.latest.revision: 21
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7b4d5e914566cc019a3882ed53923f84ecdddf85
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d8239b0ccbedfdb2965d8dc5f7738c50f9548e94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069530"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431523"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>Como: Recuperar informações de cadeia de consulta em um aplicativo ClickOnce online
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,19 +33,19 @@ O *cadeia de caracteres de consulta* é a parte de uma URL que comece com um pon
  Os dois procedimentos a seguir mostram como usar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo para obter informações de cadeia de caracteres de consulta.  
   
 > [!NOTE]
->  Você só pode passar informações em uma cadeia de caracteres de consulta quando seu aplicativo está sendo iniciado usando HTTP, em vez de usar um compartilhamento de arquivos ou o sistema de arquivos local.  
+> Você só pode passar informações em uma cadeia de caracteres de consulta quando seu aplicativo está sendo iniciado usando HTTP, em vez de usar um compartilhamento de arquivos ou o sistema de arquivos local.  
   
  O primeiro procedimento mostra como seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo pode usar um pequeno trecho de código para ler esses valores quando o aplicativo é iniciado.  
   
  O procedimento a seguir mostra como configurar seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] usando MageUI.exe para que ele pode aceitar parâmetros de cadeia de caracteres de consulta de aplicativo. Você precisará fazer isso sempre que você publicar seu aplicativo.  
   
 > [!NOTE]
->  Antes de tomar uma decisão para habilitar esse recurso, consulte a seção "Segurança" mais adiante neste tópico.  
+> Antes de tomar uma decisão para habilitar esse recurso, consulte a seção "Segurança" mais adiante neste tópico.  
   
  Para obter informações sobre como criar uma [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação usando Mage.exe ou MageUI.exe, consulte [passo a passo: Como implantar manualmente aplicativos ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-application.md).  
   
 > [!NOTE]
->  A partir do .NET Framework 3.5 SP1, é possível passar argumentos de linha de comando para um offline [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo. Se você deseja fornecer argumentos para o aplicativo, você pode passar parâmetros para o arquivo de atalho com o. Extensão APPREF-MS.  
+> A partir do .NET Framework 3.5 SP1, é possível passar argumentos de linha de comando para um offline [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo. Se você deseja fornecer argumentos para o aplicativo, você pode passar parâmetros para o arquivo de atalho com o. Extensão APPREF-MS.  
   
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>Para obter informações de cadeia de caracteres de consulta de um aplicativo ClickOnce  
   
@@ -71,7 +71,7 @@ O *cadeia de caracteres de consulta* é a parte de uma URL que comece com um pon
 4. Dos **arquivo** menu, selecione **salvar**.  
   
 > [!NOTE]
->  Como alternativa, você pode habilitar a cadeia de caracteres de consulta passando [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Selecione o **parâmetros de URL de permitir a serem passados para o aplicativo** caixa de seleção, que pode ser encontrada, abrindo o **propriedades do projeto**, selecionando o **publicar** guia, clicando no **Opções** botão e, em seguida, selecionando **manifestos**.  
+> Como alternativa, você pode habilitar a cadeia de caracteres de consulta passando [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)]. Selecione o **parâmetros de URL de permitir a serem passados para o aplicativo** caixa de seleção, que pode ser encontrada, abrindo o **propriedades do projeto**, selecionando o **publicar** guia, clicando no **Opções** botão e, em seguida, selecionando **manifestos**.  
   
 ## <a name="robust-programming"></a>Programação robusta  
  Quando você usa os parâmetros de cadeia de caracteres de consulta, você deve dar uma consideração cuidadosa como seu aplicativo é instalado e ativado. Se seu aplicativo está configurado para instalar no computador do usuário da Web ou de um compartilhamento de rede, é provável que o usuário ativará o aplicativo apenas uma vez por meio da URL. Depois disso, o usuário geralmente ativar seu aplicativo usando o atalho na **iniciar** menu. Como resultado, seu aplicativo é garantido que recebem argumentos de cadeia de caracteres de consulta apenas uma vez durante seu ciclo de vida. Se você optar por armazenar esses argumentos na máquina do usuário para uso futuro, você é responsável por armazená-los de maneira segura e protegida.  

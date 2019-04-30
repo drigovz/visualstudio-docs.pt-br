@@ -12,12 +12,12 @@ caps.latest.revision: 16
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: aaebcb9bf5edb5fda6938d364b3f96dc8823576f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 3f9a6f7985e3ebb3e77dcc605157f75e00a0842b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59653483"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426034"
 ---
 # <a name="msbuild-transforms"></a>Transformações do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Uma transformação é uma conversão individual de uma lista de itens para outr
 ```  
   
 > [!NOTE]
->  Você pode especificar um separador personalizado para uma lista de itens transformados da mesma maneira que especifica um separador para uma lista de itens padrão. Por exemplo, para separar uma lista de itens transformados usando uma vírgula (,) em vez do ponto-e-vírgula (;) padrão, use o XML a seguir.  
+> Você pode especificar um separador personalizado para uma lista de itens transformados da mesma maneira que especifica um separador para uma lista de itens padrão. Por exemplo, para separar uma lista de itens transformados usando uma vírgula (,) em vez do ponto-e-vírgula (;) padrão, use o XML a seguir.  
   
 ```  
 @(RESXFile->'Toolset\%(filename)%(extension)', ',')  
@@ -111,4 +111,4 @@ extension: .xsd
 ## <a name="see-also"></a>Consulte também  
  [Conceitos do MSBuild](../msbuild/msbuild-concepts.md)   
  [Referência do MSBuild](../msbuild/msbuild-reference.md)   
- [Como: Compilar incrementalmente](../msbuild/how-to-build-incrementally.md)
+ [Como: compilar de forma incremental](../msbuild/how-to-build-incrementally.md)

@@ -14,12 +14,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85b9d20dd67ff11f5bded7060440f2e768a205a9
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 84f82ab6e5cca57a1fabd600cecc7a5ee505c150
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56722857"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63411122"
 ---
 # <a name="vsix-manifest-designer"></a>Designer de manifesto do VSIX
 Modifica um pacote manifesto arquivo VSIX, que define o comportamento de instalação para uma extensão do Visual Studio.
@@ -29,7 +29,7 @@ Modifica um pacote manifesto arquivo VSIX, que define o comportamento de instala
  Para abrir o **Designer de manifesto do VSIX**, localize um *vsixmanifest* arquivo **Gerenciador de soluções**e abra o arquivo. Se o arquivo não contém XML válido, o designer de manifesto não abrirá.
 
 > [!NOTE]
->  O *vsixmanifest* arquivo de saída para *vsixmanifest* quando o pacote é compilado.
+> O *vsixmanifest* arquivo de saída para *vsixmanifest* quando o pacote é compilado.
 
 ## <a name="uielement-list"></a>Lista UIElement
  O **Designer de manifesto do VSIX** contém quatro seções que correspondem a esses elementos de nível superior do esquema:

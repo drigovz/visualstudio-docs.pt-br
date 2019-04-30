@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99d776e7d9891ca231fde4531b558de66568904f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 96704b52fb31085fad7546687a8803c85bcfbb47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56641462"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63418636"
 ---
 # <a name="elimination-of-sak-files"></a>Eliminação de ~ arquivos SAK
 Na fonte de controle de plug-in API 1.2, o *~ SAK* arquivos foram substituídos por sinalizadores de recurso e dá suporte a plug-in de controle de novas funções de detectam se uma fonte de *MSSCCPRJ* de arquivo e check-outs compartilhados.
@@ -48,7 +48,7 @@ Para plug-ins que dão suporte a funções avançadas fornecidas a fonte de cont
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl** = *dword:00000001*
 
 > [!NOTE]
->  Se essa chave do registro for definida como *DWORD: 00000000*, é equivalente à chave que está sendo inexistente e Visual Studio ainda tenta criar arquivos temporários. No entanto, se a chave do registro for definida como *DWORD: 00000001*, Visual Studio não tentará criar arquivos temporários. Em vez disso, ele pressupõe que o plug-in de controle do código-fonte não dá suporte a *Mssccprj* de arquivo e não oferece suporte a check-outs compartilhados.
+> Se essa chave do registro for definida como *DWORD: 00000000*, é equivalente à chave que está sendo inexistente e Visual Studio ainda tenta criar arquivos temporários. No entanto, se a chave do registro for definida como *DWORD: 00000001*, Visual Studio não tentará criar arquivos temporários. Em vez disso, ele pressupõe que o plug-in de controle do código-fonte não dá suporte a *Mssccprj* de arquivo e não oferece suporte a check-outs compartilhados.
 
 ## <a name="see-also"></a>Consulte também
 - [O que há de novo no controle de fonte de plug-in API versão 1.2](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

@@ -14,12 +14,12 @@ caps.latest.revision: 33
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 192fdd737816d2239b15530e2d5c03d73f82e0d5
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: bd65f12c065ee1d96934c6790779c8b4ca87b393
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59657500"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426310"
 ---
 # <a name="msbuild-toolset-toolsversion"></a>MSBuild Toolset (ToolsVersion)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -97,7 +97,7 @@ O MSBuild usa um conjunto de ferramentas de tarefas, metas e ferramentas para co
  Conforme descrito anteriormente neste tópico, o MSBuild usa uma chave de registro para especificar o caminho das ferramentas básicas. Se a chave tiver uma subchave, o MSBuild a usará para especificar o caminho de um subconjunto de ferramentas que contém ferramentas adicionais. Nesse caso, o conjunto de ferramentas é definido pela combinação das definições de propriedades definidas nas duas chaves.  
   
 > [!NOTE]
->  Se os nomes de propriedade do conjunto de ferramentas coincidirem, o valor que está definido para o caminho da subchave substituirá o valor que está definido para o caminho da chave raiz.  
+> Se os nomes de propriedade do conjunto de ferramentas coincidirem, o valor que está definido para o caminho da subchave substituirá o valor que está definido para o caminho da chave raiz.  
   
  Os subconjuntos de ferramentas tornam-se ativos na presença da propriedade de compilação `VisualStudioVersion`. Essa propriedade pode usar um dos seguintes valores:  
   

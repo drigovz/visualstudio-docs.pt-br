@@ -10,12 +10,12 @@ ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 caps.latest.revision: 40
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 04151a6fd3b934dd39e795cafc375974ac5a6b33
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4427931b079671a19e647860b263105ffdf52bd4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043660"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435534"
 ---
 # <a name="creating-a-settings-category"></a>Criar uma categoria de configurações
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Neste passo a passo, você cria uma categoria de configurações do Visual Studi
      Isso cria recursos esse nome de categoria "My Category", o objeto "My Settings" e a descrição da categoria "OptionInteger e OptionFloat".  
   
     > [!NOTE]
-    >  Esses três, apenas o nome da categoria não aparece no Assistente para importar e exportar configurações.  
+    > Esses três, apenas o nome da categoria não aparece no Assistente para importar e exportar configurações.  
   
 3. No MyToolsOptionsPackage.cs, adicione uma `float` propriedade nomeada `OptionFloat` para o `OptionPageGrid` de classe, conforme mostrado no exemplo a seguir.  
   
@@ -77,7 +77,7 @@ Neste passo a passo, você cria uma categoria de configurações do Visual Studi
     ```  
   
     > [!NOTE]
-    >  O `OptionPageGrid` categoria chamada "My Category" agora consiste em duas propriedades, `OptionInteger` e `OptionFloat`.  
+    > O `OptionPageGrid` categoria chamada "My Category" agora consiste em duas propriedades, `OptionInteger` e `OptionFloat`.  
   
 4. Adicionar um <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> para o `MyToolsOptionsPackage` de classe e dê a ele CategoryName "My Category", dê a ele o ObjectName "My Settings" e defina isToolsOptionPage como true. Defina o categoryResourceID, objectNameResourceID e DescriptionResourceID para o recurso de cadeia de caracteres correspondente que IDs criadas anteriormente.  
   

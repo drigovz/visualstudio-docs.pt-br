@@ -14,12 +14,12 @@ caps.latest.revision: 47
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: fa0fac38c79e4c54cb461ef51e016508d043f202
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e53e05d9df5a7bbdca5fd8a9b74dd9325dc7aae5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039789"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426473"
 ---
 # <a name="run-windows-store-apps-on-a-remote-machine"></a>Executar aplicativos da Windows Store em um computador remoto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
  Por padrão, o depurador remoto usa a Autenticação do Windows.  
   
 > [!WARNING]
->  Você também pode optar por executar o depurador remoto no Modo Sem Autenticação, mas isso é altamente desaconselhável. Nesse modo, não há nenhuma segurança de rede. Escolha o Modo Sem Autenticação somente se você tiver certeza de que a rede não corre risco de tráfego mal-intencionado ou hostil.  
+> Você também pode optar por executar o depurador remoto no Modo Sem Autenticação, mas isso é altamente desaconselhável. Nesse modo, não há nenhuma segurança de rede. Escolha o Modo Sem Autenticação somente se você tiver certeza de que a rede não corre risco de tráfego mal-intencionado ou hostil.  
   
 ## <a name="BKMK_DirectConnect"></a> Como se conectar diretamente a um dispositivo remoto  
  Para se conectar diretamente a um dispositivo remoto, conecte o computador com o Visual Studio ao dispositivo usando um cabo Ethernet padrão. Se o dispositivo não tiver uma porta Ethernet, você poderá usar um adaptador USB-Ethernet para se conectar ao cabo.  
@@ -74,15 +74,15 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
 ## <a name="BKMK_Installing_the_Remote_Tools"></a> Instalando as ferramentas remotas  
   
 > [!NOTE]
->  **Versões e atualizações**  
+> **Versões e atualizações**  
 >   
->  O **as ferramentas remotas para Visual Studio 2015** não têm suporte para versões anteriores do Visual Studio.  
+> O **as ferramentas remotas para Visual Studio 2015** não têm suporte para versões anteriores do Visual Studio.  
 >   
->  É recomendável que você instale a versão de atualização das ferramentas remotas para Visual Studio 2015 que corresponde à versão de atualização da instalação do Visual Studio.  
+> É recomendável que você instale a versão de atualização das ferramentas remotas para Visual Studio 2015 que corresponde à versão de atualização da instalação do Visual Studio.  
 >   
->  O depurador do VS é compatível com qualquer combinação de versões do VS 2015 e as ferramentas remotas para VS 2015. No entanto, a funcionalidade mais recente no Visual Studio requer que o Visual Studio e as Ferramentas Remotas estejam na versão mais atualizada.  
+> O depurador do VS é compatível com qualquer combinação de versões do VS 2015 e as ferramentas remotas para VS 2015. No entanto, a funcionalidade mais recente no Visual Studio requer que o Visual Studio e as Ferramentas Remotas estejam na versão mais atualizada.  
 >   
->  Outras ferramentas de diagnóstico podem exigir as mesmas versões das ferramentas remotas e do Visual Studio.  
+> Outras ferramentas de diagnóstico podem exigir as mesmas versões das ferramentas remotas e do Visual Studio.  
   
  **Instalando os componentes de depuração remota em um dispositivo remoto**  
   
@@ -101,7 +101,7 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
 ## <a name="BKMK_Starting_the_Remote_Debugger_Monitor"></a> Iniciando o Monitor de depuração remota  
   
 > [!NOTE]
->  Como o depurador remoto configura o firewall para permitir a comunicação com o host do Visual Studio, você deve ser um administrador no dispositivo remoto ao iniciar o depurador remoto pela primeira vez.  
+> Como o depurador remoto configura o firewall para permitir a comunicação com o host do Visual Studio, você deve ser um administrador no dispositivo remoto ao iniciar o depurador remoto pela primeira vez.  
   
  Depois de ter instalado as ferramentas remotas, escolha **depurador remoto** sobre o **iniciar** tela. O **configuração de depuração remota** aparece na primeira vez que você iniciar o depurador remoto.  
   
@@ -125,7 +125,7 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
    2. Escolher **permissões** para adicionar ou remover usuários que têm permissão para depuração remota.  
   
        > [!NOTE]
-       >  As permissões devem ser concedidas a cada conta de usuário que depurar remotamente.  
+       > As permissões devem ser concedidas a cada conta de usuário que depurar remotamente.  
   
    Você usa o **Assistente de configuração do depurador remoto** para definir opções avançadas para o depurador remoto. Para abrir o assistente, escolha **Assistente de configuração do depurador remoto** na tela inicial.  
   
@@ -141,7 +141,7 @@ Aplica-se ao Windows apenas] (... /Image/windows_only_content.png "windows_only_
  A caixa de diálogo lista somente os dispositivos que estão na sub-rede local do computador com o Visual Studio e que estão executando o depurador remoto.  
   
 > [!TIP]
->  Se você tiver problemas para se conectar a um dispositivo remoto, tente inserir o endereço IP do dispositivo. Para determinar o endereço IP de um dispositivo, abra uma janela de comando e digite **ipconfig**. O endereço IP é listado como **endereço IPv4**.  
+> Se você tiver problemas para se conectar a um dispositivo remoto, tente inserir o endereço IP do dispositivo. Para determinar o endereço IP de um dispositivo, abra uma janela de comando e digite **ipconfig**. O endereço IP é listado como **endereço IPv4**.  
   
 ### <a name="BKMK_Choosing_the_remote_device_for_C__and_Visual_Basic_projects"></a> Escolhendo o dispositivo remoto para projetos c# e Visual Basic  
  ![Gerenciado propriedades do projeto para depuração remota](../debugger/media/vsrun-managed-projprop-remote.png "VSRUN_Managed_ProjProp_Remote")  

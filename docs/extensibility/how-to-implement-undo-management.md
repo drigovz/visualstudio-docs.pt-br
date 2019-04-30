@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: d49c062540b50e442f2ac32e69ee37934c53bf2c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b29b95b9c53f18d6f97ac2455dd30aa6e26ccde4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068607"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63415477"
 ---
 # <a name="how-to-implement-undo-management"></a>Como: Implementar o gerenciamento de desfazer
 A principal interface usada para o gerenciamento de desfazer é <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager>, que é implementado pelo ambiente. Para dar suporte ao gerenciamento de desfazer, implemente a unidades de desfazer separado (ou seja, <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit>, que pode conter várias etapas individuais.
@@ -75,7 +75,7 @@ A principal interface usada para o gerenciamento de desfazer é <xref:Microsoft.
    O `OleUndoManager` classe representa uma instância da pilha de desfazer. Portanto, há um objeto de Gerenciador de desfazer por entidade de dados que estão sendo controlada para desfazer ou refazer.
 
 > [!NOTE]
->  Enquanto o objeto do Gerenciador de desfazer é usado pelo editor de texto, ele é um componente geral que tem suporte específico para o editor de texto. Se você quiser dar suporte a vários nível desfazer ou refazer, você pode usar esse objeto para fazer isso.
+> Enquanto o objeto do Gerenciador de desfazer é usado pelo editor de texto, ele é um componente geral que tem suporte específico para o editor de texto. Se você quiser dar suporte a vários nível desfazer ou refazer, você pode usar esse objeto para fazer isso.
 
 ## <a name="see-also"></a>Consulte também
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsChangeTrackingUndoManager>

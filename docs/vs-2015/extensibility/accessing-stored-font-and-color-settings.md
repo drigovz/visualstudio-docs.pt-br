@@ -12,12 +12,12 @@ ms.assetid: beba7174-e787-45c2-b6ff-a60f67ad4998
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6ff962a618ba0001441db748facac8af444cd255
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0debf1a5996d39a6cb52cdc843afabf0b4107c59
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078090"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63403253"
 ---
 # <a name="accessing-stored-font-and-color-settings"></a>Acessando configurações de cor e a fonte armazenada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -61,7 +61,7 @@ O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o ambiente de desenvolvimento int
   Por padrão, a geração de eventos não está habilitada. Para habilitar a geração de eventos, uma categoria deve ser aberta usando <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS>. Isso faz com que o IDE chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorEvents> método que implementa um VSPackage.  
   
 > [!NOTE]
->  Modificações por meio de **fontes e cores** geram eventos independente da página de propriedades <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. Você pode usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interface para determinar se uma atualização das configurações de fonte e cor armazenada em cache é necessária antes de chamar os métodos do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> classe.  
+> Modificações por meio de **fontes e cores** geram eventos independente da página de propriedades <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage>. Você pode usar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorCacheManager> interface para determinar se uma atualização das configurações de fonte e cor armazenada em cache é necessária antes de chamar os métodos do <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> classe.  
   
 ### <a name="storing-and-retrieving-information"></a>Armazenar e recuperar informações  
  Para obter ou definir informações de que um usuário pode modificar para um item de exibição nomeada em uma categoria de abrir, VSPackages chamar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetItem%2A> métodos.  
@@ -69,12 +69,12 @@ O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] o ambiente de desenvolvimento int
  Atributos de informações sobre a fonte para uma determinada categoria é obtida usando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.SetFont%2A> métodos.  
   
 > [!NOTE]
->  O `fFlags` argumento que é passado para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> método quando essa categoria foi aberta define o comportamento da <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> e o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> métodos. Por padrão, itemsthat de aboutdisplay de apenas retornar informações esses métodos foram alterados. No entanto, se uma categoria é aberta usando o <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> sinalizar, ambos atualizado e itens de exibição inalterado podem ser acessados pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>.  
+> O `fFlags` argumento que é passado para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.OpenCategory%2A> método quando essa categoria foi aberta define o comportamento da <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> e o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> métodos. Por padrão, itemsthat de aboutdisplay de apenas retornar informações esses métodos foram alterados. No entanto, se uma categoria é aberta usando o <xref:Microsoft.VisualStudio.Shell.Interop.__FCSTORAGEFLAGS> sinalizar, ambos atualizado e itens de exibição inalterado podem ser acessados pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A>.  
   
  Por padrão, só alterado **exibir itens** informações são mantidas no registro. O <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage> interface não pode ser usado para recuperar todas as configurações de fontes e cores.  
   
 > [!NOTE]
->  O <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> e o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> métodos retornam REGDB_E_KEYMISSING, (0x80040152L) quando você os usa para recuperar informações sobre inalterado **itens de exibição**.  
+> O <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetItem%2A> e o <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorStorage.GetFont%2A> métodos retornam REGDB_E_KEYMISSING, (0x80040152L) quando você os usa para recuperar informações sobre inalterado **itens de exibição**.  
   
  As configurações de todos os **exibir itens** em uma determinada **categoria** pode ser obtida usando os métodos do `T:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorDefaults` interface.  
   

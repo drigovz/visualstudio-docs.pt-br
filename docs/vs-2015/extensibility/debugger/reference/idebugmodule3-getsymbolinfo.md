@@ -13,12 +13,12 @@ ms.assetid: dda5e8e1-6878-4aa9-9ee4-e7d0dcc11210
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a500b84f04f5f9dce37515edae71fda509a63bbb
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 48dd08b8ef1a8b32497d03dc7989b32a22ee5a9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923810"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63426364"
 ---
 # <a name="idebugmodule3getsymbolinfo"></a>IDebugModule3::GetSymbolInfo
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ int GetSymbolInfo(
  Se o método for bem-sucedido, ele retorna `S_OK`; caso contrário, ele retorna um código de erro.  
   
 > [!NOTE]
->  A cadeia de caracteres retornada (na `MODULE_SYMBOL_SEARCH_INFO` estrutura) pode estar vazio, mesmo se `S_OK` é retornado. Nesse caso, não houve nenhuma informação de pesquisa para retornar.  
+> A cadeia de caracteres retornada (na `MODULE_SYMBOL_SEARCH_INFO` estrutura) pode estar vazio, mesmo se `S_OK` é retornado. Nesse caso, não houve nenhuma informação de pesquisa para retornar.  
   
 ## <a name="remarks"></a>Comentários  
  Se o `bstrVerboseSearchInfo` campo do `MODULE_SYMBOL_SEARCH_INFO` estrutura não estiver vazia, ele contém uma lista de caminhos pesquisados e os resultados da pesquisa. A lista é formatada com um caminho, seguido por reticências (""...), seguidas pelo resultado. Se houver mais de um par de resultado do caminho, em seguida, cada par é separado por um par de "\r\n" (carro-retorno/avanço de linha). O padrão tem esta aparência:  
@@ -66,7 +66,7 @@ int GetSymbolInfo(
  Neste exemplo, esse método retorna três caminhos com três resultados de pesquisa diferentes. Cada linha é encerrada com um par carro-retorno/avanço de linha. A saída de exemplo apenas imprime os resultados da pesquisa como uma única cadeia de caracteres.  
   
 > [!NOTE]
->  Um resultado de status é tudo o que imediatamente após o ""... até o final da linha.  
+> Um resultado de status é tudo o que imediatamente após o ""... até o final da linha.  
   
 ```cpp#  
 void ShowSymbolSearchResults(IDebugModule3 *pIDebugModule3)  

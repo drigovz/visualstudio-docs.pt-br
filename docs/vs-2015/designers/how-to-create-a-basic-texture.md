@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a343cb508933b91f5400ff6bc17c285a54bd2e87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bd1a9a2a269c173ef9dcb47b39921073802fe1ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076793"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438406"
 ---
 # <a name="how-to-create-a-basic-texture"></a>Como: Criar uma textura básica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Este documento demonstra como usar o Editor de Imagens para criar uma textura b�
 5. Na barra de ferramentas do Editor de Imagens, escolha a ferramenta **Preenchimento** e, em seguida, pressione e mantenha a tecla Shift pressionada e escolha qualquer ponto na imagem. Usar a tecla Shift faz com que o valor alfa da cor de preenchimento substitua a cor na imagem. Caso contrário, o valor alfa é usado para misturar a cor de preenchimento com a cor da imagem.  
   
    > [!IMPORTANT]
-   >  Essa etapa, junto com a seleção de cor na etapa anterior, garante que a imagem base seja preparada para a textura de destino de "alvo" que você desenhará. Quando a imagem é preenchida com preto transparente e como a borda do destino é preta, não haverá nenhum artefato de serrilhado em torno de destino.  
+   > Essa etapa, junto com a seleção de cor na etapa anterior, garante que a imagem base seja preparada para a textura de destino de "alvo" que você desenhará. Quando a imagem é preenchida com preto transparente e como a borda do destino é preta, não haverá nenhum artefato de serrilhado em torno de destino.  
   
 6. Na barra de ferramentas do Editor de Imagens, escolha a ferramenta **Elipse**.  
   
@@ -70,7 +70,7 @@ Este documento demonstra como usar o Editor de Imagens para criar uma textura b�
 11. Usando a ferramenta **Elipse**, desenhe um círculo da coordenada de pixel `(3, 3)` até a coordenada de pixel `(508, 508)`. Para desenhar o círculo mais facilmente, você pode pressionar e manter pressionada a tecla Shift enquanto desenha.  
   
     > [!NOTE]
-    >  As coordenadas de pixel do local atual do ponteiro são exibidas na barra de status do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
+    > As coordenadas de pixel do local atual do ponteiro são exibidas na barra de status do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 12. Altere a cor da tela de fundo. Defina **R** como `44`, **G** como `165`, **B** como `211` e **A** como `255`.  
   
