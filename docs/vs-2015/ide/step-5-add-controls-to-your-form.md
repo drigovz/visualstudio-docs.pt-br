@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3eb3e244fba620913581330c74825140c9dd76d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e05e8c313e6c2345964386c9c4f08c1bb6f16089
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60081574"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442552"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>Etapa 5: Adicionar controles ao formulário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,14 +37,14 @@ Nessa etapa, você adiciona controles como um controle `PictureBox` e um control
 Tarefas PictureBox  
   
     > [!NOTE]
-    >  Se você adicionar acidentalmente o tipo errado de controle a seu TableLayoutPanel, poderá excluí-lo. Clique com o botão direito do mouse no controle e escolha **Excluir** no menu de contexto. Você pode também remover os controles de formulário usando a barra de menus. Na barra de menus, escolha **Editar**, **Desfazer** ou **Editar**, **Excluir**.  
+    > Se você adicionar acidentalmente o tipo errado de controle a seu TableLayoutPanel, poderá excluí-lo. Clique com o botão direito do mouse no controle e escolha **Excluir** no menu de contexto. Você pode também remover os controles de formulário usando a barra de menus. Na barra de menus, escolha **Editar**, **Desfazer** ou **Editar**, **Excluir**.  
   
 5. Escolha o link **Encaixar no contêiner pai**. Isso define automaticamente a propriedade **Dock** de PictureBox como **Fill**. Para ver isso, escolha o controle PictureBox para selecioná-lo, vá para a janela **Propriedades** e certifique-se de que a propriedade **Dock** está definida como **Fill**.  
   
 6. Faça a PictureBox se estender por ambas as colunas alterando sua propriedade **ColumnSpan**. Escolha o controle PictureBox e defina sua propriedade **ColumnSpan** como **2**. Além disso, quando a PictureBox está vazia, você deseja mostrar uma estrutura vazia. Defina sua propriedade **BorderStyle** para **Fixed3D**.  
   
     > [!NOTE]
-    >  Se você não vir uma propriedade **ColumnSpan** para sua PictureBox, então será provável que a PictureBox tenha sido adicionada ao formulário em vez de ao TableLayoutPanel. Para corrigir isso, escolha o PictureBox, exclua-o, escolha o TableLayoutPanel, e adicione um novo PictureBox.  
+    > Se você não vir uma propriedade **ColumnSpan** para sua PictureBox, então será provável que a PictureBox tenha sido adicionada ao formulário em vez de ao TableLayoutPanel. Para corrigir isso, escolha o PictureBox, exclua-o, escolha o TableLayoutPanel, e adicione um novo PictureBox.  
   
 7. Escolha o TableLayoutPanel no formulário e adicione um controle **CheckBox** ao formulário. Clique duas vezes no item **CheckBox** na Caixa de Ferramentas para adicionar um novo controle CheckBox à próxima célula livre em sua tabela. Como um PictureBox ocupa as duas primeiras células em TableLayoutPanel, o controle de caixa de seleção é adicionado à célula do canto inferior esquerdo. Escolha a propriedade **Text** e digite a palavra **Stretch**, como mostrado na imagem a seguir.  
   
@@ -54,7 +54,7 @@ Controle de caixa de texto com propriedade de alongamento
 8. Escolha o TableLayoutPanel no formulário e, em seguida, vá para o grupo **Contêineres** na Caixa de Ferramentas (na qual você obteve o controle TableLayoutPanel) e clique duas vezes no item **FlowLayoutPanel** para adicionar um novo controle à última célula em PictureBox (canto inferior direito). Encaixe então o FlowLayoutPanel no TableLayoutPanel (escolhendo **Encaixar no contêiner pai** na lista de tarefas de triângulo preto de FlowLayoutPanel ou configurando a propriedade **Dock** de FlowLayoutPanel para **Fill**).  
   
     > [!NOTE]
-    >  Um FlowLayoutPanel é um contêiner que organiza outros controles em linhas nítidas na ordem. Quando você redimensiona um FlowLayoutPanel, se ele tiver espaço para colocar todos os controles em uma única linha, ele faz isso. Caso contrário, organize-os em linhas, um sobre o outro. Você usará um FlowLayoutPanel para armazenar quatro botões. Se os botões forem organizados uns sobre os outros quando adicionados, verifique se FlowLayoutPanel está selecionado antes de adicionar os botões. Embora tenha sido indicado anteriormente que cada célula pode conter somente um controle, a célula inferior direita de TableLayoutPanel possui quatro controles de botão. Isso ocorre porque você pode colocar um controle em uma célula que contém outros controles. O tipo de controle é chamado de recipiente, e o FlowLayoutPanel é um recipiente.  
+    > Um FlowLayoutPanel é um contêiner que organiza outros controles em linhas nítidas na ordem. Quando você redimensiona um FlowLayoutPanel, se ele tiver espaço para colocar todos os controles em uma única linha, ele faz isso. Caso contrário, organize-os em linhas, um sobre o outro. Você usará um FlowLayoutPanel para armazenar quatro botões. Se os botões forem organizados uns sobre os outros quando adicionados, verifique se FlowLayoutPanel está selecionado antes de adicionar os botões. Embora tenha sido indicado anteriormente que cada célula pode conter somente um controle, a célula inferior direita de TableLayoutPanel possui quatro controles de botão. Isso ocorre porque você pode colocar um controle em uma célula que contém outros controles. O tipo de controle é chamado de recipiente, e o FlowLayoutPanel é um recipiente.  
   
 ### <a name="to-add-buttons"></a>Para adicionar botões  
   
@@ -63,14 +63,14 @@ Controle de caixa de texto com propriedade de alongamento
 2. Normalmente, você adiciona outros botões usando a caixa de ferramentas. Desta vez, escolha **button2** e, na barra de menus, escolha **Editar**, **Copiar** (ou pressione Ctrl+C). Na barra de menus, escolha **Editar**, **Colar** (ou pressione Ctrl+V) para colar uma cópia do botão. Agora cole-o novamente. O IDE agora adicionou **button3** e **button4** ao FlowLayoutPanel.  
   
     > [!NOTE]
-    >  Você pode copiar e colar qualquer controle. O IDE nomeia e coloca os novos controles de uma maneira lógica. Se você colar um controle em um contêiner, o IDE escolherá o próximo espaço lógico para posicionamento.  
+    > Você pode copiar e colar qualquer controle. O IDE nomeia e coloca os novos controles de uma maneira lógica. Se você colar um controle em um contêiner, o IDE escolherá o próximo espaço lógico para posicionamento.  
   
 3. Escolha o primeiro botão e defina sua propriedade **Text** como **Show a picture**. Em seguida, defina as propriedades **Text** dos próximos três botões como **Limpar a imagem**, **Definir a cor da tela de fundo** e **Fechar**.  
   
 4. A próxima etapa é dimensionar os botões e organizá-los de forma a alinhá-los no lado direito do painel. Escolha o FlowLayoutPanel e examine sua propriedade **FlowDirection**. Altere-a para que ela seja definida como **RightToLeft**. Assim que fizer isso, os botões devem alinhar-se para o lado direito da célula e reverter a ordem de modo que o botão **Mostrar uma imagem** fique à direita.  
   
     > [!NOTE]
-    >  Se os botões ainda estiverem na ordem errada, você poderá arrastar os botões em torno do FlowLayoutPanel para reorganizá-los em qualquer ordem. Você pode escolher um botão e o arrastar para a esquerda ou direita.  
+    > Se os botões ainda estiverem na ordem errada, você poderá arrastar os botões em torno do FlowLayoutPanel para reorganizá-los em qualquer ordem. Você pode escolher um botão e o arrastar para a esquerda ou direita.  
   
 5. Escolha o botão **Fechar** para selecioná-lo. Mantenha pressionada a tecla CTRL e escolha os outros três botões, de forma que todos eles sejam selecionados. Quando todos os botões são selecionados, vá para a janela **Propriedades** e role até a propriedade **AutoSize**. Essa propriedade informa o botão para redimensionar automaticamente para ajustar todo o texto correspondente. Defina-a como **true**. Os botões agora devem ser dimensionados corretamente e estar na ordem correta. (Enquanto todos os quatro botões estiverem selecionados, você pode alterar todas as quatro propriedades **AutoSize** ao mesmo tempo.) A figura a seguir mostra os quatro botões.  
   

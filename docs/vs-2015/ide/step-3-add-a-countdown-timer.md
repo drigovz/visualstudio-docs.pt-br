@@ -9,12 +9,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f0b98fa4b3182db71567d61569cddf4cfae33ec1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d95708f940bfb12f67903f41d9f030a77877008d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094808"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442603"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>Etapa 3: Adicionar um temporizador de contagem regressiva
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60094808"
 Na terceira parte deste tutorial, você adicionará um timer de contagem regressiva para controlar o número de segundos restantes até o término do teste.  
   
 > [!NOTE]
->  Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-add-a-countdown-timer"></a>Para adicionar um timer de contagem regressiva  
   
@@ -57,7 +57,7 @@ Na terceira parte deste tutorial, você adicionará um timer de contagem regress
      Você adicionou uma instrução de `if else`, que é como você informa os programas a tomar decisões. Uma instrução de `if else` se parece com o seguinte.  
   
     > [!NOTE]
-    >  O exemplo a seguir é somente para ilustração - não o adicione a seu projeto.  
+    > O exemplo a seguir é somente para ilustração - não o adicione a seu projeto.  
   
     ```vb  
     If (something that your program will check) Then  

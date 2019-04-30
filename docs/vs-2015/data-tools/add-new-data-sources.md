@@ -19,12 +19,12 @@ caps.latest.revision: 60
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: db550b2a99f12190cac0bde74859191c2943b2d5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 77b962d9ab4594bba5be42100a46e67e1c861384
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60102751"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445749"
 ---
 # <a name="add-new-data-sources"></a>Adicionar novas fontes de dados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -42,7 +42,7 @@ No contexto das ferramentas de dados do .NET no Visual Studio, o termo *fonte de
 - Uma classe ou uma coleção em sua solução.  
   
 > [!NOTE]
->  Se você não estiver usando recursos de vinculação de dados, conjuntos de dados, o Entity Framework, LINQ to SQL, WCF ou o SharePoint, o conceito de uma "fonte de dados" não se aplica. Basta conectar-se diretamente ao banco de dados usando os objetos SQLCommand e se comunicar diretamente com o banco de dados.  
+> Se você não estiver usando recursos de vinculação de dados, conjuntos de dados, o Entity Framework, LINQ to SQL, WCF ou o SharePoint, o conceito de uma "fonte de dados" não se aplica. Basta conectar-se diretamente ao banco de dados usando os objetos SQLCommand e se comunicar diretamente com o banco de dados.  
   
  Você cria e edita fontes de dados usando o **Data Source Configuration Wizard** em um aplicativo Windows Forms ou Windows Presentation Foundation. Para o Entity Framework, primeiro crie as classes de entidade e, em seguida, iniciar o assistente, selecionando **Project** > **Add New Data Source** (descrito mais detalhadamente neste artigo).  
   
@@ -84,7 +84,7 @@ No contexto das ferramentas de dados do .NET no Visual Studio, o termo *fonte de
 - Serviços da Web.  
   
     > [!NOTE]
-    >  Os itens que aparecem na **fontes de dados** janela são dependentes dos dados que o serviço retorna. Alguns serviços podem não fornecer informações suficientes para o **Assistente de Configuração de Fonte de Dados** criar objetos associáveis. Por exemplo, se o serviço retorna um conjunto de dados não tipado, nenhum item aparecerá na **fontes de dados** janela quando você concluir o assistente. Isso ocorre porque os conjuntos de dados não tipados não fornecem um esquema e, portanto, o assistente não tem informações suficientes para criar a fonte de dados.  
+    > Os itens que aparecem na **fontes de dados** janela são dependentes dos dados que o serviço retorna. Alguns serviços podem não fornecer informações suficientes para o **Assistente de Configuração de Fonte de Dados** criar objetos associáveis. Por exemplo, se o serviço retorna um conjunto de dados não tipado, nenhum item aparecerá na **fontes de dados** janela quando você concluir o assistente. Isso ocorre porque os conjuntos de dados não tipados não fornecem um esquema e, portanto, o assistente não tem informações suficientes para criar a fonte de dados.  
   
 ## <a name="data-source-for-an-object"></a>Fonte de dados para um objeto  
  Você pode criar uma fonte de dados de qualquer objeto que expõe uma ou mais propriedades públicas executando o **Data Source Configuration Wizard** e, em seguida, selecionando a **objeto** tipo de fonte de dados. Todas as propriedades públicas de um objeto são exibidas na **fontes de dados** janela.   Se você estiver usando o Entity Framework e gerou um modelo, isso é onde você pode encontrar as classes de entidade que serão as fontes de dados para seu aplicativo.  
@@ -94,10 +94,10 @@ No contexto das ferramentas de dados do .NET no Visual Studio, o termo *fonte de
  Se você deseja associar a um objeto em um assembly ou projeto que não aparece na exibição de árvore, clique em **adicionar referência** e usar o **caixa de diálogo Adicionar referência** para adicionar uma referência ao assembly ou projeto. Depois de adicionar a referência, o assembly ou projeto é adicionado à exibição em árvore.  
   
 > [!NOTE]
->  Você precisará criar o projeto que contém os objetos antes dos objetos aparecem na exibição de árvore.  
+> Você precisará criar o projeto que contém os objetos antes dos objetos aparecem na exibição de árvore.  
   
 > [!NOTE]
->  Para dar suporte à vinculação de dados de arrastar e soltar, objetos que implementam o <xref:System.ComponentModel.ITypedList> ou <xref:System.ComponentModel.IListSource> interface deve ter um construtor padrão. Caso contrário, o Visual Studio não é possível instanciar o objeto de fonte de dados, e ele exibirá um erro quando você arrasta o item para a superfície de design.  
+> Para dar suporte à vinculação de dados de arrastar e soltar, objetos que implementam o <xref:System.ComponentModel.ITypedList> ou <xref:System.ComponentModel.IListSource> interface deve ter um construtor padrão. Caso contrário, o Visual Studio não é possível instanciar o objeto de fonte de dados, e ele exibirá um erro quando você arrasta o item para a superfície de design.  
   
 ## <a name="data-source-for-a-sharepoint-list"></a>Fonte de dados para uma lista do SharePoint  
  Você pode criar uma fonte de dados de uma lista do SharePoint, executando o **Data Source Configuration Wizard** e selecionando o **SharePoint** tipo de fonte de dados. SharePoint expõe os dados por meio de [!INCLUDE[ssAstoria](../includes/ssastoria-md.md)], portanto, a criação de uma fonte de dados do SharePoint é o mesmo que criar uma fonte de dados de um serviço. Selecionando o **SharePoint** item o **Data Source Configuration Wizard** abre o **Add Service Reference** caixa de diálogo, em que você se conectar ao serviço de dados do SharePoint Por que aponta para o servidor do SharePoint.  Isso requer o SDK do SharePoint.  

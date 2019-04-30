@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 53b75732c636a551e3a000008d3ddcca2aa686cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 966a81f7863f71296bb7b6bd307a5e3a5241c783
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60058474"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441032"
 ---
 # <a name="how-to-modify-a-standard-menu-command-in-a-domain-specific-language"></a>Como: Modificar um comando de menu padrão em uma Linguagem Específica de Domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "60058474"
    Este tópico explica esse procedimento.  
   
 > [!NOTE]
->  Se você quiser criar seus próprios comandos de menu, consulte [como: Adicionar um comando ao Menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
+> Se você quiser criar seus próprios comandos de menu, consulte [como: Adicionar um comando ao Menu de atalho](../modeling/how-to-add-a-command-to-the-shortcut-menu.md).  
   
 ## <a name="what"></a> Quais comandos podem ser modificados?  
   
@@ -52,7 +52,7 @@ ms.locfileid: "60058474"
 5. Feche o arquivo sem salvar as edições.  
   
     > [!NOTE]
-    >  Normalmente, é aconselhável não editar arquivos que foram gerados. Qualquer edição será perdida na próxima vez em que os arquivos forem gerados.  
+    > Normalmente, é aconselhável não editar arquivos que foram gerados. Qualquer edição será perdida na próxima vez em que os arquivos forem gerados.  
   
 ## <a name="extend"></a> Estender a classe de conjunto apropriado de comando  
  Crie um novo arquivo que contenha uma declaração parcial da classe de conjunto de comandos.  
@@ -90,7 +90,7 @@ ms.locfileid: "60058474"
  O exemplo a seguir desabilita o item de menu Excluir quando o usuário selecionar mais de uma forma.  
   
 > [!NOTE]
->  Esse método não afeta se o comando está disponível através de um pressionamento de tecla. Por exemplo, desabilitar o item de menu Excluir não impede a invocação do comando através da tecla Delete.  
+> Esse método não afeta se o comando está disponível através de um pressionamento de tecla. Por exemplo, desabilitar o item de menu Excluir não impede a invocação do comando através da tecla Delete.  
   
 ```  
 /// <summary>  

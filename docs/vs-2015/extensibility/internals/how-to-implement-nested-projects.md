@@ -11,12 +11,12 @@ ms.assetid: d20b8d6a-f0e0-4115-b3a3-edda893ae678
 caps.latest.revision: 18
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 5100fb42cba7c993861ef5b9fa0682400b0cfa4a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 427ef425c64323246ffe1141d081fd7d921506a6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928296"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435233"
 ---
 # <a name="how-to-implement-nested-projects"></a>Como: Implementando projetos aninhados
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Quando você cria um tipo de projeto aninhado existe são uma várias etapas adi
 1. O ambiente de desenvolvimento integrado (IDE) carrega as informações de inicialização e o arquivo de projeto do projeto pai, chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory> interface. O projeto pai é criado e adicionado à solução.  
   
    > [!NOTE]
-   >  Neste ponto, é muito cedo no processo para o projeto pai criar o projeto aninhado porque o projeto pai deve ser criado antes que os projetos filho podem ser criados. Seguindo essa sequência, o projeto pai pode aplicar configurações aos projetos filho e os projetos filho podem adquirir informações dos projetos pai, se necessário. Essa sequência é se ela é necessária por clientes como o controle do código fonte (SCC) e o Gerenciador de soluções.  
+   > Neste ponto, é muito cedo no processo para o projeto pai criar o projeto aninhado porque o projeto pai deve ser criado antes que os projetos filho podem ser criados. Seguindo essa sequência, o projeto pai pode aplicar configurações aos projetos filho e os projetos filho podem adquirir informações dos projetos pai, se necessário. Essa sequência é se ela é necessária por clientes como o controle do código fonte (SCC) e o Gerenciador de soluções.  
   
     O projeto pai deve aguardar o <xref:Microsoft.VisualStudio.Shell.Interop.IVsParentProject.OpenChildren%2A> método a ser chamado pelo IDE para criar seu aninhado (filho) projeto ou projetos.  
   
@@ -57,7 +57,7 @@ Quando você cria um tipo de projeto aninhado existe são uma várias etapas adi
     Se ele ainda não existir, o projeto pai cria um GUID para cada projeto aninhado chamando `CoCreateGuid`.  
   
    > [!NOTE]
-   >  `CoCreateGuid` uma API COM é chamada quando um GUID deve ser criado. Para obter mais informações, consulte `CoCreateGuid` e GUIDs na biblioteca MSDN.  
+   > `CoCreateGuid` uma API COM é chamada quando um GUID deve ser criado. Para obter mais informações, consulte `CoCreateGuid` e GUIDs na biblioteca MSDN.  
   
     O projeto pai armazena esse GUID em seu arquivo de projeto a ser recuperado na próxima vez que ele é aberto no IDE. Consulte a etapa 4 para obter mais informações relacionadas a chamada de `AddVirtualProjectEX` para recuperar o `guidProjectID` para o projeto filho.  
   
@@ -66,7 +66,7 @@ Quando você cria um tipo de projeto aninhado existe são uma várias etapas adi
      Porque os projetos pai e filho são instanciados por meio de programação, você pode definir propriedades para projetos aninhados neste momento.  
   
     > [!NOTE]
-    >  Não apenas você recebe as informações de contexto do projeto aninhado, mas você também pode fazer se o projeto pai tem qualquer contexto para esse item, marcando <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Dessa forma, você pode adicionar atributos adicionais de ajuda dinâmica e opções de menu específicas para projetos aninhados individuais.  
+    > Não apenas você recebe as informações de contexto do projeto aninhado, mas você também pode fazer se o projeto pai tem qualquer contexto para esse item, marcando <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID>. Dessa forma, você pode adicionar atributos adicionais de ajuda dinâmica e opções de menu específicas para projetos aninhados individuais.  
   
 10. A hierarquia é criada para exibição no Gerenciador de soluções com uma chamada para o <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetNestedHierarchy%2A> método.  
   

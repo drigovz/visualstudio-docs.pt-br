@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: c5edf728df10d2418c4a3341fd54e4115439cc4a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: af470bbbebbf10fdfcf906c905171e86b0c100ba
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055165"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433530"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>Como: Adicionar atividades à caixa de ferramentas
 As atividades podem ser adicionadas para o **caixa de ferramentas** em sua solução de várias maneiras diferentes. Você pode adicioná-los do seu projeto atual, referênciá-los de um projeto diferente, ou referênciá-los de um conjunto diferente.  
@@ -28,13 +28,13 @@ As atividades podem ser adicionadas para o **caixa de ferramentas** em sua solu�
 3. Compile o projeto. Se o build foi bem-sucedido, uma nova categoria na **caixa de ferramentas** denominado "\<*nome do projeto*>" com a atividade personalizado incluída na categoria é exibida.  
   
     > [!NOTE]
-    >  Se a caixa de ferramentas é reiniciada, as atividades personalizados serão removidas, mesmo se a solução é compilado novamente. Para preencher novamente a caixa de ferramentas com atividades personalizados depois que redefinido, reinicie [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
+    > Se a caixa de ferramentas é reiniciada, as atividades personalizados serão removidas, mesmo se a solução é compilado novamente. Para preencher novamente a caixa de ferramentas com atividades personalizados depois que redefinido, reinicie [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
   
     > [!NOTE]
-    >  A caixa de ferramentas só pode mostrar uma atividade de um determinado nome. Se duas atividades diferentes assemblies com o mesmo nome de classe, somente um exibirá.  
+    > A caixa de ferramentas só pode mostrar uma atividade de um determinado nome. Se duas atividades diferentes assemblies com o mesmo nome de classe, somente um exibirá.  
   
     > [!NOTE]
-    >  O domínio de aplicativo é compartilhado entre instâncias do editor; se as variáveis estáticas são usados, serão compartilhados entre instâncias do editor também. Se esse não é o comportamento desejado, um serviço deve ser usado para controlar instâncias variáveis. Ver [usando o contexto de edição de ModelItem](http://msdn.microsoft.com/library/7f9f1ea5-0147-4079-8eca-be94f00d3aa1) para obter informações sobre como usar serviços dentro do designer.  
+    > O domínio de aplicativo é compartilhado entre instâncias do editor; se as variáveis estáticas são usados, serão compartilhados entre instâncias do editor também. Se esse não é o comportamento desejado, um serviço deve ser usado para controlar instâncias variáveis. Ver [usando o contexto de edição de ModelItem](http://msdn.microsoft.com/library/7f9f1ea5-0147-4079-8eca-be94f00d3aa1) para obter informações sobre como usar serviços dentro do designer.  
   
 ### <a name="to-add-an-activity-from-within-a-different-project"></a>Para adicionar uma atividade de dentro de um projeto diferente  
   

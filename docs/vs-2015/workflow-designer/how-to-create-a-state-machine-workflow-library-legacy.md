@@ -13,12 +13,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca54c1585d683745bb42815921f3982c9c0fd441
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6533ae98e110b3813c6dd7f5520e322ce2cf3496
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433495"
 ---
 # <a name="how-to-create-a-state-machine-workflow-library-legacy"></a>Como: Criar uma biblioteca de fluxo de trabalho de máquina de estado (herdado)
 Siga estas etapas para criar um projeto de biblioteca de fluxo de trabalho do computador de estado usando [!INCLUDE[wfd1](../includes/wfd1-md.md)] herdado fornecido por [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -34,7 +34,7 @@ Siga estas etapas para criar um projeto de biblioteca de fluxo de trabalho do co
 3. Selecione o **.NET Framework 3.0** opção ou o **.NET Framework 3.5** opção na lista suspensa na parte superior da lista da **novo projeto** janela para acessar o designer herdado.  
   
     > [!NOTE]
-    >  A opção padrão na [!INCLUDE[vs2010](../includes/vs2010-md.md)] está **.NET Framework 4**. Essa opção é usada criar aplicativos de [!INCLUDE[wf](../includes/wf-md.md)] que direcionam [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] e usa o designer herdado.  
+    > A opção padrão na [!INCLUDE[vs2010](../includes/vs2010-md.md)] está **.NET Framework 4**. Essa opção é usada criar aplicativos de [!INCLUDE[wf](../includes/wf-md.md)] que direcionam [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] e usa o designer herdado.  
   
 4. No **tipos de projeto** painel, selecione Visual c# ou Visual Basic (sob **outras linguagens**) e, em seguida, selecione **fluxo de trabalho**.  
   

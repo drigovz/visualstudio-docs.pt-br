@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 5958eb6fb8fd14dd510fa87d900efa76cb6f6a87
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 83f906ad9e5ded349250fe5324076527975c9bf6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446989"
 ---
 # <a name="ribbon-object-model-overview"></a>Visão geral do modelo de objeto da faixa de opções
   O [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] expõe um modelo de objeto com rigidez de tipos que você pode usar para obter e definir as propriedades de controles da faixa de opções em tempo de execução. Por exemplo, dinamicamente você pode preencher os controles de menu, ou mostrar e ocultar controles contextualmente. Você também pode adicionar guias, grupos e controles à faixa de opções, mas apenas antes que o faixa de opções é carregada pelo aplicativo do Office. Para obter informações, consulte [definir as propriedades que se tornam somente leitura](#SettingReadOnlyProperties).
@@ -130,7 +130,7 @@ ms.locfileid: "60040710"
  A tabela a seguir mostra as propriedades que podem ser definidas somente antes de carrega a faixa de opções.
 
 > [!NOTE]
->  Você pode definir as propriedades de controles em menus dinâmicos a qualquer momento. Nesse caso, não se aplicam a essa tabela.
+> Você pode definir as propriedades de controles em menus dinâmicos a qualquer momento. Nesse caso, não se aplicam a essa tabela.
 
 |Propriedade|Classe de controle de faixa de opções|
 |--------------|--------------------------|
@@ -163,7 +163,7 @@ ms.locfileid: "60040710"
  Se você tiver a lógica condicional que define qualquer uma dessas propriedades para um valor diferente de quando outras instâncias da faixa de opções são criadas, esse código não terá nenhum efeito.
 
 > [!NOTE]
->  Certifique-se de que o **nome** propriedade é definida para cada controle que você adicionar a uma faixa de opções do Outlook. Se você adicionar um controle a uma faixa de opções do Outlook no tempo de execução, você deve definir essa propriedade em seu código. Se você adicionar um controle a uma faixa de opções do Outlook no tempo de design, a propriedade Name é definida automaticamente.
+> Certifique-se de que o **nome** propriedade é definida para cada controle que você adicionar a uma faixa de opções do Outlook. Se você adicionar um controle a uma faixa de opções do Outlook no tempo de execução, você deve definir essa propriedade em seu código. Se você adicionar um controle a uma faixa de opções do Outlook no tempo de design, a propriedade Name é definida automaticamente.
 
 ## <a name="ribbon-control-events"></a>Eventos de controle de faixa de opções
  Cada classe de controle contém um ou mais eventos. A tabela a seguir descreve esses eventos.

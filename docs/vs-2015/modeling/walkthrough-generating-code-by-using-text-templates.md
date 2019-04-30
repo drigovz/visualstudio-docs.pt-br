@@ -12,12 +12,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8c374dc5cc616f58cb81a1191b095971561df9b1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 37abc4862b12ab11239b2dd8a24b8c18acab2a51
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052877"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446707"
 ---
 # <a name="walkthrough-generating-code-by-using-text-templates"></a>Passo a passo: Geração de código usando modelos de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Geração de código permite que você gerar o código do programa que é fortem
  Neste projeto de exemplo, um modelo lê um arquivo XML de exemplo e gera classes que correspondem a cada tipo de nó. No código escrito manualmente, você pode usar essas classes para navegar o arquivo XML. Você também pode executar seu aplicativo em todos os outros arquivos que usam os mesmos tipos de nó. A finalidade do arquivo XML de exemplo é fornecer exemplos de todos os tipos de nó que você deseja que seu aplicativo para lidar com.  
   
 > [!NOTE]
->  O aplicativo [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), que está incluído no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], pode gerar classes com rigidez de tipos de arquivos XML. O modelo mostrado aqui é fornecido como um exemplo.  
+> O aplicativo [xsd.exe](http://go.microsoft.com/fwlink/?LinkId=178765), que está incluído no [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], pode gerar classes com rigidez de tipos de arquivos XML. O modelo mostrado aqui é fornecido como um exemplo.  
   
  Aqui está o arquivo de exemplo:  
   
@@ -142,7 +142,7 @@ namespace MyProject
 2. No **Adicionar Novo Item** caixa de diálogo, selecione **modelo de texto** do **modelos** painel.  
   
    > [!NOTE]
-   >  Certifique-se de que você adicione um modelo de texto e não um pré-processado modelo de texto.  
+   > Certifique-se de que você adicione um modelo de texto e não um pré-processado modelo de texto.  
   
 3. No arquivo, na diretiva do modelo, altere o `hostspecific` atributo `true`.  
   

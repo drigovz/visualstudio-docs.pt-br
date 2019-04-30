@@ -10,12 +10,12 @@ ms.assetid: a80ba9cd-4575-483c-b957-af7ed8dc7e20
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 43521b940d786902f4d502c93b5c0eb54922422f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76faef002162576cec6b598e499c937caa0c4fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069907"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445992"
 ---
 # <a name="unit-test-basics"></a>Noções básicas de teste de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,9 +45,9 @@ Verifique se seu código está funcionando conforme o esperado criando e executa
 ### <a name="BKMK_Quick_starts"></a> Início rápido  
  Para obter uma introdução ao teste de unidade que leva você diretamente para a parte de codificação, confira um destes tópicos:  
   
-- [Passo a passo: Criando e executando testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
+- [Passo a passo: criação e execução de testes de unidade para código gerenciado](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)  
   
-- [Início rápido: Desenvolvimento orientado por testes com Gerenciador de testes](../test/quick-start-test-driven-development-with-test-explorer.md)  
+- [Início rápido: desenvolvimento orientado por testes com o Gerenciador de Testes](../test/quick-start-test-driven-development-with-test-explorer.md)  
   
 - [Código nativo de testes de unidade com o Gerenciador de Testes](http://msdn.microsoft.com/8a09d6d8-3613-49d8-9ffe-11375ac4736c)  
   
@@ -124,7 +124,7 @@ public void Withdraw(double amount)
 7. Para usar uma das estruturas de teste de unidade da Microsoft, escolha **Projeto de Teste de Unidade** na lista de modelos de projeto. Caso contrário, escolha o modelo de projeto da estrutura de teste de unidade que você deseja usar. Para testar o projeto `Accounts` do nosso exemplo, você deve nomear o projeto `AccountsTests`.  
   
    > [!WARNING]
-   >  Nem todas as estruturas de teste de unidade de código aberto e de terceiros fornecem um modelo de projeto do Visual Studio. Consulte o documento da estrutura para saber como criar um projeto.  
+   > Nem todas as estruturas de teste de unidade de código aberto e de terceiros fornecem um modelo de projeto do Visual Studio. Consulte o documento da estrutura para saber como criar um projeto.  
   
 8. Em seu projeto de teste de unidade, adicione uma referência ao projeto de código em teste, neste caso, ao projeto Contas.  
   
@@ -238,7 +238,7 @@ public void My_Test ()
 ### <a name="BKMK_Running_tests_after_every_build"></a> Executar testes depois de cada compilação  
   
 > [!WARNING]
->  A execução de testes de unidade após cada compilação só tem suporte no Visual Studio Enterprise.  
+> A execução de testes de unidade após cada compilação só tem suporte no Visual Studio Enterprise.  
   
 |||  
 |-|-|  
@@ -263,7 +263,7 @@ public void My_Test ()
 1. No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar.  
   
    > [!NOTE]
-   >  Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.  
+   > Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.  
   
 2. No Gerenciador de Testes, selecione os métodos de teste e escolha **Depurar Testes Selecionados** no menu de atalho.  
   
@@ -280,7 +280,7 @@ public void My_Test ()
    **R:** Sim. Os *métodos de teste voltados para dados* permitem que você teste um intervalo de valores com um método de teste de unidade. Use um atributo `DataSource` para o método de teste que especifica a fonte de dados e a tabela que contém os valores de variáveis que você deseja testar.  No corpo do método, atribua os valores de linha às variáveis usando o indexador `TestContext.DataRow[`*ColumnName*`]`.  
   
 > [!NOTE]
->  Esses procedimentos se aplicam somente ao teste de métodos que você escreve usando o Microsoft Unit Test Framework para código gerenciado. Se você estiver usando uma estrutura diferente, consulte a documentação dela para ver a funcionalidade equivalente.  
+> Esses procedimentos se aplicam somente ao teste de métodos que você escreve usando o Microsoft Unit Test Framework para código gerenciado. Se você estiver usando uma estrutura diferente, consulte a documentação dela para ver a funcionalidade equivalente.  
   
  Por exemplo, suponha que adicionamos um método desnecessário para a classe `CheckingAccount` chamada `AddIntegerHelper`. `AddIntegerHelper` adiciona dois números inteiros.  
   

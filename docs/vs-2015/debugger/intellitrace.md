@@ -22,12 +22,12 @@ caps.latest.revision: 142
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c9097a8c067ce4e04dd54f879a6c1388f854d7ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dfa2d0cb454dba07a036883a296d364cb3182afc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079299"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440155"
 ---
 # <a name="intellitrace"></a>IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ Você pode gastar menos tempo depurando seu aplicativo ao usar o IntelliTrace pa
 |**Sem suporte**|- C++, em outros idiomas e script<br />-Windows Services, Silverlight, Xbox ou [!INCLUDE[winmobile](../includes/winmobile-md.md)] aplicativos|  
   
 > [!NOTE]
->  Para depurar um processo que já está sendo executado, não é possível usar o IntelliTrace. Você deverá iniciar o IntelliTrace quando o processo for iniciado.  
+> Para depurar um processo que já está sendo executado, não é possível usar o IntelliTrace. Você deverá iniciar o IntelliTrace quando o processo for iniciado.  
   
 ## <a name="IntelliTraceVSTraditional"></a> Por que depurar com o IntelliTrace?  
  Tradicional ou *live* depuração mostra apenas o estado do aplicativo atual, com dados limitados sobre eventos passados. Você terá que interpretar esses eventos com base no estado atual do aplicativo, ou você precisa recriar esses eventos ao executar novamente o seu aplicativo.  
@@ -161,7 +161,7 @@ Você pode gastar menos tempo depurando seu aplicativo ao usar o IntelliTrace pa
 - Ponteiros para objetos filhos de primeiro nível, mas não seus valores diferentes caso eles fossem nulos ou não  
   
 > [!NOTE]
->  O IntelliTrace coleta somente os 256 primeiros objetos em matrizes e os 256 primeiros caracteres para cadeias de caracteres.  
+> O IntelliTrace coleta somente os 256 primeiros objetos em matrizes e os 256 primeiros caracteres para cadeias de caracteres.  
   
  Ver [configurar o IntelliTrace](http://msdn.microsoft.com/7657ecab-e07e-4b1b-872d-f05d966be37e).  
   

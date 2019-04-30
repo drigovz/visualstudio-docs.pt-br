@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: c31fe758d9c1a9a99fb71144f93c7145ea466ad0
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 3f6345e7627549c672aa28fac8cba5f6d9658a23
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56621689"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435442"
 ---
 # <a name="sandboxed-solution-considerations"></a>Considerações sobre a solução em área restrita
   *Soluções em área restrita* são um recurso do Microsoft SharePoint 2010 que permite que os usuários da coleção de site carregar suas próprias soluções de código personalizado. Uma solução em área restrita comum é carregar suas próprias Web Parts de usuários.
@@ -34,7 +34,7 @@ ms.locfileid: "56621689"
  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] oferece suporte a soluções em área restrita por meio de uma propriedade de projeto booleano chamadas *solução de área restrita*. Essa propriedade pode ser definida a qualquer momento no projeto, ou pode ser especificado quando você cria o projeto na **Assistente para personalização do SharePoint**.
 
 > [!NOTE]
->  Alterando a *solução de área restrita* propriedade de um projeto após sua criação pode causar erros de validação.
+> Alterando a *solução de área restrita* propriedade de um projeto após sua criação pode causar erros de validação.
 
  A solução é considerada uma solução com escopo de farm se o *solução de área restrita* estiver definida como **falso** ou escolher o **implantar como uma solução de farm** opção. No entanto, a solução é tratada Diferentemente de uma solução de farm se o *solução de área restrita* estiver definida como **verdadeiro** ou escolher o **implantar como solução em área restrita** opção no assistente.
 

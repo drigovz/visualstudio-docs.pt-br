@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 25768f44ee51ee94d456d0652ab7575def3a259d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4cd3c17a9e771ad9a1aee7526f24e3a8282f208d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057562"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443099"
 ---
 # <a name="how-to-localize-aspx-markup"></a>Como: Localizar marcação ASPX
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] páginas (. aspx) normalmente usam valores de cadeia de caracteres embutida. Para localizar essas cadeias de caracteres, substitua-os com expressões que fazem referência a recursos localizados.
@@ -36,7 +36,7 @@ ms.locfileid: "60057562"
     2. Para adicionar um arquivo de recursos, na **Gerenciador de soluções**, abra o menu de atalho para um item de projeto do SharePoint e, em seguida, escolha **Add** > **Novo Item**. Em qualquer um de **Visual Basic** ou **Visual c#** nó, escolha o **arquivo de recursos** modelo.
 
     > [!NOTE]
-    >  Certifique-se de adicionar os arquivos de recurso a um item de projeto do SharePoint para habilitar a propriedade de tipo de implantação. Essa propriedade é necessária neste procedimento. Se sua solução não tiver um item de projeto do SharePoint, você pode adicionar um projeto vazio do SharePoint e remover seu padrão *Elements. XML* arquivo.
+    > Certifique-se de adicionar os arquivos de recurso a um item de projeto do SharePoint para habilitar a propriedade de tipo de implantação. Essa propriedade é necessária neste procedimento. Se sua solução não tiver um item de projeto do SharePoint, você pode adicionar um projeto vazio do SharePoint e remover seu padrão *Elements. XML* arquivo.
 
 2. Nomeie o arquivo de recurso de idioma padrão de sua escolha com uma *. resx* extensão, como Myappresources. Use o mesmo nome de base para cada arquivo de recurso localizado, mas adicione a cultura [!INCLUDE[TLA2#tla_id](../sharepoint/includes/tla2sharptla-id-md.md)]. Por exemplo, o nome de um alemão recurso localizado *MyAppResources.de-de. resx*.
 

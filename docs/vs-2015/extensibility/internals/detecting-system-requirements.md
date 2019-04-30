@@ -11,12 +11,12 @@ ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
 caps.latest.revision: 51
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: cdc69441de852e16adc047465aeec30003fe5170
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 467554b8e50878bcdf1029e4792bbf168a09fa11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929235"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445250"
 ---
 # <a name="detecting-system-requirements"></a>Detecção de requisitos do sistema
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Um VSPackage não funcionará a menos que o Visual Studio está instalado. Quand
    Quando uma edição "superior" é instalada, as chaves do registro para essa edição, bem como para as edições "inferiores" são adicionadas. Ou seja, se a Enterprise edition estiver instalada, a chave de instalação é definida como 1 para a empresa, bem como para as edições Professional e da comunidade. Portanto, você precisa apenas verificar a edição de "melhor" você precisa.  
   
 > [!NOTE]
->  Na versão de 64 bits do editor do registro, chaves de 32 bits são exibidas em HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\. As chaves do Visual Studio estão sob HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\.  
+> Na versão de 64 bits do editor do registro, chaves de 32 bits são exibidas em HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\. As chaves do Visual Studio estão sob HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\.  
   
 |Produto|Chave|  
 |-------------|---------|  

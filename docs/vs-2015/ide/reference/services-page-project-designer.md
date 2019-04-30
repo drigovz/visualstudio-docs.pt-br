@@ -14,12 +14,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8b089cd468b9b4a69a22a3be31059be51e05ee24
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: ed2e8ad333121a489c450a35daf81a368cd4aba8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59648348"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444730"
 ---
 # <a name="services-page-project-designer"></a>Página Serviços, Designer de Projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Os serviços de aplicativo cliente fornecem acesso simplificado ao logon, às fu
  Para acessar a página **Serviços**, selecione um nó do projeto no **Gerenciador de Soluções** e, em seguida, clique em **Propriedades** no menu **Projeto**. Quando o **Designer de Projeto** for exibido, clique na guia **Serviços**.  
   
 > [!NOTE]
->  Os serviços do aplicativo cliente exigem a versão completa do .NET Framework e não há suporte para o .NET Framework Client Profile. Se a caixa de seleção **Habilitar serviços do aplicativo cliente** estiver desabilitada, verifique se a **Estrutura de destino** está definida como .NET Framework 3.5 ou posterior. Para exibir a configuração da **Estrutura de destino** em C#, abra o Designer de Projeto e clique na página **Aplicativo**. Para exibir a configuração **Estrutura de destino** no Visual Basic, abra o Designer de Projeto, clique na página **Compilar** e, em seguida, clique em **Opções Avançadas de Compilação**.  
+> Os serviços do aplicativo cliente exigem a versão completa do .NET Framework e não há suporte para o .NET Framework Client Profile. Se a caixa de seleção **Habilitar serviços do aplicativo cliente** estiver desabilitada, verifique se a **Estrutura de destino** está definida como .NET Framework 3.5 ou posterior. Para exibir a configuração da **Estrutura de destino** em C#, abra o Designer de Projeto e clique na página **Aplicativo**. Para exibir a configuração **Estrutura de destino** no Visual Basic, abra o Designer de Projeto, clique na página **Compilar** e, em seguida, clique em **Opções Avançadas de Compilação**.  
   
 ## <a name="task-list"></a>Lista de Tarefas  
  [Como: Configurar os serviços do aplicativo cliente](http://msdn.microsoft.com/library/34a8688a-a32c-40d3-94be-c8e610c6a4e8)  

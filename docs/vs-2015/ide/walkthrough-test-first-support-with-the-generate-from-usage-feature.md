@@ -12,12 +12,12 @@ caps.latest.revision: 68
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: aaca69818524df134aa9ad7514ee5e0227b6a812
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1dd1598d73cdbd77bc6fe0cb35e639c0fb484b0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60084980"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443427"
 ---
 # <a name="walkthrough-test-first-support-with-the-generate-from-usage-feature"></a>Passo a passo: Test-First suporte com o recurso gerar do uso
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Caixa de diálogo Novo Projeto
 2. Localize a declaração da classe `UnitTest1` e renomeie para `AutomobileTest`. No C#, se um construtor `UnitTest1()` estiver presente, renomeie-o para `AutomobileTest()`.  
   
     > [!NOTE]
-    >  O IntelliSense agora fornece duas alternativas para o preenchimento de declaração do IntelliSense: *modo de preenchimento* e *modo de sugestão*. Use o modo de sugestão para situações nas quais classes e membros são usados antes de serem definidos. Quando uma janela do IntelliSense estiver aberta, você pode pressionar CTRL + ALT + BARRA DE ESPAÇOS para alternar entre o modo de preenchimento e o modo de sugestão. Consulte [Usando o IntelliSense](../ide/using-intellisense.md) para obter mais informações. O modo de sugestão ajudará quando você estiver digitando `Automobile` na próxima etapa.  
+    > O IntelliSense agora fornece duas alternativas para o preenchimento de declaração do IntelliSense: *modo de preenchimento* e *modo de sugestão*. Use o modo de sugestão para situações nas quais classes e membros são usados antes de serem definidos. Quando uma janela do IntelliSense estiver aberta, você pode pressionar CTRL + ALT + BARRA DE ESPAÇOS para alternar entre o modo de preenchimento e o modo de sugestão. Consulte [Usando o IntelliSense](../ide/using-intellisense.md) para obter mais informações. O modo de sugestão ajudará quando você estiver digitando `Automobile` na próxima etapa.  
   
 3. Localize o método `TestMethod1()` e renomeie-o para `DefaultAutomobileIsInitializedCorrectly()`. Dentro desse método, crie uma nova instância de uma classe chamada `Automobile`, conforme mostrado nas ilustrações a seguir. Um sublinhado ondulado aparece, indicando um erro em tempo de compilação e uma marcação inteligente aparece sob o nome do tipo. O local exato da marcação inteligente varia, dependendo se você estiver usando [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] ou [!INCLUDE[csprcs](../includes/csprcs-md.md)].  
   

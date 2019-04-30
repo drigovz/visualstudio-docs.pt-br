@@ -10,12 +10,12 @@ ms.assetid: af5cc22a-c9cf-45b1-a894-1022d563f3ca
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 442024b7be335c0aa010ce528142ac7a205097f8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 67d0d173909b8cdfe2eaf0d56aa5c99c437d5ad8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062965"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441554"
 ---
 # <a name="how-to-use-linked-undo-management"></a>Como: Use o gerenciamento de desfazer vinculado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,10 +31,10 @@ Desfazer vinculado permite que o usuário simultaneamente, desfazer as mesmas ed
 3. Chamar <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLinkedUndoTransactionManager.CloseLinkedUndo%2A> reverter todas as unidades de desfazer vinculado como um.  
   
     > [!NOTE]
-    >  Para implementar o gerenciamento de desfazer vinculado em um editor, adicione o gerenciamento de desfazer. Para obter mais informações sobre como implementar o gerenciamento de desfazer vinculado, consulte [como: Implementar o gerenciamento de desfazer](../extensibility/how-to-implement-undo-management.md).  
+    > Para implementar o gerenciamento de desfazer vinculado em um editor, adicione o gerenciamento de desfazer. Para obter mais informações sobre como implementar o gerenciamento de desfazer vinculado, consulte [como: Implementar o gerenciamento de desfazer](../extensibility/how-to-implement-undo-management.md).  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompoundAction>   
  [IOleParentUndoUnit](/windows/desktop/api/ocidl/nn-ocidl-ioleparentundounit)   
  [IOleUndoUnit](/windows/desktop/api/ocidl/nn-ocidl-ioleundounit)   
- [Como: Implementar o gerenciamento de desfazer](../extensibility/how-to-implement-undo-management.md)
+ [Como: implementar o gerenciamento de desfazer](../extensibility/how-to-implement-undo-management.md)

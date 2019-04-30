@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: fbd6adeba6d2c131da10ce028c12c6f50b827444
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 21ca64f6661c4f0d7182bf20887ff8bdf754a6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088764"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440323"
 ---
 # <a name="chart-control"></a>Controle de gráfico
   O <xref:Microsoft.Office.Tools.Excel.Chart> controle é um objeto de gráfico que expõe eventos. Quando você adiciona um gráfico em uma planilha, o Visual Studio cria um <xref:Microsoft.Office.Tools.Excel.Chart> do objeto que você pode programar diretamente sem ter que percorrer o modelo de objeto do Microsoft Office Excel.
@@ -34,7 +34,7 @@ ms.locfileid: "60088764"
  Você pode adicionar <xref:Microsoft.Office.Tools.Excel.Chart> controles a uma planilha em tempo de execução em um suplemento do VSTO. Para obter mais informações, confira [Como: Adicionar controles Chart a planilhas](../vsto/how-to-add-chart-controls-to-worksheets.md).
 
 > [!NOTE]
->  Gráfico criado dinamicamente objetos não são mantidos na planilha que os controles de host quando a planilha é fechada. Para obter mais informações, consulte [adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
+> Gráfico criado dinamicamente objetos não são mantidos na planilha que os controles de host quando a planilha é fechada. Para obter mais informações, consulte [adicionar controles a documentos do Office em tempo de execução](../vsto/adding-controls-to-office-documents-at-run-time.md).
 
 ## <a name="formatting"></a>Formatação
  Toda a formatação que pode ser aplicado a um <xref:Microsoft.Office.Interop.Excel.Chart> também podem ser aplicadas a um <xref:Microsoft.Office.Tools.Excel.Chart> controle. Isso inclui as bordas, fontes, tipo de gráfico, linhas de grade, legenda e os rótulos de dados.

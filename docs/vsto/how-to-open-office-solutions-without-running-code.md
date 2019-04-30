@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9b9a88aff9cd587f695ace56c44eaf9c8fcb8875
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 366416e4f18435bd01391657eb2fc4f65f8a4d62
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117155"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441777"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>Como: Abrir soluções do Office sem executar código
   Uma solução do Microsoft Office criada com extensões de código gerenciado é executado, mesmo se a configuração de segurança no aplicativo do Office do usuário final é definida como alta. Isso ocorre porque a segurança de código do assembly .NET é gerenciada pelo Microsoft .NET Framework, não pelo Microsoft Office.
@@ -39,7 +39,7 @@ ms.locfileid: "60117155"
 - Abrir documentos e pastas de trabalho do **arquivo** menu enquanto mantém pressionada a **Shift** chave para evitar que o Word e Excel da geração de eventos de inicialização enquanto está abrindo o documento.
 
     > [!NOTE]
-    >  Se você abrir um documento ou pasta de trabalho da **guia de Introdução** painel de tarefas, mantendo pressionada **Shift** não ignora o código. Além disso, mantendo pressionada a tecla SHIFT não impedir que eventos que está sendo gerado depois que o documento está aberto.
+    > Se você abrir um documento ou pasta de trabalho da **guia de Introdução** painel de tarefas, mantendo pressionada **Shift** não ignora o código. Além disso, mantendo pressionada a tecla SHIFT não impedir que eventos que está sendo gerado depois que o documento está aberto.
 
      Esse método é útil se você quiser abrir um documento para fazer alterações sem o código em execução e alterar o documento pela primeira vez.
 

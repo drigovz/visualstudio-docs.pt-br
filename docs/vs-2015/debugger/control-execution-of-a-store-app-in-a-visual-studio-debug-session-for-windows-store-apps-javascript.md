@@ -14,12 +14,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c23bbb74a4f166ebe33cc45f40f42f9847316d30
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9238bd4f42291af23a1279c9caa83f1039c8f249
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60043291"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437755"
 ---
 # <a name="control-execution-of-a-store-app-in-a-visual-studio-debug-session-for-windows-store-apps-javascript"></a>Controlar a execução de um aplicativo da Store em uma sessão de depuração do Visual Studio para Aplicativos da Windows Store (JavaScript)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,9 +33,9 @@ Este início rápido demonstra como navegar no depurador do Visual Studio e como
  **Atalhos de teclado do depurador.** A navegação no depurador do Visual Studio é otimizada tanto para mouse quanto para teclado. Muitas das etapas neste tópico incluem o acelerador de teclado ou a tecla de atalho em um comentário entre parênteses. Por exemplo, (teclado: F5) indica que pressionar a tecla F5 inicia ou continua a execução do depurador.
 
 > [!NOTE]
->  **O padrão de módulo**
+> **O padrão de módulo**
 >
->  Aplicativos da Windows Store geralmente usam o JavaScript *padrão de módulo* para encapsular dados e funções em uma página. O padrão Módulo usa um fechamento único, autoexecutado e anônimo para manter a funcionalidade de página separada do namespace global. Neste tópico, chamamos essa função a *módulo*.
+> Aplicativos da Windows Store geralmente usam o JavaScript *padrão de módulo* para encapsular dados e funções em uma página. O padrão Módulo usa um fechamento único, autoexecutado e anônimo para manter a funcionalidade de página separada do namespace global. Neste tópico, chamamos essa função a *módulo*.
 
 ## <a name="in-this-topic"></a>Neste tópico
  Você pode aprender como:

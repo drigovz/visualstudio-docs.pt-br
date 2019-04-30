@@ -6,12 +6,12 @@ ms.assetid: 359184aa-f5b6-4b6c-99fe-104655b3a494
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 43f13ebc6a3f7a430b3608eba37284a85c3c5eab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 70b20a463563c54ce0b8ac81b9acab042b0389eb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049536"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443955"
 ---
 # <a name="addressing-dpi-issues"></a>Resolvendo problemas e DPI
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -116,7 +116,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 ```  
   
 > [!NOTE]
->  Não use as funções auxiliares em nível de módulo ou classe variáveis estáticas. A biblioteca também usa estatísticas para sincronização de threads e você pode ter problemas de inicialização de ordem. Converta essas estatísticas para variáveis de membro não estáticos, ou encapsulá-los em uma função (de modo que eles obterem construídos no primeiro acesso).  
+> Não use as funções auxiliares em nível de módulo ou classe variáveis estáticas. A biblioteca também usa estatísticas para sincronização de threads e você pode ter problemas de inicialização de ordem. Converta essas estatísticas para variáveis de membro não estáticos, ou encapsulá-los em uma função (de modo que eles obterem construídos no primeiro acesso).  
   
  Para acessar as funções do auxiliar DPI do código gerenciado que será executado dentro do ambiente do Visual Studio:  
   

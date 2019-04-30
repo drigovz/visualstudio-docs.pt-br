@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: dc61db134063c1e300a2620f611d62497fffe6e1
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 49f494fa2c0fb35f7d2a65dc2ccb6b6d2d761cbe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56608065"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428722"
 ---
 # <a name="how-to-add-a-finder-method"></a>Como: Adicionar um método Finder
   Para habilitar o serviço de conectividade de dados comerciais (BDC) exibir uma lista de entidades em uma web part ou lista, você deve criar uma *Finder* método. Um método Finder é um método especial que retorna uma coleção de instâncias da entidade. Para obter mais informações, consulte [criando um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -44,7 +44,7 @@ ms.locfileid: "56608065"
 4. Configure o descritor de tipo como um descritor de tipo de coleção de entidade. Para obter mais informações sobre como criar um descritor de tipo de coleção de entidade, consulte [como: Definir o descritor de tipo de um parâmetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   >  Não é necessário executar esta etapa se você tiver adicionado um método Finder específico à entidade. O Visual Studio usa o descritor de tipo definido no método localizador específico.
+   > Não é necessário executar esta etapa se você tiver adicionado um método Finder específico à entidade. O Visual Studio usa o descritor de tipo definido no método localizador específico.
 
 5. Na **Gerenciador de soluções**, abra o menu de atalho do serviço arquivo de código que foi gerado para a entidade e, em seguida, escolha **Exibir código**. Para obter mais informações sobre o arquivo de código de serviço, consulte [criar um modelo de conectividade de dados de negócios](../sharepoint/creating-a-business-data-connectivity-model.md).
 
@@ -57,7 +57,7 @@ ms.locfileid: "56608065"
      O exemplo a seguir retorna uma coleção de `Contact` entidades usando os dados do banco de dados de exemplo AdventureWorks para SQL Server.
 
    > [!NOTE]
-   >  Substitua o valor da `ServerName` campo com o nome do seu servidor.
+   > Substitua o valor da `ServerName` campo com o nome do seu servidor.
 
     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]

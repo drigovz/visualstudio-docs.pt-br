@@ -10,12 +10,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: df17245a398c71e7ae9ce0077352f47b0b70ab9b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2add0dfced6a3b8e8263dafe133ee3a2f86637f5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071815"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420933"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>Melhorar o desempenho de um suplemento do VSTO
   Você pode dar aos usuários uma experiência melhor ao otimizar o VSTO Add-ins que você cria para o Office, aplicativos para que eles são rapidamente iniciados, desligar, abrir itens e executar outras tarefas. Se o suplemento do VSTO para Outlook, você também pode reduzir a chance de que seu suplemento do VSTO será desabilitado devido a um desempenho ruim. Você pode aumentar o desempenho do seu suplemento do VSTO, implementando as estratégias a seguir:
@@ -93,7 +93,7 @@ ms.locfileid: "60071815"
 - Validação de assinaturas digitais de manifestos de implantação.
 
   > [!NOTE]
-  >  Essa abordagem não é necessária se você implantar seu suplemento do VSTO em um local seguro nos computadores dos usuários.
+  > Essa abordagem não é necessária se você implantar seu suplemento do VSTO em um local seguro nos computadores dos usuários.
 
   Para obter mais informações, consulte [implantar uma solução do Office usando o Windows Installer](../vsto/deploying-an-office-solution-by-using-windows-installer.md).
 
@@ -111,7 +111,7 @@ ms.locfileid: "60071815"
  Considere a execução de tarefas demoradas (por exemplo, tarefas de longa execução, as conexões de banco de dados ou outros tipos de chamadas de rede) em um thread separado. Para obter mais informações, consulte [suporte a Threading no Office](../vsto/threading-support-in-office.md).
 
 > [!NOTE]
->  Todo o código que chama o modelo de objeto do Office deve executar no thread principal.
+> Todo o código que chama o modelo de objeto do Office deve executar no thread principal.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -24,12 +24,12 @@ caps.latest.revision: 30
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 337c57c79e55c5113bb4411a091d2c29a954c342
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bb97c86176dd29278f64ab467557e663ee9e6d2e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437549"
 ---
 # <a name="customizing-window-layouts-in-visual-studio"></a>Personalização de layouts de janela no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
   As janelas de ferramentas e do documento podem ser organizadas arrastando-as, usando comandos no menu **Janela** e clicando com o botão direito do mouse na barra de título da janela a ser organizada.
 
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).
 
 ### <a name="docking-windows"></a>Encaixando janelas
  Quando você clica e arrasta a barra de título de uma janela de ferramentas ou a guia da janela do documento, um losango do guia é exibido. Durante a operação de arrastar, quando o cursor do mouse está sobre uma das setas no losango, será exibida uma área sombreada que mostra onde a janela será encaixada se você soltar o botão do mouse no momento.
@@ -106,16 +106,16 @@ No Visual Studio, é possível personalizar a posição, tamanho e comportamento
  ![Ocultar automaticamente](../ide/media/vs2015-auto-hide.png "vs2015_auto_hide")
 
 > [!NOTE]
->  Para definir se o Ocultar Automaticamente é operado nas janelas de ferramentas individualmente ou como grupos encaixados, selecione ou desmarque **O botão Ocultar Automaticamente afeta somente janelas de ferramentas ativas** na caixa de diálogo **Opções**. Para obter mais informações, consulte [Geral, Ambiente, Caixa de diálogo Opções](../ide/reference/general-environment-options-dialog-box.md).
+> Para definir se o Ocultar Automaticamente é operado nas janelas de ferramentas individualmente ou como grupos encaixados, selecione ou desmarque **O botão Ocultar Automaticamente afeta somente janelas de ferramentas ativas** na caixa de diálogo **Opções**. Para obter mais informações, consulte [Geral, Ambiente, Caixa de diálogo Opções](../ide/reference/general-environment-options-dialog-box.md).
 
 > [!NOTE]
->  As janelas de ferramentas que têm Ocultar Automaticamente habilitado poderão ser exibidas temporariamente quando a janela estiver em foco. Para ocultar a janela novamente, selecione um item fora da janela atual. Quando a janela perde o foco, ela não é mais exibida.
+> As janelas de ferramentas que têm Ocultar Automaticamente habilitado poderão ser exibidas temporariamente quando a janela estiver em foco. Para ocultar a janela novamente, selecione um item fora da janela atual. Quando a janela perde o foco, ela não é mais exibida.
 
 ### <a name="specifying-a-monitor"></a>Especificando um Monitor
  Se você tiver um segundo monitor e seu sistema operacional der suporte a ele, será possível escolher qual monitor exibirá uma janela. É possível até mesmo agrupar várias janelas em “rafts” em outros monitores.
 
 > [!TIP]
->  É possível criar várias instâncias do **Gerenciador de Soluções** e movê-las para outro monitor. Clique com o botão direito do mouse na janela e escolha **Novo Modo de Exibição do Gerenciador de Soluções**. É possível voltar todas as janelas para o monitor original clicando duas vezes enquanto pressiona a tecla Ctrl.
+> É possível criar várias instâncias do **Gerenciador de Soluções** e movê-las para outro monitor. Clique com o botão direito do mouse na janela e escolha **Novo Modo de Exibição do Gerenciador de Soluções**. É possível voltar todas as janelas para o monitor original clicando duas vezes enquanto pressiona a tecla Ctrl.
 
 ### <a name="reset-name-and-switch-between-window-layouts"></a>Redefinir, nomear e mudar entre layouts de janela
  É possível voltar o IDE para o layout de janela original para sua coleção de configurações usando o comando **Redefinir Layout de Janela**. Quando você executar esse comando, as seguintes ações ocorrerão:

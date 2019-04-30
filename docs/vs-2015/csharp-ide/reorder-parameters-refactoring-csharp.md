@@ -1,5 +1,5 @@
 ---
-title: Reordenar parâmetros refatoração (C#) | Microsoft Docs
+title: Reordenar parâmetros refatoração (c#) | Microsoft Docs
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-general
@@ -16,12 +16,12 @@ caps.latest.revision: 26
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9bec38846f7703ff3958aa1c0fcc9a660a5e080d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: daf77a60256e59cabd176990f3642a2206a7f0d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927095"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444541"
 ---
 # <a name="reorder-parameters-refactoring-c"></a>Refatoração Reordenar Parâmetros (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,11 +31,11 @@ ms.locfileid: "58927095"
  Para executar o `Reorder Parameters` operação, coloque o cursor na ou ao lado de um método, indexador ou delegado. Quando o cursor estiver na posição, invoque o `Reorder Parameters` operação pressionando o atalho de teclado ou clicando no comando no menu de atalho.  
   
 > [!NOTE]
->  Você não é possível reorganizar o primeiro parâmetro em um método de extensão.  
+> Você não é possível reorganizar o primeiro parâmetro em um método de extensão.  
   
 ### <a name="to-reorder-parameters"></a>Para reordenar parâmetros  
   
-1.  Criar uma biblioteca de classe chamada `ReorderParameters`e, em seguida, substitua `Class1` com o código de exemplo a seguir.  
+1. Criar uma biblioteca de classe chamada `ReorderParameters`e, em seguida, substitua `Class1` com o código de exemplo a seguir.  
   
     ```csharp  
     class ProtoClassA  
@@ -56,21 +56,21 @@ ms.locfileid: "58927095"
     }  
     ```  
   
-2.  Coloque o cursor em `MethodB`, na declaração de método ou a chamada de método.  
+2. Coloque o cursor em `MethodB`, na declaração de método ou a chamada de método.  
   
-3.  Sobre o **refatorar** menu, clique em **reordenar parâmetros**.  
+3. Sobre o **refatorar** menu, clique em **reordenar parâmetros**.  
   
      O **reordenar parâmetros** caixa de diálogo é exibida.  
   
-4.  No **reordenar parâmetros** caixa de diálogo, selecione `int i` no **parâmetros** lista e, em seguida, clique no botão para baixo.  
+4. No **reordenar parâmetros** caixa de diálogo, selecione `int i` no **parâmetros** lista e, em seguida, clique no botão para baixo.  
   
      Como alternativa, você pode arrastar `int i` após `bool b` na **parâmetros** lista.  
   
-5.  No **reordenar parâmetros** caixa de diálogo, clique em **Okey**.  
+5. No **reordenar parâmetros** caixa de diálogo, clique em **Okey**.  
   
      Se o **visualizar alterações de referência** opção for selecionada na **reordenar parâmetros** caixa de diálogo, o **visualizar alterações - reordenar parâmetros** caixa de diálogo será exibida. Ele fornece uma visualização das alterações na lista de parâmetros para `MethodB` na assinatura do e a chamada de método.  
   
-    1.  Se o **visualizar alterações - reordenar parâmetros** caixa de diálogo for exibida, clique em **aplicar**.  
+    1. Se o **visualizar alterações - reordenar parâmetros** caixa de diálogo for exibida, clique em **aplicar**.  
   
          Neste exemplo, a declaração do método e todas as o chamada de método sites para `MethodB` são atualizados.  
   

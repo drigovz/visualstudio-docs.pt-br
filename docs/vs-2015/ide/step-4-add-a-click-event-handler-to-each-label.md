@@ -9,12 +9,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f23d0593129cae2732c8b4df14b3f5e2d5a69f7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 763aa2c73effdb1f7daf86c18e6033f03bef5108
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051369"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434052"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>Etapa 4: Adicionar um manipulador de eventos de clique a cada rótulo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,10 +48,10 @@ Janela Propriedades mostrando o evento Click
      [!code-vb[VbExpressTutorial4Step2_3_4#4](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial4step2_3_4/vb/form1.vb#4)]  
   
     > [!NOTE]
-    >  Se você copiar e colar o bloco de código `label_Click()` em vez de inserir o código manualmente, não se esqueça de substituir o código `label_Click()` existente. Caso contrário, você terá um bloco de código duplicado.  
+    > Se você copiar e colar o bloco de código `label_Click()` em vez de inserir o código manualmente, não se esqueça de substituir o código `label_Click()` existente. Caso contrário, você terá um bloco de código duplicado.  
   
     > [!NOTE]
-    >  Você pode reconhecer `object sender` no início do manipulador de eventos como o mesmo usado no [Tutorial 2: Criar um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md) tutorial. Como você vinculou diferentes eventos Click de controle de rótulo a um único método do manipulador de eventos, o mesmo método será chamado, independentemente de qual rótulo foi escolhido pelo usuário. O método do manipulador de eventos precisa saber qual rótulo foi escolhido, de modo que ele usa o nome **remetente** para identificar o controle de rótulo. A primeira linha do método informa o programa que ele não é apenas um objeto genérico, mas especificamente um controle de rótulo e que usa o nome **clickedLabel** para acessar as propriedades e os métodos do rótulo.  
+    > Você pode reconhecer `object sender` no início do manipulador de eventos como o mesmo usado no [Tutorial 2: Criar um teste de matemática cronometrado](../ide/tutorial-2-create-a-timed-math-quiz.md) tutorial. Como você vinculou diferentes eventos Click de controle de rótulo a um único método do manipulador de eventos, o mesmo método será chamado, independentemente de qual rótulo foi escolhido pelo usuário. O método do manipulador de eventos precisa saber qual rótulo foi escolhido, de modo que ele usa o nome **remetente** para identificar o controle de rótulo. A primeira linha do método informa o programa que ele não é apenas um objeto genérico, mas especificamente um controle de rótulo e que usa o nome **clickedLabel** para acessar as propriedades e os métodos do rótulo.  
   
      Esse método primeiro verifica se **clickedLabel** foi convertido com sucesso de um objeto em um controle de rótulo. Se a conversão não foi bem-sucedida, ele terá um valor `null` (C#) ou `Nothing` (Visual Basic), e não será conveniente executar o restante do código no método. Em seguida, o método verifica a cor do texto do rótulo escolhido usando a propriedade **ForeColor** do rótulo. Se a cor do texto do rótulo for preto, isso significa que o ícone já foi escolhido e o método já executado. (É isso que a instrução `return` faz: Informa o programa para interromper a execução do método.) Caso contrário, o ícone não foi escolhido, de modo que o programa altera a cor do texto do rótulo para preto.  
   

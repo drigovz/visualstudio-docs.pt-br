@@ -10,12 +10,12 @@ ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
 caps.latest.revision: 39
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 42d4209c691d052a1715ae9cfbab5b1e576848cd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 71ecff799f0da84ca47456467e190edcf95b0a15
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071428"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442294"
 ---
 # <a name="walkthrough-adding-features-to-a-custom-editor"></a>Passo a passo: Adicionando funcionalidades a um editor personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -51,7 +51,7 @@ Depois de criar um editor personalizado, você pode adicionar mais recursos a el
     2. Para responder a alterações de arquivo externo, implementar <xref:Microsoft.VisualStudio.Shell.Interop.IVsFileChangeEx> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocDataFileChangeControl> no objeto de dados de documento do seu editor.  
   
         > [!NOTE]
-        >  Chame `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> para obter um ponteiro para `IVsFileChangeEx`.  
+        > Chame `QueryService` na <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> para obter um ponteiro para `IVsFileChangeEx`.  
   
 7. Coordene os eventos de edição de documentos com controle do código fonte. Para fazer isso:  
   
@@ -138,7 +138,7 @@ Depois de criar um editor personalizado, você pode adicionar mais recursos a el
      <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent>  
   
     > [!NOTE]
-    >  O `IOleInPlaceComponent` interface é usada para evitar a mesclagem de menu do OLE 2.  
+    > O `IOleInPlaceComponent` interface é usada para evitar a mesclagem de menu do OLE 2.  
   
      Sua `IOleCommandTarget` implementação lida com comandos, como **Recortar**, **cópia**, e **colar**. Ao implementar `IOleCommandTarget`, decida se seu editor requer seu próprio arquivo. VSCT para definir sua própria estrutura do menu de comando ou se ele pode implementar comandos padrão definidos pelo [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Normalmente, editores de usarem e estendem os menus do IDE e definem suas próprias barras de ferramentas. No entanto, muitas vezes é necessário para um editor definir seus próprios comandos específicos, além de usar o conjunto de comando padrão do IDE. Para fazer isso, seu editor deve declarar os comandos padrão, ele usa e, em seguida, definir quaisquer novos comandos, os menus de contexto, os menus de nível superior e os barras de ferramentas em um arquivo. VSCT. Se você criar uma ativação in-loco, editor, em seguida, implementar <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> e definir os menus e barras de ferramentas para o editor em um arquivo. VSCT em vez de usar a mesclagem de menu do OLE 2.  
   
@@ -156,4 +156,4 @@ Depois de criar um editor personalizado, você pode adicionar mais recursos a el
   
 ## <a name="see-also"></a>Consulte também  
  [Contribuindo para o modelo de automação](../extensibility/internals/contributing-to-the-automation-model.md)   
- [Como: Fornecer contexto para editores](../extensibility/how-to-provide-context-for-editors.md)
+ [Como: fornecer contexto para editores](../extensibility/how-to-provide-context-for-editors.md)

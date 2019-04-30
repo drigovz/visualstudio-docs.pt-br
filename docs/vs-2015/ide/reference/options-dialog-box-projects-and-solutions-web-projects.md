@@ -11,12 +11,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f59a6007ca272c2bd0df0278605ff5d01807ce91
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 5df1a0a6c3500da646d499ffacc3bb9827408c24
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59660133"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433669"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>Caixa de diálogo Opções, Projetos e Soluções, Projetos Web
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Define o servidor Web que projetos Web usarão para desenvolvimento dentro do [!
  Por padrão, quando você executa um projeto Web no Visual Studio (por exemplo, usando F5 ou Ctrl+F5), o Visual Studio usa o Visual Studio Development Server. Para obter mais informações, consulte [Servidores Web no Visual Studio para projetos Web ASP.NET](http://msdn.microsoft.com/31d4f588-df59-4b7e-b9ea-e1f2dd204328).  
   
 > [!NOTE]
->  As opções disponíveis nas caixas de diálogo e os nomes os locais dos comandos de menu que você vê podem diferir do que é descrito na Ajuda, dependendo de suas configurações ativas ou da edição. Esta página de Ajuda foi escrita pensando nas **Configurações da Web** em mente. Para exibir ou alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As opções disponíveis nas caixas de diálogo e os nomes os locais dos comandos de menu que você vê podem diferir do que é descrito na Ajuda, dependendo de suas configurações ativas ou da edição. Esta página de Ajuda foi escrita pensando nas **Configurações da Web** em mente. Para exibir ou alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## <a name="settings"></a>Configurações  
  **Usar a versão de 64 bits do IIS Express para sites e projetos**  

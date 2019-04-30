@@ -16,12 +16,12 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 020dd35d225d8629a8061d1a74b234b62960c830
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c95a361f00e9b744aa78f443ad7c173209a5a0bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056153"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442424"
 ---
 # <a name="generate-code-from-uml-class-diagrams"></a>Gerar código por meio de diagramas de classes UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -101,7 +101,7 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
 2. No **propriedades** janela, escolha a seta suspensa na **estereótipos** propriedade e, em seguida, selecione a caixa de seleção do estereótipo que você deseja aplicar.  
 
    > [!TIP]
-   >  Se os estereótipos do C# não forem exibidos, habilite o Perfil do C# para o modelo ou para um pacote que contém os elementos de modelo nos quais você tem interesse. Selecione o pacote ou a raiz do modelo no **Gerenciador de modelos UML**. Em seguida, nos **propriedades** janela, escolha **perfil**e, em seguida, habilite o perfil do c#.  
+   > Se os estereótipos do C# não forem exibidos, habilite o Perfil do C# para o modelo ou para um pacote que contém os elementos de modelo nos quais você tem interesse. Selecione o pacote ou a raiz do modelo no **Gerenciador de modelos UML**. Em seguida, nos **propriedades** janela, escolha **perfil**e, em seguida, habilite o perfil do c#.  
 
 3. Expanda o **estereótipos** propriedade para ver as propriedades adicionais que podem ser definidas.  
 
@@ -144,7 +144,7 @@ Para gerar código Visual c# .NET a partir de diagramas de classe UML no Visual 
  Mais de um modelo pode ser aplicado a um elemento de modelo. É possível gerar mais de um arquivo de cada elemento de modelo.  
 
 > [!NOTE]
->  As associações anexadas à raiz do modelo funcionam como padrões para todos os elementos no modelo. Para ver essas associações padrão, abra **Gerenciador de modelos UML**. Abra o menu de atalho do projeto de modelagem e, em seguida, escolha **definir geração de código**. Como alternativa, você pode selecionar a raiz do modelo no Gerenciador de modelos UML. Na janela Propriedades, escolha **[...]**  no **associações do modelo de texto** propriedade. As associações não aparecerá até que você tenha usado o **gerar código** comando pelo menos uma vez. As associações de modelo não podem ser anexadas a um diagrama.  
+> As associações anexadas à raiz do modelo funcionam como padrões para todos os elementos no modelo. Para ver essas associações padrão, abra **Gerenciador de modelos UML**. Abra o menu de atalho do projeto de modelagem e, em seguida, escolha **definir geração de código**. Como alternativa, você pode selecionar a raiz do modelo no Gerenciador de modelos UML. Na janela Propriedades, escolha **[...]**  no **associações do modelo de texto** propriedade. As associações não aparecerá até que você tenha usado o **gerar código** comando pelo menos uma vez. As associações de modelo não podem ser anexadas a um diagrama.  
 
 #### <a name="to-attach-text-template-bindings-to-a-package-or-other-model-element"></a>Para anexar associações do modelo de texto a um pacote ou a outro elemento de modelo  
 

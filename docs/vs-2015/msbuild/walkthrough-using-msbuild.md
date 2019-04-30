@@ -11,12 +11,12 @@ caps.latest.revision: 34
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: f03c7260899db9e463282e45ef5bc76badb8a483
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6e77934f8e565800eb4a7a753df4beb3b003fbb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082796"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445584"
 ---
 # <a name="walkthrough-using-msbuild"></a>Passo a passo: Usando o MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -132,7 +132,7 @@ O MSBuild é a plataforma de build da Microsoft e do Visual Studio. Estas instru
  Execute o MSBuild no **Prompt de Comando do Visual Studio** para compilar o destino HelloWorld definido acima. Use a opção de linha de comando /target ou /t para selecionar o destino.  
   
 > [!NOTE]
->  Vamos nos referir ao **Prompt de Comando do Visual Studio** como a **janela Comando** nas seções a seguir.  
+> Vamos nos referir ao **Prompt de Comando do Visual Studio** como a **janela Comando** nas seções a seguir.  
   
 #### <a name="to-build-the-target"></a>Para compilar o destino  
   
@@ -154,12 +154,12 @@ O MSBuild é a plataforma de build da Microsoft e do Visual Studio. Estas instru
     ```  
   
 > [!NOTE]
->  Se em vez disso aparecer `The target "HelloWorld" does not exist in the project`, será porque você provavelmente se esqueceu de salvar o arquivo de projeto no editor de códigos. Salve o arquivo e tente novamente.  
+> Se em vez disso aparecer `The target "HelloWorld" does not exist in the project`, será porque você provavelmente se esqueceu de salvar o arquivo de projeto no editor de códigos. Salve o arquivo e tente novamente.  
   
  Ao alternar entre o editor de códigos e a janela Comando, você poderá alterar o arquivo de projeto e ver os resultados rapidamente.  
   
 > [!NOTE]
->  Se você executar o msbuild sem a opção de comando /t, o msbuild compilará o destino fornecido pelo atributo DefaultTarget do elemento Project, o qual, neste caso, é "Build". Dessa forma, o Aplicativo do Windows Forms BuildApp.exe será compilado.  
+> Se você executar o msbuild sem a opção de comando /t, o msbuild compilará o destino fornecido pelo atributo DefaultTarget do elemento Project, o qual, neste caso, é "Build". Dessa forma, o Aplicativo do Windows Forms BuildApp.exe será compilado.  
   
 ## <a name="build-properties"></a>Propriedades de build  
  As propriedades de build são pares nome-valor que guiam o build. Várias propriedades de build já estão definidas na parte superior do arquivo de projeto:  
@@ -227,7 +227,7 @@ $(PropertyName)
     ```  
   
 > [!NOTE]
->  Se essas linhas não aparecerem, será porque você provavelmente se esqueceu de salvar o arquivo de projeto no editor de códigos. Salve o arquivo e tente novamente.  
+> Se essas linhas não aparecerem, será porque você provavelmente se esqueceu de salvar o arquivo de projeto no editor de códigos. Salve o arquivo e tente novamente.  
   
 ### <a name="conditional-properties"></a>Propriedades condicionais  
  Muitas propriedades, como Configuration, são definidas condicionalmente, ou seja, o atributo Condition aparece no elemento da propriedade. As propriedades condicionais serão definidas ou redefinidas somente se a condição for avaliada como "true". Observe que as propriedades indefinidas recebem o valor padrão de uma cadeia de caracteres vazia. Por exemplo,  
@@ -319,7 +319,7 @@ $(PropertyName)
  Para obter mais informações, consulte [Itens](../msbuild/msbuild-items.md).  
   
 > [!NOTE]
->  Os caminhos de arquivo são relativos à pasta que contém o arquivo de projeto do MSBuild.  
+> Os caminhos de arquivo são relativos à pasta que contém o arquivo de projeto do MSBuild.  
   
 ## <a name="examining-item-type-values"></a>Examinando os valores de tipo de item  
  Para obter os valores de um tipo de item, use a seguinte sintaxe, em que ItemType é o nome do tipo de item:  

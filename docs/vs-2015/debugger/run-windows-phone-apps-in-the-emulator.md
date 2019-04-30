@@ -14,12 +14,12 @@ caps.latest.revision: 12
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7d9b30dd50838eced1299e4aaae6999c8fb9f0e5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c594e3837a4fe2c8b2e5a7b69e5db93377a8dc8d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60052201"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442316"
 ---
 # <a name="run-windows-phone-apps-in-the-emulator"></a>Executar aplicativos do Windows Phone no emulador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ O emulador do Windows Phone fornece um ambiente virtualizado no qual você pode 
    Se o emulador selecionado já estiver em execução, seu aplicativo é implantado e iniciado no emulador em execução. Apenas uma instância de cada emulador pode executar de cada vez.  
   
 > [!TIP]
->  Quando você testar seu aplicativo no emulador, deixe o emulador aberto entre as sessões de depuração, assim poderá reexecutar seu aplicativo rapidamente.  
+> Quando você testar seu aplicativo no emulador, deixe o emulador aberto entre as sessões de depuração, assim poderá reexecutar seu aplicativo rapidamente.  
   
 ### <a name="BKMK_vs"></a> Executar um aplicativo do Visual Studio  
   

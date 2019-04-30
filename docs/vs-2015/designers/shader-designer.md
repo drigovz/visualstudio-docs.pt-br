@@ -12,12 +12,12 @@ caps.latest.revision: 34
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 67429131e87aa414957bf01847e03af44468d0ab
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 00b3a24e2e10672a2f25fdf42a3993f75c378c86
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116804"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432580"
 ---
 # <a name="shader-designer"></a>Designer de Sombreador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,7 +84,7 @@ Este documento descreve como trabalhar com o Designer de Sombreador [!INCLUDE[vs
 |**Avançado**|Contém comandos e opções avançados.<br /><br /> **Exportar**: Permite a exportação de um sombreador em vários formatos.<br /><br /> **Exportar Como**: Exporta o sombreador como o código-fonte HLSL ou código de bytes do sombreador compilado. Para obter mais informações sobre como exportar sombreadores, confira [Como: Exportar um sombreador](../designers/how-to-export-a-shader.md).<br /><br /> **Mecanismos Gráficos**: Permite a seleção do renderizador que é usado para exibir a superfície de design.<br /><br /> **Renderizar com o D3D11**: Usa o Direct3D 11 para renderizar a superfície de design do Designer de Sombreador.<br /><br /> **Renderizar com o D3D11WARP**: Usa a WARP (Direct3D 11 Windows Advanced Rasterization Platform) para renderizar a superfície de design do Designer de Sombreador.<br /><br /> **Exibir**: Permite a seleção de informações adicionais sobre o Designer de Sombreador.<br /><br /> **Taxa de Quadros**: Quando habilitada, exibe a taxa de quadros no canto superior direito da superfície de design. A taxa de quadros é o número de quadros desenhados por segundo.  Essa opção é útil quando você habilita a opção **Modo de Renderização em Tempo Real**.|  
   
 > [!TIP]
->  Você pode escolher o botão **Avançado** para executar novamente o último comando.  
+> Você pode escolher o botão **Avançado** para executar novamente o último comando.  
   
 ### <a name="working-with-nodes-and-connections"></a>Trabalhando com nós e conexões  
  Use o modo **Selecionar** para adicionar, remover, reposicionar, conectar e configurar nós. Eis como executar essas operações básicas:  

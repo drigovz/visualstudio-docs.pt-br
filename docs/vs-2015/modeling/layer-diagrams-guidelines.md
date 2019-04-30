@@ -14,12 +14,12 @@ caps.latest.revision: 57
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 255843682034ab784f8271b2f454a60fdd4a77fa
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 373b5c8fd108e783123440820b38edf94a272a1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096602"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440990"
 ---
 # <a name="layer-diagrams-guidelines"></a>Diagramas de camada: Diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ Descrever a arquitetura do aplicativo em um alto nível, criando *diagramas de c
  As etapas a seguir fornecem uma visão geral de como usar diagramas de camada no processo de desenvolvimento. As seções posteriores neste tópico descrevem mais detalhes sobre cada etapa. Se você estiver desenvolvendo um novo design, omita as etapas que se referem ao código existente.  
   
 > [!NOTE]
->  Essas etapas aparecem na ordem aproximada. Você provavelmente deseja sobrepor as tarefas, reordená-los de acordo com sua própria situação e revisá-las no início de cada iteração em seu projeto.  
+> Essas etapas aparecem na ordem aproximada. Você provavelmente deseja sobrepor as tarefas, reordená-los de acordo com sua própria situação e revisá-las no início de cada iteração em seu projeto.  
   
 1. [Criar um diagrama de camada](#Create) para o aplicativo inteiro ou para uma camada dentro dele.  
   
@@ -59,7 +59,7 @@ Descrever a arquitetura do aplicativo em um alto nível, criando *diagramas de c
  Um diagrama de camada deve ser criado dentro de um projeto de modelagem. Você pode adicionar um novo diagrama de camada a um projeto de modelagem existente, crie um novo projeto de modelagem para o diagrama de camada ou copie um diagrama de camada existente dentro do mesmo projeto de modelagem.  
   
 > [!IMPORTANT]
->  Não adicione, arraste ou copie um diagrama de camada existente de um projeto de modelagem a outro projeto de modelagem ou em outro local na solução. Um diagrama de camada copiado dessa maneira terá as mesmas referências do diagrama original, mesmo se você modificar o diagrama. Isso impedirá a validação da camada funcione corretamente e pode causar outros problemas, como elementos ausentes ou outros erros ao tentar abrir o diagrama.  
+> Não adicione, arraste ou copie um diagrama de camada existente de um projeto de modelagem a outro projeto de modelagem ou em outro local na solução. Um diagrama de camada copiado dessa maneira terá as mesmas referências do diagrama original, mesmo se você modificar o diagrama. Isso impedirá a validação da camada funcione corretamente e pode causar outros problemas, como elementos ausentes ou outros erros ao tentar abrir o diagrama.  
   
  Ver [criar diagramas de camada do seu código](../modeling/create-layer-diagrams-from-your-code.md).  
   
@@ -69,7 +69,7 @@ Descrever a arquitetura do aplicativo em um alto nível, criando *diagramas de c
  Como diretriz geral, camadas de nome de acordo com a sua função, por exemplo, "Apresentação" ou "Serviços". Se os artefatos são estreitamente interdependentes, colocá-los na mesma camada. Se os artefatos podem ser atualizados separadamente ou usados em aplicativos separados, colocá-los em diferentes camadas. Para saber mais sobre padrões de disposição em camadas, visite o site Patterns & Practices [ http://go.microsoft.com/fwlink/?LinkId=145794 ](http://go.microsoft.com/fwlink/?LinkId=145794).  
   
 > [!TIP]
->  Há determinados tipos de artefatos que você pode vincular a camadas, mas que não dão suporte a validação em relação ao diagrama de camada. Para ver se o artefato dá suporte à validação, abra **Gerenciador de camadas** para examinar as **dá suporte à validação** propriedade do link de artefato. Ver [descobrir dependências existentes entre camadas](#Generate).  
+> Há determinados tipos de artefatos que você pode vincular a camadas, mas que não dão suporte a validação em relação ao diagrama de camada. Para ver se o artefato dá suporte à validação, abra **Gerenciador de camadas** para examinar as **dá suporte à validação** propriedade do link de artefato. Ver [descobrir dependências existentes entre camadas](#Generate).  
   
  Ao atualizar um aplicativo não familiar, você também pode criar mapas de código. Esses diagramas podem ajudar você a descobrir padrões e as dependências, enquanto você explora o código. Use o Gerenciador de soluções para explorar namespaces e classes, que normalmente correspondem bem a camadas existentes. Atribua esses artefatos de código em camadas, arrastando-os no Gerenciador de soluções para diagramas de camada. Em seguida, você pode usar diagramas de camada para ajudá-lo a atualizar o código e mantê-los consistentes com o seu design.  
   
@@ -85,7 +85,7 @@ Descrever a arquitetura do aplicativo em um alto nível, criando *diagramas de c
  Existirá uma dependência sempre que um artefato associado a uma camada tiver uma referência a um artefato associado a outra camada. Por exemplo, uma classe em uma camada declara uma variável que tem uma classe em outra camada. Você pode descobrir dependências existentes com a engenharia reversa-los.  
   
 > [!NOTE]
->  As dependências não podem sofrer engenharia reversa para determinados tipos de artefatos. Por exemplo, nenhuma dependência sofrerá engenharia reversa de ou para uma camada vinculada a um arquivo de texto. Para ver quais artefatos têm dependências que você pode fazer engenharia reversa, uma ou várias camadas com o botão direito e, em seguida, clique em **Exibir Links**. Na **Gerenciador de camadas**, examine o **dá suporte à validação** coluna. As dependências não sofrerão engenharia reversa para artefatos para o qual essa coluna mostra **falsos**.  
+> As dependências não podem sofrer engenharia reversa para determinados tipos de artefatos. Por exemplo, nenhuma dependência sofrerá engenharia reversa de ou para uma camada vinculada a um arquivo de texto. Para ver quais artefatos têm dependências que você pode fazer engenharia reversa, uma ou várias camadas com o botão direito e, em seguida, clique em **Exibir Links**. Na **Gerenciador de camadas**, examine o **dá suporte à validação** coluna. As dependências não sofrerão engenharia reversa para artefatos para o qual essa coluna mostra **falsos**.  
   
 #### <a name="to-reverse-engineer-existing-dependencies-between-layers"></a>Para fazer engenharia reversa de dependências existentes entre camadas  
   
@@ -155,7 +155,7 @@ Descrever a arquitetura do aplicativo em um alto nível, criando *diagramas de c
   Para resolver esses erros, atualize o código até que mais nenhum erro seja exibido durante a validação. Isso geralmente é um processo iterativo. Para obter mais informações sobre esses erros, consulte [validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md).  
   
 > [!NOTE]
->  Conforme você desenvolve ou refatora o código, você pode ter os novos artefatos para vincular ao diagrama de camada. No entanto, isso pode não ser necessário, por exemplo, quando você tem camadas que representam a namespaces existentes, e o novo código apenas adiciona mais material a esses namespaces.  
+> Conforme você desenvolve ou refatora o código, você pode ter os novos artefatos para vincular ao diagrama de camada. No entanto, isso pode não ser necessário, por exemplo, quando você tem camadas que representam a namespaces existentes, e o novo código apenas adiciona mais material a esses namespaces.  
   
  Durante o processo de desenvolvimento, você talvez queira suprimir alguns dos conflitos reportados durante a validação. Por exemplo, você talvez queira suprimir erros que já esteja resolvendo ou que não sejam relevantes para seu cenário específico. Quando você suprime um erro, é uma prática recomendada registrar em log um item de trabalho em [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para executar essa tarefa, consulte [validar o código com diagramas de camada](../modeling/validate-code-with-layer-diagrams.md).  
   

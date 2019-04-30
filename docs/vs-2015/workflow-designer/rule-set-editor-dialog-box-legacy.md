@@ -13,12 +13,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: e259328b2c9b7e2abcd5decead3560cb184fa930
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d3827ef20ae5eb67c1052b6c7f6147d736013490
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438893"
 ---
 # <a name="rule-set-editor-dialog-box-legacy"></a>Caixa de diálogo do editor de regra (legados)
 Este tópico descreve como usar o **Rule Set Editor** caixa de diálogo em novas [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -26,12 +26,12 @@ Este tópico descreve como usar o **Rule Set Editor** caixa de diálogo em novas
  O **Rule Set Editor** caixa de diálogo é usada para criar e modificar [PolicyActivity](http://go.microsoft.com/fwlink?LinkID=65019) conjuntos de regra, que são serializados em um arquivo. rules.  
   
 > [!NOTE]
->  Se você quiser abrir o arquivo. Rules com o **Editor de XML com codificação**, primeiro você deve fechar a janela de designer associado para o fluxo de trabalho ou atividade.  
+> Se você quiser abrir o arquivo. Rules com o **Editor de XML com codificação**, primeiro você deve fechar a janela de designer associado para o fluxo de trabalho ou atividade.  
   
  Para obter informações sobre como acessar o **Rule Set Editor** caixa de diálogo, consulte [como: Criar um conjunto de regras de PolicyActivity (herdado)](../workflow-designer/how-to-create-a-policyactivity-rule-set-legacy.md).  
   
 > [!WARNING]
->  O editor das regras de novas [!INCLUDE[wfd2](../includes/wfd2-md.md)] que é usado para direcionar [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] não oferece suporte Multitargeting.  
+> O editor das regras de novas [!INCLUDE[wfd2](../includes/wfd2-md.md)] que é usado para direcionar [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)] não oferece suporte Multitargeting.  
   
  A tabela a seguir descreve os elementos de (UI) de interface do usuário para o **Rule Set Editor** caixa de diálogo.  
   

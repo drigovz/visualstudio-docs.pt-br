@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 161c29d4be70c388003ffc80ec5d885b9bcc632b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 6eb4518e39fdab432590601d91b462d869c38e1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58157822"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446893"
 ---
 # <a name="idisperrorgethresult"></a>IDispError::GetHresult
 Recupera o código de erro do `IDispError` objeto.  
@@ -50,7 +50,7 @@ HRESULT GetHresult(
  Esse método recupera o código de erro do `IDispError` objeto.  
   
 > [!NOTE]
->  Este método não está implementado.  
+> Este método não está implementado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDispError](../../winscript/reference/idisperror-interface.md)

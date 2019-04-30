@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 89559798e342c8993e523517e5c85fc38e1c0cf8
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a2727f0f3a5f2b46c5110a33e63b102f9d26bdaf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110851"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446615"
 ---
 # <a name="walkthrough-import-items-from-an-existing-sharepoint-site"></a>Passo a passo: Importar itens de um site do SharePoint existente
   Este passo a passo demonstra como importar itens de um site do SharePoint existente para um [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeto do SharePoint.
@@ -75,7 +75,7 @@ ms.locfileid: "60110851"
  Em seguida, obter um arquivo de instalação (. wsp) do SharePoint que contém os itens do SharePoint e os elementos que você deseja importar para seu [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projeto do SharePoint. Se você ainda não tiver um arquivo. wsp, em seguida, você deve criar um de um site existente do SharePoint. Neste exemplo, você exportará o site do SharePoint padrão em um arquivo. wsp.
 
 > [!IMPORTANT]
->  Se você receber um erro de tempo de execução executar o procedimento a seguir, você precisa executar o procedimento em um sistema que tem acesso ao site do SharePoint.
+> Se você receber um erro de tempo de execução executar o procedimento a seguir, você precisa executar o procedimento em um sistema que tem acesso ao site do SharePoint.
 
 ### <a name="to-export-an-existing-sharepoint-site"></a>Para exportar um site do SharePoint existente
 
@@ -117,7 +117,7 @@ ms.locfileid: "60110851"
 6. No **especifique a nova origem do projeto** página, navegue até o local no sistema onde você salvou o *. wsp* arquivo anteriormente e, em seguida, selecione o **próxima** botão.
 
    > [!NOTE]
-   >  Se você escolher o **terminar** botão nessa página, todos os itens disponíveis na *. wsp* arquivo será importado.
+   > Se você escolher o **terminar** botão nessa página, todos os itens disponíveis na *. wsp* arquivo será importado.
 
 7. No **selecionar itens para importar** caixa, desmarque todas as caixas de seleção na lista, exceto **coluna teste**e, em seguida, escolha o **concluir** botão.
 

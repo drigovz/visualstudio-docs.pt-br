@@ -26,12 +26,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8cc47445f9d2024f5d8a83c8f376bc0299b8ea4e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61c81cef552c18eab5aa737b3460d539abfbdcfc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103627"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63447002"
 ---
 # <a name="ribbon-designer"></a>Designer da faixa de opções
   O Designer de faixa de opções é uma tela de design visual. Use o Designer de faixa de opções para adicionar guias personalizadas, grupos e controles à faixa de opções de um aplicativo do Microsoft Office.
@@ -47,7 +47,7 @@ ms.locfileid: "60103627"
 - [Adicionar controles ao modo de exibição Backstage](#CustomizingMicrosoftOfficeButton)
 
 > [!NOTE]
->  Há algumas tarefas que você não pode realizar usando o Designer de faixa de opções. Para obter mais informações sobre essas tarefas e como realizá-las, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).
+> Há algumas tarefas que você não pode realizar usando o Designer de faixa de opções. Para obter mais informações sobre essas tarefas e como realizá-las, consulte [visão geral da faixa de opções](../vsto/ribbon-overview.md).
 
  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Use o Designer de faixa de opções para personalizar a faixa de opções no Outlook? ](http://go.microsoft.com/fwlink/?LinkID=130312).
 

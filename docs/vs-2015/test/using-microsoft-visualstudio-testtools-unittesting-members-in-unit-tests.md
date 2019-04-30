@@ -8,12 +8,12 @@ ms.assetid: 0fa335fd-e442-448f-913f-25a19df90a93
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 37ca201f071d4cd9eda595a6fee6b95a23b4f05e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ef42f7710598906310b77bd834adf04b21d6bfc2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095523"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445859"
 ---
 # <a name="using-microsoftvisualstudiotesttoolsunittesting-members-in-unit-tests"></a>Usando membros do Microsoft.VisualStudio.TestTools.UnitTesting em testes de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,9 +25,9 @@ A Estrutura de Teste de Unidade dá suporte a testes de unidade no [!INCLUDE[vsp
 > [!NOTE]
 > Os elementos de atributo, cujos nomes terminam com a cadeia de caracteres Attribute, podem ser usados com ou sem a cadeia de caracteres Attribute. Por exemplo, os dois exemplos de código a seguir funcionam de forma idêntica:
 >
->  `[TestClass()]`
+> `[TestClass()]`
 >
->  `[TestClassAttribute()]`
+> `[TestClassAttribute()]`
 
 ### <a name="elements-used-for-data-driven-testing"></a>Elementos Usados Para Teste Controlado por Dados
  Use os seguintes elementos para configurar testes de unidade controlados por dados. Para obter mais informações, consulte [How To: Criar um teste de unidade controlado por dados](../test/how-to-create-a-data-driven-unit-test.md) e [passo a passo: Usando um arquivo de configuração para definir uma fonte de dados](../test/walkthrough-using-a-configuration-file-to-define-a-data-source.md).

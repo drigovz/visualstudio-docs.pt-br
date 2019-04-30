@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5685adb5a10ddc109ec8a4695e1dbfae6d30a6df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 409021e9a88f5bedfcab9ec172f7f962c7623d3a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114236"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442257"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>Estender a DSL usando MEF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Você pode estender sua linguagem específica de domínio (DSL) usando Managed E
     Nome do arquivo: `CommandExtensionVSCT.tt`  
   
    > [!IMPORTANT]
-   >  O GUID do conjunto neste arquivo para ser o mesmo que o CommandSetId de GUID que é definido em DslPackage\GeneratedCode\Constants.tt  
+   > O GUID do conjunto neste arquivo para ser o mesmo que o CommandSetId de GUID que é definido em DslPackage\GeneratedCode\Constants.tt  
   
    ```  
    <#@ Dsl processor="DslDirectiveProcessor" requires="fileName='..\..\Dsl\DslDefinition.dsl'" #>  

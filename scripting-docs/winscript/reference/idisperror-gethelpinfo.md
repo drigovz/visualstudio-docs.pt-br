@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 4087e77fdd87aaa012e4d09013bb92ae5835bb0d
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: fa831ff511ea507e03ca858b93383ff38ead9039
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58160674"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446914"
 ---
 # <a name="idisperrorgethelpinfo"></a>IDispError::GetHelpInfo
 Retorna o caminho do arquivo de Ajuda e a ID do contexto do tópico que explica o erro, se possível.  
@@ -57,7 +57,7 @@ HRESULT GetHelpInfo(
  Esse método retorna o caminho do arquivo de Ajuda e a ID do contexto do tópico que explica o erro, se possível.  
   
 > [!NOTE]
->  Este método não está implementado.  
+> Este método não está implementado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDispError](../../winscript/reference/idisperror-interface.md)

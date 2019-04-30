@@ -21,12 +21,12 @@ caps.latest.revision: 84
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 143daa7f54179867325206f62a852fd685852a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1a0ce9cfaa09a5332d0bce39b31f946b7b5a177
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051811"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437484"
 ---
 # <a name="validate-code-with-layer-diagrams"></a>Validar o código com diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -56,7 +56,7 @@ Para certificar-se de que o código não causa conflito com seu design, valide o
   É possível validar manualmente o código com base em um diagrama de camada aberto no Visual Studio ou em um prompt de comando. Também é possível validar o código automaticamente durante a execução de compilações locais ou do Team Foundation Build. Consulte [vídeo do Channel 9: Projetar e validar sua arquitetura usando diagramas de camada](http://go.microsoft.com/fwlink/?LinkID=252073).  
   
 > [!IMPORTANT]
->  Se você quiser executar a validação de camada com o Team Foundation Build, você deve instalar também a mesma versão do Visual Studio no seu servidor de compilação.  
+> Se você quiser executar a validação de camada com o Team Foundation Build, você deve instalar também a mesma versão do Visual Studio no seu servidor de compilação.  
   
 - [Se um item dá suporte a validação](#SupportsValidation)  
   
@@ -92,14 +92,14 @@ Para certificar-se de que o código não causa conflito com seu design, valide o
 1. Clique com botão direito na superfície do diagrama e, em seguida, clique em **validar arquitetura**.  
   
     > [!NOTE]
-    >  Por padrão, o **ação de compilação** propriedade no arquivo de diagrama (. layerdiagram) de camada é definida como **validar** para que o diagrama seja incluído no processo de validação.  
+    > Por padrão, o **ação de compilação** propriedade no arquivo de diagrama (. layerdiagram) de camada é definida como **validar** para que o diagrama seja incluído no processo de validação.  
   
      O **Error List** janela relata os erros que ocorrem. Para obter mais informações sobre erros de validação, consulte [compreender e resolver erros de validação de camada](#UnderstandingValidationErrors).  
   
 2. Para exibir a origem de cada erro, clique duas vezes no erro na **Error List** janela.  
   
     > [!NOTE]
-    >  [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pode mostrar um mapa de código em vez da origem do erro. Isso ocorre quando o código tem uma dependência em um assembly não especificado pelo diagrama de camada ou o código não tem uma dependência especificada pelo diagrama de camada. Examine o mapa de códigos ou o código para determinar se a dependência deve existir. Para obter mais informações sobre mapas de código, consulte [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md).  
+    > [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] pode mostrar um mapa de código em vez da origem do erro. Isso ocorre quando o código tem uma dependência em um assembly não especificado pelo diagrama de camada ou o código não tem uma dependência especificada pelo diagrama de camada. Examine o mapa de códigos ou o código para determinar se a dependência deve existir. Para obter mais informações sobre mapas de código, consulte [mapear as dependências nas soluções](../modeling/map-dependencies-across-your-solutions.md).  
   
 3. Para gerenciar erros, consulte [gerenciar erros de validação](#ManageErrors).  
   
@@ -145,7 +145,7 @@ Para certificar-se de que o código não causa conflito com seu design, valide o
  Durante o processo de desenvolvimento, você talvez queira suprimir alguns dos conflitos reportados durante a validação. Por exemplo, você talvez queira suprimir erros que já esteja resolvendo ou que não sejam relevantes para seu cenário específico. Quando você suprime um erro, é uma prática recomendada registrar em log um item de trabalho em [!INCLUDE[esprfound](../includes/esprfound-md.md)].  
   
 > [!WARNING]
->  Você já deve estar conectado ao TFS fonte de código de controle (SCC) para criar ou vincular a um item de trabalho. Se você tentar abrir uma conexão em um SCC diferentes do TFS, o Visual Studio fecha automaticamente a solução atual. Certifique-se de que você já estiver conectado ao SCC apropriado antes de tentar criar ou vincular a um item de trabalho. Em versões posteriores do Visual Studio, os comandos de menu não estão disponíveis se você não estiver conectado a um SCC.  
+> Você já deve estar conectado ao TFS fonte de código de controle (SCC) para criar ou vincular a um item de trabalho. Se você tentar abrir uma conexão em um SCC diferentes do TFS, o Visual Studio fecha automaticamente a solução atual. Certifique-se de que você já estiver conectado ao SCC apropriado antes de tentar criar ou vincular a um item de trabalho. Em versões posteriores do Visual Studio, os comandos de menu não estão disponíveis se você não estiver conectado a um SCC.  
   
 ##### <a name="to-create-a-work-item-for-a-validation-error"></a>Para criar um item de trabalho para um erro de validação  
   

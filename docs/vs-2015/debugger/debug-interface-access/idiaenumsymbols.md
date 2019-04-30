@@ -13,12 +13,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 2f0aa09fe72030289f33ccf32f9777870a151ce1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fae39270cfbbbb93b106de65b3b01210ffc61d29
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60063186"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440821"
 ---
 # <a name="idiaenumsymbols"></a>IDiaEnumSymbols
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ IDiaEnumSymbols : IUnknown
  Este exemplo mostra como obter o `IDiaEnumSymbols` de interface e, em seguida, usar essa enumeração para tipos de lista definidos pelo usuário (UDTs).  
   
 > [!NOTE]
->  `CDiaBSTR` é uma classe que encapsula um `BSTR` e manipula automaticamente a liberar a cadeia de caracteres quando a instanciação sai do escopo.  
+> `CDiaBSTR` é uma classe que encapsula um `BSTR` e manipula automaticamente a liberar a cadeia de caracteres quando a instanciação sai do escopo.  
   
 ```cpp#  
 void ShowUDTs(IDiaSymbol *pGlobals)  

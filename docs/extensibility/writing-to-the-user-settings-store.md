@@ -8,12 +8,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ea782140405b55a6c5a90b01fb466586f66cc38
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5741b286af454493f543b2c39c894341c87df1b1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054099"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444903"
 ---
 # <a name="writing-to-the-user-settings-store"></a>Gravando no repositório de configurações do usuário
 Configurações de usuário são graváveis como aquelas na **Ferramentas / opções** caixa de diálogo, janelas Propriedades e determinadas outras caixas de diálogo. Extensões do Visual Studio podem usar estes para armazenar pequenas quantidades de dados. Este passo a passo mostra como adicionar o bloco de notas para o Visual Studio como uma ferramenta externa, leitura e gravação para o repositório de configurações do usuário.
@@ -27,7 +27,7 @@ Configurações de usuário são graváveis como aquelas na **Ferramentas / opç
 3. Navegue até ferramentas HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\14.0Exp\External\\.
 
     > [!NOTE]
-    >  Certifique-se de que você está vendo a chave que contém \14.0Exp\ e não \14.0\\. Quando você executa a instância experimental do Visual Studio, as configurações de usuário estão no hive do Registro "14.0Exp".
+    > Certifique-se de que você está vendo a chave que contém \14.0Exp\ e não \14.0\\. Quando você executa a instância experimental do Visual Studio, as configurações de usuário estão no hive do Registro "14.0Exp".
 
 4. Clique com botão direito na subchave \External Tools\ e, em seguida, clique em **exportar**. Certifique-se de que **ramificação selecionada** está selecionado.
 

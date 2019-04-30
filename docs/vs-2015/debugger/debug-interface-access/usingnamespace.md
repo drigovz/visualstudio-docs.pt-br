@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8e5be853d75fd1aa7ed701c428cdb15822d867cc
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: a8213aeba3d9b1b0577e7639725642d574189b1d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434136"
 ---
 # <a name="usingnamespace"></a>UsingNameSpace
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "58926697"
 Alguns símbolos pode ser referenciados por namespace e subsequentemente seria identificados por um `SymTagUsingNameSpace` marca.  
   
 > [!NOTE]
->  A marca de símbolo UsingNamespace aparece apenas em código gerenciado.  
+> A marca de símbolo UsingNamespace aparece apenas em código gerenciado.  
   
 ## <a name="properties"></a>Propriedades  
  A tabela a seguir mostra as propriedades que são válidas para esse tipo de símbolo.  

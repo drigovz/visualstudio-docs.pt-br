@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 226f2281af2ccdb288ff2c186da280b329a2af1f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e58471c1676ce67e96ef2c325f5ec461f54cfc9c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071870"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441979"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>Etapa 1: Criar um projeto e adicionar rótulos ao formulário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60071870"
 Nas primeiras etapas do desenvolvimento deste teste, você o cria o projeto, e adiciona rótulos, um botão, e outros controles a um formulário. Você também define as propriedades para cada controle adicionado. O projeto conterá o formulário, controles e (posteriormente neste tutorial) o código. O botão inicia o teste, os rótulos mostram os problemas do teste e outros controles mostram as respostas dos teste e o tempo permanece para concluir o teste.  
   
 > [!NOTE]
->  Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).  
+> Esse tópico faz parte de uma série de tutoriais sobre conceitos de codificação básica. Para obter uma visão geral do tutorial, confira [Tutorial 2: Criar um teste de matemática temporizado](../ide/tutorial-2-create-a-timed-math-quiz.md).  
   
 ### <a name="to-create-a-project-and-set-properties-for-a-form"></a>Para criar um projeto e definir propriedades para um formulário  
   
@@ -145,7 +145,7 @@ A primeira linha do teste de matemática
 9. Para a quarta linha, nomeie o primeiro rótulo como **dividedLeftLabel**, altere a propriedade **Text** para **÷** (sinal de divisão), nomeie o terceiro rótulo como **dividedRightLabel** e nomeie o controle NumericUpDown como **quotient**.  
   
     > [!NOTE]
-    >  É possível copiar os sinais de multiplicação × e de divisão ÷ deste tutorial e colá-los no formulário.  
+    > É possível copiar os sinais de multiplicação × e de divisão ÷ deste tutorial e colá-los no formulário.  
   
 ### <a name="to-add-a-start-button-and-set-the-tab-index-order"></a>Para adicionar um botão Iniciar e definir a ordem do índice de guias  
   
@@ -162,7 +162,7 @@ A primeira linha do teste de matemática
 6. Defina o valor da propriedade **TabIndex** para o controle **startButton** como **1**.  
   
     > [!NOTE]
-    >  A propriedade **TabIndex** define a ordem dos controles quando a pessoa realizando o teste escolhe a tecla Tab. Para ver como funciona, abra qualquer caixa de diálogo (por exemplo, na barra de menus, escolha **Arquivo**, **Abrir**) e escolha a tecla Tab algumas vezes. Inspecione como o cursor move o controle para controlar cada vez que você escolhe a tecla Tab. Um programador decidiu a ordem ao criar o formulário.  
+    > A propriedade **TabIndex** define a ordem dos controles quando a pessoa realizando o teste escolhe a tecla Tab. Para ver como funciona, abra qualquer caixa de diálogo (por exemplo, na barra de menus, escolha **Arquivo**, **Abrir**) e escolha a tecla Tab algumas vezes. Inspecione como o cursor move o controle para controlar cada vez que você escolhe a tecla Tab. Um programador decidiu a ordem ao criar o formulário.  
   
 7. Defina o valor da propriedade de **TabIndex** para o controle de soma NumericUpDown como **2**, o controle da diferença como **3**, o controle do produto como **4** e o controle do quociente como **5**.  
   

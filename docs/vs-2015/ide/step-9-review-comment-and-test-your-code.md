@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f601c9cc404d605d5fb0ddf7ad149a595f77ef77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c3fec670f7516d28e20b43b0e1968782a496ef49
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059858"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428575"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>Etapa 9: Revisar, comentar e testar o código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,10 +55,10 @@ Em seguida, adicione um comentário ao seu código. Um comentário é uma observ
      [!code-vb[VbExpressTutorial1Step9_10#1](../snippets/visualbasic/VS_Snippets_VBCSharp/vbexpresstutorial1step9_10/vb/form1.vb#1)]  
   
     > [!NOTE]
-    >  O manipulador de eventos de Clique do botão **showButton** foi concluído e funciona. Você começou a escrever código, começando com uma instrução `if`. Uma instrução `if` é como você dizer a seu programa, "Verifique isso, e se for verdadeiro, faça o seguinte". Nesse caso, você informa o programa para abrir a caixa de diálogo **Abrir Arquivo** e, se o usuário selecionar um arquivo e escolher o botão **OK**, carregue o arquivo na PictureBox.  
+    > O manipulador de eventos de Clique do botão **showButton** foi concluído e funciona. Você começou a escrever código, começando com uma instrução `if`. Uma instrução `if` é como você dizer a seu programa, "Verifique isso, e se for verdadeiro, faça o seguinte". Nesse caso, você informa o programa para abrir a caixa de diálogo **Abrir Arquivo** e, se o usuário selecionar um arquivo e escolher o botão **OK**, carregue o arquivo na PictureBox.  
   
     > [!TIP]
-    >  O IDE foi criado para facilitar o processo de escrever código, e os *snippets de código* são uma maneira de fazer isso. Um snippet é um atalho que é expandido em um pequeno bloco de código.  
+    > O IDE foi criado para facilitar o processo de escrever código, e os *snippets de código* são uma maneira de fazer isso. Um snippet é um atalho que é expandido em um pequeno bloco de código.  
     >   
     >  Você pode ver todos os snippets disponíveis. Na barra de menus, escolha **Ferramentas**, **Gerenciador de Snippets de Código**. Para o Visual C#, o snippet `if` está no **Visual C#**. Para o Visual Basic, os snippets `if` estão em **Condicionais e Loops**, **Padrões de Código**. Você pode usar esse aplicativo para procurar por snippets existentes ou para adicionar seus próprios snippets.  
     >   
@@ -83,7 +83,7 @@ Visualizador de imagem
 2. Escolha o botão **Mostrar uma imagem** para executar o código que você acabou de escrever. Primeiro, o programa abre uma caixa de diálogo **Abrir Arquivo**. Verifique se seus filtros aparecem na lista suspensa **Arquivos de tipo** na parte inferior da caixa de diálogo. Em seguida, navegue para uma imagem e abra-a. Geralmente você pode localizar as imagens de exemplo fornecidas com o sistema operacional Windows em sua pasta de **Meus Documentos**, dentro da pasta **My Pictures\Sample Pictures**.  
   
     > [!NOTE]
-    >  Se você não vir nenhuma imagem na caixa de diálogo **Selecione um arquivo de imagem**, verifique se o filtro "Todos os arquivos (*.\*)" está selecionado na lista suspensa no canto inferior direito da caixa de diálogo.  
+    > Se você não vir nenhuma imagem na caixa de diálogo **Selecione um arquivo de imagem**, verifique se o filtro "Todos os arquivos (*.\*)" está selecionado na lista suspensa no canto inferior direito da caixa de diálogo.  
   
 3. Carregue uma imagem e ela aparecerá em sua PictureBox. Tente redimensionar o formulário arrastando suas bordas. Como você tem seu PictureBox encaixado em um TableLayoutPanel, que está encaixado no formulário, sua área de imagem se redimensionará de modo que seja tão larga quando o formulário, e preencherá 90% da parte superior do formulário. É por isso que você usou os recipientes TableLayoutPanel e FlowLayoutPanel: Eles mantêm seu formato dimensionado corretamente quando o usuário o redimensiona.  
   

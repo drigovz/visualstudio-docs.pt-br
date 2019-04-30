@@ -8,12 +8,12 @@ ms.assetid: 7e795873-1d4b-4a13-a52a-a411d87fb759
 caps.latest.revision: 15
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 18dbd175ddbf01a826d2a24b5d750cb00b64d28b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8010ad1f8bbb1e49afe9e5e527e9639f2fb14601
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098878"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442816"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>Analisando testes de interface de usuário codificada usando logs de teste de interface de usuário codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ Os logs de teste de IU codificado filtram e registram informações importantes 
      Os testes automatizados será executados e indicarão se passaram ou falharam.  
   
     > [!TIP]
-    >  Para exibir o Gerenciador de Testes no **Menu de Teste**, aponte para **Windows** e escolha **Gerenciador de Testes**.  
+    > Para exibir o Gerenciador de Testes no **Menu de Teste**, aponte para **Windows** e escolha **Gerenciador de Testes**.  
   
 4. Clique no link **Saída** nos resultados do Gerenciador de Testes.  
   

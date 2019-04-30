@@ -10,12 +10,12 @@ ms.assetid: d2928498-f27c-46b4-a9cd-cba41fd85a10
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c94963b0ebfc6df454870222059a460b2868427d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 58b4350812900bc11e8aaa3222b3b0898db19e13
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929396"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440785"
 ---
 # <a name="vspackage-setup-scenarios"></a>Cenários de instalação do VSPackage
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,13 +45,13 @@ Instalador de VSPackage compartilhado
  Conforme mostrado na ilustração, os componentes compartilhados são feitos parte do recurso Feat_Common, que sempre é instalado. Ao tornar os recursos Feat_VS2002 e Feat_VS2003 visível, os usuários podem escolher no momento da instalação em quais versões do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] que desejam integrar o VSPackage. Os usuários também podem usar o modo de manutenção do Windows Installer para adicionar ou remover recursos, que nesse caso, adiciona ou remove as informações de registro de VSPackage de diferentes versões do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)].  
   
 > [!NOTE]
->  A definição de coluna de exibição de um recurso como 0 impede que ele. Um valor de coluna de nível baixo, como 1, garante que ele sempre será instalado. Para obter mais informações, consulte [propriedade installlevel SIGNIFICAM](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx) e [recurso tabela](http://msdn.microsoft.com/library/aa368585.aspx).  
+> A definição de coluna de exibição de um recurso como 0 impede que ele. Um valor de coluna de nível baixo, como 1, garante que ele sempre será instalado. Para obter mais informações, consulte [propriedade installlevel SIGNIFICAM](http://msdn.microsoft.com/library/aa369536\(VS.85\).aspx) e [recurso tabela](http://msdn.microsoft.com/library/aa368585.aspx).  
   
 ## <a name="scenario-2-shared-vspackage-update"></a>Cenário 2: Atualização de VSPackage compartilhada  
  Nesse cenário, uma versão atualizada do instalador do VSPackage no cenário 1 é fornecida. Para discussão, a atualização adiciona suporte para [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], mas também poderia ser um simples segurança patch ou correção de bug service pack. Regras do Windows Installer para instalar os componentes mais recentes requerem inalterados componentes já está no sistema não são copiados novamente. Nesse caso, um sistema com a versão 1.0 já está presente irá substituir o componente atualizado Comp_MyVSPackage.dll e permitir que os usuários optar por adicionar o novo recurso Feat_VS2005 com seu componente Comp_VS2005_Reg.  
   
 > [!CAUTION]
->  Sempre que um VSPackage é compartilhado entre várias versões do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], é essencial que as versões subsequentes do VSPackage mantenham a compatibilidade com versões anteriores do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Em que você não pode manter a compatibilidade com versões anteriores, você deve usar os VSPackages lado a lado, privados. Para obter mais informações, consulte [que dão suporte a várias versões do Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
+> Sempre que um VSPackage é compartilhado entre várias versões do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)], é essencial que as versões subsequentes do VSPackage mantenham a compatibilidade com versões anteriores do [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]. Em que você não pode manter a compatibilidade com versões anteriores, você deve usar os VSPackages lado a lado, privados. Para obter mais informações, consulte [que dão suporte a várias versões do Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md).  
   
  ![Compartilhado do pacote de imagem de atualização do VS](../../extensibility/internals/media/vs-sharedpackageupdate.gif "VS_SharedPackageUpdate")  
 Compartilhado instalador de atualização de VSPackage  

@@ -9,12 +9,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1dc742b62fd30c4d5d3e012b2237edcfabd8ed0a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b1e806b5600c0199c1f131ebc3008cc9f8ee1c68
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110018"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442001"
 ---
 # <a name="step-1-create-a-windows-forms-application-project"></a>Etapa 1: Criar um projeto de aplicativo do Windows Forms
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Caixa de diálogo Novo Projeto
 4. A ilustração a seguir mostra o que você deve ver agora na interface do Visual Studio.  
   
     > [!NOTE]
-    >  O layout da janela pode não ser exatamente como esta ilustração. O layout preciso da janela depende da versão do Visual Studio, da linguagem de programação usada e de outros fatores. Entretanto, você deve verificar que todas as três janelas aparecem.  
+    > O layout da janela pode não ser exatamente como esta ilustração. O layout preciso da janela depende da versão do Visual Studio, da linguagem de programação usada e de outros fatores. Entretanto, você deve verificar que todas as três janelas aparecem.  
   
      ![Janela do IDE](../ide/media/express-ideoverview-visio.png "Express_IDEOverview_Visio")  
 Janela IDE  
@@ -57,7 +57,7 @@ Janela IDE
     - **Janela Propriedades** Nessa janela, você pode alterar as propriedades dos itens escolhidos nas outras janelas. Por exemplo, se você escolher o Form1, você poderá alterar o título configurando a propriedade **Text** e você poderá alterar a cor da tela de fundo configurando a propriedade **Backcolor**.  
   
     > [!NOTE]
-    >  A linha superior no **Gerenciador de Soluções** mostra **Solução "PictureViewer" (1 projeto)**, o que significa que o Visual Studio criou uma solução para você. Uma solução pode conter mais de um projeto, mas por enquanto, você trabalhará com soluções que contêm somente um projeto.  
+    > A linha superior no **Gerenciador de Soluções** mostra **Solução "PictureViewer" (1 projeto)**, o que significa que o Visual Studio criou uma solução para você. Uma solução pode conter mais de um projeto, mas por enquanto, você trabalhará com soluções que contêm somente um projeto.  
   
 6. Na barra de menus, escolha **Arquivo**, **Salvar Todos**.  
   

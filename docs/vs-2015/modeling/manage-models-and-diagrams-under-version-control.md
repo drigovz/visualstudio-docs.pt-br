@@ -11,12 +11,12 @@ caps.latest.revision: 32
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2a7ba74c18097f7eb4b2f8ff50780dfd5ffb57df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4c29b7e3279513e2876396abd5083c3ddefa0baf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60080313"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440929"
 ---
 # <a name="manage-models-and-diagrams-under-version-control"></a>Gerenciar modelos e diagramas com controle de versão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Gerenciar diferentes versões de seus projetos de modelagem e diagramas, incluin
  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!IMPORTANT]
->  Tome cuidado quando vários usuários trabalham no mesmo projeto de modelagem. Descubra como você pode [organizar modelos em projetos de médio ou grandes](../modeling/structure-your-modeling-solution.md).  
+> Tome cuidado quando vários usuários trabalham no mesmo projeto de modelagem. Descubra como você pode [organizar modelos em projetos de médio ou grandes](../modeling/structure-your-modeling-solution.md).  
   
 ## <a name="ModelingProjects"></a> Arquivos em um projeto de modelagem  
  Mais de um usuário pode trabalhar em um projeto de modelagem ao mesmo tempo, desde que trabalhem em arquivos diferentes.  
@@ -42,7 +42,7 @@ Gerenciar diferentes versões de seus projetos de modelagem e diagramas, incluin
     - **DiagramName.classdiagram.layout** -se esse arquivo é excluído, as formas ainda aparecerão o diagrama, mas eles perderão seus tamanhos e posições. Cada arquivo de layout é subsidiário a um arquivo de diagrama. Para vê-lo, clique em [+] ao lado do arquivo de diagrama no Gerenciador de soluções.  
   
 > [!NOTE]
->  É importante manter a consistência entre os arquivos. Por exemplo, se você usar o controle de origem para reverter as alterações em um arquivo. UML, você deve reverter as alterações correspondentes na. * diagram e. layout arquivos ao mesmo tempo. Elementos representados em um. \*arquivo de diagrama será perdido se eles não forem também representados em um arquivo. UML.  
+> É importante manter a consistência entre os arquivos. Por exemplo, se você usar o controle de origem para reverter as alterações em um arquivo. UML, você deve reverter as alterações correspondentes na. * diagram e. layout arquivos ao mesmo tempo. Elementos representados em um. \*arquivo de diagrama será perdido se eles não forem também representados em um arquivo. UML.  
   
 ## <a name="Shared"></a> Trabalhando em projetos compartilhados de modelagem  
  Para minimizar conflitos entre o trabalho simultâneo em diferentes partes de um projeto:  
@@ -68,7 +68,7 @@ Gerenciar diferentes versões de seus projetos de modelagem e diagramas, incluin
 - Sempre feche todos os diagramas antes de executar uma **obter** operação.  
   
     > [!NOTE]
-    >  Se um arquivo estiver aberto quando você executa um **obter**, e a operação resulta em alterações locais, em seguida, você será solicitado a recarregar o arquivo. Nesse caso, clique em **não**e, em seguida, recarregue o projeto completo. Na **Gerenciador de soluções**, a modelagem com o botão direito nó do projeto, clique em **descarregar projeto**e, em seguida, clique em **recarregar projeto**.  
+    > Se um arquivo estiver aberto quando você executa um **obter**, e a operação resulta em alterações locais, em seguida, você será solicitado a recarregar o arquivo. Nesse caso, clique em **não**e, em seguida, recarregue o projeto completo. Na **Gerenciador de soluções**, a modelagem com o botão direito nó do projeto, clique em **descarregar projeto**e, em seguida, clique em **recarregar projeto**.  
   
 ### <a name="Exclusive"></a> Alterações que exigem acesso exclusivo para o modelo  
  Antes de fazer os seguintes tipos de alterações, certifique-se de que você tenha um bloqueio de Check-Out em todo o projeto.  
@@ -94,7 +94,7 @@ Gerenciar diferentes versões de seus projetos de modelagem e diagramas, incluin
      No Gerenciador de soluções, clique com botão direito na pasta de destino ou o projeto, aponte para **Add**e, em seguida, clique em **Item existente**. Na caixa de diálogo, selecione o arquivo de diagrama e, em seguida, clique em **adicionar**. O arquivo de layout será adicionado automaticamente.  
   
     > [!NOTE]
-    >  É possível mover o arquivo para um projeto diferente.  
+    > É possível mover o arquivo para um projeto diferente.  
   
 ## <a name="Merging"></a> Mesclando alterações em arquivos de modelo e diagramas  
  Depois de mais de um usuário tem trabalhado em um modelo simultaneamente, [!INCLUDE[esprscc](../includes/esprscc-md.md)] perguntará se você deseja mesclar as alterações nos arquivos de modelo. Trabalhar em projetos separados como descrito nas seções anteriores evitará a maioria das mesclagens. Normalmente, os conflitos restantes podem ser mesclados automaticamente com segurança. Os seguintes tipos de alterações não devem causar dificuldade:  

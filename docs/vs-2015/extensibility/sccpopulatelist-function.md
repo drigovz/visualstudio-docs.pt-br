@@ -12,12 +12,12 @@ ms.assetid: 7416e781-c571-4a7f-8af3-a089ce8be662
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 18c46432cac2496a7b067d23b313e5d67b059bb3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5efdddc448dc8e04ee963eaa1b342a93666d9b62
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925002"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446783"
 ---
 # <a name="sccpopulatelist-function"></a>Função SccPopulateList
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ SCCRTN SccPopulateList (
  O plug-in continua a chamar o `pfnPopulate` função, que adiciona e exclui os arquivos, até que ele for concluído e então retornará o `SccPopulateList` função. O IDE, em seguida, pode exibir sua lista. O `lpStatus` matriz representa todos os arquivos na lista original passada pelo IDE. O plug-in, preenche o status de todos esses arquivos, além de tomada de usa a função de retorno de chamada.  
   
 > [!NOTE]
->  Um plug-in de controle do código-fonte sempre tem a opção de simplesmente retornam imediatamente dessa função, deixando a lista como está. Se um plug-in implementa essa função, isso pode indicar isso definindo a `SCC_CAP_POPULATELIST` bitflag de recurso na primeira chamada para o [SccInitialize](../extensibility/sccinitialize-function.md). Por padrão, o plug-in deve sempre presumir que todos os itens sendo passados são arquivos. No entanto, se o IDE define a `SCC_PL_DIR` sinalizador no `fOptions` parâmetro, todos os itens que está sendo transmitidos devem ser considerados como diretórios. O plug-in deve adicionar todos os arquivos que pertencem nos diretórios. O IDE nunca passará uma mistura de arquivos e diretórios.  
+> Um plug-in de controle do código-fonte sempre tem a opção de simplesmente retornam imediatamente dessa função, deixando a lista como está. Se um plug-in implementa essa função, isso pode indicar isso definindo a `SCC_CAP_POPULATELIST` bitflag de recurso na primeira chamada para o [SccInitialize](../extensibility/sccinitialize-function.md). Por padrão, o plug-in deve sempre presumir que todos os itens sendo passados são arquivos. No entanto, se o IDE define a `SCC_PL_DIR` sinalizador no `fOptions` parâmetro, todos os itens que está sendo transmitidos devem ser considerados como diretórios. O plug-in deve adicionar todos os arquivos que pertencem nos diretórios. O IDE nunca passará uma mistura de arquivos e diretórios.  
   
 ## <a name="see-also"></a>Consulte também  
  [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)   

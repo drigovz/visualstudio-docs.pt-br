@@ -12,12 +12,12 @@ ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: b86ac7c701f96d467f0c059fc7e4b732699b1da5
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 7334ddd1ce6c7f9feac63253246e55b65121e18b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922759"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432446"
 ---
 # <a name="sccdirqueryinfo-function"></a>Função SccDirQueryInfo
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ LPLONG  lpStatus
  O IDE usa essa função antes de um diretório é renomeado para verificar se o diretório está sob controle do código-fonte, consultando se ele tem um projeto correspondente. Se o diretório não está sob controle de origem, o IDE pode fornecer o aviso apropriado para o usuário.  
   
 > [!NOTE]
->  Se um plug-in de controle do código-fonte optar por não implementar uma ou mais dos valores de status, o bits não implementadas devem ser definidos como zero.  
+> Se um plug-in de controle do código-fonte optar por não implementar uma ou mais dos valores de status, o bits não implementadas devem ser definidos como zero.  
   
 ## <a name="see-also"></a>Consulte também  
  [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)   

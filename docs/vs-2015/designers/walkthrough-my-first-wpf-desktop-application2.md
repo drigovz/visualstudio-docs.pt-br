@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 74ae6a4510efc63a633e627fdd0b165aa547b2be
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bee99bc546eca3787db1f9cd082359afb6881d10
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041988"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421140"
 ---
 # <a name="walkthrough-my-first-wpf-desktop-application"></a>Passo a passo: Meu primeiro aplicativo da área de trabalho do WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ um name = "Introdução" ></a> neste passo a passo fornece uma introdução ao d
      Observe que quando você altera a marca `<Window` para `<NavigationWindow`, o IntelliSense altera automaticamente a marca de fechamento para `</NavigationWindow>` também.  
   
     > [!NOTE]
-    >  Depois de alterar a marca, se a janela **Lista de Erros** estiver aberta, você poderá notar vários erros. Não se preocupe, as alterações feitas nas próximas etapas farão com que desapareçam.  
+    > Depois de alterar a marca, se a janela **Lista de Erros** estiver aberta, você poderá notar vários erros. Não se preocupe, as alterações feitas nas próximas etapas farão com que desapareçam.  
   
 3. Escolha as marcas `<Grid>` e `</Grid>`, e exclua-as.  
   
@@ -307,14 +307,14 @@ um name = "Introdução" ></a> neste passo a passo fornece uma introdução ao d
      ![Imagem de marca-d'água para instruções passo a passo](../designers/media/wpf-watermark.png "WPF_watermark")  
   
     > [!NOTE]
-    >  Como alternativa, você pode criar sua própria imagem e salvá-la como `watermark.png`.  
+    > Como alternativa, você pode criar sua própria imagem e salvá-la como `watermark.png`.  
   
 2. No **Gerenciador de Soluções**, abra o menu de atalho para o nó **ExpenseIt** e escolha **Adicionar**, **Item Existente**.  
   
 3. Na caixa de diálogo **Adicionar Item Existente** encontre a imagem **watermark.png** que você acabou de adicionar, selecione-a e, em seguida, escolha o botão **Adicionar**.  
   
     > [!NOTE]
-    >  Você pode precisar expandir a lista **Tipos de Arquivo** e escolher **Arquivos de Imagem**.  
+    > Você pode precisar expandir a lista **Tipos de Arquivo** e escolher **Arquivos de Imagem**.  
   
 4. Abra o arquivo **ExpenseItHome.xaml** e adicione o seguinte código XAML logo acima da marca `</Grid>` para criar uma imagem de tela de fundo:  
   

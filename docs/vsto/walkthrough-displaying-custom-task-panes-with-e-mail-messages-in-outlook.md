@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 583c15a5b605671e09ac47a42d49b068393ffe2e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8127b35c7b3c861ce0568acc5c0459d6d31eee08
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062549"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440880"
 ---
 # <a name="walkthrough-display-custom-task-panes-with-email-messages-in-outlook"></a>Passo a passo: Exibir painéis de tarefas personalizados com mensagens de email no Outlook
   Este passo a passo demonstra como exibir uma instância exclusiva de cada mensagem de email que é criado ou aberto um painel de tarefas personalizado. Os usuários podem exibir ou ocultar o painel de tarefas personalizado usando um botão na faixa de opções de cada mensagem de email.
@@ -31,7 +31,7 @@ ms.locfileid: "60062549"
  Para exibir um painel de tarefas personalizado com o windows Explorer ou o Inspetor vários, você deve criar uma instância do painel de tarefas personalizado para cada janela que é aberta. Para obter mais informações sobre o comportamento dos painéis de tarefas personalizados no Outlook windows, consulte [painéis de tarefas personalizados](../vsto/custom-task-panes.md).
 
 > [!NOTE]
->  Este passo a passo apresenta o código de suplemento do VSTO em pequenas seções para tornar mais fácil discutir a lógica por trás do código.
+> Este passo a passo apresenta o código de suplemento do VSTO em pequenas seções para tornar mais fácil discutir a lógica por trás do código.
 
  Esta explicação passo a passo ilustra as seguintes tarefas:
 
@@ -48,7 +48,7 @@ ms.locfileid: "60062549"
 - Sincronizando o botão de alternância de faixa de opções com o painel de tarefas personalizado.
 
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:

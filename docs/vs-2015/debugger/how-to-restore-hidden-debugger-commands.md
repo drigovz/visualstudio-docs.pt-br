@@ -22,12 +22,12 @@ caps.latest.revision: 14
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a882a1523d89f547f98389e6ad3e6baf32cbb01c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 297be3a3a4ad3c70ad28c627d5dc8d64c6ba1c7a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039340"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442072"
 ---
 # <a name="how-to-restore-hidden-debugger-commands"></a>Como: Restaurar comandos ocultos do depurador
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Ao configurar o Visual Studio, será solicitado que você escolha um conjunto de
 7. Clique em **Fechar** quando terminar de adicionar os comandos ao menu.  
   
     > [!WARNING]
-    >  Alguns itens de menu aparecem somente quando o depurador estiver em modos específicos, por exemplo, o modo de execução ou o modo de interrupção. Consequentemente, um item que você adicionou não pode ser visível imediatamente quando você concluir essas etapas.  
+    > Alguns itens de menu aparecem somente quando o depurador estiver em modos específicos, por exemplo, o modo de execução ou o modo de interrupção. Consequentemente, um item que você adicionou não pode ser visível imediatamente quando você concluir essas etapas.  
   
 ## <a name="restoring-commands-not-available-from-the-customize-dialog-box"></a>Restaurando os comandos não disponíveis na caixa de diálogo personalizar  
  Alguns comandos, especialmente os encontrados em menus hierárquicos, não podem ser restaurados da caixa de diálogo **Personalizar**. Para restaurar esses comandos, você deverá importar uma nova coleção de configurações da IDE.  

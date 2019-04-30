@@ -10,12 +10,12 @@ ms.assetid: 9a641d8f-211e-4486-a1b1-4a89fafe7ee8
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 65efd5a864863fb18f26d8fdfc3736423aad7aeb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ea55039de769598b26868727a93cfa11726e4838
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054086"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443925"
 ---
 # <a name="extending-the-isolated-shell"></a>Estender o Shell isolado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,7 +23,7 @@ ms.locfileid: "60054086"
 Você pode estender o shell isolado do Visual Studio com a adição de um VSPackage, uma parte do componente de Managed Extensibility Framework (MEF) ou um projeto VSIX genérico para seu aplicativo de shell isolado.  
   
 > [!NOTE]
->  As etapas a seguir pressupõem que você tenha criado um aplicativo básico de shell isolado usando o modelo de projeto do Visual Studio Shell isolado. Para obter mais informações sobre este modelo de projeto, consulte [passo a passo: Criando um Basic o aplicativo de Shell isolado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
+> As etapas a seguir pressupõem que você tenha criado um aplicativo básico de shell isolado usando o modelo de projeto do Visual Studio Shell isolado. Para obter mais informações sobre este modelo de projeto, consulte [passo a passo: Criando um Basic o aplicativo de Shell isolado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md).  
   
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Locais para o modelo de projeto de pacote do Visual Studio  
  O modelo de projeto de pacote do Visual Studio pode ser encontrado em três locais diferentes nos **novo projeto** caixa de diálogo:  
@@ -121,4 +121,4 @@ Você pode estender o shell isolado do Visual Studio com a adição de um VSPack
 8. Criar e executar a solução.  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: Criando um aplicativo básico de Shell isolado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)
+ [Passo a passo: criar um aplicativo básico de Shell isolado](../extensibility/walkthrough-creating-a-basic-isolated-shell-application.md)

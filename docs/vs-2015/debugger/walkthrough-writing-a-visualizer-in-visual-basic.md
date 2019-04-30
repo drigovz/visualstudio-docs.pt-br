@@ -17,12 +17,12 @@ caps.latest.revision: 25
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e297708d4e89bb1fdcef06366f2790254aeab812
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eba9efa9710a3dd439b1cd47e4df777a76d781aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050564"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444250"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>Passo a passo: Como escrever um visualizador em Visual Basic
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ ms.locfileid: "60050564"
 Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE[vbprvb](../includes/vbprvb-md.md)]. O visualizador que você criará neste passo a passo exibe o conteúdo de uma cadeia de caracteres usando uma caixa de mensagem do Windows Forms. Esse visualizador simples de cadeia de caracteres é um exemplo básico para mostrar como você pode criar visualizadores para outros tipos de dados mais aplicáveis a seus projetos.  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos do menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da edição ou das configurações ativas. Para alterar suas configurações, acesse o menu **Ferramentas** e escolha **Importar e Exportar**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e os comandos do menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da edição ou das configurações ativas. Para alterar suas configurações, acesse o menu **Ferramentas** e escolha **Importar e Exportar**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  O código do visualizador deve ser colocado em uma DLL, que será lido pelo depurador. A primeira etapa é criar um projeto da biblioteca de classes para a DLL.  
   
@@ -57,7 +57,7 @@ Este passo a passo mostra como escrever um visualizador simples usando [!INCLUDE
 2. Altere o nome de Class1.vb para algo significativo, por exemplo, DebuggerSide.vb.  
   
     > [!NOTE]
-    >  O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticamente altera a declaração de classes em DebuggerSide.vb para corresponder ao novo nome do arquivo.  
+    > O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] automaticamente altera a declaração de classes em DebuggerSide.vb para corresponder ao novo nome do arquivo.  
   
 3. No **Gerenciador de Soluções**, clique com o botão direito do mouse em **Meu Primeiro Visualizador** e, no menu de atalho, clique em **Adicionar Referência**.  
   

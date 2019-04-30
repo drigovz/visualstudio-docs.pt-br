@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b561a4aebe34ac943b0163e66dfbf2edf423eedb
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: f53083c49504146aca545da73bd38950493efcd8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56599682"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429202"
 ---
 # <a name="msbuild-properties-supported-by-sharepoint"></a>Propriedades de MsBuild suportadas por SharePoint
   Qualquer [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] propriedade definida no arquivo Microsoft.VisualStudio.SharePoint.targets, arquivo de projeto ou arquivo de usuário do projeto pode ser usada em [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] projetos do SharePoint. Além do comum [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] propriedades fornecidas pelo projeto do SharePoint define propriedades adicionais que são específicas para projetos do SharePoint.
@@ -49,7 +49,7 @@ ms.locfileid: "56599682"
  Para obter flexibilidade, em vez de usar cadeias de caracteres codificadas na **linha de comando de pré-implantação** e **linha de comando de pós-implantação** caixas na página de propriedades do SharePoint, você pode usar o SharePoint propriedades como argumentos. Por exemplo, em vez de especificar um determinado [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] cadeia de caracteres para o site do SharePoint, em vez disso, você pode usar `$(SharePointSiteUrl)`.
 
 > [!NOTE]
->  Você pode usar o [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] sintaxe da variável `$(` *propertyName* `)` ou a sintaxe da variável de ambiente `%` *propertyName* `%` para especificar uma propriedade.
+> Você pode usar o [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] sintaxe da variável `$(` *propertyName* `)` ou a sintaxe da variável de ambiente `%` *propertyName* `%` para especificar uma propriedade.
 
 ## <a name="see-also"></a>Consulte também
 

@@ -10,12 +10,12 @@ ms.assetid: 43341928-9930-48cf-a57f-ddcc3984b787
 caps.latest.revision: 9
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 75a51cbe851b6566ab210a3c8ae12a9b7c2e0d2b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e78cefa9778e2889130f865e4c61cc8a97014db7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107652"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444662"
 ---
 # <a name="analyze-net-framework-memory-issues"></a>Analisar problemas de memória .NET Framework
 Encontre perdas de memória e uso ineficiente da memória no código do .NET Framework com o analisador de memória gerenciada do Visual Studio. A versão mínima do .NET Framework do código de destino é o .NET Framework 4.5.  
@@ -59,7 +59,7 @@ Encontre perdas de memória e uso ineficiente da memória no código do .NET Fra
  A ferramenta de análise de memória analisa informações em *arquivos de despejo* que contêm informações de heap. Você pode criar arquivos de despejo no Visual Studio, ou você pode usar uma ferramenta como o [ProcDump](http://technet.microsoft.com/sysinternals/dd996900.aspx) partir [Windows Sysinternals](http://technet.microsoft.com/sysinternals). Ver [o que é um despejo e como criar um?](http://blogs.msdn.com/b/debugger/archive/2009/12/30/what-is-a-dump-and-how-do-i-create-one.aspx) no blog da equipe do depurador do Visual Studio.  
   
 > [!NOTE]
->  A maioria das ferramentas pode coletar informações de despejo com ou sem dados completos de memória do heap. O analisador de memória do Visual Studio requer informações completas do heap.  
+> A maioria das ferramentas pode coletar informações de despejo com ou sem dados completos de memória do heap. O analisador de memória do Visual Studio requer informações completas do heap.  
   
  **Para coletar um despejo do Visual Studio**  
   

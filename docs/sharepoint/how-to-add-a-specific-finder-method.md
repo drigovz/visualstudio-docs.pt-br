@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6f52caf33820b230eb00b1be2999fe7f972176f
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8fdd467f2b3a06398198f6fd8452c6a548bf0872
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56615280"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431276"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>Como: Adicionar um método Finder específico
   Você pode retornar uma instância de entidade única, criando uma *Specific Finder* método. O serviço de conectividade de dados comerciais (BDC) executa o método de localizador específico quando um usuário escolhe uma entidade em uma web part de dados de negócios ou uma lista externa. Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -58,10 +58,10 @@ ms.locfileid: "56615280"
 5. Configure o descritor de tipo de parâmetro de retorno como um descritor de tipo de entidade. Para obter informações sobre como criar um descritor de tipo de entidade, consulte [como: Definir o descritor de tipo de um parâmetro](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md).
 
    > [!NOTE]
-   >  Você não precisa executar essa etapa se você tiver adicionado um método Finder para a entidade. O Visual Studio usa o descritor de tipo definido no método Finder.
+   > Você não precisa executar essa etapa se você tiver adicionado um método Finder para a entidade. O Visual Studio usa o descritor de tipo definido no método Finder.
 
    > [!NOTE]
-   >  Se o campo de identificador do tipo de entidade representa um campo em uma tabela de banco de dados que é gerado automaticamente, defina a **somente leitura** propriedade de campo de identificador **verdadeiro**.
+   > Se o campo de identificador do tipo de entidade representa um campo em uma tabela de banco de dados que é gerado automaticamente, defina a **somente leitura** propriedade de campo de identificador **verdadeiro**.
 
 6. No **detalhes do método** janela, escolha a instância de método do método.
 
@@ -80,7 +80,7 @@ ms.locfileid: "56615280"
      O exemplo a seguir retorna um contato do banco de dados de exemplo AdventureWorks para SQL Server.
 
      > [!NOTE]
-     >  Substitua o valor da `ServerName` campo com o nome do seu servidor.
+     > Substitua o valor da `ServerName` campo com o nome do seu servidor.
 
      [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
      [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]

@@ -8,12 +8,12 @@ ms.assetid: 5161b533-2127-4172-b473-d4ffc76ff05b
 caps.latest.revision: 17
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f45e9c466bcb99dd0fecb00702441d3d97899a52
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4b3c709c2d7a83e4b144232a491dabf205ea46f7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108978"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446202"
 ---
 # <a name="quick-start-test-driven-development-with-test-explorer"></a>Início Rápido: Desenvolvimento orientado por testes com o Gerenciador de Testes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,10 +62,10 @@ ms.locfileid: "60108978"
    **Para depurar um teste:** Abra o menu de atalho de um ou mais testes e, em seguida, escolha **Depurar Testes Selecionados**.  
   
 > [!IMPORTANT]
->  Os resultados que são exibidos são para as execuções mais recentes. A barra colorida de resultados mostra somente os resultados dos testes que foram executados. Por exemplo, se você executar vários testes e alguns deles falharem e executar apenas os testes com sucesso, a barra de resultados mostrará todos na cor verde.  
+> Os resultados que são exibidos são para as execuções mais recentes. A barra colorida de resultados mostra somente os resultados dos testes que foram executados. Por exemplo, se você executar vários testes e alguns deles falharem e executar apenas os testes com sucesso, a barra de resultados mostrará todos na cor verde.  
   
 > [!NOTE]
->  Se nenhum teste for exibido, certifique-se de que você tenha instalado um adaptador para conectar o Gerenciador de Testes a estruturas de teste que você está usando. Para obter mais informações, consulte [usa uma estrutura de teste diferentes](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
+> Se nenhum teste for exibido, certifique-se de que você tenha instalado um adaptador para conectar o Gerenciador de Testes a estruturas de teste que você está usando. Para obter mais informações, consulte [usa uma estrutura de teste diferentes](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
   
 ## <a name="walkthrough"></a> Passo a passo: Usando testes de unidade para desenvolver um método  
  Este passo a passo demonstra como desenvolver um método testado em C# usando a estrutura de teste de unidade da Microsoft. Você pode adaptá-lo facilmente para outros idiomas e usar outras estruturas de teste como NUnit. Para obter mais informações, consulte [estrutura de teste diferente do EUA](/visualstudio/test/getting-started-with-unit-testing#use-a-different-unit-test-framework).  
@@ -152,7 +152,7 @@ ms.locfileid: "60108978"
 1. Para aumentar sua confiança que seu código funciona em todos os casos, adicione os testes que tente uma variedade maior de valores de entrada.  
   
     > [!TIP]
-    >  Evite alterar testes existentes que foram aprovados. Em vez disso, adicione novos testes. Altere os testes existentes somente quando os requisitos de usuário forem alterados. Essa política ajuda a garantir que você não perde a funcionalidade existente enquanto você trabalha para estender o código.  
+    > Evite alterar testes existentes que foram aprovados. Em vez disso, adicione novos testes. Altere os testes existentes somente quando os requisitos de usuário forem alterados. Essa política ajuda a garantir que você não perde a funcionalidade existente enquanto você trabalha para estender o código.  
   
      Na classe de teste, adicione o seguinte teste, que tenta um intervalo de valores de entrada:  
   
@@ -257,7 +257,7 @@ ms.locfileid: "60108978"
 1. Simplifique o código, mas não altere os testes.  
   
     > [!TIP]
-    >  Uma *refatoração* é uma alteração que é destinada para fazer o código funcionar melhor ou para tornar o código mais fácil de entender. Não deve alterar o comportamento do código e, portanto, os testes não são alterados.  
+    > Uma *refatoração* é uma alteração que é destinada para fazer o código funcionar melhor ou para tornar o código mais fácil de entender. Não deve alterar o comportamento do código e, portanto, os testes não são alterados.  
     >   
     >  É recomendável que você execute etapas de refatoração separadamente das etapas que estendem a funcionalidade. Manter os testes inalterados proporciona confiança que você não acidentalmente introduziu bugs durante a refatoração.  
   

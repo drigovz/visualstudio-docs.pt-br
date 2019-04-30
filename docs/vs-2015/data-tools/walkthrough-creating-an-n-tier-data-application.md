@@ -17,12 +17,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b1f585aaa3677955cef61a923061a62dcdc1e62
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b6c4ae0082d76b4eb9e58561daec48d196438bac
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424744"
 ---
 # <a name="walkthrough-creating-an-n-tier-data-application"></a>Passo a passo: Criando um aplicativo de dados de N camadas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,14 +64,14 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
  A primeira etapa deste passo a passo é criar uma solução e dois projetos de biblioteca de classes. A primeira biblioteca de classes manterá o conjunto de dados (a classe DataSet digitada gerada e DataTables, que manterá os dados do aplicativo). Este projeto é usado como a camada de entidade de dados do aplicativo e geralmente está localizada na camada intermediária. O Designer de conjunto de dados é usado para criar o conjunto de dados inicial e separar automaticamente o código em duas bibliotecas de classes.  
   
 > [!NOTE]
->  Dê o nome correto ao projeto e à solução antes de clicar em **OK**. Isso facilitará a conclusão deste passo a passo.  
+> Dê o nome correto ao projeto e à solução antes de clicar em **OK**. Isso facilitará a conclusão deste passo a passo.  
   
 #### <a name="to-create-the-n-tier-solution-and-dataentitytier-class-library"></a>Para criar a solução de N camadas e a biblioteca de classes DataEntityTier  
   
 1. Dos **arquivo** menu, crie um novo projeto.  
   
     > [!NOTE]
-    >  O **Dataset Designer** tem suporte no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e projetos c#. Crie o novo projeto em uma dessas linguagens.  
+    > O **Dataset Designer** tem suporte no [!INCLUDE[vbprvb](../includes/vbprvb-md.md)] e projetos c#. Crie o novo projeto em uma dessas linguagens.  
   
 2. No **novo projeto** na caixa de **tipos de projeto** painel, clique em **Windows**.  
   
@@ -125,7 +125,7 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
 6. Se o banco de dados exigir uma senha, selecione a opção para incluir dados confidenciais e, em seguida, clique em **próxima**.  
   
     > [!NOTE]
-    >  Se você escolheu um arquivo do banco de dados local (em vez de se conectar ao SQL Server), talvez seja perguntado se deseja adicionar o arquivo ao projeto. Clique em **Sim** para adicionar o arquivo de banco de dados ao projeto.  
+    > Se você escolheu um arquivo do banco de dados local (em vez de se conectar ao SQL Server), talvez seja perguntado se deseja adicionar o arquivo ao projeto. Clique em **Sim** para adicionar o arquivo de banco de dados ao projeto.  
   
 7. Clique em **próxima** sobre o **salvar a cadeia de Conexão no arquivo de configuração de aplicativo** página.  
   
@@ -153,7 +153,7 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
    O conjunto de dados e os TableAdapters são separados em dois projetos de biblioteca de classes. O projeto que continha originalmente todo o conjunto de dados (DataAccessTier) contém agora somente os TableAdapters. O projeto atribuído a **projeto DataSet** propriedade (DataEntityTier) contém o conjunto de dados tipado: NorthwindDataSet (ou NorthwindDataSet.Dataset.Designer.cs).  
   
 > [!NOTE]
->  Quando você separa os conjuntos de dados e os TableAdapters (configurando a propriedade **Projeto de Conjunto de Dados**), as classes dos conjuntos de dados parciais existentes no projeto não são movidas automaticamente. As classes parciais do conjunto de dados existentes devem ser movidas manualmente para o projeto do conjunto de dados.  
+> Quando você separa os conjuntos de dados e os TableAdapters (configurando a propriedade **Projeto de Conjunto de Dados**), as classes dos conjuntos de dados parciais existentes no projeto não são movidas automaticamente. As classes parciais do conjunto de dados existentes devem ser movidas manualmente para o projeto do conjunto de dados.  
   
 ## <a name="creating-a-new-service-application"></a>Criando um novo aplicativo de serviço  
  Como este passo a passo demonstra como acessar a camada de acesso a dados usando um serviço WCF, crie um novo aplicativo de serviço WCF.  
@@ -220,7 +220,7 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
  Agora que a camada de acesso a dados contém os métodos para retornar dados, crie métodos no serviço de dados para chamar os métodos na camada de acesso a dados.  
   
 > [!NOTE]
->  Para projetos C#, adicione uma referência ao assembly `System.Data.DataSetExtensions` para que o código a seguir seja compilado.  
+> Para projetos C#, adicione uma referência ao assembly `System.Data.DataSetExtensions` para que o código a seguir seja compilado.  
   
 #### <a name="to-create-the-getcustomers-and-getorders-functions-in-the-data-service"></a>Para criar as funções GetCustomers e GetOrders no serviço de dados  
   
@@ -322,7 +322,7 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
 3. Selecione **Service1** e clique em **Okey**.  
   
     > [!NOTE]
-    >  Se você tiver vários serviços no computador atual, escolha o serviço criado anteriormente neste passo a passo (o serviço que contém os métodos GetCustomers e GetOrders).  
+    > Se você tiver vários serviços no computador atual, escolha o serviço criado anteriormente neste passo a passo (o serviço que contém os métodos GetCustomers e GetOrders).  
   
 ## <a name="adding-datagridviews-to-the-form-to-display-the-data-returned-by-the-data-service"></a>Adicionando DataGridViews ao formulário para exibir os dados retornados pelo serviço de dados  
  Depois de adicionar a referência de serviço ao serviço de dados, a janela **Fontes de Dados** é preenchida automaticamente com os dados retornados pelo serviço.  
@@ -361,7 +361,7 @@ N-camadas * aplicativos de dados são aplicativos que acessam dados e são separ
  Como o serviço retorna dados das tabelas Clientes e Pedidos, o valor padrão para maxReceivedMessageSize não é grande o suficiente para manter os dados e deve ser ampliado. Neste passo a passo, você alterará o valor para 6553600. Você alterará o valor no cliente e isso atualizará automaticamente a referência de serviço.  
   
 > [!NOTE]
->  O menor tamanho padrão se destina a limitar a exposição para ataques de negação de serviço (DoS). Para obter mais informações, consulte <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.  
+> O menor tamanho padrão se destina a limitar a exposição para ataques de negação de serviço (DoS). Para obter mais informações, consulte <xref:System.ServiceModel.WSHttpBindingBase.MaxReceivedMessageSize%2A>.  
   
 #### <a name="to-increase-the-maxreceivedmessagesize-value"></a>Para aumentar o valor maxReceivedMessageSize  
   

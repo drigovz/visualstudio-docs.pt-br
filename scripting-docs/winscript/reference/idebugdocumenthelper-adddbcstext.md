@@ -17,12 +17,12 @@ caps.latest.revision: 8
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 1d5de41ff83f3ffd5b208445830862138511ba2b
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: 2d346f3877574c45aaff6dcef8ca99f699a42552
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154787"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446655"
 ---
 # <a name="idebugdocumenthelperadddbcstext"></a>IDebugDocumentHelper::AddDBCSText
 Acrescenta uma cadeia de caracteres DBCS ao final deste documento.  
@@ -51,7 +51,7 @@ HRESULT AddDBCSText(
  Este método gera `IDebugDocumentTextEvents` notificações.  
   
 > [!NOTE]
->  Se esse método é chamado após `IDebugDocumentHelper::AddDeferredText` foi chamado, `E_FAIL` será retornado.  
+> Se esse método é chamado após `IDebugDocumentHelper::AddDeferredText` foi chamado, `E_FAIL` será retornado.  
   
 ## <a name="see-also"></a>Consulte também  
  [Interface IDebugDocumentHelper](../../winscript/reference/idebugdocumenthelper-interface.md)   

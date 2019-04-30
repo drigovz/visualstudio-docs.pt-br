@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f7fbb6c8e6a6310b736ade599ad7854bc4255c0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ece6ecc2d7a1a49d77643e18beced76403c13cc5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070734"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428773"
 ---
 # <a name="support-for-user-settings"></a>Suporte para configurações de usuário
 Um VSPackage pode definir uma ou mais categorias de configurações, que são grupos de variáveis de estado que persiste quando um usuário escolhe o **configurações de importação/exportação** comando as **ferramentas** menu. Para habilitar essa persistência, você use as APIs de configurações no [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)].
@@ -34,7 +34,7 @@ Um VSPackage pode definir uma ou mais categorias de configurações, que são gr
  Pontos de configurações personalizadas são criados em uma entrada de registro no seguinte local: HKLM\Software\Microsoft\VisualStudio\\*\<versão >* \UserSettings\\`<CSPName>`, onde `<CSPName>` é o nome do ponto de configurações personalizado suporta o VSPackage e  *\<versão >* é a versão do [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)], por exemplo 8.0.
 
 > [!NOTE]
->  O caminho raiz do HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versão >* pode ser substituído por uma alternativa raiz quando o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] é o ambiente de desenvolvimento integrado (IDE) inicializado. Para obter mais informações, consulte [opções de linha de comando](../../extensibility/command-line-switches-visual-studio-sdk.md).
+> O caminho raiz do HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versão >* pode ser substituído por uma alternativa raiz quando o [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] é o ambiente de desenvolvimento integrado (IDE) inicializado. Para obter mais informações, consulte [opções de linha de comando](../../extensibility/command-line-switches-visual-studio-sdk.md).
 
  A estrutura da entrada do registro é ilustrada abaixo:
 

@@ -11,12 +11,12 @@ ms.assetid: 2c83615d-fa4d-4b9f-b315-7a69b3000da0
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 99d9e20799f3747def12be6a40ae3b1f8269e666
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 953a02c27f40e92c41d2e43bc818727118eb0a27
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923082"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434842"
 ---
 # <a name="project-configuration-for-building"></a>Configuração de projeto para compilar
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ A lista de configurações da solução para uma determinada solução é gerenc
  Se o usuário cria uma nova configuração de solução chamada MyConfig2, Projeto1 associa sua configuração de depuração para a configuração da solução, por padrão. Por padrão, Projeto2 também associa sua configuração MyConfig2 para a configuração da solução.  
   
 > [!NOTE]
->  Associação diferencia maiusculas de minúsculas.  
+> Associação diferencia maiusculas de minúsculas.  
   
  Quando o usuário seleciona o **seleção múltipla** item na lista suspensa de configuração, o ambiente exibe uma caixa de diálogo que fornece a lista de configurações disponíveis.  
   
@@ -47,7 +47,7 @@ Dependências do projeto
  Dependências do projeto determinam a ordem na qual os projetos são compilados. Use a guia de ordem de Build na caixa de diálogo para exibir a ordem exata em que projetos dentro de uma solução de build e use a guia dependências para modificar a ordem de compilação.  
   
 > [!NOTE]
->  Projetos na lista que têm suas caixas de seleção marcadas, mas esmaecidos foram adicionados pelo ambiente devido a dependências explícitas especificadas pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> ou o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfaces e não pode ser alterado. Por exemplo, adicionando uma referência de projeto de um [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] projeto a outro projeto automaticamente adiciona uma dependência de compilação que só pode ser removida, excluindo a referência. Não não possível selecionar projetos cujas caixas de seleção estão desmarcadas e aparecem esmaecidas porque isso geraria um loop de dependência (por exemplo, Projeto1 seria dependente Projeto2 e Projeto2 seria dependente Projeto1), que teria de paralisações da compilação.  
+> Projetos na lista que têm suas caixas de seleção marcadas, mas esmaecidos foram adicionados pelo ambiente devido a dependências explícitas especificadas pelo <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> ou o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> interfaces e não pode ser alterado. Por exemplo, adicionando uma referência de projeto de um [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] projeto a outro projeto automaticamente adiciona uma dependência de compilação que só pode ser removida, excluindo a referência. Não não possível selecionar projetos cujas caixas de seleção estão desmarcadas e aparecem esmaecidas porque isso geraria um loop de dependência (por exemplo, Projeto1 seria dependente Projeto2 e Projeto2 seria dependente Projeto1), que teria de paralisações da compilação.  
   
  [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] processos de compilação incluem as operações de link que são invocadas com um único comando de compilação e a compilação típica. Também haverá suporte para dois outros processos de compilação: uma operação de limpeza para excluir todos os itens de saída de uma compilação anterior e uma verificação de atualização para determinar se um item de saída em uma configuração foi alterada.  
   

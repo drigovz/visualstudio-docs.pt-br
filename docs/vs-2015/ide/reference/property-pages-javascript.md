@@ -17,12 +17,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f239da7816f72b9204364303113d32f5e06c4fd8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 70d640b97bae15575689d41c38bd774507276906
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59661900"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436869"
 ---
 # <a name="property-pages-javascript"></a>Páginas de Propriedade, JavaScript
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ As **Páginas de Propriedade** fornecem acesso às configurações do projeto. V
  Use as seguintes opções para configurar propriedades gerais do projeto.  
   
 > [!NOTE]
->  Algumas opções estão disponíveis somente em Aplicativos da Windows Store.  
+> Algumas opções estão disponíveis somente em Aplicativos da Windows Store.  
   
  **Caminho de Saída**  
  Especifica o local dos arquivos de saída para a configuração do projeto. O caminho é relativo; se você inserir um caminho absoluto, o caminho absoluto será salvo no projeto. O caminho padrão é bin\Debug.  
@@ -62,7 +62,7 @@ As **Páginas de Propriedade** fornecem acesso às configurações do projeto. V
  Use as seguintes opções para definir propriedades para o comportamento de depuração no projeto.  
   
 > [!NOTE]
->  Algumas opções estão disponíveis somente em Aplicativos da Windows Store.  
+> Algumas opções estão disponíveis somente em Aplicativos da Windows Store.  
   
  **Depurador a ser iniciado**  
  Especifica o host padrão para o depurador.  

@@ -9,12 +9,12 @@ caps.latest.revision: 12
 author: conceptdev
 ms.author: crdun
 manager: jillfra
-ms.openlocfilehash: 184004d24d685c0e7242f9ba5b34f679cc581d26
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d2959164c9c585ae2661517922464dd63845a836
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105026"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443048"
 ---
 # <a name="getting-started-with-visual-studio-tools-for-unity"></a>Introdução às Ferramentas do Visual Studio para Unity
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60105026"
 Nesta seção, você aprenderá a instalar as Ferramentas do Visual Studio para Unity e a configurar seu projeto do Unity para trabalhar com o Visual Studio.  
   
 > [!IMPORTANT]
->  O Unity 5.2 adiciona suporte interno às Ferramentas do Visual Studio para Unity 2.1, que simplifica a configuração do projeto. Para tirar proveito disso, você precisará do Unity versão 5.2.0 ou superior no Windows e das Ferramentas do Visual Studio para Unity versão 2.1 ou posterior.  
+> O Unity 5.2 adiciona suporte interno às Ferramentas do Visual Studio para Unity 2.1, que simplifica a configuração do projeto. Para tirar proveito disso, você precisará do Unity versão 5.2.0 ou superior no Windows e das Ferramentas do Visual Studio para Unity versão 2.1 ou posterior.  
   
 ## <a name="prerequisites"></a>Pré-requisitos  
  Para usar as Ferramentas do Visual Studio para Unity, você precisará:  
@@ -55,7 +55,7 @@ Nesta seção, você aprenderá a instalar as Ferramentas do Visual Studio para 
      [Baixe as Ferramentas do Visual Studio 2010 para Unity](https://visualstudiogallery.msdn.microsoft.com/6e536faa-ce73-494a-a746-6a14753015f1)  
   
 > [!NOTE]
->  Versões Express do Visual Studio não dão suporte a extensões como as Ferramentas do Visual Studio para Unity. O Visual Studio Community é uma versão gratuita do Visual Studio que dá suporte às Ferramentas do Visual Studio para Unity e a outras extensões. Para a maioria dos usuários, o Visual Studio Community é uma opção melhor que o Express.  
+> Versões Express do Visual Studio não dão suporte a extensões como as Ferramentas do Visual Studio para Unity. O Visual Studio Community é uma versão gratuita do Visual Studio que dá suporte às Ferramentas do Visual Studio para Unity e a outras extensões. Para a maioria dos usuários, o Visual Studio Community é uma opção melhor que o Express.  
   
 ## <a name="your-first-unity-project-with-visual-studio-tools-for-unity"></a>Seu primeiro projeto do Unity com as Ferramentas do Visual Studio para Unity  
  Agora que tem tudo de que precisa, você está pronto para seu primeiro projeto do Unity com o Visual Studio. Configurar seu projeto do Unity é diferente dependendo de quais versões do Unity e das Ferramentas do Visual Studio para Unity estão instaladas. Siga as etapas abaixo para a versão do Unity e das Ferramentas do Visual Studio para Unity que você instalou.  

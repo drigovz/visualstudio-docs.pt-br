@@ -13,18 +13,18 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: b98c520dc96b6f3c6467bbcaf8e48d9cff8791d2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 80edcfb171e8e87c384a05b889a8fa11b1e7a723
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60048730"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439184"
 ---
 # <a name="debugging-legacy-workflows"></a>Depurando fluxos de trabalho herdados
 Se você estiver usando [!INCLUDE[wfd1](../includes/wfd1-md.md)] herdado no [!INCLUDE[vs_current_long](../includes/vs-current-long-md.md)] para compilar aplicativos [!INCLUDE[wf](../includes/wf-md.md)] destinados ao .NET Framework 3.0 ou 3.5, poderá depurar seus fluxos de trabalho como qualquer outro programa definindo pontos de interrupção, anexando a processos e examinando threads e a pilha de chamadas. Você também tem a opção de depurar remotamente.  
   
 > [!NOTE]
->  Se várias versões do Visual Studio tiverem sido instaladas e desinstaladas no computador, a depuração do WF3 poderá falhar com uma das duas possibilidades a seguir:  
+> Se várias versões do Visual Studio tiverem sido instaladas e desinstaladas no computador, a depuração do WF3 poderá falhar com uma das duas possibilidades a seguir:  
 > 
 > - Os pontos de interrupção não foram atingidos.  
 >   - A seguinte mensagem é exibida:  

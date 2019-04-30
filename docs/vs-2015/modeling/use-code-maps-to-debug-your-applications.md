@@ -18,12 +18,12 @@ caps.latest.revision: 51
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9c0fa386d6f6df813cfbed1d4a618414f2810f86
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: b7f446d2c9a1b22488746eff9ba04044d2621013
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929587"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439668"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>Usar mapas de códigos para depurar aplicativos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Mapas de código podem ajudar você a evitar se perca em grandes bases de códig
  ![Mapa de código &#45; Mostrar método e seus campos relacionados](../modeling/media/codemapstoryboardpaint3.png "CodeMapStoryboardPaint3")  
   
 > [!TIP]
->  O realce verde mostra os últimos itens que foram adicionados ao mapa. A seta verde mostra a posição do cursor no código. As setas entre os itens representam relações diferentes. Você pode obter mais informações sobre itens no mapa movendo o mouse sobre eles e examinando suas dicas de ferramenta.  
+> O realce verde mostra os últimos itens que foram adicionados ao mapa. A seta verde mostra a posição do cursor no código. As setas entre os itens representam relações diferentes. Você pode obter mais informações sobre itens no mapa movendo o mouse sobre eles e examinando suas dicas de ferramenta.  
   
  ![Mapa de código &#45; Mostrar dicas de ferramenta](../modeling/media/codemapstoryboardpaint4.png "CodeMapStoryboardPaint4")  
   
@@ -65,7 +65,7 @@ Mapas de código podem ajudar você a evitar se perca em grandes bases de códig
  ![Mapa de código &#45; examinar a definição de campo](../modeling/media/codemapstoryboardpaint5a.png "CodeMapStoryboardPaint5A")  
   
 > [!TIP]
->  Também é possível mover a seta verde no mapa movendo-se o cursor no editor de códigos.  
+> Também é possível mover a seta verde no mapa movendo-se o cursor no editor de códigos.  
   
 ## <a name="understand-relationships-between-pieces-of-code"></a>Compreender as relações entre as partes do código  
  Agora você deseja saber qual o outro código interage com os campos `history` e `paintObjects`. É possível adicionar todos os métodos que referenciam esses campos no mapa. Você pode fazer isso do mapa ou do editor de códigos.  
@@ -75,14 +75,14 @@ Mapas de código podem ajudar você a evitar se perca em grandes bases de códig
  ![Abra um mapa de código do editor de códigos](../modeling/media/codemapstoryboardpaint6a.PNG "CodeMapStoryboardPaint6A")  
   
 > [!NOTE]
->  Se você adicionar itens de um projeto que é compartilhado entre vários aplicativos, como Windows Phone ou Windows Store, em seguida, esses itens são sempre exibidos com o projeto de aplicativo atualmente ativo no mapa. Portanto, se você alterar o contexto para outro projeto de aplicativo, também altera o contexto no mapa para alguns recentemente adicionados itens do projeto compartilhado. Operações realizadas com um item no mapa se aplicam apenas aos itens que compartilham o mesmo contexto.  
+> Se você adicionar itens de um projeto que é compartilhado entre vários aplicativos, como Windows Phone ou Windows Store, em seguida, esses itens são sempre exibidos com o projeto de aplicativo atualmente ativo no mapa. Portanto, se você alterar o contexto para outro projeto de aplicativo, também altera o contexto no mapa para alguns recentemente adicionados itens do projeto compartilhado. Operações realizadas com um item no mapa se aplicam apenas aos itens que compartilham o mesmo contexto.  
   
  Altere o layout para reorganizar o fluxo de relações e para facilitar a leitura do mapa. Também é possível mover itens pelo mapa arrastando-os.  
   
  ![Mapa de código &#45; alterar o layout](../modeling/media/codemapstoryboardpaint7a.png "CodeMapStoryboardPaint7A")  
   
 > [!TIP]
->  Por padrão, **Layout Incremental** está ativado. Isso reorganiza o mapa o menos possível quando você adiciona novos itens. Para reorganizar o mapa inteiro sempre que você adicionar novos itens, desative **Layout Incremental**.  
+> Por padrão, **Layout Incremental** está ativado. Isso reorganiza o mapa o menos possível quando você adiciona novos itens. Para reorganizar o mapa inteiro sempre que você adicionar novos itens, desative **Layout Incremental**.  
   
  ![Mapa de código &#45; alterar o layout](../modeling/media/codemapstoryboardpaint7.png "CodeMapStoryboardPaint7")  
   
@@ -136,7 +136,7 @@ Mapas de código podem ajudar você a evitar se perca em grandes bases de códig
  ![Mapa de código &#45; mapa atualizado com a chamada de método](../modeling/media/codemapstoryboardpaint17.png "CodeMapStoryboardPaint17")  
   
 > [!NOTE]
->  Ao atualizar o mapa, você talvez veja uma mensagem afirmando que o índice de código usado para criar o mapa foi atualizado. Isso significa que alguém alterou o código, o que faz o mapa não corresponder ao código atual. Isso não impede você de atualizar o mapa, mas talvez precise recriar o mapa para confirmar se ele corresponde ao código.  
+> Ao atualizar o mapa, você talvez veja uma mensagem afirmando que o índice de código usado para criar o mapa foi atualizado. Isso significa que alguém alterou o código, o que faz o mapa não corresponder ao código atual. Isso não impede você de atualizar o mapa, mas talvez precise recriar o mapa para confirmar se ele corresponde ao código.  
   
  Agora você terminou a investigação. Você encontrou e corrigiu o problema com êxito mapeando o código. Você também tem um mapa que ajuda a navegar no código, lembrar o que aprendeu e mostra as etapas que você seguiu para corrigir o problema.  
   

@@ -20,12 +20,12 @@ caps.latest.revision: 39
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 01bfaf5ee9143a3122f779ab8292210b90da771f
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: dd4043b34cc809af92fc5bbd1c44e322261096e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59650390"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437988"
 ---
 # <a name="signing-page-project-designer"></a>Página de Assinatura, Designer de Projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -86,7 +86,7 @@ Use a página **Assinatura** do **Designer de Projeto** para assinar os manifest
  Observe que um projeto com assinatura com atraso não será executado e não pode ser depurado. No entanto, é possível usar [Sn.exe (Ferramenta de Nome Forte)](http://msdn.microsoft.com/library/c1d2b532-1b8e-4c7a-8ac5-53b801135ec6) com a opção `-Vr` para ignorar a verificação durante o desenvolvimento.  
   
 > [!NOTE]
->  Ao assinar um assembly, talvez você nem sempre tenha acesso a uma chave privada. Por exemplo, uma organização pode ter um par de chaves bem protegido ao qual os desenvolvedores não têm acesso todos os dias. A chave pública pode estar disponível, mas o acesso à chave privada é restrito a algumas pessoas. Nesse caso, é possível usar a *assinatura com atraso* ou *parcial* para fornecer a chave pública, adiando a adição da chave privada até a entrega do assembly.  
+> Ao assinar um assembly, talvez você nem sempre tenha acesso a uma chave privada. Por exemplo, uma organização pode ter um par de chaves bem protegido ao qual os desenvolvedores não têm acesso todos os dias. A chave pública pode estar disponível, mas o acesso à chave privada é restrito a algumas pessoas. Nesse caso, é possível usar a *assinatura com atraso* ou *parcial* para fornecer a chave pública, adiando a adição da chave privada até a entrega do assembly.  
   
 ## <a name="see-also"></a>Consulte também  
  [Referência de propriedades do projeto](../../ide/reference/project-properties-reference.md)   

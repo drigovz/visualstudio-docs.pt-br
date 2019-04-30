@@ -10,12 +10,12 @@ ms.assetid: 91b167a3-280a-498b-8fc2-f67859a2c64e
 caps.latest.revision: 29
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bfadcb962e63a38f4f8190c2dd9c02f4e2ac4643
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9541180ba8740cdc12a038f81c4ef74d47fcc1aa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107990"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446240"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>Executar testes de unidade com o Gerenciador de Testes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -77,7 +77,7 @@ Use o Gerenciador de Testes para executar testes de unidade do Visual Studio ou 
 ### <a name="BKMK_Run_tests_after_every_build"></a> Executar testes após cada build  
   
 > [!WARNING]
->  Executar testes de unidade após cada build tem suporte no Visual Studio Enterprise.  
+> Executar testes de unidade após cada build tem suporte no Visual Studio Enterprise.  
   
 |||  
 |-|-|  
@@ -201,7 +201,7 @@ TEST_METHOD(Method1)
    ![Filtrar testes no Gerenciador de testes](../test/media/ute-filtertestlist.png "UTE_FilterTestList")  
   
 > [!NOTE]
->  As pesquisas não diferenciam maiúsculas de minúsculas e correspondem a cadeia especificada para qualquer parte do valor de critérios.  
+> As pesquisas não diferenciam maiúsculas de minúsculas e correspondem a cadeia especificada para qualquer parte do valor de critérios.  
   
 |Qualificador|Descrição|  
 |---------------|-----------------|  
@@ -253,7 +253,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 1. No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar.  
   
    > [!NOTE]
-   >  Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.  
+   > Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.  
   
 2. No Gerenciador de Testes, selecione os métodos de teste e escolha **Depurar Testes Selecionados** no menu de contexto.  
   
@@ -267,7 +267,7 @@ FullName:"MyClass" - FullName:"PerfTest"
 ### <a name="BKMK_Analyzeunit_test_code_coverage"></a> Analisar a cobertura de código de teste de unidade  
   
 > [!NOTE]
->  Cobertura de código de teste de unidade está disponível apenas no Visual Studio Enterprise.  
+> Cobertura de código de teste de unidade está disponível apenas no Visual Studio Enterprise.  
   
  Você pode determinar a quantidade de seu código de produto que realmente está sendo testado por seus testes de unidade usando a ferramenta de cobertura de código do Visual Studio. Você pode executar a cobertura de código em testes selecionados ou em todos os testes em uma solução.  
   

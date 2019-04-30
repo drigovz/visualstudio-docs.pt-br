@@ -12,24 +12,24 @@ ms.assetid: 500f718d-9028-49a4-8615-ba95cf47fc52
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a1fb236a4ce3b88f97dd94867b8ff5b7403db328
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 93182d61b6ecf5bf22ea7117bf8ccfd17e2acd1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925610"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437920"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>Preenchimento de membro em um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
-O preenchimento de membro IntelliSense é uma dica de ferramenta que exibe uma lista dos possíveis membros de um escopo específico, como uma classe, estrutura, enumeração ou namespace. Por exemplo, no C#, se o usuário digitar "this" seguido por um período, uma lista de todos os membros da classe ou estrutura no escopo atual é apresentada em uma lista na qual o usuário pode selecionar.  
+O preenchimento de membro IntelliSense é uma dica de ferramenta que exibe uma lista dos possíveis membros de um escopo específico, como uma classe, estrutura, enumeração ou namespace. Por exemplo, no c#, se o usuário digitar "this" seguido por um período, uma lista de todos os membros da classe ou estrutura no escopo atual é apresentada em uma lista na qual o usuário pode selecionar.  
   
  A estrutura de pacote gerenciado (MPF) fornece suporte para a dica de ferramenta e o gerenciamento da lista na dica de ferramenta; tudo o que é necessário é a cooperação do analisador para fornecer os dados que aparecem na lista.  
   
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações, consulte [estender o Editor e os serviços de linguagem](../../extensibility/extending-the-editor-and-language-services.md).  
   
 > [!NOTE]
->  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
+> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
   
 ## <a name="how-it-works"></a>Como ele funciona  
  A seguir estão as duas maneiras em que uma lista de membros é mostrada usando as classes MPF:  
@@ -38,12 +38,12 @@ O preenchimento de membro IntelliSense é uma dica de ferramenta que exibe uma l
   
 - O <xref:Microsoft.VisualStudio.Package.IScanner> scanner detecta um caractere de preenchimento de membro e define um gatilho de token de <xref:Microsoft.VisualStudio.Package.TokenTriggers> desse caractere.  
   
-  Um caractere de preenchimento de membro indica que um membro de uma classe, estrutura ou enumeração está a seguir. Por exemplo, em C# ou Visual Basic o caractere de preenchimento de membro é um `.`, enquanto em C++ o caractere é um `.` ou um `->`. O valor do gatilho é definido quando o caractere de seleção de membro é verificado.  
+  Um caractere de preenchimento de membro indica que um membro de uma classe, estrutura ou enumeração está a seguir. Por exemplo, em c# ou Visual Basic o caractere de preenchimento de membro é um `.`, enquanto em C++ o caractere é um `.` ou um `->`. O valor do gatilho é definido quando o caractere de seleção de membro é verificado.  
   
 ### <a name="the-intellisense-member-list-command"></a>O comando de lista de membro IntelliSense  
  O <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> comando inicia uma chamada para o <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método na <xref:Microsoft.VisualStudio.Package.Source> classe e o <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método, por sua vez, chama o <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> analisador de método com a razão de análise de <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
- O analisador determina o contexto da posição atual, bem como o token em ou imediatamente antes da posição atual. Com base nesse token, é apresentada uma lista de declarações. Por exemplo, no C#, se você posicionar o cursor em um membro de classe e selecione **Listar membros**, você obtém uma lista de todos os membros da classe. Se você posicionar o cursor após um período que segue uma variável de objeto, você pode obter uma lista de todos os membros da classe que o objeto representa. Observe que se o cursor estiver posicionado em um membro quando a lista de membros é mostrada, selecionando um membro da lista substitui o membro que o cursor está em com um na lista.  
+ O analisador determina o contexto da posição atual, bem como o token em ou imediatamente antes da posição atual. Com base nesse token, é apresentada uma lista de declarações. Por exemplo, no c#, se você posicionar o cursor em um membro de classe e selecione **Listar membros**, você obtém uma lista de todos os membros da classe. Se você posicionar o cursor após um período que segue uma variável de objeto, você pode obter uma lista de todos os membros da classe que o objeto representa. Observe que se o cursor estiver posicionado em um membro quando a lista de membros é mostrada, selecionando um membro da lista substitui o membro que o cursor está em com um na lista.  
   
 ### <a name="the-token-trigger"></a>O gatilho de Token  
  O <xref:Microsoft.VisualStudio.Package.TokenTriggers> gatilho inicia uma chamada para o <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método na <xref:Microsoft.VisualStudio.Package.Source> classe e o <xref:Microsoft.VisualStudio.Package.Source.Completion%2A> método, por sua vez, chama o analisador com a razão de análise de <xref:Microsoft.VisualStudio.Package.ParseReason> (se o gatilho token também incluído o <xref:Microsoft.VisualStudio.Package.TokenTriggers> sinalizador, o motivo de análise é <xref:Microsoft.VisualStudio.Package.ParseReason> que combina a seleção de membro e realce de chave).  
@@ -97,7 +97,7 @@ namespace TestLanguagePackage
   
  O analisador for chamado com <xref:Microsoft.VisualStudio.Package.ParseReason> ou <xref:Microsoft.VisualStudio.Package.ParseReason> quando um caractere de seleção de membro é digitado. O local fornecido <xref:Microsoft.VisualStudio.Package.ParseRequest> objeto é imediatamente após o membro selecionar caractere. O analisador deve coletar os nomes de todos os membros que podem aparecer em uma lista de membros nesse momento específico no código-fonte. Em seguida, o analisador deve analisar a linha atual para determinar o escopo em que o usuário deseja associado com o caractere de seleção de membro.  
   
- Esse escopo baseia-se no tipo do identificador antes que o membro selecionar caractere. Por exemplo, no C#, dada a variável de membro `languageService` que tem um tipo de `LanguageService`, digitando **languageService.** produz uma lista de todos os membros de `LanguageService` classe. Também no C#, digitando **isso.** produz uma lista de todos os membros da classe no escopo atual.  
+ Esse escopo baseia-se no tipo do identificador antes que o membro selecionar caractere. Por exemplo, no c#, dada a variável de membro `languageService` que tem um tipo de `LanguageService`, digitando **languageService.** produz uma lista de todos os membros de `LanguageService` classe. Também no c#, digitando **isso.** produz uma lista de todos os membros da classe no escopo atual.  
   
 ### <a name="example"></a>Exemplo  
  O exemplo a seguir mostra uma maneira de preencher um <xref:Microsoft.VisualStudio.Package.Declarations> lista. Esse código supõe que o analisador constrói uma declaração e o adiciona à lista, chamando uma `AddDeclaration` método no `TestAuthoringScope` classe.  

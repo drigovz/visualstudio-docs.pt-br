@@ -11,12 +11,12 @@ ms.assetid: b6c82167-e2a5-4cff-8c8b-2d72e2a9092c
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e8bc80e28979a1adf86f4b0490f84cc393450521
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2386f1be805f6347fc32fba4ee8bfe57c8602329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096121"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436900"
 ---
 # <a name="vsix-project-template"></a>Modelo de projeto do VSIX
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,13 +26,13 @@ Você pode usar o modelo de projeto de VSIX para encapsular uma ou mais extensõ
  Dá suporte à implantação do VSIX VSPackages, assemblies, componentes MEF, modelos de projeto, modelos de item, controles de caixa de ferramentas e os tipos de extensão personalizada.  
   
 > [!NOTE]
->  Para usar os projetos VSIX, você deve instalar o SDK do Visual Studio. Para obter mais informações sobre o SDK do Visual Studio, consulte [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).  
+> Para usar os projetos VSIX, você deve instalar o SDK do Visual Studio. Para obter mais informações sobre o SDK do Visual Studio, consulte [SDK do Visual Studio](../extensibility/visual-studio-sdk.md).  
   
 ## <a name="where-to-find-the-vsix-project-template"></a>Onde encontrar o modelo de projeto do VSIX  
  O modelo de projeto do VSIX está disponível na **novo projeto** caixa de diálogo. Expanda o **Visual Basic** nó ou o **Visual c#** nó e, em seguida, escolha **extensibilidade**.  
   
 > [!TIP]
->  Assegure-se de que o .NET Framework 4.5 ou superior é especificado na lista suspensa na parte superior do **novo projeto** caixa de diálogo.  
+> Assegure-se de que o .NET Framework 4.5 ou superior é especificado na lista suspensa na parte superior do **novo projeto** caixa de diálogo.  
   
 ## <a name="uses-of-the-vsix-project-template"></a>Usos do modelo de projeto do VSIX  
  O modelo de projeto do VSIX tem dois usos principais:  

@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e6ad8a11e736595912b1b6c8757bd75dca1e53e6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3e306f07f3c528c27c60e9b55675ff945413bf45
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097421"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440861"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>Passo a passo: Criar uma região de formulário do Outlook
   Regiões de formulário personalizadas estendem formulários do Microsoft Office Outlook padrão ou personalizados. Neste passo a passo, você criará uma região de formulário personalizada é exibida como uma nova página na janela Inspetor de um item de contato. Esta região do formulário exibe um mapa de cada endereço listado para o contato, enviando as informações de endereço para o Windows Live Search site Local. Para obter informações sobre regiões de formulário, consulte [regiões de formulário do Outlook criar](../vsto/creating-outlook-form-regions.md).
@@ -37,7 +37,7 @@ ms.locfileid: "60097421"
 - Testando a região de formulário do Outlook.
 
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:

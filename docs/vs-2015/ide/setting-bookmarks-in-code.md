@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 35713751061e5a590a5a7bc9cc5fa03bccd56966
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: b9a5612a9d6fd04850134a51f62a02496deb1708
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54769298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441936"
 ---
 # <a name="setting-bookmarks-in-code"></a>Definindo identificadores no código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Você pode usar indicadores para marcar linhas em seu código para que você pos
  Para adicionar um indicador, coloque o cursor na linha que você deseja marcar. Clique no botão de **Alternância** ou pressione CTRL + K. Isso adiciona o indicador. Se você clicar no botão de Alternância (ou pressionar CTRL + K) novamente, o indicador será removido. Você também pode excluir indicadores clicando no botão **Excluir** na janela de indicadores.  
   
 > [!IMPORTANT]
->  O indicador é definido como o número de linha e não como o código. Se você modificar o código, o indicador será mantido no número de linha e não será movido com o código.  
+> O indicador é definido como o número de linha e não como o código. Se você modificar o código, o indicador será mantido no número de linha e não será movido com o código.  
   
  Você pode navegar entre marcadores usando os botões **Próximo Indicador** e **Indicador Anterior** na janela de indicadores.  
   

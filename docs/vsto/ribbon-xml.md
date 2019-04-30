@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 77fa9442289851aff91d8d9bfc55e581edfa774a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9ce2388dbf61ef3af524f0debc776891dca004f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117532"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436502"
 ---
 # <a name="ribbon-xml"></a>XML da faixa de opções
   O item da faixa de opções (XML) permite que você personalize uma faixa de opções usando XML. Use o item de faixa de opções (XML), se você quiser personalizar a faixa de opções de forma que não é compatível com o item da faixa de opções (Visual Designer). Para obter uma comparação do que você pode fazer com cada item, consulte [visão geral da faixa de opções](../vsto/Ribbon-overview.md).
@@ -60,7 +60,7 @@ ms.locfileid: "60117532"
 - Defina o método de retorno de chamada na classe da faixa de opções.
 
 > [!NOTE]
->  O Outlook requer uma etapa adicional. Para obter mais informações, consulte [personalizar uma faixa de opções para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
+> O Outlook requer uma etapa adicional. Para obter mais informações, consulte [personalizar uma faixa de opções para Outlook](../vsto/customizing-a-ribbon-for-outlook.md).
 
  Para um passo a passo que demonstra como automatizar um aplicativo da faixa de opções, consulte [passo a passo: Criar uma guia personalizada usando o XML da faixa de opções](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md).
 

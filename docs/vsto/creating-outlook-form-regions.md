@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: ea3f72a26938a50cddbb622565173be603436ba3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: dc0f56331c11c6c33561774d38ef79e286a4133a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092754"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445578"
 ---
 # <a name="create-outlook-form-regions"></a>Criar regiões de formulário do Outlook
   Você pode usar regiões de formulário para personalizar formulários do Microsoft Office Outlook. Visual Studio fornece ferramentas avançadas que tornam mais fácil para você criar, desenvolver e depurar as regiões do formulário.
@@ -90,7 +90,7 @@ ms.locfileid: "60092754"
 - Um armazenamento de formulário do Outlook (*ofs*) arquivos.
 
     > [!NOTE]
-    >  Esse arquivo somente é adicionado ao projeto, se você importar uma região de formulário que foi projetada no Outlook.
+    > Esse arquivo somente é adicionado ao projeto, se você importar uma região de formulário que foi projetada no Outlook.
 
 #### <a name="form-region-factory-class"></a>Classe de fábrica de região de formulário
  O arquivo de código de região de formulário contém uma classe parcial que implementa o <xref:Microsoft.Office.Tools.Outlook.IFormRegionFactory> interface. Isso é a classe de fábrica da região de formulário. A classe de fábrica da região de formulário é responsável por criar novas instâncias da região do formulário.
@@ -110,7 +110,7 @@ ms.locfileid: "60092754"
  O designer de região de formulário ajuda você a projetar o layout e aparência de uma região de formulário. Arraste os controles gerenciados para a superfície do designer, clique duas vezes em controles para abrir os manipuladores de eventos e definir propriedades na **propriedades** janela.
 
 > [!NOTE]
->  Você pode encontrar as propriedades que afetam a maneira como a região do formulário é exibida no Outlook sob o **manifesto** nó na **propriedades** janela.
+> Você pode encontrar as propriedades que afetam a maneira como a região do formulário é exibida no Outlook sob o **manifesto** nó na **propriedades** janela.
 
  O designer de região de formulário está disponível somente se você selecionar **criar uma nova região de formulário** na **selecione como você deseja criar a região do formulário** página da **nova região de formulário do Outlook** Assistente.
 
@@ -138,7 +138,7 @@ ms.locfileid: "60092754"
  Você pode alterar as propriedades da região de formulário no `InitializeManifest` método da classe de fábrica de região de formulário.
 
 > [!NOTE]
->  Para importar uma região de formulário, você deve estar trabalhando em um projeto que tem como alvo a mesma versão do Outlook que você instalou no computador de desenvolvimento. Por exemplo, se você tiver o Outlook 2010 instalado, a importação de um formulário região funcionará somente em um projeto foi criado usando o **suplemento do Outlook 2010** modelo de projeto.
+> Para importar uma região de formulário, você deve estar trabalhando em um projeto que tem como alvo a mesma versão do Outlook que você instalou no computador de desenvolvimento. Por exemplo, se você tiver o Outlook 2010 instalado, a importação de um formulário região funcionará somente em um projeto foi criado usando o **suplemento do Outlook 2010** modelo de projeto.
 
 ### <a name="update-an-imported-form-regions-design"></a>Atualizar o design de uma região formulário importado
  Você pode adicionar, remover ou alterar os controles na região do formulário. Antes de fazer isso, fazer backup de qualquer código que você adicionou ao arquivo de código de região do formulário. Em seguida, abra o *ofs* no Outlook, modifique a região do formulário e, em seguida, salve as alterações. Use o **nova região de formulário do Outlook** Assistente para importar modificado *ofs* arquivo. Em seguida, você pode colar seu código para o novo arquivo de código de região do formulário.

@@ -10,12 +10,12 @@ ms.assetid: 800fc739-acd2-4242-84cb-1d83b4d82cf9
 caps.latest.revision: 38
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9af0a3dc7c08a415f320ce3560cdfc23c462d4c7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f539fd0a20bf852b04b5a41aff829cdcf0e52cf3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60087515"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445918"
 ---
 # <a name="using-code-coverage-to-determine-how-much-code-is-being-tested"></a>Usando cobertura de código para determinar quanto código está sendo testado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Para determinar que proporção do código do projeto está sendo testada de fat
 3. Se os resultados mostrarem baixa cobertura, investigue quais partes do código não estão sendo utilizadas e escreva mais testes para abrangê-las. As equipes de desenvolvimento normalmente desejam uma cobertura de código de aproximadamente 80%. Em algumas situações, uma cobertura menor é aceitável. Por exemplo, uma cobertura menor é aceitável onde um código é gerado a partir de um modelo padrão.  
   
 > [!TIP]
->  Para obter resultados precisos:  
+> Para obter resultados precisos:  
 > 
 > - Verifique se a otimização do compilador será desativada.  
 > 
@@ -240,7 +240,7 @@ ExcludeSourceFromCodeCoverage(Exclusion4, L"*\\unittest1.cpp");
 - As exclusões devem ser criadas como o código não gerenciado (nativo), definindo a opção de compilador ou usando `#pragma managed(off)`.  
   
 > [!NOTE]
->  Para excluir funções em código C++/CLI, aplique o atributo `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` à função. Esse é o mesmo para o C#.  
+> Para excluir funções em código C++/CLI, aplique o atributo `[System::Diagnostics::CodeAnalysis::ExcludeFromCodeCoverage]` à função. Esse é o mesmo para o C#.  
   
 ### <a name="including-or-excluding-additional-elements"></a>Incluindo ou excluindo elementos adicionais  
  A análise de cobertura de código é executada apenas em assemblies carregados e para os quais um arquivo .pdb está disponível no mesmo diretório que o arquivo .dll ou .exe. Portanto, em algumas circunstâncias, você pode estender o conjunto de assemblies que é incluído obtendo cópias dos arquivos .pdb apropriados.  

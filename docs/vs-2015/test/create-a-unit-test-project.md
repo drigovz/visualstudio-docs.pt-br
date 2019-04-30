@@ -8,12 +8,12 @@ ms.assetid: a608bfba-1a43-4a60-b73a-1fe53ef58098
 caps.latest.revision: 10
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ca472a8db08f337d873f0e43475a9231f2999b13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f792c29b50be5bbadf34980b81f7c5dd329cccfb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60096615"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442826"
 ---
 # <a name="create-a-unit-test-project"></a>Crie um projeto de teste de unidade
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -21,7 +21,7 @@ ms.locfileid: "60096615"
 Geralmente, os testes de unidade refletem a estrutura do código que está sendo testado. Por exemplo, um projeto de teste de unidade será criado para cada projeto de código do produto. O projeto de teste pode estar na mesma solução que o código de produção ou em uma solução separada. É possível ter vários projetos de teste de unidade em uma solução.  
   
 > [!NOTE]
->  O local dos testes de unidade para o código nativo e a estrutura do projeto de teste podem ser diferentes da estrutura descrita neste tópico. Para obter mais informações, consulte [Adicionando testes de unidade a aplicativos do C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md).  
+> O local dos testes de unidade para o código nativo e a estrutura do projeto de teste podem ser diferentes da estrutura descrita neste tópico. Para obter mais informações, consulte [Adicionando testes de unidade a aplicativos do C++ existentes](../test/unit-testing-existing-cpp-applications-with-test-explorer.md).  
   
 ## <a name="to-create-a-unit-test-project"></a>Para criar um projeto de teste de unidade:  
   

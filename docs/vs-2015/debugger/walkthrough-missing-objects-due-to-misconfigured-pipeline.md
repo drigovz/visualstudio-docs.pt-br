@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 01366bfd0f32f9cbf731613339f2c592873e2623
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9d74006051fd39043de75cec81fdad3f1083adef
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114100"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444286"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>Passo a passo: Objetos ausentes devido a configuração incorreta do pipeline
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../includes/vsprvs-md
     No **estágios de Pipeline gráficos** janela, o **Assembler de entrada** estágio mostra a geometria do objeto antes que seja transformada e o **sombreador de vértices** estágio mostra a mesma objeto depois que ele é transformado. Nesse cenário, observe que o **estágios de Pipeline gráficos** janela mostra o **Assembler de entrada** e **sombreador de vértices** estágios, mas não o **sombreador de Pixel**  estágio para uma das chamadas de desenho.  
   
    > [!NOTE]
-   >  Se outros estágios de pipeline — por exemplo, o sombreador hull, o sombreador de domínio ou estágios de sombreador de geometria — processar o objeto, qualquer um deles pode ser a causa do problema. Normalmente, o problema está relacionado ao mais cedo em que o resultado não é exibido ou é exibido de forma inesperada.  
+   > Se outros estágios de pipeline — por exemplo, o sombreador hull, o sombreador de domínio ou estágios de sombreador de geometria — processar o objeto, qualquer um deles pode ser a causa do problema. Normalmente, o problema está relacionado ao mais cedo em que o resultado não é exibido ou é exibido de forma inesperada.  
   
 4. Pare quando atingir a chamada de desenho que corresponde ao objeto ausente. Nesse cenário, o **estágios de Pipeline gráficos** janela indica que a geometria foi emitida para a GPU (indicado pela presença da **Assembler de entrada** estágio) e transformados (indicado pelo  **Sombreador de vértice** estágio), mas não aparecerão no destino de renderização porque não parece haver um sombreador de pixel do Active Directory (indicado pela ausência do **sombreador de Pixel** estágio). Nesse cenário, você pode até ver a silhueta do objeto ausente na **fusão de saída** estágio:  
   
@@ -87,7 +87,7 @@ Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../includes/vsprvs-md
 1. Encontre o `PSSetShader` chamada que corresponde ao objeto ausente. No **lista de eventos gráficos** janela, insira "desenho; PSSetShader"no **pesquisa** caixa no canto superior direito das **lista de eventos gráficos** janela. Isso filtra a lista para que ele contenha somente os eventos de "PSSetShader" e eventos que possuam "Desenho" em seus títulos. Escolha o primeiro `PSSetShader` chamada que aparece antes da chamada de desenho do objeto ausente.  
   
    > [!NOTE]
-   >  `PSSetShader` não será exibida na **lista de eventos gráficos** se ele não foi definido durante esse quadro de janela. Normalmente, isso ocorre somente se o sombreador de pixel apenas um é usado para todos os objetos, ou se o `PSSetShader` chamada acidentalmente foi ignorada durante esse período. Em ambos os casos, é recomendável que você pesquisa o código-fonte do aplicativo para `PSSetShader` chamadas e use tradicional de técnicas de depuração para examinar o comportamento dessas chamadas.  
+   > `PSSetShader` não será exibida na **lista de eventos gráficos** se ele não foi definido durante esse quadro de janela. Normalmente, isso ocorre somente se o sombreador de pixel apenas um é usado para todos os objetos, ou se o `PSSetShader` chamada acidentalmente foi ignorada durante esse período. Em ambos os casos, é recomendável que você pesquisa o código-fonte do aplicativo para `PSSetShader` chamadas e use tradicional de técnicas de depuração para examinar o comportamento dessas chamadas.  
   
 2. Abra o **pilha de chamadas do evento de gráficos** janela. Sobre o **diagnóstico de gráficos** barra de ferramentas, escolha **pilha de chamadas do evento de gráficos**.  
   
@@ -96,7 +96,7 @@ Este passo a passo demonstra como usar o [!INCLUDE[vsprvs](../includes/vsprvs-md
     ![O código que não inicializam o sombreador de pixel](../debugger/media/gfx-diag-demo-misconfigured-pipeline-step-5.png "gfx_diag_demo_misconfigured_pipeline_step_5")  
   
    > [!NOTE]
-   >  Se você não conseguir localizar a origem do valor nulo apenas examinando a pilha de chamadas, é recomendável que você defina um ponto de interrupção condicional no `PSSetShader` chamar, de modo que a execução do programa é interrompida quando o sombreador de pixel será definido como null. Em seguida, reinicie o aplicativo no modo de depuração e usar técnicas de depuração tradicionais para localizar a origem do valor nulo.  
+   > Se você não conseguir localizar a origem do valor nulo apenas examinando a pilha de chamadas, é recomendável que você defina um ponto de interrupção condicional no `PSSetShader` chamar, de modo que a execução do programa é interrompida quando o sombreador de pixel será definido como null. Em seguida, reinicie o aplicativo no modo de depuração e usar técnicas de depuração tradicionais para localizar a origem do valor nulo.  
   
    Para corrigir o problema, atribua o sombreador de pixel correto, usando o primeiro parâmetro do `ID3D11DeviceContext::PSSetShader` chamada à API.  
   

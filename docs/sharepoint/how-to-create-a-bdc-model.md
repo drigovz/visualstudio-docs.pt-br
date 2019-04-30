@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: e4e05eae6339d55d16fb0cf6ba6ebeb9d1f4f296
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9126a0d3bb552f525247cbfb2243504a1effaa92
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435465"
 ---
 # <a name="how-to-create-a-bdc-model"></a>Como: Criar um modelo BDC
   Você pode criar um modelo de conectividade de dados comerciais (BDC) usando o modelo para esse tipo de item e, em seguida, adicionando o modelo a qualquer projeto do SharePoint. Para obter mais informações, consulte [criar um modelo de conectividade de dados de negócios](../sharepoint/creating-a-business-data-connectivity-model.md). Para obter mais informações sobre como projetar o modelo, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -28,7 +28,7 @@ ms.locfileid: "60106651"
 1. Na barra de menus, selecione **Arquivo** > **Novo** > **Projeto**.
 
     > [!NOTE]
-    >  Se o seu IDE for definido para usar configurações de desenvolvimento do Visual Basic, escolha **arquivo** > **novo projeto**.
+    > Se o seu IDE for definido para usar configurações de desenvolvimento do Visual Basic, escolha **arquivo** > **novo projeto**.
 
      A caixa de diálogo **Novo Projeto** é aberta.
 
@@ -43,7 +43,7 @@ ms.locfileid: "60106651"
      Você testará o modelo no site do SharePoint que você especificou.
 
     > [!IMPORTANT]
-    >  Você deve implantar o projeto como uma solução de farm porque os modelos de BDC suportam somente soluções de farm.
+    > Você deve implantar o projeto como uma solução de farm porque os modelos de BDC suportam somente soluções de farm.
 
      Um projeto vazio do SharePoint é criado.
 

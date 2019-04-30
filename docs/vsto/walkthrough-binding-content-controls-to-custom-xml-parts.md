@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 65cadbde0cde939d45161e3b8dc69685ae31fa69
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 52366cc268335df98da53701e5cde283c67a022d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041612"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438711"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>Passo a passo: Associar controles de conteúdo a partes XML personalizadas
   Este passo a passo demonstra como associar controles de conteúdo em uma personalização no nível de documento para Word a dados XML armazenados no documento.
@@ -85,7 +85,7 @@ ms.locfileid: "60041612"
 5. Na faixa de opções, escolha o **desenvolvedor** guia.
 
    > [!NOTE]
-   >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+   > Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 6. No **controles** grupo, escolha o **texto** botão ![PlainTextContentControl](../vsto/media/plaintextcontrol.gif "PlainTextContentControl") para adicionar um <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>para a primeira célula.
 

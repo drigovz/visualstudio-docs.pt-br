@@ -9,12 +9,12 @@ caps.latest.revision: 4
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 27e9d1ce86064c23e3a293382ff7f83389d693f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55e7cdc06b1876fe40310f5af44152a70e4a4375
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109031"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438877"
 ---
 # <a name="walkthrough-using-xml-editor-features"></a>Passo a passo: Usando recursos do Editor de XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60109031"
 As etapas nessa explicação passo a passo mostram como criar um novo documento XML. A explicação passo a passo também usa alguns dos recursos do editor XML que tornam valioso para criar XML.  
   
 > [!NOTE]
->  Antes de iniciar a explicação passo a passo, salve o arquivo de hireDate.xsd (incluído abaixo neste tópico) para seu computador local.  
+> Antes de iniciar a explicação passo a passo, salve o arquivo de hireDate.xsd (incluído abaixo neste tópico) para seu computador local.  
   
 ### <a name="to-create-a-new-xml-file-and-associate-it-with-an-xml-schema"></a>Para criar um novo arquivo XML e associá-la com um esquema XML  
   

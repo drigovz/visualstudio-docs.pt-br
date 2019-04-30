@@ -12,12 +12,12 @@ caps.latest.revision: 6
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: bc878a7f4469d7f8ef8bf61d0d5f3b721f39b7e1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 6d779294f991786f90faf8dd1de756749b6baffc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117740"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444170"
 ---
 # <a name="how-to-create-workflow-projects-legacy"></a>Como: Criar projetos de fluxo de trabalho (herdado)
 Siga estas etapas para criar um projeto de [!INCLUDE[wf](../includes/wf-md.md)] que tem como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)]. Este procedimento usa [!INCLUDE[wfd1](../includes/wfd1-md.md)] herdado fornecido por [!INCLUDE[vs2010](../includes/vs2010-md.md)].  
@@ -33,7 +33,7 @@ Siga estas etapas para criar um projeto de [!INCLUDE[wf](../includes/wf-md.md)] 
 3. Selecione o **.NET Framework 3.0** opção ou o **.NET Framework 3.5** opção na lista suspensa na parte superior da lista da **novo projeto** janela para acessar o designer herdado.  
   
     > [!NOTE]
-    >  A opção padrão na [!INCLUDE[vs2010](../includes/vs2010-md.md)] está **.NET Framework 4**. Essa opção é usada criar aplicativos de [!INCLUDE[wf](../includes/wf-md.md)] que direcionam [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] e usa o designer herdado.  
+    > A opção padrão na [!INCLUDE[vs2010](../includes/vs2010-md.md)] está **.NET Framework 4**. Essa opção é usada criar aplicativos de [!INCLUDE[wf](../includes/wf-md.md)] que direcionam [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] e usa o designer herdado.  
   
 4. No **tipos de projeto** painel, selecione projetos do Visual c# ou projetos do Visual Basic e, em seguida, selecione **fluxo de trabalho**.  
   

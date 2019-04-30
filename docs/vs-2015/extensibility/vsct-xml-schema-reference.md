@@ -11,12 +11,12 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9d95275f5b4ffd91f993fc3e5a650d3d160fa2a4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: e56de828d3b357762da98cde3b9591033c6b5d19
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928959"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441473"
 ---
 # <a name="vsct-xml-schema-reference"></a>Referência do esquema XML do VSCT
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ Fornece uma tabela de elementos de esquema do compilador de tabela de comando, c
  Um arquivo de configuração (. VSCT) da tabela de comando baseado em XML define os elementos de comando que fornece um VSPackage para o ambiente de desenvolvimento integrado (IDE). Esses elementos incluem itens de menu, menus, barras de ferramentas e caixas de combinação.  
   
 > [!NOTE]
->  O compilador VSCT pode executar um pré-processador no arquivo. VSCT. Como isso é normalmente o pré-processador, que você pode definir C++ inclui e macros que têm a mesma sintaxe que é usada em arquivos de C++. Exemplos disso são fornecidos na. VSCT de arquivos que o **novo projeto** assistente cria para um projeto de VSPackage.  
+> O compilador VSCT pode executar um pré-processador no arquivo. VSCT. Como isso é normalmente o pré-processador, que você pode definir C++ inclui e macros que têm a mesma sintaxe que é usada em arquivos de C++. Exemplos disso são fornecidos na. VSCT de arquivos que o **novo projeto** assistente cria para um projeto de VSPackage.  
   
 ## <a name="optional-elements"></a>Elementos opcionais  
  Alguns elementos VSCT são opcionais. Se um `Parent` argumento não for especificado, Group_Undefined:0 será implícita. Se um `Icon` argumento não for especificado, guidOfficeIcon:msotcidNoIcon será implícita. Quando uma tecla de atalho é definida, a emulação, que é normalmente usada, é opcional.  

@@ -11,18 +11,18 @@ ms.assetid: 7d1ed528-4e7a-4d8f-87b4-162440644a75
 caps.latest.revision: 12
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: ba059cc1c5546bc437c7ea83a08aa8dca0a56f98
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7e31aa560422c9f18ec30a6e203559ef3ed10c52
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117675"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444764"
 ---
 # <a name="evaluating-locals"></a>Avaliando locais
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
 
 > [!IMPORTANT]
->  No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
+> No Visual Studio 2015, essa forma de implementar os avaliadores de expressão foi preterida. Para obter informações sobre como implementar os avaliadores de expressão de CLR, consulte [avaliadores de expressão de CLR](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) e [amostra do avaliador de expressão gerenciado](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample).  
   
  [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) é chamado para obter o valor de um local, bem como o nome do local e o tipo. Como o valor de um local é dependente do estado atual do programa, o valor do local deve ser obtido da memória. O [IDebugBinder](../../extensibility/debugger/reference/idebugbinder.md) objeto é usado para associar a [IDebugField](../../extensibility/debugger/reference/idebugfield.md) que representa o local para o local apropriado na memória que contém o valor do objeto. Esse local na memória é representado por um [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) objeto.  
   

@@ -11,12 +11,12 @@ ms.assetid: f7fe9a7e-f669-4642-ad5d-186b2e6e6ec9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 7d1bfcfc3176e14900553504a66307ff6e8dcf5a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f3bae21baa0c484f2deeb8406a703b92cadc874b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60049251"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439052"
 ---
 # <a name="designer-initialization-and-metadata-configuration"></a>Inicialização do designer e a configuração de metadados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -47,7 +47,7 @@ Manipulação dos atributos de metadados e o filtro associado a um designer ou u
 1. Criação de um objeto que implementa o <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe.  
   
    > [!NOTE]
-   >  O <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe nunca deve ser implementada no mesmo objeto como o <xref:Microsoft.VisualStudio.Shell.Package> classe.  
+   > O <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> classe nunca deve ser implementada no mesmo objeto como o <xref:Microsoft.VisualStudio.Shell.Package> classe.  
   
 2. Registrar a classe que implementa <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension> como fornecendo suporte para extensões do designer do VSPackage, aplicando as instâncias do <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtensionAttribute>, <xref:Microsoft.VisualStudio.Shell.ProvideObjectAttribute> e <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> para a classe que fornece a implementação do VSPackage de <xref:Microsoft.VisualStudio.Shell.Package> .  
   
@@ -93,7 +93,7 @@ Manipulação dos atributos de metadados e o filtro associado a um designer ou u
   `internal class MyPackage : Package {}`  
   
 > [!NOTE]
->  No momento, a superfície de design somente dá suporte à criação de componentes e, portanto, somente os componentes podem ter metadados locais. No exemplo acima, podemos estava tentando executar modificar uma propriedade, como o `Color` propriedade de um objeto. Se `false` foi passado para o sinalizador global, `CustomBrowser` nunca seria exibido porque o designer, na verdade, nunca cria uma instância de `Color`. Definir o sinalizador global para `false` é útil para componentes, como controles, temporizadores e caixas de diálogo.  
+> No momento, a superfície de design somente dá suporte à criação de componentes e, portanto, somente os componentes podem ter metadados locais. No exemplo acima, podemos estava tentando executar modificar uma propriedade, como o `Color` propriedade de um objeto. Se `false` foi passado para o sinalizador global, `CustomBrowser` nunca seria exibido porque o designer, na verdade, nunca cria uma instância de `Color`. Definir o sinalizador global para `false` é útil para componentes, como controles, temporizadores e caixas de diálogo.  
   
 ## <a name="see-also"></a>Consulte também  
  <xref:Microsoft.VisualStudio.Shell.Design.DesignSurfaceExtension>   

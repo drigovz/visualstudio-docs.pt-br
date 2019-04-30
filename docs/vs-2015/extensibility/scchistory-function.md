@@ -12,12 +12,12 @@ ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 2fb579cf56d0fdf9e8c441a1393d934fcc7348d4
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 8df85c03201e46768c43fb64cc41b7fa081eb91a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923447"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446817"
 ---
 # <a name="scchistory-function"></a>Função SccHistory
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -76,7 +76,7 @@ SCCRTN SccHistory(
  Observe que, em determinadas circunstâncias, o arquivo que está sendo examinado pode ser alterados durante a execução desta chamada. Por exemplo, o [!INCLUDE[vsvss](../includes/vsvss-md.md)] comando history dá ao usuário uma chance de obter uma versão antiga do arquivo. Nesse caso, o controle de fonte plug-in retorna `SCC_I_RELOAD` para avisar o IDE que ele precisa recarregar o arquivo.  
   
 > [!NOTE]
->  Se o plug-in de controle do código-fonte não dá suporte a essa função para uma matriz de arquivos, somente o histórico de arquivos para o primeiro arquivo pode ser exibido.  
+> Se o plug-in de controle do código-fonte não dá suporte a essa função para uma matriz de arquivos, somente o histórico de arquivos para o primeiro arquivo pode ser exibido.  
   
 ## <a name="see-also"></a>Consulte também  
  [Funções de API de plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)   

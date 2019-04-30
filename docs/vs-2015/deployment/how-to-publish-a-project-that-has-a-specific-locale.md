@@ -21,12 +21,12 @@ caps.latest.revision: 13
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6d5bb4be34a6a476e975c240f8a9d99114b870f0
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 76d0b61ba3eb8c0ff995aef4118fe21a83fc94c2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60092910"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442681"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>Como: Publicar um projeto que tem uma localidade específica
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ ms.locfileid: "60092910"
 Não é incomum para um aplicativo conter componentes que possuem diversas localidades. Nesse cenário, seria criada uma solução que possui diversos projetos e publicados projetos separados para cada localização. Esse procedimento mostra como usar uma macro para publicar o primeiro projeto em uma solução usando a localização 'en'. Se desejar tentar esse procedimento com outra localidade além de 'en', certifique-se de definir `localeString` na macro para corresponder à localidade que estiver usando (por exemplo, 'de' ou 'de-DE').  
   
 > [!NOTE]
->  Ao usar essa macro, o Local de Publicação deve ser uma URL válida ou um compartilhamento Universal Naming Convention (UNC). Além disso, Serviços de Informações da Internet (IIS) deve estar instalado no computador. Para instalar o IIS, no menu **Iniciar**, clique em **Painel de Controle**. Clique duas vezes em **Adicionar ou remover Programas**. Em **Adicionar ou Remover Programas**, clique em **Adicionar/Remover Componentes do Windows**. No **Assistente de Componentes do Windows**, selecione a caixa de seleção **Serviços de Informações da Internet (IIS)** na lista **Componentes**. Clique em **Concluir** para fechar o assistente.  
+> Ao usar essa macro, o Local de Publicação deve ser uma URL válida ou um compartilhamento Universal Naming Convention (UNC). Além disso, Serviços de Informações da Internet (IIS) deve estar instalado no computador. Para instalar o IIS, no menu **Iniciar**, clique em **Painel de Controle**. Clique duas vezes em **Adicionar ou remover Programas**. Em **Adicionar ou Remover Programas**, clique em **Adicionar/Remover Componentes do Windows**. No **Assistente de Componentes do Windows**, selecione a caixa de seleção **Serviços de Informações da Internet (IIS)** na lista **Componentes**. Clique em **Concluir** para fechar o assistente.  
   
 ### <a name="to-create-the-publishing-macro"></a>Criar a macro de publicação  
   

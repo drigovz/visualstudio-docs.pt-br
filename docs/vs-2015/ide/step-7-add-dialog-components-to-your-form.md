@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5c49de0af6cbb02c441489cbfa7b1d8a7b3881df
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 54d2b83fab24aa3c9deabc979782d9b82ea5c482
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061470"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442483"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>Etapa 7: Adicionar componentes de diálogo ao formulário
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Para habilitar seu programa a abrir arquivos de imagem e escolher uma cor da tel
 1. Escolha o Designer de Formulários do Windows (Form1.cs [Design] ou Form1.vb [Design]) e abra o grupo **Caixas de Diálogo** na Caixa de Ferramentas.  
   
     > [!NOTE]
-    >  O grupo **Caixas de Diálogo** na Caixa de Ferramentas tem componentes que abrem muitas caixas de diálogo úteis para você, que podem ser usadas para abrir e salvar arquivos, navegar por pastas e escolher fontes e cores. Você usa dois componentes de caixa de diálogo neste projeto: **OpenFileDialog** e **ColorDialog**.  
+    > O grupo **Caixas de Diálogo** na Caixa de Ferramentas tem componentes que abrem muitas caixas de diálogo úteis para você, que podem ser usadas para abrir e salvar arquivos, navegar por pastas e escolher fontes e cores. Você usa dois componentes de caixa de diálogo neste projeto: **OpenFileDialog** e **ColorDialog**.  
   
 2. Para adicionar um componente chamado **openFileDialog1** ao formulário, clique duas vezes em **OpenFileDialog**. Para adicionar um componente chamado **colorDialog1** ao formulário, clique duas vezes em **ColorDialog** na Caixa de Ferramentas. (Use a referência da próxima etapa do tutorial.) Você deve ver uma área na parte inferior do Windows Forms Designer (abaixo do formulário visualizador de imagens) que tem um ícone para cada um dos dois componentes da caixa de diálogo que você adicionou, conforme mostrado na seguinte imagem.  
   
@@ -50,7 +50,7 @@ Componentes da caixa de diálogo
          As configurações da propriedade de **Filtro** especificam os tipos de arquivo que serão exibidos na caixa de diálogo do arquivo **Selecionar uma imagem**.  
   
     > [!NOTE]
-    >  Para ver um exemplo da caixa de diálogo **Abrir Arquivo** em um aplicativo diferente, abra o Bloco de Notas ou o Paint e, na barra de menus, escolha **Arquivo**, **Abrir**. Observe como há uma lista suspensa **Arquivos de tipo** na parte inferior. Você acabou de usar a propriedade de **Filtro** no componente **OpenFileDialog** para configurar isso. Além disso, observe como as propriedades de **Título** e de **Filtro** estão em negrito na janela **Propriedades**. O IDE faz isso para mostrar a você todas as propriedades que tiveram seus valores padrão alterados.  
+    > Para ver um exemplo da caixa de diálogo **Abrir Arquivo** em um aplicativo diferente, abra o Bloco de Notas ou o Paint e, na barra de menus, escolha **Arquivo**, **Abrir**. Observe como há uma lista suspensa **Arquivos de tipo** na parte inferior. Você acabou de usar a propriedade de **Filtro** no componente **OpenFileDialog** para configurar isso. Além disso, observe como as propriedades de **Título** e de **Filtro** estão em negrito na janela **Propriedades**. O IDE faz isso para mostrar a você todas as propriedades que tiveram seus valores padrão alterados.  
   
 ### <a name="to-continue-or-review"></a>Para continuar ou revisar  
   

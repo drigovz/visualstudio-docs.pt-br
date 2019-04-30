@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: d2710e529ea558b87527e84865717645116b6b36
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 915a6c6d06380aa67c2c79ce52598668a9b33f18
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069543"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442372"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>Introdução à Linguagem Específica de Domínio
 
@@ -294,7 +294,7 @@ Renomeie as classes de domínio existentes e as relações. Por exemplo, a parti
          Defina seu nome, por exemplo **Cidade**.
 
         > [!NOTE]
-        >  Cada classe de domínio, exceto a raiz do modelo deve ser o destino de pelo menos uma relação de incorporação ou ela deve herdar de uma classe que é o destino de uma inserção. Por esse motivo, é conveniente com frequência criar uma classe de domínio usando a ferramenta de relação de incorporação.
+        > Cada classe de domínio, exceto a raiz do modelo deve ser o destino de pelo menos uma relação de incorporação ou ela deve herdar de uma classe que é o destino de uma inserção. Por esse motivo, é conveniente com frequência criar uma classe de domínio usando a ferramenta de relação de incorporação.
 
     2. Adicionar uma propriedade de domínio para a nova classe, por exemplo **nome**.
 
@@ -305,7 +305,7 @@ Renomeie as classes de domínio existentes e as relações. Por exemplo, a parti
          ![Fragmento da definição de DSL: raiz da árvore genealógica](../modeling/media/familyt_root.png)
 
         > [!NOTE]
-        >  Relações de referência representam referências cruzadas de uma parte da árvore modelo para outro.
+        > Relações de referência representam referências cruzadas de uma parte da árvore modelo para outro.
 
 3. Adicione uma forma para representar as cidades em diagramas de modelo.
 

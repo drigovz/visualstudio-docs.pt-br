@@ -12,12 +12,12 @@ ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9948950322c0d4f994ed9c12fe6ebec5112b6d13
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 256430c0e41bfc0452282c89407335d997cc715c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076270"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440766"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>Passo a passo: Obtendo uma lista de snippets de código instalados (implementação herdada)
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -108,7 +108,7 @@ Um trecho de código é um trecho de código que pode ser inserido no buffer de 
 1. O método a seguir mostra como chamar o `GetSnippets` método após a conclusão de uma operação de análise. O <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> método é chamado após uma operação de análise que foi iniciada com o motivo pelo qual <xref:Microsoft.VisualStudio.Package.ParseReason>.  
   
 > [!NOTE]
->  O `expansionsList` listis armazenado em cache por motivos de desempenho de matriz. Os trechos de código as alterações não são refletidas na lista até que o serviço de linguagem é interrompido e recarregado (por exemplo, ao parar e reiniciar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]).  
+> O `expansionsList` listis armazenado em cache por motivos de desempenho de matriz. Os trechos de código as alterações não são refletidas na lista até que o serviço de linguagem é interrompido e recarregado (por exemplo, ao parar e reiniciar [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)]).  
   
 ```csharp  
 class TestLanguageService : LanguageService  

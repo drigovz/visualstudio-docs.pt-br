@@ -29,12 +29,12 @@ caps.latest.revision: 245
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1601853a99ebea5ef687fbe5679fd74b45d5c381
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1d74fc577044cd11ca161f099e2432fd03ecfad2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107691"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440933"
 ---
 # <a name="map-dependencies-across-your-solutions"></a>Mapear as dependências nas soluções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Quando você quer entender dependências em seu código, exiba-os Criando mapas 
 - Visual Studio Professional: Abrir mapas de código, criar edições limitadas e navegar pelo código.  
   
 > [!WARNING]
->  Antes de compartilhar mapas criados no Visual Studio Enterprise com outras pessoas que usam o Visual Studio Professional, certifique-se de que todos os itens no mapa (como itens ocultos, grupos expandidos e links de grupo cruzado) ficam visíveis.  
+> Antes de compartilhar mapas criados no Visual Studio Enterprise com outras pessoas que usam o Visual Studio Professional, certifique-se de que todos os itens no mapa (como itens ocultos, grupos expandidos e links de grupo cruzado) ficam visíveis.  
   
  **Você pode mapear as dependências para o código nesses idiomas**:  
   
@@ -142,7 +142,7 @@ Quando você quer entender dependências em seu código, exiba-os Criando mapas 
     Ou use o teclado selecionando o item, em seguida, pressionar a tecla de mais (**+**). Para explorar níveis mais profundos do código, faça o mesmo para namespaces, tipos e membros.  
   
    > [!TIP]
-   >  Para obter mais detalhes de como trabalhar com o código de mapas usando o mouse, teclado e toque, consulte [procurar e reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).  
+   > Para obter mais detalhes de como trabalhar com o código de mapas usando o mouse, teclado e toque, consulte [procurar e reorganizar mapas de código](../modeling/browse-and-rearrange-code-maps.md).  
   
 5. Para simplificar o mapa e se concentrar em partes individuais, escolha **filtros** na barra de ferramentas de mapa de código e selecione apenas os tipos de nós e links que lhe interessam. Por exemplo, você pode ocultar todas as pastas de solução e Assembly recipientes.  
   
@@ -157,7 +157,7 @@ Quando você quer entender dependências em seu código, exiba-os Criando mapas 
     Neste exemplo, os links de roxos são chamadas, os links pontilhados são referências e os links de azuis claras são acesso de campo. Links de verde pode ser herança ou podem ser *agregar links* que indicam que mais de um tipo de relação (ou *categoria*).  
   
    > [!TIP]
-   >  Se você vir um link verde, ele pode não significar que exista apenas uma relação de herança. Também podem ser chamadas de método, mas estão ocultas pela relação de herança. Para ver tipos específicos de links, use as caixas de seleção na **filtros** painel para ocultar os tipos que não esteja interessado em.  
+   > Se você vir um link verde, ele pode não significar que exista apenas uma relação de herança. Também podem ser chamadas de método, mas estão ocultas pela relação de herança. Para ver tipos específicos de links, use as caixas de seleção na **filtros** painel para ocultar os tipos que não esteja interessado em.  
   
 7. Para obter mais informações sobre um item ou link, mova o ponteiro sobre ele, até que uma dica de ferramenta seja exibida. Isso mostra detalhes de um elemento de código ou as categorias que representa um link.  
   
@@ -196,7 +196,7 @@ Quando você quer entender dependências em seu código, exiba-os Criando mapas 
 2. Arraste os assemblies ou binários que você deseja mapear de fora do Visual Studio para o mapa. Por exemplo, arraste assemblies ou binários do Windows Explorer ou o Explorador de arquivos.  
   
 > [!NOTE]
->  Você pode arrastar assemblies ou binários do Windows Explorer ou o Explorador de arquivos somente se você estiver executando no mesmo nível de permissões de controle de acesso de usuário (UAC) ele e o Visual Studio. Por exemplo, se UAC estiver ativado e você estiver executando o Visual Studio como administrador, o Windows Explorer ou o Explorador de arquivos bloqueará a operação de arrastamento. Para resolver esse problema, certifique-se de que ambos estão em execução com o mesmo nível de permissão ou desative o UAC.  
+> Você pode arrastar assemblies ou binários do Windows Explorer ou o Explorador de arquivos somente se você estiver executando no mesmo nível de permissões de controle de acesso de usuário (UAC) ele e o Visual Studio. Por exemplo, se UAC estiver ativado e você estiver executando o Visual Studio como administrador, o Windows Explorer ou o Explorador de arquivos bloqueará a operação de arrastamento. Para resolver esse problema, certifique-se de que ambos estão em execução com o mesmo nível de permissão ou desative o UAC.  
   
 ## <a name="SeeSpecificSource"></a> Consulte as dependências específicas  
  Por exemplo, suponha que você tem uma revisão de código para executar em alguns arquivos com alterações pendentes. Para ver as dependências nessas alterações, você pode criar um mapa de código dos arquivos.  
@@ -218,7 +218,7 @@ Quando você quer entender dependências em seu código, exiba-os Criando mapas 
      Você também pode arrastar itens do Gerenciador de soluções, exibição de classe ou Pesquisador de objetos para um espaço em branco ou um mapa de código existente. Para criar um mapa em branco, consulte [criar um mapa de código vazio](#GetStarted). Para incluir a hierarquia pai para seus itens, pressione e segure a **CTRL** pressionada enquanto você arrasta itens, ou usar o **pais incluem** botão na barra de ferramentas de mapa de código para especificar a ação padrão.  
   
     > [!NOTE]
-    >  Quando você adicionar itens de um projeto compartilhado entre vários aplicativos, como Windows Phone ou Windows Store, esses itens são exibidos no mapa com o projeto de aplicativo ativo no momento. Se você alterar o contexto para outro projeto de aplicativo e adicionar mais itens do projeto compartilhado, esses itens agora serão exibidos com o projeto de aplicativo recém-ativo. Operações realizadas com um item no mapa se aplicam apenas aos itens que compartilham o mesmo contexto.  
+    > Quando você adicionar itens de um projeto compartilhado entre vários aplicativos, como Windows Phone ou Windows Store, esses itens são exibidos no mapa com o projeto de aplicativo ativo no momento. Se você alterar o contexto para outro projeto de aplicativo e adicionar mais itens do projeto compartilhado, esses itens agora serão exibidos com o projeto de aplicativo recém-ativo. Operações realizadas com um item no mapa se aplicam apenas aos itens que compartilham o mesmo contexto.  
   
 4. Para explorar itens, expanda-os. Mova o ponteiro do mouse sobre um item e, em seguida, clique no ícone de divisa (seta para baixo) quando ele for exibido.  
   
@@ -353,13 +353,13 @@ Quando você quer entender dependências em seu código, exiba-os Criando mapas 
  O Visual Studio salva o mapa como um arquivo. dgml que você pode compartilhar com outros usuários do Visual Studio Enterprise e Professional do Visual Studio.  
   
 > [!NOTE]
->  Antes de compartilhar um mapa com aqueles que usam o Visual Studio Professional, certifique-se expandir todos os grupos, Mostrar nós ocultos e links de grupo cruzado e recuperar todos os nós excluídos que você deseja que outras pessoas vejam no seu mapa. Do contrário, outros usuários não poderão consultar esses itens.  
+> Antes de compartilhar um mapa com aqueles que usam o Visual Studio Professional, certifique-se expandir todos os grupos, Mostrar nós ocultos e links de grupo cruzado e recuperar todos os nós excluídos que você deseja que outras pessoas vejam no seu mapa. Do contrário, outros usuários não poderão consultar esses itens.  
 >   
->  O seguinte erro poderá ocorrer quando você salva um mapa que está em um projeto de modelagem ou foi copiado de um projeto de modelagem para outro local:  
+> O seguinte erro poderá ocorrer quando você salva um mapa que está em um projeto de modelagem ou foi copiado de um projeto de modelagem para outro local:  
 >   
->  "Não é possível salvar *fileName* fora do diretório do projeto. Itens vinculados não são compatíveis."  
+> "Não é possível salvar *fileName* fora do diretório do projeto. Itens vinculados não são compatíveis."  
 >   
->  O Visual Studio mostra o erro, mas cria a versão salva de qualquer maneira. Para evitar o erro, crie o mapa fora do projeto de modelagem. Em seguida, é possível salvá-lo no local desejado. Apenas copiar o arquivo para outro local na solução e, em seguida, tentar salvá-lo não funcionará.  
+> O Visual Studio mostra o erro, mas cria a versão salva de qualquer maneira. Para evitar o erro, crie o mapa fora do projeto de modelagem. Em seguida, é possível salvá-lo no local desejado. Apenas copiar o arquivo para outro local na solução e, em seguida, tentar salvá-lo não funcionará.  
   
 ### <a name="export-the-map-as-an-image-so-you-can-copy-it-into-other-applications-such-as-microsoft-word-or-powerpoint"></a>Exportar o mapa como uma imagem, de forma que você pode copiá-lo para outros aplicativos, como Microsoft Word ou PowerPoint  
   

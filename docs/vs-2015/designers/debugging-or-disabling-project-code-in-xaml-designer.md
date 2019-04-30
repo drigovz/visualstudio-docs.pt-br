@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8773b9f80299c1a46b6a57506d09f9f4ca32b998
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d56a36693d995687a2dddede3d60ada44c8d32bd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060768"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436194"
 ---
 # <a name="debugging-or-disabling-project-code-in-xaml-designer"></a>Depurando ou desabilitando o código do projeto no Designer XAML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,12 +80,12 @@ Em muitos casos, exceções sem tratamento no designer XAML podem ser causadas q
      Você pode alternar o botão novamente para reabilitar o código do projeto.  
   
     > [!NOTE]
-    >  Para projetos que buscam processadores ARM ou X64, o Visual Studio não pode executar o código do projeto no designer, portanto, o botão **Desabilitar código de projeto** está desabilitado no designer.  
+    > Para projetos que buscam processadores ARM ou X64, o Visual Studio não pode executar o código do projeto no designer, portanto, o botão **Desabilitar código de projeto** está desabilitado no designer.  
   
 - Qualquer opção fará com que o designer recarregue e, em seguida, desabilitará todos os códigos para o projeto associado.  
   
     > [!NOTE]
-    >  Desabilitar o código do projeto pode levar a uma perda de dados de tempo de design. Uma alternativa é depurar o código em execução no designer.  
+    > Desabilitar o código do projeto pode levar a uma perda de dados de tempo de design. Uma alternativa é depurar o código em execução no designer.  
   
 ## <a name="see-also"></a>Consulte também  
  [Criando o XAML no Visual Studio e no Blend for Visual Studio](../designers/designing-xaml-in-visual-studio.md)

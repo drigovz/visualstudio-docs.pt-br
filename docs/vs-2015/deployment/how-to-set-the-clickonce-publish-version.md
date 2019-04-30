@@ -17,12 +17,12 @@ caps.latest.revision: 11
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bca76d104550a8607de82c9092f57d43c027e63c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ec5d5d742b5a0749d1d5d52cee0a0545dd8570f7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104467"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436210"
 ---
 # <a name="how-to-set-the-clickonce-publish-version"></a>Como: Definir a versão da publicação do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ O [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] `Publish Version` propr
  O `Publish Version` propriedade pode ser definida na **Publish** página da **Designer de projeto**.  
   
 > [!NOTE]
->  Há uma opção de projeto automaticamente incrementará o `Publish Version` propriedade cada vez que o aplicativo é publicado; essa opção é habilitada por padrão. Para obter mais informações, confira [Como: Incrementar automaticamente a versão de publicação do ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md).  
+> Há uma opção de projeto automaticamente incrementará o `Publish Version` propriedade cada vez que o aplicativo é publicado; essa opção é habilitada por padrão. Para obter mais informações, confira [Como: Incrementar automaticamente a versão de publicação do ClickOnce](../deployment/how-to-automatically-increment-the-clickonce-publish-version.md).  
   
 ### <a name="to-change-the-publish-version"></a>Para alterar a versão de publicação  
   
@@ -43,7 +43,7 @@ O [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] `Publish Version` propr
 3. No **Publish Version** campo, incremente o **principais**, **secundárias**, **Build**, ou **revisão** versão números.  
   
     > [!NOTE]
-    >  Você nunca deve diminuir um número de versão; Isso pode gerar comportamento de atualização imprevisíveis.  
+    > Você nunca deve diminuir um número de versão; Isso pode gerar comportamento de atualização imprevisíveis.  
   
 ## <a name="see-also"></a>Consulte também  
  [Escolhendo uma estratégia de atualização do ClickOnce](../deployment/choosing-a-clickonce-update-strategy.md)   

@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bc91ec6cd91cdd0785580d57782ae57ccee1839
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25e19aff472547f2d151d5d252bc98a1c4fb3c71
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60078161"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63420600"
 ---
 # <a name="handle-specialized-deployment"></a>Lidar com a implantação especializada
 Uma implantação é uma operação opcional para projetos. Um projeto Web, por exemplo, dá suporte a uma implantação para permitir que um projeto de atualizar um servidor Web. Da mesma forma, uma **Smart Device** projeto dá suporte a uma implantação para copiar um aplicativo criado para o dispositivo de destino. Subtipos de projeto podem fornecer o comportamento de implantação especializada, Implementando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> interface. Essa interface define um conjunto completo de operações de implantação:
@@ -287,7 +287,7 @@ Uma implantação é uma operação opcional para projetos. Um projeto Web, por 
     ```
 
 > [!NOTE]
->  Todos os exemplos de código fornecidos neste tópico são partes de um exemplo maior na [exemplos de VSSDK](https://aka.ms/vs2015sdksamples).
+> Todos os exemplos de código fornecidos neste tópico são partes de um exemplo maior na [exemplos de VSSDK](https://aka.ms/vs2015sdksamples).
 
 ## <a name="see-also"></a>Consulte também
 - [Subtipos de projeto](../../extensibility/internals/project-subtypes.md)

@@ -9,12 +9,12 @@ caps.latest.revision: 31
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 98a7159f750a036ed588fd01761e20a2a23ee84e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 802ff20facead891f05ac4727d1c091d095c50a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059962"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442488"
 ---
 # <a name="step-6-name-your-button-controls"></a>Etapa 6: Nomear os controles de botão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60059962"
 Há apenas uma PictureBox em seu formulário. Quando você a adicionou, o IDE a nomeou automaticamente como **pictureBox1**. Há apenas uma CheckBox, que é denominada **checkBox1**. Em breve, você escreverá alguns códigos, e tais códigos se referirão à CheckBox e à PictureBox. Como há apenas um de cada desses controles, você saberá o que significa ver **pictureBox1** ou **checkBox1** em seu código.  
   
 > [!NOTE]
->  No Visual Basic, a primeira letra padrão de qualquer nome de controle é uma maiúscula inicial e, portanto, os nomes são **PictureBox1**, **CheckBox1** e assim por diante.  
+> No Visual Basic, a primeira letra padrão de qualquer nome de controle é uma maiúscula inicial e, portanto, os nomes são **PictureBox1**, **CheckBox1** e assim por diante.  
   
  Há quatro botões no formulário e o IDE os nomeou **button1**, **button2**, **button3** e **button4**. Apenas olhando seus nomes atuais, você não consegue saber qual botão é o botão de **Fechar** e qual é o botão **Mostrar uma imagem**. É por isso que é útil atribuir nomes mais informativos aos controles de botão.  
   
@@ -36,7 +36,7 @@ Há apenas uma PictureBox em seu formulário. Quando você a adicionou, o IDE a 
 A janela Propriedades com nome de closeButton  
   
     > [!NOTE]
-    >  Se você tentar alterar o nome do botão para **closeButton**, com um espaço entre as palavras close e Button, o IDE exibirá uma mensagem de erro: "O valor da propriedade não é válido." Espaços (e mais alguns caracteres) não são permitidos em nomes de controle.  
+    > Se você tentar alterar o nome do botão para **closeButton**, com um espaço entre as palavras close e Button, o IDE exibirá uma mensagem de erro: "O valor da propriedade não é válido." Espaços (e mais alguns caracteres) não são permitidos em nomes de controle.  
   
 2. Renomeie os outros três botões para **backgroundButton**, **clearButton** e **showButton**. Você pode verificar os nomes escolhendo a lista suspensa seletora de controle na janela **Propriedades**. Os nomes dos novos botões aparecem.  
   
@@ -53,14 +53,14 @@ Guia Form1.cs com código do Visual c#
      Você está examinando um código chamado `showButton_Click()`. O IDE adicionou isto ao código do formulário quando você abriu o arquivo de código para o botão **showButton**. No tempo de design, quando você abre o arquivo de código para um controle em um formulário, o código é gerado para o controle se ainda não existir. Esse código, conhecido como *método*, é executado quando você executa seu programa e escolhe o controle – nesse caso, o botão **Mostrar uma imagem**.  
   
     > [!NOTE]
-    >  Neste tutorial, o código do Visual Basic que é gerado automaticamente foi simplificado por meio da remoção de tudo entre os parênteses, (). Sempre que isso ocorre, você pode remover o mesmo código. Seu programa irá trabalhar de qualquer maneira. Para o restante dos tutoriais, qualquer código automaticamente gerado será simplificado sempre que possível.  
+    > Neste tutorial, o código do Visual Basic que é gerado automaticamente foi simplificado por meio da remoção de tudo entre os parênteses, (). Sempre que isso ocorre, você pode remover o mesmo código. Seu programa irá trabalhar de qualquer maneira. Para o restante dos tutoriais, qualquer código automaticamente gerado será simplificado sempre que possível.  
   
 5. Escolha o guia do Designer de Formulários do Windows novamente (**Form1.cs [Design]** no Visual c#, **Form1.vb [Design]** no Visual Basic) e abra o arquivo de código do botão **Limpar a imagem** para criar um método para ele no código do formulário. Repita isso para os dois botões restantes. A cada vez, o IDE adiciona um novo método ao arquivo de código do formulário.  
   
 6. Para adicionar mais um método, abra o arquivo de código para o controle CheckBox no Windows Forms Designer para fazer o IDE adicionar um método `checkBox1_CheckedChanged()`. Esse método é chamado sempre que o usuário seleciona ou desmarca a caixa de seleção.  
   
     > [!NOTE]
-    >  Ao trabalhar em um programa, você geralmente move entre o editor de códigos e o designer do Windows Forms. O IDE torna fácil a navegação no projeto. Use o **Gerenciador de Soluções** para abrir o Designer de Formulários do Windows clicando duas vezes em **Form1.cs** no Visual C# ou **Form1.vb** no Visual Basic ou na barra de menus, escolha **Exibir**, **Designer**.  
+    > Ao trabalhar em um programa, você geralmente move entre o editor de códigos e o designer do Windows Forms. O IDE torna fácil a navegação no projeto. Use o **Gerenciador de Soluções** para abrir o Designer de Formulários do Windows clicando duas vezes em **Form1.cs** no Visual C# ou **Form1.vb** no Visual Basic ou na barra de menus, escolha **Exibir**, **Designer**.  
   
      A seguir temos o novo código que você vê no editor de códigos.  
   

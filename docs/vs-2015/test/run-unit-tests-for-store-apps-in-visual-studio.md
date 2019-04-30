@@ -9,12 +9,12 @@ caps.latest.revision: 14
 author: alexhomer1
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 309dbfcac8e5c4c38e65f8901c699dc2fa51c7a1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: bfcdb3906f405b9f7ba4650be13f4522ab559ee8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104168"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446203"
 ---
 # <a name="run-unit-tests-for-store-apps-in-visual-studio"></a>Executar testes de unidade de aplicativos da Store no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60104168"
 Este tópico descreve como executar testes de unidade usando o Gerenciador de Testes no Microsoft Visual Studio
 
 > [!NOTE]
->  Os tópicos nesta seção descrevem a funcionalidade do Visual Studio Express para Windows 8. O Visual Studio Community, Enterprise e Professional fornecem funcionalidades adicionais para teste de unidade.
+> Os tópicos nesta seção descrevem a funcionalidade do Visual Studio Express para Windows 8. O Visual Studio Community, Enterprise e Professional fornecem funcionalidades adicionais para teste de unidade.
 >
 > - Use qualquer estrutura de teste de unidade de software livre ou de terceiros que tenham criado um adaptador complementar para o Gerenciador de Testes da Microsoft. Você também pode analisar e exibir informações de cobertura de código para seus testes.
 >   - Execute os testes depois de cada compilação. Você também pode usar Microsoft Fakes, uma estrutura de isolamento para código gerenciado que ajuda a focar seus testes no seu próprio código, substituindo o código de teste pela funcionalidade do sistema e de terceiros.
@@ -118,7 +118,7 @@ Este tópico descreve como executar testes de unidade usando o Gerenciador de Te
 1. No editor do Visual Studio, defina um ponto de interrupção em um ou mais métodos de teste que deseje depurar.
 
    > [!NOTE]
-   >  Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.
+   > Como os métodos de teste podem ser executados em qualquer ordem, defina pontos de interrupção em todos os métodos de teste que deseje depurar.
 
 2. No Gerenciador de Testes, selecione os métodos de teste e escolha **Depurar Testes Selecionados** no menu de atalho.
 

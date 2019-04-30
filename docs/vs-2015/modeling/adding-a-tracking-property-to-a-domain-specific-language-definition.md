@@ -13,12 +13,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6b2b3f87084d4bb1a64f2c43f860c7b8bcaae64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4d53cdee5d92a92bb7405d1ecfb669e6de25a5a0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070479"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432384"
 ---
 # <a name="adding-a-tracking-property-to-a-domain-specific-language-definition"></a>Adicionando uma propriedade de acompanhamento a uma definição de linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -248,7 +248,7 @@ Este passo a passo mostra como adicionar uma propriedade de controle a um modelo
  Implemente a `GetCustomProperties` método para o descritor de tipo para o `ExampleModel` classe de domínio.  
   
 > [!NOTE]
->  O código que as ferramentas DSL gerar para o descritor de tipo personalizado `ExampleModel` chamadas `GetCustomProperties`; no entanto, as ferramentas DSL não geram código que implementa o método.  
+> O código que as ferramentas DSL gerar para o descritor de tipo personalizado `ExampleModel` chamadas `GetCustomProperties`; no entanto, as ferramentas DSL não geram código que implementa o método.  
   
  Definir esse método cria o acompanhamento de descritor de propriedade para a propriedade de controle de Namespace. Além disso, fornecer atributos para a propriedade de controle permite que o **propriedades** janela para exibir a propriedade corretamente.  
   
@@ -344,7 +344,7 @@ Este passo a passo mostra como adicionar uma propriedade de controle a um modelo
  Implemente a `GetCustomElementsValue` método para o `ExampleModel` classe de domínio.  
   
 > [!NOTE]
->  O código que as ferramentas DSL gerar para `ExampleModel` chamadas `GetCustomElementsValue`; no entanto, as ferramentas DSL não geram código que implementa o método.  
+> O código que as ferramentas DSL gerar para `ExampleModel` chamadas `GetCustomElementsValue`; no entanto, as ferramentas DSL não geram código que implementa o método.  
   
  Definindo o `GetCustomElementsValue` método fornece a lógica para a propriedade CustomElements calculado do `ExampleModel`. Esse método conta o número de `ExampleElement` classes de domínio que têm uma propriedade que tem um valor de usuário atualizado e retorna uma cadeia de caracteres que representa essa contagem como uma proporção do total elementos no modelo de controle de Namespace.  
   
@@ -425,7 +425,7 @@ Este passo a passo mostra como adicionar uma propriedade de controle a um modelo
  Além disso, adicione métodos para obter e definir a propriedade de armazenamento personalizado de Namespace do e armazenamento para o `ExampleElement` classe de domínio.  
   
 > [!NOTE]
->  O código que as ferramentas DSL gerar para `ExampleModel` chamadas get e defina métodos; no entanto, as ferramentas DSL não geram código que implementa os métodos.  
+> O código que as ferramentas DSL gerar para `ExampleModel` chamadas get e defina métodos; no entanto, as ferramentas DSL não geram código que implementa os métodos.  
   
 #### <a name="to-add-the-method-for-the-custom-type-descriptor"></a>Para adicionar o método para o descritor de tipo personalizado  
   
@@ -591,7 +591,7 @@ Este passo a passo mostra como adicionar uma propriedade de controle a um modelo
  Adicione código para dar suporte o comportamento de pós-carga personalizado para serialização de XML.  
   
 > [!NOTE]
->  O código que as ferramentas DSL gerar chamadas a `OnPostLoadModel` e `OnPostLoadModelAndDiagram` métodos; no entanto, as ferramentas DSL não geram código que implementa esses métodos.  
+> O código que as ferramentas DSL gerar chamadas a `OnPostLoadModel` e `OnPostLoadModelAndDiagram` métodos; no entanto, as ferramentas DSL não geram código que implementa esses métodos.  
   
 #### <a name="to-add-code-to-support-the-custom-post-load-behavior"></a>Para adicionar código para dar suporte o comportamento de pós-carregamento de personalizado  
   

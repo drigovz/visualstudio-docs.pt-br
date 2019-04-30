@@ -9,18 +9,18 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3c480ead6749a7fe747eb7f2f1cc309c4e3c0a3d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0b8ed6bbb41b2fa3f54d825a13c16b064d010012
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071038"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444192"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>Como: Depurar XAML com o Designer de Fluxo de Trabalho
 Fluxos de trabalho são definidos em termos de XAML. A representação de interface de usuário de fluxo de trabalho é construída sobre a árvore XAML que define o fluxo de trabalho. A experiência de depuração é semelhante a depuração fluxos de trabalho em [!INCLUDE[wfd1](../includes/wfd1-md.md)]. Por exemplo, ao depurar XAML, os locais, a observação, e o trabalho das janelas de segmentos da mesma maneira que faz sobre depuração de [!INCLUDE[wfd2](../includes/wfd2-md.md)] . Além disso, a exibição da pilha de chamadas durante a depuração XAML é uma exibição hierárquica linha com base de fluxo de execução do fluxo de trabalho.  
   
 > [!NOTE]
->  Se o XAML para um fluxo de trabalho está localizado no mesmo assembly que as atividades, a parte do assembly de nomes de classe não é incluído. Sem esta parte dos nomes de classe (atividade), o XAML não pode ser carregado no tempo de execução. Não é recomendável definir atividades no mesmo namespace que o projeto pai; caso contrário, o XAML deverá mão- ser editado após ser editado no designer.  
+> Se o XAML para um fluxo de trabalho está localizado no mesmo assembly que as atividades, a parte do assembly de nomes de classe não é incluído. Sem esta parte dos nomes de classe (atividade), o XAML não pode ser carregado no tempo de execução. Não é recomendável definir atividades no mesmo namespace que o projeto pai; caso contrário, o XAML deverá mão- ser editado após ser editado no designer.  
   
 ### <a name="to-debug-workflow-xaml"></a>Para depurar o fluxo de trabalho XAML  
   

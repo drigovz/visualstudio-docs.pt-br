@@ -23,12 +23,12 @@ ms.assetid: d2611385-0134-4387-8c5a-979fe625a462
 caps.latest.revision: 37
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: c0344b9961e7ade31864d70c7d7422f328983abd
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0f981b76d471658fe82e874901ad784a17841891
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60100970"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446424"
 ---
 # <a name="how-to-use-a-visualizer"></a>Como: Usar um visualizador
 Você pode usar um visualizador para exibir o conteúdo de uma variável ou objeto de uma maneira que seja mais significativa para o tipo de dados. Você pode usar visualizadores de **DataTips**, um **inspeção** janela, o **Autos** janela, ou o **Locals** janela.  
@@ -36,7 +36,7 @@ Você pode usar um visualizador para exibir o conteúdo de uma variável ou obje
  Os visualizadores não têm suporte na Compact Framework.  
   
 > [!NOTE]
->  Na **Store** aplicativos, somente o texto padrão, os visualizadores HTML, XML e JSON são suportados. Não há suporte para visualizadores personalizados (criados pelo usuário).  
+> Na **Store** aplicativos, somente o texto padrão, os visualizadores HTML, XML e JSON são suportados. Não há suporte para visualizadores personalizados (criados pelo usuário).  
   
 ### <a name="to-open-a-visualizer"></a>Para abrir um visualizador  
   

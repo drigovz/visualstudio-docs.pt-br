@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: f62181909afef7f404270a085f9bbb1a5341c115
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ae44f7d4631316fc1250a79b9a8424c3731f1329
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104454"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431233"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>Como: Adicionar e remover funcionalidades e itens de um pacote usando o Packaging Explorer
   Para configurar um pacote para implantar recursos e itens do SharePoint, você pode usar o Packaging Explorer. Você pode ajustar os itens de projeto do SharePoint e recursos em seu arquivo. wsp.
@@ -51,7 +51,7 @@ ms.locfileid: "60104454"
     - Abra o menu de atalho para um recurso, escolha **Recortar**, abra o menu de atalho para o projeto ao qual você deseja mover o recurso e, em seguida, escolha **colar**.
 
     > [!NOTE]
-    >  Use este procedimento se você tiver mais de um projeto do SharePoint em sua solução.
+    > Use este procedimento se você tiver mais de um projeto do SharePoint em sua solução.
 
 ## <a name="validate-a-feature-or-package"></a>Validar um pacote ou recurso
  Você pode identificar problemas potenciais nos recursos do SharePoint e os pacotes por meio da validação de arquivos. Avisos e erros são exibidos na janela lista de erros e janela de saída.

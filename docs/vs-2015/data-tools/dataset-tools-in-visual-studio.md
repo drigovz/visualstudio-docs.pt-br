@@ -53,18 +53,18 @@ caps.latest.revision: 53
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: d45fcbd8bd84bb9b6510d4143d3250e2e67ad1b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0dc80bd821a85c475adba7fbbc264ab6b5a76a9b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085371"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431133"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Ferramentas de conjunto de dados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 [OBSERVAÇÃO]
->  Conjuntos de dados e classes relacionadas são herdadas tecnologias do .NET do início dos anos 2000 que habilitam aplicativos para trabalhar com dados na memória enquanto os aplicativos estão desconectados do banco de dados. Eles são especialmente úteis para aplicativos que permitem aos usuários modificar os dados e manter as alterações no banco de dados. Embora os conjuntos de dados provaram para ser uma tecnologia muito bem-sucedida, é recomendável que novos aplicativos .NET usam Entity Framework. Entity Framework fornece uma maneira mais natural para trabalhar com dados tabulares como modelos de objeto, e ele tem uma interface de programação mais simples.
+> Conjuntos de dados e classes relacionadas são herdadas tecnologias do .NET do início dos anos 2000 que habilitam aplicativos para trabalhar com dados na memória enquanto os aplicativos estão desconectados do banco de dados. Eles são especialmente úteis para aplicativos que permitem aos usuários modificar os dados e manter as alterações no banco de dados. Embora os conjuntos de dados provaram para ser uma tecnologia muito bem-sucedida, é recomendável que novos aplicativos .NET usam Entity Framework. Entity Framework fornece uma maneira mais natural para trabalhar com dados tabulares como modelos de objeto, e ele tem uma interface de programação mais simples.
 
  Um objeto de conjunto de dados é um objeto na memória que é basicamente um minibanco de dados. Ele contém objetos DataRow, DataTable e DataColumn em que você pode armazenar e modificar dados de um ou mais bancos de dados sem a necessidade de manter uma conexão aberta. O conjunto de dados mantém informações sobre as alterações nos seus dados, portanto, as atualizações podem ser controladas e enviadas de volta para o banco de dados quando seu aplicativo se torna reconectado.
 

@@ -20,12 +20,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 78026f091d9ed61d38d5cf9bd98ec16d85e193c6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c9e41b99e7f2dd9349bc04bd4988dbf103095c94
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60047717"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441631"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Personalizar mapa de códigos editando os arquivos DGML
 
@@ -117,7 +117,7 @@ Edite arquivo. dgml do mapa de código em um editor de texto ou XML. Se o mapa f
 - Grupos de elementos de código e links com base em determinadas condições
 
 > [!TIP]
->  Se você tiver estilos repetidos em vários elementos de código ou links, você pode considerar a aplicação de uma categoria aos links ou elementos de código e, em seguida, aplicando um estilo a essa categoria. Para obter mais informações, consulte [atribuir categorias a elementos de código e Links](#AssignCategories) e [atribuir propriedades a elementos de código e Links](#AssignProperties).
+> Se você tiver estilos repetidos em vários elementos de código ou links, você pode considerar a aplicação de uma categoria aos links ou elementos de código e, em seguida, aplicando um estilo a essa categoria. Para obter mais informações, consulte [atribuir categorias a elementos de código e Links](#AssignCategories) e [atribuir propriedades a elementos de código e Links](#AssignProperties).
 
 ##### <a name="to-apply-a-custom-style-to-a-single-code-element"></a>Para aplicar um estilo personalizado a um elemento de código único
 
@@ -555,7 +555,7 @@ Edite arquivo. dgml do mapa de código em um editor de texto ou XML. Se o mapa f
  Você pode vincular documentos ou URLs para elementos de código ou links editando o arquivo. dgml do mapa e adicionando um `Reference` de atributo para o `<Node/>` elemento para um elemento de código ou o `<Link/>` elemento para um link. Você pode abrir e exibir o conteúdo do elemento de código ou link. O atributo `Reference` especifica o caminho desse conteúdo. Ele pode ser um caminho relativo ao local do arquivo .dgml ou um caminho absoluto.
 
 > [!CAUTION]
->  Se você usar caminhos relativos e o arquivo .dgml for movido para um local diferente, esses caminhos não serão mais resolvidos. Quando você tentar abrir e exibir o conteúdo vinculado, um erro indicando que o conteúdo não pode ser exibido será exibido.
+> Se você usar caminhos relativos e o arquivo .dgml for movido para um local diferente, esses caminhos não serão mais resolvidos. Quando você tentar abrir e exibir o conteúdo vinculado, um erro indicando que o conteúdo não pode ser exibido será exibido.
 
  Por exemplo, você talvez queira vincular os elementos de código a seguir:
 
@@ -580,7 +580,7 @@ Edite arquivo. dgml do mapa de código em um editor de texto ou XML. Se o mapa f
    - No `<Node/>` ou `<Link/>` elemento, adicionar um `Reference` atributo para especificar o local do elemento do código.
 
      > [!NOTE]
-     >  Só é possível ter um atributo `Reference` por elemento.
+     > Só é possível ter um atributo `Reference` por elemento.
 
      Por exemplo:
 

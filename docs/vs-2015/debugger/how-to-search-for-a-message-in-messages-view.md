@@ -13,12 +13,12 @@ caps.latest.revision: 8
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 34f50b457dcc8b6db8e48e7072e8956fa78f6a7a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6c89a763389abe364fe70166e63b41f932581837
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923222"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430905"
 ---
 # <a name="how-to-search-for-a-message-in-messages-view"></a>Como: Pesquisar uma mensagem na exibição de mensagens
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Você pode procurar uma mensagem específica na exibição de mensagens, usando 
 4. Limpe todos os campos para o qual você deseja especificar valores.  
   
    > [!TIP]
-   >  Para reduzir a desordem na tela, selecione a **Spy ocultar** opção. Esta opção oculta a janela principal do Spy + +, deixando apenas o **localizar janela** caixa de diálogo visível na parte superior de seus outros aplicativos. A janela principal do Spy + + é restaurada quando você clica **Okey** ou **Cancelar**, ou quando você desmarca a **ocultar Spy + +** opção.  
+   > Para reduzir a desordem na tela, selecione a **Spy ocultar** opção. Esta opção oculta a janela principal do Spy + +, deixando apenas o **localizar janela** caixa de diálogo visível na parte superior de seus outros aplicativos. A janela principal do Spy + + é restaurada quando você clica **Okey** ou **Cancelar**, ou quando você desmarca a **ocultar Spy + +** opção.  
   
 5. Escolher **para cima** ou **para baixo** para a direção inicial da pesquisa.  
   

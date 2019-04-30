@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ec9dcc6f5458e33e5ea215d65aacd48c622f111
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0d8b99a547ebe80494d80aa26903c58060d44947
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051994"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440364"
 ---
 # <a name="architecture-of-document-level-customizations"></a>Arquitetura de personalizações no nível do documento
   [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] inclui projetos para criar personalizações no nível de documento para o Microsoft Office Word e Microsoft Office Excel. Este tópico descreve os seguintes aspectos de personalizações no nível do documento:
@@ -49,7 +49,7 @@ ms.locfileid: "60051994"
  Se um usuário abre várias personalizações em nível de documento ao mesmo tempo, cada assembly é carregado em um domínio de aplicativo diferente. Isso significa que uma solução que se comporte incorretamente não pode causar outras soluções de falha. Personalizações em nível de documento são projetadas para trabalhar com um único documento em um único domínio de aplicativo. Eles não são projetados para a comunicação entre documentos. Para obter mais informações sobre domínios de aplicativo, consulte [domínios de aplicativo](/dotnet/framework/app-domains/application-domains).
 
 > [!NOTE]
->  Personalizações no nível do documento que você criar usando as ferramentas de desenvolvedor do Office no Visual Studio são projetadas para ser usado somente quando o aplicativo é iniciado por um usuário final. Se o aplicativo for iniciado por meio de programação, por exemplo, usando a automação, a personalização pode não funcionar conforme o esperado.
+> Personalizações no nível do documento que você criar usando as ferramentas de desenvolvedor do Office no Visual Studio são projetadas para ser usado somente quando o aplicativo é iniciado por um usuário final. Se o aplicativo for iniciado por meio de programação, por exemplo, usando a automação, a personalização pode não funcionar conforme o esperado.
 
 ### <a name="design-time-and-run-time-experiences"></a>Experiências de tempo de design e tempo de execução
  Para entender a arquitetura de personalizações no nível do documento, é importante para entender as experiências de criação de uma solução e da execução de uma solução.
@@ -118,7 +118,7 @@ ms.locfileid: "60051994"
  ![Arquitetura de personalização do office 2007](../vsto/media/office07-custom.png "arquitetura de personalização do Office 2007")
 
 > [!NOTE]
->  Em soluções do Office que se destinam a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], soluções chamam o modelo de objeto do aplicativo host, usando as informações de tipo de assembly de interoperabilidade primária (PIA) que estão incorporadas no assembly de solução, em vez de chamar o PIA diretamente. Para obter mais informações, consulte [Design e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md).
+> Em soluções do Office que se destinam a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)], soluções chamam o modelo de objeto do aplicativo host, usando as informações de tipo de assembly de interoperabilidade primária (PIA) que estão incorporadas no assembly de solução, em vez de chamar o PIA diretamente. Para obter mais informações, consulte [Design e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md).
 
 ### <a name="loading-process"></a>Processo de carregamento
  As seguintes etapas ocorrem quando um usuário abre um documento que é parte de uma solução do Microsoft Office.

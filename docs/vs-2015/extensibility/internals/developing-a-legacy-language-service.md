@@ -16,12 +16,12 @@ ms.assetid: 6151ba88-c1c3-41de-a1cc-668f494d48d1
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 0a4477249dfad57bb75a83b40d6c3b1a4343a23f
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 36ff8335bfaf99b5826d217a48910bfd581321e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929207"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440109"
 ---
 # <a name="developing-a-legacy-language-service"></a>Desenvolvendo um serviço de linguagem herdado
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Links essas seção para tópicos que ajudam você a criar um serviço de lingua
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar um serviço de linguagem, consulte [Editor e extensões do serviço de linguagem](../../extensibility/editor-and-language-service-extensions.md).  
   
 > [!NOTE]
->  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
+> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.  
   
 ## <a name="in-this-section"></a>Nesta seção  
  [Modelar um serviço de linguagem herdado](../../extensibility/internals/model-of-a-legacy-language-service.md)  
@@ -49,7 +49,7 @@ Links essas seção para tópicos que ajudam você a criar um serviço de lingua
  [Suporte do serviço de linguagem para depuração](../../extensibility/internals/language-service-support-for-debugging.md)  
  Descreve como um serviço de linguagem pode fornecer recursos para dar suporte a um depurador.  
   
- [Lista de verificação: Criar um serviço de linguagem herdado](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
+ [Lista de verificação: criação de um serviço de linguagem herdado](../../extensibility/internals/checklist-creating-a-legacy-language-service.md)  
  Fornece instruções passo a passo para criar e integrar um serviço de linguagem para o editor de núcleo.  
   
 ## <a name="related-sections"></a>Seções relacionadas  
@@ -62,8 +62,8 @@ Links essas seção para tópicos que ajudam você a criar um serviço de lingua
  [Informações de parâmetro em um serviço de linguagem herdado](../../extensibility/internals/parameter-info-in-a-legacy-language-service1.md)  
  Descreve como fornecer dicas de método para métodos e funções sobrecarregadas.  
   
- [Como: Fornecer suporte a texto oculto em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
+ [Como: fornecer suporte a texto oculto em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)  
  Explica a finalidade de uma região de texto oculto e fornece instruções sobre como implementar uma região de texto oculto.  
   
- [Como: Fornecer suporte expandido de estrutura de tópicos em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
+ [Como: fornecer suporte expandido a estrutura de tópicos em um serviço de linguagem herdado](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)  
  Explica as duas opções que estendem o suporte de estrutura de tópicos para seu idioma além do suporte a *recolher para definições de* comando.

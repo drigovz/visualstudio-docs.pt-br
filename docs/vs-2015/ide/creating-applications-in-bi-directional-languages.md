@@ -13,12 +13,12 @@ caps.latest.revision: 11
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acba0174fde52886d3be7ec6288148171fe40cca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c45f3ac7cfec727eb0a27fc79e5fe09237e8f8c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104974"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437585"
 ---
 # <a name="creating-applications-in-bi-directional-languages"></a>Criando aplicativos em idiomas bidirecionais
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60104974"
 É possível usar o Visual Studio para criar aplicativos que exibem o texto corretamente em idiomas escritos da direita para a esquerda, incluindo árabe e hebraico. Para alguns recursos, é possível apenas definir as propriedades. Em outros casos, é necessário implementar recursos no código.  
   
 > [!NOTE]
->  Para inserir e exibir idiomas bidirecionais, é necessário estar trabalhando com uma versão do Windows que está configurada com o idioma apropriado. Essa pode ser uma versão em inglês do Windows com o pacote de idioma apropriado instalado, ou a versão localizada do Windows.  
+> Para inserir e exibir idiomas bidirecionais, é necessário estar trabalhando com uma versão do Windows que está configurada com o idioma apropriado. Essa pode ser uma versão em inglês do Windows com o pacote de idioma apropriado instalado, ou a versão localizada do Windows.  
   
 ## <a name="types-of-application-that-support-bi-directional-languages"></a>Tipos de aplicativo que dão suporte a idiomas bidirecionais  
   
@@ -66,7 +66,7 @@ ms.locfileid: "60104974"
 - Conteúdo do arquivo. É possível abrir ou salvar arquivos com a codificação Unicode ou com uma página de código selecionada.  
   
     > [!NOTE]
-    >  O editor de código é um caso especial. Para obter detalhes, consulte abaixo.  
+    > O editor de código é um caso especial. Para obter detalhes, consulte abaixo.  
   
 - Elementos de dados. O **Gerenciador de Servidores** exibirá esses elementos corretamente e permitirá sua edição.  
   
@@ -79,10 +79,10 @@ ms.locfileid: "60104974"
 - Código e texto literal. No editor de código (que também é o editor de texto), é possível usar o árabe ou o hebraico para nomear classes, funções, variáveis, propriedades, literais de cadeia de caracteres, atributos e assim por diante. No entanto, o editor não dá suporte ao sentido de leitura da direita para a esquerda; o texto sempre começa na margem esquerda.  
   
     > [!TIP]
-    >  É recomendável colocar literais de cadeia de caracteres em arquivos de recurso, em vez de codificá-los nos programas. Para obter mais informações, confira [Passo a passo: Localizando Windows Forms](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
+    > É recomendável colocar literais de cadeia de caracteres em arquivos de recurso, em vez de codificá-los nos programas. Para obter mais informações, confira [Passo a passo: Localizando Windows Forms](http://msdn.microsoft.com/9a96220d-a19b-4de0-9f48-01e5d82679e5).  
   
     > [!NOTE]
-    >  Você deve ser consistente na forma como se refere aos objetos nomeados nesses idiomas. Por exemplo, se você usar Kashida ao nomear uma variável em árabe, deverá sempre usar Kashida ao se referir a essa variável; caso contrário, ocorrerão erros.  
+    > Você deve ser consistente na forma como se refere aos objetos nomeados nesses idiomas. Por exemplo, se você usar Kashida ao nomear uma variável em árabe, deverá sempre usar Kashida ao se referir a essa variável; caso contrário, ocorrerão erros.  
   
 - Comentários sobre o código. É possível criar comentários em árabe ou hebraico. Você também pode usar esses idiomas na ferramenta de construtor de comentários.  
   

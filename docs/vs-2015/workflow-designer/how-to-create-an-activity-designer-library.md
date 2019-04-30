@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 3950540edb7ab17bafa5ed5c9e7b0f3660ad436a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a27dac0c82b2784eac84b174f5cb67719093aace
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60090596"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444640"
 ---
 # <a name="how-to-create-an-activity-designer-library"></a>Como: Criar uma biblioteca do designer de atividade
 Designers personalizados de atividade permitem que você crie uma interface de usuário para uma atividade padrão ou personalizado. Você controla a complexidade da interface do usuário e tem a capacidade de criar mais de um designer de atividade para uma atividade. Este cenário permite que você crie os designers que são personalizados para mais audiências.  
@@ -36,14 +36,14 @@ Designers personalizados de atividade permitem que você crie uma interface de u
 7. No **Solution** caixa, digite um nome descritivo para sua solução e clique **Okey**.  
   
     > [!NOTE]
-    >  Se você deseja adicionar um aplicativo de console do fluxo de trabalho a uma solução existente, abra essa solução na [!INCLUDE[vs2010](../includes/vs2010-md.md)], clique com o botão direito na solução no **Gerenciador de soluções**e selecione **Add**, em seguida, **Novo projeto...** Para abrir o **novo projeto** caixa de diálogo. Continuar conforme descrito acima neste procedimento.  
+    > Se você deseja adicionar um aplicativo de console do fluxo de trabalho a uma solução existente, abra essa solução na [!INCLUDE[vs2010](../includes/vs2010-md.md)], clique com o botão direito na solução no **Gerenciador de soluções**e selecione **Add**, em seguida, **Novo projeto...** Para abrir o **novo projeto** caixa de diálogo. Continuar conforme descrito acima neste procedimento.  
   
 8. O modelo de projeto cria uma definição de designer de atividade em XAML e o arquivo de código de implementação no código-fonte. [!INCLUDE[wfd1](../includes/wfd1-md.md)] abre e exibe a tela para o designer de atividade.  
   
 9. Arraste [!INCLUDE[avalon1](../includes/avalon1-md.md)] controla a partir de **caixa de ferramentas** para a superfície de design para usá-los em seu designer personalizado de atividade.  Para obter um exemplo de como implementar um designer personalizado de atividade, consulte [como: Criar um Designer personalizado de atividade](http://msdn.microsoft.com/library/2f3aade6-facc-44ef-9657-a407ef8b9b31).  
   
     > [!WARNING]
-    >  Designers personalizados de atividade podem ser usados para atividades personalizadas, bem como para padrão [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]atividades.  
+    > Designers personalizados de atividade podem ser usados para atividades personalizadas, bem como para padrão [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)]atividades.  
   
 ## <a name="see-also"></a>Consulte também  
  [Criando um projeto de fluxo de trabalho](../workflow-designer/creating-a-workflow-project.md)

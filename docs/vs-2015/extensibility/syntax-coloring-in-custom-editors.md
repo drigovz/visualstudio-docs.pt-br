@@ -10,12 +10,12 @@ ms.assetid: 74900b9a-baef-432a-8231-4568fb5e19ad
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e82c8b6268affc4fb473c799d973c66db69c111b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7a0233873ba5d6ea2fca746f8e12f4bf693b79da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444061"
 ---
 # <a name="syntax-coloring-in-custom-editors"></a>Coloração de sintaxe em editores personalizados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Editores de SDK de ambiente do Studio Visual, incluindo o editor de núcleo, usa
 3. Use as informações de colorização retornadas por <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer.ColorizeLine%2A> para redesenhar e exibir seu texto.  
   
 > [!NOTE]
->  Além de usar colorizador de um serviço de linguagem, um VSPackage pode optar por usar o mecanismo de cores de texto para fins gerais do SDK do ambiente do Visual Studio. Para obter mais informações sobre esse mecanismo, consulte [usando fontes e cores](../extensibility/using-fonts-and-colors.md).  
+> Além de usar colorizador de um serviço de linguagem, um VSPackage pode optar por usar o mecanismo de cores de texto para fins gerais do SDK do ambiente do Visual Studio. Para obter mais informações sobre esse mecanismo, consulte [usando fontes e cores](../extensibility/using-fonts-and-colors.md).  
   
 ## <a name="see-also"></a>Consulte também  
  [Coloração de sintaxe em um serviço de linguagem herdado](../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)   

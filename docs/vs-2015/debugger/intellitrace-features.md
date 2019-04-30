@@ -22,12 +22,12 @@ caps.latest.revision: 73
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 9b1fc7da90eb4f263aaf3de19eb37cfa3272a249
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5c5c775dc309c02ca24d27e8b8ac19d2c9d9d588
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105710"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440173"
 ---
 # <a name="intellitrace-features"></a>funcionalidades do IntelliTrace
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Você pode usar o IntelliTrace para registrar eventos e chamadas de método do a
  Para confirmar que o IntelliTrace esteja ativado, abra o **Ferramentas / opções / IntelliTrace** página de opções. **Habilitar o IntelliTrace** deverá ser marcada por padrão.  
   
 > [!NOTE]
->  O escopo de todas as configurações de **IntelliTrace** página de opções é o Visual Studio como um todo, não individuais projetos ou soluções. Uma alteração nessas configurações se aplica a todas as instâncias do Visual Studio, sessões de depuração tudo e todos os projetos ou soluções.  
+> O escopo de todas as configurações de **IntelliTrace** página de opções é o Visual Studio como um todo, não individuais projetos ou soluções. Uma alteração nessas configurações se aplica a todas as instâncias do Visual Studio, sessões de depuração tudo e todos os projetos ou soluções.  
   
 ## <a name="ChooseEvents"></a> Escolha os eventos que o IntelliTrace registra  
  Você pode ativar ou desativar a gravação de eventos específicos do IntelliTrace.  
@@ -54,9 +54,9 @@ Você pode usar o IntelliTrace para registrar eventos e chamadas de método do a
  Isso permite que você consulte o histórico da pilha de chamadas e retroceda e avance por meio de chamadas em seu código. O IntelliTrace registra dados como nomes de método, pontos de entrada e saída de método e determinados valores de parâmetros e valores de retorno.  
   
 > [!TIP]
->  Essa opção não está habilitada por padrão porque ele adiciona uma sobrecarga considerável. Não apenas tem IntelliTrace interceptar todas as chamadas de método que faz com que seu aplicativo, mas ela também precisa lidar com um conjunto muito maior de dados quando se trata de mostrá-lo na tela ou persisti-los no disco.  
+> Essa opção não está habilitada por padrão porque ele adiciona uma sobrecarga considerável. Não apenas tem IntelliTrace interceptar todas as chamadas de método que faz com que seu aplicativo, mas ela também precisa lidar com um conjunto muito maior de dados quando se trata de mostrá-lo na tela ou persisti-los no disco.  
 >   
->  Você pode reduzir a sobrecarga de desempenho, restringindo a lista de eventos que o IntelliTrace registra e mantendo o número de módulos que você está coletando em um mínimo. Para obter mais informações, consulte [controle quanto chamar informações pelo IntelliTrace](../debugger/intellitrace-features.md#ControlCallData).  
+> Você pode reduzir a sobrecarga de desempenho, restringindo a lista de eventos que o IntelliTrace registra e mantendo o número de módulos que você está coletando em um mínimo. Para obter mais informações, consulte [controle quanto chamar informações pelo IntelliTrace](../debugger/intellitrace-features.md#ControlCallData).  
   
 ### <a name="using-the-navigation-gutter"></a>Usando a medianiz de navegação  
  Você pode usar a medianiz de navegação que aparece à esquerda da janela de código. Se você não vir a medianiz de navegação, vá para **Ferramentas / opções / IntelliTrace / avançados**e selecione **exibir a medianiz de navegação em modo de depuração**.  
@@ -88,7 +88,7 @@ Você pode usar o IntelliTrace para registrar eventos e chamadas de método do a
  Você pode configurar o IntelliTrace para salvar automaticamente em um arquivo, vá para **Ferramentas / opções / IntelliTrace / avançados** e selecionando **gravações Store IntelliTrace neste diretório**. Você também pode configurar um tamanho definido para o arquivo gerado, o que faz com que o IntelliTrace para escrever sobre dados mais antigos, quando ele ficar sem espaço. Visual Studio cria dois arquivos para cada sessão do IntelliTrace quando eles são salvos automaticamente e o Visual Studio (vshost.exe) do processo de hospedagem está ativada.  
   
 > [!TIP]
->  Para economizar espaço em disco, desative a salvar arquivos automaticamente quando você não precisa mais deles. Todos os arquivos existentes não serão excluídos. Você sempre pode salvar em arquivo sob demanda no menu de contexto.  
+> Para economizar espaço em disco, desative a salvar arquivos automaticamente quando você não precisa mais deles. Todos os arquivos existentes não serão excluídos. Você sempre pode salvar em arquivo sob demanda no menu de contexto.  
   
  Quando você salva dados do IntelliTrace para o arquivo, você obtém um arquivo. itrace para cada processo que o IntelliTrace coletado. Em seguida, você pode abrir o arquivo. itrace no Visual Studio vai **arquivo / abrir / arquivo** e selecionando o arquivo. itrace na caixa de diálogo Abrir arquivo. Para obter mais informações, consulte [usando dados salvo do IntelliTrace](../debugger/using-saved-intellitrace-data.md).  
   

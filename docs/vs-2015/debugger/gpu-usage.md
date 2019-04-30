@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: eef55dd0e5af443379b2685ccab9bd2de8074e0d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b7dee579f726a1edfc81e1f3e1ec62bf7d8beba4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60066697"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437950"
 ---
 # <a name="gpu-usage"></a>Uso de GPU
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -31,7 +31,7 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
 - Uma GPU e drivers que dão suporte à instrumentação de intervalo necessária.  
   
   > [!NOTE]
-  >  Para obter mais informações sobre o hardware e os drivers com suporte, consulte [Suporte de hardware e driver](#hwsupport) ao final deste documento.  
+  > Para obter mais informações sobre o hardware e os drivers com suporte, consulte [Suporte de hardware e driver](#hwsupport) ao final deste documento.  
   
   Para obter mais informações sobre os requisitos do Diagnóstico de Gráficos, consulte [Introdução](../debugger/getting-started-with-visual-studio-graphics-diagnostics.md).  
   
@@ -47,7 +47,7 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
     ![Escolha as ferramentas de diagnóstico que você deseja usar.](../debugger/media/gfx-diag-diagsession-tools.png "gfx_diag_diagsession_tools")  
   
    > [!NOTE]
-   >  Nem todas as ferramentas de Desempenho e Diagnóstico podem ser usadas ao mesmo tempo.  
+   > Nem todas as ferramentas de Desempenho e Diagnóstico podem ser usadas ao mesmo tempo.  
   
 3. Escolha o botão azul **Iniciar** na parte inferior do hub Desempenho e Diagnóstico para executar o aplicativo nas ferramentas selecionadas.  
   
@@ -110,7 +110,7 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
 |**ID do Thread**|A ID do thread da qual o evento foi obtido.|  
   
 > [!IMPORTANT]
->  O Windows 8.1 é necessário para a atribuição de eventos. Além disso, se a GPU ou o driver não derem suporte aos recursos de instrumentação necessários, todos os eventos serão exibidos como “não atribuídos”. Lembre-se de atualizar o driver da GPU e tente novamente caso ocorra esse problema. Para obter mais informações, consulte [Suporte de hardware e driver](#hwsupport) abaixo.  
+> O Windows 8.1 é necessário para a atribuição de eventos. Além disso, se a GPU ou o driver não derem suporte aos recursos de instrumentação necessários, todos os eventos serão exibidos como “não atribuídos”. Lembre-se de atualizar o driver da GPU e tente novamente caso ocorra esse problema. Para obter mais informações, consulte [Suporte de hardware e driver](#hwsupport) abaixo.  
   
 ## <a name="gpu-usage-settings"></a>Configurações de Uso de GPU  
  É possível configurar a ferramenta Uso de GPU para adiar a coleta de informações de criação de perfil, em vez de iniciar a coleta de informações logo após a inicialização do aplicativo. Como o tamanho das informações de criação de perfil pode ser significativo, isso será útil quando você souber que os problemas de lentidão no desempenho do aplicativo só serão exibidos posteriormente.  
@@ -126,7 +126,7 @@ Use a ferramenta Uso de GPU no Hub de Desempenho e Diagnóstico do Visual Studio
      ![Configurar o início da coleta de Uso de GPU](../debugger/media/gfx-diag-gpu-usage-config.png "gfx_diag_gpu_usage_config")  
   
 > [!IMPORTANT]
->  Não há suporte para o adiamento da criação de perfil em aplicativos Direct3D 12.  
+> Não há suporte para o adiamento da criação de perfil em aplicativos Direct3D 12.  
   
  Ao adiar a coleta de informações de criação de perfil usando essa configuração, outro link ficará disponível na parte inferior da janela de ferramentas Uso de GPU quando o aplicativo for executado na ferramenta Uso de GPU. Para iniciar a coleta de informações de criação de perfil, escolha o link **Iniciar** na mensagem **Iniciar coleta de dados detalhados de Uso de GPU adicionais**.  
   

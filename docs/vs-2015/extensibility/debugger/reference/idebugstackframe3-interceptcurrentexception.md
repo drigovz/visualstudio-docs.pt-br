@@ -12,12 +12,12 @@ ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
 caps.latest.revision: 10
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: a448a1149f90e07a95e2c9ea17102448f0fbd443
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 42472690431d48a9baafbb0abee27c1a07d24fcd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922746"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428696"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ int InterceptCurrentException(
  Quando o depurador quer saber se a exceção deve ser interceptada, ele chama esse método no objeto de quadro de pilha atual. Esse método é responsável por gerenciar todos os detalhes da exceção. Se o [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) interface não está implementada ou a `InterceptStackException` método retorna qualquer erro e, em seguida, o depurador continua o processamento de exceção normalmente.  
   
 > [!NOTE]
->  Exceções podem ser interceptadas apenas em código gerenciado, ou seja, quando o programa que está sendo depurado está em execução em tempo de execução .NET. Obviamente, os implementadores de linguagem de terceiros podem implementar `InterceptStackException` em seus próprios mecanismos de depuração se desejarem.  
+> Exceções podem ser interceptadas apenas em código gerenciado, ou seja, quando o programa que está sendo depurado está em execução em tempo de execução .NET. Obviamente, os implementadores de linguagem de terceiros podem implementar `InterceptStackException` em seus próprios mecanismos de depuração se desejarem.  
   
  Depois que a interceptação for concluída, uma [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) é sinalizado.  
   

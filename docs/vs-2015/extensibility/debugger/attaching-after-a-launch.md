@@ -10,12 +10,12 @@ ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 caps.latest.revision: 15
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 71b26fc2d26e180af25919dde5d3c4ee1bc1f891
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 693cf6d746f51862415f2f30e46d48a998047f14
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113112"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437431"
 ---
 # <a name="attaching-after-a-launch"></a>Anexando após uma inicialização
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Depois que um programa tiver sido iniciado, a sessão de depuração está pront
 - Se faz mais sentido para facilitar a comunicação entre a Alemanha e o programa, o ambiente de tempo de execução conjunta cria o DE. Isso deixa o SDM em um espaço de endereço, Alemanha, o ambiente de tempo de execução e o programa juntos em outro. Isso é típico de a DE que é implementada com um interpretador executar linguagens de script.  
   
     > [!NOTE]
-    >  Como o DE anexa ao programa é dependente de implementação. Comunicação entre a Alemanha e o programa também é dependente da implementação.  
+    > Como o DE anexa ao programa é dependente de implementação. Comunicação entre a Alemanha e o programa também é dependente da implementação.  
   
 ## <a name="implementation"></a>Implementação  
  Programaticamente, quando o Gerenciador de sessão de depuração (SDM) recebe primeiro a [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) o objeto que representa o programa a ser iniciado, ele chama o [anexar](../../extensibility/debugger/reference/idebugprogram2-attach.md) método, passando-lhe um [ IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) objeto, que é posteriormente usado para passar eventos de depuração de volta para o SDM. O `IDebugProgram2::Attach` , em seguida, chama um método de [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) método. Para obter mais informações sobre como o SDM recebe o `IDebugProgram2` interface, consulte [notificar a porta](../../extensibility/debugger/notifying-the-port.md).  

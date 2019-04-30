@@ -11,12 +11,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1c71becfb04115faefe88d5018c238ead38e4c88
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: c619ae6efd1de48319bf9c0398ee8ab4e3cd57ee
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928929"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442956"
 ---
 # <a name="edit-uml-sequence-diagrams-by-using-the-uml-api"></a>Editar diagramas de sequência UML usando a API UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -75,7 +75,7 @@ public class MySequenceDiagramCommand : ICommandExtension
  Há dois tipos de diagramas de sequência: aqueles que são criados manualmente em um projeto de modelagem UML e aqueles que foram gerados por código do programa. Use o `UmlMode` ter propriedade para descobrir qual sequência de diagrama.  
   
 > [!NOTE]
->  Essa propriedade retorna false somente para diagramas de sequência gerado por meio do código usando o Visual Studio 2013 e versões anteriores. Isso inclui a sequência de código gerado diagramas migrados do 2013 e anteriores. Esta versão do Visual Studio não dá suporte a gerar novos diagramas de sequência.  
+> Essa propriedade retorna false somente para diagramas de sequência gerado por meio do código usando o Visual Studio 2013 e versões anteriores. Isso inclui a sequência de código gerado diagramas migrados do 2013 e anteriores. Esta versão do Visual Studio não dá suporte a gerar novos diagramas de sequência.  
   
  Por exemplo, se você quiser fazer um comando de menu que só é visível em diagramas de sequência UML, então o `QueryStatus()` método poderia incluir a instrução a seguir:  
   

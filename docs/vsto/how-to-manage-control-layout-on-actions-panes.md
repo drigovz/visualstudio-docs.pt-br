@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 94e3ccc30507ccd7995c4d4fad548fe5ff425365
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 264b7cd4d60ebc963d794e0ca06fc16fd5edc7d7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094600"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445355"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>Como: Gerenciar o layout do controle em painéis de ações
   Um painel de ações é encaixado à direita de um documento ou planilha, por padrão. No entanto, pode ser encaixado à esquerda, superior ou inferior. Se você estiver usando vários controles de usuário, você pode escrever código para os controles de usuário no painel de ações de pilha corretamente. Para obter mais informações, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md).
@@ -29,10 +29,10 @@ ms.locfileid: "60094600"
  A ordem de pilha dos controles depende se o painel de ações é encaixado vertical ou horizontalmente.
 
 > [!NOTE]
->  Se o usuário redimensiona o painel de ações em tempo de execução, você pode definir os controles seja redimensionada com o painel de ações. Você pode usar o <xref:System.Windows.Forms.Control.Anchor%2A> propriedade de um controle Windows Forms a controles de âncora para o painel de ações. Para obter mais informações, confira [Como: Ancorar controles nos Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
+> Se o usuário redimensiona o painel de ações em tempo de execução, você pode definir os controles seja redimensionada com o painel de ações. Você pode usar o <xref:System.Windows.Forms.Control.Anchor%2A> propriedade de um controle Windows Forms a controles de âncora para o painel de ações. Para obter mais informações, confira [Como: Ancorar controles nos Windows Forms](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms).
 
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="to-set-the-stack-order-of-the-actions-pane-controls"></a>Para definir a ordem de pilha dos controles do painel de ações
 

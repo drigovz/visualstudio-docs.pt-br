@@ -18,12 +18,12 @@ ms.assetid: 70d8c9e5-4b0b-4a69-b3b3-90f36debe880
 caps.latest.revision: 27
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 6ec67fd4746fbe935d93b58de0bf445c8a6d63e2
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5b85e8bf500364587af4c3891d7d39f069af9953
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929385"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441212"
 ---
 # <a name="supporting-symbol-browsing-tools"></a>Suporte a ferramentas de navegação de símbolo
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -48,9 +48,9 @@ ms.locfileid: "58929385"
  O [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] chamadas de Gerenciador de objeto o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> método para determinar se um determinado item de lista é expansível e tem itens filhos. Se a interface do usuário envia uma solicitação para expandir um elemento, o Gerenciador de objetos solicita a lista de filhos de símbolos chamando o <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> método. O processo continua com diferentes partes da árvore que está sendo criada sob demanda.  
   
 > [!NOTE]
->  Para implementar um provedor de símbolos de código nativo, use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfaces.  
+> Para implementar um provedor de símbolos de código nativo, use o <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> e <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> interfaces.  
   
 ## <a name="see-also"></a>Consulte também  
  [Como: Registrar uma biblioteca com o Gerenciador de objetos](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)   
  [Como: Expor listas de símbolos fornecidos pela biblioteca para o Gerenciador de objetos](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)   
- [Como: Identificar símbolos em uma biblioteca](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)
+ [Como: identificar símbolos em uma biblioteca](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

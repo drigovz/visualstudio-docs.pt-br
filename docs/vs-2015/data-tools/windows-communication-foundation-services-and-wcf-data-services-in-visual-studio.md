@@ -33,12 +33,12 @@ caps.latest.revision: 29
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 2d14077ff7547a1b8009ce6621c111174c582a5c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 55ef0a3528afca626c0a1cbf5c10735c9e83fcb4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60095029"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443870"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Serviços do Windows Communication Foundation e WCF Data Services no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -137,14 +137,14 @@ Visual Studio fornece ferramentas para trabalhar com o Windows Communication Fou
     ```
 
     > [!NOTE]
-    >  Substitua *ServiceReference* com o namespace para a referência de serviço e a substituição *Service1Client* com o nome do serviço.
+    > Substitua *ServiceReference* com o namespace para a referência de serviço e a substituição *Service1Client* com o nome do serviço.
 
 3. Uma lista do IntelliSense será exibida com as sobrecargas do construtor. Selecione o `endpointConfigurationName As String` de sobrecarga.
 
 4. Após a sobrecarga, digite `=` *ConfigurationName*, onde *ConfigurationName* é o nome do ponto de extremidade que você deseja usar.
 
     > [!NOTE]
-    >  Se você não souber os nomes dos pontos de extremidade disponíveis, você pode encontrá-los no arquivo App. config.
+    > Se você não souber os nomes dos pontos de extremidade disponíveis, você pode encontrá-los no arquivo App. config.
 
 #### <a name="to-find-the-available-endpoints-for-a-wcf-service"></a>Para localizar pontos de extremidade disponíveis para um serviço WCF
 
@@ -164,7 +164,7 @@ Visual Studio fornece ferramentas para trabalhar com o Windows Communication Fou
  Por padrão, quando uma referência de serviço é adicionada a um projeto ele é configurado para chamar métodos de forma síncrona. Você pode alterar o comportamento para chamar os métodos de forma assíncrona, alterando uma configuração na **Configure Service Reference** caixa de diálogo.
 
 > [!NOTE]
->  Essa opção é definida em uma base por serviço. Se um método para um serviço é chamado de forma assíncrona, todos os métodos devem ser chamados de forma assíncrona.
+> Essa opção é definida em uma base por serviço. Se um método para um serviço é chamado de forma assíncrona, todos os métodos devem ser chamados de forma assíncrona.
 
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]
 

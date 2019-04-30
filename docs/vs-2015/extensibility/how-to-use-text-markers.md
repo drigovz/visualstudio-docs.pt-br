@@ -10,12 +10,12 @@ ms.assetid: 76eed51c-eecb-4579-823e-13df2f0526b9
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bca32c007e29e910f167df66c92d04bec637f9b3
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25c3c4f3a3d9a253b9ec671892d0d44ccf9ca3ab
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105443"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430958"
 ---
 # <a name="how-to-use-text-markers"></a>Como: Usar marcadores de texto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,12 +29,12 @@ Marcadores de texto podem ser aplicadas para editar um <xref:Microsoft.VisualStu
 1. Obtenha uma instância do <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> classe.  
   
     > [!NOTE]
-    >  O editor de núcleo aplica automaticamente os marcadores de texto padrão para qualquer documento que ela está editando, e não deve ser necessário aplicar marcadores de texto padrão explicitamente.  
+    > O editor de núcleo aplica automaticamente os marcadores de texto padrão para qualquer documento que ela está editando, e não deve ser necessário aplicar marcadores de texto padrão explicitamente.  
   
 2. Obter uma ID de tipo de marcador do marcador que você está interessado, chamando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> método com o `GUID` do marcador de texto que você deseja trabalhar com.  
   
     > [!NOTE]
-    >  Não use o `GUID` do VSPackage ou do serviço que fornece o marcador de texto.  
+    > Não use o `GUID` do VSPackage ou do serviço que fornece o marcador de texto.  
   
 3. Use a ID de tipo de marcador é obtida chamando o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager.GetRegisteredMarkerTypeID%2A> método como um parâmetro ao chamar o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines.CreateLineMarker%2A> método ou o <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextStream.CreateStreamMarker%2A> método para aplicar um marcador de texto para uma determinada região do texto.  
   
@@ -58,4 +58,4 @@ Marcadores de texto podem ser aplicadas para editar um <xref:Microsoft.VisualStu
  [Usar marcadores de texto com a API herdada](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Como: Adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)   
  [Como: Criar marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)   
- [Como: Implementar o marcador de erros](../extensibility/how-to-implement-error-markers.md)
+ [Como: implementar o marcador de erros](../extensibility/how-to-implement-error-markers.md)

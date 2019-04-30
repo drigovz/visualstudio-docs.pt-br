@@ -9,12 +9,12 @@ caps.latest.revision: 28
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4530b12ff3c5fa05d63d845cf4d364d2c238ff77
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9f0a185ce4f78a81d1ed806e38b102296093f48
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60041283"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441013"
 ---
 # <a name="integrating-models-by-using-visual-studio-modelbus"></a>Integrando modelos por meio do Visual Studio Modelbus
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -24,7 +24,7 @@ ms.locfileid: "60041283"
  O ModelBus permite criar uma referência exclusiva para um modelo ou um elemento específico dentro de um modelo. Essa referência pode ser armazenada fora do modelo, por exemplo, em um elemento em outro modelo. Quando, em uma ocasião posterior, uma ferramenta desejar obter acesso ao elemento, a infraestrutura do Model Bus carregará o modelo adequado e retornará o elemento. Se desejar, é possível exibir o modelo ao usuário. Se o arquivo não puder ser acessado em seu local anterior, o ModelBus solicitará ao usuário para encontrá-lo. Se o usuário encontrar o arquivo, o ModelBus fixará todas as referências àquele arquivo.
 
 > [!NOTE]
->  Na implementação atual de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do ModelBus, os modelos vinculados devem ser itens na mesma solução de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+> Na implementação atual de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do ModelBus, os modelos vinculados devem ser itens na mesma solução de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
  Para obter informações adicionais e código de exemplo, consulte:
 
@@ -130,7 +130,7 @@ ms.locfileid: "60041283"
 5. Clique em **Okey**e, em seguida, clique em **transformar todos os modelos** na barra de ferramentas de Gerenciador de soluções.
 
     > [!WARNING]
-    >  Se nenhum modelo ou entidade válida estiver selecionada, o botão OK não terá efeito, mesmo se parecer estar habilitado.
+    > Se nenhum modelo ou entidade válida estiver selecionada, o botão OK não terá efeito, mesmo se parecer estar habilitado.
 
 6. Se uma lista de tipos de destino como Company.FamilyTree.Person tiver sido especificada, será necessário incluir uma referência de assembly para o projeto DSL, referenciando o DLL da DSL de destino, por exemplo, Company.FamilyTree.Dsl.dll
 
@@ -143,7 +143,7 @@ ms.locfileid: "60041283"
 3. Em Depuração de projeto na instância experimental do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)], inclua arquivos que são instâncias de cada DSL.
 
     > [!NOTE]
-    >  O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus pode resolver apenas referências para modelos que são itens na mesma solução de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Por exemplo, não é possível criar uma referência para um arquivo de modelo em outra parte do sistema de arquivos.
+    > O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus pode resolver apenas referências para modelos que são itens na mesma solução de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)]. Por exemplo, não é possível criar uma referência para um arquivo de modelo em outra parte do sistema de arquivos.
 
 4. Crie alguns elementos e vínculos na instância da DSL exposta e salve.
 
@@ -163,7 +163,7 @@ ms.locfileid: "60041283"
  Para criar uma referência de elemento, é necessário um adaptador para o arquivo de modelo e o elemento ao qual deseja referir.
 
 > [!NOTE]
->  Com o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus, é possível criar referências apenas para itens na mesma solução de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
+> Com o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] ModelBus, é possível criar referências apenas para itens na mesma solução de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].
 
 ### <a name="import-the-exposed-dsl-assemblies"></a>Importe os assemblies da DSL exposta
  No projeto consumidor, inclua referências de projeto para a DSL e os assemblies do ModelBusAdapter da DSL exposta.
@@ -197,7 +197,7 @@ using System.Linq;
  No AdapterManager, é possível obter um Adaptador, que fornece acesso a elementos individuais no modelo.
 
 > [!NOTE]
->  É necessário descartar um Adaptador após usá-lo. A maneira mais conveniente de fazer isso é com uma instrução `using`. O exemplo a seguir ilustra essa situação.
+> É necessário descartar um Adaptador após usá-lo. A maneira mais conveniente de fazer isso é com uma instrução `using`. O exemplo a seguir ilustra essa situação.
 
 ```
 // The file path of a model instance of the FamilyTree DSL:

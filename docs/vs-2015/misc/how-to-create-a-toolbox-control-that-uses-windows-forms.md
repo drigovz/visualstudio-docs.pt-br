@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: abbd3c3c-3a6e-4539-bd6c-a5891dead234
 caps.latest.revision: 12
 manager: jillfra
-ms.openlocfilehash: a2b51b8f07a1cc049e4761001bfea754b6ca1819
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 33b4d8f1932429838f701df1f6ffaaceef321c4e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105637"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442914"
 ---
 # <a name="how-to-create-a-toolbox-control-that-uses-windows-forms"></a>Como: Criar um controle de caixa de ferramentas que usa o Windows Forms
 O modelo de controle de caixa de ferramentas do Windows Forms que está incluído na [!INCLUDE[vssdk_dev11_long](../includes/vssdk-dev11-long-md.md)] permite que você crie controles de formulários do Windows que são adicionados automaticamente para o **caixa de ferramentas** quando a extensão está instalada. Este tópico mostra como usar o modelo para criar uma **caixa de ferramentas** controle que você pode distribuir a outros usuários...  
   
 > [!NOTE]
->  Para saber como baixar o SDK do Visual Studio, consulte [Visual Studio Extensibility Developer Center](http://go.microsoft.com/fwlink/?linkid=121964) no site do MSDN.  
+> Para saber como baixar o SDK do Visual Studio, consulte [Visual Studio Extensibility Developer Center](http://go.microsoft.com/fwlink/?linkid=121964) no site do MSDN.  
   
 ## <a name="creating-a-toolbox-control"></a>Criando um controle de caixa de ferramentas  
  Usar o modelo de controle de caixa de ferramentas do Windows Forms para criar o projeto e, em seguida, crie uma interface do usuário (IU) no designer.  

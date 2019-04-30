@@ -18,12 +18,12 @@ caps.latest.revision: 27
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 48b5d8406f5b5c6d43afadf9e544914e6133090c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 430154b1f9b9f652052dc828c921d3ded16a3787
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046932"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442694"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>Como: Publicar um aplicativo ClickOnce usando o assistente de publicação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,10 +33,10 @@ Para disponibilizar um aplicativo ClickOnce para os usuários, você deve public
  Antes de executar o Assistente de Publicação, configure as propriedades de publicação corretamente. Por exemplo, se você deseja designar uma chave para assinar o aplicativo ClickOnce, pode fazer isso na página **Assinatura** do **Designer de Projeto**. Para obter mais informações, consulte [Securing ClickOnce Applications](../deployment/securing-clickonce-applications.md) (Protegendo aplicativos ClickOnce).  
   
 > [!NOTE]
->  Ao instalar mais de uma versão de um aplicativo usando o ClickOnce, a instalação moverá as versões anteriores do aplicativo para uma pasta chamada Arquivo, no local de publicação especificado. O arquivamento de versões anteriores dessa maneira mantém o diretório de instalação livre de pastas da versão anterior.  
+> Ao instalar mais de uma versão de um aplicativo usando o ClickOnce, a instalação moverá as versões anteriores do aplicativo para uma pasta chamada Arquivo, no local de publicação especificado. O arquivamento de versões anteriores dessa maneira mantém o diretório de instalação livre de pastas da versão anterior.  
   
 > [!NOTE]
->  As caixas de diálogo e os comandos do menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da edição ou das configurações ativas. Para alterar as configurações, clique em **Importar e exportar configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e os comandos do menu que você vê podem ser diferentes dos descritos na Ajuda, dependendo da edição ou das configurações ativas. Para alterar as configurações, clique em **Importar e exportar configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### <a name="to-publish-to-a-file-share-or-path"></a>Para publicar em um compartilhamento de arquivo ou caminho  
   
@@ -83,7 +83,7 @@ Para disponibilizar um aplicativo ClickOnce para os usuários, você deve public
 4. Na página **Como os usuários farão a instalação do aplicativo?**, clique em **De um CD-ROM ou DVD-ROM** e clique em **Avançar**.  
   
    > [!NOTE]
-   >  Se desejar executar a instalação automaticamente quando o CD-ROM for inserido na unidade, abra a página **Publicar** no **Designer de Projeto** e clique no botão **Opções** e, em seguida, no assistente **Opções de Publicação**, selecione **Em instalações com CD, o programa de instalação será iniciado automaticamente quando o CD for inserido**.  
+   > Se desejar executar a instalação automaticamente quando o CD-ROM for inserido na unidade, abra a página **Publicar** no **Designer de Projeto** e clique no botão **Opções** e, em seguida, no assistente **Opções de Publicação**, selecione **Em instalações com CD, o programa de instalação será iniciado automaticamente quando o CD for inserido**.  
   
 5. Ao distribuir o aplicativo em CD-ROM, você poderá desejar fornecer atualizações a partir de um site da Web. Na página **Em que local o aplicativo verificará atualizações?**, escolha uma opção de atualização:  
   
@@ -98,7 +98,7 @@ Para disponibilizar um aplicativo ClickOnce para os usuários, você deve public
     O status da publicação é exibido na área de notificação de status.  
   
    > [!NOTE]
-   >  Após a publicação estar concluída, será necessário utilizar um CD-Rewriter ou DVD-Rewriter para copiar os arquivos do local especificado na etapa 3 para a mídia de CD-ROM ou DVD-ROM.  
+   > Após a publicação estar concluída, será necessário utilizar um CD-Rewriter ou DVD-Rewriter para copiar os arquivos do local especificado na etapa 3 para a mídia de CD-ROM ou DVD-ROM.  
   
 ## <a name="see-also"></a>Consulte também  
  [Segurança e implantação do ClickOnce](../deployment/clickonce-security-and-deployment.md)   

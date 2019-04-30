@@ -11,12 +11,12 @@ caps.latest.revision: 17
 author: corob-msft
 ms.author: corob
 manager: jillfra
-ms.openlocfilehash: c19ba7ea458f7922f5e82e3277b9ab305090a5cb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 57aa9011043ab30e465e03beffe54e6abcc706a8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113073"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444585"
 ---
 # <a name="install-visual-c-for-cross-platform-mobile-development"></a>Instalar o Visual C++ para Desenvolvimento Móvel Multiplataforma
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ O Visual C++ para Desenvolvimento Móvel Multiplataforma](http://go.microsoft.co
 - Para ver os requisitos de instalação, consulte [Requisitos de sistema do Visual Studio 2015](https://www.visualstudio.com/visual-studio-2015-system-requirements-vs).  
   
   > [!IMPORTANT]
-  >  Se estiver usando o Windows 7 ou o Windows Server 2008 R2, você poderá desenvolver código para aplicativos clássicos do Windows, bibliotecas e aplicativos do tipo Native Acivity do Android e aplicativos e bibliotecas de código para iOS, mas não aplicativos para a Windows Store ou aplicativos universais do Windows.  
+  > Se estiver usando o Windows 7 ou o Windows Server 2008 R2, você poderá desenvolver código para aplicativos clássicos do Windows, bibliotecas e aplicativos do tipo Native Acivity do Android e aplicativos e bibliotecas de código para iOS, mas não aplicativos para a Windows Store ou aplicativos universais do Windows.  
   
   Para compilar aplicativos para plataformas de dispositivo específicas, há alguns requisitos adicionais:  
   
@@ -75,12 +75,12 @@ O Visual C++ para Desenvolvimento Móvel Multiplataforma](http://go.microsoft.co
 4. Quando a instalação for concluída, feche o instalador e reinicie o computador. Algumas ações de instalação dos componentes de terceiros não têm efeito até que o computador seja reiniciado.  
   
     > [!IMPORTANT]
-    >  Você deve reiniciar para certificar-se de que tudo esteja instalado corretamente.  
+    > Você deve reiniciar para certificar-se de que tudo esteja instalado corretamente.  
   
      Se a instalação do componente de Emulador do Microsoft Visual Studio para Android falhar, seu computador poderá não ter o Hyper-V habilitado. Use o aplicativo de Painel de Controle **Ativar ou desativar recursos do Windows** para habilitar o Hyper-V e execute o instalador do Visual Studio novamente.  
   
     > [!NOTE]
-    >  Se o seu computador ou sua versão do Windows não der suporte ao Hyper-V, não será possível usar o componente de Emulador do Microsoft Visual Studio para Android. A Home Edition do Windows não inclui suporte para Hyper-V.  
+    > Se o seu computador ou sua versão do Windows não der suporte ao Hyper-V, não será possível usar o componente de Emulador do Microsoft Visual Studio para Android. A Home Edition do Windows não inclui suporte para Hyper-V.  
   
 5. Abra o Visual Studio. Se esta for a primeira vez que você executa o Visual Studio, ele poderá levar algum tempo para ser configurado e se conectar. Quando o Visual Studio estiver pronto, no menu **Ferramentas**, selecione **Extensões e Atualizações**, **Atualizações**. Se houver atualizações do Visual Studio disponíveis para o Visual C++ para Desenvolvimento Móvel Multiplataforma ou para o Emulador do Microsoft Visual Studio para Android, instale-as.  
   
@@ -91,7 +91,7 @@ O Visual C++ para Desenvolvimento Móvel Multiplataforma](http://go.microsoft.co
  Se você optar por não instalar uma ou mais dependências de terceiros usando o instalador do Visual Studio quando instalar a opção de Desenvolvimento Móvel do Visual C++, você poderá instalá-las mais tarde usando as etapas em [Instalar as ferramentas](#InstallTheTools). Também é possível instalar ou atualizá-las independentemente do Visual Studio.  
   
 > [!CAUTION]
->  Você pode instalar as dependências em qualquer ordem, exceto o Java. Você precisa instalar e configurar o JDK antes de instalar o SDK do Android.  
+> Você pode instalar as dependências em qualquer ordem, exceto o Java. Você precisa instalar e configurar o JDK antes de instalar o SDK do Android.  
   
  Leia as informações a seguir e use estes links para instalar as dependências manualmente.  
   

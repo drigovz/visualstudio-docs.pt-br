@@ -8,12 +8,12 @@ ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: e08a443513bb6043ec2f3841067021ffc65dd92d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba6fce72e3e27fbba9f8abdb424dabb778bd270c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440414"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>SDK do Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -145,7 +145,7 @@ Este artigo contém as seguintes tarefas para integradores do Visual Studio Help
 6. Adicione links de página: `<a href="ms-xhelp://?Id=ContosoTopic1">Main Topic</a>`
 
 > [!NOTE]
->  Observação: para sem suporte novo "Idioma de exibição" (exemplo, F#, Cobol, Fortran) colorização de código no trecho de código poderá ser monocromático.
+> Observação: para sem suporte novo "Idioma de exibição" (exemplo, F#, Cobol, Fortran) colorização de código no trecho de código poderá ser monocromático.
 
  **Tópico Visualizador da Ajuda do exemplo** o código ilustra como definir metadados, um trecho de código, uma área recolhível e texto específico do idioma.
 

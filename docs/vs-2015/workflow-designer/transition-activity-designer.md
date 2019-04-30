@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: steved0x
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 69e918eae56d35d134b9b7c3093d5f0599a12c5e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 026ee7af3c60b3832449f5f2ed996f00c75a1c87
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58922944"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435380"
 ---
 # <a name="transition-activity-designer"></a>Fazer a transição o designer de atividades
 <xref:System.Activities.Statements.Transition> representa a transição entre dois estados.  
@@ -40,7 +40,7 @@ ms.locfileid: "58922944"
  As transições são criados arrastando uma linha de um estado para outro, ou soltando um estado em triângulos que aparecem quando um estado é arrastado sobre outro estado. Para criar uma transição, arrastando passa o mouse sobre a borda do estado de origem, e arraste uma linha de estado da fonte para o estado de destino. Para criar uma transição soltando-se, arraste o estado de destino e focalizar-lo sobre o estado de origem, e solte-o em um dos quatro triângulos que aparecem em torno do estado de exibição source. O estado de destino pode ser um novo estado arrastado do **caixa de ferramentas**, ou um estado existente arrastado de designer de fluxo de trabalho.  
   
 > [!NOTE]
->  Um único estado em um computador de estado pode ter até 76 transições criadas utilizando o designer de fluxo de trabalho. O limite nas transições para um estado para fluxos de trabalho criados fora de designer é delimitado somente por recursos do sistema.  
+> Um único estado em um computador de estado pode ter até 76 transições criadas utilizando o designer de fluxo de trabalho. O limite nas transições para um estado para fluxos de trabalho criados fora de designer é delimitado somente por recursos do sistema.  
   
  As transições compartilhadas do disparador são o conjunto de transições que compartilham o mesmo evento do disparador. Um disparador compartilhado permite a progressão condicional a um estado de destino com base na classificação de expressões configuradas para várias transições que compartilham um evento comuns de disparador. Para adicionar ações adicionais para uma transição e criar uma transição compartilhada, clique no círculo que indica o início de transição desejada e arraste-o para estado desejado. A nova transição compartilhar um disparador mesmo que a transição inicial, mas terá uma condição e uma ação exclusivos. As transições compartilhadas também podem ser criadas de dentro do designer de transição clicando **adicionar transição de gatilho de compartilhado** na parte inferior do designer de transição e, em seguida, selecionando o estado do destino desejado do  **Estados disponíveis para conectar-se** lista suspensa.  
   

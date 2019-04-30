@@ -11,12 +11,12 @@ caps.latest.revision: 23
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 33e9bafcba14c65f6f117319180dad7538414885
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: cea0d72488bbd18972b2a2f6d87f21dfb32481d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59670297"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439355"
 ---
 # <a name="msbuild-inline-tasks"></a>Tarefas embutidas do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -67,7 +67,7 @@ As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implem
   Os elementos `Reference`e `Using` independem da linguagem. As tarefas em linha podem ser escritas em qualquer idioma com suporte do CodeDom .NET, por exemplo, Visual Basic ou Visual C#.  
   
 > [!NOTE]
->  Os elementos contidos pelo elemento `Task` são específicos da fábrica de tarefas, nesse caso, a fábrica de tarefas de código.  
+> Os elementos contidos pelo elemento `Task` são específicos da fábrica de tarefas, nesse caso, a fábrica de tarefas de código.  
   
 ### <a name="code-element"></a>Elemento Code  
  O último elemento filho a aparecer no elemento `Task` é o elemento `Code`. O elemento `Code` contém ou localiza o código que você deseja compilar em uma tarefa. O que é colocado no elemento `Code` depende de como você deseja escrever a tarefa.  
@@ -87,7 +87,7 @@ As tarefas do MSBuild normalmente são criadas ao compilar uma classe que implem
   Como alternativa, você pode usar o atributo `Source` do elemento `Code` para especificar o local de um arquivo que contém o código da sua tarefa. O código no arquivo de origem deve ser do tipo especificado pelo atributo `Type`. Se o atributo `Source` estiver presente, o valor padrão de `Type` será `Class`. Se `Source` é não estiver presente, o valor padrão será `Fragment`.  
   
 > [!NOTE]
->  Ao definir a classe de tarefa no arquivo de origem, o nome da classe deve concordar com o atributo `TaskName` do elemento [UsingTask](../msbuild/usingtask-element-msbuild.md) correspondente.  
+> Ao definir a classe de tarefa no arquivo de origem, o nome da classe deve concordar com o atributo `TaskName` do elemento [UsingTask](../msbuild/usingtask-element-msbuild.md) correspondente.  
   
 ## <a name="hello-world"></a>Hello World  
  Vejamos uma tarefa em linha mais robusta. A tarefa HelloWorld exibe "Hello, world!" no dispositivo de registro de erros em log padrão, que é normalmente o console do sistema ou a janela **Saída** do Visual Studio. O elemento `Reference` no exemplo é incluído apenas para ilustração.  
@@ -193,4 +193,4 @@ File.WriteAllText(Path, content);
   
 ## <a name="see-also"></a>Consulte também  
  [Tarefas](../msbuild/msbuild-tasks.md)   
- [Passo a passo: Criando uma tarefa embutida](../msbuild/walkthrough-creating-an-inline-task.md)
+ [Passo a passo: criar uma tarefa embutida](../msbuild/walkthrough-creating-an-inline-task.md)

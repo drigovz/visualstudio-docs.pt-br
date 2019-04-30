@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: c22ab65ac849fdf8bc004c10b246584f0e511cf8
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: d3ea1316efb17bb64472079677c93cfd2b85dcd1
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664223"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428920"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>Especificando o local do arquivo do VSPackage para o Shell do VS
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] deve ser capaz de localizar a DLL para carregar o VSPackage do assembly. Você pode localizá-lo de várias maneiras, conforme descrito na tabela a seguir.
@@ -29,4 +29,4 @@ ms.locfileid: "59664223"
 | Colocar a DLL para o **PublicAssemblies** directory. | Por fim, o assembly também pode ser colocado na **PublicAssemblies** subdiretório. Assemblies localizados no **PublicAssemblies** são detectados automaticamente e também aparecerão na **Add References** da caixa de diálogo [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)].<br /><br /> Assemblies de VSPackage só devem ser colocados na **PublicAssemblies** gerenciados de diretório se eles contêm componentes que se destinam a ser reutilizado por outros desenvolvedores de VSPackage. A maioria dos assemblies não atende a esse critério. |
 
 > [!NOTE]
->  Use assemblies de nome forte, assinados para todos os assemblies dependentes. Esses assemblies também devem ser instalados em seu próprio diretório ou cache de assembly global (GAC). Isso protege contra conflitos com assemblies que têm o mesmo nome de arquivo base, conhecido como associação de nome fraco.
+> Use assemblies de nome forte, assinados para todos os assemblies dependentes. Esses assemblies também devem ser instalados em seu próprio diretório ou cache de assembly global (GAC). Isso protege contra conflitos com assemblies que têm o mesmo nome de arquivo base, conhecido como associação de nome fraco.

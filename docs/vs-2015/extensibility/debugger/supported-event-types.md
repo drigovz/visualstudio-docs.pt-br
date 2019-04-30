@@ -10,12 +10,12 @@ ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
 caps.latest.revision: 13
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: d82bce8546d4c63a82f4850097ca92c804399a66
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: f671e8d0128bee2c52dc1191b33edb889c92d2e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929298"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446449"
 ---
 # <a name="supported-event-types"></a>Tipos de eventos com suporte
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Depuração do Visual Studio atualmente dá suporte aos seguintes tipos de event
     As interfaces [IDebugBreakpointEvent2](../../extensibility/debugger/reference/idebugbreakpointevent2.md) e [IDebugExceptionEvent2](../../extensibility/debugger/reference/idebugexceptionevent2.md) são exemplos de eventos de interrupção.  
   
   > [!NOTE]
-  >  Não há suporte para eventos de interrupção assíncrona. É um erro ao enviar um evento de interrupção assíncrono.  
+  > Não há suporte para eventos de interrupção assíncrona. É um erro ao enviar um evento de interrupção assíncrono.  
   
 ## <a name="discussion"></a>Discussão  
  A implementação real de eventos depende do design do seu DE. O tipo de cada evento enviado é determinado por seus atributos, que são definidos quando você projeta a Alemanha. Por exemplo, um Alemanha pode enviar uma [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) como um evento assíncrono, enquanto outro pode enviá-lo como um evento de interrupção.  
@@ -53,7 +53,7 @@ Depuração do Visual Studio atualmente dá suporte aos seguintes tipos de event
  A tabela a seguir especifica quais parâmetros de thread e programa são necessários para o qual eventos, bem como os tipos de evento. Qualquer evento pode ser síncrono. Nenhum evento precisa ser síncronas.  
   
 > [!NOTE]
->  O [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) interface é necessária para todos os eventos.  
+> O [IDebugEngine2](../../extensibility/debugger/reference/idebugengine2.md) interface é necessária para todos os eventos.  
   
 |evento|IDebugProgram2|IDebugThread2|Eventos de parada|  
 |-----------|--------------------|-------------------|---------------------|  

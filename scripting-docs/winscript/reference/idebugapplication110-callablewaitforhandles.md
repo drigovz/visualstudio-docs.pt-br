@@ -13,18 +13,18 @@ caps.latest.revision: 4
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ac5482924288e52895398084aa4f5ab44e151a66
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
-ms.translationtype: MT
+ms.openlocfilehash: f74e3faa57e9ee4a38f77110334383bc2c72fe2f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58155362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446385"
 ---
 # <a name="idebugapplication110callablewaitforhandles"></a>IDebugApplication110::CallableWaitForHandles
 Aguarda qualquer uma das alças especificadas a ser sinalizado, permitindo que chamadas entre threads a ser postada a esse thread. Esse método deve ser chamado do thread do depurador.  
   
 > [!IMPORTANT]
->  [Interface IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) é implementada pelo PDM v11.0 e maior. Localizado em. activdbg100.h.  
+> [Interface IDebugApplication110](../../winscript/reference/idebugapplication110-interface.md) é implementada pelo PDM v11.0 e maior. Localizado em. activdbg100.h.  
   
 ## <a name="syntax"></a>Sintaxe  
   

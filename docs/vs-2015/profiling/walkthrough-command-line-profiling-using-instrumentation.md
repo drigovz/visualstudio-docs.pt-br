@@ -13,12 +13,12 @@ caps.latest.revision: 20
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d5b7e8dbe12f9c57c101c8f877dfcb0c6ee3196f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a37350cf274fbb551326ac96387330b0f3956e7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064687"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439692"
 ---
 # <a name="walkthrough-command-line-profiling-using-instrumentation"></a>Passo a passo: Linha de comando usando instrumentação de criação de perfil
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Este passo a passo leva você pela criação de perfil de um aplicativo autônom
  A instrumentação é um método de criação de perfil pelo qual versões especialmente projetadas de binários com perfil contêm funções de teste que coletam informações de tempo na entrada e saída para funções em um módulo instrumentado. Como esse método de criação de perfil é mais invasivo do que a amostragem, resulta em maior quantidade de sobrecarga. Binários instrumentados também são maiores do que os binários de depuração ou liberação e não são destinados a implantação.  
   
 > [!NOTE]
->  Não envie binários instrumentados aos seus clientes. Binários instrumentados podem conter vários riscos. Os binários incluem informações que facilitam a engenharia reversa de seus aplicativos e aumentam os riscos de segurança.  
+> Não envie binários instrumentados aos seus clientes. Binários instrumentados podem conter vários riscos. Os binários incluem informações que facilitam a engenharia reversa de seus aplicativos e aumentam os riscos de segurança.  
   
 #### <a name="to-profile-the-peopletrax-application-by-using-the-instrumentation-method"></a>Para analisar o aplicativo PeopleTrax usando o método de instrumentação  
   

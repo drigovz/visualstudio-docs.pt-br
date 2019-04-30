@@ -19,12 +19,12 @@ caps.latest.revision: 81
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: a6fe3d3f144b192ef14ff52c942c75d9edd1be85
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 41b3e662668967d07e2a304d589d498dd2c7b51d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60076205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446108"
 ---
 # <a name="remote-debugging"></a>Depuração remota
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -50,7 +50,7 @@ Você pode baixar as ferramentas remotas diretamente no dispositivo ou no servid
 2. Na página de download, escolha a versão das ferramentas que corresponde ao seu sistema operacional (x x86, x64 ou versão ARM) e baixar as ferramentas remotas.
   
     > [!IMPORTANT]
-    >  Recomendamos que você instale a versão mais recente das ferramentas remotas que corresponde à sua versão do Visual Studio. Versões incompatíveis não são recomendadas.  
+    > Recomendamos que você instale a versão mais recente das ferramentas remotas que corresponde à sua versão do Visual Studio. Versões incompatíveis não são recomendadas.  
     >   
     >  Além disso, você deve instalar as ferramentas remotas que têm a mesma arquitetura de sistema operacional no qual você deseja instalá-lo. Em outras palavras, se você quiser depurar um aplicativo de 32 bits em um computador remoto executando um sistema operacional de 64 bits, você deve instalar a versão de 64 bits das ferramentas remotas no computador remoto.  
   
@@ -145,7 +145,7 @@ Você pode encontrar o depurador remoto (**msvsmon.exe**) em um computador com V
    Para obter uma lista dos números de porta usados por padrão, consulte [as atribuições de porta do depurador remoto](../debugger/remote-debugger-port-assignments.md).  
   
    > [!WARNING]
-  >  Você também pode optar por executar as ferramentas remotas no Modo Sem Autenticação, mas isso é altamente desaconselhável. Nesse modo, não há nenhuma segurança de rede. Escolha o modo sem autenticação somente se você tiver certeza de que a rede não está em risco de tráfego mal-intencionado ou hostil.
+  > Você também pode optar por executar as ferramentas remotas no Modo Sem Autenticação, mas isso é altamente desaconselhável. Nesse modo, não há nenhuma segurança de rede. Escolha o modo sem autenticação somente se você tiver certeza de que a rede não está em risco de tráfego mal-intencionado ou hostil.
 
 ## <a name="bkmk_configureService"></a> (Opcional) Configurar o depurador remoto como um serviço
  Para depuração no ASP.NET e outros ambientes de servidor, você deve executar o depurador remoto como um administrador ou, se você quiser que ele sempre em execução, executar o depurador remoto como um serviço.
@@ -221,7 +221,7 @@ Você pode encontrar o depurador remoto (**msvsmon.exe**) em um computador com V
 11. No computador do Visual Studio, você deve ver que a execução é interrompida no ponto de interrupção.  
   
     > [!TIP]
-    >  Como alternativa, você pode implantar os arquivos como uma etapa separada. No **Gerenciador de soluções,** com o botão direito do **mymfc** nó e, em seguida, escolha **implantar**.  
+    > Como alternativa, você pode implantar os arquivos como uma etapa separada. No **Gerenciador de soluções,** com o botão direito do **mymfc** nó e, em seguida, escolha **implantar**.  
   
     Se você tiver arquivos sem código que precisam ser usados pelo aplicativo, você precisará incluí-los no projeto do Visual Studio. Crie uma pasta de projeto para os arquivos adicionais (na **Gerenciador de soluções**, clique em **adicionar / nova pasta**.) Em seguida, adicione os arquivos na pasta (na **Gerenciador de soluções**, clique em **adicionar / existente Item**, em seguida, selecione os arquivos.). Sobre o **propriedades** para cada arquivo, defina **Copy to Output Directory** para **copiar sempre**.  
   
@@ -253,7 +253,7 @@ Você pode encontrar o depurador remoto (**msvsmon.exe**) em um computador com V
 10. Copie o arquivo executável que você acabou de criar do seu computador do Visual Studio para a pasta recém-criada no computador remoto.
   
     > [!CAUTION]
-    >  Não faça alterações no código ou recriação (ou você deve repetir esta etapa). O executável que você copiou para o computador remoto deve corresponder exatamente, seu local de origem e símbolos.
+    > Não faça alterações no código ou recriação (ou você deve repetir esta etapa). O executável que você copiou para o computador remoto deve corresponder exatamente, seu local de origem e símbolos.
 
     Você pode copiar o projeto manualmente, use Xcopy, Robocopy, Powershell ou outras opções.
   

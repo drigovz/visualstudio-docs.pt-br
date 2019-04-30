@@ -15,12 +15,12 @@ caps.latest.revision: 14
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d1a4d269b0b7e1afb151bea5bbd97d5ab770d00
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 5883708d0ed32f636c5e229147676cf1545f8a47
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928176"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444598"
 ---
 # <a name="metadata-as-source"></a>Metadados como origem
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ ms.locfileid: "58928176"
 Metadados como origem permite que você exiba os metadados que aparece como código-fonte c# em um buffer somente leitura. Isso permite que uma exibição das declarações de tipos e membros (sem implementações). Você pode exibir metadados como origem, executando o **ir para definição** comando para tipos ou membros cujo código-fonte não está disponível no seu projeto ou solução.  
   
 > [!NOTE]
->  Quando você tenta executar o **ir para definição** de comando para tipos ou membros que são marcados como internos, o ambiente de desenvolvimento integrado (IDE) exibe seus metadados como origem, independentemente se o assembly de referência é um amigo ou não.  
+> Quando você tenta executar o **ir para definição** de comando para tipos ou membros que são marcados como internos, o ambiente de desenvolvimento integrado (IDE) exibe seus metadados como origem, independentemente se o assembly de referência é um amigo ou não.  
   
  Você pode exibir metadados como origem em qualquer Editor de códigos ou o **definição de código** janela.  
   

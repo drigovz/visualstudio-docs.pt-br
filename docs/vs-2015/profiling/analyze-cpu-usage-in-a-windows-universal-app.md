@@ -15,12 +15,12 @@ author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
 robots: noindex,nofollow
-ms.openlocfilehash: fcc31e2f7fb06f58f07b0af58a1375466b16cc23
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 646bba541e18fd372bd5236f7ebb6b91d1472d55
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053046"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435081"
 ---
 # <a name="analyze-cpu-usage-in-a-windows-universal-app"></a>Analisar o uso de CPU em um aplicativo universal do Windows
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
  Quando você precisa investigar problemas de desempenho no aplicativo, um bom começo é entender como ele usa a CPU. A ferramenta **Uso da CPU** mostra em que a CPU está dedicando tempo a executar código. Para se concentrar em cenários específicos, a ferramenta Uso da CPU pode ser executada com a ferramenta [Capacidade de Resposta da Interface do Usuário XAML](http://msdn.microsoft.com/library/4ff84cd1-4e63-4fda-b34f-3ef862a6e480), a ferramenta [Consumo de Energia](../profiling/analyze-energy-use-in-store-apps.md) ou ambas as ferramentas em uma única sessão de diagnóstico.  
   
 > [!NOTE]
->  A ferramenta **Uso da CPU** não pode ser usada com os aplicativos Windows Phone Silverlight 8.1.  
+> A ferramenta **Uso da CPU** não pode ser usada com os aplicativos Windows Phone Silverlight 8.1.  
   
  Este passo a passo o conduz pela coleta e a análise do uso da CPU por um aplicativo XAML Universal do Windows simples.  
   

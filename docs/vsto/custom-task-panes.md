@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 9e6ebd09188e737e75c9e5f66ed95411e1a9453d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4ab27c27873fc0addf1dbdbdbca81613d3015cc3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106196"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445550"
 ---
 # <a name="custom-task-panes"></a>Painéis de tarefas personalizados
   Painéis de tarefas estão os painéis de interface do usuário que normalmente são encaixados em um dos lados de uma janela em um aplicativo do Microsoft Office. Painéis de tarefas personalizados oferecem uma maneira de criar seu próprio painel de tarefas e fornecer aos usuários uma interface familiar para acessar recursos da sua solução. Por exemplo, a interface pode conter controles que executar o código para modificar documentos ou exibir dados de uma fonte de dados.
@@ -38,7 +38,7 @@ ms.locfileid: "60106196"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 > [!NOTE]
->  Um painel de tarefas personalizado é diferente do painel Ações. O painel de ações é parte de personalizações no nível de documento para o Microsoft Office Word e Microsoft Office Excel. Para obter mais informações, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md).
+> Um painel de tarefas personalizado é diferente do painel Ações. O painel de ações é parte de personalizações no nível de documento para o Microsoft Office Word e Microsoft Office Excel. Para obter mais informações, consulte [visão geral do painel de ações](../vsto/actions-pane-overview.md).
 
 ## <a name="benefits-of-custom-task-panes"></a>Benefícios dos painéis de tarefas personalizados
  Painéis de tarefas personalizados permitem que você integre seus recursos em uma interface de usuário familiar. Você pode criar um painel tarefa personalizada rapidamente usando as ferramentas do Visual Studio.

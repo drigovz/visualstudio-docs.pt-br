@@ -9,12 +9,12 @@ caps.latest.revision: 16
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: acccb96f4d4092727e72d1d72103e26d7be96511
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a8364f742a5bdd90ffa2532f01476b49e381289
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110317"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441045"
 ---
 # <a name="how-to-migrate-a-domain-specific-language-to-a-new-version"></a>Como: Migrar uma Linguagem Específica de Domínio para uma nova versão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Você pode migrar os projetos que definem e usam a linguagem específica de dom�
    - Selecione um projeto ou solução para ver uma lista das alterações que fará com que a ferramenta.  
   
        > [!NOTE]
-       >  As caixas de seleção que aparecem ao lado dos nomes de pasta não têm nenhum efeito. Você deve expandir as pastas para inspecionar os projetos e soluções.  
+       > As caixas de seleção que aparecem ao lado dos nomes de pasta não têm nenhum efeito. Você deve expandir as pastas para inspecionar os projetos e soluções.  
   
 4. Converta os projetos.  
   
@@ -78,7 +78,7 @@ Você pode migrar os projetos que definem e usam a linguagem específica de dom�
    2. Clique o **transformar todos os modelos** botão no cabeçalho do Gerenciador de soluções.  
   
        > [!NOTE]
-       >  Você pode fazer essa etapa desnecessária. Para obter mais informações, consulte [como automatizar a transformar todos os modelos](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
+       > Você pode fazer essa etapa desnecessária. Para obter mais informações, consulte [como automatizar a transformar todos os modelos](http://msdn.microsoft.com/b63cfe20-fe5e-47cc-9506-59b29bca768a).  
   
 6. Atualize seu código personalizado nos projetos convertidos.  
   

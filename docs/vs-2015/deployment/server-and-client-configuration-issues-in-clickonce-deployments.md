@@ -18,12 +18,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 008e7991c8f88fb1c5a8b2eb99659ebe9134df26
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 90772785297b84a12cc98d6ce21a2cd2e65743f9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925578"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444976"
 ---
 # <a name="server-and-client-configuration-issues-in-clickonce-deployments"></a>Problemas de configuração de servidor e cliente em implantações do ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -60,7 +60,7 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
  Atualmente, [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] instalações iniciará somente se a URL para o manifesto de implantação é aberta usando o Internet Explorer. Uma implantação cuja URL é iniciado a partir de outro aplicativo, como o Microsoft Office Outlook, será iniciado com êxito apenas se o Internet Explorer está definido como o navegador da Web padrão.  
   
 > [!NOTE]
->  Mozilla Firefox é suportado se o provedor de implantação não está em branco ou a extensão do Assistente do Microsoft .NET Framework está instalada. Essa extensão é empacotada com o .NET Framework 3.5 SP1. Para obter suporte XBAP, o plug-in de NPWPF é ativado quando necessário.  
+> Mozilla Firefox é suportado se o provedor de implantação não está em branco ou a extensão do Assistente do Microsoft .NET Framework está instalada. Essa extensão é empacotada com o .NET Framework 3.5 SP1. Para obter suporte XBAP, o plug-in de NPWPF é ativado quando necessário.  
   
 ## <a name="activating-clickonce-applications-through-browser-scripting"></a>Ativação de aplicativos ClickOnce por meio de scripts de navegador  
  Se você tiver desenvolvido uma página da Web personalizada que inicia um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo usando o script ativo, você pode achar que o aplicativo não será iniciado em alguns computadores. Internet Explorer contém uma configuração chamada **aviso automático para downloads de arquivo**, que afeta esse comportamento. Essa configuração está disponível na **segurança** guia no seu **opções** menu que afeta esse comportamento. Ele é chamado **aviso automático para downloads de arquivo**, e ele é listado sob os **Downloads** categoria. A propriedade é definida como **habilitar** por padrão para páginas da Web de intranet e para **desabilitar** por padrão para páginas da Web da Internet. Quando essa configuração é definida como **desabilitar**, qualquer tentativa de ativar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo por meio de programação (por exemplo, atribuindo sua URL para o `document.location` propriedade) serão bloqueados. Nestas circunstâncias, os usuários podem iniciar aplicativos por meio de um download iniciado pelo usuário, por exemplo, ao clicar em um hiperlink definido como a URL do aplicativo.  
@@ -78,7 +78,7 @@ Se você usar os serviços de informações da Internet (IIS) no Windows Server,
 ```  
   
 > [!NOTE]
->  Você pode fazer com que a autenticação NTLM (NT desafio-resposta) funcionará se o site solicita as credenciais que não seja de suas credenciais padrão e, na caixa de diálogo de segurança, clique em **Okey** quando for perguntado se você quiser salvar fornecido credenciais para sessões futuras. No entanto, essa solução alternativa não funcionará para a autenticação básica.  
+> Você pode fazer com que a autenticação NTLM (NT desafio-resposta) funcionará se o site solicita as credenciais que não seja de suas credenciais padrão e, na caixa de diálogo de segurança, clique em **Okey** quando for perguntado se você quiser salvar fornecido credenciais para sessões futuras. No entanto, essa solução alternativa não funcionará para a autenticação básica.  
   
 ## <a name="using-third-party-web-servers"></a>Usando servidores Web de terceiros  
  Se você estiver implantando um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo de um servidor Web que não seja o IIS, você poderá ter um problema se o servidor está retornando o tipo de conteúdo incorreto para a chave [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] arquivos, como o manifesto de implantação e o manifesto do aplicativo. Para resolver esse problema, consulte a Ajuda da seu servidor Web documentação sobre como adicionar novos tipos de conteúdo para o servidor e certifique-se de que todos os mapeamentos de extensão de nome arquivo listado na tabela a seguir estão em vigor.  

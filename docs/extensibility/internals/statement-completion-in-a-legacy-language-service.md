@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a8301bb5daf0334a48078690a15b1f3d2991698
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: dcc86d8c43703b0274c5282c9f4f843f760e697c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56622794"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428900"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>Preenchimento de declaração em um serviço de linguagem herdado
 Preenchimento de declaração é o processo pelo qual o serviço de linguagem ajuda os usuários a concluir uma palavra-chave do idioma ou um elemento que eles tenham sido iniciados digitando no editor de núcleo. Este tópico discute como funciona o preenchimento de declaração e como implementá-lo em seu serviço de linguagem.
@@ -24,7 +24,7 @@ Preenchimento de declaração é o processo pelo qual o serviço de linguagem aj
  Serviços de linguagem herdado são implementados como parte de um VSPackage, mas a maneira mais recente para implementar recursos de serviço de linguagem é usar extensões MEF. Para obter mais informações sobre a nova maneira de implementar o preenchimento de declaração, consulte [passo a passo: Exibindo o preenchimento de declaração](../../extensibility/walkthrough-displaying-statement-completion.md).
 
 > [!NOTE]
->  É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
+> É recomendável que você comece a usar o novo editor de API mais rápido possível. Isso melhorará o desempenho do seu serviço de linguagem e permitem que você tirar proveito dos novos recursos do editor.
 
 ## <a name="implementing-statement-completion"></a>Implementando o preenchimento de declaração
  No editor de núcleo, a conclusão da instrução ativa uma interface de usuário especial que ajuda você a interativamente com mais facilidade e rapidamente escrever código. Ajuda do preenchimento de declaração exibindo classes ou objetos pertinentes quando eles forem necessários, que evita a ter de lembrar elementos específicos ou precisar examiná-los em um tópico de referência da Ajuda.

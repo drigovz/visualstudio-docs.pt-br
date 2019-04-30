@@ -8,12 +8,12 @@ ms.assetid: 51b53778-469c-4cc9-854c-4e4992d6389b
 caps.latest.revision: 32
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 229893e13da06253398da32cfef4a85402a4787a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4929464f04ecb630f4c6898f7b2cc1ce132a79a9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094548"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445969"
 ---
 # <a name="testing-sharepoint-2010-applications-with-coded-ui-tests"></a>Testando os aplicativos do SharePoint 2010 com testes de interface do usuário codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,19 +39,19 @@ Incluir testes de IU codificados em um aplicativo do SharePoint permite verifica
  ![Web parts do SharePoint](../test/media/cuit-sharepoint.png "CUIT_SharePoint")  
   
 > [!NOTE]
->  Se você estiver registrando a ação, valide as ações antes de gerar código. Como há vários comportamentos associados à passagem do Mouse, ela é ativada por padrão. Tenha cuidado para remover passagens redundantes de testes de IU codificados. Você pode fazer isso editando o código para o teste ou usando o [Editor de testes de IU codificados](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
+> Se você estiver registrando a ação, valide as ações antes de gerar código. Como há vários comportamentos associados à passagem do Mouse, ela é ativada por padrão. Tenha cuidado para remover passagens redundantes de testes de IU codificados. Você pode fazer isso editando o código para o teste ou usando o [Editor de testes de IU codificados](../test/editing-coded-ui-tests-using-the-coded-ui-test-editor.md).  
   
 ## <a name="including-testing-of-office-2010-controls-within-your-sharepoint-app"></a>Incluindo testes dos controles do Office 2010 em seu aplicativo do SharePoint  
  Para habilitar a automação de algumas Web parts do Office 2010 em seu aplicativo do SharePoint, você precisa fazer algumas modificações secundárias no código.  
   
 > [!WARNING]
->  Não há suporte para controles do Visio e do PowerPoint 2010.  
+> Não há suporte para controles do Visio e do PowerPoint 2010.  
   
 ### <a name="excel-2010-cell-controls"></a>Controles de célula do Excel 2010  
  Para incluir controles de célula do Excel, você deve fazer algumas alterações no código do teste de IU codificado.  
   
 > [!WARNING]
->  Inserir texto em uma célula do Excel, seguida por uma ação de teclas de direção, não registrará corretamente. Use o mouse para selecionar células.  
+> Inserir texto em uma célula do Excel, seguida por uma ação de teclas de direção, não registrará corretamente. Use o mouse para selecionar células.  
   
  Se você estiver gravando ações em uma célula vazia, você deverá modificar o código clicando duas vezes na célula e, em seguida, executando uma operação de definição de texto. Isso é necessário porque um clique na célula, seguido por qualquer ação de teclado, ativa o `textarea` dentro da célula. Registrar um `setvalue` na célula vazia pesquisaria o `editbox` que não está presente até que a célula tenha sido clicada. Por exemplo:  
   

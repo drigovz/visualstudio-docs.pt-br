@@ -11,12 +11,12 @@ ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 935734d3ab21fd4ce69afaaf5fd4eef9ac417089
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 98cd0ec51ead200a904baeb409551cd1084f1f11
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928335"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440824"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>Sinalizadores de linha de comando do compilador VSCT
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -52,7 +52,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 ```  
   
 > [!NOTE]
->  Os caracteres - (traço) e / (barra) são ambas as notação aceito para que indica que os parâmetros de linha de comando.  
+> Os caracteres - (traço) e / (barra) são ambas as notação aceito para que indica que os parâmetros de linha de comando.  
   
  Sinalizadores aceitáveis e seus significados são da seguinte maneira.  
   
@@ -61,7 +61,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 |-D|Especifique todos os símbolos definidos adicionais.|  
 |-I|Indicam que caminhos que devem ser usados ao resolver referências de arquivo de inclusão adicionais.|  
 |-L|Especifique o <xref:System.Globalization.CultureInfo> nome de cultura, por exemplo "en-US".|  
-|-E|Emitir C# objetos no namespace especificado para os itens de comando, seguido por [C&#124;H&#124;N]:*filename*em que C = C#, H = cabeçalho de C++, N = namespace. O namespace é necessário para C#.|  
+|-E|Emitir C# objetos no namespace especificado para os itens de comando, seguido por [C&#124;H&#124;N]:*filename*em que C = C#, H = C++ cabeçalho, N = namespace. O namespace é necessário para c#.|  
 |-v|Saída detalhada.|  
   
  -L switch instrui o compilador a selecionar um grupo de cadeias de caracteres para produzir o arquivo CTO já binário correspondente para o determinado <xref:System.Globalization.CultureInfo> nome da cultura. O nome da cultura especificada com o atributo de idioma de um ou mais [cadeias de caracteres de elemento](../../extensibility/strings-element.md) no arquivo. VSCT. Se um elemento de cadeias de caracteres não tem nenhum atributo de idioma, ela é herdada de recipiente [elemento CommandTable](../../extensibility/commandtable-element.md).  
@@ -70,7 +70,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
   
  Se o nome de cultura fornecido pelo comutador -L não coincide com o atributo de idioma de qualquer elemento de cadeias de caracteres, o compilador tentará corresponder o idioma e não a região. Por exemplo, se não podem ser encontrado "en-US", o compilador tentará "en" em vez disso. Caso de falha, ele tentará a cultura atual do sistema operacional. Caso de falha, ele compilará o primeiro elemento de cadeias de caracteres que encontrar.  
   
- A opção -E pode ser usada para emitir um arquivo de cabeçalho de estilo C que contém os símbolos que são usados pela tabela de comando ou para emitir um arquivo C# que contém objetos para os símbolos de comando.  
+ A opção -E pode ser usada para emitir um arquivo de cabeçalho de estilo C que contém os símbolos que são usados pela tabela de comando ou para emitir um arquivo c# que contém objetos para os símbolos de comando.  
   
  -D e – eu switches têm a sintaxe dos sinalizadores de pré-processador C Cl.exe que têm o mesmo nome. – D definições que têm o formato X = Y são usadas para a expansão do baseado em XML \<definido pelo > testes no `Condition` atributos. – Posso incluir caminhos são usados para resolver \<Include >, \<Extern > e \<Bitmap > as referências de arquivo. Para obter mais informações, consulte o [referência de esquema de XML do VSCT](../../extensibility/vsct-xml-schema-reference.md).  
   

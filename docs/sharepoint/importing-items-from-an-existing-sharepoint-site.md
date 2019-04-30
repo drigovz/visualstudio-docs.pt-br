@@ -18,18 +18,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 206cd77ae3c648add62b17c86a4966e6174c345c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 58f4dd6df35b9101ed3cd2a45943efc8078229f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082575"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444369"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>Importar itens de um site do SharePoint existente
   O modelo de projeto Importar pacote de solução do SharePoint permite a reutilização elementos como tipos de conteúdo e campos de sites do SharePoint existentes em uma nova [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] solução do SharePoint. Embora seja possível executar a maioria das soluções importadas sem modificação, há certas restrições e problemas a serem considerados, especialmente se você modificar todos os itens após importá-los.
 
 > [!NOTE]
->  Para importar fluxos de trabalho reutilizáveis, use o modelo de projeto importar fluxo de trabalho reutilizável. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Diretrizes para importar fluxos de trabalho reutilizáveis](../sharepoint/guidelines-for-importing-reusable-workflows.md).
+> Para importar fluxos de trabalho reutilizáveis, use o modelo de projeto importar fluxo de trabalho reutilizável. [!INCLUDE[crdefault](../sharepoint/includes/crdefault-md.md)] [Diretrizes para importar fluxos de trabalho reutilizáveis](../sharepoint/guidelines-for-importing-reusable-workflows.md).
 
 ## <a name="supported-sharepoint-solutions"></a>Soluções do SharePoint com suporte
  [!INCLUDE[vs_dev11_long](../sharepoint/includes/vs-dev11-long-md.md)] totalmente compatível com a importação de soluções criadas no [!INCLUDE[wss_14_short](../sharepoint/includes/wss-14-short-md.md)] e [!INCLUDE[moss_14_short](../sharepoint/includes/moss-14-short-md.md)].

@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8d20b8938f4d841bb42299b7aa9abaf633f72e7d
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1f02018ed9ddb6f91f965d28767cde55e4c3e524
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60074603"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437304"
 ---
 # <a name="introduction-to-wpf"></a>Introdução ao WPF
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -208,7 +208,7 @@ End Namespace
   O <xref:System.Windows.Controls.DockPanel> permite que os controles <xref:System.Windows.Controls.TextBox> filho informem como organizá-los. Para fazer isso, o <xref:System.Windows.Controls.DockPanel> implementa uma propriedade <xref:System.Windows.Controls.DockPanel.Dock%2A> que é exposta aos controles filho para permitir que cada um especifique um estilo de encaixe.  
   
 > [!NOTE]
->  Uma propriedade que é implementada por um controle pai para uso por controles filho é uma constructo WPF chamado de [propriedade anexada](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx).  
+> Uma propriedade que é implementada por um controle pai para uso por controles filho é uma constructo WPF chamado de [propriedade anexada](https://msdn.microsoft.com/library/ms749011\(v=vs.100\).aspx).  
   
  A figura a seguir mostra o resultado da marcação XAML no exemplo anterior.  
   

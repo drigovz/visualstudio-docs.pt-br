@@ -21,12 +21,12 @@ caps.latest.revision: 86
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 157e605ae16167317e02e92070d859870b4709cf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0dafd91a832fd4098fb19a26750310135723216f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060145"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442974"
 ---
 # <a name="edit-uml-models-and-diagrams"></a>Editar modelos e diagramas UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -81,7 +81,7 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
 3. Na **adicionar ao projeto de modelagem**, selecione um projeto de modelagem existente ou selecione **criar um novo projeto de modelagem**.  
   
    > [!NOTE]
-   >  Um diagrama de modelagem deve estar dentro de um projeto de modelagem.  
+   > Um diagrama de modelagem deve estar dentro de um projeto de modelagem.  
   
    Você também pode adicionar um diagrama em um projeto de modelagem existente no Gerenciador de soluções. Clique com botão direito no projeto de modelagem, aponte para **Add**e, em seguida, clique em **Novo Item**.  
   
@@ -97,7 +97,7 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
  Há dois tipos de ferramentas, para elementos de um para relações. Por exemplo, no diagrama de classe UML caixa de ferramentas **classe** é uma ferramenta de elemento, e **associação** é uma ferramenta de relação.  
   
 > [!NOTE]
->  Se você quiser obter informações específicas para tipos de diagrama específico, consulte [criar modelos para o aplicativo](../modeling/create-models-for-your-app.md).  
+> Se você quiser obter informações específicas para tipos de diagrama específico, consulte [criar modelos para o aplicativo](../modeling/create-models-for-your-app.md).  
   
 #### <a name="to-create-elements-and-relationships-in-a-uml-modeling-diagram"></a>Para criar elementos e relações em um diagrama de modelagem UML  
   
@@ -106,14 +106,14 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
     Em alguns casos, você pode colocar um novo elemento dentro de outro elemento. Por exemplo, em um diagrama de classe UML, você pode colocar uma classe dentro de um pacote.  
   
    > [!NOTE]
-   >  Se você não conseguir ver a caixa de ferramentas, clique em **caixa de ferramentas** sobre o **exibição** menu.  
+   > Se você não conseguir ver a caixa de ferramentas, clique em **caixa de ferramentas** sobre o **exibição** menu.  
   
 2. Para criar uma relação, clique em uma ferramenta de relação, clique no elemento onde você deseja que a relação para iniciar e, em seguida, clique no elemento de onde você deseja que ele termine.  
   
     Diferentes tipos de relações podem iniciar ou terminar em diferentes tipos de elementos. Por exemplo, em um diagrama de classe UML, uma relação de associação não pode iniciar ou terminar em um elemento de comentário.  
   
    > [!NOTE]
-   >  Para usar a mesma ferramenta várias vezes, clique duas vezes a ferramenta. Quando você tiver terminado, clique o **ponteiro** ferramenta.  
+   > Para usar a mesma ferramenta várias vezes, clique duas vezes a ferramenta. Quando você tiver terminado, clique o **ponteiro** ferramenta.  
   
    Alguns tipos de diagramas, você também pode desenhar formas simples. Essas formas não são parte do modelo, mas você pode usá-los para chamar atenção para partes do diagrama ou dividi-la em áreas diferentes.  
   
@@ -121,14 +121,14 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
  Quando você redimensiona uma forma de cor ou redirecionar um conector, não há nenhum efeito sobre o modelo subjacente. No entanto, quando você renomeia uma forma no diagrama ou no Gerenciador de modelos UML, o elemento correspondente é renomeado no Gerenciador de modelos UML e em outros diagramas que apresentam esse elemento.  
   
 > [!NOTE]
->  Há uma maneira simples de fazer novos itens de caixa de ferramentas da qual você pode criar grupos de elementos ou elementos com sua própria escolha Propriedades. Para obter mais informações, consulte [definir um personalizado item de caixa de ferramentas de modelagem](../modeling/define-a-custom-modeling-toolbox-item.md).  
+> Há uma maneira simples de fazer novos itens de caixa de ferramentas da qual você pode criar grupos de elementos ou elementos com sua própria escolha Propriedades. Para obter mais informações, consulte [definir um personalizado item de caixa de ferramentas de modelagem](../modeling/define-a-custom-modeling-toolbox-item.md).  
   
  A figura a seguir mostra como alterar o tamanho de uma forma ou seu nome.  
   
  ![Ajustando um elemento de modelo](../modeling/media/uml-drawadjust1.png "UML_DrawAdjust1")  
   
 > [!TIP]
->  Os comandos internos não incluem um comando para organizadamente alinhar formas. No entanto, você pode criar facilmente seu próprio comando de alinhamento, copiando o código no exemplo na [exibir um modelo UML em diagramas](../modeling/display-a-uml-model-on-diagrams.md).  
+> Os comandos internos não incluem um comando para organizadamente alinhar formas. No entanto, você pode criar facilmente seu próprio comando de alinhamento, copiando o código no exemplo na [exibir um modelo UML em diagramas](../modeling/display-a-uml-model-on-diagrams.md).  
   
  A figura a seguir mostra como ajustar a rota e a posição de um conector ou seus rótulos.  
   
@@ -178,12 +178,12 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
      Sobre o **edite** , aponte para **localizar e substituir**e, em seguida, clique em **localização rápida**.  
   
     > [!NOTE]
-    >  No **localizar e substituir** caixa de diálogo, você deve deixar o **examinar** campo definido como **documento atual**. Não há suporte para as outras opções.  
+    > No **localizar e substituir** caixa de diálogo, você deve deixar o **examinar** campo definido como **documento atual**. Não há suporte para as outras opções.  
   
 2. Digite o texto que você deseja localizar e, em seguida, clique em **Localizar próximo**.  
   
     > [!NOTE]
-    >  Se o texto que você deseja localizar estiver dentro de uma forma recolhida, a forma será realçada. Expandir a forma e, em seguida, clique em **Localizar próximo** novamente.  
+    > Se o texto que você deseja localizar estiver dentro de uma forma recolhida, a forma será realçada. Expandir a forma e, em seguida, clique em **Localizar próximo** novamente.  
   
 ## <a name="Undo"></a> Desfazendo alterações ao modelo  
  Você pode desfazer e refazer alterações que você fez para o modelo e os diagramas usando o **desfazer** e **Refazer** os comandos no **editar** menu.  
@@ -216,7 +216,7 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
      Uma forma de fornecer que uma exibição do elemento de modelo é exibida, que pode ser além das exibições em outros diagramas ou no mesmo diagrama.  
   
     > [!NOTE]
-    >  O efeito é diferente quando você arrasta uma classe ou um componente para um diagrama de sequência. Nesse caso, uma nova linha da vida é criada cujo tipo é a classe ou componente. Para obter mais informações, consulte [diagramas de sequência UML: Diretrizes de](../modeling/uml-sequence-diagrams-guidelines.md).  
+    > O efeito é diferente quando você arrasta uma classe ou um componente para um diagrama de sequência. Nesse caso, uma nova linha da vida é criada cujo tipo é a classe ou componente. Para obter mais informações, consulte [diagramas de sequência UML: Diretrizes de](../modeling/uml-sequence-diagrams-guidelines.md).  
   
 #### <a name="to-add-a-new-view-of-a-model-element-by-using-paste-reference"></a>Para adicionar uma nova exibição de um elemento de modelo usando Colar referência  
   
@@ -229,23 +229,23 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
      Outro modo de exibição do mesmo elemento aparece.  
   
     > [!NOTE]
-    >  Isso difere de **colar** comando, que cria um novo elemento no modelo. Para obter mais informações, consulte [copiando elementos e grupos de elementos relacionados](#Copying).  
+    > Isso difere de **colar** comando, que cria um novo elemento no modelo. Para obter mais informações, consulte [copiando elementos e grupos de elementos relacionados](#Copying).  
   
 > [!NOTE]
->  Se você adicionar um modos de exibição de diagrama de dois elementos de modelo que já estão conectados por uma relação, uma exibição da relação também aparecerão no diagrama. Você pode excluir este modo de exibição somente, removendo um dos elementos do diagrama ou excluindo a relação do modelo.  
+> Se você adicionar um modos de exibição de diagrama de dois elementos de modelo que já estão conectados por uma relação, uma exibição da relação também aparecerão no diagrama. Você pode excluir este modo de exibição somente, removendo um dos elementos do diagrama ou excluindo a relação do modelo.  
   
 ## <a name="Copying"></a> Copiando elementos e grupos de elementos relacionados  
  Você pode copiar e colar os elementos de modelo, e você pode copiar e colar os grupos de elementos junto com as relações entre eles.  
   
 > [!NOTE]
->  O **colar** e **Colar referência** comandos têm efeitos diferentes. **Colar** cria novos elementos cujas propriedades serão semelhantes dos elementos copiados. **Colar referência** cria novos modos de exibição os mesmos elementos.  
+> O **colar** e **Colar referência** comandos têm efeitos diferentes. **Colar** cria novos elementos cujas propriedades serão semelhantes dos elementos copiados. **Colar referência** cria novos modos de exibição os mesmos elementos.  
   
 #### <a name="to-copy-elements-and-their-relationships"></a>Para copiar elementos e suas relações  
   
 1. No diagrama com os elementos que você deseja copiar, selecione um ou mais elementos.  
   
     > [!NOTE]
-    >  É possível copiar as relações, exceto como parte de um grupo de elementos.  
+    > É possível copiar as relações, exceto como parte de um grupo de elementos.  
   
 2. Sobre o **edite** menu, clique em **cópia**.  
   
@@ -260,7 +260,7 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
 5. Ajuste as posições, nomes e outras propriedades dos novos elementos e relações.  
   
 > [!NOTE]
->  É possível copiar um elemento de modelo de um modelo para outro, por exemplo, se você tiver dois modelos na mesma solução. Mas você pode copiar elementos de um diagrama para outro.  
+> É possível copiar um elemento de modelo de um modelo para outro, por exemplo, se você tiver dois modelos na mesma solução. Mas você pode copiar elementos de um diagrama para outro.  
   
 #### <a name="to-copy-an-entire-diagram"></a>Para copiar o diagrama inteiro  
   
@@ -276,7 +276,7 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
  Por outro lado, quando você exclui uma relação de um diagrama, você sempre é excluí-lo do modelo.  
   
 > [!NOTE]
->  Determinados tipos de elementos em um diagrama UML têm rótulos. Quando você seleciona a esses elementos ao desenhar um retângulo ao redor deles, é possível selecionar os rótulos, mas não os elementos que possuem esses rótulos. Não há suporte para a exclusão de um subconjunto de elementos que são selecionadas dessa maneira. Para selecionar um subconjunto desses elementos, pressione e segure a **CTRL** pressionada enquanto você clica em cada elemento.  
+> Determinados tipos de elementos em um diagrama UML têm rótulos. Quando você seleciona a esses elementos ao desenhar um retângulo ao redor deles, é possível selecionar os rótulos, mas não os elementos que possuem esses rótulos. Não há suporte para a exclusão de um subconjunto de elementos que são selecionadas dessa maneira. Para selecionar um subconjunto desses elementos, pressione e segure a **CTRL** pressionada enquanto você clica em cada elemento.  
   
 #### <a name="to-remove-a-classifiers-view-from-a-diagram"></a>Para remover o modo de exibição do classificador de um diagrama  
   
@@ -303,7 +303,7 @@ Você pode criar e editar um modelo UML por meio de modos de exibição fornecid
 - Clique com botão direito na relação em um diagrama ou no **Gerenciador de modelos UML**e, em seguida, clique em **excluir do modelo**.  
   
     > [!CAUTION]
-    >  É possível remover uma relação de um diagrama sem removê-lo do modelo.  
+    > É possível remover uma relação de um diagrama sem removê-lo do modelo.  
   
      A relação é excluída do modelo e é excluída de todos os diagramas no qual ele aparece.  
   

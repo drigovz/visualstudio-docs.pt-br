@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4c270ff9a31073835d8f907547cf0f532e237b1e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c7d74b731bd1857330c40a7929d84efe40a03201
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089452"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431245"
 ---
 # <a name="how-to-add-an-entity-to-a-model"></a>Como: Adicionar uma entidade a um modelo
   Para criar uma entidade, adicione um controle de entidade do Visual Studio **caixa de ferramentas** para o designer de conectividade de dados comerciais (BDC).
@@ -40,7 +40,7 @@ ms.locfileid: "60089452"
      Um novo identificador aparece na entidade.
 
     > [!NOTE]
-    >  Você pode alterar o nome da entidade e o identificador na **propriedades** janela.
+    > Você pode alterar o nome da entidade e o identificador na **propriedades** janela.
 
 4. Defina os campos da entidade em uma classe. Você pode adicionar uma nova classe ao projeto ou usar uma classe existente criada usando outras ferramentas, como o Object Relational Designer (O/R Designer). O exemplo a seguir mostra uma classe de entidade chamada contato.
 

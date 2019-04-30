@@ -26,12 +26,12 @@ caps.latest.revision: 31
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 56c4270bd878ef127d60df80aa97d9d65f3d3132
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e75ab095284ec4021d3555de27b43205e17b1128
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444304"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>Passo a passo: Depurando um Windows Form
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -117,7 +117,7 @@ Um Windows Form é um dos aplicativos gerenciados mais comuns. Um Windows Form c
      Um ponto vermelho aparece e o texto da linha é realçado em vermelho. O ponto vermelho representa um ponto de interrupção. Para obter mais informações, confira [Pontos de interrupção](http://msdn.microsoft.com/fe4eedc1-71aa-4928-962f-0912c334d583). Quando você executa o aplicativo no depurador, o depurador interromperá a execução nesse local quando o código é atingido. Você pode exibir o estado do aplicativo e depurá-lo.  
   
     > [!NOTE]
-    >  Você também pode clicar com o botão direito do mouse em qualquer linha de código, apontar para **Ponto de Interrupção** e clicar em **Inserir Ponto de Interrupção** para adicionar um ponto de interrupção nessa linha.  
+    > Você também pode clicar com o botão direito do mouse em qualquer linha de código, apontar para **Ponto de Interrupção** e clicar em **Inserir Ponto de Interrupção** para adicionar um ponto de interrupção nessa linha.  
   
 2. No menu **Depurar**, escolha **Iniciar**.  
   

@@ -17,12 +17,12 @@ caps.latest.revision: 26
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 12a4f736217374eefa32dda30111da5e71fbab39
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 945edb462b1ba849a3a1b9fd6797c8393b651163
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110473"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437679"
 ---
 # <a name="view-dom-event-listeners"></a>Exibir os ouvintes de eventos do DOM
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Aplica-se ao Windows e Windows Phone] (... /Image/windows_and_phone_content.png 
  Lista os **eventos** guia é dinâmica. Se você adicionar um ouvinte de evento enquanto o aplicativo está em execução, o novo ouvinte de evento será exibido lá. Para obter informações sobre adição ou remoção de ouvintes de eventos, consulte [dicas para resolver problemas com ouvintes de eventos](#Tips) neste tópico.
 
 > [!NOTE]
->  Ouvintes de eventos para elementos de código que não são elementos DOM, como `xhr`, não aparecem na **eventos** guia.
+> Ouvintes de eventos para elementos de código que não são elementos DOM, como `xhr`, não aparecem na **eventos** guia.
 
 ## <a name="view-event-listeners-for-dom-elements"></a>Visualizar ouvintes de evento para elementos DOM
  Este exemplo mostra um aplicativo da Windows Phone Store. O recurso Explorador do DOM descrito aqui também tem suporte para aplicativos da Windows Store.

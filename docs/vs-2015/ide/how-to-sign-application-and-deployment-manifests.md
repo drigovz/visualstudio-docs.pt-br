@@ -18,12 +18,12 @@ caps.latest.revision: 61
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ef782929b24d6f5e06c8e64aec53763481c503eb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ddeb3fa5414208c610a7a21e176d55b0b0f985b5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60051695"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435188"
 ---
 # <a name="how-to-sign-application-and-deployment-manifests"></a>Como: Assinar manifestos de aplicativo e implantação
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os 
  Para obter informações sobre como criar arquivos de chave, veja [Como: criar um par de chaves pública/privada](http://msdn.microsoft.com/library/05026813-f3bd-4d7c-9e0b-fc588eb3d114).  
   
 > [!NOTE]
->  O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dá suporte apenas a arquivos de chave de Troca de Informações Pessoais (PFX) que têm a extensão .pfx. No entanto, é possível selecionar outros tipos de certificados do repositório de certificados do Windows do usuário atual, clicando em **Selecionar do Repositório** na página **Assinatura** das propriedades do projeto.  
+> O [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] dá suporte apenas a arquivos de chave de Troca de Informações Pessoais (PFX) que têm a extensão .pfx. No entanto, é possível selecionar outros tipos de certificados do repositório de certificados do Windows do usuário atual, clicando em **Selecionar do Repositório** na página **Assinatura** das propriedades do projeto.  
   
 ### <a name="to-sign-application-and-deployment-manifests-using-a-certificate"></a>Para assinar os manifestos do aplicativo e de implantação usando um certificado  
   
@@ -48,7 +48,7 @@ Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os 
      A caixa de diálogo **Selecionar um Certificado** é exibida e mostra o conteúdo do repositório de certificados do Windows.  
   
     > [!TIP]
-    >  Se você clicar em **Clique aqui para exibir as propriedades do certificado**, a caixa de diálogo **Detalhes do Certificado** será exibida. Essa caixa de diálogo inclui informações detalhadas sobre o certificado, bem como outras opções. É possível clicar em **certificados** para exibir informações adicionais da Ajuda.  
+    > Se você clicar em **Clique aqui para exibir as propriedades do certificado**, a caixa de diálogo **Detalhes do Certificado** será exibida. Essa caixa de diálogo inclui informações detalhadas sobre o certificado, bem como outras opções. É possível clicar em **certificados** para exibir informações adicionais da Ajuda.  
   
 3. Selecione o certificado que você deseja usar para assinar os manifestos.  
   
@@ -65,7 +65,7 @@ Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os 
 3. Na caixa de diálogo **Selecionar Arquivo**, procure o local do arquivo de chave (.pfx) que você deseja usar e clique no botão **Abrir**.  
   
     > [!NOTE]
-    >  Essa opção dá suporte apenas aos arquivos que têm a extensão .pfx. Se você tiver um arquivo de chave ou um certificado em outro formato, armazene-o no repositório de certificados do Windows e selecione o certificado que é descrito no procedimento anterior. A finalidade do certificado selecionado deve incluir a assinatura de código.  
+    > Essa opção dá suporte apenas aos arquivos que têm a extensão .pfx. Se você tiver um arquivo de chave ou um certificado em outro formato, armazene-o no repositório de certificados do Windows e selecione o certificado que é descrito no procedimento anterior. A finalidade do certificado selecionado deve incluir a assinatura de código.  
   
      A caixa de diálogo **Inserir senha para abrir o arquivo** é exibida. (Se o arquivo .pfx já estiver armazenado no repositório de certificados do Windows ou não for protegido por senha, você não precisará inserir uma senha.)  
   
@@ -83,7 +83,7 @@ Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os 
  A assinatura dos manifestos do ClickOnce é opcional para aplicativos baseados em .exe. Os procedimentos a seguir mostram como gerar manifestos não assinados do ClickOnce.  
   
 > [!IMPORTANT]
->  Manifestos não assinados podem simplificar o desenvolvimento e o teste do aplicativo. No entanto, os manifestos não assinados introduzem riscos de segurança significativos em um ambiente de produção. Apenas considere o uso de manifestos não assinados se o aplicativo ClickOnce for executado em computadores em uma intranet que está completamente isolada da Internet ou de outras fontes de código mal-intencionado.  
+> Manifestos não assinados podem simplificar o desenvolvimento e o teste do aplicativo. No entanto, os manifestos não assinados introduzem riscos de segurança significativos em um ambiente de produção. Apenas considere o uso de manifestos não assinados se o aplicativo ClickOnce for executado em computadores em uma intranet que está completamente isolada da Internet ou de outras fontes de código mal-intencionado.  
   
  Por padrão, o ClickOnce gera manifestos assinados automaticamente, a menos que um ou mais arquivos sejam excluídos especificamente do hash gerado. Em outras palavras, a publicação do aplicativo resultará em manifestos assinados se todos os arquivos forem incluídos no hash, mesmo quando a caixa de seleção **Assinar os manifestos do ClickOnce** estiver desmarcada.  
   
@@ -104,7 +104,7 @@ Se você desejar publicar um aplicativo usando a implantação do ClickOnce, os 
 2. Abra a caixa de diálogo **Arquivos do Aplicativo** e defina o **Hash** como **Excluir** para os arquivos que você deseja excluir do hash gerado.  
   
     > [!NOTE]
-    >  A exclusão de um arquivo do hash configura o ClickOnce para desabilitar a assinatura automática dos manifestos; portanto, você não precisa primeiro publicar com manifestos assinados, conforme mostrado no procedimento anterior.  
+    > A exclusão de um arquivo do hash configura o ClickOnce para desabilitar a assinatura automática dos manifestos; portanto, você não precisa primeiro publicar com manifestos assinados, conforme mostrado no procedimento anterior.  
   
 3. Publique o aplicativo.  
   

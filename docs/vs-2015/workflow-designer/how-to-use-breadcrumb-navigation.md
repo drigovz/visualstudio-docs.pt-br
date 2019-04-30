@@ -9,12 +9,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 97cfb7ddba95ccf4c2f74e7c924c6f62b91254a5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 64f84d33a814937df74002ffeb2fe7453694377e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109693"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444146"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>Como: Usar a navegação estrutural
 Existem três maneiras principais de alterar o conjunto de atividades que são exibidas em [!INCLUDE[wfd1](../includes/wfd1-md.md)]:  
@@ -38,7 +38,7 @@ Existem três maneiras principais de alterar o conjunto de atividades que são e
 2. Quando o estado do estado de expansão é alterado clicando no botão, o novo estado de expansão é salvo em XAML.  
   
     > [!WARNING]
-    >  Nem todas as atividades podem ser expandidos no lugar. Há dois casos quando uma atividade não pode ser expandida no local: ou o pai da atividade não permite seus filhos sejam expandidos no lugar, (por exemplo, as atividades em um fluxograma não podem ser expandidos no local), ou o designer de atividade não se permite que é expandido no lugar. Embora nenhum dos designers atividade estão incluídos em [!INCLUDE[wfd2](../includes/wfd2-md.md)] tenham o último comportamento, quaisquer atividades personalizados podem exibir esse comportamento.  
+    > Nem todas as atividades podem ser expandidos no lugar. Há dois casos quando uma atividade não pode ser expandida no local: ou o pai da atividade não permite seus filhos sejam expandidos no lugar, (por exemplo, as atividades em um fluxograma não podem ser expandidos no local), ou o designer de atividade não se permite que é expandido no lugar. Embora nenhum dos designers atividade estão incluídos em [!INCLUDE[wfd2](../includes/wfd2-md.md)] tenham o último comportamento, quaisquer atividades personalizados podem exibir esse comportamento.  
   
 ### <a name="expanding-all-or-collapsing-all-activities"></a>Tudo expandir ou recolher todas as atividades  
   
@@ -47,7 +47,7 @@ Existem três maneiras principais de alterar o conjunto de atividades que são e
 2. Depois que você aplicou qualquer expandir ou recolhe qualquer estado, você pode clicar na **restaurar** botão que aparece para voltar para examinar o estado anteriormente aplicado a cada atividade.  
   
     > [!WARNING]
-    >  Se uma atividade, como <xref:System.Activities.Statements.Flowchart>, optou fora de expanda local, a funcionalidade associada com o **Expandir tudo** e **Recolher tudo** botões está desabilitado no **fluxograma**  designer. [!INCLUDE[crabout](../includes/crabout-md.md)] o **fluxograma** designer, consulte o [fluxograma](../workflow-designer/flowchart-activity-designer.md) tópico.  
+    > Se uma atividade, como <xref:System.Activities.Statements.Flowchart>, optou fora de expanda local, a funcionalidade associada com o **Expandir tudo** e **Recolher tudo** botões está desabilitado no **fluxograma**  designer. [!INCLUDE[crabout](../includes/crabout-md.md)] o **fluxograma** designer, consulte o [fluxograma](../workflow-designer/flowchart-activity-designer.md) tópico.  
   
     > [!WARNING]
-    >  Expandir tudo também tem um efeito especial **comutador** e **TryCatch** designers de atividade. Quando você clica em **Expandir tudo**, todos os casos de comutador e todos os blocos try/catch/finally são exibidos. Clicando em **restaurar** ou **Recolher tudo** retorna esses designers para seu estado padrão, no qual você pode clicar em um casos/bloco individuais para exibir seu conteúdo.
+    > Expandir tudo também tem um efeito especial **comutador** e **TryCatch** designers de atividade. Quando você clica em **Expandir tudo**, todos os casos de comutador e todos os blocos try/catch/finally são exibidos. Clicando em **restaurar** ou **Recolher tudo** retorna esses designers para seu estado padrão, no qual você pode clicar em um casos/bloco individuais para exibir seu conteúdo.

@@ -15,12 +15,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: 46a9b8ce099146b6bae853557404c7bfabbbfb6a
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 0eadff91e8762349ec95c2d9f3bf5717bfecaa4a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58928318"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435028"
 ---
 # <a name="ca2115-call-gckeepalive-when-using-native-resources"></a>CA2115: Chamar GC.KeepAlive ao usar recursos nativos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "58928318"
  Esta regra pressupõe que <xref:System.IntPtr> e <xref:System.UIntPtr> campos armazenam ponteiros para recursos não gerenciados. Como a finalidade de um finalizador é liberar recursos não gerenciados, a regra pressupõe que o finalizador irá liberar o recurso não gerenciado, apontado para os campos de ponteiro. Essa regra também pressupõe que o método está referenciando o campo de ponteiro para passar o recurso não gerenciado para código não gerenciado.
 
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações
- Para corrigir uma violação dessa regra, adicione uma chamada para <xref:System.GC.KeepAlive%2A> para o método, passando a instância atual (`this` em C# e C++) como o argumento. Posicione a chamada após a última linha de código em que o objeto deve ser protegido de coleta de lixo. Imediatamente após a chamada para <xref:System.GC.KeepAlive%2A>, o objeto é considerado novamente pronto para a coleta de lixo supondo que nenhuma referência gerenciada para ele.
+ Para corrigir uma violação dessa regra, adicione uma chamada para <xref:System.GC.KeepAlive%2A> para o método, passando a instância atual (`this` em c# e C++) como o argumento. Posicione a chamada após a última linha de código em que o objeto deve ser protegido de coleta de lixo. Imediatamente após a chamada para <xref:System.GC.KeepAlive%2A>, o objeto é considerado novamente pronto para a coleta de lixo supondo que nenhuma referência gerenciada para ele.
 
 ## <a name="when-to-suppress-warnings"></a>Quando Suprimir Avisos
  Essa regra faz algumas suposições que podem resultar em falsos positivos. Com segurança, você pode suprimir um aviso nessa regra se:
@@ -56,7 +56,7 @@ ms.locfileid: "58928318"
  No exemplo a seguir `BadMethod` não inclui uma chamada para `GC.KeepAlive` e, portanto, viola a regra. `GoodMethod` contém o código corrigido.
 
 > [!NOTE]
->  Este exemplo é o pseudocódigo Embora o código compila e executa, o aviso não é acionado porque um recurso não gerenciado não é criado ou liberado.
+> Este exemplo é o pseudocódigo Embora o código compila e executa, o aviso não é acionado porque um recurso não gerenciado não é criado ou liberado.
 
  [!code-csharp[FxCop.Security.IntptrAndFinalize#1](../snippets/csharp/VS_Snippets_CodeAnalysis/FxCop.Security.IntptrAndFinalize/cs/FxCop.Security.IntptrAndFinalize.cs#1)]
 

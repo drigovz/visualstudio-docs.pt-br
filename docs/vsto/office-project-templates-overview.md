@@ -30,12 +30,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49cb0af47f34abbda5bd212d8ce535e98c44d6b5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 4e998b2367929f788ace5fb6a8de7fc5bb96c3e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054567"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438768"
 ---
 # <a name="office-project-templates-overview"></a>Visão geral de modelos de projeto do Office
   As ferramentas de desenvolvedor do Microsoft Office no Visual Studio incluem modelos de projeto para criar os seguintes tipos de soluções do Office:
@@ -77,7 +77,7 @@ ms.locfileid: "60054567"
   Os modelos de projeto do Modelo do Excel e Modelo do Word se comportam de forma idêntica aos modelos de projeto da Pasta de Trabalho do Excel e do Documento do Word. No entanto, os modelos de projeto do Modelo do Word e Modelo do Excel tornam mais fácil para os usuários criar novas cópias locais de documento ou pasta de trabalho do modelo personalizado em sua solução. Os recursos em sua solução estão disponíveis no novo documento que o usuário cria do modelo.
 
 > [!NOTE]
->  Modelos do Word que fazem referência a extensões de código gerenciado não podem ser usados como global VSTO Add-ins. O assembly não será chamado se o modelo for carregado do diretório Inicialização do Word. Para obter mais informações, consulte [limitações de modelos globais e Excel Add-ins (arquivos. xla)](#Limitations)
+> Modelos do Word que fazem referência a extensões de código gerenciado não podem ser usados como global VSTO Add-ins. O assembly não será chamado se o modelo for carregado do diretório Inicialização do Word. Para obter mais informações, consulte [limitações de modelos globais e Excel Add-ins (arquivos. xla)](#Limitations)
 
  Para obter informações sobre como começar esses tipos de projeto, consulte os seguintes tópicos:
 

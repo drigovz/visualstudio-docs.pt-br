@@ -8,12 +8,12 @@ ms.assetid: 1da4064f-af69-472c-8f31-98484be5f790
 caps.latest.revision: 14
 ms.author: crdun
 manager: crdun
-ms.openlocfilehash: a38e711a8a0244992f9958b4d48920f3437a8329
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: 098d94a1aed9020271db5010e278a4aa8fc68330
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59666514"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442124"
 ---
 # <a name="visual-studio-and-xamarin"></a>Visual Studio e Xamarin
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -35,7 +35,7 @@ O Xamarin é uma plataforma de desenvolvimento de aplicativos móveis para compi
   Você pode trabalhar com todos os recursos de Xamarin por meio de [qualquer edição do Visual Studio 2015](https://www.visualstudio.com/vs-2015-product-editions) (Community, Professional e Enterprise). Observe também que a partir de 31 de março de 2016, o Xamarin está incluído em todas as edições do Visual Studio 2015 e não exige uma licença separada. Para o Visual Studio 2013, você pode instalar o Xamarin separadamente, conforme o tópico [Configuração e instalação](../cross-platform/setup-and-install.md) descreve.  
   
 > [!NOTE]
->  Essas instruções descrevem a configuração de computador mais fácil e direta para aqueles que têm uma tela de fundo do Windows e o Visual Studio. Com essa configuração, a experiência geral de desenvolvimento é simplificada porque você só precisa interagir com o Mac para usar o simulador de iOS e dispositivos vinculados. Se, você vem em vez disso, você usar uma tela de fundo do Mac, recomendamos a execução do Visual Studio no Parallels/VMWare ou o uso do Xamarin Studio Community. Consulte [Configuração, instalação e verificações para usuários do Mac](../cross-platform/setup-install-and-verifications-for-mac-users.md) Microsoft Docs.  
+> Essas instruções descrevem a configuração de computador mais fácil e direta para aqueles que têm uma tela de fundo do Windows e o Visual Studio. Com essa configuração, a experiência geral de desenvolvimento é simplificada porque você só precisa interagir com o Mac para usar o simulador de iOS e dispositivos vinculados. Se, você vem em vez disso, você usar uma tela de fundo do Mac, recomendamos a execução do Visual Studio no Parallels/VMWare ou o uso do Xamarin Studio Community. Consulte [Configuração, instalação e verificações para usuários do Mac](../cross-platform/setup-install-and-verifications-for-mac-users.md) Microsoft Docs.  
   
 > [!NOTE]
->  Se você estiver procurando por uma solução de desenvolvimento de multiplataforma com base em HTML e CSS, confira as Ferramentas do Visual Studio para Apache Cordova conforme descrito em [Desenvolvimento de Multiplataforma no Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML).
+> Se você estiver procurando por uma solução de desenvolvimento de multiplataforma com base em HTML e CSS, confira as Ferramentas do Visual Studio para Apache Cordova conforme descrito em [Desenvolvimento de Multiplataforma no Visual Studio](../cross-platform/cross-platform-mobile-development-in-visual-studio.md#HTML).

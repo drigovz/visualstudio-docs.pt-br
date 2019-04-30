@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 3cb1793407b7baa3d290d43b0c0ef5a815cb8c40
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 386fee1c5c7da4eb06618d0afc522648b5248c6a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116960"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438642"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>Passo a passo: Alterar os dados armazenados em cache em uma pasta de trabalho em um servidor
   Este passo a passo demonstra como modificar um conjunto de dados é armazenado em cache em uma pasta de trabalho do Microsoft Office Excel sem iniciar o Excel usando o <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> classe.
@@ -43,7 +43,7 @@ ms.locfileid: "60116960"
   Embora este passo a passo pressupõe que você está executando o código no computador de desenvolvimento, o código demonstrado por este passo a passo pode ser usado em um servidor que não tenha o Excel instalado.
 
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
@@ -269,7 +269,7 @@ ms.locfileid: "60116960"
    - Um <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> objeto a ser usado para acessar o cache de dados na pasta de trabalho.
 
      > [!NOTE]
-     >  O código a seguir pressupõe que você está usando uma pasta de trabalho que tem o *. xlsx* extensão de arquivo. Se a pasta de trabalho em seu projeto tem uma extensão de arquivo diferente, modifique o caminho conforme necessário.
+     > O código a seguir pressupõe que você está usando uma pasta de trabalho que tem o *. xlsx* extensão de arquivo. Se a pasta de trabalho em seu projeto tem uma extensão de arquivo diferente, modifique o caminho conforme necessário.
 
      [!code-csharp[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#6)]
      [!code-vb[Trin_CachedDataWalkthroughs#6](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#6)]

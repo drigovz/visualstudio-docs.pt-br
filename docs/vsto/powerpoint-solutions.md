@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8ae3d06b2f031ed2deede1a80bec356a0abd939e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ee1e5eddf89e60434a083293cdc08998dfe1b41d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445224"
 ---
 # <a name="powerpoint-solutions"></a>Soluções PowerPoint
   Visual Studio fornece modelos de projeto, que você pode usar para criar suplementos do VSTO para PowerPoint do Microsoft Office. Você pode usar suplementos do VSTO para automatizar o PowerPoint, estender os recursos do PowerPoint ou personalizar a interface de usuário (IU) do PowerPoint.
@@ -32,7 +32,7 @@ ms.locfileid: "60040212"
  [!INCLUDE[appliesto_pptallapp](../vsto/includes/appliesto-pptallapp-md.md)]
 
 > [!NOTE]
->  Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
+> Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
 
  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Criar um suplemento para o Microsoft PowerPoint? ](http://go.microsoft.com/fwlink/?LinkId=132767).
 

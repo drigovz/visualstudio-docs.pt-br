@@ -13,12 +13,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: a994db84762a18b4bf5201b5e1253d25d7a701b6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c679f9a322d079f5037cea1e48fa8690daceb496
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101074"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446981"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>Passo a passo: Importar de uma região de formulário projetada no Outlook
   Este passo a passo demonstra como criar uma região de formulário no Microsoft Office Outlook e, em seguida, importe a região do formulário para um projeto de suplemento do VSTO do Outlook usando o **nova região de formulário** assistente. Criando a região de formulário do Outlook torna possível para adicionar controles nativos do Outlook para a região de formulário associar a dados do Outlook. Depois de importar a região do formulário, você pode manipular os eventos de cada controle.
@@ -43,7 +43,7 @@ ms.locfileid: "60101074"
 - [!INCLUDE[Outlook_15_short](../vsto/includes/outlook-15-short-md.md)] ou [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)].
 
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
  ![link para vídeo](../vsto/media/playvideo.gif "link para vídeo") para uma demonstração em vídeo relacionada, consulte [como fazer: Criar regiões de formulário do Outlook usando o Visual Studio 2008? ](http://go.microsoft.com/fwlink/?LinkID=130305).
 ## <a name="design-a-form-region-by-using-the-form-region-designer-in-outlook"></a>Cria uma região de formulário usando o designer de região de formulário do Outlook

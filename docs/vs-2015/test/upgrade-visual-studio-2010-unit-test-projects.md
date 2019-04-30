@@ -8,12 +8,12 @@ ms.assetid: f1502b51-d6db-4894-9fbf-4a5723e4bb1a
 caps.latest.revision: 8
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 63e6be6a6b7c3e739ab590dd9f952fbb5988176b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: c66d8ba2f630812b08358fa3557035f58266ef00
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54788633"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445912"
 ---
 # <a name="upgrade-visual-studio-2010-unit-test-projects"></a>Atualizar projetos de teste de unidade do Visual Studio 2010
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -23,13 +23,13 @@ ms.locfileid: "54788633"
  [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] apresenta várias alterações para testes de unidade. Em virtude dessas alterações, é importante entender questões de compatibilidade entre as versões anteriores do Visual Studio e [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Entre as alterações de teste de unidade, uma alteração significativa é que [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] inclui mais de um modelo de projeto de teste, incluindo um modelo de projeto de teste de unidade. Novos testes de unidade são adicionados ao novo modelo de projeto de teste de unidade. Testes de unidade também podem ser incluídos em outro novo modelo de projeto de teste chamado “modelo de projeto de teste de IU codificado”. Para obter mais informações sobre os novos modelos de projeto de teste, consulte [Atualizar Testes de Versões Anteriores do Visual Studio](http://msdn.microsoft.com/e9c8b7f6-bd72-448e-8edb-d090dcc5cf52). Os novos projetos de teste de unidade não incluem um arquivo de configurações de teste padrão. Ao excluir o arquivo de configurações de teste, o desempenho dos testes de unidade melhora. Em relação à compatibilidade, ainda é possível usar os projetos de teste existentes criados com o Visual Studio 2010. No entanto, recomendamos a remoção do arquivo de configurações de teste associado ao projeto de teste por motivos de desempenho, a menos que você tenha uma necessidade específica para o arquivo de configurações de teste. Por exemplo, você pode optar por manter o arquivo de configurações de teste se seus testes de unidade forem executados em um ambiente distribuído ou se precisar coletar dados de diagnóstico específicos. Caso você tenha uma necessidade semelhante ao usar o novo modelo de projeto de teste de unidade ou projeto de teste de IU codificado, também é possível adicionar o arquivo de configurações de teste a eles manualmente.
 
 > [!NOTE]
->  Os testes de unidade existentes nos projetos de teste SP1 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] funcionarão perfeitamente entre SP1 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] e [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Nenhuma alteração será feita nos arquivos de projeto de teste quando um projeto de teste do Visual Studio 2010 que contém seus testes de unidade estiver aberto em [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou vice-versa.
+> Os testes de unidade existentes nos projetos de teste SP1 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] funcionarão perfeitamente entre SP1 [!INCLUDE[vs_dev10_long](../includes/vs-dev10-long-md.md)] e [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)]. Nenhuma alteração será feita nos arquivos de projeto de teste quando um projeto de teste do Visual Studio 2010 que contém seus testes de unidade estiver aberto em [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)] ou vice-versa.
 
 > [!CAUTION]
->  O Visual Studio 2010 não pode abrir um projeto C++/CLI que tem como destino o conjunto de ferramentas 11.0, ou seja, um projeto criado no Visual Studio 2012. Essa restrição se aplica a todos os projetos C++/CLI e não apenas a projetos de teste de unidade C++/CLI.
+> O Visual Studio 2010 não pode abrir um projeto C++/CLI que tem como destino o conjunto de ferramentas 11.0, ou seja, um projeto criado no Visual Studio 2012. Essa restrição se aplica a todos os projetos C++/CLI e não apenas a projetos de teste de unidade C++/CLI.
 
 > [!NOTE]
->  É possível executar os novos testes de unidade usando vstest.console.exe na linha de comando. Para obter mais informações sobre como usar vstest.console.exe, consulte [Opções da linha de comando de VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11) ou execute o comando usando a opção de Ajuda: **vstest.console.exe /?**. Você pode continuar a executar seus testes de unidade existentes usando MStest.exe. Para obter mais informações, consulte [Executar testes automatizados da linha de comando usando o MSTest](http://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581) e [Opções da linha de comando de MSTest.exe](http://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36).
+> É possível executar os novos testes de unidade usando vstest.console.exe na linha de comando. Para obter mais informações sobre como usar vstest.console.exe, consulte [Opções da linha de comando de VSTest.Console.exe](http://msdn.microsoft.com/library/52e1689d-b1a8-4589-bd98-99a55acd0a11) ou execute o comando usando a opção de Ajuda: **vstest.console.exe /?**. Você pode continuar a executar seus testes de unidade existentes usando MStest.exe. Para obter mais informações, consulte [Executar testes automatizados da linha de comando usando o MSTest](http://msdn.microsoft.com/library/39b61ad0-0055-44b5-963f-25d8a6b51581) e [Opções da linha de comando de MSTest.exe](http://msdn.microsoft.com/library/8813ba7f-e790-4e92-9f91-7080508a1c36).
 
  Outra alteração significativa é o novo Gerenciador de Testes. Em [!INCLUDE[vs_dev11_long](../includes/vs-dev11-long-md.md)], algumas janelas de teste de versões anteriores do Visual Studio com as quais você pode estar familiarizado foram preteridas, como a janela Modo de Teste. O Gerenciador de Testes foi projetado para oferecer um suporte melhor para desenvolvedores e equipes que incorporam testes de unidade em suas práticas de desenvolvimento de software. Para obter mais informações, consulte [Executar testes de unidade com o Gerenciador de Testes](../test/run-unit-tests-with-test-explorer.md).
 

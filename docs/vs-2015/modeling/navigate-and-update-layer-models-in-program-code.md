@@ -12,12 +12,12 @@ caps.latest.revision: 22
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 9f5211075a1f8e58cf738b994872e7588897b2ba
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 05a7b50c15c3bc1953e4be3d13809fd9db64f052
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435019"
 ---
 # <a name="navigate-and-update-layer-models-in-program-code"></a>Navegar e atualizar modelos de camada no código do programa
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ IEnumerable<ILayerComment> comments =
 ```  
   
 > [!CAUTION]
->  A propriedade `Comments` de uma `ILayer` recebe comentários que estão contidos na `ILayer`. Não recebe os comentários vinculados a ela.  
+> A propriedade `Comments` de uma `ILayer` recebe comentários que estão contidos na `ILayer`. Não recebe os comentários vinculados a ela.  
   
  Crie um comentário, invocando `CreateComment()` no contêiner adequado.  
   

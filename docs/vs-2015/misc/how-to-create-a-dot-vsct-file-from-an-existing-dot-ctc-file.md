@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 700e80a4-c1e1-4178-af53-45e86dd2c08b
 caps.latest.revision: 9
 manager: jillfra
-ms.openlocfilehash: 2d5ba5a271cd7132d9750fc0569b801022aeb932
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7b963436e9d968dd5ba3829e97d0fd0c52e49641
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60117844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63443015"
 ---
 # <a name="how-to-create-a-vsct-file-from-an-existing-ctc-file"></a>Como: Criar um. Arquivo VSCT de um existente. Arquivos CTC
 Você pode criar um arquivo. VSCT de baseado em XML de um arquivo de código-fonte do comando tabela. ctc existente. Ao fazer isso, você pode tirar proveito do novo com base em XML [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] formato de compilador de tabela (VSCT) do comando.  
@@ -42,7 +42,7 @@ Você pode criar um arquivo. VSCT de baseado em XML de um arquivo de código-fon
      Isso cria um novo arquivo. VSCT XML comando tabela fonte. Você pode compilar o arquivo usando Vsct.exe, o compilador VSCT, como você faria com qualquer outro arquivo. VSCT.  
   
     > [!NOTE]
-    >  Você pode melhorar a legibilidade do arquivo. VSCT, reformatar os comentários XML.  
+    > Você pode melhorar a legibilidade do arquivo. VSCT, reformatar os comentários XML.  
   
 ## <a name="see-also"></a>Consulte também  
  [Como: Criar um. Arquivo VSCT](../extensibility/internals/how-to-create-a-dot-vsct-file.md)   

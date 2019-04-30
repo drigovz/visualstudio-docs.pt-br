@@ -9,12 +9,12 @@ caps.latest.revision: 17
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6b060f35abf79d76e17f847e6b4b296c253a4b30
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 437e541fab1559c65c410d94a8911c158aa3592e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54766102"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438928"
 ---
 # <a name="memory-usage"></a>Uso de Memória
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,18 +34,18 @@ Encontre vazamentos de memória e memória ineficiente enquanto estiver depurand
   Você também pode usar a ferramenta de memória fora do depurador. Confira [Uso de memória sem depuração](http://msdn.microsoft.com/library/8883bc5f-df86-4f84-aa2b-a21150f499b0).  
   
 > [!NOTE]
->  **Suporte de alocador personalizado** O criador de perfil de memória nativa funciona com a coleta de dados de evento [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) de alocação emitidos durante o tempo de execução.  Os alocadores no CRT e no SDK do Windows foram anotados no nível de origem para que seus dados de alocação possam ser capturados.  Se você estiver escrevendo seus próprios alocadores, todas as funções que retornam um ponteiro para um heap de memória recém-alocada poderão ser decoradas com [declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(allocator), como visto neste exemplo de myMalloc:  
+> **Suporte de alocador personalizado** O criador de perfil de memória nativa funciona com a coleta de dados de evento [ETW](https://msdn.microsoft.com/library/windows/desktop/bb968803\(v=vs.85\).aspx) de alocação emitidos durante o tempo de execução.  Os alocadores no CRT e no SDK do Windows foram anotados no nível de origem para que seus dados de alocação possam ser capturados.  Se você estiver escrevendo seus próprios alocadores, todas as funções que retornam um ponteiro para um heap de memória recém-alocada poderão ser decoradas com [declspec](http://msdn.microsoft.com/library/832db681-e8e1-41ca-b78c-cd9d265cdb87)(allocator), como visto neste exemplo de myMalloc:  
 >   
->  `__declspec(allocator) void* myMalloc(size_t size)`  
+> `__declspec(allocator) void* myMalloc(size_t size)`  
   
 ## <a name="analyze-memory-use-with-the-debugger"></a>Analisar o uso da memória com o depurador  
   
 > [!NOTE]
->  Como a coleta de dados de memória pode afetar o desempenho de depuração de seus aplicativos mistos ou nativos, os instantâneos de memória são desabilitados por padrão. Para habilitar instantâneos de aplicativos mistos ou nativos, inicie uma sessão de depuração (Tecla de atalho: **F5**). Quando a janela **Ferramentas de Diagnóstico** é exibida, escolha a guia Uso de Memória e escolha **Habilitar instantâneos**.  
+> Como a coleta de dados de memória pode afetar o desempenho de depuração de seus aplicativos mistos ou nativos, os instantâneos de memória são desabilitados por padrão. Para habilitar aplicativos mistos ou nativos de instantâneos, inicie uma sessão de depuração (tecla de atalho: **F5**). Quando a janela **Ferramentas de Diagnóstico** é exibida, escolha a guia Uso de Memória e escolha **Habilitar instantâneos**.  
 >   
->  ![Habilitar instantâneos](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
+> ![Habilitar instantâneos](../profiling/media/dbgdiag-mem-mixedtoolbar-enablesnapshot.png "DBGDIAG_MEM_MixedToolbar_EnableSnapshot")  
 >   
->  Interrompa (tecla de atalho: **SHIFT + F5**) e reinicie a depuração.  
+> Interrompa (tecla de atalho: **SHIFT + F5**) e reinicie a depuração.  
   
  Sempre que você deseja capturar o estado da memória, escolha **Tirar instantâneo** na barra de ferramentas de resumo **Uso de Memória**.  
   
@@ -53,7 +53,7 @@ Encontre vazamentos de memória e memória ineficiente enquanto estiver depurand
   
 > [!TIP]
 > - Para criar uma linha de base para comparações de memória, tire um instantâneo no início da sessão de depuração.  
->   -   Como pode ser um desafio capturar o perfil de memória de uma operação de seu interesse quando o aplicativo aloca e desaloca memória com frequência, defina pontos de interrupção no início e no final da operação ou percorra a operação para localizar o ponto exato em que a memória foi alterada.  
+>   - Como pode ser um desafio capturar o perfil de memória de uma operação de seu interesse quando o aplicativo aloca e desaloca memória com frequência, defina pontos de interrupção no início e no final da operação ou percorra a operação para localizar o ponto exato em que a memória foi alterada.  
   
 ## <a name="viewing-memory-snapshot-details"></a>Exibindo detalhes do instantâneo de memória  
  As linhas da tabela de resumo Uso de Memória lista os instantâneos que você fez durante a sessão de depuração.  
@@ -104,13 +104,13 @@ Encontre vazamentos de memória e memória ineficiente enquanto estiver depurand
   
  O **Modo de exibição de tipos** exibe o número e tamanho dos tipos no instantâneo.  
   
--   Escolha o ícone de instâncias (![O ícone de instância na coluna Tipo de Objeto](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) de um tipo selecionado para exibir informações sobre os objetos do tipo selecionado no instantâneo.  
+- Escolha o ícone de instâncias (![O ícone de instância na coluna Tipo de Objeto](../misc/media/dbg-mma-instancesicon.png "DBG_MMA_InstancesIcon")) de um tipo selecionado para exibir informações sobre os objetos do tipo selecionado no instantâneo.  
   
      O modo de exibição **Instâncias** mostra cada instância do tipo selecionado. A seleção de uma instância exibe a pilha de chamadas resultou na criação da instância no painel **Pilha de Chamadas de Alocação**.  
   
      ![Modo de exibição de instâncias](../profiling/media/dbgdiag-mem-native-instances.png "DBGDIAG_MEM_Native_Instances")  
   
--   Escolha **Exibição de Pilhas** na lista **Exibir Modo** para ver a pilha de alocação do tipo selecionado.  
+- Escolha **Exibição de Pilhas** na lista **Exibir Modo** para ver a pilha de alocação do tipo selecionado.  
   
      ![Exibição de Pilhas](../profiling/media/dbgdiag-mem-native-stacksview.png "DBGDIAG_MEM_Native_StacksView")  
   
@@ -131,7 +131,7 @@ Encontre vazamentos de memória e memória ineficiente enquanto estiver depurand
 ## <a name="blogs-and-videos"></a>Blogs e vídeos  
  [Janela do depurador Ferramentas de Diagnóstico no Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2015/01/16/diagnostic-tools-debugger-window-in-visual-studio-2015.aspx)  
   
- [ Blog  Ferramenta de uso de memória durante a depuração no Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
+ [Blog: Ferramenta de uso de memória durante a depuração no Visual Studio 2015](http://blogs.msdn.com/b/visualstudioalm/archive/2014/11/13/memory-usage-tool-while-debugging-in-visual-studio-2015.aspx)  
   
  [Blog do Visual C++: Diagnóstico de memória nativa na visualização do VS2015](http://blogs.msdn.com/b/vcblog/archive/2014/11/21/native-memory-diagnostics-in-vs2015-preview.aspx)  
   

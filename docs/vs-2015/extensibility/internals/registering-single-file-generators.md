@@ -11,12 +11,12 @@ ms.assetid: db7592c0-1273-4843-9617-6e2ddabb6ca8
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bf0d5e29138f27956dff52571296395507d44976
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 1ced598c2a670cd79d7daeeac90f6807baf7d1dd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055412"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436601"
 ---
 # <a name="registering-single-file-generators"></a>Registrando geradores de arquivo único
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Para disponibilizar uma ferramenta personalizada no [!INCLUDE[vsprvs](../../incl
          Necessário. Indica se os tipos de arquivos gerados por essa ferramenta personalizada são disponibilizados aos designers visuais. O valor desse parâmetro precisa ser (zero) 0 para tipos não disponíveis aos designers visuais ou 1 (um) para os tipos disponíveis para designers visuais.  
   
     > [!NOTE]
-    >  Você deve registrar a ferramenta personalizada separadamente para cada idioma para o qual você deseja que a ferramenta personalizada esteja disponível.  
+    > Você deve registrar a ferramenta personalizada separadamente para cada idioma para o qual você deseja que a ferramenta personalizada esteja disponível.  
   
      Por exemplo, o MSDataSetGenerator se registra uma vez para cada idioma:  
   

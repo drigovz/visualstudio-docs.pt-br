@@ -16,12 +16,12 @@ caps.latest.revision: 19
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 6fa16f3587e0d70d8604aeadb33ee7807f6a22ea
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 502560791295bed256834f8a00bfb55ce5aa448a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60085656"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424614"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>Como: Definir permissões personalizadas para um aplicativo ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Você pode implantar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] a
 7. Antes do `</applicationRequestMinimum>` elemento, adicione o código XML para as permissões que seu aplicativo requer.  
   
     > [!NOTE]
-    >  Você pode usar o `ToXml` método de uma permissão definida para gerar o código XML para o manifesto do aplicativo. Por exemplo, para gerar o XML para o <xref:System.Security.Permissions.EnvironmentPermission> conjunto de permissões, chame o <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> método. Para obter mais informações sobre a estrutura da permissão do conjunto de XML, consulte [NIB: Como: Importar um conjunto de permissões usando um arquivo XML](http://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236).  
+    > Você pode usar o `ToXml` método de uma permissão definida para gerar o código XML para o manifesto do aplicativo. Por exemplo, para gerar o XML para o <xref:System.Security.Permissions.EnvironmentPermission> conjunto de permissões, chame o <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> método. Para obter mais informações sobre a estrutura da permissão do conjunto de XML, consulte [NIB: Como: Importar um conjunto de permissões usando um arquivo XML](http://msdn.microsoft.com/dea16b54-c108-408a-ac36-cdc05f746236).  
   
 ## <a name="see-also"></a>Consulte também  
  [Protegendo aplicativos ClickOnce](../deployment/securing-clickonce-applications.md)   

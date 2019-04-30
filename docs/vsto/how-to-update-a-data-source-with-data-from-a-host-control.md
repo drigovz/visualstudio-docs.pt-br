@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4d1e7bfd074b0ed7f6f1bcef99acf28f478a9c51
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 24bbd859b4867225e5ec5df95d298dd04146df46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60097486"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421010"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>Como: Atualizar uma fonte de dados com dados de um controle de host
   Você pode associar um controle de host a uma fonte de dados e atualizar a fonte de dados com as alterações feitas aos dados no controle. Há duas etapas principais nesse processo:
@@ -61,7 +61,7 @@ ms.locfileid: "60097486"
    - Para atualizar a fonte de dados quando o valor da propriedade do controle associado a dados é alterado, defina essa propriedade para System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged.
 
      > [!NOTE]
-     >  A opção System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged não se aplica a controles de host do Word, porque o Word faz as notificações não documento – alteração da oferta ou alteração do controle. No entanto, essa opção pode ser usada para controles de Windows Forms em documentos do Word.
+     > A opção System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged não se aplica a controles de host do Word, porque o Word faz as notificações não documento – alteração da oferta ou alteração do controle. No entanto, essa opção pode ser usada para controles de Windows Forms em documentos do Word.
 
      O exemplo a seguir configura um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle para atualizar automaticamente a fonte de dados quando o valor no controle é alterado. Este exemplo pressupõe que você tenha um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle chamado `namedRange1` com seu <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> propriedade associada a um campo em uma fonte de dados.
 
@@ -85,7 +85,7 @@ ms.locfileid: "60097486"
     - Para atualizar a fonte de dados quando o valor da propriedade do controle associado a dados é alterado, selecione **OnPropertyChanged**.
 
         > [!NOTE]
-        >  O **OnPropertyChanged** opção não se aplica a controles de host do Word, porque o Word faz as notificações não documento – alteração da oferta ou alteração do controle. No entanto, essa opção pode ser usada para controles de Windows Forms em documentos do Word.
+        > O **OnPropertyChanged** opção não se aplica a controles de host do Word, porque o Word faz as notificações não documento – alteração da oferta ou alteração do controle. No entanto, essa opção pode ser usada para controles de Windows Forms em documentos do Word.
 
 6. Fechar o **formatação e associação avançada** caixa de diálogo.
 

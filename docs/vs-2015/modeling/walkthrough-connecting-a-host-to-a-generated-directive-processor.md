@@ -12,12 +12,12 @@ caps.latest.revision: 49
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8832f31724d5e688b93dcca76cce8e1a496c9ced
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40be072c9ebc518068d9f02a28507b011bec125a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60083212"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446765"
 ---
 # <a name="walkthrough-connecting-a-host-to-a-generated-directive-processor"></a>Passo a passo: Conectando um Host a um processador de diretriz gerado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
  Este passo a passo, você expandirá seu host personalizado para que ele dá suporte a modelos de texto que chamam processadores de diretriz. Quando você define uma linguagem específica de domínio, ele gera uma *processador de diretriz* para o modelo de domínio. O processador de diretriz torna mais fácil para os usuários escrevam modelos que acessar o modelo, reduzindo a necessidade de escrever o assembly e importar diretivas nos modelos.  
   
 > [!WARNING]
->  Este passo a passo se baseia no [passo a passo: Criando um Host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md). Execute esse passo a passo pela primeira vez.  
+> Este passo a passo se baseia no [passo a passo: Criando um Host de modelo de texto personalizado](../modeling/walkthrough-creating-a-custom-text-template-host.md). Execute esse passo a passo pela primeira vez.  
   
  Esta explicação passo a passo inclui as seguintes tarefas:  
   
@@ -68,7 +68,7 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
 2. No menu **Compilar**, clique em **Compilar Solução**.  
   
    > [!IMPORTANT]
-   >  Esta etapa gera o processador de diretriz e adiciona a chave para ele no registro.  
+   > Esta etapa gera o processador de diretriz e adiciona a chave para ele no registro.  
   
 3. No menu **Depuração**, clique em **Iniciar Depuração**.  
   
@@ -120,7 +120,7 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
 5. Localize o código para a propriedade `StandardAssemblyReferences`e substitua-o pelo código a seguir:  
   
     > [!NOTE]
-    >  Nesta etapa, você deve adicionar referências aos assemblies que são necessários para o processador de diretriz gerado que darão suporte a seu host.  
+    > Nesta etapa, você deve adicionar referências aos assemblies que são necessários para o processador de diretriz gerado que darão suporte a seu host.  
   
     ```csharp  
     //the host can provide standard assembly references  
@@ -156,7 +156,7 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
 6. Localize o código para a função `ResolveDirectiveProcessor`e substitua-o pelo código a seguir:  
   
     > [!IMPORTANT]
-    >  Esse código contém referências embutido em código como o nome do processador de diretriz gerado para o qual você deseja se conectar. Você pode facilmente tornar isso mais gerais, caso em que ele procura por todos os processadores de diretriz listados no registro e tenta encontrar uma correspondência. Nesse caso, o host funcionaria com qualquer processador de diretriz gerado.  
+    > Esse código contém referências embutido em código como o nome do processador de diretriz gerado para o qual você deseja se conectar. Você pode facilmente tornar isso mais gerais, caso em que ele procura por todos os processadores de diretriz listados no registro e tenta encontrar uma correspondência. Nesse caso, o host funcionaria com qualquer processador de diretriz gerado.  
   
     ```csharp  
     //the engine calls this method based on the directives the user has   
@@ -241,7 +241,7 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
 2. Adicione o seguinte ao arquivo de texto:  
   
     > [!NOTE]
-    >  A linguagem de programação do modelo de texto não precisa coincidir com o host personalizado.  
+    > A linguagem de programação do modelo de texto não precisa coincidir com o host personalizado.  
   
     ```csharp  
     Text Template Host Test  
@@ -325,7 +325,7 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`  
   
     > [!NOTE]
-    >  Em vez de digitar o endereço, você pode navegar até o arquivo CustomHost.exe na **Windows Explorer**e, em seguida, arraste o arquivo para a janela de Prompt de comando.  
+    > Em vez de digitar o endereço, você pode navegar até o arquivo CustomHost.exe na **Windows Explorer**e, em seguida, arraste o arquivo para a janela de Prompt de comando.  
   
 3. Digite um espaço.  
   
@@ -336,7 +336,7 @@ Você pode escrever seu próprio host que processa os modelos de texto. Um host 
      `<YOUR PATH>TestTemplateWithDP.txt`  
   
     > [!NOTE]
-    >  Em vez de digitar o endereço, você pode navegar até o arquivo TestTemplateWithDP.txt na **Windows Explorer**e, em seguida, arraste o arquivo para a janela de Prompt de comando.  
+    > Em vez de digitar o endereço, você pode navegar até o arquivo TestTemplateWithDP.txt na **Windows Explorer**e, em seguida, arraste o arquivo para a janela de Prompt de comando.  
   
      O aplicativo de host personalizado é executado e inicia o processo de transformação do modelo de texto.  
   

@@ -12,12 +12,12 @@ ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
 caps.latest.revision: 22
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 9f56de9b3ce3f1faf5a63fa6b8fd8574a57b82f3
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 63e0140b752adda02aba6126580ec08ee1f7536a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925261"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436625"
 ---
 # <a name="registering-a-project-type"></a>Registrando um tipo de projeto
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Quando você cria um novo tipo de projeto, você deve criar entradas do registro
  No exemplo a seguir, as instruções de registro fornecem caminhos padrão e dados, onde aplicável, seguido por uma tabela que contém as entradas do script do registro para cada instrução. As tabelas fornecem as entradas de script e informações adicionais sobre as instruções.  
   
 > [!NOTE]
->  As seguintes informações de registro destina-se a ser um exemplo do tipo e finalidades das entradas nos scripts do registro que você escreverá para registrar o tipo de projeto. As entradas reais e seus usos podem variar com base nos requisitos específicos de seu tipo de projeto. Você deve revisar os exemplos disponíveis para encontrar uma que se assemelha ao tipo de projeto que você está desenvolvendo e, em seguida, examine o script de registro para que esse exemplo.  
+> As seguintes informações de registro destina-se a ser um exemplo do tipo e finalidades das entradas nos scripts do registro que você escreverá para registrar o tipo de projeto. As entradas reais e seus usos podem variar com base nos requisitos específicos de seu tipo de projeto. Você deve revisar os exemplos disponíveis para encontrar uma que se assemelha ao tipo de projeto que você está desenvolvendo e, em seguida, examine o script de registro para que esse exemplo.  
   
  Os exemplos a seguir são de HKEY_CLASSES_ROOT.  
   

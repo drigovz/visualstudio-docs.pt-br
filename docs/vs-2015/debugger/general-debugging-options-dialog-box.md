@@ -22,12 +22,12 @@ caps.latest.revision: 50
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 7efd2c988791d0de4f414a48e5c47bc70b05b784
-ms.sourcegitcommit: c496a77add807ba4a29ee6a424b44a5de89025ea
-ms.translationtype: MT
+ms.openlocfilehash: cf4a3b699d3854ef2a502fb1bf1d7fb2d6204acb
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/24/2019
-ms.locfileid: "58999859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446484"
 ---
 # <a name="general-debugging-options-dialog-box"></a>Caixa de diálogo Geral, Depuração, Opções
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -84,14 +84,14 @@ O**Ferramentas / opções / depuração / geral** página permite que você defi
  **Habilitar a avaliação de propriedade e outras chamadas de função implícitas**  
  Ativa a classificação automática da propriedades e as chamadas de função implícitas nas janelas de variáveis e na caixa de diálogo **QuickWatch**.  
   
- **Chamar a função de conversão de cadeia de caracteres em objetos nas janelas de variáveis (C# e JavaScript apenas)**  
+ **Chamar a função de conversão de cadeia de caracteres em objetos nas janelas de variáveis (c# e JavaScript apenas)**  
  Executa uma chamada de conversão de cadeia de caracteres implícita ao avaliar objetos em janelas de variáveis. Portanto, o resultado é exibido como uma cadeia de caracteres em vez do nome do tipo. Aplica-se somente à depuração no código em C. Essa configuração pode ser substituída pelo atributo DebuggerDisplay (consulte [usando o atributo DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md)).  
   
  **Habilitar suporte a servidor de origem**  
  Informe ao depurador do Visual Studio para obter os arquivos de origem dos servidores de origem que implementam o protocolo de SrcSrv (`srcsrv.dll`). O Team Foundation Server e as Ferramentas de Depuração para o Windows são dois servidores de origem que implementam o protocolo. Para obter mais informações sobre a configuração de SrcSrv, consulte a documentação Ferramentas de depuração para o Windows. Além disso, consulte [especificar arquivos de símbolo (. PDB) e código-fonte](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md).  
   
 > [!IMPORTANT]
->  Como ler arquivos .pdb pode executar o código arbitrário em arquivos, certifique-se de que você confia no servidor.  
+> Como ler arquivos .pdb pode executar o código arbitrário em arquivos, certifique-se de que você confia no servidor.  
   
  **Imprimir mensagens de diagnóstico de servidor de origem para a janela de saída**  
  Quando o suporte do servidor de origem é ativado, esta configuração ativa ao diagnóstico.  
@@ -145,7 +145,7 @@ O**Ferramentas / opções / depuração / geral** página permite que você defi
   
   Você deve usar essa opção quando você estiver depurando o código C++ .NET, pois o novo mecanismo de depuração não dá suporte a expressões de avaliação C++ .NET. No entanto, a habilitação do modo de compatibilidade nativa desabilita muitos recursos que dependem da implementação atual do depurador para operar. Por exemplo, o mecanismo herdado não tem muitos visualizadores para tipos internos, como `std::string` em projetos do Visual Studio 2015.   Use projetos do Visual Studio 2013 para a melhor experiência de depuração nesses casos.  
   
-  **Use os avaliadores de expressão C# e VB herdados**  
+  **Use os avaliadores de expressão c# e VB herdados**  
   O depurador usará os avaliadores de expressão do Visual Studio 2013 C# /VB em vez dos avaliadores de expressão baseada em Roslyn de 2015 do Visual Studio.  
   
   **Avisar ao usar os visualizadores do depurador personalizados contra processos potencialmente inseguros (somente gerenciado)**  

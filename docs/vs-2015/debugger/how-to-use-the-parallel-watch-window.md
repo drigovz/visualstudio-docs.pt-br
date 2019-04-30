@@ -18,12 +18,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 66e9e5a3f0a46f54346c71d85bad03846c12f937
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b588168b62a9219d0de703a5deb6dbe153df6305
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60050304"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63445095"
 ---
 # <a name="how-to-use-the-parallel-watch-window"></a>Como: Use a janela Inspeção paralela
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -37,7 +37,7 @@ Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que 
 - Uma coluna configurável que pode exibir o computador, o processo, o bloco, a tarefa e o thread.  
   
   > [!TIP]
-  >  Você deve abrir o **tarefa paralela** janela para exibir as informações da tarefa na **inspeção paralela** janela.  
+  > Você deve abrir o **tarefa paralela** janela para exibir as informações da tarefa na **inspeção paralela** janela.  
   
 - O  **\<Adicionar inspeção >** coluna, na qual você pode inserir expressões para assistir.  
   
@@ -90,4 +90,4 @@ Na janela Inspeção Paralela, você pode exibir simultaneamente os valores que 
 ## <a name="see-also"></a>Consulte também  
  [Depurar aplicativos multi-threaded](../debugger/debug-multithreaded-applications-in-visual-studio.md)   
  [Como: Usar a janela Threads de GPU](../debugger/how-to-use-the-gpu-threads-window.md)   
- [Passo a passo: Depurando um aplicativo C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)
+ [Passo a passo: depurar um aplicativo C++ AMP](http://msdn.microsoft.com/library/40e92ecc-f6ba-411c-960c-b3047b854fb5)

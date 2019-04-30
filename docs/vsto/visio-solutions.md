@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: beb51866fdce18c640e41cb90a5f357fda6e5190
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: d2e47227f9da4e691575b7136011deff15db25db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56628891"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438745"
 ---
 # <a name="visio-solutions"></a>Soluções do Visio
   Visual Studio fornece modelos de projeto, que você pode usar para criar suplementos do VSTO para o Microsoft Office Visio. Você pode usar suplementos do VSTO para automatizar o Visio, estender os recursos do Visio ou personalizar a interface de usuário (IU) do Visio.
@@ -32,7 +32,7 @@ ms.locfileid: "56628891"
  **Aplica-se a:** As informações neste tópico se aplicam a projetos de suplemento do VSTO do Visio 2010. Para obter mais informações, confira [Features Available by Office Application and Project Type](../vsto/features-available-by-office-application-and-project-type.md) (Funcionalidades disponibilizadas pelo aplicativo do Office e pelo tipo de projeto).
 
 > [!NOTE]
->  Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
+> Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
 
 ## <a name="automate-visio-by-using-the-visio-object-model"></a>Automatizar o Visio usando o modelo de objeto do Visio
  O modelo de objeto do Visio expõe muitas classes que você pode usar para automatizar o Visio para criar diagramas organogramas, fluxogramas, cronogramas de projeto, diagramas de rede, espaços do office e muito mais. A API permite que você escreva código para realizar tarefas comuns:

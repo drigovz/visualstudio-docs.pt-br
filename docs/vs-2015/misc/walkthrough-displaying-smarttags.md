@@ -9,12 +9,12 @@ helpviewer_keywords:
 ms.assetid: 10bb4f69-b259-41f0-b91a-69b04385d9a5
 caps.latest.revision: 31
 manager: jillfra
-ms.openlocfilehash: a14fcb8e81261962e8851347a54d7c8d52565d20
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 116f76324a2150413c0ae6d08bc99e114efcc50e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60110434"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436507"
 ---
 # <a name="walkthrough-displaying-smarttags"></a>Passo a passo: Exibindo SmartTags
 Marcas inteligentes foram preteridas em favor de lâmpadas. Confira [Passo a passo: Exibir sugestões de lâmpada](../extensibility/walkthrough-displaying-light-bulb-suggestions.md).  
@@ -24,7 +24,7 @@ Marcas inteligentes foram preteridas em favor de lâmpadas. Confira [Passo a pas
  Embora as marcas inteligentes são parte da implementação do IntelliSense no editor, você pode implementar marcas inteligentes, a criação de subclasses <xref:Microsoft.VisualStudio.Language.Intellisense.SmartTag>e, em seguida, Implementando a <xref:Microsoft.VisualStudio.Text.Tagging.ITagger%601> interface e o <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> interface.  
   
 > [!NOTE]
->  Outros tipos de marcas podem ser implementados de maneira semelhante.  
+> Outros tipos de marcas podem ser implementados de maneira semelhante.  
   
  A instrução a seguir mostra como criar uma marca inteligente que aparece na palavra atual e tem duas ações sugeridas: **Converter em maiusculas** e **converter em letras minúsculas**.  
   
@@ -183,4 +183,4 @@ Marcas inteligentes foram preteridas em favor de lâmpadas. Confira [Passo a pas
 5. Quando você clica no botão, as duas ações sugeridas devem ser exibidas: **Converter em maiusculas** e **converter em letras minúsculas**. Se você clicar na primeira ação, todo o texto da palavra atual deve ser convertido em letras maiusculas. Se você clicar na segunda ação, todo o texto deve ser convertido em letras minúsculas.  
   
 ## <a name="see-also"></a>Consulte também  
- [Passo a passo: Vinculando a um tipo de conteúdo para uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)
+ [Passo a passo: vincular um tipo de conteúdo a uma extensão de nome de arquivo](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

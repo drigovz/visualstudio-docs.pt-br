@@ -18,12 +18,12 @@ caps.latest.revision: 45
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ab840dfac15b917ff1b87a17d4a0670c3f275343
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9df436b51619211c1f79e7176479c7466f3de427
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103466"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441056"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>Como definir uma linguagem específica do domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -66,7 +66,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
    - Selecione **linguagem mínima** em outros casos, ou se você não tiver certeza.  
   
        > [!NOTE]
-       >  Se desejar criar um diagrama de classe ou um diagrama de componente, considere o uso de modelos UML. As ferramentas de modelagem UML fornecem um conjunto de diagramas que são integrados em um único modelo. Elas são extensíveis e podem ser integradas à sua DSL usando ModelBus. Para obter mais informações, consulte [criar modelos para o aplicativo](../modeling/create-models-for-your-app.md).  
+       > Se desejar criar um diagrama de classe ou um diagrama de componente, considere o uso de modelos UML. As ferramentas de modelagem UML fornecem um conjunto de diagramas que são integrados em um único modelo. Elas são extensíveis e podem ser integradas à sua DSL usando ModelBus. Para obter mais informações, consulte [criar modelos para o aplicativo](../modeling/create-models-for-your-app.md).  
   
    - Selecione **WinForm Designer mínimo** ou **WPF Designer mínimo** para criar uma DSL que é exibida em uma superfície de Windows Forms ou WPF. Você precisará gravar um código para definir o editor. Para mais informações, consulte os seguintes tópicos:  
   
@@ -108,7 +108,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
  Feche a instância experimental de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)].  
   
 > [!NOTE]
->  Após modificar a DSL, não será possível mais ver as formas no arquivo de teste Exemplo. Entretanto, poderá criar novos elementos.  
+> Após modificar a DSL, não será possível mais ver as formas no arquivo de teste Exemplo. Entretanto, poderá criar novos elementos.  
   
 ### <a name="modifying-the-template-dsl"></a>Modificando a DSL do modelo  
  Renomeie e mantenha algumas ou todas as classes de domínio e classes de formas na definição da DSL do modelo. Os novos nomes de classes devem ser nomes de CLR válidos, sem espaços ou pontuação.  
@@ -137,7 +137,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
   As seções a seguir descrevem como construir os tipos mais úteis de recursos DSL. Há vários outros padrões com os quais uma DSL pode ser construída, mas esses são os usados com mais frequência.  
   
 > [!NOTE]
->  Depois de adicionar um recurso, não se esqueça de clicar **transformar todos os modelos** na barra de ferramentas do Gerenciador de soluções antes de compilar e executar sua DSL.  
+> Depois de adicionar um recurso, não se esqueça de clicar **transformar todos os modelos** na barra de ferramentas do Gerenciador de soluções antes de compilar e executar sua DSL.  
   
  A figura a seguir mostra as classes e relações que fazem parte da DSL usada de exemplo neste tópico.  
   
@@ -148,7 +148,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
  ![Modelo de instância da DSL gerada](../modeling/media/music-instance.png "Music_Instance")  
   
 > [!NOTE]
->  "Modelo" refere-se a uma instância de sua DSL que os usuários criam e geralmente é exibida como um diagrama. Este tópico discute o diagrama da Definição de DSL e os diagramas de modelo que aparecem quando sua DSL é usada.  
+> "Modelo" refere-se a uma instância de sua DSL que os usuários criam e geralmente é exibida como um diagrama. Este tópico discute o diagrama da Definição de DSL e os diagramas de modelo que aparecem quando sua DSL é usada.  
   
 ## <a name="classes"></a> Definindo Classes de domínio  
  As classes de domínio representam os conceitos de sua DSL. As instâncias estiverem *elementos de modelo*. Por exemplo, em um **MusicLibrary** DSL, você pode ter Classes de domínio denominado **álbum** e **música**.  
@@ -185,7 +185,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
  Para obter mais informações, consulte [propriedades de relações de domínio](../modeling/properties-of-domain-relationships.md) e [propriedades de funções de domínio](../modeling/properties-of-domain-roles.md).  
   
 > [!NOTE]
->  Incorporação não é o mesmo que herança. Os filhos em uma relação de incorporação não herdam recursos de seus pais.  
+> Incorporação não é o mesmo que herança. Os filhos em uma relação de incorporação não herdam recursos de seus pais.  
   
 ### <a name="add-domain-properties-to-each-domain-class"></a>Adicionar propriedades de domínio em cada classe de domínio  
  As propriedades de domínio armazenam valores. Os exemplos são: Nome, título, data de publicação.  
@@ -296,7 +296,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
    2. O nó sob o botão direito do mouse **guias da caixa de ferramentas** que tem o mesmo nome de sua DSL, por exemplo, MusicLibrary. Clique em **adicionar ferramenta de elemento**.  
   
        > [!NOTE]
-       >  Se o botão direito do mouse a **ferramentas** nó, você não verá **adicionar ferramenta de elemento**. Em vez disso, clique no nó acima dele.  
+       > Se o botão direito do mouse a **ferramentas** nó, você não verá **adicionar ferramenta de elemento**. Em vez disso, clique no nó acima dele.  
   
    3. Na janela Propriedades, com a nova ferramenta do elemento selecionada, defina **classe** à classe de domínio que você adicionou recentemente.  
   
@@ -464,7 +464,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
          Sob **Exibir propriedade**, selecione a propriedade que deve ser exibida na lista. No exemplo, será Título.  
   
 > [!NOTE]
->  Usando os campos Caminho nos campos de Mapa do Decorador e Mapa de Compartimento, é possível tornar as relações entre as classes de domínio e a forma do compartimento mais complexas.  
+> Usando os campos Caminho nos campos de Mapa do Decorador e Mapa de Compartimento, é possível tornar as relações entre as classes de domínio e a forma do compartimento mais complexas.  
   
 #### <a name="to-define-a-tool-for-creating-the-shape"></a>Para definir uma ferramenta para criar a forma  
   
@@ -475,7 +475,7 @@ Para definir uma linguagem específica de domínio (DSL), crie uma solução do 
 3. O nó sob o botão direito do mouse **guias da caixa de ferramentas** que tem o mesmo nome de sua DSL, por exemplo, MusicLibrary. Clique em **adicionar ferramenta de elemento**.  
   
     > [!NOTE]
-    >  Se o botão direito do mouse a **ferramentas** nó, você não verá **adicionar ferramenta de elemento**. Em vez disso, clique no nó acima dele.  
+    > Se o botão direito do mouse a **ferramentas** nó, você não verá **adicionar ferramenta de elemento**. Em vez disso, clique no nó acima dele.  
   
 4. Na janela Propriedades, com a nova ferramenta do elemento selecionada, defina **classe** à classe de domínio que você adicionou recentemente.  
   
