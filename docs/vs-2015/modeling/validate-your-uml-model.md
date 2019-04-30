@@ -12,12 +12,12 @@ caps.latest.revision: 12
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5114e7b32bd22b341489e15ac354cc24b3c6d7d7
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: f795928677f4a232c3ae3cec0d3bab9d9266cb35
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60113307"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437455"
 ---
 # <a name="validate-your-uml-model"></a>Validar o modelo UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Alguns dos modelos de UML que você pode desenhar no Visual Studio podem ser con
 - **Comando de validação.** Para invocar a validação a qualquer momento, clique em **validar modelo UML** sobre o **arquitetura** menu.  
   
   > [!NOTE]
-  >  O comando será exibida apenas se as restrições de validação são instaladas.  
+  > O comando será exibida apenas se as restrições de validação são instaladas.  
   
 - **Sobre como salvar um modelo.** Restrições de validação podem ser aplicadas quando você salvar o modelo. A finalidade dessas restrições é certificar-se de que você não salvar um modelo que é inválido de acordo com a interpretação do seu projeto.  
   

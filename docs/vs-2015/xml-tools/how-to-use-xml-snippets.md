@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a6c48d878f2bacd8317878366980ecc317f7adb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ba4d98a1d6a59a35bf4aa279831036eecec99989
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055256"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440579"
 ---
 # <a name="how-to-use-xml-snippets"></a>Como: Usar snippets XML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Você pode chamar snippets XML usando os dois seguintes comandos no menu de atal
  Os procedimentos a seguir descrevem como acessar o **Inserir trecho** comando.  
   
 > [!NOTE]
->  O **Inserir trecho** comando também está disponível com o atalho de teclado (CTRL + K e CTRL + X).  
+> O **Inserir trecho** comando também está disponível com o atalho de teclado (CTRL + K e CTRL + X).  
   
 #### <a name="to-insert-snippets-from-the-shortcut-menu"></a>Para inserir snippets do menu de atalho  
   
@@ -60,7 +60,7 @@ Você pode chamar snippets XML usando os dois seguintes comandos no menu de atal
 4. Pressione a tecla TAB, TAB para invocar o snippet XML.  
   
 > [!NOTE]
->  Pode haver casos quando o snippet XML não é chamado. Por exemplo, se você tentar inserir um elemento de `xs:complexType` dentro de um nó de `xs:element` , o editor não gerencia um snippet XML. Quando um elemento de `xs:complexType` é usado dentro de um nó de `xs:element` , não houver nenhum atributo ou subelements necessário, o editor não tem nenhum dados para inserir.  
+> Pode haver casos quando o snippet XML não é chamado. Por exemplo, se você tentar inserir um elemento de `xs:complexType` dentro de um nó de `xs:element` , o editor não gerencia um snippet XML. Quando um elemento de `xs:complexType` é usado dentro de um nó de `xs:element` , não houver nenhum atributo ou subelements necessário, o editor não tem nenhum dados para inserir.  
   
 #### <a name="to-insert-snippets-using-the-shortcut-name"></a>Para inserir snippets usando o nome do atalho  
   
@@ -76,7 +76,7 @@ Você pode chamar snippets XML usando os dois seguintes comandos no menu de atal
  Os procedimentos a seguir descrevem como acessar o **envolver com** comando.  
   
 > [!NOTE]
->  O **envolver com** comando também está disponível com o atalho de teclado (CTRL + K e CTRL + S).  
+> O **envolver com** comando também está disponível com o atalho de teclado (CTRL + K e CTRL + S).  
   
 #### <a name="to-use-surround-with-from-the-context-menu"></a>Para usar a bordadura com o menu de contexto  
   

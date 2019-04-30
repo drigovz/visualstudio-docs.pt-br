@@ -20,12 +20,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8572deb32ea5fab2ce8ad831deeaba783496cbc5
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a1e9a3abd6b16ae0365279a6eb9cb067bfeb225
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104324"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430863"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -33,7 +33,7 @@ ms.locfileid: "60104324"
 Você pode instalar e exibir o conteúdo de vários produtos e tecnologias em seu computador local usando o Microsoft Help Viewer.  
   
 > [!WARNING]
->  Quando você instala o Visual Studio, pode obter o Help Viewer. Para começar a ler os tópicos do Help Viewer, em vez de no site de download do MSDN, acesse o menu **Ajuda** no Visual Studio, selecione **Definir Preferência de Ajuda** e, em seguida, selecione **Iniciar no Help Viewer**. Os tópicos da ajuda offline para uma determinada versão do Visual Studio estão disponíveis somente após o lançamento final da respectiva versão.  
+> Quando você instala o Visual Studio, pode obter o Help Viewer. Para começar a ler os tópicos do Help Viewer, em vez de no site de download do MSDN, acesse o menu **Ajuda** no Visual Studio, selecione **Definir Preferência de Ajuda** e, em seguida, selecione **Iniciar no Help Viewer**. Os tópicos da ajuda offline para uma determinada versão do Visual Studio estão disponíveis somente após o lançamento final da respectiva versão.  
   
  Você pode fazer o seguinte:  
   

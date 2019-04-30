@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: aba73d5fc6c1609a3347178765ba516840b5176e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e2a7cd6143b9c97bbcd06337d38ae169dfa94305
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061683"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438620"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>Passo a passo: Alterar a formatação da planilha usando controles CheckBox
   Este passo a passo mostra as Noções básicas de como usar caixas de seleção em uma planilha do Microsoft Office Excel para alterar a formatação. Você usará as ferramentas de desenvolvimento do Office no Visual Studio para criar e adicionar código ao seu projeto. Para ver o resultado como um exemplo completo, consulte o exemplo de controles do Excel em [exemplos de desenvolvimento do Office e instruções passo a passo](../vsto/office-development-samples-and-walkthroughs.md).
@@ -35,7 +35,7 @@ ms.locfileid: "60061683"
 - Teste seu projeto.
 
 > [!NOTE]
->  Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
+> Seu computador pode mostrar diferentes nomes ou locais para alguns dos elementos de interface do usuário do Visual Studio nas instruções a seguir. A edição do Visual Studio que você possui e as configurações que você usa determinam esses elementos. Para obter mais informações, confira [Personalizar o IDE do Visual Studio](../ide/personalizing-the-visual-studio-ide.md).
 
 ## <a name="prerequisites"></a>Pré-requisitos
  Você precisa dos seguintes componentes para concluir esta instrução passo a passo:
@@ -94,7 +94,7 @@ ms.locfileid: "60061683"
      Em seguida, arrastará um <xref:Microsoft.Office.Tools.Excel.NamedRange> controle à planilha.
 
     > [!NOTE]
-    >  Você também pode adicionar o <xref:Microsoft.Office.Tools.Excel.NamedRange> controle digitando **textFont** para o **nome** caixa.
+    > Você também pode adicionar o <xref:Microsoft.Office.Tools.Excel.NamedRange> controle digitando **textFont** para o **nome** caixa.
 
 #### <a name="to-add-text-to-a-namedrange-control"></a>Para adicionar texto a um controle NamedRange
 

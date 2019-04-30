@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.assetid: d25990e0-e782-4a79-9d9a-1caf3c56c6a2
 caps.latest.revision: 10
 manager: jillfra
-ms.openlocfilehash: 81bf6c5ef975d7ce154c1d8bb987e962dfdf4ec2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0b65fa016d0d2e09a4200004de3f473503604f6e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040735"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442882"
 ---
 # <a name="how-to-manually-package-an-extension-vsix-deployment"></a>Como: Empacotar manualmente uma extensão (implantação do VSIX)
 Você pode criar um pacote VSIX para encapsular um [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] extensão para a implantação. Há três maneiras de criar o pacote:  
@@ -29,7 +29,7 @@ Você pode criar um pacote VSIX para encapsular um [!INCLUDE[vsprvs](../includes
  Para empacotar manualmente uma extensão, adicione um arquivo extension.manifest e um [Content_Types]. XML ao projeto de extensão, colocá-los em um arquivo compactado junto com sua saída de compilação e renomear o arquivo compactado para que ele tenha uma extensão de nome de arquivo. VSIX. A extensão para ser empacotado deve ser de um tipo que é compatível com o [esquema VSIX](http://msdn.microsoft.com/76e410ec-b1fb-4652-ac98-4a4c52e09a2b).  
   
 > [!NOTE]
->  Os nomes dos arquivos em pacotes VSIX não devem incluir espaços nem caracteres reservados em identificadores de URI (Uniform Resource), como definido em [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
+> Os nomes dos arquivos em pacotes VSIX não devem incluir espaços nem caracteres reservados em identificadores de URI (Uniform Resource), como definido em [ \[RFC2396\]](http://go.microsoft.com/fwlink/?LinkId=90339).  
   
 #### <a name="to-manually-create-a-vsix-package"></a>Para criar manualmente um pacote VSIX  
   

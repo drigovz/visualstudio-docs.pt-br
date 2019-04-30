@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 71fbafb46db563c56bafb926b66b88bc39fda2ed
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ec3cd1365826c1a06b2d0f7bd6da377c8dc4d46
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039339"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440661"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>Como: Criar um pacote de Bootstrapper localizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Depois de criar um pacote de bootstrapper, você pode criar versões localizadas
 3. Crie um manifesto do pacote com o nome package.xml, atualize as cadeias de caracteres e cultura, e coloque o arquivo na nova pasta. Se você já criou um bootstrapper do Visual Studio no idioma de destino, você pode copiar o arquivo package.xml do Visual Studio e modificá-lo nesta etapa.  
   
 > [!NOTE]
->  Se você estiver usando um projeto de instalação para implantar aplicativos, você poderá localizar o aplicativo alterando a propriedade **Localização**.  
+> Se você estiver usando um projeto de instalação para implantar aplicativos, você poderá localizar o aplicativo alterando a propriedade **Localização**.  
   
  [!INCLUDE[note_settings_general](../includes/note-settings-general-md.md)]  
   

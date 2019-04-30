@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 26b917b04314c99ba6575842b8e102113b22b469
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 8204b13aa0405d01590e4aeb0fe43a92b41c226f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56596953"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431254"
 ---
 # <a name="how-to-add-an-updater-method"></a>Como: Adicionar um método Updater
   Você pode habilitar os usuários atualizem dados comerciais em uma lista externa do SharePoint com a criação de um *atualizador* método. Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).
@@ -50,7 +50,7 @@ ms.locfileid: "56596953"
      Para obter mais informações, consulte [criar um modelo de conectividade de dados corporativos](../sharepoint/designing-a-business-data-connectivity-model.md).
 
    > [!NOTE]
-   >  Se o identificador do tipo de entidade representa um campo em uma tabela de banco de dados que é gerado automaticamente, defina a **campo do pré-atualizador** propriedade **verdadeiro**.
+   > Se o identificador do tipo de entidade representa um campo em uma tabela de banco de dados que é gerado automaticamente, defina a **campo do pré-atualizador** propriedade **verdadeiro**.
 
 4. Na **Gerenciador de soluções**, abra o menu de atalho do serviço arquivo de código que foi gerado para a entidade e, em seguida, escolha **Exibir código**.
 
@@ -59,7 +59,7 @@ ms.locfileid: "56596953"
 5. Adicione código para o método de atualização para atualizar dados. O exemplo a seguir atualiza as informações de um contato do banco de dados de exemplo AdventureWorks para SQL Server.
 
    > [!NOTE]
-   >  Substitua o valor da `ServerName` campo com o nome do seu servidor.
+   > Substitua o valor da `ServerName` campo com o nome do seu servidor.
 
     [!code-csharp[SP_BDC#5](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#5)]
     [!code-vb[SP_BDC#5](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#5)]

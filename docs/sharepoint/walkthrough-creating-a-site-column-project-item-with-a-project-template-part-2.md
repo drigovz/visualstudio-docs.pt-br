@@ -11,12 +11,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 8301a4ecae71bfa2b215e20dfabf73e058c48dc4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e1b6477c112de7b19b00bcd173984533f5737014
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059097"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436716"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>Passo a passo: Criar um item de projeto da coluna de site com um modelo de projeto, parte 2
   Depois de definir um tipo personalizado de item de projeto do SharePoint e associá-lo a um modelo de projeto no Visual Studio, você também poderá fornecer um assistente do modelo. Você pode usar o Assistente para coletar informações dos usuários quando eles usam seu modelo para criar um novo projeto que contém o item de projeto. As informações que você coleta podem ser usadas para inicializar o item de projeto.
@@ -222,7 +222,7 @@ ms.locfileid: "60059097"
  Adicione o XAML para definir a interface do usuário da janela do assistente e os dois controles de usuário que fornecem a interface do usuário para as páginas do assistente e adicione código para definir o comportamento dos controles de usuário e a janela. O assistente que você cria se parece com o Assistente interno para projetos do SharePoint no Visual Studio.
 
 > [!NOTE]
->  Nas etapas a seguir, o projeto terá alguns erros de compilação, depois de adicionar o XAML ou código ao seu projeto. Esses erros serão eliminados quando você adicionar o código em etapas posteriores.
+> Nas etapas a seguir, o projeto terá alguns erros de compilação, depois de adicionar o XAML ou código ao seu projeto. Esses erros serão eliminados quando você adicionar o código em etapas posteriores.
 
 #### <a name="to-create-the-wizard-window-ui"></a>Para criar a janela do Assistente da interface do usuário
 
@@ -233,7 +233,7 @@ ms.locfileid: "60059097"
      [!code-xml[SPExtensibility.ProjectItem.SiteColumn#10](../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml#10)]
 
     > [!NOTE]
-    >  A janela que é criada nesse XAML é derivada de <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> classe base. Quando você adiciona uma caixa de diálogo do WPF personalizada para o Visual Studio, é recomendável que você derive sua caixa de diálogo desta classe ter estilo consistentes com as outras caixas de diálogo do Visual Studio e para evitar problemas de caixa de diálogo modal que possam ocorrer. Para obter mais informações, consulte [criando e gerenciando as caixas de diálogo Modal](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
+    > A janela que é criada nesse XAML é derivada de <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> classe base. Quando você adiciona uma caixa de diálogo do WPF personalizada para o Visual Studio, é recomendável que você derive sua caixa de diálogo desta classe ter estilo consistentes com as outras caixas de diálogo do Visual Studio e para evitar problemas de caixa de diálogo modal que possam ocorrer. Para obter mais informações, consulte [criando e gerenciando as caixas de diálogo Modal](/visualstudio/extensibility/creating-and-managing-modal-dialog-boxes).
 
 3. Se você estiver desenvolvendo um projeto do Visual Basic, remova os `ProjectTemplateWizard` namespace do `WizardWindow` nome da classe a `x:Class` atributo do `Window` elemento. Esse elemento é na primeira linha do XAML. Quando terminar, a primeira linha deve parecer com o exemplo a seguir.
 
@@ -513,7 +513,7 @@ ms.locfileid: "60059097"
      A coluna de site é empacotada e implantada para o SharePoint do site que o **URL do Site** Especifica a propriedade do projeto. O navegador da web abre a página padrão deste site.
 
     > [!NOTE]
-    >  Se o **Script Debugging Disabled** caixa de diálogo for exibida, escolha o **Sim** botão para continuar a depuração do projeto.
+    > Se o **Script Debugging Disabled** caixa de diálogo for exibida, escolha o **Sim** botão para continuar a depuração do projeto.
 
 2. Sobre o **ações do Site** menu, escolha **configurações de Site**.
 
@@ -543,4 +543,4 @@ ms.locfileid: "60059097"
 - [Definir tipos personalizados de item de projeto do SharePoint](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [Criando modelos de item e de projeto para itens de projeto do SharePoint](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
 - [Referência de esquema do modelo do Visual Studio](/visualstudio/extensibility/visual-studio-template-schema-reference)
-- [Como: Usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [Como: usar assistentes com modelos de projeto](../extensibility/how-to-use-wizards-with-project-templates.md)

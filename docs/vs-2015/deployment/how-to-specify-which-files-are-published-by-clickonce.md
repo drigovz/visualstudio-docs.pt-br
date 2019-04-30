@@ -18,12 +18,12 @@ caps.latest.revision: 18
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5b7576faf84b564e1ea10ef9def69819e5c77fa6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e0ef4264629e40380f12fb07623bb9274547713c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60046949"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441582"
 ---
 # <a name="how-to-specify-which-files-are-published-by-clickonce"></a>Como: Especificar quais arquivos são publicados pelo ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -95,7 +95,7 @@ Ao publicar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] arquivos d
 4. No **arquivos de aplicativo** caixa de diálogo, selecione o **grupo** field para um arquivo que você deseja incluir no novo grupo.  
   
     > [!NOTE]
-    >  Os arquivos devem ter o **ação de compilação** propriedade definida como **conteúdo** antes que os nomes de arquivo são exibidos no **arquivos de aplicativo** caixa de diálogo.  
+    > Os arquivos devem ter o **ação de compilação** propriedade definida como **conteúdo** antes que os nomes de arquivo são exibidos no **arquivos de aplicativo** caixa de diálogo.  
   
 5. No **grupo de Download** campo, selecione  **\<novo... >** na lista suspensa.  
   
@@ -114,7 +114,7 @@ Ao publicar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] arquivos d
 5. No **grupo de Download** , selecione um grupo na lista suspensa.  
   
     > [!NOTE]
-    >  Não é possível alterar o **grupo de Download** para arquivos que são necessários para a execução do aplicativo.  
+    > Não é possível alterar o **grupo de Download** para arquivos que são necessários para a execução do aplicativo.  
   
 ## <a name="see-also"></a>Consulte também  
  [Publicando aplicativos ClickOnce](../deployment/publishing-clickonce-applications.md)   

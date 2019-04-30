@@ -9,12 +9,12 @@ caps.latest.revision: 8
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 04867207ee8510a99ec19dc3f32175abedb39bf9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 13a26ec22060985705f6a1b54cf691c50ae07f1a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054632"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435206"
 ---
 # <a name="how-to-search-for-topics"></a>Como: Procurar tópicos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Você pode usar o recurso de pesquisa de texto completo para localizar todos os 
 2. Na consulta de pesquisa, especifique quais operadores de pesquisa avançados ou lógicos deseja aplicar à pesquisa, se houver. Para pesquisar toda a Ajuda disponível, não use operadores.  
   
     > [!NOTE]
-    >  Na caixa de diálogo **Opções do Visualizador**, você pode especificar preferências adicionais, como o número máximo de resultados da pesquisa a serem exibidos por vez e se deseja incluir conteúdo em inglês se a localidade principal não for inglês.  
+    > Na caixa de diálogo **Opções do Visualizador**, você pode especificar preferências adicionais, como o número máximo de resultados da pesquisa a serem exibidos por vez e se deseja incluir conteúdo em inglês se a localidade principal não for inglês.  
   
 3. Escolha a tecla Enter.  
   

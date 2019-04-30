@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 87dda9c975f35ac8b48e60acd3e692f9b3a070d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 25b30db78706dce95188289187ce55011ce1362d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103505"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441732"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>Como: Proteger partes de documentos usando controles de conteúdo
   Quando você protege a parte de um documento, você impedir usuários de alterar ou excluir o conteúdo nessa parte do documento. Há várias maneiras que você pode proteger partes de um documento do Microsoft Office Word usando controles de conteúdo:
@@ -73,7 +73,7 @@ ms.locfileid: "60103505"
 - Você deseja proteger uma área que já contém controles de conteúdo, mas o texto ou outros itens que você deseja proteger não estão em controles de conteúdo.
 
 > [!NOTE]
->  Se você criar um <xref:Microsoft.Office.Tools.Word.GroupContentControl> que contém os controles de conteúdo incorporados, os controles de conteúdo inseridos não são protegidos automaticamente. Para impedir que os usuários da edição de um controle de conteúdo inserido, use o **LockContents** propriedade do controle.
+> Se você criar um <xref:Microsoft.Office.Tools.Word.GroupContentControl> que contém os controles de conteúdo incorporados, os controles de conteúdo inseridos não são protegidos automaticamente. Para impedir que os usuários da edição de um controle de conteúdo inserido, use o **LockContents** propriedade do controle.
 
 ### <a name="to-protect-an-area-of-a-document-at-design-time"></a>Para proteger uma área de um documento em tempo de design
 
@@ -82,7 +82,7 @@ ms.locfileid: "60103505"
 2. Na faixa de opções, clique no **desenvolvedor** guia.
 
     > [!NOTE]
-    >  Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
+    > Se o **desenvolvedor** guia não estiver visível, você deve primeiro Mostrar. Para obter mais informações, confira [Como: Mostrar a guia Desenvolvedor na faixa de opções](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md).
 
 3. No **controles** , clique no **grupo** botão suspenso e clique **grupo**.
 

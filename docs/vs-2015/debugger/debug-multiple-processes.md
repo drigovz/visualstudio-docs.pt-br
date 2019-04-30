@@ -20,12 +20,12 @@ caps.latest.revision: 19
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: cb9ff8e31004a3b314102ad6b0e64cd72cab6467
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9a2679825d41a6360dde05e7511d607f8be69dfa
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039688"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434100"
 ---
 # <a name="debug-multiple-processes"></a>Depurar vários processos
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -64,7 +64,7 @@ Veja como iniciar processos de depuração, alternar entre processos, interrompe
 - [Iniciar a depuração de vários processos em uma solução do Visual Studio](#BKMK_Start_debugging_multiple_processes_in_a_Visual_Studio_solution) • [alterar o projeto de inicialização](#BKMK_Change_the_startup_project) • [iniciar um projeto específico em uma solução](#BKMK_Start_a_specific_project_in_a_solution) • [iniciar projetos múltiplos em uma solução](#BKMK_Start_multiple_projects_in_a_solution) • [anexar a um processo](#BKMK_Attach_to_a_process) • [iniciar automaticamente um processo no depurador](#BKMK_Automatically_start_an_process_in_the_debugger)  
   
 > [!NOTE]
->  O depurador não é anexado automaticamente a um processo filho que é inicializado por um processo depurado, mesmo se o projeto filho estiver na mesma solução. Para depurar um processo filho:  
+> O depurador não é anexado automaticamente a um processo filho que é inicializado por um processo depurado, mesmo se o projeto filho estiver na mesma solução. Para depurar um processo filho:  
 > 
 > - Anexar ao processo filho depois que for iniciado.  
 > 
@@ -166,7 +166,7 @@ Veja como iniciar processos de depuração, alternar entre processos, interrompe
 ### <a name="BKMK_Break__step__and_continue_commands"></a> Comandos de interromper, depurar e continuar  
   
 > [!NOTE]
->  Por padrão, os comandos interromper, continuar e avançar depurador afetam todos os processos que estão sendo depurados. Para alterar esse comportamento, consulte [configurar o comportamento de execução de vários processos](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
+> Por padrão, os comandos interromper, continuar e avançar depurador afetam todos os processos que estão sendo depurados. Para alterar esse comportamento, consulte [configurar o comportamento de execução de vários processos](#BKMK_Configure_the_execution_behavior_of_multiple_processes)  
   
 ||||  
 |-|-|-|  
@@ -197,7 +197,7 @@ Veja como iniciar processos de depuração, alternar entre processos, interrompe
   Por exemplo, se você iniciar a depuração de um processo de uma solução do Visual Studio, anexe a outro processo já está em execução e, em seguida, escolha **parar depuração**, a sessão de depuração termina, o processo que foi iniciado no Visual Studio é finalizado, enquanto o processo que você anexou permanecerá em execução. Você pode usar os seguintes procedimentos para controlar a maneira que você interrompe a depuração.  
   
 > [!NOTE]
->  O **interromper todos os processos quando um processo for interrompido** opção não afeta a interrupção de depuração ou encerramento e desanexação dos processos.  
+> O **interromper todos os processos quando um processo for interrompido** opção não afeta a interrupção de depuração ou encerramento e desanexação dos processos.  
   
  **Para alterar como a depuração de parada afeta um processo individual**  
   

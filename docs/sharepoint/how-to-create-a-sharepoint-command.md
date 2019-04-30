@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 49d253b63b682d81903003d6bdd148922989f274
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d804acd19d585bf9517ce9b8d771290a1f1c214a
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082315"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435464"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>Como: Criar um comando do SharePoint
   Se você quiser usar o modelo de objeto de servidor em uma extensão de ferramentas do SharePoint, você deve criar um personalizado *comando do SharePoint* para chamar a API. Você define o comando do SharePoint em um assembly que pode chamar diretamente o modelo de objeto do servidor.
@@ -33,7 +33,7 @@ ms.locfileid: "60082315"
     - Tem como alvo a AnyCPU ou x64 plataforma. Por padrão, a plataforma de destino para projetos de biblioteca de classes é AnyCPU. Para obter mais informações sobre como selecionar a plataforma de destino, consulte [como: Configurar projetos para plataformas de destino](../ide/how-to-configure-projects-to-target-platforms.md).
 
     > [!NOTE]
-    >  Você não pode implementar um comando do SharePoint no mesmo projeto que define uma extensão de ferramentas do SharePoint, pois o destino de extensões de ferramentas do .NET Framework 3.5 e o SharePoint de destino de comandos do SharePoint a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Você deve definir os comandos do SharePoint que são usados por sua extensão em um projeto separado. Para obter mais informações, consulte [implantar extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
+    > Você não pode implementar um comando do SharePoint no mesmo projeto que define uma extensão de ferramentas do SharePoint, pois o destino de extensões de ferramentas do .NET Framework 3.5 e o SharePoint de destino de comandos do SharePoint a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]. Você deve definir os comandos do SharePoint que são usados por sua extensão em um projeto separado. Para obter mais informações, consulte [implantar extensões para ferramentas do SharePoint no Visual Studio](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md).
 
 2. Adicione referências aos assemblies a seguir:
 

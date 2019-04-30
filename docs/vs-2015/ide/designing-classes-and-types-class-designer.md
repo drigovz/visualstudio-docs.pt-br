@@ -12,12 +12,12 @@ caps.latest.revision: 25
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 032e5a33c7cf70d48913739459c619b5d0302dea
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: ddd4ae3ed3a1a2a239c0efac0f25d04f589f8fa5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54795506"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437534"
 ---
 # <a name="designing-classes-and-types-class-designer"></a>Projetando classes e tipos (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,22 +25,22 @@ ms.locfileid: "54795506"
 Usando o **Designer de Classe**, é possível não só visualizar classes e tipos, como também criá-las. Os tópicos a seguir descrevem como fazer isso.  
   
 > [!NOTE]
->  Ao trabalhar com o Designer de Classe, é necessário inspecionar o código emitido antes de executá-lo a fim de verificar se o código é adequado para seu contexto de segurança.  
+> Ao trabalhar com o Designer de Classe, é necessário inspecionar o código emitido antes de executá-lo a fim de verificar se o código é adequado para seu contexto de segurança.  
   
 ## <a name="in-this-section"></a>Nesta seção  
- [Como criar tipos usando o Designer de Classe](../ide/how-to-create-types-by-using-class-designer.md)  
+ [Como: Criar tipos usando o Designer de Classe](../ide/how-to-create-types-by-using-class-designer.md)  
   
  Descreve como usar o Diagrama de Classe para criar um tipo.  
   
- [Como criar herança entre tipos (Designer de Classe)](../ide/how-to-create-inheritance-between-types-class-designer.md)  
+ [Como: criar herança entre tipos (Designer de Classe)](../ide/how-to-create-inheritance-between-types-class-designer.md)  
   
  Explica como definir uma relação de herança entre tipos.  
   
- [Como criar associações entre tipos (Designer de Classe)](../ide/how-to-create-associations-between-types-class-designer.md)  
+ [Como: criar associações entre tipos (Designer de Classe)](../ide/how-to-create-associations-between-types-class-designer.md)  
   
  Descreve como definir associações no diagrama de classe.  
   
- [Como visualizar uma associação de coleções (Designer de Classe)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
+ [Como: visualizar uma associação de coleções (Designer de Classe)](../ide/how-to-visualize-a-collection-association-class-designer.md)  
   
  Explica como definir uma associação de coleção no Designer de Classe.  
   

@@ -10,12 +10,12 @@ helpviewer_keywords:
 ms.assetid: 3bac375d-8bd5-41be-a8de-32eb33c5cfac
 caps.latest.revision: 20
 manager: jillfra
-ms.openlocfilehash: 833783267c70c0a201e4b84bc5031bce517dc0a2
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b66724542d45aa6f57b7c2748c7c1cab1ec8c064
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054476"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436557"
 ---
 # <a name="support-for-settings-categories"></a>Suporte para categorias de configurações
 Uma categoria de configurações consiste em um grupo de opções que personalizam o ambiente de desenvolvimento integrado (IDE). Por exemplo, as configurações podem controlar o layout de [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] windows e o conteúdo dos menus. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
@@ -25,7 +25,7 @@ Uma categoria de configurações consiste em um grupo de opções que personaliz
  O controle de árvore no painel de navegação desta página lista as categorias. Uma categoria é um grupo de configurações relacionadas que aparecem como um "ponto de configurações personalizadas", ou seja, como uma caixa de seleção. Você pode usar essas caixas de seleção para selecionar as categorias para persistir em um arquivo .vsettings. O assistente permite que você nomeie o arquivo .vsettings e especifique seu caminho.  
   
 > [!NOTE]
->  As configurações são salvos ou restauradas como uma categoria e nomes de configuração individuais não são exibidos no assistente.  
+> As configurações são salvos ou restauradas como uma categoria e nomes de configuração individuais não são exibidos no assistente.  
   
  A estrutura de pacote gerenciado (MPF) dá suporte à criação de categorias de configurações com um mínimo de código adicional.  
   
@@ -48,7 +48,7 @@ Uma categoria de configurações consiste em um grupo de opções que personaliz
  O caminho do registro da categoria de configurações é determinado pela combinação <xref:Microsoft.VisualStudio.Shell.Package.ApplicationRegistryRoot%2A>, o word, UserSettings, a categoria de configurações e o nome do ponto de configurações personalizadas. Os nomes da categoria de configurações e o ponto de configurações personalizadas são Unidos e separados por um caractere de sublinhado para formar o nome canônico não localizado, que aparece no registro. Por exemplo, se a categoria de configurações é "My Category", as configurações personalizadas do ponto de nome "My Settings" e o ApplicationRegistryRoot HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp, a categoria de configurações tem a chave do registro, HKEY_LOCAL Configurações de Category_My MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\UserSettings\My.  
   
 > [!NOTE]
->  O nome canônico não aparece em uma interface de usuário (IU). Ele é usado para associar um nome legível com a categoria de configurações, muito parecido com um identificador programático (ProgID).  
+> O nome canônico não aparece em uma interface de usuário (IU). Ele é usado para associar um nome legível com a categoria de configurações, muito parecido com um identificador programático (ProgID).  
   
 ### <a name="settings-category-attribute"></a>Atributo de categoria de configurações  
  O <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> determina o mapeamento das categorias de pontos de configurações personalizadas em de **Import and Export Settings Wizard** associando uma categoria com o VSPackage que fornece a ele. Considere o fragmento de código a seguir:  

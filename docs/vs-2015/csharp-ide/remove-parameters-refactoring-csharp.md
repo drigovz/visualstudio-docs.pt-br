@@ -17,12 +17,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a28076b8c394818c248a5a18c7bc91d484f2c28a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 40a884fe2ae6aaf73256d8edbcbd083a193b0342
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60045792"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444626"
 ---
 # <a name="remove-parameters-refactoring-c"></a>Refatoração Remover Parâmetros (C#)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ ms.locfileid: "60045792"
  Você executar a operação de remover parâmetros pelo primeiro posicionando o cursor em um método, indexador ou delegado. Enquanto o cursor estiver na posição, para invocar o remova `Parameters` operação, clique em de **refatorar** menu, pressione o atalho de teclado, ou selecione o comando no menu de atalho.  
   
 > [!NOTE]
->  É possível remover o primeiro parâmetro em um método de extensão.  
+> É possível remover o primeiro parâmetro em um método de extensão.  
   
 ### <a name="to-remove-parameters"></a>Para remover parâmetros  
   
@@ -73,7 +73,7 @@ ms.locfileid: "60045792"
  Você pode remover os parâmetros de uma declaração de método ou uma chamada de método. Posicione o cursor no nome do método declaração ou delegado e invocar remover parâmetros.  
   
 > [!CAUTION]
->  Remova habilita parâmetros que você remova um parâmetro que é referenciado no corpo de membro, mas não remove as referências para esse parâmetro no corpo do método. Isso pode introduzir erros de compilação em seu código. No entanto, você pode usar o **visualizar alterações** caixa de diálogo para revisar seu código antes de executar a operação de refatoração.  
+> Remova habilita parâmetros que você remova um parâmetro que é referenciado no corpo de membro, mas não remove as referências para esse parâmetro no corpo do método. Isso pode introduzir erros de compilação em seu código. No entanto, você pode usar o **visualizar alterações** caixa de diálogo para revisar seu código antes de executar a operação de refatoração.  
   
  Se um parâmetro que está sendo removido é modificado durante a chamada para um método, a remoção do parâmetro também removerá a modificação. Por exemplo, se uma chamada de método é alterada de  
   

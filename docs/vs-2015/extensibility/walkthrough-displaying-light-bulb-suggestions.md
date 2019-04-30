@@ -8,12 +8,12 @@ ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 32d567ab4c71bdf4716a4c61464e1ee4ba6ecfa4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 8f135247241e8cf441cba2c1f63984dc69f7114c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099763"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438152"
 ---
 # <a name="walkthrough-displaying-light-bulb-suggestions"></a>Passo a passo: Exibindo sugestões de lâmpada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -179,7 +179,7 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
 6. Implemente a <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource.GetSuggestedActions%2A> método, que retorna uma matriz de <xref:Microsoft.VisualStudio.Language.Intellisense.SuggestedActionSet> objetos que contêm diferentes <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction> objetos. Esse método é chamado quando a lâmpada é expandida.  
   
     > [!WARNING]
-    >  Assegure-se de que as implementações de `HasSuggestedActionsAsync()` e `GetSuggestedActions()` are consistente; que é, se `HasSuggestedActionsAsync()` retorna `true`, em seguida, `GetSuggestedActions()` deve ter algumas ações para exibir. Em muitos casos `HasSuggestedActionsAsync()` é chamado antes `GetSuggestedActions()`, mas isso não é sempre o caso. Por exemplo, se o usuário invoca as ações de lâmpada pressionando (CTRL +.) só `GetSuggestedActions()` é chamado.  
+    > Assegure-se de que as implementações de `HasSuggestedActionsAsync()` e `GetSuggestedActions()` are consistente; que é, se `HasSuggestedActionsAsync()` retorna `true`, em seguida, `GetSuggestedActions()` deve ter algumas ações para exibir. Em muitos casos `HasSuggestedActionsAsync()` é chamado antes `GetSuggestedActions()`, mas isso não é sempre o caso. Por exemplo, se o usuário invoca as ações de lâmpada pressionando (CTRL +.) só `GetSuggestedActions()` é chamado.  
   
     ```csharp  
     public IEnumerable<SuggestedActionSet> GetSuggestedActions(ISuggestedActionCategorySet requestedActionCategories, SnapshotSpan range, CancellationToken cancellationToken)  
@@ -328,7 +328,7 @@ As lâmpadas são ícones usados no editor do Visual Studio que expanda para exi
     ```  
   
     > [!WARNING]
-    >  A ação de lâmpada **Invoke** método não é esperado para mostrar a interface do usuário.  Se a ação de abrir nova interface do usuário (por exemplo, um diálogo Visualização ou a seleção), não exibem a interface do usuário diretamente de dentro do **Invoke** método, mas em vez disso, agendar para exibir sua interface do usuário depois de retornar do **Invoke**.  
+    > A ação de lâmpada **Invoke** método não é esperado para mostrar a interface do usuário.  Se a ação de abrir nova interface do usuário (por exemplo, um diálogo Visualização ou a seleção), não exibem a interface do usuário diretamente de dentro do **Invoke** método, mas em vez disso, agendar para exibir sua interface do usuário depois de retornar do **Invoke**.  
   
 10. Para concluir a implementação, adicione a `Dispose()` e `TryGetTelemetryId()` métodos.  
   

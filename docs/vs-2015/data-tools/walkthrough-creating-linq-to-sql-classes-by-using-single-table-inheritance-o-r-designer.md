@@ -9,12 +9,12 @@ caps.latest.revision: 7
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a7dfd293f5b2219eab6c3a2896c800a1337f2c8c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2dac656f9a765875fc552739b814538582200cc8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60111968"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424694"
 ---
 # <a name="walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>Passo a passo: Criando Classes LINQ to SQL, usando a herança de tabela única (O/R Designer)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ O [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-
 1. No **Gerenciador de servidores**/**Gerenciador de banco de dados**, clique com botão direito do **tabelas** nó e clique em **adicionar nova tabela**.  
   
     > [!NOTE]
-    >  Você pode usar o banco de dados Northwind ou qualquer outro banco de dados ao qual você possa adicionar uma tabela.  
+    > Você pode usar o banco de dados Northwind ou qualquer outro banco de dados ao qual você possa adicionar uma tabela.  
   
 2. No Designer de Tabela, adicione as seguintes colunas à tabela:  
   
@@ -96,7 +96,7 @@ O [ferramentas LINQ to SQL no Visual Studio](../data-tools/linq-to-sql-tools-in-
 2. Nomeie o projeto **InheritanceWalkthrough**.  
   
     > [!NOTE]
-    >  O [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] tem suporte em projetos do Visual Basic e C#. Crie o novo projeto em uma dessas linguagens.  
+    > O [!INCLUDE[vs_ordesigner_short](../includes/vs-ordesigner-short-md.md)] tem suporte em projetos do Visual Basic e C#. Crie o novo projeto em uma dessas linguagens.  
   
 3. Clique o **aplicativo do Windows Forms** modelo e clique **Okey**. Para obter mais informações, consulte [aplicativos cliente](http://msdn.microsoft.com/library/2dfb50b7-5af2-4e12-9bbb-c5ade0e39a68).  
   

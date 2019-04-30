@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 70594f8c881289bd394f33353f237bdab71c91f1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3c094ad703727903e7109d6a748b8383e4cad7d6
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435478"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>Como: Adicionar ou remover conexões do SharePoint
   Gerenciador de servidores permite que você procure sites do SharePoint, bem como conexões de dados. No entanto, antes de você pode procurar o conteúdo de um site do SharePoint você deve adicioná-lo para o **conexões do SharePoint** nó.
@@ -41,7 +41,7 @@ ms.locfileid: "60077362"
 3. Escolha o site e, em seguida, na barra de menus, escolha **edite** > **excluir**.
 
     > [!NOTE]
-    >  Essa etapa não exclui o site subjacente; Ele exclui apenas a conexão do **Gerenciador de servidores**.
+    > Essa etapa não exclui o site subjacente; Ele exclui apenas a conexão do **Gerenciador de servidores**.
 
 ## <a name="see-also"></a>Consulte também
 - [Procurar conexões do SharePoint usando o Gerenciador de servidores](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)

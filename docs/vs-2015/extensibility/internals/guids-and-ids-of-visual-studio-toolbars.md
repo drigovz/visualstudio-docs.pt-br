@@ -16,12 +16,12 @@ ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 caps.latest.revision: 8
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8bafe0d76b86c73424614589c08095f096da9936
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 6ec717707727b046ecd0d749179ea463ae3a4950
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925341"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436272"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>GUIDs e IDs de barras de ferramentas do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ ms.locfileid: "58925341"
 Este tópico enumera os valores GUID e ID das barras de ferramentas que estão incluídos no ambiente de desenvolvimento integrado (IDE) do Visual Studio e dos grupos que eles contêm. Esses valores são definidos em arquivos. VSCT que são instalados como parte do SDK do Visual Studio. Para obter mais informações, consulte [IDE-Defined comandos, Menus e grupos](../../extensibility/internals/ide-defined-commands-menus-and-groups.md).
 
 > [!NOTE]
->  Muitas das barras de ferramentas disponíveis para o Visual Studio não são definidas pelo Visual Studio e sua GUID e valores de ID não são públicos. Este tópico lista somente as barras de ferramentas que são definidas em arquivos. VSCT de SDK do Visual Studio.
+> Muitas das barras de ferramentas disponíveis para o Visual Studio não são definidas pelo Visual Studio e sua GUID e valores de ID não são públicos. Este tópico lista somente as barras de ferramentas que são definidas em arquivos. VSCT de SDK do Visual Studio.
 
  Para obter mais informações sobre como trabalhar com objetos IDE que são definidos em arquivos. VSCT, consulte [estendendo Menus e comandos](../../extensibility/extending-menus-and-commands.md).
 
@@ -110,7 +110,7 @@ Este tópico enumera os valores GUID e ID das barras de ferramentas que estão i
  Barras de ferramentas podem aparecer diretamente no IDE ou nas janelas de ferramentas, como **Gerenciador de soluções**. Como as janelas de ferramentas não estão definidas nos arquivos. VSCT, barras de ferramentas de janela de ferramenta não têm pais definidos. Em vez disso, eles são colocados no código. A tabela a seguir mostra as barras de ferramentas que aparecem nas janelas de ferramentas no IDE e os grupos de comando que eles contêm.
 
 > [!NOTE]
->  Barras de ferramentas e grupos de usam o GUID `guidSHLMainMenu`, exceto quando especificado de outra forma, usando a sintaxe GUID:ID. Quando um GUID for especificado para uma barra de ferramentas, ele também se aplica aos grupos que descendem daquela barra de ferramentas.
+> Barras de ferramentas e grupos de usam o GUID `guidSHLMainMenu`, exceto quando especificado de outra forma, usando a sintaxe GUID:ID. Quando um GUID for especificado para uma barra de ferramentas, ele também se aplica aos grupos que descendem daquela barra de ferramentas.
 
 |Janela de ferramentas|Barra de ferramentas|Grupos|
 |-----------------|-------------|------------|

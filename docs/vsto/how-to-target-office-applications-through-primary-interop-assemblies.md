@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 074b01e78fd398a43548febf81ba03b61a8646b4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 02a69cb91a24b60e8161948a650a6993a634b665
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079624"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63421041"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>Como: Aplicativos do Office de destino por meio de assemblies de interoperabilidade primários
   Quando você cria um novo projeto do Office, o Visual Studio adiciona automaticamente referências para os Microsoft Office assemblies de interoperabilidade primários (PIAs) que são necessários para compilar seu projeto. Você deve adicionar referências a outros PIAs nos seguintes cenários:
@@ -45,7 +45,7 @@ ms.locfileid: "60079624"
      Se o projeto é direcionado a [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ou posterior, o **inserir tipos Interop** propriedade para a referência de assembly é definida como **True** por padrão. Ao usar essa configuração, sua solução não exige o PIA nos computadores dos usuários finais. Para obter mais informações, consulte [Design e criar soluções do Office](../vsto/designing-and-creating-office-solutions.md).
 
     > [!NOTE]
-    >  Em projetos do Office, sempre adicionar referências aos PIAs do Office usando o **.NET** guia da **adicionar referência** caixa de diálogo, em vez do **COM** guia. Para obter mais informações, consulte [assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md).
+    > Em projetos do Office, sempre adicionar referências aos PIAs do Office usando o **.NET** guia da **adicionar referência** caixa de diálogo, em vez do **COM** guia. Para obter mais informações, consulte [assemblies de interoperabilidade primários do Office](../vsto/office-primary-interop-assemblies.md).
 
 4. Clique em **OK**.
 

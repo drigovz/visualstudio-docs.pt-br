@@ -21,14 +21,14 @@ caps.latest.revision: 51
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: df11af5dee9ce510af01dab037a47a1bdd2f2880
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: baa62dc48b329cd3639c0623fccfdbe2325cf9e3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60082198"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429132"
 ---
-# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Passo a passo: Implantando um aplicativo ClickOnce manualmente
+# <a name="walkthrough-manually-deploying-a-clickonce-application"></a>Passo a passo: Como implantar manualmente aplicativos ClickOnce
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] aplicativo ou você precisa usar recursos de implantação avançada, como implantação de aplicativos confiáveis, você deve usar a ferramenta de linha de comando Mage.exe para criar seu [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] manifestos. Este passo a passo descreve como criar um [!INCLUDE[ndptecclick](../includes/ndptecclick-md.md)] implantação usando a versão de linha de comando (Mage.exe) ou a versão gráfica (MageUI.exe) da Manifest Generation and Editing Tool.  
@@ -57,7 +57,7 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
      Você deve entrar sua implantação com um certificado Authenticode. Você pode gerar um certificado de teste usando as ferramentas do Visual Studio, MageUI.exe, ou MakeCert.exe e Pvk2Pfx.exe, ou você pode obter um certificado de uma autoridade de certificação (CA). Se você optar por usar a implantação de aplicativos confiáveis, você também deve executar uma única instalação do certificado em todos os computadores cliente. Para saber mais, veja [Visão geral da implantação de aplicativos confiáveis](../deployment/trusted-application-deployment-overview.md).  
   
     > [!NOTE]
-    >  Você também pode entrar sua implantação com um certificado CNG que você pode obter de uma autoridade de certificação.  
+    > Você também pode entrar sua implantação com um certificado CNG que você pode obter de uma autoridade de certificação.  
   
 - Certifique-se de que o aplicativo não tem um manifesto com informações do UAC.  
   
@@ -76,7 +76,7 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
 2. No diretório de implantação que você acabou de criar, crie um subdiretório de versão. Se essa for a primeira vez que você está implantando o aplicativo, nomeie o subdiretório de versão **1.0.0.0**.  
   
     > [!NOTE]
-    >  A versão da sua implantação pode ser distinta da versão do seu aplicativo.  
+    > A versão da sua implantação pode ser distinta da versão do seu aplicativo.  
   
 3. Copie todos os arquivos de aplicativo para o subdiretório de versão, incluindo arquivos executáveis, assemblies, recursos e arquivos de dados. Se necessário, você pode criar subpastas adicionais que contêm arquivos adicionais.  
   
@@ -89,7 +89,7 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
     ```  
   
     > [!NOTE]
-    >  Certifique-se de incluir o ponto (.) após o `-FromDirectory` opção, que indica o diretório atual. Se você não incluir o ponto, você deve especificar o caminho para os arquivos do aplicativo.  
+    > Certifique-se de incluir o ponto (.) após o `-FromDirectory` opção, que indica o diretório atual. Se você não incluir o ponto, você deve especificar o caminho para os arquivos do aplicativo.  
   
 6. Assinar o manifesto de aplicativo com seu certificado Authenticode. Substitua *mycert* com o caminho para o arquivo de certificado. Substitua *passwd* com a senha para o arquivo de certificado.  
   
@@ -134,7 +134,7 @@ Se você não pode usar o Visual Studio para implantar seu [!INCLUDE[ndptecclick
 2. No diretório de implantação que você acabou de criar, crie um subdiretório de versão. Se essa for a primeira vez que você está implantando o aplicativo, nomeie o subdiretório de versão **1.0.0.0**.  
   
     > [!NOTE]
-    >  A versão da sua implantação é provavelmente diferente da versão do seu aplicativo.  
+    > A versão da sua implantação é provavelmente diferente da versão do seu aplicativo.  
   
 3. Copie todos os arquivos de aplicativo para o subdiretório de versão, incluindo arquivos executáveis, assemblies, recursos e arquivos de dados. Se necessário, você pode criar subpastas adicionais que contêm arquivos adicionais.  
   

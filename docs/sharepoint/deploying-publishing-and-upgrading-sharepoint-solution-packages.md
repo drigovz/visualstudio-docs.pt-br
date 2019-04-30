@@ -16,18 +16,18 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 093016b3924d7882901a2b2c1bda060571d5bff4
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: a49ad82cc6cbb2eef8a8746b2c94575925ab1ddd
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56618400"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436732"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>Implantar, publicar e atualizar pacotes de solução do SharePoint
   Depois de desenvolver uma solução do SharePoint no Visual Studio, você pode implantar o seu arquivo de pacote (. wsp) em um servidor SharePoint local ou publicá-lo em um servidor do SharePoint local ou remoto. Se você implantar os arquivos, você pode personalizar como os arquivos de pacote (. wsp) são implantados.
 
 > [!NOTE]
->  Atualmente, apenas soluções em área restrita podem ser publicadas em servidores remotos do SharePoint. Para obter mais informações, consulte [considerações sobre a solução em área restrita](../sharepoint/sandboxed-solution-considerations.md).
+> Atualmente, apenas soluções em área restrita podem ser publicadas em servidores remotos do SharePoint. Para obter mais informações, consulte [considerações sobre a solução em área restrita](../sharepoint/sandboxed-solution-considerations.md).
 
 ## <a name="deploy-publish-and-upgrade"></a>Implantar, publicar e atualizar
  *Implantando* refere-se à cópia de um arquivo de solução do SharePoint criado a partir de um projeto do SharePoint no Visual Studio para um host local. Em uma solução implantada, você pode configurar as etapas de implantação, como Reciclando o pool de serviços de informações da Internet (IIS), ativando a solução após a implantação e assim por diante. Para implantar, usar o **Deploy** comando o **Build** menu. Para obter mais informações, confira [Como: Editar uma configuração de implantação do SharePoint](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md) e [como: Implantar e publicar uma solução do SharePoint em um site do SharePoint Local](../sharepoint/how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site.md).

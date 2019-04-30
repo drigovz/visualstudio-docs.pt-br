@@ -12,12 +12,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 199f89d7c2ce4c9674ed9d79ec13a1b392b70371
-ms.sourcegitcommit: b0d8e61745f67bd1f7ecf7fe080a0fe73ac6a181
-ms.translationtype: MT
+ms.openlocfilehash: 8e9fe393f7b0ad52a8d713c0f41f25f03bb056ff
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/22/2019
-ms.locfileid: "56706997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434765"
 ---
 # <a name="sccaddfromscc-function"></a>Função SccAddFromScc
 Essa função permite que o usuário procurar arquivos que já estão no sistema de controle de origem e, subsequentemente, torná essas partes de arquivos do projeto atual. Por exemplo, essa função pode obter um arquivo de cabeçalho comum para o projeto atual sem copiar o arquivo. Matriz de retorno de arquivos, `lplpFileNames`, contém a lista de arquivos que o usuário deseja adicionar ao projeto do IDE.
@@ -69,7 +69,7 @@ SCCRTN SccAddFromScc (
  `lplpFileNames` é um `char ***` ponteiro. O plug-in de controle do código-fonte coloca um ponteiro para uma matriz de ponteiros para os nomes de arquivo, assim, transmitindo a lista da maneira padrão para esta API.
 
 > [!NOTE]
->  As versões iniciais da API VSSCI não forneceu uma maneira de indicar o projeto de destino para os arquivos adicionados. Para acomodar isso, a semântica de `lplpFIleNames` parâmetro foram aprimoradas para torná-lo um parâmetro de entrada/saída, em vez de um parâmetro de saída. Se apenas um único arquivo for especificado, ou seja, o valor apontado por `lpnFiles` = 1 e, em seguida, o primeiro elemento da `lplpFileNames` contém a pasta de destino. Para usar essa nova semântica, as chamadas IDE a `SccSetOption` funcionar com o `nOption`parâmetro definido como `SCC_OPT_SHARESUBPROJ`. Se um plug-in de controle do código-fonte não dá suporte a semântica, ele retorna `SCC_E_OPTNOTSUPPORTED`. Fazer então desabilita o uso do **adicionar do controle de origem** recurso. Se um plug-in dá suporte à **adicionar do controle de origem** recurso (`SCC_CAP_ADDFROMSCC`), em seguida, ele deve oferecer suporte a nova semântica e retornar `SCC_I_SHARESUBPROJOK`.
+> As versões iniciais da API VSSCI não forneceu uma maneira de indicar o projeto de destino para os arquivos adicionados. Para acomodar isso, a semântica de `lplpFIleNames` parâmetro foram aprimoradas para torná-lo um parâmetro de entrada/saída, em vez de um parâmetro de saída. Se apenas um único arquivo for especificado, ou seja, o valor apontado por `lpnFiles` = 1 e, em seguida, o primeiro elemento da `lplpFileNames` contém a pasta de destino. Para usar essa nova semântica, as chamadas IDE a `SccSetOption` funcionar com o `nOption`parâmetro definido como `SCC_OPT_SHARESUBPROJ`. Se um plug-in de controle do código-fonte não dá suporte a semântica, ele retorna `SCC_E_OPTNOTSUPPORTED`. Fazer então desabilita o uso do **adicionar do controle de origem** recurso. Se um plug-in dá suporte à **adicionar do controle de origem** recurso (`SCC_CAP_ADDFROMSCC`), em seguida, ele deve oferecer suporte a nova semântica e retornar `SCC_I_SHARESUBPROJOK`.
 
 ## <a name="see-also"></a>Consulte também
 - [Funções de API de plug-in da controle de origem](../extensibility/source-control-plug-in-api-functions.md)

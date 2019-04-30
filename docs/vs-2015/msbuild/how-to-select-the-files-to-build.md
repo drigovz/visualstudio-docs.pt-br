@@ -13,12 +13,12 @@ caps.latest.revision: 17
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5a45720c739087c2caf43314cbcbc8aea162534c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0968dd8914b99e8d47ef1364231059175aaf73fe
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60064837"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437900"
 ---
 # <a name="how-to-select-the-files-to-build"></a>Como: Selecionar os arquivos a serem compilados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Quando você compila um projeto que contém vários arquivos, é possível lista
      `<VBFile Include="form1.vb"/>`  
   
     > [!NOTE]
-    >  Se os itens em uma coleção de itens não estiverem no mesmo diretório que o arquivo de projeto, será necessário especificar o caminho completo ou relativo para o item. Por exemplo: `Include="..\..\form2.cs"`.  
+    > Se os itens em uma coleção de itens não estiverem no mesmo diretório que o arquivo de projeto, será necessário especificar o caminho completo ou relativo para o item. Por exemplo: `Include="..\..\form2.cs"`.  
   
 #### <a name="to-declare-multiple-items"></a>Para declarar vários itens  
   
@@ -100,9 +100,9 @@ Quando você compila um projeto que contém vários arquivos, é possível lista
      `<VBC Sources="@(VBFile)">...</VBC>`  
   
 > [!NOTE]
->  Você deve usar caracteres curinga com itens para especificar as entradas para um build; não é possível especificar as entradas usando o atributo `Sources` em tarefas de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] como [Csc](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). O exemplo a seguir não é válido em um arquivo de projeto:  
+> Você deve usar caracteres curinga com itens para especificar as entradas para um build; não é possível especificar as entradas usando o atributo `Sources` em tarefas de [!INCLUDE[vstecmsbuild](../includes/vstecmsbuild-md.md)] como [Csc](../msbuild/csc-task.md) ou [Vbc](../msbuild/vbc-task.md). O exemplo a seguir não é válido em um arquivo de projeto:  
 >   
->  `<CSC Sources="*.cs">...</CSC>`  
+> `<CSC Sources="*.cs">...</CSC>`  
   
 ## <a name="example"></a>Exemplo  
  O exemplo de código a seguir mostra um projeto que inclui todos os arquivos de entrada separadamente.  

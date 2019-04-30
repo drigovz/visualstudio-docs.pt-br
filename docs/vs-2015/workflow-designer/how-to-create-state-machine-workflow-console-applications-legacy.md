@@ -13,12 +13,12 @@ caps.latest.revision: 5
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8fefc6ae73f4c5a331adb17ef72fe28d31a4f350
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5235b990dc1eef80114188d3de40c6701008cee9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101516"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444206"
 ---
 # <a name="how-to-create-state-machine-workflow-console-applications-legacy"></a>Como: Criar aplicativos de console do fluxo de trabalho de máquina de estado (herdado)
 Siga estas etapas para criar um projeto de aplicativo do console de fluxo de trabalho do computador de estado usando [!INCLUDE[wfd1](../includes/wfd1-md.md)] herdado fornecido por [!INCLUDE[vs2010](../includes/vs2010-md.md)]. Use [!INCLUDE[wfd2](../includes/wfd2-md.md)] herdado quando você precisa definir como alvo [!INCLUDE[netfx35_long](../includes/netfx35-long-md.md)] ou [!INCLUDE[vstecwinfx](../includes/vstecwinfx-md.md)].  
@@ -34,7 +34,7 @@ Siga estas etapas para criar um projeto de aplicativo do console de fluxo de tra
 3. Selecione o **.NET Framework 3.0** opção ou o **.NET Framework 3.5** opção na lista suspensa na parte superior da lista da **novo projeto** janela para acessar o designer herdado.  
   
     > [!NOTE]
-    >  A opção padrão na [!INCLUDE[vs2010](../includes/vs2010-md.md)] está **.NET Framework 4**. Essa opção é usada criar aplicativos de [!INCLUDE[wf](../includes/wf-md.md)] que direcionam [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] e usa o designer herdado.  
+    > A opção padrão na [!INCLUDE[vs2010](../includes/vs2010-md.md)] está **.NET Framework 4**. Essa opção é usada criar aplicativos de [!INCLUDE[wf](../includes/wf-md.md)] que direcionam [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] e usa o designer herdado.  
   
 4. No **tipos de projeto** painel, selecione Visual c# ou Visual Basic (sob **outras linguagens**) e, em seguida, selecione **fluxo de trabalho**.  
   

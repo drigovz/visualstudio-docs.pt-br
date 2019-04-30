@@ -19,12 +19,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cd19af4bc2533d2bd4e7c21dd49eae53510ae429
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: d794e135c38858522c19c6842573445ab9fb669f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118208"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63425015"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>Salvar dados em um banco de dados (várias tabelas)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ Um dos cenários mais comuns no desenvolvimento de aplicativos é exibir dados d
  Você pode salvar os dados em seu aplicativo de volta no banco de dados chamando o método `Update` de um TableAdapter. Quando você arrasta tabelas do **fontes de dados** janela em um formulário, o código necessário para salvar dados é adicionada automaticamente. Quaisquer tabelas adicionais que são adicionadas a um formulário exigem a adição manual desse código. Essa explicação passo a passo mostra como adicionar código para salvar atualizações de mais de uma tabela.  
   
 > [!NOTE]
->  As caixas de diálogo e comandos de menu que você vê podem diferir dos descritos na Ajuda, dependendo de suas configurações ativas ou a edição que você está usando. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+> As caixas de diálogo e comandos de menu que você vê podem diferir dos descritos na Ajuda, dependendo de suas configurações ativas ou a edição que você está usando. Para alterar as configurações, escolha **Importar e Exportar Configurações** no menu **Ferramentas**. Para obter mais informações, consulte [Personalizando configurações de desenvolvimento no Visual Studio](http://msdn.microsoft.com/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
  As tarefas ilustradas neste passo a passo incluem:  
   
@@ -118,7 +118,7 @@ Um dos cenários mais comuns no desenvolvimento de aplicativos é exibir dados d
 2. Arraste o nó **Ordens** relacionado da janela **Fontes de Dados** para **Form1**.  
   
     > [!NOTE]
-    >  O nó **Ordens** relacionado está localizado abaixo da coluna **Fax** e é um nó filho do nó **Clientes**.  
+    > O nó **Ordens** relacionado está localizado abaixo da coluna **Fax** e é um nó filho do nó **Clientes**.  
   
      Um controle <xref:System.Windows.Forms.DataGridView> e uma faixa de ferramentas (<xref:System.Windows.Forms.BindingNavigator>) para navegação em registros são exibidos no formulário. Um OrdersTableAdapter e <xref:System.Windows.Forms.BindingSource> aparecem na bandeja de componentes.  
   
@@ -126,7 +126,7 @@ Um dos cenários mais comuns no desenvolvimento de aplicativos é exibir dados d
  É possível atualizar os bancos de dados chamando os métodos `Update` dos TableAdapters **Clientes** e **Ordens**. Por padrão, um manipulador de eventos para o **salve** botão do<xref:System.Windows.Forms.BindingNavigator> é adicionado ao código do formulário para enviar atualizações para o banco de dados. Este procedimento modifica o código para enviar atualizações na ordem correta. Isso elimina a possibilidade de gerar erros de integridade referencial. O código também implementa manipulação de erros com a quebra automática da chamada de atualização em um bloco try-catch. Você pode mudar o código para atender às necessidades do seu aplicativo.  
   
 > [!NOTE]
->  Para maior clareza, este passo a passo não usa uma transação. No entanto, se você estiver atualizando dois ou mais tabelas relacionadas, inclua toda a lógica de atualização dentro de uma transação. Uma transação é um processo que garante que todas as alterações relacionadas a um banco de dados são bem-sucedidas antes que as alterações sejam confirmadas. Para obter mais informações, consulte [transações e simultaneidade](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
+> Para maior clareza, este passo a passo não usa uma transação. No entanto, se você estiver atualizando dois ou mais tabelas relacionadas, inclua toda a lógica de atualização dentro de uma transação. Uma transação é um processo que garante que todas as alterações relacionadas a um banco de dados são bem-sucedidas antes que as alterações sejam confirmadas. Para obter mais informações, consulte [transações e simultaneidade](http://msdn.microsoft.com/library/f46570de-9e50-4fe6-8710-a8c31fa8569b).  
   
 #### <a name="to-add-update-logic-to-the-application"></a>Para adicionar lógica de atualização ao aplicativo  
   

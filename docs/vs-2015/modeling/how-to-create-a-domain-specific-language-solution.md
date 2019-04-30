@@ -15,12 +15,12 @@ caps.latest.revision: 43
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 57c843b7c556ac409a63d5e6c01e2699da59958b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e9afaa8fc74ef893b3b916c66907ae5d1a3af55f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099566"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441086"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>Como: Criar uma solução de Linguagem Específica de Domínio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Uma linguagem específica de domínio (DSL) é criada usando especializado [!INC
        O **Assistente de Designer de linguagem específica do domínio** é exibida.  
   
       > [!NOTE]
-      >  De preferência, o nome que você digita deve ser um Visual C# identificador válido, porque ele pode ser usado para gerar código.  
+      > De preferência, o nome que você digita deve ser um Visual C# identificador válido, porque ele pode ser usado para gerar código.  
   
       ![Criar caixa de diálogo DSL](../modeling/media/create-dsldialog.png "Create_DSLDialog")  
   
@@ -76,7 +76,7 @@ Uma linguagem específica de domínio (DSL) é criada usando especializado [!INC
     O assistente cria uma solução que tem dois projetos, que são nomeados **Dsl** e **DslPackage**.  
   
    > [!NOTE]
-   >  Se você vir uma mensagem que o alerta não executar modelos de texto de fontes não confiáveis, clique em **Okey**. Você pode definir essa mensagem não seja exibido novamente.  
+   > Se você vir uma mensagem que o alerta não executar modelos de texto de fontes não confiáveis, clique em **Okey**. Você pode definir essa mensagem não seja exibido novamente.  
   
 ## <a name="settings"></a> As páginas do Assistente de Designer de DSL  
  Você pode deixar vários campos inalterados de seus valores padrão. No entanto, certifique-se de que você defina o campo de extensão de arquivo.  

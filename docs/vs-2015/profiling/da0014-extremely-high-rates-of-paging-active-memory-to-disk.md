@@ -1,5 +1,5 @@
 ---
-title: 'DA0014: taxas extremamente altas de paginação de memória ativa em disco | Microsoft Docs'
+title: 'DA0014: Taxas extremamente altas de paginação de memória ativa em disco | Microsoft Docs'
 ms.date: 11/15/2016
 ms.prod: visual-studio-dev14
 ms.technology: vs-ide-debug
@@ -14,14 +14,14 @@ caps.latest.revision: 16
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 124f640fd5bf049280638408b4b6101e24e8c58b
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: dbf391f96cd21f0c473589d4992083963ff65d55
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54784432"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440922"
 ---
-# <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: taxas extremamente elevadas de paginação de memória ativa em disco
+# <a name="da0014-extremely-high-rates-of-paging-active-memory-to-disk"></a>DA0014: Taxas de paginação de memória ativa para o disco extremamente altas
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 Id da regra | DA0014 |  
@@ -41,7 +41,7 @@ Id da regra | DA0014 |
  Com frequência, as páginas são lidas do disco ou gravadas no disco em operações de paginação em massa. O número de Saída de páginas/s é frequentemente muito maior do que o número de Gravações de página/s, por exemplo. Pois a Saída de páginas/s também inclui as páginas de dados alterados do cache de arquivos do sistema. No entanto, nem sempre é fácil determinar qual processo é diretamente responsável pela paginação e por quê.  
   
 > [!NOTE]
->  Essa regra é acionada quando os níveis de paginação de memória ativa atingem uma taxa muito alta. Quando o nível de paginação é significativo, mas não extremo, a regra informativa [DA0017: altas taxas de paginação de memória ativa em disco](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) é acionada.  
+> Essa regra é acionada quando os níveis de paginação de memória ativa atingem uma taxa muito alta. Quando o nível de paginação é significativo, mas não extremo, a regra informativa [DA0017: Taxas altas de paginação de memória ativa para o disco](../profiling/da0017-high-rates-of-paging-active-memory-to-disk.md) é disparada em vez disso.  
   
 ## <a name="how-to-fix-violations"></a>Como Corrigir Violações  
  Clique duas vezes na mensagem da janela Lista de Erros para navegar para a exibição [Marcas](../profiling/marks-view.md). Encontre a coluna **Memória\Páginas/s**. Determine se há fases específicas da execução do programa em que a atividade de E/S de paginação é mais pesada do que em outras.  

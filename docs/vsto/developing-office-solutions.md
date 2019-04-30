@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: cf2ef7aac4b9e9b54beeed0d4a6d6be31983c30e
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: 6d4ee308c5c689644c9fd9ca6e85493a081e2cdf
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56602254"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440747"
 ---
 # <a name="develop-office-solutions"></a>Desenvolver soluções do Office
   Depois de criar um projeto usando o Office developer tools no Visual Studio e configurar os arquivos de projeto, você pode começar a se concentrar em como implementar o código e a interface do usuário personalizada (UI).
@@ -27,7 +27,7 @@ ms.locfileid: "56602254"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 > [!NOTE]
->  Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
+> Interessado em desenvolver soluções que estendem a experiência do Office em toda [várias plataformas](https://dev.office.com/add-in-availability)? Confira a nova [modelo de suplementos do Office](https://dev.office.com/docs/add-ins/overview/office-add-ins). Suplementos do Office têm uma superfície pequena em comparação com soluções e suplementos do VSTO, e você pode criá-los usando quase qualquer tecnologia, como HTML5, JavaScript, CSS3 e XML de programação da web.
 
 ## <a name="office-solutions-programming-model"></a>Modelo de programação de soluções do Office
  O modelo de objeto do Office expõe uma variedade de objetos que você pode programar. Sempre que você programa soluções do Office usando código gerenciado, você pode escrever código que usa tipos em assemblies de interoperabilidade primários do Office. Em soluções que você cria usando os modelos de projeto do Office no Visual Studio, você também deve escrever código diretamente no classes geradas em seu projeto. Para obter mais informações, consulte [escrever código em soluções do Office](../vsto/writing-code-in-office-solutions.md).

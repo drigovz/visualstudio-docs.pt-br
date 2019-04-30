@@ -10,12 +10,12 @@ ms.assetid: a39fca69-0014-474c-933f-51f0e9b9617e
 caps.latest.revision: 11
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 3bd7b31a609117a59a5110cdb4460e5c36395ede
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 912d5d7a225520fc825d832bf73f5cfc733a9486
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60089205"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436016"
 ---
 # <a name="how-to-add-standard-text-markers"></a>Como: Adicionar marcadores de texto padrão
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -29,7 +29,7 @@ Use o procedimento a seguir para criar um dos tipos de marcador de texto padrão
      Nessa chamada de método, especifique um tipo de marcador, um intervalo de texto para criar o marcador de failover e um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface. Esse método, em seguida, retorna um ponteiro para o marcador de texto criado recentemente. Tipos de marcador são tirados o <xref:Microsoft.VisualStudio.TextManager.Interop.MARKERTYPE> enumeração. Especifique um <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextMarkerClient> interface se você quiser ser informado sobre eventos de marcador.  
   
     > [!NOTE]
-    >  Crie marcadores de texto no thread da interface do usuário principal somente. O editor de núcleo depende do conteúdo do buffer de texto para criar marcadores de texto e o buffer de texto não é thread-safe.  
+    > Crie marcadores de texto no thread da interface do usuário principal somente. O editor de núcleo depende do conteúdo do buffer de texto para criar marcadores de texto e o buffer de texto não é thread-safe.  
   
 ## <a name="adding-a-custom-command"></a>Adicionando um comando personalizado  
  Implementando o `IVsTextMarkerClient` aprimora a interface e fornecer um ponteiro para ele de um marcador de comportamento de marcador de várias maneiras. Em primeiro lugar, isso permite que você forneça dicas para o marcador e executar comandos. Isso também permite que você deseja receber notificações de evento de marcadores individuais e para criar um menu de contexto sobre o marcador. Use o procedimento a seguir para adicionar um comando personalizado para o menu de contexto do marcador.  
@@ -52,4 +52,4 @@ Use o procedimento a seguir para criar um dos tipos de marcador de texto padrão
  [Usar marcadores de texto com a API herdada](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Como: Implementar o marcador de erros](../extensibility/how-to-implement-error-markers.md)   
  [Como: Criar marcadores de texto personalizado](../extensibility/how-to-create-custom-text-markers.md)   
- [Como: Usar marcadores de texto](../extensibility/how-to-use-text-markers.md)
+ [Como: usar marcadores de texto](../extensibility/how-to-use-text-markers.md)

@@ -11,12 +11,12 @@ helpviewer_keywords:
 ms.assetid: a0df5b9c-0932-4e54-86f0-28530ad9d684
 caps.latest.revision: 22
 manager: jillfra
-ms.openlocfilehash: 662ee0ba4659e09b02f120bac5b3eaa728add6d9
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cc465ca5bc9474aaba51042d453a57ee7ec124ec
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60037889"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432296"
 ---
 # <a name="creating-your-own-start-page"></a>Criando sua própria página inicial
 Você pode criar uma página inicial personalizada usando o modelo de projeto de página Iniciar ou criando uma página em branco do início.  
@@ -31,7 +31,7 @@ Você pode criar uma página inicial personalizada usando o modelo de projeto de
 1. Baixe e instale o [modelo de projeto de página de início](http://go.microsoft.com/fwlink/?LinkId=186204) da Galeria do Visual Studio.  
   
     > [!WARNING]
-    >  No momento o modelo de projeto do Visual Studio 2010 iniciar página não foi atualizado. Para obter informações sobre como atualizar esse modelo, consulte [como: Atualizar uma página de início personalizados do Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
+    > No momento o modelo de projeto do Visual Studio 2010 iniciar página não foi atualizado. Para obter informações sobre como atualizar esse modelo, consulte [como: Atualizar uma página de início personalizados do Visual Studio](../misc/how-to-upgrade-a-visual-studio-custom-start-page.md).  
   
 2. Depois de ter instalado o modelo, crie um novo projeto de página de início com ele.  
   
@@ -101,4 +101,4 @@ Você pode criar uma página inicial personalizada usando o modelo de projeto de
   
 ## <a name="see-also"></a>Consulte também  
  [Personalizando a página inicial](../ide/customizing-the-start-page-for-visual-studio.md)   
- [Passo a passo: Adicionar XAML personalizado à página inicial](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
+ [Passo a passo: adicionar um XAML personalizado à página inicial](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

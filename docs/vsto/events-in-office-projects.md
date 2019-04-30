@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 6318108523f072beaae85c51604dbb45982a244f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0fdea53ec99c4f95fb4bb9526b3f154bea5b662b
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60094847"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441832"
 ---
 # <a name="events-in-office-projects"></a>Eventos em projetos do Office
   Cada modelo de projeto do Office automaticamente gera vários manipuladores de eventos. Os manipuladores de eventos para personalizações no nível de documento são ligeiramente diferentes de manipuladores de eventos para suplementos do VSTO.
@@ -82,7 +82,7 @@ ms.locfileid: "60094847"
     - `ThisWorkbook_Shutdown`
 
 > [!NOTE]
->  Não remover programaticamente os controles durante o **desligamento** manipulador de eventos do documento. Os elementos de interface do usuário do documento não estão mais disponíveis quando o **desligamento** evento ocorre. Se você quiser remover os controles antes de fecha o aplicativo, adicione seu código para outro manipulador de eventos, como **BeforeClose** ou **BeforeSave**.
+> Não remover programaticamente os controles durante o **desligamento** manipulador de eventos do documento. Os elementos de interface do usuário do documento não estão mais disponíveis quando o **desligamento** evento ocorre. Se você quiser remover os controles antes de fecha o aplicativo, adicione seu código para outro manipulador de eventos, como **BeforeClose** ou **BeforeSave**.
 
 ### <a name="event-handler-method-declarations"></a>Declarações de método do manipulador de eventos
  Cada declaração de método do manipulador de eventos tem os mesmos argumentos passados para ele: *remetente* e *e*. No Excel, o *remetente* argumento se refere à planilha, como `Sheet1` ou `Sheet2`; no Word, o *remetente* argumento se refere ao documento. O *eletrônico* argumento refere-se para os argumentos padrão para um evento, que não são usados nesse caso.
@@ -95,7 +95,7 @@ ms.locfileid: "60094847"
  O exemplo de código a seguir mostra os manipuladores de eventos padrão em projetos de nível de documento para Excel.
 
 > [!NOTE]
->  O exemplo de código a seguir mostra os manipuladores de eventos no `Sheet1` classe. Os nomes dos manipuladores de eventos em outras classes de item de host correspondem ao nome da classe. Por exemplo, nos `Sheet2` classe, o **inicialização** manipulador de eventos é chamado `Sheet2_Startup`. No `ThisWorkbook` classe, o **inicialização** manipulador de eventos é chamado `ThisWorkbook_Startup`.
+> O exemplo de código a seguir mostra os manipuladores de eventos no `Sheet1` classe. Os nomes dos manipuladores de eventos em outras classes de item de host correspondem ao nome da classe. Por exemplo, nos `Sheet2` classe, o **inicialização** manipulador de eventos é chamado `Sheet2_Startup`. No `ThisWorkbook` classe, o **inicialização** manipulador de eventos é chamado `ThisWorkbook_Startup`.
 
  [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
  [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
@@ -150,7 +150,7 @@ ms.locfileid: "60094847"
 - O <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> eventos do <xref:Microsoft.Office.Interop.Outlook.Explorer> objeto.
 
 > [!NOTE]
->  Você pode forçar o Outlook para gerar o <xref:Microsoft.Office.Tools.AddInBase.Shutdown> evento quando ele sai modificando o registro. No entanto, se um administrador reverte essa configuração, qualquer código que você adicione o `ThisAddIn_Shutdown` método não é executado quando o Outlook é fechado. Para obter mais informações, consulte [desligamento é alterado para o Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
+> Você pode forçar o Outlook para gerar o <xref:Microsoft.Office.Tools.AddInBase.Shutdown> evento quando ele sai modificando o registro. No entanto, se um administrador reverte essa configuração, qualquer código que você adicione o `ThisAddIn_Shutdown` método não é executado quando o Outlook é fechado. Para obter mais informações, consulte [desligamento é alterado para o Outlook 2010](http://go.microsoft.com/fwlink/?LinkID=184614).
 
 ## <a name="see-also"></a>Consulte também
 - [Desenvolver soluções do Office](../vsto/developing-office-solutions.md)

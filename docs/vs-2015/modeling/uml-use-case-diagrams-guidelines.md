@@ -15,12 +15,12 @@ caps.latest.revision: 38
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: cc5415452c6837fa92e1a37ca5d8dfe2a4dd40f6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: cd0ba9030d658abb78605cf2e14b5afaa9678f78
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067996"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424298"
 ---
 # <a name="uml-use-case-diagrams-guidelines"></a>Diagramas de caso de uso UML: Diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 ## <a name="BasicSteps"></a> Etapas básicas para desenhar diagramas de caso de uso  
   
 > [!NOTE]
->  Etapas detalhadas para a criação de qualquer um dos diagramas de modelagem são descritas em [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
+> Etapas detalhadas para a criação de qualquer um dos diagramas de modelagem são descritas em [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-new-use-case-diagram"></a>Para criar um novo diagrama de caso de uso  
   
@@ -133,7 +133,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
  O ator especializado pode ter seus próprio casos de uso adicionais que não estão disponíveis para os outros atores.  
   
 > [!CAUTION]
->  Você não deve fazer loops de relações de generalização que resultam em um ator generalizar em si. Loops podem gerar erros.  
+> Você não deve fazer loops de relações de generalização que resultam em um ator generalizar em si. Loops podem gerar erros.  
   
 ### <a name="alternative-actor-icons"></a>Ícones de ator alternativo  
  Você pode usar ícones personalizados para representar um ator, em vez da figura de pilha padrão. Por exemplo, você pode alterá-lo para se parecer com um dispositivo, restaurante, bancário e assim por diante.  
@@ -160,7 +160,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
  ![Use o caso de um-para-um com ator](../modeling/media/uml-ucguidemulti1.png "UML_UCGuideMulti1")  
   
 > [!NOTE]
->  As multiplicidades de uma associação em um diagrama de caso de uso estão ocultos se eles estiverem **1**.  
+> As multiplicidades de uma associação em um diagrama de caso de uso estão ocultos se eles estiverem **1**.  
   
  Por padrão, é cada multiplicidade **1**. Em uma interpretação estrita do modelo, uma multiplicidade de 1 significa que, por exemplo, apenas um cliente está envolvido na ordem de cada uma delas e que cada cliente solicita uma só refeição por vez.  
   
@@ -197,7 +197,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
    - **\\*** para o estado que participam de zero ou mais instâncias dessa função no link.  
   
 > [!NOTE]
->  Muitas equipes não coloque informações de multiplicidade em diagramas de caso de uso, deixando as multiplicidades no valor padrão de 1. Em vez disso, eles fornecem as informações nas descrições separadas dos casos de uso. Nesse caso, todas as multiplicidades nos diagramas de caso de uso serão ocultadas.  
+> Muitas equipes não coloque informações de multiplicidade em diagramas de caso de uso, deixando as multiplicidades no valor padrão de 1. Em vez disso, eles fornecem as informações nas descrições separadas dos casos de uso. Nesse caso, todas as multiplicidades nos diagramas de caso de uso serão ocultadas.  
   
 ### <a name="using-an-actor-or-use-case-on-multiple-diagrams"></a>Usando um ator ou caso de uso em vários diagramas  
  Você pode mostrar os mesmos atores e casos de uso em vários diagramas. Por exemplo:  
@@ -215,7 +215,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 3. Arraste um ator ou caso de uso **Gerenciador de modelos** para o novo diagrama.  
   
     > [!NOTE]
-    >  Se você colocar no novo diagrama, um ator e um caso de uso que já estão associados, a associação entre elas aparecerão automaticamente no novo diagrama.  
+    > Se você colocar no novo diagrama, um ator e um caso de uso que já estão associados, a associação entre elas aparecerão automaticamente no novo diagrama.  
   
 ## <a name="Details"></a> Casos de uso que descreve em detalhes  
  Representa um caso de uso:  
@@ -277,7 +277,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
 3. Com o novo artefato selecionado, digite ou cole a URL para o **hiperlink** propriedade.  
   
 > [!NOTE]
->  Clique duas vezes em um artefato para abrir o diagrama ou de documento para que ele é vinculado.  
+> Clique duas vezes em um artefato para abrir o diagrama ou de documento para que ele é vinculado.  
   
 ### <a name="linking-use-cases-to-work-items"></a>Vincular casos de uso a itens de trabalho  
  Se seu projeto usa [!INCLUDE[vstsTfsRosarioLong](../includes/vststfsrosariolong-md.md)] e você tiver [!INCLUDE[esprtfc](../includes/esprtfc-md.md)], você pode vincular um item de trabalho em cada caso de uso [!INCLUDE[esprfound](../includes/esprfound-md.md)]. Para saber como fazer com que esses links, consulte [vincular elementos de modelo e itens de trabalho](../modeling/link-model-elements-and-work-items.md).  
@@ -309,7 +309,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
  Usar um **Include** relação para mostrar que um caso de uso descreve alguns dos detalhes de outro. Na ilustração, a **ordenar uma refeição** inclui **pagar**, **escolha Menu**, e **escolha o Item de Menu**. Cada um dos casos de uso mais detalhado, incluído é uma etapa que o ator ou atores talvez precise executar para alcançar a meta geral de caso de uso incluindo. A seta deve apontar o caso de uso mais detalhado, incluído.  
   
 > [!CAUTION]
->  Você não deve fazer loops de incluir relações que resultam em um caso de uso, incluindo ele próprio. Loops podem gerar erros.  
+> Você não deve fazer loops de incluir relações que resultam em um caso de uso, incluindo ele próprio. Loops podem gerar erros.  
   
  Você pode compartilhar os casos de uso incluídos. No exemplo, o **ordenar uma refeição** e **inscrever-se às análises** incluem de casos de uso **pagar**.  
   
@@ -346,7 +346,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
  Por exemplo, **pagar** generaliza **pagar com cartão de crédito** e **pagar por dinheiro**.  
   
 > [!CAUTION]
->  Você não deve fazer loops de relações de generalização, que resultam em um ator generalizar em si. Loops podem gerar erros.  
+> Você não deve fazer loops de relações de generalização, que resultam em um ator generalizar em si. Loops podem gerar erros.  
   
  Casos de uso especializado podem ajudar você a mostram diferentes maneiras de que seu sistema pode atingir o mesmo objetivo.  
   
@@ -374,7 +374,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
  ![Um caso de uso estendendo outro](../modeling/media/uml-ucguideextend.png "UML_UCGuideExtend")  
   
 > [!CAUTION]
->  Você não deve fazer loops de estender relações, que resultam em um ator generalizar em si. Loops podem gerar erros.  
+> Você não deve fazer loops de estender relações, que resultam em um ator generalizar em si. Loops podem gerar erros.  
   
  Por exemplo, o **Login** caso de uso de um site típico pode incluir **registrar de novo usuário** - mas somente quando o usuário ainda não tiver uma conta.  
   
@@ -391,7 +391,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
    3. Clique no caso de uso estendido (**Login** no exemplo).  
   
        > [!NOTE]
-       >  Evite a criação de um loop de estender relações no diagrama. Ele está incorreto para um caso de uso ser uma extensão de si mesmo.  
+       > Evite a criação de um loop de estender relações no diagrama. Ele está incorreto para um caso de uso ser uma extensão de si mesmo.  
   
 3. Se você já tiver criado os cenários para o caso de uso estendido, mova as etapas relevantes para o cenário da extensão.  
   
@@ -425,7 +425,7 @@ No Visual Studio, você pode desenhar um *diagrama de caso de uso* para resumir 
    Para criar um novo caso de uso diretamente em um subsistema, clique em **caso de uso** na caixa de ferramentas, em seguida, clique dentro do subsistema.  
   
 > [!NOTE]
->  O **assuntos** propriedade de um caso de uso indica quais subsistema que ele está contido.  
+> O **assuntos** propriedade de um caso de uso indica quais subsistema que ele está contido.  
   
 ### <a name="use-cases-outside-the-system-scope"></a>Casos de uso fora do escopo do sistema  
  Geralmente é útil incluir os casos de uso do diagrama que fazem parte dos negócios, mas não foram tratadas pelo sistema que você está desenvolvendo. Isso ajuda os desenvolvedores a compreender o contexto de seu trabalho. Por exemplo, entregar refeição pôde ser exibida como um caso de uso que envolvem os atores restaurante e clientes, mas fora de responsabilidade do refeição ordenação de Site da Web.  

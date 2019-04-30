@@ -9,12 +9,12 @@ caps.latest.revision: 13
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 5873033e160a8354db70565606dcb399da13e073
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: c43f392cddfd5ea36180d9b2675db82469f86ce0
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109512"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446081"
 ---
 # <a name="remote-debugging-aspnet-on-a-remote-iis-computer"></a>Depuração remota de ASP.NET em um computador remoto IIS
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -63,7 +63,7 @@ Depois de instalado, verifique se que o depurador remoto está em execução no 
 1. Copiar o diretório de projeto do ASP.NET do computador do Visual Studio para um diretório local (que chamaremos **C:\Publish**) no computador do Windows Server. Você pode copiar o projeto manualmente, use Xcopy, implantação da Web, Robocopy, Powershell ou outras opções.
 
     > [!CAUTION]
-    >  Se você precisar fazer alterações no código ou recompilação, você deve republicar e repita esta etapa. O executável que você copiou para o computador remoto deve corresponder exatamente, seu local de origem e símbolos.
+    > Se você precisar fazer alterações no código ou recompilação, você deve republicar e repita esta etapa. O executável que você copiou para o computador remoto deve corresponder exatamente, seu local de origem e símbolos.
 1. Certifique-se de que o arquivo Web. config lista a versão correta do .NET Framework.  Por exemplo, a versão do .NET Framework instalada por padrão no Windows Server 2008 R2 é 4.0.30319, mas criamos um ASP.NET 4.5.2 versão. Se um aplicativo ASP.NET 4.0 está em execução no computador do Windows Server, você precisa alterar a versão:
   
     ```xml

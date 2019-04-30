@@ -9,12 +9,12 @@ caps.latest.revision: 20
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 8735931e761f7d511615b5be7e93e0198a6b1a45
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: eda8424aeb28231df0ae0355931989bec13a89b7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60071714"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436170"
 ---
 # <a name="how-to-create-a-geometry-based-gradient-shader"></a>Como: Criar um sombreador de gradiente com base na geometria
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -59,7 +59,7 @@ Este documento demonstra como usar o Designer de Sombreador e a Directed Graph S
    A ilustração a seguir mostra o grafo de sombreador concluído e uma visualização do sombreador aplicado a uma esfera.  
   
 > [!NOTE]
->  Nesta ilustração é especificada uma cor laranja para demonstrar melhor o efeito do sombreador, mas como a forma de visualização não tem posição no espaço de mundo, o sombreador não pode ser visualizado totalmente no Designer de Sombreador. O sombreador deve ser visualizado em uma cena real para demonstrar o efeito completo.  
+> Nesta ilustração é especificada uma cor laranja para demonstrar melhor o efeito do sombreador, mas como a forma de visualização não tem posição no espaço de mundo, o sombreador não pode ser visualizado totalmente no Designer de Sombreador. O sombreador deve ser visualizado em uma cena real para demonstrar o efeito completo.  
   
  ![Grafo de sombreador e uma visualização de seu efeito](../designers/media/digit-gradient-effect-graph.png "Digit-Gradient-Effect-Graph")  
   

@@ -14,25 +14,25 @@ caps.latest.revision: 39
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: b61f367384c8ff11de72f16586a98a5d54f0ee06
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MTE95
+ms.openlocfilehash: 67dd471808b938428d1c9e3f2d5b10c36f2bc914
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54790347"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435112"
 ---
 # <a name="analyze-energy-use-in-store-apps"></a>Analisar o uso de energia em aplicativos da Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
 
 O criador de perfil de **Consumo de Energia** do Visual Studio ajuda a analisar o consumo de energia de aplicativos da Windows Store em dispositivos tablet de baixa capacidade executados o tempo todo ou parte do tempo usando apenas a própria bateria. Em um dispositivo alimentado por bateria, um aplicativo que consome muita energia pode causar grande insatisfação do cliente fazendo com que ele acabe desinstalando o programa. A otimização do consumo de energia pode aumentar a adoção e o uso de seu aplicativo pelos clientes.  
   
-##  <a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a> O que é o criador de perfil Consumo de Energia, como ele funciona e o que mede  
+## <a name="BKMK_What_the_Energy_Consumption_tool_is__how_it_works__and_what_it_measures"></a> O que é o criador de perfil Consumo de Energia, como ele funciona e o que mede  
  O criador de perfil Consumo de Energia captura as atividades do monitor, da CPU e das conexões de rede de um dispositivo durante a uma sessão de criação de perfil. Em seguida, ela gera estimativas da energia consumida por essas atividades e a quantidade total de energia para a sessão de criação de perfil.  
   
 > [!NOTE]
->  O criador de perfil de energia calcula uso de potência e energia por meio de um modelo de software de hardware padrão de dispositivo de referência que representa os tablets de baixa potência nos quais seu aplicativo possa estar sendo executado. Para fornecer as melhores estimativas, recomendamos coletar os dados do perfil em um tablet de baixa potência.  
+> O criador de perfil de energia calcula uso de potência e energia por meio de um modelo de software de hardware padrão de dispositivo de referência que representa os tablets de baixa potência nos quais seu aplicativo possa estar sendo executado. Para fornecer as melhores estimativas, recomendamos coletar os dados do perfil em um tablet de baixa potência.  
 >   
->  Embora o modelo forneça boas estimativas para diversos dispositivos de baixa potência, os valores reais do dispositivo analisado provavelmente serão diferentes. Use os valores para localizar as atividades do monitor, da CPU e de rede que são dispendiosas em relação a outros usos de recursos e que portanto podem ser bons candidatos para otimização.  
+> Embora o modelo forneça boas estimativas para diversos dispositivos de baixa potência, os valores reais do dispositivo analisado provavelmente serão diferentes. Use os valores para localizar as atividades do monitor, da CPU e de rede que são dispendiosas em relação a outros usos de recursos e que portanto podem ser bons candidatos para otimização.  
   
  O criador de perfil Consumo de Energia usa estas definições de *potência* e *energia*:  
   
@@ -46,7 +46,7 @@ O criador de perfil de **Consumo de Energia** do Visual Studio ajuda a analisar 
   
   Por exemplo, uma bateria totalmente carregada em um tablet tem uma determinada quantidade de energia armazenada. Como a energia é usada para executar tarefas como comunicação por rede, cálculo de valores ou exibição de gráficos, a energia da bateria se dissipa em diferentes taxas. Para qualquer período, a potência total consumida também é medida por energia.  
   
-##  <a name="BKMK_Identify_scenarios_with_user_marks"></a> Identificar cenários com marcas de usuário  
+## <a name="BKMK_Identify_scenarios_with_user_marks"></a> Identificar cenários com marcas de usuário  
  Você também pode adicionar *marcas de usuário* aos seus dados de perfil para ajudar a identificar áreas na régua da linha do tempo.  
   
  ![Marcas de usuário na linha do tempo](../profiling/media/profilers-usermarktimeline.png "PROFILERS_UserMarkTimeline")  
@@ -61,7 +61,7 @@ O criador de perfil de **Consumo de Energia** do Visual Studio ajuda a analisar 
   
 > [!NOTE]
 > - O Windows.Foundation.Diagnostics LoggingChannel implementa a interface [Windows.Foundation.IClosable](http://msdn.microsoft.com/library/windows/apps/windows.foundation.iclosable.aspx) (projetada como [System.IDisposable](http://msdn.microsoft.com/library/System.IDisposable.aspx) em C# e VB). Para evitar a perda de recursos do sistema operacional, chame [LoggingChannel.Close](http://msdn.microsoft.com/library/windows/apps/windows.foundation.diagnostics.loggingchannel.close.aspx)() [Windows.Foundation.Diagnostics.LoggingChannel.Dispose() em C# e VB] quando concluir o trabalho em um canal de log.  
->   -   Cada canal de registro em log aberto deve ter um nome exclusivo. Tentar criar um novo canal de registro em log com o mesmo nome de um canal não descartado gera uma exceção.  
+>   - Cada canal de registro em log aberto deve ter um nome exclusivo. Tentar criar um novo canal de registro em log com o mesmo nome de um canal não descartado gera uma exceção.  
   
  Consulte [Exemplo de LoggingSession](http://code.msdn.microsoft.com/windowsapps/LoggingSession-Sample-ccd52336) do Windows SDK para obter exemplos.  
   
@@ -77,34 +77,34 @@ if (performance && performance.mark) {
   
  *markDescription* é uma cadeia de caracteres que contém a mensagem a ser exibida na dica de ferramenta da marca do usuário.  
   
-##  <a name="BKMK_Configure_your_environment_for_profiling"></a> Configurar o ambiente para criação de perfil  
+## <a name="BKMK_Configure_your_environment_for_profiling"></a> Configurar o ambiente para criação de perfil  
  Para obter boas estimativas, você deverá criar o perfil de consumo de energia do aplicativo em um dispositivo de baixa potência alimentado por bateria. Como o Visual Studio não funciona na maioria desses dispositivos, você precisará conectar seu computador com o Visual Studio ao dispositivo usando as ferramentas remotas do Visual Studio. Para se conectar a um dispositivo remoto, você precisa configurar o projeto do Visual Studio e o dispositivo remoto. Consulte [Executar aplicativos da Windows Store em um computador remoto](../debugger/run-windows-store-apps-on-a-remote-machine.md) para obter mais informações.  
   
 > [!TIP]
 > - Não é recomendável criar o perfil de energia no simulador da Windows Store ou no computador que contém o Visual Studio. A criação de perfil no dispositivo real fornece dados muito mais realistas.  
->   -   Crie o perfil no dispositivo de destino enquanto ele é alimentado por bateria.  
->   -   Feche outros aplicativos que possam usar os mesmos recursos (rede, CPU ou tela).  
+>   - Crie o perfil no dispositivo de destino enquanto ele é alimentado por bateria.  
+>   - Feche outros aplicativos que possam usar os mesmos recursos (rede, CPU ou tela).  
   
-##  <a name="BKMK_Collect_energy_profile_data_for_your_app"></a> Coletar dados do perfil de energia para seu aplicativo  
+## <a name="BKMK_Collect_energy_profile_data_for_your_app"></a> Coletar dados do perfil de energia para seu aplicativo  
   
-1.  No menu **Depurar**, escolha **Iniciar Diagnóstico Sem Depurar**.  
+1. No menu **Depurar**, escolha **Iniciar Diagnóstico Sem Depurar**.  
   
      ![Selecione Consumo de Energia no hub de diagnóstico](../profiling/media/energyprof-diagnosticshub.png "ENERGYPROF_DiagnosticsHub")  
   
-2.  Selecione **Consumo de Energia** e então **Iniciar**.  
+2. Selecione **Consumo de Energia** e então **Iniciar**.  
   
     > [!NOTE]
-    >  Ao iniciar o criador de perfil **Consumo de Energia**, talvez você veja uma janela **Controle de Conta de Usuário** solicitando sua permissão para executar o arquivo VsEtwCollector.exe. Escolha **Sim**.  
+    > Ao iniciar o criador de perfil **Consumo de Energia**, talvez você veja uma janela **Controle de Conta de Usuário** solicitando sua permissão para executar o arquivo VsEtwCollector.exe. Escolha **Sim**.  
   
-3.  Ative seu aplicativo para coletar dados.  
+3. Ative seu aplicativo para coletar dados.  
   
-4.  Para interromper a criação do perfil, retorne ao Visual Studio (Alt + Tab) e selecione **Interromper a coleta** na página Hub de diagnóstico.  
+4. Para interromper a criação do perfil, retorne ao Visual Studio (Alt + Tab) e selecione **Interromper a coleta** na página Hub de diagnóstico.  
   
      ![Interromper a coleta de dados](../profiling/media/xamlprof-stopcollection.png "XAMLProf_StopCollection")  
   
      O Visual Studio analisa os dados coletados e exibe os resultados.  
   
-##  <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> Coletar dados do perfil de energia para um aplicativo instalado  
+## <a name="BKMK_Collect_energy_profile_data_for_an_installed_app"></a> Coletar dados do perfil de energia para um aplicativo instalado  
  A ferramenta Consumo de Energia só pode ser executada nos aplicativos da Windows Store 8.1 que são iniciados a partir de uma solução do Visual Studio ou são instalados a partir da Windows Store. Quando uma solução é aberta no Visual Studio, o destino padrão é **Projeto de Inicialização**. Para direcionar um aplicativo instalado:  
   
 1. Escolha **Alterar Destino** e escolha **Aplicativo Instalado**.  
@@ -117,7 +117,7 @@ if (performance && performance.mark) {
   
    Para interromper a criação do perfil, retorne ao Visual Studio (Alt + Tab) e selecione **Interromper a coleta** na página Hub de diagnóstico.  
   
-##  <a name="BKMK_Analyze_energy_profile_data"></a> Analisar dados do perfil de energia  
+## <a name="BKMK_Analyze_energy_profile_data"></a> Analisar dados do perfil de energia  
  Os dados do perfil de energia são exibidos na janela do documento do Visual Studio:  
   
  ![Página de relatório do criador de perfil de energia](../profiling/media/energyprof-all.png "ENERGYPROF_All")  
@@ -135,7 +135,7 @@ if (performance && performance.mark) {
   
  Localize uma área onde tenha ocorrido pico de energia do recurso. Relacione a área de pico à funcionalidade do aplicativo. Use as barras de controle na linha do tempo para ampliar a área. Se você estiver centrado no uso de rede, expanda o nó **Rede** no gráfico **Recursos (Ativado/Desativado)** para comparar o tempo em que a conexão de rede esteve aberta com o tempo em que o aplicativo recebeu ou transferiu dados pela conexão. Reduzir o tempo em que a rede esteve aberta desnecessariamente é uma otimização muito eficiente.  
   
-##  <a name="BKMK_Optimize_energy_use"></a> Otimizar o consumo de energia  
+## <a name="BKMK_Optimize_energy_use"></a> Otimizar o consumo de energia  
  Além de transmitir dados, as conexões de rede implicam custos de energia para inicializar, manter e encerrar a conexão. Algumas redes mantêm a conexão por um período depois que os dados são enviados ou recebidos para permitir que mais dados sejam transmitidos por uma única conexão. Você pode usar o painel **Recursos (Ativado/Desativado)** para examinar a maneira como seu aplicativo interage com a conexão.  
   
  ![Painel Recursos &#40;Ativado&#47;Desativado&#41](../profiling/media/energyprof-resources.png "ENERGYPROF_Resources")  
@@ -146,10 +146,10 @@ if (performance && performance.mark) {
   
  Você tem menos controle sobre os custos de energia da tela. A maioria das telas exige mais energia para exibir cores claras do que cores mais escuras, portanto, usar uma tela de fundo escuro é uma maneira de reduzir custos.  
   
-##  <a name="BKMK_Other_resources"></a> Outros recursos  
+## <a name="BKMK_Other_resources"></a> Outros recursos  
   
--   As seções **Estado da conexão e gerenciamento de custo** para [C#/VB/C++ e XAML](http://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) e [JavaScript e HTML](http://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) no Centro de Desenvolvimento do Windows descrevem as APIs do Windows que fornecem informações sobre a conectividade de rede que seu aplicativo pode usar para minimizar os custos de tráfego de rede.  
+- As seções **Estado da conexão e gerenciamento de custo** para [C#/VB/C++ e XAML](http://msdn.microsoft.com/0ee0b706-8432-4d49-9801-306ed90764e1) e [JavaScript e HTML](http://msdn.microsoft.com/372afa6a-1c7c-4657-967d-03a77cd8e933) no Centro de Desenvolvimento do Windows descrevem as APIs do Windows que fornecem informações sobre a conectividade de rede que seu aplicativo pode usar para minimizar os custos de tráfego de rede.  
   
      O simulador do Visual Studio para aplicativos da Windows Store permite que você simule propriedades de conexão de dados das APIs de informações de rede. Consulte [Executar aplicativos da Windows Store no simulador](../debugger/run-windows-store-apps-in-the-simulator.md)  
   
--   As ferramentas **Temporização de Função JavaScript** e **Uso da CPU** podem ajudar a reduzir a carga da CPU quando ela for causada por funções ineficientes. Consulte [Analisar o uso de CPU](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).
+- As ferramentas **Temporização de Função JavaScript** e **Uso da CPU** podem ajudar a reduzir a carga da CPU quando ela for causada por funções ineficientes. Consulte [Analisar o uso de CPU](../profiling/analyze-cpu-usage-in-a-windows-universal-app.md).

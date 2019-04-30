@@ -13,12 +13,12 @@ ms.assetid: dd3e8a6a-b366-433e-a409-b9a9b89da89a
 caps.latest.revision: 23
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: a9874379586dd077f857a58800010391da36d19f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7ff078649703eef438ff7f4b14a51e7f7d155231
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069844"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428207"
 ---
 # <a name="walkthrough-creating-and-running-unit-tests-for-windows-store-apps"></a>Passo a passo: Criando e executando testes de unidade para aplicativos da Windows Store
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -26,7 +26,7 @@ ms.locfileid: "60069844"
 O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] gerenciados por testes de unidade e inclui modelos de biblioteca de teste de unidade para o Visual C#, Visual Basic e Visual C++.  
   
 > [!TIP]
->  Para saber mais sobre como desenvolver aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], consulte [Introdução aos aplicativos da Windows Store](http://go.microsoft.com/fwlink/?LinkID=241410).  
+> Para saber mais sobre como desenvolver aplicativos do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)], consulte [Introdução aos aplicativos da Windows Store](http://go.microsoft.com/fwlink/?LinkID=241410).  
   
  O Visual Studio fornece a seguinte funcionalidade de teste de unidade:  
   
@@ -54,7 +54,7 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
 2. Em Modelos, escolha a linguagem de programação com a qual você quer criar o teste de unidade e escolha a biblioteca de teste de unidade do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] associada. Por exemplo, escolha **Visual C#**, depois escolha **Windows Store** e escolha **Biblioteca de Teste de Unidade (aplicativos da Windows Store)**.  
   
     > [!NOTE]
-    >  O Visual Studio inclui modelos de biblioteca de teste de unidade para Visual C#, Visual Basic e Visual C++.  
+    > O Visual Studio inclui modelos de biblioteca de teste de unidade para Visual C#, Visual Basic e Visual C++.  
   
 3. (Opcional) Na caixa de texto **Nome**, digite o nome que você quer usar para o projeto de teste de unidade do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)].  
   
@@ -84,7 +84,7 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
 3. Na lista em **Funcionalidades**, selecione as funcionalidades que seu teste de unidade e o código testado precisam. Por exemplo, marque a caixa de seleção **Internet** se o teste de unidade precisar e se o código testado precisar ter a capacidade de acessar a internet.  
   
     > [!NOTE]
-    >  As funcionalidades selecionadas devem incluir somente o necessário para o funcionamento correto do teste de unidade do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]. As funcionalidades nunca deverão incluir funcionalidades que não fazem parte do aplicativo do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] que está sendo testado, e normalmente deve ser um subconjunto das funcionalidades especificadas para o aplicativo do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]em teste.  
+    > As funcionalidades selecionadas devem incluir somente o necessário para o funcionamento correto do teste de unidade do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]. As funcionalidades nunca deverão incluir funcionalidades que não fazem parte do aplicativo do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)] que está sendo testado, e normalmente deve ser um subconjunto das funcionalidades especificadas para o aplicativo do [!INCLUDE[win8_appname_long](../includes/win8-appname-long-md.md)]em teste.  
   
      Para saber mais sobre o Designer de Manifesto, consulte [Configurar um pacote do aplicativo do Windows 8.1 usando o designer de manifesto](http://msdn.microsoft.com/library/24c58b7f-9c6d-41c3-b385-c1e8497d5b2d).  
   
@@ -111,22 +111,22 @@ O Visual Studio inclui suporte para aplicativos do [!INCLUDE[win8_appname_long](
      Agora seu teste de unidade está listado.  
   
     > [!NOTE]
-    >  Você deve compilar a solução para atualizar a lista de testes de unidade no Gerenciador de Testes.  
+    > Você deve compilar a solução para atualizar a lista de testes de unidade no Gerenciador de Testes.  
   
     > [!WARNING]
-    >  Visual Studio problema conhecido: Você deve abrir o Gerenciador de testes antes de compilar o projeto de teste.  
+    > Visual Studio problema conhecido: Você deve abrir o Gerenciador de testes antes de compilar o projeto de teste.  
   
 3. No Gerenciador de Testes, escolha o teste de unidade que você criou.  
   
     > [!TIP]
-    >  O Gerenciador de Testes fornece um link para o código-fonte ao lado de **Fonte:**.  
+    > O Gerenciador de Testes fornece um link para o código-fonte ao lado de **Fonte:**.  
   
 4. Escolha **Executar Todos**.  
   
      ![Gerenciador de Testes de unidade &#45; executar o teste de unidade](../test/media/unit-test-win8-unittestexplorer-contextmenurun.png "Unit_Test_Win8_UnitTestExplorer_ContextMenuRun")  
   
     > [!TIP]
-    >  Selecione um ou mais testes de unidade listados no Gerenciador, clique com botão direito e escolha **Executar Testes Selecionados**.  
+    > Selecione um ou mais testes de unidade listados no Gerenciador, clique com botão direito e escolha **Executar Testes Selecionados**.  
     >   
     >  Além disso, você pode optar por **Depurar os Testes Selecionados**, **Abrir Teste**e usar a opção **Propriedades**.  
     >   

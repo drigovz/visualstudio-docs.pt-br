@@ -9,12 +9,12 @@ caps.latest.revision: 9
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ac18bfbc06c6d9d3387c208cad7c83bbc21bb80b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7c64207f6ab26c78492db9feae80698b0af5679d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60068867"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437518"
 ---
 # <a name="default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio"></a>Atalhos de teclado padrão para comandos frequentes no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -22,7 +22,7 @@ ms.locfileid: "60068867"
 Você pode acessar comandos usados frequentemente no Visual Studio escolhendo estes atalhos de teclado padrão. Para obter uma lista completa de comandos que têm atalhos padrão, consulte [Default Keyboard Shortcuts (Atalhos de teclado padrão)](../ide/default-keyboard-shortcuts-in-visual-studio.md).
 
 > [!NOTE]
->  É possível pesquisar o atalho para qualquer comando abrindo a caixa de diálogo **Opções**, expandindo o nó **Ambiente** e, em seguida, escolhendo **Teclado**.
+> É possível pesquisar o atalho para qualquer comando abrindo a caixa de diálogo **Opções**, expandindo o nó **Ambiente** e, em seguida, escolhendo **Teclado**.
 
  **Neste tópico**
 
