@@ -23,12 +23,12 @@ caps.latest.revision: 22
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: bcca366cb06916811a66da9f168684e704c50714
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 09f018982b81535ae23eafe7158aa88c0b6b08a7
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60055997"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438343"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>Erro: Falha de logon remoto do grupo de trabalho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Este erro é:
 - Se o computador do Visual Studio e o computador remoto estiverem em grupos de trabalho, esse erro poderá ocorrer devido à configuração padrão de **Política de Segurança Local** no computador remoto. A configuração padrão de **Política de Segurança Local** é **Convidado somente – os usuários locais são autenticados como Convidado**. Para depurar nessa configuração, você deverá alterar a configuração no computador remoto para **Clássico – os usuários locais são autenticados como eles próprios**.  
   
 > [!NOTE]
->  Você deve ser administrador para realizar as seguintes tarefas.  
+> Você deve ser administrador para realizar as seguintes tarefas.  
   
 ### <a name="to-open-the-local-security-policy-window"></a>Para abrir a janela Política de Segurança Local  
   

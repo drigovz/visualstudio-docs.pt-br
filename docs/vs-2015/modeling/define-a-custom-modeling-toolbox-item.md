@@ -11,12 +11,12 @@ caps.latest.revision: 33
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: becc123cab729aff7d1306bb0ee13aee521444ec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: fc8bcd7a373ab6ee63e32b5873fd149001137511
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105039"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433182"
 ---
 # <a name="define-a-custom-modeling-toolbox-item"></a>Definir um item de caixa de ferramentas de modelagem personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -32,7 +32,7 @@ Para tornar mais fácil criar um elemento ou um grupo de elementos de acordo com
 - Um par de classes vinculadas por uma associação para representar o padrão de observador.  
   
 > [!NOTE]
->  Você pode usar esse método para criar ferramentas de elemento. Ou seja, você pode criar ferramentas que podem ser arrastadas da caixa de ferramentas para um diagrama. Você não pode criar ferramentas de conector.  
+> Você pode usar esse método para criar ferramentas de elemento. Ou seja, você pode criar ferramentas que podem ser arrastadas da caixa de ferramentas para um diagrama. Você não pode criar ferramentas de conector.  
   
 ## <a name="DefineTool"></a> Definindo um ferramenta de modelagem personalizado  
   
@@ -136,7 +136,7 @@ Para tornar mais fácil criar um elemento ou um grupo de elementos de acordo com
  Você pode editar o arquivo de bitmap no Visual Studio e defina sua altura e largura para 16 na janela Propriedades.  
   
 > [!NOTE]
->  Se você começar a usar um arquivo .tbxinfo depois de testar usando arquivos de diagrama por conta própria, você poderá achar que a caixa de ferramentas contém as antigas e novas versões de um item de caixa de ferramentas. Isso também pode ocorrer se o nome do arquivo de diagrama foi digitado incorretamente no arquivo .tbxinfo. Se isso ocorrer, no menu de atalho da caixa de ferramentas escolher **caixa de ferramentas de redefinição de**. Os itens de caixa de ferramentas personalizado desaparecerá. Reinicie o Visual Studio, e os itens corretos de personalizada serão exibida.  
+> Se você começar a usar um arquivo .tbxinfo depois de testar usando arquivos de diagrama por conta própria, você poderá achar que a caixa de ferramentas contém as antigas e novas versões de um item de caixa de ferramentas. Isso também pode ocorrer se o nome do arquivo de diagrama foi digitado incorretamente no arquivo .tbxinfo. Se isso ocorrer, no menu de atalho da caixa de ferramentas escolher **caixa de ferramentas de redefinição de**. Os itens de caixa de ferramentas personalizado desaparecerá. Reinicie o Visual Studio, e os itens corretos de personalizada serão exibida.  
   
 ## <a name="Extension"></a> Como distribuir itens de caixa de ferramentas em uma extensão do Visual Studio  
  Você pode distribuir itens de caixa de ferramentas para outro [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] usuários por agrupá-las em um Visual Studio VSIX (extensão). Você pode empacotar os comandos, perfis e outras extensões no mesmo arquivo VSIX. Para obter mais informações, consulte [Implantando extensões do Visual Studio](http://go.microsoft.com/fwlink/?LinkId=160780).  
@@ -164,7 +164,7 @@ Para tornar mais fácil criar um elemento ou um grupo de elementos de acordo com
     - No Gerenciador de soluções, no menu de atalho do projeto VSIX, escolha **Add**, **Item existente**. Na caixa de diálogo, defina **objetos do tipo: Todos os arquivos**. Localize os arquivos, selecione todas elas e, em seguida, escolha **adicionar**.  
   
         > [!NOTE]
-        >  Neste projeto, você não pode abrir os arquivos de diagrama no editor de modelo.  
+        > Neste projeto, você não pode abrir os arquivos de diagrama no editor de modelo.  
   
 5. Defina as seguintes propriedades de todos os arquivos que você acabou de adicionar. Você pode definir suas propriedades ao mesmo tempo, selecionando-os todos em Gerenciador de soluções. Tenha cuidado para não alterar as propriedades de outros arquivos no projeto.  
   
@@ -185,7 +185,7 @@ Para tornar mais fácil criar um elemento ou um grupo de elementos de acordo com
     - Type = `Microsoft.VisualStudio.ArchitectureTools.CustomToolboxItems`  
   
         > [!NOTE]
-        >  Isso não é uma das opções na lista suspensa. Você tem para inseri-la usando o teclado.  
+        > Isso não é uma das opções na lista suspensa. Você tem para inseri-la usando o teclado.  
   
     - **Código-fonte** = **arquivo no sistema de arquivos**.  
   

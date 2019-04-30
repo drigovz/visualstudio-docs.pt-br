@@ -10,12 +10,12 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 caps.latest.revision: 20
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 461687e5d1e9570ea2e03610f838f6114fbc7643
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 4805bff12d284dc5a54451e157c9e8fb92deeae2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432121"
 ---
 # <a name="editor-imports"></a>Importações do editor
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -25,7 +25,7 @@ Você pode importar um número de serviços do editor, fábricas e os agentes qu
  Para usar uma importação de editor, importá-lo como um campo ou propriedade de uma classe que exporta uma parte do componente de Managed Extensibility Framework.  
   
 > [!NOTE]
->  Para obter mais informações sobre o Managed Extensibility Framework, consulte [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
+> Para obter mais informações sobre o Managed Extensibility Framework, consulte [Managed Extensibility Framework (MEF)](http://msdn.microsoft.com/library/6c61b4ec-c6df-4651-80f1-4854f8b14dde).  
   
 ## <a name="import-syntax"></a>Sintaxe de importação  
  O exemplo a seguir mostra como importar o editor de serviço de fábrica de opções.  
@@ -44,17 +44,17 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
   
  Para obter mais exemplos de como usar importações, consulte as instruções a seguir:  
   
- [Passo a passo: Criando um glifo de margem](../extensibility/walkthrough-creating-a-margin-glyph.md)  
+ [Passo a passo: criar um glifo de margem](../extensibility/walkthrough-creating-a-margin-glyph.md)  
   
- [Passo a passo: Personalizando a exibição de texto](../extensibility/walkthrough-customizing-the-text-view.md)  
+ [Passo a passo: personalizar a exibição de texto](../extensibility/walkthrough-customizing-the-text-view.md)  
   
- [Passo a passo: Realce de texto](../extensibility/walkthrough-highlighting-text.md)  
+ [Passo a passo: realçar o texto](../extensibility/walkthrough-highlighting-text.md)  
   
- [Passo a passo: Exibindo dicas de ferramenta de QuickInfo](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
+ [Passo a passo: exibir dicas de ferramenta Informações Rápidas](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)  
   
- [Passo a passo: Exibindo a Ajuda da assinatura](../extensibility/walkthrough-displaying-signature-help.md)  
+ [Passo a passo: exibir a ajuda da assinatura](../extensibility/walkthrough-displaying-signature-help.md)  
   
- [Passo a passo: Exibindo o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)  
+ [Passo a passo: exibir o preenchimento de declaração](../extensibility/walkthrough-displaying-statement-completion.md)  
   
  [Passo a passo: Exibindo SmartTags](../misc/walkthrough-displaying-smarttags.md)  
   
