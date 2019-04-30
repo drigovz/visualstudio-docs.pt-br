@@ -16,11 +16,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 24634143a40f7b163c0b658bddb5596041868033
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56595210"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62988405"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>Chamar os modelos de objeto do SharePoint
   Ao criar extensões para as ferramentas do SharePoint no Visual Studio, você terá que chamar APIs do SharePoint para executar determinadas tarefas. Por exemplo, se você criar uma etapa de implantação para projetos do SharePoint, você talvez precise chamar APIs para executar algumas das tarefas para implantar soluções do SharePoint.

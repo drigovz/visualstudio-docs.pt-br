@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 55829e85b17bcdc70e419a8496d4756d0acb4a56
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58924191"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952042"
 ---
 # <a name="interop-activity-designer"></a>Designer de atividade de Interoperabilidade
 O **Interop** designer de atividade é usado para criar e configurar um <xref:System.Activities.Statements.Interop> atividade.  
@@ -29,7 +29,7 @@ O **Interop** designer de atividade é usado para criar e configurar um <xref:Sy
   
  O [migração](../workflow-designer/migration-activity-designers.md) categoria que contém o <xref:System.Activities.Statements.Interop> atividade aparece apenas no **caixa de ferramentas** se seu projeto está direcionando o completo [!INCLUDE[netfx40_long](../includes/netfx40-long-md.md)].  
   
- Para projetos C#, você pode redirecionar o projeto para usar toda a [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] clicando com o projeto na **Gerenciador de soluções** e selecionando **propriedades**. Sobre o **aplicativo** guia, selecione o **NET Framework 4** opção no **estrutura de destino**. Selecione o **Yes** botão na **modificação do Framework de destino** caixa de diálogo que exibe solicitar que você confirme essa alteração.  
+ Para projetos c#, você pode redirecionar o projeto para usar toda a [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] clicando com o projeto na **Gerenciador de soluções** e selecionando **propriedades**. Sobre o **aplicativo** guia, selecione o **NET Framework 4** opção no **estrutura de destino**. Selecione o **Yes** botão na **modificação do Framework de destino** caixa de diálogo que exibe solicitar que você confirme essa alteração.  
   
  Para projetos do VB, você pode redirecionar o projeto para usar toda a [!INCLUDE[netfx40_short](../includes/netfx40-short-md.md)] clicando com o projeto na **Gerenciador de soluções** e selecionando **propriedades**. Sobre o **Compile** , clique no **opções avançadas de compilação** botão. Selecione **.Net Framework 4** da **lista do framework de destino** e, em seguida, clique em **Okey**. Clique o **Sim** botão na **modificação do Framework de destino** caixa de diálogo que exibe solicitar que você confirme essa alteração.  
   

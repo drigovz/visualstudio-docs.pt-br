@@ -14,11 +14,11 @@ manager: jillfra
 ms.workload:
 - office
 ms.openlocfilehash: 3df7ad4a5569a0c123d8c0e284ff7ad57e900355
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60077908"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62956038"
 ---
 # <a name="how-to-programmatically-print-documents"></a>Como: Imprimir documentos programaticamente
   Você pode imprimir todo um documento do Microsoft Office Word ou parte de um documento, para a impressora padrão.

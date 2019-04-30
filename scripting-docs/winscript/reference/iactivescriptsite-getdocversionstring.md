@@ -18,11 +18,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 7327b71329c1f476eab9c27d5e0d5a047664abfa
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58147950"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62992734"
 ---
 # <a name="iactivescriptsitegetdocversionstring"></a>IActiveScriptSite::GetDocVersionString
 Recupera uma cadeia de caracteres definida pelo host que identifica exclusivamente a versão atual do documento. Se o documento relacionado foi alterado fora do escopo de Script do Windows (como no caso de uma página HTML que está sendo editado com o bloco de notas), o mecanismo de script pode salvar isso juntamente com seu estado persistente, forçar uma recompilação na próxima vez em que o script é carregado.  

@@ -17,11 +17,11 @@ manager: jillfra
 ms.workload:
 - multiple
 ms.openlocfilehash: 3133c3f37a7ce899575e4e6b0798ce8037b33929
-ms.sourcegitcommit: 21d667104199c2493accec20c2388cf674b195c3
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/08/2019
-ms.locfileid: "55954174"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62951239"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>Trabalhando com o diagrama de definição de DSL
 O diagrama de um [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definição é uma ferramenta importante para definir a linguagem específica do domínio. É possível adicionar elementos ao seu modelo de domínio e definir as relações no diagrama e é possível modificar o layout do diagrama para torná-lo mais legível.
@@ -64,7 +64,7 @@ O diagrama de um [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] definição é 
 ### <a name="bring-tree-here"></a>Bring Tree Here
  Você pode consolidar o diagrama clicando duas vezes uma classe de domínio de espaço reservado e, em seguida, clicando em **trazer árvore aqui**. A classe de domínio do espaço reservado torna-se um elemento de definição e exibe as árvores de herança e relações. O elemento de definição anterior torna-se um elemento do espaço reservado, se este for o alvo de uma relação ou o filho em uma relação de herança; caso contrário, ele desaparece.
 
-### <a name="split-tree"></a>Split Tree
+### <a name="split-tree"></a>Dividir Árvore
  É possível fragmentar árvores de herança ou as relações clicando duas vezes na definição de classe de domínio que exibe-os e, em seguida, clicando em **dividir árvore**. O elemento de definição torna-se um elemento de espaço reservado e a classe de domínio de definição, juntamente com suas árvores de herança e relações, agora é exibida na parte inferior da partição.
 
 ### <a name="show-as-class"></a>Show As Class

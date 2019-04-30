@@ -12,11 +12,11 @@ author: gewarren
 ms.author: gewarren
 manager: jillfra
 ms.openlocfilehash: 61398efe1849c6038e13a68ae3b2e2f5f80f1d5d
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58926924"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62952003"
 ---
 # <a name="invokemethod-activity-designer"></a>Designer de atividade de InvokeMethod
 **InvokeMethod** designer é usado para criar e configurar um <xref:System.Activities.Statements.InvokeMethod> atividade.  
@@ -42,7 +42,7 @@ ms.locfileid: "58926924"
 |<xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>|False|O objeto que contém o método para chamar. Esta propriedade pode ser editada na superfície de designer.<br /><br /> <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> ou <xref:System.Activities.Statements.InvokeMethod.TargetType%2A> são necessários para ser definidos.|  
 |<xref:System.Activities.Statements.InvokeMethod.TargetType%2A>|False|O tipo de <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A>. Esta propriedade pode ser editada na superfície de designer. Esta propriedade deve ser definida somente se o método é chamado estático.|  
   
- Passar parâmetros como uma linguagem C# **horizontalmente** parâmetro (por exemplo, `Method1(out myParam)),` você deve usar **OutArgument** em vez de **InOutArgument**  
+ Passar parâmetros como uma linguagem c# **horizontalmente** parâmetro (por exemplo, `Method1(out myParam)),` você deve usar **OutArgument** em vez de **InOutArgument**  
   
  Métodos com argumentos chamados **TargetObject** ou **resultado** não pode ser invocado usando o <xref:System.Activities.Statements.InvokeMethod> atividade. A razão para isso é que registros de atividade de <xref:System.Activities.Statements.InvokeMethod><xref:System.Activities.Statements.InvokeMethod.GenericTypeArguments%2A>, <xref:System.Activities.Statements.InvokeMethod.TargetObject%2A> e <xref:System.Activities.Statements.InvokeMethod.Result%2A> em <xref:System.Activities.Activity.CacheMetadata%2A>.  
   

@@ -16,11 +16,11 @@ author: mikejo5000
 ms.author: mikejo
 manager: ghogen
 ms.openlocfilehash: 091ccc30f16081fdca8f10778efec208ef5ccb16
-ms.sourcegitcommit: d3a485d47c6ba01b0fc9878cbbb7fe88755b29af
+ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
 ms.translationtype: MT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 03/19/2019
-ms.locfileid: "58154446"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "62993417"
 ---
 # <a name="iactivescriptprofilercallbackshutdown"></a>IActiveScriptProfilerCallback::Shutdown
 Chamado para informar o objeto criador de perfil sempre que a criação de perfil é interrompida em um mecanismo de script. Dessa forma, o objeto de criador de perfil pode chamar suas rotinas de limpeza, se necessário. Esse método também é chamado pelo mecanismo de script quando o mecanismo de script está sendo desligado, ou quando uma chamada para [IActiveScriptProfilerCallback::Initialize](../../winscript/reference/iactivescriptprofilercallback-initialize.md) falhar.  
