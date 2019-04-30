@@ -10,12 +10,12 @@ ms.assetid: 6e32ed81-c604-4a32-9012-8db3bec7c846
 caps.latest.revision: 14
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: bbe6f59bdddb19b236cfba1256324a52765b78a6
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ac681879e0f7ad0902358be23d74d57ccee406f8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60103492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435976"
 ---
 # <a name="how-to-create-custom-text-markers"></a>Como: Criar marcadores de texto personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Se você quiser criar um marcador de texto personalizado para enfatizar ou organ
     *\<PackageGUID >* é o GUID do VSPackage implementa o objeto de automação.  
   
    > [!NOTE]
-   >  O caminho raiz do HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versão >* pode ser substituído por uma raiz alternativa quando o shell do Visual Studio é inicializado, para obter mais informações, consulte [De linha de comando](../extensibility/command-line-switches-visual-studio-sdk.md).  
+   > O caminho raiz do HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versão >* pode ser substituído por uma raiz alternativa quando o shell do Visual Studio é inicializado, para obter mais informações, consulte [De linha de comando](../extensibility/command-line-switches-visual-studio-sdk.md).  
   
 2. Crie quatro valores em HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\*\<versão >* \Text Editor\External marcadores\\*\<MarkerGUID >*  
   
@@ -93,4 +93,4 @@ Se você quiser criar um marcador de texto personalizado para enfatizar ou organ
  [Usar marcadores de texto com a API herdada](../extensibility/using-text-markers-with-the-legacy-api.md)   
  [Como: Adicionar marcadores de texto padrão](../extensibility/how-to-add-standard-text-markers.md)   
  [Como: Implementar o marcador de erros](../extensibility/how-to-implement-error-markers.md)   
- [Como: Usar marcadores de texto](../extensibility/how-to-use-text-markers.md)
+ [Como: usar marcadores de texto](../extensibility/how-to-use-text-markers.md)

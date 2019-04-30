@@ -12,12 +12,12 @@ caps.latest.revision: 10
 author: mikeblome
 ms.author: mblome
 manager: jillfra
-ms.openlocfilehash: 5e334d4e081c4afcb8046e3bbe3026fc0edbb20e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 0eaf2f50239249a2aec85cfa88fc610946d5f700
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60099358"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436704"
 ---
 # <a name="quick-start-code-analysis-for-cc"></a>Início Rápido: Análise de código para C/C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -49,7 +49,7 @@ Você pode melhorar a qualidade do seu aplicativo, executando a análise de cód
     2. Por padrão, a análise de código não relate os avisos de código que é gerado automaticamente por ferramentas externas. Para exibir avisos do código gerado, desmarque a **Suprimir resultados do código gerado** caixa de seleção.  
   
         > [!NOTE]
-        >  Essa opção não suprime erros de análise de código e avisos do código gerado quando os erros e avisos que aparecem em formulários e modelos. Você pode exibir e manter o código-fonte para um formulário ou um modelo.  
+        > Essa opção não suprime erros de análise de código e avisos do código gerado quando os erros e avisos que aparecem em formulários e modelos. Você pode exibir e manter o código-fonte para um formulário ou um modelo.  
   
 3. Para executar análise de código sempre que o projeto é compilado usando a configuração selecionada, selecione a **habilitar a análise de código para C/C++ no Build** caixa de seleção. Você também pode executar a análise de código manualmente abrindo o **Analyze** menu e, em seguida, escolhendo **executar análise de código na** *ProjectName*.  
   
@@ -94,7 +94,7 @@ Você pode melhorar a qualidade do seu aplicativo, executando a análise de cód
  Depois de entender o problema, você pode resolvê-lo no seu código. Em seguida, torne a executar a análise de código para verificar se o aviso não aparece mais na janela Análise de Código e se a sua correção não gerou novos avisos.  
   
 > [!TIP]
->  Você pode executar a análise de código novamente na janela Análise de Código. Escolha o **analisar** botão e escolha o escopo da análise. A análise pode ser executada na solução inteira ou em um projeto selecionado.  
+> Você pode executar a análise de código novamente na janela Análise de Código. Escolha o **analisar** botão e escolha o escopo da análise. A análise pode ser executada na solução inteira ou em um projeto selecionado.  
   
 ## <a name="BKMK_Suppress"></a> Suprimindo avisos da análise de código  
  Há ocasiões em que você pode decidir não corrigir um aviso de análise de código. Você pode decidir que resolver o aviso exige recodificação demais considerando a probabilidade de que o problema ocorrerá em qualquer implementação do seu código no mundo real. Ou você pode achar que a análise usada no aviso é inadequada nesse contexto específico. É possível suprimir avisos individuais para que não apareçam mais na janela Análise de Código.  

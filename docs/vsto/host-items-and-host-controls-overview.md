@@ -36,12 +36,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 2ef2d97b0e3b15accdeb267513b38ef6d5bd729d
-ms.sourcegitcommit: d0425b6b7d4b99e17ca6ac0671282bc718f80910
-ms.translationtype: MT
+ms.openlocfilehash: e9bd569f41ae15b6e95cc92fe969a4263c760735
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 02/21/2019
-ms.locfileid: "56607103"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63427970"
 ---
 # <a name="host-items-and-host-controls-overview"></a>Visão geral dos controles de host e de itens de host
   Itens de host e controles de host são tipos que ajudam a fornecer o modelo de programação para soluções do Office que são criadas usando as ferramentas de desenvolvimento do Office no Visual Studio. Itens de host e controles de host fazem da interação com os modelos de objeto do Microsoft Office Word e Microsoft Office Excel, que são baseados em COM, mais como interagir com os objetos gerenciados, como controles de formulários do Windows.
@@ -113,7 +113,7 @@ ms.locfileid: "56607103"
   Você também pode usar controles de formulários do Windows em suas soluções Office adicionando-os diretamente para a superfície de documento do Word e Excel. Para obter mais informações, consulte [controles de formulários do Windows de visão geral de documentos do Office](../vsto/windows-forms-controls-on-office-documents-overview.md).
 
 > [!NOTE]
->  Não há suporte para a adição de controles de host ou controles dos Windows Forms a um subdocumento de palavra.
+> Não há suporte para a adição de controles de host ou controles dos Windows Forms a um subdocumento de palavra.
 
 ### <a name="add-host-controls-to-your-documents"></a>Adicionar controles de host para seus documentos
  Em projetos de nível de documento, você pode adicionar controles de host para seus documentos do Word ou planilhas do Excel em tempo de design das seguintes maneiras:
@@ -148,7 +148,7 @@ ms.locfileid: "56607103"
  Quando você arrasta um controle de host do **caixa de ferramentas** ao seu documento, o controle automaticamente é chamado usando o tipo de controle com um número incremental no final. Por exemplo, os indicadores são nomeados **bookmark1**, **bookmark2**e assim por diante. Se você usar a funcionalidade nativa do Word ou Excel para adicionar o controle, você pode atribuir um nome específico no momento em que você criá-lo. Você também pode renomear os controles, alterando o valor da **nome** propriedade no **propriedades** janela.
 
 > [!NOTE]
->  É possível usar palavras reservadas para nomear os controles de host. Por exemplo, se você adicionar um <xref:Microsoft.Office.Tools.Excel.NamedRange> o controle para uma planilha e altere o nome para **sistema**, erros ocorrem quando você compila o projeto.
+> É possível usar palavras reservadas para nomear os controles de host. Por exemplo, se você adicionar um <xref:Microsoft.Office.Tools.Excel.NamedRange> o controle para uma planilha e altere o nome para **sistema**, erros ocorrem quando você compila o projeto.
 
 ### <a name="delete-host-controls"></a>Excluir os controles de host
  Em projetos de nível de documento, você pode excluir os controles de host em tempo de design, selecionando o controle no documento do Word ou planilha do Excel e pressionando a **excluir** chave. No entanto, você deve usar o **definir nome** caixa de diálogo no Excel para excluir <xref:Microsoft.Office.Tools.Excel.NamedRange> controles.
@@ -160,13 +160,13 @@ ms.locfileid: "56607103"
  Se os usuários finais excluir um controle de host do documento em tempo de execução, a solução poderá falhar de maneiras inesperadas. Você pode usar os recursos de proteção de documento no Word e Excel para proteger os controles de host sejam excluídas. Para obter mais informações, consulte [exemplos de desenvolvimento do Office e instruções passo a passo](../vsto/office-development-samples-and-walkthroughs.md).
 
 > [!NOTE]
->  Não remover programaticamente os controles durante o `Shutdown` manipulador de eventos do documento ou planilha. Os elementos de interface do usuário não estão mais disponíveis quando o `Shutdown` evento ocorre. Se você quiser remover os controles antes de fecha o aplicativo, adicione seu código para outro manipulador de eventos, como `BeforeClose` ou `BeforeSave`.
+> Não remover programaticamente os controles durante o `Shutdown` manipulador de eventos do documento ou planilha. Os elementos de interface do usuário não estão mais disponíveis quando o `Shutdown` evento ocorre. Se você quiser remover os controles antes de fecha o aplicativo, adicione seu código para outro manipulador de eventos, como `BeforeClose` ou `BeforeSave`.
 
 ### <a name="program-against-host-control-events"></a>Programe em eventos de controle de host
  Uma maneira que os controles de host estendem objetos do Office é com a adição de eventos. Por exemplo, o <xref:Microsoft.Office.Interop.Excel.Range> objeto no Excel e <xref:Microsoft.Office.Interop.Word.Bookmark> objeto no Word não tem eventos, mas o [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] estende esses objetos, adicionando eventos programáveis. Você pode acessar e codificar esses eventos, a mesma maneira como você acessa os eventos de controles nos Windows Forms: por meio da lista suspensa de evento no Visual Basic e a página de propriedades de evento em c#. Para obter mais informações, confira [Passo a passo: Programe em eventos de um controle NamedRange](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md).
 
 > [!NOTE]
->  Você não deve definir a <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> propriedade do <xref:Microsoft.Office.Interop.Excel.Application> objeto no Excel para **falso**. Definir essa propriedade como **falsos** impede que o Excel da geração de todos os eventos, incluindo os eventos de controles de host.
+> Você não deve definir a <xref:Microsoft.Office.Interop.Excel._Application.EnableEvents%2A> propriedade do <xref:Microsoft.Office.Interop.Excel.Application> objeto no Excel para **falso**. Definir essa propriedade como **falsos** impede que o Excel da geração de todos os eventos, incluindo os eventos de controles de host.
 
 ## <a name="see-also"></a>Consulte também
 - [Limitações programáticas de itens de host e controles de host](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

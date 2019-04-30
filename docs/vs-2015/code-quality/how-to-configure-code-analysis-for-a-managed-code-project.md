@@ -14,12 +14,12 @@ caps.latest.revision: 35
 author: gewarren
 ms.author: gewarren
 manager: wpickett
-ms.openlocfilehash: a326be363295ed1033d0e91e1675e326a51c9adf
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a37ededab38cf27a002117f874d17d6a340000d9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60104311"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63429165"
 ---
 # <a name="how-to-configure-code-analysis-for-a-managed-code-project"></a>Como: Configurar a análise de código para um projeto de código gerenciado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "60104311"
 Na [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../includes/vsprelong-md.md)] e [!INCLUDE[vsPro](../includes/vspro-md.md)], você pode escolher entre uma lista de análise de código *conjuntos de regra* para aplicar a um projeto de código gerenciado. O conjunto de regras padrão é a regras mínimo recomendado da Microsoft. Você pode aplicar outra regra definida para um projeto ou para todos os projetos em uma solução.  
   
 > [!NOTE]
->  Para obter informações sobre como configurar uma regra definida para aplicativos Web ASP.NET, consulte [como: Configurar a análise de código para um aplicativo Web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).  
+> Para obter informações sobre como configurar uma regra definida para aplicativos Web ASP.NET, consulte [como: Configurar a análise de código para um aplicativo Web ASP.NET](../code-quality/how-to-configure-code-analysis-for-an-aspnet-web-application.md).  
   
 ### <a name="to-configure-a-rule-set-for-a-net-framework-project"></a>Para configurar uma regra definida para um projeto do .NET Framework  
   
@@ -42,7 +42,7 @@ Na [!INCLUDE[vsUltLong](../includes/vsultlong-md.md)], [!INCLUDE[vsPreLong](../i
 5. Por padrão, a análise de código não relate os avisos de código que é gerado automaticamente por ferramentas externas. Para exibir avisos do código gerado, desmarque a **Suprimir resultados do código gerado** caixa de seleção.  
   
     > [!NOTE]
-    >  Essa opção não suprime erros de análise de código e avisos do código gerado quando os erros e avisos que aparecem em formulários e modelos. Você pode exibir e manter o código-fonte para um formulário ou um modelo.  
+    > Essa opção não suprime erros de análise de código e avisos do código gerado quando os erros e avisos que aparecem em formulários e modelos. Você pode exibir e manter o código-fonte para um formulário ou um modelo.  
   
 6. No **executar este conjunto de regras** lista, siga um destes procedimentos:  
   

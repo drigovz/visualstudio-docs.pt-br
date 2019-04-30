@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 1edfb882838907503a0df106da2181c283f29d9a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5a67fa921c5fedf5d37585036b2c5e55c7497434
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60053995"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432642"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>Como: Pausar e retomar a coleta dados de desempenho
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -28,7 +28,7 @@ Você pode controlar interativamente a coleta de dados de criação de perfil na
  ![Página de sessão de criação de perfil](../profiling/media/prof-profilingsessionpage.png "PROF_ProfilingSessionPage")  
   
 > [!NOTE]
->  Você também pode iniciar a sessão de desempenho com a criação de perfil em pausa e retomar a criação de perfil em um ponto posterior na execução do programa. Para iniciar a sessão de desempenho com a criação de perfil em pausa, escolha o comando **Iniciar a análise de desempenho com a criação de perfil em pausa**  no menu **Depurar**.  
+> Você também pode iniciar a sessão de desempenho com a criação de perfil em pausa e retomar a criação de perfil em um ponto posterior na execução do programa. Para iniciar a sessão de desempenho com a criação de perfil em pausa, escolha o comando **Iniciar a análise de desempenho com a criação de perfil em pausa**  no menu **Depurar**.  
   
 ### <a name="to-pause--resume-or-stop-profiling"></a>Para pausar, retomar ou interromper a criação de perfil  
   

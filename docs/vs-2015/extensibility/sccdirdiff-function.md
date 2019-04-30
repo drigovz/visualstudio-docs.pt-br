@@ -12,12 +12,12 @@ ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 caps.latest.revision: 16
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f80636e8dd16d372ceaf3d6032e861738d97b46c
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 81279e0fdb0df6600686adc57bb1c5489e8e7aab
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927716"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432453"
 ---
 # <a name="sccdirdiff-function"></a>Função SccDirDiff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_QD_TIME|Se compatível com o plug-in, silenciosamente compara o diretório por meio de seu carimbo de hora ou, se não tiver suporte, recai em SCC_DIFF_QD_CHECKSUM ou SCC_DIFF_QD_CONTENTS.|  
   
 > [!NOTE]
->  Essa função usa os mesmos sinalizadores de comando como o [SccDiff](../extensibility/sccdiff-function.md). No entanto, um plug-in de controle do código-fonte pode optar por não oferece suporte à operação "diff rápido" para diretórios.  
+> Essa função usa os mesmos sinalizadores de comando como o [SccDiff](../extensibility/sccdiff-function.md). No entanto, um plug-in de controle do código-fonte pode optar por não oferece suporte à operação "diff rápido" para diretórios.  
   
 ## <a name="see-also"></a>Consulte também  
  [Funções de API do plug-in de controle do código-fonte](../extensibility/source-control-plug-in-api-functions.md)

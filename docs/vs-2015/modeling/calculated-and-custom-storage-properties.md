@@ -11,12 +11,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 673b6bda444fd097b2ce4f4eee87c9f558e64c08
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a5aa6edaaba54f9c08921a594b90ca1a7352e4da
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069608"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433430"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>Propriedades calculadas e de armazenamento personalizado
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -54,7 +54,7 @@ Todas as propriedades de domínio em uma linguagem específica de domínio (DSL)
      Dsl\generatedcode\domainclasses.cs. ou DomainRelationships.cs é aberto. Acima de chamada do método realçada, um comentário solicitará que você forneça uma implementação para Get*YourProperty*().  
   
     > [!NOTE]
-    >  Esse arquivo é gerado de Dsldefinition. Se você editar esse arquivo, suas alterações serão perdidas na próxima vez que você clicar em **transformar todos os modelos**. Em vez disso, adicione o método necessário em um arquivo separado.  
+    > Esse arquivo é gerado de Dsldefinition. Se você editar esse arquivo, suas alterações serão perdidas na próxima vez que você clicar em **transformar todos os modelos**. Em vez disso, adicione o método necessário em um arquivo separado.  
   
 6. Criar ou abrir um arquivo de classe em uma pasta separada, por exemplo CustomCode\\*YourDomainClass*. cs.  
   

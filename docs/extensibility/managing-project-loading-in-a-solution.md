@@ -10,12 +10,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a383096d164f1b08e2411a7bc808e96f8a6262e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5dcd8293bc11645b8ad934d1826286a8df51e5e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60061301"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63431310"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>Gerenciar o carregamento do projeto em uma solução
 Soluções do Visual Studio podem conter um grande número de projetos. O comportamento do Visual Studio padrão é carregar todos os projetos em uma solução no momento em que a solução for aberta e para não permitir que o usuário acesse qualquer um dos projetos até que todos eles concluiu o carregamento. Quando o processo de carregamento de projeto vai durar mais de dois minutos, uma barra de progresso é exibida mostrando o número de projetos carregados e o número total de projetos. O usuário pode descarregar projetos enquanto estiver trabalhando em uma solução com vários projetos, mas esse procedimento tem algumas desvantagens: os projetos descarregados não são compilados como parte de um comando recompilar solução e IntelliSense descrições dos tipos e membros de fechado projetos não são exibidos.
@@ -44,7 +44,7 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
  Se o Gerenciador de carga de solução destina-se para gerenciar a solução de carregamento em geral, ele pode ser implementado como parte de um VSPackage. O pacote deve ser definido como autoload adicionando o <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> sobre o VSPackage com um valor de <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionOpening_guid>. O Gerenciador de carga de solução, em seguida, pode ser ativado no <xref:Microsoft.VisualStudio.Shell.Package.Initialize%2A> método.
 
 > [!NOTE]
->  Para obter mais informações sobre pacotes realiza o carregamento automático, consulte [carregar VSPackages](../extensibility/loading-vspackages.md).
+> Para obter mais informações sobre pacotes realiza o carregamento automático, consulte [carregar VSPackages](../extensibility/loading-vspackages.md).
 
  Como o Visual Studio reconhece apenas o última solução Gerenciador de carga a ser ativado, gerenciadores de carga de solução geral sempre devem detectar se há um Gerenciador de carga existente antes de ativar a mesmos. Se chamar `GetProperty()` no serviço de solução para [__VSPROPID4. VSPROPID_ActiveSolutionLoadManager](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_ActiveSolutionLoadManager>) retorna `null`, não há nenhum Gerenciador de carga de solução ativa. Se ele retornar nulo, verifique se o objeto é o mesmo que seu gerente de carga de solução.
 

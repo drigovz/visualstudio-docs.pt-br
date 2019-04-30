@@ -30,12 +30,12 @@ caps.latest.revision: 24
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 5cee90bd16f0b7a151ca826517f081a89518ff5b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d443a38750904df26fdfffc65104bcde31c8d6fc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060651"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437600"
 ---
 # <a name="creating-and-configuring-type-members-class-designer"></a>Criando e configurando membros de tipo (Designer de Classe)
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ ms.locfileid: "60060651"
 |Módulo (apenas VB)|método, propriedade, campo, evento, construtor, constante|  
   
 > [!NOTE]
->  Torne a declaração de propriedade mais concisa quando os acessadores get e set de uma propriedade não precisarem de lógica adicional usando propriedades autoimplementadas (apenas C#). Para mostrar a assinatura completa, no menu **Diagrama de Classe**, escolha **Modificar o Formato dos Membros**, **Exibir Assinatura Completa**. Para obter mais informações sobre propriedades autoimplementadas, consulte [Propriedades Autoimplementadas](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
+> Torne a declaração de propriedade mais concisa quando os acessadores get e set de uma propriedade não precisarem de lógica adicional usando propriedades autoimplementadas (apenas C#). Para mostrar a assinatura completa, no menu **Diagrama de Classe**, escolha **Modificar o Formato dos Membros**, **Exibir Assinatura Completa**. Para obter mais informações sobre propriedades autoimplementadas, consulte [Propriedades Autoimplementadas](http://msdn.microsoft.com/library/aa55fa97-ccec-431f-b5e9-5ac789fd32b7).  
   
 ## <a name="common-tasks"></a>Tarefas comuns  
   
@@ -85,10 +85,10 @@ ms.locfileid: "60060651"
 - Janela Detalhes da Classe  
   
 > [!NOTE]
->  Você também pode criar construtores e destruidores usando os procedimentos desta seção. Lembre-se de que construtores e destruidores são tipos especiais de método e, como tais, eles aparecem no compartimento **Métodos** em formas do diagrama de classe e na seção **Métodos** da grade da Janela Detalhes da Classe.  
+> Você também pode criar construtores e destruidores usando os procedimentos desta seção. Lembre-se de que construtores e destruidores são tipos especiais de método e, como tais, eles aparecem no compartimento **Métodos** em formas do diagrama de classe e na seção **Métodos** da grade da Janela Detalhes da Classe.  
   
 > [!NOTE]
->  A única entidade que você pode adicionar a um representante é o parâmetro. Observe que o procedimento denominado "Para criar um membro usando a barra de ferramentas da janela Detalhes da Classe" não é válido para essa ação.  
+> A única entidade que você pode adicionar a um representante é o parâmetro. Observe que o procedimento denominado "Para criar um membro usando a barra de ferramentas da janela Detalhes da Classe" não é válido para essa ação.  
   
 #### <a name="to-create-a-member-using-class-designer"></a>Para criar um membro usando o Designer de Classe  
   
@@ -182,7 +182,7 @@ ms.locfileid: "60060651"
 3. Edite os valores nos campos da grade da janela Detalhes da Classe. Após cada edição, pressione ENTER ou, caso contrário, mova o foco para longe do campo editado, por exemplo, pressionando TAB. Suas edições são refletidas imediatamente no código.  
   
     > [!NOTE]
-    >  Se desejar modificar apenas o nome de um membro, você poderá fazer isso usando a edição in-loco.  
+    > Se desejar modificar apenas o nome de um membro, você poderá fazer isso usando a edição in-loco.  
   
 ## <a name="AddMethodParams"></a> Adicionando parâmetros aos métodos  
  Adicione parâmetros aos métodos usando a janela Detalhes da Classe. Os parâmetros podem ser configurados para serem obrigatórios ou opcionais. Fornecer um valor para a propriedade **Padrão Opcional** de um parâmetro instrui o designer a gerar código como um parâmetro opcional.  
@@ -216,10 +216,10 @@ ms.locfileid: "60060651"
   A janela Propriedades exibe as mesmas propriedades de parâmetro exibidas na janela detalhes da classe: **Nome**, **Tipo**, **Modificador**, **Resumo**, bem como a propriedade **Padrão Opcional**. Alterar uma propriedade em um local atualiza o valor da propriedade globalmente, incluindo a exibição de seu valor em outro local.  
   
 > [!NOTE]
->  Para adicionar um parâmetro a um delegado, consulte [Criando membros](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
+> Para adicionar um parâmetro a um delegado, consulte [Criando membros](../ide/creating-and-configuring-type-members-class-designer.md#CreateMembers).  
   
 > [!NOTE]
->  Embora um destruidor seja um método, ele não pode ter parâmetros.  
+> Embora um destruidor seja um método, ele não pode ter parâmetros.  
   
 ### <a name="HowToAddParameterToMethod"></a> Para adicionar um parâmetro a um método  
   
@@ -254,7 +254,7 @@ ms.locfileid: "60060651"
 4. Na janela Propriedades, digite um valor para a propriedade **Padrão Opcional**. Definir a propriedade Padrão Opcional de um parâmetro o torna opcional.  
   
     > [!NOTE]
-    >  Os parâmetros opcionais devem ser os últimos parâmetros na lista de parâmetros.  
+    > Os parâmetros opcionais devem ser os últimos parâmetros na lista de parâmetros.  
   
 ## <a name="ClassDetailsUsageNotes"></a> Observações de uso de Detalhes da Classe  
  Observe as dicas a seguir para usar a janela Detalhes da Classe.  

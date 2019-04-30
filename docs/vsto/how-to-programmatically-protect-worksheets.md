@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 93acd8466ae90a6db4d1f25d93460e501335af50
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 7d6fb66684bd51c75e655bc2403cb6a9fb5846a2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60062211"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438808"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>Como: Proteger planilhas programaticamente
   O recurso de proteção do Microsoft Office Excel ajuda a impedir que os usuários e o código modificar objetos em uma planilha. Por padrão, todas as células são bloqueadas após você ativa a proteção.
@@ -30,7 +30,7 @@ ms.locfileid: "60062211"
  Personalizações em nível de documento, você pode proteger planilhas usando o designer do Excel. Você também pode proteger uma planilha programaticamente no tempo de execução em qualquer tipo de projeto.
 
 > [!NOTE]
->  É possível adicionar controles dos Windows Forms a áreas de uma planilha que são protegidas.
+> É possível adicionar controles dos Windows Forms a áreas de uma planilha que são protegidas.
 
 ## <a name="use-the-designer"></a>Use o designer
 

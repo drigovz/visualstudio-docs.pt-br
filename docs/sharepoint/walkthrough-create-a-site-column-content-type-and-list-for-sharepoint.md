@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: 4f2c79787317c3d759322e5bd7f7beed4a43892a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e39ea4041ab9806c7ca857680af5c5c04510eba9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60057726"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430696"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>Passo a passo: Criar uma coluna de site, o tipo de conteúdo e a lista para o SharePoint
   Os procedimentos a seguir demonstram como criar colunas de site do SharePoint personalizadas — ou *campos*— bem como um tipo de conteúdo que usa as colunas de site. Ele também mostra como criar uma lista que usa o novo tipo de conteúdo.
@@ -112,7 +112,7 @@ ms.locfileid: "60057726"
 6. Após o tipo de conteúdo designer é exibido, além de **colunas** guia, adicione as três colunas que você definiu anteriormente do site: **Nome do paciente**, **ID do paciente**, e **Doutor nome**. Para adicionar essas colunas, escolha a primeira caixa de listagem na lista de colunas de site sob **nome de exibição**e, em seguida, escolher cada coluna de site na lista uma por vez.
 
     > [!TIP]
-    >  Para escolher as colunas de site mais rapidamente, filtre a lista, digitando as primeiras letras do nome da coluna.
+    > Para escolher as colunas de site mais rapidamente, filtre a lista, digitando as primeiras letras do nome da coluna.
 
 7. Além de três colunas de site personalizado, adicione a **comentários** coluna de site da lista de colunas de site.
 
@@ -164,7 +164,7 @@ ms.locfileid: "60057726"
      A coluna de lista personalizada só se aplica a essa lista. Quando você adiciona uma coluna de lista personalizada a uma lista, um nova lista Tipo de conteúdo, incluindo todas as colunas adicionadas à lista, é criado e definido como a lista padrão.
 
     > [!TIP]
-    >  Se você escolher uma coluna na lista de colunas de site, uma coluna de site existente será usada. No entanto, se você inserir um valor de nome de coluna sem escolher nenhuma coluna na lista, uma coluna de lista personalizada é criada, mesmo se uma coluna com o mesmo nome já existe na lista.
+    > Se você escolher uma coluna na lista de colunas de site, uma coluna de site existente será usada. No entanto, se você inserir um valor de nome de coluna sem escolher nenhuma coluna na lista, uma coluna de lista personalizada é criada, mesmo se uma coluna com o mesmo nome já existe na lista.
 
      Opcionalmente, em vez de definir o tipo de dados da coluna de lista personalizada para **linha única de texto**, em vez disso, você pode definir o tipo de dados para essa coluna para pesquisa e seus valores deve ser recuperados de uma tabela ou outra lista. Para obter informações sobre colunas de pesquisa, consulte [relações de lista no SharePoint 2010](http://go.microsoft.com/fwlink/?LinkId=224994) e [pesquisas e relações de lista](http://go.microsoft.com/fwlink/?LinkID=224995).
 

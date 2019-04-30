@@ -11,12 +11,12 @@ caps.latest.revision: 35
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 0f814623d8084619ccbe82d6660900055f81b3ef
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 2399ff36639732f20babef368a1d9e2f6758a1c4
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60101178"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437882"
 ---
 # <a name="msbuild-properties1"></a>Properties1 do MSBuild
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -57,7 +57,7 @@ Propriedades são pares nome-valor que podem ser usados para configurar compila�
  Para obter o valor atual de variáveis de ambiente de uma ferramenta gerada, use as [funções de propriedade](../msbuild/property-functions.md) System.Environment.GetEnvironmentVariable. O método preferido, entretanto, é usar o parâmetro de tarefa <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A>. As propriedades de ambiente definidas nesta matriz de cadeia de caracteres podem ser passadas para a ferramenta gerada sem afetar as variáveis de ambiente do sistema.  
   
 > [!TIP]
->  Nem todas as variáveis de ambiente são lidas para se tornarem propriedades iniciais. Qualquer variável de ambiente cujo nome não é um nome de propriedade do MSBuild válido, como "386", será ignorada.  
+> Nem todas as variáveis de ambiente são lidas para se tornarem propriedades iniciais. Qualquer variável de ambiente cujo nome não é um nome de propriedade do MSBuild válido, como "386", será ignorada.  
   
  Para obter mais informações, confira [Como: Usar variáveis de ambiente em um Build](../msbuild/how-to-use-environment-variables-in-a-build.md).  
   

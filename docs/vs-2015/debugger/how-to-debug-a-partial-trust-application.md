@@ -18,12 +18,12 @@ caps.latest.revision: 28
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 8340867406e99fd6c6f84d1dc84d89a395a338fb
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 61b5a5d04e9c59d9c4034cb97c8ec0fd79264d48
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60106859"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63437313"
 ---
 # <a name="how-to-debug-a-partial-trust-application"></a>Como: Depurar um aplicativo de confiança parcial
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -41,7 +41,7 @@ Aplica-se a aplicativos do Windows e do console.
  Posteriormente, você pode voltar e ver quais permissões foram adicionadas durante a depuração. Se você tivesse que adicionar uma permissão ao depurar, ela provavelmente indicaria que você precisa adicionar uma solicitação de consentimento do usuário nesse momento em seu código.  
   
 > [!NOTE]
->  Os visualizadores do depurador exigem privilégios maiores do que são permitidos por um aplicativo de confiança parcial. Os visualizadores não serão carregados quando você for interrompido no código com confiança parcial. Para depurar usando um visualizador, você deverá executar o código com confiança total.  
+> Os visualizadores do depurador exigem privilégios maiores do que são permitidos por um aplicativo de confiança parcial. Os visualizadores não serão carregados quando você for interrompido no código com confiança parcial. Para depurar usando um visualizador, você deverá executar o código com confiança total.  
   
 ### <a name="to-choose-a-zone-for-your-partial-trust-application"></a>Para escolher uma zona para seu aplicativo de confiança parcial  
   

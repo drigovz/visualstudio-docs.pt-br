@@ -14,12 +14,12 @@ ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 caps.latest.revision: 29
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 16a4fca95380ad00338b2708f48f13f105a86da0
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 3296613ffbe3148caa04989dfc9d609334b4c200
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58923653"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63435986"
 ---
 # <a name="sdk-helpers-for-debugging"></a>Auxiliares do SDK para depuração
 [!INCLUDE[vs2017banner](../../../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ ms.locfileid: "58923653"
 Essas funções e as declarações são funções auxiliares global para implementação de mecanismos de depuração, avaliadores de expressão e provedores de símbolo em C++.  
   
 > [!NOTE]
->  Não há nenhum versões gerenciadas dessas funções e declarações neste momento.  
+> Não há nenhum versões gerenciadas dessas funções e declarações neste momento.  
   
 ## <a name="overview"></a>Visão geral  
  Para que os mecanismos de depuração, avaliadores de expressão e provedores de símbolo a ser usado pelo Visual Studio, eles devem ser registrados. Isso é feito definindo sub-chaves de registro e entradas, também conhecidas como "métricas de configuração". As seguintes funções globais são criadas para facilitar o processo de atualizar essas métricas. Consulte a seção sobre locais do registro para descobrir o layout de cada subchave de registro é atualizado por essas funções.  
@@ -239,7 +239,7 @@ HRESULT EnumMetricSections(
  As métricas são lida e gravadas no registro, especificamente o `VisualStudio` subchave.  
   
 > [!NOTE]
->  Na maioria das vezes, as métricas serão gravadas na chave HKEY_LOCAL_MACHINE. No entanto, às vezes, HKEY_CURRENT_USER será a chave de destino. Dbgmetric.lib lida com as duas chaves. Ao obter uma métrica, ele pesquisa HKEY_CURRENT_USER primeiro e, em seguida, HKEY_LOCAL_MACHINE. Quando ele é definir uma métrica, um parâmetro especifica qual chave de nível superior para usar.  
+> Na maioria das vezes, as métricas serão gravadas na chave HKEY_LOCAL_MACHINE. No entanto, às vezes, HKEY_CURRENT_USER será a chave de destino. Dbgmetric.lib lida com as duas chaves. Ao obter uma métrica, ele pesquisa HKEY_CURRENT_USER primeiro e, em seguida, HKEY_LOCAL_MACHINE. Quando ele é definir uma métrica, um parâmetro especifica qual chave de nível superior para usar.  
   
  *[chave do Registro]*\  
   
@@ -271,7 +271,7 @@ HRESULT EnumMetricSections(
 |*[valor de métrica]*|O valor atribuído para a métrica. O tipo que o valor deve ter (cadeia de caracteres), números, etc. depende a métrica.|  
   
 > [!NOTE]
->  Todos os GUIDs são armazenados no formato de `{GUID}`. Por exemplo, `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
+> Todos os GUIDs são armazenados no formato de `{GUID}`. Por exemplo, `{123D150B-FA18-461C-B218-45B3E4589F9B}`.  
   
 ### <a name="debug-engines"></a>Mecanismos de depuração  
  A seguir está a organização das métricas de mecanismos de depuração no registro. `Engine` é o nome do tipo de métrica para um mecanismo de depuração e corresponde a *[tipo de métrica]* na subárvore de registro acima.  
@@ -350,7 +350,7 @@ HRESULT EnumMetricSections(
  A seguir está a organização das métricas do avaliador de expressão no registro. `ExpressionEvaluator` é o nome do tipo de métrica para o avaliador de expressão e corresponde a *[tipo de métrica]*.  
   
 > [!NOTE]
->  O tipo de métrica para `ExpressionEvaluator` não está definido no dbgmetric.h, pois ele é considerado que todas as alterações de métricas para os avaliadores de expressão percorrer as funções de métrica de avaliador de expressão apropriada (o layout do `ExpressionEvaluator` subchave é um pouco complicado, portanto, os detalhes estão ocultos dentro de dbgmetric.lib).  
+> O tipo de métrica para `ExpressionEvaluator` não está definido no dbgmetric.h, pois ele é considerado que todas as alterações de métricas para os avaliadores de expressão percorrer as funções de métrica de avaliador de expressão apropriada (o layout do `ExpressionEvaluator` subchave é um pouco complicado, portanto, os detalhes estão ocultos dentro de dbgmetric.lib).  
   
  `ExpressionEvaluator`\  
   

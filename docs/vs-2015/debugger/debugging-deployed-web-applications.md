@@ -21,12 +21,12 @@ caps.latest.revision: 34
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: d7b7a95af1922f5ad57d15fb53dcba561a9f139e
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: 9608643801255d6c2cbf278cbfd96908f1f3911d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58929481"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444081"
 ---
 # <a name="debugging-deployed-web-applications"></a>Depurando aplicativos Web implantados
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Se você precisar depurar um aplicativo Web que está sendo executado em um serv
  Para usar o [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] para depurar um aplicativo implantado, você deverá anexar ao processo de trabalho do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] e verificar se o depurador tem acesso aos símbolos para o aplicativo. Você também deve localizar e abrir os arquivos de origem para o aplicativo. Para obter mais informações, consulte [especificar arquivos de símbolo (. PDB) e código-fonte](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md), [como: Localizar o nome do processo do ASP.NET](../debugger/how-to-find-the-name-of-the-aspnet-process.md), e [requisitos de sistema](../debugger/aspnet-debugging-system-requirements.md).  
   
 > [!NOTE]
->  Muitos aplicativos Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] fazem referência às DLLs que contêm a lógica de negócios ou outro código útil. Essa referência copia automaticamente a DLL do computador local para a pasta \bin do diretório virtual do aplicativo Web. Quando você estiver depurando, lembre-se de que o aplicativo Web está referenciando essa cópia da DLL e não a cópia em seu computador local.  
+> Muitos aplicativos Web do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] fazem referência às DLLs que contêm a lógica de negócios ou outro código útil. Essa referência copia automaticamente a DLL do computador local para a pasta \bin do diretório virtual do aplicativo Web. Quando você estiver depurando, lembre-se de que o aplicativo Web está referenciando essa cópia da DLL e não a cópia em seu computador local.  
   
  O processo para anexar ao processo de trabalho do [!INCLUDE[vstecasp](../includes/vstecasp-md.md)] é o mesmo que anexar a qualquer outro processo remoto. Quando você está anexado, se não tiver o projeto correto aberto, uma caixa de diálogo aparecerá quando o aplicativo for interrompido. Essa caixa de diálogo solicita o local dos arquivos de origem para o aplicativo. O nome do arquivo que você especifica na caixa de diálogo deve corresponder ao nome de arquivo especificado nos símbolos de depuração no servidor Web. Para obter mais informações, consulte [anexar a processos em execução](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md).  
   

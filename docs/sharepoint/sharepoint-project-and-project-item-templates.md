@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jillfra
 ms.workload:
 - office
-ms.openlocfilehash: b457bf6491a9b82fc981c66722f4c6e19a517065
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 245a6c994d87ecfa9c5ef877563b70100e5eef6f
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60040332"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63438991"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>Projeto do SharePoint e modelos de item de projeto
   As seções a seguir descrevem o projeto do SharePoint disponível e de item de projeto modelos e como eles são usados.
@@ -80,7 +80,7 @@ ms.locfileid: "60040332"
  *Tipo de conteúdo* itens permitem que você crie tipos de conteúdo personalizados com base em um tipo de conteúdo (base) existente como um documento, anúncio ou uma tarefa. Um tipo de conteúdo personalizado fornece os mesmos atributos e campos como o tipo de conteúdo base junto com quaisquer colunas de site (campos) que você definir. Por exemplo, você pode criar um tipo de conteúdo de contato personalizado com base no tipo de base entre em contato com conteúdo que vem no SharePoint. Você pode personalizar o tipo de conteúdo alterando as colunas de site existente ou adicionando mais colunas de site para aqueles que já está incluídos no tipo de conteúdo base.
 
 > [!NOTE]
->  Devido a uma limitação do SharePoint, você não pode criar um tipo de conteúdo de solução do farm com base em um tipo de conteúdo de solução de área restrita.
+> Devido a uma limitação do SharePoint, você não pode criar um tipo de conteúdo de solução do farm com base em um tipo de conteúdo de solução de área restrita.
 
  Para obter mais informações, confira [Passo a passo: Criar uma coluna de site, o tipo de conteúdo e a lista para o SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) e [bloco de construção: Tipo de conteúdo](http://go.microsoft.com/fwlink/?LinkId=179413).
 

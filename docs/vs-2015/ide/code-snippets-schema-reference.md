@@ -14,12 +14,12 @@ caps.latest.revision: 21
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 994b87de61aaa0b303b0b0bf8454dad716c9978f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b49b1aa1022b12dc2d409037a1241f51b469a14c
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60114492"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63436238"
 ---
 # <a name="code-snippets-schema-reference"></a>Referência de esquema dos snippets de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -45,7 +45,7 @@ Os Snippets de Código IntelliSense são partes de código pré-criadas que est�
  Especifica o nome do assembly referenciado pelo snippet de código.  
   
 > [!NOTE]
->  O elemento `Assembly` tem suporte apenas de snippets de código Visual Basic.  
+> O elemento `Assembly` tem suporte apenas de snippets de código Visual Basic.  
   
  O valor de texto do elemento **Assembly** é o nome de texto amigável do assembly, como `System.dll`, ou seu nome forte, como `System,Version=1.0.0.1,Culture=neutral,PublicKeyToken=9b35aa323c18d4fb1`.  
   
@@ -240,7 +240,7 @@ is a great color. I love Blue.
  Especifica uma função a ser executada quando o literal ou o objeto receber foco no Visual Studio.  
   
 > [!NOTE]
->  O elemento `Function` tem suporte somente em snippets de código Visual C#.  
+> O elemento `Function` tem suporte somente em snippets de código Visual C#.  
   
 ```xml  
 <Function>  
@@ -289,7 +289,7 @@ is a great color. I love Blue.
  Especifica uma URL que fornece mais informações sobre um snippet de código.  
   
 > [!NOTE]
->  O Visual Studio não usa o elemento `HelpUrl`. O elemento faz parte do esquema XML do Snippet de Código IntelliSense e qualquer snippet de código que contenha o elemento será válido, mas o valor do elemento nunca será usado.  
+> O Visual Studio não usa o elemento `HelpUrl`. O elemento faz parte do esquema XML do Snippet de Código IntelliSense e qualquer snippet de código que contenha o elemento será válido, mas o valor do elemento nunca será usado.  
   
 ```xml  
 <HelpUrl>  
@@ -325,7 +325,7 @@ is a great color. I love Blue.
  Especifica os namespaces importados usados por um Snippet de Código IntelliSense.  
   
 > [!NOTE]
->  O elemento `Import` tem suporte apenas em projetos do Visual Basic.  
+> O elemento `Import` tem suporte apenas em projetos do Visual Basic.  
   
 ```xml  
 <Import>  
@@ -346,7 +346,7 @@ is a great color. I love Blue.
  Agrupa elementos `Import` individuais.  
   
 > [!NOTE]
->  O elemento `Imports` tem suporte apenas em projetos do Visual Basic.  
+> O elemento `Imports` tem suporte apenas em projetos do Visual Basic.  
   
 ```xml  
 <Imports>  
@@ -428,7 +428,7 @@ is a great color. I love Blue.
  Especifica o namespace que deve ser importado para compilação e execução do snippet de código. O namespace especificado no elemento `Namespace` é adicionado automaticamente a uma instrução `Imports` no início do código, se ele ainda não existir.  
   
 > [!NOTE]
->  O elemento `Namespace` tem suporte apenas em projetos do Visual Basic.  
+> O elemento `Namespace` tem suporte apenas em projetos do Visual Basic.  
   
 ```xml  
 <Namespace>  
@@ -475,7 +475,7 @@ is a great color. I love Blue.
  Especifica informações sobre as referências de assembly exigidas pelo snippet de código.  
   
 > [!NOTE]
->  O elemento `Reference` tem suporte apenas em projetos do Visual Basic.  
+> O elemento `Reference` tem suporte apenas em projetos do Visual Basic.  
   
 ```xml  
 <Reference>  
@@ -497,7 +497,7 @@ is a great color. I love Blue.
  Agrupa elementos `Reference` individuais.  
   
 > [!NOTE]
->  O elemento `References` tem suporte apenas em projetos do Visual Basic.  
+> O elemento `References` tem suporte apenas em projetos do Visual Basic.  
   
 ```xml  
 <References>  
@@ -517,7 +517,7 @@ is a great color. I love Blue.
  Especifica o texto do atalho usado para inserir o snippet. O valor de texto de um elemento `Shortcut` pode conter apenas caracteres alfanuméricos, hifens ( - ) e sublinhados ( _ ).  
   
 > [!CAUTION]
->  _ e – não são caracteres com suporte nos atalhos de snippet do C++.  
+> _ e – não são caracteres com suporte nos atalhos de snippet do C++.  
   
 ```xml  
 <Shortcut>  
@@ -644,7 +644,7 @@ is a great color. I love Blue.
  Especifica uma URL que fornece mais informações sobre o assembly referenciado.  
   
 > [!NOTE]
->  O elemento `Url` tem suporte apenas em projetos do Visual Basic.  
+> O elemento `Url` tem suporte apenas em projetos do Visual Basic.  
   
 ```xml  
 <Url>  

@@ -28,12 +28,12 @@ caps.latest.revision: 45
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: ba950d55dcb4a4a0e1a06b40b1ed00ee3f58e54e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 9f620cbf5d522b99965268f35c00ff8e874f1542
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60116206"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63440070"
 ---
 # <a name="format-specifiers-in-c"></a>Especificadores de formato em C++
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -43,7 +43,7 @@ Você pode alterar o formato no qual um valor é exibido na **inspeção** janel
  Você também pode usar especificadores de formato na **Immediate** janela, o **comando** janela e até mesmo em janelas de origem. Se você pausar em uma expressão nessas janelas, o resultado aparecerá em uma DataTip. A exibição de DataTip reflete o especificador de formato.  
   
 > [!NOTE]
->  O depurador nativo do Visual Studio foi alterado para um novo mecanismo de depuração. Como parte dessa alteração, alguns novos especificadores de formato foram adicionados e alguns antigos foram removidos. O depurador antigo ainda é usado quando você fizer interop (nativa e gerenciada combinadas) depuração com c++ CLI. As seções a seguir neste tópico mostram os especificadores de formato para cada mecanismo de depuração.  
+> O depurador nativo do Visual Studio foi alterado para um novo mecanismo de depuração. Como parte dessa alteração, alguns novos especificadores de formato foram adicionados e alguns antigos foram removidos. O depurador antigo ainda é usado quando você fizer interop (nativa e gerenciada combinadas) depuração com c++ CLI. As seções a seguir neste tópico mostram os especificadores de formato para cada mecanismo de depuração.  
 > 
 > - [Especificadores de formato](#BKMK_Visual_Studio_2012_format_specifiers) descreve os especificadores de formato no novo mecanismo de depuração.  
 >   - [Especificadores de formato para depuração interop com c++ CLI](#BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue) descreve os especificadores de formato no mecanismo de depuração antigo.  
@@ -92,7 +92,7 @@ int main() {
 |!|formato bruto, ignorando qualquer personalização de exibições de tipo de dados|\<personalizado representação >|4|  
   
 > [!NOTE]
->  Quando o **hv** especificador de formato estiver presente, o depurador tenta determinar o comprimento do buffer e exibir o número apropriado de elementos. Como nem sempre é possível que o depurador localizar o tamanho do buffer exata de uma matriz, você deve usar um especificador de tamanho `(pBuffer,[bufferSize])` sempre que possível. O **hv** especificador de formato é destinado para cenários em que o tamanho do buffer não está prontamente disponível  
+> Quando o **hv** especificador de formato estiver presente, o depurador tenta determinar o comprimento do buffer e exibir o número apropriado de elementos. Como nem sempre é possível que o depurador localizar o tamanho do buffer exata de uma matriz, você deve usar um especificador de tamanho `(pBuffer,[bufferSize])` sempre que possível. O **hv** especificador de formato é destinado para cenários em que o tamanho do buffer não está prontamente disponível  
   
 ### <a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> Especificadores de tamanho para ponteiros como matrizes  
  Se você tiver um ponteiro para um objeto que queira exibir como uma matriz, pode usar um inteiro ou uma expressão para especificar o número de elementos da matriz:  

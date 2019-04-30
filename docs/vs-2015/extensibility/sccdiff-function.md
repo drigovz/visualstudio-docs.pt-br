@@ -12,12 +12,12 @@ ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
 caps.latest.revision: 17
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: c17064d2d14fe072a4f5215ac06c9f7e38fa8e51
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: aa5ea0a269cdbfe678328dc652b4177bdc667b99
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58927195"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432474"
 ---
 # <a name="sccdiff-function"></a>Função SccDiff
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -74,7 +74,7 @@ SCCRTN SccDiff(
  Como uma otimização de desempenho, o plug-in de controle de origem pode usar uma alternativa com base em uma soma de verificação ou um carimbo de hora, em vez da comparação byte por byte chamado para `SCC_DIFF_CONTENTS`: essas formas de comparação são, obviamente, mais rápido, mas menos confiável. Nem todos os sistemas de controle do código-fonte podem dar suporte a esses métodos alternativos de comparação, e o plug-in pode ter a cair para uma comparação de conteúdo. Controle de origem todos os plug-ins deve, no mínimo, dar suporte a uma comparação de conteúdo.  
   
 > [!NOTE]
->  Os sinalizadores de diferença rápido são mutuamente exclusivos. Ele é válido não passar nenhum sinalizador, mas não é válido para transmitir simultaneamente mais de um. `SCC_DIFF_QUICK_DIFF`, que é uma máscara que combina todos os sinalizadores, pode ser usado para testar, mas nunca deve ser passado como um parâmetro.  
+> Os sinalizadores de diferença rápido são mutuamente exclusivos. Ele é válido não passar nenhum sinalizador, mas não é válido para transmitir simultaneamente mais de um. `SCC_DIFF_QUICK_DIFF`, que é uma máscara que combina todos os sinalizadores, pode ser usado para testar, mas nunca deve ser passado como um parâmetro.  
   
 |`fOption`|Significado|  
 |---------------|-------------|  

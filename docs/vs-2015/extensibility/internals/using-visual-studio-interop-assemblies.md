@@ -12,12 +12,12 @@ ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
 caps.latest.revision: 34
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 303947c2299601e68ae830b13e6b6753c5e0dd79
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 60ae3ad958ca97250ba74ac2c7aada7dddcf91d8
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60067918"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434791"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>Usando assemblies de interoperabilidade do Visual Studio
 [!INCLUDE[vs2017banner](../../includes/vs2017banner.md)]
@@ -30,7 +30,7 @@ Assemblies de interoperabilidade Visual Studio permitem que aplicativos gerencia
  Por padrão, <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> gera uma exceção sempre que ele é passado um HRESULT que tem um valor menor que zero. Em casos em que tal HRESULTs são valores aceitáveis e nenhuma exceção deverá ser gerada, os valores de HRESULTS adicionais devem ser passados para <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> depois que os valores são testados. Se o HRESULT que está sendo testado corresponde a todos explicitamente passados para os valores HRESULT <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A>, nenhuma exceção é lançada.
 
 > [!NOTE]
->  O <xref:Microsoft.VisualStudio.VSConstants> classe contém constantes para HRESULTS comuns, por exemplo, <xref:Microsoft.VisualStudio.VSConstants.S_OK> e <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, e [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] HRESULTS, por exemplo, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> e <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> também fornece o <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> e <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> métodos, que correspondem às macros com êxito e falha no COM.
+> O <xref:Microsoft.VisualStudio.VSConstants> classe contém constantes para HRESULTS comuns, por exemplo, <xref:Microsoft.VisualStudio.VSConstants.S_OK> e <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL>, e [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] HRESULTS, por exemplo, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA> e <xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>. <xref:Microsoft.VisualStudio.VSConstants> também fornece o <xref:Microsoft.VisualStudio.ErrorHandler.Succeeded%2A> e <xref:Microsoft.VisualStudio.ErrorHandler.Failed%2A> métodos, que correspondem às macros com êxito e falha no COM.
 
  Por exemplo, considere a seguinte chamada de função, no qual <xref:Microsoft.VisualStudio.VSConstants.E_NOTIMPL> é um valor de retorno aceitável, mas qualquer outro HRESULT menor que zero representa um erro.
 
@@ -48,7 +48,7 @@ Assemblies de interoperabilidade Visual Studio permitem que aplicativos gerencia
  Se você não tiver certeza qual exceção ser gerada, mas você sabe o HRESULT que você deseja retornar ao COM, você pode usar o <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> método para gerar uma exceção apropriada. Isso funciona mesmo com um erro não padrão, por exemplo, <xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>. <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> tenta mapear o HRESULT é passado para ele a uma exceção com rigidez de tipos. Se não for possível, ele lança uma exceção genérica de COM em vez disso. O resultado final é que o HRESULT que você passe para <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> do código gerenciado é retornado para a função COM que o chamou.
 
 > [!NOTE]
->  Exceções de comprometer o desempenho e destinam-se para indicar as condições de programa anormal. As condições que ocorrem com frequência devem ser tratada em linha, em vez de uma exceção gerada.
+> Exceções de comprometer o desempenho e destinam-se para indicar as condições de programa anormal. As condições que ocorrem com frequência devem ser tratada em linha, em vez de uma exceção gerada.
 
 ## <a name="iunknown-parameters-passed-as-type-void"></a>Parâmetros de IUnknown passados como tipo void * *
  Procure [out] os parâmetros que são definidos como tipo `void **` no COM a interface, mas que são definidas como `[``iid_is``]` no [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] protótipo do método de assembly de interoperabilidade.
@@ -56,7 +56,7 @@ Assemblies de interoperabilidade Visual Studio permitem que aplicativos gerencia
  Às vezes, uma interface COM gera uma `IUnknown` objeto e a interface COM, em seguida, passa como tipo `void **`. Essas interfaces são especialmente importantes porque se a variável for definida como [out] no IDL, em seguida, a `IUnknown` objeto é contado por referência com o `AddRef` método. Um vazamento de memória ocorre se o objeto não é manipulado corretamente.
 
 > [!NOTE]
->  Um `IUnknown` objeto criado pela interface COM e retornados em uma variável [out] faz com que um vazamento de memória se não for explicitamente liberado.
+> Um `IUnknown` objeto criado pela interface COM e retornados em uma variável [out] faz com que um vazamento de memória se não for explicitamente liberado.
 
  Métodos gerenciados que lidar com esses objetos devem ser tratadas <xref:System.IntPtr> como um ponteiro para um `IUnknown` do objeto e, em seguida, chamar o <xref:System.Runtime.InteropServices.Marshal.GetObjectForIUnknown%2A> método para obter o objeto. O chamador deve, em seguida, converter o valor retornado para qualquer tipo é apropriado. Quando o objeto não é necessário, chame <xref:System.Runtime.InteropServices.Marshal.Release%2A> liberá-la.
 
@@ -87,7 +87,7 @@ else
 ```
 
 > [!NOTE]
->  Os métodos a seguir são conhecidos para transmitir `IUnknown` ponteiros do objeto como tipo <xref:System.IntPtr>. Tratá-los conforme descrito nesta seção.
+> Os métodos a seguir são conhecidos para transmitir `IUnknown` ponteiros do objeto como tipo <xref:System.IntPtr>. Tratá-los conforme descrito nesta seção.
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A>
 

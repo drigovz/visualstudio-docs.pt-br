@@ -17,12 +17,12 @@ caps.latest.revision: 56
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 7a57e7e42e1cfc2690732881e6702315d1b0f4d4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 363a9eda86a55da2dd773a2cef5a40fc53f0a81e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60088880"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63424503"
 ---
 # <a name="uml-class-diagrams-guidelines"></a>Diagramas de classe UML: Diretrizes
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -34,7 +34,7 @@ No Visual Studio, você pode usar um *diagrama de classe UML* para descrever tip
  Para ver quais versões do Visual Studio dão suporte a esse recurso, consulte [suporte de versão para a arquitetura e ferramentas de modelagem](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport).  
   
 > [!NOTE]
->  Este tópico é sobre diagramas de classe UML. Há outro tipo de diagrama de classes, que é possível criar e usar para visualizar o código do programa. Ver [Projetando e exibindo Classes e tipos](http://go.microsoft.com/fwlink/?LinkId=142231).  
+> Este tópico é sobre diagramas de classe UML. Há outro tipo de diagrama de classes, que é possível criar e usar para visualizar o código do programa. Ver [Projetando e exibindo Classes e tipos](http://go.microsoft.com/fwlink/?LinkId=142231).  
   
 ## <a name="Using"></a> Usando diagramas de classe UML  
  É possível usar um diagrama de classes UML com várias finalidades:  
@@ -82,7 +82,7 @@ No Visual Studio, você pode usar um *diagrama de classe UML* para descrever tip
  Para informações de referência sobre os elementos em diagramas de classe UML, consulte [diagramas de classe UML: Referência](../modeling/uml-class-diagrams-reference.md).  
   
 > [!NOTE]
->  Etapas detalhadas para a criação de qualquer um dos diagramas de modelagem são descritas em [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
+> Etapas detalhadas para a criação de qualquer um dos diagramas de modelagem são descritas em [modelos e diagramas UML editar](../modeling/edit-uml-models-and-diagrams.md).  
   
 #### <a name="to-create-a-uml-class-diagram"></a>Para criar um diagrama de classes UML  
   
@@ -185,7 +185,7 @@ No Visual Studio, você pode usar um *diagrama de classe UML* para descrever tip
   Também é possível gravar o nome de um tipo que você ainda não definiu no modelo. O nome será listado em **tipos não especificados** no Gerenciador de modelos UML.  
   
 > [!NOTE]
->  Se você definir depois uma classe ou uma interface desse nome no modelo, os atributos e as operações posteriores continuarão fazendo referência ao elemento em Tipos Não Especificados. Se quiser alterá-los para fazer referência à nova classe, você deverá visitar cada atributo ou operação e redefinir o tipo, selecionando a nova classe no menu suspenso.  
+> Se você definir depois uma classe ou uma interface desse nome no modelo, os atributos e as operações posteriores continuarão fazendo referência ao elemento em Tipos Não Especificados. Se quiser alterá-los para fazer referência à nova classe, você deverá visitar cada atributo ou operação e redefinir o tipo, selecionando a nova classe no menu suspenso.  
   
 #### <a name="multiple-types"></a>Vários Tipos  
  É possível definir uma multiplicidade de qualquer atributo, operação ou tipo de parâmetro.  
@@ -273,9 +273,9 @@ visibility operation-name (parameter1 : Type1, ...) : Type
  Cada tipo pode ser um tipo definido no modelo, tipos padrão como Integer ou String, ou o nome de um novo tipo ainda não definido.  
   
 > [!NOTE]
->  Se você gravar um nome sem um tipo em uma lista de parâmetros, ele indicará o nome do parâmetro, em vez do tipo. Neste exemplo, MenuItem e Integer se tornam os nomes dos dois parâmetros com tipos não especificados:  
+> Se você gravar um nome sem um tipo em uma lista de parâmetros, ele indicará o nome do parâmetro, em vez do tipo. Neste exemplo, MenuItem e Integer se tornam os nomes dos dois parâmetros com tipos não especificados:  
 >   
->  `AddItem(MenuItem, Integer) /* parameter names, not types! */`  
+> `AddItem(MenuItem, Integer) /* parameter names, not types! */`  
   
  Para definir a multiplicidade de um tipo em uma assinatura, grave a multiplicidade entre colchetes depois do nome do tipo, por exemplo:  
   

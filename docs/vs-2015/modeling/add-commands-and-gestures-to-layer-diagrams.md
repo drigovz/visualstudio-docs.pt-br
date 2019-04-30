@@ -12,12 +12,12 @@ caps.latest.revision: 40
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 449e273659df1e3b6846ff8e7e3d8d6943ba69f4
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: a4d158e3c624a63863e5a8305dd0b9b4b5ef10ea
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60079818"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63444222"
 ---
 # <a name="add-commands-and-gestures-to-layer-diagrams"></a>Adicionar comandos e gestos a diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -27,7 +27,7 @@ Você pode definir comandos de menu de contexto e manipuladores do gesto em diag
  Você pode definir vários manipuladores de comando e de gesto no mesmo projeto do Visual Studio se você quiser. Você também pode combinar vários desses projetos em um VSIX. Por exemplo, você pode definir um único VSIX que inclui comandos de camada, uma linguagem específica de domínio e comandos para diagramas de UML.  
   
 > [!NOTE]
->  Você também pode personalizar a validação da arquitetura, na origem dos quais usuários o código é comparado com diagramas de camada. Você deve definir a validação de arquitetura em um projeto separado do Visual Studio. Você pode adicioná-lo ao mesmo VSIX que outras extensões. Para obter mais informações, consulte [adicionar validação de arquitetura personalizada a diagramas de camada](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
+> Você também pode personalizar a validação da arquitetura, na origem dos quais usuários o código é comparado com diagramas de camada. Você deve definir a validação de arquitetura em um projeto separado do Visual Studio. Você pode adicioná-lo ao mesmo VSIX que outras extensões. Para obter mais informações, consulte [adicionar validação de arquitetura personalizada a diagramas de camada](../modeling/add-custom-architecture-validation-to-layer-diagrams.md).  
   
 ## <a name="requirements"></a>Requisitos  
  Ver [requisitos de](../modeling/extend-layer-diagrams.md#prereqs).  
@@ -65,7 +65,7 @@ Você pode definir comandos de menu de contexto e manipuladores do gesto em diag
 1. Crie um projeto de biblioteca de classes em uma solução nova ou existente do Visual Studio. No **novo projeto** caixa de diálogo, clique em **Visual c#** e, em seguida, clique em **biblioteca de classes**. Este projeto irá conter comando ou classes de manipulador de gesto.  
   
     > [!NOTE]
-    >  Você pode definir mais de uma classe de manipulador de gesto ou comando em uma biblioteca de classes, mas você deve definir classes de validação de camada em uma biblioteca de classes separado.  
+    > Você pode definir mais de uma classe de manipulador de gesto ou comando em uma biblioteca de classes, mas você deve definir classes de validação de camada em uma biblioteca de classes separado.  
   
 2. Identifique ou crie um projeto de VSIX em sua solução. Um projeto do VSIX contém um arquivo chamado **vsixmanifest**. Para adicionar um projeto VSIX:  
   

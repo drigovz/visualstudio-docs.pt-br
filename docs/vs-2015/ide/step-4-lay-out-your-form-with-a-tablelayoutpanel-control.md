@@ -9,12 +9,12 @@ caps.latest.revision: 19
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: f4c6b72c521b15c1087b71ddb7241268cf56d64c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 5ddd76bab4d007a9476dde75f46f3f2bc77be865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60070245"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63442524"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>Etapa 4: Definir o layout do formulário com um controle TableLayoutPanel
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -38,7 +38,7 @@ Grupo de contêineres
 Controle TableLayoutPanel  
   
     > [!NOTE]
-    >  Após adicionar seu TableLayoutPanel, se uma janela aparecer no formulário com o título **Tarefas de TableLayoutPanel**, clique em qualquer lugar dentro do formulário para fechá-la. Você aprenderá mais sobre essa janela mais tarde neste tutorial.  
+    > Após adicionar seu TableLayoutPanel, se uma janela aparecer no formulário com o título **Tarefas de TableLayoutPanel**, clique em qualquer lugar dentro do formulário para fechá-la. Você aprenderá mais sobre essa janela mais tarde neste tutorial.  
   
      Observe como a caixa de ferramentas expande para cobrir o formulário quando você clica em sua guia, e fecha depois que você clica em qualquer lugar fora dela. Esse é o recurso de ocultação automática IDE. Você pode ligar ou desligar para qualquer uma das janelas, escolhendo o ícone de anotações no canto superior direito da janela para alternar entre ocultar automaticamente e fixar no lugar. O ícone de anotações aparece da seguinte maneira.  
   
@@ -62,7 +62,7 @@ A janela Propriedades com o preenchimento selecionado
 7. Após você definir a propriedade **Encaixar** de TableLayoutPanel como **Preenchimento**, o painel preenche o formulário inteiro. Se você redimensionar o formulário novamente, o TableLayoutPanel permanecerá anexado e se redimensionará para caber.  
   
     > [!NOTE]
-    >  Um TableLayoutPanel funciona como uma tabela no Microsoft Office Word: Ele tem linhas e colunas e uma célula individual pode abranger várias linhas e colunas. Cada célula pode conter um controle (como um botão, uma caixa de seleção ou um rótulo). O TableLayoutPanel terá um controle `PictureBox` que abrange a primeira linha inteira, um controle `CheckBox` na célula do canto inferior esquerdo e quatro controles `Button` na célula inferior direita.  
+    > Um TableLayoutPanel funciona como uma tabela no Microsoft Office Word: Ele tem linhas e colunas e uma célula individual pode abranger várias linhas e colunas. Cada célula pode conter um controle (como um botão, uma caixa de seleção ou um rótulo). O TableLayoutPanel terá um controle `PictureBox` que abrange a primeira linha inteira, um controle `CheckBox` na célula do canto inferior esquerdo e quatro controles `Button` na célula inferior direita.  
   
 8. Atualmente, o TableLayoutPanel tem duas linhas de igual tamanho e duas colunas de igual tamanho. Você precisa redimensionar para que a primeira linha e a coluna da direita sejam bem maiores. No designer do Windows Forms, selecione o TableLayoutPanel. No canto superior direito, há um pequeno botão de triângulo preto, que aparece da seguinte maneira.  
   

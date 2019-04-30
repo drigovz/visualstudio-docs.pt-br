@@ -11,12 +11,12 @@ caps.latest.revision: 15
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 1e99ee6c9570f3bb73bc70f230f31e153a8a0da1
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: ace8b173eb20b6e628fbb7066ff9010624cca9e9
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054144"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63441956"
 ---
 # <a name="specifying-custom-build-events-in-visual-studio"></a>Especificando eventos de build personalizados no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -53,7 +53,7 @@ Ao especificar um evento de build personalizado, é possível executar comandos 
      Exemplo: `for %I in (*.txt *.doc *.html) do copy %I c:\`*mydirectory*`\`
 
     > [!NOTE]
-    >  `%I` no código acima deve ser `%%I` em scripts em lote.
+    > `%I` no código acima deve ser `%%I` em scripts em lote.
 
 ## <a name="see-also"></a>Consulte também
  [Compilando e criando](../ide/compiling-and-building-in-visual-studio.md) [caixa de diálogo de linha de comando do evento de eventos/pós-build de pré-compilação](../ide/reference/pre-build-event-post-build-event-command-line-dialog-box.md) [caracteres especiais do MSBuild](../msbuild/msbuild-special-characters.md) [passo a passo: Criando um aplicativo](../ide/walkthrough-building-an-application.md)

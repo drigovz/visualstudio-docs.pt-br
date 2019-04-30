@@ -11,12 +11,12 @@ caps.latest.revision: 7
 author: MikeJo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: e7987b4da158572d22d609b095877f6d125512c9
-ms.sourcegitcommit: 8b538eea125241e9d6d8b7297b72a66faa9a4a47
-ms.translationtype: MT
+ms.openlocfilehash: d5974bc962faf439af8de5d50bf51bad3d824647
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "58925551"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439082"
 ---
 # <a name="how-to-search-for-a-thread-in-threads-view"></a>Como: Pesquise um thread na exibição de threads
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ Você pode procurar um segmento específico na exibição de Threads por meio de
 4. Limpe todos os campos para o qual você deseja especificar valores.  
   
    > [!TIP]
-   >  Para localizar todos os threads pertencentes a um módulo, desmarque a **Thread** nome de caixa de texto e o tipo de módulo na **módulo** caixa. Em seguida, use **Localizar próximo** para continuar a pesquisa de threads.  
+   > Para localizar todos os threads pertencentes a um módulo, desmarque a **Thread** nome de caixa de texto e o tipo de módulo na **módulo** caixa. Em seguida, use **Localizar próximo** para continuar a pesquisa de threads.  
   
 5. Escolher **para cima** ou **para baixo** para a direção inicial da pesquisa.  
   

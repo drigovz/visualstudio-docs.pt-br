@@ -14,12 +14,12 @@ ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: 8da1661d518ff13d3949bee27dc0b78f5e244103
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: e8722cc2990f91446c806bf80f3673dc4c941532
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60056140"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63432554"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>Como: Usar assistentes com modelos de projeto
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -36,7 +36,7 @@ O Visual Studio fornece o <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> d
 1. Criar um projeto de modelo de projeto c# (no Visual Studio, **arquivo / novo / projeto / Visual c# / extensibilidade / modelo de projeto c#**). Denomine **MyProjectTemplate**.  
   
     > [!NOTE]
-    >  Você pode ser solicitado a instalar o SDK do Visual Studio. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
+    > Você pode ser solicitado a instalar o SDK do Visual Studio. Para obter mais informações, consulte [instalando o SDK do Visual Studio](../extensibility/installing-the-visual-studio-sdk.md).  
   
 2. Adicionar um novo projeto VSIX (**arquivo / novo / projeto / Visual c# / extensibilidade / projeto VSIX**) na mesma solução que o projeto de modelo de projeto (na **Gerenciador de soluções**, selecione o nó da solução Clique com botão direito e selecione **adicionar / novo projeto**). Nomeie- **MyProjectWizard.**  
   

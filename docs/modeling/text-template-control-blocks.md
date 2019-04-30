@@ -9,12 +9,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 344975f0f28c8fc8ee6f8a213b519f0b17e5880a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 3a3396caf4f1ade860f4727095d3305d86e837c3
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60105338"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434166"
 ---
 # <a name="text-template-control-blocks"></a>Blocos de controle do modelo de texto
 Blocos de controle permitem que você escreva código em seu modelo de texto para variar a saída. Há três tipos de blocos de controle, que são diferenciados por seus colchetes de abertura:
@@ -62,11 +62,11 @@ Found another one!
 ```
 
 > [!WARNING]
->  Sempre use {...} delimitar instruções aninhadas que contêm inserido texto sem formatação. O exemplo a seguir pode não funcionar corretamente:
+> Sempre use {...} delimitar instruções aninhadas que contêm inserido texto sem formatação. O exemplo a seguir pode não funcionar corretamente:
 >
->  `<# if (ShouldPrint) #> Some text. -- WRONG`
+> `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
->  Em vez disso, você deve incluir chaves {}, da seguinte maneira:
+> Em vez disso, você deve incluir chaves {}, da seguinte maneira:
 
 ```
 
@@ -115,7 +115,7 @@ Some text.
 ```
 
 > [!NOTE]
->  Um bloco de controle de recurso de classe não deve ser seguido por blocos de controle padrão no mesmo arquivo de modelo. No entanto, essa restrição não se aplica ao resultado do uso de `<#@include#>` diretivas. Cada arquivo incluído pode ter blocos padrão, seguidos por blocos de recurso de classe.
+> Um bloco de controle de recurso de classe não deve ser seguido por blocos de controle padrão no mesmo arquivo de modelo. No entanto, essa restrição não se aplica ao resultado do uso de `<#@include#>` diretivas. Cada arquivo incluído pode ter blocos padrão, seguidos por blocos de recurso de classe.
 
  Você pode criar uma função que gera a saída ao inserir blocos de texto e a expressão dentro de um bloco de controle de recurso de classe. Por exemplo:
 
