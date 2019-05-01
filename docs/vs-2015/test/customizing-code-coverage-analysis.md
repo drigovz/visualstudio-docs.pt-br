@@ -8,12 +8,12 @@ ms.assetid: f6337c35-acae-4c5f-b5d9-ac5ff687ef18
 caps.latest.revision: 18
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 404192923d25e3eccc0bb40064569bec3e6c6cec
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: ef0a8d1867114cd655f1e361cf0401dab6bce1a5
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60059247"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416653"
 ---
 # <a name="customizing-code-coverage-analysis"></a>Personalizando análise de cobertura de código
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -69,7 +69,7 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
 ```  
   
 > [!WARNING]
->  A resolução de símbolos pode ser demorada, especialmente ao usar um local de arquivo remoto com muitos assemblies. Consequentemente, considere copiar arquivos remotos .pdb no mesmo local dos arquivos binários (.dll e .exe).  
+> A resolução de símbolos pode ser demorada, especialmente ao usar um local de arquivo remoto com muitos assemblies. Consequentemente, considere copiar arquivos remotos .pdb no mesmo local dos arquivos binários (.dll e .exe).  
   
 ### <a name="excluding-and-including"></a>Excluindo e incluindo  
  Você pode excluir os assemblies especificados da análise de cobertura de código. Por exemplo:  
@@ -134,7 +134,7 @@ Por padrão, a ferramenta de cobertura de código do Visual Studio analisa todos
 ```  
   
 > [!WARNING]
->  Se houver um erro em uma expressão regular, como parênteses sem escape ou ímpar, a análise de cobertura de código não será executada.  
+> Se houver um erro em uma expressão regular, como parênteses sem escape ou ímpar, a análise de cobertura de código não será executada.  
   
 ### <a name="other-ways-to-include-or-exclude-elements"></a>Outras maneiras de incluir ou excluir elementos  
  Confira o exemplo [ no final deste tópico](#sample).  

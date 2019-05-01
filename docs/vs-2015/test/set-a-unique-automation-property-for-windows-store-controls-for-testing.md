@@ -8,12 +8,12 @@ ms.assetid: 9bdd74ff-2534-4fc7-a5c3-a77bf7843037
 caps.latest.revision: 12
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 6ce207776fe2f3dfe00ddc764546a370dbb53dca
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: a765896ef8b4eb645c04536105bc2284fc5c3d16
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60107028"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63446059"
 ---
 # <a name="set-a-unique-automation-property-for-windows-store-controls-for-testing"></a>Definir uma propriedade de automação exclusiva para controles da Windows Store para teste
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -80,7 +80,7 @@ Se desejar executar testes de IU codificados no aplicativo da Windows Store base
  **Blend para Visual Studio:** Use um dos seguintes métodos para fazer isso no Blend para Visual Studio.  
   
 > [!NOTE]
->  Você somente pode usar esse método para controles que são criados estaticamente usando XAML.  
+> Você somente pode usar esse método para controles que são criados estaticamente usando XAML.  
   
  **Como fornecer um nome exclusivo para controles existentes**  
   
@@ -136,7 +136,7 @@ Se desejar executar testes de IU codificados no aplicativo da Windows Store base
  Para ambos os exemplos, você deve, em seguida, substituir o método ToString() do ItemSource, conforme mostrado, usando o código a seguir. Esse código verifica se o valor de AutomationProperties.Name é definido e é exclusivo, porque você não pode definir uma propriedade de automação exclusiva para cada item de lista vinculada de dados usando a associação. Configurar um valor exclusivo para a automação Properties.Name nesse caso é suficiente.  
   
 > [!NOTE]
->  Usando essa abordagem, o conteúdo interno do item de lista também pode ser definido para uma cadeia de caracteres na classe Employee por meio da associação. Conforme mostrado no exemplo, o controle de botão dentro de cada item de lista tem uma ID de automação exclusiva atribuída, que é a ID do funcionário.  
+> Usando essa abordagem, o conteúdo interno do item de lista também pode ser definido para uma cadeia de caracteres na classe Employee por meio da associação. Conforme mostrado no exemplo, o controle de botão dentro de cada item de lista tem uma ID de automação exclusiva atribuída, que é a ID do funcionário.  
   
 ```  
   
