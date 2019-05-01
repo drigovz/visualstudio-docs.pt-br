@@ -11,12 +11,12 @@ caps.latest.revision: 13
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 416baf8988f8d17a336f9fbef1eb0f9d9a72046b
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 54d7bac2db7b1fb2a0a9e8b830a13646acd5300d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: MTE95
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60108993"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63428263"
 ---
 # <a name="synchronized-settings-in-visual-studio"></a>Configurações sincronizadas no Visual Studio
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -55,7 +55,7 @@ Quando usa a mesma conta de personalização para entrar no Visual Studio em vá
  É possível sincronizar as configurações em qualquer edição do Visual Studio 2015, inclusive nas edições Community e Express. As configurações também são sincronizadas em todos os produtos da família Visual Studio, como o Blend. No entanto, cada um desses produtos da família pode ter suas próprias configurações que não são compartilhadas com o Visual Studio. Por exemplo, as configurações específicas do Blend no Computador A serão compartilhadas com o Blend no Computador B, mas não com o Visual Studio no Computador A ou B.
 
 > [!WARNING]
->  As configurações não são sincronizadas entre o Visual Studio 2013 e o Visual Studio 2015. Quando você abre o Visual Studio 2015 pela primeira vez, suas configurações do Visual Studio 2013 são migradas, mas não é possível migrá-las de volta ao Visual Studo 2013.
+> As configurações não são sincronizadas entre o Visual Studio 2013 e o Visual Studio 2015. Quando você abre o Visual Studio 2015 pela primeira vez, suas configurações do Visual Studio 2013 são migradas, mas não é possível migrá-las de volta ao Visual Studo 2013.
 
 ## <a name="see-also"></a>Consulte também
  [Personalizando o IDE](../ide/personalizing-the-visual-studio-ide.md)
