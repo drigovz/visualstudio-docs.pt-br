@@ -12,12 +12,12 @@ caps.latest.revision: 27
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: ba45ba733f5447523b6793d4f5e2946c3507c82e
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: 38a459760dd66e1160bd8b197ee9883b617639b2
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60098679"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439744"
 ---
 # <a name="troubleshoot-extensions-for-layer-diagrams"></a>Solucionar problemas de extensões para diagramas de camada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Este tópico aborda alguns problemas que você pode encontrar ao criar extensõe
 2. Exclua a seguinte pasta: %LocalAppData%\Microsoft\VisualStudio\\\ComponentModelCache [versão]  
   
    > [!NOTE]
-   >  % LocalAppData % é normalmente *DriveName*: \Users\\*UserName*\appdata\local.  
+   > % LocalAppData % é normalmente *DriveName*: \Users\\*UserName*\appdata\local.  
   
    Continue com o próximo procedimento, se necessário.  
   

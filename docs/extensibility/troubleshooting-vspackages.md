@@ -11,12 +11,12 @@ ms.author: gregvanl
 manager: jillfra
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64ebe3bc2d4d406d6144305b368d37613aef0158
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: d89c3181757a0ed95b818ba2e73197511bf06e4d
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60039727"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63434243"
 ---
 # <a name="troubleshooting-vspackages"></a>Solucionando problemas de VSPackages
 A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas para resolver os problemas.
@@ -46,7 +46,7 @@ A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas p
 4. Abra o **saída** janela da instância do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] que falha ao carregar o VSPackage. Informações sobre por que o VSPackage falha no carregamento podem ser exibidas nessa janela.
 
    > [!NOTE]
-   >  Se você estiver começando a versão de avaliação do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] inspecionar o ambiente de desenvolvimento integrado (IDE), o **saída** janela de ambas as versões.
+   > Se você estiver começando a versão de avaliação do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] do [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] inspecionar o ambiente de desenvolvimento integrado (IDE), o **saída** janela de ambas as versões.
 
 5. Examine o log de atividades.
 
@@ -85,7 +85,7 @@ A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas p
     4. Sobre o **Debug** menu, clique em **iniciar depuração** ou pressione F5.
 
         > [!NOTE]
-        >  Se você estiver depurando um projeto, criar ou carregar uma instância existente do seu projeto agora.
+        > Se você estiver depurando um projeto, criar ou carregar uma instância existente do seu projeto agora.
 
 2. Use o log de atividades.
 

@@ -9,12 +9,12 @@ caps.latest.revision: 18
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 4a06ad526cd16335a664ae833f61cb0052a215fc
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: b88d3541bc9c3b2f890c2aadf0103c48d3dad865
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60054933"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433295"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizando o comportamento da operação de copiar
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -238,7 +238,7 @@ partial class MyDslClipboardCommandSet // EDIT NAME
  Muitos aspectos do comportamento de uma DSL em relação às ações de copiar, colar, criar e excluir objetos são determinados por uma instância <xref:Microsoft.VisualStudio.Modeling.ElementOperations> que é acoplada ao esquema. Você pode modificar o comportamento da sua DSL derivando sua própria classe de <xref:Microsoft.VisualStudio.Modeling.ElementOperations> e substituindo a propriedade <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> de sua classe de diagrama.  
   
 > [!TIP]
->  Para obter mais informações sobre como personalizar o modelo usando o código do programa, consulte [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).  
+> Para obter mais informações sobre como personalizar o modelo usando o código do programa, consulte [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).  
   
  ![Diagrama de sequência para a operação de cópia](../modeling/media/dslcopyseqdiagram.png "dslCopySeqDiagram")  
   
