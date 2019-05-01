@@ -16,12 +16,12 @@ caps.latest.revision: 44
 author: gewarren
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 59e00fb6b4db879ed70904397ba9a54c8bc25a6f
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
-ms.translationtype: MT
+ms.openlocfilehash: b256971cd327098e22b243a1c171b0c9e82d32bc
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60069362"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63433129"
 ---
 # <a name="define-a-profile-to-extend-uml"></a>Definir um perfil para estender UML
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -39,7 +39,7 @@ Você pode definir um *perfil UML* para personalizar os elementos de modelo padr
   Você pode distribuir seus próprios perfis para sua equipe. Cada membro da equipe pode instalar o perfil. Isso permite editar e criar modelos que usam seus estereótipos.  
   
 > [!NOTE]
->  Se você aplicar os estereótipos de um perfil em um modelo que você está editando e, em seguida, compartilha o modelo com outras pessoas, eles devem instalar o mesmo perfil em seus próprios computadores. Caso contrário, eles não poderão ver os estereótipos que você usou.  
+> Se você aplicar os estereótipos de um perfil em um modelo que você está editando e, em seguida, compartilha o modelo com outras pessoas, eles devem instalar o mesmo perfil em seus próprios computadores. Caso contrário, eles não poderão ver os estereótipos que você usou.  
   
  Um perfil geralmente é parte de uma maior [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] extensão. Por exemplo, você poderia definir um comando que traduz algumas partes de um modelo em código. Você pode definir um perfil que os usuários devem aplicar a pacotes que desejam traduzir. Você distribuiria seu novo comando juntamente com o perfil em um único [!INCLUDE[vs_current_short](../includes/vs-current-short-md.md)] extensão.  
   
@@ -83,7 +83,7 @@ Você pode definir um *perfil UML* para personalizar os elementos de modelo padr
 1. Crie um projeto de extensão do Visual Studio.  
   
    > [!NOTE]
-   >  Você deve ter instalado [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] usar esse procedimento.  
+   > Você deve ter instalado [!INCLUDE[vsipsdk](../includes/vsipsdk-md.md)] usar esse procedimento.  
   
    1. No menu **Arquivo**, aponte para **Novo** e clique em **Projeto**.  
   
@@ -194,7 +194,7 @@ Você pode definir um *perfil UML* para personalizar os elementos de modelo padr
 2. Adicione um novo diretório no mesmo diretório que o arquivo de perfil padrão.  
   
     > [!NOTE]
-    >  Se você estiver compilando a extensão usando um projeto de extensão do Visual Studio, use o Gerenciador de soluções para adicionar uma nova pasta para o projeto.  
+    > Se você estiver compilando a extensão usando um projeto de extensão do Visual Studio, use o Gerenciador de soluções para adicionar uma nova pasta para o projeto.  
   
 3. Altere o nome da nova pasta ao código curto ISO para a cultura localizada, como `bg` para o búlgaro ou `fr` para francês. Você deve usar um código de cultura neutra, normalmente com duas letras, não uma cultura específica, como `fr-CA`. Para obter mais informações sobre códigos de cultura, consulte [método CultureInfo GetCultures](http://go.microsoft.com/fwlink/?LinkId=160782), que fornece uma lista completa dos códigos de cultura.  
   
@@ -211,7 +211,7 @@ Você pode definir um *perfil UML* para personalizar os elementos de modelo padr
      `de\MyProfile.profile`  
   
     > [!NOTE]
-    >  Você não deve inserir em `extension.vsixmanifest` uma referência para as versões localizadas dos perfis. Os arquivos de perfil copiados devem ter o mesmo nome que o perfil na pasta pai.  
+    > Você não deve inserir em `extension.vsixmanifest` uma referência para as versões localizadas dos perfis. Os arquivos de perfil copiados devem ter o mesmo nome que o perfil na pasta pai.  
   
 5. Editar a nova cópia do perfil, convertendo para o idioma de destino, todas as partes que serão visíveis ao usuário, como o `displayName` atributos.  
   
@@ -247,7 +247,7 @@ Você pode definir um *perfil UML* para personalizar os elementos de modelo padr
 ```  
   
 > [!NOTE]
->  O atributo chamado `name` não deve conter espaços ou pontuação. O atributo `displayName`, que aparece na interface do usuário, deve ser uma cadeia de caracteres XML válida.  
+> O atributo chamado `name` não deve conter espaços ou pontuação. O atributo `displayName`, que aparece na interface do usuário, deve ser uma cadeia de caracteres XML válida.  
   
  Cada perfil contém três seções principais. Na ordem inversa, elas são da seguinte maneira:  
   
@@ -310,7 +310,7 @@ Você pode definir um *perfil UML* para personalizar os elementos de modelo padr
  O `name` atributo de `metaclassMoniker` é um link para um elemento no `<metaClasses>` seção.  
   
 > [!NOTE]
->  O nome do moniker deve começar com `/yourProfileName/`, onde `yourProfileName` é definido no `name` atributo do perfil ("CSharpProfile" neste exemplo). O moniker termina com o nome de uma das entradas na seção de metaclasses.  
+> O nome do moniker deve começar com `/yourProfileName/`, onde `yourProfileName` é definido no `name` atributo do perfil ("CSharpProfile" neste exemplo). O moniker termina com o nome de uma das entradas na seção de metaclasses.  
   
  Cada estereótipo pode listar zero ou mais propriedades que ele adiciona a qualquer elemento de modelo ao qual ela é aplicada. O `<propertyType>` contém um link para um dos tipos que são definidos na `<propertyTypes>` seção. O link deve ser um `<externalTypeMoniker>` para se referir a um `<externalType>,` ou um `<enumerationTypeMoniker>` para se referir a um `<enumerationType>`. Novamente, o link começa com o nome do seu perfil.  
   

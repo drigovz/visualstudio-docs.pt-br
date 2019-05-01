@@ -7,12 +7,12 @@ ms.author: gewarren
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a5543805741f1c64627aee15590d61635a89b1c
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: fcc08f9af3452289b3e0e76fe6970e75e8f854db
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60109823"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63414820"
 ---
 # <a name="customizing-copy-behavior"></a>Personalizando o comportamento da operação de copiar
 Em uma linguagem de específica de domínio (DSL) criada com o SDK de modelagem e visualização do Visual Studio, você pode alterar o que acontece quando o usuário copia e cola elementos.
@@ -232,7 +232,7 @@ Confira [Como Adicionar um manipulador de arrastar e soltar](../modeling/how-to-
  Muitos aspectos do comportamento de uma DSL em relação a copiar, colar, criação e exclusão de objetos são governados por uma instância de <xref:Microsoft.VisualStudio.Modeling.ElementOperations> que está acoplado ao diagrama. Você pode modificar o comportamento da sua DSL derivando sua própria classe de <xref:Microsoft.VisualStudio.Modeling.ElementOperations> e substituindo o <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.ElementOperations%2A> propriedade de sua classe de diagrama.
 
 > [!TIP]
->  Para obter mais informações sobre como personalizar o modelo usando o código do programa, consulte [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
+> Para obter mais informações sobre como personalizar o modelo usando o código do programa, consulte [Navegando e atualizando um modelo no código do programa](../modeling/navigating-and-updating-a-model-in-program-code.md).
 
  ![Diagrama de sequência para a operação de cópia](../modeling/media/dslcopyseqdiagram.png)
 

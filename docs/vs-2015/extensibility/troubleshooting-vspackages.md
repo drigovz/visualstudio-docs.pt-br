@@ -11,12 +11,12 @@ ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
 caps.latest.revision: 23
 ms.author: gregvanl
 manager: jillfra
-ms.openlocfilehash: f8c230fd2ecd9183b131662a1033be3402859001
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: eda92d27781ec26fd33cfd82d18257015b494236
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60060495"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63430122"
 ---
 # <a name="troubleshooting-vspackages"></a>Solucionando problemas de VSPackages
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -48,7 +48,7 @@ A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas p
 4. Abra o **saída** janela da instância do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] que falha ao carregar o VSPackage. Informações sobre por que o VSPackage falha no carregamento podem ser exibidas nessa janela.  
   
     > [!NOTE]
-    >  Se você estiver começando a versão de avaliação do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] inspecionar o ambiente de desenvolvimento integrado (IDE), o **saída** janela de ambas as versões.  
+    > Se você estiver começando a versão de avaliação do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] do [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] inspecionar o ambiente de desenvolvimento integrado (IDE), o **saída** janela de ambas as versões.  
   
 5. Examine o log de atividades.  
   
@@ -87,7 +87,7 @@ A seguir estão os problemas comuns que você pode ter com o VSPackage e dicas p
     4. Sobre o **Debug** menu, clique em **iniciar depuração** ou pressione F5.  
   
         > [!NOTE]
-        >  Se você estiver depurando um projeto, criar ou carregar uma instância existente do seu projeto agora.  
+        > Se você estiver depurando um projeto, criar ou carregar uma instância existente do seu projeto agora.  
   
 2. Use o log de atividades.  
   

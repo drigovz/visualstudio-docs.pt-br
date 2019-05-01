@@ -19,12 +19,12 @@ caps.latest.revision: 29
 author: mikejo5000
 ms.author: mikejo
 manager: jillfra
-ms.openlocfilehash: 830d2d7d077b65e205536e1b10579fe64633b21a
-ms.sourcegitcommit: 53aa5a413717a1b62ca56a5983b6a50f7f0663b3
-ms.translationtype: MT
+ms.openlocfilehash: fc9ca34d8b8afc01787db594ffba5a1a36ec190e
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
+ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/17/2019
-ms.locfileid: "59664982"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63439342"
 ---
 # <a name="resolvecomreference-task"></a>Tarefa ResolveComReference
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -46,7 +46,7 @@ Obtém uma lista de um ou mais nomes de bibliotecas de tipo ou arquivos .tlb e r
 |`ResolvedAssemblyReferences`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica as referências do assembly resolvidas.|  
 |`ResolvedFiles`|Parâmetro de saída <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.<br /><br /> Especifica os arquivos totalmente qualificados no disco que correspondem aos locais físicos das bibliotecas de tipo que foram fornecidas como entrada para esta tarefa.|  
 |`ResolvedModules`|Parâmetro <xref:Microsoft.Build.Framework.ITaskItem>`[]` opcional.|  
-|`SdkToolsPath`|(Opcional [String]<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->) parâmetro.<br /><br /> Se `ExecuteAsTool` for `true`, esse parâmetro deverá ser definido como o caminho de ferramentas do SDK para a versão da estrutura de destino.|  
+|`SdkToolsPath`|Parâmetro<!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  -->[Boolean]() opcional.<br /><br /> Se `ExecuteAsTool` for `true`, esse parâmetro deverá ser definido como o caminho de ferramentas do SDK para a versão da estrutura de destino.|  
 |`StateFile`|Opcional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parâmetro.<br /><br /> Especifica o arquivo de cache dos carimbos de hora/hora de componente COM. Se não existir, cada execução regenerará todos os invólucros.|  
 |`TargetFrameworkVersion`|Opcional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parâmetro.<br /><br /> Especifica a versão da estrutura de destino do projeto.<br /><br /> O padrão é `String.Empty`. o que significa que não há nenhuma filtragem para uma referência com base na estrutura de destino.|  
 |`TargetProcessorArchitecture`|Opcional <!-- TODO: review code entity reference <xref:assetId:///String?qualifyHint=False&amp;autoUpgrade=True>  --> parâmetro.<br /><br /> Especifica a arquitetura do processador de destino preferencial. Passado para o sinalizador de /machine tlbimp.exe após a tradução.<br /><br /> O valor do parâmetro deve ser um membro de <xref:Microsoft.Build.Utilities.ProcessorArchitecture>.|  
@@ -75,7 +75,7 @@ Obtém uma lista de um ou mais nomes de bibliotecas de tipo ou arquivos .tlb e r
 |`WrapperTool`|Metadados opcionais do item.<br /><br /> Especifica a ferramenta wrapper que é usada para gerar o wrapper do assembly para esta biblioteca de tipos. Se esses metadados de item não forem especificados, a tarefa usará uma ferramenta wrapper padrão de “tlbimp”. As opções de typelibs disponíveis que não diferenciam maiúsculas e minúsculas são:<br /><br /> -   `Primary`: Use essa ferramenta wrapper quando desejar usar um assembly de interoperabilidade primário já gerado para o componente COM. Quando você usar essa ferramenta wrapper, não especifique um diretório de saída do wrapper, pois isso fará com que a tarefa falhe.<br />-   `TLBImp`: Use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para o componente COM.<br />-   `AXImp`: Use essa ferramenta wrapper quando desejar gerar um assembly de interoperabilidade para um Controle ActiveX.|  
   
 > [!NOTE]
->  Quanto mais informações você fornece para identificar uma biblioteca de tipos com exclusividade, maior a possibilidade de que a tarefa será resolvida para o arquivo correto no disco.  
+> Quanto mais informações você fornece para identificar uma biblioteca de tipos com exclusividade, maior a possibilidade de que a tarefa será resolvida para o arquivo correto no disco.  
   
 ## <a name="remarks"></a>Comentários  
  Além dos parâmetros listados acima, essa tarefa herda parâmetros da classe <xref:Microsoft.Build.Utilities.Task>. Para obter uma lista desses parâmetros adicionais e suas descrições, consulte [Tarefa de Classe Base](../msbuild/task-base-class.md).  
