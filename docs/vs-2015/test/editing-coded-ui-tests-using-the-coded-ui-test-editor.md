@@ -12,12 +12,12 @@ ms.assetid: 76435c4b-593e-43a3-a9fe-709a7f9f5e0f
 caps.latest.revision: 42
 ms.author: gewarren
 manager: jillfra
-ms.openlocfilehash: 21acd0970415db23da330ece46131cde72cd706a
-ms.sourcegitcommit: 1fc6ee928733e61a1f42782f832ead9f7946d00c
+ms.openlocfilehash: 2cb53bfc500edbf46f277dd86e2c035461d9f9af
+ms.sourcegitcommit: 47eeeeadd84c879636e9d48747b615de69384356
 ms.translationtype: HT
 ms.contentlocale: pt-BR
-ms.lasthandoff: 04/22/2019
-ms.locfileid: "60118000"
+ms.lasthandoff: 04/23/2019
+ms.locfileid: "63416500"
 ---
 # <a name="editing-coded-ui-tests-using-the-coded-ui-test-editor"></a>Editando testes de interface de usuário codificada usando o editor de teste de interface de usuário codificada
 [!INCLUDE[vs2017banner](../includes/vs2017banner.md)]
@@ -62,7 +62,7 @@ o Editor de testes de interface de usuário codificada permite modificar facilme
  No Gerenciador de Soluções, abra o menu de atalho do **UIMap.uitest** e escolha **Abrir**. O teste de IU codificado é exibido no Editor de Teste de IU Codificado. Agora, é possível exibir e editar os métodos, as ações e os controles correspondentes registrados no teste de IU codificado.  
   
 > [!TIP]
->  Ao selecionar uma ação de interface do usuário localizada em um método do painel **Ações de interface do usuário**, o controle correspondente será realçado. Também é possível modificar a ação de interface do usuário ou as propriedades dos controles.  
+> Ao selecionar uma ação de interface do usuário localizada em um método do painel **Ações de interface do usuário**, o controle correspondente será realçado. Também é possível modificar a ação de interface do usuário ou as propriedades dos controles.  
   
  *Não vejo* o Editor de Teste de IU Codificado.  
  Você pode estar usando uma versão do Visual Studio Enterprise anterior a 2012. O Editor de Teste de IU Codificado também estava disponível no Feature Pack 2 do Visual Studio 2010, com uma assinatura do MSDN. [!INCLUDE[crdefault](../includes/crdefault-md.md)][Feature Pack 2 do Microsoft Visual Studio 2010](http://go.microsoft.com/fwlink/?LinkID=204119).  
@@ -75,7 +75,7 @@ Editar propriedades de ações de interface do usuário
   
  Para modificar as propriedades de uma ação de interface do usuário, no painel **Ações de interface do usuário**, expanda o método de teste que contém uma ação de IU cujas propriedades você deseja editar, selecione a ação de interface do usuário e, em seguida, modifique as propriedades usando a janela Propriedades.  
   
- Por exemplo, se um servidor não estiver disponível e houver uma ação de interface do usuário associada ao navegador da Web que indica **Acesse a página da Web ‘<http://Contoso1/default.aspx’>**, você poderá alterar a URL para `‘http://Contoso2/default.aspx’`.  
+ Por exemplo, se um servidor não estiver disponível e houver uma ação de interface do usuário associada ao navegador da Web que indica **Acesse a página da Web ‘<http://Contoso1/default.aspx’>**, você poderá alterar a URL para `‘ http://Contoso2/default.aspx’`.  
   
  ![Propriedades de controle](../test/media/codeduitestcontrolprop.png "CodedUITestControlProp")  
 Editar propriedades de controle  
